@@ -1,0 +1,244 @@
+---
+sidebar: switch-cisco-9336c-shared_sidebar 
+permalink: switch-cisco-9336c-shared/9336c_migrate_from_a_switched_configuration_with_dat_storage_by_adding_two_new_shared_switches.html 
+keywords:  
+summary:  
+---
+= 2 つの新しい共有スイッチを追加して、 DAT ストレージを使用したスイッチ構成から移行します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+
+
+==== DAT ストレージを使用したスイッチ構成からの移行
+
+一部の古い Cisco Nexus クラスタスイッチを Cisco Nexus 9336C-FX2 共有スイッチに交換する場合は、特定の設定情報、ポート接続、およびケーブル接続要件に注意する必要があります。
+
+* サポートされるスイッチは次のとおりです。
++
+** Nexus 9336C-FX2
+** Nexus 3232C
+
+
+* スイッチは、ノードへの接続に次のポートを使用します。
+* Nexus 9336C-FX2 ：
++
+** ポート 1-3 ：ブレークアウトモード（ 10G × 4 ）クラスタ内ポート、内部 e1/1/4 、 e1/2/1~4 、 e1/3~4
+** ポート 4-6 ：ブレークアウトモード（ 4x25G ）クラスタ内 / HA ポート、内部 e1/4/1-4 、 e1/5/1-4 、 e1/6/1~4
+** ポート 7-34 ： 40/100GbE Intra-Cluster/HA ポート、 int E1/7-34
+
+
+* Nexus 3232C ：
++
+** ポート 1~30 ： 10 / 40 / 100GbE
+
+
+* スイッチは、次のスイッチ間リンク（ ISL ）ポートを使用します。
++
+** ポート int e1/35-36 ： Nexus 9336C-FX2
+** ポート e1/31~32 ： Nexus 3232C
+
+
+* Hardware Universe には、すべてのクラスタスイッチでサポートされているケーブル接続に関する情報が含まれています。
++
+を参照してください https://hwu.netapp.com["Hardware Universe"] を参照してください。
+
+* Nexus 9336C-FX2 スイッチの一部のポートを 100GbE で実行するように設定しておきます。
+* ノードから Nexus 9336C-FX2 スイッチへの 100GbE 接続を計画、移行、文書化しておきます。
+* この手順でサポートされている ONTAP および NX-OS のバージョンは、 Cisco Ethernet Switches のページに記載されています。を参照してください https://mysupport.netapp.com/site/info/cisco-ethernet-switch["Cisco イーサネットスイッチ"]。
+* ONTAP クラスタから Cisco Nexus 9336C-FX2 ネットワークスイッチへ、無停止で他の Cisco クラスタスイッチを移行できます。
+
+
+
+
+===== 作業を開始する前に
+
+* 既存のスイッチネットワークが適切にセットアップされ、機能している必要があります。
+* ノンストップオペレーションを実現するには、すべてのポートが up * 状態である必要があります。
+* Nexus 9336C-FX2 スイッチは、適切なバージョンの NX-OS がインストールされ、リファレンス構成ファイル（ RCF ）が適用された状態で設定され、動作している必要があります。
+* 既存のネットワーク構成には次のものが必要です。
++
+** 両方の古い Cisco スイッチを使用する、完全に機能している冗長なネットアップクラスタ。
+** 古い Cisco スイッチと新しいスイッチの両方への管理接続とコンソールアクセス。
+** クラスタ LIF がすべてホームポートにある状態の * up * 状態のクラスタ LIF がすべて表示されています。
+** ISL ポートが有効で、他の Cisco スイッチ間および新しいスイッチ間でケーブル接続されている。
+
+
+
+
+
+
+===== このタスクについて
+
+この手順の例では、スイッチとノードで次の命名法を使用しています。
+
+* 既存の Cisco Nexus 3232C クラスタスイッチは、 _c1_AND _c2_ です。
+* 新しい Nexus 9336C-FX2 スイッチは、 _sh1_and _sh2_ です。
+* ノードは、 _ node1 _ と _ node2 _ です。
+* クラスタ LIF は、ノード 1 では _node1_clus1_AND _node1_clus2_on 、ノード 2 では _node2_clus1_and _node2_clus2_on です。
+* 最初にスイッチ c2 をスイッチ sh2 に交換し、次にスイッチ c1 をスイッチ sh1 に交換します。
+
+
+
+
+===== 手順
+
+. このクラスタで AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT= x h
++
+x は、メンテナンス時間の長さ（時間単位）です。
+
+. 各クラスタポートの管理ステータスと動作ステータスを確認します。
+. すべてのクラスタポートが正常な状態で稼働していることを確認します。「 network port show – role cluster 」
+
+
+[listing]
+----
+cluster1::*> network port show -role cluster
+Node: node1
+                                                                   Ignore
+                                             Speed(Mbps)  Health   Health
+Port    IPspace   Broadcast Domain Link MTU  Admin/Ope    Status   Status
+------- --------- ---------------- ---- ---- ------------ -------- ------
+e3a     Cluster   Cluster          up   9000  auto/100000 healthy  false
+e3b     Cluster   Cluster          up   9000  auto/100000 healthy  false
+
+Node: node2
+                                                                   Ignore
+                                             Speed(Mbps) Health    Health
+Port    IPspace   Broadcast Domain Link MTU  Admin/Oper  Status    Status
+------- --------- ---------------- ---- ---- ----------- --------- ------
+e3a     Cluster   Cluster          up   9000  auto/100000 healthy  false
+e3b     Cluster   Cluster          up   9000  auto/100000 healthy  false
+4 entries were displayed.
+cluster1::*>
+----
+. [[step4]] すべてのクラスタインターフェイス（ LIF ）がホームポートにあることを確認します：「 network interface show -role cluster 」
+
+
+[listing]
+----
+cluster1::*> network interface show -role cluster
+         Logical     Status     Network           Current     Current Is
+Vserver  Interface   Admin/Oper Address/Mask      Node        Port    Home
+-------  ----------- ---------- ----------------- ----------- ------- ----
+Cluster
+        node1_clus1  up/up      169.254.3.4/23    node1       e3a     true
+        node1_clus2  up/up      169.254.3.5/23    node1       e3b     true
+        node2_clus1  up/up      169.254.3.8/23    node2       e3a     true
+        node2_clus2  up/up      169.254.3.9/23    node2       e3b     true
+4 entries were displayed.
+cluster1::*>
+----
+. [[step5] クラスタが両方のクラスタスイッチの情報を表示することを確認します： 'system cluster-switch show-is-monitoring -enabled -operational true
+
+
+[listing]
+----
+cluster1::*> system cluster-switch show -is-monitoring-enabled-operational true
+Switch                    Type               Address          Model
+------------------------- ------------------ ---------------- ------
+sh1                       cluster-network    10.233.205.90    N9K-C9336C
+     Serial Number: FOCXXXXXXGD
+      Is Monitored: true
+            Reason: None
+  Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                    9.3(5)
+    Version Source: CDP
+sh2                       cluster-network    10.233.205.91    N9K-C9336C
+     Serial Number: FOCXXXXXXGS
+      Is Monitored: true
+            Reason: None
+  Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                    9.3(5)
+    Version Source: CDP
+cluster1::*>
+----
+. [[step6] ] クラスタ LIF での自動リバートを無効にします。
+
+
+[listing]
+----
+cluster1::*> network interface modify -vserver Cluster -lif * -auto-revert false
+----
+. [[step7] C2 スイッチをシャットダウンします。
+
+
+[listing]
+----
+c2# configure terminal
+Enter configuration commands, one per line. End with CNTL/Z.
+c2(config)# interface ethernet <int range>
+c2(config)#shutdown
+----
+. [[step8] クラスタ LIF が、クラスタスイッチ sh1 でホストされているポートに移行したことを確認します。「 network interface show -role cluster 」この処理には数秒かかることがあります。
+
+
+[listing]
+----
+cluster1::*> network interface show -role cluster
+          Logical     Status     Network         Current      Current  Is
+Vserver   Interface   Admin/Oper Address/Mask    Node         Port     Home
+--------- ----------- ---------- --------------- ------------ -------- -----
+Cluster
+          node1_clus1 up/up      169.254.3.4/23  node1        e3a      true
+          node1_clus2 up/up      169.254.3.5/23  node1        e3a      false
+          node2_clus1 up/up      169.254.3.8/23  node2        e3a      true
+          node2_clus2 up/up      169.254.3.9/23  node2        e3a      false
+4 entries were displayed.
+cluster1::*>
+----
+. [[step9] スイッチ c2 を新しいスイッチ sh2 に交換し、新しいスイッチをケーブル接続し直します。
+. ポートが sh2 でバックアップされていることを確認します。* 注 * LIF はスイッチ c1 にあります。
+. c1 スイッチをシャットダウンします。
+
+
+[listing]
+----
+c1# configure terminal
+Enter configuration commands, one per line. End with CNTL/Z.
+c1(config)# interface ethernet <int range>
+c1(config)#shutdown
+----
+. [[step12]] クラスタ LIF が、クラスタスイッチ sh2 でホストされているポートに移行されたことを確認します。これには数秒かかることがあります。
+
+
+[listing]
+----
+cluster1::*> network interface show -role cluster
+         Logical        Status     Network         Current   Current Is
+Vserver  Interface      Admin/Oper Address/Mask    Node      Port    Home
+-------- -------------- ---------- --------------- --------- ------- ----
+Cluster
+         node1_clus1    up/up      169.254.3.4/23  node1     e3a     true
+         node1_clus2    up/up      169.254.3.5/23  node1     e3a     false
+         node2_clus1    up/up      169.254.3.8/23  node2     e3a     true
+         node2_clus2    up/up      169.254.3.9/23  node2     e3a     false
+4 entries were displayed.
+cluster1::*>
+----
+. [[step13]] スイッチ c1 を新しいスイッチ sh1 に交換し、新しいスイッチをケーブル接続し直します。
+. ポートが sh1 でバックアップされていることを確認します。* LIF がスイッチ C2 に接続されたままであることに注意してください。
+. クラスタ LIF で自動リバートを有効にします。
+
+
+[listing]
+----
+cluster1::*> network interface modify -vserver Cluster -lif * -auto-revert True
+----
+. [step16]] クラスタが正常であることを確認します : cluster show
+
+
+[listing]
+----
+cluster1::*> cluster show
+Node                 Health  Eligibility   Epsilon
+-------------------- ------- ------------- -------
+node1                true    true          false
+node2                true    true          false
+2 entries were displayed.
+cluster1::*>
+----

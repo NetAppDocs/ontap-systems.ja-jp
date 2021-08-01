@@ -1,0 +1,57 @@
+---
+sidebar: upgrade-arl-auto-app_sidebar 
+permalink: upgrade-arl-auto-app/setting_up_storage_encryption_on_the_new_controller_module.html 
+keywords: set up storage, encryption, controller, module, node 
+summary: 交換したコントローラまたは新しいコントローラの HA パートナーで Storage Encryption が使用されている場合。 
+---
+= 新しいコントローラモジュールで Storage Encryption をセットアップします
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+交換したコントローラまたは新しいコントローラの HA パートナーで Storage Encryption が使用されている場合は、 SSL 証明書のインストールやキー管理サーバのセットアップなど、新しいコントローラモジュールを Storage Encryption 用に設定する必要があります。
+
+この手順には、新しいコントローラモジュールで実行する手順が含まれています。コマンドは正しいノードで入力する必要があります。
+
+.手順
+. 次のコマンドを使用して、キー管理サーバがまだ使用可能であり、そのステータスと認証キー情報を確認します。
++
+「 securitykey-manager show -status 」
+
++
+「セキュリティキーマネージャクエリー」
+
+. 前の手順で確認したキー管理サーバを、新しいコントローラのキー管理サーバのリストに追加します。
++
+.. 次のコマンドを使用して、キー管理サーバを追加します。
++
+「 securitykey-manager-add <key_manager_server_ip_address >` 」
+
+.. リストされている各キー管理サーバについて、同じ手順を繰り返します。最大 4 台のキー管理サーバをリンクできます。
+.. 次のコマンドを使用して、キー管理サーバが正常に追加されたことを確認します。
++
+「 securitykey -manager show 」を参照してください
+
+
+
+. 新しいコントローラモジュールで、キー管理セットアップウィザードを実行して、キー管理サーバをセットアップしてインストールします。
++
+既存のコントローラモジュールと同じキー管理サーバをインストールする必要があります。
+
++
+.. 次のコマンドを使用して、新しいノードでキー管理サーバセットアップウィザードを起動します。
++
+「 securitykey-manager setup -node <new_controller_name>` 」のように指定します
+
+.. ウィザードの手順に従って、キー管理サーバを設定します。
+
+
+. 次のコマンドを使用して、リンクされたすべてのキー管理サーバから新しいノードに認証キーをリストアします。
++
+「 securitykey-manager restore -node <new_controller_name>` 」のように指定します
+
+

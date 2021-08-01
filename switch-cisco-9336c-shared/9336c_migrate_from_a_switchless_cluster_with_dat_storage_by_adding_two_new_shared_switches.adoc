@@ -1,0 +1,681 @@
+---
+sidebar: switch-cisco-9336c-shared_sidebar 
+permalink: switch-cisco-9336c-shared/9336c_migrate_from_a_switchless_cluster_with_dat_storage_by_adding_two_new_shared_switches.html 
+keywords:  
+summary:  
+---
+= 2 つの新しい共有スイッチを追加して、 DAT ストレージを持つスイッチレスクラスタから移行します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+
+
+==== DAT ストレージを使用したスイッチレスクラスタからの移行
+
+2 ノードスイッチレスクラスタを、 Cisco Nexus 9336C-FX2 クラスタスイッチを使用するクラスタに無停止で移行する場合は、特定の構成情報、ポート接続、およびケーブル接続要件に注意する必要があります。使用する手順は、各コントローラに 2 つの専用クラスタネットワークポートがあるか、 1 つのクラスタポートがあるかによって異なります。ここで説明するプロセスは、すべてのノードで光ポートまたは Twinax ポートを使用しているが、ノードでクラスタネットワークポートにオンボード 10Gb BASE-T RJ45 ポートが使用されている場合は、このスイッチではサポートされない。
+
+ほとんどのシステムでは、各コントローラに 2 つの専用クラスタネットワークポートが必要です。を参照してください  https://mysupport.netapp.com/site/info/cisco-ethernet-switch["Cisco イーサネットスイッチ"] を参照してください。
+
+既存の 2 ノードスイッチレスクラスタ環境を使用している場合は、 Cisco Nexus 9336C-FX2 スイッチを使用して 2 ノードスイッチクラスタ環境に移行し、 3 ノード以上にクラスタを拡張できます。
+
+
+
+===== 作業を開始する前に
+
+* 2 ノードスイッチレス構成：
++
+** 2 ノードスイッチレス構成が適切にセットアップされて機能している必要があります。
+** ノードで ONTAP 9.8 以降が実行されている必要があります。
+** すべてのクラスタポートが「 up 」状態である必要があります。
+** すべてのクラスタ LIF （論理インターフェイス）が、 * up * 状態で、 * home * ポートにある必要があります。
+
+
+* Cisco Nexus 9336C-FX2 スイッチの構成：
++
+** 両方のスイッチに管理ネットワーク接続が必要です。
+** クラスタスイッチへのコンソールアクセスが必要です。
+** Nexus 9336C-FX2 ノード間スイッチおよびスイッチ間接続には、 TwinAx ケーブルまたはファイバケーブルを使用する必要があります。
+** ネットアップ https://hwu.netapp.com["Hardware Universe"] ケーブル接続の詳細については、を参照してください。
+** スイッチ間リンク（ ISL ）ケーブルは、 9336C-FX2 スイッチの両方でポート 1/35 および 1/36 に接続する必要があります。
+
+
+* 9336C-FX2 スイッチの初期カスタマイズが完了している必要があります。次のようにします。
++
+** 9336C-FX2 スイッチは最新バージョンのソフトウェアを実行しています
+** リファレンス構成ファイル（ RCF ）がスイッチに適用されている場合
+** SMTP 、 SNMP 、 SSH などのサイトのカスタマイズは、新しいスイッチで設定する必要があります。
+
+
+
+
+
+
+===== このタスクについて
+
+この手順の例では、クラスタスイッチとノードで次の命名法を使用しています。
+
+* 9336C-FX2 スイッチの名前は、 _CS1_および CS2__ です。
+* クラスタ SVM の名前は、 _node1 と _node2 _ です。
+* LIF の名前は、ノード 1 では _node1_clus1_AND _node1_clus2_on 、ノード 2 では _node2_clus1_and _node2_clus2_on です。
+* cluster1 ： * > プロンプトは、クラスタの名前を示します。
+* この手順で使用されているクラスタポートは、 AFF A400 コントローラに準拠した _e3a および _e3b です。。 https://hwu.netapp.com["Hardware Universe"] プラットフォームの実際のクラスタポートに関する最新情報が含まれます。
+
+
+
+
+===== 手順
+
+. このクラスタで AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT= xh 」
++
+x は、メンテナンス時間の長さ（時間単位）です。
+
+
+
+
+NOTE: AutoSupport メッセージはテクニカルサポートにこのメンテナンスタスクについて通知し、メンテナンス時間中はケースの自動作成が停止されます。
+
+. [[step2] 権限レベルを advanced に変更します。続行するかどうかを尋ねられたら、「 y 」と入力します。「 set -privilege advanced 」
++
+advanced のプロンプト（ * > ）が表示されます。
+
+. 新しいクラスタスイッチ cs1 と cs2 の両方で、すべてのノード側ポート（ ISL ポートではない）を無効にします。ISL ポートを無効にしないでください。
++
+次の例は、スイッチ cs1 でノードに接続されたポート 1~34 が無効になっていることを示しています。
+
+
+
+[listing]
+----
+cs1# config
+Enter configuration commands, one per line. End with CNTL/Z.
+cs1(config)# interface e/1-34
+cs1(config-if-range)# shutdown
+----
+. [[step4] 2 つの 9336C-FX2 スイッチ cs1 と cs2 間の ISL と ISL 上の物理ポートがポート 1/35 と 1/36 ：「 How port-channel summary」 で稼働していることを確認します
++
+次の例は、スイッチ cs1 上の ISL ポートが up になっていることを示しています。
+
+
+
+[listing]
+----
+cs1# show port-channel summary
+Flags:  D - Down        P - Up in port-channel (members)
+        I - Individual  H - Hot-standby (LACP only)
+        s - Suspended   r - Module-removed
+        b - BFD Session Wait
+        S - Switched    R - Routed
+        U - Up (port-channel)
+        p - Up in delay-lacp mode (member)
+        M - Not in use. Min-links not met
+--------------------------------------------------------------------------------
+Group Port-       Type     Protocol  Member Ports
+      Channel
+--------------------------------------------------------------------------------
+1     Po1(SU)     Eth      LACP      Eth1/35(P)   Eth1/36(P)
+----
+次の例は、スイッチ cs2 上の ISL ポートが up になっていることを示しています。
+
+[listing]
+----
+       cs2# show port-channel summary
+        Flags:  D - Down        P - Up in port-channel (members)
+        I - Individual  H - Hot-standby (LACP only)
+        s - Suspended   r - Module-removed
+        b - BFD Session Wait
+        S - Switched    R - Routed
+        U - Up (port-channel)
+        p - Up in delay-lacp mode (member)
+        M - Not in use. Min-links not met
+--------------------------------------------------------------------------------
+Group Port-       Type     Protocol  Member Ports
+      Channel
+--------------------------------------------------------------------------------
+1     Po1(SU)     Eth      LACP      Eth1/35(P)   Eth1/36(P)
+----
+. [[step5] 隣接デバイスのリストを表示します :'How CDP Neighbors'
++
+このコマンドは、システムに接続されているデバイスに関する情報を提供します。次の例は、スイッチ cs1 上の隣接デバイスを示しています。
+
+
+
+[listing]
+----
+cs1# show cdp neighbors
+Capability Codes: R - Router, T - Trans-Bridge, B - Source-Route-Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater,
+                  V - VoIP-Phone, D - Remotely-Managed-Device,
+                  s - Supports-STP-Dispute
+Device-ID          Local Intrfce  Hldtme Capability  Platform      Port ID
+cs2                Eth1/35        175    R S I s     N9K-C9336C    Eth1/35
+cs2                Eth1/36        175    R S I s     N9K-C9336C    Eth1/36
+Total entries displayed: 2
+----
+次の例は、スイッチ cs2 上の隣接デバイスを表示します。
+
+[listing]
+----
+cs2# show cdp neighbors
+Capability Codes: R - Router, T - Trans-Bridge, B - Source-Route-Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater,
+                  V - VoIP-Phone, D - Remotely-Managed-Device,
+                  s - Supports-STP-Dispute
+Device-ID          Local Intrfce  Hldtme Capability  Platform      Port ID
+cs1                Eth1/35        177    R S I s     N9K-C9336C    Eth1/35
+cs1           )    Eth1/36        177    R S I s     N9K-C9336C    Eth1/36
+
+Total entries displayed: 2
+----
+. [[step6] すべてのクラスタポートが up であることを確認します「 network port show -ipspace Cluster 」
++
+各ポートで、 Link には up 、 Health Status には healthy と表示されるはずです。
+
+
+
+[listing]
+----
+cluster1::*> network port show -ipspace Cluster
+
+Node: node1
+                                                  Speed(Mbps)  Health
+Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status
+--------- ------------ ---------------- ---- ---- ------------ ---------
+e3a       Cluster      Cluster          up   9000  auto/100000 healthy
+e3b       Cluster      Cluster          up   9000  auto/100000 healthy
+
+Node: node2
+                                                  Speed(Mbps)  Health
+Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status
+--------- ------------ ---------------- ---- ---- ------------ ---------
+e3a       Cluster      Cluster          up   9000  auto/100000 healthy
+e3b       Cluster      Cluster          up   9000  auto/100000 healthy
+4 entries were displayed.
+----
+. [[step7] すべてのクラスタ LIF が稼働していることを確認します「 network interface show -vserver Cluster 」
++
+各クラスタ LIF は 'Is Home' に true を表示し 'Status Admin/Oper は up/up と表示する必要があります
+
+
+
+[listing]
+----
+cluster1::*> network interface show -vserver Cluster
+            Logical     Status     Network            Current       Current Is
+Vserver     Interface   Admin/Oper Address/Mask       Node          Port    Home
+----------- ---------- ---------- ------------------ ------------- ------- -----
+Cluster
+            node1_clus1  up/up    169.254.209.69/16  node1         e3a     true
+            node1_clus2  up/up    169.254.49.125/16  node1         e3b     true
+            node2_clus1  up/up    169.254.47.194/16  node2         e3a     true
+            node2_clus2  up/up    169.254.19.183/16  node2         e3b     true
+4 entries were displayed.
+----
+. [[step8] すべてのクラスタ LIF で自動リバートが有効になっていることを確認します。 network interface show -vserver Cluster -fields auto-revert を実行します
+
+
+[listing]
+----
+cluster1::*> network interface show -vserver Cluster -fields auto-revert
+       Logical
+Vserver   Interface     Auto-revert
+--------- ------------- ------------
+Cluster
+          node1_clus1   true
+          node1_clus2   true
+          node2_clus1   true
+          node2_clus2   true
+4 entries were displayed.
+----
+. [[step9] ：ノード 1 のクラスタポート e3a からケーブルを外し、クラスタスイッチ cs1 のポート 1 に e3a に接続します。これには、 9336C-FX2 スイッチでサポートされている適切なケーブル接続を使用します。
++
+ネットアップ https://hwu.netapp.com["Hardware Universe"] ケーブル接続の詳細については、を参照してください。
+
+. 9336C-FX2 スイッチでサポートされている適切なケーブル接続を使用して、ノード 2 のクラスタポート e3a からケーブルを外し、クラスタスイッチ cs1 のポート 2 に e3a を接続します。
+. クラスタスイッチ cs1 のすべてのノード側ポートを有効にします。
++
+次の例は、スイッチ cs1 でポート 1/1~1/34 が有効になっていることを示しています。
+
+
+
+[listing]
+----
+cs1# config
+Enter configuration commands, one per line. End with CNTL/Z.
+cs1(config)# interface e1/1-34
+cs1(config-if-range)# no shutdown
+----
+. [[step12]] すべてのクラスタ LIF が「 Is Home 」の場合、「 network interface show -vserver Cluster 」で「 up 」、「 operational 」、および「 display as true 」になっていることを確認します
++
+次の例は、ノード 1 とノード 2 のすべての LIF が * up * で、 Is Home の結果が * true であることを示しています。
+
+
+
+[listing]
+----
+cluster1::*> network interface show -vserver Cluster
+          Logical      Status     Network            Current     Current Is
+Vserver   Interface    Admin/Oper Address/Mask       Node        Port    Home
+--------- ------------ ---------- ------------------ ----------- ------- ----
+Cluster
+          node1_clus1  up/up      169.254.209.69/16  node1       e3a     true
+          node1_clus2  up/up      169.254.49.125/16  node1       e3b     true
+          node2_clus1  up/up      169.254.47.194/16  node2       e3a     true
+          node2_clus2  up/up      169.254.19.183/16  node2       e3b     true
+4 entries were displayed.
+----
+. [[step13]] クラスタ内のノードのステータスに関する情報を表示します : 'cluster show`
++
+次の例は、クラスタ内のノードの健全性と参加資格に関する情報を表示します。
+
+
+
+[listing]
+----
+cluster1::*> cluster show
+Node                 Health  Eligibility   Epsilon
+-------------------- ------- ------------  ------------
+node1                true    true          false
+node2                true    true          false
+2 entries were displayed.
+----
+. [[step14]] ノード 1 のクラスタポート e3b からケーブルを外し、 9336C-FX2 スイッチでサポートされている適切なケーブルを使用して、クラスタスイッチ cs2 のポート 1 に e3b を接続します。
+. ノード 2 のクラスタポート e3b からケーブルを外し、 9336C-FX2 スイッチでサポートされている適切なケーブルを使用して、クラスタスイッチ cs2 のポート 2 に e3b を接続します。
+. クラスタスイッチ cs2 のすべてのノード側ポートを有効にします。
++
+次の例は、スイッチ cs2 でポート 1/1~1/34 が有効になっていることを示しています。
+
+
+
+[listing]
+----
+cs2# config
+Enter configuration commands, one per line. End with CNTL/Z.
+cs2(config)# interface e1/1-34
+cs2(config-if-range)# no shutdown
+----
+. [[step17]] すべてのクラスタポートが up であることを確認します :`network port show -ipspace Cluster`
++
+次の例は、ノード 1 とノード 2 のすべてのクラスタポートが up になっていることを示しています。
+
+
+
+[listing]
+----
+cluster1::*> network port show -ipspace Cluster
+
+Node: node1
+                                                                        Ignore
+                                                  Speed(Mbps)  Health   Health
+Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status   Status
+--------- ------------ ---------------- ---- ---- ------------ -------- ------
+e3a       Cluster      Cluster          up   9000  auto/100000 healthy  false
+e3b       Cluster      Cluster          up   9000  auto/100000 healthy  false
+
+Node: node2
+                                                                        Ignore
+                                                  Speed(Mbps)  Health   Health
+Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status   Status
+--------- ------------ ---------------- ---- ---- ------------ -------- ------
+e3a       Cluster      Cluster          up   9000  auto/100000 healthy  false
+e3b       Cluster      Cluster          up   9000  auto/100000 healthy  false
+4 entries were displayed.
+----
+. [[step18]] すべてのインターフェイスが Is Home`: `network interface show -vserver Cluster` の true を表示することを確認します
+
+
+
+NOTE: この処理が完了するまでに数分かかることがあります。
+
+次の例は、ノード 1 とノード 2 のすべての LIF が * up * であり、 Is Home の結果が true であることを示しています。
+
+[listing]
+----
+cluster1::*> network interface show -vserver Cluster
+          Logical      Status     Network            Current    Current Is
+Vserver   Interface    Admin/Oper Address/Mask       Node       Port    Home
+--------- ------------ ---------- ------------------ ---------- ------- ----
+Cluster
+          node1_clus1  up/up      169.254.209.69/16  node1      e3a     true
+          node1_clus2  up/up      169.254.49.125/16  node1      e3b     true
+          node2_clus1  up/up      169.254.47.194/16  node2      e3a     true
+          node2_clus2  up/up      169.254.19.183/16  node2      e3b     true
+4 entries were displayed.
+----
+. [[step19]] 両方のノードが各スイッチに 1 つずつ接続されていることを確認します : 'How CDP neighbors'
++
+次の例は、両方のスイッチの該当する結果を示しています。
+
+
+
+[listing]
+----
+cs1# show cdp neighbors
+Capability Codes: R - Router, T - Trans-Bridge, B - Source-Route-Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater,
+                  V - VoIP-Phone, D - Remotely-Managed-Device,
+                  s - Supports-STP-Dispute
+Device-ID          Local Intrfce  Hldtme Capability  Platform      Port ID
+node1              Eth1/1         133    H           AFFA400       e3a
+node2              Eth1/2         133    H           AFFA400       e3a
+cs2                Eth1/35        175    R S I s     N9K-C9336C    Eth1/35
+cs2                Eth1/36        175    R S I s     N9K-C9336C    Eth1/36
+Total entries displayed: 4
+cs2# show cdp neighbors
+Capability Codes: R - Router, T - Trans-Bridge, B - Source-Route-Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater,
+                  V - VoIP-Phone, D - Remotely-Managed-Device,
+                  s - Supports-STP-Dispute
+Device-ID          Local Intrfce  Hldtme Capability  Platform      Port ID
+node1              Eth1/1         133    H           AFFA400       e3b
+node2              Eth1/2         133    H           AFFA400       e3b
+cs1                Eth1/35        175    R S I s     N9K-C9336C    Eth1/35
+cs1                Eth1/36        175    R S I s     N9K-C9336C    Eth1/36
+Total entries displayed: 4
+----
+. [[step20]] クラスタ内で検出されたネットワークデバイスに関する情報を表示します : 「 network device-discovery show -protocol cdp`
+
+
+[listing]
+----
+cluster1::*> network device-discovery show -protocol cdp
+Node/       Local  Discovered
+Protocol    Port   Device (LLDP: ChassisID)  Interface         Platform
+----------- ------ ------------------------- ----------------  ----------------
+node2       /cdp
+            e3a    cs1                       0/2               N9K-C9336C
+            e3b    cs2                       0/2               N9K-C9336C
+
+node1       /cdp
+            e3a    cs1                       0/1               N9K-C9336C
+            e3b    cs2                       0/1               N9K-C9336C
+4 entries were displayed.
+----
+. [[step21] HA ペア 1 （および HA ペア 2 ）のストレージ構成が正しいことを確認し、エラーがないことを確認します。「 system switch ethernet show 」
+
+
+[listing]
+----
+storage::*> system switch ethernet show
+Switch                    Type                   Address         Model
+------------------------- ---------------------- --------------- ----------
+sh1
+                          storage-network        172.17.227.5    C9336C
+
+       Serial Number: FOC221206C2
+        Is Monitored: true
+              Reason: None
+    Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                      9.3(5)
+      Version Source: CDP
+sh2
+                          storage-network        172.17.227.6    C9336C
+       Serial Number: FOC220443LZ
+        Is Monitored: true
+              Reason: None
+    Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                      9.3(5)
+      Version Source: CDP
+2 entries were displayed.
+storage::*>
+----
+. [[step22]] 設定が無効であることを確認します : 「 network options switchless-cluster show 」
+
+
+
+NOTE: コマンドが完了するまでに数分かかることがあります。3 分間の有効期間が終了することを通知するアナウンスが表示されるまで待ちます。
+
+次の例では 'false' の出力は ' 構成設定が無効になっていることを示しています
+
+[listing]
+----
+cluster1::*> network options switchless-cluster show
+Enable Switchless Cluster: false
+----
+. [step23]] クラスタ内のノードメンバーのステータスを確認します : cluster show
++
+次の例は、クラスタ内のノードの健全性と参加資格に関する情報を表示します。
+
+
+
+[listing]
+----
+cluster1::*> cluster show
+Node                 Health  Eligibility   Epsilon
+-------------------- ------- ------------  --------
+node1                true    true          false
+node2                true    true          false
+----
+. [[step24]] クラスタネットワークが完全に接続されていることを確認します : cluster ping-cluster -node node-name`
+
+
+[listing]
+----
+cluster1::*> cluster ping-cluster -node node2
+Host is node2
+Getting addresses from network interface table...
+Cluster node1_clus1 169.254.209.69 node1 e3a
+Cluster node1_clus2 169.254.49.125 node1 e3b
+Cluster node2_clus1 169.254.47.194 node2 e3a
+Cluster node2_clus2 169.254.19.183 node2 e3b
+Local = 169.254.47.194 169.254.19.183
+Remote = 169.254.209.69 169.254.49.125
+Cluster Vserver Id = 4294967293
+Ping status:
+....
+Basic connectivity succeeds on 4 path(s)
+Basic connectivity fails on 0 path(s)
+................
+Detected 9000 byte MTU on 4 path(s):
+Local 169.254.47.194 to Remote 169.254.209.69
+Local 169.254.47.194 to Remote 169.254.49.125
+Local 169.254.19.183 to Remote 169.254.209.69
+Local 169.254.19.183 to Remote 169.254.49.125
+Larger than PMTU communication succeeds on 4 path(s)
+RPC status:
+2 paths up, 0 paths down (tcp check)
+2 paths up, 0 paths down (udp check)
+----
+. [[step25]] 特権レベルを admin に戻します : 'et -privilege admin
+. 次のコマンドを使用して、スイッチ関連のログファイルを収集するためのイーサネットスイッチヘルスモニタログ収集機能を有効にします。
++
+** 「システムスイッチイーサネットログセットアップ - パスワード」
+** 「システムスイッチのイーサネットログの有効化」
+
+
+
+
+[listing]
+----
+cluster1::*> system switch ethernet log setup-password
+Enter the switch name: <return>
+The switch name entered is not recognized.
+
+Choose from the following list:
+cs1
+cs2
+cluster1::*> system switch ethernet log setup-password
+Enter the switch name: cs1
+RSA key fingerprint is e5:8b:c6:dc:e2:18:18:09:36:63:d9:63:dd:03:d9:cc
+Do you want to continue? {y|n}::[n] y
+Enter the password: <enter switch password>
+Enter the password again: <enter switch password>
+cluster1::*> system switch ethernet log setup-password
+Enter the switch name: cs2
+RSA key fingerprint is 57:49:86:a1:b9:80:6a:61:9a:86:8e:3c:e3:b7:1f:b1
+Do you want to continue? {y|n}:: [n] y
+Enter the password: <enter switch password>
+Enter the password again: <enter switch password>
+cluster1::*> system  switch ethernet log enable-collection
+Do you want to enable cluster log collection for all nodes in the cluster? {y|n}: [n] y
+Enabling cluster switch log collection.
+cluster1::*>
+----
+
+
+==== 共有スイッチを設定します
+
+この手順の例では、スイッチとノードで次の命名法を使用しています。
+
+* 2 つの共有スイッチの名前は、 _sh1_AND _sh2__ です。
+* ノードは、 _ node1 _ と _ node2 _ です。
+
+
+
+NOTE: 手順 ONTAP では、特に記載がない限り、 ONTAP コマンドと Cisco Nexus 9000 シリーズスイッチコマンドの両方を使用する必要があります。
+
+
+
+===== 手順
+
+. HA ペア 1 （および HA ペア 2 ）のストレージ構成が正しいこと、およびエラーがないことを確認します。「 system switch ethernet show
+
+
+[listing]
+----
+storage::*> system switch ethernet show
+Switch                    Type                   Address         Model
+------------------------- ---------------------  --------------- -------
+sh1
+                          storage-network        172.17.227.5    C9336C
+
+      Serial Number: FOC221206C2
+       Is Monitored: true
+             Reason: None
+   Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                     9.3(5)
+     Version Source: CDP
+sh2
+                          storage-network        172.17.227.6    C9336C
+       Serial Number: FOC220443LZ
+        Is Monitored: true
+              Reason: None
+    Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                      9.3(5)
+      Version Source: CDP
+2 entries were displayed.
+storage::*>
+----
+. [step2] ストレージノードポートが正常で動作していることを確認します。「 storage port show -port-type enet 」
+
+
+[listing]
+----
+storage::*> storage port show -port-type ENET
+                                   Speed                             VLAN
+Node    Port    Type    Mode       (Gb/s)      State      Status       ID
+------- ------- ------- ---------- ----------- ---------- ---------- -----
+node1
+        e0c     ENET   storage          100      enabled  online        30
+        e0d     ENET   storage          100      enabled  online        30
+        e5a     ENET   storage          100      enabled  online        30
+        e5b     ENET   storage          100      enabled  online        30
+
+node2
+        e0c     ENET  storage           100      enabled  online        30
+        e0d     ENET  storage           100      enabled  online        30
+        e5a     ENET  storage           100      enabled  online        30
+        e5b     ENET  storage           100      enabled  online        30
+----
+. [[step3]] HA ペア 1 、 NSM224 パス A のポートを sh1 ポート範囲 11-22 に移動します。
+. HA ペア 1 の node1 のパス A から sh1 のポート範囲 11-22 にケーブルを接続します。たとえば、 AFF A400 のパス A のストレージポートは e0c です。
+. HA ペア 1 、 node2 、パス A から sh1 のポート範囲 11-22 へケーブルを接続します。
+. ノードポートが正常で動作していることを確認します。「 storage port show -port-type enet
+
+
+[listing]
+----
+storage::*> storage port show -port-type ENET
+                                   Speed                             VLAN
+Node    Port    Type    Mode       (Gb/s)      State      Status       ID
+------- ------- ------- ---------- ----------- ---------- ---------- -----
+node1
+        e0c     ENET   storage          100      enabled  online        30
+        e0d     ENET   storage            0      enabled  offline       30
+        e5a     ENET   storage            0      enabled  offline       30
+        e5b     ENET   storage          100      enabled  online        30
+
+node2
+        e0c     ENET  storage           100      enabled  online        30
+        e0d     ENET  storage             0      enabled  offline       30
+        e5a     ENET  storage             0      enabled  offline       30
+        e5b     ENET  storage           100      enabled  online        30
+----
+. [[step7] クラスタにストレージスイッチやケーブル接続の問題がないことを確認します：「 system health alert show -instance 」
+
+
+[listing]
+----
+storage::*> system health alert show -instance
+There are no entries matching your query.
+----
+. [[step8] HA ペア 1 、 NSM224 パス B のポートを sh2 ポート範囲 11-22 に移動します
+. HA ペア 1 、 node1 、パス B から sh2 のポート範囲 11-22 にケーブルを接続します。たとえば、 AFF A400 のパス B ストレージポートは e5b になります。
+. HA ペア 1 、 node2 、パス B から sh2 のポート範囲 11-22 にケーブルを接続します。
+. ノードポートが正常で動作していることを確認します。「 storage port show -port-type enet
+
+
+[listing]
+----
+storage::*> storage port show -port-type ENET
+                                   Speed                             VLAN
+Node    Port    Type    Mode       (Gb/s)      State      Status       ID
+------- ------- ------- ---------- ----------- ---------- ---------- -----
+node1
+        e0c     ENET   storage          100      enabled  online        30
+        e0d     ENET   storage            0      enabled  offline       30
+        e5a     ENET   storage            0      enabled  offline       30
+        e5b     ENET   storage          100      enabled  online        30
+
+node2
+        e0c     ENET  storage           100      enabled  online        30
+        e0d     ENET  storage             0      enabled  offline       30
+        e5a     ENET  storage             0      enabled  offline       30
+        e5b     ENET  storage           100      enabled  online        30
+----
+. [[step12]] HA ペア 1 のストレージ構成が正しいことを確認し、エラーがないことを確認します。「 system switch ethernet show 」
+
+
+[listing]
+----
+storage::*> system switch ethernet show
+Switch                    Type                   Address          Model
+------------------------- ---------------------- ---------------- ----------
+sh1
+                          storage-network        172.17.227.5     C9336C
+
+      Serial Number: FOC221206C2
+       Is Monitored: true
+             Reason: None
+   Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                     9.3(5)
+     Version Source: CDP
+sh2
+                          storage-network        172.17.227.6     C9336C
+      Serial Number: FOC220443LZ
+       Is Monitored: true
+             Reason: None
+   Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                     9.3(5)
+     Version Source: CDP
+2 entries were displayed.
+storage::*>
+----
+. [[step13]] 未使用の（コントローラ）セカンダリストレージポートを HA ペア 1 でストレージからネットワークに再設定します。複数の NS224 が直接接続されている場合は、ポートを再設定する必要があります。
+
+
+[listing]
+----
+storage port modify –node [node name] –port [port name] –mode network
+----
+ストレージポートをブロードキャストドメインに配置するには、次の手順を実行します。
+
+* 「 network port broadcast-domain create 」（必要に応じて新しいドメインを作成）
+* 「 network port broadcast-domain add-ports 」（既存のドメインにポートを追加する）
+
+
+. [[step14]] ケースの自動作成を抑制した場合は、 AutoSupport メッセージを呼び出して再度有効にします。「 system node AutoSupport invoke -node * -type all -message MAINT=end`
+

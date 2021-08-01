@@ -1,0 +1,72 @@
+---
+sidebar: upgrade-arl-auto-app_sidebar 
+permalink: upgrade-arl-auto-app/setting_up_netapp_volume_encryption_on_the_new_controller_module.html 
+keywords: set up, netapp volume encryption, controller, module, nve, node 
+summary: 交換したコントローラまたは新しいコントローラの HA パートナーが NetApp Volume Encryption を使用している場合。 
+---
+= 新しいコントローラモジュールで NetApp Volume Encryption をセットアップします
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+交換したコントローラまたは新しいコントローラの HA パートナーが NetApp Volume Encryption （ NVE ）を使用している場合は、新しいコントローラモジュールを NVE 用に設定する必要があります。
+
+この手順には、新しいコントローラモジュールで実行する手順が含まれています。コマンドは正しいノードで入力する必要があります。
+
+.手順
+. キー管理サーバがまだ使用可能であり、ステータスと認証キー情報が正しいことを確認します。
++
+|===
+| ONTAP バージョン | 使用するコマンド 
+
+
+| ONTAP 9.6 以降 | 「 securitykey manager key query -node node 」を参照してください 
+
+
+| ONTAP 9.5 以前 | 「 securitykey -manager key show 」を参照してください 
+|===
+. 前の手順で確認したキー管理サーバを新しいコントローラのキー管理サーバリストに追加します。
++
+.. 次のコマンドを使用して、キー管理サーバを追加します。
++
+「 securitykey-manager-add <key_manager_server_ip_address >` 」
+
+.. リストされている各キー管理サーバについて、同じ手順を繰り返します。最大 4 台のキー管理サーバをリンクできます。
+.. 次のコマンドを使用して、キー管理サーバが正常に追加されたことを確認します。
++
+「 securitykey -manager show 」を参照してください
+
+
+
+. 新しいコントローラモジュールで、キー管理セットアップウィザードを実行して、キー管理サーバをセットアップしてインストールします。
++
+既存のコントローラモジュールと同じキー管理サーバをインストールする必要があります。
+
++
+.. 次のコマンドを使用して、新しいノードでキー管理サーバセットアップウィザードを起動します。
++
+「 securitykey-manager setup -node <new_controller_name>` 」のように指定します
+
+.. ウィザードの手順に従って、キー管理サーバを設定します。
+
+
+. リンクされたすべてのキー管理サーバから新しいノードに認証キーをリストアします。
++
+|===
+| 用途 | 使用するコマンド 
+
+
+| 外部キーマネージャ（ EKM ） | 「 securitykey-manager external restore 」このコマンドには、 OKM のパスフレーズが必要です 
+
+
+| オンボードキーマネージャ（ OKM ） | 「セキュリティキーマネージャオンボード同期」 
+|===
+
+
+認証キーを使用できなかったか、外部キー管理サーバにアクセスできなかったためにボリュームがオフラインになっていないかを確認します。次のコマンドを使用して、ボリュームをオンラインに戻します。
+
+「 volume online 」と入力します

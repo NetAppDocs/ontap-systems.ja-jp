@@ -1,0 +1,41 @@
+---
+sidebar: upgrade-arl-auto-app_sidebar 
+permalink: upgrade-arl-auto-app/preparing_for_netboot.html 
+keywords: preparing, netboot, ndac, ontap 
+summary: ノード 3 とノード 4 を手順の後半で物理的にラックに設置したあと、ネットブートが必要になることがあります。 
+---
+= ネットブートを準備
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ノード 3 とノード 4 を手順の後半で物理的にラックに設置したあと、ネットブートが必要になることがあります。「 netboot 」という用語は、リモート・サーバに保存されている ONTAP イメージからブートすることを意味します。ネットブートの準備を行うときは、システムがアクセスできる Web サーバに、 ONTAP 9 ブート・イメージのコピーを配置する必要があります。
+
+.作業を開始する前に
+* システムから HTTP サーバにアクセスできることを確認します。
+* 使用するプラットフォームに必要なシステムファイルと、適切なバージョンの ONTAP を the NetApp Support Site at からダウンロードする必要があります link:https://mysupport.netapp.com["mysupport.netapp.com"]。
+
+
+元のコントローラと同じバージョンの ONTAP 9 がインストールされていない場合は、新しいコントローラをネットブートする必要があります。新しいコントローラをそれぞれ取り付けたら、 Web サーバに保存されている ONTAP 9 イメージからシステムをブートします。その後、以降のシステムブートで使用するブートメディアデバイスに正しいファイルをダウンロードできます。
+
+.手順
+. ネットアップサポートサイトにアクセスして、システムのネットブートの実行に使用するファイルをダウンロードします。
+. ネットアップサポートサイトのソフトウェアダウンロードセクションから適切な ONTAP ソフトウェアをダウンロードし、「 <ONTAP_version>_image.tgz 」ファイルを Web にアクセスできるディレクトリに保存します。
+. Web にアクセスできるディレクトリに移動し、必要なファイルが利用可能であることを確認します。
+
+
+[cols="30,70"]
+|===
+| 用途 | 作業 
+
+
+| FAS/AFF8000 シリーズシステム | 次のコマンドを使用して、「 <ONTAP_version>_image.tgz 」ファイルの内容をターゲットディレクトリに展開します。 `tar-zxvf <ONTAP_version>_image.tgz `* Note: Windows で内容を展開する場合は、 7-Zip または WinRAR を使用してネットブートイメージを抽出します。ディレクトリの一覧には、カーネル・ファイル「 netboot/ kernel 」を含むネットブート・フォルダが含まれている必要があります 
+
+
+| その他すべてのシステム | ディレクトリの一覧に次のファイルが含まれている必要があります。 `<ONTAP_version>_image.tgz *Note*: 「 <ONTAP_version>_image.tgz 」ファイルの内容を抽出する必要はありません。 
+|===
+のディレクトリの情報を使用します link:stage_3_installing_and_booting_node3_overview.html["ステージ 3"]。

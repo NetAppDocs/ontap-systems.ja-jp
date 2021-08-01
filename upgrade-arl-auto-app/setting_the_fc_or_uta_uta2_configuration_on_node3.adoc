@@ -1,0 +1,461 @@
+---
+sidebar: upgrade-arl-auto-app_sidebar 
+permalink: upgrade-arl-auto-app/setting_the_fc_or_uta_uta2_configuration_on_node3.html 
+keywords: setting, fc, uta, uta2 configuration, node 
+summary: ノード 3 にオンボードの FC ポート、オンボードのユニファイドターゲットアダプタ（ UTA / UTA2 ）ポート、または UTA / UTA2 カードがある場合 
+---
+= ノード 3 で FC または UTA / UTA2 設定を設定します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ノード 3 にオンボードの FC ポート、オンボードのユニファイドターゲットアダプタ（ UTA / UTA2 ）ポート、または UTA / UTA2 カードがある場合は、残りの手順を完了する前に設定を行う必要があります。
+
+セクションの完了が必要な場合があります link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3["ノード 3 の FC ポートを設定"]、を参照してください 、または両方のセクション。
+
+
+NOTE: ネットアップのマーケティング資料では、 UTA2 という用語を CNA アダプタとポートという意味で使用している場合があります。ただし、 CLI では CNA という用語が使用されます。
+
+* ノード 3 にオンボードの FC ポート、オンボードの UTA / UTA2 ポート、または UTA / UTA2 カードがなく、ストレージディスクを搭載したシステムをアップグレードする場合は、に進みます link:verifying_the_node3_installation.html["ノード 3 のインストールを確認"] セクション。
+* ただし、 V シリーズシステムまたは FlexArray 仮想化ソフトウェアを搭載したストレージアレイを使用するシステムがある場合に、ノード 3 にはオンボードの FC ポート、オンボードの UTA / UTA ポート、または UTA / UTA2 カードがないのであれば、セクションに戻ります link:installing_and_booting_node3.html["node3 をインストールしてブートします"] 手順 23 で再開します。
+
+
+.選択肢
+* link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configure-fc-ports-on-node3["ノード 3 の FC ポートを設定"]
+* link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3["ノード 3 の UTA / UTA2 ポートを確認して設定してください"]
+
+
+
+
+== ノード 3 の FC ポートを設定
+
+node3 にオンボードまたは FC アダプタの FC ポートがある場合は、ポートが事前に設定されていないため、ノードを稼働状態にする前にポート設定を設定する必要があります。ポートが設定されていないと、サービスが停止する可能性があります。
+
+セクションに保存した FC ポート設定の値を node1 で確認しておく必要があります link:preparing_the_nodes_for_upgrade.html["ノードをアップグレードする準備をします"]。
+
+システムに FC 構成がない場合は、このセクションをスキップしてかまいません。システムにオンボード UTA / UTA2 ポートまたは UTA / UTA2 カードがある場合は、で設定します link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3["ノード 3 の UTA / UTA2 ポートを確認して設定してください"]。
+
+* 重要 * ：ご使用のシステムにストレージ・ディスクがある場合は、クラスタ・プロンプトでこのセクションにコマンドを入力してください。「 V シリーズシステム」または FlexArray 仮想化ソフトウェアを使用していて、ストレージアレイに接続している場合は、このセクションにメンテナンスモードでコマンドを入力します。
+
+.手順
+. ノード 3 の FC 設定と、ノード 1 から以前に取得した設定を比較します。
+. 次のいずれかを実行します。
++
+|===
+| アップグレードするシステム | 次に、 
+
+
+| ストレージディスクがあります  a| 
+メンテナンスモード（ブートメニューのオプション 5 ）で、必要に応じて次のいずれかのコマンドを使用して、 node3 の FC ポートを変更します。
+
+** ターゲットポートをプログラムする場合： ucadmin modify -m fc -t target <adapter>`
+** イニシエータポートをプログラムするには、 ucadmin modify -m fc -t initiator <adapter>`-t' を FC4 タイプ（ターゲットまたはイニシエータ）に設定します。
+
+
+
+
+| は、 V シリーズシステムまたは FlexArray 仮想化ソフトウェアを搭載し、ストレージアレイに接続されています | 保守モード（ブートメニューのオプション 5 ）で、必要に応じて次のコマンドを使用して、 node3 の FC ポートを変更します。 ucadmin modify -m fc -t initiator -f <adapter_port_name> `-t` は、 FC4 タイプ、ターゲット、またはイニシエータです。* 注： FC ポートはイニシエータとしてプログラムする必要があります。 
+|===
+. 次のいずれかを実行します。
++
+|===
+| アップグレードするシステム | 次に、 
+
+
+| ストレージディスクがあります | 次のコマンドを使用して、新しい設定を確認します。 ucadmin show 
+
+
+| は、 V シリーズシステムまたは FlexArray 仮想化ソフトウェアを搭載し、ストレージアレイに接続されています | 次のコマンドを使用して、新しい設定を確認します。 ucadmin show 
+|===
+. 次のコマンドを使用してメンテナンスモードを終了します。
++
+「 halt 」
+
+. 次のコマンドを使用して、 LOADER プロンプトからシステムをブートします。
++
+「 boot_ontap menu
+
+. コマンドを入力したら、ブート環境のプロンプトでシステムが停止するまで待ちます。
+. 保守モードのブート・メニューからオプション「 5 」を選択します。
+. 次のいずれかを実行します。
++
+|===
+| アップグレードするシステム | 次に、 
+
+
+| ストレージディスクがあります  a| 
+** ノード 3 に UTA / UTA2 カードまたは UTA / UTA2 オンボードポートがある場合は、セクションに進みます link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3["ノード 3 の UTA / UTA2 ポートを確認して設定してください"]。
+** ノード 3 に UTA / UTA2 カードまたは UTA / UTA2 オンボードポートがない場合は、このセクションを省略してください link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3["ノード 3 の UTA / UTA2 ポートを確認して設定してください"] をクリックして、セクションに移動します 。
+
+
+
+
+| は、 V シリーズシステムまたは FlexArray 仮想化ソフトウェアを搭載し、ストレージアレイに接続されています  a| 
+** ノード 3 に UTA / UTA2 カードまたは UTA / UTA2 オンボードポートがある場合は、セクションに進みます link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3["ノード 3 の UTA / UTA2 ポートを確認して設定してください"]。
+** ノード 3 に UTA / UTA2 カードまたは UTA / UTA2 オンボードポートがない場合は、このセクションを省略してください link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3["ノード 3 の UTA / UTA2 ポートを確認して設定してください"] に戻ります  ステップ 23 で再開します。
+
+
+|===
+
+
+
+
+== ノード 3 の UTA / UTA2 ポートを確認して設定してください
+
+ノード 3 にオンボード UTA / UTA2 ポートまたは UTA / UTA2 カードが搭載されている場合は、アップグレードしたシステムの使用方法によって、ポートの設定を確認し、場合によっては再設定する必要があります。
+
+UTA / UTA2 ポートに対応する正しい SFP+ モジュールが必要です。
+
+FC にユニファイドターゲットアダプタ（ UTA / UTA2 ）ポートを使用する場合は、まずポートの設定を確認する必要があります。
+
+
+NOTE: ネットアップのマーケティング資料では、 UTA2 という用語を CNA アダプタとポートという意味で使用している場合があります。ただし、 CLI では CNA という用語が使用されます。
+
+現在のポート設定を確認するには、「 ucadmin show 」コマンドを使用します。
+
+....
+*> ucadmin show
+Adapter Current Mode Current Type Pending Mode Pending Type Admin Status
+0e      fc           target       -            initiator    offline
+0f      fc           target       -            initiator    offline
+0g      fc           target       -            initiator    offline
+0h      fc           target       -            initiator    offline
+1a      fc           target       -            -            online
+1b      fc           target       -            -            online
+6 entries were displayed.
+....
+UTA / UTA2 ポートは、ネイティブの FC モードまたは UTA / UTA2 モードに設定できます。FC モードでは FC イニシエータと FC ターゲットがサポートされます。 UTA / UTA2 モードを使用すると、同じ 10GbE SFP+ インターフェイスを共有する NIC と FCoE のトラフィックを同時に処理でき、 FC ターゲットをサポートできます。
+
+UTA / UTA2 ポートはアダプタまたはコントローラに搭載されている場合がありますが、次の構成になっています。ノード 3 の UTA / UTA2 ポートの設定を確認し、必要に応じて変更してください。
+
+* コントローラを注文した UTA / UTA2 カードは、注文したパーソナリティを指定するために出荷前に設定されます。
+* コントローラとは別に発注した UTA / UTA2 カードは、デフォルトの FC ターゲットパーソナリティとして出荷されます。
+* 新しいコントローラのオンボード UTA / UTA2 ポートは、希望するパーソナリティを持つように出荷する前に設定されます。
++
+* 注意 * ：ストレージディスクがある場合は、メンテナンスモードに指示されていないかぎり、クラスタプロンプトでこのセクションのコマンドを入力します。V シリーズシステムまたは FlexArray 仮想化ソフトウェアがインストールされていて、ストレージアレイに接続されている場合は、このセクションのメンテナンスモードプロンプトでコマンドを入力します。UTA / UTA2 ポートを設定する場合は、メンテナンスモードにする必要があります。
+
+
+
+.手順
+. [[step1] node3 で次のコマンドを入力して、ポートが現在どのように設定されているかを確認します。
++
+|===
+| システムの状態 | 次に、 
+
+
+| ストレージディスクがあります | 対処は不要です。 
+
+
+| は、 V シリーズシステムまたは FlexArray 仮想化ソフトウェアを搭載し、ストレージアレイに接続されています | ucadmin show 
+|===
++
+次の例のような出力が表示されます。
+
++
+....
+*> ucadmin show
+Adapter Current Mode Current Type Pending Mode Pending Type Admin Status
+0e      fc           initiator    -            -            online
+0f      fc           initiator    -            -            online
+0g      cna          target       -            -            online
+0h      cna          target       -            -            online
+0e      fc           initiator    -            -            online
+0f      fc           initiator    -            -            online
+0g      cna          target       -            -            online
+0h      cna          target       -            -            online
+*>
+....
+. [[step2] 現在の SFP+ モジュールが目的の用途と一致しない場合は、正しい SFP+ モジュールと交換します。
++
+ネットアップの担当者に連絡して、正しい SFP+ モジュールを入手します。
+
+. [[step3]] 「 ucadmin show 」コマンドの出力を調べ、 UTA / UTA2 ポートに希望するパーソナリティがあるかどうかを確認します。
+. [[step4]] 次のいずれかの操作を実行します。
++
+|===
+| UTA / UTA2 ポート | 次に、 
+
+
+| 希望するパーソナリティがない | に進みます <<step5,手順 5>>。 
+
+
+| あなたがほしい人格を持っている | 手順 5 から 12 を省略して、に進みます <<step13,手順 13>>。 
+|===
+. [[step5] 次のいずれかの操作を実行します。
++
+|===
+| を設定する場合 | 次に、 
+
+
+| UTA / UTA2 カードのポート | に進みます <<step7,手順 7>> 
+
+
+| オンボードの UTA/UTA2 ポート | 手順 7 を省略して、に進みます <<step8,手順 8>>。 
+|===
+. [[step6] アダプタがイニシエータモードの場合、および UTA / UTA2 ポートがオンラインの場合は、次のコマンドを使用して UTA / UTA2 ポートをオフラインにします。
++
+「 storage disable adapter <adapter_name> 」
+
++
+ターゲットモードのアダプタは、メンテナンスモードで自動的にオフラインになります。
+
+. [[step7] 現在の設定が目的の使用に一致しない場合は、次のコマンドを使用して、必要に応じて設定を変更します。
++
+ucadmin modify -m fc | cna-t initiator | target <adapter_name> `
+
++
+** 「 -m 」はパーソナリティ・モードで、「 fc 」または「 cna 」です。
+** `-t` は FC4 のタイプ、「 target 」または「 initiator 」です。
++
+
+NOTE: テープドライブ、 FlexArray 仮想化システム、および MetroCluster 構成には、 FC イニシエータを使用する必要があります。SAN クライアントには FC ターゲットを使用する必要があります。
+
+
+
+. [[step8] 次のコマンドを使用して、設定を確認します。
++
+ucadmin show
+
+. [[step9] 次のいずれかのコマンドを使用して、設定を確認します。
++
+|===
+| システムの状態 | 次に、 
+
+
+| ストレージディスクがあります | ucadmin show 
+
+
+| は、 V シリーズシステムまたは FlexArray 仮想化ソフトウェアを搭載し、ストレージアレイに接続されています | ucadmin show 
+|===
++
+次の例の出力は ' アダプタ 1b の FC4 タイプがイニシエータに変更され ' アダプタ 2a および 2b のモードが CNA に変更されていることを示しています
+
++
+....
+*> ucadmin show
+Adapter Current Mode Current Type  Pending Mode Pending Type Admin Status
+1a      fc           initiator     -            -            online
+1b      fc           target        -            initiator    online
+2a      fc           target        cna          -            online
+2b      fc           target        cna          -            online
+*>
+....
+. [[step10]] 次のいずれかのコマンドを入力して、各ポートに 1 回ずつターゲットポートをオンラインにします。
++
+|===
+| システムの状態 | 次に、 
+
+
+| ストレージディスクがあります | 「 network fcp adapter modify -node <node_name > -adapter <adapter_name> -state up 」の形式で指定します 
+
+
+| は、 V シリーズシステムまたは FlexArray 仮想化ソフトウェアを搭載し、ストレージアレイに接続されています | 'fcp config <adapter_name> up' 
+|===
+. [[step11]] ポートをケーブル接続します。
+. [[step12]] 次のいずれかの操作を実行します。
++
+|===
+| システムの状態 | 次に、 
+
+
+| ストレージディスクがあります | に進みます link:verifying_the_node3_installation.html["ノード 3 のインストールを確認します"]。 
+
+
+| は、 V シリーズシステムまたは FlexArray 仮想化ソフトウェアを搭載し、ストレージアレイに接続されています | に戻ります link:stage_3_installing_and_booting_node3_overview.html#step23["手順 23"]。 
+|===
+. [[step13]] 次のコマンドを使用してメンテナンスモードを終了します。
++
+「 halt 」
+
+. [[step14]] ブートメニューへのノードのブート時に 'boot_ontap menu' を実行しますA800 にアップグレードする場合は、に進みます <<step23,手順 23>>。
+. [[step15]] ノード 3 で、ブートメニューに移動し、 22/7 を使用して、非表示オプション「 boot_after_controller_replacement 」を選択します。プロンプトで、 node1 のディスクを node3 に再割り当てするには、次の例のように入力します。
++
+....
+LOADER-A> boot_ontap menu
+.
+<output truncated>
+.
+All rights reserved.
+*******************************
+*                             *
+* Press Ctrl-C for Boot Menu. *
+*                             *
+*******************************
+.
+<output truncated>
+.
+Please choose one of the following:
+(1)  Normal Boot.
+(2)  Boot without /etc/rc.
+(3)  Change password.
+(4)  Clean configuration and initialize all disks.
+(5)  Maintenance mode boot.
+(6)  Update flash from backup config.
+(7)  Install new software first.
+(8)  Reboot node.
+(9)  Configure Advanced Drive Partitioning.
+(10) Set Onboard Key Manager recovery secrets.
+(11) Configure node for external key management.
+Selection (1-11)? 22/7
+(22/7) Print this secret List
+(25/6) Force boot with multiple filesystem disks missing.
+(25/7) Boot w/ disk labels forced to clean.
+(29/7) Bypass media errors.
+(44/4a) Zero disks if needed and create new flexible root volume.
+(44/7) Assign all disks, Initialize all disks as SPARE, write DDR labels
+.
+<output truncated>
+.
+(wipeconfig)                        Clean all configuration on boot device
+(boot_after_controller_replacement) Boot after controller upgrade
+(boot_after_mcc_transition)         Boot after MCC transition
+(9a)                                Unpartition all disks and remove their ownership information.
+(9b)                                Clean configuration and initialize node with partitioned disks.
+(9c)                                Clean configuration and initialize node with whole disks.
+(9d)                                Reboot the node.
+(9e)                                Return to main boot menu.
+The boot device has changed. System configuration information could be lost. Use option (6) to restore the system configuration, or option (4) to initialize all disks and setup a new system.
+Normal Boot is prohibited.
+Please choose one of the following:
+(1)  Normal Boot.
+(2)  Boot without /etc/rc.
+(3)  Change password.
+(4)  Clean configuration and initialize all disks.
+(5)  Maintenance mode boot.
+(6)  Update flash from backup config.
+(7)  Install new software first.
+(8)  Reboot node.
+(9)  Configure Advanced Drive Partitioning.
+(10) Set Onboard Key Manager recovery secrets.
+(11) Configure node for external key management.
+Selection (1-11)? boot_after_controller_replacement
+This will replace all flash-based configuration with the last backup to disks. Are you sure you want to continue?: yes
+.
+<output truncated>
+.
+Controller Replacement: Provide name of the node you would like to replace:<nodename of the node being replaced>
+Changing sysid of node node1 disks.
+Fetched sanown old_owner_sysid = 536940063 and calculated old sys id = 536940063
+Partner sysid = 4294967295, owner sysid = 536940063
+.
+<output truncated>
+.
+varfs_backup_restore: restore using /mroot/etc/varfs.tgz
+varfs_backup_restore: attempting to restore /var/kmip to the boot device
+varfs_backup_restore: failed to restore /var/kmip to the boot device
+varfs_backup_restore: attempting to restore env file to the boot device
+varfs_backup_restore: successfully restored env file to the boot device wrote key file "/tmp/rndc.key"
+varfs_backup_restore: timeout waiting for login
+varfs_backup_restore: Rebooting to load the new varfs
+Terminated
+<node reboots>
+System rebooting...
+.
+Restoring env file from boot media...
+copy_env_file:scenario = head upgrade
+Successfully restored env file from boot media...
+Rebooting to load the restored env file...
+.
+System rebooting...
+.
+<output truncated>
+.
+WARNING: System ID mismatch. This usually occurs when replacing a boot device or NVRAM cards!
+Override system ID? {y|n} y
+.
+Login:
+....
++
+
+NOTE: 上記のコンソールの出力例では、アドバンストディスクパーティショニング（ ADP ）ディスクを使用するシステムの場合は ONTAP からパートナーノード名の入力を求められます。
+
+. [[step16]] システムが「 no disks found 」というメッセージでリブートループに入ると、システムが FC または UTA/UTA2 ポートをターゲットモードにリセットしたためにディスクを認識できないことを示します。この問題を解決するには、に進みます <<step17,手順 17>> 終了： <<step22,手順 22>>をクリックするか、セクションに移動します link:verifying_the_node3_installation.html["ノード 3 のインストールを確認します"]。
+. [[step17]] autoboot 中に Ctrl+C キーを押して 'loader>` プロンプトでノードを停止します
+. [[step18]] LOADER プロンプトで、次のコマンドを使用してメンテナンスモードに切り替えます。
++
+「 boot_ontap maint 」を使用してください
+
+. [[step19]] メンテナンスモードで、次のコマンドを使用して、現在ターゲットモードになっている以前に設定されたイニシエータポートをすべて表示します。
++
+ucadmin show
+
++
+次のコマンドを使用して、ポートをイニシエータモードに戻します。
+
++
+ucadmin modify -m fc -t initiator -f <adapter name> `
+
+. [[step20]] 次のコマンドを使用して、ポートがイニシエータモードに変更されたことを確認します。
++
+ucadmin show
+
+. [[step2]] 次のコマンドを使用して、メンテナンスモードを終了します。
++
+「 halt 」
+
+. [[step22]] LOADER プロンプトのブート時、次のコマンドを使用します。
++
+「 boot_ontap 」
+
++
+これで、ブート時に以前に割り当てられていたすべてのディスクをノードで検出できるようになり、想定どおりにブートできるようになります。
+
+. [[step23]] 外付けディスクのあるシステムから、内蔵ディスクと外付けディスクをサポートするシステム（ AFF A800 システムなど）にアップグレードする場合は、 node1 アグリゲートをルートアグリゲートとして設定し、 node1 のルートアグリゲートからブートするようにします。ルート・アグリゲートを設定するには ' ブート・メニューからオプション 5 を選択して ' 保守モードに切り替えます
++
+
+CAUTION: 次の手順を記載されている順序で実行する必要があります。正しく実行しないと、原因が停止したり、データが失われたりする可能性があります。
+
++
+次の手順は、 node3 を node1 のルートアグリゲートからブートするように設定します。
+
++
+.. 次のコマンドを使用してメンテナンスモードに切り替えます。
++
+「 boot_ontap maint 」を使用してください
+
+.. 次のコマンドを使用して、 node1 アグリゲートの RAID 、プレックス、およびチェックサムの情報を確認します。
++
+「 aggr status -r 」
+
+.. 次のコマンドを使用して、 node1 アグリゲートのステータスを確認します。
++
+「 aggr status 」を入力します
+
+.. 必要に応じて、次のコマンドを使用して node1 アグリゲートをオンラインにします。
++
+'aggr_online root_aggr_from_<node1>
+
+.. 次のコマンドを使用して、 node3 を元のルートアグリゲートからブートできないようにします。
++
+aggr offline <root_aggr_on_node3>`
+
+.. 次のコマンドを使用して、 node1 ルートアグリゲートを node3 の新しいルートアグリゲートとして設定します。
++
+「 aggr options aggr_from_<node1> root 」のように指定します
+
+.. 次のコマンドを使用して、ノード 3 のルートアグリゲートがオフラインになっていること、およびノード 1 からテイクオーバーされたディスクのルートアグリゲートがオンラインになっていること、およびルートに設定されていることを確認します。
++
+「 aggr status 」を入力します
+
++
+
+NOTE: 前の手順を実行しないと、原因 node3 を内部ルートアグリゲートからブートするか、原因システムで新しいクラスタ構成が存在すると想定するか、あるいはクラスタ構成を特定するように求められる可能性があります。
+
++
+次の例は、コマンドの出力を示しています。
+
++
+....
+Aggr            State   Status    Options
+aggr 0_nst_fas  8080_15 online    raid_dp, aggr root,  nosnap=on
+                                  fast zeroed, 64-bit
+aggr            0       offline   raid_dp, aggr, diskroot
+                                  fast zeroed, 64-bit
+....
+
+
+

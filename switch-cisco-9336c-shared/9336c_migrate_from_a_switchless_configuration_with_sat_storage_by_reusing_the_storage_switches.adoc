@@ -1,0 +1,136 @@
+---
+sidebar: switch-cisco-9336c-shared_sidebar 
+permalink: switch-cisco-9336c-shared/9336c_migrate_from_a_switchless_configuration_with_sat_storage_by_reusing_the_storage_switches.html 
+keywords:  
+summary:  
+---
+= ストレージスイッチを再利用して、 SAT ストレージを搭載したスイッチレス構成から移行する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+
+
+==== ストレージスイッチを移行します
+
+ストレージスイッチを再利用することで、 HA ペア 1 のストレージスイッチが共有スイッチになります。* スイッチ接続 * の配線図image:9336c_image1.jpg["スイッチ接続"]
+
+
+
+===== 手順
+
+. HA ペア 1 （および HA ペア 2 ）のストレージ構成が正しいこと、およびエラーがないことを確認します。「 system switch ethernet show
+
+
+[listing]
+----
+storage::*> system switch ethernet show
+Switch                    Type                  Address          Model
+------------------------- --------------------- ---------------- ----------
+sh1
+                          storage-network       172.17.227.5     C9336C
+
+    Serial Number: FOC221206C2
+     Is Monitored: true
+           Reason: none
+ Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                   9.3(5)
+   Version Source: CDP
+sh2
+                        storage-network        172.17.227.6      C9336C
+    Serial Number: FOC220443LZ
+     Is Monitored: true
+           Reason: None
+ Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                   9.3(5)
+   Version Source: CDP
+2 entries were displayed.
+storage::*>
+----
+. [[step2] ノードポートが正常で動作していることを確認します。「 storage port show -port-type enet 」
+
+
+[listing]
+----
+storage::*> storage port show -port-type ENET
+                                   Speed                          VLAN
+Node    Port    Type    Mode       (Gb/s)    State     Status       ID
+------- ------- ------- ---------- --------- --------- --------- -----
+node1
+        e0c     ENET    storage          100 enabled   online       30
+        e0d     ENET    storage          100 enabled   online       30
+        e5a     ENET    storage          100 enabled   online       30
+        e5b     ENET    storage          100 enabled   online       30
+
+node2
+        e0c     ENET    storage          100 enabled   online       30
+        e0d     ENET    storage          100 enabled   online       30
+        e5a     ENET    storage          100 enabled   online       30
+        e5b     ENET    storage          100 enabled   online       30
+----
+. [[step3] HA ペア 1 の NSM224 パス A ケーブルをストレージスイッチ A から HA ペア 1 の共有 NS224 ストレージポートに移動します。このストレージスイッチ A のパス A
+. HA ペア 1 のノード A から、ストレージスイッチ A 上の HA ペア 1 のノード A の共有ストレージポートへケーブルを接続します
+. HA ペア 1 のノード B から、ストレージスイッチ A の HA ペア 1 のノード B の共有ストレージポートへケーブルを接続します
+. HA ペア 1 に接続されたストレージスイッチ A が正常であることを確認します。「 system health alert show -instance 」
+
+
+[listing]
+----
+storage::*> system health alert show -instance
+There are no entries matching your query.
+----
+. [[step7] 共有スイッチ A のストレージ RCF を共有 RCF ファイルに置き換えます。を参照してください http://9336c_install_nx-os_software_and_reference_configuration_files_@rcfs@.html#install-the-rcf-on-a-cisco-nexus-9336c-fx2-shared-switch["Cisco Nexus 9336C-FX2 共有スイッチに RCF をインストールします"] を参照してください。
+. HA ペア 1 に接続されたストレージスイッチ B が正常であることを確認します。「 system health alert show -instance 」
+
+
+[listing]
+----
+storage::*> system health alert show -instance
+There are no entries matching your query.
+----
+. [[step9] HA ペア 1 、 NSM224 パス B のケーブルをストレージスイッチ B から HA ペア 1 の共有 NS224 ストレージポートに移動し、ストレージスイッチ B へのパス B を移動します
+. HA ペア 1 のノード A のパス B から、 HA ペア 1 の共有ストレージポート、ノード A のパス B にケーブルを接続します
+. HA ペア 1 、ノード B 、パス B から、ストレージスイッチ B の HA ペア 1 、ノード B 、パス B の共有ストレージポートにケーブルを接続します
+. HA ペア 1 に接続されたストレージスイッチ B が正常であることを確認します。「 system health alert show -instance 」
+
+
+[listing]
+----
+storage::*> system health alert show -instance
+There are no entries matching your query.
+----
+. [[step13]] 共有スイッチ B のストレージ RCF ファイルを共有 RCF ファイルで置き換えます。を参照してください link:9336c_install_nx-os_software_and_reference_configuration_files_@rcfs@.html#install-the-rcf-on-a-cisco-nexus-9336c-fx2-shared-switch["Cisco Nexus 9336C-FX2 共有スイッチに RCF をインストールします"] を参照してください。
+. HA ペア 1 に接続されたストレージスイッチ B が正常であることを確認します。「 system health alert show -instance 」
+
+
+[listing]
+----
+storage::*> system health alert show -instance
+There are no entries matching your query.
+----
+. [[step15]] 共有スイッチ A と共有スイッチ B の間に ISL をインストールします。
+
+
+[listing]
+----
+sh1# configure
+Enter configuration commands, one per line. End with CNTL/Z.
+sh1 (config)# interface e1/35-36
+sh1 (config-if-range)# no lldp transmit
+sh1 (config-if-range)# no lldp receive
+sh1 (config-if-range)# switchport mode trunk
+sh1 (config-if-range)# no spanning-tree bpduguard enable
+sh1 (config-if-range)# channel-group 101 mode active
+sh1 (config-if-range)# exit
+sh1 (config)# interface port-channel 101
+sh1 (config-if)# switchport mode trunk
+sh1 (config-if)# spanning-tree port type network
+sh1 (config-if)# exit
+sh1 (config)# exit
+----
+. [[step16]] スイッチレスクラスタからスイッチ使用のクラスタへの HA ペア 1 の変換。共有 RCF で定義されているクラスタポートの割り当てを使用します。を参照してください link:9336c_install_nx-os_software_and_reference_configuration_files_@rcfs@.html["NX-OS ソフトウェアおよび RCF のインストール"]を参照してください。
+. スイッチドネットワーク設定が有効であることを確認します。「 network port show 」
+

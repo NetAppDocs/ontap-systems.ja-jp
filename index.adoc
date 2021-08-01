@@ -1,0 +1,18 @@
+---
+sidebar: sidebar 
+permalink: index.html 
+summary: ONTAP システムのドキュメント 
+---
+= ONTAP 9.8 システムのマニュアル
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+このライブラリは、アグリゲートの再配置方法を使用してストレージシステムのコントローラハードウェアをアップグレードする手順を示します。
+
+* link:upgrade-arl-auto-app/index.html["「 system controller replace 」コマンドを使用して、 ONTAP 9.8 を実行しているコントローラハードウェアをアップグレードします"]
+

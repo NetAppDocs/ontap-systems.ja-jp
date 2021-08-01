@@ -1,0 +1,76 @@
+---
+sidebar: upgrade-arl-auto-app_sidebar 
+permalink: upgrade-arl-auto-app/relocating_non-root_aggregates_and_nas_data_lifs_from_node2_to_node3.html 
+keywords: relocate, non-root, aggregates, nas, lif, node2, node3 
+summary: node2 を node4 に置き換える前に、 node2 によって所有されているルート以外のアグリゲートを node3 に再配置する必要があります。 
+---
+= ルート以外のアグリゲートと NAS データ LIF を node2 から node3 に再配置します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+node2 を node4 に置き換える前に、 node2 によって所有されているルート以外のアグリゲートを node3 に再配置する必要があります。
+
+前のフェーズでチェックが完了すると、 node2 のリソースリリースが自動的に開始されます。ルート以外のアグリゲートと SAN 以外のデータ LIF が node2 から node3 に移行されます。
+
+アップグレード手順の実行中、リモート LIF は SAN LUN へのトラフィックを処理します。アップグレード時にクラスタやサービスの健全性を維持するために、 SAN LIF を移動する必要はありません。
+
+アグリゲートと LIF の移行が完了すると、検証のために処理が一時停止されます。この段階で、ルート以外のアグリゲートと SAN 以外のデータ LIF がすべて node3 に移行されているかどうかを確認する必要があります。
+
+
+NOTE: アグリゲートおよび LIF のホーム所有者は変更されません。現在の所有者のみが変更されます。
+
+.手順
+. 次のコマンドを使用して、ルート以外のすべてのアグリゲートがオンラインであること、および node3 でのそれらの状態を確認します。
++
+「 storage aggregate show -node node3 -state online -root false 」という 2 つのコマンドを実行します
+
++
+次の例は、 node2 のルート以外のアグリゲートがオンラインになっていることを示しています。
+
++
+....
+cluster::> storage aggregate show -node node3 state online -root false
+
+Aggregate      Size         Available   Used%   State   #Vols  Nodes  RAID     Status
+----------     ---------    ---------   ------  -----   -----  ------ -------  ------
+aggr_1         744.9GB      744.8GB      0%     online  5      node2  raid_dp  normal
+aggr_2         825.0GB      825.0GB      0%     online  1      node2  raid_dp  normal
+2 entries were displayed.
+....
++
+アグリゲートがオフラインになった場合、または node3 で外部になった場合は、各アグリゲートに対して次のコマンドを実行してそれらのアグリゲートをオンラインにします。
+
++
+「 storage aggregate online -aggregate <aggr_name>` 」という名前になります
+
+. node3 で次のコマンドを実行し、出力を調べて、すべてのボリュームがノード 3 でオンラインになっていることを確認します。
++
+volume show -node node3 -state offline`
+
++
+node3 にオフラインのボリュームがある場合は、各ボリュームに対して次のコマンドを実行してそれらのボリュームをオンラインにします。
+
++
+'volume online -vserver <vserver-name> -volume <volume-name>`
+
++
+このコマンドで使用する '<vserver-name> は ' 前の volume show コマンドの出力にあります
+
+. LIF が正しいポートに移動され、ステータスが「 up 」になっていることを確認します。LIF が 1 つでも停止している場合は、次のコマンドを LIF ごとに 1 回入力して、 LIF の管理ステータスを「 up 」に設定します。
++
+「 network interface modify -vserver <vserver_name> -lif <lif_name> -home-node <nodename> -status-admin up 」という形式で指定します
+
+. データ LIF を現在ホストしているポートが新しいハードウェアに存在しない場合は、次のコマンドを使用してブロードキャストドメインから削除します。
++
+「 network port broadcast-domain remove-ports 」と入力します
+
+. 次のコマンドを使用して、 node2 にデータ LIF が残っていないことを確認します。
++
+network interface show -curr-node <node2> -role data
+
+

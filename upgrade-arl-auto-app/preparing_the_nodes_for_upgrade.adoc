@@ -1,0 +1,181 @@
+---
+sidebar: upgrade-arl-auto-app_sidebar 
+permalink: upgrade-arl-auto-app/preparing_the_nodes_for_upgrade.html 
+keywords: preparing, nodes, upgrade 
+summary: ONTAP コマンドラインで次のコマンドを入力して、コントローラの交換プロセスを開始します。 
+---
+= ノードをアップグレードする準備をします
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ノードをアップグレードする準備として、次の手順を実行する必要があります。
+
+.手順
+. ONTAP コマンドラインで次のコマンドを入力して、コントローラの交換プロセスを開始します。
++
+「 system controller replace start-nodes <Node_name> 」のように入力します
+
++
+
+NOTE: このコマンドは、 advanced 権限レベルの「 set -privilege advanced 」でのみ実行できます
+
++
+次の出力が表示されます。
+
++
+....
+Warning:
+1. Current ONTAP version is 9.8
+Before starting controller replacement operation, ensure that the new controllers are running the version 9.8
+
+2. Verify that NVMEM or NVRAM batteries of the new nodes are charged, and charge them if they are not. You need to physically check the new nodes to see if the NVMEM or NVRAM  batteries are charged. You can check the battery status either by connecting to a serial console or using SSH, logging into the Service Processor (SP) or Baseboard Management Controller (BMC) for your system, and use the system sensors to see if the battery has a sufficient charge.
+
+Attention: Do not try to clear the NVRAM contents. If there is a need to clear the contents of NVRAM, contact NetApp technical support.
+
+3. If a controller was previously part of a different cluster, run wipeconfig before using it as the replacement controller.
+
+Do you want to continue? {y|n}: y
+....
+. 「 y 」キーを押すと、次の出力が表示されます。
++
+....
+Controller replacement operation: Prechecks in progress.
+Controller replacement operation has been paused for user intervention.
+....
++
+システムでは次の事前確認が実行され、あとで手順で使用するために各事前確認の出力が記録されます。
+
++
+[cols="35,65"]
+|===
+| 事前チェック | 説明 
+
+
+| クラスタの健常性チェック | クラスタ内のすべてのノードが正常であることを確認します。 
+
+
+| MCC クラスタチェック | システムが MetroCluster 構成かどうかを確認します。MetroCluster 構成かどうかが自動的に検出され、特定の事前確認と検証チェックが実行されます。4 ノードの MetroCluster FC 構成のみがサポートされます。2 ノード MetroCluster 構成と 4 ノード MetroCluster の IP 構成では、チェックが失敗します。MetroCluster 構成がスイッチオーバーされている場合、チェックは失敗します。 
+
+
+| アグリゲートの再配置ステータスチェック | アグリゲートの再配置がすでに実行中であるかどうかを確認します。別のアグリゲートの再配置を実行中の場合、チェックは失敗します。 
+
+
+| モデル名のチェック（ Model Name Check | この手順でコントローラモデルがサポートされているかどうかを確認します。モデルがサポートされていない場合、タスクは失敗します。 
+
+
+| クラスタクォーラムチェック | 交換するノードがクォーラムにあることを確認します。ノードがクォーラムを構成していない場合は、タスクが失敗します。 
+
+
+| イメージのバージョンチェック | 交換するノードで同じバージョンの ONTAP が実行されていることを確認します。ONTAP イメージのバージョンが異なると、タスクは失敗します。新しいノードには、元のノードと同じバージョンの ONTAP 9.8 をインストールする必要があります。新しいノードに別のバージョンの ONTAP がインストールされている場合は、設置後に新しいコントローラをネットブートする必要があります。を参照してください link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-ug-rdg/home.html["ONTAP 9 アップグレードおよびリバート / ダウングレードガイド"] ONTAP のアップグレード手順については、を参照してください 
+
+
+| HA ステータスチェック | 交換する両方のノードがハイアベイラビリティ（ HA ）ペア構成になっているかどうかを確認します。コントローラでストレージフェイルオーバーが有効になっていない場合、タスクは失敗します。 
+
+
+| アグリゲートステータスチェック | ホーム所有者でないアグリゲートを交換するノードが所有している場合、そのタスクは失敗します。ローカル以外のアグリゲートを所有するノードは使用しないでください。 
+
+
+| ディスクステータスチェック | 交換するノードに不足しているディスクまたは障害が発生しているディスクがある場合、タスクは失敗します。足りないディスクがある場合は、を参照してください link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html["ONTAP 9 ディスクとアグリゲートパワーガイド"]、 および  を参照してください  をクリックして HA ペアのストレージを設定します。 
+
+
+| データ LIF ステータスチェック | 交換するノードにローカル以外のデータ LIF があるかどうかを確認します。ホーム所有者でないデータ LIF がノードに含まれないようにしてください。ローカル以外のデータ LIF がいずれかのノードに含まれている場合、タスクは失敗します。 
+
+
+| クラスタ LIF ステータス | 両方のノードでクラスタ LIF が動作しているかどうかを確認します。クラスタ LIF が停止している場合は、タスクは失敗します。 
+
+
+| ASUP ステータスチェック | ASUP 通知が設定されていないと、タスクは失敗します。コントローラの交換用手順を開始する前に ASUP を有効にする必要があります。 
+
+
+| CPU 利用率チェック | 交換するノードの CPU 利用率が 50% を超えていないかどうかを確認します。CPU 使用率がかなりの時間にわたって 50% を超えると、タスクは失敗します。 
+
+
+| アグリゲートの再構築チェック | いずれかのデータアグリゲートで再構築が実行されているかどうかを確認しますアグリゲートの再構築を実行中の場合、タスクは失敗します。 
+
+
+| ノードアフィニティジョブチェック | ノードアフィニティジョブが実行されているかどうかを確認します。ノードアフィニティジョブが実行中の場合、チェックは失敗します。 
+|===
+. コントローラの交換処理が開始されて事前確認が完了すると、処理が一時停止するため、ノード 3 の設定時に必要になる可能性がある出力情報を収集できます。
+. システムコンソールで、コントローラの交換用手順の指示に従って、次のコマンドセットを実行します。
++
+次のコマンドの出力を個別に実行して保存する必要があります。
+
++
+** vserver services name-service dns show
+** network interface show -curr-node <nodename> -role <cluster 、 intercluster 、 node-mgmt 、 cluster-mgmt 、 data >
+** network port show -node <node_name > -type physical
+** service-processor show -node * -instance の各コマンドを実行します
+** network fcp adapter show -node <node_name >
+** network port ifgrp show の設定
+** system node show -instance -node <node_name >
+** run -node <node_name >sysconfig
+** storage aggregate show -node <node_name >
+** volume show -node <node_name >
+** storage array config show -switch <switch_name> のように表示されます
+** system license show -owner <node_name >
+** storage encryption disk show のコマンド
+** security key-manager backup show のコマンドは
+** security key-manager external show のコマンド
+** security key-manager external show-status のこと
+** reachability show-detailability
+
+
+
+
+
+NOTE: オンボードキーマネージャ（ OKM ）を使用する NetApp Volume Encryption を使用している場合、キー管理ツールのパスフレーズを使用して、あとで手順でキー管理ツールの再同期を完了してください。
+
+
+
+=== ARL の事前確認に失敗した場合は、アグリゲートの所有権を修正
+
+アグリゲートステータスチェックに失敗した場合は、パートナーノードが所有するアグリゲートをホーム所有者ノードに戻し、事前確認プロセスを再度開始する必要があります。
+
+.手順
+. 次のコマンドを使用して、パートナーノードが現在所有しているアグリゲートをホーム所有者ノードに戻します。
++
+「 storage aggregate relocation start -node <source_node> -destination <destination-node> -aggregate -list * 」のように表示されます
+
+. 次のコマンドを使用して、 node1 と node2 のどちらも現在の所有者（ホーム所有者ではない）であるアグリゲートを所有していないことを確認します。
++
+「 storage aggregate show -nodes <node_name > -is-home false -fields owner-<name> 、 home-name 、 state
+
++
+次の例は、アグリゲートの現在の所有者とホーム所有者の両方がノードにある場合のコマンドの出力例を示しています。
+
++
+....
+cluster::> storage aggregate show -nodes node1 -is-home true -fields owner-name,home-name,state
+aggregate   home-name  owner-name  state
+aggr1       node1      node1       online
+aggr2       node1      node1       online
+aggr3       node1      node1       online
+aggr4       node1      node1       online
+4 entries were displayed.
+....
+
+
+
+
+==== 完了後
+
+次のコマンドを使用して、コントローラの交換プロセスを再起動する必要があります。
+
+「 system controller replace start-nodes <Node_name> 」のように入力します
+
+
+
+=== 使用許諾
+
+クラスタをセットアップする際、セットアップウィザードでクラスタベースのライセンスキーを入力するように求められます。ただし、一部の機能には追加のライセンスが必要です。ライセンスは、 1 つ以上の機能を含むパッケージとして発行されます。クラスタで使用する各機能のキーは、クラスタ内の各ノードに独自に設定する必要があります。
+
+新しいライセンスキーがない場合は、クラスタで現在ライセンスされている機能を新しいコントローラで使用できます。ただし、ライセンスされていない機能をコントローラで使用するとライセンス契約に違反する可能性があるため、アップグレードの完了後に新しいコントローラのライセンスキーをインストールする必要があります。
+
+ONTAP 9.8 用の新しい 2 文字のライセンスキーは、で入手できます link:https://mysupport.netapp.com["ネットアップサポートサイト"]。キーは、 _ ソフトウェアライセンス _ の _ マイサポート _ セクションにあります。必要なライセンスキーがサイトにない場合は、ネットアップの営業担当者にお問い合わせください。
+
+ライセンスの詳細については、を参照してください link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html["システムアドミニストレーションリファレンス"] を参照してください 。

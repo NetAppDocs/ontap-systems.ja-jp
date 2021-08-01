@@ -1,0 +1,25 @@
+---
+sidebar: upgrade-arl-auto-app_sidebar 
+permalink: upgrade-arl-auto-app/checking_for_metrocluster_configuration_errors.html 
+keywords: metrocluster, configuration, errors, config, advisor, netapp, support, site 
+summary: ネットアップサポートサイトから入手できる Config Advisor ツールを使用できます。 
+---
+= MetroCluster 構成エラーがないかどうかを確認します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ネットアップサポートサイトで入手できる Config Advisor ツールを使用して、代表的な構成エラーがないかどうかを確認できます。
+
+Config Advisor は、構成の検証や健常性のチェックに使用できるツールです。データ収集とシステム分析のために、セキュアなサイトにもセキュアでないサイトにも導入できます。
+
+
+NOTE: Config Advisor のサポートには制限があり、オンラインでしか使用できません。
+
+. をダウンロードします link:https://mysupport.netapp.com/site/tools["Active IQ Config Advisor"] ツール。
+. Active IQ Config Advisor を実行し、出力を確認して推奨された方法で問題に対処します。
+

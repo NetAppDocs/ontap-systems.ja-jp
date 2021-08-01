@@ -1,0 +1,16 @@
+---
+sidebar: upgrade-arl-auto-app_sidebar 
+permalink: upgrade-arl-auto-app/upgrading_the_node_pair.html 
+keywords: upgrading, node pair, prepare, original, decommission 
+summary: をクリックしてノードペアをアップグレードします。 
+---
+= ノードペアをアップグレードします
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ノードペアをアップグレードするには、元のノードを準備し、元のノードと新しいノードの両方で一連の手順を実行する必要があります。その後、元のノードの運用を停止できます。

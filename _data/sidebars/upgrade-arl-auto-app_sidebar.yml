@@ -1,0 +1,113 @@
+---
+prefix: upgrade-arl-auto-app
+entries:
+- title: アグリゲートの再配置を使用してコントローラハードウェアをアップグレードする
+  entries:
+  - title: 概要
+    url: "/using_aggregate_relocation_to_upgrade_controller_hardware_overview.html"
+  - title: コントローラのアップグレードプロセスを自動化する
+    url: "/automating_the_controller_upgrade_process.html"
+- title: アグリゲートの再配置ガイドを使用するかどうかを決定します
+  url: "/deciding_whether_to_use_the_aggregate_relocation_guide.html"
+- title: 必要な工具とドキュメント
+  url: "/required_tools_and_documentation.html"
+- title: ARL を使用したコントローラのアップグレードに関するガイドライン
+  url: "/guidelines_for_upgrading_controllers_with_arl.html"
+- title: MetroCluster 構成の健全性を確認
+  url: "/verifying_the_health_of_the_metrocluster_configuration.html"
+- title: MetroCluster 構成エラーがないかどうかを確認します
+  url: "/checking_for_metrocluster_configuration_errors.html"
+- title: スイッチオーバー、修復、スイッチバックを検証
+  url: "/verifying_switchover,_healing,_and_switchback.html"
+- title: ARL アップグレードの概要
+  url: "/overview_of_the_arl_upgrade.html"
+- title: ノードペアをアップグレードします
+  url: "/upgrading_the_node_pair.html"
+- title: ステージ 1 アップグレードの準備
+  entries:
+  - title: 概要
+    url: "/stage_1_preparing_for_upgrade_overview.html"
+  - title: ノードをアップグレードする準備をします
+    url: "/preparing_the_nodes_for_upgrade.html"
+  - title: ストレージ暗号化用の外部キー管理サーバの IP アドレスを取得します
+    url: "/getting_an_ip_address_of_an_external_key_management_server_for_storage_encryption.html"
+- title: ステージ 2 ：ノード 1 の再配置および廃止
+  entries:
+  - title: 概要
+    url: "/stage_2_relocating_and_retiring_node1_overview.html"
+  - title: ノード 1 が所有するルート以外のアグリゲートと NAS データ LIF をノード 2 に再配置します
+    url: "/relocating_non-root_aggregates_and_nas_data_lifs_owned_by_node1_to_node2.html"
+  - title: 障害が発生したアグリゲートを再配置するか
+    url: "/relocating_failed_or_vetoed_aggregates.html"
+  - title: ノード 1 を撤去
+    url: "/retiring_node1.html"
+  - title: ネットブートを準備
+    url: "/preparing_for_netboot.html"
+- title: ステージ 3 ：ノード 3 のインストールとブート
+  entries:
+  - title: 概要
+    url: "/stage_3_installing_and_booting_node3_overview.html"
+  - title: node3 をインストールしてブートします
+    url: "/installing_and_booting_node3.html"
+  - title: ノード 3 で FC または UTA / UTA2 設定を設定します
+    url: "/setting_the_fc_or_uta_uta2_configuration_on_node3.html"
+  - title: ノード 3 のインストールを確認します
+    url: "/verifying_the_node3_installation.html"
+  - title: ノード 3 でキー管理ツールの設定をリストアします
+    url: "/restoring_key-manager_configuration_on_node3.html"
+  - title: ノード 1 で所有されているルート以外のアグリゲートと NAS データ LIF を、ノード 2 からノード 3 に移動します
+    url: "/moving_non-root_aggregates_and_nas_data_lifs_owned_by_node1_from_node2_to_node3.html"
+- title: ステージ 4 再配置と撤去 node2
+  entries:
+  - title: 概要
+    url: "/stage_4_relocating_and_retiring_node2_overview.html"
+  - title: ルート以外のアグリゲートと NAS データ LIF を node2 から node3 に再配置します
+    url: "/relocating_non-root_aggregates_and_nas_data_lifs_from_node2_to_node3.html"
+  - title: ノード 2 を撤去
+    url: "/retiring_node2.html"
+- title: ステージ 5 Install and boot node4
+  entries:
+  - title: 概要
+    url: "/stage_5_installing_and_booting_node4_overview.html"
+  - title: ノード 4 をインストールしてブートします
+    url: "/installing_and_booting_node4.html"
+  - title: ノード 4 で FC または UTA / UTA2 設定を設定します
+    url: "/setting_the_fc_or_uta_uta2_configuration_on_node4.html"
+  - title: ノード 4 のインストールを確認します
+    url: "/verifying_the_node4_installation.html"
+  - title: ノード 4 でキー管理ツールの設定をリストアします
+    url: "/restoring_key-manager_configuration_on_node4.html"
+  - title: node2 によって所有されているルート以外のアグリゲートと NAS データ LIF を、 node3 から node4 に移動します
+    url: "/moving_non-root_aggregates_and_nas_data_lifs_owned_by_node2_from_node3_to_node4.html"
+- title: ステージ 6 アップグレードを完了する
+  entries:
+  - title: 概要
+    url: "/stage_6_completing_the_upgrade_overview.html"
+  - title: MetroCluster FC 構成のアップグレードを完了します
+    url: "/completing_the_upgrade_for_metrocluster_fc_configuration.html"
+  - title: 新しいコントローラが正しくセットアップされていることを確認します
+    url: "/ensuring_that_the_new_controllers_are_set_up_correctly.html"
+  - title: 新しいコントローラモジュールで Storage Encryption をセットアップします
+    url: "/setting_up_storage_encryption_on_the_new_controller_module.html"
+  - title: 新しいコントローラモジュールで NetApp Volume Encryption をセットアップします
+    url: "/setting_up_netapp_volume_encryption_on_the_new_controller_module.html"
+  - title: 古いシステムの運用を停止
+    url: "/decommissioning_the_old_system.html"
+  - title: SnapMirror 処理を再開します
+    url: "/resuming_snapmirror_operations.html"
+- title: トラブルシューティング
+  entries:
+  - title: 概要
+    url: "/troubleshooting_overview.html"
+  - title: アグリゲートの再配置に失敗しまし
+    url: "/aggregate_relocation_failures.html"
+  - title: アグリゲートの再配置に失敗していないかどうか
+    url: "/checking_for_aggregate_relocation_failure.html"
+  - title: アグリゲートは、アップグレードの完了後、ノード 1 にもともと存在していたものとノード 4 によって所有されます
+    url: "/aggregates_originally_on_node1_are_owned_by_node4_after_completion_of_the_upgrade.html"
+  - title: リブート、パニック、電源再投入
+    url: "/reboots_panics_or_power_cycles.html"
+  - title: 手順の複数の段階で発生する可能性のある問題
+    url: "/issues_that_can_arise_in_multiple_stages_of_the_procedure.html"
+  - title: LIF の移行が失敗しました
+    url: "/lif_migration_failure.html"

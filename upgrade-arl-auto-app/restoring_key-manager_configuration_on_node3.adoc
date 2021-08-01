@@ -1,0 +1,26 @@
+---
+sidebar: upgrade-arl-auto-app_sidebar 
+permalink: upgrade-arl-auto-app/restoring_key-manager_configuration_on_node3.html 
+keywords: restoring, key-manager, configuration, node3, nve, arl, encryption, netapp, volume 
+summary: NetApp Volume Encryption （ NVE ）を使用してアップグレードするシステム上のボリュームを暗号化する場合。 
+---
+= ノード 3 でキー管理ツールの設定をリストアします
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Volume Encryption （ NVE ）を使用してアップグレードするシステムのボリュームを暗号化する場合は、暗号化設定を新しいノードに同期する必要があります。ノード 1 のアグリゲートの ARL がノード 2 からノード 3 に完了すると、暗号化されたボリュームがオフラインになります。
+
+次の手順を実行して、暗号化設定を新しいノードに同期します。
+
+.手順
+. クラスタプロンプトで次のコマンドを使用して、 OKM の暗号化構成を同期します。
++
+「セキュリティキーマネージャオンボード同期」
+
+. OKM のクラスタ全体のパスフレーズを入力します。
+
