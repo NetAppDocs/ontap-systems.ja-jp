@@ -1,0 +1,95 @@
+= 
+
+
+ノード 2 を撤去するには、ノード 2 を適切にシャットダウンし、ラックまたはシャーシから取り外す必要があります。クラスタが SAN 環境にある場合は、 SAN LIF も削除する必要があります。
+
+.手順
+. 次のいずれかを実行します。
++
+[cols="35,65"]
+|===
+| クラスタの種類 | 作業 
+
+
+| 2 ノードクラスタ | に進みます <<man_retire_2_Step2,手順 2>>。 
+
+
+| 3 つ以上のノードで構成されるクラスタ | に進みます <<man_retire_2_Step9,手順 9>>。 
+|===
+. [[man_リタイヤ _2_Step2] 両方のノードで次のコマンドを入力して、 advanced 権限レベルにアクセスします。
++
+「 advanced 」の権限が必要です
+
+. 次のコマンドを入力し、出力を確認して、クラスタ HA が無効になっていることを確認します。
++
+cluster ha show
+
++
+次のメッセージが表示されます。
+
++
+[listing]
+----
+High Availability Configured: false
+----
+. node2 にイプシロンが設定されているかどうかを確認するには、次のコマンドを入力して出力を調べます。
++
+「 cluster show 」を参照してください
+
++
+次の例では、 node2 にイプシロンが設定されています。
+
++
+[listing]
+----
+cluster*::> cluster show
+Node                 Health  Eligibility   Epsilon
+-------------------- ------- ------------  -----------
+node1                true    true          false
+node2                true    true          true
+
+Warning: Cluster HA has not been configured. Cluster HA must be configured on a two-node cluster to ensure data access availability in the event of storage failover. Use the "cluster ha modify -configured true" command to configure cluster HA.
+
+2 entries were displayed.
+----
+. node2 にイプシロンが設定されている場合は、ノードにイプシロンを「 false 」として設定して、ノードを node3 に転送できるようにします。
++
+cluster modify -node <node2 > -epsilon false
+
+. node3 の epsilon true とマークを付けて、イプシロンを node3 に移動します。
++
+cluster modify -node <node3 > -epsilon true
+
+. セットアップが 2 ノードスイッチレスクラスタかどうかを確認します。
++
+network options switchless-cluster show
+
++
+[listing]
+----
+cluster::*> network options switchless-cluster show
+Enable Switchless Cluster: false/true
+----
++
+このコマンドの値は、システムの物理状態と一致している必要があります。
+
+. セットアップが 2 ノードスイッチレスクラスタかどうかを確認します。
++
+network options switchless-cluster show
+
++
+[listing]
+----
+cluster::*> network options switchless-cluster show
+Enable Switchless Cluster: false/true
+----
++
+このコマンドの値は、システムの物理状態と一致している必要があります。
+
+. [[man_detup_2_Step9] 管理者レベルに戻ります。
++
+「特権管理者」
+
+. いずれかのコントローラで次のコマンドを入力して、 node2 を停止します。 'system node halt -node <node2>]
+. ノード 2 が完全にシャットダウンしたら、シャーシまたはラックからノードを取り外します。アップグレードの完了後に、 node2 の運用を停止できます。を参照してください link:decommission_old_system.html["古いシステムの運用を停止"]。
+

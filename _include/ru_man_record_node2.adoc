@@ -1,0 +1,130 @@
+= 
+
+
+ノード 2 をシャットダウンして撤去する前に、クラスタネットワーク、管理、および FC ポートとその NVRAM システム ID に関する情報を記録しておく必要があります。この情報は、 node2 を node4 にマッピングしてディスクを再割り当てするときに、手順で必要となります。
+
+.手順
+. ノード 2 のクラスタネットワークポート、ノード管理ポート、クラスタ間ポート、およびクラスタ管理ポートを特定します。
++
+network interface show -curr-node <node_name > -role cluster 、 intercluster 、 nodemmgmt 、 cluster-mgmt
+
++
+次の例に示すように、クラスタ内のそのノードと他のノードの LIF が表示されます。
+
++
+[listing]
+----
+cluster::> network interface show -curr-node node2 -role
+cluster,intercluster,node-mgmt,cluster-mgmt
+         Logical     Status     Network            Current     Current Is
+Vserver  Interface   Admin/Oper Address/Mask       Node        Port    Home
+-------- ----------  ---------- ------------------ ----------  ------- ----
+node2
+         intercluster up/up     192.168.1.202/24   node2       e0e     true
+         clus1        up/up     169.254.xx.xx/24   node2       e0a     true
+         clus2        up/up     169.254.xx.xx/24   node2       e0b     true
+         mgmt1        up/up     192.168.0.xxx/24   node2       e0c     true
+4 entries were displayed.
+----
++
+
+NOTE: システムにクラスタ間 LIF がない可能性があります。クラスタ管理 LIF は、ノードペアの一方のノードにしか配置しません。の出力例にクラスタ管理 LIF が表示されています link:record_node1_information.html#step["手順 1."] インレコード node1 のポート情報 _ 。
+
+. セクションで使用する情報を出力に記録します link:map_ports_node2_node4.html["node2 のポートを node4 にマッピングします"]。
++
+出力情報は、新しいコントローラポートを古いコントローラポートにマッピングするために必要です。
+
+. node2 の物理ポートを特定します。
++
+network port show -node <node_name > -type physical ` +
+
++
+`node_name は ' 移行するノードです
+
++
+次の例に示すように、 node2 の物理ポートが表示されます。
+
++
+[listing]
+----
+cluster::> network port show -node node2 -type physical
+
+                                                             Speed (Mbps)
+Node   Port      IPspace      Broadcast Domain Link   MTU    Admin/Oper
+------ --------- ------------ ---------------- ----- ------- -----------
+node2
+       e0M       Default      IP_address       up       1500  auto/100
+       e0a       Default      -                up       1500  auto/1000
+       e0b       Default      -                up       1500  auto/1000
+       e1a       Cluster      Cluster          up       9000  auto/10000
+       e1b       Cluster      Cluster          up       9000  auto/10000
+5 entries were displayed.
+----
+. ポートとそのブロードキャストドメインを記録します。
++
+ブロードキャストドメインは、あとで手順の新しいコントローラのポートにマッピングする必要があります。
+
+. node2 の FC ポートを確認します。
++
+「 network fcp adapter show 」のように表示されます
+
++
+次の例に示すように、 node2 の FC ポートが表示されます。
+
++
+[listing]
+----
+cluster::> network fcp adapter show -node node2
+                     Connection  Host
+Node         Adapter Established Port Address
+------------ ------- ----------- ------------
+node2
+             0a      ptp         11400
+node2
+             0c      ptp         11700
+node2
+             6a      loop        0
+node2
+             6b      loop        0
+4 entries were displayed.
+----
+. ポートを記録します。
++
+出力情報は、手順の後半で新しいコントローラの新しい FC ポートをマッピングするために必要です。
+
+. まだ設定していない場合は、 node2 にインターフェイスグループまたは VLAN が設定されているかどうかを確認します。
++
+ifgrp show`
+
++
+「 vlan show 」
+
++
+このセクションの情報を使用します link:map_ports_node2_node4.html["node2 のポートを node4 にマッピングします"]。
+
+. 次のいずれかを実行します。
++
+[cols="35,65"]
+|===
+| 状況 | 作業 
+
+
+| に記録された NVRAM システム ID 番号 link:prepare_nodes_for_upgrade.html["ノードをアップグレードする準備をします"] | に進みます link:retire_node2.html["ノード 2 を撤去"]。 
+
+
+| NVRAM システムの ID 番号をに記録しませんでした link:prepare_nodes_for_upgrade.html["ノードをアップグレードする準備をします"] | - 完了しました <<man_record_2_step9,手順 9>> および <<man_record_2_step10,手順 10>> 次に、次のセクションに進みます。 link:retire_node2.html["ノード 2 を撤去"]。 
+|===
+. [man_record_2_step9] ノード 2 の属性を表示します。
++
+「 system node show -instance -node node2 」
+
++
+[listing]
+----
+cluster::> system node show -instance -node node2
+                            ...
+                 NVRAM System ID: system_ID
+                           ...
+----
+. [man_record_2_step10] セクションで使用する NVRAM システム ID を記録します link:install_boot_node4.html["ノード 4 をインストールしてブートします"]。
+

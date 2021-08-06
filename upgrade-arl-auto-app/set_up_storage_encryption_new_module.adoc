@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: upgrade-arl-auto-app/set_up_storage_encryption_new_module.html 
+keywords: set up storage, encryption, controller, module, node 
+summary: 交換したコントローラまたは新しいコントローラの HA パートナーで Storage Encryption が使用されている場合。 
+---
+= 新しいコントローラモジュールで Storage Encryption をセットアップします
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+<stdin> で未解決のディレクティブ : ../_include/ru_auto_set_up_storage_encryption_new_module.adoc[]

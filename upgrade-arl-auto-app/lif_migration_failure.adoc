@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar 
+sidebar: sidebar 
 permalink: upgrade-arl-auto-app/lif_migration_failure.html 
 keywords: lif, migration, failure, ndac, mtu 
 summary: LIF の移行後、ステージ 2 、ステージ 3 、またはステージ 5 で移行後にオンラインにならない場合があります。 

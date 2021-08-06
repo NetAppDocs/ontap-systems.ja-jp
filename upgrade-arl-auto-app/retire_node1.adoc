@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: upgrade-arl-auto-app/retire_node1.html 
+keywords: retiring, node 
+summary: ノード 1 を撤去するには、自動処理を再開して、ノード 2 で HA ペアを無効にし、 Lonode1 を適切にシャットダウンします。 
+---
+= ノード 1 を撤去
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+<stdin> で未解決のディレクティブ : ../_include/ru_auto_rede_node1.adoc[]

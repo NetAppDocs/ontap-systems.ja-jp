@@ -1,6 +1,6 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar 
-permalink: upgrade-arl-auto-app/moving_non-root_aggregates_and_nas_data_lifs_owned_by_node1_from_node2_to_node3.html 
+sidebar: sidebar 
+permalink: upgrade-arl-auto-app/move_non-root_aggr_and_nas_data_lifs_node1_from_node2_to_node3.html 
 keywords: moving, non-root, aggregates, nas, lif, node1, node2, node3 
 summary: ノード 3 でネットワーク構成を確認したら、ノード 2 からノード 3 にアグリゲートを再配置します。 
 ---

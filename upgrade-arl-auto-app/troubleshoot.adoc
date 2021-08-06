@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: upgrade-arl-auto-app/troubleshoot.html 
+keywords: troubleshooting, node, aggregate, lif, migrate, failure 
+summary: ノードペアのアップグレード中に障害が発生する可能性があります。 
+---
+= トラブルシューティングを行う
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+<stdin> で未解決のディレクティブ : ../_include/ru_auto_troubleshoot .adoc[]

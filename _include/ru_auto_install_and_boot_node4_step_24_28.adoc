@@ -1,0 +1,27 @@
+= 
+
+
+. FC イニシエータポートをストレージアレイに新しいホストとして追加し、アレイ LUN を新しいホストにマッピングします。
++
+手順については、ストレージアレイおよびゾーニングに関するドキュメントを参照してください。
+
+. ストレージアレイ上のアレイ LUN に関連付けられたホストまたはボリュームグループの World Wide Port Name （ WWPN ；ワールドワイドポート名）値を変更する。
++
+新しいコントローラモジュールを設置すると、各オンボード FC ポートに関連付けられている WWPN の値が変更されます。
+
+. スイッチベースのゾーニングを使用している場合は、新しい WWPN 値が反映されるようにゾーニングを調整します。
+. [[step27]] NetApp Storage Encryption （ NSE ）がこの構成で使用されている場合、「 setenvarg.storageencryption.support 」コマンドは「 true 」に設定する必要があります。「 kmip.init.maxwait` 」変数は、 node2 構成のロード後にブートループが発生しないように「 off 」に設定する必要があります。
++
+'etenv bootarg.storageencryption.support true
+
++
+'etenv kmip.init.maxwait off
+
+. ノードをブートメニューに追加します。
++
+「 boot_ontap menu
+
++
+FC または UTA / UTA2 設定がない場合は、を実行します link:set_fc_or_uta_uta2_config_node4.html#auto_check_node4_step15["ノード 4 の UTA / UTA2 ポートの確認と設定、手順 15"] ノード 4 が node2 のディスクを認識できるようにします。
+
+

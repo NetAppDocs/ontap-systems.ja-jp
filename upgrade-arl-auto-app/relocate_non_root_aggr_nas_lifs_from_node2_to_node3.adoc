@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: upgrade-arl-auto-app/relocate_non_root_aggr_nas_lifs_from_node2_to_node3.html 
+keywords: relocate, non-root, aggregates, nas, lif, node2, node3 
+summary: node2 を node4 に置き換える前に、 node2 によって所有されているルート以外のアグリゲートを node3 に再配置する必要があります。 
+---
+= ルート以外のアグリゲートと NAS データ LIF を node2 から node3 に再配置します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+<stdin> で未解決のディレクティブ： ./_include/ru_auto_relocate_non_root_aggr_nas_LIFs _from_node2 _to_node3 _intro_step_4.adoc[]
+
+. [[Step5] ] 次のコマンドを入力し、出力を調べて、 node2 にデータ LIF が残っていないことを確認します。
++
+network interface show -curr-node <node2> -role data
+
+

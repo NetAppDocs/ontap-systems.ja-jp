@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: upgrade-arl-auto-app/decommission_old_system.html 
+keywords: decommission, old system, upgrade, databases, netapp, support, site, serial, number, cluster 
+summary: アップグレード後は、ネットアップサポートサイトから古いシステムの運用を停止できます。 
+---
+= 古いシステムの運用を停止
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+<stdin> で未解決のディレクティブ : ../_include/ru_auto_decomation_old_system.adoc[]

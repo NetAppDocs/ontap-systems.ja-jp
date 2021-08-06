@@ -1,0 +1,72 @@
+= アグリゲートの再配置に失敗していないかどうか
+
+
+アグリゲートの再配置（ ARL ）がアップグレード中に別のポイントで失敗することがあります。
+
+
+
+== アグリゲートの再配置に失敗していないかどうか
+
+手順の処理中に、ステージ 2 、ステージ 3 、またはステージ 5 で ARL が失敗することがあります。
+
+.手順
+. 次のコマンドを入力し、出力を確認します。
++
+「 storage aggregate relocation show 」を参照してください
+
++
+「 storage aggregate relocation show 」コマンドを実行すると、正常に再配置されたアグリゲートと再配置されなかったアグリゲート、および障害の原因が表示されます。
+
+. コンソールで EMS メッセージを確認します。
+. 次のいずれかを実行します。
++
+** 「 storage aggregate relocation show 」コマンドの出力と EMS メッセージの出力に応じて、適切な方法を実行します。
+** 「 storage aggregate relocation start 」コマンドの「 override-vetoes 」オプションまたは「 override-vetoes destination-checks 」オプションを使用して、アグリゲートまたはアグリゲートの強制的な再配置を実行します。
+
+
++
+「 storage aggregate relocation start 」、「 override-vetoes 」、および「 override-vetoes destination-checks 」オプションの詳細については、を参照してください link:other_references.html["参考資料"] ONTAP 9 コマンド：マニュアルページリファレンスにリンクするには、次の手順を実行します。
+
+
+
+
+
+== アグリゲートは、アップグレードの完了後、ノード 1 にもともと存在していたものとノード 4 によって所有されます
+
+アップグレード手順の最後に、 node3 は、元々ホームノードとしてノード 1 を使用していたアグリゲートの新しいホームノードである必要があります。このパスはアップグレード後に再配置できます。
+
+次の状況で、アグリゲートが適切に再配置されず、ノード 1 がノード 3 ではなくホームノードになっている可能性があります。
+
+* ステージ 3 で、アグリゲートが node2 から node3 に再配置されている場合。再配置する一部のアグリゲートのホームノードが node1 に含まれている。たとえば、このようなアグリゲートのことを aggr_node_A_1 と呼びます。ステージ 3 で aggr_node_A_1 の再配置が失敗し、強制的に再配置を実行できない場合、アグリゲートは node2 で残ります。
+* ステージ 4 のあとで、 node2 を node4 に置き換える場合。node2 を交換すると、 aggr_node_A_1 が、 node3 ではなく node4 にあるホームノードとしてオンラインになります。
+
+
+ストレージフェイルオーバーを有効にしたあとに、ステージ 6 に続けて誤った所有権の問題を修正するには、次の手順を実行します。
+
+.手順
+. [man_aggr_ffail _step1] 次のコマンドを入力して、アグリゲートのリストを表示します。
++
+「 storage aggregate show -nodes <node4 > -is-home true 」という 2 つの意味があります
+
++
+正しく再配置されていないアグリゲートを特定するには、セクションで取得した node1 のホーム所有者を含むアグリゲートのリストを参照してください link:prepare_nodes_for_upgrade.html["ノードをアップグレードする準備をします"] コマンドの出力と比較してください。
+
+. [[step2] の出力を比較します <<man_aggr_fail_step1,手順 1.>> セクションで node1 用に取得した出力を確認します link:prepare_nodes_for_upgrade.html["ノードをアップグレードする準備をします"] 再配置されていないアグリゲートがあることを確認します。
+. [man_aggr_fil_Step3] ノード 4 の背後にあるアグリゲートの再配置を行います。
++
+「 storage aggregate relocation start -node <node4 > -aggr <aggr_node_A_1 > -destination <node3 >"
+
++
+この再配置中は '-nd-controller-upgrade パラメータを使用しないでください
+
+. 次のコマンドを入力して、 node3 がアグリゲートのホームの所有者になっていることを確認します。
++
+「 storage aggregate show -aggregate <aggr1 、 aggr2 、 aggr3...> -fields home-name 」のように指定します
+
++
+「 <aggr1 、 aggr2 、 aggr3_> 」は、 node1 が元のホーム所有者であるアグリゲートのリストです。
+
++
+ノード 3 をホーム所有者としないアグリゲートは、の同じ再配置コマンドを使用してノード 3 に再配置できます <<man_aggr_fail_Step3,手順 3>>。
+
+

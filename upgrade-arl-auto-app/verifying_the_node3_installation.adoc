@@ -1,6 +1,6 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar 
-permalink: upgrade-arl-auto-app/verifying_the_node3_installation.html 
+sidebar: sidebar 
+permalink: upgrade-arl-auto-app/verify_node3_installation.html 
 keywords: verifying, verify, node, install, installation 
 summary: ノード 3 のインストールの確認 
 ---
@@ -146,7 +146,7 @@ node1_node3
 +
 上記の例では、 node1 _ node3 はコントローラの交換後にブートしたばかりです。一部のポートは想定されるブロードキャストドメインに到達できないため、修復が必要です。
 
-. [[step4]] 個のポートの到達可能性を「 ok 」以外の到達可能性ステータスで修復します。次のコマンドを最初に任意の物理ポートで実行し、次に任意の VLAN ポートで一度に 1 つずつ実行します。
+. [[auto_verify_3_step4]] 'node3 の各ポートの到達可能性を 'OK' 以外の到達可能性ステータスで修復します次のコマンドを最初に任意の物理ポートで実行し、次に任意の VLAN ポートで一度に 1 つずつ実行します。
 +
 'network port reachability repair-node <node_name > -port <port_name> ’
 
@@ -280,7 +280,7 @@ VLAN の復元が成功すると、指定された宛先ポートに、取り外
 「 network port reachability show 」のように表示されます
 
 +
-すべてのポートが正しく設定され、正しいブロードキャストドメインに追加されている場合、「 network port reachability show 」コマンドは、接続されているすべてのポートの到達可能性ステータスを「 ok 」、物理的に接続されていないポートのステータスを「 no-reachability 」と報告する必要があります。この 2 つ以外のステータスが報告されたポートがある場合は、到達可能性修復を実行し、の手順に従ってブロードキャストドメインにポートを追加または削除します <<step4,手順 4>>。
+すべてのポートが正しく設定され、正しいブロードキャストドメインに追加されている場合、「 network port reachability show 」コマンドは、接続されているすべてのポートの到達可能性ステータスを「 ok 」、物理的に接続されていないポートのステータスを「 no-reachability 」と報告する必要があります。この 2 つ以外のステータスが報告されたポートがある場合は、到達可能性修復を実行し、の手順に従ってブロードキャストドメインにポートを追加または削除します <<auto_verify_3_step4,手順 4>>。
 
 . 次のコマンドを使用して、すべてのポートがブロードキャストドメインに配置されたことを確認します。
 +

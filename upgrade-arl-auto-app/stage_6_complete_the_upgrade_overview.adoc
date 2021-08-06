@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: upgrade-arl-auto-app/stage_6_complete_the_upgrade_overview.html 
+keywords: complete upgrade, node, unified, target, storage, encryption 
+summary: ステージ 6 で、新しいノードが正しくセットアップされていることを確認します。 
+---
+= ステージ 6 ：アップグレードを完了します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+<stdin> で未解決のディレクティブ：： ./_include/ru_auto_stage6.overview.adoc[]

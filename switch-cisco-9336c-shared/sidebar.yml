@@ -1,0 +1,19 @@
+---
+section: switch-cisco-9336c-shared
+title: Cisco Nexus 9336C-FX2 共有スイッチ
+url: "/switch-cisco-9336c-shared/index.html"
+entries:
+- title: Cisco 共有スイッチのセットアップおよび設定ガイド
+  url: "/switch-cisco-9336c-shared/9336c_setup_and_configuration_guide_for_cisco_shared_switches.html"
+- title: NX-OS ソフトウェアおよび RCF のインストール
+  url: "/switch-cisco-9336c-shared/9336c_install_nx-os_software_and_reference_configuration_files_@rcfs@.html"
+- title: 2 つの新しい共有スイッチを追加して、 DAT ストレージを持つスイッチレスクラスタから移行します
+  url: "/switch-cisco-9336c-shared/9336c_migrate_from_a_switchless_cluster_with_dat_storage_by_adding_two_new_shared_switches.html"
+- title: 2 つの新しい共有スイッチを追加して、 DAT ストレージを使用したスイッチ構成から移行します
+  url: "/switch-cisco-9336c-shared/9336c_migrate_from_a_switched_configuration_with_dat_storage_by_adding_two_new_shared_switches.html"
+- title: ストレージスイッチを再利用して、 SAT ストレージを搭載したスイッチレス構成から移行する
+  url: "/switch-cisco-9336c-shared/9336c_migrate_from_a_switchless_configuration_with_sat_storage_by_reusing_the_storage_switches.html"
+- title: ストレージスイッチを再利用して、 SAT ストレージを備えたスイッチクラスタから移行する
+  url: "/switch-cisco-9336c-shared/9336c_migrate_from_a_switched_cluster_with_sat_storage_by_reusing_the_storage_switches.html"
+- title: Cisco Nexus 9336C-FX2 共有スイッチを交換します
+  url: "/switch-cisco-9336c-shared/9336c_replace_a_cisco_nexus_9336c-fx2_shared_switch.html"

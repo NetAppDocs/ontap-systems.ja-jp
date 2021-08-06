@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar 
+sidebar: sidebar 
 permalink: upgrade-arl-auto-app/index.html 
 summary: system controller replace コマンドを使用して、 ONTAP 9.8 を実行しているコントローラハードウェアをアップグレードします 
 ---

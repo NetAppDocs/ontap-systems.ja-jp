@@ -1,0 +1,14 @@
+---
+section: upgrade
+title: アグリゲートの再配置を使用してコントローラハードウェアをアップグレードする
+url: index.html
+entries:
+- title: ONTAP 9.8 以降を実行しているコントローラハードウェアを、「 system controller replace 」コマンドを使用してアップグレードします
+  url: http://docs.netapp.com/us-en/ontap-systems/upgrade-arl-auto-app/index.html
+- title: "「 system controller replace 」コマンドを使用して、 ONTAP 9.5 を実行するコントローラハードウェアを 9.7
+    にアップグレードします"
+  url: http://docs.netapp.com/us-en/ontap-systems/upgrade-arl-auto/index.html
+- title: ONTAP 9.8 以降を実行しているコントローラハードウェアで、アグリゲートの再配置を使用して手動でアップグレードし
+  url: http://docs.netapp.com/us-en/ontap-systems/upgrade-arl-manual-app/index.html
+- title: ONTAP 9.7 以前を実行しているコントローラハードウェアで、アグリゲートの再配置を使用して手動でアップグレードします
+  url: http://docs.netapp.com/us-en/ontap-systems/upgrade-arl-manual/index.html

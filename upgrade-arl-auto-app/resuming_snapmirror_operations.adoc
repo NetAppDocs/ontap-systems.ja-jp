@@ -1,6 +1,6 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar 
-permalink: upgrade-arl-auto-app/resuming_snapmirror_operations.html 
+sidebar: sidebar 
+permalink: upgrade-arl-auto-app/resume_snapmirror_operations.html 
 keywords: resuming, snapmirror, operations, transfer, relationship, updates, schedule, complete 
 summary: アップグレード前に休止していた SnapMirror 転送を再開し、 SnapMirror 関係を再開できます。 
 ---

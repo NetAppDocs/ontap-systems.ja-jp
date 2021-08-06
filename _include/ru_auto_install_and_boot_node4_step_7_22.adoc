@@ -1,0 +1,145 @@
+= 
+
+
+. ノード 4 でネットブートを実行します。
++
+[cols="30,70"]
+|===
+| 用途 | 作業 
+
+
+| FAS/AFF8000 シリーズシステム | netboot\http://<web_server_ip/path_to_web-accessible_directory>/netboot/kernel` 
+
+
+| その他すべてのシステム | netboot\http://<web_server_ip/path_to_web-accessible_directory>/<ontap_version>_image.tgz` 
+|===
++
+「 <path_the_web-accessible_directory> 」は、手順 1 の「 <ONTAP_version>_image.tgz 」をダウンロードした場所に配置する必要があります link:prepare_for_netboot.html["ネットブートを準備"]。
+
++
+
+NOTE: トランクを中断しないでください。
+
+. 起動メニューからオプション（ 7 ） Install new software first （新しいソフトウェアを最初にインストール）を選択します。
++
+このメニューオプションを選択すると、新しい ONTAP イメージがブートデバイスにダウンロードおよびインストールされます。
+
++
+
+NOTE: 次のメッセージは無視してください： This 手順 is not supported for Non-Disruptive Upgrade on an HA pair' The note 環境 nondisruptive upgrade of ONTAP and not upgrades of controllers新しいノードを希望するイメージに更新する場合は、必ずネットブートを使用してください。別の方法で新しいコントローラにイメージをインストールすると、正しいイメージがインストールされない場合があります。この問題環境 All ONTAP リリース
+
+. 手順を続行するかどうかを確認するメッセージが表示されたら、「 y 」と入力し、パッケージの入力を求められたら URL を入力します。
++
+http://<web_server_ip/path_to_web-accessible_directory>/<ontap_version>_image.tgz` にアクセスします
+
+. 次の手順を実行してコントローラモジュールをリブートします。
++
+.. 次のプロンプトが表示されたら 'n' を入力してバックアップ・リカバリをスキップします
++
+....
+Do you want to restore the backup configuration now? {y|n}
+....
+.. 次のプロンプトが表示されたら 'y' と入力して再起動します
++
+....
+The node must be rebooted to start using the newly installed software. Do you want to reboot now? {y|n}
+....
++
+コントローラモジュールはリブートしますが、ブートメニューで停止します。これは、ブートデバイスが再フォーマットされたことにより、構成データのリストアが必要なためです。
+
+
+
+. ブート・メニューからメンテナンス・モード「 5 」を選択し、ブートを続行するように求めるプロンプトが表示されたら「 y 」と入力します。
+. コントローラとシャーシが HA 構成になっていることを確認します。
++
+「 ha-config show 」
+
++
+次に 'ha-config show コマンドの出力例を示します
+
++
+....
+Chassis HA configuration: ha
+Controller HA configuration: ha
+....
++
+
+NOTE: システムは、 HA ペア構成かスタンドアロン構成かを PROM に記録します。状態は、スタンドアロンシステムまたは HA ペア内のすべてのコンポーネントで同じである必要があります。
+
+. コントローラとシャーシが HA として構成されていない場合は、次のコマンドを使用して構成を修正します。
++
+「 ha-config modify controller ha 」を参照してください
+
++
+「 ha-config modify chassis ha 」を参照してください
+
++
+MetroCluster 構成の場合は、次のコマンドを使用してコントローラとシャーシを変更します。
+
++
+「 ha-config modify controller mcc 」
+
++
+「 ha-config modify chassis mcc 」
+
+. メンテナンスモードを終了します。
++
+「 halt 」
+
++
+ブート環境のプロンプトで Ctrl+C を押し、 AUTOBOOT を中断します。
+
+. [auto_install4_step15]] ノード 3 で、システムの日付、時刻、およびタイムゾーンを確認します。
++
+「食事」
+
+. node4 で、ブート環境のプロンプトで次のコマンドを使用して日付を確認します。
++
+「日付」
+
+. 必要に応じて、 node4 に日付を設定します。
++
+'Set date <mm/dd/yyyy>`
+
+. node4 で、ブート環境のプロンプトで次のコマンドを使用して時間を確認します。
++
+「時間」
+
+. 必要に応じて、 node4 に時間を設定します。
++
+時刻を設定します
+
+. 必要に応じて、 node4 にパートナーシステム ID を設定します。
++
+'setenv partner-sysid <node2 _sysid>`
+
++
+.. 設定を保存します。
++
+'aveenv
+
+
+
+. [auto_install4_step21] 新しいノードのブートローダで '-partner-sysid' パラメータを設定する必要がありますnode4 の場合、「 partner-sysid 」は node3 のものでなければなりません。node3 の「 partner-sysid 」を確認します。
++
+printenv partner-sysid
+
+. [[step22]] 次のいずれかの操作を実行します。
++
+[cols="30,70"]
+|===
+| システムの状態 | 作業 
+
+
+| ディスクがあり、バックエンドストレージがない | に進みます <<auto_install4_step23,手順 23>>。 
+
+
+| は、 V シリーズシステム、または FlexArray 仮想化ソフトウェアがストレージアレイに接続されたシステムです  a| 
+.. セクションに移動します link:set_fc_or_uta_uta2_config_node4.html["ノード 4 で FC または UTA / UTA2 設定を設定します"] をクリックし、このセクションのサブセクションを完了します。
+.. このセクションに戻って、から始めて残りの手順を実行します <<auto_install4_step23,手順 23>>。
+
+
+* 重要 * ： V シリーズまたは FlexArray 仮想化ソフトウェアで ONTAP をブートする前に、オンボード FC ポート、 CNA オンボードポート、 CNA カードを再設定する必要があります。
+
+|===
+

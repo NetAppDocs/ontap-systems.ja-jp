@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar 
+sidebar: sidebar 
 permalink: upgrade-arl-auto-app/guidelines_for_upgrading_controllers_with_arl.html 
 keywords: guidelines, upgrading, controllers, ARL 
 summary: ARL を使用して ONTAP 9.8 を実行しているコントローラのペアをアップグレードできるかどうかを確認します。 

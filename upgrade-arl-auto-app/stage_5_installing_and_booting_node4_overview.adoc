@@ -1,6 +1,6 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar 
-permalink: upgrade-arl-auto-app/stage_5_installing_and_booting_node4_overview.html 
+sidebar: sidebar 
+permalink: upgrade-arl-auto-app/stage_5_install_and_boot_node4_overview.html 
 keywords: install, boot, node4, node2, node-management 
 summary: ステージ 5 で、 node4 をインストールしてブートし、 node2 のクラスタポートとノード管理ポートを node4 にマッピングします。 
 ---

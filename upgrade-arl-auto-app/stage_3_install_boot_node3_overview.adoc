@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: upgrade-arl-auto-app/stage_3_install_boot_node3_overview.html 
+keywords: installing, booting, node3, install, cluster 
+summary: ステージ 3 では、 node3 をインストールしてブートします。 
+---
+= ステージ 3 ：node3 をインストールしてブートします
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ステージ 3 で、ノード 3 をインストールしてブートし、ノード 1 のクラスタポートとノード管理ポートがノード 3 でオンラインになったことを確認し、ノード 3 のインストールを確認します。SAN 以外のデータ LIF と、ノード 1 に属するルート以外のアグリゲートは、ノード 2 からノード 3 に移動されます。
+
+.手順
+. link:install_boot_node3.html["node3 をインストールしてブートします"]
+. link:set_fc_or_uta_uta2_config_on_node3.html["ノード 3 で FC または UTA / UTA2 設定を設定します"]
+. link:verify_node3_installation.html["ノード 3 のインストールを確認します"]
+. link:restore_key-manager_configuration_node3.html["ノード 3 でキー管理ツールの設定をリストアします"]
+. link:move_non-root_aggr_and_nas_data_lifs_node1_from_node2_to_node3.html["ノード 1 で所有されているルート以外のアグリゲートと NAS データ LIF を、ノード 2 からノード 3 に移動します"]
+

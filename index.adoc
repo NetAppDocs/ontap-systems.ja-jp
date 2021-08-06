@@ -1,7 +1,9 @@
 ---
 sidebar: sidebar 
 permalink: index.html 
-summary: ONTAP システムのドキュメント 
+keywords: aggregate, relocation, moving, manual, upgrade, relocate 
+lead: This library provides instructions to upgrade controller hardware for storage systems using the aggregate relocation method. 
+summary: アグリゲートの再配置を使用してコントローラハードウェアをアップグレードする 
 ---
 = ONTAP 9.8 システムのマニュアル
 :hardbreaks:
@@ -10,9 +12,4 @@ summary: ONTAP システムのドキュメント
 :linkattrs: 
 :imagesdir: ./media/
 
-
-[role="lead"]
-このライブラリは、アグリゲートの再配置方法を使用してストレージシステムのコントローラハードウェアをアップグレードする手順を示します。
-
-* link:upgrade-arl-auto-app/index.html["「 system controller replace 」コマンドを使用して、 ONTAP 9.8 を実行しているコントローラハードウェアをアップグレードします"]
 

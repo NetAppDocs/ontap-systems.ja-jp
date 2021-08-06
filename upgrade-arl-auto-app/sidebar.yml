@@ -1,0 +1,100 @@
+---
+section: upgrade-arl-auto-app
+title: ONTAP 9.8 以降を実行しているコントローラハードウェアをアップグレードするには、「 system controller replace 」コマンドを使用します
+url: "/upgrade-arl-auto-app/index.html"
+entries:
+- title: コントローラのアップグレードプロセスを自動化する
+  url: "/upgrade-arl-auto-app/automate_the_controller_upgrade_process.html"
+- title: アグリゲートの再配置ガイドを使用するかどうかを決定します
+  url: "/upgrade-arl-auto-app/decide_to_use_the_aggregate_relocation_guide.html"
+- title: 必要な工具とドキュメント
+  url: "/upgrade-arl-auto-app/required_tools_and_documentation.html"
+- title: ARL を使用したコントローラのアップグレードに関するガイドライン
+  url: "/upgrade-arl-auto-app/guidelines_for_upgrading_controllers_with_arl.html"
+- title: MetroCluster 構成の健全性を確認
+  url: "/upgrade-arl-auto-app/verify_health_of_metrocluster_config.html"
+- title: MetroCluster 構成エラーがないかどうかを確認します
+  url: "/upgrade-arl-auto-app/check_for_metrocluster_config_errors.html"
+- title: スイッチオーバー、修復、スイッチバックを検証
+  url: "/upgrade-arl-auto-app/verify_switchover_healing_switchback.html"
+- title: ARL アップグレードの概要
+  url: "/upgrade-arl-auto-app/overview_of_the_arl_upgrade.html"
+- title: ノードペアをアップグレードします
+  url: "/upgrade-arl-auto-app/upgrade_node_pair.html"
+- title: ステージ 1 アップグレードの準備
+  url: "/upgrade-arl-auto-app/stage_1_prepare_for_upgrade_overview.html"
+  entries:
+  - title: ノードをアップグレードする準備をします
+    url: "/upgrade-arl-auto-app/prepare_nodes_for_upgrade.html"
+  - title: ストレージ暗号化用の外部キー管理サーバの IP アドレスを取得します
+    url: "/upgrade-arl-auto-app/get_ip_address_of_external_kms_for_storage_encryption.html"
+- title: ステージ 2 ：ノード 1 の再配置および廃止
+  url: "/upgrade-arl-auto-app/stage_2_relocate_retire_node1_overview.html"
+  entries:
+  - title: ノード 1 が所有するルート以外のアグリゲートと NAS データ LIF をノード 2 に再配置します
+    url: "/upgrade-arl-auto-app/relocate_non_root_aggr_nas_data_lifs_node1_node2.html"
+  - title: 障害が発生したアグリゲートを再配置するか
+    url: "/upgrade-arl-auto-app/relocate_failed_vetoed_aggr.html"
+  - title: ノード 1 を撤去
+    url: "/upgrade-arl-auto-app/retire_node1.html"
+  - title: ネットブートを準備
+    url: "/upgrade-arl-auto-app/prepare_for_netboot.html"
+- title: ステージ 3 ：ノード 3 のインストールとブート
+  url: "/upgrade-arl-auto-app/stage_3_install_boot_node3_overview.html"
+  entries:
+  - title: node3 をインストールしてブートします
+    url: "/upgrade-arl-auto-app/install_boot_node3.html"
+  - title: ノード 3 で FC または UTA / UTA2 設定を設定します
+    url: "/upgrade-arl-auto-app/set_fc_or_uta_uta2_config_on_node3.html"
+  - title: ノード 3 のインストールを確認します
+    url: "/upgrade-arl-auto-app/verify_node3_installation.html"
+  - title: ノード 3 でキー管理ツールの設定をリストアします
+    url: "/upgrade-arl-auto-app/restore_key-manager_configuration_node3.html"
+  - title: ノード 1 で所有されているルート以外のアグリゲートと NAS データ LIF を、ノード 2 からノード 3 に移動します
+    url: "/upgrade-arl-auto-app/move_non-root_aggr_and_nas_data_lifs_node1_from_node2_to_node3.html"
+- title: ステージ 4 再配置と撤去 node2
+  url: "/upgrade-arl-auto-app/stage_4_relocate_and_retire_node2_overview.html"
+  entries:
+  - title: ルート以外のアグリゲートと NAS データ LIF を node2 から node3 に再配置します
+    url: "/upgrade-arl-auto-app/relocate_non_root_aggr_nas_lifs_from_node2_to_node3.html"
+  - title: ノード 2 を撤去
+    url: "/upgrade-arl-auto-app/retire_node2.html"
+- title: ステージ 5 Install and boot node4
+  url: "/upgrade-arl-auto-app/stage_5_install_and_boot_node4_overview.html"
+  entries:
+  - title: ノード 4 をインストールしてブートします
+    url: "/upgrade-arl-auto-app/install_boot_node4.html"
+  - title: ノード 4 で FC または UTA / UTA2 設定を設定します
+    url: "/upgrade-arl-auto-app/set_fc_or_uta_uta2_config_node4.html"
+  - title: ノード 4 のインストールを確認します
+    url: "/upgrade-arl-auto-app/verify_node4_installation.html"
+  - title: ノード 4 でキー管理ツールの設定をリストアします
+    url: "/upgrade-arl-auto-app/restore_key-manager_config_node4.html"
+  - title: node2 によって所有されているルート以外のアグリゲートと NAS データ LIF を、 node3 から node4 に移動します
+    url: "/upgrade-arl-auto-app/move_non_root_aggr_and_nas_data_lifs_node2_from_node3_to_node4.html"
+- title: ステージ 6 アップグレードを完了する
+  url: "/upgrade-arl-auto-app/stage_6_complete_the_upgrade_overview.html"
+  entries:
+  - title: 新しいコントローラが正しくセットアップされていることを確認します
+    url: "/upgrade-arl-auto-app/ensure_new_controllers_are_set_up_correctly.html"
+  - title: 新しいコントローラモジュールで Storage Encryption をセットアップします
+    url: "/upgrade-arl-auto-app/set_up_storage_encryption_new_module.html"
+  - title: 新しいコントローラモジュールで NetApp Volume Encryption をセットアップします
+    url: "/upgrade-arl-auto-app/set_up_netapp_volume_encryption_new_module.html"
+  - title: 古いシステムの運用を停止
+    url: "/upgrade-arl-auto-app/decommission_old_system.html"
+  - title: SnapMirror 処理を再開します
+    url: "/upgrade-arl-auto-app/resume_snapmirror_operations.html"
+- title: トラブルシューティングを行う
+  url: "/upgrade-arl-auto-app/troubleshoot.html"
+  entries:
+  - title: アグリゲートの再配置に失敗しまし
+    url: "/upgrade-arl-auto-app/aggregate_relocation_failures.html"
+  - title: リブート、パニック、電源再投入
+    url: "/upgrade-arl-auto-app/reboots_panics_or_power_cycles.html"
+  - title: 手順の複数の段階で発生する可能性のある問題
+    url: "/upgrade-arl-auto-app/issues_in_multiple_stages_of_procedure.html"
+  - title: LIF の移行が失敗しました
+    url: "/upgrade-arl-auto-app/lif_migration_failure.html"
+- title: 参考資料
+  url: "/upgrade-arl-auto-app/other_references.html"

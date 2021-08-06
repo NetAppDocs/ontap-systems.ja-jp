@@ -1,0 +1,170 @@
+= ノード 3 の UTA / UTA2 ポートを確認して設定してください
+
+
+
+
+== ノード 3 の UTA / UTA2 ポートを確認して設定してください
+
+ノード 3 にオンボード UTA / UTA2 ポートまたは UTA / UTA2 カードが搭載されている場合は、アップグレードしたシステムの使用方法によって、ポートの設定を確認し、場合によっては再設定する必要があります。
+
+UTA / UTA2 ポートに対応する正しい SFP+ モジュールが必要です。
+
+FC にユニファイドターゲットアダプタ（ UTA / UTA2 ）ポートを使用する場合は、まずポートの設定を確認する必要があります。
+
+
+NOTE: ネットアップのマーケティング資料では、 UTA2 という用語を CNA アダプタとポートという意味で使用している場合があります。ただし、 CLI では CNA という用語が使用されます。
+
+現在のポート設定を確認するには、「 ucadmin show 」コマンドを使用します。
+
+....
+*> ucadmin show
+         Current  Current    Pending   Pending      Admin
+Adapter  Mode     Type       Mode      Type         Status
+-------  -------  -------    --------  ----------   --------
+0e      fc        target     -         initiator    offline
+0f      fc        target     -         initiator    offline
+0g      fc        target     -         initiator    offline
+0h      fc        target     -         initiator    offline
+1a      fc        target     -         -            online
+1b      fc        target     -         -            online
+6 entries were displayed.
+....
+UTA / UTA2 ポートは、ネイティブの FC モードまたは UTA / UTA2 モードに設定できます。FC モードでは FC イニシエータと FC ターゲットがサポートされます。 UTA / UTA2 モードを使用すると、同じ 10GbE SFP+ インターフェイスを共有する NIC と FCoE のトラフィックを同時に処理でき、 FC ターゲットをサポートできます。
+
+UTA / UTA2 ポートはアダプタまたはコントローラに搭載されている場合がありますが、次の構成になっています。ノード 3 の UTA / UTA2 ポートの設定を確認し、必要に応じて変更してください。
+
+* コントローラを注文した UTA / UTA2 カードは、注文したパーソナリティを指定するために出荷前に設定されます。
+* コントローラとは別に発注した UTA / UTA2 カードは、デフォルトの FC ターゲットパーソナリティとして出荷されます。
+* 新しいコントローラのオンボード UTA / UTA2 ポートは、希望するパーソナリティを持つように出荷する前に設定されます。
++
+
+WARNING: * 注意 * ：ストレージディスクがある場合は、メンテナンスモードに指示されていないかぎり、クラスタプロンプトでこのセクションのコマンドを入力します。V シリーズシステムまたは FlexArray 仮想化ソフトウェアがインストールされていて、ストレージアレイに接続されている場合は、このセクションのメンテナンスモードプロンプトでコマンドを入力します。UTA / UTA2 ポートを設定する場合は、メンテナンスモードにする必要があります。
+
+
+
+.手順
+. [[step1] node3 で次のコマンドを入力して、ポートが現在どのように設定されているかを確認します。
++
+[cols="30,70"]
+|===
+| システムの状態 | 次に、 
+
+
+| ストレージディスクがあります | 対処は不要です。 
+
+
+| は、 V シリーズシステムまたは FlexArray 仮想化ソフトウェアを搭載し、ストレージアレイに接続されています | ucadmin show 
+|===
++
+次の例のような出力が表示されます。
+
++
+....
+*> ucadmin show
+         Current  Current     Pending   Pending    Admin
+Adapter  Mode     Type        Mode      Type       Status
+-------  -------  ---------   -------   --------   ---------
+0e      fc        initiator   -         -          online
+0f      fc        initiator   -         -          online
+0g      cna       target      -         -          online
+0h      cna       target      -         -          online
+0e      fc        initiator   -         -          online
+0f      fc        initiator   -         -          online
+0g      cna       target      -         -          online
+0h      cna       target      -         -          online
+*>
+....
+. [[step2] 現在の SFP+ モジュールが目的の用途と一致しない場合は、正しい SFP+ モジュールと交換します。
++
+ネットアップの担当者に連絡して、正しい SFP+ モジュールを入手します。
+
+. [[step3]] 「 ucadmin show 」コマンドの出力を調べ、 UTA / UTA2 ポートに希望するパーソナリティがあるかどうかを確認します。
+. [[step4]] 次のいずれかの操作を実行します。
++
+[cols="30,70"]
+|===
+| UTA / UTA2 ポート | 次に、 
+
+
+| 希望するパーソナリティがない | に進みます <<auto_check3_step5,手順 5>>。 
+
+
+| あなたがほしい人格を持っている | 手順 5 から 12 を省略して、に進みます <<auto_check3_step13,手順 13>>。 
+|===
+. [[auto_check3_step5] 次のいずれかの操作を実行します。
++
+[cols="30,70"]
+|===
+| を設定する場合 | 次に、 
+
+
+| UTA / UTA2 カードのポート | に進みます <<auto_check3_step7,手順 7>> 
+
+
+| オンボードの UTA/UTA2 ポート | 手順 7 を省略して、に進みます <<auto_check3_step8,手順 8>>。 
+|===
+. [[step6] アダプタがイニシエータモードの場合、および UTA / UTA2 ポートがオンラインの場合は、 UTA / UTA2 ポートをオフラインにします。
++
+「 storage disable adapter <adapter_name> 」
+
++
+ターゲットモードのアダプタは、メンテナンスモードで自動的にオフラインになります。
+
+. [[auto_check3_step7] 現在の構成が目的の用途に一致しない場合は、必要に応じて構成を変更します。
++
+ucadmin modify -m fc | cna-t initiator | target <adapter_name> `
+
++
+** 「 -m 」はパーソナリティ・モードで、「 fc 」または「 cna 」です。
+** `-t` は FC4 のタイプ、「 target 」または「 initiator 」です。
++
+
+NOTE: テープドライブ、 FlexArray 仮想化システム、および MetroCluster 構成には、 FC イニシエータを使用する必要があります。SAN クライアントには FC ターゲットを使用する必要があります。
+
+
+
+. [[auto_check3_step8] 設定を確認します。
++
+ucadmin show
+
+. [[step9] 設定を確認します。
++
+[cols="30,70"]
+|===
+| システムの状態 | 次に、 
+
+
+| ストレージディスクがあります | ucadmin show 
+
+
+| は、 V シリーズシステムまたは FlexArray 仮想化ソフトウェアを搭載し、ストレージアレイに接続されています | ucadmin show 
+|===
++
+次の例の出力は ' アダプタ「 1b 」の FC4 タイプがイニシエータに変更され ' アダプタ「 2a 」および「 2b 」のモードが「 cna' 」に変更されていることを示しています
+
++
+....
+*> ucadmin show
+         Current    Current     Pending  Pending     Admin
+Adapter  Mode       Type        Mode     Type        Status
+-------  --------   ----------  -------  --------    --------
+1a       fc         initiator   -        -           online
+1b       fc         target      -        initiator   online
+2a       fc         target      cna      -           online
+2b       fc         target      cna      -           online
+*>
+....
+. [[step10]] 次のいずれかのコマンドを入力して、各ポートに 1 回ずつターゲットポートをオンラインにします。
++
+[cols="30,70"]
+|===
+| システムの状態 | 次に、 
+
+
+| ストレージディスクがあります | 「 network fcp adapter modify -node <node_name > -adapter <adapter_name> -state up 」の形式で指定します 
+
+
+| は、 V シリーズシステムまたは FlexArray 仮想化ソフトウェアを搭載し、ストレージアレイに接続されています | 'fcp config <adapter_name> up' 
+|===
+. [[step11]] ポートをケーブル接続します。
+

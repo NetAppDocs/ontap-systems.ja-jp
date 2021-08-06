@@ -1,6 +1,6 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar 
-permalink: upgrade-arl-auto-app/verifying_the_node4_installation.html 
+sidebar: sidebar 
+permalink: upgrade-arl-auto-app/verify_node4_installation.html 
 keywords: verify, node4, installation, physical ports, node2, node, LIF, MetroCluster 
 summary: ノード 4 のインストールを確認します 
 ---
@@ -50,7 +50,7 @@ cluster show -node node4 -fields health`
 
 . MetroCluster システムを使用している場合は、交換したコントローラが MetroCluster 構成に対して正しく設定されていることを確認します。 MetroCluster 構成が正常な状態である必要があります。を参照してください link:verifying_the_health_of_the_metrocluster_configuration.html["MetroCluster 構成の健全性を確認"]。
 +
-手順 6 に進む前に、 MetroCluster ノード node4 にあるクラスタ間 LIF を再設定し、クラスタピアリングをチェックして MetroCluster ノード間の通信をリストアします。
+MetroCluster ノード node4 にあるクラスタ間 LIF を再設定し、 MetroCluster ノード間の通信をリストアするクラスタピアリングをチェックします <<auto_verify_4_Step6,手順 6>>。
 
 +
 次のコマンドを使用して、 MetroCluster ノードのステータスを確認します。
@@ -58,7 +58,7 @@ cluster show -node node4 -fields health`
 +
 MetroCluster node show
 
-. 次のコマンドを使用して、コントローラの交換処理を再開します。
+. [[auto_verify_4_Step6]] コントローラ交換操作を再開します。
 +
 「システムコントローラの交換が再開」
 
@@ -100,7 +100,7 @@ NOTE: このガイドでは、 VLAN 、 ifgrp 、およびブロードキャス�
 
 node4 がクォーラムにあり、 node3 と通信できることを確認したら、 node2 の VLAN 、インターフェイスグループ、およびブロードキャストドメインが node4 にあることを確認します。また、ノード 4 のすべてのネットワークポートが正しいブロードキャストドメインに設定されていることを確認します。
 
-VLAN 、インターフェイスグループ、およびブロードキャストドメインの作成と再作成の詳細については、を参照してください link:https://docs.netapp.com/us-en/ontap/networking-app/index.html["ONTAP 9.8 ネットワーク管理"]。
+VLAN 、インターフェイスグループ、およびブロードキャストドメインの作成と再作成の詳細については、を参照してください link:other_references.html["参考資料"] ONTAP 9 ネットワーク管理ガイドへのリンク。
 
 .手順
 . 次のコマンドを使用して、アップグレードされた node2 （ node4 ）にある物理ポートをすべて表示します。
@@ -151,7 +151,7 @@ node2_node4
 +
 上記の例では、 node2 _node4 がコントローラの交換後にブートされたとします。到達可能性のない複数のポートがあり、到達可能性スキャンを保留しています。
 
-. [[Step4]] ノード 4 の各ポートの到達可能性を「 OK 」以外の到達可能性ステータスで修復します。次のコマンドを最初に任意の物理ポートで実行し、次に任意の VLAN ポートで一度に 1 つずつ実行します。
+. [[auto_restore_4_Step4]] ノード 4 の各ポートの到達可能性を 'OK' 以外の到達可能性ステータスで修復します次のコマンドを最初に任意の物理ポートで実行し、次に任意の VLAN ポートで一度に 1 つずつ実行します。
 +
 'network port reachability repair-node <node_name > -port <port_name> ’
 
@@ -287,7 +287,7 @@ VLAN の復元が成功すると、指定された宛先ポートに、取り外
 「 network port reachability show 」のように表示されます
 
 +
-すべてのポートが正しく設定され、正しいブロードキャストドメインに追加されている場合、「 network port reachability show 」コマンドは、接続されているすべてのポートの到達可能性ステータスを「 ok 」、物理的に接続されていないポートのステータスを「 no-reachability 」と報告する必要があります。この 2 つ以外のステータスが報告されるポートがある場合は、到達可能性修復を実行し、の手順に従ってブロードキャストドメインにポートを追加または削除します <<Step4,手順 4>>。
+すべてのポートが正しく設定され、正しいブロードキャストドメインに追加されている場合、「 network port reachability show 」コマンドは、接続されているすべてのポートの到達可能性ステータスを「 ok 」、物理的に接続されていないポートのステータスを「 no-reachability 」と報告する必要があります。この 2 つ以外のステータスが報告されるポートがある場合は、到達可能性修復を実行し、の手順に従ってブロードキャストドメインにポートを追加または削除します <<auto_restore_4_Step4,手順 4>>。
 
 . 次のコマンドを使用して、すべてのポートがブロードキャストドメインに配置されたことを確認します。
 +

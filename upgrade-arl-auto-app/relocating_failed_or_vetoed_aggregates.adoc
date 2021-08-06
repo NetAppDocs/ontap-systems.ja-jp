@@ -1,6 +1,6 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar 
-permalink: upgrade-arl-auto-app/relocating_failed_or_vetoed_aggregates.html 
+sidebar: sidebar 
+permalink: upgrade-arl-auto-app/relocate_failed_vetoed_aggr.html 
 keywords: relocating, failed, vetoed, aggregates, relocation, operation 
 summary: いずれかのアグリゲートに再配置の失敗や再配置が拒否された場合は、アグリゲートを手動で再配置する必要があります。 
 ---

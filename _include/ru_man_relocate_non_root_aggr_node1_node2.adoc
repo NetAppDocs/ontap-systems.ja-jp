@@ -1,0 +1,122 @@
+= 
+
+
+ノード 1 をノード 3 に交換する前に、 storage aggregate relocation コマンドを使用してルート以外のアグリゲートをノード 1 からノード 2 に移動し、再配置を確認する必要があります。
+
+.手順
+. [[step1] 次の手順を実行して、ルート以外のアグリゲートを再配置します。
++
+.. 権限レベルを advanced に設定します。
++
+「 advanced 」の権限が必要です
+
+.. 次のコマンドを入力します。
++
+「 storage aggregate relocation start -node <node1> -destination <node2> -aggregate-list * -nd-controller-upgrade true
+
+.. プロンプトが表示されたら、「 y 」と入力します。
++
+再配置はバックグラウンドで実行されます。アグリゲートの再配置には数秒から数分かかる場合があります。この時間には、クライアントの停止部分と停止部分の両方が含まれます。このコマンドでは、オフラインまたは制限されたアグリゲートが再配置されません。
+
+.. 次のコマンドを入力して、 admin レベルに戻ります。
++
+「特権管理者」
+
+
+
+. ノード 1 で次のコマンドを入力して、再配置ステータスを確認します。
++
+「 storage aggregate relocation show -node <node1> 」を入力します
+
++
+アグリゲートが再配置されると、そのアグリゲートに対しては「 1 」と表示されます。
+
++
+
+NOTE: ノード 1 に所有されているルート以外のアグリゲートがすべて node2 に再配置されてから、次の手順に進みます。
+
+. 次のいずれかを実行します。
++
+[cols="35,65"]
+|===
+| 再配置の場合 | 作業 
+
+
+| すべてのアグリゲートのすべてが完了しました | に進みます <<man_relocate_1_2_step4,手順 4>>。 
+
+
+| いずれかのアグリゲートに障害が発生するか、または拒否されます  a| 
+.. EMS ログで対処方法を確認します。
+.. 対処方法を実行します。
+.. 障害が発生したアグリゲートまたは拒否したアグリゲートを再配置します。「 storage aggregate relocation start -node <node1> -destination <node2> -aggregate-list * -nd-controller-upgrade true 」
+.. プロンプトが表示されたら、「 y 」と入力します。
+.. admin レベルに戻ります。必要に応じて、次のいずれかの方法で強制的に再配置を実行できます。
++
+*** 拒否のチェックを無視：「 storage aggregate relocation start -override-vetoes true -nd-controller-upgrade
+*** デスティネーションのチェックを無効にします。「 storage aggregate relocation start -override-destination-checks true -nd-controller-upgrade
+
+
+
+
+を参照してください link:other_references.html["参考資料"] ディスクとアグリゲートパワーガイドへのリンクおよび _ ONTAP 9 コマンド：マニュアルページリファレンス _ ストレージアグリゲートの再配置コマンドの詳細については、を参照してください。
+
+|===
+. [man_relocate_1_2_step4] ルート以外のすべてのアグリゲートがオンラインであり、 node2 にあるそれらの状態を確認します。
++
+「 storage aggregate show -node <node2> -state online -root false 」のように表示されます
+
++
+次の例は、 node2 のルート以外のアグリゲートがオンラインになっていることを示しています。
+
++
+[listing]
+----
+cluster::> storage aggregate show -node node2 state online -root false
+Aggregate     Size Available Used% State   #Vols  Nodes            RAID Status
+--------- -------- --------- ----- ------- ------ ---------------- ------------
+aggr_1
+           744.9GB 744.8GB      0% online       5 node2            raid_dp,
+                                                                   normal
+aggr_2     825.0GB 825.0GB      0% online       1 node2            raid_dp,
+                                                                   normal
+2 entries were displayed.
+----
++
+アグリゲートがオフラインになった場合、または node2 で外部になった場合は、各アグリゲートに対して 1 回、 node2 で次のコマンドを使用してアグリゲートをオンラインにします。
+
++
+「 storage aggregate online -aggregate <aggr_name>` 」という名前になります
+
+. node2 で次のコマンドを入力し、出力を調べて、すべてのボリュームがオンラインであることを確認します。
++
+volume show -node <node2> -state offline`
+
++
+node2 上にオフラインのボリュームがある場合は、各ボリュームに対して 1 回、 node2 で次のコマンドを使用してオンラインにします。
+
++
+'volume online -vserver <vserver-name> -volume <volume-name>`
+
++
+このコマンドで使用する「 vserver -name 」は、前の「 volume show 」コマンドの出力にあります。
+
+. node2 で次のコマンドを入力します。
++
+「 storage failover show -node <node2 > 」のように表示されます
+
++
+出力に次のメッセージが表示されます。
+
++
+[listing]
+----
+Node owns partner's aggregates as part of the nondisruptive controller upgrade procedure.
+----
+. node1 のルート以外のアグリゲートがオンラインになっていないことを確認します。
++
+「 storage aggregate show-owner-name <node1> -ha-policy sfo-state online 」のように表示されます
+
++
+出力には、すでに node2 に再配置されているオンラインのルート以外のアグリゲートは表示されません。
+
+

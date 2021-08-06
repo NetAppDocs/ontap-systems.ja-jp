@@ -1,0 +1,170 @@
+= 
+
+
+. [[step7] node3 でネットブートを実行します。
++
+[cols="30,70"]
+|===
+| 用途 | 作業 
+
+
+| FAS/AFF8000 シリーズシステム | netboot\http://<web_server_ip/path_to_web-accessible_directory>/netboot/kernel` 
+
+
+| その他すべてのシステム | netboot\http://<web_server_ip/path_to_web-accessible_directory>/<ontap_version>_image.tgz` 
+|===
++
+「 <path_the_web-accessible_directory> 」は、「 <ONTAP_version>_image.tgz 」をダウンロードした場所を指します link:prepare_for_netboot.html["ネットブートを準備"]。
+
++
+
+NOTE: トランクを中断しないでください。
+
+. [[step8]] ブートメニューからオプション [(7) 新しいソフトウェアを最初にインストールする ] を選択します
++
+このメニューオプションを選択すると、新しい ONTAP イメージがブートデバイスにダウンロードおよびインストールされます。
+
++
+
+NOTE: 次のメッセージは無視してください 'This 手順 is not supported for Non-Disruptive Upgrade on an HA pair'コントローラのアップグレードではなく、 ONTAP による環境の無停止アップグレードも記録されています。新しいノードを希望するイメージに更新する場合は、必ずネットブートを使用してください。別の方法で新しいコントローラにイメージをインストールすると、正しいイメージがインストールされない場合があります。この問題環境 All ONTAP リリース
+
+. [[step9]] 手順を続行するかどうかを確認するメッセージが表示された場合は、「 y 」と入力し、パッケージのプロンプトが表示されたら URL を入力します。
++
+http://<web_server_ip/path_to_web-accessible_directory>/<ontap_version>_image.tgz` にアクセスします
+
+. [[step10] コントローラモジュールをリブートするには、次の手順を実行します。
++
+.. 次のプロンプトが表示されたら 'n' を入力してバックアップ・リカバリをスキップします
++
+バックアップ設定を今すぐ復元しますか ? {y|n}`
+
+.. 次のプロンプトが表示されたら 'y' と入力して再起動します
++
+' 新しくインストールしたソフトウェアの使用を開始するには ' ノードを再起動する必要があります今すぐリブートしますか？{y|n}`
+
++
+コントローラモジュールはリブートしますが、ブートメニューで停止します。これは、ブートデバイスが再フォーマットされたことにより、構成データのリストアが必要なためです。
+
+
+
+. [[step11]] ブートメニューからメンテナンスモード「 5 」を選択し、起動を続行するように求めるプロンプトが表示されたら「 y 」と入力します。
+. [[step12]] コントローラとシャーシが HA として構成されていることを確認します。
++
+「 ha-config show 」
+
++
+次に 'ha-config show コマンドの出力例を示します
+
++
+....
+Chassis HA configuration: ha
+Controller HA configuration: ha
+....
++
+
+NOTE: システムは、 HA ペア構成かスタンドアロン構成かを PROM に記録します。状態は、スタンドアロンシステムまたは HA ペア内のすべてのコンポーネントで同じである必要があります。
+
+. [[step13]] コントローラとシャーシが HA として設定されていない場合は、次のコマンドを使用して構成を修正します。
++
+「 ha-config modify controller ha 」を参照してください
+
++
+「 ha-config modify chassis ha 」を参照してください
+
++
+MetroCluster 構成の場合は、次のコマンドを使用してコントローラとシャーシを変更します。
+
++
+「 ha-config modify controller mcc 」
+
++
+「 ha-config modify chassis mcc 」
+
+. [[step14]] メンテナンスモードを終了します。
++
+「 halt 」
+
++
+ブート環境プロンプトで Ctrl+C キーを押して ' 自動ブートを中断します
+
+. [[step15]] node2 で、システムの日付、時刻、およびタイムゾーンを確認します。
++
+「食事」
+
+. [step16]] on node3 で、ブート環境のプロンプトで次のコマンドを使用して日付を確認します。
++
+「日付」
+
+. [[step17]] 必要に応じて、 node3 の日付を設定します。
++
+'Set date <mm/dd/yyyy>`
+
+. [step18]] on node3 で、ブート環境のプロンプトで次のコマンドを使用して時間を確認します。
++
+「時間」
+
+. [[step19]] 必要に応じて、ノード 3 の時刻を設定します。
++
+時刻を設定します
+
+. [[step20]] 必要に応じて、 node3 にパートナーシステム ID を設定します。
++
+'setenv partner-sysid <node2 _sysid>`
+
++
+.. 設定を保存します。
++
+'aveenv
+
+
+
+. [auto_install3_step21] 新しいノードのブートローダで '-partner-sysid' パラメータを設定する必要がありますnode3 の場合、「 partner-sysid 」は node2 のものである必要があります。node3 の「 partner-sysid 」を確認します。
++
+printenv partner-sysid
+
+. [[step22]] 次のいずれかの操作を実行します。
++
+[cols="30,70"]
+|===
+| システムの状態 | 説明 
+
+
+| ディスクがあり、バックエンドストレージがない | に進みます <<auto_install3_step23,手順 23>> 
+
+
+| は、 V シリーズシステム、または FlexArray 仮想化ソフトウェアがストレージアレイに接続されたシステムです  a| 
+.. セクションに移動します link:set_fc_or_uta_uta2_config_on_node3.html["ノード 3 で FC または UTA / UTA2 設定を設定します"] をクリックし、このセクションのサブセクションを完了します。
+.. このセクションに戻って、から始めて残りの手順を実行します <<auto_install3_step23,手順 23>>。
+
+
+* 重要 * ： V シリーズまたは FlexArray 仮想化ソフトウェアで ONTAP をブートする前に、オンボード FC ポート、 CNA オンボードポート、 CNA カードを再設定する必要があります。
+
+|===
+. [[auto_install3_step23]] 新しいノードの FC イニシエータポートをスイッチゾーンに追加します。
++
+システムにテープ SAN がある場合は、イニシエータをゾーニングする必要があります。必要に応じて、を参照してオンボードポートをイニシエータに変更します link:set_fc_or_uta_uta2_config_on_node3.html#configure-fc-ports-on-node3["ノード 3 で FC ポートを設定しています"]。ゾーニングの詳細な手順については、ストレージアレイとゾーニングに関するドキュメントを参照してください。
+
+. [[step24]] ストレージアレイに FC イニシエータポートを新しいホストとして追加し、アレイ LUN を新しいホストにマッピングします。
++
+手順については、ストレージアレイおよびゾーニングに関するドキュメントを参照してください。
+
+. [[step25]] ストレージアレイ上のアレイ LUN に関連付けられたホストまたはボリュームグループで、 World Wide Port Name （ WWPN ）値を変更します。
++
+新しいコントローラモジュールを設置すると、各オンボード FC ポートに関連付けられている WWPN の値が変更されます。
+
+. [[step26]] スイッチベースのゾーニングを使用する構成の場合は、ゾーニングを調整して新しい WWPN 値を反映します。
+. [[step27]] NetApp Storage Encryption （ NSE ）がこの構成で使用されている場合、「 setenvarg.storageencryption.support 」コマンドは「 true 」に設定する必要があります。「 kmip.init.maxwait` 」変数は、 node1 構成のロード後にブートループが発生しないように「 off 」に設定する必要があります。
++
+'etenv bootarg.storageencryption.support true
+
++
+'etenv kmip.init.maxwait off
+
+. [[step28]] ブートメニューからノードを起動します。
++
+「 boot_ontap menu
+
++
+FC または UTA / UTA2 設定がない場合は、を実行します link:set_fc_or_uta_uta2_config_on_node3.html#auto9597_check_node3_step15["ノード 3 の手順 15 で UTA / UTA2 ポートを確認して設定します"] ノード 3 がノード 1 のディスクを認識できるようにします。
+
+

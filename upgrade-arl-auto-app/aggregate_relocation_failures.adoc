@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar 
+sidebar: sidebar 
 permalink: upgrade-arl-auto-app/aggregate_relocation_failures.html 
 keywords: aggregate, relocation, failures, ARL 
 summary: アグリゲートの再配置（ ARL ）がアップグレード中に別のポイントで失敗することがあります。 

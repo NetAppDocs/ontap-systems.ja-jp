@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: upgrade-arl-auto-app/relocate_non_root_aggr_nas_data_lifs_node1_node2.html 
+keywords: relocating, non-root, aggregates, nas, data, lif, node1, node2 
+summary: ノード 1 をノード 3 に交換する前に、ルート以外のアグリゲートを移動する必要があります。 
+---
+= ノード 1 が所有するルート以外のアグリゲートと NAS データ LIF をノード 2 に再配置します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ノード 1 をノード 3 に交換する前に、ルート以外のアグリゲートと NAS データ LIF をノード 1 からノード 2 に移動してから、ノード 1 のリソースをノード 3 に移動する必要があります。
+
+この処理は、タスクの開始時にすでに一時停止されている必要があります。手動で再開する必要があります。
+
+アグリゲートと LIF の移行が完了すると、検証のために処理が一時停止されます。この段階で、ルート以外のアグリゲートと SAN 以外のデータ LIF がすべて node3 に移行されているかどうかを確認する必要があります。
+
+<stdin> で未解決のディレクティブ： ./_include/ru_auto_relocate_non_root_aggr_nas_LIFs _from_node1_to_node2 _steps _1.adoc[]
+
+. [[step5] いずれかの LIF が停止している場合は、次のコマンドを使用して、各 LIF に対して 1 回ずつ LIF の管理ステータスを「 up 」に設定します。
++
+「 network interface modify -vserver <vserver_name> -lif <lif_name> -home-node <nodename> -status-admin up 」という形式で指定します
+
+
