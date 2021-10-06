@@ -1,4 +1,9 @@
 ---
+settings:
+  name: ONTAP Systems
+  pdf_enabled: true
+  langs: ja-jp,us-en,zh-cn
+  harmony_enabled: true
 sidebar:
   entries:
   - title: ONTAP 9.8 システムのマニュアル
