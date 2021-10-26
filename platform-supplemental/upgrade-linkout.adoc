@@ -1,0 +1,12 @@
+---
+permalink: platform-supplemental/upgrade-linkout.html 
+sidebar: sidebar 
+keywords: hardware upgrade, arl 
+summary: AFF および FAS コントローラモジュールのアップグレードについては、 FAS and AFF のドキュメントサイトを参照してください。 
+---
+= アップグレード手順
+:icons: font
+:imagesdir: ../media/
+
+
+AFF または FAS コントローラモジュールのアップグレード手順が移動されました https://docs.netapp.com/us-en/ontap-systems-upgrade/index.html["こちらをご覧ください"]。

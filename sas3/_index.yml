@@ -1,0 +1,55 @@
+---
+indexpage:
+  tiles:
+  - title: はじめに 
+    links:
+    - title: ONTAP リリースノート
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+    - title: ストレージデータシート
+      url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
+  - title: 設置とセットアップ
+    links:
+    - title: 新しいストレージシステムにシェルフを設置します
+      url: "/install-new-system.html"
+    - title: シェルフをホットアドします
+      url: "/install-hot-add-shelf.html"
+    - title: シェルフ ID を変更します
+      url: "/install-change-shelf-id.html"
+    - title: IOM6 シェルフのスタックへのシェルフのホットアド（混在スタック）
+      url: "/iom12-hot-add-mix.html"
+    - title: SAS ケーブル接続ルール、ワークシート、および例
+      url: "/overview-cabling-rules-examples.html"
+  - title: メンテナンス
+    links:
+    - title: DS224C または DS212C シェルフ内のディスクドライブ
+      url: "/service-hot-swap-drive-ds224c-ds212c.html"
+    - title: DS460C シェルフ内のディスクドライブ
+      url: "/service-hot-swap-drive-ds460c.html"
+    - title: DS460C シェルフ内のドライブドロワー
+      url: "/service-replace-drawer-ds460c.html"
+    - title: DS460C シェルフのファン
+      url: "/service-replace-fan-ds460c.html"
+    - title: シェルフをホットリムーブする
+      url: "/hot-remove-shelf.html"
+    - title: IOM12 モジュール
+      url: "/service-hot-swap-iom.html"
+    - title: 電源装置
+      url: "/service-hot-swap-power-supply.html"
+    - title: シェルフ LED のステータス状態
+      url: "/sas3/service-replace-power-supply.html"
+    - title: RTC バッテリ
+      url: "/sas3/service-replace-rtc-battery.html"
+  - title: リソースの追加
+    links:
+    - title: ONTAP のドキュメント
+      url: https://docs.netapp.com/us-en/ontap/
+    - title: NetApp Hardware Universe の略
+      url: https://hwu.netapp.com/home/index
+    - title: NetApp Active IQ Config Advisor の略
+      url: https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor
+    - title: NetApp Interoperability Matrix Tool で確認できます
+      url: https://mysupport.netapp.com/matrix/#welcome
+    - title: ネットアップのサポートナレッジベース
+      url: https://kb.netapp.com/
+    - title: ネットアップコミュニティ
+      url: https://community.netapp.com/

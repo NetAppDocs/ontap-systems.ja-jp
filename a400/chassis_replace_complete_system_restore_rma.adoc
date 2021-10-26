@@ -1,0 +1,134 @@
+---
+permalink: a400/chassis-replace-complete-system-restore-rma.html 
+sidebar: sidebar 
+keywords: aff a400, verify and set HA state, run diagnostics, complete the replacement process 
+summary: キットに付属する RMA 指示書に従って、シャーシの HA 状態を確認し、診断を実行し、障害が発生した部品をネットアップに返却する必要があります。 
+---
+= リストアと交換のプロセスを完了します - AFF A400
+:icons: font
+:imagesdir: ../media/
+
+
+
+
+== 手順 1 ：シャーシの HA 状態を確認して設定します
+
+[role="lead"]
+シャーシの HA 状態を確認し、必要に応じてシステム構成に合わせて更新する必要があります。
+
+. メンテナンスモードでは、いずれかのコントローラモジュールから、ローカルコントローラモジュールとシャーシの HA 状態を表示します。「 ha-config show 」
++
+HA 状態はすべてのコンポーネントで同じになっているはずです。
+
+. 表示されたシャーシのシステム状態がシステム構成と一致しない場合は、次の手順を実行します。
++
+.. シャーシの HA 状態を設定します :'ha-config modify chassis_ha-state _
++
+ha_state_value には、次のいずれかの値を指定できます。
+
++
+*** 「 HA 」
+*** 「 mcc 」
+*** 「 mcc-2n 」
+*** 「 non-ha 」
+
+
+.. 設定が変更されたことを確認します。「 ha-config show 」
+
+
+. システムの残りのケーブルをまだ再接続していない場合は、ケーブルを再接続します。
+. システムの前面にベゼルを再度取り付けます。
+
+
+
+
+== 手順 2 ：診断を実行します
+
+[role="lead"]
+システムのコンポーネントを交換したら、そのコンポーネントに対して診断テストを実行する必要があります。
+
+診断を開始するには、システムに LOADER プロンプトが表示されている必要があります。
+
+診断手順のコマンドは、すべてコンポーネントを交換するノードから実行します。
+
+. 作業をするノードに LOADER プロンプトが表示されていない場合は、ノードをリブートします。「 system node halt -node node_name 」
++
+コマンドを問題したら、システムが LOADER プロンプトで停止するまで待ちます。
+
+. LOADER プロンプトで、システムレベルの診断用に特別に設計されたドライバ「 boot_diags 」にアクセスします
+. 表示されたメニューから「 * Scan System * （システムのスキャン）」を選択して、診断テストの実行を有効にします。
+. 表示されたメニューから * Test system * を選択して、診断テストを実行します。
+. 各種サブメニューからテストまたは一連のテストを選択します。
+. 前述の手順の結果に応じて、次に進みます。
++
+** テストに失敗した場合は、エラーを修正してからテストを再実行します。
+** テストでエラーが報告されなかった場合は、メニューから Reboot を選択してシステムをリブートします。
+
+
+
+
+
+
+== 手順 3 ： 2 ノード MetroCluster 構成でアグリゲートをスイッチバックする
+
+[role="lead"]
+2 ノード MetroCluster 構成で FRU の交換が完了したら、 MetroCluster スイッチバック処理を実行できます。これにより構成が通常の動作状態に戻ります。また、障害が発生していたサイトの同期元 Storage Virtual Machine （ SVM ）がアクティブになり、ローカルディスクプールからデータを提供します。
+
+このタスクでは、環境の 2 ノード MetroCluster 構成のみを実行します。
+
+.手順
+. すべてのノードの状態が「 enabled 」であることを確認します。 MetroCluster node show
++
+[listing]
+----
+cluster_B::>  metrocluster node show
+
+DR                           Configuration  DR
+Group Cluster Node           State          Mirroring Mode
+----- ------- -------------- -------------- --------- --------------------
+1     cluster_A
+              controller_A_1 configured     enabled   heal roots completed
+      cluster_B
+              controller_B_1 configured     enabled   waiting for switchback recovery
+2 entries were displayed.
+----
+. すべての SVM で再同期が完了したことを確認します。「 MetroCluster vserver show 」
+. 修復処理によって実行される LIF の自動移行が正常に完了したことを確認します。 MetroCluster check lif show
+. サバイバークラスタ内の任意のノードから MetroCluster switchback コマンドを使用して、スイッチバックを実行します。
+. スイッチバック処理が完了したことを確認します MetroCluster show
++
+クラスタの状態が waiting-for-switchback の場合は、スイッチバック処理がまだ実行中です。
+
++
+[listing]
+----
+cluster_B::> metrocluster show
+Cluster              Configuration State    Mode
+--------------------	------------------- 	---------
+ Local: cluster_B configured       	switchover
+Remote: cluster_A configured       	waiting-for-switchback
+----
++
+クラスタが「 normal 」状態のとき、スイッチバック処理は完了しています。
+
++
+[listing]
+----
+cluster_B::> metrocluster show
+Cluster              Configuration State    Mode
+--------------------	------------------- 	---------
+ Local: cluster_B configured      		normal
+Remote: cluster_A configured      		normal
+----
++
+スイッチバックが完了するまでに時間がかかる場合は、「 MetroCluster config-replication resync-status show 」コマンドを使用することで、進行中のベースラインのステータスを確認できます。
+
+. SnapMirror 構成または SnapVault 構成があれば、再確立します。
+
+
+
+
+== 手順 4 ：障害が発生したパーツをネットアップに返却する
+
+[role="lead"]
+部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。テクニカルサポートにお問い合わせください https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"]RMA 番号を確認する場合や、交換用手順にサポートが必要な場合は、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。

@@ -1,0 +1,27 @@
+---
+permalink: a800/install-setup.html 
+sidebar: sidebar 
+keywords: aff a800, initial configuration options 
+summary: システムを設置してセットアップします。 
+---
+= はじめに：設置とセットアップを選択してください
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+新しいストレージシステムの設置およびセットアップを進めるにあたって、参照するコンテンツの形式を選択できます。ここで説明する手順は、 ASA 構成にも該当します。
+
+* link:../a800/install-quick-guide.html["クイックステップ"]
++
+ステップバイステップの手順と追加コンテンツへのライブリンクが記載された PDF 形式のガイドです。
+
+* link:../a800/install-videos.html["ビデオの手順"]
++
+手順を追ったビデオでご確認ください。
+
+* link:../a800/install-detailed-guide.html["詳細な手順"]
++
+ステップバイステップの手順と追加コンテンツへのライブリンクが記載されたオンライン形式のガイドです。
+
+

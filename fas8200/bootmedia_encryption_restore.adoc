@@ -1,0 +1,272 @@
+---
+permalink: fas8200/bootmedia-encryption-restore.html 
+sidebar: sidebar 
+keywords: fas8200, post, boot, media, okm, nse, nve, onboard key manager, netapp storage encryption, netapp volume encryption 
+summary: 環境変数を確認したら、オンボードキーマネージャ \ （ OKM \ ）、 NetApp Storage Encryption \ （ NSE\ ）、または NetApp Volume Encryption \ （ NVE \ ）が有効になっているシステムに固有の手順を実行する必要があります。 
+---
+= 必要に応じて、 OKM 、 NSE 、 NVE をリストアします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+環境変数を確認したら、オンボードキーマネージャ（ OKM ）、 NetApp Storage Encryption （ NSE ）、または NetApp Volume Encryption （ NVE ）が有効になっているシステムに固有の手順を実行する必要があります。
+
+OKM 、 NSE 、または NVE 構成をリストアするために使用するセクションを決定します。
+
+NSE または NVE がオンボードキーマネージャとともに有効になっている場合は、この手順の最初に取得した設定をリストアする必要があります。
+
+* NSE または NVE が有効で、オンボードキーマネージャが有効になっている場合は、に進みます <<Option 1: Restore NVE or NSE when Onboard Key Manager is enabled>>。
+* ONATP 9.5 で NSE または NVE が有効になっている場合は、に進みます <<Option 2: Restore NSE/NVE on systems running ONTAP 9.5 and earlier>>。
+* ONTAP 9.6 に対して NSE または NVE が有効になっている場合は、に進みます <<Option 3: Restore NSE/NVE on systems running ONTAP 9.6 and later>>。
+
+
+
+
+== オプション 1 ：オンボードキーマネージャが有効な場合は、 NVE または NSE をリストアする
+
+.手順
+. コンソールケーブルをターゲットノードに接続します。
+. LOADER プロンプトで「 boot_ontap 」コマンドを使用して、ノードをブートします。
+. コンソールの出力を確認します。
++
+[cols="1,3"]
+|===
+| * と表示されます | * 次に ... * 
+
+
+ a| 
+LOADER プロンプト
+ a| 
+ノードをブートメニュー「 boot_ontap menu 」からブートします
+
+
+
+ a| 
+ギブバックを待っています
+ a| 
+.. プロンプトで「 Ctrl+C 」と入力します
+.. というメッセージが表示された場合：このノードを halt するのではなく、 [y/n] をクリックしますか？「 y 」と入力します
+.. LOADER プロンプトで「 boot_ontap menu 」コマンドを入力します。
+
+
+|===
+. ブートメニューで、非表示のコマンド「 recover _onboard keymanager 」を入力し、プロンプトで「 y 」と応答します
+. この手順の冒頭でお客様から入手したオンボードキーマネージャのパスフレーズを入力します。
+. バックアップ・データの入力を求められたら、この手順の最初にキャプチャしたバックアップ・データを貼り付けます。「 securitykey-manager backup show 」コマンドまたは「 securitykey-manager onboard show -backup 」コマンドの出力を貼り付けます
++
+
+NOTE: データは 'securitykey-manager backup show または 'securitykey-manager onboard show-backup' コマンドから出力されます
+
++
+バックアップデータの例：
+
++
+====
+-------------- バックアップの開始 TmV0QXBwIEISELAALAC6AALAG3ATVATLH1DBZ12piVATVZ4ATLASYFSSAJAXAJAXAZAAALAC6AALACBAALAC6AALACZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADDAAAAAAAAAAAAAAAAAAAADDAAAAAAAAAAAAAAAAADATAAAAADAAAAAAADADAAAAAAAAAADAAAAAAAAAAADAAAAAADAAAAAADAAAAAADAAAADAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADADAAAADAAAADAAAAA。。。H4nPQM0nrDRYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+-------------- エンド・バックアップ：
+
+====
+. ブートメニューで、 Normal Boot のオプションを選択します。
++
+システムが「 Waiting for giveback... 」プロンプトでブートします。
+
+. パートナーノードにコンソールケーブルを接続し、 admin としてログインします。
+. 「 storage failover show 」コマンドを使用して、ターゲットノードでギブバックの準備が完了していることを確認します。
+. ギブバックは、 storage failover giveback 「 -fromnode local-only -cfo-aggregates true 」コマンドを持つ CFO アグリゲートのみです。
++
+** ディスク障害のためにコマンドが失敗した場合は、障害が発生したディスクを物理的に取り外します。ただし、交換用ディスクが届くまでは、ディスクをスロットに挿入したままにしておきます。
+** CIFS セッションが開いているためにコマンドが失敗する場合は、 CIFS セッションを閉じる方法をお客様に確認してください。
++
+
+NOTE: CIFS を終了原因すると、データが失われる可能性があります。
+
+** パートナーの「準備が完了していません」が原因でコマンドが失敗した場合は、 NVMEM が同期されるまで 5 分待ちます。
+** NDMP 、 SnapMirror 、または SnapVault のプロセスが原因でコマンドが失敗する場合は、そのプロセスを無効にします。詳細については、該当するドキュメントセンターを参照してください。
+
+
+. ギブバックが完了したら、「 storage failover show 」コマンドと「 storage failover show-giveback 」コマンドを使用して、フェイルオーバーとギブバックのステータスを確認します。
++
+CFO アグリゲート（ルートアグリゲートおよび CFO 形式のデータアグリゲート）のみが表示されます。
+
+. コンソールケーブルをターゲットノードに接続します。
+. ONTAP 9.5 以前を実行している場合は、 key-manager setup ウィザードを実行します。
++
+.. 「 securitykey-manager setup -nodename` 」コマンドを使用してウィザードを起動し、プロンプトが表示されたらオンボードキー管理のパスフレーズを入力します。
+.. 'key-manager key show-detail' コマンドを入力して ' オンボード・キー・マネージャに格納されているすべてのキーの詳細を表示し ' すべての認証キーについて 'restored`column=yes を確認します
++
+
+NOTE: 「 Restored 」列が「 yes 」以外の場合は、カスタマサポートにお問い合わせください。
+
+.. キーがクラスタ全体で同期されるまで 10 分待ちます。
+
+
+. ONTAP 9.6 以降を実行している場合は、セキュリティキー管理ツールのオンボード同期を実行します。
++
+.. 「 securitykey-manager onboard sync 」コマンドを実行し、プロンプトが表示されたらパスフレーズを入力します。
+.. 「 securitykey-manager key query 」コマンドを入力して、オンボードキーマネージャに格納されているすべてのキーの詳細を表示し、すべての認証キーの「 restored 」列 = 「 yes / true 」であることを確認します。
++
+
+NOTE: 「 Restored 」列が「 yes/true 」以外の場合は、カスタマサポートにお問い合わせください。
+
+.. キーがクラスタ全体で同期されるまで 10 分待ちます。
+
+
+. パートナーノードにコンソールケーブルを接続します。
+. 「 storage failover giveback -fromnode local 」コマンドを使用してターゲットノードをギブバックします。
+. 「 storage failover show 」コマンドを使用して、ギブバックのステータスを確認します。このステータスは、レポートが完了してから 3 分後に表示されます。
++
+20 分経ってもギブバックが完了しない場合は、カスタマーサポートにお問い合わせください。
+
+. クラスタシェル・プロンプトで、 net int show -is-home false コマンドを入力し、ホーム・ノードおよびポートにない論理インターフェイスを一覧表示します。
++
+いずれかのインターフェイスが「 false 」と表示されている場合は、「 net int revert 」コマンドを使用して、これらのインターフェイスをホームポートに戻します。
+
+. コンソールケーブルをターゲットノードに移動し、「 version-v 」コマンドを実行して ONTAP のバージョンを確認します。
+. 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
+
+
+
+
+== オプション 2 ： ONTAP 9.5 以前を実行しているシステムで NSE / NVE をリストアする
+
+.手順
+. コンソールケーブルをターゲットノードに接続します。
+. LOADER プロンプトで「 boot_ontap 」コマンドを使用して、ノードをブートします。
+. コンソールの出力を確認します。
++
+[cols="1,3"]
+|===
+| * と表示されます | * 次に ... * 
+
+
+ a| 
+ログインプロンプト
+ a| 
+手順 7 に進みます。
+
+
+
+ a| 
+ギブバックを待っています
+ a| 
+.. パートナーノードにログインします。
+.. 「 storage failover show 」コマンドを使用して、ターゲットノードでギブバックの準備が完了していることを確認します。
+
+
+|===
+. 「 storage failover giveback -fromnode local-only -cfo-aggregates true local 」コマンドを使用して、コンソールケーブルをパートナーノードに移動し、ターゲットノードのストレージをギブバックします。
++
+** ディスク障害のためにコマンドが失敗した場合は、障害が発生したディスクを物理的に取り外します。ただし、交換用ディスクが届くまでは、ディスクをスロットに挿入したままにしておきます。
+** CIFS セッションが開いているためにコマンドが失敗する場合は、 CIFS セッションを閉じる方法をお客様に確認してください。
++
+
+NOTE: CIFS を終了原因すると、データが失われる可能性があります。
+
+** パートナーの「準備が完了していません」が原因でコマンドが失敗した場合は、 NVMEM が同期されるまで 5 分待ちます。
+** NDMP 、 SnapMirror 、または SnapVault のプロセスが原因でコマンドが失敗する場合は、そのプロセスを無効にします。詳細については、該当するドキュメントセンターを参照してください。
+
+
+. 3 分待ってから、「 storage failover show 」コマンドを使用してフェイルオーバーステータスを確認します。
+. クラスタシェル・プロンプトで、 net int show -is-home false コマンドを入力し、ホーム・ノードおよびポートにない論理インターフェイスを一覧表示します。
++
+いずれかのインターフェイスが「 false 」と表示されている場合は、「 net int revert 」コマンドを使用して、これらのインターフェイスをホームポートに戻します。
+
+. コンソール・ケーブルをターゲット・ノードに移動し 'version -v コマンドを実行して ONTAP のバージョンを確認します
+. 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
+. クラスタシェルプロンプトで「 storage encryption disk show 」を使用して出力を確認します。
++
+
+NOTE: NVE （ NetApp Volume Encryption ）が設定されている場合、このコマンドは機能しません
+
+. security key-manager query を使用して、キー管理サーバに格納されている認証キーのキー ID を表示します。
++
+** 「 Restored 」列が「 yes 」であり、すべてのキー管理ツールが「 available 」状態でレポートする場合は、「 _complete the replacement process_ 」に進みます。
+** 「 Restored 」列が「 yes 」以外のもので、 1 つまたは複数のキー管理ツールが使用できない場合は、「 securitykey-manager restore-address 」コマンドを使用して、使用可能なすべてのキー管理サーバからすべてのノードに関連付けられた AK およびキー ID を取得およびリストアします。
++
+security key-manager query の出力を再度チェックして 'restored' カラム = 'yes' およびすべてのキー管理ツールが Available 状態でレポートされていることを確認します
+
+
+
+. オンボードキー管理が有効になっている場合：
++
+.. 「 securitykey-manager key show -detail 」を使用して、オンボードキーマネージャに格納されているすべてのキーの詳細を表示します。
+.. 「 securitykey-manager key show -detail` コマンドを使用して、すべての認証キーの「 restored 」列 = 「 yes 」であることを確認します。
++
+「 Restored 」列が「 yes 」以外の場合は、「 securitykey-manager setup -node _repaired _ （ Target ） _node_ 」コマンドを使用して、オンボードキー管理の設定を復元します。すべての認証キーについて 'securitykey-manager key show -detail` コマンドを再実行して 'restored`column=yes を確認します
+
+
+
+. パートナーノードにコンソールケーブルを接続します。
+. 「 storage failover giveback -fromnode local 」コマンドを使用してノードをギブバックします。
+. 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
+
+
+
+
+== オプション 3 ： ONTAP 9.6 以降を実行しているシステムで NSE / NVE をリストアする
+
+.手順
+. コンソールケーブルをターゲットノードに接続します。
+. LOADER プロンプトで「 boot_ontap 」コマンドを使用して、ノードをブートします。
+. コンソールの出力を確認します。
++
+[cols="1,3"]
+|===
+| コンソールに表示される内容 | 作業 
+
+
+ a| 
+ログインプロンプト
+ a| 
+手順 7 に進みます。
+
+
+
+ a| 
+ギブバックを待っています
+ a| 
+.. パートナーノードにログインします。
+.. 「 storage failover show 」コマンドを使用して、ターゲットノードでギブバックの準備が完了していることを確認します。
+
+
+|===
+. 「 storage failover giveback -fromnode local-only -cfo-aggregates true local 」コマンドを使用して、コンソールケーブルをパートナーノードに移動し、ターゲットノードのストレージをギブバックします。
++
+** ディスク障害のためにコマンドが失敗した場合は、障害が発生したディスクを物理的に取り外します。ただし、交換用ディスクが届くまでは、ディスクをスロットに挿入したままにしておきます。
+** CIFS セッションが開いているためにコマンドが失敗する場合は、 CIFS セッションを閉じる方法をお客様に確認してください。
++
+
+NOTE: CIFS を終了原因すると、データが失われる可能性があります。
+
+** パートナーの「準備が完了していません」が原因でコマンドが失敗した場合は、 NVMEM が同期されるまで 5 分待ちます。
+** NDMP 、 SnapMirror 、または SnapVault のプロセスが原因でコマンドが失敗する場合は、そのプロセスを無効にします。詳細については、該当するドキュメントセンターを参照してください。
+
+
+. 3 分待ってから、「 storage failover show 」コマンドを使用してフェイルオーバーステータスを確認します。
+. クラスタシェル・プロンプトで、 net int show -is-home false コマンドを入力し、ホーム・ノードおよびポートにない論理インターフェイスを一覧表示します。
++
+いずれかのインターフェイスが「 false 」と表示されている場合は、「 net int revert 」コマンドを使用して、これらのインターフェイスをホームポートに戻します。
+
+. コンソールケーブルをターゲットノードに移動し、「 version-v 」コマンドを実行して ONTAP のバージョンを確認します。
+. 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
+. クラスタシェルプロンプトで「 storage encryption disk show 」を使用して出力を確認します。
+. 「 securitykey-manager key query 」コマンドを使用して、キー管理サーバに格納されている認証キーのキー ID を表示します。
++
+** リストアされたカラム = 'yes/true' の場合は ' 終了し ' 交換プロセスを完了することができます
+** 「 Key Manager type 」 = 「 external 」および「 restored 」列 = 「 yes / true 」以外の場合は、「 securitykey-manager external restore 」コマンドを使用して認証キーのキー ID をリストアします。
++
+
+NOTE: コマンドが失敗した場合は、カスタマーサポートにお問い合わせください。
+
+** 「 Key Manager type 」 = 「 onboard 」で「 restored 」列 = 「 yes / true 」以外の場合は、「 securitykey-manager onboard sync 」コマンドを使用して、 Key Manager タイプを再同期します。
++
+security key-manager key query を使用して ' すべての認証キーの Restored カラム = 'yes/true' を確認します
+
+
+
+. パートナーノードにコンソールケーブルを接続します。
+. 「 storage failover giveback -fromnode local 」コマンドを使用してノードをギブバックします。
+. 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
+

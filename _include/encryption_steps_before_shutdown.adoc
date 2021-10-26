@@ -1,0 +1,27 @@
+= 
+
+
+障害ノードをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害ノードのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。
+
+ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html["ONTAP 9 システムアドミニストレーションリファレンス"]
+
+.手順
+. 障害ノードのステータスを確認します。
++
+** 障害ノードがログインプロンプトに表示されている場合は 'admin' としてログインします
+** 障害ノードが LOADER プロンプトに表示され、 HA 構成の一部である場合は、正常なノードに「 admin 」としてログインします。
+** 障害ノードがスタンドアロン構成であり、 LOADER プロンプトが表示されている場合は、ネットアップサポートにお問い合わせください。 http://mysupport.netapp.com/["mysupport.netapp.com"]
+
+
+. AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
++
+次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
+
+. 「 vrsion -v 」コマンドを使用して、障害ノードでシステムが実行している ONTAP のバージョンが稼働しているかどうか、障害ノードが停止している場合はパートナーノードで稼働しているかどうかを確認します。
++
+** コマンドの出力に <lno-DARE > が表示されている場合は、システムで NVE がサポートされていないので、コントローラのシャットダウンに進みます。
+
+
+

@@ -1,0 +1,24 @@
+---
+permalink: fas500f/bootmedia-replace-overview.html 
+sidebar: sidebar 
+keywords: fas500f, boot, media, primary, secondary, set, system, boot image, usb, mbr, fat32 
+summary: ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。 
+---
+= ブートメディア FAS500f を交換してください
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。
+
+「 image_xxx.tgz 」を格納できる適切な容量のストレージを搭載した MBR/FAT32 にフォーマットされた USB フラッシュドライブが必要です
+
+* 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。
+* 以下の手順のコマンドを正しいノードに適用することが重要です。
++
+** impaired_node は、保守を実行しているノードです。
+** healthy_node は、障害ノードの HA パートナーです。
+
+
+

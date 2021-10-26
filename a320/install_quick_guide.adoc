@@ -1,0 +1,17 @@
+---
+permalink: a320/install-quick-guide.html 
+sidebar: sidebar 
+keywords: aff, a320, aff a320, guide, graphic, instruction, typical, installation, system, rack, cabling, cable, initial, system, bring-up, netapp, quick guide 
+summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。 
+---
+= クイックガイド - AFF A320
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。
+
+設置およびセットアップ手順 _PDF ポスター：
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2853946["AFF A320 システムの設置とセットアップの手順"]

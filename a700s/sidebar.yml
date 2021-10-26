@@ -1,0 +1,95 @@
+---
+section: a700s
+title: AFF A700s システム
+url: "/a700s/index.html"
+entries:
+- title: 設置とセットアップ
+  pdf-filename: AFF A700s のインストールとセットアップ
+  entries:
+  - title: クラスタ設定ワークシート
+    url: "/a700s/install-worksheet-linkout.html"
+  - title: クイックステップ
+    url: "/a700s/install-setup-linkout.html"
+  - title: ビデオの手順
+    url: "/a700s/install-video-linkout.html"
+- title: メンテナンス
+  pdf-filename: AFF A700s は引き続き使用できます
+  entries:
+  - title: ブートメディア
+    pdf-filename: AFF A700s ブートメディア
+    entries:
+    - title: 概要
+      url: "/a700s/bootmedia-replace-overview.html"
+    - title: オンボード暗号化を確認
+      url: "/a700s/bootmedia-encryption-preshutdown-checks.html"
+    - title: ノードをシャットダウン
+      url: "/a700s/bootmedia-shutdown.html"
+    - title: ブートメディアを交換します
+      url: "/a700s/bootmedia-replace.html"
+    - title: ブートイメージを転送します
+      url: "/a700s/bootmedia-transfer-boot-image.html"
+    - title: ブートイメージを起動します
+      url: "/a700s/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/a700s/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/a700s/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: AFF A700s シャーシ
+    entries:
+    - title: 概要
+      url: "/a700s/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a700s/chassis-replace-shutdown.html"
+    - title: ハードウェアを交換します
+      url: "/a700s/chassis-replace-move-hardware.html"
+    - title: 交換後の処理
+      url: "/a700s/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラ
+    pdf-filename: AFF A700s コントローラ
+    entries:
+    - title: 概要
+      url: "/a700s/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a700s/controller-replace-shutdown.html"
+    - title: コントローラモジュールを交換します
+      url: "/a700s/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/a700s/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続
+      url: "/a700s/controller-replace-recable-reassign-disks.html"
+    - title: 交換プロセスを完了
+      url: "/a700s/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    pdf-filename: AFF A700s DIMM
+    url: "/a700s/dimm-replace.html"
+  - title: ファン
+    entries:
+    - title: 障害ノードをシャットダウンします
+      url: "/a700s/fan-impaired-controller-shutdown.html"
+    - title: コントローラモジュールを取り外します
+      url: "/a700s/fan-controller-remove.html"
+    - title: ファン
+      pdf-filename: AFF A700s ファン
+      url: "/a700s/fan-replace.html"
+    - title: コントローラモジュールを再度取り付けます
+      url: "/a700s/fan-controller-reinstall-pcie-rtc.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/a700s/fan-complete-rma.html"
+  - title: NVRAM バッテリ
+    pdf-filename: AFF A700s の NVRAM バッテリ
+    url: "/a700s/nvmem-nvram-battery-replace.html"
+  - title: NVRAM
+    pdf-filename: AFF A700s の NVRAM
+    url: "/a700s/nvram-or-nvram-dimm-replacement.html"
+  - title: PCIe カード
+    pdf-filename: AFF A700s PCIe カード
+    url: "/a700s/pci-cards-and-risers-replace.html"
+  - title: 電源装置
+    pdf-filename: AFF A700s の電源装置
+    url: "/a700s/power-supply-swap-out.html"
+  - title: リアルタイムクロックバッテリ
+    pdf-filename: AFF A700s リアルタイムクロックバッテリ
+    url: "/a700s/rtc-battery-replace.html"
+  - title: システムレベルの診断
+    url: "/a700s/system-level-diags-linkout.html"

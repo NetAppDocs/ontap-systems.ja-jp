@@ -1,0 +1,33 @@
+---
+section: ns224
+title: NS224 シェルフ
+url: "/ns224/index.html"
+entries:
+- title: 設置とケーブル接続
+  pdf-filename: NS224 シェルフの設置とケーブル接続
+  entries:
+  - title: シェルフをホットアドします
+    url: "/ns224/hot-add-shelf.html"
+  - title: シェルフ ID を変更します
+    url: "/ns224/change-shelf-id.html"
+  - title: シェルフをスイッチ接続型ストレージとしてケーブル接続
+    url: "/ns224/cable-as-switch-attached.html"
+- title: メンテナンス
+  pdf-filename: NS224 シェルフにも維持されます
+  entries:
+  - title: ブートメディア
+    url: "/ns224/service-replace-boot-media.html"
+  - title: DIMM
+    url: "/ns224/service-replace-dimm.html"
+  - title: ドライブ
+    url: "/ns224/service-replace-drive.html"
+  - title: ファン
+    url: "/ns224/service-replace-fan.html"
+  - title: シェルフをホットリムーブします
+    url: "/ns224/hot-remove-shelf.html"
+  - title: nsm モジュール
+    url: "/ns224/service-replace-nsm100.html"
+  - title: 電源装置
+    url: "/ns224/service-replace-power-supply.html"
+  - title: リアルタイムクロックバッテリ
+    url: "/ns224/service-replace-rtc-battery.html"

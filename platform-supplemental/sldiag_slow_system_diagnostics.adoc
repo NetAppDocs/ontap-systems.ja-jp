@@ -1,0 +1,166 @@
+---
+permalink: platform-supplemental/sldiag-slow-system-diagnostics.html 
+sidebar: sidebar 
+keywords: run, diagnostic, help, identify, slow, system, response, time, run slow system response diagnostic 
+summary: 診断を実行すると、システムの応答時間が遅い原因を特定するのに役立ちます。 
+---
+= システム応答の遅延診断を実行します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+診断を実行すると、システムの応答時間が遅い原因を特定するのに役立ちます。
+
+. ストレージ・システム・プロンプトで、 LOADER プロンプト「 halt 」に切り替えます
+. LOADER プロンプトで「 boot_diags 」と入力します
++
+
+NOTE: システムレベルの診断が正しく機能するためには、このコマンドを LOADER プロンプトから実行する必要があります。boot_diags コマンドは、システムレベルの診断専用に設計された特別なドライバを実行します。
+
+. 次のコマンドを入力して、すべてのデバイスの診断を実行します。「 'diag device run'
+. 次のコマンドを入力して、テストのステータスを表示します。「 diag device status 」
++
+テストが実行中の間、ストレージシステムは次の出力を表示します。
+
++
+[listing]
+----
+There are still test(s) being processed.
+----
++
+すべてのテストが完了すると、デフォルトで次の応答が表示されます。
+
++
+[listing]
+----
+*> <SLDIAG:_ALL_TESTS_COMPLETED>
+----
+. 次のコマンドを入力して、システムの動作が遅い原因を特定します。 'diag device status-long-state failed'
++
+次の例は、適切なハードウェアがない状況でテストを実行した場合に表示される、障害の完全なステータスを示しています。
+
++
+[listing]
+----
+
+*> **sldiag device status -long -state failed**
+
+TEST START ------------------------------------------
+DEVTYPE: nvram_ib
+NAME: external  loopback test
+START DATE: Sat Jan  3 23:10:55 GMT 2009
+
+STATUS: Completed
+ib3a: could not set loopback mode, test failed
+END DATE: Sat Jan  3 23:11:04 GMT 2009
+
+LOOP: 1/1
+TEST END --------------------------------------------
+
+TEST START ------------------------------------------
+DEVTYPE: fcal
+NAME: Fcal Loopback Test
+START DATE: Sat Jan  3 23:10:56 GMT 2009
+
+STATUS: Completed
+Starting test on Fcal Adapter: 0b
+Started gathering adapter info.
+Adapter get adapter info OK
+Adapter fc_data_link_rate: 1Gib
+Adapter name: QLogic 2532
+Adapter firmware rev: 4.5.2
+Adapter hardware rev: 2
+
+Started adapter get WWN string test.
+Adapter get WWN string OK wwn_str: 5:00a:098300:035309
+
+Started adapter interrupt test
+Adapter interrupt test OK
+
+Started adapter reset test.
+Adapter reset OK
+
+Started Adapter Get Connection State Test.
+Connection State: 5
+Loop on FC Adapter 0b is OPEN
+
+Started adapter Retry LIP test
+Adapter Retry LIP OK
+
+ERROR: failed to init adaptor port for IOCTL call
+
+ioctl_status.class_type = 0x1
+
+ioctl_status.subclass = 0x3
+
+ioctl_status.info = 0x0
+ Started INTERNAL LOOPBACK:
+INTERNAL LOOPBACK   OK
+Error Count: 2  Run Time: 70 secs
+>>>>> ERROR, please ensure the port has a shelf or plug.
+END DATE: Sat Jan  3 23:12:07 GMT 2009
+
+LOOP: 1/1
+TEST END --------------------------------------------
+----
++
+[cols="1,2"]
+|===
+| システムレベルの診断のテスト結果 | 作業 
+
+
+ a| 
+は失敗なしで完了しました
+ a| 
+ハードウェアに問題はなく、ストレージシステムはプロンプトに戻ります。
+
+.. 次のコマンドを入力して、ステータスログをクリアします。「 diag device clearstatus
+.. 次のコマンドを入力して、ログがクリアされたことを確認します。 'lddiag device status'
++
+次のデフォルトの応答が表示されます。
+
++
+[listing]
+----
+SLDIAG: No log messages are present.
+----
+.. 次のコマンドを入力して保守モードを終了します :halt
+.. Loader プロンプトで次のコマンドを入力して、ストレージ・システムをブートします。「 boot_ontap 」システム・レベルの診断が完了しました。
+
+
+
+
+ a| 
+テストが失敗しました
+ a| 
+問題の原因を特定します
+
+.. 次のコマンドを入力して保守モードを終了します :halt
+.. クリーンシャットダウンを実行し、電源装置の接続を解除します。
+.. システムレベルの診断を実行するための要件をすべて確認するとともに、ケーブルがしっかりと接続されているか、ハードウェアコンポーネントがストレージシステムに適切に取り付けられているかを確認します。
+.. 電源装置を再接続し、ストレージシステムの電源をオンにします。
+.. システム応答の遅延診断の実行の手順 1~5 を繰り返します。
+
+
+
+
+ a| 
+では同じテストエラーが発生しています
+ a| 
+テクニカルサポートから、一部のテストのデフォルト設定を変更して問題を特定することを推奨される場合があります。
+
+.. 次のコマンドを入力して、ストレージシステム上の特定のデバイスまたはデバイスタイプの選択状態を変更します。 `diag device modify [-devtype_|MB|slot_slotnum_][-name device] [-selection_enable|disable|default|only_]`
++
+-'selection_enable|disable|default|only_`] を使用すると、指定したデバイスタイプまたは名前付きデバイスのデフォルト選択を有効または無効にしたり、指定したデバイスまたは名前付きデバイスのみを最初に無効にして有効にしたりできます。
+
+.. 次のコマンドを入力して、テストが変更されたことを確認します。 'lddiag option show'
+.. システム応答の遅延診断の実行の手順 3 ～ 5 を繰り返します。
+.. 問題を特定して解決したら、手順 1 と 2 を繰り返してテストをデフォルトの状態にリセットします。
+.. システム応答の遅延診断の実行の手順 1~5 を繰り返します。
+
+
+|===
+
+
+同じ手順を繰り返しても問題が解決しない場合は、ハードウェアを交換する必要があります。

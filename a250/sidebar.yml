@@ -1,0 +1,74 @@
+---
+section: a250
+title: AFF A250 システム
+url: "/a250/index.html"
+entries:
+- title: 設置とセットアップ
+  pdf-filename: AFF A250 のインストールとセットアップ
+  entries:
+  - title: インストールとセットアップを選択します
+    url: "/a250/install-setup.html"
+  - title: クイックステップ
+    url: "/a250/install-quick-guide.html"
+  - title: ビデオの手順
+    url: "/a250/install-videos.html"
+  - title: 詳細な手順
+    url: "/a250/install-detailed-guide.html"
+- title: メンテナンス
+  pdf-filename: AFF A250 のメンテナンス
+  entries:
+  - title: ブートメディア
+    pdf-filename: AFF A250 ブートメディア
+    entries:
+    - title: 概要
+      url: "/a250/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/a250/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a250/bootmedia-shutdown.html"
+    - title: ブートメディアを交換します
+      url: "/a250/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/a250/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/a250/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/a250/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: AFF A250 シャーシ
+    entries:
+    - title: 概要
+      url: "/a250/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a250/chassis-replace-shutdown.html"
+    - title: ハードウェアを交換します
+      url: "/a250/chassis-replace-move-hardware.html"
+    - title: 交換後の処理
+      url: "/a250/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラ
+    pdf-filename: AFF A250 コントローラモジュール
+    entries:
+    - title: 概要
+      url: "/a250/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a250/controller-replace-shutdown.html"
+    - title: コントローラモジュールを交換します
+      url: "/a250/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/a250/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続
+      url: "/a250/controller-replace-recable-reassign-disks.html"
+    - title: システムのリストアを完了
+      url: "/a250/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/a250/dimm-replace.html"
+  - title: ファン
+    url: "/a250/fan-replace.html"
+  - title: メザニンカード
+    url: "/a250/mezzanine-replace.html"
+  - title: NVMEM バッテリ
+    url: "/a250/nvmem-nvram-battery-replace.html"
+  - title: 電源装置
+    url: "/a250/power-supply-replace.html"
+  - title: リアルタイムクロックバッテリ
+    url: "/a250/rtc-battery-replace.html"

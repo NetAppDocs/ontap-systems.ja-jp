@@ -1,0 +1,29 @@
+---
+permalink: fas8300/install-videos.html 
+sidebar: sidebar 
+keywords: fas8300, fas8700, video, rack, cable, system, manager, guided, setup, configuration 
+summary: ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を紹介するビデオを 2 種類紹介します。 
+---
+= ビデオ - FAS8300 and FAS8700
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を紹介するビデオを 2 種類紹介します。
+
+
+
+== ビデオ 1 ：ハードウェアの設置とケーブル接続
+
+次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
+
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=05d5d8a7-4753-4546-9ddb-ab2001624e04["FAS8300 および FAS8700 の設置とセットアップの手順"]
+
+
+
+== ビデオ 2 ：エンドツーエンドのソフトウェア設定の実行
+
+次のビデオでは、 ONTAP 9.2 以降を実行するシステムのエンドツーエンドのソフトウェア設定を示します。
+
+https://www.youtube.com/embed/WAE0afWhj1c?rel=0["ネットアップのビデオ： Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2"]

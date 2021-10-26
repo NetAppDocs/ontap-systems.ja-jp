@@ -1,0 +1,76 @@
+---
+section: fas8200
+title: FAS8200 システム
+url: "/fas8200/index.html"
+entries:
+- title: 設置とセットアップ
+  pdf-filename: FAS8200 の設置とセットアップ
+  entries:
+  - title: クラスタ設定ワークシート
+    url: "/fas8200/install-worksheet-linkout.html"
+  - title: クイックステップ
+    url: "/fas8200/install-setup-linkout.html"
+  - title: ビデオの手順
+    url: "/fas8200/install-video-linkout.html"
+- title: メンテナンス
+  pdf-filename: FAS8200 のメンテナンス
+  entries:
+  - title: ブートメディア
+    pdf-filename: FAS8200 ブートメディア
+    entries:
+    - title: 概要
+      url: "/fas8200/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/fas8200/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/fas8200/bootmedia-impaired-controller-shutdown.html"
+    - title: ブートメディアを交換します
+      url: "/fas8200/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/fas8200/bootmedia-recovery-image-boot-options.html"
+    - title: MetroCluster の設定をスイッチバックします
+      url: "/fas8200/bootmedia-2n-mcc-switchback.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/fas8200/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/fas8200/bootmedia-complete-rma.html"
+  - title: キャッシングモジュール
+    url: "/fas8200/caching-module-replace.html"
+  - title: シャーシ
+    pdf-filename: FAS8200 シャーシ
+    entries:
+    - title: 概要
+      url: "/fas8200/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/fas8200/chassis-replace-shutdown.html"
+    - title: ハードウェアを交換します
+      url: "/fas8200/chassis-replace-move-hardware.html"
+    - title: 構成をリストアする
+      url: "/fas8200/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラ
+    pdf-filename: FAS8200 コントローラモジュール
+    entries:
+    - title: 概要
+      url: "/fas8200/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/fas8200/controller-replace-shutdown.html"
+    - title: コントローラモジュールを交換します
+      url: "/fas8200/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/fas8200/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続
+      url: "/fas8200/controller-replace-recable-reassign-disks.html"
+    - title: システムのリストアを完了
+      url: "/fas8200/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/fas8200/dimm-replace.html"
+  - title: ファン
+    url: "/fas8200/fan-swap-out.html"
+  - title: NVMEM バッテリ
+    url: "/fas8200/nvmem-nvram-battery-replace.html"
+  - title: PCIe カード
+    url: "/fas8200/pci-cards-and-risers-replace.html"
+  - title: 電源装置
+    url: "/fas8200/power-supply-swap-out.html"
+  - title: リアルタイムクロックバッテリ
+    url: "/fas8200/rtc-battery-replace.html"

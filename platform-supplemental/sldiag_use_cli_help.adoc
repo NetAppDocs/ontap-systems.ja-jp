@@ -1,0 +1,52 @@
+---
+permalink: platform-supplemental/sldiag-use-cli-help.html 
+sidebar: sidebar 
+keywords: command-line, syntax, command, line, name, follow, question, mark, how to use online command-line help 
+summary: コマンドラインからコマンドライン構文のヘルプを表示するには、コマンド名に続けて help を入力するか、または疑問符（？ \ ）を入力します。 
+---
+= オンラインのコマンドラインヘルプの使用方法
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+コマンドラインからコマンドライン構文のヘルプを表示するには、コマンド名に続けて help を入力するか、疑問符（ ? ）を入力します。
+
+構文ヘルプで使用されるフォントまたは記号は、次のとおりです。
+
+* * キーワード *
++
+表示されているとおりに入力する必要があるコマンドまたはオプションの名前を指定します。
+
+* * <> （小なり記号、大なり記号） *
++
+シンボル内で識別される変数を値で置き換える必要があることを指定します。
+
+* * | （パイプ） *
++
+パイプの両側のエレメントのいずれかを選択する必要があることを示します。
+
+* * [] （ブラケット） *
++
+ブラケット内の要素がオプションであることを示します。
+
+* * ｛ ｝ （ブレース） *
++
+波カッコ内の要素は必須です。
+
+
+
+また、コマンドラインで疑問符を入力すると、現在の管理レベル（管理者レベルまたはアドバンスレベル）で使用可能なすべてのコマンドが一覧表示されます。
+
+次の例は、ストレージ・システムのコマンド・ラインで environment help コマンドを入力した場合の出力結果を示しています。コマンド出力には、環境コマンドの構文ヘルプが表示されます。
+
+[listing]
+----
+toaster> environment help
+Usage: environment status |
+[status] [shelf [<adapter>]] |
+[status] [shelf_log] |
+[status] [shelf_stats] |
+[status] [shelf_power_status] |
+[status] [chassis [all | list-sensors | Fan | Power | Temp | Power Supply | RTC Battery | NVRAM4-temperature-7 | NVRAM4-battery-7]]
+----

@@ -1,0 +1,17 @@
+---
+permalink: a400/install-quick-guide.html 
+sidebar: sidebar 
+keywords: aff a400, aff, a400, guide, graphic, instruction, installation, system, rack, cabling, cable, intitial, system, bring-up, guide, install, netapp, system, quick guide 
+summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。 
+---
+= クイックガイド - AFF A400
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。
+
+設置およびセットアップ手順 _PDF ポスター：
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2858854["AFF A400 のセットアップガイド"]

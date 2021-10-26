@@ -1,0 +1,647 @@
+---
+permalink: a800/install-detailed-guide.html 
+sidebar: sidebar 
+keywords: aff a800, detailed installation guide 
+summary: このガイドでは、 AFF A800 システムの設置手順を順を追って説明します。 
+---
+= 詳細ガイド - AFF A800
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このガイドでは、 AFF A800 システムの設置手順を順を追って説明します。
+
+
+
+== 手順 1 ：設置の準備
+
+[role="lead"]
+AFF A800 システムを設置するには、アカウントを作成してシステムを登録する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。
+
+サイト要件および構成済みシステムの追加情報の情報については、 Hardware Universe にアクセスできる必要があります。また、ご使用の ONTAP バージョンのリリースノートにアクセスして、このシステムの詳細を確認しておくことを推奨します。
+
+https://hwu.netapp.com["NetApp Hardware Universe の略"]
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対するリリースノートを検索してください"]
+
+お客様のサイトで次のものを準備する必要があります。
+
+* ストレージシステム用のラックスペース
+* No.2 プラスドライバ
+* Web ブラウザを使用してシステムをネットワークスイッチおよびラップトップまたはコンソールに接続するための追加のネットワークケーブル
++
+.. すべての箱を開封して内容物を取り出します。
+.. コントローラのシステムシリアル番号をメモします。
++
+image::../media/drw_ssn_label.png[DRW SSN ラベル]
+
+.. アカウントを設定します。
++
+... 既存のアカウントにログインするか、アカウントを作成します。
+... システムを登録します。
++
+https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"]
+
+
+
+.. 同梱されていたケーブルの数と種類を確認し、書き留めておきます。
++
+次の表に、同梱されているケーブルの種類を示します。この表にないケーブルが含まれていた場合は、 Hardware Universe を参照してケーブルを特定し、用途を確認してください。
+
++
+https://hwu.netapp.com["NetApp Hardware Universe の略"]
+
++
+[cols="1,2,1,2"]
+|===
+| コネクタのタイプ | パーツ番号と長さ | ケーブルのタイプ | 用途 
+
+
+ a| 
+100GbE ケーブル
+ a| 
+X666211A-05 (112-00595) 、 0.5m
+ a| 
+image:../media/oie_cable100_gbe_qsfp28.png[""]
+ a| 
+HA インターコネクト
+
+
+
+ a| 
+X666211A-05 （ 112-00595 ）、 0.5m
+
+X66211-1 （ 112-00573 ）、 1m
+ a| 
+クラスタインターコネクトネットワーク
+
+
+
+ a| 
+X66211-2 （ 112-00574 ）、 2m ；
+
+X66211-5 （ 112-00576 ）、 5m
+ a| 
+ストレージ / データ
+
+
+
+ a| 
+10GbE ケーブル
+ a| 
+X6566B-3-R6 （ 112-00300 ）、 3m ；
+
+X6566B-5-R6 （ 112-00301 ）、 5m
+ a| 
+データ
+
+
+
+ a| 
+25GbE ケーブル
+ a| 
+X66240A-2 （ 112-00598 ）、 2m ；
+
+X66240A-5 （ 112-00600 ）、 5m
+ a| 
+データ
+
+
+
+ a| 
+RJ-45 （注文内容による）
+ a| 
+該当なし
+ a| 
+image:../media/oie_cable_rj45.png[""]
+ a| 
+管理
+
+
+
+ a| 
+ファイバチャネル
+ a| 
+X66250-2 （ 112-00342 ） 2m ；
+
+X66250-5 （ 112-00344 ） 5m ；
+
+X66250-15 （ 112-00346 ） 15m ；
+
+X66250-30 （ 112-00347 ） 30m
+ a| 
+image:../media/oie_cable_fc_optical.png[""]
+ a| 
+
+
+
+ a| 
+Micro-USB コンソールケーブル
+ a| 
+該当なし
+ a| 
+image:../media/oie_cable_micro_usb.png[""]
+ a| 
+ソフトウェアのセットアップ中のコンソール接続
+
+
+
+ a| 
+電源ケーブル
+ a| 
+該当なし
+ a| 
+image:../media/oie_cable_power.png[""]
+ a| 
+システムの電源をオンにします
+
+|===
+.. クラスタ設定ワークシート _ をダウンロードして記入します。
++
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["クラスタ設定ワークシート"]
+
+
+
+
+
+
+
+== 手順 2 ：ハードウェアを設置する
+
+[role="lead"]
+システムは、 4 ポストラックまたはネットアップシステムキャビネットのいずれかに設置する必要があります。
+
+. 必要に応じてレールキットを取り付けます。
++
+link:../com.netapp.doc.hw-rail-superrail/home.html["丸穴 4 ポストラックへの SuperRail の取り付け"]
+
+. レールキットに付属の手順書に従って、システムを設置して固定します。
++
+
+NOTE: システムの重量に関連する安全上の注意事項を確認しておく必要があります。
+
++
+image::../media/drw_affa800_weight_caution.png[DRW affa800 重量注意]
+
+. ケーブルマネジメントデバイスを取り付けます（図を参照）。
++
+image::../media/drw_affa800_install_cable_mgmt.png[DRW affa800 ケーブル管理をインストールします]
+
+. システムの前面にベゼルを配置します。
+
+
+
+
+== 手順 3 ：コントローラをケーブル接続する
+
+[role="lead"]
+2 ノードスイッチレスクラスタメソッドまたはクラスタインターコネクトネットワークメソッドを使用して、プラットフォームのクラスタにケーブル接続が必要です。ファイバチャネル、 iSCSI ホストネットワーク、または直接接続型ストレージへのケーブル接続はオプションです。このケーブル接続は排他的ではなく、ホストネットワークとストレージにケーブルを接続できます。
+
+
+
+=== 必要なケーブル接続：コントローラをクラスタにケーブル接続します
+
+[role="lead"]
+2 ノードスイッチレスクラスタメソッドまたはクラスタインターコネクトネットワークを使用して、コントローラをクラスタにケーブル接続します。
+
+
+
+==== オプション 1 ： 2 ノードスイッチレスクラスタをケーブル接続
+
+[role="lead"]
+コントローラの管理ネットワークポートはスイッチに接続されます。HA インターコネクトポートとクラスタインターコネクトポートは、両方のコントローラでケーブル接続されます。
+
+システムとスイッチの接続については、ネットワーク管理者にお問い合わせください。
+
+図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
+
+image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+
+
+NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
+
+. アニメーションやステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=edc42447-f721-4cbe-b080-ab0c0123a139["2 ノードスイッチレスクラスタのケーブル接続"]
+
++
+[cols="1,2"]
+|===
+| ステップ | 各コントローラモジュールでを実行します 
+
+
+ a| 
+image:../media/oie_legend_icon_1_dp.png[""]
+ a| 
+HA インターコネクトポートをケーブル接続します。
+
+** e0b から e0b
+** e1b から e1bimage:../media/drw_affa800_ha_pair_cabling.png[""]
+
+
+
+
+ a| 
+image:../media/oie_legend_icon_2_lg.png[""]
+ a| 
+クラスタインターコネクトポートをケーブル接続します。
+
+** e0a から e0a
+** e1a から e1aimage:../media/drw_affa800_tnsc_clust_cabling.png[""]
+
+
+
+
+ a| 
+image:../media/oie_legend_icon_3_lp.png[""]
+ a| 
+管理ポートを管理ネットワークスイッチにケーブル接続します image:../media/drw_affa800_mgmt_cabling.png[""]
+
+
+
+ a| 
+image:../media/oie_legend_icon_attn_symbol.png[""]
+ a| 
+この時点ではまだ電源コードをプラグに接続しないでください。
+
+|===
+. オプションのケーブル接続を行うには、以下を参照してください
++
+** <<Option 1: Connect to a Fibre Channel host>>
+** <<Option 2: Connect to a 10GbE host>>
+** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
+
+
+. システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
+
+
+
+
+==== オプション 2 ：スイッチクラスタをケーブル接続する
+
+[role="lead"]
+コントローラのクラスタインターコネクト / 管理ネットワークポートはスイッチに接続され、 HA インターコネクトポートは両方のコントローラでケーブル接続されます。
+
+システムとスイッチの接続については、ネットワーク管理者にお問い合わせください。
+
+図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
+
+image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+
+
+NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
+
+. アニメーションやステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=49e48140-4c5a-4395-a7d7-ab0c0123a10e["スイッチクラスタのケーブル接続"]
+
++
+[cols="1,2"]
+|===
+| ステップ | 各コントローラモジュールでを実行します 
+
+
+ a| 
+image:../media/oie_legend_icon_1_dp.png[""]
+ a| 
+HA インターコネクトポートをケーブル接続します。
+
+** e0b から e0b
+** e1b から e1bimage:../media/drw_affa800_ha_pair_cabling.png[""]
+
+
+
+
+ a| 
+image:../media/oie_legend_icon_2_lg.png[""]
+ a| 
+クラスタインターコネクトポートを 100GbE クラスタインターコネクトスイッチにケーブル接続します。**e0a** e1aimage:../media/drw_affa800_switched_clust_cabling.png[""]
+
+
+
+ a| 
+image:../media/oie_legend_icon_3_lp.png[""]
+ a| 
+管理ポートを管理ネットワークスイッチにケーブル接続します image:../media/drw_affa800_mgmt_cabling.png[""]
+
+
+
+ a| 
+image:../media/oie_legend_icon_attn_symbol.png[""]
+ a| 
+この時点ではまだ電源コードをプラグに接続しないでください。
+
+|===
+. オプションのケーブル接続を行うには、以下を参照してください
++
+** <<Option 1: Connect to a Fibre Channel host>>
+** <<Option 2: Connect to a 10GbE host>>
+** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
+
+
+. システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
+
+
+
+
+=== オプションのケーブル接続：ケーブル構成に依存するオプション
+
+[role="lead"]
+オプションで、 Fibre Channel または iSCSI ホストネットワークまたは直接接続型ストレージに、構成に依存するケーブルを接続します。このケーブル接続は排他的ではなく、ホストネットワークおよびストレージにケーブル接続できます。
+
+
+
+==== オプション 1 ： Fibre Channel ホストネットワークにケーブルを接続する
+
+[role="lead"]
+コントローラの Fibre Channel ポートは、 Fibre Channel ホストネットワークスイッチに接続されます。
+
+システムとスイッチの接続については、ネットワーク管理者にお問い合わせください。
+
+図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
+
+image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+
+
+NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
+
+[cols="1,2"]
+|===
+| ステップ | 各コントローラモジュールでを実行します 
+
+
+ a| 
+1.
+ a| 
+ポート 2a~2d を FC ホストスイッチにケーブル接続します。image:../media/drw_affa800_fc_host_cabling.png[""]
+
+
+
+ a| 
+2.
+ a| 
+その他のオプションのケーブル接続を行うには、次のいずれかを選択します
+
+* <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+* <<Option 4: Connect to two direct-attached NS224 drive shelves>>
+
+
+
+
+ a| 
+3.
+ a| 
+システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
+
+|===
+
+
+==== オプション 2 ： 10GbE ホストネットワークにケーブルを接続する
+
+[role="lead"]
+コントローラの 10GbE ポートは、 10GbE ホストネットワークスイッチに接続されます。
+
+システムとスイッチの接続については、ネットワーク管理者にお問い合わせください。
+
+図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
+
+image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+
+
+NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
+
+[cols="1,2"]
+|===
+| ステップ | 各コントローラモジュールでを実行します 
+
+
+ a| 
+1.
+ a| 
+ポート e4A から e4d を 10GbE ホストネットワークスイッチにケーブル接続します。image:../media/drw_affa800_10gbe_host_cabling.png[""]
+
+
+
+ a| 
+2.
+ a| 
+その他のオプションのケーブル接続を行うには、次のいずれかを選択します
+
+* <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+* <<Option 4: Connect to two direct-attached NS224 drive shelves>>
+
+
+
+
+ a| 
+3.
+ a| 
+システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
+
+|===
+
+
+==== オプション 3 ：コントローラを 1 台のドライブシェルフにケーブル接続する
+
+[role="lead"]
+各コントローラを、 NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。
+
+図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
+
+image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+
+
+NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
+
+. アニメーションやステップバイステップの手順に従って、 1 台のシェルフにコントローラモジュールをケーブル接続します。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=09dade4f-00bd-4d41-97d7-ab0c0123a0b4["1 台のドライブシェルフへのコントローラのケーブル接続"]
+
++
+[cols="1,2"]
+|===
+| ステップ | 各コントローラモジュールでを実行します 
+
+
+ a| 
+image:../media/oie_legend_icon_1_mb.png[""]
+ a| 
+コントローラ A をシェルフにケーブル接続します image:../media/drw_affa800_1shelf_cabling_a.png[""]
+
+
+
+ a| 
+image:../media/oie_legend_icon_2_lo.png[""]
+ a| 
+コントローラ B をシェルフにケーブル接続します。 image:../media/drw_affa800_1shelf_cabling_b.png[""]
+
+|===
+. システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
+
+
+
+
+==== オプション 4 ：コントローラを 2 台のドライブシェルフにケーブル接続する
+
+[role="lead"]
+各コントローラを両方の NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。
+
+図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
+
+image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+
+
+NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
+
+. 次に示すアニメーションや手順説明に従って、 2 台のドライブシェルフにコントローラをケーブル接続します。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=fe50ac38-9375-4e6b-85af-ab0c0123a0e0["2 台のドライブシェルフへのコントローラのケーブル接続"]
+
++
+[cols="1,2"]
+|===
+| ステップ | 各コントローラモジュールでを実行します 
+
+
+ a| 
+image:../media/oie_legend_icon_1_mb.png[""]
+ a| 
+コントローラ A をシェルフにケーブル接続します。 image:../media/drw_affa800_2shelf_cabling_a.png[""]
+
+
+
+ a| 
+image:../media/oie_legend_icon_2_lo.png[""]
+ a| 
+コントローラ B をシェルフにケーブル接続します。 image:../media/drw_affa800_2shelf_cabling_b.png[""]
+
+|===
+. システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
+
+
+
+
+== 手順 4 ：システムのセットアップと設定を完了する
+
+[role="lead"]
+スイッチとラップトップのみを接続したクラスタ検出を使用するか、システムのコントローラに直接接続してから管理スイッチに接続して、システムのセットアップと設定を実行します。
+
+
+
+=== オプション 1 ：ネットワーク検出が有効になっている場合は、システムのセットアップと設定を実行する
+
+[role="lead"]
+ラップトップでネットワーク検出が有効になっている場合は、クラスタの自動検出を使用してシステムのセットアップと設定を実行できます。
+
+. 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
++
+システムがブートを開始します。初回のブートには最大 8 分かかる場合があります
+
+. ラップトップでネットワーク検出が有効になっていることを確認します。
++
+詳細については、ラップトップのオンラインヘルプを参照してください。
+
+. 次のアニメーションに従って、ラップトップを管理スイッチに接続します。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"]
+
+. 検出する ONTAP アイコンを選択します。
++
+image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コントローラ選択]
+
++
+.. エクスプローラを開きます。
+.. 左側のペインで、 [Network] ( ネットワーク ) をクリックします。
+.. 右クリックして、更新を選択します。
+.. いずれかの ONTAP アイコンをダブルクリックし、画面に表示された証明書を受け入れます。
++
+
+NOTE: 「 XXXXX 」は、ターゲットノードのシステムシリアル番号です。
+
++
+System Manager が開きます。
+
+
+
+. System Manager のセットアップガイドを使用して、 _NetApp ONTAP 構成ガイド _ で収集したデータを基にシステムを設定します。
++
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"]
+
+. Config Advisor を実行してシステムの健全性を確認します。
+. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"] ONTAP での追加機能の設定については、ページを参照してください。
+
+
+
+
+=== オプション 2 ：ネットワーク検出が有効になっていない場合は、システムのセットアップと設定を実行する
+
+[role="lead"]
+ラップトップでネットワーク検出が有効になっていない場合は、このタスクを使用して設定とセットアップを実行する必要があります。
+
+. ラップトップまたはコンソールをケーブル接続して設定します。
++
+.. ラップトップまたはコンソールのコンソールポートを、 115 、 200 ボー、 N-8-1 に設定します。
++
+
+NOTE: コンソールポートの設定方法については、ラップトップまたはコンソールのオンラインヘルプを参照してください。
+
+.. ラップトップまたはコンソールにコンソールケーブルを接続し、システムに付属のコンソールケーブルを使用してコントローラのコンソールポートに接続します。
++
+image::../media/drw_console_connect_affa800.png[DRW コンソール接続 AFA800]
+
+.. ラップトップまたはコンソールを管理サブネット上のスイッチに接続します。
++
+image::../media/drw_client_mgmt_subnet_affa800.png[DRW クライアント管理サブネット affa800]
+
+.. 管理サブネット上の TCP / IP アドレスをラップトップまたはコンソールに割り当てます。
+
+
+. 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
++
+システムがブートを開始します。初回のブートには最大 8 分かかる場合があります
+
+. いずれかのノードに初期ノード管理 IP アドレスを割り当てます。
++
+[cols="1,2"]
+|===
+| 管理ネットワークでの DHCP の状況 | 作業 
+
+
+ a| 
+を設定します
+ a| 
+新しいコントローラに割り当てられた IP アドレスを記録します。
+
+
+
+ a| 
+未設定
+ a| 
+.. PuTTY 、ターミナルサーバ、または環境に対応した同等の機能を使用して、コンソールセッションを開きます。
++
+
+NOTE: PuTTY の設定方法がわからない場合は、ラップトップまたはコンソールのオンラインヘルプを確認してください。
+
+.. スクリプトからプロンプトが表示されたら、管理 IP アドレスを入力します。
+
+
+|===
+. ラップトップまたはコンソールで、 System Manager を使用してクラスタを設定します。
++
+.. ブラウザでノード管理 IP アドレスを指定します。
++
+
+NOTE: アドレスの形式は、 +https://x.x.x.x+ です。
+
+.. NetApp ONTAP 構成ガイドで収集したデータを基にシステムを設定します。
++
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"]
+
+
+
+. Config Advisor を実行してシステムの健全性を確認します。
+. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"] ONTAP での追加機能の設定については、ページを参照してください。
+

@@ -1,0 +1,123 @@
+= NVE の設定を確認する
+
+
+障害ノードをシャットダウンする前に、システムで NetApp Volume Encryption （ NVE ）または NetApp Storage Encryption （ NSE ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。
+
+. クラスタ内のいずれかのボリュームに対して NVE が設定されているかどうかを確認します。 volume show -is-encrypted true
++
+出力に含まれるボリュームには NVE が設定されているため、 NVE の設定を確認する必要があります。ボリュームが表示されない場合は、 NSE が設定されているかどうかを確認します。
+
+. NSE が設定されているかどうかを確認します。「 storage encryption disk show
++
+** モードとキー ID の情報を含むドライブの詳細がコマンド出力に表示される場合は、 NSE が設定されているので、 NSE の設定を確認する必要があります。
+** ディスクが表示されない場合は、 NSE は設定されません。
+** NVE と NSE が設定されていない場合は、障害ノードを安全にシャットダウンできます。
+
+
+
+
+
+
+=== NVE の設定を確認する
+
+. キー管理サーバに格納されている認証キーのキー ID を表示します。「 securitykey-manager query
++
+** キー・マネージャのタイプに「 external 」と表示され ' 「 restored 」列に「 yes 」と表示されている場合は ' 障害ノードをシャットダウンしても安全です
+** 「キー・マネージャ」タイプに「 onboard 」と表示され、「 restored 」列に「 yes 」と表示されている場合は、いくつかの追加手順を実行する必要があります。
+** 「キー・マネージャ」タイプに「外部」が表示され、「復元」列に「はい」以外の項目が表示されている場合は、いくつかの追加手順を実行する必要があります。
+** 'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' 以外の項目が表示されている場合は ' 追加の手順を実行する必要があります
+
+
+. 'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' と表示されている場合は 'OKM 情報を手動でバックアップします
++
+.. advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
+.. コマンドを入力して、キー管理情報「 securitykey-manager onboard show-backup 」を表示します
+.. バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。
+.. admin モードに戻ります。 'set-priv admin'
+.. 障害ノードをシャットダウンします。
+
+
+. 「キー・マネージャ」タイプに「外部」が表示され、「リストア済み」列に「はい」以外の項目が表示される場合：
++
+.. 外部キー管理の認証キーをクラスタ内のすべてのノードにリストアします：「 securitykey-manager external restore
++
+コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。
+
++
+http://mysupport.netapp.com/["mysupport.netapp.com"]
+
+.. すべての認証キーのリストアされたカラムが 'yes' になっていることを確認しますつまり 'securitykey-manager key query' です
+.. 障害ノードをシャットダウンします。
+
+
+. 'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' 以外の項目が表示される場合は ' 次の手順を実行します
++
+.. onboard security key-manager sync コマンド「 security key-manager sync 」を入力します
++
+
+NOTE: プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。 http://mysupport.netapp.com/["mysupport.netapp.com"]
+
+.. すべての認証キーについて 'restored' カラムに yes と表示されていることを確認しますセキュリティ・キーマネージャ・キー・クエリ
+.. 'Key Manager' タイプに 'onboard ' が表示されていることを確認し 'OKM 情報を手動でバックアップします
+.. advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
+.. コマンドを入力して、キー管理バックアップ情報を表示します。「 securitykey-manager onboard show-backup 」
+.. バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。
+.. admin モードに戻ります。 'set-priv admin'
+.. ノードは安全にシャットダウンできます。
+
+
+
+
+
+
+=== NSE の設定を確認
+
+. キー管理サーバに格納されている認証キーのキー ID を表示します。「 securitykey-manager query
++
+** キー・マネージャのタイプに「 external 」と表示され ' 「 restored 」列に「 yes 」と表示されている場合は ' 障害ノードをシャットダウンしても安全です
+** 「キー・マネージャ」タイプに「 onboard 」と表示され、「 restored 」列に「 yes 」と表示されている場合は、いくつかの追加手順を実行する必要があります。
+** 「キー・マネージャ」タイプに「外部」が表示され、「復元」列に「はい」以外の項目が表示されている場合は、いくつかの追加手順を実行する必要があります。
+** 「キー・マネージャ」タイプに「外部」が表示され、「復元」列に「はい」以外の項目が表示されている場合は、いくつかの追加手順を実行する必要があります。
+
+
+. 'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' と表示されている場合は 'OKM 情報を手動でバックアップします
++
+.. advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
+.. コマンドを入力して、キー管理情報「 securitykey-manager onboard show-backup 」を表示します
+.. バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。
+.. admin モードに戻ります。 'set-priv admin'
+.. ノードは安全にシャットダウンできます。
+
+
+. 「キー・マネージャ」タイプに「外部」が表示され、「リストア済み」列に「はい」以外の項目が表示される場合：
++
+.. onboard security key-manager sync コマンド「 security key-manager external sync 」を入力します
++
+コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。
+
++
+http://mysupport.netapp.com/["mysupport.netapp.com"]
+
+.. すべての認証キーのリストアされたカラムが 'yes' になっていることを確認しますつまり 'securitykey-manager key query' です
+.. ノードは安全にシャットダウンできます。
+
+
+. 'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' 以外の項目が表示される場合は ' 次の手順を実行します
++
+.. onboard security key-manager sync コマンド「 security key-manager sync 」を入力します
++
+プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。
+
++
+http://mysupport.netapp.com/["mysupport.netapp.com"]
+
+.. すべての認証キーについて 'restored' カラムに yes と表示されていることを確認しますセキュリティ・キーマネージャ・キー・クエリ
+.. 'Key Manager' タイプに 'onboard ' が表示されていることを確認し 'OKM 情報を手動でバックアップします
+.. advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
+.. コマンドを入力して、キー管理バックアップ情報を表示します。「 securitykey-manager onboard show-backup 」
+.. バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。
+.. admin モードに戻ります。 'set-priv admin'
+.. ノードは安全にシャットダウンできます。
+
+
+

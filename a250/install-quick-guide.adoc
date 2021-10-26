@@ -1,0 +1,20 @@
+---
+permalink: a250/install-quick-guide.html 
+sidebar: sidebar 
+keywords: aff, a250, aff a250, guide, graphic, instruction, installation, system, rack, cable, cabling, system, bring-up, netapp, system, quick guide 
+summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。 
+---
+= クイックガイド - AFF A250
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。
+
+設置およびセットアップ手順 _PDF ポスター：
+
+* 英語 https://library.netapp.com/ecm/ecm_download_file/ECMLP2870798["AFF A250 のセットアップガイド"]
+* 日本語 https://library.netapp.com/ecm/ecm_download_file/ECMLP2874690["AFF A250 システムのインストールとセットアップの手順"]
+* 中国語： https://library.netapp.com/ecm/ecm_download_file/ECMLP2874693["AFF A250 システムのインストールとセットアップの手順"]
+

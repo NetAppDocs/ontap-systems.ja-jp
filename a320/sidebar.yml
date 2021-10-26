@@ -1,0 +1,85 @@
+---
+section: a320
+title: AFF A320 システム
+url: "/a320/index.html"
+entries:
+- title: 設置とセットアップ
+  pdf-filename: AFF A320 の設置とセットアップ
+  entries:
+  - title: インストールとセットアップを選択します
+    url: "/a320/install-setup.html"
+  - title: クイックステップ
+    url: "/a320/install-quick-guide.html"
+  - title: ビデオの手順
+    url: "/a320/install-videos.html"
+  - title: 詳細な手順
+    url: "/a320/install-detailed-guide.html"
+- title: メンテナンス
+  pdf-filename: AFF A320 は維持されます
+  entries:
+  - title: ブートメディア
+    pdf-filename: AFF A320 ブートメディア
+    entries:
+    - title: 概要
+      url: "/a320/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/a320/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a320/bootmedia-shutdown.html"
+    - title: ブートメディアを交換します
+      url: "/a320/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/a320/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/a320/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/a320/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: AFF A320 シャーシ
+    entries:
+    - title: 概要
+      url: "/a320/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a320/chassis-replace-shutdown.html"
+    - title: ハードウェアを交換します
+      url: "/a320/chassis-replace-move-hardware.html"
+    - title: 交換後の処理
+      url: "/a320/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラモジュール
+    pdf-filename: AFF A320 コントローラモジュール
+    entries:
+    - title: 概要
+      url: "/a320/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a320/controller-replace-impaired-controller-shutdown.html"
+    - title: コントローラモジュールを交換します
+      url: "/a320/controller-replace.html"
+    - title: システム設定を復元します
+      url: "/a320/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続
+      url: "/a320/controller-repalce-recable-reassign-disks.html"
+    - title: システムのリストアを完了
+      url: "/a320/controller-replace-complete-system-restoration.html"
+    - title: 交換後の処理
+      url: "/a320/controller-replace-complete-rma.html"
+  - title: DIMM
+    pdf-filename: AFF A320 DIMM
+    url: "/a320/dimm-replace.html"
+  - title: ファン
+    pdf-filename: AFF A320 ファンモジュール
+    url: "/a320/fan-swap-out.html"
+  - title: NVDIMM
+    pdf-filename: AFF A32 NVDIMM
+    url: "/a320/nvdimm-replace.html"
+  - title: NVDIMM バッテリ
+    pdf-filename: AFF A320 NVDIMM バッテリ
+    url: "/a320/nvdimm-battery-replace.html"
+  - title: PCIe カード
+    pdf-filename: AFF A320 PCIe カード
+    url: "/a320/pci-cards-and-risers-replace.html"
+  - title: 電源装置
+    pdf-filename: AFF A320 電源装置
+    url: "/a320/power-supply-replace.html"
+  - title: リアルタイムクロックバッテリ
+    pdf-filename: AFF A320 リアルタイムクロックバッテリ
+    url: "/a320/rtc-battery-replace.html"

@@ -1,0 +1,32 @@
+---
+permalink: fas500f/controller-replace-overview.html 
+sidebar: sidebar 
+keywords: fas500f, prerequisite, replace the controller module 
+summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。 
+---
+= コントローラモジュール FAS500f を交換してください
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。
+
+* すべてのドライブシェルフが適切に動作している必要があります。
+* MetroCluster 構成のシステムの場合は、を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["正しいリカバリ手順の選択"] この手順の使用が必要かどうかを判断するには、次の手順を実行
+* 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。
+* コントローラモジュールを、同じモデルタイプのコントローラモジュールと交換する必要があります。コントローラモジュールを交換するだけでは、システムをアップグレードすることはできません。
+* この手順の一部としてドライブやドライブシェルフを変更することはできません。
+* この手順では、ブートデバイスを障害ノードから _replacement _ node に移動して、 _replacement _ node は古いコントローラモジュールと同じバージョンの ONTAP でブートします。
+* これらの手順のコマンドを正しいシステムに適用することが重要です。
++
+** impaired_node は、交換するノードです。
+** replacement _node は、障害ノードと交換する新しいノードです。
+** healthy_node はサバイバーノードです。
+
+
+* ノードのコンソール出力を必ずテキストファイルにキャプチャする必要があります。
++
+これにより、手順の記録が作成され、交換プロセス中に発生する可能性のある問題をトラブルシューティングすることができます。
+
+

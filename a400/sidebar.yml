@@ -1,0 +1,85 @@
+---
+section: a400
+title: AFF A400 システム
+url: "/a400/index.html"
+entries:
+- title: 設置とセットアップ
+  pdf-filename: AFF A400 の設置とセットアップ
+  entries:
+  - title: インストールとセットアップを選択します
+    url: "/a400/install-setup.html"
+  - title: クイックステップ
+    url: "/a400/install-quick-guide.html"
+  - title: ビデオの手順
+    url: "/a400/install-videos.html"
+  - title: 詳細な手順
+    url: "/a400/install-detailed-guide.html"
+- title: メンテナンス
+  pdf-filename: AFF A400 は引き続き使用できます
+  entries:
+  - title: ブートメディア
+    pdf-filename: AFF A400 ブートメディア
+    entries:
+    - title: 概要
+      url: "/a400/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/a400/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a400/bootmedia-impaired-controller-shutdown.html"
+    - title: ブートメディアを交換します
+      url: "/a400/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/a400/bootmedia-recovery-image-boot-options.html"
+    - title: MetroCluster の設定をスイッチバックします
+      url: "/a400/bootmedia-2n-mcc-switchback.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/a400/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/a400/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: AFF A400 シャーシ
+    entries:
+    - title: 概要
+      url: "/a400/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a400/chassis-replace-shutdown.html"
+    - title: ハードウェアを交換します
+      url: "/a400/chassis-replace-move-hardware.html"
+    - title: 交換後の処理
+      url: "/a400/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラモジュール
+    pdf-filename: AFF A400 コントローラモジュール
+    entries:
+    - title: 概要
+      url: "/a400/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a400/controller-replace-shutdown.html"
+    - title: コントローラモジュールを交換します
+      url: "/a400/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/a400/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続します
+      url: "/a400/controller-replace-recable-reassign-disks.html"
+    - title: システムのリストアを完了
+      url: "/a400/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    pdf-filename: AFF A400 DIMM
+    url: "/a400/dimm-replace.html"
+  - title: ファン
+    pdf-filename: AFF A400 ファンモジュール
+    url: "/a400/fan-swap-out.html"
+  - title: NVDIMM バッテリ
+    pdf-filename: AFF A400 NVDIMM バッテリ
+    url: "/a400/nvdimm-battery-replace.html"
+  - title: NVDIMM
+    pdf-filename: AFF A320 NVDIMM
+    url: "/a400/nvdimm-replace.html"
+  - title: PCIe カードまたはメザニンカード
+    pdf-filename: AFF A400 PCIe またはメザニンカード
+    url: "/a400/pci-cards-and-risers-replace.html"
+  - title: 電源装置
+    pdf-filename: AFF A400 の電源装置です
+    url: "/a400/power-supply-replace.html"
+  - title: リアルタイムクロックバッテリ
+    pdf-filename: AFF A400 リアルタイムクロックバッテリ
+    url: "/a400/rtc-battery-replace.html"

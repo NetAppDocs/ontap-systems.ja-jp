@@ -1,0 +1,14 @@
+---
+permalink: fas8200/install-worksheet-linkout.html 
+sidebar: sidebar 
+keywords: fas8200, install, worksheet 
+summary: このワークシートを使用して、 ONTAP クラスタの構成に必要なサイト固有の IP アドレスやその他の情報を収集し、記録できます。 
+---
+= クラスタ設定ワークシート - FAS8200
+:icons: font
+:imagesdir: ../media/
+
+
+このワークシートを使用して、 ONTAP クラスタの構成に必要なサイト固有の IP アドレスやその他の情報を収集し、記録できます。
+
+link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["クラスタ設定ワークシート"]

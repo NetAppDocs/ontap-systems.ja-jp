@@ -1,11 +1,11 @@
 ---
+layout: landing-page 
 sidebar: sidebar 
 permalink: index.html 
-keywords: aggregate, relocation, moving, manual, upgrade, relocate 
-lead: This library provides instructions to upgrade controller hardware for storage systems using the aggregate relocation method. 
-summary: アグリゲートの再配置を使用してコントローラハードウェアをアップグレードする 
+keywords: aff fas 
+summary: ネットアップの AFF および FAS ストレージシステムは、業界最先端のデータ管理機能を備えた、エンタープライズクラスのスケールアウトオールフラッシュストレージまたはハイブリッドストレージです。このサイトのドキュメントを使用して、 AFF または FAS システムとそのストレージシェルフ、クラスタスイッチをインストール、拡張、アップグレード、保守します。 
 ---
-= ONTAP 9.8 システムのマニュアル
+= AFF および FAS システムのマニュアル
 :hardbreaks:
 :nofooter: 
 :icons: font

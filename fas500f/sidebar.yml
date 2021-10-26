@@ -1,0 +1,74 @@
+---
+section: fas500f
+title: FAS500f システム
+url: "/fas500f/index.html"
+entries:
+- title: 設置とセットアップ
+  pdf-filename: FAS500f のインストールとセットアップ
+  entries:
+  - title: インストールとセットアップを選択します
+    url: "/fas500f/install-setup.html"
+  - title: クイックステップ
+    url: "/fas500f/install-quick-guide.html"
+  - title: ビデオの手順
+    url: "/fas500f/install-videos.html"
+  - title: 詳細な手順
+    url: "/fas500f/install-detailed-guide.html"
+- title: メンテナンス
+  pdf-filename: FAS500f メンテナンス
+  entries:
+  - title: ブートメディア
+    pdf-filename: FAS500f ブートメディア
+    entries:
+    - title: 概要
+      url: "/fas500f/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/fas500f/bootmedia-encryption-preshutdown-checks.html"
+    - title: ノードをシャットダウン
+      url: "/fas500f/bootmedia-shutdown.html"
+    - title: ブートイメージを交換します
+      url: "/fas500f/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/fas500f/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/fas500f/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/fas500f/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: FAS500f シャーシ
+    entries:
+    - title: 概要
+      url: "/fas500f/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/fas500f/chassis-replace-shutdown.html"
+    - title: ハードウェアを交換します
+      url: "/fas500f/chassis-replace-move-hardware.html"
+    - title: 交換後の処理
+      url: "/fas500f/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラ
+    pdf-filename: FAS500f コントローラモジュール
+    entries:
+    - title: 概要
+      url: "/fas500f/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/fas500f/controller-replace-shutdown.html"
+    - title: コントローラモジュールを交換します
+      url: "/fas500f/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/fas500f/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続
+      url: "/fas500f/controller-replace-recable-reassign-disks.html"
+    - title: システムのリストアを完了
+      url: "/fas500f/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/fas500f/dimm-replace.html"
+  - title: ファン
+    url: "/fas500f/fan-replace.html"
+  - title: メザニンカード
+    url: "/fas500f/mezzanine-replace.html"
+  - title: NVMEM バッテリ
+    url: "/fas500f/nvmem-battery-replace.html"
+  - title: 電源装置
+    url: "/fas500f/power-supply-replace.html"
+  - title: リアルタイムクロックバッテリ
+    url: "/fas500f/rtc-battery-replace.html"

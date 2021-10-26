@@ -1,0 +1,70 @@
+---
+section: fas2600
+title: FAS2600 システム
+url: "/fas2600/index.html"
+entries:
+- title: 設置とセットアップ
+  pdf-filename: FAS2600 の設置とセットアップ
+  entries:
+  - title: クラスタ設定ワークシート
+    url: "/fas2600/install-worksheet-linkout.html"
+  - title: クイックステップ
+    url: "/fas2600/install-setup-linkout.html"
+  - title: ビデオの手順
+    url: "/fas2600/install-video-linkout.html"
+- title: メンテナンス
+  pdf-filename: FAS2600 のメンテナンス
+  entries:
+  - title: ブートメディア
+    pdf-filename: FAS2600 ブートメディア
+    entries:
+    - title: 概要
+      url: "/fas2600/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/fas2600/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/fas2600/bootmedia-shutdown.html"
+    - title: ブートメディアを交換します
+      url: "/fas2600/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/fas2600/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/fas2600/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/fas2600/bootmedia-complete-rma.html"
+  - title: キャッシングモジュール
+    url: "/fas2600/caching-module-replace.html"
+  - title: シャーシ
+    pdf-filename: FAS2600 シャーシ
+    entries:
+    - title: 概要
+      url: "/fas2600/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/fas2600/chassis-replace-shutdown.html"
+    - title: ハードウェアを交換します
+      url: "/fas2600/chassis-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/fas2600/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラモジュール
+    pdf-filename: FAS2600 コントローラモジュール
+    entries:
+    - title: 概要
+      url: "/fas2600/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/fas2600/controller-replace-shutdown.html"
+    - title: コントローラモジュールを交換します
+      url: "/fas2600/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/fas2600/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続
+      url: "/fas2600/controller-replace-recable-reassign-disks.html"
+    - title: システムのリストアを完了
+      url: "/fas2600/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/fas2600/dimm-replace.html"
+  - title: NVMEM バッテリ
+    url: "/fas2600/nvmem-nvram-battery-replace.html"
+  - title: 電源装置
+    url: "/fas2600/power-supply-swap-out.html"
+  - title: リアルタイムクロックバッテリ
+    url: "/fas2600/rtc-battery-replace.html"

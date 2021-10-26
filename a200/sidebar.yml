@@ -1,0 +1,72 @@
+---
+section: a200
+title: AFF A200 システム
+url: "/a200/index.html"
+entries:
+- title: 設置とセットアップ
+  pdf-filename: AFF A200 の設置とセットアップ
+  entries:
+  - title: クラスタ設定ワークシート
+    url: "/a200/install-worksheet-linkout.html"
+  - title: クイックステップ
+    url: "/a200/install-setup-linkout.html"
+  - title: ビデオの手順
+    url: "/a200/install-video-linkout.html"
+- title: メンテナンス
+  pdf-filename: AFF A200 は引き続き使用できます
+  entries:
+  - title: ブートメディア
+    pdf-filename: AFF A200 ブートメディア
+    entries:
+    - title: 概要
+      url: "/a200/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/a200/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a200/bootmedia-shutdown.html"
+    - title: ブートメディアを交換します
+      url: "/a200/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/a200/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/a200/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/a200/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: AFF A200 シャーシ
+    entries:
+    - title: 概要
+      url: "/a200/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a200/chassis-replace-shutdown.html"
+    - title: ハードウェアを交換します
+      url: "/a200/chassis-replace-move-hardware.html"
+    - title: 構成をリストアする
+      url: "/a200/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラモジュール
+    pdf-filename: AFF A200 コントローラモジュール
+    entries:
+    - title: 概要
+      url: "/a200/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a200/controller-replace-shutdown.html"
+    - title: ハードウェアを交換します
+      url: "/a200/controller-replace-move-hardware.html"
+    - title: 構成をリストアする
+      url: "/a200/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続
+      url: "/a200/controller-replace-recable-reassign-disks.html"
+    - title: システムのリストアを完了
+      url: "/a200/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    pdf-filename: AFF A200 DIMM
+    url: "/a200/dimm-replace.html"
+  - title: NVMEM バッテリ
+    pdf-filename: AFF A200 NVMEM バッテリ
+    url: "/a200/nvmem-nvram-battery-replace.html"
+  - title: 電源装置
+    pdf-filename: AFF A200 電源装置
+    url: "/a200/power-supply-swap-out.html"
+  - title: リアルタイムクロックバッテリ
+    pdf-filename: AFF A200 リアルタイムクロックバッテリ
+    url: "/a200/rtc-battery-replace.html"

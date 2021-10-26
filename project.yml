@@ -2,10 +2,29 @@
 settings:
   name: ONTAP Systems
   pdf_enabled: true
-  langs: ja-jp,us-en,zh-cn
   harmony_enabled: true
+  langs: ja-jp,us-en,zh-cn
 sidebar:
   entries:
-  - title: ONTAP 9.8 システムのマニュアル
+  - title: ホーム
     url: "/index.html"
-  - section: switch-cisco-9336c-shared
+  - section: a200
+  - section: fas2700
+  - section: a250
+  - section: a300
+  - section: a320
+  - section: a400
+  - section: fas9000
+  - section: a700s
+  - section: a800
+  - section: c190
+  - section: fas2600
+  - section: fas500f
+  - section: fas8200
+  - section: fas8300
+  - section: platform-supplemental
+  - section: ns224
+  - section: sas3
+  - section: other
+  - title: 法的通知
+    url: "/legal-notices.html"

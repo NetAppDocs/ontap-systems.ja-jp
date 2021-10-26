@@ -1,0 +1,49 @@
+---
+indexpage:
+  tiles:
+  - title: はじめに 
+    links:
+    - title: ONTAP リリースノート
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+    - title: ストレージデータシート
+      url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
+  - title: 設置とセットアップ
+    links:
+    - title: シェルフをホットアドします
+      url: "/hot-add-shelf.html"
+    - title: シェルフ ID を変更します
+      url: "/change-shelf-id.html"
+    - title: シェルフをスイッチ接続型ストレージとしてケーブル接続
+      url: "/cable-as-switch-attached.html"
+  - title: メンテナンス
+    links:
+    - title: ブートメディア
+      url: "/service-replace-boot-media.html"
+    - title: DIMM
+      url: "/service-replace-dimm.html"
+    - title: ドライブ
+      url: "/service-replace-drive.html"
+    - title: ファン
+      url: "/service-replace-fan.html"
+    - title: シェルフをホットリムーブする
+      url: "/hot-remove-shelf.html"
+    - title: nsm モジュール
+      url: "/service-replace-nsm100.html"
+    - title: 電源装置
+      url: "/service-replace-power-supply.html"
+    - title: RTC バッテリ
+      url: "/service-replace-rtc-battery.html"
+  - title: リソースの追加
+    links:
+    - title: ONTAP のドキュメント
+      url: https://docs.netapp.com/us-en/ontap/
+    - title: NetApp Hardware Universe の略
+      url: https://hwu.netapp.com/home/index
+    - title: NetApp Active IQ Config Advisor の略
+      url: https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor
+    - title: NetApp Interoperability Matrix Tool で確認できます
+      url: https://mysupport.netapp.com/matrix/#welcome
+    - title: ネットアップのサポートナレッジベース
+      url: https://kb.netapp.com/
+    - title: ネットアップコミュニティ
+      url: https://community.netapp.com/

@@ -1,0 +1,37 @@
+---
+permalink: sas3/overview-cabling-rules-examples.html 
+sidebar: sidebar 
+keywords: disk, shelves, shelf, iom12, module, single-controller, configuration, support, platform, sas, cabling, cable, rule, controller, shelf-to-shelf, connection, rule, controller-to-stack, mini-sas, hd, optical, cable, rule, sas cabling rules 
+summary: IOM12 モジュールを搭載した SAS ドライブシェルフをストレージシステムにケーブル接続する際に役立つ、次の SAS ケーブル接続ルール、例、およびワークシートを利用できます。 
+---
+= SAS ケーブル接続ルール、ワークシート、および例 - IOM12 モジュールを搭載したシェルフ
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+IOM12 モジュールを搭載した SAS ドライブシェルフをストレージシステムにケーブル接続する際には、必要に応じて、利用可能な SAS ケーブル接続ルール、ワークシート、およびサンプルコンテンツを使用できます。
+
+* SAS ケーブル接続ルール *
+
+* link:install-cabling-rules.html#configuration-rules["設定"]
+* link:install-cabling-rules.html#controller-slot-numbering-rules["コントローラのスロット番号"]
+* link:install-cabling-rules.html#shelf-to-shelf-connection-rules["シェルフ / シェルフ間の接続"]
+* link:install-cabling-rules.html#controller-to-stack-connection-rules["コントローラ / スタック間の接続"]
+* link:install-cabling-rules.html#mini-sas-hd-sas-optical-cable-rules["Mini-SAS HD SAS 光ケーブル"]
+
+
+* ワークシートと例のケーブル接続 *
+
+* link:install-cabling-worksheets-examples-multipath.html["一般的なマルチパス HA 構成"]
+* link:install-cabling-worksheets-examples-fas2600.html["一般的な AFF A200 、 AFF A220 、 FAS2600 、 FAS2700 構成"]
+* link:install-worksheets-examples-quadpath.html["クアッドパス HA 構成"]
+
+
+* ケーブル接続ワークシートテンプレート *
+
+* link:install-cabling-worksheet-template-multipath.html["マルチパス接続"]
+* link:install-cabling-worksheet-template-quadpath.html["クアッドパス接続"]
+* link:install-cabling-worksheets-how-to-read-multipath.html["マルチパス接続用のワークシートの読み取り方法"]
+* link:install-cabling-worksheets-how-to-read-quadpath.html["クアッドパス接続用のワークシートの読み取り方法"]
+

@@ -1,0 +1,55 @@
+---
+section: sas3
+title: SAS シェルフと IOM12 モジュール
+url: "/sas3/index.html"
+entries:
+- title: 設置とケーブル接続
+  pdf-filename: IOM12 モジュールを搭載したシェルフの設置とケーブル接続
+  entries:
+  - title: 新しいシステム用のシェルフを設置してケーブル接続します
+    url: "/sas3/install-new-system.html"
+  - title: シェルフをホットアドします
+    url: "/sas3/install-hot-add-shelf.html"
+  - title: IOM12 シェルフを IOM6 シェルフのスタックにホットアドします
+    url: "/sas3/iom12-hot-add-mix.html"
+  - title: シェルフ ID を変更します
+    url: "/sas3/install-change-shelf-id.html"
+  - title: SAS ケーブル接続ルール、ワークシート、および例
+    entries:
+    - title: 概要
+      url: "/sas3/overview-cabling-rules-examples.html"
+    - title: SAS ケーブル接続ルール
+      url: "/sas3/install-cabling-rules.html"
+    - title: 一般的なマルチパス HA 構成のケーブル接続ワークシートと例
+      url: "/sas3/install-cabling-worksheets-examples-multipath.html"
+    - title: 一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 構成のケーブル接続ワークシートと例
+      url: "/sas3/install-cabling-worksheets-examples-fas2600.html"
+    - title: 2 つのクアッドポート SAS HBA を使用したクアッドパス HA 構成のケーブル接続ワークシートと例
+      url: "/sas3/install-worksheets-examples-quadpath.html"
+    - title: マルチパス接続用のケーブル接続ワークシートテンプレート
+      url: "/sas3/install-cabling-worksheet-template-multipath.html"
+    - title: クアッドパス接続用のケーブル接続ワークシートテンプレート
+      url: "/sas3/install-cabling-worksheet-template-quadpath.html"
+    - title: マルチパス接続用にワークシートをケーブル接続する方法
+      url: "/sas3/install-cabling-worksheets-how-to-read-multipath.html"
+    - title: クアッドパス接続でワークシートを読み取り、ケーブルを接続する方法
+      url: "/sas3/install-cabling-worksheets-how-to-read-quadpath.html"
+- title: メンテナンス
+  pdf-filename: IOM12 モジュールを搭載したシェルフは引き続き使用できます
+  entries:
+  - title: DS224C または DS212C シェルフ内のディスクドライブ
+    url: "/sas3/service-hot-swap-drive-ds224c-ds212c.html"
+  - title: DS460C シェルフ内のディスクドライブ
+    url: "/sas3/service-hot-swap-drive-ds460c.html"
+  - title: DS460C シェルフ内のドライブドロワー
+    url: "/sas3/service-replace-drawer-ds460c.html"
+  - title: DS460C シェルフのファンモジュール
+    url: "/sas3/service-replace-fan-ds460c.html"
+  - title: シェルフをホットリムーブします
+    url: "/sas3/hot-remove-shelf.html"
+  - title: IOM12 モジュール
+    url: "/sas3/service-hot-swap-iom.html"
+  - title: 電源装置
+    url: "/sas3/service-hot-swap-power-supply.html"
+  - title: シェルフ LED のステータス状態
+    url: "/sas3/service-monitor-leds.html"

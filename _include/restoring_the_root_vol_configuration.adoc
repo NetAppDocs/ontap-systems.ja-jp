@@ -1,0 +1,43 @@
+= 
+
+
+ルートボリュームからブートデバイスに構成情報をリストアする必要があります。
+
+これらの手順は、 node3 と node4 で実行する必要があります。まず一方のノードでそれぞれの手順を完了してから、次の手順に進みます。
+
+.手順
+. LOADER プロンプトからブートメニューにアクセスします：「 boot_ontap menu 」
+. ブート・メニューから（ 6 ） Update flash from backup config を選択し、続行するかどうかを確認するプロンプトが表示されたら「 y 」と入力します。
++
+[listing]
+----
+Please choose one of the following:
+
+(1) Normal Boot.
+(2) Boot without /etc/rc.
+(3) Change password.
+(4) Clean configuration and initialize all disks.
+(5) Maintenance mode boot.
+(6) Update flash from backup config.
+(7) Install new software first.
+(8) Reboot node.
+(9) Configure Advanced Drive Partitioning.
+Selection (1-9)? 6
+
+This will replace all flash-based configuration with the last backup to
+disks. Are you sure you want to continue?: y
+----
++
+フラッシュの更新プロセスが数分間実行され、システムがリブートします。
+
+. システム ID の不一致を確認するプロンプトが表示されたら、「 y 」と入力します。
++
+[listing]
+----
+WARNING: System id mismatch. This usually occurs when replacing CF or NVRAM cards!
+Override system id? {y|n} [n] y
+----
++
+起動シーケンスは正常に実行されます。
+
+

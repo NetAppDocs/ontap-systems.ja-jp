@@ -1,0 +1,29 @@
+---
+permalink: a320/install-videos.html 
+sidebar: sidebar 
+keywords: aff, a320, aff a320, video, rack, cable, system, system, manager, guide, setup, configuration, hardware, installation, cabling, hardware installation and cabling, perform, end-to-end, software, performing end-to-end software configuration 
+summary: ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を紹介するビデオを 2 種類紹介します。 
+---
+= ビデオ - AFF A320
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を紹介するビデオを 2 種類紹介します。
+
+
+
+== ビデオ 1 ：ハードウェアの設置とケーブル接続
+
+次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
+
+https://www.youtube.com/embed/lLuiL0js7dI?rel=0["ネットアップのビデオ： AFF A320 Installation and setup"]
+
+
+
+== ビデオ 2 ：エンドツーエンドのソフトウェア設定の実行
+
+次のビデオでは、 ONTAP 9.2 以降を実行するシステムのエンドツーエンドのソフトウェア設定を示します。
+
+https://www.youtube.com/embed/WAE0afWhj1c?rel=0["ネットアップのビデオ： Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2"]

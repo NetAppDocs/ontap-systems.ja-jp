@@ -1,0 +1,74 @@
+---
+section: a300
+title: AFF A300 システム
+url: "/a300/index.html"
+entries:
+- title: 設置とセットアップ
+  pdf-filename: AFF A300 インストールおよびセットアップ
+  entries:
+  - title: クラスタ設定ワークシート
+    url: "/a300/install-worksheet-linkout.html"
+  - title: クイックステップ
+    url: "/a300/install-setup-linkout.html"
+  - title: ビデオの手順
+    url: "/a300/install-video-linkout.html"
+- title: メンテナンス
+  pdf-filename: AFF A300 の維持
+  entries:
+  - title: ブートメディア
+    pdf-filename: AFF A300 ブートメディア
+    entries:
+    - title: 概要
+      url: "/a300/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/a300/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a300/bootmedia-impaired-controller-shutdown.html"
+    - title: ブートメディアを交換します
+      url: "/a300/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/a300/bootmedia-recovery-image-boot-options.html"
+    - title: MetroCluster 構成をスイッチバックします
+      url: "/a300/bootmedia-2n-mcc-switchback.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/a300/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/a300/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: AFF A300 シャーシ
+    entries:
+    - title: 概要
+      url: "/a300/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a300/chassis-replace-shutdown.html"
+    - title: ハードウェアを交換します
+      url: "/a300/chassis-replace-move-hardware.html"
+    - title: 構成をリストアする
+      url: "/a300/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラモジュール
+    pdf-filename: AFF A300 コントローラモジュール
+    entries:
+    - title: 概要
+      url: "/a300/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a300/controller-replace-shutdown.html"
+    - title: コントローラモジュールを交換します
+      url: "/a300/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/a300/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続
+      url: "/a300/controller-replace-recable-reassign-disks.html"
+    - title: 交換後の処理
+      url: "/a300/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/a300/dimm-replace.html"
+  - title: ファン
+    url: "/a300/fan-swap-out.html"
+  - title: NVMEM バッテリ
+    url: "/a300/nvmem-nvram-battery-replace.html"
+  - title: PCIe カード
+    url: "/a300/pci-cards-and-risers-replace.html"
+  - title: 電源装置
+    url: "/a300/power-supply-swap-out.html"
+  - title: リアルタイムクロックバッテリ
+    url: "/a300/rtc-battery-replace.html"

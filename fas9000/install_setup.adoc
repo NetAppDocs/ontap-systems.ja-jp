@@ -1,0 +1,27 @@
+---
+permalink: fas9000/install-setup.html 
+sidebar: sidebar 
+keywords: fas9000, aff a700, install, setup, initial, configuration 
+summary: システムを設置してセットアップします。 
+---
+= はじめに：設置とセットアップを選択してください
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+新しいストレージシステムの設置およびセットアップを進めるにあたって、参照するコンテンツの形式を選択できます。
+
+* link:../fas9000/install-quick-guide.html["クイックステップ"]
++
+ステップバイステップの手順と追加コンテンツへのライブリンクが記載された PDF 形式のガイドです。
+
+* link:../fas9000/install-videos.html["ビデオの手順"]
++
+手順を追ったビデオでご確認ください。
+
+* link:../fas9000/install-detailed-guide.html["詳細な手順"]
++
+ステップバイステップの手順と追加コンテンツへのライブリンクが記載されたオンライン形式のガイドです。
+
+

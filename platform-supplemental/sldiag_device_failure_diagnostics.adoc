@@ -1,0 +1,177 @@
+---
+permalink: platform-supplemental/sldiag-device-failure-diagnostics.html 
+sidebar: sidebar 
+keywords: run, diagnostic, help, access, device, intermittent, device, unavailable, storage, system, failure, run device failure diagnostic 
+summary: 診断プログラムを実行すると、特定のデバイスへのアクセスが断続的になる理由や、ストレージシステムでデバイスが使用できなくなる理由の特定に役立ちます。 
+---
+= デバイス障害診断を実行します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+診断プログラムを実行すると、特定のデバイスへのアクセスが断続的になる理由や、ストレージシステムでデバイスが使用できなくなる理由の特定に役立ちます。
+
+. ストレージ・システム・プロンプトで、 LOADER プロンプト「 halt 」に切り替えます
+. LOADER プロンプトで「 boot_diags 」と入力します
++
+
+NOTE: システムレベルの診断が正しく機能するためには、このコマンドを LOADER プロンプトから実行する必要があります。boot_diags コマンドは、システムレベルの診断専用に設計された特別なドライバを実行します。
+
+. 次のコマンドを入力して、問題の原因となっているデバイスの診断を実行します。 'diag device run [-dev devtype|MB|slotnum][-name device]
++
+** -dev_devtype_- テストするデバイスのタイプを指定します
++
+*** 「 ata 」は、 Advanced Technology Attachment デバイスです。
+*** 「 bootmedia 」は、システム起動デバイスです。
+*** 「 cna 」は、ネットワークまたはストレージデバイスに接続されていない統合型ネットワークアダプタです。
+*** 「 env 」はマザーボード環境です。
+*** 「 fcache 」は、 Performance Acceleration Module 2 とも呼ばれる Flash Cache アダプタです。
+*** fcal は ' ストレージ・デバイスまたはファイバ・チャネル・ネットワークに接続されていないファイバ・チャネル・アービトレート型ループ・デバイスです
+*** 'FCVI' はファイバ・チャネル・ネットワークに接続されていないファイバ・チャネル・仮想インターフェイスです
+*** 相互接続または「 nvram-ib 」は、高可用性インターフェイスです。
+*** 「 m 」はシステムメモリです。
+*** 「 nic 」は、ネットワークに接続されていないネットワーク・インターフェイス・カードです。
+*** 「 nvram 」は不揮発性 RAM です。
+*** 「 nvmem 」は、 NVRAM とシステムメモリの組み合わせです。
+*** 「 As 」は、ディスクシェルフに接続されていないシリアル接続 SCSI デバイスです。
+*** 「 erviceproc 」はサービスプロセッサです。
+*** 「ストレージ」とは、ディスクシェルフに接続された ATA 、 FC-AL 、または SAS インターフェイスです。
+*** to' は NIC の一種である TCP オフロードエンジンです
+
+
+** 「 m 」は、すべてのマザーボードデバイスをテストすることを指定します。
+** 'slot-slotnum_ は、特定のスロット番号のデバイスをテストすることを指定します。
+** `-name_device_` は、特定のデバイスクラスとタイプを指定します。
+
+
+. 次のコマンドを入力して、テストのステータスを表示します。「 diag device status 」
++
+テストが実行中の間、ストレージシステムは次の出力を表示します。
+
++
+[listing]
+----
+There are still test(s) being processed.
+----
++
+すべてのテストが完了すると、デフォルトで次の応答が表示されます。
+
++
+[listing]
+----
+*> <SLDIAG:_ALL_TESTS_COMPLETED>
+----
+. 次のコマンドを入力して、ハードウェアの問題を特定します。 `diag device status [-dev devtype|MB|slotnum][-name_device_]-long -state failed`
++
+次の例は、 FC-AL アダプタをテストし、障害の完全なステータスを表示する方法を示しています。
+
++
+[listing]
+----
+
+*> **sldiag device status fcal -long -state failed**
+
+TEST START ------------------------------------------
+DEVTYPE: fcal
+NAME: Fcal Loopback Test
+START DATE: Sat Jan  3 23:10:56 GMT 2009
+
+STATUS: Completed
+Starting test on Fcal Adapter: 0b
+Started gathering adapter info.
+Adapter get adapter info OK
+Adapter fc_data_link_rate: 1Gib
+Adapter name: QLogic 2532
+Adapter firmware rev: 4.5.2
+Adapter hardware rev: 2
+
+Started adapter get WWN string test.
+Adapter get WWN string OK wwn_str: 5:00a:098300:035309
+
+Started adapter interrupt test
+Adapter interrupt test OK
+
+Started adapter reset test.
+Adapter reset OK
+
+Started Adapter Get Connection State Test.
+Connection State: 5
+Loop on FC Adapter 0b is OPEN
+
+Started adapter Retry LIP test
+Adapter Retry LIP OK
+
+ERROR: failed to init adaptor port for IOCTL call
+
+ioctl_status.class_type = 0x1
+
+ioctl_status.subclass = 0x3
+
+ioctl_status.info = 0x0
+ Started INTERNAL LOOPBACK:
+INTERNAL LOOPBACK   OK
+Error Count: 2  Run Time: 70 secs
+>>>>> ERROR, please ensure the port has a shelf or plug.
+END DATE: Sat Jan  3 23:12:07 GMT 2009
+
+LOOP: 1/1
+TEST END --------------------------------------------
+----
++
+[cols="1,2"]
+|===
+| システムレベルの診断のテスト結果 | 作業 
+
+
+ a| 
+テストが失敗しました
+ a| 
+問題の原因を特定します
+
+.. 次のコマンドを入力して保守モードを終了します :halt
+.. クリーンシャットダウンを実行し、電源装置の接続を解除します。
+.. システムレベルの診断を実行するための考慮事項をすべて確認するとともに、ケーブルがしっかりと接続されているか、ハードウェアコンポーネントがストレージシステムに適切に取り付けられているかを確認します。
+.. 電源装置を再接続し、ストレージシステムの電源をオンにします。
+.. デバイス障害診断の実行の手順 1~5 を繰り返します。
+
+
+
+
+ a| 
+では同じテストエラーが発生しています
+ a| 
+テクニカルサポートから、一部のテストのデフォルト設定を変更して問題を特定することを推奨される場合があります。
+
+.. 次のコマンドを入力して、ストレージシステム上で選択するデバイスまたはデバイスタイプを変更します。 'diag device modify [-devtype_|MB|slot_slotnum_][-name device] [-selection_enable|disable|default|only_]`+-````````selection_enable|disable|default|only_` を使用すると、指定したデバイスタイプまたは名前付きデバイスのデフォルト選択を有効、無効、または最初にしたデバイスだけを無効にすることができます。
+.. 次のコマンドを入力して、テストが変更されたことを確認します。 'lddiag option show'
+.. デバイス障害診断の実行の手順 3 ～ 5 を繰り返します。
+.. 問題を特定して解決したら、手順 1 と 2 を繰り返してテストをデフォルトの状態にリセットします。
+.. デバイス障害診断の実行の手順 1~5 を繰り返します。
+
+
+
+
+ a| 
+は失敗なしで完了しました
+ a| 
+ハードウェアに問題はなく、ストレージシステムはプロンプトに戻ります。
+
+.. 次のコマンドを入力して、ステータスログをクリアします。 `diag device clearstatus [-dev_devtype_|MB|slot_slotnum_]`
+.. 次のコマンドを入力して、ログがクリアされたことを確認します。 `diag device status [-dev_devtype_|MB|slot_slotnum_]`
++
+次のデフォルトの応答が表示されます。
+
++
+[listing]
+----
+SLDIAG: No log messages are present.
+----
+.. 次のコマンドを入力して保守モードを終了します :halt
+.. Loader プロンプトで次のコマンドを入力して、ストレージ・システムをブートします。「 boot_ontap 」システム・レベルの診断が完了しました。
+
+
+|===
+
+
+同じ手順を繰り返しても問題が解決しない場合は、ハードウェアを交換する必要があります。

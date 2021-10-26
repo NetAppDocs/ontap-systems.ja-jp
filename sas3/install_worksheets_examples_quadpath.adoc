@@ -1,0 +1,46 @@
+---
+permalink: sas3/install-worksheets-examples-quadpath.html 
+sidebar: sidebar 
+keywords: complete, controller-to-stack, cabling, cable, worksheet, quad-path, ha, configuration, ha, configuration, sas, hba, controller-to-stack cabling worksheet and cabling example for a quad-path ha configuration with two quad-port sas hbas 
+summary: 記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 2 つのクアッドポート SAS HBA を備えたクアッドパス HA 構成をケーブル接続できます。 
+---
+= 2 つのクアッドポート SAS HBA シェルフと IOM12 モジュールを使用したクアッドパス HA 構成のコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 2 つのクアッドポート SAS HBA を備えたクアッドパス HA 構成をケーブル接続できます。
+
+* 必要に応じて、を参照してください link:install-cabling-rules.html["SAS ケーブル接続ルール"] サポートされる構成については、コントローラのスロット番号の規則、シェルフ / シェルフ間の接続、およびコントローラ / シェルフ間の接続（ポートペアの使用など）を参照してください。
+* 必要に応じて、を参照してください link:install-cabling-worksheets-how-to-read-quadpath.html["クアッドパス接続でコントローラ / スタック間をケーブル接続するためのワークシートの読み取り方法"]。
+* ケーブル接続例では、コントローラ / スタック間のケーブル接続のうち、コントローラ A と C のポート接続を実線で、コントローラ B と D のポート接続を点線で区別して表しています。
++
+image::../media/drw_controller_to_stack_cable_type_key.gif[ケーブルタイプキーをスタックする DRW コントローラ]
+
+* HA ペアの各スタックへの接続を区別するために、ケーブル接続例のケーブルとワークシートの対応するポートペアに同じ色を使用しています。
++
+image::../media/drw_controller_to_stack_cable_color_key_non2600.gif[DRW コントローラをスタックするケーブルカラーキー（ 2600 以外）]
+
+* ケーブル接続例では、 HA ペアまたはシングルコントローラ構成で各コントローラから各スタックへのクアッドパス接続に必要な 2 セットのマルチパスケーブル接続を、視覚的に区別しています。
++
+マルチパスケーブルの最初のセットを「マルチパス」と呼びます。マルチパス・ケーブルの 2 番目のセットは ' クアッドパスと呼ばれます2 番目のケーブル接続セットは「クアッドパス」と呼ばれます。これは、このケーブル接続セットを完了すると、クアッドパス接続が可能になるためです。
+
++
+image::../media/drw_controller_to_stack_quad_pathed_connectivity_key.gif[DRW コントローラ / スタック間のクアッドパス接続キー]
+
+* ワークシート例では、各ポートペアは、マルチパスケーブル接続またはクアッドパスケーブル接続で該当するスタックに接続されます。
++
+マルチパスケーブル接続用の各ポートペアは、接続先のスタックと同じ色の楕円で囲まれています。クアッドパスケーブル接続用の各ポートペアは、接続先のスタックと同じ色の四角形で囲まれています。
+
+
+
+
+
+== クアッドパス HA ：クアッドポート SAS HBA × 2 、マルチシェルフスタック × 2
+
+次のワークシートとケーブル接続例では、スタック 1 にポートペア 1a / 2b （マルチパス）と 2a / 1d （クアッドパス）を使用し、スタック 2 にポートペア 1c / 2d （マルチパス）と 2c / 1b （クアッドパス）を使用しています。
+
+image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[DRW ワークシート qpha スロット 1 と 2 つの 4 ポートバス 2 つのスタック NAU]
+
+image::../media/drw_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[DRW qpha スロット 1 および 2 2 2 4 ポートバス 2 スタック NAU]

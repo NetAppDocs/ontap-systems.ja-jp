@@ -1,0 +1,169 @@
+---
+permalink: fas8300/chassis-replace-shutdown.html 
+sidebar: sidebar 
+keywords: fas8300, fas8700, shut, chassis, controller, replace, remove, swap, verify, install, power, supply, metrocluster, aggregates, replacement, process, equipment, rack, ha, state, system 
+summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
+---
+= コントローラ FAS8300 および FAS8700 をシャットダウンします
+:icons: font
+:imagesdir: ../media/
+
+
+
+
+== オプション 1 ：ほとんどの構成
+
+[role="lead"]
+シャーシ内のノードを新しいシャーシに移動する前に、ノードをシャットダウンする必要があります。
+
+.このタスクについて
+* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なノードで適格性と正常性について「 false 」と表示される場合は、障害のあるノードをシャットダウンする前に問題を修正する必要があります。
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html["_ ONTAP 9 システムアドミニストレーションリファレンス _"]
+
+* AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
++
+次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
+
+
+
+.手順
+. システムにコントローラモジュールが 2 つある場合は、 HA ペアを無効にします。
++
+[cols="1,2"]
+|===
+| clustered ONTAP を実行しているシステムの構成 | 作業 
+
+
+ a| 
+クラスタ内の 2 つのノード
+ a| 
+cluster ha modify -configured false 「 storage failover modify -node node0 -enabled false 」という名前になります
+
+
+
+ a| 
+クラスタ内のノードが 3 つ以上
+ a| 
+「 storage failover modify -node node0 -enabled false 」という名前のノードが追加されました
+
+|===
+. 停止を確認するプロンプトが表示されたら 'y' を押してノードを停止します 'system node halt -node node_name
++
+次のような確認メッセージが表示されます。
+
++
+[listing]
+----
+Warning: Rebooting or halting node
+"node_name" in an HA-enabled cluster may result in client disruption or data access
+failure. To ensure continuity of service, use the "storage
+failover takeover" command. Are you sure you want to halt node
+"node_name"? {y|n}:
+----
++
+
+NOTE: シャーシを交換する前にシステムのクリーンシャットダウンを実行し、不揮発性メモリ（ NVMEM ）内の書き込み前のデータが失われないようにする必要があります。NVMEM LED の点滅は、ディスクに保存されていないデータが NVMEM にあることを示しています。ノードをリブートし、この手順の先頭からやり直してください。ノードのクリーンシャットダウンに繰り返し失敗すると、ディスクに保存されていないデータが失われる可能性があります。
+
+. 該当する場合は、 2 番目のノードを停止して、 HA ペア構成でクォーラムエラーメッセージが表示されないようにします。「 system node halt -node second_node_name -ignore-quorum -warnings true 」
+
+
+
+
+== オプション 2 ：コントローラは 2 ノード MetroCluster 構成です
+
+[role="lead"]
+障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをスイッチオーバーする必要があります。
+
+.このタスクについて
+* NetApp Storage Encryption を使用している場合は、 _ ONTAP 9 ネットアップ暗号化パワーガイド _ の「 SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります。
++
+https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["ONTAP 9 ネットアップ暗号化パワーガイド"]
+
+* 正常なノードに電力を供給するために、この手順の最後で電源装置をオンのままにしておく必要があります。
+
+
+.手順
+. MetroCluster ステータスをチェックして、障害ノードが正常なノードに自動的にスイッチオーバーしたかどうかを確認します。「 MetroCluster show 」
+. 自動スイッチオーバーが発生したかどうかに応じて、次の表に従って処理を進めます。
++
+[cols="1,2"]
+|===
+| * 障害ノードの状況 | ... * 
+
+
+ a| 
+自動的にスイッチオーバーした
+ a| 
+次の手順に進みます。
+
+
+
+ a| 
+自動的にスイッチオーバーしていない
+ a| 
+正常なノードから計画的スイッチオーバー処理を実行します： MetroCluster switchover
+
+
+
+ a| 
+スイッチオーバーは自動的には行われておらず、 MetroCluster switchover コマンドを使用してスイッチオーバーを試みたが、スイッチオーバーは拒否された
+ a| 
+拒否メッセージを確認し、可能であれば問題を解決してやり直します。問題を解決できない場合は、テクニカルサポートにお問い合わせください。
+
+|===
+. サバイバークラスタから MetroCluster heal-phase aggregates コマンドを実行して、データアグリゲートを再同期します。
++
+[listing]
+----
+controller_A_1::> metrocluster heal -phase aggregates
+[Job 130] Job succeeded: Heal Aggregates is successful.
+----
++
+修復が拒否された場合は '-override-vetoes パラメータを指定して MetroCluster heal' コマンドを再実行できますこのオプションパラメータを使用すると、修復処理を妨げるソフトな拒否はすべて無視されます。
+
+. MetroCluster operation show コマンドを使用して、処理が完了したことを確認します。
++
+[listing]
+----
+controller_A_1::> metrocluster operation show
+    Operation: heal-aggregates
+      State: successful
+Start Time: 7/25/2016 18:45:55
+   End Time: 7/25/2016 18:45:56
+     Errors: -
+----
+. 「 storage aggregate show 」コマンドを使用して、アグリゲートの状態を確認します。
++
+[listing]
+----
+controller_A_1::> storage aggregate show
+Aggregate     Size Available Used% State   #Vols  Nodes            RAID Status
+--------- -------- --------- ----- ------- ------ ---------------- ------------
+...
+aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirrored, normal...
+----
+. 「 MetroCluster heal-phase root-aggregates 」コマンドを使用して、ルートアグリゲートを修復します。
++
+[listing]
+----
+mcc1A::> metrocluster heal -phase root-aggregates
+[Job 137] Job succeeded: Heal Root Aggregates is successful
+----
++
+修復が拒否された場合は '-override-vetoes パラメータを指定して MetroCluster heal' コマンドを再実行できますこのオプションパラメータを使用すると、修復処理を妨げるソフトな拒否はすべて無視されます。
+
+. デスティネーションクラスタで「 MetroCluster operation show 」コマンドを使用して、修復処理が完了したことを確認します。
++
+[listing]
+----
+
+mcc1A::> metrocluster operation show
+  Operation: heal-root-aggregates
+      State: successful
+ Start Time: 7/29/2016 20:54:41
+   End Time: 7/29/2016 20:54:42
+     Errors: -
+----
+. 障害のあるコントローラモジュールで、電源装置の接続を解除します。
+

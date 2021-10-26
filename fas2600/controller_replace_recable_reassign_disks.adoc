@@ -1,0 +1,159 @@
+---
+permalink: fas2600/controller-replace-recable-reassign-disks.html 
+sidebar: sidebar 
+keywords: fas2600, how to recable the system, how to reassign disks 
+summary: ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。 
+---
+= システムにケーブルを再接続し、ディスクを再割り当てします - FAS2600
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージを再接続し、ディスクの再割り当てを確認して、交換用手順を続行します。
+
+
+
+== 手順 1 ：システムにケーブルを再接続します
+
+[role="lead"]
+診断の実行後、コントローラモジュールのストレージとネットワークを再度ケーブル接続する必要があります。
+
+.手順
+. システムにケーブルを再接続します。
+. を使用して、ケーブル接続が正しいことを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]。
++
+.. Config Advisor をダウンロードしてインストールします。
+.. ターゲットシステムの情報を入力し、データ収集をクリックします。
+.. Cabling タブをクリックし ' 出力を確認しますすべてのディスクシェルフが表示されていること、およびすべてのディスクが出力に表示されていることを確認し、ケーブル接続に関する問題が見つかった場合は修正します。
+.. 該当するタブをクリックして他のケーブル接続を確認し、 Config Advisor からの出力を確認します。
+
+
+
+
+
+
+== 手順 2 ：ディスクを再割り当てする
+
+[role="lead"]
+HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。スタンドアロンシステムでは、 ID をディスクに手動で再割り当てする必要があります。構成に適した手順を使用する必要があります。
+
+
+
+=== オプション 1 ： HA システムでシステム ID の変更を確認する
+
+[role="lead"]
+_replacement _node のブート時にシステム ID の変更を確定し、その変更が実施されたことを確認する必要があります。
+
+この手順は、 HA ペアの ONTAP を実行するシステムにのみ適用されます。
+
+. _replacement _node が Maintenance モードになっている場合 (`*>` プロンプトが表示されている場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます
+. システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 y 」と入力し、ノードをブートします
+. _replacement _node コンソールに Waiting for giveback... というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show
++
+コマンド出力には、障害ノードでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。
+
++
+[listing]
+----
+node1> storage failover show
+                                    Takeover
+Node              Partner           Possible     State Description
+------------      ------------      --------     -------------------------------------
+node1             node2             false        System ID changed on partner (Old:
+                                                  151759755, New: 151759706), In takeover
+node2             node1             -            Waiting for giveback (HA mailboxes)
+----
+. 正常なノードから、コアダンプがすべて保存されたことを確認します。
++
+.. advanced 権限レベルに切り替えます。「 set -privilege advanced 」
++
+advanced モードで続行するかどうかを確認するプロンプトが表示されたら、「 y 」と入力します。advanced モードのプロンプトが表示されます（ * > ）。
+
+.. コアダンプをすべて保存します。「 system node run -node _local-node-name_partner savecore 」
+.. savecore コマンドの完了を待機してからギブバックを実行します。
++
+次のコマンドを入力すると、 savecore コマンドの進行状況を監視できます。 'system node run -node _local-node-name_partner savecore -s
+
+.. admin 権限レベルに戻ります。「 set -privilege admin 」
+
+
+. ノードをギブバックします。
++
+.. 正常なノードから、交換したノードのストレージをギブバックします。「 storage failover giveback -ofnode replacement_node_name _
++
+_replacement _node はストレージをテイクバックしてブートを完了します。
+
++
+システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は 'y' と入力する必要があります
+
++
+
+NOTE: ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。
+
++
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対する『ハイアベイラビリティ構成ガイド』を検索してください"]
+
+.. ギブバックが完了したら、 HA ペアが正常でテイクオーバーが可能であることを確認します。 storage failover show
++
+「 storage failover show 」コマンドの出力。パートナーメッセージに変更されたシステム ID を含めることはできません。
+
+
+
+. ディスクが正しく割り当てられたことを確認します。 storage disk show -ownership
++
+replacement _node には、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。
+
++
+[listing]
+----
+node1> storage disk show -ownership
+
+Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
+----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
+1.0.0  aggr0_1  node1 node1  -        1873775277 1873775277  -       1873775277 Pool0
+1.0.1  aggr0_1  node1 node1           1873775277 1873775277  -       1873775277 Pool0
+.
+.
+.
+----
+. 各ノードに、想定されるボリュームが存在することを確認します。 vol show -node node-name
+. リブート時の自動テイクオーバーを無効にした場合は、正常なノードで「 storage failover modify -node replacement-node-name -onreboot true 」を有効にします
+
+
+
+
+=== オプション 2 ： ONTAP でスタンドアロンシステムにシステム ID を手動で再割り当てする
+
+[role="lead"]
+スタンドアロンシステムでは、システムを通常の動作状態に戻す前に、新しいコントローラのシステム ID にディスクを手動で再割り当てする必要があります。
+
+.このタスクについて
+
+NOTE: この手順は、スタンドアロン構成のシステムにのみ適用されます。
+
+.手順
+. ディスクのメンテナンスモードでブートしていない場合は、 _replacement _node をリブートし、 Ctrl+C キーを押してブートプロセスを中断して、表示されたメニューからメンテナンスモードでブートするオプションを選択します。
+. システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、「 Y 」と入力する必要があります。
+. システム ID を表示します。 disk show -a
+. ディスク所有者の列に表示される、古いシステム ID をメモしてください。
++
+次の例は、古いシステム ID 118073209 を示しています。
+
++
+[listing]
+----
+*> disk show -a
+Local System ID: 118065481
+
+  DISK      OWNER                  POOL   SERIAL NUMBER  HOME
+--------    -------------          -----  -------------  -------------
+disk_name    system-1  (118073209)  Pool0  J8XJE9LC       system-1  (118073209)
+disk_name    system-1  (118073209)  Pool0  J8Y478RC       system-1  (118073209)
+.
+.
+.
+
+----
+. ノード「 boot_ontap 」をブートします
+

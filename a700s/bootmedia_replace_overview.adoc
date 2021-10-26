@@ -1,0 +1,25 @@
+---
+permalink: a700s/bootmedia-replace-overview.html 
+sidebar: sidebar 
+keywords: aff a700s, aff, a700s, primary, boot, media, store, ontap, image, system, restore, primary, media, secondary, usb, flash, drive, replace, replace the boot media 
+summary: プライマリブートメディアには、システムがブート時に使用する ONTAP ブートイメージが格納されています。セカンダリブートメディア上の ONTAP イメージを使用するか、または必要に応じて USB フラッシュドライブを使用して、プライマリブートメディアイメージをリストアできます。 
+---
+= ブートメディアの交換 - AFF A700s
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+プライマリブートメディアには、システムがブート時に使用する ONTAP ブートイメージが格納されています。セカンダリブートメディア上の ONTAP イメージを使用するか、または必要に応じて USB フラッシュドライブを使用して、プライマリブートメディアイメージをリストアできます。
+
+セカンダリブートメディアに障害が発生した場合、または image.tgz ファイルがない場合は、 USB フラッシュドライブを使用してプライマリブートメディアをリストアする必要があります。ドライブは FAT32 にフォーマットされており、 image.tgz ファイルを格納できる容量のストレージが必要です。
+
+* 交換プロセスでは、 var ファイルシステムをセカンダリブートメディアまたは USB フラッシュドライブからプライマリブートメディアにリストアします。
+* 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。
+* 以下の手順のコマンドを正しいノードに適用することが重要です。
++
+** impaired_node は、保守を実行しているノードです。
+** healthy_node は、障害ノードの HA パートナーです。
+
+
+

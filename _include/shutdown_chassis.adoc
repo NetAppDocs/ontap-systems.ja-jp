@@ -1,0 +1,56 @@
+= 
+
+
+シャーシ内のノードを新しいシャーシに移動する前に、ノードをシャットダウンする必要があります。
+
+.このタスクについて
+* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なノードで適格性と正常性について「 false 」と表示される場合は、障害のあるノードをシャットダウンする前に問題を修正する必要があります。
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html["_ ONTAP 9 システムアドミニストレーションリファレンス _"]
+
+* AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
++
+次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
+
+
+
+.手順
+. システムにコントローラモジュールが 2 つある場合は、 HA ペアを無効にします。
++
+[cols="1,2"]
+|===
+| clustered ONTAP を実行しているシステムの構成 | 作業 
+
+
+ a| 
+クラスタ内の 2 つのノード
+ a| 
+cluster ha modify -configured false 「 storage failover modify -node node0 -enabled false 」という名前になります
+
+
+
+ a| 
+クラスタ内のノードが 3 つ以上
+ a| 
+「 storage failover modify -node node0 -enabled false 」という名前のノードが追加されました
+
+|===
+. 停止を確認するプロンプトが表示されたら 'y' を押してノードを停止します 'system node halt -node node_name
++
+次のような確認メッセージが表示されます。
+
++
+[listing]
+----
+Warning: Rebooting or halting node
+"node_name" in an HA-enabled cluster may result in client disruption or data access
+failure. To ensure continuity of service, use the "storage
+failover takeover" command. Are you sure you want to halt node
+"node_name"? {y|n}:
+----
++
+
+NOTE: シャーシを交換する前にシステムのクリーンシャットダウンを実行し、不揮発性メモリ（ NVMEM ）内の書き込み前のデータが失われないようにする必要があります。NVMEM LED の点滅は、ディスクに保存されていないデータが NVMEM にあることを示しています。ノードをリブートし、この手順の先頭からやり直してください。ノードのクリーンシャットダウンに繰り返し失敗すると、ディスクに保存されていないデータが失われる可能性があります。
+
+. 該当する場合は、 2 番目のノードを停止して、 HA ペア構成でクォーラムエラーメッセージが表示されないようにします。「 system node halt -node second_node_name -ignore-quorum -warnings true 」
+

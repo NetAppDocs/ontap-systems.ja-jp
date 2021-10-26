@@ -1,0 +1,17 @@
+---
+permalink: fas2700/install-quick-guide.html 
+sidebar: sidebar 
+keywords: fas2700, aff a220, quick, guide, graphic, instructions, install, rack, cable 
+summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。 
+---
+= クイックガイド - AFF A220 および FAS2700
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。
+
+設置およびセットアップ手順 _PDF ポスター：
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2842666["AFF A220 / FAS2700 システムの設置とセットアップの手順"]

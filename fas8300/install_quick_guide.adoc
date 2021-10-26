@@ -1,0 +1,17 @@
+---
+permalink: fas8300/install-quick-guide.html 
+sidebar: sidebar 
+keywords: fas8300, fas8700, quick, guide, install, system, rack, cable 
+summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。 
+---
+= クイックガイド - FAS8300 および FAS8700
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。
+
+設置およびセットアップ手順 _PDF ポスター：
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2858856["FAS8300 および FAS8700 の設置とセットアップの手順"]

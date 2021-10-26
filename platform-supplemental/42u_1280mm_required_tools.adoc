@@ -1,0 +1,26 @@
+---
+permalink: platform-supplemental/42u-1280mm-required-tools.html 
+sidebar: sidebar 
+keywords: unpack, install, cabinet, necessary, tool, equipment, system, maintenance, require tools and equipment 
+summary: システムキャビネットを開梱して接地を始める前に、システムキャビネットを所定の位置に移動し、設置または保守作業を行うために必要な工具と機器を用意しておく必要があります。 
+---
+= 必要な工具と機器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+システムキャビネットを開梱して接地を始める前に、システムキャビネットを所定の位置に移動し、設置または保守作業を行うために必要な工具と機器を用意しておく必要があります。
+
+* ディスクシェルフのハードウェアガイドです
+* 使用しているシステムに適した設置とセットアップの手順に従ってください
++
+https://www.netapp.com/data-storage/all-flash-documentation/["All Flash FAS のドキュメントリソース"]
+
++
+https://www.netapp.com/data-storage/fas/documentation/["FAS ストレージシステムのドキュメント"]
+
+* No.1 および No.2 プラスドライバ
+* システムキャビネットのネジ用のトルクスドライバ
+* システムキャビネットの水平調節用のレベリングツール
+

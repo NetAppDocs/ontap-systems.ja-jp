@@ -1,0 +1,31 @@
+---
+permalink: platform-supplemental/42u-1280mm-install-additional-rails.html 
+sidebar: sidebar 
+keywords: system cabinets, system, cabinet, support, rail, install, component, install additional support rail 
+summary: システムキャビネットには、あらかじめいくつかのサポートレールが取り付けられています。システムにサポートレールを追加する必要がある場合は、システムコンポーネントを取り付ける前にレールを取り付ける必要があります。 
+---
+= 追加のサポートレールを取り付けます
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+システムキャビネットには、あらかじめいくつかのサポートレールが取り付けられています。システムにサポートレールを追加する必要がある場合は、システムコンポーネントを取り付ける前にレールを取り付ける必要があります。
+
+このタスクでは、 DS212C および DE212C ディスクシェルフを除くすべてのコントローラおよびディスクシェルフを環境で接続します。これら 2 つのディスクシェルフについては、該当するレールキットの説明書を使用してください。
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2484194["DE212C または DS212C シェルフを 2 支柱ラックまたは 4 支柱ラックに取り付ける"]
+
+. 機器に必要なスペースを決定します。
++
+機器の高さから機器に必要な U スペース（ 1U = 4.45cm ）を計算し、システムキャビネット内の使用可能なスペースに基づいて機器を取り付ける場所を決定します。
+
+. サポートレールを取り付ける場所を確認し、次の図を参考にして取り付けます。
++
+image::../media/drw_syscab_ozeki_support_rail_installation.gif[DRW syscab ozeki サポートレールの取り付け]
+
+. 機器のマウントフランジがサポートレールのネジ穴よりも上に来る場合は、必要に応じて、サポートレールの上にケージナットを取り付けます。
++
+image::../media/drw_clip_nut_install.gif[DRW クリップナット取り付け]
+
+

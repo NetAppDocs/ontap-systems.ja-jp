@@ -1,0 +1,27 @@
+---
+permalink: c190/install-setup.html 
+sidebar: sidebar 
+keywords: aff c190, initial configuration options 
+summary: システムを設置してセットアップします。 
+---
+= はじめに：設置とセットアップを選択してください
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+新しいストレージシステムの設置およびセットアップを進めるにあたって、参照するコンテンツの形式を選択できます。
+
+* link:../c190/install-quick-guide.html["クイックステップ"]
++
+ステップバイステップの手順と追加コンテンツへのライブリンクが記載された PDF 形式のガイドです。
+
+* link:../c190/install-videos.html["ビデオの手順"]
++
+手順を追ったビデオでご確認ください。
+
+* link:../c190/install-detailed-guide.html["詳細な手順"]
++
+ステップバイステップの手順と追加コンテンツへのライブリンクが記載されたオンライン形式のガイドです。
+
+

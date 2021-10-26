@@ -1,0 +1,90 @@
+---
+section: platform-supplemental
+title: その他のプラットフォームの手順
+entries:
+- title: システムレベルの診断
+  entries:
+  - title: はじめに
+    url: "/platform-supplemental/sldiag-introduction.html"
+  - title: 要件
+    url: "/platform-supplemental/sldiag-requirements.html"
+  - title: コマンドラインヘルプの使用方法
+    url: "/platform-supplemental/sldiag-use-cli-help.html"
+  - title: システムのインストール診断を実行します
+    url: "/platform-supplemental/sldiag-system-installation-diagnostics.html"
+  - title: システムパニック診断を実行します
+    url: "/platform-supplemental/sldiag-system-panic-diagnostics.html"
+  - title: システム応答の遅延診断を実行します
+    url: "/platform-supplemental/sldiag-slow-system-diagnostics.html"
+  - title: ハードウェアの設置診断を実行します
+    url: "/platform-supplemental/sldiag-hardware-installation-diagnostics.html"
+  - title: デバイス障害診断を実行します
+    url: "/platform-supplemental/sldiag-device-failure-diagnostics.html"
+- title: SuperRail キット
+  url: "/platform-supplemental/superrail-install.html"
+- title: AFF A700 / FAS9000 2 ポストレールキット
+  url: "/platform-supplemental/telco-installation-instructions.html"
+- title: 42U 1280 mm システムキャビネット
+  entries:
+  - title: キャビネットを設置する準備をします
+    entries:
+    - title: キャビネットの機能
+      url: "/platform-supplemental/42u-1280mm-features.html"
+    - title: 必要な工具 / 機器
+      url: "/platform-supplemental/42u-1280mm-required-tools.html"
+    - title: 必要なスペースとキャビネットの寸法
+      url: "/platform-supplemental/42u-1280mm-space-and-dimensions.html"
+    - title: サポートされている PDU のタイプと仕様
+      url: "/platform-supplemental/42u-1280mm-supported-pdu-types-and-specifications.html"
+  - title: システムキャビネットを開梱します
+    url: "/platform-supplemental/42u-1280mm-unpack.html"
+  - title: キャビネットを設置
+    entries:
+    - title: 概要
+      url: "/platform-supplemental/42u-1280mm-install.html"
+    - title: キャビネットインターコネクトキットを設置
+      url: "/platform-supplemental/42u-1280mm-install-cabinet-interconnect-kit.html"
+    - title: ボルトダウンキットを取り付ける
+      url: "/platform-supplemental/42u-1280mm-install-bolt-down-kit.html"
+    - title: サポートレールを取り付けます
+      url: "/platform-supplemental/42u-1280mm-install-additional-rails.html"
+    - title: 機器を設置します
+      url: "/platform-supplemental/42u-1280mm-install-equipment.html"
+    - title: キャビネットの電源をオンにします
+      url: "/platform-supplemental/42u-1280mm-power-on.html"
+  - title: PDU を交換します
+    url: "/platform-supplemental/42u-1280mm-replace-pdus.html"
+  - title: キャビネット前面ドアを反転します
+    entries:
+    - title: 必要なもの
+      url: "/platform-supplemental/42u-1280mm-reverse-front-door.html"
+    - title: 照光バッジを取り外します
+      url: "/platform-supplemental/42u-1280mm-remove-illuminated-badge.html"
+    - title: キャビネットドアを取り外します
+      url: "/platform-supplemental/42u-1280mm-remove-door.html"
+    - title: バッジの電源装置とケーブルを移動します
+      url: "/platform-supplemental/42u-1280mm-move-badge-ps-and-cabling.html"
+    - title: リバースドアヒンジとロックキャッチ
+      url: "/platform-supplemental/42u-1280mm-reverse-hinge-and-lock.html"
+    - title: ドアと照光バッジを再度取り付けます
+      url: "/platform-supplemental/42u-1280mm-reinstall-door-and-badge.html"
+- title: 内蔵ディスクドライブをスワップします
+  entries:
+  - title: 概要ビデオ
+    url: "/platform-supplemental/drive-video.html"
+  - title: 内蔵ドライブをホットスワップします
+    entries:
+    - title: 使用する手順
+      url: "/platform-supplemental/drive-hotswap.html"
+    - title: SSD のホットスワップ
+      url: "/platform-supplemental/drive-hotswap-drive.html"
+    - title: ホットスワップ対応 HDD
+      url: "/platform-supplemental/drive-hotswap-sas.html"
+- title: オール SAN アレイシステム
+  entries:
+  - title: セットアップとメンテナンス
+    url: "/platform-supplemental/all-san-array.html"
+- title: ハードウェアのアップグレード
+  entries:
+  - title: アップグレード手順
+    url: "/platform-supplemental/upgrade-linkout.html"
