@@ -1,12 +1,5 @@
 ---
-settings:
-  name: ONTAP Systems
-  internal:
-    pdf_enabled: true
-  prod:
-    pdf_enabled: true
-    harmony_enabled: true
-    langs: ja-jp,us-en,zh-cn
+settings: {}
 sidebar:
   entries:
   - title: ホーム
