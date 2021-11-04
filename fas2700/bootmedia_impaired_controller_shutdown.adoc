@@ -24,7 +24,7 @@ NVE タスクまたは NSE タスクを完了したら、障害ノードのシ�
 +
 [cols="1,2"]
 |===
-| * 障害ノードに表示される内容 | ... * 
+| 障害ノードに表示される内容 | 作業 
 
 
  a| 
@@ -74,7 +74,7 @@ https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["ONTAP 9 
 +
 [cols="1,2"]
 |===
-| * 障害ノードの状況 | ... * 
+| 障害ノードの状況 | 作業 
 
 
  a| 

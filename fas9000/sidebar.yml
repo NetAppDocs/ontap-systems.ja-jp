@@ -67,28 +67,27 @@ entries:
     - title: システムのリストアを完了
       url: "/fas9000/controller-replace-complete-system-restoration.html"
   - title: DCPM を実行します
-    pdf-filename: AFF A700 および FAS9000 DCPM モジュール
     url: "/fas9000/dcpm-nvram10-battery-replace.html"
   - title: DIMM
     url: "/fas9000/dimm-replace.html"
   - title: ファン
     url: "/fas9000/fan-swap-out.html"
-- title: I/O モジュール
-  url: "/fas9000/pci-cards-and-risers-replace.html"
-- title: LED USB モジュール
-  url: "/fas9000/led-module-replace.html"
-- title: NVRAM
-  url: "/fas9000/nvram-module-or-nvram-dimm-replacement.html"
-- title: 電源装置
-  url: "/fas9000/power-supply-swap-out.html"
-- title: RTC バッテリ
-  url: "/fas9000/rtc-battery-replace.html"
-- title: X91148A モジュール
-  pdf-filename: AFF A700 および FAS9000 X91148A モジュール
-  entries:
-  - title: 概要
-    url: "/fas9000/x91148a-module-install-overview.html"
-  - title: オープンスロットを備えた AFF A700 システム
-    url: "/fas9000/x91148a-modules-with-open-slots-add.html"
-  - title: AFF A700 システムにオープンスロットがありません
-    url: "/fas9000/x91148a-modules-with-no-open-slots-add.html"
+  - title: I/O モジュール
+    url: "/fas9000/pci-cards-and-risers-replace.html"
+  - title: LED USB モジュール
+    url: "/fas9000/led-module-replace.html"
+  - title: NVRAM
+    url: "/fas9000/nvram-module-or-nvram-dimm-replacement.html"
+  - title: 電源装置
+    url: "/fas9000/power-supply-swap-out.html"
+  - title: RTC バッテリ
+    url: "/fas9000/rtc-battery-replace.html"
+  - title: X91148A モジュール
+    pdf-filename: AFF A700 および FAS9000 X91148A モジュール
+    entries:
+    - title: 概要
+      url: "/fas9000/x91148a-module-install-overview.html"
+    - title: オープンスロットを備えた AFF A700 システム
+      url: "/fas9000/x91148a-modules-with-open-slots-add.html"
+    - title: AFF A700 システムにオープンスロットがありません
+      url: "/fas9000/x91148a-modules-with-no-open-slots-add.html"

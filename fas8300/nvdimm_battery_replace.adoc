@@ -94,7 +94,7 @@ https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["ONTAP 9 
 +
 [cols="1,2"]
 |===
-| * 障害ノードの状況 | ... * 
+| 障害ノードの状況 | 作業 
 
 
  a| 
@@ -180,7 +180,7 @@ mcc1A::> metrocluster operation show
 [role="lead"]
 コントローラモジュール内部のコンポーネントにアクセスするには、コントローラモジュールをシャーシから取り外す必要があります。
 
-次の動画または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。
+次のアニメーション、図、または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=75b6fa91-96b9-4323-b156-aae10007c9a5["コントローラモジュールの取り外し"]
 
@@ -214,7 +214,7 @@ NVDIMM バッテリを交換するには、障害が発生したバッテリを�
 
 システムを停止すると、コンテンツのデステージ中に NVDIMM の LED が点滅します。デステージが完了すると LED は消灯します。
 
-次に示すアニメーションや図の手順に従って、 NVDIMM バッテリを交換します。
+次に示すアニメーションや図、または記載された手順に従って、 NVDIMM バッテリを交換します。
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=1f1425a8-5a91-4810-82da-aad9012efa4f["NVDIMM バッテリの交換"]
 
@@ -242,7 +242,7 @@ image::../media/drw_A400_nvdimm-batt.png[DRW A400 NVDIMM バッテリ]
 [role="lead"]
 コントローラモジュールのコンポーネントを交換したら、コントローラモジュールをシャーシに再度取り付け、メンテナンスモードでブートする必要があります。
 
-次のアニメーション、図面、または記載された手順を使用して、コントローラモジュールをシャーシに設置できます。
+次のアニメーション、図、または記載された手順を使用して、コントローラモジュールをシャーシに設置できます。
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=9249fdb8-1522-437d-9280-aae10007c97b["コントローラモジュールを取り付けます"]
 

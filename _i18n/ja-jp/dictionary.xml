@@ -1619,7 +1619,6 @@
   <block id="cf55af4b4668a579d36bfd91785ecbec" category="summary">NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。</block>
   <block id="db4547d0ddae50a76aa47cf54e9d15ae" category="doc">ノード AFF A250 をシャットダウンします</block>
   <block id="130b18edff1b7e2377d35d657b1f8a53" category="list-text">障害ノードに LOADER プロンプトが表示されていない場合は、次の手順を実行します。</block>
-  <block id="47185b94ccce83e9048cd43f65de8ed6" category="cell">* 障害ノードに表示される内容</block>
   <block id="d4d4b346339524be979b964b901a1b92" category="cell">... *</block>
   <block id="2fbc9f3babe8926d05354b5d3a0f06d4" category="paragraph">+ ギブバックを待機中 ...+`</block>
   <block id="426ac41b4c68d57196f875fa046c7804" category="paragraph">Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します</block>
@@ -1671,7 +1670,6 @@
   <block id="ead43025863c239764a3bf49ae31eb66" category="list-text">DIMM がソケットにまっすぐ差し込まれていることを目で確認してください。</block>
   <block id="ab3fb33952699fbe3c430cbc883fd07f" category="section-title">手順 4 ：コントローラモジュールを取り付ける</block>
   <block id="fc87d7b84ed41775a9327a51a99f1600" category="paragraph">コントローラモジュールのコンポーネントを交換したら、コントローラモジュールをシャーシに再度取り付け、メンテナンスモードでブートする必要があります。</block>
-  <block id="0942bc52ae7fa77299f00a99083e8061" category="paragraph">次に示すアニメーションや手順説明に従って、交換用コントローラモジュールをシャーシに取り付けます。</block>
   <block id="79b7d25a32465f1453599bea780ff825" category="list-text">エアダクトをまだ取り付けていない場合は、取り付けます。</block>
   <block id="9e8bc2f3ff00e91084e8d9faacfbbbc7" category="image-alt">DRW A250 エアダクトカバーを取り付ける</block>
   <block id="d377aa259703e685c1fa1683da0a4acf" category="list-text">コントローラモジュールのカバーを閉じ、取り付けネジを締めます。</block>
@@ -2769,7 +2767,6 @@
   <block id="d6cd25c7a2ec0fe6ad8621d4562ce0ae" category="summary">電源装置（ PSU ）を交換するには、ターゲットの PSU の電源を切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。</block>
   <block id="897fb2e62dec5276f207c3447d27e6c4" category="doc">電源装置の交換 - AFF A400</block>
   <block id="f044adaf132925553df56c50232bae8a" category="paragraph">電源装置（ PSU ）を交換するには、ターゲットの PSU の電源を切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。</block>
-  <block id="29482b60ea68f0e6140b9b6c2b79eea2" category="paragraph">次のアニメーション、図面、または記載された手順を使用して、電源装置を交換できます。</block>
   <block id="c7f75bc82f05fbc329f84729f755fde5" category="inline-link">電源装置の交換</block>
   <block id="73b06746e3641f2e6f9137fe6d28c65e" category="paragraph"><block ref="73b06746e3641f2e6f9137fe6d28c65e" category="inline-link-rx"></block></block>
   <block id="543cc636467d5177d82c2c5dc40fa939" category="image-alt">DRW A400 PSU</block>
@@ -2790,7 +2787,6 @@
   <block id="4b0734b8f2c30a70467894b0f3e7baf2" category="list-text">正常なノードに電力を供給するために、この手順の最後で電源装置をオンのままにしておく必要があります。</block>
   <block id="a504e6d60b77acc66d4d4e9b46f8893a" category="list-text">MetroCluster ステータスをチェックして、障害ノードが正常なノードに自動的にスイッチオーバーしたかどうかを確認します。「 MetroCluster show 」</block>
   <block id="a4d3e0e884bda08238ebcf294cd22173" category="list-text">自動スイッチオーバーが発生したかどうかに応じて、次の表に従って処理を進めます。</block>
-  <block id="05cccd0163609675457eac65dd1acb90" category="cell">* 障害ノードの状況</block>
   <block id="3bb6bfde9e3647655849196d4817633d" category="paragraph">自動的にスイッチオーバーした</block>
   <block id="e6d6a543bb86452c29c8ce9dd3d034cc" category="paragraph">次の手順に進みます。</block>
   <block id="223bed434b435ef97172b24efc947bc4" category="paragraph">自動的にスイッチオーバーしていない</block>
@@ -2805,14 +2801,12 @@
   <block id="ff3a0ae3124cdb901cb2a0ca979baa15" category="list-text">デスティネーションクラスタで「 MetroCluster operation show 」コマンドを使用して、修復処理が完了したことを確認します。</block>
   <block id="3bcf1d06b09abf1d24715a65d98b4fcd" category="list-text">障害のあるコントローラモジュールで、電源装置の接続を解除します。</block>
   <block id="2d651f7d69648fdc916560614dbe381e" category="paragraph">コントローラモジュール内部のコンポーネントにアクセスするには、コントローラモジュールをシャーシから取り外す必要があります。</block>
-  <block id="63d0b86fdba61a5d84f5c919995bdd9a" category="paragraph">次のアニメーション、図面、または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。</block>
   <block id="633a92fd671d3ef2ca3005733f0cb806" category="inline-link">コントローラモジュールの取り外し</block>
   <block id="f9bbdff45ccc465a7a79c7eb0adc819f" category="paragraph"><block ref="f9bbdff45ccc465a7a79c7eb0adc819f" category="inline-link-rx"></block></block>
   <block id="f5016594b8e72f5a97ef9aa0ab2ce820" category="image-alt">DRW A400 コントローラの取り外し</block>
   <block id="1dfd8f0a690cafa9d3544e4817f68306" category="list-text">コントローラモジュールを安定した平らな場所に置きます。</block>
   <block id="5beb49709902306e7264c7704117a827" category="section-title">手順 3 ：システム DIMM を交換します</block>
   <block id="3848c7730c285ede150ddd598894cf0b" category="paragraph">システム DIMM を交換するには、関連するエラーメッセージで対象の DIMM を特定し、エアダクトの FRU マップまたはマザーボードの点灯している LED から対象の DIMM の場所を確認し、 DIMM を交換します。</block>
-  <block id="0223c35aed97d00329312ad608ee0a70" category="paragraph">次のアニメーション、図面、または記載された手順を使用して、システム DIMM を交換できます。</block>
   <block id="4cdb88b773dbbe796646d321ccc17d79" category="admonition">このアニメーションでは、 DIMM のないソケットには空きスロットが示されています。これらの空のソケットには何も挿入されていません。</block>
   <block id="282abcd1229d5f110894e126192603b3" category="inline-link">システム DIMM の交換</block>
   <block id="212baf733d07a5e386f7f5c6424c0168" category="paragraph"><block ref="212baf733d07a5e386f7f5c6424c0168" category="inline-link-rx"></block></block>
@@ -2822,10 +2816,8 @@
   <block id="7f17300d94b3ad1307db5cc0a95ca048" category="list-text">エアダクトの側面にある固定ツメをコントローラモジュールの中央に向かって押します。</block>
   <block id="3f88f0afc7a9dcaea99ffc820cae4c95" category="list-text">エアダクトをコントローラモジュールの背面方向にスライドさせ、完全に開いた状態になるまで上方向に回転させます。</block>
   <block id="3c96abc43edac8ae6d9684f7b2c979fa" category="list-text">DIMM の両側にある 2 つのツメをゆっくり押し開いて DIMM をソケットから外し、そのままスライドさせてソケットから取り出します。</block>
-  <block id="785d9404f84d94a7909505e324a80dc4" category="paragraph">次のアニメーション、図面、または記載された手順を使用して、コントローラモジュールをシャーシに設置できます。</block>
   <block id="f8bf7cfcd7be5800b05da0088ccc5613" category="inline-link">コントローラモジュールを取り付けます</block>
   <block id="b6b50b181a7be3471302bf9071dba55b" category="paragraph"><block ref="b6b50b181a7be3471302bf9071dba55b" category="inline-link-rx"></block></block>
-  <block id="d4fd62ca7cff6a35ae9162627bca057c" category="image-alt">DRW A400 コントローラの取り付け</block>
   <block id="efde4f3ca311bf83d86cec48e8ed29bb" category="list-text">まだ行っていない場合は、エアダクトを閉じます。</block>
   <block id="cf0c1543b41425363fe1c52960df53a6" category="list-text">コントローラモジュールの取り付けを完了します。</block>
   <block id="f6805e79885366ea71636ffc0c97fcbd" category="list-text">ロックラッチを使用し、ロックラッチが持ち上がるまで、コントローラモジュールをシャーシにしっかりと押し込みます。</block>
@@ -2862,11 +2854,9 @@
   <block id="6a31f53ac6bcbf967fd4f6d12d604380" category="paragraph"><block ref="6a31f53ac6bcbf967fd4f6d12d604380" category="inline-link-rx"></block></block>
   <block id="3cae55e1e828ede8665faa84a0a66de4" category="summary">NVDIMM バッテリを交換するには、コントローラモジュールを取り外し、バッテリを取り外し、バッテリを交換してから、コントローラモジュールを再度取り付ける必要があります。</block>
   <block id="376ecb7742395c276940c386f403f622" category="doc">NVDIMM バッテリを交換してください - AFF A400</block>
-  <block id="859d9cf2347407d2184dc7f3a99113ab" category="paragraph">次のアニメーション、図面、または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。</block>
   <block id="cc9b9cbb2b7e2941b317fa5e4937583c" category="section-title">手順 3 ： NVDIMM バッテリを交換します</block>
   <block id="2cf2814258fcdc62e9d952b1e5b1ae63" category="paragraph">NVDIMM バッテリを交換するには、障害が発生したバッテリをコントローラモジュールから取り外し、交換用バッテリをコントローラモジュールに取り付ける必要があります。NVDIMM バッテリの場所を確認するには、コントローラモジュール内の FRU マップを参照してください。</block>
   <block id="d07d22679fd595588166f72cbc3fcec6" category="paragraph">システムを停止すると、コンテンツのデステージ中に NVDIMM の LED が点滅します。デステージが完了すると LED は消灯します。</block>
-  <block id="aed7b5729f9738f7ed2112abe0ce0e9e" category="paragraph">次に示すアニメーションや図の手順に従って、 NVDIMM バッテリを交換します。</block>
   <block id="46efa7f02ce6baa9827c6f208cb9e715" category="inline-link">NVDIMM バッテリの交換</block>
   <block id="ac84ac8893efb7d82a99bee3c539e69f" category="paragraph"><block ref="ac84ac8893efb7d82a99bee3c539e69f" category="inline-link-rx"></block></block>
   <block id="9185cd979667bd7126df7c80d3bacf16" category="image-alt">DRW A400 NVDIMM バッテリ</block>
@@ -2877,14 +2867,12 @@
   <block id="48d478390eb7cda13973a166fcbc6922" category="paragraph">次のアニメーション、図面、または記載された手順を使用して、コントローラモジュールをシャーシに設置できます。</block>
   <block id="601c15b5101316dedeb3a25975e9e2f9" category="summary">コントローラモジュールのブートメディアの場所を確認し（コントローラモジュールの FRU マップを参照）、手順に従って交換する必要があります。</block>
   <block id="8e3daca783076f9b3bcb927610eec9b7" category="doc">コントローラモジュールを取り外し、ブートメディアを交換して、ブートイメージをブートメディア AFF A400 に転送します</block>
-  <block id="b66a53c266f33b6e4506b29d6607ab02" category="paragraph">次の動画または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。</block>
   <block id="88ef394be03c2dee8da212eb3ce203d3" category="paragraph">ロックラッチ</block>
   <block id="be0b7bebdbc010beb298a7c7fac29946" category="paragraph">コントローラをシャーシから引き出します</block>
   <block id="5783f79f9e7f2e133566622979b9730b" category="paragraph">コントローラモジュールのブートメディアの場所を確認し（コントローラモジュールの FRU マップを参照）、手順に従って交換する必要があります。</block>
   <block id="1bd3d89e17ddba901467cbccce7082ab" category="inline-link">ボラティリティの声明</block>
   <block id="e1868c0f167920cfa89fada6789c58de" category="paragraph">ブートメディアの内容は暗号化されていますが、交換する前に、ブートメディアの内容を消去することを推奨します。詳細については、を参照してください<block ref="89de74d6a86df9137b0ef3fb03a43036" category="inline-link-rx"></block> ネットアップサポートサイトにお使いのシステム用の情報を入力します。</block>
   <block id="26dda88d97bde6104f720a3758bbb5ab" category="admonition">ご使用のシステムに対応したボラティリティの声明を表示するには、ネットアップサポートサイトにログインする必要があります。</block>
-  <block id="46f00909dad629ef305730aebec6b362" category="paragraph">次に示すアニメーションや手順説明に従って、ブートメディアを交換します。</block>
   <block id="91ea63840deb36178d591b265c9d7e42" category="paragraph"><block ref="91ea63840deb36178d591b265c9d7e42" category="inline-link-rx"></block></block>
   <block id="bd5497d186b6e2b7b18e72f13cb6b003" category="image-alt">DRW A400 オープンエアダクト</block>
   <block id="3a14f9b352276cdd1419142953354ef1" category="paragraph">エアダクトをコントローラの背面方向にスライドさせます</block>
@@ -2927,26 +2915,22 @@
   <block id="c7cea431908caf9ec22b5642ce842640" category="list-text">Healthy node_name は、障害が発生したノードの HA パートナーです。</block>
   <block id="a1a1579fddd17c389260a91ea7a11ea9" category="doc">コントローラモジュールハードウェア - AFF A400 を移動します</block>
   <block id="2010d72cb8663ac4f3960dead61f921e" category="paragraph"><block ref="2010d72cb8663ac4f3960dead61f921e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b3e17c420aff24c2b3098ad419f5a386" category="list-text">アニメーションまたは記載された手順に従って、交換用コントローラモジュールでエアダクトを開き、コントローラモジュールから空のライザーを取り外します。</block>
   <block id="8555f8973ccc4539a56ac495380c89d5" category="inline-link">交換用コントローラモジュールからの空のライザーの取り外し</block>
   <block id="d5e62cab20ddc280f38e9a81562855fc" category="paragraph"><block ref="d5e62cab20ddc280f38e9a81562855fc" category="inline-link-rx"></block></block>
   <block id="702848fda50b66572d07fb0de7038e26" category="image-alt">DRW A400 PCIe カードの交換</block>
   <block id="d7b31bd33c49d2208df6af8e69383eb1" category="list-text">ライザー 1 の左側にあるライザーロックラッチをエアダクトの方向に上に回し、ライザーを持ち上げて脇に置きます。</block>
   <block id="94361a9fb6b7806dba08565d2eb8e812" category="list-text">残りのライザーについても、同じ手順を繰り返します。</block>
   <block id="cbd96d78e35def92dc49cc6af9ededa9" category="section-title">手順 2 ：電源装置を移動します</block>
-  <block id="01d917a66767ea9832d9630cc98029d3" category="paragraph">次に示すアニメーションや手順説明に従って、交換用コントローラモジュールに電源装置を移動します。</block>
   <block id="651fce2fc1dc722483cd08a409caa02d" category="inline-link">電源装置を移動しています</block>
   <block id="55d9bd88011823021be595bba37166ff" category="paragraph"><block ref="55d9bd88011823021be595bba37166ff" category="inline-link-rx"></block></block>
   <block id="e1e27e78f4f293bc4cfa50e3758563b7" category="list-text">残りの電源装置に対して上記の手順を繰り返します。</block>
   <block id="f42c638bfd110c61246a6666784bc4c1" category="section-title">手順 3 ： NVDIMM バッテリを移動します</block>
   <block id="4d0a56aece8f02d27b0a6d6c9d616e2b" category="paragraph">NVDIMM バッテリを障害のあるコントローラモジュールから交換用コントローラモジュールに移動するには、特定の手順を実行する必要があります。</block>
-  <block id="388e30e053ee53b844321c7cd4c84fec" category="paragraph">次に示すアニメーションや手順説明に従って、障害のあるコントローラモジュールから交換用コントローラモジュールに NVDIMM バッテリを移動します。</block>
   <block id="a040cab5e56e6849162375d411a47650" category="inline-link">NVDIMM バッテリの移動</block>
   <block id="938c9471f21de641bd794ad779f3233c" category="paragraph"><block ref="938c9471f21de641bd794ad779f3233c" category="inline-link-rx"></block></block>
   <block id="f32f9406f781996e8d8f51dd5b46fb1f" category="list-text">バッテリを交換用コントローラモジュールに移動します。</block>
   <block id="a1880f99fabfa105d117b95cd8a8e13f" category="admonition">指示があるまで、バッテリケーブルをマザーボードに再接続しないでください。</block>
   <block id="11c0701315f6ed07c6cf9f964fa86a42" category="paragraph">ブートメディアの場所を確認し、手順に従って障害のあるコントローラモジュールからブートメディアを取り外して、交換用コントローラモジュールに挿入する必要があります。</block>
-  <block id="07172256ff2524f9c38a56ae9499653a" category="paragraph">次に示すアニメーションや手順説明に従って、障害のあるコントローラモジュールから交換用コントローラモジュールにブートメディアを移動します。</block>
   <block id="edae164968ad5a68c5d1bf0b0d83b5c7" category="inline-link">ブートメディアを移動します</block>
   <block id="09ed363213875577f49963e3b3906ce7" category="paragraph"><block ref="09ed363213875577f49963e3b3906ce7" category="inline-link-rx"></block></block>
   <block id="95d96e38d18207537b338dbeb4af27f9" category="list-text">新しいコントローラモジュールにブートメディアを移し、ブートメディアの端をソケットケースに合わせ、ソケットにゆっくりと押し込みます。</block>
@@ -2954,7 +2938,6 @@
   <block id="ee96145214a39f508341276c610b49fa" category="list-text">ブートメディアの横の青いボタンを押し、ブートメディアの端をしっかりと押し下げて、青いロックボタンをはめ込みます。</block>
   <block id="cf3466ecdfb072da2b00880d3ab9f6fc" category="section-title">手順 5 ： PCIe ライザーとメザニンカードを移動します</block>
   <block id="caeb396ee8f7c0d69c87808ac3309c9e" category="paragraph">コントローラの交換プロセスの一環として、 PCIe ライザーとメザニンカードを障害のあるコントローラモジュールから交換用コントローラモジュールに移動する必要があります。</block>
-  <block id="2f495fa300b48d8496672a4f85ee628d" category="paragraph">次に示すアニメーションや手順説明に従って、障害のあるコントローラモジュールから交換用コントローラモジュールに PCIe ライザーとメザニンカードを移動します。</block>
   <block id="791deb11eae7b2103fa11aabd4f5a1b8" category="paragraph">PCIe ライザー 1 および 2 （左および中央のライザー）の移動：</block>
   <block id="5e12e4a73edca5660a5a80ccc30602f3" category="inline-link">PCI ライザー 1 と 2 を移動しています</block>
   <block id="8c392baad0881f2a4214c069d1671ede" category="paragraph"><block ref="8c392baad0881f2a4214c069d1671ede" category="inline-link-rx"></block></block>
@@ -2976,7 +2959,6 @@
   <block id="2263a4202dc3f47e21b796046fdb14e0" category="section-title">手順 6 ： DIMM を移動します</block>
   <block id="6446bf31ea57eb06abcf3d71277ace1f" category="paragraph">DIMM の場所を確認し、障害のあるコントローラモジュールから交換用コントローラモジュールに DIMM を移動する必要があります。</block>
   <block id="7ea4694a55d3bc578b9348c31192a778" category="paragraph">障害のあるコントローラモジュールから交換用コントローラモジュールの対応するスロットに DIMM を直接移動できるように、新しいコントローラモジュールを準備しておく必要があります。</block>
-  <block id="88447264632372457a61e04c9227d2e2" category="paragraph">次に示すアニメーションや手順説明に従って、障害のあるコントローラモジュールから交換用コントローラモジュールに DIMM を移動します。</block>
   <block id="99bf6ee6c96eb91a9cabaf654e3f27da" category="inline-link">DIMM の移動</block>
   <block id="d627482b35799313f2c10e2bf1a17bf2" category="paragraph"><block ref="d627482b35799313f2c10e2bf1a17bf2" category="inline-link-rx"></block></block>
   <block id="45f1b5610a92bcb0ebfae16cd2e64354" category="list-text">NVDIMM バッテリが新しいコントローラモジュールに接続されていないことを確認します。</block>
@@ -3007,7 +2989,6 @@
   <block id="88ac4d07d58a69eac184825b4a4f7ab4" category="summary">サービスを中断せずにファンモジュールを交換するには、特定の順序でタスクを実行する必要があります。</block>
   <block id="2c4c75d1e0e065592eedb5be469928fc" category="doc">ファンモジュールのホットスワップ - AFF A400</block>
   <block id="d84d817301b3fda6e7f2d0b2ffa82793" category="admonition">シャーシからファンモジュールを取り外したら 2 分以内にファンモジュールを交換する必要があります。システムの通気が遮断されて 2 分が経過すると、過熱を防ぐためにコントローラモジュールがシャットダウンします。</block>
-  <block id="f5b6101a284ac5ef8881e26c4f5cf3e7" category="paragraph">ファンモジュールをホットスワップするには、次のアニメーション、図面、または記述された手順を使用します。</block>
   <block id="a961eaf17aad10f63815150e2c281f40" category="paragraph"><block ref="a961eaf17aad10f63815150e2c281f40" category="inline-link-rx"></block></block>
   <block id="611a5142dc0f00bc2e5019e968d727a8" category="image-alt">DRW A400 ファンの交換</block>
   <block id="eec5fe6d3c4d1821d8ef29726fec6123" category="list-text">交換が必要なファンモジュールを特定するために、コンソールのエラーメッセージを確認し、ファンモジュールの警告 LED を確認します。</block>
@@ -3025,7 +3006,6 @@
   <block id="9d2a810337a7aa9c3699cd8746f6d93e" category="section-title">手順 3 ： 2 ノード MetroCluster 構成でアグリゲートをスイッチバックする</block>
   <block id="a6c279177bd30a0d3ee3363a3679bffa" category="doc">リアルタイムクロックバッテリを交換してください - AFF A400</block>
   <block id="4f4fd54acab309f1a5e65fa28f282bda" category="paragraph">コントローラモジュール内で RTC バッテリの場所を確認し、特定の手順を実行する必要があります。RTC バッテリの場所については、コントローラモジュール内の FRU マップを参照してください。</block>
-  <block id="f71a915b44eea96bf855566d2413b3ac" category="paragraph">次に示すアニメーションや図を使用するか、または記載された手順に従って RTC バッテリを交換します。</block>
   <block id="aedd2a42a775a7f6e557925e61efddea" category="paragraph"><block ref="aedd2a42a775a7f6e557925e61efddea" category="inline-link-rx"></block></block>
   <block id="ec83112a8c30bb826b259d5c77a3c3ca" category="image-alt">DRW A400 RTC BATT</block>
   <block id="373905f2383b6a7f8d43c02143d4933e" category="list-text">RTC バッテリの場所を確認して取り出し、交換します。</block>
@@ -3039,7 +3019,6 @@
   <block id="510635eaf5a7fc8c0ceb9ca04a70c3e1" category="summary">PCIe カードまたはメザニンカードを交換するには、ケーブルとすべての SFP モジュールと QSFP モジュールをカードから外し、障害が発生した PCIe カードまたはメザニンカードを交換してから、カードにケーブルを再接続する必要があります。</block>
   <block id="dd473272c4d6050e610191be8ab18137" category="doc">PCIe カードまたはメザニンカードを交換してください - AFF A400</block>
   <block id="c32ad4a5390f985bde71f85fd8251878" category="paragraph">PCIe カードを交換するには、障害のある PCIe カードの場所を確認し、カードを含むライザーをコントローラモジュールから取り外し、カードを交換してから、 PCIe ライザーをコントローラモジュールに再度取り付ける必要があります。</block>
-  <block id="f66a7b6b19307a39bdfe6538bd816cf8" category="paragraph">次のアニメーション、図面、または記載された手順を使用して、 PCIe カードを交換できます。</block>
   <block id="64cef4055575ebf736074d9d2e01714d" category="inline-link">PCIe カードの交換</block>
   <block id="97a0d4a495882e0dfc203786b309fba2" category="paragraph"><block ref="97a0d4a495882e0dfc203786b309fba2" category="inline-link-rx"></block></block>
   <block id="19d561d318b7f8e68cd53bd4b4ce75ae" category="paragraph"><block ref="19d561d318b7f8e68cd53bd4b4ce75ae" category="inline-image-macro-rx" type="image"></block></block>
@@ -3057,7 +3036,6 @@
   <block id="4e5bb8d189307de4ad8391c7d925159e" category="list-text">ライザーの金属板と同じ高さまでラッチを回し下げます。</block>
   <block id="e356fc00e03a72a23de387b0ea61b394" category="section-title">手順 4 ：メザニンカードを交換します</block>
   <block id="d0d8c1208244a56dcbb2146e7f481b69" category="paragraph">メザニンカードは、 3 番のライザー（スロット 4 と 5 ）の下にあります。メザニンカードを交換するには、ライザーを取り外してメザニンカードを交換してから、 3 番のライザーを再度取り付ける必要があります。詳細については、コントローラモジュールの FRU マップを参照してください。</block>
-  <block id="6a1b67928fc757ff0e24edf48b6caafd" category="paragraph">次のアニメーション、図面、または記載された手順を使用して、メザニンカードを交換できます。</block>
   <block id="e1f897d0cc161038771e4a78369d1b42" category="inline-link">メザニンカードの交換</block>
   <block id="d997f3ab402fd9ebdc0b61d4f1aae054" category="paragraph"><block ref="d997f3ab402fd9ebdc0b61d4f1aae054" category="inline-link-rx"></block></block>
   <block id="cfeb91223ab0ffbe58ae834c4189db80" category="image-alt">DRW A400 メザニンカードの交換</block>
@@ -3080,7 +3058,6 @@
   <block id="00a491f6ddc82f254e9e3fa6711c8a44" category="section-title">手順 3 ： NVDIMM を交換します</block>
   <block id="de9c147054e3fb33c301b1846d2c2c80" category="paragraph">NVDIMM を交換するには、エアダクトの上にある FRU マップを使用してコントローラモジュール内で NVDIMM の場所を確認するか、スロット 1 ライザーの上にある FRU マップを使用して警告 LED の場所を確認する必要があります。</block>
   <block id="702c236818660597292fd2708b25d1d7" category="list-text">NVDIMM の内容は暗号化されていますが、交換する前に NVDIMM の内容を消去することを推奨します。詳細については、を参照してください<block ref="89de74d6a86df9137b0ef3fb03a43036" category="inline-link-rx"></block> からネットアップサポートサイトにアクセスします。</block>
-  <block id="5fa837484b25a798dfaaac7118584215" category="paragraph">次に示すアニメーションや図の手順を使用して、 NVDIMM を交換します。</block>
   <block id="df688731d288a27dad2800e4cd6c6ce0" category="inline-link">NVDIMM の交換</block>
   <block id="45a95cb35d6c9a1576222f76239bdd40" category="paragraph"><block ref="45a95cb35d6c9a1576222f76239bdd40" category="inline-link-rx"></block></block>
   <block id="47cd398c5a2374103dbd8377631bc325" category="list-text">エアダクトを開き、コントローラモジュールのスロット 11 で NVDIMM の場所を確認します。</block>
@@ -3151,7 +3128,6 @@
   <block id="19026798e40f3d682dde87cbb940fc1b" category="paragraph">コントローラモジュールのオプションのデータポート、オプションの NIC カード、および管理ポートは、スイッチに接続されます。クラスタインターコネクトポートと HA ポートは、両方のコントローラモジュールでケーブル接続されます。</block>
   <block id="b0f36369923404e3d59d32e54263eb35" category="paragraph">システムとスイッチの接続に関する情報を、ネットワーク管理者に確認しておく必要があります。</block>
   <block id="3d6d824132e6ea9215d5f55aab2c487b" category="paragraph">ケーブルをポートに差し込む際は、ケーブルのプルタブの向きを確認してください。ケーブルのプルタブは、すべてのオンボードポートでは上向き、拡張（ NIC ）カードでは下向きになります。</block>
-  <block id="0397f7d93f1451525ff942406969fee0" category="list-text">アニメーションや図を使用して、コントローラとスイッチをケーブルで接続します。</block>
   <block id="b64d12e71baab796101791fd15a05a3d" category="inline-link">2 ノードスイッチレスクラスタのケーブル接続</block>
   <block id="160ae180f5edbc75423979b29afb1d67" category="paragraph"><block ref="160ae180f5edbc75423979b29afb1d67" category="inline-link-rx"></block></block>
   <block id="89022c411a82a2fd505bed4d053014b2" category="image-alt">DRW A400 TNSC ネットワークケーブル配線</block>
@@ -3165,21 +3141,18 @@
   <block id="44545bc0051cf1d567b013be4fbb64b8" category="section-title">オプション 1 ：コントローラを 1 台のドライブシェルフにケーブル接続する</block>
   <block id="722164afb5db2ef3c2f2cf14fc383cba" category="paragraph">各コントローラを、 NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。</block>
   <block id="8e0457ffe2e7bb2af86481f4fd7c6f41" category="paragraph">図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。NS224 のケーブルのプルタブは上向きです。</block>
-  <block id="36ac4685372feb7fefbe2befc4666076" category="list-text">次のアニメーションや図を使用して、 1 台のドライブシェルフにコントローラをケーブル接続します。</block>
   <block id="778b01e1848665efaf87a17a7ac45efc" category="inline-link">NS224 ドライブシェルフへのコントローラのケーブル接続</block>
   <block id="677e323d9a43c9004fc30ef1617dfa5f" category="paragraph"><block ref="677e323d9a43c9004fc30ef1617dfa5f" category="inline-link-rx"></block></block>
   <block id="5a9ec0b35c155370c2df4d190c2eaac1" category="image-alt">DRW 4001 ns224 シェルフ</block>
   <block id="f3e065129fb4cb88ba99260c70d8c054" category="list-text">に進みます <block ref="53346fef0c147b551f530d05bbad2e41" category="inline-xref-macro-rx"></block> をクリックして、システムのセットアップと設定を完了します。</block>
   <block id="e47141e6c8fccf9bfe115e4e18090b8e" category="section-title">オプション 2 ：コントローラを 2 台のドライブシェルフにケーブル接続する</block>
   <block id="a496c0eee37cdb410fb5999f04b37d60" category="paragraph">各コントローラを両方の NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。</block>
-  <block id="f402952f0d7dfa8ea5ca69d5eceeb347" category="list-text">次のアニメーションまたは図を使用して、 2 台のドライブシェルフにコントローラをケーブル接続します。</block>
   <block id="9cba743cfa7d8e30fce17db9863bc6cf" category="inline-link">2 台の NS224 ドライブシェルフへのコントローラのケーブル接続</block>
   <block id="4c86ffd0967efb80f87e718cc76b4e42" category="paragraph"><block ref="4c86ffd0967efb80f87e718cc76b4e42" category="inline-link-rx"></block></block>
   <block id="28a5b6c12bed824c9983c41c17b4e08c" category="image-alt">DRW 4002 台の ns224 シェルフ</block>
   <block id="2d30f0e7d0bd139e4aadac367a22367c" category="section-title">オプション 3 ：コントローラを SAS ドライブシェルフにケーブル接続する</block>
   <block id="3368a061a42c179bf8e803509b06906f" category="paragraph">各コントローラを両方の SAS ドライブシェルフの IOM モジュールにケーブル接続する必要があります。</block>
   <block id="22b99956f40dddc5bacbbde3d6214bfb" category="paragraph">図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。DS224-C のケーブルプルタブは下です。</block>
-  <block id="9a6401c70e7702a84aba9098ef83f40d" category="list-text">次の図を使用して、 2 台のドライブシェルフにコントローラをケーブル接続します。</block>
   <block id="67a2b29ef159121c0da56240307e732a" category="inline-link">SAS ドライブシェルフへのコントローラのケーブル接続</block>
   <block id="ab577a17655484a4d1d9d12e4f98b833" category="paragraph"><block ref="ab577a17655484a4d1d9d12e4f98b833" category="inline-link-rx"></block></block>
   <block id="f2a5deba6280f91d25f9842359122210" category="image-alt">DRW 4003 ds224c シェルフ</block>
@@ -3198,7 +3171,6 @@
   <block id="dd1f8f01d9031d6f872bb2ee4aca20cc" category="paragraph"><block ref="dd1f8f01d9031d6f872bb2ee4aca20cc" category="inline-link-rx"></block></block>
   <block id="9e22e123b14b1f7e6da8d2bfe46c63a7" category="section-title">オプション 2 ：ネットワーク検出が有効になっていない場合のシステムのセットアップと設定の実行</block>
   <block id="87f3e022170704ccb603a73e613a5c05" category="list-text">システム付属のコンソールケーブルを使用してラップトップまたはコンソールにコンソールケーブルを接続し、ラップトップを管理サブネット上の管理スイッチに接続します。</block>
-  <block id="c29967e3d37442af0928eab4cdfb68aa" category="list-text">次の図を使用して、 1 つ以上のドライブシェルフ ID を設定します。</block>
   <block id="b0be8a8947e60a5cb3175d6d1d1c560d" category="admonition">FAS8300 と FAS8700 の例を示します。</block>
   <block id="9be08f77b7ab4837ae1dadad63405dc2" category="inline-link">コントローラの電源をオンにします</block>
   <block id="35f4e915b526ce8b8efbd50940ab41ea" category="paragraph"><block ref="35f4e915b526ce8b8efbd50940ab41ea" category="inline-link-rx"></block></block>
@@ -3810,14 +3782,10 @@
   <block id="217b7a2dfa322681da15c973e1a5f487" category="image-alt">DRW コンソール接続 AFA800</block>
   <block id="6da02acc5640a92145614bae8f8d9a0f" category="image-alt">DRW クライアント管理サブネット affa800</block>
   <block id="21ee2e5e51f0485744f531669814fed3" category="summary">他のスイッチモデルにも使用できます。</block>
-  <block id="1ffe21a56aa5a39146a08f0a602fdd17" category="doc">その他の Cisco クラスタ、ストレージ、および管理スイッチ</block>
-  <block id="335f660ece18715f2631cd6e7b3ee6e0" category="paragraph">次のスイッチのドキュメントにアクセスするには、次のリンクを使用します。</block>
   <block id="c65be06145c6932d272087d8bd0dc751" category="list-text">Nexus 5596</block>
   <block id="43f44eb6eab88bd3dd44d614bab79684" category="list-text">Nexus3132Q-V</block>
   <block id="3c45f2f6b490b6057b0b3cee9eab4438" category="list-text">CN1610</block>
   <block id="1829a6378e29fdb2a01976800d3ca60e" category="list-text">CN1601</block>
-  <block id="69cb66e59580cb4c30e235294e7b4be2" category="inline-link-macro">他の Cisco クラスタスイッチ、ストレージスイッチ、および管理スイッチのマニュアル</block>
-  <block id="5bd466141ad0e9a1c095510f8f7f3f30" category="paragraph"><block ref="5bd466141ad0e9a1c095510f8f7f3f30" category="inline-link-macro-rx"></block></block>
   <block id="c73f2abaa0fbe28e182e42a3ad4f3be4" category="summary">他のストレージシェルフモデルにも使用できます。</block>
   <block id="d439636d290b3dcbcfba5b2ad50a8790" category="doc">その他のストレージシェルフモデル</block>
   <block id="dc562a84ed096c677cedf44a7c5df0bf" category="inline-link-macro">DS2246 ディスクシェルフのドキュメント</block>
@@ -3967,7 +3935,6 @@
   <block id="ed5045a701ec927a89cecd13b59f2648" category="list-text">ノード「 boot_ontap 」をブートします</block>
   <block id="d7f3697202a93edfa9694f456f135d47" category="section-title">オプション 3 ： 2 ノード MetroCluster 構成のシステムにシステム ID を手動で再割り当てする</block>
   <block id="1903509c2e0527e99c5b6bf04998c1bd" category="doc">NVMEM バッテリを交換します - AFF A220 および FAS2700</block>
-  <block id="701cc79b54bfa6f3f02cfc5edbed7585" category="image-alt">DRW 2600 nvmem BATT アニメーション GIF を交換します</block>
   <block id="f8513ba35fb79fff664658165975390f" category="list-text">バッテリプラグをコントローラモジュールに再接続します。</block>
   <block id="e899cd265eb0284d156930495e1a6147" category="doc">AFF A220 および FAS2700 システムのマニュアル</block>
   <block id="4a548135158bf0dbaee8622657e29f8a" category="doc">障害のあるコントローラ AFF A220 および FAS2700 をシャットダウンします</block>
@@ -4053,7 +4020,6 @@
   <block id="7855441953000e9377379c90f290c456" category="list-text">IOM A のポート 3 と直下のシェルフにある IOM A のポート 1</block>
   <block id="87aa8b15d874bc2416072d646a31810f" category="list-text">IOM B のポート 3 と直下のシェルフにある IOM B のポート 1</block>
   <block id="27a3af9e579b79ddfe29151922596d53" category="paragraph"><block ref="1869c18bf4845d129ab70a2555c3fa58" category="inline-image-macro-rx" type="image"></block> mini-SAS HD 間ケーブル</block>
-  <block id="942857b27c033016d6b5046a6afbb13e" category="paragraph"><block ref="942857b27c033016d6b5046a6afbb13e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ebce5301fdee7db58216459dedbddac" category="paragraph">各ノードをスタック内の IOM A に接続します。</block>
   <block id="8e1736a5667ca807d2be49036e98d827" category="list-text">コントローラ 1 のポート 0b とスタックの最後のドライブシェルフにある IOM A のポート 3</block>
   <block id="2dc1ce09c88aa3d65bff3e266812d266" category="list-text">コントローラ 2 のポート 0a とスタックの最初のドライブシェルフにある IOM A のポート 1</block>
@@ -4644,7 +4610,6 @@
   <block id="22d0bf80ca8ac910762cc9b15d7bd3db" category="list-text"><block ref="22d0bf80ca8ac910762cc9b15d7bd3db" category="inline-link-macro-rx"></block></block>
   <block id="0d6447bac57d1b04d83d308e8b723682" category="doc">DIMM-FAS8300 と FAS8700 を交換します</block>
   <block id="a4a712ecb70395225e417c836e09e7b4" category="paragraph"><block ref="a4a712ecb70395225e417c836e09e7b4" category="inline-link-rx"></block></block>
-  <block id="75b1dc17e915d59e2317dc87ed927b03" category="paragraph">次に示すアニメーション、図面、または記載された手順を使用して、システム DIMM を交換できます。</block>
   <block id="bf60b41d71bc04857d76c73eb0a0ab19" category="paragraph">システムの DIMM の数と位置は、システムのモデルによって異なります。詳細については、エアダクトの FRU マップを参照してください。</block>
   <block id="a2d7c3c08ea698a888673407b30cb325" category="list-text">FAS8300 システムを使用している場合、システム DIMM はソケット 2 、 4 、 13 、 15 にあります。</block>
   <block id="e8aff1eca48ad56a3b7a6f32b35725fb" category="list-text">FAS8700 システムを使用している場合、システム DIMM はスロット 2 、 4 、 7 、 9 、 13 にあります。 15 、 18 、 20 。</block>
@@ -4670,10 +4635,8 @@
   <block id="05da715fdd840e7fc27dd764386018bc" category="doc">キャッシングモジュール FAS8300 と FAS8700 を交換します</block>
   <block id="d457ea14ed8ca14254ad1d75e29dce09" category="list-text">キャッシングモジュールのデータを消去します。「 system controller flash-cache secure-erase run -node node_name -device-id_device_id_device_id_</block>
   <block id="b9106c27d735907c8812d337029e92be" category="list-text">キャッシングモジュールからデータが消去されたことを確認します。「 system controller flash-cache secure-erase show -node _node_name _ 」</block>
-  <block id="c5134c4f2f363f96dd469dbc6ba3e5f7" category="cell">* 障害ノードの表示</block>
   <block id="8a653be38ee9a052d5a08a28a70c1d9e" category="paragraph">コントローラのラベルで Flash Cache と呼ばれるキャッシングモジュールを交換するには、コントローラ内のスロットの場所を確認して、特定の手順を実行します。Flash Cache の場所については、コントローラモジュールの FRU マップを参照してください。</block>
   <block id="70edce28424200208b28981e9b221707" category="list-text">キャッシングモジュールの内容は暗号化されていますが、交換する前にモジュールの内容を消去することを推奨します。詳細については、を参照してください<block ref="89de74d6a86df9137b0ef3fb03a43036" category="inline-link-rx"></block> ネットアップサポートサイトにお使いのシステム用の情報を入力します。</block>
-  <block id="8b9bc9c44ccfa5bb556c4ad20c413256" category="paragraph">次に示すアニメーションや手順説明に従って、キャッシングモジュールを交換します。</block>
   <block id="374900d2cb65aa69562bc3dff6893f0e" category="inline-link">キャッシングモジュールの交換</block>
   <block id="a88d8e2dfd607fd6813c6ef8a318ddee" category="paragraph"><block ref="a88d8e2dfd607fd6813c6ef8a318ddee" category="inline-link-rx"></block></block>
   <block id="540a3a140ba4c7da7729d8bbfbe06861" category="image-alt">DRW 8300 FlashCache を交換します</block>
@@ -4688,16 +4651,13 @@
   <block id="6fa69afac2c36bdcc90389549843343d" category="list-text">キャッシングモジュールの端にある青いボタンの横に指を置き、キャッシングモジュールの端をしっかりと押し下げてロックボタンを持ち上げ、キャッシングモジュールを所定の位置にロックします。</block>
   <block id="ef82bbc8f692bba9c311ef0fca2f0254" category="list-text">エアダクトをコントローラモジュールまで下に回転させます。</block>
   <block id="fece8cf48dc54fcca051678c1cd3e623" category="list-text">エアダクトをライザーの方向にスライドさせて、所定の位置に固定します。</block>
-  <block id="9672d5ce952abed3161d2e057cd5d949" category="paragraph">次に示すアニメーションや手順説明に従って、コントローラモジュールをシャーシに設置します。</block>
   <block id="8ba440c17426059f99ad1e5e963ed7e2" category="list-text">表示されたメニューから * 応力テストシステム * を選択します。</block>
   <block id="94abc4b4fc0a99ec4af4e15b1f87ad40" category="list-text">表示されたメニューから ** M.2 NVMe Drive Stress ** を選択します。</block>
   <block id="9fd188207b0f7e77aa563d18053142c8" category="section-title">手順 8 ：交換プロセスを完了します</block>
   <block id="ed8e6ac65f869dd5cec262d6da357514" category="doc">交換プロセス（ FAS8300 および FAS8700 ）を完了します</block>
   <block id="106747009e3404b4a4d5b54c7986550f" category="doc">ブートメディアを交換します - AFF FAS8300 および FAS8700</block>
   <block id="31bd3538b69c63a6f07a48c4ec23c289" category="doc">コントローラモジュールハードウェア - FAS8300 および FAS8700 を移動します</block>
-  <block id="9dae4b9ed5098ee2c83feb15163c653f" category="paragraph">+ コントローラモジュールがシャーシから少し引き出されます。</block>
   <block id="6976de191bb895bccff42aea7f5ef312" category="section-title">手順 6 ：キャッシングモジュールを移動する</block>
-  <block id="6db205f6ce5fca1b2ecbf1e7eb9bbd9b" category="paragraph">次に示すアニメーションや手順説明に従って、キャッシングモジュールを新しいコントローラモジュールに移動します。</block>
   <block id="73cf21a4d099a3e93b10c19fe5877edc" category="inline-link">キャッシングモジュールを移動しています</block>
   <block id="5f5c3b786cb003943169688afc62625d" category="paragraph"><block ref="5f5c3b786cb003943169688afc62625d" category="inline-link-rx"></block></block>
   <block id="98e31120864bf3bc3ac05e5585fc2718" category="image-alt">DRW A400 FlashCache の交換</block>
@@ -4714,7 +4674,6 @@
   <block id="94f9b9f44e9b09623c936fea2cc5c107" category="section-title">手順 4 ：交換プロセスを完了します</block>
   <block id="e0b7d90c90226a613c2854fa7517f6c4" category="doc">リアルタイムクロックバッテリの交換 - FAS8300 および FAS8700</block>
   <block id="781ec9f87f3965b6a34526e735ee3c5b" category="section-title">オプション 2 ：コントローラは 2 ノード MetroCluster に搭載されています</block>
-  <block id="b6d222bd1889c586ed59aa0c07e06c13" category="paragraph">次に示すアニメーションや図の手順を実行するか、または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。</block>
   <block id="97a3946d5380c45539697b463767b69c" category="section-title">手順 4 ：コントローラモジュールを再度取り付け、 RTC バッテリの交換後に日時を設定します</block>
   <block id="c1541e02506543efaa1d18ae5a171fa3" category="doc">システムにケーブルを再接続し、ディスクを再割り当てします。 FAS8300 および FAS8700</block>
   <block id="7b69f40dd7d380028b22097976e23e5c" category="paragraph">システムを完全に動作状態にリストアするには、一連の作業を完了しておく必要があります。</block>
@@ -4738,8 +4697,6 @@
   <block id="822120b36dbab2c3105a16492a2fc2fa" category="paragraph"><block ref="822120b36dbab2c3105a16492a2fc2fa" category="inline-link-rx"></block></block>
   <block id="598ec2ec2714b9a699a42898b690e48d" category="section-title">オプション 1 ：コントローラを SAS ドライブシェルフにケーブル接続します</block>
   <block id="98343d7bde7d1e041215b59aebca7cb6" category="paragraph"><block ref="98343d7bde7d1e041215b59aebca7cb6" category="inline-link-rx"></block></block>
-  <block id="9bc1ba18ec39d91f77f401575ee203f8" category="list-text">次のアニメーションまたは図を使用して、 1 つ以上のドライブシェルフ ID を設定します。</block>
-  <block id="e049ff194173c971ca0597f751bd378a" category="list-text">次のアニメーションまたは図を使用して、ラップトップを管理スイッチに接続します。</block>
   <block id="6d82a6042cf06643b3f73305d0f0c46e" category="summary">ネットアップの AFF および FAS ストレージシステムは、業界最先端のデータ管理機能を備えた、エンタープライズクラスのスケールアウトオールフラッシュストレージまたはハイブリッドストレージです。このサイトのドキュメントを使用して、 AFF または FAS システムとそのストレージシェルフ、クラスタスイッチをインストール、拡張、アップグレード、保守します。</block>
   <block id="16319414c65274d365d86327a61ef5dc" category="doc">AFF および FAS システムのマニュアル</block>
   <block id="46b673e11c982206be30f1a0d6d4bde7" category="doc">システムのリストアを完了する - FAS500f</block>
@@ -4985,7 +4942,6 @@
   <block id="6ed1027d1da4974a15118c7e8afd7bd8" category="paragraph">次のいずれかのタイプのケーブルを使用して、データポート e0c/0c と e0d/0d * または * e0e/0e と e0f/0f をホストネットワークに接続します。</block>
   <block id="c173bd77464f3b04c0d7c6e0a540f514" category="section-title">オプション 2 ：ケーブルスイッチクラスタ、ユニファイド構成</block>
   <block id="0e8ca1ea3d276eefedced94f4d995872" category="paragraph">コントローラモジュールの UTA2 ポートと管理ポートは、スイッチに接続されます。クラスタインターコネクトポートは、クラスタインターコネクトスイッチにケーブル接続されます。</block>
-  <block id="f77673141ada4219d4876ba177ccea9b" category="list-text">アニメーションやステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。</block>
   <block id="d7d7ce9a70c375da7dd9edb7b21a9134" category="image-alt">DRW C190 スイッチドユニファイドネットワークケーブル配線アニメーション GIF</block>
   <block id="61f1c61b5feaeb89fc7d9cba126122c7" category="section-title">オプション 3 ： 2 ノードスイッチレスクラスタのケーブル接続、イーサネット構成</block>
   <block id="7964bdbe798b1e42df1039eee0ed4b7f" category="paragraph">コントローラモジュールの RJ45 ポートと管理ポートは、スイッチに接続されます。クラスタインターコネクトポートは、両方のコントローラモジュールでケーブル接続されます。</block>
@@ -6003,7 +5959,6 @@
   <block id="67ec2b038363eb1a2ca82d119dc3c4ca" category="section-title">オプション 1 ：コントローラを DS212C ドライブシェルフまたは DS224C ドライブシェルフにケーブル接続します</block>
   <block id="2c12ea065c27431a69c35d833f9b51a7" category="paragraph">シェルフ / シェルフ間をケーブル接続してから、両方のコントローラを DS212C または DS224C ドライブシェルフにケーブル接続する必要があります。</block>
   <block id="bda289aec108dd7c07600c29f012b61d" category="paragraph">ケーブルはプルタブを下にしてドライブシェルフに挿入し、ケーブルのもう一方の端はプルタブを上にしてコントローラストレージモジュールに挿入します。</block>
-  <block id="29c0675604b85e44cc3ad48c31558a3a" category="list-text">次のアニメーションに従って、ドライブシェルフをコントローラにケーブル接続します。</block>
   <block id="be80668047ce4354d053ebf7d3bf997a" category="admonition">この例では DS224C シェルフを使用しています。サポートされている他の SAS ドライブシェルフでもケーブル接続はほぼ同じです。</block>
   <block id="87473dc4b1d1c5d45278a2d4f5421bdd" category="list-text">FAS9000 、 AFF A700 、 ASA AFF A700 、 ONTAP 9.7 以前の SAS シェルフのケーブル接続：</block>
   <block id="be133ae527970dd5556ed80427eaceb5" category="inline-link">SAS ストレージのケーブル接続 - ONTAP 9.7 以前</block>
@@ -6019,16 +5974,13 @@
   <block id="51b3003c067a0d5dfcbcfbc5aab0240d" category="section-title">オプション 2 ： AFF A700 システムと ONTAP 9.8 以降を実行する ASA AFF A700 システムにある 1 台の NS224 ドライブシェルフにコントローラをケーブル接続します</block>
   <block id="2335e41d88b4562f66436306d6ba0268" category="paragraph">各コントローラを、 ONTAP 9.8 以降を実行している AFF A700 または ASA AFF A700 の NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。</block>
   <block id="f3c700301ccf685f7774efd4a3fd4ea1" category="list-text">この作業は、 ONTAP 9.8 以降を実行する環境 AFF A700 および ASA AFF A700 のみです。</block>
-  <block id="7f8cf57f90032d259fdca8c6cc444d4c" category="list-text">各コントローラのスロット 3 または 7 に、少なくとも 1 つの X91148A モジュールをインストールする必要があります。このアニメーションでは、このモジュールがスロット 3 と 7 の両方に取り付けられていることを示します。</block>
   <block id="581d8b893cc4a239df32042db4e658a7" category="list-text">図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。ストレージモジュールのケーブルのプルタブは上向き、シェルフのプルタブは下向きです。</block>
-  <block id="8a593da19bb59a7b5bbf019ffe77858b" category="list-text">次のアニメーションに従って、 2 つの X91148A ストレージモジュールを搭載するコントローラを 1 台の NS224 ドライブシェルフにケーブル接続するか、図を使用して 1 つの X91148A ストレージモジュールを搭載するコントローラを 1 台の NS224 ドライブシェルフにケーブル接続します。</block>
   <block id="cb4e76984dafbac3e2e86bdaa1829d2b" category="inline-link">1 台の NS224 シェルフのケーブル接続 - ONTAP 9.8 以降</block>
   <block id="d2ce44fc211b573c108eb01a53505828" category="paragraph"><block ref="d2ce44fc211b573c108eb01a53505828" category="inline-link-rx"></block></block>
   <block id="4115ca426c5a2991609d061eae0860e1" category="image-alt">1 台の NS224 シェルフ</block>
   <block id="5b469ad683a749737d93981005b005ad" category="section-title">オプション 3 ： AFF A700 システムと ONTAP 9.8 以降を実行している ASA AFF A700 システムの 2 台の NS224 ドライブシェルフにコントローラをケーブル接続します</block>
   <block id="14d38bc8dbc01d353e185629d1b8f15a" category="paragraph">各コントローラを、 ONTAP 9.8 以降を実行している AFF A700 または ASA AFF A700 上の NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。</block>
   <block id="b3b5a55eb25abd410b88951b0f879705" category="list-text">システムには、各コントローラに X91148A モジュールが 2 つあり、スロット 3 と 7 に取り付ける必要があります。</block>
-  <block id="26fe6dbccc48fc5e3f27bb01af6740e6" category="list-text">次のアニメーションや図を使用して、 2 台の NS224 ドライブシェルフにコントローラをケーブル接続します。</block>
   <block id="9df95e4eaf726faa927f946823fa05d0" category="inline-link">2 台の NS224 シェルフのケーブル接続 - ONTAP 9.8 以降</block>
   <block id="1a15f9cc18843110359a1fe77c69b8f2" category="paragraph"><block ref="1a15f9cc18843110359a1fe77c69b8f2" category="inline-link-rx"></block></block>
   <block id="4622525bca20bef319ab7dbd1480f7bb" category="image-alt">NS224 シェルフ × 2</block>
@@ -6181,16 +6133,12 @@
   <block id="139f44aa7a23de183d912d94013db6d0" category="doc">コントローラモジュールを交換します - AFF A320</block>
   <block id="e9ca370a0e8565dd4c2f659637e04cda" category="doc">コントローラをシャットダウンします。 AFF A320</block>
   <block id="b6b9806df3f9a4e627587365674eb890" category="doc">ノード AFF A320 をシャットダウンします</block>
-  <block id="655693b8856b3ddd0aca0944005d67f9" category="doc">コントローラモジュールハードウェアを交換します - AFF A320</block>
-  <block id="3dca3a77d908e1110321847f8ea53247" category="paragraph">次の動画は、障害のあるコントローラモジュールからケーブルとケーブルマネジメントアームを取り外す方法を示しています。</block>
-  <block id="a0293bdc383b2825ab06a9b7bd5d0c61" category="paragraph">次の動画は、障害のあるコントローラモジュールをシャーシから取り外す方法を示しています。</block>
   <block id="1f80cfc7ce17ecb96321179e76fe8285" category="list-text">青色の固定ツメを押しながらカムハンドルを回転させて、コントローラモジュールから電源装置を引き出せるようにします。</block>
   <block id="688801a2df2e8d7d87f1b2c5de917ce1" category="image-alt">DRW A320 ブートメディア移動アニメーション GIF</block>
   <block id="11eb9c8c2de064eb9f7977a655de2097" category="list-text">エアダクトを開き、次の図またはコントローラモジュールの FRU マップを使用してブートメディアの場所を確認します。</block>
   <block id="2f486cec6da5b4ab5646e87394d2a4a2" category="image-alt">DRW A320 DIMM はアニメーション GIF を移動します</block>
   <block id="f7201b424e63db1eb201784a41831c5b" category="section-title">手順 6 ： PCIe ライザーを移動します</block>
   <block id="09a031229040acdcc93835464607987d" category="paragraph">PCIe ライザーに PCIe カードを取り付けた状態で、障害のあるコントローラモジュールから交換用コントローラモジュールに PCIe ライザーを移動する必要があります。</block>
-  <block id="feb283f65363af85df0ef120a5e170bf" category="paragraph">次に示すアニメーションや手順説明に従って、障害のあるコントローラモジュールから交換用コントローラモジュールに PCIe ライザーを移動します。</block>
   <block id="eb05cd11b7228336d5c9c6b4b1189e9b" category="image-alt">DRW A320 PCI ライザー動画 GIF を移動します</block>
   <block id="e3c377eeac98c2c7c22ab039e765483b" category="list-text">PCIe ライザーのカバーの青色の取り付けネジを外してカバーを取り外します。カバーを手前にスライドさせて上に回転させ、コントローラモジュールから持ち上げて外し、脇に置きます。</block>
   <block id="64e10ab629fdd5f98070e4ba4cbc9431" category="list-text">交換用コントローラモジュールから空のライザーを取り外します。</block>
@@ -6211,7 +6159,6 @@
   <block id="a394b7cf60e50656e1e8a61ef5afbd6e" category="paragraph">次の図は、障害のあるコントローラモジュールをシャーシから取り外す方法を示しています。</block>
   <block id="9652a78dd98a74622c7cc8ab283453ef" category="doc">必要に応じて、 OKM 、 NSE 、 NVE をリストアします - AFF A320</block>
   <block id="19700f9c729dfc1036b3ebeb2a20006a" category="doc">ファンモジュールのホットスワップ - AFF A320</block>
-  <block id="18537f27e3c57fa7095de2a3bbea83b2" category="image-alt">DRW A320 ファンの交換</block>
   <block id="b7605bcb79eb6de60b5238953bb38de0" category="doc">システム構成を復元して確認します - AFF A320</block>
   <block id="f473b09529c17581896f9b2f1166ce88" category="section-title">手順 1 ：コントローラモジュールの交換後にシステム時間を設定して確認します</block>
   <block id="acd5b7a742e22209bb792b093caff068" category="doc">ブートメディアを交換します - AFF A320</block>
@@ -6287,7 +6234,6 @@
   <block id="36038ef1dbb81cac29095e7ec102e15e" category="image-alt">DRW A320 重量ラベル</block>
   <block id="6c9822a6a6265e0e6627098c357cfe2d" category="section-title">コントローラをネットワークに接続</block>
   <block id="a766258e1cfb1ce4e72917121f65a74d" category="paragraph">コントローラモジュールのオプションのデータポート、オプションの NIC カード、および管理ポートは、スイッチに接続されます。クラスタインターコネクト / HA ポートは、両方のコントローラモジュールでケーブル接続されます。</block>
-  <block id="fdc2a1cc1296f6829e44c3383b03e0ff" category="list-text">この図またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。</block>
   <block id="013322a8027b639585538fe290718386" category="image-alt">DRW A320 TNSC ネットワークケーブルの複合アニメーション GIF</block>
   <block id="e5cd602ca5c03c391e8dfac3c307e06c" category="paragraph">100GbE （ QSFP28 ）ケーブルを使用して、クラスタ / HA ポートを相互に接続します。</block>
   <block id="4f8f8380e5597e92380de812b879c5d1" category="list-text">e0d から e0d<block ref="5ea5295965a00406899d4b7460801661" category="inline-image-macro-rx" type="image"></block></block>
@@ -6308,17 +6254,14 @@
   <block id="c59f62b950bdb48bdd4229f438a8c8a8" category="list-text">両方のコントローラの e0d とクラスタ / HA スイッチ<block ref="15e7674fee3b32b30f565083329e5ce8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="60e821d2b0d80835cf4d935eb3557760" category="section-title">コントローラをドライブシェルフにケーブル接続</block>
   <block id="ea4a0ef865c900d0ce0d6485667ba790" category="paragraph">オンボードストレージポートを使用して、コントローラをシェルフにケーブル接続する必要があります。</block>
-  <block id="f601764231e34199e94ec9743476290e" category="list-text">この図またはステップバイステップの手順に従って、 1 台のシェルフにコントローラをケーブル接続できます。</block>
   <block id="d49bb9b3f4ea10bb2faedd5805957881" category="image-alt">DRW A320 シングルシェルフ接続アニメーション GIF</block>
   <block id="fcc21d6aa5ce2f3d80b7b15b3efd7622" category="paragraph">コントローラ A をシェルフにケーブル接続します <block ref="97ef6a28616ee1b44c8e319d2e09ad63" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cf09fa2cd4cedb36165538f6f6133b7f" category="paragraph">コントローラ B をシェルフにケーブル接続します。 <block ref="adad54de70c837652052dc8fbe20179a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d183e64634b3038a2447a8af4bc6f415" category="list-text">システムのセットアップを完了するには、を参照してください <block ref="cf51f79f23f70e62c97013df347c6a0f" category="inline-link-macro-rx"></block>。</block>
-  <block id="ad38c553fe7adeb4b8f0207502eda768" category="list-text">次の図または記載された手順を使用して、 2 台のドライブシェルフにコントローラをケーブル接続できます。</block>
   <block id="e49f4a89e69b410e9fd76acc797854aa" category="image-alt">DRW A320 2 シェイブルケーブル配線アニメーション GIF</block>
   <block id="1fd24d2bc89f56e2b5b986eb7d944870" category="paragraph">コントローラ A をシェルフにケーブル接続します。 <block ref="dc30c6795d4eccef24ec9e4cbd9f34a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="64cd25defcb831725e6dbd4eeb07cec0" category="paragraph">コントローラ B をシェルフにケーブル接続します。 <block ref="fcd3de865e51763ca7c18796d9eecca6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="29507e337f4599b17e78b1e81c219e26" category="section-title">システムのセットアップと設定を完了</block>
-  <block id="0e83cfaee096c7f6ace337babddb9806" category="list-text">次の図を使用して、ラップトップを管理スイッチに接続します。</block>
   <block id="7a2b8204791fefff118f35cda4159e64" category="list-text">システム付属のコンソールケーブルを使用してラップトップまたはコンソールにコンソールケーブルを接続し、ラップトップを管理サブネット上の管理スイッチに接続します。</block>
   <block id="80b38fbcbc6122c93f20a23f0edcacc5" category="image-alt">DRW A320 ラップトップをスイッチとコントローラに接続</block>
   <block id="c8fe385a2d49c957811553fa2c507091" category="summary">記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 2 つのクアッドポート SAS HBA を備えたクアッドパス HA 構成をケーブル接続できます。</block>
@@ -7541,7 +7484,6 @@
   <block id="ed548d9ada85060c7850298ed30cea6d" category="list-text">新しいファンモジュールの黄色の警告 LED を確認します。</block>
   <block id="c50fdb32ee76a4d77a2a4b76520e5bed" category="admonition">ファンモジュールの交換後、ファンモジュールが正しく取り付けられているかどうかがファームウェアで確認され、その間は黄色の警告 LED が点灯した状態になります。このプロセスが完了すると LED は消灯します。</block>
   <block id="162c19cb0e58f8c6c83c319b91d9da12" category="paragraph">テクニカルサポートにお問い合わせください<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>RMA 番号を確認する場合は、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。</block>
-  <block id="dd2742d9ff44cb65ffeab9d005887b98" category="sidebar">ネットアップの AFF および FAS ストレージシステムは、業界最先端のデータ管理機能を備えた、エンタープライズクラスのスケールアウトオールフラッシュストレージまたはハイブリッドストレージです。AFF または FAS システムのインストール、拡張、アップグレード、およびメンテナンスには、このサイトのドキュメントを使用してください。</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
   <block id="ec01d482cf394f212f073921cfd9d5bd" category="sidebar">ONTAP リリースノート</block>
   <block id="f3585daa539c5917b4fedd0eb7efb3f2" category="sidebar">AFF システム</block>
@@ -7567,8 +7509,6 @@
   <block id="cce8f24137d8ba188a996f1ac50fd1c9" category="sidebar">クラスタとストレージスイッチ</block>
   <block id="87ac6ecba347afc9b3bfcf5a25512ddc" category="sidebar">Broadcom 対応 BES-53248 スイッチ</block>
   <block id="077d93425bc0aa7f9c6512d9b58b5d96" category="sidebar">Nexus 9336C-FX2 クラスタスイッチ</block>
-  <block id="52dc0fa7aa63a597a3aa6891a2cdd53d" category="sidebar">Nexus 9336C-FX2 共有スイッチ</block>
-  <block id="f8a790f7ecfc33ab5772180eff9b7848" category="sidebar">Cisco Nexus 92300YC クラスタスイッチ</block>
   <block id="408e6b1f14e3275adbc6a975f5910340" category="sidebar">プラットフォームのアップグレード</block>
   <block id="840e0e2bbbf69bf03b84d0acdeb4580f" category="sidebar">ほとんどのシステムでアップグレードできます</block>
   <block id="5ed8ff4eb5f3fd686a59745f6c5c78b5" category="sidebar">MetroCluster 構成のシステムをアップグレード</block>
@@ -7801,7 +7741,6 @@
   <block id="eb6f0206ce9ad3c398f4b3b246b9bcaf" category="sidebar">AFF A700 および FAS9000 シャーシ</block>
   <block id="98bbbeecca3d23d4fea3df957211ce7a" category="sidebar">AFF A700 および FAS9000 コントローラ</block>
   <block id="0d186ff3455a6f8be78aeb1835dba7ae" category="sidebar">DCPM を実行します</block>
-  <block id="35905209058e940aed8a43d7a6864ede" category="sidebar">AFF A700 および FAS9000 DCPM モジュール</block>
   <block id="c5a74c97685a1c4caf02e63348828add" category="sidebar">AFF A700 および FAS9000 X91148A モジュール</block>
   <block id="7547243d10899150b4ccf6b6d811d3fd" category="sidebar">オープンスロットを備えた AFF A700 システム</block>
   <block id="bf70815b663ebd2fdd48772e7c4ce17c" category="sidebar">AFF A700 システムにオープンスロットがありません</block>
@@ -7847,4 +7786,76 @@
   <block id="d35e9de4dd221879d5824b232348dc91" category="sidebar">DS460C シェルフ内のディスクドライブ</block>
   <block id="8dfce13bab3428db55090c483e5d838b" category="sidebar">DS460C シェルフ内のドライブドロワー</block>
   <block id="024aa13f0235d96f6c5d0182ea7c1a94" category="sidebar">DS460C シェルフのファンモジュール</block>
+  <block id="0b56478c906127f53acd028bea14e248" category="cell">障害ノードに表示される内容</block>
+  <block id="255b2c61d579fe79679408ad9b8fd757" category="paragraph">次の図または記載された手順を使用して、交換用コントローラモジュールをシャーシに設置できます。</block>
+  <block id="1ce77f487e28076022ddc7ec80345c1a" category="paragraph">次の図または記載された手順を使用して、交換用コントローラモジュールをシャーシに設置できます。</block>
+  <block id="54f4c70c653781a776673e986d65e502" category="paragraph">次のアニメーション、図、または記載された手順に従って、電源装置を交換します。</block>
+  <block id="72a6b0593195cf1c4747031ea9a4b6ce" category="cell">障害ノードの状況</block>
+  <block id="a695ddd31702bf0ddff2a7cf2f63d196" category="paragraph">次のアニメーション、図、または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。</block>
+  <block id="7fafe988a2b8e22f676e4c8546dc2c17" category="paragraph">次に示すアニメーションや図、または記載された手順に従って、システム DIMM を交換します。</block>
+  <block id="83f5dbc08aca0f364692b2a42ed31f22" category="admonition">アニメーションと図は、 DIMM のないソケットの空きスロットを示しています。これらの空のソケットには何も挿入されていません。</block>
+  <block id="f7594aa9507b35645b3c82938aed0e9a" category="paragraph">次のアニメーション、図、または記載された手順を使用して、コントローラモジュールをシャーシに設置できます。</block>
+  <block id="8aa65620b50adcc4dd01255717235b22" category="paragraph">次のアニメーション、図、または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。</block>
+  <block id="d51d3e7568ea6b575902677aaf5d5ccc" category="paragraph">次に示すアニメーションや図、または記載された手順に従って、 NVDIMM バッテリを交換します。</block>
+  <block id="2328259b44c61e074b53206e40c60845" category="paragraph">ブートメディアを交換するには、次のアニメーション、図、または記載された手順を使用します。</block>
+  <block id="d77f71cbbb3c8057b08d0dfb49aa5664" category="paragraph">次の図または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。</block>
+  <block id="f4c10aef61f6ce27a93c5212bf85139d" category="list-text">アニメーション、図、または記載された手順に従って、交換用コントローラモジュールでエアダクトを開き、コントローラモジュールから空のライザーを取り外します。</block>
+  <block id="1f25549d09d9fee6b326b3ae80c2ed1b" category="image-alt">DRW 400空 のライザーが取り外されました</block>
+  <block id="467b2bc695ac2ddfea8c36e9a7b57ac2" category="paragraph">次に示すアニメーション、図、または記載された手順に従って、交換用コントローラモジュールに電源装置を移動します。</block>
+  <block id="991ae28892a3f5f4d831cdf6dd55ed5a" category="paragraph">次に示すアニメーション、図、または記載された手順に従って、障害のあるコントローラモジュールから交換用コントローラモジュールに NVDIMM バッテリを移動します。</block>
+  <block id="efedd511d0e15af2a88b1af1e665f3f3" category="paragraph">次に示すアニメーション、図、または記載された手順に従って、障害のあるコントローラモジュールから交換用コントローラモジュールにブートメディアを移動します。</block>
+  <block id="90afaae143c60252559a0b44e0296586" category="paragraph">PCIe ライザーとメザニンカードを障害のあるコントローラモジュールから交換用コントローラモジュールに移動するには、次のアニメーション、図、または記載された手順を使用します。</block>
+  <block id="d5e1ff6039609bc3173540e130248e2c" category="paragraph">次に示すアニメーション、図、または記載された手順に従って、障害のあるコントローラモジュールから交換用コントローラモジュールに DIMM を移動します。</block>
+  <block id="ef4c4a16058180d2b1384df9210877f6" category="paragraph">次のアニメーション、図、または記載された手順を使用して、交換用コントローラモジュールをシャーシに設置できます。</block>
+  <block id="f94769a33d4669a6660b7ec2722589ef" category="paragraph">次に示すアニメーションや図、または記載された手順に従って、ファンモジュールをホットスワップします。</block>
+  <block id="1d865762dc572ea89458b46f1d146cdf" category="paragraph">次のアニメーション、図、または記載された手順を使用して、 RTC バッテリを交換できます。</block>
+  <block id="b1c76afa8183e9e38bbcdc2b07081516" category="paragraph">次のアニメーション、図、または記載された手順を使用して、 PCIe カードを交換できます。</block>
+  <block id="7b0bb567223271e2fe30743264b3e7e4" category="paragraph">次のアニメーション、図、または記載された手順を使用して、メザニンカードを交換できます。</block>
+  <block id="fd62f71706b219af05866bd0a2936d3c" category="paragraph">次に示すアニメーション、図、または記載された手順に従って、 NVDIMM を交換します。</block>
+  <block id="d50b249d8e309dd400e0180a12ceae23" category="list-text">アニメーションや図を使用して、コントローラとスイッチをケーブルで接続します。</block>
+  <block id="3e2f0478573244aa002f7207cde9b93b" category="list-text">次のアニメーションや図を使用して、 1 台のドライブシェルフにコントローラをケーブル接続します。</block>
+  <block id="0d41b873813de2203d2c7cc22322899d" category="list-text">次のアニメーションや図を使用して、 2 台のドライブシェルフにコントローラをケーブル接続します。</block>
+  <block id="f7a5a513bed985929212bb6fb12674e1" category="list-text">次の図を使用して、 2 台のドライブシェルフにコントローラをケーブル接続します。</block>
+  <block id="be28c3d24688dc5b9d0391b67c1b3f40" category="paragraph">[+]<block ref="91b9dae90e904c2901e5a02752e081c0" category="inline-link-rx"></block></block>
+  <block id="77d9df2bb55558446417de1799833272" category="doc">Cisco および Broadcom 対応のクラスタスイッチ、ストレージスイッチ、管理スイッチ</block>
+  <block id="bd397018360b37f0581b599a75518e00" category="paragraph">これらのリンクからスイッチのマニュアルを参照できます。</block>
+  <block id="fcad6ad7a3d292b04f7014170c512dec" category="list-text"><block ref="fcad6ad7a3d292b04f7014170c512dec" category="inline-link-macro-rx"></block></block>
+  <block id="3fa05a8d523c4bde34121d2cb916f642" category="list-text"><block ref="3fa05a8d523c4bde34121d2cb916f642" category="inline-link-macro-rx"></block></block>
+  <block id="d5191e1d1daef1fe46971f1f30582439" category="inline-link-macro">9336C-FX2 共有スイッチ</block>
+  <block id="e23a35d700b67e81f8334b0ddb96cf41" category="list-text"><block ref="e23a35d700b67e81f8334b0ddb96cf41" category="inline-link-macro-rx"></block></block>
+  <block id="1087bd6a45d263f28a4b0b93895e1941" category="inline-link-macro">Nexus 92300YC クラスタスイッチ</block>
+  <block id="77f98a2f470ce2b7477b375f9fc5073c" category="list-text"><block ref="77f98a2f470ce2b7477b375f9fc5073c" category="inline-link-macro-rx"></block></block>
+  <block id="648e8e37330666bde8dd4d1d7be3ea1f" category="list-text"><block ref="648e8e37330666bde8dd4d1d7be3ea1f" category="inline-link-macro-rx"></block></block>
+  <block id="7b01d1a60f929493e4caa403ce23427c" category="list-text"><block ref="7b01d1a60f929493e4caa403ce23427c" category="inline-link-macro-rx"></block></block>
+  <block id="a81d355d860ea6fe08143e2be27b7ed6" category="list-text"><block ref="a81d355d860ea6fe08143e2be27b7ed6" category="inline-link-macro-rx"></block></block>
+  <block id="dc6d73a1180661c5f71f36e0c7d35afb" category="list-text"><block ref="dc6d73a1180661c5f71f36e0c7d35afb" category="inline-link-macro-rx"></block></block>
+  <block id="3c6aef09c74bd93941262638ee643789" category="list-text"><block ref="3c6aef09c74bd93941262638ee643789" category="inline-link-macro-rx"></block></block>
+  <block id="a50aeec9921e0390bad38d745f1ad53f" category="paragraph"><block ref="a50aeec9921e0390bad38d745f1ad53f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cbd6e530c253bd69eae2efffc8a1d409" category="list-text">次のアニメーションに従って、 1 つ以上のドライブシェルフ ID を設定します。</block>
+  <block id="48a1bad510a4b6f7d4c6adc4ace692d6" category="admonition">アニメーションと図は、 DIMM のないソケットの空きスロットを示しています。これらの空のソケットには何も挿入されていません。</block>
+  <block id="4a848babffe3702bffe9efa29dd12c61" category="paragraph">ブートメディアを交換するには、次のアニメーション、図、または記載された手順に従ってください。</block>
+  <block id="bb90eba065615f7ac639d1758ba84812" category="paragraph">次のアニメーション、図、または記載された手順を使用して、キャッシングモジュールを交換できます。</block>
+  <block id="b8f99a879bdae690f650b2171355b5bb" category="image-alt">DRW 8300 空のライザーが取り外されました</block>
+  <block id="ae17f8ad6d4ad0752e9da66715863b23" category="paragraph">次のアニメーション、図を使用できます。または、 PCIe ライザーとメザニンカードを障害のあるコントローラモジュールから交換用コントローラモジュールに移動するための手順を記載しています。</block>
+  <block id="1e6c27613480cee2fca639b93121fd62" category="paragraph">次のアニメーション、図、または記載された手順を使用して、キャッシングモジュールを新しいコントローラモジュールに移動できます。</block>
+  <block id="7d572882100588f55ac7f58729cf5b55" category="list-text">図またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。</block>
+  <block id="2bf15bb4133cbe02395638e1d657eb46" category="list-text">図またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。</block>
+  <block id="eb248e4303d7cdcd9d37762008fe5713" category="list-text">次のアニメーションや図を使用して、ドライブシェルフをコントローラにケーブル接続します。</block>
+  <block id="6bf14a7252e28dc753304577c4a9180c" category="list-text">各コントローラのスロット 3 または 7 に、少なくとも 1 つの X91148A モジュールをインストールする必要があります。アニメーションや図は、このモジュールがスロット 3 と 7 の両方に取り付けられていることを示しています。</block>
+  <block id="69828b46097bb18230c9ffd2d5659688" category="list-text">次のアニメーションまたは図を使用して、 2 つの X91148A ストレージモジュールを搭載するコントローラを 1 台の NS224 ドライブシェルフに接続するか、図を使用してコントローラに X91148A ストレージモジュールを 1 台の NS224 ドライブシェルフに接続します。</block>
+  <block id="b36c3275f10fc227783ae634144cbd54" category="list-text">次のアニメーションや図を使用して、 2 台の NS224 ドライブシェルフにコントローラをケーブル接続します。</block>
+  <block id="3b609a79f7b20263526b5366c8880592" category="paragraph">次の図または記載された手順を使用して、障害のあるコントローラモジュールから交換用コントローラモジュールに NVDIMM バッテリを移動できます。</block>
+  <block id="af959703d2cf03d6f0ec54feb06a483a" category="paragraph">次の図または記載された手順を使用して、障害のあるコントローラモジュールから交換用コントローラモジュールにブートメディアを移動できます。</block>
+  <block id="8704a1a5bea5c63a077fa4f8a91fa4a6" category="paragraph">次の図または記載された手順を使用して、障害のあるコントローラモジュールから交換用コントローラモジュールに DIMM を移動できます。</block>
+  <block id="7b54866b2a0d6e6e75dbd1588a1d2832" category="paragraph">次の図または記載された手順を使用して、障害のあるコントローラモジュールから交換用コントローラモジュールに PCIe ライザーを移動できます。</block>
+  <block id="81212d8d54eb046dc7e7c9c987a08b0d" category="image-alt">DRW A320 ファンはアニメーション GIF に代わるものです</block>
+  <block id="5e71f7cd3736dc18c619e22ab69496b8" category="list-text">図またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。</block>
+  <block id="23d2444a35f8c3c8957c78070a834d0c" category="list-text">図またはステップバイステップの手順に従って、 1 台のシェルフにコントローラをケーブル接続できます。</block>
+  <block id="6bd176ab7852b1804bc6113808615ff6" category="list-text">次の図または記載された手順を使用して、 2 台のドライブシェルフにコントローラをケーブル接続できます。</block>
+  <block id="a301eceb20e1d3480375d34e6dfa1274" category="sidebar">ネットアップの AFF および FAS ストレージシステムは、業界最先端のデータ管理機能を備えた、エンタープライズクラスのスケールアウトオールフラッシュストレージまたはハイブリッドストレージです。AFF 、 FAS 、またはオール SAN アレイシステムのインストール、拡張、アップグレード、および保守には、このサイトのドキュメントを使用してください。</block>
+  <block id="626a7cbe056796bcb1c158b143866230" category="sidebar">ONTAP リリースノート</block>
+  <block id="a393cd4f170aafc6db54b17ca62ffb74" category="sidebar">Broadcom 対応 BES-53248 の場合</block>
+  <block id="937d0c70d7e423315a950793d262cee4" category="sidebar">Cisco 9336</block>
+  <block id="72c0fe6bd065c65c37725e2e14ab307a" category="sidebar">Cisco 9336 ：共有構成</block>
+  <block id="1bc92df4184e6d4338aed95b6891adc1" category="sidebar">Cisco 92300YC</block>
 </blocks>

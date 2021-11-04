@@ -525,7 +525,7 @@ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[""] mini-SAS HD 間ケ�
 
 
  a| 
-image:../media/oie_legend_icon_2_mb.gif[""]
+image:../media/oie_legend_icon_2_mb.png[""]
  a| 
 各ノードをスタック内の IOM A に接続します。
 
@@ -573,6 +573,9 @@ link:../com.netapp.doc.hw-ds-sas3-icg/home.html["設置とケーブル接続"]
 
 .手順
 . 次のアニメーションに従って、 1 つ以上のドライブシェルフ ID を設定します。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c600f366-4d30-481a-89d9-ab1b0066589b["ドライブシェルフ ID を設定します"]
+
 . 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
 . 両方のノードの電源スイッチをオンにします。
 +
@@ -643,6 +646,9 @@ image::../media/drw_client_to_mgmt_subnet_fas2700_affa220.png[DRW クライア�
 
 
 . 次のアニメーションに従って、 1 つ以上のドライブシェルフ ID を設定します。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c600f366-4d30-481a-89d9-ab1b0066589b["ドライブシェルフ ID を設定します"]
+
 . 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
 . 両方のノードの電源スイッチをオンにします。
 +
