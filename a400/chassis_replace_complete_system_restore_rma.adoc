@@ -30,6 +30,7 @@ ha_state_value には、次のいずれかの値を指定できます。
 *** 「 HA 」
 *** 「 mcc 」
 *** 「 mcc-2n 」
+*** 「 MCCIP 」
 *** 「 non-ha 」
 
 

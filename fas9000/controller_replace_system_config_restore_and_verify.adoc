@@ -51,47 +51,20 @@ summary: ハードウェアの交換が完了してメンテナンスモード�
 .手順
 . 新しいコントローラモジュールのメンテナンスモードで ' すべてのコンポーネントが同じ HA 状態で表示されることを確認します
 +
-[cols="1,2"]
-|===
-| システムの構成 | すべてのコンポーネントの HA の状態 
+hA-state には、次のいずれかの値を指定できます。
 
-
- a| 
-HA ペア
- a| 
-「 HA 」
-
-
-
- a| 
-4 つ以上のノードを含む MetroCluster FC 構成
- a| 
-「 mcc 」
++
+** 「 HA 」
+** 「 mcc 」
+** 「 mcc-2n 」
+** 「 MCCIP 」
+** 「 non-ha 」
++
+... 設定が変更されたことを確認します。「 ha-config show 」
 
 
 
- a| 
-2 ノード MetroCluster FC 構成
- a| 
-「 mcc-2n 」
 
-
-
- a| 
-MetroCluster IP 構成
- a| 
-「 MCCIP 」
-
-
-
- a| 
-スタンドアロン構成です
- a| 
-「 non-ha 」
-
-|===
-. 表示されたコントローラモジュールのシステム状態がシステム構成と一致しない場合は、コントローラモジュールの HA 状態を「 ha-config modify controller ha-state 」に設定します
-. 表示されたシャーシのシステム状態がシステム構成と一致しない場合は ' シャーシの HA 状態を設定します HA config modify chassis_HA-state_
 
 
 

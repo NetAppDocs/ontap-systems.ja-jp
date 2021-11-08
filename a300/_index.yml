@@ -17,6 +17,8 @@ indexpage:
       url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
     - title: ストレッチ MetroCluster 構成
       url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
+    - title: MetroCluster IP 構成
+      url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html
   - title: メンテナンス
     links:
     - title: ブートメディア

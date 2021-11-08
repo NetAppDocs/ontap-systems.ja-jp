@@ -24,14 +24,7 @@ HA 状態はすべてのコンポーネントで同じになっているはず�
 +
 .. シャーシの HA 状態を設定します :'ha-config modify chassis_ha-state _
 +
-hA-state には、次のいずれかの値を指定できます。
-
-+
-*** 「 HA 」
-*** 「 mcc 」
-*** 「 mcc-2n 」
-*** 「 non-ha 」
-
+HA 状態の値は、次のいずれかになります。 ***HA`***`m cc`***`m cc-2n`***`nnon-HA`
 
 .. 設定が変更されたことを確認します。「 ha-config show 」
 
