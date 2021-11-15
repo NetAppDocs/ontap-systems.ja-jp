@@ -8,6 +8,8 @@ entries:
   entries:
   - title: クラスタ設定ワークシート
     url: "/a200/install-worksheet-linkout.html"
+  - title: インストールとセットアップを選択します
+    url: "/a200/install-setup.html"
   - title: クイックステップ
     url: "/a200/install-setup-linkout.html"
   - title: ビデオの手順

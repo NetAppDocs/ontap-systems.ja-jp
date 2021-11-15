@@ -8,6 +8,8 @@ entries:
   entries:
   - title: クラスタ設定ワークシート
     url: "/fas2600/install-worksheet-linkout.html"
+  - title: インストールとセットアップを選択します
+    url: "/fas2600/install-setup.html"
   - title: クイックステップ
     url: "/fas2600/install-setup-linkout.html"
   - title: ビデオの手順

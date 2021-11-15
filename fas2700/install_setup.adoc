@@ -10,7 +10,7 @@ summary: システムを設置してセットアップします。
 
 
 [role="lead"]
-新しいストレージシステムの設置およびセットアップを進めるにあたって、参照するコンテンツの形式を選択できます。
+ほとんどの構成では、さまざまなコンテンツ形式から選択できます。
 
 * link:../fas2700/install-quick-guide.html["クイックステップ"]
 +
@@ -25,3 +25,5 @@ summary: システムを設置してセットアップします。
 ステップバイステップの手順と追加コンテンツへのライブリンクが記載されたオンライン形式のガイドです。
 
 
+
+システムが MetroCluster IP 構成の場合は、を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html["MetroCluster IP 構成をインストールします"] 手順

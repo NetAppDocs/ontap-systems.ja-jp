@@ -10,7 +10,7 @@ summary: システムを設置してセットアップします。
 
 
 [role="lead"]
-新しいストレージシステムの設置およびセットアップを進めるにあたって、参照するコンテンツの形式を選択できます。
+ほとんどの構成では、さまざまなコンテンツ形式から選択できます。
 
 * link:../a400/install-quick-guide.html["クイックステップ"]
 +
@@ -24,4 +24,10 @@ summary: システムを設置してセットアップします。
 +
 ステップバイステップの手順と追加コンテンツへのライブリンクが記載されたオンライン形式のガイドです。
 
+
+
+MetroCluster 構成については、次のいずれかを参照してください。
+
+* https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html["MetroCluster IP 構成をインストール"]
+* https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html["MetroCluster ファブリック接続構成をインストール"]
 
