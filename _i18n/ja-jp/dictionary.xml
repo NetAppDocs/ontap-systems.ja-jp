@@ -1568,7 +1568,6 @@
   <block id="ff3a1a304de699b15bd2a5a39798c5a8" category="section-title">手順 2 ：ストレージとボリュームの暗号化機能をリストアする</block>
   <block id="37b0fb827bbc179115abc1768c9c5f12" category="paragraph">ストレージまたはボリュームの暗号化を使用するように設定したストレージシステムのコントローラモジュールまたは NVRAM モジュールを交換したら、追加の手順を実行して、暗号化機能を中断させないようにする必要があります。ストレージまたはボリュームの暗号化が有効になっていないストレージシステムでは、このタスクを省略できます。</block>
   <block id="48c7c41b72e1d678923ce3571aa65b2d" category="list-title">ステップ</block>
-  <block id="8b152ee5b6f8ceb8aff6ea329ef4e66a" category="list-text">ネットアップ暗号化パワーガイドの該当する手順を使用して、ストレージまたはボリュームの暗号化機能をリストアします。</block>
   <block id="a2ae6c720a8a0fbf3918f44a33be6b30" category="inline-link">ONTAP 9 ネットアップ暗号化パワーガイド</block>
   <block id="ba8122bba290a3351611db1b66c99386" category="paragraph"><block ref="ba8122bba290a3351611db1b66c99386" category="inline-link-rx"></block></block>
   <block id="e68c8836280fba147b04a2b14b196600" category="paragraph">オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順を実行します。</block>
@@ -1601,9 +1600,6 @@
   <block id="596bcca65aca56bacb3df39265f83dfb" category="summary">シャーシを交換するには、コントローラをシャットダウンする必要があります。</block>
   <block id="b0a5349e52bfc1b486c0f4bb7f8c6b18" category="doc">コントローラをシャットダウンします（ AFF A250 ）</block>
   <block id="45bd0f10632b3d357d0e53299710ca0c" category="paragraph">シャーシ内のノードを新しいシャーシに移動する前に、ノードをシャットダウンする必要があります。</block>
-  <block id="3893848bb7e8e3f5ec6b547e5281f1f8" category="list-text">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なノードで適格性と正常性について「 false 」と表示される場合は、障害のあるノードをシャットダウンする前に問題を修正する必要があります。</block>
-  <block id="4ace8a3cd99d06318b85eaa42ffd9786" category="inline-link">_ ONTAP 9 システムアドミニストレーションリファレンス _</block>
-  <block id="0194385554b18b3f5ce7dc105495885e" category="paragraph"><block ref="0194385554b18b3f5ce7dc105495885e" category="inline-link-rx"></block></block>
   <block id="19285c8cf559d5176d09036ecccfca21" category="list-text">AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh</block>
   <block id="f80af4e39d67de6feaae8747f603e24b" category="paragraph">次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * &gt; system node AutoSupport invoke -node * -type all -message MAINT=2h`</block>
   <block id="880c0610027a11af7086ae7e380e12e5" category="list-text">システムにコントローラモジュールが 2 つある場合は、 HA ペアを無効にします。</block>
@@ -2782,7 +2778,6 @@
   <block id="c7e602fe7db61b23799d51454d70f0cd" category="section-title">オプション 1 ：ほとんどの構成</block>
   <block id="c055245c084600ec7129f0f3c0692170" category="section-title">オプション 2 ：コントローラは 2 ノード MetroCluster 構成です</block>
   <block id="4d279a0ab2cc0186322c5c93efdc2057" category="paragraph">障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをスイッチオーバーする必要があります。</block>
-  <block id="37918ff20850c0b7451e85462aa67d9e" category="list-text">NetApp Storage Encryption を使用している場合は、 _ ONTAP 9 ネットアップ暗号化パワーガイド _ の「 SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります。</block>
   <block id="4b0734b8f2c30a70467894b0f3e7baf2" category="list-text">正常なノードに電力を供給するために、この手順の最後で電源装置をオンのままにしておく必要があります。</block>
   <block id="a504e6d60b77acc66d4d4e9b46f8893a" category="list-text">MetroCluster ステータスをチェックして、障害ノードが正常なノードに自動的にスイッチオーバーしたかどうかを確認します。「 MetroCluster show 」</block>
   <block id="a4d3e0e884bda08238ebcf294cd22173" category="list-text">自動スイッチオーバーが発生したかどうかに応じて、次の表に従って処理を進めます。</block>
@@ -5038,7 +5033,6 @@
   <block id="1f7371aa942c4283ea30c22a58cc04ce" category="list-text">複数のシェルフをホットリムーブする場合は、シェルフを一度に 1 台ずつ取り外します。</block>
   <block id="59f9587f33c984d618a805599e44d348" category="list-text">* ベストプラクティス： * 取り外すシェルフのドライブからアグリゲートを削除したあとに、ドライブの所有権を削除することを推奨します。</block>
   <block id="cc2a062e9e855b891ccc93c7e243d4b2" category="paragraph">所有権情報を削除したスペアドライブは、必要に応じて別のノードに適切に統合できます。</block>
-  <block id="8dc2e0feec584cc5baeb329c2160e26f" category="paragraph">ドライブの所有権を削除する手順は、にあります<block ref="65506bb78a518f1d43ba0bc6e424b592" category="inline-link-rx"></block>。</block>
   <block id="3de623a3aa991fbef6703f0aaea95f22" category="admonition">手順では、自動ドライブ割り当てを無効にする必要があります。自動ドライブ割り当ては、この手順の最後（シェルフのホットリムーブ後）で再度有効にします。</block>
   <block id="7b9174f4f1064a80bf560b83cf899bd9" category="paragraph">シェルフにはロケーション LED が 3 つあります。オペレータ用ディスプレイパネルに 1 つと、各 NSM モジュールに 1 つずつです。ロケーション LED は 30 分間点灯します。点灯を中止するには、同じコマンドを off オプションに変更して入力します。</block>
   <block id="f073e535fcad3c1c55b135be9af49b12" category="list-text">専用でない RoCE 対応ポート（コントローラ上、 RoCE 対応の PCIe カード上、両方の組み合わせ、または I/O モジュール上）からシェルフを取り外したあと、それらのポートをネットワーク用に再設定することができます。</block>
@@ -5125,13 +5119,10 @@
   <block id="883c91c37ee151a81d34d6105afae5ea" category="summary">NS224 ドライブシェルフをスイッチ接続型ストレージ（直接接続型ストレージではない）としてケーブル接続する必要があるシステムの場合は、表示される情報を使用してください。</block>
   <block id="e8f8b2e7fe84a76416bedc8340d89ea1" category="doc">シェルフをスイッチ接続型ストレージ -NS224 シェルフとしてケーブル接続します</block>
   <block id="a94de468f363b57c8cc1ea1b7a532a9e" category="paragraph">NS224 ドライブシェルフを（直接接続型ストレージではなく）スイッチ接続型ストレージとしてケーブル接続する必要があるシステムの場合は、表示される情報を使用してください。</block>
-  <block id="24fb6b13906f7d982159ad8b63e062a4" category="list-text">ストレージスイッチを介した NS224 ドライブシェルフのケーブル接続に関するドキュメント：</block>
   <block id="afb935b1a48a04ad288c97c7899d840d" category="inline-link">スイッチ接続型 NS224 ドライブシェルフのケーブル接続に関する情報</block>
   <block id="1785747204ca11822dd42ba32951843b" category="paragraph"><block ref="1785747204ca11822dd42ba32951843b" category="inline-link-rx"></block></block>
-  <block id="1b186d1cf3f104289a2145d4e385176a" category="list-text">ストレージスイッチの設置に関するドキュメント：</block>
   <block id="97a30f090fd38397124788f1f0376eda" category="inline-link">AFF および FAS スイッチのマニュアル</block>
   <block id="95cee0ee869d11fbc57e30dade468820" category="paragraph"><block ref="95cee0ee869d11fbc57e30dade468820" category="inline-link-rx"></block></block>
-  <block id="629c8f0a5e3d52bf5423b4df9ef02bee" category="list-text">使用しているプラットフォームモデルでサポートされているストレージスイッチやケーブルなどのハードウェアに関する情報</block>
   <block id="acdfef9c5579ff3ba02ba954b42b0b9d" category="summary">電源がオンになっている NS224 ドライブシェルフおよび I/O の実行中に、障害が発生したファンを無停止で交換できます。</block>
   <block id="d7be6d5f22ae136261c4f972f836c784" category="doc">ファン -NS224 シェルフを交換してください</block>
   <block id="ad469db4a94f773cb57ea851a2258c7d" category="list-text">他の 4 つのファンを含め、システムのその他すべてのコンポーネントが正常に動作している必要があります。</block>
@@ -5237,8 +5228,6 @@
   <block id="1732f42cb90c2f75f01fe91247e128c3" category="paragraph">専用でない RoCE 対応ポートは、ストレージ用に設定する必要があります（ネットワークでは使用できません）。</block>
   <block id="0addf6844bafe9c41ea7de1b0facf307" category="paragraph"><block ref="2110c63cffe5fc725c4243d7595d7a36" category="inline-xref-macro-rx"></block></block>
   <block id="952d0ab2aada5c0bcc6640b363de44a1" category="list-text">AFF A700 または ASA A700HA ペアがある場合、初期 NS224 ドライブシェルフをホットアドする（ HA ペアに NS224 ドライブシェルフがない）場合は、コアダンプ（コアファイルの格納）をサポートするために、各コントローラにコアダンプモジュール（ X9170a 、 NVMe 1TB SSD ）を取り付ける必要があります。</block>
-  <block id="44d15bb6bb42e1dbee76a547e295a5be" category="inline-link">キャッシングモジュールを交換するか、コアダンプモジュールを追加 / 交換してください</block>
-  <block id="dedb7b901639fac67806190e30f3e6a3" category="paragraph"><block ref="dedb7b901639fac67806190e30f3e6a3" category="inline-link-rx"></block></block>
   <block id="40b9aa2a1398aaa422dac35a64ae5873" category="list-text">HA ペアのシェルフ数が、サポートされる最大シェルフ数よりも少なくともホットアドするシェルフの数だけ少ない必要があります。</block>
   <block id="ad77a3083357fd77bd7e8fdbdf159740" category="paragraph">シェルフをホットアドしたあとは、 HA ペアでサポートされる最大シェルフ数を超えることはできません。</block>
   <block id="0cba540a6f27fb2ed5b8694332213f9d" category="list-text">すでに NS224 シェルフがある HA ペアにシェルフをホットアドする場合、 HA ペアにストレージケーブル接続に関するエラーメッセージを表示することはできず、マルチパス HA 構成でケーブル接続する必要があります。</block>
@@ -6326,7 +6315,6 @@
   <block id="00124b65b0475ef5a1ef8812a9a5aa02" category="list-text">* ベストプラクティス： * 取り外すディスクシェルフのディスクドライブからアグリゲートを削除したあとで、ディスクドライブの所有権を削除することを推奨します。</block>
   <block id="d861952ae543b7ab12c97b76ba5a6d22" category="paragraph">所有権情報を削除したスペアディスクドライブは、必要に応じて別のノードに適切に統合できます。</block>
   <block id="82a0e673933c66d13ebe9ac1bf565aa9" category="paragraph">ディスクドライブの所有権を削除する手順では、ディスク所有権の自動割り当てを無効にする必要があります。ディスク所有権の自動割り当ては、この手順の最後で再度有効にします。</block>
-  <block id="7858451050766dac30885eb560158270" category="paragraph"><block ref="7858451050766dac30885eb560158270" category="inline-link-rx"></block></block>
   <block id="6d262abed5885a9a0e7edfe9d9df36e8" category="list-text">ノードが 3 つ以上の clustered ONTAP システムでは、定期的なメンテナンスを実行していない HA ペアにイプシロンを再割り当てすることを推奨します。</block>
   <block id="a2f32a275433435e433112c02164dbfd" category="paragraph">イプシロンを再割り当てすることで、 clustered ONTAP システムのすべてのノードに影響を及ぼす予測不可能なエラーの発生リスクを最小限に抑えることができます。クォーラムの役割とイプシロンに関する情報や、クラスタの別のノードにイプシロンを再割り当てするための手順については、 _System Administration Reference_. を参照してください。</block>
   <block id="543e45cc2fb7b698b77d3c6b0a3ca386" category="inline-link">使用しているバージョンの ONTAP 9 に対する『システムアドミニストレーションガイド』を検索してください</block>
@@ -7867,4 +7855,20 @@
   <block id="b8a901030a76c92bf9e4426d81439fa5" category="list-text"><block ref="b8a901030a76c92bf9e4426d81439fa5" category="inline-link-macro-rx"></block></block>
   <block id="3f98fa9dd0068de7a3158d3cefe04024" category="list-text"><block ref="3f98fa9dd0068de7a3158d3cefe04024" category="inline-link-macro-rx"></block></block>
   <block id="aa366b5fc2f01c678bba52692905f43c" category="list-text"><block ref="aa366b5fc2f01c678bba52692905f43c" category="inline-link-macro-rx"></block></block>
+  <block id="a2960939186ae78b824d694e2cbba800" category="inline-link">CLI での管理の概要</block>
+  <block id="7ef4f9cbea79ce55b05d13fd4d4c880d" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。を参照してください<block ref="b6c3385b7fdb69cc66015a30ca89eb46" category="inline-link-rx"></block>。</block>
+  <block id="518d2076bf387a28038f7558530bb987" category="inline-link">CLI での NetApp Encryption の概要</block>
+  <block id="a0ad8f5b8d13f1cd5ef039b68ed21700" category="list-text">の該当する手順を使用して、ストレージまたはボリュームの暗号化機能をリストアします<block ref="48a668c3219947c390bb7b4ff0fcb822" category="inline-link-rx"></block>。</block>
+  <block id="0e1eef439b73568e7a348e3559e18284" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。を参照してください<block ref="9ce22438324028a90c90ac456cc8dc62" category="inline-link-rx"></block>。</block>
+  <block id="cd1ac451f56a61cd6eee3fed14eb8119" category="list-text">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なノードの資格と正常性に「 false 」と表示される場合は、障害のあるノードをシャットダウンする前に問題を修正する必要があります。を参照してください<block ref="b6c3385b7fdb69cc66015a30ca89eb46" category="inline-link-rx"></block>。</block>
+  <block id="673f7a1f10ce14ef29b06ba53cf1e5d7" category="inline-link">CLI での NetApp Encryption の概要</block>
+  <block id="ed20ee3e54ecf9b3b63f4e11ff820fb4" category="paragraph"><block ref="ed20ee3e54ecf9b3b63f4e11ff820fb4" category="inline-link-rx"></block></block>
+  <block id="459527cf1ec141d19f1b0f88f8c19905" category="inline-link">ディスクとアグリゲートの概要</block>
+  <block id="c917987d5d8844333d3271b88c9ef8ec" category="paragraph"><block ref="c917987d5d8844333d3271b88c9ef8ec" category="inline-link-rx"></block></block>
+  <block id="8476dfce11f0cbc3ca6b362cdd158c8f" category="list-text">NetApp Storage Encryption を使用している場合は、の「 SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります<block ref="b6c3385b7fdb69cc66015a30ca89eb46" category="inline-link-rx"></block>。</block>
+  <block id="e336b31ee5508850cb2188072c64f036" category="paragraph"><block ref="e336b31ee5508850cb2188072c64f036" category="inline-link-macro-rx"></block></block>
+  <block id="0ab54354ff641ba8f3492f71c03aa435" category="list-text">NS224 ドライブシェルフをストレージスイッチ経由でケーブル接続します。</block>
+  <block id="d1f671afbf5d4ca47b95e86f70c6bcc1" category="list-text">ストレージスイッチを設置します。</block>
+  <block id="4aaebba2a5287c74eb41bf080e6d1fe4" category="list-text">使用しているプラットフォームモデルでサポートされているストレージスイッチやケーブルなどのハードウェアを確認します。</block>
+  <block id="f1832f4de88037c446f0b7e9c0163aaa" category="paragraph">ドライブの所有権を削除するための手順は、ディスクとアグリゲートのコンテンツに含まれています。</block>
 </blocks>

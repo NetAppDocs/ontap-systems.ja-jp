@@ -51,7 +51,7 @@ NOTE: この手順を取り外すディスクシェルフにアグリゲート�
 ====
 ディスクドライブの所有権を削除する手順では、ディスク所有権の自動割り当てを無効にする必要があります。ディスク所有権の自動割り当ては、この手順の最後で再度有効にします。
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html["ONTAP 9 ディスクとアグリゲートパワーガイド"]
+https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html["ディスクとアグリゲートの概要"]
 
 ====
 * ノードが 3 つ以上の clustered ONTAP システムでは、定期的なメンテナンスを実行していない HA ペアにイプシロンを再割り当てすることを推奨します。

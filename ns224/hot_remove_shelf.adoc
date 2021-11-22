@@ -32,7 +32,10 @@ NOTE: この手順を取り外すシェルフにアグリゲートが含まれ�
 所有権情報を削除したスペアドライブは、必要に応じて別のノードに適切に統合できます。
 
 +
-ドライブの所有権を削除する手順は、にあります http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html["ONTAP 9 ディスクとアグリゲートパワーガイド"]。
+ドライブの所有権を削除するための手順は、ディスクとアグリゲートのコンテンツに含まれています。
+
++
+https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html["ディスクとアグリゲートの概要"]
 
 
 

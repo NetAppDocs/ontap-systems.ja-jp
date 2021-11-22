@@ -22,7 +22,7 @@ https://hwu.netapp.com["NetApp Hardware Universe の略"]
 ONTAP のドキュメントには、 SED の交換前と交換後に実行する必要がある手順も記載されています。
 
 +
-https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["ONTAP 9 ネットアップ暗号化パワーガイド"]
+https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["CLI での NetApp Encryption の概要"]
 
 * システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、テクニカルサポートにお問い合わせください。
 * 取り外すドライブで障害が発生していることを確認します。
