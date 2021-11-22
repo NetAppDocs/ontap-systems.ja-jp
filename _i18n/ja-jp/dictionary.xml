@@ -5779,7 +5779,6 @@
   <block id="60f0e4a73edf1a4e40be1d8fff5656f6" category="paragraph">PCIe モジュールを交換したら、コントローラモジュールをリブートする必要があります。</block>
   <block id="2f77598cc1406917571281533b6a7290" category="list-text">ノードが LOADER プロンプトに表示されている場合は、ノードをブートし、システム ID が一致していないことを警告するプロンプトが表示されたら「 y' 」と入力して、システム ID の上書きを求めるプロンプトを表示します。「 bye</block>
   <block id="074956b98e6ab62b7ae2bf9b8699df64" category="list-text">システムが、 40 GbE NIC またはオンボードポート上で 10 GbE クラスタインターコネクトおよびデータ接続をサポートするように構成されている場合、メンテナンスモードから「 nicadmin convert 」コマンドを使用して、これらのポートを 10 GbE 接続に変換します。</block>
-  <block id="4c3cf5e78e6dc7a5f6353e3ff29d3ed8" category="doc">AFF A700 および FAS900 システムのマニュアル</block>
   <block id="a807e98301721a3033173dc23ac9fd93" category="summary">NVRAM10 バッテリを搭載したデステージコントローラ電源モジュール（ DCPM ）をホットスワップするには、障害が発生した DCPM モジュールの場所を確認し、シャーシから取り外して、交換用の DCPM モジュールを取り付ける必要があります。</block>
   <block id="641f349f2152b2dcf9ef8ebb8e931ac1" category="doc">NVRAM10 バッテリを搭載したデステージコントローラ電源モジュール - AFF A700 および FAS9000 を交換します</block>
   <block id="9b9f090ead8603008076b06ff01712ce" category="paragraph">障害が発生したモジュールをシャーシから取り外す前に、交換用の DCPM モジュールを手元に置いておく必要があります。このモジュールは、取り外してから 5 分以内に交換する必要があります。DCPM モジュールをシャーシから取り外すと、他のコントローラモジュールへのフェイルオーバー以外に、 DCPM モジュールを所有するコントローラモジュールのシャットダウン保護はありません。</block>
@@ -7871,4 +7870,5 @@
   <block id="d1f671afbf5d4ca47b95e86f70c6bcc1" category="list-text">ストレージスイッチを設置します。</block>
   <block id="4aaebba2a5287c74eb41bf080e6d1fe4" category="list-text">使用しているプラットフォームモデルでサポートされているストレージスイッチやケーブルなどのハードウェアを確認します。</block>
   <block id="f1832f4de88037c446f0b7e9c0163aaa" category="paragraph">ドライブの所有権を削除するための手順は、ディスクとアグリゲートのコンテンツに含まれています。</block>
+  <block id="7882fbe8d6edf8d5b486832cb819249c" category="doc">AFF A700 および FAS9000 システムのマニュアル</block>
 </blocks>
