@@ -5828,16 +5828,11 @@
   <block id="f08fa3f1d8bff6dfbc18be0fdca6444e" category="paragraph">各 DIMM の横には LED があり、障害が発生すると点滅します。</block>
   <block id="418a022f56c1e24ab49e10afac569c94" category="list-text">DIMM をソケットに合わせ、固定ツメが所定の位置に収まるまで DIMM をそっとソケットに押し込み、交換用 DIMM を取り付けます。</block>
   <block id="680d8cf9003e2f0c6c16768d83979722" category="section-title">手順 5 ：ディスクを再割り当てする</block>
-  <block id="ab9287926b20e01ebebfb520325cd8d8" category="paragraph">設定に応じて、新しいコントローラモジュールへのディスクの再割り当てを確認するか、ディスクを手動で再割り当てする必要があります。HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。スタンドアロンシステムでは、 ID をディスクに手動で再割り当てする必要があります。</block>
-  <block id="8a9cd776bdb7ec1fd6a2824a3b085fbb" category="cell">コントローラモジュールの冗長性</block>
-  <block id="981611961ba6e02c24085bdc5f41e078" category="paragraph"><block ref="8592b02d130587c071ec54a80efd249c" category="inline-xref-macro-rx"></block></block>
-  <block id="ff1ae6511ecabe370ba88d6905922336" category="paragraph"><block ref="57d49c34af9296ba868f9fad15c57ee6" category="inline-xref-macro-rx"></block></block>
   <block id="f48da66fac9628892734da282b687412" category="list-text">交換用ノードがメンテナンス・モード（プロンプトが表示されている）の場合は ' メンテナンス・モードを終了し ' LOADER プロンプト： halt を表示します</block>
   <block id="ef5194f67c4591b47b23fc50aaadfc8b" category="list-text">交換用ノードの LOADER プロンプトからノードをブートし、システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられたら、「 y 」と入力します。</block>
   <block id="4f72f46e41b488e589d00c457c136571" category="paragraph">「 boot_ontap bye 」というプロンプトが表示されます</block>
   <block id="0a777e4b645d66ac575356b85c16ed55" category="paragraph">自動ブートが設定されている場合は、ノードがリブートします。</block>
   <block id="554a23fbeb893ba3c6cb31c09b0d481f" category="paragraph">MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster node show -fields node-systemid' コマンドの出力には、 MetroCluster 設定が通常の状態に戻るまで古いシステム ID が表示されます。</block>
-  <block id="6d87b8f31094329220213822dc00fbe7" category="section-title">2 ノード MetroCluster 構成のシステムに、システム ID を手動で再割り当てします</block>
   <block id="3bf4c288b20a882f54f61cd8cb0618a7" category="section-title">手順 6 ：ストレージとボリュームの暗号化機能をリストアする</block>
   <block id="20ea32c4685480f3b2ec6bf4a7c6ce0b" category="doc">DCPM モジュール - AFF A700 および FAS9000 を交換します</block>
   <block id="546213aeb2cbd4cabb4e9e5099416edd" category="summary">サービスを中断することなく LED USB モジュールを交換できます。</block>
@@ -7871,4 +7866,12 @@
   <block id="4aaebba2a5287c74eb41bf080e6d1fe4" category="list-text">使用しているプラットフォームモデルでサポートされているストレージスイッチやケーブルなどのハードウェアを確認します。</block>
   <block id="f1832f4de88037c446f0b7e9c0163aaa" category="paragraph">ドライブの所有権を削除するための手順は、ディスクとアグリゲートのコンテンツに含まれています。</block>
   <block id="7882fbe8d6edf8d5b486832cb819249c" category="doc">AFF A700 および FAS9000 システムのマニュアル</block>
+  <block id="71e38f927e8a1c6f9bc875e8ab8112eb" category="open-title">オプション 1 ：ほとんどの構成</block>
+  <block id="0b6c08751d3c9a2a0d92384f10b9d168" category="open-title">オプション 2 ： MetroCluster の設定</block>
+  <block id="6a925f3765a4dc795f4b5a0732579780" category="admonition-title">コントローラが MetroCluster 内にある</block>
+  <block id="56064382d522717971cdb206043bc575" category="open-title">オプション 3 ： 2 ノード MetroCluster</block>
+  <block id="b2fdb7d98e0aecd7d98c266cea50e1e4" category="paragraph">HA ペア構成と 2 ノード MetroCluster 構成のどちらを使用しているかに応じて、新しいコントローラモジュールへのディスクの再割り当てを確認するか、ディスクを手動で再割り当てする必要があります。</block>
+  <block id="934d0bdda7a0d1a8822fd442720c5972" category="paragraph">新しいコントローラへのディスクの再割り当て方法については、次のいずれかのオプションを選択します。</block>
+  <block id="32f251bc81f643cafcff8ad711b81b00" category="open-title">オプション 1 ：検証 ID （ HA ペア）</block>
+  <block id="a5d68caf62cce2afa4e8ca12ce07943a" category="open-title">オプション 2 ： ID の再割り当て（ MetroCluster 設定）</block>
 </blocks>

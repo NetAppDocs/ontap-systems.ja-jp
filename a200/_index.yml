@@ -8,7 +8,7 @@ indexpage:
   - title: 設置とセットアップ
     links:
     - title: すべての構成
-      url: "/install-setup-linkout.html"
+      url: "/install-setup.html"
   - title: メンテナンス
     links:
     - title: ブートメディア
