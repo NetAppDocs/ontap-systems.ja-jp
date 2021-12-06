@@ -20,7 +20,10 @@ summary: シャーシを交換するには、コントローラをシャット�
 シャーシ内のノードを新しいシャーシに移動する前に、ノードをシャットダウンする必要があります。
 
 .このタスクについて
-* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なノードの資格と正常性に「 false 」と表示される場合は、障害のあるノードをシャットダウンする前に問題を修正する必要があります。を参照してください https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"]。
+* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なノードで適格性と正常性について「 false 」と表示される場合は、障害のあるノードをシャットダウンする前に問題を修正する必要があります。
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html["_ ONTAP 9 システムアドミニストレーションリファレンス _"]
+
 * AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
 +
 次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
@@ -48,24 +51,25 @@ cluster ha modify -configured false 「 storage failover modify -node node0 -ena
 「 storage failover modify -node node0 -enabled false 」という名前のノードが追加されました
 
 |===
-. 停止を確認するプロンプトが表示されたら 'y' を押してノードを停止します 'system node halt -node node_name
+. 停止を確認するプロンプトが表示されたら 'y' を押してノードを停止します 'system node halt -node _node_name _`
 +
 次のような確認メッセージが表示されます。
 
 +
 [listing]
 ----
-Warning: Rebooting or halting node
-"node_name" in an HA-enabled cluster may result in client disruption or data access
-failure. To ensure continuity of service, use the "storage
-failover takeover" command. Are you sure you want to halt node
-"node_name"? {y|n}:
+Warning: This operation will cause node "node-name" to be marked as unhealthy. Unhealthy nodes do not participate in quorum voting. If the node goes out of service and one more node goes out of service there will be a data serving failure for the entire cluster. This will cause a client disruption. Use "cluster show" to verify cluster state. If possible bring other nodes online to improve the resiliency of this cluster.
+
+Do you want to continue? {y|n}:
 ----
 +
 
 NOTE: シャーシを交換する前にシステムのクリーンシャットダウンを実行し、不揮発性メモリ（ NVMEM ）内の書き込み前のデータが失われないようにする必要があります。NVMEM LED の点滅は、ディスクに保存されていないデータが NVMEM にあることを示しています。ノードをリブートし、この手順の先頭からやり直してください。ノードのクリーンシャットダウンに繰り返し失敗すると、ディスクに保存されていないデータが失われる可能性があります。
 
-. 該当する場合は、 2 番目のノードを停止して、 HA ペア構成でクォーラムエラーメッセージが表示されないようにします。「 system node halt -node second_node_name -ignore-quorum -warnings true 」
+. 該当する場合は、 2 番目のノードを停止して、 HA ペア構成でクォーラムエラーメッセージが表示されないようにします。「 system node halt -node _second_node_name -ignore-quorum -warnings true -skip-lif-migration-before-shutdown true 」
++
+プロンプトが表示されたら回答 'y' 。
+
 
 
 

@@ -1608,10 +1608,8 @@
   <block id="8d6f30824233e0351fc71f18fbb5c436" category="paragraph">cluster ha modify -configured false 「 storage failover modify -node node0 -enabled false 」という名前になります</block>
   <block id="4252cc22782c7895d045823c51f6d877" category="paragraph">クラスタ内のノードが 3 つ以上</block>
   <block id="b2aa61dcee4d7b77fcd001973469ddde" category="paragraph">「 storage failover modify -node node0 -enabled false 」という名前のノードが追加されました</block>
-  <block id="daa68b2935afad927933ccd5d0f6f182" category="list-text">停止を確認するプロンプトが表示されたら 'y' を押してノードを停止します 'system node halt -node node_name</block>
   <block id="481250f3e8ec41b0e994305d8fc52b4a" category="paragraph">次のような確認メッセージが表示されます。</block>
   <block id="acb6df6704b040c68684e454411f2742" category="admonition">シャーシを交換する前にシステムのクリーンシャットダウンを実行し、不揮発性メモリ（ NVMEM ）内の書き込み前のデータが失われないようにする必要があります。NVMEM LED の点滅は、ディスクに保存されていないデータが NVMEM にあることを示しています。ノードをリブートし、この手順の先頭からやり直してください。ノードのクリーンシャットダウンに繰り返し失敗すると、ディスクに保存されていないデータが失われる可能性があります。</block>
-  <block id="79b0702a76728bde4eaf7ed7010cdc7e" category="list-text">該当する場合は、 2 番目のノードを停止して、 HA ペア構成でクォーラムエラーメッセージが表示されないようにします。「 system node halt -node second_node_name -ignore-quorum -warnings true 」</block>
   <block id="cf55af4b4668a579d36bfd91785ecbec" category="summary">NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。</block>
   <block id="db4547d0ddae50a76aa47cf54e9d15ae" category="doc">ノード AFF A250 をシャットダウンします</block>
   <block id="130b18edff1b7e2377d35d657b1f8a53" category="list-text">障害ノードに LOADER プロンプトが表示されていない場合は、次の手順を実行します。</block>
@@ -5227,7 +5225,6 @@
   <block id="7d9916a1994158d9bcb9173341fcd47c" category="paragraph">HA ペアに十分な数の使用可能な RoCE 対応ポートがなく、プラットフォームモデルで RoCE 対応の PCIe カードまたは I/O モジュールの使用がサポートされている場合は、追加のカードまたは I/O モジュールを、プラットフォームモデルでサポートされている正しいコントローラスロットに取り付けておく必要があります。</block>
   <block id="1732f42cb90c2f75f01fe91247e128c3" category="paragraph">専用でない RoCE 対応ポートは、ストレージ用に設定する必要があります（ネットワークでは使用できません）。</block>
   <block id="0addf6844bafe9c41ea7de1b0facf307" category="paragraph"><block ref="2110c63cffe5fc725c4243d7595d7a36" category="inline-xref-macro-rx"></block></block>
-  <block id="952d0ab2aada5c0bcc6640b363de44a1" category="list-text">AFF A700 または ASA A700HA ペアがある場合、初期 NS224 ドライブシェルフをホットアドする（ HA ペアに NS224 ドライブシェルフがない）場合は、コアダンプ（コアファイルの格納）をサポートするために、各コントローラにコアダンプモジュール（ X9170a 、 NVMe 1TB SSD ）を取り付ける必要があります。</block>
   <block id="40b9aa2a1398aaa422dac35a64ae5873" category="list-text">HA ペアのシェルフ数が、サポートされる最大シェルフ数よりも少なくともホットアドするシェルフの数だけ少ない必要があります。</block>
   <block id="ad77a3083357fd77bd7e8fdbdf159740" category="paragraph">シェルフをホットアドしたあとは、 HA ペアでサポートされる最大シェルフ数を超えることはできません。</block>
   <block id="0cba540a6f27fb2ed5b8694332213f9d" category="list-text">すでに NS224 シェルフがある HA ペアにシェルフをホットアドする場合、 HA ペアにストレージケーブル接続に関するエラーメッセージを表示することはできず、マルチパス HA 構成でケーブル接続する必要があります。</block>
@@ -5274,8 +5271,6 @@
   <block id="b5b0f2dff5bdcc9e85cf639a6245b998" category="list-text">手順 3 と 4 を繰り返します。</block>
   <block id="97e5b69d6a085b09c71789a6b191bdbd" category="admonition">最初のコントローラのリブートが完了している必要があります。</block>
   <block id="b4c2dd2542e47ff1364abd95f6610ff8" category="list-text">両方のコントローラモジュールの専用でないポートがストレージ用に設定されていることを確認します。「 storage port show 」</block>
-  <block id="b94b6781be776e63efd0961838259dd1" category="section-title">AFF A700 、 ASA A700 、 ASA A800 、 AFF A800 、 AFF A400 を準備 または ASA A400HA ペアを使用して 2 台目のシェルフをホットアドします</block>
-  <block id="8e9bedb9a49dd2e9965ca4e4e66e1794" category="paragraph">AFF A700 、 ASA A700 、 AFF A800 、 ASA A800 、 AFF A400 を使用している場合： または、各コントローラの 1 組の RoCE 対応ポートに 1 台の NS224 ドライブシェルフが接続された ASA A400HA ペアでは、各コントローラの両方のポートセットにシェルフのケーブルを再接続する必要があります（追加の RoCE 対応 PCIe カードまたは I/O モジュールを取り付けたあと）。 2 台目のシェルフをホットアドする前に、</block>
   <block id="952ea6916ecd5cb89449477521dab5cb" category="list-text">取り付けた RoCE 対応 PCIe カードまたは I/O モジュールのポートを有効にしておく必要があります。</block>
   <block id="5f73e21cfc57f9099894052fde4bfc56" category="list-text">マルチパス HA 接続を使用しているシェルフでは、ポート接続の再接続によって無停止の手順が使用されます。</block>
   <block id="00fb5d894e369d181617f17a9dec8a1b" category="paragraph">2 台目のシェルフをホットアドしたときに両方のシェルフの耐障害性に優れた接続が確立されるように、各コントローラの両方のポートセットに最初のシェルフのケーブルを再接続します。</block>
@@ -5283,18 +5278,12 @@
   <block id="0077637f8f5fcac1587cab5699dba4dc" category="list-text">使用しているプラットフォームモデルに応じて、各コントローラの両方のセットのポートで既存のシェルフのケーブルを再接続します。</block>
   <block id="7e273a22e6f4b495323284cd54002213" category="admonition">ケーブルを移動する場合、あるポートからケーブルを外して別のポートに接続するまでの待機時間は不要です。</block>
   <block id="7e4c7e7366de7251794bd2cee31785b8" category="cell">構成</block>
-  <block id="91fe85bf2aad836a87a981b776864ac3" category="paragraph">AFF A700 または ASA A700 の HA ペア</block>
   <block id="13a2b5da1f4aef417cf381ed955f6b1e" category="admonition">手順では、既存のシェルフが各コントローラのスロット 3 にある RoCE 対応の I/O モジュールにケーブル接続されていることを前提としています。</block>
   <block id="ce2468b66455462f68b8eef51607d931" category="paragraph">必要に応じて、 2 台のシェルフ構成の既存の 1 台のシェルフとケーブル接続されたシェルフを示すケーブル構成図を参照できます。</block>
-  <block id="65c7d114429709c3019026ef7998fe7e" category="paragraph"><block ref="821721df32d20cbee340d68236a84244" category="inline-xref-macro-rx"></block></block>
   <block id="ca874efe99329d51be90677d6dba226f" category="list-text">コントローラ A で、スロット 3 のポート b からスロット 7 のポート b にケーブルを接続します</block>
   <block id="7fade3ed4792ef4e89e2ae6000199479" category="list-text">コントローラ B についても、同じケーブルの移動を繰り返します</block>
-  <block id="5ed60aed90e75a0ecd75f48f693a2336" category="paragraph">AFF A800 または ASA A800 HA ペア</block>
   <block id="b4e736e39f8ce14e195a6dd85eadfa52" category="admonition">手順では、既存のシェルフが各コントローラのスロット 5 にある RoCE 対応 PCIe カードにケーブル接続されていることを前提としています。</block>
-  <block id="c1c17da4033211c4e98fca2f4ccc3afe" category="paragraph"><block ref="da265c6d5037f7df79f83bc7417c9f0c" category="inline-xref-macro-rx"></block></block>
   <block id="d3027cd90f40482fe406a3bf213577a2" category="list-text">コントローラ A で、スロット 5 のポート 2 （ e5b ）からスロット 3 のポート 2 （ e3b ）にケーブルを移動します。</block>
-  <block id="51dafa8f3b7a6eaa983c8f0558b34de8" category="paragraph">AFF A400 または ASA A400 HA ペア</block>
-  <block id="10ee1f510ac40554ffc295f5dd81ff05" category="paragraph"><block ref="60816734d11467be1eef08a4c3f79614" category="inline-xref-macro-rx"></block></block>
   <block id="1709a2561f0145b5df496e6917a4f72b" category="list-text">コントローラ A で、ポート e0d とスロット 5 のポート 2 （ e5b ）をケーブルで接続します。</block>
   <block id="d39331f2882996e7bd91bd33be8e8eda" category="list-text">ケーブル接続されているシェルフが正しくケーブル接続されていることを確認します。</block>
   <block id="f585cc2236674d2428b635421c54ecfc" category="section-title">ホットアド用のドライブ所有権を手動で割り当てる準備をします</block>
@@ -5330,8 +5319,6 @@
   <block id="36dad54a495121233a847704d6bf5a6b" category="paragraph">ケーブルの両端を接続すると、シェルフポートとコントローラポートの LNK （緑色） LED が点灯します。ポートの LNK LED が点灯しない場合は、ケーブルを再接続してください。</block>
   <block id="d337e0e180d9a5b8e29fe40b9935de95" category="list-text">次の図は、シェルフ NSM ポート、 e0a 、 e0b を物理的に特定するのに役立ちます。</block>
   <block id="a73fdad937d5d9186c5991210a3247b5" category="image-alt">DRW ns224 バックポート</block>
-  <block id="37041eb02ef3eff1f59ee4aef615fb56" category="section-title">FAS500f 、 AFF A250 、または ASA A250HA ペアのホットアドシェルフをケーブル接続します</block>
-  <block id="d74708a3f99678e68a371c67f4784875" category="paragraph">ストレージの追加が必要になったときは、 NS224 ドライブシェルフを FAS3500f 、 AFF A250 、または ASA A250HA ペアにホットアドできます。</block>
   <block id="6c4ae44d1114274bf4744f7a456ce07c" category="list-text">シェルフを設置し、電源をオンにして、シェルフ ID を設定しておく必要があります。</block>
   <block id="373a35978efc6b28d1b1d225b662f5db" category="paragraph"><block ref="4688946b74942e3697fd11a0bd3e0972" category="inline-xref-macro-rx"></block></block>
   <block id="badce03c5c81a64063848e31681c2b29" category="paragraph">プラットフォームシャーシの背面から見た場合、左側の RoCE 対応カードポートはポート「 a 」（ e1a ）で、右側のポートはポート「 b 」（ e1b ）です。</block>
@@ -5344,8 +5331,6 @@
   <block id="7383703619146a59a96c04d7ca7f4542" category="list-text">ホットアドしたシェルフのケーブルが正しく接続されていることを確認します。</block>
   <block id="0c9aa1b8a23b895dc34c3de2f2a905b7" category="list-text">この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。</block>
   <block id="e408fe4a40b4e2b5b430bb1a2e4b56a1" category="paragraph"><block ref="054067282f59c2ea6008fdf8f0b78dea" category="inline-xref-macro-rx"></block></block>
-  <block id="ed27e90283f2a4643c92a8eee3c82df8" category="section-title">AFF A700 または ASA A700HA ペアのホットアドシェルフをケーブル接続します</block>
-  <block id="27d7faa1130d4259367b60a2008e56bf" category="paragraph">AFF A700 または ASA A700HA ペアの NS224 ドライブシェルフをケーブル接続する方法は、ホットアドするシェルフの数、およびコントローラモジュールで使用する RoCE 対応のポートセット（ 1 つまたは 2 つ）の数によって異なります。</block>
   <block id="b6af7589a2e931c176cc7b717fbf652e" category="list-text">各コントローラモジュールで 1 組の RoCE 対応ポート（ RoCE 対応 I/O モジュールが 1 つ）を使用してシェルフを 1 台ホットアドする場合、 HA ペア内の NS224 シェルフのみである場合は、次の手順を実行します。</block>
   <block id="6707f4de652ae190deb895e02ccfa38c" category="admonition">この手順では、各コントローラモジュールのスロット 7 ではなく、スロット 3 に RoCE 対応の I/O モジュールが搭載されていることを前提としています。</block>
   <block id="63efd7f12bfa615588bf813fbcf494a5" category="list-text">シェルフ NSM A ポート e0a をコントローラ A のスロット 3 のポートにケーブル接続します</block>
@@ -5373,8 +5358,6 @@
   <block id="0dcadfb972a7b539c769d330f7ccc286" category="list-text">手順 3 に進みます。</block>
   <block id="44602264e094d019e88a336cd27d0156" category="paragraph">次の図は、 1 台目と 2 台目のホットアドシェルフのケーブル接続を示しています。</block>
   <block id="bda29c65071b0b49cc9a79c7f3ba0ceb" category="image-alt">DRW ns224 A700 2 シェルフ</block>
-  <block id="2e2d0101182cba42ae08504ecdad184f" category="section-title">AFF A800 または ASA A800HA ペアのホットアドシェルフをケーブル接続します</block>
-  <block id="b8cfa9af8ada463c1b7c233764f91c3b" category="paragraph">AFF A800 または ASA A800HA ペアの NS224 ドライブシェルフのケーブル接続方法は、ホットアドするシェルフの数、およびコントローラモジュールで使用する RoCE 対応ポートセット（ 1 つまたは 2 つ）の数によって異なります。</block>
   <block id="179bfd1f3e4cce16b8f820fa18b540ae" category="list-text">各コントローラモジュールで 1 組の RoCE 対応ポート（ RoCE 対応 PCIe カードを 1 枚）を使用してシェルフを 1 台ホットアドする場合、 HA ペア内の NS224 シェルフのみである場合は、次の手順を実行します。</block>
   <block id="a7f9eb9f8d6afdd5bc315ff6184f353b" category="admonition">この手順では、 RoCE 対応の PCIe カードがスロット 5 に取り付けられていることを前提としています。</block>
   <block id="7c45e35cf1f1269da7f239bbce34287a" category="list-text">シェルフ NSM A ポート e0a をコントローラ A のスロット 5 ポート a にケーブル接続します</block>
@@ -5393,8 +5376,6 @@
   <block id="a8d608f77f3fbb4c1156978cc97e2ec4" category="list-text">NSM B のポート e0b をコントローラ A のスロット 5 のポート B にケーブル接続します</block>
   <block id="75a57e4a236226bc25c09e120aeab4c5" category="paragraph">次の図は、 2 台のホットアドシェルフのケーブル接続を示しています。</block>
   <block id="9613ef0ded970898834cffbf203f3c72" category="image-alt">DRW ns224 A800 2 シェルフ</block>
-  <block id="bf9edd99bcf1eebeb014b9ecf77a0dac" category="section-title">AFF A400 または ASA A400HA ペア用のホットアドシェルフをケーブル接続します</block>
-  <block id="e2c9311df978d14e858ad7c413ff7a14" category="paragraph">AFF A400 または ASA A400HA ペアの NS224 ドライブシェルフのケーブル接続方法は、ホットアドするシェルフの数およびコントローラモジュールで使用する RoCE 対応ポートセット（ 1 つまたは 2 つ）の数によって異なります。</block>
   <block id="357240bb37125b5a8d9c9fe59aa684e9" category="list-text">各コントローラモジュールで 1 セットの RoCE 対応ポート（オンボード RoCE 対応ポート）を使用してシェルフを 1 台ホットアドする場合、 HA ペア内の NS224 シェルフのみになるようにするには、次の手順を実行します。</block>
   <block id="22f0e629287a1d1f90741ddf77caa944" category="list-text">シェルフ NSM A ポート e0a をコントローラ A のポート e0c にケーブル接続します。</block>
   <block id="8c937d6d94aae90362b1dc41da2b9988" category="list-text">シェルフ NSM A のポート e0b をコントローラ B のポート e0d にケーブル接続します。</block>
@@ -5409,9 +5390,7 @@
   <block id="f192386ba82b03da6277a09d4a2c63ac" category="list-text">NSM B のポート e0b をコントローラ A のポート e0d にケーブル接続します。</block>
   <block id="aa976c2217ca2de5e9d1001418c7b09a" category="image-alt">DRW ns2244002 シェルフ</block>
   <block id="f38b00317e342e10d9cf44073d00e94e" category="list-text">この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じてドライブの自動割り当てを再度有効にする必要があります。</block>
-  <block id="4c2f58fc2dbb49eb7a30c49639c52748" category="section-title">AFF A320HA ペアのホットアドシェルフをケーブル接続します</block>
   <block id="e708da297b918a1363bc58facb9105b4" category="paragraph">ストレージの追加が必要になった場合は、 2 台目の NS224 ドライブシェルフを既存の HA ペアにケーブル接続します。</block>
-  <block id="8c2d77fe53c7b0651494ab28a403f3bf" category="paragraph">この手順では、 AFF A320HA ペアに既存の NS224 シェルフがあり、 2 台目のシェルフをホットアドすることを前提としています。</block>
   <block id="41165b98d83f72cbb439ce5bdb9e71da" category="list-text">シェルフをコントローラモジュールにケーブル接続します。</block>
   <block id="b4cef19f20771aa5828eb17c8503f9b4" category="list-text">NSM A ポート e0a をコントローラ A のポート e0e にケーブル接続します。</block>
   <block id="e3602d852a9feaea5973c0c3f70de818" category="list-text">NSM A のポート e0b をコントローラ B のポート e0b にケーブル接続します。</block>
@@ -7854,7 +7833,6 @@
   <block id="518d2076bf387a28038f7558530bb987" category="inline-link">CLI での NetApp Encryption の概要</block>
   <block id="a0ad8f5b8d13f1cd5ef039b68ed21700" category="list-text">の該当する手順を使用して、ストレージまたはボリュームの暗号化機能をリストアします<block ref="48a668c3219947c390bb7b4ff0fcb822" category="inline-link-rx"></block>。</block>
   <block id="0e1eef439b73568e7a348e3559e18284" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。を参照してください<block ref="9ce22438324028a90c90ac456cc8dc62" category="inline-link-rx"></block>。</block>
-  <block id="cd1ac451f56a61cd6eee3fed14eb8119" category="list-text">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なノードの資格と正常性に「 false 」と表示される場合は、障害のあるノードをシャットダウンする前に問題を修正する必要があります。を参照してください<block ref="b6c3385b7fdb69cc66015a30ca89eb46" category="inline-link-rx"></block>。</block>
   <block id="673f7a1f10ce14ef29b06ba53cf1e5d7" category="inline-link">CLI での NetApp Encryption の概要</block>
   <block id="ed20ee3e54ecf9b3b63f4e11ff820fb4" category="paragraph"><block ref="ed20ee3e54ecf9b3b63f4e11ff820fb4" category="inline-link-rx"></block></block>
   <block id="459527cf1ec141d19f1b0f88f8c19905" category="inline-link">ディスクとアグリゲートの概要</block>
@@ -7874,4 +7852,30 @@
   <block id="934d0bdda7a0d1a8822fd442720c5972" category="paragraph">新しいコントローラへのディスクの再割り当て方法については、次のいずれかのオプションを選択します。</block>
   <block id="32f251bc81f643cafcff8ad711b81b00" category="open-title">オプション 1 ：検証 ID （ HA ペア）</block>
   <block id="a5d68caf62cce2afa4e8ca12ce07943a" category="open-title">オプション 2 ： ID の再割り当て（ MetroCluster 設定）</block>
+  <block id="3893848bb7e8e3f5ec6b547e5281f1f8" category="list-text">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なノードで適格性と正常性について「 false 」と表示される場合は、障害のあるノードをシャットダウンする前に問題を修正する必要があります。</block>
+  <block id="4ace8a3cd99d06318b85eaa42ffd9786" category="inline-link">_ ONTAP 9 システムアドミニストレーションリファレンス _</block>
+  <block id="0194385554b18b3f5ce7dc105495885e" category="paragraph"><block ref="0194385554b18b3f5ce7dc105495885e" category="inline-link-rx"></block></block>
+  <block id="8cb7716be47a4efa4afe82c12815cb79" category="list-text">停止を確認するプロンプトが表示されたら 'y' を押してノードを停止します 'system node halt -node _node_name _`</block>
+  <block id="842cdd4dec84e54705b2d07255fbd559" category="list-text">該当する場合は、 2 番目のノードを停止して、 HA ペア構成でクォーラムエラーメッセージが表示されないようにします。「 system node halt -node _second_node_name -ignore-quorum -warnings true -skip-lif-migration-before-shutdown true 」</block>
+  <block id="7da65b5a10b69b45b490009ac07696ff" category="paragraph">プロンプトが表示されたら回答 'y' 。</block>
+  <block id="c86ca2ad8b18f1b66eec5105c703ce0a" category="list-text">AFF A700 HA ペアを使用していて、初期の NS224 ドライブシェルフをホットアドする場合（ HA ペアに NS224 ドライブシェルフがない場合）は、コアダンプ（コアファイルの格納）をサポートするために、各コントローラにコアダンプモジュール（ X9170a 、 NVMe 1TB SSD ）を取り付ける必要があります。</block>
+  <block id="b979e87e6bde70f013c6af59e1fa73aa" category="list-text">NS224 シェルフをサポートする ASA HA ペアがある場合は、この手順を使用できます。</block>
+  <block id="4bf41d007ddcf618082b8ef148ac2700" category="section-title">AFF A700 、 AFF A800 、または AFF A400 の HA ペアを準備して、 2 台目のシェルフをホットアドします</block>
+  <block id="60b5c0b6d97d35bee9d9ee0e548ca4d4" category="paragraph">AFF A700 、 AFF A800 、または AFF A400 を使用している場合、 1 台の NS224 ドライブシェルフを各コントローラの 1 組の RoCE 対応ポートにケーブル接続すると、シェルフのケーブルを再接続する必要があります（ RoCE 対応の PCIe カードまたは I/O モジュールを追加で取り付けたあと）。 2 台目のシェルフをホットアドする前に、各コントローラの両方のセットのポートにまたがっている必要があります。</block>
+  <block id="7e874a7e7fce6d08319e452556499a17" category="paragraph">AFF A700 HA ペア</block>
+  <block id="863ee9a0c8ca40928975158c8441cb3e" category="paragraph"><block ref="8b0dd5f6450b331119d433eade9d39d0" category="inline-xref-macro-rx"></block></block>
+  <block id="d191ea6e7cb4a619eb566229aa99b285" category="paragraph">AFF A800 HA ペア</block>
+  <block id="faca4b5bb9a5da5b47d1425ef2489bdf" category="paragraph"><block ref="8417f927f631db9ff6dcfc207992ae5a" category="inline-xref-macro-rx"></block></block>
+  <block id="299be2017fe243bf0cb27752cb61cba4" category="paragraph">AFF A400 HA ペア</block>
+  <block id="35abee2b20175ae748c82f6ba4453ac1" category="paragraph"><block ref="2d20d554d868477c9c895109bac068ae" category="inline-xref-macro-rx"></block></block>
+  <block id="f1f8b8def80b9337373513998dd13c3e" category="section-title">FAS500f または AFF A250 HA ペアのホットアドシェルフをケーブル接続します</block>
+  <block id="f0fad2647eb722df1f95d7cea636dfac" category="paragraph">ストレージの追加が必要になったときは、 NS224 ドライブシェルフを FAS3500f または AFF A250 HA ペアにホットアドできます。</block>
+  <block id="075ac783ee242c66ec7ef26475fd212b" category="section-title">AFF A700 HA ペアのホットアドシェルフをケーブル接続します</block>
+  <block id="4360e8fa5648650972135e4f29ffa1bf" category="paragraph">AFF A700 HA ペアの NS224 ドライブシェルフのケーブル接続方法は、ホットアドするシェルフの数、およびコントローラモジュールで使用する RoCE 対応ポートセット（ 1 つまたは 2 つ）の数によって異なります。</block>
+  <block id="5c817f2686998b5a889ca66df6194716" category="section-title">AFF A800 HA ペアのホットアドシェルフをケーブル接続します</block>
+  <block id="660dcbef3f501768ac090c6921226dbc" category="paragraph">AFF A800 HA ペアの NS224 ドライブシェルフのケーブル接続方法は、ホットアドするシェルフの数、およびコントローラモジュールで使用する RoCE 対応ポートセット（ 1 つまたは 2 つ）の数によって異なります。</block>
+  <block id="873efd8427437501798d979ea439809c" category="section-title">AFF A400 HA ペア用のシェルフをホットアドします</block>
+  <block id="c3c5b5066f403337e9cba1d236288bb5" category="paragraph">AFF A400 HA ペアの NS224 ドライブシェルフのケーブル接続方法は、ホットアドするシェルフの数、およびコントローラモジュールで使用する RoCE 対応ポートセット（ 1 つまたは 2 つ）の数によって異なります。</block>
+  <block id="b994ebf3b12ef21aee27b63036342d83" category="section-title">AFF A320 HA ペアのホットアドシェルフをケーブル接続します</block>
+  <block id="0d0422686a7d332d6a719d1fb6e38772" category="paragraph">この手順は、 AFF A320 HA ペアに既存の NS224 シェルフがあり、 2 台目のシェルフをホットアドすることを前提としています。</block>
 </blocks>

@@ -36,7 +36,7 @@ indexpage:
     - title: 電源装置
       url: "/service-hot-swap-power-supply.html"
     - title: シェルフ LED のステータス状態
-      url: "/sas3/service-replace-power-supply.html"
+      url: "/service-monitor-leds.html"
     - title: RTC バッテリ
       url: "/sas3/service-replace-rtc-battery.html"
   - title: リソースの追加

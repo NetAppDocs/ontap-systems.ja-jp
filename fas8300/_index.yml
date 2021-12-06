@@ -30,7 +30,7 @@ indexpage:
     - title: DIMM
       url: "/dimm-replace.html"
     - title: ファン
-      url: "/fan-replace.html"
+      url: "/fan-swap-out.html"
     - title: NVDIMM
       url: "/dimm-replace.html"
     - title: NVDIMM バッテリ
@@ -38,7 +38,7 @@ indexpage:
     - title: PCIe カードまたはメザニンカード
       url: "/pci-cards-and-risers-replace.html"
     - title: 電源装置
-      url: "/power-supply-swapout.html"
+      url: "/power-supply-replace.html"
     - title: RTC バッテリ
       url: "/rtc-battery-replace.html"
   - title: 詳細はこちら
