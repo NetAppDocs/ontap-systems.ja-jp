@@ -14,14 +14,14 @@ NS224 ドライブシェルフを（直接接続型ストレージではなく�
 
 * NS224 ドライブシェルフをストレージスイッチ経由でケーブル接続します。
 +
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2876580["スイッチ接続型 NS224 ドライブシェルフのケーブル接続に関する情報"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2876580["スイッチ接続型 NS224 ドライブシェルフのケーブル接続に関する情報"^]
 
 * ストレージスイッチを設置します。
 +
-https://docs.netapp.com/us-en/ontap-systems-switches/index.html["AFF および FAS スイッチのマニュアル"]
+https://docs.netapp.com/us-en/ontap-systems-switches/index.html["AFF および FAS スイッチのマニュアル"^]
 
 * 使用しているプラットフォームモデルでサポートされているストレージスイッチやケーブルなどのハードウェアを確認します。
 +
-https://hwu.netapp.com["NetApp Hardware Universe の略"]
+https://hwu.netapp.com["NetApp Hardware Universe の略"^]
 
 

@@ -3913,8 +3913,6 @@
   <block id="a68a35a43540dd794ad04d22e6017f00" category="paragraph">スタンドアロンシステムでは、システムを通常の動作状態に戻す前に、新しいコントローラのシステム ID にディスクを手動で再割り当てする必要があります。</block>
   <block id="149765daf2bb4f317cf4bf88eeba26d8" category="admonition">この手順は、スタンドアロン構成のシステムにのみ適用されます。</block>
   <block id="d2022b24f11e03f2795bf79d17ee74ea" category="list-text">ディスクのメンテナンスモードでブートしていない場合は、 _replacement _node をリブートし、 Ctrl+C キーを押してブートプロセスを中断して、表示されたメニューからメンテナンスモードでブートするオプションを選択します。</block>
-  <block id="66795c2f03cea7e4de64bc8b018c1009" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、「 Y 」と入力する必要があります。</block>
-  <block id="d1bb49ecfb4b800ca513e50405928721" category="list-text">システム ID を表示します。 disk show -a</block>
   <block id="75310fe7f008a53b411e5d3ca1a800fd" category="list-text">ディスク所有者の列に表示される、古いシステム ID をメモしてください。</block>
   <block id="e354b35d5f9fcd99d43ba27d1b483c10" category="paragraph">次の例は、古いシステム ID 118073209 を示しています。</block>
   <block id="ed5045a701ec927a89cecd13b59f2648" category="list-text">ノード「 boot_ontap 」をブートします</block>
@@ -4952,10 +4950,8 @@
   <block id="e9caf8970c9cbd8e7d1c5427d3a20cf1" category="paragraph">該当するシェルフの「 _shelf_name_ 」がわからない場合は、「 storage shelf show 」コマンドを実行します。</block>
   <block id="3afc4b70c9c05bf5b1aceb2da0636da1" category="paragraph">シェルフにはロケーション LED が 3 つあります。オペレータ用ディスプレイパネルに 1 つと、各 NSM モジュールに 1 つずつです。ロケーション LED は 30 分間点灯します。同じコマンドを「 off 」オプションを使用して入力すると、これらのコマンドを無効にできます。</block>
   <block id="ee5bf2cd4b43105d31343a884728a3d4" category="list-text">交換用 DIMM を開封したら、障害が発生した DIMM を返送するときのために、すべての梱包材を保管しておいてください。</block>
-  <block id="19e012dd5ab6c884883584c00f5e050b" category="paragraph">RMA 番号を確認する場合や、交換用手順に関するその他のサポートが必要な場合は、テクニカルサポートにお問い合わせください<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>にアクセスするか、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。</block>
   <block id="36d40c496b02dc7324aae319cf2fac47" category="list-text">次のビデオまたは記載された手順に従って、 DIMM を交換します。</block>
   <block id="146c4b0d3d0462ab3c65b156bd5b6f53" category="inline-link">NS224 ドライブシェルフの DIMM の交換</block>
-  <block id="1145df079eb59f999844566d343e1bf9" category="paragraph"><block ref="1145df079eb59f999844566d343e1bf9" category="inline-link-rx"></block></block>
   <block id="f7f603a242c5acee1fd68cd2a7202563" category="list-text">交換する FRU が搭載されている NSM モジュールからケーブルを外します。</block>
   <block id="68b63efc11b1cc1408b8f55095718557" category="list-text">電源コード固定クリップを開き、電源装置から電源コードを抜きます。</block>
   <block id="e0a29acbd9bdcb48c7307027b6c4dd53" category="paragraph">電源装置には電源スイッチはありません。</block>
@@ -5014,7 +5010,6 @@
   <block id="d5b3850d37eca03c3be10401093f24dc" category="admonition">ドライブファームウェアは 2 分ごとにチェックされます。</block>
   <block id="2d45373c9232e88942b868669cd8511a" category="list-text">次のビデオでは、ドライブのホットスワップ手順の物理的な取り外しと取り付けの部分の概要を示します。</block>
   <block id="4d22e44dd713955ef08491e08f976e95" category="inline-link">NS224 ドライブシェルフ内のドライブのホットスワップ</block>
-  <block id="b978428fbc3003a8b7da4f6e80dbaabd" category="paragraph"><block ref="b978428fbc3003a8b7da4f6e80dbaabd" category="inline-link-rx"></block></block>
   <block id="01d36c3de356a203f6380095e17d5483" category="list-text">交換用ドライブのドライブ所有権を手動で割り当てる場合は、ドライブの自動割り当てを無効にする必要があります。</block>
   <block id="427dffc49ca6a83001ca0caadf14d0ed" category="admonition">シェルフ内のドライブが HA ペアの両方のコントローラモジュールで所有されている場合は、ドライブ所有権を手動で割り当てる必要があります。</block>
   <block id="ba85497a31a9938c9ee8b64479f5eb73" category="paragraph">自動ドライブ割り当てが有効になっている場合は、各コントローラモジュールの Auto Assign 列に on と表示されます。</block>
@@ -5118,16 +5113,13 @@
   <block id="e8f8b2e7fe84a76416bedc8340d89ea1" category="doc">シェルフをスイッチ接続型ストレージ -NS224 シェルフとしてケーブル接続します</block>
   <block id="a94de468f363b57c8cc1ea1b7a532a9e" category="paragraph">NS224 ドライブシェルフを（直接接続型ストレージではなく）スイッチ接続型ストレージとしてケーブル接続する必要があるシステムの場合は、表示される情報を使用してください。</block>
   <block id="afb935b1a48a04ad288c97c7899d840d" category="inline-link">スイッチ接続型 NS224 ドライブシェルフのケーブル接続に関する情報</block>
-  <block id="1785747204ca11822dd42ba32951843b" category="paragraph"><block ref="1785747204ca11822dd42ba32951843b" category="inline-link-rx"></block></block>
   <block id="97a30f090fd38397124788f1f0376eda" category="inline-link">AFF および FAS スイッチのマニュアル</block>
-  <block id="95cee0ee869d11fbc57e30dade468820" category="paragraph"><block ref="95cee0ee869d11fbc57e30dade468820" category="inline-link-rx"></block></block>
   <block id="acdfef9c5579ff3ba02ba954b42b0b9d" category="summary">電源がオンになっている NS224 ドライブシェルフおよび I/O の実行中に、障害が発生したファンを無停止で交換できます。</block>
   <block id="d7be6d5f22ae136261c4f972f836c784" category="doc">ファン -NS224 シェルフを交換してください</block>
   <block id="ad469db4a94f773cb57ea851a2258c7d" category="list-text">他の 4 つのファンを含め、システムのその他すべてのコンポーネントが正常に動作している必要があります。</block>
   <block id="19ca7e08bce4c0e124faa15fe7b1d419" category="list-text">交換用ファンを開封したら、障害が発生したファンを返送するときのために、梱包材はすべて保管しておいてください。</block>
   <block id="f35ad689c95d772c71204022636dabe5" category="list-text">次のビデオまたは記載された手順に従って、ファンを交換します。</block>
   <block id="00d1159dd7a0f5c351fdbd547850495d" category="inline-link">NS224 ドライブシェルフのファンの交換</block>
-  <block id="eedef3666327a035150816f874eeab79" category="paragraph"><block ref="eedef3666327a035150816f874eeab79" category="inline-link-rx"></block></block>
   <block id="4fe5c70371cacd7543cf54df75bedd0a" category="admonition">NSM モジュールカバーの FRU ラベルには、 5 つのファンの場所が NSM モジュールの背面の壁に沿って示されています。</block>
   <block id="5605f4aa461ce479ba2b6762822acf2b" category="list-text">障害が発生したファンを物理的に特定します</block>
   <block id="574b0c09ebc1f816ee7722cc2b16597c" category="paragraph">ファンで障害が発生すると、システムコンソールに、障害が発生したファンを示す警告メッセージが記録されます。また、ボード上のファンスロットの近くにあるファン警告（黄色） LED が点灯します。</block>
@@ -5146,7 +5138,6 @@
   <block id="74f49f6f28d9fd5e7df6f1800c601a73" category="paragraph">いずれかのコントローラのコンソールで「 storage shelf show module 」コマンドを入力して、シェルフの NSM ファームウェアのバージョンを確認できます。</block>
   <block id="553dc0c59541aeaac9552fd0e9932c27" category="paragraph">NSM ファームウェアバージョン 1.1x 以降を実行していないシェルフでは、ブートメディアを交換できません。 NSM モジュールを交換する必要があります。</block>
   <block id="ab72df24859b52c3af8d40d64d3c4050" category="inline-link-macro">NSM モジュール - NS224 シェルフを交換してください</block>
-  <block id="9cf6dc1fdff832b22185f3b448dca789" category="paragraph"><block ref="9cf6dc1fdff832b22185f3b448dca789" category="inline-link-macro-rx"></block></block>
   <block id="daeece39bd904e83241a90c8b8570c0a" category="list-text">No.1 プラスドライバが必要です。</block>
   <block id="d6d6b039d46a324ed8ec81e6ba9ff295" category="paragraph">ブートメディアをボードに固定するネジには No.1 プラスドライバが必要です。別のタイプのドライバを使用すると、ネジを外すことができます。</block>
   <block id="74e02b1a8147eff24fccd5044e563889" category="list-text">システムのその他のコンポーネントがすべて正常に動作している必要があります。</block>
@@ -5155,7 +5146,6 @@
   <block id="9d0a00a5aff4ec18c5c781787962378b" category="list-text">ブートメディアを交換したら、キットに付属する RMA 指示書に従って、障害のある部品をネットアップに返却します。</block>
   <block id="d7fc7b8a28737104902684f03a8279e6" category="list-text">次のビデオまたは記載された手順に従って、ブートメディアを交換します。</block>
   <block id="61b48a1e566d389d578d5feb4f95d32f" category="inline-link">NS224 ドライブシェルフのブートメディアを交換する</block>
-  <block id="f58704688857a12dcc199c1e305cbb36" category="paragraph"><block ref="f58704688857a12dcc199c1e305cbb36" category="inline-link-rx"></block></block>
   <block id="41d0446a43bf0ca4e32d8aa74acfb9dc" category="list-text">障害が発生したブートメディアの物理的な場所を特定し</block>
   <block id="2ac77c1f53d2acaf74354a442d9484d9" category="paragraph">ブートメディアは、電源装置とは反対のシェルフシャーシの壁に沿って配置されています。ボード上のブートメディアスロットの横にあるブートメディア警告（黄色） LED が点灯します。</block>
   <block id="926c6df0fdfeee94a62afab70e1f9cb3" category="admonition">シェルフから NSM モジュールを取り外したあと、 LED が 10 分間点灯したままになります。</block>
@@ -5183,7 +5173,6 @@
   <block id="278aef8b4e228833692f9747f4ae7475" category="list-text">交換用 NSM モジュールを開封したら、障害が発生した NSM モジュールを返却するときのために、すべての梱包材を保管しておいてください。</block>
   <block id="46e09979a3172c8b9285556fdf5ec2d2" category="list-text">次のビデオまたは記載された手順を使用して、 NSM モジュールを交換できます。</block>
   <block id="4a2c735251458c16ab34a2e3177386a8" category="inline-link">NS224 ドライブシェルフの NSM モジュールの交換</block>
-  <block id="bc574cfd53880ef481569633c07d1b98" category="paragraph"><block ref="bc574cfd53880ef481569633c07d1b98" category="inline-link-rx"></block></block>
   <block id="6b7a231127b7a2acbb4edd9d89b96b8c" category="list-text">障害のある NSM モジュールを物理的に特定します。</block>
   <block id="9b731dce42bd65dfa675cd0e5bd470a1" category="paragraph">どのモジュールに障害があるかを示す警告メッセージがシステムコンソールに記録されます。また、ドライブシェルフのオペレータ用ディスプレイパネルと障害のあるモジュールの警告（黄色） LED が点灯します。</block>
   <block id="45d29d834250186d99645df43e4c6ae8" category="list-text">障害のある NSM モジュールからケーブルを外します。</block>
@@ -5300,7 +5289,6 @@
   <block id="378b62d2964ec0a6c4ac6ec95662dee4" category="paragraph">電源に接続するとシェルフの電源がオンになり、電源スイッチはありません。電源装置が正常に動作している場合は、 LED が緑色に点灯します。</block>
   <block id="7468ac9b50ce2792c160ba5ee26808fe" category="list-text">シェルフ ID を HA ペア内で一意の番号に設定します。</block>
   <block id="34ed719c558f180e6a8425d176730344" category="paragraph">詳細な手順については、以下を参照してください。</block>
-  <block id="41479fc65c01476f20be9405a27daf49" category="paragraph"><block ref="41479fc65c01476f20be9405a27daf49" category="inline-link-macro-rx"></block></block>
   <block id="43672219196a0275d0fe8b439ccd44f9" category="list-text">左側のエンドキャップを取り外し、 LED の右側にある小さな穴の位置を確認します。</block>
   <block id="e1f557b7e67a27c5135ebdc776739a0e" category="list-text">クリップなどの工具の先端を小さな穴に差し込み、シェルフ ID ボタンに移動します。</block>
   <block id="82980b60b01c4e791ae1d8e73f193a85" category="list-text">デジタルディスプレイの 1 桁目の数字が点滅するまで（最大 15 秒間）ボタンを押し続け、ボタンを放します。</block>
@@ -5410,7 +5398,6 @@
   <block id="48d0ab80f7b5ca9cf8dc1ac2c8c7123a" category="list-text">交換用電源装置を開封したら、障害が発生した電源装置を返送するときのために、梱包材はすべて保管しておいてください。</block>
   <block id="34e3a163643415343661f5f7f2392785" category="list-text">次のビデオまたは記載された手順に従って、電源装置を交換します。</block>
   <block id="2ffea74b2d81d01ab3d19d31aceef580" category="inline-link">NS224 ドライブシェルフの電源装置のホットスワップ</block>
-  <block id="e3b150588628777f4f52f38e1b848e09" category="paragraph"><block ref="e3b150588628777f4f52f38e1b848e09" category="inline-link-rx"></block></block>
   <block id="a919f0ee05d363883138207b3294f80c" category="list-text">障害が発生した電源装置を物理的に特定します。</block>
   <block id="11c70933cb832a926e6ebf2229ee8058" category="paragraph">障害が発生した電源装置を示す警告メッセージがシステムコンソールに記録されます。また、シェルフのオペレータ用ディスプレイパネルの警告（黄色） LED が点灯し、障害が発生した電源装置の 2 色 LED が赤色に点灯します。</block>
   <block id="992b40e8cd1ce5e2e70ad710bea6f3c5" category="list-text">障害が発生した電源装置を取り外します。</block>
@@ -5423,7 +5410,6 @@
   <block id="d8a4ade402c2a58964f76f76d5e40639" category="list-text">交換用 RTC バッテリを開封したら、障害が発生した RTC バッテリを返送するときのために、梱包材をすべて保管しておきます。</block>
   <block id="69346a8711cdec1c863cab85cc16d548" category="list-text">次のビデオまたは記載された手順に従って、 RTC バッテリを交換します。</block>
   <block id="34712a52e9b6680839bb8925061f01ca" category="inline-link">NS224 ドライブシェルフの RTC バッテリの交換</block>
-  <block id="15406156604c13ad90b177cd9be0cf4a" category="paragraph"><block ref="15406156604c13ad90b177cd9be0cf4a" category="inline-link-rx"></block></block>
   <block id="4666aab744a5064fa4082c8fac681c8b" category="paragraph">NSM モジュールカバーの FRU ラベルには、 NSM モジュールの前面近くおよび電源装置の右側にある RTC バッテリの場所が示されています。</block>
   <block id="8e3521698724daea37d72f82d00b93c9" category="list-text">障害が発生した RTC バッテリを物理的に特定します。</block>
   <block id="803b47b0e40e190124f45c4a9e49deaf" category="paragraph">ボード上のバッテリスロットの横にある RTC バッテリ警告（黄色） LED が点灯します。</block>
@@ -7788,7 +7774,6 @@
   <block id="af959703d2cf03d6f0ec54feb06a483a" category="paragraph">次の図または記載された手順を使用して、障害のあるコントローラモジュールから交換用コントローラモジュールにブートメディアを移動できます。</block>
   <block id="8704a1a5bea5c63a077fa4f8a91fa4a6" category="paragraph">次の図または記載された手順を使用して、障害のあるコントローラモジュールから交換用コントローラモジュールに DIMM を移動できます。</block>
   <block id="7b54866b2a0d6e6e75dbd1588a1d2832" category="paragraph">次の図または記載された手順を使用して、障害のあるコントローラモジュールから交換用コントローラモジュールに PCIe ライザーを移動できます。</block>
-  <block id="81212d8d54eb046dc7e7c9c987a08b0d" category="image-alt">DRW A320 ファンはアニメーション GIF に代わるものです</block>
   <block id="5e71f7cd3736dc18c619e22ab69496b8" category="list-text">図またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。</block>
   <block id="23d2444a35f8c3c8957c78070a834d0c" category="list-text">図またはステップバイステップの手順に従って、 1 台のシェルフにコントローラをケーブル接続できます。</block>
   <block id="6bd176ab7852b1804bc6113808615ff6" category="list-text">次の図または記載された手順を使用して、 2 台のドライブシェルフにコントローラをケーブル接続できます。</block>
@@ -7838,7 +7823,6 @@
   <block id="459527cf1ec141d19f1b0f88f8c19905" category="inline-link">ディスクとアグリゲートの概要</block>
   <block id="c917987d5d8844333d3271b88c9ef8ec" category="paragraph"><block ref="c917987d5d8844333d3271b88c9ef8ec" category="inline-link-rx"></block></block>
   <block id="8476dfce11f0cbc3ca6b362cdd158c8f" category="list-text">NetApp Storage Encryption を使用している場合は、の「 SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります<block ref="b6c3385b7fdb69cc66015a30ca89eb46" category="inline-link-rx"></block>。</block>
-  <block id="e336b31ee5508850cb2188072c64f036" category="paragraph"><block ref="e336b31ee5508850cb2188072c64f036" category="inline-link-macro-rx"></block></block>
   <block id="0ab54354ff641ba8f3492f71c03aa435" category="list-text">NS224 ドライブシェルフをストレージスイッチ経由でケーブル接続します。</block>
   <block id="d1f671afbf5d4ca47b95e86f70c6bcc1" category="list-text">ストレージスイッチを設置します。</block>
   <block id="4aaebba2a5287c74eb41bf080e6d1fe4" category="list-text">使用しているプラットフォームモデルでサポートされているストレージスイッチやケーブルなどのハードウェアを確認します。</block>
@@ -7860,8 +7844,6 @@
   <block id="7da65b5a10b69b45b490009ac07696ff" category="paragraph">プロンプトが表示されたら回答 'y' 。</block>
   <block id="c86ca2ad8b18f1b66eec5105c703ce0a" category="list-text">AFF A700 HA ペアを使用していて、初期の NS224 ドライブシェルフをホットアドする場合（ HA ペアに NS224 ドライブシェルフがない場合）は、コアダンプ（コアファイルの格納）をサポートするために、各コントローラにコアダンプモジュール（ X9170a 、 NVMe 1TB SSD ）を取り付ける必要があります。</block>
   <block id="b979e87e6bde70f013c6af59e1fa73aa" category="list-text">NS224 シェルフをサポートする ASA HA ペアがある場合は、この手順を使用できます。</block>
-  <block id="4bf41d007ddcf618082b8ef148ac2700" category="section-title">AFF A700 、 AFF A800 、または AFF A400 の HA ペアを準備して、 2 台目のシェルフをホットアドします</block>
-  <block id="60b5c0b6d97d35bee9d9ee0e548ca4d4" category="paragraph">AFF A700 、 AFF A800 、または AFF A400 を使用している場合、 1 台の NS224 ドライブシェルフを各コントローラの 1 組の RoCE 対応ポートにケーブル接続すると、シェルフのケーブルを再接続する必要があります（ RoCE 対応の PCIe カードまたは I/O モジュールを追加で取り付けたあと）。 2 台目のシェルフをホットアドする前に、各コントローラの両方のセットのポートにまたがっている必要があります。</block>
   <block id="7e874a7e7fce6d08319e452556499a17" category="paragraph">AFF A700 HA ペア</block>
   <block id="863ee9a0c8ca40928975158c8441cb3e" category="paragraph"><block ref="8b0dd5f6450b331119d433eade9d39d0" category="inline-xref-macro-rx"></block></block>
   <block id="d191ea6e7cb4a619eb566229aa99b285" category="paragraph">AFF A800 HA ペア</block>
@@ -7878,4 +7860,31 @@
   <block id="c3c5b5066f403337e9cba1d236288bb5" category="paragraph">AFF A400 HA ペアの NS224 ドライブシェルフのケーブル接続方法は、ホットアドするシェルフの数、およびコントローラモジュールで使用する RoCE 対応ポートセット（ 1 つまたは 2 つ）の数によって異なります。</block>
   <block id="b994ebf3b12ef21aee27b63036342d83" category="section-title">AFF A320 HA ペアのホットアドシェルフをケーブル接続します</block>
   <block id="0d0422686a7d332d6a719d1fb6e38772" category="paragraph">この手順は、 AFF A320 HA ペアに既存の NS224 シェルフがあり、 2 台目のシェルフをホットアドすることを前提としています。</block>
+  <block id="18537f27e3c57fa7095de2a3bbea83b2" category="image-alt">DRW A320 ファンの交換</block>
+  <block id="75ce955e15fef4cd5f15ecc0c7c15370" category="list-text">システム ID を表示します</block>
+  <block id="0feb65e4d7bce1a53eb4047a827c8e55" category="list-text">disk show コマンドから取得したシステム ID 情報を使用して、ディスク所有権を再割り当てします。「 disk reassign -s old system ID disk reassign -s 118073209</block>
+  <block id="8c66ad63be6016fb310ce930e9943285" category="list-text">ディスクが正しく割り当てられていることを確認します。「 Disk show -a 」</block>
+  <block id="d23a9067ce9ab0452898d620ad7aa84d" category="paragraph">交換用ノードに属するディスクには、新しいシステム ID が表示されます。次の例は、 system-1 が所有するディスク、新しいシステム ID 118065481 を示しています。</block>
+  <block id="7c5ee56a01b06b00d2d910cc295d8c56" category="paragraph"><block ref="7c5ee56a01b06b00d2d910cc295d8c56" category="inline-link-rx"></block></block>
+  <block id="63950e6254e665584c6e0a02f9b4388b" category="paragraph"><block ref="63950e6254e665584c6e0a02f9b4388b" category="inline-link-rx"></block></block>
+  <block id="14baf7cbaa5e214a8313f9ae6e6b8214" category="paragraph"><block ref="14baf7cbaa5e214a8313f9ae6e6b8214" category="inline-link-rx"></block></block>
+  <block id="585e085c167dffb4091a9c937b46294a" category="paragraph"><block ref="585e085c167dffb4091a9c937b46294a" category="inline-link-rx"></block></block>
+  <block id="10df5509416416659fe58fd40c64d2ec" category="paragraph"><block ref="10df5509416416659fe58fd40c64d2ec" category="inline-link-rx"></block></block>
+  <block id="4ccbda321ca169104f4e4cac42fd679f" category="paragraph">RMA 番号を確認する場合や、交換用手順に関するその他のサポートが必要な場合は、テクニカルサポートにお問い合わせください<block ref="9a6f401ca1e7e89d8a0c29fb0cbe81b7" category="inline-link-rx"></block>にアクセスするか、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。</block>
+  <block id="993f60fa2b2b04ff649009b32da3dac6" category="paragraph"><block ref="993f60fa2b2b04ff649009b32da3dac6" category="inline-link-rx"></block></block>
+  <block id="3868a54921a81264bddb64b574765582" category="paragraph"><block ref="3868a54921a81264bddb64b574765582" category="inline-link-rx"></block></block>
+  <block id="b5c70f57bf6ba389e9412bbcc142d96a" category="paragraph"><block ref="b5c70f57bf6ba389e9412bbcc142d96a" category="inline-link-rx"></block></block>
+  <block id="c834e34af9791ae6f10d11ee9190daea" category="paragraph"><block ref="c834e34af9791ae6f10d11ee9190daea" category="inline-link-macro-rx"></block></block>
+  <block id="dade207912e2765bacca35b7125bdffa" category="section-title">AFF A700 、 AFF A800 、または AFF A400 HA ペアを準備して 2 台目のシェルフをホットアドします</block>
+  <block id="2fc46fba25f64ee62dbc39713d768a36" category="paragraph">AFF A700 、 AFF A800 、または AFF A400 HA ペアを構成しており、 1 台の NS224 ドライブシェルフを各コントローラ上の 1 組の RoCE 対応ポートにケーブル接続している場合は、シェルフにケーブルを再接続する必要があります（ RoCE 対応の PCIe カードまたは I/O モジュールを追加で取り付けたあと）。 2 台目のシェルフをホットアドする前に、各コントローラの両方のセットのポートにまたがっている必要があります。</block>
+  <block id="c69a1009359358cbb1f3e5d6483736fb" category="paragraph"><block ref="c69a1009359358cbb1f3e5d6483736fb" category="inline-link-macro-rx"></block></block>
+  <block id="9824994e3f8651cf2b6d695555bdc011" category="paragraph"><block ref="9824994e3f8651cf2b6d695555bdc011" category="inline-link-rx"></block></block>
+  <block id="008b8867712161228bd794977fcd0d4b" category="paragraph"><block ref="008b8867712161228bd794977fcd0d4b" category="inline-link-rx"></block></block>
+  <block id="17d8690f280ed171f8f8c0a25eb7ddff" category="paragraph"><block ref="17d8690f280ed171f8f8c0a25eb7ddff" category="inline-link-rx"></block></block>
+  <block id="76fac88bf17062dd76e985fd260e28bf" category="paragraph"><block ref="76fac88bf17062dd76e985fd260e28bf" category="inline-link-rx"></block></block>
+  <block id="a508cee96e9c7c91095ec8fdbc4e2283" category="paragraph"><block ref="a508cee96e9c7c91095ec8fdbc4e2283" category="inline-link-rx"></block></block>
+  <block id="35b669738c6a7d586d192e07cf910533" category="paragraph"><block ref="35b669738c6a7d586d192e07cf910533" category="inline-link-rx"></block></block>
+  <block id="1e8e53350c58f867632cf77da6114e12" category="paragraph"><block ref="1e8e53350c58f867632cf77da6114e12" category="inline-link-rx"></block></block>
+  <block id="d444e316e4fbe4a790c7592f4ea0e4d7" category="paragraph"><block ref="d444e316e4fbe4a790c7592f4ea0e4d7" category="inline-link-macro-rx"></block></block>
+  <block id="6bf27ed99f30b92f98cbb6923f3db316" category="paragraph"><block ref="6bf27ed99f30b92f98cbb6923f3db316" category="inline-link-rx"></block></block>
 </blocks>

@@ -22,7 +22,7 @@ ONTAP 9.7 以降を実行している HA ペアの NS224 ドライブシェル�
 ====
 NSM ファームウェアバージョン 1.1x 以降を実行していないシェルフでは、ブートメディアを交換できません。 NSM モジュールを交換する必要があります。
 
-link:service-replace-nsm100.html["NSM モジュール - NS224 シェルフを交換してください"]
+link:service-replace-nsm100.html["NSM モジュール - NS224 シェルフを交換してください"^]
 
 ====
 * No.1 プラスドライバが必要です。
@@ -31,7 +31,7 @@ link:service-replace-nsm100.html["NSM モジュール - NS224 シェルフを交
 
 * 障害が発生した FRU （ターゲット NSM モジュール）を搭載した NSM モジュールを取り外す際にシェルフが接続を維持できるように、シェルフのパートナー NSM モジュールが稼働し、正しくケーブル接続されている必要があります。
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
 
 * システムのその他のコンポーネントがすべて正常に動作している必要があります。
 
@@ -51,9 +51,9 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 ====
 ファームウェアをシェルフおよびそのコンポーネントに対応しないバージョンにリバートしないでください。
 
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ネットアップのダウンロード：ディスクシェルフファームウェア"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ネットアップのダウンロード：ディスクシェルフファームウェア"^]
 
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ネットアップのダウンロード：ディスクドライブファームウェア"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ネットアップのダウンロード：ディスクドライブファームウェア"^]
 
 ====
 * 影響を受けるシェルフの物理的な位置を特定するために、必要に応じてシェルフのロケーション（青色の） LED を点灯できます。「 storage shelf location -led modify -shelf-name _shelf_name _led-status on
@@ -65,11 +65,11 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ネッ
 
 * ブートメディアを交換したら、キットに付属する RMA 指示書に従って、障害のある部品をネットアップに返却します。
 +
-RMA 番号を確認する場合や、交換用手順に関するその他のサポートが必要な場合は、テクニカルサポートにお問い合わせください https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"]にアクセスするか、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。
+RMA 番号を確認する場合や、交換用手順に関するその他のサポートが必要な場合は、テクニカルサポートにお問い合わせください https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"^]にアクセスするか、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。
 
 * 次のビデオまたは記載された手順に従って、ブートメディアを交換します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=20ed85f9-1f80-4e0e-9219-ab4600070d8a["NS224 ドライブシェルフのブートメディアを交換する"]
+https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=20ed85f9-1f80-4e0e-9219-ab4600070d8a["NS224 ドライブシェルフのブートメディアを交換する"^]
 
 
 
@@ -184,6 +184,6 @@ NSM モジュールをシェルフに完全に挿入し、シェルフの端と�
 ケーブル接続エラーが発生した場合は、表示される対処方法に従ってください。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
 
 
