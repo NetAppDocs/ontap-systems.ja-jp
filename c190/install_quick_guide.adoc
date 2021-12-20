@@ -1,17 +1,17 @@
 ---
 permalink: c190/install-quick-guide.html 
 sidebar: sidebar 
-keywords: aff c190, quick guide 
-summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。 
+keywords: aff c190, quick steps 
+summary: このコンテンツでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を画像で説明します。 
 ---
-= クイックガイド - AFF C190
+= 手順の概要 - AFF C190
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。
+このコンテンツでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を画像で説明します。ネットアップシステムのインストールに精通している場合は、このコンテンツを使用してください。
 
 設置およびセットアップ手順 _PDF ポスター：
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2850392["AFF C190 システムの設置とセットアップの手順"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2850392["AFF C190 システムの設置とセットアップの手順"^]

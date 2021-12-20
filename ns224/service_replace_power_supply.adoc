@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, replace, fail, power, supply, nondisruptive, drive, i/o, progress, hot-swap, hot-swap a power supply 
 summary: 電源がオンになっている NS224 ドライブシェルフおよび I/O の実行中には、障害が発生した電源装置を無停止で交換できます。 
 ---
-= 電源装置をホットスワップします - NS224 シェルフ
+= 電源装置のホットスワップ： NS224 シェルフ
 :icons: font
 :imagesdir: ../media/
 

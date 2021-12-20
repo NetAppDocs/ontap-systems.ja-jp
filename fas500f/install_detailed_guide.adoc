@@ -1,29 +1,28 @@
 ---
 permalink: fas500f/install-detailed-guide.html 
 sidebar: sidebar 
-keywords: fas500f, detailed installation guide 
-summary: このガイドでは、 FAS500f システムのインストール手順について詳しく説明します。 
+keywords: fas500f, detailed installation steps 
+summary: このセクションでは、 FAS500f システムのインストール手順について詳しく説明します。 
 ---
-= 詳細ガイド - FAS500f
+= 詳細な手順 - FAS500f
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このガイドでは、 FAS500f システムのインストール手順について詳しく説明します。
+このセクションでは、 FAS500f システムのインストール手順について詳しく説明します。
 
 
 
 == 手順 1 ：設置の準備
 
-[role="lead"]
 FAS500f システムをインストールするには、アカウントを作成してシステムを登録する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。
 
 サイト要件および構成済みシステムの追加情報の情報については、 Hardware Universe にアクセスできる必要があります。また、ご使用の ONTAP バージョンのリリースノートにアクセスして、このシステムの詳細を確認しておくことを推奨します。
 
-https://hwu.netapp.com["NetApp Hardware Universe の略"]
+https://hwu.netapp.com["NetApp Hardware Universe の略"^]
 
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対するリリースノートを検索してください"]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対するリリースノートを検索してください"^]
 
 お客様のサイトで次のものを準備する必要があります。
 
@@ -43,7 +42,7 @@ image::../media/drw_ssn_label.png[DRW SSN ラベル]
 .. 既存のアカウントにログインするか、アカウントを作成します。
 .. システムを登録します。
 +
-https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"]
+https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"^]
 
 
 
@@ -52,7 +51,7 @@ https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMy
 次の表に、同梱されているケーブルの種類を示します。この表にないケーブルが含まれていた場合は、 Hardware Universe を参照してケーブルを特定し、用途を確認してください。
 
 +
-https://hwu.netapp.com["NetApp Hardware Universe の略"]
+https://hwu.netapp.com["NetApp Hardware Universe の略"^]
 
 +
 [cols="1,2,1,2"]
@@ -143,7 +142,7 @@ image:../media/oie_cable_power.png[""]
 |===
 . NetApp ONTAP 構成ガイドを確認して、必要な情報を収集します。
 +
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^]
 
 
 
@@ -151,7 +150,6 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成�
 
 == 手順 2 ：ハードウェアを設置する
 
-[role="lead"]
 システムは、 4 ポストラックまたはネットアップシステムキャビネットのいずれかに設置する必要があります。
 
 . 必要に応じてレールキットを取り付けます。
@@ -171,21 +169,18 @@ image::../media/drw_affa250_weight_caution.png[DRW affa250 重量注意]
 
 == 手順 3 ：コントローラをケーブル接続する
 
-[role="lead"]
 2 ノードスイッチレスクラスタメソッドまたはクラスタインターコネクトネットワークメソッドを使用して、プラットフォームのクラスタにケーブル接続が必要です。ファイバチャネル、 iSCSI ホストネットワーク、または直接接続型ストレージへのケーブル接続はオプションです。このケーブル接続は排他的ではなく、ホストネットワークとストレージにケーブルを接続できます。
 
 
 
 === 必要なケーブル接続：コントローラをクラスタにケーブル接続します
 
-[role="lead"]
 2 ノードスイッチレスクラスタメソッドまたはクラスタインターコネクトネットワークを使用して、コントローラをクラスタにケーブル接続します。
 
 
 
 ==== オプション 1 ： 2 ノードスイッチレスクラスタをケーブル接続
 
-[role="lead"]
 コントローラモジュールの管理ポート、ファイバチャネルポート、データポートまたはホストネットワークポートは、スイッチに接続されます。クラスタインターコネクトポートは、両方のコントローラモジュールでケーブル接続されます。
 
 システムとスイッチの接続については、ネットワーク管理者にお問い合わせください。
@@ -199,7 +194,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 . アニメーションやステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=beec3966-0a01-473c-a5de-ac68017fbf29["2 ノードスイッチレスクラスタのケーブル接続"]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=beec3966-0a01-473c-a5de-ac68017fbf29["2 ノードスイッチレスクラスタのケーブル接続"^]
 
 +
 [cols="1,2"]
@@ -242,7 +237,6 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 
 ==== オプション 2 ：スイッチクラスタをケーブル接続する
 
-[role="lead"]
 コントローラのすべてのポートがスイッチに接続されます。スイッチには、クラスタインターコネクト、管理、ファイバチャネル、データネットワークスイッチまたはホストネットワークスイッチがあります。
 
 システムとスイッチの接続については、ネットワーク管理者にお問い合わせください。
@@ -256,7 +250,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 . アニメーションやステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bf6759dc-4cbf-488e-982e-ac68017fbef8["スイッチクラスタのケーブル接続"]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bf6759dc-4cbf-488e-982e-ac68017fbef8["スイッチクラスタのケーブル接続"^]
 
 +
 [cols="1,2"]
@@ -297,14 +291,12 @@ image::../media/oie_legend_icon_attn_symbol.png[OIE の凡例アイコン ( 属�
 
 === オプションのケーブル接続：ケーブル構成に依存するオプション
 
-[role="lead"]
 オプションで、 Fibre Channel または iSCSI ホストネットワークまたは直接接続型ストレージに、構成に依存するケーブルを接続します。このケーブル接続は排他的ではなく、ホストネットワークおよびストレージにケーブル接続できます。
 
 
 
 ==== オプション 1 ： Fibre Channel ホストネットワークにケーブルを接続する
 
-[role="lead"]
 コントローラの Fibre Channel ポートは、 Fibre Channel ホストネットワークスイッチに接続されます。
 
 システムとスイッチの接続については、ネットワーク管理者にお問い合わせください。
@@ -353,7 +345,6 @@ image::../media/drw_affa250_fc_host_cabling.png[DRW affa250 fc ホストケー�
 
 ==== オプション 2 ： 25GbE データまたはホストネットワークにケーブルを接続する
 
-[role="lead"]
 コントローラ上の 25GbE ポートは、 25GbE データスイッチまたはホストネットワークスイッチに接続されます。
 
 システムとスイッチの接続については、ネットワーク管理者にお問い合わせください。
@@ -401,7 +392,6 @@ image::../media/drw_affa250_25gbe_host_cabling.png[DRW affa250 25GbE ホスト�
 
 ==== オプション 3 ：コントローラを 1 台のドライブシェルフにケーブル接続する
 
-[role="lead"]
 各コントローラを、 NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。
 
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
@@ -413,7 +403,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 . アニメーションやステップバイステップの手順に従って、 1 台のシェルフにコントローラモジュールをケーブル接続します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3f92e625-a19c-4d10-9028-ac68017fbf57["コントローラを 1 台の NS224 にケーブル接続する"]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3f92e625-a19c-4d10-9028-ac68017fbf57["コントローラを 1 台の NS224 にケーブル接続する"^]
 
 +
 [cols="1,2"]
@@ -441,14 +431,12 @@ image:../media/oie_legend_icon_2_lo.png[""]
 
 == 手順 4 ：システムのセットアップと設定を完了する
 
-[role="lead"]
 スイッチとラップトップのみを接続したクラスタ検出を使用するか、システムのコントローラに直接接続してから管理スイッチに接続して、システムのセットアップと設定を実行します。
 
 
 
 === オプション 1 ：ネットワーク検出が有効になっている場合は、システムのセットアップと設定を実行する
 
-[role="lead"]
 ラップトップでネットワーク検出が有効になっている場合は、クラスタの自動検出を使用してシステムのセットアップと設定を実行できます。
 
 . 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
@@ -458,7 +446,7 @@ image:../media/oie_legend_icon_2_lo.png[""]
 
 . 次のアニメーションに従って、ラップトップを管理スイッチに接続します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"^]
 
 . 検出する ONTAP アイコンを選択します。
 +
@@ -480,17 +468,16 @@ System Manager が開きます。
 
 . System Manager のセットアップガイドを使用して、 _NetApp ONTAP 構成ガイド _ で収集したデータを基にシステムを設定します。
 +
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^]
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
 
 
 
 
 === オプション 2 ：ネットワーク検出が有効になっていない場合は、システムのセットアップと設定を実行する
 
-[role="lead"]
 ラップトップでネットワーク検出が有効になっていない場合は、このタスクを使用して設定とセットアップを実行する必要があります。
 
 . ラップトップまたはコンソールをケーブル接続して設定します。
@@ -543,10 +530,10 @@ NOTE: アドレスの形式は、 +https://x.x.x.x+ です。
 
 .. NetApp ONTAP 構成ガイドで収集したデータを基にシステムを設定します。
 +
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^]
 
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
 

@@ -42,7 +42,7 @@ indexpage:
     - title: NVRAM モジュール / NVRAM DIMM
       url: "/nvram-module-or-nvram-dimm-replacement.html"
     - title: 電源装置
-      url: "/power-supply-swapout.html"
+      url: "/power-supply-swap-out.html"
     - title: RTC バッテリ
       url: "/rtc-battery-replace.html"
     - title: X91148A モジュール

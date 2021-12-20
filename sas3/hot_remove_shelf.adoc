@@ -56,10 +56,18 @@ https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html["ディスクと
 ====
 * ノードが 3 つ以上の clustered ONTAP システムでは、定期的なメンテナンスを実行していない HA ペアにイプシロンを再割り当てすることを推奨します。
 +
-イプシロンを再割り当てすることで、 clustered ONTAP システムのすべてのノードに影響を及ぼす予測不可能なエラーの発生リスクを最小限に抑えることができます。クォーラムの役割とイプシロンに関する情報や、クラスタの別のノードにイプシロンを再割り当てするための手順については、 _System Administration Reference_. を参照してください。
+イプシロンを再割り当てすることで、 clustered ONTAP システムのすべてのノードに影響を及ぼす予測不可能なエラーの発生リスクを最小限に抑えることができます。次の手順に従って、イプシロンが設定されているノードを特定し、必要に応じてイプシロンを再割り当てできます。
 
 +
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対する『システムアドミニストレーションガイド』を検索してください"]
+.. 特権レベルを advanced に設定します :'set -privilege advanced
+.. イプシロンが設定されているノードを特定します cluster show
++
+イプシロンを保持しているノードの Epsilon カラムには true と表示されます（イプシロンが設定されていないノードには、「 false 」と表示されます）。
+
+.. メンテナンス中の HA ペアのノードに「 true 」（イプシロンが設定されている）と表示されている場合は、ノードからイプシロンを削除します。「 cluster modify -node _node_name __ -epsilon false
+.. 別の HA ペアのノードにイプシロンを割り当てます。 cluster modify -node node_name に -epsilon true
+.. admin 権限レベルに戻ります。「 set -privilege admin 」
+
 
 * スタックからディスクシェルフをホットリムーブする（スタックは残す）場合は、コントローラとスタックが常にシングルパスで接続されるよう、一度に 1 つずつパス（パス A 、次にパス B ）をケーブルで再接続して確認し、取り外すディスクシェルフをバイパスします。
 +

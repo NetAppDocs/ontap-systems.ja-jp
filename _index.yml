@@ -44,7 +44,7 @@ indexpage:
     - title: FAS8700 の場合
       url: "/fas8300/index.html"
     - title: FAS9000
-      url: "/fas9000/index.htm"
+      url: "/fas9000/index.html"
   - title: ドライブシェルフ
     links:
     - title: NS224

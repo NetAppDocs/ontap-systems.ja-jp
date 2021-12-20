@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, fail, replace, drive, nondisruptive, i/o, hot-swap, hot-swap a drive 
 summary: 電源がオンになっている NS224 ドライブシェルフおよび I/O の実行中は、障害が発生したドライブを無停止で交換できます。 
 ---
-= ドライブをホットスワップします - NS224 シェルフ
+= ドライブのホットスワップ： &#8201;&#82;NS224 シェルフ
 :icons: font
 :imagesdir: ../media/
 
@@ -54,7 +54,7 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ネッ
 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ネットアップのダウンロード：ディスクドライブファームウェア"^]
 
 ====
-* 最新のファームウェアバージョンでない新しいドライブでは、ドライブファームウェアは自動的に（無停止で）更新されます。
+* 最新のファームウェアバージョンでない新しいドライブのドライブファームウェアは自動的に（無停止で）更新されます。
 +
 
 NOTE: ドライブファームウェアは 2 分ごとにチェックされます。

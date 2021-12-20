@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, change, shelf, id, system, ontap, unown, spare, offline, aggregate, change an ns224 drive shelf id 
 summary: ONTAP がまだ実行されていない場合や、シェルフをシステムにケーブル接続する前にホットアドする場合は、システムのシェルフ ID を変更できます。また、 ONTAP が実行中で、シェルフ内のすべてのドライブが所有されていないか、スペアであるか、オフラインのアグリゲートのメンバーである場合にも、シェルフ ID を変更できます \ （コントローラモジュールがデータを提供可能です \ ）。 
 ---
-= シェルフ ID - NS224 シェルフを変更します
+= シェルフ ID を変更します。 &#8201; ： NS224 シェルフ
 :icons: font
 :imagesdir: ../media/
 
@@ -17,7 +17,7 @@ ONTAP がまだ実行されていない場合や、シェルフをシステム�
 +
 「 storage disk show -shelf_shelf_number _ 」コマンドを使用すると、ドライブの状態を確認できます。Container Type 列の出力に 'sare 'srep' または broken と表示されます（ドライブに障害が発生している場合）さらに 'Container Name' および Owner カラムにはダッシュが表示されます
 
-* 片側をまっすぐに伸ばしたペーパークリップ、または細く先端を伸ばしたボールペンが必要です。
+* 片側をまっすぐに伸ばしたペーパークリップ、または細い先端のボールペンが必要です。
 +
 ペーパークリップまたはボールペンを使用して、 LED の右側にある小さな穴からシェルフ ID ボタンにオペレータディスプレイパネル（ ODP ）からアクセスします。
 

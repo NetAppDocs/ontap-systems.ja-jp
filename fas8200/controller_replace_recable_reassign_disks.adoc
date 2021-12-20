@@ -92,7 +92,7 @@ _replacement _node はストレージをテイクバックしてブートを完�
 NOTE: ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。
 
 +
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対する『ハイアベイラビリティ構成ガイド』を検索してください"]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対するハイアベイラビリティ構成のコンテンツを検索してください"]
 
 .. ギブバックが完了したら、 HA ペアが正常で、テイクオーバーが可能であることを確認します。「 storage failover show
 +
