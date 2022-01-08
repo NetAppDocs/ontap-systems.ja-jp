@@ -1,0 +1,5642 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head class="at-element-marker">
+  <title>SAS ケーブル接続ルール - IOM12 モジュールを搭載したシェルフ</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="SAS ケーブル接続ルール - IOM12 モジュールを搭載したシェルフ" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-systems/sas3/install-cabling-rules.html" />
+	<meta property="og:description" content="IOM12 モジュールを搭載したディスクシェルフは、 HA ペアおよびシングルコントローラ構成でケーブル接続できます（サポート対象のプラットフォームの場合）。" />
+  <meta property="og:image" content="https://docs.netapp.com/ja-jp/ontap-systems/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
+  
+  <meta name="description" content="IOM12 モジュールを搭載したディスクシェルフは、 HA ペアおよびシングルコントローラ構成でケーブル接続できます（サポート対象のプラットフォームの場合）。">
+  <meta name="keywords" content=" disk, shelves, shelf, iom12, module, single-controller, configuration, support, platform, sas, cabling, cable, rule, controller, shelf-to-shelf, connection, rule, controller-to-stack, mini-sas, hd, optical, cable, rule, sas cabling rules">
+  
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/ja-jp/ontap-systems/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/ja-jp/ontap-systems/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/ja-jp/ontap-systems/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/ja-jp/ontap-systems/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/ja-jp/ontap-systems/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/ja-jp/ontap-systems/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/ja-jp/ontap-systems/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/ja-jp/ontap-systems/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/ja-jp/ontap-systems/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/ja-jp/ontap-systems/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/ja-jp/ontap-systems/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/ja-jp/ontap-systems/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/ja-jp/ontap-systems/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/ja-jp/ontap-systems/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ja-jp/ontap-systems/css/tabbed-blocks.css" type="text/css">
+  <link rel="stylesheet" href='/ja-jp/ontap-systems/css/product-family.css' type="text/css">
+  
+
+  
+  <link rel='stylesheet' href='/ja-jp/ontap-systems/css/na-feature.css' type='text/css'>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/ja-jp/ontap-systems/js/na-search.js'></script>
+  
+
+  
+  <script src='/ja-jp/ontap-systems/js/na-pagenav.js'></script>
+  
+
+  <link rel='stylesheet' href='/ja-jp/ontap-systems/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/ja-jp/ontap-systems/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/ja-jp/ontap-systems/js/na-utility.js'></script>
+  <script src='/ja-jp/ontap-systems/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/ja-jp/ontap-systems/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/ja-jp/ontap-systems/js/toc.js'></script>
+  <script src='/ja-jp/ontap-systems/js/customscripts.js'></script>
+
+  <script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+  <script src='/ja-jp/ontap-systems/js/version-dropdown.js'></script>
+  <script src='/ja-jp/ontap-systems/js/product-family.js'></script>
+  <script src='/ja-jp/ontap-systems/js/FileSaver.min.js'></script>
+  <script src='/ja-jp/ontap-systems/js/jszip-utils.min.js'></script>
+  <script src='/ja-jp/ontap-systems/js/jszip.min.js'></script>
+  <script src='/ja-jp/ontap-systems/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">製品とソリューション</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">サポートとトレーニング</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">コミュニティ</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">ブログ</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">ユーザ事例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/ja-jp/ontap-systems/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/ja-jp/ontap-systems/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/ja-jp/ontap-systems/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/ja-jp/ontap-systems/search.html"
+          data-type="widget" 
+          data-placeholder="ドキュメントを検索" 
+          data-no-results-found="{query}に該当する結果はありません" 
+          data-did-you-mean="{suggestion} を検索" 
+          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
+          data-results-found="{hitCount} 件見つかりました"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-systems/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">日本語</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-systems/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/ontap-systems/sas3/install-cabling-rules.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/ontap-systems/sas3/install-cabling-rules.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/ontap-systems/sas3/install-cabling-rules.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" >
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>利用可能なPDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        <a target="_blank" href="/ja-jp/ontap-systems/pdfs/fullsite-sidebar/AFF_および_FAS_システムのマニュアル.pdf" >
+          <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>このドキュメントサイトのPDF</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A200_システム.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A200 システム
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A200_の設置とセットアップ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            設置とセットアップ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A200_は引き続き使用できます.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            メンテナンス
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A200_ブートメディア.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            ブートメディア
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A200_シャーシ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            シャーシ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A200_コントローラモジュール.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            コントローラモジュール
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A220_および_FAS2700_システム.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A220 および FAS2700 システム
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A220_および_FAS2700_の設置とセットアップ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            設置とセットアップ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A220_と_FAS2700_は引き続き搭載されています.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            メンテナンス
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A220_および_FAS2700_ブートメディア.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            ブートメディア
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A220_および_FAS2700_シャーシ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            シャーシ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A220_および_FAS2700_コントローラ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            コントローラ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A250_システム.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A250 システム
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A250_のインストールとセットアップ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            設置とセットアップ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A250_のメンテナンス.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            メンテナンス
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A250_ブートメディア.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            ブートメディア
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A250_シャーシ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            シャーシ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A250_コントローラモジュール.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            コントローラ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A300_システム.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A300 システム
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A300_インストールおよびセットアップ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            設置とセットアップ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A300_の維持.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            メンテナンス
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A300_ブートメディア.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            ブートメディア
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A300_シャーシ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            シャーシ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A300_コントローラモジュール.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            コントローラモジュール
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A320_システム.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A320 システム
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A320_の設置とセットアップ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            設置とセットアップ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A320_は維持されます.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            メンテナンス
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A320_ブートメディア.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            ブートメディア
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A320_シャーシ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            シャーシ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A320_コントローラモジュール.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            コントローラモジュール
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A400_システム.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A400 システム
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A400_の設置とセットアップ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            設置とセットアップ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A400_は引き続き使用できます.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            メンテナンス
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A400_ブートメディア.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            ブートメディア
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A400_シャーシ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            シャーシ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A400_コントローラモジュール.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            コントローラモジュール
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A700_および_FAS9000_システム.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A700 および FAS9000 システム
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A700_および_FAS9000_のインストールとセットアップ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            設置とセットアップ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A700_および_FAS9000_のメンテナンス.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            メンテナンス
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A700_および_FAS9000_ブートメディア.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            ブートメディア
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A700_および_FAS9000_シャーシ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            シャーシ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A700_および_FAS9000_コントローラ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            コントローラモジュール
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A700_および_FAS9000_X91148A_モジュール.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            X91148A モジュール
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A700s_システム.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A700s システム
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A700s_のインストールとセットアップ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            設置とセットアップ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A700s_は引き続き使用できます.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            メンテナンス
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A700s_ブートメディア.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            ブートメディア
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A700s_シャーシ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            シャーシ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A700s_コントローラ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            コントローラ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/ファン.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            ファン
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A800_システム.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A800 システム
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A800_のインストールとセットアップ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            設置とセットアップ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A800_は維持されている.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            メンテナンス
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A800_ブートメディア.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            ブートメディア
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A800_シャーシ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            シャーシ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_A800_コントローラモジュール.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            コントローラ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_C190_システム.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF C190 システム
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_C190_のインストールとセットアップ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            設置とセットアップ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_C190_には引き続き付属します.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            メンテナンス
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_C190_ブートメディア.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            ブートメディア
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_C190_シャーシ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            シャーシ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_C190_コントローラモジュール.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            コントローラ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS2600_システム.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            FAS2600 システム
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS2600_の設置とセットアップ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            設置とセットアップ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS2600_のメンテナンス.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            メンテナンス
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS2600_ブートメディア.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            ブートメディア
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS2600_シャーシ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            シャーシ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS2600_コントローラモジュール.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            コントローラモジュール
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS500f_システム.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            FAS500f システム
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS500f_のインストールとセットアップ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            設置とセットアップ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS500f_メンテナンス.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            メンテナンス
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS500f_ブートメディア.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            ブートメディア
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS500f_シャーシ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            シャーシ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS500f_コントローラモジュール.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            コントローラ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS8200_システム.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            FAS8200 システム
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS8200_の設置とセットアップ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            設置とセットアップ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS8200_のメンテナンス.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            メンテナンス
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS8200_ブートメディア.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            ブートメディア
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS8200_シャーシ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            シャーシ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS8200_コントローラモジュール.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            コントローラ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/FAS8300_および_FAS8700_システム.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            FAS8300 および FAS8700 システム
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_FAS8300_および_FAS8700_の設置とセットアップ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            設置とセットアップ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_FAS8300_と_FAS8700_は引き続き維持されます.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            メンテナンス
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_FAS8300_および_FAS8700_ブートメディア.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            ブートメディア
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_FAS8300_および_FAS8700_シャーシ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            シャーシ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/AFF_FAS8300_および_FAS8700_コントローラ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            コントローラ
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/その他のプラットフォームの手順.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            その他のプラットフォームの手順
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/システムレベルの診断.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            システムレベルの診断
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/42U_1280_mm_システムキャビネット.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            42U 1280 mm システムキャビネット
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/キャビネットを設置する準備をします.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            キャビネットを設置する準備をします
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/キャビネットを設置.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            キャビネットを設置
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/キャビネット前面ドアを反転します.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            キャビネット前面ドアを反転します
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/内蔵ディスクドライブをスワップします.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            内蔵ディスクドライブをスワップします
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/内蔵ドライブをホットスワップします.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            内蔵ドライブをホットスワップします
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/オール_SAN_アレイシステム.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            オール SAN アレイシステム
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/ハードウェアのアップグレード.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            ハードウェアのアップグレード
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/NS224_シェルフ.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            NS224 シェルフ
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/NS224_シェルフの設置とケーブル接続.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            設置とケーブル接続
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/NS224_シェルフにも維持されます.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            メンテナンス
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/SAS_シェルフと_IOM12_モジュール.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            SAS シェルフと IOM12 モジュール
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/IOM12_モジュールを搭載したシェルフの設置とケーブル接続.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            設置とケーブル接続
+          </a>
+          
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/SAS_ケーブル接続ルール_ワークシート_および例.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            SAS ケーブル接続ルール、ワークシート、および例
+          </a>
+          
+
+
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ja-jp/ontap-systems/pdfs/pages/sas3/install-cabling-rules.pdf" >
+    <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/IOM12_モジュールを搭載したシェルフは引き続き使用できます.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            メンテナンス
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/ontap-systems/pdfs/sidebar/その他のプラットフォーム_シェルフ_スイッチモデル.pdf" 
+            
+          >
+            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+            その他のプラットフォーム、シェルフ、スイッチモデル
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/ja-jp/ontap-systems/images/pdf-zip.png" width="16" height="16"/>
+      <pre>個別のPDFドキュメントのコレクション<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/index.html">
+        ホーム
+      </a></li><li class="subfolders "><a href="/ja-jp/ontap-systems/a200/index.html">
+        <div class="na-navbar-padding"> AFF A200 システム</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設置とセットアップ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/install-worksheet-linkout.html">
+        クラスタ設定ワークシート
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/install-setup.html">
+        インストールとセットアップを選択します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/install-setup-linkout.html">
+        クイックステップ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/install-video-linkout.html">
+        ビデオの手順
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> メンテナンス</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ブートメディア</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/bootmedia-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/bootmedia-encryption-preshutdown-checks.html">
+        オンボード暗号化キーを確認
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/bootmedia-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/bootmedia-replace.html">
+        ブートメディアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        ブートイメージを起動します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/bootmedia-encryption-restore.html">
+        OKM 、 NSE 、 NVE をリストアします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/bootmedia-complete-rma.html">
+        障害のある部品をネットアップに返却します
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> シャーシ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/chassis-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/chassis-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/chassis-replace-move-hardware.html">
+        ハードウェアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/chassis-replace-complete-system-restore-rma.html">
+        構成をリストアする
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> コントローラモジュール</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/controller-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/controller-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/controller-replace-move-hardware.html">
+        ハードウェアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/controller-replace-system-config-restore-and-verify.html">
+        構成をリストアする
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/controller-replace-recable-reassign-disks.html">
+        システムにケーブルを再接続
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/controller-replace-restore-system-rma.html">
+        システムのリストアを完了
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/nvmem-nvram-battery-replace.html">
+        NVMEM バッテリ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/power-supply-swap-out.html">
+        電源装置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a200/rtc-battery-replace.html">
+        リアルタイムクロックバッテリ
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/fas2700/index.html">
+        <div class="na-navbar-padding"> AFF A220 および FAS2700 システム</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設置とセットアップ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/install-setup.html">
+        インストールとセットアップを選択します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/install-quick-guide.html">
+        クイックステップ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/install-videos.html">
+        ビデオの手順
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/install-detailed-guide.html">
+        詳細な手順
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> メンテナンス</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ブートメディア</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/bootmedia-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/bootmedia-encryption-preshutdown-checks.html">
+        オンボード暗号化キーを確認
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/bootmedia-impaired-controller-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/bootmedia-replace.html">
+        ブートイメージを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        ブートイメージを起動します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/bootmedia-encryption-restore.html">
+        OKM 、 NSE 、 NVE をリストアします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/bootmedia-complete-rma.html">
+        障害のある部品をネットアップに返却します
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/caching-module-replace.html">
+        キャッシングモジュール
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> シャーシ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/chassis-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/chassis-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/chassis-replace-move-hardware.html">
+        ハードウェアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/chassis-replace-complete-system-restore-rma.html">
+        構成をリストアする
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> コントローラ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/controller-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/controller-replace-shutdown.html">
+        ノードをシャットダウン
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/controller-replace-move-hardware.html">
+        コントローラハードウェアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/controller-replace-system-config-restore-and-verify.html">
+        システム設定を復元します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/controller-replace-recable-reassign-disks.html">
+        システムにケーブルを再接続
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/controller-replace-restore-system-rma.html">
+        システムのリストアを完了
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/nvmem-nvram-battery-replace.html">
+        NVMEM バッテリ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/power-supply-swap-out.html">
+        電源装置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/rtc-battery-replace.html">
+        リアルタイムクロックバッテリ
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/a250/index.html">
+        <div class="na-navbar-padding"> AFF A250 システム</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設置とセットアップ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/install-setup.html">
+        インストールとセットアップを選択します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/install-quick-guide.html">
+        クイックステップ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/install-videos.html">
+        ビデオの手順
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/install-detailed-guide.html">
+        詳細な手順
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> メンテナンス</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ブートメディア</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/bootmedia-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/bootmedia-encryption-preshutdown-checks.html">
+        オンボード暗号化キーを確認
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/bootmedia-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/bootmedia-replace.html">
+        ブートメディアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        ブートイメージを起動します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/bootmedia-encryption-restore.html">
+        OKM 、 NSE 、 NVE をリストアします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/bootmedia-complete-rma.html">
+        障害のある部品をネットアップに返却します
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> シャーシ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/chassis-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/chassis-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/chassis-replace-move-hardware.html">
+        ハードウェアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/chassis-replace-complete-system-restore-rma.html">
+        交換後の処理
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> コントローラ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/controller-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/controller-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/controller-replace-move-hardware.html">
+        コントローラモジュールを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/controller-replace-system-config-restore-and-verify.html">
+        システム設定を復元します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/controller-replace-recable-reassign-disks.html">
+        システムにケーブルを再接続
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/controller-replace-restore-system-rma.html">
+        システムのリストアを完了
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/fan-replace.html">
+        ファン
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/mezzanine-replace.html">
+        メザニンカード
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/nvmem-nvram-battery-replace.html">
+        NVMEM バッテリ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/power-supply-replace.html">
+        電源装置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a250/rtc-battery-replace.html">
+        リアルタイムクロックバッテリ
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/a300/index.html">
+        <div class="na-navbar-padding"> AFF A300 システム</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設置とセットアップ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/install-worksheet-linkout.html">
+        クラスタ設定ワークシート
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/install-setup.html">
+        インストールとセットアップを選択します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/install-setup-linkout.html">
+        クイックステップ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/install-video-linkout.html">
+        ビデオの手順
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> メンテナンス</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ブートメディア</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/bootmedia-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/bootmedia-encryption-preshutdown-checks.html">
+        オンボード暗号化キーを確認
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/bootmedia-impaired-controller-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/bootmedia-replace.html">
+        ブートメディアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/bootmedia-recovery-image-boot-options.html">
+        ブートイメージを起動します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/bootmedia-2n-mcc-switchback.html">
+        MetroCluster 構成をスイッチバックします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/bootmedia-encryption-restore.html">
+        OKM 、 NSE 、 NVE をリストアします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/bootmedia-complete-rma.html">
+        障害のある部品をネットアップに返却します
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> シャーシ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/chassis-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/chassis-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/chassis-replace-move-hardware.html">
+        ハードウェアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/chassis-replace-complete-system-restore-rma.html">
+        構成をリストアする
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> コントローラモジュール</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/controller-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/controller-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/controller-replace-move-hardware.html">
+        コントローラモジュールを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/controller-replace-system-config-restore-and-verify.html">
+        システム設定を復元します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/controller-replace-recable-reassign-disks.html">
+        システムにケーブルを再接続
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/controller-replace-restore-system-rma.html">
+        交換後の処理
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/fan-swap-out.html">
+        ファン
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/nvmem-nvram-battery-replace.html">
+        NVMEM バッテリ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/pci-cards-and-risers-replace.html">
+        PCIe カード
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/power-supply-swap-out.html">
+        電源装置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a300/rtc-battery-replace.html">
+        リアルタイムクロックバッテリ
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/a320/index.html">
+        <div class="na-navbar-padding"> AFF A320 システム</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設置とセットアップ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/install-setup.html">
+        インストールとセットアップを選択します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/install-quick-guide.html">
+        クイックステップ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/install-videos.html">
+        ビデオの手順
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/install-detailed-guide.html">
+        詳細な手順
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> メンテナンス</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ブートメディア</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/bootmedia-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/bootmedia-encryption-preshutdown-checks.html">
+        オンボード暗号化キーを確認
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/bootmedia-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/bootmedia-replace.html">
+        ブートメディアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        ブートイメージを起動します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/bootmedia-encryption-restore.html">
+        OKM 、 NSE 、 NVE をリストアします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/bootmedia-complete-rma.html">
+        障害のある部品をネットアップに返却します
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> シャーシ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/chassis-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/chassis-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/chassis-replace-move-hardware.html">
+        ハードウェアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/chassis-replace-complete-system-restore-rma.html">
+        交換後の処理
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> コントローラモジュール</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-replace-move-hardware.html">
+        コントローラモジュールを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-replace-system-config-restore-and-verify.html">
+        システム設定を復元します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-repalce-recable-reassign-disks.html">
+        システムにケーブルを再接続
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-replace-complete-system-restoration.html">
+        システムのリストアを完了
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-replace-complete-rma.html">
+        交換後の処理
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/fan-swap-out.html">
+        ファン
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/nvdimm-replace.html">
+        NVDIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/nvdimm-battery-replace.html">
+        NVDIMM バッテリ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/pci-cards-and-risers-replace.html">
+        PCIe カード
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/power-supply-replace.html">
+        電源装置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/rtc-battery-replace.html">
+        リアルタイムクロックバッテリ
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/a400/index.html">
+        <div class="na-navbar-padding"> AFF A400 システム</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設置とセットアップ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/install-setup.html">
+        インストールとセットアップを選択します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/install-quick-guide.html">
+        クイックステップ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/install-videos.html">
+        ビデオの手順
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/install-detailed-guide.html">
+        詳細な手順
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> メンテナンス</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ブートメディア</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/bootmedia-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/bootmedia-encryption-preshutdown-checks.html">
+        オンボード暗号化キーを確認
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/bootmedia-impaired-controller-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/bootmedia-replace.html">
+        ブートメディアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/bootmedia-recovery-image-boot-options.html">
+        ブートイメージを起動します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/bootmedia-2n-mcc-switchback.html">
+        MetroCluster の設定をスイッチバックします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/bootmedia-encryption-restore.html">
+        OKM 、 NSE 、 NVE をリストアします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/bootmedia-complete-rma.html">
+        障害のある部品をネットアップに返却します
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> シャーシ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/chassis-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/chassis-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/chassis-replace-move-hardware.html">
+        ハードウェアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/chassis-replace-complete-system-restore-rma.html">
+        交換後の処理
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> コントローラモジュール</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/controller-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/controller-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/controller-replace-move-hardware.html">
+        コントローラモジュールを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/controller-replace-system-config-restore-and-verify.html">
+        システム設定を復元します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/controller-replace-recable-reassign-disks.html">
+        システムにケーブルを再接続します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/controller-replace-restore-system-rma.html">
+        システムのリストアを完了
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/fan-swap-out.html">
+        ファン
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/nvdimm-battery-replace.html">
+        NVDIMM バッテリ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/nvdimm-replace.html">
+        NVDIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/pci-cards-and-risers-replace.html">
+        PCIe カードまたはメザニンカード
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/power-supply-replace.html">
+        電源装置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a400/rtc-battery-replace.html">
+        リアルタイムクロックバッテリ
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/fas9000/index.html">
+        <div class="na-navbar-padding"> AFF A700 および FAS9000 システム</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設置とセットアップ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/install-setup.html">
+        インストールとセットアップを選択します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/install-quick-guide.html">
+        クイックステップ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/install-videos.html">
+        ビデオの手順
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/install-detailed-guide.html">
+        詳細な手順
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> メンテナンス</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ブートメディア</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/bootmedia-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/bootmedia-encryption-preshutdown-checks.html">
+        オンボード暗号化キーを確認
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/bootmedia-impaired-controller-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/bootmedia-replace.html">
+        ブートイメージを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/bootmedia-recovery-image-boot-options.html">
+        ブートイメージを起動します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/bootmedia-2n-mcc-switchback.html">
+        MetroCluster の設定をスイッチバックします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/bootmedia-encryption-restore.html">
+        OKM 、 NSE 、 NVE をリストアします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/bootmedia-complete-rma.html">
+        障害のある部品をネットアップに返却します
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/caching-module-and-core-dump-module-replace.html">
+        キャッシングモジュール
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/caching-module-hot-swap.html">
+        キャッシングモジュール（ホットスワップ）
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> シャーシ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/chassis-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/chassis-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/chassis-replace-move-hardware.html">
+        ハードウェアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/chassis-replace-complete-system-restore-rma.html">
+        交換後の処理
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> コントローラモジュール</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/controller-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/controller-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/controller-replace.html">
+        コントローラモジュールを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/controller-replace-system-config-restore-and-verify.html">
+        システム設定を復元します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/controller-replace-recable-reassign-disks.html">
+        システムにケーブルを再接続
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/controller-replace-complete-system-restoration.html">
+        システムのリストアを完了
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/dcpm-nvram10-battery-replace.html">
+        DCPM を実行します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/fan-swap-out.html">
+        ファン
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/pci-cards-and-risers-replace.html">
+        I/O モジュール
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/led-module-replace.html">
+        LED USB モジュール
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/nvram-module-or-nvram-dimm-replacement.html">
+        NVRAM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/power-supply-swap-out.html">
+        電源装置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/rtc-battery-replace.html">
+        RTC バッテリ
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> X91148A モジュール</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/x91148a-module-install-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/x91148a-modules-with-open-slots-add.html">
+        オープンスロットを備えた AFF A700 システム
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas9000/x91148a-modules-with-no-open-slots-add.html">
+        AFF A700 システムにオープンスロットがありません
+      </a></li></ul></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/a700s/index.html">
+        <div class="na-navbar-padding"> AFF A700s システム</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設置とセットアップ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/install-worksheet-linkout.html">
+        クラスタ設定ワークシート
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/install-setup.html">
+        インストールとセットアップを選択します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/install-setup-linkout.html">
+        クイックステップ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/install-video-linkout.html">
+        ビデオの手順
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> メンテナンス</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ブートメディア</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/bootmedia-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/bootmedia-encryption-preshutdown-checks.html">
+        オンボード暗号化を確認
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/bootmedia-shutdown.html">
+        ノードをシャットダウン
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/bootmedia-replace.html">
+        ブートメディアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/bootmedia-transfer-boot-image.html">
+        ブートイメージを転送します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        ブートイメージを起動します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/bootmedia-encryption-restore.html">
+        OKM 、 NSE 、 NVE をリストアします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/bootmedia-complete-rma.html">
+        障害のある部品をネットアップに返却します
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> シャーシ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/chassis-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/chassis-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/chassis-replace-move-hardware.html">
+        ハードウェアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/chassis-replace-complete-system-restore-rma.html">
+        交換後の処理
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> コントローラ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/controller-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/controller-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/controller-replace-move-hardware.html">
+        コントローラモジュールを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/controller-replace-system-config-restore-and-verify.html">
+        システム設定を復元します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/controller-replace-recable-reassign-disks.html">
+        システムにケーブルを再接続
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/controller-replace-restore-system-rma.html">
+        交換プロセスを完了
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/dimm-replace.html">
+        DIMM
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ファン</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/fan-impaired-controller-shutdown.html">
+        障害ノードをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/fan-controller-remove.html">
+        コントローラモジュールを取り外します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/fan-replace.html">
+        ファン
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/fan-controller-reinstall-pcie-rtc.html">
+        コントローラモジュールを再度取り付けます
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/fan-complete-rma.html">
+        障害のある部品をネットアップに返却します
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
+        NVRAM バッテリ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/nvram-or-nvram-dimm-replacement.html">
+        NVRAM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/pci-cards-and-risers-replace.html">
+        PCIe カード
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/power-supply-swap-out.html">
+        電源装置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/rtc-battery-replace.html">
+        リアルタイムクロックバッテリ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/system-level-diags-linkout.html">
+        システムレベルの診断
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/a800/index.html">
+        <div class="na-navbar-padding"> AFF A800 システム</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設置とセットアップ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/install-setup.html">
+        インストールとセットアップを選択します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/install-quick-guide.html">
+        クイックステップ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/install-videos.html">
+        ビデオの手順
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/install-detailed-guide.html">
+        詳細な手順
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> メンテナンス</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ブートメディア</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/bootmedia-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/bootmedia-encryption-preshutdown-checks.html">
+        オンボード暗号化キーを確認
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/bootmedia-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/bootmedia-replace.html">
+        ブートイメージを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        ブートイメージを起動します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/bootmedia-encryption-restore.html">
+        OKM 、 NSE 、 NVE をリストアします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/bootmedia-complete-rma.html">
+        障害のある部品をネットアップに返却します
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> シャーシ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/chassis-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/chassis-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/chassis-replace-move-hardware.html">
+        ハードウェアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/chassis-replace-complete-system-restore-rma.html">
+        交換後の処理
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> コントローラ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/controller-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/controller-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/controller-replace-move-hardware.html">
+        コントローラモジュールを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/controller-replace-system-config-restore-and-verify.html">
+        システム設定を復元します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/controller-replace-recable-reassign-disks.html">
+        システムにケーブルを再接続
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/controller-replace-restore-system-rma.html">
+        交換後の処理
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/fan-replace.html">
+        ファン
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/nvdimm-replace.html">
+        NVDIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/nvdimm-battery-replace.html">
+        NVDIMM バッテリ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/pci-cards-and-risers-replace.html">
+        PCIe カード
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/power-supply-replace.html">
+        電源装置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a800/rtc-battery-replace.html">
+        リアルタイムクロックバッテリ
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/c190/index.html">
+        <div class="na-navbar-padding"> AFF C190 システム</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設置とセットアップ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/install-setup.html">
+        インストールとセットアップを選択します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/install-quick-guide.html">
+        クイックステップ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/install-videos.html">
+        ビデオの手順
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/install-detailed-guide.html">
+        詳細な手順
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> メンテナンス</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ブートメディア</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/bootmedia-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/bootmedia-encryption-preshutdown-checks.html">
+        オンボード暗号化キーを確認
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/bootmedia-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/bootmedia-replace.html">
+        ブートメディアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        ブートイメージを起動します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/bootmedia-encryption-restore.html">
+        OKM 、 NSE 、 NVE をリストアします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/bootmedia-complete-rma.html">
+        障害のある部品をネットアップに返却します
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> シャーシ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/chassis-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/chassis-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/chassis-replace-move-hardware.html">
+        ハードウェアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/chassis-replace-restore-and-verify.html">
+        構成をリストアする
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/chassis-replace-complete-rma.html">
+        交換後の処理
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> コントローラ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/controller-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/controller-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/controller-replace-move-hardware.html">
+        コントローラモジュールを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/controller-replace-system-config-restore-and-verify.html">
+        システム設定を復元します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/controller-replace-recable-reassign-disks.html">
+        システムにケーブルを再接続
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/controller-replace-restore-system-rma.html">
+        システムのリストアを完了
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/nvmem-nvram-battery-replace.html">
+        NVMEM バッテリ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/power-supply-swap-out.html">
+        電源装置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/c190/rtc-battery-replace.html">
+        リアルタイムクロックバッテリ
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/fas2600/index.html">
+        <div class="na-navbar-padding"> FAS2600 システム</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設置とセットアップ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/install-worksheet-linkout.html">
+        クラスタ設定ワークシート
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/install-setup.html">
+        インストールとセットアップを選択します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/install-setup-linkout.html">
+        クイックステップ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/install-video-linkout.html">
+        ビデオの手順
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> メンテナンス</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ブートメディア</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/bootmedia-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/bootmedia-encryption-preshutdown-checks.html">
+        オンボード暗号化キーを確認
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/bootmedia-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/bootmedia-replace.html">
+        ブートメディアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        ブートイメージを起動します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/bootmedia-encryption-restore.html">
+        OKM 、 NSE 、 NVE をリストアします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/bootmedia-complete-rma.html">
+        障害のある部品をネットアップに返却します
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/caching-module-replace.html">
+        キャッシングモジュール
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> シャーシ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/chassis-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/chassis-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/chassis-replace-move-hardware.html">
+        ハードウェアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/chassis-replace-complete-system-restore-rma.html">
+        システム設定を復元します
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> コントローラモジュール</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/controller-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/controller-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/controller-replace-move-hardware.html">
+        コントローラモジュールを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/controller-replace-system-config-restore-and-verify.html">
+        システム設定を復元します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/controller-replace-recable-reassign-disks.html">
+        システムにケーブルを再接続
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/controller-replace-restore-system-rma.html">
+        システムのリストアを完了
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/nvmem-nvram-battery-replace.html">
+        NVMEM バッテリ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/power-supply-swap-out.html">
+        電源装置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2600/rtc-battery-replace.html">
+        リアルタイムクロックバッテリ
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/fas500f/index.html">
+        <div class="na-navbar-padding"> FAS500f システム</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設置とセットアップ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/install-setup.html">
+        インストールとセットアップを選択します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/install-quick-guide.html">
+        クイックステップ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/install-videos.html">
+        ビデオの手順
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/install-detailed-guide.html">
+        詳細な手順
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> メンテナンス</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ブートメディア</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/bootmedia-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/bootmedia-encryption-preshutdown-checks.html">
+        オンボード暗号化キーを確認
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/bootmedia-shutdown.html">
+        ノードをシャットダウン
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/bootmedia-replace.html">
+        ブートイメージを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        ブートイメージを起動します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/bootmedia-encryption-restore.html">
+        OKM 、 NSE 、 NVE をリストアします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/bootmedia-complete-rma.html">
+        障害のある部品をネットアップに返却します
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> シャーシ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/chassis-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/chassis-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/chassis-replace-move-hardware.html">
+        ハードウェアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/chassis-replace-complete-system-restore-rma.html">
+        交換後の処理
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> コントローラ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/controller-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/controller-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/controller-replace-move-hardware.html">
+        コントローラモジュールを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/controller-replace-system-config-restore-and-verify.html">
+        システム設定を復元します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/controller-replace-recable-reassign-disks.html">
+        システムにケーブルを再接続
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/controller-replace-restore-system-rma.html">
+        システムのリストアを完了
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/fan-replace.html">
+        ファン
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/mezzanine-replace.html">
+        メザニンカード
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/nvmem-battery-replace.html">
+        NVMEM バッテリ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/power-supply-replace.html">
+        電源装置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas500f/rtc-battery-replace.html">
+        リアルタイムクロックバッテリ
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/fas8200/index.html">
+        <div class="na-navbar-padding"> FAS8200 システム</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設置とセットアップ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/install-worksheet-linkout.html">
+        クラスタ設定ワークシート
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/install-setup.html">
+        インストールとセットアップを選択します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/install-setup-linkout.html">
+        クイックステップ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/install-video-linkout.html">
+        ビデオの手順
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> メンテナンス</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ブートメディア</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/bootmedia-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/bootmedia-encryption-preshutdown-checks.html">
+        オンボード暗号化キーを確認
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/bootmedia-impaired-controller-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/bootmedia-replace.html">
+        ブートメディアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/bootmedia-recovery-image-boot-options.html">
+        ブートイメージを起動します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/bootmedia-2n-mcc-switchback.html">
+        MetroCluster の設定をスイッチバックします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/bootmedia-encryption-restore.html">
+        OKM 、 NSE 、 NVE をリストアします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/bootmedia-complete-rma.html">
+        障害のある部品をネットアップに返却します
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/caching-module-replace.html">
+        キャッシングモジュール
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> シャーシ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/chassis-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/chassis-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/chassis-replace-move-hardware.html">
+        ハードウェアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/chassis-replace-complete-system-restore-rma.html">
+        構成をリストアする
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> コントローラ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/controller-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/controller-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/controller-replace-move-hardware.html">
+        コントローラモジュールを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/controller-replace-system-config-restore-and-verify.html">
+        システム設定を復元します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/controller-replace-recable-reassign-disks.html">
+        システムにケーブルを再接続
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/controller-replace-restore-system-rma.html">
+        システムのリストアを完了
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/fan-swap-out.html">
+        ファン
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/nvmem-nvram-battery-replace.html">
+        NVMEM バッテリ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/pci-cards-and-risers-replace.html">
+        PCIe カード
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/power-supply-swap-out.html">
+        電源装置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/rtc-battery-replace.html">
+        リアルタイムクロックバッテリ
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/fas8300/index.html">
+        <div class="na-navbar-padding"> FAS8300 および FAS8700 システム</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設置とセットアップ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/install-setup.html">
+        インストールとセットアップを選択します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/install-quick-guide.html">
+        クイックステップ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/install-videos.html">
+        ビデオの手順
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/install-detailed-guide.html">
+        詳細な手順
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> メンテナンス</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ブートメディア</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/bootmedia-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/bootmedia-encryption-preshutdown-checks.html">
+        オンボード暗号化キーを確認
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/bootmedia-impaired-controller-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/bootmedia-replace.html">
+        ブートイメージを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/bootmedia-recovery-image-boot-options.html">
+        ブートイメージを起動します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/bootmedia-2n-mcc-switchback.html">
+        MetroCluster の設定をスイッチバックします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/bootmedia-encryption-restore.html">
+        OKM 、 NSE 、 NVE をリストアします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/bootmedia-complete-rma.html">
+        障害のある部品をネットアップに返却します
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/caching-module-replace.html">
+        キャッシングモジュール
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> シャーシ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/chassis-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/chassis-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/chassis-replace-move-hardware.html">
+        ハードウェアを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/chassis-replace-complete-system-restore-rma.html">
+        交換後の処理
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> コントローラ</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/controller-replace-overview.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/controller-replace-shutdown.html">
+        障害のあるコントローラをシャットダウンします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/controller-replace-move-hardware.html">
+        コントローラモジュールを交換します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/controller-replace-system-config-restore-and-verify.html">
+        システム設定を復元します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/controller-replace-recable-reassign-disks.html">
+        システムにケーブルを再接続
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/controller-replace-restore-system-rma.html">
+        交換後の処理
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/fan-swap-out.html">
+        ファン
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/nvdimm-replace.html">
+        NVDIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/nvdimm-battery-replace.html">
+        NVDIMM バッテリ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/pci-cards-and-risers-replace.html">
+        PCIe カードまたはメザニンカード
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/power-supply-replace.html">
+        電源装置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8300/rtc-battery-replace.html">
+        リアルタイムクロックバッテリ
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> その他のプラットフォームの手順</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> システムレベルの診断</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/sldiag-introduction.html">
+        はじめに
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/sldiag-requirements.html">
+        要件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/sldiag-use-cli-help.html">
+        コマンドラインヘルプの使用方法
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/sldiag-system-installation-diagnostics.html">
+        システムのインストール診断を実行します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/sldiag-system-panic-diagnostics.html">
+        システムパニック診断を実行します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/sldiag-slow-system-diagnostics.html">
+        システム応答の遅延診断を実行します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/sldiag-hardware-installation-diagnostics.html">
+        ハードウェアの設置診断を実行します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/sldiag-device-failure-diagnostics.html">
+        デバイス障害診断を実行します
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/superrail-install.html">
+        SuperRail キット
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/telco-installation-instructions.html">
+        AFF A700 / FAS9000 2 ポストレールキット
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 42U 1280 mm システムキャビネット</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> キャビネットを設置する準備をします</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-features.html">
+        キャビネットの機能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-required-tools.html">
+        必要な工具 / 機器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-space-and-dimensions.html">
+        必要なスペースとキャビネットの寸法
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-supported-pdu-types-and-specifications.html">
+        サポートされている PDU のタイプと仕様
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-unpack.html">
+        システムキャビネットを開梱します
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> キャビネットを設置</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-install.html">
+        概要
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-install-cabinet-interconnect-kit.html">
+        キャビネットインターコネクトキットを設置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-install-bolt-down-kit.html">
+        ボルトダウンキットを取り付ける
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-install-additional-rails.html">
+        サポートレールを取り付けます
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-install-equipment.html">
+        機器を設置します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-power-on.html">
+        キャビネットの電源をオンにします
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-replace-pdus.html">
+        PDU を交換します
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> キャビネット前面ドアを反転します</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-reverse-front-door.html">
+        必要なもの
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-remove-illuminated-badge.html">
+        照光バッジを取り外します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-remove-door.html">
+        キャビネットドアを取り外します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-move-badge-ps-and-cabling.html">
+        バッジの電源装置とケーブルを移動します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-reverse-hinge-and-lock.html">
+        リバースドアヒンジとロックキャッチ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/42u-1280mm-reinstall-door-and-badge.html">
+        ドアと照光バッジを再度取り付けます
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 内蔵ディスクドライブをスワップします</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/drive-video.html">
+        概要ビデオ
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 内蔵ドライブをホットスワップします</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/drive-hotswap.html">
+        使用する手順
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/drive-hotswap-drive.html">
+        SSD のホットスワップ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/drive-hotswap-sas.html">
+        ホットスワップ対応 HDD
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> オール SAN アレイシステム</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/all-san-array.html">
+        セットアップとメンテナンス
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> ハードウェアのアップグレード</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/platform-supplemental/upgrade-linkout.html">
+        アップグレード手順
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/ns224/index.html">
+        <div class="na-navbar-padding"> NS224 シェルフ</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設置とケーブル接続</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/ns224/hot-add-shelf.html">
+        シェルフをホットアドします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/ns224/change-shelf-id.html">
+        シェルフ ID を変更します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/ns224/cable-as-switch-attached.html">
+        シェルフをスイッチ接続型ストレージとしてケーブル接続
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> メンテナンス</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/ns224/service-replace-boot-media.html">
+        ブートメディア
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/ns224/service-replace-dimm.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/ns224/service-replace-drive.html">
+        ドライブ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/ns224/service-replace-fan.html">
+        ファン
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/ns224/hot-remove-shelf.html">
+        シェルフをホットリムーブします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/ns224/service-replace-nsm100.html">
+        nsm モジュール
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/ns224/service-replace-power-supply.html">
+        電源装置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/ns224/service-replace-rtc-battery.html">
+        リアルタイムクロックバッテリ
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/sas3/index.html">
+        <div class="na-navbar-padding"> SAS シェルフと IOM12 モジュール</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設置とケーブル接続</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-new-system.html">
+        新しいシステム用のシェルフを設置してケーブル接続します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-hot-add-shelf.html">
+        シェルフをホットアドします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/iom12-hot-add-mix.html">
+        IOM12 シェルフを IOM6 シェルフのスタックにホットアドします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-change-shelf-id.html">
+        シェルフ ID を変更します
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> SAS ケーブル接続ルール、ワークシート、および例</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/overview-cabling-rules-examples.html">
+        概要
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-cabling-rules.html">
+        SAS ケーブル接続ルール
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-cabling-worksheets-examples-multipath.html">
+        一般的なマルチパス HA 構成のケーブル接続ワークシートと例
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-cabling-worksheets-examples-fas2600.html">
+        一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 構成のケーブル接続ワークシートと例
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-worksheets-examples-quadpath.html">
+        2 つのクアッドポート SAS HBA を使用したクアッドパス HA 構成のケーブル接続ワークシートと例
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-cabling-worksheet-template-multipath.html">
+        マルチパス接続用のケーブル接続ワークシートテンプレート
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-cabling-worksheet-template-quadpath.html">
+        クアッドパス接続用のケーブル接続ワークシートテンプレート
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-cabling-worksheets-how-to-read-multipath.html">
+        マルチパス接続用にワークシートをケーブル接続する方法
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-cabling-worksheets-how-to-read-quadpath.html">
+        クアッドパス接続でワークシートを読み取り、ケーブルを接続する方法
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> メンテナンス</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/service-hot-swap-drive-ds224c-ds212c.html">
+        DS224C または DS212C シェルフ内のディスクドライブ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/service-hot-swap-drive-ds460c.html">
+        DS460C シェルフ内のディスクドライブ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/service-replace-drawer-ds460c.html">
+        DS460C シェルフ内のドライブドロワー
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/service-replace-fan-ds460c.html">
+        DS460C シェルフのファンモジュール
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/hot-remove-shelf.html">
+        シェルフをホットリムーブします
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/service-hot-swap-iom.html">
+        IOM12 モジュール
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/service-hot-swap-power-supply.html">
+        電源装置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/service-monitor-leds.html">
+        シェルフ LED のステータス状態
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> その他のプラットフォーム、シェルフ、スイッチモデル</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/other/platform-linkout.html">
+        その他のプラットフォームモデル
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/other/shelf-linkout.html">
+        その他のシェルフモデル
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/other/switch-linkout.html">
+        その他のスイッチモデル
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/legal-notices.html">
+        法的通知
+      </a></li></ul>
+</div>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container -->
+    <article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://www.netapp.com">ホーム</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">ドキュメント</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/ja-jp/ontap-systems/">ONTAP&nbsp;Systems</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          SAS ケーブル接続ルール - IOM12 モジュールを搭載したシェルフ
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/ja-jp/ontap-systems/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 日本語は機械翻訳による参考訳です。内容に矛盾や不一致があった場合には、英語の内容が優先されます。 </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">SAS ケーブル接続ルール - IOM12 モジュールを搭載したシェルフ</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2021-10-26 05:14:39 +0000">10/26/2021</time>
+    
+  
+
+<span>寄稿者
+  <a target="_blank" href="https://github.com/dougthomp">
+    <img  class="avatar avatar-small"
+          alt="dougthomp"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/76076341?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/netapp-martyh">
+    <img  class="avatar avatar-small"
+          alt="netapp-martyh"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/66496079?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+
+</p>
+
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>IOM12 モジュールを搭載したディスクシェルフは、 SAS ケーブル接続ルール（設定ルール、コントローラのスロット番号のルール、シェルフ間の接続ルール、コントローラ / スタック間の接続ルール、および該当する場合は Mini-SAS HD SAS 光ケーブルルール）を適用することで、 HA ペアおよびシングルコントローラ構成（サポート対象プラットフォームの場合）でケーブル接続できます。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+このガイドで説明する SAS ケーブル接続ルールのうち、コントローラスロットの番号のルール、シェルフ / シェルフ間の接続ルール、およびコントローラ / スタック間の接続ルールは、 IOM12 、 IOM6 、 IOM3 のどのモジュールを搭載しているかにかかわらず、すべての SAS ディスクシェルフに適用されるルールと同じです。ただし、このガイド内の情報は、 IOM12 モジュールを搭載したディスクシェルフをサポート対象の構成で使用した場合に固有のものです。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>このガイドで説明する SAS ケーブル接続ルールのうち、構成ルールと Mini-SAS HD SAS 光ケーブルルールは、 IOM12 モジュールを搭載したディスクシェルフに固有のものです。</p>
+</div>
+<div class="paragraph">
+<p>このガイドで説明する SAS ケーブル接続ルールは、オンボード SAS ポートとホストバスアダプタ SAS ポート間の SAS ケーブル接続のバランスを取ることで、可用性の高いストレージコントローラ構成を実現し、次の目標を達成します。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>すべての SAS 製品と構成に、わかりやすい単一のユニバーサルアルゴリズムを提供します</p>
+</li>
+<li>
+<p>Bill of Materials （ BOM ；構成品一覧表）を生成する際、工場と現場と同じ物理的なケーブル接続を行います</p>
+</li>
+<li>
+<p>構成チェックソフトウェアとツールで検証できます</p>
+</li>
+<li>
+<p>最大限の耐障害性を提供することで、可用性を維持し、コントローラテイクオーバーへの依存を最小限に抑えます</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>ルールから逸脱しないようにしてください。逸脱すると、信頼性、汎用性、共通性が低下する可能性があります。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="設定ルール">設定ルール</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>IOM12 モジュールを搭載したディスクシェルフは、特定のタイプの HA ペアおよびシングルコントローラ構成でサポートされます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>HA ペア構成は、マルチパス HA またはクアッドパス HA 構成としてケーブル接続する必要がありますが、次の例外があります。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700HA ペア構成（外付けディスクシェルフを使用）は、シングルパス HA 構成としてケーブル接続して、外付けの SAS テープバックアップデバイスとの接続をサポートできます。</p>
+</li>
+<li>
+<p>AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700HA ペア構成では、クアッドパス HA 接続はサポートされていません。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>シングルコントローラ構成は、マルチパス構成またはクアッドパス構成としてケーブル接続する必要がありますが、次の例外があります。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>FAS2600 シリーズのシングルコントローラ構成（外付けディスクシェルフを使用）は、シングルパス構成としてケーブル接続できます。</p>
+<div class="paragraph">
+<p>内蔵ストレージではシングルパス接続が使用されるため、 ONTAP では、混合パスが検出されたという警告が表示されることがあります。この警告を回避するには、外付けディスクシェルフへのシングルパス接続を使用します。また、外付け SAS テープバックアップデバイスを使用する場合も、シングルパス接続を使用できます。</p>
+</div>
+</li>
+<li>
+<p>FAS2600 シリーズのシングルコントローラ構成では、クアッドパス接続はサポートされません。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="コントローラのスロット番号のルール">コントローラのスロット番号のルール</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>サポートされているすべての HA ペアおよびシングルコントローラ構成にケーブル接続ルールを適用するために、コントローラのスロット番号規則を使用します。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>すべての HA ペアおよびシングルコントローラ構成に、次の条件が適用されます。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>物理 PCI スロットの SAS HBA は、コントローラのスロットラベルに関係なく、 PCI スロット 1 、 2 、 3 の順で使用するものとします。</p>
+<div class="paragraph">
+<p>たとえば、 SAS HBA が物理 PCI スロット 3 、 5 、 7 を使用している場合、 SAS ケーブル接続ルールを適用するためにスロット 1 、 2 、 3 と指定します。</p>
+</div>
+</li>
+<li>
+<p>オンボード SAS HBA は、コントローラのラベルと同じく PCI スロット 0 を使用しているものとします。</p>
+</li>
+<li>
+<p>各スロットの各ポートは、コントローラのラベルと同じです。たとえば、ポートが 2 つあるスロット 0 は、 0a と 0b と表記します。ポートが 4 つあるスロット 1 は、 1a 、 1d 、 1c 、 1d と表記します。</p>
+<div class="paragraph">
+<p>このマニュアルでは、スロットとスロットポートを次のように表記します。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/slot0_rules.png" alt="slot0 ルール">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="シェルフ-シェルフ間の接続ルール">シェルフ / シェルフ間の接続ルール</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>ディスクシェルフスタックに複数のディスクシェルフがある場合は、該当する「標準」または「幅」のシェルフ / シェルフ間ケーブルを使用して、各 SAS ドメイン（ IOM A と IOM B ）を介してシェルフどうしを接続します。「標準」または「幅の広い」シェルフ間ケーブルの使用方法は、使用している構成によって異なります。</p>
+</div>
+<div class="sect2">
+<h3 id="標準のシェルフ-シェルフ間接続">標準のシェルフ / シェルフ間接続</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>標準シェルフ / シェルフ間接続は、マルチパス HA 、マルチパス、シングルパス HA 、およびシングルパスの各構成で使用します。</p>
+</li>
+<li>
+<p>これは、 IOM3 および IOM6 モジュールを搭載した既存の SAS ストレージ構成で使用されている接続で、ドメイン A （ IOM A ）とドメイン B （ IOM B ）の各ドメイン内のディスクシェルフどうしを 1 本のケーブルで接続します。</p>
+</li>
+<li>
+<p>ベストプラクティスは、標準シェルフ / シェルフ間接続に IOM ポート 3 と 1 を使用することです。</p>
+<div class="paragraph">
+<p>スタック内の論理上最初のシェルフから最後のシェルフまでを、ドメイン A の IOM ポート 3 を次のシェルフの IOM ポート 1 に接続し、次にドメイン B を同様に接続します</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_shelf_to_shelf_standard.gif" alt="DRW シェルフからシェルフ標準">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2-倍幅シェルフ-シェルフ間接続">2 倍幅シェルフ / シェルフ間接続</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>2 倍幅シェルフ / シェルフ間接続は、クアッドパス（クアッドパス HA およびクアッドパス）構成で使用します。</p>
+</li>
+<li>
+<p>2 倍幅シェルフ / シェルフ間接続には、ドメイン A （ IOM A ）とドメイン B （ IOM B ）それぞれのディスクシェルフ間に 2 本のケーブル接続が必要です。</p>
+<div class="paragraph">
+<p>最初のケーブル接続は標準シェルフ / シェルフ間接続で IOM ポート 3 と 1 を接続し、 2 番目のケーブル接続は 2 倍幅シェルフ / シェルフ間接続で IOM ポート 4 と 2 を接続します。</p>
+</div>
+<div class="paragraph">
+<p>スタック内の論理上最初のシェルフから最後のシェルフまでを、ドメイン A の IOM ポート 3 を次のシェルフの IOM ポート 1 に接続し、次にドメイン B を同様に接続しますスタック内の論理上最初のシェルフから最後のシェルフまでを、ドメイン A の IOM ポート 4 を次のシェルフの IOM ポート 2 に接続し、次にドメイン B を同様に接続します（ 2 倍幅接続としてケーブル接続された IOM ポートは青で表示されています。）</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_shelf_to_shelf_double_wide.gif" alt="DRW シェルフからシェルフへの幅が 2 倍になっています">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="コントローラ-スタック間の接続ルール">コントローラ / スタック間の接続ルール</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>SAS ディスクシェルフがソフトウェアベースのディスク所有権を使用していること、コントローラポート A / C および B / D がスタックに接続されている方法を理解することで、 HA ペアまたはシングルコントローラ構成の各コントローラから各スタックへの SAS 接続を正しくケーブル接続できます。 コントローラポート A / C および B / D がポートペアに編成されている仕組みと、 AFF A200 、 AFF A220 、 FAS2600 シリーズおよび FAS2700 システムのポート 0b および 0a がスタックに接続される方法です。</p>
+</div>
+<div class="sect2">
+<h3 id="sas-ディスクシェルフのソフトウェアベースのディスク所有権ルール">SAS ディスクシェルフのソフトウェアベースのディスク所有権ルール</h3>
+<div class="paragraph">
+<p>SAS ディスクシェルフは、（ハードウェアベースではなく）ソフトウェアベースのディスク所有権を使用します。つまり、ディスクドライブの所有権は、（ハードウェアベースのディスク所有権の場合のように）ストレージシステムの物理接続のトポロジによって決まるのではなく、ディスクドライブに保存されます。具体的には、ディスクドライブの所有権は、コントローラ / スタック間の接続方法ではなく、 ONTAP によって（自動または CLI コマンドで）割り当てられます。</p>
+</div>
+<div class="paragraph">
+<p>SAS ディスクシェルフは、ハードウェアベースのディスク所有権の手法を使用してケーブル接続しないでください。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="コントローラ-a-および-c-ポートの接続ルール-aff-a200-aff-a220-fas2600-シリーズおよび-fas2700-以外の構成の場合">コントローラ A および C ポートの接続ルール（ AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 以外の構成の場合）</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>A ポートと C ポートは常にスタックへのプライマリパスです。</p>
+</li>
+<li>
+<p>A ポートと C ポートは常にスタック内の論理的に最初のディスクシェルフに接続します。</p>
+</li>
+<li>
+<p>A ポートと C ポートは常にディスクシェルフの IOM ポート 1 と 2 に接続します。</p>
+<div class="paragraph">
+<p>IOM ポート 2 は、クアッドパス HA およびクアッドパス構成でのみ使用されます。</p>
+</div>
+</li>
+<li>
+<p>コントローラ 1 の A ポートと C ポートは常に IOM A （ドメイン A ）に接続します。</p>
+</li>
+<li>
+<p>コントローラ 2 の A ポートと C ポートは常に IOM B （ドメイン B ）に接続します。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>次の図は、 1 つのクアッドポート HBA と 2 つのディスクシェルフスタックを使用したマルチパス HA 構成で、コントローラポート A とポート C がどのように接続されるかを示しています。スタック 1 への接続は青で示されています。スタック 2 への接続はオレンジで示されています。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_controller_to_stack_rules_ports_a_and_c_example.gif" alt="ルールポート A と C をスタックする DRW コントローラの例">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="コントローラ-b-および-d-ポートの接続ルール-aff-a200-aff-a220-fas2600-シリーズおよび-fas2700-以外の構成の場合">コントローラ B および D ポートの接続ルール（ AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 以外の構成の場合）</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>B ポートと D ポートは常にスタックへのセカンダリパスです。</p>
+</li>
+<li>
+<p>B ポートと D ポートは常にスタック内の論理的に最後のディスクシェルフに接続します。</p>
+</li>
+<li>
+<p>B ポートと D ポートは常にディスクシェルフの IOM ポート 3 と 4 に接続します。</p>
+<div class="paragraph">
+<p>IOM ポート 4 は、クアッドパス HA およびクアッドパス構成でのみ使用されます。</p>
+</div>
+</li>
+<li>
+<p>コントローラ 1 の B ポートと D ポートは常に IOM B （ドメイン B ）に接続します。</p>
+</li>
+<li>
+<p>コントローラ 2 の B ポートと D ポートは常に IOM A （ドメイン A ）に接続します。</p>
+</li>
+<li>
+<p>B ポートと D ポートは、最初のスロットの最初のポートが最後にケーブル接続されるよう、 PCI スロットの順序を 1 つずつオフセットしてスタックに接続されます。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>次の図は、 1 つのクアッドポート HBA と 2 つのディスクシェルフスタックを使用したマルチパス HA 構成で、コントローラポート B とポート D がどのように接続されるかを示しています。スタック 1 への接続は青で示されています。スタック 2 への接続はオレンジで示されています。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_controller_to_stack_rules_ports_b_and_d_example.gif" alt="DRW コントローラからスタックルールポート b および d の例">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ポートペアの接続ルール-aff-a200-aff-a220-fas2600-シリーズ-fas2700-以外の構成の場合">ポートペアの接続ルール（ AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 以外の構成の場合）</h3>
+<div class="paragraph">
+<p>HA ペアおよびシングルコントローラ構成でコントローラ / スタック間の接続をケーブル接続する場合、システムの耐障害性と整合性を確保するために、すべての SAS ポートを活用する方法でコントローラ SAS の A 、 B 、 C 、 D の各ポートがポートペアに編成されます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ポートペアは、コントローラ A または C の SAS ポートとコントローラ B または D の SAS ポートで構成されます。</p>
+<div class="paragraph">
+<p>SAS の A ポートと C ポートはスタック内の論理的に最初のシェルフに接続します。SAS の B ポートと D ポートはスタック内の論理的に最後のシェルフに接続します。</p>
+</div>
+</li>
+<li>
+<p>ポートペアは、システム内の各コントローラのすべての SAS ポートを使用します。</p>
+<div class="paragraph">
+<p>すべての SAS ポート（物理 PCI スロット [slot 1-N] の HBA ポートおよびコントローラ [slot 0] のオンボードポート）をポートペアに組み込むことで、システムの耐障害性が向上します。SAS ポートは除外しないでください。</p>
+</div>
+</li>
+<li>
+<p>ポートペアは次のように識別および編成されます。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>最初に A ポート、次に C ポートをスロット（ 0 、 1 、 2 、 3 など）順に列挙します。</p>
+<div class="paragraph">
+<p>例： 1a 、 2a 、 3a 、 1c 、 2c 、 3C</p>
+</div>
+</li>
+<li>
+<p>最初に B ポート、次に D ポートをスロット（ 0 、 1 、 2 、 3 など）順に列挙します。</p>
+<div class="paragraph">
+<p>例： 1b 、 2b 、 3b 、 1d 、 2d 、 3D</p>
+</div>
+</li>
+<li>
+<p>リストの最初のポートが末尾に移動するように、 D および B のポートリストを書き換えます。</p>
+<div class="paragraph">
+<p>例： <span class="image"><img src="../media/drw_gen_sas_cable_step2.png" alt=""></span></p>
+</div>
+<div class="paragraph">
+<p>複数の SAS ポートスロットが使用可能な場合は、スロットの順序を 1 つずつオフセットして、複数のスロット（物理 PCI スロットとオンボードスロット）にポートペアを分散することで、あるスタックが 1 つの SAS HBA にケーブル接続されないようにします。</p>
+</div>
+</li>
+<li>
+<p>A ポートと C ポート（手順 1 に記載）を、 D ポートと B ポート（手順 2 に記載）と記載順にペアにします。</p>
+<div class="paragraph">
+<p>例： 1a / 2b 、 2a / 3b 、 3a / 1d 、 1c / 2d 、 2c / 3d 、 3c / 1b 。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+HA ペアの場合、最初のコントローラ用に識別したポートペアを 2 台目のコントローラにも適用できます。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>システムをケーブル接続する際には、ポートペアを識別した順序で使用することも、ポートペアをスキップすることもできます。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>システム内のスタックをケーブル接続するためにすべてのポートペアが必要な場合は、ポートペアを識別した（リストした）順序で使用します。</p>
+<div class="paragraph">
+<p>たとえば、システムに対して 6 つのポートペアを識別し、マルチパスでケーブル接続するスタックが 6 つある場合は、ポートペアをリストした順序でケーブル接続します。</p>
+</div>
+<div class="paragraph">
+<p>1A/2b 、 2a / 3b 、 3a / 1d 、 1c / 2d 、 2c / 3d 、 3c / 1b</p>
+</div>
+</li>
+<li>
+<p>システム内のスタックのケーブル接続にすべてのポートペアが必要でない場合は、ポートペアをスキップ（ 1 つおきに使用）します。</p>
+<div class="paragraph">
+<p>たとえば、システムに対して 6 つのポートペアを識別し、マルチパスでケーブル接続するスタックが 3 つある場合は、リストに含まれる他のすべてのポートペアをケーブル接続します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_portpair_connection_rules_list_skip.gif" alt="DRW ポートペア接続ルールリストはスキップされます">
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+スタックのケーブル接続に必要となる以上のポートペアがシステムにある場合は、ポートペアをスキップしてシステムの SAS ポートを最適化することを推奨します。SAS ポートを最適化することで、システムのパフォーマンスが最適化されます。
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>コントローラ / スタック間のケーブル接続ワークシートは、ポートペアを特定して整理するための便利なツールです。これにより、 HA ペアまたはシングルコントローラ構成のコントローラ / スタック間の接続をケーブル接続できます。</p>
+</div>
+<div class="paragraph">
+<p><a href="install-cabling-worksheet-template-multipath.html">"マルチパス接続用のコントローラ / スタック間のケーブル接続ワークシートテンプレート"</a></p>
+</div>
+<div class="paragraph">
+<p><a href="install-cabling-worksheet-template-quadpath.html">"クアッドパス接続用のコントローラ / スタック間のケーブル接続ワークシートテンプレート"</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="aff-a200-aff-a220-fas2600-シリーズ-fas2700-コントローラ-0b-0a-ポートの外部ディスクシェルフへの接続ルール">AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 コントローラ 0b 、 0a ポートの外部ディスクシェルフへの接続ルール</h3>
+<div class="paragraph">
+<p>AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 システムには、それぞれのコントローラが内蔵ストレージ（ポート 0b ）とスタックの間で同じドメイン接続を維持する必要があるため、固有の接続ルールがあります。つまり、コントローラがシャーシ（コントローラ 1 ）のスロット A にある場合、そのコントローラはドメイン A （ IOM A ）にあるため、ポート 0b はスタック内の IOM A に接続する必要があります。コントローラがシャーシ（コントローラ 2 ）のスロット B にある場合、そのコントローラはドメイン B （ IOM B ）にあるため、ポート 0b はスタック内の IOM B に接続する必要があります。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+0b ポートを正しいドメインに接続しないと（ドメインのクロスコネクト）、システムに耐障害性の問題が発生する可能性があり、無停止の手順を安全に実行できなくなります。
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>コントローラ 0b ポート（内蔵ストレージポート）：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>コントローラ 1 の 0b ポートは常に IOM A （ドメイン A ）に接続します。</p>
+</li>
+<li>
+<p>コントローラ 2 の 0b ポートは常に IOM B （ドメイン B ）に接続します。</p>
+</li>
+<li>
+<p>ポート 0b は常にプライマリパスです。</p>
+</li>
+<li>
+<p>ポート 0b は常にスタック内の論理的に最後のディスクシェルフに接続します。</p>
+</li>
+<li>
+<p>ポート 0b は常にディスクシェルフの IOM ポート 3 に接続します。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>コントローラ 0a ポート（内蔵 HBA ポート）：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>コントローラ 1 の 0a ポートは常に IOM B （ドメイン B ）に接続します。</p>
+</li>
+<li>
+<p>コントローラ 2 の 0a ポートは常に IOM A （ドメイン A ）に接続します。</p>
+</li>
+<li>
+<p>ポート 0a は常にセカンダリパスです。</p>
+</li>
+<li>
+<p>ポート 0a は常にスタック内の論理的に最初のディスクシェルフに接続します。</p>
+</li>
+<li>
+<p>ポート 0a は常にディスクシェルフの IOM ポート 1 に接続します。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>次の図は、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 マルチパス HA 構成の内蔵ストレージポート（ 0b ）のドメイン接続を示しています。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_fas2600_mpha_domain_example.png" alt="DRW fas2600 mpha ドメインの例">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="mini-sas-hd-sas-光ケーブルのルール">Mini-SAS HD SAS 光ケーブルのルール</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>Mini-SAS HD SAS 光ケーブル - マルチモードアクティブ光ケーブル（ AOC ）と Mini-SAS HD / Mini-SAS HD 間コネクタ、および Mini-SAS HD / LC 間コネクタを備えたマルチモード（ OM4 ）ブレークアウトケーブル - を使用すると、 IOM12 モジュールを搭載したディスクシェルフを使用する特定の構成で、長距離 SAS 接続を実現できます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ご使用のプラットフォームと ONTAP バージョンが、 Mini-SAS HD SAS 光ケーブル - マルチモードアクティブ光ケーブル（ AOC ）と Mini-SAS HD / Mini-SAS HD 間コネクタ、および Mini-SAS HD / LC 間コネクタを備えたマルチモード（ OM4 ）ブレークアウトケーブル - をサポートしている必要があります。</p>
+<div class="paragraph">
+<p><a href="https://hwu.netapp.com">"NetApp Hardware Universe の略"</a></p>
+</div>
+</li>
+<li>
+<p>Mini-SAS HD / Mini-SAS HD 間コネクタを備えた SAS 光マルチモード AOC ケーブルは、コントローラ / スタック間接続やシェルフ / シェルフ間の接続に使用でき、最大 50m までの規格があります。</p>
+</li>
+<li>
+<p>Mini-SAS HD / LC 間コネクタ（パッチパネル用）を備えた SAS 光マルチモード（ OM4 ）ブレークアウトケーブルを使用する場合は、次のルールが適用されます。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>これらのケーブルを、コントローラ / スタック間、およびシェルフ / シェルフ間の接続に使用できます。</p>
+<div class="paragraph">
+<p>シェルフ / シェルフ間の接続にこのケーブルを使用する場合、ディスクシェルフのスタック内で 1 回だけ使用できます。残りのシェルフ / シェルフ間接続は、マルチモード AOC ケーブルを使用して接続する必要があります。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>クアッドパス HA およびクアッドパス構成で 2 つのディスクシェルフ間のシェルフ間 2 倍幅接続にマルチモードブレークアウトケーブルを使用する場合は、まったく同じブレークアウトケーブルを 2 本使用することを推奨します。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>LC の 8 つ（ 4 組）のブレークアウトコネクタをすべてパッチパネルに接続する必要があります。</p>
+</li>
+<li>
+<p>パッチパネルとパネル間ケーブルを用意する必要があります。</p>
+<div class="paragraph">
+<p>パネル間のケーブルのモードは、ブレークアウトケーブルと同じ OM4 マルチモードでなければなりません。</p>
+</div>
+</li>
+<li>
+<p>パスで使用できるパッチパネルのペアは 1 組までです。</p>
+</li>
+<li>
+<p>マルチモードケーブルのポイントツーポイント（ Mini-SAS HD / Mini-SAS HD 間）パスが 100m を超えることはできません。</p>
+<div class="paragraph">
+<p>パスには、ブレークアウトケーブル、パッチパネル、およびパネル間ケーブルのセットが含まれます。</p>
+</div>
+</li>
+<li>
+<p>エンドツーエンドのケーブル接続の長さ（コントローラから最後のシェルフまでの各ポイントツーポイントの合計）は、 300m 以下にする必要があります。</p>
+<div class="paragraph">
+<p>合計パスには、ブレークアウトケーブル、パッチパネル、およびパネル間ケーブルのセットが含まれます。</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>SAS ケーブルには、 SAS 銅線ケーブルと SAS 光ケーブルを使用できます。その 2 つを併用することもできます。</p>
+<div class="paragraph">
+<p>SAS 銅線ケーブルと SAS 光ケーブルを併用する場合は、次のルールが適用されます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>シェルフ / シェルフ間の接続に使用するケーブルは、スタック単位で SAS 銅線ケーブルか SAS 光ケーブルのどちらかにすべて統一する必要があります。</p>
+</li>
+<li>
+<p>シェルフ / シェルフ間の接続に SAS 光ケーブルを使用する場合は、そのスタックのコントローラ / スタック間の接続にも SAS 光ケーブルを使用する必要があります。</p>
+</li>
+<li>
+<p>シェルフ / シェルフ間の接続に SAS 銅線ケーブルを使用する場合は、そのスタックのコントローラ / スタック間の接続に SAS 光ケーブルまたは SAS 銅線ケーブルを使用できます。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[SAS ケーブル接続ルール - IOM12 モジュールを搭載したシェルフ](https://docs.netapp.com/ja-jp/ontap-systems/sas3/install-cabling-rules.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/sas3/install_cabling_rules.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-systems/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">このページ</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <div style="clear: both"></div><!-- Main needs to have height -->
+</div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-systems/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-systems/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-systems/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-systems/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-systems/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-systems/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/ontap-systems/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">Web サイトについてのフィードバックを<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">お寄せください</a>
+  <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">お知らせ</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div>
+
+      <!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ja-jp/ontap-systems/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ja-jp/ontap-systems/js/prism.js'></script>
+      <script type="text/javascript" src='/ja-jp/ontap-systems/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ja-jp/ontap-systems/js/www-ntap.js'></script>
+    <script src='/ja-jp/ontap-systems/js/tabbed-blocks.js'></script>
+  </body>
+
+  
+</html>
