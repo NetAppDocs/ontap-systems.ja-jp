@@ -44,7 +44,7 @@ http://mysupport.netapp.com/["mysupport.netapp.com"]
 
 . オンボードキー管理が有効になっているときに「 This command is not supported when onboard key management 」というメッセージが表示された場合は、オンボードキーマネージャに格納されているキーを表示します。「 securitykey-manager key show -detail」
 +
-.. [Restored （リストア済み） ] 列に 'yes' と表示されている場合は ' オンボード・キー管理情報を手動でバックアップします
+.. [Restored （リストア済み） ] カラムに 'yes' と表示されている場合は ' オンボード・キー管理情報を手動でバックアップします
 +
 *** advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
 *** コマンドを入力して、 OKM バックアップ情報を表示します：「 securitykey-manager backup show 」
@@ -62,7 +62,7 @@ NOTE: プロンプトで、お客様のオンボードキー管理のパスフ�
 
 *** すべての認証キーに対して 'restored' カラムに yes が表示されていることを確認します 'securitykey-manager key show-detail
 *** advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
-*** コマンドを入力して、 OKM のバックアップ情報を表示します。「 securitykey-manager backup show 」
+*** コマンドを入力して、 OKM のバックアップ情報を表示します。「 security key-manager backup show 」
 *** バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。
 *** admin モードに戻ります。 'set-priv admin'
 *** ノードは安全にシャットダウンできます。
@@ -117,7 +117,7 @@ NOTE: プロンプトで、お客様の OKM パスフレーズを入力します
 
 *** すべての認証キーについて 'restored' 列に yes と表示されていることを確認します
 *** advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
-*** コマンドを入力して、 OKM 情報をバックアップします。「 securitykey-manager backup show 」
+*** コマンドを入力して、 OKM 情報をバックアップします：「 security key-manager backup show 」
 +
 
 NOTE: OKM 情報がログファイルに保存されていることを確認してください。この情報は、 OKM を手動でリカバリする必要がある災害シナリオで必要になります。

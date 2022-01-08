@@ -18,14 +18,10 @@ summary: ここでは、 AFF A250 システムのインストール手順につ�
 
 AFF A250 システムをインストールするには、アカウントを作成してシステムを登録する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。
 
-サイト要件および構成済みシステムの追加情報の情報については、 Hardware Universe にアクセスできる必要があります。また、ご使用の ONTAP バージョンのリリースノートにアクセスして、このシステムの詳細を確認しておくことを推奨します。
-
-https://hwu.netapp.com["NetApp Hardware Universe の略"^]
+にアクセスできる必要があります link:https://hwu.netapp.com["NetApp Hardware Universe の略"^] （ HWU ）を参照してください。サイト要件および構成済みシステム上の追加情報に関する情報が含まれます。へのアクセスも必要になる場合があります  このシステムの詳細については、を参照してください。
 
 
 NOTE: 特定の電力要件を持つお客様は、 HWU で構成オプションを確認する必要があります。
-
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対するリリースノートを検索してください"^]
 
 お客様のサイトで次のものを準備する必要があります。
 
@@ -43,16 +39,13 @@ image::../media/drw_ssn_label.png[DRW SSN ラベル]
 ... 既存のアカウントにログインするか、アカウントを作成します。
 ... システムを登録します。
 +
-https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"^]
+link:https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"^]
 
 
 
 .. 同梱されていたケーブルの数と種類を確認し、書き留めておきます。
 +
-次の表に、同梱されているケーブルの種類を示します。この表にないケーブルが含まれていた場合は、 Hardware Universe を参照してケーブルを特定し、用途を確認してください。
-
-+
-https://hwu.netapp.com["NetApp Hardware Universe の略"^]
+次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください link:https://hwu.netapp.com["NetApp Hardware Universe の略"^] ケーブルの場所を確認し、用途を特定します。
 
 +
 [cols="1,2,1,2"]
@@ -141,10 +134,7 @@ image:../media/oie_cable_power.png[""]
 システムの電源をオンにします
 
 |===
-.. NetApp ONTAP 構成ガイドを確認し、必要な情報を収集します。
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["ONTAP の設定内容"^]
-
+.. を確認します link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^] およびそのガイドに記載されている必要な情報を収集します。
 
 
 
@@ -197,7 +187,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 . アニメーションやステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=beec3966-0a01-473c-a5de-ac68017fbf29["2 ノードスイッチレスクラスタのケーブル接続"^]
+link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=beec3966-0a01-473c-a5de-ac68017fbf29["2 ノードスイッチレスクラスタをケーブル接続"^]
 
 +
 [cols="1,2"]
@@ -251,7 +241,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 . アニメーションやステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bf6759dc-4cbf-488e-982e-ac68017fbef8["スイッチクラスタのケーブル接続"^]
+link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bf6759dc-4cbf-488e-982e-ac68017fbef8["スイッチクラスタのケーブル接続"^]
 
 +
 [cols="1,2"]
@@ -397,7 +387,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 . アニメーションやステップバイステップの手順に従って、 1 台のシェルフにコントローラモジュールをケーブル接続します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3f92e625-a19c-4d10-9028-ac68017fbf57["コントローラを 1 台の NS224 にケーブル接続する"^]
+link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3f92e625-a19c-4d10-9028-ac68017fbf57["コントローラを 1 台の NS224 にケーブル接続する"^]
 
 +
 [cols="1,2"]
@@ -408,7 +398,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3f92e625-a19c-4d10
  a| 
 image:../media/oie_legend_icon_1_mb.png[""]
  a| 
-コントローラ A をシェルフにケーブル接続します image:../media/drw_affa250_1shelf_cabling_a.png[""]
+コントローラ A をシェルフにケーブル接続します。 image:../media/drw_affa250_1shelf_cabling_a.png[""]
 
 
 
@@ -435,7 +425,7 @@ image:../media/oie_legend_icon_2_lo.png[""]
 
 . 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
 +
-システムがブートを開始します。初回のブートには最大 8 分かかる場合があります
+システムがブートを開始します。初回のブートには最大 8 分かかる場合があります。
 
 . ラップトップでネットワーク検出が有効になっていることを確認します。
 +
@@ -443,7 +433,7 @@ image:../media/oie_legend_icon_2_lo.png[""]
 
 . 次のアニメーションに従って、ラップトップを管理スイッチに接続します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"^]
+link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"^]
 
 . 検出する ONTAP アイコンを選択します。
 +
@@ -451,8 +441,8 @@ image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コント
 
 +
 .. エクスプローラを開きます。
-.. 左側のペインで、 [Network] ( ネットワーク ) をクリックします。
-.. 右クリックして、更新を選択します。
+.. 左側のペインで、 *Network* をクリックします。
+.. 右クリックし、 * 更新 * を選択します。
 .. いずれかの ONTAP アイコンをダブルクリックし、画面に表示された証明書を受け入れます。
 +
 
@@ -463,12 +453,9 @@ System Manager が開きます。
 
 
 
-. System Manager のセットアップガイドを使用して、 _NetApp ONTAP 構成ガイド _ で収集したデータを基にシステムを設定します。
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["ONTAP の設定内容"^]
-
+. System Manager のセットアップガイドを使用して、で収集したデータを基にシステムを設定します link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^]。
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、に進みます link:https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
 
 
 
@@ -493,7 +480,7 @@ image::../media/drw_console_client_mgmt_subnet_affa250.png[DRW コンソール�
 
 . 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
 +
-システムがブートを開始します。初回のブートには最大 8 分かかる場合があります
+システムがブートを開始します。初回のブートには最大 8 分かかる場合があります。
 
 . いずれかのノードに初期ノード管理 IP アドレスを割り当てます。
 +
@@ -528,12 +515,9 @@ NOTE: PuTTY の設定方法がわからない場合は、ラップトップま�
 
 NOTE: アドレスの形式は、 +https://x.x.x.x+ です。
 
-.. NetApp ONTAP 構成ガイドで収集したデータを基にシステムを設定します。
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["ONTAP の設定内容"^]
-
+.. で収集したデータを使用してシステムを設定します link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^]。
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、に進みます link:https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
 

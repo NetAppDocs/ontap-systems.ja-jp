@@ -493,7 +493,7 @@ image::../media/drw_ns224_back_ports.png[DRW ns224 バックポート]
 .. シェルフ NSM B ポート e0a をコントローラ B のスロット 1 のポート A （ e1a ）にケーブル接続します。
 .. シェルフ NSM B のポート e0b をコントローラ A のスロット 1 のポート b （ e1b ）にケーブル接続します。+ 次の図は、シェルフのケーブル接続が完了した状態を示しています。
 +
-image::../media/drw_ns224_aff250_fas500f_1shelf.gif[DRW ns224 aff250 fas500f 1 シェルフ]
+image::../media/drw_ns224_aff250_fas500f_1shelf.png[DRW ns224 aff250 fas500f 1 シェルフ]
 
 
 

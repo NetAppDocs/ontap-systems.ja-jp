@@ -36,11 +36,11 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
  a| 
 障害ノードをテイクオーバーまたは停止します。
 
-** HA ペアの場合は、正常なノードから障害ノードをテイクオーバーします。「 storage failover takeover -ofnode `impaired_node_name
-+
-障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
+HA ペアの場合は、正常なノードから障害ノードをテイクオーバーします。「 storage failover takeover -ofnode impaired_node_name
 
++ 障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
 
+[+]
 
 |===
 . LOADER プロンプトで「 printenv 」と入力し、すべてのブート環境変数をキャプチャします。出力をログファイルに保存します。
@@ -52,7 +52,7 @@ NOTE: ブートデバイスが壊れているか機能していない場合、�
 
 
 
-== オプション 2 ：システムは MetroCluster に含まれています
+== オプション 2 ： MetroCluster 内のシステム
 
 [role="lead"]
 NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。

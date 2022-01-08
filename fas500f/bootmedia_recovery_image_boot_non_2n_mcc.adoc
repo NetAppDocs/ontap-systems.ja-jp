@@ -1,7 +1,7 @@
 ---
 permalink: fas500f/bootmedia-recovery-image-boot-non-2n-mcc.html 
 sidebar: sidebar 
-keywords: fas500f, boot, recovery, image, usb, drive, retore, file, system, verify, environmental, variable 
+keywords: fas500f, boot the recovery image 
 summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
 = リカバリイメージ FAS500f をブートします

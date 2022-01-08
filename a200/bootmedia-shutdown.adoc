@@ -1,7 +1,7 @@
 ---
 permalink: a200/bootmedia-shutdown.html 
 sidebar: sidebar 
-keywords: aff, a200, aff a200, complete, nve, nse, task, shutdown, impair, node, shut down the node 
+keywords: aff a200, shut down the node 
 summary: NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。 
 ---
 = ノード AFF A200 をシャットダウンします
@@ -32,11 +32,11 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
  a| 
 障害ノードをテイクオーバーまたは停止します。
 
-** HA ペアの場合は、正常なノードから障害ノードをテイクオーバーします。「 storage failover takeover -ofnode `impaired_node_name
-+
-障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
+HA ペアの場合は、正常なノードから障害ノードをテイクオーバーします。「 storage failover takeover -ofnode impaired_node_name
 
++ 障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
 
+[+]
 
 |===
 . LOADER プロンプトで「 printenv 」と入力し、すべてのブート環境変数をキャプチャします。出力をログファイルに保存します。

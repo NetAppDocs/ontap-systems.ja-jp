@@ -1,7 +1,7 @@
 ---
 permalink: fas2600/bootmedia-recovery-image-boot-non-2n-mcc.html 
 sidebar: sidebar 
-keywords: fas2600, boot, recovery, image, restore, file, system, verify, environmental, variable 
+keywords: fas2600, verify environment variables, image, boot the recovery image 
 summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
 = リカバリイメージ - FAS2600 をブートします

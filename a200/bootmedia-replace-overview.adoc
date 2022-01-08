@@ -1,7 +1,7 @@
 ---
 permalink: a200/bootmedia-replace-overview.html 
 sidebar: sidebar 
-keywords: aff, a200, aff a200, boot, media, store, primary, secondary, set, system, image, file, network, configuration, nondisruptive, disruptive, replacement, replace, replace the boot media 
+keywords: aff a200, nondisruptive, disruptive, replace the boot media 
 summary: ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。ネットワーク構成に応じて、無停止または停止を伴う交換を実行できます。 
 ---
 = ブートメディアを交換します - AFF A200
@@ -12,7 +12,7 @@ summary: ブートメディアには、システムがブート時に使用す�
 [role="lead"]
 ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。ネットワーク構成に応じて、無停止または停止を伴う交換を実行できます。
 
-「 image_xxx.tgz 」を格納できる適切な容量のストレージを搭載した、 FAT32 にフォーマットされた USB フラッシュドライブが必要です。
+「 image_xxx.tgz 」ファイルを格納できる適切な容量のストレージを搭載した、 FAT32 にフォーマットされた USB フラッシュドライブが必要です。
 
 .作業を開始する前に
 * 無停止または停止を伴う方法でブートメディアを交換する場合は、 var ファイルシステムをリストアする必要があります。

@@ -10,7 +10,7 @@ summary: ここでは、システムの設置とケーブル接続の方法を�
 
 
 [role="lead"]
-ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を紹介するビデオを 2 種類紹介します。
+ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用したシステムの初期設定の例を紹介するビデオを 2 種類紹介します。
 
 
 
@@ -18,7 +18,7 @@ summary: ここでは、システムの設置とケーブル接続の方法を�
 
 次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=1f975061-b285-411b-b2d7-ac680185a0d1["FAS500f のインストールとセットアップ"]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=1f975061-b285-411b-b2d7-ac680185a0d1["FAS500f のインストールとセットアップ"^]
 
 
 
@@ -26,4 +26,4 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=1f975061-b285-411b
 
 次のビデオでは、 ONTAP 9.2 以降を実行するシステムのエンドツーエンドのソフトウェア設定を示します。
 
-https://www.youtube.com/embed/WAE0afWhj1c?rel=0["ネットアップのビデオ： Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2"]
+https://www.youtube.com/embed/WAE0afWhj1c?rel=0["ネットアップのビデオ： Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2"^]

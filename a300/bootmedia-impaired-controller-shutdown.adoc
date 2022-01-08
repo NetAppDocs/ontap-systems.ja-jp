@@ -1,7 +1,7 @@
 ---
 permalink: a300/bootmedia-impaired-controller-shutdown.html 
 sidebar: sidebar 
-keywords: aff a300, aff, a300, shut, down, take, over, impair, controller, procedure, storage, system, hardware, configuration, shut down the impaired controller 
+keywords: aff a300, shut down the impaired controller 
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
 = 障害のあるコントローラをシャットダウンします - AFF A300
@@ -35,11 +35,11 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
  a| 
 障害ノードをテイクオーバーまたは停止します。
 
-** HA ペアの場合は、正常なノードから障害ノードをテイクオーバーします。「 storage failover takeover -ofnode `impaired_node_name
-+
-障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
+HA ペアの場合は、正常なノードから障害ノードをテイクオーバーします。「 storage failover takeover -ofnode impaired_node_name
 
++ 障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
 
+[+]
 
 |===
 . LOADER プロンプトで「 printenv 」と入力し、すべてのブート環境変数をキャプチャします。出力をログファイルに保存します。
@@ -53,7 +53,6 @@ NOTE: ブートデバイスが壊れているか機能していない場合、�
 
 == オプション 2 ：コントローラが MetroCluster 構成になっている
 
-[role="lead"]
 NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。
 
 
@@ -110,7 +109,6 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 
 == オプション 3 ：コントローラは 2 ノード MetroCluster に搭載されています
 
-[role="lead"]
 NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。
 
 障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをスイッチオーバーする必要があります。

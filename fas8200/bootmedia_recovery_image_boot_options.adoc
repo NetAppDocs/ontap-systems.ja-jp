@@ -1,7 +1,7 @@
 ---
 permalink: fas8200/bootmedia-recovery-image-boot-options.html 
 sidebar: sidebar 
-keywords: fas8200, boot, recovery, imagery, image, procedure, two, node, metrocluster, configuration 
+keywords: fas8200, boot the recovery image 
 summary: 障害ノードをリカバリイメージからブートするための手順は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。 
 ---
 = リカバリイメージ FAS8200 をブートします
@@ -16,8 +16,7 @@ summary: 障害ノードをリカバリイメージからブートするため�
 
 == オプション 1 ：ほとんどのシステム
 
-[role="lead"]
-ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
+： ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
 
 この手順環境システムは 2 ノード MetroCluster 構成には含まれません。
 
@@ -109,7 +108,6 @@ ONTAP イメージを USB ドライブからブートし、ファイルシステ
 
 == オプション 2 ：コントローラは 2 ノード MetroCluster に搭載されています
 
-[role="lead"]
 ONTAP イメージを USB ドライブからブートし、環境変数を確認する必要があります。
 
 この手順環境システムは、 2 ノード MetroCluster 構成です。

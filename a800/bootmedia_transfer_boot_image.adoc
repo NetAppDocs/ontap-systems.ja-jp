@@ -1,7 +1,7 @@
 ---
 permalink: a800/bootmedia-transfer-boot-image.html 
 sidebar: sidebar 
-keywords: aff a800, aff, a800, replacement, boot, media, install, image, transfer, usb, flash, drive, transfer the boot image to the boot media 
+keywords: aff a800, transfer the boot image to the boot media 
 summary: 取り付けた交換用ブートメディアにはブートイメージが含まれていないため、 USB フラッシュドライブを使用してブートイメージを転送する必要があります。 
 ---
 = ブートイメージをブートメディア AFF A800 に転送します

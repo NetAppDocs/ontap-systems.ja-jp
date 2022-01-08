@@ -1,7 +1,7 @@
 ---
 permalink: a300/bootmedia-2n-mcc-switchback.html 
 sidebar: sidebar 
-keywords: aff a300, aff, a300, complete, fru, replacement, two-node, metrocluster, configuration, switchback, operation, sync-source, storage, virtual, machine, svm, disk, pool, local, switch back aggregate in a two-node metrocluster configuration 
+keywords: aff a300, switch back aggregate in a two-node metrocluster configuration 
 summary: 2 ノード MetroCluster 構成で FRU の交換が完了したら、 MetroCluster スイッチバック処理を実行できます。これにより構成が通常の動作状態に戻ります。また、障害が発生していたサイトの同期元 Storage Virtual Machine （ SVM ）がアクティブになり、ローカルディスクプールからデータを提供します。 
 ---
 = 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする - AFF A300

@@ -1,7 +1,7 @@
 ---
 permalink: a250/bootmedia-replace-overview.html 
 sidebar: sidebar 
-keywords: aff a250, aff, a250, boot, media, primary, secondary, set, system, boot, image, file, replace, replace the boot media 
+keywords: aff a250, replace the boot media 
 summary: ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。 
 ---
 = ブートメディア AFF A250 を交換してください
@@ -12,7 +12,7 @@ summary: ブートメディアには、システムがブート時に使用す�
 [role="lead"]
 ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。
 
-「 image_xxx.tgz 」を格納できる適切な容量のストレージを搭載した MBR/FAT32 にフォーマットされた USB フラッシュドライブが必要です
+「 image_xxx.tgz 」ファイルを格納できる適切な容量のストレージを搭載した MBR/FAT32 にフォーマットされた USB フラッシュドライブが必要です。
 
 また ' この手順で後で使用するために 'image_xxx.tgz ファイルを USB フラッシュドライブにコピーする必要があります
 

@@ -1,7 +1,7 @@
 ---
 permalink: a300/bootmedia-recovery-image-boot-options.html 
 sidebar: sidebar 
-keywords: aff a300, aff, a300, procedure, boot, impair, node, recovery, image, system, two-node, metrocluster, configruation, boot the recovery image 
+keywords: aff a300, boot the recovery image 
 summary: 障害ノードをリカバリイメージからブートするための手順は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。 
 ---
 = リカバリイメージ AFF A300 をブートします
@@ -16,7 +16,6 @@ summary: 障害ノードをリカバリイメージからブートするため�
 
 == オプション 1 ：ほとんどのシステム
 
-[role="lead"]
 ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
 
 この手順環境システムは 2 ノード MetroCluster 構成には含まれません。
@@ -108,7 +107,6 @@ ONTAP イメージを USB ドライブからブートし、ファイルシステ
 
 == オプション 2 ：コントローラは 2 ノード MetroCluster に搭載されています
 
-[role="lead"]
 ONTAP イメージを USB ドライブからブートし、環境変数を確認する必要があります。
 
 この手順環境システムは、 2 ノード MetroCluster 構成です。

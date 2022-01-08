@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c190, detailed installation 
 summary: このセクションでは、 AFF C190 システムをインストールする手順について詳しく説明します。 
 ---
-= 詳細ガイド - AFF C190
+= ステップの詳細 - AFF C190
 :icons: font
 :imagesdir: ../media/
 
@@ -18,11 +18,7 @@ summary: このセクションでは、 AFF C190 システムをインストー�
 
 AFF C190 システムを設置するには、アカウントを作成し、システムを登録する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。
 
-サイト要件および構成済みシステムの追加情報の情報については、 Hardware Universe にアクセスできる必要があります。また、ご使用の ONTAP バージョンのリリースノートにアクセスして、このシステムの詳細を確認しておくことを推奨します。
-
-https://hwu.netapp.com["NetApp Hardware Universe の略"^]
-
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対するリリースノートを検索してください"^]
+にアクセスできる必要があります link:https://hwu.netapp.com["NetApp Hardware Universe の略"^] （ HWU ）を参照してください。サイト要件および構成済みシステム上の追加情報に関する情報が含まれます。へのアクセスも必要になる場合があります  このシステムの詳細については、を参照してください。
 
 お客様のサイトで次のものを準備する必要があります。
 
@@ -41,25 +37,16 @@ image::../media/drw_ssn_label.png[DRW SSN ラベル]
 . アカウントを設定します。
 +
 .. 既存のアカウントにログインするか、アカウントを作成します。
-+
-link:https://mysupport.netapp.com/eservice/public/now.do["ネットアップサポート登録"^]
-
 .. システムを登録します。
 +
-https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"^]
+link:https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"]
 
 
 
-. ラップトップに Config Advisor をダウンロードしてインストールします。
-+
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
-
+. ダウンロードしてインストールします link:https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^] ノートブック PC で。
 . 同梱されていたケーブルの数と種類を確認し、書き留めておきます。
 +
-次の表に、同梱されているケーブルの種類を示します。この表にないケーブルが含まれていた場合は、 Hardware Universe を参照してケーブルを特定し、用途を確認してください。
-
-+
-https://hwu.netapp.com["NetApp Hardware Universe の略"^]
+次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください link:https://hwu.netapp.com["NetApp Hardware Universe の略"^] ケーブルの場所を確認し、用途を特定します。
 
 +
 [cols="1,2,1,2"]
@@ -100,7 +87,7 @@ X6536-R6 （ 112-00090 ）、 5m
 
 X6554-R6 （ 112-00189 ）、 15m
  a| 
-image:../media/oie_sfp_optical.png[""] [+]
+image:../media/oie_sfp_optical.png[""]
 
 image::../media/oie_cable_fiber_lc_connector.png[OIE ケーブルファイバ LC コネクタ]
  a| 
@@ -142,10 +129,7 @@ image:../media/oie_cable_power.png[""]
 システムの電源をオンにします
 
 |===
-. クラスタ設定ワークシート _ をダウンロードして記入します。
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["クラスタ設定ワークシート"^]
-
+. をダウンロードして実行します link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["クラスタ設定ワークシート"^]。
 
 
 
@@ -449,7 +433,7 @@ image::../media/drw_turn_on_power_switches_to_psus.png[DRW 電源スイッチを
 
 +
 
-NOTE: 初回のブートには最大 8 分かかる場合があります。
+NOTE: 初回のブートには最大で 8 分かかる場合があります。
 
 . ラップトップでネットワーク検出が有効になっていることを確認します。
 +
@@ -457,7 +441,7 @@ NOTE: 初回のブートには最大 8 分かかる場合があります。
 
 . 次のアニメーションに従って、ラップトップを管理スイッチに接続します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"^]
+link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"^]
 
 . 検出する ONTAP アイコンを選択します。
 +
@@ -465,8 +449,8 @@ image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コント
 
 +
 .. エクスプローラを開きます。
-.. 左側のペインで、 [Network] ( ネットワーク ) をクリックします。
-.. 右クリックして、更新を選択します。
+.. 左側のペインで、 *Network* をクリックします。
+.. 右クリックし、 * 更新 * を選択します。
 .. いずれかの ONTAP アイコンをダブルクリックし、画面に表示された証明書を受け入れます。
 +
 
@@ -477,12 +461,9 @@ System Manager が開きます。
 
 
 
-. System Manager のセットアップガイドを使用して、 _NetApp ONTAP 構成ガイド _ で収集したデータを基にシステムを設定します。
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["ONTAP の設定内容"]
-
+. System Manager のセットアップガイドを使用して、で収集したデータを基にシステムを設定します link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^]。
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、に進みます link:https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
 +
 
 NOTE: ユニファイド構成システムのデフォルトのポート設定は CNA モードです。 FC ホストネットワークに接続する場合は、ポートを FC モードに変更する必要があります。
@@ -520,7 +501,7 @@ image::../media/drw_turn_on_power_switches_to_psus.png[DRW 電源スイッチを
 
 +
 
-NOTE: 初回のブートには最大 8 分かかる場合があります。
+NOTE: 初回のブートには最大で 8 分かかる場合があります。
 
 . いずれかのノードに初期ノード管理 IP アドレスを割り当てます。
 +
@@ -555,11 +536,11 @@ NOTE: PuTTY の設定方法がわからない場合は、ラップトップま�
 
 NOTE: アドレスの形式は、 +https://x.x.x.x+ です。
 
-.. で収集したデータを使用してシステムを設定します link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 NetApp ONTAP 構成ガイド』"^]。
+.. で収集したデータを使用してシステムを設定します link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^]。
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、に進みます link:https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
 +
 
 NOTE: ユニファイド構成システムのデフォルトのポート設定は CNA モードです。 FC ホストネットワークに接続する場合は、ポートを FC モードに変更する必要があります。
