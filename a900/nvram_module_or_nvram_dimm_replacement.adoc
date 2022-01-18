@@ -1,0 +1,484 @@
+---
+permalink: a900/nvram-module-or-nvram-dimm-replacement.html 
+sidebar: sidebar 
+keywords:  
+summary: NVRAM モジュールは、 NVRAM11 と DIMM 、 NVRAM モジュールあたり最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。 
+---
+= NVRAM モジュール / NVRAM DIMM を交換してください - AFF A900
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NVRAM モジュールは NVRAM11 と DIMM で構成されます。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。障害が発生した NVRAM モジュールを交換するには、モジュールをシャーシから取り外し、 DIMM を交換用モジュールに移して、交換用 NVRAM モジュールをシャーシに取り付ける必要があります。
+
+および NVRAM DIMM を交換するには、 NVRAMmodule をシャーシから取り外し、モジュール内の障害のある DIMM を交換してから、 NVRAM モジュールを再度取り付ける必要があります。
+
+システム ID は NVRAM モジュールから取得されるため、モジュールを交換する場合は、システムに属するディスクを新しいシステム ID に再割り当てします。
+
+.作業を開始する前に
+* すべてのディスクシェルフが適切に動作している必要があります。
+* HA ペアのシステムの場合は、交換する NVRAM モジュールに関連付けられているノードをパートナーノードがテイクオーバーできる必要があります。
+* この手順では次の用語を使用します。
++
+** 障害ノードとは、メンテナンスを実行しているノードです。
+** 正常なノードとは、障害ノードの HA パートナーです。
+
+
+* この手順には、新しい NVRAM モジュールに関連付けられているコントローラモジュールにディスクを自動または手動で再割り当てする手順が含まれています。手順でに指示された場合は、ディスクを再割り当てする必要があります。ギブバックで CAN 原因の問題が発生する前にディスクの再割り当てを完了する。
+* 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。
+* この手順の一部としてディスクやディスクシェルフを変更することはできません。
+
+
+
+
+== 手順 1 ：障害ノードをシャットダウンします
+
+[role="lead"]
+ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。
+
+
+
+=== オプション 1 ：ほとんどの構成
+
+[role="lead"]
+障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをテイクオーバーする必要があります。
+
+ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。を参照してください https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"]。
+
+.手順
+. AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
++
+次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
+
+. 正常なノードのコンソールから自動ギブバックを無効にします。「 storage failover modify – node local-auto-giveback false
+. 障害ノードに LOADER プロンプトを表示します。
++
+[cols="1,2"]
+|===
+| 障害ノードの表示 | 作業 
+
+
+ a| 
+LOADER プロンプト
+ a| 
+次の手順に進みます。
+
+
+
+ a| 
+ギブバックを待っています
+ a| 
+Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します
+
+
+
+ a| 
+システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
+ a| 
+障害ノードをテイクオーバーまたは停止します。
+
+** HA ペアの場合は、正常なノードから障害ノードをテイクオーバーします。「 storage failover takeover -ofnode impaired_node_name _
++
+障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
+
+
+
+|===
+
+
+
+
+=== オプション 2 ：コントローラが MetroCluster に搭載されている
+
+
+NOTE: 2 ノード MetroCluster 構成のシステムでは、この手順を使用しないでください。
+
+障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをテイクオーバーする必要があります。
+
+* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。を参照してください https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"]。
+* MetroCluster 構成を使用している場合は、 MetroCluster 構成状態が構成済みで、ノードが有効かつ正常な状態であることを確認しておく必要があります（「 MetroCluster node show 」）。
+
+
+.手順
+. AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
++
+次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
+
+. 正常なノードのコンソールから自動ギブバックを無効にします。「 storage failover modify – node local-auto-giveback false
+. 障害ノードに LOADER プロンプトを表示します。
++
+[cols="1,2"]
+|===
+| 障害ノードの表示 | 作業 
+
+
+ a| 
+LOADER プロンプト
+ a| 
+次の手順に進みます。
+
+
+
+ a| 
+ギブバックを待っています
+ a| 
+Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します
+
+
+
+ a| 
+システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
+ a| 
+障害ノードをテイクオーバーまたは停止します。
+
+** HA ペアの場合は、正常なノードから障害ノードをテイクオーバーします。「 storage failover takeover -ofnode impaired_node_name _
++
+障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
+
+
+
+|===
+
+
+
+
+== 手順 2 ： NVRAM モジュールを交換します
+
+[role="lead"]
+NVRAM モジュールを交換するには、シャーシのスロット 6 にある NVRAM モジュールの場所を確認し、特定の手順に従います。
+
+. 接地対策がまだの場合は、自身で適切に実施します。
+. ターゲットの NVRAM モジュールをシャーシから取り外します。
++
+.. 文字と数字が記載されたカムボタンを押し下げます。
++
+カムボタンがシャーシから離れます。
+
+.. カムラッチを下に回転させて水平にします。
++
+NVRAM モジュールがシャーシから外れ、数インチ外に出ます。
+
+.. NVRAM モジュール前面の両側にあるプルタブを引いてモジュールをシャーシから取り外します。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6eb2d864-9d35-4a23-b6c2-adf9016b359f["アニメーション -- NVRAM モジュールを交換します"^]
+
++
+image::../media/drw_a900_move-remove_NVRAM_module.png[DRW a900 move remove NVRAM module (NVRAM モジュールを取り外します]
+
++
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+ a| 
+文字と数字が記載された I/O カムラッチ
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+ a| 
+ロックが完全に解除された I/O ラッチ
+
+|===
+
+
+. NVRAM モジュールを安定した場所に置き、カバーの青色のロックボタンを押し下げてカバーを NVRAM モジュールから取り外します。青いボタンを押しながら、カバーをスライドさせて NVRAM モジュールから外します。
++
+image::../media/drw_a900_remove_NVRAM_module_contents.png[DRW a900 は NVRAM モジュールの内容を削除します]
+
++
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+ a| 
+カバーのロックボタン
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+ a| 
+DIMM と DIMM のツメ
+
+|===
+. 古い NVRAM モジュールから DIMM を 1 つずつ取り外し、交換用 NVRAM モジュールに取り付けます。
+. モジュールのカバーを閉じます。
+. 交換用 NVRAM モジュールをシャーシに取り付けます。
++
+.. モジュールをスロット 6 のシャーシ開口部の端に合わせます。
+.. モジュールをスロットにそっと挿入し、文字と数字が記載された I/O カムラッチを上に押してモジュールを所定の位置にロックします。
+
+
+
+
+
+
+== 手順 3 ： NVRAM DIMM を交換します
+
+[role="lead"]
+NVRAM モジュールの NVRAM DIMM を交換するには、 NVRAM モジュールを取り外し、モジュールを開き、ターゲット DIMM を交換する必要があります。
+
+. 接地対策がまだの場合は、自身で適切に実施します。
+. ターゲットの NVRAM モジュールをシャーシから取り外します。
++
+.. 文字と数字が記載されたカムボタンを押し下げます。
++
+カムボタンがシャーシから離れます。
+
+.. カムラッチを下に回転させて水平にします。
++
+NVRAM モジュールがシャーシから外れ、数インチ外に出ます。
+
+.. NVRAM モジュール前面の両側にあるプルタブを引いてモジュールをシャーシから取り外します。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0ae4e603-c22b-4930-8070-adf2000e38b5["アニメーション -- NVRAM DIMM を交換します"^]
+
++
+image::../media/drw_a900_move-remove_NVRAM_module.png[DRW a900 move remove NVRAM module (NVRAM モジュールを取り外します]
+
++
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+ a| 
+文字と数字が記載された I/O カムラッチ
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+ a| 
+ロックが完全に解除された I/O ラッチ
+
+|===
+
+
+. NVRAM モジュールを安定した場所に置き、カバーの青色のロックボタンを押し下げてカバーを NVRAM モジュールから取り外します。青いボタンを押しながら、カバーをスライドさせて NVRAM モジュールから外します。
++
+image::../media/drw_a900_remove_NVRAM_module_contents.png[DRW a900 は NVRAM モジュールの内容を削除します]
+
++
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+ a| 
+カバーのロックボタン
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+ a| 
+DIMM と DIMM のツメ
+
+|===
+. NVRAM モジュール内で交換する DIMM の場所を確認し、 DIMM の固定ツメを押し下げ、ソケットから持ち上げて取り外します。
++
+各 DIMM の横には LED があり、障害が発生すると点滅します。
+
+. DIMM をソケットに合わせ、固定ツメが所定の位置に収まるまで DIMM をそっとソケットに押し込み、交換用 DIMM を取り付けます。
+. モジュールのカバーを閉じます。
+. NVRAM モジュールをシャーシに取り付けます。
++
+.. モジュールをスロット 6 のシャーシ開口部の端に合わせます。
+.. モジュールをスロットにそっと挿入し、文字と数字が記載された I/O カムラッチを上に押してモジュールを所定の位置にロックします。
+
+
+
+
+
+
+== 手順 4 ： FRU の交換後にコントローラをリブートします
+
+[role="lead"]
+FRU を交換したら、コントローラモジュールをリブートする必要があります。
+
+. LOADER プロンプトから ONTAP を起動するには、「 bye 」と入力します。
+
+
+
+
+== 手順 5 ：コントローラモジュールの HA 状態を確認して設定します
+
+コントローラモジュールの「 HA 」状態を確認し、必要に応じてシステム構成に合わせて状態を更新する必要があります。
+
+. 交換用コントローラモジュールの保守モードで ' すべてのコンポーネントが同じ HA 状態を表示していることを確認します HA 構成の場合は 'ha-config show と表示されます
++
+[cols="1,2"]
+|===
+| システムの構成 | すべてのコンポーネントの HA の状態 
+
+
+ a| 
+HA ペア
+ a| 
+高可用性
+
+
+
+ a| 
+4 つ以上のノードを含む MetroCluster FC 構成
+ a| 
+MCC
+
+
+
+ a| 
+MetroCluster IP 構成
+ a| 
+mccip
+
+|===
+. 表示されたコントローラモジュールのシステム状態がシステム構成と一致しない場合は、コントローラモジュールの HA 状態を「 ha-config modify controller_A_2 state_」 に設定します
+. 表示されたシャーシのシステム状態がシステム構成と一致しない場合は ' シャーシの HA 状態を設定します HA config modify chassis_HA-state_
+
+
+
+
+== 手順 6 ：ディスクの再割り当て
+
+[role="lead"]
+交換用ノードのブート時にシステム ID の変更を確認し、変更が実装されたことを確認する必要があります。
+
+この手順は、 HA ペアの ONTAP を実行するシステムにのみ適用されます。
+
+.手順
+. 交換用ノードがメンテナンス・モード（プロンプトが表示されている）の場合は ' メンテナンス・モードを終了し ' LOADER プロンプト： halt を表示します
+. 交換用ノードの LOADER プロンプトからノードをブートし、システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられたら、「 y 」と入力します。
+. 交換用ノードのコンソールに Waiting for giveback... メッセージが表示されるまで待ち、正常なノードから新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show
++
+コマンド出力には、障害ノードでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。
+
++
+[listing]
+----
+node1> `storage failover show`
+                                    Takeover
+Node              Partner           Possible     State Description
+------------      ------------      --------     -------------------------------------
+node1             node2             false        System ID changed on partner (Old:
+                                                  151759755, New: 151759706), In takeover
+node2             node1             -            Waiting for giveback (HA mailboxes)
+----
+. 正常なノードから、コアダンプがすべて保存されたことを確認します。
++
+.. advanced 権限レベルに切り替えます。「 set -privilege advanced 」
++
+advanced モードで続行するかどうかを確認するプロンプトが表示されたら、「 y 」と入力します。advanced モードのプロンプトが表示されます（ * > ）。
+
+.. すべてのコアダンプを保存します： system node run -node local-node-name partner savecore
+.. savecore コマンドの完了を待機してからギブバックを実行します。
++
+次のコマンドを入力すると 'savecore コマンドの進行状況を監視できます system node run -node local-node-name partner savecore -s
+
+.. admin 権限レベルに戻ります。「 set -privilege admin 」
+
+
+. ノードをギブバックします。
++
+.. 正常なノードから、交換したノードのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name
++
+交換用ノードはストレージをテイクバックしてブートを完了します。
+
++
+システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は 'y' と入力する必要があります
+
++
+
+NOTE: ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。
+
++
+詳細については、を参照してください https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted["手動ギブバックコマンド"^] 拒否を無視するトピック。
+
+.. ギブバックが完了したら、 HA ペアが正常でテイクオーバーが可能であることを確認します。 storage failover show
++
+storage failover show コマンドの出力に、パートナーメッセージで変更されたシステム ID を含めることはできません。
+
+
+
+. ディスクが正しく割り当てられたことを確認します。「 storage disk show -ownership
++
+交換用ノードに属するディスクには、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。
+
++
+[listing]
+----
+node1> `storage disk show -ownership`
+
+Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
+----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
+1.0.0  aggr0_1  node1 node1  -        1873775277 1873775277  -       1873775277 Pool0
+1.0.1  aggr0_1  node1 node1           1873775277 1873775277  -       1873775277 Pool0
+.
+.
+.
+----
+. システムが MetroCluster 構成になっている場合は ' ノードのステータスを監視します MetroCluster node show
++
+MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster の node show -fields node-systemid コマンドの出力には、 MetroCluster の設定が通常の状態に戻るまで古いシステム ID が表示されます。
+
+. ノードが MetroCluster 構成になっている場合は、 MetroCluster の状態に応じて、元の所有者がディザスタサイトのノードである場合に DR ホーム ID のフィールドにディスクの元の所有者が表示されることを確認します。
++
+これは、次の両方に該当する場合に必要です。
+
++
+** MetroCluster 構成がスイッチオーバー状態である。
+** 交換用ノードがディザスタサイトのディスクの現在の所有者である。
++
+を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration["4 ノード MetroCluster 構成での HA テイクオーバーおよび MetroCluster スイッチオーバー中のディスク所有権の変更"] を参照してください。
+
+
+
+. システムが MetroCluster 構成になっている場合は、各ノードが構成されていることを確認します。「 MetroCluster node show -fields configurion-state 」
++
+[listing]
+----
+node1_siteA::> metrocluster node show -fields configuration-state
+
+dr-group-id            cluster node           configuration-state
+-----------            ---------------------- -------------- -------------------
+1 node1_siteA          node1mcc-001           configured
+1 node1_siteA          node1mcc-002           configured
+1 node1_siteB          node1mcc-003           configured
+1 node1_siteB          node1mcc-004           configured
+
+4 entries were displayed.
+----
+. 各ノードに、想定されるボリュームが存在することを確認します。 vol show -node node-name
+. リブート時の自動テイクオーバーを無効にした場合は、正常なノードで「 storage failover modify -node replacement-node-name -onreboot true 」を有効にします
+
+
+
+
+== 手順 6 ：ストレージとボリュームの暗号化機能をリストアする
+
+[role="lead"]
+ストレージまたはボリュームの暗号化を使用するように設定したストレージシステムのコントローラモジュールまたは NVRAM モジュールを交換したら、追加の手順を実行して、暗号化機能を中断させないようにする必要があります。ストレージまたはボリュームの暗号化が有効になっていないストレージシステムでは、このタスクを省略できます。
+
+の該当する手順を使用して、ストレージまたはボリュームの暗号化機能をリストアします https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["CLI での NetApp Encryption の概要"]。
+
+オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順を実行します。
+
+* 「オンボード・キー管理の暗号化キーをリストアする」
+* 「外部キー管理の暗号化キーを復元する」
+
+
+
+
+== 手順 7 ：障害が発生したパーツをネットアップに返却する
+
+[role="lead"]
+部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。テクニカルサポートにお問い合わせください https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"]RMA 番号を確認する場合や、交換用手順にサポートが必要な場合は、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。

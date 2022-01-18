@@ -1,4 +1,4 @@
-= NVE の構成を確認しています
+= NVE の設定を確認する
 
 
 障害ノードをシャットダウンする前に、システムで NetApp Volume Encryption （ NVE ）または NetApp Storage Encryption （ NSE ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。
@@ -19,7 +19,7 @@
 
 
 
-=== NVE の構成を確認しています
+=== NVE の設定を確認する
 
 .手順
 . キー管理サーバに格納されている認証キーのキー ID を表示します。「 securitykey-manager query
@@ -74,7 +74,7 @@ NOTE: プロンプトで、お客様のオンボードキー管理のパスフ�
 
 
 
-=== NSE の構成を確認しています
+=== NSE の設定を確認
 
 .手順
 . キー管理サーバに格納されている認証キーのキー ID を表示します。「 securitykey-manager query
@@ -117,7 +117,7 @@ NOTE: プロンプトで、お客様の OKM パスフレーズを入力します
 
 *** すべての認証キーについて 'restored' 列に yes と表示されていることを確認します
 *** advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
-*** コマンドを入力して、 OKM 情報をバックアップします：「 security key-manager backup show 」
+*** コマンド「 security key-manager backup show 」を入力して、 OKM の情報をバックアップします
 +
 
 NOTE: OKM 情報がログファイルに保存されていることを確認してください。この情報は、 OKM を手動でリカバリする必要がある災害シナリオで必要になります。

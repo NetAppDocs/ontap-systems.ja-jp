@@ -1608,7 +1608,6 @@
   <block id="4252cc22782c7895d045823c51f6d877" category="paragraph">クラスタ内のノードが 3 つ以上</block>
   <block id="b2aa61dcee4d7b77fcd001973469ddde" category="paragraph">「 storage failover modify -node node0 -enabled false 」という名前のノードが追加されました</block>
   <block id="481250f3e8ec41b0e994305d8fc52b4a" category="paragraph">次のような確認メッセージが表示されます。</block>
-  <block id="acb6df6704b040c68684e454411f2742" category="admonition">シャーシを交換する前にシステムのクリーンシャットダウンを実行し、不揮発性メモリ（ NVMEM ）内の書き込み前のデータが失われないようにする必要があります。NVMEM LED の点滅は、ディスクに保存されていないデータが NVMEM にあることを示しています。ノードをリブートし、この手順の先頭からやり直してください。ノードのクリーンシャットダウンに繰り返し失敗すると、ディスクに保存されていないデータが失われる可能性があります。</block>
   <block id="cf55af4b4668a579d36bfd91785ecbec" category="summary">NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。</block>
   <block id="db4547d0ddae50a76aa47cf54e9d15ae" category="doc">ノード AFF A250 をシャットダウンします</block>
   <block id="130b18edff1b7e2377d35d657b1f8a53" category="list-text">障害ノードに LOADER プロンプトが表示されていない場合は、次の手順を実行します。</block>
@@ -1844,9 +1843,7 @@
   <block id="8fe193e2b54d387ed2fed605221a5c28" category="paragraph">交換用コントローラモジュールの日付と時刻は、 HA ペアの正常なコントローラモジュール、またはスタンドアロン構成の信頼できるタイムサーバに照らして確認する必要があります。日付と時刻が一致しない場合は、時刻の違いによるクライアントの停止を防ぐために、交換用コントローラモジュールで日付と時刻をリセットする必要があります。</block>
   <block id="cdb851485439024512881c41e7de982a" category="paragraph">これらの手順のコマンドを正しいシステムに適用することが重要です。</block>
   <block id="993e592d598f2ac9b6cdd13862d70d0a" category="list-text">replacement _node は、この手順で障害ノードと交換した新しいノードです。</block>
-  <block id="f50a1f5c83e1c0a5e50fd93c7245868d" category="list-text">healthy_node は、 _replacement _node の HA パートナーです</block>
   <block id="58532634ca04e50b018c22652941f0e2" category="list-text">_replacement _node に LOADER プロンプトが表示されない場合は、システムを停止して LOADER プロンプトを表示します。</block>
-  <block id="1c923c62367fe19d9197babb4209c85b" category="list-text">正常なノードで、システム時刻「日付」を確認します</block>
   <block id="610bb0d24c586904b13f6cb09aca2599" category="paragraph">日付と時刻は GMT で表示されます。</block>
   <block id="7d605a9dbf45a466003e126065e1bc68" category="list-text">LOADER プロンプトで、 _replacement node の日付と時刻を確認します。 'how date]</block>
   <block id="fba5bbeb3ff706c0a6a0f6aa48ca6830" category="list-text">必要に応じて、交換用ノードの日付を GMT で設定します。 'et date_mm/dd/yyyy_`</block>
@@ -2304,7 +2301,6 @@
   <block id="ea9a06f5fb2cd5470a0c0c25b039a03c" category="list-text">「キー・マネージャ」タイプに「 onboard 」と表示され、「 restored 」列に「 yes 」と表示されている場合は、いくつかの追加手順を実行する必要があります。</block>
   <block id="c6d9b949fc815c7d1290e5acb1f3ade9" category="list-text">「キー・マネージャ」タイプに「外部」が表示され、「復元」列に「はい」以外の項目が表示されている場合は、いくつかの追加手順を実行する必要があります。</block>
   <block id="b43c8f6b2fe8e4b5d1d2f97c83c7c6ca" category="list-text">'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' 以外の項目が表示されている場合は ' 追加の手順を実行する必要があります</block>
-  <block id="1c44cb279f9c39d276d36558edaed2d8" category="list-text">'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' と表示されている場合は 'OKM 情報を手動でバックアップします</block>
   <block id="edf0839ebd25c40cc1ef62105e3a5d8f" category="list-text">advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」</block>
   <block id="1b3e3ec3fd07bf53abc8401f17b2a7b5" category="list-text">コマンドを入力して、キー管理情報「 securitykey-manager onboard show-backup 」を表示します</block>
   <block id="78a22d38c1530a757fec402c5079de18" category="list-text">バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。</block>
@@ -2447,7 +2443,6 @@
   <block id="624bedc07a82079383ebddb8e1d17e03" category="list-text">障害ノードにコンソールケーブルを接続します。</block>
   <block id="b227d8958eb504b6da0a08172b4222db" category="list-text">クラスタ内のボリュームに NVE が設定されているかどうかを確認します。 volume show -is-encrypted true</block>
   <block id="68e27ac90c8755079206639397a6abfe" category="list-text">NSE が設定されているかどうかを確認します。「 storage encryption disk show 」</block>
-  <block id="d483bc1527afe69382dcafeae8759af5" category="section-title">NVE の構成を確認しています</block>
   <block id="2c3101fc6b218cfb1515e6df7981ff27" category="list-text">[Restored （リストア済み） ] カラムに [yes] と表示され、すべてのキー管理ツールに [Available] と表示されていれば、障害ノードをシャットダウンしても安全です。</block>
   <block id="6c2aeadd2a92753dd1f137a6c7068dc8" category="list-text">[Restored （復元） ] 列に 'yes' 以外の項目が表示される場合、またはいずれかのキー管理ツールに [Unavailable （利用不可） ] と表示される場合は、いくつかの追加手順を実行する必要があります。</block>
   <block id="ff31b8e8c86ed558e88ec6430564b19a" category="list-text">オンボードキー管理が有効になっている場合にこのコマンドがサポートされませんというメッセージが表示された場合は、他の手順をいくつか実行する必要があります。</block>
@@ -2455,16 +2450,13 @@
   <block id="ec36c7cfd75ef20d8b0ef51a16507a88" category="list-text">すべての認証キーと関連キー ID を取得してリストアします： 'securitykey-manager restore-address*</block>
   <block id="af4d1d3ffadafe2bf36d2f97e0624f27" category="list-text">すべての認証キーについて 'restored' 列に yes と表示され ' すべてのキー・マネージャには Available ： 'securitykey-manager query と表示されていることを確認します</block>
   <block id="289ff53a98abf4d0113c963cb872935c" category="list-text">オンボードキー管理が有効になっているときに「 This command is not supported when onboard key management 」というメッセージが表示された場合は、オンボードキーマネージャに格納されているキーを表示します。「 securitykey-manager key show -detail」</block>
-  <block id="64b5850437a6c5ede6e9cff83bdaf98e" category="list-text">コマンドを入力して、 OKM バックアップ情報を表示します：「 securitykey-manager backup show 」</block>
   <block id="eacc67b97d93f923ad42c8176ba8faa9" category="list-text">[ リストア済み ] カラムに 'yes' 以外の項目が表示される場合は ' 次の手順を実行します</block>
   <block id="24220f32b44e782b90a7317dc26ed7aa" category="list-text">key-manager setup ウィザードを実行します： 'securitykey-manager setup -node target/impaired node name</block>
   <block id="eaa3e7284bb9122bca13b95d6cc59ef1" category="admonition">プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、にお問い合わせください<block ref="7bc6752d2076d2c755eaebbdfeb91d23" category="inline-link-rx"></block></block>
   <block id="e09a2f79fa1a4d59c75a72c0eaf5b34c" category="list-text">すべての認証キーに対して 'restored' カラムに yes が表示されていることを確認します 'securitykey-manager key show-detail</block>
-  <block id="b6681297e941eb56dc38970b85386ab2" category="section-title">NSE の構成を確認しています</block>
   <block id="1adea8aec2ec00910dfbe0bb9bffce8e" category="list-text">オンボードキー管理が有効になっている場合にこのコマンドがサポートされませんというメッセージが表示された場合は、他の手順をいくつか実行する必要があります</block>
   <block id="dd987c60871b23529ac187b4b51deed6" category="admonition">プロンプトで、お客様の OKM パスフレーズを入力します。パスフレーズを指定できない場合は、にお問い合わせください<block ref="7bc6752d2076d2c755eaebbdfeb91d23" category="inline-link-rx"></block></block>
   <block id="9a771de258008e976b0c48e9801a4c8c" category="list-text">すべての認証キーについて 'restored' 列に yes と表示されていることを確認します</block>
-  <block id="30d0cde8b2f7857d1f7566ebcf3b7ef7" category="admonition">OKM 情報がログファイルに保存されていることを確認してください。この情報は、 OKM を手動でリカバリする必要がある災害シナリオで必要になります。</block>
   <block id="f715a6054e8d53c0d1e16dc1d6abcac0" category="list-text">バックアップ情報の内容を別のファイルまたはログにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。</block>
   <block id="eb924216b30cedba77ddd9a35ecc861e" category="section-title">オプション 2 ： ONTAP 9.6 以降を実行しているシステムの NVE または NSE を確認する</block>
   <block id="feb6e7b3091c7242849233efd75d8a7e" category="doc">障害のある部品を NetApp-AFF A700s に返却します</block>
@@ -7717,8 +7709,6 @@
   <block id="faca4b5bb9a5da5b47d1425ef2489bdf" category="paragraph"><block ref="8417f927f631db9ff6dcfc207992ae5a" category="inline-xref-macro-rx"></block></block>
   <block id="299be2017fe243bf0cb27752cb61cba4" category="paragraph">AFF A400 HA ペア</block>
   <block id="35abee2b20175ae748c82f6ba4453ac1" category="paragraph"><block ref="2d20d554d868477c9c895109bac068ae" category="inline-xref-macro-rx"></block></block>
-  <block id="f1f8b8def80b9337373513998dd13c3e" category="section-title">FAS500f または AFF A250 HA ペアのホットアドシェルフをケーブル接続します</block>
-  <block id="f0fad2647eb722df1f95d7cea636dfac" category="paragraph">ストレージの追加が必要になったときは、 NS224 ドライブシェルフを FAS3500f または AFF A250 HA ペアにホットアドできます。</block>
   <block id="075ac783ee242c66ec7ef26475fd212b" category="section-title">AFF A700 HA ペアのホットアドシェルフをケーブル接続します</block>
   <block id="5c817f2686998b5a889ca66df6194716" category="section-title">AFF A800 HA ペアのホットアドシェルフをケーブル接続します</block>
   <block id="873efd8427437501798d979ea439809c" category="section-title">AFF A400 HA ペア用のシェルフをホットアドします</block>
@@ -7884,9 +7874,7 @@
   <block id="b8657f72d8b4e1ef5c7e2c082690279e" category="list-text"><block ref="b8657f72d8b4e1ef5c7e2c082690279e" category="inline-link-rx"></block></block>
   <block id="4d2e328d055378ef43067726132a9c56" category="list-text"><block ref="4d2e328d055378ef43067726132a9c56" category="inline-link-rx"></block></block>
   <block id="6675c229d440b5fa295266d2c66af8cb" category="list-text">[Restored （リストア済み） ] カラムに 'yes' と表示されている場合は ' オンボード・キー管理情報を手動でバックアップします</block>
-  <block id="112a82bd2bb72082aa06b632a6df869a" category="list-text">コマンドを入力して、 OKM のバックアップ情報を表示します。「 security key-manager backup show 」</block>
   <block id="4111f4985df04f9002129e591bafb45f" category="list-text">[Restored （復元） ] 列に「 yes 」と表示されている場合は、オンボードキー管理情報を手動でバックアップします。</block>
-  <block id="722721e96c3d68d660aa1ee6553d7561" category="list-text">コマンドを入力して、 OKM 情報をバックアップします：「 security key-manager backup show 」</block>
   <block id="47172f1226f9908865e044955d2f091b" category="paragraph">を使用できます <block ref="cb0390cbe2f3cf678134885ff143b6ba" category="inline-link-macro-rx"></block> ONTAP クラスタを構成する際に必要となるサイト固有の IP アドレスやその他の情報を収集して記録する。</block>
   <block id="29698929d201e3c2b1138892d941cbfb" category="paragraph"><block ref="29698929d201e3c2b1138892d941cbfb" category="inline-link-macro-rx"></block></block>
   <block id="78f75f00d9872e8e3abcdad7ee860f3e" category="list-text">ブート・メニューで ' 非表示のコマンド 'recover_onboard keymanager_' を入力し ' プロンプトで y と応答します</block>
@@ -7940,4 +7928,460 @@
   <block id="4ab41e9db35b429ef17dc75c3671d5a3" category="paragraph">を使用できます <block ref="29bd1f640adeeec5f2bc6e197d0840c4" category="inline-link-macro-rx"></block> ONTAP クラスタを構成する際に必要となるサイト固有の IP アドレスやその他の情報を収集して記録する。</block>
   <block id="e4e83a2c82324a2a6d5448b03909ecfa" category="paragraph">を使用できます <block ref="b22470d24dd615c99a09a118a80f7353" category="inline-link-macro-rx"></block> セットアップガイドを参照して、新しいシステムを設置してセットアップします。PDF 版ポスターには、ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
   <block id="9eb9c148662d69c22bab62cf12a75812" category="paragraph">。 <block ref="36ed39ac78f542a04e83212067a271f3" category="inline-link-macro-rx"></block> に、 ONTAP 9.2 を実行するシステムのエンドツーエンドのソフトウェア設定を示します。</block>
+  <block id="ad569dbab7bcafe6ae2a28cd4d832fd1" category="list-text">'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' と表示されている場合は 'OKM 情報を手動でバックアップします</block>
+  <block id="152f3adf69bffe0bb0658bb05364f89b" category="admonition">シャーシを交換する前にシステムのクリーンシャットダウンを実行し、不揮発性メモリ（ NVMEM / NVRAM ）内の書き込み前のデータが失われないようにする必要があります。システムによっては、 NVMEM / NVRAM の LED の点滅は、ディスクに保存されていないデータが NVMEM / NVRAM にあることを示しています。ノードをリブートし、この手順の先頭からやり直してください。ノードのクリーンシャットダウンに繰り返し失敗すると、ディスクに保存されていないデータが失われる可能性があります。</block>
+  <block id="d6cd7784b4e7b607424fb3f31dc53b2d" category="list-text">healthy_node は、 _replacement _node の HA パートナーです。</block>
+  <block id="7676556d14b3f7dfc7ddc885b585b132" category="list-text">_healthy_node で、システム時刻「 show date 」を確認します</block>
+  <block id="704ce524afb02bcf845b03e8ae369f8b" category="paragraph">修復が拒否された場合は '-override-vetoes パラメータを指定して MetroCluster heal コマンドを再実行できますこのオプションパラメータを使用すると、修復処理を妨げるソフトな拒否はすべて無視されます。</block>
+  <block id="c4761cfb1761b743925b9f1be16248cb" category="list-text">コマンドを入力して、 OKM バックアップ情報を表示します：「 securitykey-manager backup show 」</block>
+  <block id="a3410f705ab8a22cd8e4955b03ee2420" category="list-text">コマンドを入力して、 OKM のバックアップ情報を表示します。「 security key-manager backup show 」</block>
+  <block id="9829800481ae88069f363ca18226b993" category="list-text">コマンド「 security key-manager backup show 」を入力して、 OKM の情報をバックアップします</block>
+  <block id="dfeb46620d45b8d49ed48c1634840b5c" category="admonition">OKM 情報がログファイルに保存されていることを確認してください。この情報は、 OKM を手動でリカバリする必要がある災害シナリオで必要になります。</block>
+  <block id="52ca5a52198c80398dfe6a706737b20e" category="paragraph">「 image_xxx.tgz 」を格納できる適切な容量のストレージを搭載した、 FAT32 にフォーマットされた USB フラッシュドライブが必要です。</block>
+  <block id="f7738a24d9355b95820a5116baee7814" category="list-text">無停止交換の場合 'HA ペアはネットワークに接続して 'var' ファイル・システムをリストアする必要はありません単一シャーシ内の HA ペアには内部 e0S 接続があり ' これを使用して 'var'config をそれらの間で転送します</block>
+  <block id="13c4db3516e2bb246a5834f3d7814d4f" category="doc">ファンと AFF A900 をスワップします</block>
+  <block id="cf4805b12d3714cb1c102043670019d7" category="list-text">ファンモジュールのテラコッタボタンを押し、空いている手でファンモジュールを支えながら、ファンモジュールをシャーシからまっすぐ引き出します。</block>
+  <block id="4895dae39c541adad3dc1d9f31c2b28a" category="inline-link">アニメーション -- ファンの取り外し / 取り付け</block>
+  <block id="257892c51ef5c682eda8a947355b2d9d" category="paragraph"><block ref="257892c51ef5c682eda8a947355b2d9d" category="inline-link-rx"></block></block>
+  <block id="9a673f4738f255def47cc1d92dbc0cf6" category="image-alt">DRW a900 は取り付けファンを取り外します</block>
+  <block id="4693df7fc44203724111e55493c1f236" category="paragraph">Terra cotta リリースボタン</block>
+  <block id="a6b7b1f6b451582b4f3e4ee818b0b022" category="paragraph">ファンをスライドさせてシャーシから取り外します</block>
+  <block id="b9f8bf80fa7fab32aca8c28430b0b999" category="doc">リアルタイムクロックバッテリの交換 - AFF A900</block>
+  <block id="34de7ae9bee05647de754a7bdd5b00d5" category="section-title">手順 2 ：コントローラを開く</block>
+  <block id="4cc95bf9d5b32fe7d0352f48b0791827" category="list-text">カムハンドルのテラコッタボタンを下にスライドさせてロックを解除します。</block>
+  <block id="157fddeae41486bcaef21356a0ec5bb1" category="inline-link">アニメーション -- コントローラを取り外します</block>
+  <block id="1e6a22a0167a906d5d500778e514adce" category="paragraph"><block ref="1e6a22a0167a906d5d500778e514adce" category="inline-link-rx"></block></block>
+  <block id="5d6fb494ffd2ad4919bfe7a89dca376f" category="image-alt">DRW a900 は PCM を取り外します</block>
+  <block id="12fa42e0a81aa9a47bca5bce92d6ae38" category="image-alt">DRW a900 PCM 開</block>
+  <block id="eec518c6ed9cf64a0b51294fa8f06692" category="inline-link">アニメーション -- RTC バッテリを交換します</block>
+  <block id="f58146f61f30db6d5df364a7751fc65a" category="paragraph"><block ref="f58146f61f30db6d5df364a7751fc65a" category="inline-link-rx"></block></block>
+  <block id="70f590ae3de022f014ffe169e236da55" category="image-alt">DRW a900 は RTC バッテリを取り外します</block>
+  <block id="7ac0a68ff3a0c6b3beb7f03b58c8496d" category="paragraph">RTC バッテリを交換したら、コントローラモジュールを再度取り付ける必要があります。RTC バッテリをコントローラモジュールから 10 分以上取り出した場合は、時刻と日付のリセットが必要になることがあります。</block>
+  <block id="4714e8423619d9cc43be300b5a406117" category="list-text">ストレージをギブバックしてノードを通常の動作に戻します。「 storage failover giveback -ofnode impaired_node_name</block>
+  <block id="f019032ca5e4ee1339ef0bcd485f9c8d" category="summary">コントローラモジュールを取り外して開き、コントローラのブートメディアの場所を確認して交換してから、交換用ブートメディアにイメージを転送する必要があります。</block>
+  <block id="f42f050dc5269ad7b9f62abb5be6f335" category="doc">コントローラを取り外し、ブートメディアを交換して、ブートイメージ AFF A900 を転送します</block>
+  <block id="2124dcd5f889b56f5d21d376ccfe034a" category="inline-link">アニメーション -- コントローラを取り外します</block>
+  <block id="e15c2c7cc6d83abc6f3519ec47247b5c" category="paragraph"><block ref="e15c2c7cc6d83abc6f3519ec47247b5c" category="inline-link-rx"></block></block>
+  <block id="c8b713ea700fb2decc6696deb87e6679" category="inline-link">アニメーション -- ブートメディアを交換します</block>
+  <block id="76e0b6a67c1d0d3ae7fd16124243cd0e" category="paragraph"><block ref="76e0b6a67c1d0d3ae7fd16124243cd0e" category="inline-link-rx"></block></block>
+  <block id="89c421ecee17b213d1a0c7b9a2dd8106" category="image-alt">DRW a900 ブートデバイスを削除します</block>
+  <block id="defa99ee750d2ca6a8f52cf79e8eb713" category="list-text">bootarg.init.boot_clustered</block>
+  <block id="d18fd3db938a26ebbd3f74de41f0b73f" category="list-text">partner-sysid</block>
+  <block id="bac349cdf99ddd20206c9b20eb9e6d22" category="list-text">bootarg.init.flash_optimized for AFF の略</block>
+  <block id="f3b31cc7028e1885fb21b81b0fdbee37" category="list-text">bootarg.init.san_optimized for AFF の略</block>
+  <block id="cbcb656967b507992a4a640a604c47e0" category="list-text">bootarg.init.switchless_cluster.enable</block>
+  <block id="8e66622dd5a924bd59ee4f46318a13a9" category="list-text">bootarg.storageencryption.support&lt;value&gt;</block>
+  <block id="bdafe896118bc000c3a68090808112cd" category="list-text">bootarg.keymanager. support &lt;value&gt;</block>
+  <block id="8f4ea3656910a928382f8c75368c3c2a" category="list-text">kmip.init.interface &lt; 値 &gt;</block>
+  <block id="b2adbab4ce96430a3475db235c4be8c3" category="list-text">kmip.init.ipaddr &lt; 値 &gt;</block>
+  <block id="70e8273bd6b058c89bc23bad2de4c396" category="list-text">kmip.init.netmask &lt; 値 &gt;</block>
+  <block id="4d10af14d34e5e468c4aee19207329d3" category="list-text">kmip.init.gateway &lt; 値 &gt;</block>
+  <block id="a1781eecf18376feb2f740b6a3d7781d" category="list-text">bootarg.onboard keymanager &lt;value&gt; という 2 つの属性を設定します</block>
+  <block id="8ed13fe688162a9d4d89829700344e8f" category="list-text">printenv variable-name コマンドを使用して ' 変更内容を確認します</block>
+  <block id="61fb64589c53cb1543b86398c0f9bf5f" category="admonition">インターフェイスによっては、その他のパラメータが必要になる場合もあります。詳細については、ファームウェアのプロンプトで「 help ifconfig 」と入力してください。</block>
+  <block id="92119567969a6dfb8d14b4d139115118" category="list-text">MetroCluster ポートをイニシエータとして設定します。 ucadmin modify -m fc -t iniitator adapter_name</block>
+  <block id="13437270a7a5bb30024bcf51e56b9645" category="doc">障害のあるパーツを NetApp-AFF A900 に返却します</block>
+  <block id="9f1173b4d650a610b122024bb5216ca1" category="doc">システムにケーブルを再接続します（ AFF A900 ）</block>
+  <block id="f57131a371345f28120c2c1540cdc3dd" category="paragraph">ストレージおよびネットワーク接続をケーブルで再接続して、交換用手順を続行します。</block>
+  <block id="2f966eb8b55c870ae5de4a1ce0bc89cb" category="list-text">を使用して、ケーブル接続が正しいことを確認します<block ref="7064c89577900622f24a070c24ebbaa7" category="inline-link-rx"></block>。</block>
+  <block id="0163a3b42f42d43e15610ad575decda8" category="admonition">システム ID とディスク割り当て情報は NVRAM モジュールにあります。 NVRAM モジュールはコントローラモジュールとは別のモジュールに搭載されており、コントローラモジュールの交換による影響はありません。</block>
+  <block id="580fe6e7e310b3db810754c7c7927744" category="list-text">_replacement _node が Maintenance モード ( プロンプトに *&gt;` が表示されている ) の場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます</block>
+  <block id="1f8a127e3837fb66c1f3c8c02d8392cd" category="list-text">savecore コマンドの完了を待機してからギブバックを実行します。</block>
+  <block id="c45c9fc04ba9ebcfc2085fb4d27cb308" category="paragraph">_replacement _node はストレージをテイクバックしてブートを完了します。</block>
+  <block id="e52d65661673e0d8112057f135b30a91" category="inline-link">手動ギブバックコマンド</block>
+  <block id="85bdc20f7292dbafd4caa42c19f7b123" category="paragraph">詳細については、を参照してください<block ref="fea6157c393b81b627aed2aca6311576" category="inline-link-rx"></block> 拒否を無視するトピック。</block>
+  <block id="c56c4e68e67a43bbcea54bcb10a45c50" category="paragraph">MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。「 MetroCluster node show -fields node-systemid 」コマンドの出力には、 MetroCluster の設定が通常の状態に戻るまで古いシステム ID が表示されます。</block>
+  <block id="c081ffc5acf576c85556813974927192" category="list-text">replacement _node は、ディザスタサイトのディスクの現在の所有者です。</block>
+  <block id="7be085f8f1dc91cbac9f773985faef24" category="paragraph">詳細については、を参照してください<block ref="4b1c17d30e94cc8d68adcd4265a76547" category="inline-link-rx"></block> トピック：</block>
+  <block id="a3ac7e9d8980de7907636c8bba9ce65b" category="summary">NVMe SSD FlashCache モジュール \ （ FlashCache またはキャッシングモジュール \ ）は、 FAS9000 システムのスロット 6 の NVRAM10 モジュールの前面にのみ配置されています。ONTAP 9.4 以降では、サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。</block>
+  <block id="fb796745f1b93e7c27af0a928be9d5ae" category="doc">キャッシングモジュール FAS9500 をホットスワップします</block>
+  <block id="500dc5c4c3fabaf17658fcf1457f4d0a" category="list-text">admin 特権レベルで、交換用のターゲット NVMe スロットを準備し、続行するかどうかを確認するプロンプトが表示されたら「 y 」と入力します。 system controller slot module replace-node node_name -slot slot_number 次のコマンドは、 node1 のスロット 6-2 を交換用に準備し、交換しても安全であることを示すメッセージを表示します。</block>
+  <block id="542b8ada0f753c9ce009ed6d7d1f2bc7" category="paragraph">交換が必要なキャッシングモジュールの画面出力に、 NVMe スロットのステータスが電源オフと表示されます。</block>
+  <block id="948a2b625585740c830fda62dae13d97" category="list-text">キャッシングモジュールの前面にあるテラコッタリリースボタンを押します。</block>
+  <block id="885f16adbb6d40be3fd7f28e30f3dbf2" category="list-text">system controller slot module insert コマンドを使用して、次のように交換用キャッシングモジュールをオンラインにします。</block>
+  <block id="01749eec96259584a0543cfb51c7496d" category="list-text">system controller slot module show コマンドを使用して、スロットのステータスを確認します。</block>
+  <block id="4b75f27177276fe0e6f2c240be46a30d" category="paragraph">コマンド出力でスロット 6-1 または 6-2 のステータスが電源オンであること、および動作可能であることを確認してください。</block>
+  <block id="14322a1f6cf98e92283f796431b8f072" category="list-text">次のものが含まれます。 ../ _ 包含 / Complete_RMA_step.adoc[]</block>
+  <block id="d35fd8965949830b92555b33686beb19" category="doc">電源装置 AFF A900 をスワップします</block>
+  <block id="12ccb6284dde6c218f4afb3d3857d96e" category="list-text">電源装置ハンドルのテラコッタボタンを押したまま、電源装置をシャーシから引き出します。</block>
+  <block id="5fd8a0b2e3d84890a789982e8b627534" category="inline-link">アニメーション -- PSU の取り外し / 取り付け</block>
+  <block id="cdc92f06e66fe046feea7a94d006df33" category="paragraph"><block ref="cdc92f06e66fe046feea7a94d006df33" category="inline-link-rx"></block></block>
+  <block id="055140d300b472c3cf197b316fc1a111" category="doc">システムの復元の完了 - AFF A900</block>
+  <block id="d43c376026dc1771be0ad5086e3b8cb7" category="summary">この 2 つのビデオでは、システムの設置とケーブル接続の方法を紹介し、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を示します。</block>
+  <block id="8f73eb9fb7acfd413cf2778aacee51b6" category="doc">ビデオの手順 - AFF A900</block>
+  <block id="de53c956f453a59805eb5d446d1bdefd" category="inline-link">アニメーション -- AFF A900 の設置とセットアップの手順</block>
+  <block id="e748385ee8edf54a48a2aa3505be3b13" category="paragraph"><block ref="e748385ee8edf54a48a2aa3505be3b13" category="inline-link-rx"></block></block>
+  <block id="3bc737994532b61e4fad9c84d6dccfc0" category="summary">これは、一般的なネットアップシステムのインストール手順を詳しく説明したものです。</block>
+  <block id="b37eeea92bef8e254a5c7650e7002788" category="doc">詳細な手順 - AFF 900</block>
+  <block id="fa3056f29df183b75e177c2b6ee65b45" category="paragraph">この記事では、一般的なネットアップシステムのインストール手順について詳しく説明します。インストール手順の詳細については、この資料を参照してください。</block>
+  <block id="8666406295c84e68942a4f6fc1b2cb4e" category="paragraph">にアクセスできる必要があります<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> サイト要件および構成済みシステム上の追加情報の詳細については、を参照してください。</block>
+  <block id="efe451bd1c5b374a05e7d5178bb06987" category="inline-link">ONTAP 9 リリースノート</block>
+  <block id="40fe00708235ad923736149094645e33" category="paragraph">へのアクセスも必要になる場合があります<block ref="0f8d0515fc69b1cc082b3a1a824a0f7b" category="inline-link-rx"></block> ONTAP のバージョンに応じて、このシステムの詳細情報を確認してください。</block>
+  <block id="fdd16b4c17cdffdb8347031ffbb94b8a" category="paragraph">25GbE データケーブル</block>
+  <block id="27028f92656bbdf910064ae3e02df4e4" category="paragraph">X66240A-05 （ 112-00639 ）、 0.5m</block>
+  <block id="76e54077fa867932c272cec07283b8b4" category="paragraph">X66240A-2 （ 112-00598 ）、 2m</block>
+  <block id="a6e3ca310cb8a5b01ca48d785525d1a0" category="paragraph">FC 光ネットワークケーブル</block>
+  <block id="4eb869f675887c7c4563b8f589fd425e" category="paragraph">X66100-1 （ 112-00542 ）、 1m</block>
+  <block id="22818e3aa151ab65763aabffdaa3bfb3" category="paragraph">X66100-3 (112-00543) 、 3m</block>
+  <block id="28a7744e9ff504a093d19d5924bdd286" category="paragraph">X66100-5 （ 112-00544 ）、 5m</block>
+  <block id="1fde8b940fe7522a4b514afcee8fc307" category="paragraph">イーサネットデータ、クラスタネットワーク</block>
+  <block id="005e2f19b5bdfcf9c50e5395df2fc80a" category="paragraph">X66211B-1 （ 112-00573 ）、 1m</block>
+  <block id="bf87f5b23bb37f6364be788b79c1a73a" category="paragraph">X66211B-2 （ 112-00574 ）、 2m</block>
+  <block id="eae9a7714c47bba5996cfde20d16feb5" category="paragraph">X66211B-5 （ 112-00576 ）、 5m</block>
+  <block id="7c940cd75d895902a2a1ca1414a2a95e" category="paragraph">ネットワーク、</block>
+  <block id="c85d51015376017bfac06d7a393d65a8" category="paragraph">NVMe ストレージ、</block>
+  <block id="12f433cfca5ad984274ffdaf0fc4902b" category="paragraph">イーサネットデータ</block>
+  <block id="09fd8552ab48c65ddc70dbeb1978b198" category="paragraph">クラスタネットワーク</block>
+  <block id="9e970bc474972d15dfb05462a6fa4595" category="paragraph">FC 光ネットワーク</block>
+  <block id="28746f946d763ce537494ffe0d6c6727" category="list-text">を確認します<block ref="31fb422f2cdfc1b2e916b587bec00136" category="inline-link-rx"></block> およびそのガイドに記載されている必要な情報を収集します。</block>
+  <block id="858ecf173bc4407a9f9f712e4f1e74f6" category="inline-link">アニメーション -- 2 ノードスイッチレスクラスタのケーブル接続</block>
+  <block id="af47e885d132c2d4147635c418bd829e" category="paragraph"><block ref="af47e885d132c2d4147635c418bd829e" category="inline-link-rx"></block></block>
+  <block id="1fb0ebfbc5b5595571d6d5f9b6042526" category="image-alt">DRW a900 TNSC ネットワークケーブル</block>
+  <block id="d718ffb6aaa936306ccf33aefa9f9462" category="paragraph">クラスタインターコネクトポートをケーブル接続します。</block>
+  <block id="832e6447f3f0b4b7127bf98e691dabe2" category="list-text">スロット A4 および B4 （ e4A ）</block>
+  <block id="afb27063fb1efe124e2c7a172cae259c" category="list-text">スロット A8 および B8 （ e8a ）</block>
+  <block id="e5d93b7dd741454087516c062b2039a9" category="paragraph"><block ref="e5d93b7dd741454087516c062b2039a9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4d929445fb22edc648f8a3c2ad66dbbc" category="paragraph">コントローラ管理（レンチマーク）ポートをケーブル接続します。</block>
+  <block id="e77136c5bb4120b57e8fb14ff5bfc9e5" category="image-alt">OIE ケーブル RJ45</block>
+  <block id="5d86adeae4cafa6e9bc7b67a443ec6e0" category="image-alt">OIE の凡例アイコン 3 o</block>
+  <block id="1450e01f2144c582867e61a2ce391ade" category="paragraph">25GbE ネットワークスイッチをケーブル接続します。</block>
+  <block id="562006e5bc5a05872c89072601752baa" category="paragraph">スロット A3 および B3 （ e3a および e3c ）およびスロット A9 および B9 （ e9a および e9c ）のポートは、 25GbE ネットワークスイッチに接続されます。</block>
+  <block id="aad1d3558c9563a901df636025add55b" category="image-alt">OIE ケーブル SFP GbE 銅線</block>
+  <block id="01085cf5b9f45152fc01d555522c3aef" category="paragraph">40GbE ホストネットワークスイッチ：</block>
+  <block id="e8eaee0a475f33b542e1373550bc8b20" category="paragraph">ホスト側の b ポートをスロット A4 と B4 （ e4b ）に接続し、スロット A8 と B8 （ e8b ）をホストスイッチに接続します。</block>
+  <block id="018580c2da3ddca7f76b71c3c8e16b9e" category="image-alt">OIE の凡例アイコン 4 DR</block>
+  <block id="8b891f41fe066d01d04ca12a9bd0033f" category="paragraph">32Gb FC 接続のケーブル接続：</block>
+  <block id="c368da6f34e41cf660fe742d1776c0c1" category="paragraph">スロット A5 および B5 （ 5a 、 5b 、 5c 、 5d ）およびスロット A7 および B7 （ 7a 、 7b 、 7c 、 7d ）のポートを 32 Gb FC ネットワークスイッチにケーブル接続します。</block>
+  <block id="dea6830a53392dc3b1f30fb0a37fb5e4" category="list-text">ストレージをケーブル接続するには、を参照してください <block ref="4261ea2b75c295a1978f7924667f1c11" category="inline-xref-macro-rx"></block>。</block>
+  <block id="348f6f77e12fb455fe84b253caa52b7d" category="inline-link">アニメーション -- スイッチクラスタのケーブル接続</block>
+  <block id="73cd8472d89e7129eb796bfe9d57a3f9" category="paragraph"><block ref="73cd8472d89e7129eb796bfe9d57a3f9" category="inline-link-rx"></block></block>
+  <block id="4ee80bb938c529fd8e585ff1663b9324" category="image-alt">DRW a900 スイッチドネットワークケーブル</block>
+  <block id="5f4965084173e3c414637c35200b73a8" category="paragraph">クラスタインターコネクト A ポートをケーブル接続します。</block>
+  <block id="765c3c3f314b105120b116fa72fa83ec" category="list-text">スロット A4 と B4 （ e4A ）をクラスタネットワークスイッチに接続します。</block>
+  <block id="370ef18034bcd8124be9ef4b4b76a551" category="list-text">スロット A8 と B8 （ e8a ）をクラスタネットワークスイッチに接続します。</block>
+  <block id="57f2f6ee86a9d40ab8a7837d0d864830" category="image-alt">OIE の凡例アイコン 2 LP</block>
+  <block id="3b632bef76bf01e7a7e2e0c7d8200b68" category="paragraph">25GbE ネットワークスイッチをケーブル接続します。</block>
+  <block id="e61525b2473886e554ed01ddeed52e1d" category="paragraph">32Gb FC 接続のケーブル：</block>
+  <block id="7a98f654f31b3263341788faed4ecbdd" category="section-title">オプション 1 ： AFF A900 のコントローラを 1 台の NS224 ドライブシェルフにケーブル接続します</block>
+  <block id="c60dbcf19edff60839d3c0fbf6f60f2a" category="paragraph">各コントローラを、 AFF A900 システムの NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。</block>
+  <block id="5ec6942c74c6a8edac1d2288d383731d" category="list-text">次のアニメーションや図に従って、 1 台の NS224 ドライブシェルフにコントローラをケーブル接続します。</block>
+  <block id="a41485b1bfa139de3c9e00c411862bcb" category="inline-link">アニメーション -- 1 台の NS224 シェルフのケーブル接続</block>
+  <block id="d83b51eca5a04259ce39f283814e9546" category="paragraph"><block ref="d83b51eca5a04259ce39f283814e9546" category="inline-link-rx"></block></block>
+  <block id="3edbc67f0fd2ebb274aeb6ee9dd581fe" category="image-alt">DRW a900 NS224 シェルフ間のケーブル接続 1 本</block>
+  <block id="3a58f6912b98caf7435fd9f6896ba4c6" category="list-text">コントローラ A のポート e2a を、シェルフの NSM A のポート e0a に接続します。</block>
+  <block id="e4e47b4780428e178a9b09390f2362b3" category="list-text">コントローラ A のポート e10b をシェルフの NSM B のポート e0b に接続します。</block>
+  <block id="393f89fb63e48229ad961dd1e405b53e" category="list-text">コントローラ B のポート e2a を、シェルフの NSM B のポート e0a に接続します。</block>
+  <block id="db6b75fb665e0f2ab8be21099367b97a" category="list-text">コントローラ B のポート e10b をシェルフの NSM A のポート e0b に接続します。</block>
+  <block id="938cc7aca11f8ea0a909bcfbd5b224bc" category="list-text">システムのセットアップを完了するには、を参照してください <block ref="53346fef0c147b551f530d05bbad2e41" category="inline-xref-macro-rx"></block>。</block>
+  <block id="5cc4f695591ccf54e2c20c08c7e44281" category="section-title">オプション 2 ： AFF A900 の 2 台の NS224 ドライブシェルフにコントローラをケーブル接続します</block>
+  <block id="46c91124d100547c9507fea50ae0639b" category="paragraph">各コントローラを、 NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。</block>
+  <block id="26fe6dbccc48fc5e3f27bb01af6740e6" category="list-text">次のアニメーションや図を使用して、 2 台の NS224 ドライブシェルフにコントローラをケーブル接続します。</block>
+  <block id="dde5a736f579ce12e46a65283dd7f9fd" category="inline-link">アニメーション -- 2 台の NS224 シェルフのケーブル接続</block>
+  <block id="abcaebf953c1f0605b8e57bf3bff39ee" category="paragraph"><block ref="abcaebf953c1f0605b8e57bf3bff39ee" category="inline-link-rx"></block></block>
+  <block id="2b31343b857fe67d64a1a976e200e971" category="paragraph"><block ref="2b31343b857fe67d64a1a976e200e971" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3cf9ca19fe84380073a6046bd956f972" category="image-alt">DRW a900 NS224 シェルフ間のケーブル接続</block>
+  <block id="1d4442969281e166b667219af7e7fe7b" category="list-text">コントローラ A のポート e2a を、シェルフ 1 の NSM A に接続します。</block>
+  <block id="952e197be70605a4933f1fa544e89cf3" category="list-text">コントローラ A のポート e10b をシェルフ 1 の NSM B e0b に接続します。</block>
+  <block id="92d9c39d99b3b14f8b5b4b785e697404" category="list-text">コントローラ A のポート e2b をシェルフ 2 の NSM B e0b に接続します。</block>
+  <block id="595dcefcfa25d30e1d9c642906611e9b" category="list-text">コントローラ A のポート e10a をシェルフ 2 の NSM A の e0a に接続します。</block>
+  <block id="26c720aa02061cfc13b683d16417d6f6" category="list-text">コントローラ B のポート e2a を、シェルフ 1 の NSM B e0a に接続します。</block>
+  <block id="b96eaffe433fe3b487cd82b4f61be219" category="list-text">コントローラ B のポート e10b をシェルフ 1 の NSM A e0b に接続します。</block>
+  <block id="8c6d7187872b78ef08222578448b1731" category="list-text">コントローラ B のポート e2b をシェルフ 2 の NSM A e0b に接続します。</block>
+  <block id="c3ecc9b1be38b712a8f61f8b27c41352" category="list-text">コントローラ B のポート e10A をシェルフ 2 の NSM B e0a に接続します。</block>
+  <block id="1d069ff54ee29cbfaafd7650132e6cd5" category="list-text">システムのセットアップを完了するには、を参照してください <block ref="53346fef0c147b551f530d05bbad2e41" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1a012ae90c41b7530ce0df40b8053d54" category="section-title">オプション 1 ：ネットワーク検出が有効になっている場合</block>
+  <block id="5eadc00e7d9146c2fd474e7d8d5f5137" category="list-text">次のアニメーションまたは図を使用して、 1 つ以上のドライブシェルフ ID を設定します。</block>
+  <block id="f551b341dd5555b5471ea63f7fad8db8" category="paragraph">NS224 シェルフ ID は 00 および 01 に事前に設定されています。シェルフ ID を変更する場合は、ボタンが配置されている穴に差し込む工具が必要です。</block>
+  <block id="d7da020d7e50d0f7695418b7d1c5a475" category="inline-link">アニメーション -- SAS または NVMe ドライブシェルフ ID の設定</block>
+  <block id="1b5864515cce712fde93df30916b89f6" category="paragraph"><block ref="1b5864515cce712fde93df30916b89f6" category="inline-link-rx"></block></block>
+  <block id="6b39390f8836ac9ddcaf033f6ec9d535" category="image-alt">DRW 電源オンセットシェルフ ID セット</block>
+  <block id="543ab7831f0589c951278e6073647eb0" category="paragraph">エンドキャップを取り外す。</block>
+  <block id="77b9275f6fd711644f4214aa9c1fd216" category="paragraph">1 桁目の数字が点滅するまでシェルフ ID ボタンを押し続けたら、 0~9 に進みます。</block>
+  <block id="5463cd717cd1248bc167a0577c0d17a5" category="paragraph">メモ： 1 桁目の数字は点滅したままです</block>
+  <block id="f5e9a997371da544ff3b8bba352ef6e5" category="paragraph">2 桁目の数字が点滅するまでシェルフ ID ボタンを押し続けたら、 0~9 に進みます。メモ： 1 桁目の数字の点滅は止まり、 2 桁目の数字は点滅し続けます。</block>
+  <block id="72e911c52ba51e970a39b1b30b1c8424" category="paragraph">エンドキャップを取り付けます。</block>
+  <block id="241b3d2acad120dfd8decf92e173cd23" category="paragraph">オレンジの LED が点灯するまで 10 秒間待ちます (!) 。 表示されるようにするには、ドライブシェルフの電源を再投入してシェルフ ID を設定します。</block>
+  <block id="16b2e9a8942086f848807a9d29018abe" category="inline-link">アニメーション -- コントローラの電源を入れます</block>
+  <block id="ef265a7ab9120588f2c16122bad396d8" category="paragraph"><block ref="ef265a7ab9120588f2c16122bad396d8" category="inline-link-rx"></block></block>
+  <block id="b12c60055be138bf7526b1769365b47e" category="image-alt">DRW a900 電源オン</block>
+  <block id="0c3908b5686109928912c8adf1bd0fe0" category="inline-link">アニメーション -- ラップトップを管理スイッチに接続します</block>
+  <block id="c7436b1d23a41c41bc18a0a9ee542efb" category="paragraph"><block ref="c7436b1d23a41c41bc18a0a9ee542efb" category="inline-link-rx"></block></block>
+  <block id="bd21e6ec29256eee4c7a9b34dd71c9ba" category="image-alt">DWR ラップトップをスイッチのみに接続します</block>
+  <block id="382f497663af8b0b026d3c66f6a2bfce" category="list-text">System Manager のセットアップガイドを使用して、で収集したデータを基にシステムを設定します<block ref="31fb422f2cdfc1b2e916b587bec00136" category="inline-link-rx"></block>。</block>
+  <block id="c866cf78ea22fe8b8a7122b28202ae22" category="paragraph"><block ref="c866cf78ea22fe8b8a7122b28202ae22" category="inline-link-rx"></block></block>
+  <block id="5ee8cd6a87d8b25f71b533639902587c" category="list-text">初期設定が完了したら、に進みます<block ref="3cd2da01c2a4ba58d102a6abe7a05e1f" category="inline-link-rx"></block> ONTAP での追加機能の設定については、ページを参照してください。</block>
+  <block id="208ee0864fe983f53622b3619eef5932" category="section-title">オプション 2 ：ネットワーク検出が有効になっていない場合</block>
+  <block id="b3364f412d1466e4f6e340836fff9abb" category="paragraph">Windows または Mac ベースのラップトップやコンソールを使用していない場合、または自動検出が有効になっていない場合は、このタスクで設定とセットアップを実行する必要があります。</block>
+  <block id="d59c634da2b4c994ac1f5e484f6f9ada" category="paragraph"><block ref="d59c634da2b4c994ac1f5e484f6f9ada" category="inline-link-rx"></block></block>
+  <block id="11991b3479fcd322fec352f130b7b364" category="admonition">アドレスの形式は、 +https://x.x.x.x+ です。</block>
+  <block id="bb0210ac9561e033fc7d726a6ac134e8" category="paragraph"><block ref="bb0210ac9561e033fc7d726a6ac134e8" category="inline-link-rx"></block></block>
+  <block id="3c941071b26a1822e1cb4494c2fd71da" category="doc">障害のあるコントローラ AFF A900 をシャットダウンします</block>
+  <block id="68908cbb53a7b71659933af600697a19" category="summary">NVRAM11 バッテリを搭載したデステージコントローラ電源モジュール \ （ DCPM \ ）をホットスワップするには、障害が発生した DCPM モジュールの場所を確認し、シャーシから取り外して、交換用 DCPM モジュールをインストールする必要があります。</block>
+  <block id="d04f6248062fc9d16de8588d61c28d1e" category="doc">NVRAM11 バッテリを搭載したデステージコントロール電源モジュール AFF A900 を交換してください</block>
+  <block id="b36f3c4187cae8553973b284879e1c97" category="paragraph">NVRAM11 バッテリを搭載したデステージコントローラ電源モジュール（ DCPM ）をホットスワップするには、障害が発生した DCPM モジュールの場所を確認し、シャーシから取り外して、交換用の DCPM モジュールをインストールする必要があります。</block>
+  <block id="90eb2af5a768fd638c695d0394817a0e" category="section-title">手順 1 ： DCPM モジュールを交換します</block>
+  <block id="6acd2520bad86e2719b0a66d04f59f28" category="list-text">モジュールハンドルのテラコッタロックボタンを押し、 DCPM モジュールをシャーシから取り出します。</block>
+  <block id="14224e5d4c9f70ec064ae7d6bdc25f89" category="inline-link">アニメーション -- DCPM の取り外し / 取り付け</block>
+  <block id="114cb8c532f77c80ac4cc64733a20697" category="paragraph"><block ref="114cb8c532f77c80ac4cc64733a20697" category="inline-link-rx"></block></block>
+  <block id="dd70305ea5f8fef426dbcb35b56b5a51" category="paragraph">DCPM モジュールのテラコッタロックボタン</block>
+  <block id="d4c0255d1ced9eb52d3f7fe1f481530a" category="paragraph">挿入時にオレンジの LED が 4 回点滅し、バッテリに電圧が供給されている場合は緑色の LED も点滅します。点滅しない場合は、交換する必要があります。</block>
+  <block id="68912cac581299e947ce3696c1a369cb" category="section-title">手順 2 ：バッテリーの障害</block>
+  <block id="a6426e3554ef4761ece421786e4d1cbc" category="inline-link">安全に関する情報および規制に関する注意事項</block>
+  <block id="a3d6b87a3696ea4158d81bf432d3724e" category="paragraph"><block ref="a3d6b87a3696ea4158d81bf432d3724e" category="inline-link-rx"></block></block>
+  <block id="097b77e85acb6a3710edc7929eb72d93" category="doc">リカバリイメージ AFF A900 を起動します</block>
+  <block id="6ce5f7147d284a7d41c1fc93d3072d57" category="list-text">/etc/ssh/ssh_host_ecDSA_KEY を上書きするように求められたら 'y' を押します</block>
+  <block id="1396dacdf561903f32c605f06d2cf5d8" category="list-text">復元バックアップが成功したかどうかを確認するプロンプトが表示されたら 'y' を押します</block>
+  <block id="c9ed271ea801891a1b5c1e6e048813b6" category="list-text">復元された構成のコピーのプロンプトが表示されたら 'Y' を押します</block>
+  <block id="2ddd54a208744ec5e2ccb1b7ac83aa05" category="list-text">printenv コマンドを使用して ' 環境変数の設定を確認します</block>
+  <block id="edb5a1f64879356169f323de78b718be" category="list-text">環境変数が正しく設定されていない場合は、 setenvenvironment_variable_name changed_value コマンドを使用して変更します。</block>
+  <block id="eeacd9b31ab0c2f60f1d13e5632f7f13" category="list-text">saveenv コマンドを使用して、変更内容を保存します。</block>
+  <block id="29d4dec218aeaffabfed6dcc8fd1ad45" category="list-text">システムにオンボードキーマネージャ、 NSE 、または NVE が設定されている場合は、に進みます <block ref="39910b5f3ea1ee39d8059faae857cc98" category="inline-xref-macro-rx"></block></block>
+  <block id="b52d8d1d987722da12d16df8a0a63541" category="list-text">LOADER プロンプトで、 boot_ontap コマンドを入力します。</block>
+  <block id="feb2aab91c5a609dcbc8409f96404671" category="list-text">storage failover show コマンドを使用して、ターゲットノードでギブバックの準備が完了していることを確認します。</block>
+  <block id="6c6d5b112e5f57cd557a4ce3f7e29059" category="list-text">storage failover giveback -fromnode local コマンドを使用してノードをギブバックします。</block>
+  <block id="13b6e1ea33838db60037aa0b1c5c884b" category="list-text">クラスタプロンプトで、 net int-is-home false コマンドを使用して論理インターフェイスを確認します。</block>
+  <block id="5e5ce8025b11752aab339bd61df121bc" category="paragraph">「 false 」と表示されるインターフェイスがある場合は、 net int revert コマンドを使用して、それらのインターフェイスをホームポートに戻します。</block>
+  <block id="fdfb5a2b2c62652b047bacddf92e9188" category="list-text">修復されたノードにコンソールケーブルを接続し、 version -v コマンドを実行して ONTAP のバージョンを確認します。</block>
+  <block id="21771aeeca9194c9c6cc4646a2230c93" category="list-text">storage failover modify -node local-auto-giveback true コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。</block>
+  <block id="eec41346a265cfb88abb54f51ec33fe7" category="summary">AFF A900 システムのマニュアルでは、システムの設置、セットアップ、および保守を行うことができます。</block>
+  <block id="b35a00e75330322eefd710713ca83b02" category="doc">AFF A900 システム</block>
+  <block id="23b82013e68c4445eaa3ec355ca09fb4" category="summary">NVRAM モジュールは、 NVRAM11 と DIMM 、 NVRAM モジュールあたり最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。</block>
+  <block id="b422a6f4d3945c00efbef5a1554df972" category="doc">NVRAM モジュール / NVRAM DIMM を交換してください - AFF A900</block>
+  <block id="4d365227a3a5ccf9886fa9c35ba6a99d" category="paragraph">NVRAM モジュールは NVRAM11 と DIMM で構成されます。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。障害が発生した NVRAM モジュールを交換するには、モジュールをシャーシから取り外し、 DIMM を交換用モジュールに移して、交換用 NVRAM モジュールをシャーシに取り付ける必要があります。</block>
+  <block id="50b70636b9b845e1cca7db72fbdeec68" category="paragraph">および NVRAM DIMM を交換するには、 NVRAMmodule をシャーシから取り外し、モジュール内の障害のある DIMM を交換してから、 NVRAM モジュールを再度取り付ける必要があります。</block>
+  <block id="356bb2eaf8fe1f9955f9f22e00ddcb54" category="paragraph">システム ID は NVRAM モジュールから取得されるため、モジュールを交換する場合は、システムに属するディスクを新しいシステム ID に再割り当てします。</block>
+  <block id="566dc57c04b76274e7168e53e1eea041" category="list-text">障害ノードとは、メンテナンスを実行しているノードです。</block>
+  <block id="350cecd9af7d98cbf31c22fbd46e60fe" category="list-text">正常なノードとは、障害ノードの HA パートナーです。</block>
+  <block id="e0ffee47cf76076ed4c6531bb6ebf63f" category="inline-link">アニメーション -- NVRAM モジュールを交換します</block>
+  <block id="1877796130af55388822e2758225131e" category="paragraph"><block ref="1877796130af55388822e2758225131e" category="inline-link-rx"></block></block>
+  <block id="dad23827b140b55a3121c86e5b861fad" category="image-alt">DRW a900 move remove NVRAM module (NVRAM モジュールを取り外します</block>
+  <block id="df3566616f23116dab812ba8e95510cb" category="image-alt">DRW a900 は NVRAM モジュールの内容を削除します</block>
+  <block id="940d4ab787e1716a1836f922062d7367" category="inline-link">アニメーション -- NVRAM DIMM を交換します</block>
+  <block id="187f33e2fc4be81b69b6cf81754a9f00" category="paragraph"><block ref="187f33e2fc4be81b69b6cf81754a9f00" category="inline-link-rx"></block></block>
+  <block id="0133a8841f8d283d3a060042f4904613" category="list-text">NVRAM モジュールをシャーシに取り付けます。</block>
+  <block id="d2afd23f9efb1f5de6cadd26fcce1cf5" category="section-title">手順 5 ：コントローラモジュールの HA 状態を確認して設定します</block>
+  <block id="2afb3c10441f511142ed51efdd86c073" category="list-text">交換用コントローラモジュールの保守モードで ' すべてのコンポーネントが同じ HA 状態を表示していることを確認します HA 構成の場合は 'ha-config show と表示されます</block>
+  <block id="e4d75425009bc77525096ccae70bd9ac" category="cell">すべてのコンポーネントの HA の状態</block>
+  <block id="14d3c29aecf5054de86c0d913b978541" category="paragraph">4 つ以上のノードを含む MetroCluster FC 構成</block>
+  <block id="a81b41b0ce60920d308c876b3e9b38f1" category="paragraph">MetroCluster IP 構成</block>
+  <block id="8d8e1d2c17edc6fe8262408b12b73390" category="list-text">表示されたコントローラモジュールのシステム状態がシステム構成と一致しない場合は、コントローラモジュールの HA 状態を「 ha-config modify controller_A_2 state_」 に設定します</block>
+  <block id="c36d25abc9dfdbc31228c74f7e654d0c" category="list-text">表示されたシャーシのシステム状態がシステム構成と一致しない場合は ' シャーシの HA 状態を設定します HA config modify chassis_HA-state_</block>
+  <block id="f95e8e8b229c3aee97b205509f91df66" category="section-title">手順 6 ：ディスクの再割り当て</block>
+  <block id="0855873e0fa5bed2d0067d6acae6c0df" category="paragraph">交換用ノードのブート時にシステム ID の変更を確認し、変更が実装されたことを確認する必要があります。</block>
+  <block id="1a97de4b7c87981ce7420f6c88c32df0" category="list-text">交換用ノードのコンソールに Waiting for giveback... メッセージが表示されるまで待ち、正常なノードから新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show</block>
+  <block id="8672de10e3d8295abd1be60e2569c4c6" category="list-text">すべてのコアダンプを保存します： system node run -node local-node-name partner savecore</block>
+  <block id="544b7fcf1fe2aaedd577ba107a7f6a56" category="paragraph">次のコマンドを入力すると 'savecore コマンドの進行状況を監視できます system node run -node local-node-name partner savecore -s</block>
+  <block id="7a18402f95cb86527db24f56d6baec40" category="list-text">正常なノードから、交換したノードのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name</block>
+  <block id="3217c14b22c3695ed301b94539bd2dbb" category="paragraph">交換用ノードはストレージをテイクバックしてブートを完了します。</block>
+  <block id="8a6fbf23d593cc1be4de4068cb3eeee1" category="paragraph">storage failover show コマンドの出力に、パートナーメッセージで変更されたシステム ID を含めることはできません。</block>
+  <block id="18963b05f9f3bc779f544c26aae06ab9" category="paragraph">交換用ノードに属するディスクには、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。</block>
+  <block id="cfe787a999b8c200091f805ad9426e24" category="list-text">交換用ノードがディザスタサイトのディスクの現在の所有者である。</block>
+  <block id="7285c4012d903a86f08da4d4eb643a35" category="paragraph">を参照してください<block ref="1c9dcde47ee822b3ac120aae2f296f05" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="2a1253e1eb3f5fea69107948ef4c203d" category="summary">このトピックでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。</block>
+  <block id="cb0bd9965128fe9d9c7dc5fe35ba00fa" category="doc">クイックステップ - AFF A900</block>
+  <block id="86b058636c934f73a262e3a5469f088e" category="paragraph">このトピックでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。ネットアップシステムのインストールに精通している場合は、このコンテンツを使用してください。</block>
+  <block id="cd9130a2736bae3213b0c2da4de3435e" category="inline-link-macro">AFF A900 のインストールとセットアップの手順</block>
+  <block id="4409045029375618296b6ed24e35aec6" category="paragraph"><block ref="4409045029375618296b6ed24e35aec6" category="inline-link-macro-rx"></block></block>
+  <block id="6551c0f6e6caf0566c6eae152ecd7b38" category="doc">ブートメディア AFF A900 を交換してください</block>
+  <block id="10446d8e0f9e8e6b297995ce7dafe03c" category="doc">交換プロセス（ AFF A900 ）を完了します</block>
+  <block id="fcc9aa8940599a2c3be38723a65e9e21" category="doc">DIMM- AFF A900 を交換してください</block>
+  <block id="a2996937d1a0f2d39e753cdc891f28a1" category="image-alt">DRW a900 DIMM マップ</block>
+  <block id="41a8264f5aebedaeded2321836d67dc1" category="inline-link">アニメーション -- DIMM を交換します</block>
+  <block id="2ee1b528c65d4a78f3882ecb1b55435c" category="paragraph"><block ref="2ee1b528c65d4a78f3882ecb1b55435c" category="inline-link-rx"></block></block>
+  <block id="cd9ecdfdf99f4eff04ef39f0689a54be" category="image-alt">DRW a900 は PCM DIMM を交換します</block>
+  <block id="6a78a7c330bf06386d61e85aa30325eb" category="inline-link">アニメーション -- コントローラをインストールします</block>
+  <block id="8b786c8ea77512c3dbdaa8bd1b973696" category="paragraph"><block ref="8b786c8ea77512c3dbdaa8bd1b973696" category="inline-link-rx"></block></block>
+  <block id="ad4cfe6fc2b7cb05bf19c4a07bb3ec19" category="list-text">起動メニューに Ctrl+C キーを押して ' 起動プロセスを中断します</block>
+  <block id="c63722af0556df99585d9c4de88eb02d" category="admonition">起動プロセス中に 'y' とプロンプトを安全に入力できます</block>
+  <block id="86319021cdc9cc33274101862a78bb0d" category="list-text">HA 構成でメンテナンスモードに切り替えたときに表示される、正常なノードが停止したままであることの確認を求めるプロンプト。</block>
+  <block id="beae2577508dff32956933c72e8af78a" category="paragraph">ギブバックを実行します。 storage failover giveback -ofnode replacement_node_name * 注： * 自動ギブバックを無効にした場合は、 storage failover modify コマンドを使用して再度有効にします。</block>
+  <block id="ef27904ffe8486e4c45f99e2284dcde0" category="doc">障害ノード AFF A900 をシャットダウンします</block>
+  <block id="4a11061a1e6cf88a01ac0a8a2d4682c6" category="doc">コントローラモジュールハードウェア AFF A900 を交換してください</block>
+  <block id="a1828edb3cde53f0ba3419e2ebe71f61" category="paragraph">次のアニメーションは、障害のあるコンポーネントを交換用コントローラに移動するプロセスを示しています。</block>
+  <block id="9af409fe069f89e48cd941abd1907054" category="inline-link">アニメーション -- コンポーネントを交換用コントローラに移動します</block>
+  <block id="35f06ea8455a11ff2160fac4c66dbe3e" category="paragraph"><block ref="35f06ea8455a11ff2160fac4c66dbe3e" category="inline-link-rx"></block></block>
+  <block id="663cf84575ea94d5357677274272109e" category="paragraph">コンポーネントを交換用コントローラモジュールに取り付けたら、交換用コントローラモジュールをシステムシャーシに取り付け、オペレーティングシステムをブートする必要があります。</block>
+  <block id="6901174dda5711cd51c6d9390b9a338b" category="inline-link">アニメーション -- コントローラをインストールします</block>
+  <block id="8993ac62bef9fb1b92c805a31bfcf3a3" category="paragraph"><block ref="8993ac62bef9fb1b92c805a31bfcf3a3" category="inline-link-rx"></block></block>
+  <block id="0927521d277e31ef032f3c9f7cd60215" category="list-text">コントローラモジュールのカムハンドルをロック位置まで回転させます。</block>
+  <block id="800c8750475f7f7221a9b7946bec8d10" category="list-text">LOADER でブートするオプションを選択します。</block>
+  <block id="eee1a85c64e17c1ca9ed30c1f544d35d" category="doc">コントローラモジュール AFF A900 を交換してください</block>
+  <block id="8b20a20371bd26b5083507f395cf24ab" category="paragraph">障害のあるコントローラモジュールを交換するには、障害のあるコントローラをシャットダウンし、内蔵コンポーネントを交換用コントローラモジュールに移動して、交換用コントローラモジュールを取り付け、交換用コントローラをリブートする必要があります。</block>
+  <block id="c60c00789a015e4c8edc176d68ea53c2" category="list-text">この手順では、ブートデバイスを障害ノードから交換用ノードに移動して、交換用ノードが古いコントローラモジュールと同じバージョンの ONTAP でブートするようにします。</block>
+  <block id="fd6012123eb1d03462c1cd48d50c92e6" category="list-text">障害ノードとは、交換するノードです。</block>
+  <block id="9e51ab12d26faade2a31d70da71c74f5" category="list-text">交換用ノードとは、障害ノードに代わる新しいノードです。</block>
+  <block id="537af5095a4992ae7e9026bd3ff008a6" category="list-text">正常なノードとはサバイバーノードです。</block>
+  <block id="4e4fca0318eac6dc1315f4bad56eb1c6" category="summary">システムに I/O モジュールを追加するには、既存の I/O モジュールをフル装備のシステムで新しい I/O モジュールに交換するか、シャーシの空のスロットに新しい I/O モジュールを追加します。</block>
+  <block id="a164244a6913c60772e9b9fbbbc17a4a" category="doc">I/O モジュールを追加します（ AFF A900 ）</block>
+  <block id="e01b6c84aaebe2321eef7b7a933b171f" category="list-text">無停止で I/O モジュールを追加するには、ターゲットコントローラをテイクオーバーし、ターゲットスロットのスロットブランクカバーを取り外すか、既存の I/O モジュールを取り外し、新しい I/O モジュールまたは交換用 I/O モジュールを追加して、ターゲットコントローラをギブバックする必要があります。</block>
+  <block id="329fe7c89a525def535e03c6dbc6f98f" category="section-title">オプション 1 ：オープンスロットを備えたシステムに I/O モジュールを追加する</block>
+  <block id="12f686a2d13fd4b93c3ef7fbc915cdcd" category="paragraph">システムの空のモジュールスロットに、 NS224 ストレージシェルフの NIC またはストレージモジュールとして I/O モジュールを追加できます。</block>
+  <block id="ff231ca484e594004f4ca93ecfa6683e" category="paragraph">テイクオーバーが完了すると、コンソール接続でノードが LOADER プロンプトに表示されます。</block>
+  <block id="c45c3f1f9d099575b7abd851e7ef8b33" category="list-text">カムラッチを開いた状態になるまで下に回転させます。</block>
+  <block id="9a08e35bf8850515585d9bd11e96351b" category="list-text">I/O モジュールを取り付けます。</block>
+  <block id="66efd9c2b6ae55ef5c1ff3be01c1fe65" category="list-text">I/O モジュールをスロットの端に合わせます。</block>
+  <block id="35d6c9040844123446e81fce55da1548" category="list-text">文字と数字が記載された I/O カムラッチが I/O カムピンにかみ合うまで、 I/O モジュールをスロットにスライドさせます。</block>
+  <block id="7ca78c6d47f27487175e23a00c576196" category="list-text">交換用 I/O モジュールが NIC の場合は、モジュールをデータスイッチにケーブル接続します。</block>
+  <block id="3267c15e351fe1dd15721e79b072fedc" category="admonition">使用していない I/O スロットには、熱の問題を防ぐためにブランクが取り付けられていることを確認してください。</block>
+  <block id="2a5cd1f850ee79601be57448f10d9595" category="list-text">LOADER プロンプトからノードをリブートします： bye _</block>
+  <block id="4d3b1425bbd62943a546a9f98dc3b7ef" category="list-text">パートナーノードからノードをギブバックします。storage failover giveback -ofnode target_node_name</block>
+  <block id="05648a23fc430a3dcc4fb4c1fbb040cd" category="list-text">ネットワーク用にスロット 3 または 7 を使用している場合は、「 storage port modify -node __ &lt;node name&gt; ____port_&lt;port name&gt; __ -mode network 」コマンドを使用して、ネットワーク用にスロットを変換します。</block>
+  <block id="2d881a27ee894664c2e7cc8d1795b104" category="list-text">ストレージ I/O モジュールを設置した場合は、 NS224 シェルフを設置してケーブル接続します（を参照）<block ref="8b1d41e5fd14f554e8b3490e0dfd47ae" category="inline-link-rx"></block>。</block>
+  <block id="3e0887648c519f4a3c16a1c61b2e8ec3" category="section-title">オプション 2 ：オープンスロットのないシステムに I/O モジュールを追加する</block>
+  <block id="3a94a10e2dbe887d30ec12c0e2d2170d" category="paragraph">フル装備のシステムに 1 つ以上の I/O モジュールを取り付けるには、システム内の既存の NIC またはストレージモジュールを 1 つ以上取り外す必要があります。</block>
+  <block id="cebb0168d5bfd94a91f0da51501ba6b8" category="list-text">実行する作業</block>
+  <block id="e818b574f8a890f6c21405d9164bb6ef" category="cell">置換 ...</block>
+  <block id="d6737fd4fc838900efec68220d9b62d5" category="paragraph">ポート数が同じ NIC I/O モジュール</block>
+  <block id="c5cb03fb8ac84e8ed0867902373368c5" category="paragraph">LIF は、コントローラモジュールがシャットダウンすると自動的に移行されます。</block>
+  <block id="5b4da5fe899903c4fb7ea38cdcd59059" category="paragraph">ポート数が少ない NIC I/O モジュール</block>
+  <block id="92fa459a77121184c537af9ee2b58dff" category="paragraph">該当する LIF を別のホームポートに完全に再割り当てします。を参照してください<block ref="85291e79b86f275650bb0fb4e90a39e9" category="inline-link-rx"></block> System Manager を使用して LIF を完全に移動する方法については、を参照してください。</block>
+  <block id="f83c48dd124994c4062d124a835da954" category="paragraph">ストレージ I/O モジュールを搭載した NIC I/O モジュール</block>
+  <block id="2640f01f139d87de119d4e0ddc369433" category="paragraph">System Manager を使用して、 LIF を別のホームポートに完全に移行します。手順については、を参照してください<block ref="85291e79b86f275650bb0fb4e90a39e9" category="inline-link-rx"></block>。</block>
+  <block id="8e648aad53aea9ad413490f5a04b11f4" category="inline-link">I/O モジュールの取り外しまたは交換</block>
+  <block id="3850b2c54cfdfa08b9878c1a0cd9251f" category="paragraph"><block ref="3850b2c54cfdfa08b9878c1a0cd9251f" category="inline-link-rx"></block></block>
+  <block id="d401d7f8340a560f025bd48c41cf9fd1" category="paragraph"><block ref="d401d7f8340a560f025bd48c41cf9fd1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9e64f9f7a827c26fc2d5c89975330a4c" category="image-alt">凡例アイコン 01</block>
+  <block id="658f167c4900ed24167db8a2c8ec0dae" category="list-text">I/O モジュールをターゲットスロットに取り付けます。</block>
+  <block id="af7e67afbae0d677789152f59d9ac82d" category="list-text">交換用 I/O モジュールが NIC の場合は、モジュールをデータスイッチにケーブル接続します。</block>
+  <block id="65c5b494e6d3420e2beeee5028389f58" category="list-text">追加した場合：</block>
+  <block id="7589522c1c45d0b3dfdf43c267a456bc" category="cell">I/O モジュールの種類</block>
+  <block id="85fd23f64df6d6e4c54bd55af7b58c44" category="paragraph">スロット 3 または 7 の NIC モジュール</block>
+  <block id="86cf1151f6e6623b20e6f28b8eb846ea" category="paragraph">各ポートには 'storage port modify -node * _&lt;node name&gt; ____port * _&lt;port name&gt; ____-mode network ’コマンドを使用します</block>
+  <block id="3cb2d50b71ca167f282d29cc4a2f763f" category="paragraph">ストレージモジュール</block>
+  <block id="907b4c195a2387f3ef35df10e9b1a0eb" category="paragraph">の説明に従って、 NS224 シェルフを設置してケーブル接続します<block ref="71b38ceec90716734f26b1c06463d904" category="inline-link-rx"></block>。</block>
+  <block id="ee509c1ffca70e9f258ad73c3116cf37" category="doc">オンボード暗号化キーのシャットダウン前チェック - AFF A900</block>
+  <block id="127cae73d2b4d7758b4c0a0e3f49ba5f" category="section-title">ONTAP 9.6 以降</block>
+  <block id="d994e1a1688cb6d7b8e264a209d763d6" category="doc">シャーシを交換してください - AFF A900</block>
+  <block id="e10b0a89639d4224f22325c89418ef31" category="paragraph">シャーシを交換するには、電源装置、ファン、コントローラモジュール、 I/O モジュール、 DCPM モジュールを取り外す必要があります。 障害のあるシャーシから USB LED モジュールを取り外し、障害のあるシャーシを装置ラックまたはシステムキャビネットから取り外し、交換用シャーシを所定の位置に取り付けて、交換用シャーシにコンポーネントを取り付けます。</block>
+  <block id="6190b44ff7781327c201ca8dcd27535f" category="doc">設定の復元と確認 - AFF A900</block>
+  <block id="3f5fa7ca9a9d6129ce081b64cc104ab6" category="paragraph">シャーシの交換を完了するには、特定のタスクを実行する必要があります。</block>
+  <block id="32574a63619099277d431cfd465fea0b" category="list-text">シャーシの HA 状態を設定します :'ha-config modify chassis_ha-state _</block>
+  <block id="3f91c59c59a1243cb3f176daf3c9c054" category="list-text">ノードを通常動作に戻します。</block>
+  <block id="e81993a1d153ae6594cc7e0070093d6a" category="doc">ハードウェア AFF A900 を移動して交換します</block>
+  <block id="a30a15e944afabde046385685fec252c" category="paragraph">シャーシを交換するには、古いシャーシからコンポーネントを取り外し、交換用シャーシに取り付ける必要があります。</block>
+  <block id="69c3b8cc95d3690f8df22cd6f70a3b78" category="inline-link">アニメーション -- PSU の取り外し / 取り付け</block>
+  <block id="ad71a251f1090787b51bd219c02d379d" category="paragraph"><block ref="ad71a251f1090787b51bd219c02d379d" category="inline-link-rx"></block></block>
+  <block id="ba60b428b4c093e111c8f00b60fc4a80" category="image-alt">DRW a900 は、 PSU モジュールの取り付けを取り外します</block>
+  <block id="f8bbfa91b8a4b93032702c5a71aa7e32" category="inline-link">アニメーション -- ファンの取り外し / 取り付け</block>
+  <block id="39ebb81ec4bc3481b327f0b2bad60779" category="paragraph"><block ref="39ebb81ec4bc3481b327f0b2bad60779" category="inline-link-rx"></block></block>
+  <block id="21f8e15996afff8db254da85ba3f4ea7" category="paragraph">NVRAM モジュールを含む古いシャーシから I/O モジュールを取り外すには、特定の手順を実行します。NVRAM モジュールを新しいシャーシに移動する場合、 NVRAM モジュールに FlashCache モジュールがある場合は、そのモジュールを取り外す必要はありません。</block>
+  <block id="395837aab4ef3dc67a1a036ea36a4ab6" category="inline-link">アニメーション -- I/O モジュールの取り外し / 取り付け</block>
+  <block id="1e629626e4f50a07ffe66481fa10f8c1" category="paragraph"><block ref="1e629626e4f50a07ffe66481fa10f8c1" category="inline-link-rx"></block></block>
+  <block id="83ad35310193d29fe92750532a0d17a9" category="inline-link">アニメーション -- DCPM の取り外し / 取り付け</block>
+  <block id="5757c4fa293d78859e3241eec38842ba" category="paragraph"><block ref="5757c4fa293d78859e3241eec38842ba" category="inline-link-rx"></block></block>
+  <block id="ba076cc47bbe54dead2d30165db372b5" category="image-alt">DRW a900 は NV バッテリを取り外します</block>
+  <block id="fca2db06968a2c5b098ea99b564b6922" category="inline-link">アニメーション -- USB の取り外し / 取り付け</block>
+  <block id="4c01ab46774b96e91172ab27402aeb69" category="paragraph"><block ref="4c01ab46774b96e91172ab27402aeb69" category="inline-link-rx"></block></block>
+  <block id="8da7df8c5a74dcac7b5b9a5067e72313" category="image-alt">DRW a900 は LED モードを交換してください</block>
+  <block id="6b058f6aab05ab39cfb929fd3a13e5ad" category="paragraph">モジュールをイジェクトします。</block>
+  <block id="fdbcf566dc8794b2a2c635f286edfa2b" category="paragraph">シャーシから引き出します。</block>
+  <block id="6e7d5178a758393b97e367ca3da27d68" category="list-text">各ノードがブートを開始したら、「 Press Ctrl-C for Boot Menu 」というメッセージが表示されたら、 Ctrl+C キーを押してブートプロセスを中断します。</block>
+  <block id="9cc3abf99d341ddf4468a9377444f16d" category="doc">障害のあるコントローラ AFF A900 をシャットダウンします</block>
+  <block id="2aba05ee9a4093e5315b48903c27d988" category="doc">I/O モジュールを交換してください - AFF A900</block>
+  <block id="915d49d9990f69f4d3152ddfea76d324" category="inline-link">アニメーション -- I/O モジュールの取り外し / 取り付け</block>
+  <block id="a3dc30a4e54f26f8f954a7d4351ac551" category="paragraph"><block ref="a3dc30a4e54f26f8f954a7d4351ac551" category="inline-link-rx"></block></block>
+  <block id="a8869e142255ff80f45be4817f469087" category="section-title">手順 3 ： I/O モジュールの交換後にコントローラをリブートします</block>
+  <block id="bbee62c98bf71c87d77b3d48e5cacaff" category="paragraph">I/O モジュールを交換したら、コントローラモジュールをリブートする必要があります。</block>
+  <block id="8c2fb795497456b969ba9307ef6f84c8" category="list-text">LOADER プロンプトで、ノードをリブートします： bye _</block>
+  <block id="b40d85db7a9de91cff53c5663c76daaf" category="list-text">ノードを通常動作に戻します。 storage failover giveback -ofnode impaired_node_name</block>
+  <block id="65dc2e566ca79200d7c70bef0b947464" category="doc">OKM 、 NSE 、および NVE - AFF A900 のブートメディア交換後の手順</block>
+  <block id="732e0dcc80e3feaced44d9e5a666c2bc" category="list-text">OKM 、 NSE 、または NVE 構成のリストアに使用するセクションを決定します。 NSE または NVE がオンボードキーマネージャとともに有効になっている場合、この手順の最初に取得した設定をリストアする必要があります。</block>
+  <block id="a18eb452b8ba972a5f3a705a455fac35" category="list-text">LOADER プロンプトで boot_ontap コマンドを使用してノードをブートします。</block>
+  <block id="fda0c6642b160b8cfe389e0b2a5d9c56" category="list-text">LOADER プロンプトで、 boot_ontap menu コマンドを入力します。</block>
+  <block id="9a35117ce5f367da3a3ca5116d861d73" category="list-text">ブート・メニューで ' 非表示のコマンド 'recover_onboard keymanager_' を入力し ' プロンプトで y と応答します</block>
+  <block id="817f0c2c0731cc57f0fb5c0088d66a84" category="list-text">バックアップ・データの入力を求められたら、この手順の最初にキャプチャしたバックアップ・データを貼り付けます。security key-manager backup show コマンドまたは security key-manager onboard show-backup コマンドの出力を貼り付けます。</block>
+  <block id="bd925fbdb9cf654c2d3eb13ad0bf2458" category="admonition">このデータは、 security key-manager backup show コマンドまたは security key-manager onboard show-backup コマンドの出力になります。</block>
+  <block id="1491d378fbbc2d9a6048e5b9b67a396a" category="paragraph">バックアップデータを入力します。</block>
+  <block id="da0c8baa25fcee791ffa412ec90044ca" category="list-text">パートナーノードにコンソールケーブルを接続し、 admin としてログインします。</block>
+  <block id="d56eff580ae48ab39a09d9a52b4e0012" category="list-text">storage failover giveback -fromnode local-only -cfo-aggregates true コマンドを使用して、 CFO アグリゲートのみをギブバックします。</block>
+  <block id="56b9aa57eb07c87d93d8f36e42537891" category="list-text">CIFS セッションが開いているためにコマンドが失敗する場合は、 CIFS セッションを閉じる方法をお客様に確認します。</block>
+  <block id="99cf22e04f567c5375349f8aa14becd4" category="list-text">パートナーの準備ができていないためにコマンドが失敗した場合は、 NVRAMs が同期されるまで 5 分待ちます。</block>
+  <block id="4d2b3834d59169dcbb17afc3c699e3ac" category="list-text">NDMP 、 SnapMirror 、または SnapVault のプロセスが原因でコマンドが失敗する場合は、そのプロセスを無効にします。詳細については、該当するコンテンツを参照してください。</block>
+  <block id="4f4dc469cf90094fa617cfc9fbd54127" category="list-text">ギブバックが完了したら、 storage failover show コマンドと storage failover show-giveback コマンドを使用して、フェイルオーバーとギブバックのステータスを確認します。</block>
+  <block id="0ca120792c1da0e7f9613ff316afb1bf" category="list-text">security key-manager onboard sync コマンドを実行し、プロンプトが表示されたらパスフレーズを入力します。</block>
+  <block id="c58ae875af45a4be51e14080108983b6" category="list-text">security key-manager key query コマンドを入力して、オンボード・キー・マネージャに格納されているすべてのキーの詳細を表示し、すべての認証キーの「 restored 」列 = 「 yes / true 」であることを確認します。</block>
+  <block id="4cbb5f62935a5a6181b7351f6ebea2b8" category="list-text">storage failover giveback -fromnode local コマンドを使用してターゲットノードをギブバックします。</block>
+  <block id="54c7d0a15d0b9d4865bb65094824a369" category="list-text">storage failover show コマンドを使用して、ギブバックのステータスを確認します。ギブバックの完了が報告されたら 3 分待ちます。</block>
+  <block id="a69e3df3fc089f72b8d4244ee2e280dc" category="list-text">クラスタシェルプロンプトで、 net int show -is-home false コマンドを入力し、ホームノードおよびポートにない論理インターフェイスを表示します。</block>
+  <block id="01644ff2aec9678b64ae01d076703f1a" category="paragraph">いずれかのインターフェイスが「 false 」と表示されている場合は、 net int revert コマンドを使用して、これらのインターフェイスをホームポートに戻します。</block>
+  <block id="db7ef1cc9d8937ba84d376a5424078cb" category="list-text">コンソールケーブルをターゲットノードに接続し、 version -v コマンドを実行して ONTAP のバージョンを確認します。</block>
+  <block id="681ec8b91432585ef548a814edeadbb6" category="paragraph">手順 7 に進みます。</block>
+  <block id="894c5814238c15162364a7dd224a5a59" category="list-text">コンソールケーブルをパートナーノードに移動し、 storage failover giveback -fromnode local-only -cfo-aggregates true local コマンドを使用してターゲットノードストレージをギブバックします。</block>
+  <block id="b17e311ccd8e21ff73506e54f24b6cfd" category="list-text">3 分待ってから、 storage failover show コマンドを使用してフェイルオーバーステータスを確認します。</block>
+  <block id="bdd54bf36fdd86edc52e8ade7cb11376" category="list-text">クラスタシェルプロンプトで storage encryption disk show を使用して出力を確認します。</block>
+  <block id="255583ddc95e873b21d34d9f4e8d7e3b" category="list-text">security key-manager key query コマンドを使用して、キー管理サーバに格納されている認証キーのキー ID を表示します。</block>
+  <block id="5af23d53e03e2919ad84a3f9112823ac" category="list-text">'Key Manager type`=external' および 'restored' カラム = が 'yes/true' 以外の場合は 'security key-manager external restore コマンドを使用して認証キーのキー ID を復元します</block>
+  <block id="3796dde1eb4771fdc94b7b6dd6b04cbf" category="list-text">'Key Manager type`=onboard ' および 'restored' カラム = 'yes/true' 以外の場合は、 security key-manager onboard sync コマンドを使用して Key Manager タイプを再同期します。</block>
+  <block id="6012de004f4bd50d98163ac921889523" category="doc">LED USB モジュールを交換してください - AFF A900</block>
+  <block id="6f2af58da87b0cd7d98ca72ff52c9044" category="paragraph">LED USB モジュールは、コンソールポートおよびシステムステータスへの接続を提供します。このモジュールの交換にはツールは必要なく、サービスを中断することもありません。</block>
+  <block id="807c4e7b40aa97c700fd63bd5a5477a6" category="section-title">手順 1 ： LED USB モジュールを交換します</block>
+  <block id="bb1cec932e287b2c9902d440275cc2db" category="inline-link">アニメーション -- LED - USB モジュールの取り外し / 取り付け</block>
+  <block id="3273f7903ae0e65905d97177e51aa3c5" category="paragraph"><block ref="3273f7903ae0e65905d97177e51aa3c5" category="inline-link-rx"></block></block>
+  <block id="f0bf4654c0d8dcfe407c27af203be1d1" category="paragraph">USB LED モジュール</block>
+  <block id="9bfe8c74a54e0b8aed08814ba2231085" category="section-title">手順 2 ：障害が発生したコンポーネントを返却する</block>
+  <block id="3d583022c2a0e3f44141400e25a3113d" category="list-text"><block ref="3d583022c2a0e3f44141400e25a3113d" category="inline-link-macro-rx"></block></block>
+  <block id="e95c782f97493fda4a0794b55f88c5be" category="list-text"><block ref="e95c782f97493fda4a0794b55f88c5be" category="inline-link-macro-rx"></block></block>
+  <block id="280316afc56c30d6861e875ee64f9d8b" category="list-text"><block ref="280316afc56c30d6861e875ee64f9d8b" category="inline-link-macro-rx"></block></block>
+  <block id="949aee381e5f51f7a320f50e84a45f8b" category="summary">ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定してから、システムレベルの診断を実行します。</block>
+  <block id="d00782da692bd9ebe9130b9b13318aa8" category="doc">システム構成を復元して確認します（ AFF A900 ）</block>
+  <block id="112780161ef5a50135cbf06334ba89f7" category="paragraph">ハードウェアの交換が完了したら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステム設定を再設定してから、システムレベルの診断を実行します。</block>
+  <block id="0bc5eabc4d9a2653aeb37e28dbc88023" category="list-text">bootmedia は、システムのブートデバイスです。</block>
+  <block id="f99099d921a94e615e81372078728ceb" category="list-text">env は、マザーボード環境です。</block>
+  <block id="8d74bf843a4e925d832b6c65ddb0d9f4" category="list-text">nvram は、不揮発性 RAM です。</block>
+  <block id="be456090fcc449175c4c76b6d62f9d00" category="list-text">nvmem は、 NVRAM とシステムメモリの組み合わせです。</block>
+  <block id="a515f32aa015655942ca1581302ab37b" category="list-text">sas は、ディスクシェルフに接続されていない Serial Attached SCSI デバイスです。</block>
+  <block id="17a7e2d09b147ccf384d93f2c83b9fb8" category="list-text">選択したデバイスで使用可能なテストを表示します。「 sldiag device show -dev dev_name</block>
+  <block id="31070c8cf1e388bd21db5f2c2af292f2" category="paragraph">dev_name には、前の手順で特定したポートとデバイスのいずれかを指定します。</block>
+  <block id="55baf4300535c79a4f5b9ac41dae6201" category="list-text">出力を確認し、必要に応じて実行するテストのみを選択します。「 sldiag device modify -dev dev_name -selection only</block>
+  <block id="f90119b77ddaca169e1354ec7fd99777" category="list-text">選択したテスト「 sldiag device run -dev dev_name 」を実行します</block>
+  <block id="ea47bdc6f929f84f5f88b61f7fa170d2" category="list-text">失敗したテストがないことを確認します :sldiag device status -dev dev_name -long-state failed</block>
+  <block id="23b8b7f4acfc70b88b8d4648fc002f73" category="list-text">デバイスに対する個々のテストを一覧表示します。「 sldiag device show -dev dev_name 」</block>
+  <block id="1aebafba3153f541511efccc3f81ec62" category="list-text">シャーシ内のコントローラモジュールの数に応じて、電源装置をオフにするか、オンのままにします。+ 他のコントローラモジュールに電力を供給するために、電源装置をオンのままにします。</block>
+  <block id="f0c5bf1231304ef8daefc44f7c8c3c2c" category="list-text">対象となるコントローラモジュールをブートし、ブートメニューを表示するよう求められたら Ctrl+C キーを押して、ブートを中断します。+ コントローラモジュールを完全に取り付けると、モジュールがブートします。</block>
+  <block id="f8ef0c4875d120fc216f0515acf0076d" category="doc">キャッシングモジュールを交換するか、 FAS9500 コアダンプモジュールを追加 / 交換します</block>
+  <block id="790fb1451f2bc27a03777b1339883a05" category="list-text">キャッシングモジュールのホットスワップの手順については、を参照してください <block ref="8914e84bf3c4081b62e360b2117530ab" category="inline-link-macro-rx"></block>。</block>
+  <block id="8d818b7912f2cdd88457272a27b2e1ed" category="paragraph">&lt;stdin&gt; の未解決のディレクティブ：： ./_include/shutdown_any_MCC_supported[]</block>
+  <block id="38e46d734f6cf3d9cd7ff8074eb7a98b" category="section-title">X9170a コアダンプモジュールを追加または交換します</block>
+  <block id="1c69f6fe4055b6da922172199148a620" category="list-text">コアダンプモジュールの前面にあるテラコッタリリースボタンを押します。</block>
+  <block id="6a0d150a4b5e517de144f7ef6bc66258" category="section-title">FRU 交換後、コントローラをリブートしています</block>
+  <block id="eb6b929319fcd4b0bfa86e1b41c4a0aa" category="section-title">2 ノード MetroCluster 構成でのアグリゲートのスイッチバック</block>
+  <block id="02c2cc4184073e3a32ac2cad0adca3ad" category="section-title">AFF A900 HA ペアのホットアドシェルフをケーブル接続します</block>
+  <block id="e859983e28521134b4429e2ad40d035f" category="paragraph">ストレージの追加が必要な場合は、 AFF A900 HA ペアに最大 3 台の NS224 ドライブシェルフを（合計 4 台のシェルフに）ホットアドできます。</block>
+  <block id="e1f00a018e7f4f086a0bcbc7eccb98fb" category="list-text">この手順では、 HA ペアに既存の NS224 シェルフが少なくとも 1 台あること、およびシェルフを最大 3 台までホットアドすることを前提としています。</block>
+  <block id="6df1d9010eb2d59922ff15832ca8a435" category="list-text">HA ペアに既存の NS224 シェルフが 1 台しかない場合、この手順では、シェルフが各コントローラ上の RoCE 対応 100GbE I/O モジュール 2 台にケーブル接続されていると想定しています。</block>
+  <block id="71c9cd1d9d6cb72f550738fcffdcb856" category="list-text">ホットアドする NS224 シェルフが HA ペアの 2 台目の NS224 シェルフになる場合は、次の手順を実行します。</block>
+  <block id="19d712485bae914b4efa24b39f6eba7a" category="list-text">シェルフ NSM A のポート e0a をコントローラ A のスロット 10 のポート A （ e10a ）にケーブル接続します。</block>
+  <block id="ec7d41675ec0ec1148aff27f4e766941" category="list-text">シェルフ NSM A ポート e0b をコントローラ B のスロット 2 のポート b （ e2b ）にケーブル接続します。</block>
+  <block id="d9547d2852203d7c517230eb1c874611" category="list-text">シェルフ NSM B ポート e0a をコントローラ B のスロット 10 のポート A （ e10A ）にケーブル接続します。</block>
+  <block id="58848607da5220d46a743527d7c9fb0b" category="list-text">シェルフ NSM B のポート e0b をコントローラ A のスロット 2 のポート b （ e2b ）にケーブル接続します。</block>
+  <block id="3be444e253b66e84c2a7ac44cc632d2f" category="paragraph">次の図は、 2 台目のシェルフ（および 1 台目のシェルフ）のケーブル接続を示しています。</block>
+  <block id="c01b7e73b5184f9332f2b3847a1e8a46" category="image-alt">DRW ns224 a900 2 シェルフ</block>
+  <block id="63a52597f01feafa7bac4f564671ef46" category="list-text">ホットアドする NS224 シェルフが HA ペアの 3 台目の NS224 シェルフになる場合は、次の手順を実行します。</block>
+  <block id="2ee333f6f9a00c250ae9813502d4fb07" category="list-text">シェルフ NSM A のポート e0b をコントローラ B のスロット 11 のポート b （ e11b ）にケーブル接続します。</block>
+  <block id="3eb8ce414e6e8d5e19024a3779a87e42" category="list-text">シェルフ NSM B のポート e0b をコントローラ A のスロット 11 のポート b （ e11b ）にケーブル接続します。</block>
+  <block id="e3c4294c5b88b3a64211de084bc7bd2b" category="paragraph">次の図は、 3 台目のシェルフのケーブル接続を示しています。</block>
+  <block id="1cc4d52d52b1d439dc272f9193de4eee" category="image-alt">DRW ns224 a900 3 シェルフ</block>
+  <block id="ab4ee3b5165983371f54b55e9efd77af" category="list-text">ホットアドする NS224 シェルフが HA ペアの 4 台目の NS224 シェルフになる場合は、次の手順を実行します。</block>
+  <block id="855fdf1352556d56634d839385addb1b" category="list-text">シェルフ NSM A のポート e0a をコントローラ A のスロット 11 のポート A （ e11a ）にケーブル接続します。</block>
+  <block id="ee0a734e2f0193a65c1da9b82e1749c4" category="list-text">シェルフ NSM B ポート e0a をコントローラ B のスロット 11 のポート A （ e11a ）にケーブル接続します。</block>
+  <block id="d49e45adf2352258d2679cda6d7594c5" category="list-text">シェルフ NSM B のポート e0b をコントローラ A のスロット 1 のポート b （ e1b ）にケーブル接続します。</block>
+  <block id="b434465fa52d0f783c7fd0f8d4ce72b7" category="paragraph">次の図は、 4 台目のシェルフのケーブル接続を示しています。</block>
+  <block id="123ecdcab7b962064d8bc5e084e22a78" category="image-alt">DRW ns224 a900 4 シェルフ</block>
+  <block id="f75034e47d21dd1b20dc99cece2805a1" category="section-title">FAS500f 、 AFF A250 、または ASA A250HA ペアのホットアドシェルフをケーブル接続します</block>
+  <block id="99b507afb1c0c42dce501be1e3c24428" category="paragraph">ストレージの追加が必要になったときは、 NS224 ドライブシェルフを FAS3500f 、 AFF A250 、または ASA A250HA ペアにホットアドできます。</block>
+  <block id="ec5e81cea4c5ee83d635778e86350e80" category="sidebar">AFF A900 の略</block>
+  <block id="2839991accead15964b7c2bab07a5796" category="sidebar">MetroCluster ファイバチャネル構成</block>
+  <block id="4dfce048960b478e43e915d68b452801" category="sidebar">I/O モジュールを追加します</block>
+  <block id="e908ea7f834bb4a51a3435068459558e" category="sidebar">デステージパワーコントローラモジュール</block>
+  <block id="836b0691797fbb6c52f16e5f3f673be6" category="sidebar">LED-USB モジュール</block>
+  <block id="005350cc942b102938a15599d0a214e5" category="sidebar">NVRAM モジュールと NVRAM DIMM</block>
+  <block id="4b4ef0c79b0398f75f85815a11b15104" category="sidebar">オンボードの暗号化キーがないかどうかをシャットダウン前にチェックします</block>
+  <block id="4991af82e8fdfcd13eef2c656f16d4c4" category="sidebar">障害のあるコントローラをシャットダウンします</block>
+  <block id="023ccb0c069a257d58d5cbad4ec6fbf9" category="sidebar">ブートイメージを転送し、障害が発生したブートメディアを交換します</block>
+  <block id="d5e04348de632d7c88520b90cf79f1fa" category="sidebar">リカバリイメージをブートします</block>
+  <block id="2e8840df8a206cd4e5aa7e0fa02b1cf7" category="sidebar">ハードウェアを交換します</block>
+  <block id="fa526b254f42bdec5706995cc5868952" category="sidebar">構成をリストアおよび検証する</block>
+  <block id="043f87552b799b527c2dd72b0313e404" category="sidebar">コントローラモジュールハードウェアを交換します</block>
+  <block id="718b8a88a314d56b344c3895d896ab2a" category="sidebar">システム構成をリストアおよび検証します</block>
+  <block id="3182807165615fb651163be98cb522b4" category="sidebar">デステージコントロールパワーモジュール</block>
 </blocks>

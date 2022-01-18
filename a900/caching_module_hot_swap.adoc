@@ -1,0 +1,149 @@
+---
+permalink: a900/caching_module_hot_swap.html 
+sidebar: sidebar 
+keywords: FAS9000 
+summary: NVMe SSD FlashCache モジュール \ （ FlashCache またはキャッシングモジュール \ ）は、 FAS9000 システムのスロット 6 の NVRAM10 モジュールの前面にのみ配置されています。ONTAP 9.4 以降では、サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。 
+---
+= キャッシングモジュール FAS9500 をホットスワップします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NVMe SSD FlashCache モジュール（ FlashCache またはキャッシングモジュール）は、 FAS9000 システムのスロット 6 の NVRAM10 モジュールの前面にのみ配置されています。ONTAP 9.4 以降では、サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。
+
+状況に応じて、ストレージシステムが次に示す特定の条件を満たしている必要があります。
+
+* 取り付けるキャッシングモジュールに適したオペレーティングシステムが必要です。
+* キャッシュ容量をサポートする必要があります。
+* 交換用キャッシングモジュールの容量は、障害が発生したキャッシングモジュールと同じでなければなりませんが、サポートされている別のベンダーのキャッシングモジュールを使用することもできます。
+* ストレージシステムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。
++
+.. 接地対策がまだの場合は、自身で適切に実施します。
+.. スロット 6 で、キャッシングモジュールの前面にある黄色の警告 LED が点灯している、障害が発生したキャッシングモジュールの場所を確認します。
+.. 交換用のキャッシングモジュールスロットを次のように準備します。
++
+... ONTAP 9.7 以前：
++
+.... ターゲットノードのキャッシングモジュールの容量、パーツ番号、およびシリアル番号を記録します：「 system node run local sysconfig -av 6 」
+.... admin 特権レベルで、交換用のターゲット NVMe スロットを準備し、続行するかどうかを確認するプロンプトが表示されたら「 y 」と入力します。 system controller slot module replace-node node_name -slot slot_number 次のコマンドは、 node1 のスロット 6-2 を交換用に準備し、交換しても安全であることを示すメッセージを表示します。
++
+[listing]
+----
+::>`system controller slot module replace -node node1 -slot 6-2`
+
+Warning: NVMe module in slot 6-2 of the node node1 will be powered off for replacement.
+Do you want to continue? (y|n): `y`
+
+The module has been successfully powered off.  It can now be safely replaced.
+After the replacement module is inserted, use the "system controller slot module insert" command to place the module into service.
+----
+.... system controller slot module show コマンドを使用して、スロットのステータスを表示します。
++
+交換が必要なキャッシングモジュールの画面出力に、 NVMe スロットのステータスに「 waiting for replacement 」と表示されます。
+
+
+
+... ONTAP 9.8 以降の場合：
++
+.... ターゲットノードのキャッシングモジュールの容量、パーツ番号、およびシリアル番号を記録します：「 system node run local sysconfig -av 6 」
+.... admin 特権レベルで、削除するターゲット NVMe スロットを準備し、続行するかどうかを確認するメッセージが表示されたら「 y 」と応答します。「 system controller slot module remove -node node_name -slot slot_number 」次のコマンドは、 node1 のスロット 6-2 を取り外し用に準備し、安全であることを示すメッセージを表示します。
++
+[listing]
+----
+::>`system controller slot module remove -node node1 -slot 6-2`
+
+Warning: SSD module in slot 6-2 of the node node1 will be powered off for removal.
+Do you want to continue? (y|n): `y`
+
+The module has been successfully removed from service and powered off. It can now be safely removed.
+----
+.... system controller slot module show コマンドを使用して、スロットのステータスを表示します。
++
+交換が必要なキャッシングモジュールの画面出力に、 NVMe スロットのステータスが電源オフと表示されます。
+
+
+
+
+
+
+
++
+
+NOTE: を参照してください https://docs.netapp.com/ontap-9/topic/com.netapp.nav.cr/home.html["コマンドマニュアルページ"] 詳細については、お使いのバージョンの ONTAP を参照してください。
+
++
+.. キャッシングモジュールを取り外します。
++
+image::../media/drw_9000_remove_flashcache.gif[DRW 9000 FlashCache を削除します]
+
++
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+
+
+
+ a| 
+オレンジ色のリリースボタン。
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+
+
+
+ a| 
+キャッシングモジュールのカムハンドル
+
+|===
++
+... キャッシングモジュールの前面にあるテラコッタリリースボタンを押します。
++
+
+IMPORTANT: 数字とアルファベットが印字された I/O カムラッチを使用してキャッシングモジュールをイジェクトしないでください。数字とアルファベットが印字された I/O カムラッチを使用すると、キャッシングモジュールではなく NVRAM10 モジュール全体がイジェクトされます。
+
+... キャッシングモジュールが NVRAM10 モジュールから少し引き出されるまでカムハンドルを回転させます。
+... カムハンドルを手前にゆっくりと引いて、 NVRAM10 モジュールからキャッシングモジュールを取り外します。
++
+キャッシングモジュールを NVRAM10 モジュールから取り外す際は、必ずキャッシングモジュールを手で支えてください。
+
+
+
+.. キャッシングモジュールを取り付けます。
++
+... キャッシングモジュールの端を NVRAM10 モジュールの開口部に合わせます。
+... キャッシングモジュールをゆっくりとベイに押し込んで、カムハンドルをはめ込みます。
+... 所定の位置に固定されるまでカムハンドルを回転させます。
+
+
+.. system controller slot module insert コマンドを使用して、次のように交換用キャッシングモジュールをオンラインにします。
++
+次のコマンドでは、 node1 のスロット 6-2 の電源投入の準備を行い、電源がオンになったことを示すメッセージを表示します。
+
++
+[listing]
+----
+::>`system controller slot module insert -node node1 -slot 6-2`
+
+Warning: NVMe module in slot 6-2 of the node localhost will be powered on and initialized.
+Do you want to continue? (y|n): `y`
+
+The module has been successfully powered on, initialized and placed into service.
+----
+.. system controller slot module show コマンドを使用して、スロットのステータスを確認します。
++
+コマンド出力でスロット 6-1 または 6-2 のステータスが電源オンであること、および動作可能であることを確認してください。
+
+.. 交換用キャッシングモジュールがオンラインで認識されていることを確認し、黄色の警告 LED が点灯していないことを目視で確認します。「 sysconfig -av slot_number 」
++
+
+NOTE: キャッシングモジュールを別のベンダーのキャッシングモジュールに交換すると、コマンド出力に新しいベンダー名が表示されます。
+
+.. 次のものが含まれます。 ../ _ 包含 / Complete_RMA_step.adoc[]
+
+
+

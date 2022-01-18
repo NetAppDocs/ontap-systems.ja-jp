@@ -21,12 +21,12 @@ summary: ハードウェアの交換が完了してメンテナンスモード�
 これらの手順のコマンドを正しいシステムに適用することが重要です。
 
 * replacement _node は、この手順で障害ノードと交換した新しいノードです。
-* healthy_node は、 _replacement _node の HA パートナーです
+* healthy_node は、 _replacement _node の HA パートナーです。
 
 
 .手順
 . _replacement _node に LOADER プロンプトが表示されない場合は、システムを停止して LOADER プロンプトを表示します。
-. 正常なノードで、システム時刻「日付」を確認します
+. _healthy_node で、システム時刻「 show date 」を確認します
 +
 日付と時刻は GMT で表示されます。
 

@@ -105,7 +105,7 @@ controller_A_1::> metrocluster heal -phase aggregates
 [Job 130] Job succeeded: Heal Aggregates is successful.
 ----
 +
-修復が拒否された場合は '-override-vetoes パラメータを指定して MetroCluster heal' コマンドを再実行できますこのオプションパラメータを使用すると、修復処理を妨げるソフトな拒否はすべて無視されます。
+修復が拒否された場合は '-override-vetoes パラメータを指定して MetroCluster heal コマンドを再実行できますこのオプションパラメータを使用すると、修復処理を妨げるソフトな拒否はすべて無視されます。
 
 . MetroCluster operation show コマンドを使用して、処理が完了したことを確認します。
 +
@@ -202,7 +202,7 @@ controller_A_1::> metrocluster heal -phase aggregates
 [Job 130] Job succeeded: Heal Aggregates is successful.
 ----
 +
-修復が拒否された場合は '-override-vetoes パラメータを指定して MetroCluster heal' コマンドを再実行できますこのオプションパラメータを使用すると、修復処理を妨げるソフトな拒否はすべて無視されます。
+修復が拒否された場合は '-override-vetoes パラメータを指定して MetroCluster heal コマンドを再実行できますこのオプションパラメータを使用すると、修復処理を妨げるソフトな拒否はすべて無視されます。
 
 . MetroCluster operation show コマンドを使用して、処理が完了したことを確認します。
 +

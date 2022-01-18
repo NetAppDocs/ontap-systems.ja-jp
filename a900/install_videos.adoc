@@ -1,0 +1,29 @@
+---
+permalink: a900/install_videos.html 
+sidebar: sidebar 
+keywords: AFF A900 
+summary: この 2 つのビデオでは、システムの設置とケーブル接続の方法を紹介し、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を示します。 
+---
+= ビデオの手順 - AFF A900
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を紹介するビデオを 2 種類紹介します。
+
+
+
+== ビデオ 1 ：ハードウェアの設置とケーブル接続
+
+次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
+
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4c222e90-864b-4435-9405-adf200112f3e["アニメーション -- AFF A900 の設置とセットアップの手順"^]
+
+
+
+== ビデオ 2 ：エンドツーエンドのソフトウェア設定の実行
+
+次のビデオでは、 ONTAP 9.2 以降を実行するシステムのエンドツーエンドのソフトウェア設定を示します。
+
+https://www.youtube.com/embed/WAE0afWhj1c?rel=0["ネットアップのビデオ： Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2"^]

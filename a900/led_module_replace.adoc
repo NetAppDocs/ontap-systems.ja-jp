@@ -1,0 +1,67 @@
+---
+permalink: a900/led_module_replace.html 
+sidebar: sidebar 
+keywords: LED USB module,replacing,hot-swapping,LED USB module,non-disruptive replacement,LED USB module 
+summary: サービスを中断することなく LED USB モジュールを交換できます。 
+---
+= LED USB モジュールを交換してください - AFF A900
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LED USB モジュールは、コンソールポートおよびシステムステータスへの接続を提供します。このモジュールの交換にはツールは必要なく、サービスを中断することもありません。
+
+
+
+== 手順 1 ： LED USB モジュールを交換します
+
+.手順
+. 古い LED USB モジュールを取り外します。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eb715462-cc20-454f-bcf9-adf9016af84e["アニメーション -- LED - USB モジュールの取り外し / 取り付け"^]
+
++
+image::../media/drw_a900_remove_replace_LED_mod.png[DRW a900 は LED モードを交換してください]
+
++
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+ a| 
+ロックボタン
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+ a| 
+USB LED モジュール
+
+|===
++
+.. ベゼルを取り外した状態で、シャーシ前面の左下にある LED USB モジュールの位置を確認します。
+.. ラッチをスライドさせて、モジュールの一部をイジェクトします。
+.. モジュールをベイから引き出し、ミッドプレーンから取り外します。スロットを空のままにしないでください。
+
+
+. 新しい LED USB モジュールを取り付けます。
++
+.. モジュールをベイに合わせ、シャーシのスライダラッチの近くにあるモジュールの隅にある切り込みに合わせます。ベイを使用すると、モジュールを上下逆に取り付けることができません。
+.. モジュールをベイに押し込んで、完全にシャーシと同一面になるようにします。
++
+モジュールが固定され、ミッドプレーンに接続されると、カチッという音がします。
+
+
+
+
+
+
+
+== 手順 2 ：障害が発生したコンポーネントを返却する
+
+. 部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。テクニカルサポートにお問い合わせください https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"]RMA 番号を確認する場合や、交換用手順にサポートが必要な場合は、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。
+

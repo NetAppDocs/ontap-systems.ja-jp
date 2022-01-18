@@ -3,6 +3,7 @@
 
 replacement _node を使用可能な状態に戻す前に、 LIF がホームポートにあることを確認し、 AutoSupport が有効になっている場合は _replacement _node のシリアル番号を登録して、自動ギブバックをリセットする必要があります。
 
+.手順
 . 論理インターフェイスがホームサーバとポートに報告されていることを確認します。「 network interface show -is-home false 」
 +
 いずれかの LIF が false と表示されている場合は、ホームポートにリバートします。「 network interface revert
