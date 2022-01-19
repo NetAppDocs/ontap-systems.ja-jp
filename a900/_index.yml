@@ -32,15 +32,15 @@ indexpage:
     - title: デステージパワーコントローラモジュール
       url: "/dcpm_NVRAM11_battery_replace.html"
     - title: ファン
-      url: "/fan-swap-out.html"
+      url: "/fan_swap_out.html"
     - title: I/O モジュール
       url: "/pci_cards_and_risers_replace.html"
     - title: LED-USB モジュール
       url: "/led_module_replace.html"
     - title: NVRAM モジュールと NVRAM DIMM
-      url: "/nvram-module-or-nvram-dimm-replacement.html"
+      url: "/nvram_module_or_nvram_dimm_replacement.html"
     - title: 電源装置
-      url: "/power-supply-swap-out.html"
+      url: "/power_supply_swap_out.html"
     - title: RTC バッテリ
       url: "/rtc_battery_replace.html"
   - title: 詳細はこちら
