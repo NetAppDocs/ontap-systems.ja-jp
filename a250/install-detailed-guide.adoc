@@ -28,22 +28,22 @@ NOTE: 特定の電力要件を持つお客様は、 HWU で構成オプション
 * ストレージシステム用のラックスペース
 * No.2 プラスドライバ
 * Web ブラウザを使用してシステムをネットワークスイッチおよびラップトップまたはコンソールに接続するための追加のネットワークケーブル
-+
-.. すべての箱を開封して内容物を取り出します。
-.. コントローラのシステムシリアル番号をメモします。
+
+
+.手順
+. すべての箱を開封して内容物を取り出します。
+. コントローラのシステムシリアル番号をメモします。
 +
 image::../media/drw_ssn_label.png[DRW SSN ラベル]
 
-.. アカウントを設定します。
+. アカウントを設定します。
 +
-... 既存のアカウントにログインするか、アカウントを作成します。
-... システムを登録します。
-+
-link:https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"^]
+.. 既存のアカウントにログインするか、アカウントを作成します。
+.. 登録（link:https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"^]）をクリックします。
 
 
-
-.. 同梱されていたケーブルの数と種類を確認し、書き留めておきます。
+. ダウンロードしてインストールします link:https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^] ノートブック PC で。
+. 同梱されていたケーブルの数と種類を確認し、書き留めておきます。
 +
 次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください link:https://hwu.netapp.com["NetApp Hardware Universe の略"^] ケーブルの場所を確認し、用途を特定します。
 
@@ -134,9 +134,7 @@ image:../media/oie_cable_power.png[""]
 システムの電源をオンにします
 
 |===
-.. を確認します link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^] およびそのガイドに記載されている必要な情報を収集します。
-
-
+. を確認します link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^] およびそのガイドに記載されている必要な情報を収集します。
 
 
 
@@ -145,6 +143,7 @@ image:../media/oie_cable_power.png[""]
 
 システムは、 4 ポストラックまたはネットアップシステムキャビネットのいずれかに設置する必要があります。
 
+.手順
 . 必要に応じてレールキットを取り付けます。
 . レールキットに付属の手順書に従って、システムを設置して固定します。
 +
@@ -185,12 +184,11 @@ image::../media/oie_cable_pull_tab_down.png[OIE ケーブルのプルタブを�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
-. アニメーションやステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
-+
-link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=beec3966-0a01-473c-a5de-ac68017fbf29["2 ノードスイッチレスクラスタをケーブル接続"^]
+.手順
+. アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=beec3966-0a01-473c-a5de-ac68017fbf29["2 ノードスイッチレスクラスタをケーブル接続"^]）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
 
-+
-[cols="1,2"]
+
+[cols="10,90"]
 |===
 | ステップ | 各コントローラでを実行します 
 
@@ -200,8 +198,8 @@ image:../media/oie_legend_icon_1_lg.png[""]
  a| 
 25GbE クラスタインターコネクトケーブルを使用して、クラスタインターコネクトポートを相互に接続しますimage:../media/oie_cable_sfp_gbe_copper.png[""]：
 
-** e0c から e0c へ
-** e0d から e0dimage:../media/drw_affa250_tnsc_cabling.png[""]
+* e0c から e0c へ
+* e0d から e0dimage:../media/drw_affa250_tnsc_cabling.png[""]
 
 
 
@@ -239,12 +237,11 @@ image::../media/oie_cable_pull_tab_down.png[OIE ケーブルのプルタブを�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
-. アニメーションやステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
-+
-link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bf6759dc-4cbf-488e-982e-ac68017fbef8["スイッチクラスタのケーブル接続"^]
+.手順
+. アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bf6759dc-4cbf-488e-982e-ac68017fbef8["スイッチクラスタのケーブル接続"^]）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
 
-+
-[cols="1,2"]
+
+[cols="10,90"]
 |===
 | ステップ | 各コントローラでを実行します 
 
@@ -254,8 +251,8 @@ image:../media/oie_legend_icon_1_lg.png[""]
  a| 
 クラスタインターコネクトポートを 25GbE クラスタインターコネクトスイッチにケーブル接続します。
 
-** e0c
-** e0dimage:../media/drw_affa250_switched_clust_cabling.png[""]
+* e0c
+* e0dimage:../media/drw_affa250_switched_clust_cabling.png[""]
 
 
 
@@ -299,7 +296,7 @@ image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
-[cols="1,2"]
+[cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
 
@@ -343,7 +340,7 @@ image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
-[cols="1,2"]
+[cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
 
@@ -385,12 +382,10 @@ image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
-. アニメーションやステップバイステップの手順に従って、 1 台のシェルフにコントローラモジュールをケーブル接続します。
-+
-link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3f92e625-a19c-4d10-9028-ac68017fbf57["コントローラを 1 台の NS224 にケーブル接続する"^]
+. アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3f92e625-a19c-4d10-9028-ac68017fbf57["コントローラを 1 台の NS224 にケーブル接続する"^]）またはステップバイステップの手順に従って、コントローラモジュールを 1 台のシェルフにケーブル接続します。
 
-+
-[cols="1,2"]
+
+[cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
 
@@ -423,6 +418,7 @@ image:../media/oie_legend_icon_2_lo.png[""]
 
 ラップトップでネットワーク検出が有効になっている場合は、クラスタの自動検出を使用してシステムのセットアップと設定を実行できます。
 
+.手順
 . 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
 +
 システムがブートを開始します。初回のブートには最大 8 分かかる場合があります。
@@ -431,10 +427,7 @@ image:../media/oie_legend_icon_2_lo.png[""]
 +
 詳細については、ラップトップのオンラインヘルプを参照してください。
 
-. 次のアニメーションに従って、ラップトップを管理スイッチに接続します。
-+
-link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"^]
-
+. アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"^]）をクリックして、ラップトップを管理スイッチに接続します。
 . 検出する ONTAP アイコンを選択します。
 +
 image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コントローラ選択]
@@ -448,10 +441,10 @@ image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コント
 
 NOTE: 「 XXXXX 」は、ターゲットノードのシステムシリアル番号です。
 
+
+
 +
 System Manager が開きます。
-
-
 
 . System Manager のセットアップガイドを使用して、で収集したデータを基にシステムを設定します link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^]。
 . Config Advisor を実行してシステムの健全性を確認します。
@@ -464,6 +457,7 @@ System Manager が開きます。
 
 ラップトップでネットワーク検出が有効になっていない場合は、このタスクを使用して設定とセットアップを実行する必要があります。
 
+.手順
 . ラップトップまたはコンソールをケーブル接続して設定します。
 +
 .. ラップトップまたはコンソールのコンソールポートを、 115 、 200 ボー、 N-8-1 に設定します。

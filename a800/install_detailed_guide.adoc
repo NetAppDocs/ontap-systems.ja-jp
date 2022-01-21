@@ -31,16 +31,19 @@ AFF A800 システムを設置するには、アカウントを作成してシ�
 +
 image::../media/drw_ssn_label.png[DRW SSN ラベル]
 
-.. アカウントを設定します。
+
+
+
+
+.手順
+. アカウントを設定します。
 +
-... 既存のアカウントにログインするか、アカウントを作成します。
-... システムを登録します。
-+
-link:https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"^]
+.. 既存のアカウントにログインするか、アカウントを作成します。
+.. 登録（link:https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"^]）をクリックします。
 
 
-
-.. 同梱されていたケーブルの数と種類を確認し、書き留めておきます。
+. ダウンロードしてインストールします link:https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^] ノートブック PC で。
+. 同梱されていたケーブルの数と種類を確認し、書き留めておきます。
 +
 次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください link:https://hwu.netapp.com["NetApp Hardware Universe の略"^] ケーブルの場所を確認し、用途を特定します。
 
@@ -149,9 +152,7 @@ image:../media/oie_cable_power.png[""]
 システムの電源をオンにします
 
 |===
-.. をダウンロードして実行します link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["クラスタ設定ワークシート"^]。
-
-
+. をダウンロードして実行します link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["クラスタ設定ワークシート"^]。
 
 
 
@@ -160,6 +161,7 @@ image:../media/oie_cable_power.png[""]
 
 システムは、 4 ポストラックまたはネットアップシステムキャビネットのいずれかに設置する必要があります。
 
+.手順
 . 必要に応じてレールキットを取り付けます。
 +
 link:../com.netapp.doc.hw-rail-superrail/home.html["丸穴 4 ポストラックへの SuperRail の取り付け"^]
@@ -206,12 +208,11 @@ image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
-. アニメーションやステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
-+
-link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=edc42447-f721-4cbe-b080-ab0c0123a139["2 ノードスイッチレスクラスタをケーブル接続"^]
+.手順
+. アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=edc42447-f721-4cbe-b080-ab0c0123a139["2 ノードスイッチレスクラスタをケーブル接続"^]）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
 
-+
-[cols="1,2"]
+
+[cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
 
@@ -221,8 +222,8 @@ image:../media/oie_legend_icon_1_dp.png[""]
  a| 
 HA インターコネクトポートをケーブル接続します。
 
-** e0b から e0b
-** e1b から e1bimage:../media/drw_affa800_ha_pair_cabling.png[""]
+* e0b から e0b
+* e1b から e1bimage:../media/drw_affa800_ha_pair_cabling.png[""]
 
 
 
@@ -232,8 +233,8 @@ image:../media/oie_legend_icon_2_lg.png[""]
  a| 
 クラスタインターコネクトポートをケーブル接続します。
 
-** e0a から e0a
-** e1a から e1aimage:../media/drw_affa800_tnsc_clust_cabling.png[""]
+* e0a から e0a
+* e1a から e1aimage:../media/drw_affa800_tnsc_clust_cabling.png[""]
 
 
 
@@ -277,12 +278,11 @@ image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
-. アニメーションやステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
-+
-link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=49e48140-4c5a-4395-a7d7-ab0c0123a10e["スイッチクラスタのケーブル接続"^]
+.手順
+. アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=49e48140-4c5a-4395-a7d7-ab0c0123a10e["スイッチクラスタのケーブル接続"^]）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
 
-+
-[cols="1,2"]
+
+[cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
 
@@ -292,8 +292,8 @@ image:../media/oie_legend_icon_1_dp.png[""]
  a| 
 HA インターコネクトポートをケーブル接続します。
 
-** e0b から e0b
-** e1b から e1bimage:../media/drw_affa800_ha_pair_cabling.png[""]
+* e0b から e0b
+* e1b から e1bimage:../media/drw_affa800_ha_pair_cabling.png[""]
 
 
 
@@ -350,7 +350,7 @@ image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
-[cols="1,2"]
+[cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
 
@@ -394,7 +394,7 @@ image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
-[cols="1,2"]
+[cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
 
@@ -436,12 +436,11 @@ image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
-. アニメーションやステップバイステップの手順に従って、 1 台のシェルフにコントローラモジュールをケーブル接続します。
-+
-link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=09dade4f-00bd-4d41-97d7-ab0c0123a0b4["1 台のドライブシェルフへのコントローラのケーブル接続"^]
+.手順
+. アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=09dade4f-00bd-4d41-97d7-ab0c0123a0b4["1 台のドライブシェルフへのコントローラのケーブル接続"^] または、コントローラモジュールを 1 台のシェルフにケーブル接続するためのステップバイステップの手順を参照してください。
 
-+
-[cols="1,2"]
+
+[cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
 
@@ -475,12 +474,11 @@ image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
-. 次に示すアニメーションや手順説明に従って、 2 台のドライブシェルフにコントローラをケーブル接続します。
-+
-link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=fe50ac38-9375-4e6b-85af-ab0c0123a0e0["2 台のドライブシェルフへのコントローラのケーブル接続"^]
+.手順
+. 次のアニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=fe50ac38-9375-4e6b-85af-ab0c0123a0e0["2 台のドライブシェルフへのコントローラのケーブル接続"^]）または記載された手順に従って、 2 台のドライブシェルフにコントローラをケーブル接続します。
 
-+
-[cols="1,2"]
+
+[cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
 
@@ -513,6 +511,7 @@ image:../media/oie_legend_icon_2_lo.png[""]
 
 ラップトップでネットワーク検出が有効になっている場合は、クラスタの自動検出を使用してシステムのセットアップと設定を実行できます。
 
+.手順
 . 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
 +
 システムがブートを開始します。初回のブートには最大 8 分かかる場合があります。
@@ -521,10 +520,7 @@ image:../media/oie_legend_icon_2_lo.png[""]
 +
 詳細については、ラップトップのオンラインヘルプを参照してください。
 
-. 次のアニメーションに従って、ラップトップを管理スイッチに接続します。
-+
-link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"^]
-
+. 次のアニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"^]）をクリックして、ラップトップを管理スイッチに接続します。
 . 検出する ONTAP アイコンを選択します。
 +
 image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コントローラ選択]
@@ -554,6 +550,7 @@ System Manager が開きます。
 
 ラップトップでネットワーク検出が有効になっていない場合は、このタスクを使用して設定とセットアップを実行する必要があります。
 
+.手順
 . ラップトップまたはコンソールをケーブル接続して設定します。
 +
 .. ラップトップまたはコンソールのコンソールポートを、 115 、 200 ボー、 N-8-1 に設定します。

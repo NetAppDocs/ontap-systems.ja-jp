@@ -4,7 +4,7 @@
 障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをスイッチオーバーする必要があります。
 
 .このタスクについて
-* NetApp Storage Encryption を使用している場合は、の「 SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"]。
+* NetApp Storage Encryption を使用している場合は、の「 FIPS ドライブまたは SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html["CLI での NetApp Encryption の概要"^]。
 * 正常なノードに電力を供給するために、この手順の最後で電源装置をオンのままにしておく必要があります。
 
 

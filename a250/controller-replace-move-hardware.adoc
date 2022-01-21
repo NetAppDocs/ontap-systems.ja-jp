@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a250, move the hardware components 
 summary: コントローラモジュールハードウェアを交換するには、障害のあるコントローラモジュールを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。 
 ---
-= コントローラモジュールハードウェア - AFF A250 を移動します
+= コントローラモジュールを交換します - AFF A250
 :icons: font
 :imagesdir: ../media/
 

@@ -37,10 +37,7 @@ image::../media/drw_ssn_label.png[DRW SSN ラベル]
 . アカウントを設定します。
 +
 .. 既存のアカウントにログインするか、アカウントを作成します。
-.. システムを登録します。
-+
-link:https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"]
-
+.. 登録（link:https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"^]）をクリックします。
 
 
 . ダウンロードしてインストールします link:https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^] ノートブック PC で。
@@ -138,6 +135,7 @@ image:../media/oie_cable_power.png[""]
 
 システムは、 4 ポストラックまたはネットアップシステムキャビネットのいずれかに設置する必要があります。
 
+.手順
 . 必要に応じてレールキットを取り付けます。
 . レールキットに付属の手順書に従って、システムを設置して固定します。
 +
@@ -178,12 +176,13 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 NOTE: 光スイッチに接続する場合は、ポートにケーブル接続する前に、 SFP をコントローラポートに挿入します。
 
+.手順
 . 図またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
 +
 image::../media/drw_c190_tnsc_unified_network_cabling_animated_gif.png[DRW C190 TNSC ユニファイドネットワークケーブル接続アニメーション GIF]
 
 +
-[cols="1,2"]
+[cols="10,90"]
 |===
 | ステップ | 各コントローラでを実行します 
 
@@ -244,12 +243,13 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 NOTE: 光スイッチに接続する場合は、ポートにケーブル接続する前に、 SFP をコントローラポートに挿入します。
 
+.手順
 . 図またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
 +
 image::../media/drw_c190_switched_unified_network_cabling_animated_gif.png[DRW C190 スイッチドユニファイドネットワークケーブル配線アニメーション GIF]
 
 +
-[cols="1,2"]
+[cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
 
@@ -305,12 +305,13 @@ image::../media/oie_cable_pull_tab_down.png[OIE ケーブルのプルタブを�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
+.手順
 . 図またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
 +
 image::../media/drw_c190_tnsc_ethernet_network_cabling_animated_gif.png[DRW C190 TNSC イーサネットネットワークケーブル配線のアニメーション GIF]
 
 +
-[cols="1,2"]
+[cols="10,90"]
 |===
 | ステップ | 各コントローラでを実行します 
 
@@ -368,12 +369,13 @@ image::../media/oie_cable_pull_tab_down.png[OIE ケーブルのプルタブを�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
+.手順
 . 図またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
 +
 image::../media/drw_c190_switched_ethernet_network_cabling_animated.png[DRW C190 スイッチドイーサネットネットワークのケーブル配線のアニメーション]
 
 +
-[cols="1,2"]
+[cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
 
@@ -426,6 +428,7 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 
 ラップトップでネットワーク検出が有効になっている場合は、クラスタの自動検出を使用してシステムのセットアップと設定を実行できます。
 
+.手順
 . 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
 . 両方のノードの電源スイッチをオンにします。
 +
@@ -439,10 +442,7 @@ NOTE: 初回のブートには最大で 8 分かかる場合があります。
 +
 詳細については、ラップトップのオンラインヘルプを参照してください。
 
-. 次のアニメーションに従って、ラップトップを管理スイッチに接続します。
-+
-link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"^]
-
+. アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"^]）をクリックして、ラップトップを管理スイッチに接続します。
 . 検出する ONTAP アイコンを選択します。
 +
 image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コントローラ選択]

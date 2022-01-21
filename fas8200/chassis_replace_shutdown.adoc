@@ -9,18 +9,17 @@ summary: シャーシを交換するには、コントローラをシャット�
 :imagesdir: ../media/
 
 
+[role="lead"]
+シャーシを交換するには、コントローラをシャットダウンする必要があります。
+
 
 
 == オプション 1 ：ほとんどの構成
 
-[role="lead"]
 シャーシ内のノードを新しいシャーシに移動する前に、ノードをシャットダウンする必要があります。
 
 .このタスクについて
-* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なノードで適格性と正常性について「 false 」と表示される場合は、障害のあるノードをシャットダウンする前に問題を修正する必要があります。
-+
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html["_ ONTAP 9 システムアドミニストレーションリファレンス _"]
-
+* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なノードの資格と正常性に「 false 」と表示される場合は、障害のあるノードをシャットダウンする前に問題を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"^]。
 * AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
 +
 次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
@@ -73,11 +72,10 @@ NOTE: シャーシを交換する前にシステムのクリーンシャット�
 
 == オプション 2 ：コントローラは 2 ノード MetroCluster 構成です
 
-[role="lead"]
 障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをスイッチオーバーする必要があります。
 
 .このタスクについて
-* NetApp Storage Encryption を使用している場合は、の「 SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"]。
+* NetApp Storage Encryption を使用している場合は、の「 FIPS ドライブまたは SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html["CLI での NetApp Encryption の概要"^]。
 * 正常なノードに電力を供給するために、この手順の最後で電源装置をオンのままにしておく必要があります。
 
 
