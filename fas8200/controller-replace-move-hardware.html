@@ -331,7 +331,7 @@
 <div class="ie-main">
   <!-- Sidebar Column -->
   
-  <div class="col-md-3" >
+  <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
     <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>利用可能なPDF<span>
@@ -5140,6 +5140,13 @@
         法的通知
       </a></li></ul>
 </div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
@@ -5195,7 +5202,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-21 15:01:10 +0000">01/21/2022</time>
+    <time datetime="2022-01-28 20:20:02 +0000">01/28/2022</time>
     
   
 
@@ -5240,7 +5247,7 @@
 <div class="sect1">
 <h2 id="手順-1-コントローラモジュールを開く">手順 1 ：コントローラモジュールを開く</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>コントローラモジュールを交換するには、最初に古いコントローラモジュールをシャーシから取り外す必要があります。</p>
 </div>
 <div class="olist arabic">
@@ -5311,7 +5318,7 @@
 <div class="sect1">
 <h2 id="手順-2-ブートデバイスを移動します">手順 2 ：ブートデバイスを移動します</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>ブートメディアの場所を確認し、手順に従って古いコントローラからブートメディアを取り外して、新しいコントローラに挿入する必要があります。</p>
 </div>
 <div class="olist arabic">
@@ -5358,7 +5365,7 @@
 <div class="sect1">
 <h2 id="手順-3-nvmem-バッテリを移動します">手順 3 ： NVMEM バッテリを移動します</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>NVMEM バッテリを古いコントローラモジュールから新しいコントローラモジュールに移動するには、特定の手順を実行する必要があります。</p>
 </div>
 <div class="olist arabic">
@@ -5452,7 +5459,7 @@
 <div class="sect1">
 <h2 id="手順-4-dimm-を移動します">手順 4 ： DIMM を移動します</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>DIMM を移動するには、古いコントローラの DIMM の場所を確認し、 DIMM を交換用コントローラに移動して、特定の手順を実行します。</p>
 </div>
 <div class="olist arabic">
@@ -5526,7 +5533,7 @@ DIMM がスロットにまっすぐ差し込まれていることを目で確認
 <div class="sect1">
 <h2 id="手順-5-pcie-カードを移動します">手順 5 ： PCIe カードを移動します</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>PCIe カードを移動するには、古いコントローラの PCIe カードの場所を確認し、交換用コントローラに移動して、特定の手順を実行します。</p>
 </div>
 <div class="paragraph">
@@ -5600,7 +5607,7 @@ DIMM がスロットにまっすぐ差し込まれていることを目で確認
 <div class="sect1">
 <h2 id="手順-6-キャッシングモジュールを移動します">手順 6 ：キャッシングモジュールを移動します</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>コントローラモジュールを交換する場合は、障害のあるコントローラモジュールから交換用コントローラモジュールにキャッシングモジュールを移動する必要があります。</p>
 </div>
 <div class="olist arabic">
@@ -5645,7 +5652,7 @@ DIMM がスロットにまっすぐ差し込まれていることを目で確認
 <div class="sect1">
 <h2 id="手順-7-コントローラを取り付ける">手順 7 ：コントローラを取り付ける</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>古いコントローラモジュールのコンポーネントを新しいコントローラモジュールに取り付けたら、新しいコントローラモジュールをシステムシャーシに取り付けてオペレーティングシステムをブートする必要があります。</p>
 </div>
 <div class="paragraph">

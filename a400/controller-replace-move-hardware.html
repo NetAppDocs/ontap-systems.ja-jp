@@ -331,7 +331,7 @@
 <div class="ie-main">
   <!-- Sidebar Column -->
   
-  <div class="col-md-3" >
+  <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
     <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>利用可能なPDF<span>
@@ -5140,6 +5140,13 @@
         法的通知
       </a></li></ul>
 </div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
@@ -5195,7 +5202,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-21 15:01:10 +0000">01/21/2022</time>
+    <time datetime="2022-01-28 20:20:02 +0000">01/28/2022</time>
     
   
 
@@ -5240,7 +5247,7 @@
 <div class="sect1">
 <h2 id="手順-1-コントローラモジュールを取り外す">手順 1 ：コントローラモジュールを取り外す</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>コントローラモジュール内部のコンポーネントにアクセスするには、コントローラモジュールをシャーシから取り外す必要があります。</p>
 </div>
 <div class="paragraph">
@@ -5318,7 +5325,7 @@
 <div class="sect1">
 <h2 id="手順-2-電源装置を移動します">手順 2 ：電源装置を移動します</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>コントローラモジュールを交換する場合は、障害のあるコントローラモジュールから交換用コントローラモジュールに電源装置を移動する必要があります。</p>
 </div>
 <div class="paragraph">
@@ -5381,7 +5388,7 @@
 <div class="sect1">
 <h2 id="手順-3-nvdimm-バッテリを移動します">手順 3 ： NVDIMM バッテリを移動します</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>NVDIMM バッテリを障害のあるコントローラモジュールから交換用コントローラモジュールに移動するには、特定の手順を実行する必要があります。</p>
 </div>
 <div class="paragraph">
@@ -5444,7 +5451,7 @@
 <div class="sect1">
 <h2 id="手順-4-ブートメディアを移動します">手順 4 ：ブートメディアを移動します</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>ブートメディアの場所を確認し、手順に従って障害のあるコントローラモジュールからブートメディアを取り外して、交換用コントローラモジュールに挿入する必要があります。</p>
 </div>
 <div class="paragraph">
@@ -5505,7 +5512,7 @@
 <div class="sect1">
 <h2 id="手順-5-pcie-ライザーとメザニンカードを移動します">手順 5 ： PCIe ライザーとメザニンカードを移動します</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>コントローラの交換プロセスの一環として、 PCIe ライザーとメザニンカードを障害のあるコントローラモジュールから交換用コントローラモジュールに移動する必要があります。</p>
 </div>
 <div class="paragraph">
@@ -5590,7 +5597,7 @@
 <div class="sect1">
 <h2 id="手順-6-dimm-を移動します">手順 6 ： DIMM を移動します</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>DIMM の場所を確認し、障害のあるコントローラモジュールから交換用コントローラモジュールに DIMM を移動する必要があります。</p>
 </div>
 <div class="paragraph">
@@ -5680,7 +5687,7 @@ DIMM 回路基板のコンポーネントに力が加わらないように、 DI
 <div class="sect1">
 <h2 id="手順-7-コントローラモジュールを取り付ける">手順 7 ：コントローラモジュールを取り付ける</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>障害のあるコントローラモジュールから交換用コントローラモジュールにすべてのコンポーネントを移動したら、交換用コントローラモジュールをシャーシに取り付け、メンテナンスモードでブートする必要があります。</p>
 </div>
 <div class="paragraph">

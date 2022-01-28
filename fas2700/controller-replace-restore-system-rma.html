@@ -331,7 +331,7 @@
 <div class="ie-main">
   <!-- Sidebar Column -->
   
-  <div class="col-md-3" >
+  <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
     <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>利用可能なPDF<span>
@@ -5140,6 +5140,13 @@
         法的通知
       </a></li></ul>
 </div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
@@ -5195,7 +5202,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-21 15:01:10 +0000">01/21/2022</time>
+    <time datetime="2022-01-28 20:20:02 +0000">01/28/2022</time>
     
   
 
@@ -5222,10 +5229,17 @@
 </p>
 
 
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>システムを完全に動作状態に戻すには、 NetApp Storage Encryption の構成をリストアし（必要な場合）、新しいコントローラのライセンスをインストールし、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。</p>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="手順-1-交換用ノードのライセンスを-ontap-にインストールする">手順 1 ：交換用ノードのライセンスを ONTAP にインストールする</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>障害ノードが標準（ノードロック）ライセンスを必要とする ONTAP 機能を使用していた場合は、 _replacement node に新しいライセンスをインストールする必要があります。標準ライセンスを使用する機能では、クラスタ内の各ノードにその機能用のキーが必要です。</p>
 </div>
 <div class="paragraph">
@@ -5278,7 +5292,7 @@
 <div class="sect1">
 <h2 id="手順-2-ストレージとボリュームの暗号化機能をリストアする">手順 2 ：ストレージとボリュームの暗号化機能をリストアする</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>ストレージまたはボリュームの暗号化を使用するように設定したストレージシステムのコントローラモジュールまたは NVRAM モジュールを交換したら、追加の手順を実行して、暗号化機能を中断させないようにする必要があります。ストレージまたはボリュームの暗号化が有効になっていないストレージシステムでは、このタスクを省略できます。</p>
 </div>
 <div class="paragraph">
@@ -5302,7 +5316,7 @@
 <div class="sect1">
 <h2 id="手順-3-lif-を確認してシリアル番号を登録する">手順 3 ： LIF を確認してシリアル番号を登録する</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>replacement _node を使用可能な状態に戻す前に、 LIF がホームポートにあることを確認し、 AutoSupport が有効になっている場合は _replacement _node のシリアル番号を登録して、自動ギブバックをリセットする必要があります。</p>
 </div>
 <div class="olist arabic">
@@ -5337,7 +5351,7 @@
 <div class="sect1">
 <h2 id="手順-4-2-ノード-metrocluster-構成のアグリゲートをスイッチバックする">手順 4 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>2 ノード MetroCluster 構成で FRU の交換が完了したら、 MetroCluster スイッチバック処理を実行できます。これにより構成が通常の動作状態に戻ります。また、障害が発生していたサイトの同期元 Storage Virtual Machine （ SVM ）がアクティブになり、ローカルディスクプールからデータを提供します。</p>
 </div>
 <div class="paragraph">
@@ -5412,7 +5426,7 @@ Remote: cluster_A configured      		normal</pre>
 <div class="sect1">
 <h2 id="手順-5-障害が発生したパーツをネットアップに返却する">手順 5 ：障害が発生したパーツをネットアップに返却する</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。テクニカルサポートにお問い合わせください <a href="https://mysupport.netapp.com/site/global/dashboard">"ネットアップサポート"</a>RMA 番号を確認する場合や、交換用手順にサポートが必要な場合は、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。</p>
 </div>
 </div>

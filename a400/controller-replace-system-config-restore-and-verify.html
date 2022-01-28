@@ -331,7 +331,7 @@
 <div class="ie-main">
   <!-- Sidebar Column -->
   
-  <div class="col-md-3" >
+  <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
     <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>利用可能なPDF<span>
@@ -5140,6 +5140,13 @@
         法的通知
       </a></li></ul>
 </div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
@@ -5195,7 +5202,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-21 15:01:10 +0000">01/21/2022</time>
+    <time datetime="2022-01-28 20:20:02 +0000">01/28/2022</time>
     
   
 
@@ -5232,7 +5239,7 @@
 <div class="sect1">
 <h2 id="手順-1-コントローラを交換したあとにシステム時間を設定して確認します">手順 1 ：コントローラを交換したあとにシステム時間を設定して確認します</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>交換用コントローラモジュールの日付と時刻は、 HA ペアの正常なコントローラモジュール、またはスタンドアロン構成の信頼できるタイムサーバに照らして確認する必要があります。日付と時刻が一致しない場合は、時刻の違いによるクライアントの停止を防ぐために、交換用コントローラモジュールで日付と時刻をリセットする必要があります。</p>
 </div>
 <div class="paragraph">
@@ -5285,7 +5292,7 @@
 <div class="sect1">
 <h2 id="手順-2-コントローラモジュールの-ha-状態を確認して設定します">手順 2 ：コントローラモジュールの HA 状態を確認して設定します</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>コントローラモジュールの「 HA 」状態を確認し、必要に応じてシステム構成に合わせて状態を更新する必要があります。</p>
 </div>
 <div class="olist arabic">
@@ -5334,7 +5341,7 @@
 <div class="sect1">
 <h2 id="手順-3-診断を実行します">手順 3 ：診断を実行します</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>システムのコンポーネントを交換したら、そのコンポーネントに対して診断テストを実行する必要があります。</p>
 </div>
 <div class="paragraph">

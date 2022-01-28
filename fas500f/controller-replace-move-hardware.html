@@ -331,7 +331,7 @@
 <div class="ie-main">
   <!-- Sidebar Column -->
   
-  <div class="col-md-3" >
+  <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
     <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>利用可能なPDF<span>
@@ -5140,6 +5140,13 @@
         法的通知
       </a></li></ul>
 </div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
@@ -5195,7 +5202,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-21 15:01:10 +0000">01/21/2022</time>
+    <time datetime="2022-01-28 20:20:02 +0000">01/28/2022</time>
     
   
 
@@ -5366,33 +5373,31 @@
 <ol class="arabic">
 <li>
 <p>電源装置の接続を解除します。</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+</li>
 <li>
 <p>電源ケーブルの固定クリップを開き、電源装置から電源ケーブルを抜きます。</p>
 </li>
 <li>
 <p>電源から電源ケーブルを抜きます。</p>
 </li>
-</ol>
-</div>
-</li>
 <li>
 <p>固定ツメを押しながらカムハンドルを回転させて、コントローラモジュールから電源装置を引き出せるようにします。</p>
-<div class="ulist">
-<ul>
-<li>
-<p>注意： *</p>
-<div class="paragraph">
-<p>電源装置は奥行きがないので、コントローラモジュールから突然落下して負傷することがないように、取り外すときは必ず両手で支えてください。</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/caution.svg" alt="注意">
+</td>
+<td class="content">
+コネクタの破損を防ぐため、コントローラモジュールをスライドしてシャーシに挿入する際に力を入れすぎないでください。
+</td>
+</tr>
+</table>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="../media/drw_a250_replace_psu.png" alt="DRW A250 は PSU を交換します">
 </div>
-</div>
-</li>
-</ul>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -5493,7 +5498,7 @@
 <p>コントローラモジュールのエアダクトの下の AFF A250 には、ブートメディアデバイスが 1 つあります。障害のあるコントローラモジュールから交換用コントローラモジュールにコントローラモジュールを移動する必要があります。</p>
 </div>
 <div class="paragraph">
-<p>ブートメディアを固定しているネジを外すために、 No.1 マグネットプラスドライバが必要です。コントローラモジュール内のスペースには制約があるため、ネジを失うことがないようにマグネットでに取り付ける必要があります。</p>
+<p>ブートメディアを固定しているネジを外すために、 No.1 プラスドライバが必要です。コントローラモジュール内のスペースには制約があるため、ネジを失うことがないようにマグネットでに取り付ける必要があります。</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -5529,16 +5534,15 @@
 </tr>
 </tbody>
 </table>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+</li>
 <li>
-<p>#1 磁気ネジドライバを使用してブートメディアからネジを外し、マグネットの上に安全に置きます。</p>
+<p>No.1 磁気ドライバを使用してブートメディアからネジを外し、マグネットの上に安全に置きます。</p>
 </li>
 <li>
 <p>ブートメディアをソケットから直接そっと持ち上げ、交換用コントローラモジュールの所定の位置に合わせます。</p>
 </li>
 <li>
-<p>No.1 磁気ネジドライバインサートを使用して、ブートメディアのネジを締めます。</p>
+<p>No.1 磁気ドライバインサートを使用して、ブートメディアのネジを締めます。</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -5554,9 +5558,6 @@
 </li>
 </ol>
 </div>
-</li>
-</ol>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -5565,29 +5566,14 @@
 <div class="paragraph lead">
 <p>DIMM を移動するには、障害のあるコントローラの DIMM の場所を確認し、 DIMM を交換用コントローラに移動して、特定の手順を実行します。</p>
 </div>
+<div class="paragraph">
+<p>+ image ： ../ media /drw_A250_dimm_replace.png [ めでぃ Image ： ../ media/drw_A250_dimm_replace.png ]</p>
+</div>
+<div class="paragraph">
+<p>+ 重要：障害のあるコントローラモジュールで使用していたスロットと同じスロットに各 DIMM を取り付けます。</p>
+</div>
 <div class="olist arabic">
 <ol class="arabic">
-<li>
-<p>障害のあるコントローラモジュールから交換用コントローラモジュールに DIMM を移動します。</p>
-<div class="imageblock">
-<div class="content">
-<img src="../media/drw_a250_dimm_replace.png" alt="DRW A250 DIMM 交換">
-</div>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/ontap-systems/images/important.svg" alt="重要">
-</td>
-<td class="content">
-障害のあるコントローラモジュールで使用していたスロットと同じスロットに各 DIMM を取り付けます。
-</td>
-</tr>
-</table>
-</div>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
 <li>
 <p>DIMM の両側にあるツメをゆっくり押し開いて、 DIMM をスロットから引き出します。</p>
 <div class="admonitionblock important">
@@ -5617,9 +5603,6 @@ DIMM 回路基板のコンポーネントに力が加わらないように、 DI
 </li>
 <li>
 <p>残りの DIMM についても、上記の手順を繰り返します。</p>
-</li>
-</ol>
-</div>
 </li>
 </ol>
 </div>
@@ -5675,8 +5658,7 @@ DIMM 回路基板のコンポーネントに力が加わらないように、 DI
 </tr>
 </tbody>
 </table>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+</li>
 <li>
 <p>メザニンカードに接続されているケーブルをすべて取り外します。</p>
 <div class="paragraph">
@@ -5687,7 +5669,7 @@ DIMM 回路基板のコンポーネントに力が加わらないように、 DI
 <p>メザニンカードに搭載されている可能性がある SFP モジュールまたは QSFP モジュールをすべて取り外し、脇に置きます。</p>
 </li>
 <li>
-<p>磁気ネジドライバを使用して、障害のあるコントローラモジュールの前面とメザニンカードからネジを取り外し、マグネットの上に安全に置きます。</p>
+<p>磁気ドライバ 1 を使用して、障害のあるコントローラモジュールの前面とメザニンカードからネジを取り外し、マグネットの上に安全に置きます。</p>
 </li>
 <li>
 <p>メザニンカードをソケットからそっと持ち上げて、交換用コントローラの同じ位置に移動します。</p>
@@ -5696,7 +5678,7 @@ DIMM 回路基板のコンポーネントに力が加わらないように、 DI
 <p>メザニンカードを交換用コントローラの所定の位置にそっと合わせます。</p>
 </li>
 <li>
-<p>磁気ネジドライバの No.1 インサートを使用して、交換用コントローラモジュールの前面とメザニンカードのネジを締めます。</p>
+<p>磁気ドライバの No.1 インサートを使用して、交換用コントローラモジュールの前面とメザニンカードのネジを締めます。</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -5718,16 +5700,13 @@ DIMM 回路基板のコンポーネントに力が加わらないように、 DI
 </li>
 </ol>
 </div>
-</li>
-</ol>
-</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="手順-7-nv-バッテリを移動する">手順 7 ： NV バッテリを移動する</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>コントローラモジュールを交換する場合は、障害のあるコントローラモジュールから交換用コントローラモジュールに NV バッテリを移動する必要があります</p>
+<p>コントローラモジュールを交換する場合は、障害のあるコントローラモジュールから交換用コントローラモジュールに NV バッテリを移動する必要があります。</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -5783,8 +5762,7 @@ DIMM 回路基板のコンポーネントに力が加わらないように、 DI
 </tr>
 </tbody>
 </table>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+</li>
 <li>
 <p>バッテリプラグの場所を確認し、バッテリプラグ前面のクリップを押してプラグをソケットから外します。</p>
 </li>
@@ -5802,9 +5780,6 @@ DIMM 回路基板のコンポーネントに力が加わらないように、 DI
 </li>
 <li>
 <p>バッテリパックをしっかりと押し下げて、所定の位置に固定します。</p>
-</li>
-</ol>
-</div>
 </li>
 </ol>
 </div>
@@ -5894,8 +5869,7 @@ DIMM 回路基板のコンポーネントに力が加わらないように、 DI
 </li>
 <li>
 <p>コントローラモジュールをシャーシに挿入します。</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+</li>
 <li>
 <p>ラッチのアームがすべて引き出された位置で固定されていることを確認します。</p>
 </li>
@@ -5912,9 +5886,6 @@ DIMM 回路基板のコンポーネントに力が加わらないように、 DI
 <p>ラッチの上部から親指を離し、ラッチが完全に固定されるまで押し続けます。</p>
 <div class="paragraph">
 <p>コントローラモジュールは、シャーシに完全に装着されるとすぐにブートを開始します。ブートプロセスを中断できるように準備しておきます。</p>
-</div>
-</li>
-</ol>
 </div>
 <div class="paragraph">
 <p>コントローラモジュールを完全に挿入し、シャーシの端と同一平面になるようにします。</p>

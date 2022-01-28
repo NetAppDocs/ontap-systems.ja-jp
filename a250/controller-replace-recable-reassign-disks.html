@@ -331,7 +331,7 @@
 <div class="ie-main">
   <!-- Sidebar Column -->
   
-  <div class="col-md-3" >
+  <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
     <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>利用可能なPDF<span>
@@ -5140,6 +5140,13 @@
         法的通知
       </a></li></ul>
 </div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
@@ -5195,7 +5202,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-21 15:01:10 +0000">01/21/2022</time>
+    <time datetime="2022-01-28 20:20:02 +0000">01/28/2022</time>
     
   
 
@@ -5282,7 +5289,7 @@
 <p>システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 y 」と入力し、ノードをブートします。</p>
 </li>
 <li>
-<p>_replacement _node コンソールに Waiting for giveback&#8230;&#8203; というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show</p>
+<p>_replacement _node コンソールに「 Waiting for giveback&#8230;&#8203; 」というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。「 storage failover show</p>
 <div class="paragraph">
 <p>コマンド出力には、障害ノードでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。</p>
 </div>
@@ -5312,7 +5319,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 <p>コアダンプをすべて保存します。「 system node run -node _local-node-name_partner savecore 」</p>
 </li>
 <li>
-<p>savecore コマンドの完了を待機してからギブバックを実行します。</p>
+<p>savecore コマンドが完了するのを待ってからギブバックを実行します</p>
 <div class="paragraph">
 <p>次のコマンドを入力すると、 savecore コマンドの進行状況を監視できます。 'system node run -node _local-node-name_partner savecore -s</p>
 </div>
@@ -5356,16 +5363,16 @@ node2             node1             -            Waiting for giveback (HA mailbo
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>ギブバックが完了したら、 HA ペアが正常でテイクオーバーが可能であることを確認します。 storage failover show</p>
+<p>ギブバックが完了したら、 HA ペアが正常で、テイクオーバーが可能であることを確認します。「 storage failover show</p>
 <div class="paragraph">
-<p>「 storage failover show 」コマンドの出力。パートナーメッセージに変更されたシステム ID を含めることはできません。</p>
+<p>「 storage failover show 」コマンドの出力に、パートナーメッセージで変更されたシステム ID は含まれません。</p>
 </div>
 </li>
 </ol>
 </div>
 </li>
 <li>
-<p>ディスクが正しく割り当てられたことを確認します。 storage disk show -ownership</p>
+<p>ディスクが正しく割り当てられたことを確認します。「 storage disk show -ownership</p>
 <div class="paragraph">
 <p>replacement _node には、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。</p>
 </div>
@@ -5386,7 +5393,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 <li>
 <p>システムが MetroCluster 構成になっている場合は ' ノードのステータスを監視します MetroCluster node show</p>
 <div class="paragraph">
-<p>MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster の node show -fields node-systemid コマンドの出力には、 MetroCluster の設定が通常の状態に戻るまで古いシステム ID が表示されます。</p>
+<p>MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster の node-show -fields node-systemid_command 出力には、 MetroCluster の設定が通常の状態に戻るまで古いシステム ID が表示されます。</p>
 </div>
 </li>
 <li>
