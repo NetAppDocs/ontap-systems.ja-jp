@@ -76,13 +76,11 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
  a| 
 システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
  a| 
-障害ノードをテイクオーバーまたは停止します。
+正常なノードから障害ノードをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name _
 
-** HA ペアの場合は、正常なノードから障害ノードをテイクオーバーします。「 storage failover takeover -ofnode impaired_node_name _
-+
-障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
++ 障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
 
-
+[+]
 
 |===
 
@@ -130,13 +128,11 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
  a| 
 システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
  a| 
-障害ノードをテイクオーバーまたは停止します。
+正常なノードから障害ノードをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name _
 
-** HA ペアの場合は、正常なノードから障害ノードをテイクオーバーします。「 storage failover takeover -ofnode impaired_node_name _
-+
-障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
++ 障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
 
-
+[+]
 
 |===
 
@@ -380,7 +376,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 advanced モードで続行するかどうかを確認するプロンプトが表示されたら、「 y 」と入力します。advanced モードのプロンプトが表示されます（ * > ）。
 
 .. すべてのコアダンプを保存します： system node run -node local-node-name partner savecore
-.. savecore コマンドの完了を待機してからギブバックを実行します。
+.. savecore コマンドが完了するのを待ってからギブバックを実行します
 +
 次のコマンドを入力すると 'savecore コマンドの進行状況を監視できます system node run -node local-node-name partner savecore -s
 

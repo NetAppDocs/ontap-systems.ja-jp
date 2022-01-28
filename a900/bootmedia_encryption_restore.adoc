@@ -68,8 +68,8 @@ NOTE: このデータは、 security key-manager backup show コマンドまた�
 システムがブートし、「 Waiting for giveback... 」プロンプトが表示されます。
 
 . パートナーノードにコンソールケーブルを接続し、 admin としてログインします。
-. storage failover show コマンドを使用して、ターゲットノードでギブバックの準備が完了していることを確認します。
-. storage failover giveback -fromnode local-only -cfo-aggregates true コマンドを使用して、 CFO アグリゲートのみをギブバックします。
+. 「 storage failover show 」コマンドを使用して、ターゲットノードでギブバックの準備が完了していることを確認します。
+. 「 storage failover giveback -fromnode local-only -cfo-aggregates true 」コマンドを使用して、 CFO アグリゲートだけをギブバックします。
 +
 ** ディスク障害のためにコマンドが失敗した場合は、ディスクを物理的に取り外します。ただし、交換用のディスクを受け取るまでは、ディスクをスロットに残しておきます。
 ** CIFS セッションが開いているためにコマンドが失敗する場合は、 CIFS セッションを閉じる方法をお客様に確認します。
@@ -81,7 +81,7 @@ NOTE: CIFS を終了原因すると、データが失われる可能性があり
 ** NDMP 、 SnapMirror 、または SnapVault のプロセスが原因でコマンドが失敗する場合は、そのプロセスを無効にします。詳細については、該当するコンテンツを参照してください。
 
 
-. ギブバックが完了したら、 storage failover show コマンドと storage failover show-giveback コマンドを使用して、フェイルオーバーとギブバックのステータスを確認します。
+. ギブバックが完了したら、 storage failover show コマンドおよび storage failover show-giveback コマンドを使用して、フェイルオーバーとギブバックのステータスを確認します。
 +
 CFO アグリゲート（ルートアグリゲートおよび CFO 形式のデータアグリゲート）のみが表示されます。
 
@@ -97,8 +97,8 @@ NOTE: 「 Restored 」列が「 yes/true 」以外の場合は、カスタマサ
 
 
 . パートナーノードにコンソールケーブルを接続します。
-. storage failover giveback -fromnode local コマンドを使用してターゲットノードをギブバックします。
-. storage failover show コマンドを使用して、ギブバックのステータスを確認します。ギブバックの完了が報告されたら 3 分待ちます。
+. 「 storage failover giveback -fromnode local 」コマンドを使用してターゲットノードをギブバックします。
+. 「 storage failover show 」コマンドを使用して、ギブバックのステータスを確認します。このステータスは、レポートが完了してから 3 分後に表示されます。
 +
 20 分経ってもギブバックが完了しない場合は、カスタマーサポートにお問い合わせください。
 

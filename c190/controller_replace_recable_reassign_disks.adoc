@@ -16,7 +16,6 @@ summary: ストレージを再度ケーブル接続し、ディスクの再割�
 
 == 手順 1 ：システムにケーブルを再接続します
 
-[role="lead"]
 診断の実行後、コントローラモジュールのストレージとネットワークを再度ケーブル接続する必要があります。
 
 .手順
@@ -35,7 +34,6 @@ summary: ストレージを再度ケーブル接続し、ディスクの再割�
 
 == 手順 2 ： HA システムでシステム ID の変更を確認する
 
-[role="lead"]
 HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。_replacement _node のブート時にシステム ID の変更を確定し、その変更が実施されたことを確認する必要があります。
 
 この手順は、 HA ペアの ONTAP を実行するシステムにのみ適用されます。
@@ -76,7 +74,7 @@ advanced モードで続行するかどうかを尋ねられたら、「 * Y * �
 +
 *system node run -node _local-node-name_partner savecore *
 
-.. savecore コマンドの完了を待機してからギブバックを実行します。
+.. savecore コマンドが完了するのを待ってからギブバックを実行します
 +
 次のコマンドを入力すると、 savecore コマンドの進行状況を監視できます。
 
@@ -114,7 +112,7 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62
 
 
 
-. ディスクが正しく割り当てられたことを確認します。 storage disk show -ownership
+. ディスクが正しく割り当てられたことを確認します。「 storage disk show -ownership
 +
 replacement _node には、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。
 

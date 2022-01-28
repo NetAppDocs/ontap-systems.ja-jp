@@ -109,7 +109,7 @@ image:../media/legend_icon_02.png[""]
 ブートメディアをコントローラモジュールから持ち上げて取り出します。
 
 |===
-. No.1 磁気ドライバを使用して障害のあるブートメディアからネジを外し、マグネットの上に安全に置きます。
+. No.1 磁気ドライバを使用して、障害のあるブートメディアからネジを外し、マグネットの上に安全に置きます。
 . 障害のあるブートメディアをソケットから直接そっと持ち上げて脇に置きます。
 . 交換用ブートメディアを静電気防止用の梱包バッグから取り出し、コントローラモジュールの所定の位置に合わせます。
 . No.1 磁気ドライバインサートを使用して、ブートメディアのネジを締めます。
@@ -136,9 +136,8 @@ NOTE: ブートメディアのネジを締めるときは力を加えないで�
 * スタンドアロンシステムの場合はネットワーク接続は必要ありませんが、 var ファイルシステムをリストアしたときに追加のリブートを実行する必要があります。
 +
 .. ネットアップサポートサイトから USB フラッシュドライブに適切なサービスイメージをダウンロードしてコピーします。
-+
-... ラップトップの作業スペースにサービスイメージをダウンロードします。
-... サービスイメージを解凍します。
+.. ラップトップの作業スペースにサービスイメージをダウンロードします。
+.. サービスイメージを解凍します。
 +
 
 NOTE: Windows を使用して内容を展開する場合は、 winzip を使用してネットブートイメージを展開しないでください。7-Zip や WinRAR など、別の抽出ツールを使用します。
@@ -147,17 +146,15 @@ NOTE: Windows を使用して内容を展開する場合は、 winzip を使用�
 解凍されたサービスイメージファイルには、次の 2 つのフォルダがあります。
 
 +
-**** /boot
-**** EFI
+*** /boot
+*** EFI
 
 
-... EFI フォルダを USB フラッシュドライブの最上位ディレクトリにコピーします。
+.. EFI フォルダを USB フラッシュドライブの最上位ディレクトリにコピーします。
 +
 USB フラッシュドライブには、 EFI フォルダと、障害のあるコントローラが実行しているものと同じバージョンの Service Image （ BIOS ）が必要です。
 
-... USB フラッシュドライブをラップトップから取り外します。
-
-
+.. USB フラッシュドライブをラップトップから取り外します。
 .. エアダクトをまだ取り付けていない場合は、取り付けます。
 +
 image::../media/drw_a250_install_airduct_cover.png[DRW A250 エアダクトカバーを取り付ける]
@@ -191,14 +188,11 @@ image:../media/legend_icon_02.png[""]
 USB フラッシュドライブは、 USB コンソールポートではなく、 USB デバイス用のラベルが付いたスロットに取り付けてください。
 
 .. コントローラモジュールをシャーシに最後まで押し込みます。
-+
-... ラッチの内側から穴に人さし指を入れます。
-... ラッチ上部のオレンジ色のタブで親指を押し下げ、コントローラモジュールをゆっくりと停止位置に押し込みます。
-... ラッチの上部から親指を離し、ラッチが完全に固定されるまで押し続けます。
+.. ラッチの内側から穴に人さし指を入れます。
+.. ラッチ上部のオレンジ色のタブで親指を押し下げ、コントローラモジュールをゆっくりと停止位置に押し込みます。
+.. ラッチの上部から親指を離し、ラッチが完全に固定されるまで押し続けます。
 +
 コントローラモジュールは、シャーシに完全に装着されるとすぐにブートを開始します。ブートプロセスを中断できるように準備しておきます。
-
-
 
 
 
@@ -207,36 +201,33 @@ USB フラッシュドライブは、 USB コンソールポートではなく�
 
 +
 .. 環境変数と bootargs は保持されますが 'printenv bootargname' コマンドを使用して ' 必要なすべてのブート環境変数と bootargs がシステムタイプと構成に適切に設定されていることを確認し 'setenv variable-name <value> コマンドを使用してエラーを修正する必要があります
+.. ブート環境変数を確認します。
 +
-... ブート環境変数を確認します。
+*** bootarg.init.boot_clustered`
+*** 「 partner-sysid 」
+*** 「 bootarg.init.san_optimized` for All SAN Array 」を参照してください
+*** bootarg.init.switchless_cluster.enable`
+
+
+.. 外部キーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示された bootarg 値を確認します。
 +
-**** bootarg.init.boot_clustered`
-**** 「 partner-sysid 」
-**** 「 bootarg.init.san_optimized` for All SAN Array 」を参照してください
-**** bootarg.init.switchless_cluster.enable`
+*** bootarg.storageencryption.support_value_`
+*** bootarg.keymanager. support_value_`
+*** 「 kmip.init.interface _ value _ 」と入力します
+*** 「 kmip.init.ipaddr _ value _ 」と入力します
+*** 「 kmip.init.netmask _ value _ 」と入力します
+*** 「 kmip.init.gateway _ value _ 」と入力します
 
 
-... 外部キーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示された bootarg 値を確認します。
+.. オンボードキーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示されている bootarg 値を確認します。
 +
-**** bootarg.storageencryption.support_value_`
-**** bootarg.keymanager. support_value_`
-**** 「 kmip.init.interface _ value _ 」と入力します
-**** 「 kmip.init.ipaddr _ value _ 」と入力します
-**** 「 kmip.init.netmask _ value _ 」と入力します
-**** 「 kmip.init.gateway _ value _ 」と入力します
+*** bootarg.storageencryption.support_value_`
+*** bootarg.keymanager. support_value_`
+*** 'bootarg.onboard keymanager_value_`
 
 
-... オンボードキーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示されている bootarg 値を確認します。
-+
-**** bootarg.storageencryption.support_value_`
-**** bootarg.keymanager. support_value_`
-**** 'bootarg.onboard keymanager_value_`
-
-
-... 'avenv' コマンドを使用して変更した環境変数を保存します
-... printenv_variable-name_` コマンドを使用して、変更を確認します。
-
-
+.. 'avenv' コマンドを使用して変更した環境変数を保存します
+.. printenv_variable-name_` コマンドを使用して、変更を確認します。
 
 
 

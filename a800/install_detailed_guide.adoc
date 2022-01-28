@@ -210,8 +210,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 .手順
 . アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=edc42447-f721-4cbe-b080-ab0c0123a139["2 ノードスイッチレスクラスタをケーブル接続"^]）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
-
-
++
 [cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
@@ -222,8 +221,8 @@ image:../media/oie_legend_icon_1_dp.png[""]
  a| 
 HA インターコネクトポートをケーブル接続します。
 
-* e0b から e0b
-* e1b から e1bimage:../media/drw_affa800_ha_pair_cabling.png[""]
+** e0b から e0b
+** e1b から e1bimage:../media/drw_affa800_ha_pair_cabling.png[""]
 
 
 
@@ -233,8 +232,8 @@ image:../media/oie_legend_icon_2_lg.png[""]
  a| 
 クラスタインターコネクトポートをケーブル接続します。
 
-* e0a から e0a
-* e1a から e1aimage:../media/drw_affa800_tnsc_clust_cabling.png[""]
+** e0a から e0a
+** e1a から e1aimage:../media/drw_affa800_tnsc_clust_cabling.png[""]
 
 
 
@@ -280,8 +279,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 .手順
 . アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=49e48140-4c5a-4395-a7d7-ab0c0123a10e["スイッチクラスタのケーブル接続"^]）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
-
-
++
 [cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
@@ -292,8 +290,8 @@ image:../media/oie_legend_icon_1_dp.png[""]
  a| 
 HA インターコネクトポートをケーブル接続します。
 
-* e0b から e0b
-* e1b から e1bimage:../media/drw_affa800_ha_pair_cabling.png[""]
+** e0b から e0b
+** e1b から e1bimage:../media/drw_affa800_ha_pair_cabling.png[""]
 
 
 
@@ -438,8 +436,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 .手順
 . アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=09dade4f-00bd-4d41-97d7-ab0c0123a0b4["1 台のドライブシェルフへのコントローラのケーブル接続"^] または、コントローラモジュールを 1 台のシェルフにケーブル接続するためのステップバイステップの手順を参照してください。
-
-
++
 [cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
@@ -476,8 +473,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 .手順
 . 次のアニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=fe50ac38-9375-4e6b-85af-ab0c0123a0e0["2 台のドライブシェルフへのコントローラのケーブル接続"^]）または記載された手順に従って、 2 台のドライブシェルフにコントローラをケーブル接続します。
-
-
++
 [cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 

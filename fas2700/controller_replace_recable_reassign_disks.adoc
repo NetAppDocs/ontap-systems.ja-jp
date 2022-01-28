@@ -16,7 +16,6 @@ summary: ストレージを再度ケーブル接続し、ディスクの再割�
 
 == 手順 1 ：システムにケーブルを再接続します
 
-[role="lead"]
 診断の実行後、コントローラモジュールのストレージとネットワークを再度ケーブル接続する必要があります。
 
 .手順
@@ -35,7 +34,6 @@ summary: ストレージを再度ケーブル接続し、ディスクの再割�
 
 == 手順 2 ：ディスクを再割り当てする
 
-[role="lead"]
 HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。スタンドアロンシステムでは、 ID をディスクに手動で再割り当てする必要があります。
 
 構成に適した手順を使用する必要があります。
@@ -69,13 +67,12 @@ link:controller_replace_complete_system_restoration.md#["2 ノード MetroCluste
 
 === オプション 1 ： HA システムでシステム ID の変更を確認する
 
-[role="lead"]
 _replacement _node のブート時にシステム ID の変更を確定し、その変更が実施されたことを確認する必要があります。
 
 この手順は、 HA ペアの ONTAP を実行するシステムにのみ適用されます。
 
 . _replacement _node が Maintenance モードになっている場合 (`*>` プロンプトが表示されている場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます
-. システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 y 」と入力し、ノードをブートします
+. システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _ node の LOADER プロンプトから「 y 」と入力し、ノードをブートします。「 boot_ontap 」
 . _replacement _node コンソールに Waiting for giveback... というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show
 +
 コマンド出力には、障害ノードでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。
@@ -98,7 +95,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 advanced モードで続行するかどうかを確認するプロンプトが表示されたら、「 y 」と入力します。advanced モードのプロンプトが表示されます（ * > ）。
 
 .. コアダンプをすべて保存します。「 system node run -node _local-node-name_partner savecore 」
-.. savecore コマンドの完了を待機してからギブバックを実行します。
+.. savecore コマンドが完了するのを待ってからギブバックを実行します
 +
 次のコマンドを入力すると、 savecore コマンドの進行状況を監視できます。 'system node run -node _local-node-name_partner savecore -s
 
@@ -123,11 +120,11 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62
 
 .. ギブバックが完了したら、 HA ペアが正常でテイクオーバーが可能であることを確認します。 storage failover show
 +
-「 storage failover show 」コマンドの出力。パートナーメッセージに変更されたシステム ID を含めることはできません。
+「 storage failover show 」コマンドの出力に、パートナーメッセージで変更されたシステム ID は含まれません。
 
 
 
-. ディスクが正しく割り当てられたことを確認します。 storage disk show -ownership
+. ディスクが正しく割り当てられたことを確認します。「 storage disk show -ownership
 +
 replacement _node には、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。
 
@@ -150,7 +147,6 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 
 === オプション 2 ： ONTAP でスタンドアロンシステムにシステム ID を手動で再割り当てする
 
-[role="lead"]
 スタンドアロンシステムでは、システムを通常の動作状態に戻す前に、新しいコントローラのシステム ID にディスクを手動で再割り当てする必要があります。
 
 .このタスクについて
@@ -207,7 +203,6 @@ disk_name    system-1  (118065481)  Pool0  J8Y0TDZC       system-1  (118065481)
 
 === オプション 3 ： 2 ノード MetroCluster 構成のシステムにシステム ID を手動で再割り当てする
 
-[role="lead"]
 ONTAP を実行している 2 ノード MetroCluster 構成では、システムを通常の動作状態に戻す前に、新しいコントローラのシステム ID にディスクを手動で再割り当てする必要があります。
 
 この手順は、 ONTAP を実行している 2 ノード MetroCluster 構成のシステムにのみ適用されます。

@@ -1528,7 +1528,6 @@
   <block id="2c21bbc4fedbc89cf2641efbdb7149ec" category="list-text">電源ケーブルの固定クリップを開き、電源装置から電源ケーブルを抜きます。</block>
   <block id="2a7ce9c8119e6f6a28ebcd55a7fc3098" category="list-text">電源から電源ケーブルを抜きます。</block>
   <block id="1bdc46934af8b9f35655b38de6850eea" category="list-text">固定ツメを押しながらカムハンドルを回転させて、コントローラモジュールから電源装置を引き出せるようにします。</block>
-  <block id="9c03d0963b089ae70659698f39325954" category="paragraph">* 注意： *</block>
   <block id="4526cb831bd4192817bdc8a7d21be70e" category="paragraph">電源装置は奥行きがないので、コントローラモジュールから突然落下して負傷することがないように、取り外すときは必ず両手で支えてください。</block>
   <block id="59b278fa95360efca7786da48e036f4d" category="image-alt">DRW A250 は PSU を交換します</block>
   <block id="1b2219e72635f17b115bf4b878fa99f2" category="cell">電源装置の固定ツメ（青）</block>
@@ -1711,7 +1710,6 @@
   <block id="9c4e18c684a6b54fb00bd7eef15cba95" category="paragraph"><block ref="9c4e18c684a6b54fb00bd7eef15cba95" category="inline-link-rx"></block></block>
   <block id="46dc7a6019d827f81ffce7b535eb038e" category="section-title">手順 2 ：電源装置を移動します</block>
   <block id="309cd2af9d204470ca807bef5f4f1fa9" category="paragraph">コントローラモジュールを交換する場合は、障害のあるコントローラモジュールから交換用コントローラモジュールに電源装置を移動する必要があります。</block>
-  <block id="e6f1713e90643163fb1b0317897addce" category="paragraph">** 注意 :**</block>
   <block id="b0399a57cd6e3c4c8baf26d76e9353f9" category="list-text">電源装置を新しいコントローラモジュールに移して取り付けます。</block>
   <block id="489f4d822f036e8983d65332d7a37f54" category="section-title">手順 3 ：ファンを移動します</block>
   <block id="6e84c6f5de78e87ef68b12592b7a3451" category="paragraph">障害が発生したコントローラモジュールを交換する場合は、障害のあるコントローラモジュールから交換用モジュールにファンを移動する必要があります。</block>
@@ -1722,22 +1720,17 @@
   <block id="48305d46318ca8d808105dab6b4407c9" category="list-text">残りのファンモジュールに対して上記の手順を繰り返します。</block>
   <block id="1229beab8577341c3e1295090613296f" category="section-title">手順 4 ：ブートメディアを移動します</block>
   <block id="631d48b6a978901aa9dd527f9e0c0de1" category="paragraph">コントローラモジュールのエアダクトの下の AFF A250 には、ブートメディアデバイスが 1 つあります。障害のあるコントローラモジュールから交換用コントローラモジュールにコントローラモジュールを移動する必要があります。</block>
-  <block id="f8ecc0af9834a24861c69f2116dfba84" category="paragraph">ブートメディアを固定しているネジを外すために、 No.1 マグネットプラスドライバが必要です。コントローラモジュール内のスペースには制約があるため、ネジを失うことがないようにマグネットでに取り付ける必要があります。</block>
   <block id="208327117af481bf4a428ddcd144a3d8" category="list-text">障害のあるコントローラモジュールから交換用コントローラモジュールへのブートメディアの場所を確認して移動します。</block>
   <block id="e09e6d2db19a96426f8b4d9fa4401743" category="image-alt">DRW A250 は、ブートメディアの交換に使用します</block>
   <block id="378896073d06c35c7666ecc139650bf3" category="cell">障害のあるコントローラモジュールのマザーボードにブートメディアを固定しているネジを外します。</block>
   <block id="42f1d337fd4fa932f99275b46ae051e9" category="paragraph">障害のあるコントローラモジュールからブートメディアを持ち上げて取り出します。</block>
-  <block id="d0b3ba11e0366aa9c45318890a6e4e06" category="list-text">#1 磁気ネジドライバを使用してブートメディアからネジを外し、マグネットの上に安全に置きます。</block>
   <block id="127d279adcbd74de15692d5956600cec" category="list-text">ブートメディアをソケットから直接そっと持ち上げ、交換用コントローラモジュールの所定の位置に合わせます。</block>
-  <block id="40d18ec9fdf666cb2bab625df6116d78" category="list-text">No.1 磁気ネジドライバインサートを使用して、ブートメディアのネジを締めます。</block>
   <block id="b87725fc2bdeda91a5fd85aed6e3e365" category="admonition">ブートメディアのネジを締めるときは力を加えないでください。ひびが入ることがあります。</block>
   <block id="3a03dd2c91e538d3e67a42cab9b8cce1" category="section-title">手順 5 ： DIMM を移動します</block>
   <block id="981355f252d77b57262594c30633c45b" category="paragraph">DIMM を移動するには、障害のあるコントローラの DIMM の場所を確認し、 DIMM を交換用コントローラに移動して、特定の手順を実行します。</block>
   <block id="96a0b9a4e5b5cb607315b40a8b1ab180" category="list-text">障害のあるコントローラモジュールから交換用コントローラモジュールに DIMM を移動します。</block>
-  <block id="b01ebf76def2c231f4cfd6494e6308b3" category="admonition">障害のあるコントローラモジュールで使用していたスロットと同じスロットに各 DIMM を取り付けます。</block>
   <block id="d3eea109bda6ee1479d43eadef9ba2e5" category="list-text">交換用コントローラモジュールで対応する DIMM スロットの場所を確認します。</block>
   <block id="3d0cde66503bd652bf1cc2b5212da61d" category="list-text">DIMM ソケットのツメが開いた状態になっていることを確認し、 DIMM をソケットに対して垂直に挿入します。</block>
-  <block id="131a49cdadc5e0d3e10cbb9d2cdb06f4" category="list-text">残りの DIMM についても、上記の手順を繰り返します。</block>
   <block id="056e32e05ee357b7b5810599adfe19d7" category="section-title">手順 6 ：メザニンカードを移動します</block>
   <block id="c5bf586441a563a1c5456f0a84d2e336" category="paragraph">メザニンカードを移動するには、ケーブル接続と QSFP および SFP をポートから取り外し、メザニンカードを交換用コントローラに移動し、すべての QSFP と SFP をポートに再度取り付けて、ポートにケーブルを接続する必要があります。</block>
   <block id="f01e12831b76cf482945cbdc2c226aab" category="list-text">障害のあるコントローラモジュールからメザニンカードの場所を確認して移動します。</block>
@@ -1748,15 +1741,11 @@
   <block id="52d353425f8ccedacb04b93cba007d8c" category="paragraph">メザニンカードを移動します。</block>
   <block id="07908a8ed136fe75294dee34a1478fff" category="list-text">メザニンカードに接続されているケーブルをすべて取り外します。</block>
   <block id="d4854e7a4329e705d371be59c5147642" category="list-text">メザニンカードに搭載されている可能性がある SFP モジュールまたは QSFP モジュールをすべて取り外し、脇に置きます。</block>
-  <block id="5b1fa4d0bd186bd71f9346757c33bec3" category="list-text">磁気ネジドライバを使用して、障害のあるコントローラモジュールの前面とメザニンカードからネジを取り外し、マグネットの上に安全に置きます。</block>
   <block id="4247520fcd039df38a72ea760056b2fe" category="list-text">メザニンカードをソケットからそっと持ち上げて、交換用コントローラの同じ位置に移動します。</block>
   <block id="4ef22d26cd64dbdf3c02afa8b5a2801f" category="list-text">メザニンカードを交換用コントローラの所定の位置にそっと合わせます。</block>
-  <block id="24282b43652b7e16f28cc0c563d45f89" category="list-text">磁気ネジドライバの No.1 インサートを使用して、交換用コントローラモジュールの前面とメザニンカードのネジを締めます。</block>
   <block id="d0c09aa73e378d998c2a6a47432cf89b" category="admonition">メザニンカードのネジを締めるときは力を加えないでください。ひびが入ることがあります。</block>
-  <block id="39ff4e0cb154641744ad5032357da004" category="list-text">障害のあるコントローラモジュールに別のメザニンカードがある場合は、上記の手順を繰り返します。</block>
   <block id="18e4071e64f8958d9e5eeeca0130f19d" category="list-text">取り外した SFP モジュールまたは QSFP モジュールをメザニンカードに挿入します。</block>
   <block id="1c4b9eb7937f4450f0a872f4d796f7aa" category="section-title">手順 7 ： NV バッテリを移動する</block>
-  <block id="8dd2768af2606f3c8a4e98843b696b5a" category="paragraph">コントローラモジュールを交換する場合は、障害のあるコントローラモジュールから交換用コントローラモジュールに NV バッテリを移動する必要があります</block>
   <block id="35e9bb6518844a891762cc28aa4821b8" category="list-text">障害のあるコントローラモジュールから交換用コントローラモジュールに NVMEM バッテリの場所を確認して移動します。</block>
   <block id="81c13bdfc94c175b0cb0830513c72fa7" category="image-alt">NVMEM バッテリは DRW A250 に交換します</block>
   <block id="bcb72abac7a1b4e5d62301236d2af4ff" category="cell">バッテリプラグ前面のクリップを押します。</block>
@@ -1880,14 +1869,12 @@
   <block id="3135971a1a6b077c3715b12bc5012909" category="section-title">手順 1 ：コントローラモジュールを取り外す - AFF A250</block>
   <block id="8beaeea3973b517e3c11448d6de4ac1d" category="paragraph">コントローラモジュール内部のコンポーネントにアクセスするには、まずコントローラモジュールをシステムから取り外し、続いてコントローラモジュールのカバーを外す必要があります。</block>
   <block id="d67487df6ee13914e99a3efddf90ac53" category="section-title">手順 2 ：ブートメディアを交換します</block>
-  <block id="a83ec72be9a5ece49e2a361748e59b2f" category="paragraph">ブートメディアを固定しているネジを外すために、 No.1 マグネットプラスドライバが必要です。コントローラモジュール内のスペースに制約があるため、ネジを緩める必要がないように、マグネットが取り付けられている必要があります。</block>
   <block id="e768bbd7b60efb998832a5ed6ea67094" category="paragraph">次のビデオまたは表に示す手順を使用して、ブートメディアを交換できます。</block>
   <block id="4e6bb88f4f022c54e39743f60f40ba31" category="inline-link">ブートメディアの交換</block>
   <block id="309692e2e6422b29d61bf94a5fadf996" category="paragraph"><block ref="309692e2e6422b29d61bf94a5fadf996" category="inline-link-rx"></block></block>
   <block id="d6d4491715edf2124be2de2bfa82d7fc" category="list-text">コントローラモジュールから障害のあるブートメディアの場所を確認し、交換します。</block>
   <block id="16399bec33f4a102d5e3a28654820c5c" category="paragraph">コントローラモジュールのマザーボードにブートメディアを固定しているネジを外します。</block>
   <block id="572b2c4e1ee565030f3cfc4d0b81e94a" category="paragraph">ブートメディアをコントローラモジュールから持ち上げて取り出します。</block>
-  <block id="2406f28b320f4189e328f238cc41ca7e" category="list-text">No.1 磁気ネジドライバを使用して障害のあるブートメディアからネジを外し、マグネットの上に安全に置きます。</block>
   <block id="bb350a33e7d50a40c4fa37bfbe41f7f0" category="list-text">障害のあるブートメディアをソケットから直接そっと持ち上げて脇に置きます。</block>
   <block id="1f92c66f78b6103eb17febd6a0a5f8f3" category="list-text">交換用ブートメディアを静電気防止用の梱包バッグから取り出し、コントローラモジュールの所定の位置に合わせます。</block>
   <block id="0e76e990df2967dffc59ccd2aa5f6178" category="section-title">手順 3 ：ブートイメージをブートメディアに転送します</block>
@@ -1942,16 +1929,12 @@
   <block id="1d5e6759e2bef51b7fae2c4ab7ce482f" category="paragraph">メザニンカードを取り外します。</block>
   <block id="ec1caaca33d3a05b021847729aa40cf3" category="list-text">障害のあるメザニンカードに接続されているケーブルをすべて取り外します。</block>
   <block id="88d1403b9ff7da0e02580013be227aef" category="list-text">障害のあるメザニンカードにある可能性のある SFP モジュールまたは QSFP モジュールを取り外して、脇に置きます。</block>
-  <block id="25a90be66c83838c4e863e80d2882a44" category="list-text">No.1 磁気ネジドライバを使用してコントローラモジュール前面からネジを外し、マグネットの上に安全に置きます。</block>
-  <block id="e73d3ff1dc3a87579058fd96c5be9141" category="list-text">#1 磁気ネジドライバを使用して、障害のあるメザニンカードのネジを緩めます。</block>
   <block id="9f358638435d8a9ef3fe0f035621dcfb" category="list-text">障害のあるメザニンカードをソケットから直接そっと持ち上げて、脇に置きます</block>
   <block id="f961927adda34318d2db703a92bee152" category="list-text">交換用メザニンカードを静電気防止用の梱包バッグから取り出し、コントローラモジュールの内面に合わせます。</block>
   <block id="87328040ae6a340ecbcba7b7a87619d1" category="list-text">交換用のメザニンカードを所定の位置に慎重に合わせます。</block>
-  <block id="c9fef0f45d0eeb44c6ccbade1ac5a763" category="list-text">磁気ネジドライバの No.1 インサートを使用して、コントローラモジュール前面とメザニンカードのネジを締めます。</block>
   <block id="8e2a462d22bb430aa436ced4c203cc72" category="list-text">障害のあるメザニンカードから取り外した SFP モジュールまたは QSFP モジュールを、交換用のメザニンカードに挿入します。</block>
   <block id="59f3bf9d5372fa36fc6660aca56f7667" category="list-text">メザニンカードを取り付けるには、次の手順に従います。</block>
   <block id="0099a9bb52112e36b72a4ca407fea7c5" category="list-text">システムにメザニンカードがない場合は、新しいメザニンカードを取り付けます。</block>
-  <block id="949662c48a5b82d7f60cbe2e108f571e" category="list-text">No.1 磁気ネジドライバを使用してコントローラモジュール前面からネジを外し、メザニンカードスロットを覆っている前面プレートを取り外して、マグネットの上に安全に脇に置きます。</block>
   <block id="29bc0206e3def43146c2b0cef54fc220" category="list-text">メザニンカードを静電気防止用の梱包バッグから取り出し、コントローラモジュールの内側に合わせます。</block>
   <block id="e93ef5bd6bf13f3e4a28ed9516ec26aa" category="list-text">メザニンカードを所定の位置にゆっくりと合わせます。</block>
   <block id="02b15a117fae0033195ecb7d4d766e3c" category="section-title">手順 4 ：コントローラモジュールを再度取り付けます</block>
@@ -2080,33 +2063,27 @@
   <block id="117a00785fdf02074d05fddbc86f7975" category="paragraph">HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。_replacement _node のブート時にシステム ID の変更を確定し、その変更が実施されたことを確認する必要があります。</block>
   <block id="fa5ccc1fbe9017cdfc585a7ca2f2637a" category="paragraph">この手順は、 HA ペアの ONTAP を実行するシステムにのみ適用されます。</block>
   <block id="ade99ddf24ee766d0846b6173160e37f" category="list-text">_replacement _node が Maintenance モードになっている場合 (`*&gt;` プロンプトが表示されている場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます</block>
-  <block id="188f2d33c82265d54696d7fb9143f330" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 y 」と入力し、ノードをブートします。</block>
   <block id="fbe06d7223609c920831e2dffe0e0a96" category="list-text">_replacement _node コンソールに Waiting for giveback... というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show</block>
   <block id="3e06d4583220bf6e3116f03fc794dab1" category="paragraph">コマンド出力には、障害ノードでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。</block>
   <block id="23b40d7aca05dd545bc77221d79f3fbe" category="list-text">正常なノードから、コアダンプがすべて保存されたことを確認します。</block>
   <block id="0024dc783d0c8562c1fc277cc83c5743" category="list-text">advanced 権限レベルに切り替えます。「 set -privilege advanced 」</block>
   <block id="29adb61bb9bfa040df540cdb2a8f55b8" category="paragraph">advanced モードで続行するかどうかを確認するプロンプトが表示されたら、「 y 」と入力します。advanced モードのプロンプトが表示されます（ * &gt; ）。</block>
   <block id="24f4ab41f6dece9a1c57f1c61b020b5e" category="list-text">コアダンプをすべて保存します。「 system node run -node _local-node-name_partner savecore 」</block>
-  <block id="fade8851f4ec10ecbc3dd39f6c05a0a1" category="list-text">savecore コマンドの完了を待機してからギブバックを実行します。</block>
   <block id="2881d85992269eeb47fa4c6d0a50cbb1" category="paragraph">次のコマンドを入力すると、 savecore コマンドの進行状況を監視できます。 'system node run -node _local-node-name_partner savecore -s</block>
   <block id="b13199f709e74272c57e556731e1d9d1" category="list-text">admin 権限レベルに戻ります。「 set -privilege admin 」</block>
   <block id="dc480d49888be9665881255050d6e3fd" category="list-text">ノードをギブバックします。</block>
   <block id="fd9cb5bd192d51c123b3ac2ec23324eb" category="list-text">正常なノードから、交換したノードのストレージをギブバックします。「 storage failover giveback -ofnode replacement_node_name _</block>
-  <block id="03e79e765171f29a2a5d453c8fadb6a8" category="paragraph">_replacement _node はストレージをテイクバックしてブートを完了します。</block>
   <block id="28da5bb072dbf0747d23fbed65cffcc0" category="paragraph">システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は 'y' と入力する必要があります</block>
   <block id="25df42cd5ae2e7223d293aeda0c623ed" category="admonition">ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。</block>
   <block id="1e2a0fcc2986a119062540d6a8a9681f" category="inline-link">使用しているバージョンの ONTAP 9 に対する『ハイアベイラビリティ構成ガイド』を検索してください</block>
   <block id="8761710e49b8b20d4b6cc2adb064a0b2" category="paragraph"><block ref="8761710e49b8b20d4b6cc2adb064a0b2" category="inline-link-rx"></block></block>
   <block id="a138242d674238dc6089a602c6c8909b" category="list-text">ギブバックが完了したら、 HA ペアが正常でテイクオーバーが可能であることを確認します。 storage failover show</block>
-  <block id="354190e7801971c5ecbacd4e6e046a0d" category="paragraph">「 storage failover show 」コマンドの出力。パートナーメッセージに変更されたシステム ID を含めることはできません。</block>
-  <block id="a07f9d7e22fb874df6c0f87aa7e8b627" category="list-text">ディスクが正しく割り当てられたことを確認します。 storage disk show -ownership</block>
   <block id="4ba4f1aaf81ebb9600884198e939b4a2" category="paragraph">replacement _node には、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。</block>
   <block id="ee6adef69d8b8786ea9c8ed7878b0970" category="list-text">システムが MetroCluster 構成になっている場合は ' ノードのステータスを監視します MetroCluster node show</block>
   <block id="96f33e8ca303de63172f7e23cbb961c5" category="paragraph">MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster の node show -fields node-systemid コマンドの出力には、 MetroCluster の設定が通常の状態に戻るまで古いシステム ID が表示されます。</block>
   <block id="e73102dae0c8597be4416dbc7fd1d930" category="list-text">ノードが MetroCluster 構成になっている場合は、 MetroCluster の状態に応じて、元の所有者がディザスタサイトのノードである場合に DR ホーム ID のフィールドにディスクの元の所有者が表示されることを確認します。</block>
   <block id="04c5eb35419cf0bd4d5c48c1e597c8d5" category="paragraph">これは、次の両方に該当する場合に必要です。</block>
   <block id="6a7d6dc8ed992a6e2e0f4bae8d5e7c87" category="list-text">MetroCluster 構成がスイッチオーバー状態である。</block>
-  <block id="d095d1deb4d147fcc8070337a5a4ab10" category="list-text">replacement _node は、ディザスタサイトのディスクの現在の所有者です。</block>
   <block id="c4fa5cbc6fffac990762dc388e4ce15d" category="inline-link">4 ノード MetroCluster 構成での HA テイクオーバーおよび MetroCluster スイッチオーバー中のディスク所有権の変更</block>
   <block id="0a5ead00345fce4227fecb1825aad142" category="paragraph"><block ref="0a5ead00345fce4227fecb1825aad142" category="inline-link-rx"></block></block>
   <block id="381526217dead66932ed7e3b4d0903a5" category="list-text">システムが MetroCluster 構成になっている場合は、各ノードが構成されていることを確認します。「 MetroCluster node show -fields configurion-state 」</block>
@@ -2409,7 +2386,6 @@
   <block id="ec221492ab283fe7bbfd27ad39bbda82" category="doc">コントローラモジュールを取り外し、ブートメディア - AFF A700s を交換します</block>
   <block id="e9e66c1bd59e20ff8acce6fb41f94461" category="paragraph">コントローラモジュールをシャーシから取り外して開き、障害が発生したブートメディアを交換する必要があります。</block>
   <block id="e88eebc1797d32d10ed4abe331b3ecb6" category="section-title">手順 2 ：ブートメディアを交換する - AFF A700s</block>
-  <block id="6eaf42cd6c3dc0491c26da7774b5a740" category="paragraph">ブートメディアを固定しているネジを外すためにプラスドライバが必要です。</block>
   <block id="d49fe2e5280db996ef1801aa2312cf51" category="list-text">ブートメディアの場所を確認します。</block>
   <block id="ea47f8c3d75d0ae8c63333493732e287" category="list-text">必要に応じてエアダクトを開きます。</block>
   <block id="95b0ed2bf52614c4803a52c7bfbc4da6" category="list-text">必要に応じて、固定ラッチを解除し、コントローラモジュールからライザーを取り外して、中央の PCIe モジュールであるライザー 2 を取り外します。</block>
@@ -2606,7 +2582,6 @@
   <block id="9829cc73f1aa57fe4c8f650070116d1b" category="list-text">正常なノードから：「 storage failover giveback -ofnode partner_node_name</block>
   <block id="6ccdc0e53e02a4d771ffb485d5c0df6c" category="paragraph">障害ノードはストレージをテイクバックしてブートを完了し、その後リブートして再び正常なノードによってテイクオーバーされます。</block>
   <block id="08ca2eade8768d4ee7e1752168f719ac" category="paragraph"><block ref="08ca2eade8768d4ee7e1752168f719ac" category="inline-link-rx"></block></block>
-  <block id="c6798d066434a48b34b6ccdf46d8102d" category="list-text">storage failover show-giveback コマンドを使用して、ギブバック処理の進捗を監視します。</block>
   <block id="2e2dd412417cfab75b0340fc82c0c08b" category="list-text">ギブバック処理が完了したら、「 storage failover show 」コマンドを使用して、 HA ペアが正常でテイクオーバーが可能であることを確認します。</block>
   <block id="d2438a9a8b88afff0b59df6c125b3884" category="list-text">storage failover modify コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。</block>
   <block id="d574c271d37aff5dfc97b6ecd338458f" category="doc">リストアと交換の手順を完了します - AFF A700s</block>
@@ -2621,7 +2596,6 @@
   <block id="5ac2ce23b602bd690adf87a4ddadc899" category="section-title">RTC バッテリ交換後、コントローラモジュールを再度取り付け、日時を設定します</block>
   <block id="864c38e2026ab798db96e7d96459d9e2" category="doc">システムにケーブルを再接続し、ディスクを再割り当てします - AFF A700s</block>
   <block id="a0d8eae32c5a472f83afef8b93706ea5" category="paragraph">交換用手順を完了してシステムを完全に動作状態に戻すには、ストレージのケーブル接続をやり直し、必要に応じて NetApp Storage Encryption の構成をリストアし、新しいコントローラのライセンスをインストールする必要があります。システムを完全に動作状態にリストアするには、一連の作業を完了しておく必要があります。</block>
-  <block id="7762733471d5b473835d903a5329768b" category="list-text">システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 y 」と入力し、ノードをブートします</block>
   <block id="38681c139b912b74e9f2c478df5e20c0" category="summary">システムの NVRAM バッテリを交換するには、コントローラモジュールをシステムから取り出し、バッテリを取り外して交換し、コントローラモジュールを再度取り付ける必要があります。</block>
   <block id="ddb14ada2ef97be8ad7f40139160426e" category="doc">NVRAM バッテリを交換してください - AFF A700s</block>
   <block id="b4528c91634508bf10f34e21233169c0" category="list-text">コントローラモジュールを安全な場所に置いておきます。</block>
@@ -3337,7 +3311,6 @@
   <block id="cffb18da589dc8eb39d4f5a7cbaa5a2e" category="doc">ハードウェア FAS8200 の移動と交換</block>
   <block id="5a05c6605a020e1a2163f79eb10968be" category="section-title">手順 1 ：電源装置を移動します</block>
   <block id="038dcab758c4b41667b9b5f59032a880" category="paragraph">シャーシを交換するときに電源装置を移動するには、電源装置の電源を切って接続を解除し、古いシャーシから電源装置を取り出して、交換用シャーシに取り付けて接続します。</block>
-  <block id="441dfb16c24713e7af70526edb4affe8" category="paragraph">* 注意： * 電源装置を取り外すときは、必ず両手で支えながら作業してください。</block>
   <block id="2d7dc0640073f973b9652b985a0a8fd0" category="list-text">電源ケーブルを再接続し、電源ケーブル固定用ツメを使用して電源装置に固定します。</block>
   <block id="88eec411dfba0693644591d63a044cce" category="admonition">電源ケーブルは電源装置にのみ接続してください。この時点では、電源ケーブルを電源に接続しないでください。</block>
   <block id="ef04965c46c97b1b98ea3ea5fde7b27c" category="section-title">手順 2 ：ファンを移動する</block>
@@ -3345,7 +3318,6 @@
   <block id="26f3e4c2d12be621415f2684a8c8d8d2" category="list-text">ファンモジュールのカムハンドルのリリースラッチを押し下げ、カムハンドルを下に引きます。</block>
   <block id="873ff90864f62182ca0ed7a91a266e52" category="image-alt">DRW fas32xx ファン</block>
   <block id="8c8c98956870ffea5e2297a73a1972a1" category="paragraph">ファンモジュール警告 LED</block>
-  <block id="43aff7142bbe30a772a8534bbde74073" category="paragraph">* 注意： * ファンモジュールはショートです。シャーシから突然落下してけがをすることがないように、必ず空いている手でファンモジュールの底面を支えてください。</block>
   <block id="12aec4fbc7647a1e52c203364239e9ee" category="section-title">手順 3 ：コントローラモジュールを取り外す</block>
   <block id="7bb3e2efcb7169f8ff52d523079a8978" category="paragraph">シャーシを交換するには、古いシャーシからコントローラモジュールを取り外す必要があります。</block>
   <block id="e380cd5a7cddfc790ff74ea752c39cf9" category="list-text">コントローラモジュールを安全な場所に置いておきます。シャーシに別のコントローラモジュールがある場合は、上記の手順を繰り返します。</block>
@@ -3438,7 +3410,6 @@
   <block id="70fa93bebd0670b231da3d1406a94a24" category="doc">システムにケーブルを再接続し、ディスクを FAS8200 に再割り当てします</block>
   <block id="db4ac51eac732409ebf4cfe43b3fb873" category="paragraph">HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。構成に適した手順を使用する必要があります。</block>
   <block id="f17087a04e743f4a2bf4548df3debabf" category="section-title">オプション 1 ： HA システムでシステム ID の変更を確認する</block>
-  <block id="f099c3d90bd5d885da1ab6eb776cdc1d" category="list-text">システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 y 」と入力し、ノードをブートします</block>
   <block id="3e341b5bacaf258a486ce052e47d9540" category="list-text">_replacement _node コンソールに「 Waiting for giveback... 」というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。「 storage failover show</block>
   <block id="f3d373f54eb86985beb0d9cfa19a08a0" category="list-text">「 avecore 」コマンドが完了するのを待ってから、ギブバックを発行します。</block>
   <block id="01c7f5871dd965cb03f77372fa85988e" category="paragraph">「 avecore 」コマンドの進行状況を監視するには、次のコマンドを入力します。「 system node run -node _local-node-name_partner savecore -s</block>
@@ -3726,7 +3697,6 @@
   <block id="6fac6f4e16017f2b4bc0f9591a002153" category="summary">これらのリンクは、 AFF および FAS の他のモデルにも使用できます。</block>
   <block id="7d6a5a71ff18c3c788750313d0a4e7e0" category="doc">その他のプラットフォームモデル</block>
   <block id="f453086a36d64a5193cd4183c14bcd72" category="inline-link-macro">AFF 8000 シリーズのドキュメント</block>
-  <block id="a5a70d6211cf9ac5dd107f2510c9aa85" category="paragraph"><block ref="a5a70d6211cf9ac5dd107f2510c9aa85" category="inline-link-macro-rx"></block></block>
   <block id="71bdc94f19d5947bd1cb6d437f119ba2" category="inline-link-macro">FAS8000 シリーズのドキュメント</block>
   <block id="2b3a51bca746a221bf4a0af6d3098ccf" category="paragraph"><block ref="2b3a51bca746a221bf4a0af6d3098ccf" category="inline-link-macro-rx"></block></block>
   <block id="f739ddc76de0a287d2c0b563d814e953" category="inline-link-macro">FAS6200 シリーズのドキュメント</block>
@@ -4792,7 +4762,6 @@
   <block id="d9a7a09d2734ecc763c0c5a8586a61a3" category="doc">システムにケーブルを再接続し、ディスクを再割り当てします。 AFF C190</block>
   <block id="b279b6600d5af224d26ab7bab80082c7" category="section-title">手順 2 ： HA システムでシステム ID の変更を確認する</block>
   <block id="1a654e01c14bfd5cd4699372c3ef6bf9" category="list-text">_replacement _node が Maintenance モードの場合（プロンプトに「 * &gt; 」が表示されている場合）は、 Maintenance モードを終了して、 LOADER プロンプトを表示します。</block>
-  <block id="0f6cfabce8012e5ed4945a3f6b1ae1f1" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 * y * 」と入力し、ノードをブートします。</block>
   <block id="5df49253d4e35c978d098ad728de36b5" category="list-text">_replacement _node コンソールに Waiting for giveback... というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。</block>
   <block id="7bbd6982e43cdc0293fb6f27cb2ba130" category="paragraph">'*storage failover show*</block>
   <block id="109773e48c8731216edae51d1686c8bc" category="list-text">advanced 権限レベルに切り替えます。</block>
@@ -5652,7 +5621,6 @@
   <block id="418a022f56c1e24ab49e10afac569c94" category="list-text">DIMM をソケットに合わせ、固定ツメが所定の位置に収まるまで DIMM をそっとソケットに押し込み、交換用 DIMM を取り付けます。</block>
   <block id="680d8cf9003e2f0c6c16768d83979722" category="section-title">手順 5 ：ディスクを再割り当てする</block>
   <block id="f48da66fac9628892734da282b687412" category="list-text">交換用ノードがメンテナンス・モード（プロンプトが表示されている）の場合は ' メンテナンス・モードを終了し ' LOADER プロンプト： halt を表示します</block>
-  <block id="ef5194f67c4591b47b23fc50aaadfc8b" category="list-text">交換用ノードの LOADER プロンプトからノードをブートし、システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられたら、「 y 」と入力します。</block>
   <block id="4f72f46e41b488e589d00c457c136571" category="paragraph">「 boot_ontap bye 」というプロンプトが表示されます</block>
   <block id="0a777e4b645d66ac575356b85c16ed55" category="paragraph">自動ブートが設定されている場合は、ノードがリブートします。</block>
   <block id="554a23fbeb893ba3c6cb31c09b0d481f" category="paragraph">MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster node show -fields node-systemid' コマンドの出力には、 MetroCluster 設定が通常の状態に戻るまで古いシステム ID が表示されます。</block>
@@ -7837,7 +7805,6 @@
   <block id="f5275334d8eb3b5cf9ea9368de40cedc" category="list-text">モードとキー ID の情報を含むドライブの詳細がコマンド出力に表示される場合は、 NSE が設定されているので、 NSE の設定を確認する必要があります。</block>
   <block id="b1dfba2b33907e87a5254267b34a3e32" category="list-text">「キーマネージャ」タイプに「 onboard 」と表示されていることを確認し、 OKM 情報を手動でバックアップします。</block>
   <block id="46c9d33b77f9064bc8fbe1743c6118eb" category="list-text">ノードは安全にシャットダウンできます。</block>
-  <block id="dbbad696dee4d20bd1cd54cf27764455" category="paragraph">HA ペアの場合は、正常なノードから障害ノードをテイクオーバーします。「 storage failover takeover -ofnode impaired_node_name</block>
   <block id="54d84b238a1f0e6e83e06b2788451c8f" category="paragraph">+ 障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。</block>
   <block id="8179ceedf2aad3a2fafb48feb6a32bdb" category="list-text">ディスク障害のためにコマンドが失敗した場合は、ディスクを物理的に取り外します。ただし、交換用のディスクを受け取るまでは、ディスクをスロットに残しておきます。</block>
   <block id="b6c33850022ae87ff1d2d111469a0da5" category="paragraph">： ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。</block>
@@ -7873,8 +7840,6 @@
   <block id="d61a84f0b033dd225ff9a1af9b0f08a5" category="paragraph">バッテリを持ち上げます。* 注： * バッテリの極の向きをメモしておいてください。</block>
   <block id="9bc926f854c0657b4a72a1008c1e9b68" category="paragraph"><block ref="9bc926f854c0657b4a72a1008c1e9b68" category="inline-link-macro-rx"></block></block>
   <block id="78929efae941c9a4e2fc6993c4c10c4e" category="paragraph">「 image_xxx.tgz 」ファイルを格納できる適切な容量のストレージを搭載した MBR/FAT32 にフォーマットされた USB フラッシュドライブが必要です。</block>
-  <block id="5ac2b95b4f745d4433376fcb49059b9b" category="paragraph">ブートメディアを固定しているネジを外すために、 No.1 プラスドライバが必要です。コントローラモジュール内のスペースには制約があるため、ネジを失うことがないようにマグネットでに取り付ける必要があります。</block>
-  <block id="8e396831cde0d768a154c4fc8b4d19a2" category="list-text">No.1 磁気ドライバを使用して障害のあるブートメディアからネジを外し、マグネットの上に安全に置きます。</block>
   <block id="f8030e72e320113cd38b31fd4e52b741" category="list-text">No.1 磁気ドライバインサートを使用して、ブートメディアのネジを締めます。</block>
   <block id="f7b32babba20f290222a62a499496335" category="section-title">オプション 2 ： MetroCluster 内のシステム</block>
   <block id="62d2a69a13772574552f6d8e154bf2c0" category="paragraph"><block ref="62d2a69a13772574552f6d8e154bf2c0" category="inline-link-macro-rx"></block></block>
@@ -8254,15 +8219,11 @@
   <block id="bd925fbdb9cf654c2d3eb13ad0bf2458" category="admonition">このデータは、 security key-manager backup show コマンドまたは security key-manager onboard show-backup コマンドの出力になります。</block>
   <block id="1491d378fbbc2d9a6048e5b9b67a396a" category="paragraph">バックアップデータを入力します。</block>
   <block id="da0c8baa25fcee791ffa412ec90044ca" category="list-text">パートナーノードにコンソールケーブルを接続し、 admin としてログインします。</block>
-  <block id="d56eff580ae48ab39a09d9a52b4e0012" category="list-text">storage failover giveback -fromnode local-only -cfo-aggregates true コマンドを使用して、 CFO アグリゲートのみをギブバックします。</block>
   <block id="56b9aa57eb07c87d93d8f36e42537891" category="list-text">CIFS セッションが開いているためにコマンドが失敗する場合は、 CIFS セッションを閉じる方法をお客様に確認します。</block>
   <block id="99cf22e04f567c5375349f8aa14becd4" category="list-text">パートナーの準備ができていないためにコマンドが失敗した場合は、 NVRAMs が同期されるまで 5 分待ちます。</block>
   <block id="4d2b3834d59169dcbb17afc3c699e3ac" category="list-text">NDMP 、 SnapMirror 、または SnapVault のプロセスが原因でコマンドが失敗する場合は、そのプロセスを無効にします。詳細については、該当するコンテンツを参照してください。</block>
-  <block id="4f4dc469cf90094fa617cfc9fbd54127" category="list-text">ギブバックが完了したら、 storage failover show コマンドと storage failover show-giveback コマンドを使用して、フェイルオーバーとギブバックのステータスを確認します。</block>
   <block id="0ca120792c1da0e7f9613ff316afb1bf" category="list-text">security key-manager onboard sync コマンドを実行し、プロンプトが表示されたらパスフレーズを入力します。</block>
   <block id="c58ae875af45a4be51e14080108983b6" category="list-text">security key-manager key query コマンドを入力して、オンボード・キー・マネージャに格納されているすべてのキーの詳細を表示し、すべての認証キーの「 restored 」列 = 「 yes / true 」であることを確認します。</block>
-  <block id="4cbb5f62935a5a6181b7351f6ebea2b8" category="list-text">storage failover giveback -fromnode local コマンドを使用してターゲットノードをギブバックします。</block>
-  <block id="54c7d0a15d0b9d4865bb65094824a369" category="list-text">storage failover show コマンドを使用して、ギブバックのステータスを確認します。ギブバックの完了が報告されたら 3 分待ちます。</block>
   <block id="a69e3df3fc089f72b8d4244ee2e280dc" category="list-text">クラスタシェルプロンプトで、 net int show -is-home false コマンドを入力し、ホームノードおよびポートにない論理インターフェイスを表示します。</block>
   <block id="01644ff2aec9678b64ae01d076703f1a" category="paragraph">いずれかのインターフェイスが「 false 」と表示されている場合は、 net int revert コマンドを使用して、これらのインターフェイスをホームポートに戻します。</block>
   <block id="db7ef1cc9d8937ba84d376a5424078cb" category="list-text">コンソールケーブルをターゲットノードに接続し、 version -v コマンドを実行して ONTAP のバージョンを確認します。</block>
@@ -8380,4 +8341,38 @@
   <block id="40b8d4029fd45462b5253feed39a5dd7" category="doc">コントローラモジュール FAS500f を交換してください</block>
   <block id="2793f813a4803a99d34c84da3cc988ff" category="doc">コントローラモジュール - FAS8300 と FAS8700 を交換します</block>
   <block id="05e9126f65b50fdcc5343f6e7a30ee13" category="doc">コントローラモジュールを交換します - AFF A200</block>
+  <block id="09ba8705674baa2bb12600bee5888bda" category="paragraph">正常なノードから障害ノードをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name _</block>
+  <block id="6c0c224b8e9179a7c25ea93532145021" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 * y * 」と入力し、ノードをブートします。</block>
+  <block id="d7330da3fefbffbe126bbfae916b2005" category="list-text">savecore コマンドが完了するのを待ってからギブバックを実行します</block>
+  <block id="03a45c592eebddeaf80cccbc66213075" category="paragraph">システムを完全に動作状態に戻すには、 NetApp Storage Encryption の構成をリストアし（必要な場合）、新しいコントローラのライセンスをインストールし、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。</block>
+  <block id="73d21b6023874255fc8bc704f7454d7e" category="paragraph">正常なノードから障害ノードをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name</block>
+  <block id="07bcf96175c4fb31a9a4900272f1bd18" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _ node の LOADER プロンプトから「 y 」と入力し、ノードをブートします。「 boot_ontap 」</block>
+  <block id="f14e5f22bf7ba96b4c82cde849259a00" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 y 」と入力し、ノードをブートします。「 boot_ontap 」</block>
+  <block id="588550e231fd9dcead167f2e3a8a2926" category="paragraph">ブートメディアを固定しているネジを外すためにプラスドライバが必要です。</block>
+  <block id="c2a9feacea3374ba5c6052aaa36c24d5" category="list-text">storage failover modify コマンドを使用して自動ギブバックを無効にした場合は ' 自動ギブバックをリストアします</block>
+  <block id="8eea6ffadcece75bbf0826ed26885fb9" category="list-text">この手順はシステムの停止を伴います。2 ノードクラスタでは、マルチノードクラスタでサービスが完全に停止し、部分的に停止します。</block>
+  <block id="c651d2f010c85fa1c8605da5e127657e" category="paragraph"><block ref="c651d2f010c85fa1c8605da5e127657e" category="inline-link-macro-rx"></block></block>
+  <block id="72dd2309b9e786d12d19350620a3d631" category="list-text">交換用ノードの LOADER プロンプトからノードをブートし、システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられたら、「 y 」と入力します。</block>
+  <block id="36128c6aafe926585eba615393cf3649" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 y 」と入力し、ノードをブートします。</block>
+  <block id="eea6adb7d48797d40ac3b9ea4f505d9f" category="paragraph">MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster の node-show -fields node-systemid_command 出力には、 MetroCluster の設定が通常の状態に戻るまで古いシステム ID が表示されます。</block>
+  <block id="511831afd7b3843888ba00743f2e205e" category="list-text">電源装置の接続を解除します。</block>
+  <block id="24e3ea03dd6cd41feb1c45f7310ac774" category="paragraph">ブートメディアを固定しているネジを外すために、 No.1 プラスドライバが必要です。コントローラモジュール内のスペースには制約があるため、ネジを失うことがないようにマグネットでに取り付ける必要があります。</block>
+  <block id="c0a129ed8a4dffac36687970dd9e76e4" category="list-text">No.1 磁気ドライバを使用してブートメディアからネジを外し、マグネットの上に安全に置きます。</block>
+  <block id="eaaefabb01a4d3a25c4ee0ebd0294ead" category="paragraph">+ image ： ../ media /drw_A250_dimm_replace.png [ めでぃ Image ： ../ media/drw_A250_dimm_replace.png ]</block>
+  <block id="94cac2ca01b8e422961358e25e3f9a03" category="paragraph">+ 注：障害のあるコントローラモジュールで使用していたスロットと同じスロットに各 DIMM を取り付けます。</block>
+  <block id="4d682883d3e1a9518c0b12f296e8d3da" category="list-text">残りの DIMM についても、上記の手順を繰り返します。</block>
+  <block id="4f33c405e177c16965ddeb4f33742c5a" category="list-text">磁気ドライバ 1 を使用して、障害のあるコントローラモジュールの前面とメザニンカードからネジを取り外し、マグネットの上に安全に置きます。</block>
+  <block id="515f69ac19c21c33dcf5567d940bc1a6" category="list-text">磁気ドライバの No.1 インサートを使用して、交換用コントローラモジュールの前面とメザニンカードのネジを締めます。</block>
+  <block id="9c23253df9fe144e525f9767980fd31c" category="list-text">障害のあるコントローラモジュールに別のメザニンカードがある場合は、上記の手順を繰り返します。</block>
+  <block id="181a3766f31135df2527b723f0cd0bf0" category="paragraph">コントローラモジュールを交換する場合は、障害のあるコントローラモジュールから交換用コントローラモジュールに NV バッテリを移動する必要があります。</block>
+  <block id="b4d2392449336ea5c3bc8befa0e0b844" category="list-text">No.1 磁気ドライバを使用して、障害のあるブートメディアからネジを外し、マグネットの上に安全に置きます。</block>
+  <block id="143c767e9327d7fe1aa0dcf0cd8bf42b" category="list-text">No.1 磁気ドライバを使用してコントローラモジュールの前面からネジを外し、マグネットの上に安全に置いておきます。</block>
+  <block id="04397c96980709afd9322bc55ad16021" category="list-text">No.1 磁気ドライバを使用して、障害のあるメザニンカードのネジを緩めます。</block>
+  <block id="d9d89fa2d8f2d045677b6db851f13e8d" category="list-text">磁気ドライバの No.1 インサートを使用して、コントローラモジュール前面とメザニンカードのネジを締めます。</block>
+  <block id="b5bb4830b9cb6cf86cab4203bf9c0ff2" category="list-text">コントローラモジュールの前面からネジを外し、メザニンカードスロットをカバーするカバーを No.1 磁気ドライバを使用して外し、マグネットの上に安全な場所に置きます。</block>
+  <block id="67bbbac5bc6e3d667f32ac654b6a9d3a" category="paragraph">ブートメディアを固定しているネジを外すために、 No.1 プラスドライバが必要です。コントローラモジュール内のスペースに制約があるため、ネジを緩める必要がないように、マグネットが取り付けられている必要があります。</block>
+  <block id="a1d9910a32ae0cf0a663ca53df75fc48" category="paragraph">+ 重要：障害のあるコントローラモジュールで使用していたスロットと同じスロットに各 DIMM を取り付けます。</block>
+  <block id="e65c4f5a39a793b014b217f53d825905" category="list-text">コントローラモジュールをシャーシに挿入します。</block>
+  <block id="04767794ed138df3aa3f519e53e96bcc" category="list-text">「 storage failover giveback -fromnode local-only -cfo-aggregates true 」コマンドを使用して、 CFO アグリゲートだけをギブバックします。</block>
+  <block id="2f6a11061d2c04a9d9730e06edaa97a6" category="list-text">ギブバックが完了したら、 storage failover show コマンドおよび storage failover show-giveback コマンドを使用して、フェイルオーバーとギブバックのステータスを確認します。</block>
 </blocks>
