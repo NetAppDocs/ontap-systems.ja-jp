@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, drive, aggregate, ha, pair, serving, data, i/o, hot-remove an ns224 
 summary: ドライブからアグリゲートを削除した NS224 ドライブシェルフは、 HA ペア内でデータを提供中（ I/O が実行中）にホットリムーブできます。 
 ---
-= シェルフのホットリムーブ： &#8201;&#8201;NS224 シェルフ
+= シェルフのホットリムーブ— NS224 シェルフ
 :icons: font
 :imagesdir: ../media/
 
