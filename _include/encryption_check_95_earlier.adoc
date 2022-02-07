@@ -62,7 +62,7 @@ NOTE: プロンプトで、お客様のオンボードキー管理のパスフ�
 
 *** すべての認証キーに対して 'restored' カラムに yes が表示されていることを確認します 'securitykey-manager key show-detail
 *** advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
-*** コマンドを入力して、 OKM のバックアップ情報を表示します。「 security key-manager backup show 」
+*** コマンドを入力して、 OKM バックアップ情報を表示します：「 securitykey-manager backup show 」
 *** バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。
 *** admin モードに戻ります。 'set-priv admin'
 *** ノードは安全にシャットダウンできます。

@@ -40,14 +40,14 @@ HA ペアのストレージシステムの場合、手順の最後でギブバ�
 
 . _replacement _node が Maintenance モードになっている場合 (`*>` プロンプトが表示されている場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます
 . システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 y 」と入力し、ノードをブートします。
-. _replacement _node コンソールに Waiting for giveback... というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show
+. _replacement _node コンソールに「 Waiting for giveback... 」というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。「 storage failover show
 +
 コマンド出力には、障害ノードでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。
 
 +
 [listing]
 ----
-node1> storage failover show
+node1> `storage failover show`
                                     Takeover
 Node              Partner           Possible     State Description
 ------------      ------------      --------     -------------------------------------
@@ -85,7 +85,7 @@ NOTE: ギブバックが拒否されている場合は、拒否を無効にす�
 +
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対するハイアベイラビリティ構成のコンテンツを検索してください"]
 
-.. ギブバックが完了したら、 HA ペアが正常でテイクオーバーが可能であることを確認します。 storage failover show
+.. ギブバックが完了したら、 HA ペアが正常で、テイクオーバーが可能であることを確認します。「 storage failover show
 +
 「 storage failover show 」コマンドの出力に、パートナーメッセージで変更されたシステム ID は含まれません。
 
@@ -98,7 +98,7 @@ replacement _node には、新しいシステム ID が表示されます。次�
 +
 [listing]
 ----
-node1> storage disk show -ownership
+node1> `storage disk show -ownership`
 
 Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
 ----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
@@ -110,7 +110,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 ----
 . システムが MetroCluster 構成になっている場合は ' ノードのステータスを監視します MetroCluster node show
 +
-MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster の node show -fields node-systemid コマンドの出力には、 MetroCluster の設定が通常の状態に戻るまで古いシステム ID が表示されます。
+MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster node show -fields node-systemid' コマンドの出力には、 MetroCluster 設定が通常の状態に戻るまで古いシステム ID が表示されます。
 
 . ノードが MetroCluster 構成になっている場合は、 MetroCluster の状態に応じて、元の所有者がディザスタサイトのノードである場合に DR ホーム ID のフィールドにディスクの元の所有者が表示されることを確認します。
 +

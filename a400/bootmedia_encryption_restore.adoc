@@ -85,7 +85,7 @@ NOTE: CIFS を終了原因すると、データが失われる可能性があり
 ** NDMP 、 SnapMirror 、または SnapVault のプロセスが原因でコマンドが失敗する場合は、そのプロセスを無効にします。詳細については、該当するドキュメントセンターを参照してください。
 
 
-. ギブバックが完了したら、「 storage failover show 」コマンドと「 storage failover show-giveback 」コマンドを使用して、フェイルオーバーとギブバックのステータスを確認します。
+. ギブバックが完了したら 'storage failover show' および storage failover show-giveback コマンドを使用して ' フェイルオーバーとギブバックのステータスを確認します
 +
 CFO アグリゲート（ルートアグリゲートおよび CFO 形式のデータアグリゲート）のみが表示されます。
 

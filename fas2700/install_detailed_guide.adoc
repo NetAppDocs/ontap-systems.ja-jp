@@ -266,6 +266,7 @@ image:../media/drw_c190_u_mgmt_cbling.png[""]
  a| 
 image:../media/oie_legend_icon_attn_symbol.png[""]
  a| 
+この時点ではまだ電源コードをプラグに接続しないでください。
 
 |===
 . ストレージをケーブル接続するには、を参照してください link:install_detailed_guide.md#["コントローラとドライブシェルフのケーブル接続"]

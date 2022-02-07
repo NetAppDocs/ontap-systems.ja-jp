@@ -17,7 +17,7 @@ ONTAP を実行している 2 ノード MetroCluster 構成では、システム
 +
 システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示されたら 'Y' を入力する必要があります
 
-. 正常なノードから古いシステム ID を表示します。 MetroCluster node show -fields node-systemid 、 dr-partner-systemid
+. 正常なノードから古いシステム ID を表示します MetroCluster node show -fields node-systemid'dr-partner-systemid
 +
 この例では、 Node_B_1 が古いノードであり、古いシステム ID は 118073209 です。
 

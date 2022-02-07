@@ -50,7 +50,7 @@ HA ペアのストレージシステムの場合、手順の最後でギブバ�
 +
 [listing]
 ----
-node1> storage failover show
+node1> `storage failover show`
                                     Takeover
 Node              Partner           Possible     State Description
 ------------      ------------      --------     -------------------------------------
@@ -101,7 +101,7 @@ replacement _node には、新しいシステム ID が表示されます。次�
 +
 [listing]
 ----
-node1> storage disk show -ownership
+node1> `storage disk show -ownership`
 
 Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
 ----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
@@ -113,7 +113,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 ----
 . システムが MetroCluster 構成になっている場合は ' ノードのステータスを監視します MetroCluster node show
 +
-MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster の node show -fields node-systemid コマンドの出力には、 MetroCluster の設定が通常の状態に戻るまで古いシステム ID が表示されます。
+MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster node show -fields node-systemid' コマンドの出力には、 MetroCluster 設定が通常の状態に戻るまで古いシステム ID が表示されます。
 
 . ノードが MetroCluster 構成になっている場合は、 MetroCluster の状態に応じて、元の所有者がディザスタサイトのノードである場合に DR ホーム ID のフィールドにディスクの元の所有者が表示されることを確認します。
 +

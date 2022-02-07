@@ -54,7 +54,7 @@ _replacement _node のブート時にシステム ID の変更を確定し、そ
 +
 [listing]
 ----
-node1> storage failover show
+node1> `storage failover show`
                                     Takeover
 Node              Partner           Possible     State Description
 ------------      ------------      --------     -------------------------------------
@@ -105,7 +105,7 @@ replacement _node には、新しいシステム ID が表示されます。次�
 +
 [listing]
 ----
-node1> storage disk show -ownership
+node1> `storage disk show -ownership`
 
 Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
 ----- ------    ----- ------ -------- -------    -------    -------  ---------  ---

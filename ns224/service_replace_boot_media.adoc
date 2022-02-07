@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, boot, media, run, ontap, nvme, module, nsm, firmware, version, nondisruptive, i/o 
 summary: ONTAP 9.7 以降を実行している HA ペアの NS224 ドライブシェルフでブートメディアに障害が発生した場合、またはシェルフで NVMe シェルフモジュール（ NSM ）ファームウェアバージョン 1.1x 以降が実行されている場合は、ブートメディアを交換できます。ブートメディアの交換は、ドライブシェルフの電源をオンにした状態で、 I/O を実行中のまま、無停止で実行できます。 
 ---
-= ブートメディア - NS224 シェルフを交換してください
+= ブートメディア -NS224 シェルフを交換してください
 :icons: font
 :imagesdir: ../media/
 

@@ -109,7 +109,7 @@ date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state
 ギブバックを待っています
  a| 
 .. パートナーノードにログインします。
-.. storage failover show コマンドを使用して、ターゲットノードでギブバックの準備が完了していることを確認します。
+.. 「 storage failover show 」コマンドを使用して、ターゲットノードでギブバックの準備が完了していることを確認します。
 
 
 |===

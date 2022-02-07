@@ -231,7 +231,7 @@ HA ペア
 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html["ONTAP 9 ハイアベイラビリティ構成ガイド"]
 
 ====
-.. 「 storage failover show-giveback 」コマンドを使用して、ギブバック処理の進捗を監視します。
+.. 「 storage failover show 」 -giveback コマンドを使用して、ギブバック処理の進捗を監視します。
 .. ギブバック処理が完了したら、「 storage failover show 」コマンドを使用して、 HA ペアが正常でテイクオーバーが可能であることを確認します。
 .. 「 storage failover modify 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
 
