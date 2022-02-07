@@ -5204,7 +5204,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-31 16:04:46 +0000">01/31/2022</time>
+    <time datetime="2022-02-07 15:34:56 +0000">02/07/2022</time>
     
   
 
@@ -5217,19 +5217,19 @@
           style="border-radius: 50%;"/>
   </a>
   
-  <a target="_blank" href="https://github.com/thrisun">
-    <img  class="avatar avatar-small"
-          alt="thrisun"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/30325635?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
   <a target="_blank" href="https://github.com/netapp-martyh">
     <img  class="avatar avatar-small"
           alt="netapp-martyh"
           width="20" height="20"
           src="https://avatars.githubusercontent.com/u/66496079?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/thrisun">
+    <img  class="avatar avatar-small"
+          alt="thrisun"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/30325635?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -5242,7 +5242,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>環境変数を確認したら、オンボードキーマネージャ（ OKM ）、 NetApp Storage Encryption （ NSE ）、または NetApp Volume Encryption （ NVE ）が有効になっているシステムに固有の手順を実行する必要があります。</p>
+<p>環境変数を確認したら、オンボードキーマネージャ（ OKM ）、 NetApp Storage Encryption （ NSE ）、および NetApp Volume Encryption （ NVE ）のリストア手順を実行する必要があります。</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -5309,7 +5309,7 @@
 <p>というメッセージが表示された場合：このノードを halt するのではなく、 [y/n] をクリックしますか？「 y 」と入力します</p>
 </li>
 <li>
-<p>LOADER プロンプトで、 boot_ontap menu コマンドを入力します。</p>
+<p>LOADER プロンプトで「 boot_ontap menu 」コマンドを入力します。</p>
 </li>
 </ol>
 </div></div></td>
@@ -5324,7 +5324,7 @@
 <p>この手順の冒頭でお客様から入手したオンボードキーマネージャのパスフレーズを入力します。</p>
 </li>
 <li>
-<p>バックアップ・データの入力を求められたら、この手順の最初にキャプチャしたバックアップ・データを貼り付けます。security key-manager backup show コマンドまたは security key-manager onboard show-backup コマンドの出力を貼り付けます。</p>
+<p>バックアップ・データの入力を求められたら、このセクションの冒頭でキャプチャしたバックアップ・データを貼り付けます。security key-manager backup show コマンドまたは security key-manager onboard show-backup コマンドの出力を貼り付けます。</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -5332,7 +5332,7 @@
 <img src="/us-en/ontap-systems/images/note.svg" alt="注記">
 </td>
 <td class="content">
-このデータは、 security key-manager backup show コマンドまたは security key-manager onboard show-backup コマンドの出力になります。
+このデータは 'security key-manager backup show コマンドまたは security key-manager onboard show-backup コマンドのいずれかから出力されます
 </td>
 </tr>
 </table>
@@ -5342,6 +5342,16 @@
 </div>
 <div class="paragraph">
 <p>バックアップデータを入力します。</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>-------------- バックアップの開始 TmV0QXBwIEISELAALAC6AALAG3ATVATLH1DBZ12piVATVZ4ATLASYFSSAJAXAJAXAZAAALAC6AALACBAALAC6AALACZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADDAAAAAAAAAAAAAAAAAAAADDAAAAAAAAAAAAAAAAADATAAAAADAAAAAAADADAAAAAAAAAADAAAAAAAAAAADAAAAAADAAAAAADAAAAAADAAAADAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADADAAAADAAAADAAAAA。。。H4nPQM0nrDRYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+</div>
+<div class="paragraph">
+<p>+- - - - - - - - - - - - - エンド・バックアップ：</p>
+</div>
+</div>
 </div>
 </li>
 <li>
@@ -5388,7 +5398,7 @@ CIFS を終了原因すると、データが失われる可能性があります
 </div>
 </li>
 <li>
-<p>ギブバックが完了したら、 storage failover show コマンドおよび storage failover show-giveback コマンドを使用して、フェイルオーバーとギブバックのステータスを確認します。</p>
+<p>ギブバックが完了したら、「 storage failover show 」コマンドと「 storage failover show-giveback 」コマンドを使用して、フェイルオーバーとギブバックのステータスを確認します。</p>
 <div class="paragraph">
 <p>CFO アグリゲート（ルートアグリゲートおよび CFO 形式のデータアグリゲート）のみが表示されます。</p>
 </div>
@@ -5398,10 +5408,10 @@ CIFS を終了原因すると、データが失われる可能性があります
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>security key-manager onboard sync コマンドを実行し、プロンプトが表示されたらパスフレーズを入力します。</p>
+<p>「 securitykey-manager onboard sync 」コマンドを実行し、プロンプトが表示されたらパスフレーズを入力します。</p>
 </li>
 <li>
-<p>security key-manager key query コマンドを入力して、オンボード・キー・マネージャに格納されているすべてのキーの詳細を表示し、すべての認証キーの「 restored 」列 = 「 yes / true 」であることを確認します。</p>
+<p>'security key-manager key-query' コマンドを入力して ' オンボード・キー・マネージャに格納されているすべてのキーの詳細な表示を表示し ' すべての認証キーの 'restored`column=yes/true' を確認します</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -5428,7 +5438,7 @@ CIFS を終了原因すると、データが失われる可能性があります
 <p>「 storage failover giveback -fromnode local 」コマンドを使用してターゲットノードをギブバックします。</p>
 </li>
 <li>
-<p>「 storage failover show 」コマンドを使用して、ギブバックのステータスを確認します。このステータスは、レポートが完了してから 3 分後に表示されます。</p>
+<p>storage failover show コマンドを使用して ' ギブバックのステータスを確認します完了を報告してから 3 分後に確認します</p>
 <div class="paragraph">
 <p>20 分経ってもギブバックが完了しない場合は、カスタマーサポートにお問い合わせください。</p>
 </div>
@@ -5440,10 +5450,10 @@ CIFS を終了原因すると、データが失われる可能性があります
 </div>
 </li>
 <li>
-<p>コンソールケーブルをターゲットノードに接続し、 version -v コマンドを実行して ONTAP のバージョンを確認します。</p>
+<p>コンソールケーブルをターゲットノードに移動し、「 version-v 」コマンドを実行して ONTAP のバージョンを確認します。</p>
 </li>
 <li>
-<p>storage failover modify -node local-auto-giveback true コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。</p>
+<p>「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。</p>
 </li>
 </ol>
 </div>
@@ -5492,7 +5502,7 @@ CIFS を終了原因すると、データが失われる可能性があります
 <p>パートナーノードにログインします。</p>
 </li>
 <li>
-<p>storage failover show コマンドを使用して、ターゲットノードでギブバックの準備が完了していることを確認します。</p>
+<p>「 storage failover show 」コマンドを使用して、ターゲットノードでギブバックの準備が完了していることを確認します。</p>
 </li>
 </ol>
 </div></div></td>
@@ -5535,22 +5545,22 @@ CIFS を終了原因すると、データが失われる可能性があります
 <p>3 分待ってから、 storage failover show コマンドを使用してフェイルオーバーステータスを確認します。</p>
 </li>
 <li>
-<p>クラスタシェルプロンプトで、 net int show -is-home false コマンドを入力し、ホームノードおよびポートにない論理インターフェイスを表示します。</p>
+<p>クラスタシェル・プロンプトで、 net int show -is-home false コマンドを入力し、ホーム・ノードおよびポートにない論理インターフェイスを一覧表示します。</p>
 <div class="paragraph">
-<p>いずれかのインターフェイスが「 false 」と表示されている場合は、 net int revert コマンドを使用して、これらのインターフェイスをホームポートに戻します。</p>
+<p>いずれかのインターフェイスが「 false 」と表示されている場合は、「 net int revert 」コマンドを使用して、これらのインターフェイスをホームポートに戻します。</p>
 </div>
 </li>
 <li>
-<p>コンソールケーブルをターゲットノードに接続し、 version -v コマンドを実行して ONTAP のバージョンを確認します。</p>
+<p>コンソールケーブルをターゲットノードに移動し、「 version-v 」コマンドを実行して ONTAP のバージョンを確認します。</p>
 </li>
 <li>
-<p>storage failover modify -node local-auto-giveback true コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。</p>
+<p>「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。</p>
 </li>
 <li>
-<p>クラスタシェルプロンプトで storage encryption disk show を使用して出力を確認します。</p>
+<p>クラスタシェルプロンプトで「 storage encryption disk show 」を使用して出力を確認します。</p>
 </li>
 <li>
-<p>security key-manager key query コマンドを使用して、キー管理サーバに格納されている認証キーのキー ID を表示します。</p>
+<p>キー管理サーバに保存されている暗号化キーと認証キーを表示するには 'security key-manager key-query コマンドを使用します</p>
 <div class="ulist">
 <ul>
 <li>
@@ -5574,7 +5584,7 @@ CIFS を終了原因すると、データが失われる可能性があります
 <li>
 <p>'Key Manager type`=onboard ' および 'restored' カラム = 'yes/true' 以外の場合は、 security key-manager onboard sync コマンドを使用して Key Manager タイプを再同期します。</p>
 <div class="paragraph">
-<p>security key-manager key query を使用して ' すべての認証キーの Restored カラム = 'yes/true' を確認します</p>
+<p>security key-manager key-query コマンドを使用して ' すべての認証キーの Restored カラム = 'yes/true' を確認します</p>
 </div>
 </li>
 </ul>
@@ -5587,7 +5597,7 @@ CIFS を終了原因すると、データが失われる可能性があります
 <p>storage failover giveback -fromnode local コマンドを使用してノードをギブバックします。</p>
 </li>
 <li>
-<p>storage failover modify -node local-auto-giveback true コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。</p>
+<p>「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。</p>
 </li>
 </ol>
 </div>

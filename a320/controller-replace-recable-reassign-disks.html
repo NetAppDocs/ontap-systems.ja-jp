@@ -5195,7 +5195,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-31 16:04:46 +0000">01/31/2022</time>
+    <time datetime="2022-02-07 15:34:56 +0000">02/07/2022</time>
     
   
 
@@ -5279,7 +5279,7 @@
 <p>_replacement _node が Maintenance モードになっている場合 (<code>*&gt;</code> プロンプトが表示されている場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます</p>
 </li>
 <li>
-<p>システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _ node の LOADER プロンプトから「 y 」と入力し、ノードをブートします。「 boot_ontap 」</p>
+<p>システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 y 」と入力し、ノードをブートします</p>
 </li>
 <li>
 <p>_replacement _node コンソールに「 Waiting for giveback&#8230;&#8203; 」というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。「 storage failover show</p>
@@ -5288,7 +5288,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>node1&gt; storage failover show
+<pre>node1&gt; `storage failover show`
                                     Takeover
 Node              Partner           Possible     State Description
 ------------      ------------      --------     -------------------------------------
@@ -5371,7 +5371,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>node1&gt; storage disk show -ownership
+<pre>node1&gt; `storage disk show -ownership`
 
 Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
 ----- ------    ----- ------ -------- -------    -------    -------  ---------  ---

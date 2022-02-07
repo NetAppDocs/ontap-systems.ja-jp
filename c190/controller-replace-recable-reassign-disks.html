@@ -5204,7 +5204,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-31 16:04:46 +0000">01/31/2022</time>
+    <time datetime="2022-02-07 15:34:56 +0000">02/07/2022</time>
     
   
 
@@ -5296,14 +5296,14 @@
 <li>
 <p>_replacement _node コンソールに Waiting for giveback&#8230;&#8203; というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。</p>
 <div class="paragraph">
-<p>'<strong>storage failover show</strong></p>
+<p>'<strong>' storage failover show'</strong></p>
 </div>
 <div class="paragraph">
 <p>コマンド出力には、障害ノードでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>node1&gt; storage failover show
+<pre>node1&gt; `storage failover show`
                                     Takeover
 Node              Partner           Possible     State Description
 ------------      ------------      --------     -------------------------------------
@@ -5390,9 +5390,9 @@ node2             node1             -            Waiting for giveback (HA mailbo
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>ギブバックが完了したら、 HA ペアが正常でテイクオーバーが可能であることを確認します。 storage failover show</p>
+<p>ギブバックが完了したら、 HA ペアが正常で、テイクオーバーが可能であることを確認します。「 storage failover show</p>
 <div class="paragraph">
-<p>「 storage failover show 」コマンドの出力。「パートナーで変更されたシステム ID 」メッセージは含めないでください。</p>
+<p>storage failover show コマンドの出力には 'System ID changed on partner というメッセージは含まれていません</p>
 </div>
 </li>
 </ol>
@@ -5405,7 +5405,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>node1&gt; storage disk show -ownership
+<pre>node1&gt; `storage disk show -ownership`
 
 Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
 ----- ------    ----- ------ -------- -------    -------    -------  ---------  ---

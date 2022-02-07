@@ -5204,7 +5204,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-31 16:04:46 +0000">01/31/2022</time>
+    <time datetime="2022-02-07 15:34:56 +0000">02/07/2022</time>
     
   
 
@@ -5865,9 +5865,9 @@ node2             node1             -            Waiting for giveback (HA mailbo
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>ギブバックが完了したら、 HA ペアが正常でテイクオーバーが可能であることを確認します。 storage failover show</p>
+<p>ギブバックが完了したら、 HA ペアが正常で、テイクオーバーが可能であることを確認します。「 storage failover show</p>
 <div class="paragraph">
-<p>storage failover show コマンドの出力に、パートナーメッセージで変更されたシステム ID を含めることはできません。</p>
+<p>「 storage failover show 」コマンドの出力に、パートナーメッセージで変更されたシステム ID は含まれません。</p>
 </div>
 </li>
 </ol>
@@ -5895,7 +5895,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 <li>
 <p>システムが MetroCluster 構成になっている場合は ' ノードのステータスを監視します MetroCluster node show</p>
 <div class="paragraph">
-<p>MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster の node show -fields node-systemid コマンドの出力には、 MetroCluster の設定が通常の状態に戻るまで古いシステム ID が表示されます。</p>
+<p>MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster node show -fields node-systemid' コマンドの出力には、 MetroCluster 設定が通常の状態に戻るまで古いシステム ID が表示されます。</p>
 </div>
 </li>
 <li>
@@ -5950,21 +5950,26 @@ dr-group-id            cluster node           configuration-state
 <div class="paragraph lead">
 <p>ストレージまたはボリュームの暗号化を使用するように設定したストレージシステムのコントローラモジュールまたは NVRAM モジュールを交換したら、追加の手順を実行して、暗号化機能を中断させないようにする必要があります。ストレージまたはボリュームの暗号化が有効になっていないストレージシステムでは、このタスクを省略できます。</p>
 </div>
-<div class="paragraph">
+<div class="olist arabic">
+<div class="title">ステップ</div>
+<ol class="arabic">
+<li>
 <p>の該当する手順を使用して、ストレージまたはボリュームの暗号化機能をリストアします <a href="https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html">"CLI での NetApp Encryption の概要"</a>。</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順を実行します。</p>
-</div>
 <div class="ulist">
 <ul>
 <li>
-<p>「オンボード・キー管理の暗号化キーをリストアする」</p>
+<p><a href="https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html">"オンボードキー管理の暗号化キーをリストア"</a></p>
 </li>
 <li>
-<p>「外部キー管理の暗号化キーを復元する」</p>
+<p><a href="https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html">"外部キー管理の暗号化キーをリストアします"</a></p>
 </li>
 </ul>
+</div>
+</li>
+</ol>
 </div>
 </div>
 </div>

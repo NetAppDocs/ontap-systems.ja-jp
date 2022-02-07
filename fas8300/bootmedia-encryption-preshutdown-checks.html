@@ -5204,7 +5204,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-31 16:04:46 +0000">01/31/2022</time>
+    <time datetime="2022-02-07 15:34:56 +0000">02/07/2022</time>
     
   
 
@@ -5234,7 +5234,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>障害ノードをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害ノードのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。</p>
+<p>障害ノードをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害ノードのステータスを確認し、自動ギブバックを無効にして、実行中の ONTAP のバージョンを確認する必要があります。</p>
 </div>
 <div class="paragraph">
 <p>ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。を参照してください <a href="https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html">"CLI での NetApp Encryption の概要"</a>。</p>
@@ -5269,7 +5269,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>コマンドの出力に &lt;lno-DARE &gt; が表示されている場合は、システムで NVE がサポートされていないので、コントローラのシャットダウンに進みます。</p>
+<p>このコマンドの出力に &lt;lno-DARE&gt; または &lt;1Ono-dARE&gt; が表示される場合は、システムが NVE をサポートしていないので、コントローラのシャットダウンに進みます。</p>
 </li>
 <li>
 <p>コマンドの出力に &lt;lno-DARE&gt; が表示されず、システムで ONTAP 9.6 以降が実行されている場合は、次のセクションに進みます。</p>
@@ -5293,23 +5293,23 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>クラスタ内のいずれかのボリュームに対して NVE が設定されているかどうかを確認します。 volume show -is-encrypted true</p>
+<p>クラスタ内のいずれのボリュームにも NVE が使用されているかどうかを確認します。 volume show -is-encrypted true</p>
 <div class="paragraph">
-<p>出力に含まれるボリュームには NVE が設定されているため、 NVE の設定を確認する必要があります。ボリュームが表示されない場合は、 NSE が設定されているかどうかを確認します。</p>
+<p>出力に含まれるボリュームには NVE が設定されているため、 NVE の設定を確認する必要があります。ボリュームが表示されない場合は、 NSE が設定されて使用中であるかどうかを確認します。</p>
 </div>
 </li>
 <li>
-<p>NSE が設定されているかどうかを確認します。「 storage encryption disk show</p>
+<p>NSE が構成され ' 使用されているかどうかを確認します storage encryption disk show</p>
 <div class="ulist">
 <ul>
 <li>
-<p>モードとキー ID の情報を含むドライブの詳細がコマンド出力に表示される場合は、 NSE が設定されているので、 NSE の設定を確認する必要があります。</p>
+<p>モードとキー ID の情報を含むドライブの詳細がコマンド出力に表示される場合は、 NSE が設定されているので、 NSE の設定と使用状況を確認する必要があります。</p>
 </li>
 <li>
 <p>ディスクが表示されない場合は、 NSE は設定されません。</p>
 </li>
 <li>
-<p>NVE と NSE が設定されていない場合は、障害ノードを安全にシャットダウンできます。</p>
+<p>NVE と NSE が設定されていない場合、 NSE キーでドライブが保護されていないため、障害ノードを安全にシャットダウンできます。</p>
 </li>
 </ul>
 </div>
@@ -5321,7 +5321,22 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>キー管理サーバに格納されている認証キーのキー ID を表示します。「 securitykey-manager query</p>
+<p>キー管理サーバに格納されている認証キーのキー ID を表示します。「 security key-manager key-query</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+ONTAP 9.6 リリース以降では、キー管理ツールのタイプが追加されることがあります。タイプは「 KMIP 」、「 AKV 」、「 GCP 」です。これらのタイプを確認するプロセスは 'external' または 'onboard のキー管理タイプを確認するプロセスと同じです
+</td>
+</tr>
+</table>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -5335,14 +5350,12 @@
 </li>
 <li>
 <p>'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' 以外の項目が表示されている場合は ' 追加の手順を実行する必要があります</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' と表示されている場合は 'OKM 情報を手動でバックアップします</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
+<li>
+<p>'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' と表示されている場合は 'OKM 情報を手動でバックアップします</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
 <li>
 <p>advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」</p>
 </li>
@@ -5363,8 +5376,8 @@
 </li>
 <li>
 <p>「キー・マネージャ」タイプに「外部」が表示され、「リストア済み」列に「はい」以外の項目が表示される場合：</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
 <li>
 <p>外部キー管理の認証キーをクラスタ内のすべてのノードにリストアします：「 securitykey-manager external restore</p>
 <div class="paragraph">
@@ -5373,24 +5386,27 @@
 </li>
 </ol>
 </div>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><a href="http://mysupport.netapp.com/">"mysupport.netapp.com"</a></p>
 </div>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
 <li>
-<p>すべての認証キーのリストアされたカラムが 'yes' になっていることを確認しますつまり 'securitykey-manager key query' です</p>
+<p>すべての認証キーについて 'restored' カラムが 'yes' になっていることを確認しますつまり 'security key-manager key-query' です</p>
 </li>
 <li>
 <p>障害ノードをシャットダウンします。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' 以外の項目が表示される場合は ' 次の手順を実行します</p>
 </li>
 </ol>
 </div>
 </li>
-<li>
-<p>'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' 以外の項目が表示される場合は ' 次の手順を実行します</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
 <li>
 <p>onboard security key-manager sync コマンド「 security key-manager sync 」を入力します</p>
 <div class="admonitionblock note">
@@ -5407,7 +5423,7 @@
 </div>
 </li>
 <li>
-<p>すべての認証キーについて 'restored' カラムに yes と表示されていることを確認しますセキュリティ・キーマネージャ・キー・クエリ</p>
+<p>すべての認証キーについて 'restored' カラムに yes と表示されていることを確認します security key-manager key-query</p>
 </li>
 <li>
 <p>「キーマネージャ」タイプに「 onboard 」と表示されていることを確認し、 OKM 情報を手動でバックアップします。</p>
@@ -5430,7 +5446,7 @@
 </ol>
 </div>
 </li>
-</ol>
+</ul>
 </div>
 </div>
 <div class="sect2">
@@ -5438,7 +5454,22 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>キー管理サーバに格納されている認証キーのキー ID を表示します。「 securitykey-manager query</p>
+<p>キー管理サーバに格納されている認証キーのキー ID を表示します。「 security key-manager key-query-key-type NSE-AK</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+ONTAP 9.6 リリース以降では、キー管理ツールのタイプが追加されることがあります。タイプは「 KMIP 」、「 AKV 」、「 GCP 」です。これらのタイプを確認するプロセスは 'external' または 'onboard のキー管理タイプを確認するプロセスと同じです
+</td>
+</tr>
+</table>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -5452,14 +5483,12 @@
 </li>
 <li>
 <p>「キー・マネージャ」タイプに「外部」が表示され、「復元」列に「はい」以外の項目が表示されている場合は、いくつかの追加手順を実行する必要があります。</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' と表示されている場合は 'OKM 情報を手動でバックアップします</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
+<li>
+<p>'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' と表示されている場合は 'OKM 情報を手動でバックアップします</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
 <li>
 <p>advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」</p>
 </li>
@@ -5480,8 +5509,8 @@
 </li>
 <li>
 <p>「キー・マネージャ」タイプに「外部」が表示され、「リストア済み」列に「はい」以外の項目が表示される場合：</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
 <li>
 <p>onboard security key-manager sync コマンド「 security key-manager external sync 」を入力します</p>
 <div class="paragraph">
@@ -5493,10 +5522,10 @@
 <div class="paragraph">
 <p><a href="http://mysupport.netapp.com/">"mysupport.netapp.com"</a></p>
 </div>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
 <li>
-<p>すべての認証キーのリストアされたカラムが 'yes' になっていることを確認しますつまり 'securitykey-manager key query' です</p>
+<p>すべての認証キーについて 'restored' カラムが 'yes' になっていることを確認しますつまり 'security key-manager key-query' です</p>
 </li>
 <li>
 <p>ノードは安全にシャットダウンできます。</p>
@@ -5506,8 +5535,8 @@
 </li>
 <li>
 <p>'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' 以外の項目が表示される場合は ' 次の手順を実行します</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
 <li>
 <p>onboard security key-manager sync コマンド「 security key-manager sync 」を入力します</p>
 <div class="paragraph">
@@ -5516,13 +5545,16 @@
 </li>
 </ol>
 </div>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><a href="http://mysupport.netapp.com/">"mysupport.netapp.com"</a></p>
 </div>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
 <li>
-<p>すべての認証キーについて 'restored' カラムに yes と表示されていることを確認しますセキュリティ・キーマネージャ・キー・クエリ</p>
+<p>すべての認証キーについて 'restored' カラムに yes と表示されていることを確認します security key-manager key-query</p>
 </li>
 <li>
 <p>「キーマネージャ」タイプに「 onboard 」と表示されていることを確認し、 OKM 情報を手動でバックアップします。</p>
@@ -5545,7 +5577,7 @@
 </ol>
 </div>
 </li>
-</ol>
+</ul>
 </div>
 </div>
 </div>
