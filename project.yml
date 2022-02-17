@@ -7,11 +7,18 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
+    langs: ja-jp,us-en,zh-cn,ko-kr
   langs: ja-jp,us-en,zh-cn,ko-kr
 sidebar:
   entries:
-  - title: ホーム
+  - title: AFF および FAS システムのドキュメント
     url: "/index.html"
+  - title: リリースノート
+    entries:
+    - title: 新機能
+      url: "/whats-new.html"
+    - title: リリースノート
+      url: "/rel-notes.html"
   - section: a200
   - section: fas2700
   - section: a250

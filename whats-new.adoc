@@ -1,0 +1,335 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: new, features, fas, aff systems 
+summary:  
+---
+= FAS および AFF システムの新機能
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+FAS および AFF システムの新機能について説明します。
+
+
+
+== 新しいアダプタのサポート
+
+[cols="4*"]
+|===
+| アダプタのパーツ番号 | 説明 | カテゴリ | 最初から利用可能です 
+
+
+ a| 
+https://hwu.netapp.com/adapter/index["X91148A"]
+ a| 
+2 ポート 100GbE RoCE QSFP28
+ a| 
+* ストレージ
+* ネットワーキング
+* HA / MetroCluster
+
+ a| 
+ONTAP 9.8
+
+
+
+ a| 
+https://hwu.netapp.com/adapter/index["X91122A"]
+ a| 
+2 ポート 25GbE RoCE QSFP28
+ a| 
+* ネットワーキング
+* HA / MetroCluster
+
+ a| 
+ONTAP 9.8
+
+
+
+ a| 
+https://hwu.netapp.com/adapter/index["X9170A"]
+ a| 
+NVMe SSD モジュール（ 1TB ）
+ a| 
+コア・ダンプ・デバイス
+ a| 
+ONTAP 9.8
+
+|===
+
+
+== 新たにサポートされるスイッチ
+
+[cols="25h,~,~"]
+|===
+| スイッチ | 説明 | 最初から利用可能です 
+
+
+ a| 
+https://hwu.netapp.com/Switch/Index["36 ポート 100GbE Cisco スイッチ（ X190200 ）"]
+ a| 
+MetroCluster IP 構成のサポートを含め、同じ Cisco Nexus 9336C-FX2 スイッチペアで共有インフラ（クラスタ、 HA 、およびスイッチ接続ストレージ）をサポートします。
+ a| 
+ONTAP 9.9.1
+
+
+
+ a| 
+https://hwu.netapp.com/Switch/Index["36 ポート 100GbE Cisco スイッチ（ X190200 および X190210 ）"]
+ a| 
+Cisco Nexus 9336C-FX2 クラスタインターコネクトスイッチと、 AFF / FAS コントローラのストレージスイッチのサポート、およびフロントエンドのデータ接続。
+ a| 
+ONTAP 9.8
+
+
+
+ a| 
+https://hwu.netapp.com/Switch/Index["Broadcom BES-53248 スイッチ（ X190005 および X190005R ）"]
+ a| 
+Broadcom BES-53248 クラスタインターコネクトスイッチは、 40 / 100GbE ポートを搭載した AFF / FAS コントローラに対応しています。
+ a| 
+ONTAP 9.8
+
+
+
+ a| 
+https://hwu.netapp.com/Switch/Index["36 ポート 100GbE Cisco スイッチ（ X190200 ）"]
+ a| 
+Cisco Nexus 100GbE スイッチを専用ストレージスイッチとして使用し、 NS224 NVMe ドライブシェルフを次のプラットフォームに接続できます。
+
+* AFF A800/AFF ASA A800
+* AFF A700 / AFF ASA A700
+* AFF A400 / AFF ASA A400 を選択します
+* AFF A320
+
+ a| 
+ONTAP 9.8
+
+
+
+ a| 
+https://hwu.netapp.com/Switch/Index["Broadcom BES-53248 スイッチ（ X190005 および X190005R ）"]
+ a| 
+10 / 25GbE ポートを備えた AFF / FAS コントローラでの Broadcom BES-53248 クラスタインターコネクトスイッチのサポート。
+ a| 
+ONTAP 9.5P8.
+
+|===
+
+
+== 新しいプラットフォームのサポート
+
+[cols="2*"]
+|===
+| プラットフォーム（データシートへのリンクあり） | 最初から利用可能です 
+
+
+ a| 
+https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["AFF A900 の略"]
+ a| 
+ONTAP 9.10.1
+
+
+
+ a| 
+https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["AFF A250/AFF ASA A250"]
+ a| 
+ONTAP 9.8
+
+
+
+ a| 
+https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS500f"]
+ a| 
+ONTAP 9.8
+
+
+
+ a| 
+https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["AFF ASA A800"]
+ a| 
+ONTAP 9.8
+
+
+
+ a| 
+https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS8300"]
+ a| 
+ONTAP 9.7
+
+
+
+ a| 
+https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS8700 の場合"]
+ a| 
+ONTAP 9.7
+
+
+
+ a| 
+https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["AFF A400"]
+ a| 
+ONTAP 9.7
+
+
+
+ a| 
+https://www.netapp.com/pdf.html?item=/media/17190-na-382.pdf["AFF ASA A220"]
+ a| 
+ONTAP 9.7
+
+
+
+ a| 
+https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["AFF ASA A700"]
+ a| 
+ONTAP 9.7
+
+
+
+ a| 
+https://www.netapp.com/us/media/ds-3989.pdf["AFF C190"]
+ a| 
+ONTAP 9.6
+
+
+
+ a| 
+https://www.netapp.com/pdf.html?item=/media/17190-na-382.pdf["AFF A320"]
+ a| 
+ONTAP 9.6
+
+|===
+
+
+== 新しいシェルフのサポート
+
+[cols="2*"]
+|===
+| シェルフ | 最初から利用可能です 
+
+
+ a| 
+NS224
+ a| 
+ONTAP 9.6
+
+|===
+
+
+== 新しいハードウェアの更新
+
+[cols="25h,~,~"]
+|===
+| 機能性 | 概要 と詳細情報の入手方法 | 最初から利用可能です 
+
+
+ a| 
+NS224 ドライブシェルフのプラットフォームサポートが拡張されました
+ a| 
+次のプラットフォームで NS224 ドライブシェルフがサポートされます。
+
+* AFF A800/AFF ASA A800
+* AFF A700 / AFF ASA A700
+* AFF A250/AFF ASA A250
+* FAS500f
+
+ a| 
+ONTAP 9.8
+
+
+
+ a| 
+6Gb SAS ストレージスタックへの 12Gb SAS シェルフのホットアド
+ a| 
+SAS ストレージスタックでは、 6Gb から 12Gb への単一速度の移行がサポートされるようになりました。これにより、既存の 6Gb スタックと 12Gb シェルフを拡張することができます。
+
+https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-ds-mix-hotadd/home.html["IOM12 モジュールを搭載したシェルフを IOM6 モジュールを搭載したシェルフのスタックにホットアドします"]
+ a| 
+ONTAP 9.7P4
+
+ONTAP 9.6P9.
+
+ONTAP 9.5P14
+
+|===
+
+
+== 新しいハードウェアの機能拡張
+
+ONTAP 9.8 では、自動ポート配置機能が導入され、ハードウェアのアップグレード手順が簡略化されています。ONTAP 9.8 を実行しているシステムをアップグレードする場合は、ポート配置機能に対応した正しい手順 を使用する必要があります。
+
+次の表で、使用可能なアップグレード手順を確認してください。詳細については、各ガイドを参照して手順 が適切かどうかを確認してください。
+
+MetroCluster 固有のその他の手順については、を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/concept_choosing_an_upgrade_method_mcc.html["アップグレードまたは更新方法を選択します"]。
+
+[cols="4*"]
+|===
+| ONTAP バージョン | 場所 | 無停止 | MetroCluster をサポートします 
+
+
+ a| 
+9.8 ～ 9.0.x
+ a| 
+https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-use-this-guide.html["『 Controller Hardware Upgrade Express Guide 』を参照してください"] （既存の物理ストレージの移動）
+ a| 
+いいえ
+ a| 
+いいえ
+
+
+
+ a| 
+https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-use-this-guide.html["『 Controller Hardware Upgrade Express Guide 』を参照してください"] （新しいストレージへのボリュームの移動）
+ a| 
+はい。
+ a| 
+いいえ
+
+
+
+ a| 
+9.8
+ a| 
+https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-use-this-guide.html["「システムコントローラの交換」コマンドを使用して、 ONTAP 9.8 を実行しているコントローラハードウェアをアップグレードします"]
+ a| 
+はい。
+ a| 
+○（ FC ）
+
+
+
+ a| 
+9.8
+ a| 
+https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade-arl-manual-app/index.html["アグリゲートの再配置を使用して、 ONTAP 9.8 以降を実行しているコントローラハードウェアを手動でアップグレードします"]
+ a| 
+はい。
+ a| 
+○（ FC ）
+
+
+
+ a| 
+9.7 から 9.5
+ a| 
+https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade-arl-auto/index.html["「システムコントローラの交換」コマンドを使用して、 ONTAP 9.5 を実行しているコントローラハードウェアを ONTAP 9.7 にアップグレードします"]
+ a| 
+はい。
+ a| 
+○（ FC ）
+
+
+
+ a| 
+9.7 以前
+ a| 
+https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade-arl-manual/index.html["アグリゲートの再配置を含むコントローラのアップグレード ONTAP 9.7 以前を実行しているコントローラハードウェアに手動でアップグレードします"]
+ a| 
+はい。
+ a| 
+○（ FC ）
+
+|===
