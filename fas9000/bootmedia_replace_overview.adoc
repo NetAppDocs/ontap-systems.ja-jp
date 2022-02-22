@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, replace, boot, media, primary, secondary, image, disruptive, nondisruptive 
 summary: ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。ネットワーク構成に応じて、無停止または停止を伴う交換を実行できます。 
 ---
-= ブートメディア - AFF A700 および FAS9000 を交換してください
+= ブートメディアの交換 - AFF A700 および FAS9000
 :icons: font
 :imagesdir: ../media/
 

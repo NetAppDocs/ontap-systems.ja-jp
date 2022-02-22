@@ -53,7 +53,7 @@ entries:
     entries:
     - title: 概要
       url: "/fas2700/controller-replace-overview.html"
-    - title: ノードをシャットダウン
+    - title: 障害のあるコントローラをシャットダウンします
       url: "/fas2700/controller-replace-shutdown.html"
     - title: コントローラハードウェアを交換します
       url: "/fas2700/controller-replace-move-hardware.html"

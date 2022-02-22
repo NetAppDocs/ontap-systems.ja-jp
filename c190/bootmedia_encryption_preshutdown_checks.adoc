@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c190, shutdown, checks, onboard, encryption, keys, impaired node, disable, automatic, feedback 
 summary: 障害ノードをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害ノードのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
-= 必要に応じて、オンボード暗号化キーを確認します。 AFF C190
+= オンボード暗号化キーを確認します（ AFF C190 ）
 :icons: font
 :imagesdir: ../media/
 

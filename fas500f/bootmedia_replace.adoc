@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, replace the boot media 
 summary: ブートメディアを交換する前に、コントローラモジュールのエアダクトを取り外して、障害が発生したブートメディアの場所を確認する必要があります。 
 ---
-= コントローラモジュールを取り外し、ブートメディアを交換して、ブートイメージをブートメディア FAS500f に転送します
+= ブートメディア FAS500f を交換してください
 :icons: font
 :imagesdir: ../media/
 
@@ -201,31 +201,4 @@ USB フラッシュドライブは、 USB コンソールポートではなく�
 +
 コントローラモジュールを完全に挿入し、シャーシの端と同一平面になるようにします。
 
-. 環境変数と bootargs は保持されますが 'printenv bootargname' コマンドを使用して ' 必要なすべてのブート環境変数と bootargs がシステムタイプと構成に適切に設定されていることを確認し 'setenv variable-name <value> コマンドを使用してエラーを修正する必要があります
-. ブート環境変数を確認します。
-+
-** bootarg.init.boot_clustered`
-** 「 partner-sysid 」
-** bootarg.init.switchless_cluster.enable`
-
-
-. 外部キーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示された bootarg 値を確認します。
-+
-** bootarg.storageencryption.support <value>
-** bootarg.keymanager. support <value>
-** 「 kmip.init.interface 」 <value> です
-** 「 kmip.init.ipaddr 」 <value> です
-** 「 kmip.init.netmask 」 <value> です
-** 「 kmip.init.gateway 」 <value> です
-
-
-. オンボードキーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示されている bootarg 値を確認します。
-+
-** bootarg.storageencryption.support <value>
-** bootarg.keymanager. support <value>
-** 'bootarg.onboard keymanager <value>
-
-
-. 変更した環境変数を '*savenv*' コマンドを使用して保存します
-. *printenv_variable-name_*' コマンドを使用して ' 変更内容を確認します
 

@@ -57,11 +57,9 @@ entries:
     - title: システム設定を復元します
       url: "/a320/controller-replace-system-config-restore-and-verify.html"
     - title: システムにケーブルを再接続
-      url: "/a320/controller-repalce-recable-reassign-disks.html"
+      url: "/a320/controller-replace-recable-reassign-disks.html"
     - title: システムのリストアを完了
-      url: "/a320/controller-replace-complete-system-restoration.html"
-    - title: 交換後の処理
-      url: "/a320/controller-replace-complete-rma.html"
+      url: "/a320/controller-replace-restore-system-rma.html"
   - title: DIMM
     pdf-filename: AFF A320 DIMM
     url: "/a320/dimm-replace.html"

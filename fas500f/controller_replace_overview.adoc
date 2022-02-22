@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, prerequisite, replace the controller module 
 summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。 
 ---
-= コントローラモジュール FAS500f を交換してください
+= コントローラモジュールの交換 - FAS500f の概要
 :icons: font
 :imagesdir: ../media/
 

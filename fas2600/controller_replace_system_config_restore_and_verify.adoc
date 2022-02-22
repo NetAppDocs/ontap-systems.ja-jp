@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, restore and verify the system configuration, verify and set the ha state of the controller module, run system-level diagnostics 
 summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
 ---
-= システム構成をリストアして確認します（ FAS2600 ）
+= システム構成をリストアして確認します - FAS2600
 :icons: font
 :imagesdir: ../media/
 

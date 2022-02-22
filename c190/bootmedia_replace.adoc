@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c190, locate, boot, media, controller, direction, replace 
 summary: コントローラモジュールのブートメディアの場所を確認し、手順に従って交換する必要があります。 
 ---
-= コントローラモジュールを取り外し、ブートメディアを交換して、ブートイメージをブートメディア AFF C190 に転送します
+= ブートメディアを交換してください - AFF C190
 :icons: font
 :imagesdir: ../media/
 
@@ -94,37 +94,6 @@ USB フラッシュドライブは、 USB コンソールポートではなく�
 . 「自動ブートを開始するときに Ctrl+C キーを押して中止 ... 」と表示されたら、ブートプロセスを中断して LOADER プロンプトで停止します
 +
 このメッセージが表示されない場合は、 Ctrl+C キーを押し、メンテナンスモードでブートするオプションを選択して、ノードを停止して LOADER プロンプトを表示します。
-
-. 環境変数と bootargs は保持されますが 'printenv_bootargname_` コマンドを使用して ' 必要なブート環境変数と bootargs がすべてシステムタイプと構成に適切に設定されていることを確認し 'setenv_variable-name <value> _` コマンドを使用してエラーを修正してください
-+
-.. ブート環境変数を確認します。
-+
-*** bootarg.init.boot_clustered`
-*** 「 partner-sysid 」
-*** AFF C190 用 bootarg.init.flash_optimized`
-*** bootarg.init.switchless_cluster.enable`
-
-
-.. 外部キーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示された bootarg 値を確認します。
-+
-*** bootarg.storageencryption.support <value>
-*** bootarg.keymanager. support <value>
-*** 「 kmip.init.interface 」 <value> です
-*** 「 kmip.init.ipaddr 」 <value> です
-*** 「 kmip.init.netmask 」 <value> です
-*** 「 kmip.init.gateway 」 <value> です
-
-
-.. オンボードキーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示されている bootarg 値を確認します。
-+
-*** bootarg.storageencryption.support <value>
-*** bootarg.keymanager. support <value>
-*** 'bootarg.onboard keymanager <value>
-
-
-.. 変更した環境変数を '*savenv*' コマンドを使用して保存します
-.. *printenv_variable-name_*' コマンドを使用して ' 変更内容を確認します
-
 
 . リカバリイメージをブートします。
 +

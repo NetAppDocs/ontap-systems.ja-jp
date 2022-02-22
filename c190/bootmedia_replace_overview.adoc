@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: AFF c190, nondisruptive, disruptive, replace the boot media 
 summary: ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。ネットワーク構成に応じて、無停止または停止を伴う交換を実行できます。 
 ---
-= ブートメディアを交換してください - AFF C190
+= ブートメディア交換の概要 - AFF C190
 :icons: font
 :imagesdir: ../media/
 

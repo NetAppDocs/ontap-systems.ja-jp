@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a200, shut down the node 
 summary: NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。 
 ---
-= ノード AFF A200 をシャットダウンします
+= 障害ノード AFF A200 をシャットダウンします
 :icons: font
 :imagesdir: ../media/
 

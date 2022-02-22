@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a250, prerequisite, replace the controller module 
 summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。 
 ---
-= コントローラモジュール AFF A250 を交換してください
+= コントローラモジュールの交換の概要 - AFF A250
 :icons: font
 :imagesdir: ../media/
 

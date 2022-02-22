@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2700, move the controller module hardware 
 summary: コントローラモジュールハードウェアを交換するには、障害ノードを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。 
 ---
-= コントローラモジュールを交換 - AFF A220 および FAS2700
+= コントローラモジュールハードウェアを交換します - AFF A220 および FAS2700
 :icons: font
 :imagesdir: ../media/
 

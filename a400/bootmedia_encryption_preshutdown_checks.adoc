@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a400, aff, a400, shut, down, impair, node, check, status, onboard, encryption, keys, status, disable, automatic, giveback, version, ontap, system, run, pre-shutdown, check, pre-shutdown checks for onboard encryption keys 
 summary: 障害ノードをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害ノードのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
-= 必要に応じてオンボード暗号化キーを確認 - AFF A400
+= オンボード暗号化をチェック - AFF A400
 :icons: font
 :imagesdir: ../media/
 

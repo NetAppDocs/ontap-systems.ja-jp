@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, shut, chassis, controller, replace, remove, swap, verify, install, power, supply, metrocluster, aggregates, replacement, process, equipment, rack, ha, state, system 
 summary: 障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
 ---
-= シャーシ -FAS8300 と FAS8700 を交換してください
+= シャーシの交換の概要 - FAS8300 および FAS8700
 :icons: font
 :imagesdir: ../media/
 

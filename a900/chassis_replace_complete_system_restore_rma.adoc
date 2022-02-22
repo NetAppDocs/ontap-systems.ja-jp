@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a900, verify and set HA state, run diagnostics, complete the replacement process 
 summary: キットに付属する RMA 指示書に従って、シャーシの HA 状態を確認し、診断を実行し、障害が発生した部品をネットアップに返却する必要があります。 
 ---
-= 設定の復元と確認 - AFF A900
+= 構成をリストアおよび検証します。 AFF C190
 :icons: font
 :imagesdir: ../media/
 

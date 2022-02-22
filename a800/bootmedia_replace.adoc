@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a800, replace the boot media 
 summary: ブートメディアを交換する前に、コントローラモジュールのライザー 3 を取り外して障害が発生したブートメディアの場所を確認する必要があります。 
 ---
-= コントローラモジュールを取り外し、ブートメディアを交換して、ブートイメージをブートメディア AFF A800 に転送します
+= ブートメディア AFF A800 を交換してください
 :icons: font
 :imagesdir: ../media/
 
@@ -231,36 +231,4 @@ image:../media/legend_icon_02.png[""]
 . USB フラッシュドライブをコントローラモジュールの USB スロットに挿入します。+ USB フラッシュドライブは、 USB コンソールポートではなく、 USB デバイス用のラベルが付いたスロットに取り付けてください。
 . コントローラモジュールの固定フックが持ち上がるまで、コントローラモジュールをシステムの奥に押し込みます。固定フックを強く押し込んでコントローラモジュールを装着し、固定フックをコントローラモジュールのピンにかけてロックします。+ ノードは、シャーシへの取り付けが完了するとすぐにブートを開始します。
 . Ctrl+C キーを押してブートプロセスを中断し、 LOADER プロンプトで停止します。+ このメッセージが表示されない場合は、 Ctrl+C キーを押し、メンテナンスモードでブートするオプションを選択して、ノードを停止して LOADER プロンプトを表示します。
-. 環境変数と bootargs は保持されますが 'printenv bootargname' コマンドを使用して ' 必要なすべてのブート環境変数と bootargs がシステムタイプと構成に適切に設定されていることを確認し 'setenv variable-name <value> コマンドを使用してエラーを修正する必要があります
-+
-.. ブート環境変数を確認します。
-+
-*** bootarg.init.boot_clustered`
-*** 「 partner-sysid 」
-*** bootarg.init.flash_optimized`
-*** 「 bootarg.init.san_optimized` for All SAN Array 」を参照してください
-*** bootarg.init.switchless_cluster.enable`
-
-
-.. 外部キーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示された bootarg 値を確認します。
-+
-*** bootarg.storageencryption.support <value>
-*** bootarg.keymanager. support <value>
-*** 「 kmip.init.interface 」 <value> です
-*** 「 kmip.init.ipaddr 」 <value> です
-*** 「 kmip.init.netmask 」 <value> です
-*** 「 kmip.init.gateway 」 <value> です
-
-
-.. オンボードキーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示されている bootarg 値を確認します。
-+
-*** bootarg.storageencryption.support <value>
-*** bootarg.keymanager. support <value>
-*** 'bootarg.onboard keymanager <value>
-
-
-.. 'avenv' コマンドを使用して変更した環境変数を保存します
-.. printenv_variable-name_` コマンドを使用して、変更を確認します。
-
-
 

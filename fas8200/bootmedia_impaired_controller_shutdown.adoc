@@ -4,7 +4,9 @@ sidebar: sidebar
 keywords: fas8200, shut down the impaired controller 
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
-= オプション 1 ：ほとんどのシステム
+= 障害のあるコントローラ FAS8200 をシャットダウンします
+:icons: font
+:imagesdir: ../media/
 
 
 

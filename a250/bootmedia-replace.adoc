@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a250, replace the boot media 
 summary: ブートメディアを交換する前に、コントローラモジュールのエアダクトを取り外して、障害が発生したブートメディアの場所を確認する必要があります。 
 ---
-= コントローラモジュールを取り外し、ブートメディアを交換して、ブートイメージをブートメディア - AFF A250 に転送します
+= ブートメディア AFF A250 を交換してください
 :icons: font
 :imagesdir: ../media/
 
@@ -194,40 +194,42 @@ USB フラッシュドライブは、 USB コンソールポートではなく�
 +
 コントローラモジュールは、シャーシに完全に装着されるとすぐにブートを開始します。ブートプロセスを中断できるように準備しておきます。
 
-
-
 +
 コントローラモジュールを完全に挿入し、シャーシの端と同一平面になるようにします。
 
+.. ブートを開始するときに Ctrl+C キーを押し、ブートプロセスを中断して LOADER プロンプトで停止します。「 Starting autoboot 」というメッセージが表示されたら、 Ctrl+C を押して中止します
 +
-.. 環境変数と bootargs は保持されますが 'printenv bootargname' コマンドを使用して ' 必要なすべてのブート環境変数と bootargs がシステムタイプと構成に適切に設定されていることを確認し 'setenv variable-name <value> コマンドを使用してエラーを修正する必要があります
-.. ブート環境変数を確認します。
+このメッセージが表示されない場合は、 Ctrl+C キーを押し、メンテナンスモードでブートするオプションを選択して、ノードを停止して LOADER プロンプトを表示します。
+
+.. シャーシ内にコントローラが 1 台しかないシステムの場合は、電源を再接続して電源装置の電源をオンにします。
 +
-*** bootarg.init.boot_clustered`
-*** 「 partner-sysid 」
-*** 「 bootarg.init.san_optimized` for All SAN Array 」を参照してください
-*** bootarg.init.switchless_cluster.enable`
+システムがブートを開始し、 LOADER プロンプトで停止します。
 
-
-.. 外部キーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示された bootarg 値を確認します。
+.. LOADER プロンプトでネットワーク接続タイプを設定します。
 +
-*** bootarg.storageencryption.support_value_`
-*** bootarg.keymanager. support_value_`
-*** 「 kmip.init.interface _ value _ 」と入力します
-*** 「 kmip.init.ipaddr _ value _ 」と入力します
-*** 「 kmip.init.netmask _ value _ 」と入力します
-*** 「 kmip.init.gateway _ value _ 」と入力します
-
-
-.. オンボードキーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示されている bootarg 値を確認します。
+*** DHCP を構成している場合： ifconfig e0a-auto
 +
-*** bootarg.storageencryption.support_value_`
-*** bootarg.keymanager. support_value_`
-*** 'bootarg.onboard keymanager_value_`
+
+NOTE: 設定するターゲットポートは、ネットワーク接続を使用した var ファイルシステムのリストア中に、正常なノードから障害ノードへの通信に使用するポートです。このコマンドでは e0M ポートを使用することもできます。
+
+*** 手動接続を設定する場合は、「 ifconfig e0a-addr= filer_addr-mask= netmask -gw= gateway -dns= dns_addr-domain= dns_domain' 」のように入力します
++
+**** 「 filer_addr 」は、ストレージ・システムの IP アドレスです。
+**** 「 netmask 」は、 HA パートナーに接続されている管理ネットワークのネットワークマスクです。
+**** 「 gateway 」は、ネットワークのゲートウェイです。
+**** 「 dns_addr 」は、ネットワーク上のネームサーバの IP アドレスです。
+**** 「 dns_domain 」は Domain Name System （ DNS ）ドメイン名です。
++
+このオプションパラメータを使用する場合は、ネットブートサーバの URL に完全修飾ドメイン名を指定する必要はありません。必要なのはサーバのホスト名だけです。
 
 
-.. 'avenv' コマンドを使用して変更した環境変数を保存します
-.. printenv_variable-name_` コマンドを使用して、変更を確認します。
 
+
+
+
+
++
+
+NOTE: インターフェイスによっては、その他のパラメータが必要になる場合もあります。ファームウェア・プロンプトで「 help ifconfig 」と入力すると、詳細を確認できます。
 
 

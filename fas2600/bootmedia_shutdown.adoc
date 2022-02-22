@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, shut down the node 
 summary: NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。 
 ---
-= node-FAS2600 をシャットダウンします
+= 障害のあるコントローラ FAS2600 をシャットダウンします
 :icons: font
 :imagesdir: ../media/
 

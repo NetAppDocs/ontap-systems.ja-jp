@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c190, verify and set HA state, run diagnostics 
 summary: シャーシの HA 状態を確認し、システムレベルの診断を実行する必要があります。 
 ---
-= 構成のリストアと確認 - AFF C190
+= 構成をリストアおよび検証します。 AFF C190
 :icons: font
 :imagesdir: ../media/
 

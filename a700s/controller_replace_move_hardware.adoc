@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700s, move the controller module hardware 
 summary: コントローラモジュールを交換するには、障害ノードを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。 
 ---
-= ハードウェア AFF A700s を移動します
+= コントローラモジュールハードウェア AFF A700s を交換してください
 :icons: font
 :imagesdir: ../media/
 

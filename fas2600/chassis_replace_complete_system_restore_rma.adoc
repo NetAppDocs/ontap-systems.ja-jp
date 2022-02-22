@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, verify and set HA state, run diagnostics, complete the replacement process 
 summary: キットに付属する RMA 指示書に従って、シャーシの HA 状態を確認し、診断を実行し、障害が発生した部品をネットアップに返却する必要があります。 
 ---
-= 構成のリストアと確認 - FAS2600
+= 構成をリストアして確認します - FAS2600
 :icons: font
 :imagesdir: ../media/
 

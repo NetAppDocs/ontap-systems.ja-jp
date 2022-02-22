@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff fas500f, shut down the impaired node 
 summary: 障害のあるコントローラモジュールをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをテイクオーバーする必要があります。 
 ---
-= 障害のあるコントローラモジュール FAS500f をシャットダウンします
+= 障害のあるコントローラ FAS500f をシャットダウンします
 :icons: font
 :imagesdir: ../media/
 

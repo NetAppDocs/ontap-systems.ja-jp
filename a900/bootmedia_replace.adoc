@@ -146,38 +146,6 @@ USB フラッシュドライブは、 USB コンソールポートではなく�
 +
 このメッセージが表示されない場合は、 Ctrl+C キーを押し、メンテナンスモードでブートするオプションを選択して、ノードを停止して LOADER プロンプトを表示します。
 
-. 環境変数と bootargs は保持されますが 'printenv bootargname' コマンドを使用して ' 必要なすべてのブート環境変数と bootargs がシステムタイプと構成に適切に設定されていることを確認し 'setenv variable-name <value> コマンドを使用してエラーを修正する必要があります
-+
-.. ブート環境変数を確認します。
-+
-*** bootarg.init.boot_clustered
-*** partner-sysid
-*** bootarg.init.flash_optimized for AFF の略
-*** bootarg.init.san_optimized for AFF の略
-*** bootarg.init.switchless_cluster.enable
-
-
-.. 外部キーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示された bootarg 値を確認します。
-+
-*** bootarg.storageencryption.support<value>
-*** bootarg.keymanager. support <value>
-*** kmip.init.interface < 値 >
-*** kmip.init.ipaddr < 値 >
-*** kmip.init.netmask < 値 >
-*** kmip.init.gateway < 値 >
-
-
-.. オンボードキーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示されている bootarg 値を確認します。
-+
-*** bootarg.storageencryption.support<value>
-*** bootarg.keymanager. support <value>
-*** bootarg.onboard keymanager <value> という 2 つの属性を設定します
-
-
-.. 'avenv' コマンドを使用して変更した環境変数を保存します
-.. printenv variable-name コマンドを使用して ' 変更内容を確認します
-
-
 . LOADER プロンプトでネットワーク接続タイプを設定します。
 +
 ** DHCP を構成している場合： ifconfig e0a-auto

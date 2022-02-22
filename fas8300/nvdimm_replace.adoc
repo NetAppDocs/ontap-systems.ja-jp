@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, replace, nvmem, battery, remove, controller, module, node, metrocluster, configuration, diagnostics, aggregate, configuration, reinstall, run, system, switch, shut, down 
 summary: フラッシュの有効期間がほぼ終了していること、または識別された NVDIMM が全般的に正常でないことがシステムで登録された場合は、コントローラモジュールの NVDIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
 ---
-= NVDIMM の交換 - FAS8300 および FAS8700
+= NVDIMM - FAS8300 および FAS8700 を交換します
 :icons: font
 :imagesdir: ../media/
 

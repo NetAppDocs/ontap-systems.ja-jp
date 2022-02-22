@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: AFF c190, prerequisite, replace the controller module 
 summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。 
 ---
-= コントローラモジュールを交換してください - AFF C190
+= コントローラモジュールの交換の概要 - AFF C190
 :icons: font
 :imagesdir: ../media/
 

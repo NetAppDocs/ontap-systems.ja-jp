@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff, a320, aff a320, boot, media, store, primary, secondary, set, system, boot, image, file, replace, replace the boot media 
 summary: ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。 
 ---
-= コントローラモジュールを取り外し、ブートメディアを交換して、ブートイメージをブートメディア - AFF A320 に転送します
+= ブートメディアを交換します - AFF A320
 :icons: font
 :imagesdir: ../media/
 
@@ -153,38 +153,6 @@ NOTE: ラッチのアームがシャーシ内にスライドします。
 .. Ctrl+C キーを押してブートプロセスを中断し、 LOADER プロンプトで停止します。
 +
 このメッセージが表示されない場合は、 Ctrl+C キーを押し、メンテナンスモードでブートするオプションを選択して、ノードを停止して LOADER プロンプトを表示します。
-
-.. 環境変数と bootargs は保持されますが 'printenv bootargname' コマンドを使用して ' 必要なすべてのブート環境変数と bootargs がシステムタイプと構成に適切に設定されていることを確認し 'setenv variable-name <value> コマンドを使用してエラーを修正する必要があります
-+
-... ブート環境変数を確認します。
-+
-**** bootarg.init.boot_clustered`
-**** 「 partner-sysid 」
-**** AFF C190 / AFF A220 （オールフラッシュ FAS ）用 bootarg.init.flash_optimized`
-**** AFF A220 およびオール SAN アレイの場合は bootarg.init.san_optimized`
-**** bootarg.init.switchless_cluster.enable`
-
-
-... 外部キーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示された bootarg 値を確認します。
-+
-**** bootarg.storageencryption.support <value>
-**** bootarg.keymanager. support <value>
-**** 「 kmip.init.interface 」 <value> です
-**** 「 kmip.init.ipaddr 」 <value> です
-**** 「 kmip.init.netmask 」 <value> です
-**** 「 kmip.init.gateway 」 <value> です
-
-
-... オンボードキーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示されている bootarg 値を確認します。
-+
-**** bootarg.storageencryption.support <value>
-**** bootarg.keymanager. support <value>
-**** 'bootarg.onboard keymanager <value>
-
-
-... 'avenv' コマンドを使用して変更した環境変数を保存します
-... printenv_variable-name_` コマンドを使用して、変更を確認します。
-
 
 .. LOADER プロンプトから、 USB フラッシュドライブ「 boot_recovery 」からリカバリ・イメージをブートします
 +

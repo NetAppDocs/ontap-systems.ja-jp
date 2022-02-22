@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a400, aff, a400, locate, boot, media, controller, module, fre, map, direction, replace, replace the boot media 
 summary: コントローラモジュールのブートメディアの場所を確認し（コントローラモジュールの FRU マップを参照）、手順に従って交換する必要があります。 
 ---
-= コントローラモジュールを取り外し、ブートメディアを交換して、ブートイメージをブートメディア AFF A400 に転送します
+= ブートメディアを交換してください - AFF A400
 :icons: font
 :imagesdir: ../media/
 
@@ -227,38 +227,6 @@ NOTE: コネクタの破損を防ぐため、コントローラモジュール�
 . Ctrl+C キーを押してブートプロセスを中断し、 LOADER プロンプトで停止します。
 +
 このメッセージが表示されない場合は、 Ctrl+C キーを押し、メンテナンスモードでブートするオプションを選択して、ノードを停止して LOADER プロンプトを表示します。
-
-. 環境変数と bootargs は保持されますが 'printenv bootargname' コマンドを使用して ' 必要なすべてのブート環境変数と bootargs がシステムタイプと構成に適切に設定されていることを確認し 'setenv_variable-name_<value> コマンドを使用してエラーを修正する必要があります
-+
-.. ブート環境変数を確認します。
-+
-*** bootarg.init.boot_clustered`
-*** 「 partner-sysid 」
-*** AFF C190 / AFF A220 （オールフラッシュ FAS ）用 bootarg.init.flash_optimized`
-*** AFF A220 およびオール SAN アレイの場合は bootarg.init.san_optimized`
-*** bootarg.init.switchless_cluster.enable`
-
-
-.. 外部キーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示された bootarg 値を確認します。
-+
-*** bootarg.storageencryption.support_<value> _
-*** bootarg.keymanager. support_<<value>>_
-*** kmip.init.interface<<value>>_
-*** 「 kmip.init.ipaddr _ < 値 >_ 」
-*** 「 kmip.init.netmask _ < 値 >_ 」
-*** 「 kmip.init.gateway _ < 値 >_ 」
-
-
-.. オンボードキーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示されている bootarg 値を確認します。
-+
-*** bootarg.storageencryption.support_value_`
-*** 'bootarg.keymanager. support_value'_
-*** 'bootarg.onboard keymanager_value_`
-
-
-.. 'avenv' コマンドを使用して変更した環境変数を保存します
-.. printenv_variable-name_` コマンドを使用して、変更を確認します。
-
 
 . コントローラがストレッチまたはファブリック接続の MetroCluster に含まれている場合は、 FC アダプタの構成をリストアする必要があります。
 +

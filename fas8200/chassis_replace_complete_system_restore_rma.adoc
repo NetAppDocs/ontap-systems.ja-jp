@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, verify and set HA state, run diagnostics, complete the replacement process 
 summary: シャーシの HA 状態を確認し、システムレベルの診断を実行し、アグリゲートをスイッチバックして、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。 
 ---
-= 構成のリストアと確認 - FAS8200
+= FAS8200 をリストアして設定を確認します
 :icons: font
 :imagesdir: ../media/
 

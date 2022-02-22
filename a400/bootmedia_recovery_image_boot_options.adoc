@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a400, aff, a400, procedure, boot, impair, node, recovery, image, system, two-node, metrocluster, configuration, boot the recovery image 
 summary: 障害ノードをリカバリイメージからブートするための手順は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。 
 ---
-= リカバリイメージのブート - AFF A400
+= リカバリイメージ AFF A400 をブートします
 :icons: font
 :imagesdir: ../media/
 

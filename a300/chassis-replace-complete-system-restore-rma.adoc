@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a300, verify and set HA state, run diagnostics, switch back aggregates, complete the replacement process 
 summary: シャーシの HA 状態を確認し、システムレベルの診断を実行し、アグリゲートをスイッチバックして、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。 
 ---
-= 構成のリストアと確認 - AFF A300
+= 構成をリストアおよび検証する - AFF A300
 :icons: font
 :imagesdir: ../media/
 
