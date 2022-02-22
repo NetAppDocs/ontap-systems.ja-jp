@@ -1260,8 +1260,6 @@
 
 
 
-
-
           
         </li>
       </ul>
@@ -3966,7 +3964,7 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/controller-replace-overview.html">
         概要
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/controller-replace-shutdown.html">
-        ノードをシャットダウン
+        障害のあるコントローラをシャットダウンします
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/controller-replace-move-hardware.html">
         コントローラハードウェアを交換します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/controller-replace-system-config-restore-and-verify.html">
@@ -4185,12 +4183,10 @@
         コントローラモジュールを交換します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-replace-system-config-restore-and-verify.html">
         システム設定を復元します
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-repalce-recable-reassign-disks.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-replace-recable-reassign-disks.html">
         システムにケーブルを再接続
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-replace-complete-system-restoration.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-replace-restore-system-rma.html">
         システムのリストアを完了
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-replace-complete-rma.html">
-        交換後の処理
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/dimm-replace.html">
         DIMM
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/fan-swap-out.html">
@@ -5237,7 +5233,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-22 09:34:35 +0000">02/22/2022</time>
+    <time datetime="2022-02-22 22:28:41 +0000">02/22/2022</time>
     
   
 
@@ -5488,82 +5484,6 @@
 <p>ブートを開始するときに Ctrl+C キーを押し、ブートプロセスを中断して LOADER プロンプトで停止します。「 Starting autoboot 」というメッセージが表示されたら、 Ctrl+C を押して中止します</p>
 <div class="paragraph">
 <p>このメッセージが表示されない場合は、 Ctrl+C キーを押し、メンテナンスモードでブートするオプションを選択して、ノードを停止して LOADER プロンプトを表示します。</p>
-</div>
-</li>
-<li>
-<p>環境変数と bootargs は保持されますが 'printenv bootargname' コマンドを使用して ' 必要なすべてのブート環境変数と bootargs がシステムタイプと構成に適切に設定されていることを確認し 'setenv variable-name &lt;value&gt; コマンドを使用してエラーを修正する必要があります</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>ブート環境変数を確認します。</p>
-<div class="ulist">
-<ul>
-<li>
-<p>bootarg.init.boot_clustered</p>
-</li>
-<li>
-<p>partner-sysid</p>
-</li>
-<li>
-<p>bootarg.init.flash_optimized for AFF の略</p>
-</li>
-<li>
-<p>bootarg.init.san_optimized for AFF の略</p>
-</li>
-<li>
-<p>bootarg.init.switchless_cluster.enable</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>外部キーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示された bootarg 値を確認します。</p>
-<div class="ulist">
-<ul>
-<li>
-<p>bootarg.storageencryption.support&lt;value&gt;</p>
-</li>
-<li>
-<p>bootarg.keymanager. support &lt;value&gt;</p>
-</li>
-<li>
-<p>kmip.init.interface &lt; 値 &gt;</p>
-</li>
-<li>
-<p>kmip.init.ipaddr &lt; 値 &gt;</p>
-</li>
-<li>
-<p>kmip.init.netmask &lt; 値 &gt;</p>
-</li>
-<li>
-<p>kmip.init.gateway &lt; 値 &gt;</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>オンボードキーマネージャが有効になっている場合は、「 kenv 」 ASUP 出力に表示されている bootarg 値を確認します。</p>
-<div class="ulist">
-<ul>
-<li>
-<p>bootarg.storageencryption.support&lt;value&gt;</p>
-</li>
-<li>
-<p>bootarg.keymanager. support &lt;value&gt;</p>
-</li>
-<li>
-<p>bootarg.onboard keymanager &lt;value&gt; という 2 つの属性を設定します</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>'avenv' コマンドを使用して変更した環境変数を保存します</p>
-</li>
-<li>
-<p>printenv variable-name コマンドを使用して ' 変更内容を確認します</p>
-</li>
-</ol>
 </div>
 </li>
 <li>

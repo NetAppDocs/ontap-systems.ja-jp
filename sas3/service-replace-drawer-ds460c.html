@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>DS460C ディスクシェルフ内のドライブドロワーと IOM12 モジュールの交換</title>
+  <title>DS460C ディスクシェルフ内のドライブドロワーを IOM12 モジュールと交換します</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="DS460C ディスクシェルフ内のドライブドロワーと IOM12 モジュールの交換" />
+  <meta property="og:title" content="DS460C ディスクシェルフ内のドライブドロワーを IOM12 モジュールと交換します" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-systems/sas3/service-replace-drawer-ds460c.html" />
 	<meta property="og:description" content="ドライブドロワーを交換する前に、ホストの I/O アクティビティをすべて停止し、シェルフの電源をオフにする必要があります。" />
@@ -1247,8 +1247,6 @@
             コントローラモジュール
           </a>
           
-
-
 
 
 
@@ -3966,7 +3964,7 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/controller-replace-overview.html">
         概要
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/controller-replace-shutdown.html">
-        ノードをシャットダウン
+        障害のあるコントローラをシャットダウンします
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/controller-replace-move-hardware.html">
         コントローラハードウェアを交換します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas2700/controller-replace-system-config-restore-and-verify.html">
@@ -4185,12 +4183,10 @@
         コントローラモジュールを交換します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-replace-system-config-restore-and-verify.html">
         システム設定を復元します
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-repalce-recable-reassign-disks.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-replace-recable-reassign-disks.html">
         システムにケーブルを再接続
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-replace-complete-system-restoration.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-replace-restore-system-rma.html">
         システムのリストアを完了
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/controller-replace-complete-rma.html">
-        交換後の処理
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/dimm-replace.html">
         DIMM
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a320/fan-swap-out.html">
@@ -5207,7 +5203,7 @@
           <a href="/ja-jp/ontap-systems/">ONTAP&nbsp;Systems</a>
         </li>
         <li class="n-breadcrumb__list-item">
-          DS460C ディスクシェルフ内のドライブドロワーと IOM12 モジュールの交換
+          DS460C ディスクシェルフ内のドライブドロワーを IOM12 モジュールと交換します
         </li>
       </ul>
     </div>
@@ -5230,14 +5226,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">DS460C ディスクシェルフ内のドライブドロワーと IOM12 モジュールの交換</h1>
+  <h1 class="n-doc__component-detail-heading">DS460C ディスクシェルフ内のドライブドロワーを IOM12 モジュールと交換します</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-02-22 09:34:35 +0000">02/22/2022</time>
+    <time datetime="2022-02-22 22:28:41 +0000">02/22/2022</time>
     
   
 
@@ -5247,6 +5243,14 @@
           alt="netapp-lisa"
           width="20" height="20"
           src="https://avatars.githubusercontent.com/u/77256372?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/netapp-jsnyder">
+    <img  class="avatar avatar-small"
+          alt="netapp-jsnyder"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/69054128?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -5335,7 +5339,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="ケーブルチェーンの取り外し">ケーブルチェーンの取り外し</h2>
+<h2 id="ケーブルチェーンを取り外します">ケーブルチェーンを取り外します</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>DS460C ドライブシェルフの各ドライブドロワーの左右のケーブルチェーンは、ドロワーの出し入れに使用ます。ドライブドロワーを取り外す前に、両方のケーブルチェーンを取り外す必要があります。</p>
@@ -5600,7 +5604,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="ドライブドロワーの取り外し">ドライブドロワーの取り外し</h2>
+<h2 id="ドライブドロワーを取り外します">ドライブドロワーを取り外します</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>左右のケーブルチェーンを取り外したら、ドライブシェルフからドライブドロワーを取り外すことができます。ドライブドロワーを取り外すときは、ドロワーを途中まで引き出し、ドライブの場所を記録し、ドライブを取り外し、ドライブドロワーを取り外します。</p>
@@ -5739,7 +5743,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="ドライブドロワーの取り付け">ドライブドロワーの取り付け</h2>
+<h2 id="ドライブドロワーを取り付けます">ドライブドロワーを取り付けます</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>ドライブドロワーをドライブシェルフに取り付けるときは、ドロワーを空いているスロットに挿入し、ドライブを取り付け、前面ベゼルを再度取り付けます。</p>
@@ -6229,7 +6233,7 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[DS460C ディスクシェルフ内のドライブドロワーと IOM12 モジュールの交換](https://docs.netapp.com/ja-jp/ontap-systems/sas3/service-replace-drawer-ds460c.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[DS460C ディスクシェルフ内のドライブドロワーを IOM12 モジュールと交換します](https://docs.netapp.com/ja-jp/ontap-systems/sas3/service-replace-drawer-ds460c.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
       <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/sas3/service_replace_drawer_ds460c.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-systems/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
     </div>
