@@ -16,20 +16,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/>
-  
-  <meta name="description" content="ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。">
-  <meta name="keywords" content=" aff c190, how to recable the system, how to reassign disks">
-  
-  
-
-  <!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。">
+  <meta name="keywords" content=" aff c190, how to recable the system, how to reassign disks"><!-- Icons -->
   <link rel="icon" href="/ja-jp/ontap-systems/images/favicon.ico" type="image/x-icon">
 
-  <!-- RSS Feed -->
-  
-
-  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
 
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
@@ -59,27 +50,11 @@
   
   <link rel="stylesheet" href="/ja-jp/ontap-systems/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/ja-jp/ontap-systems/css/tabbed-blocks.css" type="text/css">
-  <link rel="stylesheet" href='/ja-jp/ontap-systems/css/product-family.css' type="text/css">
-  
-
-  
-  <link rel='stylesheet' href='/ja-jp/ontap-systems/css/na-feature.css' type='text/css'>
-  
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel='stylesheet' href='/ja-jp/ontap-systems/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-  <!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
-  
-    <script src='/ja-jp/ontap-systems/js/na-search.js'></script>
-  
 
-  
-  <script src='/ja-jp/ontap-systems/js/na-pagenav.js'></script>
-  
-
-  <link rel='stylesheet' href='/ja-jp/ontap-systems/css/prism.css' type='text/css'>
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ja-jp/ontap-systems/js/na-search.js'></script><script src='/ja-jp/ontap-systems/js/na-pagenav.js'></script><link rel='stylesheet' href='/ja-jp/ontap-systems/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/ja-jp/ontap-systems/css/prism-netapp.css' type='text/css'>
 
 
@@ -97,9 +72,7 @@
   <script src='/ja-jp/ontap-systems/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/ja-jp/ontap-systems/js/toc.js'></script>
-  <script src='/ja-jp/ontap-systems/js/customscripts.js'></script>
-
-  <script>
+  <script src='/ja-jp/ontap-systems/js/customscripts.js'></script><script>
       $(document).ready(function() {
           
           var collapseOnInit = true;
@@ -158,7 +131,6 @@
   }
   </script>
   <script src='/ja-jp/ontap-systems/js/version-dropdown.js'></script>
-  <script src='/ja-jp/ontap-systems/js/product-family.js'></script>
   <script src='/ja-jp/ontap-systems/js/FileSaver.min.js'></script>
   <script src='/ja-jp/ontap-systems/js/jszip-utils.min.js'></script>
   <script src='/ja-jp/ontap-systems/js/jszip.min.js'></script>
@@ -171,6 +143,25 @@
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[システムにケーブルを再接続し、ディスクを再割り当てします。 AFF C190](https://docs.netapp.com/ja-jp/ontap-systems/c190/controller-replace-recable-reassign-disks.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/c190/controller_replace_recable_reassign_disks.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-systems/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">このページ</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -5185,26 +5176,22 @@
   
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
-    <!-- Begin of page container -->
-    <article class="page-content">
+    <!-- Begin of page container --><article class="page-content">
       <div class="ie-utility">
   <div class="ie-menu">
     <div class="n-breadcrumb">
       <ul class="n-breadcrumb__list">
         <li class="n-breadcrumb__list-item">
-          <a href="https://www.netapp.com">ホーム</a>
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com">ドキュメント</a>
-        </li>
+        
+
         
 
         <li class="n-breadcrumb__list-item">
           <a href="/ja-jp/ontap-systems/">ONTAP&nbsp;Systems</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          システムにケーブルを再接続し、ディスクを再割り当てします。 AFF C190
-        </li>
+
       </ul>
     </div>
     <div style="clear: both"></div><!-- Main needs to have height -->
@@ -5233,7 +5220,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-23 15:27:18 +0000">02/23/2022</time>
+    <time datetime="2022-03-15 19:23:16 +0000">03/15/2022</time>
     
   
 
@@ -5254,11 +5241,18 @@
           style="border-radius: 50%;"/>
   </a>
   
+  <a target="_blank" href="https://github.com/dougthomp">
+    <img  class="avatar avatar-small"
+          alt="dougthomp"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/76076341?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
 </span>
 
 
 </p>
-
 
 <div id="preamble">
 <div class="sectionbody">
@@ -5306,7 +5300,7 @@
 <h2 id="手順-2-ha-システムでシステム-id-の変更を確認する">手順 2 ： HA システムでシステム ID の変更を確認する</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。_replacement _node のブート時にシステム ID の変更を確定し、その変更が実施されたことを確認する必要があります。</p>
+<p>HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。_replacement _controller をブートしたときにシステム ID の変更を確認し、その変更が実装されたことを確認する必要があります。</p>
 </div>
 <div class="paragraph">
 <p>この手順は、 HA ペアの ONTAP を実行するシステムにのみ適用されます。</p>
@@ -5314,21 +5308,21 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>_replacement _node が Maintenance モードの場合（プロンプトに「 * &gt; 」が表示されている場合）は、 Maintenance モードを終了して、 LOADER プロンプトを表示します。</p>
+<p>_replacement _controller が Maintenance モードの場合（プロンプトに「 * &gt; 」が表示されている場合）は、 Maintenance モードを終了して、 LOADER プロンプトを表示します。</p>
 <div class="paragraph">
 <p>*halt *`</p>
 </div>
 </li>
 <li>
-<p>システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 * y * 」と入力し、ノードをブートします。</p>
+<p>システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は、 _replacement _controller の LOADER プロンプトから「 * y * 」と入力し、コントローラをブートします。</p>
 </li>
 <li>
-<p>_replacement _node コンソールに Waiting for giveback&#8230;&#8203; というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。</p>
+<p>_replacement controller コンソールに Waiting for giveback&#8230;&#8203; というメッセージが表示されるまで待ち、正常なコントローラから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。</p>
 <div class="paragraph">
 <p>'<strong>' storage failover show'</strong></p>
 </div>
 <div class="paragraph">
-<p>コマンド出力には、障害ノードでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。</p>
+<p>コマンド出力には、障害のあるコントローラでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -5343,7 +5337,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 </div>
 </li>
 <li>
-<p>正常なノードから、コアダンプがすべて保存されたことを確認します。</p>
+<p>正常なコントローラから、コアダンプがすべて保存されたことを確認します。</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -5384,16 +5378,16 @@ node2             node1             -            Waiting for giveback (HA mailbo
 </div>
 </li>
 <li>
-<p>ノードをギブバックします。</p>
+<p>コントローラをギブバックします。</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>正常なノードから、交換したノードのストレージをギブバックします。</p>
+<p>正常なコントローラから、交換したコントローラのストレージをギブバックします。</p>
 <div class="paragraph">
 <p><code>* storage failover giveback -ofnode replacement_node_name _*</code></p>
 </div>
 <div class="paragraph">
-<p>_replacement _node はストレージをテイクバックしてブートを完了します。</p>
+<p>_replacement _controller はストレージをテイクバックしてブートを完了します。</p>
 </div>
 <div class="paragraph">
 <p>システム ID が一致しないためにシステム ID を上書きするように求められた場合は '<strong>y</strong>' と入力する必要があります</p>
@@ -5430,7 +5424,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 <li>
 <p>ディスクが正しく割り当てられたことを確認します。「 storage disk show -ownership</p>
 <div class="paragraph">
-<p>replacement _node には、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。</p>
+<p>replacement _controller に属するディスクには、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -5447,13 +5441,13 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 </div>
 </li>
 <li>
-<p>想定されるボリュームが各ノードに存在することを確認します。</p>
+<p>想定されるボリュームが各コントローラに存在することを確認します。</p>
 <div class="paragraph">
 <p>「 * vol show -node _node-name _ * 」を参照してください</p>
 </div>
 </li>
 <li>
-<p>リブート時の自動テイクオーバーを無効にした場合は、正常なノードから有効にします。</p>
+<p>リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラから有効にします。</p>
 <div class="paragraph">
 <p><code>* storage failover modify -node <em>replacement-node-name _</em> onreboot true *</code></p>
 </div>
@@ -5467,27 +5461,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
     <!-- Page Container -->
   </div>
 
-  
-  <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[システムにケーブルを再接続し、ディスクを再割り当てします。 AFF C190](https://docs.netapp.com/ja-jp/ontap-systems/c190/controller-replace-recable-reassign-disks.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/c190/controller_replace_recable_reassign_disks.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-systems/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
-    </div>
-    <div class="page-nav-container">
-      <nav class="page-nav-fixed">
-        <div class="page-nav-title">このページ</div>
-        <div class="page-nav-links">
-          <ul class="page-nav-inner" id="page-menu"></ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-  
-  <div style="clear: both"></div><!-- Main needs to have height -->
-</div>
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
 
         </main>
 
@@ -5589,9 +5563,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 </div>
 </footer>
 
-      </div>
-
-      <!-- Elasticsearch JS -->
+      </div><!-- Elasticsearch JS -->
       <script type="text/javascript" src='/ja-jp/ontap-systems/js/bundle.js'></script>
 
       <!-- Syntax Highlighting -->
@@ -5606,7 +5578,4 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
     </script>
     <script src='/ja-jp/ontap-systems/js/www-ntap.js'></script>
     <script src='/ja-jp/ontap-systems/js/tabbed-blocks.js'></script>
-  </body>
-
-  
-</html>
+  </body></html>

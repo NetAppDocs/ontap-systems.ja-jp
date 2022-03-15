@@ -16,20 +16,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/>
-  
-  <meta name="description" content="システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。">
-  <meta name="keywords" content=" aff a200, replace the dimms">
-  
-  
-
-  <!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。">
+  <meta name="keywords" content=" aff a200, replace the dimms"><!-- Icons -->
   <link rel="icon" href="/ja-jp/ontap-systems/images/favicon.ico" type="image/x-icon">
 
-  <!-- RSS Feed -->
-  
-
-  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
 
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
@@ -59,27 +50,11 @@
   
   <link rel="stylesheet" href="/ja-jp/ontap-systems/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/ja-jp/ontap-systems/css/tabbed-blocks.css" type="text/css">
-  <link rel="stylesheet" href='/ja-jp/ontap-systems/css/product-family.css' type="text/css">
-  
-
-  
-  <link rel='stylesheet' href='/ja-jp/ontap-systems/css/na-feature.css' type='text/css'>
-  
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel='stylesheet' href='/ja-jp/ontap-systems/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-  <!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
-  
-    <script src='/ja-jp/ontap-systems/js/na-search.js'></script>
-  
 
-  
-  <script src='/ja-jp/ontap-systems/js/na-pagenav.js'></script>
-  
-
-  <link rel='stylesheet' href='/ja-jp/ontap-systems/css/prism.css' type='text/css'>
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ja-jp/ontap-systems/js/na-search.js'></script><script src='/ja-jp/ontap-systems/js/na-pagenav.js'></script><link rel='stylesheet' href='/ja-jp/ontap-systems/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/ja-jp/ontap-systems/css/prism-netapp.css' type='text/css'>
 
 
@@ -97,9 +72,7 @@
   <script src='/ja-jp/ontap-systems/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/ja-jp/ontap-systems/js/toc.js'></script>
-  <script src='/ja-jp/ontap-systems/js/customscripts.js'></script>
-
-  <script>
+  <script src='/ja-jp/ontap-systems/js/customscripts.js'></script><script>
       $(document).ready(function() {
           
           var collapseOnInit = true;
@@ -158,7 +131,6 @@
   }
   </script>
   <script src='/ja-jp/ontap-systems/js/version-dropdown.js'></script>
-  <script src='/ja-jp/ontap-systems/js/product-family.js'></script>
   <script src='/ja-jp/ontap-systems/js/FileSaver.min.js'></script>
   <script src='/ja-jp/ontap-systems/js/jszip-utils.min.js'></script>
   <script src='/ja-jp/ontap-systems/js/jszip.min.js'></script>
@@ -171,6 +143,25 @@
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[DIMM- AFF A200 を交換します](https://docs.netapp.com/ja-jp/ontap-systems/a200/dimm-replace.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/a200/dimm-replace.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-systems/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">このページ</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -5185,26 +5176,22 @@
   
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
-    <!-- Begin of page container -->
-    <article class="page-content">
+    <!-- Begin of page container --><article class="page-content">
       <div class="ie-utility">
   <div class="ie-menu">
     <div class="n-breadcrumb">
       <ul class="n-breadcrumb__list">
         <li class="n-breadcrumb__list-item">
-          <a href="https://www.netapp.com">ホーム</a>
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com">ドキュメント</a>
-        </li>
+        
+
         
 
         <li class="n-breadcrumb__list-item">
           <a href="/ja-jp/ontap-systems/">ONTAP&nbsp;Systems</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          DIMM- AFF A200 を交換します
-        </li>
+
       </ul>
     </div>
     <div style="clear: both"></div><!-- Main needs to have height -->
@@ -5233,7 +5220,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-23 15:27:18 +0000">02/23/2022</time>
+    <time datetime="2022-03-15 19:23:16 +0000">03/15/2022</time>
     
   
 
@@ -5275,7 +5262,6 @@
 
 </p>
 
-
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
@@ -5298,10 +5284,10 @@
 <h2 id="手順-1-障害のあるコントローラをシャットダウンします">手順 1 ：障害のあるコントローラをシャットダウンします</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをテイクオーバーする必要があります。</p>
+<p>障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。</p>
 </div>
 <div class="paragraph">
-<p>ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。を参照してください <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">"CLI での管理の概要"</a>。</p>
+<p>ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">"CLI での管理の概要"</a>。</p>
 </div>
 <div class="olist arabic">
 <div class="title">手順</div>
@@ -5313,10 +5299,10 @@
 </div>
 </li>
 <li>
-<p>正常なノードのコンソールから自動ギブバックを無効にします。「 storage failover modify – node local-auto-giveback false</p>
+<p>正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false</p>
 </li>
 <li>
-<p>障害ノードに LOADER プロンプトを表示します。</p>
+<p>障害のあるコントローラに LOADER プロンプトを表示します。</p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">
@@ -5324,7 +5310,7 @@
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">障害ノードの表示</th>
+<th class="tableblock halign-left valign-top">障害のあるコントローラの表示</th>
 <th class="tableblock halign-left valign-top">作業</th>
 </tr>
 </thead>
@@ -5350,20 +5336,17 @@
 <p>システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>正常なノードから障害ノードをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name _</p>
+<p>正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _</p>
 </div>
 <div class="paragraph">
-<p>+ 障害ノードに「 Waiting for giveback&#8230;&#8203; 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。</p>
-</div>
-<div class="paragraph">
-<p>[+]</p>
+<p>障害のあるコントローラに「 Waiting for giveback&#8230;&#8203; 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。</p>
 </div></div></td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>システムのシャーシにコントローラモジュールが 1 つしかない場合は、電源装置をオフにして、障害ノードの電源コードを電源から抜きます。</p>
+<p>システムのシャーシにコントローラモジュールが 1 つしかない場合は、電源装置をオフにして、障害のあるコントローラの電源コードを電源から抜きます。</p>
 </li>
 </ol>
 </div>
@@ -5722,20 +5705,20 @@ DIMM がスロットにまっすぐ差し込まれていることを目で確認
 <p>システムレベルの診断を開始するには、システムに LOADER プロンプトが表示されている必要があります。</p>
 </div>
 <div class="paragraph">
-<p>診断手順のコマンドは、すべてコンポーネントを交換するノードから実行します。</p>
+<p>診断手順のコマンドは、すべてコンポーネントを交換するコントローラから実行します。</p>
 </div>
 <div class="olist arabic">
 <div class="title">手順</div>
 <ol class="arabic">
 <li>
-<p>作業をするノードに LOADER プロンプトが表示されていない場合は、次の手順を実行します。</p>
+<p>作業をするコントローラに LOADER プロンプトが表示されていない場合は、次の手順を実行します。</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
 <p>表示されたメニューからメンテナンスモードオプションを選択します。</p>
 </li>
 <li>
-<p>ノードが保守モードでブートしたら ' ノードを停止します</p>
+<p>コントローラが保守モードでブートしたら、コントローラを停止します</p>
 <div class="paragraph">
 <p>コマンドを問題したら、システムが LOADER プロンプトで停止するまで待ちます。</p>
 </div>
@@ -5754,7 +5737,7 @@ DIMM がスロットにまっすぐ差し込まれていることを目で確認
 <div class="ulist">
 <ul>
 <li>
-<p>HA 構成でメンテナンスモードに切り替えたときに表示される、正常なノードが停止したままであることの確認を求めるプロンプト。</p>
+<p>HA 構成でメンテナンスモードに切り替えたときに表示される、正常なコントローラが停止したままであることの確認を求めるプロンプト。</p>
 </li>
 </ul>
 </div>
@@ -5815,24 +5798,24 @@ DIMM がスロットにまっすぐ差し込まれていることを目で確認
 <li>
 <p>保守モードを終了します :halt</p>
 <div class="paragraph">
-<p>ノードに LOADER プロンプトが表示されます。</p>
+<p>コントローラに LOADER プロンプトが表示されます。</p>
 </div>
 </li>
 <li>
-<p>LOADER プロンプトからノードをブートします。 bye</p>
+<p>LOADER プロンプトからコントローラをブートします</p>
 </li>
 <li>
-<p>ノードを通常動作に戻します。</p>
+<p>コントローラを通常動作に戻します。</p>
 <div class="ulist">
 <ul>
 <li>
-<p>ノードが HA ペアに含まれている場合は、ギブバックを実行します。「 storage failover giveback -ofnode replacement_node_name _</p>
+<p>コントローラが HA ペアに含まれている場合は、ギブバックを実行します。 storage failover giveback -ofnode replacement_node_name _`</p>
 </li>
 <li>
 <p>注：自動ギブバックを無効にした場合は 'storage failover modify コマンドを使用して再度有効にします</p>
 </li>
 <li>
-<p>スタンドアロン構成のノードの場合 * は、次の手順に進みます。対処は不要です。</p>
+<p>コントローラがスタンドアロン構成の場合 * は、次の手順に進みます。対処は不要です。</p>
 </li>
 </ul>
 </div>
@@ -5944,18 +5927,18 @@ DIMM がスロットにまっすぐ差し込まれていることを目で確認
 <li>
 <p>保守モードを終了します :halt</p>
 <div class="paragraph">
-<p>ノードに LOADER プロンプトが表示されます。</p>
+<p>コントローラに LOADER プロンプトが表示されます。</p>
 </div>
 </li>
 <li>
-<p>LOADER プロンプトからノードをブートします。 bye</p>
+<p>LOADER プロンプトからコントローラをブートします</p>
 </li>
 <li>
-<p>ノードを通常動作に戻します。</p>
+<p>コントローラを通常動作に戻します。</p>
 <div class="ulist">
 <ul>
 <li>
-<p>ノードが HA ペアに含まれている場合は、ギブバックを実行します。「 storage failover giveback -ofnode replacement_node_name _</p>
+<p>コントローラが HA ペアに含まれている場合は、ギブバックを実行します。 storage failover giveback -ofnode replacement_node_name _`</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -5970,7 +5953,7 @@ DIMM がスロットにまっすぐ差し込まれていることを目で確認
 </div>
 </li>
 <li>
-<p>スタンドアロン構成のノードの場合 * は、次の手順に進みます。対処は不要です。</p>
+<p>コントローラがスタンドアロン構成の場合 * は、次の手順に進みます。対処は不要です。</p>
 </li>
 </ul>
 </div>
@@ -6063,27 +6046,7 @@ DIMM がスロットにまっすぐ差し込まれていることを目で確認
     <!-- Page Container -->
   </div>
 
-  
-  <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[DIMM- AFF A200 を交換します](https://docs.netapp.com/ja-jp/ontap-systems/a200/dimm-replace.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/a200/dimm-replace.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-systems/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
-    </div>
-    <div class="page-nav-container">
-      <nav class="page-nav-fixed">
-        <div class="page-nav-title">このページ</div>
-        <div class="page-nav-links">
-          <ul class="page-nav-inner" id="page-menu"></ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-  
-  <div style="clear: both"></div><!-- Main needs to have height -->
-</div>
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
 
         </main>
 
@@ -6185,9 +6148,7 @@ DIMM がスロットにまっすぐ差し込まれていることを目で確認
 </div>
 </footer>
 
-      </div>
-
-      <!-- Elasticsearch JS -->
+      </div><!-- Elasticsearch JS -->
       <script type="text/javascript" src='/ja-jp/ontap-systems/js/bundle.js'></script>
 
       <!-- Syntax Highlighting -->
@@ -6202,7 +6163,4 @@ DIMM がスロットにまっすぐ差し込まれていることを目で確認
     </script>
     <script src='/ja-jp/ontap-systems/js/www-ntap.js'></script>
     <script src='/ja-jp/ontap-systems/js/tabbed-blocks.js'></script>
-  </body>
-
-  
-</html>
+  </body></html>
