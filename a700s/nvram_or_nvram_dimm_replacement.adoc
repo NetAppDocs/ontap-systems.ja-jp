@@ -1,7 +1,7 @@
 ---
 permalink: a700s/nvram-or-nvram-dimm-replacement.html 
 sidebar: sidebar 
-keywords: aff a700s, aff, a700s, replace, fail, nvram, card, remove, riser, controller, module, system, id, nvram, dimm, shut, down, reassign, disk, restore, encryption, functionality, complete, replacement, process, replace the nvram module and/or nvram dimms, shut down the impaired controller, shut down the impaired node, remove the controller module, remove the nvram card, reinstall the controller module and booting the system, reassign disks, restore storage and volume encryption functionality, complete the replacement process 
+keywords: aff a700s, aff, a700s, replace, fail, nvram, card, remove, riser, controller, module, system, id, nvram, dimm, shut, down, reassign, disk, restore, encryption, functionality, complete, replacement, process, replace the nvram module and/or nvram dimms, shut down the impaired controller, shut down the impaired controller, remove the controller module, remove the nvram card, reinstall the controller module and booting the system, reassign disks, restore storage and volume encryption functionality, complete the replacement process 
 summary: 障害が発生した NVRAM カードを交換するには、 NVRAM ライザー「ライザー 1 」をコントローラモジュールから取り外し、障害が発生したカードをライザーから取り外し、新しい NVRAM カードをライザーに取り付けてから、ライザーをコントローラモジュールに再度取り付ける必要があります。システム ID は NVRAM カードに基づくため、モジュールを交換する場合は、システムに属するディスクは新しいシステム ID に再割り当てされます。 
 ---
 = NVRAM モジュールと NVRAM DIMM を交換してください - AFF A700s
@@ -14,11 +14,11 @@ summary: 障害が発生した NVRAM カードを交換するには、 NVRAM ラ
 
 .作業を開始する前に
 * すべてのディスクシェルフが適切に動作している必要があります。
-* HA ペアのシステムの場合は、交換する NVRAM モジュールに関連付けられているノードをパートナーノードがテイクオーバーできる必要があります。
+* HA ペアのシステムの場合は、交換する NVRAM モジュールに関連付けられているコントローラをパートナーコントローラがテイクオーバーできる必要があります。
 * この手順では次の用語を使用します。
 +
-** impaired_node は、保守を実行しているノードです。
-** healthy_node は、障害ノードの HA パートナーです。
+** impaired_controller は、メンテナンスを実行しているコントローラです。
+** healthy_controller は、障害のあるコントローラの HA パートナーです。
 
 
 * この手順には、新しい NVRAM モジュールに関連付けられているコントローラモジュールにディスクを自動または手動で再割り当てする手順が含まれています。手順でに指示された場合は、ディスクを再割り当てする必要があります。ギブバックで CAN 原因の問題が発生する前にディスクの再割り当てを完了する。
@@ -28,24 +28,24 @@ summary: 障害が発生した NVRAM カードを交換するには、 NVRAM ラ
 
 
 
-== 障害ノードをシャットダウンします
+== 障害のあるコントローラをシャットダウンします
 
 [role="lead"]
-障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをテイクオーバーする必要があります。
+障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
 
-ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"^]。
+ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"^]。
 
 .手順
 . AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
 +
 次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
 
-. 正常なノードのコンソールから自動ギブバックを無効にします。「 storage failover modify – node local-auto-giveback false
-. 障害ノードに LOADER プロンプトを表示します。
+. 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
+. 障害のあるコントローラに LOADER プロンプトを表示します。
 +
 [cols="1,2"]
 |===
-| 障害ノードの表示 | 作業 
+| 障害のあるコントローラの表示 | 作業 
 
 
  a| 
@@ -65,11 +65,9 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
  a| 
 システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
  a| 
-正常なノードから障害ノードをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name _
+正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _
 
-+ 障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
-
-[+]
+障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
 
 |===
 +
@@ -298,15 +296,15 @@ NOTE: コネクタの破損を防ぐため、コントローラモジュール�
 == HA システムでシステム ID の変更を確認
 
 [role="lead"]
-_replacement _node のブート時にシステム ID の変更を確定し、その変更が実施されたことを確認する必要があります。
+_replacement _controller をブートしたときにシステム ID の変更を確認し、その変更が実装されたことを確認する必要があります。
 
 この手順は、 HA ペアの ONTAP を実行するシステムにのみ適用されます。
 
-. _replacement _node が Maintenance モードになっている場合 (`*>` プロンプトが表示されている場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます
-. システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 y 」と入力し、ノードをブートします
-. _replacement _node コンソールに「 Waiting for giveback... 」というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。「 storage failover show
+. _replacement _controller が Maintenance モードになっている場合 (`*>` プロンプトが表示されている場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます
+. システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は 'boot_ontap `` を」と入力して ' コントローラをブートします
+. _replacement _controller コンソールに Waiting for giveback... というメッセージが表示されるまで待ち、正常なコントローラから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show
 +
-コマンド出力には、障害ノードでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。
+コマンド出力には、障害のあるコントローラでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。
 
 +
 [listing]
@@ -319,7 +317,7 @@ node1             node2             false        System ID changed on partner (O
                                                   151759755, New: 151759706), In takeover
 node2             node1             -            Waiting for giveback (HA mailboxes)
 ----
-. 正常なノードから、コアダンプがすべて保存されたことを確認します。
+. 正常なコントローラから、コアダンプがすべて保存されたことを確認します。
 +
 .. advanced 権限レベルに切り替えます。「 set -privilege advanced 」
 +
@@ -333,11 +331,11 @@ advanced モードで続行するかどうかを確認するプロンプトが�
 .. admin 権限レベルに戻ります。「 set -privilege admin 」
 
 
-. ノードをギブバックします。
+. コントローラをギブバックします。
 +
-.. 正常なノードから、交換したノードのストレージをギブバックします。「 storage failover giveback -ofnode replacement_node_name _
+.. 正常なコントローラから、交換したコントローラのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name _`
 +
-_replacement _node はストレージをテイクバックしてブートを完了します。
+_replacement _controller はストレージをテイクバックしてブートを完了します。
 
 +
 システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は 'y' と入力する必要があります
@@ -357,7 +355,7 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62
 
 . ディスクが正しく割り当てられたことを確認します。「 storage disk show -ownership
 +
-replacement _node には、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。
+replacement _controller に属するディスクには、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。
 
 +
 [listing]
@@ -372,8 +370,8 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 .
 .
 ----
-. 各ノードに、想定されるボリュームが存在することを確認します。 vol show -node node-name
-. リブート時の自動テイクオーバーを無効にした場合は、正常なノードで「 storage failover modify -node replacement-node-name -onreboot true 」を有効にします
+. 各コントローラに、想定されるボリュームが存在することを確認します。 vol show -node node-name
+. リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラで storage failover modify -node replacement-node-name -onreboot true を有効にします
 
 
 

@@ -72,6 +72,6 @@ NOTE: コネクタの破損を防ぐため、コントローラモジュール�
 
 NOTE: 変換が完了したら必ずメンテナンスモードを終了してください。
 
-. ストレージをギブバックしてノードを通常動作に戻します。「 storage failover giveback -ofnode impaired_node_name _
+. ストレージをギブバックして、コントローラを通常の動作に戻します。 storage failover giveback -ofnode impaired_node_name _`
 . 自動ギブバックを無効にした場合は、再度有効にします。「 storage failover modify -node local-auto-giveback true 」
 

@@ -34,21 +34,21 @@ summary: ストレージを再度ケーブル接続し、ディスクの再割�
 
 == 手順 2 ： HA システムでシステム ID の変更を確認する
 
-HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。_replacement _node のブート時にシステム ID の変更を確定し、その変更が実施されたことを確認する必要があります。
+HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。_replacement _controller をブートしたときにシステム ID の変更を確認し、その変更が実装されたことを確認する必要があります。
 
 この手順は、 HA ペアの ONTAP を実行するシステムにのみ適用されます。
 
-. _replacement _node が Maintenance モードの場合（プロンプトに「 * > 」が表示されている場合）は、 Maintenance モードを終了して、 LOADER プロンプトを表示します。
+. _replacement _controller が Maintenance モードの場合（プロンプトに「 * > 」が表示されている場合）は、 Maintenance モードを終了して、 LOADER プロンプトを表示します。
 +
 *halt *`
 
-. システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 * y * 」と入力し、ノードをブートします。
-. _replacement _node コンソールに Waiting for giveback... というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。
+. システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は、 _replacement _controller の LOADER プロンプトから「 * y * 」と入力し、コントローラをブートします。
+. _replacement controller コンソールに Waiting for giveback... というメッセージが表示されるまで待ち、正常なコントローラから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。
 +
 '*' storage failover show'*
 
 +
-コマンド出力には、障害ノードでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。
+コマンド出力には、障害のあるコントローラでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。
 
 +
 [listing]
@@ -61,7 +61,7 @@ node1             node2             false        System ID changed on partner (O
                                                   151759755, New: 151759706), In takeover
 node2             node1             -            Waiting for giveback (HA mailboxes)
 ----
-. 正常なノードから、コアダンプがすべて保存されたことを確認します。
+. 正常なコントローラから、コアダンプがすべて保存されたことを確認します。
 +
 .. advanced 権限レベルに切り替えます。
 +
@@ -87,14 +87,14 @@ advanced モードで続行するかどうかを尋ねられたら、「 * Y * �
 
 
 
-. ノードをギブバックします。
+. コントローラをギブバックします。
 +
-.. 正常なノードから、交換したノードのストレージをギブバックします。
+.. 正常なコントローラから、交換したコントローラのストレージをギブバックします。
 +
 `* storage failover giveback -ofnode replacement_node_name _*`
 
 +
-_replacement _node はストレージをテイクバックしてブートを完了します。
+_replacement _controller はストレージをテイクバックしてブートを完了します。
 
 +
 システム ID が一致しないためにシステム ID を上書きするように求められた場合は '*y*' と入力する必要があります
@@ -114,7 +114,7 @@ storage failover show コマンドの出力には 'System ID changed on partner 
 
 . ディスクが正しく割り当てられたことを確認します。「 storage disk show -ownership
 +
-replacement _node には、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。
+replacement _controller に属するディスクには、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。
 
 +
 [listing]
@@ -129,11 +129,11 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 .
 .
 ----
-. 想定されるボリュームが各ノードに存在することを確認します。
+. 想定されるボリュームが各コントローラに存在することを確認します。
 +
 「 * vol show -node _node-name _ * 」を参照してください
 
-. リブート時の自動テイクオーバーを無効にした場合は、正常なノードから有効にします。
+. リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラから有効にします。
 +
 `* storage failover modify -node _replacement-node-name __ onreboot true *`
 

@@ -38,16 +38,16 @@ NOTE: システム ID とディスク割り当て情報は NVRAM モジュール
 == 手順 2 ：ディスクを再割り当てする
 
 [role="lead"]
-HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。_replacement _node のブート時にシステム ID の変更を確定し、その変更が実施されたことを確認する必要があります。
+HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。_replacement _controller をブートしたときにシステム ID の変更を確認し、その変更が実装されたことを確認する必要があります。
 
 [role="lead"]
 この手順は、 HA ペアの ONTAP を実行するシステムにのみ適用されます。
 
-. _replacement _node が Maintenance モード ( プロンプトに *>` が表示されている ) の場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます
-. システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 y 」と入力し、ノードをブートします
-. _replacement _node コンソールに「 Waiting for giveback... 」というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。「 storage failover show
+. _replacement _controller が Maintenance モード (`*>` プロンプトが表示されている ) の場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます
+. システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は 'boot_ontap `` を」と入力して ' コントローラをブートします
+. _replacement _controller コンソールに Waiting for giveback... というメッセージが表示されるまで待ち、正常なコントローラから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show
 +
-コマンド出力には、障害ノードでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。
+コマンド出力には、障害のあるコントローラでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。
 
 +
 [listing]
@@ -60,7 +60,7 @@ node1             node2             false        System ID changed on partner (O
                                                   151759755, New: 151759706), In takeover
 node2             node1             -            Waiting for giveback (HA mailboxes)
 ----
-. 正常なノードから、コアダンプがすべて保存されたことを確認します。
+. 正常なコントローラから、コアダンプがすべて保存されたことを確認します。
 +
 .. advanced 権限レベルに切り替えます。「 set -privilege advanced 」
 +
@@ -74,11 +74,11 @@ advanced モードで続行するかどうかを確認するプロンプトが�
 .. admin 権限レベルに戻ります。「 set -privilege admin 」
 
 
-. ノードをギブバックします。
+. コントローラをギブバックします。
 +
-.. 正常なノードから、交換したノードのストレージをギブバックします。「 storage failover giveback -ofnode replacement_node_name _
+.. 正常なコントローラから、交換したコントローラのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name _`
 +
-_replacement _node はストレージをテイクバックしてブートを完了します。
+_replacement _controller はストレージをテイクバックしてブートを完了します。
 
 +
 システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は 'y' と入力する必要があります
@@ -98,7 +98,7 @@ NOTE: ギブバックが拒否されている場合は、拒否を無効にす�
 
 . ディスクが正しく割り当てられたことを確認します。「 storage disk show -ownership
 +
-replacement _node には、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。
+replacement _controller に属するディスクには、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。
 
 +
 [listing]
@@ -113,23 +113,23 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 .
 .
 ----
-. システムが MetroCluster 構成になっている場合は ' ノードのステータスを監視します MetroCluster node show
+. システムが MetroCluster 構成になっている場合は ' コントローラのステータスを監視します MetroCluster node show
 +
-MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。「 MetroCluster node show -fields node-systemid` 」コマンドの出力には、 MetroCluster 設定が通常の状態に戻るまで古いシステム ID が表示されます。
+MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各コントローラの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。「 MetroCluster node show -fields node-systemid` 」コマンドの出力には、 MetroCluster 設定が通常の状態に戻るまで古いシステム ID が表示されます。
 
-. ノードが MetroCluster 構成になっている場合は、 MetroCluster の状態に応じて、元の所有者がディザスタサイトのノードである場合に DR ホーム ID のフィールドにディスクの元の所有者が表示されることを確認します。
+. コントローラが MetroCluster 構成になっている場合は、 MetroCluster の状態に応じて、元の所有者がディザスタサイトのコントローラである場合に DR ホーム ID フィールドにディスクの元の所有者が表示されることを確認します。
 +
 これは、次の両方に該当する場合に必要です。
 
 +
 ** MetroCluster 構成がスイッチオーバー状態である。
-** replacement _node は、ディザスタサイトのディスクの現在の所有者です。
+** replacement _controller は、ディザスタサイトのディスクの現在の所有者です。
 +
 詳細については、を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration["4 ノード MetroCluster 構成での HA テイクオーバーおよび MetroCluster スイッチオーバー中のディスク所有権の変更"^] トピック：
 
 
 
-. システムが MetroCluster 構成になっている場合は、各ノードが構成されていることを確認します。「 MetroCluster node show -fields configurion-state 」
+. システムが MetroCluster 構成になっている場合は、各コントローラが構成されていることを確認します。「 MetroCluster node show -fields configurion-state 」
 +
 [listing]
 ----
@@ -144,6 +144,6 @@ dr-group-id            cluster node           configuration-state
 
 4 entries were displayed.
 ----
-. 各ノードに、想定されるボリュームが存在することを確認します。 vol show -node node-name
-. リブート時の自動テイクオーバーを無効にした場合は、正常なノードで「 storage failover modify -node replacement-node-name -onreboot true 」を有効にします
+. 各コントローラに、想定されるボリュームが存在することを確認します。 vol show -node node-name
+. リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラで storage failover modify -node replacement-node-name -onreboot true を有効にします
 

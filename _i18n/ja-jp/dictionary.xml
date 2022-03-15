@@ -1592,25 +1592,17 @@
   <block id="c05037a88de91ff2d60122b1ccf7291a" category="paragraph">これにより、手順の記録が作成され、交換プロセス中に発生する可能性のある問題をトラブルシューティングすることができます。</block>
   <block id="596bcca65aca56bacb3df39265f83dfb" category="summary">シャーシを交換するには、コントローラをシャットダウンする必要があります。</block>
   <block id="b0a5349e52bfc1b486c0f4bb7f8c6b18" category="doc">コントローラをシャットダウンします（ AFF A250 ）</block>
-  <block id="45bd0f10632b3d357d0e53299710ca0c" category="paragraph">シャーシ内のノードを新しいシャーシに移動する前に、ノードをシャットダウンする必要があります。</block>
   <block id="19285c8cf559d5176d09036ecccfca21" category="list-text">AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh</block>
   <block id="f80af4e39d67de6feaae8747f603e24b" category="paragraph">次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * &gt; system node AutoSupport invoke -node * -type all -message MAINT=2h`</block>
   <block id="880c0610027a11af7086ae7e380e12e5" category="list-text">システムにコントローラモジュールが 2 つある場合は、 HA ペアを無効にします。</block>
   <block id="d426a3f5c9c0e3362f4ed536e7643c03" category="cell">clustered ONTAP を実行しているシステムの構成</block>
-  <block id="a605680e828f9a13dc5c8773f7f16c59" category="paragraph">クラスタ内の 2 つのノード</block>
   <block id="8d6f30824233e0351fc71f18fbb5c436" category="paragraph">cluster ha modify -configured false 「 storage failover modify -node node0 -enabled false 」という名前になります</block>
-  <block id="4252cc22782c7895d045823c51f6d877" category="paragraph">クラスタ内のノードが 3 つ以上</block>
   <block id="b2aa61dcee4d7b77fcd001973469ddde" category="paragraph">「 storage failover modify -node node0 -enabled false 」という名前のノードが追加されました</block>
   <block id="481250f3e8ec41b0e994305d8fc52b4a" category="paragraph">次のような確認メッセージが表示されます。</block>
   <block id="cf55af4b4668a579d36bfd91785ecbec" category="summary">NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。</block>
-  <block id="db4547d0ddae50a76aa47cf54e9d15ae" category="doc">ノード AFF A250 をシャットダウンします</block>
-  <block id="130b18edff1b7e2377d35d657b1f8a53" category="list-text">障害ノードに LOADER プロンプトが表示されていない場合は、次の手順を実行します。</block>
   <block id="d4d4b346339524be979b964b901a1b92" category="cell">... *</block>
-  <block id="2fbc9f3babe8926d05354b5d3a0f06d4" category="paragraph">+ ギブバックを待機中 ...+`</block>
   <block id="426ac41b4c68d57196f875fa046c7804" category="paragraph">Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します</block>
   <block id="7e14201f51e262f13f2c3c4eb7e4a175" category="paragraph">システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）</block>
-  <block id="bbef0c572fdbe204bb84f52d821e393b" category="paragraph">障害ノードをテイクオーバーまたは停止します。</block>
-  <block id="c661090006ca8f995a25dfb913aa9247" category="paragraph">障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。</block>
   <block id="ff979fc0a0ab041b0436a8d7243aa05b" category="list-text">LOADER プロンプトで「 printenv 」と入力し、すべてのブート環境変数をキャプチャします。出力をログファイルに保存します。</block>
   <block id="61e0109e9abc6d9e0e9d957157c4a657" category="admonition">ブートデバイスが壊れているか機能していない場合、このコマンドは機能しない可能性があります。</block>
   <block id="1cfa6f391685fda6b74bedcb88fa1418" category="summary">システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。</block>
@@ -1618,15 +1610,10 @@
   <block id="49d981e4792b1b6bfc193d341fe3b1d4" category="paragraph">システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。</block>
   <block id="118a19c264126d2eb7de4542c32c102d" category="section-title">手順 1 ：障害のあるコントローラをシャットダウンします</block>
   <block id="16f911f59a050f663b12ff955a280de7" category="paragraph">障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをテイクオーバーする必要があります。</block>
-  <block id="073ebf16dce27d691bcca3d280b72f9b" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。</block>
   <block id="38093d6513bb2e960eab247f00f04533" category="paragraph"><block ref="38093d6513bb2e960eab247f00f04533" category="inline-link-rx"></block></block>
-  <block id="cbd2cc7bf09016b948d6312eac7c93ff" category="list-text">正常なノードのコンソールから自動ギブバックを無効にします。「 storage failover modify – node local-auto-giveback false</block>
-  <block id="78c8abed37749a0772d77fceb947f1ac" category="list-text">障害ノードに LOADER プロンプトを表示します。</block>
-  <block id="390e488e4fa2a84c9493e1ae635bb564" category="cell">障害ノードの表示</block>
   <block id="a2efb773cb3f251f8687b1e41309b525" category="paragraph">LOADER プロンプト</block>
   <block id="b1ba38ad947dd1578f31b0197f58b44d" category="paragraph">次の手順に進みます。</block>
   <block id="fd66c964768074eb90f4f1426229bf3e" category="paragraph">ギブバックを待っています</block>
-  <block id="a45c4d08ccf72d071a90de42e42a49bb" category="list-text">HA ペアの場合は、正常なノードから障害ノードをテイクオーバーします。「 storage failover takeover -ofnode impaired_node_name _</block>
   <block id="1d71cf823dacd99114cf396e262443eb" category="section-title">手順 2 ：コントローラモジュールを取り外す</block>
   <block id="ba33da695ad96f17f79f8e49c2a7e76b" category="paragraph">コントローラモジュール内部のコンポーネントを交換する場合は、コントローラモジュールをシャーシから取り外す必要があります。</block>
   <block id="334bb16405bcc7c9665f21826629b5b3" category="paragraph">元の場所がわかるように、ケーブルにラベルを付けておいてください。</block>
@@ -1689,10 +1676,8 @@
   <block id="bc4c3148602338c7b283fc42b60407da" category="list-text">この手順は、システムでサポートされるすべてのバージョンの ONTAP で使用できます。</block>
   <block id="1c44627eb33d55ec54d505046a55d435" category="list-text">この手順は、ベゼル、 NVMe ドライブ、およびコントローラモジュールをネットアップ製の新しいシャーシに移動することを前提としています。</block>
   <block id="0c58f83d7ef25b7c494eb992b66728c1" category="list-text">この手順はシステムの停止を伴います。2 ノードクラスタではサービスが完全に停止し、マルチノードクラスタでは部分的に停止します。</block>
-  <block id="0e4ba9b88ff6d370d76b54b449cb6648" category="summary">障害のあるコントローラモジュールをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをテイクオーバーする必要があります。</block>
   <block id="d79b377e4ffb63d9f7bc2cd5de1e04de" category="doc">障害のあるコントローラモジュール AFF A250 をシャットダウンします</block>
   <block id="04a1c92d61b3e562a673dea0adef0f20" category="list-text">NetApp Storage Encryption を使用している場合は、 _ ONTAP 9 NetApp Encryption パワーガイド _ の「 SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります。</block>
-  <block id="d159332fd3b62eb0d07a6b33b667c03b" category="list-text">SAN システムを使用している場合は、障害ノードの SCSI ブレードに関するイベントメッセージ（ event log show ）を確認しておく必要があります。</block>
   <block id="d341e954ddede02e8d2c553ecfba224a" category="paragraph">各 SCSI ブレードプロセスは、クラスタ内の他のノードとクォーラムを構成している必要があります。交換を進める前に、すべての問題を解決しておく必要があります。</block>
   <block id="971840ecd85a736d5b833bc352989a07" category="list-text">MetroCluster 構成を使用している場合は、 MetroCluster 構成状態が設定されていることと、ノードが有効かつ正常な状態であることを確認しておく必要があります（ MetroCluster node show ）。</block>
   <block id="2ac1e9cd887b50e321ead7a3e6beab55" category="summary">コントローラモジュールハードウェアを交換するには、障害のあるコントローラモジュールを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。</block>
@@ -1761,12 +1746,9 @@
   <block id="062e5198807f7350b9d909ed3712446f" category="list-text">NSE または NVE が有効で、オンボードキーマネージャが有効になっている場合は、に進みます <block ref="33a171c6b2b99214dd0e88721c37d6a3" category="inline-xref-macro-rx"></block>。</block>
   <block id="ab86e173cd8c1637bf2f46855c4a5445" category="list-text">ONTAP 9.6 に対して NSE または NVE が有効になっている場合は、に進みます <block ref="562d430b0be788e16727b0e1ac85777d" category="inline-xref-macro-rx"></block>。</block>
   <block id="8ec39994b3f9e646dc5702b80aa074eb" category="section-title">オンボードキーマネージャを有効にした場合は、 NVE または NSE をリストアします</block>
-  <block id="cb8bd5f8b409f772feeb282be5c812fd" category="list-text">コンソールケーブルをターゲットノードに接続します。</block>
-  <block id="09c59b704f34eb3d4a2fd7d67e831c1b" category="list-text">LOADER プロンプトで「 boot_ontap 」コマンドを使用して、ノードをブートします。</block>
   <block id="9031c37a40e72ae548a2065bf45f23a8" category="list-text">コンソールの出力を確認します。</block>
   <block id="48bb654d023280bd32c893baf085bc9c" category="cell">* と表示されます</block>
   <block id="5868efbae90f2f86a5ed062e24cabc9d" category="cell">* 次に ... *</block>
-  <block id="ee576c01fd9d6961677d0a6255745ad9" category="paragraph">ノードをブートメニュー「 boot_ontap menu 」からブートします</block>
   <block id="c6ad4048580181b0fbf4e191b6491baa" category="paragraph">ギブバックを待っています</block>
   <block id="c970b4d58ed065781ff23330890becaf" category="list-text">プロンプトで「 Ctrl+C 」と入力します</block>
   <block id="349f344b4475008476c2c7c47e12e197" category="list-text">というメッセージが表示された場合：このノードを halt するのではなく、 [y/n] をクリックしますか？「 y 」と入力します</block>
@@ -1780,7 +1762,6 @@
   <block id="f24608ce23f83ac6c7240ac03d83765f" category="paragraph">-------------- エンド・バックアップ：</block>
   <block id="4c01cfbecac579c81f79ea4297891a2e" category="list-text">ブートメニューで、 Normal Boot のオプションを選択します。</block>
   <block id="18b0469d01c1aab8ffb650afc5ac6e1b" category="paragraph">システムがブートし、「 Waiting for giveback... 」プロンプトが表示されます。</block>
-  <block id="0cf794b2318cb3589aa41f583b7e7d8d" category="list-text">パートナーノードにコンソールケーブルを接続し、「 admin 」としてログインします。</block>
   <block id="0de78a491f219f7714f0bd10c9112f7b" category="list-text">「 storage failover show 」コマンドを使用して、ターゲットノードでギブバックの準備が完了していることを確認します。</block>
   <block id="aec87d8b58ad2257f437b0c97adc8c43" category="list-text">ギブバックを実行するには、「 storage failover giveback -fromnode local-only -cfo-aggregates true 」コマンドを使用して CFO アグリゲートのみをギブバックします。</block>
   <block id="f872779437b4e53b16edbb822fb3c0f4" category="list-text">CIFS セッションが開いているためにコマンドが失敗する場合は、 CIFS セッションを閉じる方法をお客様に確認してください。</block>
@@ -1789,25 +1770,19 @@
   <block id="4de9d59eeee5e688ec5317cbedf4cac0" category="list-text">NDMP 、 SnapMirror 、または SnapVault のプロセスが原因でコマンドが失敗する場合は、そのプロセスを無効にします。詳細については、該当するドキュメントセンターを参照してください。</block>
   <block id="eab386a3f0ee69cc95b939175ad1da27" category="list-text">ギブバックが完了したら、「 storage failover show 」コマンドと「 storage failover show-giveback 」コマンドを使用して、フェイルオーバーとギブバックのステータスを確認します。</block>
   <block id="579b0712f3b828fdc4e9020e1b1bf320" category="paragraph">CFO アグリゲート（ルートアグリゲートおよび CFO 形式のデータアグリゲート）のみが表示されます。</block>
-  <block id="03420b7b4e934ac951aeff951893fc22" category="list-text">コンソールケーブルをターゲットノードに接続します。</block>
   <block id="be2212e27f9b1a451164ead27dee26c8" category="list-text">ONTAP 9.6 以降を実行している場合は、セキュリティキー管理ツールのオンボード同期を実行します。</block>
   <block id="94f8d95799ad1cb87cd8f02b76a24ddb" category="list-text">「 securitykey-manager onboard sync 」コマンドを実行し、プロンプトが表示されたらパスフレーズを入力します。</block>
   <block id="7efe0ba3bdb03965520de5d493cb1efa" category="list-text">「 securitykey-manager key query 」コマンドを入力して、オンボードキーマネージャに格納されているすべてのキーの詳細を表示し、すべての認証キーの「 restored 」列 = 「 yes / true 」であることを確認します。</block>
   <block id="36ec6aaaed7ffba8db1abf0b30f8ad7e" category="admonition">「 Restored 」列が「 yes/true 」以外の場合は、カスタマサポートにお問い合わせください。</block>
   <block id="0b5a2bb237981cd334295abf32e335c5" category="list-text">キーがクラスタ全体で同期されるまで 10 分待ちます。</block>
-  <block id="da4a2b9c52e805a46a6951e79d1796d9" category="list-text">パートナーノードにコンソールケーブルを接続します。</block>
-  <block id="da4a3c359cf5d24082930f89cd19b3fc" category="list-text">「 storage failover giveback -fromnode local 」コマンドを使用してターゲットノードをギブバックします。</block>
   <block id="f1f2858d6d4ebbd18bf81861cde4a024" category="list-text">「 storage failover show 」コマンドを使用して、ギブバックのステータスを確認します。このステータスは、レポートが完了してから 3 分後に表示されます。</block>
   <block id="c7db1a1f0c259cdde0a5d94486a50eab" category="paragraph">20 分経ってもギブバックが完了しない場合は、カスタマーサポートにお問い合わせください。</block>
-  <block id="a23d49d00b003ec7514a6fcf51f93bac" category="list-text">クラスタシェル・プロンプトで、 net int show -is-home false コマンドを入力し、ホーム・ノードおよびポートにない論理インターフェイスを一覧表示します。</block>
   <block id="6b74e1ea2b206c2676c7c5e7a08d32f1" category="paragraph">いずれかのインターフェイスが「 false 」と表示されている場合は、「 net int revert 」コマンドを使用して、これらのインターフェイスをホームポートに戻します。</block>
-  <block id="80d6c51420c97a5fd468a280127498fe" category="list-text">コンソールケーブルをターゲットノードに移動し、「 version-v 」コマンドを実行して ONTAP のバージョンを確認します。</block>
   <block id="0e4c0966d084bca62cb0b1d57bb4cd37" category="list-text">「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。</block>
   <block id="c21bd0aede10c854ba134924f61e7b69" category="section-title">ONTAP 9.6 以降を実行しているシステムで NSE / NVE をリストアする</block>
   <block id="2d3bee2aa5bb3ec8ffb5a77dc1eba625" category="paragraph">ログインプロンプト</block>
   <block id="9a937b3bb3ba6ff155022c69722c1b2d" category="paragraph">手順 7 に進みます。</block>
   <block id="ba3e6eed45ff9076e014e86509a18b9e" category="list-text">パートナーノードにログインします。</block>
-  <block id="809f0d7cd6f78909c00532d70262031d" category="list-text">「 storage failover giveback -fromnode local-only -cfo-aggregates true local 」コマンドを使用して、コンソールケーブルをパートナーノードに移動し、ターゲットノードのストレージをギブバックします。</block>
   <block id="aa633ff512f47818b432e9d473f72e85" category="list-text">3 分待ってから、「 storage failover show 」コマンドを使用してフェイルオーバーステータスを確認します。</block>
   <block id="05b88caec4b40ec70bfc6914f6b9a2ac" category="list-text">クラスタシェルプロンプトで「 storage encryption disk show 」を使用して出力を確認します。</block>
   <block id="847e5cb0171189006a180b0bdc820c1d" category="list-text">「 securitykey-manager key query 」コマンドを使用して、キー管理サーバに格納されている認証キーのキー ID を表示します。</block>
@@ -1845,7 +1820,6 @@
   <block id="f7fb4156be1dd57a9d1579e38fa24445" category="list-text">表示されたメニューから * Test System * を選択します。</block>
   <block id="f94cb94350d4ec3469cbd6fbb2b8efb3" category="admonition">ブートプロセス中に、次のプロンプトが表示される場合があります。</block>
   <block id="24718eccce3cd133d143bec81426275c" category="list-text">システム ID が一致していないためにシステム ID の上書きを求める警告プロンプト。</block>
-  <block id="85b7eb3de3a7efc217fec5e4bc94878f" category="list-text">HA 構成でメンテナンスモードに切り替えたときに表示される、正常なノードが停止したままであることの確認を求めるプロンプト。これらのプロンプトには「 y 」と入力できます。</block>
   <block id="b06018bc829da55a1eb1a43b93312dc5" category="summary">ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。</block>
   <block id="d23cbe6becf6b71df8e4c820a09aed00" category="doc">ブートメディア AFF A250 を交換してください</block>
   <block id="d3756853c8e6da5920108eeb1441fe5d" category="paragraph">ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。</block>
@@ -2228,20 +2202,13 @@
   <block id="413ac2fd2fb4f86c9ec059076dc0b76b" category="list-text">交換が必要なファンモジュールを特定するために、コンソールのエラーメッセージを確認するか、マザーボードでファンモジュールの LED が点灯していることを確認します。</block>
   <block id="fdef2d1361e0c12e51c8a0eb2279a3f0" category="list-text">交換用ファンモジュールの端をコントローラモジュールの開口部に合わせ、交換用ファンモジュールをコントローラモジュールにスライドさせます。</block>
   <block id="b4c31341ab0f1e49529261f974be146d" category="summary">障害ノードをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害ノードのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。</block>
-  <block id="b8ab0743311e15b4dca69b87da3c3e1a" category="list-text">障害ノードのステータスを確認します。</block>
-  <block id="03582aa0f2a939731c07b9900422cd22" category="list-text">障害ノードがログインプロンプトに表示されている場合は 'admin' としてログインします</block>
-  <block id="e090553f6fd47e1f1ead7225617772ef" category="list-text">障害ノードが LOADER プロンプトに表示され、 HA 構成の一部である場合は、正常なノードに「 admin 」としてログインします。</block>
-  <block id="1192b5377c1ad9dfaf75cb33a7333843" category="list-text">「 vrsion -v 」コマンドを使用して、障害ノードでシステムが実行している ONTAP のバージョンが稼働しているかどうか、障害ノードが停止している場合はパートナーノードで稼働しているかどうかを確認します。</block>
   <block id="ababafc28230637bc7ee0dc0762d3d7a" category="list-text">コマンドの出力に &lt;lno-DARE&gt; が表示されず、システムで ONTAP 9.6 以降が実行されている場合は、次のセクションに進みます。</block>
   <block id="e1cb9a7881589d8bbc03d3bc416f6eb6" category="list-text">障害ノードが HA 構成の一部である場合は、正常なノードからの自動ギブバックを無効にします。「 storage failover modify -node local-auto-giveback false 」または「 storage failover modify -node local-auto-giveback -after-panic false 」</block>
   <block id="ddf5ebb5c1d9ad17f6222185e1822bf6" category="section-title">ONTAP 9.6 以降を実行しているシステムでは、 NVE または NSE を確認します</block>
-  <block id="bf3223ea252f144b1ff6ef82d50d0928" category="paragraph">障害ノードをシャットダウンする前に、システムで NetApp Volume Encryption （ NVE ）または NetApp Storage Encryption （ NSE ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。</block>
   <block id="757faef19dddc204a17e4b5890ef2088" category="paragraph">出力に含まれるボリュームには NVE が設定されているため、 NVE の設定を確認する必要があります。ボリュームが表示されない場合は、 NSE が設定されているかどうかを確認します。</block>
   <block id="52f57fb3e4c5bd20a2a75ecc9242ad9a" category="list-text">ディスクが表示されない場合は、 NSE は設定されません。</block>
-  <block id="3f6980a632f1549a6ce891a226389596" category="list-text">NVE と NSE が設定されていない場合は、障害ノードを安全にシャットダウンできます。</block>
   <block id="e11e37bddb45a2b092655cc718d388d5" category="section-title">NVE の設定を確認する</block>
   <block id="a2a9cf44f7484401e6ca68da00a8fb6f" category="list-text">キー管理サーバに格納されている認証キーのキー ID を表示します。「 securitykey-manager query</block>
-  <block id="ffd7e3da9902b5f2c0b821890444dac1" category="list-text">キー・マネージャのタイプに「 external 」と表示され ' 「 restored 」列に「 yes 」と表示されている場合は ' 障害ノードをシャットダウンしても安全です</block>
   <block id="ea9a06f5fb2cd5470a0c0c25b039a03c" category="list-text">「キー・マネージャ」タイプに「 onboard 」と表示され、「 restored 」列に「 yes 」と表示されている場合は、いくつかの追加手順を実行する必要があります。</block>
   <block id="c6d9b949fc815c7d1290e5acb1f3ade9" category="list-text">「キー・マネージャ」タイプに「外部」が表示され、「復元」列に「はい」以外の項目が表示されている場合は、いくつかの追加手順を実行する必要があります。</block>
   <block id="b43c8f6b2fe8e4b5d1d2f97c83c7c6ca" category="list-text">'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' 以外の項目が表示されている場合は ' 追加の手順を実行する必要があります</block>
@@ -2249,7 +2216,6 @@
   <block id="1b3e3ec3fd07bf53abc8401f17b2a7b5" category="list-text">コマンドを入力して、キー管理情報「 securitykey-manager onboard show-backup 」を表示します</block>
   <block id="78a22d38c1530a757fec402c5079de18" category="list-text">バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。</block>
   <block id="19f83f3f355a8b287ae2aa40b5c8fc99" category="list-text">admin モードに戻ります。 'set-priv admin'</block>
-  <block id="5f6d1138869d4cbc60656a6367061ca8" category="list-text">障害ノードをシャットダウンします。</block>
   <block id="59d3229a75f9a710337879feec6b35c8" category="list-text">「キー・マネージャ」タイプに「外部」が表示され、「リストア済み」列に「はい」以外の項目が表示される場合：</block>
   <block id="c664ce90df89e48082cd24116ca9c5cf" category="list-text">外部キー管理の認証キーをクラスタ内のすべてのノードにリストアします：「 securitykey-manager external restore</block>
   <block id="aa93e7bc262e7964a396fd16f3a41d6b" category="paragraph">コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。</block>
@@ -2258,7 +2224,6 @@
   <block id="f5321e091dead7c4ead8728aa3332803" category="list-text">onboard security key-manager sync コマンド「 security key-manager sync 」を入力します</block>
   <block id="29494bbea0c4b9c81b504ce3c9f0c776" category="admonition">プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。<block ref="7bc6752d2076d2c755eaebbdfeb91d23" category="inline-link-rx"></block></block>
   <block id="5420f491e628cc60c7e1ffcad20d35da" category="list-text">コマンドを入力して、キー管理バックアップ情報を表示します。「 securitykey-manager onboard show-backup 」</block>
-  <block id="d518426b6d79ce1aa6dcf60eb5c6300b" category="list-text">ノードは安全にシャットダウンできます。</block>
   <block id="8eb91adaedfd18d8e21833ed58db7673" category="section-title">NSE の設定を確認</block>
   <block id="a5e337a3469d0028e9b72fe170e6d372" category="list-text">onboard security key-manager sync コマンド「 security key-manager external sync 」を入力します</block>
   <block id="f0bb66ccc33b2423473b4997076e2e15" category="paragraph">プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。</block>
@@ -2286,12 +2251,8 @@
   <block id="4c6ce16f45f7004dafb410a6fe342bcf" category="list-text">システムが 40GbE NIC またはオンボードポートで 10GbE のクラスタインターコネクトとデータ接続をサポートするように設定されている場合は、保守モードで nicadmin convert コマンドを使用して、これらのポートを 10GbE 接続に変換します。</block>
   <block id="ccfa1cc380a451bf6234e36543721fae" category="admonition">変換が完了したら必ずメンテナンスモードを終了してください。</block>
   <block id="24907dee7e4205c74e589d14a85e4bbd" category="doc">DIMM-AFF A700s を交換します</block>
-  <block id="0e271d5aca1b3353fc680f14e84bc418" category="section-title">障害ノードをシャットダウンします</block>
-  <block id="2eea170e7de15002c353944160886c8d" category="list-text">障害ノードが HA ペアの一部である場合は、正常なノードのコンソールから自動ギブバックを無効にします。「 storage failover modify -node local-auto-giveback false</block>
   <block id="bf7918e10696cda0294441f81ad32ee4" category="paragraph">ギブバックを待機しています</block>
   <block id="2c605d107b8b0f8d344d6c863e4c47a9" category="paragraph">Ctrl キーを押しながら C キーを押し、「 y 」と入力します。</block>
-  <block id="34d23e48cd83c2c2bc05008eee207c60" category="paragraph">障害ノードをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _</block>
-  <block id="403c040087c497f68c8f876e6ef4b765" category="paragraph">障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。</block>
   <block id="26e38d31d368fa344a653ab87cee79bb" category="section-title">コントローラモジュールを取り外します</block>
   <block id="ea199306c38c35706c03077ded4d9d02" category="paragraph">コントローラモジュールを交換する場合やコントローラモジュール内部のコンポーネントを交換する場合は、コントローラモジュールをシャーシから取り外す必要があります。</block>
   <block id="359b2f64ed46d9bc640532f2fd8810c0" category="list-text">ケーブルマネジメントデバイスに接続しているケーブルをまとめているフックとループストラップを緩め、システムケーブルと SFP をコントローラモジュールから外し（必要な場合）、どのケーブルが何に接続されていたかを記録します。</block>
@@ -2378,11 +2339,8 @@
   <block id="ce895c4f6ee583d1352aa92ca42a2e7a" category="list-text">コマンドの出力に &lt;lno-DARE&gt; が表示されず、システムで ONTAP 9.5 が実行されている場合は、に進みます <block ref="814a166e20bd32e0eb4f111e2d255525" category="inline-xref-macro-rx"></block>。</block>
   <block id="3bdbfc08b67b8b5c267819cc7ef67535" category="list-text">コマンドの出力に &lt;lno-DARE &gt; が表示されず、システムで ONTAP 9.6 以降が実行されている場合は、に進みます <block ref="9431a288e6ce7a6d88bc6ae31dccd0f0" category="inline-xref-macro-rx"></block>。</block>
   <block id="598fddf79c16170c6db6427cdff14daa" category="section-title">オプション 1 ： ONTAP 9.5 以前を実行しているシステムで NVE または NSE をチェックする</block>
-  <block id="ea9becc3cf634d16e6469abd6d240c49" category="paragraph">障害ノードをシャットダウンする前に、システムで NetApp Volume Encryption （ NVE ）または NetApp Storage Encryption （ NSE ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。</block>
-  <block id="624bedc07a82079383ebddb8e1d17e03" category="list-text">障害ノードにコンソールケーブルを接続します。</block>
   <block id="b227d8958eb504b6da0a08172b4222db" category="list-text">クラスタ内のボリュームに NVE が設定されているかどうかを確認します。 volume show -is-encrypted true</block>
   <block id="68e27ac90c8755079206639397a6abfe" category="list-text">NSE が設定されているかどうかを確認します。「 storage encryption disk show 」</block>
-  <block id="2c3101fc6b218cfb1515e6df7981ff27" category="list-text">[Restored （リストア済み） ] カラムに [yes] と表示され、すべてのキー管理ツールに [Available] と表示されていれば、障害ノードをシャットダウンしても安全です。</block>
   <block id="6c2aeadd2a92753dd1f137a6c7068dc8" category="list-text">[Restored （復元） ] 列に 'yes' 以外の項目が表示される場合、またはいずれかのキー管理ツールに [Unavailable （利用不可） ] と表示される場合は、いくつかの追加手順を実行する必要があります。</block>
   <block id="ff31b8e8c86ed558e88ec6430564b19a" category="list-text">オンボードキー管理が有効になっている場合にこのコマンドがサポートされませんというメッセージが表示された場合は、他の手順をいくつか実行する必要があります。</block>
   <block id="fdf5e8b8acf351dcc2fa5bbdd1ba8957" category="list-text">[ リストア済み ] カラムに 'yes' 以外のものが表示されている場合 ' または ' キー・マネージャに unavailable と表示されている場合は ' 次の手順を実行します</block>
@@ -2406,7 +2364,6 @@
   <block id="1ab25fd464770ca38598dbf7e3aa872c" category="doc">設置とセットアップのビデオ - AFF A700s</block>
   <block id="0e77f42d7c64a07ce718d60dd8e6bd46" category="inline-link-macro">AFF A700s セットアップビデオ</block>
   <block id="ad95e5b69f87474809f8228af5e2fbe2" category="paragraph"><block ref="ad95e5b69f87474809f8228af5e2fbe2" category="inline-link-macro-rx"></block></block>
-  <block id="0b95a4177e24ad5d46eb1b71d70c2697" category="summary">コントローラモジュールを交換するには、障害ノードを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。</block>
   <block id="d9119345c9a007e36472326a6510319b" category="section-title">手順 2 ： NVRAM カードを移動します</block>
   <block id="63f3a7c41a55885608d548f506cf6e84" category="paragraph">コントローラの交換プロセスの一環として、障害のあるコントローラモジュールのライザー 1 から NVRAM カードを取り外し、交換用コントローラモジュールのライザー 1 にカードを取り付ける必要があります。障害のあるコントローラモジュールから交換用コントローラモジュールに DIMM を移動したあとで、ライザー 1 を交換用コントローラモジュールに再度取り付ける必要があります。</block>
   <block id="1ab810cfbdc8e768a7dd00d6ecd7d645" category="list-text">NVRAM ライザー「ライザー 1 」をコントローラモジュールから取り外します。</block>
@@ -2450,7 +2407,6 @@
   <block id="c9a7f7b22423148ff42d7fc7fedbb5b7" category="list-text">ライザーのカードガイドとライザー内のカードソケットにカードを合わせ、ライザー内のソケットに垂直に挿入します。</block>
   <block id="acc0d4e6b4c7b0f2e407c949b8dd6652" category="list-text">ロックラッチを、カチッと音がしてロックされるまで動かします。</block>
   <block id="fa228664bf1ad02a11c9db65213d5433" category="list-text">障害のあるコントローラモジュールのスロット 4 と 5 に取り付けられたライザー 3 と PCIe カードに対して、上記の手順を繰り返します。</block>
-  <block id="a5fa3839b28f343622ed27f9477a42ac" category="paragraph">AFF A700s には、プライマリブートメディアとセカンダリブートメディアまたはバックアップブートメディアの 2 つのブートメディアがあります。ブートメディアを障害ノードから _replacement _node に移動し、 _replacement _node のそれぞれのスロットに取り付ける必要があります。</block>
   <block id="37574ed52700f32d94a2d5116467a266" category="paragraph">ブートメディアは、中央の PCIe ライザーモジュールであるライザー 2 の下にあります。ブートメディアにアクセスするには、この PCIe モジュールを取り外す必要があります。</block>
   <block id="73f96b8f9c23f8a33dd778e2999bf39e" category="list-text">新しいコントローラモジュールにブートメディアを移して取り付けます。</block>
   <block id="b7dbb1be616fad247b3d6aed3164e853" category="admonition">交換用コントローラモジュールでは、障害のあるコントローラモジュールと同じソケットにブートメディアを取り付けてください。つまり、プライマリブートメディアソケット（スロット 1 ）にあったブートメディアはプライマリブートメディアソケットに、セカンダリブートメディアソケット（スロット 2 ）にあったブートメディアはセカンダリブートメディアソケットに取り付けます。</block>
@@ -2521,7 +2477,6 @@
   <block id="1a688134d3c3170545e61ebc16a95fe8" category="list-text">バックアップ手順が成功したことを確認するプロンプトが表示されたら 'y' を押します</block>
   <block id="7eebffe155284ad2945a0e00f74ac4af" category="list-text">advanced 権限レベルのパートナーノードから、前の手順でメモした IP アドレスを使用して設定の同期を開始します。「 system node restore-backup -node local-target-address_impaired_node_name _</block>
   <block id="bc8660c5f3569dff11062aab0e8487d1" category="list-text">設定の同期化がエラーなしで完了したら ' バックアップ手順が成功したことを確認するプロンプトが表示されたら 'y' を押します</block>
-  <block id="2f735eb9275a1a5467132ade67e42f08" category="list-text">復元されたコピーを使用するかどうかを確認するメッセージが表示されたら 'y' を押し ' ノードを再起動するよう求められたら 'y' を押します</block>
   <block id="2f0448dc28af93361e8ab911dc742aa9" category="list-text">正常なノードで advanced 権限レベルを終了します。</block>
   <block id="77fa1d2fec9c705a79b5ec4300599706" category="section-title">オプション 2 ： USB フラッシュドライブを使用してブートイメージをブートメディアに転送する</block>
   <block id="13d5b33c8f1d9280033879c8b0a8fb7c" category="list-text">FAT32 にフォーマットされた、 4GB 以上の容量の USB フラッシュドライブが必要です。</block>
@@ -2575,7 +2530,6 @@
   <block id="ab0f1b74bde528a6c04a7682a94cb284" category="paragraph">PCIe カードを交換するには、ターゲットライザーの PCIe カードのポートからケーブル接続と SFP を取り外し、コントローラモジュールからライザーを取り外し、 PCIe カードを取り外して交換し、ライザーを再度取り付けてケーブルを再接続する必要があります。</block>
   <block id="08b1c3ca7a11560dc5469640d0575de2" category="summary">AFF A700s システムのドキュメントでは、システムの設置、セットアップ、および保守を行うことができます。</block>
   <block id="12fa8b293937af24714101545edb706a" category="doc">AFF A700s システムのドキュメント</block>
-  <block id="7b1c040ceba02d6d19a8157caebae0e2" category="doc">障害ノード AFF A700s をシャットダウンします</block>
   <block id="2e7119d7d654a51006d39261079ed460" category="doc">コントローラモジュール - AFF A700s を取り外します</block>
   <block id="9a86085357934b0a1859c727c4e1e2ff" category="summary">障害が発生した NVRAM カードを交換するには、 NVRAM ライザー「ライザー 1 」をコントローラモジュールから取り外し、障害が発生したカードをライザーから取り外し、新しい NVRAM カードをライザーに取り付けてから、ライザーをコントローラモジュールに再度取り付ける必要があります。システム ID は NVRAM カードに基づくため、モジュールを交換する場合は、システムに属するディスクは新しいシステム ID に再割り当てされます。</block>
   <block id="93042cc4c4d4eead8d68941113308dfd" category="list-text">すべてのディスクシェルフが適切に動作している必要があります。</block>
@@ -2598,13 +2552,11 @@
   <block id="e9076ebdee65093373c882a63b81bfb4" category="list-text">ONTAP 9.6 に対して NSE または NVE が有効になっている場合は、に進みます <block ref="76f4cb410fb9692bc2a4c8bc5d9a16b6" category="inline-xref-macro-rx"></block>。</block>
   <block id="a4522d671c9a1eaef7e6861375bcf9ff" category="section-title">オプション 1 ：オンボードキーマネージャが有効な場合は、 NVE または NSE をリストアする</block>
   <block id="a7af9d05a3f737ccfcf08da76a941833" category="paragraph">システムが「 Waiting for giveback... 」プロンプトでブートします。</block>
-  <block id="0e07e0b2fec57655fd382f0ae9e97ae0" category="list-text">パートナーノードにコンソールケーブルを接続し、 admin としてログインします。</block>
   <block id="ec51bbadff0b2b58dd5e17500450347d" category="list-text">ONTAP 9.5 以前を実行している場合は、 key-manager setup ウィザードを実行します。</block>
   <block id="349391cfc8a88972d7c1ff23df854b42" category="list-text">「 securitykey-manager setup -nodename` 」コマンドを使用してウィザードを起動し、プロンプトが表示されたらオンボードキー管理のパスフレーズを入力します。</block>
   <block id="11a7c9bd5d2c9f9371ccfbc7d899847b" category="list-text">'key-manager key show-detail' コマンドを入力して ' オンボード・キー・マネージャに格納されているすべてのキーの詳細を表示し ' すべての認証キーについて 'restored`column=yes を確認します</block>
   <block id="cf63f70b7dc6ead2d083c12ded486fe3" category="admonition">「 Restored 」列が「 yes 」以外の場合は、カスタマサポートにお問い合わせください。</block>
   <block id="49c84012756b1d43065ffef96acd5bf9" category="section-title">オプション 2 ： ONTAP 9.5 以前を実行しているシステムで NSE / NVE をリストアする</block>
-  <block id="97f5759431a55ef08f0e866dace247f7" category="list-text">コンソール・ケーブルをターゲット・ノードに移動し 'version -v コマンドを実行して ONTAP のバージョンを確認します</block>
   <block id="334778235b226e6b9a2fa7bdae194a55" category="admonition">NVE （ NetApp Volume Encryption ）が設定されている場合、このコマンドは機能しません</block>
   <block id="86f0dc416f631fdf25bde8175a84c56b" category="list-text">security key-manager query を使用して、キー管理サーバに格納されている認証キーのキー ID を表示します。</block>
   <block id="45039b8f247c5c5af62e9b5aa63f488d" category="list-text">「 Restored 」列が「 yes 」であり、すべてのキー管理ツールが「 available 」状態でレポートする場合は、「 _complete the replacement process_ 」に進みます。</block>
@@ -2620,8 +2572,6 @@
   <block id="1675c7f72f346b50740cbed80838eb37" category="doc">ファンの交換 - AFF A700s</block>
   <block id="c6c330df068950fe73f003a3f85b3fa0" category="list-text">交換用ファンモジュールの端をコントローラモジュールの開口部に合わせ、ロックラッチが所定の位置にカチッと収まるまで、交換用ファンモジュールをコントローラモジュールにスライドさせます。</block>
   <block id="ee5ff73969a958477db471cca8246c98" category="doc">コントローラをシャットダウンします - AFF A700s</block>
-  <block id="62bbf44c561b37677a0688281d60958e" category="list-text">正常なノードは ' 交換するノードをテイクオーバーできる必要があります（この手順では ' 障害ノードと呼ばれます）</block>
-  <block id="675f472ebd03f28204a76004420e0dc6" category="doc">ノード AFF A700s をシャットダウンします</block>
   <block id="2b1646515c4dcacd96acd971239a6f14" category="paragraph">シャーシを交換するには、障害のあるシャーシから交換用シャーシにコントローラモジュールと SSD ドライブを移動し、障害のあるシャーシを装置ラックまたはシステムキャビネットから取り外して、交換用シャーシを所定の位置に取り付ける必要があります。</block>
   <block id="c465df44865c02db52bc6f37023b5b75" category="list-text">この手順は、 SSD とコントローラモジュールをネットアップ製の新しいシャーシに移動することを前提としています。</block>
   <block id="f03c92168a16d01cf92fdfdfc719b6b5" category="summary">このワークシートを使用して、 ONTAP クラスタの構成に必要なサイト固有の IP アドレスやその他の情報を収集し、記録できます。</block>
@@ -2664,14 +2614,10 @@
   <block id="c98df33d69df5ef2c70238c6ec12241c" category="doc">DIMM-AFF A400 を交換します</block>
   <block id="c7e602fe7db61b23799d51454d70f0cd" category="section-title">オプション 1 ：ほとんどの構成</block>
   <block id="c055245c084600ec7129f0f3c0692170" category="section-title">オプション 2 ：コントローラは 2 ノード MetroCluster 構成です</block>
-  <block id="4d279a0ab2cc0186322c5c93efdc2057" category="paragraph">障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをスイッチオーバーする必要があります。</block>
-  <block id="4b0734b8f2c30a70467894b0f3e7baf2" category="list-text">正常なノードに電力を供給するために、この手順の最後で電源装置をオンのままにしておく必要があります。</block>
-  <block id="a504e6d60b77acc66d4d4e9b46f8893a" category="list-text">MetroCluster ステータスをチェックして、障害ノードが正常なノードに自動的にスイッチオーバーしたかどうかを確認します。「 MetroCluster show 」</block>
   <block id="a4d3e0e884bda08238ebcf294cd22173" category="list-text">自動スイッチオーバーが発生したかどうかに応じて、次の表に従って処理を進めます。</block>
   <block id="3bb6bfde9e3647655849196d4817633d" category="paragraph">自動的にスイッチオーバーした</block>
   <block id="e6d6a543bb86452c29c8ce9dd3d034cc" category="paragraph">次の手順に進みます。</block>
   <block id="223bed434b435ef97172b24efc947bc4" category="paragraph">自動的にスイッチオーバーしていない</block>
-  <block id="5d270126365d2a58fbcc7add688fa3a1" category="paragraph">正常なノードから計画的スイッチオーバー処理を実行します： MetroCluster switchover</block>
   <block id="284c5fffd88c543f295f7e4d82a51c93" category="paragraph">スイッチオーバーは自動的には行われておらず、 MetroCluster switchover コマンドを使用してスイッチオーバーを試みたが、スイッチオーバーは拒否された</block>
   <block id="da1a32de06ff316b64e2e238f6a533d7" category="paragraph">拒否メッセージを確認し、可能であれば問題を解決してやり直します。問題を解決できない場合は、テクニカルサポートにお問い合わせください。</block>
   <block id="68e094bfa509e0c8a036a923f747b4cb" category="list-text">サバイバークラスタから MetroCluster heal-phase aggregates コマンドを実行して、データアグリゲートを再同期します。</block>
@@ -2773,7 +2719,6 @@
   <block id="797462bacc0f6fc2b9a4b4f5c1ec212e" category="list-text">「 EFI 」</block>
   <block id="f33d22080714eee8f244e5ef03575052" category="list-text">EFI フォルダを USB フラッシュドライブの最上位ディレクトリにコピーします</block>
   <block id="261f06ae9beffb3a4add256d9d6d8670" category="paragraph">ケーブルを再接続する際は、メディアコンバータ（ SFP または QSFP ）も取り付け直してください（メディアコンバータを取り外した場合）。</block>
-  <block id="d6247cf97fface5e53fdbd950c4cd532" category="paragraph">このメッセージが表示されない場合は、 Ctrl+C キーを押し、メンテナンスモードでブートするオプションを選択して、ノードを停止して LOADER プロンプトを表示します。</block>
   <block id="6551c986c636d61142c1b77b48a7460d" category="list-text">コントローラがストレッチまたはファブリック接続の MetroCluster に含まれている場合は、 FC アダプタの構成をリストアする必要があります。</block>
   <block id="9ad558d6e4619b772507061478e81eb9" category="list-text">保守モードでブート： boot_ontap maint</block>
   <block id="48aea463c7d284677a392c635ace5bf1" category="list-text">MetroCluster ポートをイニシエータとして設定します。 ucadmin modify -m fc -t initiator adapter_name _`</block>
@@ -2946,10 +2891,8 @@
   <block id="56eb83c06d36c90e76429cda40aea7ed" category="section-title">オプション 2 ： 2 ノード MetroCluster 構成のノードをシャットダウンする</block>
   <block id="22cc15dad4c522616e5130f927446d07" category="doc">障害のある部品を NetApp-AFF A400 に返却してください</block>
   <block id="3a23955ad584199d013caf86411a3e19" category="paragraph">使用する手順の場合は、 4 ノードまたは 8 ノードの MetroCluster 構成のノードのコントローラ交換手順は HA ペアの場合と同じであることに注意してください。障害が HA ペアに制限されているため、 MetroCluster 固有の手順は必要ありません。また、 storage failover コマンドを使用すると、交換時に無停止操作を行うことができます。</block>
-  <block id="77e5d5e9e3fe25e357bcca8804d9d2dd" category="list-text">replacement node_name は、障害ノードと交換する新しいノードです。</block>
   <block id="5ab7856b7ebec8f0df312e997fb8acf9" category="paragraph">シャーシを交換するには、障害のあるシャーシから障害のあるシャーシと同じモデルの新しいシャーシにファンとコントローラモジュールを移動する必要があります。</block>
   <block id="244b874016608f71c1442226368f5da8" category="list-text">AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=_Number_OF_hours_down_h</block>
-  <block id="ba70fdaa734ba4fd788cb6febeb14209" category="paragraph">障害ノードをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _ 」障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C を押し、「 y 」と入力します。</block>
   <block id="29d6646c4ba000d4b3b4a533c4f85905" category="summary">このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。インストール手順の詳細については、このガイドを参照してください。</block>
   <block id="8ebf8284e0fff7b962f6416451a28baa" category="doc">詳細ガイド - AFF A400</block>
   <block id="da49da2deacce47c1e05a410c3ccb072" category="paragraph">システムを設置するには、アカウントを作成し、システムを登録し、ライセンスキーを取得する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。</block>
@@ -3103,7 +3046,6 @@
   <block id="30d8ab439e6b5776a81bc35dd0caaf81" category="paragraph">ノードに LOADER プロンプトが表示されます。</block>
   <block id="be418a014cc7dddea0e7a9c11e74684f" category="list-text">LOADER プロンプトからノードをブートします。 bye</block>
   <block id="5cb4dbca31ce772b17987c15a725b52e" category="list-text">ノードを通常動作に戻します。</block>
-  <block id="99b2041dbc4d85328f37031f86e8632c" category="cell">ノードの構成</block>
   <block id="acb7bc189d4b0f21fe9d90e11ec17502" category="paragraph">ギブバックを実行します。「 storage failover giveback -ofnode replacement_node_name _</block>
   <block id="b5be884251fa1837a5590734f7c5e1a3" category="admonition">自動ギブバックを無効にした場合は、 storage failover modify コマンドを使用して再度有効にします。</block>
   <block id="f5e89f698341583eba1c85cae0cf57dd" category="paragraph">2 ノード MetroCluster 構成</block>
@@ -3160,7 +3102,6 @@
   <block id="40445df40d6d89bcbb7a04cfa01ad049" category="paragraph">システムがブートを開始し、 LOADER プロンプトで停止します。</block>
   <block id="adc2b16ccdc84e4c86c816c36e52800a" category="list-text">LOADER プロンプトでネットワーク接続タイプを設定します。</block>
   <block id="c70c6056ae23579028362bde426e3877" category="list-text">DHCP を構成している場合： ifconfig e0a-auto</block>
-  <block id="890a5db496d99a96f099de944c9791c0" category="admonition">設定するターゲットポートは、ネットワーク接続を使用した var ファイルシステムのリストア中に、正常なノードから障害ノードへの通信に使用するポートです。このコマンドでは e0M ポートを使用することもできます。</block>
   <block id="c754db7b7be7a3848e6afdf6a1d4ef73" category="list-text">手動接続を設定する場合は、「 ifconfig e0a-addr= filer_addr-mask= netmask -gw= gateway -dns= dns_addr-domain= dns_domain' 」のように入力します</block>
   <block id="f3700920f467a00b8bc7a997e5ca02f8" category="list-text">filer_addr は、ストレージシステムの IP アドレスです。</block>
   <block id="f5eaffd1f9397c8558b144847401dddd" category="list-text">netmask は、 HA パートナーに接続されている管理ネットワークのネットワークマスクです。</block>
@@ -3416,7 +3357,6 @@
   <block id="061a78fed35fa26d870ae789dd6685b8" category="doc">障害のある部品を NetApp-FAS8200 に戻します</block>
   <block id="2cbabd3028fd0cb6f4a57144ace2ee33" category="list-text">FlexArray システムの場合や V_StorageAttach ライセンスのあるシステムの場合は、この手順を実行する前に、必要な追加の手順を参照する必要があります。</block>
   <block id="0012bcaadb56ca5543ace124a6a404f9" category="list-text">システムが HA ペアに含まれている場合、正常なノードが交換するノードをテイクオーバーできる必要があります（この手順では「障害ノード」と呼びます）。</block>
-  <block id="90aef159b4ad02a5aa95f62d5be7d66d" category="list-text">この手順には、システムの構成に応じて、ドライブを _replacement _node に自動的にまたは手動で再割り当てする手順が含まれています。</block>
   <block id="eceeb845d6027471d1eafcff9c9e0e9e" category="paragraph">手順の指示に従って、ドライブの再割り当てを実行する必要があります。</block>
   <block id="18286caf45baac43fedf94bfeaff35fa" category="list-text">古いコントローラモジュールから新しいコントローラモジュールに移動した PCIe カード、または既存のお客様のサイトのインベントリから追加した PCIe カードが、交換用コントローラモジュールでサポートされている必要があります。</block>
   <block id="8385c47a31a80f44b8892894d86e73a6" category="paragraph">シャーシを交換するには、電源装置、ファン、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、障害のあるシャーシを装置ラックまたはシステムキャビネットから障害のあるシャーシと同じモデルの新しいシャーシに交換する必要があります。</block>
@@ -3471,8 +3411,6 @@
   <block id="055ce7154e7ea0261c8667a0d628ee36" category="image-alt">DRW A800 クローズエアダクト</block>
   <block id="fe789fced0492cc44e230547286ad2fd" category="list-text">ケーブルマネジメントデバイスを再び取り付け、必要に応じてシステムにケーブルを再接続します。+ ケーブルを再接続する場合は、メディアコンバータ（ SFP または QSFP ）も取り付け直してください（メディアコンバータを取り外した場合）。</block>
   <block id="98bdc3e90693534845f2b1eeaabe98be" category="list-text">USB フラッシュドライブをコントローラモジュールの USB スロットに挿入します。+ USB フラッシュドライブは、 USB コンソールポートではなく、 USB デバイス用のラベルが付いたスロットに取り付けてください。</block>
-  <block id="66e081aa9e9235fecee66d668b33a06c" category="list-text">コントローラモジュールの固定フックが持ち上がるまで、コントローラモジュールをシステムの奥に押し込みます。固定フックを強く押し込んでコントローラモジュールを装着し、固定フックをコントローラモジュールのピンにかけてロックします。+ ノードは、シャーシへの取り付けが完了するとすぐにブートを開始します。</block>
-  <block id="ce526ec45d4379a40bad44d2a49da7f1" category="list-text">Ctrl+C キーを押してブートプロセスを中断し、 LOADER プロンプトで停止します。+ このメッセージが表示されない場合は、 Ctrl+C キーを押し、メンテナンスモードでブートするオプションを選択して、ノードを停止して LOADER プロンプトを表示します。</block>
   <block id="5fb89931e5b269129a2ad5936878a851" category="list-text">コマンドの出力に &lt;lno-DARE&gt; が表示されず、システムで ONTAP 9.5 が実行されている場合は、に進みます <block ref="b9f6f8746149f87def14842273c93bfe" category="inline-xref-macro-rx"></block>。</block>
   <block id="70c3e5c6b05722334dd3cfb521d9e159" category="list-text">コマンドの出力に &lt;lno-DARE &gt; が表示されず、システムで ONTAP 9.6 以降が実行されている場合は、に進みます <block ref="e0569187fa90a6ae4bbbe053355b82c8" category="inline-xref-macro-rx"></block>。</block>
   <block id="34cf3a43d39d8b0acc65bd578d7188da" category="doc">ブートメディア AFF A800 を交換してください</block>
@@ -3497,7 +3435,6 @@
   <block id="b860df82f0aa962ce83ad7cbf06bb972" category="list-text">NVDIMM を交換用コントローラモジュールに正しい向きで挿入できるように、ソケット内の NVDIMM の向きをメモします。</block>
   <block id="fb9c911f5fd782e8fd686ca595abbfed" category="list-text">上記の手順を繰り返して、もう一方の NVDIMM を移動します。</block>
   <block id="80392a74120115863aba040983d75dcc" category="section-title">手順 8 ：ブートメディアを移動します</block>
-  <block id="2a3437dc0d5f56d89ec7665ada160404" category="paragraph">AFF A800 にはブートメディアデバイスが 1 つあります。ブートメディアを障害ノードから移動して、 _replacement _node に取り付ける必要があります。</block>
   <block id="4ca80d99d67871d37c8da5807f9599aa" category="paragraph">ブートメディアはライザー 3 の下にあります。</block>
   <block id="22593e2f0620849aa4f82e482025ae6d" category="image-alt">DRW A800 PCM は、ブートメディアのみを交換します</block>
   <block id="c2ac0f879d7f2a549904c604053848ff" category="section-title">手順 9 ： PCIe ライザーを取り付けます</block>
@@ -3562,9 +3499,6 @@
   <block id="45c8293117e9731c1b2983abd691e338" category="paragraph">ファンモジュールを交換するときは、コントローラモジュールをシャーシから取り外す必要があります。</block>
   <block id="b8238a1ffeb288edb4606d4cee1cdf5c" category="doc">コントローラ AFF A800 をシャットダウンします</block>
   <block id="228833e7e465458067df236eb339d948" category="doc">障害のある部品を NetApp AFF A800 に返却します</block>
-  <block id="b43b6ffe97034eb968501fc99ef0a1c4" category="list-text">Healthy node_ はサバイバーノードです。</block>
-  <block id="0965105e8b2fca5f6bc22be96233c5e0" category="admonition">パートナーノードまたは古いコントローラモジュールと同じ BIOS バージョンの _replacement node はダウングレードしないでください。</block>
-  <block id="81e46cc93d394efa5f52a46a0927e127" category="doc">AFF A800 ノードをシャットダウンします</block>
   <block id="b8984f02e6cfd8c017d9d0f4737d0ac7" category="doc">シャーシを交換してください - AFF A800</block>
   <block id="13f3f5d40904a4c5b68e6c877e0c9bbd" category="paragraph">AFF A800 システムを設置するには、アカウントを作成してシステムを登録する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。</block>
   <block id="b772890c716d468c4b26510d897c0276" category="paragraph">HA インターコネクト</block>
@@ -3645,7 +3579,6 @@
   <block id="56c92e962f19f33c819fa704568c60fe" category="list-text"><block ref="56c92e962f19f33c819fa704568c60fe" category="inline-link-macro-rx"></block></block>
   <block id="c4de84ea78d221e98599baf30d3e65d1" category="doc">DIMM- AFF A220 および FAS2700 を交換します</block>
   <block id="07b824a16e2eac6bafd600bdf983d340" category="list-text">スタンドアロンシステムの場合：「 system node halt _impaired_node_name _</block>
-  <block id="2a6a2e33656853ca022195e9fa505ddd" category="list-text">システムのシャーシにコントローラモジュールが 1 つしかない場合は、電源装置をオフにして、障害ノードの電源コードを電源から抜きます。</block>
   <block id="cf233c8f355b435b1d8d0eac06c1f98c" category="image-alt">DRW 25xx ケーブル管理アーム</block>
   <block id="1b96f3aa099b152fc864dedb115af912" category="list-text">カムハンドルのラッチをつかんで解除し、カムハンドルを最大限に開いてコントローラモジュールをミッドプレーンから離し、両手でコントローラモジュールをシャーシから外します。</block>
   <block id="d6daae29261c119313124d1d21a1c267" category="image-alt">DRW 2240 x オープンカムラッチ</block>
@@ -3690,9 +3623,7 @@
   <block id="b37236c3c4a90442c4db951305ea57a0" category="image-alt">DRW 2600 fcache repl アニメーション GIF</block>
   <block id="6bbc48da569bffd650e8c37eb91825ba" category="list-text">キャッシングモジュールをケースからまっすぐにゆっくりと引き出します。</block>
   <block id="b08b6d72a159368a3b72d6c28c8a2392" category="list-text">必要に応じて、コントローラモジュールカバーを閉じます。</block>
-  <block id="ed9b788614568aa4c8be8b82b384cd8c" category="paragraph">* ノードが HA ペアに含まれている場合は、ギブバックを実行します。「 storage failover giveback -ofnode replacement_node_name _</block>
   <block id="b27659a5892c965f391bf77476f97118" category="paragraph">* 注：自動ギブバックを無効にした場合は 'storage failover modify コマンドを使用して再度有効にします</block>
-  <block id="f5833a336f25b45a7be45536998c8479" category="paragraph">* スタンドアロン構成のノードの場合 * は、次の手順に進みます。対処は不要です。</block>
   <block id="066c0a2f133fb39e8887805ab2dd11a0" category="doc">ブートメディアを交換します - AFF A220 および FAS2700</block>
   <block id="616fd6518ea3af054114db97fda5ce99" category="section-title">手順 2 ： NVMEM バッテリを移動します</block>
   <block id="b739b134857dab60a93e85c752192f2e" category="list-text">コントローラモジュールで NVMEM バッテリの場所を確認します。</block>
@@ -3760,7 +3691,6 @@
   <block id="10c7f296fbe86b208c1b89ca81a28947" category="doc">障害のあるパーツを NetApp - AFF A220 および FAS2700 に戻します</block>
   <block id="390911875f818301a4ee051939794a66" category="paragraph">シャーシを交換するには、電源装置、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、障害のあるシャーシを装置ラックまたはシステムキャビネットから障害のあるシャーシと同じモデルの新しいシャーシと交換する必要があります。</block>
   <block id="1e67e0629d0e05c486b4b70e46c2e403" category="list-text">この手順は、すべてのドライブとコントローラモジュールをネットアップ製の新しいシャーシに移動することを前提としています。</block>
-  <block id="565389f36084e305bd7e2e90f9c2a19d" category="section-title">オプション 1 ：ノードをシャットダウンする</block>
   <block id="4289cf60429a6597dbd75e47b7eba5d6" category="summary">このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。</block>
   <block id="a42fdd142aa1644b3d98ec92a6a5bed0" category="doc">詳細ガイド - AFF A220 および FAS2700</block>
   <block id="61468a5495da3377a5cc2395006b700f" category="paragraph">FAS2700 または AFF A220 システムを設置するには、ネットアップサポートサイトでアカウントを作成し、システムを登録し、ライセンスキーを取得する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。</block>
@@ -4426,7 +4356,6 @@
   <block id="e8aff1eca48ad56a3b7a6f32b35725fb" category="list-text">FAS8700 システムを使用している場合、システム DIMM はスロット 2 、 4 、 7 、 9 、 13 にあります。 15 、 18 、 20 。</block>
   <block id="23322e561ac6bea2fdd969f81f065cb0" category="list-text">NVDIMM はスロット 11 にあります。</block>
   <block id="513b4883451dec21bc772400c3a572d8" category="paragraph"><block ref="513b4883451dec21bc772400c3a572d8" category="inline-link-rx"></block></block>
-  <block id="fb346fbc4b16fda2d4c28fb66e0a91d8" category="list-text">作業をするノードに LOADER プロンプトが表示されていない場合は、ノードをリブートします。「 system node halt -node _node_name _</block>
   <block id="1db543711acdae9341bb66467bfc08e7" category="list-text">テストでエラーが報告されなかった場合は、メニューから [Reboot] を選択してシステムを再起動します。</block>
   <block id="bef53c14eb719bb1cd8539b91f7515d7" category="doc">2 ノード MetroCluster 構成のアグリゲート AFF fas8300 と FAS8700 をスイッチバックします</block>
   <block id="d5329d1a1e1dddf29f9d62bdc1cd54ad" category="doc">ビデオ - FAS8300 and FAS8700</block>
@@ -4484,7 +4413,6 @@
   <block id="8d3a887f704ca0886089fac6ec777223" category="section-title">手順 7 ：診断の実行後にコントローラモジュールを稼働状態に戻す</block>
   <block id="07198f13a474589e15ec90df05d856ff" category="doc">FAS8300 および FAS8700 システムのドキュメント</block>
   <block id="27dcde903ce9d2827a6882d72efe7cb4" category="doc">障害のあるコントローラ AFF FAS8300 および FAS8700 をシャットダウンします</block>
-  <block id="bc6fa9fd41bd50f50a6f712cd33d5e4c" category="list-text">ストレージをギブバックしてノードを通常動作に戻します。「 storage failover giveback -ofnode `_impaired_node_name _`</block>
   <block id="85d8efbc74d6524c8654e1ba5832036b" category="doc">必要に応じて、 OKM 、 NSE 、 NVE をリストアします - AFF fas8300 および FAS8700</block>
   <block id="e9c29b2069e0c6c237cd1e2a30e9c48b" category="doc">コントローラ FAS8300 および FAS8700 をシャットダウンします</block>
   <block id="14df5008a24cd65fbb232505d17779b3" category="doc">障害のある部品を NetApp-fas8300 AFF と FAS8700 に戻します</block>
@@ -4510,7 +4438,6 @@
   <block id="139b85a2da5c2f7968fae24f14c3ed09" category="inline-link">FAS500f 『 Installation and Setup Instructions 』</block>
   <block id="dae1434e283524bee3110823c8eb7212" category="inline-link">FAS500f システム『 Installation and Setup Instructions 』</block>
   <block id="0ce2a0e29499223b29490143e42e0e0e" category="list-text">障害のあるコントローラが実行していたバージョンの ONTAP イメージのコピー。ネットアップサポートサイトの「 * Downloads * 」セクションから適切なイメージをダウンロードできます</block>
-  <block id="3e1047f2ebaed54fe88cc6f78291dbb6" category="doc">ブートメディア FAS500f を交換してください</block>
   <block id="2685cb32d91e3c7296420631a7066229" category="paragraph">次のビデオまたは表に示す手順を使用して、コントローラモジュールを交換できます。</block>
   <block id="616af20769d44e43520152460f655603" category="doc">ハードウェア FAS500f を移動して交換します</block>
   <block id="49cc582b0e041effb99494704c8f0963" category="doc">システム構成をリストアして検証します（ FAS500f ）</block>
@@ -4533,7 +4460,6 @@
   <block id="5bafa27d304da6702fac02a0b481992c" category="doc">障害のあるパーツを NetApp-FAS500f に戻します</block>
   <block id="806172d09ec083b134236f39467e6f44" category="doc">メザニンカード FAS500f を交換または取り付けます</block>
   <block id="5a8806fc27bd2a34806ff3f345c3e780" category="paragraph">次のビデオまたは表に示す手順を使用して、メザニンカードを交換できます。</block>
-  <block id="fdf5f4359ee176f1de2ac16926a8b1f1" category="doc">node-FAS500f をシャットダウンします</block>
   <block id="9cba1bd90da040950cfda65ba6af50aa" category="doc">NVMEM バッテリを交換してください - FAS500f</block>
   <block id="74384aef792e0e84d445bfde0eab13c6" category="paragraph">次のビデオまたは表に示す手順を使用して、 NVMEM バッテリを交換できます。</block>
   <block id="3b92fecaa3772b0492ba3935a96dedea" category="paragraph">FAS500f システムをインストールするには、アカウントを作成してシステムを登録する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。</block>
@@ -4545,7 +4471,6 @@
   <block id="277ba6b7a127ec6b40495a0cd012279f" category="paragraph">ポート e4A から e4d を 10GbE ホストネットワークスイッチにケーブル接続します。</block>
   <block id="eacfd9b01b607ec0ff14339768945edd" category="image-alt">DRW affa250 25GbE ホストのケーブル接続</block>
   <block id="13bebe2596a4000b53c1d171e85d4669" category="doc">システムのリストアの完了 - AFF C190</block>
-  <block id="a4e3016238e1fb829942cfb8f4f45e09" category="section-title">手順 1 ：交換用ノードのライセンスを ONTAP にインストールする</block>
   <block id="90e0a79f0dc5582ba3bb7a9b28936d5c" category="section-title">手順 2 ：ストレージとボリュームの暗号化機能をリストアする</block>
   <block id="0072b0fd9d430209e4485c4040bcaa19" category="section-title">手順 3 ： LIF を確認してシリアル番号を登録する</block>
   <block id="6ca5f95bd86b688d89de7f54f3cbcd42" category="list-text"><block ref="6ca5f95bd86b688d89de7f54f3cbcd42" category="inline-link-macro-rx"></block></block>
@@ -4574,7 +4499,6 @@
   <block id="f30bf82bc8eafa66c54fa40dcf42ea44" category="paragraph">*halt *`</block>
   <block id="31f3689ce01f90a247c3f17346eb5f05" category="paragraph">保守モードを終了します :`*halt *`</block>
   <block id="156eb6e82c7345080012a8f00d566c5e" category="paragraph">LOADER プロンプトが表示されます。</block>
-  <block id="4f3bd230b388c6ddd486715d3b230134" category="list-text">ノードがメンテナンスモードでブートしたら、ノードを停止します。</block>
   <block id="a8eb93337a2a8db4dcaf67a28a1eba2d" category="list-text">LOADER プロンプトで、システムレベルの診断用に特別に設計されたドライバにアクセスします。</block>
   <block id="1e3e141decf7b954578b8dac9d8085dc" category="paragraph">'*boot_diags*</block>
   <block id="9c30298450099fe0339c67c08dd8868c" category="list-text">メンテナンスモードのプロンプトからインターコネクト診断テストを有効にします。</block>
@@ -4603,38 +4527,28 @@
   <block id="79c0dc0c1d416cbf593b39a6001241d6" category="paragraph">システムがブートしてブートメニューが表示され、ブートイメージ名の入力を求められます。</block>
   <block id="a69b72837c8e8003d87a5507ce60fd57" category="list-text">USB フラッシュドライブ上のブートイメージ名を入力します。</block>
   <block id="28cc6978ce4feeff76b4c396346e2134" category="paragraph">'*__ image_name_.tgz *</block>
-  <block id="d978c1210c17487e55dc119bb51ecafe" category="paragraph">`image_name.tgz' がインストールされると ' 正常なノードからバックアップ構成 (var' ファイルシステム ) をリストアするよう求めるプロンプトが表示されます</block>
   <block id="62769241856ee82359451259b52a5002" category="list-text">バックアップ構成を復元するかどうかを確認するメッセージが表示されたら '*y*' を押します</block>
-  <block id="a8c26f715f9f4a3ea9ec1f68d24c9c4a" category="list-text">正常なノードを advanced 権限レベルに設定します。</block>
   <block id="2fb10535c586c96b3774f785a3997a21" category="paragraph">「 * set -privilege advanced * 」のように指定します</block>
   <block id="c1177edd7108fa7d9910ed257f6649d2" category="list-text">バックアップのリストアコマンドを実行します。</block>
   <block id="0bf1d1b4f2e3e68fc29769ff74068bb0" category="paragraph">*system node restore-backup -node local-target-address_impaired_node_name _*</block>
-  <block id="ac16d10b03b9eee302663c0ff964af6b" category="list-text">ノードを admin レベルに戻します。</block>
   <block id="e16abfed5120765160124f48c832fec8" category="paragraph">'*set -privilege admin*</block>
   <block id="3a4533e361276ae9b4739b9bfb026264" category="list-text">復元された構成を使用するかどうかを確認するメッセージが表示されたら '*y*' を押します</block>
-  <block id="7b20fcd7cc0853f9d9747853a0fcdc60" category="list-text">ノードのリブートを求めるプロンプトが表示されたら、「 * y * 」を押します。</block>
   <block id="f13064e88c8a13f2443d04d2ee4b74bf" category="list-text">バックアップ構成を復元するように求められたら '*n*' を押します</block>
   <block id="fedbb144e0526b11e71f32ee68d8592d" category="paragraph">ONTAP プロンプトから、「 system node halt -skip-lif-migration-before-shutdown true -ignore-quorum -warnings true -inhibit-takeover true 」コマンドを問題できます。</block>
   <block id="2c3a780fd5e013ffc611cc8a846f36b2" category="list-text">環境変数が正しく設定されていない場合は 'setenv_environment_variable_name changed_value_' コマンドを使用して変更します</block>
   <block id="110cdf95c13597ed0aeb3ee971d7cec5" category="list-text">次の手順は、システム構成によって異なります。</block>
-  <block id="fec180986cf3ffaf8601b5de24881de4" category="paragraph">ノードがリブートしたらシステムの使用を開始できます。</block>
-  <block id="76cf40fe172d1ea9ec57cdefa14c953a" category="paragraph">障害ノードに「 Waiting for giveback... 」というメッセージが表示されたら、正常なノードからギブバックを実行します。</block>
-  <block id="9e48e69d61ca4ea4e8c1b6709a0ba816" category="list-text">正常なノードからギブバックを実行します。</block>
   <block id="28489481ec7e834c6b195baa68dd19c1" category="paragraph">` * storage failover giveback -ofnode partner_node_name _ *</block>
-  <block id="2b5b86c9ce2d39ee837c5fdad0fc27cc" category="paragraph">これにより、障害ノードのアグリゲートおよびボリュームの所有権を正常なノードから障害ノードに戻すプロセスが開始されます。</block>
   <block id="889c078e9cfb9c17ddcfadb4d5c9759c" category="list-text">「 storage failover show-giveback 」コマンドを使用して、ギブバック処理の進捗を監視します。</block>
   <block id="55264e5caf29a4014bb82535b8f9ddba" category="list-text">「 storage failover modify 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。</block>
   <block id="cc36390de0e6f5128a70841fe11c7e73" category="doc">ブートメディアを交換してください - AFF C190</block>
   <block id="355402a9684b4b94b56cf033327d696e" category="list-text">無停止または停止を伴う方法でブートメディアを交換する場合は、 var ファイルシステムをリストアする必要があります。</block>
   <block id="c3e12e601f836e0ea6b976380432b1a0" category="list-text">無停止で交換する場合は、 HA ペアをネットワークに接続して var ファイルシステムをリストアする必要があります。</block>
   <block id="bcdaf92a221f36e5be14e3d79ed1b17b" category="list-text">停止を伴う交換の場合、 var ファイルシステムをリストアするためにネットワーク接続は必要ありませんが、リブートが 2 回必要です。</block>
-  <block id="ff9a2f89454589a74ceb25742ee79817" category="paragraph">コントローラモジュールを交換するには、障害ノードを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。</block>
   <block id="2a2508e145c26be9a521a151ff4382ee" category="section-title">手順 2 ：ブートメディアを移動します</block>
   <block id="e58eb254fd5dc6ef69f76093a20348c1" category="doc">ハードウェアの移動と交換 - AFF C190</block>
   <block id="0f36d2c538b2db218480ae8a6cd7aa5a" category="section-title">手順 1 ：電源装置を移動します</block>
   <block id="0ec0d2472b9b2c7b3ff1d96ae6ba1111" category="paragraph">コントローラモジュールとその他のコンポーネントを新しいシャーシに取り付けたら、コントローラモジュールをブートしてインターコネクト診断テストを実行できる状態にする必要があります。</block>
   <block id="00a36e9a8759685eeb634a8e573ae042" category="list-text">コントローラモジュールの取り付けを完了します</block>
-  <block id="903ad4ced24fc25dd69a11e17dd6ac00" category="list-text">作業をするノードに LOADER プロンプトが表示されていない場合は、ノードをリブートします。</block>
   <block id="81120d9f26288d75b43fa9389447301a" category="paragraph">ブート・プロセス中に '*y*' をプロンプトに入力して ' メンテナンス・モード・プロンプト（ *&gt; ）が表示されるまで待ちます</block>
   <block id="c9dc8029f1ea83b5f228f69e5cd6b390" category="list-text">コントローラモジュール上の使用可能なデバイスを表示してメモします。</block>
   <block id="f80a3cd3b85434b46084198ab45c8206" category="paragraph">`*sldiag device show -dev MB*`</block>
@@ -4655,26 +4569,20 @@
   <block id="7f6a5a727ffde2290e51bb81b2fa2319" category="paragraph">'*sldiag device show*</block>
   <block id="7c3d4bf83f0ceda0dbed47b8b357a0d9" category="list-text">すべてのデバイスで診断を実行します。</block>
   <block id="c05451d6d9cf9f407c09f91a088ac7ca" category="paragraph">*sldiag デバイスは '*. を実行します</block>
-  <block id="a96498340af01d003737eedaa3c5a2bf" category="list-text">ノードにハードウェアの問題がないことを確認します。</block>
   <block id="52cc19f0b40712640b9045caa499f77b" category="paragraph">`*sldiag デバイスのステータス - long 状態失敗 *`</block>
   <block id="c97564e8e6a94dc642e3f69b7ae80557" category="paragraph">RTC バッテリを交換するには、コントローラモジュール内で RTC バッテリの場所を確認し、特定の手順を実行する必要があります。</block>
   <block id="2aa8970a7aa05c71d0c35e524a059d35" category="list-text">コントローラモジュールを再設置します。コントローラモジュールは、シャーシに完全に装着されるとすぐにブートを開始します。</block>
   <block id="d9a7a09d2734ecc763c0c5a8586a61a3" category="doc">システムにケーブルを再接続し、ディスクを再割り当てします。 AFF C190</block>
   <block id="b279b6600d5af224d26ab7bab80082c7" category="section-title">手順 2 ： HA システムでシステム ID の変更を確認する</block>
-  <block id="1a654e01c14bfd5cd4699372c3ef6bf9" category="list-text">_replacement _node が Maintenance モードの場合（プロンプトに「 * &gt; 」が表示されている場合）は、 Maintenance モードを終了して、 LOADER プロンプトを表示します。</block>
-  <block id="5df49253d4e35c978d098ad728de36b5" category="list-text">_replacement _node コンソールに Waiting for giveback... というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。</block>
   <block id="109773e48c8731216edae51d1686c8bc" category="list-text">advanced 権限レベルに切り替えます。</block>
   <block id="e510b81f84ff95d9355a3f8777aac54e" category="paragraph">advanced モードで続行するかどうかを尋ねられたら、「 * Y * 」と入力します。advanced モードのプロンプトが表示されます（ * &gt; ）。</block>
   <block id="cd398a68db8f00186aae955968cc06d7" category="list-text">コアダンプをすべて保存します。</block>
   <block id="5bedc6fbcb54f704df8ebd472d318d98" category="paragraph">*system node run -node _local-node-name_partner savecore *</block>
   <block id="5ba88971aec930df5e482b401ee5bda7" category="paragraph">次のコマンドを入力すると、 savecore コマンドの進行状況を監視できます。</block>
   <block id="0a6496658205fc38ba1b1f3e184070ba" category="paragraph">*system node run -node _local-node-name_partner savecore -s *</block>
-  <block id="4b76b0b24680628173c043d577e24169" category="list-text">正常なノードから、交換したノードのストレージをギブバックします。</block>
   <block id="84a63e5c67c16845df7acbd3cae860da" category="paragraph">`* storage failover giveback -ofnode replacement_node_name _*`</block>
   <block id="393be3b3a8c5c898411ba572d160869b" category="paragraph">システム ID が一致しないためにシステム ID を上書きするように求められた場合は '*y*' と入力する必要があります</block>
-  <block id="fdf71b0bf15eace3d1fb5c829e6fd6bd" category="list-text">想定されるボリュームが各ノードに存在することを確認します。</block>
   <block id="e3de43ab4017cb33908b0ff634023d7d" category="paragraph">「 * vol show -node _node-name _ * 」を参照してください</block>
-  <block id="d549e9b55ccc784fa571f784621470ef" category="list-text">リブート時の自動テイクオーバーを無効にした場合は、正常なノードから有効にします。</block>
   <block id="73b172a422efac317883ee1a518015e1" category="paragraph">`* storage failover modify -node _replacement-node-name __ onreboot true *`</block>
   <block id="c08618c5a0ce81948b9cda2e429f0deb" category="doc">NVMEM バッテリを交換してください - AFF C190</block>
   <block id="31fd200f667413cd052c85fc2b0d53a1" category="image-alt">DRW 2600 nvmem BATT repl アニメーション GIF</block>
@@ -4686,7 +4594,6 @@
   <block id="c8ba643914db1664b5eb486f2f97cf94" category="doc">必要に応じて、 OKM 、 NSE 、 NVE をリストアします - AFF C190</block>
   <block id="fc3fc335fe3d498e24675e2eff27cd4f" category="doc">コントローラをシャットダウンします（ AFF C190 ）</block>
   <block id="d5d1d7f0ba452ea37dcd299489e09eff" category="doc">障害のある部品は NetApp-AFF C190 に返却してください</block>
-  <block id="d88c7eb1c7ef4b32e4cdba82c917bfae" category="doc">ノード AFF C190 をシャットダウンします</block>
   <block id="537180ccf440446ad8816ed356c6cee9" category="paragraph">AFF C190 システムを設置するには、アカウントを作成し、システムを登録する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。</block>
   <block id="3fdd87b9e91d1f4dbea3152a3a2b8d0b" category="paragraph">X6566B-3-R6 （ 112-00300 ）、 3m</block>
   <block id="2dbee959c43fd0b0e9eab0968ff31b96" category="image-alt">OIE ケーブルファイバ LC コネクタ</block>
@@ -5235,7 +5142,6 @@
   <block id="3dad031ba5544f976b631ffad1564b7a" category="paragraph">ストレージを再ケーブル接続し、ディスクの再割り当てを確認して、交換用手順を続行します。</block>
   <block id="536b0bd1a9c2b544d6cfae19d9289ea7" category="section-title">手順 1 ：システムをケーブルで再接続します</block>
   <block id="b0da6837b9dc75b3c0fcca1c9c38d89b" category="paragraph">HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。スタンドアロンシステムでは、 ID をディスクに手動で再割り当てする必要があります。構成に適した手順を使用する必要があります。</block>
-  <block id="c6fcf31298ea00741e2a62b768872ba4" category="list-text">リブート時の自動テイクオーバーを無効にした場合は、正常なノードから有効にします。「 storage failover modify -node _replacement -node-name __ onreboot true</block>
   <block id="677d8bcfde6bff1a436a7a5e69b4dd4b" category="doc">クラスタ設定ワークシート - AFF A200</block>
   <block id="c63040480653df4c796c48ec77d545d6" category="section-title">オプション 1 ： ONTAP 9.5 以前を実行しているシステムの NVE または NSE をチェックする</block>
   <block id="249776239ba561818dea48749c5be5e8" category="section-title">オプション 2 ： ONTAP 9.6 以降を実行しているシステムの NVE または NSE を確認する</block>
@@ -5635,7 +5541,6 @@
   <block id="57baf06207321952e0c7d552b4d23995" category="paragraph"><block ref="57baf06207321952e0c7d552b4d23995" category="inline-link-rx"></block></block>
   <block id="98e0a55b81b9188cead04d30df43a89c" category="image-alt">DRW 9000 ケーブルコンソールスイッチコントローラ</block>
   <block id="c11d911fdc6f049d5491a18850fa08dd" category="doc">システムのリストアを完了 - AFF A300</block>
-  <block id="e935849faf7cd25a183a726f34797bb7" category="doc">コントローラモジュールを交換してください - AFF A300</block>
   <block id="11cedb2a3ea1c051845c4666a3942624" category="doc">コントローラをシャットダウンします -- AFF A300</block>
   <block id="4cbf72a112e69e9ca004dad9b0b05d49" category="section-title">オプション 2 ：コントローラは 2 ノードの MetroCluster 構成です</block>
   <block id="1e8706074b646188f170b091d34c8860" category="doc">DIMM-AFF A300 を交換します</block>
@@ -5701,7 +5606,6 @@
   <block id="5e57d07ff1fc6536107cc6e45fe9f281" category="doc">必要に応じて、 OKM 、 NSE 、 NVE をリストアします - FAS2600</block>
   <block id="a102b530af65288511339cf8117713a3" category="doc">コントローラをシャットダウンします - FAS2600</block>
   <block id="a47803b6b6d01b67efcc88a157378c39" category="doc">障害のあるパーツを NetApp-FAS2600 に返却します</block>
-  <block id="45bad0a220769ce3e5e852b8009c6c12" category="doc">node-FAS2600 をシャットダウンします</block>
   <block id="e36ec33be061816b4fbfa1c3e8e42798" category="inline-link-macro">AFF FAS2600 シャーシの交換に関するビデオ</block>
   <block id="e91a3b78a16fbd7eb7d01342d1c07d69" category="doc">クラスタ設定ワークシート - FAS2600</block>
   <block id="88dd2b76e22f517fcc43991c9f49fc1c" category="list-text">コントローラモジュールをシャーシから取り外します。</block>
@@ -7382,11 +7286,9 @@
   <block id="d35e9de4dd221879d5824b232348dc91" category="sidebar">DS460C シェルフ内のディスクドライブ</block>
   <block id="8dfce13bab3428db55090c483e5d838b" category="sidebar">DS460C シェルフ内のドライブドロワー</block>
   <block id="024aa13f0235d96f6c5d0182ea7c1a94" category="sidebar">DS460C シェルフのファンモジュール</block>
-  <block id="0b56478c906127f53acd028bea14e248" category="cell">障害ノードに表示される内容</block>
   <block id="255b2c61d579fe79679408ad9b8fd757" category="paragraph">次の図または記載された手順を使用して、交換用コントローラモジュールをシャーシに設置できます。</block>
   <block id="1ce77f487e28076022ddc7ec80345c1a" category="paragraph">次の図または記載された手順を使用して、交換用コントローラモジュールをシャーシに設置できます。</block>
   <block id="54f4c70c653781a776673e986d65e502" category="paragraph">次のアニメーション、図、または記載された手順に従って、電源装置を交換します。</block>
-  <block id="72a6b0593195cf1c4747031ea9a4b6ce" category="cell">障害ノードの状況</block>
   <block id="a695ddd31702bf0ddff2a7cf2f63d196" category="paragraph">次のアニメーション、図、または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。</block>
   <block id="7fafe988a2b8e22f676e4c8546dc2c17" category="paragraph">次に示すアニメーションや図、または記載された手順に従って、システム DIMM を交換します。</block>
   <block id="83f5dbc08aca0f364692b2a42ed31f22" category="admonition">アニメーションと図は、 DIMM のないソケットの空きスロットを示しています。これらの空のソケットには何も挿入されていません。</block>
@@ -7453,7 +7355,6 @@
   <block id="f6706fbf02796cde0f95e3aa80e2a592" category="section-title">オプション 3 ：コントローラは 2 ノード MetroCluster に搭載されています</block>
   <block id="ad0e39682bcd1cd18eb8f815706bdc7d" category="paragraph">HA 状態の値は、次のいずれかになります。 ***HA`***`m cc`***`m cc-2n`***`nnon-HA`</block>
   <block id="37567fb6b8c5af5beeabf61a11cdb257" category="paragraph">NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。注： 2 ノード MetroCluster 構成のシステムでは、この手順を使用しないでください。</block>
-  <block id="ce7f39a5b75c204d01ca7d8fab45334e" category="section-title">手順 1 ：ノードをシャットダウンします</block>
   <block id="99028e2ad3b8cc332ccf01555ed73338" category="section-title">手順 2 ： RTC バッテリを交換します</block>
   <block id="3433227d36a185f8d1ec626e50a32a55" category="section-title">手順 5 ：コントローラモジュールを再度取り付け、 RTC バッテリ交換後に日時を設定します</block>
   <block id="7bf65a3b0b2623ee81c0deee6045bfbb" category="section-title">9 月 4 日：コントローラモジュールを取り付けます</block>
@@ -7468,7 +7369,6 @@
   <block id="d495410a7f7a2c72ad8aa73f5cdb0372" category="list-text"><block ref="d495410a7f7a2c72ad8aa73f5cdb0372" category="inline-link-rx"></block></block>
   <block id="7d8078ddedc71e65975b2f48e0a08873" category="inline-link">MetroCluster ファブリック接続構成をインストール</block>
   <block id="8711dbf45eeb8f6f1664a1d0fb9dd217" category="list-text"><block ref="8711dbf45eeb8f6f1664a1d0fb9dd217" category="inline-link-rx"></block></block>
-  <block id="20addf17550ae6e814bef2a079f3f96a" category="list-text"><block ref="20addf17550ae6e814bef2a079f3f96a" category="inline-link-macro-rx"></block></block>
   <block id="4b03e4a08b555f0fcfb41ec98179267c" category="paragraph">ほとんどの構成（ ASA 構成を含む）では、異なるコンテンツ形式から選択できます。</block>
   <block id="976b50556e35cc2ef44062a69fc6b2fc" category="list-text"><block ref="976b50556e35cc2ef44062a69fc6b2fc" category="inline-link-macro-rx"></block></block>
   <block id="1fc23df34c1ef373bc238879bf1082e5" category="list-text"><block ref="1fc23df34c1ef373bc238879bf1082e5" category="inline-link-macro-rx"></block></block>
@@ -7494,8 +7394,6 @@
   <block id="934d0bdda7a0d1a8822fd442720c5972" category="paragraph">新しいコントローラへのディスクの再割り当て方法については、次のいずれかのオプションを選択します。</block>
   <block id="32f251bc81f643cafcff8ad711b81b00" category="open-title">オプション 1 ：検証 ID （ HA ペア）</block>
   <block id="a5d68caf62cce2afa4e8ca12ce07943a" category="open-title">オプション 2 ： ID の再割り当て（ MetroCluster 設定）</block>
-  <block id="8cb7716be47a4efa4afe82c12815cb79" category="list-text">停止を確認するプロンプトが表示されたら 'y' を押してノードを停止します 'system node halt -node _node_name _`</block>
-  <block id="842cdd4dec84e54705b2d07255fbd559" category="list-text">該当する場合は、 2 番目のノードを停止して、 HA ペア構成でクォーラムエラーメッセージが表示されないようにします。「 system node halt -node _second_node_name -ignore-quorum -warnings true -skip-lif-migration-before-shutdown true 」</block>
   <block id="7da65b5a10b69b45b490009ac07696ff" category="paragraph">プロンプトが表示されたら回答 'y' 。</block>
   <block id="c86ca2ad8b18f1b66eec5105c703ce0a" category="list-text">AFF A700 HA ペアを使用していて、初期の NS224 ドライブシェルフをホットアドする場合（ HA ペアに NS224 ドライブシェルフがない場合）は、コアダンプ（コアファイルの格納）をサポートするために、各コントローラにコアダンプモジュール（ X9170a 、 NVMe 1TB SSD ）を取り付ける必要があります。</block>
   <block id="b979e87e6bde70f013c6af59e1fa73aa" category="list-text">NS224 シェルフをサポートする ASA HA ペアがある場合は、この手順を使用できます。</block>
@@ -7641,15 +7539,10 @@
   <block id="3125087114c2490b7c6800800a39a990" category="summary">このセクションでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。</block>
   <block id="bee540306d8719a7dd6a93184e6e4d86" category="paragraph">このセクションでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。を使用します <block ref="bae4385e599409430f11ef78df732c82" category="inline-link-macro-rx"></block> ネットアップシステムのインストールに精通している場合。</block>
   <block id="2721d15a1712238198ba49214a74054c" category="paragraph">「 image_xxx.tgz 」ファイルを格納できる適切な容量のストレージを搭載した、 FAT32 にフォーマットされた USB フラッシュドライブが必要です。</block>
-  <block id="325cef81d6a2e0da8d766cd78aeedd6c" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。を参照してください <block ref="5f63b18eda466634ee235fd0cb5a9d6a" category="inline-link-macro-rx"></block>。</block>
-  <block id="0dd5d9e032b1801c3d71568253325ccb" category="list-text">障害ノードがスタンドアロン構成で、 LOADER プロンプトが表示されている場合は、にお問い合わせください <block ref="fbe7ba585c90dfc99f38e8779c97c5f3" category="inline-link-macro-rx"></block>。</block>
   <block id="f5275334d8eb3b5cf9ea9368de40cedc" category="list-text">モードとキー ID の情報を含むドライブの詳細がコマンド出力に表示される場合は、 NSE が設定されているので、 NSE の設定を確認する必要があります。</block>
   <block id="b1dfba2b33907e87a5254267b34a3e32" category="list-text">「キーマネージャ」タイプに「 onboard 」と表示されていることを確認し、 OKM 情報を手動でバックアップします。</block>
-  <block id="46c9d33b77f9064bc8fbe1743c6118eb" category="list-text">ノードは安全にシャットダウンできます。</block>
-  <block id="54d84b238a1f0e6e83e06b2788451c8f" category="paragraph">+ 障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。</block>
   <block id="8179ceedf2aad3a2fafb48feb6a32bdb" category="list-text">ディスク障害のためにコマンドが失敗した場合は、ディスクを物理的に取り外します。ただし、交換用のディスクを受け取るまでは、ディスクをスロットに残しておきます。</block>
   <block id="b6c33850022ae87ff1d2d111469a0da5" category="paragraph">： ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。</block>
-  <block id="e5a1c9478e22eed2b8ae96009afe24a1" category="paragraph">PDF 版セットアップガイドを使用して、新しいシステムを設置してセットアップできます。。 <block ref="72822038b68cdd9969cf7e86feb8bbff" category="inline-link-macro-rx"></block> ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
   <block id="b8657f72d8b4e1ef5c7e2c082690279e" category="list-text"><block ref="b8657f72d8b4e1ef5c7e2c082690279e" category="inline-link-rx"></block></block>
   <block id="4d2e328d055378ef43067726132a9c56" category="list-text"><block ref="4d2e328d055378ef43067726132a9c56" category="inline-link-rx"></block></block>
   <block id="6675c229d440b5fa295266d2c66af8cb" category="list-text">[Restored （リストア済み） ] カラムに 'yes' と表示されている場合は ' オンボード・キー管理情報を手動でバックアップします</block>
@@ -7695,7 +7588,6 @@
   <block id="e4e83a2c82324a2a6d5448b03909ecfa" category="paragraph">を使用できます <block ref="b22470d24dd615c99a09a118a80f7353" category="inline-link-macro-rx"></block> セットアップガイドを参照して、新しいシステムを設置してセットアップします。PDF 版ポスターには、ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
   <block id="9eb9c148662d69c22bab62cf12a75812" category="paragraph">。 <block ref="36ed39ac78f542a04e83212067a271f3" category="inline-link-macro-rx"></block> に、 ONTAP 9.2 を実行するシステムのエンドツーエンドのソフトウェア設定を示します。</block>
   <block id="ad569dbab7bcafe6ae2a28cd4d832fd1" category="list-text">'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' と表示されている場合は 'OKM 情報を手動でバックアップします</block>
-  <block id="152f3adf69bffe0bb0658bb05364f89b" category="admonition">シャーシを交換する前にシステムのクリーンシャットダウンを実行し、不揮発性メモリ（ NVMEM / NVRAM ）内の書き込み前のデータが失われないようにする必要があります。システムによっては、 NVMEM / NVRAM の LED の点滅は、ディスクに保存されていないデータが NVMEM / NVRAM にあることを示しています。ノードをリブートし、この手順の先頭からやり直してください。ノードのクリーンシャットダウンに繰り返し失敗すると、ディスクに保存されていないデータが失われる可能性があります。</block>
   <block id="d6cd7784b4e7b607424fb3f31dc53b2d" category="list-text">healthy_node は、 _replacement _node の HA パートナーです。</block>
   <block id="7676556d14b3f7dfc7ddc885b585b132" category="list-text">_healthy_node で、システム時刻「 show date 」を確認します</block>
   <block id="704ce524afb02bcf845b03e8ae369f8b" category="paragraph">修復が拒否された場合は '-override-vetoes パラメータを指定して MetroCluster heal コマンドを再実行できますこのオプションパラメータを使用すると、修復処理を妨げるソフトな拒否はすべて無視されます。</block>
@@ -7712,7 +7604,6 @@
   <block id="4693df7fc44203724111e55493c1f236" category="paragraph">Terra cotta リリースボタン</block>
   <block id="a6b7b1f6b451582b4f3e4ee818b0b022" category="paragraph">ファンをスライドさせてシャーシから取り外します</block>
   <block id="b9f8bf80fa7fab32aca8c28430b0b999" category="doc">リアルタイムクロックバッテリの交換 - AFF A900</block>
-  <block id="34de7ae9bee05647de754a7bdd5b00d5" category="section-title">手順 2 ：コントローラを開く</block>
   <block id="4cc95bf9d5b32fe7d0352f48b0791827" category="list-text">カムハンドルのテラコッタボタンを下にスライドさせてロックを解除します。</block>
   <block id="157fddeae41486bcaef21356a0ec5bb1" category="inline-link">アニメーション -- コントローラを取り外します</block>
   <block id="1e6a22a0167a906d5d500778e514adce" category="paragraph"><block ref="1e6a22a0167a906d5d500778e514adce" category="inline-link-rx"></block></block>
@@ -7722,7 +7613,6 @@
   <block id="f58146f61f30db6d5df364a7751fc65a" category="paragraph"><block ref="f58146f61f30db6d5df364a7751fc65a" category="inline-link-rx"></block></block>
   <block id="70f590ae3de022f014ffe169e236da55" category="image-alt">DRW a900 は RTC バッテリを取り外します</block>
   <block id="7ac0a68ff3a0c6b3beb7f03b58c8496d" category="paragraph">RTC バッテリを交換したら、コントローラモジュールを再度取り付ける必要があります。RTC バッテリをコントローラモジュールから 10 分以上取り出した場合は、時刻と日付のリセットが必要になることがあります。</block>
-  <block id="4714e8423619d9cc43be300b5a406117" category="list-text">ストレージをギブバックしてノードを通常の動作に戻します。「 storage failover giveback -ofnode impaired_node_name</block>
   <block id="f019032ca5e4ee1339ef0bcd485f9c8d" category="summary">コントローラモジュールを取り外して開き、コントローラのブートメディアの場所を確認して交換してから、交換用ブートメディアにイメージを転送する必要があります。</block>
   <block id="f42f050dc5269ad7b9f62abb5be6f335" category="doc">コントローラを取り外し、ブートメディアを交換して、ブートイメージ AFF A900 を転送します</block>
   <block id="2124dcd5f889b56f5d21d376ccfe034a" category="inline-link">アニメーション -- コントローラを取り外します</block>
@@ -7737,7 +7627,6 @@
   <block id="f57131a371345f28120c2c1540cdc3dd" category="paragraph">ストレージおよびネットワーク接続をケーブルで再接続して、交換用手順を続行します。</block>
   <block id="2f966eb8b55c870ae5de4a1ce0bc89cb" category="list-text">を使用して、ケーブル接続が正しいことを確認します<block ref="7064c89577900622f24a070c24ebbaa7" category="inline-link-rx"></block>。</block>
   <block id="0163a3b42f42d43e15610ad575decda8" category="admonition">システム ID とディスク割り当て情報は NVRAM モジュールにあります。 NVRAM モジュールはコントローラモジュールとは別のモジュールに搭載されており、コントローラモジュールの交換による影響はありません。</block>
-  <block id="580fe6e7e310b3db810754c7c7927744" category="list-text">_replacement _node が Maintenance モード ( プロンプトに *&gt;` が表示されている ) の場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます</block>
   <block id="1f8a127e3837fb66c1f3c8c02d8392cd" category="list-text">savecore コマンドの完了を待機してからギブバックを実行します。</block>
   <block id="c45c9fc04ba9ebcfc2085fb4d27cb308" category="paragraph">_replacement _node はストレージをテイクバックしてブートを完了します。</block>
   <block id="e52d65661673e0d8112057f135b30a91" category="inline-link">手動ギブバックコマンド</block>
@@ -7879,10 +7768,8 @@
   <block id="eeacd9b31ab0c2f60f1d13e5632f7f13" category="list-text">saveenv コマンドを使用して、変更内容を保存します。</block>
   <block id="29d4dec218aeaffabfed6dcc8fd1ad45" category="list-text">システムにオンボードキーマネージャ、 NSE 、または NVE が設定されている場合は、に進みます <block ref="39910b5f3ea1ee39d8059faae857cc98" category="inline-xref-macro-rx"></block></block>
   <block id="b52d8d1d987722da12d16df8a0a63541" category="list-text">LOADER プロンプトで、 boot_ontap コマンドを入力します。</block>
-  <block id="6c6d5b112e5f57cd557a4ce3f7e29059" category="list-text">storage failover giveback -fromnode local コマンドを使用してノードをギブバックします。</block>
   <block id="13b6e1ea33838db60037aa0b1c5c884b" category="list-text">クラスタプロンプトで、 net int-is-home false コマンドを使用して論理インターフェイスを確認します。</block>
   <block id="5e5ce8025b11752aab339bd61df121bc" category="paragraph">「 false 」と表示されるインターフェイスがある場合は、 net int revert コマンドを使用して、それらのインターフェイスをホームポートに戻します。</block>
-  <block id="fdfb5a2b2c62652b047bacddf92e9188" category="list-text">修復されたノードにコンソールケーブルを接続し、 version -v コマンドを実行して ONTAP のバージョンを確認します。</block>
   <block id="21771aeeca9194c9c6cc4646a2230c93" category="list-text">storage failover modify -node local-auto-giveback true コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。</block>
   <block id="eec41346a265cfb88abb54f51ec33fe7" category="summary">AFF A900 システムのマニュアルでは、システムの設置、セットアップ、および保守を行うことができます。</block>
   <block id="b35a00e75330322eefd710713ca83b02" category="doc">AFF A900 システム</block>
@@ -7891,8 +7778,6 @@
   <block id="4d365227a3a5ccf9886fa9c35ba6a99d" category="paragraph">NVRAM モジュールは NVRAM11 と DIMM で構成されます。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。障害が発生した NVRAM モジュールを交換するには、モジュールをシャーシから取り外し、 DIMM を交換用モジュールに移して、交換用 NVRAM モジュールをシャーシに取り付ける必要があります。</block>
   <block id="50b70636b9b845e1cca7db72fbdeec68" category="paragraph">および NVRAM DIMM を交換するには、 NVRAMmodule をシャーシから取り外し、モジュール内の障害のある DIMM を交換してから、 NVRAM モジュールを再度取り付ける必要があります。</block>
   <block id="356bb2eaf8fe1f9955f9f22e00ddcb54" category="paragraph">システム ID は NVRAM モジュールから取得されるため、モジュールを交換する場合は、システムに属するディスクを新しいシステム ID に再割り当てします。</block>
-  <block id="566dc57c04b76274e7168e53e1eea041" category="list-text">障害ノードとは、メンテナンスを実行しているノードです。</block>
-  <block id="350cecd9af7d98cbf31c22fbd46e60fe" category="list-text">正常なノードとは、障害ノードの HA パートナーです。</block>
   <block id="e0ffee47cf76076ed4c6531bb6ebf63f" category="inline-link">アニメーション -- NVRAM モジュールを交換します</block>
   <block id="1877796130af55388822e2758225131e" category="paragraph"><block ref="1877796130af55388822e2758225131e" category="inline-link-rx"></block></block>
   <block id="dad23827b140b55a3121c86e5b861fad" category="image-alt">DRW a900 move remove NVRAM module (NVRAM モジュールを取り外します</block>
@@ -7908,14 +7793,8 @@
   <block id="8d8e1d2c17edc6fe8262408b12b73390" category="list-text">表示されたコントローラモジュールのシステム状態がシステム構成と一致しない場合は、コントローラモジュールの HA 状態を「 ha-config modify controller_A_2 state_」 に設定します</block>
   <block id="c36d25abc9dfdbc31228c74f7e654d0c" category="list-text">表示されたシャーシのシステム状態がシステム構成と一致しない場合は ' シャーシの HA 状態を設定します HA config modify chassis_HA-state_</block>
   <block id="f95e8e8b229c3aee97b205509f91df66" category="section-title">手順 6 ：ディスクの再割り当て</block>
-  <block id="0855873e0fa5bed2d0067d6acae6c0df" category="paragraph">交換用ノードのブート時にシステム ID の変更を確認し、変更が実装されたことを確認する必要があります。</block>
-  <block id="1a97de4b7c87981ce7420f6c88c32df0" category="list-text">交換用ノードのコンソールに Waiting for giveback... メッセージが表示されるまで待ち、正常なノードから新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show</block>
   <block id="8672de10e3d8295abd1be60e2569c4c6" category="list-text">すべてのコアダンプを保存します： system node run -node local-node-name partner savecore</block>
   <block id="544b7fcf1fe2aaedd577ba107a7f6a56" category="paragraph">次のコマンドを入力すると 'savecore コマンドの進行状況を監視できます system node run -node local-node-name partner savecore -s</block>
-  <block id="7a18402f95cb86527db24f56d6baec40" category="list-text">正常なノードから、交換したノードのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name</block>
-  <block id="3217c14b22c3695ed301b94539bd2dbb" category="paragraph">交換用ノードはストレージをテイクバックしてブートを完了します。</block>
-  <block id="18963b05f9f3bc779f544c26aae06ab9" category="paragraph">交換用ノードに属するディスクには、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。</block>
-  <block id="cfe787a999b8c200091f805ad9426e24" category="list-text">交換用ノードがディザスタサイトのディスクの現在の所有者である。</block>
   <block id="7285c4012d903a86f08da4d4eb643a35" category="paragraph">を参照してください<block ref="1c9dcde47ee822b3ac120aae2f296f05" category="inline-link-rx"></block> を参照してください。</block>
   <block id="2a1253e1eb3f5fea69107948ef4c203d" category="summary">このトピックでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。</block>
   <block id="cb0bd9965128fe9d9c7dc5fe35ba00fa" category="doc">クイックステップ - AFF A900</block>
@@ -7933,9 +7812,7 @@
   <block id="8b786c8ea77512c3dbdaa8bd1b973696" category="paragraph"><block ref="8b786c8ea77512c3dbdaa8bd1b973696" category="inline-link-rx"></block></block>
   <block id="ad4cfe6fc2b7cb05bf19c4a07bb3ec19" category="list-text">起動メニューに Ctrl+C キーを押して ' 起動プロセスを中断します</block>
   <block id="c63722af0556df99585d9c4de88eb02d" category="admonition">起動プロセス中に 'y' とプロンプトを安全に入力できます</block>
-  <block id="86319021cdc9cc33274101862a78bb0d" category="list-text">HA 構成でメンテナンスモードに切り替えたときに表示される、正常なノードが停止したままであることの確認を求めるプロンプト。</block>
   <block id="beae2577508dff32956933c72e8af78a" category="paragraph">ギブバックを実行します。 storage failover giveback -ofnode replacement_node_name * 注： * 自動ギブバックを無効にした場合は、 storage failover modify コマンドを使用して再度有効にします。</block>
-  <block id="ef27904ffe8486e4c45f99e2284dcde0" category="doc">障害ノード AFF A900 をシャットダウンします</block>
   <block id="4a11061a1e6cf88a01ac0a8a2d4682c6" category="doc">コントローラモジュールハードウェア AFF A900 を交換してください</block>
   <block id="a1828edb3cde53f0ba3419e2ebe71f61" category="paragraph">次のアニメーションは、障害のあるコンポーネントを交換用コントローラに移動するプロセスを示しています。</block>
   <block id="9af409fe069f89e48cd941abd1907054" category="inline-link">アニメーション -- コンポーネントを交換用コントローラに移動します</block>
@@ -7947,24 +7824,17 @@
   <block id="800c8750475f7f7221a9b7946bec8d10" category="list-text">LOADER でブートするオプションを選択します。</block>
   <block id="eee1a85c64e17c1ca9ed30c1f544d35d" category="doc">コントローラモジュール AFF A900 を交換してください</block>
   <block id="8b20a20371bd26b5083507f395cf24ab" category="paragraph">障害のあるコントローラモジュールを交換するには、障害のあるコントローラをシャットダウンし、内蔵コンポーネントを交換用コントローラモジュールに移動して、交換用コントローラモジュールを取り付け、交換用コントローラをリブートする必要があります。</block>
-  <block id="c60c00789a015e4c8edc176d68ea53c2" category="list-text">この手順では、ブートデバイスを障害ノードから交換用ノードに移動して、交換用ノードが古いコントローラモジュールと同じバージョンの ONTAP でブートするようにします。</block>
-  <block id="fd6012123eb1d03462c1cd48d50c92e6" category="list-text">障害ノードとは、交換するノードです。</block>
-  <block id="9e51ab12d26faade2a31d70da71c74f5" category="list-text">交換用ノードとは、障害ノードに代わる新しいノードです。</block>
-  <block id="537af5095a4992ae7e9026bd3ff008a6" category="list-text">正常なノードとはサバイバーノードです。</block>
   <block id="4e4fca0318eac6dc1315f4bad56eb1c6" category="summary">システムに I/O モジュールを追加するには、既存の I/O モジュールをフル装備のシステムで新しい I/O モジュールに交換するか、シャーシの空のスロットに新しい I/O モジュールを追加します。</block>
   <block id="a164244a6913c60772e9b9fbbbc17a4a" category="doc">I/O モジュールを追加します（ AFF A900 ）</block>
   <block id="e01b6c84aaebe2321eef7b7a933b171f" category="list-text">無停止で I/O モジュールを追加するには、ターゲットコントローラをテイクオーバーし、ターゲットスロットのスロットブランクカバーを取り外すか、既存の I/O モジュールを取り外し、新しい I/O モジュールまたは交換用 I/O モジュールを追加して、ターゲットコントローラをギブバックする必要があります。</block>
   <block id="329fe7c89a525def535e03c6dbc6f98f" category="section-title">オプション 1 ：オープンスロットを備えたシステムに I/O モジュールを追加する</block>
   <block id="12f686a2d13fd4b93c3ef7fbc915cdcd" category="paragraph">システムの空のモジュールスロットに、 NS224 ストレージシェルフの NIC またはストレージモジュールとして I/O モジュールを追加できます。</block>
-  <block id="ff231ca484e594004f4ca93ecfa6683e" category="paragraph">テイクオーバーが完了すると、コンソール接続でノードが LOADER プロンプトに表示されます。</block>
   <block id="c45c3f1f9d099575b7abd851e7ef8b33" category="list-text">カムラッチを開いた状態になるまで下に回転させます。</block>
   <block id="9a08e35bf8850515585d9bd11e96351b" category="list-text">I/O モジュールを取り付けます。</block>
   <block id="66efd9c2b6ae55ef5c1ff3be01c1fe65" category="list-text">I/O モジュールをスロットの端に合わせます。</block>
   <block id="35d6c9040844123446e81fce55da1548" category="list-text">文字と数字が記載された I/O カムラッチが I/O カムピンにかみ合うまで、 I/O モジュールをスロットにスライドさせます。</block>
   <block id="7ca78c6d47f27487175e23a00c576196" category="list-text">交換用 I/O モジュールが NIC の場合は、モジュールをデータスイッチにケーブル接続します。</block>
   <block id="3267c15e351fe1dd15721e79b072fedc" category="admonition">使用していない I/O スロットには、熱の問題を防ぐためにブランクが取り付けられていることを確認してください。</block>
-  <block id="2a5cd1f850ee79601be57448f10d9595" category="list-text">LOADER プロンプトからノードをリブートします： bye _</block>
-  <block id="4d3b1425bbd62943a546a9f98dc3b7ef" category="list-text">パートナーノードからノードをギブバックします。storage failover giveback -ofnode target_node_name</block>
   <block id="05648a23fc430a3dcc4fb4c1fbb040cd" category="list-text">ネットワーク用にスロット 3 または 7 を使用している場合は、「 storage port modify -node __ &lt;node name&gt; ____port_&lt;port name&gt; __ -mode network 」コマンドを使用して、ネットワーク用にスロットを変換します。</block>
   <block id="2d881a27ee894664c2e7cc8d1795b104" category="list-text">ストレージ I/O モジュールを設置した場合は、 NS224 シェルフを設置してケーブル接続します（を参照）<block ref="8b1d41e5fd14f554e8b3490e0dfd47ae" category="inline-link-rx"></block>。</block>
   <block id="3e0887648c519f4a3c16a1c61b2e8ec3" category="section-title">オプション 2 ：オープンスロットのないシステムに I/O モジュールを追加する</block>
@@ -7995,7 +7865,6 @@
   <block id="e10b0a89639d4224f22325c89418ef31" category="paragraph">シャーシを交換するには、電源装置、ファン、コントローラモジュール、 I/O モジュール、 DCPM モジュールを取り外す必要があります。 障害のあるシャーシから USB LED モジュールを取り外し、障害のあるシャーシを装置ラックまたはシステムキャビネットから取り外し、交換用シャーシを所定の位置に取り付けて、交換用シャーシにコンポーネントを取り付けます。</block>
   <block id="3f5fa7ca9a9d6129ce081b64cc104ab6" category="paragraph">シャーシの交換を完了するには、特定のタスクを実行する必要があります。</block>
   <block id="32574a63619099277d431cfd465fea0b" category="list-text">シャーシの HA 状態を設定します :'ha-config modify chassis_ha-state _</block>
-  <block id="3f91c59c59a1243cb3f176daf3c9c054" category="list-text">ノードを通常動作に戻します。</block>
   <block id="e81993a1d153ae6594cc7e0070093d6a" category="doc">ハードウェア AFF A900 を移動して交換します</block>
   <block id="a30a15e944afabde046385685fec252c" category="paragraph">シャーシを交換するには、古いシャーシからコンポーネントを取り外し、交換用シャーシに取り付ける必要があります。</block>
   <block id="69c3b8cc95d3690f8df22cd6f70a3b78" category="inline-link">アニメーション -- PSU の取り外し / 取り付け</block>
@@ -8014,7 +7883,6 @@
   <block id="8da7df8c5a74dcac7b5b9a5067e72313" category="image-alt">DRW a900 は LED モードを交換してください</block>
   <block id="6b058f6aab05ab39cfb929fd3a13e5ad" category="paragraph">モジュールをイジェクトします。</block>
   <block id="fdbcf566dc8794b2a2c635f286edfa2b" category="paragraph">シャーシから引き出します。</block>
-  <block id="6e7d5178a758393b97e367ca3da27d68" category="list-text">各ノードがブートを開始したら、「 Press Ctrl-C for Boot Menu 」というメッセージが表示されたら、 Ctrl+C キーを押してブートプロセスを中断します。</block>
   <block id="9cc3abf99d341ddf4468a9377444f16d" category="doc">障害のあるコントローラ AFF A900 をシャットダウンします</block>
   <block id="2aba05ee9a4093e5315b48903c27d988" category="doc">I/O モジュールを交換してください - AFF A900</block>
   <block id="915d49d9990f69f4d3152ddfea76d324" category="inline-link">アニメーション -- I/O モジュールの取り外し / 取り付け</block>
@@ -8024,17 +7892,13 @@
   <block id="8c2fb795497456b969ba9307ef6f84c8" category="list-text">LOADER プロンプトで、ノードをリブートします： bye _</block>
   <block id="b40d85db7a9de91cff53c5663c76daaf" category="list-text">ノードを通常動作に戻します。 storage failover giveback -ofnode impaired_node_name</block>
   <block id="65dc2e566ca79200d7c70bef0b947464" category="doc">OKM 、 NSE 、および NVE - AFF A900 のブートメディア交換後の手順</block>
-  <block id="a18eb452b8ba972a5f3a705a455fac35" category="list-text">LOADER プロンプトで boot_ontap コマンドを使用してノードをブートします。</block>
   <block id="9a35117ce5f367da3a3ca5116d861d73" category="list-text">ブート・メニューで ' 非表示のコマンド 'recover_onboard keymanager_' を入力し ' プロンプトで y と応答します</block>
   <block id="1491d378fbbc2d9a6048e5b9b67a396a" category="paragraph">バックアップデータを入力します。</block>
-  <block id="da0c8baa25fcee791ffa412ec90044ca" category="list-text">パートナーノードにコンソールケーブルを接続し、 admin としてログインします。</block>
   <block id="56b9aa57eb07c87d93d8f36e42537891" category="list-text">CIFS セッションが開いているためにコマンドが失敗する場合は、 CIFS セッションを閉じる方法をお客様に確認します。</block>
   <block id="99cf22e04f567c5375349f8aa14becd4" category="list-text">パートナーの準備ができていないためにコマンドが失敗した場合は、 NVRAMs が同期されるまで 5 分待ちます。</block>
   <block id="4d2b3834d59169dcbb17afc3c699e3ac" category="list-text">NDMP 、 SnapMirror 、または SnapVault のプロセスが原因でコマンドが失敗する場合は、そのプロセスを無効にします。詳細については、該当するコンテンツを参照してください。</block>
-  <block id="a69e3df3fc089f72b8d4244ee2e280dc" category="list-text">クラスタシェルプロンプトで、 net int show -is-home false コマンドを入力し、ホームノードおよびポートにない論理インターフェイスを表示します。</block>
   <block id="01644ff2aec9678b64ae01d076703f1a" category="paragraph">いずれかのインターフェイスが「 false 」と表示されている場合は、 net int revert コマンドを使用して、これらのインターフェイスをホームポートに戻します。</block>
   <block id="681ec8b91432585ef548a814edeadbb6" category="paragraph">手順 7 に進みます。</block>
-  <block id="894c5814238c15162364a7dd224a5a59" category="list-text">コンソールケーブルをパートナーノードに移動し、 storage failover giveback -fromnode local-only -cfo-aggregates true local コマンドを使用してターゲットノードストレージをギブバックします。</block>
   <block id="b17e311ccd8e21ff73506e54f24b6cfd" category="list-text">3 分待ってから、 storage failover show コマンドを使用してフェイルオーバーステータスを確認します。</block>
   <block id="5af23d53e03e2919ad84a3f9112823ac" category="list-text">'Key Manager type`=external' および 'restored' カラム = が 'yes/true' 以外の場合は 'security key-manager external restore コマンドを使用して認証キーのキー ID を復元します</block>
   <block id="3796dde1eb4771fdc94b7b6dd6b04cbf" category="list-text">'Key Manager type`=onboard ' および 'restored' カラム = 'yes/true' 以外の場合は、 security key-manager onboard sync コマンドを使用して Key Manager タイプを再同期します。</block>
@@ -8103,17 +7967,14 @@
   <block id="043f87552b799b527c2dd72b0313e404" category="sidebar">コントローラモジュールハードウェアを交換します</block>
   <block id="718b8a88a314d56b344c3895d896ab2a" category="sidebar">システム構成をリストアおよび検証します</block>
   <block id="3182807165615fb651163be98cb522b4" category="sidebar">デステージコントロールパワーモジュール</block>
-  <block id="f3a683d1b48244546d607c15e8a715ab" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。を参照してください <block ref="1baf9f7ecc4554f61d6168e4897ea002" category="inline-link-macro-rx"></block>。</block>
   <block id="8b2c2beff1e9638576a300eecae505bf" category="paragraph">コントローラモジュールの取り外しに進みます。</block>
   <block id="9437c57fcfd0761eae87af1101035857" category="section-title">手順 2 ：コントローラモジュールを取り外す</block>
   <block id="74215317310e6608b7efcf980bd23ce9" category="list-text">登録（<block ref="3ae584b0f28c11edd6df40135d81b8ba" category="inline-link-macro-rx"></block>）をクリックします。</block>
   <block id="94fc6517f8931e5bf7fa3db4d65a29f8" category="list-text">アニメーションを使用します（<block ref="50ccb09f541207f76322daa7df8a0e52" category="inline-link-macro-rx"></block>）をクリックして、ラップトップを管理スイッチに接続します。</block>
   <block id="f65880020d1427cb243e627e392ce6ef" category="section-title">手順 1 ：コントローラモジュールを取り外す</block>
   <block id="0cb8c95aa83d9b7ae853da12e5bb125c" category="paragraph">カムハンドルは、ドライブキャリアの前面に揃うようにゆっくりと閉じてください。安全な状態でカチッと音がします。</block>
-  <block id="7c13f4f3a84cec8b802281259883339c" category="list-text">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なノードの資格と正常性に「 false 」と表示される場合は、障害のあるノードをシャットダウンする前に問題を修正する必要があります。を参照してください <block ref="1baf9f7ecc4554f61d6168e4897ea002" category="inline-link-macro-rx"></block>。</block>
   <block id="3891e96240b27c2309a21f6387f98917" category="paragraph">コントローラモジュールの取り外しに進みます。</block>
   <block id="063a6c27f42a062a6ece0163f4444fc3" category="list-text">NetApp Storage Encryption を使用している場合は、の「 FIPS ドライブまたは SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります <block ref="bb6c6af86c0c41920e9753bb15981800" category="inline-link-macro-rx"></block>。</block>
-  <block id="51d6de730b00c1cd722a3e380f269e57" category="paragraph">NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。</block>
   <block id="f126a748aa68879f9dcff06da9ee7d1e" category="paragraph"><block ref="f126a748aa68879f9dcff06da9ee7d1e" category="inline-link-macro-rx"></block></block>
   <block id="8dcb40a3ec5d5a042451105a7c18324f" category="list-text">アニメーションを使用します（<block ref="aac3371ee9509f15dc58093b45cef9cb" category="inline-link-macro-rx"></block>）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。</block>
   <block id="1f9c146468982373cd5cf84ac4b891fa" category="list-text">アニメーションを使用します（<block ref="28d905783e25429dd480a005ec25b827" category="inline-link-macro-rx"></block>）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。</block>
@@ -8127,13 +7988,9 @@
   <block id="600e46343a5c1b454fe4d6da206b4df4" category="list-text">アニメーションを使用します <block ref="acf2617804b40ea229d47bb7c91f9408" category="inline-link-rx"></block>）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。</block>
   <block id="3888a38ba771743aba436340db0ebf5c" category="list-text">アニメーションを使用します <block ref="81efed7d5e458f4dd1f779beb1039e7a" category="inline-link-rx"></block>）またはステップバイステップの手順に従って、コントローラモジュールを 1 台のシェルフにケーブル接続します。</block>
   <block id="592c78e6a752254c571ef3ec19ab4f02" category="list-text">アニメーションを使用します <block ref="d27a08094aa14ff3e85358b5dea53060" category="inline-link-rx"></block>）をクリックして、ラップトップを管理スイッチに接続します。</block>
-  <block id="09ba8705674baa2bb12600bee5888bda" category="paragraph">正常なノードから障害ノードをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name _</block>
-  <block id="6c0c224b8e9179a7c25ea93532145021" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 * y * 」と入力し、ノードをブートします。</block>
   <block id="d7330da3fefbffbe126bbfae916b2005" category="list-text">savecore コマンドが完了するのを待ってからギブバックを実行します</block>
   <block id="03a45c592eebddeaf80cccbc66213075" category="paragraph">システムを完全に動作状態に戻すには、 NetApp Storage Encryption の構成をリストアし（必要な場合）、新しいコントローラのライセンスをインストールし、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。</block>
-  <block id="73d21b6023874255fc8bc704f7454d7e" category="paragraph">正常なノードから障害ノードをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name</block>
   <block id="07bcf96175c4fb31a9a4900272f1bd18" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _ node の LOADER プロンプトから「 y 」と入力し、ノードをブートします。「 boot_ontap 」</block>
-  <block id="f14e5f22bf7ba96b4c82cde849259a00" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 y 」と入力し、ノードをブートします。「 boot_ontap 」</block>
   <block id="588550e231fd9dcead167f2e3a8a2926" category="paragraph">ブートメディアを固定しているネジを外すためにプラスドライバが必要です。</block>
   <block id="c2a9feacea3374ba5c6052aaa36c24d5" category="list-text">storage failover modify コマンドを使用して自動ギブバックを無効にした場合は ' 自動ギブバックをリストアします</block>
   <block id="8eea6ffadcece75bbf0826ed26885fb9" category="list-text">この手順はシステムの停止を伴います。2 ノードクラスタでは、マルチノードクラスタでサービスが完全に停止し、部分的に停止します。</block>
@@ -8164,13 +8021,11 @@
   <block id="bec1622a1f566276141766f76e4b1d70" category="list-text"><block ref="bec1622a1f566276141766f76e4b1d70" category="inline-link-rx"></block></block>
   <block id="1ee623098df2f7856a034824be882999" category="inline-link">外部キー管理の暗号化キーをリストアします</block>
   <block id="e10bd7c646b5f37d42df52bab6df6c64" category="list-text"><block ref="e10bd7c646b5f37d42df52bab6df6c64" category="inline-link-rx"></block></block>
-  <block id="9552018736df32cfcfe01f2b7f8925ce" category="paragraph">障害ノードをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害ノードのステータスを確認し、自動ギブバックを無効にして、実行中の ONTAP のバージョンを確認する必要があります。</block>
   <block id="3c737345883504ebe7f0075c2e20f47e" category="list-text">このコマンドの出力に &lt;lno-DARE&gt; または &lt;1Ono-dARE&gt; が表示される場合は、システムが NVE をサポートしていないので、コントローラのシャットダウンに進みます。</block>
   <block id="9b744d081289382cce38c59e4b6d3f76" category="list-text">クラスタ内のいずれのボリュームにも NVE が使用されているかどうかを確認します。 volume show -is-encrypted true</block>
   <block id="7ab4c93a1ecb36778005e21c2d800f15" category="paragraph">出力に含まれるボリュームには NVE が設定されているため、 NVE の設定を確認する必要があります。ボリュームが表示されない場合は、 NSE が設定されて使用中であるかどうかを確認します。</block>
   <block id="9a8dafa2367c711dd5820d53a42508e9" category="list-text">NSE が構成され ' 使用されているかどうかを確認します storage encryption disk show</block>
   <block id="ad6e341d56390163e7fc8c5722a9e033" category="list-text">モードとキー ID の情報を含むドライブの詳細がコマンド出力に表示される場合は、 NSE が設定されているので、 NSE の設定と使用状況を確認する必要があります。</block>
-  <block id="7e5f25479cc97ea11694e5af634fc675" category="list-text">NVE と NSE が設定されていない場合、 NSE キーでドライブが保護されていないため、障害ノードを安全にシャットダウンできます。</block>
   <block id="c9c0cd0bbd81ff9ac4cc17d3dad4fb7c" category="list-text">キー管理サーバに格納されている認証キーのキー ID を表示します。「 security key-manager key-query</block>
   <block id="08c67f907b0f6c715c552d9ca4f21200" category="admonition">ONTAP 9.6 リリース以降では、キー管理ツールのタイプが追加されることがあります。タイプは「 KMIP 」、「 AKV 」、「 GCP 」です。これらのタイプを確認するプロセスは 'external' または 'onboard のキー管理タイプを確認するプロセスと同じです</block>
   <block id="2647b6895add9d235f2ff89a28db2364" category="list-text">すべての認証キーについて 'restored' カラムが 'yes' になっていることを確認しますつまり 'security key-manager key-query' です</block>
@@ -8181,11 +8036,9 @@
   <block id="7762733471d5b473835d903a5329768b" category="list-text">システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 y 」と入力し、ノードをブートします</block>
   <block id="aae8c2f0334c863e9a3a9acb4beb0c27" category="list-text">正常なノードから古いシステム ID を表示します MetroCluster node show -fields node-systemid'dr-partner-systemid</block>
   <block id="64b5850437a6c5ede6e9cff83bdaf98e" category="list-text">コマンドを入力して、 OKM バックアップ情報を表示します：「 securitykey-manager backup show 」</block>
-  <block id="f099c3d90bd5d885da1ab6eb776cdc1d" category="list-text">システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 y 」と入力し、ノードをブートします</block>
   <block id="edfea1a2881be4e7bcc10dfa9c8b3fc6" category="admonition">コントローラモジュールを取り外しにくい場合は、（腕を交差させて）内側から穴に人さし指を入れます。</block>
   <block id="1262a5e3b93c18f0ba83db6f539c3e5b" category="paragraph">+ * 注意： *</block>
   <block id="96f3065963946bf7d4b37f70901cd2c8" category="paragraph">+ 積極的に押す原因と、バッテリがイジェクトされる可能性があります。</block>
-  <block id="188f2d33c82265d54696d7fb9143f330" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _node の LOADER プロンプトから「 y 」と入力し、ノードをブートします。</block>
   <block id="f05dc6ae866c89472a3f7a9b59aa3e6a" category="list-text">No.1 磁気ドライバを使用して、ブートメディアのネジを挿入して締めます。</block>
   <block id="aeafe9c2b3703d604c28ef5d13c03f76" category="list-text">No.1 磁気ドライバを使用して、交換用コントローラモジュール前面とメザニンカードにネジを挿入して締めます。</block>
   <block id="4a2546eb9c2e57bf15ddf11202689d7c" category="section-title">オプション 2 ： MetroCluster のシステム</block>
@@ -8199,7 +8052,6 @@
   <block id="b301d69a6b0a95b2643c3f11f284ca2e" category="paragraph">システムにメザニンカードがない場合は、新しいメザニンカードを取り付けます。。コントローラモジュールの前面からネジを外し、メザニンカードスロットをカバーするカバーを No.1 磁気ドライバを使用して外し、マグネットの上に安全な場所に置きます。。メザニンカードを静電気防止用の梱包バッグから取り出し、コントローラモジュールの内側に合わせます。。メザニンカードを所定の位置にゆっくりと合わせます。。No.1 磁気ドライバを使用して、コントローラモジュール前面とメザニンカードにネジを挿入して締めます。</block>
   <block id="ffdeab5945e241ee6f7c030295c9824b" category="paragraph">+ 注：メザニンカードのネジを締めるときは力を加えないでください。亀裂が入る可能性があります。</block>
   <block id="5d43aadf0265bbe861cd90a52514a118" category="list-text">コントローラモジュールをシャーシに挿入します</block>
-  <block id="914e957c63d00c0138857ee04fb05826" category="paragraph">MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。「 MetroCluster node show -fields node-systemid` 」コマンドの出力には、 MetroCluster 設定が通常の状態に戻るまで古いシステム ID が表示されます。</block>
   <block id="3520fe246261ba13b3370caf4fcfc36f" category="paragraph">環境変数を確認したら、オンボードキーマネージャ（ OKM ）、 NetApp Storage Encryption （ NSE ）、および NetApp Volume Encryption （ NVE ）のリストア手順を実行する必要があります。</block>
   <block id="2a5c64cf16afc052ecc2fa22a6498fd8" category="list-text">バックアップ・データの入力を求められたら、このセクションの冒頭でキャプチャしたバックアップ・データを貼り付けます。security key-manager backup show コマンドまたは security key-manager onboard show-backup コマンドの出力を貼り付けます。</block>
   <block id="b1a9ca4c67f6b51a4dc8e3cdf1151948" category="admonition">このデータは 'security key-manager backup show コマンドまたは security key-manager onboard show-backup コマンドのいずれかから出力されます</block>
@@ -8337,7 +8189,6 @@
   <block id="36db73d94b30571d5e78b69926c4ee10" category="doc">コントローラモジュールの交換について - FAS8200 を参照してください</block>
   <block id="52a61ff1e81c104a11ce1a58a38dd667" category="doc">コントローラ - FAS8200 をシャットダウンします</block>
   <block id="a42edb5535752c77f564dff66261535b" category="doc">コントローラモジュールハードウェア - FAS8200 を交換します</block>
-  <block id="82430a05d3820aeaeb756230e94ee643" category="doc">オンボード暗号化 - FAS8200 を確認します</block>
   <block id="8351404e0633e21cf67cb22047391a59" category="doc">ブートメディアの交換 - FAS8200 の概要</block>
   <block id="f8a35054c2c3b7ffbacd941c8bc38831" category="doc">ハードウェア交換 - FAS8200</block>
   <block id="9bd3c449bc91b7e2a90bbc21bfbd5dcb" category="doc">コントローラモジュールハードウェア AFF A250 を交換してください</block>
@@ -8393,9 +8244,7 @@
   <block id="c1493a32213b959f5c9f8be86dfb9960" category="section-title">ドライブドロワーを取り付けます</block>
   <block id="02b9f44accc14d7238a1f0607ea50e30" category="section-title">ケーブルチェーンを取り付けます</block>
   <block id="3fa677b8ecb97b0ae0d14f9ded5ed49a" category="doc">障害のあるコントローラ FAS500f をシャットダウンします</block>
-  <block id="0d924155857f10f70fcab7b719b30403" category="summary">障害ノードをシャットダウンする前に、システムで NetApp Volume Encryption \ （ NVE \ ）または NetApp Storage Encryption \ （ NSE \ ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。</block>
   <block id="a27042b0e01fb9b4136d2de6e8c1db73" category="doc">オンボード暗号化キー FAS500f を確認します</block>
-  <block id="da85ea64fba60265c821242ceefcb18c" category="list-text">このコマンドの出力に &lt;lno-DARE&gt; または &lt;1Ono-dARE&gt; が表示される場合は、システムが NVE をサポートしていないので、コントローラのシャットダウンに進みます。障害ノードをシャットダウンする前に、システムで NetApp Volume Encryption （ NVE ）または NetApp Storage Encryption （ NSE ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。</block>
   <block id="ee2afac6b0f5165d1fc3096864ac9a41" category="doc">シャーシ交換の概要 - FAS500f</block>
   <block id="2bf23db896fc6ece8a7fd4c8db50ab7d" category="doc">コントローラモジュールの交換 - FAS500f の概要</block>
   <block id="609f905dd4d82082470b920d9a7de394" category="doc">コントローラモジュールハードウェア FAS500f を交換してください</block>
@@ -8410,7 +8259,6 @@
   <block id="b5c7e371c94b117279a0ebbc15ea8bf3" category="doc">ブートメディア AFF A700s を交換してください</block>
   <block id="6f932d5d73e623ce4a8447916188b6ea" category="doc">コントローラモジュールハードウェア - AFF A200 を交換してください</block>
   <block id="85b7f3e764e39327360545670dcedbf3" category="doc">コントローラモジュールの交換の概要 - AFF A200</block>
-  <block id="6652fbd1cfc662871893088153cbbc80" category="doc">障害ノード AFF A200 をシャットダウンします</block>
   <block id="2472604fcc7ccf02f05c6c66afaacc6c" category="doc">ブートメディアの交換の概要 - AFF A200</block>
   <block id="5dfe4c7eb319ce6f2ebfab2e157e0c1b" category="doc">シャーシの交換の概要 - AFF A200</block>
   <block id="5fbbe4b96a5266b936c056caa3466c60" category="doc">設定 AFF A200 を復元して確認します</block>
@@ -8436,4 +8284,257 @@
   <block id="059d31543d448499bd1a9c454a8d1ebb" category="sidebar">Cisco 9336C-FX2</block>
   <block id="1c87a984d0a1c6881c9703209fd4341c" category="sidebar">Cisco 9336-FX2 （共有構成</block>
   <block id="237aba816839b6ef546c40514ce24efe" category="sidebar">NetApp CN1610 スイッチ</block>
+  <block id="21a759f002cfc3385b168953dde9a34e" category="summary">障害のあるコントローラをリカバリイメージからブートするための手順 は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。</block>
+  <block id="825f13ad9fc8dc2bdd837adbced6f40f" category="paragraph">障害のあるコントローラをリカバリイメージからブートするための手順 は、システムが 2 コントローラの MetroCluster 構成かどうかによって異なります。</block>
+  <block id="238e9bea2bdd4f731b75d630cdf207a3" category="list-text">正常なコントローラを advanced 権限レベルに設定します :'set -privilege advanced</block>
+  <block id="9d237c44d908f71fb6254a95480574a2" category="list-text">コントローラを admin レベルに戻します :'set -privilege admin</block>
+  <block id="09224cb7028edd32132ee821e0073685" category="list-text">コントローラの再起動を求めるプロンプトが表示されたら 'y' を押します</block>
+  <block id="324e677465a3eca81c578dca79975d76" category="list-text">コントローラに LOADER プロンプトを表示します。</block>
+  <block id="da3aca27b9eb9a6e192b169e434a93ae" category="list-text">パートナーコントローラにログインします。</block>
+  <block id="fd8f15b053a3b35d3aaa40b5f46c7fbc" category="list-text">storage failover show コマンドを使用して ' ターゲット・コントローラがギブバック可能な状態になっていることを確認します</block>
+  <block id="5902a3ce474984c1a3dac5ba814ff133" category="list-text">パートナーコントローラにコンソールケーブルを接続します。</block>
+  <block id="432fbc80d952a560e7d764411dacca12" category="list-text">storage failover giveback -fromnode local コマンドを使用して、コントローラをギブバックします。</block>
+  <block id="8af929f5f2bb65d4fe36d9188a257bba" category="list-text">コンソール・ケーブルを修復されたコントローラに移動し 'version -v コマンドを実行して ONTAP のバージョンを確認します</block>
+  <block id="3a11addb86720d7891a7b14fea7f4776" category="paragraph">障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。</block>
+  <block id="22a3fad7c3cfdd379a652e4aa08aa70e" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="1baf9f7ecc4554f61d6168e4897ea002" category="inline-link-macro-rx"></block>。</block>
+  <block id="04b13459c31bdc128c187f2b882c3d74" category="list-text">正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false</block>
+  <block id="087b01deb1bef7c8b4ffe6fe81283666" category="list-text">障害のあるコントローラに LOADER プロンプトを表示します。</block>
+  <block id="ebc5673f419bc9da94f2c2f001aaf3ff" category="cell">障害のあるコントローラの表示</block>
+  <block id="966128cd96d65546b8f10085658600df" category="paragraph">正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _</block>
+  <block id="ecf5a2418096a3bd4f4e05f201a5c846" category="paragraph">障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。</block>
+  <block id="0c2cb7a10e04116783dbfedc59540a50" category="paragraph">障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをスイッチオーバーする必要があります。</block>
+  <block id="230cc8b63d72a2bf47b7c87ead7ab0b8" category="list-text">正常なコントローラに電力を供給するために、この手順 の最後で電源装置をオンのままにしておく必要があります。</block>
+  <block id="eec0e5f9d553c7b70402acd4568f1ec7" category="list-text">MetroCluster ステータスをチェックして、障害のあるコントローラが正常なコントローラに自動的にスイッチオーバーしたかどうかを確認します。「 MetroCluster show 」</block>
+  <block id="4176d047c40d8635a978efe76111589d" category="cell">障害のあるコントローラの状況</block>
+  <block id="bc926a90924e14c99dbad976cbc306f6" category="paragraph">正常なコントローラから計画的なスイッチオーバー操作を実行します : MetroCluster switchover</block>
+  <block id="8377db96ff49e2b3bab4737836a8e0ce" category="paragraph">コントローラ --permalink ： A300 / controller-replace-move-hardware.html サイドバー：サイドバーキーワード AFF A300 、コントローラモジュールハードウェアの移動：「コントローラモジュールハードウェアを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。」 --=Controller モジュールを交換してください - AFF A300 ：アイコン : imagesdir ： ../media/</block>
+  <block id="c4d9687f431492e0a90b422288606306" category="paragraph">コントローラモジュールハードウェアを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。</block>
+  <block id="5882cd2f55c4bcf825c0675d56d4677a" category="list-text">HA 構成でメンテナンスモードに切り替えたときに表示される、正常なコントローラが停止したままであることの確認を求めるプロンプト。これらのプロンプトには「 y 」と入力できます。</block>
+  <block id="6444f932b3d3398ef847475f65dde87a" category="paragraph">構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。</block>
+  <block id="399f225e1b570ae91edafe38ed1e3467" category="list-text">各コントローラがブートを開始したら 'Press Ctrl-C for Boot Menu' というメッセージが表示されたら 'Ctrl+C キーを押して ' ブートプロセスを中断します</block>
+  <block id="1082bfd13ce3c25ccfc85ed699b54126" category="paragraph">診断手順のコマンドは、すべてコンポーネントを交換するコントローラから実行します。</block>
+  <block id="a9aa9ee572e50473b1c62b2a894e2043" category="list-text">作業をするコントローラに LOADER プロンプトが表示されていない場合は、次の手順を実行します。</block>
+  <block id="2f550a4de949e9364b8ac6aefff7f6b7" category="list-text">コントローラが保守モードでブートしたら、コントローラを停止します</block>
+  <block id="e467309a2d5b6f98a98b6db8bed54bfc" category="list-text">HA 構成でメンテナンスモードに切り替えたときに表示される、正常なコントローラが停止したままであることの確認を求めるプロンプト。</block>
+  <block id="9130288fde26913b149c87c0c3f09798" category="paragraph">コントローラに LOADER プロンプトが表示されます。</block>
+  <block id="e98eb54c273dabf46f95d865ffe06863" category="list-text">LOADER プロンプトからコントローラをブートします</block>
+  <block id="ff8f74aeadb5ed14c3562a83de710ce2" category="list-text">コントローラを通常動作に戻します。</block>
+  <block id="72b23f149d410394a99402b17b524532" category="cell">コントローラの構成</block>
+  <block id="526e7908f5d2d796c1fb3cb3bcb64b9c" category="list-text">障害のあるコントローラが HA ペアの一部である場合は、正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify -node local-auto-giveback false</block>
+  <block id="991329d4a586a51cc0b3ddeb5fcff6ed" category="paragraph">+ 障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。</block>
+  <block id="344b944036d11848a4eeafa033713d79" category="list-text">システムが HA ペアに含まれている場合、正常なコントローラが交換するコントローラをテイクオーバーできる必要があります（この手順 では「障害のあるコントローラ」と呼びます）。</block>
+  <block id="e92b8f690c724e2a393908da2704794c" category="paragraph">この手順 を使用する場合は、 4 ノードまたは 8 ノードの MetroCluster 構成のコントローラの交換用手順 が HA ペアの場合と同じであることに注意してください。障害が HA ペアに制限されているため、 MetroCluster 固有の手順は必要ありません。また、 storage failover コマンドを使用すると、交換時に無停止操作を行うことができます。</block>
+  <block id="915ea02a4ae87fc1e12a79bc77d53d29" category="list-text">この手順 には、システムの構成に応じて、 _replacement _ controller にドライブを自動的に再割り当てする手順、または手動で再割り当てする手順が含まれています。</block>
+  <block id="c72dc8cc96be75f0f7be2979a08e7a3c" category="list-text">この手順 では、障害のあるコントローラから _replacement _ controller にブートデバイスが移動され、古いコントローラモジュールと同じバージョンの ONTAP で _replacement _ controller がブートします。</block>
+  <block id="93693d8b94899fb843897083df3dfad1" category="list-text">impaired_controller は、交換するコントローラです。</block>
+  <block id="8fc18417b34debbf06d43a8004e7af83" category="list-text">replacement _controller は、障害のあるコントローラを交換する新しいコントローラです。</block>
+  <block id="adb78e1174ae799e5d64ba90539a8d1a" category="list-text">healthy_controller はサバイバーコントローラです。</block>
+  <block id="d1e26bcc4cbc247391931bd56755d0de" category="list-text">コントローラのコンソール出力を必ずテキストファイルにキャプチャする必要があります。</block>
+  <block id="8e7b0fd27b2fda4467ea9b412f6b1995" category="list-text">show date コマンドを使用して ' 正常なコントローラの日付と時刻を確認します</block>
+  <block id="e09ab6999180d4e7f9a47f740144761f" category="list-text">ターゲットコントローラの LOADER プロンプトで、日時を確認します。</block>
+  <block id="988240067960851699de08084d42c5e5" category="list-text">ターゲットコントローラの日付と時刻を確認します。</block>
+  <block id="b35de7de64d5c3d839898e892a43a0c4" category="list-text">LOADER プロンプトで「 bye 」と入力して、 PCIe カードおよびその他のコンポーネントを再初期化し、コントローラをリブートさせます。</block>
+  <block id="c06b17164dae22b3eba23ea33792b57c" category="list-text">ストレージをギブバックして、コントローラを通常の動作に戻します。 storage failover giveback -ofnode impaired_node_name _`</block>
+  <block id="27be5ff3320dd506741c0dbef8e1a1d9" category="list-text">コンソールケーブルをターゲットコントローラに接続します。</block>
+  <block id="58381527d135a27a6bde4b5bd05e7a8a" category="list-text">LOADER プロンプトで「 boot_ontap 」コマンドを使用して、コントローラをブートします。</block>
+  <block id="be909ce65bf8d6df63809bd8c8368b35" category="paragraph">コントローラをブートメニュー「 boot_ontap menu 」からブートします</block>
+  <block id="bba0a4490b9b5d901440b4efe0a7eb1e" category="list-text">というメッセージが表示されたら、 [y/n] を待たずにこのコントローラを停止しますか？「 y 」と入力します</block>
+  <block id="1510bdf514dfae1723f7a1f6b0ff03db" category="list-text">パートナーコントローラにコンソールケーブルを接続し、 admin としてログインします。</block>
+  <block id="9b1d1f16f124136fae5f19f7571be4e8" category="list-text">コンソールケーブルをターゲットコントローラに接続します。</block>
+  <block id="e5a640f18574a8775849c862d1047203" category="list-text">パートナーコントローラにコンソールケーブルを接続します。</block>
+  <block id="3626acf8f3fb043db8b4ec1fa9c88689" category="list-text">storage failover giveback -fromnode local コマンドを使用して、ターゲットコントローラをギブバックします。</block>
+  <block id="fbca918423039255e9a6e82d918f66a5" category="list-text">クラスタシェルプロンプトで、「 net int show -is-home false 」コマンドを入力し、ホームコントローラとポートにない論理インターフェイスを表示します。</block>
+  <block id="c1f75c987a465b1cc4e36d81f98dc0f6" category="list-text">コンソール・ケーブルをターゲット・コントローラに移動し 'version -v コマンドを実行して ONTAP のバージョンを確認します</block>
+  <block id="22a48d4647a1c5395be2a1c92346ddfe" category="list-text">コンソール・ケーブルをパートナー・コントローラに移動し ' storage failover giveback -fromnode local-only CFO -aggregates true local コマンドを使用してターゲット・コントローラ・ストレージをギブバックします</block>
+  <block id="57280142f53f2468b01205668a497bd7" category="list-text">コンソール・ケーブルをターゲット・コントローラに移動し 'version -v コマンドを実行して ONTAP のバージョンを確認します</block>
+  <block id="4e413e090ef125caf56dbe5368109175" category="list-text">対象となるコントローラが LOADER プロンプトに表示されていない場合は、コントローラをリブートします。「 halt</block>
+  <block id="a6662115bfcf9aca738911273292362c" category="list-text">コントローラにハードウェアの問題がないことを確認します。「 sldiag device status -long-state failed. 」というメッセージが表示されます</block>
+  <block id="eebf63bcf7fcba78ebd7e303619a4e75" category="list-text">各コントローラをメンテナンスモードでブートします。</block>
+  <block id="0ac47fa5e6b32bbd32bc23dda31f6f48" category="paragraph">コントローラは、シャーシに完全に取り付けられるとすぐにブートを開始します。</block>
+  <block id="742cf561af7f07544ddf9f3e66121452" category="paragraph">このメッセージが表示されない場合は、 Ctrl+C キーを押し、メンテナンスモードでブートするオプションを選択してから、コントローラを停止して LOADER プロンプトを表示します。</block>
+  <block id="c8dc5733d35c41c184dc2e9c60fd8a12" category="admonition">設定するターゲットポートは、正常なコントローラから障害コントローラへの通信に使用するポートで、 var ファイルシステムのリストア時にネットワーク接続で使用します。このコマンドでは e0M ポートを使用することもできます。</block>
+  <block id="8db7a5b6ece2af3b075639e41512d618" category="section-title">オプション 1 ：コントローラをシャットダウンします</block>
+  <block id="b5d03ef67a171c85bf4bd311e2fd75df" category="paragraph">シャーシ内のコントローラまたはコントローラを新しいシャーシに移動する前に、シャットダウンする必要があります。</block>
+  <block id="c53eb92ae6b734f0f5b5e257acb152cb" category="list-text">コントローラが 3 台以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで資格とヘルスについて「 false 」と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="1baf9f7ecc4554f61d6168e4897ea002" category="inline-link-macro-rx"></block>。</block>
+  <block id="93ff4b8a35c5f08ad3e97fdc9983948e" category="paragraph">クラスタに 2 台のコントローラがあります</block>
+  <block id="a0540c64b7001eb9739a6eed390808ac" category="paragraph">クラスタ内に 3 台以上のコントローラがあります</block>
+  <block id="853a8c6f8383ee1dc5f3826af9ff6797" category="list-text">停止を確認するプロンプトが表示されたら 'y を押してコントローラを停止します system node halt -node _node_name _`</block>
+  <block id="253a50052b60be1951a606aa7c311ba2" category="admonition">シャーシを交換する前にシステムのクリーンシャットダウンを実行し、不揮発性メモリ（ NVMEM / NVRAM ）内の書き込み前のデータが失われないようにする必要があります。システムによっては、 NVMEM / NVRAM の LED の点滅は、ディスクに保存されていないデータが NVMEM / NVRAM にあることを示しています。コントローラをリブートし、この手順 の最初からやり直してください。コントローラのクリーンシャットダウンに繰り返し失敗すると、ディスクに保存されていないデータが失われる可能性があります。</block>
+  <block id="8373aa3aac3c8f18564812bfcb55615a" category="list-text">該当する場合は、 2 台目のコントローラを停止して、 HA ペア構成でクォーラムエラーメッセージが表示されないようにします。「 system node halt -node _second_node_name -ignore-quorum -warnings true -skip-lif-migration-before-shutdown true 」</block>
+  <block id="4c10c8d9f18f0c8ba6fc3ea32f7beee4" category="list-text">HA 構成の場合は、 2 台目のコントローラで同じ手順を繰り返します。</block>
+  <block id="6d21dbcd6d30fc2426dd0b077d719da5" category="summary">障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。</block>
+  <block id="d1614290531967ae3b3623d71b4ed961" category="paragraph">障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にして、実行中の ONTAP のバージョンを確認する必要があります。</block>
+  <block id="dcaee2dcae546228e31a0898bd961734" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="5f63b18eda466634ee235fd0cb5a9d6a" category="inline-link-macro-rx"></block>。</block>
+  <block id="6d4079af860d745f44d13bfe9834115d" category="list-text">障害のあるコントローラのステータスを確認します。</block>
+  <block id="6f0786e478994e04512bb55e945ab79c" category="list-text">障害のあるコントローラがログインプロンプトに表示されている場合は 'admin' としてログインします</block>
+  <block id="1f543f99cb43496b3a35f9786089c979" category="list-text">障害のあるコントローラが LOADER プロンプトに表示され、 HA 構成の一部である場合は、正常なコントローラに「 admin 」としてログインします。</block>
+  <block id="52172eb9e905726c940b5894e2ccc281" category="list-text">障害のあるコントローラがスタンドアロン構成で LOADER プロンプトが表示されている場合は、にお問い合わせください <block ref="fbe7ba585c90dfc99f38e8779c97c5f3" category="inline-link-macro-rx"></block>。</block>
+  <block id="efed560995ba912dfc2aa959620707ff" category="list-text">「 version -v 」コマンドを使用して、障害のあるコントローラ上でシステムが実行している ONTAP のバージョンを確認します。アップしている場合はパートナーコントローラ上で、障害のあるコントローラがダウンしている場合はパートナーコントローラ上で確認します。</block>
+  <block id="24b6214418480e5248eaed7a69ead79c" category="list-text">障害のあるコントローラが HA 構成の一部である場合は、正常なコントローラからの自動ギブバックを無効にします。 storage failover modify -node local-auto-giveback false または storage failover modify -node local-auto-giveback -after-panic false</block>
+  <block id="5a9f897d2d5283081378f66d6ed3cb7a" category="paragraph">障害のあるコントローラをシャットダウンする前に、システムで NetApp Volume Encryption （ NVE ）または NetApp Storage Encryption （ NSE ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。</block>
+  <block id="a66e142cebcfd6f8d676e487cf4cc04c" category="list-text">障害のあるコントローラにコンソールケーブルを接続します。</block>
+  <block id="d13e2b9934c9ee03ca8acee53a7c7ab8" category="list-text">NVE と NSE が設定されていない場合は、障害のあるコントローラを安全にシャットダウンできます。</block>
+  <block id="a4dd34bde59d47a4d8ab4374389ea809" category="list-text">[Restored （復元） ] 列に [yes] と表示され、すべてのキー管理ツールに [Available] と表示されている場合は、障害のあるコントローラをシャットダウンしても安全です。</block>
+  <block id="215eb27cc249e5b8e5b527e07342268c" category="list-text">障害のあるコントローラをシャットダウンします。</block>
+  <block id="b0ca95eab963c35c3d977c396c4acc7d" category="list-text">コントローラは安全にシャットダウンできます。</block>
+  <block id="9e81e760541928935bc75be3ec2823a3" category="list-text">コントローラは安全にシャットダウンできます。</block>
+  <block id="dbb06a74442cb70fc4d49f092b265be8" category="paragraph">障害のあるコントローラをシャットダウンする前に、システムで NetApp Volume Encryption （ NVE ）または NetApp Storage Encryption （ NSE ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。</block>
+  <block id="d592a26ccf1ea8ee5faa30f916fd2fb6" category="list-text">NVE と NSE が設定されていない場合、 NSE キーでドライブが保護されていないため、障害のあるコントローラを安全にシャットダウンできます。</block>
+  <block id="bc06dd585ab0c8107e022844d1397b0b" category="list-text">「キー・マネージャ」タイプに「 external 」と表示され、「 Restored 」列に「 yes 」と表示されている場合は、障害のあるコントローラをシャットダウンしても安全です。</block>
+  <block id="f5febbe164036410d93a5fc97b5bb033" category="paragraph">NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。</block>
+  <block id="099c2029bb447e3da034bae16f902b90" category="cell">障害のあるコントローラが表示された場合</block>
+  <block id="ec47857c388eff31e9962f4f2e2ce2e5" category="paragraph">正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name</block>
+  <block id="653275a6740924b891457d92a9cbc8ef" category="section-title">手順 1 ：コントローラをシャットダウンします</block>
+  <block id="e7715fbdf353439bc04c101e641a6a00" category="list-text">保守対象のコントローラが LOADER プロンプトに表示されていない場合は、コントローラをリブートします。「 system node halt -node node_name 」</block>
+  <block id="736818ee29ba3143ee0a9e06231deb0e" category="list-text">正常なコントローラは、交換するコントローラをテイクオーバーできる必要があります（この手順 では「障害のあるコントローラ」と呼びます）。</block>
+  <block id="dc034442a42b074e0609ba09ebc77d0e" category="paragraph">NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。</block>
+  <block id="af645d133cdcbcc30956c0bb802a4d34" category="list-text">画面に表示される障害が発生したコントローラの IP アドレスをメモします。</block>
+  <block id="c619d3b97fd49137c962a0b53f5ded67" category="list-text">advanced 権限レベルのパートナーコントローラから、前の手順で記録した IP アドレスを使用して設定の同期を開始します。「 system node restore-backup -node local-target-impaired_node_name _ip_address _`</block>
+  <block id="b070946475ca76a9891046ef46e3262c" category="list-text">復元に成功した場合は、復元されたコピーを使用するかどうかを確認するメッセージが表示されたら、障害のあるコントローラの「 y 」を押します。</block>
+  <block id="0d1483a76a1f71437aa9197bfa562122" category="list-text">バックアップ手順 が正常に完了したことを確認したら 'y' を押し ' プロンプトが表示されたら 'y' を押してコントローラを再起動します</block>
+  <block id="7f5d701a64318868c16d00d43b911d93" category="list-text">コントローラをリブートします。</block>
+  <block id="dc2fb67295c2f173a720e03d73f0e627" category="list-text">リブートされた障害のあるコントローラに「 Waiting for giveback... 」というメッセージが表示されたら、正常なコントローラからギブバックを実行します。</block>
+  <block id="ff02ca9b372ecd5e7de683ed182d26e4" category="paragraph">障害のあるコントローラに「 Waiting for giveback... 」というメッセージが表示されたら、正常なコントローラからギブバックを実行します。</block>
+  <block id="9bdcceabcaeaceb62327dbad774d83fd" category="list-text">正常なコントローラから： storage failover giveback -ofnode partner_node_name</block>
+  <block id="7ca421ecacbe47c97cfdc6f02bceeb1b" category="paragraph">障害のあるコントローラはストレージをテイクバックしてブートを完了し、その後リブートして再び正常なコントローラによってテイクオーバーされます。</block>
+  <block id="3228093fe4dbdd24659a9a88f379aa09" category="list-text">正常なコントローラで advanced 権限レベルを終了します。</block>
+  <block id="6e831181b071042488de60792bba5661" category="paragraph">HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。_replacement _controller をブートしたときにシステム ID の変更を確認し、その変更が実装されたことを確認する必要があります。</block>
+  <block id="16d0a8dc4c1c1d9b90797e5493036465" category="list-text">_replacement _controller が Maintenance モードになっている場合 (`*&gt;` プロンプトが表示されている場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます</block>
+  <block id="38c6311b7d9271edd32d4452d105b150" category="list-text">システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は 'boot_ontap `` を」と入力して ' コントローラをブートします</block>
+  <block id="fd5e721decb7ad09b3247ff55a584c6a" category="list-text">_replacement _controller コンソールに Waiting for giveback... というメッセージが表示されるまで待ち、正常なコントローラから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show</block>
+  <block id="f3c1f72d4855105033eafe078ecc921c" category="paragraph">コマンド出力には、障害のあるコントローラでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。</block>
+  <block id="2b740998f7a4b1a34ad6d12ae61f81fd" category="list-text">正常なコントローラから、コアダンプがすべて保存されたことを確認します。</block>
+  <block id="df0e46df74ce50bde919f4a670392378" category="list-text">コントローラをギブバックします。</block>
+  <block id="af998da379a6b1d6bab64a94ebad8ee0" category="list-text">正常なコントローラから、交換したコントローラのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name _`</block>
+  <block id="e83f2f623a5ecd01a2bc3c69f3cce4cb" category="paragraph">_replacement _controller はストレージをテイクバックしてブートを完了します。</block>
+  <block id="1cd605139bf377c8532c404fdbca04f0" category="paragraph">replacement _controller に属するディスクには、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。</block>
+  <block id="10f72301134f1f2b78e11983dd3c4654" category="list-text">各コントローラに、想定されるボリュームが存在することを確認します。 vol show -node node-name</block>
+  <block id="e5fb91f466e4f9bded3cae7f56b2a15e" category="list-text">リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラで storage failover modify -node replacement-node-name -onreboot true を有効にします</block>
+  <block id="71f1fa980323b48bfcd7c23a6851e346" category="list-text">パートナーコントローラにコンソールケーブルを接続し、「 admin 」としてログインします。</block>
+  <block id="6fb459fd46b17c9a37607abf2db84056" category="section-title">手順 1 ：交換用コントローラのライセンスを ONTAP にインストールする</block>
+  <block id="3b3499594ea137775f7c8cecc49f8655" category="paragraph">* コントローラが HA ペアに含まれている場合は、ギブバックを実行します。 storage failover giveback -ofnode replacement_node_name _`</block>
+  <block id="cb26d26c354a0f934343a4ed5435dc22" category="paragraph">* コントローラがスタンドアロン構成の場合 * は、次の手順に進みます。対処は不要です。</block>
+  <block id="51e6a2fb5c6f27756e90e2666efd984d" category="paragraph">NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。</block>
+  <block id="d1342671e7a1aeffea6df3cd0214be86" category="list-text">この手順はシステムの停止を伴います。2 台のコントローラからなるクラスタではサービスが完全に停止し、マルチノードクラスタでは部分的に停止します。</block>
+  <block id="4fa4535552a76ba6abb695db42b48161" category="paragraph">この手順 を使用する必要がある場合は、 4 台または 8 台のコントローラ MetroCluster 構成のコントローラの交換用手順 は HA ペアの場合と同じであることに注意してください。障害が HA ペアに制限されているため、 MetroCluster 固有の手順は必要ありません。また、 storage failover コマンドを使用すると、交換時に無停止操作を行うことができます。</block>
+  <block id="1c35b5fd0eb2c66f98019f6d2ea253e2" category="paragraph">PDF 版セットアップガイドを使用して、新しいシステムを設置してセットアップできます。。 <block ref="5ad5e3145183bec8ce765d99b2db775a" category="inline-link-macro-rx"></block> ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
+  <block id="f360cbc0b1776cef715c46bbf963f211" category="paragraph">コントローラー --permalink:fas8200/ bootmedia-encryption-preshutdown-checks.html サイドバー : サイドバーキーワード :fas8200 、オンボード暗号化キーのシャットダウン前チェック概要 : 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 --=Checking onboard encryption-FAS8200 ： icons ： imagesdir ： ../media/</block>
+  <block id="c83b964c98e24aa342fa8069ffd85dd0" category="list-text"><block ref="c83b964c98e24aa342fa8069ffd85dd0" category="inline-link-macro-rx"></block></block>
+  <block id="f51c8858085d7dcfe4d79d9774f8270d" category="paragraph">_replacement _controller をブートしたときにシステム ID の変更を確認し、その変更が実装されたことを確認する必要があります。</block>
+  <block id="58d1979204cdde4ca641ddc56ae5fe91" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は、 _replacement _controller の LOADER プロンプトから「 y 」と入力し、コントローラをブートします。「 boot_ontap 」</block>
+  <block id="4d3408827df16f2063082b26e489e785" category="summary">障害のあるコントローラモジュールをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。</block>
+  <block id="f3ccc6a1c062dbba61f459b0e8b57597" category="list-text">SAN システムを使用している場合は、障害のあるコントローラの SCSI ブレードに関するイベントメッセージ（ event log show ）を確認しておく必要があります。</block>
+  <block id="d9d59ddb1bc0ff1000e4664413e713fe" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は、 _replacement _controller の LOADER プロンプトから「 y 」と入力し、コントローラをブートします。</block>
+  <block id="6887fe4f6ef917daf3d3f454ae837e99" category="list-text">システムが MetroCluster 構成になっている場合は ' コントローラのステータスを監視します MetroCluster node show</block>
+  <block id="e8d2a192788fc79eb80ab29e07304094" category="paragraph">MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各コントローラの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster node show -fields node-systemid' コマンドの出力には、 MetroCluster 設定が通常の状態に戻るまで古いシステム ID が表示されます。</block>
+  <block id="82f6c604031bc8c9d9a996a31fa2e842" category="list-text">コントローラが MetroCluster 構成になっている場合は、 MetroCluster の状態に応じて、元の所有者がディザスタサイトのコントローラである場合に DR ホーム ID フィールドにディスクの元の所有者が表示されることを確認します。</block>
+  <block id="83df237f35401e5686540721c993131c" category="list-text">replacement _controller は、ディザスタサイトのディスクの現在の所有者です。</block>
+  <block id="ce6027c9ce6b680c0adbb4a4d26235ed" category="list-text">システムが MetroCluster 構成になっている場合は、各コントローラが構成されていることを確認します。「 MetroCluster node show -fields configurion-state 」</block>
+  <block id="a99f211848e0a3fa987df05f364dcc0b" category="doc">コントローラをシャットダウンします（ AFF A250 ）</block>
+  <block id="3df4b609e8276258189914063ffb17c2" category="list-text">これらの手順のコマンドを正しいコントローラに適用することが重要です。</block>
+  <block id="6ecaf183574ece325cced3bb483dfdf9" category="list-text">impaired_node は、保守を実行しているコントローラです。</block>
+  <block id="d5e5a42c3659480b5bd0d7fe962a3e0d" category="list-text">healthy_node は、障害のあるコントローラの HA パートナーです。</block>
+  <block id="aae78f4a3d47a08dddca98a632d4a75f" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタでクォーラムを使用していない場合や、正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。</block>
+  <block id="852ccbca31b38b90e5621b15b3d30e1b" category="paragraph">障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _ 」障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C を押し、「 y 」と入力します。</block>
+  <block id="fdd4547d2c765390cc53d47d00b7ed31" category="list-text">保守対象のコントローラが LOADER プロンプトに表示されていない場合は、コントローラをリブートします。「 system node halt -node _node_name _</block>
+  <block id="bf333756fca94003818a0db8ced6f7d9" category="list-text">ストレージをギブバックして、コントローラを通常の動作に戻します。 storage failover giveback -ofnode `_impaired_node_name _`</block>
+  <block id="855366b23fbc8af0c5a01bb5529b380c" category="list-text">交換用の node_name は、障害のあるコントローラに交換する新しいコントローラです。</block>
+  <block id="ed5c161a1791c86ccb545adc60653369" category="paragraph">このメッセージが表示されない場合は、 Ctrl+C キーを押し、メンテナンスモードで起動するオプションを選択し、コントローラを停止して LOADER モードで起動します。</block>
+  <block id="aeb37e440c5f2e1087a4396fdd1d260b" category="paragraph">NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。</block>
+  <block id="c41b3a61f99c2acfc4df4b56cbc1ea35" category="section-title">オプション 2 ： 2 ノード MetroCluster 構成のコントローラをシャットダウンする</block>
+  <block id="1608b002e3cca4d10cc4ab135e0d2578" category="list-text">コントローラがメンテナンスモードでブートしたら、コントローラを停止します。</block>
+  <block id="1b5c5dedf8f50eb0bb4d148da7d3ebda" category="list-text">正常なコントローラを advanced 権限レベルに設定します。</block>
+  <block id="3aa5ba6c23dcd3a8c88fb26dd933a5e4" category="list-text">コントローラを admin レベルに戻します。</block>
+  <block id="34787acdddb9fc6fe721e719a262d6aa" category="list-text">コントローラの再起動を求めるプロンプトが表示されたら '*y*' を押します</block>
+  <block id="ca305e69a315b30dad8d789c197489f9" category="doc">コントローラをシャットダウンします。 AFF C190</block>
+  <block id="29a2d452ed2d564c438c1ea95d20a0a8" category="list-text">作業をするコントローラに LOADER プロンプトが表示されていない場合は、コントローラをリブートします。</block>
+  <block id="4e8183e059c2de281c12f4e36b356634" category="list-text">コントローラにハードウェアの問題がないことを確認します。</block>
+  <block id="ab16b7659f1f3d151837f3f6574edbce" category="paragraph">コントローラモジュールを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。</block>
+  <block id="f9d753fddfdd4cf75bdcf826d545a576" category="list-text">impaired_controller は、メンテナンスを実行しているコントローラです。</block>
+  <block id="e4107ee9d71fad92265b6222f2822ad8" category="list-text">healthy_controller は、障害のあるコントローラの HA パートナーです。</block>
+  <block id="ecc93de5d9e6d1de2c8f307f37c933d1" category="list-text">_replacement _controller が Maintenance モードの場合（プロンプトに「 * &gt; 」が表示されている場合）は、 Maintenance モードを終了して、 LOADER プロンプトを表示します。</block>
+  <block id="1ece66f8bf58294a3a5da700df5daffe" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は、 _replacement _controller の LOADER プロンプトから「 * y * 」と入力し、コントローラをブートします。</block>
+  <block id="ad40e97175b514d2c81a91067ad04ed7" category="list-text">_replacement controller コンソールに Waiting for giveback... というメッセージが表示されるまで待ち、正常なコントローラから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。</block>
+  <block id="65ae07541c754093eda9cd898cf890f7" category="list-text">正常なコントローラから、交換したコントローラのストレージをギブバックします。</block>
+  <block id="2e02c080662f8fd550785b87be3c1144" category="list-text">想定されるボリュームが各コントローラに存在することを確認します。</block>
+  <block id="f7e34e40e37b03149dbadb73b8513476" category="list-text">リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラから有効にします。</block>
+  <block id="86c3969f421b58d4b4b270ed1fb7b003" category="section-title">手順 1 ：交換用コントローラのライセンスを ONTAP にインストールする</block>
+  <block id="2a0338d4b284b44bbd6e5b5a0e564e4f" category="paragraph">`image_name.tgz' がインストールされると ' 正常なコントローラからバックアップ構成 (var' ファイルシステム ) をリストアするように求めるプロンプトが表示されます</block>
+  <block id="922768ec58831cabe5b129a1aa26dc78" category="paragraph">コントローラのリブート後にシステムの使用を開始できます。</block>
+  <block id="fec1ee82d47382a6acadcb4104dd3ce3" category="paragraph">障害のあるコントローラに「 Waiting for giveback... 」というメッセージが表示されたら、正常なコントローラからギブバックを実行します。</block>
+  <block id="b93b2e31999c0ef2197b846adf6fd32d" category="list-text">正常なコントローラからギブバックを実行します。</block>
+  <block id="85e5c14e4c98322df87028e0cafd79a7" category="paragraph">これにより、障害のあるコントローラのアグリゲートおよびボリュームの所有権を正常なコントローラから障害のあるコントローラに戻すプロセスが開始されます。</block>
+  <block id="31cf13c61d40269ec7d8237264ca25ba" category="open-title">ほとんどのシステム</block>
+  <block id="5ab3b65334d9648ac44bf62025764ce2" category="section-title">手順 2 ：コントローラを取り外す</block>
+  <block id="f1eb9bf0f474a83bbe6d11b59f16da8c" category="list-text">ストレージをギブバックして、コントローラを通常の動作に戻します。「 storage failover giveback -ofnode impaired_node_name</block>
+  <block id="bced3f55c14cfa1d16ca32cbbb0b1d97" category="list-text">障害のあるコントローラを advanced 権限レベルに設定します。「 set -privilege advanced</block>
+  <block id="19e5239645b6945e8296ea6ae040ed4c" category="list-text">障害のあるコントローラを admin レベルに戻します :'set -privilege admin</block>
+  <block id="fc86636cc733253cec13dbbddcd9f251" category="list-text">障害のあるコントローラを再起動するよう求められたら 'y' を押します</block>
+  <block id="35e25520eae4191769a5f17749607c22" category="list-text">障害のあるコントローラに LOADER プロンプトを表示します。</block>
+  <block id="5d5be5511db4bca75b01ab22c4adf4ce" category="list-text">storage failover show コマンドを使用して ' ターゲットがギブバック可能な状態であることを確認します</block>
+  <block id="6895f6bac75ce22d9b20367054acb577" category="list-text">storage failover giveback -fromnode local コマンドを使用してコントローラをギブバックします。</block>
+  <block id="05de3ff101e97b558e9ecd1a48f59f80" category="list-text">構成に応じた手順 を使用して、コンソールケーブルを修復されたシャットダウンに移動するか、障害のあるコントローラをテイクオーバーします。を実行し、 version -v コマンドを実行して ONTAP のバージョンを確認します。</block>
+  <block id="c03d9a33e888c8ba0969d655b0bb1791" category="list-text">コントローラを通常動作に戻します。</block>
+  <block id="0b0ce175074093bb880164e8608f30ab" category="list-text">LOADER プロンプトで boot_ontap コマンドを使用してコントローラをブートします。</block>
+  <block id="c44f1e5dca108a88d3a5c0122cfaad60" category="list-text">パートナーコントローラにコンソールケーブルを接続し、 admin としてログインします。</block>
+  <block id="6c8465bcaf5ce5fddf9eade0934b0fcf" category="list-text">クラスタシェルプロンプトで、 net int show -is-home false コマンドを入力し、ホームコントローラとポートにない論理インターフェイスを表示します。</block>
+  <block id="3e18dc9be2b2d52bb3684dd323591a77" category="list-text">コンソールケーブルをパートナーコントローラに移動し、 storage failover giveback -fromnode local-only -cfo-aggregates true local コマンドを使用して、ターゲットコントローラストレージをギブバックします。</block>
+  <block id="68a1306a8c08262df17717b7309d7609" category="list-text">HA ペアのシステムの場合は、交換する NVRAM モジュールに関連付けられているコントローラをパートナーコントローラがテイクオーバーできる必要があります。</block>
+  <block id="1e27080aaa4839341247d89fa27230f6" category="list-text">障害のあるコントローラとは、メンテナンスを実行しているコントローラです。</block>
+  <block id="cb82be680779cb2f6fe87d5303395ca3" category="list-text">正常なコントローラとは、障害のあるコントローラの HA パートナーです。</block>
+  <block id="75058bf61b1188ee8304798f89ca02bf" category="paragraph">交換用コントローラのブート時にシステム ID の変更を確認し、変更が実装されたことを確認する必要があります。</block>
+  <block id="fa0bfd482c7a3a6dfc65930e176b0502" category="list-text">交換用コントローラがメンテナンス・モード（「 *&gt;」 プロンプトが表示されている）の場合は、メンテナンス・モードを終了して、 LOADER プロンプト「 halt 」に進みます</block>
+  <block id="ba6fae1de76d6230e1c74a17242ebf97" category="list-text">交換用コントローラの LOADER プロンプトからコントローラをブートし、システム ID の不一致によりシステム ID を上書きするように求められた場合は、「 y 」と入力します。</block>
+  <block id="a0d04de6e8774043ed7dd31ce11a9577" category="list-text">交換用コントローラのコンソールに Waiting for giveback... メッセージが表示されるまで待ち、正常なコントローラから新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show</block>
+  <block id="590ef635c433371eead20b940bf6c429" category="list-text">正常なコントローラから、交換したコントローラのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name</block>
+  <block id="4cd2ac4c22d2d6323c4f80d036ea5320" category="paragraph">交換用コントローラはストレージをテイクバックしてブートを完了します。</block>
+  <block id="5e0cea5d67aaa32c62721aadfacd5df4" category="paragraph">交換用コントローラに属するディスクには、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。</block>
+  <block id="11cd58ab2810de65be01109093020b63" category="list-text">交換用コントローラがディザスタサイトのディスクの現在の所有者である。</block>
+  <block id="3f0db9aa8dd4145d2c4b64ea3481303a" category="list-text">この手順 では、障害のあるコントローラから交換用コントローラにブートデバイスが移動され、交換用コントローラが古いコントローラモジュールと同じバージョンの ONTAP でブートするようになります。</block>
+  <block id="c679e8417b3c86837c70fa5e162e77a6" category="list-text">障害のあるコントローラとは、交換するコントローラです。</block>
+  <block id="df958dff87a8c819a8e0b81a1b306ead" category="list-text">交換用コントローラは、障害のあるコントローラに交換する新しいコントローラです。</block>
+  <block id="283fab4cea5d664827b937416e41a5e5" category="list-text">正常なコントローラがサバイバーコントローラです。</block>
+  <block id="92a410b1608886e36ab28b2f459ca694" category="list-text">HA 構成でメンテナンスモードに切り替えたときに、正常なコントローラが停止したままであることの確認を求めるプロンプトが表示される場合。</block>
+  <block id="e7e0acd4a94a610862553a655c0372a3" category="list-text">ターゲットコントローラをテイクオーバーします。 storage failover takeover -ofnode target_node_name</block>
+  <block id="0a7ae7a43062cf45861e620d40d10ab9" category="paragraph">テイクオーバーが完了すると、コンソール接続に、コントローラが LOADER プロンプトに表示されなくなります。</block>
+  <block id="f741156cf7f3ded008481322de2de820" category="list-text">LOADER プロンプトからコントローラをリブートします： bye _</block>
+  <block id="ff307501f6507919aa7c2196b367a42d" category="list-text">パートナーコントローラからコントローラをギブバックします。storage failover giveback -ofnode target_node_name</block>
+  <block id="cf261a4e73438cb00bd1e7a2fef7257c" category="list-text">各コントローラがブートを開始したら、「 Press Ctrl-C for Boot Menu 」というメッセージが表示されたら、 Ctrl+C キーを押してブートプロセスを中断します。</block>
+  <block id="e369528dc9f39a1a8434ddc29b3f9179" category="list-text">_replacement _controller が Maintenance モード (`*&gt;` プロンプトが表示されている ) の場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます</block>
+  <block id="9e5146e0b81862c730b75bdd6321c3d7" category="paragraph">MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各コントローラの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。「 MetroCluster node show -fields node-systemid` 」コマンドの出力には、 MetroCluster 設定が通常の状態に戻るまで古いシステム ID が表示されます。</block>
+  <block id="0443683677e40fa41815d2d7edef042b" category="doc">コントローラをシャットダウンします - FAS2600</block>
+  <block id="335674b10e9fdcf2eb342bef30970801" category="list-text">システムのシャーシにコントローラモジュールが 1 つしかない場合は、電源装置をオフにして、障害のあるコントローラの電源コードを電源から抜きます。</block>
+  <block id="b6ea0c6054b7f5b7832dafbb8468dc0f" category="paragraph">障害のあるコントローラをテイクオーバーまたは停止します。</block>
+  <block id="4571f480b4cb6246b64d91e6cacdf34c" category="list-text">HA ペアの場合は、正常なコントローラから障害のあるコントローラをテイクオーバーします。「 storage failover takeover -ofnode impaired_node_name _</block>
+  <block id="0ebf647b3184259131a8c1ffcdea60dc" category="list-text">システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _controller の LOADER プロンプトから「 y 」と入力し、コントローラをブートします</block>
+  <block id="e033b8601f70c600b73dc01580794ef1" category="summary">障害のあるコントローラをシャットダウンする前に、システムで NetApp Volume Encryption \ （ NVE \ ）または NetApp Storage Encryption \ （ NSE \ ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。</block>
+  <block id="8b97c720bb08aa0118f13600478e225f" category="list-text">このコマンドの出力に &lt;lno-DARE&gt; または &lt;1Ono-dARE&gt; が表示される場合は、システムが NVE をサポートしていないので、コントローラのシャットダウンに進みます。障害のあるコントローラをシャットダウンする前に、システムで NetApp Volume Encryption （ NVE ）または NetApp Storage Encryption （ NSE ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。</block>
+  <block id="4ca27b7e1f4aad146e9ddc45f9af0410" category="doc">コントローラ FAS500f をシャットダウンします</block>
+  <block id="2523dbc6a24be97a9e6522ed8cc0a2da" category="paragraph">permalink ： fas500f / bootmedia-replace.html サイドバー：サイドバーキーワード： fas500f 、 replace the boot media summary ：「 You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media 」 --=boot media-FAS500f:icons:imagesdir:../media/ を交換してください</block>
+  <block id="2a468fdd2649c2bddd5f46d0d16b08af" category="doc">障害のあるコントローラ AFF A700s をシャットダウンします</block>
+  <block id="abb3159815c7d305ec1a9697a5ec0fef" category="summary">コントローラモジュールを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。</block>
+  <block id="a3d92d77da598c2538c04939f7322e49" category="list-text">まだ接地されていない場合は、適切なコントローラを自分で指定します。</block>
+  <block id="a14d65aea00503e78c39b9273b38fa4e" category="paragraph">AFF A700s には、プライマリブートメディアとセカンダリブートメディアまたはバックアップブートメディアの 2 つのブートメディアがあります。これらのコントローラを障害のあるコントローラから _replacement _controller に移動し、 _replacement _controller 内のそれぞれのスロットに取り付ける必要があります。</block>
+  <block id="d0a414fa814c592a9fcc74f3aaae710b" category="paragraph">障害のあるコントローラをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name</block>
+  <block id="e160675dcb2bc6ebdb28380884820e26" category="paragraph">障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。</block>
+  <block id="fc9b566637bbcf2a8a0459c61e065654" category="doc">コントローラをシャットダウンします - AFF A700s</block>
+  <block id="499f2b4faaecf09ce2df725ed89b18e0" category="list-text">復元されたコピーを使用するかどうかを確認するメッセージが表示されたら 'y' を押し ' プロンプトが表示されたら 'y' を押してコントローラを再起動します</block>
+  <block id="018ed71ecc770af5fd2b70a8cffb7032" category="paragraph">ONTAP プロンプトから、コマンド「 system node halt -skip-lif-migration-before-shutdown true -ignore-quorum -warnings true -inhibit-takeover true 」を問題 できます。</block>
+  <block id="6be69aa70f07d7fff388bde809e5a5ae" category="list-text">システムが HA ペアに含まれている場合、正常なコントローラが交換するコントローラをテイクオーバーできる必要があります（この手順 では「障害ノード」と呼びます）。</block>
+  <block id="7343fb79026ff743ff1923cdd971a19f" category="list-text">この手順 では、障害のあるコントローラから交換用ノードにブートデバイスを移動して、古いコントローラモジュールと同じバージョンの ONTAP で _replacement _node がブートするようにします。</block>
+  <block id="a555f92ceccdc34af0d85dfd74c70d5b" category="list-text">impaired_node は、交換するコントローラです。</block>
+  <block id="5c3bec8c76d405798259f46c3a7883c5" category="list-text">replacement _node は、障害のあるコントローラと交換する新しいコントローラです。</block>
+  <block id="7963bf953f9aa62d4e259bcb0523a139" category="list-text">healthy_node は、サバイバーコントローラです。</block>
+  <block id="4d81c64d68f7eeb09101e0c5153a1dfa" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示されたら '_replacement _controller の LOADER プロンプトから 'y' と入力してコントローラをブートします「 boot_ontap</block>
+  <block id="ea22b9523724a1472e9a6474903abd69" category="list-text">リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラから有効にします。 storage failover modify -node _replacement-node-name __ onreboot true</block>
+  <block id="82b742085f424ab9b6b3cdea2a76ee8d" category="paragraph">2 台のコントローラがクラスタに含まれている場合</block>
+  <block id="f810400e8f6c8db0e850e30403d338b7" category="paragraph">クラスタに複数のコントローラがある場合</block>
+  <block id="3b1cae4630f47c8bafa2138c896b9e8d" category="list-text">storage failover giveback -fromnode local コマンドを使用して、コントローラをギブバックします</block>
+  <block id="1bab600dfeb5dd52557d4dc719a4016b" category="admonition">パートナーコントローラまたは古いコントローラモジュールと一致するように、 BIOS バージョンの _replacement _ controller をダウングレードしないでください。</block>
+  <block id="59127b0f44ecf00024ded8cfe59f8f12" category="paragraph">AFF A800 にはブートメディアデバイスが 1 つあります。障害のあるコントローラからコントローラを移動し、 _replacement _controller に取り付ける必要があります。</block>
+  <block id="842e14e3a23f8c1d39234a2a722507d3" category="list-text">自動ギブバックを無効にした場合は、再度有効にします。 storage failover modify controller local-auto-giveback true</block>
+  <block id="03163c4d180c5b6d6482efa550043cd8" category="doc">コントローラ AFF A800 をシャットダウンします</block>
+  <block id="f0623f3de563d7ac67a984a76c53803d" category="paragraph">NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。</block>
+  <block id="e0024964f985f74787a4ffc15850d67d" category="list-text">コントローラモジュールの固定フックが持ち上がるまで、コントローラモジュールをシステムの奥に押し込みます。固定フックを強く押し込んでコントローラモジュールを装着し、固定フックをコントローラモジュールのピンにかけてロックします。+ コントローラは、シャーシへの取り付けが完了するとすぐにブートを開始します。</block>
+  <block id="a924c157082c4974237a4bb347fd9228" category="list-text">Ctrl+C キーを押してブートプロセスを中断し、 LOADER プロンプトで停止します。+ このメッセージが表示されない場合は、 Ctrl+C キーを押し、メンテナンスモードでブートするオプションを選択して、コントローラを停止して LOADER プロンプトを表示します。</block>
 </blocks>

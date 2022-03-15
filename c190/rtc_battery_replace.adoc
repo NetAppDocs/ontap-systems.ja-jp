@@ -20,21 +20,21 @@ summary: コントローラモジュールのリアルタイムクロック（ R
 
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
-障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをテイクオーバーする必要があります。
+障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
 
-ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"^]。
+ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"^]。
 
 .手順
 . AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
 +
 次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
 
-. 正常なノードのコンソールから自動ギブバックを無効にします。「 storage failover modify – node local-auto-giveback false
-. 障害ノードに LOADER プロンプトを表示します。
+. 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
+. 障害のあるコントローラに LOADER プロンプトを表示します。
 +
 [cols="1,2"]
 |===
-| 障害ノードの表示 | 作業 
+| 障害のあるコントローラの表示 | 作業 
 
 
  a| 
@@ -54,11 +54,9 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
  a| 
 システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
  a| 
-正常なノードから障害ノードをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name _
+正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _
 
-+ 障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
-
-[+]
+障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
 
 |===
 
@@ -140,15 +138,15 @@ NOTE: コネクタの破損を防ぐため、コントローラモジュール�
 
 . コントローラの時刻と日付をリセットします。
 +
-.. 'how date ' コマンドを使用して ' 正常なノードの日付と時刻を確認します
-.. ターゲットノードの LOADER プロンプトで、日時を確認します。
+.. show date コマンドを使用して ' 正常なコントローラの日付と時刻を確認します
+.. ターゲットコントローラの LOADER プロンプトで、日時を確認します。
 .. 必要に応じて 'set date mm/dd/yyyy` コマンドで日付を変更します
 .. 必要に応じて、「 set time hh ： mm ： ss 」コマンドを使用して、時刻を GMT で設定します。
-.. ターゲットノードの日時を確認します。
+.. ターゲットコントローラの日付と時刻を確認します。
 
 
-. LOADER プロンプトで「 bye 」と入力して、 PCIe カードおよびその他のコンポーネントを再初期化し、ノードをリブートさせます。
-. ストレージをギブバックしてノードを通常動作に戻します。「 storage failover giveback -ofnode impaired_node_name _
+. LOADER プロンプトで「 bye 」と入力して、 PCIe カードおよびその他のコンポーネントを再初期化し、コントローラをリブートさせます。
+. ストレージをギブバックして、コントローラを通常の動作に戻します。 storage failover giveback -ofnode impaired_node_name _`
 . 自動ギブバックを無効にした場合は、再度有効にします。「 storage failover modify -node local-auto-giveback true 」
 
 

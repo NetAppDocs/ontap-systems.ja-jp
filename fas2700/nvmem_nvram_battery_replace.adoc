@@ -1,7 +1,7 @@
 ---
 permalink: fas2700/nvmem-nvram-battery-replace.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, replace, nvmem, battery, shut, down, impaired, controller, node, system, diagnostics, aggregates, metrocluster, configuration, reinstall 
+keywords: fas2700, aff a220, replace, nvmem, battery, shut, down, impaired, controller, controller, system, diagnostics, aggregates, metrocluster, configuration, reinstall 
 summary: システムの NVMEM バッテリを交換するには、コントローラモジュールをシステムから取り出して開き、バッテリを交換し、コントローラモジュールを閉じて交換する必要があります。 
 ---
 = NVMEM バッテリを交換します - AFF A220 および FAS2700
@@ -26,21 +26,21 @@ summary: システムの NVMEM バッテリを交換するには、コントロ�
 === オプション 1 ：ほとんどの構成
 
 [role="lead"]
-障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをテイクオーバーする必要があります。
+障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
 
-ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"^]。
+ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"^]。
 
 .手順
 . AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
 +
 次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
 
-. 正常なノードのコンソールから自動ギブバックを無効にします。「 storage failover modify – node local-auto-giveback false
-. 障害ノードに LOADER プロンプトを表示します。
+. 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
+. 障害のあるコントローラに LOADER プロンプトを表示します。
 +
 [cols="1,2"]
 |===
-| 障害ノードの表示 | 作業 
+| 障害のあるコントローラの表示 | 作業 
 
 
  a| 
@@ -60,19 +60,17 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
  a| 
 システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
  a| 
-正常なノードから障害ノードをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name _
+正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _
 
-+ 障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
-
-[+]
+障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
 
 |===
-. 障害ノードが HA ペアの一部である場合は、正常なノードのコンソールから自動ギブバックを無効にします。「 storage failover modify -node local-auto-giveback false
-. 障害ノードに LOADER プロンプトを表示します。
+. 障害のあるコントローラが HA ペアの一部である場合は、正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify -node local-auto-giveback false
+. 障害のあるコントローラに LOADER プロンプトを表示します。
 +
 [cols="1,2"]
 |===
-| 障害ノードの表示 | 作業 
+| 障害のあるコントローラの表示 | 作業 
 
 
  a| 
@@ -92,17 +90,17 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
  a| 
 システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
  a| 
-障害ノードをテイクオーバーまたは停止します。
+障害のあるコントローラをテイクオーバーまたは停止します。
 
-** HA ペアの場合は、正常なノードから障害ノードをテイクオーバーします。「 storage failover takeover -ofnode impaired_node_name _
+** HA ペアの場合は、正常なコントローラから障害のあるコントローラをテイクオーバーします。「 storage failover takeover -ofnode impaired_node_name _
 +
-障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
+障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
 
 ** スタンドアロンシステムの場合：「 system node halt _impaired_node_name _
 
 
 |===
-. システムのシャーシにコントローラモジュールが 1 つしかない場合は、電源装置をオフにして、障害ノードの電源コードを電源から抜きます。
+. システムのシャーシにコントローラモジュールが 1 つしかない場合は、電源装置をオフにして、障害のあるコントローラの電源コードを電源から抜きます。
 
 
 
@@ -112,9 +110,9 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 
 NOTE: 2 ノード MetroCluster 構成のシステムでは、この手順を使用しないでください。
 
-障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをテイクオーバーする必要があります。
+障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
 
-* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"^]。
+* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"^]。
 * MetroCluster 構成を使用している場合は、 MetroCluster 構成状態が構成済みで、ノードが有効かつ正常な状態であることを確認しておく必要があります（「 MetroCluster node show 」）。
 
 
@@ -123,12 +121,12 @@ NOTE: 2 ノード MetroCluster 構成のシステムでは、この手順を使�
 +
 次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
 
-. 正常なノードのコンソールから自動ギブバックを無効にします。「 storage failover modify – node local-auto-giveback false
-. 障害ノードに LOADER プロンプトを表示します。
+. 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
+. 障害のあるコントローラに LOADER プロンプトを表示します。
 +
 [cols="1,2"]
 |===
-| 障害ノードの表示 | 作業 
+| 障害のあるコントローラの表示 | 作業 
 
 
  a| 
@@ -148,11 +146,9 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
  a| 
 システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
  a| 
-正常なノードから障害ノードをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name _
+正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _
 
-+ 障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
-
-[+]
+障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
 
 |===
 
@@ -306,13 +302,13 @@ NOTE: プロンプトを見逃してコントローラモジュールが ONTAP �
 
 システムレベルの診断を開始するには、システムに LOADER プロンプトが表示されている必要があります。
 
-診断手順のコマンドは、すべてコンポーネントを交換するノードから実行します。
+診断手順のコマンドは、すべてコンポーネントを交換するコントローラから実行します。
 
 .手順
-. 作業をするノードに LOADER プロンプトが表示されていない場合は、次の手順を実行します。
+. 作業をするコントローラに LOADER プロンプトが表示されていない場合は、次の手順を実行します。
 +
 .. 表示されたメニューからメンテナンスモードオプションを選択します。
-.. ノードが保守モードでブートしたら ' ノードを停止します
+.. コントローラが保守モードでブートしたら、コントローラを停止します
 +
 コマンドを問題したら、システムが LOADER プロンプトで停止するまで待ちます。
 
@@ -321,7 +317,7 @@ NOTE: プロンプトを見逃してコントローラモジュールが ONTAP �
 NOTE: 起動プロセス中に 'y' をプロンプトに安全に応答できます
 
 +
-*** HA 構成でメンテナンスモードに切り替えたときに表示される、正常なノードが停止したままであることの確認を求めるプロンプト。
+*** HA 構成でメンテナンスモードに切り替えたときに表示される、正常なコントローラが停止したままであることの確認を求めるプロンプト。
 
 
 
@@ -355,17 +351,17 @@ SLDIAG ：ログメッセージが存在しません。
 
 .. 保守モードを終了します :halt
 +
-ノードに LOADER プロンプトが表示されます。
+コントローラに LOADER プロンプトが表示されます。
 
-.. LOADER プロンプトからノードをブートします。 bye
-.. ノードを通常動作に戻します。
+.. LOADER プロンプトからコントローラをブートします
+.. コントローラを通常動作に戻します。
 
 
 |===
 +
 [cols="1,2"]
 |===
-| ノードの構成 | 作業 
+| コントローラの構成 | 作業 
 
 
  a| 

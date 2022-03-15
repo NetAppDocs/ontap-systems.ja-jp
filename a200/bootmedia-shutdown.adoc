@@ -1,27 +1,34 @@
 ---
 permalink: a200/bootmedia-shutdown.html 
 sidebar: sidebar 
-keywords: aff a200, shut down the node 
-summary: NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。 
+keywords: aff a200, shut down the controller 
+summary: NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。 
 ---
-= 障害ノード AFF A200 をシャットダウンします
+= 障害のあるコントローラ AFF A200 をシャットダウンします
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。
+NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。
 
 .手順
-. 障害ノードに LOADER プロンプトが表示されていない場合は、次の手順を実行します。
+. 障害のあるコントローラに LOADER プロンプトを表示します。
 +
 [cols="1,2"]
 |===
-| 障害ノードに表示される内容 | 作業 
+| 障害のあるコントローラが表示された場合 | 作業 
 
 
  a| 
-+ ギブバックを待機中 ...+`
+LOADER プロンプト
+ a| 
+コントローラモジュールの取り外しに進みます。
+
+
+
+ a| 
+ギブバックを待機しています
  a| 
 Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します
 
@@ -30,16 +37,17 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
  a| 
 システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
  a| 
-正常なノードから障害ノードをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name
+正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name
 
-+ 障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
-
-[+]
+障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
 
 |===
-. LOADER プロンプトで「 printenv 」と入力し、すべてのブート環境変数をキャプチャします。出力をログファイルに保存します。
++
+.. LOADER プロンプトで「 printenv 」と入力し、すべてのブート環境変数をキャプチャします。出力をログファイルに保存します。
 +
 
 NOTE: ブートデバイスが壊れているか機能していない場合、このコマンドは機能しない可能性があります。
+
+
 
 

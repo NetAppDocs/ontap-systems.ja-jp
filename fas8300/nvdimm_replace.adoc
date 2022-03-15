@@ -1,7 +1,7 @@
 ---
 permalink: fas8300/nvdimm-replace.html 
 sidebar: sidebar 
-keywords: fas8300, fas8700, replace, nvmem, battery, remove, controller, module, node, metrocluster, configuration, diagnostics, aggregate, configuration, reinstall, run, system, switch, shut, down 
+keywords: fas8300, fas8700, replace, nvmem, battery, remove, controller, module, controller, metrocluster, configuration, diagnostics, aggregate, configuration, reinstall, run, system, switch, shut, down 
 summary: フラッシュの有効期間がほぼ終了していること、または識別された NVDIMM が全般的に正常でないことがシステムで登録された場合は、コントローラモジュールの NVDIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
 ---
 = NVDIMM - FAS8300 および FAS8700 を交換します
@@ -28,21 +28,21 @@ summary: フラッシュの有効期間がほぼ終了していること、ま�
 === オプション 1 ：ほとんどの構成
 
 [role="lead"]
-障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをテイクオーバーする必要があります。
+障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
 
-ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"^]。
+ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"^]。
 
 .手順
 . AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
 +
 次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
 
-. 正常なノードのコンソールから自動ギブバックを無効にします。「 storage failover modify – node local-auto-giveback false
-. 障害ノードに LOADER プロンプトを表示します。
+. 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
+. 障害のあるコントローラに LOADER プロンプトを表示します。
 +
 [cols="1,2"]
 |===
-| 障害ノードの表示 | 作業 
+| 障害のあるコントローラの表示 | 作業 
 
 
  a| 
@@ -62,11 +62,9 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
  a| 
 システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
  a| 
-正常なノードから障害ノードをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name _
+正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _
 
-+ 障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
-
-[+]
+障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
 
 |===
 
@@ -78,9 +76,9 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 
 NOTE: 2 ノード MetroCluster 構成のシステムでは、この手順を使用しないでください。
 
-障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをテイクオーバーする必要があります。
+障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
 
-* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合や、正常なノードの資格と健全性に false と表示される場合は、障害ノードをシャットダウンする前に問題を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"^]。
+* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"^]。
 * MetroCluster 構成を使用している場合は、 MetroCluster 構成状態が構成済みで、ノードが有効かつ正常な状態であることを確認しておく必要があります（「 MetroCluster node show 」）。
 
 
@@ -89,12 +87,12 @@ NOTE: 2 ノード MetroCluster 構成のシステムでは、この手順を使�
 +
 次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
 
-. 正常なノードのコンソールから自動ギブバックを無効にします。「 storage failover modify – node local-auto-giveback false
-. 障害ノードに LOADER プロンプトを表示します。
+. 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
+. 障害のあるコントローラに LOADER プロンプトを表示します。
 +
 [cols="1,2"]
 |===
-| 障害ノードの表示 | 作業 
+| 障害のあるコントローラの表示 | 作業 
 
 
  a| 
@@ -114,11 +112,9 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
  a| 
 システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
  a| 
-正常なノードから障害ノードをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name _
+正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _
 
-+ 障害ノードに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
-
-[+]
+障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
 
 |===
 
@@ -128,20 +124,20 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 === オプション 3 ：コントローラは 2 ノード MetroCluster に搭載されています
 
 [role="lead"]
-障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをスイッチオーバーする必要があります。
+障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをスイッチオーバーする必要があります。
 
 .このタスクについて
 * NetApp Storage Encryption を使用している場合は、の「 FIPS ドライブまたは SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html["CLI での NetApp Encryption の概要"^]。
-* 正常なノードに電力を供給するために、この手順の最後で電源装置をオンのままにしておく必要があります。
+* 正常なコントローラに電力を供給するために、この手順 の最後で電源装置をオンのままにしておく必要があります。
 
 
 .手順
-. MetroCluster ステータスをチェックして、障害ノードが正常なノードに自動的にスイッチオーバーしたかどうかを確認します。「 MetroCluster show 」
+. MetroCluster ステータスをチェックして、障害のあるコントローラが正常なコントローラに自動的にスイッチオーバーしたかどうかを確認します。「 MetroCluster show 」
 . 自動スイッチオーバーが発生したかどうかに応じて、次の表に従って処理を進めます。
 +
 [cols="1,2"]
 |===
-| 障害ノードの状況 | 作業 
+| 障害のあるコントローラの状況 | 作業 
 
 
  a| 
@@ -154,7 +150,7 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
  a| 
 自動的にスイッチオーバーしていない
  a| 
-正常なノードから計画的スイッチオーバー処理を実行します： MetroCluster switchover
+正常なコントローラから計画的なスイッチオーバー操作を実行します : MetroCluster switchover
 
 
 
@@ -365,10 +361,10 @@ NOTE: システムがブートメニューで停止した場合は、 LOADER で
 
 診断を開始するには、システムに LOADER プロンプトが表示されている必要があります。
 
-診断手順のコマンドは、すべてコンポーネントを交換するノードから実行します。
+診断手順のコマンドは、すべてコンポーネントを交換するコントローラから実行します。
 
 .手順
-. 作業をするノードに LOADER プロンプトが表示されていない場合は、ノードをリブートします。「 system node halt -node _node_name _
+. 保守対象のコントローラが LOADER プロンプトに表示されていない場合は、コントローラをリブートします。「 system node halt -node _node_name _
 +
 コマンドを問題したら、システムが LOADER プロンプトで停止するまで待ちます。
 
@@ -396,7 +392,7 @@ NOTE: システムがブートメニューで停止した場合は、 LOADER で
 +
 光ファイバケーブルを使用する場合は、メディアコンバータ（ QSFP または SFP ）を取り付け直してください（取り外した場合）。
 
-. ストレージをギブバックしてノードを通常動作に戻します。「 storage failover giveback -ofnode `_impaired_node_name _`
+. ストレージをギブバックして、コントローラを通常の動作に戻します。 storage failover giveback -ofnode `_impaired_node_name _`
 . 自動ギブバックを無効にした場合は、再度有効にします。「 storage failover modify -node local-auto-giveback true 」
 
 
