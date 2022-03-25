@@ -219,7 +219,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=80c4701e-8e4a-408e-96e6-ab1b00666d3f["2 ノードスイッチレスクラスタのケーブル接続"]
 
 +
-image::../media/drw_A400_TNSC-network-cabling.png[DRW A400 TNSC ネットワークケーブル配線]
+image::../media/drw_fas8300_TNSC_network_cabling.png[DRW fas8300 TNSC ネットワークケーブル接続]
 
 . に進みます <<Step 4: Cable controllers to drive shelves>> ドライブシェルフのケーブル接続手順については、を参照して
 
@@ -248,7 +248,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5893b7d4-6f67-4a64-ad89-ab1b006658d1["スイッチクラスタのケーブル接続"]
 
 +
-image::../media/drw_a400_switched_network_cabling.png[DRW 400: スイッチドネットワークケーブル配線]
+image::../media/drw_fas8300_switched_network_cabling.png[DRW fas8300 スイッチドネットワークケーブル接続]
 
 . に進みます <<Step 4: Cable controllers to drive shelves>> ドライブシェルフのケーブル接続手順については、を参照して
 
@@ -277,7 +277,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=46c0da0b-6842-449f-b28c-ab1b0066584b["SAS ドライブシェルフへのコントローラのケーブル接続"]
 
 +
-image::../media/drw_a400_three_ds224c_shelves.png[DRW 4003 ds224c シェルフ]
+image::../media/drw_fas8300_three-ds224c_shelves.png[DRW fas8300 3 ds224c シェルフ]
 
 . に進みます <<Step 5: Complete system setup and configuration>> をクリックして、システムのセットアップと設定を完了します。
 

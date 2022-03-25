@@ -422,19 +422,16 @@ NOTE: 起動プロセス中に 'y' をプロンプトに安全に応答できま
 +
 次のデフォルトの応答が表示されます。
 
-+
-[listing]
-----
-SLDIAG: No log messages are present.
------
 
- .. Exit Maintenance mode: `halt`
-+
-The node displays the LOADER prompt.
 
- .. Boot the node from the LOADER prompt: `bye`
- .. Return the node to normal operation.
-----
+_SLDIAG ：ログメッセージがありません。 _
+
+.. 保守モードを終了します :halt
++
+ノードに LOADER プロンプトが表示されます。
+
+.. LOADER プロンプトからノードをブートします。 bye
+.. ノードを通常動作に戻します。
 
 
 

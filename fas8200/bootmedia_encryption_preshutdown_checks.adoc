@@ -1,7 +1,13 @@
-= オプション 1 ： ONTAP 9.5 以前を実行しているシステムで NVE または NSE をチェックする
+---
+permalink: fas8200/bootmedia-encryption-preshutdown-checks.html 
+sidebar: sidebar 
+keywords: fas8200, pre-shutdown checks for onboard encryption keys 
+summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
+---
+= オンボード暗号化 - FAS8200 を確認します
+:icons: font
+:imagesdir: ../media/
 
-
-コントローラー --permalink:fas8200/ bootmedia-encryption-preshutdown-checks.html サイドバー : サイドバーキーワード :fas8200 、オンボード暗号化キーのシャットダウン前チェック概要 : 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 --=Checking onboard encryption-FAS8200 ： icons ： imagesdir ： ../media/
 
 [role="lead"]
 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。

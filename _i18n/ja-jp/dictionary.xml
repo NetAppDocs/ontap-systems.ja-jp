@@ -5759,7 +5759,6 @@
   <block id="564becbb42cc33012e00424619583eca" category="list-text">ストレージをケーブル接続します。 <block ref="42bf816180738dc1660363ee044d9786" category="inline-link-macro-rx"></block></block>
   <block id="eb9634f2ea796139d7f0aeca3f6ce2d4" category="section-title">オプション 2 ：スイッチクラスタのケーブル接続</block>
   <block id="5b2974409018c6d4642074b9be18209d" category="paragraph">コントローラモジュールのオプションのデータポート、オプションの NIC カード、および管理ポートは、スイッチに接続されます。クラスタインターコネクト / HA ポートは、クラスタ / HA スイッチにケーブル接続されます。</block>
-  <block id="80b4875daa443a09798bdba01e316e78" category="image-alt">DRW A320 スイッチドネットワークケーブルの複合アニメーション GIF</block>
   <block id="f5412d7277a9aad4f1e320bf63f0582b" category="paragraph">100GbE （ QSFP28 ）ケーブルを使用して、クラスタ / HA ポートをクラスタ / HA スイッチに接続します。</block>
   <block id="840e60c4749a688bca9fc657aaff1710" category="list-text">両方のコントローラの e0a をクラスタ / HA スイッチに接続します</block>
   <block id="c59f62b950bdb48bdd4229f438a8c8a8" category="list-text">両方のコントローラの e0d とクラスタ / HA スイッチ<block ref="15e7674fee3b32b30f565083329e5ce8" category="inline-image-macro-rx" type="image"></block></block>
@@ -8278,7 +8277,6 @@
   <block id="7103ae2dc232b897a89408d0cd914f59" category="doc">オンボード暗号化キーを確認します - AFF A800</block>
   <block id="0e3989fd0fd811ede751f0ca9dbfbe88" category="doc">ブートメディアの交換の概要 - AFF A800</block>
   <block id="a9785aa14dfcf09366954fcb69625d05" category="sidebar">42U 1280 mm システムキャビネット</block>
-  <block id="3cafea7668c93f65d306d9021ff14f37" category="summary">これらのリンクは、他の AFF プラットフォームや FAS プラットフォームで使用できます。</block>
   <block id="f606ada25615407b042f8f189d1b9fab" category="sidebar">Cisco 3132Q-V の設定</block>
   <block id="782536ad60a0c703fa10fb3d99248ea0" category="sidebar">Cisco 3232C スイッチ</block>
   <block id="059d31543d448499bd1a9c454a8d1ebb" category="sidebar">Cisco 9336C-FX2</block>
@@ -8307,7 +8305,6 @@
   <block id="eec0e5f9d553c7b70402acd4568f1ec7" category="list-text">MetroCluster ステータスをチェックして、障害のあるコントローラが正常なコントローラに自動的にスイッチオーバーしたかどうかを確認します。「 MetroCluster show 」</block>
   <block id="4176d047c40d8635a978efe76111589d" category="cell">障害のあるコントローラの状況</block>
   <block id="bc926a90924e14c99dbad976cbc306f6" category="paragraph">正常なコントローラから計画的なスイッチオーバー操作を実行します : MetroCluster switchover</block>
-  <block id="8377db96ff49e2b3bab4737836a8e0ce" category="paragraph">コントローラ --permalink ： A300 / controller-replace-move-hardware.html サイドバー：サイドバーキーワード AFF A300 、コントローラモジュールハードウェアの移動：「コントローラモジュールハードウェアを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。」 --=Controller モジュールを交換してください - AFF A300 ：アイコン : imagesdir ： ../media/</block>
   <block id="c4d9687f431492e0a90b422288606306" category="paragraph">コントローラモジュールハードウェアを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。</block>
   <block id="5882cd2f55c4bcf825c0675d56d4677a" category="list-text">HA 構成でメンテナンスモードに切り替えたときに表示される、正常なコントローラが停止したままであることの確認を求めるプロンプト。これらのプロンプトには「 y 」と入力できます。</block>
   <block id="6444f932b3d3398ef847475f65dde87a" category="paragraph">構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。</block>
@@ -8418,7 +8415,6 @@
   <block id="d1342671e7a1aeffea6df3cd0214be86" category="list-text">この手順はシステムの停止を伴います。2 台のコントローラからなるクラスタではサービスが完全に停止し、マルチノードクラスタでは部分的に停止します。</block>
   <block id="4fa4535552a76ba6abb695db42b48161" category="paragraph">この手順 を使用する必要がある場合は、 4 台または 8 台のコントローラ MetroCluster 構成のコントローラの交換用手順 は HA ペアの場合と同じであることに注意してください。障害が HA ペアに制限されているため、 MetroCluster 固有の手順は必要ありません。また、 storage failover コマンドを使用すると、交換時に無停止操作を行うことができます。</block>
   <block id="1c35b5fd0eb2c66f98019f6d2ea253e2" category="paragraph">PDF 版セットアップガイドを使用して、新しいシステムを設置してセットアップできます。。 <block ref="5ad5e3145183bec8ce765d99b2db775a" category="inline-link-macro-rx"></block> ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
-  <block id="f360cbc0b1776cef715c46bbf963f211" category="paragraph">コントローラー --permalink:fas8200/ bootmedia-encryption-preshutdown-checks.html サイドバー : サイドバーキーワード :fas8200 、オンボード暗号化キーのシャットダウン前チェック概要 : 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 --=Checking onboard encryption-FAS8200 ： icons ： imagesdir ： ../media/</block>
   <block id="c83b964c98e24aa342fa8069ffd85dd0" category="list-text"><block ref="c83b964c98e24aa342fa8069ffd85dd0" category="inline-link-macro-rx"></block></block>
   <block id="f51c8858085d7dcfe4d79d9774f8270d" category="paragraph">_replacement _controller をブートしたときにシステム ID の変更を確認し、その変更が実装されたことを確認する必要があります。</block>
   <block id="58d1979204cdde4ca641ddc56ae5fe91" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は、 _replacement _controller の LOADER プロンプトから「 y 」と入力し、コントローラをブートします。「 boot_ontap 」</block>
@@ -8464,7 +8460,6 @@
   <block id="fec1ee82d47382a6acadcb4104dd3ce3" category="paragraph">障害のあるコントローラに「 Waiting for giveback... 」というメッセージが表示されたら、正常なコントローラからギブバックを実行します。</block>
   <block id="b93b2e31999c0ef2197b846adf6fd32d" category="list-text">正常なコントローラからギブバックを実行します。</block>
   <block id="85e5c14e4c98322df87028e0cafd79a7" category="paragraph">これにより、障害のあるコントローラのアグリゲートおよびボリュームの所有権を正常なコントローラから障害のあるコントローラに戻すプロセスが開始されます。</block>
-  <block id="31cf13c61d40269ec7d8237264ca25ba" category="open-title">ほとんどのシステム</block>
   <block id="5ab3b65334d9648ac44bf62025764ce2" category="section-title">手順 2 ：コントローラを取り外す</block>
   <block id="f1eb9bf0f474a83bbe6d11b59f16da8c" category="list-text">ストレージをギブバックして、コントローラを通常の動作に戻します。「 storage failover giveback -ofnode impaired_node_name</block>
   <block id="bced3f55c14cfa1d16ca32cbbb0b1d97" category="list-text">障害のあるコントローラを advanced 権限レベルに設定します。「 set -privilege advanced</block>
@@ -8510,7 +8505,6 @@
   <block id="e033b8601f70c600b73dc01580794ef1" category="summary">障害のあるコントローラをシャットダウンする前に、システムで NetApp Volume Encryption \ （ NVE \ ）または NetApp Storage Encryption \ （ NSE \ ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。</block>
   <block id="8b97c720bb08aa0118f13600478e225f" category="list-text">このコマンドの出力に &lt;lno-DARE&gt; または &lt;1Ono-dARE&gt; が表示される場合は、システムが NVE をサポートしていないので、コントローラのシャットダウンに進みます。障害のあるコントローラをシャットダウンする前に、システムで NetApp Volume Encryption （ NVE ）または NetApp Storage Encryption （ NSE ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。</block>
   <block id="4ca27b7e1f4aad146e9ddc45f9af0410" category="doc">コントローラ FAS500f をシャットダウンします</block>
-  <block id="2523dbc6a24be97a9e6522ed8cc0a2da" category="paragraph">permalink ： fas500f / bootmedia-replace.html サイドバー：サイドバーキーワード： fas500f 、 replace the boot media summary ：「 You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media 」 --=boot media-FAS500f:icons:imagesdir:../media/ を交換してください</block>
   <block id="2a468fdd2649c2bddd5f46d0d16b08af" category="doc">障害のあるコントローラ AFF A700s をシャットダウンします</block>
   <block id="abb3159815c7d305ec1a9697a5ec0fef" category="summary">コントローラモジュールを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。</block>
   <block id="a3d92d77da598c2538c04939f7322e49" category="list-text">まだ接地されていない場合は、適切なコントローラを自分で指定します。</block>
@@ -8537,4 +8531,17 @@
   <block id="f0623f3de563d7ac67a984a76c53803d" category="paragraph">NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。</block>
   <block id="e0024964f985f74787a4ffc15850d67d" category="list-text">コントローラモジュールの固定フックが持ち上がるまで、コントローラモジュールをシステムの奥に押し込みます。固定フックを強く押し込んでコントローラモジュールを装着し、固定フックをコントローラモジュールのピンにかけてロックします。+ コントローラは、シャーシへの取り付けが完了するとすぐにブートを開始します。</block>
   <block id="a924c157082c4974237a4bb347fd9228" category="list-text">Ctrl+C キーを押してブートプロセスを中断し、 LOADER プロンプトで停止します。+ このメッセージが表示されない場合は、 Ctrl+C キーを押し、メンテナンスモードでブートするオプションを選択して、コントローラを停止して LOADER プロンプトを表示します。</block>
+  <block id="e935849faf7cd25a183a726f34797bb7" category="doc">コントローラモジュールを交換してください - AFF A300</block>
+  <block id="75a0d3caeb66a7c3aca3b7bc0f0c5985" category="image-alt">DRW A320 スイッチドネットワークケーブルの複合アニメーション GIF</block>
+  <block id="82430a05d3820aeaeb756230e94ee643" category="doc">オンボード暗号化 - FAS8200 を確認します</block>
+  <block id="0082203fcfff94aab099c16763176076" category="image-alt">DRW fas8300 TNSC ネットワークケーブル接続</block>
+  <block id="507f9f4c8680d2c9a9bcba815a7976e8" category="image-alt">DRW fas8300 スイッチドネットワークケーブル接続</block>
+  <block id="56cbc310abb53560871f37318fe0636d" category="image-alt">DRW fas8300 3 ds224c シェルフ</block>
+  <block id="a28455bf2eecf6cc499c335ee152cd75" category="paragraph">次のいずれかのオプションを使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。</block>
+  <block id="5a503439969930e9e348f79d2b8004d7" category="section-title">手順 7 ：ストレージとボリュームの暗号化機能をリストアする</block>
+  <block id="3e1047f2ebaed54fe88cc6f78291dbb6" category="doc">ブートメディア FAS500f を交換してください</block>
+  <block id="de2d1282e102972a6af003781e9a5c02" category="paragraph">_SLDIAG ：ログメッセージがありません。 _</block>
+  <block id="3f91c59c59a1243cb3f176daf3c9c054" category="list-text">ノードを通常動作に戻します。</block>
+  <block id="eb90dbf89cffd9812a8720d277f30583" category="summary">これらのリンクから、 AFF および FAS の他のプラットフォームのドキュメントを参照できます。</block>
+  <block id="0f40216c1ad47c12e8ccc087d555570f" category="sidebar">ONTAP リリースノート</block>
 </blocks>

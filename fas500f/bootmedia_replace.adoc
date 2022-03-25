@@ -1,8 +1,13 @@
-= 手順 1 ：コントローラモジュールを取り外す
+---
+permalink: fas500f/bootmedia-replace.html 
+sidebar: sidebar 
+keywords: fas500f, replace the boot media 
+summary: ブートメディアを交換する前に、コントローラモジュールのエアダクトを取り外して、障害が発生したブートメディアの場所を確認する必要があります。 
+---
+= ブートメディア FAS500f を交換してください
+:icons: font
+:imagesdir: ../media/
 
-
-'''
-permalink ： fas500f / bootmedia-replace.html サイドバー：サイドバーキーワード： fas500f 、 replace the boot media summary ：「 You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media 」 --=boot media-FAS500f:icons:imagesdir:../media/ を交換してください
 
 [role="lead"]
 ブートメディアを交換するには、障害のあるコントローラモジュールを取り外し、交換用ブートメディアを取り付けて、ブートイメージを USB フラッシュドライブに転送する必要があります。
