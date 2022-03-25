@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>手順 1 ：コントローラモジュールを取り外す</title>
+  <title>オンボード暗号化 - FAS8200 を確認します</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="手順 1 ：コントローラモジュールを取り外す" />
+  <meta property="og:title" content="オンボード暗号化 - FAS8200 を確認します" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-systems/fas500f/bootmedia_replace/" />
-	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-systems/fas8200/bootmedia-encryption-preshutdown-checks.html" />
+	<meta property="og:description" content="障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/ontap-systems/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
-  <meta name="keywords" content=" "><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。">
+  <meta name="keywords" content=" fas8200, pre-shutdown checks for onboard encryption keys"><!-- Icons -->
   <link rel="icon" href="/ja-jp/ontap-systems/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -148,8 +148,8 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[手順 1 ：コントローラモジュールを取り外す](https://docs.netapp.com/ja-jp/ontap-systems/fas500f/bootmedia_replace/)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/fas500f/bootmedia_replace.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[オンボード暗号化 - FAS8200 を確認します](https://docs.netapp.com/ja-jp/ontap-systems/fas8200/bootmedia-encryption-preshutdown-checks.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/fas8200/bootmedia_encryption_preshutdown_checks.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-systems/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
     </div>
     <div class="page-nav-container">
@@ -272,13 +272,13 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-systems/" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/ontap-systems/fas8200/bootmedia-encryption-preshutdown-checks.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-systems/" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/ontap-systems/fas8200/bootmedia-encryption-preshutdown-checks.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-systems/" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/ontap-systems/fas8200/bootmedia-encryption-preshutdown-checks.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-systems/" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                  <a href="https://docs.netapp.com/ko-kr/ontap-systems/fas8200/bootmedia-encryption-preshutdown-checks.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -2932,6 +2932,15 @@
           
 
 
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ja-jp/ontap-systems/pdfs/pages/fas8200/bootmedia-encryption-preshutdown-checks.pdf" >
+    <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
 
 
 
@@ -4825,7 +4834,7 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/bootmedia-replace-overview.html">
         概要
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/bootmedia-encryption-preshutdown-checks.html">
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/bootmedia-encryption-preshutdown-checks.html">
         オンボード暗号化キーを確認
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/fas8200/bootmedia-impaired-controller-shutdown.html">
         障害のあるコントローラをシャットダウンします
@@ -5204,310 +5213,191 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">手順 1 ：コントローラモジュールを取り外す</h1>
+  <h1 class="n-doc__component-detail-heading">オンボード暗号化 - FAS8200 を確認します</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-03-15 19:23:16 +0000">03/15/2022</time>
+    <time datetime="2022-03-25 15:31:43 +0000">03/25/2022</time>
     
   
-
-<span>寄稿者
-  <a target="_blank" href="https://github.com/netapp-martyh">
-    <img  class="avatar avatar-small"
-          alt="netapp-martyh"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/66496079?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
-  <a target="_blank" href="https://github.com/thrisun">
-    <img  class="avatar avatar-small"
-          alt="thrisun"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/30325635?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
-  <a target="_blank" href="https://github.com/dougthomp">
-    <img  class="avatar avatar-small"
-          alt="dougthomp"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/76076341?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
-  <a target="_blank" href="https://github.com/netapp-jsnyder">
-    <img  class="avatar avatar-small"
-          alt="netapp-jsnyder"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/69054128?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
-</span>
 
 
 </p>
 
 <div id="preamble">
 <div class="sectionbody">
-<hr>
-<div class="paragraph">
-<p>permalink ： fas500f / bootmedia-replace.html サイドバー：サイドバーキーワード： fas500f 、 replace the boot media summary ：「 You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media 」 --=boot media-FAS500f:icons:imagesdir:../media/ を交換してください</p>
-</div>
 <div class="paragraph lead">
-<p>ブートメディアを交換するには、障害のあるコントローラモジュールを取り外し、交換用ブートメディアを取り付けて、ブートイメージを USB フラッシュドライブに転送する必要があります。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="手順-1-コントローラモジュールを取り外す">手順 1 ：コントローラモジュールを取り外す</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>コントローラモジュール内部のコンポーネントを交換する場合は、コントローラモジュールをシャーシから取り外す必要があります。</p>
+<p>障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。</p>
 </div>
 <div class="paragraph">
-<p>元の場所がわかるように、ケーブルにラベルを付けておいてください。</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>接地対策がまだの場合は、自身で適切に実施します。</p>
-</li>
-<li>
-<p>コントローラモジュールの電源装置のコードをソースから抜きます。</p>
-</li>
-<li>
-<p>電源ケーブル固定クリップを外し、電源装置からケーブルを抜きます。</p>
-</li>
-<li>
-<p>コントローラモジュールの両側にあるラッチ機構に人差し指をかけ、親指でレバーを押し、コントローラをシャーシからゆっくりと引き出します。</p>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
-</td>
-<td class="content">
-コントローラモジュールを取り外しにくい場合は、（腕を交差させて）内側から穴に人さし指を入れます。
-</td>
-</tr>
-</table>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../media/drw_a250_pcm_remove_install.png" alt="DRW A250 PCM 取り外し取り付け">
-</div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="../media/legend_icon_01.png" alt=""></span></p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>レバー</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="../media/legend_icon_02.png" alt=""></span></p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>ラッチ機構</p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>コントローラモジュールの両側を両手で持ってシャーシからゆっくりと引き出し、平らで安定した場所に置きます。</p>
-</li>
-<li>
-<p>コントローラモジュールの前面にある取り付けネジを反時計回りに回して、コントローラモジュールのカバーを開きます。</p>
-<div class="imageblock">
-<div class="content">
-<img src="../media/drw_a250_open_controller_module_cover.png" alt="DRW A250 オープンコントローラモジュールカバー">
-</div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="../media/legend_icon_01.png" alt=""></span></p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>取り付けネジ</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="../media/legend_icon_02.png" alt=""></span></p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>コントローラモジュールカバー</p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>エアダクトカバーを持ち上げて外します。</p>
-<div class="imageblock">
-<div class="content">
-<img src="../media/drw_a250_remove_airduct_cover.png" alt="DRW A250 エアダクトカバーを取り外す">
-</div>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="手順-2-ブートメディアを交換します">手順 2 ：ブートメディアを交換します</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>ブートメディアを交換する前に、コントローラモジュールのエアダクトを取り外して、障害が発生したブートメディアの場所を確認する必要があります。</p>
+<p>障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にして、実行中の ONTAP のバージョンを確認する必要があります。</p>
 </div>
 <div class="paragraph">
-<p>ブートメディアを固定しているネジを外すために、 No.1 プラスドライバが必要です。コントローラモジュール内のスペースに制約があるため、ネジを緩める必要がないように、マグネットが取り付けられている必要があります。</p>
-</div>
-<div class="paragraph">
-<p>次のビデオまたは表に示す手順を使用して、ブートメディアを交換できます。</p>
-</div>
-<div class="paragraph">
-<p><a href="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7c2cad51-dd95-4b07-a903-ac5b015c1a6d">"ブートメディアの交換"</a></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>コントローラモジュールから障害のあるブートメディアの場所を確認し、交換します。</p>
-<div class="imageblock">
-<div class="content">
-<img src="../media/drw_a250_replace_boot_media.png" alt="DRW A250 は、ブートメディアの交換に使用します">
-</div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="../media/legend_icon_01.png" alt=""></span></p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>コントローラモジュールのマザーボードにブートメディアを固定しているネジを外します。</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="../media/legend_icon_02.png" alt=""></span></p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>ブートメディアをコントローラモジュールから持ち上げて取り出します。</p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>No.1 磁気ドライバを使用して、障害のあるブートメディアからネジを外し、マグネットの上に安全に置きます。</p>
-</li>
-<li>
-<p>障害のあるブートメディアをソケットから直接そっと持ち上げて脇に置きます。</p>
-</li>
-<li>
-<p>交換用ブートメディアを静電気防止用の梱包バッグから取り出し、コントローラモジュールの所定の位置に合わせます。</p>
-</li>
-<li>
-<p>No.1 磁気ドライバを使用して、ブートメディアのネジを挿入して締めます。</p>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
-</td>
-<td class="content">
-ブートメディアのネジを締めるときは力を加えないでください。ひびが入ることがあります。
-</td>
-</tr>
-</table>
-</div>
-</li>
-</ol>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="手順-3-ブートイメージをブートメディアに転送します">手順 3 ：ブートイメージをブートメディアに転送します</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>取り付けた交換用ブートメディアにはブートイメージが含まれていないため、 USB フラッシュドライブを使用してブートイメージを転送する必要があります。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>4GB 以上の容量の MBR / FAT32 にフォーマットされた USB フラッシュドライブが必要です</p>
-</li>
-<li>
-<p>障害のあるコントローラが実行していたバージョンの ONTAP イメージのコピー。ネットアップサポートサイトの「 * Downloads * 」セクションから適切なイメージをダウンロードできます</p>
-<div class="ulist">
-<ul>
-<li>
-<p>NVE が有効な場合は、ダウンロードボタンの指示に従って、 NetApp Volume Encryption を使用してイメージをダウンロードします。</p>
-</li>
-<li>
-<p>NVE が有効になっていない場合は、ダウンロードボタンの指示に従って、 NetApp Volume Encryption なしでイメージをダウンロードします。</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>HA ペアのシステムの場合は、ネットワーク接続が必要です。</p>
-</li>
-<li>
-<p>スタンドアロンシステムの場合はネットワーク接続は必要ありませんが、 var ファイルシステムをリストアしたときに追加のリブートを実行する必要があります。</p>
-</li>
-</ul>
+<p>ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <a href="https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html">"CLI での NetApp Encryption の概要"</a>。</p>
 </div>
 <div class="olist arabic">
 <div class="title">手順</div>
 <ol class="arabic">
 <li>
-<p>ネットアップサポートサイトから USB フラッシュドライブに適切なサービスイメージをダウンロードしてコピーします。</p>
+<p>障害のあるコントローラのステータスを確認します。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>障害のあるコントローラがログインプロンプトに表示されている場合は 'admin' としてログインします</p>
 </li>
 <li>
-<p>ラップトップの作業スペースにサービスイメージをダウンロードします。</p>
+<p>障害のあるコントローラが LOADER プロンプトに表示され、 HA 構成の一部である場合は、正常なコントローラに「 admin 」としてログインします。</p>
 </li>
 <li>
-<p>サービスイメージを解凍します。</p>
+<p>障害のあるコントローラがスタンドアロン構成で LOADER プロンプトが表示されている場合は、にお問い合わせください <a href="http://mysupport.netapp.com/">"mysupport.netapp.com"</a>。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh</p>
+<div class="paragraph">
+<p>次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * &gt; system node AutoSupport invoke -node * -type all -message MAINT=2h`</p>
+</div>
+</li>
+<li>
+<p>「 version -v 」コマンドを使用して、障害のあるコントローラ上でシステムが実行している ONTAP のバージョンを確認します。アップしている場合はパートナーコントローラ上で、障害のあるコントローラがダウンしている場合はパートナーコントローラ上で確認します。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>このコマンドの出力に &lt;lno-DARE&gt; または &lt;1Ono-dARE&gt; が表示される場合は、システムが NVE をサポートしていないので、コントローラのシャットダウンに進みます。</p>
+</li>
+<li>
+<p>コマンドの出力に &lt;lno-DARE&gt; が表示されず、システムで ONTAP 9.5 が実行されている場合は、に進みます <a href="#Option 1: Checking NVE or NSE on systems running ONTAP 9.5 and earlier">[Option 1: Checking NVE or NSE on systems running ONTAP 9.5 and earlier]</a>。</p>
+</li>
+<li>
+<p>コマンドの出力に &lt;lno-DARE &gt; が表示されず、システムで ONTAP 9.6 以降が実行されている場合は、に進みます <a href="#Option 2: Checking NVE or NSE on systems running ONTAP 9.6 and later">[Option 2: Checking NVE or NSE on systems running ONTAP 9.6 and later]</a>。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>障害のあるコントローラが HA 構成の一部である場合は、正常なコントローラからの自動ギブバックを無効にします。 storage failover modify -node local-auto-giveback false または storage failover modify -node local-auto-giveback -after-panic false</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="オプション-1-ontap-9-5-以前を実行しているシステムで-nve-または-nse-をチェックする">オプション 1 ： ONTAP 9.5 以前を実行しているシステムで NVE または NSE をチェックする</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>障害のあるコントローラをシャットダウンする前に、システムで NetApp Volume Encryption （ NVE ）または NetApp Storage Encryption （ NSE ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>障害のあるコントローラにコンソールケーブルを接続します。</p>
+</li>
+<li>
+<p>クラスタ内のボリュームに NVE が設定されているかどうかを確認します。 volume show -is-encrypted true</p>
+<div class="paragraph">
+<p>出力に含まれるボリュームには NVE が設定されているため、 NVE の設定を確認する必要があります。ボリュームが表示されない場合は、 NSE が設定されているかどうかを確認します。</p>
+</div>
+</li>
+<li>
+<p>NSE が設定されているかどうかを確認します。「 storage encryption disk show 」</p>
+<div class="ulist">
+<ul>
+<li>
+<p>モードとキー ID の情報を含むドライブの詳細がコマンド出力に表示される場合は、 NSE が設定されているので、 NSE の設定を確認する必要があります。</p>
+</li>
+<li>
+<p>NVE と NSE が設定されていない場合は、障害のあるコントローラを安全にシャットダウンできます。</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="nve-の設定を確認する">NVE の設定を確認する</h3>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>キー管理サーバに格納されている認証キーのキー ID を表示します。「 securitykey-manager query</p>
+<div class="ulist">
+<ul>
+<li>
+<p>[Restored （復元） ] 列に [yes] と表示され、すべてのキー管理ツールに [Available] と表示されている場合は、障害のあるコントローラをシャットダウンしても安全です。</p>
+</li>
+<li>
+<p>[Restored （復元） ] 列に 'yes' 以外の項目が表示される場合、またはいずれかのキー管理ツールに [Unavailable （利用不可） ] と表示される場合は、いくつかの追加手順を実行する必要があります。</p>
+</li>
+<li>
+<p>オンボードキー管理が有効になっている場合にこのコマンドがサポートされませんというメッセージが表示された場合は、他の手順をいくつか実行する必要があります。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>[ リストア済み ] カラムに 'yes' 以外のものが表示されている場合 ' または ' キー・マネージャに unavailable と表示されている場合は ' 次の手順を実行します</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>すべての認証キーと関連キー ID を取得してリストアします： 'securitykey-manager restore-address*</p>
+<div class="paragraph">
+<p>コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a href="http://mysupport.netapp.com/">"mysupport.netapp.com"</a></p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>すべての認証キーについて 'restored' 列に yes と表示され ' すべてのキー・マネージャには Available ： 'securitykey-manager query と表示されていることを確認します</p>
+</li>
+<li>
+<p>障害のあるコントローラをシャットダウンします。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>オンボードキー管理が有効になっているときに「 This command is not supported when onboard key management 」というメッセージが表示された場合は、オンボードキーマネージャに格納されているキーを表示します。「 securitykey-manager key show -detail」</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>[Restored （リストア済み） ] カラムに 'yes' と表示されている場合は ' オンボード・キー管理情報を手動でバックアップします</p>
+<div class="ulist">
+<ul>
+<li>
+<p>advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」</p>
+</li>
+<li>
+<p>コマンドを入力して、 OKM バックアップ情報を表示します：「 securitykey-manager backup show 」</p>
+</li>
+<li>
+<p>バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。</p>
+</li>
+<li>
+<p>admin モードに戻ります。 'set-priv admin'</p>
+</li>
+<li>
+<p>障害のあるコントローラをシャットダウンします。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>[ リストア済み ] カラムに 'yes' 以外の項目が表示される場合は ' 次の手順を実行します</p>
+<div class="ulist">
+<ul>
+<li>
+<p>key-manager setup ウィザードを実行します： 'securitykey-manager setup -node target/impaired node name</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -5515,108 +5405,467 @@
 <img src="/us-en/ontap-systems/images/note.svg" alt="注記">
 </td>
 <td class="content">
-Windows を使用して内容を展開する場合は、 winzip を使用してネットブートイメージを展開しないでください。7-Zip や WinRAR など、別の抽出ツールを使用します。
+プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、にお問い合わせください <a href="http://mysupport.netapp.com/">"mysupport.netapp.com"</a>
 </td>
 </tr>
 </table>
 </div>
-<div class="paragraph">
-<p>解凍されたサービスイメージファイルには、次の 2 つのフォルダがあります。</p>
+</li>
+<li>
+<p>すべての認証キーに対して 'restored' カラムに yes が表示されていることを確認します 'securitykey-manager key show-detail</p>
+</li>
+<li>
+<p>advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」</p>
+</li>
+<li>
+<p>コマンドを入力して、 OKM バックアップ情報を表示します：「 securitykey-manager backup show 」</p>
+</li>
+<li>
+<p>バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。</p>
+</li>
+<li>
+<p>admin モードに戻ります。 'set-priv admin'</p>
+</li>
+<li>
+<p>コントローラは安全にシャットダウンできます。</p>
+</li>
+</ul>
 </div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="nse-の設定を確認">NSE の設定を確認</h3>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>キー管理サーバに格納されている認証キーのキー ID を表示します。「 securitykey-manager query</p>
 <div class="ulist">
 <ul>
 <li>
-<p>「 boot 」を指定します</p>
+<p>[Restored （復元） ] 列に [yes] と表示され、すべてのキー管理ツールに [Available] と表示されている場合は、障害のあるコントローラをシャットダウンしても安全です。</p>
 </li>
 <li>
-<p>「 EFI 」</p>
+<p>[Restored （復元） ] 列に 'yes' 以外の項目が表示される場合、またはいずれかのキー管理ツールに [Unavailable （利用不可） ] と表示される場合は、いくつかの追加手順を実行する必要があります。</p>
+</li>
+<li>
+<p>オンボードキー管理が有効になっている場合にこのコマンドがサポートされませんというメッセージが表示された場合は、他の手順をいくつか実行する必要があります</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>EFI フォルダを USB フラッシュドライブの最上位ディレクトリにコピーします</p>
+<p>[ リストア済み ] カラムに 'yes' 以外のものが表示されている場合 ' または ' キー・マネージャに unavailable と表示されている場合は ' 次の手順を実行します</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>すべての認証キーと関連キー ID を取得してリストアします： 'securitykey-manager restore-address*</p>
 <div class="paragraph">
-<p>USB フラッシュドライブには、 EFI フォルダと、障害のあるコントローラが実行しているものと同じバージョンの Service Image （ BIOS ）が必要です。</p>
-</div>
-</li>
-<li>
-<p>USB フラッシュドライブをラップトップから取り外します。</p>
-</li>
-<li>
-<p>エアダクトをまだ取り付けていない場合は、取り付けます。</p>
-<div class="imageblock">
-<div class="content">
-<img src="../media/drw_a250_install_airduct_cover.png" alt="DRW A250 エアダクトカバーを取り付ける">
-</div>
-</div>
-</li>
-<li>
-<p>コントローラモジュールのカバーを閉じ、取り付けネジを締めます。</p>
-<div class="imageblock">
-<div class="content">
-<img src="../media/drw_a250_close_controller_module_cover.png" alt="DRW A250 クローズコントローラモジュールカバー">
-</div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="../media/legend_icon_01.png" alt=""></span></p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>コントローラモジュールカバー</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="../media/legend_icon_02.png" alt=""></span></p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>取り付けネジ</p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>コントローラモジュールの端をシャーシの開口部に合わせ、コントローラモジュールをシステムに半分までそっと押し込みます。</p>
-</li>
-<li>
-<p>電源装置に電源ケーブルを接続し、電源ケーブルの固定クリップを再度取り付けます。</p>
-</li>
-<li>
-<p>USB フラッシュドライブをコントローラモジュールの USB スロットに挿入します。</p>
-<div class="paragraph">
-<p>USB フラッシュドライブは、 USB コンソールポートではなく、 USB デバイス用のラベルが付いたスロットに取り付けてください。</p>
-</div>
-</li>
-<li>
-<p>コントローラモジュールをシャーシに最後まで押し込みます。</p>
-</li>
-<li>
-<p>ラッチの内側から穴に人さし指を入れます。</p>
-</li>
-<li>
-<p>ラッチ上部のオレンジ色のタブで親指を押し下げ、コントローラモジュールをゆっくりと停止位置に押し込みます。</p>
-</li>
-<li>
-<p>ラッチの上部から親指を離し、ラッチが完全に固定されるまで押し続けます。</p>
-<div class="paragraph">
-<p>コントローラモジュールは、シャーシに完全に装着されるとすぐにブートを開始します。ブートプロセスを中断できるように準備しておきます。</p>
-</div>
-<div class="paragraph">
-<p>コントローラモジュールを完全に挿入し、シャーシの端と同一平面になるようにします。</p>
+<p>コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。</p>
 </div>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p><a href="http://mysupport.netapp.com/">"mysupport.netapp.com"</a></p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>すべての認証キーについて 'restored' 列に yes と表示され ' すべてのキー・マネージャには Available ： 'securitykey-manager query と表示されていることを確認します</p>
+</li>
+<li>
+<p>障害のあるコントローラをシャットダウンします。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>オンボードキー管理が有効になっているときに「 This command is not supported when onboard key management 」というメッセージが表示された場合は、オンボードキーマネージャに格納されているキーを表示します。「 securitykey-manager key show -detail」</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>[Restored （復元） ] 列に「 yes 」と表示されている場合は、オンボードキー管理情報を手動でバックアップします。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」</p>
+</li>
+<li>
+<p>コマンドを入力して、 OKM バックアップ情報を表示します：「 securitykey-manager backup show 」</p>
+</li>
+<li>
+<p>バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。</p>
+</li>
+<li>
+<p>admin モードに戻ります。 'set-priv admin'</p>
+</li>
+<li>
+<p>障害のあるコントローラをシャットダウンします。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>[ リストア済み ] カラムに 'yes' 以外の項目が表示される場合は ' 次の手順を実行します</p>
+<div class="ulist">
+<ul>
+<li>
+<p>key-manager setup ウィザードを実行します： 'securitykey-manager setup -node target/impaired node name</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+プロンプトで、お客様の OKM パスフレーズを入力します。パスフレーズを指定できない場合は、にお問い合わせください <a href="http://mysupport.netapp.com/">"mysupport.netapp.com"</a>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>すべての認証キーについて 'restored' 列に yes と表示されていることを確認します</p>
+</li>
+<li>
+<p>advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」</p>
+</li>
+<li>
+<p>コマンド「 security key-manager backup show 」を入力して、 OKM の情報をバックアップします</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+OKM 情報がログファイルに保存されていることを確認してください。この情報は、 OKM を手動でリカバリする必要がある災害シナリオで必要になります。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>バックアップ情報の内容を別のファイルまたはログにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。</p>
+</li>
+<li>
+<p>admin モードに戻ります。 'set-priv admin'</p>
+</li>
+<li>
+<p>コントローラは安全にシャットダウンできます。</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="オプション-2-ontap-9-6-以降を実行しているシステムの-nve-または-nse-を確認する">オプション 2 ： ONTAP 9.6 以降を実行しているシステムの NVE または NSE を確認する</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>障害のあるコントローラをシャットダウンする前に、システムで NetApp Volume Encryption （ NVE ）または NetApp Storage Encryption （ NSE ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>クラスタ内のいずれのボリュームにも NVE が使用されているかどうかを確認します。 volume show -is-encrypted true</p>
+<div class="paragraph">
+<p>出力に含まれるボリュームには NVE が設定されているため、 NVE の設定を確認する必要があります。ボリュームが表示されない場合は、 NSE が設定されて使用中であるかどうかを確認します。</p>
+</div>
+</li>
+<li>
+<p>NSE が構成され ' 使用されているかどうかを確認します storage encryption disk show</p>
+<div class="ulist">
+<ul>
+<li>
+<p>モードとキー ID の情報を含むドライブの詳細がコマンド出力に表示される場合は、 NSE が設定されているので、 NSE の設定と使用状況を確認する必要があります。</p>
+</li>
+<li>
+<p>ディスクが表示されない場合は、 NSE は設定されません。</p>
+</li>
+<li>
+<p>NVE と NSE が設定されていない場合、 NSE キーでドライブが保護されていないため、障害のあるコントローラを安全にシャットダウンできます。</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="nve-の設定を確認する-2">NVE の設定を確認する</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>キー管理サーバに格納されている認証キーのキー ID を表示します。「 security key-manager key-query</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+ONTAP 9.6 リリース以降では、キー管理ツールのタイプが追加されることがあります。タイプは「 KMIP 」、「 AKV 」、「 GCP 」です。これらのタイプを確認するプロセスは 'external' または 'onboard のキー管理タイプを確認するプロセスと同じです
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>「キー・マネージャ」タイプに「 external 」と表示され、「 Restored 」列に「 yes 」と表示されている場合は、障害のあるコントローラをシャットダウンしても安全です。</p>
+</li>
+<li>
+<p>「キー・マネージャ」タイプに「 onboard 」と表示され、「 restored 」列に「 yes 」と表示されている場合は、いくつかの追加手順を実行する必要があります。</p>
+</li>
+<li>
+<p>「キー・マネージャ」タイプに「外部」が表示され、「復元」列に「はい」以外の項目が表示されている場合は、いくつかの追加手順を実行する必要があります。</p>
+</li>
+<li>
+<p>'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' 以外の項目が表示されている場合は ' 追加の手順を実行する必要があります</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' と表示されている場合は 'OKM 情報を手動でバックアップします</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」</p>
+</li>
+<li>
+<p>コマンドを入力して、キー管理情報「 securitykey-manager onboard show-backup 」を表示します</p>
+</li>
+<li>
+<p>バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。</p>
+</li>
+<li>
+<p>admin モードに戻ります。 'set-priv admin'</p>
+</li>
+<li>
+<p>障害のあるコントローラをシャットダウンします。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>「キー・マネージャ」タイプに「外部」が表示され、「リストア済み」列に「はい」以外の項目が表示される場合：</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>外部キー管理の認証キーをクラスタ内のすべてのノードにリストアします：「 securitykey-manager external restore</p>
+<div class="paragraph">
+<p>コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a href="http://mysupport.netapp.com/">"mysupport.netapp.com"</a></p>
+</div>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>すべての認証キーについて 'restored' カラムが 'yes' になっていることを確認しますつまり 'security key-manager key-query' です</p>
+</li>
+<li>
+<p>障害のあるコントローラをシャットダウンします。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' 以外の項目が表示される場合は ' 次の手順を実行します</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>onboard security key-manager sync コマンド「 security key-manager sync 」を入力します</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。 <a href="http://mysupport.netapp.com/">"mysupport.netapp.com"</a>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>すべての認証キーについて 'restored' カラムに yes と表示されていることを確認します security key-manager key-query</p>
+</li>
+<li>
+<p>「キーマネージャ」タイプに「 onboard 」と表示されていることを確認し、 OKM 情報を手動でバックアップします。</p>
+</li>
+<li>
+<p>advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」</p>
+</li>
+<li>
+<p>コマンドを入力して、キー管理バックアップ情報を表示します。「 securitykey-manager onboard show-backup 」</p>
+</li>
+<li>
+<p>バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。</p>
+</li>
+<li>
+<p>admin モードに戻ります。 'set-priv admin'</p>
+</li>
+<li>
+<p>コントローラは安全にシャットダウンできます。</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="nse-の設定を確認-2">NSE の設定を確認</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>キー管理サーバに格納されている認証キーのキー ID を表示します。「 security key-manager key-query-key-type NSE-AK</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+ONTAP 9.6 リリース以降では、キー管理ツールのタイプが追加されることがあります。タイプは「 KMIP 」、「 AKV 」、「 GCP 」です。これらのタイプを確認するプロセスは 'external' または 'onboard のキー管理タイプを確認するプロセスと同じです
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>「キー・マネージャ」タイプに「 external 」と表示され、「 Restored 」列に「 yes 」と表示されている場合は、障害のあるコントローラをシャットダウンしても安全です。</p>
+</li>
+<li>
+<p>「キー・マネージャ」タイプに「 onboard 」と表示され、「 restored 」列に「 yes 」と表示されている場合は、いくつかの追加手順を実行する必要があります。</p>
+</li>
+<li>
+<p>「キー・マネージャ」タイプに「外部」が表示され、「復元」列に「はい」以外の項目が表示されている場合は、いくつかの追加手順を実行する必要があります。</p>
+</li>
+<li>
+<p>「キー・マネージャ」タイプに「外部」が表示され、「復元」列に「はい」以外の項目が表示されている場合は、いくつかの追加手順を実行する必要があります。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' と表示されている場合は 'OKM 情報を手動でバックアップします</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」</p>
+</li>
+<li>
+<p>コマンドを入力して、キー管理情報「 securitykey-manager onboard show-backup 」を表示します</p>
+</li>
+<li>
+<p>バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。</p>
+</li>
+<li>
+<p>admin モードに戻ります。 'set-priv admin'</p>
+</li>
+<li>
+<p>コントローラは安全にシャットダウンできます。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>「キー・マネージャ」タイプに「外部」が表示され、「リストア済み」列に「はい」以外の項目が表示される場合：</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>onboard security key-manager sync コマンド「 security key-manager external sync 」を入力します</p>
+<div class="paragraph">
+<p>コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a href="http://mysupport.netapp.com/">"mysupport.netapp.com"</a></p>
+</div>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>すべての認証キーについて 'restored' カラムが 'yes' になっていることを確認しますつまり 'security key-manager key-query' です</p>
+</li>
+<li>
+<p>コントローラは安全にシャットダウンできます。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' 以外の項目が表示される場合は ' 次の手順を実行します</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>onboard security key-manager sync コマンド「 security key-manager sync 」を入力します</p>
+<div class="paragraph">
+<p>プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a href="http://mysupport.netapp.com/">"mysupport.netapp.com"</a></p>
+</div>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>すべての認証キーについて 'restored' カラムに yes と表示されていることを確認します security key-manager key-query</p>
+</li>
+<li>
+<p>「キーマネージャ」タイプに「 onboard 」と表示されていることを確認し、 OKM 情報を手動でバックアップします。</p>
+</li>
+<li>
+<p>advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」</p>
+</li>
+<li>
+<p>コマンドを入力して、キー管理バックアップ情報を表示します。「 securitykey-manager onboard show-backup 」</p>
+</li>
+<li>
+<p>バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。</p>
+</li>
+<li>
+<p>admin モードに戻ります。 'set-priv admin'</p>
+</li>
+<li>
+<p>コントローラは安全にシャットダウンできます。</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
