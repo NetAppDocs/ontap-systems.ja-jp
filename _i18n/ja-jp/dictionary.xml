@@ -5556,7 +5556,6 @@
   <block id="29d730ab27c3a5abafda950a34d545ff" category="doc">PCIe カードを交換してください - AFF A300</block>
   <block id="03d0d86c8a44fa1fcb7cccb7e807f2bd" category="doc">NVMEM バッテリを交換してください - AFF A300</block>
   <block id="0abaa421c46070cd2ec45f7bc5586da5" category="paragraph">ギブバックを実行します。「 storage failover giveback -ofnode replacement_node_name 」</block>
-  <block id="add009983e63f2b0d108525989c12028" category="section-title">手順 7 （ 2 ノード MetroCluster のみ）：アグリゲートをスイッチバックする</block>
   <block id="3f7f4ac12f292fdfd3a03d2e6ca590ad" category="summary">AFF A300 システムのドキュメントでは、システムの設置、セットアップ、および保守を行うことができます。</block>
   <block id="8c8521d7bd33c3aaeafeef557f4eadbb" category="doc">AFF A300 システムドキュメント</block>
   <block id="14dcd64a8e337723e8b53ea592f0d173" category="doc">電源装置を交換してください - AFF A300</block>
@@ -8544,4 +8543,5 @@
   <block id="3f91c59c59a1243cb3f176daf3c9c054" category="list-text">ノードを通常動作に戻します。</block>
   <block id="eb90dbf89cffd9812a8720d277f30583" category="summary">これらのリンクから、 AFF および FAS の他のプラットフォームのドキュメントを参照できます。</block>
   <block id="0f40216c1ad47c12e8ccc087d555570f" category="sidebar">ONTAP リリースノート</block>
+  <block id="c0a1a3a5bc62ecf46953d4c7ebde86a7" category="section-title">手順 6 ：（ 2 ノード MetroCluster のみ）：アグリゲートをスイッチバックします</block>
 </blocks>
