@@ -65,6 +65,9 @@ entries:
   - title: DIMM
     pdf-filename: AFF A700s DIMM
     url: "/a700s/dimm-replace.html"
+  - title: ドライブ
+    pdf-filename: AFF A700s ドライブ
+    url: "/a700s/drive-replace.html"
   - title: ファン
     entries:
     - title: 障害ノードをシャットダウンします

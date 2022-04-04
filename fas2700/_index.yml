@@ -5,6 +5,8 @@ indexpage:
     links:
     - title: ONTAP リリースノート
       url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+    - title: 新機能
+      url: "../whats-new.html"
     - title: システムデータシート
       url: https://www.netapp.com/media/8937-ds-3929.pdf
     - title: ストレージデータシート

@@ -8,8 +8,8 @@
 ノード 1 にインストールされている ONTAP 9 のバージョンが異なる場合は、ノード 3 をネットブートする必要があります。node3 のインストールが完了したら、 Web サーバに保存されている ONTAP 9 イメージからブートします。その後、の手順に従って、後続のシステムのブートに使用する正しいファイルをブートメディアデバイスにダウンロードできます link:prepare_for_netboot.html["ネットブートを準備"]。
 
 .重要
-* ストレージアレイに接続されている V シリーズシステム、またはストレージアレイに接続された FlexArray 仮想化ソフトウェアを使用するシステムをアップグレードする場合は、を完了する必要があります <<auto_install3_step1,手順 1.>> から <<auto_install3_step21,手順 21>>をクリックしてから、このセクションの指示に従います link:set_fc_or_uta_uta2_config_on_node3.html#configure-fc-ports-on-node3["ノード 3 の FC ポートを設定"] および  必要に応じて、メンテナンスモードでコマンドを入力します。その後、このセクションに戻ってからを使用して再開する必要があります <<auto_install3_step23,手順 23>>。
-* ストレージディスクが搭載されたシステムをアップグレードする場合は、このセクション全体を完了して、にアクセスする必要があります link:set_fc_or_uta_uta2_config_on_node3.html#configure-fc-ports-on-node3["ノード 3 の FC ポートを設定"] および  セクションで、クラスタ・プロンプトでコマンドを入力します。
+* ストレージアレイに接続されている V シリーズシステム、またはストレージアレイに接続された FlexArray 仮想化ソフトウェアを使用するシステムをアップグレードする場合は、を完了する必要があります <<auto_install3_step1,手順 1.>> から <<auto_install3_step21,手順 21>>をクリックしてから、このセクションの指示に従います link:set_fc_or_uta_uta2_config_on_node3.html#configure-fc-ports-on-node3["ノード 3 の FC ポートを設定"] および link:set_fc_or_uta_uta2_config_on_node3.html#check-and-configure-utauta2-ports-on-node3["ノード 3 の UTA / UTA2 ポートを確認して設定してください"] 必要に応じて、メンテナンスモードでコマンドを入力します。その後、このセクションに戻ってからを使用して再開する必要があります <<auto_install3_step23,手順 23>>。
+* ストレージディスクが搭載されたシステムをアップグレードする場合は、このセクション全体を完了して、にアクセスする必要があります link:set_fc_or_uta_uta2_config_on_node3.html#configure-fc-ports-on-node3["ノード 3 の FC ポートを設定"] および link:set_fc_or_uta_uta2_config_on_node3.html#check-and-configure-utauta2-ports-on-node3["ノード 3 の UTA / UTA2 ポートを確認して設定してください"] セクションで、クラスタ・プロンプトでコマンドを入力します。
 
 
 .手順

@@ -2492,7 +2492,6 @@
   <block id="8a0d213b82dba7e159bf42a3ac99febf" category="list-text">環境変数が正しく設定されていることを確認します。</block>
   <block id="28267e3d063c489c0ed82d1f0863da80" category="paragraph">ONTAP プロンプトから問題、 system node halt -skip-lif-migration-before-shutdown true -ignore-quorum -warnings true -inhibit-takeover true コマンドを実行できます。</block>
   <block id="65abf086161519d5b7303801f17badfc" category="list-text">環境変数が正しく設定されていない場合は 'setenv_environment-variable-name___ changed-value_` コマンドで変更します</block>
-  <block id="a9ff665cf855e59641b71498bd066dc2" category="list-text">「 avenev 」コマンドを使用して変更を保存します。</block>
   <block id="d512ecec76aa43a3417c7b9f7ac216b3" category="list-text">ノードをリブートします。</block>
   <block id="92ccf13258bf9f740502601a8edd96f2" category="list-text">リブートされた障害ノードに「 Waiting for giveback... 」というメッセージが表示されたら、正常なノードからギブバックを実行します。</block>
   <block id="9779333e2154119b2b5972805e7dda90" category="cell">システムの構成</block>
@@ -3683,7 +3682,6 @@
   <block id="d7f3697202a93edfa9694f456f135d47" category="section-title">オプション 3 ： 2 ノード MetroCluster 構成のシステムにシステム ID を手動で再割り当てする</block>
   <block id="1903509c2e0527e99c5b6bf04998c1bd" category="doc">NVMEM バッテリを交換します - AFF A220 および FAS2700</block>
   <block id="f8513ba35fb79fff664658165975390f" category="list-text">バッテリプラグをコントローラモジュールに再接続します。</block>
-  <block id="e899cd265eb0284d156930495e1a6147" category="doc">AFF A220 および FAS2700 システムのマニュアル</block>
   <block id="4a548135158bf0dbaee8622657e29f8a" category="doc">障害のあるコントローラ AFF A220 および FAS2700 をシャットダウンします</block>
   <block id="7322467d01726afa3b63a66bb748a30d" category="doc">リカバリイメージ AFF A220 および FAS2700 をブートします</block>
   <block id="9da34b3563e3dc0c838ac5494efca1fe" category="doc">必要に応じて、 OKM 、 NSE 、 NVE をリストアします - AFF A220 および FAS2700</block>
@@ -7313,7 +7311,6 @@
   <block id="0d41b873813de2203d2c7cc22322899d" category="list-text">次のアニメーションや図を使用して、 2 台のドライブシェルフにコントローラをケーブル接続します。</block>
   <block id="f7a5a513bed985929212bb6fb12674e1" category="list-text">次の図を使用して、 2 台のドライブシェルフにコントローラをケーブル接続します。</block>
   <block id="be28c3d24688dc5b9d0391b67c1b3f40" category="paragraph">[+]<block ref="91b9dae90e904c2901e5a02752e081c0" category="inline-link-rx"></block></block>
-  <block id="77d9df2bb55558446417de1799833272" category="doc">Cisco および Broadcom 対応のクラスタスイッチ、ストレージスイッチ、管理スイッチ</block>
   <block id="bd397018360b37f0581b599a75518e00" category="paragraph">これらのリンクからスイッチのマニュアルを参照できます。</block>
   <block id="fcad6ad7a3d292b04f7014170c512dec" category="list-text"><block ref="fcad6ad7a3d292b04f7014170c512dec" category="inline-link-macro-rx"></block></block>
   <block id="3fa05a8d523c4bde34121d2cb916f642" category="list-text"><block ref="3fa05a8d523c4bde34121d2cb916f642" category="inline-link-macro-rx"></block></block>
@@ -8167,7 +8164,6 @@
   <block id="e43128f7c789cef4c5803c71a455e62b" category="inline-link">『 ONTAP 9 リリースノート』にアクセスします</block>
   <block id="aee57c40ad1b8fc3b33e5e954861e270" category="paragraph"><block ref="aee57c40ad1b8fc3b33e5e954861e270" category="inline-link-rx"></block></block>
   <block id="262434bb76bf9aa49a3efe7de43d9a4e" category="sidebar">AFF および FAS システムのドキュメント</block>
-  <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">リリースノート</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
   <block id="60786ac16439455c42ee2fbe23a16c06" category="doc">コントローラモジュール交換の概要 - AFF A300</block>
   <block id="8f32b075b74f50db60cdc53341ea5195" category="doc">ブートメディア交換の概要 - AFF A300</block>
@@ -8544,4 +8540,76 @@
   <block id="eb90dbf89cffd9812a8720d277f30583" category="summary">これらのリンクから、 AFF および FAS の他のプラットフォームのドキュメントを参照できます。</block>
   <block id="0f40216c1ad47c12e8ccc087d555570f" category="sidebar">ONTAP リリースノート</block>
   <block id="c0a1a3a5bc62ecf46953d4c7ebde86a7" category="section-title">手順 6 ：（ 2 ノード MetroCluster のみ）：アグリゲートをスイッチバックします</block>
+  <block id="af844de12c61a1b2d86c05934c317256" category="summary">ドライブの交換は、ドライブで障害が発生したことを示す警告メッセージがプラットフォームからシステムコンソールに記録された場合に必要になります。さらに、オペレータ用ディスプレイパネルの障害 LED と、障害が発生したドライブの障害 LED の両方が点灯します。</block>
+  <block id="92198152754d5741f3a481c1555464b4" category="doc">SSD ドライブまたは HDD ドライブを交換してください - AFF C190</block>
+  <block id="5f807f08fe5525cbcd6708fd63eac203" category="paragraph">I/O の実行中に障害が発生したドライブを無停止で交換できます。SSD の交換用手順 は回転式でないドライブ用、 HDD の交換用手順 は回転式ドライブ用です。</block>
+  <block id="0d05e02f604e76f41068ce0c51bc6d81" category="paragraph">ドライブで障害が発生すると、どのドライブで障害が発生したかを示す警告メッセージがシステムコンソールに記録されます。さらに、オペレータ用ディスプレイパネルの障害 LED と、障害が発生したドライブの障害 LED の両方が点灯します。</block>
+  <block id="b89efb90c65765476218cc7e0cdb4195" category="list-text">ドライブを交換する前に、ベストプラクティスに従って、最新バージョンの Disk Qualification Package （ DQP ）をインストールします。</block>
+  <block id="9f2373b743cd63cae2165d916d44ed8f" category="list-text">システムコンソールから「 storage disk show -broken 」コマンドを実行して、障害が発生したディスクドライブを特定してください。</block>
+  <block id="583696e8273677d4dbae849781cbf55d" category="paragraph">障害が発生したドライブが障害ドライブのリストに表示されます。表示されない場合は、少し待ってからもう一度コマンドを実行してください。</block>
+  <block id="1bb0fd4258be50b59e46882b35acc28e" category="list-text">SED 認証が有効になっているかどうかを確認します。</block>
+  <block id="5d5aa765d031a6aec40949b1fe489f43" category="paragraph">ディスクの交換方法は、ディスクドライブの使用方法によって異なります。SED 認証が有効になっている場合は、に記載されている SED の交換手順を使用する必要があります<block ref="fc87e4868a863f484cb32d2391c4aa0d" category="inline-link-rx"></block>。SED の交換前後に行う必要のある作業についても説明しています。</block>
+  <block id="81e1b67b4176274b272b2432d79bb3a4" category="list-text">交換用ドライブがプラットフォームでサポートされていることを確認してください。を参照してください<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block>。</block>
+  <block id="35947e84e557291e52a523d2f7eefc27" category="list-text">システムのその他のコンポーネントがすべて正常に動作していることを確認します。問題がある場合は、必ずテクニカルサポートにお問い合わせください。</block>
+  <block id="dd48f304652176299be75f07f2b6523a" category="paragraph">プラットフォームでサポートされているドライブに適したオプションを選択して、障害が発生したドライブを交換します。</block>
+  <block id="4a0f8aecbf870bfdf4815f2f2ceeb53f" category="inline-link">故障したドライブのビデオを交換してください</block>
+  <block id="d6e9040aecfa516e4a65b04b455f9f8f" category="paragraph">を見ることを選ぶこともできる<block ref="3e3795a2a8fcc1e5dcfff5dff428e5f2" category="inline-link-rx"></block> 内蔵ドライブの交換用手順 の概要を示します。</block>
+  <block id="b2503ad254a75d9be517466a531e8187" category="open-title">オプション 1 ： SSD を交換する</block>
+  <block id="3862a4353217fcdcd0118bfd4cc1c05a" category="open-title">オプション 2 ： HDD を交換</block>
+  <block id="3c533ebf2f9fc11504f4940fa25f3d60" category="doc">SSD ドライブまたは HDD ドライブを交換してください - AFF A200</block>
+  <block id="8b4eefcd8e93a21d1bcd9ddea95d0b29" category="list-text">「 savenv 」コマンドを使用して、変更内容を保存します。</block>
+  <block id="b7cfb975a50851418ad4bf0bcad4933f" category="section-title">新しいハードウェアアップグレードの機能拡張</block>
+  <block id="9f6a47c67bda21bca9bc7674dc5f2c67" category="doc">SSD ドライブまたは HDD ドライブを交換してください - AFF A250</block>
+  <block id="586b0b2395e2a0e300f3fa9bf559633c" category="doc">SSD ドライブまたは HDD ドライブを交換してください - FAS2600</block>
+  <block id="b20f6d14e4d2aa074f783ed7ba24d15f" category="doc">障害が発生したドライブを交換します - AFF A200</block>
+  <block id="f24bbd8bd23b87a9a7d8b466f2edd685" category="list-text">ドライブをホットスワップする前に、 Disk Qualification Package （ DQP ）の最新バージョンをインストールすることを推奨します。</block>
+  <block id="38b15850492133a635d50ad8448e62b9" category="list-text">ディスクのホットスワップ方法は、ディスクドライブの使用方法によって異なります。SED 認証が有効になっている場合は、に記載されている SED の交換手順を使用する必要があります<block ref="fc87e4868a863f484cb32d2391c4aa0d" category="inline-link-rx"></block>。SED の交換前後に行う必要のある作業についても説明しています。</block>
+  <block id="6e3d311e755c860fa8be4786c7ffe617" category="list-text">交換用ドライブがプラットフォームでサポートされている必要があります。を参照してください<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block>。</block>
+  <block id="455e7132916e2cfdc2ed81e21742458e" category="paragraph">&lt;stdin&gt; で未解決のディレクティブ : ../ _include/drive_hotswap _sas .adoc[]</block>
+  <block id="ed6243b9da8cbb52d7ded5d7a78d3b37" category="paragraph">&lt;stdin&gt; で未解決のディレクティブ : ../ _include/drive_hotswap _sas .adoc.adoc[]</block>
+  <block id="2bed99b4660dcf909368c3a2ae62b513" category="doc">SSD ドライブまたは HDD ドライブを交換してください - AFF A800</block>
+  <block id="ad451e1c6a6a584f53b88b5c73144db7" category="doc">その他のモデル</block>
+  <block id="07fa61787cd64fafda80a8c62e643a38" category="section-title">プラットフォームモデル</block>
+  <block id="7a31198e87ee2c9071d7bf63050a7088" category="section-title">シェルフモデル</block>
+  <block id="03be12a0476133b21cb6c1c927956d23" category="doc">SSD ドライブまたは HDD ドライブを交換します - AFF A220 および FAS2700</block>
+  <block id="24b3b18d4ae3c460037fb58156d310c6" category="doc">FAS2700 システムのドキュメント</block>
+  <block id="7b8d355a80903af67d6bd3bd4c49f973" category="doc">SSD ドライブまたは HDD ドライブを交換してください - AFF A700s</block>
+  <block id="1bfc6b841bbb9beb5900ea65dba46d0d" category="sidebar">TR-4539 『 NetApp All Flash FAS 解決策 for VMware Horizon View 』</block>
+  <block id="12c860323c3b7c3ce59343f747296367" category="sidebar">AFF A220 システム</block>
+  <block id="9d01d7eb3a0827983de11cc9671e5029" category="sidebar">AFF A220 の設置とセットアップ</block>
+  <block id="01d7cd58de6e7861c757c7723be1642f" category="sidebar">AFF A220 は引き続き使用できます</block>
+  <block id="c39d4a3a07244494f50723bf4b6bee7c" category="sidebar">AFF A220 ブートメディア</block>
+  <block id="595db83f42715fcd4f8806a8433e430a" category="sidebar">AFF A220 キャッシングモジュール</block>
+  <block id="139224360f764f63e0f1a87f6575b350" category="sidebar">AFF A220 コントローラ</block>
+  <block id="f6caefdbf5b7d345e721affd6b6d9bab" category="sidebar">AFF A220 DIMM</block>
+  <block id="9e493c35f280e1be11ab7f0f286f498b" category="sidebar">AFF A220 ドライブ</block>
+  <block id="ca55628a813bde8148e26c974fb5bd2e" category="sidebar">AFF A220 リアルタイムクロックバッテリ</block>
+  <block id="abff35a157d2dacb23862f65107e6046" category="sidebar">AFF A700 システム</block>
+  <block id="32f4ca4d86bfc7a1abf3647cecc1958a" category="sidebar">AFF A700 のインストールとセットアップ</block>
+  <block id="b7d8ac4aa5747d1981de364593ecfafb" category="sidebar">AFF A700 は維持されます</block>
+  <block id="052421ddc6a5f7b7d6dadeea44c31393" category="sidebar">AFF A700 ブートメディア</block>
+  <block id="3342b2d561671b3a6adba94af79af745" category="sidebar">AFF A700 シャーシ</block>
+  <block id="7bfe8ab3ea2ac4c472be39fc05f489b1" category="sidebar">AFF A700 コントローラ</block>
+  <block id="d4f63ac2425db51a7af4d929775e79c5" category="sidebar">AFF A700 X91148A モジュール</block>
+  <block id="78d2c75e596fdde729e02a7f3810fe1f" category="sidebar">FAS2700 システム</block>
+  <block id="7940df38b8691fb00f99eee3a415bac2" category="sidebar">FAS2700 の設置とセットアップ</block>
+  <block id="789f34e0a7a0ec20087af4c807df7ad5" category="sidebar">FAS2700 で維持されます</block>
+  <block id="76de51a63a301223ddb49113a7278a3e" category="sidebar">FAS2700 ブートメディア</block>
+  <block id="a44baa6c5ec4e4f488c6169d4bc35047" category="sidebar">FAS2700 キャッシングモジュール</block>
+  <block id="48c473b9c5452c417d41b924d79d6c1c" category="sidebar">FAS2700 シャーシ</block>
+  <block id="a4cc7a945ef6ba93df52114c201edd01" category="sidebar">FAS2700 コントローラ</block>
+  <block id="c5a520bea2989fd52c3041960b69fed4" category="sidebar">FAS2700 DIMM</block>
+  <block id="f69188f77ddf41c996359e3104869fb3" category="sidebar">FAS2700 ドライブ</block>
+  <block id="abf01648d47e7b2a7ff0a2d4727b1bb3" category="sidebar">FAS2700 リアルタイムクロックバッテリ</block>
+  <block id="af3b1c3faa9bccc5b975d147d144033d" category="sidebar">FAS9000 システムの場合</block>
+  <block id="38a83ff8505f0e21e31eba00c5d34f74" category="sidebar">FAS9000 のインストールとセットアップ</block>
+  <block id="5ddc6a27c53ac9702b0d756e229caf0a" category="sidebar">FAS9000 では引き続き機能</block>
+  <block id="5fb158056328f252c445a51f600be8cf" category="sidebar">FAS9000 ブートメディア</block>
+  <block id="11a40190bb36e43cbe860e374d9ecde9" category="sidebar">FAS9000 シャーシ</block>
+  <block id="1999e7b9b8a359e0a34178719a904727" category="sidebar">FAS9000 コントローラ</block>
+  <block id="e3c2d91c7cf7bef5a04aecd6ac9a7aa2" category="sidebar">FAS9000 X91148A モジュール</block>
+  <block id="3b4f8423fb92aace5b1c957248b6fd18" category="sidebar">キャビネットおよびレールキット</block>
+  <block id="45f409f69b4619cb11a8c9066bd236ac" category="sidebar">AFF A200 ドライブ</block>
+  <block id="bda8b2764dc533181c801be2c8b33b73" category="sidebar">AFF A220 および FAS2700 ドライブ</block>
+  <block id="7cc615fcffd37b0f004ba9169b5db521" category="sidebar">AFF A700s ドライブ</block>
 </blocks>

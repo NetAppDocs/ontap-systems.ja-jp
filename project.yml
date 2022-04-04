@@ -3,7 +3,7 @@ settings:
   search: ontap-systems
   name: ONTAP Systems
   internal:
-    pdf_enabled: true
+    pdf_enabled: false
   prod:
     pdf_enabled: true
     harmony_enabled: false
@@ -12,30 +12,444 @@ sidebar:
   entries:
   - title: AFF および FAS システムのドキュメント
     url: "/index.html"
-  - title: リリースノート
+  - title: はじめに
     entries:
     - title: 新機能
       url: "/whats-new.html"
     - title: リリースノート
       url: "/rel-notes.html"
-  - section: a200
-  - section: fas2700
-  - section: a250
-  - section: a300
-  - section: a320
-  - section: a400
-  - section: fas9000
-  - section: a700s
-  - section: a800
-  - section: a900
-  - section: c190
-  - section: fas2600
-  - section: fas500f
-  - section: fas8200
-  - section: fas8300
-  - section: platform-supplemental
-  - section: ns224
-  - section: sas3
-  - section: other
+  - title: AFF システム
+    entries:
+    - section: c190
+    - section: a200
+    - title: AFF A220 システム
+      url: "/fas2700/index.html"
+      entries:
+      - title: 設置とセットアップ
+        pdf-filename: AFF A220 の設置とセットアップ
+        entries:
+        - title: インストールとセットアップを選択します
+          url: "/fas2700/install-setup.html"
+        - title: クイックステップ
+          url: "/fas2700/install-quick-guide.html"
+        - title: ビデオの手順
+          url: "/fas2700/install-videos.html"
+        - title: 詳細な手順
+          url: "/fas2700/install-detailed-guide.html"
+      - title: メンテナンス
+        pdf-filename: AFF A220 は引き続き使用できます
+        entries:
+        - title: ブートメディア
+          pdf-filename: AFF A220 ブートメディア
+          entries:
+          - title: 概要
+            url: "/fas2700/bootmedia-replace-overview.html"
+          - title: オンボード暗号化キーを確認
+            url: "/fas2700/bootmedia-encryption-preshutdown-checks.html"
+          - title: 障害のあるコントローラをシャットダウンします
+            url: "/fas2700/bootmedia-impaired-controller-shutdown.html"
+          - title: ブートイメージを交換します
+            url: "/fas2700/bootmedia-replace.html"
+          - title: ブートイメージを起動します
+            url: "/fas2700/bootmedia-recovery-image-boot-non-2n-mcc.html"
+          - title: OKM 、 NSE 、 NVE をリストアします
+            url: "/fas2700/bootmedia-encryption-restore.html"
+          - title: 障害のある部品をネットアップに返却します
+            url: "/fas2700/bootmedia-complete-rma.html"
+        - title: キャッシングモジュール
+          pdf-filename: AFF A220 キャッシングモジュール
+          url: "/fas2700/caching-module-replace.html"
+        - title: シャーシ
+          pdf-filename: AFF A220 および FAS2700 シャーシ
+          entries:
+          - title: 概要
+            url: "/fas2700/chassis-replace-overview.html"
+          - title: 障害のあるコントローラをシャットダウンします
+            url: "/fas2700/chassis-replace-shutdown.html"
+          - title: ハードウェアを交換します
+            url: "/fas2700/chassis-replace-move-hardware.html"
+          - title: 構成をリストアする
+            url: "/fas2700/chassis-replace-complete-system-restore-rma.html"
+        - title: コントローラ
+          pdf-filename: AFF A220 コントローラ
+          entries:
+          - title: 概要
+            url: "/fas2700/controller-replace-overview.html"
+          - title: 障害のあるコントローラをシャットダウンします
+            url: "/fas2700/controller-replace-shutdown.html"
+          - title: コントローラハードウェアを交換します
+            url: "/fas2700/controller-replace-move-hardware.html"
+          - title: システム設定を復元します
+            url: "/fas2700/controller-replace-system-config-restore-and-verify.html"
+          - title: システムにケーブルを再接続
+            url: "/fas2700/controller-replace-recable-reassign-disks.html"
+          - title: システムのリストアを完了
+            url: "/fas2700/controller-replace-restore-system-rma.html"
+        - title: DIMM
+          pdf-filename: AFF A220 DIMM
+          url: "/fas2700/dimm-replace.html"
+        - title: ドライブ
+          pdf-filename: AFF A220 ドライブ
+          url: "/fas2700/drive-replace.html"
+        - title: NVMEM バッテリ
+          pdf-filename: AFF A220 / FAS2700 NVMEM バッテリ
+          url: "/fas2700/nvmem-nvram-battery-replace.html"
+        - title: 電源装置
+          pdf-filename: AFF A220 および FAS2700 の電源装置
+          url: "/fas2700/power-supply-swap-out.html"
+        - title: リアルタイムクロックバッテリ
+          pdf-filename: AFF A220 リアルタイムクロックバッテリ
+          url: "/fas2700/rtc-battery-replace.html"
+    - section: a250
+    - section: a300
+    - section: a320
+    - section: a400
+    - title: AFF A700 システム
+      url: "/fas9000/index.html"
+      entries:
+      - title: 設置とセットアップ
+        pdf-filename: AFF A700 のインストールとセットアップ
+        entries:
+        - title: インストールとセットアップを選択します
+          url: "/fas9000/install-setup.html"
+        - title: クイックステップ
+          url: "/fas9000/install-quick-guide.html"
+        - title: ビデオの手順
+          url: "/fas9000/install-videos.html"
+        - title: 詳細な手順
+          url: "/fas9000/install-detailed-guide.html"
+      - title: メンテナンス
+        pdf-filename: AFF A700 は維持されます
+        entries:
+        - title: ブートメディア
+          pdf-filename: AFF A700 ブートメディア
+          entries:
+          - title: 概要
+            url: "/fas9000/bootmedia-replace-overview.html"
+          - title: オンボード暗号化キーを確認
+            url: "/fas9000/bootmedia-encryption-preshutdown-checks.html"
+          - title: 障害のあるコントローラをシャットダウンします
+            url: "/fas9000/bootmedia-impaired-controller-shutdown.html"
+          - title: ブートイメージを交換します
+            url: "/fas9000/bootmedia-replace.html"
+          - title: ブートイメージを起動します
+            url: "/fas9000/bootmedia-recovery-image-boot-options.html"
+          - title: MetroCluster の設定をスイッチバックします
+            url: "/fas9000/bootmedia-2n-mcc-switchback.html"
+          - title: OKM 、 NSE 、 NVE をリストアします
+            url: "/fas9000/bootmedia-encryption-restore.html"
+          - title: 障害のある部品をネットアップに返却します
+            url: "/fas9000/bootmedia-complete-rma.html"
+        - title: キャッシングモジュール
+          url: "/fas9000/caching-module-and-core-dump-module-replace.html"
+        - title: キャッシングモジュール（ホットスワップ）
+          url: "/fas9000/caching-module-hot-swap.html"
+        - title: シャーシ
+          pdf-filename: AFF A700 シャーシ
+          entries:
+          - title: 概要
+            url: "/fas9000/chassis-replace-overview.html"
+          - title: 障害のあるコントローラをシャットダウンします
+            url: "/fas9000/chassis-replace-shutdown.html"
+          - title: ハードウェアを交換します
+            url: "/fas9000/chassis-replace-move-hardware.html"
+          - title: 交換後の処理
+            url: "/fas9000/chassis-replace-complete-system-restore-rma.html"
+        - title: コントローラモジュール
+          pdf-filename: AFF A700 コントローラ
+          entries:
+          - title: 概要
+            url: "/fas9000/controller-replace-overview.html"
+          - title: 障害のあるコントローラをシャットダウンします
+            url: "/fas9000/controller-replace-shutdown.html"
+          - title: コントローラモジュールを交換します
+            url: "/fas9000/controller-replace.html"
+          - title: システム設定を復元します
+            url: "/fas9000/controller-replace-system-config-restore-and-verify.html"
+          - title: システムにケーブルを再接続
+            url: "/fas9000/controller-replace-recable-reassign-disks.html"
+          - title: システムのリストアを完了
+            url: "/fas9000/controller-replace-complete-system-restoration.html"
+        - title: DCPM を実行します
+          url: "/fas9000/dcpm-nvram10-battery-replace.html"
+        - title: DIMM
+          url: "/fas9000/dimm-replace.html"
+        - title: ファン
+          url: "/fas9000/fan-swap-out.html"
+        - title: I/O モジュール
+          url: "/fas9000/pci-cards-and-risers-replace.html"
+        - title: LED USB モジュール
+          url: "/fas9000/led-module-replace.html"
+        - title: NVRAM
+          url: "/fas9000/nvram-module-or-nvram-dimm-replacement.html"
+        - title: 電源装置
+          url: "/fas9000/power-supply-swap-out.html"
+        - title: RTC バッテリ
+          url: "/fas9000/rtc-battery-replace.html"
+        - title: X91148A モジュール
+          pdf-filename: AFF A700 X91148A モジュール
+          entries:
+          - title: 概要
+            url: "/fas9000/x91148a-module-install-overview.html"
+          - title: オープンスロットを備えた AFF A700 システム
+            url: "/fas9000/x91148a-modules-with-open-slots-add.html"
+          - title: AFF A700 システムにオープンスロットがありません
+            url: "/fas9000/x91148a-modules-with-no-open-slots-add.html"
+    - section: a700s
+    - section: a800
+    - section: a900
+  - title: FAS システム
+    entries:
+    - section: fas500f
+    - section: fas2600
+    - title: FAS2700 システム
+      url: "/fas2700/index.html"
+      entries:
+      - title: 設置とセットアップ
+        pdf-filename: FAS2700 の設置とセットアップ
+        entries:
+        - title: インストールとセットアップを選択します
+          url: "/fas2700/install-setup.html"
+        - title: クイックステップ
+          url: "/fas2700/install-quick-guide.html"
+        - title: ビデオの手順
+          url: "/fas2700/install-videos.html"
+        - title: 詳細な手順
+          url: "/fas2700/install-detailed-guide.html"
+      - title: メンテナンス
+        pdf-filename: FAS2700 で維持されます
+        entries:
+        - title: ブートメディア
+          pdf-filename: FAS2700 ブートメディア
+          entries:
+          - title: 概要
+            url: "/fas2700/bootmedia-replace-overview.html"
+          - title: オンボード暗号化キーを確認
+            url: "/fas2700/bootmedia-encryption-preshutdown-checks.html"
+          - title: 障害のあるコントローラをシャットダウンします
+            url: "/fas2700/bootmedia-impaired-controller-shutdown.html"
+          - title: ブートイメージを交換します
+            url: "/fas2700/bootmedia-replace.html"
+          - title: ブートイメージを起動します
+            url: "/fas2700/bootmedia-recovery-image-boot-non-2n-mcc.html"
+          - title: OKM 、 NSE 、 NVE をリストアします
+            url: "/fas2700/bootmedia-encryption-restore.html"
+          - title: 障害のある部品をネットアップに返却します
+            url: "/fas2700/bootmedia-complete-rma.html"
+        - title: キャッシングモジュール
+          pdf-filename: FAS2700 キャッシングモジュール
+          url: "/fas2700/caching-module-replace.html"
+        - title: シャーシ
+          pdf-filename: FAS2700 シャーシ
+          entries:
+          - title: 概要
+            url: "/fas2700/chassis-replace-overview.html"
+          - title: 障害のあるコントローラをシャットダウンします
+            url: "/fas2700/chassis-replace-shutdown.html"
+          - title: ハードウェアを交換します
+            url: "/fas2700/chassis-replace-move-hardware.html"
+          - title: 構成をリストアする
+            url: "/fas2700/chassis-replace-complete-system-restore-rma.html"
+        - title: コントローラ
+          pdf-filename: FAS2700 コントローラ
+          entries:
+          - title: 概要
+            url: "/fas2700/controller-replace-overview.html"
+          - title: 障害のあるコントローラをシャットダウンします
+            url: "/fas2700/controller-replace-shutdown.html"
+          - title: コントローラハードウェアを交換します
+            url: "/fas2700/controller-replace-move-hardware.html"
+          - title: システム設定を復元します
+            url: "/fas2700/controller-replace-system-config-restore-and-verify.html"
+          - title: システムにケーブルを再接続
+            url: "/fas2700/controller-replace-recable-reassign-disks.html"
+          - title: システムのリストアを完了
+            url: "/fas2700/controller-replace-restore-system-rma.html"
+        - title: DIMM
+          pdf-filename: FAS2700 DIMM
+          url: "/fas2700/dimm-replace.html"
+        - title: ドライブ
+          pdf-filename: FAS2700 ドライブ
+          url: "/fas2700/drive-replace.html"
+        - title: NVMEM バッテリ
+          pdf-filename: AFF A220 / FAS2700 NVMEM バッテリ
+          url: "/fas2700/nvmem-nvram-battery-replace.html"
+        - title: 電源装置
+          pdf-filename: AFF A220 および FAS2700 の電源装置
+          url: "/fas2700/power-supply-swap-out.html"
+        - title: リアルタイムクロックバッテリ
+          pdf-filename: FAS2700 リアルタイムクロックバッテリ
+          url: "/fas2700/rtc-battery-replace.html"
+    - section: fas8200
+    - section: fas8300
+    - title: FAS9000 システムの場合
+      url: "/fas9000/index.html"
+      entries:
+      - title: 設置とセットアップ
+        pdf-filename: FAS9000 のインストールとセットアップ
+        entries:
+        - title: インストールとセットアップを選択します
+          url: "/fas9000/install-setup.html"
+        - title: クイックステップ
+          url: "/fas9000/install-quick-guide.html"
+        - title: ビデオの手順
+          url: "/fas9000/install-videos.html"
+        - title: 詳細な手順
+          url: "/fas9000/install-detailed-guide.html"
+      - title: メンテナンス
+        pdf-filename: FAS9000 では引き続き機能
+        entries:
+        - title: ブートメディア
+          pdf-filename: FAS9000 ブートメディア
+          entries:
+          - title: 概要
+            url: "/fas9000/bootmedia-replace-overview.html"
+          - title: オンボード暗号化キーを確認
+            url: "/fas9000/bootmedia-encryption-preshutdown-checks.html"
+          - title: 障害のあるコントローラをシャットダウンします
+            url: "/fas9000/bootmedia-impaired-controller-shutdown.html"
+          - title: ブートイメージを交換します
+            url: "/fas9000/bootmedia-replace.html"
+          - title: ブートイメージを起動します
+            url: "/fas9000/bootmedia-recovery-image-boot-options.html"
+          - title: MetroCluster の設定をスイッチバックします
+            url: "/fas9000/bootmedia-2n-mcc-switchback.html"
+          - title: OKM 、 NSE 、 NVE をリストアします
+            url: "/fas9000/bootmedia-encryption-restore.html"
+          - title: 障害のある部品をネットアップに返却します
+            url: "/fas9000/bootmedia-complete-rma.html"
+        - title: キャッシングモジュール
+          url: "/fas9000/caching-module-and-core-dump-module-replace.html"
+        - title: キャッシングモジュール（ホットスワップ）
+          url: "/fas9000/caching-module-hot-swap.html"
+        - title: シャーシ
+          pdf-filename: FAS9000 シャーシ
+          entries:
+          - title: 概要
+            url: "/fas9000/chassis-replace-overview.html"
+          - title: 障害のあるコントローラをシャットダウンします
+            url: "/fas9000/chassis-replace-shutdown.html"
+          - title: ハードウェアを交換します
+            url: "/fas9000/chassis-replace-move-hardware.html"
+          - title: 交換後の処理
+            url: "/fas9000/chassis-replace-complete-system-restore-rma.html"
+        - title: コントローラモジュール
+          pdf-filename: FAS9000 コントローラ
+          entries:
+          - title: 概要
+            url: "/fas9000/controller-replace-overview.html"
+          - title: 障害のあるコントローラをシャットダウンします
+            url: "/fas9000/controller-replace-shutdown.html"
+          - title: コントローラモジュールを交換します
+            url: "/fas9000/controller-replace.html"
+          - title: システム設定を復元します
+            url: "/fas9000/controller-replace-system-config-restore-and-verify.html"
+          - title: システムにケーブルを再接続
+            url: "/fas9000/controller-replace-recable-reassign-disks.html"
+          - title: システムのリストアを完了
+            url: "/fas9000/controller-replace-complete-system-restoration.html"
+        - title: DCPM を実行します
+          url: "/fas9000/dcpm-nvram10-battery-replace.html"
+        - title: DIMM
+          url: "/fas9000/dimm-replace.html"
+        - title: ファン
+          url: "/fas9000/fan-swap-out.html"
+        - title: I/O モジュール
+          url: "/fas9000/pci-cards-and-risers-replace.html"
+        - title: LED USB モジュール
+          url: "/fas9000/led-module-replace.html"
+        - title: NVRAM
+          url: "/fas9000/nvram-module-or-nvram-dimm-replacement.html"
+        - title: 電源装置
+          url: "/fas9000/power-supply-swap-out.html"
+        - title: RTC バッテリ
+          url: "/fas9000/rtc-battery-replace.html"
+        - title: X91148A モジュール
+          pdf-filename: FAS9000 X91148A モジュール
+          entries:
+          - title: 概要
+            url: "/fas9000/x91148a-module-install-overview.html"
+          - title: オープンスロットを備えた AFF A700 システム
+            url: "/fas9000/x91148a-modules-with-open-slots-add.html"
+          - title: AFF A700 システムにオープンスロットがありません
+            url: "/fas9000/x91148a-modules-with-no-open-slots-add.html"
+  - title: オール SAN アレイシステム
+    url: "/platform-supplemental/all-san-array.html"
+  - title: システムレベルの診断
+    entries:
+    - title: はじめに
+      url: "/platform-supplemental/sldiag-introduction.html"
+    - title: 要件
+      url: "/platform-supplemental/sldiag-requirements.html"
+    - title: コマンドラインヘルプの使用方法
+      url: "/platform-supplemental/sldiag-use-cli-help.html"
+    - title: システムのインストール診断を実行します
+      url: "/platform-supplemental/sldiag-system-installation-diagnostics.html"
+    - title: システムパニック診断を実行します
+      url: "/platform-supplemental/sldiag-system-panic-diagnostics.html"
+    - title: システム応答の遅延診断を実行します
+      url: "/platform-supplemental/sldiag-slow-system-diagnostics.html"
+    - title: ハードウェアの設置診断を実行します
+      url: "/platform-supplemental/sldiag-hardware-installation-diagnostics.html"
+    - title: デバイス障害診断を実行します
+      url: "/platform-supplemental/sldiag-device-failure-diagnostics.html"
+  - title: ドライブシェルフ
+    entries:
+    - section: ns224
+    - section: sas3
+  - title: スイッチ
+    url: "/other/switch-linkout.html"
+  - title: キャビネットおよびレールキット
+    entries:
+    - title: SuperRail キット
+      url: "/platform-supplemental/superrail-install.html"
+    - title: AFF A700 / FAS9000 2 ポストレールキット
+      url: "/platform-supplemental/telco-installation-instructions.html"
+    - title: 42U 1280 mm システムキャビネット
+      entries:
+      - title: キャビネットを設置する準備をします
+        entries:
+        - title: キャビネットの機能
+          url: "/platform-supplemental/42u-1280mm-features.html"
+        - title: 必要な工具 / 機器
+          url: "/platform-supplemental/42u-1280mm-required-tools.html"
+        - title: 必要なスペースとキャビネットの寸法
+          url: "/platform-supplemental/42u-1280mm-space-and-dimensions.html"
+        - title: サポートされている PDU のタイプと仕様
+          url: "/platform-supplemental/42u-1280mm-supported-pdu-types-and-specifications.html"
+      - title: システムキャビネットを開梱します
+        url: "/platform-supplemental/42u-1280mm-unpack.html"
+      - title: キャビネットを設置
+        entries:
+        - title: 概要
+          url: "/platform-supplemental/42u-1280mm-install.html"
+        - title: キャビネットインターコネクトキットを設置
+          url: "/platform-supplemental/42u-1280mm-install-cabinet-interconnect-kit.html"
+        - title: ボルトダウンキットを取り付ける
+          url: "/platform-supplemental/42u-1280mm-install-bolt-down-kit.html"
+        - title: サポートレールを取り付けます
+          url: "/platform-supplemental/42u-1280mm-install-additional-rails.html"
+        - title: 機器を設置します
+          url: "/platform-supplemental/42u-1280mm-install-equipment.html"
+        - title: キャビネットの電源をオンにします
+          url: "/platform-supplemental/42u-1280mm-power-on.html"
+      - title: PDU を交換します
+        url: "/platform-supplemental/42u-1280mm-replace-pdus.html"
+      - title: キャビネット前面ドアを反転します
+        entries:
+        - title: 必要なもの
+          url: "/platform-supplemental/42u-1280mm-reverse-front-door.html"
+        - title: 照光バッジを取り外します
+          url: "/platform-supplemental/42u-1280mm-remove-illuminated-badge.html"
+        - title: キャビネットドアを取り外します
+          url: "/platform-supplemental/42u-1280mm-remove-door.html"
+        - title: バッジの電源装置とケーブルを移動します
+          url: "/platform-supplemental/42u-1280mm-move-badge-ps-and-cabling.html"
+        - title: リバースドアヒンジとロックキャッチ
+          url: "/platform-supplemental/42u-1280mm-reverse-hinge-and-lock.html"
+        - title: ドアと照光バッジを再度取り付けます
+          url: "/platform-supplemental/42u-1280mm-reinstall-door-and-badge.html"
+  - title: その他のモデル
+    url: "/other/other-models.html"
   - title: 法的通知
     url: "/legal-notices.html"

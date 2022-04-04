@@ -1,0 +1,37 @@
+= 
+
+
+[cols="25h,~,~"]
+|===
+| 機能性 | 概要 と詳細情報の入手方法 | 最初から利用可能です 
+
+
+ a| 
+NS224 ドライブシェルフのプラットフォームサポートが拡張されました
+ a| 
+次のプラットフォームで NS224 ドライブシェルフがサポートされます。
+
+* AFF A800/AFF ASA A800
+* AFF A700 / AFF ASA A700
+* AFF A250/AFF ASA A250
+* FAS500f
+
+ a| 
+ONTAP 9.8
+
+
+
+ a| 
+6Gb SAS ストレージスタックへの 12Gb SAS シェルフのホットアド
+ a| 
+SAS ストレージスタックでは、 6Gb から 12Gb への単一速度の移行がサポートされるようになりました。これにより、既存の 6Gb スタックと 12Gb シェルフを拡張することができます。
+
+https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-ds-mix-hotadd/home.html["IOM12 モジュールを搭載したシェルフを IOM6 モジュールを搭載したシェルフのスタックにホットアドします"]
+ a| 
+ONTAP 9.7P4
+
+ONTAP 9.6P9.
+
+ONTAP 9.5P14
+
+|===

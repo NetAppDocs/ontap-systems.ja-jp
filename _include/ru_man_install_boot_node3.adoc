@@ -8,7 +8,7 @@
 ただし、ノード 1 にインストールされている ONTAP 9 のバージョンが同じかそれ以降である場合は、ノード 3 をネットブートする必要はありません。
 
 
-NOTE: * 重要：ストレージアレイに接続された V シリーズシステム、またはストレージアレイに接続された FlexArray 仮想化ソフトウェアを使用するシステムをアップグレードする場合は、この作業を完了する必要があります <<man_install3_step1,手順 1.>> から <<man_install3_step5,手順 5>>をクリックします <<man_install3_step6,手順 6>> およびの手順に従ってください link:set_fc_uta_uta2_config_node3.html#configure-fc-ports-on-node3["ノード 3 の FC ポートを設定"] および  必要に応じて、保守モードでコマンドを入力します。その後、このセクションに戻ってからを使用して再開する必要があります <<man_install3_step7,手順 7>>。ただし、ストレージディスクが搭載されたシステムをアップグレードする場合は、このセクション全体を実行し、に進みます link:set_fc_uta_uta2_config_node3.html#configure-fc-ports-on-node3["ノード 3 の FC ポートを設定"] および クラスタ・プロンプトでコマンドを入力します。
+NOTE: * 重要：ストレージアレイに接続された V シリーズシステム、またはストレージアレイに接続された FlexArray 仮想化ソフトウェアを使用するシステムをアップグレードする場合は、この作業を完了する必要があります <<man_install3_step1,手順 1.>> から <<man_install3_step5,手順 5>>をクリックします <<man_install3_step6,手順 6>> およびの手順に従ってください link:set_fc_uta_uta2_config_node3.html#configure-fc-ports-on-node3["ノード 3 の FC ポートを設定"] および link:set_fc_uta_uta2_config_node3.html#check-and-configure-UTAUTA2-ports-on-node3["ノード 3 の UTA / UTA2 ポートを確認して設定してください"] 必要に応じて、保守モードでコマンドを入力します。その後、このセクションに戻ってからを使用して再開する必要があります <<man_install3_step7,手順 7>>。ただし、ストレージディスクが搭載されたシステムをアップグレードする場合は、このセクション全体を実行し、に進みます link:set_fc_uta_uta2_config_node3.html#configure-fc-ports-on-node3["ノード 3 の FC ポートを設定"] および link:set_fc_uta_uta2_config_node3.html#check-and-configure-UTAUTA2-ports-on-node3["ノード 3 の UTA / UTA2 ポートを確認して設定してください"]クラスタ・プロンプトでコマンドを入力します。
 
 .手順
 . [[man_install3_step1] ノード 3 のラックスペースがあることを確認します。
@@ -82,7 +82,7 @@ NOTE: * 注意 * ：遅延は無視しないでください。バッテリーの
 
 
 | は、 V シリーズシステム、または FlexArray 仮想化ソフトウェアがストレージアレイに接続されたシステムです  a| 
-.. に進みます link:set_fc_uta_uta2_config_node3.html["ノード 3 で FC または UTA / UTA2 設定を設定します"] をクリックし、サブセクションを完了します  および 必要に応じて、システムに適用されます。
+.. に進みます link:set_fc_uta_uta2_config_node3.html["ノード 3 で FC または UTA / UTA2 設定を設定します"] をクリックし、サブセクションを完了します link:set_fc_uta_uta2_config_node3.html#configure-fc-ports-on-node3["ノード 3 の FC ポートを設定"] および link:set_fc_uta_uta2_config_node3.html#check-and-configure-UTAUTA2-ports-on-node3["ノード 3 の UTA / UTA2 ポートを確認して設定してください"]必要に応じて、システムに適用されます。
 .. このセクションに戻って、から始めて残りの手順を実行します <<man_install3_step7,手順 7>>。
 
 

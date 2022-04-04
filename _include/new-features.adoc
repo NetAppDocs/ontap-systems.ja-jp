@@ -84,7 +84,7 @@ ONTAP 9.8
 
 
  a| 
-https://hwu.netapp.com/Switch/Index["36 ポート 100GbE Cisco スイッチ（ X190200 ）"]
+https://hwu.netapp.com/Switch/Index["36 ポート 100GbE Cisco スイッチ（ X190200 ）"] https://hwu.netapp.com/Switch/Index["32 ポート 100GbE Cisco スイッチ（ X190100 と X190100R ）"]
  a| 
 Cisco Nexus 100GbE スイッチを専用ストレージスイッチとして使用し、 NS224 NVMe ドライブシェルフを次のプラットフォームに接続できます。
 

@@ -66,6 +66,9 @@ entries:
   - title: DIMM
     pdf-filename: AFF A220 および FAS2700 DIMM
     url: "/fas2700/dimm-replace.html"
+  - title: ドライブ
+    pdf-filename: AFF A220 および FAS2700 ドライブ
+    url: "/fas2700/drive-replace.html"
   - title: NVMEM バッテリ
     pdf-filename: AFF A220 / FAS2700 NVMEM バッテリ
     url: "/fas2700/nvmem-nvram-battery-replace.html"

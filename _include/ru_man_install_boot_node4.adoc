@@ -103,7 +103,7 @@ WARNING: * 警告 : 遅延を上書きしないでください。バッテリー
 
 
 | は、 V シリーズシステムまたは FlexArray 仮想化ソフトウェアを搭載し、ストレージアレイに接続されています  a| 
-.. node4 の FC または UTA / UTA2 設定のセクションに移動し、セクションの作業を行います link:set_fc_uta_uta2_config_node4.html#configure-fc-ports-on-node4["ノード 4 の FC ポートを設定します"] および 必要に応じて、システムに適用されます。
+.. node4 の FC または UTA / UTA2 設定のセクションに移動し、セクションの作業を行います link:set_fc_uta_uta2_config_node4.html#configure-fc-ports-on-node4["ノード 4 の FC ポートを設定します"] および link:set_fc_uta_uta2_config_node4.html#check-and-configure-utauta2-ports-on-node4["ノード 4 の UTA / UTA2 ポートを確認して設定してください"]必要に応じて、システムに適用されます。
 .. このセクションに戻って、から始めて残りの手順を実行します <<man_install4_Step9,手順 9>>。
 
 

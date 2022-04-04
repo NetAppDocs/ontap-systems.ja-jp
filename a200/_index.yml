@@ -5,6 +5,8 @@ indexpage:
     links:
     - title: ONTAP リリースノート
       url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+    - title: 新機能
+      url: "../whats-new.html"
   - title: 設置とセットアップ
     links:
     - title: すべての構成
