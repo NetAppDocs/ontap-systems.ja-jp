@@ -5,6 +5,7 @@ keywords: fas8300, fas8700, replace, real, time, clock, battery, shut, down, imp
 summary: コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。 
 ---
 = リアルタイムクロックバッテリ -FAS8300 および FAS8700 を交換してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

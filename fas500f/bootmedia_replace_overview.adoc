@@ -5,6 +5,7 @@ keywords: fas500f, replace the boot media
 summary: ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。 
 ---
 = ブートメディア交換の概要 - FAS500f
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

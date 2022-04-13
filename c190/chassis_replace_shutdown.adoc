@@ -5,6 +5,7 @@ keywords: aff c190, shutdown the controllers
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
 = コントローラをシャットダウンします（ AFF C190 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

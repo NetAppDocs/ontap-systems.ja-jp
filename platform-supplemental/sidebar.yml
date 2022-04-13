@@ -68,23 +68,3 @@ entries:
       url: "/platform-supplemental/42u-1280mm-reverse-hinge-and-lock.html"
     - title: ドアと照光バッジを再度取り付けます
       url: "/platform-supplemental/42u-1280mm-reinstall-door-and-badge.html"
-- title: 内蔵ディスクドライブをスワップします
-  entries:
-  - title: 概要ビデオ
-    url: "/platform-supplemental/drive-video.html"
-  - title: 内蔵ドライブをホットスワップします
-    entries:
-    - title: 使用する手順
-      url: "/platform-supplemental/drive-hotswap.html"
-    - title: SSD のホットスワップ
-      url: "/platform-supplemental/drive-hotswap-drive.html"
-    - title: ホットスワップ対応 HDD
-      url: "/platform-supplemental/drive-hotswap-sas.html"
-- title: オール SAN アレイシステム
-  entries:
-  - title: セットアップとメンテナンス
-    url: "/platform-supplemental/all-san-array.html"
-- title: ハードウェアのアップグレード
-  entries:
-  - title: アップグレード手順
-    url: "/platform-supplemental/upgrade-linkout.html"

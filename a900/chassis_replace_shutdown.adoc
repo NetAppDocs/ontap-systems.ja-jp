@@ -5,6 +5,7 @@ keywords: aff a900, shutdown the controllers
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
 = 障害のあるコントローラ AFF A900 をシャットダウンします
+:allow-uri-read: 
 
 
 [role="lead"]

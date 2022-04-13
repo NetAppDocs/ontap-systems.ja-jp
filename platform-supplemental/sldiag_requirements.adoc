@@ -5,6 +5,7 @@ keywords: system-level, diagnostic, test, run, time, system, requirement, system
 summary: 実行しているシステムレベルの診断テストに応じて、所要時間とシステムハードウェアの要件を把握しておく必要があります。 
 ---
 = システムレベルの診断を実行するための要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

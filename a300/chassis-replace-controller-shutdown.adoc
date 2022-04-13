@@ -5,6 +5,7 @@ keywords: a300, shut, chassis, controller, replace, remove, metrocluster, aggreg
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。この手順はシステムの停止を伴います。2 ノードクラスタではサービスが完全に停止し、マルチノードクラスタでは部分的に停止します。 
 ---
 = コントローラをシャットダウンします - AFF A300
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

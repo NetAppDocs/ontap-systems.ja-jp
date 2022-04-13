@@ -5,6 +5,7 @@ keywords: system, configuration, whether, perform, nondisruptive, iom12, module,
 summary: IOM12 モジュールに障害が発生した場合に無停止で IOM12 モジュールのホットスワップを実行できるか、停止を伴う IOM12 モジュールの交換が必要かは、システム構成に応じて決まります。 
 ---
 = IOM12 モジュールシェルフを IOM12 モジュールとホットスワップするか交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

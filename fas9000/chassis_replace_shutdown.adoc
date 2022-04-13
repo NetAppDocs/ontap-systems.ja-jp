@@ -5,6 +5,7 @@ keywords: aff a700, fas9000, chassis replacement, shutdown
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
 = コントローラをシャットダウンします - AFF A700 および FAS9000
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

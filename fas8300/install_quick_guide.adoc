@@ -5,6 +5,7 @@ keywords: fas8300, fas8700, quick, guide, install, system, rack, cable
 summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。 
 ---
 = クイックガイド - FAS8300 および FAS8700
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

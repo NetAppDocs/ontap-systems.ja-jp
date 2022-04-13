@@ -1,10 +1,10 @@
 ---
 section: fas9000
-title: AFF A700 および FAS9000 システム
+title: FAS9000 システムの場合
 url: "/fas9000/index.html"
 entries:
 - title: 設置とセットアップ
-  pdf-filename: AFF A700 および FAS9000 のインストールとセットアップ
+  pdf-filename: FAS9000 のインストールとセットアップ
   entries:
   - title: インストールとセットアップを選択します
     url: "/fas9000/install-setup.html"
@@ -15,10 +15,10 @@ entries:
   - title: 詳細な手順
     url: "/fas9000/install-detailed-guide.html"
 - title: メンテナンス
-  pdf-filename: AFF A700 および FAS9000 のメンテナンス
+  pdf-filename: FAS9000 では引き続き機能
   entries:
   - title: ブートメディア
-    pdf-filename: AFF A700 および FAS9000 ブートメディア
+    pdf-filename: FAS9000 ブートメディア
     entries:
     - title: 概要
       url: "/fas9000/bootmedia-replace-overview.html"
@@ -41,7 +41,7 @@ entries:
   - title: キャッシングモジュール（ホットスワップ）
     url: "/fas9000/caching-module-hot-swap.html"
   - title: シャーシ
-    pdf-filename: AFF A700 および FAS9000 シャーシ
+    pdf-filename: FAS9000 シャーシ
     entries:
     - title: 概要
       url: "/fas9000/chassis-replace-overview.html"
@@ -52,7 +52,7 @@ entries:
     - title: 交換後の処理
       url: "/fas9000/chassis-replace-complete-system-restore-rma.html"
   - title: コントローラモジュール
-    pdf-filename: AFF A700 および FAS9000 コントローラ
+    pdf-filename: FAS9000 コントローラ
     entries:
     - title: 概要
       url: "/fas9000/controller-replace-overview.html"
@@ -83,7 +83,7 @@ entries:
   - title: RTC バッテリ
     url: "/fas9000/rtc-battery-replace.html"
   - title: X91148A モジュール
-    pdf-filename: AFF A700 および FAS9000 X91148A モジュール
+    pdf-filename: FAS9000 X91148A モジュール
     entries:
     - title: 概要
       url: "/fas9000/x91148a-module-install-overview.html"

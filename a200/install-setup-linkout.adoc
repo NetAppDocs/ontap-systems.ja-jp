@@ -5,6 +5,7 @@ keywords: aff a200, install
 summary: PDF 版セットアップガイドを使用して、新しいシステムを設置してセットアップできます。PDF 版ポスターには、ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。 
 ---
 = 設置とセットアップに関する PDF ポスター - AFF A200
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

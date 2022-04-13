@@ -5,6 +5,7 @@ keywords: run, diagnostic, initial, system, installation, identify, version, sys
 summary: システムの初期インストール後に診断を実行して、システムレベルの診断のバージョンとストレージシステムでサポートされているデバイスを特定し、インストールが正常に完了し、すべてのハードウェアが正常に機能していることを確認します。 
 ---
 = システムのインストール診断を実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

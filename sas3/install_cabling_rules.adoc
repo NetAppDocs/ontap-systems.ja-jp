@@ -5,6 +5,7 @@ keywords: disk, shelves, shelf, iom12, module, single-controller, configuration,
 summary: IOM12 モジュールを搭載したディスクシェルフは、 HA ペアおよびシングルコントローラ構成でケーブル接続できます（サポート対象のプラットフォームの場合）。 
 ---
 = SAS ケーブル接続ルール - IOM12 モジュールを搭載したシェルフ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

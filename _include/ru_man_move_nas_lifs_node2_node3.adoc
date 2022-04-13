@@ -1,4 +1,5 @@
 = 
+:allow-uri-read: 
 
 
 アグリゲートを node2 から node3 に再配置したら、 node2 によって所有されている NAS データ LIF を node3 に移動する必要があります。

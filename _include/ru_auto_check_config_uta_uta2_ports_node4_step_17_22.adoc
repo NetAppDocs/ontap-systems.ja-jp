@@ -1,4 +1,5 @@
 = 
+:allow-uri-read: 
 
 
 . [[auto_check_4_step17]] autoboot 中に Ctrl キーを押しながら C キーを押して 'loader>` プロンプトでノードを停止します

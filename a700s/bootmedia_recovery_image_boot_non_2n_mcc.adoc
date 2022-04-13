@@ -5,6 +5,7 @@ keywords: aff a700s, aff, a700s, boot, ontap, image, usb, drive, restore, file, 
 summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
 = リカバリイメージ AFF A700s をブートします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

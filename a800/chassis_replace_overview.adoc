@@ -5,6 +5,7 @@ keywords: aff a800, replace the chassis
 summary: 障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
 ---
 = シャーシを交換してください - AFF A800
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

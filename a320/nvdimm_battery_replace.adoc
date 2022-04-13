@@ -5,6 +5,7 @@ keywords: aff, a320, aff a320, replace, nvdimm, battery, remove, controller, mod
 summary: NVDIMM バッテリを交換するには、コントローラモジュールを取り外し、バッテリを取り外し、バッテリを交換してから、コントローラモジュールを再度取り付ける必要があります。 
 ---
 = NVDIMM バッテリを交換します - AFF A320
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

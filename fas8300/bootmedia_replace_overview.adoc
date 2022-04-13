@@ -5,6 +5,7 @@ keywords: fas8300, fas8300, boot, media, store, primary, secondary, set, system,
 summary: ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。 
 ---
 = ブートメディアの交換 - AFF FAS8300 および FAS8700
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

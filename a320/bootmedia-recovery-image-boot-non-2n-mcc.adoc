@@ -5,6 +5,7 @@ keywords: aff a320, aff, a320, procedure, boot, impair, node, recovery, image, s
 summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
 = リカバリイメージ AFF A320 をブートします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

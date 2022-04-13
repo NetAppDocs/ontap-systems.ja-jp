@@ -5,6 +5,7 @@ keywords:
 summary: I/O モジュールを交換するには、特定の順序でタスクを実行する必要があります。 
 ---
 = I/O モジュールを交換してください - AFF A900
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

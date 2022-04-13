@@ -5,6 +5,7 @@ keywords: aff a800, replace the boot media
 summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
 ---
 = ブートメディアの交換の概要 - AFF A800
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

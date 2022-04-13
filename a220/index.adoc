@@ -1,0 +1,13 @@
+---
+layout: landing-page 
+sidebar: sidebar 
+permalink: a220/index.html 
+summary: ストレージシステムのマニュアルでは、システムの設置、セットアップ、および保守を行うことができます。 
+---
+= A220 システムのマニュアル
+:hardbreaks:
+:allow-uri-read: 
+:linkattrs: 
+:imagesdir: ./media/
+
+

@@ -5,6 +5,7 @@ keywords: aff a400, aff, a400, replace, nvdimm, battery, remove, controller, mod
 summary: NVDIMM バッテリを交換するには、コントローラモジュールを取り外し、バッテリを取り外し、バッテリを交換してから、コントローラモジュールを再度取り付ける必要があります。 
 ---
 = NVDIMM バッテリを交換してください - AFF A400
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

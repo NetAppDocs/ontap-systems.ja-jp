@@ -5,6 +5,7 @@ keywords: aff a700s, aff, a700s, completing, complete, nve, nse, shutdown, impai
 summary: NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。 
 ---
 = コントローラをシャットダウンします - AFF A700s
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: replace, caching, module, aff a220, fas 2700, shut, down, impaired, co
 summary: モジュールがオフラインになったことを示す単一の AutoSupport （ ASUP ）メッセージがシステムに登録された場合は、コントローラモジュールのキャッシングモジュールを交換する必要があります。交換しないと、パフォーマンスが低下します。 
 ---
 = キャッシングモジュール AFF A220 および FAS2700 を交換してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

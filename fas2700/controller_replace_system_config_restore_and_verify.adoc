@@ -5,6 +5,7 @@ keywords: fas2700, aff a220, restore and verify the system configuration, verify
 summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
 ---
 = システム構成をリストアして確認します - AFF A220 および FAS2700
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

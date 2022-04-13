@@ -5,6 +5,7 @@ keywords: fas2600, replace the caching module
 summary: モジュールがオフラインになったことを示す単一の AutoSupport （ ASUP ）メッセージがシステムに登録された場合は、コントローラモジュールのキャッシングモジュールを交換する必要があります。交換しないと、パフォーマンスが低下します。 
 ---
 = キャッシングモジュール FAS2600 を交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, 
 summary: 新しいシステム HA ペアまたはシングルコントローラ構成がキャビネットに設置されていない場合は、ラックにディスクシェルフを設置してケーブル接続する必要があります。 
 ---
 = IOM12 モジュールを搭載した新しいシステム設置用シェルフを設置してケーブル接続します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

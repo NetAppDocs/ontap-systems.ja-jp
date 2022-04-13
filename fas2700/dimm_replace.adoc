@@ -5,6 +5,7 @@ keywords: fas2700, aff, a220, replace, dimm, shut, down, impaired, controller, c
 summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
 ---
 = DIMM- AFF A220 および FAS2700 を交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: LED USB module,replacing,hot-swapping,LED USB module,non-disruptive re
 summary: サービスを中断することなく LED USB モジュールを交換できます。 
 ---
 = LED USB モジュールを交換してください - AFF A900
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

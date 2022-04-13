@@ -5,6 +5,7 @@ keywords: aff, a320, aff a320, replace, chassis, fan, controller, module, impair
 summary: 障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
 ---
 = シャーシの交換の概要 - AFF A320
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

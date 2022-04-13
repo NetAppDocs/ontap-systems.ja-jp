@@ -5,6 +5,7 @@ keywords: run, diagnostic, help, identify, slow, system, response, time, run slo
 summary: 診断を実行すると、システムの応答時間が遅い原因を特定するのに役立ちます。 
 ---
 = システム応答の遅延診断を実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

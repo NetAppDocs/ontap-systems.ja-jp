@@ -5,6 +5,7 @@ keywords: system, cabinet, support, power, distribution, unit, pdu, type, compli
 summary: システムキャビネットは、さまざまな種類の配電ユニット（ PDU ）をサポートしています。PDU は NEMA または IEC に準拠しています。 
 ---
 = サポートされている PDU の種類と仕様
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

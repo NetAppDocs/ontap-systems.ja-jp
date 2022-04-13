@@ -1,4 +1,5 @@
 = 
+:allow-uri-read: 
 
 
 . [[step7] node3 でネットブートを実行します。

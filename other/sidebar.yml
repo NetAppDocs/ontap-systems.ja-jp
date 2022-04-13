@@ -1,10 +1,4 @@
 ---
 section: other
-title: その他のプラットフォーム、シェルフ、スイッチモデル
-entries:
-- title: その他のプラットフォームモデル
-  url: "/other/platform-linkout.html"
-- title: その他のシェルフモデル
-  url: "/other/shelf-linkout.html"
-- title: その他のスイッチモデル
-  url: "/other/switch-linkout.html"
+title: その他のモデル
+url: "/other/other-models.html"

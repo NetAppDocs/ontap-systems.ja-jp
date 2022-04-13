@@ -5,6 +5,7 @@ keywords: run, diagnostic, storage, system, suffer, panic, identify, cause, run 
 summary: ストレージシステムでシステムパニックが発生した場合、診断を実行するとパニックの原因を特定するのに役立ちます。 
 ---
 = システムパニック診断を実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

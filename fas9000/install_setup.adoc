@@ -5,6 +5,7 @@ keywords: fas9000, aff a700, install, setup, initial, configuration
 summary: システムを設置してセットアップします。 
 ---
 = はじめに：設置とセットアップを選択してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

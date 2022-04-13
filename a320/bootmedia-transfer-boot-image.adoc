@@ -5,6 +5,7 @@ keywords: aff, a320, aff a320, replacement, boot, media, install, image, transfe
 summary: 取り付けた交換用ブートメディアにはブートイメージが含まれていないため、 USB フラッシュドライブを使用してブートイメージを転送する必要があります。 
 ---
 = USB フラッシュドライブ AFF A320 を使用してブートメディアにブートイメージを転送します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

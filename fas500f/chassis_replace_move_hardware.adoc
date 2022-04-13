@@ -5,6 +5,7 @@ keywords: fas500f, move hardware components, replace the chassis
 summary: 電源装置、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、装置ラックまたはシステムキャビネットから障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
 ---
 = ハードウェア FAS500f を移動して交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: aff a700s, aff, a700s, remove, controller, module, chassis, replace, c
 summary: コントローラモジュールを交換する場合やコントローラモジュール内部のコンポーネントを交換する場合は、コントローラモジュールをシャーシから取り外す必要があります。 
 ---
 = コントローラモジュール - AFF A700s を取り外します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

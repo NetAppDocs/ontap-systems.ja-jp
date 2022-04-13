@@ -5,6 +5,7 @@ keywords: AFF A900
 summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。 
 ---
 = コントローラモジュール AFF A900 を交換してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

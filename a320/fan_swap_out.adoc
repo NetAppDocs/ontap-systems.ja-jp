@@ -5,6 +5,7 @@ keywords: aff, a320, aff a320, swap, fan, module, interrupt, service, perform, s
 summary: サービスを中断せずにファンモジュールを交換するには、特定の順序でタスクを実行する必要があります。 
 ---
 = ファンモジュールのホットスワップ - AFF A320
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

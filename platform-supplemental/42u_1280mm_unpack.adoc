@@ -5,6 +5,7 @@ keywords: remove, pack, material, surround, system, cabinet, recycle, unpack, un
 summary: システムキャビネットを所定の位置に移動する前に、システムキャビネットを包む梱包材を取り除く必要があります。また、キャビネットを開梱したあとの梱包材はリサイクルする必要があります。 
 ---
 = システムキャビネットを開梱します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

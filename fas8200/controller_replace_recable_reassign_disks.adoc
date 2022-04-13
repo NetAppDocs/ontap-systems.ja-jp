@@ -5,6 +5,7 @@ keywords: fas8200, how to recable the system, how to reassign disks
 summary: ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。 
 ---
 = システムにケーブルを再接続し、ディスクを FAS8200 に再割り当てします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: aff a800, replace a fan
 summary: 障害が発生したファンモジュールを交換し、新しいファンモジュールと交換する場合は、コントローラモジュールをシャーシから取り外す必要があります。 
 ---
 = ファンを交換してください - AFF A800
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

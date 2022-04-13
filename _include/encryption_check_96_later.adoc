@@ -1,4 +1,5 @@
 = NVE の設定を確認する
+:allow-uri-read: 
 
 
 障害のあるコントローラをシャットダウンする前に、システムで NetApp Volume Encryption （ NVE ）または NetApp Storage Encryption （ NSE ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。

@@ -5,6 +5,7 @@ keywords: install, support, rail, system, cabinet, component, prepopulated, syst
 summary: サポートレールを追加でシステムキャビネットに取り付けたら、他のシステムコンポーネントがすでに取り付けられているシステムキャビネットにコンポーネントを追加したり、既存のシステムコンポーネントを空のシステムキャビネットに追加したりできます。 
 ---
 = システムキャビネットに機器を設置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

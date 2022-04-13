@@ -5,6 +5,7 @@ keywords: aff a700s, aff, a700s, procedure, secondary, boot, media, restore, fai
 summary: この手順は、セカンダリブートメディアのリストアに失敗した場合、または image.tgz ファイルがセカンダリブートメディアに見つからない場合にのみ使用します。 
 ---
 = ブートイメージをブートメディア - AFF A700s に転送します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

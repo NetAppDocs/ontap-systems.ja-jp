@@ -5,6 +5,7 @@ keywords: aff a400, aff, a400, replace, pcie, mezzanine, card, disconnect, cable
 summary: PCIe カードまたはメザニンカードを交換するには、ケーブルとすべての SFP モジュールと QSFP モジュールをカードから外し、障害が発生した PCIe カードまたはメザニンカードを交換してから、カードにケーブルを再接続する必要があります。 
 ---
 = PCIe カードまたはメザニンカードを交換してください - AFF A400
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

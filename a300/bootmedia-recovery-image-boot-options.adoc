@@ -5,6 +5,7 @@ keywords: aff a300, boot the recovery image
 summary: 障害のあるコントローラをリカバリイメージからブートするための手順 は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。 
 ---
 = リカバリイメージ AFF A300 をブートします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

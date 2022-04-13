@@ -5,6 +5,7 @@ keywords: fas8200, swap out a fan
 summary: サービスを中断せずにファンモジュールを交換するには、特定の順序でタスクを実行する必要があります。 
 ---
 = ファン -FAS8200 を交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

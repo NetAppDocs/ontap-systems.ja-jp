@@ -5,6 +5,7 @@ keywords: fas2600, replace boot media, rma
 summary: 部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。 
 ---
 = 障害のあるパーツを NetApp-FAS2600 に返却します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

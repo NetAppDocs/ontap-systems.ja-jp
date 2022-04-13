@@ -5,6 +5,7 @@ keywords: fas500f, restore and verify the system configuration, verify and set t
 summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
 ---
 = システム構成をリストアして検証します（ FAS500f ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

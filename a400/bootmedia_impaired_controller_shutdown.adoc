@@ -5,6 +5,7 @@ keywords: aff a400, aff, a400, shut, down, take, over, impair, controller, proce
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
 = 障害のあるコントローラをシャットダウンします - AFF A400
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

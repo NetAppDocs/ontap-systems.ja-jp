@@ -5,6 +5,7 @@ keywords: ns224, shelves, shelf, ns224 shelves, drive, aggregate, ha, pair, serv
 summary: ドライブからアグリゲートを削除した NS224 ドライブシェルフは、 HA ペア内でデータを提供中（ I/O が実行中）にホットリムーブできます。 
 ---
 = シェルフ / NS224 シェルフのホットリムーブ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

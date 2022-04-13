@@ -5,6 +5,7 @@ keywords: hot-swap, fail, power, supply, ds460c, ds224c, ds212c, disk, shelf-non
 summary: DS460C 、 DS224C 、または DS212C ディスクシェルフでは、障害が発生した電源装置をホットスワップできます。 
 ---
 = 電源装置シェルフを IOM12 モジュールとホットスワップします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

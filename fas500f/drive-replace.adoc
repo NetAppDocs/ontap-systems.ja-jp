@@ -5,6 +5,7 @@ keywords: fas500f, replace the drives
 summary: ドライブの交換は、ドライブで障害が発生したことを示す警告メッセージがプラットフォームからシステムコンソールに記録された場合に必要になります。さらに、オペレータ用ディスプレイパネルの障害 LED と、障害が発生したドライブの障害 LED の両方が点灯します。 
 ---
 = SSD ドライブまたは HDD ドライブを交換してください - AFF C190
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

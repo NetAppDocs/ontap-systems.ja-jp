@@ -5,6 +5,7 @@ keywords: hot-add, disk, shelves, shelf, iom12, exist, stack, module, sas, hba, 
 summary: IOM12 モジュールを搭載した 1 台以上のディスクシェルフを、 IOM12 モジュールを搭載した既存のディスクシェルフのスタックにホットアドできます。または、 IOM12 モジュールを搭載した 1 台以上のディスクシェルフのスタックを、コントローラ上の SAS HBA またはオンボード SAS ポートに直接ホットアドできます。 
 ---
 = IOM12 モジュールを搭載したシェルフをホットアドします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

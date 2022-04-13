@@ -5,6 +5,7 @@ keywords: aff a400, aff, a400, boot, media, store, primary, secondary, set, syst
 summary: ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。 
 ---
 = ブートメディアの交換の概要 - AFF A400
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: aff a700s, shutdown the controllers
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
 = コントローラをシャットダウンします - AFF A700s
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

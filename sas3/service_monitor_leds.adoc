@@ -5,6 +5,7 @@ keywords: monitor, health, disk, shelf, location, status, condition, led, compon
 summary: ディスクシェルフコンポーネントの LED の場所とステータスの状態を把握することで、ディスクシェルフのヘルスを監視できます。 
 ---
 = ディスクシェルフの LED を監視 - IOM12 モジュールを搭載したシェルフ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: 環境変数を確認したら、オンボードキーマネージャ \ （ OKM \ ）、 NetApp Storage Encryption \ （ NSE\ ）、または NetApp Volume Encryption \ （ NVE \ ）が有効になっているシステムに固有の手順を実行する必要があります。 
 ---
 = OKM 、 NSE 、および NVE - AFF A900 のブートメディア交換後の手順
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

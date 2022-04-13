@@ -5,6 +5,7 @@ keywords: fas2700, aff a220, how to recable the system, how to reassign disks
 summary: ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。 
 ---
 = システムにケーブルを再接続し、ディスクを再割り当てします - AFF A220 および FAS2700
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

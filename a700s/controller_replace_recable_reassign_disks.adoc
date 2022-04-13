@@ -5,6 +5,7 @@ keywords: aff a700s, how to recable the system, how to reassign disks
 summary: ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。 
 ---
 = システムにケーブルを再接続し、ディスクを再割り当てします - AFF A700s
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

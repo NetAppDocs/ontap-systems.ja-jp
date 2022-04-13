@@ -5,6 +5,7 @@ keywords: aff a700, fas9000, shut, down, impaired, node, controller, two, node, 
 summary: 障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをテイクオーバーする必要があります。 
 ---
 = 障害のあるコントローラをシャットダウンします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

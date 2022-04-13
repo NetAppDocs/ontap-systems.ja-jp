@@ -5,6 +5,7 @@ keywords: run, diagnostic, add, replacing, replace, hardware, component, storage
 summary: ストレージシステムのハードウェアコンポーネントを追加または交換したら、診断を実行して、コンポーネントに問題がなく、設置が正常に完了したことを確認します。 
 ---
 = ハードウェアの設置診断を実行
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

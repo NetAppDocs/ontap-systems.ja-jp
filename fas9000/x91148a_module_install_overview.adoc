@@ -5,6 +5,7 @@ keywords: aff a700, fas9000, add, x91148a, storage, module, NIC, no open, slots,
 summary: システムに I/O モジュールを追加するには、 NIC またはストレージアダプタをフル搭載システムの新しいアダプタに交換するか、新しい NIC またはストレージアダプタをシステムの空のシャーシスロットに追加します。 
 ---
 = X91148A モジュールの追加の概要： AFF A9000
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

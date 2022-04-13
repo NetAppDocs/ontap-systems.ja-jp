@@ -5,6 +5,7 @@ keywords: aff a400, aff, a400, locate, boot, media, controller, module, fre, map
 summary: コントローラモジュールのブートメディアの場所を確認し（コントローラモジュールの FRU マップを参照）、手順に従って交換する必要があります。 
 ---
 = ブートメディアを交換してください - AFF A400
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

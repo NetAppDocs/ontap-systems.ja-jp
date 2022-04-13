@@ -5,6 +5,7 @@ keywords: fas 2700, aff a220, post, boot, media, okm, nse, nve, onboard key mana
 summary: 環境変数を確認したら、オンボードキーマネージャ \ （ OKM \ ）、 NetApp Storage Encryption \ （ NSE\ ）、または NetApp Volume Encryption \ （ NVE \ ）が有効になっているシステムに固有の手順を実行する必要があります。 
 ---
 = 必要に応じて、 OKM 、 NSE 、 NVE をリストアします - AFF A220 および FAS2700
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

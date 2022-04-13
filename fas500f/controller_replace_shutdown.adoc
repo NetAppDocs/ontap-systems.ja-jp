@@ -5,6 +5,7 @@ keywords: aff fas500f, shut down the impaired controller
 summary: 障害のあるコントローラモジュールをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。 
 ---
 = 障害のあるコントローラ FAS500f をシャットダウンします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

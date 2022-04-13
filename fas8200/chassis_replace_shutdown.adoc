@@ -5,6 +5,7 @@ keywords: fas8200, shutdown the controllers
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
 = コントローラ - FAS8200 をシャットダウンします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

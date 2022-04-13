@@ -5,6 +5,7 @@ keywords: complete, controller-to-stack, cabling, cable, worksheet, quad-path, h
 summary: 記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 2 つのクアッドポート SAS HBA を備えたクアッドパス HA 構成をケーブル接続できます。 
 ---
 = 2 つのクアッドポート SAS HBA シェルフと IOM12 モジュールを使用したクアッドパス HA 構成のコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

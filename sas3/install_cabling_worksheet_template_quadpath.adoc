@@ -5,6 +5,7 @@ keywords: complete, completing, worksheet, template, controller, sas, port, pair
 summary: ワークシートテンプレートを記入することで、コントローラの SAS ポートペアを定義できます。これらのポートを使用して、コントローラを IOM12 モジュールを搭載したディスクシェルフスタックにケーブル接続し、 HA ペアまたはシングルコントローラ構成でクアッドパス接続を実現できます。記入済みのワークシートを使用して、構成に合ったクアッドパス接続を実施することもできます。 
 ---
 = クアッドパス接続用のコントローラ / スタック間のケーブル接続ワークシートテンプレート - IOM12 モジュールを搭載したシェルフ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

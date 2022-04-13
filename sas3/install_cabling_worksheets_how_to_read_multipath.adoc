@@ -5,6 +5,7 @@ keywords: example, guide, read, apply, complete, worksheet, cable, controller-to
 summary: 以下の例は、マルチパス接続用の IOM12 モジュールを搭載したディスクシェルフで、記入済みのワークシートの内容を適用してコントローラとスタックをケーブル接続する方法を示しています。 
 ---
 = IOM12 モジュールを搭載したマルチパス接続シェルフでコントローラ / スタック間をケーブル接続するためのワークシートの読み取り方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

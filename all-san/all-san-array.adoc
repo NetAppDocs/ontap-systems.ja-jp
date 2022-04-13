@@ -1,10 +1,11 @@
 ---
-permalink: platform-supplemental/all-san-array.html 
+permalink: all-san/all-san-array.html 
 sidebar: sidebar 
 keywords: asa, all san array 
 summary: すべての SAN アレイシステムは、 AFF システムと同じドキュメントを使用しています。 
 ---
 = オール SAN アレイシステム
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

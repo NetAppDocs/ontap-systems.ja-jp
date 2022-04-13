@@ -5,6 +5,7 @@ keywords: aff a800, shut down the controller
 summary: NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。 
 ---
 = コントローラ AFF A800 をシャットダウンします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

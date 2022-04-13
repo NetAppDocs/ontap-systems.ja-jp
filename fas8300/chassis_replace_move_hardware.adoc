@@ -5,6 +5,7 @@ keywords: fas8300, fas8700, shut, chassis, controller, replace, remove, swap, ve
 summary: ファン、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、装置ラックまたはシステムキャビネットの障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
 ---
 = ハードウェア - FAS8300 と FAS8700 を移動して交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

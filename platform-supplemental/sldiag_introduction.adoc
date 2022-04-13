@@ -5,6 +5,7 @@ keywords: system-level, diagnostic, command-line, interface, test, search, hardw
 summary: システムレベルの診断では、コマンドラインインターフェイスを使用して、サポートされているストレージシステム上のハードウェアの問題を検索して特定するテストを実施します。システムレベルの診断を使用して、特定のコンポーネントが正常に動作していることを確認したり、障害のあるコンポーネントを特定したりします。 
 ---
 = システムレベルの診断の概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

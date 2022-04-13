@@ -5,6 +5,7 @@ keywords: aff a700, fas9000, move hardware
 summary: ファン、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、装置ラックまたはシステムキャビネットの障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
 ---
 = ハードウェアの移動と交換 - AFF A700 および FAS9000
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

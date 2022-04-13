@@ -5,6 +5,7 @@ keywords: aff a300, swap out a fan
 summary: サービスを中断せずにファンモジュールを交換するには、特定の順序でタスクを実行する必要があります。 
 ---
 = ファンを交換してください - AFF A300
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

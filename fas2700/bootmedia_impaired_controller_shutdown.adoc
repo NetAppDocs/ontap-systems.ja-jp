@@ -5,6 +5,7 @@ keywords: fas2700, aff a220, shut, down, impaired, controller, take, over
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
 = 障害のあるコントローラ AFF A220 および FAS2700 をシャットダウンします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

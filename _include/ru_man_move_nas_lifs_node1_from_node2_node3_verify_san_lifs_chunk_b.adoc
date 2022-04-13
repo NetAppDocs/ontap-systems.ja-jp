@@ -1,4 +1,5 @@
 = 
+:allow-uri-read: 
 
 
 . [man_lif_verify_3_step6] それぞれの LIF に対して次のコマンドを 1 回入力して、各 NAS データ LIF を node3 に移行します。

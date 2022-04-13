@@ -5,6 +5,7 @@ keywords: aff a700, fas9000, sysdiages, ha-config, switchback, chassis
 summary: キットに付属する RMA 指示書に従って、シャーシの HA 状態を確認し、診断を実行し、障害が発生した部品をネットアップに返却する必要があります。 
 ---
 = リストアと交換のプロセスを完了します - AFF A700 および FAS9000
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

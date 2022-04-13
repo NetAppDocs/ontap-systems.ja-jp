@@ -5,6 +5,7 @@ keywords: fas500f, shutdown the controllers
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
 = コントローラ FAS500f をシャットダウンします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

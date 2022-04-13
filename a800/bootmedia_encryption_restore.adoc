@@ -5,6 +5,7 @@ keywords: aff a800, post boot media replacement steps for okm, nse, and nve
 summary: 環境変数を確認したら、オンボードキーマネージャ \ （ OKM \ ）、 NetApp Storage Encryption \ （ NSE\ ）、または NetApp Volume Encryption \ （ NVE \ ）が有効になっているシステムに固有の手順を実行する必要があります。 
 ---
 = 必要に応じて、 OKM 、 NSE 、 NVE をリストアします - AFF A800
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

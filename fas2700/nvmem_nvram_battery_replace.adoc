@@ -5,6 +5,7 @@ keywords: fas2700, aff a220, replace, nvmem, battery, shut, down, impaired, cont
 summary: システムの NVMEM バッテリを交換するには、コントローラモジュールをシステムから取り出して開き、バッテリを交換し、コントローラモジュールを閉じて交換する必要があります。 
 ---
 = NVMEM バッテリを交換します - AFF A220 および FAS2700
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

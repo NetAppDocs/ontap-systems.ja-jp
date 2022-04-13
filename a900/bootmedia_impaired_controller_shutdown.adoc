@@ -5,6 +5,7 @@ keywords:
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
 = 障害のあるコントローラ AFF A900 をシャットダウンします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

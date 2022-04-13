@@ -5,6 +5,7 @@ keywords: fas500f, shutdown
 summary: NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。 
 ---
 = コントローラ FAS500f をシャットダウンします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

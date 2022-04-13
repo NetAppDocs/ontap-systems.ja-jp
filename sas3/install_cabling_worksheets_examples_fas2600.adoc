@@ -5,6 +5,7 @@ keywords: complete, controller-to-stack, cabling, worksheet, cable, common, aff,
 summary: 記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 構成をケーブル接続できます。 
 ---
 = 一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 構成 - IOM12 モジュールを搭載したシェルフのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

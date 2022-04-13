@@ -5,6 +5,7 @@ keywords: aff, a320, aff a320, shut, down, impair, controller, check, status, on
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
 = オンボード暗号化キー - AFF A320 を確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

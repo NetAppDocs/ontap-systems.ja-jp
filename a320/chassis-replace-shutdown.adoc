@@ -5,6 +5,7 @@ keywords: aff, a320, aff a320, replace, chassis, fan, controller, module, impair
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
 = コントローラをシャットダウンします。 AFF A320
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

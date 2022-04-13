@@ -5,6 +5,7 @@ keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, requirement, 
 summary: HA ペアが一定の要件を満たし、 HA ペアに適用可能な準備作業が完了したら、 NS224 ドライブシェルフをホットアドできます。 
 ---
 = NS224 シェルフをホットアドします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

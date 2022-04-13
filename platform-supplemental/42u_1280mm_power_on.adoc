@@ -5,6 +5,7 @@ keywords: connect, system, component, pdu, cable, ac, power, source, cabinet, po
 summary: システムコンポーネントを PDU に接続し、 PDU ケーブルを AC 電源に接続し、 AC 電源を電源に接続し、システムの電源をオンにする必要があります。 
 ---
 = システムキャビネットの電源をオンにします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

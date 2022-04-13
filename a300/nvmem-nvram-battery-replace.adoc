@@ -5,6 +5,7 @@ keywords: aff a300, replace the nvmem battery
 summary: システムの NVMEM バッテリを交換するには、コントローラモジュールをシステムから取り出して開き、バッテリを交換し、コントローラモジュールを閉じて交換する必要があります。 
 ---
 = NVMEM バッテリを交換してください - AFF A300
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

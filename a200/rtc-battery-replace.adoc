@@ -5,6 +5,7 @@ keywords: aff a200, replace the rtc battery
 summary: コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。 
 ---
 = リアルタイムクロックのバッテリを交換してください - AFF A200
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

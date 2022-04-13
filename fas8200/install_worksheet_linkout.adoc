@@ -5,6 +5,7 @@ keywords: fas8200, install, worksheet
 summary: このワークシートを使用して、 ONTAP クラスタの構成に必要なサイト固有の IP アドレスやその他の情報を収集し、記録できます。 
 ---
 = クラスタ設定ワークシート - FAS8200
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

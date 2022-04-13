@@ -5,6 +5,7 @@ keywords: AFF A900, replace, boot, media, controller, directions. replace boot m
 summary: コントローラモジュールを取り外して開き、コントローラのブートメディアの場所を確認して交換してから、交換用ブートメディアにイメージを転送する必要があります。 
 ---
 = コントローラを取り外し、ブートメディアを交換して、ブートイメージ AFF A900 を転送します
+:allow-uri-read: 
 
 
 [role="lead"]

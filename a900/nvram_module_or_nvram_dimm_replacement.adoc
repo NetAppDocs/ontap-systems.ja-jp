@@ -5,6 +5,7 @@ keywords:
 summary: NVRAM モジュールは、 NVRAM11 と DIMM 、 NVRAM モジュールあたり最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。 
 ---
 = NVRAM モジュール / NVRAM DIMM を交換してください - AFF A900
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

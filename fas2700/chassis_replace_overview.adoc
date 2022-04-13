@@ -5,6 +5,7 @@ keywords: fas2700, aff a220, replace, chassis, shut down, controller, metroclust
 summary: 障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
 ---
 = シャーシの交換の概要 - AFF A220 および FAS2700
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -1,4 +1,5 @@
 = 
+:allow-uri-read: 
 
 
 node2 を node4 に置き換える前に、 node2 の AutoSupport メッセージを送信し、 node2 に所有されているルート以外のアグリゲートを node3 に再配置する必要があります。

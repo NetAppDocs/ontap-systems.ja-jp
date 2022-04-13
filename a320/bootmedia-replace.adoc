@@ -5,6 +5,7 @@ keywords: aff, a320, aff a320, boot, media, store, primary, secondary, set, syst
 summary: ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。 
 ---
 = ブートメディアを交換します - AFF A320
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

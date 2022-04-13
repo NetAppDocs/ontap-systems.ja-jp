@@ -5,6 +5,7 @@ keywords: aff, a320, locate, boot, media, controller, module, direction, replace
 summary: コントローラモジュールのブートメディアの場所を確認し、手順に従って交換する必要があります。 
 ---
 = ブートメディアの交換 - AFF A320 の概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

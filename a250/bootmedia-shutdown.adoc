@@ -5,6 +5,7 @@ keywords: aff a250, shutdown
 summary: NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。 
 ---
 = コントローラをシャットダウンします（ AFF A250 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

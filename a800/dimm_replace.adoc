@@ -5,6 +5,7 @@ keywords: aff a800, replace a dimm
 summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
 ---
 = DIMM-A800 AFF を交換してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

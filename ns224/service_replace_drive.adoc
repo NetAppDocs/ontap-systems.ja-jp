@@ -5,6 +5,7 @@ keywords: ns224, shelves, shelf, ns224 shelves, fail, replace, drive, nondisrupt
 summary: 電源がオンになっている NS224 ドライブシェルフおよび I/O の実行中は、障害が発生したドライブを無停止で交換できます。 
 ---
 = ドライブをホットスワップします - NS224 シェルフ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

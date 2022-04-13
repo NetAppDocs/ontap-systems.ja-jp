@@ -5,6 +5,7 @@ keywords: aff, a320, aff a320, replace, pcie, card, disconnect, cable, card, sfp
 summary: PCIe カードを交換するには、カードからケーブルを外し、 SFP モジュールと QSFP モジュールをカードから取り外してから、ライザーを取り付け直し、 SFP モジュールと QSFP モジュールを取り付けてから、カードをケーブル接続する必要があります。 
 ---
 = PCIe カードを交換してください - AFF A320
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

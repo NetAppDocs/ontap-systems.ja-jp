@@ -5,6 +5,7 @@ keywords: hot-remove, disk, shelf, iom12, module, nondisruptive, module-nondisru
 summary: IOM12 モジュールを搭載したディスクシェルフを移動または交換する必要がある場合、電源がオンでデータを提供中のシステムから、ディスクシェルフを無停止でホットリムーブできます。ホットリムーブでは、ディスクシェルフのスタックから任意のディスクシェルフを取り外したり、ディスクシェルフのスタック全体を取り外したりできます。 
 ---
 = IOM12 モジュールを搭載したシェルフをホットリムーブします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

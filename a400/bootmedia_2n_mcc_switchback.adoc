@@ -5,6 +5,7 @@ keywords: aff a400, aff, a400, fru, replacement, two-node, metrocluster, configu
 summary: 2 ノード MetroCluster 構成で FRU の交換が完了したら、 MetroCluster スイッチバック処理を実行できます。これにより構成が通常の動作状態に戻ります。また、障害が発生していたサイトの同期元 Storage Virtual Machine （ SVM ）がアクティブになり、ローカルディスクプールからデータを提供します。 
 ---
 = 2 ノード MetroCluster 構成のアグリゲートをスイッチバック - AFF A400
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

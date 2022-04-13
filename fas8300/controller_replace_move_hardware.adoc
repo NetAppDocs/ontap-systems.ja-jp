@@ -5,6 +5,7 @@ keywords: fas8300, fas8700, move the controller module hardware
 summary: コントローラモジュールハードウェアを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。 
 ---
 = コントローラモジュールハードウェア - FAS8300 および FAS8700 を交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

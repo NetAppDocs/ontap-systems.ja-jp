@@ -5,6 +5,7 @@ keywords: a250, move, drives, install, controller
 summary: 電源装置、 NVMe ドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、障害のあるシャーシを装置ラックまたはシステムキャビネットから障害のあるシャーシと同じモデルの新しいシャーシと交換する必要があります。 
 ---
 = ハードウェアの交換 - AFF A250
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

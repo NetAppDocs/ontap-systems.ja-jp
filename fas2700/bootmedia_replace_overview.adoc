@@ -5,6 +5,7 @@ keywords: fas2700, aff a220, replace, boot, media, image, nondisruptive, disrupt
 summary: ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。ネットワーク構成に応じて、無停止または停止を伴う交換を実行できます。 
 ---
 = ブートメディアの交換 - AFF A220 および FAS2700
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

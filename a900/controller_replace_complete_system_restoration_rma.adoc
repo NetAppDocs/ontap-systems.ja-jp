@@ -5,6 +5,7 @@ keywords:
 summary: 交換用手順を完了してシステムを完全に動作状態に戻すには、ストレージのケーブル接続をやり直し、必要に応じて NetApp Storage Encryption の構成をリストアし、新しいコントローラのライセンスをインストールする必要があります。 
 ---
 = システムの復元の完了 - AFF A900
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

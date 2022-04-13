@@ -78,7 +78,7 @@ indexpage:
     - title: ほとんどのシステムでアップグレードできます
       url: https://docs.netapp.com/us-en/ontap-systems-upgrade/index.html
     - title: MetroCluster 構成のシステムをアップグレード
-      url: https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/index.html
+      url: https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/concept_choosing_an_upgrade_method_mcc.html
   - title: リソースの追加
     links:
     - title: ONTAP のドキュメント

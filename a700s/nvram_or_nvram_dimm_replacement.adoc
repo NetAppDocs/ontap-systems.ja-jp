@@ -5,6 +5,7 @@ keywords: aff a700s, aff, a700s, replace, fail, nvram, card, remove, riser, cont
 summary: 障害が発生した NVRAM カードを交換するには、 NVRAM ライザー「ライザー 1 」をコントローラモジュールから取り外し、障害が発生したカードをライザーから取り外し、新しい NVRAM カードをライザーに取り付けてから、ライザーをコントローラモジュールに再度取り付ける必要があります。システム ID は NVRAM カードに基づくため、モジュールを交換する場合は、システムに属するディスクは新しいシステム ID に再割り当てされます。 
 ---
 = NVRAM モジュールと NVRAM DIMM を交換してください - AFF A700s
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

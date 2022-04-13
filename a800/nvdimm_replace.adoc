@@ -5,6 +5,7 @@ keywords: aff a800, replace an nvdimm
 summary: フラッシュの有効期間がほぼ終了していること、または識別された NVDIMM が全般的に正常でないことがシステムで登録された場合は、コントローラモジュールの NVDIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
 ---
 = NVDIMM を交換します - AFF A800
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

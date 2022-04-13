@@ -5,6 +5,7 @@ keywords: aff a300, pre-shutdown checks for onboard encryption keys
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
 = オンボード暗号化キーを確認 - AFF A300
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

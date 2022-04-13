@@ -5,6 +5,7 @@ keywords: aff a800, restore and verify the system configuration, verify and set 
 summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
 ---
 = システム構成を復元して確認します（ AFF A800 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

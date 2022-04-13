@@ -5,6 +5,7 @@ keywords: fas8300, fas8700, shut down the impair controller
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
 = 障害のあるコントローラ FAS8300 および FAS8700 をシャットダウンします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

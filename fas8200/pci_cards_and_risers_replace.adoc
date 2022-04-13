@@ -5,6 +5,7 @@ keywords: fas8200, replace a pcie card
 summary: PCIe カードを交換するには、特定の順序でタスクを実行する必要があります。 
 ---
 = PCIe カードを交換します - FAS8200
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

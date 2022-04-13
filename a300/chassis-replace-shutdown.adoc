@@ -5,6 +5,7 @@ keywords: aff a300, shutdown the controllers
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
 = コントローラをシャットダウンします -- AFF A300
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

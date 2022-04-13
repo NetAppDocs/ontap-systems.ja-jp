@@ -6,6 +6,7 @@ summary: ストレージシェルフのドキュメントでは、システム�
 ---
 = NS224 シェルフ
 :hardbreaks:
+:allow-uri-read: 
 :linkattrs: 
 :imagesdir: ./media/
 

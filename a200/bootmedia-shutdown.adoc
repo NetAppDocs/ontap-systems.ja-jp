@@ -5,6 +5,7 @@ keywords: aff a200, shut down the controller
 summary: NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。 
 ---
 = 障害のあるコントローラ AFF A200 をシャットダウンします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: aff c190, verify environment variables, image, boot the recovery image
 summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
 = リカバリイメージ AFF C190 をブートします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

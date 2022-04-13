@@ -5,6 +5,7 @@ keywords: aff a700, fas9000, swap, fan, service, task, return, failed, part
 summary: サービスを中断せずにファンモジュールを交換するには、特定の順序でタスクを実行する必要があります。 
 ---
 = ファン AFF A700 と FAS9000 を交換してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: fas8300, fas8700, restore and verify the system configuration, verify 
 summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
 ---
 = システム構成をリストアして検証します。 FAS8300 と FAS8700
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

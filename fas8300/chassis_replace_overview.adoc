@@ -5,6 +5,7 @@ keywords: fas8300, fas8700, shut, chassis, controller, replace, remove, swap, ve
 summary: 障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
 ---
 = シャーシの交換の概要 - FAS8300 および FAS8700
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

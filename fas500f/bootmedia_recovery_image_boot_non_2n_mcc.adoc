@@ -5,6 +5,7 @@ keywords: fas500f, boot the recovery image
 summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
 = リカバリイメージ FAS500f をブートします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

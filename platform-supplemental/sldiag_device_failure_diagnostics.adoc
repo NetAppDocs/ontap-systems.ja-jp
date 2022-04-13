@@ -5,6 +5,7 @@ keywords: run, diagnostic, help, access, device, intermittent, device, unavailab
 summary: 診断プログラムを実行すると、特定のデバイスへのアクセスが断続的になる理由や、ストレージシステムでデバイスが使用できなくなる理由の特定に役立ちます。 
 ---
 = デバイス障害診断を実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: aff a700, fas9000, led, usb, module, replace, hot-swap, non-disruptive
 summary: サービスを中断することなく LED USB モジュールを交換できます。 
 ---
 = LED USB モジュールを交換してください - AFF A700 および FAS9000
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

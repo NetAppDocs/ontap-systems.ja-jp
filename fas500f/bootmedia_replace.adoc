@@ -5,6 +5,7 @@ keywords: fas500f, replace the boot media
 summary: ブートメディアを交換する前に、コントローラモジュールのエアダクトを取り外して、障害が発生したブートメディアの場所を確認する必要があります。 
 ---
 = ブートメディア FAS500f を交換してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

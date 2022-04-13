@@ -5,6 +5,7 @@ keywords: replace, fail, drive, platform, nondisruptive, procedure, platform, su
 summary: プラットフォームの障害が発生したドライブを無停止で交換するには、プラットフォームがサポートするドライブに適した手順を選択します。SSD のホットスワップ用手順は回転式でないドライブ用、 HDD をホットスワップするための手順は回転式ドライブ用です。 
 ---
 = 使用する手順
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

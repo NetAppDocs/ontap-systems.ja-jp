@@ -5,6 +5,7 @@ keywords: disk, drive fail, platform, log, warning, message, system, console, le
 summary: ディスクドライブで障害が発生すると、どのディスクドライブで障害が発生したかを示す警告メッセージがシステムコンソールに記録されます。さらに、オペレータ用ディスプレイパネルの障害 LED と、障害が発生したディスクドライブの障害 LED の両方が点灯します。I/O の実行中に障害が発生したドライブを無停止で交換できます。 
 ---
 = ディスクドライブをホットスワップします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

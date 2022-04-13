@@ -5,6 +5,7 @@ keywords: aff a200, locate, boot, media, controller, direction, replace
 summary: コントローラのブートメディアの場所を確認し、手順に従って交換する必要があります。 
 ---
 = ブートメディアを交換します - AFF A200
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: fas2600, shut down the controller
 summary: NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。 
 ---
 = 障害のあるコントローラ FAS2600 をシャットダウンします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

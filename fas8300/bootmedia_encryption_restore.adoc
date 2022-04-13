@@ -5,6 +5,7 @@ keywords: fas8300, fas8300, environment, variable, complete, system, onboard, ke
 summary: 環境変数を確認したら、オンボードキーマネージャ \ （ OKM \ ）、 NetApp Storage Encryption \ （ NSE\ ）、または NetApp Volume Encryption \ （ NVE \ ）が有効になっているシステムに固有の手順を実行する必要があります。 
 ---
 = 必要に応じて、 OKM 、 NSE 、 NVE をリストアします - AFF fas8300 および FAS8700
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

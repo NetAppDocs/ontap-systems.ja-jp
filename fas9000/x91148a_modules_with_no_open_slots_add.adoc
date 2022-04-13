@@ -5,6 +5,7 @@ keywords: aff a700, fas9000, add, x91148a, storage, module, no, open, slots, sys
 summary: システムに搭載された 1 つ以上の既存の NIC またはストレージモジュールを 1 つ以上取り外して、完全に装着されたシステムに 1 つ以上の X9118X911A ストレージモジュールを取り付ける必要があります。 
 ---
 = オープンスロットのないシステムに X91148A ストレージモジュールを追加する - AFF A700 および FAS9000
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

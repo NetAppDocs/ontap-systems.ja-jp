@@ -1,10 +1,10 @@
 ---
 section: fas2700
-title: AFF A220 および FAS2700 システム
+title: FAS2700 システム
 url: "/fas2700/index.html"
 entries:
 - title: 設置とセットアップ
-  pdf-filename: AFF A220 および FAS2700 の設置とセットアップ
+  pdf-filename: FAS2700 の設置とセットアップ
   entries:
   - title: インストールとセットアップを選択します
     url: "/fas2700/install-setup.html"
@@ -15,10 +15,10 @@ entries:
   - title: 詳細な手順
     url: "/fas2700/install-detailed-guide.html"
 - title: メンテナンス
-  pdf-filename: AFF A220 と FAS2700 は引き続き搭載されています
+  pdf-filename: FAS2700 で維持されます
   entries:
   - title: ブートメディア
-    pdf-filename: AFF A220 および FAS2700 ブートメディア
+    pdf-filename: FAS2700 ブートメディア
     entries:
     - title: 概要
       url: "/fas2700/bootmedia-replace-overview.html"
@@ -35,10 +35,10 @@ entries:
     - title: 障害のある部品をネットアップに返却します
       url: "/fas2700/bootmedia-complete-rma.html"
   - title: キャッシングモジュール
-    pdf-filename: AFF A220 および FAS2700 キャッシングモジュール
+    pdf-filename: FAS2700 キャッシングモジュール
     url: "/fas2700/caching-module-replace.html"
   - title: シャーシ
-    pdf-filename: AFF A220 および FAS2700 シャーシ
+    pdf-filename: FAS2700 シャーシ
     entries:
     - title: 概要
       url: "/fas2700/chassis-replace-overview.html"
@@ -49,7 +49,7 @@ entries:
     - title: 構成をリストアする
       url: "/fas2700/chassis-replace-complete-system-restore-rma.html"
   - title: コントローラ
-    pdf-filename: AFF A220 および FAS2700 コントローラ
+    pdf-filename: FAS2700 コントローラ
     entries:
     - title: 概要
       url: "/fas2700/controller-replace-overview.html"
@@ -64,10 +64,10 @@ entries:
     - title: システムのリストアを完了
       url: "/fas2700/controller-replace-restore-system-rma.html"
   - title: DIMM
-    pdf-filename: AFF A220 および FAS2700 DIMM
+    pdf-filename: FAS2700 DIMM
     url: "/fas2700/dimm-replace.html"
   - title: ドライブ
-    pdf-filename: AFF A220 および FAS2700 ドライブ
+    pdf-filename: FAS2700 ドライブ
     url: "/fas2700/drive-replace.html"
   - title: NVMEM バッテリ
     pdf-filename: AFF A220 / FAS2700 NVMEM バッテリ
@@ -76,5 +76,5 @@ entries:
     pdf-filename: AFF A220 および FAS2700 の電源装置
     url: "/fas2700/power-supply-swap-out.html"
   - title: リアルタイムクロックバッテリ
-    pdf-filename: AFF A220 および FAS2700 リアルタイムクロックバッテリ
+    pdf-filename: FAS2700 リアルタイムクロックバッテリ
     url: "/fas2700/rtc-battery-replace.html"

@@ -5,6 +5,7 @@ keywords: aff a800, replace the real-time clock battery
 summary: コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。 
 ---
 = リアルタイムクロックバッテリ AFF A800 を交換してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

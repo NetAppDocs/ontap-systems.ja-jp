@@ -5,6 +5,7 @@ keywords: aff a800, shut down the impaired controller
 summary: 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。 
 ---
 = 障害のあるコントローラ AFF A800 をシャットダウンします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

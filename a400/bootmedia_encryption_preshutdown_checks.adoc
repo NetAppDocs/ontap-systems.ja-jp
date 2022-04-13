@@ -5,6 +5,7 @@ keywords: aff a400, aff, a400, shut, down, impair, controller, check, status, on
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
 = オンボード暗号化をチェック - AFF A400
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

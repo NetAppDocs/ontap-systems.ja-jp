@@ -5,6 +5,7 @@ keywords: fas500f, check, nve, nse, systems, ontap 9.6, netapp volume encryption
 summary: 障害のあるコントローラをシャットダウンする前に、システムで NetApp Volume Encryption \ （ NVE \ ）または NetApp Storage Encryption \ （ NSE \ ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。 
 ---
 = オンボード暗号化キー FAS500f を確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

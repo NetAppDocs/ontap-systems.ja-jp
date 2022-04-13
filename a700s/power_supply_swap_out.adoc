@@ -5,6 +5,7 @@ keywords: aff a700s, aff, a700s, swap, power, supply, disconnect, target, psu, s
 summary: 電源装置（ PSU ）を交換するには、ターゲットの電源装置（ PSU ）を電源から切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。 
 ---
 = 電源装置 AFF A700s を交換してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

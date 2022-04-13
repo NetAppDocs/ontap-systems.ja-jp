@@ -5,6 +5,7 @@ keywords: fas2700, aff a220, replace, real, time, clock, battery, impaired, cont
 summary: コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。 
 ---
 = リアルタイムクロックバッテリを交換してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

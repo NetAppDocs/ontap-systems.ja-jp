@@ -5,6 +5,7 @@ keywords: fas8300, fas8300, locate, boot, media, controller, module, fre, map, d
 summary: コントローラモジュールのブートメディアの場所を確認し（コントローラモジュールの FRU マップを参照）、手順に従って交換する必要があります。 
 ---
 = ブートメディア - FAS8300 および FAS8700 を交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

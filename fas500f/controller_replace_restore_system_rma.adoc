@@ -5,6 +5,7 @@ keywords: fas500f, how to restore NetApp Storage Encryption, how to complete the
 summary: 'システムを完全に動作状態に戻すには、 NetApp Storage Encryption の構成をリストアし（必要な場合）、新しいコントローラのライセンスをインストールし、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。テクニカルサポートにお問い合わせください https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"]RMA 番号を確認する場合や、交換用手順にサポートが必要な場合は、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。' 
 ---
 = システムのリストアを完了する - FAS500f
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

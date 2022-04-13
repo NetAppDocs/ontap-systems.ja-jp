@@ -5,6 +5,7 @@ keywords: aff a800, shutdown the controllers
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
 = コントローラ AFF A800 をシャットダウンします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

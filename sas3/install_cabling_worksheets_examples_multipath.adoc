@@ -5,6 +5,7 @@ keywords: controller-to-stack, cabling, worksheet, cable, ha, pair, multipath, h
 summary: コントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 HA ペアをマルチパス HA 構成としてケーブル接続できます。 
 ---
 = 一般的なマルチパス HA 構成 - IOM12 モジュールを搭載したシェルフのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

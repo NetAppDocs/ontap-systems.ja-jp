@@ -5,6 +5,7 @@ keywords: stop, all, host, i/o activity, power, off, shelf, replacing, replace, 
 summary: ドライブドロワーを交換する前に、ホストの I/O アクティビティをすべて停止し、シェルフの電源をオフにする必要があります。 
 ---
 = DS460C ディスクシェルフ内のドライブドロワーを IOM12 モジュールと交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

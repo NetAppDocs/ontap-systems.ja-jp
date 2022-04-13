@@ -5,6 +5,7 @@ keywords: fas8300, fas8300, procedure, boot, impair, controller, recovery, image
 summary: 障害のあるコントローラをリカバリイメージからブートするための手順 は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。 
 ---
 = リカバリイメージ AFF FAS8300 および FAS8700 をブートします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

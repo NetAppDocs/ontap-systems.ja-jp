@@ -5,6 +5,7 @@ keywords: aff a700, fas9000, replace, destage, controller, power, module, nvram1
 summary: NVRAM10 バッテリを搭載したデステージコントローラ電源モジュール（ DCPM ）をホットスワップするには、障害が発生した DCPM モジュールの場所を確認し、シャーシから取り外して、交換用の DCPM モジュールを取り付ける必要があります。 
 ---
 = デステージコントローラ電源モジュール（ DCPM ） - AFF A700 および FAS9000
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: aff a700s, aff, a700s, locate, fail, boot, media, controller, module, 
 summary: コントローラモジュールで障害が発生したブートメディアの場所を確認するには、コントローラモジュールの中央の PCIe モジュールを取り外し、ブートメディアの近くにある LED で障害が発生したブートメディアの場所を確認してから、ブートメディアを交換します。 
 ---
 = ブートメディア AFF A700s を交換してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

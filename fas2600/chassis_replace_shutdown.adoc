@@ -5,6 +5,7 @@ keywords: fas2600, shutdown the controllers
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
 = コントローラをシャットダウンします - FAS2600
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

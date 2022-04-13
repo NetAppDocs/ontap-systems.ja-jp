@@ -5,6 +5,7 @@ keywords: aff a700s, aff, a700s, replace, component, controller, module, reinsta
 summary: コントローラモジュール内のコンポーネントを交換したら、コントローラモジュールをシステムシャーシに再度取り付けてブートする必要があります。 
 ---
 = コントローラモジュール AFF A700s を再度取り付けます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

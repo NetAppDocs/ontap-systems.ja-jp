@@ -5,6 +5,7 @@ keywords:
 summary: サービスを中断せずにファンモジュールを交換するには、特定の順序でタスクを実行する必要があります。 
 ---
 = ファンと AFF A900 をスワップします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

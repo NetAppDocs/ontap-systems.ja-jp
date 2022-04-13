@@ -5,6 +5,7 @@ keywords: aff, a320, aff a320, replace, real-time, clock, rtc, battery, controll
 summary: コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。 
 ---
 = リアルタイムクロックバッテリを交換してください - AFF A320
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

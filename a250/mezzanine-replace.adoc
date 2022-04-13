@@ -5,6 +5,7 @@ keywords: aff a250, replace or install a mezzanine card
 summary: 障害が発生したメザニンカードを交換するには、ケーブルと SFP / QSFP モジュールを取り外し、カードを交換して SFP モジュールまたは QSFP モジュールを再度取り付け、カードにケーブルを再接続する必要があります。新しいメザニンカードを取り付けるには、適切なケーブルと SFP モジュールまたは QSFP モジュールが必要です。 
 ---
 = メザニンカード（ AFF A250 ）を交換または取り付けます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

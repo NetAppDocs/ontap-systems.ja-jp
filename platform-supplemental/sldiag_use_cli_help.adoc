@@ -5,6 +5,7 @@ keywords: command-line, syntax, command, line, name, follow, question, mark, how
 summary: コマンドラインからコマンドライン構文のヘルプを表示するには、コマンド名に続けて help を入力するか、または疑問符（？ \ ）を入力します。 
 ---
 = オンラインのコマンドラインヘルプの使用方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

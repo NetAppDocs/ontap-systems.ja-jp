@@ -5,6 +5,7 @@ keywords: aff a700s, aff, a700s, shut, down, impair, controller, check, status, 
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
 = オンボード暗号化キーを確認する - AFF A700s
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

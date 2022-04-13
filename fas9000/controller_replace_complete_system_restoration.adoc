@@ -5,6 +5,7 @@ keywords: aff a700, fas9000, storage encryption, licenses, storage encryption, v
 summary: 交換用手順を完了してシステムを完全に動作状態に戻すには、ストレージのケーブル接続をやり直し、必要に応じて NetApp Storage Encryption の構成をリストアし、新しいコントローラのライセンスをインストールする必要があります。 
 ---
 = システムのリストアの完了 - AFF A700 および FAS9000
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

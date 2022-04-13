@@ -5,6 +5,7 @@ keywords: addional, storage, hot-add, iom12, shelves, shelf, sas, shelves, shelf
 summary: ストレージの追加が必要になった場合は、 IOM12 シェルフ（ IOM12 モジュールを搭載した SAS シェルフ）を IOM6 シェルフ（ IOM6 モジュールを搭載した SAS シェルフ）のスタックにホットアドできます。つまり、スタックを混在させることができます。 
 ---
 = IOM12 シェルフを IOM6 シェルフのスタックにホットアドします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
