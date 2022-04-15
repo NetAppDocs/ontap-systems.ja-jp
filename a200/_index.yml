@@ -24,7 +24,7 @@ indexpage:
     - title: システム DIMM
       url: "/dimm-replace.html"
     - title: 電源装置
-      url: "/power-supply-swapout.html"
+      url: "/power-supply-swap-out.html"
     - title: RTC バッテリ
       url: "/rtc-battery-replace.html"
   - title: 詳細はこちら
