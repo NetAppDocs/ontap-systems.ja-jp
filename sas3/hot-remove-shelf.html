@@ -9,14 +9,14 @@
   <meta property="og:title" content="IOM12 モジュールを搭載したシェルフをホットリムーブします" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-systems/sas3/hot-remove-shelf.html" />
-	<meta property="og:description" content="IOM12 モジュールを搭載したディスクシェルフを移動または交換する必要がある場合、電源がオンでデータを提供中のシステムから、ディスクシェルフを無停止でホットリムーブできます。ホットリムーブでは、ディスクシェルフのスタックから任意のディスクシェルフを取り外したり、ディスクシェルフのスタック全体を取り外したりできます。" />
+	<meta property="og:description" content="IOM12 モジュールを搭載したディスクシェルフを移動または交換する必要がある場合、電源がオンで I/O が実行中のシステムからディスクシェルフを無停止でホットリムーブできます。ホットリムーブでは、ディスクシェルフのスタックから任意のディスクシェルフを取り外したり、ディスクシェルフのスタック全体を取り外したりできます。" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/ontap-systems/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="IOM12 モジュールを搭載したディスクシェルフを移動または交換する必要がある場合、電源がオンでデータを提供中のシステムから、ディスクシェルフを無停止でホットリムーブできます。ホットリムーブでは、ディスクシェルフのスタックから任意のディスクシェルフを取り外したり、ディスクシェルフのスタック全体を取り外したりできます。">
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="IOM12 モジュールを搭載したディスクシェルフを移動または交換する必要がある場合、電源がオンで I/O が実行中のシステムからディスクシェルフを無停止でホットリムーブできます。ホットリムーブでは、ディスクシェルフのスタックから任意のディスクシェルフを取り外したり、ディスクシェルフのスタック全体を取り外したりできます。">
   <meta name="keywords" content=" hot-remove, disk, shelf, iom12, module, nondisruptive, module-nondisruptively, system, power, serving, data, i/o, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules"><!-- Icons -->
   <link rel="icon" href="/ja-jp/ontap-systems/images/favicon.ico" type="image/x-icon">
 
@@ -6141,7 +6141,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-13 13:13:55 +0000">04/13/2022</time>
+    <time datetime="2022-04-25 20:09:32 +0000">04/25/2022</time>
     
   
 
@@ -6149,7 +6149,7 @@
 </p>
 
 <div class="paragraph lead">
-<p>IOM12 モジュールを搭載したディスクシェルフのホットリムーブが可能です。電源が入った、データを提供中（ I/O が実行中）のシステムから、ディスクシェルフを移動または交換する必要がある場合は、システムを停止せずにディスクシェルフを取り外すことができます。ホットリムーブでは、ディスクシェルフのスタックから任意のディスクシェルフを取り外したり、ディスクシェルフのスタック全体を取り外したりできます。</p>
+<p>IOM12 モジュールを搭載したディスクシェルフを移動または交換する必要がある場合、電源がオンで I/O が実行中のシステムからディスクシェルフを無停止でホットリムーブできます。ホットリムーブでは、ディスクシェルフのスタックから任意のディスクシェルフを取り外したり、ディスクシェルフのスタック全体を取り外したりできます。</p>
 </div>
 <div class="ulist">
 <div class="title">作業を開始する前に</div>
@@ -6185,7 +6185,7 @@
 <p>HA ペア構成がテイクオーバー状態のときには実行できません。</p>
 </li>
 <li>
-<p>取り外すディスクシェルフからすべてのアグリゲートを削除しておく必要があります。ディスクドライブはスペアである必要があります。</p>
+<p>取り外すディスクシェルフのディスクドライブからすべてのアグリゲートを削除しておく必要があります（ディスクドライブはスペアである必要があります）。</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -6280,6 +6280,9 @@
 </table>
 </div>
 </li>
+<li>
+<p>* シェルフの破損の可能性： DS460C シェルフを取り外し、データセンターの別の場所に移動したり、別の場所に移動したりする場合は、ドライブドロワーやドライブの破損を防ぐためにドライブを取り外してください。</p>
+</li>
 </ul>
 </div>
 <div class="olist arabic">
@@ -6336,9 +6339,6 @@
 </tr>
 </table>
 </div>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>次の出力は、取り外すディスクシェルフ（ディスクシェルフ 3 ）のディスクドライブが、ディスクシェルフを取り外すための正しい状態にあることを示しています。アグリゲートはすべてのディスクドライブから削除されているため、各ディスクドライブの「 Container Name 」列にダッシュが表示されます。所有権もすべてのディスク・ドライブから削除されますしたがって ' 各ディスク・ドライブの [Owner] 列にダッシュが表示されます</p>
 </div>
@@ -6360,8 +6360,7 @@ Disk         Size Shelf Bay Type   Type        Name       Owner
 ...</pre>
 </div>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p>取り外すディスクシェルフの物理的な位置を確認します。</p>
 <div class="paragraph">
