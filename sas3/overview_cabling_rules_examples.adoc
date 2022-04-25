@@ -25,7 +25,7 @@ IOM12 モジュールを搭載した SAS ドライブシェルフをストレー
 * ワークシートと例のケーブル接続 *
 
 * link:install-cabling-worksheets-examples-multipath.html["一般的なマルチパス HA 構成"]
-* link:install-cabling-worksheets-examples-fas2600.html["一般的な AFF A200 、 AFF A220 、 FAS2600 、 FAS2700 構成"]
+* link:install-cabling-worksheets-examples-fas2600.html["オンボードストレージを搭載した AFF および FAS プラットフォーム"]
 * link:install-worksheets-examples-quadpath.html["クアッドパス HA 構成"]
 
 

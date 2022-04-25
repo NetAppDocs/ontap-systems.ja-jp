@@ -352,7 +352,7 @@ HA ペアの場合、両方のコントローラでディスク所有権の自�
 |===
 .. コントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を参照して、構成に合った記入済みワークシートがあるかどうかを確認します。
 +
-link:install-cabling-worksheets-examples-fas2600.html["一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 構成のコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例"]
+link:install-cabling-worksheets-examples-fas2600.html["オンボードストレージを搭載した AFF プラットフォームと FAS プラットフォームのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例"]
 
 +
 link:install-cabling-worksheets-examples-multipath.html["一般的なマルチパス HA 構成のコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例"]

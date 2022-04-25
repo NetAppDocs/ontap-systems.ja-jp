@@ -5782,14 +5782,10 @@
   <block id="f76dc75f678aa69ffe38bc567a89bca0" category="paragraph">次のワークシートとケーブル接続例では、スタック 1 にポートペア 1a / 2b （マルチパス）と 2a / 1d （クアッドパス）を使用し、スタック 2 にポートペア 1c / 2d （マルチパス）と 2c / 1b （クアッドパス）を使用しています。</block>
   <block id="1ba62ddf8cca99736a1b554044171b2e" category="image-alt">DRW ワークシート qpha スロット 1 と 2 つの 4 ポートバス 2 つのスタック NAU</block>
   <block id="bfaf47370d0e0636d466e95dcd0ebeb2" category="image-alt">DRW qpha スロット 1 および 2 2 2 4 ポートバス 2 スタック NAU</block>
-  <block id="a1ed8439f9e8dd8abbf897208819784d" category="summary">記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 構成をケーブル接続できます。</block>
-  <block id="1c2eda53a3c2390b00d66e75048ca95f" category="doc">一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 構成 - IOM12 モジュールを搭載したシェルフのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例</block>
-  <block id="560038a44309d6251e4f834ae3746531" category="list-text">必要に応じて、を参照してください <block ref="db31d33614fd87795381d5ac14be04aa" category="inline-link-macro-rx"></block> サポートされる構成、シェルフ / シェルフ間の接続、およびコントローラ / シェルフ間の接続（ AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 ポート 0b の同じドメイン接続を含む）については、を参照してください。</block>
   <block id="ba38e437ae673ee3e3f19dd893a38b35" category="list-text">ケーブル接続例では、コントローラ / スタック間のケーブル接続のうち、コントローラ 0b のポート接続を実線で、コントローラ 0a のポート接続を点線で区別して表しています。</block>
   <block id="1b423539e905b630394da7971c47a88a" category="image-alt">DRW fas2600 コントローラからスタックケーブルタイプキー</block>
   <block id="ee547c1c638ccba345b1cbcb32709bcc" category="list-text">ケーブル接続例では、コントローラ / スタック間の接続とシェルフ / シェルフ間の接続に別の色を使用して、 IOM A （ドメイン A ）経由の接続と IOM B （ドメイン B ）経由の接続を区別しています。</block>
   <block id="c81b301c5f51b115f5e18cb1507f7388" category="image-alt">DRW fas2600 ケーブルカラーキー</block>
-  <block id="3073d82d9dcde527789013d14eff0590" category="section-title">AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 マルチパス HA 構成、マルチシェルフスタック × 1</block>
   <block id="ff82ea2b354e0f934f26abf26044a994" category="paragraph">次のワークシートとケーブル接続の例では、ポートペア 0a / 0b を使用しています。</block>
   <block id="722de0e0a7dcfb970621a772bae3850c" category="image-alt">DRW fas2600 mpha ワークシート</block>
   <block id="5eb85c13122610ca0d3c8606ac0884a7" category="image-alt">DRW fas2600 mpha</block>
@@ -5831,16 +5827,13 @@
   <block id="c190e47c300a3781bbf4edf442004427" category="list-text">電源装置に電源コードを再接続し、電源コード固定クリップを使用して電源コードを固定します。</block>
   <block id="7942c8c0a2938d554ca414a57b6286aa" category="list-text">電源スイッチをオンにします。</block>
   <block id="b30bd480240ea6cb86b54735c115a8db" category="paragraph">電源装置の電源（緑） LED と警告（黄色） LED が点灯し、 40 秒以内に警告（黄色） LED が消灯します。</block>
-  <block id="77c1c66d8ce6aa90628f37515ac41ba2" category="summary">IOM12 モジュールを搭載したディスクシェルフを移動または交換する必要がある場合、電源がオンでデータを提供中のシステムから、ディスクシェルフを無停止でホットリムーブできます。ホットリムーブでは、ディスクシェルフのスタックから任意のディスクシェルフを取り外したり、ディスクシェルフのスタック全体を取り外したりできます。</block>
   <block id="1b13b207ae1928cd420c7771c798eb3d" category="doc">IOM12 モジュールを搭載したシェルフをホットリムーブします</block>
-  <block id="27e201e3d04d5e9a38b24624577d3d3f" category="paragraph">IOM12 モジュールを搭載したディスクシェルフのホットリムーブが可能です。電源が入った、データを提供中（ I/O が実行中）のシステムから、ディスクシェルフを移動または交換する必要がある場合は、システムを停止せずにディスクシェルフを取り外すことができます。ホットリムーブでは、ディスクシェルフのスタックから任意のディスクシェルフを取り外したり、ディスクシェルフのスタック全体を取り外したりできます。</block>
   <block id="c5cabc5bd527563ec2a9e03c2ca16ab6" category="list-text">システムは、マルチパス HA 、マルチパス、クアッドパス HA 、またはクアッドパス構成である必要があります。</block>
   <block id="9c2a85bd806fec2b1e3452f15f799e68" category="paragraph">AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 システムでは、外付けストレージがマルチパス HA またはマルチパスとしてケーブル接続されている必要があります。</block>
   <block id="079a7f8e81dcfa4ea9fb370c9901815f" category="admonition">外付けストレージがマルチパス接続でケーブル接続されている FAS2600 シリーズシングルコントローラシステムの場合、内蔵ストレージはシングルパス接続を使用するため、システムは混在パス構成になります。</block>
   <block id="bbf5512c7d19cdd9d9a6fd9e97d3a51b" category="list-text">システムに SAS ケーブル接続のエラーメッセージが表示されていない必要があります。</block>
   <block id="7aef33153293755f25958302c5aed92b" category="paragraph">Active IQ Config Advisor をダウンロードして実行することで、 SAS ケーブル接続に関するエラーメッセージと対処方法を確認できます。</block>
   <block id="a87e1a96f2d7d8d3f543485f49e17ff9" category="list-text">HA ペア構成がテイクオーバー状態のときには実行できません。</block>
-  <block id="e31335395bd34b8764591a789418ea20" category="list-text">取り外すディスクシェルフからすべてのアグリゲートを削除しておく必要があります。ディスクドライブはスペアである必要があります。</block>
   <block id="53c840808f25d00f1d58d54eb1d542a0" category="admonition">この手順を取り外すディスクシェルフにアグリゲートが含まれた状態で実行しようとすると、システムでエラーが発生し、複数のディスクがパニック状態になることがあります。</block>
   <block id="e43abe3ed88114c3c553dbf6413e6265" category="list-text">スタックからディスクシェルフを取り外す場合は、取り外すディスクシェルフをバイパスする距離を考慮する必要があります。そのため、現在のケーブルでは長さが足りない場合は、もっと長いケーブルを用意する必要があります。</block>
   <block id="00124b65b0475ef5a1ef8812a9a5aa02" category="list-text">* ベストプラクティス： * 取り外すディスクシェルフのディスクドライブからアグリゲートを削除したあとで、ディスクドライブの所有権を削除することを推奨します。</block>
@@ -6903,8 +6896,6 @@
   <block id="466938affa9a199b1c83c75ca5cb1a5b" category="paragraph">* ワークシートと例のケーブル接続 *</block>
   <block id="9da6ad063de2521b4320f53e9eaef62c" category="inline-link-macro">一般的なマルチパス HA 構成</block>
   <block id="d9e855b435b4d134eea547e0fa310441" category="list-text"><block ref="d9e855b435b4d134eea547e0fa310441" category="inline-link-macro-rx"></block></block>
-  <block id="9bb0aaeecd6b8ef6459136fe58d3005b" category="inline-link-macro">一般的な AFF A200 、 AFF A220 、 FAS2600 、 FAS2700 構成</block>
-  <block id="41af106a10d104f231ff7ec566b3a5bf" category="list-text"><block ref="41af106a10d104f231ff7ec566b3a5bf" category="inline-link-macro-rx"></block></block>
   <block id="d0b14672f568caba4ff0c9e7e94adbfd" category="inline-link-macro">クアッドパス HA 構成</block>
   <block id="c9652f347c61d0d2c370d1229afb9e37" category="list-text"><block ref="c9652f347c61d0d2c370d1229afb9e37" category="inline-link-macro-rx"></block></block>
   <block id="8ae471d6400ac43c05cee2f01574b10c" category="paragraph">* ケーブル接続ワークシートテンプレート *</block>
@@ -8602,4 +8593,19 @@
   <block id="c4565f27e7eb1d0640e258fb796df9c4" category="list-text">システムケーブルとトランシーバモジュールをコントローラモジュールに接続し、ケーブルマネジメントデバイスを再度取り付けます。</block>
   <block id="6c35991313f21e9038f629e9e809488a" category="admonition">効率性の異なる PSU を混在させないでください。いつものように同じように置換します。</block>
   <block id="0fbe0630286ce5debeb3d11174988b34" category="open-title">オプション 3 ：コントローラは 2 ノード MetroCluster に搭載されています</block>
+  <block id="6bec966647e1b9c8a03ddd277c8fe864" category="inline-link">パーツの返品と交換</block>
+  <block id="822bec4a0db0c5fd17b5f05b4e1c0335" category="paragraph">障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください<block ref="4fc2cab5a4eb2f6a408378b0d596ae42" category="inline-link-rx"></block> 詳細については、を参照してください。</block>
+  <block id="e188406fb2d6108447e3bc6cb9155625" category="inline-link-macro">オンボードストレージを搭載した AFF および FAS プラットフォーム</block>
+  <block id="7a63e08a24ae8c9c1ab5dcddaf6f551f" category="list-text"><block ref="7a63e08a24ae8c9c1ab5dcddaf6f551f" category="inline-link-macro-rx"></block></block>
+  <block id="bd7b8cb1f03ceb90528c843b3cd8c0a4" category="summary">IOM12 モジュールを搭載したディスクシェルフを移動または交換する必要がある場合、電源がオンで I/O が実行中のシステムからディスクシェルフを無停止でホットリムーブできます。ホットリムーブでは、ディスクシェルフのスタックから任意のディスクシェルフを取り外したり、ディスクシェルフのスタック全体を取り外したりできます。</block>
+  <block id="bf9eaa32fa671084f441eeba9c863ef6" category="paragraph">IOM12 モジュールを搭載したディスクシェルフを移動または交換する必要がある場合、電源がオンで I/O が実行中のシステムからディスクシェルフを無停止でホットリムーブできます。ホットリムーブでは、ディスクシェルフのスタックから任意のディスクシェルフを取り外したり、ディスクシェルフのスタック全体を取り外したりできます。</block>
+  <block id="ba0a2d97499e2e560187690f4b54b10c" category="list-text">取り外すディスクシェルフのディスクドライブからすべてのアグリゲートを削除しておく必要があります（ディスクドライブはスペアである必要があります）。</block>
+  <block id="eaca20aa2eab6f0d724e09d105bcde6d" category="list-text">* シェルフの破損の可能性： DS460C シェルフを取り外し、データセンターの別の場所に移動したり、別の場所に移動したりする場合は、ドライブドロワーやドライブの破損を防ぐためにドライブを取り外してください。</block>
+  <block id="df890e7b6d800ea7f63516f78dc7b333" category="inline-link-macro">オンボードストレージを搭載した AFF プラットフォームと FAS プラットフォームのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例</block>
+  <block id="4831f887bab13b0957b607ad184c87f7" category="paragraph"><block ref="4831f887bab13b0957b607ad184c87f7" category="inline-link-macro-rx"></block></block>
+  <block id="fdd0f707bd71fcef53b653ae53e31f53" category="summary">記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 プラットフォームなどのオンボードストレージで AFF プラットフォームと FAS プラットフォームをケーブル接続できます。この情報は、システム外部のシステムには適用されません。</block>
+  <block id="34a9eb16320fa575f00d96a29be9d645" category="doc">IOM12 モジュールを搭載したオンボードストレージシェルフを搭載した AFF プラットフォームと FAS プラットフォームのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例</block>
+  <block id="18e93c7175385ec259f95d9d453bdda1" category="list-text">必要に応じて、を参照してください <block ref="db31d33614fd87795381d5ac14be04aa" category="inline-link-macro-rx"></block> サポートされる構成、シェルフ / シェルフ間の接続、およびコントローラ / シェルフ間の接続については、を参照してください。</block>
+  <block id="67f2d45d4d0936132195fb6f111ce3e8" category="section-title">マルチパス HA 構成で、マルチシェルフスタックを 1 つ使用したオンボードストレージを搭載した AFF プラットフォームと FAS プラットフォーム</block>
+  <block id="83742af000bdb059461854fab1a8b606" category="list-text">異なる効率定格の電源装置を混在させないでください。いつものように同じように置換します。</block>
 </blocks>

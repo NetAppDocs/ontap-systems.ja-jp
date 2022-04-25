@@ -1,19 +1,19 @@
 ---
 permalink: sas3/install-cabling-worksheets-examples-fas2600.html 
 sidebar: sidebar 
-keywords: complete, controller-to-stack, cabling, worksheet, cable, common, aff, a200, a220, fas2600, series, fas2700, configuration 
-summary: 記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 構成をケーブル接続できます。 
+keywords: controller-to-stack, cabling, worksheet, cable, aff, a200, a220, fas2600, fas2700, onboard, onboard storage 
+summary: 記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 プラットフォームなどのオンボードストレージで AFF プラットフォームと FAS プラットフォームをケーブル接続できます。この情報は、システム外部のシステムには適用されません。 
 ---
-= 一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 構成 - IOM12 モジュールを搭載したシェルフのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例
+= IOM12 モジュールを搭載したオンボードストレージシェルフを搭載した AFF プラットフォームと FAS プラットフォームのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 構成をケーブル接続できます。
+記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 プラットフォームなどのオンボードストレージで AFF プラットフォームと FAS プラットフォームをケーブル接続できます。この情報は、システム外部のシステムには適用されません。
 
-* 必要に応じて、を参照してください link:install-cabling-rules.html["SAS ケーブル接続ルール"] サポートされる構成、シェルフ / シェルフ間の接続、およびコントローラ / シェルフ間の接続（ AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 ポート 0b の同じドメイン接続を含む）については、を参照してください。
+* 必要に応じて、を参照してください link:install-cabling-rules.html["SAS ケーブル接続ルール"] サポートされる構成、シェルフ / シェルフ間の接続、およびコントローラ / シェルフ間の接続については、を参照してください。
 * ケーブル接続例では、コントローラ / スタック間のケーブル接続のうち、コントローラ 0b のポート接続を実線で、コントローラ 0a のポート接続を点線で区別して表しています。
 +
 image::../media/drw_fas2600_controller_to_stack_cable_type_key.png[DRW fas2600 コントローラからスタックケーブルタイプキー]
@@ -26,7 +26,7 @@ image::../media/drw_fas2600_cable_color_key.png[DRW fas2600 ケーブルカラ�
 
 
 
-== AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 マルチパス HA 構成、マルチシェルフスタック × 1
+== マルチパス HA 構成で、マルチシェルフスタックを 1 つ使用したオンボードストレージを搭載した AFF プラットフォームと FAS プラットフォーム
 
 次のワークシートとケーブル接続の例では、ポートペア 0a / 0b を使用しています。
 
