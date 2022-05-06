@@ -2232,7 +2232,6 @@
   <block id="a042d62f38b129b2b0a14f9ad8ef93fa" category="doc">設置とセットアップ PDF ポスター - AFF A700s</block>
   <block id="a6f8184cf42c02441138be75b0c4c9da" category="inline-link-macro">AFF A700s のセットアップガイド</block>
   <block id="b4ddf9d759f084ba25e7c363dcfcd65e" category="paragraph"><block ref="b4ddf9d759f084ba25e7c363dcfcd65e" category="inline-link-macro-rx"></block></block>
-  <block id="71579293cd0dc4c10d7d09bfc05b43aa" category="doc">コントローラモジュール AFF A700s を再度取り付けます</block>
   <block id="9baf211c6ecdaf2caa4ae8ac90089172" category="list-text">まだ行っていない場合は、エアダクトを閉じます。</block>
   <block id="af9622020670ce2b86cd2845b04b00f4" category="list-text">エアダクトをコントローラモジュールまで下げます。</block>
   <block id="97be101d543785854ad18ca62a561d32" category="list-text">カチッという音がして固定ツメが所定の位置に収まるまで、エアダクトをライザーの方向にスライドさせます。</block>
@@ -2253,7 +2252,6 @@
   <block id="24907dee7e4205c74e589d14a85e4bbd" category="doc">DIMM-AFF A700s を交換します</block>
   <block id="bf7918e10696cda0294441f81ad32ee4" category="paragraph">ギブバックを待機しています</block>
   <block id="2c605d107b8b0f8d344d6c863e4c47a9" category="paragraph">Ctrl キーを押しながら C キーを押し、「 y 」と入力します。</block>
-  <block id="26e38d31d368fa344a653ab87cee79bb" category="section-title">コントローラモジュールを取り外します</block>
   <block id="ea199306c38c35706c03077ded4d9d02" category="paragraph">コントローラモジュールを交換する場合やコントローラモジュール内部のコンポーネントを交換する場合は、コントローラモジュールをシャーシから取り外す必要があります。</block>
   <block id="359b2f64ed46d9bc640532f2fd8810c0" category="list-text">ケーブルマネジメントデバイスに接続しているケーブルをまとめているフックとループストラップを緩め、システムケーブルと SFP をコントローラモジュールから外し（必要な場合）、どのケーブルが何に接続されていたかを記録します。</block>
   <block id="73ffa1532dd710d7eb1520cb730fb392" category="paragraph">ケーブルはケーブルマネジメントデバイスに収めたままにします。これにより、ケーブルマネジメントデバイスを取り付け直すときに、ケーブルを整理する必要がありません。</block>
@@ -2273,7 +2271,6 @@
   <block id="bf1b040c014a82c7128928f952e50325" category="paragraph">エアダクトの固定ツメ</block>
   <block id="72188531636fc5815089233196e1ec35" category="paragraph">ライザー</block>
   <block id="8d669e84d5ccc297894b17bd6469d12d" category="paragraph">エアダクト</block>
-  <block id="136dcb2edcd74121805a5141d72b31e0" category="section-title">DIMM を交換します</block>
   <block id="8d73259baf4ddfb7a4ebcc9452d895e0" category="paragraph">DIMM を交換するには、コントローラモジュール内部の DIMM マップまたは DIMM の横の LED で DIMM の場所を確認してから、特定の手順に従って交換します。</block>
   <block id="9de291eec146aa309ed46727b945c6d4" category="list-text">該当するライザーを取り外します。</block>
   <block id="36ac39cea070e713b0fb0a0f54db88b7" category="image-alt">DRW a700s DIMM の交換</block>
@@ -2294,11 +2291,9 @@
   <block id="42276924a11ced220d6673bca09aab34" category="list-text">コントローラモジュールから取り外したライザーを再度取り付けます。</block>
   <block id="f7d2e85282b0ca5073c032b071225e16" category="paragraph">NVRAM ライザー「ライザー 1 」を取り外した場合は、 NVRAM バッテリをコントローラモジュールに接続してください。</block>
   <block id="78891883edccb7cc97dd58049b3468fd" category="list-text">エアダクトを閉じます。</block>
-  <block id="46dff51ede0ec9818d5f63c00dfa5746" category="section-title">コントローラモジュールを再度取り付け、システムをブートします</block>
   <block id="751da2770ffa07ad30e1b98d596ba78c" category="paragraph">コントローラモジュールの FRU を交換したら、コントローラモジュールを再度取り付けてリブートする必要があります。</block>
   <block id="bd29c68c1d822e5458bc751793cb0415" category="list-text">「 Press Ctrl-C for Boot Menu 」 ( ブートメニューに Ctrl キーを押して C キーを押してください ) と表示されたら、 Ctrl+C キーを押して起動プロセスを中断します。</block>
   <block id="cceefd9f0d8ae2b522801129da926bd4" category="list-text">表示されたメニューからメンテナンスモードでブートするオプションを選択します。</block>
-  <block id="5a9efed957a764efe5954f9cb1a6df54" category="section-title">診断を実行します</block>
   <block id="10581f2379a6cef29e5326e690ced10e" category="section-title">障害のあるパーツをネットアップに返却します</block>
   <block id="b8fd9710f762b1dbb3d6da2d8e6d2f87" category="summary">AFF A700s の『システムレベル診断ガイド』へのリンク</block>
   <block id="1f2367bc1875d773be8f6dfebf714155" category="doc">AFF A700s のシステムレベルの診断</block>
@@ -2504,25 +2499,21 @@
   <block id="d2438a9a8b88afff0b59df6c125b3884" category="list-text">storage failover modify コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。</block>
   <block id="d574c271d37aff5dfc97b6ecd338458f" category="doc">リストアと交換の手順を完了します - AFF A700s</block>
   <block id="28746dbce7c4fc8053d035e3b2295bde" category="doc">リアルタイムクロックバッテリを交換してください - AFF A700s</block>
-  <block id="ba465a4963e9d81b0df00697f6765e53" category="section-title">RTC バッテリを交換します</block>
   <block id="65c45f25b11ef516aa4180bd435460a0" category="list-text">RTC バッテリの場所を確認します。</block>
   <block id="6199e9ac737bb64b5d2e7bfb2a3da5a0" category="image-alt">DRW a700s RTC バッテリの交換</block>
   <block id="a7f375a810d73a673cfac8d89305ccac" category="paragraph">RTC バッテリとホルダー</block>
   <block id="e789dadff6ab02fe418b101bca452d66" category="list-text">バッテリをそっと押してホルダーから離し、持ち上げてホルダーから取り出します。</block>
   <block id="9e5b0cf96e39c07e340d8e7e3f98141d" category="admonition">ホルダーから取り外す際に、バッテリの極の向きを確認しておいてください。バッテリに記載されているプラス記号に従って、バッテリをホルダーに正しく配置する必要があります。ホルダーの近くにプラス記号が表示されているので、バッテリーの位置を確認できます。</block>
   <block id="73fb11225a96d88498169da07382a3fe" category="list-text">RTC バッテリの極の向きを確認し、バッテリを斜めに傾けた状態で押し下げてホルダーに挿入します。</block>
-  <block id="5ac2ce23b602bd690adf87a4ddadc899" category="section-title">RTC バッテリ交換後、コントローラモジュールを再度取り付け、日時を設定します</block>
   <block id="864c38e2026ab798db96e7d96459d9e2" category="doc">システムにケーブルを再接続し、ディスクを再割り当てします - AFF A700s</block>
   <block id="a0d8eae32c5a472f83afef8b93706ea5" category="paragraph">交換用手順を完了してシステムを完全に動作状態に戻すには、ストレージのケーブル接続をやり直し、必要に応じて NetApp Storage Encryption の構成をリストアし、新しいコントローラのライセンスをインストールする必要があります。システムを完全に動作状態にリストアするには、一連の作業を完了しておく必要があります。</block>
   <block id="38681c139b912b74e9f2c478df5e20c0" category="summary">システムの NVRAM バッテリを交換するには、コントローラモジュールをシステムから取り出し、バッテリを取り外して交換し、コントローラモジュールを再度取り付ける必要があります。</block>
   <block id="ddb14ada2ef97be8ad7f40139160426e" category="doc">NVRAM バッテリを交換してください - AFF A700s</block>
   <block id="b4528c91634508bf10f34e21233169c0" category="list-text">コントローラモジュールを安全な場所に置いておきます。</block>
-  <block id="732cb0105e10dcf3046c4f8dd9a5a991" category="section-title">NVRAM バッテリを交換してください</block>
   <block id="b6e4e85c37e79abd40b307ddc60db9d3" category="paragraph">NVRAM バッテリを交換するには、障害が発生した NVRAM バッテリをコントローラモジュールから取り外し、交換用 NVRAM バッテリをコントローラモジュールに取り付ける必要があります。</block>
   <block id="e4191ffb24cf00ba5d94d1981ea4fb72" category="list-text">バッテリホルダーの青色の固定ツメを押してラッチをホルダーから外します。</block>
   <block id="35d5fed86af7da6a1d67e961dbf87ef5" category="list-text">バッテリをライザーブラケットの下にスライドさせ、持ち上げてコントローラから取り出し、脇に置きます。</block>
   <block id="9c17b03bf990ca5da9d620cde5370927" category="list-text">交換用バッテリパックを金属板の側壁に沿って下にスライドさせます。側壁のサポートタブがバッテリパックのスロットに収まると、バッテリパックのラッチが所定の位置に固定されます。</block>
-  <block id="e08bd2526a396d2c969a102035c42fed" category="section-title">コントローラモジュールを再度取り付けます</block>
   <block id="0adc04c81c64b8636310e95596f6f092" category="summary">PCIe カードを交換するには、ライザー内のカードからケーブルを外し、ライザーを取り外し、ライザーを交換してから、ライザー内のカードにケーブルを再接続する必要があります。</block>
   <block id="ae5748bcef90e1cb5076c109b969e1d9" category="doc">PCIe カードを交換してください - AFF A700s</block>
   <block id="d26f9a8db778421541cf5cebfdeb9039" category="section-title">手順 3 ： PCIe カードを交換します</block>
@@ -2536,11 +2527,8 @@
   <block id="105e727cdc375bb7add37bd9f101765d" category="list-text">この手順では次の用語を使用します。</block>
   <block id="0f8e7bfea6aa060d757ea5effeaeaf14" category="list-text">この手順には、新しい NVRAM モジュールに関連付けられているコントローラモジュールにディスクを自動または手動で再割り当てする手順が含まれています。手順でに指示された場合は、ディスクを再割り当てする必要があります。ギブバックで CAN 原因の問題が発生する前にディスクの再割り当てを完了する。</block>
   <block id="3dc9d74e0e70274198fc890e3238aa6f" category="list-text">この手順の一部としてディスクやディスクシェルフを変更することはできません。</block>
-  <block id="37e63a96eb8ab113e88a1d983dd9fcf5" category="section-title">NVRAM カードを取り外します</block>
   <block id="645e0a3ffab83941f2797575b7ccbdd0" category="paragraph">NVRAM を交換することは、 NVRAM ライザー「ライザー 1 」をコントローラモジュールから取り外し、 NVRAM カードから NVRAM バッテリを取り外し、障害のある NVRAM カードを取り外して交換用 NVRAM カードを取り付け、 NVRAM ライザーをコントローラモジュールに再度取り付け直すことで構成されます。</block>
-  <block id="6bcc4bf7321499602cc726d01ccea765" category="section-title">HA システムでシステム ID の変更を確認</block>
   <block id="333272d8be912f27b67264ccba42967d" category="paragraph">_replacement _node のブート時にシステム ID の変更を確定し、その変更が実施されたことを確認する必要があります。</block>
-  <block id="c2deae7c367921c0b07893dc6e315415" category="section-title">ストレージおよびボリュームの暗号化機能をリストアする</block>
   <block id="5e1a5ffb20ce25d1d79c8e2014f87d45" category="doc">リカバリイメージ AFF A700s をブートします</block>
   <block id="5ff3f260d4c603a9f1e9d18be080e7e7" category="list-text">var ファイルシステムを復元します。</block>
   <block id="39d85e49c5dadc98a9a1f6eaef4229dc" category="doc">必要に応じて、 OKM 、 NSE 、 NVE をリストアします - AFF A700s</block>
@@ -2568,7 +2556,6 @@
   <block id="a43578c1a3b2f4b016fc1e478c1b7369" category="section-title">オプション 3 ： ONTAP 9.6 以降を実行しているシステムで NSE / NVE をリストアする</block>
   <block id="4b6f3f55d184c33efac164b8b2ee5af1" category="cell">コンソールに表示される内容</block>
   <block id="85782e063d10d2f824adbf09b6b2f2df" category="paragraph">security key-manager key query を使用して ' すべての認証キーの Restored カラム = 'yes/true' を確認します</block>
-  <block id="1675c7f72f346b50740cbed80838eb37" category="doc">ファンの交換 - AFF A700s</block>
   <block id="c6c330df068950fe73f003a3f85b3fa0" category="list-text">交換用ファンモジュールの端をコントローラモジュールの開口部に合わせ、ロックラッチが所定の位置にカチッと収まるまで、交換用ファンモジュールをコントローラモジュールにスライドさせます。</block>
   <block id="ee5ff73969a958477db471cca8246c98" category="doc">コントローラをシャットダウンします - AFF A700s</block>
   <block id="2b1646515c4dcacd96acd971239a6f14" category="paragraph">シャーシを交換するには、障害のあるシャーシから交換用シャーシにコントローラモジュールと SSD ドライブを移動し、障害のあるシャーシを装置ラックまたはシステムキャビネットから取り外して、交換用シャーシを所定の位置に取り付ける必要があります。</block>
@@ -6176,14 +6163,12 @@
   <block id="1d7bbe9c194670e89233cc6c1dc79534" category="paragraph">これらの 60 ドライブシェルフには、それぞれ 5 つのドライブドロワーが搭載されています。</block>
   <block id="efdce0991089cb793985d216e3fc1bbc" category="image-alt">28 DWG e2860 de460c フロントノーコールアウト</block>
   <block id="76ad7e322a2be745998c576cb12affcd" category="paragraph">5 台の各ドロワーに最大 12 本のドライブを搭載できます。</block>
-  <block id="585248eeaa0c7aa335cb47a05c525433" category="image-alt">92 DWG DE6600 引き出し、 HDD からの引き出し線なし</block>
   <block id="a83cb446c51cb0bdbc4bec489e45b406" category="paragraph">この手順に必要な項目は次のとおりです。</block>
   <block id="4b4b58cabc76886a516816c3c1dca8a2" category="list-text">静電気防止手段</block>
   <block id="a3dfcf9f8add4df0b4976c41ffa8abb2" category="admonition">* ハードウェアの破損の可能性： * 静電気によるドライブシェルフの破損を防ぐために、ドライブシェルフ部品を扱うときは、必ず静電気防止処置を適切に行ってください。</block>
   <block id="bc374274f48b3aed06922e75376fd83c" category="list-text">交換用ドライブドロワー</block>
   <block id="68103d0e27146f9689251724a7fbf29f" category="list-text">交換用の左右 2 つのケーブルチェーン</block>
   <block id="75b0ae11d26c806413ef6e8aed1ece4f" category="list-text">懐中電灯</block>
-  <block id="c8c22257eb9d1c1c2a60aad49bd446f7" category="list-text">油性ペン</block>
   <block id="12cd6af9147d69765327244240949e1f" category="paragraph">DS460C ドライブシェルフの各ドライブドロワーの左右のケーブルチェーンは、ドロワーの出し入れに使用ます。ドライブドロワーを取り外す前に、両方のケーブルチェーンを取り外す必要があります。</block>
   <block id="b4aaf296207d91e05752ac7857824f14" category="list-text">ホストの I/O アクティビティを停止し、シェルフの電源をオフにしておきます。</block>
   <block id="295e1710be0bb53c45ab0ed9001e275c" category="list-text">次のものを用意します。</block>
@@ -6227,15 +6212,11 @@
   <block id="b698e09fab0c0cb543414b7caec27e3c" category="list-text">オレンジのリングに指を差し込みます。</block>
   <block id="3ed1c59be0305378fd05c017ff86e232" category="list-text">ケーブルチェーンを取り外すには、指を約 2.5cm （ 1 インチ）手前に引きます。ただし、ケーブルチェーンコネクタは垂直ブラケット内に残しておきます。</block>
   <block id="461b154350e671de29d85bdc26c17b45" category="list-text">左のケーブルチェーンを水平ブラケットから外し、ケーブルチェーン全体をドライブシェルフから引き出します。</block>
-  <block id="335dce1d41f6ceb784ef37e86cc55836" category="paragraph">左右のケーブルチェーンを取り外したら、ドライブシェルフからドライブドロワーを取り外すことができます。ドライブドロワーを取り外すときは、ドロワーを途中まで引き出し、ドライブの場所を記録し、ドライブを取り外し、ドライブドロワーを取り外します。</block>
   <block id="08d7859a247f6ad39ca81761af784495" category="list-text">ドライブドロワーの左右のケーブルチェーンを取り外しておきます。</block>
   <block id="28d152fcbe5214a7616239c6b7d7dd6f" category="list-text">左右のファンモジュールを元に戻しておきます。</block>
-  <block id="8ef71e80ff9b1b842baf4030f316fb11" category="list-text">ドロワーからドライブを取り外すときに各ドライブの場所を記入するために油性ペンを用意しておきます。</block>
   <block id="e68059b8f2d4e713684a4ebcf96dcaca" category="list-text">ドライブシェルフの前面からベゼルを取り外します。</block>
   <block id="d562b2bf78de10b1c081baaab5289cdf" category="list-text">両方のレバーを引いてドライブドロワーを外します。</block>
   <block id="978b42922d8c3bc15e9a979ce2c8cf1a" category="list-text">伸ばしたレバーを使用して、ドライブドロワーを停止するところまで慎重に引き出します。ドライブドロワーをドライブシェルフから完全には取り外さないでください。</block>
-  <block id="152621a29ef9446b42880cb317783a76" category="list-text">すでに論理ユニット番号（ LUN ）を作成して割り当てている場合は、各ドライブの場所を油性ペンで記入します。たとえば、次の図のように、各ドライブの上に適切なスロット番号を書いておきます。</block>
-  <block id="7d2466032b15e1b1adb1ac2c562eda3b" category="admonition">* データアクセスが失われる可能性： * 各ドライブを取り外す前に場所を記録してください。</block>
   <block id="66ba465a335a9fbce33b49f55f94397c" category="list-text">ドライブをドライブドロワーから取り外します。</block>
   <block id="10d1dd29bccd11c53b8fe8d5262038e8" category="list-text">各ドライブの前面中央にあるオレンジのリリースラッチをそっと引いて戻します。次の図は、各ドライブのオレンジのリリースラッチを示しています。</block>
   <block id="38e70df2ee8a82d813f8533469938b12" category="image-alt">28 DWG e2860 ドライブラッチの上面図</block>
@@ -6252,7 +6233,6 @@
   <block id="ed3feb0427e42faaeb0702007b184c2f" category="list-text">両方のリリースレバーを押さえながら、ドライブドロワーを手前に引き出します。</block>
   <block id="f600133ba4287bc55c2092afd014a9a2" category="list-text">ドライブドロワーをドライブシェルフから取り外します。</block>
   <block id="aa88d15bb6aa9c2d7b1282acbe7f8338" category="paragraph">ドライブドロワーをドライブシェルフに取り付けるときは、ドロワーを空いているスロットに挿入し、ドライブを取り付け、前面ベゼルを再度取り付けます。</block>
-  <block id="00a6e09fe995a9431b12ec0b25d1e616" category="list-text">各ドライブを取り付ける場所を確認しておきます。</block>
   <block id="1c0cc2116ea595f697955e9248420c5f" category="list-text">ドライブシェルフの前面から、空いているドロワースロットを懐中電灯で照らし、そのスロットのロックつまみの位置を確認します。</block>
   <block id="c8e81f437d4ffbfea91534a5fc234aa3" category="paragraph">ロックつまみは、一度に複数のドライブドロワーを開くことを防ぐための安全装置です。</block>
   <block id="e35f213b1a3e33e3eeefc18fdd4b20bd" category="image-alt">92 PHT DE6600 ロックつまみの詳細</block>
@@ -6266,9 +6246,6 @@
   <block id="95ae28d5b7b1b338f5ddc97dba98c55b" category="admonition">* 機器の破損のリスク： * ドライブドロワーを押してもうまく入っていかないときは、いったん押すのを中止し、ドロワーの前面にあるリリースレバーを使ってドロワーを引き出します。次に、ドロワーをスロットに挿入し直し、ドロワーがスムーズにスライドすることを確認します。</block>
   <block id="60bd4a202f9baff0b80754d10e2e32a2" category="list-text">ドライブドロワーにドライブを再取り付けするには、次の手順を実行します。</block>
   <block id="c4abdc9936683d02882a7283c019a16f" category="list-text">ドライブドロワーの前面にある両方のレバーを引いてドロワーを外します。</block>
-  <block id="844dfe4267fa67e9f6790c353bfd5146" category="list-text">ドライブを取り外したときのメモを使用して、各スロットに取り付けるドライブを確認します。</block>
-  <block id="eaae88ce87aad975b7d2ee116355a25d" category="admonition">* データアクセスが失われる可能性： * 各ドライブをドライブドロワー内の元の場所に取り付ける必要があります。</block>
-  <block id="bb9b26a61fb91f1d47a271d0ed32a967" category="list-text">ドライブのハンドルを垂直な位置まで持ち上げます。</block>
   <block id="a184d6eedc1fd5f3a32f366dc1b70527" category="list-text">ドライブの両側にある 2 つの突起ボタンをドロワーのくぼみに合わせます。</block>
   <block id="a1e9935bab922c38bfe212c6775c9455" category="paragraph">次の図は、ドライブの右側の突起ボタンの位置を示したものです。</block>
   <block id="e70bd03011071eae774c88b44113e3d7" category="cell">ドライブの右側の突起ボタン。</block>
@@ -6659,7 +6636,6 @@
   <block id="2b9663ad46a5f2dcd8c2fffdba003269" category="list-text">システムケーブルを結束、固定するために、タイラップの代わりにベルクロラップを使用すると、ケーブルを簡単に調整できます。</block>
   <block id="06dfcb3b1a9c224a29ae8981c6882d18" category="section-title">ホットアド用の IOM12 モジュールを搭載したディスクシェルフの設置</block>
   <block id="4e24ff050030d18996425f4adbef1c69" category="paragraph">ディスクシェルフをホットアドするには、各ディスクシェルフについて、ラックに取り付け、電源コードを接続し、電源を入れ、ディスクシェルフ ID を設定してから、 SAS 接続をケーブル接続します。</block>
-  <block id="16f422f510f8de409c1e9545d1121593" category="list-text">30 本のドライブを搭載したシェルフの場合、残りの 10 本のドライブが各ドロワーのスロット 1 と 10 にシェルフ全体で均等に配置されている。次の図は、シェルフ内の各ドライブドロワーにおける 0~11 のドライブ番号の配置を示しています。スロット 0 、 3 、 6 、 9 、 30 本のドライブを搭載したシェルフの場合、各ドロワーのスロット 1 と 10 にドライブを配置する必要があります。</block>
   <block id="82fd485bd66b7a7cf95b41701aff95f4" category="list-text">ホットアドするディスクシェルフごとに、 HA ペアまたはシングルコントローラ構成内で一意の ID を設定します。</block>
   <block id="6f3cc8e26b4a1e5fe24b9cfea68de345" category="paragraph">内蔵ディスクシェルフがあるシステムの場合、シェルフ ID は内蔵のディスクシェルフおよび外付けのディスクシェルフ全体で一意である必要があります。</block>
   <block id="437cff47077287b8acaab6cf6eb3f66e" category="inline-link-macro">シェルフ ID を変更します</block>
@@ -6709,7 +6685,6 @@
   <block id="e5db3fb8bc84ca3e26b513ea750c6127" category="list-text">スタックの終端にあるディスクシェルフの IOM A からコントローラに接続されているケーブルがあれば IOM A からすべて取り外します。ない場合は手順 e に進みます</block>
   <block id="eded78be6c2ef5bdeed5cb2e044b45ea" category="paragraph">これらのケーブルのもう一方の端をコントローラに接続したままにするか、必要に応じて長いケーブルに交換します。</block>
   <block id="30a13f506678dd37c6740d0a8210db83" category="list-text">スタックの終端にあるディスクシェルフの IOM A と、ホットアドするディスクシェルフの IOM A をケーブル接続します。</block>
-  <block id="04e527203c5db793872f9a09c2541063" category="list-text">手順 a で取り外したケーブルがあれば、ホットアドするディスクシェルフの IOM A の同じポートに接続します。ない場合は次の手順に進みます。</block>
   <block id="f78a5c7555b6cd2b3fdedadb0027e0b3" category="list-text">IOM B についても手順 a~d を繰り返します。それ以外の場合は、手順 4 に進みます。</block>
   <block id="1c641987c1af8344f2d212fa40fed903" category="paragraph">AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 システムの場合に、シングルパス HA またはシングルパス構成でスタックの終端にディスクシェルフをホットアドします。</block>
   <block id="48e906ef4da7a3e48fedb259edff9f3c" category="paragraph">以下の手順は、コントローラ / スタック間の接続がないスタックの終端にホットアドするためのものです。</block>
@@ -6821,7 +6796,6 @@
   <block id="1d4c0fb2a243494a984412dc5b5381a1" category="admonition">少なくとも 2 つのスタックで構成される HA ペアがある場合、 2 番目のスタックのルートアグリゲートを含むディスクシェルフのシェルフ ID はあらかじめ 10 に設定されています。</block>
   <block id="f2717497b83e7964ce960a0ca5ac4860" category="paragraph">シェルフ ID は、 HA ペアまたはシングルコントローラ構成内で一意になるように設定する必要があります。シェルフ ID は手動で設定するか、またはメンテナンスモードのコマンドを使用して、 HA ペアまたはシングルコントローラ構成のすべてのディスクシェルフにシェルフ ID を自動的に割り当てられます。両方の方法の手順が記載されています。</block>
   <block id="b1b6e8ddb338daabf15cdf510590fae4" category="list-text">ルートアグリゲートを含むディスクシェルフは、ディスクシェルフボックスおよびディスクシェルフシャーシのラベルで識別できます。</block>
-  <block id="522a2f05fd82ab2503423b0634977776" category="paragraph">ラベルにはスタック番号が表示されますたとえば ' ループまたはスタック #:1' およびループまたはスタック #:2` が表示されますルートアグリゲートが含まれていないディスクシェルフのラベルには、ディスクシェルフのシリアル番号のみが記載されています。</block>
   <block id="ecf2c214f39b200ba60904cb20770b94" category="list-text">システムのセットアップおよび設定時にディスク所有権の自動割り当てを使用するようにシステムを設定していない場合は、ディスク所有権を手動で割り当てる必要があります。</block>
   <block id="3e4b78a10116c79b33b35d6940601a98" category="list-text">インバンドの Alternate Control Path （ ACP ）は自動的に有効になります。</block>
   <block id="a465c0fe78962946e881b32ab9ec2b88" category="paragraph">インバンド ACP は、シングルパス HA またはシングルパス構成ではサポートされません。</block>
@@ -7087,10 +7061,7 @@
   <block id="8ce7b6e5aee8c1dcf7992d9de100b646" category="sidebar">AFF A700s コントローラ</block>
   <block id="427614df681039d0b63f4a5e73e2acf0" category="sidebar">交換プロセスを完了</block>
   <block id="80ac780cac93a4f8c06402d665f9f0e9" category="sidebar">AFF A700s DIMM</block>
-  <block id="a181a78d69e123d03e181a2cb2fbb6fc" category="sidebar">障害ノードをシャットダウンします</block>
-  <block id="f58d98f433350ee3e614bfdfe3036a89" category="sidebar">コントローラモジュールを取り外します</block>
   <block id="ffaa5f174b403b28545d000ddde7500c" category="sidebar">AFF A700s ファン</block>
-  <block id="4edb2ba531a7a0a1dd60f4492d82e36f" category="sidebar">コントローラモジュールを再度取り付けます</block>
   <block id="3e74bf4522dcfc59214d7a174639087c" category="sidebar">AFF A700s の NVRAM バッテリ</block>
   <block id="e3f3f58b597fba6fefb596c5ce76d468" category="sidebar">NVRAM</block>
   <block id="70c32d2e5a7e814ac7a8b58e2cbc4d7f" category="sidebar">AFF A700s の NVRAM</block>
@@ -7231,7 +7202,6 @@
   <block id="4ccd403eb19c48e7ebdaaeb982ef2481" category="sidebar">シェルフをホットアドします</block>
   <block id="cf999199f9d4c3e90d15399860476f13" category="sidebar">シェルフ ID を変更します</block>
   <block id="b32341112e04cf53228eb2711e7faa5c" category="sidebar">一般的なマルチパス HA 構成のケーブル接続ワークシートと例</block>
-  <block id="7f0b45a163e9c09089bd1df8d3d9b9de" category="sidebar">一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 構成のケーブル接続ワークシートと例</block>
   <block id="99035f209c8d40299210fe873096f23b" category="sidebar">2 つのクアッドポート SAS HBA を使用したクアッドパス HA 構成のケーブル接続ワークシートと例</block>
   <block id="f64eba4acc825268e4959bef4c193b11" category="sidebar">マルチパス接続用のケーブル接続ワークシートテンプレート</block>
   <block id="ce6374cb8d43c65f66d31cf1a0ede69e" category="sidebar">クアッドパス接続用のケーブル接続ワークシートテンプレート</block>
@@ -8365,7 +8335,6 @@
   <block id="51e6a2fb5c6f27756e90e2666efd984d" category="paragraph">NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。</block>
   <block id="d1342671e7a1aeffea6df3cd0214be86" category="list-text">この手順はシステムの停止を伴います。2 台のコントローラからなるクラスタではサービスが完全に停止し、マルチノードクラスタでは部分的に停止します。</block>
   <block id="4fa4535552a76ba6abb695db42b48161" category="paragraph">この手順 を使用する必要がある場合は、 4 台または 8 台のコントローラ MetroCluster 構成のコントローラの交換用手順 は HA ペアの場合と同じであることに注意してください。障害が HA ペアに制限されているため、 MetroCluster 固有の手順は必要ありません。また、 storage failover コマンドを使用すると、交換時に無停止操作を行うことができます。</block>
-  <block id="1c35b5fd0eb2c66f98019f6d2ea253e2" category="paragraph">PDF 版セットアップガイドを使用して、新しいシステムを設置してセットアップできます。。 <block ref="5ad5e3145183bec8ce765d99b2db775a" category="inline-link-macro-rx"></block> ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
   <block id="c83b964c98e24aa342fa8069ffd85dd0" category="list-text"><block ref="c83b964c98e24aa342fa8069ffd85dd0" category="inline-link-macro-rx"></block></block>
   <block id="f51c8858085d7dcfe4d79d9774f8270d" category="paragraph">_replacement _controller をブートしたときにシステム ID の変更を確認し、その変更が実装されたことを確認する必要があります。</block>
   <block id="58d1979204cdde4ca641ddc56ae5fe91" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は、 _replacement _controller の LOADER プロンプトから「 y 」と入力し、コントローラをブートします。「 boot_ontap 」</block>
@@ -8600,7 +8569,6 @@
   <block id="bd7b8cb1f03ceb90528c843b3cd8c0a4" category="summary">IOM12 モジュールを搭載したディスクシェルフを移動または交換する必要がある場合、電源がオンで I/O が実行中のシステムからディスクシェルフを無停止でホットリムーブできます。ホットリムーブでは、ディスクシェルフのスタックから任意のディスクシェルフを取り外したり、ディスクシェルフのスタック全体を取り外したりできます。</block>
   <block id="bf9eaa32fa671084f441eeba9c863ef6" category="paragraph">IOM12 モジュールを搭載したディスクシェルフを移動または交換する必要がある場合、電源がオンで I/O が実行中のシステムからディスクシェルフを無停止でホットリムーブできます。ホットリムーブでは、ディスクシェルフのスタックから任意のディスクシェルフを取り外したり、ディスクシェルフのスタック全体を取り外したりできます。</block>
   <block id="ba0a2d97499e2e560187690f4b54b10c" category="list-text">取り外すディスクシェルフのディスクドライブからすべてのアグリゲートを削除しておく必要があります（ディスクドライブはスペアである必要があります）。</block>
-  <block id="eaca20aa2eab6f0d724e09d105bcde6d" category="list-text">* シェルフの破損の可能性： DS460C シェルフを取り外し、データセンターの別の場所に移動したり、別の場所に移動したりする場合は、ドライブドロワーやドライブの破損を防ぐためにドライブを取り外してください。</block>
   <block id="df890e7b6d800ea7f63516f78dc7b333" category="inline-link-macro">オンボードストレージを搭載した AFF プラットフォームと FAS プラットフォームのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例</block>
   <block id="4831f887bab13b0957b607ad184c87f7" category="paragraph"><block ref="4831f887bab13b0957b607ad184c87f7" category="inline-link-macro-rx"></block></block>
   <block id="fdd0f707bd71fcef53b653ae53e31f53" category="summary">記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 プラットフォームなどのオンボードストレージで AFF プラットフォームと FAS プラットフォームをケーブル接続できます。この情報は、システム外部のシステムには適用されません。</block>
@@ -8608,4 +8576,60 @@
   <block id="18e93c7175385ec259f95d9d453bdda1" category="list-text">必要に応じて、を参照してください <block ref="db31d33614fd87795381d5ac14be04aa" category="inline-link-macro-rx"></block> サポートされる構成、シェルフ / シェルフ間の接続、およびコントローラ / シェルフ間の接続については、を参照してください。</block>
   <block id="67f2d45d4d0936132195fb6f111ce3e8" category="section-title">マルチパス HA 構成で、マルチシェルフスタックを 1 つ使用したオンボードストレージを搭載した AFF プラットフォームと FAS プラットフォーム</block>
   <block id="83742af000bdb059461854fab1a8b606" category="list-text">異なる効率定格の電源装置を混在させないでください。いつものように同じように置換します。</block>
+  <block id="94a2f43b7e5299d436a356db402524cc" category="section-title">手順3：NVRAMバッテリを交換します</block>
+  <block id="5f5fd4de9ab7b399342d9b9e721bc6b6" category="section-title">手順3：NVRAMカードを取り外す</block>
+  <block id="6378f7fb953fa140d999f1d68c5e6145" category="section-title">手順5：HAシステムでシステムIDの変更を確認する</block>
+  <block id="07c4e79c1eed9787f0716b4d65f147b2" category="list-text">Ctrl+Cキーを押して'ブート・プロセスを中断します</block>
+  <block id="37f3122e97201daeb17a029c6ba18afb" category="section-title">手順1：障害のあるコントローラをシャットダウンします- AFF A700s</block>
+  <block id="72031a15fbaab6eb40b617b0663962bb" category="section-title">手順2：コントローラモジュールを取り外す- AFF A700s</block>
+  <block id="fedeae451b36efcc460d172d9fe45850" category="section-title">手順3：ファンとAFF A700sを交換します</block>
+  <block id="e1d83f38808259079bf63398959b5064" category="section-title">手順4：コントローラモジュールを再取り付けします- AFF A700s</block>
+  <block id="db1d1fc556b59fbc6af03005e8bfd733" category="section-title">手順4：障害が発生したパーツをNetApp - AFF A700sに返却します</block>
+  <block id="e5ddd774e93783b28f265ecb6d19adb2" category="section-title">手順6：障害が発生したパーツをネットアップに返却する</block>
+  <block id="5c542a7e2ad58397aad1271e4d3a0117" category="paragraph">ラベルにはスタック番号が示されます。たとえば、「* Loop or Stack #：1 *」や「* Loop or Stack #：2 *」のようになります。ルートアグリゲートが含まれていないディスクシェルフのラベルには、ディスクシェルフのシリアル番号のみが記載されています。</block>
+  <block id="6ac2291fe0e85584d8316cc0e6c7364f" category="section-title">DS460Cドライブの処理に関する考慮事項</block>
+  <block id="b2171f8c50bfc77432114b327848466f" category="list-text">ドライブは、シェルフシャーシとは別にパッケージ化されています。</block>
+  <block id="729ab22e4daec3dc8eb94284e2ff928a" category="paragraph">受け取った残りのシステム機器と一緒にドライブのインベントリを作成する必要があります。</block>
+  <block id="8244db29bd8d18d221639bfa5a7af47a" category="list-text">ドライブを開封したら、あとで使用できるように梱包材は保管しておいてください。</block>
+  <block id="0c9768cef5797a31f719b148cb97c2b0" category="admonition">*データアクセスが失われる可能性：*今後、シェルフをデータセンターの別の場所に移動するか、シェルフを別の場所に移動する場合は、ドライブドロワーやドライブが破損しないようにドライブドロワーからドライブを取り外す必要があります。</block>
+  <block id="790b3fbbc9d4408c83be569b33f62df4" category="admonition">取り付け準備ができるまで、ディスクドライブをESDバッグに入れたままにしておきます。</block>
+  <block id="f505a7983bc262c1785ce6adc5c9c152" category="list-text">ドライブを扱うときは、静電気放出を防ぐために、作業中のリストストラップを常に着用し、ストレージエンクロージャのシャーシの塗装されていない表面にリストストラップを接地させます。</block>
+  <block id="035f36f8cb7a7149476fc3a606085ac7" category="paragraph">DS460Cディスクシェルフでは、ドライブは別々にパッケージ化されているため、シェルフは軽量ですが、空のDS460Cシェルフの重量は引き続き約60kg（132ポンド）です。そのため、シェルフを移動する場合は、次の点に注意してください。</block>
+  <block id="c04b249a92156b3830dd23c4f0227ad3" category="admonition">リフトハンドルを使用して空のDS460Cシェルフを安全に移動する場合は、電動リフトを使用するか4人で運搬することを推奨します。</block>
+  <block id="271ccf7899e5bebc4f9e5879e8b4e969" category="paragraph">DS460Cの出荷時は、4個の着脱式リフトハンドル（両側に2個）が同梱されています。取っ手を使用するには、シェルフ側面のスロットにハンドルのタブを挿入し、カチッと音がして所定の位置に収まるまで押し上げます。次に、ディスクシェルフをレールにスライドさせたら、サムラッチを使用して一度に1組のハンドルを外します。次の図は、リフトハンドルを取り付ける方法を示しています。</block>
+  <block id="3a7aa90b7e6e30d4cea14996d05d2cb4" category="list-text">DS460Cディスクシェルフを設置する場合は、ドライブをドライブドロワーに取り付けます。それ以外の場合は、次の手順に進みます。</block>
+  <block id="f0d969f7b7ef3f514e1ebe9dd5ba1adf" category="paragraph">静電気放出を防ぐために、作業中は常にESDリストストラップを着用し、ストレージエンクロージャのシャーシの塗装されていない表面部分にリストストラップを接地させます。</block>
+  <block id="d73d42687e521e8e514e51136cf28dde" category="paragraph">購入したシェルフに含まれているドライブが60本よりも少ない場合は、次の手順で各ドロワーにドライブを取り付けます。</block>
+  <block id="91b773fbb1c2eaf562803abbe21daf35" category="list-text">最初の4つのドライブを前面スロット（0、3、6、および9）に取り付けます。</block>
+  <block id="2d46a0e0bfeb381cc0efc2e57a23d530" category="admonition">*機器の故障のリスク：*通気が適切に行われ、過熱を防ぐために、必ず最初の4つのドライブをフロントスロット（0、3、6、9）に取り付けてください。</block>
+  <block id="0a420e5d9ce2ddffd04807c20c8775ca" category="list-text">残りのドライブについては、各ドロワーに均等に配置します。</block>
+  <block id="74e528b6d2588aa55dd04aa2665edc1e" category="list-text">ESDバッグからドライブを取り出します。</block>
+  <block id="f0e4d108bd327aa0295d08fc98aaafd0" category="list-text">前面ベゼルを取り付けます。</block>
+  <block id="40eaf65b2964a77febbd5ac5e16bf92b" category="section-title">DS460Cシェルフを移動または移動する</block>
+  <block id="f1c58ede133573cb49918c3081333246" category="paragraph">今後DS460Cシェルフをデータセンターの別の場所に移動したり、シェルフを別の場所に移動したりする場合は、ドライブドロワーやドライブの破損を防ぐために、ドライブドロワーからドライブを取り外す必要があります。</block>
+  <block id="84a46b8403244afe9d960b3db710302e" category="list-text">新しいシステムの設置時にDS460Cシェルフを設置した場合は、ドライブのパッケージ化材を保存したあとに、それらを使用してドライブを再パッケージ化してから移動してください。</block>
+  <block id="0d7187478aa1ddf360c471b9442a100c" category="paragraph">梱包材を保管していない場合は、ドライブをやわらかい場所に置くか、別のクッション付きのパッケージを使用してください。ドライブ同士を積み重ねないでください。</block>
+  <block id="3fa80daa5430a17daaa8f9448fbea3de" category="list-text">ドライブを扱う前に、ESDリストストラップを着用し、ストレージエンクロージャのシャーシの塗装されていない表面部分にリストストラップを接触させます。</block>
+  <block id="677a4b8e4c9931e56a425ccba1cabe24" category="paragraph">リストストラップがない場合は、ドライブに触る前に、ストレージエンクロージャのシャーシの塗装されていない部分を手で触ります。</block>
+  <block id="ec115696caeda4f59b91bec667134e10" category="list-text">ドライブは、次の手順に従って慎重に扱う必要があります。</block>
+  <block id="eec95928a8386ff4e74b660f06af6a2e" category="list-text">取り外し、取り付け、持ち運びなど、ドライブの重量を支えるときは常に両手で作業してください。</block>
+  <block id="484930724bd79c20081515728c70573d" category="admonition">ドライブキャリアの下側のむき出しになっている基板に手を置かないでください。</block>
+  <block id="8c30657768334aaeee6af98af6fe488f" category="list-text">ドライブをぶつけないように注意してください。</block>
+  <block id="b2cba33b1b51dce41879eced349ff3ba" category="list-text">ドライブを磁気デバイスの近くに置かないでください。</block>
+  <block id="222cfe0be0a1bf567b9a7f87fd33f031" category="admonition">磁場によってドライブに保存されているすべてのデータが破損したり、ドライブの回路が故障し、原因 が修理不可能となる場合があります。</block>
+  <block id="35edd171f5c445f9c2a843e056a3fdc2" category="paragraph">ドライブのインベントリを作成する必要があります。</block>
+  <block id="7069466d86118b29043e6ed214511c1c" category="list-text">手順 a で取り外したケーブルがあれば、ホットアドするディスクシェルフの IOM A の同じポートに接続します。ない場合は次の手順に進みます。+ケーブルの接続を外してから再接続するまで、70秒以上待ってください。</block>
+  <block id="20244777af6f97db49ab4dc75a00ca87" category="paragraph">ケーブルを1本ずつ交換し、ケーブルを外してから新しいケーブルを接続するまで70秒以上待機します。</block>
+  <block id="94ccebf898fb7d7300145c16c598544a" category="list-text">シェルフのホットアドの一部としてDS460Cシェルフを設置した場合は、ドライブのパッケージ化材を保存したあとに、それらを使用してドライブを再パッケージ化します。</block>
+  <block id="8456c08b8772c6458de93a0a78ff4f85" category="paragraph">左右のケーブルチェーンを取り外したら、ドライブシェルフからドライブドロワーを取り外すことができます。ドライブドロワーを取り外すときは、ドロワーを途中まで引き出し、ドライブを取り外し、ドライブドロワーを取り外します。</block>
+  <block id="40cfdd2fa544c18fef836a58df7bb2e9" category="list-text">取り付けるドライブで、ハンドルを垂直な位置まで持ち上げます。</block>
+  <block id="2560c526c9d334c39cab4311db7eff4d" category="paragraph">シェルフに空きがある場合、つまりドライブを再取り付けするドロワーのドライブ数がサポートされる12本よりも少ない場合は、最初の4本のドライブを前面スロット（0、3、6、および9）に取り付けます。</block>
+  <block id="0c19992873d54086f9866be6126e317c" category="list-text">*シェルフの破損の可能性：DS460Cシェルフを取り外し、データセンターの別の場所に移動したり、別の場所に移動したりする場合は、 <block ref="2dfa5cde780121ff739815d2402836cf" category="inline-xref-macro-rx"></block> この手順 の末尾です。</block>
+  <block id="2832373659f325a28de2b5462611f72c" category="paragraph">DS460Cディスクシェルフの場合、フル装備のシェルフの重量は112kg（247ポンド）近くになることがあるため、ラックまたはキャビネットからシェルフを取り外すときは、次の点に注意してください。</block>
+  <block id="69803fc9f7acd429df0403558d86852a" category="admonition">DS460Cシェルフを安全に移動するためには、リフトハンドルを使用してリフトを使用するか4人で運搬することを推奨します。</block>
+  <block id="d2190ca0f2bf90686cb089f6fb2d5e2b" category="paragraph">DS460Cシェルフをデータセンターの別の場所に移動したり、別の場所に移動したりする場合は、次のセクションを参照してください。 <block ref="2dfa5cde780121ff739815d2402836cf" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1d5287e79870e687badf4e2da0612ad0" category="paragraph">DS460Cシェルフをデータセンターの別の部分に移動したり、シェルフを別の場所に移動したりする場合は、ドライブドロワーやドライブの破損を防ぐために、ドライブドロワーからドライブを取り外す必要があります。</block>
+  <block id="c3fdb0812209f286e664a4d0cd47c328" category="list-text">新しいシステムの設置時またはシェルフのホットアドの一環としてDS460Cシェルフを設置した場合は、ドライブのパッケージ化材を保存したあとに、それらを移動する前にドライブを再パッケージ化してください。</block>
+  <block id="ba70aeebfd3549f6f01e998eb6dd6e28" category="paragraph">PDF 版セットアップガイドを使用して、新しいシステムを設置してセットアップできます。。 <block ref="a8e3f4b75381b375e7ce8abf385604f8" category="inline-link-macro-rx"></block> ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
+  <block id="4919d15b1a0ddd0c55a729c741fd5005" category="sidebar">オンボードストレージを使用したAFF プラットフォームとFAS プラットフォームのケーブル接続ワークシートと例</block>
 </blocks>

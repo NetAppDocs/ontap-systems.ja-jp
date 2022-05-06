@@ -69,18 +69,8 @@ entries:
     pdf-filename: AFF A700s ドライブ
     url: "/a700s/drive-replace.html"
   - title: ファン
-    entries:
-    - title: 障害ノードをシャットダウンします
-      url: "/a700s/fan-impaired-controller-shutdown.html"
-    - title: コントローラモジュールを取り外します
-      url: "/a700s/fan-controller-remove.html"
-    - title: ファン
-      pdf-filename: AFF A700s ファン
-      url: "/a700s/fan-replace.html"
-    - title: コントローラモジュールを再度取り付けます
-      url: "/a700s/fan-controller-reinstall-pcie-rtc.html"
-    - title: 障害のある部品をネットアップに返却します
-      url: "/a700s/fan-complete-rma.html"
+    pdf-filename: AFF A700s ファン
+    url: "/a700s/fan-replace.html"
   - title: NVRAM バッテリ
     pdf-filename: AFF A700s の NVRAM バッテリ
     url: "/a700s/nvmem-nvram-battery-replace.html"

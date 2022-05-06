@@ -22,7 +22,7 @@ entries:
       url: "/sas3/install-cabling-rules.html"
     - title: 一般的なマルチパス HA 構成のケーブル接続ワークシートと例
       url: "/sas3/install-cabling-worksheets-examples-multipath.html"
-    - title: 一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 構成のケーブル接続ワークシートと例
+    - title: オンボードストレージを使用したAFF プラットフォームとFAS プラットフォームのケーブル接続ワークシートと例
       url: "/sas3/install-cabling-worksheets-examples-fas2600.html"
     - title: 2 つのクアッドポート SAS HBA を使用したクアッドパス HA 構成のケーブル接続ワークシートと例
       url: "/sas3/install-worksheets-examples-quadpath.html"
