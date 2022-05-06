@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="新しいシステム HA ペアまたはシングルコントローラ構成がキャビネットに設置されていない場合は、ラックにディスクシェルフを設置してケーブル接続する必要があります。">
-  <meta name="keywords" content=" install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation"><!-- Icons -->
+  <meta name="keywords" content=" install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling"><!-- Icons -->
   <link rel="icon" href="/ja-jp/ontap-systems/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -2266,39 +2266,6 @@
 
 
 
-
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          
-          
-          
-          <a target="_blank" 
-            
-              href="/ja-jp/ontap-systems/pdfs/sidebar/ファン.pdf" 
-            
-          >
-            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
-            ファン
-          </a>
-          
-
-
-
-
-
-
-
-
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
 
 
 
@@ -5265,20 +5232,9 @@
         DIMM
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/drive-replace.html">
         ドライブ
-      </a></li><li class="subfolders "><a href="#">
-        <div class="na-navbar-padding"> ファン</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/fan-impaired-controller-shutdown.html">
-        障害ノードをシャットダウンします
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/fan-controller-remove.html">
-        コントローラモジュールを取り外します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/fan-replace.html">
         ファン
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/fan-controller-reinstall-pcie-rtc.html">
-        コントローラモジュールを再度取り付けます
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/fan-complete-rma.html">
-        障害のある部品をネットアップに返却します
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
         NVRAM バッテリ
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/nvram-or-nvram-dimm-replacement.html">
         NVRAM
@@ -5991,7 +5947,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-cabling-worksheets-examples-multipath.html">
         一般的なマルチパス HA 構成のケーブル接続ワークシートと例
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-cabling-worksheets-examples-fas2600.html">
-        一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 構成のケーブル接続ワークシートと例
+        オンボードストレージを使用したAFF プラットフォームとFAS プラットフォームのケーブル接続ワークシートと例
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-worksheets-examples-quadpath.html">
         2 つのクアッドポート SAS HBA を使用したクアッドパス HA 構成のケーブル接続ワークシートと例
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-cabling-worksheet-template-multipath.html">
@@ -6143,7 +6099,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-13 13:13:55 +0000">04/13/2022</time>
+    <time datetime="2022-05-06 14:19:40 +0000">05/06/2022</time>
     
   
 
@@ -6218,7 +6174,7 @@
 <li>
 <p>ルートアグリゲートを含むディスクシェルフは、ディスクシェルフボックスおよびディスクシェルフシャーシのラベルで識別できます。</p>
 <div class="paragraph">
-<p>ラベルにはスタック番号が表示されますたとえば ' ループまたはスタック #:1' およびループまたはスタック #:2` が表示されますルートアグリゲートが含まれていないディスクシェルフのラベルには、ディスクシェルフのシリアル番号のみが記載されています。</p>
+<p>ラベルにはスタック番号が示されます。たとえば、「* Loop or Stack #：1 <strong>」や「</strong> Loop or Stack #：2 *」のようになります。ルートアグリゲートが含まれていないディスクシェルフのラベルには、ディスクシェルフのシリアル番号のみが記載されています。</p>
 </div>
 </li>
 <li>
@@ -6289,6 +6245,52 @@
 </ul>
 </div>
 </div>
+<div class="sect2">
+<h3 id="ds460cドライブの処理に関する考慮事項">DS460Cドライブの処理に関する考慮事項</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>ドライブは、シェルフシャーシとは別にパッケージ化されています。</p>
+<div class="paragraph">
+<p>受け取った残りのシステム機器と一緒にドライブのインベントリを作成する必要があります。</p>
+</div>
+</li>
+<li>
+<p>ドライブを開封したら、あとで使用できるように梱包材は保管しておいてください。</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/caution.svg" alt="注意">
+</td>
+<td class="content">
+*データアクセスが失われる可能性：*今後、シェルフをデータセンターの別の場所に移動するか、シェルフを別の場所に移動する場合は、ドライブドロワーやドライブが破損しないようにドライブドロワーからドライブを取り外す必要があります。
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+取り付け準備ができるまで、ディスクドライブをESDバッグに入れたままにしておきます。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>ドライブを扱うときは、静電気放出を防ぐために、作業中のリストストラップを常に着用し、ストレージエンクロージャのシャーシの塗装されていない表面にリストストラップを接地させます。</p>
+<div class="paragraph">
+<p>リストストラップがない場合は、ディスクドライブに触る前に、ストレージエンクロージャのシャーシの塗装されていない部分を手で触ります。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -6332,22 +6334,22 @@
 <p>ディスクシェルフを軽くして扱いやすくするために、電源装置と I/O モジュール（ IOM ）を取り外します。</p>
 </div>
 <div class="paragraph">
-<p>DS460C ディスクシェルフの場合は、ディスクシェルフに付属の 4 本の着脱式ハンドルも使用できます。ハンドル（シャーシの両側に 2 つずつ）は、カチッという音がするまで押し上げて取り付けます。ディスクシェルフをレールにスライドさせたら、サムラッチを使用してハンドルを外します。</p>
+<p>DS460Cディスクシェルフでは、ドライブは別々にパッケージ化されているため、シェルフは軽量ですが、空のDS460Cシェルフの重量は引き続き約60kg（132ポンド）です。そのため、シェルフを移動する場合は、次の点に注意してください。</p>
 </div>
-<div class="paragraph">
-<p>フル装備の DS460C ディスクシェルフを移動する場合は、ホイストやリフトなどを使用することを推奨します。</p>
-</div>
-<div class="admonitionblock note">
+<div class="admonitionblock caution">
 <table>
 <tr>
 <td class="icon">
-<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+<img src="/us-en/ontap-systems/images/caution.svg" alt="注意">
 </td>
 <td class="content">
-フル装備の DS460C ディスクシェルフの重量は 112kg （ 247 ポンド）近くになることがあります。
+リフトハンドルを使用して空のDS460Cシェルフを安全に移動する場合は、電動リフトを使用するか4人で運搬することを推奨します。
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p>DS460Cの出荷時は、4個の着脱式リフトハンドル（両側に2個）が同梱されています。取っ手を使用するには、シェルフ側面のスロットにハンドルのタブを挿入し、カチッと音がして所定の位置に収まるまで押し上げます。次に、ディスクシェルフをレールにスライドさせたら、サムラッチを使用して一度に1組のハンドルを外します。次の図は、リフトハンドルを取り付ける方法を示しています。</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -6356,32 +6358,70 @@
 </div>
 </li>
 <li>
-<p>DS460C ディスクシェルフを設置する場合は、ラックに設置したディスクシェルフにコンポーネントを取り付けます。それ以外の場合は、次の手順に進みます。</p>
+<p>ディスクシェルフをラックに設置する前に取り外した電源装置と IOM を再度取り付けます。</p>
+</li>
+<li>
+<p>DS460Cディスクシェルフを設置する場合は、ドライブをドライブドロワーに取り付けます。それ以外の場合は、次の手順に進みます。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
 <div class="paragraph">
-<p>購入したディスクシェルフにドライブが搭載されていないドライブスロットがある場合は、次の点を確認してください。</p>
+<p>静電気放出を防ぐために、作業中は常にESDリストストラップを着用し、ストレージエンクロージャのシャーシの塗装されていない表面部分にリストストラップを接地させます。</p>
+</div>
+<div class="paragraph">
+<p>リストストラップがない場合は、ディスクドライブに触る前に、ストレージエンクロージャのシャーシの塗装されていない部分を手で触ります。</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>購入したシェルフに含まれているドライブが60本よりも少ない場合は、次の手順で各ドロワーにドライブを取り付けます。</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>各ドロワーの最初の 4 つのスロット（ 0 、 3 、 6 、 9 ）が使用されています。</p>
-<div class="paragraph">
-<p>これにより、ディスクシェルフ内の通気が確保されます。</p>
+<p>最初の4つのドライブを前面スロット（0、3、6、および9）に取り付けます。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+*機器の故障のリスク：*通気が適切に行われ、過熱を防ぐために、必ず最初の4つのドライブをフロントスロット（0、3、6、9）に取り付けてください。
+</td>
+</tr>
+</table>
 </div>
 </li>
 <li>
-<p>30 本のドライブを搭載したシェルフの場合、残りの 10 本のドライブが各ドロワーのスロット 1 と 10 にシェルフ全体で均等に配置されている。次の図は、シェルフ内の各ドライブドロワーにおける 0~11 のドライブ番号の配置を示しています。スロット 0 、 3 、 6 、 9 、 30 本のドライブを搭載したシェルフの場合、各ドロワーのスロット 1 と 10 にドライブを配置する必要があります。</p>
+<p>残りのドライブについては、各ドロワーに均等に配置します。</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>次の図は、シェルフ内の各ドライブドロワーにおける 0~11 のドライブ番号の配置を示しています。</p>
+</div>
 <div class="imageblock">
 <div class="content">
 <img src="../media/dwg_trafford_drawer_with_hdds_callouts.gif" alt="DWG トラフォードドロワー（ HDD の寸法テキスト付き">
 </div>
 </div>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>ディスクシェルフをラックに設置する前に取り外した電源装置と IOM を再度取り付けます。</p>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>シェルフの一番上のドロワーを開きます。</p>
+</li>
+<li>
+<p>ESDバッグからドライブを取り出します。</p>
 </li>
 <li>
 <p>ドライブのカムハンドルを垂直な位置まで持ち上げます。</p>
@@ -6392,12 +6432,6 @@
 <div class="content">
 <img src="../media/28_dwg_e2860_de460c_drive_cru.gif" alt="28 DWG e2860 de460c ドライブ CRU">
 </div>
-</div>
-</li>
-</ol>
-</div>
-</li>
-</ul>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -6414,8 +6448,7 @@
 </tr>
 </tbody>
 </table>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+</li>
 <li>
 <p>ドライブを真上から下ろし、ドライブがオレンジのリリースラッチの下に完全に固定されるまでカムハンドルを下に回転させます。</p>
 </li>
@@ -6460,9 +6493,10 @@
 <li>
 <p>ディスクシェルフ内の各ドロワーについて、同じ手順を繰り返します。</p>
 </li>
-</ol>
-</div>
-</li>
+<li>
+<p>前面ベゼルを取り付けます。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
 <li>
 <p>複数のディスクシェルフを設置する場合は、設置するディスクシェルフごとにこの手順を繰り返します。</p>
 <div class="admonitionblock note">
@@ -6476,6 +6510,9 @@
 </td>
 </tr>
 </table>
+</div>
+</li>
+</ol>
 </div>
 </li>
 </ol>
@@ -6569,7 +6606,7 @@
 <li>
 <p>コントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を参照して、構成に合った記入済みワークシートがあるかどうかを確認します。</p>
 <div class="paragraph">
-<p><a href="install-cabling-worksheets-examples-fas2600.html">"一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 構成のコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例"</a></p>
+<p><a href="install-cabling-worksheets-examples-fas2600.html">"オンボードストレージを搭載した AFF プラットフォームと FAS プラットフォームのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例"</a></p>
 </div>
 <div class="paragraph">
 <p><a href="install-cabling-worksheets-examples-multipath.html">"一般的なマルチパス HA 構成のコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例"</a></p>
@@ -6808,6 +6845,70 @@
 </div>
 </li>
 </ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ds460cシェルフを移動または移動する">DS460Cシェルフを移動または移動する</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>今後DS460Cシェルフをデータセンターの別の場所に移動したり、シェルフを別の場所に移動したりする場合は、ドライブドロワーやドライブの破損を防ぐために、ドライブドロワーからドライブを取り外す必要があります。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>新しいシステムの設置時にDS460Cシェルフを設置した場合は、ドライブのパッケージ化材を保存したあとに、それらを使用してドライブを再パッケージ化してから移動してください。</p>
+<div class="paragraph">
+<p>梱包材を保管していない場合は、ドライブをやわらかい場所に置くか、別のクッション付きのパッケージを使用してください。ドライブ同士を積み重ねないでください。</p>
+</div>
+</li>
+<li>
+<p>ドライブを扱う前に、ESDリストストラップを着用し、ストレージエンクロージャのシャーシの塗装されていない表面部分にリストストラップを接触させます。</p>
+<div class="paragraph">
+<p>リストストラップがない場合は、ドライブに触る前に、ストレージエンクロージャのシャーシの塗装されていない部分を手で触ります。</p>
+</div>
+</li>
+<li>
+<p>ドライブは、次の手順に従って慎重に扱う必要があります。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>取り外し、取り付け、持ち運びなど、ドライブの重量を支えるときは常に両手で作業してください。</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/caution.svg" alt="注意">
+</td>
+<td class="content">
+ドライブキャリアの下側のむき出しになっている基板に手を置かないでください。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>ドライブをぶつけないように注意してください。</p>
+</li>
+<li>
+<p>ドライブを磁気デバイスの近くに置かないでください。</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/caution.svg" alt="注意">
+</td>
+<td class="content">
+磁場によってドライブに保存されているすべてのデータが破損したり、ドライブの回路が故障し、原因 が修理不可能となる場合があります。
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>

@@ -2276,39 +2276,6 @@
 
 
 
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          
-          
-          
-          <a target="_blank" 
-            
-              href="/ja-jp/ontap-systems/pdfs/sidebar/ファン.pdf" 
-            
-          >
-            <img src="/ja-jp/ontap-systems/images/pdf.png" width="16" height="16"/>
-            ファン
-          </a>
-          
-
-
-
-
-
-
-
-
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
-
 
 
 
@@ -5274,20 +5241,9 @@
         DIMM
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/drive-replace.html">
         ドライブ
-      </a></li><li class="subfolders "><a href="#">
-        <div class="na-navbar-padding"> ファン</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/fan-impaired-controller-shutdown.html">
-        障害ノードをシャットダウンします
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/fan-controller-remove.html">
-        コントローラモジュールを取り外します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/fan-replace.html">
         ファン
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/fan-controller-reinstall-pcie-rtc.html">
-        コントローラモジュールを再度取り付けます
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/fan-complete-rma.html">
-        障害のある部品をネットアップに返却します
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
         NVRAM バッテリ
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/a700s/nvram-or-nvram-dimm-replacement.html">
         NVRAM
@@ -6000,7 +5956,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-cabling-worksheets-examples-multipath.html">
         一般的なマルチパス HA 構成のケーブル接続ワークシートと例
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-cabling-worksheets-examples-fas2600.html">
-        一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 構成のケーブル接続ワークシートと例
+        オンボードストレージを使用したAFF プラットフォームとFAS プラットフォームのケーブル接続ワークシートと例
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-worksheets-examples-quadpath.html">
         2 つのクアッドポート SAS HBA を使用したクアッドパス HA 構成のケーブル接続ワークシートと例
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-cabling-worksheet-template-multipath.html">
@@ -6152,7 +6108,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-25 20:09:32 +0000">04/25/2022</time>
+    <time datetime="2022-05-06 14:19:40 +0000">05/06/2022</time>
     
   
 
@@ -6200,8 +6156,28 @@
 <div class="paragraph">
 <p>障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。</p>
 </div>
+<div class="ulist">
+<div class="title">このタスクについて</div>
+<ul>
+<li>
+<p>NetApp Storage Encryption を使用している場合は、 _ ONTAP 9 NetApp Encryption パワーガイド _ の「 SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります。</p>
 <div class="paragraph">
+<p><a href="https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html">"ONTAP 9 ネットアップ暗号化パワーガイド"</a></p>
+</div>
+</li>
+<li>
+<p>SAN システムを使用している場合は、障害のあるコントローラの SCSI ブレードに関するイベントメッセージ（ event log show ）を確認しておく必要があります。</p>
+<div class="paragraph">
+<p>各 SCSI ブレードプロセスは、クラスタ内の他のノードとクォーラムを構成している必要があります。交換を進める前に、すべての問題を解決しておく必要があります。</p>
+</div>
+</li>
+<li>
 <p>ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">"CLI での管理の概要"</a>。</p>
+</li>
+<li>
+<p>MetroCluster 構成を使用している場合は、 MetroCluster 構成状態が構成済みで、ノードが有効かつ正常な状態であることを確認しておく必要があります（「 MetroCluster node show 」）。</p>
+</li>
+</ul>
 </div>
 <div class="olist arabic">
 <div class="title">手順</div>
