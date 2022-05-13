@@ -22,21 +22,21 @@ indexpage:
   - title: メンテナンス
     links:
     - title: ブートメディア
-      url: "/bootmedia-replace-overview.html"
+      url: "../fas2700/bootmedia-replace-overview.html"
     - title: キャッシングモジュール
-      url: "/caching-module-replace.html"
+      url: "../fas2700/caching-module-replace.html"
     - title: シャーシ
-      url: "/chassis-replace-overview.html"
+      url: "../fas2700/chassis-replace-overview.html"
     - title: コントローラモジュール
-      url: "/controller-replace-overview.html"
+      url: "../fas2700/controller-replace-overview.html"
     - title: DIMM
-      url: "/dimm-replace.html"
+      url: "../fas2700/dimm-replace.html"
     - title: NVMEM バッテリ
-      url: "/nvmem-battery-replace.html"
+      url: "../fas2700/nvram-nvmem-battery-replace.html"
     - title: 電源装置
-      url: "/power-supply-swapout.html"
+      url: "../fas2700/power-supply-swap-out.html"
     - title: RTC バッテリ
-      url: "/rtc-battery-replace.html"
+      url: "../fas2700/rtc-battery-replace.html"
   - title: 詳細はこちら
     links:
     - title: 内蔵ディスクドライブのビデオの交換

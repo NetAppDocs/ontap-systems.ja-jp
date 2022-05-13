@@ -8632,4 +8632,5 @@
   <block id="ba70aeebfd3549f6f01e998eb6dd6e28" category="paragraph">PDF 版セットアップガイドを使用して、新しいシステムを設置してセットアップできます。。 <block ref="a8e3f4b75381b375e7ce8abf385604f8" category="inline-link-macro-rx"></block> ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
   <block id="4919d15b1a0ddd0c55a729c741fd5005" category="sidebar">オンボードストレージを使用したAFF プラットフォームとFAS プラットフォームのケーブル接続ワークシートと例</block>
   <block id="9285e5d96d62653cbfc04067e2de249c" category="list-text"><block ref="9285e5d96d62653cbfc04067e2de249c" category="inline-link-macro-rx"></block></block>
+  <block id="cff7366c4191a9dd1698e3fd38e5acaf" category="sidebar">NVRAMモジュールまたはNVRAM DIMM</block>
 </blocks>

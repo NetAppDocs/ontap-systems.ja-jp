@@ -30,13 +30,13 @@ indexpage:
     - title: コントローラモジュール
       url: "/controller-replace-overview.html"
     - title: ファン
-      url: "/fan-replace.html"
+      url: "/fan-swap-out.html"
     - title: NV バッテリ
       url: "/nvmem-nvram-battery-replace.html"
     - title: PCIe カード
       url: "/pci-cards-and-risers-replace.html"
     - title: 電源装置
-      url: "/power-supply-swapout.html"
+      url: "/power-supply-swap-out.html"
     - title: システム DIMM
       url: "/dimm-replace.html"
     - title: RTC バッテリ
