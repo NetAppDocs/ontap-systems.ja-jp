@@ -39,8 +39,6 @@ indexpage:
       url: "/service-hot-swap-power-supply.html"
     - title: シェルフ LED のステータス状態
       url: "/service-monitor-leds.html"
-    - title: RTC バッテリ
-      url: "/sas3/service-replace-rtc-battery.html"
   - title: リソースの追加
     links:
     - title: ONTAP のドキュメント

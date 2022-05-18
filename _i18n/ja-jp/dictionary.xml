@@ -8158,11 +8158,6 @@
   <block id="77c90a069b30ca068906f4bbc5d904e1" category="doc">オンボード暗号化キーを確認 - AFF A220 および FAS2700</block>
   <block id="c6eb316cc94904301a8765db5aa1680f" category="doc">ブートメディアの交換 - AFF A220 および FAS2700</block>
   <block id="332ecfda75eef89a55acd64671013612" category="doc">NS224 シェルフをホットアドします</block>
-  <block id="2045f48765a1762a4ddf1bff71d898d9" category="doc">DS460C ディスクシェルフ内のドライブドロワーを IOM12 モジュールと交換します</block>
-  <block id="f3f4e90f1b3b6970f9ad6037d23137fc" category="section-title">ケーブルチェーンを取り外します</block>
-  <block id="39f83f14ef074e7f47f1a89591dede20" category="section-title">ドライブドロワーを取り外します</block>
-  <block id="c1493a32213b959f5c9f8be86dfb9960" category="section-title">ドライブドロワーを取り付けます</block>
-  <block id="02b9f44accc14d7238a1f0607ea50e30" category="section-title">ケーブルチェーンを取り付けます</block>
   <block id="3fa677b8ecb97b0ae0d14f9ded5ed49a" category="doc">障害のあるコントローラ FAS500f をシャットダウンします</block>
   <block id="a27042b0e01fb9b4136d2de6e8c1db73" category="doc">オンボード暗号化キー FAS500f を確認します</block>
   <block id="ee2afac6b0f5165d1fc3096864ac9a41" category="doc">シャーシ交換の概要 - FAS500f</block>
@@ -8421,8 +8416,6 @@
   <block id="b6ea0c6054b7f5b7832dafbb8468dc0f" category="paragraph">障害のあるコントローラをテイクオーバーまたは停止します。</block>
   <block id="4571f480b4cb6246b64d91e6cacdf34c" category="list-text">HA ペアの場合は、正常なコントローラから障害のあるコントローラをテイクオーバーします。「 storage failover takeover -ofnode impaired_node_name _</block>
   <block id="0ebf647b3184259131a8c1ffcdea60dc" category="list-text">システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _controller の LOADER プロンプトから「 y 」と入力し、コントローラをブートします</block>
-  <block id="e033b8601f70c600b73dc01580794ef1" category="summary">障害のあるコントローラをシャットダウンする前に、システムで NetApp Volume Encryption \ （ NVE \ ）または NetApp Storage Encryption \ （ NSE \ ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。</block>
-  <block id="8b97c720bb08aa0118f13600478e225f" category="list-text">このコマンドの出力に &lt;lno-DARE&gt; または &lt;1Ono-dARE&gt; が表示される場合は、システムが NVE をサポートしていないので、コントローラのシャットダウンに進みます。障害のあるコントローラをシャットダウンする前に、システムで NetApp Volume Encryption （ NVE ）または NetApp Storage Encryption （ NSE ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。</block>
   <block id="4ca27b7e1f4aad146e9ddc45f9af0410" category="doc">コントローラ FAS500f をシャットダウンします</block>
   <block id="2a468fdd2649c2bddd5f46d0d16b08af" category="doc">障害のあるコントローラ AFF A700s をシャットダウンします</block>
   <block id="abb3159815c7d305ec1a9697a5ec0fef" category="summary">コントローラモジュールを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。</block>
@@ -8617,12 +8610,8 @@
   <block id="b2cba33b1b51dce41879eced349ff3ba" category="list-text">ドライブを磁気デバイスの近くに置かないでください。</block>
   <block id="222cfe0be0a1bf567b9a7f87fd33f031" category="admonition">磁場によってドライブに保存されているすべてのデータが破損したり、ドライブの回路が故障し、原因 が修理不可能となる場合があります。</block>
   <block id="35edd171f5c445f9c2a843e056a3fdc2" category="paragraph">ドライブのインベントリを作成する必要があります。</block>
-  <block id="7069466d86118b29043e6ed214511c1c" category="list-text">手順 a で取り外したケーブルがあれば、ホットアドするディスクシェルフの IOM A の同じポートに接続します。ない場合は次の手順に進みます。+ケーブルの接続を外してから再接続するまで、70秒以上待ってください。</block>
   <block id="20244777af6f97db49ab4dc75a00ca87" category="paragraph">ケーブルを1本ずつ交換し、ケーブルを外してから新しいケーブルを接続するまで70秒以上待機します。</block>
   <block id="94ccebf898fb7d7300145c16c598544a" category="list-text">シェルフのホットアドの一部としてDS460Cシェルフを設置した場合は、ドライブのパッケージ化材を保存したあとに、それらを使用してドライブを再パッケージ化します。</block>
-  <block id="8456c08b8772c6458de93a0a78ff4f85" category="paragraph">左右のケーブルチェーンを取り外したら、ドライブシェルフからドライブドロワーを取り外すことができます。ドライブドロワーを取り外すときは、ドロワーを途中まで引き出し、ドライブを取り外し、ドライブドロワーを取り外します。</block>
-  <block id="40cfdd2fa544c18fef836a58df7bb2e9" category="list-text">取り付けるドライブで、ハンドルを垂直な位置まで持ち上げます。</block>
-  <block id="2560c526c9d334c39cab4311db7eff4d" category="paragraph">シェルフに空きがある場合、つまりドライブを再取り付けするドロワーのドライブ数がサポートされる12本よりも少ない場合は、最初の4本のドライブを前面スロット（0、3、6、および9）に取り付けます。</block>
   <block id="0c19992873d54086f9866be6126e317c" category="list-text">*シェルフの破損の可能性：DS460Cシェルフを取り外し、データセンターの別の場所に移動したり、別の場所に移動したりする場合は、 <block ref="2dfa5cde780121ff739815d2402836cf" category="inline-xref-macro-rx"></block> この手順 の末尾です。</block>
   <block id="2832373659f325a28de2b5462611f72c" category="paragraph">DS460Cディスクシェルフの場合、フル装備のシェルフの重量は112kg（247ポンド）近くになることがあるため、ラックまたはキャビネットからシェルフを取り外すときは、次の点に注意してください。</block>
   <block id="69803fc9f7acd429df0403558d86852a" category="admonition">DS460Cシェルフを安全に移動するためには、リフトハンドルを使用してリフトを使用するか4人で運搬することを推奨します。</block>
@@ -8633,4 +8622,21 @@
   <block id="4919d15b1a0ddd0c55a729c741fd5005" category="sidebar">オンボードストレージを使用したAFF プラットフォームとFAS プラットフォームのケーブル接続ワークシートと例</block>
   <block id="9285e5d96d62653cbfc04067e2de249c" category="list-text"><block ref="9285e5d96d62653cbfc04067e2de249c" category="inline-link-macro-rx"></block></block>
   <block id="cff7366c4191a9dd1698e3fd38e5acaf" category="sidebar">NVRAMモジュールまたはNVRAM DIMM</block>
+  <block id="dbe0afeaa91b9a08168e98b33a4c7de8" category="admonition">ケーブルの接続を解除してから再接続し、ケーブルを交換する場合は、70秒以上待ってから行うようにしてください。</block>
+  <block id="04e527203c5db793872f9a09c2541063" category="list-text">手順 a で取り外したケーブルがあれば、ホットアドするディスクシェルフの IOM A の同じポートに接続します。ない場合は次の手順に進みます。</block>
+  <block id="e62a559839495c7e61b9ce5a088b786c" category="doc">DS460C ディスクシェルフ内のドライブドロワーと IOM12 モジュールの交換</block>
+  <block id="585248eeaa0c7aa335cb47a05c525433" category="image-alt">92 DWG DE6600 引き出し、 HDD からの引き出し線なし</block>
+  <block id="c8c22257eb9d1c1c2a60aad49bd446f7" category="list-text">油性ペン</block>
+  <block id="2e3d3f0aa5e64af89c170da27ccf0cb2" category="section-title">ケーブルチェーンの取り外し</block>
+  <block id="bbbd51c2b3c60d5e9becdcf09d29b105" category="section-title">ドライブドロワーの取り外し</block>
+  <block id="335dce1d41f6ceb784ef37e86cc55836" category="paragraph">左右のケーブルチェーンを取り外したら、ドライブシェルフからドライブドロワーを取り外すことができます。ドライブドロワーを取り外すときは、ドロワーを途中まで引き出し、ドライブの場所を記録し、ドライブを取り外し、ドライブドロワーを取り外します。</block>
+  <block id="8ef71e80ff9b1b842baf4030f316fb11" category="list-text">ドロワーからドライブを取り外すときに各ドライブの場所を記入するために油性ペンを用意しておきます。</block>
+  <block id="152621a29ef9446b42880cb317783a76" category="list-text">すでに論理ユニット番号（ LUN ）を作成して割り当てている場合は、各ドライブの場所を油性ペンで記入します。たとえば、次の図のように、各ドライブの上に適切なスロット番号を書いておきます。</block>
+  <block id="7d2466032b15e1b1adb1ac2c562eda3b" category="admonition">* データアクセスが失われる可能性： * 各ドライブを取り外す前に場所を記録してください。</block>
+  <block id="fe8265ac3d0f9c648e57474b40e2e5d8" category="section-title">ドライブドロワーの取り付け</block>
+  <block id="00a6e09fe995a9431b12ec0b25d1e616" category="list-text">各ドライブを取り付ける場所を確認しておきます。</block>
+  <block id="844dfe4267fa67e9f6790c353bfd5146" category="list-text">ドライブを取り外したときのメモを使用して、各スロットに取り付けるドライブを確認します。</block>
+  <block id="eaae88ce87aad975b7d2ee116355a25d" category="admonition">* データアクセスが失われる可能性： * 各ドライブをドライブドロワー内の元の場所に取り付ける必要があります。</block>
+  <block id="bb9b26a61fb91f1d47a271d0ed32a967" category="list-text">ドライブのハンドルを垂直な位置まで持ち上げます。</block>
+  <block id="2731a32bd20082112cb21bea67097d21" category="section-title">ケーブルチェーンを取り付けます</block>
 </blocks>
