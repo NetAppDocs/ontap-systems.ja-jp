@@ -6099,7 +6099,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-06 14:19:40 +0000">05/06/2022</time>
+    <time datetime="2022-05-27 17:30:29 +0000">05/27/2022</time>
     
   
 
@@ -6122,8 +6122,11 @@
 <div class="paragraph lead">
 <p>ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。</p>
 </div>
-<div class="sect2">
-<h3 id="オプション-1-ほとんどの構成">オプション 1 ：ほとんどの構成</h3>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">オプション 1 ：ほとんどの構成</div>
+<div class="content">
 <div class="paragraph lead">
 <p>障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。</p>
 </div>
@@ -6209,94 +6212,10 @@
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="オプション-2-コントローラが-metrocluster-に搭載されている">オプション 2 ：コントローラが MetroCluster に搭載されている</h3>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
-</td>
-<td class="content">
-2 ノード MetroCluster 構成のシステムでは、この手順を使用しないでください。
-</td>
-</tr>
-</table>
 </div>
-<div class="paragraph">
-<p>障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">"CLI での管理の概要"</a>。</p>
-</li>
-<li>
-<p>MetroCluster 構成を使用している場合は、 MetroCluster 構成状態が構成済みで、ノードが有効かつ正常な状態であることを確認しておく必要があります（「 MetroCluster node show 」）。</p>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">手順</div>
-<ol class="arabic">
-<li>
-<p>AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh</p>
-<div class="paragraph">
-<p>次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * &gt; system node AutoSupport invoke -node * -type all -message MAINT=2h`</p>
-</div>
-</li>
-<li>
-<p>正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false</p>
-</li>
-<li>
-<p>障害のあるコントローラに LOADER プロンプトを表示します。</p>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 66.6667%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">障害のあるコントローラの表示</th>
-<th class="tableblock halign-left valign-top">作業</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>LOADER プロンプト</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>コントローラモジュールの取り外しに進みます。</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>ギブバックを待っています</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _</p>
-</div>
-<div class="paragraph">
-<p>障害のあるコントローラに「 Waiting for giveback&#8230;&#8203; 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。</p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect2">
-<h3 id="オプション-3-コントローラは-2-ノード-metrocluster-に搭載されています">オプション 3 ：コントローラは 2 ノード MetroCluster に搭載されています</h3>
+<div class="openblock">
+<div class="title">オプション 2 ：コントローラは 2 ノード MetroCluster に搭載されています</div>
+<div class="content">
 <div class="paragraph lead">
 <p>障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをスイッチオーバーする必要があります。</p>
 </div>
@@ -6424,6 +6343,9 @@ aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirr
 <p>障害のあるコントローラモジュールで、電源装置の接続を解除します。</p>
 </li>
 </ol>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
