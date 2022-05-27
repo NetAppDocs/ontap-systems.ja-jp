@@ -1679,7 +1679,6 @@
   <block id="d79b377e4ffb63d9f7bc2cd5de1e04de" category="doc">障害のあるコントローラモジュール AFF A250 をシャットダウンします</block>
   <block id="04a1c92d61b3e562a673dea0adef0f20" category="list-text">NetApp Storage Encryption を使用している場合は、 _ ONTAP 9 NetApp Encryption パワーガイド _ の「 SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります。</block>
   <block id="d341e954ddede02e8d2c553ecfba224a" category="paragraph">各 SCSI ブレードプロセスは、クラスタ内の他のノードとクォーラムを構成している必要があります。交換を進める前に、すべての問題を解決しておく必要があります。</block>
-  <block id="971840ecd85a736d5b833bc352989a07" category="list-text">MetroCluster 構成を使用している場合は、 MetroCluster 構成状態が設定されていることと、ノードが有効かつ正常な状態であることを確認しておく必要があります（ MetroCluster node show ）。</block>
   <block id="2ac1e9cd887b50e321ead7a3e6beab55" category="summary">コントローラモジュールハードウェアを交換するには、障害のあるコントローラモジュールを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。</block>
   <block id="b78bf62e6c1dd80b4eab87a4a3039f94" category="paragraph">コントローラモジュールハードウェアを交換するには、障害ノードを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。</block>
   <block id="e2f9fc0be7a0bec719378633fe5d0324" category="section-title">手順 1 ：コントローラモジュールを取り外す</block>
@@ -5886,9 +5885,6 @@
   <block id="3037b211ed81d339e89983a39433d5ed" category="list-text">切断したディスクシェルフの電源をオフにし、ディスクシェルフから電源コードを抜きます。</block>
   <block id="60f2a3cfd26e6f6c57aebe8c8e233493" category="list-text">ラックまたはキャビネットからディスクシェルフを取り外します。</block>
   <block id="fa4c9ef92b72a4afda4eb5a196eecc3f" category="paragraph">ディスクシェルフを軽くして扱いやすくするために、電源装置と I/O モジュール（ IOM ）を取り外します。</block>
-  <block id="6c3e7eebf0d82be7ff1f926b348de584" category="paragraph">DS460C ディスクシェルフの場合は、ディスクシェルフに付属の 4 本の着脱式ハンドルも使用できます。ハンドル（シャーシの両側に 2 つずつ）は、カチッという音がするまで押し上げて取り付けます。ディスクシェルフをレールにスライドさせたら、サムラッチを使用してハンドルを外します。</block>
-  <block id="3d4236fe344d3a92a8695db10ccb5072" category="paragraph">フル装備の DS460C ディスクシェルフを移動する場合は、ホイストやリフトなどを使用することを推奨します。</block>
-  <block id="a5e5379fb06ced70dc284e6acb2cdcee" category="admonition">フル装備の DS460C ディスクシェルフの重量は 112kg （ 247 ポンド）近くになることがあります。</block>
   <block id="2794022ceac3fcd7a5363d665e5359a5" category="image-alt">DRW ds460c ハンドル</block>
   <block id="7dbdcb32c9db2612bd031043224dae8f" category="summary">ワークシートテンプレートを記入することで、コントローラの SAS ポートペアを定義できます。これらのポートを使用して、コントローラを IOM12 モジュールを搭載したディスクシェルフスタックにケーブル接続し、 HA ペアまたはシングルコントローラ構成でクアッドパス接続を実現できます。記入済みのワークシートを使用して、構成に合ったクアッドパス接続を実施することもできます。</block>
   <block id="5cf2b662ddc9e386ea849d5a2d3ba76d" category="doc">クアッドパス接続用のコントローラ / スタック間のケーブル接続ワークシートテンプレート - IOM12 モジュールを搭載したシェルフ</block>
@@ -5989,12 +5985,6 @@
   <block id="0242c187e17fdc5fb8c6c39a3c7e44cf" category="paragraph">複数のディスクシェルフを設置する場合は、安定性を考慮してラックの下から順に設置してください。</block>
   <block id="485915b2618f6e44eeb59fb1a237eb08" category="paragraph">ディスクシェルフを Telco タイプのラックにフランジで取り付けない原因でください。ディスクシェルフの重量により、ラックが自重で壊れる可能性があります。</block>
   <block id="f7ec6f03d48ba0d482840bec340da0cf" category="list-text">キットに付属のパンフレットに従って、サポートブラケットとラックにディスクシェルフを取り付けて固定します。</block>
-  <block id="6af8ffd92d343a1b0d2759bc6fc5ae7e" category="list-text">DS460C ディスクシェルフを設置する場合は、ラックに設置したディスクシェルフにコンポーネントを取り付けます。それ以外の場合は、次の手順に進みます。</block>
-  <block id="3f5bbce38720364dafaa1c4e291566a6" category="paragraph">購入したディスクシェルフにドライブが搭載されていないドライブスロットがある場合は、次の点を確認してください。</block>
-  <block id="8c298229e7eae71bf34cd42839641cb1" category="list-text">各ドロワーの最初の 4 つのスロット（ 0 、 3 、 6 、 9 ）が使用されています。</block>
-  <block id="cf6acee577d7cefcf79dd4e1b561dbe6" category="paragraph">これにより、ディスクシェルフ内の通気が確保されます。</block>
-  <block id="e685698b3cc7edc0edbcb6b4f0acca4b" category="list-text">30 本のドライブを搭載したシェルフの場合、残りの 10 本のドライブが各ドロワーのスロット 1 と 10 にシェルフ全体で均等に配置されている。</block>
-  <block id="7ecce0af07cdd6bc780ac358240cc0a4" category="paragraph">次の図は、シェルフ内の各ドライブドロワーにおける 0~11 のドライブ番号の配置を示しています。スロット 0 、 3 、 6 、 9 、 30 本のドライブを搭載したシェルフの場合、各ドロワーのスロット 1 と 10 にドライブを配置する必要があります。</block>
   <block id="82edbae4acf5762cfee69aaa6facde11" category="image-alt">DWG トラフォードドロワー（ HDD の寸法テキスト付き</block>
   <block id="451345ca48e949ee2fe424e0fc68ce3d" category="list-text">ディスクシェルフをラックに設置する前に取り外した電源装置と IOM を再度取り付けます。</block>
   <block id="07f7351fb2334783d3087885957e5f5e" category="list-text">シェルフの一番上のドロワーを開きます。</block>
@@ -7386,8 +7376,6 @@
   <block id="401703f1a6e6c4174ecfa75cf476aeec" category="list-text">英語<block ref="3b271abd5f4b9b54a3379e0450431921" category="inline-link-rx"></block></block>
   <block id="c98535a3efcc3902c442def855aa8fcd" category="list-text">日本語<block ref="74a4002c724f044d7e6834f3506cd16d" category="inline-link-rx"></block></block>
   <block id="c9d9e9c98bea821ee3130955cb98a54c" category="list-text">中国語：<block ref="d495a553b62dffb464c7810acf543358" category="inline-link-rx"></block></block>
-  <block id="6407763c1d2de6600133ab1f5d7bc94f" category="inline-link">ONTAP 9 ネットアップ暗号化パワーのコンテンツ</block>
-  <block id="b70ce74f678772eec8ed950c996578d8" category="paragraph"><block ref="b70ce74f678772eec8ed950c996578d8" category="inline-link-rx"></block></block>
   <block id="3507cf5c7dded65ffdd5ade0f2366605" category="list-text"><block ref="3507cf5c7dded65ffdd5ade0f2366605" category="inline-link-macro-rx"></block></block>
   <block id="839439b189cfb3960dee96d5900594f7" category="list-text">片側をまっすぐに伸ばしたペーパークリップ、または細い先端のボールペンが必要です。</block>
   <block id="6de535d32c5294ec13b8cdaefbdfcd96" category="list-text">最新のファームウェアバージョンでない新しいドライブのドライブファームウェアは自動的に（無停止で）更新されます。</block>
@@ -7962,7 +7950,6 @@
   <block id="96f3065963946bf7d4b37f70901cd2c8" category="paragraph">+ 積極的に押す原因と、バッテリがイジェクトされる可能性があります。</block>
   <block id="f05dc6ae866c89472a3f7a9b59aa3e6a" category="list-text">No.1 磁気ドライバを使用して、ブートメディアのネジを挿入して締めます。</block>
   <block id="aeafe9c2b3703d604c28ef5d13c03f76" category="list-text">No.1 磁気ドライバを使用して、交換用コントローラモジュール前面とメザニンカードにネジを挿入して締めます。</block>
-  <block id="4a2546eb9c2e57bf15ddf11202689d7c" category="section-title">オプション 2 ： MetroCluster のシステム</block>
   <block id="860b30584f1b729efd2b58d01580a92c" category="paragraph">NVMEM バッテリを交換するには、障害が発生したバッテリをコントローラモジュールから取り外し、交換用バッテリをコントローラモジュールに取り付ける必要があります。</block>
   <block id="600a73fcb93eb875646134b90ac7d911" category="paragraph">メザニンカードを交換するには、障害のあるカードを取り外して交換用カードを取り付ける必要があります。メザニンカードを取り付けるには、カバーを取り外して新しいカードを取り付ける必要があります。</block>
   <block id="4177f2df9ae71084d9883a0423cc68d0" category="list-text">No.1 磁気ドライバを使用して、障害のあるメザニンカードのネジを緩めます。</block>
@@ -8553,7 +8540,6 @@
   <block id="e62f199edf5ce700e5ae74c377f48585" category="sidebar">すべての SAN アレイシステム</block>
   <block id="c4565f27e7eb1d0640e258fb796df9c4" category="list-text">システムケーブルとトランシーバモジュールをコントローラモジュールに接続し、ケーブルマネジメントデバイスを再度取り付けます。</block>
   <block id="6c35991313f21e9038f629e9e809488a" category="admonition">効率性の異なる PSU を混在させないでください。いつものように同じように置換します。</block>
-  <block id="0fbe0630286ce5debeb3d11174988b34" category="open-title">オプション 3 ：コントローラは 2 ノード MetroCluster に搭載されています</block>
   <block id="6bec966647e1b9c8a03ddd277c8fe864" category="inline-link">パーツの返品と交換</block>
   <block id="822bec4a0db0c5fd17b5f05b4e1c0335" category="paragraph">障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください<block ref="4fc2cab5a4eb2f6a408378b0d596ae42" category="inline-link-rx"></block> 詳細については、を参照してください。</block>
   <block id="e188406fb2d6108447e3bc6cb9155625" category="inline-link-macro">オンボードストレージを搭載した AFF および FAS プラットフォーム</block>
@@ -8626,17 +8612,14 @@
   <block id="04e527203c5db793872f9a09c2541063" category="list-text">手順 a で取り外したケーブルがあれば、ホットアドするディスクシェルフの IOM A の同じポートに接続します。ない場合は次の手順に進みます。</block>
   <block id="e62a559839495c7e61b9ce5a088b786c" category="doc">DS460C ディスクシェルフ内のドライブドロワーと IOM12 モジュールの交換</block>
   <block id="585248eeaa0c7aa335cb47a05c525433" category="image-alt">92 DWG DE6600 引き出し、 HDD からの引き出し線なし</block>
-  <block id="c8c22257eb9d1c1c2a60aad49bd446f7" category="list-text">油性ペン</block>
   <block id="2e3d3f0aa5e64af89c170da27ccf0cb2" category="section-title">ケーブルチェーンの取り外し</block>
   <block id="bbbd51c2b3c60d5e9becdcf09d29b105" category="section-title">ドライブドロワーの取り外し</block>
-  <block id="335dce1d41f6ceb784ef37e86cc55836" category="paragraph">左右のケーブルチェーンを取り外したら、ドライブシェルフからドライブドロワーを取り外すことができます。ドライブドロワーを取り外すときは、ドロワーを途中まで引き出し、ドライブの場所を記録し、ドライブを取り外し、ドライブドロワーを取り外します。</block>
-  <block id="8ef71e80ff9b1b842baf4030f316fb11" category="list-text">ドロワーからドライブを取り外すときに各ドライブの場所を記入するために油性ペンを用意しておきます。</block>
-  <block id="152621a29ef9446b42880cb317783a76" category="list-text">すでに論理ユニット番号（ LUN ）を作成して割り当てている場合は、各ドライブの場所を油性ペンで記入します。たとえば、次の図のように、各ドライブの上に適切なスロット番号を書いておきます。</block>
-  <block id="7d2466032b15e1b1adb1ac2c562eda3b" category="admonition">* データアクセスが失われる可能性： * 各ドライブを取り外す前に場所を記録してください。</block>
   <block id="fe8265ac3d0f9c648e57474b40e2e5d8" category="section-title">ドライブドロワーの取り付け</block>
-  <block id="00a6e09fe995a9431b12ec0b25d1e616" category="list-text">各ドライブを取り付ける場所を確認しておきます。</block>
-  <block id="844dfe4267fa67e9f6790c353bfd5146" category="list-text">ドライブを取り外したときのメモを使用して、各スロットに取り付けるドライブを確認します。</block>
-  <block id="eaae88ce87aad975b7d2ee116355a25d" category="admonition">* データアクセスが失われる可能性： * 各ドライブをドライブドロワー内の元の場所に取り付ける必要があります。</block>
-  <block id="bb9b26a61fb91f1d47a271d0ed32a967" category="list-text">ドライブのハンドルを垂直な位置まで持ち上げます。</block>
   <block id="2731a32bd20082112cb21bea67097d21" category="section-title">ケーブルチェーンを取り付けます</block>
+  <block id="b3e40f87c203ef282d4d64a42d869542" category="open-title">オプション2：コントローラは2ノードMetroCluster に搭載されています</block>
+  <block id="2cb6637a5fdf450f80c9f19b8c718a47" category="admonition">ケーブルの接続を解除してから再接続し、ケーブルを別のケーブルに交換する場合は、70秒以上待機する必要があります。</block>
+  <block id="17c343da5115d1e0b01e0d9fab1f9d4e" category="paragraph">+リストストラップがない場合は、ディスクドライブに触る前に、ストレージエンクロージャのシャーシの塗装されていない部分を手で触ります。</block>
+  <block id="8456c08b8772c6458de93a0a78ff4f85" category="paragraph">左右のケーブルチェーンを取り外したら、ドライブシェルフからドライブドロワーを取り外すことができます。ドライブドロワーを取り外すときは、ドロワーを途中まで引き出し、ドライブを取り外し、ドライブドロワーを取り外します。</block>
+  <block id="40cfdd2fa544c18fef836a58df7bb2e9" category="list-text">取り付けるドライブで、ハンドルを垂直な位置まで持ち上げます。</block>
+  <block id="2560c526c9d334c39cab4311db7eff4d" category="paragraph">シェルフに空きがある場合、つまりドライブを再取り付けするドロワーのドライブ数がサポートされる12本よりも少ない場合は、最初の4本のドライブを前面スロット（0、3、6、および9）に取り付けます。</block>
 </blocks>
