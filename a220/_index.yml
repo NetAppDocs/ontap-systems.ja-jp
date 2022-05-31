@@ -14,7 +14,7 @@ indexpage:
   - title: 設置とセットアップ
     links:
     - title: ほとんどの構成
-      url: "/install-setup.html"
+      url: "../fas2700/install-setup.html"
     - title: ファブリック接続 MetroCluster 構成
       url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
     - title: ストレッチ MetroCluster 構成
