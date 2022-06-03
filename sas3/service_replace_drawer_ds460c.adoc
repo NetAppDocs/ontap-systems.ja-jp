@@ -1,7 +1,7 @@
 ---
 permalink: sas3/service-replace-drawer-ds460c.html 
 sidebar: sidebar 
-keywords: stop, all, host, i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf 
+keywords: i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf 
 summary: ドライブドロワーを交換する前に、ホストの I/O アクティビティをすべて停止し、シェルフの電源をオフにする必要があります。 
 ---
 = DS460C ディスクシェルフ内のドライブドロワーと IOM12 モジュールの交換
@@ -322,9 +322,9 @@ NOTE: *機器の故障のリスク：*通気が適切に行われ、過熱を防
 +
 image::../media/92_dwg_de6600_install_or_remove_drive.gif[92 dwg de6600 はドライブを取り付けまたは取り外します]
 
+.. 同じ手順を繰り返して、すべてのドライブを取り付けます。
 
 
-. 同じ手順を繰り返して、すべてのドライブを取り付けます。
 . ドロワーを外側に押して両方のレバーを閉じ、スライドしてドライブシェルフに戻します。
 +
 
