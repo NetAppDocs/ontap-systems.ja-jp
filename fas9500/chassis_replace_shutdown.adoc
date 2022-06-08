@@ -1,0 +1,61 @@
+---
+permalink: fas9500/chassis_replace_shutdown.html 
+sidebar: sidebar 
+keywords: aff fas9500, shutdown the controllers 
+summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
+---
+= 障害のあるコントローラFAS9500をシャットダウンします
+:allow-uri-read: 
+
+
+シャーシ内のコントローラまたはコントローラを新しいシャーシに移動する前に、シャットダウンする必要があります。
+
+.このタスクについて
+* コントローラが 3 台以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで資格とヘルスについて「 false 」と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"^]。
+* AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
++
+次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
+
+
+
+.手順
+. システムにコントローラモジュールが 2 つある場合は、 HA ペアを無効にします。
++
+[cols="1,2"]
+|===
+| clustered ONTAP を実行しているシステムの構成 | 作業 
+
+
+ a| 
+クラスタに 2 台のコントローラがあります
+ a| 
+cluster ha modify -configured false 「 storage failover modify -node node0 -enabled false 」という名前になります
+
+
+
+ a| 
+クラスタ内に 3 台以上のコントローラがあります
+ a| 
+「 storage failover modify -node node0 -enabled false 」という名前のノードが追加されました
+
+|===
+. 停止を確認するプロンプトが表示されたら 'y を押してコントローラを停止します system node halt -node _node_name _`
++
+次のような確認メッセージが表示されます。
+
++
+[listing]
+----
+Warning: This operation will cause controller "node-name" to be marked as unhealthy. Unhealthy nodes do not participate in quorum voting. If the controller goes out of service and one more controller goes out of service there will be a data serving failure for the entire cluster. This will cause a client disruption. Use "cluster show" to verify cluster state. If possible bring other nodes online to improve the resiliency of this cluster.
+
+Do you want to continue? {y|n}:
+----
++
+
+NOTE: シャーシを交換する前にシステムのクリーンシャットダウンを実行し、不揮発性メモリ（ NVMEM / NVRAM ）内の書き込み前のデータが失われないようにする必要があります。システムによっては、 NVMEM / NVRAM の LED の点滅は、ディスクに保存されていないデータが NVMEM / NVRAM にあることを示しています。コントローラをリブートし、この手順 の最初からやり直してください。コントローラのクリーンシャットダウンに繰り返し失敗すると、ディスクに保存されていないデータが失われる可能性があります。
+
+. 該当する場合は、 2 台目のコントローラを停止して、 HA ペア構成でクォーラムエラーメッセージが表示されないようにします。「 system node halt -node _second_node_name -ignore-quorum -warnings true -skip-lif-migration-before-shutdown true 」
++
+プロンプトが表示されたら回答 'y' 。
+
+

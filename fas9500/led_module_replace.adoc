@@ -1,0 +1,26 @@
+---
+permalink: fas9500/led_module_replace.html 
+sidebar: sidebar 
+keywords: LED USB module,replacing,hot-swapping,LED USB module,non-disruptive replacement,LED USB module 
+summary: サービスを中断することなく LED USB モジュールを交換できます。 
+---
+= LED USBモジュールFAS9500を交換してください
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LED USB モジュールは、コンソールポートおよびシステムステータスへの接続を提供します。このモジュールの交換にはツールは必要なく、サービスを中断することもありません。
+
+
+
+== 手順 1 ： LED USB モジュールを交換します
+
+.手順
+. 古い LED USB モジュールを取り外します。
++
+
+
+
+endif::[]

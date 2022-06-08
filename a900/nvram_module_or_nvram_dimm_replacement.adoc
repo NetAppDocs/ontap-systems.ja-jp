@@ -47,9 +47,9 @@ NVRAM モジュールは NVRAM11 と DIMM で構成されます。障害が発�
 .このタスクについて
 * NetApp Storage Encryption を使用している場合は、 _ ONTAP 9 NetApp Encryption パワーガイド _ の「 SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります。
 +
-https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["ONTAP 9 ネットアップ暗号化パワーガイド"]
+https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["ONTAP 9 ネットアップ暗号化パワーガイド"^]
 
-* SAN システムを使用している場合は、障害のあるコントローラの SCSI ブレードに関するイベントメッセージ（ event log show ）を確認しておく必要があります。
+* SANシステムを使用している場合は'障害のあるコントローラSCSIブレードに関するイベント・メッセージ（event log show）を確認しておく必要があります
 +
 各 SCSI ブレードプロセスは、クラスタ内の他のノードとクォーラムを構成している必要があります。交換を進める前に、すべての問題を解決しておく必要があります。
 
@@ -473,11 +473,11 @@ dr-group-id            cluster node           configuration-state
 ストレージまたはボリュームの暗号化を使用するように設定したストレージシステムのコントローラモジュールまたは NVRAM モジュールを交換したら、追加の手順を実行して、暗号化機能を中断させないようにする必要があります。ストレージまたはボリュームの暗号化が有効になっていないストレージシステムでは、このタスクを省略できます。
 
 .ステップ
-. の該当する手順を使用して、ストレージまたはボリュームの暗号化機能をリストアします https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["CLI での NetApp Encryption の概要"]。
+. の該当する手順を使用して、ストレージまたはボリュームの暗号化機能をリストアします https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["CLI での NetApp Encryption の概要"^]。
 . オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順を実行します。
 +
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"]
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"^]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"^]
 
 
 

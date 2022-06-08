@@ -2221,7 +2221,6 @@
   <block id="31509d9d2ecd7357c2d79b6100170edf" category="paragraph"><block ref="31509d9d2ecd7357c2d79b6100170edf" category="inline-link-rx"></block></block>
   <block id="09344dc6761d2a7f8e0074911899de26" category="list-text">'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' 以外の項目が表示される場合は ' 次の手順を実行します</block>
   <block id="f5321e091dead7c4ead8728aa3332803" category="list-text">onboard security key-manager sync コマンド「 security key-manager sync 」を入力します</block>
-  <block id="29494bbea0c4b9c81b504ce3c9f0c776" category="admonition">プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。<block ref="7bc6752d2076d2c755eaebbdfeb91d23" category="inline-link-rx"></block></block>
   <block id="5420f491e628cc60c7e1ffcad20d35da" category="list-text">コマンドを入力して、キー管理バックアップ情報を表示します。「 securitykey-manager onboard show-backup 」</block>
   <block id="8eb91adaedfd18d8e21833ed58db7673" category="section-title">NSE の設定を確認</block>
   <block id="a5e337a3469d0028e9b72fe170e6d372" category="list-text">onboard security key-manager sync コマンド「 security key-manager external sync 」を入力します</block>
@@ -7291,7 +7290,6 @@
   <block id="3f98fa9dd0068de7a3158d3cefe04024" category="list-text"><block ref="3f98fa9dd0068de7a3158d3cefe04024" category="inline-link-macro-rx"></block></block>
   <block id="a2960939186ae78b824d694e2cbba800" category="inline-link">CLI での管理の概要</block>
   <block id="518d2076bf387a28038f7558530bb987" category="inline-link">CLI での NetApp Encryption の概要</block>
-  <block id="a0ad8f5b8d13f1cd5ef039b68ed21700" category="list-text">の該当する手順を使用して、ストレージまたはボリュームの暗号化機能をリストアします<block ref="48a668c3219947c390bb7b4ff0fcb822" category="inline-link-rx"></block>。</block>
   <block id="673f7a1f10ce14ef29b06ba53cf1e5d7" category="inline-link">CLI での NetApp Encryption の概要</block>
   <block id="ed20ee3e54ecf9b3b63f4e11ff820fb4" category="paragraph"><block ref="ed20ee3e54ecf9b3b63f4e11ff820fb4" category="inline-link-rx"></block></block>
   <block id="459527cf1ec141d19f1b0f88f8c19905" category="inline-link">ディスクとアグリゲートの概要</block>
@@ -7927,9 +7925,7 @@
   <block id="b36708a8226ddc48a16407516f32b6ae" category="paragraph">'*' storage failover show'*</block>
   <block id="4cc5d765a3b2155ab803f6ce50c11747" category="paragraph">storage failover show コマンドの出力には 'System ID changed on partner というメッセージは含まれていません</block>
   <block id="7b5b637cc082477a9dd4c129c225152e" category="inline-link">オンボードキー管理の暗号化キーをリストア</block>
-  <block id="bec1622a1f566276141766f76e4b1d70" category="list-text"><block ref="bec1622a1f566276141766f76e4b1d70" category="inline-link-rx"></block></block>
   <block id="1ee623098df2f7856a034824be882999" category="inline-link">外部キー管理の暗号化キーをリストアします</block>
-  <block id="e10bd7c646b5f37d42df52bab6df6c64" category="list-text"><block ref="e10bd7c646b5f37d42df52bab6df6c64" category="inline-link-rx"></block></block>
   <block id="3c737345883504ebe7f0075c2e20f47e" category="list-text">このコマンドの出力に &lt;lno-DARE&gt; または &lt;1Ono-dARE&gt; が表示される場合は、システムが NVE をサポートしていないので、コントローラのシャットダウンに進みます。</block>
   <block id="9b744d081289382cce38c59e4b6d3f76" category="list-text">クラスタ内のいずれのボリュームにも NVE が使用されているかどうかを確認します。 volume show -is-encrypted true</block>
   <block id="7ab4c93a1ecb36778005e21c2d800f15" category="paragraph">出力に含まれるボリュームには NVE が設定されているため、 NVE の設定を確認する必要があります。ボリュームが表示されない場合は、 NSE が設定されて使用中であるかどうかを確認します。</block>
@@ -8264,11 +8260,9 @@
   <block id="4c10c8d9f18f0c8ba6fc3ea32f7beee4" category="list-text">HA 構成の場合は、 2 台目のコントローラで同じ手順を繰り返します。</block>
   <block id="6d21dbcd6d30fc2426dd0b077d719da5" category="summary">障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。</block>
   <block id="d1614290531967ae3b3623d71b4ed961" category="paragraph">障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にして、実行中の ONTAP のバージョンを確認する必要があります。</block>
-  <block id="dcaee2dcae546228e31a0898bd961734" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="5f63b18eda466634ee235fd0cb5a9d6a" category="inline-link-macro-rx"></block>。</block>
   <block id="6d4079af860d745f44d13bfe9834115d" category="list-text">障害のあるコントローラのステータスを確認します。</block>
   <block id="6f0786e478994e04512bb55e945ab79c" category="list-text">障害のあるコントローラがログインプロンプトに表示されている場合は 'admin' としてログインします</block>
   <block id="1f543f99cb43496b3a35f9786089c979" category="list-text">障害のあるコントローラが LOADER プロンプトに表示され、 HA 構成の一部である場合は、正常なコントローラに「 admin 」としてログインします。</block>
-  <block id="52172eb9e905726c940b5894e2ccc281" category="list-text">障害のあるコントローラがスタンドアロン構成で LOADER プロンプトが表示されている場合は、にお問い合わせください <block ref="fbe7ba585c90dfc99f38e8779c97c5f3" category="inline-link-macro-rx"></block>。</block>
   <block id="efed560995ba912dfc2aa959620707ff" category="list-text">「 version -v 」コマンドを使用して、障害のあるコントローラ上でシステムが実行している ONTAP のバージョンを確認します。アップしている場合はパートナーコントローラ上で、障害のあるコントローラがダウンしている場合はパートナーコントローラ上で確認します。</block>
   <block id="24b6214418480e5248eaed7a69ead79c" category="list-text">障害のあるコントローラが HA 構成の一部である場合は、正常なコントローラからの自動ギブバックを無効にします。 storage failover modify -node local-auto-giveback false または storage failover modify -node local-auto-giveback -after-panic false</block>
   <block id="5a9f897d2d5283081378f66d6ed3cb7a" category="paragraph">障害のあるコントローラをシャットダウンする前に、システムで NetApp Volume Encryption （ NVE ）または NetApp Storage Encryption （ NSE ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。</block>
@@ -8320,7 +8314,6 @@
   <block id="f51c8858085d7dcfe4d79d9774f8270d" category="paragraph">_replacement _controller をブートしたときにシステム ID の変更を確認し、その変更が実装されたことを確認する必要があります。</block>
   <block id="58d1979204cdde4ca641ddc56ae5fe91" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は、 _replacement _controller の LOADER プロンプトから「 y 」と入力し、コントローラをブートします。「 boot_ontap 」</block>
   <block id="4d3408827df16f2063082b26e489e785" category="summary">障害のあるコントローラモジュールをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。</block>
-  <block id="f3ccc6a1c062dbba61f459b0e8b57597" category="list-text">SAN システムを使用している場合は、障害のあるコントローラの SCSI ブレードに関するイベントメッセージ（ event log show ）を確認しておく必要があります。</block>
   <block id="d9d59ddb1bc0ff1000e4664413e713fe" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は、 _replacement _controller の LOADER プロンプトから「 y 」と入力し、コントローラをブートします。</block>
   <block id="6887fe4f6ef917daf3d3f454ae837e99" category="list-text">システムが MetroCluster 構成になっている場合は ' コントローラのステータスを監視します MetroCluster node show</block>
   <block id="e8d2a192788fc79eb80ab29e07304094" category="paragraph">MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各コントローラの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster node show -fields node-systemid' コマンドの出力には、 MetroCluster 設定が通常の状態に戻るまで古いシステム ID が表示されます。</block>
@@ -8618,8 +8611,116 @@
   <block id="2731a32bd20082112cb21bea67097d21" category="section-title">ケーブルチェーンを取り付けます</block>
   <block id="b3e40f87c203ef282d4d64a42d869542" category="open-title">オプション2：コントローラは2ノードMetroCluster に搭載されています</block>
   <block id="2cb6637a5fdf450f80c9f19b8c718a47" category="admonition">ケーブルの接続を解除してから再接続し、ケーブルを別のケーブルに交換する場合は、70秒以上待機する必要があります。</block>
-  <block id="17c343da5115d1e0b01e0d9fab1f9d4e" category="paragraph">+リストストラップがない場合は、ディスクドライブに触る前に、ストレージエンクロージャのシャーシの塗装されていない部分を手で触ります。</block>
   <block id="8456c08b8772c6458de93a0a78ff4f85" category="paragraph">左右のケーブルチェーンを取り外したら、ドライブシェルフからドライブドロワーを取り外すことができます。ドライブドロワーを取り外すときは、ドロワーを途中まで引き出し、ドライブを取り外し、ドライブドロワーを取り外します。</block>
   <block id="40cfdd2fa544c18fef836a58df7bb2e9" category="list-text">取り付けるドライブで、ハンドルを垂直な位置まで持ち上げます。</block>
   <block id="2560c526c9d334c39cab4311db7eff4d" category="paragraph">シェルフに空きがある場合、つまりドライブを再取り付けするドロワーのドライブ数がサポートされる12本よりも少ない場合は、最初の4本のドライブを前面スロット（0、3、6、および9）に取り付けます。</block>
+  <block id="dbe360eaa5ee89fd4f31c500db9f2fd7" category="paragraph"><block ref="dbe360eaa5ee89fd4f31c500db9f2fd7" category="inline-link-rx"></block></block>
+  <block id="44eacc26d730bc46ddc55858ccb8e7e3" category="list-text">SANシステムを使用している場合は'障害のあるコントローラSCSIブレードに関するイベント・メッセージ（event log show）を確認しておく必要があります</block>
+  <block id="503506ac51c03177e4e29bdd8f3f83e0" category="list-text">の該当する手順を使用して、ストレージまたはボリュームの暗号化機能をリストアします<block ref="2ff5666698979ec87e001217f795c3dd" category="inline-link-rx"></block>。</block>
+  <block id="b18ad0a07953c39e92025f3df711d7e8" category="list-text"><block ref="b18ad0a07953c39e92025f3df711d7e8" category="inline-link-rx"></block></block>
+  <block id="137edbb782dbd05e84addda1ad111604" category="list-text"><block ref="137edbb782dbd05e84addda1ad111604" category="inline-link-rx"></block></block>
+  <block id="d331c2ddc96dbf38f25371617243bf17" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="1ab03132ea6210439f901707b3806211" category="inline-link-macro-rx"></block>。</block>
+  <block id="ec5866194941126dcbe55d496f612191" category="list-text">障害のあるコントローラがスタンドアロン構成で LOADER プロンプトが表示されている場合は、にお問い合わせください <block ref="d4b5db761eff3af8abec9c2aa8b19609" category="inline-link-macro-rx"></block>。</block>
+  <block id="4729966d1b42f799e14eba4dd6dedbdb" category="paragraph"><block ref="4729966d1b42f799e14eba4dd6dedbdb" category="inline-link-rx"></block></block>
+  <block id="60db4a77031ab02d5c7d793d8ee8e564" category="admonition">プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block></block>
+  <block id="0f4f43e093db80d862a516057fb4a1b2" category="list-text">障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください<block ref="9d47acedf189f7880a7ff697cbca93c5" category="inline-link-rx"></block> 詳細については、を参照してください。</block>
+  <block id="756d409209ace98589705774b5011aa0" category="inline-link">FAS9500</block>
+  <block id="777fd6d7388769d3f60adc007c4390a4" category="paragraph"><block ref="777fd6d7388769d3f60adc007c4390a4" category="inline-link-rx"></block></block>
+  <block id="801fb2644ef002c15826950c6197b174" category="paragraph">ONTAP 9.10.1P3および9.11.1</block>
+  <block id="a31ab93f41516026d249aceb633bccc3" category="doc">I/OモジュールFAS9500を追加します</block>
+  <block id="133808c24f6fb32a9a2a58ed28150498" category="paragraph">I/Oモジュールは、システムの空のモジュールスロットに、SASストレージシェルフのNICまたはストレージモジュールとして追加できます。</block>
+  <block id="ff231ca484e594004f4ca93ecfa6683e" category="paragraph">テイクオーバーが完了すると、コンソール接続でノードが LOADER プロンプトに表示されます。</block>
+  <block id="2a5cd1f850ee79601be57448f10d9595" category="list-text">LOADER プロンプトからノードをリブートします： bye _</block>
+  <block id="4d3b1425bbd62943a546a9f98dc3b7ef" category="list-text">パートナーノードからノードをギブバックします。storage failover giveback -ofnode target_node_name</block>
+  <block id="6f8193ca6bfb281db32afbcc9e285f79" category="inline-link">SASシェルフのホットアド</block>
+  <block id="9856beabcb389225df78cec96e74e365" category="list-text">ストレージI/Oモジュールを設置した場合は、SASシェルフを設置してケーブル接続します（を参照）<block ref="322cc377ef41f5776a1c64690e12c49b" category="inline-link-rx"></block>。</block>
+  <block id="c964f542415e7614484e4edf970ab7a8" category="paragraph">該当する LIF を別のホームポートに完全に再割り当てします。を参照してください<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block> System Manager を使用して LIF を完全に移動する方法については、を参照してください。</block>
+  <block id="6d351dbc4a7187d4512a1c505c200687" category="paragraph">System Manager を使用して、 LIF を別のホームポートに完全に移行します。手順については、を参照してください<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block>。</block>
+  <block id="f3ca7c7565b074fbf5e12ffb59930d2f" category="doc">障害の発生したパーツをNetApp-FAS9500に戻します</block>
+  <block id="111654993a380e0c9bea6bf2840bed64" category="doc">オンボード暗号化キーのプレシャットダウンチェック：FAS9500</block>
+  <block id="4ea7136415cb99f780a4177ea7ada9f4" category="doc">システム構成をリストアして確認します（FAS9500）</block>
+  <block id="99b2041dbc4d85328f37031f86e8632c" category="cell">ノードの構成</block>
+  <block id="a7ed9ff4da75adb740c610eda185e598" category="doc">クイックステップ- FAS9500</block>
+  <block id="6c77c0963cc43d89befd25aeab2f805c" category="inline-link-macro">FAS9500のインストールとセットアップの手順書</block>
+  <block id="c0151088b8d16a7df5f5ceccf770a44b" category="paragraph"><block ref="c0151088b8d16a7df5f5ceccf770a44b" category="inline-link-macro-rx"></block></block>
+  <block id="6b076d5e08feabcb936ff1fc2298c9cb" category="doc">シャーシFAS9500を交換してください</block>
+  <block id="0829d23216964b4cc2a11bb04c4cf143" category="summary">NVMe SSD FlashCacheモジュール（FlashCacheまたはキャッシングモジュール）は、FAS900システムのスロット6のNVRAM11モジュールの前面にのみあります。サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。</block>
+  <block id="fb796745f1b93e7c27af0a928be9d5ae" category="doc">キャッシングモジュール FAS9500 をホットスワップします</block>
+  <block id="e5684d853146c37193094e90fea21bff" category="paragraph">NVMe SSD FlashCacheモジュール（FlashCacheまたはキャッシングモジュール）は、FAS9500システムのスロット6にあるNVRAM11モジュールの前面にあります。サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。</block>
+  <block id="1360261f3d9e17642c609debfd62b1d6" category="admonition">FlashCacheモジュールをコールドスワップする場合は、I/Oモジュールの交換手順に従います。</block>
+  <block id="fa807167a57a5e7782f90326093319e4" category="list-text">キャッシングモジュールが機能していて、システムで認識できる十分な数の状態である必要があります。前回のブート以降にキャッシングモジュールが機能していない場合は、この手順 を使用できないため、コールドスワップの手順 を使用する必要があります。</block>
+  <block id="bdd8c99ec41c2de3e99ba0a36e04bfbf" category="list-text">admin特権レベルで、削除するターゲットNVMeスロットを準備し、続行するかどうかを確認するプロンプトが表示されたら「y」と入力します。system controller slot module remove -node node_name -slot slot_number次のコマンドは、node1のスロット6-1を取り外し用に準備し、安全であることを示すメッセージを表示します。</block>
+  <block id="e47fa3700d8c8b185b05f4e09285f497" category="admonition">を参照してください<block ref="7dfdd4167a3eb44ee8af382f653a3ce0" category="inline-link-rx"></block> 詳細については、お使いのバージョンの ONTAP を参照してください。</block>
+  <block id="68607949342d7df39c7770d809d0a5f2" category="image-alt">DRW 9500がFlashCacheを削除します</block>
+  <block id="5e8d2460689245ee00f6d51f5db543dc" category="paragraph">Terra cottaリリースボタン。</block>
+  <block id="948a2b625585740c830fda62dae13d97" category="list-text">キャッシングモジュールの前面にあるテラコッタリリースボタンを押します。</block>
+  <block id="783e93aa36e1cf0b0fe9d46618c3f4da" category="admonition">数字とアルファベットが印字された I/O カムラッチを使用してキャッシングモジュールをイジェクトしないでください。数字とアルファベットが印字されたI/Oカムラッチを使用すると、キャッシングモジュールではなくNVRAM11モジュール全体がイジェクトされます。</block>
+  <block id="4a73e216feb4277e4b9ed4b0d06e52b6" category="list-text">キャッシングモジュールがNVRAM11モジュールから少し引き出されるまでカムハンドルを回転させます。</block>
+  <block id="889bf94232348261e70a1f1630722a8f" category="list-text">カムハンドルを手前にゆっくりと引いて、NVRAM11モジュールからキャッシングモジュールを取り外します。</block>
+  <block id="2449804e78fe2ca344268ced61ab3353" category="paragraph">キャッシングモジュールをNVRAM11モジュールから取り外す際は、必ずキャッシングモジュールをサポートしてください。</block>
+  <block id="5eafc6b946f42f85611a7020c8963ef8" category="list-text">キャッシングモジュールの端をNVRAM11モジュールの開口部に合わせます。</block>
+  <block id="6f36adf35f17125c62c31d605c56f817" category="paragraph">次のコマンドでは、node1のスロット6-1の電源投入の準備を行い、電源がオンになったことを示すメッセージを表示します。</block>
+  <block id="496be6cf22594c66057746f4ed0e1e39" category="paragraph">コマンド出力で、のステータスが「電源オン」と表示され、操作可能であることを確認します。</block>
+  <block id="cdcb00922b21796793c48c3b35b6c0f4" category="doc">リカバリイメージFAS9500をブートします</block>
+  <block id="46dd13a6814ed7f56a6b685a892da660" category="doc">リアルタイムクロックバッテリFAS9500を交換してください</block>
+  <block id="542a28d27da2740fcbd2bfb50ba849cc" category="doc">障害ノードFAS9500をシャットダウンします</block>
+  <block id="c864447c725c6855c6a867ef48db2ee6" category="doc">OKM、NSE、およびNVE FAS9500でのブートメディア交換後の手順</block>
+  <block id="cb8bd5f8b409f772feeb282be5c812fd" category="list-text">コンソールケーブルをターゲットノードに接続します。</block>
+  <block id="09c59b704f34eb3d4a2fd7d67e831c1b" category="list-text">LOADER プロンプトで「 boot_ontap 」コマンドを使用して、ノードをブートします。</block>
+  <block id="ee576c01fd9d6961677d0a6255745ad9" category="paragraph">ノードをブートメニュー「 boot_ontap menu 」からブートします</block>
+  <block id="da0c8baa25fcee791ffa412ec90044ca" category="list-text">パートナーノードにコンソールケーブルを接続し、 admin としてログインします。</block>
+  <block id="2f6a11061d2c04a9d9730e06edaa97a6" category="list-text">ギブバックが完了したら、 storage failover show コマンドおよび storage failover show-giveback コマンドを使用して、フェイルオーバーとギブバックのステータスを確認します。</block>
+  <block id="da4a2b9c52e805a46a6951e79d1796d9" category="list-text">パートナーノードにコンソールケーブルを接続します。</block>
+  <block id="da4a3c359cf5d24082930f89cd19b3fc" category="list-text">「 storage failover giveback -fromnode local 」コマンドを使用してターゲットノードをギブバックします。</block>
+  <block id="a23d49d00b003ec7514a6fcf51f93bac" category="list-text">クラスタシェル・プロンプトで、 net int show -is-home false コマンドを入力し、ホーム・ノードおよびポートにない論理インターフェイスを一覧表示します。</block>
+  <block id="80d6c51420c97a5fd468a280127498fe" category="list-text">コンソールケーブルをターゲットノードに移動し、「 version-v 」コマンドを実行して ONTAP のバージョンを確認します。</block>
+  <block id="809f0d7cd6f78909c00532d70262031d" category="list-text">「 storage failover giveback -fromnode local-only -cfo-aggregates true local 」コマンドを使用して、コンソールケーブルをパートナーノードに移動し、ターゲットノードのストレージをギブバックします。</block>
+  <block id="20d54df84f7e55d01eb019ccfe3eebef" category="summary">FAS9500システムのドキュメントでは、システムのインストール、セットアップ、メンテナンスが可能です。</block>
+  <block id="5852e0b4d479d20d783c528e9f8e41fa" category="doc">FAS9500システム</block>
+  <block id="bc8cb8c20c19791f56e4ce60f7a2aad0" category="doc">コントローラを取り外してブートメディアを交換し、ブートイメージFAS9500を転送します</block>
+  <block id="eb0c0a024c4f0aa6cfdd5767de1f16f1" category="doc">FAS9500のI/Oモジュールを交換してください</block>
+  <block id="6e2a8281a18f34ebf7b28cf7584e58ea" category="doc">ファンとFAS9500を交換します</block>
+  <block id="96454e2f4cce6f7ff26336656ad504c5" category="doc">障害のあるコントローラFAS9500をシャットダウンします</block>
+  <block id="2fcf4c33596849c180828b304c73609a" category="doc">LED USBモジュールFAS9500を交換してください</block>
+  <block id="737b04c7e695216162d794c71001099a" category="doc">コントローラモジュールハードウェアFAS9500を交換してください</block>
+  <block id="c3b3c57f039315476b0683acbee42a5a" category="doc">障害のあるコントローラFAS9500をシャットダウンします</block>
+  <block id="3b56ab083e8d5c37dcc957efc509182f" category="doc">システムのリストアを完了します。FAS9500</block>
+  <block id="3f679ad9b20cbb8994ff36e9ce18d58f" category="doc">NVRAMモジュール/ NVRAM DIMM-FAS9500を交換してください</block>
+  <block id="140a295824b1023b2fcf1ac1414fc56b" category="paragraph">とNVRAM DIMMを交換するには、NVRAMモジュールをシャーシから取り外し、モジュール内の障害が発生したDIMMを交換してから、NVRAMモジュールを再度取り付ける必要があります。</block>
+  <block id="566dc57c04b76274e7168e53e1eea041" category="list-text">障害ノードとは、メンテナンスを実行しているノードです。</block>
+  <block id="350cecd9af7d98cbf31c22fbd46e60fe" category="list-text">正常なノードとは、障害ノードの HA パートナーです。</block>
+  <block id="821b1e6be57f410ab68ac2071fc04df4" category="doc">NVRAM11バッテリを搭載したデステージコントロール電源モジュールFAS9500を交換してください</block>
+  <block id="1aa73ef56da88752323de5876f9b3750" category="doc">電源装置FAS9500を交換します</block>
+  <block id="70ebba1c8f978f26a3ed9799176dd8a9" category="doc">コントローラモジュールFAS9500を交換してください</block>
+  <block id="0b69ae5dbb558a62f47c8962baf19909" category="list-text">MetroCluster 構成のシステムの場合は、を参照してください<block ref="2a021072247e4cc2397c2bcdaab4e2b0" category="inline-link-rx"></block> この手順の使用が必要かどうかを判断するには、次の手順を実行</block>
+  <block id="c60c00789a015e4c8edc176d68ea53c2" category="list-text">この手順では、ブートデバイスを障害ノードから交換用ノードに移動して、交換用ノードが古いコントローラモジュールと同じバージョンの ONTAP でブートするようにします。</block>
+  <block id="fd6012123eb1d03462c1cd48d50c92e6" category="list-text">障害ノードとは、交換するノードです。</block>
+  <block id="9e51ab12d26faade2a31d70da71c74f5" category="list-text">交換用ノードとは、障害ノードに代わる新しいノードです。</block>
+  <block id="537af5095a4992ae7e9026bd3ff008a6" category="list-text">正常なノードとはサバイバーノードです。</block>
+  <block id="c704a060606b2944e3c331124aaaa743" category="doc">詳細な手順- FAS9500</block>
+  <block id="babff6765c503db416f9aad69aec82a2" category="inline-image-macro">幅= 85px</block>
+  <block id="6cb216de48e8994ccb0a6c7cbc427e02" category="cell"><block ref="6cb216de48e8994ccb0a6c7cbc427e02" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="32a6e642c9cd7b5239fed7deb8d11082" category="image-alt">OIEケーブル100 GbE qsfp28</block>
+  <block id="9a7819d4ddc611b1438c0a7f4633f619" category="image-alt">OIEケーブルミニSAS HDからミニSAS HD</block>
+  <block id="47138f998237cc4fa9d1dde4218e6a79" category="image-alt">OIEケーブルマイクロUSB</block>
+  <block id="c08fd160f4570df01d3a40efa2524ce7" category="image-alt">OIEケーブル電源</block>
+  <block id="92688677e16c8790a606404e51b362d1" category="image-alt">DRW 9500リフティングアイコン</block>
+  <block id="0604808a9f6264877dad5ce927edb94f" category="image-alt">DRW 9500ケーブルマネジメントアーム</block>
+  <block id="fd2cb99acafb4f0144bfb5e0e4c31373" category="admonition">コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。カチッと音がしない場合は、コネクタを取り外し、裏返してもう一度試してください。</block>
+  <block id="3bdc20d60c6095f8c752a75e72777feb" category="doc">システムとFAS9500をケーブルで再接続します</block>
+  <block id="580fe6e7e310b3db810754c7c7927744" category="list-text">_replacement _node が Maintenance モード ( プロンプトに *&gt;` が表示されている ) の場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます</block>
+  <block id="fbe06d7223609c920831e2dffe0e0a96" category="list-text">_replacement _node コンソールに Waiting for giveback... というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show</block>
+  <block id="a138242d674238dc6089a602c6c8909b" category="list-text">ギブバックが完了したら、 HA ペアが正常でテイクオーバーが可能であることを確認します。 storage failover show</block>
+  <block id="f2c155633ff38e4e2d070e9d244a9074" category="doc">ハードウェアFAS9500の移行と交換</block>
+  <block id="68828ed4b0036df85ace8abb1ad7c137" category="doc">構成をリストアおよび検証します。FAS9500</block>
+  <block id="de94b6a2b38d310a993cae18e6a797fe" category="paragraph">問題 コマンド：'node::&gt; cluster ha modify -configured true `node::&gt; storage failover modify -node node0 -enabled true</block>
+  <block id="0efaf93a941de2d7943b578a71c531e5" category="paragraph">問題 このコマンド:`node::&gt; storage failover modify -node node0 -enabled true ``</block>
+  <block id="ca44994b81cf73317bcdf6088f5dae8f" category="list-text"><block ref="ca44994b81cf73317bcdf6088f5dae8f" category="inline-link-macro-rx"></block></block>
+  <block id="bfd64d4015631c5c2c0c4db3a0badb51" category="list-text"><block ref="bfd64d4015631c5c2c0c4db3a0badb51" category="inline-link-macro-rx"></block></block>
+  <block id="f15e9fe5ff90a0ec8840f664bb40c138" category="list-text"><block ref="f15e9fe5ff90a0ec8840f664bb40c138" category="inline-link-macro-rx"></block></block>
+  <block id="b139dc4b4943474860d7b90b369c2b27" category="doc">ビデオの手順- FAS9500</block>
+  <block id="3a1bdb9a053493a7e1c1e62e796f32e6" category="doc">ブートメディアFAS9500を交換してください</block>
+  <block id="3e5fda4bdb63c28cc3aa53cadbde1129" category="doc">DIMM-FAS9500を交換します</block>
+  <block id="6a58b2807f942e88a255882209bad046" category="sidebar">キャッシングモジュールのホットスワップ</block>
+  <block id="3867a4f17cad66bc9a480e8ad7b9ae3c" category="paragraph">endif::[]</block>
 </blocks>

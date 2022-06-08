@@ -15,14 +15,14 @@ summary: 障害のあるコントローラをシャットダウンしてオン�
 
 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にして、実行中の ONTAP のバージョンを確認する必要があります。
 
-ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["CLI での NetApp Encryption の概要"]。
+ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["CLI での NetApp Encryption の概要"^]。
 
 .手順
 . 障害のあるコントローラのステータスを確認します。
 +
 ** 障害のあるコントローラがログインプロンプトに表示されている場合は 'admin' としてログインします
 ** 障害のあるコントローラが LOADER プロンプトに表示され、 HA 構成の一部である場合は、正常なコントローラに「 admin 」としてログインします。
-** 障害のあるコントローラがスタンドアロン構成で LOADER プロンプトが表示されている場合は、にお問い合わせください link:http://mysupport.netapp.com/["mysupport.netapp.com"]。
+** 障害のあるコントローラがスタンドアロン構成で LOADER プロンプトが表示されている場合は、にお問い合わせください link:http://mysupport.netapp.com/["mysupport.netapp.com"^]。
 
 
 . AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
@@ -88,7 +88,7 @@ NOTE: ONTAP 9.6 リリース以降では、キー管理ツールのタイプが�
 コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。
 
 +
-http://mysupport.netapp.com/["mysupport.netapp.com"]
+http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
 ... すべての認証キーについて 'restored' カラムが 'yes' になっていることを確認しますつまり 'security key-manager key-query' です
 ... 障害のあるコントローラをシャットダウンします。
@@ -99,7 +99,7 @@ http://mysupport.netapp.com/["mysupport.netapp.com"]
 ... onboard security key-manager sync コマンド「 security key-manager sync 」を入力します
 +
 
-NOTE: プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。 http://mysupport.netapp.com/["mysupport.netapp.com"]
+NOTE: プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。 http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
 ... すべての認証キーについて 'restored' カラムに yes と表示されていることを確認します security key-manager key-query
 ... 「キーマネージャ」タイプに「 onboard 」と表示されていることを確認し、 OKM 情報を手動でバックアップします。
@@ -145,7 +145,7 @@ NOTE: ONTAP 9.6 リリース以降では、キー管理ツールのタイプが�
 コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。
 
 +
-http://mysupport.netapp.com/["mysupport.netapp.com"]
+http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
 ... すべての認証キーについて 'restored' カラムが 'yes' になっていることを確認しますつまり 'security key-manager key-query' です
 ... コントローラは安全にシャットダウンできます。
@@ -158,7 +158,7 @@ http://mysupport.netapp.com/["mysupport.netapp.com"]
 プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。
 
 +
-http://mysupport.netapp.com/["mysupport.netapp.com"]
+http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
 ... すべての認証キーについて 'restored' カラムに yes と表示されていることを確認します security key-manager key-query
 ... 「キーマネージャ」タイプに「 onboard 」と表示されていることを確認し、 OKM 情報を手動でバックアップします。

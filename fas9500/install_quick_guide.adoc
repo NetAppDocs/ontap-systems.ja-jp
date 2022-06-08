@@ -1,0 +1,18 @@
+---
+permalink: fas9500/install_quick_guide.html 
+sidebar: sidebar 
+keywords: FAS9500 
+summary: このトピックでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。 
+---
+= クイックステップ- FAS9500
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このトピックでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。ネットアップシステムのインストールに精通している場合は、このコンテンツを使用してください。
+
+設置およびセットアップ手順 _PDF ポスター：
+
+link:../media/PDF/June_2022_Rev-1_FAS9500_ISI.pdf["FAS9500のインストールとセットアップの手順書"^]
