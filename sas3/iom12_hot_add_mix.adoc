@@ -1,7 +1,7 @@
 ---
 permalink: sas3/iom12-hot-add-mix.html 
 sidebar: sidebar 
-keywords: addional, storage, hot-add, iom12, shelves, shelf, sas, shelves, shelf, module, iom6, mix, stack, hot-add iom12 sheles to a stack of iom6 shelves 
+keywords: additional, storage, hot-add, iom12, shelves, shelf, sas, shelves, shelf, module, iom6, mix, stack, hot-add iom12 shelves to a stack of iom6 shelves 
 summary: ストレージの追加が必要になった場合は、 IOM12 シェルフ（ IOM12 モジュールを搭載した SAS シェルフ）を IOM6 シェルフ（ IOM6 モジュールを搭載した SAS シェルフ）のスタックにホットアドできます。つまり、スタックを混在させることができます。 
 ---
 = IOM12 シェルフを IOM6 シェルフのスタックにホットアドします
@@ -345,6 +345,7 @@ CAUTION: * データアクセスが失われる可能性： * ドロワーを乱
 |===
 . 両方のレバーを内側に押してドライブドロワーを閉じます。
 . ディスクシェルフ内の各ドロワーについて、同じ手順を繰り返します。
+. 前面ベゼルを取り付けます。
 +
 .. 複数のディスクシェルフを設置する場合は、設置するディスクシェルフごとに前の手順を繰り返します。
 .. 各ディスクシェルフの電源装置を接続します。
