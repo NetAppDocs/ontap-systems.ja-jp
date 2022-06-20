@@ -6383,7 +6383,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-08 13:50:09 +0000">06/08/2022</time>
+    <time datetime="2022-06-20 13:51:25 +0000">06/20/2022</time>
     
   
 
@@ -6514,11 +6514,104 @@
 <div class="paragraph">
 <p>I/O モジュールが取り付けられていたスロットを記録しておいてください。</p>
 </div>
-</li>
-</ol>
+<div class="videoblock">
+<div class="title">アニメーション- I/Oモジュールの取り外し/取り付け</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_PCIe_module.svg" alt="DRW 9500がPCIeモジュールを取り外します">
+</div>
 </div>
 </li>
 </ol>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>文字と数字が記載された I/O カムラッチ</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="凡例アイコン 02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>ロックが完全に解除された I/O カムラッチ</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>I/O モジュールを脇へ置きます。</p>
+</li>
+<li>
+<p>交換用 I/O モジュールを I/O モジュールをスロットにそっと挿入し、文字と数字が記載された I/O カムラッチを上に押してモジュールを所定の位置にロックし、 I/O モジュールをシャーシに取り付けます。</p>
+</li>
+<li>
+<p>必要に応じて、 I/O モジュールにケーブルを再接続します。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-3-io-モジュールの交換後にコントローラをリブートします">手順 3 ： I/O モジュールの交換後にコントローラをリブートします</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I/O モジュールを交換したら、コントローラモジュールをリブートする必要があります。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>LOADERプロンプトからノードをリブートします。_BYE_note：これにより、PCIeカードおよびその他のコンポーネントが再初期化され、ノードがリブートされます。</p>
+</li>
+<li>
+<p>システムが、 40 GbE NIC またはオンボードポート上で 10 GbE クラスタインターコネクトおよびデータ接続をサポートするように構成されている場合、メンテナンスモードから「 nicadmin convert 」コマンドを使用して、これらのポートを 10 GbE 接続に変換します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+変換が完了したら必ずメンテナンスモードを終了してください。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>ノードを通常動作に戻します。 storage failover giveback -ofnode impaired_node_name</p>
+</li>
+<li>
+<p>自動ギブバックを無効にした場合は、再度有効にします。「 storage failover modify -node local-auto-giveback true 」</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-4-障害が発生したパーツをネットアップに返却する">手順 4 ：障害が発生したパーツをネットアップに返却する</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください <a href="https://mysupport.netapp.com/site/info/rma">"パーツの返品と交換"</a> 詳細については、を参照してください。</p>
 </div>
 </div>
 </div>

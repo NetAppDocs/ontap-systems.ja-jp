@@ -6383,7 +6383,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-08 13:50:09 +0000">06/08/2022</time>
+    <time datetime="2022-06-20 13:51:25 +0000">06/20/2022</time>
     
   
 
@@ -6392,7 +6392,7 @@
 
 <div id="preamble">
 <div class="sectionbody">
-<div class="paragraph">
+<div class="paragraph lead">
 <p>システムに I/O モジュールを追加するには、 NIC またはストレージアダプタをフル搭載システムの新しいアダプタに交換するか、新しい NIC またはストレージアダプタをシステムの空のシャーシスロットに追加します。</p>
 </div>
 <div class="ulist">
@@ -6602,9 +6602,115 @@
 <div class="paragraph">
 <p>I/O モジュールが取り付けられていたスロットを記録しておいてください。</p>
 </div>
+<div class="videoblock">
+<div class="title">アニメーション- I/Oモジュールの交換</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_PCIe_module.svg" alt="DRW 9500がPCIeモジュールを取り外します">
+</div>
+</div>
 </li>
 </ol>
 </div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>文字と数字が記載された I/O カムラッチ</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="凡例アイコン 02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>ロックが完全に解除された I/O カムラッチ</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>I/O モジュールをターゲットスロットに取り付けます。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>I/O モジュールをスロットの端に合わせます。</p>
+</li>
+<li>
+<p>文字と数字が記載された I/O カムラッチが I/O カムピンにかみ合うまで、 I/O モジュールをスロットにスライドさせます。</p>
+</li>
+<li>
+<p>I/O カムラッチを上に押してモジュールを所定の位置にロックします。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>コントローラ A の他のモジュールについても、取り外しと取り付けの手順を繰り返して交換します</p>
+</li>
+<li>
+<p>交換用 I/O モジュールが NIC の場合は、モジュールをデータスイッチにケーブル接続します。</p>
+</li>
+<li>
+<p>LOADER プロンプトからノードをリブートします： bye _</p>
+</li>
+<li>
+<p>パートナーノードからノードをギブバックします。storage failover giveback -ofnode target_node_name</p>
+</li>
+<li>
+<p>自動ギブバックを無効にした場合は、有効にします。「 storage failover modify -node local-auto-giveback true 」</p>
+</li>
+<li>
+<p>追加した場合：</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">I/O モジュールの種類</th>
+<th class="tableblock halign-left valign-top">作業</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>スロット 3 または 7 の NIC モジュール</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>各ポートには 'storage port modify -node * <em>&lt;node name&gt; <em>__port * _&lt;port name&gt; </em>_</em>-mode network ’コマンドを使用します</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>ストレージモジュール</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>の説明に従って、SASシェルフを設置してケーブル接続しますhttps://docs.netapp.com/us-en/ontap-systems/sas3/install-hot-add-shelf.html["SASシェルフのホットアド"^]。</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>コントローラ B について、上記の手順を繰り返します</p>
 </li>
 </ol>
 </div>

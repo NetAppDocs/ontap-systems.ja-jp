@@ -6392,7 +6392,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-08 13:50:09 +0000">06/08/2022</time>
+    <time datetime="2022-06-20 13:51:25 +0000">06/20/2022</time>
     
   
 
@@ -6401,7 +6401,7 @@
 
 <div id="preamble">
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>I/O モジュールを交換するには、特定の順序でタスクを実行する必要があります。</p>
 </div>
 <div class="ulist">
@@ -6419,7 +6419,7 @@
 <div class="sect1">
 <h2 id="手順-1-障害のあるコントローラをシャットダウンします">手順 1 ：障害のあるコントローラをシャットダウンします</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。</p>
 </div>
 <div class="exampleblock tabbed-block">
@@ -6427,7 +6427,7 @@
 <div class="openblock">
 <div class="title">オプション 1 ：ほとんどの構成</div>
 <div class="content">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。</p>
 </div>
 <div class="ulist">
@@ -6516,7 +6516,7 @@
 <div class="openblock">
 <div class="title">オプション 2 ：コントローラは 2 ノード MetroCluster に搭載されています</div>
 <div class="content">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをスイッチオーバーする必要があります。</p>
 </div>
 <div class="ulist">
@@ -6653,7 +6653,7 @@ aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirr
 <div class="sect1">
 <h2 id="手順-2-io-モジュールを交換します">手順 2 ： I/O モジュールを交換します</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>I/O モジュールを交換するには、シャーシ内で I/O モジュールの場所を確認し、特定の順序で手順を実行します。</p>
 </div>
 <div class="olist arabic">
@@ -6738,14 +6738,14 @@ aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirr
 <div class="sect1">
 <h2 id="手順-3-pcie-モジュールの交換後にコントローラをリブートします">手順 3 ： PCIe モジュールの交換後にコントローラをリブートします</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>PCIe モジュールを交換したら、コントローラモジュールをリブートする必要があります。</p>
 </div>
 <div class="olist arabic">
 <div class="title">手順</div>
 <ol class="arabic">
 <li>
-<p>ノードが LOADER プロンプトに表示されている場合は、ノードをブートし、システム ID が一致していないことを警告するプロンプトが表示されたら「 y' 」と入力して、システム ID の上書きを求めるプロンプトを表示します。「 bye</p>
+<p>LOADERプロンプトからノードをリブートします。_BYE_note：これにより、PCIeカードおよびその他のコンポーネントが再初期化され、ノードがリブートされます。</p>
 </li>
 <li>
 <p>システムが、 40 GbE NIC またはオンボードポート上で 10 GbE クラスタインターコネクトおよびデータ接続をサポートするように構成されている場合、メンテナンスモードから「 nicadmin convert 」コマンドを使用して、これらのポートを 10 GbE 接続に変換します。</p>
@@ -6763,52 +6763,31 @@ aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirr
 </div>
 </li>
 <li>
-<p>ノードを通常動作に戻します。</p>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">システムの構成</th>
-<th class="tableblock halign-left valign-top">問題パートナーコンソールからのコマンド</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>HA ペア</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>「 storage failover giveback -ofnode _impaired_node_name _</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>2 ノード MetroCluster 構成</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>次の手順に進みます。</p>
-</div>
-<div class="paragraph">
-<p>MetroCluster スイッチバック手順は、交換プロセスの次のタスクで実行します。</p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
+<p>ノードを通常動作に戻します。storage failover giveback -ofnode impaired_node_name _</p>
 </li>
 <li>
 <p>自動ギブバックを無効にした場合は、再度有効にします。「 storage failover modify -node local-auto-giveback true 」</p>
 </li>
 </ol>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+システムが2ノードMetroCluster 構成の場合は、次の手順で説明するようにアグリゲートをスイッチバックする必要があります。
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="手順-4-2-ノード-metrocluster-構成のアグリゲートをスイッチバックする">手順 4 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>2 ノード MetroCluster 構成で FRU の交換が完了したら、 MetroCluster スイッチバック処理を実行できます。これにより構成が通常の動作状態に戻ります。また、障害が発生していたサイトの同期元 Storage Virtual Machine （ SVM ）がアクティブになり、ローカルディスクプールからデータを提供します。</p>
 </div>
 <div class="paragraph">
@@ -6883,7 +6862,7 @@ Remote: cluster_A configured      		normal</pre>
 <div class="sect1">
 <h2 id="手順-5-障害が発生したパーツをネットアップに返却する">手順 5 ：障害が発生したパーツをネットアップに返却する</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください <a href="https://mysupport.netapp.com/site/info/rma">"パーツの返品と交換"</a> 詳細については、を参照してください。</p>
 </div>
 </div>

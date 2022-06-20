@@ -6383,7 +6383,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-08 13:50:09 +0000">06/08/2022</time>
+    <time datetime="2022-06-20 13:51:25 +0000">06/20/2022</time>
     
   
 
@@ -6508,8 +6508,564 @@
 </li>
 <li>
 <p>カムハンドルのテラコッタボタンを下にスライドさせてロックを解除します。</p>
+<div class="videoblock">
+<div class="title">アニメーション-コントローラを取り外します</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_PCM.svg" alt="DRW 9500がPCMを削除しました">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>カムハンドルのリリースボタン</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="凡例アイコン 02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>カムハンドル</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>カムハンドルを回転させて、コントローラモジュールをシャーシから完全に外し、コントローラモジュールをシャーシから引き出します。</p>
+<div class="paragraph">
+<p>このとき、空いている手でコントローラモジュールの底面を支えてください。</p>
+</div>
+</li>
+<li>
+<p>コントローラモジュールのふた側を上にして、平らで安定した場所に置きます。カバーの青いボタンを押し、コントローラモジュールの背面にカバーをスライドさせてから、カバーを上に動かしてコントローラモジュールから外します。</p>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_PCM_open.svg" alt="DRW 9500 PCMが開いています">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>コントローラモジュールのカバーの固定ボタン</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </li>
 </ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-3-dimm-を交換します">手順 3 ： DIMM を交換します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>DIMM を交換するには、コントローラ内で DIMM の場所を確認し、特定の手順を実行します。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>接地対策がまだの場合は、自身で適切に実施します。</p>
+</li>
+<li>
+<p>コントローラモジュールで DIMM の場所を確認します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+各システムメモリ DIMM の LED は、ボード上の各 DIMM スロットの横にあります。障害が発生した場合は、 LED が 2 秒ごとに点滅します。
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_DIMM_map.svg" alt="DRW 9500 DIMMマップ">
+</div>
+</div>
+</li>
+<li>
+<p>DIMM の両側にある 2 つのツメをゆっくり押し開いて DIMM をスロットから外し、そのままスライドさせてスロットから取り出します。</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/important.svg" alt="重要">
+</td>
+<td class="content">
+DIMM 回路基板のコンポーネントに力が加わらないように、 DIMM の両端を慎重に持ちます。
+</td>
+</tr>
+</table>
+</div>
+<div class="videoblock">
+<div class="title">アニメーション- DIMMを交換します</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=d62a4c7c-8296-4d60-9981-ae78004b36f7" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_replace_PCM_dimms.svg" alt="DRW 9500はPCM DIMMの代わりに使用されます">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>DIMM のツメ</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="凡例アイコン 02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>DIMM</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>交換用 DIMM を静電気防止用の梱包バッグから取り出し、 DIMM の端を持ってスロットに合わせます。</p>
+<div class="paragraph">
+<p>DIMM のピンの間にある切り欠きを、ソケットの突起と揃える必要があります。</p>
+</div>
+</li>
+<li>
+<p>コネクタにある DIMM のツメが開いた状態になっていることを確認し、 DIMM をスロットに対して垂直に挿入します。</p>
+<div class="paragraph">
+<p>DIMM のスロットへの挿入にはある程度の力が必要です。簡単に挿入できない場合は、 DIMM をスロットに正しく合わせてから再度挿入してください。</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/important.svg" alt="重要">
+</td>
+<td class="content">
+DIMM がスロットにまっすぐ差し込まれていることを目で確認してください。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>DIMM の両端のノッチにツメがかかるまで、 DIMM の上部を慎重にしっかり押し込みます。</p>
+</li>
+<li>
+<p>コントローラモジュールのカバーを閉じます。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-4-コントローラを取り付ける">手順 4 ：コントローラを取り付ける</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>コンポーネントをコントローラモジュールに取り付けたら、コントローラモジュールをシステムシャーシに取り付け直してオペレーティングシステムをブートする必要があります。</p>
+</div>
+<div class="paragraph">
+<p>2 台のコントローラモジュールを同じシャーシに搭載する HA ペアでは、シャーシへの設置が完了すると同時にリブートが試行されるため、コントローラモジュールの取り付け順序が特に重要です。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>接地対策がまだの場合は、自身で適切に実施します。</p>
+</li>
+<li>
+<p>コントローラモジュールのカバーをまだ取り付けていない場合は取り付けます。</p>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_PCM_open.svg" alt="DRW 9500 PCMが開いています">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>コントローラモジュールのカバーの固定ボタン</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>コントローラモジュールの端をシャーシの開口部に合わせ、コントローラモジュールをシステムに半分までそっと押し込みます。</p>
+<div class="videoblock">
+<div class="title">アニメーション-コントローラを取り付けます</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=f2aa14b4-0d95-4109-b410-ae78004b35c9" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_PCM.svg" alt="DRW 9500がPCMを削除しました">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>カムハンドルのリリースボタン</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="凡例アイコン 02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>カムハンドル</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+指示があるまでコントローラモジュールをシャーシに完全に挿入しないでください。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>システムにアクセスして以降のセクションのタスクを実行できるように、管理ポートとコンソールポートのみをケーブル接続します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+残りのケーブルは、この手順の後半でコントローラモジュールに接続します。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>コントローラモジュールの再取り付けを完了します。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>ケーブルマネジメントデバイスをまだ取り付けていない場合は、取り付け直します。</p>
+</li>
+<li>
+<p>コントローラモジュールをシャーシに挿入し、ミッドプレーンまでしっかりと押し込んで完全に装着します。</p>
+<div class="paragraph">
+<p>コントローラモジュールが完全に装着されると、ロックラッチが上がります。</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/important.svg" alt="重要">
+</td>
+<td class="content">
+コネクタの破損を防ぐため、コントローラモジュールをスライドしてシャーシに挿入する際に力を入れすぎないでください。
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>コントローラモジュールは、シャーシに完全に装着されるとすぐにブートを開始します。ブートプロセスを中断できるように準備しておきます。</p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>ロックラッチを上に回転させてロックピンが外れるように傾け、ロックされるまで下げます。</p>
+</li>
+<li>
+<p>起動メニューに Ctrl+C キーを押して ' 起動プロセスを中断します</p>
+</li>
+<li>
+<p>表示されたメニューからメンテナンスモードでブートするオプションを選択します。</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-5-システムレベルの診断を実行します">手順 5 ：システムレベルの診断を実行します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>新しい DIMM を取り付けたら、診断を実行する必要があります。</p>
+</div>
+<div class="paragraph">
+<p>システムレベルの診断を開始するには、システムに LOADER プロンプトが表示されている必要があります。</p>
+</div>
+<div class="paragraph">
+<p>診断手順のコマンドは、すべてコンポーネントを交換するノードから実行します。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>作業をするノードに LOADER プロンプトが表示されていない場合は、次の手順を実行します。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>表示されたメニューからメンテナンスモードオプションを選択します。</p>
+</li>
+<li>
+<p>ノードが保守モードでブートしたら ' ノードを停止します</p>
+<div class="paragraph">
+<p>コマンドを問題したら、システムが LOADER プロンプトで停止するまで待ちます。</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/important.svg" alt="重要">
+</td>
+<td class="content">
+起動プロセス中に 'y' とプロンプトを安全に入力できます
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>HA 構成でメンテナンスモードに切り替えたときに表示される、正常なノードが停止したままであることの確認を求めるプロンプト。</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>LOADER プロンプトで、システムレベルの診断用に特別に設計されたドライバ「 boot_diags 」にアクセスします</p>
+<div class="paragraph">
+<p>ブート・プロセス中に 'Maintenance] モードのプロンプト（ *&gt; ）が表示されるまで 'y とプロンプトを入力しても安全です</p>
+</div>
+</li>
+<li>
+<p>システムメモリの診断を実行します。 'lddiag device run -dev mem'</p>
+</li>
+<li>
+<p>DIMM の交換が原因でハードウェアの問題が発生していないことを確認します。 'lddiag device status -dev mem-long-state failed</p>
+<div class="paragraph">
+<p>テストに失敗した場合は、プロンプトに戻ります。失敗した場合は、そのステータスがすべて表示されます。</p>
+</div>
+</li>
+<li>
+<p>前述の手順の結果に応じて、次に進みます。</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">システムレベルの診断のテスト結果</th>
+<th class="tableblock halign-left valign-top">作業</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>は失敗なしで完了しました</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>ステータスログ「 <code>diag device clearstatus</code> 」を消去します</p>
+</li>
+<li>
+<p>ログがクリアされたことを確認します。「 diag device status 」</p>
+<div class="paragraph">
+<p>次のデフォルトの応答が表示されます。</p>
+</div>
+<div class="paragraph">
+<p>SLDIAG ：ログメッセージが存在しません。</p>
+</div>
+</li>
+<li>
+<p>保守モードを終了します :halt</p>
+<div class="paragraph">
+<p>ノードに LOADER プロンプトが表示されます。</p>
+</div>
+</li>
+<li>
+<p>LOADER プロンプトからノードをブートします。 bye</p>
+</li>
+<li>
+<p>ノードを通常動作に戻します。</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">ノードの構成</th>
+<th class="tableblock halign-left valign-top">作業</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>HA ペア</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>ギブバックを実行します。「 storage failover giveback -ofnode replacement_node_name 」</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+自動ギブバックを無効にした場合は、 storage failover modify コマンドを使用して再度有効にします。
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>テストが失敗しました</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>問題の原因を特定します。</p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>保守モードを終了します :halt</p>
+<div class="paragraph">
+<p>コマンドを問題したら、システムが LOADER プロンプトで停止するまで待ちます。</p>
+</div>
+</li>
+<li>
+<p>システムレベルの診断を実行するための考慮事項をすべて確認するとともに、ケーブルがしっかりと接続されているか、ハードウェアコンポーネントがストレージシステムに適切に取り付けられているかを確認します。</p>
+</li>
+<li>
+<p>対象となるコントローラモジュールをブートし、ブートメニューを表示するよう求められたら Ctrl+C キーを押してブートを中断します。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>シャーシ内にコントローラモジュールが 2 つある場合は、対象となるコントローラモジュールをシャーシに完全に取り付けます。</p>
+<div class="paragraph">
+<p>コントローラモジュールを完全に取り付けると、モジュールがブートします。</p>
+</div>
+</li>
+<li>
+<p>シャーシ内にコントローラモジュールが 1 つしかない場合は、電源装置を接続して電源をオンにします。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>メニューから、メンテナンスモードでのブートを選択します。</p>
+</li>
+<li>
+<p>次のコマンドを入力して保守モードを終了します :halt</p>
+<div class="paragraph">
+<p>コマンドを問題したら、システムが LOADER プロンプトで停止するまで待ちます。</p>
+</div>
+</li>
+<li>
+<p>システムレベルの診断テストを再実行します。</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-6-障害が発生したパーツをネットアップに返却する">手順 6 ：障害が発生したパーツをネットアップに返却する</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください <a href="https://mysupport.netapp.com/site/info/rma">"パーツの返品と交換"</a> 詳細については、を参照してください。</p>
 </div>
 </div>
 </div>

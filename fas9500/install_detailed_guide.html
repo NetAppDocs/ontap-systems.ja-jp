@@ -6383,7 +6383,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-08 13:50:09 +0000">06/08/2022</time>
+    <time datetime="2022-06-20 13:51:25 +0000">06/20/2022</time>
     
   
 
@@ -6748,6 +6748,930 @@
 <ol class="arabic">
 <li>
 <p>アニメーションや図を使用して、コントローラとスイッチをケーブルで接続します。</p>
+<div class="videoblock">
+<div class="title">アニメーション- 2ノードスイッチレスクラスタのケーブル配線</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=da08295f-ba8c-4de7-88c3-ae7c0170408d" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_tnsc_network_cabling.svg" alt="DRW 9500 TNSCネットワークケーブル接続">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">ステップ</th>
+<th class="tableblock halign-left valign-top">各コントローラでを実行します</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/oie_legend_icon_1_lg.svg" alt="OIEの凡例アイコン1LG">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>クラスタインターコネクトポートをケーブル接続します。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>スロット A4 および B4 （ e4A ）</p>
+</li>
+<li>
+<p>スロット A8 および B8 （ e8a ）</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/oie_cable100_gbe_qsfp28.svg" alt="OIEケーブル100 GbE qsfp28">
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/oie_legend_icon_2_lp.svg" alt="OIE の凡例アイコン 2 LP">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>コントローラ管理（レンチマーク）ポートをケーブル接続します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/oie_cable_rj45.svg" alt="OIE ケーブル RJ45">
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/oie_legend_icon_3_o.svg" alt="OIE の凡例アイコン 3 o">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>32Gb FCネットワークスイッチをケーブル接続</p>
+</div>
+<div class="paragraph">
+<p>スロットA3およびB3（e3aおよびe3c）およびスロットA9およびB9（e9aおよびe9c）のポートは、32Gb FCネットワークスイッチに接続されます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/oie_cable_sfp_gbe_copper.svg" alt="OIE ケーブル SFP GbE 銅線">
+</div>
+</div>
+<div class="paragraph">
+<p>40GbE ホストネットワークスイッチ：</p>
+</div>
+<div class="paragraph">
+<p>ホスト側の b ポートをスロット A4 と B4 （ e4b ）に接続し、スロット A8 と B8 （ e8b ）をホストスイッチに接続します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/oie_cable100_gbe_qsfp28.svg" alt="OIEケーブル100 GbE qsfp28">
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/oie_legend_icon_4_dr.svg" alt="OIE の凡例アイコン 4 DR">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>25GbEケーブル接続：</p>
+</div>
+<div class="paragraph">
+<p>スロットA5とB5（5a、5b、5c、5d）およびスロットA7とB7（7a、7b、7c、7d）のポートを25GbEネットワークスイッチにケーブル接続します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/oie_cable_sfp_gbe_copper.svg" alt="OIE ケーブル SFP GbE 銅線">
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。</p>
+</li>
+<li>
+<p>ケーブルをケーブルマネジメントアームにストラップで固定します（図はなし）。</p>
+</li>
+<li>
+<p>ストレージをケーブル接続するには、を参照してください <a href="#Step 4: Cable controllers to drive shelves">[Step 4: Cable controllers to drive shelves]</a>。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">オプション 2 ：スイッチクラスタ</div>
+<div class="content">
+<div class="paragraph">
+<p>コントローラの管理ネットワークポート、データネットワークポート、および管理ポートは、スイッチに接続されます。クラスタインターコネクト / HA ポートは、クラスタ / HA スイッチにケーブル接続されます。</p>
+</div>
+<div class="paragraph">
+<p>システムとスイッチの接続に関する情報を、ネットワーク管理者に確認しておく必要があります。</p>
+</div>
+<div class="paragraph">
+<p>ケーブルをポートに差し込む際は、ケーブルのプルタブの向きを確認してください。ケーブルのプルタブは、すべてのネットワーキングモジュールポートで上向きになっています。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/oie_cable_pull_tab_up.svg" alt="OIE ケーブルのプルタブを上にします">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。カチッと音がしない場合は、コネクタを取り外し、裏返してもう一度試してください。
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>アニメーションや図を使用して、コントローラとスイッチをケーブルで接続します。</p>
+<div class="videoblock">
+<div class="title">アニメーションスイッチを使用したクラスタのケーブル接続</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=3ad3f118-8339-4683-865f-ae7c0170400c" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_switched_network_cabling.svg" alt="DRW 9500スイッチドネットワークのケーブル配線">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">ステップ</th>
+<th class="tableblock halign-left valign-top">各コントローラでを実行します</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/oie_legend_icon_1_lg.svg" alt="OIEの凡例アイコン1LG">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>クラスタインターコネクト A ポートをケーブル接続します。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>スロット A4 と B4 （ e4A ）をクラスタネットワークスイッチに接続します。</p>
+</li>
+<li>
+<p>スロット A8 と B8 （ e8a ）をクラスタネットワークスイッチに接続します。</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/oie_cable100_gbe_qsfp28.svg" alt="OIEケーブル100 GbE qsfp28">
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/oie_legend_icon_2_lp.svg" alt="OIE の凡例アイコン 2 LP">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>コントローラ管理（レンチマーク）ポートをケーブル接続します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/oie_cable_rj45.svg" alt="OIE ケーブル RJ45">
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/oie_legend_icon_3_o.svg" alt="OIE の凡例アイコン 3 o">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>32Gb FCネットワークスイッチをケーブル接続</p>
+</div>
+<div class="paragraph">
+<p>スロットA3およびB3（e3aおよびe3c）およびスロットA9およびB9（e9aおよびe9c）のポートは、32Gb FCネットワークスイッチに接続されます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/oie_cable_sfp_gbe_copper.svg" alt="OIE ケーブル SFP GbE 銅線">
+</div>
+</div>
+<div class="paragraph">
+<p>40GbE ホストネットワークスイッチ：</p>
+</div>
+<div class="paragraph">
+<p>ホスト側の b ポートをスロット A4 と B4 （ e4b ）に接続し、スロット A8 と B8 （ e8b ）をホストスイッチに接続します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/oie_cable100_gbe_qsfp28.svg" alt="OIEケーブル100 GbE qsfp28">
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/oie_legend_icon_4_dr.svg" alt="OIE の凡例アイコン 4 DR">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>25GbE接続用ケーブル：</p>
+</div>
+<div class="paragraph">
+<p>スロットA5とB5（5a、5b、5c、5d）およびスロットA7とB7（7a、7b、7c、7d）のポートを25GbEネットワークスイッチにケーブル接続します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/oie_cable_sfp_gbe_copper.svg" alt="OIE ケーブル SFP GbE 銅線">
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。</p>
+</li>
+<li>
+<p>ケーブルをケーブルマネジメントアームにストラップで固定します（図はなし）。</p>
+</li>
+<li>
+<p>ストレージをケーブル接続するには、を参照してください <a href="#Step 4: Cable controllers to drive shelves">[Step 4: Cable controllers to drive shelves]</a>。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-4-コントローラをドライブシェルフにケーブル接続する">手順 4 ：コントローラをドライブシェルフにケーブル接続する</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>シェルフ / シェルフ間をケーブル接続してから、両方のコントローラを DS212C または DS224C ドライブシェルフにケーブル接続する必要があります。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+SASケーブル接続の詳細とワークシートについては、を参照してください <a href="https://docs.netapp.com/us-en/ontap-systems/sas3/overview-cabling-rules-examples.html" target="_blank" rel="noopener">"SAS ケーブル接続ルール、ワークシート、および例 - IOM12 モジュールを搭載したシェルフ"</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<div class="title">作業を開始する前に</div>
+<ul>
+<li>
+<p>ご使用のシステムのSASケーブル接続ワークシートに記入します。を参照してください <a href="https://docs.netapp.com/us-en/ontap-systems/sas3/overview-cabling-rules-examples.html" target="_blank" rel="noopener">"SAS ケーブル接続ルール、ワークシート、および例 - IOM12 モジュールを搭載したシェルフ"</a>。</p>
+</li>
+<li>
+<p>図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。ストレージモジュールのケーブルのプルタブは上向き、シェルフのプルタブは下向きです。</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/oie_cable_pull_tab_up.svg" alt="OIE ケーブルのプルタブを上にします">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/oie_cable_pull_tab_down.svg" alt="OIE ケーブルのプルタブを下に引きます">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。カチッと音がしない場合は、コネクタを取り外し、裏返してもう一度試してください。
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>次のアニメーションや図を使用して、コントローラを3台のDS224Cドライブシェルフ（1台のドライブシェルフのスタックと2台のドライブシェルフのスタック1台）にケーブル接続します。</p>
+<div class="videoblock">
+<div class="title">アニメーション-ドライブシェルフのケーブル接続</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=c958aae6-9d08-4d3d-a213-ae7c017040cd" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_sas_shelf_cabling.svg" alt="DRW 9500 SASシェルフのケーブル接続">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">ステップ</th>
+<th class="tableblock halign-left valign-top">各コントローラでを実行します</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/oie_legend_icon_1_mb.svg" alt="OIEの凡例アイコン1 MB">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>図を参照しながら、ドライブシェルフスタック1をコントローラに接続します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg" alt="OIEケーブルミニSAS HDからミニSAS HD">
+</div>
+</div>
+<div class="paragraph">
+<p>Mini-SASケーブル</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/oie_legend_icon_2_t.svg" alt="OIEの凡例アイコン2 t">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>図を参照しながら、ドライブシェルフスタック2をコントローラに接続します。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg" alt="OIEケーブルミニSAS HDからミニSAS HD">
+</div>
+</div>
+<div class="paragraph">
+<p>Mini-SASケーブル</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>システムのセットアップを完了するには、を参照してください <a href="#Step 5: Complete system setup and configuration">[Step 5: Complete system setup and configuration]</a>。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-5-システムのセットアップと設定を完了する">手順 5 ：システムのセットアップと設定を完了する</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>システムのセットアップと設定を実行するには、スイッチとラップトップのみを接続してクラスタ検出を使用するか、システムのコントローラに直接接続してから管理スイッチに接続します。</p>
+</div>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">オプション 1 ：ネットワーク検出が有効になっている場合</div>
+<div class="content">
+<div class="paragraph">
+<p>ラップトップでネットワーク検出が有効になっている場合は、クラスタの自動検出を使用してシステムのセットアップと設定を実行できます。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>次のアニメーションまたは図を使用して、 1 つ以上のドライブシェルフ ID を設定します。</p>
+<div class="videoblock">
+<div class="title">アニメーション-シェルフIDの設定</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_power-on_set_shelf_ID_set.svg" alt="DRW 電源オンセットシェルフ ID セット">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>エンドキャップを取り外す。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="凡例アイコン 02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1 桁目の数字が点滅するまでシェルフ ID ボタンを押し続けたら、 0~9 に進みます。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+1桁目の数字は点滅し続けます
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_03.svg" alt="凡例アイコン 03">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>2 桁目の数字が点滅するまでシェルフ ID ボタンを押し続けたら、 0~9 に進みます。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+1桁目の数字の点滅が停止し、2桁目の数字が点滅し続けます。
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_04.svg" alt="凡例アイコン04">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>エンドキャップを取り付けます。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_05.svg" alt="凡例アイコン05">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>オレンジの LED が点灯するまで 10 秒間待ちます (!) 。 表示されるようにするには、ドライブシェルフの電源を再投入してシェルフ ID を設定します。</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。</p>
+</li>
+<li>
+<p>両方のノードの電源スイッチをオンにします。</p>
+<div class="videoblock">
+<div class="title">アニメーション-コントローラの電源をオンにします</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=a905e56e-c995-4704-9673-adfa0005a891" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_power-on.svg" alt="DRW 9500電源オン">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+初回のブートには最大 8 分かかる場合があります。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>ラップトップでネットワーク検出が有効になっていることを確認します。</p>
+<div class="paragraph">
+<p>詳細については、ラップトップのオンラインヘルプを参照してください。</p>
+</div>
+</li>
+<li>
+<p>次のアニメーションに従って、ラップトップを管理スイッチに接続します。</p>
+<div class="videoblock">
+<div class="title">アニメーション-ラップトップを管理スイッチに接続します</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/dwr_laptop_to_switch_only.svg" alt="DWR ラップトップをスイッチのみに接続します">
+</div>
+</div>
+</li>
+<li>
+<p>検出する ONTAP アイコンを選択します。</p>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_autodiscovery_controler_select.svg" alt="DRW 自動検出コントローラ選択">
+</div>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>エクスプローラを開きます。</p>
+</li>
+<li>
+<p>左側のペインで、 [Network] ( ネットワーク ) をクリックします。</p>
+</li>
+<li>
+<p>右クリックして、更新を選択します。</p>
+</li>
+<li>
+<p>いずれかの ONTAP アイコンをダブルクリックし、画面に表示された証明書を受け入れます。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+「 XXXXX 」は、ターゲットノードのシステムシリアル番号です。
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>System Manager が開きます。</p>
+</div>
+</li>
+<li>
+<p>System Manager のセットアップガイドを使用して、で収集したデータを基にシステムを設定します <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613" target="_blank" rel="noopener">"『 ONTAP 構成ガイド』"</a>。</p>
+</li>
+<li>
+<p>アカウントを設定して Active IQ Config Advisor をダウンロードします。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>既存のアカウントにログインするか、アカウントを作成します。</p>
+<div class="paragraph">
+<p><a href="https://mysupport.netapp.com/eservice/public/now.do" target="_blank" rel="noopener">"ネットアップサポート登録"</a></p>
+</div>
+</li>
+<li>
+<p>システムを登録します。</p>
+<div class="paragraph">
+<p><a href="https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct" target="_blank" rel="noopener">"ネットアップ製品登録"</a></p>
+</div>
+</li>
+<li>
+<p>Active IQ Config Advisor をダウンロードします。</p>
+<div class="paragraph">
+<p><a href="https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor" target="_blank" rel="noopener">"ネットアップのダウンロード： Config Advisor"</a></p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Config Advisor を実行してシステムの健全性を確認します。</p>
+</li>
+<li>
+<p>初期設定が完了したら、に進みます <a href="https://www.netapp.com/data-management/oncommand-system-documentation/" target="_blank" rel="noopener">"ONTAP &amp; ONTAP システムマネージャのマニュアルリソース"</a> ONTAP での追加機能の設定については、ページを参照してください。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">オプション 2 ：ネットワーク検出が有効になっていない場合</div>
+<div class="content">
+<div class="paragraph">
+<p>Windows または Mac ベースのラップトップやコンソールを使用していない場合、または自動検出が有効になっていない場合は、このタスクで設定とセットアップを実行する必要があります。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>ラップトップまたはコンソールをケーブル接続して設定します。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>ラップトップまたはコンソールのコンソールポートを、 115 、 200 ボー、 N-8-1 に設定します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+コンソールポートの設定方法については、ラップトップまたはコンソールのオンラインヘルプを参照してください。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>システム付属のコンソールケーブルを使用してラップトップまたはコンソールにコンソールケーブルを接続し、ラップトップを管理サブネット上のスイッチに接続します。</p>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_cable_console_switch_controller.svg" alt="DRW 9500ケーブルコンソールスイッチコントローラ">
+</div>
+</div>
+</li>
+<li>
+<p>管理サブネット上の TCP / IP アドレスをラップトップまたはコンソールに割り当てます。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>次のアニメーションに従って、 1 つ以上のドライブシェルフ ID を設定します。</p>
+<div class="videoblock">
+<div class="title">アニメーション-シェルフIDの設定</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_power-on_set_shelf_ID_set.svg" alt="DRW 電源オンセットシェルフ ID セット">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>エンドキャップを取り外す。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="凡例アイコン 02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1 桁目の数字が点滅するまでシェルフ ID ボタンを押し続けたら、 0~9 に進みます。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+1桁目の数字は点滅し続けます
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_03.svg" alt="凡例アイコン 03">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>2 桁目の数字が点滅するまでシェルフ ID ボタンを押し続けたら、 0~9 に進みます。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+1桁目の数字の点滅が停止し、2桁目の数字が点滅し続けます。
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_04.svg" alt="凡例アイコン04">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>エンドキャップを取り付けます。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_05.svg" alt="凡例アイコン05">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>オレンジの LED が点灯するまで 10 秒間待ちます (!) 。 表示されるようにするには、ドライブシェルフの電源を再投入してシェルフ ID を設定します。</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。</p>
+</li>
+<li>
+<p>両方のノードの電源スイッチをオンにします。</p>
+<div class="videoblock">
+<div class="title">アニメーション-コントローラの電源をオンにします</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=a905e56e-c995-4704-9673-adfa0005a891" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_power-on.svg" alt="DRW 9500電源オン">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+初回のブートには最大 8 分かかる場合があります。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>いずれかのノードに初期ノード管理 IP アドレスを割り当てます。</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">管理ネットワークでの DHCP の状況</th>
+<th class="tableblock halign-left valign-top">作業</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>を設定します</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>新しいコントローラに割り当てられた IP アドレスを記録します。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>未設定</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>PuTTY 、ターミナルサーバ、または環境に対応した同等の機能を使用して、コンソールセッションを開きます。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+PuTTY の設定方法がわからない場合は、ラップトップまたはコンソールのオンラインヘルプを確認してください。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>スクリプトからプロンプトが表示されたら、管理 IP アドレスを入力します。</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>ラップトップまたはコンソールで、 System Manager を使用してクラスタを設定します。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>ブラウザでノード管理 IP アドレスを指定します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+アドレスの形式は、 https://x.x.x.x です。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>で収集したデータを使用してシステムを設定します <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613" target="_blank" rel="noopener">"『 ONTAP 構成ガイド』"</a> 。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>アカウントを設定して Active IQ Config Advisor をダウンロードします。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>既存のアカウントにログインするか、アカウントを作成します。</p>
+<div class="paragraph">
+<p><a href="https://mysupport.netapp.com/eservice/public/now.do" target="_blank" rel="noopener">"ネットアップサポート登録"</a></p>
+</div>
+</li>
+<li>
+<p>システムを登録します。</p>
+<div class="paragraph">
+<p><a href="https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct" target="_blank" rel="noopener">"ネットアップ製品登録"</a></p>
+</div>
+</li>
+<li>
+<p>Active IQ Config Advisor をダウンロードします。</p>
+<div class="paragraph">
+<p><a href="https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor" target="_blank" rel="noopener">"ネットアップのダウンロード： Config Advisor"</a></p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Config Advisor を実行してシステムの健全性を確認します。</p>
+</li>
+<li>
+<p>初期設定が完了したら、に進みます <a href="https://www.netapp.com/data-management/oncommand-system-documentation/" target="_blank" rel="noopener">"ONTAP &amp; ONTAP システムマネージャのマニュアルリソース"</a> ONTAP での追加機能の設定については、ページを参照してください。</p>
 </li>
 </ol>
 </div>

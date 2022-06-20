@@ -6383,7 +6383,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-08 13:50:09 +0000">06/08/2022</time>
+    <time datetime="2022-06-20 13:51:25 +0000">06/20/2022</time>
     
   
 
@@ -6400,7 +6400,7 @@
 <div class="sect1">
 <h2 id="手順-1-電源装置を取り外す">手順 1 ：電源装置を取り外す</h2>
 <div class="sectionbody">
-<div class="paragraph">
+<div class="paragraph lead">
 <p>シャーシを交換するときに電源装置を取り外すには、電源装置の電源を切って接続を解除し、古いシャーシから電源装置を取り出します。</p>
 </div>
 <div class="olist arabic">
@@ -6437,6 +6437,659 @@
 </td>
 </tr>
 </table>
+</div>
+<div class="videoblock">
+<div class="title">アニメーション- PSUの取り外し/取り付け</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=590b3414-6ea5-42b2-b7f4-ae78004b86a4" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_install_PSU_module.svg" alt="DRW 9500 remove install PSU module(PSU取り付けモジュールを取り外します">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>ロックボタン</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>残りの電源装置に対して上記の手順を繰り返します。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-2-ファンを取り外す">手順 2 ：ファンを取り外す</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>シャーシを交換するときにファンモジュールを取り外すには、特定の順序でタスクを実行する必要があります。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>接地対策がまだの場合は、自身で適切に実施します。</p>
+</li>
+<li>
+<p>（必要な場合）両手でベゼルの両側の開口部を持ち、手前に引いてシャーシフレームのボールスタッドからベゼルを外します。</p>
+</li>
+<li>
+<p>ファンモジュールのテラコッタボタンを押し、空いている手でファンモジュールを支えながら、ファンモジュールをシャーシからまっすぐ引き出します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+ファンモジュールは奥行きがないので、シャーシから突然落下してけがをすることがないように、必ず空いている手でファンモジュールの底面を支えてください。
+</td>
+</tr>
+</table>
+</div>
+<div class="videoblock">
+<div class="title">アニメーション-ファンの取り外し/取り付け</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=86b0ed39-1083-4b3a-9e9c-ae78004c2ffc" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_install_fan.svg" alt="DRW 9500がインストールファンを取り外します">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="../media/legend_icon_01.svg" alt="幅= 20"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Terra cotta リリースボタン</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="../media/legend_icon_02.svg" alt="幅= 20"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>ファンをスライドさせてシャーシから取り外します</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>ファンモジュールを脇へ置きます。</p>
+</li>
+<li>
+<p>残りのファンモジュールに対して上記の手順を繰り返します。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-3-コントローラモジュールを取り外す">手順 3 ：コントローラモジュールを取り外す</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>シャーシを交換するには、古いシャーシからコントローラモジュールを取り外す必要があります。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>接地対策がまだの場合は、自身で適切に実施します。</p>
+</li>
+<li>
+<p>障害のあるコントローラモジュールからケーブルを外し、どのケーブルが何に接続されていたかを記録します。</p>
+</li>
+<li>
+<p>カムハンドルのテラコッタボタンを下にスライドさせてロックを解除します。</p>
+<div class="videoblock">
+<div class="title">アニメーション-コントローラモジュールの取り外し</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_PCM.svg" alt="DRW 9500がPCMを削除しました">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="../media/legend_icon_01.svg" alt="幅= 20"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>カムハンドルのリリースボタン</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="../media/legend_icon_02.svg" alt="幅= 20"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>カムハンドル</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>カムハンドルを回転させて、コントローラモジュールをシャーシから完全に外し、コントローラモジュールをシャーシから引き出します。</p>
+<div class="paragraph">
+<p>このとき、空いている手でコントローラモジュールの底面を支えてください。</p>
+</div>
+</li>
+<li>
+<p>コントローラモジュールを安全な場所に置いておきます。シャーシに別のコントローラモジュールがある場合は、上記の手順を繰り返します。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-4-io-モジュールを取り外します">手順 4 ： I/O モジュールを取り外します</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>NVRAM モジュールを含む古いシャーシから I/O モジュールを取り外すには、特定の手順を実行します。NVRAM モジュールを新しいシャーシに移動する場合、 NVRAM モジュールに FlashCache モジュールがある場合は、そのモジュールを取り外す必要はありません。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>接地対策がまだの場合は、自身で適切に実施します。</p>
+</li>
+<li>
+<p>ターゲットの I/O モジュールに接続されているケーブルをすべて取り外します。</p>
+<div class="paragraph">
+<p>元の場所がわかるように、ケーブルにラベルを付けておいてください。</p>
+</div>
+</li>
+<li>
+<p>ターゲットの I/O モジュールをシャーシから取り外します。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>文字と数字が記載されたカムボタンを押し下げます。</p>
+<div class="paragraph">
+<p>カムボタンがシャーシから離れます。</p>
+</div>
+</li>
+<li>
+<p>カムラッチを下に回転させて水平にします。</p>
+<div class="paragraph">
+<p>I/O モジュールがシャーシから外れ、 I/O スロットから約 1/2 インチアウトします。</p>
+</div>
+</li>
+<li>
+<p>I/O モジュール前面の両側にあるプルタブを引いて、 I/O モジュールをシャーシから取り外します。</p>
+<div class="paragraph">
+<p>I/O モジュールが取り付けられていたスロットを記録しておいてください。</p>
+</div>
+<div class="videoblock">
+<div class="title">アニメーション- I/Oモジュールの取り外し/取り付け</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_PCIe_module.svg" alt="DRW 9500がPCIeモジュールを取り外します">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>文字と数字が記載された I/O カムラッチ</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="凡例アイコン 02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>ロックが完全に解除された I/O カムラッチ</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>I/O モジュールを脇へ置きます。</p>
+</li>
+<li>
+<p>古いシャーシの残りの I/O モジュールに対して前述の手順を繰り返します。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-5-デステージコントローラ電源モジュールを取り外す">手順 5 ：デステージコントローラ電源モジュールを取り外す</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>交換用シャーシを設置する準備として、古いシャーシからデステージコントローラ電源モジュールを取り外す必要があります。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>接地対策がまだの場合は、自身で適切に実施します。</p>
+</li>
+<li>
+<p>モジュールハンドルのテラコッタロックボタンを押し、 DCPM モジュールをシャーシから取り出します。</p>
+<div class="videoblock">
+<div class="title">アニメーション- DCPMの取り外し/取り付け</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=c067cf9d-35b8-4fbe-9573-ae78004c2328" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_NV_battery.svg" alt="DRW 9500がNVバッテリを取り外します">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>DCPM モジュールのテラコッタロックボタン</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>DCPM モジュールを安全な場所に置き、残りの DCPM モジュールに対してこの手順を繰り返します。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-6-装置ラックまたはシステムキャビネット内のシャーシを交換します">手順 6 ：装置ラックまたはシステムキャビネット内のシャーシを交換します</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>交換用シャーシを設置するには、装置ラックまたはシステムキャビネットから既存のシャーシを取り外す必要があります。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>シャーシ取り付けポイントからネジを外します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+システムがシステムキャビネットに設置されている場合は、背面のタイダウンブラケットの取り外しが必要になることがあります。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>古いシャーシをシステムキャビネットのラックレールまたは装置ラックの _L_Brackets からスライドさせて取り出し、脇に置きます。この作業は 3~4 人で行ってください。</p>
+</li>
+<li>
+<p>接地対策がまだの場合は、自身で適切に実施します。</p>
+</li>
+<li>
+<p>交換用シャーシを、システムキャビネットのラックレールまたは装置ラックの _L_Brackets に沿って挿入して、装置ラックまたはシステムキャビネットに設置します。この作業は 2~3 人で行ってください。</p>
+</li>
+<li>
+<p>シャーシをスライドさせて装置ラックまたはシステムキャビネットに完全に挿入します。</p>
+</li>
+<li>
+<p>古いシャーシから取り外したネジを使用して、シャーシの前面を装置ラックまたはシステムキャビネットに固定します。</p>
+</li>
+<li>
+<p>シャーシの背面を装置ラックまたはシステムキャビネットに固定します。</p>
+</li>
+<li>
+<p>ケーブル管理ブラケットを使用している場合は、それらを古いシャーシから取り外し、交換用シャーシに取り付けます。</p>
+</li>
+<li>
+<p>まだベゼルを取り付けていない場合は、取り付けます。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-7-usb-led-モジュールを新しいシャーシに移動します">手順 7 ： USB LED モジュールを新しいシャーシに移動します</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>新しいシャーシをラックまたはキャビネットに設置したら、 USB LED モジュールを古いシャーシから新しいシャーシに移動する必要があります。</p>
+</div>
+<div class="videoblock">
+<div class="title">アニメーション- USBモジュールの取り外し/取り付け</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=bc46a3e8-6541-444e-973b-ae78004bf153" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_replace_LED_mod.svg" alt="DRW 9500 remove replace LED mod">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>モジュールをイジェクトします。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="../media/legend_icon_02.svg" alt="幅= 20"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>シャーシから引き出します。</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>古いシャーシの前面、電源装置ベイのすぐ下に USB LED モジュールがあることを確認します。</p>
+</li>
+<li>
+<p>モジュールの右側にある黒いロックボタンを押してモジュールをシャーシから外し、古いシャーシから引き出します。</p>
+</li>
+<li>
+<p>交換用シャーシの前面下部にある USB LED ベイにモジュールの端を合わせ、カチッと音がして所定の位置に収まるまでそっとシャーシに押し込みます。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-8-シャーシを交換する場合はデステージコントローラ電源モジュールを取り付けます">手順 8 ：シャーシを交換する場合は、デステージコントローラ電源モジュールを取り付けます</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>交換用シャーシをラックまたはシステムキャビネットに設置したら、デステージコントローラ電源モジュールを再度取り付ける必要があります。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>接地対策がまだの場合は、自身で適切に実施します。</p>
+</li>
+<li>
+<p>DCPM モジュールの端をシャーシの開口部に合わせ、カチッと音がして所定の位置に収まるまでシャーシにそっと挿入します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+モジュールとスロットにはキーが付いています。モジュールを無理に開口部に押し込まないでください。モジュールを簡単に挿入できない場合は、モジュールの位置を調整してからシャーシに挿入します。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>残りの DCPM モジュールに対して同じ手順を繰り返します。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-9-シャーシにファンを取り付けます">手順 9 ：シャーシにファンを取り付けます</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>シャーシを交換するときにファンモジュールを取り付けるには、特定の順序でタスクを実行する必要があります。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>接地対策がまだの場合は、自身で適切に実施します。</p>
+</li>
+<li>
+<p>交換用ファンモジュールの端をシャーシの開口部に合わせ、完全に固定されるまでシャーシに挿入します。</p>
+<div class="paragraph">
+<p>稼働中のシステムの場合、ファンモジュールがシャーシに正常に挿入されると、黄色の警告 LED が 4 回点滅します。</p>
+</div>
+</li>
+<li>
+<p>残りのファンモジュールに対して上記の手順を繰り返します。</p>
+</li>
+<li>
+<p>ベゼルをボールスタッドに合わせ、ボールスタッドにそっと押し込みます。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-10-io-モジュールを取り付ける">手順 10 ： I/O モジュールを取り付ける</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>古いシャーシから NVRAM / FlashCache モジュールなどの I/O モジュールを取り付けるには、特定の手順を実行します。</p>
+</div>
+<div class="paragraph">
+<p>I/O モジュールを新しいシャーシの対応するスロットに取り付けることができるように、シャーシを設置しておく必要があります。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>接地対策がまだの場合は、自身で適切に実施します。</p>
+</li>
+<li>
+<p>交換用シャーシをラックまたはキャビネットに設置したら、交換用シャーシの対応するスロットに I/O モジュールをそっと挿入し、文字と数字が記載された I/O カムラッチをはめ込みます。 I/O カムラッチを上に押してモジュールを所定の位置にロックします。</p>
+</li>
+<li>
+<p>必要に応じて、 I/O モジュールにケーブルを再接続します。</p>
+</li>
+<li>
+<p>脇に置いた残りの I/O モジュールに対して前述の手順を繰り返します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+古いシャーシにブランク I/O パネルがある場合は、この時点で交換用シャーシに移します。
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-11-電源装置を取り付ける">手順 11 ：電源装置を取り付ける</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>シャーシを交換するときに電源装置を取り付けるには、電源装置を交換用シャーシに取り付け、電源に接続します。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>接地対策がまだの場合は、自身で適切に実施します。</p>
+</li>
+<li>
+<p>電源装置の端を両手で支えながらシステムシャーシの開口部に合わせ、電源装置を所定の位置に固定されるまでシャーシにそっと押し込みます。</p>
+<div class="paragraph">
+<p>電源装置にはキーが付いており、一方向のみ取り付けることができます。</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/important.svg" alt="重要">
+</td>
+<td class="content">
+電源装置をスライドさせてシステムに挿入する際に力を入れすぎないようにしてください。コネクタが破損する可能性があります。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>電源ケーブルを再接続し、電源ケーブル固定用ツメを使用して電源装置に固定します。</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/important.svg" alt="重要">
+</td>
+<td class="content">
+電源ケーブルは電源装置にのみ接続してください。この時点では、電源ケーブルを電源に接続しないでください。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>残りの電源装置に対して上記の手順を繰り返します。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-12-コントローラを取り付ける">手順 12 ：コントローラを取り付ける</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>コントローラモジュールとその他のコンポーネントを新しいシャーシに取り付けたら、コントローラモジュールをブートしてインターコネクト診断テストを実行できる状態にします。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>接地対策がまだの場合は、自身で適切に実施します。</p>
+</li>
+<li>
+<p>コントローラモジュールの端をシャーシの開口部に合わせ、コントローラモジュールをシステムに半分までそっと押し込みます。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+指示があるまでコントローラモジュールをシャーシに完全に挿入しないでください。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>コンソールとコントローラモジュールを再度ケーブル接続し、管理ポートを再接続します。</p>
+</li>
+<li>
+<p>電源装置を別の電源に接続し、電源をオンにします。</p>
+</li>
+<li>
+<p>カムハンドルを開き、コントローラモジュールをシャーシに挿入し、ミッドプレーンまでしっかりと押し込んで完全に装着し、カムハンドルをカチッと音がしてロックされるまで閉じます。</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/important.svg" alt="重要">
+</td>
+<td class="content">
+コントローラモジュールをスライドさせてシャーシに挿入する際に力を入れすぎないように注意してください。コネクタが破損することがあります。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>コントローラモジュールは、シャーシに完全に装着されるとすぐにブートを開始します。</p>
+</div>
+</li>
+<li>
+<p>同じ手順を繰り返して、 2 台目のコントローラを新しいシャーシに取り付けます。</p>
+</li>
+<li>
+<p>各ノードをメンテナンスモードでブートします。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>各ノードがブートを開始したら、「 Press Ctrl-C for Boot Menu 」というメッセージが表示されたら、 Ctrl+C キーを押してブートプロセスを中断します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+プロンプトを見逃してコントローラモジュールが ONTAP で起動する場合は、「 halt 」と入力し、 LOADER プロンプトで「 boot_ontap 」と入力して、プロンプトが表示されたら「 Ctrl+C 」を押して、この手順を繰り返します。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>ブートメニューからメンテナンスモードのオプションを選択します。</p>
+</li>
+</ol>
 </div>
 </li>
 </ol>

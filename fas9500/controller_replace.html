@@ -6383,18 +6383,452 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-08 13:50:09 +0000">06/08/2022</time>
+    <time datetime="2022-06-20 13:51:25 +0000">06/20/2022</time>
     
   
 
 
 </p>
 
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph lead">
 <p>コントローラモジュールハードウェアを交換するには、障害ノードを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。</p>
 </div>
 <div class="paragraph">
 <p>次のアニメーションは、障害のあるコンポーネントを交換用コントローラに移動するプロセスを示しています。</p>
+</div>
+<div class="videoblock">
+<div class="title">アニメーション-コントローラモジュールを交換し、プロセスを完了します</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=dc8d4acb-e061-45dd-8a0e-ae78004b6974" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-1-コントローラモジュールを取り外す">手順 1 ：コントローラモジュールを取り外す</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>コントローラ内部のコンポーネントにアクセスするには、まずコントローラモジュールをシステムから取り外し、続いてコントローラモジュールのカバーを外す必要があります。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>接地対策がまだの場合は、自身で適切に実施します。</p>
+</li>
+<li>
+<p>障害のあるコントローラモジュールからケーブルを外し、どのケーブルが何に接続されていたかを記録します。</p>
+</li>
+<li>
+<p>カムハンドルのテラコッタボタンを下にスライドさせてロックを解除します。</p>
+<div class="videoblock">
+<div class="title">アニメーション-コントローラモジュールの取り外し</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_PCM.svg" alt="DRW 9500がPCMを削除しました">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>カムハンドルのリリースボタン</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="凡例アイコン 02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>カムハンドル</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>カムハンドルを回転させて、コントローラモジュールをシャーシから完全に外し、コントローラモジュールをシャーシから引き出します。</p>
+<div class="paragraph">
+<p>このとき、空いている手でコントローラモジュールの底面を支えてください。</p>
+</div>
+</li>
+<li>
+<p>コントローラモジュールのふた側を上にして、平らで安定した場所に置きます。カバーの青いボタンを押し、コントローラモジュールの背面にカバーをスライドさせてから、カバーを上に動かしてコントローラモジュールから外します。</p>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_PCM_open.svg" alt="DRW 9500 PCMが開いています">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>コントローラモジュールのカバーの固定ボタン</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-2-ブートメディアを移動します">手順 2 ：ブートメディアを移動します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ブートメディアの場所を確認し、手順に従って古いコントローラからブートメディアを取り外して、新しいコントローラに挿入する必要があります。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>次の図またはコントローラモジュールの FRU マップを使用して、ブートメディアの場所を確認します。</p>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_boot_dev.svg" alt="DRW 9500が起動デバイスを削除します">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>リリースタブを押します</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="凡例アイコン 02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>ブートメディア</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>ブートメディアケースの青いボタンを押してブートメディアをケースからリリースし、ブートメディアソケットからゆっくりと引き出します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+ソケットやブートメディアが損傷する可能性があるため、ブートメディアをねじったり、真上に引き出したりしないでください。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>新しいコントローラモジュールにブートメディアを移し、ブートメディアの端をソケットケースに合わせ、ソケットにゆっくりと押し込みます。</p>
+</li>
+<li>
+<p>ブートメディアが正しい向きでソケットに完全に装着されたことを確認します。</p>
+<div class="paragraph">
+<p>必要に応じて、ブートメディアを取り外してソケットへの装着をやり直します。</p>
+</div>
+</li>
+<li>
+<p>ブートメディアを押し下げて、ブートメディアケースの固定ボタンをはめ込みます。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-3-システム-dimm-を移動します">手順 3 ：システム DIMM を移動します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>DIMM を移動するには、古いコントローラの DIMM の場所を確認し、 DIMM を交換用コントローラに移動して、特定の手順を実行します。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>接地対策がまだの場合は、自身で適切に実施します。</p>
+</li>
+<li>
+<p>コントローラモジュールで DIMM の場所を確認します。</p>
+</li>
+<li>
+<p>DIMM を交換用コントローラモジュールに正しい向きで挿入できるように、ソケット内の DIMM の向きをメモします。</p>
+</li>
+<li>
+<p>DIMM の両側にある 2 つのツメをゆっくり押し開いて DIMM をスロットから外し、そのままスライドさせてスロットから取り出します。</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/important.svg" alt="重要">
+</td>
+<td class="content">
+DIMM 回路基板のコンポーネントに力が加わらないように、 DIMM の両端を慎重に持ちます。
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_replace_PCM_dimms.svg" alt="DRW 9500はPCM DIMMの代わりに使用されます">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>DIMM のツメ</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="凡例アイコン 02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>DIMM</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>DIMM を取り付けるスロットの位置を確認します。</p>
+</li>
+<li>
+<p>コネクタにある DIMM のツメが開いた状態になっていることを確認し、 DIMM をスロットに対して垂直に挿入します。</p>
+<div class="paragraph">
+<p>DIMM のスロットへの挿入にはある程度の力が必要です。簡単に挿入できない場合は、 DIMM をスロットに正しく合わせてから再度挿入してください。</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/important.svg" alt="重要">
+</td>
+<td class="content">
+DIMM がスロットにまっすぐ差し込まれていることを目で確認してください。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>DIMM をスロットに対して垂直に挿入します。</p>
+<div class="paragraph">
+<p>DIMM のスロットへの挿入にはある程度の力が必要です。簡単に挿入できない場合は、 DIMM をスロットに正しく合わせてから再度挿入してください。</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/important.svg" alt="重要">
+</td>
+<td class="content">
+DIMM がスロットにまっすぐ差し込まれていることを目で確認してください。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>DIMM の両端のノッチにツメがかかるまで、 DIMM の上部を慎重にしっかり押し込みます。</p>
+</li>
+<li>
+<p>残りの DIMM についても、上記の手順を繰り返します。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-4-コントローラを取り付ける">手順 4 ：コントローラを取り付ける</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>コンポーネントを交換用コントローラモジュールに取り付けたら、交換用コントローラモジュールをシステムシャーシに取り付け、オペレーティングシステムをブートする必要があります。</p>
+</div>
+<div class="paragraph">
+<p>2 台のコントローラモジュールを同じシャーシに搭載する HA ペアでは、シャーシへの設置が完了すると同時にリブートが試行されるため、コントローラモジュールの取り付け順序が特に重要です。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+システムのブート時にシステムファームウェアが更新されることがあります。このプロセスは中止しないでください。手順ではブートプロセスを中断する必要があります。通常はプロンプトが表示されたあとにいつでも中断できます。ただし、システムがブート時にシステムファームウェアの更新を開始した場合は、更新が完了してからブートプロセスを中断する必要があります。
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>接地対策がまだの場合は、自身で適切に実施します。</p>
+</li>
+<li>
+<p>コントローラモジュールのカバーをまだ取り付けていない場合は取り付けます。</p>
+</li>
+<li>
+<p>コントローラモジュールの端をシャーシの開口部に合わせ、コントローラモジュールをシステムに半分までそっと押し込みます。</p>
+<div class="videoblock">
+<div class="title">アニメーション-コントローラモジュールを設置</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=f2aa14b4-0d95-4109-b410-ae78004b35c9" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_PCM_source.svg" alt="DRW 9500がPCMソースを削除します">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>カムハンドルのリリースボタン</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="凡例アイコン 02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>カムハンドル</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+指示があるまでコントローラモジュールをシャーシに完全に挿入しないでください。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>システムにアクセスして以降のセクションのタスクを実行できるように、管理ポートとコンソールポートのみをケーブル接続します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+残りのケーブルは、この手順の後半でコントローラモジュールに接続します。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>コントローラモジュールの再取り付けを完了します。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>ケーブルマネジメントデバイスをまだ取り付けていない場合は、取り付け直します。</p>
+</li>
+<li>
+<p>コントローラモジュールをシャーシに挿入し、ミッドプレーンまでしっかりと押し込んで完全に装着します。</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/important.svg" alt="重要">
+</td>
+<td class="content">
+コネクタの破損を防ぐため、コントローラモジュールをスライドしてシャーシに挿入する際に力を入れすぎないでください。
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>コントローラモジュールは、シャーシに完全に装着されるとすぐにブートを開始します。ブートプロセスを中断できるように準備しておきます。</p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>コントローラモジュールのカムハンドルをロック位置まで回転させます。</p>
+</li>
+<li>
+<p>起動メニューに Ctrl+C キーを押して ' 起動プロセスを中断します</p>
+</li>
+<li>
+<p>LOADER でブートするオプションを選択します。</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
 </div>
 
     </article>

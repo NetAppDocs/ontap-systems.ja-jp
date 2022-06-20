@@ -6383,7 +6383,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-08 13:50:09 +0000">06/08/2022</time>
+    <time datetime="2022-06-20 13:51:25 +0000">06/20/2022</time>
     
   
 
@@ -6534,11 +6534,525 @@
 </li>
 <li>
 <p>NVRAM モジュール前面の両側にあるプルタブを引いてモジュールをシャーシから取り外します。</p>
+<div class="videoblock">
+<div class="title">アニメーション- NVRAMモジュールを交換します</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=228cbd14-4cb2-49b5-88f1-ae78004b9d84" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_move-remove_NVRAM_module.svg" alt="DRW 9500 move remove NVRAM moduleの2つのモジュールがあります">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 18.1818%;">
+<col style="width: 81.8182%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>文字と数字が記載された I/O カムラッチ</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="凡例アイコン 02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>ロックが完全に解除された I/O ラッチ</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>NVRAM モジュールを安定した場所に置き、カバーの青色のロックボタンを押し下げてカバーを NVRAM モジュールから取り外します。青いボタンを押しながら、カバーをスライドさせて NVRAM モジュールから外します。</p>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_NVRAM_module_contents.svg" alt="DRW 9500はNVRAMモジュールの内容を削除します">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>カバーのロックボタン</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="凡例アイコン 02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>DIMM と DIMM のツメ</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>古い NVRAM モジュールから DIMM を 1 つずつ取り外し、交換用 NVRAM モジュールに取り付けます。</p>
+</li>
+<li>
+<p>モジュールのカバーを閉じます。</p>
+</li>
+<li>
+<p>交換用 NVRAM モジュールをシャーシに取り付けます。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>モジュールをスロット 6 のシャーシ開口部の端に合わせます。</p>
+</li>
+<li>
+<p>モジュールをスロットにそっと挿入し、文字と数字が記載された I/O カムラッチを上に押してモジュールを所定の位置にロックします。</p>
 </li>
 </ol>
 </div>
 </li>
 </ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-3-nvram-dimm-を交換します">手順 3 ： NVRAM DIMM を交換します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>NVRAM モジュールの NVRAM DIMM を交換するには、 NVRAM モジュールを取り外し、モジュールを開き、ターゲット DIMM を交換する必要があります。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>接地対策がまだの場合は、自身で適切に実施します。</p>
+</li>
+<li>
+<p>ターゲットの NVRAM モジュールをシャーシから取り外します。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>文字と数字が記載されたカムボタンを押し下げます。</p>
+<div class="paragraph">
+<p>カムボタンがシャーシから離れます。</p>
+</div>
+</li>
+<li>
+<p>カムラッチを下に回転させて水平にします。</p>
+<div class="paragraph">
+<p>NVRAM モジュールがシャーシから外れ、数インチ外に出ます。</p>
+</div>
+</li>
+<li>
+<p>NVRAM モジュール前面の両側にあるプルタブを引いてモジュールをシャーシから取り外します。</p>
+<div class="videoblock">
+<div class="title">アニメーション- NVRAMモジュールを交換します</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=228cbd14-4cb2-49b5-88f1-ae78004b9d84" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_move-remove_NVRAM_module.svg" alt="DRW 9500 move remove NVRAM moduleの2つのモジュールがあります">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>文字と数字が記載された I/O カムラッチ</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="凡例アイコン 02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>ロックが完全に解除された I/O ラッチ</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>NVRAM モジュールを安定した場所に置き、カバーの青色のロックボタンを押し下げてカバーを NVRAM モジュールから取り外します。青いボタンを押しながら、カバーをスライドさせて NVRAM モジュールから外します。</p>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_NVRAM_module_contents.svg" alt="DRW 9500はNVRAMモジュールの内容を削除します">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="凡例アイコン 01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>カバーのロックボタン</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="凡例アイコン 02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>DIMM と DIMM のツメ</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>NVRAM モジュール内で交換する DIMM の場所を確認し、 DIMM の固定ツメを押し下げ、ソケットから持ち上げて取り外します。</p>
+<div class="paragraph">
+<p>各 DIMM の横には LED があり、障害が発生すると点滅します。</p>
+</div>
+</li>
+<li>
+<p>DIMM をソケットに合わせ、固定ツメが所定の位置に収まるまで DIMM をそっとソケットに押し込み、交換用 DIMM を取り付けます。</p>
+</li>
+<li>
+<p>モジュールのカバーを閉じます。</p>
+</li>
+<li>
+<p>NVRAM モジュールをシャーシに取り付けます。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>モジュールをスロット 6 のシャーシ開口部の端に合わせます。</p>
+</li>
+<li>
+<p>モジュールをスロットにそっと挿入し、文字と数字が記載された I/O カムラッチを上に押してモジュールを所定の位置にロックします。</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-4-fru-の交換後にコントローラをリブートします">手順 4 ： FRU の交換後にコントローラをリブートします</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>FRU を交換したら、コントローラモジュールをリブートする必要があります。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>LOADER プロンプトから ONTAP を起動するには、「 bye 」と入力します。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-5-コントローラモジュールの-ha-状態を確認して設定します">手順 5 ：コントローラモジュールの HA 状態を確認して設定します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>コントローラモジュールの「 HA 」状態を確認し、必要に応じてシステム構成に合わせて状態を更新する必要があります。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>交換用コントローラモジュールの保守モードで ' すべてのコンポーネントが同じ HA 状態を表示していることを確認します HA 構成の場合は 'ha-config show と表示されます</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">システムの構成</th>
+<th class="tableblock halign-left valign-top">すべてのコンポーネントの HA の状態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>HA ペア</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>高可用性</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>4 つ以上のノードを含む MetroCluster FC 構成</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>MCC</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>MetroCluster IP 構成</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>mccip</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>表示されたコントローラモジュールのシステム状態がシステム構成と一致しない場合は、コントローラモジュールの HA 状態を「 ha-config modify controller_A_2 state_」 に設定します</p>
+</li>
+<li>
+<p>表示されたシャーシのシステム状態がシステム構成と一致しない場合は ' シャーシの HA 状態を設定します HA config modify chassis_HA-state_</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-6-ディスクの再割り当て">手順 6 ：ディスクの再割り当て</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>交換用ノードのブート時にシステム ID の変更を確認し、変更が実装されたことを確認する必要があります。</p>
+</div>
+<div class="paragraph">
+<p>この手順は、 HA ペアの ONTAP を実行するシステムにのみ適用されます。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>交換用ノードがメンテナンス・モード（「*&gt;`プロンプト」が表示されている）の場合は、メンテナンス・モードを終了して、LOADERプロンプト「halt」に進みます</p>
+</li>
+<li>
+<p>交換用ノードの LOADER プロンプトからノードをブートし、システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられたら、「 y 」と入力します。</p>
+</li>
+<li>
+<p>交換用ノードのコンソールに「Waiting for giveback&#8230;&#8203;」というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステムIDが自動的に割り当てられていることを確認します。「storage failover show</p>
+<div class="paragraph">
+<p>コマンド出力には、障害ノードでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>node1&gt; `storage failover show`
+                                    Takeover
+Node              Partner           Possible     State Description
+------------      ------------      --------     -------------------------------------
+node1             node2             false        System ID changed on partner (Old:
+                                                  151759755, New: 151759706), In takeover
+node2             node1             -            Waiting for giveback (HA mailboxes)</pre>
+</div>
+</div>
+</li>
+<li>
+<p>正常なノードから、コアダンプがすべて保存されたことを確認します。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>advanced 権限レベルに切り替えます。「 set -privilege advanced 」</p>
+<div class="paragraph">
+<p>advanced モードで続行するかどうかを確認するプロンプトが表示されたら、「 y 」と入力します。advanced モードのプロンプトが表示されます（ * &gt; ）。</p>
+</div>
+</li>
+<li>
+<p>すべてのコアダンプを保存します： system node run -node local-node-name partner savecore</p>
+</li>
+<li>
+<p>savecoreコマンドが完了するのを待ってからギブバックを実行します</p>
+<div class="paragraph">
+<p>次のコマンドを入力すると&#8217;savecoreコマンドの進行状況を監視できますsystem node run -node local-node-name partner savecore -s</p>
+</div>
+</li>
+<li>
+<p>admin 権限レベルに戻ります。「 set -privilege admin 」</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>ノードをギブバックします。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>正常なノードから、交換したノードのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name</p>
+<div class="paragraph">
+<p>交換用ノードはストレージをテイクバックしてブートを完了します。</p>
+</div>
+<div class="paragraph">
+<p>システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は 'y' と入力する必要があります</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>詳細については、を参照してください <a href="https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted" target="_blank" rel="noopener">"手動ギブバックコマンド"</a> 拒否を無視するトピック。</p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>ギブバックが完了したら、 HA ペアが正常で、テイクオーバーが可能であることを確認します。「 storage failover show</p>
+<div class="paragraph">
+<p>storage failover show コマンドの出力に、パートナーメッセージで変更されたシステム ID を含めることはできません。</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>ディスクが正しく割り当てられたことを確認します。「 storage disk show -ownership</p>
+<div class="paragraph">
+<p>交換用ノードに属するディスクには、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>node1&gt; `storage disk show -ownership`
+
+Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
+----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
+1.0.0  aggr0_1  node1 node1  -        1873775277 1873775277  -       1873775277 Pool0
+1.0.1  aggr0_1  node1 node1           1873775277 1873775277  -       1873775277 Pool0
+.
+.
+.</pre>
+</div>
+</div>
+</li>
+<li>
+<p>システムが MetroCluster 構成になっている場合は ' ノードのステータスを監視します MetroCluster node show</p>
+<div class="paragraph">
+<p>MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster node show -fields node-systemid' コマンドの出力には、 MetroCluster 設定が通常の状態に戻るまで古いシステム ID が表示されます。</p>
+</div>
+</li>
+<li>
+<p>ノードが MetroCluster 構成になっている場合は、 MetroCluster の状態に応じて、元の所有者がディザスタサイトのノードである場合に DR ホーム ID のフィールドにディスクの元の所有者が表示されることを確認します。</p>
+<div class="paragraph">
+<p>これは、次の両方に該当する場合に必要です。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>MetroCluster 構成がスイッチオーバー状態である。</p>
+</li>
+<li>
+<p>交換用ノードがディザスタサイトのディスクの現在の所有者である。</p>
+<div class="paragraph">
+<p>を参照してください <a href="https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration" target="_blank" rel="noopener">"4 ノード MetroCluster 構成での HA テイクオーバーおよび MetroCluster スイッチオーバー中のディスク所有権の変更"</a> を参照してください。</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>システムが MetroCluster 構成になっている場合は、各ノードが構成されていることを確認します。「 MetroCluster node show -fields configurion-state 」</p>
+<div class="listingblock">
+<div class="content">
+<pre>node1_siteA::&gt; metrocluster node show -fields configuration-state
+
+dr-group-id            cluster node           configuration-state
+-----------            ---------------------- -------------- -------------------
+1 node1_siteA          node1mcc-001           configured
+1 node1_siteA          node1mcc-002           configured
+1 node1_siteB          node1mcc-003           configured
+1 node1_siteB          node1mcc-004           configured
+
+4 entries were displayed.</pre>
+</div>
+</div>
+</li>
+<li>
+<p>各ノードに、想定されるボリュームが存在することを確認します。 vol show -node node-name</p>
+</li>
+<li>
+<p>リブート時の自動テイクオーバーを無効にした場合は、正常なノードで「 storage failover modify -node replacement-node-name -onreboot true 」を有効にします</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-7-ストレージとボリュームの暗号化機能をリストアする">手順 7 ：ストレージとボリュームの暗号化機能をリストアする</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ストレージまたはボリュームの暗号化を使用するように設定したストレージシステムのコントローラモジュールまたは NVRAM モジュールを交換したら、追加の手順を実行して、暗号化機能を中断させないようにする必要があります。ストレージまたはボリュームの暗号化が有効になっていないストレージシステムでは、このタスクを省略できます。</p>
+</div>
+<div class="olist arabic">
+<div class="title">ステップ</div>
+<ol class="arabic">
+<li>
+<p>の該当する手順を使用して、ストレージまたはボリュームの暗号化機能をリストアします <a href="https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html" target="_blank" rel="noopener">"CLI での NetApp Encryption の概要"</a>。</p>
+</li>
+<li>
+<p>オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順を実行します。</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html" target="_blank" rel="noopener">"オンボードキー管理の暗号化キーをリストア"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html" target="_blank" rel="noopener">"外部キー管理の暗号化キーをリストアします"</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="手順-8-障害が発生したパーツをネットアップに返却する">手順 8 ：障害が発生したパーツをネットアップに返却する</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください <a href="https://mysupport.netapp.com/site/info/rma">"パーツの返品と交換"</a> 詳細については、を参照してください。</p>
 </div>
 </div>
 </div>
