@@ -6,8 +6,11 @@ summary: システムに I/O モジュールを追加するには、既存の I/
 ---
 = I/OモジュールFAS9500を追加します
 :allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
 
 
+[role="lead"]
 システムに I/O モジュールを追加するには、 NIC またはストレージアダプタをフル搭載システムの新しいアダプタに交換するか、新しい NIC またはストレージアダプタをシステムの空のシャーシスロットに追加します。
 
 .作業を開始する前に
@@ -119,9 +122,62 @@ I/O モジュールがシャーシから外れ、 I/O スロットから約 1/2 
 I/O モジュールが取り付けられていたスロットを記録しておいてください。
 
 +
+.アニメーション- I/Oモジュールの交換
+video::0903b1f9-187b-4bb8-9548-ae9b0012bb21[panopto]
++
+image::../media/drw_9500_remove_PCIe_module.svg[DRW 9500がPCIeモジュールを取り外します]
+
++
+[cols="20%,80%"]
+|===
+
+
+ a| 
+image::../media/legend_icon_01.svg[凡例アイコン 01]
+ a| 
+文字と数字が記載された I/O カムラッチ
 
 
 
+ a| 
+image::../media/legend_icon_02.svg[凡例アイコン 02]
+ a| 
+ロックが完全に解除された I/O カムラッチ
+
+|===
 
 
-endif::[]
+. I/O モジュールをターゲットスロットに取り付けます。
++
+.. I/O モジュールをスロットの端に合わせます。
+.. 文字と数字が記載された I/O カムラッチが I/O カムピンにかみ合うまで、 I/O モジュールをスロットにスライドさせます。
+.. I/O カムラッチを上に押してモジュールを所定の位置にロックします。
+
+
+. コントローラ A の他のモジュールについても、取り外しと取り付けの手順を繰り返して交換します
+. 交換用 I/O モジュールが NIC の場合は、モジュールをデータスイッチにケーブル接続します。
+. LOADER プロンプトからノードをリブートします： bye _
+. パートナーノードからノードをギブバックします。storage failover giveback -ofnode target_node_name
+. 自動ギブバックを無効にした場合は、有効にします。「 storage failover modify -node local-auto-giveback true 」
+. 追加した場合：
++
+[cols="1,2"]
+|===
+| I/O モジュールの種類 | 作業 
+
+
+ a| 
+スロット 3 または 7 の NIC モジュール
+ a| 
+各ポートには 'storage port modify -node * _<node name> ____port * _<port name> ____-mode network ’コマンドを使用します
+
+
+
+ a| 
+ストレージモジュール
+ a| 
+の説明に従って、SASシェルフを設置してケーブル接続しますhttps://docs.netapp.com/us-en/ontap-systems/sas3/install-hot-add-shelf.html["SASシェルフのホットアド"^]。
+
+|===
+. コントローラ B について、上記の手順を繰り返します
+

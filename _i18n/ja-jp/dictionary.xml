@@ -5336,7 +5336,6 @@
   <block id="45effe123bc9d7b38324ac0170a7d2ed" category="list-text">交換用 I/O モジュールを I/O モジュールをスロットにそっと挿入し、文字と数字が記載された I/O カムラッチを上に押してモジュールを所定の位置にロックし、 I/O モジュールをシャーシに取り付けます。</block>
   <block id="fe93c3e28753ccd59e8b3dc55497b074" category="section-title">手順 3 ： PCIe モジュールの交換後にコントローラをリブートします</block>
   <block id="60f0e4a73edf1a4e40be1d8fff5656f6" category="paragraph">PCIe モジュールを交換したら、コントローラモジュールをリブートする必要があります。</block>
-  <block id="2f77598cc1406917571281533b6a7290" category="list-text">ノードが LOADER プロンプトに表示されている場合は、ノードをブートし、システム ID が一致していないことを警告するプロンプトが表示されたら「 y' 」と入力して、システム ID の上書きを求めるプロンプトを表示します。「 bye</block>
   <block id="074956b98e6ab62b7ae2bf9b8699df64" category="list-text">システムが、 40 GbE NIC またはオンボードポート上で 10 GbE クラスタインターコネクトおよびデータ接続をサポートするように構成されている場合、メンテナンスモードから「 nicadmin convert 」コマンドを使用して、これらのポートを 10 GbE 接続に変換します。</block>
   <block id="a807e98301721a3033173dc23ac9fd93" category="summary">NVRAM10 バッテリを搭載したデステージコントローラ電源モジュール（ DCPM ）をホットスワップするには、障害が発生した DCPM モジュールの場所を確認し、シャーシから取り外して、交換用の DCPM モジュールを取り付ける必要があります。</block>
   <block id="9b9f090ead8603008076b06ff01712ce" category="paragraph">障害が発生したモジュールをシャーシから取り外す前に、交換用の DCPM モジュールを手元に置いておく必要があります。このモジュールは、取り外してから 5 分以内に交換する必要があります。DCPM モジュールをシャーシから取り外すと、他のコントローラモジュールへのフェイルオーバー以外に、 DCPM モジュールを所有するコントローラモジュールのシャットダウン保護はありません。</block>
@@ -8721,6 +8720,111 @@
   <block id="3a1bdb9a053493a7e1c1e62e796f32e6" category="doc">ブートメディアFAS9500を交換してください</block>
   <block id="3e5fda4bdb63c28cc3aa53cadbde1129" category="doc">DIMM-FAS9500を交換します</block>
   <block id="6a58b2807f942e88a255882209bad046" category="sidebar">キャッシングモジュールのホットスワップ</block>
-  <block id="3867a4f17cad66bc9a480e8ad7b9ae3c" category="paragraph">endif::[]</block>
   <block id="50a5f31124b37f0e6f0175b4691d290a" category="paragraph">内蔵ディスクシェルフのプラットフォームモデルがある場合、シェルフIDは内蔵のディスクシェルフおよび外付けのディスクシェルフ全体で一意である必要があります。</block>
+  <block id="5db74a009a275aefa3af112cb922e082" category="list-text">LOADERプロンプトからノードをリブートします。_BYE_note：これにより、PCIeカードおよびその他のコンポーネントが再初期化され、ノードがリブートされます。</block>
+  <block id="208e6af1006f73ba3b37a7e05e3692cd" category="list-text">ノードを通常動作に戻します。storage failover giveback -ofnode impaired_node_name _</block>
+  <block id="837fcf17f123dccb1301f252ade8a58e" category="admonition">システムが2ノードMetroCluster 構成の場合は、次の手順で説明するようにアグリゲートをスイッチバックする必要があります。</block>
+  <block id="abc219c929a34cf7b62e36c2503b63ac" category="video-title">アニメーション-コントローラモジュールの取り外し</block>
+  <block id="0b3bd9d9290b20b7deabeee68dbd8982" category="image-alt">DRW 9500がPCMソースを削除します</block>
+  <block id="0c95144374a371b7d780cf2dda8caa68" category="image-alt">DRW 9500 PCMオープンソース</block>
+  <block id="0b8e9f368ea269ec23c6c676a7561e53" category="video-title">アニメーション-ブートメディアの交換</block>
+  <block id="3937ac537a8c89789d0e3e5e505a0afb" category="image-alt">DRW 9500がブート開発ソースを削除します</block>
+  <block id="b598514d43d2a37ba4d4454196b07253" category="inline-image-macro">幅= 20</block>
+  <block id="e96cf2879e64ebff07df1eef426e915f" category="paragraph"><block ref="e96cf2879e64ebff07df1eef426e915f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="72f8e032e3cfe23ff2d5b260d669bf04" category="paragraph"><block ref="72f8e032e3cfe23ff2d5b260d669bf04" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="defa99ee750d2ca6a8f52cf79e8eb713" category="list-text">bootarg.init.boot_clustered</block>
+  <block id="d18fd3db938a26ebbd3f74de41f0b73f" category="list-text">partner-sysid</block>
+  <block id="bac349cdf99ddd20206c9b20eb9e6d22" category="list-text">bootarg.init.flash_optimized for AFF の略</block>
+  <block id="f3b31cc7028e1885fb21b81b0fdbee37" category="list-text">bootarg.init.san_optimized for AFF の略</block>
+  <block id="cbcb656967b507992a4a640a604c47e0" category="list-text">bootarg.init.switchless_cluster.enable</block>
+  <block id="8e66622dd5a924bd59ee4f46318a13a9" category="list-text">bootarg.storageencryption.support&lt;value&gt;</block>
+  <block id="bdafe896118bc000c3a68090808112cd" category="list-text">bootarg.keymanager. support &lt;value&gt;</block>
+  <block id="8f4ea3656910a928382f8c75368c3c2a" category="list-text">kmip.init.interface &lt; 値 &gt;</block>
+  <block id="b2adbab4ce96430a3475db235c4be8c3" category="list-text">kmip.init.ipaddr &lt; 値 &gt;</block>
+  <block id="70e8273bd6b058c89bc23bad2de4c396" category="list-text">kmip.init.netmask &lt; 値 &gt;</block>
+  <block id="4d10af14d34e5e468c4aee19207329d3" category="list-text">kmip.init.gateway &lt; 値 &gt;</block>
+  <block id="a1781eecf18376feb2f740b6a3d7781d" category="list-text">bootarg.onboard keymanager &lt;value&gt; という 2 つの属性を設定します</block>
+  <block id="8ed13fe688162a9d4d89829700344e8f" category="list-text">printenv variable-name コマンドを使用して ' 変更内容を確認します</block>
+  <block id="890a5db496d99a96f099de944c9791c0" category="admonition">設定するターゲットポートは、ネットワーク接続を使用した var ファイルシステムのリストア中に、正常なノードから障害ノードへの通信に使用するポートです。このコマンドでは e0M ポートを使用することもできます。</block>
+  <block id="f8cc7bd538c729e18dab57ecfd18b69e" category="video-title">アニメーション- NVRAMモジュールを交換します</block>
+  <block id="9b191eaf82da57faf3acb37f96f84ca6" category="image-alt">DRW 9500 move remove NVRAM moduleの2つのモジュールがあります</block>
+  <block id="1b75d6028af1363f62eb9a45010f31c4" category="image-alt">DRW 9500はNVRAMモジュールの内容を削除します</block>
+  <block id="0855873e0fa5bed2d0067d6acae6c0df" category="paragraph">交換用ノードのブート時にシステム ID の変更を確認し、変更が実装されたことを確認する必要があります。</block>
+  <block id="93a4033a981ca86f17e1c02656473521" category="list-text">交換用ノードがメンテナンス・モード（「*&gt;`プロンプト」が表示されている）の場合は、メンテナンス・モードを終了して、LOADERプロンプト「halt」に進みます</block>
+  <block id="fbb9a853512346feaa4279f18e3efe8c" category="list-text">交換用ノードのコンソールに「Waiting for giveback...」というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステムIDが自動的に割り当てられていることを確認します。「storage failover show</block>
+  <block id="2675f497966bc5cad0cdd88dbe6eab31" category="list-text">savecoreコマンドが完了するのを待ってからギブバックを実行します</block>
+  <block id="80de24e4482214278771d2b0f3142427" category="paragraph">次のコマンドを入力すると'savecoreコマンドの進行状況を監視できますsystem node run -node local-node-name partner savecore -s</block>
+  <block id="7a18402f95cb86527db24f56d6baec40" category="list-text">正常なノードから、交換したノードのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name</block>
+  <block id="3217c14b22c3695ed301b94539bd2dbb" category="paragraph">交換用ノードはストレージをテイクバックしてブートを完了します。</block>
+  <block id="8a6fbf23d593cc1be4de4068cb3eeee1" category="paragraph">storage failover show コマンドの出力に、パートナーメッセージで変更されたシステム ID を含めることはできません。</block>
+  <block id="18963b05f9f3bc779f544c26aae06ab9" category="paragraph">交換用ノードに属するディスクには、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。</block>
+  <block id="cfe787a999b8c200091f805ad9426e24" category="list-text">交換用ノードがディザスタサイトのディスクの現在の所有者である。</block>
+  <block id="7c5a57d1d4b3b589da7f755562ad50f8" category="paragraph">を参照してください<block ref="4b1c17d30e94cc8d68adcd4265a76547" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="2c2b9a83665e5336275a4320efcb9a16" category="image-alt">DRW 9500がPCMを削除しました</block>
+  <block id="31006bbd619d2a77e6fe8ac85bee0cc0" category="image-alt">DRW 9500 PCMが開いています</block>
+  <block id="65b7d00d22ce12162c084039ae28de63" category="video-title">アニメーション- RTCバッテリを交換します</block>
+  <block id="53eb8664ee63f8ed2095fd3f5e8eb8f1" category="image-alt">DRW 9500がRTCバッテリを取り外します</block>
+  <block id="e0ec09ab8cb93f04e1ddb90be314a159" category="paragraph">バッテリーを上に回します</block>
+  <block id="0c724ad091d5fbe112bba9f946140f9b" category="paragraph">バッテリをスライドさせてハウジングから取り出します</block>
+  <block id="4714e8423619d9cc43be300b5a406117" category="list-text">ストレージをギブバックしてノードを通常の動作に戻します。「 storage failover giveback -ofnode impaired_node_name</block>
+  <block id="29aa4a699a26a575f893c69af8527aa7" category="video-title">アニメーション-ファンの取り外し/取り付け</block>
+  <block id="2966eb224d8489f097a42690752e472a" category="image-alt">DRW 9500がインストールファンを取り外します</block>
+  <block id="51ad52ed6ddd21c164ee0ea5b8407f3a" category="video-title">アニメーション- FAS9500のインストールとセットアップの手順（ISI）</block>
+  <block id="2ab60626c3ca1f306ba2c65e1e8f5d49" category="paragraph">次のビデオでは、ONTAP 9.6以降を実行するシステムのエンドツーエンドのソフトウェア設定を示します。</block>
+  <block id="262047271a9f0ac7ba69952e78e4ced1" category="video-title">アニメーション- PSUの取り外し/取り付け</block>
+  <block id="9494be0e4fc0cc7bf5a561ba23cc37dd" category="image-alt">DRW 9500 remove install PSU module(PSU取り付けモジュールを取り外します</block>
+  <block id="c593377a30c937702f96d13d76989bc2" category="video-title">アニメーション- I/Oモジュールの取り外し/取り付け</block>
+  <block id="5ef805c7229de31e948db97478049a11" category="image-alt">DRW 9500がPCIeモジュールを取り外します</block>
+  <block id="1738e7d625dcae031916a2d329f6a6b1" category="video-title">アニメーション- DCPMの取り外し/取り付け</block>
+  <block id="450c055f11dd33524e41f3c84160e631" category="image-alt">DRW 9500がNVバッテリを取り外します</block>
+  <block id="cae2fd913220da36fb401366df2ed0b8" category="video-title">アニメーション- USBモジュールの取り外し/取り付け</block>
+  <block id="0161d43ee09fff69cc35ae43ed1f07f5" category="image-alt">DRW 9500 remove replace LED mod</block>
+  <block id="6e7d5178a758393b97e367ca3da27d68" category="list-text">各ノードがブートを開始したら、「 Press Ctrl-C for Boot Menu 」というメッセージが表示されたら、 Ctrl+C キーを押してブートプロセスを中断します。</block>
+  <block id="58f1a63de110893e27e2b9974273d710" category="video-title">アニメーション-コントローラモジュールを交換し、プロセスを完了します</block>
+  <block id="eee0b061ed19ecc08e6c30167f3b0ca9" category="image-alt">DRW 9500が起動デバイスを削除します</block>
+  <block id="3c882fe343465f148bf8900ab7dde11b" category="image-alt">DRW 9500はPCM DIMMの代わりに使用されます</block>
+  <block id="abe0e9d012f3bb2e25626cbd54f69e36" category="video-title">アニメーション-コントローラモジュールを設置</block>
+  <block id="9c50a16ad09918eb5e84e11b90826699" category="video-title">アニメーション-コントローラを取り外します</block>
+  <block id="3b0d2698116982bc6cc48e12fb31e0d2" category="image-alt">DRW 9500 DIMMマップ</block>
+  <block id="a0ab299f7b0b0e1628580e5c326625a7" category="video-title">アニメーション- DIMMを交換します</block>
+  <block id="2ea72e4e42953327054629036f1b6a12" category="video-title">アニメーション-コントローラを取り付けます</block>
+  <block id="86319021cdc9cc33274101862a78bb0d" category="list-text">HA 構成でメンテナンスモードに切り替えたときに表示される、正常なノードが停止したままであることの確認を求めるプロンプト。</block>
+  <block id="ce43cf0f3fdd398cbca499ba447d6df2" category="video-title">アニメーション- 2ノードスイッチレスクラスタのケーブル配線</block>
+  <block id="b78339b4bcd807d0cb07b09d3b379c86" category="image-alt">DRW 9500 TNSCネットワークケーブル接続</block>
+  <block id="8d9c487a6d60ae07a889bc52787cfb8f" category="image-alt">OIEの凡例アイコン1LG</block>
+  <block id="9f6754a88107405b79961d111f064f72" category="paragraph">32Gb FCネットワークスイッチをケーブル接続</block>
+  <block id="393993c9f7562f1a53d4d13744facd0e" category="paragraph">スロットA3およびB3（e3aおよびe3c）およびスロットA9およびB9（e9aおよびe9c）のポートは、32Gb FCネットワークスイッチに接続されます。</block>
+  <block id="7b49110d5bcbc4998964949bf1d4d386" category="paragraph">25GbEケーブル接続：</block>
+  <block id="823c1d0595274590edabd782a377efc4" category="paragraph">スロットA5とB5（5a、5b、5c、5d）およびスロットA7とB7（7a、7b、7c、7d）のポートを25GbEネットワークスイッチにケーブル接続します。</block>
+  <block id="69b080eb9ee2f49ccb265903c6a2e0a9" category="list-text">電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。</block>
+  <block id="67e68c155f62af046486d4818ab551b1" category="list-text">ケーブルをケーブルマネジメントアームにストラップで固定します（図はなし）。</block>
+  <block id="0815daeb3f5819b5b26f2d852a3480ed" category="video-title">アニメーションスイッチを使用したクラスタのケーブル接続</block>
+  <block id="ab4ba237fa2abf24783610d2c0f56a3a" category="image-alt">DRW 9500スイッチドネットワークのケーブル配線</block>
+  <block id="cc0952f55da6292c79f2dc5ff372d9af" category="paragraph">25GbE接続用ケーブル：</block>
+  <block id="0761555d16ac8203353f5bd7e80d3769" category="list-text">電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。</block>
+  <block id="c88355c0ee4fee45dfc3a83996fea5ca" category="admonition">SASケーブル接続の詳細とワークシートについては、を参照してください<block ref="a92f79530cc2a1794f52d1c1214e4c1c" category="inline-link-rx"></block></block>
+  <block id="9d00a2e517a4069bd82955f8b1b02a18" category="list-text">ご使用のシステムのSASケーブル接続ワークシートに記入します。を参照してください<block ref="a92f79530cc2a1794f52d1c1214e4c1c" category="inline-link-rx"></block>。</block>
+  <block id="3e86e158b18295e17a62b9c2ae164933" category="list-text">次のアニメーションや図を使用して、コントローラを3台のDS224Cドライブシェルフ（1台のドライブシェルフのスタックと2台のドライブシェルフのスタック1台）にケーブル接続します。</block>
+  <block id="3ef90c4464f34327f4d05f1f924feb0e" category="video-title">アニメーション-ドライブシェルフのケーブル接続</block>
+  <block id="dd012e2b911cefcb3afb5c18a9eea983" category="image-alt">DRW 9500 SASシェルフのケーブル接続</block>
+  <block id="b16ca301b4f1b51a963f8ecd8de52638" category="image-alt">OIEの凡例アイコン1 MB</block>
+  <block id="b216213c8469f70fd4cd72ba7795f4aa" category="paragraph">図を参照しながら、ドライブシェルフスタック1をコントローラに接続します。</block>
+  <block id="27ed07f0cfc6beedfca00fcc35ebf10c" category="paragraph">Mini-SASケーブル</block>
+  <block id="0c1fee206f5adbf8dec7b6781d20a072" category="image-alt">OIEの凡例アイコン2 t</block>
+  <block id="ff080081ab0602360a6573f88141ada1" category="paragraph">図を参照しながら、ドライブシェルフスタック2をコントローラに接続します。</block>
+  <block id="e42228484668e8763c1c0da7af87772c" category="video-title">アニメーション-シェルフIDの設定</block>
+  <block id="6029e94957ee34ca18227d08b799c166" category="admonition">1桁目の数字は点滅し続けます</block>
+  <block id="5d41de9f95f6b3adc43d1136659190d1" category="paragraph">2 桁目の数字が点滅するまでシェルフ ID ボタンを押し続けたら、 0~9 に進みます。</block>
+  <block id="28764a4bf139e725956a33d36127da72" category="admonition">1桁目の数字の点滅が停止し、2桁目の数字が点滅し続けます。</block>
+  <block id="9c57a0190e6e11b8fcff37edb97fbe78" category="image-alt">凡例アイコン04</block>
+  <block id="53a45c8708767f781eeaca52dba79727" category="image-alt">凡例アイコン05</block>
+  <block id="a308cbadd7ff9683558704008014a7a5" category="video-title">アニメーション-コントローラの電源をオンにします</block>
+  <block id="92ffcfe5fdb4d48f02fe79bb44448ab3" category="image-alt">DRW 9500電源オン</block>
+  <block id="4b9bab34d04412dbe9160b882c2a8c81" category="video-title">アニメーション-ラップトップを管理スイッチに接続します</block>
+  <block id="89b878b89413c1b8d2254e6380e13c0d" category="list-text">システム付属のコンソールケーブルを使用してラップトップまたはコンソールにコンソールケーブルを接続し、ラップトップを管理サブネット上のスイッチに接続します。</block>
+  <block id="27daaf3028854170e8321e8ffc573b7a" category="image-alt">DRW 9500ケーブルコンソールスイッチコントローラ</block>
+  <block id="c1ba9dd5eac89f4e8a8e84e18e1785d1" category="list-text">で収集したデータを使用してシステムを設定します<block ref="31fb422f2cdfc1b2e916b587bec00136" category="inline-link-rx"></block> 。</block>
+  <block id="e9a40b7f4288ab51ddb8de2a88f0cf93" category="video-title">アニメーション- LED - USBモジュールの取り外し/取り付け</block>
+  <block id="8e040b00982105244874f94450843d7a" category="video-title">アニメーション- I/Oモジュールの交換</block>
+  <block id="a282c221fc0b795896ece0422f9febe5" category="paragraph">の説明に従って、SASシェルフを設置してケーブル接続します<block ref="f5c5b2b96e8da7cc3e4c1c8ae096611e" category="inline-link-rx"></block>。</block>
 </blocks>
