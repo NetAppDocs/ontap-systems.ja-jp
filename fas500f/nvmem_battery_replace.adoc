@@ -135,8 +135,8 @@ NVMEM バッテリを交換するには、障害が発生したバッテリを�
 
 次のビデオまたは表に示す手順を使用して、 NVMEM バッテリを交換できます。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=89f6d5c3-1a5b-4500-8ba8-ac5b01653050["NVMEM バッテリの交換"^]
-
+.NVMEM バッテリの交換
+video::89f6d5c3-1a5b-4500-8ba8-ac5b01653050[panopto]
 . コントローラモジュール上の障害のある NVMEM バッテリの場所を確認し、交換します。
 +
 

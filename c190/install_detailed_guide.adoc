@@ -443,7 +443,10 @@ NOTE: 初回のブートには最大で 8 分かかる場合があります。
 +
 詳細については、ラップトップのオンラインヘルプを参照してください。
 
-. アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"^]）をクリックして、ラップトップを管理スイッチに接続します。
+. アニメーションに従って、ラップトップを管理スイッチに接続します。
++
+.ラップトップを管理スイッチに接続します
+video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 . 検出する ONTAP アイコンを選択します。
 +
 image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コントローラ選択]

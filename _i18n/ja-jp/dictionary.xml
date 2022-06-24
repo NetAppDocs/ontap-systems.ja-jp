@@ -1460,7 +1460,6 @@
   <block id="c488924be9cfde77f802e82e996e90e1" category="paragraph">シャーシを交換するには、古いシャーシからコントローラモジュールを取り外す必要があります。</block>
   <block id="586424cb167133a0adfaf4650a20127e" category="paragraph">次のビデオまたは表に示す手順に従ってシャーシを交換します。この手順は、ベゼルの取り外しと交換を前提としています。</block>
   <block id="bd26a05d2028dc19ffc106d2f947977a" category="inline-link">シャーシの交換</block>
-  <block id="c4c9e5ee1315dc5c8ab3cfeef75a8d25" category="paragraph"><block ref="c4c9e5ee1315dc5c8ab3cfeef75a8d25" category="inline-link-rx"></block></block>
   <block id="30ba799d12bc55203e3416a6ec482bf4" category="list-text">接地対策がまだの場合は、自身で適切に実施します。</block>
   <block id="0bbc1525261c73e0484c79ecb9b38dc6" category="list-text">コントローラモジュールの電源装置のコードをソースから抜きます。</block>
   <block id="e73f79c9112f5779897d8c0a650b3b99" category="list-text">電源ケーブル固定クリップを外し、電源装置からケーブルを抜きます。</block>
@@ -1520,7 +1519,6 @@
   <block id="c79db5b63ba25f31c8edc40939a37d35" category="list-text">電源装置では自動で電圧が調整されます。</block>
   <block id="7f078b87c94f86a68825895095430993" category="paragraph">次のビデオまたは表に示す手順に従って、電源装置を交換します。</block>
   <block id="1f1e92832e143e090cfa4b652055d540" category="inline-link">電源装置の交換</block>
-  <block id="d18b2847114af399747ba623ee5eb49b" category="paragraph"><block ref="d18b2847114af399747ba623ee5eb49b" category="inline-link-rx"></block></block>
   <block id="6d3e06f6307975945ccc1b05b8b5460b" category="list-text">コンソールのエラーメッセージまたは電源装置の赤色の障害 LED に基づいて、交換する電源装置を特定します。</block>
   <block id="bdf78208a16277bdf48a7e0c9bfa97a4" category="list-text">電源装置の接続を解除します。</block>
   <block id="2c21bbc4fedbc89cf2641efbdb7149ec" category="list-text">電源ケーブルの固定クリップを開き、電源装置から電源ケーブルを抜きます。</block>
@@ -1684,7 +1682,6 @@
   <block id="e2f9fc0be7a0bec719378633fe5d0324" category="section-title">手順 1 ：コントローラモジュールを取り外す</block>
   <block id="8ebd201c2b1ccf04603b91e8657dad2b" category="paragraph">次のビデオまたは表に示す手順を使用して、コントローラモジュールを交換します。</block>
   <block id="11f37f020e13ac0f53ae9aa8b03fa028" category="inline-link">コントローラモジュールの交換</block>
-  <block id="9c4e18c684a6b54fb00bd7eef15cba95" category="paragraph"><block ref="9c4e18c684a6b54fb00bd7eef15cba95" category="inline-link-rx"></block></block>
   <block id="46dc7a6019d827f81ffce7b535eb038e" category="section-title">手順 2 ：電源装置を移動します</block>
   <block id="309cd2af9d204470ca807bef5f4f1fa9" category="paragraph">コントローラモジュールを交換する場合は、障害のあるコントローラモジュールから交換用コントローラモジュールに電源装置を移動する必要があります。</block>
   <block id="b0399a57cd6e3c4c8baf26d76e9353f9" category="list-text">電源装置を新しいコントローラモジュールに移して取り付けます。</block>
@@ -1836,7 +1833,6 @@
   <block id="d67487df6ee13914e99a3efddf90ac53" category="section-title">手順 2 ：ブートメディアを交換します</block>
   <block id="e768bbd7b60efb998832a5ed6ea67094" category="paragraph">次のビデオまたは表に示す手順を使用して、ブートメディアを交換できます。</block>
   <block id="4e6bb88f4f022c54e39743f60f40ba31" category="inline-link">ブートメディアの交換</block>
-  <block id="309692e2e6422b29d61bf94a5fadf996" category="paragraph"><block ref="309692e2e6422b29d61bf94a5fadf996" category="inline-link-rx"></block></block>
   <block id="d6d4491715edf2124be2de2bfa82d7fc" category="list-text">コントローラモジュールから障害のあるブートメディアの場所を確認し、交換します。</block>
   <block id="16399bec33f4a102d5e3a28654820c5c" category="paragraph">コントローラモジュールのマザーボードにブートメディアを固定しているネジを外します。</block>
   <block id="572b2c4e1ee565030f3cfc4d0b81e94a" category="paragraph">ブートメディアをコントローラモジュールから持ち上げて取り出します。</block>
@@ -2122,7 +2118,6 @@
   <block id="2cd55300ec4cb3223c5bc06b35b221bc" category="paragraph">この時点ではまだ電源コードをプラグに接続しないでください。</block>
   <block id="6c0e530aa28d8009701169ec145c45b2" category="section-title">オプション 2 ：スイッチクラスタをケーブル接続する</block>
   <block id="611c6be02af4f5847e3d1df02f0dd5cd" category="paragraph">コントローラのすべてのポートがスイッチに接続されます。スイッチには、クラスタインターコネクト、管理、ファイバチャネル、データネットワークスイッチまたはホストネットワークスイッチがあります。</block>
-  <block id="37aaa0d7d666e28c8819aac432ac13a0" category="inline-link">スイッチクラスタのケーブル接続</block>
   <block id="09401fd662d47d1159b97106f3c2c4b4" category="paragraph">クラスタインターコネクトポートを 25GbE クラスタインターコネクトスイッチにケーブル接続します。</block>
   <block id="96640993dd2592a16c29226daf83b860" category="list-text">e0c</block>
   <block id="076b1ed5eae37af50f50d5b0e6d87908" category="list-text">e0d<block ref="ee3f9d0ec20204c7d48b52d859e31c4d" category="inline-image-macro-rx" type="image"></block></block>
@@ -3367,7 +3362,6 @@
   <block id="d38e923a5dbd4c9cea0e47d7894638fd" category="section-title">手順 4 ：コントローラモジュールを再度取り付けてシステムをブートします</block>
   <block id="b30af54ded6b355219c01928989c094b" category="list-text">Ctrl キーを押しながら C キーを押して ' 通常の起動プロセスを中断します</block>
   <block id="f3a01cef2d9918b3669edb9ee2a1c2b8" category="doc">ビデオ - AFF A800</block>
-  <block id="37027e6557c74eaec3477b0744cba237" category="inline-link">AFF A800 の設置とセットアップ</block>
   <block id="85d1ffd9f4e349440b69cef9b8b49607" category="inline-link">AFF A800 システムの設置とセットアップの手順</block>
   <block id="2ee0c03cb33be156e12b5b33dbf8e422" category="doc">NVDIMM バッテリを交換してください - AFF A800</block>
   <block id="a2a7f6c4d01f5224a71aaaa23dd37c83" category="list-text">ケーブルマネジメントデバイスに接続しているケーブルをまとめているフックとループストラップを緩め、システムケーブルと SFP / QSFP モジュールをコントローラモジュールから外し（必要な場合）、どのケーブルが何に接続されていたかを記録します。ケーブルマネジメントデバイスに接続しているケーブルをまとめているフックとループストラップを緩め、システムケーブルをコントローラモジュールから外し、どのケーブルが何に接続されていたかを記録します。</block>
@@ -7422,7 +7416,6 @@
   <block id="744b6c476a210a04195ef528c6730bc7" category="paragraph">HA ペアが ONTAP 9.7 または 9.6 を実行している場合は ' 専用でないポートは 'Is dedicated ？に false と表示されます 列には、「 State 」列に「 disabled 」と表示されます。</block>
   <block id="24ce88dcb36e4e61a4334746ee0dc49a" category="list-text">サポートされる最小バージョンの NSM ファームウェアがある HA ペアで ONTAP 9.7 以降が実行されているか、または ONTAP 9.6 のバージョンと NSM ファームウェアバージョン 1.1x 以降が実行されている必要があります。</block>
   <block id="71eb59c59a42227ae8b45d0cfaf6f52f" category="paragraph">ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用したシステムの初期設定の例を紹介するビデオを 2 種類紹介します。</block>
-  <block id="f6a00a6b7e6b54382e85e14b5d551999" category="paragraph"><block ref="f6a00a6b7e6b54382e85e14b5d551999" category="inline-link-rx"></block></block>
   <block id="00977922e72338d09178c723933a32a5" category="paragraph"><block ref="00977922e72338d09178c723933a32a5" category="inline-link-rx"></block></block>
   <block id="25cf65ddd80144b70d3dac5fc3efd292" category="doc">ステップの詳細 - AFF C190</block>
   <block id="94c14a3a3429ee874d19f598eabeb841" category="inline-link-macro">使用している ONTAP のバージョンに対応したリリースノート</block>
@@ -7467,28 +7460,17 @@
   <block id="083781fc87756a032121b806b4d18a92" category="paragraph"><block ref="083781fc87756a032121b806b4d18a92" category="inline-link-macro-rx"></block></block>
   <block id="b95a2b769ddc69403557ab79e1942007" category="paragraph"><block ref="b95a2b769ddc69403557ab79e1942007" category="inline-link-rx"></block></block>
   <block id="5f3f6cd3a4d5edc50129f46b603aa9c2" category="paragraph"><block ref="5f3f6cd3a4d5edc50129f46b603aa9c2" category="inline-link-macro-rx"></block></block>
-  <block id="da0af6f56d06ccc8c4e27b60afba9d9e" category="paragraph"><block ref="da0af6f56d06ccc8c4e27b60afba9d9e" category="inline-link-rx"></block></block>
   <block id="88e44f760c43b0f33c9df051d2570261" category="inline-link-macro">2 ノードスイッチレスクラスタをケーブル接続</block>
   <block id="80fbd508bddeffc33092c60be0d4f6b0" category="paragraph">コントローラ A をシェルフにケーブル接続します。 <block ref="5a7e82fa4b93fb16c2c5bc44a8522f5a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e477637685baafe9bbd353f71ef51283" category="paragraph">システムがブートを開始します。初回のブートには最大 8 分かかる場合があります。</block>
   <block id="6c128b420b40978f9694a86a2a019225" category="paragraph">このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。を使用します <block ref="544c1dcefcbf1c60081e6f3087a7138d" category="inline-link-macro-rx"></block> ネットアップシステムのインストールに精通している場合。</block>
-  <block id="5edc1e07ab26c2a3ffde0d3b5556b9b0" category="paragraph"><block ref="5edc1e07ab26c2a3ffde0d3b5556b9b0" category="inline-link-macro-rx"></block></block>
   <block id="8903f4b08e21ea7f024d65aa5644d9f0" category="paragraph"><block ref="8903f4b08e21ea7f024d65aa5644d9f0" category="inline-link-macro-rx"></block></block>
-  <block id="c180470c4a9a4dc5421e8ab3c02fafa0" category="paragraph"><block ref="c180470c4a9a4dc5421e8ab3c02fafa0" category="inline-link-rx"></block></block>
   <block id="fe3be7b129e2b9c74abd26381eea72bb" category="cell">タブをバッテリケースからゆっくりと引き出します。* 注意： * 積極的に離れて引き出すと、タブが外れてしまう可能性があります。</block>
   <block id="d61a84f0b033dd225ff9a1af9b0f08a5" category="paragraph">バッテリを持ち上げます。* 注： * バッテリの極の向きをメモしておいてください。</block>
-  <block id="9bc926f854c0657b4a72a1008c1e9b68" category="paragraph"><block ref="9bc926f854c0657b4a72a1008c1e9b68" category="inline-link-macro-rx"></block></block>
   <block id="78929efae941c9a4e2fc6993c4c10c4e" category="paragraph">「 image_xxx.tgz 」ファイルを格納できる適切な容量のストレージを搭載した MBR/FAT32 にフォーマットされた USB フラッシュドライブが必要です。</block>
   <block id="f7b32babba20f290222a62a499496335" category="section-title">オプション 2 ： MetroCluster 内のシステム</block>
-  <block id="62d2a69a13772574552f6d8e154bf2c0" category="paragraph"><block ref="62d2a69a13772574552f6d8e154bf2c0" category="inline-link-macro-rx"></block></block>
-  <block id="e2106e16f585b6dc7ad5df82ef42d4c7" category="paragraph"><block ref="e2106e16f585b6dc7ad5df82ef42d4c7" category="inline-link-macro-rx"></block></block>
   <block id="e7d8f45352dfaf66682a4662e11d6c86" category="list-text">を確認します <block ref="571ad76602d16a750ecd1119ab38063c" category="inline-link-macro-rx"></block> およびそのガイドに記載されている必要な情報を収集します。</block>
   <block id="941322167ca76688c15d3a6fb3aa998c" category="paragraph">コントローラ A をシェルフにケーブル接続します。 <block ref="18f599f35e14d88c5e3fb9f75197e3c8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9116334d8f5f46821b69e3e65b5d1c06" category="paragraph"><block ref="9116334d8f5f46821b69e3e65b5d1c06" category="inline-link-macro-rx"></block></block>
-  <block id="d62d1e2a360ea3b0412cfcf556ea786b" category="paragraph"><block ref="d62d1e2a360ea3b0412cfcf556ea786b" category="inline-link-rx"></block></block>
-  <block id="7688f98e234548d9c9eb8a47a54131fc" category="paragraph"><block ref="7688f98e234548d9c9eb8a47a54131fc" category="inline-link-rx"></block></block>
-  <block id="b5368cb893e60d2d1af211630862ff08" category="paragraph"><block ref="b5368cb893e60d2d1af211630862ff08" category="inline-link-rx"></block></block>
-  <block id="4bb89720fb523242e68dc208e6c81323" category="paragraph"><block ref="4bb89720fb523242e68dc208e6c81323" category="inline-link-rx"></block></block>
   <block id="4ab41e9db35b429ef17dc75c3671d5a3" category="paragraph">を使用できます <block ref="29bd1f640adeeec5f2bc6e197d0840c4" category="inline-link-macro-rx"></block> ONTAP クラスタを構成する際に必要となるサイト固有の IP アドレスやその他の情報を収集して記録する。</block>
   <block id="e4e83a2c82324a2a6d5448b03909ecfa" category="paragraph">を使用できます <block ref="b22470d24dd615c99a09a118a80f7353" category="inline-link-macro-rx"></block> セットアップガイドを参照して、新しいシステムを設置してセットアップします。PDF 版ポスターには、ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
   <block id="9eb9c148662d69c22bab62cf12a75812" category="paragraph">。 <block ref="36ed39ac78f542a04e83212067a271f3" category="inline-link-macro-rx"></block> に、 ONTAP 9.2 を実行するシステムのエンドツーエンドのソフトウェア設定を示します。</block>
@@ -7875,24 +7857,11 @@
   <block id="8b2c2beff1e9638576a300eecae505bf" category="paragraph">コントローラモジュールの取り外しに進みます。</block>
   <block id="9437c57fcfd0761eae87af1101035857" category="section-title">手順 2 ：コントローラモジュールを取り外す</block>
   <block id="74215317310e6608b7efcf980bd23ce9" category="list-text">登録（<block ref="3ae584b0f28c11edd6df40135d81b8ba" category="inline-link-macro-rx"></block>）をクリックします。</block>
-  <block id="94fc6517f8931e5bf7fa3db4d65a29f8" category="list-text">アニメーションを使用します（<block ref="50ccb09f541207f76322daa7df8a0e52" category="inline-link-macro-rx"></block>）をクリックして、ラップトップを管理スイッチに接続します。</block>
   <block id="f65880020d1427cb243e627e392ce6ef" category="section-title">手順 1 ：コントローラモジュールを取り外す</block>
   <block id="0cb8c95aa83d9b7ae853da12e5bb125c" category="paragraph">カムハンドルは、ドライブキャリアの前面に揃うようにゆっくりと閉じてください。安全な状態でカチッと音がします。</block>
   <block id="3891e96240b27c2309a21f6387f98917" category="paragraph">コントローラモジュールの取り外しに進みます。</block>
   <block id="063a6c27f42a062a6ece0163f4444fc3" category="list-text">NetApp Storage Encryption を使用している場合は、の「 FIPS ドライブまたは SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります <block ref="bb6c6af86c0c41920e9753bb15981800" category="inline-link-macro-rx"></block>。</block>
   <block id="f126a748aa68879f9dcff06da9ee7d1e" category="paragraph"><block ref="f126a748aa68879f9dcff06da9ee7d1e" category="inline-link-macro-rx"></block></block>
-  <block id="8dcb40a3ec5d5a042451105a7c18324f" category="list-text">アニメーションを使用します（<block ref="aac3371ee9509f15dc58093b45cef9cb" category="inline-link-macro-rx"></block>）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。</block>
-  <block id="1f9c146468982373cd5cf84ac4b891fa" category="list-text">アニメーションを使用します（<block ref="28d905783e25429dd480a005ec25b827" category="inline-link-macro-rx"></block>）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。</block>
-  <block id="09bed4c07726af3c95833b4fe5956855" category="list-text">アニメーションを使用します（<block ref="436cbc8ea5a42a6ab9e302893923c6d6" category="inline-link-macro-rx"></block> または、コントローラモジュールを 1 台のシェルフにケーブル接続するためのステップバイステップの手順を参照してください。</block>
-  <block id="ebc2de1349fdd092a4d59c56c76d990e" category="list-text">次のアニメーションを使用します（<block ref="276ca153ab705728abbb092640fae049" category="inline-link-macro-rx"></block>）または記載された手順に従って、 2 台のドライブシェルフにコントローラをケーブル接続します。</block>
-  <block id="477e4e38399eb6d9b3e87cf3aaf81eed" category="list-text">次のアニメーションを使用します（<block ref="50ccb09f541207f76322daa7df8a0e52" category="inline-link-macro-rx"></block>）をクリックして、ラップトップを管理スイッチに接続します。</block>
-  <block id="73d5fff935a92d564e0bdf7bb2d7a90f" category="list-text">アニメーションを使用します（<block ref="a17365a15daf3fb2651f3dfab7220018" category="inline-link-macro-rx"></block>）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。</block>
-  <block id="4c3f985f957682a5efc7cee476bd4fc2" category="list-text">アニメーションを使用します（<block ref="f591670d8400fafe91f6f6f81729cd0f" category="inline-link-macro-rx"></block>）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。</block>
-  <block id="207beda627b93c5c42ae0089f755d368" category="list-text">アニメーションを使用します（<block ref="07556dbc26930287023a57f9fd6d5afa" category="inline-link-macro-rx"></block>）またはステップバイステップの手順に従って、コントローラモジュールを 1 台のシェルフにケーブル接続します。</block>
-  <block id="b6dc275983852d3d01e88b6dd9aa8239" category="list-text">アニメーションを使用します <block ref="26dabab7f0d7e84f40cb94c226b30490" category="inline-link-rx"></block>）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。</block>
-  <block id="600e46343a5c1b454fe4d6da206b4df4" category="list-text">アニメーションを使用します <block ref="acf2617804b40ea229d47bb7c91f9408" category="inline-link-rx"></block>）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。</block>
-  <block id="3888a38ba771743aba436340db0ebf5c" category="list-text">アニメーションを使用します <block ref="81efed7d5e458f4dd1f779beb1039e7a" category="inline-link-rx"></block>）またはステップバイステップの手順に従って、コントローラモジュールを 1 台のシェルフにケーブル接続します。</block>
-  <block id="592c78e6a752254c571ef3ec19ab4f02" category="list-text">アニメーションを使用します <block ref="d27a08094aa14ff3e85358b5dea53060" category="inline-link-rx"></block>）をクリックして、ラップトップを管理スイッチに接続します。</block>
   <block id="d7330da3fefbffbe126bbfae916b2005" category="list-text">savecore コマンドが完了するのを待ってからギブバックを実行します</block>
   <block id="03a45c592eebddeaf80cccbc66213075" category="paragraph">システムを完全に動作状態に戻すには、 NetApp Storage Encryption の構成をリストアし（必要な場合）、新しいコントローラのライセンスをインストールし、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。</block>
   <block id="07bcf96175c4fb31a9a4900272f1bd18" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _ node の LOADER プロンプトから「 y 」と入力し、ノードをブートします。「 boot_ontap 」</block>
@@ -8097,8 +8066,6 @@
   <block id="fa0985de926ce301def780548b1def1b" category="doc">ブートメディアの交換の概要 - AFF A250</block>
   <block id="894589cfca213bee046082fa6b4377ea" category="doc">シャーシの交換の概要 - AFF A250</block>
   <block id="a73367a24d737b005906f745ac5c73c2" category="doc">ハードウェアの交換 - AFF A250</block>
-  <block id="fd08b3e072375692cc6d546ed49d7c24" category="summary">電源装置、 NVMe ドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、障害のあるシャーシを装置ラックまたはシステムキャビネットから障害のあるシャーシと同じモデルの新しいシャーシと交換する必要があります。</block>
-  <block id="43eebcc68df0da086573863f894b0208" category="admonition">コントローラモジュールを取り外しにくい場合は、（腕を交差させて）内側から穴に人さし指を入れます。</block>
   <block id="d4ec9448190c18c9b85b138eae5cfe04" category="doc">オンボード暗号化キー（ AFF A250 ）を確認します</block>
   <block id="c0925c06c8c424f377718df251d2ae9f" category="doc">リアルタイムクロックバッテリ -FAS8300 および FAS8700 を交換してください</block>
   <block id="73e891cd10bc7a669d3df2629ca0ed7c" category="doc">NVDIMM - FAS8300 および FAS8700 を交換します</block>
@@ -8827,4 +8794,13 @@
   <block id="e9a40b7f4288ab51ddb8de2a88f0cf93" category="video-title">アニメーション- LED - USBモジュールの取り外し/取り付け</block>
   <block id="8e040b00982105244874f94450843d7a" category="video-title">アニメーション- I/Oモジュールの交換</block>
   <block id="a282c221fc0b795896ece0422f9febe5" category="paragraph">の説明に従って、SASシェルフを設置してケーブル接続します<block ref="f5c5b2b96e8da7cc3e4c1c8ae096611e" category="inline-link-rx"></block>。</block>
+  <block id="60e094d7f26e6ac73d75d8c639ed7105" category="video-title">AFF A800の設置とセットアップ</block>
+  <block id="0a54a6206c39c42f32d9673c9761380c" category="list-text">アニメーションまたは表に示す手順を使用して、コントローラとスイッチのケーブル接続を完了します。ビデオ：edc42447 -f721 -4cbe -b080 -ab0c0123a139 [panopto、title=" 2ノードスイッチレスクラスタのケーブル接続"]</block>
+  <block id="3f14fa62af19789e6b4dec547aa64aa9" category="list-text">アニメーションまたは表に示す手順を使用して、コントローラとスイッチのケーブル接続を完了します。ビデオ：49e48140-4c5a-4395-a7d7-aab0c0123a10e [panopto、title="スイッチクラスタのケーブル接続"]</block>
+  <block id="5fac6017ac5f7a2aad56f49afbe00547" category="paragraph">アニメーションまたは表形式の手順を使用して、1台のシェルフにコントローラをケーブル接続します。</block>
+  <block id="752a20127a073c8fcfed6924719fb0ed" category="paragraph">アニメーションまたは表形式の手順を使用して、2台のドライブシェルフにコントローラをケーブル接続します。</block>
+  <block id="cff7332bdf16692a2c691280471c2521" category="list-text">アニメーションに従って、ラップトップを管理スイッチに接続します。</block>
+  <block id="90497e0cc94d62e215b4a4b6706d7cda" category="paragraph">アニメーションまたは表形式の手順を使用して、コントローラとスイッチの間のケーブル接続を完了します。</block>
+  <block id="b5b86ac4620d5f1cb0b675d761c6c548" category="paragraph">アニメーションまたは表形式の手順を使用して、コントローラとスイッチの間のケーブル接続を完了します。ビデオ：bf6759dc-4cbf-488e-982e-ac68017fbef8 [panopto、title="スイッチクラスタのケーブル接続"]</block>
+  <block id="030773f8722b074a51df84aa530f0c3d" category="paragraph">アニメーションまたは表に示す手順を使用して、コントローラと単一シェルフの間のケーブル接続を完了します。</block>
 </blocks>

@@ -210,7 +210,7 @@ image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上�
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
 .手順
-. アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=edc42447-f721-4cbe-b080-ab0c0123a139["2 ノードスイッチレスクラスタをケーブル接続"^]）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
+. アニメーションまたは表に示す手順を使用して、コントローラとスイッチのケーブル接続を完了します。ビデオ：edc42447 -f721 -4cbe -b080 -ab0c0123a139 [panopto、title=" 2ノードスイッチレスクラスタのケーブル接続"]
 +
 [cols="10,90"]
 |===
@@ -279,7 +279,7 @@ image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上�
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
 .手順
-. アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=49e48140-4c5a-4395-a7d7-ab0c0123a10e["スイッチクラスタのケーブル接続"^]）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
+. アニメーションまたは表に示す手順を使用して、コントローラとスイッチのケーブル接続を完了します。ビデオ：49e48140-4c5a-4395-a7d7-aab0c0123a10e [panopto、title="スイッチクラスタのケーブル接続"]
 +
 [cols="10,90"]
 |===
@@ -435,9 +435,12 @@ image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
-.手順
-. アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=09dade4f-00bd-4d41-97d7-ab0c0123a0b4["1 台のドライブシェルフへのコントローラのケーブル接続"^] または、コントローラモジュールを 1 台のシェルフにケーブル接続するためのステップバイステップの手順を参照してください。
-+
+アニメーションまたは表形式の手順を使用して、1台のシェルフにコントローラをケーブル接続します。
+
+.1 台のドライブシェルフへのコントローラのケーブル接続
+video::09dade4f-00bd-4d41-97d7-ab0c0123a0b4[panopto]
+[+]
+
 [cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
@@ -456,8 +459,7 @@ image:../media/oie_legend_icon_2_lo.png[""]
 コントローラ B をシェルフにケーブル接続します。 image:../media/drw_affa800_1shelf_cabling_b.png[""]
 
 |===
-. システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
-
+システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
 
 
 
@@ -472,9 +474,12 @@ image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
-.手順
-. 次のアニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=fe50ac38-9375-4e6b-85af-ab0c0123a0e0["2 台のドライブシェルフへのコントローラのケーブル接続"^]）または記載された手順に従って、 2 台のドライブシェルフにコントローラをケーブル接続します。
-+
+アニメーションまたは表形式の手順を使用して、2台のドライブシェルフにコントローラをケーブル接続します。
+
+.2 台のドライブシェルフへのコントローラのケーブル接続
+video::fe50ac38-9375-4e6b-85af-ab0c0123a0e0[panopto]
+[+]
+
 [cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
@@ -493,8 +498,7 @@ image:../media/oie_legend_icon_2_lo.png[""]
 コントローラ B をシェルフにケーブル接続します。 image:../media/drw_affa800_2shelf_cabling_b.png[""]
 
 |===
-. システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
-
+システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
 
 
 
@@ -517,7 +521,10 @@ image:../media/oie_legend_icon_2_lo.png[""]
 +
 詳細については、ラップトップのオンラインヘルプを参照してください。
 
-. 次のアニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"^]）をクリックして、ラップトップを管理スイッチに接続します。
+. アニメーションに従って、ラップトップを管理スイッチに接続します。
++
+.ラップトップを管理スイッチに接続します
+video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 . 検出する ONTAP アイコンを選択します。
 +
 image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コントローラ選択]

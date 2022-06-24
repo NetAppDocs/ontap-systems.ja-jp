@@ -185,9 +185,10 @@ image::../media/oie_cable_pull_tab_down.png[OIE ケーブルのプルタブを�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
-.手順
-. アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=beec3966-0a01-473c-a5de-ac68017fbf29["2 ノードスイッチレスクラスタをケーブル接続"^]）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
-+
+アニメーションまたは表形式の手順を使用して、コントローラとスイッチの間のケーブル接続を完了します。
+
+.2 ノードスイッチレスクラスタをケーブル接続
+video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto]
 [cols="10,90"]
 |===
 | ステップ | 各コントローラでを実行します 
@@ -198,8 +199,8 @@ image:../media/oie_legend_icon_1_lg.png[""]
  a| 
 25GbE クラスタインターコネクトケーブルを使用して、クラスタインターコネクトポートを相互に接続しますimage:../media/oie_cable_sfp_gbe_copper.png[""]：
 
-** e0c から e0c へ
-** e0d から e0dimage:../media/drw_affa250_tnsc_cabling.png[""]
+* e0c から e0c へ
+* e0d から e0dimage:../media/drw_affa250_tnsc_cabling.png[""]
 
 
 
@@ -219,8 +220,7 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 この時点ではまだ電源コードをプラグに接続しないでください。
 
 |===
-. システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
-
+システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
 
 
 
@@ -237,9 +237,8 @@ image::../media/oie_cable_pull_tab_down.png[OIE ケーブルのプルタブを�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
-.手順
-. アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bf6759dc-4cbf-488e-982e-ac68017fbef8["スイッチクラスタのケーブル接続"^]）またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
-+
+アニメーションまたは表形式の手順を使用して、コントローラとスイッチの間のケーブル接続を完了します。ビデオ：bf6759dc-4cbf-488e-982e-ac68017fbef8 [panopto、title="スイッチクラスタのケーブル接続"]
+
 [cols="10,90"]
 |===
 | ステップ | 各コントローラでを実行します 
@@ -250,8 +249,8 @@ image:../media/oie_legend_icon_1_lg.png[""]
  a| 
 クラスタインターコネクトポートを 25GbE クラスタインターコネクトスイッチにケーブル接続します。
 
-** e0c
-** e0dimage:../media/drw_affa250_switched_clust_cabling.png[""]
+* e0c
+* e0dimage:../media/drw_affa250_switched_clust_cabling.png[""]
 
 
 
@@ -271,8 +270,7 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 この時点ではまだ電源コードをプラグに接続しないでください。
 
 |===
-. システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
-
+システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
 
 
 
@@ -381,8 +379,10 @@ image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上�
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
 
-. アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3f92e625-a19c-4d10-9028-ac68017fbf57["コントローラを 1 台の NS224 にケーブル接続する"^]）またはステップバイステップの手順に従って、コントローラモジュールを 1 台のシェルフにケーブル接続します。
-+
+アニメーションまたは表に示す手順を使用して、コントローラと単一シェルフの間のケーブル接続を完了します。
+
+.コントローラを 1 台の NS224 にケーブル接続する
+video::3f92e625-a19c-4d10-9028-ac68017fbf57[panopto]
 [cols="10,90"]
 |===
 | ステップ | 各コントローラモジュールでを実行します 
@@ -401,8 +401,7 @@ image:../media/oie_legend_icon_2_lo.png[""]
 コントローラ B をシェルフにケーブル接続します。 image:../media/drw_affa250_1shelf_cabling_b.png[""]
 
 |===
-. システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
-
+システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
 
 
 
@@ -425,7 +424,10 @@ image:../media/oie_legend_icon_2_lo.png[""]
 +
 詳細については、ラップトップのオンラインヘルプを参照してください。
 
-. アニメーションを使用します（link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"^]）をクリックして、ラップトップを管理スイッチに接続します。
+. アニメーションに従って、ラップトップを管理スイッチに接続します。
++
+.ラップトップを管理スイッチに接続します
+video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 . 検出する ONTAP アイコンを選択します。
 +
 image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コントローラ選択]

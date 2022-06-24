@@ -141,8 +141,8 @@ RTC バッテリを交換するには、コントローラ内でバッテリの�
 
 次のビデオまたは表に示す手順を使用して、 RTC バッテリを交換します。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6ed27f71-d3a7-4cee-8d9f-ac5b016c982d["RTC バッテリの交換"^]
-
+.RTC バッテリの交換
+video::6ed27f71-d3a7-4cee-8d9f-ac5b016c982d[panopto]
 . ヒートシンクとミッドプレーンの間にある RTC バッテリの位置を確認し、図のように完全に取り外します。
 +
 image::../media/drw_a250_remove_rtc_batt.png[DRW A250 RTC BATT を取り外します]

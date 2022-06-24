@@ -19,8 +19,8 @@ summary: ここでは、システムの設置とケーブル接続の方法を�
 
 次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=2a61ed74-a0ce-46c3-86d2-ab4b013c0030["AFF A800 の設置とセットアップ"^]
-
+.AFF A800の設置とセットアップ
+video::2a61ed74-a0ce-46c3-86d2-ab4b013c0030[panopto]
 
 
 == ビデオ 2 ：エンドツーエンドのソフトウェア設定を実行する

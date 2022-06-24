@@ -86,8 +86,8 @@ image::../media/drw_a250_remove_airduct_cover.png[DRW A250 エアダクトカバ
 
 次のビデオまたは表に示す手順を使用して、ブートメディアを交換できます。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7c2cad51-dd95-4b07-a903-ac5b015c1a6d["ブートメディアの交換"]
-
+.ブートメディアの交換
+video::7c2cad51-dd95-4b07-a903-ac5b015c1a6d[panopto]
 . コントローラモジュールから障害のあるブートメディアの場所を確認し、交換します。
 +
 image::../media/drw_a250_replace_boot_media.png[DRW A250 は、ブートメディアの交換に使用します]
