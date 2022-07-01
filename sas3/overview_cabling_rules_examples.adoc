@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: disk, shelves, shelf, iom12, module, single-controller, configuration, support, platform, sas, cabling, cable, rule, controller, shelf-to-shelf, connection, rule, controller-to-stack, mini-sas, hd, optical, cable, rule, sas cabling rules 
 summary: IOM12 モジュールを搭載した SAS ドライブシェルフをストレージシステムにケーブル接続する際に役立つ、次の SAS ケーブル接続ルール、例、およびワークシートを利用できます。 
 ---
-= SAS ケーブル接続ルール、ワークシート、および例 - IOM12 モジュールを搭載したシェルフ
+= SASケーブル接続ルール、ワークシート、概要- IOM12 / IOM12Bモジュールを使用するシェルフ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-IOM12 モジュールを搭載した SAS ドライブシェルフをストレージシステムにケーブル接続する際には、必要に応じて、利用可能な SAS ケーブル接続ルール、ワークシート、およびサンプルコンテンツを使用できます。
+IOM12 / IOM12Bモジュールを使用するSASドライブシェルフをストレージシステムに接続する場合は、必要に応じて、使用可能なSASケーブル接続ルール、ワークシート、およびサンプルコンテンツを使用できます。
 
 * SAS ケーブル接続ルール *
 

@@ -5740,7 +5740,6 @@
   <block id="7a2b8204791fefff118f35cda4159e64" category="list-text">システム付属のコンソールケーブルを使用してラップトップまたはコンソールにコンソールケーブルを接続し、ラップトップを管理サブネット上の管理スイッチに接続します。</block>
   <block id="80b38fbcbc6122c93f20a23f0edcacc5" category="image-alt">DRW A320 ラップトップをスイッチとコントローラに接続</block>
   <block id="c8fe385a2d49c957811553fa2c507091" category="summary">記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 2 つのクアッドポート SAS HBA を備えたクアッドパス HA 構成をケーブル接続できます。</block>
-  <block id="94e995b1e4aa2076765c84814247b324" category="doc">2 つのクアッドポート SAS HBA シェルフと IOM12 モジュールを使用したクアッドパス HA 構成のコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例</block>
   <block id="129ad208c03826aef81ff147b924ba05" category="inline-link-macro">SAS ケーブル接続ルール</block>
   <block id="26ba4644ea5bc8f16212e97ddf32d634" category="list-text">必要に応じて、を参照してください <block ref="db31d33614fd87795381d5ac14be04aa" category="inline-link-macro-rx"></block> サポートされる構成については、コントローラのスロット番号の規則、シェルフ / シェルフ間の接続、およびコントローラ / シェルフ間の接続（ポートペアの使用など）を参照してください。</block>
   <block id="f0cd87f18d90e4016279796c776837f8" category="inline-link-macro">クアッドパス接続でコントローラ / スタック間をケーブル接続するためのワークシートの読み取り方法</block>
@@ -5774,7 +5773,6 @@
   <block id="558b115477a065d99c298cb43b8dce82" category="image-alt">DRW fas2600 mp slot b ワークシート</block>
   <block id="c5973d1d05064577208601411fd0be8d" category="image-alt">DRW fas2600 mp slot b</block>
   <block id="0ea17a93d064afb53edf4305d17b5599" category="summary">DS460C 、 DS224C 、または DS212C ディスクシェルフでは、障害が発生した電源装置をホットスワップできます。</block>
-  <block id="e6cdd977391488a1a0918177811fc37e" category="doc">電源装置シェルフを IOM12 モジュールとホットスワップします</block>
   <block id="bf35e0ea77e327a31ac3baf63bb1253c" category="paragraph">システムの他のコンポーネント ( 他の電源装置を含む ) がすべて正常に機能している必要があります。</block>
   <block id="6c02a1910626a867fbe4d789c7beb45a" category="list-text">複数の電源装置を交換する場合は、ディスクシェルフの電源を維持するために、一度に 1 台ずつ交換する必要があります。</block>
   <block id="62b854d2d227610915feea67e81979da" category="list-text">ディスクシェルフの通気の中断を最小限に抑えるため、取り外してから 2 分以内に電源装置を交換する必要があります。</block>
@@ -5803,9 +5801,7 @@
   <block id="c190e47c300a3781bbf4edf442004427" category="list-text">電源装置に電源コードを再接続し、電源コード固定クリップを使用して電源コードを固定します。</block>
   <block id="7942c8c0a2938d554ca414a57b6286aa" category="list-text">電源スイッチをオンにします。</block>
   <block id="b30bd480240ea6cb86b54735c115a8db" category="paragraph">電源装置の電源（緑） LED と警告（黄色） LED が点灯し、 40 秒以内に警告（黄色） LED が消灯します。</block>
-  <block id="1b13b207ae1928cd420c7771c798eb3d" category="doc">IOM12 モジュールを搭載したシェルフをホットリムーブします</block>
   <block id="c5cabc5bd527563ec2a9e03c2ca16ab6" category="list-text">システムは、マルチパス HA 、マルチパス、クアッドパス HA 、またはクアッドパス構成である必要があります。</block>
-  <block id="9c2a85bd806fec2b1e3452f15f799e68" category="paragraph">AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 システムでは、外付けストレージがマルチパス HA またはマルチパスとしてケーブル接続されている必要があります。</block>
   <block id="079a7f8e81dcfa4ea9fb370c9901815f" category="admonition">外付けストレージがマルチパス接続でケーブル接続されている FAS2600 シリーズシングルコントローラシステムの場合、内蔵ストレージはシングルパス接続を使用するため、システムは混在パス構成になります。</block>
   <block id="bbf5512c7d19cdd9d9a6fd9e97d3a51b" category="list-text">システムに SAS ケーブル接続のエラーメッセージが表示されていない必要があります。</block>
   <block id="7aef33153293755f25958302c5aed92b" category="paragraph">Active IQ Config Advisor をダウンロードして実行することで、 SAS ケーブル接続に関するエラーメッセージと対処方法を確認できます。</block>
@@ -5876,12 +5872,9 @@
   <block id="60f2a3cfd26e6f6c57aebe8c8e233493" category="list-text">ラックまたはキャビネットからディスクシェルフを取り外します。</block>
   <block id="fa4c9ef92b72a4afda4eb5a196eecc3f" category="paragraph">ディスクシェルフを軽くして扱いやすくするために、電源装置と I/O モジュール（ IOM ）を取り外します。</block>
   <block id="2794022ceac3fcd7a5363d665e5359a5" category="image-alt">DRW ds460c ハンドル</block>
-  <block id="7dbdcb32c9db2612bd031043224dae8f" category="summary">ワークシートテンプレートを記入することで、コントローラの SAS ポートペアを定義できます。これらのポートを使用して、コントローラを IOM12 モジュールを搭載したディスクシェルフスタックにケーブル接続し、 HA ペアまたはシングルコントローラ構成でクアッドパス接続を実現できます。記入済みのワークシートを使用して、構成に合ったクアッドパス接続を実施することもできます。</block>
-  <block id="5cf2b662ddc9e386ea849d5a2d3ba76d" category="doc">クアッドパス接続用のコントローラ / スタック間のケーブル接続ワークシートテンプレート - IOM12 モジュールを搭載したシェルフ</block>
   <block id="f8688b55e48596e9efbee0294dc9b0af" category="list-title">彼の仕事について</block>
   <block id="0410b8cb4945f84623b17f2f6249cf4a" category="list-text">この手順およびワークシートテンプレートは、 1 つ以上のスタックを使用したクアッドパス HA またはクアッドパス構成のケーブル接続に適用されます。</block>
   <block id="70c45a3fea4e20bf8f37ec9e02cb575c" category="paragraph">記入済みワークシートの例は、クアッドパス HA 構成とクアッドパス構成を対象としたものです。</block>
-  <block id="dc5d3bbb8f9856069694ac5baf23d955" category="paragraph">ワークシート例では、 2 つのクアッドポート SAS HBA と、 IOM12 モジュールを搭載したディスクシェルフスタックを 2 台使用する構成を使用します。</block>
   <block id="65a0fc99a9081f91248c8270a5907189" category="list-text">ワークシートテンプレートは最大 2 つのスタックに対応しています。必要に応じて列を追加する必要があります。</block>
   <block id="a6272c1f6162bcbbc7fe10a8553536c2" category="list-text">コントローラ / スタック間のクアッドパス接続は、 2 セットのマルチパスケーブルで構成されます。最初のケーブル接続セットは「マルチパス」と呼ばれ、 2 番目のケーブル接続セットは「クアッドパス」と呼ばれます。</block>
   <block id="7b4d1d3384a1734579d06cee355f6f93" category="paragraph">2 番目のケーブル接続セットは「クアッドパス」と呼ばれます。このケーブル接続セットを完了すると、コントローラから HA ペアまたはシングルコントローラ構成のスタックへのクアッドパス接続が提供されます。</block>
@@ -5891,9 +5884,7 @@
   <block id="b4e4a43caabf816c003f966fc4a0f279" category="list-text">必要に応じて、を参照してください <block ref="db31d33614fd87795381d5ac14be04aa" category="inline-link-macro-rx"></block> コントローラのスロット番号の規則、シェルフ / シェルフ間の接続、およびコントローラ / シェルフ間の接続（ポートペアの使用など）については、を参照してください。</block>
   <block id="511fc491991f37919ad20aca7e974640" category="list-text">ワークシートに記入したら、必要に応じてを参照してください <block ref="22de937f8b92c8373761b256e9819f4a" category="inline-link-macro-rx"></block>。</block>
   <block id="d51e2dd4571539675d09c8266f532da7" category="image-alt">DRW ワークシートクアッドパステンプレート NAU</block>
-  <block id="0636f6be315cedb9025a2140757ddbc1" category="list-text">グレーの行の上の行に、システム内のすべての SAS A ポートと、続けてシステム内のすべての SAS C ポートをスロット順（ 0 、 1 、 2 、 3 など）に列挙します。</block>
   <block id="9c43147d4d4c774a215292ec5b9439de" category="paragraph">例： 1a 、 2a 、 1c 、 2c</block>
-  <block id="f9c6fd678079201df2e26d02d73a7912" category="list-text">グレーの行に、システム内のすべての SAS B ポートと、続けてシステム内のすべての SAS D ポートをスロットの順（ 0 、 1 、 2 、 3 など）に列挙します。</block>
   <block id="6184df819b9367f5c25fc56f0851d7b3" category="paragraph">例： 1b 、 2b 、 1d 、 2d</block>
   <block id="2cfe5da4c8722b640a9dfc5b5ab60ebf" category="list-text">グレーの行の下の行に、リストの最初のポートが末尾に移動するように、 D および B のポートリストを書き換えます。</block>
   <block id="f3bf9eec2c2f45fee4b6559b6347a72e" category="paragraph">例： 2b 、 1d 、 2d 、 1b</block>
@@ -5906,11 +5897,8 @@
   <block id="060cf3aeb3fb474b79039b8afb45b9cc" category="list-text">クアッドパス（シングルコントローラ）構成の場合は、コントローラ 2 の情報を取り消し線で削除します。コントローラ / スタックのケーブル接続にはコントローラ 1 の情報のみが必要です。</block>
   <block id="5a7e2a7578fd39d1750be23b4f5dd41d" category="paragraph">次の例は、コントローラ 2 の情報に取り消し線を引いたところを示しています。</block>
   <block id="c7e0976f97baf05a4e20821f4c8fad4d" category="image-alt">DRW ワークシート QP スロット 1 と 2 つの 4porthbas 2 つのスタック NAU</block>
-  <block id="d3d138262ed0f55d19a69189f52f03ca" category="summary">ストレージの追加が必要になった場合は、 IOM12 シェルフ（ IOM12 モジュールを搭載した SAS シェルフ）を IOM6 シェルフ（ IOM6 モジュールを搭載した SAS シェルフ）のスタックにホットアドできます。つまり、スタックを混在させることができます。</block>
   <block id="fe096ebf4601616805c78a6dbc395407" category="doc">IOM12 シェルフを IOM6 シェルフのスタックにホットアドします</block>
-  <block id="40b8c09abd3ab8cd2410441ab74e8f46" category="paragraph">IOM12 シェルフを IOM6 シェルフのスタックにホットアドする前に、 HA ペア、シングルコントローラ、またはストレッチ MetroCluster 構成（システム）が一定の要件を満たしている必要があります。</block>
   <block id="087dd70cd49bca7af2d666a6ce4a73e5" category="admonition">ブリッジ接続 MetroCluster の設定については、を参照してください <block ref="a36de82ec030fb7c465d75421f1bf354" category="inline-xref-macro-rx"></block>。</block>
-  <block id="b73981b6e178e117df039b0b4c496268" category="list-text">ご使用のシステムと ONTAP のバージョンで、同じスタック（混在スタック）に IOM6 シェルフと IOM12 シェルフを混在させることができます。</block>
   <block id="e9b78b52c00f7174e47b3e3e00f34747" category="paragraph">次のいずれかの方法でサポートを確認できます。</block>
   <block id="c87b70dfd933003335168887fda9b203" category="list-text">いずれかのコントローラの管理プロンプトで 'run local sysconfig ` コマンドを入力します</block>
   <block id="a9e6da69afc7cf19277dce38f3af6658" category="paragraph">SAS2/SAS3 Mixed Stack Support フィールドが出力に表示されない、または値が none の場合、システムは混在スタックをサポートしません。</block>
@@ -5927,14 +5915,10 @@
   <block id="c08b36d83324a217b367ef482dda6bff" category="paragraph">SAS 光ケーブルは混在スタックではサポートされません。</block>
   <block id="79558b80e68c3388b4399b11c12347ac" category="admonition">IOM6 シェルフスタックが SAS 光ケーブルでケーブル接続されている場合は、 IOM12 シェルフをホットアドできません。ネットアップの営業担当者にお問い合わせください。</block>
   <block id="8ac997f121720a497b3cff0318f505b3" category="list-text">ホットアドする IOM12 シェルフに搭載可能なドライブの数が、サポートされる最大ドライブ数よりも少なくとも少ない必要があります。</block>
-  <block id="0e37753f9ec212b577d2cd0e1d9f327e" category="paragraph">IOM12 シェルフをホットアドしたあとは、システムでサポートされる最大ドライブ数を超えることはできません。</block>
   <block id="9fae2a51848c66867a04c7747f054fe4" category="paragraph">ケーブル接続エラーがある場合は、エラーメッセージに記載されている対処策を実行して解決する必要があります。</block>
-  <block id="992139c1f07935c457369a8b228d040e" category="list-text">IOM12 シェルフ、および適切な数とタイプの SAS 銅線ケーブルを注文して受領しておく必要があります。</block>
   <block id="3969a8285624065a82b260666129a7d3" category="paragraph">IOM12 シェルフは Mini-SAS HD コネクタを使用します。IOM6 シェルフは QSFP コネクタを使用します。</block>
   <block id="c7566a05bf32290cd12dd8d369e46bd4" category="section-title">ブリッジ接続型 MetroCluster 構成のホットアドの要件</block>
-  <block id="45850248856f0338879b9cb8b4984fee" category="paragraph">MetroCluster 構成でペアの ATTO FibreBridge ブリッジを使用して接続された IOM6 シェルフのスタックに IOM12 シェルフをホットアドする場合は、システムが一定の要件を満たしている必要があります。</block>
   <block id="8c5677f5d5c9a3e27e7aa9a888386129" category="list-text">現在の構成でブリッジの SAS ポートが使用可能な場合は、 IOM12 シェルフを別のスタックとして追加する必要があります。</block>
-  <block id="15cf525c29e3077584066ec93be80b2b" category="paragraph">IOM12 モジュールと IOM6 モジュールをスタックに混在させる前に、すべてのブリッジポートを使用してください。</block>
   <block id="bd7825d41c8830b21a19c98ddcd9b85a" category="list-text">いずれかのコントローラの管理プロンプトで 'run local sysconfig ` コマンドを入力します</block>
   <block id="9d5ea5ac8c96d6d172e1cc58ef233dd1" category="list-text">構成が MetroCluster インストールおよび設定ガイドのすべての要件を満たしている必要があります。</block>
   <block id="39d46c9b8c2da59196572bcb75b09f65" category="inline-link">ストレッチ MetroCluster 構成のインストールと設定</block>
@@ -5943,11 +5927,8 @@
   <block id="21990ac0aec263e0a024057600dc893c" category="paragraph"><block ref="21990ac0aec263e0a024057600dc893c" category="inline-link-rx"></block></block>
   <block id="6e4c499bdd2966c2b90a216c4bda1fb3" category="list-text">ブリッジポートでサポートされるドライブの最大数よりも少ない数のドライブを使用する必要があります。</block>
   <block id="6da9e0f76a9feddbef77395623172c84" category="list-text">ブリッジでファームウェアバージョン 3.16/4.16 以降が実行されている必要があります。</block>
-  <block id="8c432b127601831790bd7d695c0029d0" category="paragraph">IOM12 シェルフを IOM6 シェルフのスタックにホットアドする前に、この手順に関する考慮事項とベストプラクティスを把握しておく必要があります。</block>
   <block id="3516c8ba7b35045de92853ce609c11f7" category="section-title">一般的な考慮事項</block>
-  <block id="6ba12b1b5e7e34fc318fb4e006d6eb53" category="list-text">ホットアドする IOM12 シェルフをシステムにケーブル接続する前に、ファームウェアバージョン 0260 以降を実行することを強く推奨します。</block>
   <block id="dd6fd6077c76a89a726fd6fd4df5ecd6" category="paragraph">サポート対象バージョンのシェルフファームウェアを使用している場合、ホットアドしたシェルフをスタックに正しくケーブル接続しないと、ストレージスタックのアクセスの問題から保護できません。</block>
-  <block id="fff9549320af463836f0563314d1e238" category="paragraph">IOM12 シェルフファームウェアをシェルフにダウンロードしたら、いずれかのコントローラのコンソールで「 storage shelf show module 」コマンドを入力して、ファームウェアバージョンが 0260 以降であることを確認します。</block>
   <block id="df9362a84fd3cff7395403ecc0c32568" category="list-text">無停止でのスタック統合はサポートされていません。</block>
   <block id="0f6e8d5b865b4c7c9708f487f977f5d6" category="paragraph">この手順を使用して、システムの電源がオンでデータを提供中（ I/O が実行中）になっているときに、同じシステム内の別のスタックからホットリムーブしたディスクシェルフをホットアドすることはできません。</block>
   <block id="cc2b41a35c221fb91dbefde3e869ed2d" category="list-text">この手順を使用して、該当するシェルフにアグリゲートがミラーされている場合に、同じ MetroCluster システム内でホットリムーブされたディスクシェルフをホットアドできます。</block>
@@ -6008,30 +5989,20 @@
   <block id="74ee2dd8c1c457d065bbe6699d54d9d2" category="paragraph">電源の再投入を完了するには、両方の電源スイッチをオフにし、 10 秒待ってから再度オンにする必要があります。</block>
   <block id="1127d0feda6e469dce912ad847745999" category="list-text">ホットアドするシェルフごとに手順 a~g を繰り返します。</block>
   <block id="ac6725fb813060a9b7afc55f795aae39" category="section-title">ホットアド用のシェルフをケーブル接続します</block>
-  <block id="195d94d351e70d915dbfa7ea732f64c4" category="paragraph">IOM12 シェルフを IOM6 シェルフのスタックにケーブル接続する方法は、 IOM12 シェルフが初期の IOM12 シェルフかどうか、つまりスタックに他の IOM12 シェルフがないかどうかによって異なります。 また、既存の混在スタックに IOM12 シェルフが追加であるかどうかを示します。つまり、 1 つ以上の IOM12 シェルフがスタックにすでに存在します。また、スタックにマルチパス HA 、マルチパス、シングルパス HA 、またはシングルパス接続のどれがあるかによっても異なります。</block>
   <block id="93484edf29512f42176285d1b3aaffee" category="list-text">必要に応じて準備手順を完了しておく必要があります。</block>
   <block id="7aa59d062d2da8d407e876bd47370fa0" category="paragraph"><block ref="1f1303724d0c3c3fd20087be0397e475" category="inline-xref-macro-rx"></block></block>
   <block id="f687c0bac0c7622f56dbb2b4da300a72" category="paragraph"><block ref="395b2cdcd845cc34c1cb8c041e444e72" category="inline-xref-macro-rx"></block></block>
-  <block id="7df56e2d89cedcfb19c366a5f5ba1ba3" category="list-text">IOM12 シェルフはスタック内の論理的に最後のシェルフに常にホットアドして、スタック内での 1 つの速度の移行を維持します。</block>
-  <block id="3ec286ca7aef209a82a25f8e44cfe008" category="paragraph">IOM12 シェルフをスタック内の論理的に最後のシェルフにホットアドすると、 IOM6 シェルフはグループ化されたままとなり、 IOM12 シェルフはグループ化されたままとなるため、 2 つのシェルフグループ間での移行は 1 回の速度で実行されます。</block>
   <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">例：</block>
-  <block id="35ff2a2b75ed583f6d17f8fc93c2bded" category="list-text">HA ペアでは、 IOM6 シェルフを 2 台搭載し、 IOM12 シェルフを 2 台搭載したスタック内で、 1 回の速度で移行します。</block>
   <block id="cb9ba118de906a291cd694ac2df4fdae" category="list-text">オンボードの IOM12E ストレージを使用する HA ペアでは、 IOM12 シェルフを 2 台と IOM6 シェルフを 2 台搭載したスタック内での 1 回の速度の移行を次のように表します。</block>
-  <block id="39756e456d1fa63aae03504421b7e0d3" category="paragraph">オンボードストレージポート 0b は内蔵ストレージ（エクスパンダ）のポートであり、ホットアドする IOM12 シェルフ（スタックの最後のシェルフ）に接続するため、 IOM12 シェルフのグループは維持され、スタックとオンボードの IOM12E ストレージを介して 1 つの移行が維持されます。</block>
   <block id="eadd8b5aeac3b3cac91a5861456a7daf" category="list-text">混在スタックでは、 1 つの速度での移行のみがサポートされます。これ以上の速度切り替えはできません。たとえば、スタック内に次のように 2 つの速度遷移を表示することはできません。</block>
   <block id="785690423679fc729d3390cf87c73c79" category="list-text">混在スタックに IOM6 シェルフをホットアドできます。ただし、スタック内での 1 回の移行を維持するには、 IOM6 シェルフを搭載したスタックの側面（既存の IOM6 シェルフグループ）にホットアドする必要があります。</block>
-  <block id="08da1810aa1c7164b3f9cb727aa45dee" category="list-text">IOM12 シェルフをケーブル接続するには、まず IOM A のパスの SAS ポートを接続し、続いて、スタック接続に応じて IOM B のパスについてもケーブル接続手順を繰り返します。</block>
   <block id="954499b275aa6b0244088769d4cab500" category="admonition">MetroCluster 構成では、 IOM B のパスは使用できません。</block>
-  <block id="52c0221a4c6cfa666d5a9af47d2917f3" category="list-text">最初の IOM12 シェルフ（論理的に最後の IOM6 シェルフに接続されている IOM12 シェルフ）は、常に IOM6 シェルフの円形のポート（四角形のポートではありません）に接続されます。</block>
   <block id="f260b20153205d9038127e4a15618a0f" category="list-text">SAS ケーブルのコネクタは、誤挿入を防ぐキーイングが施されているため、正しい向きで SAS ポートに取り付けるとカチッとはまります。</block>
   <block id="10ae5a4ce8cb24c89ab7989958cb34b9" category="paragraph">シェルフの場合は、 SAS ケーブルのコネクタをプルタブ（コネクタの下側）を下にして挿入します。コントローラの場合は、プラットフォームのモデルによって SAS ポートの向きが異なるため、 SAS ケーブルのコネクタの正しい向きもそれに応じて異なります。</block>
-  <block id="a1acde8be5e3eb1d79a962a3ec3f99dc" category="list-text">次の図は、 FC-to-SAS ブリッジを使用しない構成で IOM12 シェルフを IOM6 シェルフスタックにケーブル接続する場合の例です。</block>
   <block id="80e0a56bad8ed4beffb511e7a7644751" category="paragraph">この図は、マルチパス HA 接続を使用したスタック専用の図です。ただし、ケーブル接続の概念は、マルチパス、シングルパス HA 、シングルパス接続、ストレッチ MetroCluster の各構成のスタックに適用できます。</block>
   <block id="9eae6e522d01233eda31813671040bc9" category="image-alt">DRW SAS2 SAS3 混合スタック</block>
-  <block id="7634bb9cc34b77912adf964cf61c3014" category="list-text">次の図は、ブリッジ接続 MetroCluster 構成の IOM12 シェルフを IOM6 シェルフスタックにケーブル接続する場合のものです。 <block ref="3bf7d126d94220be52cd0d278e98261d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a4450110a0add0d3dc0ed544c4dc9587" category="list-text">スタック内の論理的に最後のシェルフを特定します。</block>
   <block id="dcb30e1abfaaa4b668dce7194e9a2977" category="paragraph">プラットフォームモデルとスタック接続（マルチパス HA 、マルチパス、シングルパス HA 、またはシングルパス）に応じて、論理的に最後のシェルフはコントローラの SAS ポート B と D からコントローラ / スタック間を接続するシェルフです。 または、シェルフにコントローラが接続されていない（コントローラ / スタック間の接続は、コントローラの SAS ポート A と C を介してスタックの論理的な最上位に接続されているため）。</block>
-  <block id="80eab1f919093463299353422047b939" category="list-text">ホットアドする IOM12 シェルフが IOM6 スタックに最初に追加されている IOM12 シェルフで、 IOM6 シェルフスタックに他の IOM12 シェルフがない場合は、該当する手順を実行します。</block>
   <block id="3290caa995109a5019ab331bcbb4fd8c" category="paragraph">それ以外の場合は、手順 3 に進みます。</block>
   <block id="49ae96093ef4318ebea3748695f1f2ec" category="cell">IOM6 スタック接続の状態</block>
   <block id="86ce44b3919ce611e611db5c55786de7" category="paragraph">マルチパス HA 、マルチパス、またはコントローラを論理的に最後のシェルフに接続したシングルパス HA （ストレッチ MetroCluster 構成を含む）</block>
@@ -6041,7 +6012,6 @@
   <block id="e9ba2695cb468ef719b2b099a63ad4e0" category="paragraph">それ以外の場合は、手順 e に進みます</block>
   <block id="6abc41dcfb66265b141bc0c3d6bd404f" category="list-text">最後の IOM6 シェルフの IOM A の円形のポート（手順 a から）と新しい IOM12 シェルフの IOM A ポート 1 をシェルフ / シェルフ間の接続をケーブル接続します。</block>
   <block id="01eaaf7e875b3b2171b15d76169dd9e6" category="paragraph">SAS 銅線の QSFP-miniSAS HD ケーブルを使用します。</block>
-  <block id="2cc72f294985828ae8239194b9a476d6" category="list-text">別の IOM12 シェルフをホットアドする場合は、ケーブル接続したシェルフの IOM12 シェルフの IOM A ポート 3 と次の IOM12 シェルフの IOM A ポート 1 をケーブル接続します。</block>
   <block id="8904fa6bfff4cd47f36ebe61b80ba07e" category="paragraph">SAS 銅線 Mini-SAS HD / Mini-SAS HD 間ケーブルを使用します。</block>
   <block id="e2e2c21437bf854e94458bf7484b889d" category="paragraph">それ以外の場合は、次の手順に進みます。</block>
   <block id="926c9efdfde9f0aef47047a0e5f7949b" category="list-text">コントローラまたはブリッジ（手順 a ）の同じポートを新しい最後の IOM12 シェルフの IOM A ポート 3 にケーブル接続して、コントローラ / スタック間の接続を再確立します。</block>
@@ -6055,32 +6025,20 @@
   <block id="63fc6622bd95c4421099340dd35535b4" category="list-text">ブリッジの同じポート（手順 a ）を新しい最後の IOM12 シェルフの IOM A ポート 3 にケーブル接続して、下部のブリッジ / スタック間の接続を再確立します。</block>
   <block id="87787cb4b43228e79111842d0ca7ad92" category="list-text">手順 4. に進みます。</block>
   <block id="53446fdb493b04597baa8f53eb3225a7" category="paragraph">シングルパス HA またはシングルパス。論理的に最後のシェルフへのコントローラ接続はありません</block>
-  <block id="f4dacae69a131a08b3308f001c6e0873" category="list-text">最後の IOM6 シェルフの IOM A の円形のポートと新しい IOM12 シェルフの IOM A ポート 1 の間にシェルフ / シェルフ間をケーブル接続します。</block>
   <block id="cb388561ef96ce81298a5572abedfbe4" category="list-text">IOM B について、上記の手順を繰り返します</block>
-  <block id="22a91773eeb57ff76cb3a5c7f71b152e" category="list-text">別の IOM12 シェルフをホットアドする場合は、手順 a と b を繰り返します</block>
-  <block id="f3c5d063820d8fab0d5b8261bf53b58e" category="list-text">ホットアドする IOM12 シェルフが、既存の混在したスタックに追加の IOM12 シェルフである場合、つまり 1 つ以上の IOM12 シェルフがスタック内にすでに存在する場合は、該当する手順を実行します。</block>
   <block id="fbeb13900997a66117589107666778fd" category="cell">混在スタック接続の状況</block>
   <block id="2959cd4f37c3034d02125ecfe63d8c4b" category="paragraph">マルチパス HA 、マルチパス、またはコントローラを論理的に最後のシェルフに接続したシングルパス HA 、または MetroCluster 構成のブリッジ接続</block>
-  <block id="66dcddb033d4bd30cb4de2fe9ee7faa0" category="list-text">コントローラ / スタック間のケーブルを最後の IOM12 シェルフの IOM A ポート 3 から新しい最後の IOM12 シェルフの同じポートに移します。</block>
-  <block id="11bc7941767ab282c9e15fd9a816de99" category="list-text">IOM12 シェルフを 1 台ホットアドする場合は、古い最後の IOM12 シェルフの IOM A ポート 3 と新しい最後の IOM12 シェルフの IOM A ポート 1 をケーブル接続します。</block>
-  <block id="f844247cd0a7e802d6a89619df010773" category="list-text">複数の IOM12 シェルフをホットアドする場合は、古い最後の IOM12 シェルフの IOM A ポート 3 と次の IOM12 シェルフの IOM A ポート 1 をケーブル接続し、この手順をすべての IOM12 シェルフに対して繰り返します。</block>
   <block id="f0e978aba7deb5c2e1bfcdac0c49239a" category="paragraph">追加の SAS 銅線 Mini-SAS HD / Mini-SAS HD 間ケーブルを使用します。</block>
   <block id="91398026a42b0ad3df38768d188da3be" category="list-text">IOM B についても手順 a~c を繰り返します</block>
-  <block id="877067242eddfcfbe089b6070a88be6e" category="list-text">一番下のブリッジ / スタック間ケーブルを古い最後の IOM12 シェルフから新しい最後の IOM12 シェルフの同じポートに移します。</block>
-  <block id="4bf53e71f3023c8f2e9c4997bc18ad4d" category="list-text">古い最後の IOM12 シェルフの IOM A ポート 3 と次の IOM12 シェルフの IOM A ポート 1 をケーブル接続し、この手順をすべての追加の IOM12 シェルフに対して繰り返します。</block>
-  <block id="048af402ff1884a71e180b390fb7dfec" category="list-text">古い最後の IOM12 シェルフの IOM B ポート 3 と次の IOM12 シェルフの IOM B ポート 1 をケーブル接続し、これを追加の IOM12 シェルフに対して繰り返します。</block>
-  <block id="7bcbb6f67a6b65f322cf9a44412071da" category="list-text">最後の IOM12 シェルフの IOM A ポート 3 と新しい最後の IOM12 シェルフの IOM A ポート 1 をケーブル接続します。</block>
   <block id="ddca53bb59a951feb73df1cac7e8a2a6" category="list-text">SAS 接続が正しくケーブル接続されていることを確認します。</block>
   <block id="b820bba4fa275f727b4a3ae2b2c50735" category="list-text">この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。</block>
   <block id="065b4edc8d1cf335e89ee6f896eec285" category="admonition">すべての MetroCluster 構成で手動でドライブを割り当てる必要があります。</block>
-  <block id="549f4ee0ddae14c2c93710dba70ad0eb" category="paragraph">IOM12 シェルフを IOM6 シェルフのスタックにホットアドする準備の一環として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。</block>
   <block id="ed78f3d19d8a18848ca3f130fe50ea15" category="paragraph">システムの指示に従って、シェルフのケーブル接続を完了しておく必要があります。</block>
   <block id="30c116b6226c332ac17e3d64d35b521e" category="paragraph"><block ref="0f7f1fe381af78fb10727d6c8cdc10ea" category="inline-xref-macro-rx"></block></block>
   <block id="459fd1f74de9761aa97f3f008fbdb134" category="list-text">各ドライブを割り当てます。「 storage disk assign -disk disk_name -owner_owner_name _ 」</block>
   <block id="c614b3d5d45f850c2de661cead70f602" category="list-text">必要に応じて自動ドライブ割り当てを再度有効にします。「 storage disk option modify -node node_name -autoassign on</block>
   <block id="f838a919336ed5d0c1d74549f6259a40" category="paragraph">HA ペアを使用する場合は、両方のコントローラモジュールで自動ドライブ割り当てを再度有効にする必要があります。</block>
   <block id="44491eb0ab54400161157cb853b6a2bb" category="summary">DS224C または DS212C ディスクシェルフでは、障害が発生したディスクドライブをホットスワップできます。</block>
-  <block id="cc20500337dd3f196d85408377bada8a" category="doc">IOM12 モジュールを搭載した DS224C または DS212C ディスクシェルフ内のディスクドライブのホットスワップ</block>
   <block id="988e6420e48ac7b198915b1d8e0756b4" category="list-text">取り付けるディスクドライブが、 DS224C または DS212C ディスクシェルフでサポートされている必要があります。</block>
   <block id="76020e99d95549721b5520de732b01f5" category="list-text">取り外すディスクドライブは、障害状態でなければなりません。</block>
   <block id="6fb3647f42df873b2d4553200bca36bd" category="paragraph">「 storage disk show -broken 」コマンドを実行して、ディスクドライブが障害状態であることを確認できます。障害ディスクドライブは、障害ディスクドライブのリストに表示されます。表示されない場合は、少し待ってからもう一度コマンドを実行してください。</block>
@@ -6139,10 +6097,7 @@
   <block id="00970b07def0346373e788e10d6493b3" category="paragraph">ワイルドカード文字を使用すると、一度に複数のディスクを割り当てることができます。</block>
   <block id="6945b44586dc88e4263f108e9be99095" category="list-text">必要に応じて、自動ドライブ割り当てを再度有効にします。「 storage disk option modify -node _node_name -- autoassign on 」</block>
   <block id="1bf8504be438eafdf786f7fef56996eb" category="paragraph">HA ペアの場合、両方のコントローラで自動ドライブ割り当てを再度有効にする必要があります。</block>
-  <block id="8a1a993c74cc431e2e022e6bd26ad915" category="summary">ドライブドロワーを交換する前に、ホストの I/O アクティビティをすべて停止し、シェルフの電源をオフにする必要があります。</block>
-  <block id="1d7bbe9c194670e89233cc6c1dc79534" category="paragraph">これらの 60 ドライブシェルフには、それぞれ 5 つのドライブドロワーが搭載されています。</block>
   <block id="efdce0991089cb793985d216e3fc1bbc" category="image-alt">28 DWG e2860 de460c フロントノーコールアウト</block>
-  <block id="76ad7e322a2be745998c576cb12affcd" category="paragraph">5 台の各ドロワーに最大 12 本のドライブを搭載できます。</block>
   <block id="a83cb446c51cb0bdbc4bec489e45b406" category="paragraph">この手順に必要な項目は次のとおりです。</block>
   <block id="4b4b58cabc76886a516816c3c1dca8a2" category="list-text">静電気防止手段</block>
   <block id="a3dfcf9f8add4df0b4976c41ffa8abb2" category="admonition">* ハードウェアの破損の可能性： * 静電気によるドライブシェルフの破損を防ぐために、ドライブシェルフ部品を扱うときは、必ず静電気防止処置を適切に行ってください。</block>
@@ -6150,7 +6105,6 @@
   <block id="68103d0e27146f9689251724a7fbf29f" category="list-text">交換用の左右 2 つのケーブルチェーン</block>
   <block id="75b0ae11d26c806413ef6e8aed1ece4f" category="list-text">懐中電灯</block>
   <block id="12cd6af9147d69765327244240949e1f" category="paragraph">DS460C ドライブシェルフの各ドライブドロワーの左右のケーブルチェーンは、ドロワーの出し入れに使用ます。ドライブドロワーを取り外す前に、両方のケーブルチェーンを取り外す必要があります。</block>
-  <block id="b4aaf296207d91e05752ac7857824f14" category="list-text">ホストの I/O アクティビティを停止し、シェルフの電源をオフにしておきます。</block>
   <block id="295e1710be0bb53c45ab0ed9001e275c" category="list-text">次のものを用意します。</block>
   <block id="b8e03a6c06c2200508949dce7bb9580b" category="admonition">* ハードウェアの破損の可能性： * 静電気によるシェルフの破損を防ぐために、シェルフ部品を扱うときは、必ず静電気防止処置を適切に行ってください。</block>
   <block id="5e3358e3eacc9b9fa8f984ee64d7ecea" category="paragraph">各ドライブドロワーに左右 2 つのケーブルチェーンがあります。ケーブルチェーンの金属製の両端をエンクロージャ内部の対応する水平ガイドレールと垂直ブラケットに沿って次のようにスライドします。</block>
@@ -6234,7 +6188,6 @@
   <block id="d6ff75ca96a3f7b0da1db5214e2a5a07" category="list-text">ドロワーを外側に押して両方のレバーを閉じ、スライドしてドライブシェルフに戻します。</block>
   <block id="88ca50989638a87f86de89481f4cf935" category="admonition">* 機器の故障のリスク： * 両方のレバーを押してドライブドロワーを完全に閉じてください。適切な通気を確保して過熱を防ぐために、ドライブドロワーを完全に閉じる必要があります。</block>
   <block id="55451c7cebd8269f03ecac9742984329" category="list-text">ドライブシェルフの前面にベゼルを取り付けます。</block>
-  <block id="0170a7ad27d76cb01573cd1f22614cf7" category="paragraph">ドライブドロワーを取り付ける最後の手順では、左右のケーブルチェーンをドライブシェルフに取り付けます。ケーブルチェーンを取り付けるときは、ケーブルチェーンを取り外したときと逆の順序で作業します。チェーンの水平コネクタをエンクロージャの水平ブラケットに挿入してから、チェーンの垂直コネクタをエンクロージャの垂直ブラケットに挿入する必要があります。</block>
   <block id="4ab9a12c053dc60c1cfdd6c7dd07687e" category="list-text">ドライブドロワーとすべてのドライブを交換しておきます。</block>
   <block id="72774896cf4456a17908ca4b102fbb02" category="list-text">「 LEFT 」および「 RIGHT 」というマークが付いた 2 つの交換用ケーブルチェーンを用意しておきます（ドライブドロワーの横の水平コネクタにあります）。</block>
   <block id="b65bb2c36cf61ca817a09197efa2a05a" category="image-alt">28 DWG e2860 de460c ケーブルチェーン左</block>
@@ -6269,8 +6222,6 @@
   <block id="959229536cc29f3d3dabc76fbb3f7e34" category="list-text">電源を再投入します。</block>
   <block id="f3c63ac44190e806f7590f75016082ad" category="list-text">ドライブシェルフの両方の電源スイッチをオンにします。</block>
   <block id="39cc2d6f5935ef61ab1eac11e4ea2a0a" category="list-text">両方のファンが稼働し、ファンの背面にある黄色の LED が消灯していることを確認します。</block>
-  <block id="d1479d59dda9c56be3c9adea79b989b3" category="summary">ワークシートテンプレートを記入することで、コントローラの SAS ポートペアを定義できます。これらのポートを使用して、コントローラを IOM12 モジュールを搭載したディスクシェルフスタックにケーブル接続し、 HA ペアまたはシングルコントローラ構成でマルチパス接続を実現できます。記入済みのワークシートを使用して、構成に合ったマルチパス接続を実施することもできます。</block>
-  <block id="26425c0bd2eccee0c97ce278e5e6c90d" category="doc">マルチパス接続用のコントローラ / スタック間のケーブル接続ワークシートテンプレート - IOM12 モジュールを搭載したシェルフ</block>
   <block id="cea3ccc996d16531a1bdc296b2d6851c" category="paragraph">HA ペアまたはシングルコントローラ構成を、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、または FAS2700 システムにすることはできません。これらの構成のいずれかがある場合は、次のコマンドを使用します。</block>
   <block id="c938619c45a867da395e1f0213cdb4b0" category="inline-link-macro">一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 構成のコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例</block>
   <block id="8298bd1953102e090c7ee364e7677f25" category="paragraph"><block ref="8298bd1953102e090c7ee364e7677f25" category="inline-link-macro-rx"></block></block>
@@ -6293,7 +6244,6 @@
   <block id="e4a252d9b1af57bdcc80fe662dcbc613" category="list-text">シングルコントローラ（マルチパス）構成の場合は、コントローラ 2 の情報を取り消し線で削除します。</block>
   <block id="9a3590de6db32aab0916b85a06f72852" category="image-alt">DRW ワークシート mp テンプレート</block>
   <block id="0ed20e374c19ba1929de6bdbbdd59fb4" category="summary">ディスクシェルフコンポーネントの LED の場所とステータスの状態を把握することで、ディスクシェルフのヘルスを監視できます。</block>
-  <block id="8c959dd2d40819c11d5abe3b406d68bf" category="doc">ディスクシェルフの LED を監視 - IOM12 モジュールを搭載したシェルフ</block>
   <block id="a93d9d3aea843199027168d521da5dea" category="section-title">オペレータディスプレイパネルの LED</block>
   <block id="3b4ebd8e7c477a0f7a960c9c6a4ce31f" category="paragraph">ディスクシェルフ前面のオペレータ用ディスプレイパネルの LED は、ディスクシェルフが正常に機能しているか、ハードウェアに問題があるかを示します。</block>
   <block id="13e60e94f01a2770d6906d572edb4e16" category="paragraph">次の表に、 DS460C 、 DS224C 、および DS212C の各ディスクシェルフで使用されるオペレータディスプレイパネルの 3 つの LED を示します。</block>
@@ -6386,7 +6336,6 @@
   <block id="9a0daa08283e3d5284734f7a4dd54c88" category="image-alt">ドライブ上の 2860 DWG オレンジ</block>
   <block id="6c6102fba9a6a67d68f726fd9a0aaa6a" category="cell">警告 LED ライトが点灯します</block>
   <block id="e1dd44433fde96fb10259b3ccdf4b8b6" category="summary">DS460C ディスクシェルフ内の障害が発生したディスクドライブをホットスワップすることができます。</block>
-  <block id="43c3117e7c2816fe7d548359181f4463" category="doc">IOM12 モジュールを搭載した DS460C ディスクシェルフ内のディスクドライブのホットスワップ</block>
   <block id="be233bc92e2ebd68f0afba0d549e1989" category="list-text">交換用ディスクドライブが DS460C ディスクシェルフでサポートされている必要があります。</block>
   <block id="d4639e1d22aa97da774c8bd77f8fb9a4" category="list-text">DS460C ドライブシェルフにはドライブドロワーが 5 つあり（上から順にドロワー 1~5 ）、各ドロワーにドライブスロット 12 個あります。</block>
   <block id="b04a9ecb43c98234e0c97b118b532535" category="list-text">次の図は、シェルフ内の各ドライブドロワーにおける 0~11 のドライブ番号の配置を示しています。</block>
@@ -6422,11 +6371,6 @@
   <block id="2b32b77ba47a9eb4e4ae432ff5ebe13c" category="list-text">手順 1 でディスク所有権の自動割り当てを無効にした場合は、ディスク所有権を手動で割り当ててから、必要に応じてディスク所有権の自動割り当てを再度有効にします。</block>
   <block id="186dc485e480d9000a7fa38e93da5aa0" category="list-text">必要に応じてディスク所有権の自動割り当てを再度有効にします「 storage disk option modify -node _node_name _-autoassign on 」</block>
   <block id="cc6b9d9108c7e95955c2723ace2cce93" category="paragraph">HA ペアの場合、両方のコントローラでディスク所有権の自動割り当てを再度有効にする必要があります。</block>
-  <block id="18cff2776742187179445dc30242e8e9" category="summary">IOM12 モジュールを搭載したディスクシェルフは、 HA ペアおよびシングルコントローラ構成でケーブル接続できます（サポート対象のプラットフォームの場合）。</block>
-  <block id="97f136905a79484f9d05c2fde9c02854" category="doc">SAS ケーブル接続ルール - IOM12 モジュールを搭載したシェルフ</block>
-  <block id="c0e65a17a528ead03d44199c3ff6bb20" category="paragraph">IOM12 モジュールを搭載したディスクシェルフは、 SAS ケーブル接続ルール（設定ルール、コントローラのスロット番号のルール、シェルフ間の接続ルール、コントローラ / スタック間の接続ルール、および該当する場合は Mini-SAS HD SAS 光ケーブルルール）を適用することで、 HA ペアおよびシングルコントローラ構成（サポート対象プラットフォームの場合）でケーブル接続できます。</block>
-  <block id="66b998f7d7fdfbd68d264a714d8ea3ac" category="admonition">このガイドで説明する SAS ケーブル接続ルールのうち、コントローラスロットの番号のルール、シェルフ / シェルフ間の接続ルール、およびコントローラ / スタック間の接続ルールは、 IOM12 、 IOM6 、 IOM3 のどのモジュールを搭載しているかにかかわらず、すべての SAS ディスクシェルフに適用されるルールと同じです。ただし、このガイド内の情報は、 IOM12 モジュールを搭載したディスクシェルフをサポート対象の構成で使用した場合に固有のものです。</block>
-  <block id="d39cd902472dfe0f14223c46b811932b" category="paragraph">このガイドで説明する SAS ケーブル接続ルールのうち、構成ルールと Mini-SAS HD SAS 光ケーブルルールは、 IOM12 モジュールを搭載したディスクシェルフに固有のものです。</block>
   <block id="13a358753c734e014332022a647326d0" category="paragraph">このガイドで説明する SAS ケーブル接続ルールは、オンボード SAS ポートとホストバスアダプタ SAS ポート間の SAS ケーブル接続のバランスを取ることで、可用性の高いストレージコントローラ構成を実現し、次の目標を達成します。</block>
   <block id="e650f09b3c5e7082570989f690e937f2" category="list-text">すべての SAS 製品と構成に、わかりやすい単一のユニバーサルアルゴリズムを提供します</block>
   <block id="87d052f6b61021fdd81a25737c46faf1" category="list-text">Bill of Materials （ BOM ；構成品一覧表）を生成する際、工場と現場と同じ物理的なケーブル接続を行います</block>
@@ -6556,12 +6500,9 @@
   <block id="89f40cf9c4aa9d777ca58d0c2a8b2c91" category="list-text">シェルフ / シェルフ間の接続に使用するケーブルは、スタック単位で SAS 銅線ケーブルか SAS 光ケーブルのどちらかにすべて統一する必要があります。</block>
   <block id="9d3db7bfcd4e676bd510caab64ec8d51" category="list-text">シェルフ / シェルフ間の接続に SAS 光ケーブルを使用する場合は、そのスタックのコントローラ / スタック間の接続にも SAS 光ケーブルを使用する必要があります。</block>
   <block id="02a51574500eff63a08bc1c345282e3c" category="list-text">シェルフ / シェルフ間の接続に SAS 銅線ケーブルを使用する場合は、そのスタックのコントローラ / スタック間の接続に SAS 光ケーブルまたは SAS 銅線ケーブルを使用できます。</block>
-  <block id="e528f2a51a17d9bc176b9c9c5872d278" category="doc">SAS シェルフと IOM12 モジュール</block>
   <block id="7a48725aae87c25c20800da734657f8d" category="summary">以下の例は、マルチパス接続用の IOM12 モジュールを搭載したディスクシェルフで、記入済みのワークシートの内容を適用してコントローラとスタックをケーブル接続する方法を示しています。</block>
-  <block id="3d08def89864cfe0e473db695c3b8b2c" category="doc">IOM12 モジュールを搭載したマルチパス接続シェルフでコントローラ / スタック間をケーブル接続するためのワークシートの読み取り方法</block>
   <block id="34a29535255d4c9658cf8667fb70f827" category="paragraph">HA ペアまたはシングルコントローラ構成を、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、または FAS2700 システムにすることはできません。これらのシステムでは固有のワークシートを使用します。</block>
   <block id="d69f8bb928c8179d4a1d81a77b9f6a4c" category="list-text">この手順では、次のワークシートとケーブル接続例を使用して、ワークシートに基づいてコントローラ / スタック間をケーブル接続する方法を示します。</block>
-  <block id="59da566889699a19d7cab68c1fde27b4" category="paragraph">この例では、各コントローラにクアッドポート SAS HBA を 2 つ（ SAS ポート × 8 ）を備え、 IOM12 モジュールを搭載したディスクシェルフスタックを 2 台を使用するマルチパス HA 構成を使用します。ワークシート内のポートペアを 1 つおきにケーブル接続します。</block>
   <block id="a513cfe8d83ba38ea85b01260a4ffb53" category="list-text">シングルコントローラ構成の場合は、 2 台目のコントローラにケーブル接続する手順 b と d を省略します。</block>
   <block id="cd0bbcf8c45ff326b72c889eab8250c0" category="paragraph">ワークシートの他のすべてのポートペア 1a / 2b と 1c / 2d を使用してポートペアをケーブル接続します。</block>
   <block id="2674e8f8d480cc5fce26a4245094489c" category="image-alt">DRW mpha スロット 1 と 2 つの 4 ポートバス 2 つのスタックがスキップされました</block>
@@ -6575,11 +6516,6 @@
   <block id="cf193b10262dc0395319f1c386aa2c47" category="list-text">コントローラ 2 のポート 1c をスタック 2 の最初のシェルフの IOM B ポート 1 にケーブル接続します。</block>
   <block id="c846357c379e2344f2de5f5720e4401d" category="list-text">コントローラ 1 のポート 2d をスタック 2 の最後のシェルフの IOM B ポート 3 にケーブル接続します。</block>
   <block id="88e5588df4d246ce2bcf7dec06ebfc76" category="list-text">コントローラ 2 のポート 2d をスタック 2 の最後のシェルフの IOM A ポート 3 にケーブル接続します。</block>
-  <block id="545b7f30ad2af93efecde12bf09f62e6" category="summary">IOM12 モジュールを搭載した 1 台以上のディスクシェルフを、 IOM12 モジュールを搭載した既存のディスクシェルフのスタックにホットアドできます。または、 IOM12 モジュールを搭載した 1 台以上のディスクシェルフのスタックを、コントローラ上の SAS HBA またはオンボード SAS ポートに直接ホットアドできます。</block>
-  <block id="ad0264cd7ad787d24cf6bc55ad39025a" category="doc">IOM12 モジュールを搭載したシェルフをホットアドします</block>
-  <block id="ea8b0ca4b7e403da928bc7458ed61d7d" category="paragraph">この手順ではスタックを混在させることはできません。 IOM12 モジュールを搭載したシェルフを IOM6 モジュールを搭載したシェルフのスタックにホットアドします。スタックを混在させる必要がある場合は、を使用します <block ref="262c980c58c743dada67cf3fc593aeaa" category="inline-link-macro-rx"></block>。</block>
-  <block id="c920d4841ecd46b57d9a50e7295a2153" category="section-title">IOM12 モジュールを搭載したディスクシェルフのホットアド要件</block>
-  <block id="53b7e29a0202cff09b03c6aa753604ba" category="paragraph">IOM12 モジュールを使用してディスクシェルフをホットアドするためには、システムが特定の要件を満たしている必要があります。</block>
   <block id="de33df5f9c0e7cad9f4a80efe6b64037" category="section-title">システムの状態</block>
   <block id="ca56cd02a36881bbfbd303ad25ed02ab" category="list-text">ご使用のシステムと ONTAP のバージョンが、ホットアドするディスクシェルフとその IOM 、ディスクドライブ、 SAS ケーブルをサポートしている必要があります。</block>
   <block id="87f977ab6d3b14c09f67014c03174f98" category="list-text">システムのディスクドライブ数が、サポートされる最大ディスクドライブ数よりも少なくともホットアドするディスクシェルフの数だけ少ない必要があります。</block>
@@ -6592,13 +6528,8 @@
   <block id="8a6093bb74b1d54ff4762774f2de06dc" category="list-text">ディスクシェルフのスタックに Mini-SAS HD SAS 光ケーブルまたは Mini-SAS HD SAS 光ケーブルと SAS 銅線ケーブルを使用している場合は、のルールを満たす必要があります <block ref="981073c6c3d6ceff62f8d350a20e9ca2" category="inline-link-macro-rx"></block>。</block>
   <block id="db4ec39badc4cbb7bab7bcf31386f4c9" category="list-text">SAS 銅線ケーブルで接続されたディスクシェルフのスタックに Mini-SAS HD SAS 光ケーブルを使用してディスクシェルフをホットアドする場合は、両方のケーブルを一時的にスタック内に混在させることができます。</block>
   <block id="bea8d9a74a333358da573c569f901a16" category="paragraph">ディスクシェルフの活性増設が完了したら、のルールに従って、スタック内の残りのシェルフ / シェルフ間の接続と、コントローラ / スタック間の接続に使用している SAS 銅線ケーブルを交換する必要があります <block ref="981073c6c3d6ceff62f8d350a20e9ca2" category="inline-link-macro-rx"></block>。つまり、必要となる本数の Mini-SAS HD SAS 光ケーブルを用意しておく必要があります。</block>
-  <block id="fe2f7deb9ab9cd3d0af8a260fc8b5c59" category="section-title">IOM12 モジュールを搭載したディスクシェルフのホットアドに関する考慮事項</block>
   <block id="91d741bb049c9a466853b4ad38bb8ca8" category="paragraph">ディスクシェルフをホットアドする前に、この手順に関する考慮事項とベストプラクティスを把握しておく必要があります。</block>
-  <block id="c5e36545fdd9f98fe69543998623a3e2" category="list-text">（ IOM12 モジュールを搭載したディスクシェルフの）既存のスタックに IOM12 モジュールを搭載したディスクシェルフをホットアドする場合は、スタックのどちらかの終端（論理上最初または最後のディスクシェルフ）にディスクシェルフをホットアドできます。</block>
   <block id="f0e56e4ad757d6fad89dfcfe1aa12d88" category="paragraph">シングルパス HA およびシングルパス構成の場合は、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 システムの場合、コントローラに接続されていないスタックの終端にディスクシェルフをホットアドします。</block>
-  <block id="04a87706f976ad08a4ef07399d6e9fac" category="list-text">IOM12 モジュールを搭載したディスクシェルフは、そのシェルフ専用のスタックに配置する必要があります。 IOM6 モジュールまたは IOM3 モジュールを搭載したシェルフを搭載したスタックには追加できません。</block>
-  <block id="2265fccf5f84cc4b1d60215d82415c82" category="paragraph">この手順では、スタックの混在はサポートされません。 IOM12 モジュールを搭載したシェルフを IOM6 モジュールを搭載したシェルフのスタックにホットアドします。</block>
-  <block id="225b02e59ad97380e70691c81e696827" category="list-text">1 つのシステムに、 IOM12 モジュールを搭載したマルチパススタックのディスクシェルフとクアッドパススタックのディスクシェルフを配置することができます。</block>
   <block id="1367c0042a0771df50820889203cf147" category="paragraph">HA ペアを使用している場合、 ONTAP ではシステム構成が「マルチパス HA 」と表示されます。シングルコントローラ構成の場合、 ONTAP ではシステム構成が「マルチパス」として表示されます。</block>
   <block id="23799cee6c2d33512d5d7c2c4dd066da" category="list-text">この手順は、インバンド ACP を使用した構成であることを前提としています。</block>
   <block id="0a21ef57c079b8fb55adaac84e5c7dc9" category="paragraph">インバンド ACP が有効な構成では、ホットアドしたディスクシェルフでインバンド ACP が自動的に有効になります。インバンド ACP が有効でない構成では、ホットアドしたディスクシェルフは ACP 機能なしで動作します。</block>
@@ -6614,7 +6545,6 @@
   <block id="a8f84b584f326bb48cbda73cc904bb0e" category="list-text">パフォーマンスの低下を防ぐために、ケーブルをねじったり、折り曲げたり、はさんだり、踏みつけたりしないでください。</block>
   <block id="36e5b31f4aed96fe11cffb4a6666f9f7" category="paragraph">ケーブルには最小曲げ半径があります。ケーブルメーカーの仕様では、最小曲げ半径を定義していますが、一般的な目安としてはケーブル直径の 10 倍の曲げ半径があります。</block>
   <block id="2b9663ad46a5f2dcd8c2fffdba003269" category="list-text">システムケーブルを結束、固定するために、タイラップの代わりにベルクロラップを使用すると、ケーブルを簡単に調整できます。</block>
-  <block id="06dfcb3b1a9c224a29ae8981c6882d18" category="section-title">ホットアド用の IOM12 モジュールを搭載したディスクシェルフの設置</block>
   <block id="4e24ff050030d18996425f4adbef1c69" category="paragraph">ディスクシェルフをホットアドするには、各ディスクシェルフについて、ラックに取り付け、電源コードを接続し、電源を入れ、ディスクシェルフ ID を設定してから、 SAS 接続をケーブル接続します。</block>
   <block id="82fd485bd66b7a7cf95b41701aff95f4" category="list-text">ホットアドするディスクシェルフごとに、 HA ペアまたはシングルコントローラ構成内で一意の ID を設定します。</block>
   <block id="437cff47077287b8acaab6cf6eb3f66e" category="inline-link-macro">シェルフ ID を変更します</block>
@@ -6625,7 +6555,6 @@
   <block id="caf1406d08cb4aa05b7a22c96cfe7c00" category="paragraph">10 秒以上待ってから電源を再投入し、電源再投入を完了します。</block>
   <block id="e721fed5752af28a811f95c9517647d5" category="paragraph">ディスクシェルフに電源を再投入するまで、シェルフ ID が点滅し、オペレータ用ディスプレイパネルの黄色の LED が点滅します。</block>
   <block id="114b5f5f60d5305cae68f7358becbb08" category="list-text">ホットアドするディスクシェルフごとに、手順 a~d を繰り返します。</block>
-  <block id="7eb22faea0fdcb1766826a0a35cc21d9" category="section-title">ホットアド用の IOM12 モジュールを搭載したディスクシェルフのケーブル接続</block>
   <block id="7d1f085b961baef4ee505ff0b202f8af" category="paragraph">SAS 接続（シェルフ / シェルフ間およびコントローラ / スタック間）を、ホットアドしたディスクシェルフがシステムに接続されるようにケーブル接続します。</block>
   <block id="25144a0fdc573490379af60a79ce8953" category="paragraph">に記載された要件を満たしている必要があります <block ref="b97fb0f13d8cc81479b53e89d9178105" category="inline-xref-macro-rx"></block> およびの手順に従って、各ディスクシェルフの設置、電源投入、シェルフ ID の設定を行います <block ref="1559829c998f121990e6747d77c5c076" category="inline-xref-macro-rx"></block>。</block>
   <block id="634f97c34a23666fd57c06fc0817e89c" category="inline-link-macro">シェルフ / シェルフ間の SAS 接続ルール</block>
@@ -6679,7 +6608,6 @@
   <block id="6a220954edf12040894af14cc9669600" category="list-text">インバンド ACP を実行している構成の場合は、ホットアドしたディスクシェルフでインバンド ACP が自動的に有効になっていることを確認します。「 storage shelf acp show</block>
   <block id="cf4c2211d1e7e05578f4d644efc4b0f5" category="paragraph">出力では ' 帯域内 "" は各ノードでアクティブと表示されます</block>
   <block id="1a9e0b4a2336d16f8663305e4fc18c6f" category="summary">コントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 HA ペアをマルチパス HA 構成としてケーブル接続できます。</block>
-  <block id="1cd676616010f77b0108acce219a8b0c" category="doc">一般的なマルチパス HA 構成 - IOM12 モジュールを搭載したシェルフのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例</block>
   <block id="7ab9991308c3a3d15fb6ed5c7a347e31" category="list-text">必要に応じて、を参照してください <block ref="32f1048d76ed4ef07349228b731694c0" category="inline-link-macro-rx"></block>。</block>
   <block id="f36fd727bb50e27882dbe086058bd373" category="list-text">ケーブル接続例では、コントローラ / スタック間のケーブル接続のうち、コントローラ A と C のポート接続を実線で、コントローラ B と D のポート接続を点線で区別して表しています。</block>
   <block id="0263bf92f1b077873ca5f3be62ee7999" category="image-alt">DRW コントローラからスタックへのケーブルカラーキー非 2600 4stackcolors</block>
@@ -6719,49 +6647,24 @@
   <block id="6c41b1568b5db604b91d32b896598e73" category="paragraph">次のワークシートとケーブル接続例では、ポートペアをスキップしてリスト内の別のポート 0a / 1b および 0c / 1d を使用しています。</block>
   <block id="6ef763da442e6cc67ed639f83a4e7b31" category="image-alt">DRW ワークシート mpha スロット 0 および 8 ポート x 2 スタックスキップ</block>
   <block id="cc1b17d485465e67146abdf8583e715e" category="image-alt">DRW mpha スロット 0 と 8 ポート 1 個のスタックがスキップされました</block>
-  <block id="f8c97b417197858bb1f9147d5bbd3cf0" category="summary">IOM12 モジュールに障害が発生した場合に無停止で IOM12 モジュールのホットスワップを実行できるか、停止を伴う IOM12 モジュールの交換が必要かは、システム構成に応じて決まります。</block>
-  <block id="5e47682a1985f4894dfbfddf0ca6a7c0" category="doc">IOM12 モジュールシェルフを IOM12 モジュールとホットスワップするか交換します</block>
-  <block id="eaabc4ed2d3de90d6a5c09556c1edeb8" category="paragraph">システム内のその他すべてのコンポーネント（他の IOM12 モジュールを含む）が正常に動作している必要があります。</block>
-  <block id="6cee96067a1efcb3a61f577e2a8f1184" category="list-text">マルチパス（マルチパス HA またはマルチパス構成およびクアッドパス（クアッドパス HA またはクアッドパス）構成の場合、 IOM12 モジュールをホットスワップ（電源がオンでデータを提供中のシステムで IOM12 モジュールを無停止で交換）できます。</block>
-  <block id="3aaa7a9c570e3b4cd2d8bdba063cdbaa" category="list-text">FAS2600 シリーズおよび FAS2700 のシングルパス HA 構成の場合、テイクオーバーとギブバックの処理を実行して、電源がオンでデータを提供中のシステム内の IOM12 モジュールを交換する必要があります。 - I/O が実行中です。</block>
-  <block id="2dd34de95504caaf6b1dafbc6cb31441" category="list-text">FAS2600 シリーズのシングルパス構成の場合、 IOM12 モジュールを交換するためにはシステムを停止する必要があります。</block>
-  <block id="0b2f1c77b2be0a8345d37e4ef2de10eb" category="admonition">シングルパス接続されたディスクシェルフの IOM12 モジュールをホットスワップしようとすると、そのディスクシェルフおよびその下のすべてのディスクシェルフ上のディスクドライブへのアクセスがすべて失われます。システム全体を停止することもできます。</block>
-  <block id="146d490dd0ddc3140a4ab9577c82037e" category="list-text">新しい IOM12 モジュールのディスクシェルフ（ IOM ）ファームウェアが最新のファームウェアバージョンでない場合、自動的に（無停止で）更新されます。</block>
-  <block id="840389739654a0cb6ff81790e58d65b4" category="paragraph">IOM ファームウェアは 10 分おきにチェックされます。IOM ファームウェアの更新には最大 30 分かかることがあります。</block>
-  <block id="488593fc66b12c24bc9d860a028e60be" category="list-text">新しい IOM12 モジュールを開封し、ディスクシェルフの近くの平らな場所に置きます。</block>
-  <block id="78134d8ce26abe81b7c2223710056ac1" category="paragraph">梱包材は、障害が発生した IOM12 モジュールを返却するときのためにすべて保管しておいてください。</block>
-  <block id="b9a0ba621d77a5a69ac7a9387e2f73b6" category="list-text">システムコンソールの警告メッセージと、障害が発生した IOM12 モジュールの警告（黄色） LED から、障害が発生した IOM12 モジュールを物理的に特定します。</block>
   <block id="44a79028b8e2f56c8d1164ae1aedc076" category="list-text">使用している構成に応じて、次のいずれかの操作を実行します。</block>
   <block id="e8599f3c8ef213317efbf60b0379685c" category="cell">使用する方法</block>
   <block id="099e230bc4db13968f2d136f79693703" category="paragraph">マルチパス HA 、マルチパス、クアッドパス HA 、またはクアッドパス構成</block>
-  <block id="e5f82022af06b90c12e35d576cc0c3d9" category="paragraph">FAS2600 シリーズおよび FAS2700 のシングルパス HA 構成</block>
-  <block id="f21eb9917cf294050cfae63d1ed7ed58" category="list-text">ターゲットノード（障害が発生した IOM12 モジュールが所属するノード）を特定します。</block>
   <block id="1e5e667063d28d41ec828c8438a56b89" category="paragraph">IOM A はコントローラ 1 に属しています。IOM B はコントローラ 2 に属しています。</block>
   <block id="8dc0ad92e4b342d1741894f5ae7ffbe9" category="list-text">ターゲットノードをテイクオーバーします。「 storage failover takeover -bynode _ partner ha node_ 」</block>
   <block id="1e78ab40bbabb204b7d418ad7a32f801" category="paragraph">FAS2600 シリーズのシングルパス構成</block>
   <block id="afd363af41e03520500b30751b522491" category="list-text">システムコンソールからシステムをシャットダウンします</block>
   <block id="e8403bb6f96eb0e9dd855761d673bcfb" category="list-text">ストレージシステムコンソールをチェックして、システムが停止したことを確認します。</block>
-  <block id="e86a0c790fd7c6f5dbf58f5c6870324b" category="list-text">取り外す IOM12 モジュールからケーブルを外します。</block>
-  <block id="8bf90c1a882bba7f49bed26875e94cee" category="paragraph">各ケーブルが接続されている IOM12 モジュールポートをメモしておきます。</block>
-  <block id="9f78dab8d292677e01851e8a917b6f5f" category="list-text">IOM12 モジュールのカムハンドルのオレンジラッチを外れるまで押し、カムハンドルを最大まで開いてミッドプレーンから IOM12 モジュールを取り外します。</block>
   <block id="cd5f38b38ffd79461cf543f7d3a14843" category="image-alt">DRW IOM ラッチ</block>
   <block id="4c85cb5670afa3b61996e7baa0111129" category="image-alt">DRW IOM が開いています</block>
-  <block id="4c07ae1007b3a2029e7841aeea475071" category="list-text">カムハンドルをつかみ、 IOM12 モジュールをスライドしてディスクシェルフから引き出します。</block>
-  <block id="07b7a165a51ddb5cbf9c2a4c6cf94454" category="paragraph">IOM12 モジュールを取り扱う際は、重量があるので必ず両手で支えながら作業してください。</block>
-  <block id="de4ae2c6f1963896fbfea28e82d00c1a" category="list-text">新しい IOM12 モジュールは、 IOM12 モジュールを取り外してから 70 秒以上待ってから取り付けてください。</block>
   <block id="ccadbe2edcc98f542a5f72090def31e3" category="paragraph">この間にドライバによってシェルフ ID が正しく登録されます。</block>
-  <block id="aa3bb973e5a793f5e96c587b782042c8" category="list-text">カムハンドルが開いた状態で両手で新しい IOM12 モジュールを持って両端をディスクシェルフの開口部に合わせ、ミッドプレーンにまでしっかりと押し込みます。</block>
-  <block id="f1b86d4dfdaf9595d77f0125018bb80f" category="admonition">IOM12 モジュールをディスクシェルフに挿入する際に力を入れすぎないように注意してください。コネクタが破損することがあります。</block>
-  <block id="d2375a4ef8785f406de718d058e88a04" category="list-text">カムハンドルを閉じます。ラッチがカチッという音を立ててロックされ、 IOM12 モジュールが完全に収まります。</block>
   <block id="9bf609fda741e4f05af53222039c4623" category="list-text">ケーブルを再接続します。</block>
   <block id="240ac1f7b24df668dce754edbdea2f25" category="paragraph">SAS ケーブルのコネクタは、誤挿入を防ぐキーイングが施されているため、正しい向きで IOM ポートに取り付けるとカチッとはまり、 IOM ポートの LNK LED が緑色に点灯します。SAS ケーブルのコネクタをプルタブ（コネクタの下側）を下にして IOM ポートに挿入します。</block>
   <block id="d69bd90c00da9d5886f4b689f99f70d6" category="paragraph">ターゲットノードをギブバックします。「 storage failover giveback -fromnode partner_ha_node</block>
   <block id="8460de55fc39038d9b9df5787b6da108" category="paragraph">システムをリブートします。</block>
-  <block id="69215aec902649f47b0b67453c2abf00" category="list-text">IOM12 モジュールポートのリンクが確立されたことを確認します。</block>
   <block id="a4399fd36cbdc5057108842e4a4a42ff" category="paragraph">ケーブル接続した各モジュールポートで、 4 つの SAS レーンの 1 つ以上で（アダプタまたは別のディスクシェルフとの）リンクが確立された場合、 LNK （緑色） LED が点灯します。</block>
   <block id="35f83b87028a9833d2f51254685e9660" category="summary">新しいシステム HA ペアまたはシングルコントローラ構成がキャビネットに設置されていない場合は、ラックにディスクシェルフを設置してケーブル接続する必要があります。</block>
   <block id="4664332b9563f72120f97fcec6827311" category="paragraph">新しいシステム HA ペアまたはシングルコントローラ構成がキャビネットに設置されていない場合は、ラックにディスクシェルフを設置してケーブル接続できます。</block>
-  <block id="6f43d4f1fc81b922a2a346854955d9aa" category="section-title">新しいシステムを設置するための、 IOM12 モジュールを搭載したディスクシェルフの設置とケーブル接続に関する要件</block>
   <block id="e5fbc77be9a74494e708f06f77d18de5" category="paragraph">ディスクシェルフを設置およびケーブル接続する前に、特定の要件を満たす必要があります。</block>
   <block id="33e36140a42f4f8d22f9ac3bcaa59b55" category="list-text">使用しているプラットフォームモデルに対応した設置とセットアップの手順を確認しておく必要があります。</block>
   <block id="db6140788218135102ddf3b3cc8fd707" category="paragraph">設置とセットアップの手順では、システムの設置、セットアップ、および設定に使用する手順全体に対応します。この手順（ _ 新しいシステム設置用の設置およびケーブルシェルフ）は、ディスクシェルフの設置またはストレージシステムへのケーブル接続の詳細情報が必要な場合に、プラットフォームの設置およびセットアップ手順と併せて使用します。</block>
@@ -6769,9 +6672,7 @@
   <block id="6dbed82e3a248591092e6e4002b1e9aa" category="paragraph"><block ref="6dbed82e3a248591092e6e4002b1e9aa" category="inline-link-macro-rx"></block></block>
   <block id="e0b50a66e9b220342f7fbaa9834e4842" category="list-text">ディスクシェルフとコントローラの電源がオンになっていないことを確認する必要があります。</block>
   <block id="96aa544f3a1fa5c4b5c2e9d7aeef2fe1" category="list-text">Mini-SAS HD SAS 光ケーブルを使用している場合は、のルールを満たしている必要があります <block ref="981073c6c3d6ceff62f8d350a20e9ca2" category="inline-link-macro-rx"></block>。</block>
-  <block id="b32e9d47676e82c87590b74632b61095" category="section-title">新しいシステムを設置する際の、 IOM12 モジュールを搭載したディスクシェルフの設置とケーブル接続に関する考慮事項</block>
   <block id="b92a3c3c734a6c9e5d3ee17b42bdd333" category="paragraph">ディスクシェルフの設置とケーブル接続を行う前に、この手順に関する考慮事項とベストプラクティスを把握しておく必要があります。</block>
-  <block id="5d23b547db799f96af3ae4e4a71f4ae9" category="list-text">IOM12 モジュールを搭載したディスクシェルフのシェルフ ID は、出荷時に 00 に設定されています。</block>
   <block id="1d4c0fb2a243494a984412dc5b5381a1" category="admonition">少なくとも 2 つのスタックで構成される HA ペアがある場合、 2 番目のスタックのルートアグリゲートを含むディスクシェルフのシェルフ ID はあらかじめ 10 に設定されています。</block>
   <block id="f2717497b83e7964ce960a0ca5ac4860" category="paragraph">シェルフ ID は、 HA ペアまたはシングルコントローラ構成内で一意になるように設定する必要があります。シェルフ ID は手動で設定するか、またはメンテナンスモードのコマンドを使用して、 HA ペアまたはシングルコントローラ構成のすべてのディスクシェルフにシェルフ ID を自動的に割り当てられます。両方の方法の手順が記載されています。</block>
   <block id="b1b6e8ddb338daabf15cdf510590fae4" category="list-text">ルートアグリゲートを含むディスクシェルフは、ディスクシェルフボックスおよびディスクシェルフシャーシのラベルで識別できます。</block>
@@ -6781,11 +6682,9 @@
   <block id="d0239e887ec2c441679c67bab9e771e2" category="list-text">最新バージョンの Disk Qualification Package （ DQP ）をインストールすることを推奨します。</block>
   <block id="83b7fe235f4d243b23ebf6cb04f9c234" category="list-text">Config Advisor は、新しいシステムのインストール後にダウンロードして実行することを推奨します。</block>
   <block id="f04a5c047df778cea3df6efa23d65eae" category="paragraph">新しいシステムの設置後に Config Advisor を実行すると、 SAS 接続が正しくケーブル接続されており、 HA ペアまたはシングルコントローラ構成内でシェルフ ID が一意であることを確認できます。</block>
-  <block id="407a981a808fda2c0421e9e45684daf8" category="section-title">新しいシステムを設置するには、 IOM12 モジュールを搭載したディスクシェルフを設置します</block>
   <block id="4634c66603d33968007ce623c89d2060" category="paragraph">ディスクシェルフに付属のラックマウントキットを使用して、ラックにディスクシェルフを設置します。</block>
   <block id="3cc6cb740df088ccfac252ec1fe8a2d0" category="list-text">複数のディスクシェルフを設置する場合は、設置するディスクシェルフごとにこの手順を繰り返します。</block>
   <block id="76a74383605253628e7771913e3eb749" category="admonition">このとき、ディスクシェルフの電源は入れないでください。</block>
-  <block id="e7afe933c2f80e3f8b351cacf0a98497" category="section-title">IOM12 モジュールを搭載したディスクシェルフを新しいシステムにケーブル接続します</block>
   <block id="b8fe06fa8cda2e641eeef95ff91ef16f" category="paragraph">ディスクシェルフの SAS 接続（シェルフ / シェルフ間およびコントローラ / シェルフ間）をケーブル接続して、システムのストレージ接続を確立します。</block>
   <block id="1143d5c25aa2f693537222d1f3260323" category="paragraph">に記載された要件を満たしている必要があります <block ref="d785cc9ecd460c8d1bff7d4aeeca8c73" category="inline-xref-macro-rx"></block> ディスクシェルフをラックに設置しておきます。</block>
   <block id="eb0ef620e7c33a9d328a59925c63f641" category="paragraph">ディスクシェルフをケーブル接続したら、電源を投入し、シェルフ ID を設定して、システムのセットアップと設定を完了します。</block>
@@ -6834,7 +6733,6 @@
   <block id="dff1dc2f7a2fbdf73084eb54bb572edd" category="list-text">インバンド ACP が自動的に有効になっていることを確認します。「 storage shelf acp show 」をご覧ください</block>
   <block id="22de385bc846aff8918c00418f396af3" category="summary">IOM12 モジュールを搭載した SAS ドライブシェルフをストレージシステムにケーブル接続する際に役立つ、次の SAS ケーブル接続ルール、例、およびワークシートを利用できます。</block>
   <block id="d882321e2eb0b3930cc4d89826524491" category="doc">SAS ケーブル接続ルール、ワークシート、および例 - IOM12 モジュールを搭載したシェルフ</block>
-  <block id="104b388e64d99775bc4ff6b16daf9e27" category="paragraph">IOM12 モジュールを搭載した SAS ドライブシェルフをストレージシステムにケーブル接続する際には、必要に応じて、利用可能な SAS ケーブル接続ルール、ワークシート、およびサンプルコンテンツを使用できます。</block>
   <block id="dec8d0bac5e3e019cf604b191c0cd1fc" category="paragraph">* SAS ケーブル接続ルール *</block>
   <block id="eb631b70ae7c721773f91b506c815082" category="inline-link-macro">設定</block>
   <block id="2c20867b019d706a391ac25e6929487d" category="list-text"><block ref="2c20867b019d706a391ac25e6929487d" category="inline-link-macro-rx"></block></block>
@@ -6860,8 +6758,6 @@
   <block id="22466a802c90a3a201ee0515f54de806" category="list-text"><block ref="22466a802c90a3a201ee0515f54de806" category="inline-link-macro-rx"></block></block>
   <block id="2c7dca88481889b656f4d74763cd9a46" category="inline-link-macro">クアッドパス接続用のワークシートの読み取り方法</block>
   <block id="13c0d70fd4cb9852007aff38af1de02a" category="list-text"><block ref="13c0d70fd4cb9852007aff38af1de02a" category="inline-link-macro-rx"></block></block>
-  <block id="7c5a6fbb61762dbfee01097d30691b14" category="summary">以下の例は、クアッドパス接続用の IOM12 モジュールを搭載したディスクシェルフで、記入済みのワークシートの内容を適用して複数のディスクシェルフスタックをケーブル接続する方法を示しています。</block>
-  <block id="cf8eb678d840b3c88f73b61d6e7679cd" category="doc">IOM12 モジュールを搭載したクアッドパス接続でコントローラ / スタック間をケーブル接続するためのワークシートの読み取り方法</block>
   <block id="2f40064540d7b13547e7d24b16fd49e7" category="paragraph">この例では、各コントローラにクアッドポート SAS HBA を 2 つを備え、 IOM12 モジュールを搭載したディスクシェルフスタックを 2 台を使用するクアッドパス HA 構成を使用します。</block>
   <block id="480e4f10ac2e8a84a7f6455bf724bff5" category="paragraph">これはスタック 1 のマルチパスケーブル接続です。</block>
   <block id="1fc785872b10266253c6fc954df23d48" category="list-text">各コントローラのポートペア 2a / 1d をスタック 1 にケーブル接続します。</block>
@@ -6877,7 +6773,6 @@
   <block id="850d165279128de5cdaaa37f3c28136e" category="list-text">コントローラ 2 のポート 2c をスタック 2 の最初のシェルフの IOM B ポート 2 にケーブル接続します。</block>
   <block id="d7fcd8720e9644b9a8c73b6f3b8b6bb2" category="list-text">コントローラ 1 のポート 1b をスタック 2 の最後のシェルフの IOM B ポート 4 にケーブル接続します。</block>
   <block id="52432613fc4f7b39a3f5f9b03dadb70d" category="list-text">コントローラ 2 のポート 1b をスタック 2 の最後のシェルフの IOM A ポート 4 にケーブル接続します。</block>
-  <block id="dad70355d3eedda1dd51d44624779698" category="doc">IOM12 モジュールを搭載したシェルフ ID を変更します</block>
   <block id="36c30042f6ca79134c6c218841a81eb0" category="paragraph">「 storage disk show -shelf_shelf_number _ 」コマンドを使用すると、ドライブの状態を確認できます。Container Type 列の出力に、スペアまたは障害が発生したドライブである場合は破損が表示されます。また、 Container Name 列と Owner 列にはダッシュが表示されます。</block>
   <block id="a02840d92f715aa31ea70eb31b610e96" category="list-text">システムですでに使用されているシェルフ ID を確認するには、 Active IQ Config Advisor を実行するか、「 storage shelf show -fields shelf-id 」コマンドを使用します。</block>
   <block id="6a1ebf8b2142401ac4376ee7a33567e0" category="list-text">シェルフ ID は、 HA ペアまたはシングルコントローラ構成内で一意である必要があります。</block>
@@ -6902,7 +6797,6 @@
   <block id="26a846deb04c0d63c063041ad0fa15ef" category="list-text">Active IQ Config Advisor を実行して重複したシェルフ ID のアラートを確認するか、「 storage shelf show -fields shelf-id 」コマンドを実行して、重複した ID を含めてすでに使用されているシェルフ ID のリストを表示します。</block>
   <block id="8599052dc8c8c0f79b1edc766e0bb77e" category="list-text">システムに重複したシェルフ ID がある場合は、この手順を繰り返して重複シェルフ ID を変更します。</block>
   <block id="72da4c803cace81d299fce3a877d4cba" category="summary">各 DS460C ドライブシェルフには、 2 つのファンモジュールが含まれています。ファンモジュールで障害が発生した場合は、シェルフの冷却が適切に行われるように、できるだけ早く交換する必要があります。障害が発生したファンモジュールを取り外すときに、ディスクシェルフの電源をオフにする必要はありません。</block>
-  <block id="fa4d12b5f2455c5e2d1dd21058d233de" category="doc">DS460C ディスクシェルフ内のファンモジュールを IOM12 モジュールと交換します</block>
   <block id="1d39850c7c315ddebed0ccfb770321d4" category="paragraph">システムの過熱を防ぐため、ファンモジュールの取り外しと交換は必ず 30 分以内に行ってください。</block>
   <block id="03b9616c320fdafaa018b7edf82f0212" category="list-text">新しいファンモジュールを開封し、シェルフの近くの平らな場所に置きます。</block>
   <block id="263c7d60489662b08bc168e30ef43797" category="paragraph">梱包材は、障害が発生したファンを返送するときのためにすべて保管しておいてください。</block>
@@ -7005,7 +6899,6 @@
   <block id="3766b702f27d0a06cd0d3ed539c864f4" category="sidebar">DS460C シェルフ内のディスクドライブ</block>
   <block id="3b59196e4aa295b1c38baacd453e22d4" category="sidebar">DS460C シェルフ内のドライブドロワー</block>
   <block id="215cf653ea0cb475af5720eed33931da" category="sidebar">DS460C シェルフのファン</block>
-  <block id="6d4ef13a216b4449d8385bdc797b5980" category="sidebar">IOM12 モジュール</block>
   <block id="711fec659e5c52bba32ca7f6f3439502" category="sidebar">シェルフ LED のステータス状態</block>
   <block id="e7fe78f29d2a12982128aa007f6851a6" category="sidebar">AFF A250 システム</block>
   <block id="0505c366cf2aa05ef59b3b78f4e74a9f" category="sidebar">AFF A250 のインストールとセットアップ</block>
@@ -7176,7 +7069,6 @@
   <block id="d8819b7139f4bb1f08dfe41f4035bc16" category="sidebar">AFF A320 PCIe カード</block>
   <block id="40537588e6053d196e938f7c8e02c2c5" category="sidebar">AFF A320 電源装置</block>
   <block id="5e1a82d2ed3ee2f794e26aaec838ddad" category="sidebar">AFF A320 リアルタイムクロックバッテリ</block>
-  <block id="8bd58fce46ecf816e8b3a0b884ad4724" category="sidebar">IOM12 モジュールを搭載したシェルフの設置とケーブル接続</block>
   <block id="2392f11d96d6fc4362b42688f146c995" category="sidebar">新しいシステム用のシェルフを設置してケーブル接続します</block>
   <block id="4ccd403eb19c48e7ebdaaeb982ef2481" category="sidebar">シェルフをホットアドします</block>
   <block id="cf999199f9d4c3e90d15399860476f13" category="sidebar">シェルフ ID を変更します</block>
@@ -7186,7 +7078,6 @@
   <block id="ce6374cb8d43c65f66d31cf1a0ede69e" category="sidebar">クアッドパス接続用のケーブル接続ワークシートテンプレート</block>
   <block id="c9dbe70bac035df0f96f45c02dcf5bd9" category="sidebar">マルチパス接続用にワークシートをケーブル接続する方法</block>
   <block id="5ed51fc3ce581de756d5c3ed9d63dd68" category="sidebar">クアッドパス接続でワークシートを読み取り、ケーブルを接続する方法</block>
-  <block id="36b90e2aa279bb518f4a354b026c3203" category="sidebar">IOM12 モジュールを搭載したシェルフは引き続き使用できます</block>
   <block id="7c162b58feb8186ad24c1219e33fdd5b" category="sidebar">DS224C または DS212C シェルフ内のディスクドライブ</block>
   <block id="d35e9de4dd221879d5824b232348dc91" category="sidebar">DS460C シェルフ内のディスクドライブ</block>
   <block id="8dfce13bab3428db55090c483e5d838b" category="sidebar">DS460C シェルフ内のドライブドロワー</block>
@@ -8501,12 +8392,10 @@
   <block id="e188406fb2d6108447e3bc6cb9155625" category="inline-link-macro">オンボードストレージを搭載した AFF および FAS プラットフォーム</block>
   <block id="7a63e08a24ae8c9c1ab5dcddaf6f551f" category="list-text"><block ref="7a63e08a24ae8c9c1ab5dcddaf6f551f" category="inline-link-macro-rx"></block></block>
   <block id="bd7b8cb1f03ceb90528c843b3cd8c0a4" category="summary">IOM12 モジュールを搭載したディスクシェルフを移動または交換する必要がある場合、電源がオンで I/O が実行中のシステムからディスクシェルフを無停止でホットリムーブできます。ホットリムーブでは、ディスクシェルフのスタックから任意のディスクシェルフを取り外したり、ディスクシェルフのスタック全体を取り外したりできます。</block>
-  <block id="bf9eaa32fa671084f441eeba9c863ef6" category="paragraph">IOM12 モジュールを搭載したディスクシェルフを移動または交換する必要がある場合、電源がオンで I/O が実行中のシステムからディスクシェルフを無停止でホットリムーブできます。ホットリムーブでは、ディスクシェルフのスタックから任意のディスクシェルフを取り外したり、ディスクシェルフのスタック全体を取り外したりできます。</block>
   <block id="ba0a2d97499e2e560187690f4b54b10c" category="list-text">取り外すディスクシェルフのディスクドライブからすべてのアグリゲートを削除しておく必要があります（ディスクドライブはスペアである必要があります）。</block>
   <block id="df890e7b6d800ea7f63516f78dc7b333" category="inline-link-macro">オンボードストレージを搭載した AFF プラットフォームと FAS プラットフォームのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例</block>
   <block id="4831f887bab13b0957b607ad184c87f7" category="paragraph"><block ref="4831f887bab13b0957b607ad184c87f7" category="inline-link-macro-rx"></block></block>
   <block id="fdd0f707bd71fcef53b653ae53e31f53" category="summary">記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 プラットフォームなどのオンボードストレージで AFF プラットフォームと FAS プラットフォームをケーブル接続できます。この情報は、システム外部のシステムには適用されません。</block>
-  <block id="34a9eb16320fa575f00d96a29be9d645" category="doc">IOM12 モジュールを搭載したオンボードストレージシェルフを搭載した AFF プラットフォームと FAS プラットフォームのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例</block>
   <block id="18e93c7175385ec259f95d9d453bdda1" category="list-text">必要に応じて、を参照してください <block ref="db31d33614fd87795381d5ac14be04aa" category="inline-link-macro-rx"></block> サポートされる構成、シェルフ / シェルフ間の接続、およびコントローラ / シェルフ間の接続については、を参照してください。</block>
   <block id="67f2d45d4d0936132195fb6f111ce3e8" category="section-title">マルチパス HA 構成で、マルチシェルフスタックを 1 つ使用したオンボードストレージを搭載した AFF プラットフォームと FAS プラットフォーム</block>
   <block id="83742af000bdb059461854fab1a8b606" category="list-text">異なる効率定格の電源装置を混在させないでください。いつものように同じように置換します。</block>
@@ -8566,12 +8455,6 @@
   <block id="cff7366c4191a9dd1698e3fd38e5acaf" category="sidebar">NVRAMモジュールまたはNVRAM DIMM</block>
   <block id="dbe0afeaa91b9a08168e98b33a4c7de8" category="admonition">ケーブルの接続を解除してから再接続し、ケーブルを交換する場合は、70秒以上待ってから行うようにしてください。</block>
   <block id="04e527203c5db793872f9a09c2541063" category="list-text">手順 a で取り外したケーブルがあれば、ホットアドするディスクシェルフの IOM A の同じポートに接続します。ない場合は次の手順に進みます。</block>
-  <block id="e62a559839495c7e61b9ce5a088b786c" category="doc">DS460C ディスクシェルフ内のドライブドロワーと IOM12 モジュールの交換</block>
-  <block id="585248eeaa0c7aa335cb47a05c525433" category="image-alt">92 DWG DE6600 引き出し、 HDD からの引き出し線なし</block>
-  <block id="2e3d3f0aa5e64af89c170da27ccf0cb2" category="section-title">ケーブルチェーンの取り外し</block>
-  <block id="bbbd51c2b3c60d5e9becdcf09d29b105" category="section-title">ドライブドロワーの取り外し</block>
-  <block id="fe8265ac3d0f9c648e57474b40e2e5d8" category="section-title">ドライブドロワーの取り付け</block>
-  <block id="2731a32bd20082112cb21bea67097d21" category="section-title">ケーブルチェーンを取り付けます</block>
   <block id="b3e40f87c203ef282d4d64a42d869542" category="open-title">オプション2：コントローラは2ノードMetroCluster に搭載されています</block>
   <block id="2cb6637a5fdf450f80c9f19b8c718a47" category="admonition">ケーブルの接続を解除してから再接続し、ケーブルを別のケーブルに交換する場合は、70秒以上待機する必要があります。</block>
   <block id="8456c08b8772c6458de93a0a78ff4f85" category="paragraph">左右のケーブルチェーンを取り外したら、ドライブシェルフからドライブドロワーを取り外すことができます。ドライブドロワーを取り外すときは、ドロワーを途中まで引き出し、ドライブを取り外し、ドライブドロワーを取り外します。</block>
@@ -8802,4 +8685,172 @@
   <block id="f56310c49687a40fd4b43bced4b3dcc8" category="video-title">アニメーション- AFF A400の設置とセットアップの手順</block>
   <block id="c511d3a873cdf45068fb4cd9897dd7d1" category="admonition">これにより、PCIeカードおよびその他のコンポーネントが再初期化され、ノードがリブートされます。</block>
   <block id="37aaa0d7d666e28c8819aac432ac13a0" category="video-title">スイッチクラスタのケーブル接続</block>
+  <block id="0de0a804806f46ef402b06f8cf86d3fd" category="doc">ディスクシェルフのLEDを監視します。IOM12 / IOM12Bモジュールを使用するシェルフです</block>
+  <block id="78a16aa9b69495c135b25bc218c90ea1" category="summary">追加のストレージが必要な場合は、IOM12 / IOM12Bシェルフ（IOM12 / IOM12Bモジュールを搭載したSASシェルフ）をIOM6シェルフ（IOM6モジュールを搭載したSASシェルフ）のスタックにホットアドできます。つまり、スタックを混在させることができます。</block>
+  <block id="f5359f540fed4be15500114188289896" category="doc">IOM12 / IOM12BシェルフをIOM6シェルフのスタックにホットアドします</block>
+  <block id="f76b5dbe9d6914e6e6154c1a3f084d23" category="paragraph">HAペア、シングルコントローラ、またはストレッチMetroCluster 構成（システム）が、IOM12 / IOM12BシェルフをIOM6シェルフのスタックにホットアドする際の一定の要件を満たしている必要があります。</block>
+  <block id="191707c2abaed14d4f84b334359f090f" category="list-text">ご使用のシステムとONTAP のバージョンで、同じスタック（混在スタック）にIOM6シェルフとIOM12 / IOM12Bシェルフを混在させることができます。</block>
+  <block id="00fff54c913160f5c3bf6b51833732a2" category="paragraph">IOM12 / IOM12Bシェルフをホットアドしたあとに、システムでサポートされる最大ドライブ数を超えることはできません。</block>
+  <block id="930a04c4c89c9247f79288e2800c12ca" category="list-text">IOM12 / IOM12Bシェルフを注文して納入し、適切な数とタイプのSAS銅線ケーブルを用意しておく必要があります。</block>
+  <block id="1aefc40815c8a14c682b27d605e0c852" category="paragraph">MetroCluster 構成で2組のATTO FibreBridgeブリッジを使用して接続されたIOM6シェルフのスタックにIOM12 / IOM12Bシェルフをホットアドする場合、システムが一定の要件を満たしている必要があります。</block>
+  <block id="19ad2c0538cf2699805ae5b7a88dc72d" category="paragraph">IOM12 / IOM12BとIOM6モジュールをスタックに混在させる場合は、すべてのブリッジポートを使用してください。</block>
+  <block id="f29790dcd5dad7176b065228da8e813b" category="list-text">IOM12 / IOM12BシェルフをホットアドするIOM6シェルフのスタックをSAS銅線ケーブルで接続する必要があります（すべてのシェルフ/シェルフおよびコントローラ/スタック間の接続に使用）。</block>
+  <block id="a303526442a9b488afde68409bafd573" category="admonition">IOM6シェルフスタックがSAS光ケーブルで接続されている場合は、IOM12 / IOM12Bシェルフをホットアドできません。ネットアップの営業担当者にお問い合わせください。</block>
+  <block id="274358a46e82410d70348e1fd12ca278" category="paragraph">IOM12 / IOM12BシェルフはMini-SAS HDコネクタを使用します。IOM6 シェルフは QSFP コネクタを使用します。</block>
+  <block id="e827f0977c76611ee483794c8c0d589e" category="paragraph">IOM12 / IOM12BシェルフをIOM6シェルフのスタックにホットアドする前に、この手順 に関する考慮事項とベストプラクティスを把握しておく必要があります。</block>
+  <block id="32532820ab52039587ac6fc9539bfbe4" category="list-text">ホットアドするIOM12 / IOM12Bシェルフのファームウェアバージョンは0260以降にすることを強く推奨します。</block>
+  <block id="4b0c6c7c1712b07c4f6eb456f77c250b" category="paragraph">IOM12 / IOM12Bシェルフのファームウェアをシェルフにダウンロードしたら、どちらかのコントローラのコンソールで「storage shelf show module」コマンドを入力して、ファームウェアのバージョンが0260以降であることを確認します。</block>
+  <block id="3ed3a0caa77626b30983d683ee9db330" category="paragraph">IOM12 / IOM12BシェルフをIOM6シェルフのスタックにケーブル接続する方法は、IOM12シェルフが最初のIOM12 / IOM12Bシェルフであるか、つまりスタックに他のIOM12シェルフがないかによって異なります。 また、既存の混合スタックにIOM12 / IOM12Bシェルフを追加するかどうかを指定します。つまり、1つ以上のIOM12 / IOM12Bシェルフがスタックにすでに存在します。また、スタックにマルチパス HA 、マルチパス、シングルパス HA 、またはシングルパス接続のどれがあるかによっても異なります。</block>
+  <block id="04bb04135ba18792013909ca58e7a551" category="list-text">IOM12 / IOM12Bシェルフをスタック内の論理的に最後のシェルフに常にホットアドして、スタック内での1つの速度の移行を維持します。</block>
+  <block id="e0895cf80563e944b90f33500e3072ad" category="paragraph">IOM12 / IOM12Bシェルフをスタック内の論理的な最後のシェルフにホットアドすると、IOM6シェルフをグループ化したまま、IOM12 / IOM12Bシェルフをグループ化したまま、2つのシェルフグループ間で速度を1つに移行できます。</block>
+  <block id="0455216bece3ce620e2fd5c84b24a523" category="list-text">HAペアでは、IOM6シェルフを2台、IOM12 / IOM12Bシェルフを2台使用するスタック内での1回の速度の移行を次のように表します。</block>
+  <block id="988fffa48b6a32203597193ccfb194d0" category="paragraph">オンボードストレージポート0bは内蔵ストレージ（エクスパンダ）のポートで、ホットアドするIOM12 / IOM12Bシェルフ（スタックの最後のシェルフ）に接続するため、IOM12 / IOM12Bシェルフのグループを1つにまとめ、スタックとオンボードのIOM12Eストレージを使用して移行を1つにします。</block>
+  <block id="22c141c57159ea5a9cf5ecee1f8b4145" category="list-text">IOM12 / IOM12Bシェルフをケーブル接続するには、まずIOM AのパスのSASポートを接続し、次にIOM Bのパスについても、必要に応じてケーブル接続の手順を繰り返します。</block>
+  <block id="74e72cd0b8695a83723abedf9f9e8d92" category="list-text">最初のIOM12 / IOM12Bシェルフ（最後のIOM6シェルフに接続するIOM12シェルフ）は、常にIOM6シェルフの円形のポート（四角形のポートではありません）に接続します。</block>
+  <block id="f40ad7d263effd48cd15f5ec54dc2775" category="list-text">次の図は、FC-to-SASブリッジを使用しない構成でIOM12 / IOM12BシェルフをIOM6シェルフスタックにケーブル接続する場合に参照してください。</block>
+  <block id="5c5d06fa180884eea62ba831b980ed33" category="list-text">次の図は、ブリッジ接続MetroCluster 構成でIOM12 / IOM12BシェルフをIOM6シェルフスタックにケーブル接続する場合のものです。 <block ref="3bf7d126d94220be52cd0d278e98261d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3d7f99cbbf1b9ba05ea3a6ec89eae8b6" category="list-text">ホットアドするIOM12 / IOM12BシェルフをIOM6スタックに追加する場合、IOM6シェルフスタックに他のIOM12 / IOM12Bシェルフがないように、該当する手順を実行します。</block>
+  <block id="423d2f16d6d5594161f3868e4a50907a" category="list-text">最後のIOM6シェルフのIOM Aの円形のポート（手順A）と新しいIOM12 / 12BのIOMAシェルフのIOM Aポート1をケーブル接続します。</block>
+  <block id="41cb447e88bb124a5db517ed30198998" category="list-text">別のIOM12 / IOM12Bシェルフをホットアドする場合は、ケーブル接続したシェルフのIOM12 / IOM12BシェルフのIOM Aポート3と次のIOM12 / IOM12BシェルフのIOM Aポート1を間で接続します。</block>
+  <block id="c5053835d12fc440bf9519cf51926077" category="list-text">最後のIOM6シェルフのIOM Aの円形のポートと新しいIOM12 / IOM12BシェルフのIOM Aポート1をケーブル接続します。</block>
+  <block id="46a7d11c0de8261bfb74d9bce4920db4" category="list-text">IOM12 / IOM12Bシェルフをもう1台ホットアドする場合は、手順AとBを繰り返します</block>
+  <block id="cc6b443dcaf375914e07667f9d494608" category="list-text">ホットアドするIOM12 / IOM12Bシェルフを既存の混在スタックに追加する場合は、次の手順を実行します。つまり、1つ以上のIOM12 / IOM12Bシェルフがスタックにすでに存在する場合です。</block>
+  <block id="323be85d169cf65d9f2dff0b9daf0dd6" category="list-text">コントローラ/スタック間のケーブルを最後のIOM12 / IOM12BシェルフのIOM Aポート3から新しい最後のIOM12 / IOM12Bシェルフの同じポートに移動します。</block>
+  <block id="4a234d60639e9340f8ce3de65d81db69" category="list-text">1台のIOM12 / IOM12Bシェルフをホットアドする場合は、古い最後のIOM12 / 12BシェルフのIOM Aポート3と新しい最後のIOM12 / IOM12BシェルフのIOM Aポート1をシェルフ間で接続します。</block>
+  <block id="633e2691f3d334f1861df8688fb8aff3" category="list-text">複数のIOM12 / IOM12Bシェルフをホットアドする場合は、古い最後のIOM12 / IOM12BシェルフのIOM Aポート3と次のIOM12 / IOM12BシェルフのIOM Aポート1をケーブル接続し、この手順を他のIOM12 / IOM12Bシェルフの場合は繰り返します。</block>
+  <block id="b113f1515b045f95139c50b2780a1d36" category="list-text">下部のブリッジ/スタック間ケーブルを、最後のIOM12 / IOM12Bシェルフの古いポートから新しい最後のIOM12 / IOM12Bシェルフの同じポートに移動します。</block>
+  <block id="7db70baa0612f96923b03e33b9be4f34" category="list-text">古い最後のIOM12 / IOM12BシェルフのIOM Aポート3と次のIOM12 / IOM12BシェルフのIOM Aポート1をケーブル接続し、この手順を追加のIOM12 / IOM12Bシェルフに対して繰り返します。</block>
+  <block id="9547d5ec3cd6feb3f2b2910fd3c8382c" category="list-text">古い最後のIOM12 / IOM12BシェルフのIOM Bポート3と次のIOM12 / IOM12BシェルフのIOM Bポート1をケーブル接続し、この手順を追加のIOM12 / IOM12Bシェルフに対して繰り返します。</block>
+  <block id="3e64a107cb4cb3d60d43a803688dd95d" category="list-text">最後のIOM12 / IOM12BシェルフのIOM Aポート3と最後のIOM12 / IOM12BシェルフのIOM Aポート1をケーブル接続します。</block>
+  <block id="ec60586c7b5d5cc75eb55730acd9080c" category="paragraph">IOM12 / IOM12BシェルフをIOM6シェルフのスタックにホットアドする準備の一環として自動ドライブ割り当てを無効にした場合、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。</block>
+  <block id="e0c4907423e9966f80fb30cb4ce6df57" category="doc">SASケーブル接続ルール、ワークシート、概要- IOM12 / IOM12Bモジュールを使用するシェルフ</block>
+  <block id="87fe7ea614796dffe614513028372aa9" category="paragraph">IOM12 / IOM12Bモジュールを使用するSASドライブシェルフをストレージシステムに接続する場合は、必要に応じて、使用可能なSASケーブル接続ルール、ワークシート、およびサンプルコンテンツを使用できます。</block>
+  <block id="062023e4095a297f17b97a86d9b4d256" category="summary">IOM12 / IOM12Bモジュールを使用するディスクシェルフは、HAペアおよびシングルコントローラ構成で接続できます（サポート対象のプラットフォームの場合）。</block>
+  <block id="f5b9b5b9c8a3b908584581a89b8c2226" category="doc">SASケーブル接続ルール- IOM12 / IOM12Bモジュールを使用するシェルフです</block>
+  <block id="19a5945f47c08602bccb2ce050ccb955" category="paragraph">IOM12 / IOM12Bモジュールを搭載したディスクシェルフは、SASケーブル接続ルール（設定ルール、コントローラのスロット番号のルール、シェルフ/シェルフ間の接続ルール、コントローラ/スタック間の接続ルール、および該当する場合はMini-SAS HD SAS光ケーブルルール）を適用することで、HAペアおよびシングルコントローラ構成（サポート対象プラットフォームの場合）でケーブル接続できます。</block>
+  <block id="238f6056b9fefe76918fd63804bbcbfa" category="admonition">このガイドで説明するSASケーブル接続ルールのうち、コントローラスロットの番号のルール、シェルフ/シェルフ間の接続ルール、およびコントローラ/スタック間の接続ルールは、IOM12 / IOM12B、IOM6、IOM3のどのモジュールを使用している場合も、すべてのSASディスクシェルフに適用されるルールと同じです。ただし、このガイド内の情報は、 IOM12 モジュールを搭載したディスクシェルフをサポート対象の構成で使用した場合に固有のものです。</block>
+  <block id="35f903a7001175494e6eb7088631a16e" category="paragraph">このガイドで説明するSASケーブル接続ルールのうち、構成ルールとMini-SAS HD SAS光ケーブルルールは、IOM12 / 12Bモジュールを搭載したディスクシェルフに固有のものです。</block>
+  <block id="db4182fc310c06c3ebfb7e9fb022e4b4" category="doc">IOM12 / IOM12Bモジュールを使用するシェルフのIDを変更してください</block>
+  <block id="30e90859076cc858a7c5ef12a99ba8ce" category="doc">IOM12 / IOM12Bモジュールを使用するSASシェルフ</block>
+  <block id="314802b9b5ea5477ad3c17cc48db0ca8" category="doc">IOM12 / IOM12Bモジュールを搭載したシェルフをホットリムーブします</block>
+  <block id="f6516aa66806c66f90b17f54c90fc724" category="paragraph">IOM12 / IOM12Bモジュールを搭載したディスクシェルフを移動または交換する必要がある場合は、電源がオンでI/Oが実行中のシステムからディスクシェルフを無停止でホットリムーブできます。ホットリムーブでは、ディスクシェルフのスタックから任意のディスクシェルフを取り外したり、ディスクシェルフのスタック全体を取り外したりできます。</block>
+  <block id="a545c2ce8d557ac97c60d7fea8129606" category="paragraph">AFF A200、AFF A220、FAS2600シリーズ、FAS2700システムなど、オンボードストレージを搭載したプラットフォームでは、外付けストレージがマルチパスHAまたはマルチパス構成でケーブル接続されている必要があります。</block>
+  <block id="5472ec6cdf96cae68f6aaf248821072c" category="summary">IOM12 / IOM12Bモジュールを使用する1つ以上のディスクシェルフをIOM12 / IOM12Bモジュールを使用するディスクシェルフの既存のスタックにホットアドするか、IOM12 / IOM12Bモジュールを使用する1つ以上のディスクシェルフのスタックをコントローラのSAS HBAまたはオンボードSASポートに直接ホットアドできます。</block>
+  <block id="73f598cbb764bf6388343f00e9909f51" category="doc">IOM12 / IOM12Bモジュールを使用するシェルフをホットアドします</block>
+  <block id="4581059a15bfa8d6048b69c91b29d1d6" category="paragraph">この手順 を使用してスタックを混在させることはできません。IOM12 / IOM12Bモジュールを搭載したシェルフをIOM6モジュールを搭載したシェルフのスタックにホットアドします。スタックを混在させる必要がある場合は、を使用します <block ref="262c980c58c743dada67cf3fc593aeaa" category="inline-link-macro-rx"></block>。</block>
+  <block id="92d59a751ebdb338fef3f1efcf1de229" category="section-title">IOM12 / IOM12Bモジュールを使用したディスクシェルフのホットアド要件</block>
+  <block id="d672bc2589b757bc56d94ab87634e52d" category="paragraph">IOM12 / IOM12Bモジュールを使用してディスクシェルフをホットアドするには、システムが特定の要件を満たしている必要があります。</block>
+  <block id="b12f13e54028d8d03dc7ca379e406141" category="section-title">IOM12 / IOM12Bモジュールを使用したディスクシェルフのホットアドに関する考慮事項</block>
+  <block id="16e515f4f7ddf43ca6fc5f5321a960e5" category="list-text">IOM12 / IOM12Bモジュールを搭載したディスクシェルフを既存のスタック（IOM12 / IOM12Bモジュールを搭載したディスクシェルフ）にホットアドする場合は、ディスクシェルフをスタックの最後のディスクシェルフ（論理上の最初または最後のディスクシェルフ）にホットアドできます。</block>
+  <block id="4a6c06310d2bcd1c9758407cb59a423d" category="list-text">IOM12 / IOM12Bモジュールを搭載するディスクシェルフは独自のスタックに配置する必要がありますが、IOM6モジュールまたはIOM3モジュールを搭載したシェルフを搭載するスタックには追加できません。</block>
+  <block id="1297a8f1ac3fcf90ab0c70ff5e47b71d" category="paragraph">この手順 では、スタックの混在はサポートされません。IOM12 / IOM12Bモジュールを使用するシェルフをIOM6モジュールを使用するシェルフのスタックにホットアドします。</block>
+  <block id="0712df39e8d2ca11a74df9f3fe275482" category="list-text">1つのシステムに、IOM12 / IOM12Bモジュールを使用するマルチパススタックのディスクシェルフとクアッドパススタックのディスクシェルフを配置することができます。</block>
+  <block id="fb510c511f697ba0b554724f2d55ce12" category="section-title">IOM12 / IOM12Bモジュールを使用するディスクシェルフをホットアド用に設置します</block>
+  <block id="eef12ccd7f9c2345b5a3e069f9088bd0" category="section-title">IOM12 / IOM12Bモジュールを使用したディスクシェルフのホットアド用のケーブル接続</block>
+  <block id="5b07090bafdc58182b6f01852ecbad05" category="summary">ワークシートテンプレートを記入することで、コントローラのSASポートペアを定義できます。これらのポートを使用して、コントローラをIOM12 / 12BのIOMBモジュールを使用するディスクシェルフスタックにケーブル接続し、HAペアまたはシングルコントローラ構成でクアッドパス接続を実現できます。記入済みのワークシートを使用して、構成に合ったクアッドパス接続を実施することもできます。</block>
+  <block id="5d57c73dbe661f28ff4ab36825900d40" category="doc">IOM1/IOM12B2モジュールを使用するクアッドパス接続シェルフのコントローラ/スタック間のケーブル接続ワークシートテンプレートです</block>
+  <block id="51432cf63c198a0a11bab993299ae7fd" category="paragraph">ワークシート例では、2つのクアッドポートSAS HBAと、IOM12 / IOM12Bモジュールを使用するディスクシェルフスタックを2台使用する構成を使用します。</block>
+  <block id="b6e864fc7eab4fd6206badf96144db05" category="list-text">グレーのボックスの上のボックスに、システム上のすべてのSAS Aポートと、続けてシステム上のすべてのSAS Cポートをスロットの順序（0、1、2、3など）で列挙します。</block>
+  <block id="e50ad77c16b4b45855a35ff91f7ad9a6" category="list-text">グレーのボックスに、システムのすべてのSAS Bポートと、システムのすべてのSAS Dポートをスロットの順序（0、1、2、3など）でリストアップします。</block>
+  <block id="9f82eea0f440d221437653dd782356a4" category="summary">IOM12 / IOM12Bモジュールに障害が発生した場合に無停止のIOM12 / IOM12Bモジュールのホットスワップと停止を伴うIOM12 / IOM12Bモジュールの交換のどちらを実行できるかは、システム構成に応じて決まります。</block>
+  <block id="e94ea14f1834ad1513612bb606dc44a1" category="doc">IOM12 / IOM12Bモジュール/シェルフをIOM12 / IOM12Bモジュールにホットスワップするか交換してください</block>
+  <block id="d007c21d806a293463286bcdc9c26240" category="paragraph">シェルフIOMに障害が発生した場合に無停止シェルフのIOMホットスワップを実行できるか、停止を伴うシェルフのIOM交換が可能かは、システム構成に応じて決まります。</block>
+  <block id="030b841927b9d492809adeca76bc32be" category="paragraph">システム内のその他すべてのコンポーネント（他のIOM12 / IOM12Bモジュールを含む）が正常に機能している必要があります。</block>
+  <block id="aef3b76fff3e5002c8e1c4072af34e33" category="list-text">IOM12Bモジュールを搭載したIOM12モジュールとシェルフを使用するこの 手順 環境 シェルフです。</block>
+  <block id="2af3ffb0914986412fbce97033362ada" category="admonition">この手順 は、シェルフの IOM のホットスワップや交換に使用されます。つまり、 IOM12 モジュールを別の IOM12 モジュールに交換するか、 IOM12B モジュールを別の IOM12B モジュールに交換しなければなりません。（シェルフに IOM12 モジュールを 2 台搭載することも、 IOM12B モジュールを 2 つ使用することもできます）</block>
+  <block id="ebe49a15e88084dd22a61a0c761257fe" category="list-text">IOM12モジュールとIOM12Bモジュールは、次のように外観が異なります。</block>
+  <block id="20b0dc7787284cb0afa2dbc5d95136a2" category="paragraph">IOM12モジュールは「IOM12」ラベルで識別されます。</block>
+  <block id="5416d570ace1334ffbc27d0d9486ebe5" category="paragraph">IOM12Bモジュールは、青色のストライプと「IOM12B」ラベルで区別されます。</block>
+  <block id="d2a8fdadc8d18dd445c56f47cea6197a" category="image-alt">iom12b</block>
+  <block id="f85a60cb0afe5b75f4c43ed293c8a779" category="list-text">マルチパス（マルチパスHAまたはマルチパス構成およびクアッドパス（クアッドパスHAまたはクアッドパス）構成の場合は、電源がオンでデータI/Oを提供中のシステムでシェルフIOMを無停止でホットスワップできます。</block>
+  <block id="9785f45e8f6989c9b8cb2419a2b695da" category="list-text">FAS2600シリーズおよびFAS2700シリーズのシングルパスHA構成の場合は、テイクオーバーとギブバックの処理を実行して、電源がオンでデータを提供中のシステムのシェルフIOMを交換する必要があります。- I/Oが実行中です。</block>
+  <block id="0894c7928fa1bee8fd4a0207429b7254" category="list-text">FAS2600シリーズのシングルパス構成の場合、システムを停止してシェルフIOMを交換する必要があります。</block>
+  <block id="f00eb102fd21bbf5e0dd612fcc8a9fde" category="admonition">シングルパス接続されたディスクシェルフのシェルフIOMをホットスワップしようとすると、そのディスクシェルフおよびその下のすべてのディスクシェルフ内のディスクドライブへのアクセスがすべて失われます。システム全体を停止することもできます。</block>
+  <block id="1ab8471fd1a18dea9022ef583cd03d25" category="list-text">新しいシェルフのIOMのディスクシェルフ（IOM）ファームウェアが最新のファームウェアバージョンでない場合、自動的に（無停止で）更新されます。</block>
+  <block id="97b28cd2a227df77e22972ff1fcbf490" category="paragraph">シェルフのIOMファームウェアは10分おきにチェックされます。IOM ファームウェアの更新には最大 30 分かかることがあります。</block>
+  <block id="0921b7cc724d7a4c794a884b40f14789" category="paragraph">ディスクシェルフにはロケーションLEDが3つあります。オペレータ用ディスプレイパネルに1つと、各シェルフIOMに1つです。ロケーション LED は 30 分間点灯します。点灯を中止するには、同じコマンドを off オプションに変更して入力します。</block>
+  <block id="9704edc0c40aff2bc9c91d97d7bdd6c5" category="list-text">新しいシェルフIOMを開封し、ディスクシェルフの近くの平らな場所に置きます。</block>
+  <block id="82596309a8fa5f7ee94835a2785f0208" category="paragraph">梱包材は、障害が発生したシェルフのIOMを返送するときのためにすべて保管しておいてください。</block>
+  <block id="27f828dc47aef9b25b9f0603b1307a44" category="list-text">システムコンソールの警告メッセージと、障害が発生したシェルフのIOMの警告（黄色）LEDから、障害が発生したシェルフのIOMを物理的に特定します。</block>
+  <block id="373a5d24b1aa2958990518bcd5ed56ab" category="paragraph">FAS2600シリーズおよびFAS2700シリーズのシングルパスHA構成</block>
+  <block id="5de1791487db34e32b1323bb994c054c" category="list-text">ターゲットノード（障害が発生したシェルフIOMが所属するノード）を特定します。</block>
+  <block id="3b8811460da03f6141f48283c90f0c81" category="list-text">取り外すシェルフIOMからケーブルを外します。</block>
+  <block id="07bf16e1ed0cfef58d7f5600babc67b0" category="paragraph">各ケーブルが接続されているシェルフのIOMポートをメモしておきます。</block>
+  <block id="2c90515780aa4ada9f036267519ca053" category="list-text">シェルフのIOMのカムハンドルのオレンジラッチを外れるまで押し、カムハンドルを最大まで開いてシェルフのIOMをミッドプレーンから外します。</block>
+  <block id="3cd34c3a3dcf24396b327cfffa0135af" category="list-text">カムハンドルをつかみ、シェルフIOMをスライドしてディスクシェルフから引き出します。</block>
+  <block id="c53f74c15390f8807c5e8c0905bb0886" category="paragraph">シェルフIOMを扱うときは、重量があるので必ず両手で支えながら作業してください。</block>
+  <block id="745f4edf7ff287661f3eaeff8ee25ded" category="list-text">シェルフIOMを取り外したあと、70秒以上待ってから新しいシェルフIOMを取り付けます。</block>
+  <block id="574efb7bdeea63f97753a05f3c6871f5" category="list-text">カムハンドルが開いた状態で両手で新しいシェルフのIOMを持って両端をディスクシェルフの開口部に合わせ、ミッドプレーンにまでしっかりと押し込みます。</block>
+  <block id="222746507964b1ed3eaf55fde5e31c2b" category="admonition">シェルフIOMをディスクシェルフに挿入する際に力を入れすぎないように注意してください。コネクタが破損することがあります。</block>
+  <block id="4ca96495e80202f00b900a4621ad919b" category="list-text">カムハンドルを閉じます。ラッチがカチッという音を立ててロックされ、シェルフのIOMが完全に収まります。</block>
+  <block id="0da46cd6bdd0bb5727da715e0ba9290d" category="list-text">シェルフのIOMポートのリンクが確立されたことを確認します。</block>
+  <block id="e4d6a1639eb1018ebdf0ee077494d1a9" category="summary">以下の例は、クアッドパス接続用のIOM12 / IOM12Bモジュールを使用するディスクシェルフで、記入済みのワークシートの内容を適用して複数のディスクシェルフをケーブル接続する方法を示しています。</block>
+  <block id="114f9b221f24441ab337c7de57a95c34" category="doc">クアッドパス接続でコントローラ/スタック間をケーブル接続するためのワークシートの読み取り方法- IOM12 / IOM12Bモジュールを使用するシェルフ</block>
+  <block id="35dc71ed57aee63da50f31e10929fcac" category="doc">IOM12 / IOM12Bモジュールを使用して電源装置シェルフをホットスワップします</block>
+  <block id="597768bf006f6e20b6db4d977f39566f" category="doc">一般的なマルチパスHA構成のコントローラ/スタック間のケーブル接続ワークシートとケーブル接続例- IOM12 / IOM12Bモジュールを使用するシェルフ</block>
+  <block id="daa5cf1e3bbccdadf18629f97e2ca42a" category="doc">IOM12 / IOM12Bモジュールを使用するマルチパス接続でコントローラ/スタック間をケーブル接続するためのワークシートの読み取り方法</block>
+  <block id="eeea27d9ea27420adcc8ce9fd05614b8" category="paragraph">以下の例は、マルチパス接続用のIOM12 / IOM12Bモジュールを使用するディスクシェルフのコントローラ/スタック間をケーブル接続するための記入済みワークシートの内容と適用方法を示しています。</block>
+  <block id="baeaa6c0f7d91e3737654018dbaf4dab" category="paragraph">この例では、各コントローラにクアッドポートSAS HBAを2つ（SASポート×8）を備え、IOM12 / IOM12Bモジュールを使用するディスクシェルフスタックを2つを使用するマルチパスHA構成を使用します。ワークシート内のポートペアを 1 つおきにケーブル接続します。</block>
+  <block id="8c2ea3821fe3ebc950535413e621cebe" category="doc">DS460Cディスクシェルフ内のファンモジュールをIOM12 / IOM12Bモジュールと交換します</block>
+  <block id="3b11171c02404a6a48fbb19b047eef0f" category="summary">ワークシートテンプレートを記入することで、コントローラのSASポートペアを定義できます。これらのポートを使用して、コントローラをIOM12 / 12B IOMBモジュールを使用するディスクシェルフスタックにケーブル接続し、HAペアまたはシングルコントローラ構成でマルチパス接続を実現できます。記入済みのワークシートを使用して、構成に合ったマルチパス接続を実施することもできます。</block>
+  <block id="12156870a61d18f81545fc90d3b6ffda" category="doc">マルチパス接続用のコントローラ/スタック間のケーブル接続ワークシートテンプレート- IOM12 / IOM12Bモジュールを使用するシェルフです</block>
+  <block id="43e54d26abacd9c39f7b1ca3e46f28bc" category="doc">IOM12 / IOM12Bモジュールを搭載したシェルフを新しいシステムに設置してケーブル接続します</block>
+  <block id="26d6adab5145dcaeef75e539d6505422" category="section-title">新しいシステムを設置するための、IOM12 / IOM12Bモジュールを使用するディスクシェルフの設置とケーブル接続の要件</block>
+  <block id="92981035bf465c86f5c925914f3103e0" category="section-title">新しいシステムを設置する場合の、IOM12 / IOM12Bモジュールを使用したディスクシェルフの設置とケーブル接続に関する考慮事項</block>
+  <block id="6a133718408653e3259d13651c14c879" category="list-text">IOM12 / IOM12Bモジュールを搭載したディスクシェルフは、シェルフIDが00に設定されています。</block>
+  <block id="e37be681c028209021899aca48b5a94e" category="section-title">新しいシステムを設置するには、IOM12 / IOM12Bモジュールを搭載したディスクシェルフを設置します</block>
+  <block id="cff4c6a80d673a91abe24c8dff38731f" category="section-title">IOM12 / IOM12Bモジュールを使用してディスクシェルフを接続し、新しいシステムを設置します</block>
+  <block id="17ddda76156258b572f9b144817d0684" category="doc">IOM12 / IOM12Bモジュールを搭載したDS224CまたはDS212Cディスクシェルフのディスクドライブのホットスワップ</block>
+  <block id="bae52e811e373496a8dd1a90bdcd997a" category="doc">2つのクアッドポートSAS HBAシェルフを使用したIOM12 / IOM12Bモジュールを使用したクアッドパスHA構成のコントローラ/スタック間のケーブル接続ワークシートとケーブル接続例</block>
+  <block id="ddc31af8042cf01054a35e84a194db81" category="summary">シェルフのドライブドロワーを交換するには、ストレージシステム全体（HAペア）を停止する必要があります。これにより、シェルフ上にデータアグリゲートを保持したり、HAペアを常時稼働させたりすることができます。 そのためには、ディスクドライブにあるデータアグリゲートからすべてのデータを移動し、データアグリゲートをオフラインにして削除する必要があります。ただし、シェルフにルートアグリゲートが含まれる場合は、HAペアを停止する必要があります。</block>
+  <block id="4d3eb6be0ac338cf16ceee7366b714e2" category="doc">DS460Cディスクシェルフ内のドライブドロワーをIOM12 / IOM12Bモジュールと交換します</block>
+  <block id="08112df5a5488f0c78a69cd8eb1823a1" category="list-text">DCMドライブドロワーやDCM2ドライブドロワーを搭載したこの 手順 環境 シェルフ（シェルフには、IOM12モジュールを2台またはIOM12Bモジュールを2台配置することもできます）。</block>
+  <block id="ff6ef70fd6ff188b3310deca2ed1341f" category="paragraph">DCMまたはDCM2ドライブドロワーに障害が発生した場合'DCMまたはDCM2ドライブドロワーを受け取って交換します</block>
+  <block id="a1de29a246e1d955898722ea58ccaad9" category="paragraph">故障したドライブドロワーを交換すると、シェルフにIOM12モジュールと任意の数のDCM2ドライブドロワーが混在することになります。 IOM12モジュールには、DCM2ドライブドロワーをサポートするバージョンのFWが必要なため、IOM12 FWをバージョン0300以降にアップグレードする必要があります。</block>
+  <block id="99a3be716b7d4f783a2df1a6711575bb" category="paragraph">IOM12 FWのアップグレードは、ドライブドロワーの交換前または交換後に実行できます。この手順 では、ドロワーの交換用手順 の準備の一環としてファームウェアをアップグレードします。</block>
+  <block id="ee0c60e2d91c7aed52362f32053f76dc" category="list-text">DCMドライブドロワーとDCM2ドライブドロワーは'次のように見えます</block>
+  <block id="032d64c3ac3941e331a360a54f0a04ef" category="paragraph">DCMドライブドロワーは次のようになります。</block>
+  <block id="319d072de0a7eb80654d8506bc74de47" category="paragraph">DCM2ドライブ・ドロワーは青色のストライプとDCM2ラベルで識別されています</block>
+  <block id="8bf45bf113568322e421362c99ee6a1e" category="image-alt">dcm2.</block>
+  <block id="d5240bafd6bf54bcb59e9a9f899b324e" category="section-title">ドライブドロワーを交換する準備をします</block>
+  <block id="38cd7f0eca6a82b183b0f9dc3599583a" category="paragraph">ドライブドロワーを交換する前に、必要に応じてIOM12ファームウェアを更新し、HAペアを停止してデータアグリゲートをシェルフに保持するか、HAペアを常時稼働させておくかを選択する必要があります。 そのためには、ディスクドライブにあるデータアグリゲートからすべてのデータを移動し、データアグリゲートをオフラインにして削除する必要があります。ただし、シェルフにルートアグリゲートが含まれる場合は、HAペアを停止する必要があります。最後に、シェルフの電源をオフにする必要があります。</block>
+  <block id="fca3ffea6534176432f58b5a22ed22e1" category="list-title">手順</block>
+  <block id="f1d6fcc8467c66247fc38fc5bb1e448c" category="list-text">障害が発生したドライブドロワーを交換すると'IOM12モジュールと任意の数のDCM2ドライブドロワーがシェルフに搭載されるかどうかを確認します</block>
+  <block id="bb92ef0e860f1f3c67a9c3a453b2781c" category="list-text">シェルフにIOM12モジュールと任意の数のDCM2ドライブ・ドロワーが混在する場合は'IOM12 FWをバージョン0300以降にアップグレードする必要がありますそれ以外の場合は'次の手順に進みます</block>
+  <block id="62f67af3803932031f11d177b5600361" category="list-text">HAペアのどちらかのコントローラのルートアグリゲートがシェルフに含まれている場合、またはHAペアを停止する（HAペアを起動して実行しない）場合は、次の手順を実行します。それ以外の場合は、次の手順に進みます。</block>
+  <block id="b37509241639472ba31b52aa5d631103" category="admonition">HAペアを停止するときは、データアグリゲートをシェルフに配置したままにすることができます。</block>
+  <block id="4776c6cfddf3d461bf032149a752938e" category="list-text">HAペアの両方のコントローラを停止します。</block>
+  <block id="e2db2ba60f254ab9fa73e6d1f20e55c2" category="list-text">ストレージシステムコンソールを確認して、HAペアが停止したことを確認します。</block>
+  <block id="44359972349c2c141847d44b8de3be34" category="list-text">シェルフの電源をオフにします。</block>
+  <block id="4bd0b0c2b519de54df41bc77088d8182" category="list-text">セクションに移動します。 <block ref="f9b764c55080d7cf77ed91e890c43565" category="inline-xref-macro-rx"></block>。</block>
+  <block id="eb1a8e53bca0fcb026633a23b562bfff" category="list-text">HAペアを常に稼働状態にしておく場合は、次の手順を実行します。</block>
+  <block id="1aea84d8e76217145d77f4dd7efe6f8f" category="admonition">ディスクシェルフのアグリゲートにドロワーを交換しようとすると、原因 でシステムが停止し、複数のディスクがパニック状態になることがあります。</block>
+  <block id="ea0b163daac6d7d1dbcf0110733b7a5c" category="list-text">ディスクドライブにあるデータアグリゲートからすべてのデータを移動します。</block>
+  <block id="a3285b442e65f70add01ba5f44551d15" category="paragraph">データには、ボリュームやLUNが含まれますが、これらに限定されません。</block>
+  <block id="cf798cab97b54ad5fe43c91a959754ca" category="list-text">アグリゲートをオフラインにして削除し、ディスクドライブをスペアとして使用できるようにします。</block>
+  <block id="19613506a0ea4d74ae9e654ba0e170e6" category="paragraph">コマンドはどちらのコントローラのクラスタシェルからも入力できます。</block>
+  <block id="29d153e4b431b938b7c5a1015eeb6911" category="paragraph">storage aggregate offline-aggregate_aggregate_name_`を指定します</block>
+  <block id="6111125e279add9b4874ec606bdf8f0e" category="paragraph">storage aggregate delete -aggregate _aggregate_name_`</block>
+  <block id="0c94b39e7db15daf22049ff530aa79c4" category="list-text">ディスクドライブにアグリゲートがない（スペアである）ことを確認します。</block>
+  <block id="c0ee87ce0ebd393c47203bb5fe61c6ff" category="list-text">出力をチェックして、ディスクドライブがスペアであることを確認します。</block>
+  <block id="4b212a4f1b15a2634ac4585703871c77" category="paragraph">スペアのディスク・ドライブは' Container Type列にspareと表示されます</block>
+  <block id="91b2958bfbb554d300e8185ae9b27737" category="admonition">シェルフ内のディスク・ドライブに障害が発生した場合は' Container Type列にbrokenと表示されます</block>
+  <block id="f3f4e90f1b3b6970f9ad6037d23137fc" category="section-title">ケーブルチェーンを取り外します</block>
+  <block id="55f8cb8af8225d6be98f60253659b35d" category="list-text">これでが完了です <block ref="95aa2d1c854ce79c2690ee7f9045d8e3" category="inline-xref-macro-rx"></block> HAペアが停止されているか、ディスクドライブにあるデータアグリゲートのすべてのデータを移動し、ディスクドライブをスペアにするためにデータアグリゲートをオフラインにして削除した状態にする手順です。</block>
+  <block id="eb00582562ed05ba82111f55c5dd7ed9" category="list-text">シェルフの電源をオフにしておきます。</block>
+  <block id="39f83f14ef074e7f47f1a89591dede20" category="section-title">ドライブドロワーを取り外します</block>
+  <block id="c1493a32213b959f5c9f8be86dfb9960" category="section-title">ドライブドロワーを取り付けます</block>
+  <block id="02b9f44accc14d7238a1f0607ea50e30" category="section-title">ケーブルチェーンを取り付けます</block>
+  <block id="f4435aa5af54d743ca17f6f55210a44e" category="paragraph">ドライブドロワーを取り付ける最後の手順では、交換用の左右のケーブルチェーンをドライブシェルフに取り付けます。ケーブルチェーンを取り付けるときは、ケーブルチェーンを取り外したときと逆の順序で作業します。チェーンの水平コネクタをエンクロージャの水平ブラケットに挿入してから、チェーンの垂直コネクタをエンクロージャの垂直ブラケットに挿入する必要があります。</block>
+  <block id="4a88d75e49b05610191f242748bb61ec" category="list-text">HAペアを停止した場合は、両方のコントローラでONTAP をブートします。停止していない場合は、次の手順に進みます。</block>
+  <block id="4f793cbfd6b4c5b97cc3f88b97513f30" category="list-text">シェルフからデータを移動してデータアグリゲートを削除した場合、シェルフ内のスペアディスクをアグリゲートの作成または拡張に使用できるようになりました。</block>
+  <block id="c776cbda6aa3c18922e3f8d06f693123" category="inline-link">アグリゲートの作成ワークフロー</block>
+  <block id="ada7b50b987afb01f91df0d931ebd26c" category="paragraph"><block ref="ada7b50b987afb01f91df0d931ebd26c" category="inline-link-rx"></block></block>
+  <block id="5d2249930d4d6f285a5ccc70c9734de6" category="inline-link">アグリゲートの拡張ワークフロー</block>
+  <block id="fcdebdb1f4c79cc7a93d9f17744521c5" category="paragraph"><block ref="fcdebdb1f4c79cc7a93d9f17744521c5" category="inline-link-rx"></block></block>
+  <block id="87e222a1917be35f082aeb99501e10ca" category="doc">IOM12 / IOM12Bモジュールを使用するDS460Cディスクシェルフのディスクドライブのホットスワップ</block>
+  <block id="85085227e7191ff5201df5ab0dba828e" category="doc">IOM12 / IOM12Bモジュールを搭載したオンボードストレージシェルフを使用するAFF プラットフォームとFAS プラットフォームのコントローラ/スタック間のケーブル接続ワークシートとケーブル接続例</block>
+  <block id="3cf53d4c9bda935f2527cd9e3072ef82" category="sidebar">IOM12 / IOM12Bモジュールです</block>
+  <block id="c495d94f32f50365b375a20870280fde" category="sidebar">IOM12 / IOM2Bモジュールを使用するシェルフの設置とケーブル接続</block>
+  <block id="932dcd191a61980121848404f3579ffb" category="sidebar">IOM12 / IOM12Bモジュールを搭載したシェルフは引き続き使用できます</block>
 </blocks>

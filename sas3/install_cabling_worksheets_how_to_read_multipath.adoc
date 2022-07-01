@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: example, guide, read, apply, complete, worksheet, cable, controller-to-stack, connection, disk, shelves, shelf, iom12, multipathed, connectivity, hot to read a worksheet to cable controller-to-stack connections for multipathed connectivity 
 summary: 以下の例は、マルチパス接続用の IOM12 モジュールを搭載したディスクシェルフで、記入済みのワークシートの内容を適用してコントローラとスタックをケーブル接続する方法を示しています。 
 ---
-= IOM12 モジュールを搭載したマルチパス接続シェルフでコントローラ / スタック間をケーブル接続するためのワークシートの読み取り方法
+= IOM12 / IOM12Bモジュールを使用するマルチパス接続でコントローラ/スタック間をケーブル接続するためのワークシートの読み取り方法
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-以下の例は、マルチパス接続用の IOM12 モジュールを搭載したディスクシェルフで、記入済みのワークシートの内容を適用してコントローラとスタックをケーブル接続する方法を示しています。
+以下の例は、マルチパス接続用のIOM12 / IOM12Bモジュールを使用するディスクシェルフのコントローラ/スタック間をケーブル接続するための記入済みワークシートの内容と適用方法を示しています。
 
 HA ペアまたはシングルコントローラ構成を、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、または FAS2700 システムにすることはできません。これらのシステムでは固有のワークシートを使用します。
 
@@ -20,7 +20,7 @@ link:install-cabling-worksheets-examples-fas2600.html["一般的な AFF A200 、
 .このタスクについて
 * この手順では、次のワークシートとケーブル接続例を使用して、ワークシートに基づいてコントローラ / スタック間をケーブル接続する方法を示します。
 +
-この例では、各コントローラにクアッドポート SAS HBA を 2 つ（ SAS ポート × 8 ）を備え、 IOM12 モジュールを搭載したディスクシェルフスタックを 2 台を使用するマルチパス HA 構成を使用します。ワークシート内のポートペアを 1 つおきにケーブル接続します。
+この例では、各コントローラにクアッドポートSAS HBAを2つ（SASポート×8）を備え、IOM12 / IOM12Bモジュールを使用するディスクシェルフスタックを2つを使用するマルチパスHA構成を使用します。ワークシート内のポートペアを 1 つおきにケーブル接続します。
 
 +
 

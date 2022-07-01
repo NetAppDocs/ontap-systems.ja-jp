@@ -1,10 +1,10 @@
 ---
 permalink: sas3/install-new-system.html 
 sidebar: sidebar 
-keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling 
+keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b 
 summary: 新しいシステム HA ペアまたはシングルコントローラ構成がキャビネットに設置されていない場合は、ラックにディスクシェルフを設置してケーブル接続する必要があります。 
 ---
-= IOM12 モジュールを搭載した新しいシステム設置用シェルフを設置してケーブル接続します
+= IOM12 / IOM12Bモジュールを搭載したシェルフを新しいシステムに設置してケーブル接続します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,7 +15,7 @@ summary: 新しいシステム HA ペアまたはシングルコントローラ�
 
 
 
-== 新しいシステムを設置するための、 IOM12 モジュールを搭載したディスクシェルフの設置とケーブル接続に関する要件
+== 新しいシステムを設置するための、IOM12 / IOM12Bモジュールを使用するディスクシェルフの設置とケーブル接続の要件
 
 [role="lead"]
 ディスクシェルフを設置およびケーブル接続する前に、特定の要件を満たす必要があります。
@@ -36,7 +36,7 @@ link:../index.html["AFF および FAS システムのマニュアル"]
 
 
 
-== 新しいシステムを設置する際の、 IOM12 モジュールを搭載したディスクシェルフの設置とケーブル接続に関する考慮事項
+== 新しいシステムを設置する場合の、IOM12 / IOM12Bモジュールを使用したディスクシェルフの設置とケーブル接続に関する考慮事項
 
 [role="lead"]
 ディスクシェルフの設置とケーブル接続を行う前に、この手順に関する考慮事項とベストプラクティスを把握しておく必要があります。
@@ -45,7 +45,7 @@ link:../index.html["AFF および FAS システムのマニュアル"]
 
 === 一般的な考慮事項
 
-* IOM12 モジュールを搭載したディスクシェルフのシェルフ ID は、出荷時に 00 に設定されています。
+* IOM12 / IOM12Bモジュールを搭載したディスクシェルフは、シェルフIDが00に設定されています。
 +
 
 NOTE: 少なくとも 2 つのスタックで構成される HA ペアがある場合、 2 番目のスタックのルートアグリゲートを含むディスクシェルフのシェルフ ID はあらかじめ 10 に設定されています。
@@ -133,7 +133,7 @@ NOTE: 取り付け準備ができるまで、ディスクドライブをESDバ�
 
 
 
-== 新しいシステムを設置するには、 IOM12 モジュールを搭載したディスクシェルフを設置します
+== 新しいシステムを設置するには、IOM12 / IOM12Bモジュールを搭載したディスクシェルフを設置します
 
 [role="lead"]
 ディスクシェルフに付属のラックマウントキットを使用して、ラックにディスクシェルフを設置します。
@@ -240,7 +240,7 @@ NOTE: このとき、ディスクシェルフの電源は入れないでくだ�
 
 
 
-== IOM12 モジュールを搭載したディスクシェルフを新しいシステムにケーブル接続します
+== IOM12 / IOM12Bモジュールを使用してディスクシェルフを接続し、新しいシステムを設置します
 
 [role="lead"]
 ディスクシェルフの SAS 接続（シェルフ / シェルフ間およびコントローラ / シェルフ間）をケーブル接続して、システムのストレージ接続を確立します。

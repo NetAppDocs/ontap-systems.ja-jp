@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ds460c, drive, shelf, fan, module, cooling, disk, replace, replace a fan module in a ds460c disk shelf 
 summary: 各 DS460C ドライブシェルフには、 2 つのファンモジュールが含まれています。ファンモジュールで障害が発生した場合は、シェルフの冷却が適切に行われるように、できるだけ早く交換する必要があります。障害が発生したファンモジュールを取り外すときに、ディスクシェルフの電源をオフにする必要はありません。 
 ---
-= DS460C ディスクシェルフ内のファンモジュールを IOM12 モジュールと交換します
+= DS460Cディスクシェルフ内のファンモジュールをIOM12 / IOM12Bモジュールと交換します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

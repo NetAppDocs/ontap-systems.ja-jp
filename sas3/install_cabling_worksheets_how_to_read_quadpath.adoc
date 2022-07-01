@@ -2,16 +2,16 @@
 permalink: sas3/install-cabling-worksheets-how-to-read-quadpath.html 
 sidebar: sidebar 
 keywords: example, guide, read, apply, complete, worksheet, stack, disk, shelves, shelf, iom12, quad-pathed, connectivity, how to read a worksheet to cable controller-to-stack connections for quad-pathed connectivity 
-summary: 以下の例は、クアッドパス接続用の IOM12 モジュールを搭載したディスクシェルフで、記入済みのワークシートの内容を適用して複数のディスクシェルフスタックをケーブル接続する方法を示しています。 
+summary: 以下の例は、クアッドパス接続用のIOM12 / IOM12Bモジュールを使用するディスクシェルフで、記入済みのワークシートの内容を適用して複数のディスクシェルフをケーブル接続する方法を示しています。 
 ---
-= IOM12 モジュールを搭載したクアッドパス接続でコントローラ / スタック間をケーブル接続するためのワークシートの読み取り方法
+= クアッドパス接続でコントローラ/スタック間をケーブル接続するためのワークシートの読み取り方法- IOM12 / IOM12Bモジュールを使用するシェルフ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-以下の例は、クアッドパス接続用の IOM12 モジュールを搭載したディスクシェルフで、記入済みのワークシートの内容を適用して複数のディスクシェルフスタックをケーブル接続する方法を示しています。
+以下の例は、クアッドパス接続用のIOM12 / IOM12Bモジュールを使用するディスクシェルフで、記入済みのワークシートの内容を適用して複数のディスクシェルフをケーブル接続する方法を示しています。
 
 .このタスクについて
 * この手順では、次のワークシートとケーブル接続例を使用して、ワークシートに基づいてコントローラ / スタック間をケーブル接続する方法を示します。

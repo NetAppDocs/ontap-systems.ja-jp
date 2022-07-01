@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: hot-swap, fail, disk, drive, ds224c, ds212c, disk, shelf-nondisruptive, nondisruptive, replace, i/o, hot-swap a disk drive in a ds224c or ds212c disk shelf 
 summary: DS224C または DS212C ディスクシェルフでは、障害が発生したディスクドライブをホットスワップできます。 
 ---
-= IOM12 モジュールを搭載した DS224C または DS212C ディスクシェルフ内のディスクドライブのホットスワップ
+= IOM12 / IOM12Bモジュールを搭載したDS224CまたはDS212Cディスクシェルフのディスクドライブのホットスワップ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

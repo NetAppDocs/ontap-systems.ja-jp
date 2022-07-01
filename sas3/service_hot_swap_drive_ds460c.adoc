@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: hot-swap, fail, disk, drive, ds460c, nondisruptive, replace, system, power, serving, data, i/o, hot-swap a disk drive in a ds460c disk shelf 
 summary: DS460C ディスクシェルフ内の障害が発生したディスクドライブをホットスワップすることができます。 
 ---
-= IOM12 モジュールを搭載した DS460C ディスクシェルフ内のディスクドライブのホットスワップ
+= IOM12 / IOM12Bモジュールを使用するDS460Cディスクシェルフのディスクドライブのホットスワップ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 permalink: sas3/index.html 
 summary: ストレージシェルフのドキュメントでは、システムの設置、セットアップ、および保守を行うことができます。 
 ---
-= SAS シェルフと IOM12 モジュール
+= IOM12 / IOM12Bモジュールを使用するSASシェルフ
 :hardbreaks:
 :allow-uri-read: 
 :linkattrs: 

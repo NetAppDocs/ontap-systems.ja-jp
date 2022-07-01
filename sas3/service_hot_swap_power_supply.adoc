@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: hot-swap, fail, power, supply, ds460c, ds224c, ds212c, disk, shelf-nondisruptively, shelf, nondisruptive, system, power, i/o, progress, hot-swap a power supply 
 summary: DS460C 、 DS224C 、または DS212C ディスクシェルフでは、障害が発生した電源装置をホットスワップできます。 
 ---
-= 電源装置シェルフを IOM12 モジュールとホットスワップします
+= IOM12 / IOM12Bモジュールを使用して電源装置シェルフをホットスワップします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

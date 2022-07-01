@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: controller-to-stack, cabling, worksheet, aff, a200, a220, fas2600, fas2700, onboard storage 
 summary: 記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 プラットフォームなどのオンボードストレージで AFF プラットフォームと FAS プラットフォームをケーブル接続できます。この情報は、システム外部のシステムには適用されません。 
 ---
-= IOM12 モジュールを搭載したオンボードストレージシェルフを搭載した AFF プラットフォームと FAS プラットフォームのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例
+= IOM12 / IOM12Bモジュールを搭載したオンボードストレージシェルフを使用するAFF プラットフォームとFAS プラットフォームのコントローラ/スタック間のケーブル接続ワークシートとケーブル接続例
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
