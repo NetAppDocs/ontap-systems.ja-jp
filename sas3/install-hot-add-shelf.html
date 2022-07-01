@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>IOM12 モジュールを搭載したシェルフをホットアドします</title>
+  <title>IOM12 / IOM12Bモジュールを使用するシェルフをホットアドします</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="IOM12 モジュールを搭載したシェルフをホットアドします" />
+  <meta property="og:title" content="IOM12 / IOM12Bモジュールを使用するシェルフをホットアドします" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-systems/sas3/install-hot-add-shelf.html" />
-	<meta property="og:description" content="IOM12 モジュールを搭載した 1 台以上のディスクシェルフを、 IOM12 モジュールを搭載した既存のディスクシェルフのスタックにホットアドできます。または、 IOM12 モジュールを搭載した 1 台以上のディスクシェルフのスタックを、コントローラ上の SAS HBA またはオンボード SAS ポートに直接ホ..." />
+	<meta property="og:description" content="IOM12 / IOM12Bモジュールを使用する1つ以上のディスクシェルフをIOM12 / IOM12Bモジュールを使用するディスクシェルフの既存のスタックにホットアドするか、IOM12 / IOM12Bモジュールを使用する1つ以上のディスクシェルフのスタックをコントローラのSAS HBAまたはオンボードSASポ..." />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/ontap-systems/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="IOM12 モジュールを搭載した 1 台以上のディスクシェルフを、 IOM12 モジュールを搭載した既存のディスクシェルフのスタックにホットアドできます。または、 IOM12 モジュールを搭載した 1 台以上のディスクシェルフのスタックを、コントローラ上の SAS HBA またはオンボード SAS ポートに直接ホ...">
-  <meta name="keywords" content=" hot-add, disk, shelves, shelf, iom12, exist, stack, module, sas, hba, onboard, sas, port, controller, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="IOM12 / IOM12Bモジュールを使用する1つ以上のディスクシェルフをIOM12 / IOM12Bモジュールを使用するディスクシェルフの既存のスタックにホットアドするか、IOM12 / IOM12Bモジュールを使用する1つ以上のディスクシェルフのスタックをコントローラのSAS HBAまたはオンボードSASポ...">
+  <meta name="keywords" content=" hot-add, disk, shelves, shelf, iom12, exist, stack, module, sas, hba, onboard, sas, port, controller, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b"><!-- Icons -->
   <link rel="icon" href="/ja-jp/ontap-systems/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[IOM12 モジュールを搭載したシェルフをホットアドします](https://docs.netapp.com/ja-jp/ontap-systems/sas3/install-hot-add-shelf.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/discuss-sm.svg" alt="" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/sas3/install_hot_add_shelf.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/edit-sm.svg" alt="" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-systems/images/article-sm.svg" alt="" class="github-icon" />寄稿者向けガイド</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[IOM12 / IOM12Bモジュールを使用するシェルフをホットアドします](https://docs.netapp.com/ja-jp/ontap-systems/sas3/install-hot-add-shelf.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/discuss-sm.svg" alt="" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/sas3/install_hot_add_shelf.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/edit-sm.svg" alt="" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-systems/images/article-sm.svg" alt="" class="github-icon" />寄稿者向けガイド</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">このページ</div>
@@ -4164,11 +4164,11 @@
           
           <a target="_blank" 
             
-              href="/ja-jp/ontap-systems/pdfs/sidebar/SAS_シェルフと_IOM12_モジュール.pdf" 
+              href="/ja-jp/ontap-systems/pdfs/sidebar/IOM12___IOM12Bモジュールを使用するSASシェルフ.pdf" 
             
           >
             <img src="/ja-jp/ontap-systems/images/pdf.png" alt="" width="16" height="16"/>
-            SAS シェルフと IOM12 モジュール
+            IOM12 / IOM12Bモジュールを使用するSASシェルフ
           </a>
           
 
@@ -4180,7 +4180,7 @@
           
           <a target="_blank" 
             
-              href="/ja-jp/ontap-systems/pdfs/sidebar/IOM12_モジュールを搭載したシェルフの設置とケーブル接続.pdf" 
+              href="/ja-jp/ontap-systems/pdfs/sidebar/IOM12___IOM2Bモジュールを使用するシェルフの設置とケーブル接続.pdf" 
             
           >
             <img src="/ja-jp/ontap-systems/images/pdf.png" alt="" width="16" height="16"/>
@@ -4254,7 +4254,7 @@
           
           <a target="_blank" 
             
-              href="/ja-jp/ontap-systems/pdfs/sidebar/IOM12_モジュールを搭載したシェルフは引き続き使用できます.pdf" 
+              href="/ja-jp/ontap-systems/pdfs/sidebar/IOM12___IOM12Bモジュールを搭載したシェルフは引き続き使用できます.pdf" 
             
           >
             <img src="/ja-jp/ontap-systems/images/pdf.png" alt="" width="16" height="16"/>
@@ -5946,7 +5946,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/ns224/service-replace-rtc-battery.html">
         リアルタイムクロックバッテリ
       </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/sas3/index.html">
-        <div class="na-navbar-padding"> SAS シェルフと IOM12 モジュール</div>
+        <div class="na-navbar-padding"> IOM12 / IOM12Bモジュールを使用するSASシェルフ</div>
       </a>
       <ul><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 設置とケーブル接続</div>
@@ -5956,7 +5956,7 @@
       </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-hot-add-shelf.html">
         シェルフをホットアドします
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/iom12-hot-add-mix.html">
-        IOM12 シェルフを IOM6 シェルフのスタックにホットアドします
+        IOM12 / IOM12BシェルフをIOM6シェルフのスタックにホットアドします
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-change-shelf-id.html">
         シェルフ ID を変更します
       </a></li><li class="subfolders "><a href="#">
@@ -5994,7 +5994,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/hot-remove-shelf.html">
         シェルフをホットリムーブします
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/service-hot-swap-iom.html">
-        IOM12 モジュール
+        IOM12 / IOM12Bモジュールです
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/service-hot-swap-power-supply.html">
         電源装置
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/service-monitor-leds.html">
@@ -6114,14 +6114,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">IOM12 モジュールを搭載したシェルフをホットアドします</h1>
+  <h1 class="n-doc__component-detail-heading">IOM12 / IOM12Bモジュールを使用するシェルフをホットアドします</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-06-13 16:25:05 +0000">06/13/2022</time>
+    <time datetime="2022-07-01 15:44:20 +0000">07/01/2022</time>
     
   
 
@@ -6131,18 +6131,18 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>IOM12 モジュールを搭載した 1 台以上のディスクシェルフを、 IOM12 モジュールを搭載した既存のディスクシェルフのスタックにホットアドできます。または、 IOM12 モジュールを搭載した 1 台以上のディスクシェルフのスタックを、コントローラ上の SAS HBA またはオンボード SAS ポートに直接ホットアドできます。</p>
+<p>IOM12 / IOM12Bモジュールを使用する1つ以上のディスクシェルフをIOM12 / IOM12Bモジュールを使用するディスクシェルフの既存のスタックにホットアドするか、IOM12 / IOM12Bモジュールを使用する1つ以上のディスクシェルフのスタックをコントローラのSAS HBAまたはオンボードSASポートに直接ホットアドできます。</p>
 </div>
 <div class="paragraph">
-<p>この手順ではスタックを混在させることはできません。 IOM12 モジュールを搭載したシェルフを IOM6 モジュールを搭載したシェルフのスタックにホットアドします。スタックを混在させる必要がある場合は、を使用します <a href="iom12-hot-add-mix.html">"IOM12 シェルフを IOM6 シェルフのスタックにホットアドします"</a>。</p>
+<p>この手順 を使用してスタックを混在させることはできません。IOM12 / IOM12Bモジュールを搭載したシェルフをIOM6モジュールを搭載したシェルフのスタックにホットアドします。スタックを混在させる必要がある場合は、を使用します <a href="iom12-hot-add-mix.html">"IOM12 シェルフを IOM6 シェルフのスタックにホットアドします"</a>。</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="iom12-モジュールを搭載したディスクシェルフのホットアド要件">IOM12 モジュールを搭載したディスクシェルフのホットアド要件</h2>
+<h2 id="iom12-iom12bモジュールを使用したディスクシェルフのホットアド要件">IOM12 / IOM12Bモジュールを使用したディスクシェルフのホットアド要件</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>IOM12 モジュールを使用してディスクシェルフをホットアドするためには、システムが特定の要件を満たしている必要があります。</p>
+<p>IOM12 / IOM12Bモジュールを使用してディスクシェルフをホットアドするには、システムが特定の要件を満たしている必要があります。</p>
 </div>
 <div class="sect2">
 <h3 id="システムの状態">システムの状態</h3>
@@ -6217,7 +6217,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="iom12-モジュールを搭載したディスクシェルフのホットアドに関する考慮事項">IOM12 モジュールを搭載したディスクシェルフのホットアドに関する考慮事項</h2>
+<h2 id="iom12-iom12bモジュールを使用したディスクシェルフのホットアドに関する考慮事項">IOM12 / IOM12Bモジュールを使用したディスクシェルフのホットアドに関する考慮事項</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>ディスクシェルフをホットアドする前に、この手順に関する考慮事項とベストプラクティスを把握しておく必要があります。</p>
@@ -6227,19 +6227,19 @@
 <div class="ulist">
 <ul>
 <li>
-<p>（ IOM12 モジュールを搭載したディスクシェルフの）既存のスタックに IOM12 モジュールを搭載したディスクシェルフをホットアドする場合は、スタックのどちらかの終端（論理上最初または最後のディスクシェルフ）にディスクシェルフをホットアドできます。</p>
+<p>IOM12 / IOM12Bモジュールを搭載したディスクシェルフを既存のスタック（IOM12 / IOM12Bモジュールを搭載したディスクシェルフ）にホットアドする場合は、ディスクシェルフをスタックの最後のディスクシェルフ（論理上の最初または最後のディスクシェルフ）にホットアドできます。</p>
 <div class="paragraph">
 <p>シングルパス HA およびシングルパス構成の場合は、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 システムの場合、コントローラに接続されていないスタックの終端にディスクシェルフをホットアドします。</p>
 </div>
 </li>
 <li>
-<p>IOM12 モジュールを搭載したディスクシェルフは、そのシェルフ専用のスタックに配置する必要があります。 IOM6 モジュールまたは IOM3 モジュールを搭載したシェルフを搭載したスタックには追加できません。</p>
+<p>IOM12 / IOM12Bモジュールを搭載するディスクシェルフは独自のスタックに配置する必要がありますが、IOM6モジュールまたはIOM3モジュールを搭載したシェルフを搭載するスタックには追加できません。</p>
 <div class="paragraph">
-<p>この手順では、スタックの混在はサポートされません。 IOM12 モジュールを搭載したシェルフを IOM6 モジュールを搭載したシェルフのスタックにホットアドします。</p>
+<p>この手順 では、スタックの混在はサポートされません。IOM12 / IOM12Bモジュールを使用するシェルフをIOM6モジュールを使用するシェルフのスタックにホットアドします。</p>
 </div>
 </li>
 <li>
-<p>1 つのシステムに、 IOM12 モジュールを搭載したマルチパススタックのディスクシェルフとクアッドパススタックのディスクシェルフを配置することができます。</p>
+<p>1つのシステムに、IOM12 / IOM12Bモジュールを使用するマルチパススタックのディスクシェルフとクアッドパススタックのディスクシェルフを配置することができます。</p>
 <div class="paragraph">
 <p>HA ペアを使用している場合、 ONTAP ではシステム構成が「マルチパス HA 」と表示されます。シングルコントローラ構成の場合、 ONTAP ではシステム構成が「マルチパス」として表示されます。</p>
 </div>
@@ -6376,7 +6376,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="ホットアド用の-iom12-モジュールを搭載したディスクシェルフの設置">ホットアド用の IOM12 モジュールを搭載したディスクシェルフの設置</h2>
+<h2 id="iom12-iom12bモジュールを使用するディスクシェルフをホットアド用に設置します">IOM12 / IOM12Bモジュールを使用するディスクシェルフをホットアド用に設置します</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>ディスクシェルフをホットアドするには、各ディスクシェルフについて、ラックに取り付け、電源コードを接続し、電源を入れ、ディスクシェルフ ID を設定してから、 SAS 接続をケーブル接続します。</p>
@@ -6642,7 +6642,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="ホットアド用の-iom12-モジュールを搭載したディスクシェルフのケーブル接続">ホットアド用の IOM12 モジュールを搭載したディスクシェルフのケーブル接続</h2>
+<h2 id="iom12-iom12bモジュールを使用したディスクシェルフのホットアド用のケーブル接続">IOM12 / IOM12Bモジュールを使用したディスクシェルフのホットアド用のケーブル接続</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>SAS 接続（シェルフ / シェルフ間およびコントローラ / スタック間）を、ホットアドしたディスクシェルフがシステムに接続されるようにケーブル接続します。</p>

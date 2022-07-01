@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>DS460C ディスクシェルフ内のドライブドロワーと IOM12 モジュールの交換</title>
+  <title>DS460Cディスクシェルフ内のドライブドロワーをIOM12 / IOM12Bモジュールと交換します</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="DS460C ディスクシェルフ内のドライブドロワーと IOM12 モジュールの交換" />
+  <meta property="og:title" content="DS460Cディスクシェルフ内のドライブドロワーをIOM12 / IOM12Bモジュールと交換します" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/ja-jp/ontap-systems/sas3/service-replace-drawer-ds460c.html" />
-	<meta property="og:description" content="ドライブドロワーを交換する前に、ホストの I/O アクティビティをすべて停止し、シェルフの電源をオフにする必要があります。" />
+	<meta property="og:description" content="シェルフのドライブドロワーを交換するには、ストレージシステム全体（HAペア）を停止する必要があります。これにより、シェルフ上にデータアグリゲートを保持したり、HAペアを常時稼働させたりすることができます。 そのためには、ディスクドライブにあるデータアグリゲートからすべてのデータを移動し、データアグリゲートをオフラ..." />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/ontap-systems/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="ドライブドロワーを交換する前に、ホストの I/O アクティビティをすべて停止し、シェルフの電源をオフにする必要があります。">
-  <meta name="keywords" content=" i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="シェルフのドライブドロワーを交換するには、ストレージシステム全体（HAペア）を停止する必要があります。これにより、シェルフ上にデータアグリゲートを保持したり、HAペアを常時稼働させたりすることができます。 そのためには、ディスクドライブにあるデータアグリゲートからすべてのデータを移動し、データアグリゲートをオフラ...">
+  <meta name="keywords" content=" i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf, dcm2, dcm"><!-- Icons -->
   <link rel="icon" href="/ja-jp/ontap-systems/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[DS460C ディスクシェルフ内のドライブドロワーと IOM12 モジュールの交換](https://docs.netapp.com/ja-jp/ontap-systems/sas3/service-replace-drawer-ds460c.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/discuss-sm.svg" alt="" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/sas3/service_replace_drawer_ds460c.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/edit-sm.svg" alt="" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-systems/images/article-sm.svg" alt="" class="github-icon" />寄稿者向けガイド</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[DS460Cディスクシェルフ内のドライブドロワーをIOM12 / IOM12Bモジュールと交換します](https://docs.netapp.com/ja-jp/ontap-systems/sas3/service-replace-drawer-ds460c.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/discuss-sm.svg" alt="" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/sas3/service_replace_drawer_ds460c.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/ontap-systems/images/edit-sm.svg" alt="" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/ontap-systems/images/article-sm.svg" alt="" class="github-icon" />寄稿者向けガイド</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">このページ</div>
@@ -4164,11 +4164,11 @@
           
           <a target="_blank" 
             
-              href="/ja-jp/ontap-systems/pdfs/sidebar/SAS_シェルフと_IOM12_モジュール.pdf" 
+              href="/ja-jp/ontap-systems/pdfs/sidebar/IOM12___IOM12Bモジュールを使用するSASシェルフ.pdf" 
             
           >
             <img src="/ja-jp/ontap-systems/images/pdf.png" alt="" width="16" height="16"/>
-            SAS シェルフと IOM12 モジュール
+            IOM12 / IOM12Bモジュールを使用するSASシェルフ
           </a>
           
 
@@ -4180,7 +4180,7 @@
           
           <a target="_blank" 
             
-              href="/ja-jp/ontap-systems/pdfs/sidebar/IOM12_モジュールを搭載したシェルフの設置とケーブル接続.pdf" 
+              href="/ja-jp/ontap-systems/pdfs/sidebar/IOM12___IOM2Bモジュールを使用するシェルフの設置とケーブル接続.pdf" 
             
           >
             <img src="/ja-jp/ontap-systems/images/pdf.png" alt="" width="16" height="16"/>
@@ -4252,7 +4252,7 @@
           
           <a target="_blank" 
             
-              href="/ja-jp/ontap-systems/pdfs/sidebar/IOM12_モジュールを搭載したシェルフは引き続き使用できます.pdf" 
+              href="/ja-jp/ontap-systems/pdfs/sidebar/IOM12___IOM12Bモジュールを搭載したシェルフは引き続き使用できます.pdf" 
             
           >
             <img src="/ja-jp/ontap-systems/images/pdf.png" alt="" width="16" height="16"/>
@@ -5946,7 +5946,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/ns224/service-replace-rtc-battery.html">
         リアルタイムクロックバッテリ
       </a></li></ul></li></ul></li><li class="subfolders "><a href="/ja-jp/ontap-systems/sas3/index.html">
-        <div class="na-navbar-padding"> SAS シェルフと IOM12 モジュール</div>
+        <div class="na-navbar-padding"> IOM12 / IOM12Bモジュールを使用するSASシェルフ</div>
       </a>
       <ul><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 設置とケーブル接続</div>
@@ -5956,7 +5956,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-hot-add-shelf.html">
         シェルフをホットアドします
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/iom12-hot-add-mix.html">
-        IOM12 シェルフを IOM6 シェルフのスタックにホットアドします
+        IOM12 / IOM12BシェルフをIOM6シェルフのスタックにホットアドします
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/install-change-shelf-id.html">
         シェルフ ID を変更します
       </a></li><li class="subfolders "><a href="#">
@@ -5994,7 +5994,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/hot-remove-shelf.html">
         シェルフをホットリムーブします
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/service-hot-swap-iom.html">
-        IOM12 モジュール
+        IOM12 / IOM12Bモジュールです
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/service-hot-swap-power-supply.html">
         電源装置
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/ontap-systems/sas3/service-monitor-leds.html">
@@ -6114,14 +6114,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">DS460C ディスクシェルフ内のドライブドロワーと IOM12 モジュールの交換</h1>
+  <h1 class="n-doc__component-detail-heading">DS460Cディスクシェルフ内のドライブドロワーをIOM12 / IOM12Bモジュールと交換します</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-06-03 02:18:13 +0000">06/03/2022</time>
+    <time datetime="2022-07-01 15:44:20 +0000">07/01/2022</time>
     
   
 
@@ -6131,23 +6131,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>ドライブドロワーを交換する前に、ホストの I/O アクティビティをすべて停止し、シェルフの電源をオフにする必要があります。</p>
-</div>
-<div class="paragraph">
-<p>これらの 60 ドライブシェルフには、それぞれ 5 つのドライブドロワーが搭載されています。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../media/28_dwg_e2860_de460c_front_no_callouts.gif" alt="28 DWG e2860 de460c フロントノーコールアウト">
-</div>
-</div>
-<div class="paragraph">
-<p>5 台の各ドロワーに最大 12 本のドライブを搭載できます。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../media/92_dwg_de6600_drawer_with_hdds_no_callouts.gif" alt="92 DWG DE6600 引き出し、 HDD からの引き出し線なし">
-</div>
+<p>シェルフのドライブドロワーを交換するには、ストレージシステム全体（HAペア）を停止する必要があります。これにより、シェルフ上にデータアグリゲートを保持したり、HAペアを常時稼働させたりすることができます。 そのためには、ディスクドライブにあるデータアグリゲートからすべてのデータを移動し、データアグリゲートをオフラインにして削除する必要があります。ただし、シェルフにルートアグリゲートが含まれる場合は、HAペアを停止する必要があります。</p>
 </div>
 <div class="paragraph">
 <p>この手順に必要な項目は次のとおりです。</p>
@@ -6180,10 +6164,189 @@
 </li>
 </ul>
 </div>
+<div class="ulist">
+<div class="title">このタスクについて</div>
+<ul>
+<li>
+<p>DCMドライブドロワーやDCM2ドライブドロワーを搭載したこの 手順 環境 シェルフ（シェルフには、IOM12モジュールを2台またはIOM12Bモジュールを2台配置することもできます）。</p>
+<div class="paragraph">
+<p>DCMまたはDCM2ドライブドロワーに障害が発生した場合&#8217;DCMまたはDCM2ドライブドロワーを受け取って交換します</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+<div class="paragraph">
+<p>故障したドライブドロワーを交換すると、シェルフにIOM12モジュールと任意の数のDCM2ドライブドロワーが混在することになります。 IOM12モジュールには、DCM2ドライブドロワーをサポートするバージョンのFWが必要なため、IOM12 FWをバージョン0300以降にアップグレードする必要があります。</p>
+</div>
+<div class="paragraph">
+<p>IOM12 FWのアップグレードは、ドライブドロワーの交換前または交換後に実行できます。この手順 では、ドロワーの交換用手順 の準備の一環としてファームウェアをアップグレードします。</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>DCMドライブドロワーとDCM2ドライブドロワーは&#8217;次のように見えます</p>
+<div class="paragraph">
+<p>DCMドライブドロワーは次のようになります。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/28_dwg_e2860_de460c_front_no_callouts.gif" alt="28 DWG e2860 de460c フロントノーコールアウト">
+</div>
+</div>
+<div class="paragraph">
+<p>DCM2ドライブ・ドロワーは青色のストライプとDCM2ラベルで識別されています</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/dcm2.png" alt="dcm2.">
+</div>
+</div>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="ケーブルチェーンの取り外し">ケーブルチェーンの取り外し</h2>
+<h2 id="ドライブドロワーを交換する準備をします">ドライブドロワーを交換する準備をします</h2>
+<div class="sectionbody">
+<div class="paragraph Lead">
+<p>ドライブドロワーを交換する前に、必要に応じてIOM12ファームウェアを更新し、HAペアを停止してデータアグリゲートをシェルフに保持するか、HAペアを常時稼働させておくかを選択する必要があります。 そのためには、ディスクドライブにあるデータアグリゲートからすべてのデータを移動し、データアグリゲートをオフラインにして削除する必要があります。ただし、シェルフにルートアグリゲートが含まれる場合は、HAペアを停止する必要があります。最後に、シェルフの電源をオフにする必要があります。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>障害が発生したドライブドロワーを交換すると&#8217;IOM12モジュールと任意の数のDCM2ドライブドロワーがシェルフに搭載されるかどうかを確認します</p>
+</li>
+<li>
+<p>シェルフにIOM12モジュールと任意の数のDCM2ドライブ・ドロワーが混在する場合は&#8217;IOM12 FWをバージョン0300以降にアップグレードする必要がありますそれ以外の場合は&#8217;次の手順に進みます</p>
+<div class="paragraph">
+<p>ファームウェアの最新バージョンは、ネットアップサポートサイトで入手できます。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware">"ネットアップのダウンロード：ディスクシェルフファームウェア"</a></p>
+</div>
+</li>
+<li>
+<p>HAペアのどちらかのコントローラのルートアグリゲートがシェルフに含まれている場合、またはHAペアを停止する（HAペアを起動して実行しない）場合は、次の手順を実行します。それ以外の場合は、次の手順に進みます。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+HAペアを停止するときは、データアグリゲートをシェルフに配置したままにすることができます。
+</td>
+</tr>
+</table>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>HAペアの両方のコントローラを停止します。</p>
+</li>
+<li>
+<p>ストレージシステムコンソールを確認して、HAペアが停止したことを確認します。</p>
+</li>
+<li>
+<p>シェルフの電源をオフにします。</p>
+</li>
+<li>
+<p>セクションに移動します。 <a href="#Remove the cable chains">[Remove the cable chains]</a>。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>HAペアを常に稼働状態にしておく場合は、次の手順を実行します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+ディスクシェルフのアグリゲートにドロワーを交換しようとすると、原因 でシステムが停止し、複数のディスクがパニック状態になることがあります。
+</td>
+</tr>
+</table>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>ディスクドライブにあるデータアグリゲートからすべてのデータを移動します。</p>
+<div class="paragraph">
+<p>データには、ボリュームやLUNが含まれますが、これらに限定されません。</p>
+</div>
+</li>
+<li>
+<p>アグリゲートをオフラインにして削除し、ディスクドライブをスペアとして使用できるようにします。</p>
+<div class="paragraph">
+<p>コマンドはどちらのコントローラのクラスタシェルからも入力できます。</p>
+</div>
+<div class="paragraph">
+<p>storage aggregate offline-aggregate_aggregate_name_`を指定します</p>
+</div>
+<div class="paragraph">
+<p>storage aggregate delete -aggregate <em>aggregate_name</em>`</p>
+</div>
+</li>
+<li>
+<p>ディスクドライブにアグリゲートがない（スペアである）ことを確認します。</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>いずれかのコントローラのクラスタシェルで次のコマンドを入力します。「 storage disk show -shelf_shelf_number _ 」</p>
+</li>
+<li>
+<p>出力をチェックして、ディスクドライブがスペアであることを確認します。</p>
+<div class="paragraph">
+<p>スペアのディスク・ドライブは' Container Type列にspareと表示されます</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="注記">
+</td>
+<td class="content">
+シェルフ内のディスク・ドライブに障害が発生した場合は' Container Type列にbrokenと表示されます
+</td>
+</tr>
+</table>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>シェルフの電源をオフにします。</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ケーブルチェーンを取り外します">ケーブルチェーンを取り外します</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>DS460C ドライブシェルフの各ドライブドロワーの左右のケーブルチェーンは、ドロワーの出し入れに使用ます。ドライブドロワーを取り外す前に、両方のケーブルチェーンを取り外す必要があります。</p>
@@ -6192,7 +6355,10 @@
 <div class="title">作業を開始する前に</div>
 <ul>
 <li>
-<p>ホストの I/O アクティビティを停止し、シェルフの電源をオフにしておきます。</p>
+<p>これでが完了です <a href="#Prepare to replace a drive drawer">[Prepare to replace a drive drawer]</a> HAペアが停止されているか、ディスクドライブにあるデータアグリゲートのすべてのデータを移動し、ディスクドライブをスペアにするためにデータアグリゲートをオフラインにして削除した状態にする手順です。</p>
+</li>
+<li>
+<p>シェルフの電源をオフにしておきます。</p>
 </li>
 <li>
 <p>次のものを用意します。</p>
@@ -6448,7 +6614,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="ドライブドロワーの取り外し">ドライブドロワーの取り外し</h2>
+<h2 id="ドライブドロワーを取り外します">ドライブドロワーを取り外します</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>左右のケーブルチェーンを取り外したら、ドライブシェルフからドライブドロワーを取り外すことができます。ドライブドロワーを取り外すときは、ドロワーを途中まで引き出し、ドライブを取り外し、ドライブドロワーを取り外します。</p>
@@ -6564,7 +6730,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="ドライブドロワーの取り付け">ドライブドロワーの取り付け</h2>
+<h2 id="ドライブドロワーを取り付けます">ドライブドロワーを取り付けます</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>ドライブドロワーをドライブシェルフに取り付けるときは、ドロワーを空いているスロットに挿入し、ドライブを取り付け、前面ベゼルを再度取り付けます。</p>
@@ -6756,7 +6922,7 @@
 <h2 id="ケーブルチェーンを取り付けます">ケーブルチェーンを取り付けます</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>ドライブドロワーを取り付ける最後の手順では、左右のケーブルチェーンをドライブシェルフに取り付けます。ケーブルチェーンを取り付けるときは、ケーブルチェーンを取り外したときと逆の順序で作業します。チェーンの水平コネクタをエンクロージャの水平ブラケットに挿入してから、チェーンの垂直コネクタをエンクロージャの垂直ブラケットに挿入する必要があります。</p>
+<p>ドライブドロワーを取り付ける最後の手順では、交換用の左右のケーブルチェーンをドライブシェルフに取り付けます。ケーブルチェーンを取り付けるときは、ケーブルチェーンを取り外したときと逆の順序で作業します。チェーンの水平コネクタをエンクロージャの水平ブラケットに挿入してから、チェーンの垂直コネクタをエンクロージャの垂直ブラケットに挿入する必要があります。</p>
 </div>
 <div class="ulist">
 <div class="title">作業を開始する前に</div>
@@ -7030,6 +7196,18 @@
 <p>両方のファンが稼働し、ファンの背面にある黄色の LED が消灯していることを確認します。</p>
 </li>
 </ol>
+</div>
+</li>
+<li>
+<p>HAペアを停止した場合は、両方のコントローラでONTAP をブートします。停止していない場合は、次の手順に進みます。</p>
+</li>
+<li>
+<p>シェルフからデータを移動してデータアグリゲートを削除した場合、シェルフ内のスペアディスクをアグリゲートの作成または拡張に使用できるようになりました。</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/ontap/disks-aggregates/aggregate-creation-workflow-concept.html">"アグリゲートの作成ワークフロー"</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/ontap/disks-aggregates/aggregate-expansion-workflow-concept.html">"アグリゲートの拡張ワークフロー"</a></p>
 </div>
 </li>
 </ol>
