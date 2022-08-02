@@ -21,8 +21,8 @@ summary: コントローラモジュールハードウェアを交換するに�
 
 次の図または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ca74d345-e213-4390-a599-aae10019ec82["コントローラモジュールの取り外し"]
-
+.アニメーション-コントローラモジュールを取り外します
+video::ca74d345-e213-4390-a599-aae10019ec82[panopto]
 . 接地対策がまだの場合は、自身で適切に実施します。
 . 電源ケーブル固定クリップを外し、電源装置からケーブルを抜きます。
 . ケーブルマネジメントデバイスに接続しているケーブルをまとめているフックとループストラップを緩め、システムケーブルと SFP をコントローラモジュールから外し（必要な場合）、どのケーブルが何に接続されていたかを記録します。
@@ -44,8 +44,8 @@ image:../media/drw_A400_Remove_controller.png[""]
 . コントローラモジュールを安定した平らな場所に置きます。
 . アニメーション、図、または記載された手順に従って、交換用コントローラモジュールでエアダクトを開き、コントローラモジュールから空のライザーを取り外します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=49053752-e813-4c15-a917-ab190147fa6e["交換用コントローラモジュールからの空のライザーの取り外し"]
-
+.アニメーション-交換用コントローラモジュールから空のライザーを取り外します
+video::49053752-e813-4c15-a917-ab190147fa6e[panopto]
 
 
 image::../media/drw_a400_empty_riser_remove.png[DRW 400空 のライザーが取り外されました]
@@ -64,8 +64,8 @@ image::../media/drw_a400_empty_riser_remove.png[DRW 400空 のライザーが取
 
 次に示すアニメーション、図、または記載された手順に従って、交換用コントローラモジュールに電源装置を移動します。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=92060115-1967-475b-b517-aad9012f130c["電源装置を移動しています"]
-
+.アニメーション-電源装置を移動します
+video::92060115-1967-475b-b517-aad9012f130c[panopto]
 . 電源装置を取り外します。
 +
 image::../media/drw_A400_psu.png[DRW A400 PSU]
@@ -96,8 +96,8 @@ NVDIMM バッテリを障害のあるコントローラモジュールから交�
 
 次に示すアニメーション、図、または記載された手順に従って、障害のあるコントローラモジュールから交換用コントローラモジュールに NVDIMM バッテリを移動します。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=94d115b2-b02a-4234-805c-aad9012f204c["NVDIMM バッテリの移動"]
-
+.アニメーション- NVDIMMバッテリを移動します
+video::94d115b2-b02a-4234-805c-aad9012f204c[panopto]
 image::../media/drw_A400_nvdimm-batt.png[DRW A400 NVDIMM バッテリ]
 
 . エアダクトを開きます。
@@ -125,8 +125,8 @@ NOTE: 指示があるまで、バッテリケーブルをマザーボードに�
 
 次に示すアニメーション、図、または記載された手順に従って、障害のあるコントローラモジュールから交換用コントローラモジュールにブートメディアを移動します。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=2a14099c-85de-4a84-867c-aad9012efac8["ブートメディアを移動します"]
-
+.アニメーション-ブートメディアを移動します
+video::2a14099c-85de-4a84-867c-aad9012efac8[panopto]
 image::../media/drw_A400_Replace-boot_media.png[DRW A400 ブートメディアの交換]
 
 . コントローラモジュールからブートメディアの場所を確認して取り出します。
@@ -159,12 +159,12 @@ PCIe ライザーとメザニンカードを障害のあるコントローラモ
 
 PCIe ライザー 1 および 2 （左および中央のライザー）の移動：
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=f4ee1d4d-6029-4fe6-a063-aad9012f170b["PCI ライザー 1 と 2 を移動しています"]
-
+.アニメーション- PCIライザー1と2を移動します
+video::f4ee1d4d-6029-4fe6-a063-aad9012f170b[panopto]
 メザニンカードとライザー 3 （右のライザー）の移動：
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=b0c3b575-3434-4e00-a421-aad9012f2e9e["メザニンカードとライザー 3 の移動"]
-
+.アニメーション-メザニンカードとライザー3を移動します
+video::b0c3b575-3434-4e00-a421-aad9012f2e9e[panopto]
 image::../media/drw_A400_Replace-PCIe-cards.png[DRW A400 PCIe カードの交換]
 
 . PCIe ライザー 1 と 2 を障害のあるコントローラモジュールから交換用コントローラモジュールに移動します。
@@ -204,8 +204,8 @@ DIMM の場所を確認し、障害のあるコントローラモジュールか
 
 次に示すアニメーション、図、または記載された手順に従って、障害のあるコントローラモジュールから交換用コントローラモジュールに DIMM を移動します。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=717b52fa-f236-4f3d-b07d-aad9012f51a3["DIMM の移動"]
-
+.アニメーション- DIMMを移動します
+video::717b52fa-f236-4f3d-b07d-aad9012f51a3[panopto]
 image::../media/drw_A400_Replace-NVDIMM-DIMM.png[DRW A400 NVDIMM DIMM の交換]
 
 . コントローラモジュールで DIMM の場所を確認します。
@@ -245,8 +245,8 @@ DIMM のソケットへの挿入にはある程度の力が必要です。簡単
 
 次のアニメーション、図、または記載された手順を使用して、交換用コントローラモジュールをシャーシに設置できます。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0310fe80-b129-4685-8fef-ab19010e720a["コントローラモジュールを取り付けます"]
-
+.アニメーション-コントローラモジュールを設置します
+video::0310fe80-b129-4685-8fef-ab19010e720a[panopto]
 image::../media/drw_A400_Install_controller_source.png[DRW A400 コントローラソースの取り付け]
 
 . まだ行っていない場合は、エアダクトを閉じます。

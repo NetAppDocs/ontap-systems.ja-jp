@@ -188,8 +188,8 @@ mcc1A::> metrocluster operation show
 
 次のアニメーション、図、または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ca74d345-e213-4390-a599-aae10019ec82["コントローラモジュールの取り外し"]
-
+.アニメーション-コントローラモジュールを取り外します
+video::ca74d345-e213-4390-a599-aae10019ec82[panopto]
 image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取り外し]
 
 . 接地対策がまだの場合は、自身で適切に実施します。
@@ -230,8 +230,8 @@ NOTE: ご使用のシステムに対応したボラティリティの声明を�
 
 NOTE: このアニメーションでは、 DIMM のないソケットには空きスロットが示されています。これらの空のソケットには何も挿入されていません。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=e0afec49-0953-4dcc-b9d0-aadb01578e1b["NVDIMM の交換"]
-
+.アニメーション- NVDIMMを交換します
+video::e0afec49-0953-4dcc-b9d0-aadb01578e1b[panopto]
 image::../media/drw_A400_Replace-NVDIMM-DIMM.png[DRW A400 NVDIMM DIMM の交換]
 
 . エアダクトを開き、コントローラモジュールのスロット 11 で NVDIMM の場所を確認します。
@@ -270,8 +270,8 @@ NOTE: NVDIMM がスロットにまっすぐ差し込まれていることを目�
 
 次のアニメーション、図、または記載された手順を使用して、コントローラモジュールをシャーシに設置できます。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0310fe80-b129-4685-8fef-ab19010e720a["コントローラモジュールを取り付けます"]
-
+.アニメーション-コントローラモジュールを設置します
+video::0310fe80-b129-4685-8fef-ab19010e720a[panopto]
 image::../media/drw_A400_Install_controller_source.png[DRW A400 コントローラソースの取り付け]
 
 . まだ行っていない場合は、エアダクトを閉じます。

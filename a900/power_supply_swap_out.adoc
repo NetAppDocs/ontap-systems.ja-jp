@@ -48,8 +48,8 @@ IMPORTANT: 効率性の異なる PSU を混在させないでください。い�
 電源装置を取り外すときは、重量があるので必ず両手で支えながら作業してください。
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6d0eee92-72e2-4da4-a4fa-adf9016b57ff["アニメーション -- PSU の取り外し / 取り付け"^]
-
+.アニメーション- PSUの取り外し/取り付け
+video::6d0eee92-72e2-4da4-a4fa-adf9016b57ff[panopto]
 +
 image::../media/drw_9000_remove_install_psu_module.svg[DRW 9000 取り付け PSU モジュールを取り外します]
 

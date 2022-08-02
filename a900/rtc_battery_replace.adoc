@@ -142,8 +142,8 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 . 障害のあるコントローラモジュールからケーブルを外し、どのケーブルが何に接続されていたかを記録します。
 . カムハンドルのテラコッタボタンを下にスライドさせてロックを解除します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa["アニメーション -- コントローラを取り外します"^]
-
+.アニメーション-コントローラを取り外します
+video::256721fd-4c2e-40b3-841a-adf2000df5fa[panopto]
 +
 image::../media/drw_a900_remove_PCM.png[DRW a900 は PCM を取り外します]
 
@@ -194,8 +194,8 @@ RTC バッテリを交換するには、コントローラモジュールで障�
 . 接地対策がまだの場合は、自身で適切に実施します。
 . RTC バッテリの場所を確認します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1bb4d8d4-5040-471c-9593-adf2000df48d["アニメーション -- RTC バッテリを交換します"^]
-
+.アニメーション- RTCバッテリを交換します
+video::1bb4d8d4-5040-471c-9593-adf2000df48d[panopto]
 +
 image::../media/drw_a900_remove_RTC_battery.png[DRW a900 は RTC バッテリを取り外します]
 

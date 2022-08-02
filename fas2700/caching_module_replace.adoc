@@ -25,7 +25,7 @@ summary: モジュールがオフラインになったことを示す単一の A
 
 ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタでクォーラムを使用していない場合や、正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。
 
-[+]http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html["ONTAP 9 システムアドミニストレーションリファレンス"]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html["ONTAP 9 システムアドミニストレーションリファレンス"^]
 
 キャッシングモジュールを交換する前に、その内容を消去することを推奨します。
 

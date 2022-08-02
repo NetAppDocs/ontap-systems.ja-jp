@@ -19,12 +19,11 @@ summary: ここでは、システムの設置とケーブル接続の方法を�
 
 次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
 
-https://www.youtube.com/embed/5g-34qxG9HA?rel=0["ネットアップのビデオ： AFF A220 and FAS2700 Systems ： Installation and Setup Instructions"]
-
+video::5g-34qxG9HA?[youtube]
 
 
 == ビデオ 2 ：エンドツーエンドのソフトウェア設定の実行
 
 次のビデオでは、 ONTAP 9.2 以降を実行するシステムのエンドツーエンドのソフトウェア設定を示します。
 
-https://www.youtube.com/embed/WAE0afWhj1c?rel=0["ネットアップのビデオ： Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2"]
+video::WAE0afWhj1c?[youtube]

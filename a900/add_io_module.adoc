@@ -121,8 +121,8 @@ I/O モジュールがシャーシから外れ、 I/O スロットから約 1/2 
 I/O モジュールが取り付けられていたスロットを記録しておいてください。
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6["I/O モジュールの取り外しまたは交換"^]
-
+.アニメーション- I/Oモジュールの取り外しまたは交換
+video::3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6[panopto]
 +
 image:../media/drw_a900_remove_PCIe_module.png[""]
 

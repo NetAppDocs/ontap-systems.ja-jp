@@ -129,7 +129,7 @@ dev_name には、前の手順で特定したポートとデバイスのいず�
 
 .. 出力を確認し、必要に応じて実行するテストのみを選択します。「 sldiag device modify -dev dev_name -selection only
 +
-- selection only を指定すると、デバイスに対して実行しないその他のテストがすべて無効になります。
+-selection only - デバイスに対して実行しないその他のテストをすべて無効にします。
 
 .. 選択したテスト「 sldiag device run -dev dev_name 」を実行します
 +

@@ -26,8 +26,8 @@ IMPORTANT: シャーシからファンモジュールを取り外したら 2 分
 IMPORTANT: ファンモジュールは奥行きがないので、シャーシから突然落下してけがをすることがないように、必ず空いている手でファンモジュールの底面を支えてください。
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c3c8d93-b48e-4554-87c8-adf9016af819["アニメーション -- ファンの取り外し / 取り付け"^]
-
+.アニメーション-ファンの取り外し/取り付け
+video::3c3c8d93-b48e-4554-87c8-adf9016af819[panopto]
 +
 image::../media/drw_a900_remove_install_fan.png[DRW a900 は取り付けファンを取り外します]
 

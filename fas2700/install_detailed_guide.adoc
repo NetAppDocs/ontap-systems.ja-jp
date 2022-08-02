@@ -576,8 +576,8 @@ link:../com.netapp.doc.hw-ds-sas3-icg/home.html["設置とケーブル接続"]
 .手順
 . 次のアニメーションに従って、 1 つ以上のドライブシェルフ ID を設定します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c600f366-4d30-481a-89d9-ab1b0066589b["ドライブシェルフ ID を設定します"]
-
+.アニメーション-ドライブシェルフIDを設定します
+video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
 . 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
 . 両方のノードの電源スイッチをオンにします。
 +
@@ -593,8 +593,8 @@ NOTE: 初回のブートには最大 8 分かかる場合があります。
 
 . 次のアニメーションに従って、ラップトップを管理スイッチに接続します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"]
-
+.アニメーション-ラップトップを管理スイッチに接続します
+video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 . 検出する ONTAP アイコンを選択します。
 +
 image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コントローラ選択]
@@ -649,8 +649,8 @@ image::../media/drw_client_to_mgmt_subnet_fas2700_affa220.png[DRW クライア�
 
 . 次のアニメーションに従って、 1 つ以上のドライブシェルフ ID を設定します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c600f366-4d30-481a-89d9-ab1b0066589b["ドライブシェルフ ID を設定します"]
-
+.アニメーション-ドライブシェルフIDを設定します
+video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
 . 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
 . 両方のノードの電源スイッチをオンにします。
 +

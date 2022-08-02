@@ -19,7 +19,7 @@ summary: ここでは、システムの設置とケーブル接続の方法を�
 
 次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
 
-.AFF A250 のインストールとセットアップ
+.アニメーション- AFF A250のインストールとセットアップ
 video::fe6876d5-9332-4b2e-89be-ac6900027ba5[panopto]
 
 
@@ -27,4 +27,4 @@ video::fe6876d5-9332-4b2e-89be-ac6900027ba5[panopto]
 
 次のビデオでは、 ONTAP 9.2 以降を実行するシステムのエンドツーエンドのソフトウェア設定を示します。
 
-link:https://www.youtube.com/embed/WAE0afWhj1c?rel=0["ネットアップのビデオ： Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2"^]
+video::WAE0afWhj1c?[youtube]

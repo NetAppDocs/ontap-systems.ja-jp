@@ -559,10 +559,10 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 
 
 
-=== FAS500f 、 AFF A250 、または ASA A250HA ペアのホットアドシェルフをケーブル接続します
+=== FAS500f または AFF A250 HA ペアのホットアドシェルフをケーブル接続します
 
 [role="lead"]
-ストレージの追加が必要になったときは、 NS224 ドライブシェルフを FAS3500f 、 AFF A250 、または ASA A250HA ペアにホットアドできます。
+ストレージの追加が必要になったときは、 NS224 ドライブシェルフを FAS3500f または AFF A250 HA ペアにホットアドできます。
 
 .作業を開始する前に
 * システム要件を満たしている必要があります。

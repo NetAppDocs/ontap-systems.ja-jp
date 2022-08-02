@@ -142,8 +142,8 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 . 障害のあるコントローラモジュールからケーブルを外し、どのケーブルが何に接続されていたかを記録します。
 . カムハンドルのテラコッタボタンを下にスライドさせてロックを解除します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa["アニメーション -- コントローラを取り外します"^]
-
+.アニメーション-コントローラを取り外します
+video::256721fd-4c2e-40b3-841a-adf2000df5fa[panopto]
 +
 image::../media/drw_a900_remove_PCM.png[DRW a900 は PCM を取り外します]
 
@@ -208,8 +208,8 @@ image::../media/drw_a900_DIMM_map.png[DRW a900 DIMM マップ]
 IMPORTANT: DIMM 回路基板のコンポーネントに力が加わらないように、 DIMM の両端を慎重に持ちます。
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=db161030-298a-4ae4-b902-adf2000e2aa4["アニメーション -- DIMM を交換します"^]
-
+.アニメーション- DIMMを交換します
+video::db161030-298a-4ae4-b902-adf2000e2aa4[panopto]
 +
 image::../media/drw_a900_replace_PCM_dimms.png[DRW a900 は PCM DIMM を交換します]
 
@@ -274,8 +274,8 @@ image:../media/legend_icon_01.png[""]
 |===
 . コントローラモジュールの端をシャーシの開口部に合わせ、コントローラモジュールをシステムに半分までそっと押し込みます。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=099237f3-d7f2-4749-86e2-adf2000df53c["アニメーション -- コントローラをインストールします"^]
-
+.アニメーション-コントローラを取り付けます
+video::099237f3-d7f2-4749-86e2-adf2000df53c[panopto]
 +
 image::../media/drw_a900_remove_PCM.png[DRW a900 は PCM を取り外します]
 

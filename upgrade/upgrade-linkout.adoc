@@ -10,6 +10,6 @@ summary: AFF および FAS コントローラモジュールのアップグレ�
 :imagesdir: ../media/
 
 
-ほとんどの AFF および FAS システムでは、にあるアップグレード手順に従います https://docs.netapp.com/us-en/ontap-systems-upgrade/index.html["Upgrade AFF and FAS Systems のドキュメントサイト"]。
+ほとんどの AFF および FAS システムでは、にあるアップグレード手順に従います https://docs.netapp.com/us-en/ontap-systems-upgrade/index.html["Upgrade AFF and FAS Systems のドキュメントサイト"^]。
 
-MetroCluster 構成のシステムの場合は、にあるアップグレード手順に従います https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/concept_choosing_an_upgrade_method_mcc.html["ONTAP MetroCluster ドキュメントサイト"]。
+MetroCluster 構成のシステムの場合は、にあるアップグレード手順に従います https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/concept_choosing_an_upgrade_method_mcc.html["ONTAP MetroCluster ドキュメントサイト"^]。

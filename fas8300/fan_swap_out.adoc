@@ -18,8 +18,8 @@ NOTE: シャーシからファンモジュールを取り外したら 2 分以�
 
 次に示すアニメーションや図、または記載された手順に従って、ファンモジュールをホットスワップします。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ae59d53d-7746-402c-bd6b-aad9012efa89["ファンの交換"]
-
+.アニメーション-ファンを交換します
+video::ae59d53d-7746-402c-bd6b-aad9012efa89[panopto]
 image::../media/drw_A400_Replace_fan.png[DRW A400 ファンの交換]
 
 .手順

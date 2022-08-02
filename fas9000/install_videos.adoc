@@ -19,12 +19,12 @@ summary: ここでは、システムの設置とケーブル接続の方法を�
 
 次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=b46575d4-0475-48bd-8772-ac5d012a4e06["AFF A700 または FAS9000 の設置とセットアップ"]
-
+.アニメーション- AFF A700またはFAS9000の設置とセットアップ
+video::b46575d4-0475-48bd-8772-ac5d012a4e06[panopto]
 
 
 == ビデオ 2 ：エンドツーエンドのソフトウェア設定の実行
 
 次のビデオでは、 ONTAP 9.2 以降を実行するシステムのエンドツーエンドのソフトウェア設定を示します。
 
-https://www.youtube.com/embed/WAE0afWhj1c?rel=0["ネットアップのビデオ： Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2"]
+video::WAE0afWhj1c?[youtube]

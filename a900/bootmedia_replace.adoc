@@ -23,8 +23,8 @@ summary: コントローラモジュールを取り外して開き、コント�
 . 障害のあるコントローラモジュールからケーブルを外し、どのケーブルが何に接続されていたかを記録します。
 . カムハンドルのテラコッタボタンを下にスライドさせてロックを解除します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa["アニメーション -- コントローラを取り外します"^]
-
+.アニメーション-コントローラを取り外します
+video::256721fd-4c2e-40b3-841a-adf2000df5fa[panopto]
 +
 image::../media/drw_a900_remove_PCM.png[DRW a900 は PCM を取り外します]
 
@@ -77,8 +77,8 @@ image:../media/legend_icon_01.png[""]
 .手順
 . コントローラモジュールの背面にある黒のエアダクトを開き、次の図またはコントローラモジュールの FRU マップを使用してブートメディアの場所を確認します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c5080658-765e-4d29-8456-adf2000e1495["アニメーション -- ブートメディアを交換します"^]
-
+.アニメーション-ブートメディアの交換
+video::c5080658-765e-4d29-8456-adf2000e1495[panopto]
 +
 image::../media/drw_a900_remove_boot_dev.png[DRW a900 ブートデバイスを削除します]
 

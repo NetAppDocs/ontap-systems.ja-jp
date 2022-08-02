@@ -397,7 +397,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 . 次のアニメーションや図を使用して、コントローラを3台のDS224Cドライブシェルフ（1台のドライブシェルフのスタックと2台のドライブシェルフのスタック1台）にケーブル接続します。
 +
-.アニメーション-ドライブシェルフのケーブル接続
+.アニメーション-ドライブシェルフをケーブル接続します
 video::c958aae6-9d08-4d3d-a213-ae7c017040cd[panopto]
 +
 image::../media/drw_9500_sas_shelf_cabling.svg[DRW 9500 SASシェルフのケーブル接続]
@@ -446,7 +446,7 @@ Mini-SASケーブル
 
 . 次のアニメーションまたは図を使用して、 1 つ以上のドライブシェルフ ID を設定します。
 +
-.アニメーション-シェルフIDの設定
+.アニメーション-シェルフIDを設定します
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
 image::../media/drw_power-on_set_shelf_ID_set.svg[DRW 電源オンセットシェルフ ID セット]
@@ -579,7 +579,7 @@ image::../media/drw_9500_cable_console_switch_controller.svg[DRW 9500ケーブ�
 
 . 次のアニメーションに従って、 1 つ以上のドライブシェルフ ID を設定します。
 +
-.アニメーション-シェルフIDの設定
+.アニメーション-シェルフIDを設定します
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
 image::../media/drw_power-on_set_shelf_ID_set.svg[DRW 電源オンセットシェルフ ID セット]

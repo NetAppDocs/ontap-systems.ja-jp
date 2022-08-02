@@ -188,8 +188,8 @@ mcc1A::> metrocluster operation show
 
 次のアニメーション、図、または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ca74d345-e213-4390-a599-aae10019ec82["コントローラモジュールの取り外し"]
-
+.アニメーション-コントローラモジュールを取り外します
+video::ca74d345-e213-4390-a599-aae10019ec82[panopto]
 image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取り外し]
 
 . 接地対策がまだの場合は、自身で適切に実施します。
@@ -219,8 +219,8 @@ image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取
 
 次のアニメーション、図、または記載された手順を使用して、 RTC バッテリを交換できます。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=80fe7a9b-de6f-46e0-a18b-aadb0157263d["RTC バッテリの交換"]
-
+.アニメーション- RTCバッテリを交換します
+video::80fe7a9b-de6f-46e0-a18b-aadb0157263d[panopto]
 image::../media/drw_A400_rtc-batt.png[DRW A400 RTC BATT]
 
 . 接地対策がまだの場合は、自身で適切に実施します。
@@ -255,8 +255,8 @@ NOTE: ホルダーから取り外す際に、バッテリの極の向きを確�
 
 次のアニメーション、図、または記載された手順を使用して、コントローラモジュールをシャーシに設置できます。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0310fe80-b129-4685-8fef-ab19010e720a["コントローラモジュールを取り付けます"]
-
+.アニメーション-コントローラモジュールを設置します
+video::0310fe80-b129-4685-8fef-ab19010e720a[panopto]
 image::../media/drw_A400_Install_controller_source.png[DRW A400 コントローラソースの取り付け]
 
 . エアダクトまたはコントローラモジュールカバーを閉じていない場合は閉じます。

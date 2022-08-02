@@ -58,7 +58,7 @@ Ctrl キーを押しながら C キーを押し、「 y 」と入力します。
  a| 
 正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _
 
-+ 障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
+障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
 
 |===
 
@@ -109,14 +109,12 @@ image:../media/legend_icon_02.png[""]
 +
 .. エアダクトの側面にある固定ツメをコントローラモジュールの中央方向に押します。
 .. エアダクトをファンモジュールの方向にスライドさせ、完全に開いた状態になるまで上方向に回転させます。
-
-
-
-
++
 image::../media/drw_a700s_open_air_duct.png[DRW a700s オープンエアダクト]
 
-[+]
 
+
++
 [cols="1,3"]
 |===
 
@@ -141,6 +139,8 @@ image:../media/legend_icon_03.png[""]
 エアダクト
 
 |===
+
+
 
 
 == 手順 3 ： PCIe カードを交換します

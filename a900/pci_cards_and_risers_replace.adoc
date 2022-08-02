@@ -147,10 +147,12 @@ I/O モジュールがシャーシから外れ、 I/O スロットから約 1/2 
 I/O モジュールが取り付けられていたスロットを記録しておいてください。
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6["アニメーション -- I/O モジュールの取り外し / 取り付け"^]
-
+.アニメーション- I/Oモジュールの取り外し/取り付け
+video::3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6[panopto]
 +
 image:../media/drw_a900_remove_PCIe_module.png[""]
+
+
 
 +
 [cols="10,90"]
@@ -170,8 +172,6 @@ image:../media/legend_icon_02.png[""]
 ロックが完全に解除された I/O カムラッチ
 
 |===
-
-
 . I/O モジュールを脇へ置きます。
 . 交換用 I/O モジュールを I/O モジュールをスロットにそっと挿入し、文字と数字が記載された I/O カムラッチを上に押してモジュールを所定の位置にロックし、 I/O モジュールをシャーシに取り付けます。
 . 必要に応じて、 I/O モジュールにケーブルを再接続します。

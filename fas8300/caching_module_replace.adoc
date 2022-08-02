@@ -187,8 +187,8 @@ mcc1A::> metrocluster operation show
 
 次のアニメーション、図、または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=75b6fa91-96b9-4323-b156-aae10007c9a5["コントローラモジュールの取り外し"]
-
+.アニメーション-コントローラモジュールを取り外します
+video::75b6fa91-96b9-4323-b156-aae10007c9a5[panopto]
 image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取り外し]
 
 .手順
@@ -231,8 +231,8 @@ NOTE: ご使用のシステムに対応したボラティリティの声明を�
 
 次のアニメーション、図、または記載された手順を使用して、キャッシングモジュールを交換できます。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d5f75ac5-b4f3-4b49-984b-aad9012f0c8e["キャッシングモジュールの交換"]
-
+.アニメーション-キャッシングモジュールを交換します
+video::d5f75ac5-b4f3-4b49-984b-aad9012f0c8e[panopto]
 image::../media/drw_8300_Replace-flashcache.png[DRW 8300 FlashCache を交換します]
 
 .手順
@@ -279,8 +279,8 @@ image::../media/drw_8300_Replace-flashcache.png[DRW 8300 FlashCache を交換し
 
 次のアニメーション、図、または記載された手順を使用して、コントローラモジュールをシャーシに設置できます。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=9249fdb8-1522-437d-9280-aae10007c97b["コントローラモジュールを取り付けます"]
-
+.アニメーション-コントローラモジュールを設置します
+video::9249fdb8-1522-437d-9280-aae10007c97b[panopto]
 image::../media/drw_A400_Install_controller_source.png[DRW A400 コントローラソースの取り付け]
 
 .手順

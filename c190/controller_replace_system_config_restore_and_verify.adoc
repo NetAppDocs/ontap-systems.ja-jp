@@ -136,7 +136,7 @@ hA-state には、次のいずれかの値を指定できます。
 `*sldiag device modify -dev_dev_name -- selection only *`
 
 +
-- selection only を指定すると、デバイスに対して実行しないその他のテストがすべて無効になります。
+`-selection only`は、デバイスに対して実行しない他のすべてのテストを無効にします。
 
 .. 選択したテストを実行します。
 +

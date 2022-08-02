@@ -216,8 +216,8 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 .手順
 . アニメーションや図を使用して、コントローラとスイッチをケーブルで接続します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=48552ddf-0925-4f88-8e93-ab1b00666489["2 ノードスイッチレスクラスタのケーブル接続"]
-
+.アニメーション- 2ノードスイッチレスクラスタのケーブル配線
+video::48552ddf-0925-4f88-8e93-ab1b00666489[panopto]
 +
 image::../media/drw_A400_TNSC-network-cabling.png[DRW A400 TNSC ネットワークケーブル配線]
 
@@ -245,8 +245,8 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 .手順
 . アニメーションや図を使用して、コントローラとスイッチをケーブルで接続します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=8fefba75-f395-4cf2-ba3c-ab1b00665870["スイッチクラスタのケーブル接続"]
-
+.アニメーションスイッチを使用したクラスタのケーブル接続
+video::8fefba75-f395-4cf2-ba3c-ab1b00665870[panopto]
 +
 image::../media/drw_a400_switched_network_cabling.png[DRW 400: スイッチドネットワークケーブル配線]
 
@@ -277,8 +277,8 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 .手順
 . 次のアニメーションや図を使用して、 1 台のドライブシェルフにコントローラをケーブル接続します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=48d68897-c91d-47dc-b4b0-ab1b0066808a["NS224 ドライブシェルフへのコントローラのケーブル接続"]
-
+.アニメーション-コントローラを1台のNS224ドライブシェルフにケーブル接続します
+video::48d68897-c91d-47dc-b4b0-ab1b0066808a[panopto]
 +
 image::../media/drw_a400_one_ns224_shelves.png[DRW 4001 ns224 シェルフ]
 
@@ -302,8 +302,8 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 .手順
 . 次のアニメーションや図を使用して、 2 台のドライブシェルフにコントローラをケーブル接続します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5501c7bf-8b74-49e8-8067-ab1b00668804["2 台の NS224 ドライブシェルフへのコントローラのケーブル接続"]
-
+.アニメーション-コントローラを1台のNS224ドライブシェルフにケーブル接続します
+video::5501c7bf-8b74-49e8-8067-ab1b00668804[panopto]
 +
 image::../media/drw_a400_two_ns224_shelves.png[DRW 4002 台の ns224 シェルフ]
 
@@ -327,8 +327,8 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 .手順
 . 次の図を使用して、 2 台のドライブシェルフにコントローラをケーブル接続します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=cbb0280e-708d-4365-92b6-ab1b006677ef["SAS ドライブシェルフへのコントローラのケーブル接続"]
-
+.アニメーション-コントローラをSASドライブシェルフにケーブル接続します
+video::cbb0280e-708d-4365-92b6-ab1b006677ef[panopto]
 +
 image::../media/drw_a400_three_ds224c_shelves.png[DRW 4003 ds224c シェルフ]
 
@@ -354,8 +354,8 @@ image::../media/drw_a400_three_ds224c_shelves.png[DRW 4003 ds224c シェルフ]
 システムに NS224 ドライブシェルフがある場合、シェルフ ID は 00 および 01 に事前に設定されています。シェルフ ID を変更する場合は、ボタンが配置されている穴に差し込む工具が必要です。
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c600f366-4d30-481a-89d9-ab1b0066589b["ドライブシェルフ ID を設定します"]
-
+.アニメーション-ドライブシェルフIDを設定します
+video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
 . 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
 . ラップトップでネットワーク検出が有効になっていることを確認します。
 +
@@ -363,8 +363,8 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c600f366-4d30-481a
 
 . 次のアニメーションに従って、ラップトップを管理スイッチに接続します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["ラップトップを管理スイッチに接続します"]
-
+.アニメーション-ラップトップを管理スイッチに接続します
+video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 . 検出する ONTAP アイコンを選択します。
 +
 image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コントローラ選択]
@@ -378,10 +378,10 @@ image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コント
 
 NOTE: 「 XXXXX 」は、ターゲットノードのシステムシリアル番号です。
 
+
+
 +
 System Manager が開きます。
-
-
 
 . System Manager のセットアップガイドを使用して、 _NetApp ONTAP 構成ガイド _ で収集したデータを基にシステムを設定します。
 +
@@ -427,22 +427,22 @@ NOTE: コンソールポートの設定方法については、ラップトッ�
 
 . 次のアニメーションに従って、 1 つ以上のドライブシェルフ ID を設定します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c600f366-4d30-481a-89d9-ab1b0066589b["ドライブシェルフ ID を設定します"]
-
-
-
+.アニメーション-ドライブシェルフIDを設定します
+video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
++
 システムに NS224 ドライブシェルフがある場合、シェルフ ID は 00 および 01 に事前に設定されています。シェルフ ID を変更する場合は、ボタンが配置されている穴に差し込む工具が必要です。
 
-[+]https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c600f366-4d30-481a-89d9-ab1b0066589b["ドライブシェルフ ID を設定します"]
-
++
+.アニメーション-ドライブシェルフIDを設定します
+video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
 . 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
 +
 
 NOTE: FAS8300 と FAS8700 の例を示します。
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=50cdf200-ede1-45a9-b4b5-ab1b006698d7["コントローラの電源をオンにします"]
-
+.アニメーション-コントローラの電源をオンにします
+video::50cdf200-ede1-45a9-b4b5-ab1b006698d7[panopto]
 +
 
 NOTE: 初回のブートには最大 8 分かかる場合があります。

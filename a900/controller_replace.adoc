@@ -15,8 +15,8 @@ summary: コントローラモジュールハードウェアを交換するに�
 
 次のアニメーションは、障害のあるコンポーネントを交換用コントローラに移動するプロセスを示しています。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30337552-b10f-4146-9bdb-adf2000df5bd["アニメーション -- コンポーネントを交換用コントローラに移動します"^]
-
+.アニメーション-コンポーネントを交換用コントローラに移動します
+video::30337552-b10f-4146-9bdb-adf2000df5bd[panopto]
 
 
 == 手順 1 ：コントローラモジュールを取り外す
@@ -28,8 +28,8 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30337552-b10f-414
 . 障害のあるコントローラモジュールからケーブルを外し、どのケーブルが何に接続されていたかを記録します。
 . カムハンドルのテラコッタボタンを下にスライドさせてロックを解除します。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa["アニメーション -- コントローラを取り外します"^]
-
+.アニメーション-コントローラを取り外します
+video::256721fd-4c2e-40b3-841a-adf2000df5fa[panopto]
 +
 image::../media/drw_a900_remove_PCM.png[DRW a900 は PCM を取り外します]
 
@@ -186,8 +186,8 @@ NOTE: システムのブート時にシステムファームウェアが更新�
 . コントローラモジュールのカバーをまだ取り付けていない場合は取り付けます。
 . コントローラモジュールの端をシャーシの開口部に合わせ、コントローラモジュールをシステムに半分までそっと押し込みます。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=099237f3-d7f2-4749-86e2-adf2000df53c["アニメーション -- コントローラをインストールします"]
-
+.アニメーション-コントローラを取り付けます
+video::099237f3-d7f2-4749-86e2-adf2000df53c[panopto]
 +
 image::../media/drw_a900_remove_PCM.png[DRW a900 は PCM を取り外します]
 

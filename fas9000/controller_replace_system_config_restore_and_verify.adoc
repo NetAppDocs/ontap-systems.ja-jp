@@ -117,7 +117,10 @@ hA-state には、次のいずれかの値を指定できます。
 +
 「 dev_name 」には、前の手順で特定したポートとデバイスのいずれかを指定できます。
 
-.. 出力を確認し、必要に応じて実行するテストのみを選択します。 `lddiag device modify -dev_name__ -selection only `+` -selection only 」を選択すると、デバイスに対して実行しない他のすべてのテストが無効になります。
+.. 出力を確認し、必要に応じて、実行するテストのみを選択します。「 diag device modify -dev_name_-selection only
++
+-selection only - デバイスに対して実行しないその他のテストをすべて無効にします。
+
 .. 選択したテストを実行します： 'ldiag device run -dev_name_`
 +
 テストが完了すると、次のメッセージが表示されます。

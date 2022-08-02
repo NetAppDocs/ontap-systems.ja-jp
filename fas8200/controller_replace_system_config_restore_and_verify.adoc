@@ -118,7 +118,7 @@ _dev_name_ には、前の手順で特定したポートとデバイスのいず
 
 .. 出力を確認し、必要に応じて、実行するテストのみを選択します。「 diag device modify -dev_name_-selection only
 +
-- selection only を指定すると、デバイスに対して実行しないその他のテストがすべて無効になります。
+-selectionを指定すると、デバイスに対して実行しないその他のテストがすべて無効になります。
 
 .. 選択したテストを実行します： 'ldiag device run -dev_name_`
 +
