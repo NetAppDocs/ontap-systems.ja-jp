@@ -181,7 +181,7 @@ NOTE: 取り付け準備ができるまで、ディスクドライブをESDバ�
 
 
 
-== IOM12 / IOM12Bモジュールを使用するディスクシェルフをホットアド用に設置します
+== IOM12 / IOM12Bモジュールを搭載したディスクシェルフをホットアド用に設置します
 
 [role="lead"]
 ディスクシェルフをホットアドするには、各ディスクシェルフについて、ラックに取り付け、電源コードを接続し、電源を入れ、ディスクシェルフ ID を設定してから、 SAS 接続をケーブル接続します。
@@ -316,12 +316,12 @@ CAUTION: * データアクセスが失われる可能性： * ドロワーを乱
 
 
 
-== IOM12 / IOM12Bモジュールを使用したディスクシェルフのホットアド用のケーブル接続
+== IOM12 / IOM12Bモジュールを使用してディスクシェルフをホットアド用にケーブル接続します
 
 [role="lead"]
 SAS 接続（シェルフ / シェルフ間およびコントローラ / スタック間）を、ホットアドしたディスクシェルフがシステムに接続されるようにケーブル接続します。
 
-に記載された要件を満たしている必要があります <<Requirements for hot-adding disk shelves with IOM12 modules>> およびの手順に従って、各ディスクシェルフの設置、電源投入、シェルフ ID の設定を行います <<Installing disk shelves with IOM12 modules for a hot-add>>。
+に記載された要件を満たしている必要があります link:install-hot-add-shelf.html#requirements-for-hot-adding-disk-shelves-with-iom12iom12b-modules["IOM12 モジュールを搭載したディスクシェルフのホットアド要件"] およびの手順に従って、各ディスクシェルフの設置、電源投入、シェルフ ID の設定を行います link:install-hot-add-shelf.html#install-disk-shelves-with-iom12iom12b-modules-for-a-hot-add["IOM12モジュールを搭載したディスクシェルフをホットアド用に設置します"]。
 
 .このタスクについて
 * シェルフ / シェルフ間の「標準」ケーブル接続およびシェルフ / シェルフ間の「ケーブル接続」の説明と例については、を参照してください link:install-cabling-rules.html#shelf-to-shelf-connection-rules["シェルフ / シェルフ間の SAS 接続ルール"]。

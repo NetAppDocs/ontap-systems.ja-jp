@@ -5054,7 +5054,6 @@
   <block id="e721fed5752af28a811f95c9517647d5" category="paragraph">ディスクシェルフに電源を再投入するまで、シェルフ ID が点滅し、オペレータ用ディスプレイパネルの黄色の LED が点滅します。</block>
   <block id="114b5f5f60d5305cae68f7358becbb08" category="list-text">ホットアドするディスクシェルフごとに、手順 a~d を繰り返します。</block>
   <block id="7d1f085b961baef4ee505ff0b202f8af" category="paragraph">SAS 接続（シェルフ / シェルフ間およびコントローラ / スタック間）を、ホットアドしたディスクシェルフがシステムに接続されるようにケーブル接続します。</block>
-  <block id="25144a0fdc573490379af60a79ce8953" category="paragraph">に記載された要件を満たしている必要があります <block ref="b97fb0f13d8cc81479b53e89d9178105" category="inline-xref-macro-rx"></block> およびの手順に従って、各ディスクシェルフの設置、電源投入、シェルフ ID の設定を行います <block ref="1559829c998f121990e6747d77c5c076" category="inline-xref-macro-rx"></block>。</block>
   <block id="634f97c34a23666fd57c06fc0817e89c" category="inline-link-macro">シェルフ / シェルフ間の SAS 接続ルール</block>
   <block id="3580003f42a2219bf8368586293ce5d1" category="list-text">シェルフ / シェルフ間の「標準」ケーブル接続およびシェルフ / シェルフ間の「ケーブル接続」の説明と例については、を参照してください <block ref="cc9fe1e757b2015fb556613621f1b2cf" category="inline-link-macro-rx"></block>。</block>
   <block id="94b940d24fc57c2a1a1a40bc68523940" category="list-text">コントローラ / スタック間をケーブル接続するためのワークシートの読み取り方法については、を参照してください <block ref="32f1048d76ed4ef07349228b731694c0" category="inline-link-macro-rx"></block> または <block ref="22de937f8b92c8373761b256e9819f4a" category="inline-link-macro-rx"></block>。</block>
@@ -7135,8 +7134,6 @@
   <block id="4a6c06310d2bcd1c9758407cb59a423d" category="list-text">IOM12 / IOM12Bモジュールを搭載するディスクシェルフは独自のスタックに配置する必要がありますが、IOM6モジュールまたはIOM3モジュールを搭載したシェルフを搭載するスタックには追加できません。</block>
   <block id="1297a8f1ac3fcf90ab0c70ff5e47b71d" category="paragraph">この手順 では、スタックの混在はサポートされません。IOM12 / IOM12Bモジュールを使用するシェルフをIOM6モジュールを使用するシェルフのスタックにホットアドします。</block>
   <block id="0712df39e8d2ca11a74df9f3fe275482" category="list-text">1つのシステムに、IOM12 / IOM12Bモジュールを使用するマルチパススタックのディスクシェルフとクアッドパススタックのディスクシェルフを配置することができます。</block>
-  <block id="fb510c511f697ba0b554724f2d55ce12" category="section-title">IOM12 / IOM12Bモジュールを使用するディスクシェルフをホットアド用に設置します</block>
-  <block id="eef12ccd7f9c2345b5a3e069f9088bd0" category="section-title">IOM12 / IOM12Bモジュールを使用したディスクシェルフのホットアド用のケーブル接続</block>
   <block id="5b07090bafdc58182b6f01852ecbad05" category="summary">ワークシートテンプレートを記入することで、コントローラのSASポートペアを定義できます。これらのポートを使用して、コントローラをIOM12 / 12BのIOMBモジュールを使用するディスクシェルフスタックにケーブル接続し、HAペアまたはシングルコントローラ構成でクアッドパス接続を実現できます。記入済みのワークシートを使用して、構成に合ったクアッドパス接続を実施することもできます。</block>
   <block id="5d57c73dbe661f28ff4ab36825900d40" category="doc">IOM1/IOM12B2モジュールを使用するクアッドパス接続シェルフのコントローラ/スタック間のケーブル接続ワークシートテンプレートです</block>
   <block id="51432cf63c198a0a11bab993299ae7fd" category="paragraph">ワークシート例では、2つのクアッドポートSAS HBAと、IOM12 / IOM12Bモジュールを使用するディスクシェルフスタックを2台使用する構成を使用します。</block>
@@ -7337,4 +7334,10 @@
   <block id="438bbae9c36667383085b6ae9e94d71f" category="video-title">アニメーション- 2台のNS224シェルフをケーブル接続します（ONTAP 9.8以降）</block>
   <block id="45fe4cb2226f52988b50d1f171612f5b" category="video-title">アニメーション- AFF A700またはFAS9000の設置とセットアップ</block>
   <block id="a6528a788f88cf757ff6bbfe3f5da074" category="doc">コントローラモジュールハードウェアAFF A700sを交換してください</block>
+  <block id="d39ffb80309f658b2cc5987e7d3fe12b" category="section-title">IOM12 / IOM12Bモジュールを搭載したディスクシェルフをホットアド用に設置します</block>
+  <block id="7c100d04606be0913d1347f47c7198ab" category="section-title">IOM12 / IOM12Bモジュールを使用してディスクシェルフをホットアド用にケーブル接続します</block>
+  <block id="c920d4841ecd46b57d9a50e7295a2153" category="inline-link-macro">IOM12 モジュールを搭載したディスクシェルフのホットアド要件</block>
+  <block id="36779ed778ea1fac61fae3be46917d43" category="inline-link-macro">IOM12モジュールを搭載したディスクシェルフをホットアド用に設置します</block>
+  <block id="56ccacf68c60aa589cdd947ffabc6a40" category="paragraph">に記載された要件を満たしている必要があります <block ref="38d5024537883b0bd86511e0b5e50dba" category="inline-link-macro-rx"></block> およびの手順に従って、各ディスクシェルフの設置、電源投入、シェルフ ID の設定を行います <block ref="2957551c96808bfde01acb853ddbc0af" category="inline-link-macro-rx"></block>。</block>
+  <block id="4ec6a95192d18718a540794417c8fa63" category="sidebar">NetApp Active IQ Digital Advisor</block>
 </blocks>
