@@ -7095,7 +7095,6 @@
   <block id="0455216bece3ce620e2fd5c84b24a523" category="list-text">HAペアでは、IOM6シェルフを2台、IOM12 / IOM12Bシェルフを2台使用するスタック内での1回の速度の移行を次のように表します。</block>
   <block id="988fffa48b6a32203597193ccfb194d0" category="paragraph">オンボードストレージポート0bは内蔵ストレージ（エクスパンダ）のポートで、ホットアドするIOM12 / IOM12Bシェルフ（スタックの最後のシェルフ）に接続するため、IOM12 / IOM12Bシェルフのグループを1つにまとめ、スタックとオンボードのIOM12Eストレージを使用して移行を1つにします。</block>
   <block id="22c141c57159ea5a9cf5ecee1f8b4145" category="list-text">IOM12 / IOM12Bシェルフをケーブル接続するには、まずIOM AのパスのSASポートを接続し、次にIOM Bのパスについても、必要に応じてケーブル接続の手順を繰り返します。</block>
-  <block id="74e72cd0b8695a83723abedf9f9e8d92" category="list-text">最初のIOM12 / IOM12Bシェルフ（最後のIOM6シェルフに接続するIOM12シェルフ）は、常にIOM6シェルフの円形のポート（四角形のポートではありません）に接続します。</block>
   <block id="f40ad7d263effd48cd15f5ec54dc2775" category="list-text">次の図は、FC-to-SASブリッジを使用しない構成でIOM12 / IOM12BシェルフをIOM6シェルフスタックにケーブル接続する場合に参照してください。</block>
   <block id="5c5d06fa180884eea62ba831b980ed33" category="list-text">次の図は、ブリッジ接続MetroCluster 構成でIOM12 / IOM12BシェルフをIOM6シェルフスタックにケーブル接続する場合のものです。 <block ref="3bf7d126d94220be52cd0d278e98261d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3d7f99cbbf1b9ba05ea3a6ec89eae8b6" category="list-text">ホットアドするIOM12 / IOM12BシェルフをIOM6スタックに追加する場合、IOM6シェルフスタックに他のIOM12 / IOM12Bシェルフがないように、該当する手順を実行します。</block>
@@ -7340,4 +7339,7 @@
   <block id="36779ed778ea1fac61fae3be46917d43" category="inline-link-macro">IOM12モジュールを搭載したディスクシェルフをホットアド用に設置します</block>
   <block id="56ccacf68c60aa589cdd947ffabc6a40" category="paragraph">に記載された要件を満たしている必要があります <block ref="38d5024537883b0bd86511e0b5e50dba" category="inline-link-macro-rx"></block> およびの手順に従って、各ディスクシェルフの設置、電源投入、シェルフ ID の設定を行います <block ref="2957551c96808bfde01acb853ddbc0af" category="inline-link-macro-rx"></block>。</block>
   <block id="4ec6a95192d18718a540794417c8fa63" category="sidebar">NetApp Active IQ Digital Advisor</block>
+  <block id="398a3c8d2269f5f0bf21e8be014ed54c" category="list-text">IOM12モジュールを搭載したシェルフをIOM6モジュールを搭載したシェルフのスタックにホットアドする場合、スタック全体のパフォーマンスは6Gbpsで動作します（最も速度の低いシェルフ）。</block>
+  <block id="75e1d900c724ecf27f282e3bba238d06" category="paragraph">IOM3またはIOM6モジュールからIOM12モジュールにアップグレードされたシェルフをホットアドする場合、スタックは12Gbpsで動作しますが、シェルフのバックプレーンとディスク機能によってディスクパフォーマンスが3Gbpsまたは6Gbpsに制限される可能性があります。</block>
+  <block id="240920b675de649a14eaba01757477c0" category="list-text">最初のIOM12 / IOM12Bシェルフ（最後のIOM6シェルフに接続するシェルフ）は、常にIOM6シェルフの円形のポート（四角形のポートではありません）に接続します。</block>
 </blocks>
