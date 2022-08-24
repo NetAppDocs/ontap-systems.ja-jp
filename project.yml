@@ -7,6 +7,7 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
+  rss_page: whats-new.html
   langs: ja-jp,us-en,zh-cn,zh-tw,ko-kr
 sidebar:
   entries:
