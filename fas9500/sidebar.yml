@@ -4,6 +4,7 @@ title: FAS9500システム
 url: "/fas9500/index.html"
 entries:
 - title: 設置とセットアップ
+  pdf-filename: FAS9500のインストールとセットアップ
   entries:
   - title: インストールとセットアップを選択します
     url: "/fas9500/install_setup.html"
@@ -14,10 +15,12 @@ entries:
   - title: 詳細な手順
     url: "/fas9500/install_detailed_guide.html"
 - title: メンテナンス
+  pdf-filename: FAS9500は引き続き維持されます
   entries:
   - title: I/O モジュールを追加します
     url: "/fas9500/add_io_module.html"
   - title: ブートメディア
+    pdf-filename: FAS9500ブートメディア
     entries:
     - title: 概要
       url: "/fas9500/bootmedia_replace_overview.html"
@@ -36,6 +39,7 @@ entries:
   - title: キャッシングモジュール
     url: "/fas9500/caching_module_hot_swap.html"
   - title: シャーシ
+    pdf-filename: FAS9500シャーシ
     entries:
     - title: 概要
       url: "/fas9500/chassis_replace_overview.html"
@@ -46,6 +50,7 @@ entries:
     - title: 構成をリストアおよび検証する
       url: "/fas9500/chassis_replace_complete_system_restore_rma.html"
   - title: コントローラモジュール
+    pdf-filename: FAS9500コントローラモジュール
     entries:
     - title: 概要
       url: "/fas9500/controller_replace_overview.html"

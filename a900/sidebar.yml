@@ -4,6 +4,7 @@ title: AFF A900 システム
 url: "/a900/index.html"
 entries:
 - title: 設置とセットアップ
+  pdf-filename: AFF A900のインストールとセットアップ
   entries:
   - title: インストールとセットアップを選択します
     url: "/a900/install_setup.html"
@@ -14,10 +15,12 @@ entries:
   - title: 詳細な手順
     url: "/a900/install_detailed_guide.html"
 - title: メンテナンス
+  pdf-filename: AFF A900のメンテナンス
   entries:
   - title: I/O モジュールを追加します
     url: "/a900/add_io_module.html"
   - title: ブートメディア
+    pdf-filename: AFF A900ブートメディア
     entries:
     - title: 概要
       url: "/a900/bootmedia_replace_overview.html"
@@ -34,6 +37,7 @@ entries:
     - title: 障害のあるパーツをネットアップに返却します
       url: "/a900/bootmedia_complete_rma.html"
   - title: シャーシ
+    pdf-filename: AFF A900シャーシ
     entries:
     - title: 概要
       url: "/a900/chassis_replace_overview.html"
@@ -44,6 +48,7 @@ entries:
     - title: 構成をリストアおよび検証する
       url: "/a900/chassis_replace_complete_system_restore_rma.html"
   - title: コントローラモジュール
+    pdf-filename: AFF A900コントローラモジュール
     entries:
     - title: 概要
       url: "/a900/controller_replace_overview.html"
