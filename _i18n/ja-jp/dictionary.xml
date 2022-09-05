@@ -1521,7 +1521,6 @@
   <block id="b9068760536b874bf77dc015fb91c3ae" category="doc">システムのリストア後の処理 - FAS8200</block>
   <block id="332c846459ecae57b885b30c41482384" category="section-title">手順 3 ： LIF を確認してシリアル番号を登録する</block>
   <block id="0336dcab6aaf6e0e6b3e580f2e159ad5" category="doc">設置とセットアップ PDF ポスター - FAS8200</block>
-  <block id="345a2a62ce004a5b297819af054c9777" category="inline-link-macro">AFF FAS8200 のセットアップガイド</block>
   <block id="10bc7f8044338127350055a62aad1a90" category="doc">DIMM-FAS8200 を交換します</block>
   <block id="de2a859c590dc7d6eabe3126531d15fe" category="section-title">手順 2 ：コントローラモジュールを開く</block>
   <block id="63d6811d18004212a8a99f9cbad84f37" category="paragraph">コントローラ内部のコンポーネントにアクセスするには、まずコントローラモジュールをシステムから取り外し、続いてコントローラモジュールのカバーを外す必要があります。</block>
@@ -3177,7 +3176,6 @@
   <block id="4b0f11237c7fb298046b87e4e5edf9a0" category="paragraph">「 storage disk show -broken 」コマンドを実行して、ドライブが障害状態であることを確認できます。障害が発生したドライブが障害ドライブのリストに表示されます。表示されない場合は、少し待ってからもう一度コマンドを実行してください。</block>
   <block id="49499bb4b11cb28cd05725cd5cafadd0" category="paragraph">DQP の最新バージョンをインストールしておくと、新しく認定されたドライブがシステムで認識されて使用できるようになります。これにより、ドライブの情報が最新でない場合に表示されるシステムイベントメッセージを回避できるほか、ドライブが認識されないために発生するドライブのパーティショニングを回避できます。さらに、ドライブのファームウェアが最新でない場合も、通知で知ることができます。</block>
   <block id="27ad121f85fccbb2fbae4c00d3c38810" category="inline-link">ネットアップのダウンロード： Disk Qualification Package</block>
-  <block id="1b6d02ae9b640ed72271cd7270a2f643" category="paragraph"><block ref="1b6d02ae9b640ed72271cd7270a2f643" category="inline-link-rx"></block></block>
   <block id="d5b3850d37eca03c3be10401093f24dc" category="admonition">ドライブファームウェアは 2 分ごとにチェックされます。</block>
   <block id="2d45373c9232e88942b868669cd8511a" category="list-text">次のビデオでは、ドライブのホットスワップ手順の物理的な取り外しと取り付けの部分の概要を示します。</block>
   <block id="01d36c3de356a203f6380095e17d5483" category="list-text">交換用ドライブのドライブ所有権を手動で割り当てる場合は、ドライブの自動割り当てを無効にする必要があります。</block>
@@ -4718,9 +4716,6 @@
   <block id="959229536cc29f3d3dabc76fbb3f7e34" category="list-text">電源を再投入します。</block>
   <block id="f3c63ac44190e806f7590f75016082ad" category="list-text">ドライブシェルフの両方の電源スイッチをオンにします。</block>
   <block id="39cc2d6f5935ef61ab1eac11e4ea2a0a" category="list-text">両方のファンが稼働し、ファンの背面にある黄色の LED が消灯していることを確認します。</block>
-  <block id="cea3ccc996d16531a1bdc296b2d6851c" category="paragraph">HA ペアまたはシングルコントローラ構成を、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、または FAS2700 システムにすることはできません。これらの構成のいずれかがある場合は、次のコマンドを使用します。</block>
-  <block id="c938619c45a867da395e1f0213cdb4b0" category="inline-link-macro">一般的な AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 構成のコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例</block>
-  <block id="8298bd1953102e090c7ee364e7677f25" category="paragraph"><block ref="8298bd1953102e090c7ee364e7677f25" category="inline-link-macro-rx"></block></block>
   <block id="5976250f174c7aa7423cbb91c458e804" category="list-text">この手順およびワークシートテンプレートは、 1 つ以上のスタックを使用したマルチパス HA またはマルチパス構成のケーブル接続に適用されます。</block>
   <block id="8c7e7585bf065649c4ca12e935833b4c" category="paragraph">記入済みワークシートの例は、マルチパス HA 構成とマルチパス構成を対象としたものです。</block>
   <block id="da38645c7fd59844e84034f3e0e006a1" category="list-text">ワークシートテンプレートは最大 6 つのスタックに対応しています。必要に応じて列を追加する必要があります。</block>
@@ -4874,10 +4869,7 @@
   <block id="540d6dd9e8a601304f58e8b1692a0cbc" category="list-text">最大限の耐障害性を提供することで、可用性を維持し、コントローラテイクオーバーへの依存を最小限に抑えます</block>
   <block id="ac9d521507af48d2a069896628ddcbe1" category="paragraph">ルールから逸脱しないようにしてください。逸脱すると、信頼性、汎用性、共通性が低下する可能性があります。</block>
   <block id="1411fab742ef51836dbcd20dc81b333a" category="section-title">設定ルール</block>
-  <block id="1ef4b114887ad97836aad1df50936d3b" category="paragraph">IOM12 モジュールを搭載したディスクシェルフは、特定のタイプの HA ペアおよびシングルコントローラ構成でサポートされます。</block>
   <block id="e813922cd0bf97e10c1d75af7555f41d" category="list-text">HA ペア構成は、マルチパス HA またはクアッドパス HA 構成としてケーブル接続する必要がありますが、次の例外があります。</block>
-  <block id="bc5739bb9ad5df08aab832948b129daf" category="list-text">AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700HA ペア構成（外付けディスクシェルフを使用）は、シングルパス HA 構成としてケーブル接続して、外付けの SAS テープバックアップデバイスとの接続をサポートできます。</block>
-  <block id="c30e5ab802ae6eda8b94fc166555d469" category="list-text">AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700HA ペア構成では、クアッドパス HA 接続はサポートされていません。</block>
   <block id="905e44a8d6df3feceb87ebb53cfc800e" category="list-text">シングルコントローラ構成は、マルチパス構成またはクアッドパス構成としてケーブル接続する必要がありますが、次の例外があります。</block>
   <block id="4f84345fdfdaaef18218a7ade58e0626" category="list-text">FAS2600 シリーズのシングルコントローラ構成（外付けディスクシェルフを使用）は、シングルパス構成としてケーブル接続できます。</block>
   <block id="ab36d824336ef6ebffc6dcb6e6c8f5c7" category="paragraph">内蔵ストレージではシングルパス接続が使用されるため、 ONTAP では、混合パスが検出されたという警告が表示されることがあります。この警告を回避するには、外付けディスクシェルフへのシングルパス接続を使用します。また、外付け SAS テープバックアップデバイスを使用する場合も、シングルパス接続を使用できます。</block>
@@ -4906,11 +4898,9 @@
   <block id="7830411c7d1c383be96811621cfdb2e5" category="paragraph">スタック内の論理上最初のシェルフから最後のシェルフまでを、ドメイン A の IOM ポート 3 を次のシェルフの IOM ポート 1 に接続し、次にドメイン B を同様に接続しますスタック内の論理上最初のシェルフから最後のシェルフまでを、ドメイン A の IOM ポート 4 を次のシェルフの IOM ポート 2 に接続し、次にドメイン B を同様に接続します（ 2 倍幅接続としてケーブル接続された IOM ポートは青で表示されています。）</block>
   <block id="cea4f34bbde19b19ec8b528484463d97" category="image-alt">DRW シェルフからシェルフへの幅が 2 倍になっています</block>
   <block id="76ac5618163f7cfdc83af1a982460b25" category="section-title">コントローラ / スタック間の接続ルール</block>
-  <block id="e7e704fe1a564b4bba84a4b89d7ab9b8" category="paragraph">SAS ディスクシェルフがソフトウェアベースのディスク所有権を使用していること、コントローラポート A / C および B / D がスタックに接続されている方法を理解することで、 HA ペアまたはシングルコントローラ構成の各コントローラから各スタックへの SAS 接続を正しくケーブル接続できます。 コントローラポート A / C および B / D がポートペアに編成されている仕組みと、 AFF A200 、 AFF A220 、 FAS2600 シリーズおよび FAS2700 システムのポート 0b および 0a がスタックに接続される方法です。</block>
   <block id="815ae1da852a7e116dabaa4790481ca1" category="section-title">SAS ディスクシェルフのソフトウェアベースのディスク所有権ルール</block>
   <block id="b090fb384d88ba417ddba5bc09e12033" category="paragraph">SAS ディスクシェルフは、（ハードウェアベースではなく）ソフトウェアベースのディスク所有権を使用します。つまり、ディスクドライブの所有権は、（ハードウェアベースのディスク所有権の場合のように）ストレージシステムの物理接続のトポロジによって決まるのではなく、ディスクドライブに保存されます。具体的には、ディスクドライブの所有権は、コントローラ / スタック間の接続方法ではなく、 ONTAP によって（自動または CLI コマンドで）割り当てられます。</block>
   <block id="561976391c859af5f378c2249b3ab7cc" category="paragraph">SAS ディスクシェルフは、ハードウェアベースのディスク所有権の手法を使用してケーブル接続しないでください。</block>
-  <block id="7b1a771699d48eb5b0ebb788ec8a2494" category="section-title">コントローラ A および C ポートの接続ルール（ AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 以外の構成の場合）</block>
   <block id="543f14beeef4a9be4cc43463e7a5882c" category="list-text">A ポートと C ポートは常にスタックへのプライマリパスです。</block>
   <block id="28f5d46a191ea26e7d3d6a7b8f95cb0b" category="list-text">A ポートと C ポートは常にスタック内の論理的に最初のディスクシェルフに接続します。</block>
   <block id="323025b84432843afbacb8850eab48b1" category="list-text">A ポートと C ポートは常にディスクシェルフの IOM ポート 1 と 2 に接続します。</block>
@@ -4919,7 +4909,6 @@
   <block id="845648a6d13ed37c7454c6be1991a364" category="list-text">コントローラ 2 の A ポートと C ポートは常に IOM B （ドメイン B ）に接続します。</block>
   <block id="1f393663a63759c6a1dd2986c13770e5" category="paragraph">次の図は、 1 つのクアッドポート HBA と 2 つのディスクシェルフスタックを使用したマルチパス HA 構成で、コントローラポート A とポート C がどのように接続されるかを示しています。スタック 1 への接続は青で示されています。スタック 2 への接続はオレンジで示されています。</block>
   <block id="52b9f36f0a0ece73e588e8d49a1d2e38" category="image-alt">ルールポート A と C をスタックする DRW コントローラの例</block>
-  <block id="ef0714114d85b9f9cefcc62cc0b65e22" category="section-title">コントローラ B および D ポートの接続ルール（ AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 以外の構成の場合）</block>
   <block id="28b0df79d69d4b7bf21f0271c55d4f4e" category="list-text">B ポートと D ポートは常にスタックへのセカンダリパスです。</block>
   <block id="9280f37bc620ca5d0b26ec8580f87f58" category="list-text">B ポートと D ポートは常にスタック内の論理的に最後のディスクシェルフに接続します。</block>
   <block id="5961adddd5595d6aa7de1c01c6f229b8" category="list-text">B ポートと D ポートは常にディスクシェルフの IOM ポート 3 と 4 に接続します。</block>
@@ -4929,7 +4918,6 @@
   <block id="6265370a0863851abf028ccb76cce9bb" category="list-text">B ポートと D ポートは、最初のスロットの最初のポートが最後にケーブル接続されるよう、 PCI スロットの順序を 1 つずつオフセットしてスタックに接続されます。</block>
   <block id="1180b7b391f14633455e18d7e8a70316" category="paragraph">次の図は、 1 つのクアッドポート HBA と 2 つのディスクシェルフスタックを使用したマルチパス HA 構成で、コントローラポート B とポート D がどのように接続されるかを示しています。スタック 1 への接続は青で示されています。スタック 2 への接続はオレンジで示されています。</block>
   <block id="937c34f84d0b7a30ac6064abdb97a6f0" category="image-alt">DRW コントローラからスタックルールポート b および d の例</block>
-  <block id="0805da24af8e9775551e97055c6d00d2" category="section-title">ポートペアの接続ルール（ AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 以外の構成の場合）</block>
   <block id="adc0f860870e3220b08daf202d1dbe12" category="paragraph">HA ペアおよびシングルコントローラ構成でコントローラ / スタック間の接続をケーブル接続する場合、システムの耐障害性と整合性を確保するために、すべての SAS ポートを活用する方法でコントローラ SAS の A 、 B 、 C 、 D の各ポートがポートペアに編成されます。</block>
   <block id="b74977118ce8bd6994f851515d0aff70" category="list-text">ポートペアは、コントローラ A または C の SAS ポートとコントローラ B または D の SAS ポートで構成されます。</block>
   <block id="4b317a36993fd6d376aba7d0d82eef4b" category="paragraph">SAS の A ポートと C ポートはスタック内の論理的に最初のシェルフに接続します。SAS の B ポートと D ポートはスタック内の論理的に最後のシェルフに接続します。</block>
@@ -4958,8 +4946,6 @@
   <block id="7c1436929540272177fd4adb6152e9ba" category="paragraph"><block ref="7c1436929540272177fd4adb6152e9ba" category="inline-link-macro-rx"></block></block>
   <block id="b9e772dcfe474ff5403c912944516e36" category="inline-link-macro">クアッドパス接続用のコントローラ / スタック間のケーブル接続ワークシートテンプレート</block>
   <block id="612ddf012153a583a53a09e3d7b592ea" category="paragraph"><block ref="612ddf012153a583a53a09e3d7b592ea" category="inline-link-macro-rx"></block></block>
-  <block id="03668c626125d88dfbaebd0ec0c3051b" category="section-title">AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 コントローラ 0b 、 0a ポートの外部ディスクシェルフへの接続ルール</block>
-  <block id="2e70696cbfe7e045226c133146c10a21" category="paragraph">AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 システムには、それぞれのコントローラが内蔵ストレージ（ポート 0b ）とスタックの間で同じドメイン接続を維持する必要があるため、固有の接続ルールがあります。つまり、コントローラがシャーシ（コントローラ 1 ）のスロット A にある場合、そのコントローラはドメイン A （ IOM A ）にあるため、ポート 0b はスタック内の IOM A に接続する必要があります。コントローラがシャーシ（コントローラ 2 ）のスロット B にある場合、そのコントローラはドメイン B （ IOM B ）にあるため、ポート 0b はスタック内の IOM B に接続する必要があります。</block>
   <block id="f49f9d1b35c60dce77fd03008b90cb34" category="admonition">0b ポートを正しいドメインに接続しないと（ドメインのクロスコネクト）、システムに耐障害性の問題が発生する可能性があり、無停止の手順を安全に実行できなくなります。</block>
   <block id="5118c6333d912e1b490b20c974a571ef" category="list-text">コントローラ 0b ポート（内蔵ストレージポート）：</block>
   <block id="53b81829b8b397189aaa4f3eb1ae76a7" category="list-text">コントローラ 1 の 0b ポートは常に IOM A （ドメイン A ）に接続します。</block>
@@ -4973,7 +4959,6 @@
   <block id="0757935fc13bec433eaf412d005fb61b" category="list-text">ポート 0a は常にセカンダリパスです。</block>
   <block id="5821e49b61c774c699a1d7c8f58887e5" category="list-text">ポート 0a は常にスタック内の論理的に最初のディスクシェルフに接続します。</block>
   <block id="47f1d04db41788a76ce8ec9e42c7defd" category="list-text">ポート 0a は常にディスクシェルフの IOM ポート 1 に接続します。</block>
-  <block id="2b903583c4ae425459eed4f57caaa35d" category="paragraph">次の図は、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 マルチパス HA 構成の内蔵ストレージポート（ 0b ）のドメイン接続を示しています。</block>
   <block id="d6be80f16b2e703ff33257470dacbcf3" category="image-alt">DRW fas2600 mpha ドメインの例</block>
   <block id="5b19d4f8bb5c1509ddbcb3050340348d" category="section-title">Mini-SAS HD SAS 光ケーブルのルール</block>
   <block id="cfabee74f7cf81c29938b44cfcd37eae" category="paragraph">Mini-SAS HD SAS 光ケーブル - マルチモードアクティブ光ケーブル（ AOC ）と Mini-SAS HD / Mini-SAS HD 間コネクタ、および Mini-SAS HD / LC 間コネクタを備えたマルチモード（ OM4 ）ブレークアウトケーブル - を使用すると、 IOM12 モジュールを搭載したディスクシェルフを使用する特定の構成で、長距離 SAS 接続を実現できます。</block>
@@ -4997,7 +4982,6 @@
   <block id="9d3db7bfcd4e676bd510caab64ec8d51" category="list-text">シェルフ / シェルフ間の接続に SAS 光ケーブルを使用する場合は、そのスタックのコントローラ / スタック間の接続にも SAS 光ケーブルを使用する必要があります。</block>
   <block id="02a51574500eff63a08bc1c345282e3c" category="list-text">シェルフ / シェルフ間の接続に SAS 銅線ケーブルを使用する場合は、そのスタックのコントローラ / スタック間の接続に SAS 光ケーブルまたは SAS 銅線ケーブルを使用できます。</block>
   <block id="7a48725aae87c25c20800da734657f8d" category="summary">以下の例は、マルチパス接続用の IOM12 モジュールを搭載したディスクシェルフで、記入済みのワークシートの内容を適用してコントローラとスタックをケーブル接続する方法を示しています。</block>
-  <block id="34a29535255d4c9658cf8667fb70f827" category="paragraph">HA ペアまたはシングルコントローラ構成を、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、または FAS2700 システムにすることはできません。これらのシステムでは固有のワークシートを使用します。</block>
   <block id="d69f8bb928c8179d4a1d81a77b9f6a4c" category="list-text">この手順では、次のワークシートとケーブル接続例を使用して、ワークシートに基づいてコントローラ / スタック間をケーブル接続する方法を示します。</block>
   <block id="a513cfe8d83ba38ea85b01260a4ffb53" category="list-text">シングルコントローラ構成の場合は、 2 台目のコントローラにケーブル接続する手順 b と d を省略します。</block>
   <block id="cd0bbcf8c45ff326b72c889eab8250c0" category="paragraph">ワークシートの他のすべてのポートペア 1a / 2b と 1c / 2d を使用してポートペアをケーブル接続します。</block>
@@ -5026,7 +5010,6 @@
   <block id="bea8d9a74a333358da573c569f901a16" category="paragraph">ディスクシェルフの活性増設が完了したら、のルールに従って、スタック内の残りのシェルフ / シェルフ間の接続と、コントローラ / スタック間の接続に使用している SAS 銅線ケーブルを交換する必要があります <block ref="981073c6c3d6ceff62f8d350a20e9ca2" category="inline-link-macro-rx"></block>。つまり、必要となる本数の Mini-SAS HD SAS 光ケーブルを用意しておく必要があります。</block>
   <block id="91d741bb049c9a466853b4ad38bb8ca8" category="paragraph">ディスクシェルフをホットアドする前に、この手順に関する考慮事項とベストプラクティスを把握しておく必要があります。</block>
   <block id="f0e56e4ad757d6fad89dfcfe1aa12d88" category="paragraph">シングルパス HA およびシングルパス構成の場合は、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 システムの場合、コントローラに接続されていないスタックの終端にディスクシェルフをホットアドします。</block>
-  <block id="1367c0042a0771df50820889203cf147" category="paragraph">HA ペアを使用している場合、 ONTAP ではシステム構成が「マルチパス HA 」と表示されます。シングルコントローラ構成の場合、 ONTAP ではシステム構成が「マルチパス」として表示されます。</block>
   <block id="23799cee6c2d33512d5d7c2c4dd066da" category="list-text">この手順は、インバンド ACP を使用した構成であることを前提としています。</block>
   <block id="0a21ef57c079b8fb55adaac84e5c7dc9" category="paragraph">インバンド ACP が有効な構成では、ホットアドしたディスクシェルフでインバンド ACP が自動的に有効になります。インバンド ACP が有効でない構成では、ホットアドしたディスクシェルフは ACP 機能なしで動作します。</block>
   <block id="512350f125bb7245b3fb215fde5ff006" category="list-text">ディスクシェルフをホットアドする前に、 Disk Qualification Package （ DQP ）の最新バージョンをインストールしておくことを推奨します。</block>
@@ -5693,7 +5676,6 @@
   <block id="d23a9067ce9ab0452898d620ad7aa84d" category="paragraph">交換用ノードに属するディスクには、新しいシステム ID が表示されます。次の例は、 system-1 が所有するディスク、新しいシステム ID 118065481 を示しています。</block>
   <block id="7c5ee56a01b06b00d2d910cc295d8c56" category="paragraph"><block ref="7c5ee56a01b06b00d2d910cc295d8c56" category="inline-link-rx"></block></block>
   <block id="63950e6254e665584c6e0a02f9b4388b" category="paragraph"><block ref="63950e6254e665584c6e0a02f9b4388b" category="inline-link-rx"></block></block>
-  <block id="14baf7cbaa5e214a8313f9ae6e6b8214" category="paragraph"><block ref="14baf7cbaa5e214a8313f9ae6e6b8214" category="inline-link-rx"></block></block>
   <block id="585e085c167dffb4091a9c937b46294a" category="paragraph"><block ref="585e085c167dffb4091a9c937b46294a" category="inline-link-rx"></block></block>
   <block id="10df5509416416659fe58fd40c64d2ec" category="paragraph"><block ref="10df5509416416659fe58fd40c64d2ec" category="inline-link-rx"></block></block>
   <block id="4ccbda321ca169104f4e4cac42fd679f" category="paragraph">RMA 番号を確認する場合や、交換用手順に関するその他のサポートが必要な場合は、テクニカルサポートにお問い合わせください<block ref="9a6f401ca1e7e89d8a0c29fb0cbe81b7" category="inline-link-rx"></block>にアクセスするか、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。</block>
@@ -6789,9 +6771,7 @@
   <block id="ba0a2d97499e2e560187690f4b54b10c" category="list-text">取り外すディスクシェルフのディスクドライブからすべてのアグリゲートを削除しておく必要があります（ディスクドライブはスペアである必要があります）。</block>
   <block id="df890e7b6d800ea7f63516f78dc7b333" category="inline-link-macro">オンボードストレージを搭載した AFF プラットフォームと FAS プラットフォームのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例</block>
   <block id="4831f887bab13b0957b607ad184c87f7" category="paragraph"><block ref="4831f887bab13b0957b607ad184c87f7" category="inline-link-macro-rx"></block></block>
-  <block id="fdd0f707bd71fcef53b653ae53e31f53" category="summary">記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 AFF A200 、 AFF A220 、 FAS2600 シリーズ、 FAS2700 プラットフォームなどのオンボードストレージで AFF プラットフォームと FAS プラットフォームをケーブル接続できます。この情報は、システム外部のシステムには適用されません。</block>
   <block id="18e93c7175385ec259f95d9d453bdda1" category="list-text">必要に応じて、を参照してください <block ref="db31d33614fd87795381d5ac14be04aa" category="inline-link-macro-rx"></block> サポートされる構成、シェルフ / シェルフ間の接続、およびコントローラ / シェルフ間の接続については、を参照してください。</block>
-  <block id="67f2d45d4d0936132195fb6f111ce3e8" category="section-title">マルチパス HA 構成で、マルチシェルフスタックを 1 つ使用したオンボードストレージを搭載した AFF プラットフォームと FAS プラットフォーム</block>
   <block id="83742af000bdb059461854fab1a8b606" category="list-text">異なる効率定格の電源装置を混在させないでください。いつものように同じように置換します。</block>
   <block id="94a2f43b7e5299d436a356db402524cc" category="section-title">手順3：NVRAMバッテリを交換します</block>
   <block id="5f5fd4de9ab7b399342d9b9e721bc6b6" category="section-title">手順3：NVRAMカードを取り外す</block>
@@ -6843,8 +6823,6 @@
   <block id="d2190ca0f2bf90686cb089f6fb2d5e2b" category="paragraph">DS460Cシェルフをデータセンターの別の場所に移動したり、別の場所に移動したりする場合は、次のセクションを参照してください。 <block ref="2dfa5cde780121ff739815d2402836cf" category="inline-xref-macro-rx"></block>。</block>
   <block id="1d5287e79870e687badf4e2da0612ad0" category="paragraph">DS460Cシェルフをデータセンターの別の部分に移動したり、シェルフを別の場所に移動したりする場合は、ドライブドロワーやドライブの破損を防ぐために、ドライブドロワーからドライブを取り外す必要があります。</block>
   <block id="c3fdb0812209f286e664a4d0cd47c328" category="list-text">新しいシステムの設置時またはシェルフのホットアドの一環としてDS460Cシェルフを設置した場合は、ドライブのパッケージ化材を保存したあとに、それらを移動する前にドライブを再パッケージ化してください。</block>
-  <block id="ba70aeebfd3549f6f01e998eb6dd6e28" category="paragraph">PDF 版セットアップガイドを使用して、新しいシステムを設置してセットアップできます。。 <block ref="a8e3f4b75381b375e7ce8abf385604f8" category="inline-link-macro-rx"></block> ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
-  <block id="4919d15b1a0ddd0c55a729c741fd5005" category="sidebar">オンボードストレージを使用したAFF プラットフォームとFAS プラットフォームのケーブル接続ワークシートと例</block>
   <block id="9285e5d96d62653cbfc04067e2de249c" category="list-text"><block ref="9285e5d96d62653cbfc04067e2de249c" category="inline-link-macro-rx"></block></block>
   <block id="cff7366c4191a9dd1698e3fd38e5acaf" category="sidebar">NVRAMモジュールまたはNVRAM DIMM</block>
   <block id="dbe0afeaa91b9a08168e98b33a4c7de8" category="admonition">ケーブルの接続を解除してから再接続し、ケーブルを交換する場合は、70秒以上待ってから行うようにしてください。</block>
@@ -7231,7 +7209,6 @@
   <block id="5d2249930d4d6f285a5ccc70c9734de6" category="inline-link">アグリゲートの拡張ワークフロー</block>
   <block id="fcdebdb1f4c79cc7a93d9f17744521c5" category="paragraph"><block ref="fcdebdb1f4c79cc7a93d9f17744521c5" category="inline-link-rx"></block></block>
   <block id="87e222a1917be35f082aeb99501e10ca" category="doc">IOM12 / IOM12Bモジュールを使用するDS460Cディスクシェルフのディスクドライブのホットスワップ</block>
-  <block id="85085227e7191ff5201df5ab0dba828e" category="doc">IOM12 / IOM12Bモジュールを搭載したオンボードストレージシェルフを使用するAFF プラットフォームとFAS プラットフォームのコントローラ/スタック間のケーブル接続ワークシートとケーブル接続例</block>
   <block id="3cf53d4c9bda935f2527cd9e3072ef82" category="sidebar">IOM12 / IOM12Bモジュールです</block>
   <block id="c495d94f32f50365b375a20870280fde" category="sidebar">IOM12 / IOM2Bモジュールを使用するシェルフの設置とケーブル接続</block>
   <block id="932dcd191a61980121848404f3579ffb" category="sidebar">IOM12 / IOM12Bモジュールを搭載したシェルフは引き続き使用できます</block>
@@ -7353,4 +7330,30 @@
   <block id="fe673aff2ce9eb5c6eaf841f4ec88b30" category="sidebar">AFF A900ブートメディア</block>
   <block id="6cff7e5493433d24015d6ef5a8566b38" category="sidebar">AFF A900シャーシ</block>
   <block id="7d1c80f318f9bf16deac2495abe88a7e" category="sidebar">AFF A900コントローラモジュール</block>
+  <block id="2014d8b66b0e05fba286f79c1c8aac17" category="admonition">自動ギブバックを無効にしますか?_と表示されたら'y'を入力します</block>
+  <block id="f80b45f73e8b653fc036922e438eff9e" category="inline-link-macro">FAS8200の設置とセットアップの手順</block>
+  <block id="ca2e2999fd16933cd908b9c9e44161d0" category="paragraph">PDF 版セットアップガイドを使用して、新しいシステムを設置してセットアップできます。。 <block ref="666c6c27ec3878a6b3f3c3cb24d10587" category="inline-link-macro-rx"></block> ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
+  <block id="0e1569786cd5c99315511da0d9e3f2aa" category="admonition">システムが起動メニューで停止した場合は、「ノードの再起動」のオプションを選択し、プロンプトが表示されたらyと入力してから、「Ctrl+C」キーを押してLOADERで起動します。</block>
+  <block id="6f0e65a313ceda26ae3094641da52d2e" category="paragraph"><block ref="6f0e65a313ceda26ae3094641da52d2e" category="inline-link-rx"></block></block>
+  <block id="e789db57588c567cf162bf2f8ec8b65e" category="paragraph">FAS2600シリーズ、AFF A200、FAS2700シリーズ、AFF A220など、内蔵ストレージを搭載したプラットフォームがある場合 その後、次のコマンドを使用します（プラットフォームごとに固有のワークシートを使用）。</block>
+  <block id="f5d03e0aa6d32340b1284f6bb82c8ee3" category="inline-link-macro">内蔵ストレージを搭載したプラットフォームのコントローラ/スタック間のケーブル接続ワークシートとケーブル接続例</block>
+  <block id="c19123e6031c139d66f534ae4311d605" category="paragraph"><block ref="c19123e6031c139d66f534ae4311d605" category="inline-link-macro-rx"></block></block>
+  <block id="9f5ac9f9e33d14b5edcf142aa6534de3" category="paragraph">IOM12モジュールを搭載したディスクシェルフは、特定のタイプのHAペアおよびシングルコントローラ構成でサポートされます。</block>
+  <block id="a02316bb16a44dfeab4bba0330def5a9" category="admonition">このコンテンツでは、外部のシステム向けのシステムは対応していません。</block>
+  <block id="f18e20acd27581fe2f1075089d65a455" category="list-text">FAS2600シリーズ、AFF A200、FAS2700シリーズ、AFF A220など、内蔵ストレージを搭載したプラットフォーム また、シングルパスHA構成としてケーブル接続して外付けSASテープバックアップデバイスへの接続をサポートすることもできます。</block>
+  <block id="c47a6f7fbf347f2ab09e05ad80c1fc30" category="list-text">FAS2600シリーズ、AFF A200、FAS2700シリーズ、AFF A220など、内蔵ストレージを搭載したプラットフォーム また、クアッドパスHA接続はサポートしないでください。</block>
+  <block id="dee118410b7e171b0f510cb87be443b7" category="paragraph">SASディスクシェルフがソフトウェアベースのディスク所有権を使用していること、コントローラポートA / CおよびB / Dがスタックに接続されている方法を理解することで、HAペアまたはシングルコントローラ構成の各コントローラから各スタックへのSAS接続を正しくケーブル接続できます。 コントローラポートA / CおよびB / Dがポートペアに編成され、内蔵ストレージを搭載したプラットフォームのコントローラポートがスタックにどのように接続されるか。</block>
+  <block id="8018a1e3a70e95fa6594f859c3232987" category="section-title">コントローラAとCポートの接続ルール（内蔵ストレージを使用しないプラットフォームの場合）</block>
+  <block id="91be64cf601d5c3cea92700e0feb259b" category="section-title">コントローラBおよびDポートの接続ルール（内蔵ストレージを使用しないプラットフォームの場合）</block>
+  <block id="53de5403d00811e5f44fb1b9f62019a4" category="section-title">ポートペアの接続ルール（内蔵ストレージを使用しないプラットフォームの場合）</block>
+  <block id="0ce2d44d1215d0431e0b46ed686dd560" category="section-title">内蔵ストレージを搭載したプラットフォームのコントローラ0bおよび0aポートの接続ルール</block>
+  <block id="0c574ecb6a58bb92327391af7cfd84d2" category="paragraph">FAS2600シリーズ、AFF A200、FAS2700シリーズ、AFF A220など、内蔵ストレージを搭載したプラットフォーム 以降では、各コントローラが内蔵ストレージ（ポート0b）とスタック間で同じドメイン接続を維持する必要があるため、固有の接続ルールが適用されます。つまり、コントローラがシャーシ（コントローラ 1 ）のスロット A にある場合、そのコントローラはドメイン A （ IOM A ）にあるため、ポート 0b はスタック内の IOM A に接続する必要があります。コントローラがシャーシ（コントローラ 2 ）のスロット B にある場合、そのコントローラはドメイン B （ IOM B ）にあるため、ポート 0b はスタック内の IOM B に接続する必要があります。</block>
+  <block id="27858a1c4654311bc60fbcd9494b2c3e" category="admonition">このコンテンツでは、外部向けのシステムは対応していません。</block>
+  <block id="06da34e55ca27b5fa072a7b523991230" category="paragraph">次の図は、FAS2600シリーズ、AFF A200、FAS2700シリーズ、AFF A220、およびそれ以降のマルチパスHA構成の内蔵ストレージポート（0b）のドメイン接続を示しています。</block>
+  <block id="0fdd3a9de120fbacd6c04d73ee6832df" category="summary">記入済みのコントローラ/スタック間のケーブル接続ワークシートとケーブル接続例を使用して、FAS2600シリーズ、AFF A200、FAS2700シリーズ、AFF A220などの内蔵ストレージでプラットフォームをケーブル接続できます。 以降が必要です。</block>
+  <block id="bb42dbb13759e9df73ffa74412e3548a" category="doc">IOM12 / IOM12Bモジュールを搭載した内蔵ストレージシェルフを使用するプラットフォームのコントローラ/スタック間のケーブル接続ワークシートとケーブル接続例</block>
+  <block id="424f2fdac9e61f7b7785b602da677d00" category="admonition">この情報は、システム外部のシステムには適用されません。</block>
+  <block id="4efb7705f98005596f065e30ddf32363" category="section-title">マルチパスHA構成で、1つのマルチシェルフスタックに内蔵ストレージが搭載されたプラットフォーム</block>
+  <block id="835ecba5eb095440eda54c2f50f1ef89" category="paragraph">HAペアがある場合、ONTAP はシステム構成を「マルチパスHA」として表示します。シングル・コントローラ構成の場合、ONTAP はシステム構成を「multipath」と表示します。</block>
+  <block id="3f9904dabd6885ddf815902aade7d320" category="sidebar">内部ストレージを使用するプラットフォームのケーブル接続ワークシートと例</block>
 </blocks>

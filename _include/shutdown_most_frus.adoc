@@ -23,6 +23,10 @@ https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["ONTAP 9 
 次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
 
 . 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
++
+
+NOTE: 自動ギブバックを無効にしますか?_と表示されたら'y'を入力します
+
 . 障害のあるコントローラに LOADER プロンプトを表示します。
 +
 [cols="1,2"]

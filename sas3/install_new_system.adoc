@@ -73,7 +73,7 @@ NOTE: 少なくとも 2 つのスタックで構成される HA ペアがある�
 DQP の最新バージョンをインストールしておくと、システムが新しく認定されたディスクドライブを認識して使用できるため、ディスクドライブの情報が最新でない場合に表示されるシステムイベントメッセージを回避できます。また、ディスクドライブが認識されないために発生するディスクのパーティショニングも回避できます。さらに、ディスクドライブのファームウェアが最新でない場合も、通知で知ることができます。
 
 +
-https://mysupport.netapp.com/NOW/download/tools/diskqual/["ネットアップのダウンロード： Disk Qualification Package"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["ネットアップのダウンロード： Disk Qualification Package"^]
 
 * Config Advisor は、新しいシステムのインストール後にダウンロードして実行することを推奨します。
 +

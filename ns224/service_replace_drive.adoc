@@ -42,7 +42,7 @@ NOTE: ドライブのタイプと容量によっては、障害ドライブの�
 DQP の最新バージョンをインストールしておくと、新しく認定されたドライブがシステムで認識されて使用できるようになります。これにより、ドライブの情報が最新でない場合に表示されるシステムイベントメッセージを回避できるほか、ドライブが認識されないために発生するドライブのパーティショニングを回避できます。さらに、ドライブのファームウェアが最新でない場合も、通知で知ることができます。
 
 +
-https://mysupport.netapp.com/NOW/download/tools/diskqual/["ネットアップのダウンロード： Disk Qualification Package"^]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["ネットアップのダウンロード： Disk Qualification Package"^]
 
 * * ベストプラクティス： FRU コンポーネントを交換する前に、お使いのシステムの NVMe シェルフモジュール（ NSM ）ファームウェアとドライブファームウェアを最新バージョンにしておくことを推奨します。
 +

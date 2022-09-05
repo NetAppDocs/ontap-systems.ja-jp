@@ -90,7 +90,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 
 * 1つのシステムに、IOM12 / IOM12Bモジュールを使用するマルチパススタックのディスクシェルフとクアッドパススタックのディスクシェルフを配置することができます。
 +
-HA ペアを使用している場合、 ONTAP ではシステム構成が「マルチパス HA 」と表示されます。シングルコントローラ構成の場合、 ONTAP ではシステム構成が「マルチパス」として表示されます。
+HAペアがある場合、ONTAP はシステム構成を「マルチパスHA」として表示します。シングル・コントローラ構成の場合、ONTAP はシステム構成を「multipath」と表示します。
 
 * この手順は、インバンド ACP を使用した構成であることを前提としています。
 +
@@ -111,7 +111,7 @@ HA ペアを使用している場合、 ONTAP ではシステム構成が「マ�
 DQP の最新バージョンをインストールしておくと、システムが新しく認定されたディスクドライブを認識して使用できるため、ディスクドライブの情報が最新でない場合に表示されるシステムイベントメッセージを回避できます。また、ディスクドライブが認識されないために発生するディスクのパーティショニングも回避できます。さらに、ディスクドライブのファームウェアが最新でない場合も、通知で知ることができます。
 
 +
-https://mysupport.netapp.com/NOW/download/tools/diskqual/["ネットアップのダウンロード： Disk Qualification Package"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["ネットアップのダウンロード： Disk Qualification Package"^]
 
 * ディスクシェルフをホットアドする前後に Config Advisor を実行することを推奨します。
 +
