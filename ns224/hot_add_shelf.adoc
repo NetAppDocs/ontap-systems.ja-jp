@@ -43,7 +43,7 @@ https://hwu.netapp.com["NetApp Hardware Universe の略"^]
 ====
 専用でない RoCE 対応ポートは、ストレージ用に設定する必要があります（ネットワークでは使用できません）。
 
-<<Prepare non-dedicated RoCE-capable ports for a hot-add>>
+ non-dedicated RoCE-capable ports for a hot-add
 
 ====
 * AFF A700 HA ペアを使用していて、初期の NS224 ドライブシェルフをホットアドする場合（ HA ペアに NS224 ドライブシェルフがない場合）は、コアダンプ（コアファイルの格納）をサポートするために、各コントローラにコアダンプモジュール（ X9170a 、 NVMe 1TB SSD ）を取り付ける必要があります。
@@ -130,7 +130,7 @@ NS224 ドライブシェルフのホットアドに使用する専用の RoCE �
 
 システム要件を満たしている必要があります。
 
-<<Requirements for a hot-add>>
+ for a hot-add
 
 .このタスクについて
 * 一部のプラットフォームモデルでは、 RoCE 対応の PCIe カードまたは I/O モジュールがコントローラのサポートされているスロットに搭載されている場合、ポートのデフォルトでストレージが使用されます（ネットワークではなく）。ただし、この手順を設定して、 RoCE 対応ポートがストレージで使用するように設定されていることを確認することを推奨します。
@@ -250,11 +250,11 @@ AFF A700 、 AFF A800 、または AFF A400 HA ペアを構成しており、 1 
 .作業を開始する前に
 * システム要件を満たしている必要があります。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 取り付けた RoCE 対応 PCIe カードまたは I/O モジュールのポートを有効にしておく必要があります。
 +
-<<Prepare non-dedicated RoCE-capable ports for a hot-add>>
+ non-dedicated RoCE-capable ports for a hot-add
 
 
 
@@ -288,7 +288,7 @@ NOTE: 手順は、既存のシェルフが各コントローラのスロット 3
 ====
 必要に応じて、 2 台のシェルフ構成の既存の 1 台のシェルフとケーブル接続されたシェルフを示すケーブル構成図を参照できます。
 
-<<Cable a hot-add shelf for an AFF A700 HA pair>>
+ a hot-add shelf for an AFF A700 HA pair
 
 ====
 .. コントローラ A で、スロット 3 のポート b （ e3b ）からスロット 7 のポート b （ e7b ）にケーブルを移動します。
@@ -307,7 +307,7 @@ NOTE: 手順は、既存のシェルフが各コントローラのスロット 5
 ====
 必要に応じて、 2 台のシェルフ構成の既存の 1 台のシェルフとケーブル接続されたシェルフを示すケーブル構成図を参照できます。
 
-<<Cable a hot-add shelf for an AFF A800 HA pair>>
+ a hot-add shelf for an AFF A800 HA pair
 
 ====
 .. コントローラ A で、スロット 5 のポート b （ e5b ）からスロット 3 のポート b （ e3b ）にケーブルを移動します。
@@ -323,7 +323,7 @@ AFF A400 HA ペア
 ====
 必要に応じて、 2 台のシェルフ構成の既存の 1 台のシェルフとケーブル接続されたシェルフを示すケーブル構成図を参照できます。
 
-<<Cable a hot-add shelf for an AFF A400 HA pair>>
+ a hot-add shelf for an AFF A400 HA pair
 
 ====
 .. コントローラ A で、ポート e0d からスロット 5 のポート b （ e5b ）にケーブルを移動します。
@@ -348,7 +348,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 
 システム要件を満たしている必要があります。
 
-<<Requirements for a hot-add>>
+ for a hot-add
 
 シェルフ内のドライブが HA ペアの両方のコントローラモジュールで所有される場合は、ドライブ所有権を手動で割り当てる必要があります。
 
@@ -376,11 +376,11 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 .作業を開始する前に
 * システム要件を満たしている必要があります。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 該当する準備手順を完了しておく必要があります。
 +
-<<Prepare for a hot-add>>
+ for a hot-add
 
 
 
@@ -472,15 +472,15 @@ image::../media/drw_ns224_back_ports.png[DRW ns224 バックポート]
 .作業を開始する前に
 * システム要件を満たしている必要があります。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 該当する準備手順を完了しておく必要があります。
 +
-<<Prepare for a hot-add>>
+ for a hot-add
 
 * シェルフを設置し、電源をオンにして、シェルフ ID を設定しておく必要があります。
 +
-<<Install a drive shelf for a hot-add>>
+ a drive shelf for a hot-add
 
 
 
@@ -553,7 +553,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 それ以外の場合は、この手順を使用します。
 
 +
-<<Complete the hot-add>>
+ the hot-add
 
 
 
@@ -567,15 +567,15 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 .作業を開始する前に
 * システム要件を満たしている必要があります。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 該当する準備手順を完了しておく必要があります。
 +
-<<Prepare for a hot-add>>
+ for a hot-add
 
 * シェルフを設置し、電源をオンにして、シェルフ ID を設定しておく必要があります。
 +
-<<Install a drive shelf for a hot-add>>
+ a drive shelf for a hot-add
 
 
 
@@ -605,7 +605,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 それ以外の場合は、この手順を使用します。
 
 +
-<<Complete the hot-add>>
+ the hot-add
 
 
 
@@ -618,15 +618,15 @@ AFF A700 HA ペアの NS224 ドライブシェルフのケーブル接続方法�
 .作業を開始する前に
 * システム要件を満たしている必要があります。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 該当する準備手順を完了しておく必要があります。
 +
-<<Prepare for a hot-add>>
+ for a hot-add
 
 * シェルフを設置し、電源をオンにして、シェルフ ID を設定しておく必要があります。
 +
-<<Install a drive shelf for a hot-add>>
+ a drive shelf for a hot-add
 
 
 
@@ -706,7 +706,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 それ以外の場合は、この手順を使用します。
 
 +
-<<Complete the hot-add>>
+ the hot-add
 
 
 
@@ -719,15 +719,15 @@ AFF A800 HA ペアの NS224 ドライブシェルフのケーブル接続方法�
 .作業を開始する前に
 * システム要件を満たしている必要があります。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 該当する準備手順を完了しておく必要があります。
 +
-<<Prepare for a hot-add>>
+ for a hot-add
 
 * シェルフを設置し、電源をオンにして、シェルフ ID を設定しておく必要があります。
 +
-<<Install a drive shelf for a hot-add>>
+ a drive shelf for a hot-add
 
 
 
@@ -811,7 +811,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 それ以外の場合は、この手順を使用します。
 
 +
-<<Complete the hot-add>>
+ the hot-add
 
 
 
@@ -824,15 +824,15 @@ AFF A400 HA ペアの NS224 ドライブシェルフのケーブル接続方法�
 .作業を開始する前に
 * システム要件を満たしている必要があります。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 該当する準備手順を完了しておく必要があります。
 +
-<<Prepare for a hot-add>>
+ for a hot-add
 
 * シェルフを設置し、電源をオンにして、シェルフ ID を設定しておく必要があります。
 +
-<<Install a drive shelf for a hot-add>>
+ a drive shelf for a hot-add
 
 
 
@@ -902,7 +902,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 それ以外の場合は、この手順を使用します。
 
 +
-<<Complete the hot-add>>
+ the hot-add
 
 
 
@@ -915,15 +915,15 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 .作業を開始する前に
 * システム要件を満たしている必要があります。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 該当する準備手順を完了しておく必要があります。
 +
-<<Prepare for a hot-add>>
+ for a hot-add
 
 * シェルフを設置し、電源をオンにして、シェルフ ID を設定しておく必要があります。
 +
-<<Install a drive shelf for a hot-add>>
+ a drive shelf for a hot-add
 
 
 
@@ -953,7 +953,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 それ以外の場合は、この手順を使用します。
 
 +
-<<Complete the hot-add>>
+ the hot-add
 
 
 
@@ -966,7 +966,7 @@ NS224 ドライブシェルフのホットアドの準備の一環として自�
 
 HA ペアの手順に従って、シェルフのケーブル接続を完了しておく必要があります。
 
-<<Cable a drive shelf for a hot-add>>
+ a drive shelf for a hot-add
 
 .手順
 . 所有権が未設定のドライブをすべて表示します。「 storage disk show -container-type unassigned 」

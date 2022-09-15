@@ -245,7 +245,7 @@ NOTE: このとき、ディスクシェルフの電源は入れないでくだ�
 [role="lead"]
 ディスクシェルフの SAS 接続（シェルフ / シェルフ間およびコントローラ / シェルフ間）をケーブル接続して、システムのストレージ接続を確立します。
 
-に記載された要件を満たしている必要があります <<Requirements for installing and cabling disk shelves with IOM12 modules for a new system installation>> ディスクシェルフをラックに設置しておきます。
+に記載された要件を満たしている必要があります  for installing and cabling disk shelves with IOM12 modules for a new system installation ディスクシェルフをラックに設置しておきます。
 
 ディスクシェルフをケーブル接続したら、電源を投入し、シェルフ ID を設定して、システムのセットアップと設定を完了します。
 

@@ -288,7 +288,7 @@ image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
 |===
 . 電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。
 . ケーブルをケーブルマネジメントアームにストラップで固定します（図はなし）。
-. ストレージをケーブル接続するには、を参照してください <<Step 4: Cable controllers to drive shelves>>。
+. ストレージをケーブル接続するには、を参照してください  4: Cable controllers to drive shelves。
 
 
 --
@@ -369,7 +369,7 @@ image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
 |===
 . 電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。
 . ケーブルをケーブルマネジメントアームにストラップで固定します（図はなし）。
-. ストレージをケーブル接続するには、を参照してください <<Step 4: Cable controllers to drive shelves>>。
+. ストレージをケーブル接続するには、を参照してください  4: Cable controllers to drive shelves。
 
 
 --
@@ -429,7 +429,7 @@ image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIEケーブルミニSA
 Mini-SASケーブル
 
 |===
-. システムのセットアップを完了するには、を参照してください <<Step 5: Complete system setup and configuration>>。
+. システムのセットアップを完了するには、を参照してください  5: Complete system setup and configuration。
 
 
 
@@ -555,7 +555,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
 
 
 --
@@ -694,7 +694,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
 
 
 --

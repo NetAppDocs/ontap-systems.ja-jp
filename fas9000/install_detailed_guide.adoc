@@ -237,7 +237,7 @@ video::7a55b98a-e8b8-41d5-821f-ac5b0032ead0[panopto]
 
 image::../media/drw_9000_TNSC_composite_cabling.png[DRW 9000 TNSC 複合ケーブル]
 
-. に進みます <<Step 4: Cable controllers to drive shelves>> ドライブシェルフのケーブル接続手順については、を参照して
+. に進みます  4: Cable controllers to drive shelves ドライブシェルフのケーブル接続手順については、を参照して
 
 
 
@@ -265,7 +265,7 @@ video::6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[panopto]
 
 image:../media/drw_9000_switched_cluster_cabling.png[""]
 
-. に進みます <<Step 4: Cable controllers to drive shelves>> ドライブシェルフのケーブル接続手順については、を参照して
+. に進みます  4: Cable controllers to drive shelves ドライブシェルフのケーブル接続手順については、を参照して
 
 
 
@@ -324,7 +324,7 @@ link:..https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html[
 +
 image:../media/Cable_shelves_new_system_IOM12_shelves.png[""]
 
-. に進みます <<Step 5: Complete system setup and configuration>> をクリックして、システムのセットアップと設定を完了します。
+. に進みます  5: Complete system setup and configuration をクリックして、システムのセットアップと設定を完了します。
 
 
 
@@ -360,7 +360,7 @@ image::../media/drw_ns224_a700_1shelf.png[DRW ns224 A700 1 シェルフ]
 +
 image::../media/single_NS224_shelf.png[1 台の NS224 シェルフ]
 
-. に進みます <<Step 5: Complete system setup and configuration>> をクリックして、システムのセットアップと設定を完了します。
+. に進みます  5: Complete system setup and configuration をクリックして、システムのセットアップと設定を完了します。
 
 
 
@@ -396,7 +396,7 @@ image::../media/drw_ns224_a700_2shelves.png[DRW ns224 A700 2 シェルフ]
 +
 image::../media/two_NS224_shelves.png[NS224 シェルフ × 2]
 
-. に進みます <<Step 5: Complete system setup and configuration>> をクリックして、システムのセットアップと設定を完了します。
+. に進みます  5: Complete system setup and configuration をクリックして、システムのセットアップと設定を完了します。
 
 
 
@@ -477,7 +477,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"] ONTAP での追加機能の設定については、ページを参照してください。
 
 
 
@@ -574,5 +574,5 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"] ONTAP での追加機能の設定については、ページを参照してください。
 

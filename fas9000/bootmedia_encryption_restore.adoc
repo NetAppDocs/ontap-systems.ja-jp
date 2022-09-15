@@ -16,9 +16,9 @@ OKM 、 NSE 、または NVE 構成をリストアするために使用するセ
 
 NSE または NVE がオンボードキーマネージャとともに有効になっている場合は、この手順の最初に取得した設定をリストアする必要があります。
 
-* NSE または NVE が有効で、オンボードキーマネージャが有効になっている場合は、に進みます <<Option 1: Restore NVE or NSE when Onboard Key Manager is enabled>>。
-* ONATP 9.5 で NSE または NVE が有効になっている場合は、に進みます <<Option 2: Restore NSE/NVE on systems running ONTAP 9.5 and earlier>>。
-* ONTAP 9.6 に対して NSE または NVE が有効になっている場合は、に進みます <<Option 3: Restore NSE/NVE on systems running ONTAP 9.6 and later>>。
+* NSE または NVE が有効で、オンボードキーマネージャが有効になっている場合は、に進みます  1: Restore NVE or NSE when Onboard Key Manager is enabled。
+* ONATP 9.5 で NSE または NVE が有効になっている場合は、に進みます  2: Restore NSE/NVE on systems running ONTAP 9.5 and earlier。
+* ONTAP 9.6 に対して NSE または NVE が有効になっている場合は、に進みます  3: Restore NSE/NVE on systems running ONTAP 9.6 and later。
 
 
 

@@ -55,7 +55,11 @@ I/Oモジュールは、システムの空のモジュールスロットに、SA
 
 NOTE: 使用していない I/O スロットには、熱の問題を防ぐためにブランクが取り付けられていることを確認してください。
 
-. LOADER プロンプトからノードをリブートします： bye _
+. LOADER プロンプトからコントローラをリブートします： bye _
++
+
+NOTE: これにより、PCIeカードおよびその他のコンポーネントが再初期化され、ノードがリブートされます。
+
 . パートナーノードからノードをギブバックします。storage failover giveback -ofnode target_node_name
 . 自動ギブバックを無効にした場合は、有効にします。「 storage failover modify -node local-auto-giveback true 」
 . ネットワーク用にスロット 3 または 7 を使用している場合は、「 storage port modify -node __ <node name> ____port_<port name> __ -mode network 」コマンドを使用して、ネットワーク用にスロットを変換します。
@@ -156,7 +160,17 @@ image::../media/legend_icon_02.svg[凡例アイコン 02]
 
 . コントローラ A の他のモジュールについても、取り外しと取り付けの手順を繰り返して交換します
 . 交換用 I/O モジュールが NIC の場合は、モジュールをデータスイッチにケーブル接続します。
-. LOADER プロンプトからノードをリブートします： bye _
+. BMCをリブートし、ノードをリブートします。
++
+.. LOADERプロンプトから、advanced権限モードに切り替えます。「priv set advanced」
+.. BMCを再起動します：「SP reboot
+
+
+. LOADERプロンプトからノードをリブートします。bye
++
+
+NOTE: これにより、PCIeカードおよびその他のコンポーネントが再初期化され、ノードがリブートされます。
+
 . パートナーノードからノードをギブバックします。storage failover giveback -ofnode target_node_name
 . 自動ギブバックを無効にした場合は、有効にします。「 storage failover modify -node local-auto-giveback true 」
 . 追加した場合：

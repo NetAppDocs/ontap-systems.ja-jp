@@ -257,10 +257,10 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 |===
 . オプションのケーブル接続を行うには、以下を参照してください
 +
-** <<Option 1: Connect to a Fibre Channel host>>
-** <<Option 2: Connect to a 10GbE host>>
-** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
-** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
+**  1: Connect to a Fibre Channel host
+**  2: Connect to a 10GbE host
+**  3: Connect to a single direct-attached NS224 drive shelf
+**  4: Connect to two direct-attached NS224 drive shelves
 
 
 . システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
@@ -325,10 +325,10 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 |===
 . オプションのケーブル接続を行うには、以下を参照してください
 +
-** <<Option 1: Connect to a Fibre Channel host>>
-** <<Option 2: Connect to a 10GbE host>>
-** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
-** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
+**  1: Connect to a Fibre Channel host
+**  2: Connect to a 10GbE host
+**  3: Connect to a single direct-attached NS224 drive shelf
+**  4: Connect to two direct-attached NS224 drive shelves
 
 
 . システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
@@ -372,8 +372,8 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
  a| 
 その他のオプションのケーブル接続を行うには、次のいずれかを選択します
 
-* <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
-* <<Option 4: Connect to two direct-attached NS224 drive shelves>>
+*  3: Connect to a single direct-attached NS224 drive shelf
+*  4: Connect to two direct-attached NS224 drive shelves
 
 
 
@@ -416,8 +416,8 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
  a| 
 その他のオプションのケーブル接続を行うには、次のいずれかを選択します
 
-* <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
-* <<Option 4: Connect to two direct-attached NS224 drive shelves>>
+*  3: Connect to a single direct-attached NS224 drive shelf
+*  4: Connect to two direct-attached NS224 drive shelves
 
 
 
@@ -547,7 +547,7 @@ System Manager が開きます。
 
 . System Manager のセットアップガイドを使用して、で収集したデータを基にシステムを設定します link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^]。
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます link:https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、に進みます link:https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
 
 
 
@@ -616,5 +616,5 @@ NOTE: アドレスの形式は、 +https://x.x.x.x+ です。
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます link:https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP & ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、に進みます link:https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
 

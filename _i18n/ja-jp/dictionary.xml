@@ -2086,14 +2086,8 @@
   <block id="f453086a36d64a5193cd4183c14bcd72" category="inline-link-macro">AFF 8000 シリーズのドキュメント</block>
   <block id="71bdc94f19d5947bd1cb6d437f119ba2" category="inline-link-macro">FAS8000 シリーズのドキュメント</block>
   <block id="2b3a51bca746a221bf4a0af6d3098ccf" category="paragraph"><block ref="2b3a51bca746a221bf4a0af6d3098ccf" category="inline-link-macro-rx"></block></block>
-  <block id="f739ddc76de0a287d2c0b563d814e953" category="inline-link-macro">FAS6200 シリーズのドキュメント</block>
-  <block id="e9631782eda247a09ad2e090180b8c23" category="paragraph"><block ref="e9631782eda247a09ad2e090180b8c23" category="inline-link-macro-rx"></block></block>
-  <block id="f7c466bdf55160e7ccabf40d2020dad0" category="inline-link-macro">FAS3200 シリーズのドキュメント</block>
-  <block id="d710040b8ac876a0da7dc8e847bb40ee" category="paragraph"><block ref="d710040b8ac876a0da7dc8e847bb40ee" category="inline-link-macro-rx"></block></block>
   <block id="c7e39e875a3a875d9445eace0794b0f5" category="inline-link-macro">FAS2500 シリーズのドキュメント</block>
   <block id="ebc5a75e4df8077b15f7cef6c123c7db" category="paragraph"><block ref="ebc5a75e4df8077b15f7cef6c123c7db" category="inline-link-macro-rx"></block></block>
-  <block id="3c0f93dc3f40f9ea0aef607cee8d55b1" category="inline-link-macro">FAS2200 シリーズのドキュメント</block>
-  <block id="1da789723077cd18e287167bf56d9b2e" category="paragraph"><block ref="1da789723077cd18e287167bf56d9b2e" category="inline-link-macro-rx"></block></block>
   <block id="f707961e750c3177d39579c3dd6298da" category="doc">システムのリストアが完了しました - AFF A220 / FAS2700</block>
   <block id="4bbcc3f3d11202923e4c61604d535622" category="list-text"><block ref="4bbcc3f3d11202923e4c61604d535622" category="inline-link-macro-rx"></block></block>
   <block id="7c308c086b5e1b83f888d7cdb4ec7dfc" category="list-text"><block ref="7c308c086b5e1b83f888d7cdb4ec7dfc" category="inline-link-macro-rx"></block></block>
@@ -6668,7 +6662,6 @@
   <block id="3e1047f2ebaed54fe88cc6f78291dbb6" category="doc">ブートメディア FAS500f を交換してください</block>
   <block id="de2d1282e102972a6af003781e9a5c02" category="paragraph">_SLDIAG ：ログメッセージがありません。 _</block>
   <block id="3f91c59c59a1243cb3f176daf3c9c054" category="list-text">ノードを通常動作に戻します。</block>
-  <block id="eb90dbf89cffd9812a8720d277f30583" category="summary">これらのリンクから、 AFF および FAS の他のプラットフォームのドキュメントを参照できます。</block>
   <block id="0f40216c1ad47c12e8ccc087d555570f" category="sidebar">ONTAP リリースノート</block>
   <block id="c0a1a3a5bc62ecf46953d4c7ebde86a7" category="section-title">手順 6 ：（ 2 ノード MetroCluster のみ）：アグリゲートをスイッチバックします</block>
   <block id="af844de12c61a1b2d86c05934c317256" category="summary">ドライブの交換は、ドライブで障害が発生したことを示す警告メッセージがプラットフォームからシステムコンソールに記録された場合に必要になります。さらに、オペレータ用ディスプレイパネルの障害 LED と、障害が発生したドライブの障害 LED の両方が点灯します。</block>
@@ -6848,7 +6841,6 @@
   <block id="a31ab93f41516026d249aceb633bccc3" category="doc">I/OモジュールFAS9500を追加します</block>
   <block id="133808c24f6fb32a9a2a58ed28150498" category="paragraph">I/Oモジュールは、システムの空のモジュールスロットに、SASストレージシェルフのNICまたはストレージモジュールとして追加できます。</block>
   <block id="ff231ca484e594004f4ca93ecfa6683e" category="paragraph">テイクオーバーが完了すると、コンソール接続でノードが LOADER プロンプトに表示されます。</block>
-  <block id="2a5cd1f850ee79601be57448f10d9595" category="list-text">LOADER プロンプトからノードをリブートします： bye _</block>
   <block id="4d3b1425bbd62943a546a9f98dc3b7ef" category="list-text">パートナーノードからノードをギブバックします。storage failover giveback -ofnode target_node_name</block>
   <block id="6f8193ca6bfb281db32afbcc9e285f79" category="inline-link">SASシェルフのホットアド</block>
   <block id="9856beabcb389225df78cec96e74e365" category="list-text">ストレージI/Oモジュールを設置した場合は、SASシェルフを設置してケーブル接続します（を参照）<block ref="322cc377ef41f5776a1c64690e12c49b" category="inline-link-rx"></block>。</block>
@@ -7356,4 +7348,8 @@
   <block id="4efb7705f98005596f065e30ddf32363" category="section-title">マルチパスHA構成で、1つのマルチシェルフスタックに内蔵ストレージが搭載されたプラットフォーム</block>
   <block id="835ecba5eb095440eda54c2f50f1ef89" category="paragraph">HAペアがある場合、ONTAP はシステム構成を「マルチパスHA」として表示します。シングル・コントローラ構成の場合、ONTAP はシステム構成を「multipath」と表示します。</block>
   <block id="3f9904dabd6885ddf815902aade7d320" category="sidebar">内部ストレージを使用するプラットフォームのケーブル接続ワークシートと例</block>
+  <block id="e3fd55f400cc227fbbc7c777c0679db1" category="list-text">交換用 I/O モジュールが NIC の場合は、モジュールをデータスイッチにケーブル接続します。</block>
+  <block id="c51e6cbbe594b20461edba0d83817fce" category="list-text">BMCをリブートし、ノードをリブートします。</block>
+  <block id="e727b00944f81e1d0a95c12886ac4641" category="inline-link-macro">Archive サービスの略</block>
+  <block id="97a6415da8202d0321d49b92f019e7b1" category="paragraph">これらのリンクから、 AFF および FAS の他のプラットフォームのドキュメントを参照できます。ハードウェアサポートが終了したAFF システムとFAS システムのドキュメントは、でお客様に提供しています <block ref="5e4606a12c7b193a6ccb23ff349575d7" category="inline-link-macro-rx"></block>。</block>
 </blocks>

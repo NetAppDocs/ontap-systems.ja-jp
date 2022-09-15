@@ -47,14 +47,14 @@ HA ペアのストレージシステムの場合、手順の最後でギブバ�
  a| 
 HA ペア
  a| 
-<<Option 1: Verify the system ID change on an HA system>>]
+ 1: Verify the system ID change on an HA system]
 
 
 
  a| 
 2 ノード MetroCluster 構成
  a| 
-<<Option 2: Manually reassign the system ID on systems in a two-node MetroCluster configuration>>
+ 2: Manually reassign the system ID on systems in a two-node MetroCluster configuration
 
 |===
 

@@ -52,7 +52,7 @@ hA-state には、次のいずれかの値を指定できます。
 スタンドアロン構成です
  a| 
 .. 保守モードを終了します :halt
-.. に進みます <<Step 4: Return the failed part to NetApp>>。
+.. に進みます  4: Return the failed part to NetApp。
 
 
 

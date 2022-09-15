@@ -1,7 +1,7 @@
 ---
 permalink: other/other-models.html 
 sidebar: sidebar 
-keywords: aff 8000, fas8000, fas6200, fas3200, fas2500, fas2200, ds4243, ds2246, ds4486 
+keywords: aff 8000, fas8000, fas6200, fas3200, fas2500, ds4243, ds2246, ds4486 
 summary: これらのリンクから、 AFF および FAS の他のシステムのドキュメントを参照できます。 
 ---
 = その他のモデル
@@ -11,7 +11,7 @@ summary: これらのリンクから、 AFF および FAS の他のシステム�
 
 
 [role="lead"]
-これらのリンクから、 AFF および FAS の他のプラットフォームのドキュメントを参照できます。
+これらのリンクから、 AFF および FAS の他のプラットフォームのドキュメントを参照できます。ハードウェアサポートが終了したAFF システムとFAS システムのドキュメントは、でお客様に提供しています link:https://mysupport.netapp.com/documentation/productsatoz/index.html?archive=true["Archive サービスの略"]。
 
 
 
@@ -21,13 +21,7 @@ link:http://mysupport.netapp.com/documentation/productlibrary/index.html?product
 
 link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61630["FAS8000 シリーズのドキュメント"]
 
-link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30429["FAS6200 シリーズのドキュメント"]
-
-link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30425["FAS3200 シリーズのドキュメント"]
-
 link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61617["FAS2500 シリーズのドキュメント"]
-
-link:https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61397["FAS2200 シリーズのドキュメント"]
 
 
 

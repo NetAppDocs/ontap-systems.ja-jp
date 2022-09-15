@@ -21,7 +21,7 @@ summary: 追加のストレージが必要な場合は、IOM12 / IOM12Bシェル
 HAペア、シングルコントローラ、またはストレッチMetroCluster 構成（システム）が、IOM12 / IOM12BシェルフをIOM6シェルフのスタックにホットアドする際の一定の要件を満たしている必要があります。
 
 
-NOTE: ブリッジ接続 MetroCluster の設定については、を参照してください <<Requirements for a hot-add in bridge-attached MetroCluster configurations>>。
+NOTE: ブリッジ接続 MetroCluster の設定については、を参照してください  for a hot-add in bridge-attached MetroCluster configurations。
 
 * ご使用のシステムとONTAP のバージョンで、同じスタック（混在スタック）にIOM6シェルフとIOM12 / IOM12Bシェルフを混在させることができます。
 +
@@ -228,9 +228,9 @@ NOTE: 移行手順には、 IBACP のシステム要件が記載されていま�
 
 システム要件を満たしている必要があります。
 
-<<Requirements for a hot-add>>
+ for a hot-add
 
-<<Requirements for a hot-add in bridge-attached MetroCluster configurations>>
+ for a hot-add in bridge-attached MetroCluster configurations
 
 HA ペアを使用する場合は、シェルフ内のドライブが両方のコントローラモジュールで所有されるようにするには、ドライブ所有権を手動で割り当てる必要があります。
 
@@ -396,15 +396,15 @@ IOM12 / IOM12BシェルフをIOM6シェルフのスタックにケーブル接�
 .作業を開始する前に
 * システム要件を満たしている必要があります。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 必要に応じて準備手順を完了しておく必要があります。
 +
-<<Prepare to manually assign drive ownership for a hot-add>>
+ to manually assign drive ownership for a hot-add
 
 * シェルフを設置し、電源をオンにして、シェルフ ID を設定しておく必要があります。
 +
-<<Install shelves for a hot-add>>
+ shelves for a hot-add
 
 
 
@@ -634,7 +634,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 それ以外の場合は、この手順を使用します。
 
 +
-<<Complete the hot-add>>
+ the hot-add
 
 +
 
@@ -651,7 +651,7 @@ IOM12 / IOM12BシェルフをIOM6シェルフのスタックにホットアド�
 
 システムの指示に従って、シェルフのケーブル接続を完了しておく必要があります。
 
-<<Cable shelves for a hot-add>>
+ shelves for a hot-add
 
 .手順
 . 所有権が未設定のドライブをすべて表示します。「 storage disk show -container-type unassigned 」
