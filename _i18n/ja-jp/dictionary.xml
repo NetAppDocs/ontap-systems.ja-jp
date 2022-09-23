@@ -238,11 +238,9 @@
   <block id="7420f9b1d8e8ed836b7ae9c80124f6b8" category="list-text">エアダクトカバーを持ち上げて外します。</block>
   <block id="22ecf0c78d63cfad3a4d14bb76e9e473" category="image-alt">DRW A250 エアダクトカバーを取り外す</block>
   <block id="ef9f4e0c500a9033e3ecc6ac2bea9386" category="section-title">手順 3 ： DIMM を交換する</block>
-  <block id="ff2cabdfad197ecc54cac7ac5edf88bc" category="paragraph">DIMM を交換するには、エアダクトの上の DIMM マップラベルまたは DIMM の横の LED でコントローラモジュール内の DIMM の場所を確認してから、特定の手順に従って交換します。</block>
   <block id="52a264f83e80026af9b21b4d57f0db5a" category="paragraph">DIMM を交換するには、次のビデオまたは表に示す手順を使用します。</block>
   <block id="4dc151f1789db92d7721706161168644" category="list-text">コントローラモジュールの障害のある DIMM を交換します。</block>
   <block id="efd84250e54da20a3b20aedbf193e8d1" category="paragraph">DIMM はマザーボードのスロット 3 または 1 にあります。スロット 2 と 4 は空のままです。DIMM をこれらのスロットに取り付けないでください。</block>
-  <block id="01b87f8f81299496a9cc1c1d0fcbb0df" category="admonition">ボード上の各 DIMM の横にある障害 LED が 2 秒ごとに点滅します。</block>
   <block id="3c2f4d45d9bb9dd0708e7cb1b34f4890" category="image-alt">DRW A250 DIMM 交換</block>
   <block id="169525b3af51c8a1a1183325e19e3768" category="list-text">交換用 DIMM を正しい向きで挿入できるように、ソケット内の DIMM の向きをメモします。</block>
   <block id="8c4c883dc47946a34b3706d63b8b1efb" category="list-text">DIMM の両側にあるツメをゆっくり押し開いて、 DIMM をスロットから引き出します。</block>
@@ -829,7 +827,6 @@
   <block id="e1782167c4ccac91c29c561fbdf9bd10" category="summary">PDF 版セットアップガイドを使用して、新しいシステムを設置してセットアップできます。PDF 版ポスターには、ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
   <block id="a042d62f38b129b2b0a14f9ad8ef93fa" category="doc">設置とセットアップ PDF ポスター - AFF A700s</block>
   <block id="a6f8184cf42c02441138be75b0c4c9da" category="inline-link-macro">AFF A700s のセットアップガイド</block>
-  <block id="b4ddf9d759f084ba25e7c363dcfcd65e" category="paragraph"><block ref="b4ddf9d759f084ba25e7c363dcfcd65e" category="inline-link-macro-rx"></block></block>
   <block id="9baf211c6ecdaf2caa4ae8ac90089172" category="list-text">まだ行っていない場合は、エアダクトを閉じます。</block>
   <block id="af9622020670ce2b86cd2845b04b00f4" category="list-text">エアダクトをコントローラモジュールまで下げます。</block>
   <block id="97be101d543785854ad18ca62a561d32" category="list-text">カチッという音がして固定ツメが所定の位置に収まるまで、エアダクトをライザーの方向にスライドさせます。</block>
@@ -1248,7 +1245,6 @@
   <block id="d92d79541486453c440f5d479e7c2937" category="section-title">ビデオ 2 ：エンドツーエンドのソフトウェア設定を実行する</block>
   <block id="e3a2cdbe22ad29e03fbebb6c1261ed15" category="doc">クイックガイド - AFF A400</block>
   <block id="34a75c3c3d31678dc9bc82fd2d547569" category="inline-link">AFF A400 のセットアップガイド</block>
-  <block id="6a31f53ac6bcbf967fd4f6d12d604380" category="paragraph"><block ref="6a31f53ac6bcbf967fd4f6d12d604380" category="inline-link-rx"></block></block>
   <block id="3cae55e1e828ede8665faa84a0a66de4" category="summary">NVDIMM バッテリを交換するには、コントローラモジュールを取り外し、バッテリを取り外し、バッテリを交換してから、コントローラモジュールを再度取り付ける必要があります。</block>
   <block id="376ecb7742395c276940c386f403f622" category="doc">NVDIMM バッテリを交換してください - AFF A400</block>
   <block id="cc9b9cbb2b7e2941b317fa5e4937583c" category="section-title">手順 3 ： NVDIMM バッテリを交換します</block>
@@ -1916,7 +1912,6 @@
   <block id="d38e923a5dbd4c9cea0e47d7894638fd" category="section-title">手順 4 ：コントローラモジュールを再度取り付けてシステムをブートします</block>
   <block id="b30af54ded6b355219c01928989c094b" category="list-text">Ctrl キーを押しながら C キーを押して ' 通常の起動プロセスを中断します</block>
   <block id="f3a01cef2d9918b3669edb9ee2a1c2b8" category="doc">ビデオ - AFF A800</block>
-  <block id="85d1ffd9f4e349440b69cef9b8b49607" category="inline-link">AFF A800 システムの設置とセットアップの手順</block>
   <block id="2ee0c03cb33be156e12b5b33dbf8e422" category="doc">NVDIMM バッテリを交換してください - AFF A800</block>
   <block id="a2a7f6c4d01f5224a71aaaa23dd37c83" category="list-text">ケーブルマネジメントデバイスに接続しているケーブルをまとめているフックとループストラップを緩め、システムケーブルと SFP / QSFP モジュールをコントローラモジュールから外し（必要な場合）、どのケーブルが何に接続されていたかを記録します。ケーブルマネジメントデバイスに接続しているケーブルをまとめているフックとループストラップを緩め、システムケーブルをコントローラモジュールから外し、どのケーブルが何に接続されていたかを記録します。</block>
   <block id="23303fd786407709fac1485d347f7aa2" category="paragraph">NVDIMM バッテリを交換するには、障害が発生したバッテリをコントローラモジュールから取り外し、交換用バッテリをコントローラモジュールに取り付ける必要があります。</block>
@@ -2117,7 +2112,6 @@
   <block id="3b0a912063aa2a9d7f280a370d140403" category="summary">このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。</block>
   <block id="8e4df4f91c6c51fc9f3abb5c8031333c" category="doc">クイックガイド - AFF A220 および FAS2700</block>
   <block id="9b84aee1c6149b8506044c563e4a3178" category="inline-link">AFF A220 / FAS2700 システムの設置とセットアップの手順</block>
-  <block id="81de09167d66dad47ae2c7fcbd20a82e" category="paragraph"><block ref="81de09167d66dad47ae2c7fcbd20a82e" category="inline-link-rx"></block></block>
   <block id="50c99b8a77b810f6cd5e8517f4310c31" category="doc">電源装置を交換します - AFF A220 および FAS2700</block>
   <block id="5c256d552d60420853939e570c30fbf1" category="admonition">電源装置には冷却機能が統合されているため、通気の減少による過熱を防ぐために、電源装置は取り外してから 2 分以内に交換する必要があります。シャーシの冷却設定は 2 つの HA ノードで共有されているため、 2 分以上経過すると、シャーシ内のすべてのコントローラモジュールがシャットダウンします。両方のコントローラモジュールがシャットダウンした場合は、両方の電源装置が挿入されていることを確認し、両方の電源を 30 秒間オフにしてから、両方の電源をオンにします。</block>
   <block id="1905d900d953685708ba58017a550170" category="list-text">電源装置のカムハンドルのラッチを押し、カムハンドルを最大まで開いて電源装置をミッドプレーンから外します。</block>
@@ -2859,7 +2853,6 @@
   <block id="d5329d1a1e1dddf29f9d62bdc1cd54ad" category="doc">ビデオ - FAS8300 and FAS8700</block>
   <block id="d1903d398c4c8283b66cc2ee2599cef5" category="doc">クイックガイド - FAS8300 および FAS8700</block>
   <block id="221315bbb17a9424f37793425986d6c2" category="inline-link">FAS8300 および FAS8700 の設置とセットアップの手順</block>
-  <block id="0f6585f4d22c37462401058292d5968a" category="paragraph"><block ref="0f6585f4d22c37462401058292d5968a" category="inline-link-rx"></block></block>
   <block id="9af1a70147e4372628e3cff0c1a8a31c" category="list-text">スキャンでエラーが報告されなかった場合は、メニューから [Reboot] を選択してシステムを再起動します。</block>
   <block id="05da715fdd840e7fc27dd764386018bc" category="doc">キャッシングモジュール FAS8300 と FAS8700 を交換します</block>
   <block id="d457ea14ed8ca14254ad1d75e29dce09" category="list-text">キャッシングモジュールのデータを消去します。「 system controller flash-cache secure-erase run -node node_name -device-id_device_id_device_id_</block>
@@ -2972,7 +2965,6 @@
   <block id="17268c6ef2838628d8d6888cfbe7b25b" category="paragraph">ギブバックを実行します。「 storage failover giveback -ofnode replacement_node_name _ ` * 注： * 自動ギブバックを無効にした場合は、 storage failover modify コマンドを使用して再度有効にします。</block>
   <block id="1af1fe949907061171a34fcc37aae4b2" category="paragraph">次の手順に進みます。対処は不要です。</block>
   <block id="e66322388322d8b74707e920c5738c23" category="doc">ビデオ - AFF C190</block>
-  <block id="0e976cfcc1b2e9eac14c2a85a2af912b" category="inline-link">AFF C190 システムの設置とセットアップの手順</block>
   <block id="b351b18aabb1167eb5b0851a7dfde759" category="doc">電源装置と AFF C190 を交換します</block>
   <block id="48cb3ada49a99389f0b8a03abf466ec8" category="summary">シャーシの HA 状態を確認し、システムレベルの診断を実行する必要があります。</block>
   <block id="a9c0a6c57639677722b2d4d4893acd60" category="section-title">手順 1 ：シャーシの HA 状態を確認して設定します</block>
@@ -3647,9 +3639,7 @@
   <block id="a7d25da9721276bf3e6000f3e10e8dc2" category="doc">ビデオの手順 - AFF A700 と FAS9000</block>
   <block id="272ee5e46e5ef6e3dc91121b76104026" category="doc">クイック手順 - AFF A700 および FAS9000</block>
   <block id="e03aee19ca3d6bfae73287d53384458b" category="inline-link">AFF A700 のセットアップガイド</block>
-  <block id="2a451873dac0e974133609a3ebd4bfa2" category="paragraph"><block ref="2a451873dac0e974133609a3ebd4bfa2" category="inline-link-rx"></block></block>
   <block id="123ef787b4689ac71f6faa1ecdb5c6c4" category="inline-link">FAS9000 の設置とセットアップの手順</block>
-  <block id="c764ea98e97a23ddf4166615b9e79a95" category="paragraph"><block ref="c764ea98e97a23ddf4166615b9e79a95" category="inline-link-rx"></block></block>
   <block id="b513a705f9d6390668dbb9abbba03311" category="doc">電源装置を交換します - AFF A700 および FAS9000</block>
   <block id="3d5375a17f55c7bdf08ca9af8aca2b83" category="list-text">電源装置のハンドルにあるオレンジ色のボタンを押したまま、電源装置をシャーシから引き出します。</block>
   <block id="71cd574cf82c03ecc2bf9c3d37e621d3" category="image-alt">DRW 9000 取り付け PSU モジュールを取り外します</block>
@@ -4007,7 +3997,6 @@
   <block id="e3d77d25c42b5b22d3782666486eb37f" category="doc">必要に応じて、 OKM 、 NSE 、 NVE をリストアします - AFF A300</block>
   <block id="e63d72ed0cd02fd6dc373efe52370adf" category="doc">設置とセットアップ PDF ポスター - AFF A300</block>
   <block id="26fa42b1e179247a86e500fd0bdc576c" category="inline-link-macro">AFF A300 のセットアップガイド</block>
-  <block id="de38759ef2dc6f4060b3cdf31f980e53" category="paragraph"><block ref="de38759ef2dc6f4060b3cdf31f980e53" category="inline-link-macro-rx"></block></block>
   <block id="6a9185c32ed25a745ad5a6b2fb9c702e" category="doc">システム構成をリストアおよび検証する - AFF A300</block>
   <block id="e90917eb1ade74fea4468ecec1b0dfd3" category="doc">ブートメディアを交換してください - AFF A300</block>
   <block id="31681f3abbed1ceeaf397023a488e2e2" category="section-title">手順 2 ：ブートメディアを交換する - AFF A300</block>
@@ -4033,7 +4022,6 @@
   <block id="a23c69960d3b280b58087226f261d0e1" category="doc">リカバリイメージ AFF A300 をブートします</block>
   <block id="6abcd38b98db86440d4e33f853945773" category="doc">システムのリストア後の処理 - FAS2600</block>
   <block id="f8775be935fb9d9effeb8c290b2531ef" category="doc">設置とセットアップ PDF ポスター - FAS2600</block>
-  <block id="cdc94270d32a037fc80536b1ce6a1948" category="inline-link-macro">AFF FAS2600 のセットアップガイド</block>
   <block id="9d74ba2bcb476d63733debafcde443ea" category="doc">DIMM-FAS2600 を交換します</block>
   <block id="c217f888de7cccc4e5f27065cb754354" category="inline-link-macro">AFF FAS2600 DIMM の交換ビデオ</block>
   <block id="cc0229491324372575d8e9833b910f02" category="list-text">NVMEM LED を再度確認します。</block>
@@ -4099,8 +4087,6 @@
   <block id="b5625ff9a6be11130311547598e19f4d" category="list-text">コントローラモジュールの背面にあるエアダクトを閉じ、 PCIe カードにカバーを再度取り付けていない場合は、</block>
   <block id="c694147ee40e260d30d4121d2213ee14" category="doc">ビデオ - AFF A320</block>
   <block id="3e3ba2d775216becefab028bffec753a" category="doc">クイックガイド - AFF A320</block>
-  <block id="dec6a1059fef7846f11606837d66ab54" category="inline-link">AFF A320 システムの設置とセットアップの手順</block>
-  <block id="6b59b1ed1da90d67a9669493c83f5dbe" category="paragraph"><block ref="6b59b1ed1da90d67a9669493c83f5dbe" category="inline-link-rx"></block></block>
   <block id="8041c469e6d9bb1d2588be103ea09ab6" category="doc">NVDIMM バッテリを交換します - AFF A320</block>
   <block id="8b9cda3c71cd6650aa009c7fadfc8b01" category="image-alt">DRW A320 コントローラケーブルプラグアニメーション GIF</block>
   <block id="7a7bd9d285c26c52e7363905c161c15e" category="image-alt">DRW A320 nvsbat アニメーション GIF を移動します</block>
@@ -5699,7 +5685,6 @@
   <block id="b0e69a1b113b20966641e48d3d36e788" category="doc">クイックステップ - AFF A800</block>
   <block id="91a6324d4b829f5094febe4585477532" category="paragraph">システムが MetroCluster IP 構成の場合は、を参照してください<block ref="5cf80fcf55f6ce2ad8515082eb643f93" category="inline-link-rx"></block> 手順</block>
   <block id="86f44362d6c66d2da3785180e12a0bd3" category="doc">クイックステップ - AFF A250</block>
-  <block id="812ead2c74df2f4cc3f4360dde12caf0" category="list-text">英語<block ref="26c0c434f792bc3a07fd368408578c89" category="inline-link-rx"></block></block>
   <block id="b6f7b04f44a105e63a953d8fbcf4fc54" category="list-text">日本語<block ref="cf50f5c8ace58e0f860ef43dfc5fe5aa" category="inline-link-rx"></block></block>
   <block id="f7e356c673218d549865ad38a211dfb2" category="list-text">中国語：<block ref="380dfc11004fa7aa9af7b73b57d7721f" category="inline-link-rx"></block></block>
   <block id="aa180b05de0eee653f89c2d190680947" category="summary">ここでは、 AFF A250 システムのインストール手順について詳しく説明します。</block>
@@ -5709,10 +5694,8 @@
   <block id="bee4c56b42643842f4964906e7825545" category="summary">このセクションでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。</block>
   <block id="a376b44668bb35ec353a3b762ae375c6" category="doc">クイックステップ - FAS500f</block>
   <block id="7d9036d60bbca8f733402060d735f7ba" category="paragraph">このセクションでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。</block>
-  <block id="401703f1a6e6c4174ecfa75cf476aeec" category="list-text">英語<block ref="3b271abd5f4b9b54a3379e0450431921" category="inline-link-rx"></block></block>
   <block id="c98535a3efcc3902c442def855aa8fcd" category="list-text">日本語<block ref="74a4002c724f044d7e6834f3506cd16d" category="inline-link-rx"></block></block>
   <block id="c9d9e9c98bea821ee3130955cb98a54c" category="list-text">中国語：<block ref="d495a553b62dffb464c7810acf543358" category="inline-link-rx"></block></block>
-  <block id="3507cf5c7dded65ffdd5ade0f2366605" category="list-text"><block ref="3507cf5c7dded65ffdd5ade0f2366605" category="inline-link-macro-rx"></block></block>
   <block id="839439b189cfb3960dee96d5900594f7" category="list-text">片側をまっすぐに伸ばしたペーパークリップ、または細い先端のボールペンが必要です。</block>
   <block id="6de535d32c5294ec13b8cdaefbdfcd96" category="list-text">最新のファームウェアバージョンでない新しいドライブのドライブファームウェアは自動的に（無停止で）更新されます。</block>
   <block id="700841889ff35bf8741ce3731cbe8278" category="list-text">ホットアドするシェルフの数に対応できる十分な数の RoCE 対応ポートが HA ペアに必要です。</block>
@@ -5780,7 +5763,6 @@
   <block id="e6db50cefb25b43305353a6a987f05e3" category="list-text">初期設定が完了したら、に進みます <block ref="9c0a34143b47aa65068059820284fe99" category="inline-link-macro-rx"></block> ONTAP での追加機能の設定については、ページを参照してください。</block>
   <block id="abda447c368c0080cdf2af6a77ea3d22" category="list-text">で収集したデータを使用してシステムを設定します <block ref="571ad76602d16a750ecd1119ab38063c" category="inline-link-macro-rx"></block>。</block>
   <block id="3125087114c2490b7c6800800a39a990" category="summary">このセクションでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。</block>
-  <block id="bee540306d8719a7dd6a93184e6e4d86" category="paragraph">このセクションでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。を使用します <block ref="bae4385e599409430f11ef78df732c82" category="inline-link-macro-rx"></block> ネットアップシステムのインストールに精通している場合。</block>
   <block id="2721d15a1712238198ba49214a74054c" category="paragraph">「 image_xxx.tgz 」ファイルを格納できる適切な容量のストレージを搭載した、 FAT32 にフォーマットされた USB フラッシュドライブが必要です。</block>
   <block id="f5275334d8eb3b5cf9ea9368de40cedc" category="list-text">モードとキー ID の情報を含むドライブの詳細がコマンド出力に表示される場合は、 NSE が設定されているので、 NSE の設定を確認する必要があります。</block>
   <block id="b1dfba2b33907e87a5254267b34a3e32" category="list-text">「キーマネージャ」タイプに「 onboard 」と表示されていることを確認し、 OKM 情報を手動でバックアップします。</block>
@@ -5799,14 +5781,12 @@
   <block id="b52ec9545c2eb85c1596e99bc30ce43d" category="list-text">パートナーの準備が完了していないためにコマンドが失敗した場合は、 NVMEM が同期されるまで 5 分待ちます。</block>
   <block id="17b949ad3f0aee5e0f32cb49f51f6f3d" category="list-text">ONTAP 9.6 以降を実行している場合：</block>
   <block id="e85e66f99bf70a0cd52615d346aa4f9f" category="paragraph"><block ref="e85e66f99bf70a0cd52615d346aa4f9f" category="inline-link-macro-rx"></block></block>
-  <block id="352c7fcaa0834bc994a6cf4d8953c111" category="paragraph">PDF 版セットアップガイドを使用して、新しいシステムを設置してセットアップできます。。 <block ref="5dc38b4c94702b8e594dd848db91e158" category="inline-link-macro-rx"></block> ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
   <block id="e3d9e54e0daad2e60e36e8b370fec883" category="paragraph"><block ref="e3d9e54e0daad2e60e36e8b370fec883" category="inline-link-macro-rx"></block></block>
   <block id="083781fc87756a032121b806b4d18a92" category="paragraph"><block ref="083781fc87756a032121b806b4d18a92" category="inline-link-macro-rx"></block></block>
   <block id="b95a2b769ddc69403557ab79e1942007" category="paragraph"><block ref="b95a2b769ddc69403557ab79e1942007" category="inline-link-rx"></block></block>
   <block id="5f3f6cd3a4d5edc50129f46b603aa9c2" category="paragraph"><block ref="5f3f6cd3a4d5edc50129f46b603aa9c2" category="inline-link-macro-rx"></block></block>
   <block id="80fbd508bddeffc33092c60be0d4f6b0" category="paragraph">コントローラ A をシェルフにケーブル接続します。 <block ref="5a7e82fa4b93fb16c2c5bc44a8522f5a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e477637685baafe9bbd353f71ef51283" category="paragraph">システムがブートを開始します。初回のブートには最大 8 分かかる場合があります。</block>
-  <block id="6c128b420b40978f9694a86a2a019225" category="paragraph">このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。を使用します <block ref="544c1dcefcbf1c60081e6f3087a7138d" category="inline-link-macro-rx"></block> ネットアップシステムのインストールに精通している場合。</block>
   <block id="fe3be7b129e2b9c74abd26381eea72bb" category="cell">タブをバッテリケースからゆっくりと引き出します。* 注意： * 積極的に離れて引き出すと、タブが外れてしまう可能性があります。</block>
   <block id="d61a84f0b033dd225ff9a1af9b0f08a5" category="paragraph">バッテリを持ち上げます。* 注： * バッテリの極の向きをメモしておいてください。</block>
   <block id="78929efae941c9a4e2fc6993c4c10c4e" category="paragraph">「 image_xxx.tgz 」ファイルを格納できる適切な容量のストレージを搭載した MBR/FAT32 にフォーマットされた USB フラッシュドライブが必要です。</block>
@@ -7323,8 +7303,6 @@
   <block id="6cff7e5493433d24015d6ef5a8566b38" category="sidebar">AFF A900シャーシ</block>
   <block id="7d1c80f318f9bf16deac2495abe88a7e" category="sidebar">AFF A900コントローラモジュール</block>
   <block id="2014d8b66b0e05fba286f79c1c8aac17" category="admonition">自動ギブバックを無効にしますか?_と表示されたら'y'を入力します</block>
-  <block id="f80b45f73e8b653fc036922e438eff9e" category="inline-link-macro">FAS8200の設置とセットアップの手順</block>
-  <block id="ca2e2999fd16933cd908b9c9e44161d0" category="paragraph">PDF 版セットアップガイドを使用して、新しいシステムを設置してセットアップできます。。 <block ref="666c6c27ec3878a6b3f3c3cb24d10587" category="inline-link-macro-rx"></block> ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
   <block id="0e1569786cd5c99315511da0d9e3f2aa" category="admonition">システムが起動メニューで停止した場合は、「ノードの再起動」のオプションを選択し、プロンプトが表示されたらyと入力してから、「Ctrl+C」キーを押してLOADERで起動します。</block>
   <block id="6f0e65a313ceda26ae3094641da52d2e" category="paragraph"><block ref="6f0e65a313ceda26ae3094641da52d2e" category="inline-link-rx"></block></block>
   <block id="e789db57588c567cf162bf2f8ec8b65e" category="paragraph">FAS2600シリーズ、AFF A200、FAS2700シリーズ、AFF A220など、内蔵ストレージを搭載したプラットフォームがある場合 その後、次のコマンドを使用します（プラットフォームごとに固有のワークシートを使用）。</block>
@@ -7352,4 +7330,25 @@
   <block id="c51e6cbbe594b20461edba0d83817fce" category="list-text">BMCをリブートし、ノードをリブートします。</block>
   <block id="e727b00944f81e1d0a95c12886ac4641" category="inline-link-macro">Archive サービスの略</block>
   <block id="97a6415da8202d0321d49b92f019e7b1" category="paragraph">これらのリンクから、 AFF および FAS の他のプラットフォームのドキュメントを参照できます。ハードウェアサポートが終了したAFF システムとFAS システムのドキュメントは、でお客様に提供しています <block ref="5e4606a12c7b193a6ccb23ff349575d7" category="inline-link-macro-rx"></block>。</block>
+  <block id="1c91d351b95f21de02a1d9bc700d73d0" category="list-text"><block ref="1c91d351b95f21de02a1d9bc700d73d0" category="inline-link-macro-rx"></block></block>
+  <block id="f6bbb48a9b41928e229484fe63e71f8c" category="list-text">英語 <block ref="3584c2c323ff7942e23aca437704f9d5" category="inline-link-macro-rx"></block></block>
+  <block id="96f14ebe376369fa093d83ad924d667a" category="paragraph">DIMMを交換するには、エアダクトの上のDIMMマップラベルを使用してコントローラモジュール内でDIMMの場所を確認してから、特定の手順に従って交換する必要があります。</block>
+  <block id="617bafb92e72c64d9d65b60de9aea456" category="paragraph"><block ref="617bafb92e72c64d9d65b60de9aea456" category="inline-link-macro-rx"></block></block>
+  <block id="345a2a62ce004a5b297819af054c9777" category="inline-link-macro">AFF FAS8200 のセットアップガイド</block>
+  <block id="981a3078ce60e42311749c48845ae935" category="paragraph">PDF 版セットアップガイドを使用して、新しいシステムを設置してセットアップできます。。 <block ref="2b72a1d770496dfb89a7b96d77b8dcc0" category="inline-link-macro-rx"></block> ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
+  <block id="66baa375eeb4eeafaa0788f1450b293e" category="paragraph"><block ref="66baa375eeb4eeafaa0788f1450b293e" category="inline-link-macro-rx"></block></block>
+  <block id="cae56c0e35640281e9970acbddf74c50" category="paragraph"><block ref="cae56c0e35640281e9970acbddf74c50" category="inline-link-macro-rx"></block></block>
+  <block id="ed65510b4998b0c361d8eb350c655bf1" category="paragraph"><block ref="ed65510b4998b0c361d8eb350c655bf1" category="inline-link-macro-rx"></block></block>
+  <block id="4707af501257324eebcc0182dcfed521" category="inline-link-macro">FAS2600の設置とセットアップの手順</block>
+  <block id="e968d995195c5befd8e63072a29d7a87" category="paragraph">PDF 版セットアップガイドを使用して、新しいシステムを設置してセットアップできます。。 <block ref="7bcaada228bfef0bb9707c307be17530" category="inline-link-macro-rx"></block> ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
+  <block id="b32a57c06a6b6572f324185a0b81d90c" category="paragraph"><block ref="b32a57c06a6b6572f324185a0b81d90c" category="inline-link-macro-rx"></block></block>
+  <block id="0acd1668055811ba455a173f5b2007e1" category="inline-link-macro">AFF C190の設置とセットアップの手順</block>
+  <block id="78986e3198e620c9a4397bd93b083e68" category="paragraph">このセクションでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。を使用します <block ref="3eed3afb9edbfbab44cea22e18033b51" category="inline-link-macro-rx"></block> ネットアップシステムのインストールに精通している場合。</block>
+  <block id="0112dd8e71f10fe869246a29836663d8" category="inline-link-macro">AFF A320の設置とセットアップの手順</block>
+  <block id="70a2087c6fb473305a0e232844fd565f" category="paragraph"><block ref="70a2087c6fb473305a0e232844fd565f" category="inline-link-macro-rx"></block></block>
+  <block id="8db94eb390aaecb9128a260b00e455e8" category="paragraph"><block ref="8db94eb390aaecb9128a260b00e455e8" category="inline-link-macro-rx"></block></block>
+  <block id="474b4646ba15883494cbfd9239d508ad" category="list-text">英語 <block ref="053faba884b41a351b336aa44c8075ff" category="inline-link-macro-rx"></block></block>
+  <block id="42e8099baf01da8bcc3b8362f29f317c" category="inline-link-macro">AFF A800の設置とセットアップの手順</block>
+  <block id="08b9fb46f5aced4cd732b3ae62e9764f" category="paragraph">このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。を使用します <block ref="0cdb4981396afec17d02c8ce5d1b8e06" category="inline-link-macro-rx"></block> ネットアップシステムのインストールに精通している場合。</block>
+  <block id="3968cc9d2fa7f59d81661adbaf12cfac" category="paragraph"><block ref="3968cc9d2fa7f59d81661adbaf12cfac" category="inline-link-macro-rx"></block></block>
 </blocks>
