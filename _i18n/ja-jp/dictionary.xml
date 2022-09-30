@@ -1414,7 +1414,6 @@
   <block id="3e39936f936e4834cc06a63b1868d4c5" category="summary">フラッシュの有効期間がほぼ終了していること、または識別された NVDIMM が全般的に正常でないことがシステムで登録された場合は、コントローラモジュールの NVDIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。</block>
   <block id="6873688fd24ce06352b0f67301567306" category="doc">NVDIMM を交換します - AFF A400</block>
   <block id="00a491f6ddc82f254e9e3fa6711c8a44" category="section-title">手順 3 ： NVDIMM を交換します</block>
-  <block id="de9c147054e3fb33c301b1846d2c2c80" category="paragraph">NVDIMM を交換するには、エアダクトの上にある FRU マップを使用してコントローラモジュール内で NVDIMM の場所を確認するか、スロット 1 ライザーの上にある FRU マップを使用して警告 LED の場所を確認する必要があります。</block>
   <block id="702c236818660597292fd2708b25d1d7" category="list-text">NVDIMM の内容は暗号化されていますが、交換する前に NVDIMM の内容を消去することを推奨します。詳細については、を参照してください<block ref="89de74d6a86df9137b0ef3fb03a43036" category="inline-link-rx"></block> からネットアップサポートサイトにアクセスします。</block>
   <block id="47cd398c5a2374103dbd8377631bc325" category="list-text">エアダクトを開き、コントローラモジュールのスロット 11 で NVDIMM の場所を確認します。</block>
   <block id="dbbfb501b0cd6e084bc9a536cb1e4772" category="admonition">NVDIMM の外観はシステム DIMM とは大きく異なります。</block>
@@ -2006,7 +2005,6 @@
   <block id="9757dfef94af2886048fc48fd0f2508e" category="doc">AFF A800 システムのドキュメント</block>
   <block id="161d11f75b68457ea33ac52c79b01c05" category="doc">NVDIMM を交換します - AFF A800</block>
   <block id="7ccf04d2fd9b25a78287b4db5e34e7d6" category="paragraph">NVDIMM を交換するには、エアダクトの上の NVDIMM マップラベルまたは NVDIMM の横の LED でコントローラモジュール内の NVDIMM の場所を確認してから、特定の手順に従って交換します。</block>
-  <block id="bca504eb60c2c7a5f3511f22eeb34338" category="admonition">システムを停止すると、コンテンツのデステージ中に NVDIMM の LED が点滅します。デステージが完了すると LED は消灯します。</block>
   <block id="2c0856fef0927def0bd154513fb326fb" category="list-text">NVDIMM を取り外しまたは移動する場合は、ライザーの固定ラッチを解除してから、該当するライザーを取り外します。</block>
   <block id="e9d13b816c74953ab05ce3d6d2486166" category="image-alt">DRW A800 NVDIMM の交換</block>
   <block id="f8cdcc9997405437e79f5d57e18498f5" category="paragraph">ライザー 2 と NVDIMM 11</block>
@@ -2861,7 +2859,6 @@
   <block id="70edce28424200208b28981e9b221707" category="list-text">キャッシングモジュールの内容は暗号化されていますが、交換する前にモジュールの内容を消去することを推奨します。詳細については、を参照してください<block ref="89de74d6a86df9137b0ef3fb03a43036" category="inline-link-rx"></block> ネットアップサポートサイトにお使いのシステム用の情報を入力します。</block>
   <block id="540a3a140ba4c7da7729d8bbfbe06861" category="image-alt">DRW 8300 FlashCache を交換します</block>
   <block id="b08a9c5bee019bb00ec5f4f00b59819e" category="list-text">コントローラモジュールの FRU マップを使用して、障害が発生したキャッシングモジュールの場所を確認して取り外します。</block>
-  <block id="ea38ef5f5282f326e6e880ef9f6db82b" category="paragraph">構成によっては、コントローラモジュールに 0 、 1 、または 2 つのキャッシングモジュールが含まれる場合があります。障害が発生したキャッシングモジュールの LED は点灯しています。</block>
   <block id="58a5256eec02e1fef80c02b3deffc3f5" category="list-text">青色のリリースタブを押します。</block>
   <block id="3b9dfc19fe13a88ce4bf85240df578ae" category="paragraph">キャッシングモジュールのリリースタブ側の端が上がります。</block>
   <block id="03ca5be2075218c7bb1546c7700fbc6a" category="list-text">キャッシングモジュールを上に回転させ、ソケットから引き出します。</block>
@@ -3869,7 +3866,6 @@
   <block id="4336c94d0986062a5e7d1d117b05fa50" category="section-title">手順 3 ： NVRAM DIMM を交換します</block>
   <block id="5aa839d702c6b821077d7a98ae849b99" category="paragraph">NVRAM モジュールの NVRAM DIMM を交換するには、 NVRAM モジュールを取り外し、モジュールを開き、ターゲット DIMM を交換する必要があります。</block>
   <block id="2f38ba189ae414ae66180b4a58eb6b22" category="list-text">NVRAM モジュール内で交換する DIMM の場所を確認し、 DIMM の固定ツメを押し下げ、ソケットから持ち上げて取り外します。</block>
-  <block id="f08fa3f1d8bff6dfbc18be0fdca6444e" category="paragraph">各 DIMM の横には LED があり、障害が発生すると点滅します。</block>
   <block id="418a022f56c1e24ab49e10afac569c94" category="list-text">DIMM をソケットに合わせ、固定ツメが所定の位置に収まるまで DIMM をそっとソケットに押し込み、交換用 DIMM を取り付けます。</block>
   <block id="680d8cf9003e2f0c6c16768d83979722" category="section-title">手順 5 ：ディスクを再割り当てする</block>
   <block id="f48da66fac9628892734da282b687412" category="list-text">交換用ノードがメンテナンス・モード（プロンプトが表示されている）の場合は ' メンテナンス・モードを終了し ' LOADER プロンプト： halt を表示します</block>
@@ -7351,4 +7347,9 @@
   <block id="42e8099baf01da8bcc3b8362f29f317c" category="inline-link-macro">AFF A800の設置とセットアップの手順</block>
   <block id="08b9fb46f5aced4cd732b3ae62e9764f" category="paragraph">このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。を使用します <block ref="0cdb4981396afec17d02c8ce5d1b8e06" category="inline-link-macro-rx"></block> ネットアップシステムのインストールに精通している場合。</block>
   <block id="3968cc9d2fa7f59d81661adbaf12cfac" category="paragraph"><block ref="3968cc9d2fa7f59d81661adbaf12cfac" category="inline-link-macro-rx"></block></block>
+  <block id="b72bee50d170af9037bebf46f5eb89d7" category="paragraph">NVDIMMを交換するには、エアダクトの上のFRUマップまたはスロット1ライザーの上のFRUマップを使用して、コントローラモジュール内でNVDIMMの場所を確認する必要があります。</block>
+  <block id="ad7f5333de2f76cfccc7ea7fa134c8a7" category="paragraph">システムDIMMを交換するには、関連するエラーメッセージで対象のDIMMを特定し、エアダクトのFRUマップを使用してターゲットDIMMの場所を確認し、DIMMを交換します。</block>
+  <block id="2ceb6141859316070c657f406135cd1c" category="paragraph">構成によっては、コントローラモジュールに 0 、 1 、または 2 つのキャッシングモジュールが含まれる場合があります。コントローラモジュール内のFRUマップを使用すると、キャッシングモジュールの場所を簡単に見つけることができます。</block>
+  <block id="edae17e7394c8face12fc5d74d33aa9b" category="paragraph">NVDIMMを交換するには、エアダクトの上にあるFRUマップを使用してコントローラモジュール内でスロット1ライザーの上にあるFRUマップの場所を確認する必要があります。</block>
+  <block id="ca7c99126c90b6d4e929e35a12f23c35" category="paragraph">NVDIMMを交換するには、エアダクトの上にあるNVDIMMマップラベルを使用してコントローラモジュール内でNVDIMMの場所を確認してから、特定の手順に従って交換する必要があります。</block>
 </blocks>
