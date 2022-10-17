@@ -22,13 +22,15 @@ summary: 電源がオンになっている NS224 ドライブシェルフおよ�
 
 * * ベストプラクティス： FRU コンポーネントを交換する前に、お使いのシステムの NVMe シェルフモジュール（ NSM ）ファームウェアとドライブファームウェアを最新バージョンにしておくことを推奨します。
 +
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ネットアップのダウンロード：ディスクシェルフファームウェア"^]
+
++
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ネットアップのダウンロード：ディスクドライブファームウェア"^]
+
++
 [NOTE]
 ====
 ファームウェアをシェルフおよびそのコンポーネントに対応しないバージョンにリバートしないでください。
-
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ネットアップのダウンロード：ディスクシェルフファームウェア"^]
-
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ネットアップのダウンロード：ディスクドライブファームウェア"^]
 
 ====
 * 影響を受けるシェルフの物理的な位置を特定するために、必要に応じてシェルフのロケーション（青色の） LED を点灯できます。「 storage shelf location -led modify -shelf-name _shelf_name _led-status on

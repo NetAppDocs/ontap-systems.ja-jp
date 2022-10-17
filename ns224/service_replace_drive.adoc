@@ -46,13 +46,15 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/downloa
 
 * * ベストプラクティス： FRU コンポーネントを交換する前に、お使いのシステムの NVMe シェルフモジュール（ NSM ）ファームウェアとドライブファームウェアを最新バージョンにしておくことを推奨します。
 +
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ネットアップのダウンロード：ディスクシェルフファームウェア"^]
+
++
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ネットアップのダウンロード：ディスクドライブファームウェア"^]
+
++
 [NOTE]
 ====
 ファームウェアをシェルフおよびそのコンポーネントに対応しないバージョンにリバートしないでください。
-
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ネットアップのダウンロード：ディスクシェルフファームウェア"^]
-
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ネットアップのダウンロード：ディスクドライブファームウェア"^]
 
 ====
 * 最新のファームウェアバージョンでない新しいドライブのドライブファームウェアは自動的に（無停止で）更新されます。
