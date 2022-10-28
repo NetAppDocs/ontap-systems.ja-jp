@@ -119,10 +119,7 @@ image::../media/drw_a320_controller_remove_animated_gif.png[DRW A320 コント�
 == 手順 3 ： NVDIMM を交換します
 
 [role="lead"]
-NVDIMM を交換するには、エアダクトの上の NVDIMM マップラベルまたは NVDIMM の横の LED でコントローラモジュール内の NVDIMM の場所を確認してから、特定の手順に従って交換します。
-
-
-NOTE: システムを停止すると、コンテンツのデステージ中に NVDIMM の LED が点滅します。デステージが完了すると LED は消灯します。
+NVDIMMを交換するには、エアダクトの上にあるNVDIMMマップラベルを使用してコントローラモジュール内でNVDIMMの場所を確認してから、特定の手順に従って交換する必要があります。
 
 image::../media/drw_a320_nvdimm_replace_animated_gif.png[DRW A320 NVDIMM はアニメーション GIF に代わるものです]
 

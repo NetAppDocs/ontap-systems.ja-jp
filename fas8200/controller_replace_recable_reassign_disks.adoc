@@ -65,15 +65,24 @@ node2             node1             -            Waiting for giveback (HA mailbo
 . 正常なコントローラから、コアダンプがすべて保存されたことを確認します。
 +
 .. advanced 権限レベルに切り替えます。「 set -privilege advanced 」
+
+
+. ストレージシステムでストレージまたはボリュームの暗号化が設定されている場合は、オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順に従ってストレージまたはボリューム暗号化機能をリストアする必要があります。
++
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"^]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"^]
 +
 advanced モードで続行するかどうかを確認するプロンプトが表示されたら、「 y 」と入力します。advanced モードのプロンプトが表示されます（ * > ）。
 
-.. コアダンプをすべて保存します。「 system node run -node _local-node-name_partner savecore 」
-.. 「 avecore 」コマンドが完了するのを待ってから、ギブバックを発行します。
++
+... コアダンプをすべて保存します。「 system node run -node _local-node-name_partner savecore 」
+... 「 avecore 」コマンドが完了するのを待ってから、ギブバックを発行します。
 +
 「 avecore 」コマンドの進行状況を監視するには、次のコマンドを入力します。「 system node run -node _local-node-name_partner savecore -s
 
-.. admin 権限レベルに戻ります。「 set -privilege admin 」
+... admin 権限レベルに戻ります。「 set -privilege admin 」
+
+
 
 
 . コントローラをギブバックします。

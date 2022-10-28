@@ -75,6 +75,12 @@ advanced モードで続行するかどうかを確認するプロンプトが�
 .. admin 権限レベルに戻ります。「 set -privilege admin 」
 
 
+. ストレージシステムでストレージまたはボリュームの暗号化が設定されている場合は、オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順に従ってストレージまたはボリューム暗号化機能をリストアする必要があります。
++
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"^]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"^]
+
+
 . コントローラをギブバックします。
 +
 .. 正常なコントローラから、交換したコントローラのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name _`

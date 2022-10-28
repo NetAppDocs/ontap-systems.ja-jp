@@ -49,23 +49,7 @@ NOTE: 必要な新しいライセンスキーが自動的に生成され、 E �
 
 
 
-== 手順 2 ：ストレージとボリュームの暗号化機能をリストアする
-
-ストレージまたはボリュームの暗号化を使用するように設定したストレージシステムのコントローラモジュールまたは NVRAM モジュールを交換したら、追加の手順を実行して、暗号化機能を中断させないようにする必要があります。ストレージまたはボリュームの暗号化が有効になっていないストレージシステムでは、このタスクを省略できます。
-
-.手順
-. の該当する手順を使用して、ストレージまたはボリュームの暗号化機能をリストアします https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["CLI での NetApp Encryption の概要"^]。
-. オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順を実行します。
-+
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"^]
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"^]
-
-
-
-
-
-
-== 手順 3 ： LIF を確認してシリアル番号を登録する
+== 手順2：LIFを確認してシリアル番号を登録する
 
 replacement _node を使用可能な状態に戻す前に、 LIF がホームポートにあることを確認し、 AutoSupport が有効になっている場合は _replacement _node のシリアル番号を登録して、自動ギブバックをリセットする必要があります。
 
@@ -85,7 +69,7 @@ replacement _node を使用可能な状態に戻す前に、 LIF がホームポ
 
 
 
-== 手順 4 （ MetroCluster のみ）： 2 ノード MetroCluster 構成でアグリゲートをスイッチバックする
+== 手順3：（MetroCluster のみ）：2ノードMetroCluster 構成でアグリゲートをスイッチバックする
 
 2 ノード MetroCluster 構成で FRU の交換が完了したら、 MetroCluster スイッチバック処理を実行できます。これにより構成が通常の動作状態に戻ります。また、障害が発生していたサイトの同期元 Storage Virtual Machine （ SVM ）がアクティブになり、ローカルディスクプールからデータを提供します。
 
@@ -143,6 +127,6 @@ Remote: cluster_A configured      		normal
 
 
 
-== 障害のあるパーツをネットアップに返却します
+== 手順 4 ：障害が発生したパーツをネットアップに返却する
 
 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。

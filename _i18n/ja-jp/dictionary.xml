@@ -75,7 +75,6 @@
   <block id="ded1f8eb21bf382d51471642d150b8d5" category="sidebar">ステージ 6 アップグレードを完了する</block>
   <block id="bdbf296139657929f989f110dccebbd3" category="sidebar">アグリゲートの再配置に失敗していないかどうか</block>
   <block id="97c16f2bd68041ac79ef06049407d0c7" category="list-text">メンテナンスモードを終了します。</block>
-  <block id="00bfced11707df12b7beabc9cb1854c6" category="list-text">admin 権限レベルに戻ります。</block>
   <block id="e4deab2919ae4ce97668d5271fe4fc29" category="summary">電源装置、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、装置ラックまたはシステムキャビネットから障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。</block>
   <block id="47e6ca7a31b3f3492d704b44dea3bc0e" category="section-title">手順 1 ：コントローラモジュールを取り外す</block>
   <block id="c488924be9cfde77f802e82e996e90e1" category="paragraph">シャーシを交換するには、古いシャーシからコントローラモジュールを取り外す必要があります。</block>
@@ -175,13 +174,11 @@
   <block id="11d90ad9838fdc1545ee368cd8943df9" category="list-text">必要に応じて、古いライセンスを削除します。</block>
   <block id="eb9892aa7a6ee6cfe6b30dad735d6d7a" category="list-text">使用されていないライセンスを確認してください : 「 license clean-up-unused -simulate 」</block>
   <block id="f77eef718a5ddb0006a44a75016370bf" category="list-text">リストが正しい場合は、未使用のライセンス「 license clean-up-unused 」を削除します</block>
-  <block id="ff3a1a304de699b15bd2a5a39798c5a8" category="section-title">手順 2 ：ストレージとボリュームの暗号化機能をリストアする</block>
   <block id="37b0fb827bbc179115abc1768c9c5f12" category="paragraph">ストレージまたはボリュームの暗号化を使用するように設定したストレージシステムのコントローラモジュールまたは NVRAM モジュールを交換したら、追加の手順を実行して、暗号化機能を中断させないようにする必要があります。ストレージまたはボリュームの暗号化が有効になっていないストレージシステムでは、このタスクを省略できます。</block>
   <block id="48c7c41b72e1d678923ce3571aa65b2d" category="list-title">ステップ</block>
   <block id="a2ae6c720a8a0fbf3918f44a33be6b30" category="inline-link">ONTAP 9 ネットアップ暗号化パワーガイド</block>
   <block id="ba8122bba290a3351611db1b66c99386" category="paragraph"><block ref="ba8122bba290a3351611db1b66c99386" category="inline-link-rx"></block></block>
   <block id="e68c8836280fba147b04a2b14b196600" category="paragraph">オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順を実行します。</block>
-  <block id="92f82264c734da3126796f6bfa718d0f" category="section-title">手順 3 ： LIF を確認してシリアル番号を登録する</block>
   <block id="556aba51608845a42e971c4c7b471837" category="paragraph">replacement _node を使用可能な状態に戻す前に、 LIF がホームポートにあることを確認し、 AutoSupport が有効になっている場合は _replacement _node のシリアル番号を登録して、自動ギブバックをリセットする必要があります。</block>
   <block id="462ec873925d8409f9ead354ff424e1b" category="list-text">論理インターフェイスがホームサーバとポートに報告されていることを確認します。「 network interface show -is-home false 」</block>
   <block id="8ea6b3a9b2a4529608397a2c8232b2e9" category="paragraph">いずれかの LIF が false と表示されている場合は、ホームポートにリバートします。「 network interface revert</block>
@@ -1205,7 +1202,6 @@
   <block id="f5016594b8e72f5a97ef9aa0ab2ce820" category="image-alt">DRW A400 コントローラの取り外し</block>
   <block id="1dfd8f0a690cafa9d3544e4817f68306" category="list-text">コントローラモジュールを安定した平らな場所に置きます。</block>
   <block id="5beb49709902306e7264c7704117a827" category="section-title">手順 3 ：システム DIMM を交換します</block>
-  <block id="3848c7730c285ede150ddd598894cf0b" category="paragraph">システム DIMM を交換するには、関連するエラーメッセージで対象の DIMM を特定し、エアダクトの FRU マップまたはマザーボードの点灯している LED から対象の DIMM の場所を確認し、 DIMM を交換します。</block>
   <block id="4cdb88b773dbbe796646d321ccc17d79" category="admonition">このアニメーションでは、 DIMM のないソケットには空きスロットが示されています。これらの空のソケットには何も挿入されていません。</block>
   <block id="dddaeedd9556d05cf4df1989bab97eb0" category="image-alt">DRW A400 NVDIMM DIMM の交換</block>
   <block id="ef3d6a7034bbb6a1a5a3adc4e54f05da" category="paragraph">DIMM はソケット 2 、 4 、 13 、 15 にあります。NVDIMM はスロット 11 にあります。</block>
@@ -1512,7 +1508,6 @@
   <block id="c7f2defea9cd5b73fda5cc58aadedfcc" category="admonition">初回のブートには最大 8 分かかる場合があります。</block>
   <block id="ec15ae659445c6b6db2f5a726a8eac48" category="admonition">アドレスの形式は、 +https://x.x.x.x.+ です</block>
   <block id="b9068760536b874bf77dc015fb91c3ae" category="doc">システムのリストア後の処理 - FAS8200</block>
-  <block id="332c846459ecae57b885b30c41482384" category="section-title">手順 3 ： LIF を確認してシリアル番号を登録する</block>
   <block id="0336dcab6aaf6e0e6b3e580f2e159ad5" category="doc">設置とセットアップ PDF ポスター - FAS8200</block>
   <block id="10bc7f8044338127350055a62aad1a90" category="doc">DIMM-FAS8200 を交換します</block>
   <block id="de2a859c590dc7d6eabe3126531d15fe" category="section-title">手順 2 ：コントローラモジュールを開く</block>
@@ -2001,7 +1996,6 @@
   <block id="515a9278fa676806936af5610703610f" category="list-text">ライザー 2 または 3 の場合は、サイドパネルを閉じます。</block>
   <block id="9757dfef94af2886048fc48fd0f2508e" category="doc">AFF A800 システムのドキュメント</block>
   <block id="161d11f75b68457ea33ac52c79b01c05" category="doc">NVDIMM を交換します - AFF A800</block>
-  <block id="7ccf04d2fd9b25a78287b4db5e34e7d6" category="paragraph">NVDIMM を交換するには、エアダクトの上の NVDIMM マップラベルまたは NVDIMM の横の LED でコントローラモジュール内の NVDIMM の場所を確認してから、特定の手順に従って交換します。</block>
   <block id="2c0856fef0927def0bd154513fb326fb" category="list-text">NVDIMM を取り外しまたは移動する場合は、ライザーの固定ラッチを解除してから、該当するライザーを取り外します。</block>
   <block id="e9d13b816c74953ab05ce3d6d2486166" category="image-alt">DRW A800 NVDIMM の交換</block>
   <block id="f8cdcc9997405437e79f5d57e18498f5" category="paragraph">ライザー 2 と NVDIMM 11</block>
@@ -2944,8 +2938,6 @@
   <block id="277ba6b7a127ec6b40495a0cd012279f" category="paragraph">ポート e4A から e4d を 10GbE ホストネットワークスイッチにケーブル接続します。</block>
   <block id="eacfd9b01b607ec0ff14339768945edd" category="image-alt">DRW affa250 25GbE ホストのケーブル接続</block>
   <block id="13bebe2596a4000b53c1d171e85d4669" category="doc">システムのリストアの完了 - AFF C190</block>
-  <block id="90e0a79f0dc5582ba3bb7a9b28936d5c" category="section-title">手順 2 ：ストレージとボリュームの暗号化機能をリストアする</block>
-  <block id="0072b0fd9d430209e4485c4040bcaa19" category="section-title">手順 3 ： LIF を確認してシリアル番号を登録する</block>
   <block id="6ca5f95bd86b688d89de7f54f3cbcd42" category="list-text"><block ref="6ca5f95bd86b688d89de7f54f3cbcd42" category="inline-link-macro-rx"></block></block>
   <block id="3e9eeff790689f3fae33fe0fe1362b23" category="list-text"><block ref="3e9eeff790689f3fae33fe0fe1362b23" category="inline-link-macro-rx"></block></block>
   <block id="a3e79fff93cae393b9fcd5d08d264b15" category="list-text"><block ref="a3e79fff93cae393b9fcd5d08d264b15" category="inline-link-macro-rx"></block></block>
@@ -3044,16 +3036,8 @@
   <block id="2aa8970a7aa05c71d0c35e524a059d35" category="list-text">コントローラモジュールを再設置します。コントローラモジュールは、シャーシに完全に装着されるとすぐにブートを開始します。</block>
   <block id="d9a7a09d2734ecc763c0c5a8586a61a3" category="doc">システムにケーブルを再接続し、ディスクを再割り当てします。 AFF C190</block>
   <block id="b279b6600d5af224d26ab7bab80082c7" category="section-title">手順 2 ： HA システムでシステム ID の変更を確認する</block>
-  <block id="109773e48c8731216edae51d1686c8bc" category="list-text">advanced 権限レベルに切り替えます。</block>
   <block id="e510b81f84ff95d9355a3f8777aac54e" category="paragraph">advanced モードで続行するかどうかを尋ねられたら、「 * Y * 」と入力します。advanced モードのプロンプトが表示されます（ * &gt; ）。</block>
-  <block id="cd398a68db8f00186aae955968cc06d7" category="list-text">コアダンプをすべて保存します。</block>
-  <block id="5bedc6fbcb54f704df8ebd472d318d98" category="paragraph">*system node run -node _local-node-name_partner savecore *</block>
-  <block id="5ba88971aec930df5e482b401ee5bda7" category="paragraph">次のコマンドを入力すると、 savecore コマンドの進行状況を監視できます。</block>
-  <block id="0a6496658205fc38ba1b1f3e184070ba" category="paragraph">*system node run -node _local-node-name_partner savecore -s *</block>
-  <block id="84a63e5c67c16845df7acbd3cae860da" category="paragraph">`* storage failover giveback -ofnode replacement_node_name _*`</block>
   <block id="393be3b3a8c5c898411ba572d160869b" category="paragraph">システム ID が一致しないためにシステム ID を上書きするように求められた場合は '*y*' と入力する必要があります</block>
-  <block id="e3de43ab4017cb33908b0ff634023d7d" category="paragraph">「 * vol show -node _node-name _ * 」を参照してください</block>
-  <block id="73b172a422efac317883ee1a518015e1" category="paragraph">`* storage failover modify -node _replacement-node-name __ onreboot true *`</block>
   <block id="c08618c5a0ce81948b9cda2e429f0deb" category="doc">NVMEM バッテリを交換してください - AFF C190</block>
   <block id="31fd200f667413cd052c85fc2b0d53a1" category="image-alt">DRW 2600 nvmem BATT repl アニメーション GIF</block>
   <block id="0aea44e537dad96c67b72ef6ed5e78d4" category="list-text">「 Press Ctrl-C for Boot Menu` 」というメッセージが表示されたら、 Ctrl キーを押しながら C キーを押して起動プロセスを中断します。</block>
@@ -3702,7 +3686,6 @@
   <block id="844463768f93b4eeabac9c4516ca0130" category="section-title">手順 3 ：システム DIMM を移動します</block>
   <block id="727b43bb986548fddfd9fbbfd6c3c609" category="summary">交換用手順を完了してシステムを完全に動作状態に戻すには、ストレージのケーブル接続をやり直し、必要に応じて NetApp Storage Encryption の構成をリストアし、新しいコントローラのライセンスをインストールする必要があります。</block>
   <block id="647f24f2eb58a916547a537a4937864d" category="doc">システムのリストアの完了 - AFF A700 および FAS9000</block>
-  <block id="bbc9c42b99312692d6c920df2a10da53" category="section-title">手順 4 （ MetroCluster のみ）： 2 ノード MetroCluster 構成でアグリゲートをスイッチバックする</block>
   <block id="49ab05c6d209447659fe5dd4e1fd1db5" category="doc">ハードウェアの移動と交換 - AFF A700 および FAS9000</block>
   <block id="0a7d4055ebf0329a7a3468cd3ccca3ca" category="section-title">手順 1 ：電源装置を取り外す</block>
   <block id="060c350ffa4e24bde01789b8be8138f7" category="paragraph">シャーシを交換するときに電源装置を取り外すには、電源装置の電源を切って接続を解除し、古いシャーシから電源装置を取り出します。</block>
@@ -6134,7 +6117,6 @@
   <block id="e2e8db7924e3d9318e09779273f259de" category="doc">ファンの交換 - AFF A250</block>
   <block id="bc6668cc9984ca2f625c085c1e7dbe6c" category="doc">ファンの交換： FAS500f</block>
   <block id="3cb52a5c3c25dcd729403c0c723500bc" category="list-text">「 storage failover show 」 -giveback コマンドを使用して、ギブバック処理の進捗を監視します。</block>
-  <block id="b36708a8226ddc48a16407516f32b6ae" category="paragraph">'*' storage failover show'*</block>
   <block id="4cc5d765a3b2155ab803f6ce50c11747" category="paragraph">storage failover show コマンドの出力には 'System ID changed on partner というメッセージは含まれていません</block>
   <block id="7b5b637cc082477a9dd4c129c225152e" category="inline-link">オンボードキー管理の暗号化キーをリストア</block>
   <block id="1ee623098df2f7856a034824be882999" category="inline-link">外部キー管理の暗号化キーをリストアします</block>
@@ -6540,12 +6522,7 @@
   <block id="ab16b7659f1f3d151837f3f6574edbce" category="paragraph">コントローラモジュールを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。</block>
   <block id="f9d753fddfdd4cf75bdcf826d545a576" category="list-text">impaired_controller は、メンテナンスを実行しているコントローラです。</block>
   <block id="e4107ee9d71fad92265b6222f2822ad8" category="list-text">healthy_controller は、障害のあるコントローラの HA パートナーです。</block>
-  <block id="ecc93de5d9e6d1de2c8f307f37c933d1" category="list-text">_replacement _controller が Maintenance モードの場合（プロンプトに「 * &gt; 」が表示されている場合）は、 Maintenance モードを終了して、 LOADER プロンプトを表示します。</block>
   <block id="1ece66f8bf58294a3a5da700df5daffe" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は、 _replacement _controller の LOADER プロンプトから「 * y * 」と入力し、コントローラをブートします。</block>
-  <block id="ad40e97175b514d2c81a91067ad04ed7" category="list-text">_replacement controller コンソールに Waiting for giveback... というメッセージが表示されるまで待ち、正常なコントローラから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。</block>
-  <block id="65ae07541c754093eda9cd898cf890f7" category="list-text">正常なコントローラから、交換したコントローラのストレージをギブバックします。</block>
-  <block id="2e02c080662f8fd550785b87be3c1144" category="list-text">想定されるボリュームが各コントローラに存在することを確認します。</block>
-  <block id="f7e34e40e37b03149dbadb73b8513476" category="list-text">リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラから有効にします。</block>
   <block id="86c3969f421b58d4b4b270ed1fb7b003" category="section-title">手順 1 ：交換用コントローラのライセンスを ONTAP にインストールする</block>
   <block id="2a0338d4b284b44bbd6e5b5a0e564e4f" category="paragraph">`image_name.tgz' がインストールされると ' 正常なコントローラからバックアップ構成 (var' ファイルシステム ) をリストアするように求めるプロンプトが表示されます</block>
   <block id="922768ec58831cabe5b129a1aa26dc78" category="paragraph">コントローラのリブート後にシステムの使用を開始できます。</block>
@@ -7354,4 +7331,10 @@
   <block id="6c0f8c80eb90bb62692eec695b2b97a4" category="paragraph">コントローラモジュールで障害が発生したブートメディアの場所を確認するには、コントローラモジュールの中央のPCIeモジュールを取り外し、障害が発生したブートメディアの場所を確認してから、ブートメディアを交換します。</block>
   <block id="75482a309ad2153a216d2cc1f37de42a" category="list-text">障害が発生したブートメディアの場所を確認します</block>
   <block id="3f09782d88b17a1d4d58adb09f8cd8ee" category="paragraph">DIMMを交換するには、コントローラモジュール内部のDIMMマップを使用してコントローラモジュール内でDIMMの場所を確認し、特定の手順に従って交換する必要があります。</block>
+  <block id="161316904c049c8661c4860ac103d326" category="list-text">ストレージシステムでストレージまたはボリュームの暗号化が設定されている場合は、オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順に従ってストレージまたはボリューム暗号化機能をリストアする必要があります。</block>
+  <block id="cd52056b12799b75e95ce3715dbd95d0" category="section-title">手順2：LIFを確認してシリアル番号を登録する</block>
+  <block id="e5d342b84a7b4a1d294e75d2ff62d759" category="section-title">手順2：LIFを確認してシリアル番号を登録する</block>
+  <block id="483a752599520b0534872ca3822c9083" category="list-text">想定されるボリュームが各コントローラに存在することを確認します。<block ref="6931ff74d75f98d072d2434c71cfc1e4" prefix=" " category="inline-code"></block></block>
+  <block id="8ba332a9944c2e6a66e36aee66689593" category="section-title">手順2：LIFを確認してシリアル番号を登録する</block>
+  <block id="6de93a3d40cba5a9f17ae225a0a97f4e" category="section-title">手順3：（MetroCluster のみ）：2ノードMetroCluster 構成でアグリゲートをスイッチバックする</block>
 </blocks>
