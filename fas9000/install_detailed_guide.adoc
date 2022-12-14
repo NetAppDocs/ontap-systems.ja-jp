@@ -20,6 +20,7 @@ summary: このガイドでは、一般的なネットアップシステムの�
 [role="lead"]
 システムを設置するには、ネットアップサポートサイトでアカウントを作成し、システムを登録し、ライセンスキーを取得する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。
 
+.作業を開始する前に
 サイト要件および構成済みシステムの追加情報の情報については、 Hardware Universe にアクセスできる必要があります。また、ご使用の ONTAP バージョンのリリースノートにアクセスして、このシステムの詳細を確認しておくことを推奨します。
 
 https://hwu.netapp.com["NetApp Hardware Universe の略"]
@@ -237,7 +238,7 @@ video::7a55b98a-e8b8-41d5-821f-ac5b0032ead0[panopto]
 
 image::../media/drw_9000_TNSC_composite_cabling.png[DRW 9000 TNSC 複合ケーブル]
 
-. に進みます  4: Cable controllers to drive shelves ドライブシェルフのケーブル接続手順については、を参照して
+. に進みます <<手順 4 ：コントローラをドライブシェルフにケーブル接続する>> ドライブシェルフのケーブル接続手順については、を参照して
 
 
 
@@ -265,7 +266,7 @@ video::6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[panopto]
 
 image:../media/drw_9000_switched_cluster_cabling.png[""]
 
-. に進みます  4: Cable controllers to drive shelves ドライブシェルフのケーブル接続手順については、を参照して
+. に進みます <<手順 4 ：コントローラをドライブシェルフにケーブル接続する>> ドライブシェルフのケーブル接続手順については、を参照して
 
 
 
@@ -324,7 +325,7 @@ link:..https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html[
 +
 image:../media/Cable_shelves_new_system_IOM12_shelves.png[""]
 
-. に進みます  5: Complete system setup and configuration をクリックして、システムのセットアップと設定を完了します。
+. に進みます <<手順 5 ：システムのセットアップと設定を完了する>> をクリックして、システムのセットアップと設定を完了します。
 
 
 
@@ -360,7 +361,7 @@ image::../media/drw_ns224_a700_1shelf.png[DRW ns224 A700 1 シェルフ]
 +
 image::../media/single_NS224_shelf.png[1 台の NS224 シェルフ]
 
-. に進みます  5: Complete system setup and configuration をクリックして、システムのセットアップと設定を完了します。
+. に進みます <<手順 5 ：システムのセットアップと設定を完了する>> をクリックして、システムのセットアップと設定を完了します。
 
 
 
@@ -396,7 +397,7 @@ image::../media/drw_ns224_a700_2shelves.png[DRW ns224 A700 2 シェルフ]
 +
 image::../media/two_NS224_shelves.png[NS224 シェルフ × 2]
 
-. に進みます  5: Complete system setup and configuration をクリックして、システムのセットアップと設定を完了します。
+. に進みます <<手順 5 ：システムのセットアップと設定を完了する>> をクリックして、システムのセットアップと設定を完了します。
 
 
 

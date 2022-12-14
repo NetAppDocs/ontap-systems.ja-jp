@@ -20,6 +20,7 @@ summary: このガイドでは、一般的なネットアップシステムの�
 [role="lead"]
 システムを設置するには、アカウントを作成し、システムを登録し、ライセンスキーを取得する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。
 
+.作業を開始する前に
 サイト要件および構成済みシステムの追加情報の情報については、 Hardware Universe にアクセスできる必要があります。また、ご使用の ONTAP バージョンのリリースノートにアクセスして、このシステムの詳細を確認しておくことを推奨します。
 
 https://hwu.netapp.com["NetApp Hardware Universe の略"]
@@ -221,7 +222,7 @@ video::48552ddf-0925-4f88-8e93-ab1b00666489[panopto]
 +
 image::../media/drw_A400_TNSC-network-cabling.png[DRW A400 TNSC ネットワークケーブル配線]
 
-. に進みます  4: Cable controllers to drive shelves ドライブシェルフのケーブル接続手順については、を参照して
+. に進みます <<手順 4 ：コントローラをドライブシェルフにケーブル接続する>> ドライブシェルフのケーブル接続手順については、を参照して
 
 
 
@@ -250,7 +251,7 @@ video::8fefba75-f395-4cf2-ba3c-ab1b00665870[panopto]
 +
 image::../media/drw_a400_switched_network_cabling.png[DRW 400: スイッチドネットワークケーブル配線]
 
-. に進みます  4: Cable controllers to drive shelves ドライブシェルフのケーブル接続手順については、を参照して
+. に進みます <<手順 4 ：コントローラをドライブシェルフにケーブル接続する>> ドライブシェルフのケーブル接続手順については、を参照して
 
 
 
@@ -282,7 +283,7 @@ video::48d68897-c91d-47dc-b4b0-ab1b0066808a[panopto]
 +
 image::../media/drw_a400_one_ns224_shelves.png[DRW 4001 ns224 シェルフ]
 
-. に進みます  5: Complete system setup and configuration をクリックして、システムのセットアップと設定を完了します。
+. に進みます <<手順 5 ：システムのセットアップと設定を完了する>> をクリックして、システムのセットアップと設定を完了します。
 
 
 
@@ -307,7 +308,7 @@ video::5501c7bf-8b74-49e8-8067-ab1b00668804[panopto]
 +
 image::../media/drw_a400_two_ns224_shelves.png[DRW 4002 台の ns224 シェルフ]
 
-. に進みます  5: Complete system setup and configuration をクリックして、システムのセットアップと設定を完了します。
+. に進みます <<手順 5 ：システムのセットアップと設定を完了する>> をクリックして、システムのセットアップと設定を完了します。
 
 
 
@@ -332,7 +333,7 @@ video::cbb0280e-708d-4365-92b6-ab1b006677ef[panopto]
 +
 image::../media/drw_a400_three_ds224c_shelves.png[DRW 4003 ds224c シェルフ]
 
-. に進みます  5: Complete system setup and configuration をクリックして、システムのセットアップと設定を完了します。
+. に進みます <<手順 5 ：システムのセットアップと設定を完了する>> をクリックして、システムのセットアップと設定を完了します。
 
 
 

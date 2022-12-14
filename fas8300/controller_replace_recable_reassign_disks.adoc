@@ -47,14 +47,14 @@ HA ペアのストレージシステムの場合、手順の最後でギブバ�
  a| 
 HA ペア
  a| 
- 1: Verify the system ID change on an HA system]
+<<オプション 1 ： HA システムでシステム ID の変更を確認する>>]
 
 
 
  a| 
 2 ノード MetroCluster 構成
  a| 
- 2: Manually reassign the system ID on systems in a two-node MetroCluster configuration
+<<オプション 2 ： 2 ノード MetroCluster 構成のシステムにシステム ID を手動で再割り当てする>>
 
 |===
 
@@ -149,6 +149,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 
 ONTAP を実行している 2 ノード MetroCluster 構成では、システムを通常の動作状態に戻す前に、新しいコントローラのシステム ID にディスクを手動で再割り当てする必要があります。
 
+.このタスクについて
 この手順は、 ONTAP を実行している 2 ノード MetroCluster 構成のシステムにのみ適用されます。
 
 この手順のコマンドは、必ず正しいノードで問題に接続してください。

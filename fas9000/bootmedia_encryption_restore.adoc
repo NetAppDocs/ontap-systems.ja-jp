@@ -16,9 +16,9 @@ OKM 、 NSE 、または NVE 構成をリストアするために使用するセ
 
 NSE または NVE がオンボードキーマネージャとともに有効になっている場合は、この手順の最初に取得した設定をリストアする必要があります。
 
-* NSE または NVE が有効で、オンボードキーマネージャが有効になっている場合は、に進みます  1: Restore NVE or NSE when Onboard Key Manager is enabled。
-* ONATP 9.5 で NSE または NVE が有効になっている場合は、に進みます  2: Restore NSE/NVE on systems running ONTAP 9.5 and earlier。
-* ONTAP 9.6 に対して NSE または NVE が有効になっている場合は、に進みます  3: Restore NSE/NVE on systems running ONTAP 9.6 and later。
+* NSE または NVE が有効で、オンボードキーマネージャが有効になっている場合は、に進みます <<オプション 1 ：オンボードキーマネージャが有効な場合は、 NVE または NSE をリストアする>>。
+* ONATP 9.5 で NSE または NVE が有効になっている場合は、に進みます <<オプション 2 ： ONTAP 9.5 以前を実行しているシステムで NSE / NVE をリストアする>>。
+* ONTAP 9.6 に対して NSE または NVE が有効になっている場合は、に進みます <<オプション 3 ： ONTAP 9.6 以降を実行しているシステムで NSE / NVE をリストアする>>。
 
 
 
@@ -62,6 +62,7 @@ NOTE: データは 'securitykey-manager backup show または 'securitykey-manag
 バックアップデータの例：
 
 +
+[]
 ====
 -------------- バックアップの開始 TmV0QXBwIEISELAALAC6AALAG3ATVATLH1DBZ12piVATVZ4ATLASYFSSAJAXAJAXAZAAALAC6AALACBAALAC6AALACZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADDAAAAAAAAAAAAAAAAAAAADDAAAAAAAAAAAAAAAAADATAAAAADAAAAAAADADAAAAAAAAAADAAAAAAAAAAADAAAAAADAAAAAADAAAAAADAAAADAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADADAAAADAAAADAAAAA。。。H4nPQM0nrDRYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 

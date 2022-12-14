@@ -32,8 +32,8 @@ summary: 障害のあるコントローラをシャットダウンしてオン�
 . 「 version -v 」コマンドを使用して、障害のあるコントローラ上でシステムが実行している ONTAP のバージョンを確認します。アップしている場合はパートナーコントローラ上で、障害のあるコントローラがダウンしている場合はパートナーコントローラ上で確認します。
 +
 ** このコマンドの出力に <lno-DARE> または <1Ono-dARE> が表示される場合は、システムが NVE をサポートしていないので、コントローラのシャットダウンに進みます。
-** コマンドの出力に <lno-DARE> が表示されず、システムで ONTAP 9.5 が実行されている場合は、に進みます  NVE or NSE on systems running ONTAP 9.5 and later。
-** コマンドの出力に <lno-DARE > が表示されず、システムで ONTAP 9.6 以降が実行されている場合は、に進みます  NVE or NSE on systems running ONTAP 9.6 and later。
+** コマンドの出力に <lno-DARE> が表示されず、システムで ONTAP 9.5 が実行されている場合は、に進みます <<Checking NVE or NSE on systems running ONTAP 9.5 and later>>。
+** コマンドの出力に <lno-DARE > が表示されず、システムで ONTAP 9.6 以降が実行されている場合は、に進みます <<Checking NVE or NSE on systems running ONTAP 9.6 and later>>。
 
 
 . 障害のあるコントローラが HA 構成の一部である場合は、正常なコントローラからの自動ギブバックを無効にします。 storage failover modify -node local-auto-giveback false または storage failover modify -node local-auto-giveback -after-panic false

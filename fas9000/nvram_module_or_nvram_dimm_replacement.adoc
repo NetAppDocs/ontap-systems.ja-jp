@@ -397,6 +397,7 @@ HA ペア構成と 2 ノード MetroCluster 構成のどちらを使用してい
 ====
 .オプション 1 ：検証 ID （ HA ペア）
 --
+.HA システムでシステム ID の変更を確認
 [role="lead"]
 _replacement _node のブート時にシステム ID の変更を確定し、その変更が実施されたことを確認する必要があります。
 
@@ -517,9 +518,11 @@ dr-group-id            cluster node           configuration-state
 --
 .オプション 2 ： ID の再割り当て（ MetroCluster 設定）
 --
+.システムIDを2ノードMetroCluster 構成で再割り当てします
 [role="lead"]
 ONTAP を実行している 2 ノード MetroCluster 構成では、システムを通常の動作状態に戻す前に、新しいコントローラのシステム ID にディスクを手動で再割り当てする必要があります。
 
+.このタスクについて
 この手順は、 ONTAP を実行している 2 ノード MetroCluster 構成のシステムにのみ適用されます。
 
 この手順のコマンドは、必ず正しいノードで問題に接続してください。

@@ -3553,7 +3553,6 @@
   <block id="8ef8932f72109469af86d4e2c65c227c" category="paragraph">電源装置を古いシャーシから交換用シャーシに移します。</block>
   <block id="3d0a009381ea108fad1b0c7f371cca53" category="paragraph">古いシャーシの各ベイから新しいシャーシの同じベイにドライブを移動します。</block>
   <block id="e7cc374705291915b44392edac6d4956" category="doc">システムのリストアの完了 - AFF A200</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">必要なもの</block>
   <block id="6151adb4be9acf8b78f2772f645f81b4" category="list-text">コントローラモジュールは、同じモデルタイプのコントローラモジュールと交換する必要があります。コントローラモジュールを交換するだけでは、システムをアップグレードすることはできません。</block>
   <block id="7406636825b302f07932b3580dc3aa5b" category="doc">コントローラをシャットダウンします - AFF A200</block>
   <block id="34618f776812de6f5f59a70ca2c17728" category="doc">DIMM- AFF A200 を交換します</block>
@@ -6523,7 +6522,6 @@
   <block id="f9d753fddfdd4cf75bdcf826d545a576" category="list-text">impaired_controller は、メンテナンスを実行しているコントローラです。</block>
   <block id="e4107ee9d71fad92265b6222f2822ad8" category="list-text">healthy_controller は、障害のあるコントローラの HA パートナーです。</block>
   <block id="1ece66f8bf58294a3a5da700df5daffe" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は、 _replacement _controller の LOADER プロンプトから「 * y * 」と入力し、コントローラをブートします。</block>
-  <block id="86c3969f421b58d4b4b270ed1fb7b003" category="section-title">手順 1 ：交換用コントローラのライセンスを ONTAP にインストールする</block>
   <block id="2a0338d4b284b44bbd6e5b5a0e564e4f" category="paragraph">`image_name.tgz' がインストールされると ' 正常なコントローラからバックアップ構成 (var' ファイルシステム ) をリストアするように求めるプロンプトが表示されます</block>
   <block id="922768ec58831cabe5b129a1aa26dc78" category="paragraph">コントローラのリブート後にシステムの使用を開始できます。</block>
   <block id="fec1ee82d47382a6acadcb4104dd3ce3" category="paragraph">障害のあるコントローラに「 Waiting for giveback... 」というメッセージが表示されたら、正常なコントローラからギブバックを実行します。</block>
@@ -7337,4 +7335,12 @@
   <block id="483a752599520b0534872ca3822c9083" category="list-text">想定されるボリュームが各コントローラに存在することを確認します。<block ref="6931ff74d75f98d072d2434c71cfc1e4" prefix=" " category="inline-code"></block></block>
   <block id="8ba332a9944c2e6a66e36aee66689593" category="section-title">手順2：LIFを確認してシリアル番号を登録する</block>
   <block id="6de93a3d40cba5a9f17ae225a0a97f4e" category="section-title">手順3：（MetroCluster のみ）：2ノードMetroCluster 構成でアグリゲートをスイッチバックする</block>
+  <block id="8c4271e6faf2cea4cfc8e5b7108d8ee9" category="paragraph-title">手順</block>
+  <block id="6bcc4bf7321499602cc726d01ccea765" category="paragraph-title">HA システムでシステム ID の変更を確認</block>
+  <block id="354b2998d28fedeb0bad97fc9be9b342" category="paragraph-title">システムIDを2ノードMetroCluster 構成で再割り当てします</block>
+  <block id="9826dc7dca2ce77788236ffc0e442de8" category="section-title">手順 2 ：コントローラモジュールの HA 状態を確認して設定します</block>
+  <block id="48023daa3129599e2b4aa0dbaefd201f" category="paragraph-title">このタスクについて</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="paragraph-title">必要なもの</block>
+  <block id="7d60346fb854755b0fc4b8486f2e5769" category="section-title">手順1：ONTAP に_replacement _ controllerのライセンスをインストールします</block>
+  <block id="541648f14089765ba6e8c3198be32507" category="section-title">手順 2 ：ブートメディアを交換します</block>
 </blocks>

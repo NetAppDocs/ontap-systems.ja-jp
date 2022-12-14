@@ -21,6 +21,7 @@ AFF A800 システムを設置するには、アカウントを作成してシ�
 
 にアクセスできる必要があります link:https://hwu.netapp.com["NetApp Hardware Universe の略"^] （ HWU ）を参照してください。サイト要件および構成済みシステム上の追加情報に関する情報が含まれます。へのアクセスも必要になる場合があります link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用している ONTAP のバージョンに対応したリリースノート"^] このシステムの詳細については、を参照してください。
 
+.必要なもの
 お客様のサイトで次のものを準備する必要があります。
 
 * ストレージシステム用のラックスペース
@@ -200,6 +201,7 @@ image::../media/drw_affa800_install_cable_mgmt.png[DRW affa800 ケーブル管�
 
 コントローラの管理ネットワークポートはスイッチに接続されます。HA インターコネクトポートとクラスタインターコネクトポートは、両方のコントローラでケーブル接続されます。
 
+.作業を開始する前に
 システムとスイッチの接続については、ネットワーク管理者にお問い合わせください。
 
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
@@ -257,10 +259,10 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 |===
 . オプションのケーブル接続を行うには、以下を参照してください
 +
-**  1: Connect to a Fibre Channel host
-**  2: Connect to a 10GbE host
-**  3: Connect to a single direct-attached NS224 drive shelf
-**  4: Connect to two direct-attached NS224 drive shelves
+** <<Option 1: Connect to a Fibre Channel host>>
+** <<Option 2: Connect to a 10GbE host>>
+** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
 
 . システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
@@ -272,6 +274,7 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 
 コントローラのクラスタインターコネクト / 管理ネットワークポートはスイッチに接続され、 HA インターコネクトポートは両方のコントローラでケーブル接続されます。
 
+.作業を開始する前に
 システムとスイッチの接続については、ネットワーク管理者にお問い合わせください。
 
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
@@ -325,10 +328,10 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 |===
 . オプションのケーブル接続を行うには、以下を参照してください
 +
-**  1: Connect to a Fibre Channel host
-**  2: Connect to a 10GbE host
-**  3: Connect to a single direct-attached NS224 drive shelf
-**  4: Connect to two direct-attached NS224 drive shelves
+** <<Option 1: Connect to a Fibre Channel host>>
+** <<Option 2: Connect to a 10GbE host>>
+** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
 
 . システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
@@ -346,6 +349,7 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 
 コントローラの Fibre Channel ポートは、 Fibre Channel ホストネットワークスイッチに接続されます。
 
+.作業を開始する前に
 システムとスイッチの接続については、ネットワーク管理者にお問い合わせください。
 
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
@@ -372,8 +376,8 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
  a| 
 その他のオプションのケーブル接続を行うには、次のいずれかを選択します
 
-*  3: Connect to a single direct-attached NS224 drive shelf
-*  4: Connect to two direct-attached NS224 drive shelves
+* <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+* <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
 
 
@@ -390,6 +394,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 コントローラの 10GbE ポートは、 10GbE ホストネットワークスイッチに接続されます。
 
+.作業を開始する前に
 システムとスイッチの接続については、ネットワーク管理者にお問い合わせください。
 
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
@@ -416,8 +421,8 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
  a| 
 その他のオプションのケーブル接続を行うには、次のいずれかを選択します
 
-*  3: Connect to a single direct-attached NS224 drive shelf
-*  4: Connect to two direct-attached NS224 drive shelves
+* <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+* <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
 
 
@@ -434,6 +439,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 各コントローラを、 NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。
 
+.作業を開始する前に
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
 
 image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
@@ -471,6 +477,7 @@ image:../media/oie_legend_icon_2_lo.png[""]
 
 各コントローラを両方の NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。
 
+.作業を開始する前に
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
 
 image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
