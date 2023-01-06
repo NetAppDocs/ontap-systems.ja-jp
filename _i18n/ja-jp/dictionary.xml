@@ -174,7 +174,6 @@
   <block id="11d90ad9838fdc1545ee368cd8943df9" category="list-text">必要に応じて、古いライセンスを削除します。</block>
   <block id="eb9892aa7a6ee6cfe6b30dad735d6d7a" category="list-text">使用されていないライセンスを確認してください : 「 license clean-up-unused -simulate 」</block>
   <block id="f77eef718a5ddb0006a44a75016370bf" category="list-text">リストが正しい場合は、未使用のライセンス「 license clean-up-unused 」を削除します</block>
-  <block id="37b0fb827bbc179115abc1768c9c5f12" category="paragraph">ストレージまたはボリュームの暗号化を使用するように設定したストレージシステムのコントローラモジュールまたは NVRAM モジュールを交換したら、追加の手順を実行して、暗号化機能を中断させないようにする必要があります。ストレージまたはボリュームの暗号化が有効になっていないストレージシステムでは、このタスクを省略できます。</block>
   <block id="48c7c41b72e1d678923ce3571aa65b2d" category="list-title">ステップ</block>
   <block id="a2ae6c720a8a0fbf3918f44a33be6b30" category="inline-link">ONTAP 9 ネットアップ暗号化パワーガイド</block>
   <block id="ba8122bba290a3351611db1b66c99386" category="paragraph"><block ref="ba8122bba290a3351611db1b66c99386" category="inline-link-rx"></block></block>
@@ -5591,7 +5590,6 @@
   <block id="1fc23df34c1ef373bc238879bf1082e5" category="list-text"><block ref="1fc23df34c1ef373bc238879bf1082e5" category="inline-link-macro-rx"></block></block>
   <block id="b8a901030a76c92bf9e4426d81439fa5" category="list-text"><block ref="b8a901030a76c92bf9e4426d81439fa5" category="inline-link-macro-rx"></block></block>
   <block id="3f98fa9dd0068de7a3158d3cefe04024" category="list-text"><block ref="3f98fa9dd0068de7a3158d3cefe04024" category="inline-link-macro-rx"></block></block>
-  <block id="a2960939186ae78b824d694e2cbba800" category="inline-link">CLI での管理の概要</block>
   <block id="518d2076bf387a28038f7558530bb987" category="inline-link">CLI での NetApp Encryption の概要</block>
   <block id="673f7a1f10ce14ef29b06ba53cf1e5d7" category="inline-link">CLI での NetApp Encryption の概要</block>
   <block id="ed20ee3e54ecf9b3b63f4e11ff820fb4" category="paragraph"><block ref="ed20ee3e54ecf9b3b63f4e11ff820fb4" category="inline-link-rx"></block></block>
@@ -5880,12 +5878,9 @@
   <block id="1d069ff54ee29cbfaafd7650132e6cd5" category="list-text">システムのセットアップを完了するには、を参照してください <block ref="53346fef0c147b551f530d05bbad2e41" category="inline-xref-macro-rx"></block>。</block>
   <block id="1a012ae90c41b7530ce0df40b8053d54" category="section-title">オプション 1 ：ネットワーク検出が有効になっている場合</block>
   <block id="5eadc00e7d9146c2fd474e7d8d5f5137" category="list-text">次のアニメーションまたは図を使用して、 1 つ以上のドライブシェルフ ID を設定します。</block>
-  <block id="f551b341dd5555b5471ea63f7fad8db8" category="paragraph">NS224 シェルフ ID は 00 および 01 に事前に設定されています。シェルフ ID を変更する場合は、ボタンが配置されている穴に差し込む工具が必要です。</block>
   <block id="6b39390f8836ac9ddcaf033f6ec9d535" category="image-alt">DRW 電源オンセットシェルフ ID セット</block>
   <block id="543ab7831f0589c951278e6073647eb0" category="paragraph">エンドキャップを取り外す。</block>
   <block id="77b9275f6fd711644f4214aa9c1fd216" category="paragraph">1 桁目の数字が点滅するまでシェルフ ID ボタンを押し続けたら、 0~9 に進みます。</block>
-  <block id="5463cd717cd1248bc167a0577c0d17a5" category="paragraph">メモ： 1 桁目の数字は点滅したままです</block>
-  <block id="f5e9a997371da544ff3b8bba352ef6e5" category="paragraph">2 桁目の数字が点滅するまでシェルフ ID ボタンを押し続けたら、 0~9 に進みます。メモ： 1 桁目の数字の点滅は止まり、 2 桁目の数字は点滅し続けます。</block>
   <block id="72e911c52ba51e970a39b1b30b1c8424" category="paragraph">エンドキャップを取り付けます。</block>
   <block id="241b3d2acad120dfd8decf92e173cd23" category="paragraph">オレンジの LED が点灯するまで 10 秒間待ちます (!) 。 表示されるようにするには、ドライブシェルフの電源を再投入してシェルフ ID を設定します。</block>
   <block id="b12c60055be138bf7526b1769365b47e" category="image-alt">DRW a900 電源オン</block>
@@ -5925,7 +5920,6 @@
   <block id="23b82013e68c4445eaa3ec355ca09fb4" category="summary">NVRAM モジュールは、 NVRAM11 と DIMM 、 NVRAM モジュールあたり最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。</block>
   <block id="b422a6f4d3945c00efbef5a1554df972" category="doc">NVRAM モジュール / NVRAM DIMM を交換してください - AFF A900</block>
   <block id="4d365227a3a5ccf9886fa9c35ba6a99d" category="paragraph">NVRAM モジュールは NVRAM11 と DIMM で構成されます。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。障害が発生した NVRAM モジュールを交換するには、モジュールをシャーシから取り外し、 DIMM を交換用モジュールに移して、交換用 NVRAM モジュールをシャーシに取り付ける必要があります。</block>
-  <block id="50b70636b9b845e1cca7db72fbdeec68" category="paragraph">および NVRAM DIMM を交換するには、 NVRAMmodule をシャーシから取り外し、モジュール内の障害のある DIMM を交換してから、 NVRAM モジュールを再度取り付ける必要があります。</block>
   <block id="356bb2eaf8fe1f9955f9f22e00ddcb54" category="paragraph">システム ID は NVRAM モジュールから取得されるため、モジュールを交換する場合は、システムに属するディスクを新しいシステム ID に再割り当てします。</block>
   <block id="dad23827b140b55a3121c86e5b861fad" category="image-alt">DRW a900 move remove NVRAM module (NVRAM モジュールを取り外します</block>
   <block id="df3566616f23116dab812ba8e95510cb" category="image-alt">DRW a900 は NVRAM モジュールの内容を削除します</block>
@@ -5939,13 +5933,11 @@
   <block id="c36d25abc9dfdbc31228c74f7e654d0c" category="list-text">表示されたシャーシのシステム状態がシステム構成と一致しない場合は ' シャーシの HA 状態を設定します HA config modify chassis_HA-state_</block>
   <block id="f95e8e8b229c3aee97b205509f91df66" category="section-title">手順 6 ：ディスクの再割り当て</block>
   <block id="8672de10e3d8295abd1be60e2569c4c6" category="list-text">すべてのコアダンプを保存します： system node run -node local-node-name partner savecore</block>
-  <block id="544b7fcf1fe2aaedd577ba107a7f6a56" category="paragraph">次のコマンドを入力すると 'savecore コマンドの進行状況を監視できます system node run -node local-node-name partner savecore -s</block>
   <block id="7285c4012d903a86f08da4d4eb643a35" category="paragraph">を参照してください<block ref="1c9dcde47ee822b3ac120aae2f296f05" category="inline-link-rx"></block> を参照してください。</block>
   <block id="2a1253e1eb3f5fea69107948ef4c203d" category="summary">このトピックでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。</block>
   <block id="cb0bd9965128fe9d9c7dc5fe35ba00fa" category="doc">クイックステップ - AFF A900</block>
   <block id="86b058636c934f73a262e3a5469f088e" category="paragraph">このトピックでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。ネットアップシステムのインストールに精通している場合は、このコンテンツを使用してください。</block>
   <block id="cd9130a2736bae3213b0c2da4de3435e" category="inline-link-macro">AFF A900 のインストールとセットアップの手順</block>
-  <block id="4409045029375618296b6ed24e35aec6" category="paragraph"><block ref="4409045029375618296b6ed24e35aec6" category="inline-link-macro-rx"></block></block>
   <block id="6551c0f6e6caf0566c6eae152ecd7b38" category="doc">ブートメディア AFF A900 を交換してください</block>
   <block id="10446d8e0f9e8e6b297995ce7dafe03c" category="doc">交換プロセス（ AFF A900 ）を完了します</block>
   <block id="fcc9aa8940599a2c3be38723a65e9e21" category="doc">DIMM- AFF A900 を交換してください</block>
@@ -6373,7 +6365,6 @@
   <block id="432fbc80d952a560e7d764411dacca12" category="list-text">storage failover giveback -fromnode local コマンドを使用して、コントローラをギブバックします。</block>
   <block id="8af929f5f2bb65d4fe36d9188a257bba" category="list-text">コンソール・ケーブルを修復されたコントローラに移動し 'version -v コマンドを実行して ONTAP のバージョンを確認します</block>
   <block id="3a11addb86720d7891a7b14fea7f4776" category="paragraph">障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。</block>
-  <block id="22a3fad7c3cfdd379a652e4aa08aa70e" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="1baf9f7ecc4554f61d6168e4897ea002" category="inline-link-macro-rx"></block>。</block>
   <block id="04b13459c31bdc128c187f2b882c3d74" category="list-text">正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false</block>
   <block id="087b01deb1bef7c8b4ffe6fe81283666" category="list-text">障害のあるコントローラに LOADER プロンプトを表示します。</block>
   <block id="ebc5673f419bc9da94f2c2f001aaf3ff" category="cell">障害のあるコントローラの表示</block>
@@ -6430,7 +6421,6 @@
   <block id="c8dc5733d35c41c184dc2e9c60fd8a12" category="admonition">設定するターゲットポートは、正常なコントローラから障害コントローラへの通信に使用するポートで、 var ファイルシステムのリストア時にネットワーク接続で使用します。このコマンドでは e0M ポートを使用することもできます。</block>
   <block id="8db7a5b6ece2af3b075639e41512d618" category="section-title">オプション 1 ：コントローラをシャットダウンします</block>
   <block id="b5d03ef67a171c85bf4bd311e2fd75df" category="paragraph">シャーシ内のコントローラまたはコントローラを新しいシャーシに移動する前に、シャットダウンする必要があります。</block>
-  <block id="c53eb92ae6b734f0f5b5e257acb152cb" category="list-text">コントローラが 3 台以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで資格とヘルスについて「 false 」と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="1baf9f7ecc4554f61d6168e4897ea002" category="inline-link-macro-rx"></block>。</block>
   <block id="93ff4b8a35c5f08ad3e97fdc9983948e" category="paragraph">クラスタに 2 台のコントローラがあります</block>
   <block id="a0540c64b7001eb9739a6eed390808ac" category="paragraph">クラスタ内に 3 台以上のコントローラがあります</block>
   <block id="853a8c6f8383ee1dc5f3826af9ff6797" category="list-text">停止を確認するプロンプトが表示されたら 'y を押してコントローラを停止します system node halt -node _node_name _`</block>
@@ -6545,12 +6535,8 @@
   <block id="1e27080aaa4839341247d89fa27230f6" category="list-text">障害のあるコントローラとは、メンテナンスを実行しているコントローラです。</block>
   <block id="cb82be680779cb2f6fe87d5303395ca3" category="list-text">正常なコントローラとは、障害のあるコントローラの HA パートナーです。</block>
   <block id="75058bf61b1188ee8304798f89ca02bf" category="paragraph">交換用コントローラのブート時にシステム ID の変更を確認し、変更が実装されたことを確認する必要があります。</block>
-  <block id="fa0bfd482c7a3a6dfc65930e176b0502" category="list-text">交換用コントローラがメンテナンス・モード（「 *&gt;」 プロンプトが表示されている）の場合は、メンテナンス・モードを終了して、 LOADER プロンプト「 halt 」に進みます</block>
-  <block id="ba6fae1de76d6230e1c74a17242ebf97" category="list-text">交換用コントローラの LOADER プロンプトからコントローラをブートし、システム ID の不一致によりシステム ID を上書きするように求められた場合は、「 y 」と入力します。</block>
-  <block id="a0d04de6e8774043ed7dd31ce11a9577" category="list-text">交換用コントローラのコンソールに Waiting for giveback... メッセージが表示されるまで待ち、正常なコントローラから新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show</block>
   <block id="590ef635c433371eead20b940bf6c429" category="list-text">正常なコントローラから、交換したコントローラのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name</block>
   <block id="4cd2ac4c22d2d6323c4f80d036ea5320" category="paragraph">交換用コントローラはストレージをテイクバックしてブートを完了します。</block>
-  <block id="5e0cea5d67aaa32c62721aadfacd5df4" category="paragraph">交換用コントローラに属するディスクには、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。</block>
   <block id="11cd58ab2810de65be01109093020b63" category="list-text">交換用コントローラがディザスタサイトのディスクの現在の所有者である。</block>
   <block id="3f0db9aa8dd4145d2c4b64ea3481303a" category="list-text">この手順 では、障害のあるコントローラから交換用コントローラにブートデバイスが移動され、交換用コントローラが古いコントローラモジュールと同じバージョンの ONTAP でブートするようになります。</block>
   <block id="c679e8417b3c86837c70fa5e162e77a6" category="list-text">障害のあるコントローラとは、交換するコントローラです。</block>
@@ -6767,9 +6753,6 @@
   <block id="8456c08b8772c6458de93a0a78ff4f85" category="paragraph">左右のケーブルチェーンを取り外したら、ドライブシェルフからドライブドロワーを取り外すことができます。ドライブドロワーを取り外すときは、ドロワーを途中まで引き出し、ドライブを取り外し、ドライブドロワーを取り外します。</block>
   <block id="40cfdd2fa544c18fef836a58df7bb2e9" category="list-text">取り付けるドライブで、ハンドルを垂直な位置まで持ち上げます。</block>
   <block id="2560c526c9d334c39cab4311db7eff4d" category="paragraph">シェルフに空きがある場合、つまりドライブを再取り付けするドロワーのドライブ数がサポートされる12本よりも少ない場合は、最初の4本のドライブを前面スロット（0、3、6、および9）に取り付けます。</block>
-  <block id="dbe360eaa5ee89fd4f31c500db9f2fd7" category="paragraph"><block ref="dbe360eaa5ee89fd4f31c500db9f2fd7" category="inline-link-rx"></block></block>
-  <block id="44eacc26d730bc46ddc55858ccb8e7e3" category="list-text">SANシステムを使用している場合は'障害のあるコントローラSCSIブレードに関するイベント・メッセージ（event log show）を確認しておく必要があります</block>
-  <block id="503506ac51c03177e4e29bdd8f3f83e0" category="list-text">の該当する手順を使用して、ストレージまたはボリュームの暗号化機能をリストアします<block ref="2ff5666698979ec87e001217f795c3dd" category="inline-link-rx"></block>。</block>
   <block id="b18ad0a07953c39e92025f3df711d7e8" category="list-text"><block ref="b18ad0a07953c39e92025f3df711d7e8" category="inline-link-rx"></block></block>
   <block id="137edbb782dbd05e84addda1ad111604" category="list-text"><block ref="137edbb782dbd05e84addda1ad111604" category="inline-link-rx"></block></block>
   <block id="d331c2ddc96dbf38f25371617243bf17" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="1ab03132ea6210439f901707b3806211" category="inline-link-macro-rx"></block>。</block>
@@ -7343,4 +7326,38 @@
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="paragraph-title">必要なもの</block>
   <block id="7d60346fb854755b0fc4b8486f2e5769" category="section-title">手順1：ONTAP に_replacement _ controllerのライセンスをインストールします</block>
   <block id="541648f14089765ba6e8c3198be32507" category="section-title">手順 2 ：ブートメディアを交換します</block>
+  <block id="6fdf23777adc5b39f52f2829b69833e5" category="inline-link-macro">ノードをクラスタと同期します</block>
+  <block id="1bb835185391c9f6463cb5dc111090d1" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
+  <block id="7260398ee351f45c2b93073dcc9f358d" category="list-text">コントローラが 3 台以上あるクラスタは、クォーラムを構成している必要があります。クラスタでクォーラムを構成していない場合、または正常なコントローラと表示される場合<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 資格とヘルスについては、障害のあるコントローラをシャットダウンする前に、問題 を修正する必要があります。を参照してください <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
+  <block id="692418fcc9983296fd6b89b4072b99d2" category="inline-link-macro">SEDを非保護モードに戻します</block>
+  <block id="aa641c641cc4509747c629778ceba1e6" category="list-text">NetApp Storage Encryptionを使用している場合は、の手順に従ってMSIDをリセットしておく必要があります <block ref="deeaf76d485e47e462d03c774bc2ca5e" category="inline-link-macro-rx"></block>。</block>
+  <block id="dca9d9d34ff973dbf261373e223aa9e4" category="list-text">SANシステムを使用している場合は、イベントメッセージを確認しておく必要があります <block ref="090678c8ba0a25df800d3d4eeaf19522" prefix="(" category="inline-code"></block>)を参照してください。。<block ref="090678c8ba0a25df800d3d4eeaf19522" prefix=" " category="inline-code"></block> コマンドは、ノード名、そのノードのクォーラムステータス、ノードの可用性ステータス、およびノードの動作ステータスを表示します。</block>
+  <block id="03733c422db2a03d86659ae5a1e923dc" category="paragraph">次のAutoSupport メッセージは、ケースの自動作成を2時間停止します。<block ref="387708b955ccf034fcf9197ad51ba879" prefix=" " category="inline-code"></block></block>
+  <block id="f1f0ba04096d04407de2d15a11510ac1" category="paragraph">システムプロンプトまたはパスワードプロンプト</block>
+  <block id="639008d04bbddd83a85cafeeb0a39a18" category="paragraph">ストレージまたはボリュームの暗号化を使用するように設定したストレージシステムでは、暗号化機能を中断させないための追加の手順を実行する必要があります。ストレージまたはボリュームの暗号化が有効になっていないストレージシステムでは、このタスクを省略できます。</block>
+  <block id="96e55b268667b462cab9bd34069f1863" category="admonition">この手順は、DIMMの交換時には必要ありません。</block>
+  <block id="ff0dc22dde7f31608d4b3c140aa680a6" category="list-text">SEDのMSIDをリセットします</block>
+  <block id="fc3118913338c7fb342195db815855cb" category="admonition">MetroCluster IP構成をケーブル接続する場合は、ポートe0a/e0bをデータLIF（通常はデフォルトのIPSpace）のホストに使用できます。</block>
+  <block id="450bb6c29a5f5af0fe4d1f8fcfcb4777" category="paragraph">電源装置を交換するには、電源装置の電源を切って接続を解除し、電源装置を取り出したあとに、交換用電源装置を取り付けて接続し、電源をオンにします。</block>
+  <block id="3e476a4d56adc74857e9c49cf82980f1" category="list-text">システムには4つの電源装置があります。</block>
+  <block id="d35281b877a38ecad54d9ac919c0ff9a" category="list-text">電源装置に電源ケーブルを再接続します。</block>
+  <block id="5803fc3bcce0b024b213bb355de85f8f" category="paragraph">NS224 シェルフ ID は 00 および 01 に事前に設定されています。シェルフ ID を変更する場合は、ボタンが配置されている穴に差し込む工具が必要です。を参照してください<block ref="86c3962fabec597b00cc6faeabccf883" category="inline-link-rx"></block> 詳しい手順については、を参照して</block>
+  <block id="312be20d26d0db2b40b706dc2f350028" category="image-alt">DRW a900 OIEでは'ns224シェルフID IEOPS 836が変更されます</block>
+  <block id="48fb10beb7e1cd15b9bdbab40aac9532" category="paragraph">シェルフのエンドキャップ</block>
+  <block id="22f4a2aa68e94fdf29e1fc7d0f30d571" category="paragraph">シェルフ前面プレート</block>
+  <block id="fd4a04a1b7abc5cadef1bf584e6e5547" category="paragraph">シェルフID LED</block>
+  <block id="700f4fc6f1e4c3e585e23be6378affa0" category="paragraph">シェルフID設定ボタン</block>
+  <block id="1f35a49e1a9f3ad335b1add2e4080478" category="paragraph"><block ref="1f35a49e1a9f3ad335b1add2e4080478" category="inline-link-macro-rx"></block></block>
+  <block id="f37dfb2a27ff4e023e475b54c0ad055e" category="list-text">この手順 には、新しいNVRAMモジュールに関連付けられているコントローラモジュールにディスクを自動的に再割り当てする手順が含まれています。手順でに指示された場合は、ディスクを再割り当てする必要があります。ギブバックで CAN 原因の問題が発生する前にディスクの再割り当てを完了する。</block>
+  <block id="d73a26bc3e3d4896bae825c2a70691a4" category="paragraph">文字と数字が記載されたカムラッチ</block>
+  <block id="3c327a3216d201c494ac60534e1a2117" category="paragraph">カムラッチが完全にロック解除されました</block>
+  <block id="e1d6265d5c32eb8c4e989291b8d72d20" category="list-text">モジュールをスロットにそっと挿入し、文字と数字が記載されたカムラッチを上に押してモジュールを所定の位置にロックします。</block>
+  <block id="bc62fa4bef9a4cd2a983ca01d5a5b1b3" category="paragraph">カムラッチが完全にロック解除されました</block>
+  <block id="58e30dc94cdf372b64dac305fbb57bc0" category="section-title">手順5：ディスクの再割り当て</block>
+  <block id="7b0ac7dba1c185e5ac66482ca29488da" category="admonition">ディスクの再割り当ては、NVRAMモジュールを交換する場合にのみ必要です。</block>
+  <block id="84bda9f97f27f63cc6fa0c4cac3ddcb4" category="list-text">交換用コントローラがメンテナンスモードの場合（にと表示されます<block ref="2cf8a3bab83c4d2618c18eeeca9ebc98" prefix=" " category="inline-code"></block> プロンプト）でメンテナンスモードを終了し、LOADERプロンプトを表示します。<block ref="4a1bde0ea8bcda2a591f42646813c477" prefix=" " category="inline-code"></block></block>
+  <block id="3cea6cd019ee970febca58bfe050e1cb" category="list-text">システムIDが一致しないためにシステムIDを上書きするかどうかを尋ねられた場合は、交換用コントローラのLOADERプロンプトからコントローラをブートし、「y」と入力します。</block>
+  <block id="40ef2970d7d205d6f0ba4ecddaec7b51" category="list-text">待機しているギブバックを実行しています...交換用モジュールを取り付けたコントローラのコンソールにメッセージが表示されたら、正常なコントローラから、新しいパートナーシステムIDが自動的に割り当てられたことを確認します。<block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix=" " category="inline-code"></block></block>
+  <block id="e8060bae9316148ae38460dbb2356f26" category="paragraph">交換用コントローラに属するディスクには、新しいシステム ID が表示されます。次の例では、node1で所有されているディスクに新しいシステムID 151759706が表示されます。</block>
+  <block id="209f885dfe9e7d41b82f04b945d68576" category="list-text">ストレージ暗号化が有効になっている場合は、********が必要です</block>
 </blocks>

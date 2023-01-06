@@ -13,7 +13,7 @@ summary: NVRAM モジュールは、 NVRAM11 と DIMM 、 NVRAM モジュール�
 [role="lead"]
 NVRAM モジュールは NVRAM11 と DIMM で構成されます。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。障害が発生した NVRAM モジュールを交換するには、モジュールをシャーシから取り外し、 DIMM を交換用モジュールに移して、交換用 NVRAM モジュールをシャーシに取り付ける必要があります。
 
-および NVRAM DIMM を交換するには、 NVRAMmodule をシャーシから取り外し、モジュール内の障害のある DIMM を交換してから、 NVRAM モジュールを再度取り付ける必要があります。
+とNVRAM DIMMを交換するには、NVRAMモジュールをシャーシから取り外し、モジュール内の障害が発生したDIMMを交換してから、NVRAMモジュールを再度取り付ける必要があります。
 
 .このタスクについて
 システム ID は NVRAM モジュールから取得されるため、モジュールを交換する場合は、システムに属するディスクを新しいシステム ID に再割り当てします。
@@ -27,7 +27,7 @@ NVRAM モジュールは NVRAM11 と DIMM で構成されます。障害が発�
 ** 正常なコントローラとは、障害のあるコントローラの HA パートナーです。
 
 
-* この手順には、新しい NVRAM モジュールに関連付けられているコントローラモジュールにディスクを自動または手動で再割り当てする手順が含まれています。手順でに指示された場合は、ディスクを再割り当てする必要があります。ギブバックで CAN 原因の問題が発生する前にディスクの再割り当てを完了する。
+* この手順 には、新しいNVRAMモジュールに関連付けられているコントローラモジュールにディスクを自動的に再割り当てする手順が含まれています。手順でに指示された場合は、ディスクを再割り当てする必要があります。ギブバックで CAN 原因の問題が発生する前にディスクの再割り当てを完了する。
 * 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。
 * この手順の一部としてディスクやディスクシェルフを変更することはできません。
 
@@ -47,22 +47,18 @@ NVRAM モジュールは NVRAM11 と DIMM で構成されます。障害が発�
 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
 
 .このタスクについて
-* NetApp Storage Encryption を使用している場合は、 _ ONTAP 9 NetApp Encryption パワーガイド _ の「 SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります。
-+
-https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["ONTAP 9 ネットアップ暗号化パワーガイド"^]
-
-* SANシステムを使用している場合は'障害のあるコントローラSCSIブレードに関するイベント・メッセージ（event log show）を確認しておく必要があります
+* NetApp Storage Encryptionを使用している場合は、の手順に従ってMSIDをリセットしておく必要があります link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html["SEDを非保護モードに戻します"]。
+* SANシステムを使用している場合は、イベントメッセージを確認しておく必要があります  `cluster kernel-service show`)を参照してください。。 `cluster kernel-service show` コマンドは、ノード名、そのノードのクォーラムステータス、ノードの可用性ステータス、およびノードの動作ステータスを表示します。
 +
 各 SCSI ブレードプロセスは、クラスタ内の他のノードとクォーラムを構成している必要があります。交換を進める前に、すべての問題を解決しておく必要があります。
 
-* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"^]。
-* MetroCluster 構成を使用している場合は、 MetroCluster 構成状態が構成済みで、ノードが有効かつ正常な状態であることを確認しておく必要があります（「 MetroCluster node show 」）。
+* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["ノードをクラスタと同期します"^]。
 
 
 .手順
 . AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
 +
-次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
+次のAutoSupport メッセージは、ケースの自動作成を2時間停止します。 `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
 
 . 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
 +
@@ -91,7 +87,7 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 
 
  a| 
-システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
+システムプロンプトまたはパスワードプロンプト
  a| 
 正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _
 
@@ -108,7 +104,7 @@ NOTE: 2 ノード MetroCluster 構成のシステムでは、この手順を使�
 
 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
 
-* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["CLI での管理の概要"^]。
+* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["ノードをクラスタと同期します"^]。
 * MetroCluster 構成を使用している場合は、 MetroCluster 構成状態が構成済みで、ノードが有効かつ正常な状態であることを確認しておく必要があります（「 MetroCluster node show 」）。
 
 
@@ -186,14 +182,14 @@ image::../media/drw_a900_move-remove_NVRAM_module.png[DRW a900 move remove NVRAM
  a| 
 image:../media/legend_icon_01.png[""]
  a| 
-文字と数字が記載された I/O カムラッチ
+文字と数字が記載されたカムラッチ
 
 
 
  a| 
 image:../media/legend_icon_02.png[""]
  a| 
-ロックが完全に解除された I/O ラッチ
+カムラッチが完全にロック解除されました
 
 |===
 . NVRAM モジュールを安定した場所に置き、カバーの青色のロックボタンを押し下げてカバーを NVRAM モジュールから取り外します。青いボタンを押しながら、カバーをスライドさせて NVRAM モジュールから外します。
@@ -223,7 +219,7 @@ DIMM と DIMM のツメ
 . 交換用 NVRAM モジュールをシャーシに取り付けます。
 +
 .. モジュールをスロット 6 のシャーシ開口部の端に合わせます。
-.. モジュールをスロットにそっと挿入し、文字と数字が記載された I/O カムラッチを上に押してモジュールを所定の位置にロックします。
+.. モジュールをスロットにそっと挿入し、文字と数字が記載されたカムラッチを上に押してモジュールを所定の位置にロックします。
 
 
 
@@ -263,14 +259,14 @@ image::../media/drw_a900_move-remove_NVRAM_module.png[DRW a900 move remove NVRAM
  a| 
 image:../media/legend_icon_01.png[""]
  a| 
-文字と数字が記載された I/O カムラッチ
+文字と数字が記載されたカムラッチ
 
 
 
  a| 
 image:../media/legend_icon_02.png[""]
  a| 
-ロックが完全に解除された I/O ラッチ
+カムラッチが完全にロック解除されました
 
 |===
 . NVRAM モジュールを安定した場所に置き、カバーの青色のロックボタンを押し下げてカバーを NVRAM モジュールから取り外します。青いボタンを押しながら、カバーをスライドさせて NVRAM モジュールから外します。
@@ -301,7 +297,7 @@ DIMM と DIMM のツメ
 . NVRAM モジュールをシャーシに取り付けます。
 +
 .. モジュールをスロット 6 のシャーシ開口部の端に合わせます。
-.. モジュールをスロットにそっと挿入し、文字と数字が記載された I/O カムラッチを上に押してモジュールを所定の位置にロックします。
+.. モジュールをスロットにそっと挿入し、文字と数字が記載されたカムラッチを上に押してモジュールを所定の位置にロックします。
 
 
 
@@ -318,61 +314,28 @@ FRU を交換したら、コントローラモジュールをリブートする�
 
 
 
-== 手順 5 ：コントローラモジュールの HA 状態を確認して設定します
-
-コントローラモジュールの「 HA 」状態を確認し、必要に応じてシステム構成に合わせて状態を更新する必要があります。
-
-. 交換用コントローラモジュールの保守モードで ' すべてのコンポーネントが同じ HA 状態を表示していることを確認します HA 構成の場合は 'ha-config show と表示されます
-+
-[cols="1,2"]
-|===
-| システムの構成 | すべてのコンポーネントの HA の状態 
-
-
- a| 
-HA ペア
- a| 
-高可用性
-
-
-
- a| 
-4 つ以上のノードを含む MetroCluster FC 構成
- a| 
-MCC
-
-
-
- a| 
-MetroCluster IP 構成
- a| 
-mccip
-
-|===
-. 表示されたコントローラモジュールのシステム状態がシステム構成と一致しない場合は、コントローラモジュールの HA 状態を「 ha-config modify controller_A_2 state_」 に設定します
-. 表示されたシャーシのシステム状態がシステム構成と一致しない場合は ' シャーシの HA 状態を設定します HA config modify chassis_HA-state_
-
-
-
-
-== 手順 6 ：ディスクの再割り当て
+== 手順5：ディスクの再割り当て
 
 [role="lead"]
 交換用コントローラのブート時にシステム ID の変更を確認し、変更が実装されたことを確認する必要があります。
 
-この手順は、 HA ペアの ONTAP を実行するシステムにのみ適用されます。
+
+NOTE: この手順は、 HA ペアの ONTAP を実行するシステムにのみ適用されます。
+
+
+CAUTION: ディスクの再割り当ては、NVRAMモジュールを交換する場合にのみ必要です。
 
 .手順
-. 交換用コントローラがメンテナンス・モード（「 *>」 プロンプトが表示されている）の場合は、メンテナンス・モードを終了して、 LOADER プロンプト「 halt 」に進みます
-. 交換用コントローラの LOADER プロンプトからコントローラをブートし、システム ID の不一致によりシステム ID を上書きするように求められた場合は、「 y 」と入力します。
-. 交換用コントローラのコンソールに Waiting for giveback... メッセージが表示されるまで待ち、正常なコントローラから新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show
+. 交換用コントローラがメンテナンスモードの場合（にと表示されます `*>` プロンプト）でメンテナンスモードを終了し、LOADERプロンプトを表示します。 `halt`
+. システムIDが一致しないためにシステムIDを上書きするかどうかを尋ねられた場合は、交換用コントローラのLOADERプロンプトからコントローラをブートし、「y」と入力します。
+. 待機しているギブバックを実行しています...交換用モジュールを取り付けたコントローラのコンソールにメッセージが表示されたら、正常なコントローラから、新しいパートナーシステムIDが自動的に割り当てられたことを確認します。 `storage failover show`
 +
 コマンド出力には、障害のあるコントローラでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。
 
 +
 [listing]
 ----
-node1> `storage failover show`
+node1:> storage failover show
                                     Takeover
 Node              Partner           Possible     State Description
 ------------      ------------      --------     -------------------------------------
@@ -380,20 +343,6 @@ node1             node2             false        System ID changed on partner (O
                                                   151759755, New: 151759706), In takeover
 node2             node1             -            Waiting for giveback (HA mailboxes)
 ----
-. 正常なコントローラから、コアダンプがすべて保存されたことを確認します。
-+
-.. advanced 権限レベルに切り替えます。「 set -privilege advanced 」
-+
-advanced モードで続行するかどうかを確認するプロンプトが表示されたら、「 y 」と入力します。advanced モードのプロンプトが表示されます（ * > ）。
-
-.. すべてのコアダンプを保存します： system node run -node local-node-name partner savecore
-.. savecore コマンドが完了するのを待ってからギブバックを実行します
-+
-次のコマンドを入力すると 'savecore コマンドの進行状況を監視できます system node run -node local-node-name partner savecore -s
-
-.. admin 権限レベルに戻ります。「 set -privilege admin 」
-
-
 . コントローラをギブバックします。
 +
 .. 正常なコントローラから、交換したコントローラのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name
@@ -418,17 +367,17 @@ NOTE: ギブバックが拒否されている場合は、拒否を無効にす�
 
 . ディスクが正しく割り当てられたことを確認します。「 storage disk show -ownership
 +
-交換用コントローラに属するディスクには、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。
+交換用コントローラに属するディスクには、新しいシステム ID が表示されます。次の例では、node1で所有されているディスクに新しいシステムID 151759706が表示されます。
 
 +
 [listing]
 ----
-node1> `storage disk show -ownership`
+node1:> storage disk show -ownership
 
 Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
 ----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
-1.0.0  aggr0_1  node1 node1  -        1873775277 1873775277  -       1873775277 Pool0
-1.0.1  aggr0_1  node1 node1           1873775277 1873775277  -       1873775277 Pool0
+1.0.0  aggr0_1  node1 node1  -        151759706  151759706  -       151759706 Pool0
+1.0.1  aggr0_1  node1 node1           151759706  151759706  -       151759706 Pool0
 .
 .
 .
@@ -465,29 +414,33 @@ dr-group-id            cluster node           configuration-state
 4 entries were displayed.
 ----
 . 各コントローラに、想定されるボリュームが存在することを確認します。 vol show -node node-name
+. ストレージ暗号化が有効になっている場合は、********が必要です
 . リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラで storage failover modify -node replacement-node-name -onreboot true を有効にします
 
 
 
 
-== 手順 7 ：ストレージとボリュームの暗号化機能をリストアする
+== 手順 6 ：ストレージとボリュームの暗号化機能をリストアする
 
 [role="lead"]
-ストレージまたはボリュームの暗号化を使用するように設定したストレージシステムのコントローラモジュールまたは NVRAM モジュールを交換したら、追加の手順を実行して、暗号化機能を中断させないようにする必要があります。ストレージまたはボリュームの暗号化が有効になっていないストレージシステムでは、このタスクを省略できます。
+ストレージまたはボリュームの暗号化を使用するように設定したストレージシステムでは、暗号化機能を中断させないための追加の手順を実行する必要があります。ストレージまたはボリュームの暗号化が有効になっていないストレージシステムでは、このタスクを省略できます。
+
+
+NOTE: この手順は、DIMMの交換時には必要ありません。
 
 .手順
-. の該当する手順を使用して、ストレージまたはボリュームの暗号化機能をリストアします https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["CLI での NetApp Encryption の概要"^]。
 . オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順を実行します。
 +
 ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"^]
 ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"^]
 
 
+. SEDのMSIDをリセットします
 
 
 
 
-== 手順 8 ：障害が発生したパーツをネットアップに返却する
+== 手順 7 ：障害が発生したパーツをネットアップに返却する
 
 [role="lead"]
 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。
