@@ -3099,8 +3099,6 @@
   <block id="27e678adf7638dee0685d336eee4d327" category="list-text">NSM モジュールのカバーの取り付けネジを緩めてカバーを開きます。</block>
   <block id="7109d4dc916d45e9366b7c657316ac40" category="paragraph">NSM モジュールカバーの FRU ラベルには、 NSM モジュールの中央にある、ヒートシンクの両側にある 4 つの DIMM の位置が示されています。</block>
   <block id="8784146272dd716aac8c73ca366c7cc8" category="list-text">障害のある DIMM を物理的に特定します。</block>
-  <block id="dadd78fdb3c6e2ea2ea7ab4bbb929618" category="paragraph">DIMM に障害が発生すると、システムコンソールに、障害が発生した DIMM を示す警告メッセージが記録されます。また、ボード上の DIMM スロットの横にある DIMM 警告（黄色） LED が点灯します。</block>
-  <block id="813bee9559bf78c09aa8885a12d5320c" category="admonition">障害のある DIMM の LED は、シェルフから NSM モジュールを取り外したあと 10 分間点灯したままになります。</block>
   <block id="7a53774970ebbc388ee000791ae12db3" category="list-text">障害のある DIMM を交換します。</block>
   <block id="6b8676d0e83295cf2e06f62b67dc335e" category="list-text">交換用 DIMM を同じ向きで挿入できるように、スロット内の DIMM の向きをメモします。</block>
   <block id="40d7c94992ee1c119b1654a536669fe9" category="list-text">DIMM スロットの両端にあるツメをゆっくり押し開いて DIMM をスロットから外し、そのまま持ち上げてスロットから取り出します。</block>
@@ -3243,8 +3241,6 @@
   <block id="f35ad689c95d772c71204022636dabe5" category="list-text">次のビデオまたは記載された手順に従って、ファンを交換します。</block>
   <block id="4fe5c70371cacd7543cf54df75bedd0a" category="admonition">NSM モジュールカバーの FRU ラベルには、 5 つのファンの場所が NSM モジュールの背面の壁に沿って示されています。</block>
   <block id="5605f4aa461ce479ba2b6762822acf2b" category="list-text">障害が発生したファンを物理的に特定します</block>
-  <block id="574b0c09ebc1f816ee7722cc2b16597c" category="paragraph">ファンで障害が発生すると、システムコンソールに、障害が発生したファンを示す警告メッセージが記録されます。また、ボード上のファンスロットの近くにあるファン警告（黄色） LED が点灯します。</block>
-  <block id="1ab4aa2ef8e978637a25c0cebd43704b" category="admonition">シェルフから NSM モジュールを取り外したあと、障害が発生したファンの LED が 10 分間点灯したままになります。</block>
   <block id="9d1ae14f2ff79acfc8e3625d7e49361b" category="list-text">障害が発生したファンを交換します。</block>
   <block id="139ce540361536d483467917385aa5b2" category="list-text">障害が発生したファンの両側を青色のタッチポイントでしっかりとつかみ、垂直に持ち上げてソケットから外します。</block>
   <block id="f722151f886b6d867be170b0ee89e837" category="list-text">交換用ファンをガイドの中に合わせ、ファンモジュールのコネクタがソケットに完全に収まるまで押し込みます。</block>
@@ -3253,9 +3249,7 @@
   <block id="5cc3ac161d068bd18a26a529762bedc8" category="summary">ストレージシェルフのドキュメントでは、システムの設置、セットアップ、および保守を行うことができます。</block>
   <block id="04d800fa50ce1545b4418475b40e3ed5" category="doc">NS224 シェルフ</block>
   <block id="ee902d4594abf28b5457ac82defd33ec" category="summary">ONTAP 9.7 以降を実行している HA ペアの NS224 ドライブシェルフでブートメディアに障害が発生した場合、またはシェルフで NVMe シェルフモジュール（ NSM ）ファームウェアバージョン 1.1x 以降が実行されている場合は、ブートメディアを交換できます。ブートメディアの交換は、ドライブシェルフの電源をオンにした状態で、 I/O を実行中のまま、無停止で実行できます。</block>
-  <block id="fe4889c3c14829f659038af092c58c0f" category="paragraph">ONTAP 9.7 以降を実行している HA ペアの NS224 ドライブシェルフでブートメディアに障害が発生した場合、またはシェルフで NVMe シェルフモジュール（ NSM ）ファームウェアバージョン 1.1x 以降が実行されている場合は、ブートメディアを交換できます。ブートメディアの交換は、ドライブシェルフの電源をオンにした状態で、 I/O を実行中のまま、無停止で実行できます。</block>
   <block id="74f49f6f28d9fd5e7df6f1800c601a73" category="paragraph">いずれかのコントローラのコンソールで「 storage shelf show module 」コマンドを入力して、シェルフの NSM ファームウェアのバージョンを確認できます。</block>
-  <block id="553dc0c59541aeaac9552fd0e9932c27" category="paragraph">NSM ファームウェアバージョン 1.1x 以降を実行していないシェルフでは、ブートメディアを交換できません。 NSM モジュールを交換する必要があります。</block>
   <block id="ab72df24859b52c3af8d40d64d3c4050" category="inline-link-macro">NSM モジュール - NS224 シェルフを交換してください</block>
   <block id="daeece39bd904e83241a90c8b8570c0a" category="list-text">No.1 プラスドライバが必要です。</block>
   <block id="d6d6b039d46a324ed8ec81e6ba9ff295" category="paragraph">ブートメディアをボードに固定するネジには No.1 プラスドライバが必要です。別のタイプのドライバを使用すると、ネジを外すことができます。</block>
@@ -3265,8 +3259,6 @@
   <block id="9d0a00a5aff4ec18c5c781787962378b" category="list-text">ブートメディアを交換したら、キットに付属する RMA 指示書に従って、障害のある部品をネットアップに返却します。</block>
   <block id="d7fc7b8a28737104902684f03a8279e6" category="list-text">次のビデオまたは記載された手順に従って、ブートメディアを交換します。</block>
   <block id="41d0446a43bf0ca4e32d8aa74acfb9dc" category="list-text">障害が発生したブートメディアの物理的な場所を特定し</block>
-  <block id="2ac77c1f53d2acaf74354a442d9484d9" category="paragraph">ブートメディアは、電源装置とは反対のシェルフシャーシの壁に沿って配置されています。ボード上のブートメディアスロットの横にあるブートメディア警告（黄色） LED が点灯します。</block>
-  <block id="926c6df0fdfeee94a62afab70e1f9cb3" category="admonition">シェルフから NSM モジュールを取り外したあと、 LED が 10 分間点灯したままになります。</block>
   <block id="f100a7d7d4d0125055a6d5f3a0bea50d" category="list-text">ブートメディアを交換します。</block>
   <block id="0c6687325a026afea7971f92ec185cbb" category="list-text">No.1 プラスドライバを使用して、ブートメディアの下部（ノッチ付き）をボードに固定しているネジを慎重に取り外します。</block>
   <block id="76099b6de6a0677a0267f7925ff91f68" category="list-text">ノッチ付き端を少し上に回転させ、ソケットから外れるまでゆっくりと手前に引き出して、ブートメディアを取り外します。</block>
@@ -3490,8 +3482,6 @@
   <block id="69346a8711cdec1c863cab85cc16d548" category="list-text">次のビデオまたは記載された手順に従って、 RTC バッテリを交換します。</block>
   <block id="4666aab744a5064fa4082c8fac681c8b" category="paragraph">NSM モジュールカバーの FRU ラベルには、 NSM モジュールの前面近くおよび電源装置の右側にある RTC バッテリの場所が示されています。</block>
   <block id="8e3521698724daea37d72f82d00b93c9" category="list-text">障害が発生した RTC バッテリを物理的に特定します。</block>
-  <block id="803b47b0e40e190124f45c4a9e49deaf" category="paragraph">ボード上のバッテリスロットの横にある RTC バッテリ警告（黄色） LED が点灯します。</block>
-  <block id="4ed28e0141128c6835c2a5c39d8fbd44" category="admonition">シェルフから NSM モジュールを取り外したあと、障害が発生した RTC バッテリの LED が 10 分間点灯したままになります。</block>
   <block id="4230cd66e4b97c5c537e2fc66b106a54" category="list-text">RTC バッテリを交換します。</block>
   <block id="bf6676c1b4e1cac9f1e6593249e2ba7d" category="list-text">バッテリをそっと押してホルダーから離し、持ち上げてホルダーから取り出します。</block>
   <block id="3b3396eaf97f4b90a50effb7d2321635" category="list-text">交換用バッテリを斜めにしてホルダーに挿入し（ホルダーから傾けた状態）、垂直な位置に押し込んでから、完全に装着されるまでコネクタにしっかりと押し込みます。</block>
@@ -5712,7 +5702,6 @@
   <block id="d92397f405b46035383db7778e4795f5" category="list-text">2 つ目のコントローラモジュールのポートを再設定するには、最初の手順（ A ）を繰り返します。</block>
   <block id="ed44ef953e4348bf2bf852e9813bdc5d" category="list-text">2 台目のコントローラをリブートしてポートの変更を有効にし、 2 つ目の手順（ b ）を繰り返します。</block>
   <block id="744b6c476a210a04195ef528c6730bc7" category="paragraph">HA ペアが ONTAP 9.7 または 9.6 を実行している場合は ' 専用でないポートは 'Is dedicated ？に false と表示されます 列には、「 State 」列に「 disabled 」と表示されます。</block>
-  <block id="24ce88dcb36e4e61a4334746ee0dc49a" category="list-text">サポートされる最小バージョンの NSM ファームウェアがある HA ペアで ONTAP 9.7 以降が実行されているか、または ONTAP 9.6 のバージョンと NSM ファームウェアバージョン 1.1x 以降が実行されている必要があります。</block>
   <block id="71eb59c59a42227ae8b45d0cfaf6f52f" category="paragraph">ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用したシステムの初期設定の例を紹介するビデオを 2 種類紹介します。</block>
   <block id="25cf65ddd80144b70d3dac5fc3efd292" category="doc">ステップの詳細 - AFF C190</block>
   <block id="94c14a3a3429ee874d19f598eabeb841" category="inline-link-macro">使用している ONTAP のバージョンに対応したリリースノート</block>
@@ -7360,4 +7349,12 @@
   <block id="40ef2970d7d205d6f0ba4ecddaec7b51" category="list-text">待機しているギブバックを実行しています...交換用モジュールを取り付けたコントローラのコンソールにメッセージが表示されたら、正常なコントローラから、新しいパートナーシステムIDが自動的に割り当てられたことを確認します。<block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix=" " category="inline-code"></block></block>
   <block id="e8060bae9316148ae38460dbb2356f26" category="paragraph">交換用コントローラに属するディスクには、新しいシステム ID が表示されます。次の例では、node1で所有されているディスクに新しいシステムID 151759706が表示されます。</block>
   <block id="209f885dfe9e7d41b82f04b945d68576" category="list-text">ストレージ暗号化が有効になっている場合は、********が必要です</block>
+  <block id="929bfee1ef6e5f44f83a22a0ee585e88" category="paragraph">ファンで障害が発生すると、システムコンソールに、障害が発生したファンを示す警告メッセージが記録されます。</block>
+  <block id="3f39e3eb27d53c3293d829964b0aec99" category="list-text">シェルフの両方のNSMモジュールで同じバージョンのファームウェアバージョン0200以降が実行されていることを確認してください。</block>
+  <block id="c4a176fcfed8ad262bd0a9b82f87a961" category="paragraph">DIMM に障害が発生すると、システムコンソールに、障害が発生した DIMM を示す警告メッセージが記録されます。</block>
+  <block id="85cd9535810e294c0523d2b75788a394" category="paragraph">ONTAP 9.7以降を実行しているHAペアのNS224ドライブシェルフでブートメディアに障害が発生した場合、またはシェルフでNVMeシェルフモジュール（NSM）ファームウェアバージョン0111以降が実行されている場合は、ブートメディアを交換できます。ブートメディアの交換は、ドライブシェルフの電源をオンにした状態で、 I/O を実行中のまま、無停止で実行できます。</block>
+  <block id="8813a3bc6746d75d51a9aca6d90b54cb" category="list-text">サポートされる最小バージョンのNSMファームウェアがあるHAペアでONTAP 9.7以降が実行されているか、またはONTAP 9.6のバージョン0111以降が搭載されたHAペアですでに実行されている必要があります。</block>
+  <block id="480be366fc83dd9fbbf8246b5e2f9f40" category="paragraph">シェルフがNSMファームウェアバージョン0111以降を実行していない場合、ブートメディアを交換できないため、NSMモジュールを交換する必要があります。</block>
+  <block id="0c2b7daebf1a1e94a676675bf614fba6" category="paragraph">ブートメディアは、電源装置とは反対のシェルフシャーシの壁に沿って配置されています。</block>
+  <block id="178d438c63a174b511750f68655d814d" category="list-text">RTCバッテリを交換し、NSMモジュールを再度取り付け、モジュールをブートすると、ONTAP によってリアルタイムクロック時間が更新されます。</block>
 </blocks>

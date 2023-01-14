@@ -196,4 +196,5 @@ NSM モジュールがリブートすると、オペレータディスプレイ�
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
 
+. シェルフの両方のNSMモジュールで同じバージョンのファームウェアバージョン0200以降が実行されていることを確認してください。
 
