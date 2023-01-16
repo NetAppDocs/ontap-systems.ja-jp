@@ -45,7 +45,6 @@
   <block id="15577d2c813239ab53fdc6f35d8a1dc5" category="doc">ノードペアをアップグレードします</block>
   <block id="405ab80b96586360ea83735c37305935" category="summary">ノード 4 のインストールを確認します</block>
   <block id="0e635d7a91ccc4eccdfb03e35353c899" category="doc">必要な工具とドキュメント</block>
-  <block id="dec0306e681fc720cf31bc4851ebcee4" category="cell">ONTAP 9 システムアドミニストレーションリファレンス</block>
   <block id="1988e9c8cf124cb346a67d52ea613567" category="cell">『 ONTAP 9 SAN アドミニストレーションガイド』</block>
   <block id="8fb4b518ce39a0704f920c9d4f2f7b77" category="doc">アグリゲートの再配置を使用してコントローラハードウェアをアップグレードする</block>
   <block id="32de3fe80cc3182e6d21291decbf392a" category="inline-link-macro">ARL アップグレードの概要</block>
@@ -220,7 +219,6 @@
   <block id="49d981e4792b1b6bfc193d341fe3b1d4" category="paragraph">システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。</block>
   <block id="118a19c264126d2eb7de4542c32c102d" category="section-title">手順 1 ：障害のあるコントローラをシャットダウンします</block>
   <block id="16f911f59a050f663b12ff955a280de7" category="paragraph">障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをテイクオーバーする必要があります。</block>
-  <block id="38093d6513bb2e960eab247f00f04533" category="paragraph"><block ref="38093d6513bb2e960eab247f00f04533" category="inline-link-rx"></block></block>
   <block id="a2efb773cb3f251f8687b1e41309b525" category="paragraph">LOADER プロンプト</block>
   <block id="b1ba38ad947dd1578f31b0197f58b44d" category="paragraph">次の手順に進みます。</block>
   <block id="fd66c964768074eb90f4f1426229bf3e" category="paragraph">ギブバックを待っています</block>
@@ -5741,7 +5739,6 @@
   <block id="e85e66f99bf70a0cd52615d346aa4f9f" category="paragraph"><block ref="e85e66f99bf70a0cd52615d346aa4f9f" category="inline-link-macro-rx"></block></block>
   <block id="e3d9e54e0daad2e60e36e8b370fec883" category="paragraph"><block ref="e3d9e54e0daad2e60e36e8b370fec883" category="inline-link-macro-rx"></block></block>
   <block id="083781fc87756a032121b806b4d18a92" category="paragraph"><block ref="083781fc87756a032121b806b4d18a92" category="inline-link-macro-rx"></block></block>
-  <block id="b95a2b769ddc69403557ab79e1942007" category="paragraph"><block ref="b95a2b769ddc69403557ab79e1942007" category="inline-link-rx"></block></block>
   <block id="5f3f6cd3a4d5edc50129f46b603aa9c2" category="paragraph"><block ref="5f3f6cd3a4d5edc50129f46b603aa9c2" category="inline-link-macro-rx"></block></block>
   <block id="80fbd508bddeffc33092c60be0d4f6b0" category="paragraph">コントローラ A をシェルフにケーブル接続します。 <block ref="5a7e82fa4b93fb16c2c5bc44a8522f5a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e477637685baafe9bbd353f71ef51283" category="paragraph">システムがブートを開始します。初回のブートには最大 8 分かかる場合があります。</block>
@@ -6482,7 +6479,6 @@
   <block id="3df4b609e8276258189914063ffb17c2" category="list-text">これらの手順のコマンドを正しいコントローラに適用することが重要です。</block>
   <block id="6ecaf183574ece325cced3bb483dfdf9" category="list-text">impaired_node は、保守を実行しているコントローラです。</block>
   <block id="d5e5a42c3659480b5bd0d7fe962a3e0d" category="list-text">healthy_node は、障害のあるコントローラの HA パートナーです。</block>
-  <block id="aae78f4a3d47a08dddca98a632d4a75f" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタでクォーラムを使用していない場合や、正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。</block>
   <block id="852ccbca31b38b90e5621b15b3d30e1b" category="paragraph">障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _ 」障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C を押し、「 y 」と入力します。</block>
   <block id="fdd4547d2c765390cc53d47d00b7ed31" category="list-text">保守対象のコントローラが LOADER プロンプトに表示されていない場合は、コントローラをリブートします。「 system node halt -node _node_name _</block>
   <block id="bf333756fca94003818a0db8ced6f7d9" category="list-text">ストレージをギブバックして、コントローラを通常の動作に戻します。 storage failover giveback -ofnode `_impaired_node_name _`</block>
@@ -6744,7 +6740,6 @@
   <block id="2560c526c9d334c39cab4311db7eff4d" category="paragraph">シェルフに空きがある場合、つまりドライブを再取り付けするドロワーのドライブ数がサポートされる12本よりも少ない場合は、最初の4本のドライブを前面スロット（0、3、6、および9）に取り付けます。</block>
   <block id="b18ad0a07953c39e92025f3df711d7e8" category="list-text"><block ref="b18ad0a07953c39e92025f3df711d7e8" category="inline-link-rx"></block></block>
   <block id="137edbb782dbd05e84addda1ad111604" category="list-text"><block ref="137edbb782dbd05e84addda1ad111604" category="inline-link-rx"></block></block>
-  <block id="d331c2ddc96dbf38f25371617243bf17" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="1ab03132ea6210439f901707b3806211" category="inline-link-macro-rx"></block>。</block>
   <block id="ec5866194941126dcbe55d496f612191" category="list-text">障害のあるコントローラがスタンドアロン構成で LOADER プロンプトが表示されている場合は、にお問い合わせください <block ref="d4b5db761eff3af8abec9c2aa8b19609" category="inline-link-macro-rx"></block>。</block>
   <block id="4729966d1b42f799e14eba4dd6dedbdb" category="paragraph"><block ref="4729966d1b42f799e14eba4dd6dedbdb" category="inline-link-rx"></block></block>
   <block id="60db4a77031ab02d5c7d793d8ee8e564" category="admonition">プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block></block>
@@ -7316,8 +7311,6 @@
   <block id="7d60346fb854755b0fc4b8486f2e5769" category="section-title">手順1：ONTAP に_replacement _ controllerのライセンスをインストールします</block>
   <block id="541648f14089765ba6e8c3198be32507" category="section-title">手順 2 ：ブートメディアを交換します</block>
   <block id="6fdf23777adc5b39f52f2829b69833e5" category="inline-link-macro">ノードをクラスタと同期します</block>
-  <block id="1bb835185391c9f6463cb5dc111090d1" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
-  <block id="7260398ee351f45c2b93073dcc9f358d" category="list-text">コントローラが 3 台以上あるクラスタは、クォーラムを構成している必要があります。クラスタでクォーラムを構成していない場合、または正常なコントローラと表示される場合<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 資格とヘルスについては、障害のあるコントローラをシャットダウンする前に、問題 を修正する必要があります。を参照してください <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
   <block id="692418fcc9983296fd6b89b4072b99d2" category="inline-link-macro">SEDを非保護モードに戻します</block>
   <block id="aa641c641cc4509747c629778ceba1e6" category="list-text">NetApp Storage Encryptionを使用している場合は、の手順に従ってMSIDをリセットしておく必要があります <block ref="deeaf76d485e47e462d03c774bc2ca5e" category="inline-link-macro-rx"></block>。</block>
   <block id="dca9d9d34ff973dbf261373e223aa9e4" category="list-text">SANシステムを使用している場合は、イベントメッセージを確認しておく必要があります <block ref="090678c8ba0a25df800d3d4eeaf19522" prefix="(" category="inline-code"></block>)を参照してください。。<block ref="090678c8ba0a25df800d3d4eeaf19522" prefix=" " category="inline-code"></block> コマンドは、ノード名、そのノードのクォーラムステータス、ノードの可用性ステータス、およびノードの動作ステータスを表示します。</block>
@@ -7357,4 +7350,6 @@
   <block id="480be366fc83dd9fbbf8246b5e2f9f40" category="paragraph">シェルフがNSMファームウェアバージョン0111以降を実行していない場合、ブートメディアを交換できないため、NSMモジュールを交換する必要があります。</block>
   <block id="0c2b7daebf1a1e94a676675bf614fba6" category="paragraph">ブートメディアは、電源装置とは反対のシェルフシャーシの壁に沿って配置されています。</block>
   <block id="178d438c63a174b511750f68655d814d" category="list-text">RTCバッテリを交換し、NSMモジュールを再度取り付け、モジュールをブートすると、ONTAP によってリアルタイムクロック時間が更新されます。</block>
+  <block id="d067784c8bad4d41a4f87accd50abbc1" category="list-text">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性についてfalseと表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
+  <block id="1c0138111ac00fdce24dc38ffd9859d5" category="list-text">コントローラが 3 台以上あるクラスタは、クォーラムを構成している必要があります。クラスタでクォーラムを構成していない場合、または正常なコントローラと表示される場合<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 資格とヘルスについては、障害のあるコントローラをシャットダウンする前に、問題 を修正する必要があります。を参照してください <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
 </blocks>
