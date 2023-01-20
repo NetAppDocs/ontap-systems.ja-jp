@@ -6304,7 +6304,6 @@
   <block id="fb52499eab0b4b1b7caf5081ae4bb295" category="doc">コントローラモジュールハードウェアを交換します - AFF A220 および FAS2700</block>
   <block id="77c90a069b30ca068906f4bbc5d904e1" category="doc">オンボード暗号化キーを確認 - AFF A220 および FAS2700</block>
   <block id="c6eb316cc94904301a8765db5aa1680f" category="doc">ブートメディアの交換 - AFF A220 および FAS2700</block>
-  <block id="332ecfda75eef89a55acd64671013612" category="doc">NS224 シェルフをホットアドします</block>
   <block id="3fa677b8ecb97b0ae0d14f9ded5ed49a" category="doc">障害のあるコントローラ FAS500f をシャットダウンします</block>
   <block id="a27042b0e01fb9b4136d2de6e8c1db73" category="doc">オンボード暗号化キー FAS500f を確認します</block>
   <block id="ee2afac6b0f5165d1fc3096864ac9a41" category="doc">シャーシ交換の概要 - FAS500f</block>
@@ -7352,4 +7351,5 @@
   <block id="178d438c63a174b511750f68655d814d" category="list-text">RTCバッテリを交換し、NSMモジュールを再度取り付け、モジュールをブートすると、ONTAP によってリアルタイムクロック時間が更新されます。</block>
   <block id="d067784c8bad4d41a4f87accd50abbc1" category="list-text">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性についてfalseと表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
   <block id="1c0138111ac00fdce24dc38ffd9859d5" category="list-text">コントローラが 3 台以上あるクラスタは、クォーラムを構成している必要があります。クラスタでクォーラムを構成していない場合、または正常なコントローラと表示される場合<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 資格とヘルスについては、障害のあるコントローラをシャットダウンする前に、問題 を修正する必要があります。を参照してください <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
+  <block id="305fade7b83ae4e7549b33a3ae1b1fd0" category="doc">シェルフ- NS224シェルフをホットアドします</block>
 </blocks>
