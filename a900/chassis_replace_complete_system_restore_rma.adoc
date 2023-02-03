@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a900, verify and set HA state, run diagnostics, complete the replacement process 
 summary: キットに付属する RMA 指示書に従って、シャーシの HA 状態を確認し、診断を実行し、障害が発生した部品をネットアップに返却する必要があります。 
 ---
-= 構成をリストアおよび検証します。 AFF C190
+= 設定AFF A900を復元して確認します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -154,7 +154,7 @@ NOTE: 続行する前に、両方のコントローラでメンテナンスモ�
 . クリーンシャットダウンを実行し、電源装置の接続を解除します。
 . システムレベルの診断を実行するための考慮事項をすべて確認するとともに、ケーブルがしっかりと接続されているか、ハードウェアコンポーネントがストレージシステムに適切に取り付けられているかを確認します。
 . 電源装置を再接続し、ストレージシステムの電源をオンにします。
-. システムレベルの診断テストを再実行します。
+. システムレベルの診断テストを再実行します。+システムレベルの診断テストが再度失敗した場合は、に連絡します link:http://mysupport.netapp.com/["mysupport.netapp.com"^]。
 
 
 |===

@@ -423,19 +423,121 @@ dr-group-id            cluster node           configuration-state
 == 手順 6 ：ストレージとボリュームの暗号化機能をリストアする
 
 [role="lead"]
-ストレージまたはボリュームの暗号化を使用するように設定したストレージシステムでは、暗号化機能を中断させないための追加の手順を実行する必要があります。ストレージまたはボリュームの暗号化が有効になっていないストレージシステムでは、このタスクを省略できます。
+ストレージ暗号化を有効にしている場合は、該当する手順 を使用します。
 
-
-NOTE: この手順は、DIMMの交換時には必要ありません。
-
+[role="tabbed-block"]
+====
+.オプション1：オンボードキーマネージャを使用する
+--
 .手順
-. オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順を実行します。
+. ノードをブートメニューでブートします。
+. オプション10を選択します。 `Set onboard key management recovery secrets`。
+. プロンプトでクラスタのオンボードキーマネージャのパスフレーズを入力します。Need example here ******
+. バックアップキーのデータを入力します
 +
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"^]
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"^]
+
+NOTE: パスフレーズの情報が完了すると、ノードがブートメニューに戻ります。
+
+. オプション1を選択します。 `Normal Boot`
+. 「 storage failover giveback -fromnode local-only -cfo-aggregates true 」コマンドを使用して、 CFO アグリゲートだけをギブバックします。
++
+** ディスク障害のためにコマンドが失敗した場合は、ディスクを物理的に取り外します。ただし、交換用のディスクを受け取るまでは、ディスクをスロットに残しておきます。
+** CIFS セッションが開いているためにコマンドが失敗する場合は、 CIFS セッションを閉じる方法をお客様に確認します。
++
+
+NOTE: CIFS を終了原因すると、データが失われる可能性があります。
+
+** パートナーの準備ができていないためにコマンドが失敗した場合は、 NVRAMs が同期されるまで 5 分待ちます。
+** NDMP 、 SnapMirror 、または SnapVault のプロセスが原因でコマンドが失敗する場合は、そのプロセスを無効にします。詳細については、該当するコンテンツを参照してください。
 
 
-. SEDのMSIDをリセットします
+. ギブバックが完了したら、「 storage failover show 」コマンドと「 storage failover show-giveback 」コマンドを使用して、フェイルオーバーとギブバックのステータスを確認します。
++
+CFO アグリゲート（ルートアグリゲートおよび CFO 形式のデータアグリゲート）のみが表示されます。
+
+. ONTAP 9.6 以降を実行している場合は、セキュリティキー管理ツールのオンボード同期を実行します。
++
+.. 「 securitykey-manager onboard sync 」コマンドを実行し、プロンプトが表示されたらパスフレーズを入力します。
+.. 'security key-manager key-query' コマンドを入力して ' オンボード・キー・マネージャに格納されているすべてのキーの詳細な表示を表示し ' すべての認証キーの 'restored`column=yes/true' を確認します
++
+
+NOTE: 「 Restored 」列が「 yes/true 」以外の場合は、カスタマサポートにお問い合わせください。
+
+.. キーがクラスタ全体で同期されるまで 10 分待ちます。
+
+
+. パートナーコントローラにコンソールケーブルを接続します。
+. storage failover giveback -fromnode local コマンドを使用して、ターゲットコントローラをギブバックします。
+. storage failover show コマンドを使用して ' ギブバックのステータスを確認します完了を報告してから 3 分後に確認します
++
+20 分経ってもギブバックが完了しない場合は、カスタマーサポートにお問い合わせください。
+
+. クラスタシェルプロンプトで、 net int show -is-home false コマンドを入力し、ホームコントローラとポートにない論理インターフェイスを表示します。
++
+いずれかのインターフェイスが「 false 」と表示されている場合は、 net int revert コマンドを使用して、これらのインターフェイスをホームポートに戻します。
+
+. コンソール・ケーブルをターゲット・コントローラに移動し 'version -v コマンドを実行して ONTAP のバージョンを確認します
+. 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
+
+
+--
+.オプション2：External Managerを使用する
+--
+. ノードをブートメニューでブートします。
+. オプション11を選択します。 `Configure node for external key management`。
+. プロンプトに管理証明書の情報を入力します。Need example here *****
++
+
+NOTE: 管理証明書情報が完了すると、ノードがブートメニューに戻ります。
+
+. オプション1を選択します。 `Normal Boot`
+. コンソールケーブルをパートナーコントローラに移動し、 storage failover giveback -fromnode local-only -cfo-aggregates true local コマンドを使用して、ターゲットコントローラストレージをギブバックします。
++
+** ディスク障害のためにコマンドが失敗した場合は、ディスクを物理的に取り外します。ただし、交換用のディスクを受け取るまでは、ディスクをスロットに残しておきます。
+** CIFS セッションが開いているためにコマンドが失敗する場合は、 CIFS セッションを閉じる方法をお客様に確認してください。
++
+
+NOTE: CIFS を終了原因すると、データが失われる可能性があります。
+
+** パートナーの準備が完了していないためにコマンドが失敗した場合は、 NVMEM が同期されるまで 5 分待ちます。
+** NDMP 、 SnapMirror 、または SnapVault のプロセスが原因でコマンドが失敗する場合は、そのプロセスを無効にします。詳細については、該当するコンテンツを参照してください。
+
+
+. 3 分待ってから、 storage failover show コマンドを使用してフェイルオーバーステータスを確認します。
+. クラスタシェルプロンプトで、「 net int show -is-home false 」コマンドを入力し、ホームコントローラとポートにない論理インターフェイスを表示します。
++
+いずれかのインターフェイスが「 false 」と表示されている場合は、「 net int revert 」コマンドを使用して、これらのインターフェイスをホームポートに戻します。
+
+. コンソール・ケーブルをターゲット・コントローラに移動し 'version -v コマンドを実行して ONTAP のバージョンを確認します
+. 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
+. クラスタシェルプロンプトで「 storage encryption disk show 」を使用して出力を確認します。
+. キー管理サーバに保存されている暗号化キーと認証キーを表示するには 'security key-manager key-query コマンドを使用します
++
+** リストアされたカラム = 'yes/true' の場合は ' 終了し ' 交換プロセスを完了することができます
+** 'Key Manager type`=external' および 'restored' カラム = が 'yes/true' 以外の場合は 'security key-manager external restore コマンドを使用して認証キーのキー ID を復元します
++
+
+NOTE: コマンドが失敗した場合は、カスタマーサポートにお問い合わせください。
+
+** 'Key Manager type`=onboard ' および 'restored' カラム = 'yes/true' 以外の場合は、 security key-manager onboard sync コマンドを使用して Key Manager タイプを再同期します。
++
+security key-manager key-query コマンドを使用して ' すべての認証キーの Restored カラム = 'yes/true' を確認します
+
+
+
+. パートナーコントローラにコンソールケーブルを接続します。
+. storage failover giveback -fromnode local コマンドを使用してコントローラをギブバックします。
+. 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
+
+
+--
+====
+. ディスクのMSIDをリセットします。
++
+.. オンボードストレージ暗号化を使用している場合は、の手順 に従います https://docs.netapp.com/us-en/ontap/encryption-at-rest/assign-authentication-keys-seds-onboard-task.html["FIPS ドライブまたは SED にデータ認証キーを割り当てる（オンボードキー管理）"^]
+.. 外部キー管理ツールを使用しています。の手順 に従います https://docs.netapp.com/us-en/ontap/encryption-at-rest/assign-authentication-keys-seds-external-task.html["FIPS ドライブまたは SED にデータ認証キーを割り当てる（外部キー管理）"^]
+
+
 
 
 

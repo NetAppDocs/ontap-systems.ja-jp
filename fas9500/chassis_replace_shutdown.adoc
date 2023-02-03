@@ -31,7 +31,9 @@ summary: シャーシを交換するには、コントローラをシャット�
  a| 
 クラスタに 2 台のコントローラがあります
  a| 
-cluster ha modify -configured false 「 storage failover modify -node node0 -enabled false 」という名前になります
+`cluster ha modify -configured false`
+
+「 storage failover modify -node node0 -enabled false 」という名前のノードが追加されました
 
 
 

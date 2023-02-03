@@ -205,7 +205,6 @@
   <block id="f80af4e39d67de6feaae8747f603e24b" category="paragraph">次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * &gt; system node AutoSupport invoke -node * -type all -message MAINT=2h`</block>
   <block id="880c0610027a11af7086ae7e380e12e5" category="list-text">システムにコントローラモジュールが 2 つある場合は、 HA ペアを無効にします。</block>
   <block id="d426a3f5c9c0e3362f4ed536e7643c03" category="cell">clustered ONTAP を実行しているシステムの構成</block>
-  <block id="8d6f30824233e0351fc71f18fbb5c436" category="paragraph">cluster ha modify -configured false 「 storage failover modify -node node0 -enabled false 」という名前になります</block>
   <block id="b2aa61dcee4d7b77fcd001973469ddde" category="paragraph">「 storage failover modify -node node0 -enabled false 」という名前のノードが追加されました</block>
   <block id="481250f3e8ec41b0e994305d8fc52b4a" category="paragraph">次のような確認メッセージが表示されます。</block>
   <block id="cf55af4b4668a579d36bfd91785ecbec" category="summary">NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。</block>
@@ -2062,11 +2061,6 @@
   <block id="2a8c61005de5c4642cb8dbeba1544811" category="paragraph"><block ref="2a8c61005de5c4642cb8dbeba1544811" category="inline-link-macro-rx"></block></block>
   <block id="97bf953b242f5f98851629db59e82601" category="inline-link-macro">DS4243 ディスクシェルフのマニュアル</block>
   <block id="b6d30e3dcd0ba2af54c33b3685aa4429" category="paragraph"><block ref="b42da6ebf9625c910c5d3ba150b439e5" category="inline-link-macro-rx"></block></block>
-  <block id="f453086a36d64a5193cd4183c14bcd72" category="inline-link-macro">AFF 8000 シリーズのドキュメント</block>
-  <block id="71bdc94f19d5947bd1cb6d437f119ba2" category="inline-link-macro">FAS8000 シリーズのドキュメント</block>
-  <block id="2b3a51bca746a221bf4a0af6d3098ccf" category="paragraph"><block ref="2b3a51bca746a221bf4a0af6d3098ccf" category="inline-link-macro-rx"></block></block>
-  <block id="c7e39e875a3a875d9445eace0794b0f5" category="inline-link-macro">FAS2500 シリーズのドキュメント</block>
-  <block id="ebc5a75e4df8077b15f7cef6c123c7db" category="paragraph"><block ref="ebc5a75e4df8077b15f7cef6c123c7db" category="inline-link-macro-rx"></block></block>
   <block id="f707961e750c3177d39579c3dd6298da" category="doc">システムのリストアが完了しました - AFF A220 / FAS2700</block>
   <block id="4bbcc3f3d11202923e4c61604d535622" category="list-text"><block ref="4bbcc3f3d11202923e4c61604d535622" category="inline-link-macro-rx"></block></block>
   <block id="7c308c086b5e1b83f888d7cdb4ec7dfc" category="list-text"><block ref="7c308c086b5e1b83f888d7cdb4ec7dfc" category="inline-link-macro-rx"></block></block>
@@ -5881,7 +5875,6 @@
   <block id="3c941071b26a1822e1cb4494c2fd71da" category="doc">障害のあるコントローラ AFF A900 をシャットダウンします</block>
   <block id="68908cbb53a7b71659933af600697a19" category="summary">NVRAM11 バッテリを搭載したデステージコントローラ電源モジュール \ （ DCPM \ ）をホットスワップするには、障害が発生した DCPM モジュールの場所を確認し、シャーシから取り外して、交換用 DCPM モジュールをインストールする必要があります。</block>
   <block id="d04f6248062fc9d16de8588d61c28d1e" category="doc">NVRAM11 バッテリを搭載したデステージコントロール電源モジュール AFF A900 を交換してください</block>
-  <block id="b36f3c4187cae8553973b284879e1c97" category="paragraph">NVRAM11 バッテリを搭載したデステージコントローラ電源モジュール（ DCPM ）をホットスワップするには、障害が発生した DCPM モジュールの場所を確認し、シャーシから取り外して、交換用の DCPM モジュールをインストールする必要があります。</block>
   <block id="90eb2af5a768fd638c695d0394817a0e" category="section-title">手順 1 ： DCPM モジュールを交換します</block>
   <block id="6acd2520bad86e2719b0a66d04f59f28" category="list-text">モジュールハンドルのテラコッタロックボタンを押し、 DCPM モジュールをシャーシから取り出します。</block>
   <block id="dd70305ea5f8fef426dbcb35b56b5a51" category="paragraph">DCPM モジュールのテラコッタロックボタン</block>
@@ -6076,7 +6069,6 @@
   <block id="588550e231fd9dcead167f2e3a8a2926" category="paragraph">ブートメディアを固定しているネジを外すためにプラスドライバが必要です。</block>
   <block id="c2a9feacea3374ba5c6052aaa36c24d5" category="list-text">storage failover modify コマンドを使用して自動ギブバックを無効にした場合は ' 自動ギブバックをリストアします</block>
   <block id="8eea6ffadcece75bbf0826ed26885fb9" category="list-text">この手順はシステムの停止を伴います。2 ノードクラスタでは、マルチノードクラスタでサービスが完全に停止し、部分的に停止します。</block>
-  <block id="c651d2f010c85fa1c8605da5e127657e" category="paragraph"><block ref="c651d2f010c85fa1c8605da5e127657e" category="inline-link-macro-rx"></block></block>
   <block id="72dd2309b9e786d12d19350620a3d631" category="list-text">交換用ノードの LOADER プロンプトからノードをブートし、システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられたら、「 y 」と入力します。</block>
   <block id="511831afd7b3843888ba00743f2e205e" category="list-text">電源装置の接続を解除します。</block>
   <block id="24e3ea03dd6cd41feb1c45f7310ac774" category="paragraph">ブートメディアを固定しているネジを外すために、 No.1 プラスドライバが必要です。コントローラモジュール内のスペースには制約があるため、ネジを失うことがないようにマグネットでに取り付ける必要があります。</block>
@@ -6603,7 +6595,6 @@
   <block id="ed6243b9da8cbb52d7ded5d7a78d3b37" category="paragraph">&lt;stdin&gt; で未解決のディレクティブ : ../ _include/drive_hotswap _sas .adoc.adoc[]</block>
   <block id="2bed99b4660dcf909368c3a2ae62b513" category="doc">SSD ドライブまたは HDD ドライブを交換してください - AFF A800</block>
   <block id="ad451e1c6a6a584f53b88b5c73144db7" category="doc">その他のモデル</block>
-  <block id="07fa61787cd64fafda80a8c62e643a38" category="section-title">プラットフォームモデル</block>
   <block id="7a31198e87ee2c9071d7bf63050a7088" category="section-title">シェルフモデル</block>
   <block id="03be12a0476133b21cb6c1c927956d23" category="doc">SSD ドライブまたは HDD ドライブを交換します - AFF A220 および FAS2700</block>
   <block id="24b3b18d4ae3c460037fb58156d310c6" category="doc">FAS2700 システムのドキュメント</block>
@@ -7352,4 +7343,44 @@
   <block id="d067784c8bad4d41a4f87accd50abbc1" category="list-text">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性についてfalseと表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
   <block id="1c0138111ac00fdce24dc38ffd9859d5" category="list-text">コントローラが 3 台以上あるクラスタは、クォーラムを構成している必要があります。クラスタでクォーラムを構成していない場合、または正常なコントローラと表示される場合<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 資格とヘルスについては、障害のあるコントローラをシャットダウンする前に、問題 を修正する必要があります。を参照してください <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
   <block id="305fade7b83ae4e7549b33a3ae1b1fd0" category="doc">シェルフ- NS224シェルフをホットアドします</block>
+  <block id="859c951ebab21901f2fd6183c53339d5" category="summary">NVRAM11バッテリを搭載したデステージコントローラ電源モジュール\（DCPM \）をホットスワップするには、障害が発生したDCPMモジュールの場所を確認し、シャーシから取り外して、交換用DCPMモジュールをインストールする必要があります。</block>
+  <block id="8ea19d634d233a26f4f650bd2e2b467c" category="paragraph">NVRAM11バッテリを搭載したデステージコントローラ電源モジュール（DCPM）をホットスワップするには、障害が発生したDCPMモジュールの場所を確認し、シャーシから取り外して、交換用のDCPMモジュールをインストールする必要があります。</block>
+  <block id="58fb0a507d97ff336e5db5d69ba846e9" category="inline-link">10GbE 接続用に、 40GbE NIC ポートを複数の 10GbE ポートに変換します</block>
+  <block id="8ae73aa056882e7b560f3b52b5764957" category="list-text">システムが40GbE NICで10GbEのクラスタインターコネクトとデータ接続をサポートするように設定されている場合は、を使用してそれらのポートを10GbE接続に変換します<block ref="5ec041cdb2bbdf01cd4ea2c400b17495" prefix=" " category="inline-code"></block> コマンドをメンテナンスモードで実行します。を参照してください<block ref="2d808a662d9493bde97b50913a25a294" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="d875f9fec183da794cd6d6245ef00d1d" category="paragraph"><block ref="272f3c49a4ec1753c70013d06165277b" prefix="" category="inline-code"></block></block>
+  <block id="1bb835185391c9f6463cb5dc111090d1" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
+  <block id="aae78f4a3d47a08dddca98a632d4a75f" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタでクォーラムを使用していない場合や、正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。</block>
+  <block id="68d9e980b8b4998ef88139d7b7ab8ff6" category="paragraph"><block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block></block>
+  <block id="3cf0b39ddc0b0c6fbe705a62aacc7d3c" category="list-text">シャーシの前面で、プラスのストッパーになるまで、親指で各ドライブをしっかりと押し込みます。これにより、ドライブがシャーシのミッドプレーンにしっかりと装着されます。</block>
+  <block id="7acc547c8acfbe4a745ca72a3e0e83e4" category="image-alt">DRW A800ドライブがIEOPS 960に装着されました</block>
+  <block id="9fec9d1f051b750c4b137dc68aaa9695" category="list-text">シャーシの背面に移動します。接地対策がまだの場合は、自身で適切に実施します。</block>
+  <block id="3caccb46026f8affc6c95f65aa0c8af1" category="list-text">コントローラモジュールをシャーシから引き出し、安定した平らな場所に置きます。</block>
+  <block id="9bc9bee1c7c86ea6e815437b4f02ff6c" category="paragraph">このとき、空いている手でコントローラモジュールの底面を支えてください。。</block>
+  <block id="1422875ceb77c2edc7c07474b11b3c6f" category="list-text">コントローラモジュールのエアダクトを開きます。</block>
+  <block id="43ae4ee714a69574b12c2b05c54410b5" category="list-text">モジュールハンドルのテラコッタリリースボタンを押し、DCPMモジュールをシャーシから取り出します。</block>
+  <block id="0721343ac8e5e32a5122775fda62e4d0" category="doc">設定AFF A900を復元して確認します</block>
+  <block id="4db8dbc03fb77b9d2fa1dabdeec7a07a" category="list-text">システムレベルの診断テストを再実行します。+システムレベルの診断テストが再度失敗した場合は、に連絡します <block ref="d4b5db761eff3af8abec9c2aa8b19609" category="inline-link-macro-rx"></block>。</block>
+  <block id="22afc2cb7855948b6347ad0d5b8816a7" category="paragraph">ストレージ暗号化を有効にしている場合は、該当する手順 を使用します。</block>
+  <block id="2c35abfceaabbce6e9a2f24491d249c0" category="open-title">オプション1：オンボードキーマネージャを使用する</block>
+  <block id="86b112e5aa1ced4fbffb09dded147e9f" category="list-text">ノードをブートメニューでブートします。</block>
+  <block id="e07ae2ef2fbd56f8a3ced5a2ab602ded" category="list-text">オプション10を選択します。<block ref="cdca34dc3d7defb03d741a65d78de01c" prefix=" " category="inline-code"></block>。</block>
+  <block id="5affab7614cb0938ec2fe16dbf6094bd" category="list-text">プロンプトでクラスタのオンボードキーマネージャのパスフレーズを入力します。Need example here ******</block>
+  <block id="e1abc7408800fce9a7b34d2d5dca8aee" category="list-text">バックアップキーのデータを入力します</block>
+  <block id="99f5c4eee12090497e3ca28e84e49cab" category="admonition">パスフレーズの情報が完了すると、ノードがブートメニューに戻ります。</block>
+  <block id="0a2404583aab34668c1c8004bddabbaa" category="list-text">オプション1を選択します。<block ref="e6922a1788401c5ef431db829a2c387b" prefix=" " category="inline-code"></block></block>
+  <block id="c566d4828cd295258aa8097a90880602" category="open-title">オプション2：External Managerを使用する</block>
+  <block id="0a05a9975c9259ea331a85366e41d3ce" category="list-text">オプション11を選択します。<block ref="0dd518498ab98fe1fd543910856e6153" prefix=" " category="inline-code"></block>。</block>
+  <block id="b0bab47307c92499e81bac9b25dc3e52" category="list-text">プロンプトに管理証明書の情報を入力します。Need example here *****</block>
+  <block id="453b94e2cc94c331c590159bf6b2d21e" category="admonition">管理証明書情報が完了すると、ノードがブートメニューに戻ります。</block>
+  <block id="6f7b977f442186b3a2cff79208772851" category="list-text">ディスクのMSIDをリセットします。</block>
+  <block id="55bbcb479d2d67bc8ad4b8a2598ddd48" category="inline-link">FIPS ドライブまたは SED にデータ認証キーを割り当てる（オンボードキー管理）</block>
+  <block id="be8dfb1b8df54a914e06c0a343100004" category="list-text">オンボードストレージ暗号化を使用している場合は、の手順 に従います<block ref="503b29df34267dc3c3e3b8927894b0ee" category="inline-link-rx"></block></block>
+  <block id="32c3cf2b38ceb59d729e7de2ff67fefc" category="inline-link">FIPS ドライブまたは SED にデータ認証キーを割り当てる（外部キー管理）</block>
+  <block id="a785aecc0aa86cd8bf8795e1bc4c3e60" category="list-text">外部キー管理ツールを使用しています。の手順 に従います<block ref="c5282a2eb5b1733e45b98afbe5b54d05" category="inline-link-rx"></block></block>
+  <block id="a5462faa34b6cf806cb49f24d84b02a7" category="list-text">システムが40GbE NICで10GbEのクラスタインターコネクトとデータ接続をサポートするように設定されている場合は、保守モードでnicadmin convertコマンドを使用して、これらのポートを10GbE接続に変換します。を参照してください<block ref="2d808a662d9493bde97b50913a25a294" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="55c99fae85fce446adbb5ceb895cf55e" category="paragraph">シャーシを交換するときに電源装置を取り外すには、古いシャーシの背面から電源装置の電源を切って接続を解除し、4台を取り外します。</block>
+  <block id="c56809d9cff2ea190c6fb9d67e804b42" category="paragraph">シャーシを交換するときは、シャーシ前面にある6つのファンモジュールを取り外す必要があります。</block>
+  <block id="63ee7e61fbd30f44f9b9df101a63a845" category="paragraph">2つのデステージコントローラ電源モジュールを古いシャーシの前面から取り外します。</block>
+  <block id="1d8e1f6692aa85c8d94c39dda8015fdb" category="paragraph">新しいシャーシをラックまたはキャビネットに設置したら、USB LEDモジュールを古いシャーシの前面から新しいシャーシに移動します。</block>
+  <block id="02c98171b36d44757b42c6b5c5d2acb9" category="paragraph">回答<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block> メンテナンスモードでブートするよう求めるプロンプトが表示されたら</block>
 </blocks>
