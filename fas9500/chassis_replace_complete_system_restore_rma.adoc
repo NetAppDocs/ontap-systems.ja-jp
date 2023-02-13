@@ -153,6 +153,8 @@ NOTE: 続行する前に、両方のコントローラでメンテナンスモ�
 . システムレベルの診断を実行するための考慮事項をすべて確認するとともに、ケーブルがしっかりと接続されているか、ハードウェアコンポーネントがストレージシステムに適切に取り付けられているかを確認します。
 . 電源装置を再接続し、ストレージシステムの電源をオンにします。
 . システムレベルの診断テストを再実行します。
++
+ If the system-level diagnostics test fails again, contact link:http://mysupport.netapp.com/[mysupport.netapp.com^].
 
 
 |===
