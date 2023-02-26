@@ -5932,7 +5932,6 @@
   <block id="a164244a6913c60772e9b9fbbbc17a4a" category="doc">I/O モジュールを追加します（ AFF A900 ）</block>
   <block id="e01b6c84aaebe2321eef7b7a933b171f" category="list-text">無停止で I/O モジュールを追加するには、ターゲットコントローラをテイクオーバーし、ターゲットスロットのスロットブランクカバーを取り外すか、既存の I/O モジュールを取り外し、新しい I/O モジュールまたは交換用 I/O モジュールを追加して、ターゲットコントローラをギブバックする必要があります。</block>
   <block id="329fe7c89a525def535e03c6dbc6f98f" category="section-title">オプション 1 ：オープンスロットを備えたシステムに I/O モジュールを追加する</block>
-  <block id="12f686a2d13fd4b93c3ef7fbc915cdcd" category="paragraph">システムの空のモジュールスロットに、 NS224 ストレージシェルフの NIC またはストレージモジュールとして I/O モジュールを追加できます。</block>
   <block id="c45c3f1f9d099575b7abd851e7ef8b33" category="list-text">カムラッチを開いた状態になるまで下に回転させます。</block>
   <block id="9a08e35bf8850515585d9bd11e96351b" category="list-text">I/O モジュールを取り付けます。</block>
   <block id="66efd9c2b6ae55ef5c1ff3be01c1fe65" category="list-text">I/O モジュールをスロットの端に合わせます。</block>
@@ -5940,17 +5939,13 @@
   <block id="7ca78c6d47f27487175e23a00c576196" category="list-text">交換用 I/O モジュールが NIC の場合は、モジュールをデータスイッチにケーブル接続します。</block>
   <block id="3267c15e351fe1dd15721e79b072fedc" category="admonition">使用していない I/O スロットには、熱の問題を防ぐためにブランクが取り付けられていることを確認してください。</block>
   <block id="05648a23fc430a3dcc4fb4c1fbb040cd" category="list-text">ネットワーク用にスロット 3 または 7 を使用している場合は、「 storage port modify -node __ &lt;node name&gt; ____port_&lt;port name&gt; __ -mode network 」コマンドを使用して、ネットワーク用にスロットを変換します。</block>
-  <block id="2d881a27ee894664c2e7cc8d1795b104" category="list-text">ストレージ I/O モジュールを設置した場合は、 NS224 シェルフを設置してケーブル接続します（を参照）<block ref="8b1d41e5fd14f554e8b3490e0dfd47ae" category="inline-link-rx"></block>。</block>
   <block id="3e0887648c519f4a3c16a1c61b2e8ec3" category="section-title">オプション 2 ：オープンスロットのないシステムに I/O モジュールを追加する</block>
-  <block id="3a94a10e2dbe887d30ec12c0e2d2170d" category="paragraph">フル装備のシステムに 1 つ以上の I/O モジュールを取り付けるには、システム内の既存の NIC またはストレージモジュールを 1 つ以上取り外す必要があります。</block>
   <block id="cebb0168d5bfd94a91f0da51501ba6b8" category="list-text">実行する作業</block>
   <block id="e818b574f8a890f6c21405d9164bb6ef" category="cell">置換 ...</block>
   <block id="d6737fd4fc838900efec68220d9b62d5" category="paragraph">ポート数が同じ NIC I/O モジュール</block>
   <block id="c5cb03fb8ac84e8ed0867902373368c5" category="paragraph">LIF は、コントローラモジュールがシャットダウンすると自動的に移行されます。</block>
   <block id="5b4da5fe899903c4fb7ea38cdcd59059" category="paragraph">ポート数が少ない NIC I/O モジュール</block>
-  <block id="92fa459a77121184c537af9ee2b58dff" category="paragraph">該当する LIF を別のホームポートに完全に再割り当てします。を参照してください<block ref="85291e79b86f275650bb0fb4e90a39e9" category="inline-link-rx"></block> System Manager を使用して LIF を完全に移動する方法については、を参照してください。</block>
   <block id="f83c48dd124994c4062d124a835da954" category="paragraph">ストレージ I/O モジュールを搭載した NIC I/O モジュール</block>
-  <block id="2640f01f139d87de119d4e0ddc369433" category="paragraph">System Manager を使用して、 LIF を別のホームポートに完全に移行します。手順については、を参照してください<block ref="85291e79b86f275650bb0fb4e90a39e9" category="inline-link-rx"></block>。</block>
   <block id="d401d7f8340a560f025bd48c41cf9fd1" category="paragraph"><block ref="d401d7f8340a560f025bd48c41cf9fd1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9e64f9f7a827c26fc2d5c89975330a4c" category="image-alt">凡例アイコン 01</block>
   <block id="658f167c4900ed24167db8a2c8ec0dae" category="list-text">I/O モジュールをターゲットスロットに取り付けます。</block>
@@ -5960,7 +5955,6 @@
   <block id="85fd23f64df6d6e4c54bd55af7b58c44" category="paragraph">スロット 3 または 7 の NIC モジュール</block>
   <block id="86cf1151f6e6623b20e6f28b8eb846ea" category="paragraph">各ポートには 'storage port modify -node * _&lt;node name&gt; ____port * _&lt;port name&gt; ____-mode network ’コマンドを使用します</block>
   <block id="3cb2d50b71ca167f282d29cc4a2f763f" category="paragraph">ストレージモジュール</block>
-  <block id="907b4c195a2387f3ef35df10e9b1a0eb" category="paragraph">の説明に従って、 NS224 シェルフを設置してケーブル接続します<block ref="71b38ceec90716734f26b1c06463d904" category="inline-link-rx"></block>。</block>
   <block id="ee509c1ffca70e9f258ad73c3116cf37" category="doc">オンボード暗号化キーのシャットダウン前チェック - AFF A900</block>
   <block id="127cae73d2b4d7758b4c0a0e3f49ba5f" category="section-title">ONTAP 9.6 以降</block>
   <block id="d994e1a1688cb6d7b8e264a209d763d6" category="doc">シャーシを交換してください - AFF A900</block>
@@ -6515,8 +6509,6 @@
   <block id="df958dff87a8c819a8e0b81a1b306ead" category="list-text">交換用コントローラは、障害のあるコントローラに交換する新しいコントローラです。</block>
   <block id="283fab4cea5d664827b937416e41a5e5" category="list-text">正常なコントローラがサバイバーコントローラです。</block>
   <block id="92a410b1608886e36ab28b2f459ca694" category="list-text">HA 構成でメンテナンスモードに切り替えたときに、正常なコントローラが停止したままであることの確認を求めるプロンプトが表示される場合。</block>
-  <block id="e7e0acd4a94a610862553a655c0372a3" category="list-text">ターゲットコントローラをテイクオーバーします。 storage failover takeover -ofnode target_node_name</block>
-  <block id="0a7ae7a43062cf45861e620d40d10ab9" category="paragraph">テイクオーバーが完了すると、コンソール接続に、コントローラが LOADER プロンプトに表示されなくなります。</block>
   <block id="f741156cf7f3ded008481322de2de820" category="list-text">LOADER プロンプトからコントローラをリブートします： bye _</block>
   <block id="ff307501f6507919aa7c2196b367a42d" category="list-text">パートナーコントローラからコントローラをギブバックします。storage failover giveback -ofnode target_node_name</block>
   <block id="cf261a4e73438cb00bd1e7a2fef7257c" category="list-text">各コントローラがブートを開始したら、「 Press Ctrl-C for Boot Menu 」というメッセージが表示されたら、 Ctrl+C キーを押してブートプロセスを中断します。</block>
@@ -6734,8 +6726,6 @@
   <block id="777fd6d7388769d3f60adc007c4390a4" category="paragraph"><block ref="777fd6d7388769d3f60adc007c4390a4" category="inline-link-rx"></block></block>
   <block id="801fb2644ef002c15826950c6197b174" category="paragraph">ONTAP 9.10.1P3および9.11.1</block>
   <block id="a31ab93f41516026d249aceb633bccc3" category="doc">I/OモジュールFAS9500を追加します</block>
-  <block id="133808c24f6fb32a9a2a58ed28150498" category="paragraph">I/Oモジュールは、システムの空のモジュールスロットに、SASストレージシェルフのNICまたはストレージモジュールとして追加できます。</block>
-  <block id="ff231ca484e594004f4ca93ecfa6683e" category="paragraph">テイクオーバーが完了すると、コンソール接続でノードが LOADER プロンプトに表示されます。</block>
   <block id="4d3b1425bbd62943a546a9f98dc3b7ef" category="list-text">パートナーノードからノードをギブバックします。storage failover giveback -ofnode target_node_name</block>
   <block id="6f8193ca6bfb281db32afbcc9e285f79" category="inline-link">SASシェルフのホットアド</block>
   <block id="9856beabcb389225df78cec96e74e365" category="list-text">ストレージI/Oモジュールを設置した場合は、SASシェルフを設置してケーブル接続します（を参照）<block ref="322cc377ef41f5776a1c64690e12c49b" category="inline-link-rx"></block>。</block>
@@ -7356,23 +7346,13 @@
   <block id="43ae4ee714a69574b12c2b05c54410b5" category="list-text">モジュールハンドルのテラコッタリリースボタンを押し、DCPMモジュールをシャーシから取り出します。</block>
   <block id="0721343ac8e5e32a5122775fda62e4d0" category="doc">設定AFF A900を復元して確認します</block>
   <block id="4db8dbc03fb77b9d2fa1dabdeec7a07a" category="list-text">システムレベルの診断テストを再実行します。+システムレベルの診断テストが再度失敗した場合は、に連絡します <block ref="d4b5db761eff3af8abec9c2aa8b19609" category="inline-link-macro-rx"></block>。</block>
-  <block id="22afc2cb7855948b6347ad0d5b8816a7" category="paragraph">ストレージ暗号化を有効にしている場合は、該当する手順 を使用します。</block>
   <block id="2c35abfceaabbce6e9a2f24491d249c0" category="open-title">オプション1：オンボードキーマネージャを使用する</block>
   <block id="86b112e5aa1ced4fbffb09dded147e9f" category="list-text">ノードをブートメニューでブートします。</block>
   <block id="e07ae2ef2fbd56f8a3ced5a2ab602ded" category="list-text">オプション10を選択します。<block ref="cdca34dc3d7defb03d741a65d78de01c" prefix=" " category="inline-code"></block>。</block>
-  <block id="5affab7614cb0938ec2fe16dbf6094bd" category="list-text">プロンプトでクラスタのオンボードキーマネージャのパスフレーズを入力します。Need example here ******</block>
-  <block id="e1abc7408800fce9a7b34d2d5dca8aee" category="list-text">バックアップキーのデータを入力します</block>
-  <block id="99f5c4eee12090497e3ca28e84e49cab" category="admonition">パスフレーズの情報が完了すると、ノードがブートメニューに戻ります。</block>
   <block id="0a2404583aab34668c1c8004bddabbaa" category="list-text">オプション1を選択します。<block ref="e6922a1788401c5ef431db829a2c387b" prefix=" " category="inline-code"></block></block>
   <block id="c566d4828cd295258aa8097a90880602" category="open-title">オプション2：External Managerを使用する</block>
   <block id="0a05a9975c9259ea331a85366e41d3ce" category="list-text">オプション11を選択します。<block ref="0dd518498ab98fe1fd543910856e6153" prefix=" " category="inline-code"></block>。</block>
-  <block id="b0bab47307c92499e81bac9b25dc3e52" category="list-text">プロンプトに管理証明書の情報を入力します。Need example here *****</block>
   <block id="453b94e2cc94c331c590159bf6b2d21e" category="admonition">管理証明書情報が完了すると、ノードがブートメニューに戻ります。</block>
-  <block id="6f7b977f442186b3a2cff79208772851" category="list-text">ディスクのMSIDをリセットします。</block>
-  <block id="55bbcb479d2d67bc8ad4b8a2598ddd48" category="inline-link">FIPS ドライブまたは SED にデータ認証キーを割り当てる（オンボードキー管理）</block>
-  <block id="be8dfb1b8df54a914e06c0a343100004" category="list-text">オンボードストレージ暗号化を使用している場合は、の手順 に従います<block ref="503b29df34267dc3c3e3b8927894b0ee" category="inline-link-rx"></block></block>
-  <block id="32c3cf2b38ceb59d729e7de2ff67fefc" category="inline-link">FIPS ドライブまたは SED にデータ認証キーを割り当てる（外部キー管理）</block>
-  <block id="a785aecc0aa86cd8bf8795e1bc4c3e60" category="list-text">外部キー管理ツールを使用しています。の手順 に従います<block ref="c5282a2eb5b1733e45b98afbe5b54d05" category="inline-link-rx"></block></block>
   <block id="a5462faa34b6cf806cb49f24d84b02a7" category="list-text">システムが40GbE NICで10GbEのクラスタインターコネクトとデータ接続をサポートするように設定されている場合は、保守モードでnicadmin convertコマンドを使用して、これらのポートを10GbE接続に変換します。を参照してください<block ref="2d808a662d9493bde97b50913a25a294" category="inline-link-rx"></block> を参照してください。</block>
   <block id="55c99fae85fce446adbb5ceb895cf55e" category="paragraph">シャーシを交換するときに電源装置を取り外すには、古いシャーシの背面から電源装置の電源を切って接続を解除し、4台を取り外します。</block>
   <block id="c56809d9cff2ea190c6fb9d67e804b42" category="paragraph">シャーシを交換するときは、シャーシ前面にある6つのファンモジュールを取り外す必要があります。</block>
@@ -7392,4 +7372,29 @@
   <block id="7a0118bb1b2d6a800462ca70c23a1876" category="image-alt">DRW 9000ケーブルコンソールスイッチコントローラIEOPS 953</block>
   <block id="1f583998630e94806bf5b9e059227dd4" category="paragraph"><block ref="1f583998630e94806bf5b9e059227dd4" category="inline-link-rx"></block></block>
   <block id="9b0500b65158795cfc5abb2becae4e80" category="paragraph">次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> ケーブルの場所を確認し、用途を特定します。</block>
+  <block id="192e7ded6d54e3ac04596dc33b9c67cf" category="paragraph">I/Oモジュールは、システムの空のモジュールスロットに追加できます。</block>
+  <block id="741ade379895992f2a574e8e60de1571" category="section-title">手順2：I/Oモジュールを追加します</block>
+  <block id="31ac56c0f673cbef254563f6a8a32626" category="paragraph">システムにフル実装されている場合は、既存のI/Oモジュールを取り外して別のI/Oモジュールに交換することで、I/OスロットのI/Oモジュールを変更できます。</block>
+  <block id="ed4dc030dff8dfc29b5cd17aafe4c26e" category="paragraph">==手順2：I/Oモジュールを交換します</block>
+  <block id="abd172307b56cb5c0bccb5323a67b886" category="paragraph">==手順3：I/Oモジュールの交換後にコントローラをリブートします</block>
+  <block id="fd25e96fa9d35ae62fb86caa243d8698" category="paragraph">==手順4：障害が発生したパーツをネットアップに返却します</block>
+  <block id="74458273e576f4b2da617a6e0e209a5f" category="paragraph">ストレージ暗号化を有効にしている場合は、該当する手順 を使用します。</block>
+  <block id="23620cc2fa7491aefb480afbef75dac2" category="list-text">お客様から入手したオンボードキーマネージャのパスフレーズを入力します。</block>
+  <block id="15247f97704eb964c60d179c321c1370" category="list-text">プロンプトで、の出力からバックアップキーデータを貼り付けます<block ref="6b6f6c1a8bc1fede794cda92ed140953" prefix=" " category="inline-code"></block> または<block ref="32ba7af89b7557f6e3e6d80a922080ce" prefix=" " category="inline-code"></block> コマンドを実行します</block>
+  <block id="8726b2ef66dc0e734b269a3191597e11" category="paragraph">------------------------ バックアップの開始--------------------------</block>
+  <block id="328f6eaec3741c1d0f9558d6c40c1da4" category="paragraph">AAAAAAAAAAAAAAAAAAAAAAAAAAADUD+byAAAAAAAAAA QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA。。。H4nPQM0nrDRYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</block>
+  <block id="26eef74dee0269079c9b6b002eeddb34" category="admonition">ノードがブートメニューに戻ります。</block>
+  <block id="1e4d7cab6ce42bcab6973efa42fc0b2c" category="list-text">セキュリティキーマネージャのオンボード同期を実行します。</block>
+  <block id="377fca3965b001b9bcc8843e1b287fe7" category="list-text">MSIDが以前に設定され、この手順 の開始時に取得された場合は、MSIDをリセットします。</block>
+  <block id="a967d40ef247a202e5f1ce7a9626a0ca" category="list-text">を使用して、FIPSドライブまたはSEDにデータ認証キーを割り当てます<block ref="8fc59e93e98503b6d1b1230269b06192" prefix=" " category="inline-code"></block> コマンドを実行します</block>
+  <block id="551eb7af7cdc6ae3394d506bd47a783d" category="admonition">を使用できます<block ref="eb3cf23f0c9c60ca759ddca34bbfbf56" prefix=" " category="inline-code"></block> キーIDを表示するコマンド。</block>
+  <block id="6f44d6d36af2c0294f4e53a2e6947b94" category="list-text">を使用して、認証キーが割り当てられたことを確認します<block ref="46353f4e0bb2c136591c37c9eeedcf40" prefix=" " category="inline-code"></block> コマンドを実行します</block>
+  <block id="960bc5d7d199e0e148cd3dd0e517250d" category="list-text">プロンプトが表示されたら、管理証明書の情報を入力します。</block>
+  <block id="037baf09c7ddcc7c38f81e7dbe35fa87" category="paragraph">システムにI/Oモジュールを追加するには、空きスロットのあるシステムに新しいI/Oモジュールを追加するか、フル装備のシステムでI/Oモジュールを新しいI/Oモジュールに交換します。</block>
+  <block id="55f1569cdcfb82612fcf293f23db4f6f" category="list-text">を確認します<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> 新しい I/O モジュールが、お使いのシステムおよび実行中の ONTAP のバージョンと互換性があることを確認します。</block>
+  <block id="6e4968851f4373ab9764e16cffb39389" category="list-text">複数のスロットが使用可能な場合は、でスロットの優先順位を確認します<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> また、お使いの I/O モジュールに最適なものを使用してください。</block>
+  <block id="849384ba6480c0ea1f0194c179b1dad2" category="list-text">ストレージ I/O モジュールを設置した場合は、 NS224 シェルフを設置してケーブル接続します（を参照）<block ref="a84558faf7b836b9db418a291f2462b5" category="inline-link-rx"></block>。</block>
+  <block id="3aa5c10c865ad075f0b3003697aa0a31" category="inline-image-macro">幅= 20px</block>
+  <block id="5574e785cb3feaf25b9cde927c042bd5" category="paragraph"><block ref="5574e785cb3feaf25b9cde927c042bd5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="314032c5f76e6fcf7f32085e64ca9fd1" category="paragraph">の説明に従って、 NS224 シェルフを設置してケーブル接続します<block ref="120b604fa0c5a5c9d522c8314c790770" category="inline-link-rx"></block>。</block>
 </blocks>
