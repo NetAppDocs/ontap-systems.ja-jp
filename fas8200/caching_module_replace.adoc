@@ -16,11 +16,14 @@ summary: モジュールがオフラインになったことを示す単一の A
 キャッシングモジュールを交換する前に、その内容を消去することを推奨します。
 
 * キャッシングモジュールのデータは暗号化されていますが、障害のあるキャッシングモジュールからデータをすべて消去してデータが残らないようにしたい場合があります。
-* キャッシングモジュールのデータ「 system controller flash-cache secure-erase run 」を消去します
-* キャッシングモジュールからデータが消去されたことを確認します。「 system controller flash-cache secure-erase show -node node_name 」
++
+** キャッシングモジュールのデータを消去します。 `system controller flash-cache secure-erase run -node _node name_ localhost -device-id _device_number_`
++
 
+NOTE: を実行します `system controller flash-cache show` FlashCacheのデバイスIDがわからない場合は、コマンドを実行します。
 
-出力には、キャッシングモジュールのステータスが消去済みと表示されます。
+** キャッシングモジュールからデータが消去されたことを確認します。 `system controller flash-cache secure-erase show`
+
 
 * 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。
 

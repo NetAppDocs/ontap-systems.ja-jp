@@ -40,11 +40,12 @@ link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-t
 .手順
 . キャッシングモジュールのデータは暗号化されていますが、障害のあるキャッシングモジュールからデータをすべて消去してデータが残らないようにしたい場合があります。
 +
-.. キャッシングモジュールのデータを消去します。「 system controller flash-cache secure-erase run -node node_name -device-id_device_id_device_id_
-.. キャッシングモジュールからデータが消去されたことを確認します。「 system controller flash-cache secure-erase show -node _node_name _ 」
+.. キャッシングモジュールのデータを消去します。 `system controller flash-cache secure-erase run -node _node name_ localhost -device-id _device_number_`
 +
-出力には、キャッシングモジュールのステータスが消去済みと表示されます。
 
+NOTE: を実行します `system controller flash-cache show` FlashCacheのデバイスIDがわからない場合は、コマンドを実行します。
+
+.. キャッシングモジュールからデータが消去されたことを確認します。 `system controller flash-cache secure-erase show`
 
 
 . AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=_Number_OF_hours_down_h

@@ -2099,9 +2099,6 @@
   <block id="322391dba2ed1aad7de572d3e59d7971" category="doc">キャッシングモジュール AFF A220 および FAS2700 を交換してください</block>
   <block id="308216007c5ec00e109a42c5068cc3de" category="paragraph">キャッシングモジュールを交換する前に、その内容を消去することを推奨します。</block>
   <block id="6ec04a396d43adc0bf840cc9e4cce4b3" category="list-text">キャッシングモジュールのデータは暗号化されていますが、障害のあるキャッシングモジュールからデータをすべて消去してデータが残らないようにしたい場合があります。</block>
-  <block id="7befdc0c8cc35d0c1711e11bd7feb970" category="list-text">キャッシングモジュールのデータ「 system controller flash-cache secure-erase run 」を消去します</block>
-  <block id="236dd84b9226dbf8dfd98a6c46b59972" category="list-text">キャッシングモジュールからデータが消去されたことを確認します。「 system controller flash-cache secure-erase show -node node_name 」</block>
-  <block id="af41b619bf9d50ddae2454efc001e4dd" category="paragraph">出力には、キャッシングモジュールのステータスが消去済みと表示されます。</block>
   <block id="01ca059245897bf13f451aefdac2252d" category="section-title">手順 3 ：キャッシングモジュールを交換する</block>
   <block id="fcb47fab108a0238221cf0b2d24663f3" category="paragraph">コントローラでラベルが M.2 PCIe カードとなっているキャッシングモジュールを交換するには、コントローラ内のスロットの場所を確認して、特定の手順を実行します。</block>
   <block id="b37236c3c4a90442c4db951305ea57a0" category="image-alt">DRW 2600 fcache repl アニメーション GIF</block>
@@ -2833,8 +2830,6 @@
   <block id="221315bbb17a9424f37793425986d6c2" category="inline-link">FAS8300 および FAS8700 の設置とセットアップの手順</block>
   <block id="9af1a70147e4372628e3cff0c1a8a31c" category="list-text">スキャンでエラーが報告されなかった場合は、メニューから [Reboot] を選択してシステムを再起動します。</block>
   <block id="05da715fdd840e7fc27dd764386018bc" category="doc">キャッシングモジュール FAS8300 と FAS8700 を交換します</block>
-  <block id="d457ea14ed8ca14254ad1d75e29dce09" category="list-text">キャッシングモジュールのデータを消去します。「 system controller flash-cache secure-erase run -node node_name -device-id_device_id_device_id_</block>
-  <block id="b9106c27d735907c8812d337029e92be" category="list-text">キャッシングモジュールからデータが消去されたことを確認します。「 system controller flash-cache secure-erase show -node _node_name _ 」</block>
   <block id="8a653be38ee9a052d5a08a28a70c1d9e" category="paragraph">コントローラのラベルで Flash Cache と呼ばれるキャッシングモジュールを交換するには、コントローラ内のスロットの場所を確認して、特定の手順を実行します。Flash Cache の場所については、コントローラモジュールの FRU マップを参照してください。</block>
   <block id="70edce28424200208b28981e9b221707" category="list-text">キャッシングモジュールの内容は暗号化されていますが、交換する前にモジュールの内容を消去することを推奨します。詳細については、を参照してください<block ref="89de74d6a86df9137b0ef3fb03a43036" category="inline-link-rx"></block> ネットアップサポートサイトにお使いのシステム用の情報を入力します。</block>
   <block id="540a3a140ba4c7da7729d8bbfbe06861" category="image-alt">DRW 8300 FlashCache を交換します</block>
@@ -7375,9 +7370,6 @@
   <block id="192e7ded6d54e3ac04596dc33b9c67cf" category="paragraph">I/Oモジュールは、システムの空のモジュールスロットに追加できます。</block>
   <block id="741ade379895992f2a574e8e60de1571" category="section-title">手順2：I/Oモジュールを追加します</block>
   <block id="31ac56c0f673cbef254563f6a8a32626" category="paragraph">システムにフル実装されている場合は、既存のI/Oモジュールを取り外して別のI/Oモジュールに交換することで、I/OスロットのI/Oモジュールを変更できます。</block>
-  <block id="ed4dc030dff8dfc29b5cd17aafe4c26e" category="paragraph">==手順2：I/Oモジュールを交換します</block>
-  <block id="abd172307b56cb5c0bccb5323a67b886" category="paragraph">==手順3：I/Oモジュールの交換後にコントローラをリブートします</block>
-  <block id="fd25e96fa9d35ae62fb86caa243d8698" category="paragraph">==手順4：障害が発生したパーツをネットアップに返却します</block>
   <block id="74458273e576f4b2da617a6e0e209a5f" category="paragraph">ストレージ暗号化を有効にしている場合は、該当する手順 を使用します。</block>
   <block id="23620cc2fa7491aefb480afbef75dac2" category="list-text">お客様から入手したオンボードキーマネージャのパスフレーズを入力します。</block>
   <block id="15247f97704eb964c60d179c321c1370" category="list-text">プロンプトで、の出力からバックアップキーデータを貼り付けます<block ref="6b6f6c1a8bc1fede794cda92ed140953" prefix=" " category="inline-code"></block> または<block ref="32ba7af89b7557f6e3e6d80a922080ce" prefix=" " category="inline-code"></block> コマンドを実行します</block>
@@ -7397,4 +7389,9 @@
   <block id="3aa5c10c865ad075f0b3003697aa0a31" category="inline-image-macro">幅= 20px</block>
   <block id="5574e785cb3feaf25b9cde927c042bd5" category="paragraph"><block ref="5574e785cb3feaf25b9cde927c042bd5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="314032c5f76e6fcf7f32085e64ca9fd1" category="paragraph">の説明に従って、 NS224 シェルフを設置してケーブル接続します<block ref="120b604fa0c5a5c9d522c8314c790770" category="inline-link-rx"></block>。</block>
+  <block id="757216293ea1da04339a2c9b8eaa2641" category="admonition">tar.gzファイルは、FAT32でフォーマットされた4GB以上のパーティションに配置する必要があります。FAT32パーティションは2TBにもなる可能性がありますが、Windowsの組み込みツール(diskpartなど)は32GBを超えるFAT32パーティションをフォーマットできません。</block>
+  <block id="e9d3276fadd16a57346b54cecf613793" category="list-text">キャッシングモジュールのデータを消去します。<block ref="5ffb603e9f437c31dabf66aeb6dc9941" prefix=" " category="inline-code"></block></block>
+  <block id="06dd51a0351c6bc1041f60a7a78358f1" category="admonition">を実行します<block ref="77da07d2ad54f11335f6a0e867b30843" prefix=" " category="inline-code"></block> FlashCacheのデバイスIDがわからない場合は、コマンドを実行します。</block>
+  <block id="955a29c530e47b3a4d397e3e2ff7a94a" category="list-text">キャッシングモジュールからデータが消去されたことを確認します。<block ref="5a00050b2fc68dfbfe21cffc587aa407" prefix=" " category="inline-code"></block></block>
+  <block id="04f13a81f468108c54934d79ebdf3ceb" category="admonition">カードのポートラベルが見えない場合は、カードの取り付け方向を確認し（PCIeコネクタソケットはA400およびFAS8300 / 8700のカードスロットの左側にあります）、でカードのパーツ番号を確認します<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> ポートラベルを示すベゼルの図については、を参照してください。カードのパーツ番号は、を使用して確認できます<block ref="432345ed72f5509f18312f01d4f08dff" prefix=" " category="inline-code"></block> コマンドまたはをシステムパッキングリストに追加します。</block>
 </blocks>
