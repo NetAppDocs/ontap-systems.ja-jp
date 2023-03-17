@@ -7394,4 +7394,7 @@
   <block id="06dd51a0351c6bc1041f60a7a78358f1" category="admonition">を実行します<block ref="77da07d2ad54f11335f6a0e867b30843" prefix=" " category="inline-code"></block> FlashCacheのデバイスIDがわからない場合は、コマンドを実行します。</block>
   <block id="955a29c530e47b3a4d397e3e2ff7a94a" category="list-text">キャッシングモジュールからデータが消去されたことを確認します。<block ref="5a00050b2fc68dfbfe21cffc587aa407" prefix=" " category="inline-code"></block></block>
   <block id="04f13a81f468108c54934d79ebdf3ceb" category="admonition">カードのポートラベルが見えない場合は、カードの取り付け方向を確認し（PCIeコネクタソケットはA400およびFAS8300 / 8700のカードスロットの左側にあります）、でカードのパーツ番号を確認します<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> ポートラベルを示すベゼルの図については、を参照してください。カードのパーツ番号は、を使用して確認できます<block ref="432345ed72f5509f18312f01d4f08dff" prefix=" " category="inline-code"></block> コマンドまたはをシステムパッキングリストに追加します。</block>
+  <block id="3a5f51ab8f29522107285c1bd243bf95" category="paragraph">SAS2/SAS3 Mixed Stack Supportフィールドが出力に表示されないか、値が「none」の場合、システムは混在スタックをサポートしていません。</block>
+  <block id="b57b9debcc2348af5e609f2c38ecae74" category="paragraph">[SAS2/SAS3 Mixed Stack Support]フィールドに「All」と表示されている場合、システムは混在スタックをサポートしています。</block>
+  <block id="7a2d660ca9e94c940789a57658eb9268" category="paragraph">[SAS2/SAS3 Mixed Stack Support]フィールドに「bridge-attached」と表示されている場合、ストレージシェルフがATTO FibreBridgeを介して接続されている場合にのみ、混在スタックがサポートされます。</block>
 </blocks>

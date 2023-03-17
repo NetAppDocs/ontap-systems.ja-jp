@@ -30,10 +30,13 @@ NOTE: ブリッジ接続 MetroCluster の設定については、を参照して
 +
 ** いずれかのコントローラの管理プロンプトで 'run local sysconfig ` コマンドを入力します
 +
-SAS2/SAS3 Mixed Stack Support フィールドが出力に表示されない、または値が none の場合、システムは混在スタックをサポートしません。
+SAS2/SAS3 Mixed Stack Supportフィールドが出力に表示されないか、値が「none」の場合、システムは混在スタックをサポートしていません。
 
 +
-ALL や bridge-attached などの SAS2/SAS3 Mixed Stack Support フィールドに他の項目が表示される場合、システムは混在スタックをサポートします。
+[SAS2/SAS3 Mixed Stack Support]フィールドに「All」と表示されている場合、システムは混在スタックをサポートしています。
+
++
+[SAS2/SAS3 Mixed Stack Support]フィールドに「bridge-attached」と表示されている場合、ストレージシェルフがATTO FibreBridgeを介して接続されている場合にのみ、混在スタックがサポートされます。
 
 ** Hardware Universe にアクセスしてプラットフォーム情報に移動します。
 +
