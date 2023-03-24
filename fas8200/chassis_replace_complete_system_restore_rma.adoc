@@ -44,7 +44,7 @@ HA 状態の値は、次のいずれかになります。 ***HA`***`m cc`***`m c
 スタンドアロン構成です
  a| 
 .. 保守モードを終了します :halt
-.. に進みます link:chassis_replace.html["交換プロセスを完了しています"]。
+.. に進みます link:chassis-replace-move-hardware.html["交換プロセスを完了します"]。
 
 
 

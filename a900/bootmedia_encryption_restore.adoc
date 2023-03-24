@@ -10,6 +10,7 @@ summary: 環境変数を確認したら、オンボードキーマネージャ \
 :imagesdir: ../media/
 
 
+[role="lead"]
 環境変数を確認したら、オンボードキーマネージャ（ OKM ）、 NetApp Storage Encryption （ NSE ）、および NetApp Volume Encryption （ NVE ）のリストア手順を実行する必要があります。
 
 . OKM 、 NSE 、または NVE 構成のリストアに使用するセクションを決定します。 NSE または NVE がオンボードキーマネージャとともに有効になっている場合、この手順の最初に取得した設定をリストアする必要があります。

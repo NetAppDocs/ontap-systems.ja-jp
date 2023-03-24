@@ -10,4 +10,5 @@ summary: このワークシートを使用して、 ONTAP クラスタの構成�
 :imagesdir: ../media/
 
 
+[role="lead"]
 を使用できます link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["クラスタ設定ワークシート"] ONTAP クラスタを構成する際に必要となるサイト固有の IP アドレスやその他の情報を収集して記録する。

@@ -37,7 +37,6 @@ NVRAM モジュールは NVRAM11 と DIMM で構成されます。障害が発�
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 .手順
-[role="lead"]
 次のいずれかのオプションを使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
 
 [role="tabbed-block"]
@@ -151,7 +150,6 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 
 == 手順 2 ： NVRAM モジュールを交換します
 
-[role="lead"]
 NVRAM モジュールを交換するには、シャーシのスロット 6 にある NVRAM モジュールの場所を確認し、特定の手順に従います。
 
 . 接地対策がまだの場合は、自身で適切に実施します。
@@ -228,7 +226,6 @@ DIMM と DIMM のツメ
 
 == 手順 3 ： NVRAM DIMM を交換します
 
-[role="lead"]
 NVRAM モジュールの NVRAM DIMM を交換するには、 NVRAM モジュールを取り外し、モジュールを開き、ターゲット DIMM を交換する必要があります。
 
 . 接地対策がまだの場合は、自身で適切に実施します。
@@ -306,7 +303,6 @@ DIMM と DIMM のツメ
 
 == 手順 4 ： FRU の交換後にコントローラをリブートします
 
-[role="lead"]
 FRU を交換したら、コントローラモジュールをリブートする必要があります。
 
 . LOADER プロンプトから ONTAP を起動するには、「 bye 」と入力します。
@@ -316,7 +312,6 @@ FRU を交換したら、コントローラモジュールをリブートする�
 
 == 手順5：ディスクの再割り当て
 
-[role="lead"]
 交換用コントローラのブート時にシステム ID の変更を確認し、変更が実装されたことを確認する必要があります。
 
 
@@ -414,7 +409,7 @@ dr-group-id            cluster node           configuration-state
 4 entries were displayed.
 ----
 . 各コントローラに、想定されるボリュームが存在することを確認します。 vol show -node node-name
-. ストレージ暗号化が有効になっている場合は、********が必要です
+. ストレージ暗号化が有効になっている場合は、機能をリストアする必要があります。
 . リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラで storage failover modify -node replacement-node-name -onreboot true を有効にします
 
 
@@ -422,7 +417,6 @@ dr-group-id            cluster node           configuration-state
 
 == 手順 6 ：ストレージとボリュームの暗号化機能をリストアする
 
-[role="lead"]
 ストレージ暗号化を有効にしている場合は、該当する手順 を使用します。
 
 [role="tabbed-block"]
@@ -448,7 +442,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAADUD+byAAAAAAAAAA QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 +
 
-NOTE: ノードがブートメニューに戻ります。
+NOTE: コントローラがブートメニューに戻ります。
 
 . オプション1を選択します。 `Normal Boot`
 . 「 storage failover giveback -fromnode local-only -cfo-aggregates true 」コマンドを使用して、 CFO アグリゲートだけをギブバックします。
@@ -505,12 +499,12 @@ NOTE: を使用できます `security key-manager key query -key-type NSE-AK` �
 --
 .オプション2：External Managerを使用する
 --
-. ノードをブートメニューでブートします。
+. コントローラをブートメニューでブートします。
 . オプション11を選択します。 `Configure node for external key management`。
 . プロンプトが表示されたら、管理証明書の情報を入力します。
 +
 
-NOTE: 管理証明書情報が完了すると、ノードがブートメニューに戻ります。
+NOTE: 管理証明書の情報が完了すると、コントローラがブートメニューに戻ります。
 
 . オプション1を選択します。 `Normal Boot`
 . コンソールケーブルをパートナーコントローラに移動し、 storage failover giveback -fromnode local-only -cfo-aggregates true local コマンドを使用して、ターゲットコントローラストレージをギブバックします。
@@ -568,5 +562,4 @@ NOTE: を使用できます `security key-manager key query -key-type NSE-AK` �
 
 == 手順 7 ：障害が発生したパーツをネットアップに返却する
 
-[role="lead"]
 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。

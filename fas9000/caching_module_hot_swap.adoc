@@ -72,7 +72,7 @@ NVMe スロットのステータスは、交換が必要なキャッシングモ
 
 +
 
-NOTE: を参照してください https://docs.netapp.com/ontap-9/topic/com.netapp.nav.cr/home.html["コマンドマニュアルページ"] 詳細については、お使いのバージョンの ONTAP を参照してください。
+NOTE: を参照してください https://docs.netapp.com/us-en/ontap-cli-9121/["コマンドマニュアルページ"^] 詳細については、お使いのバージョンの ONTAP を参照してください。
 
 . キャッシングモジュールを取り外します。
 +

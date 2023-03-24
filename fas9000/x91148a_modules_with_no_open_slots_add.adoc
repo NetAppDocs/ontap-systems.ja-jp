@@ -27,7 +27,6 @@ https://hwu.netapp.com["NetApp Hardware Universe の略"]
 
 == オプション 1 ：オープンスロットのないシステムで、 X91148A モジュールを NIC モジュールとして追加する
 
-[role="lead"]
 1 つ以上の X91148A NIC モジュールをフル装備のシステムに取り付けるには、システム内の既存の NIC またはストレージモジュールを 1 つ以上取り外す必要があります。
 
 .手順
@@ -99,7 +98,6 @@ image:../media/legend_icon_02.png[""]
 
 == オプション 2 ：オープンスロットのないシステムで、 X91148A モジュールをストレージモジュールとして追加する
 
-[role="lead"]
 1 つ以上の X91148A ストレージモジュールをシステムにインストールするには、システム内の既存の NIC またはストレージモジュールを 1 つ以上削除する必要があります。
 
 * この手順では、 X91148A モジュールをスロット 3 または 7 に取り付ける必要があります。
@@ -166,5 +164,5 @@ image:../media/legend_icon_02.png[""]
 . パートナーノードからノードをギブバックします。「 storage failover giveback -ofnode target_node_name _
 . 自動ギブバックを無効にした場合は、有効にします。「 storage failover modify -node local-auto-giveback true 」
 . コントローラ B について、上記の手順を繰り返します
-. の説明に従って、 NS224 シェルフを設置してケーブル接続します https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-ds-nvme-hotadd/GUID-B215753F-F3E6-4FA0-A1E1-B9390B19AD94.html["NS224 ドライブシェルフのホットアド"]。
+. の説明に従って、 NS224 シェルフを設置してケーブル接続します https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html["NS224 ドライブシェルフのホットアド"]。
 

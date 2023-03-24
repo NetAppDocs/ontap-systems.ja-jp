@@ -20,21 +20,21 @@ NVRAM モジュールは NVRAM11 と DIMM で構成されます。障害が発�
 
 .作業を開始する前に
 * すべてのディスクシェルフが適切に動作している必要があります。
-* HA ペアのシステムの場合は、交換する NVRAM モジュールに関連付けられているノードをパートナーノードがテイクオーバーできる必要があります。
+* HA ペアのシステムの場合は、交換する NVRAM モジュールに関連付けられているコントローラをパートナーコントローラがテイクオーバーできる必要があります。
 * この手順では次の用語を使用します。
 +
-** 障害ノードとは、メンテナンスを実行しているノードです。
-** 正常なノードとは、障害ノードの HA パートナーです。
+** 障害のあるコントローラとは、メンテナンスを実行しているコントローラです。
+** 正常なコントローラとは、障害のあるコントローラの HA パートナーです。
 
 
-* この手順には、新しい NVRAM モジュールに関連付けられているコントローラモジュールにディスクを自動または手動で再割り当てする手順が含まれています。手順でに指示された場合は、ディスクを再割り当てする必要があります。ギブバックで CAN 原因の問題が発生する前にディスクの再割り当てを完了する。
+* この手順 には、新しいNVRAMモジュールに関連付けられているコントローラモジュールにディスクを自動的に再割り当てする手順が含まれています。手順でに指示された場合は、ディスクを再割り当てする必要があります。ギブバックで CAN 原因の問題が発生する前にディスクの再割り当てを完了する。
 * 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。
 * この手順の一部としてディスクやディスクシェルフを変更することはできません。
 
 
 
 
-== 手順 1 ：障害ノードをシャットダウンします
+== 手順 1 ：障害のあるコントローラをシャットダウンします
 
 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
 
@@ -82,14 +82,14 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 
 == 手順 2 ： NVRAM モジュールを交換します
 
-NVRAM モジュールを交換するには、シャーシのスロット 6 にある NVRAM モジュールの場所を確認し、特定の手順に従います。
+NVRAMモジュールを交換するには、シャーシのスロット6にあるNVRAMモジュールの場所を確認し、特定の手順を実行します。
 
 . 接地対策がまだの場合は、自身で適切に実施します。
 . ターゲットの NVRAM モジュールをシャーシから取り外します。
 +
-.. 文字と数字が記載されたカムボタンを押し下げます。
+.. 文字と数字が記載されたカムラッチを押し下げます。
 +
-カムボタンがシャーシから離れます。
+カムラッチがシャーシから離れます。
 
 .. カムラッチを下に回転させて水平にします。
 +
@@ -163,9 +163,9 @@ NVRAM モジュールの NVRAM DIMM を交換するには、 NVRAM モジュー�
 . 接地対策がまだの場合は、自身で適切に実施します。
 . ターゲットの NVRAM モジュールをシャーシから取り外します。
 +
-.. 文字と数字が記載されたカムボタンを押し下げます。
+.. 文字と数字が記載されたカムラッチを押し下げます。
 +
-カムボタンがシャーシから離れます。
+カムラッチがシャーシから離れます。
 
 .. カムラッチを下に回転させて水平にします。
 +
@@ -242,60 +242,28 @@ FRU を交換したら、コントローラモジュールをリブートする�
 
 
 
-== 手順 5 ：コントローラモジュールの HA 状態を確認して設定します
+== 手順5：ディスクの再割り当て
 
-コントローラモジュールの「 HA 」状態を確認し、必要に応じてシステム構成に合わせて状態を更新する必要があります。
-
-. 交換用コントローラモジュールの保守モードで ' すべてのコンポーネントが同じ HA 状態を表示していることを確認します HA 構成の場合は 'ha-config show と表示されます
-+
-[cols="1,2"]
-|===
-| システムの構成 | すべてのコンポーネントの HA の状態 
+[role="lead"]
+交換用コントローラのブート時にシステム ID の変更を確認し、変更が実装されたことを確認する必要があります。
 
 
- a| 
-HA ペア
- a| 
-高可用性
+NOTE: この手順は、 HA ペアの ONTAP を実行するシステムにのみ適用されます。
 
 
-
- a| 
-4 つ以上のノードを含む MetroCluster FC 構成
- a| 
-MCC
-
-
-
- a| 
-MetroCluster IP 構成
- a| 
-mccip
-
-|===
-. 表示されたコントローラモジュールのシステム状態がシステム構成と一致しない場合は、コントローラモジュールの HA 状態を「 ha-config modify controller_A_2 state_」 に設定します
-. 表示されたシャーシのシステム状態がシステム構成と一致しない場合は ' シャーシの HA 状態を設定します HA config modify chassis_HA-state_
-
-
-
-
-== 手順 6 ：ディスクの再割り当て
-
-交換用ノードのブート時にシステム ID の変更を確認し、変更が実装されたことを確認する必要があります。
-
-この手順は、 HA ペアの ONTAP を実行するシステムにのみ適用されます。
+CAUTION: ディスクの再割り当ては、NVRAMモジュールを交換する場合にのみ必要です。
 
 .手順
-. 交換用ノードがメンテナンス・モード（「*>`プロンプト」が表示されている）の場合は、メンテナンス・モードを終了して、LOADERプロンプト「halt」に進みます
-. 交換用ノードの LOADER プロンプトからノードをブートし、システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられたら、「 y 」と入力します。
-. 交換用ノードのコンソールに「Waiting for giveback...」というメッセージが表示されるまで待ち、正常なノードから、新しいパートナーシステムIDが自動的に割り当てられていることを確認します。「storage failover show
+. 交換用コントローラがメンテナンスモードの場合（にと表示されます `*>` プロンプト）でメンテナンスモードを終了し、LOADERプロンプトを表示します。 `halt`
+. システムIDが一致しないためにシステムIDを上書きするかどうかを尋ねられた場合は、交換用コントローラのLOADERプロンプトからコントローラをブートし、「y」と入力します。
+. 待機しているギブバックを実行しています...交換用モジュールを取り付けたコントローラのコンソールにメッセージが表示されたら、正常なコントローラから、新しいパートナーシステムIDが自動的に割り当てられたことを確認します。 `storage failover show`
 +
-コマンド出力には、障害ノードでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。
+コマンド出力には、障害のあるコントローラでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。
 
 +
 [listing]
 ----
-node1> `storage failover show`
+node1:> storage failover show
                                     Takeover
 Node              Partner           Possible     State Description
 ------------      ------------      --------     -------------------------------------
@@ -303,25 +271,11 @@ node1             node2             false        System ID changed on partner (O
                                                   151759755, New: 151759706), In takeover
 node2             node1             -            Waiting for giveback (HA mailboxes)
 ----
-. 正常なノードから、コアダンプがすべて保存されたことを確認します。
+. コントローラをギブバックします。
 +
-.. advanced 権限レベルに切り替えます。「 set -privilege advanced 」
+.. 正常なコントローラから、交換したコントローラのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name
 +
-advanced モードで続行するかどうかを確認するプロンプトが表示されたら、「 y 」と入力します。advanced モードのプロンプトが表示されます（ * > ）。
-
-.. すべてのコアダンプを保存します： system node run -node local-node-name partner savecore
-.. savecoreコマンドが完了するのを待ってからギブバックを実行します
-+
-次のコマンドを入力すると'savecoreコマンドの進行状況を監視できますsystem node run -node local-node-name partner savecore -s
-
-.. admin 権限レベルに戻ります。「 set -privilege admin 」
-
-
-. ノードをギブバックします。
-+
-.. 正常なノードから、交換したノードのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name
-+
-交換用ノードはストレージをテイクバックしてブートを完了します。
+交換用コントローラはストレージをテイクバックしてブートを完了します。
 
 +
 システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は 'y' と入力する必要があります
@@ -335,44 +289,44 @@ NOTE: ギブバックが拒否されている場合は、拒否を無効にす�
 
 .. ギブバックが完了したら、 HA ペアが正常で、テイクオーバーが可能であることを確認します。「 storage failover show
 +
-storage failover show コマンドの出力に、パートナーメッセージで変更されたシステム ID を含めることはできません。
+「 storage failover show 」コマンドの出力に、パートナーメッセージで変更されたシステム ID は含まれません。
 
 
 
 . ディスクが正しく割り当てられたことを確認します。「 storage disk show -ownership
 +
-交換用ノードに属するディスクには、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。
+交換用コントローラに属するディスクには、新しいシステム ID が表示されます。次の例では、node1で所有されているディスクに新しいシステムID 151759706が表示されます。
 
 +
 [listing]
 ----
-node1> `storage disk show -ownership`
+node1:> storage disk show -ownership
 
 Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
 ----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
-1.0.0  aggr0_1  node1 node1  -        1873775277 1873775277  -       1873775277 Pool0
-1.0.1  aggr0_1  node1 node1           1873775277 1873775277  -       1873775277 Pool0
+1.0.0  aggr0_1  node1 node1  -        151759706  151759706  -       151759706 Pool0
+1.0.1  aggr0_1  node1 node1           151759706  151759706  -       151759706 Pool0
 .
 .
 .
 ----
-. システムが MetroCluster 構成になっている場合は ' ノードのステータスを監視します MetroCluster node show
+. システムが MetroCluster 構成になっている場合は ' コントローラのステータスを監視します MetroCluster node show
 +
-MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster node show -fields node-systemid' コマンドの出力には、 MetroCluster 設定が通常の状態に戻るまで古いシステム ID が表示されます。
+MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各コントローラの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster node show -fields node-systemid' コマンドの出力には、 MetroCluster 設定が通常の状態に戻るまで古いシステム ID が表示されます。
 
-. ノードが MetroCluster 構成になっている場合は、 MetroCluster の状態に応じて、元の所有者がディザスタサイトのノードである場合に DR ホーム ID のフィールドにディスクの元の所有者が表示されることを確認します。
+. コントローラが MetroCluster 構成になっている場合は、 MetroCluster の状態に応じて、元の所有者がディザスタサイトのコントローラである場合に DR ホーム ID フィールドにディスクの元の所有者が表示されることを確認します。
 +
 これは、次の両方に該当する場合に必要です。
 
 +
 ** MetroCluster 構成がスイッチオーバー状態である。
-** 交換用ノードがディザスタサイトのディスクの現在の所有者である。
+** 交換用コントローラがディザスタサイトのディスクの現在の所有者である。
 +
-を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration["4 ノード MetroCluster 構成での HA テイクオーバーおよび MetroCluster スイッチオーバー中のディスク所有権の変更"^] を参照してください。
+を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration["4 ノード MetroCluster 構成での HA テイクオーバーおよび MetroCluster スイッチオーバー中のディスク所有権の変更"] を参照してください。
 
 
 
-. システムが MetroCluster 構成になっている場合は、各ノードが構成されていることを確認します。「 MetroCluster node show -fields configurion-state 」
+. システムが MetroCluster 構成になっている場合は、各コントローラが構成されていることを確認します。「 MetroCluster node show -fields configurion-state 」
 +
 [listing]
 ----
@@ -387,31 +341,160 @@ dr-group-id            cluster node           configuration-state
 
 4 entries were displayed.
 ----
-. 各ノードに、想定されるボリュームが存在することを確認します。 vol show -node node-name
-. リブート時の自動テイクオーバーを無効にした場合は、正常なノードで「 storage failover modify -node replacement-node-name -onreboot true 」を有効にします
+. 各コントローラに、想定されるボリュームが存在することを確認します。 vol show -node node-name
+. ストレージ暗号化が有効になっている場合は、機能をリストアする必要があります。
+. リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラで storage failover modify -node replacement-node-name -onreboot true を有効にします
 
 
 
 
-== 手順 7 ：ストレージとボリュームの暗号化機能をリストアする
+== 手順 6 ：ストレージとボリュームの暗号化機能をリストアする
 
-ストレージまたはボリュームの暗号化を使用するように設定したストレージシステムでは、暗号化機能を中断させないための追加の手順を実行する必要があります。ストレージまたはボリュームの暗号化が有効になっていないストレージシステムでは、このタスクを省略できます。
+[role="lead"]
+ストレージ暗号化を有効にしている場合は、該当する手順 を使用します。
 
-
-NOTE: この手順は、DIMMの交換時には必要ありません。
-
+[role="tabbed-block"]
+====
+.オプション1：オンボードキーマネージャを使用する
+--
 .手順
-. オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順を実行します。
+. コントローラをブートメニューでブートします。
+. オプション10を選択します。 `Set onboard key management recovery secrets`。
+. お客様から入手したオンボードキーマネージャのパスフレーズを入力します。
+. プロンプトで、の出力からバックアップキーデータを貼り付けます `security key-manager backup show` または `security key-manager onboard show-backup` コマンドを実行します
 +
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"^]
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"^]
+バックアップデータの例：
+
++
+------------------------ バックアップの開始--------------------------
+
++
+AAAAAAAAAAAAAAAAAAAAAAAAAAADUD+byAAAAAAAAAA QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA。。。H4nPQM0nrDRYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
++
+-------------- エンド・バックアップ：
+
++
+
+NOTE: コントローラがブートメニューに戻ります。
+
+. オプション1を選択します。 `Normal Boot`
+. 「 storage failover giveback -fromnode local-only -cfo-aggregates true 」コマンドを使用して、 CFO アグリゲートだけをギブバックします。
++
+** ディスク障害のためにコマンドが失敗した場合は、ディスクを物理的に取り外します。ただし、交換用のディスクを受け取るまでは、ディスクをスロットに残しておきます。
+** CIFS セッションが開いているためにコマンドが失敗する場合は、 CIFS セッションを閉じる方法をお客様に確認します。
++
+
+NOTE: CIFS を終了原因すると、データが失われる可能性があります。
+
+** パートナーの準備ができていないためにコマンドが失敗した場合は、 NVRAMs が同期されるまで 5 分待ちます。
+** NDMP 、 SnapMirror 、または SnapVault のプロセスが原因でコマンドが失敗する場合は、そのプロセスを無効にします。詳細については、該当するコンテンツを参照してください。
 
 
-. SEDのMSIDをリセットします
+. ギブバックが完了したら、「 storage failover show 」コマンドと「 storage failover show-giveback 」コマンドを使用して、フェイルオーバーとギブバックのステータスを確認します。
++
+CFO アグリゲート（ルートアグリゲートおよび CFO 形式のデータアグリゲート）のみが表示されます。
+
+. セキュリティキーマネージャのオンボード同期を実行します。
++
+.. 「 securitykey-manager onboard sync 」コマンドを実行し、プロンプトが表示されたらパスフレーズを入力します。
+.. 'security key-manager key-query' コマンドを入力して ' オンボード・キー・マネージャに格納されているすべてのキーの詳細な表示を表示し ' すべての認証キーの 'restored`column=yes/true' を確認します
++
+
+NOTE: 「 Restored 」列が「 yes/true 」以外の場合は、カスタマサポートにお問い合わせください。
+
+.. キーがクラスタ全体で同期されるまで 10 分待ちます。
+
+
+. パートナーコントローラにコンソールケーブルを接続します。
+. storage failover giveback -fromnode local コマンドを使用して、ターゲットコントローラをギブバックします。
+. storage failover show コマンドを使用して ' ギブバックのステータスを確認します完了を報告してから 3 分後に確認します
++
+20 分経ってもギブバックが完了しない場合は、カスタマーサポートにお問い合わせください。
+
+. クラスタシェルプロンプトで、 net int show -is-home false コマンドを入力し、ホームコントローラとポートにない論理インターフェイスを表示します。
++
+いずれかのインターフェイスが「 false 」と表示されている場合は、 net int revert コマンドを使用して、これらのインターフェイスをホームポートに戻します。
+
+. コンソール・ケーブルをターゲット・コントローラに移動し 'version -v コマンドを実行して ONTAP のバージョンを確認します
+. 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
+. MSIDが以前に設定され、この手順 の開始時に取得された場合は、MSIDをリセットします。
++
+.. を使用して、FIPSドライブまたはSEDにデータ認証キーを割り当てます `storage encryption disk modify -disk _disk_ID_ -data-key-id _key_ID_` コマンドを実行します
++
+
+NOTE: を使用できます `security key-manager key query -key-type NSE-AK` キーIDを表示するコマンド。
+
+.. を使用して、認証キーが割り当てられたことを確認します `storage encryption disk show` コマンドを実行します
 
 
 
 
-== 手順 8 ：障害が発生したパーツをネットアップに返却する
+--
+.オプション2：External Managerを使用する
+--
+. コントローラをブートメニューでブートします。
+. オプション11を選択します。 `Configure node for external key management`。
+. プロンプトが表示されたら、管理証明書の情報を入力します。
++
 
+NOTE: 管理証明書の情報が完了すると、コントローラがブートメニューに戻ります。
+
+. オプション1を選択します。 `Normal Boot`
+. コンソールケーブルをパートナーコントローラに移動し、 storage failover giveback -fromnode local-only -cfo-aggregates true local コマンドを使用して、ターゲットコントローラストレージをギブバックします。
++
+** ディスク障害のためにコマンドが失敗した場合は、ディスクを物理的に取り外します。ただし、交換用のディスクを受け取るまでは、ディスクをスロットに残しておきます。
+** CIFS セッションが開いているためにコマンドが失敗する場合は、 CIFS セッションを閉じる方法をお客様に確認してください。
++
+
+NOTE: CIFS を終了原因すると、データが失われる可能性があります。
+
+** パートナーの準備が完了していないためにコマンドが失敗した場合は、 NVMEM が同期されるまで 5 分待ちます。
+** NDMP 、 SnapMirror 、または SnapVault のプロセスが原因でコマンドが失敗する場合は、そのプロセスを無効にします。詳細については、該当するコンテンツを参照してください。
+
+
+. 3 分待ってから、 storage failover show コマンドを使用してフェイルオーバーステータスを確認します。
+. クラスタシェルプロンプトで、「 net int show -is-home false 」コマンドを入力し、ホームコントローラとポートにない論理インターフェイスを表示します。
++
+いずれかのインターフェイスが「 false 」と表示されている場合は、「 net int revert 」コマンドを使用して、これらのインターフェイスをホームポートに戻します。
+
+. コンソール・ケーブルをターゲット・コントローラに移動し 'version -v コマンドを実行して ONTAP のバージョンを確認します
+. 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
+. クラスタシェルプロンプトで「 storage encryption disk show 」を使用して出力を確認します。
+. キー管理サーバに保存されている暗号化キーと認証キーを表示するには 'security key-manager key-query コマンドを使用します
++
+** リストアされたカラム = 'yes/true' の場合は ' 終了し ' 交換プロセスを完了することができます
+** 'Key Manager type`=external' および 'restored' カラム = が 'yes/true' 以外の場合は 'security key-manager external restore コマンドを使用して認証キーのキー ID を復元します
++
+
+NOTE: コマンドが失敗した場合は、カスタマーサポートにお問い合わせください。
+
+** 'Key Manager type`=onboard ' および 'restored' カラム = 'yes/true' 以外の場合は、 security key-manager onboard sync コマンドを使用して Key Manager タイプを再同期します。
++
+security key-manager key-query コマンドを使用して ' すべての認証キーの Restored カラム = 'yes/true' を確認します
+
+
+
+. パートナーコントローラにコンソールケーブルを接続します。
+. storage failover giveback -fromnode local コマンドを使用してコントローラをギブバックします。
+. 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
+. MSIDが以前に設定され、この手順 の開始時に取得された場合は、MSIDをリセットします。
++
+.. を使用して、FIPSドライブまたはSEDにデータ認証キーを割り当てます `storage encryption disk modify -disk _disk_ID_ -data-key-id _key_ID_` コマンドを実行します
++
+
+NOTE: を使用できます `security key-manager key query -key-type NSE-AK` キーIDを表示するコマンド。
+
+.. を使用して、認証キーが割り当てられたことを確認します `storage encryption disk show` コマンドを実行します
+
+
+
+
+--
+====
+
+
+== 手順 7 ：障害が発生したパーツをネットアップに返却する
+
+[role="lead"]
 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。
