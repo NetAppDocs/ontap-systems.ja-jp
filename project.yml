@@ -5,7 +5,7 @@ settings:
   internal:
     pdf_enabled: false
   prod:
-    pdf_enabled: true
+    pdf_enabled: false
     harmony_enabled: false
   rss_page: whats-new.html
   langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr
@@ -13,34 +13,42 @@ sidebar:
   entries:
   - title: AFF および FAS システムのドキュメント
     url: "/index.html"
+  - title: リリースノート
+    url: "/rel-notes.html"
   - title: はじめに
     entries:
     - title: 新機能
       url: "/whats-new.html"
-    - title: リリースノート
-      url: "/rel-notes.html"
+    - title: 運用を開始
+      url: "/get-up-and-run.html"
   - title: AFF システム
     entries:
     - section: c190
-    - section: a200
+    - section: c250
+    - section: c400
+    - section: c800
+    - section: a150
     - section: a220
     - section: a250
-    - section: a300
-    - section: a320
     - section: a400
     - section: a700
-    - section: a700s
     - section: a800
     - section: a900
   - title: FAS システム
     entries:
     - section: fas500f
-    - section: fas2600
-    - section: fas2700
-    - section: fas8200
     - section: fas8300
     - section: fas9000
     - section: fas9500
+  - title: End of Availabilityシステム
+    entries:
+    - section: a200
+    - section: a300
+    - section: a320
+    - section: a700s
+    - section: fas2600
+    - section: fas2700
+    - section: fas8200
   - section: allsan
   - section: upgrade
   - title: システムレベルの診断

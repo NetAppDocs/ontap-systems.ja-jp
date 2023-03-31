@@ -1,0 +1,78 @@
+---
+section: c800
+title: AFF C800システム
+url: "/c800/index.html"
+entries:
+- title: 設置とセットアップ
+  pdf-filename: AFF C800のインストールとセットアップ
+  entries:
+  - title: インストールとセットアップを選択します
+    url: "/c800/install-setup.html"
+  - title: クイックステップ
+    url: "/c800/install-quick-guide.html"
+  - title: ビデオの手順
+    url: "/c800/install-videos.html"
+  - title: 詳細な手順
+    url: "/c800/install-detailed-guide.html"
+- title: メンテナンス
+  pdf-filename: AFF C800メンテナンス
+  entries:
+  - title: ブートメディア
+    pdf-filename: AFF C800ブートメディア
+    entries:
+    - title: 概要
+      url: "/c800/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/c800/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/c800/bootmedia-shutdown.html"
+    - title: ブートイメージを交換します
+      url: "/c800/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/c800/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/c800/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/c800/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: AFF C800シャーシ
+    entries:
+    - title: 概要
+      url: "/c800/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/c800/chassis-replace-shutdown.html"
+    - title: ハードウェアを交換します
+      url: "/c800/chassis-replace-move-hardware.html"
+    - title: 交換後の処理
+      url: "/c800/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラ
+    pdf-filename: AFF C800コントローラモジュール
+    entries:
+    - title: 概要
+      url: "/c800/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/c800/controller-replace-shutdown.html"
+    - title: コントローラモジュールを交換します
+      url: "/c800/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/c800/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続
+      url: "/c800/controller-replace-recable-reassign-disks.html"
+    - title: 交換後の処理
+      url: "/c800/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/c800/dimm-replace.html"
+  - title: ドライブ
+    url: "/c800/drive-replace.html"
+  - title: ファン
+    url: "/c800/fan-replace.html"
+  - title: NVDIMM
+    url: "/c800/nvdimm-replace.html"
+  - title: NVDIMM バッテリ
+    url: "/c800/nvdimm-battery-replace.html"
+  - title: PCIe カード
+    url: "/c800/pci-cards-and-risers-replace.html"
+  - title: 電源装置
+    url: "/c800/power-supply-replace.html"
+  - title: リアルタイムクロックバッテリ
+    url: "/c800/rtc-battery-replace.html"

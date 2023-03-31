@@ -1,14 +1,6 @@
 ---
 indexpage:
   tiles:
-  - title: はじめに 
-    links:
-    - title: ONTAP リリースノート
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
-    - title: 新機能
-      url: "../whats-new.html"
-    - title: ストレージデータシート
-      url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
   - title: 設置とセットアップ
     links:
     - title: 新しいストレージシステムにシェルフを設置します
@@ -39,19 +31,3 @@ indexpage:
       url: "/service-hot-swap-power-supply.html"
     - title: シェルフ LED のステータス状態
       url: "/service-monitor-leds.html"
-  - title: リソースの追加
-    links:
-    - title: ONTAP のドキュメント
-      url: https://docs.netapp.com/us-en/ontap/
-    - title: NetApp Hardware Universe の略
-      url: https://hwu.netapp.com/home/index
-    - title: NetApp Active IQ Digital Advisor
-      url: https://docs.netapp.com/us-en/active-iq/index.html
-    - title: NetApp Active IQ Config Advisor の略
-      url: https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor
-    - title: NetApp Interoperability Matrix Tool で確認できます
-      url: https://mysupport.netapp.com/matrix/#welcome
-    - title: ネットアップのサポートナレッジベース
-      url: https://kb.netapp.com/
-    - title: ネットアップコミュニティ
-      url: https://community.netapp.com/

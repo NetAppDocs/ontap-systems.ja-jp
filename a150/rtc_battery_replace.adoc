@@ -1,0 +1,235 @@
+---
+permalink: a150/rtc-battery-replace.html 
+sidebar: sidebar 
+keywords: aff a150, a150, aff, replace, real, time, clock, battery, impaired, controller, shut, down, controller, system, rtc, date, time, controller, module, reinstall, replace, open 
+summary: コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。 
+---
+= リアルタイムクロックバッテリを交換してください
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。
+
+* この手順は、システムでサポートされるすべてのバージョンの ONTAP で使用できます
+* システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。
+
+
+
+
+== 手順 1 ：障害のあるコントローラをシャットダウンします
+
+[role="lead"]
+障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
+
+.このタスクについて
+* NetApp Storage Encryptionを使用している場合は、の手順に従ってMSIDをリセットしておく必要があります link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html["SEDを非保護モードに戻します"]。
+* SANシステムを使用している場合は、イベントメッセージを確認しておく必要があります  `cluster kernel-service show`)を参照してください。。 `cluster kernel-service show` コマンドは、ノード名、そのノードのクォーラムステータス、ノードの可用性ステータス、およびノードの動作ステータスを表示します。
++
+各 SCSI ブレードプロセスは、クラスタ内の他のノードとクォーラムを構成している必要があります。交換を進める前に、すべての問題を解決しておく必要があります。
+
+* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性についてfalseと表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["ノードをクラスタと同期します"^]。
+
+
+.手順
+. AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
++
+次のAutoSupport メッセージは、ケースの自動作成を2時間停止します。 `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
++
+
+NOTE: 自動ギブバックを無効にしますか?_と表示されたら'y'を入力します
+
+. 障害のあるコントローラに LOADER プロンプトを表示します。
++
+[cols="1,2"]
+|===
+| 障害のあるコントローラの表示 | 作業 
+
+
+ a| 
+LOADER プロンプト
+ a| 
+コントローラモジュールの取り外しに進みます。
+
+
+
+ a| 
+ギブバックを待っています
+ a| 
+Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します
+
+
+
+ a| 
+システムプロンプトまたはパスワードプロンプト
+ a| 
+正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _
+
+障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
+
+|===
+
+
+
+
+== 手順 2 ：コントローラモジュールを取り外す
+
+[role="lead"]
+コントローラ内部のコンポーネントにアクセスするには、まずコントローラモジュールをシステムから取り外し、続いてコントローラモジュールのカバーを外す必要があります。
+
+. 接地対策がまだの場合は、自身で適切に実施します。
+. ケーブルマネジメントデバイスに接続しているケーブルをまとめているフックとループストラップを緩め、システムケーブルと SFP をコントローラモジュールから外し（必要な場合）、どのケーブルが何に接続されていたかを記録します。
++
+ケーブルはケーブルマネジメントデバイスに収めたままにします。これにより、ケーブルマネジメントデバイスを取り付け直すときに、ケーブルを整理する必要がありません。
+
+. ケーブルマネジメントデバイスをコントローラモジュールの右側と左側から取り外し、脇に置きます。
++
+image::../media/drw_25xx_cable_management_arm.png[DRW 25xx ケーブル管理アーム]
+
+. カムハンドルのラッチをつかんで解除し、カムハンドルを最大限に開いてコントローラモジュールをミッドプレーンから離し、両手でコントローラモジュールをシャーシから外します。
++
+image::../media/drw_2240_x_opening_cam_latch.png[DRW 2240 x オープンカムラッチ]
+
+. コントローラモジュールを裏返し、平らで安定した場所に置きます。
+. カバーを開くには、青いタブをスライドしてカバーを外し、カバーを上げて開きます。
++
+image::../media/drw_2600_opening_pcm_cover.png[DRW 2600 オープニング PCM カバー]
+
+
+
+
+
+== 手順 3 ： RTC バッテリを交換します
+
+[role="lead"]
+RTC バッテリを交換するには、コントローラ内でバッテリの場所を確認し、特定の手順を実行します。
+
+. 接地対策がまだの場合は、自身で適切に実施します。
+. RTC バッテリの場所を確認します。
++
+image::../media/drw_2600_rtc_battery.png[DRW 2600 RTC バッテリ]
+
+. バッテリをそっと押してホルダーから離し、持ち上げてホルダーから取り出します。
++
+
+NOTE: ホルダーから取り外す際に、バッテリの極の向きを確認しておいてください。バッテリに記載されているプラス記号に従って、バッテリをホルダーに正しく配置する必要があります。ホルダーの近くにプラス記号が表示されているので、バッテリーの位置を確認できます。
+
+. 交換用バッテリを静電気防止用の梱包バッグから取り出します。
+. コントローラモジュールで空のバッテリホルダーの場所を確認します。
+. RTC バッテリの極の向きを確認し、バッテリを斜めに傾けた状態で押し下げてホルダーに挿入します。
+. バッテリがホルダーに完全に取り付けられ、かつ極の向きが正しいことを目で見て確認します。
+
+
+
+
+== 手順 4 ：コントローラモジュールを再度取り付け、 RTC バッテリ交換後に日時を設定します
+
+[role="lead"]
+コントローラモジュール内のコンポーネントを交換したら、コントローラモジュールをシステムシャーシに再度取り付け、コントローラの日付と時刻をリセットしてブートする必要があります。
+
+. エアダクトまたはコントローラモジュールカバーを閉じていない場合は閉じます。
+. コントローラモジュールの端をシャーシの開口部に合わせ、コントローラモジュールをシステムに半分までそっと押し込みます。
++
+指示があるまでコントローラモジュールをシャーシに完全に挿入しないでください。
+
+. 必要に応じてシステムにケーブルを再接続します。
++
+光ファイバケーブルを使用する場合は、メディアコンバータ（ QSFP または SFP ）を取り付け直してください（取り外した場合）。
+
+. 電源装置を取り外した場合は、電源装置を再度接続し、電源ケーブルの固定クリップを再度取り付けます。
+. コントローラモジュールの再取り付けを完了します。
++
+.. カムハンドルを開き、コントローラモジュールをミッドプレーンまでしっかりと押し込んで完全に装着し、カムハンドルをロック位置まで閉じます。
++
+
+NOTE: コネクタの破損を防ぐため、コントローラモジュールをスライドしてシャーシに挿入する際に力を入れすぎないでください。
+
+.. ケーブルマネジメントデバイスをまだ取り付けていない場合は、取り付け直します。
+.. ケーブルマネジメントデバイスに接続されているケーブルをフックとループストラップでまとめます。
+.. 電源装置と電源に電源ケーブルを再接続し、電源をオンにしてブートプロセスを開始します。
+.. LOADER プロンプトでコントローラを停止します。
+
+
+. コントローラの時刻と日付をリセットします。
++
+.. show date コマンドを使用して ' 正常なコントローラの日付と時刻を確認します
+.. ターゲットコントローラの LOADER プロンプトで、日時を確認します。
+.. 必要に応じて 'set date mm/dd/yyyy` コマンドで日付を変更します
+.. 必要に応じて、「 set time hh ： mm ： ss 」コマンドを使用して、時刻を GMT で設定します。
+.. ターゲットコントローラの日付と時刻を確認します。
+
+
+. LOADER プロンプトで「 bye 」と入力して、 PCIe カードおよびその他のコンポーネントを再初期化し、コントローラをリブートさせます。
+. ストレージをギブバックして、コントローラを通常の動作に戻します。 storage failover giveback -ofnode impaired_node_name _`
+. 自動ギブバックを無効にした場合は、再度有効にします。「 storage failover modify -node local-auto-giveback true 」
+
+
+
+
+== 手順 5 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする
+
+[role="lead"]
+2 ノード MetroCluster 構成で FRU の交換が完了したら、 MetroCluster スイッチバック処理を実行できます。これにより構成が通常の動作状態に戻ります。また、障害が発生していたサイトの同期元 Storage Virtual Machine （ SVM ）がアクティブになり、ローカルディスクプールからデータを提供します。
+
+このタスクでは、環境の 2 ノード MetroCluster 構成のみを実行します。
+
+.手順
+. すべてのノードの状態が「 enabled 」であることを確認します。 MetroCluster node show
++
+[listing]
+----
+cluster_B::>  metrocluster node show
+
+DR                           Configuration  DR
+Group Cluster Node           State          Mirroring Mode
+----- ------- -------------- -------------- --------- --------------------
+1     cluster_A
+              controller_A_1 configured     enabled   heal roots completed
+      cluster_B
+              controller_B_1 configured     enabled   waiting for switchback recovery
+2 entries were displayed.
+----
+. すべての SVM で再同期が完了したことを確認します。「 MetroCluster vserver show 」
+. 修復処理によって実行される LIF の自動移行が正常に完了したことを確認します。 MetroCluster check lif show
+. サバイバークラスタ内の任意のノードから MetroCluster switchback コマンドを使用して、スイッチバックを実行します。
+. スイッチバック処理が完了したことを確認します MetroCluster show
++
+クラスタの状態が waiting-for-switchback の場合は、スイッチバック処理がまだ実行中です。
+
++
+[listing]
+----
+cluster_B::> metrocluster show
+Cluster              Configuration State    Mode
+--------------------	------------------- 	---------
+ Local: cluster_B configured       	switchover
+Remote: cluster_A configured       	waiting-for-switchback
+----
++
+クラスタが「 normal 」状態のとき、スイッチバック処理は完了しています。
+
++
+[listing]
+----
+cluster_B::> metrocluster show
+Cluster              Configuration State    Mode
+--------------------	------------------- 	---------
+ Local: cluster_B configured      		normal
+Remote: cluster_A configured      		normal
+----
++
+スイッチバックが完了するまでに時間がかかる場合は、「 MetroCluster config-replication resync-status show 」コマンドを使用することで、進行中のベースラインのステータスを確認できます。
+
+. SnapMirror 構成または SnapVault 構成があれば、再確立します。
+
+
+
+
+== 手順 6 ：障害が発生したパーツをネットアップに返却する
+
+[role="lead"]
+障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。

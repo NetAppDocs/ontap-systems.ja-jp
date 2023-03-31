@@ -1,20 +1,14 @@
 ---
 indexpage:
   tiles:
-  - title: はじめに 
-    links:
-    - title: ONTAP リリースノート
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
-    - title: 新機能
-      url: "../whats-new.html"
-    - title: システムデータシート
-      url: https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf
-    - title: ストレージデータシート
-      url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
   - title: 設置とセットアップ
     links:
-    - title: ほとんどの構成
-      url: "/install-setup.html"
+    - title: クイックステップ
+      url: "/install-quick-guide.html"
+    - title: ビデオの手順
+      url: "/install-videos.html"
+    - title: 詳細な手順
+      url: "/install-detailed-guide.html"
     - title: MetroCluster IP 構成
       url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html
   - title: メンテナンス
@@ -39,44 +33,23 @@ indexpage:
       url: "/power-supply-replace.html"
     - title: RTC バッテリ
       url: "/rtc-battery-replace.html"
-  - title: 詳細はこちら
+    - title: NS224 シェルフ
+      url: "../ns224/index.html"
+    - title: SASシェルフ
+      url: "../sas3/index.html"
+  - title: サポートされるスイッチ
     links:
-    - title: 内蔵ディスクドライブのビデオの交換
-      url: https://www.youtube.com/watch?v=Ziqg9HL8oYQ
-    - title: VMware Horizon View を使用したノンパーシステントデスクトップ向けの NetApp All Flash FAS 解決策
-        | TR-4539
-      url: https://www.netapp.com/pdf.html?item=/media/10695-tr-4539.pdf
-  - title: シェルフを追加または削除する
-    links:
-    - title: NS224
-      url: https://docs.netapp.com/us-en/ontap-systems/ns224/index.html
-    - title: SAS では IOM12 を使用します
-      url: https://docs.netapp.com/us-en/ontap-systems/sas3/index.html
-  - title: スイッチを設置してメンテナンスします
-    links:
-    - title: Broadcom 対応スイッチ
-      url: https://docs.netapp.com/us-en/ontap-systems-switches/
-    - title: Cisco スイッチ
-      url: https://docs.netapp.com/us-en/ontap-systems-switches/
-  - title: アップグレード
+    - title: BES-53248 の場合
+      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-bes-53248/configure-new-switch-overview.html
+    - title: Cisco Nexus 9336C-FX2
+      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/configure-switch-overview-9336c-cluster.html
+    - title: Cisco Nexus 9336C-FX2（共有構成
+      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/configure-switch-overview-9336c-shared.html
+  - title: その他のドキュメントリソース
     links:
     - title: システムハードウェアのアップグレード
       url: https://docs.netapp.com/us-en/ontap-systems-upgrade/
     - title: ONTAP ソフトウェアのアップグレード
       url: https://docs.netapp.com/us-en/ontap/upgrade/index.html
-  - title: リソースの追加
-    links:
-    - title: ONTAP のドキュメント
-      url: https://docs.netapp.com/us-en/ontap/
-    - title: NetApp Hardware Universe の略
-      url: https://hwu.netapp.com/home/index
-    - title: NetApp Active IQ Digital Advisor
-      url: https://docs.netapp.com/us-en/active-iq/index.html
-    - title: NetApp Active IQ Config Advisor の略
-      url: https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor
-    - title: NetApp Interoperability Matrix Tool で確認できます
-      url: https://mysupport.netapp.com/matrix/#welcome
-    - title: ネットアップのサポートナレッジベース
-      url: https://kb.netapp.com/
-    - title: ネットアップコミュニティ
-      url: https://community.netapp.com/
+    - title: 内蔵ディスクドライブの交換（ビデオ）
+      url: https://www.youtube.com/watch?v=Ziqg9HL8oYQ

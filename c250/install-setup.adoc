@@ -1,0 +1,30 @@
+---
+permalink: c250/install-setup.html 
+sidebar: sidebar 
+keywords: aff c250, install, setup, initial configuration 
+summary: システムを設置してセットアップします。 
+---
+= はじめに：設置とセットアップを選択してください
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ほとんどの構成では、さまざまなコンテンツ形式から選択できます。
+
+* link:../c250/install-quick-guide.html["クイックステップ"]
++
+ステップバイステップの手順と追加コンテンツへのライブリンクが記載された PDF 形式のガイドです。
+
+* link:../c250/install-videos.html["ビデオの手順"]
++
+手順を追ったビデオでご確認ください。
+
+* link:../c250/install-detailed-guide.html["詳細な手順"]
++
+ステップバイステップの手順と追加コンテンツへのライブリンクが記載されたオンライン形式のガイドです。
+
+
+
+システムが MetroCluster IP 構成の場合は、を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html["MetroCluster IP 構成をインストールします"^] 手順

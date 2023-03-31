@@ -1,0 +1,79 @@
+---
+section: c400
+title: AFF C400システム
+url: "/c400/index.html"
+entries:
+- title: 設置とセットアップ
+  pdf-filename: AFF C400のインストールとセットアップ
+  entries:
+  - title: クイックステップ
+    url: "/c400/install-quick-guide.html"
+- title: メンテナンス
+  pdf-filename: AFF C400メンテナンス
+  entries:
+  - title: ブートメディア
+    pdf-filename: AFF C400ブートメディア
+    entries:
+    - title: 概要
+      url: "/c400/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/c400/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/c400/bootmedia-impaired-controller-shutdown.html"
+    - title: ブートメディアを交換します
+      url: "/c400/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/c400/bootmedia-recovery-image-boot-options.html"
+    - title: MetroCluster の設定をスイッチバックします
+      url: "/c400/bootmedia-2n-mcc-switchback.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/c400/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/c400/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: AFF C400シャーシ
+    entries:
+    - title: 概要
+      url: "/c400/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/c400/chassis-replace-shutdown.html"
+    - title: ハードウェアを交換します
+      url: "/c400/chassis-replace-move-hardware.html"
+    - title: 交換後の処理
+      url: "/c400/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラモジュール
+    pdf-filename: AFF C400コントローラモジュール
+    entries:
+    - title: 概要
+      url: "/c400/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/c400/controller-replace-shutdown.html"
+    - title: コントローラモジュールを交換します
+      url: "/c400/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/c400/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続します
+      url: "/c400/controller-replace-recable-reassign-disks.html"
+    - title: システムのリストアを完了
+      url: "/c400/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    pdf-filename: AFF C400 DIMM
+    url: "/c400/dimm-replace.html"
+  - title: ファン
+    pdf-filename: AFF C400ファンモジュール
+    url: "/c400/fan-swap-out.html"
+  - title: NVDIMM バッテリ
+    pdf-filename: AFF C400 NVDIMMバッテリ
+    url: "/c400/nvdimm-battery-replace.html"
+  - title: NVDIMM
+    pdf-filename: AFF A320 NVDIMM
+    url: "/c400/nvdimm-replace.html"
+  - title: PCIe カードまたはメザニンカード
+    pdf-filename: AFF C400 PCIeまたはメザニンカード
+    url: "/c400/pci-cards-and-risers-replace.html"
+  - title: 電源装置
+    pdf-filename: AFF C400の電源
+    url: "/c400/power-supply-replace.html"
+  - title: リアルタイムクロックバッテリ
+    pdf-filename: AFF C400リアルタイムクロックバッテリ
+    url: "/c400/rtc-battery-replace.html"
