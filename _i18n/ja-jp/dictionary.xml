@@ -5172,7 +5172,6 @@
   <block id="c50fdb32ee76a4d77a2a4b76520e5bed" category="admonition">ファンモジュールの交換後、ファンモジュールが正しく取り付けられているかどうかがファームウェアで確認され、その間は黄色の警告 LED が点灯した状態になります。このプロセスが完了すると LED は消灯します。</block>
   <block id="162c19cb0e58f8c6c83c319b91d9da12" category="paragraph">テクニカルサポートにお問い合わせください<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>RMA 番号を確認する場合は、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
-  <block id="ec01d482cf394f212f073921cfd9d5bd" category="sidebar">ONTAP リリースノート</block>
   <block id="f3585daa539c5917b4fedd0eb7efb3f2" category="sidebar">AFF システム</block>
   <block id="b6000f9eed7f8ea9ee4632bd2f77961a" category="sidebar">AFF C190</block>
   <block id="4fbc8445e0d6cdbbc8011982cd328f69" category="sidebar">AFF A200</block>
@@ -5195,14 +5194,7 @@
   <block id="207e21ff57c713dc789acfa5e99040ae" category="sidebar">SAS では IOM12 を使用します</block>
   <block id="077d93425bc0aa7f9c6512d9b58b5d96" category="sidebar">Nexus 9336C-FX2 クラスタスイッチ</block>
   <block id="408e6b1f14e3275adbc6a975f5910340" category="sidebar">プラットフォームのアップグレード</block>
-  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">リソースの追加</block>
-  <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="sidebar">ONTAP のドキュメント</block>
-  <block id="519131237f79eadb2dc6a1e003a087bc" category="sidebar">NetApp Active IQ Config Advisor の略</block>
   <block id="bc8be72fdc9d6054f356bb2b7f80fd12" category="sidebar">NetApp Interoperability Matrix を参照してください</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
-  <block id="9d36987153aaf6bfaf4018df16b0dc21" category="sidebar">はじめに </block>
-  <block id="5b46f1e25b24701e3e37b48389c68f1f" category="sidebar">システムデータシート</block>
-  <block id="9309884a373bc815760f4be6706be913" category="sidebar">ストレージデータシート</block>
   <block id="7ff4995c299eff1168d2cf4a88aff450" category="sidebar">設置とセットアップ</block>
   <block id="e5fcd011be287f0b85815a5d0c8165aa" category="sidebar">ほとんどの構成</block>
   <block id="8a2b576a31ff10b9bc5244fbaf3e9553" category="sidebar">MetroCluster IP 構成</block>
@@ -5212,18 +5204,8 @@
   <block id="add0180387a0985c32471180b375b8d9" category="sidebar">ファン</block>
   <block id="0dd3b2dc51e58d8e40eab2012f3bbc91" category="sidebar">メザニンカード</block>
   <block id="d138e90428f37a60387c8577b6e009b8" category="sidebar">NV バッテリ</block>
-  <block id="2f1a3e62508d88ddc31f1aa72a8334d4" category="sidebar">詳細はこちら</block>
-  <block id="950ddde1b95bd175de9e64710ca7628d" category="sidebar">内蔵ディスクドライブのビデオの交換</block>
-  <block id="a4e1bbb083c33fd7dbc252f015b0b111" category="sidebar">VMware Horizon View を使用したノンパーシステントデスクトップ向けの NetApp All Flash FAS 解決策 | TR-4539</block>
-  <block id="6c991e0eca69d42bf35e7ea499a3ea0c" category="sidebar">シェルフを追加または削除する</block>
-  <block id="99a7b0ee54277073c008109914f38e8b" category="sidebar">スイッチを設置してメンテナンスします</block>
-  <block id="7972b80956858e3ab7ff0a50aa404e7b" category="sidebar">Broadcom 対応スイッチ</block>
-  <block id="250f3098aa37d3a08b48b8157db8a62e" category="sidebar">Cisco スイッチ</block>
-  <block id="f683581d3e75f05f9d9215f9b4696cef" category="sidebar">アップグレード</block>
   <block id="d44f3a6dbf7d14380c862fdbf2b79c35" category="sidebar">システムハードウェアのアップグレード</block>
   <block id="f7e891dd188ea1d7b94852cb50ec354e" category="sidebar">ONTAP ソフトウェアのアップグレード</block>
-  <block id="cd7241567b7d41282d7d42bd0fd8924e" category="sidebar">NetApp Interoperability Matrix Tool で確認できます</block>
-  <block id="3f2b90ec5a9b43745b9c8c9fedf48d8d" category="sidebar">ネットアップのサポートナレッジベース</block>
   <block id="12c92ca9c24f5823632d459af4fd1842" category="sidebar">NVRAM バッテリ</block>
   <block id="b43f107257ba3edc0efa4d20d003f080" category="sidebar">NVRAM モジュール / NVRAM DIMM</block>
   <block id="8d5e185ac32326457521ab7ce1024be6" category="sidebar">PCIe カードまたはメザニンカード</block>
@@ -7084,7 +7066,6 @@
   <block id="c920d4841ecd46b57d9a50e7295a2153" category="inline-link-macro">IOM12 モジュールを搭載したディスクシェルフのホットアド要件</block>
   <block id="36779ed778ea1fac61fae3be46917d43" category="inline-link-macro">IOM12モジュールを搭載したディスクシェルフをホットアド用に設置します</block>
   <block id="56ccacf68c60aa589cdd947ffabc6a40" category="paragraph">に記載された要件を満たしている必要があります <block ref="38d5024537883b0bd86511e0b5e50dba" category="inline-link-macro-rx"></block> およびの手順に従って、各ディスクシェルフの設置、電源投入、シェルフ ID の設定を行います <block ref="2957551c96808bfde01acb853ddbc0af" category="inline-link-macro-rx"></block>。</block>
-  <block id="4ec6a95192d18718a540794417c8fa63" category="sidebar">NetApp Active IQ Digital Advisor</block>
   <block id="398a3c8d2269f5f0bf21e8be014ed54c" category="list-text">IOM12モジュールを搭載したシェルフをIOM6モジュールを搭載したシェルフのスタックにホットアドする場合、スタック全体のパフォーマンスは6Gbpsで動作します（最も速度の低いシェルフ）。</block>
   <block id="75e1d900c724ecf27f282e3bba238d06" category="paragraph">IOM3またはIOM6モジュールからIOM12モジュールにアップグレードされたシェルフをホットアドする場合、スタックは12Gbpsで動作しますが、シェルフのバックプレーンとディスク機能によってディスクパフォーマンスが3Gbpsまたは6Gbpsに制限される可能性があります。</block>
   <block id="240920b675de649a14eaba01757477c0" category="list-text">最初のIOM12 / IOM12Bシェルフ（最後のIOM6シェルフに接続するシェルフ）は、常にIOM6シェルフの円形のポート（四角形のポートではありません）に接続します。</block>
@@ -7804,4 +7785,8 @@
   <block id="bcf7de048a0b400d784ce2434b8beffe" category="doc">SSDドライブを交換してください- AFF C250</block>
   <block id="9c7a64854bf794e3fdb5cf355e7f1647" category="doc">AFF A150システムのマニュアル</block>
   <block id="31d91f8342285d4227c3ee9c296c770a" category="doc">AFF A220システムのマニュアル</block>
+  <block id="7ea1e7a8d88645f3d34ddf28afd75c22" category="sidebar">AFF Aシリーズシステムのデータシート</block>
+  <block id="9a7f5dd837959f1361128bbf46fc6c5b" category="sidebar">AFF Cシリーズシステムのデータシート</block>
+  <block id="242c23abc6f706eeabc035c9160b09f4" category="sidebar">AFF Aシリーズシステム</block>
+  <block id="ac6e4f5110aa7db5e1253a60d8d4f5a1" category="sidebar">AFF Cシリーズシステム</block>
 </blocks>

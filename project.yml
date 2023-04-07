@@ -21,12 +21,8 @@ sidebar:
       url: "/whats-new.html"
     - title: 運用を開始
       url: "/get-up-and-run.html"
-  - title: AFF システム
+  - title: AFF Aシリーズシステム
     entries:
-    - section: c190
-    - section: c250
-    - section: c400
-    - section: c800
     - section: a150
     - section: a220
     - section: a250
@@ -34,6 +30,12 @@ sidebar:
     - section: a700
     - section: a800
     - section: a900
+  - title: AFF Cシリーズシステム
+    entries:
+    - section: c190
+    - section: c250
+    - section: c400
+    - section: c800
   - title: FAS システム
     entries:
     - section: fas500f
