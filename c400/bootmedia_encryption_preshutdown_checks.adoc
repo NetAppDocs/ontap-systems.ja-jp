@@ -58,9 +58,9 @@ summary: 障害のあるコントローラをシャットダウンしてオン�
 
 
 
-=== NVE の設定を確認する
+== NVE の設定を確認する
 
-. キー管理サーバに格納されている認証キーのキー ID を表示します。「 security key-manager key-query
+. キー管理サーバに格納されている認証キーのキーIDを表示します。 `security key-manager key query`
 +
 
 NOTE: ONTAP 9.6 リリース以降では、キー管理ツールのタイプが追加されることがあります。タイプは「 KMIP 」、「 AKV 」、「 GCP 」です。これらのタイプを確認するプロセスは 'external' または 'onboard のキー管理タイプを確認するプロセスと同じです
@@ -90,7 +90,7 @@ NOTE: ONTAP 9.6 リリース以降では、キー管理ツールのタイプが�
 +
 http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
-.. すべての認証キーについて 'restored' カラムが 'yes' になっていることを確認しますつまり 'security key-manager key-query' です
+.. を確認します `Restored` 列が等しい `yes` すべての認証キー： `security key-manager key query`
 .. 障害のあるコントローラをシャットダウンします。
 
 
@@ -101,7 +101,7 @@ http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
 NOTE: プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。 http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
-.. すべての認証キーについて 'restored' カラムに yes と表示されていることを確認します security key-manager key-query
+.. を確認します `Restored` 列が表示されます `yes` すべての認証キー： `security key-manager key query`
 .. 「キーマネージャ」タイプに「 onboard 」と表示されていることを確認し、 OKM 情報を手動でバックアップします。
 .. advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
 .. コマンドを入力して、キー管理バックアップ情報を表示します。「 securitykey-manager onboard show-backup 」
@@ -114,9 +114,9 @@ NOTE: プロンプトで、お客様のオンボードキー管理のパスフ�
 
 
 
-=== NSE の設定を確認
+== NSE の設定を確認
 
-. キー管理サーバに格納されている認証キーのキー ID を表示します。「 security key-manager key-query-key-type NSE-AK
+. キー管理サーバに格納されている認証キーのキーIDを表示します。 `security key-manager key query -key-type NSE-AK`
 +
 
 NOTE: ONTAP 9.6 リリース以降では、キー管理ツールのタイプが追加されることがあります。タイプは「 KMIP 」、「 AKV 」、「 GCP 」です。これらのタイプを確認するプロセスは 'external' または 'onboard のキー管理タイプを確認するプロセスと同じです
@@ -139,14 +139,14 @@ NOTE: ONTAP 9.6 リリース以降では、キー管理ツールのタイプが�
 
 . 「キー・マネージャ」タイプに「外部」が表示され、「リストア済み」列に「はい」以外の項目が表示される場合：
 +
-.. onboard security key-manager sync コマンド「 security key-manager external sync 」を入力します
+.. 外部キー管理の認証キーをクラスタ内のすべてのノードにリストアします：「 securitykey-manager external restore
 +
 コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。
 
 +
 http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
-.. すべての認証キーについて 'restored' カラムが 'yes' になっていることを確認しますつまり 'security key-manager key-query' です
+.. を確認します `Restored` 列が等しい `yes` すべての認証キー： `security key-manager key query`
 .. コントローラは安全にシャットダウンできます。
 
 
@@ -159,7 +159,7 @@ http://mysupport.netapp.com/["mysupport.netapp.com"^]
 +
 http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
-.. すべての認証キーについて 'restored' カラムに yes と表示されていることを確認します security key-manager key-query
+.. を確認します `Restored` 列が表示されます `yes` すべての認証キー： `security key-manager key query`
 .. 「キーマネージャ」タイプに「 onboard 」と表示されていることを確認し、 OKM 情報を手動でバックアップします。
 .. advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
 .. コマンドを入力して、キー管理バックアップ情報を表示します。「 securitykey-manager onboard show-backup 」
