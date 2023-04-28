@@ -203,10 +203,6 @@
   <block id="b0a5349e52bfc1b486c0f4bb7f8c6b18" category="doc">コントローラをシャットダウンします（ AFF A250 ）</block>
   <block id="19285c8cf559d5176d09036ecccfca21" category="list-text">AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh</block>
   <block id="f80af4e39d67de6feaae8747f603e24b" category="paragraph">次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * &gt; system node AutoSupport invoke -node * -type all -message MAINT=2h`</block>
-  <block id="880c0610027a11af7086ae7e380e12e5" category="list-text">システムにコントローラモジュールが 2 つある場合は、 HA ペアを無効にします。</block>
-  <block id="d426a3f5c9c0e3362f4ed536e7643c03" category="cell">clustered ONTAP を実行しているシステムの構成</block>
-  <block id="b2aa61dcee4d7b77fcd001973469ddde" category="paragraph">「 storage failover modify -node node0 -enabled false 」という名前のノードが追加されました</block>
-  <block id="481250f3e8ec41b0e994305d8fc52b4a" category="paragraph">次のような確認メッセージが表示されます。</block>
   <block id="cf55af4b4668a579d36bfd91785ecbec" category="summary">NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。</block>
   <block id="d4d4b346339524be979b964b901a1b92" category="cell">... *</block>
   <block id="426ac41b4c68d57196f875fa046c7804" category="paragraph">Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します</block>
@@ -5505,7 +5501,6 @@
   <block id="934d0bdda7a0d1a8822fd442720c5972" category="paragraph">新しいコントローラへのディスクの再割り当て方法については、次のいずれかのオプションを選択します。</block>
   <block id="32f251bc81f643cafcff8ad711b81b00" category="open-title">オプション 1 ：検証 ID （ HA ペア）</block>
   <block id="a5d68caf62cce2afa4e8ca12ce07943a" category="open-title">オプション 2 ： ID の再割り当て（ MetroCluster 設定）</block>
-  <block id="7da65b5a10b69b45b490009ac07696ff" category="paragraph">プロンプトが表示されたら回答 'y' 。</block>
   <block id="c86ca2ad8b18f1b66eec5105c703ce0a" category="list-text">AFF A700 HA ペアを使用していて、初期の NS224 ドライブシェルフをホットアドする場合（ HA ペアに NS224 ドライブシェルフがない場合）は、コアダンプ（コアファイルの格納）をサポートするために、各コントローラにコアダンプモジュール（ X9170a 、 NVMe 1TB SSD ）を取り付ける必要があります。</block>
   <block id="b979e87e6bde70f013c6af59e1fa73aa" category="list-text">NS224 シェルフをサポートする ASA HA ペアがある場合は、この手順を使用できます。</block>
   <block id="7e874a7e7fce6d08319e452556499a17" category="paragraph">AFF A700 HA ペア</block>
@@ -5874,7 +5869,6 @@
   <block id="8da7df8c5a74dcac7b5b9a5067e72313" category="image-alt">DRW a900 は LED モードを交換してください</block>
   <block id="6b058f6aab05ab39cfb929fd3a13e5ad" category="paragraph">モジュールをイジェクトします。</block>
   <block id="fdbcf566dc8794b2a2c635f286edfa2b" category="paragraph">シャーシから引き出します。</block>
-  <block id="9cc3abf99d341ddf4468a9377444f16d" category="doc">障害のあるコントローラ AFF A900 をシャットダウンします</block>
   <block id="2aba05ee9a4093e5315b48903c27d988" category="doc">I/O モジュールを交換してください - AFF A900</block>
   <block id="a8869e142255ff80f45be4817f469087" category="section-title">手順 3 ： I/O モジュールの交換後にコントローラをリブートします</block>
   <block id="bbee62c98bf71c87d77b3d48e5cacaff" category="paragraph">I/O モジュールを交換したら、コントローラモジュールをリブートする必要があります。</block>
@@ -6287,12 +6281,6 @@
   <block id="742cf561af7f07544ddf9f3e66121452" category="paragraph">このメッセージが表示されない場合は、 Ctrl+C キーを押し、メンテナンスモードでブートするオプションを選択してから、コントローラを停止して LOADER プロンプトを表示します。</block>
   <block id="c8dc5733d35c41c184dc2e9c60fd8a12" category="admonition">設定するターゲットポートは、正常なコントローラから障害コントローラへの通信に使用するポートで、 var ファイルシステムのリストア時にネットワーク接続で使用します。このコマンドでは e0M ポートを使用することもできます。</block>
   <block id="8db7a5b6ece2af3b075639e41512d618" category="section-title">オプション 1 ：コントローラをシャットダウンします</block>
-  <block id="b5d03ef67a171c85bf4bd311e2fd75df" category="paragraph">シャーシ内のコントローラまたはコントローラを新しいシャーシに移動する前に、シャットダウンする必要があります。</block>
-  <block id="93ff4b8a35c5f08ad3e97fdc9983948e" category="paragraph">クラスタに 2 台のコントローラがあります</block>
-  <block id="a0540c64b7001eb9739a6eed390808ac" category="paragraph">クラスタ内に 3 台以上のコントローラがあります</block>
-  <block id="853a8c6f8383ee1dc5f3826af9ff6797" category="list-text">停止を確認するプロンプトが表示されたら 'y を押してコントローラを停止します system node halt -node _node_name _`</block>
-  <block id="253a50052b60be1951a606aa7c311ba2" category="admonition">シャーシを交換する前にシステムのクリーンシャットダウンを実行し、不揮発性メモリ（ NVMEM / NVRAM ）内の書き込み前のデータが失われないようにする必要があります。システムによっては、 NVMEM / NVRAM の LED の点滅は、ディスクに保存されていないデータが NVMEM / NVRAM にあることを示しています。コントローラをリブートし、この手順 の最初からやり直してください。コントローラのクリーンシャットダウンに繰り返し失敗すると、ディスクに保存されていないデータが失われる可能性があります。</block>
-  <block id="8373aa3aac3c8f18564812bfcb55615a" category="list-text">該当する場合は、 2 台目のコントローラを停止して、 HA ペア構成でクォーラムエラーメッセージが表示されないようにします。「 system node halt -node _second_node_name -ignore-quorum -warnings true -skip-lif-migration-before-shutdown true 」</block>
   <block id="4c10c8d9f18f0c8ba6fc3ea32f7beee4" category="list-text">HA 構成の場合は、 2 台目のコントローラで同じ手順を繰り返します。</block>
   <block id="6d21dbcd6d30fc2426dd0b077d719da5" category="summary">障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。</block>
   <block id="d1614290531967ae3b3623d71b4ed961" category="paragraph">障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にして、実行中の ONTAP のバージョンを確認する必要があります。</block>
@@ -7198,13 +7186,11 @@
   <block id="0c2b7daebf1a1e94a676675bf614fba6" category="paragraph">ブートメディアは、電源装置とは反対のシェルフシャーシの壁に沿って配置されています。</block>
   <block id="178d438c63a174b511750f68655d814d" category="list-text">RTCバッテリを交換し、NSMモジュールを再度取り付け、モジュールをブートすると、ONTAP によってリアルタイムクロック時間が更新されます。</block>
   <block id="d067784c8bad4d41a4f87accd50abbc1" category="list-text">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性についてfalseと表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
-  <block id="1c0138111ac00fdce24dc38ffd9859d5" category="list-text">コントローラが 3 台以上あるクラスタは、クォーラムを構成している必要があります。クラスタでクォーラムを構成していない場合、または正常なコントローラと表示される場合<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 資格とヘルスについては、障害のあるコントローラをシャットダウンする前に、問題 を修正する必要があります。を参照してください <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
   <block id="305fade7b83ae4e7549b33a3ae1b1fd0" category="doc">シェルフ- NS224シェルフをホットアドします</block>
   <block id="859c951ebab21901f2fd6183c53339d5" category="summary">NVRAM11バッテリを搭載したデステージコントローラ電源モジュール\（DCPM \）をホットスワップするには、障害が発生したDCPMモジュールの場所を確認し、シャーシから取り外して、交換用DCPMモジュールをインストールする必要があります。</block>
   <block id="8ea19d634d233a26f4f650bd2e2b467c" category="paragraph">NVRAM11バッテリを搭載したデステージコントローラ電源モジュール（DCPM）をホットスワップするには、障害が発生したDCPMモジュールの場所を確認し、シャーシから取り外して、交換用のDCPMモジュールをインストールする必要があります。</block>
   <block id="58fb0a507d97ff336e5db5d69ba846e9" category="inline-link">10GbE 接続用に、 40GbE NIC ポートを複数の 10GbE ポートに変換します</block>
   <block id="8ae73aa056882e7b560f3b52b5764957" category="list-text">システムが40GbE NICで10GbEのクラスタインターコネクトとデータ接続をサポートするように設定されている場合は、を使用してそれらのポートを10GbE接続に変換します<block ref="5ec041cdb2bbdf01cd4ea2c400b17495" prefix=" " category="inline-code"></block> コマンドをメンテナンスモードで実行します。を参照してください<block ref="2d808a662d9493bde97b50913a25a294" category="inline-link-rx"></block> を参照してください。</block>
-  <block id="d875f9fec183da794cd6d6245ef00d1d" category="paragraph"><block ref="272f3c49a4ec1753c70013d06165277b" prefix="" category="inline-code"></block></block>
   <block id="1bb835185391c9f6463cb5dc111090d1" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
   <block id="aae78f4a3d47a08dddca98a632d4a75f" category="paragraph">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタでクォーラムを使用していない場合や、正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。</block>
   <block id="68d9e980b8b4998ef88139d7b7ab8ff6" category="paragraph"><block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block></block>
@@ -7416,11 +7402,7 @@
   <block id="5ab526c2d8a23c39c3d68b1080ca3e89" category="doc">詳細ガイド- AFF C400</block>
   <block id="ed1fe7521861c492832064f3b6daca68" category="paragraph">100GbEケーブル（QSFP28）</block>
   <block id="e0cc8c545401fc3b34281140c54756c7" category="admonition">カードのポートラベルが見えない場合は、カードの取り付け方向を確認し（C400の場合、PCIeコネクタソケットはカードスロットの左側にあります）、NetApp Hardware Universe でカードのパーツ番号を確認します。 これは、ベゼルとポートラベルの図を示しています。カードのパーツ番号は、sysconfig -aコマンドを使用するか、システムパッキングリストに記載されています。</block>
-  <block id="80a7f396e1bc3ed796a9313a0aa75443" category="image-alt">DRW C400 TNSCネットワークケーブル</block>
-  <block id="a905d4a42dacfc07296e02d609b47cb0" category="image-alt">DRW C400スイッチネットワークケーブル</block>
   <block id="670ce436320fc9008e2880db983e27d2" category="paragraph">以下のオプションでは、1台または2台のNS224ドライブシェルフをシステムにケーブル接続する方法を説明します。</block>
-  <block id="66587f1aa86b9e296b1d1dd43ca73e3e" category="image-alt">DRW C400 ns224シェルフ1台</block>
-  <block id="0b9e9bf3097ae366abf0d35474fb4b1f" category="image-alt">DRW C400 2台のns224シェルフ</block>
   <block id="eca713323e6fa9782ebae60357fc0453" category="doc">NVDIMM - AFF C400を交換します</block>
   <block id="719e61ffcf0d96924351db01f7e50603" category="doc">ビデオ- AFF C400</block>
   <block id="51e4f59a1aaa143b8d5c910f0a77328e" category="video-title">アニメーション- AFF C400の設置とセットアップの手順</block>
@@ -7804,4 +7786,80 @@
   <block id="66ba60034a525a69b1b5cf4344529c25" category="paragraph">障害のあるシャーシ（NVRAMモジュールを含む）からI/Oモジュールを取り外すには、特定の手順を実行します。</block>
   <block id="76558becedd79e95bf3921d5f08baeb6" category="list-text">障害のあるシャーシの前面、DCPMベイの真下にあるUSB LEDモジュールの位置を確認します。</block>
   <block id="ac6201b7b810f81cfaef54d4d8fe63d5" category="list-text">システムキャビネットのネジ用のTORQドライバ</block>
+  <block id="d581cc3762a48b4da22069bdeae81b8f" category="inline-link">4ノードクラスタで1つのHAペアを正常にシャットダウンして電源をオンにする方法</block>
+  <block id="3f7ee1fb6cfdfd18c49f8e060fa8f9c9" category="paragraph">この手順 は、2ノード、非MetroCluster構成専用です。システムのノードが3つ以上の場合は、を参照してください<block ref="681b47fbe1cebc545a75e77efd420ec0" category="inline-link-rx"></block>。</block>
+  <block id="36ee27bc3fc7c617977b35534609c979" category="paragraph">必要なもの：</block>
+  <block id="68d685ddbaa25f1a411d5e93d6f91913" category="list-text">ONTAP のローカル管理者のクレデンシャル。</block>
+  <block id="ac1036c822296c33d140ef7ba7cd246d" category="list-text">ストレージ暗号化を使用する場合は、ネットアップのオンボードキー管理（OKM）クラスタ全体のパスフレーズ。</block>
+  <block id="93e6bf3fa29a7ebd2a4bb235a54deb94" category="list-text">各コントローラのSP / BMCへのアクセス性。</block>
+  <block id="d6562c849f41b9038124f0c304aed030" category="list-text">すべてのクライアント/ホストからネットアップシステム上のデータへのアクセスを停止します。</block>
+  <block id="d61b46d9cd719b77efb76269147aa377" category="list-text">外部バックアップジョブを一時停止します。</block>
+  <block id="527f18fb3f8ac4bca4ae01901a2c9317" category="list-text">交換に必要な工具と機器。</block>
+  <block id="3b6fc5695f8237510131da824ce788d0" category="inline-link">ストレージシステムの『解決ガイド』を正常にシャットダウンし、電源を投入します</block>
+  <block id="03f7958d5b1fc7636429e97368e2f97f" category="admonition">FabricPool のクラウド階層として使用されるネットアップStorageGRID またはONTAP S3のシステムの場合は、を参照してください<block ref="6db187057e0b0e01589d1a1a7f510469" category="inline-link-rx"></block> この手順 を実行した後。</block>
+  <block id="ec965df16952820cbea39156c0dfe2f0" category="admonition">FlexArray アレイLUNを使用している場合は、この手順 の実行後に該当するシステムでシャットダウン手順 に関するベンダーのストレージアレイのドキュメントを参照してください。</block>
+  <block id="ad8a5006901db5ea8481166a34f27929" category="inline-link">SU490：（影響：重大）SSDのベストプラクティス：電源がオフになってから2カ月以上が経過すると、ドライブ障害やデータ損失のリスクを回避できます</block>
+  <block id="7d140f8b4464f9a8684a7943df8e74d9" category="admonition">SSDを使用している場合は、を参照してください<block ref="13eec713a6c81535d5709aa561195b7a" category="inline-link-rx"></block></block>
+  <block id="356bf392971487f892daba5338258571" category="paragraph">シャットダウン前のベストプラクティスは次のとおりです。</block>
+  <block id="2ee5edc561a6167cf2d57a64ee655bef" category="inline-link">システムの健全性チェック</block>
+  <block id="7023017d0098f741d6569842ee62b922" category="list-text">追加を実行します<block ref="9ace058273de133e6accbea83a7d278a" category="inline-link-rx"></block>。</block>
+  <block id="f40b8507b340a958be200bec6d3758a0" category="list-text">ONTAP をシステムの推奨リリースにアップグレードします。</block>
+  <block id="9f4d2068e7b3d206efc0252b3da597a5" category="inline-link">Active IQ ウェルネスアラートとリスク</block>
+  <block id="c5df4dcae9a001142a36959487445ff6" category="list-text">いずれかを解決します<block ref="31b25beca26cb366eeb0665e3c0d7cbf" category="inline-link-rx"></block>。システムコンポーネントのLEDなど、現在システムに発生している障害をメモします。</block>
+  <block id="3923b7d5100131c85be2160c8b680704" category="list-text">SSHを使用してクラスタにログインするか、クラスタ内の任意のノードからローカルのコンソールケーブルとラップトップ/コンソールを使用してログインします。</block>
+  <block id="d9e8189e14354652821e1f0f10f12dfe" category="list-text">AutoSupport をオフにして、システムがオフラインになるまでの時間を指定します。</block>
+  <block id="ff3faabe8aca2ae4a92cf7dec5b62b8f" category="paragraph"><block ref="14fb036c43dbcde966a639d33554da5c" prefix="" category="inline-code"></block></block>
+  <block id="ac2a6618449930e8abeb32fd078d7716" category="list-text">すべてのノードのSP / BMCアドレスを特定します。</block>
+  <block id="0d16db60da2c01b63ef84ee8d616c2fb" category="paragraph"><block ref="b206d268f79aeaa7c4f1e44684d2f080" prefix="" category="inline-code"></block></block>
+  <block id="a0fd5b31be719aeb26e2fc9c6991da9f" category="list-text">クラスタシェルを終了します。<block ref="f24f62eeb789199b9b2e467df3b1876b" prefix=" " category="inline-code"></block></block>
+  <block id="cf814f480a03329076e1d0cf2f71d7e3" category="list-text">前の手順の出力に表示されたいずれかのノードのIPアドレスを使用して、SSH経由でSP / BMCにログインします。</block>
+  <block id="aed4c23042b5f25dad252449f4ddcc59" category="paragraph">コンソール/ラップトップを使用している場合は、同じクラスタ管理者のクレデンシャルを使用してコントローラにログインします。</block>
+  <block id="a3dcd96fdc725fa51c4161c8a03146ab" category="admonition">進捗状況を監視できるように、すべてのSP / BMC接続とのSSHセッションを開きます。</block>
+  <block id="e2cba6e644aeaf95f80f688b880746da" category="list-text">クラスタ内のすべてのノードを停止します。</block>
+  <block id="02e0d9b5c39d838c007bfad7b6e34196" category="paragraph"><block ref="b89a38fd8ae1ad809e5b3560be211bfa" prefix="" category="inline-code"></block>。</block>
+  <block id="aba2c36fe67a0528d4417c7e5c4da8a1" category="admonition">StrictSyncモードで動作するSnapMirror同期を使用するクラスタの場合：<block ref="03e2e719454253f2db864fa560da7899" prefix=" " category="inline-code"></block></block>
+  <block id="3171aeb3fa199cec60349b4529cc0178" category="list-text">というメッセージが表示されたら、クラスタ内の各コントローラに「* y *」と入力します<block ref="25cae4cb08eccf660db87cfb99a959d7" prefix=" " category="inline-code"></block></block>
+  <block id="a39c8c38e51a42fcfaac22367dd19064" category="list-text">各コントローラが停止するまで待ち、LOADERプロンプトを表示します。</block>
+  <block id="461bb1724a0adc2c975edfdd4b4923a1" category="list-text">PSUのオン/オフスイッチがない場合は、各PSUの電源をオフにするか、電源プラグを抜きます。</block>
+  <block id="e3dc6cc26ed03ba51ee4327edde1e1fc" category="list-text">各PSUから電源コードを抜きます。</block>
+  <block id="0042f27885e192c9ea879dde4ac34445" category="list-text">クラスタに関連付けられているすべてのコントローラ、ドライブシェルフ、およびスイッチの電源がオフになっていることを確認します。</block>
+  <block id="3f80193798fcbb08cbe99cbe0a3aff95" category="paragraph">シャーシを交換したら、次の順序でクラスタコンポーネントの電源をオンにします。</block>
+  <block id="f9604921fe40d48421b9ae74e9a50059" category="list-text">スイッチの電源をオンにします</block>
+  <block id="85ee83d55e3fb9b20f9f17b7fb773ca0" category="list-text">ドライブシェルフの電源をオンにします</block>
+  <block id="d692ae791953fc513c9f3fd94d866964" category="list-text">コントローラの電源をオンにします</block>
+  <block id="6d0114cd2de3e017d8d76d6b9f2191fc" category="list-text">スイッチの電源をオンにします。</block>
+  <block id="fe12fd40092a74cc86c0db3006d72880" category="list-text">各電源ケーブルをPDUからPSUに接続し直します。</block>
+  <block id="d79f0458e922251555ddc7baa3538dbc" category="list-text">各PSUロッカースイッチをオンの位置にします（該当する場合）。</block>
+  <block id="420a1ffc592934afa358803642255547" category="list-text">スイッチの電源が入るまで待ちます。</block>
+  <block id="67935e6f17c778c98c8e80fce8e29a9f" category="list-text">スイッチ（前面と背面の両方）に故障ランプがないか点検します。</block>
+  <block id="978a8732c5cda53a8b4a3de35d2184fd" category="list-text">管理IPアドレスを使用してスイッチに接続します。</block>
+  <block id="c72d57bd067b2b477426ef13c9c81629" category="list-text">スイッチの健全性を確認します（詳細についてはスイッチベンダーのドキュメントを参照してください）。</block>
+  <block id="fc5b4d6235b015336cafcedc54683d5d" category="list-text">すべてのスイッチの電源がオンになって正常な状態になるまで、各スイッチについてを繰り返します。</block>
+  <block id="874c11301500ddf99db8a26ccc161200" category="list-text">ドライブシェルフの電源をオンにします。</block>
+  <block id="6309302d98e4a634b65821ffb59dcafc" category="list-text">すべてのディスクシェルフに電源が投入され、ドライブがスピンアップするまで待ちます。</block>
+  <block id="453fd8a2e005a3688cb57a1715403eb8" category="list-text">すべてのシェルフIDが想定される値になっていることを確認します。</block>
+  <block id="43efaf94ccfd1b8ff73ede9310aa0726" category="list-text">シャットダウン前に存在しなかったディスクシェルフ（前面と背面の両方）の障害ライトを確認します。</block>
+  <block id="9a14737750e117b254a09e3e342bf4d4" category="list-text">コントローラの電源をオンにします。</block>
+  <block id="1526ecbd5f3186fd0391bcab851746a6" category="list-text">各PSUロッカースイッチをオンの位置にします（該当する場合）。同じシャーシにないHAペアの電源は同時にオンにする必要があります。</block>
+  <block id="4ac3730c7728ff9f397c9c9c30e61398" category="list-text">シャーシ内のコントローラに電源が投入されるまで待ちます。</block>
+  <block id="2a966b5531ce1a15adff1f9be922268a" category="list-text">シャーシとコントローラ（前面と背面の両方）に障害LEDがないかどうかを確認します。</block>
+  <block id="c908a555fb9bda03518faf090d62b55f" category="list-text">すべての電源がオンになるまで、各コントローラ/シャーシについて同じ手順を繰り返します。</block>
+  <block id="1ace3ad5235525fbfcabf5c9ed71d2c2" category="list-text">SSHを使用してノードのSPまたはBMCのIPアドレスに接続します。次のコマンドを使用して、電源をオフにする前にIPアドレスを取得します。</block>
+  <block id="42bd22c6658be2e7f86763221caaff8d" category="list-text">追加のシステム健全性チェックを実行します。</block>
+  <block id="6cae41ec99a87022e2ff84639c1c9bc1" category="list-text">いずれかを解決します<block ref="31b25beca26cb366eeb0665e3c0d7cbf" category="inline-link-rx"></block></block>
+  <block id="a4e515a78d7900d16a4af3f913b033f7" category="list-text">を実行します<block ref="48865c7c1d8013246e4e5f705a9105de" category="inline-link-rx"></block></block>
+  <block id="2d7735678080387bf2714cda931af8cf" category="inline-link">ONTAP でスクリプトを使用してクラスタの健全性チェックを実行する方法</block>
+  <block id="b13401e632345d1a1c36a42722a9cdd7" category="list-text">の説明に従って、システムヘルスを確認します<block ref="8441a6aeb4c8951afc9d3ef26143aa41" category="inline-link-rx"></block></block>
+  <block id="36bc7c68ef7de2e917f4a186a4edaa58" category="list-text">メンテナンスタスクのComplete AutoSupport メッセージを生成します。</block>
+  <block id="538f577c4284d097aef57681a2acf728" category="paragraph"><block ref="a0502e9e767995ecf84f499d84740634" prefix="" category="inline-code"></block></block>
+  <block id="c779830d2c1a694320dcf49ae503c75a" category="list-text">自動ギブバックがアクティブであることを確認します。</block>
+  <block id="3d2d5e9a2a8cef4225a4bd073c2aeefb" category="paragraph"><block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix="" category="inline-code"></block></block>
+  <block id="a095b22aaa929c82c4414b8a51e710af" category="doc">コントローラをシャットダウンします- AFF A900</block>
+  <block id="736a1f9cdd2dabb4a30feb86e55777ad" category="paragraph">25GbEケーブル（SFP28）</block>
+  <block id="bbeb14c0a41e32ab9190d6fef7d7d2de" category="list-text">次の図を使用して、コントローラとスイッチをケーブル接続します。</block>
+  <block id="3f90eae06a0fd4fa951102461bc035a2" category="image-alt">DRW C400 TNSCネットワーキングケーブルIEOPS 1095</block>
+  <block id="dc70a7fbe1f21380db9b236898b87503" category="image-alt">DRW C400スイッチネットワークケーブルIEOPS 1096</block>
+  <block id="2a29b6abc01fa919029a6defab91ed09" category="list-text">次の図を使用して、1台のドライブシェルフにコントローラをケーブル接続します。</block>
+  <block id="cf05a1b835cc522d6ff312818c4655b5" category="image-alt">DRW C400 ns224シェルフIEOPS 1097を1台</block>
+  <block id="c8bb212781cb1ea1ac1f2bb19672260b" category="image-alt">DRW C400 2台のns224シェルフIEOPS 1098</block>
 </blocks>

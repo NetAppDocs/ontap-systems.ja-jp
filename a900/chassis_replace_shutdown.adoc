@@ -4,61 +4,75 @@ sidebar: sidebar
 keywords: aff a900, shutdown the controllers 
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
-= 障害のあるコントローラ AFF A900 をシャットダウンします
+= コントローラをシャットダウンします- AFF A900
 :allow-uri-read: 
 
 
+
+
+== コントローラをシャットダウンします- AFF A900
+
 [role="lead"]
-シャーシ内のコントローラまたはコントローラを新しいシャーシに移動する前に、シャットダウンする必要があります。
+この手順 は、2ノード、非MetroCluster構成専用です。システムのノードが3つ以上の場合は、を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_perform_a_graceful_shutdown_and_power_up_of_one_HA_pair_in_a_4__node_cluster["4ノードクラスタで1つのHAペアを正常にシャットダウンして電源をオンにする方法"^]。
 
-.このタスクについて
-* コントローラが 3 台以上あるクラスタは、クォーラムを構成している必要があります。クラスタでクォーラムを構成していない場合、または正常なコントローラと表示される場合 `false` 資格とヘルスについては、障害のあるコントローラをシャットダウンする前に、問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["ノードをクラスタと同期します"^]。
-* AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
-+
-次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
+.作業を開始する前に
+必要なもの：
 
+* ONTAP のローカル管理者のクレデンシャル。
+* ストレージ暗号化を使用する場合は、ネットアップのオンボードキー管理（OKM）クラスタ全体のパスフレーズ。
+* 各コントローラのSP / BMCへのアクセス性。
+* すべてのクライアント/ホストからネットアップシステム上のデータへのアクセスを停止します。
+* 外部バックアップジョブを一時停止します。
+* 交換に必要な工具と機器。
+
+
+
+NOTE: FabricPool のクラウド階層として使用されるネットアップStorageGRID またはONTAP S3のシステムの場合は、を参照してください https://kb.netapp.com/onprem/ontap/hardware/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage#["ストレージシステムの『解決ガイド』を正常にシャットダウンし、電源を投入します"] この手順 を実行した後。
+
+
+NOTE: FlexArray アレイLUNを使用している場合は、この手順 の実行後に該当するシステムでシャットダウン手順 に関するベンダーのストレージアレイのドキュメントを参照してください。
+
+
+NOTE: SSDを使用している場合は、を参照してください https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU490["SU490：（影響：重大）SSDのベストプラクティス：電源がオフになってから2カ月以上が経過すると、ドライブ障害やデータ損失のリスクを回避できます"]
+
+シャットダウン前のベストプラクティスは次のとおりです。
+
+* 追加を実行します https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["システムの健全性チェック"]。
+* ONTAP をシステムの推奨リリースにアップグレードします。
+* いずれかを解決します https://activeiq.netapp.com/["Active IQ ウェルネスアラートとリスク"]。システムコンポーネントのLEDなど、現在システムに発生している障害をメモします。
 
 
 .手順
-. システムにコントローラモジュールが 2 つある場合は、 HA ペアを無効にします。
+. SSHを使用してクラスタにログインするか、クラスタ内の任意のノードからローカルのコンソールケーブルとラップトップ/コンソールを使用してログインします。
+. AutoSupport をオフにして、システムがオフラインになるまでの時間を指定します。
 +
-[cols="1,2"]
-|===
-| clustered ONTAP を実行しているシステムの構成 | 作業 
+`system node autosupport invoke -node * -type all -messages "MAINT=8h Power Maintenance"`
 
-
- a| 
-クラスタに 2 台のコントローラがあります
- a| 
-`cluster ha modify -configured false`
-
-「 storage failover modify -node node0 -enabled false 」という名前のノードが追加されました
-
-
-
- a| 
-クラスタ内に 3 台以上のコントローラがあります
- a| 
-「 storage failover modify -node node0 -enabled false 」という名前のノードが追加されました
-
-|===
-. 停止を確認するプロンプトが表示されたら 'y を押してコントローラを停止します system node halt -node _node_name _`
+. すべてのノードのSP / BMCアドレスを特定します。
 +
-次のような確認メッセージが表示されます。
+`system service-processor show -node * -fields address`
+
+. クラスタシェルを終了します。 `exit`
+. 前の手順の出力に表示されたいずれかのノードのIPアドレスを使用して、SSH経由でSP / BMCにログインします。
++
+コンソール/ラップトップを使用している場合は、同じクラスタ管理者のクレデンシャルを使用してコントローラにログインします。
 
 +
-[listing]
-----
-Warning: This operation will cause controller "node-name" to be marked as unhealthy. Unhealthy nodes do not participate in quorum voting. If the controller goes out of service and one more controller goes out of service there will be a data serving failure for the entire cluster. This will cause a client disruption. Use "cluster show" to verify cluster state. If possible bring other nodes online to improve the resiliency of this cluster.
 
-Do you want to continue? {y|n}:
-----
+NOTE: 進捗状況を監視できるように、すべてのSP / BMC接続とのSSHセッションを開きます。
+
+. クラスタ内のすべてのノードを停止します。
++
+`system node halt -node * -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`。
+
 +
 
-NOTE: シャーシを交換する前にシステムのクリーンシャットダウンを実行し、不揮発性メモリ（ NVMEM / NVRAM ）内の書き込み前のデータが失われないようにする必要があります。システムによっては、 NVMEM / NVRAM の LED の点滅は、ディスクに保存されていないデータが NVMEM / NVRAM にあることを示しています。コントローラをリブートし、この手順 の最初からやり直してください。コントローラのクリーンシャットダウンに繰り返し失敗すると、ディスクに保存されていないデータが失われる可能性があります。
+NOTE: StrictSyncモードで動作するSnapMirror同期を使用するクラスタの場合： `system node halt -node * -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
 
-. 該当する場合は、 2 台目のコントローラを停止して、 HA ペア構成でクォーラムエラーメッセージが表示されないようにします。「 system node halt -node _second_node_name -ignore-quorum -warnings true -skip-lif-migration-before-shutdown true 」
-+
-プロンプトが表示されたら回答 'y' 。
-
+. というメッセージが表示されたら、クラスタ内の各コントローラに「* y *」と入力します `_Warning: Are you sure you want to halt node "cluster name-controller number"?
+{y|n}:_`
+. 各コントローラが停止するまで待ち、LOADERプロンプトを表示します。
+. PSUのオン/オフスイッチがない場合は、各PSUの電源をオフにするか、電源プラグを抜きます。
+. 各PSUから電源コードを抜きます。
+. クラスタに関連付けられているすべてのコントローラ、ドライブシェルフ、およびスイッチの電源がオフになっていることを確認します。
 

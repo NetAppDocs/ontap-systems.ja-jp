@@ -6,8 +6,14 @@ entries:
 - title: 設置とセットアップ
   pdf-filename: AFF C400のインストールとセットアップ
   entries:
+  - title: インストールとセットアップを選択します
+    url: "/c400/install-setup.html"
   - title: クイックステップ
     url: "/c400/install-quick-guide.html"
+  - title: ビデオの手順
+    url: "/c400/install-videos.html"
+  - title: 詳細な手順
+    url: "/c400/install-detailed-guide.html"
 - title: メンテナンス
   pdf-filename: AFF C400メンテナンス
   entries:
