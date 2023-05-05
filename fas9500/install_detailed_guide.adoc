@@ -58,7 +58,9 @@ X66240A-05 （ 112-00639 ）、 0.5m
 X66240A-2 （ 112-00598 ）、 2m
 
 X66240A-5 （ 112-00600 ）、 5m
-| image:../media/oie_cable_sfp_gbe_copper.svg["幅= 85px"]  a| 
+ a| 
+image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+ a| 
 ネットワークケーブル
 
 
@@ -234,7 +236,6 @@ video::da08295f-ba8c-4de7-88c3-ae7c0170408d[panopto]
 image::../media/drw_9500_tnsc_network_cabling.svg[DRW 9500 TNSCネットワークケーブル接続]
 
 +
-[cols="20%,80%"]
 |===
 | ステップ | 各コントローラでを実行します 
 
@@ -287,10 +288,18 @@ image::../media/oie_legend_icon_4_dr.svg[OIE の凡例アイコン 4 DR]
 
 image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
 
+
+
+ a| 
+** ケーブルをケーブルマネジメントアームにストラップで固定します（図はなし）。
+** 電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。PSU 1と3はA側のすべてのコンポーネントに電力を供給し、PSU 2とPSU 4はB側のすべてのコンポーネントに電力を供給します。
+
+ a| 
+image::../media/oie_cable_power.svg[OIEケーブル電源]
+
+image::../media/drw_a900fas9500_power_source_icon_IEOPS-1142.svg[DRW a900fas9500電源アイコンIEOPS 1142]
+
 |===
-. 電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。
-. ケーブルをケーブルマネジメントアームにストラップで固定します（図はなし）。
-. ストレージをケーブル接続するには、を参照してください <<手順 4 ：コントローラをドライブシェルフにケーブル接続する>>。
 
 
 --
@@ -316,7 +325,6 @@ video::3ad3f118-8339-4683-865f-ae7c0170400c[panopto]
 image::../media/drw_9500_switched_network_cabling.svg[DRW 9500スイッチドネットワークのケーブル配線]
 
 +
-[cols="20%,80%"]
 |===
 | ステップ | 各コントローラでを実行します 
 
@@ -363,16 +371,24 @@ image::../media/oie_cable100_gbe_qsfp28.svg[OIEケーブル100 GbE qsfp28]
  a| 
 image::../media/oie_legend_icon_4_dr.svg[OIE の凡例アイコン 4 DR]
  a| 
-25GbE接続用ケーブル：
+25GbEケーブル接続：
 
 スロットA5とB5（5a、5b、5c、5d）およびスロットA7とB7（7a、7b、7c、7d）のポートを25GbEネットワークスイッチにケーブル接続します。
 
 image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
 
+
+
+ a| 
+** ケーブルをケーブルマネジメントアームにストラップで固定します（図はなし）。
+** 電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。PSU 1と3はA側のすべてのコンポーネントに電力を供給し、PSU 2とPSU 4はB側のすべてのコンポーネントに電力を供給します。
+
+ a| 
+image::../media/oie_cable_power.svg[OIEケーブル電源]
+
+image::../media/drw_a900fas9500_power_source_icon_IEOPS-1142.svg[DRW a900fas9500電源アイコンIEOPS 1142]
+
 |===
-. 電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。
-. ケーブルをケーブルマネジメントアームにストラップで固定します（図はなし）。
-. ストレージをケーブル接続するには、を参照してください <<手順 4 ：コントローラをドライブシェルフにケーブル接続する>>。
 
 
 --
@@ -381,7 +397,7 @@ image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
 
 == 手順 4 ：コントローラをドライブシェルフにケーブル接続する
 
-シェルフ / シェルフ間をケーブル接続してから、両方のコントローラを DS212C または DS224C ドライブシェルフにケーブル接続する必要があります。
+DS212CまたはDS224Cドライブシェルフをコントローラにケーブル接続します。
 
 
 NOTE: SASケーブル接続の詳細とワークシートについては、を参照してください https://docs.netapp.com/us-en/ontap-systems/sas3/overview-cabling-rules-examples.html["SAS ケーブル接続ルール、ワークシート、および例 - IOM12 モジュールを搭載したシェルフ"^]
@@ -432,7 +448,6 @@ image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIEケーブルミニSA
 Mini-SASケーブル
 
 |===
-. システムのセットアップを完了するには、を参照してください <<手順 5 ：システムのセットアップと設定を完了する>>。
 
 
 
@@ -499,8 +514,7 @@ image::../media/legend_icon_05.svg[凡例アイコン05]
 オレンジの LED が点灯するまで 10 秒間待ちます (!) 。 表示されるようにするには、ドライブシェルフの電源を再投入してシェルフ ID を設定します。
 
 |===
-. 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
-. 両方のノードの電源スイッチをオンにします。
+. 両方のノードの電源装置の電源スイッチをオンにします。
 +
 .アニメーション-コントローラの電源をオンにします
 video::a905e56e-c995-4704-9673-adfa0005a891[panopto]
@@ -632,15 +646,15 @@ image::../media/legend_icon_05.svg[凡例アイコン05]
 オレンジの LED が点灯するまで 10 秒間待ちます (!) 。 表示されるようにするには、ドライブシェルフの電源を再投入してシェルフ ID を設定します。
 
 |===
-. 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
-. 両方のノードの電源スイッチをオンにします。
+. 両方のノードの電源装置の電源スイッチをオンにします。
 +
 .アニメーション-コントローラの電源をオンにします
 video::a905e56e-c995-4704-9673-adfa0005a891[panopto]
 +
 image::../media/drw_9500_power-on.svg[DRW 9500電源オン]
 
-+
+
+
 
 NOTE: 初回のブートには最大 8 分かかる場合があります。
 

@@ -42,7 +42,31 @@ hA-state には、次のいずれかの値を指定できます。
 
 
 
-== 手順 2 ：システムレベルの診断を実行します
+== ステップ2：システムを起動します
+
+. 電源ケーブルをPSUに接続し直します（まだ接続していない場合）。
+. ロッカーのスイッチを*オン*に切り替えてPSUをオンにし、コントローラの電源が完全にオンになるまで待ちます。
+. 電源投入後、シャーシとコントローラの前面と背面に障害LEDがないかどうかを確認します。
+. SSHを使用してノードのSPまたはBMCのIPアドレスに接続します。このアドレスは、ノードのシャットダウンに使用するアドレスと同じです。
+. の説明に従って、追加の健全性チェックを実行します https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["ONTAPでスクリプトを使用してクラスタの健全性チェックを実行する方法"^]
+. AutoSupport を再度オンにします（メンテナンス時間のメッセージが終了します）。
+`system node autosupport invoke -node * -type all -message MAINT=end`
+
+
+[]
+====
+
+NOTE: ベストプラクティスとして、次のことを実行することを推奨します。
+
+* いずれかを解決します https://activeiq.netapp.com/["Active IQ ウェルネスアラートとリスク"^] （Active IQ は電源投入後のAutoSupportの処理に時間がかかります。結果が遅れることが予想されます）
+* を実行します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]
+* を使用してシステムヘルスを確認します https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["ONTAPでスクリプトを使用してクラスタの健全性チェックを実行する方法"^]
+
+
+====
+
+
+== 手順 3 ：システムレベルの診断を実行します
 
 新しいシャーシを設置したら、インターコネクト診断を実行する必要があります。
 
@@ -160,6 +184,6 @@ NOTE: 続行する前に、両方のコントローラでメンテナンスモ�
 |===
 
 
-== 手順 3 ：障害が発生したパーツをネットアップに返却する
+== 手順 4 ：障害が発生したパーツをネットアップに返却する
 
 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。
