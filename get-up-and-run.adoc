@@ -2,7 +2,7 @@
 permalink: get-up-and-run.html 
 sidebar: sidebar 
 keywords:  
-summary: AFF システムとFAS システムの運用を開始するには、ONTAP でハードウェアコンポーネントを設置し、スイッチを設定し、ストレージを設定します。 
+summary: AFF 、FAS 、ASA システムをセットアップして稼働させるには、ONTAP でハードウェアコンポーネントを設置し、スイッチを設定し、ストレージを設定します。 
 ---
 = AFF およびFAS ストレージシステムを使用して、運用を開始します
 :allow-uri-read: 
@@ -19,7 +19,7 @@ MetroCluster 構成でセットアップされていないストレージシス�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] AFF / FASコントローラを設置
 [role="quick-margin-para"]
-AFF / FASコントローラをラックまたはキャビネットに設置します。使用しているAFF / FASプラットフォームモデルの設置とセットアップの手順書を参照します。
+AFF / FASコントローラをラックまたはキャビネットに設置します。使用しているAFF / FASプラットフォームモデルの設置とセットアップの手順にアクセスします。オールSANアレイ（ASA ）システムの場合は、対応するAFF Aシリーズモデルの設置手順に従います。
 
 [cols="4,9,9,9"]
 |===
@@ -27,14 +27,20 @@ AFF / FASコントローラをラックまたはキャビネットに設置し�
 
  a| 
  a| 
-.AFF システム
-* https://docs.netapp.com/us-en/ontap-systems/c190/install-setup.html["AFF C190"]
+.AFF Aシリーズシステム
 * https://docs.netapp.com/us-en/ontap-systems/fas2700/install-setup.html["AFF A220"]
 * https://docs.netapp.com/us-en/ontap-systems/a250/install-setup.html["AFF A250"]
 * https://docs.netapp.com/us-en/ontap-systems/a400/install-setup.html["AFF A400"]
 * https://docs.netapp.com/us-en/ontap-systems/fas9000/install-setup.html["AFF A700"]
 * https://docs.netapp.com/us-en/ontap-systems/a800/install-setup.html["AFF A800"]
 * https://docs.netapp.com/us-en/ontap-systems/a900/install_detailed_guide.html["AFF A900 の略"]
+
+ a| 
+.AFF Cシリーズシステム
+* https://docs.netapp.com/us-en/ontap-systems/c190/install-setup.html["AFF C190"]
+* https://docs.netapp.com/us-en/ontap-systems/c250/install-setup.html["AFF C250"]
+* https://docs.netapp.com/us-en/ontap-systems/c400/install-setup.html["AFF C400"]
+* https://docs.netapp.com/us-en/ontap-systems/a800/install-setup.html["AFF C800"]
 
  a| 
 .FAS システム
@@ -44,7 +50,6 @@ AFF / FASコントローラをラックまたはキャビネットに設置し�
 * https://docs.netapp.com/us-en/ontap-systems/fas9000/install-setup.html["FAS9000"]
 * https://docs.netapp.com/us-en/ontap-systems/fas9500/install_setup.html["FAS9500"]
 
- a| 
 
 |===
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] スイッチハードウェアを設置します
@@ -153,7 +158,7 @@ AFF / FASのインストールとセットアップの手順には、コント�
 |===
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"] システムのセットアップを完了します
 [role="quick-margin-para"]
-スイッチを設定して必要なソフトウェアをインストールしたら、お使いのAFF / FASプラットフォームモデルのインストールとセットアップの手順書にアクセスして、システムのセットアップを完了します。
+スイッチを設定して必要なソフトウェアをインストールしたら、お使いのAFF / FASプラットフォームモデルのインストールとセットアップの手順書にアクセスして、システムのセットアップを完了します。オールSANアレイ（ASA ）システムの場合は、対応するAFF Aシリーズモデルのインストール手順に従います。
 
 [cols="4,9,9,9"]
 |===
@@ -162,13 +167,19 @@ AFF / FASのインストールとセットアップの手順には、コント�
  a| 
  a| 
 .AFF システム
-* https://docs.netapp.com/us-en/ontap-systems/c190/install-setup.html["AFF C190"]
 * https://docs.netapp.com/us-en/ontap-systems/fas2700/install-setup.html["AFF A220"]
 * https://docs.netapp.com/us-en/ontap-systems/a250/install-setup.html["AFF A250"]
 * https://docs.netapp.com/us-en/ontap-systems/a400/install-setup.html["AFF A400"]
 * https://docs.netapp.com/us-en/ontap-systems/fas9000/install-setup.html["AFF A700"]
 * https://docs.netapp.com/us-en/ontap-systems/a800/install-setup.html["AFF A800"]
 * https://docs.netapp.com/us-en/ontap-systems/a900/install_detailed_guide.html["AFF A900 の略"]
+
+ a| 
+.AFF Cシリーズシステム
+* https://docs.netapp.com/us-en/ontap-systems/c190/install-setup.html["AFF C190"]
+* https://docs.netapp.com/us-en/ontap-systems/c250/install-setup.html["AFF C250"]
+* https://docs.netapp.com/us-en/ontap-systems/c400/install-setup.html["AFF C400"]
+* https://docs.netapp.com/us-en/ontap-systems/a800/install-setup.html["AFF C800"]
 
  a| 
 .FAS システム
@@ -178,7 +189,6 @@ AFF / FASのインストールとセットアップの手順には、コント�
 * https://docs.netapp.com/us-en/ontap-systems/fas9000/install-setup.html["FAS9000"]
 * https://docs.netapp.com/us-en/ontap-systems/fas9500/install_setup.html["FAS9500"]
 
- a| 
 
 |===
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["7"] ONTAP の設定を完了します

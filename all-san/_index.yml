@@ -1,0 +1,31 @@
+---
+indexpage:
+  lead: SAN専用のシンプルな環境を実現するネットアップのオールSANアレイ（ASA ）は、ミッションクリティカルなデータベースなど、組織のSANワークロードに継続的なデータ可用性を提供します。すべての
+    SAN アレイシステムは、 AFF システムと同じドキュメントを使用しています。ASA システムのインストールとメンテナンスを行うには、対応するAFF モデルの手順を参照してください。
+  tiles:
+  - title: ASA AFF システム
+    links:
+    - title: ASA AFF A250
+      url: "../a250/index.html"
+    - title: ASA AFF A400
+      url: "../a400/index.html"
+    - title: ASA AFF A700の略
+      url: "../a700/index.html"
+    - title: ASA AFF A800
+      url: "../a800/index.html"
+  - title: End of Availabilityシステム
+    links:
+    - title: AFF A220
+      url: "../a220/index.html"
+  - title: その他のドキュメントリソース
+    links:
+    - title: システムハードウェアのアップグレード
+      url: https://docs.netapp.com/us-en/ontap-systems-upgrade/
+    - title: ASA ソフトウェアの設定
+      url: https://docs.netapp.com/us-en/ontap/task_asa_software_configuration.html
+    - title: ASA データシート
+      url: https://www.netapp.com/data-storage/san-storage-area-network/
+    - title: ASA 解決策 の概要
+      url: https://www.netapp.com/pdf.html?item=/media/19466-SB-4081.pdf
+    - title: ASA テクニカルレポート
+      url: https://www.netapp.com/pdf.html?item=/media/10379-tr4515.pdf
