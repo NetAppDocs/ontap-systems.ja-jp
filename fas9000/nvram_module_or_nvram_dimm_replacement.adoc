@@ -443,7 +443,7 @@ _replacement _node はストレージをテイクバックしてブートを完�
 NOTE: ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。
 
 +
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対する『ハイアベイラビリティ構成ガイド』を検索してください"]
+http://["使用しているバージョンの ONTAP 9 に対する『ハイアベイラビリティ構成ガイド』を検索してください"]
 
 .. ギブバックが完了したら、 HA ペアが正常で、テイクオーバーが可能であることを確認します。「 storage failover show
 +
@@ -480,7 +480,7 @@ MetroCluster 構成では、交換後に通常の状態に戻るまで数分か�
 ** MetroCluster 構成がスイッチオーバー状態である。
 ** replacement _node は、ディザスタサイトのディスクの現在の所有者です。
 +
-https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration["4 ノード MetroCluster 構成での HA テイクオーバーおよび MetroCluster スイッチオーバー中のディスク所有権の変更"]
+https://["4 ノード MetroCluster 構成での HA テイクオーバーおよび MetroCluster スイッチオーバー中のディスク所有権の変更"]
 
 
 
@@ -610,7 +610,7 @@ dr-group-id            cluster node           configuration-state
 .. MetroCluster が構成されており、通常モードであることを確認します。「 MetroCluster show 」
 .. MetroCluster チェック「 MetroCluster check run 」を実行します
 .. MetroCluster チェックの結果を表示します。「 MetroCluster check show 」
-.. Config Advisor を実行します。ネットアップサポートサイトの Config Advisor ページに移動します http://support.netapp.com/NOW/download/tools/config_advisor/["support.netapp.com/NOW/download/tools/config_advisor/"]。
+.. Config Advisor を実行します。ネットアップサポートサイトの Config Advisor ページに移動します http://["support.netapp.com/NOW/download/tools/config_advisor/"]。
 +
 Config Advisor の実行後、ツールの出力を確認し、推奨される方法で検出された問題に対処します。
 
@@ -642,8 +642,8 @@ NOTE: この手順は、DIMMの交換時には必要ありません。
 .手順
 . オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順を実行します。
 +
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"^]
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"^]
+** https://["オンボードキー管理の暗号化キーをリストア"^]
+** https://["外部キー管理の暗号化キーをリストアします"^]
 
 
 . SEDのMSIDをリセットします
@@ -653,4 +653,4 @@ NOTE: この手順は、DIMMの交換時には必要ありません。
 
 == 手順 7 ：障害が発生したパーツをネットアップに返却する
 
-障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。
+障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://["パーツの返品と交換"] 詳細については、を参照してください。

@@ -27,7 +27,7 @@ ONTAP 9.8
  a| 
 SAS ストレージスタックでは、 6Gb から 12Gb への単一速度の移行がサポートされるようになりました。これにより、既存の 6Gb スタックと 12Gb シェルフを拡張することができます。
 
-https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-ds-mix-hotadd/home.html["IOM12 モジュールを搭載したシェルフを IOM6 モジュールを搭載したシェルフのスタックにホットアドします"]
+https://["IOM12 モジュールを搭載したシェルフを IOM6 モジュールを搭載したシェルフのスタックにホットアドします"]
  a| 
 ONTAP 9.7P4
 

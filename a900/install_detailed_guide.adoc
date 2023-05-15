@@ -19,10 +19,10 @@ summary: これは、一般的なネットアップシステムのインスト�
 
 システムを設置するには、ネットアップサポートサイトでアカウントを作成し、システムを登録し、ライセンスキーを取得する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。
 
-にアクセスできる必要があります https://hwu.netapp.com["NetApp Hardware Universe の略"^] サイト要件および構成済みシステム上の追加情報の詳細については、を参照してください。
+にアクセスできる必要があります https://["NetApp Hardware Universe の略"^] サイト要件および構成済みシステム上の追加情報の詳細については、を参照してください。
 
 .必要なもの
-へのアクセスも必要になる場合があります http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["ONTAP 9 リリースノート"^] ONTAP のバージョンに応じて、このシステムの詳細情報を確認してください。
+へのアクセスも必要になる場合があります http://["ONTAP 9 リリースノート"^] ONTAP のバージョンに応じて、このシステムの詳細情報を確認してください。
 
 お客様のサイトで次のものを準備する必要があります。
 
@@ -42,7 +42,7 @@ image::../media/drw_ssn_label.svg[DRW SSN ラベル]
 次の表に、同梱されているケーブルの種類を示します。この表にないケーブルが含まれていた場合は、 Hardware Universe を参照してケーブルを特定し、用途を確認してください。
 
 +
-https://hwu.netapp.com["NetApp Hardware Universe の略"^]
+https://["NetApp Hardware Universe の略"^]
 
 +
 [cols="1,2,2,2"]
@@ -165,7 +165,7 @@ image::../media/oie_cable_power.svg[OIEケーブル電源]
 システムの電源をオンにします
 
 |===
-. を確認します https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^] およびそのガイドに記載されている必要な情報を収集します。
+. を確認します https://["『 ONTAP 構成ガイド』"^] およびそのガイドに記載されている必要な情報を収集します。
 
 
 
@@ -521,7 +521,7 @@ image::../media/oie_cable100_gbe_qsfp28.svg[OIEケーブル100 GbE qsfp28]
 
 . 次のアニメーションまたは図を使用して、 1 つ以上のドライブシェルフ ID を設定します。
 +
-NS224 シェルフ ID は 00 および 01 に事前に設定されています。シェルフ ID を変更する場合は、ボタンが配置されている穴に差し込む工具が必要です。を参照してください https://docs.netapp.com/us-en/ontap-systems/ns224/change-shelf-id.html["シェルフ ID - NS224 シェルフを変更します"] 詳しい手順については、を参照して
+NS224 シェルフ ID は 00 および 01 に事前に設定されています。シェルフ ID を変更する場合は、ボタンが配置されている穴に差し込む工具が必要です。を参照してください https://["シェルフ ID - NS224 シェルフを変更します"] 詳しい手順については、を参照して
 
 +
 .アニメーション- NVMeドライブシェルフIDを設定します
@@ -601,25 +601,25 @@ System Manager が開きます。
 
 
 
-. System Manager のセットアップガイドを使用して、で収集したデータを基にシステムを設定します https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^]。
+. System Manager のセットアップガイドを使用して、で収集したデータを基にシステムを設定します https://["『 ONTAP 構成ガイド』"^]。
 . アカウントを設定して Active IQ Config Advisor をダウンロードします。
 +
 .. 既存のアカウントにログインするか、アカウントを作成します。
 +
-https://mysupport.netapp.com/eservice/public/now.do["ネットアップサポート登録"^]
+https://["ネットアップサポート登録"^]
 
 .. システムを登録します。
 +
-https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"^]
+https://["ネットアップ製品登録"^]
 
 .. Active IQ Config Advisor をダウンロードします。
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
+https://["ネットアップのダウンロード： Config Advisor"^]
 
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、に進みます https://["ONTAP  ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
 
 
 --
@@ -643,7 +643,7 @@ image::../media/drw_A900_cable_console_switch_controller_IEOPS-953.svg[DRW A900�
 
 . 次のアニメーションに従って、 1 つ以上のドライブシェルフ ID を設定します。
 +
-NS224 シェルフ ID は 00 および 01 に事前に設定されています。シェルフ ID を変更する場合は、ボタンが配置されている穴に差し込む工具が必要です。を参照してください https://docs.netapp.com/us-en/ontap-systems/ns224/change-shelf-id.html["シェルフ ID - NS224 シェルフを変更します"] 詳しい手順については、を参照して
+NS224 シェルフ ID は 00 および 01 に事前に設定されています。シェルフ ID を変更する場合は、ボタンが配置されている穴に差し込む工具が必要です。を参照してください https://["シェルフ ID - NS224 シェルフを変更します"] 詳しい手順については、を参照して
 
 +
 .アニメーション- NVMeドライブシェルフIDを設定します
@@ -727,27 +727,27 @@ NOTE: PuTTY の設定方法がわからない場合は、ラップトップま�
 
 NOTE: アドレスの形式は、 +https://x.x.x.x+ です。
 
-.. で収集したデータを使用してシステムを設定します https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^]
+.. で収集したデータを使用してシステムを設定します https://["『 ONTAP 構成ガイド』"^]
 
 
 . アカウントを設定して Active IQ Config Advisor をダウンロードします。
 +
 .. 既存のアカウントにログインするか、アカウントを作成します。
 +
-https://mysupport.netapp.com/eservice/public/now.do["ネットアップサポート登録"^]
+https://["ネットアップサポート登録"^]
 
 .. システムを登録します。
 +
-https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"^]
+https://["ネットアップ製品登録"^]
 
 .. Active IQ Config Advisor をダウンロードします。
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
+https://["ネットアップのダウンロード： Config Advisor"^]
 
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、に進みます https://["ONTAP  ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
 
 
 --

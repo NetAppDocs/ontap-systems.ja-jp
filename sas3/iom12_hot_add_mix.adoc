@@ -39,19 +39,19 @@ SAS2/SAS3 Mixed Stack Supportフィールドが出力に表示されないか、
 
 ** Hardware Universe にアクセスしてプラットフォーム情報に移動します。
 +
-https://hwu.netapp.com["NetApp Hardware Universe の略"]
+https://["NetApp Hardware Universe の略"]
 
 
 
 * シェルフを MetroCluster 構成に追加する場合は、 MetroCluster インストールおよび設定ガイドに記載されているすべての要件を構成が満たしている必要があります。
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-inst-cnfg-ip/home.html["『 MetroCluster IP Installation and Configuration Guide 』を参照してください"]
+http://["『 MetroCluster IP Installation and Configuration Guide 』を参照してください"]
 
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-inst-cnfg-stretch/home.html["ONTAP 9 ストレッチ MetroCluster インストールおよび設定ガイド"]
+http://["ONTAP 9 ストレッチ MetroCluster インストールおよび設定ガイド"]
 
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-inst-cnfg-fabric/home.html["ONTAP 9 ファブリック接続 MetroCluster インストールおよび設定ガイド"]
+http://["ONTAP 9 ファブリック接続 MetroCluster インストールおよび設定ガイド"]
 
 * IOM12 シェルフをホットアドする IOM6 シェルフのスタックは、 SAS 銅線ケーブル（シェルフ / シェルフ間およびコントローラ / スタック間のすべての接続用）でケーブル接続する必要があります。
 +
@@ -66,14 +66,14 @@ NOTE: IOM6 シェルフスタックが SAS 光ケーブルでケーブル接続�
 IOM12 / IOM12Bシェルフをホットアドしたあとに、システムでサポートされる最大ドライブ数を超えることはできません。
 
 +
-https://hwu.netapp.com["NetApp Hardware Universe の略"]
+https://["NetApp Hardware Universe の略"]
 
 * システムに SAS ケーブル接続のエラーメッセージが表示されていない必要があります。
 +
 ケーブル接続エラーがある場合は、エラーメッセージに記載されている対処策を実行して解決する必要があります。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
+https://["ネットアップのダウンロード： Config Advisor"]
 
 * IOM12 / IOM12Bシェルフを注文して納入し、適切な数とタイプのSAS銅線ケーブルを用意しておく必要があります。
 +
@@ -105,16 +105,16 @@ ALL や bridge-attached などの SAS2/SAS3 Mixed Stack Support フィールド�
 
 ** Hardware Universe にアクセスしてプラットフォーム情報に移動します。
 +
-https://hwu.netapp.com["NetApp Hardware Universe の略"]
+https://["NetApp Hardware Universe の略"]
 
 
 
 * 構成が MetroCluster インストールおよび設定ガイドのすべての要件を満たしている必要があります。
 +
-https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html["ストレッチ MetroCluster 構成のインストールと設定"]
+https://["ストレッチ MetroCluster 構成のインストールと設定"]
 
 +
-https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html["ファブリック接続 MetroCluster 設定のインストールと設定"]
+https://["ファブリック接続 MetroCluster 設定のインストールと設定"]
 
 * IOM12 / IOM12BシェルフをホットアドするIOM6シェルフのスタックをSAS銅線ケーブルで接続する必要があります（すべてのシェルフ/シェルフおよびコントローラ/スタック間の接続に使用）。
 +
@@ -176,10 +176,10 @@ NOTE: ファームウェアの更新には最大 30 分かかる場合があり�
 
 * * ベストプラクティス： * シェルフをホットアドする前に、お使いのシステムのシェルフ（ IOM ）ファームウェアとドライブファームウェアを最新バージョンにしておくことを推奨します。
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ネットアップのダウンロード：ディスクシェルフファームウェア"]
+https://["ネットアップのダウンロード：ディスクシェルフファームウェア"]
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ネットアップのダウンロード：ディスクドライブファームウェア"]
+https://["ネットアップのダウンロード：ディスクドライブファームウェア"]
 
 
 
@@ -191,14 +191,14 @@ NOTE: ファームウェアをシェルフおよびそのコンポーネント�
 DQP の最新バージョンをインストールしておくと、新しく認定されたドライブがシステムで認識されて使用できるようになります。これにより、ドライブの情報が最新でない場合に表示されるシステムイベントメッセージを回避できるほか、ドライブが認識されないために発生するドライブのパーティショニングを回避できます。さらに、ドライブのファームウェアが最新でない場合も、通知で知ることができます。
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["ネットアップのダウンロード： Disk Qualification Package"^]
+https://["ネットアップのダウンロード： Disk Qualification Package"^]
 
 * * ベストプラクティス： * シェルフのホットアドの前後に Active IQ Config Advisor を実行することを推奨します。
 +
 シェルフをホットアドする前に Active IQ Config Advisor を実行すると、既存の SAS 接続の Snapshot が作成され、シェルフ（ IOM ）ファームウェアのバージョンが確認されます。また、すでにシステムで使用されているシェルフ ID を確認できます。シェルフをホットアドしたあとに Active IQ Config Advisor を実行すると、シェルフが正しくケーブル接続されており、システム内でシェルフ ID が一意であることを確認できます。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
+https://["ネットアップのダウンロード： Config Advisor"]
 
 * * ベストプラクティス： * インバンド ACP （ IBACP ）をシステムで実行することを推奨します。
 +
@@ -209,7 +209,7 @@ IBACP に移行して、アウトオブバンド ACP ケーブルを取り外す
 
 ** IBACP を実行していないシステムで IBACP の要件を満たしている場合は、 IOM12 シェルフをホットアドする前にシステムを IBACP に移行することができます。
 +
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Systems/FAS_Systems/In-Band_ACP_Setup_and_Support["IBACP への移行手順"]
+https://["IBACP への移行手順"]
 
 +
 
@@ -369,7 +369,7 @@ CAUTION: * データアクセスが失われる可能性： * ドロワーを乱
 
 . 必要に応じて、 Active IQ Config Advisor を実行して、すでに使用されているシェルフ ID を確認します。
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
+https://["ネットアップのダウンロード： Config Advisor"]
 
 +
 「 storage shelf show -fields shelf-id 」コマンドを実行して、システムですでに使用されているシェルフ ID （および重複しているシェルフ ID ）のリストを表示することもできます。
@@ -626,7 +626,7 @@ SAS 銅線 Mini-SAS HD / Mini-SAS HD 間ケーブルを使用します。
 ケーブル接続エラーが発生した場合は、表示される対処方法に従ってください。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
+https://["ネットアップのダウンロード： Config Advisor"]
 
 . この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。
 +

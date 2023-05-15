@@ -15,7 +15,7 @@ summary: このセクションでは、AFF C250システムの設置手順につ
 
 MetroCluster 構成の場合は、MetroCluster のインストールコンテンツを使用します。
 
-https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster のドキュメント"^]
+https://["MetroCluster のドキュメント"^]
 
 
 
@@ -470,15 +470,15 @@ System Manager が開きます。
 +
 .. 既存のアカウントにログインするか、アカウントを作成します。
 +
-https://mysupport.netapp.com/site/user/registration["ネットアップサポート登録"]
+https://["ネットアップサポート登録"]
 
 .. システムを登録します。
 +
-https://mysupport.netapp.com/site/systems/register["ネットアップ製品登録"]
+https://["ネットアップ製品登録"]
 
 .. Active IQ Config Advisor をダウンロードします。
 +
-https://mysupport.netapp.com/site/tools["ネットアップのダウンロード： Config Advisor"]
+https://["ネットアップのダウンロード： Config Advisor"]
 
 
 
@@ -558,15 +558,15 @@ NOTE: アドレスの形式は、 +https://x.x.x.x+ です。
 +
 .. 既存のアカウントにログインするか、アカウントを作成します。
 +
-https://mysupport.netapp.com/site/user/registration["ネットアップサポート登録"]
+https://["ネットアップサポート登録"]
 
 .. システムを登録します。
 +
-https://mysupport.netapp.com/site/systems/register["ネットアップ製品登録"]
+https://["ネットアップ製品登録"]
 
 .. Active IQ Config Advisor をダウンロードします。
 +
-https://mysupport.netapp.com/site/tools["ネットアップのダウンロード： Config Advisor"]
+https://["ネットアップのダウンロード： Config Advisor"]
 
 
 

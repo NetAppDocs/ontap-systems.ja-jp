@@ -21,7 +21,7 @@ summary:
 
 .手順
 . システムにケーブルを再接続します。
-. を使用して、ケーブル接続が正しいことを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
+. を使用して、ケーブル接続が正しいことを確認します https://["Active IQ Config Advisor"^]。
 +
 .. Config Advisor をダウンロードしてインストールします。
 .. ターゲットシステムの情報を入力し、データ収集をクリックします。
@@ -75,8 +75,8 @@ advanced モードで続行するかどうかを確認するプロンプトが�
 
 . ストレージシステムでストレージまたはボリュームの暗号化が設定されている場合は、オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順に従ってストレージまたはボリューム暗号化機能をリストアする必要があります。
 +
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"^]
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"^]
+** https://["オンボードキー管理の暗号化キーをリストア"^]
+** https://["外部キー管理の暗号化キーをリストアします"^]
 
 
 . ノードをギブバックします。
@@ -93,7 +93,7 @@ _replacement _node はストレージをテイクバックしてブートを完�
 NOTE: ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。
 
 +
-詳細については、を参照してください https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted["手動ギブバックコマンド"^] 拒否を無視するトピック。
+詳細については、を参照してください https://["手動ギブバックコマンド"^] 拒否を無視するトピック。
 
 .. ギブバックが完了したら、 HA ペアが正常でテイクオーバーが可能であることを確認します。 storage failover show
 +
@@ -130,7 +130,7 @@ MetroCluster 構成では、交換後に通常の状態に戻るまで数分か�
 ** MetroCluster 構成がスイッチオーバー状態である。
 ** replacement _node は、ディザスタサイトのディスクの現在の所有者です。
 +
-詳細については、を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration["4 ノード MetroCluster 構成での HA テイクオーバーおよび MetroCluster スイッチオーバー中のディスク所有権の変更"^] トピック：
+詳細については、を参照してください https://["4 ノード MetroCluster 構成での HA テイクオーバーおよび MetroCluster スイッチオーバー中のディスク所有権の変更"^] トピック：
 
 
 

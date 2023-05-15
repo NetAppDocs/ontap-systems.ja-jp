@@ -21,7 +21,7 @@ summary: ストレージを再度ケーブル接続し、ディスクの再割�
 
 .手順
 . システムにケーブルを再接続します。
-. を使用して、ケーブル接続が正しいことを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]。
+. を使用して、ケーブル接続が正しいことを確認します https://["Active IQ Config Advisor"]。
 +
 .. Config Advisor をダウンロードしてインストールします。
 .. ターゲットシステムの情報を入力し、データ収集をクリックします。
@@ -78,8 +78,8 @@ advanced モードで続行するかどうかを確認するプロンプトが�
 
 . ストレージシステムでストレージまたはボリュームの暗号化が設定されている場合は、オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順に従ってストレージまたはボリューム暗号化機能をリストアする必要があります。
 +
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"^]
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"^]
+** https://["オンボードキー管理の暗号化キーをリストア"^]
+** https://["外部キー管理の暗号化キーをリストアします"^]
 
 
 . コントローラをギブバックします。
@@ -96,7 +96,7 @@ _replacement _controller はストレージをテイクバックしてブート�
 NOTE: ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。
 
 +
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対するハイアベイラビリティ構成のコンテンツを検索してください"]
+http://["使用しているバージョンの ONTAP 9 に対するハイアベイラビリティ構成のコンテンツを検索してください"]
 
 .. ギブバックが完了したら、 HA ペアが正常で、テイクオーバーが可能であることを確認します。「 storage failover show
 +
@@ -180,8 +180,8 @@ disk_name    system-1  (118065481)  Pool0  J8Y0TDZC       system-1  (118065481)
 ----
 . ストレージシステムでストレージまたはボリュームの暗号化が設定されている場合は、オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順に従ってストレージまたはボリューム暗号化機能をリストアする必要があります。
 +
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"^]
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"^]
+** https://["オンボードキー管理の暗号化キーをリストア"^]
+** https://["外部キー管理の暗号化キーをリストアします"^]
 
 
 . ノード「 boot_ontap 」をブートします

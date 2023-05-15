@@ -12,7 +12,7 @@
 
 
  a| 
-https://hwu.netapp.com/adapter/index["X91148A"]
+https://["X91148A"]
  a| 
 2 ポート 100GbE RoCE QSFP28
  a| 
@@ -26,7 +26,7 @@ ONTAP 9.8
 
 
  a| 
-https://hwu.netapp.com/adapter/index["X91122A"]
+https://["X91122A"]
  a| 
 2 ポート 25GbE RoCE QSFP28
  a| 
@@ -39,7 +39,7 @@ ONTAP 9.8
 
 
  a| 
-https://hwu.netapp.com/adapter/index["X9170A"]
+https://["X9170A"]
  a| 
 NVMe SSD モジュール（ 1TB ）
  a| 
@@ -58,7 +58,7 @@ ONTAP 9.8
 
 
  a| 
-https://hwu.netapp.com/Switch/Index["36 ポート 100GbE Cisco スイッチ（ X190200 ）"]
+https://["36 ポート 100GbE Cisco スイッチ（ X190200 ）"]
  a| 
 MetroCluster IP 構成のサポートを含め、同じ Cisco Nexus 9336C-FX2 スイッチペアで共有インフラ（クラスタ、 HA 、およびスイッチ接続ストレージ）をサポートします。
  a| 
@@ -67,7 +67,7 @@ ONTAP 9.9.1
 
 
  a| 
-https://hwu.netapp.com/Switch/Index["36 ポート 100GbE Cisco スイッチ（ X190200 および X190210 ）"]
+https://["36 ポート 100GbE Cisco スイッチ（ X190200 および X190210 ）"]
  a| 
 Cisco Nexus 9336C-FX2 クラスタインターコネクトスイッチと、 AFF / FAS コントローラのストレージスイッチのサポート、およびフロントエンドのデータ接続。
  a| 
@@ -76,7 +76,7 @@ ONTAP 9.8
 
 
  a| 
-https://hwu.netapp.com/Switch/Index["Broadcom BES-53248 スイッチ（ X190005 および X190005R ）"]
+https://["Broadcom BES-53248 スイッチ（ X190005 および X190005R ）"]
  a| 
 Broadcom BES-53248 クラスタインターコネクトスイッチは、 40 / 100GbE ポートを搭載した AFF / FAS コントローラに対応しています。
  a| 
@@ -85,7 +85,7 @@ ONTAP 9.8
 
 
  a| 
-https://hwu.netapp.com/Switch/Index["36 ポート 100GbE Cisco スイッチ（ X190200 ）"] https://hwu.netapp.com/Switch/Index["32 ポート 100GbE Cisco スイッチ（ X190100 と X190100R ）"]
+https://["36 ポート 100GbE Cisco スイッチ（ X190200 ）"] https://["32 ポート 100GbE Cisco スイッチ（ X190100 と X190100R ）"]
  a| 
 Cisco Nexus 100GbE スイッチを専用ストレージスイッチとして使用し、 NS224 NVMe ドライブシェルフを次のプラットフォームに接続できます。
 
@@ -100,7 +100,7 @@ ONTAP 9.8
 
 
  a| 
-https://hwu.netapp.com/Switch/Index["Broadcom BES-53248 スイッチ（ X190005 および X190005R ）"]
+https://["Broadcom BES-53248 スイッチ（ X190005 および X190005R ）"]
  a| 
 10 / 25GbE ポートを備えた AFF / FAS コントローラでの Broadcom BES-53248 クラスタインターコネクトスイッチのサポート。
  a| 
@@ -117,84 +117,84 @@ ONTAP 9.5P8.
 
 
  a| 
-https://hwu.netapp.com/ProductSpecs/Index["FAS9500"]
+https://["FAS9500"]
  a| 
 ONTAP 9.10.1P3および9.11.1
 
 
 
  a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["AFF A900 の略"]
+https://["AFF A900 の略"]
  a| 
 ONTAP 9.10.1
 
 
 
  a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["AFF A250/AFF ASA A250"]
+https://["AFF A250/AFF ASA A250"]
  a| 
 ONTAP 9.8
 
 
 
  a| 
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS500f"]
+https://["FAS500f"]
  a| 
 ONTAP 9.8
 
 
 
  a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["AFF ASA A800"]
+https://["AFF ASA A800"]
  a| 
 ONTAP 9.8
 
 
 
  a| 
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS8300"]
+https://["FAS8300"]
  a| 
 ONTAP 9.7
 
 
 
  a| 
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS8700 の場合"]
+https://["FAS8700 の場合"]
  a| 
 ONTAP 9.7
 
 
 
  a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["AFF A400"]
+https://["AFF A400"]
  a| 
 ONTAP 9.7
 
 
 
  a| 
-https://www.netapp.com/pdf.html?item=/media/17190-na-382.pdf["AFF ASA A220"]
+https://["AFF ASA A220"]
  a| 
 ONTAP 9.7
 
 
 
  a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["AFF ASA A700"]
+https://["AFF ASA A700"]
  a| 
 ONTAP 9.7
 
 
 
  a| 
-https://www.netapp.com/us/media/ds-3989.pdf["AFF C190"]
+https://["AFF C190"]
  a| 
 ONTAP 9.6
 
 
 
  a| 
-https://www.netapp.com/pdf.html?item=/media/17190-na-382.pdf["AFF A320"]
+https://["AFF A320"]
  a| 
 ONTAP 9.6
 
@@ -243,7 +243,7 @@ ONTAP 9.8
  a| 
 SAS ストレージスタックでは、 6Gb から 12Gb への単一速度の移行がサポートされるようになりました。これにより、既存の 6Gb スタックと 12Gb シェルフを拡張することができます。
 
-https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-ds-mix-hotadd/home.html["IOM12 モジュールを搭載したシェルフを IOM6 モジュールを搭載したシェルフのスタックにホットアドします"]
+https://["IOM12 モジュールを搭載したシェルフを IOM6 モジュールを搭載したシェルフのスタックにホットアドします"]
  a| 
 ONTAP 9.7P4
 
@@ -260,7 +260,7 @@ ONTAP 9.8 では、自動ポート配置機能が導入され、ハードウェ�
 
 次の表で、使用可能なアップグレード手順を確認してください。詳細については、各ガイドを参照して手順 が適切かどうかを確認してください。
 
-MetroCluster 固有のその他の手順については、を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/concept_choosing_an_upgrade_method_mcc.html["アップグレードまたは更新方法を選択します"]。
+MetroCluster 固有のその他の手順については、を参照してください https://["アップグレードまたは更新方法を選択します"]。
 
 [cols="4*"]
 |===
@@ -270,7 +270,7 @@ MetroCluster 固有のその他の手順については、を参照してくだ�
  a| 
 9.8 ～ 9.0.x
  a| 
-https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-use-this-guide.html["『 Controller Hardware Upgrade Express Guide 』を参照してください"] （既存の物理ストレージの移動）
+https://["『 Controller Hardware Upgrade Express Guide 』を参照してください"] （既存の物理ストレージの移動）
  a| 
 いいえ
  a| 
@@ -279,7 +279,7 @@ https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-us
 
 
  a| 
-https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-use-this-guide.html["『 Controller Hardware Upgrade Express Guide 』を参照してください"] （新しいストレージへのボリュームの移動）
+https://["『 Controller Hardware Upgrade Express Guide 』を参照してください"] （新しいストレージへのボリュームの移動）
  a| 
 はい。
  a| 
@@ -290,7 +290,7 @@ https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-us
  a| 
 9.8
  a| 
-https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-use-this-guide.html["「システムコントローラの交換」コマンドを使用して、 ONTAP 9.8 を実行しているコントローラハードウェアをアップグレードします"]
+https://["「システムコントローラの交換」コマンドを使用して、 ONTAP 9.8 を実行しているコントローラハードウェアをアップグレードします"]
  a| 
 はい。
  a| 
@@ -301,7 +301,7 @@ https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-us
  a| 
 9.8
  a| 
-https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade-arl-manual-app/index.html["アグリゲートの再配置を使用して、 ONTAP 9.8 以降を実行しているコントローラハードウェアを手動でアップグレードします"]
+https://["アグリゲートの再配置を使用して、 ONTAP 9.8 以降を実行しているコントローラハードウェアを手動でアップグレードします"]
  a| 
 はい。
  a| 
@@ -312,7 +312,7 @@ https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade-arl-manual-app/index
  a| 
 9.7 から 9.5
  a| 
-https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade-arl-auto/index.html["「システムコントローラの交換」コマンドを使用して、 ONTAP 9.5 を実行しているコントローラハードウェアを ONTAP 9.7 にアップグレードします"]
+https://["「システムコントローラの交換」コマンドを使用して、 ONTAP 9.5 を実行しているコントローラハードウェアを ONTAP 9.7 にアップグレードします"]
  a| 
 はい。
  a| 
@@ -323,7 +323,7 @@ https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade-arl-auto/index.html[
  a| 
 9.7 以前
  a| 
-https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade-arl-manual/index.html["アグリゲートの再配置を含むコントローラのアップグレード ONTAP 9.7 以前を実行しているコントローラハードウェアに手動でアップグレードします"]
+https://["アグリゲートの再配置を含むコントローラのアップグレード ONTAP 9.7 以前を実行しているコントローラハードウェアに手動でアップグレードします"]
  a| 
 はい。
  a| 

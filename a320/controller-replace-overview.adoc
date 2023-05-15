@@ -15,7 +15,7 @@ summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペ�
 
 * すべてのドライブシェルフが適切に動作している必要があります。
 * 正常なコントローラは、交換するコントローラをテイクオーバーできる必要があります（この手順 では「障害のあるコントローラ」と呼びます）。
-* MetroCluster 構成のシステムの場合は、を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["正しいリカバリ手順の選択"] この手順の使用が必要かどうかを判断するには、次の手順を実行
+* MetroCluster 構成のシステムの場合は、を参照してください https://["正しいリカバリ手順の選択"] この手順の使用が必要かどうかを判断するには、次の手順を実行
 +
 この手順 を使用する場合は、 4 ノードまたは 8 ノードの MetroCluster 構成のコントローラの交換用手順 が HA ペアの場合と同じであることに注意してください。障害が HA ペアに制限されているため、 MetroCluster 固有の手順は必要ありません。また、 storage failover コマンドを使用すると、交換時に無停止操作を行うことができます。
 

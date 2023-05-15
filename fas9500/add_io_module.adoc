@@ -14,8 +14,8 @@ summary: システムに I/O モジュールを追加するには、既存の I/
 システムに I/O モジュールを追加するには、 NIC またはストレージアダプタをフル搭載システムの新しいアダプタに交換するか、新しい NIC またはストレージアダプタをシステムの空のシャーシスロットに追加します。
 
 .作業を開始する前に
-* を確認します https://hwu.netapp.com/["NetApp Hardware Universe の略"] 新しい I/O モジュールが、お使いのシステムおよび実行中の ONTAP のバージョンと互換性があることを確認します。
-* 複数のスロットが使用可能な場合は、でスロットの優先順位を確認します https://hwu.netapp.com/["NetApp Hardware Universe の略"] また、お使いの I/O モジュールに最適なものを使用してください。
+* を確認します https://["NetApp Hardware Universe の略"] 新しい I/O モジュールが、お使いのシステムおよび実行中の ONTAP のバージョンと互換性があることを確認します。
+* 複数のスロットが使用可能な場合は、でスロットの優先順位を確認します https://["NetApp Hardware Universe の略"] また、お使いの I/O モジュールに最適なものを使用してください。
 * 無停止で I/O モジュールを追加するには、ターゲットコントローラをテイクオーバーし、ターゲットスロットのスロットブランクカバーを取り外すか、既存の I/O モジュールを取り外し、新しい I/O モジュールまたは交換用 I/O モジュールを追加して、ターゲットコントローラをギブバックする必要があります。
 * 他のすべてのコンポーネントが正常に機能していることを確認します。
 
@@ -162,7 +162,7 @@ NOTE: これにより、PCIeカードおよびその他のコンポーネント�
 . 自動ギブバックを無効にした場合は、有効にします。「 storage failover modify -node local-auto-giveback true 」
 . ネットワーク用にスロット 3 または 7 を使用している場合は、「 storage port modify -node __ <node name> ____port_<port name> __ -mode network 」コマンドを使用して、ネットワーク用にスロットを変換します。
 . コントローラ B について、上記の手順を繰り返します
-. ストレージI/Oモジュールを設置した場合は、SASシェルフを設置してケーブル接続します（を参照） https://docs.netapp.com/us-en/ontap-systems/sas3/install-hot-add-shelf.html["SASシェルフのホットアド"^]。
+. ストレージI/Oモジュールを設置した場合は、SASシェルフを設置してケーブル接続します（を参照） https://["SASシェルフのホットアド"^]。
 
 
 
@@ -188,14 +188,14 @@ LIF は、コントローラモジュールがシャットダウンすると自�
  a| 
 ポート数が少ない NIC I/O モジュール
  a| 
-該当する LIF を別のホームポートに完全に再割り当てします。を参照してください https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["LIF を移行する"^] System Manager を使用して LIF を完全に移動する方法については、を参照してください。
+該当する LIF を別のホームポートに完全に再割り当てします。を参照してください https://["LIF を移行する"^] System Manager を使用して LIF を完全に移動する方法については、を参照してください。
 
 
 
  a| 
 ストレージ I/O モジュールを搭載した NIC I/O モジュール
  a| 
-System Manager を使用して、 LIF を別のホームポートに完全に移行します。手順については、を参照してください https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["LIF を移行する"^]。
+System Manager を使用して、 LIF を別のホームポートに完全に移行します。手順については、を参照してください https://["LIF を移行する"^]。
 
 |===
 
@@ -373,7 +373,7 @@ NOTE: これにより、PCIeカードおよびその他のコンポーネント�
 
 +
 
-NOTE: リブート中に問題 が発生した場合は、を参照してください https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308["BURT 1494308 - I/Oモジュールの交換中に環境のシャットダウンがトリガーされることがあります"]
+NOTE: リブート中に問題 が発生した場合は、を参照してください https://["BURT 1494308 - I/Oモジュールの交換中に環境のシャットダウンがトリガーされることがあります"]
 
 
 
@@ -396,7 +396,7 @@ NOTE: リブート中に問題 が発生した場合は、を参照してくだ�
  a| 
 ストレージモジュール
  a| 
-の説明に従って、SASシェルフを設置してケーブル接続しますhttps://docs.netapp.com/us-en/ontap-systems/sas3/install-hot-add-shelf.html["SASシェルフのホットアド"^]。
+の説明に従って、SASシェルフを設置してケーブル接続しますhttps://["SASシェルフのホットアド"^]。
 
 |===
 . コントローラ B について、上記の手順を繰り返します

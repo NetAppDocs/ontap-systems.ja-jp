@@ -6,7 +6,7 @@ ONTAP 9.8 では、自動ポート配置機能が導入され、ハードウェ�
 
 次の表で、使用可能なアップグレード手順を確認してください。詳細については、各ガイドを参照して手順 が適切かどうかを確認してください。
 
-MetroCluster 固有のその他の手順については、を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/concept_choosing_an_upgrade_method_mcc.html["アップグレードまたは更新方法を選択します"]。
+MetroCluster 固有のその他の手順については、を参照してください https://["アップグレードまたは更新方法を選択します"]。
 
 [cols="4*"]
 |===
@@ -16,7 +16,7 @@ MetroCluster 固有のその他の手順については、を参照してくだ�
  a| 
 9.8 ～ 9.0.x
  a| 
-https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-use-this-guide.html["『 Controller Hardware Upgrade Express Guide 』を参照してください"] （既存の物理ストレージの移動）
+https://["『 Controller Hardware Upgrade Express Guide 』を参照してください"] （既存の物理ストレージの移動）
  a| 
 いいえ
  a| 
@@ -25,7 +25,7 @@ https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-us
 
 
  a| 
-https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-use-this-guide.html["『 Controller Hardware Upgrade Express Guide 』を参照してください"] （新しいストレージへのボリュームの移動）
+https://["『 Controller Hardware Upgrade Express Guide 』を参照してください"] （新しいストレージへのボリュームの移動）
  a| 
 はい。
  a| 
@@ -36,7 +36,7 @@ https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-us
  a| 
 9.8
  a| 
-https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-use-this-guide.html["「システムコントローラの交換」コマンドを使用して、 ONTAP 9.8 を実行しているコントローラハードウェアをアップグレードします"]
+https://["「システムコントローラの交換」コマンドを使用して、 ONTAP 9.8 を実行しているコントローラハードウェアをアップグレードします"]
  a| 
 はい。
  a| 
@@ -47,7 +47,7 @@ https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-us
  a| 
 9.8
  a| 
-https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade-arl-manual-app/index.html["アグリゲートの再配置を使用して、 ONTAP 9.8 以降を実行しているコントローラハードウェアを手動でアップグレードします"]
+https://["アグリゲートの再配置を使用して、 ONTAP 9.8 以降を実行しているコントローラハードウェアを手動でアップグレードします"]
  a| 
 はい。
  a| 
@@ -58,7 +58,7 @@ https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade-arl-manual-app/index
  a| 
 9.7 から 9.5
  a| 
-https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade-arl-auto/index.html["「システムコントローラの交換」コマンドを使用して、 ONTAP 9.5 を実行しているコントローラハードウェアを ONTAP 9.7 にアップグレードします"]
+https://["「システムコントローラの交換」コマンドを使用して、 ONTAP 9.5 を実行しているコントローラハードウェアを ONTAP 9.7 にアップグレードします"]
  a| 
 はい。
  a| 
@@ -69,7 +69,7 @@ https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade-arl-auto/index.html[
  a| 
 9.7 以前
  a| 
-https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade-arl-manual/index.html["アグリゲートの再配置を含むコントローラのアップグレード ONTAP 9.7 以前を実行しているコントローラハードウェアに手動でアップグレードします"]
+https://["アグリゲートの再配置を含むコントローラのアップグレード ONTAP 9.7 以前を実行しているコントローラハードウェアに手動でアップグレードします"]
  a| 
 はい。
  a| 

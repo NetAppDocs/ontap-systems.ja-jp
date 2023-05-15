@@ -280,7 +280,7 @@ Mini-SAS HD SAS 光ケーブル - マルチモードアクティブ光ケーブ�
 
 * ご使用のプラットフォームと ONTAP バージョンが、 Mini-SAS HD SAS 光ケーブル - マルチモードアクティブ光ケーブル（ AOC ）と Mini-SAS HD / Mini-SAS HD 間コネクタ、および Mini-SAS HD / LC 間コネクタを備えたマルチモード（ OM4 ）ブレークアウトケーブル - をサポートしている必要があります。
 +
-https://hwu.netapp.com["NetApp Hardware Universe の略"]
+https://["NetApp Hardware Universe の略"]
 
 * Mini-SAS HD / Mini-SAS HD 間コネクタを備えた SAS 光マルチモード AOC ケーブルは、コントローラ / スタック間接続やシェルフ / シェルフ間の接続に使用でき、最大 50m までの規格があります。
 * Mini-SAS HD / LC 間コネクタ（パッチパネル用）を備えた SAS 光マルチモード（ OM4 ）ブレークアウトケーブルを使用する場合は、次のルールが適用されます。

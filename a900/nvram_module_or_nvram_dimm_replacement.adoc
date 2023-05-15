@@ -352,7 +352,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 NOTE: ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。
 
 +
-詳細については、を参照してください https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted["手動ギブバックコマンド"^] 拒否を無視するトピック。
+詳細については、を参照してください https://["手動ギブバックコマンド"^] 拒否を無視するトピック。
 
 .. ギブバックが完了したら、 HA ペアが正常で、テイクオーバーが可能であることを確認します。「 storage failover show
 +
@@ -389,7 +389,7 @@ MetroCluster 構成では、交換後に通常の状態に戻るまで数分か�
 ** MetroCluster 構成がスイッチオーバー状態である。
 ** 交換用コントローラがディザスタサイトのディスクの現在の所有者である。
 +
-を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration["4 ノード MetroCluster 構成での HA テイクオーバーおよび MetroCluster スイッチオーバー中のディスク所有権の変更"] を参照してください。
+を参照してください https://["4 ノード MetroCluster 構成での HA テイクオーバーおよび MetroCluster スイッチオーバー中のディスク所有権の変更"] を参照してください。
 
 
 
@@ -562,4 +562,4 @@ NOTE: を使用できます `security key-manager key query -key-type NSE-AK` �
 
 == 手順 7 ：障害が発生したパーツをネットアップに返却する
 
-障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。
+障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://["パーツの返品と交換"] 詳細については、を参照してください。

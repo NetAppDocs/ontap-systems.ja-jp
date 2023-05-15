@@ -20,7 +20,7 @@ ONTAP がまだ実行されていない場合や、シェルフをシステム�
 
 * システムですでに使用されているシェルフ ID を確認するには、 Active IQ Config Advisor を実行するか、「 storage shelf show -fields shelf-id 」コマンドを使用します。
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
+https://["ネットアップのダウンロード： Config Advisor"]
 
 
 
