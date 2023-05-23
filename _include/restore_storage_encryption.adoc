@@ -10,8 +10,8 @@ NOTE: この手順は、DIMMの交換時には必要ありません。
 .手順
 . オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順を実行します。
 +
-** https://["オンボードキー管理の暗号化キーをリストア"^]
-** https://["外部キー管理の暗号化キーをリストアします"^]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"^]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"^]
 
 
 . SEDのMSIDをリセットします

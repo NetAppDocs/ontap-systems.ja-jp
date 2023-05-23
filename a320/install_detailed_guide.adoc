@@ -21,9 +21,9 @@ AFF A320 システムを設置するには、アカウントを作成し、シ�
 
 サイト要件および構成済みシステムの追加情報の情報については、 Hardware Universe にアクセスできる必要があります。また、ご使用の ONTAP バージョンのリリースノートにアクセスして、このシステムの詳細を確認しておくことを推奨します。
 
-https://["NetApp Hardware Universe の略"]
+https://hwu.netapp.com["NetApp Hardware Universe の略"]
 
-http://["使用しているバージョンの ONTAP 9 に対するリリースノートを検索してください"]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対するリリースノートを検索してください"]
 
 お客様のサイトで次のものを準備する必要があります。
 
@@ -42,7 +42,7 @@ image::../media/drw_ssn_label.png[DRW SSN ラベル]
 ... 既存のアカウントにログインするか、アカウントを作成します。
 ... システムを登録します。
 +
-https://["ネットアップ製品登録"]
+https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"]
 
 
 
@@ -51,7 +51,7 @@ https://["ネットアップ製品登録"]
 次の表に、同梱されているケーブルの種類を示します。この表にないケーブルが含まれていた場合は、 Hardware Universe を参照してケーブルを特定し、用途を確認してください。
 
 +
-https://["NetApp Hardware Universe の略"]
+https://hwu.netapp.com["NetApp Hardware Universe の略"]
 
 +
 [cols="1,2,1,2"]
@@ -167,7 +167,7 @@ image:../media/oie_cable_power.png[""]
 |===
 .. クラスタ設定ワークシート _ をダウンロードして記入します。
 +
-https://["クラスタ設定ワークシート"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["クラスタ設定ワークシート"]
 
 
 
@@ -475,10 +475,10 @@ System Manager が開きます。
 
 . System Manager のセットアップガイドを使用して、 _NetApp ONTAP 構成ガイド _ で収集したデータを基にシステムを設定します。
 +
-https://["『 ONTAP 構成ガイド』"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"]
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://["ONTAP  ONTAP システムマネージャのマニュアルリソース"] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"] ONTAP での追加機能の設定については、ページを参照してください。
 
 
 
@@ -544,10 +544,10 @@ NOTE: アドレスの形式は、 +https://x.x.x.x+ です。
 
 .. NetApp ONTAP 構成ガイドで収集したデータを基にシステムを設定します。
 +
-https://["『 ONTAP 構成ガイド』"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"]
 
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://["ONTAP  ONTAP システムマネージャのマニュアルリソース"] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"] ONTAP での追加機能の設定については、ページを参照してください。
 

@@ -29,6 +29,6 @@ summary: システムを設置してセットアップします。
 
 MetroCluster 構成については、次のいずれかを参照してください。
 
-* https://["MetroCluster IP 構成をインストール"]
-* https://["MetroCluster ファブリック接続構成をインストール"]
+* https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html["MetroCluster IP 構成をインストール"]
+* https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html["MetroCluster ファブリック接続構成をインストール"]
 

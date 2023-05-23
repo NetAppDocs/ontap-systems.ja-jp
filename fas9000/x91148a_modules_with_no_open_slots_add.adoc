@@ -18,7 +18,7 @@ summary: システムに搭載された 1 つ以上の既存の NIC またはス
 * X91148A モジュールをストレージアダプタとして追加する場合は ' スロット 3 または 7 にモジュールを取り付ける必要があります
 * X91148A モジュールを 100GbE NIC として追加する場合は、任意の空きスロットを使用できます。ただし、デフォルトでは、スロット 3 と 7 がストレージスロットとして設定されます。これらのスロットをネットワークスロットとして使用する必要があり、 NS224 シェルフを追加しない場合は、各ポートに対して「 storage port modify -node name _-port_port name_-mode network 」コマンドでネットワーク用のスロットを変更する必要があります。ネットワーク用に X91148A モジュールで使用できるその他のスロットについては、 Hardware Universe を参照してください。
 +
-https://["NetApp Hardware Universe の略"]
+https://hwu.netapp.com["NetApp Hardware Universe の略"]
 
 * システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。
 
@@ -30,7 +30,7 @@ https://["NetApp Hardware Universe の略"]
 1 つ以上の X91148A NIC モジュールをフル装備のシステムに取り付けるには、システム内の既存の NIC またはストレージモジュールを 1 つ以上取り外す必要があります。
 
 .手順
-. X91148A モジュールを、 X91148A モジュールと同じ数のポートを持つ NIC モジュールを含むスロットに追加する場合は、コントローラモジュールのシャットダウン時に LIF が自動的に移行されます。交換する NIC モジュールのポート数が X91148A モジュールよりも多い場合は、影響を受ける LIF を別のホームポートに完全に再割り当てする必要があります。を参照してください https://["LIF を移行する"] System Manager を使用して LIF を完全に移動する方法については、を参照してください
+. X91148A モジュールを、 X91148A モジュールと同じ数のポートを持つ NIC モジュールを含むスロットに追加する場合は、コントローラモジュールのシャットダウン時に LIF が自動的に移行されます。交換する NIC モジュールのポート数が X91148A モジュールよりも多い場合は、影響を受ける LIF を別のホームポートに完全に再割り当てする必要があります。を参照してください https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["LIF を移行する"] System Manager を使用して LIF を完全に移動する方法については、を参照してください
 . コントローラ A をシャットダウンします。
 +
 .. 自動ギブバックを無効にします。「 storage failover modify -node local-auto-giveback false 」
@@ -104,7 +104,7 @@ image:../media/legend_icon_02.png[""]
 
 
 .手順
-. スロット 3 および / または 7 のストレージモジュールとして X91148A モジュールを追加する場合は、 System Manager を使用して、 LIF を別のホームポートに完全に移行します。詳細については、を参照してください https://["LIF を移行する"]。
+. スロット 3 および / または 7 のストレージモジュールとして X91148A モジュールを追加する場合は、 System Manager を使用して、 LIF を別のホームポートに完全に移行します。詳細については、を参照してください https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["LIF を移行する"]。
 . コントローラ A をシャットダウンします。
 +
 .. 自動ギブバックを無効にします。「 storage failover modify -node local-auto-giveback false 」
@@ -164,5 +164,5 @@ image:../media/legend_icon_02.png[""]
 . パートナーノードからノードをギブバックします。「 storage failover giveback -ofnode target_node_name _
 . 自動ギブバックを無効にした場合は、有効にします。「 storage failover modify -node local-auto-giveback true 」
 . コントローラ B について、上記の手順を繰り返します
-. の説明に従って、 NS224 シェルフを設置してケーブル接続します https://["NS224 ドライブシェルフのホットアド"]。
+. の説明に従って、 NS224 シェルフを設置してケーブル接続します https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html["NS224 ドライブシェルフのホットアド"]。
 

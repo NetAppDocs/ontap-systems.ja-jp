@@ -27,4 +27,4 @@ summary: システムを設置してセットアップします。
 
 
 
-システムが MetroCluster IP 構成の場合は、を参照してください https://["MetroCluster IP 構成をインストールします"^] 手順
+システムが MetroCluster IP 構成の場合は、を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html["MetroCluster IP 構成をインストールします"^] 手順

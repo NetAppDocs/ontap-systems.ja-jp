@@ -18,12 +18,12 @@ summary: システムの空のモジュールスロットに、 100GbE NIC ま�
 * システムに使用可能な空きスロットが 1 つ以上必要です。
 * 複数のスロットが使用可能な場合は、 Hardware Universe で X91148A モジュールのスロット優先順位のマトリックスに従ってモジュールをインストールします。
 +
-https://["NetApp Hardware Universe の略"]
+https://hwu.netapp.com["NetApp Hardware Universe の略"]
 
 * X91148A モジュールをストレージモジュールとして追加する場合は ' モジュールスロット 3 または 7 を取り付ける必要があります
 * X91148A モジュールを 100GbE NIC として追加する場合は、任意の空きスロットを使用できます。ただし、デフォルトでは、スロット 3 と 7 がストレージスロットとして設定されます。これらのスロットをネットワークスロットとして使用し、 NS224 シェルフを追加しない場合は、「 storage port modify -node name __ port_port name_-mode network 」コマンドでネットワーク用のスロットを変更する必要があります。ネットワーク用に X91148A モジュールで使用できるその他のスロットについては、 Hardware Universe を参照してください。
 +
-https://["NetApp Hardware Universe の略"]
+https://hwu.netapp.com["NetApp Hardware Universe の略"]
 
 * システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。
 
@@ -105,5 +105,5 @@ https://["NetApp Hardware Universe の略"]
 . パートナーノードからノードをギブバックします。「 storage failover giveback -ofnode target_node_name
 . 自動ギブバックを無効にした場合は、有効にします。「 storage failover modify -node local-auto-giveback true 」
 . コントローラ B について、上記の手順を繰り返します
-. の説明に従って、 NS224 シェルフを設置してケーブル接続します https://["NS224 シェルフをホットアドします"]。
+. の説明に従って、 NS224 シェルフを設置してケーブル接続します https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html["NS224 シェルフをホットアドします"]。
 

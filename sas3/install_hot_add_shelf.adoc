@@ -28,14 +28,14 @@ IOM12 / IOM12Bモジュールを使用してディスクシェルフをホット
 
 * ご使用のシステムと ONTAP のバージョンが、ホットアドするディスクシェルフとその IOM 、ディスクドライブ、 SAS ケーブルをサポートしている必要があります。
 +
-https://["NetApp Hardware Universe の略"]
+https://hwu.netapp.com["NetApp Hardware Universe の略"]
 
 * システムのディスクドライブ数が、サポートされる最大ディスクドライブ数よりも少なくともホットアドするディスクシェルフの数だけ少ない必要があります。
 +
 ディスクシェルフをホットアドしたことでサポートされる最大ディスクドライブ数を超えることはできません。
 
 +
-https://["NetApp Hardware Universe の略"]
+https://hwu.netapp.com["NetApp Hardware Universe の略"]
 
 * 1 つ以上のディスクシェルフのスタックを（プラットフォームコントローラに直接）ホットアドする場合は、システムに十分な数の使用可能な PCI SAS HBA ポートまたはオンボード SAS ポート、あるいはその組み合わせが必要です。
 +
@@ -54,7 +54,7 @@ Config Advisor をダウンロードして実行し、 SAS 接続が正しくケ
 ケーブル接続エラーがある場合は、エラーメッセージに記載されている対処策を実行して解決する必要があります。
 
 +
-https://["ネットアップのダウンロード： Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
 
 
 
@@ -110,7 +110,7 @@ HAペアがある場合、ONTAP はシステム構成を「マルチパスHA」�
 DQP の最新バージョンをインストールしておくと、システムが新しく認定されたディスクドライブを認識して使用できるため、ディスクドライブの情報が最新でない場合に表示されるシステムイベントメッセージを回避できます。また、ディスクドライブが認識されないために発生するディスクのパーティショニングも回避できます。さらに、ディスクドライブのファームウェアが最新でない場合も、通知で知ることができます。
 
 +
-https://["ネットアップのダウンロード： Disk Qualification Package"^]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["ネットアップのダウンロード： Disk Qualification Package"^]
 
 * ディスクシェルフをホットアドする前後に Config Advisor を実行することを推奨します。
 +
@@ -123,17 +123,17 @@ SAS ケーブル接続エラーまたはシェルフ ID の重複エラーが発
 Config Advisor をダウンロードするには、ネットワークアクセスが必要です。
 
 +
-https://["ネットアップのダウンロード： Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
 
 * 新しいディスクシェルフ、シェルフ FRU コンポーネント、または SAS ケーブルを追加する前に、お使いのシステムのディスクシェルフ（ IOM ）ファームウェアとディスクドライブファームウェアを最新バージョンにしておくことを推奨します。
 +
 ファームウェアの最新バージョンは、ネットアップサポートサイトで入手できます。
 
 +
-https://["ネットアップのダウンロード：ディスクシェルフファームウェア"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ネットアップのダウンロード：ディスクシェルフファームウェア"]
 
 +
-https://["ネットアップのダウンロード：ディスクドライブファームウェア"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ネットアップのダウンロード：ディスクドライブファームウェア"]
 
 
 
@@ -451,7 +451,7 @@ AFF A200 、 AFF A220 、 FAS2600 シリーズ、および FAS2700 システム�
 
 . Config Advisor をダウンロードして実行し、 SAS 接続が正しくケーブル接続されていることを確認します。
 +
-https://["ネットアップのダウンロード： Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
 
 +
 SAS ケーブル接続エラーが発生した場合は、表示される対処方法に従ってください。

@@ -37,7 +37,7 @@
 コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。
 
 +
-http://["mysupport.netapp.com"]
+http://mysupport.netapp.com/["mysupport.netapp.com"]
 
 .. すべての認証キーについて 'restored' 列に yes と表示され ' すべてのキー・マネージャには Available ： 'securitykey-manager query と表示されていることを確認します
 .. 障害のあるコントローラをシャットダウンします。
@@ -59,7 +59,7 @@ http://["mysupport.netapp.com"]
 *** key-manager setup ウィザードを実行します： 'securitykey-manager setup -node target/impaired node name
 +
 
-NOTE: プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、にお問い合わせください http://["mysupport.netapp.com"]
+NOTE: プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、にお問い合わせください http://mysupport.netapp.com/["mysupport.netapp.com"]
 
 *** すべての認証キーに対して 'restored' カラムに yes が表示されていることを確認します 'securitykey-manager key show-detail
 *** advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
@@ -92,7 +92,7 @@ NOTE: プロンプトで、お客様のオンボードキー管理のパスフ�
 コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。
 
 +
-http://["mysupport.netapp.com"]
+http://mysupport.netapp.com/["mysupport.netapp.com"]
 
 .. すべての認証キーについて 'restored' 列に yes と表示され ' すべてのキー・マネージャには Available ： 'securitykey-manager query と表示されていることを確認します
 .. 障害のあるコントローラをシャットダウンします。
@@ -114,7 +114,7 @@ http://["mysupport.netapp.com"]
 *** key-manager setup ウィザードを実行します： 'securitykey-manager setup -node target/impaired node name
 +
 
-NOTE: プロンプトで、お客様の OKM パスフレーズを入力します。パスフレーズを指定できない場合は、にお問い合わせください http://["mysupport.netapp.com"]
+NOTE: プロンプトで、お客様の OKM パスフレーズを入力します。パスフレーズを指定できない場合は、にお問い合わせください http://mysupport.netapp.com/["mysupport.netapp.com"]
 
 *** すべての認証キーについて 'restored' 列に yes と表示されていることを確認します
 *** advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」

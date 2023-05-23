@@ -89,7 +89,7 @@ NOTE: ONTAP 9.6 リリース以降では、キー管理ツールのタイプが�
 コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。
 
 +
-http://["mysupport.netapp.com"^]
+http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
 .. を確認します `Restored` 列が等しい `yes` すべての認証キー： `security key-manager key query`
 .. 障害のあるコントローラをシャットダウンします。
@@ -100,7 +100,7 @@ http://["mysupport.netapp.com"^]
 .. onboard security key-manager sync コマンド「 security key-manager sync 」を入力します
 +
 
-NOTE: プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。 http://["mysupport.netapp.com"^]
+NOTE: プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。 http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
 .. を確認します `Restored` 列が表示されます `yes` すべての認証キー： `security key-manager key query`
 .. 「キーマネージャ」タイプに「 onboard 」と表示されていることを確認し、 OKM 情報を手動でバックアップします。
@@ -145,7 +145,7 @@ NOTE: ONTAP 9.6 リリース以降では、キー管理ツールのタイプが�
 コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。
 
 +
-http://["mysupport.netapp.com"^]
+http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
 .. を確認します `Restored` 列が等しい `yes` すべての認証キー： `security key-manager key query`
 .. コントローラは安全にシャットダウンできます。
@@ -158,7 +158,7 @@ http://["mysupport.netapp.com"^]
 プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。
 
 +
-http://["mysupport.netapp.com"^]
+http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
 .. を確認します `Restored` 列が表示されます `yes` すべての認証キー： `security key-manager key query`
 .. 「キーマネージャ」タイプに「 onboard 」と表示されていることを確認し、 OKM 情報を手動でバックアップします。

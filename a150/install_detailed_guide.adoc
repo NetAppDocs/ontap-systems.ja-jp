@@ -13,7 +13,7 @@ summary: このガイドでは、一般的なネットアップシステムの�
 [role="lead"]
 AFF A150システムの設置方法について説明します。
 
-MetroCluster 構成の場合は、を使用します https://["MetroCluster のドキュメント"^]。
+MetroCluster 構成の場合は、を使用します https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster のドキュメント"^]。
 
 
 
@@ -45,13 +45,13 @@ image::../media/drw_ssn_label.png[DRW SSN ラベル]
 . アカウントを設定します。
 +
 .. 既存のアカウントにログインするか、アカウントを作成します。
-.. https://["システムを登録します"]。
+.. https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["システムを登録します"]。
 
 
-. ダウンロードしてインストールします https://["Config Advisor"] ノートブック PC で。
+. ダウンロードしてインストールします https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Config Advisor"] ノートブック PC で。
 . 同梱されていたケーブルの数と種類を確認し、書き留めておきます。
 +
-次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください https://["NetApp Hardware Universe の略"] ケーブルの場所を確認し、用途を特定します。
+次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください https://hwu.netapp.com["NetApp Hardware Universe の略"] ケーブルの場所を確認し、用途を特定します。
 
 +
 [cols="1,2,1,2"]
@@ -153,7 +153,7 @@ image:../media/oie_cable_power.png[""]
 システムの電源をオンにします
 
 |===
-. https://["クラスタ構成ワークシートをダウンロードして記入します"]。
+. https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["クラスタ構成ワークシートをダウンロードして記入します"]。
 
 
 
@@ -433,16 +433,16 @@ System Manager が開きます。
 
 
 
-. で収集したデータを使用してシステムを設定します https://["『 ONTAP 構成ガイド』"]。
+. で収集したデータを使用してシステムを設定します https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"]。
 . アカウントを設定して Active IQ Config Advisor をダウンロードします。
 +
-.. にログインします https://["既存のアカウントまたは作成してアカウントを作成します"]。
-.. https://["登録"] お使いのシステム。
-.. ダウンロード https://["Active IQ Config Advisor"]。
+.. にログインします https://mysupport.netapp.com/site/user/registration["既存のアカウントまたは作成してアカウントを作成します"]。
+.. https://mysupport.netapp.com/site/systems/register["登録"] お使いのシステム。
+.. ダウンロード https://mysupport.netapp.com/site/tools["Active IQ Config Advisor"]。
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://["ONTAP のドキュメント"] ONTAP の追加機能の設定については、サイトを参照してください。
+. 初期設定が完了したら、に進みます https://docs.netapp.com/us-en/ontap-family/["ONTAP のドキュメント"] ONTAP の追加機能の設定については、サイトを参照してください。
 
 
 --
@@ -512,20 +512,20 @@ NOTE: PuTTY の設定方法がわからない場合は、ラップトップま�
 .. ブラウザでノード管理 IP アドレスを指定します。
 +
 
-NOTE: アドレスの形式はです https://[]。
+NOTE: アドレスの形式はです https://x.x.x.x[]。
 
-.. で収集したデータを使用してシステムを設定します https://["『 ONTAP 構成ガイド』"]。
+.. で収集したデータを使用してシステムを設定します https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"]。
 
 
 . アカウントを設定して Active IQ Config Advisor をダウンロードします。
 +
-.. にログインします https://["既存のアカウントまたは作成してアカウントを作成します"]。
-.. https://["登録"] お使いのシステム。
-.. ダウンロード https://["Active IQ Config Advisor"]。
+.. にログインします https://mysupport.netapp.com/site/user/registration["既存のアカウントまたは作成してアカウントを作成します"]。
+.. https://mysupport.netapp.com/site/systems/register["登録"] お使いのシステム。
+.. ダウンロード https://mysupport.netapp.com/site/tools["Active IQ Config Advisor"]。
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://["ONTAP のドキュメント"] ONTAP の追加機能の設定については、サイトを参照してください。
+. 初期設定が完了したら、に進みます https://docs.netapp.com/us-en/ontap-family/["ONTAP のドキュメント"] ONTAP の追加機能の設定については、サイトを参照してください。
 
 
 --

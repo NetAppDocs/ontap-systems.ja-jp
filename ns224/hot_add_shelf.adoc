@@ -21,11 +21,11 @@ NS224 ドライブシェルフをホットアドするには、 HA ペアが特�
 
 * 各プラットフォームモデルと ONTAP バージョンが、ホットアドする NS224 シェルフおよびドライブに対応している必要があります。
 +
-https://["NetApp Hardware Universe の略"^]
+https://hwu.netapp.com["NetApp Hardware Universe の略"^]
 
 * シェルフを接続するための正しい数とタイプのケーブルが必要です。
 +
-https://["NetApp Hardware Universe の略"^]
+https://hwu.netapp.com["NetApp Hardware Universe の略"^]
 
 * ホットアドするシェルフの数に対応できる十分な数の RoCE 対応ポートが HA ペアに必要です。
 +
@@ -35,7 +35,7 @@ https://["NetApp Hardware Universe の略"^]
 HA ペアに十分な数の使用可能な RoCE 対応ポートがなく、プラットフォームモデルで RoCE 対応 PCIe カードまたは I/O モジュールの使用がサポートされている場合は、追加のカードまたは I/O モジュールを、プラットフォームモデルでサポートされている適切なコントローラスロットに取り付けておく必要があります。
 
 +
-https://["NetApp Hardware Universe の略"^]
+https://hwu.netapp.com["NetApp Hardware Universe の略"^]
 
 +
 [NOTE]
@@ -54,14 +54,14 @@ link:../fas9000/caching-module-and-core-dump-module-replace.html["キャッシ�
 シェルフをホットアドしたあとは、 HA ペアでサポートされる最大シェルフ数を超えることはできません。
 
 +
-https://["NetApp Hardware Universe の略"^]
+https://hwu.netapp.com["NetApp Hardware Universe の略"^]
 
 * すでに NS224 シェルフがある HA ペアにシェルフをホットアドする場合、 HA ペアにストレージケーブル接続に関するエラーメッセージを表示することはできず、マルチパス HA 構成でケーブル接続する必要があります。
 +
 Active IQ Config Advisor を実行して、ストレージケーブル接続に関するエラーメッセージと推奨される対処方法を確認できます。
 
 +
-https://["ネットアップのダウンロード： Config Advisor"^]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
 
 * 片側をまっすぐに伸ばしたペーパークリップ、または細い先端のボールペンが必要です。
 +
@@ -81,21 +81,21 @@ NS224 ドライブシェルフをホットアドする前に、この手順の�
 DQP の最新バージョンをインストールしておくと、新しく認定されたドライブがシステムで認識されて使用できるようになります。これにより、ドライブの情報が最新でない場合に表示されるシステムイベントメッセージを回避できるほか、ドライブが認識されないために発生するドライブのパーティショニングを回避できます。さらに、ドライブのファームウェアが最新でない場合も、通知で知ることができます。
 
 +
-https://["ネットアップのダウンロード： Disk Qualification Package"^]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["ネットアップのダウンロード： Disk Qualification Package"^]
 
 * * ベストプラクティス： * シェルフのホットアドの前後に Active IQ Config Advisor を実行することを推奨します。
 +
 シェルフをホットアドする前に Active IQ Config Advisor を実行すると、既存のシェルフイーサネット（ ENET ）接続の Snapshot が作成され、 NVMe シェルフモジュール（ NSM ）ファームウェアのバージョンが確認されます。また、 HA ペアですでに使用されているシェルフ ID を確認できます。シェルフをホットアドしたあとに Active IQ Config Advisor を実行すると、シェルフが正しくケーブル接続されており、 HA ペア内でシェルフ ID が一意であることを確認できます。
 
 +
-https://["ネットアップのダウンロード： Config Advisor"^]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
 
 * * ベストプラクティス：新しいシェルフを追加する前に、お使いのシステムの NVMe シェルフモジュール（ NSM ）ファームウェアとドライブファームウェアを最新バージョンにしておくことを推奨します。
 +
-https://["ネットアップのダウンロード：ディスクシェルフファームウェア"^]
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ネットアップのダウンロード：ディスクシェルフファームウェア"^]
 
 +
-https://["ネットアップのダウンロード：ディスクドライブファームウェア"^]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ネットアップのダウンロード：ディスクドライブファームウェア"^]
 
 +
 
@@ -350,7 +350,7 @@ AFF C400 HAペア
 ケーブル接続エラーが発生した場合は、表示される対処方法に従ってください。
 
 +
-https://["ネットアップのダウンロード： Config Advisor"^]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
 
 
 
@@ -560,7 +560,7 @@ image::../media/drw_ns224_a900_4shelves.png[DRW ns224 a900 4 シェルフ]
 ケーブル接続エラーが発生した場合は、表示される対処方法に従ってください。
 
 +
-https://["ネットアップのダウンロード： Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
 
 . この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。
 +
@@ -612,7 +612,7 @@ image::../media/drw_ns224_a250_c250_f500f_1shelf_IEOPS-963.svg[DRW ns224 A250 C2
 ケーブル接続エラーが発生した場合は、表示される対処方法に従ってください。
 
 +
-https://["ネットアップのダウンロード： Config Advisor"^]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
 
 . この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。
 +
@@ -713,7 +713,7 @@ image::../media/drw_ns224_a700_2shelves.png[DRW ns224 A700 2 シェルフ]
 ケーブル接続エラーが発生した場合は、表示される対処方法に従ってください。
 
 +
-https://["ネットアップのダウンロード： Config Advisor"^]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
 
 . この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。
 +
@@ -818,7 +818,7 @@ image::../media/drw_ns224_a800_c800_2shelves_IEOPS-966.svg[DRW ns224 A800 c800 2
 ケーブル接続エラーが発生した場合は、表示される対処方法に従ってください。
 
 +
-https://["ネットアップのダウンロード： Config Advisor"^]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
 
 . この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。
 +
@@ -909,7 +909,7 @@ image::../media/drw_ns224_a400_2shelves_IEOPS-983.svg[DRW ns224 a400 2shelves IE
 ケーブル接続エラーが発生した場合は、表示される対処方法に従ってください。
 
 +
-https://["ネットアップのダウンロード： Config Advisor"^]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
 
 . この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じてドライブの自動割り当てを再度有効にする必要があります。
 +
@@ -1000,7 +1000,7 @@ image::../media/drw_ns224_c400_2shelves_IEOPS-984.svg[DRW ns224 C400 2シェル�
 ケーブル接続エラーが発生した場合は、表示される対処方法に従ってください。
 
 +
-https://["ネットアップのダウンロード： Config Advisor"^]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
 
 . この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じてドライブの自動割り当てを再度有効にする必要があります。
 +
@@ -1052,7 +1052,7 @@ image::../media/drw_ns224_a320_2shelves_direct_attached.png[DRW ns224 A320 2 台
 ケーブル接続エラーが発生した場合は、表示される対処方法に従ってください。
 
 +
-https://["ネットアップのダウンロード： Config Advisor"^]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
 
 . この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じてドライブの自動割り当てを再度有効にする必要があります。
 +

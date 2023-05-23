@@ -198,7 +198,7 @@ HA ペア
 ====
 ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。
 
-http://["ONTAP 9 ハイアベイラビリティ構成ガイド"]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html["ONTAP 9 ハイアベイラビリティ構成ガイド"]
 
 ====
 .. 「 storage failover show 」 -giveback コマンドを使用して、ギブバック処理の進捗を監視します。

@@ -68,7 +68,7 @@ image::../media/dcm2.png[dcm2.]
 ファームウェアの最新バージョンは、ネットアップサポートサイトで入手できます。
 
 +
-https://["ネットアップのダウンロード：ディスクシェルフファームウェア"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ネットアップのダウンロード：ディスクシェルフファームウェア"]
 
 . HAペアのどちらかのコントローラのルートアグリゲートがシェルフに含まれている場合、またはHAペアを停止する（HAペアを起動して実行しない）場合は、次の手順を実行します。それ以外の場合は、次の手順に進みます。
 +
@@ -551,9 +551,9 @@ image:../media/legend_icon_01.png[""]
 . HAペアを停止した場合は、両方のコントローラでONTAP をブートします。停止していない場合は、次の手順に進みます。
 . シェルフからデータを移動してデータアグリゲートを削除した場合、シェルフ内のスペアディスクをアグリゲートの作成または拡張に使用できるようになりました。
 +
-https://["アグリゲートの作成ワークフロー"]
+https://docs.netapp.com/us-en/ontap/disks-aggregates/aggregate-creation-workflow-concept.html["アグリゲートの作成ワークフロー"]
 
 +
-https://["アグリゲートの拡張ワークフロー"]
+https://docs.netapp.com/us-en/ontap/disks-aggregates/aggregate-expansion-workflow-concept.html["アグリゲートの拡張ワークフロー"]
 
 

@@ -11,7 +11,7 @@ summary: シャーシを交換するには、コントローラをシャット�
 
 
 [role="lead"]
-この手順 は、2ノード、非MetroCluster構成専用です。システムのノードが3つ以上の場合は、を参照してください https://["4ノードクラスタで1つのHAペアを正常にシャットダウンして電源をオンにする方法"^]。
+この手順 は、2ノード、非MetroCluster構成専用です。システムのノードが3つ以上の場合は、を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_perform_a_graceful_shutdown_and_power_up_of_one_HA_pair_in_a_4__node_cluster["4ノードクラスタで1つのHAペアを正常にシャットダウンして電源をオンにする方法"^]。
 
 .作業を開始する前に
 必要なもの：
@@ -25,19 +25,19 @@ summary: シャーシを交換するには、コントローラをシャット�
 
 
 
-NOTE: FabricPool のクラウド階層として使用されるネットアップStorageGRID またはONTAP S3のシステムの場合は、を参照してください https://["ストレージシステムの『解決ガイド』を正常にシャットダウンし、電源を投入します"] この手順 を実行した後。
+NOTE: FabricPool のクラウド階層として使用されるネットアップStorageGRID またはONTAP S3のシステムの場合は、を参照してください https://kb.netapp.com/onprem/ontap/hardware/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage#["ストレージシステムの『解決ガイド』を正常にシャットダウンし、電源を投入します"] この手順 を実行した後。
 
 
 NOTE: FlexArray アレイLUNを使用している場合は、この手順 の実行後に該当するシステムでシャットダウン手順 に関するベンダーのストレージアレイのドキュメントを参照してください。
 
 
-NOTE: SSDを使用している場合は、を参照してください https://["SU490：（影響：重大）SSDのベストプラクティス：電源がオフになってから2カ月以上が経過すると、ドライブ障害やデータ損失のリスクを回避できます"]
+NOTE: SSDを使用している場合は、を参照してください https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU490["SU490：（影響：重大）SSDのベストプラクティス：電源がオフになってから2カ月以上が経過すると、ドライブ障害やデータ損失のリスクを回避できます"]
 
 シャットダウン前のベストプラクティスは次のとおりです。
 
-* 追加を実行します https://["システムの健全性チェック"]。
+* 追加を実行します https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["システムの健全性チェック"]。
 * ONTAP をシステムの推奨リリースにアップグレードします。
-* いずれかを解決します https://["Active IQ ウェルネスアラートとリスク"]。システムコンポーネントのLEDなど、現在システムに発生している障害をメモします。
+* いずれかを解決します https://activeiq.netapp.com/["Active IQ ウェルネスアラートとリスク"]。システムコンポーネントのLEDなど、現在システムに発生している障害をメモします。
 
 
 .手順

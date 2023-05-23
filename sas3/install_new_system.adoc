@@ -71,7 +71,7 @@ NOTE: 少なくとも 2 つのスタックで構成される HA ペアがある�
 DQP の最新バージョンをインストールしておくと、システムが新しく認定されたディスクドライブを認識して使用できるため、ディスクドライブの情報が最新でない場合に表示されるシステムイベントメッセージを回避できます。また、ディスクドライブが認識されないために発生するディスクのパーティショニングも回避できます。さらに、ディスクドライブのファームウェアが最新でない場合も、通知で知ることができます。
 
 +
-https://["ネットアップのダウンロード： Disk Qualification Package"^]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["ネットアップのダウンロード： Disk Qualification Package"^]
 
 * Config Advisor は、新しいシステムのインストール後にダウンロードして実行することを推奨します。
 +
@@ -84,7 +84,7 @@ SAS ケーブル接続エラーまたはシェルフ ID の重複エラーが発
 Config Advisor をダウンロードするには、ネットワークアクセスが必要です。
 
 +
-https://["ネットアップのダウンロード： Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
 
 
 
@@ -409,7 +409,7 @@ NOTE: システムをブートする前に、ケーブルが正しく接続さ�
 SAS ケーブル接続エラーまたはシェルフ ID の重複エラーが発生した場合は、表示される対処方法に従ってください。
 
 +
-https://["ネットアップのダウンロード： Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
 
 +
 「 storage shelf show -fields shelf-id 」コマンドを実行して、システムですでに使用されているシェルフ ID （および重複しているシェルフ ID ）のリストを表示することもできます。
