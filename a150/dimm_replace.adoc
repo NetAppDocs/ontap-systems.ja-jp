@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, replace, dimm, shut, down, impaired, controller, controller, metrocluster, replace, system, reinstall, diagnostics, module, filed, part, aggregates, 
 summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
 ---
-= DIMM- AFF A220 および FAS2700 を交換します
+= DIMMを交換します- AFF A150
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
