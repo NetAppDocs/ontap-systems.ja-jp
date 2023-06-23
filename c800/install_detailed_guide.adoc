@@ -541,10 +541,11 @@ video::c500e747-30f8-4763-9065-afbf00008e7f[panopto]
 +
 詳細については、ラップトップのオンラインヘルプを参照してください。
 
-. アニメーションに従って、ラップトップを管理スイッチに接続します。
-+
-.アニメーション-ラップトップを管理スイッチに接続します
-video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
+. ラップトップを管理スイッチに接続します。
+
+
+image::../media/dwr_laptop_to_switch_only.svg[DWR ラップトップをスイッチのみに接続します]
+
 . 検出する ONTAP アイコンを選択します。
 +
 image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コントローラ選択]
