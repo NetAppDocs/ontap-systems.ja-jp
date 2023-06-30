@@ -18,13 +18,13 @@ entries:
     entries:
     - title: 概要
       url: "/sas3/overview-cabling-rules-examples.html"
-    - title: SAS ケーブル接続ルール
+    - title: SASケーブル接続のルールと概念
       url: "/sas3/install-cabling-rules.html"
-    - title: 一般的なマルチパス HA 構成のケーブル接続ワークシートと例
+    - title: マルチパスHAのケーブル接続ワークシートと例
       url: "/sas3/install-cabling-worksheets-examples-multipath.html"
     - title: 内部ストレージを使用するプラットフォームのケーブル接続ワークシートと例
       url: "/sas3/install-cabling-worksheets-examples-fas2600.html"
-    - title: 2 つのクアッドポート SAS HBA を使用したクアッドパス HA 構成のケーブル接続ワークシートと例
+    - title: クアッドパスHAのケーブル接続ワークシートと例
       url: "/sas3/install-worksheets-examples-quadpath.html"
     - title: マルチパス接続用のケーブル接続ワークシートテンプレート
       url: "/sas3/install-cabling-worksheet-template-multipath.html"

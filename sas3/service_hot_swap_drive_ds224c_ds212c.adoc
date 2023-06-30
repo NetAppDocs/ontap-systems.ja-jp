@@ -16,7 +16,7 @@ DS224C または DS212C ディスクシェルフでは、障害が発生した�
 .作業を開始する前に
 * 取り付けるディスクドライブが、 DS224C または DS212C ディスクシェルフでサポートされている必要があります。
 +
-https://hwu.netapp.com["NetApp Hardware Universe の略"]
+https://hwu.netapp.com["NetApp Hardware Universe の略"^]
 
 * システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、テクニカルサポートにお問い合わせください。
 * 取り外すディスクドライブは、障害状態でなければなりません。
@@ -32,7 +32,7 @@ NOTE: ディスクドライブのタイプや容量によっては、障害デ�
 ONTAP のドキュメントには、 SED の交換前と交換後に実行する必要がある手順も記載されています。
 
 +
-https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["CLI での NetApp Encryption の概要"]
+https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["CLI での NetApp Encryption の概要"^]
 
 
 
@@ -79,10 +79,10 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/downloa
 ファームウェアの最新バージョンは、ネットアップサポートサイトで入手できます。
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ネットアップのダウンロード：ディスクシェルフファームウェア"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ネットアップのダウンロード：ディスクシェルフファームウェア"^]
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ネットアップのダウンロード：ディスクドライブファームウェア"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ネットアップのダウンロード：ディスクドライブファームウェア"^]
 
 * 新しいディスクドライブのファームウェアが最新バージョンでない場合は、自動的に（無停止で）更新されます。
 +
@@ -91,7 +91,7 @@ NOTE: ディスクドライブのファームウェアのチェックは 2 分�
 
 * 影響を受けるディスクシェルフの物理的な位置を特定するために、必要に応じてディスクシェルフのロケーション（青色の） LED を点灯できます。「 storage shelf location -led modify -shelf-name _shelf_name _led-status on
 +
-ディスクシェルフにはロケーション LED が 3 つあります。オペレータ用ディスプレイパネルに 1 つと、各 IOM12 モジュールに 1 つです。ロケーション LED は 30 分間点灯します。点灯を中止するには、同じコマンドを off オプションに変更して入力します。
+ディスクシェルフにはロケーションLEDが3つあります。オペレータ用ディスプレイパネルに1つと、各シェルフIOMに1つです。ロケーション LED は 30 分間点灯します。点灯を中止するには、同じコマンドを off オプションに変更して入力します。
 
 * オペレータ用ディスプレイパネルと FRU コンポーネントにあるディスクシェルフ LED の場所と、それらの LED が示す意味については、ディスクシェルフ LED の監視に関する項を参照してください。
 

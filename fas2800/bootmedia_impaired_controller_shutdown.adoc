@@ -1,0 +1,53 @@
+---
+permalink: fas2800/bootmedia-impaired-controller-shutdown.html 
+sidebar: sidebar 
+keywords: fas2800, shut, down, impaired, controller, take, over 
+summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
+---
+= 障害のあるコントローラFAS2800をシャットダウンします
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+障害のあるコントローラをシャットダウンするかテイクオーバーします。
+
+NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。
+
+.手順
+. 障害のあるコントローラに LOADER プロンプトを表示します。
++
+[cols="1,2"]
+|===
+| 障害のあるコントローラが表示された場合 | 作業 
+
+
+ a| 
+LOADER プロンプト
+ a| 
+コントローラモジュールの取り外しに進みます。
+
+
+
+ a| 
+ギブバックを待機しています
+ a| 
+Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します
+
+
+
+ a| 
+システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
+ a| 
+正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name
+
+障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
+
+|===
+. LOADER プロンプトで「 printenv 」と入力し、すべてのブート環境変数をキャプチャします。出力をログファイルに保存します。
++
+
+NOTE: ブートデバイスが壊れているか機能していない場合、このコマンドは機能しない可能性があります。
+
+

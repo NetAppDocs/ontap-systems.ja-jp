@@ -56,9 +56,9 @@ NOTE: 少なくとも 2 つのスタックで構成される HA ペアがある�
 ラベルにはスタック番号が示されます。たとえば、「* Loop or Stack #：1 *」や「* Loop or Stack #：2 *」のようになります。ルートアグリゲートが含まれていないディスクシェルフのラベルには、ディスクシェルフのシリアル番号のみが記載されています。
 
 * システムのセットアップおよび設定時にディスク所有権の自動割り当てを使用するようにシステムを設定していない場合は、ディスク所有権を手動で割り当てる必要があります。
-* インバンドの Alternate Control Path （ ACP ）は自動的に有効になります。
+* インバンドのAlternate Control Path（IBACP）は自動的に有効になります。
 +
-インバンド ACP は、シングルパス HA またはシングルパス構成ではサポートされません。
+IBACPは、シングルパスHA構成またはシングルパス構成ではサポートされません。
 
 
 
@@ -84,7 +84,7 @@ SAS ケーブル接続エラーまたはシェルフ ID の重複エラーが発
 Config Advisor をダウンロードするには、ネットワークアクセスが必要です。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
+https://https://mysupport.netapp.com/site/tools["ネットアップのダウンロード： Config Advisor"^]
 
 
 
@@ -242,7 +242,7 @@ NOTE: このとき、ディスクシェルフの電源は入れないでくだ�
 ディスクシェルフの SAS 接続（シェルフ / シェルフ間およびコントローラ / シェルフ間）をケーブル接続して、システムのストレージ接続を確立します。
 
 .作業を開始する前に
-に記載された要件を満たしている必要があります <<Requirements for installing and cabling disk shelves with IOM12 modules for a new system installation>> ディスクシェルフをラックに設置しておきます。
+に記載された要件を満たしている必要があります <<新しいシステムを設置するための、IOM12 / IOM12Bモジュールを使用するディスクシェルフの設置とケーブル接続の要件>> ディスクシェルフをラックに設置しておきます。
 
 .このタスクについて
 ディスクシェルフをケーブル接続したら、電源を投入し、シェルフ ID を設定して、システムのセットアップと設定を完了します。
@@ -259,7 +259,7 @@ NOTE: このとき、ディスクシェルフの電源は入れないでくだ�
 
 
  a| 
-マルチパス HA 、マルチパス、シングルパス HA 、またはシングルパス構成をケーブル接続する場合
+マルチパスHA、トライパスHA、マルチパス、シングルパスHA、またはシングルパス構成をケーブル接続する
  a| 
 シェルフ / シェルフ間を「標準」接続でケーブル接続します（ IOM ポート 3 と 1 を使用）。
 
@@ -286,10 +286,10 @@ NOTE: このとき、ディスクシェルフの電源は入れないでくだ�
 +
 .. コントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を参照して、構成に合った記入済みワークシートがあるかどうかを確認します。
 +
-link:install-cabling-worksheets-examples-fas2600.html["オンボードストレージを搭載した AFF プラットフォームと FAS プラットフォームのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例"]
+link:install-cabling-worksheets-examples-fas2600.html["内蔵ストレージを搭載したプラットフォームのコントローラ/スタック間のケーブル接続ワークシートとケーブル接続例"]
 
 +
-link:install-cabling-worksheets-examples-multipath.html["一般的なマルチパス HA 構成のコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例"]
+link:install-cabling-worksheets-examples-multipath.html["マルチパスHA構成のコントローラ/スタック間のケーブル接続ワークシートとケーブル接続例"]
 
 +
 link:install-worksheets-examples-quadpath.html["2 つのクアッドポート SAS HBA を使用したクアッドパス HA 構成のコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例"]
@@ -409,7 +409,7 @@ NOTE: システムをブートする前に、ケーブルが正しく接続さ�
 SAS ケーブル接続エラーまたはシェルフ ID の重複エラーが発生した場合は、表示される対処方法に従ってください。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
+https://https://mysupport.netapp.com/site/tools["ネットアップのダウンロード： Config Advisor"^]
 
 +
 「 storage shelf show -fields shelf-id 」コマンドを実行して、システムですでに使用されているシェルフ ID （および重複しているシェルフ ID ）のリストを表示することもできます。

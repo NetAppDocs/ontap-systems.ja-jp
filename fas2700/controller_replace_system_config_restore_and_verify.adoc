@@ -28,9 +28,9 @@ summary: ハードウェアの交換が完了してメンテナンスモード�
 
 .手順
 . _replacement _node に LOADER プロンプトが表示されない場合は、システムを停止して LOADER プロンプトを表示します。
-. _healthy_node で、システム時刻「 show date 」を確認します
+. _healthy_nodeで、システム時間を確認します。 `cluster date show`
 +
-日付と時刻は GMT で表示されます。
+日時は設定されたタイムゾーンに基づいています。
 
 . LOADER プロンプトで、 _replacement node の日付と時刻を確認します。 'how date]
 +
@@ -38,7 +38,7 @@ summary: ハードウェアの交換が完了してメンテナンスモード�
 
 . 必要に応じて、交換用ノードの日付を GMT で設定します。 'et date_mm/dd/yyyy_`
 . 必要に応じて、交換用ノードの時刻を GMT で設定します。「 set time _hh ： mm ： ss_` 」
-. LOADER プロンプトで、 _replacement _node の日付と時刻を確認します。 'how dat'
+. LOADERプロンプトで、_replacement_nodeの日時を確認します。 `date`
 +
 日付と時刻は GMT で表示されます。
 

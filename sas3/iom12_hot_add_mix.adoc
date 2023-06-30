@@ -39,45 +39,45 @@ SAS2/SAS3 Mixed Stack Supportフィールドが出力に表示されないか、
 
 ** Hardware Universe にアクセスしてプラットフォーム情報に移動します。
 +
-https://hwu.netapp.com["NetApp Hardware Universe の略"]
+https://hwu.netapp.com["NetApp Hardware Universe の略"^]
 
 
 
 * シェルフを MetroCluster 構成に追加する場合は、 MetroCluster インストールおよび設定ガイドに記載されているすべての要件を構成が満たしている必要があります。
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-inst-cnfg-ip/home.html["『 MetroCluster IP Installation and Configuration Guide 』を参照してください"]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-inst-cnfg-ip/home.html["『 MetroCluster IP Installation and Configuration Guide 』を参照してください"^]
 
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-inst-cnfg-stretch/home.html["ONTAP 9 ストレッチ MetroCluster インストールおよび設定ガイド"]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-inst-cnfg-stretch/home.html["ONTAP 9 ストレッチ MetroCluster インストールおよび設定ガイド"^]
 
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-inst-cnfg-fabric/home.html["ONTAP 9 ファブリック接続 MetroCluster インストールおよび設定ガイド"]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-inst-cnfg-fabric/home.html["ONTAP 9 ファブリック接続 MetroCluster インストールおよび設定ガイド"^]
 
-* IOM12 シェルフをホットアドする IOM6 シェルフのスタックは、 SAS 銅線ケーブル（シェルフ / シェルフ間およびコントローラ / スタック間のすべての接続用）でケーブル接続する必要があります。
+* IOM12 / IOM12BシェルフをホットアドするIOM6シェルフのスタックをSAS銅線ケーブルで接続する必要があります（すべてのシェルフ/シェルフおよびコントローラ/スタック間の接続に使用）。
 +
 SAS 光ケーブルは混在スタックではサポートされません。
 
 +
 
-NOTE: IOM6 シェルフスタックが SAS 光ケーブルでケーブル接続されている場合は、 IOM12 シェルフをホットアドできません。ネットアップの営業担当者にお問い合わせください。
+NOTE: IOM6シェルフスタックがSAS光ケーブルで接続されている場合は、IOM12 / IOM12Bシェルフをホットアドできません。ネットアップの営業担当者にお問い合わせください。
 
-* ホットアドする IOM12 シェルフに搭載可能なドライブの数が、サポートされる最大ドライブ数よりも少なくとも少ない必要があります。
+* システムのドライブ数が、サポートされる最大ドライブ数よりも少なく、ホットアドするIOM12 / IOM12Bシェルフに設置できるドライブ数以上でなければなりません。
 +
 IOM12 / IOM12Bシェルフをホットアドしたあとに、システムでサポートされる最大ドライブ数を超えることはできません。
 
 +
-https://hwu.netapp.com["NetApp Hardware Universe の略"]
+https://hwu.netapp.com["NetApp Hardware Universe の略"^]
 
 * システムに SAS ケーブル接続のエラーメッセージが表示されていない必要があります。
 +
 ケーブル接続エラーがある場合は、エラーメッセージに記載されている対処策を実行して解決する必要があります。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
+https://mysupport.netapp.com/site/tools["ネットアップのダウンロード： Config Advisor"^]
 
 * IOM12 / IOM12Bシェルフを注文して納入し、適切な数とタイプのSAS銅線ケーブルを用意しておく必要があります。
 +
-IOM12 シェルフは Mini-SAS HD コネクタを使用します。IOM6 シェルフは QSFP コネクタを使用します。
+IOM12 / IOM12BシェルフはMini-SAS HDコネクタを使用します。IOM6 シェルフは QSFP コネクタを使用します。
 
 
 
@@ -87,7 +87,7 @@ IOM12 シェルフは Mini-SAS HD コネクタを使用します。IOM6 シェ�
 
 MetroCluster 構成で2組のATTO FibreBridgeブリッジを使用して接続されたIOM6シェルフのスタックにIOM12 / IOM12Bシェルフをホットアドする場合、システムが一定の要件を満たしている必要があります。
 
-* 現在の構成でブリッジの SAS ポートが使用可能な場合は、 IOM12 シェルフを別のスタックとして追加する必要があります。
+* 現在の構成でブリッジSASポートを使用できる場合は、IOM12 / IOM12Bシェルフを別のスタックとして追加する必要があります。
 +
 IOM12 / IOM12BとIOM6モジュールをスタックに混在させる場合は、すべてのブリッジポートを使用してください。
 
@@ -105,16 +105,16 @@ ALL や bridge-attached などの SAS2/SAS3 Mixed Stack Support フィールド�
 
 ** Hardware Universe にアクセスしてプラットフォーム情報に移動します。
 +
-https://hwu.netapp.com["NetApp Hardware Universe の略"]
+https://hwu.netapp.com["NetApp Hardware Universe の略"^]
 
 
 
 * 構成が MetroCluster インストールおよび設定ガイドのすべての要件を満たしている必要があります。
 +
-https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html["ストレッチ MetroCluster 構成のインストールと設定"]
+https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html["ストレッチ MetroCluster 構成のインストールと設定"^]
 
 +
-https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html["ファブリック接続 MetroCluster 設定のインストールと設定"]
+https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html["ファブリック接続 MetroCluster 設定のインストールと設定"^]
 
 * IOM12 / IOM12BシェルフをホットアドするIOM6シェルフのスタックをSAS銅線ケーブルで接続する必要があります（すべてのシェルフ/シェルフおよびコントローラ/スタック間の接続に使用）。
 +
@@ -154,9 +154,9 @@ IOM12 / IOM12Bシェルフのファームウェアをシェルフにダウンロ
 この手順を使用して、システムの電源がオンでデータを提供中（ I/O が実行中）になっているときに、同じシステム内の別のスタックからホットリムーブしたディスクシェルフをホットアドすることはできません。
 
 * この手順を使用して、該当するシェルフにアグリゲートがミラーされている場合に、同じ MetroCluster システム内でホットリムーブされたディスクシェルフをホットアドできます。
-* IOM12モジュールを搭載したシェルフをIOM6モジュールを搭載したシェルフのスタックにホットアドする場合、スタック全体のパフォーマンスは6Gbpsで動作します（最も速度の低いシェルフ）。
+* IOM12 / IOM12Bモジュールを搭載したシェルフのスタックにIOM6モジュールを搭載したシェルフをホットアドする場合、スタック全体のパフォーマンスは6Gbps（最低共通速度）で動作します。
 +
-IOM3またはIOM6モジュールからIOM12モジュールにアップグレードされたシェルフをホットアドする場合、スタックは12Gbpsで動作しますが、シェルフのバックプレーンとディスク機能によってディスクパフォーマンスが3Gbpsまたは6Gbpsに制限される可能性があります。
+ホットアドするシェルフがIOM3モジュールまたはIOM6モジュールからIOM12 / IOM12Bモジュールにアップグレードされている場合、スタックは12Gbpsで動作しますが、シェルフのバックプレーンとディスクの機能によってディスクのパフォーマンスが3Gbpsまたは6Gbpsに制限されることがあります。
 
 * ホットアドしたシェルフのケーブル接続が完了すると、 ONTAP でシェルフが認識されます。
 +
@@ -176,10 +176,10 @@ NOTE: ファームウェアの更新には最大 30 分かかる場合があり�
 
 * * ベストプラクティス： * シェルフをホットアドする前に、お使いのシステムのシェルフ（ IOM ）ファームウェアとドライブファームウェアを最新バージョンにしておくことを推奨します。
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ネットアップのダウンロード：ディスクシェルフファームウェア"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ネットアップのダウンロード：ディスクシェルフファームウェア"^]
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ネットアップのダウンロード：ディスクドライブファームウェア"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ネットアップのダウンロード：ディスクドライブファームウェア"^]
 
 
 
@@ -198,18 +198,18 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/downloa
 シェルフをホットアドする前に Active IQ Config Advisor を実行すると、既存の SAS 接続の Snapshot が作成され、シェルフ（ IOM ）ファームウェアのバージョンが確認されます。また、すでにシステムで使用されているシェルフ ID を確認できます。シェルフをホットアドしたあとに Active IQ Config Advisor を実行すると、シェルフが正しくケーブル接続されており、システム内でシェルフ ID が一意であることを確認できます。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
+https://mysupport.netapp.com/site/tools["ネットアップのダウンロード： Config Advisor"^]
 
 * * ベストプラクティス： * インバンド ACP （ IBACP ）をシステムで実行することを推奨します。
 +
-** IBAP が実行されているシステムでは、ホットアドした IOM12 シェルフで IBACP が自動的に有効になります。
-** アウトオブバンド ACP が有効になっているシステムでは、 IOM12 シェルフで ACP 機能を使用できません。
+** IBACPが実行されているシステムでは、ホットアドされたIOM12 / IOM12BシェルフでIBACPが自動的に有効になります。
+** アウトオブバンドACPが有効になっているシステムでは、IOM12 / IOM12BシェルフでACP機能を使用できません。
 +
 IBACP に移行して、アウトオブバンド ACP ケーブルを取り外す必要があります。
 
 ** IBACP を実行していないシステムで IBACP の要件を満たしている場合は、 IOM12 シェルフをホットアドする前にシステムを IBACP に移行することができます。
 +
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Systems/FAS_Systems/In-Band_ACP_Setup_and_Support["IBACP への移行手順"]
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Systems/FAS_Systems/In-Band_ACP_Setup_and_Support["IBACP への移行手順"^]
 
 +
 
@@ -223,7 +223,7 @@ NOTE: 移行手順には、 IBACP のシステム要件が記載されていま�
 
 == ホットアド用のドライブ所有権を手動で割り当てる準備をします
 
-ホットアドする IOM12 シェルフのドライブ所有権を手動で割り当てる場合は、自動ドライブ割り当てが有効になっている場合は無効にする必要があります。
+ホットアドするIOM12 / IOM12Bシェルフのドライブ所有権を手動で割り当てる場合は、自動ドライブ割り当てを無効にする必要があります（有効になっている場合）。
 
 .作業を開始する前に
 システム要件を満たしている必要があります。
@@ -360,7 +360,7 @@ CAUTION: * データアクセスが失われる可能性： * ドロワーを乱
 +
 .. HA ペアまたはシングルコントローラ構成内で一意の ID に、ホットアドする各シェルフのシェルフ ID を設定します。
 +
-有効なシェルフ ID は 00~99 です。IOM6 シェルフの使用数が少なく（ 1~9 ）、 IOM12 シェルフの使用数が 10 以上になるように、シェルフ ID を設定することを推奨します。
+有効なシェルフ ID は 00~99 です。IOM6シェルフでは小さい番号（1~9）を使用し、IOM12 / IOM12Bシェルフでは大きい番号（10以上）を使用するように、シェルフIDを設定することを推奨します。
 
 +
 オンボードストレージを搭載したプラットフォームモデルがある場合、シェルフ ID は内蔵シェルフおよび外付けシェルフ全体で一意である必要があります。内蔵シェルフを 0 に設定することを推奨します。MetroCluster IP 構成には、外部シェルフ名のみが該当するため、シェルフ名は一意である必要はありません。
@@ -369,7 +369,7 @@ CAUTION: * データアクセスが失われる可能性： * ドロワーを乱
 
 . 必要に応じて、 Active IQ Config Advisor を実行して、すでに使用されているシェルフ ID を確認します。
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
+https://mysupport.netapp.com/site/tools["ネットアップのダウンロード： Config Advisor"^]
 
 +
 「 storage shelf show -fields shelf-id 」コマンドを実行して、システムですでに使用されているシェルフ ID （および重複しているシェルフ ID ）のリストを表示することもできます。
@@ -390,7 +390,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 
 == ホットアド用のシェルフをケーブル接続します
 
-IOM12 / IOM12BシェルフをIOM6シェルフのスタックにケーブル接続する方法は、IOM12シェルフが最初のIOM12 / IOM12Bシェルフであるか、つまりスタックに他のIOM12シェルフがないかによって異なります。 また、既存の混合スタックにIOM12 / IOM12Bシェルフを追加するかどうかを指定します。つまり、1つ以上のIOM12 / IOM12Bシェルフがスタックにすでに存在します。また、スタックにマルチパス HA 、マルチパス、シングルパス HA 、またはシングルパス接続のどれがあるかによっても異なります。
+IOM12 / IOM12BシェルフをIOM6シェルフのスタックにケーブル接続する方法は、IOM12 / IOM12Bシェルフが初期のIOM12 / IOM12Bシェルフであるかどうか（つまり、スタックに他のIOM12 / IOM12Bシェルフがないかどうか）によって異なります。 または、既存の混在スタックに追加のIOM12 / IOM12Bシェルフであるかどうか（つまり、1台以上のIOM12 / IOM12Bシェルフがスタックにすでに存在することを意味します）。また、スタックにマルチパスHA、トライパスHA、マルチパス、シングルパスHA、シングルパス接続のどれが含まれているかによっても異なります。
 
 .作業を開始する前に
 * システム要件を満たしている必要があります。
@@ -418,12 +418,12 @@ IOM12 / IOM12Bシェルフをスタック内の論理的な最後のシェルフ
 +
 ** HAペアでは、IOM6シェルフを2台、IOM12 / IOM12Bシェルフを2台使用するスタック内での1回の速度の移行を次のように表します。
 +
- Controller <-> IOM6 <-> IOM6 <---> IOM12IOM12B <-> IOM12/IOM12B <-> Controller
-** オンボードの IOM12E ストレージを使用する HA ペアでは、 IOM12 シェルフを 2 台と IOM6 シェルフを 2 台搭載したスタック内での 1 回の速度の移行を次のように表します。
+ Controller <-> IOM6 <-> IOM6 <---> IOM12/IOM12B <-> IOM12/IOM12B <-> Controller
+** 内蔵ストレージ（IOM12E / IOM12G）を使用するHAペアで、2台のIOM12 / IOM12Bシェルフと2台のIOM6シェルフを含むスタック内での単一速度の移行は次のように表されます。
 +
- IOM12E 0b <-> IOM12/IOM12B <-> IOM12/IOM12B <---> IOM6 <-> IOM6 <-> IOM12E 0a
+ IOM12E 0b/IOM12G 0b1 <-> IOM12/IOM12B <-> IOM12/IOM12B <---> IOM6 <-> IOM6 <-> IOM12E 0a/IOM12G 0a
 +
-オンボードストレージポート0bは内蔵ストレージ（エクスパンダ）のポートで、ホットアドするIOM12 / IOM12Bシェルフ（スタックの最後のシェルフ）に接続するため、IOM12 / IOM12Bシェルフのグループを1つにまとめ、スタックとオンボードのIOM12Eストレージを使用して移行を1つにします。
+内蔵ストレージポート0b / 0b1は内蔵ストレージ（エキスパンダ）のポートで、このポートはホットアドされたIOM12 / IOM12Bシェルフ（スタックの最後のシェルフ）に接続されるため、IOM12 / IOM12Bシェルフのグループが維持され、スタックと内蔵IOM12E / IOM12Gストレージを通じて1回の移行が維持されます。
 
 
 
@@ -443,7 +443,7 @@ NOTE: MetroCluster 構成では、 IOM B のパスは使用できません。
 
 * 次の図は、FC-to-SASブリッジを使用しない構成でIOM12 / IOM12BシェルフをIOM6シェルフスタックにケーブル接続する場合に参照してください。
 +
-この図は、マルチパス HA 接続を使用したスタック専用の図です。ただし、ケーブル接続の概念は、マルチパス、シングルパス HA 、シングルパス接続、ストレッチ MetroCluster の各構成のスタックに適用できます。
+この図は、マルチパスHA接続を使用するスタックに固有の図です。ただし、ケーブル接続の概念は、マルチパス、トライパスHA、シングルパスHA、シングルパス接続、およびストレッチMetroCluster構成のスタックに適用できます。
 
 +
 image::../media/drw_sas2_sas3_mixed_stack.png[DRW SAS2 SAS3 混合スタック]
@@ -454,7 +454,7 @@ image::../media/drw_sas2_sas3_mixed_stack.png[DRW SAS2 SAS3 混合スタック]
 .手順
 . スタック内の論理的に最後のシェルフを特定します。
 +
-プラットフォームモデルとスタック接続（マルチパス HA 、マルチパス、シングルパス HA 、またはシングルパス）に応じて、論理的に最後のシェルフはコントローラの SAS ポート B と D からコントローラ / スタック間を接続するシェルフです。 または、シェルフにコントローラが接続されていない（コントローラ / スタック間の接続は、コントローラの SAS ポート A と C を介してスタックの論理的な最上位に接続されているため）。
+プラットフォームモデルとスタック接続（マルチパスHA、トライパスHA、マルチパス、シングルパスHA、またはシングルパス）に応じて、 論理的に最後のシェルフとは、コントローラのSASポートBとDからコントローラ/スタックに接続されたシェルフ、またはコントローラに接続されていないシェルフです（コントローラ/スタック間の接続は、コントローラのSASポートAとCを介してスタックの論理上から行われるため）。
 
 . ホットアドするIOM12 / IOM12BシェルフをIOM6スタックに追加する場合、IOM6シェルフスタックに他のIOM12 / IOM12Bシェルフがないように、該当する手順を実行します。
 +
@@ -471,7 +471,7 @@ NOTE: ケーブルの接続を解除してから再接続し、ケーブルを�
 
 
  a| 
-マルチパス HA 、マルチパス、またはコントローラを論理的に最後のシェルフに接続したシングルパス HA （ストレッチ MetroCluster 構成を含む）
+論理的な最後のシェルフへのコントローラ接続を備えたマルチパスHA、トライパスHA、マルチパスHA、マルチパスHA、またはシングルパスHA（ストレッチMetroCluster構成を含む）
  a| 
 .. 最後の IOM6 シェルフの IOM A の円形のポートからコントローラまたはブリッジへのコントローラ / スタック間ケーブルを外します。
 +
@@ -494,7 +494,7 @@ SAS 銅線 Mini-SAS HD / Mini-SAS HD 間ケーブルを使用します。
 +
 それ以外の場合は、次の手順に進みます。
 
-.. コントローラまたはブリッジ（手順 a ）の同じポートを新しい最後の IOM12 シェルフの IOM A ポート 3 にケーブル接続して、コントローラ / スタック間の接続を再確立します。
+.. コントローラまたはブリッジの同じポート（手順a）を新しい最後のIOM12 / IOM12BシェルフのIOM Aポート3にケーブル接続して、コントローラ/スタック間の接続を再確立します。
 +
 コントローラのポートタイプに応じて、 SAS 銅線の QSFP-miniSAS HD ケーブルまたは Mini-SAS HD / Mini-SAS HD ケーブルを使用します。
 
@@ -519,7 +519,7 @@ MetroCluster 構成でのブリッジ接続
 +
 それ以外の場合は、手順 e に進みます
 
-.. 最後の IOM6 シェルフの IOM A の円形のポート（手順 a から）と新しい IOM12 シェルフの IOM A ポート 1 をシェルフ / シェルフ間の接続をケーブル接続します。
+.. 最後のIOM6シェルフのIOM Aの円形のポート（手順A）と新しいIOM12 / 12BのIOMAシェルフのIOM Aポート1をケーブル接続します。
 +
 SAS 銅線の QSFP-miniSAS HD ケーブルを使用します。
 
@@ -531,7 +531,7 @@ SAS 銅線 Mini-SAS HD / Mini-SAS HD 間ケーブルを使用します。
 それ以外の場合は、次の手順に進みます。
 
 .. 手順 b と c を繰り返して、 IOM B のシェルフ / シェルフ間をケーブル接続します
-.. ブリッジの同じポート（手順 a ）を新しい最後の IOM12 シェルフの IOM A ポート 3 にケーブル接続して、下部のブリッジ / スタック間の接続を再確立します。
+.. ブリッジの同じポート（手順a）を新しい最後のIOM12 / IOM12BシェルフのIOM Aポート3にケーブル接続して、下部のブリッジ/スタック間の接続を再確立します。
 +
 コントローラのポートタイプに応じて、 SAS 銅線の QSFP-miniSAS HD ケーブルまたは Mini-SAS HD / Mini-SAS HD ケーブルを使用します。
 
@@ -567,7 +567,7 @@ NOTE: ケーブルの接続を解除してから再接続し、ケーブルを�
 
 
  a| 
-マルチパス HA 、マルチパス、またはコントローラを論理的に最後のシェルフに接続したシングルパス HA 、または MetroCluster 構成のブリッジ接続
+マルチパスHA、トライパスHA、マルチパス、またはシングルパスHAで、論理的な最後のシェルフへのコントローラ接続、またはMetroCluster構成のブリッジ接続を行います
  a| 
 .. コントローラ/スタック間のケーブルを最後のIOM12 / IOM12BシェルフのIOM Aポート3から新しい最後のIOM12 / IOM12Bシェルフの同じポートに移動します。
 .. 1台のIOM12 / IOM12Bシェルフをホットアドする場合は、古い最後のIOM12 / 12BシェルフのIOM Aポート3と新しい最後のIOM12 / IOM12BシェルフのIOM Aポート1をシェルフ間で接続します。
@@ -626,7 +626,7 @@ SAS 銅線 Mini-SAS HD / Mini-SAS HD 間ケーブルを使用します。
 ケーブル接続エラーが発生した場合は、表示される対処方法に従ってください。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
+https://mysupport.netapp.com/site/tools["ネットアップのダウンロード： Config Advisor"^]
 
 . この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。
 +

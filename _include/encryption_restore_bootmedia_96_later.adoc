@@ -1,0 +1,73 @@
+= 
+:allow-uri-read: 
+
+
+環境変数を確認したら、この手順で取得した設定を使用して、オンボードキーマネージャ（OKM）、NetAppストレージ暗号化（NSE）、またはNetAppボリューム暗号化（NVE）が有効になっているシステム固有の手順を実行する必要があります。
+
+
+NOTE: NSE または NVE がオンボードキーマネージャとともに有効になっている場合は、この手順の最初に取得した設定をリストアする必要があります。
+
+.手順
+. コンソールケーブルをターゲットコントローラに接続します。
+. LOADER プロンプトで「 boot_ontap 」コマンドを使用して、コントローラをブートします。
+. コンソールの出力を確認します。
++
+[cols="1,3"]
+|===
+| コンソールに表示される内容 | 作業 
+
+
+ a| 
+ログインプロンプト
+ a| 
+手順 7 に進みます。
+
+
+
+ a| 
+ギブバックを待っています
+ a| 
+.. パートナーコントローラにログインします。
+.. storage failover show コマンドを使用して ' ターゲット・コントローラがギブバック可能な状態になっていることを確認します
+
+
+|===
+. コンソール・ケーブルをパートナー・コントローラに移動し ' storage failover giveback -fromnode local-only CFO -aggregates true local コマンドを使用してターゲット・コントローラ・ストレージをギブバックします
++
+** ディスク障害のためにコマンドが失敗した場合は、ディスクを物理的に取り外します。ただし、交換用のディスクを受け取るまでは、ディスクをスロットに残しておきます。
+** CIFS セッションが開いているためにコマンドが失敗する場合は、 CIFS セッションを閉じる方法をお客様に確認します。
++
+
+NOTE: CIFS を終了原因すると、データが失われる可能性があります。
+
+** パートナーの準備が完了していないためにコマンドが失敗した場合は、 NVMEM が同期されるまで 5 分待ちます。
+** NDMP 、 SnapMirror 、または SnapVault のプロセスが原因でコマンドが失敗する場合は、そのプロセスを無効にします。詳細については、該当するドキュメントセンターを参照してください。
+
+
+. 3 分待ってから、「 storage failover show 」コマンドを使用してフェイルオーバーステータスを確認します。
+. クラスタシェルプロンプトで、「 net int show -is-home false 」コマンドを入力し、ホームコントローラとポートにない論理インターフェイスを表示します。
++
+インターフェイスがと表示されている場合 `false`を使用して、それらのインターフェイスをホームポートにリバートします `net int revert -vserver Cluster -lif _nodename_` コマンドを実行します
+
+. コンソール・ケーブルをターゲット・コントローラに移動し 'version -v コマンドを実行して ONTAP のバージョンを確認します
+. 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
+. クラスタシェルプロンプトで「 storage encryption disk show 」を使用して出力を確認します。
+. 「 securitykey-manager key query 」コマンドを使用して、キー管理サーバに格納されている認証キーのキー ID を表示します。
++
+** リストアされたカラム = 'yes/true' の場合は ' 終了し ' 交換プロセスを完了することができます
+** 「 Key Manager type 」 = 「 external 」および「 restored 」列 = 「 yes / true 」以外の場合は、「 securitykey-manager external restore 」コマンドを使用して認証キーのキー ID をリストアします。
++
+
+NOTE: コマンドが失敗した場合は、カスタマーサポートにお問い合わせください。
+
+** 「 Key Manager type 」 = 「 onboard 」で「 restored 」列 = 「 yes / true 」以外の場合は、「 securitykey-manager onboard sync 」コマンドを使用して、 Key Manager タイプを再同期します。
++
+security key-manager key query を使用して ' すべての認証キーの Restored カラム = 'yes/true' を確認します
+
+
+
+. パートナーコントローラにコンソールケーブルを接続します。
+. storage failover giveback -fromnode local コマンドを使用して、コントローラをギブバックします。
+. 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
+. AutoSupportが無効になっていた場合は、を使用してリストアします `system node autosupport invoke -node * -type all -message MAINT=END`
+

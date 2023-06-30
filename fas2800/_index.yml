@@ -1,0 +1,49 @@
+---
+indexpage:
+  tiles:
+  - title: 設置とセットアップ
+    links:
+    - title: クイックステップ
+      url: "/install-quick-guide.html"
+    - title: ビデオの手順
+      url: "/install-videos.html"
+    - title: 詳細な手順
+      url: "/install-detailed-guide.html"
+  - title: メンテナンス
+    links:
+    - title: ブートメディア
+      url: "/bootmedia-replace-overview.html"
+    - title: キャッシングモジュール
+      url: "/caching-module-replace.html"
+    - title: シャーシ
+      url: "/chassis-replace-overview.html"
+    - title: コントローラモジュール
+      url: "/controller-replace-overview.html"
+    - title: DIMM
+      url: "/dimm-replace.html"
+    - title: ドライブ
+      url: "/drive-replace.html"
+    - title: メザニンカード
+      url: "/pci-cards-and-risers-replace.html"
+    - title: NVMEM バッテリ
+      url: "/nvmem-nvram-battery-replace.html"
+    - title: 電源装置
+      url: "/power-supply-swap-out.html"
+    - title: RTC バッテリ
+      url: "/rtc-battery-replace.html"
+  - title: サポートされるスイッチ
+    links:
+    - title: BES-53248 の場合
+      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-bes-53248/configure-new-switch-overview.html
+    - title: Cisco Nexus 9336C-FX2
+      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/configure-switch-overview-9336c-cluster.html
+    - title: Cisco Nexus 9336C-FX2（共有構成
+      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/configure-switch-overview-9336c-shared.html
+  - title: その他のドキュメントリソース
+    links:
+    - title: システムハードウェアのアップグレード
+      url: https://docs.netapp.com/us-en/ontap-systems-upgrade/
+    - title: ONTAP ソフトウェアのアップグレード
+      url: https://docs.netapp.com/us-en/ontap/upgrade/index.html
+    - title: 内蔵ディスクドライブの交換（ビデオ）
+      url: https://www.youtube.com/watch?v=Ziqg9HL8oYQ

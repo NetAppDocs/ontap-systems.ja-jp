@@ -1,0 +1,18 @@
+---
+permalink: fas2800/install-quick-guide.html 
+sidebar: sidebar 
+keywords: fas2800, quick, guide, graphic, instructions, install, rack, cable 
+summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。 
+---
+= クイックガイド- FAS2800
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。
+
+設置およびセットアップ手順 _PDF ポスター：
+
+link:../media/PDF/June_2023_Rev-1_FAS2800_ISI.pdf["FAS2800システムの設置およびセットアップ手順"]

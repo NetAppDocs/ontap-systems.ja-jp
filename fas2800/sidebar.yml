@@ -1,0 +1,83 @@
+---
+section: fas2800
+title: FAS2800システム
+url: "/fas2800/index.html"
+entries:
+- title: 設置とセットアップ
+  pdf-filename: FAS2800のインストールとセットアップ
+  entries:
+  - title: インストールとセットアップを選択します
+    url: "/fas2800/install-setup.html"
+  - title: クイックステップ
+    url: "/fas2800/install-quick-guide.html"
+  - title: ビデオの手順
+    url: "/fas2800/install-videos.html"
+  - title: 詳細な手順
+    url: "/fas2800/install-detailed-guide.html"
+- title: メンテナンス
+  pdf-filename: FAS2800の保守点検
+  entries:
+  - title: ブートメディア
+    pdf-filename: FAS2800ブートメディア
+    entries:
+    - title: 概要
+      url: "/fas2800/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/fas2800/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/fas2800/bootmedia-impaired-controller-shutdown.html"
+    - title: ブートメディアを交換し、ブートイメージを転送します
+      url: "/fas2800/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/fas2800/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/fas2800/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/fas2800/bootmedia-complete-rma.html"
+  - title: キャッシングモジュール
+    pdf-filename: FAS2800キャッシュモジュール
+    url: "/fas2800/caching-module-replace.html"
+  - title: シャーシ
+    pdf-filename: FAS2800シャーシ
+    entries:
+    - title: 概要
+      url: "/fas2800/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/fas2800/chassis-replace-shutdown.html"
+    - title: ハードウェアを交換します
+      url: "/fas2800/chassis-replace-move-hardware.html"
+    - title: 構成をリストアする
+      url: "/fas2800/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラ
+    pdf-filename: FAS2800コントローラ
+    entries:
+    - title: 概要
+      url: "/fas2800/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/fas2800/controller-replace-shutdown.html"
+    - title: コントローラハードウェアを交換します
+      url: "/fas2800/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/fas2800/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続
+      url: "/fas2800/controller-replace-recable-reassign-disks.html"
+    - title: システムのリストアを完了
+      url: "/fas2800/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    pdf-filename: FAS2800のDIMM
+    url: "/fas2800/dimm-replace.html"
+  - title: ドライブ
+    pdf-filename: FAS2800ドライブ
+    url: "/fas2800/drive-replace.html"
+  - title: NVMEM バッテリ
+    pdf-filename: FAS2800 NVMEMバッテリ
+    url: "/fas2800/nvmem-nvram-battery-replace.html"
+  - title: メザニンカード
+    pdf-filename: FAS2800メザニンカード
+    url: "/fas2800/pci-cards-and-risers-replace.html"
+  - title: 電源装置
+    pdf-filename: FAS2800の電源装置
+    url: "/fas2800/power-supply-swap-out.html"
+  - title: リアルタイムクロックバッテリ
+    pdf-filename: FAS2800リアルタイムクロックバッテリ
+    url: "/fas2800/rtc-battery-replace.html"

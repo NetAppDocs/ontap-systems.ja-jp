@@ -1,0 +1,628 @@
+---
+permalink: fas2800/install-detailed-guide.html 
+sidebar: sidebar 
+keywords: fas2800, detailed, guide, prepare, install, hardware, cable, controllers, node, switchless, cluster, network, configuration, system, setup, discovery 
+summary: このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。 
+---
+= 詳細な手順- FAS2800
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。インストール手順の詳細については、このガイドを参照してください。
+
+
+
+== 手順 1 ：設置の準備
+
+FAS2800システムを設置するには、NetApp Support Siteでアカウントを作成し、システムを登録し、ライセンスキーを取得する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。
+
+にアクセスできる必要があります https://hwu.netapp.com["NetApp Hardware Universe の略"] サイト要件および構成済みシステム上の追加情報の詳細については、を参照してください。へのアクセスも必要になる場合があります http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているONTAP 9のバージョンに対応したリリースノート"] ONTAP のバージョンに応じて、このシステムの詳細情報を確認してください。
+
+お客様のサイトで次のものを準備する必要があります。
+
+* ストレージシステム用のラックスペース
+* No.2 プラスドライバ
+* Web ブラウザを使用してシステムをネットワークスイッチおよびラップトップまたはコンソールに接続するための追加のネットワークケーブル
+* RJ-45 接続を備え、 Web ブラウザにアクセスできるラップトップまたはコンソール
+
+
+.手順
+. すべての箱を開封して内容物を取り出します。
+. コントローラのシステムシリアル番号をメモします。
++
+image::../media/drw_ssn_label.svg[DRW SSN ラベル]
+
+. アカウントを設定します。
++
+.. 既存のアカウントにログインするか、アカウントを作成します。
+.. からシステムを登録します  https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["ネットアップ製品登録"]
+
+
+. ダウンロードしてインストールします https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Config Advisor"] ノートブック PC で。
+. 同梱されていたケーブルの数と種類を確認し、書き留めておきます。
++
+次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください https://hwu.netapp.com["NetApp Hardware Universe の略"] ケーブルの場所を確認し、用途を特定します。
+
++
+[cols="1,2,1,2"]
+|===
+| ケーブルのタイプ | パーツ番号と長さ | コネクタのタイプ | 用途 
+
+
+ a| 
+10GbE、SFP28ケーブル（発注内容に応じて）
+ a| 
+X6566B-05-R6、.5、
+
+X6566B-2-R6、2m
+ a| 
+image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+ a| 
+ネットワークケーブル
+
+
+
+ a| 
+25Gbイーサネット、SFP28
+ a| 
+X66240A-05、0.5m
+
+X66240-2、2m
+
+X66240A-5、5m
+ a| 
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[OIEケーブル25GbイーサネットSFP28 IEOPS 1069]
+ a| 
+ネットワークケーブル
+
+
+
+ a| 
+32Gbファイバチャネル、
+SFP+（ターゲット/イニシエータ）
+ a| 
+X66250-2、2m
+
+X66250-5、5m
+
+X66250-15、15m
+ a| 
+image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+ a| 
+FCネットワーク
+
+
+
+ a| 
+Cat 6 、 RJ-45 （注文内容による）
+ a| 
+X6561-R6
+
+X6562-R6
+ a| 
+image::../media/oie_cable_rj45.svg[OIE ケーブル RJ45]
+ a| 
+管理ネットワークとイーサネットデータ
+
+
+
+ a| 
+ストレージ
+ a| 
+X66030A、0.5m
+
+X66031A、1m
+
+X66032A、2m
+ a| 
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIEケーブルミニSAS HDからミニSAS HD]
+ a| 
+ストレージ
+
+
+
+ a| 
+USB-Cコンソールケーブル
+ a| 
+該当なし
+ a| 
+image::../media/oie_cable_micro_usb.svg[OIEケーブルマイクロUSB]
+ a| 
+Windows または Mac 以外のラップトップ / コンソールでソフトウェアをセットアップする際のコンソール接続
+
+
+
+ a| 
+電源ケーブル
+ a| 
+該当なし
+ a| 
+image::../media/oie_cable_power.svg[OIEケーブル電源]
+ a| 
+システムの電源をオンにします
+
+
+
+ a| 
+オプションのFCケーブル
+ a| 
+オプションのFCケーブル
+ a| 
+image::../media/oie_cable_fiber_lc_connector.svg[OIE ケーブルファイバ LC コネクタ]
+ a| 
+追加のFCネットワークケーブル
+
+|===
+. に記載されているワークシートをダウンロードして記入します  https://docs.netapp.com/us-en/ontap/software_setup/concept_set_up_the_cluster.html#cluster-setup-worksheets["ONTAP CLI を使用してクラスタをセットアップします"^]。
+
+
+
+
+== 手順 2 ：ハードウェアを設置する
+
+システムは、 4 ポストラックまたはネットアップシステムキャビネットのいずれかに設置する必要があります。
+
+.手順
+. 必要に応じてレールキットを取り付けます。
+. レールキットに付属の手順書に従って、システムを設置して固定します。
++
+
+NOTE: システムの重量に関連する安全上の注意事項を確認しておく必要があります。
+
++
+image::../media/oie_fas2800_weight_caution_IEOPS-1070.svg[OIE fas2800重量注意IEOPS 1070]
+
+. ケーブルマネジメントデバイスを取り付けます（図を参照）。
++
+image::../media/drw_cable_management_arm_install.svg[DRW ケーブルマネジメントアーム取り付け]
+
+. システムの前面にベゼルを配置します。
+
+
+
+
+== 手順 3 ：コントローラをネットワークに接続する
+
+2ノードスイッチレスクラスタ方式またはクラスタインターコネクトネットワーク方式を使用して、コントローラをネットワークにケーブル接続します。
+
+次の表に、2ノードスイッチレスクラスタネットワークのケーブル接続とスイッチクラスタネットワークのケーブル接続の両方について、図中のコールアウト番号とケーブルの色を記載したケーブルタイプを示します。
+
+[cols="20%,80%"]
+|===
+| ケーブル配線 | 接続タイプ 
+
+
+ a| 
+image::../media/oie_legend_icon_1_lg.svg[OIEの凡例アイコン1LG]
+ a| 
+クラスタインターコネクト
+
+
+
+ a| 
+image::../media/oie_legend_icon_2_lp.svg[OIE の凡例アイコン 2 LP]
+ a| 
+管理ネットワークスイッチ
+
+
+
+ a| 
+image::../media/oie_legend_icon_3_o.svg[OIE の凡例アイコン 3 o]
+ a| 
+ホストネットワークスイッチ
+
+|===
+[role="tabbed-block"]
+====
+.オプション 1 ： 2 ノードスイッチレスクラスタをケーブル接続
+--
+2ノードスイッチレスクラスタの場合は、ネットワーク接続とクラスタインターコネクトポートをケーブル接続します。
+
+.作業を開始する前に
+システムとスイッチの接続については、ネットワーク管理者にお問い合わせください。
+
+図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
+
+image::../media/oie_cable_pull_tab_down.svg[OIE ケーブルのプルタブを下に引きます]
+
+
+NOTE: コネクタを挿入すると、カチッという音がして所定の位置に収まります。カチッという音がしない場合は、コネクタを取り外し、ケーブルヘッドを裏返してやり直してください。
+
+
+NOTE: 光スイッチに接続する場合は、ポートにケーブル接続する前に、 SFP をコントローラポートに挿入します。
+
+.このタスクについて
+図またはステップバイステップの手順を使用して、コントローラとスイッチをケーブル接続します。
+
+.アニメーション- 2ノードスイッチレスクラスタのケーブル接続
+video::90577508-fa79-46cf-b18a-afe8016325af[panopto]
+.手順
+. クラスタインターコネクトケーブルを使用して、クラスタインターコネクトポートe0aからe0a、e0bからe0bを接続します。
++
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[OIEケーブル25GbイーサネットSFP28 IEOPS 1069]
+
++
+*クラスタインターコネクトケーブル*
+
++
+image::../media/drw_2800_tnsc_cluster_cabling_IEOPS-892.svg[DRW 2800 TNSCクラスタケーブル配線IEOPS 892]
+
+. RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
++
+image::../media/oie_cable_rj45.svg[OIE ケーブル RJ45]
+
++
+* RJ45ケーブル*
+
++
+image::../media/drw_2800_management_connection_IEOPS-1077.svg[DRW 2800管理接続IEOPS 1077]
+
+. メザニンカードポートをホストネットワークにケーブル接続します。
++
+image::../media/drw_2800_network_cabling_IEOPS-894.svg[DRW 2800ネットワークケーブル配線IEOPS 894]
+
++
+.. 4ポートイーサネットデータネットワークの場合は、ポートe1a~e1dをイーサネットデータネットワークにケーブル接続します。
++
+*** 4ポート、10 / 25Gbイーサネット、SFP28
++
+image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+
++
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[OIEケーブル25GbイーサネットSFP28 IEOPS 1069]
+
+*** 4ポート、10GBASE-T、RJ45
++
+image::../media/oie_cable_rj45.svg[OIE ケーブル RJ45]
+
+
+
+.. 4ポートのFibre Channelデータネットワークを使用する場合は、FCネットワーク用にポート1a~1dをケーブル接続します。
++
+*** 4ポート、32Gbファイバチャネル、SFP+（ターゲットのみ）
++
+image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+
+*** 4ポート、32Gbファイバチャネル、SFP+（イニシエータ/ターゲット）
++
+image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+
+
+
+.. 2+2カード（2ポートがイーサネット接続、2ポートがファイバチャネル接続）を使用している場合は、ポートe1aとe1bをFCデータネットワークに、ポートe1cとe1dをイーサネットデータネットワークにケーブル接続します。
++
+*** 10 / 25Gbイーサネット（SFP28）×2ポート+32Gb FC（SFP+）×2ポート
++
+image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+
++
+image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+
+
+
+
+
+
+
+
+IMPORTANT: 電源コードは接続しないでください。
+
+--
+.オプション 2 ：スイッチクラスタをケーブル接続する
+--
+スイッチクラスタのネットワーク接続とクラスタインターコネクトポートをケーブル接続します。
+
+
+NOTE: システムとスイッチの接続に関する情報を、ネットワーク管理者に確認しておく必要があります。
+
+図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
+
+image::../media/oie_cable_pull_tab_down.svg[OIE ケーブルのプルタブを下に引きます]
+
+
+NOTE: コネクタを挿入すると、カチッという音がして所定の位置に収まります。カチッという音がしない場合は、コネクタを取り外し、ケーブルヘッドを裏返してやり直してください。
+
+.このタスクについて
+図またはステップバイステップの手順を使用して、コントローラとスイッチをケーブル接続します。
+
+.アニメーションスイッチを使用したクラスタのケーブル接続
+video::6553a3db-57dd-4247-b34a-afe8016315d4[panopto]
+.手順
+. クラスタインターコネクトケーブルを使用して、クラスタインターコネクトポートe0aからe0a、e0bからe0bを接続します。
++
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[OIEケーブル25GbイーサネットSFP28 IEOPS 1069]
+
++
+image::../media/drw_2800_tnsc_cluster_cabling_IEOPS-892.svg[DRW 2800 TNSCクラスタケーブル配線IEOPS 892]
+
+. RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
++
+image::../media/oie_cable_rj45.svg[OIE ケーブル RJ45]
+
++
+image::../media/drw_2800_management_connection_IEOPS-1077.svg[DRW 2800管理接続IEOPS 1077]
+
+. メザニンカードポートをホストネットワークにケーブル接続します。
++
+image::../media/drw_2800_network_cabling_IEOPS-894.svg[DRW 2800ネットワークケーブル配線IEOPS 894]
+
++
+.. 4ポートイーサネットデータネットワークの場合は、ポートe1a~e1dをイーサネットデータネットワークにケーブル接続します。
++
+*** 4ポート、10 / 25Gbイーサネット、SFP28
++
+image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+
++
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[OIEケーブル25GbイーサネットSFP28 IEOPS 1069]
+
+*** 4ポート、10GBASE-T、RJ45
++
+image::../media/oie_cable_rj45.svg[OIE ケーブル RJ45]
+
+
+
+.. 4ポートのFibre Channelデータネットワークを使用する場合は、FCネットワーク用にポート1a~1dをケーブル接続します。
++
+*** 4ポート、32Gbファイバチャネル、SFP+（ターゲットのみ）
++
+image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+
+*** 4ポート、32Gbファイバチャネル、SFP+（イニシエータ/ターゲット）
++
+image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+
+
+
+.. 2+2カード（2ポートがイーサネット接続、2ポートがファイバチャネル接続）を使用している場合は、ポートe1aとe1bをFCデータネットワークに、ポートe1cとe1dをイーサネットデータネットワークにケーブル接続します。
++
+*** 10 / 25Gbイーサネット（SFP28）×2ポート+32Gb FC（SFP+）×2ポート
++
+image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+
++
+image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+
+
+
+
+
+
+
+
+IMPORTANT: 電源コードは接続しないでください。
+
+--
+====
+
+
+== 手順 4 ：コントローラをドライブシェルフにケーブル接続する
+
+コントローラを外付けストレージにケーブル接続します。
+
+
+NOTE: この例では DS224C を使用していますサポートされている他のドライブシェルフでもケーブル接続はほぼ同じです。
+
+図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
+
+image::../media/oie_cable_pull_tab_down.svg[OIE ケーブルのプルタブを下に引きます]
+
+.このタスクについて
+図またはステップバイステップの手順を使用して、コントローラとドライブシェルフをケーブル接続します。
+
+.アニメーション-ドライブシェルフのケーブル配線
+video::b2a7549d-8141-47dc-9e20-afe8016f4386[panopto]
+
+NOTE: FAS2800ではポート0b2を使用しないでください。このSASポートはONTAPでは使用されず、常に無効になっています。を参照してください https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html["新しいストレージシステムにシェルフを設置します"^] を参照してください。
+
+次の表に、2ノードスイッチレスクラスタネットワークのケーブル接続とスイッチクラスタネットワークのケーブル接続の両方について、図中のコールアウト番号とケーブルの色を記載したケーブルタイプを示します。
+
+[cols="20%,80%"]
+|===
+| ケーブル配線 | 接続タイプ 
+
+
+ a| 
+image::../media/oie_legend_icon_1_lo.svg[OIE凡例アイコン1 lo]
+ a| 
+クラスタインターコネクト
+
+
+
+ a| 
+image::../media/oie_legend_icon_2_mb.svg[OIE凡例アイコン2 MB]
+ a| 
+管理ネットワークスイッチ
+
+
+
+ a| 
+image::../media/oie_legend_icon_3_t.svg[OIE凡例アイコン3]
+ a| 
+ホストネットワークスイッチ
+
+|===
+.手順
+. シェルフ間でポートをケーブル接続します。
++
+.. IOM Aのポート1と直下のシェルフにあるIOM Aのポート3
+.. IOM Bのポート1と直下のシェルフにあるIOM Bのポート3
++
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIEケーブルミニSAS HDからミニSAS HD]
+
++
+* Mini-SAS HD間ケーブル*
+
++
+image::../media/drw_2800_shelf-to-shelf_cabling_IEOPS-895.svg[DRW 2800シェルフとシェルフのケーブル配線IEOPS 895]
+
+
+
+. コントローラAをドライブシェルフにケーブル接続します。
++
+.. コントローラAのポート0aとスタックの最初のドライブシェルフにあるIOM Bのポート1
+.. コントローラAのポート0b1とスタックの最後のドライブシェルフにあるIOM Aのポート3
++
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIEケーブルミニSAS HDからミニSAS HD]
+
++
+* Mini-SAS HD間ケーブル*
+
++
+image::../media/dwr-2800_controller1-to shelves_IEOPS-896.svg[DWR 2800コントローラ1をシェルフIEOPS 896に接続]
+
+
+
+. コントローラBをドライブシェルフに接続します。
++
+.. コントローラBのポート0aとスタックの最初のドライブシェルフにあるIOM Aのポート1
+.. コントローラBのポート0b1とスタックの最後のドライブシェルフにあるIOM Bのポート3
++
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIEケーブルミニSAS HDからミニSAS HD]
+
++
+* Mini-SAS HD間ケーブル*
+
++
+image::../media/dwr-2800_controller2-to shelves_IEOPS-897.svg[DWR 2800コントローラ2をシェルフIEOPS 897に接続]
+
+
+
+
+
+
+
+== 手順 5 ：システムのセットアップと設定を完了する
+
+システムのセットアップと設定を実行するには、スイッチとラップトップのみを接続してクラスタ検出を使用するか、システムのコントローラに直接接続してから管理スイッチに接続します。
+
+[role="tabbed-block"]
+====
+.オプション 1 ：ネットワーク検出が有効になっている場合
+--
+ラップトップでネットワーク検出が有効になっている場合は、クラスタの自動検出を使用してシステムのセットアップと設定を行います。
+
+.手順
+. 次のアニメーションに従って、 1 つ以上のドライブシェルフ ID を設定します。
++
+.アニメーション-ドライブシェルフIDを設定します
+video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
+. 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
+. 両方のノードの電源スイッチをオンにします。
++
+image::../media/dwr_2800_turn_on_power_IEOPS-898.svg[DWR 2800電源をオンにしますIEOPS 898]
+
++
+
+NOTE: 初回のブートには最大 8 分かかる場合があります。
+
+. ラップトップでネットワーク検出が有効になっていることを確認します。
++
+詳細については、ラップトップのオンラインヘルプを参照してください。
+
+. 次のアニメーションに従って、ラップトップを管理スイッチに接続します。
++
+.アニメーション-ラップトップを管理スイッチに接続します
+video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
+. 検出する ONTAP アイコンを選択します。
++
+image::../media/drw_autodiscovery_controler_select.svg[DRW 自動検出コントローラ選択]
+
++
+.. エクスプローラを開きます。
+.. 左側のペインで、 [Network] ( ネットワーク ) をクリックします。
+.. 右クリックして、更新を選択します。
+.. いずれかの ONTAP アイコンをダブルクリックし、画面に表示された証明書を受け入れます。
++
+
+NOTE: 「 XXXXX 」は、ターゲットノードのシステムシリアル番号です。
+
++
+System Manager が開きます。
+
+
+
+. System Manager のセットアップガイドを使用して、で収集したデータを基にシステムを設定します https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"]
+. Config Advisor を実行してシステムの健全性を確認します。
+. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"] ONTAP での追加機能の設定については、ページを参照してください。
+
+
+--
+.オプション 2 ：ネットワーク検出が有効になっていない場合
+--
+ラップトップでネットワーク検出が有効になっていない場合は、設定とセットアップを手動で完了します。
+
+.手順
+. ラップトップまたはコンソールをケーブル接続して設定します。
++
+.. ラップトップまたはコンソールのコンソールポートを、 115 、 200 ボー、 N-8-1 に設定します。
++
+
+NOTE: コンソールポートの設定方法については、ラップトップまたはコンソールのオンラインヘルプを参照してください。
+
+.. システムに付属のコンソールケーブルを使用してコンソールケーブルをラップトップまたはコンソールに接続し、コントローラのコンソールポートを接続します。次に、ラップトップまたはコンソールを管理サブネット上のスイッチに接続します。
++
+image::../media/drw_2800_laptop_to_switch_to_controller_IEOPS-1084.svg[DRW 2800ラップトップをコントローラIEOPS 1084に切り替えます]
+
+.. 管理サブネット上の TCP / IP アドレスをラップトップまたはコンソールに割り当てます。
+
+
+. 次のアニメーションに従って、 1 つ以上のドライブシェルフ ID を設定します。
++
+.アニメーション-ドライブシェルフIDを設定します
+video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
+. 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
+. 両方のノードの電源スイッチをオンにします。
++
+image::../media/dwr_2800_turn_on_power_IEOPS-898.svg[DWR 2800電源をオンにしますIEOPS 898]
+
+
+
+
+NOTE: 初回のブートには最大 8 分かかる場合があります。
+
+. いずれかのノードに初期ノード管理 IP アドレスを割り当てます。
++
+[cols="20%,80%"]
+|===
+| 管理ネットワークでの DHCP の状況 | 作業 
+
+
+ a| 
+を設定します
+ a| 
+新しいコントローラに割り当てられた IP アドレスを記録します。
+
+
+
+ a| 
+未設定
+ a| 
+.. PuTTY 、ターミナルサーバ、または環境に対応した同等の機能を使用して、コンソールセッションを開きます。
++
+
+NOTE: PuTTY の設定方法がわからない場合は、ラップトップまたはコンソールのオンラインヘルプを確認してください。
+
+.. スクリプトからプロンプトが表示されたら、管理 IP アドレスを入力します。
+
+
+|===
+. ラップトップまたはコンソールで、 System Manager を使用してクラスタを設定します。
++
+.. ブラウザでノード管理 IP アドレスを指定します。
++
+
+NOTE: アドレスの形式はです https://x.x.x.x[]。
+
+.. で収集したデータを使用してシステムを設定します https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"]。
+
+
+. Config Advisor を実行してシステムの健全性を確認します。
+. 初期設定が完了したら、に進みます  https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"] ONTAPの追加機能の設定については、を参照してください。
+
+
+--
+====

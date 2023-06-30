@@ -57,7 +57,7 @@ replacement _node を使用可能な状態に戻す前に、 LIF がホームポ
 .手順
 . 論理インターフェイスがホームサーバとポートに報告されていることを確認します。「 network interface show -is-home false 」
 +
-いずれかの LIF が false と表示されている場合は、ホームポートにリバートします。「 network interface revert
+いずれかのLIFがfalseと表示された場合は、ホームポートにリバートします。 `network interface revert -vserver * -lif *`
 
 . システムのシリアル番号をネットアップサポートに登録します。
 +
@@ -65,6 +65,7 @@ replacement _node を使用可能な状態に戻す前に、 LIF がホームポ
 ** AutoSupport が有効になっていない場合は、を呼び出します https://mysupport.netapp.com["ネットアップサポート"] をクリックしてシリアル番号を登録します。
 
 
+. AutoSupportのメンテナンス時間がトリガーされた場合は、を使用して終了します `system node autosupport invoke -node * -type all -message MAINT=END` コマンドを実行します
 . 自動ギブバックを無効にした場合は、再度有効にします。「 storage failover modify -node local-auto-giveback true 」
 
 

@@ -1,0 +1,89 @@
+---
+permalink: fas2800/controller-replace-restore-system-rma.html 
+sidebar: sidebar 
+keywords: fas2800, how to restore NetApp Storage Encryption, how to complete the replacement process 
+summary: 'システムを完全に動作状態に戻すには、 NetApp Storage Encryption の構成をリストアし（必要な場合）、新しいコントローラのライセンスをインストールし、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。テクニカルサポートにお問い合わせください https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"]RMA 番号を確認する場合や、交換用手順にサポートが必要な場合は、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。' 
+---
+= システムの完全なリストア- FAS2800
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetAppストレージ暗号化またはボリューム暗号化の設定をリストアし（必要な場合）、交換用コントローラのライセンスをインストールし、障害が発生したパーツをNetAppに返却することで、システムを完全な運用状態にリストアします。手順については、キットに付属のRMA指示書を参照してください。
+
+
+
+== 手順 1 ：交換用コントローラのライセンスを ONTAP にインストールする
+
+障害ノードが標準（ノードロック）ライセンスを必要とする ONTAP 機能を使用していた場合は、 _replacement node に新しいライセンスをインストールする必要があります。標準ライセンスを使用する機能では、クラスタ内の各ノードにその機能用のキーが必要です。
+
+.このタスクについて
+ライセンスキーをインストールするまでの間も、標準ライセンスを必要とする機能を _replacement _node から引き続き使用できます。ただし、該当する機能のライセンスがクラスタ内でその障害ノードにしかなかった場合、機能の設定を変更することはできません。また、ライセンスされていない機能をノードで使用するとライセンス契約に違反する可能性があるため、できるだけ早く _replacement にライセンスキーをインストールする必要があります。
+
+.作業を開始する前に
+ライセンスキーは 28 文字の形式です。
+
+ライセンスキーは 90 日間の猶予期間中にインストールする必要があります。この猶予期間を過ぎると、古いライセンスはすべて無効になります。有効なライセンスキーをインストールしたら、 24 時間以内にすべてのキーをインストールする必要があります。
+
+.手順
+. 新しいライセンスキーが必要な場合は、で交換用ライセンスキーを取得します https://mysupport.netapp.com/site/global/dashboard["ネットアップサポートサイト"] [ ソフトウェアライセンス ] の [ マイサポート ] セクションで、
++
+
+NOTE: 必要な新しいライセンスキーが自動的に生成され、 E メールで送信されます。ライセンスキーが記載された E メールが 30 日以内に届かないは、テクニカルサポートにお問い合わせください。
+
+. 各ライセンスキーをインストールします :+system license add-license-code license-key, license-key...+`
+. 必要に応じて、古いライセンスを削除します。
++
+.. 使用されていないライセンスを確認してください : 「 license clean-up-unused -simulate 」
+.. リストが正しい場合は、未使用のライセンス「 license clean-up-unused 」を削除します
+
+
+
+
+
+
+== 手順 2 ：ストレージとボリュームの暗号化機能をリストアする
+
+ストレージまたはボリュームの暗号化を使用するように設定したストレージシステムでは、暗号化機能を中断させないための追加の手順を実行する必要があります。ストレージまたはボリュームの暗号化が有効になっていないストレージシステムでは、このタスクを省略できます。
+
+
+NOTE: この手順は、DIMMの交換時には必要ありません。
+
+.手順
+. オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順を実行します。
++
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"^]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"^]
+
+
+. SEDのMSIDをリセットします
+
+
+
+
+== 手順 3 ： LIF を確認してシリアル番号を登録する
+
+replacement _node を使用可能な状態に戻す前に、 LIF がホームポートにあることを確認し、 AutoSupport が有効になっている場合は _replacement _node のシリアル番号を登録して、自動ギブバックをリセットする必要があります。
+
+.手順
+. 論理インターフェイスがホームサーバとポートに報告されていることを確認します。「 network interface show -is-home false 」
++
+いずれかのLIFがfalseと表示された場合は、ホームポートにリバートします。 `network interface revert -vserver * -lif *`
+
+. システムのシリアル番号をネットアップサポートに登録します。
++
+** AutoSupport が有効になっている場合は、 AutoSupport メッセージを送信してシリアル番号を登録します。
+** AutoSupport が有効になっていない場合は、を呼び出します https://mysupport.netapp.com["ネットアップサポート"] をクリックしてシリアル番号を登録します。
+
+
+. AutoSupportのメンテナンス時間がトリガーされた場合は、を使用して終了します `system node autosupport invoke -node * -type all -message MAINT=END` コマンドを実行します
+. 自動ギブバックを無効にした場合は、再度有効にします。「 storage failover modify -node local-auto-giveback true 」
+
+
+
+
+== 手順 4 ：障害が発生したパーツをネットアップに返却する
+
+障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。

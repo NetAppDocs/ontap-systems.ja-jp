@@ -1,0 +1,21 @@
+---
+permalink: fas2800/chassis-replace-overview.html 
+sidebar: sidebar 
+keywords: fas2800, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
+summary: 障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
+---
+= シャーシの交換の概要- FAS2800
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+シャーシを交換するには、電源装置、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、障害のあるシャーシを装置ラックまたはシステムキャビネットから障害のあるシャーシと同じモデルの新しいシャーシと交換する必要があります。
+
+システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。
+
+* この手順は、システムでサポートされるすべてのバージョンの ONTAP で使用できます。
+* この手順は、すべてのドライブとコントローラモジュールをネットアップ製の新しいシャーシに移動することを前提としています。
+* この手順はシステムの停止を伴います。2 台のコントローラからなるクラスタではサービスが完全に停止し、マルチノードクラスタでは部分的に停止します。
+

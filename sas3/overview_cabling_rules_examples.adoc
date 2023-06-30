@@ -13,19 +13,20 @@ summary: IOM12 モジュールを搭載した SAS ドライブシェルフをス
 [role="lead"]
 IOM12 / IOM12Bモジュールを使用するSASドライブシェルフをストレージシステムに接続する場合は、必要に応じて、使用可能なSASケーブル接続ルール、ワークシート、およびサンプルコンテンツを使用できます。
 
-* SAS ケーブル接続ルール *
+* SASケーブル接続のルールと概念*
 
 * link:install-cabling-rules.html#configuration-rules["設定"]
 * link:install-cabling-rules.html#controller-slot-numbering-rules["コントローラのスロット番号"]
 * link:install-cabling-rules.html#shelf-to-shelf-connection-rules["シェルフ / シェルフ間の接続"]
 * link:install-cabling-rules.html#controller-to-stack-connection-rules["コントローラ / スタック間の接続"]
 * link:install-cabling-rules.html#mini-sas-hd-sas-optical-cable-rules["Mini-SAS HD SAS 光ケーブル"]
+* link:install-cabling-rules.html#tri-path-ha-connectivity["トライパスHA接続"]
 
 
 * ワークシートと例のケーブル接続 *
 
-* link:install-cabling-worksheets-examples-multipath.html["一般的なマルチパス HA 構成"]
-* link:install-cabling-worksheets-examples-fas2600.html["オンボードストレージを搭載した AFF および FAS プラットフォーム"]
+* link:install-cabling-worksheets-examples-multipath.html["マルチパスHA構成"]
+* link:install-cabling-worksheets-examples-fas2600.html["内部ストレージを備えたプラットフォーム"]
 * link:install-worksheets-examples-quadpath.html["クアッドパス HA 構成"]
 
 

@@ -1,10 +1,10 @@
 ---
 permalink: sas3/install-cabling-worksheets-examples-multipath.html 
 sidebar: sidebar 
-keywords: controller-to-stack, cabling, worksheet, cable, ha, pair, multipath, ha, configuration, controller-to-stack, cabling, controller-to-stack cabling worksheets and cabling examples for common multipath ha configuration 
+keywords: controller-to-stack, cabling, worksheet, cable, ha, pair, multipath, ha, configuration, controller-to-stack, cabling, controller-to-stack cabling worksheets and cabling examples for multipath ha configuration 
 summary: コントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 HA ペアをマルチパス HA 構成としてケーブル接続できます。 
 ---
-= 一般的なマルチパスHA構成のコントローラ/スタック間のケーブル接続ワークシートとケーブル接続例- IOM12 / IOM12Bモジュールを使用するシェルフ
+= マルチパスHA構成のコントローラ/スタック間のケーブル接続ワークシートとケーブル接続例（IOM12 / IOM12Bモジュールを搭載したシェルフ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,7 +13,10 @@ summary: コントローラ / スタック間のケーブル接続ワークシ�
 [role="lead"]
 コントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 HA ペアをマルチパス HA 構成としてケーブル接続できます。
 
-* 必要に応じて、を参照してください link:install-cabling-rules.html["SAS ケーブル接続ルール"] サポートされる構成については、コントローラのスロット番号の規則、シェルフ / シェルフ間の接続、およびコントローラ / シェルフ間の接続（ポートペアの使用など）を参照してください。
+
+NOTE: ストレージを内蔵していないこの情報環境プラットフォーム。
+
+* 必要に応じて、を参照してください link:install-cabling-rules.html["SASケーブル接続のルールと概念"] サポートされる構成については、コントローラのスロット番号の規則、シェルフ / シェルフ間の接続、およびコントローラ / シェルフ間の接続（ポートペアの使用など）を参照してください。
 * 必要に応じて、を参照してください link:install-cabling-worksheets-how-to-read-multipath.html["マルチパス接続でコントローラ / スタック間をケーブル接続するためのワークシートの読み取り方法"]。
 * ケーブル接続例では、コントローラ / スタック間のケーブル接続のうち、コントローラ A と C のポート接続を実線で、コントローラ B と D のポート接続を点線で区別して表しています。
 +
