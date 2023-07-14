@@ -26,7 +26,7 @@ entries:
       url: "/fas2800/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/fas2800/bootmedia-impaired-controller-shutdown.html"
-    - title: ブートメディアを交換し、ブートイメージを転送します
+    - title: ブートイメージを交換します
       url: "/fas2800/bootmedia-replace.html"
     - title: ブートイメージを起動します
       url: "/fas2800/bootmedia-recovery-image-boot-non-2n-mcc.html"

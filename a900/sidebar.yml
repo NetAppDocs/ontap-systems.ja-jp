@@ -28,7 +28,7 @@ entries:
       url: "/a900/bootmedia_encryption_preshutdown_checks.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a900/bootmedia_impaired_controller_shutdown.html"
-    - title: ブートイメージを転送し、障害が発生したブートメディアを交換します
+    - title: ブートイメージを交換します
       url: "/a900/bootmedia_replace.html"
     - title: リカバリイメージをブートします
       url: "/a900/bootmedia_recovery_image.html"
