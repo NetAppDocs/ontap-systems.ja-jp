@@ -5820,7 +5820,6 @@
   <block id="005350cc942b102938a15599d0a214e5" category="sidebar">NVRAM モジュールと NVRAM DIMM</block>
   <block id="4b4ef0c79b0398f75f85815a11b15104" category="sidebar">オンボードの暗号化キーがないかどうかをシャットダウン前にチェックします</block>
   <block id="4991af82e8fdfcd13eef2c656f16d4c4" category="sidebar">障害のあるコントローラをシャットダウンします</block>
-  <block id="023ccb0c069a257d58d5cbad4ec6fbf9" category="sidebar">ブートイメージを転送し、障害が発生したブートメディアを交換します</block>
   <block id="d5e04348de632d7c88520b90cf79f1fa" category="sidebar">リカバリイメージをブートします</block>
   <block id="2e8840df8a206cd4e5aa7e0fa02b1cf7" category="sidebar">ハードウェアを交換します</block>
   <block id="fa526b254f42bdec5706995cc5868952" category="sidebar">構成をリストアおよび検証する</block>
@@ -7510,7 +7509,6 @@
   <block id="7c4365c5c3b36c349d31ac07e90053ce" category="sidebar">プラットフォームのアップグレード（MetroCluster 構成）</block>
   <block id="46edf46f46a5fc2267bcf312e1955d28" category="sidebar">ONTAP ソフトウェアドキュメント</block>
   <block id="668e2078ef1b1722c77cdb5c523a4463" category="sidebar">ネットアップナレッジベース</block>
-  <block id="2bae42f280067110dfd52cc69a468364" category="sidebar">Active IQ （ログインが必要）</block>
   <block id="b5bfe3d61bf9be292418cb9d21eec19c" category="sidebar">運用を開始</block>
   <block id="8f7cc2c7f8ea66405c4805e7ebc09f8f" category="sidebar">AFF A150システム</block>
   <block id="cafd0584cfa2700cbb38234c6c87ff44" category="sidebar">AFF A150のインストールとセットアップ</block>
@@ -8348,7 +8346,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="0822c3a3c2088294acf4b156198fab16" category="sidebar">FAS2800のインストールとセットアップ</block>
   <block id="52082133ddafec6f44b27acdb0e80d2a" category="sidebar">FAS2800の保守点検</block>
   <block id="79f9aa553b7d76f8fd255e9277fa5ed0" category="sidebar">FAS2800ブートメディア</block>
-  <block id="1823853a2ff016fa1f167769ab335876" category="sidebar">ブートメディアを交換し、ブートイメージを転送します</block>
   <block id="e8beac267c4a923aec553646307b83eb" category="sidebar">FAS2800キャッシュモジュール</block>
   <block id="c1c62fce3287ee9fb4c1d797a1feba55" category="sidebar">FAS2800シャーシ</block>
   <block id="94e71ac35b9db70fff06a5064f80e3f9" category="sidebar">FAS2800コントローラ</block>
@@ -8358,4 +8355,5 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="aee81807d892ce8f0557ee7ba4da62af" category="sidebar">FAS2800メザニンカード</block>
   <block id="9287ab39836157b975fad28f9782a821" category="sidebar">FAS2800の電源装置</block>
   <block id="3dfd3fa9bee4e9b9ad14ec588c8e9ed4" category="sidebar">FAS2800リアルタイムクロックバッテリ</block>
+  <block id="f298a7570713e4b8f24128c2f7dcc05c" category="sidebar">ツールとサポート</block>
 </blocks>

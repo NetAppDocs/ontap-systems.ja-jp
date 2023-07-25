@@ -95,6 +95,8 @@ indexpage:
       url: https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/concept_choosing_an_upgrade_method_mcc.html
     - title: ONTAP ソフトウェアドキュメント
       url: https://docs.netapp.com/us-en/ontap/index.html
+  - title: ツールとサポート
+    links:
     - title: NetApp Hardware Universe の略
       url: https://hwu.netapp.com/
     - title: NetApp Active IQ Digital Advisor
@@ -107,5 +109,3 @@ indexpage:
       url: https://hwu.netapp.com/
     - title: ネットアップナレッジベース
       url: https://kb.netapp.com/
-    - title: Active IQ （ログインが必要）
-      url: https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor
