@@ -27,3 +27,5 @@ indexpage:
       url: "/service-replace-power-supply.html"
     - title: RTC バッテリ
       url: "/service-replace-rtc-battery.html"
+    - title: シェルフ LED のステータス状態
+      url: "/service-monitor-leds.html"
