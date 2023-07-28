@@ -1,7 +1,6 @@
 ---
 section: ns224
 title: NS224 シェルフ
-url: "/ns224/index.html"
 entries:
 - title: 設置とケーブル接続
   pdf-filename: NS224 シェルフの設置とケーブル接続
@@ -21,6 +20,8 @@ entries:
     url: "/ns224/service-replace-dimm.html"
   - title: ドライブ
     url: "/ns224/service-replace-drive.html"
+  - title: ドライブシェルフのLED
+    url: "/ns224/service-monitor-leds.html"
   - title: ファン
     url: "/ns224/service-replace-fan.html"
   - title: シェルフをホットリムーブします

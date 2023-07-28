@@ -2,24 +2,6 @@
 section: platform-supplemental
 title: その他のプラットフォームの手順
 entries:
-- title: システムレベルの診断
-  entries:
-  - title: はじめに
-    url: "/platform-supplemental/sldiag-introduction.html"
-  - title: 要件
-    url: "/platform-supplemental/sldiag-requirements.html"
-  - title: コマンドラインヘルプの使用方法
-    url: "/platform-supplemental/sldiag-use-cli-help.html"
-  - title: システムのインストール診断を実行します
-    url: "/platform-supplemental/sldiag-system-installation-diagnostics.html"
-  - title: システムパニック診断を実行します
-    url: "/platform-supplemental/sldiag-system-panic-diagnostics.html"
-  - title: システム応答の遅延診断を実行します
-    url: "/platform-supplemental/sldiag-slow-system-diagnostics.html"
-  - title: ハードウェアの設置診断を実行します
-    url: "/platform-supplemental/sldiag-hardware-installation-diagnostics.html"
-  - title: デバイス障害診断を実行します
-    url: "/platform-supplemental/sldiag-device-failure-diagnostics.html"
 - title: SuperRail キット
   url: "/platform-supplemental/superrail-install.html"
 - title: AFF A700 / FAS9000 2 ポストレールキット

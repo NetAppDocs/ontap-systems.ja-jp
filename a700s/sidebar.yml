@@ -1,7 +1,6 @@
 ---
 section: a700s
 title: AFF A700s システム
-url: "/a700s/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: AFF A700s のインストールとセットアップ
@@ -17,6 +16,8 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF A700s は引き続き使用できます
   entries:
+  - title: 概要
+    url: "/a700s/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF A700s ブートメディア
     entries:
@@ -86,5 +87,3 @@ entries:
   - title: リアルタイムクロックバッテリ
     pdf-filename: AFF A700s リアルタイムクロックバッテリ
     url: "/a700s/rtc-battery-replace.html"
-  - title: システムレベルの診断
-    url: "/a700s/system-level-diags-linkout.html"

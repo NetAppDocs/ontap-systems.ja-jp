@@ -4,14 +4,18 @@ sidebar: sidebar
 keywords: aff a700, fas9000, replace, nvram, module, dimm, manually, reassign, system, id, ha, system, disk, two, node, restore, storage, volume, encryption, functionality 
 summary: NVRAM モジュールは、 NVRAM モジュールあたり NVRAM10 と DIMM 、および最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。 
 ---
-= NVRAM モジュールまたは NVRAM DIMM を交換してください - AFF A700 および FAS9000
+= NVRAMモジュールまたはNVRAM DIMMの交換- FAS9000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-NVRAM モジュールは、 NVRAM モジュールあたり NVRAM10 と DIMM 、および最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。障害が発生した NVRAM モジュールを交換するには、シャーシからモジュールを取り外し、 NVRAM モジュールから FlashCache モジュールを取り外し、 DIMM を交換用モジュールに移し、 FlashCache モジュールまたはモジュールを再度取り付け、交換用 NVRAM モジュールをシャーシに取り付ける必要があります。システム ID は NVRAM モジュールから取得されるため、モジュールを交換する場合は、システムに属するディスクを新しいシステム ID に再割り当てします。
+NVRAM モジュールは、 NVRAM モジュールあたり NVRAM10 と DIMM 、および最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。
+
+障害が発生した NVRAM モジュールを交換するには、シャーシからモジュールを取り外し、 NVRAM モジュールから FlashCache モジュールを取り外し、 DIMM を交換用モジュールに移し、 FlashCache モジュールまたはモジュールを再度取り付け、交換用 NVRAM モジュールをシャーシに取り付ける必要があります。
+
+システム ID は NVRAM モジュールから取得されるため、モジュールを交換する場合は、システムに属するディスクを新しいシステム ID に再割り当てします。
 
 * 始める前に *
 

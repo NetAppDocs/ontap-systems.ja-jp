@@ -1,0 +1,21 @@
+---
+permalink: asa900/install_quick_guide.html 
+sidebar: sidebar 
+keywords: ASA A900 
+summary: に、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順を示します。 
+---
+= クイックステップ- ASA A900
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このページでは、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順を図で示します。ネットアップシステムのインストールに精通している場合は、このコンテンツを使用してください。
+
+設置およびセットアップ手順 _PDF ポスター：
+
+link:../media/PDF/December_2022_Rev-2_AFFA900_ISI.pdf["AFF A900 のインストールとセットアップの手順"^]
+
+
+NOTE: ASA A900は、AFF A900システムと同じインストール手順を使用します。

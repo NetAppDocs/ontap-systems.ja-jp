@@ -1,7 +1,6 @@
 ---
 section: fas2700
 title: FAS2700 システム
-url: "/fas2700/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: FAS2700 の設置とセットアップ
@@ -17,6 +16,8 @@ entries:
 - title: メンテナンス
   pdf-filename: FAS2700 で維持されます
   entries:
+  - title: 概要
+    url: "/fas2700/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: FAS2700 ブートメディア
     entries:

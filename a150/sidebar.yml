@@ -1,7 +1,6 @@
 ---
 section: a150
 title: AFF A150システム
-url: "/a150/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: AFF A150のインストールとセットアップ
@@ -17,6 +16,8 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF A150メンテナンス
   entries:
+  - title: 概要
+    url: "/a150/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF A150ブートメディア
     entries:
@@ -44,7 +45,7 @@ entries:
       url: "/a150/chassis-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a150/chassis-replace-shutdown.html"
-    - title: ハードウェアを交換します
+    - title: シャーシの交換
       url: "/a150/chassis-replace-move-hardware.html"
     - title: 構成をリストアする
       url: "/a150/chassis-replace-complete-system-restore-rma.html"
@@ -55,7 +56,7 @@ entries:
       url: "/a150/controller-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a150/controller-replace-shutdown.html"
-    - title: コントローラハードウェアを交換します
+    - title: コントローラを交換してください
       url: "/a150/controller-replace-move-hardware.html"
     - title: システム設定を復元します
       url: "/a150/controller-replace-system-config-restore-and-verify.html"

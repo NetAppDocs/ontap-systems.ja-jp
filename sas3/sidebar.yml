@@ -1,7 +1,6 @@
 ---
 section: sas3
-title: IOM12 / IOM12Bモジュールを使用するSASシェルフ
-url: "/sas3/index.html"
+title: SASシェルフ
 entries:
 - title: 設置とケーブル接続
   pdf-filename: IOM12 / IOM2Bモジュールを使用するシェルフの設置とケーブル接続
@@ -10,7 +9,7 @@ entries:
     url: "/sas3/install-new-system.html"
   - title: シェルフをホットアドします
     url: "/sas3/install-hot-add-shelf.html"
-  - title: IOM12 / IOM12BシェルフをIOM6シェルフのスタックにホットアドします
+  - title: IOM6シェルフのスタックへのIOM12 / IOM12Bシェルフのホットアド
     url: "/sas3/iom12-hot-add-mix.html"
   - title: シェルフ ID を変更します
     url: "/sas3/install-change-shelf-id.html"
@@ -22,17 +21,17 @@ entries:
       url: "/sas3/install-cabling-rules.html"
     - title: マルチパスHAのケーブル接続ワークシートと例
       url: "/sas3/install-cabling-worksheets-examples-multipath.html"
-    - title: 内部ストレージを使用するプラットフォームのケーブル接続ワークシートと例
+    - title: 内蔵ストレージを搭載したプラットフォームのケーブル接続ワークシート
       url: "/sas3/install-cabling-worksheets-examples-fas2600.html"
     - title: クアッドパスHAのケーブル接続ワークシートと例
       url: "/sas3/install-worksheets-examples-quadpath.html"
-    - title: マルチパス接続用のケーブル接続ワークシートテンプレート
+    - title: マルチハスセツソクノケエフルセツソクワアクシイト
       url: "/sas3/install-cabling-worksheet-template-multipath.html"
-    - title: クアッドパス接続用のケーブル接続ワークシートテンプレート
+    - title: クアツトハスセツソクノケエフルセツソクワアクシイト
       url: "/sas3/install-cabling-worksheet-template-quadpath.html"
-    - title: マルチパス接続用にワークシートをケーブル接続する方法
+    - title: マルチハスセツソクノワアクシイトノトクミシユリホウホウ
       url: "/sas3/install-cabling-worksheets-how-to-read-multipath.html"
-    - title: クアッドパス接続でワークシートを読み取り、ケーブルを接続する方法
+    - title: クアツトハスセツソクノワアクシイトノトクミシユリホウホウ
       url: "/sas3/install-cabling-worksheets-how-to-read-quadpath.html"
 - title: メンテナンス
   pdf-filename: IOM12 / IOM12Bモジュールを搭載したシェルフは引き続き使用できます

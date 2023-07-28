@@ -1,8 +1,8 @@
 ---
 permalink: a700s/chassis-replace-complete-system-restore-rma.html 
 sidebar: sidebar 
-keywords: aff a700s, verify and set HA state, run diagnostics, complete the replacement process 
-summary: キットに付属する RMA 指示書に従って、シャーシの HA 状態を確認し、診断を実行し、障害が発生した部品をネットアップに返却する必要があります。 
+keywords: aff a700s, verify and set HA state, complete the replacement process 
+summary: キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。 
 ---
 = リストアと交換の手順を完了します - AFF A700s
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: キットに付属する RMA 指示書に従って、シャーシの HA
 
 
 [role="lead"]
-キットに付属する RMA 指示書に従って、シャーシの HA 状態を確認し、診断を実行し、障害が発生した部品をネットアップに返却する必要があります。
+キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。
 
 
 
@@ -43,31 +43,6 @@ hA-state には、次のいずれかの値を指定できます。
 
 
 
-== 手順 2 ：診断を実行します
-
-システムのコンポーネントを交換したら、そのコンポーネントに対して診断テストを実行する必要があります。
-
-診断を開始するには、システムに LOADER プロンプトが表示されている必要があります。
-
-診断手順のコマンドは、すべてコンポーネントを交換するノードから実行します。
-
-. 作業をするノードに LOADER プロンプトが表示されていない場合は、ノードをリブートします。「 system node halt -node node_name 」
-+
-コマンドを問題したら、システムが LOADER プロンプトで停止するまで待ちます。
-
-. LOADER プロンプトで、システムレベルの診断用に特別に設計されたドライバ「 boot_diags 」にアクセスします
-. 表示されたメニューから「 * Scan System * （システムのスキャン）」を選択して、診断テストの実行を有効にします。
-. 表示されたメニューから * Test Memory * を選択します。
-. 前述の手順の結果に応じて、次に進みます。
-+
-** テストに失敗した場合は、エラーを修正してからテストを再実行します。
-** テストでエラーが報告されなかった場合は、メニューから Reboot を選択してシステムをリブートします。
-
-
-
-
-
-
-== 手順 3 ：障害が発生したパーツをネットアップに返却する
+== 手順2：故障した部品をNetAppに返却する
 
 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。

@@ -1,10 +1,10 @@
 ---
 permalink: fas9000/dcpm-nvram10-battery-replace.html 
 sidebar: sidebar 
-keywords: aff a700, fas9000, replace, destage, controller, power, module, nvram10, battery, dcpm, dispose, return, failed, part 
+keywords: fas9000, replace, destage, controller, power, module, nvram10, battery, dcpm, dispose, return, failed, part 
 summary: NVRAM10 バッテリを搭載したデステージコントローラ電源モジュール（ DCPM ）をホットスワップするには、障害が発生した DCPM モジュールの場所を確認し、シャーシから取り外して、交換用の DCPM モジュールを取り付ける必要があります。 
 ---
-= デステージコントローラ電源モジュール（ DCPM ） - AFF A700 および FAS9000
+= デステージコントローラ電源モジュール（DCPM）のホットスワップ- FAS9000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -17,7 +17,7 @@ NVRAM10 バッテリを搭載したデステージコントローラ電源モジ
 
 
 
-== DCPM モジュールの交換
+== 手順 1 ： DCPM モジュールを交換します
 
 システムの DCPM モジュールを交換するには、障害が発生した DCPM モジュールをシステムから取り外し、新しい DCPM モジュールと交換する必要があります。
 
@@ -58,7 +58,7 @@ DCPM モジュールが完全にシャーシに装着されると、モジュー
 
 
 
-== バッテリは廃棄してください
+== 手順 2 ：バッテリーの障害
 
 バッテリのリサイクルまたは廃棄に関する地域の規制に従って、バッテリを廃棄する必要があります。バッテリを適切に廃棄できない場合は、キットに付属する RMA 指示書に従って、バッテリをネットアップに返却する必要があります。
 
@@ -66,6 +66,6 @@ https://library.netapp.com/ecm/ecm_download_file/ECMP12475945[]
 
 
 
-== 障害のあるパーツをネットアップに返却します
+== 手順 3 ：障害が発生したパーツをネットアップに返却する
 
 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。

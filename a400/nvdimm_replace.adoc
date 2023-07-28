@@ -1,7 +1,7 @@
 ---
 permalink: a400/nvdimm-replace.html 
 sidebar: sidebar 
-keywords: aff a400, aff, a400, replace, nvdimm, controller, module, system, register, flash, lifetime, healthy, system, panic, shut, down, impair, run, diagnostic, two-node, metrocluster, complete, replacement, process, replace an nvdimm, shut down the impaired controller, remove the controller module, replace the nvdimm, install the controller module, run diagnostics, restore the controller module to operation after running diagnostics, switch back aggregates in a two-node metrocluster configuration, complete the replacement process 
+keywords: aff a400, aff, a400, replace, nvdimm, controller, module, system, register, flash, lifetime, healthy, system, panic, shut, down, impair, two-node, metrocluster, complete, replacement, process, replace an nvdimm, shut down the impaired controller, remove the controller module, replace the nvdimm, install the controller module, restore the controller module to operation, switch back aggregates in a two-node metrocluster configuration, complete the replacement process 
 summary: フラッシュの有効期間がほぼ終了していること、または識別された NVDIMM が全般的に正常でないことがシステムで登録された場合は、コントローラモジュールの NVDIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
 ---
 = NVDIMM を交換します - AFF A400
@@ -11,6 +11,7 @@ summary: フラッシュの有効期間がほぼ終了していること、ま�
 
 
 [role="lead"]
+400_nvdimm_replace.adoc
 フラッシュの有効期間がほぼ終了していること、または識別された NVDIMM が全般的に正常でないことがシステムで登録された場合は、コントローラモジュールの NVDIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。
 
 システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。
@@ -260,7 +261,7 @@ NOTE: NVDIMM がスロットにまっすぐ差し込まれていることを目�
 
 == 手順 4 ：コントローラモジュールを取り付ける
 
-コントローラモジュールのコンポーネントを交換したら、コントローラモジュールをシャーシに再度取り付け、メンテナンスモードでブートする必要があります。
+コントローラモジュールのコンポーネントを交換したら、コントローラモジュールをシャーシに再度取り付けてブートする必要があります。
 
 次のアニメーション、図、または記載された手順を使用して、コントローラモジュールをシャーシに設置できます。
 
@@ -298,45 +299,15 @@ NOTE: コネクタの破損を防ぐため、コントローラモジュール�
 NOTE: システムがブートメニューで停止した場合は、 LOADER でブートするオプションを選択します。
 
 .. LOADER プロンプトで「 bye 」と入力して、 PCIe カードおよびその他のコンポーネントを再初期化します。
-.. Ctrl+C キーを押して、ブート・プロセスを中断し、 LOADER プロンプトでブートします。
-+
-システムがブートメニューで停止した場合は、 LOADER でブートするオプションを選択します。
 
 
 
 
 
 
+== 手順 5 ：コントローラモジュールを動作状態に戻す
 
-== 手順 5 ：診断を実行します
-
-システムの NVDIMM を交換したら、そのコンポーネントの診断テストを実行する必要があります。
-
-診断を開始するには、システムに LOADER プロンプトが表示されている必要があります。
-
-診断手順のコマンドは、すべてコンポーネントを交換するコントローラから実行します。
-
-. 保守対象のコントローラが LOADER プロンプトに表示されていない場合は、コントローラをリブートします。「 system node halt -node node_name 」
-+
-コマンドを問題したら、システムが LOADER プロンプトで停止するまで待ちます。
-
-. LOADER プロンプトで、システムレベルの診断用に特別に設計されたドライバ「 boot_diags 」にアクセスします
-. 表示されたメニューから「 * Scan System * （システムのスキャン）」を選択して、診断テストの実行を有効にします。
-. 表示されたメニューから * Test Memory * を選択します。
-. 表示されたメニューから * NVDIMM Test * を選択します。
-. 前述の手順の結果に応じて、次に進みます。
-+
-** テストに失敗した場合は、エラーを修正してからテストを再実行します。
-** テストでエラーが報告されなかった場合は、メニューから Reboot を選択してシステムをリブートします。
-
-
-
-
-
-
-== 手順 6 ：診断の実行後にコントローラモジュールを稼働状態に戻す
-
-診断が完了したら、システムにケーブルを再接続してコントローラモジュールをギブバックし、自動ギブバックを再度有効にする必要があります。
+システムにケーブルを再接続し、コントローラモジュールをギブバックして、自動ギブバックを再度有効にする必要があります。
 
 . 必要に応じてシステムにケーブルを再接続します。
 +
@@ -348,7 +319,7 @@ NOTE: システムがブートメニューで停止した場合は、 LOADER で
 
 
 
-== 手順 7 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする
+== 手順 6 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする
 
 2 ノード MetroCluster 構成で FRU の交換が完了したら、 MetroCluster スイッチバック処理を実行できます。これにより構成が通常の動作状態に戻ります。また、障害が発生していたサイトの同期元 Storage Virtual Machine （ SVM ）がアクティブになり、ローカルディスクプールからデータを提供します。
 
@@ -406,6 +377,6 @@ Remote: cluster_A configured      		normal
 
 
 
-== 手順 8 ：障害が発生したパーツをネットアップに返却する
+== 手順 7 ：障害が発生したパーツをネットアップに返却する
 
 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。

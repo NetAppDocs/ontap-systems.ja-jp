@@ -94,10 +94,8 @@ image::../media/drw_a250_pcm_remove_install.png[DRW A250 PCM 取り外し取り�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
- a| 
-レバー
-
+* 1 *
+| レバー 
 
 
  a| 
@@ -133,7 +131,6 @@ image:../media/legend_icon_02.png[""]
 
 == 手順 3 ：ファンを交換します
 
-[role="lead"]
 ファンを交換するには、障害が発生したファンモジュールを取り外し、新しいファンモジュールと交換します。
 
 次のビデオまたは表に示す手順を使用して、ファンを交換します。

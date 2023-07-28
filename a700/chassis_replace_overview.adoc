@@ -1,0 +1,18 @@
+---
+permalink: a700/chassis-replace-overview.html 
+sidebar: sidebar 
+keywords: aff a700, fas9000, chassis replacement 
+summary: 障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
+---
+= シャーシの交換の概要- AFF A700
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。
+
+* この手順は、システムでサポートされるすべてのバージョンの ONTAP で使用できます。
+* この手順はシステムの停止を伴います。2 ノードクラスタではサービスが完全に停止し、マルチノードクラスタでは部分的に停止します。
+

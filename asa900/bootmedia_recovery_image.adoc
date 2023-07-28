@@ -1,0 +1,125 @@
+---
+permalink: asa900/bootmedia_recovery_image.html 
+sidebar: sidebar 
+keywords:  
+summary: 障害のあるコントローラをリカバリイメージからブートするための手順 は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。 
+---
+= リカバリイメージのブート- ASA A900
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
+
+. LOADER プロンプトから、 USB フラッシュドライブ「 boot_recovery 」からリカバリ・イメージをブートします
++
+イメージが USB フラッシュドライブからダウンロードされます。
+
+. プロンプトが表示されたら、イメージの名前を入力するか、画面に表示されたデフォルトのイメージをそのまま使用します。
+. var ファイルシステムを復元します。
++
+[cols="1,2"]
+|===
+| システム構成 | 作業 
+
+
+ a| 
+ネットワーク接続
+ a| 
+.. バックアップ構成を復元するかどうかを確認するメッセージが表示されたら 'y' を押します
+.. /etc/ssh/ssh_host_ecDSA_KEY を上書きするように求められたら 'y' を押します
+.. 復元バックアップが成功したかどうかを確認するプロンプトが表示されたら 'y' を押します
+.. 復元された構成のコピーのプロンプトが表示されたら 'Y' を押します
+.. 障害のあるコントローラを advanced 権限レベルに設定します。「 set -privilege advanced
+.. バックアップのリストアコマンドを実行します。 'system node restore-backup -node local-target-address impaired_node_name
+.. 障害のあるコントローラを admin レベルに戻します :'set -privilege admin
+.. 復元された構成を使用するかどうかを確認するメッセージが表示されたら 'y' を押します
+.. 障害のあるコントローラを再起動するよう求められたら 'y' を押します
+
+
+
+
+ a| 
+ネットワーク接続がありません
+ a| 
+.. バックアップ構成を復元するよう求められたら 'n' を押します
+.. プロンプトが表示されたら、システムをリブートします。
+.. 表示されたメニューから「 * Update flash from backup config * （ sync flash ）」オプションを選択します。
++
+更新を続行するかどうかを確認するメッセージが表示されたら、「 y 」を押します。
+
+
+
+
+
+ a| 
+ネットワークに接続されておらず、 MetroCluster IP 構成になっています
+ a| 
+.. バックアップ構成を復元するよう求められたら 'n' を押します
+.. プロンプトが表示されたら、システムをリブートします。
+.. iSCSI ストレージ接続が確立されるまで待ちます。
++
+次のメッセージが表示されたら、次の手順に進みます。
+
++
+[listing]
+----
+date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_auxiliary, address: ip-address).
+date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_partner, address: ip-address).
+date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_auxiliary, address: ip-address).
+date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_partner, address: ip-address).
+----
+.. 表示されたメニューから「 * Update flash from backup config * （ sync flash ）」オプションを選択します。
++
+更新を続行するかどうかを確認するメッセージが表示されたら、「 y 」を押します。
+
+
+
+|===
+. 環境変数が正しく設定されていることを確認します。
++
+.. 障害のあるコントローラに LOADER プロンプトを表示します。
+.. printenv コマンドを使用して ' 環境変数の設定を確認します
+.. 環境変数が正しく設定されていない場合は、 setenvenvironment_variable_name changed_value コマンドを使用して変更します。
+.. saveenv コマンドを使用して、変更内容を保存します。
+
+
+. 次の手順は、システム構成によって異なります。
++
+** システムにオンボードキーマネージャ、 NSE 、または NVE が設定されている場合は、に進みます xref:bootmedia_encryption_restore.adoc[OKM 、 NSE 、 NVE のブートメディア交換後の手順]
+** システムにオンボードキーマネージャ、 NSE 、または NVE が設定されていない場合は、このセクションの手順を実行します。
+
+
+. LOADER プロンプトで、 boot_ontap コマンドを入力します。
++
+[cols="1,2"]
+|===
+| 表示される内容 | 作業 
+
+
+ a| 
+ログインプロンプト
+ a| 
+次の手順に進みます。
+
+
+
+ a| 
+ギブバックを待っています
+ a| 
+.. パートナーコントローラにログインします。
+.. storage failover show コマンドを使用して ' ターゲットがギブバック可能な状態であることを確認します
+
+
+|===
+. パートナーコントローラにコンソールケーブルを接続します。
+. storage failover giveback -fromnode local コマンドを使用してコントローラをギブバックします。
+. クラスタプロンプトで、 net int-is-home false コマンドを使用して論理インターフェイスを確認します。
++
+「 false 」と表示されるインターフェイスがある場合は、 net int revert コマンドを使用して、それらのインターフェイスをホームポートに戻します。
+
+. 構成に応じた手順 を使用して、コンソールケーブルを修復されたシャットダウンに移動するか、障害のあるコントローラをテイクオーバーします。を実行し、 version -v コマンドを実行して ONTAP のバージョンを確認します。
+. storage failover modify -node local-auto-giveback true コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
+

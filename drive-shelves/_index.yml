@@ -1,0 +1,62 @@
+---
+indexpage:
+  lead: ''
+  tiles:
+  - title: NS224シェルフの設置
+    links:
+    - title: シェルフをホットアドします
+      url: "../ns224/hot-add-shelf.html"
+    - title: シェルフ ID を変更します
+      url: "../ns224/change-shelf-id.html"
+    - title: シェルフをスイッチ接続型ストレージとしてケーブル接続
+      url: "../ns224/cable-as-switch-attached.html"
+  - title: SASシェルフの設置
+    links:
+    - title: 新しいストレージシステムにシェルフを設置する
+      url: "../sas3/install-new-system.html"
+    - title: シェルフをホットアドします
+      url: "../sas3/install-hot-add-shelf.html"
+    - title: シェルフ ID を変更します
+      url: "../sas3/install-change-shelf-id.html"
+    - title: IOM6シェルフのスタックへのシェルフのホットアド（混在スタック）
+      url: "../sas3/iom12-hot-add-mix.html"
+    - title: SAS ケーブル接続ルール、ワークシート、および例
+      url: "../sas3/overview-cabling-rules-examples.html"
+  - title: NS224シェルフのメンテナンス
+    links:
+    - title: ブートメディア
+      url: "../ns224/service-replace-boot-media.html"
+    - title: DIMM
+      url: "../ns224/service-replace-dimm.html"
+    - title: ドライブ
+      url: "../ns224/service-replace-drive.html"
+    - title: ドライブシェルフのLED
+      url: "../ns224/service-monitor-leds.html"
+    - title: ファン
+      url: "../ns224/service-replace-fan.html"
+    - title: シェルフをホットリムーブします
+      url: "../ns224/hot-remove-shelf.html"
+    - title: nsm モジュール
+      url: "../ns224/service-replace-nsm100.html"
+    - title: 電源装置
+      url: "../ns224/service-replace-power-supply.html"
+    - title: RTC バッテリ
+      url: "../ns224/service-replace-rtc-battery.html"
+  - title: SASシェルフのメンテナンス
+    links:
+    - title: DS224C または DS212C シェルフ内のディスクドライブ
+      url: "../sas3/service-hot-swap-drive-ds224c-ds212c.html"
+    - title: DS460C シェルフ内のディスクドライブ
+      url: "../sas3/service-hot-swap-drive-ds460c.html"
+    - title: DS460C シェルフ内のドライブドロワー
+      url: "../sas3/service-replace-drawer-ds460c.html"
+    - title: DS460Cシエルフノフアン
+      url: "../sas3/service-replace-fan-ds460c.html"
+    - title: シェルフをホットリムーブする
+      url: "../sas3/hot-remove-shelf.html"
+    - title: IOM12 / IOM12Bモジュールです
+      url: "../sas3/service-hot-swap-iom.html"
+    - title: 電源装置
+      url: "../sas3/service-hot-swap-power-supply.html"
+    - title: シェルフ LED のステータス状態
+      url: "../sas3/service-monitor-leds.html"

@@ -1,7 +1,6 @@
 ---
 section: c400
 title: AFF C400システム
-url: "/c400/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: AFF C400のインストールとセットアップ
@@ -17,6 +16,8 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF C400メンテナンス
   entries:
+  - title: 概要
+    url: "/c400/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF C400ブートメディア
     entries:

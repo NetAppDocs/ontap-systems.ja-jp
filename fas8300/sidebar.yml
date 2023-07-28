@@ -1,7 +1,6 @@
 ---
 section: fas8300
 title: FAS8300 および FAS8700 システム
-url: "/fas8300/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: AFF FAS8300 および FAS8700 の設置とセットアップ
@@ -17,6 +16,8 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF FAS8300 と FAS8700 は引き続き維持されます
   entries:
+  - title: 概要
+    url: "/fas8300/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF FAS8300 および FAS8700 ブートメディア
     entries:

@@ -2,7 +2,7 @@
 permalink: fas2800/chassis-replace-complete-system-restore-rma.html 
 sidebar: sidebar 
 keywords: fas2800, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
-summary: シャーシの HA 状態を確認し、システムレベルの診断を実行し、アグリゲートをスイッチバックして、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。 
+summary: キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、アグリゲートをスイッチバックし、障害が発生したパーツをNetAppに返却する必要があります。 
 ---
 = 構成をリストアして確認- FAS2800
 :allow-uri-read: 

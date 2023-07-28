@@ -1,0 +1,329 @@
+= 手順 1 ：システムにケーブルを再接続します
+:allow-uri-read: 
+
+
+交換用手順を完了してシステムを完全に動作状態に戻すには、ストレージのケーブル接続をやり直し、ディスクの再割り当てを確認し、必要に応じてネットアップストレージ暗号化構成をリストアし、新しいコントローラのライセンスをインストールする必要があります。システムを完全に動作状態にリストアするには、一連の作業を完了しておく必要があります。
+
+
+
+== 手順 1 ：システムにケーブルを再接続します
+
+コントローラモジュールのストレージとネットワークをケーブル接続し直します。
+
+.手順
+. システムにケーブルを再接続します。
+. を使用して、ケーブル接続が正しいことを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]。
++
+.. Config Advisor をダウンロードしてインストールします。
+.. ターゲットシステムの情報を入力し、データ収集をクリックします。
+.. Cabling タブをクリックし ' 出力を確認しますすべてのディスクシェルフが表示されていること、およびすべてのディスクが出力に表示されていることを確認し、ケーブル接続に関する問題が見つかった場合は修正します。
+.. 該当するタブをクリックして他のケーブル接続を確認し、 Config Advisor からの出力を確認します。
+
+
+
+
+
+
+== 手順 2 ：ディスクを再割り当てする
+
+HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。スタンドアロンシステムでは、 ID をディスクに手動で再割り当てする必要があります。
+
+構成に適した手順を使用する必要があります。
+
+[cols="1,2"]
+|===
+| コントローラの冗長性 | 使用する手順 
+
+
+ a| 
+HA ペア
+ a| 
+link:controller_replace_complete_system_restoration.md#["HA システムでのシステム ID の変更の確認"]
+
+
+
+ a| 
+スタンドアロン
+ a| 
+link:controller_replace_complete_system_restoration.md#["ONTAP のスタンドアロンシステムでの手動によるシステム ID の再割り当て"]
+
+
+
+ a| 
+2 ノード MetroCluster 構成
+ a| 
+link:controller_replace_complete_system_restoration.md#["2 ノード MetroCluster 構成での手動によるシステム ID の再割り当て"]
+
+|===
+
+
+=== オプション 1 ： HA システムでシステム ID の変更を確認する
+
+_replacement _controller をブートしたときにシステム ID の変更を確認し、その変更が実装されたことを確認する必要があります。
+
+この手順は、 HA ペアの ONTAP を実行するシステムにのみ適用されます。
+
+. _replacement _controller が Maintenance モードになっている場合 (`*>` プロンプトが表示されている場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます
+. システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は 'boot_ontap `` を」と入力して ' コントローラをブートします
+. _replacement _controller コンソールに Waiting for giveback... というメッセージが表示されるまで待ち、正常なコントローラから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show
++
+コマンド出力には、障害のあるコントローラでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。
+
++
+[listing]
+----
+node1> `storage failover show`
+                                    Takeover
+Node              Partner           Possible     State Description
+------------      ------------      --------     -------------------------------------
+node1             node2             false        System ID changed on partner (Old:
+                                                  151759755, New: 151759706), In takeover
+node2             node1             -            Waiting for giveback (HA mailboxes)
+----
+. 正常なコントローラから、コアダンプがすべて保存されたことを確認します。
++
+.. advanced 権限レベルに切り替えます。「 set -privilege advanced 」
++
+advanced モードで続行するかどうかを確認するプロンプトが表示されたら、「 y 」と入力します。advanced モードのプロンプトが表示されます（ * > ）。
+
+.. コアダンプをすべて保存します。「 system node run -node _local-node-name_partner savecore 」
+.. savecore コマンドが完了するのを待ってからギブバックを実行します
++
+次のコマンドを入力すると、 savecore コマンドの進行状況を監視できます。 'system node run -node _local-node-name_partner savecore -s
+
+.. admin 権限レベルに戻ります。「 set -privilege admin 」
+
+
+. ストレージシステムでストレージまたはボリュームの暗号化が設定されている場合は、オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順に従ってストレージまたはボリューム暗号化機能をリストアする必要があります。
++
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"^]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"^]
+
+
+. コントローラをギブバックします。
++
+.. 正常なコントローラから、交換したコントローラのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name _`
++
+_replacement _controller はストレージをテイクバックしてブートを完了します。
+
++
+システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示された場合は 'y' と入力する必要があります
+
++
+
+NOTE: ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。
+
++
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対するハイアベイラビリティ構成のコンテンツを検索してください"]
+
+.. ギブバックが完了したら、 HA ペアが正常で、テイクオーバーが可能であることを確認します。「 storage failover show
++
+「 storage failover show 」コマンドの出力に、パートナーメッセージで変更されたシステム ID は含まれません。
+
+
+
+. ディスクが正しく割り当てられたことを確認します。「 storage disk show -ownership
++
+replacement _controller に属するディスクには、新しいシステム ID が表示されます。次の例では、 node1 で所有されているディスクに、新しいシステム ID 1873775277 が表示されています。
+
++
+[listing]
+----
+node1> `storage disk show -ownership`
+
+Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
+----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
+1.0.0  aggr0_1  node1 node1  -        1873775277 1873775277  -       1873775277 Pool0
+1.0.1  aggr0_1  node1 node1           1873775277 1873775277  -       1873775277 Pool0
+.
+.
+.
+----
+
+
+
+
+=== オプション 2 ： ONTAP でスタンドアロンシステムにシステム ID を手動で再割り当てする
+
+スタンドアロンシステムでは、システムを通常の動作状態に戻す前に、新しいコントローラのシステム ID にディスクを手動で再割り当てする必要があります。
+
+.このタスクについて
+
+NOTE: この手順は、スタンドアロン構成のシステムにのみ適用されます。
+
+.手順
+. ディスクのメンテナンスモードでブートしていない場合は、 _replacement _node をリブートし、 Ctrl+C キーを押してブートプロセスを中断して、表示されたメニューからメンテナンスモードでブートするオプションを選択します。
+. システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示されたら 'Y' を入力する必要があります
+. システム ID を表示します
+. ディスク所有者の列に表示される、古いシステム ID をメモしてください。
++
+次の例は、古いシステム ID 118073209 を示しています。
+
++
+[listing]
+----
+*> disk show -a
+Local System ID: 118065481
+
+  DISK      OWNER                  POOL   SERIAL NUMBER  HOME
+--------    -------------          -----  -------------  -------------
+disk_name    system-1  (118073209)  Pool0  J8XJE9LC       system-1  (118073209)
+disk_name    system-1  (118073209)  Pool0  J8Y478RC       system-1  (118073209)
+.
+.
+.
+
+----
+. disk show コマンドから取得したシステム ID 情報を使用して、ディスク所有権を再割り当てします。「 disk reassign -s old system ID disk reassign -s 118073209
+. ディスクが正しく割り当てられていることを確認します。「 Disk show -a 」
++
+交換用ノードに属するディスクには、新しいシステム ID が表示されます。次の例は、 system-1 が所有するディスク、新しいシステム ID 118065481 を示しています。
+
++
+[listing]
+----
+*> disk show -a
+Local System ID: 118065481
+
+  DISK      OWNER                  POOL   SERIAL NUMBER  HOME
+--------    -------------          -----  -------------  -------------
+disk_name    system-1  (118065481)  Pool0  J8Y0TDZC       system-1  (118065481)
+disk_name    system-1  (118065481)  Pool0  J8Y0TDZC       system-1  (118065481)
+.
+.
+.
+
+----
+. ストレージシステムでストレージまたはボリュームの暗号化が設定されている場合は、オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順に従ってストレージまたはボリューム暗号化機能をリストアする必要があります。
++
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"^]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"^]
+
+
+. ノード「 boot_ontap 」をブートします
+
+
+
+
+=== オプション 3 ： 2 ノード MetroCluster 構成のシステムにシステム ID を手動で再割り当てする
+
+ONTAP を実行している 2 ノード MetroCluster 構成では、システムを通常の動作状態に戻す前に、新しいコントローラのシステム ID にディスクを手動で再割り当てする必要があります。
+
+.このタスクについて
+この手順は、 ONTAP を実行している 2 ノード MetroCluster 構成のシステムにのみ適用されます。
+
+この手順のコマンドは、必ず正しいノードで問題に接続してください。
+
+* impaired_node は、保守を実行しているノードです。
+* replacement _node は、この手順で障害ノードと交換した新しいノードです。
+* healthy_node は、障害ノードの DR パートナーです。
+
+
+.手順
+. まだ実行していない場合は、 _replacement _node を再起動し、 Ctrl+C キーを押してブートプロセスを中断して、表示されたメニューから Maintenance mode を起動するオプションを選択します。
++
+システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示されたら 'Y' を入力する必要があります
+
+. 正常なノードから古いシステム ID を表示します MetroCluster node show -fields node-systemid'dr-partner-systemid
++
+この例では、 Node_B_1 が古いノードであり、古いシステム ID は 118073209 です。
+
++
+[listing]
+----
+dr-group-id cluster         node                 node-systemid dr-partner-systemid
+ ----------- --------------------- -------------------- ------------- -------------------
+ 1           Cluster_A             Node_A_1             536872914     118073209
+ 1           Cluster_B             Node_B_1             118073209     536872914
+ 2 entries were displayed.
+----
+. 障害ノードの保守モードプロンプトで新しいシステム ID を表示します。「 Disk show
++
+この例では、新しいシステム ID は 118065481 です。
+
++
+[listing]
+----
+Local System ID: 118065481
+    ...
+    ...
+----
+. disk show コマンドで取得したシステム ID 情報を使用して、ディスク所有権（ FAS システムの場合）または LUN 所有権（ FlexArray システムの場合）を再割り当てします。「ディスク再割り当て -s old system ID 」
++
+上記の例の場合、コマンドは「 Disk reassign -s 118073209 」です
+
++
+続行するかどうかを確認するメッセージが表示されたら、「 Y 」と入力します。
+
+. ディスク（または FlexArray LUN ）が正しく割り当てられていることを確認します。「 Disk show -a 」
++
+replacement _node に属するディスクに、 _replacement _node に割り当てられた新しいシステム ID が表示されていることを確認します。次の例では、 system-1 が所有するディスクに、新しいシステム ID 118065481 が表示されています。
+
++
+[listing]
+----
+*> disk show -a
+Local System ID: 118065481
+
+  DISK     OWNER                 POOL   SERIAL NUMBER  HOME
+-------    -------------         -----  -------------  -------------
+disk_name   system-1  (118065481) Pool0  J8Y0TDZC       system-1  (118065481)
+disk_name   system-1  (118065481) Pool0  J8Y09DXC       system-1  (118065481)
+.
+.
+.
+----
+. 正常なノードから、コアダンプがすべて保存されたことを確認します。
++
+.. advanced 権限レベルに切り替えます。「 set -privilege advanced 」
++
+advanced モードで続行するかどうかを確認するプロンプトが表示されたら、「 y 」と入力します。advanced モードのプロンプトが表示されます（ * > ）。
+
+.. コアダンプが保存されたことを確認します。「 system node run -node _local-node-name_partner savecore 」
++
+コマンド出力に savecore が進行中であることが示された場合は、 savecore が完了してからギブバックを実行します。「 system node run -node _local-node-name_partner savecore -s コマンド」を使用して、 savecore の進行状況を監視できます。 </info>
+
+.. admin 権限レベルに戻ります。「 set -privilege admin 」
+
+
+. _replacement _node が Maintenance モード（ *> プロンプトが表示されている）の場合、 Maintenance モードを終了して LOADER プロンプト「 halt 」に進みます
+. _replacement node: 'boot_ontap ' をブートします
+. _replacement _node が完全にブートしたら ' スイッチバックを実行します MetroCluster switchback
+. MetroCluster 構成を確認します MetroCluster node show -fields configurion-state
++
+[listing]
+----
+node1_siteA::> metrocluster node show -fields configuration-state
+
+dr-group-id            cluster node           configuration-state
+-----------            ---------------------- -------------- -------------------
+1 node1_siteA          node1mcc-001           configured
+1 node1_siteA          node1mcc-002           configured
+1 node1_siteB          node1mcc-003           configured
+1 node1_siteB          node1mcc-004           configured
+
+4 entries were displayed.
+----
+. Data ONTAP で MetroCluster 構成の動作を確認します。
++
+.. 両方のクラスタにヘルスアラートがないかどうかを確認します。 'system health alert show'
+.. MetroCluster が構成されており、通常モードであることを確認します。「 MetroCluster show 」
+.. MetroCluster チェック「 MetroCluster check run 」を実行します
+.. MetroCluster チェックの結果を表示します。「 MetroCluster check show 」
+.. Config Advisor を実行します。ネットアップサポートサイトの Config Advisor ページに移動します http://support.netapp.com/NOW/download/tools/config_advisor/["support.netapp.com/NOW/download/tools/config_advisor/"]。
++
+Config Advisor の実行後、ツールの出力を確認し、推奨される方法で検出された問題に対処します。
+
+
+
+. スイッチオーバー処理をシミュレートします。
++
+.. いずれかのノードのプロンプトで、 advanced 権限レベルに切り替えます。「 set -privilege advanced 」
++
+advanced モードで続けるかどうかを尋ねられたら、「 y 」と入力して応答する必要があります。 advanced モードのプロンプトが表示されます（ * > ）。
+
+.. simulate パラメータを指定して、スイッチバック処理を実行します。 MetroCluster switchover -simulate
+.. admin 権限レベルに戻ります。「 set -privilege admin 」
+
+
+

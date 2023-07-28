@@ -1,7 +1,6 @@
 ---
 section: a800
 title: AFF A800 システム
-url: "/a800/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: AFF A800 のインストールとセットアップ
@@ -17,6 +16,8 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF A800 は維持されている
   entries:
+  - title: 概要
+    url: "/a800/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF A800 ブートメディア
     entries:
@@ -41,9 +42,9 @@ entries:
       url: "/a800/chassis-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a800/chassis-replace-shutdown.html"
-    - title: ハードウェアを交換します
+    - title: シャーシの交換
       url: "/a800/chassis-replace-move-hardware.html"
-    - title: 交換後の処理
+    - title: シャーシ交換後の処理
       url: "/a800/chassis-replace-complete-system-restore-rma.html"
   - title: コントローラ
     pdf-filename: AFF A800 コントローラモジュール
@@ -52,13 +53,13 @@ entries:
       url: "/a800/controller-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a800/controller-replace-shutdown.html"
-    - title: コントローラモジュールを交換します
+    - title: コントローラを交換してください
       url: "/a800/controller-replace-move-hardware.html"
     - title: システム設定を復元します
       url: "/a800/controller-replace-system-config-restore-and-verify.html"
     - title: システムにケーブルを再接続
       url: "/a800/controller-replace-recable-reassign-disks.html"
-    - title: 交換後の処理
+    - title: コントローラ交換後の処理
       url: "/a800/controller-replace-restore-system-rma.html"
   - title: DIMM
     url: "/a800/dimm-replace.html"

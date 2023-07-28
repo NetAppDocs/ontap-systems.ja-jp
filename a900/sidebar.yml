@@ -1,7 +1,6 @@
 ---
 section: a900
 title: AFF A900 システム
-url: "/a900/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: AFF A900のインストールとセットアップ
@@ -17,24 +16,24 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF A900のメンテナンス
   entries:
-  - title: I/O モジュールを追加します
-    url: "/a900/add_io_module.html"
+  - title: 概要
+    url: "/a900/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF A900ブートメディア
     entries:
     - title: 概要
       url: "/a900/bootmedia_replace_overview.html"
-    - title: オンボードの暗号化キーがないかどうかをシャットダウン前にチェックします
+    - title: オンボード暗号化キーを確認
       url: "/a900/bootmedia_encryption_preshutdown_checks.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a900/bootmedia_impaired_controller_shutdown.html"
     - title: ブートイメージを交換します
       url: "/a900/bootmedia_replace.html"
-    - title: リカバリイメージをブートします
+    - title: ブートイメージを起動します
       url: "/a900/bootmedia_recovery_image.html"
-    - title: OKM 、 NSE 、 NVE のブートメディア交換後の手順
+    - title: OKM 、 NSE 、 NVE をリストアします
       url: "/a900/bootmedia_encryption_restore.html"
-    - title: 障害のあるパーツをネットアップに返却します
+    - title: 障害のある部品をネットアップに返却します
       url: "/a900/bootmedia_complete_rma.html"
   - title: シャーシ
     pdf-filename: AFF A900シャーシ
@@ -43,38 +42,42 @@ entries:
       url: "/a900/chassis_replace_overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a900/chassis_replace_shutdown.html"
-    - title: ハードウェアを交換します
+    - title: シャーシの交換
       url: "/a900/chassis_replace_move_hardware.html"
-    - title: 構成をリストアおよび検証する
+    - title: 設定のリストアと検証
       url: "/a900/chassis_replace_complete_system_restore_rma.html"
-  - title: コントローラモジュール
+  - title: コントローラ
     pdf-filename: AFF A900コントローラモジュール
     entries:
     - title: 概要
       url: "/a900/controller_replace_overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a900/controller_replace_shutdown.html"
-    - title: コントローラモジュールハードウェアを交換します
+    - title: コントローラを交換してください
       url: "/a900/controller_replace.html"
-    - title: システム構成をリストアおよび検証します
+    - title: システム構成のリストアと検証
       url: "/a900/controller_replace_system_config_restore_and_verify.html"
-    - title: システムにケーブルを再接続します
+    - title: システムにケーブルを再接続
       url: "/a900/controller_replace_recable_reassign_disks.html"
     - title: システムのリストアを完了
       url: "/a900/controller_replace_complete_system_restoration_rma.html"
   - title: DIMM
     url: "/a900/dimm_replace.html"
-  - title: デステージコントロールパワーモジュール
+  - title: DCPM を実行します
     url: "/a900/dcpm_NVRAM11_battery_replace.html"
   - title: ファン
     url: "/a900/fan_swap_out.html"
   - title: I/O モジュール
-    url: "/a900/pci_cards_and_risers_replace.html"
-  - title: LED USB モジュール
+    entries:
+    - title: I/Oモジュールの交換
+      url: "/a900/pci_cards_and_risers_replace.html"
+    - title: I/O モジュールを追加します
+      url: "/a900/add_io_module.html"
+  - title: LED USB
     url: "/a900/led_module_replace.html"
-  - title: NVRAM モジュール / NVRAM DIMM
+  - title: NVRAM
     url: "/a900/nvram_module_or_nvram_dimm_replacement.html"
   - title: 電源装置
     url: "/a900/power_supply_swap_out.html"
-  - title: RTC バッテリ
+  - title: リアルタイムクロックバッテリ
     url: "/a900/rtc_battery_replace.html"

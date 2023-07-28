@@ -1,7 +1,6 @@
 ---
 section: fas2600
 title: FAS2600 システム
-url: "/fas2600/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: FAS2600 の設置とセットアップ
@@ -17,6 +16,8 @@ entries:
 - title: メンテナンス
   pdf-filename: FAS2600 のメンテナンス
   entries:
+  - title: 概要
+    url: "/fas2600/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: FAS2600 ブートメディア
     entries:

@@ -1,7 +1,7 @@
 ---
 permalink: a700s/dimm-replace.html 
 sidebar: sidebar 
-keywords: aff a700s, aff, a700s, replace, fimm, controller, module, system, register, increase, increasing, number, correctable, error, correction, code, ecc, failure, system, panic, dimm, shut, down, impair, diagnostic, complete, replacement, process, replace a dimmm, shut down the impaired controller, remove the controller module, replace a dimm, reinstall the controller module and booting the system, run diagnostics, complete the replacement process 
+keywords: aff a700s, aff, a700s, replace, fimm, controller, module, system, register, increase, increasing, number, correctable, error, correction, code, ecc, failure, system, panic, dimm, shut, down, impair, complete, replacement, process, replace a dimmm, shut down the impaired controller, remove the controller module, replace a dimm, reinstall the controller module and booting the system, complete the replacement process 
 summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
 ---
 = DIMM-AFF A700s を交換します
@@ -214,7 +214,7 @@ NVRAM ライザー「ライザー 1 」を取り外した場合は、 NVRAM バ�
 
 
 
-== 手順 4 ：コントローラモジュールを再度取り付けてシステムをブートします
+== 手順4：コントローラモジュールを再度取り付けてシステムをブート
 
 コントローラモジュールの FRU を交換したら、コントローラモジュールを再度取り付けてリブートする必要があります。
 
@@ -243,43 +243,15 @@ NOTE: 指示があるまでコントローラモジュールをシャーシに�
 NOTE: コネクタの破損を防ぐため、コントローラモジュールをスライドしてシャーシに挿入する際に力を入れすぎないでください。
 
 +
-コントローラモジュールは、シャーシに完全に装着されるとすぐにブートを開始します。ブートプロセスを中断できるように準備しておきます。
+コントローラモジュールは、シャーシに完全に装着されるとすぐにブートを開始します。
 
 .. ロックラッチを上に回転させてロックピンが外れるように傾け、ロックされるまで下げます。
-.. 「 Press Ctrl-C for Boot Menu 」 ( ブートメニューに Ctrl キーを押して C キーを押してください ) と表示されたら、 Ctrl+C キーを押して起動プロセスを中断します。
-.. 表示されたメニューからメンテナンスモードでブートするオプションを選択します。
 
 
 
 
 
 
-== 手順 5 ：診断を実行します
-
-システムのコンポーネントを交換したら、そのコンポーネントに対して診断テストを実行する必要があります。
-
-診断を開始するには、システムに LOADER プロンプトが表示されている必要があります。
-
-診断手順のコマンドは、すべてコンポーネントを交換するコントローラから実行します。
-
-.手順
-. 保守対象のコントローラが LOADER プロンプトに表示されていない場合は、コントローラをリブートします。「 system node halt -node node_name 」
-+
-コマンドを問題したら、システムが LOADER プロンプトで停止するまで待ちます。
-
-. LOADER プロンプトで、システムレベルの診断用に特別に設計されたドライバ「 boot_diags 」にアクセスします
-. 表示されたメニューから「 * Scan System * （システムのスキャン）」を選択して、診断テストの実行を有効にします。
-. 表示されたメニューから * Test Memory * を選択します。
-. 前述の手順の結果に応じて、次に進みます。
-+
-** テストに失敗した場合は、エラーを修正してからテストを再実行します。
-** テストでエラーが報告されなかった場合は、メニューから Reboot を選択してシステムをリブートします。
-
-
-
-
-
-
-== 手順6：障害が発生したパーツをネットアップに返却する
+== 手順5：故障した部品をNetAppに返却する
 
 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。

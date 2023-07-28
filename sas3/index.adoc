@@ -1,13 +1,12 @@
 ---
-layout: landing-page 
-sidebar: sidebar 
 permalink: sas3/index.html 
-summary: ストレージシェルフのドキュメントでは、システムの設置、セットアップ、および保守を行うことができます。 
+sidebar: sidebar 
+keywords: SAS shelves 
+summary: SASシェルフ 
 ---
-= IOM12 / IOM12Bモジュールを使用するSASシェルフ
-:hardbreaks:
+= SASシェルフ
 :allow-uri-read: 
-:linkattrs: 
-:imagesdir: ./media/
+:icons: font
+:imagesdir: ../media/
 
 

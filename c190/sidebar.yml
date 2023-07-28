@@ -17,6 +17,8 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF C190 には引き続き付属します
   entries:
+  - title: 概要
+    url: "/c190/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF C190 ブートメディア
     entries:

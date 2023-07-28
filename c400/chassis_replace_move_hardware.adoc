@@ -1,7 +1,7 @@
 ---
 permalink: c400/chassis-replace-move-hardware.html 
 sidebar: sidebar 
-keywords: aff c400, aff, c400, component, system, function, properly, contact, technical, support, replace, chassis, shut, down, controller, replacing, remove, module, fan, equipment, rack, cabinet, ha, state, diagnostic, switch, back, aggregate, two-node, metrocluster, configuration, complete, replacement, process, replace the chassis, shut down the controllers when replacing a chassis, remove the controller modules, move the fans, replace a chassis from within the equipment rack or system cabinet, install the controller modules, verify and set the ha state of the chassis, run diagnostics, switch back aggregates in a two-node metrocluster configuration, complete the replacement process 
+keywords: aff c400, aff, c400, component, system, function, properly, contact, technical, support, replace, chassis, shut, down, controller, replacing, remove, module, fan, equipment, rack, cabinet, ha, state, switch, back, aggregate, two-node, metrocluster, configuration, complete, replacement, process, replace the chassis, shut down the controllers when replacing a chassis, remove the controller modules, move the fans, replace a chassis from within the equipment rack or system cabinet, install the controller modules, verify and set the ha state of the chassis, run, switch back aggregates in a two-node metrocluster configuration, complete the replacement process 
 summary: ファン、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、装置ラックまたはシステムキャビネットの障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
 ---
 = ハードウェアを交換します（AFF C400）
@@ -11,7 +11,7 @@ summary: ファン、ハードドライブ、およびコントローラモジ�
 
 
 [role="lead"]
-ファン、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、装置ラックまたはシステムキャビネットの障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。
+ファン、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、障害のあるシャーシを障害のあるシャーシと同じモデルの新しいシャーシと交換します。
 
 
 
@@ -84,7 +84,7 @@ CAUTION: ファンモジュールは奥行きがないので、シャーシか�
 
 == 手順 4 ：コントローラモジュールを取り付ける
 
-新しいシャーシにコントローラモジュールを取り付けたら、コントローラモジュールをブートして診断テストを実行できる状態にする必要があります。
+新しいシャーシにコントローラモジュールを取り付けたら、ブートする必要があります。
 
 2 台のコントローラモジュールを同じシャーシに搭載する HA ペアでは、シャーシへの設置が完了すると同時にリブートが試行されるため、コントローラモジュールの取り付け順序が特に重要です。
 

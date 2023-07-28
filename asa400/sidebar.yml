@@ -1,0 +1,86 @@
+---
+section: asa400
+title: ASA A400システム
+entries:
+- title: 設置とセットアップ
+  pdf-filename: ASA A400の設置とセットアップ
+  entries:
+  - title: インストールとセットアップを選択します
+    url: "/asa400/install-setup.html"
+  - title: クイックステップ
+    url: "/asa400/install-quick-guide.html"
+  - title: ビデオの手順
+    url: "/asa400/install-videos.html"
+  - title: 詳細な手順
+    url: "/asa400/install-detailed-guide.html"
+- title: メンテナンス
+  pdf-filename: ASA A400のメンテナンス
+  entries:
+  - title: 概要
+    url: "/asa400/maintain-overview.html"
+  - title: ブートメディア
+    pdf-filename: ASA A400ブートメディア
+    entries:
+    - title: 概要
+      url: "/asa400/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/asa400/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa400/bootmedia-impaired-controller-shutdown.html"
+    - title: ブートメディアを交換します
+      url: "/asa400/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/asa400/bootmedia-recovery-image-boot-options.html"
+    - title: MetroCluster の設定をスイッチバックします
+      url: "/asa400/bootmedia-2n-mcc-switchback.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/asa400/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/asa400/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: ASA A400シャーシ
+    entries:
+    - title: 概要
+      url: "/asa400/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa400/chassis-replace-shutdown.html"
+    - title: シャーシの交換
+      url: "/asa400/chassis-replace-move-hardware.html"
+    - title: シャーシ交換後の処理
+      url: "/asa400/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラ
+    pdf-filename: ASA A400コントローラモジュール
+    entries:
+    - title: 概要
+      url: "/asa400/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa400/controller-replace-shutdown.html"
+    - title: コントローラを交換してください
+      url: "/asa400/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/asa400/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続
+      url: "/asa400/controller-replace-recable-reassign-disks.html"
+    - title: システムのリストアを完了
+      url: "/asa400/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    pdf-filename: ASA A400 DIMM
+    url: "/asa400/dimm-replace.html"
+  - title: ファン
+    pdf-filename: ASA A400ファンモジュール
+    url: "/asa400/fan-swap-out.html"
+  - title: NVDIMM バッテリ
+    pdf-filename: ASA A400 NVDIMMバッテリ
+    url: "/asa400/nvdimm-battery-replace.html"
+  - title: NVDIMM
+    pdf-filename: ASA A320 NVDIMM
+    url: "/asa400/nvdimm-replace.html"
+  - title: PCIe カードまたはメザニンカード
+    pdf-filename: ASA A400 PCIe /メザニンカード
+    url: "/asa400/pci-cards-and-risers-replace.html"
+  - title: 電源装置
+    pdf-filename: ASA A400の電源装置
+    url: "/asa400/power-supply-replace.html"
+  - title: リアルタイムクロックバッテリ
+    pdf-filename: ASA A400リアルタイムクロックバッテリ
+    url: "/asa400/rtc-battery-replace.html"

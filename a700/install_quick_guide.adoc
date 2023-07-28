@@ -1,0 +1,20 @@
+---
+permalink: a700/install-quick-guide.html 
+sidebar: sidebar 
+keywords: aff a700, fas9000, install, quick, guide, rack, cable, system, bring, up 
+summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。 
+---
+= クイックステップ- AFF A700
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。
+
+設置およびセットアップ手順 _PDF ポスター：
+
+link:../media/PDF/215-15082_2020-11_en-us_AFFA700_FAS9000_LAT_ISI.pdf["AFF A700 のセットアップガイド"^]
+
+link:../media/PDF/215-15154_2020-12_en-us_FAS9000_ISI.pdf["FAS9000 の設置とセットアップの手順"^]

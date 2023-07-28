@@ -1,0 +1,77 @@
+---
+section: asa250
+title: ASA A250システム
+entries:
+- title: 設置とセットアップ
+  pdf-filename: ASA A250の設置とセットアップ
+  entries:
+  - title: インストールとセットアップを選択します
+    url: "/asa250/install-setup.html"
+  - title: クイックステップ
+    url: "/asa250/install-quick-guide.html"
+  - title: ビデオの手順
+    url: "/asa250/install-videos.html"
+  - title: 詳細な手順
+    url: "/asa250/install-detailed-guide.html"
+- title: メンテナンス
+  pdf-filename: ASA A250のメンテナンス
+  entries:
+  - title: 概要
+    url: "/asa250/maintain-overview.html"
+  - title: ブートメディア
+    pdf-filename: ASA A250ブートメディア
+    entries:
+    - title: 概要
+      url: "/asa250/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/asa250/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa250/bootmedia-shutdown.html"
+    - title: ブートメディアを交換します
+      url: "/asa250/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/asa250/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/asa250/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/asa250/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: ASA A250シャーシ
+    entries:
+    - title: 概要
+      url: "/asa250/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa250/chassis-replace-shutdown.html"
+    - title: シャーシの交換
+      url: "/asa250/chassis-replace-move-hardware.html"
+    - title: シャーシ交換後の処理
+      url: "/asa250/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラ
+    pdf-filename: ASA A250コントローラモジュール
+    entries:
+    - title: 概要
+      url: "/asa250/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa250/controller-replace-shutdown.html"
+    - title: コントローラを交換してください
+      url: "/asa250/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/asa250/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続
+      url: "/asa250/controller-replace-recable-reassign-disks.html"
+    - title: システムのリストアを完了
+      url: "/asa250/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/asa250/dimm-replace.html"
+  - title: ドライブ
+    url: "/asa250/drive-replace.html"
+  - title: ファン
+    url: "/asa250/fan-replace.html"
+  - title: メザニンカード
+    url: "/asa250/mezzanine-replace.html"
+  - title: NVMEM バッテリ
+    url: "/asa250/nvmem-nvram-battery-replace.html"
+  - title: 電源装置
+    url: "/asa250/power-supply-replace.html"
+  - title: リアルタイムクロックバッテリ
+    url: "/asa250/rtc-battery-replace.html"

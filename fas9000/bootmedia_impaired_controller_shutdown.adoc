@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, shut, down, impaired, controller, take, over 
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
-= 障害のあるコントローラ AFF A700 および FAS9000 をシャットダウンします
+= 障害のあるコントローラのシャットダウン- FAS9000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -2,22 +2,22 @@
 permalink: fas2700/install-detailed-guide.html 
 sidebar: sidebar 
 keywords: fas2700, aff a220, detailed, guide, prepare, install, hardware, cable, controllers, node, switchless, cluster, network, configuration, system, setup, discovery 
-summary: このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。 
+summary: このページでは、一般的なNetAppシステムのインストール手順について詳しく説明します。 
 ---
-= 詳細ガイド - AFF A220 および FAS2700
+= 詳細ガイド- FAS2700
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。インストール手順の詳細については、このガイドを参照してください。
+このページでは、一般的なNetAppシステムのインストール手順について詳しく説明します。インストール手順の詳細については、このガイドを参照してください。
 
 
 
 == 手順 1 ：設置の準備
 
-FAS2700 または AFF A220 システムを設置するには、ネットアップサポートサイトでアカウントを作成し、システムを登録し、ライセンスキーを取得する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。
+FAS2700システムを設置するには、NetApp Support Siteでアカウントを作成し、システムを登録し、ライセンスキーを取得する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。
 
 サイト要件および構成済みシステムの追加情報の情報については、 Hardware Universe にアクセスできる必要があります。また、ご使用の ONTAP バージョンのリリースノートにアクセスして、このシステムの詳細を確認しておくことを推奨します。
 

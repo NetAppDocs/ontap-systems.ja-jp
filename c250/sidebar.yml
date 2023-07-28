@@ -1,7 +1,6 @@
 ---
 section: c250
 title: AFF C250システム
-url: "/c250/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: AFF C250のインストールとセットアップ
@@ -17,6 +16,8 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF C250メンテナンス
   entries:
+  - title: 概要
+    url: "/c250/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF C250ブートメディア
     entries:

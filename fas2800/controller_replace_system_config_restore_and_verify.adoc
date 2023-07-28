@@ -1,7 +1,7 @@
 ---
 permalink: fas2800/controller-replace-system-config-restore-and-verify.html 
 sidebar: sidebar 
-keywords: fas2800, restore and verify the system configuration, verify and set the ha state of the controller module, run system-level diagnostics 
+keywords: fas2800, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
 ---
 = システム構成をリストアして確認します（FAS2800）

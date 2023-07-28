@@ -1,7 +1,6 @@
 ---
 section: a200
 title: AFF A200 システム
-url: "/a200/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: AFF A200 の設置とセットアップ
@@ -17,6 +16,8 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF A200 は引き続き使用できます
   entries:
+  - title: ''
+    url: "/a200/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF A200 ブートメディア
     entries:

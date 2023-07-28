@@ -1,0 +1,13 @@
+---
+layout: landing-page 
+sidebar: sidebar 
+permalink: fas/index.html 
+summary: ASA システムのインストール、セットアップ、および保守については、ストレージシステムのマニュアルを参照してください。 
+---
+= FASシステム
+:hardbreaks:
+:allow-uri-read: 
+:linkattrs: 
+:imagesdir: ./media/
+
+

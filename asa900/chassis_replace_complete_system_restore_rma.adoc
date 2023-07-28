@@ -1,0 +1,71 @@
+---
+permalink: asa900/chassis_replace_complete_system_restore_rma.html 
+sidebar: sidebar 
+keywords: ASA a900, verify and set HA state, complete the replacement process 
+summary: キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。 
+---
+= 構成のリストアと検証- ASA A900
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+シャーシの交換を完了するには、特定のタスクを実行する必要があります。
+
+
+
+== 手順 1 ：シャーシの HA 状態を確認して設定します
+
+シャーシの HA 状態を確認し、必要に応じてシステム構成に合わせて更新する必要があります。
+
+. メンテナンスモードでは、いずれかのコントローラモジュールから、ローカルコントローラモジュールとシャーシの HA 状態を表示します。「 ha-config show 」
++
+HA 状態はすべてのコンポーネントで同じになっているはずです。
+
+. 表示されたシャーシのシステム状態がシステム構成と一致しない場合は、次の手順を実行します。
++
+.. シャーシの HA 状態を設定します :'ha-config modify chassis_ha-state _
++
+hA-state には、次のいずれかの値を指定できます。
+
++
+*** 高可用性
+*** 非 HA
+
+
+
+
+. 設定が変更されたことを確認します。「 ha-config show 」
+. システムの残りのケーブルをまだ再接続していない場合は、ケーブルを再接続します。
+
+
+
+
+== 手順2：システムを起動します
+
+. 電源ケーブルをPSUに接続し直します（まだ接続していない場合）。
+. ロッカーのスイッチを*オン*に切り替えてPSUをオンにし、コントローラの電源が完全にオンになるまで待ちます。
+. 電源投入後、シャーシとコントローラの前面と背面に障害LEDがないかどうかを確認します。
+. SSHを使用してノードのSPまたはBMCのIPアドレスに接続します。このアドレスは、ノードのシャットダウンに使用するアドレスと同じです。
+. の説明に従って、追加の健全性チェックを実行します https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["ONTAPでスクリプトを使用してクラスタの健全性チェックを実行する方法"^]
+. AutoSupport を再度オンにします（メンテナンス時間のメッセージが終了します）。
+`system node autosupport invoke -node * -type all -message MAINT=end`
+
+
+[]
+====
+
+NOTE: ベストプラクティスとして、次のことを実行することを推奨します。
+
+* いずれかを解決します https://activeiq.netapp.com/["Active IQ ウェルネスアラートとリスク"^] （Active IQ は電源投入後のAutoSupportの処理に時間がかかります。結果が遅れることが予想されます）
+* を実行します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]
+* を使用してシステムヘルスを確認します https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["ONTAPでスクリプトを使用してクラスタの健全性チェックを実行する方法"^]
+
+
+====
+
+
+== 手順 3 ：障害が発生したパーツをネットアップに返却する
+
+障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。

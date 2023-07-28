@@ -1,0 +1,30 @@
+---
+permalink: a700/install-videos.html 
+sidebar: sidebar 
+keywords: aff a700, fas9000, videos, rack, cable, system, system, manager, guided, setup 
+summary: ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を紹介するビデオを 2 種類紹介します。 
+---
+= ビデオ手順- AFF A700
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を紹介するビデオを 2 種類紹介します。
+
+
+
+== ビデオ 1 ：ハードウェアの設置とケーブル接続
+
+次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
+
+.アニメーション- AFF A700またはFAS9000の設置とセットアップ
+video::b46575d4-0475-48bd-8772-ac5d012a4e06[panopto]
+
+
+== ビデオ 2 ：エンドツーエンドのソフトウェア設定の実行
+
+次のビデオでは、 ONTAP 9.2 以降を実行するシステムのエンドツーエンドのソフトウェア設定を示します。
+
+video::WAE0afWhj1c?[youtube]

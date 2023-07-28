@@ -1,7 +1,6 @@
 ---
 section: a250
 title: AFF A250 システム
-url: "/a250/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: AFF A250 のインストールとセットアップ
@@ -17,6 +16,8 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF A250 のメンテナンス
   entries:
+  - title: 概要
+    url: "/a250/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF A250 ブートメディア
     entries:
@@ -41,9 +42,9 @@ entries:
       url: "/a250/chassis-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a250/chassis-replace-shutdown.html"
-    - title: ハードウェアを交換します
+    - title: シャーシの交換
       url: "/a250/chassis-replace-move-hardware.html"
-    - title: 交換後の処理
+    - title: シャーシ交換後の処理
       url: "/a250/chassis-replace-complete-system-restore-rma.html"
   - title: コントローラ
     pdf-filename: AFF A250 コントローラモジュール
@@ -52,7 +53,7 @@ entries:
       url: "/a250/controller-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a250/controller-replace-shutdown.html"
-    - title: コントローラモジュールを交換します
+    - title: コントローラを交換してください
       url: "/a250/controller-replace-move-hardware.html"
     - title: システム設定を復元します
       url: "/a250/controller-replace-system-config-restore-and-verify.html"

@@ -1,7 +1,7 @@
 ---
 permalink: c400/pci-cards-and-risers-replace.html 
 sidebar: sidebar 
-keywords: aff c400, aff, c400, replace, pcie, mezzanine, card, disconnect, cable, sfp, qsfp, module, fail, mezzanine, shut, down, impair, controller, pcie, switch, aggregate, two-node, metrocluster, complete, replacement, process, replace a pcie or mezzanine card, shut down the impaired controller, remove the controller module, replace a pcie card, replace the mezzanine card, install the controller module, switch back aggregates in a two-node metrocluster configuration, restore the controller module to operation after running diagnostics, complete the replacement process 
+keywords: aff c400, aff, c400, replace, pcie, mezzanine, card, disconnect, cable, sfp, qsfp, module, fail, mezzanine, shut, down, impair, controller, pcie, switch, aggregate, two-node, metrocluster, complete, replacement, process, replace a pcie or mezzanine card, shut down the impaired controller, remove the controller module, replace a pcie card, replace the mezzanine card, install the controller module, switch back aggregates in a two-node metrocluster configuration, restore the controller module to operation, complete the replacement process 
 summary: PCIe カードまたはメザニンカードを交換するには、ケーブルとすべての SFP モジュールと QSFP モジュールをカードから外し、障害が発生した PCIe カードまたはメザニンカードを交換してから、カードにケーブルを再接続する必要があります。 
 ---
 = PCIeカードまたはメザニンカードを交換してください（AFF C400）
@@ -21,14 +21,12 @@ PCIe カードまたはメザニンカードを交換するには、ケーブル
 
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
-[role="lead"]
 ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。
 
 [role="tabbed-block"]
 ====
 .オプション 1 ：ほとんどの構成
 --
-[role="lead"]
 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
 
 .このタスクについて
@@ -84,7 +82,6 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 --
 .オプション 2 ：コントローラは 2 ノード MetroCluster に搭載されています
 --
-[role="lead"]
 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをスイッチオーバーする必要があります。
 
 .このタスクについて
@@ -183,8 +180,13 @@ mcc1A::> metrocluster operation show
 
 == 手順 2 ：コントローラモジュールを取り外す
 
-[role="lead"]
 コントローラモジュール内部のコンポーネントにアクセスするには、コントローラモジュールをシャーシから取り外す必要があります。
+
+次のアニメーション、図、または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。
+
+.アニメーション-コントローラモジュールを取り外します
+video::ca74d345-e213-4390-a599-aae10019ec82[panopto]
+image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取り外し]
 
 . 接地対策がまだの場合は、自身で適切に実施します。
 . 電源ケーブル固定クリップを外し、電源装置からケーブルを抜きます。
@@ -197,26 +199,6 @@ mcc1A::> metrocluster operation show
 +
 コントローラモジュールがシャーシから少し引き出されます。
 
-+
-image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取り外し]
-
-+
-|===
-
-
- a| 
-image:../media/legend_icon_01.png[""]
- a| 
-ロックラッチ
-
-
-
- a| 
-image:../media/legend_icon_02.png[""]
- a| 
-コントローラがシャーシからわずかに引き出されます
-
-|===
 . コントローラモジュールをシャーシから引き出します。
 +
 このとき、空いている手でコントローラモジュールの底面を支えてください。
@@ -228,7 +210,6 @@ image:../media/legend_icon_02.png[""]
 
 == 手順 3 ： PCIe カードを交換します
 
-[role="lead"]
 PCIe カードを交換するには、障害のある PCIe カードの場所を確認し、カードを含むライザーをコントローラモジュールから取り外し、カードを交換してから、 PCIe ライザーをコントローラモジュールに再度取り付ける必要があります。
 
 次のアニメーション、図、または記載された手順を使用して、 PCIe カードを交換できます。
@@ -277,7 +258,6 @@ NOTE: 下のスロットにカードを取り付けてもカードソケット�
 
 == 手順 4 ：メザニンカードを交換します
 
-[role="lead"]
 メザニンカードは、 3 番のライザー（スロット 4 と 5 ）の下にあります。メザニンカードを交換するには、ライザーを取り外してメザニンカードを交換してから、 3 番のライザーを再度取り付ける必要があります。詳細については、コントローラモジュールの FRU マップを参照してください。
 
 次のアニメーション、図、または記載された手順を使用して、メザニンカードを交換できます。
@@ -318,8 +298,13 @@ image::../media/drw_A400_Replace-mezz-card_IEOPS-1006.svg[DRW A400メザニン�
 
 == 手順 5 ：コントローラモジュールを取り付ける
 
-[role="lead"]
 コントローラモジュールのコンポーネントを交換したら、コントローラモジュールをシャーシに再度取り付け、メンテナンスモードでブートする必要があります。
+
+次のアニメーション、図、または記載された手順を使用して、コントローラモジュールをシャーシに設置できます。
+
+.アニメーション-コントローラモジュールを設置します
+video::0310fe80-b129-4685-8fef-ab19010e720a[panopto]
+image::../media/drw_A400_Install_controller_source.png[DRW A400 コントローラソースの取り付け]
 
 . まだ行っていない場合は、エアダクトを閉じます。
 . コントローラモジュールの端をシャーシの開口部に合わせ、コントローラモジュールをシステムに半分までそっと押し込みます。
@@ -363,7 +348,6 @@ NOTE: システムがブートメニューで停止した場合は、 LOADER で
 
 == 手順 6 ：コントローラモジュールを動作状態に戻す
 
-[role="lead"]
 コントローラをリストアするには、システムにケーブルを再接続してコントローラモジュールをギブバックし、自動ギブバックを再度有効にする必要があります。
 
 . 必要に応じてシステムにケーブルを再接続します。
@@ -378,7 +362,6 @@ NOTE: システムがブートメニューで停止した場合は、 LOADER で
 
 == 手順 7 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする
 
-[role="lead"]
 2 ノード MetroCluster 構成で FRU の交換が完了したら、 MetroCluster スイッチバック処理を実行できます。これにより構成が通常の動作状態に戻ります。また、障害が発生していたサイトの同期元 Storage Virtual Machine （ SVM ）がアクティブになり、ローカルディスクプールからデータを提供します。
 
 このタスクでは、環境の 2 ノード MetroCluster 構成のみを実行します。
@@ -437,5 +420,4 @@ Remote: cluster_A configured      		normal
 
 == 手順 8 ：障害が発生したパーツをネットアップに返却する
 
-[role="lead"]
 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。

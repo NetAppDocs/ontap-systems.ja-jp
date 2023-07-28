@@ -1,7 +1,6 @@
 ---
 section: fas500f
 title: FAS500f システム
-url: "/fas500f/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: FAS500f のインストールとセットアップ
@@ -17,6 +16,8 @@ entries:
 - title: メンテナンス
   pdf-filename: FAS500f メンテナンス
   entries:
+  - title: 概要
+    url: "/fas500f/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: FAS500f ブートメディア
     entries:

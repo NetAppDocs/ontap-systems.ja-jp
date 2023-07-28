@@ -1,7 +1,7 @@
 ---
 permalink: a320/chassis-replace-move-hardware.html 
 sidebar: sidebar 
-keywords: aff, a320, aff a320, replace, chassis, fan, controller, module, impair, model, shut, down, replacing, remove, move, equipment, rack, diagnostic, complete, replacement, process, replace the chassis, shut down the controllers when replacing a chassis, remove the controller modules, move the fans, replace a chassis from within the equipment rack or system cabinet, install the controller modules, run diagnostics, complete the replacement process 
+keywords: aff, a320, aff a320, replace, chassis, fan, controller, module, impair, model, shut, down, replacing, remove, move, equipment, rack, complete, replacement, process, replace the chassis, shut down the controllers when replacing a chassis, remove the controller modules, move the fans, replace a chassis from within the equipment rack or system cabinet, install the controller modules, complete the replacement process 
 summary: ファン、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、装置ラックまたはシステムキャビネットの障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
 ---
 = ハードウェアを交換 - AFF A320
@@ -90,7 +90,7 @@ CAUTION: ファンモジュールは奥行きがないので、シャーシか�
 
 == 手順 4 ：コントローラモジュールを取り付ける
 
-新しいシャーシにコントローラモジュールを取り付けたら、コントローラモジュールをブートして診断テストを実行できる状態にする必要があります。
+新しいシャーシにコントローラモジュールを取り付けたら、システムをブートする必要があります。
 
 2 台のコントローラモジュールを同じシャーシに搭載する HA ペアでは、シャーシへの設置が完了すると同時にリブートが試行されるため、コントローラモジュールの取り付け順序が特に重要です。
 

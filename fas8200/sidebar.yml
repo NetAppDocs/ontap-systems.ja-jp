@@ -1,7 +1,6 @@
 ---
 section: fas8200
 title: FAS8200 システム
-url: "/fas8200/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: FAS8200 の設置とセットアップ
@@ -17,6 +16,8 @@ entries:
 - title: メンテナンス
   pdf-filename: FAS8200 のメンテナンス
   entries:
+  - title: 概要
+    url: "/fas8200/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: FAS8200 ブートメディア
     entries:

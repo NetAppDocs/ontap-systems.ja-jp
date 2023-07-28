@@ -1,0 +1,79 @@
+---
+section: asa800
+title: ASA A800システム
+entries:
+- title: 設置とセットアップ
+  pdf-filename: ASA A800の設置とセットアップ
+  entries:
+  - title: インストールとセットアップを選択します
+    url: "/asa800/install-setup.html"
+  - title: クイックステップ
+    url: "/asa800/install-quick-guide.html"
+  - title: ビデオの手順
+    url: "/asa800/install-videos.html"
+  - title: 詳細な手順
+    url: "/asa800/install-detailed-guide.html"
+- title: メンテナンス
+  pdf-filename: ASA A800のメンテナンス
+  entries:
+  - title: 概要
+    url: "/asa800/maintain-overview.html"
+  - title: ブートメディア
+    pdf-filename: ASA A800のブートメディア
+    entries:
+    - title: 概要
+      url: "/asa800/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/asa800/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa800/bootmedia-shutdown.html"
+    - title: ブートイメージを交換します
+      url: "/asa800/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/asa800/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/asa800/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/asa800/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: ASA A800シャーシ
+    entries:
+    - title: 概要
+      url: "/asa800/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa800/chassis-replace-shutdown.html"
+    - title: シャーシの交換
+      url: "/asa800/chassis-replace-move-hardware.html"
+    - title: シャーシ交換後の処理
+      url: "/asa800/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラ
+    pdf-filename: ASA A800コントローラモジュール
+    entries:
+    - title: 概要
+      url: "/asa800/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa800/controller-replace-shutdown.html"
+    - title: コントローラを交換してください
+      url: "/asa800/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/asa800/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続
+      url: "/asa800/controller-replace-recable-reassign-disks.html"
+    - title: コントローラ交換後の処理
+      url: "/asa800/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/asa800/dimm-replace.html"
+  - title: ドライブ
+    url: "/asa800/drive-replace.html"
+  - title: ファン
+    url: "/asa800/fan-replace.html"
+  - title: NVDIMM
+    url: "/asa800/nvdimm-replace.html"
+  - title: NVDIMM バッテリ
+    url: "/asa800/nvdimm-battery-replace.html"
+  - title: PCIe カード
+    url: "/asa800/pci-cards-and-risers-replace.html"
+  - title: 電源装置
+    url: "/asa800/power-supply-replace.html"
+  - title: リアルタイムクロックバッテリ
+    url: "/asa800/rtc-battery-replace.html"

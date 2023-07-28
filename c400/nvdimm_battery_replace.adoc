@@ -1,7 +1,7 @@
 ---
 permalink: c400/nvdimm-battery-replace.html 
 sidebar: sidebar 
-keywords: aff c400, aff, c400, replace, nvdimm, battery, remove, controller, module, reinstall, impair, aggregate, switch, back, two-node, metrocluster, configuration, replacement, complete, process, replace the nvdimm battery, shut down the impaired controller, remove the controller module, replace the nvdimm battery, install the controller module, run diagnostics, restore the controller module to operation after running diagnostics, switch back aggregates in a two-node metrocluster configuration, complete the replacement process 
+keywords: aff c400, aff, c400, replace, nvdimm, battery, remove, controller, module, reinstall, impair, aggregate, switch, back, two-node, metrocluster, configuration, replacement, complete, process, replace the nvdimm battery, shut down the impaired controller, remove the controller module, replace the nvdimm battery, install the controller module, restore the controller module to operation, switch back aggregates in a two-node metrocluster configuration, complete the replacement process 
 summary: NVDIMM バッテリを交換するには、コントローラモジュールを取り外し、バッテリを取り外し、バッテリを交換してから、コントローラモジュールを再度取り付ける必要があります。 
 ---
 = NVDIMMバッテリを交換します- AFF C400
@@ -19,14 +19,12 @@ NVDIMM バッテリを交換するには、コントローラモジュールを�
 
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
-[role="lead"]
 ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。
 
 [role="tabbed-block"]
 ====
 .オプション 1 ：ほとんどの構成
 --
-[role="lead"]
 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
 
 .このタスクについて
@@ -82,7 +80,6 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 --
 .オプション 2 ：コントローラは 2 ノード MetroCluster に搭載されています
 --
-[role="lead"]
 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをスイッチオーバーする必要があります。
 
 .このタスクについて
@@ -181,8 +178,13 @@ mcc1A::> metrocluster operation show
 
 == 手順 2 ：コントローラモジュールを取り外す
 
-[role="lead"]
 コントローラモジュール内部のコンポーネントにアクセスするには、コントローラモジュールをシャーシから取り外す必要があります。
+
+次のアニメーション、図、または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。
+
+.アニメーション-コントローラモジュールを取り外します
+video::ca74d345-e213-4390-a599-aae10019ec82[panopto]
+image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取り外し]
 
 . 接地対策がまだの場合は、自身で適切に実施します。
 . 電源ケーブル固定クリップを外し、電源装置からケーブルを抜きます。
@@ -195,26 +197,6 @@ mcc1A::> metrocluster operation show
 +
 コントローラモジュールがシャーシから少し引き出されます。
 
-+
-image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取り外し]
-
-+
-|===
-
-
- a| 
-image:../media/legend_icon_01.png[""]
- a| 
-ロックラッチ
-
-
-
- a| 
-image:../media/legend_icon_02.png[""]
- a| 
-コントローラがシャーシからわずかに引き出されます
-
-|===
 . コントローラモジュールをシャーシから引き出します。
 +
 このとき、空いている手でコントローラモジュールの底面を支えてください。
@@ -226,7 +208,6 @@ image:../media/legend_icon_02.png[""]
 
 == 手順 3 ： NVDIMM バッテリを交換します
 
-[role="lead"]
 NVDIMM バッテリを交換するには、障害が発生したバッテリをコントローラモジュールから取り外し、交換用バッテリをコントローラモジュールに取り付ける必要があります。NVDIMM バッテリの場所を確認するには、コントローラモジュール内の FRU マップを参照してください。
 
 システムを停止すると、コンテンツのデステージ中に NVDIMM の LED が点滅します。デステージが完了すると LED は消灯します。
@@ -255,8 +236,13 @@ image::../media/drw_A400_nvdimm-batt_IEOPS-1004.svg[DRW A400 NVDIMM BATT IEOPS 1
 
 == 手順 4 ：コントローラモジュールを取り付ける
 
-[role="lead"]
-コントローラモジュールのコンポーネントを交換したら、コントローラモジュールをシャーシに再度取り付け、メンテナンスモードでブートする必要があります。
+コントローラモジュールのコンポーネントを交換したら、コントローラモジュールをシャーシに再度取り付けてブートする必要があります。
+
+次のアニメーション、図、または記載された手順を使用して、コントローラモジュールをシャーシに設置できます。
+
+.アニメーション-コントローラモジュールを設置します
+video::0310fe80-b129-4685-8fef-ab19010e720a[panopto]
+image::../media/drw_A400_Install_controller_source.png[DRW A400 コントローラソースの取り付け]
 
 . まだ行っていない場合は、エアダクトを閉じます。
 . コントローラモジュールの端をシャーシの開口部に合わせ、コントローラモジュールをシステムに半分までそっと押し込みます。
@@ -288,46 +274,15 @@ NOTE: コネクタの破損を防ぐため、コントローラモジュール�
 NOTE: システムがブートメニューで停止した場合は、 LOADER でブートするオプションを選択します。
 
 .. LOADER プロンプトで「 bye 」と入力して、 PCIe カードおよびその他のコンポーネントを再初期化します。
-.. Ctrl+C キーを押して、ブート・プロセスを中断し、 LOADER プロンプトでブートします。
-+
-システムがブートメニューで停止した場合は、 LOADER でブートするオプションを選択します。
 
 
 
 
 
 
+== 手順 5 ：コントローラモジュールを動作状態に戻す
 
-== 手順 5 ：診断を実行します
-
-[role="lead"]
-システムのコンポーネントを交換したら、そのコンポーネントに対して診断テストを実行する必要があります。
-
-診断を開始するには、システムに LOADER プロンプトが表示されている必要があります。
-
-診断手順のコマンドは、すべてコンポーネントを交換するコントローラから実行します。
-
-. 保守対象のコントローラが LOADER プロンプトに表示されていない場合は、コントローラをリブートします。「 system node halt -node node_name 」
-+
-コマンドを問題したら、システムが LOADER プロンプトで停止するまで待ちます。
-
-. LOADER プロンプトで、システムレベルの診断用に特別に設計されたドライバ「 boot_diags 」にアクセスします
-. 表示されたメニューから「 * Scan System * （システムのスキャン）」を選択して、診断テストの実行を有効にします。
-. 表示されたメニューから * Test Memory * を選択して、診断テストを実行します。
-. 前述の手順の結果に応じて、次に進みます。
-+
-** スキャンで問題が見つかった場合は、問題を修正してからスキャンを再実行します。
-** スキャンでエラーが報告されなかった場合は、メニューから Reboot を選択してシステムをリブートします。
-
-
-
-
-
-
-== 手順 6 ：診断の実行後にコントローラモジュールを稼働状態に戻す
-
-[role="lead"]
-診断が完了したら、システムにケーブルを再接続してコントローラモジュールをギブバックし、自動ギブバックを再度有効にする必要があります。
+システムにケーブルを再接続し、コントローラモジュールをギブバックして、自動ギブバックを再度有効にする必要があります。
 
 . 必要に応じてシステムにケーブルを再接続します。
 +
@@ -339,9 +294,8 @@ NOTE: システムがブートメニューで停止した場合は、 LOADER で
 
 
 
-== 手順 7 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする
+== 手順 6 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする
 
-[role="lead"]
 2 ノード MetroCluster 構成で FRU の交換が完了したら、 MetroCluster スイッチバック処理を実行できます。これにより構成が通常の動作状態に戻ります。また、障害が発生していたサイトの同期元 Storage Virtual Machine （ SVM ）がアクティブになり、ローカルディスクプールからデータを提供します。
 
 このタスクでは、環境の 2 ノード MetroCluster 構成のみを実行します。
@@ -398,7 +352,6 @@ Remote: cluster_A configured      		normal
 
 
 
-== 手順 8 ：障害が発生したパーツをネットアップに返却する
+== 手順 7 ：障害が発生したパーツをネットアップに返却する
 
-[role="lead"]
 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。

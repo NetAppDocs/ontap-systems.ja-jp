@@ -1,7 +1,6 @@
 ---
 section: c800
 title: AFF C800システム
-url: "/c800/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: AFF C800のインストールとセットアップ
@@ -17,6 +16,8 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF C800メンテナンス
   entries:
+  - title: 概要
+    url: "/c800/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF C800ブートメディア
     entries:

@@ -1,6 +1,6 @@
 ---
 indexpage:
-  lead: ネットアップの AFF および FAS ストレージシステムは、業界最先端のデータ管理機能を備えた、エンタープライズクラスのスケールアウトオールフラッシュストレージまたはハイブリッドストレージです。AFF
+  lead: ネットアップのAFF、FAS、All SAN Arrayストレージシステムは、業界最先端のデータ管理機能を備えた、エンタープライズクラスの最先端のスケールアウトオールフラッシュまたはハイブリッドストレージです。AFF
     、 FAS 、またはオール SAN アレイシステムのインストール、拡張、アップグレード、および保守には、このサイトのドキュメントを使用してください。
   tiles:
   - title: はじめに
@@ -9,103 +9,43 @@ indexpage:
       url: "/whats-new.html"
     - title: クイックスタート
       url: "/get-up-and-run.html"
-    - title: AFF Aシリーズシステムのデータシート
-      url: https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf
-    - title: AFF Cシリーズシステムのデータシート
-      url: https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf
-    - title: FAS システムのデータシート
-      url: https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf
-    - title: AFF およびFAS ストレージのデータシート
-      url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
     - title: ONTAP リリースノート
       url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
-  - title: AFF Aシリーズシステム
+  - title: ストレージプラットフォーム
     links:
-    - title: AFF A150
-      url: "/a150/index.html"
-    - title: AFF A220
-      url: "/a220/index.html"
-    - title: AFF A250
-      url: "/a250/index.html"
-    - title: AFF A400
-      url: "/a400/index.html"
-    - title: AFF A700
-      url: "/a700/index.html"
-    - title: AFF A800
-      url: "/a800/index.html"
-    - title: AFF A900 の略
-      url: "/a900/index.html"
-  - title: AFF Cシリーズシステム
+    - title: AFF Aシリーズシステム
+      url: "/aff-aseries/index.html"
+    - title: AFF Cシリーズシステム
+      url: "/aff-cseries/index.html"
+    - title: ASA Aシリーズシステム
+      url: "/allsan-a-series/index.html"
+    - title: FAS システム
+      url: "/fas/index.html"
+    - title: End of Availabilityシステム
+      url: "/endofavail/index.html"
+  - title: ネットワーキング
     links:
-    - title: AFF C190
-      url: "/c190/index.html"
-    - title: AFF C250
-      url: "/c250/index.html"
-    - title: AFF C400
-      url: "/c400/index.html"
-    - title: AFF C800
-      url: "/c800/index.html"
-  - title: FAS システム
-    links:
-    - title: FAS500f
-      url: "/fas500f/index.html"
-    - title: FAS2700
-      url: "/fas2700/index.html"
-    - title: FAS2800
-      url: "/fas2800/index.html"
-    - title: FAS8300
-      url: "/fas8300/index.html"
-    - title: FAS8700 の場合
-      url: "/fas8300/index.html"
-    - title: FAS9000
-      url: "/fas9000/index.html"
-    - title: FAS9500
-      url: "/fas9500/index.html"
-  - title: End of Availabilityシステム
-    links:
-    - title: AFF A200
-      url: "/a200/index.html"
-    - title: AFF A300
-      url: "/a300/index.html"
-    - title: AFF A320
-      url: "/a320/index.html"
-    - title: AFF A700s
-      url: "/a700s/index.html"
-    - title: FAS2600
-      url: "/fas2600/index.html"
-    - title: FAS8200
-      url: "/fas8200/index.html"
-  - title: サポートされるスイッチ
-    links:
-    - title: Broadcom 対応 BES-53248 の場合
-      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-bes-53248/configure-new-switch-overview.html
-    - title: Cisco 9336C-FX2
-      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/configure-switch-overview-9336c-cluster.html
-    - title: Cisco 9336-FX2 （共有構成
-      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/configure-switch-overview-9336c-shared.html
-    - title: NVIDIA SN2100
-      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/configure-overview-sn2100-storage.html
-    - title: 可用性が終了したスイッチ
-      url: https://docs.netapp.com/us-en/ontap-systems-switches/overview-eod.html
-  - title: 関連するONTAP のドキュメント
+    - title: ドライブシェルフ
+      url: "/drive-shelves/index.html"
+    - title: スイッチ
+      url: https://docs.netapp.com/us-en/ontap-systems-switches/index.html
+  - title: ドキュメントリソース
     links:
     - title: プラットフォームのアップグレード（ほとんどのシステム）
       url: https://docs.netapp.com/us-en/ontap-systems-upgrade/index.html
     - title: プラットフォームのアップグレード（MetroCluster 構成）
       url: https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/concept_choosing_an_upgrade_method_mcc.html
-    - title: ONTAP ソフトウェアドキュメント
+    - title: ONTAP ソフトウェア
       url: https://docs.netapp.com/us-en/ontap/index.html
+    - title: Digital Advisor
+      url: https://docs.netapp.com/us-en/active-iq/index.html
   - title: ツールとサポート
     links:
-    - title: NetApp Hardware Universe の略
-      url: https://hwu.netapp.com/
-    - title: NetApp Active IQ Digital Advisor
-      url: https://docs.netapp.com/us-en/active-iq/index.html
-    - title: NetApp Active IQ Config Advisor の略
-      url: https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor
     - title: NetApp Interoperability Matrix を参照してください
       url: https://mysupport.netapp.com/matrix/#welcome
     - title: NetApp Hardware Universe の略
       url: https://hwu.netapp.com/
     - title: ネットアップナレッジベース
       url: https://kb.netapp.com/
+    - title: Active IQ （ログインが必要）
+      url: https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor

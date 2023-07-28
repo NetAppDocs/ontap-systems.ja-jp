@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, boot, recovery, image, two, node, metrocluster, configuration 
 summary: 障害ノードをリカバリイメージからブートするための手順は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。 
 ---
-= リカバリイメージ - AFF A700 および FAS9000 をブートします
+= リカバリイメージのブート- FAS9000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,7 +15,7 @@ summary: 障害ノードをリカバリイメージからブートするため�
 
 
 
-== オプション 1 ほとんどのシステムでリカバリイメージをブートします
+== オプション1：ほとんどのシステムでリカバリイメージをブートする
 
 ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
 

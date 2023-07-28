@@ -1,7 +1,6 @@
 ---
 section: fas9500
 title: FAS9500システム
-url: "/fas9500/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: FAS9500のインストールとセットアップ
@@ -17,8 +16,8 @@ entries:
 - title: メンテナンス
   pdf-filename: FAS9500は引き続き維持されます
   entries:
-  - title: I/O モジュールを追加します
-    url: "/fas9500/add_io_module.html"
+  - title: 概要
+    url: "/fas9500/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: FAS9500ブートメディア
     entries:
@@ -66,17 +65,21 @@ entries:
       url: "/fas9500/controller_replace_complete_system_restoration_rma.html"
   - title: DIMM
     url: "/fas9500/dimm_replace.html"
-  - title: デステージコントロールパワーモジュール
+  - title: DCPM を実行します
     url: "/fas9500/dcpm_NVRAM11_battery_replace.html"
   - title: ファン
     url: "/fas9500/fan_swap_out.html"
   - title: I/O モジュール
-    url: "/fas9500/pci_cards_and_risers_replace.html"
-  - title: LED USB モジュール
+    entries:
+    - title: 交換してください
+      url: "/fas9500/pci_cards_and_risers_replace.html"
+    - title: 追加（ Add ）
+      url: "/fas9500/add_io_module.html"
+  - title: LED USB
     url: "/fas9500/led_module_replace.html"
-  - title: NVRAM モジュール / NVRAM DIMM
+  - title: NVRAM
     url: "/fas9500/nvram_module_or_nvram_dimm_replacement.html"
   - title: 電源装置
     url: "/fas9500/power_supply_swap_out.html"
-  - title: RTC バッテリ
+  - title: リアルタイムクロックバッテリ
     url: "/fas9500/rtc_battery_replace.html"

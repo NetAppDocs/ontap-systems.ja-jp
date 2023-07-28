@@ -1,0 +1,21 @@
+---
+permalink: asa400/install-quick-guide.html 
+sidebar: sidebar 
+keywords: asa a400, asa, a400, guide, graphic, instruction, installation, system, rack, cabling, cable, intitial, system, bring-up, guide, install, netapp, system, quick guide 
+summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。 
+---
+= クイックガイド- ASA A400
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このページでは、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順を図で示します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。
+
+設置およびセットアップ手順 _PDF ポスター：
+
+link:../media/PDF/215-14510_2020_09_en-us_AFFA400_ISI.pdf["AFF A400 のセットアップガイド"^]
+
+
+NOTE: ASA A400は、AFF A400システムと同じインストール手順を使用します。

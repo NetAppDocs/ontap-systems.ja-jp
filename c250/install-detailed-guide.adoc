@@ -11,6 +11,7 @@ summary: このセクションでは、AFF C250システムの設置手順につ
 
 
 [role="lead"]
+<stdin>の未解決のディレクティブ-include::../_include/250_install-detailed-guide.adoc[]
 このセクションでは、AFF C250システムの設置手順について詳しく説明します。
 
 MetroCluster 構成の場合は、を使用します https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster のドキュメント"^]。

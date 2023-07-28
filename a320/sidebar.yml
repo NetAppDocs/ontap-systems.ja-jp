@@ -1,7 +1,6 @@
 ---
 section: a320
 title: AFF A320 システム
-url: "/a320/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: AFF A320 の設置とセットアップ
@@ -17,6 +16,8 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF A320 は維持されます
   entries:
+  - title: 概要
+    url: "/a320/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF A320 ブートメディア
     entries:

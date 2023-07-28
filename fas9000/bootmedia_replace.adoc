@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, open, controller, module, system, access, component 
 summary: コントローラ内部のコンポーネントにアクセスするには、まずコントローラモジュールをシステムから取り外し、続いてコントローラモジュールのカバーを外す必要があります。 
 ---
-= ブートメディア - AFF A700 および FAS9000 を交換してください
+= ブートメディアの交換- FAS9000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

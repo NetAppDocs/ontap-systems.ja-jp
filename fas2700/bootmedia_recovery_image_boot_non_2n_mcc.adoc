@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2700, aff 220, boot, recovery, image, restore, file, system, environmental, varible 
 summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
-= リカバリイメージ AFF A220 および FAS2700 をブートします
+= リカバリイメージのブート- FAS2700
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

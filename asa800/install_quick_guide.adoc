@@ -1,0 +1,17 @@
+---
+permalink: asa800/install-quick-guide.html 
+sidebar: sidebar 
+keywords: asa a800, quick steps 
+summary: このページでは、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順を図で示します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。 
+---
+= クイックステップ- ASA A800
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このページでは、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順を図で示します。を使用します link:../media/PDF/215-13082_2022-08_us-en_AFFA800_ISI.pdf["AFF A800の設置とセットアップの手順"^] ネットアップシステムのインストールに精通している場合。
+
+
+NOTE: ASA A800は、AFF A800システムと同じインストール手順を使用します。

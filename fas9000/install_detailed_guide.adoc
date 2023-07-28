@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, detailed, guide, prepare, install, hardware, two, node, switchless, cluster, cable, controller, ds212c, ds224c, ns224, drive, shelf, complete, system, setup, configuration, network, discovery 
 summary: このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。 
 ---
-= 詳細ガイド - AFF A700 および FAS9000
+= 詳細ガイド- FAS9000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -323,11 +323,11 @@ image:../media/Cable_shelves_new_system_IOM12_shelves.png[""]
 
 
 
-=== オプション 2 ： AFF A700 システムと ONTAP 9.8 以降を実行する ASA AFF A700 システムにある 1 台の NS224 ドライブシェルフにコントローラをケーブル接続します
+=== オプション2：ONTAP 9.8以降を実行しているASA AFF A700システムでのみ、1台のNS224ドライブシェルフにコントローラをケーブル接続
 
 各コントローラを、 ONTAP 9.8 以降を実行している AFF A700 または ASA AFF A700 の NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。
 
-* この作業は、 ONTAP 9.8 以降を実行する環境 AFF A700 および ASA AFF A700 のみです。
+* このタスクは、ONTAP 9.8以降を実行する 環境 ASA AFF A700のみです。
 * 各コントローラのスロット 3 または 7 に、少なくとも 1 つの X91148A モジュールをインストールする必要があります。アニメーションや図は、このモジュールがスロット 3 と 7 の両方に取り付けられていることを示しています。
 * 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。ストレージモジュールのケーブルのプルタブは上向き、シェルフのプルタブは下向きです。
 +
@@ -358,11 +358,11 @@ image::../media/single_NS224_shelf.png[1 台の NS224 シェルフ]
 
 
 
-=== オプション 3 ： AFF A700 システムと ONTAP 9.8 以降を実行している ASA AFF A700 システムの 2 台の NS224 ドライブシェルフにコントローラをケーブル接続します
+=== オプション3：2台のNS224ドライブシェルフにコントローラをケーブル接続（ONTAP 9.8以降を実行しているASA AFF A700システムのみ）
 
 各コントローラを、 ONTAP 9.8 以降を実行している AFF A700 または ASA AFF A700 上の NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。
 
-* この作業は、 ONTAP 9.8 以降を実行する環境 AFF A700 および ASA AFF A700 のみです。
+* このタスクは、ONTAP 9.8以降を実行する 環境 ASA AFF A700のみです。
 * システムには、各コントローラに X91148A モジュールが 2 つあり、スロット 3 と 7 に取り付ける必要があります。
 * 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。ストレージモジュールのケーブルのプルタブは上向き、シェルフのプルタブは下向きです。
 +

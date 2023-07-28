@@ -1,0 +1,213 @@
+---
+permalink: asa900/pci_cards_and_risers_replace.html 
+sidebar: sidebar 
+keywords:  
+summary: I/O モジュールを交換するには、特定の順序でタスクを実行する必要があります。 
+---
+= I/Oモジュールの交換- ASA A900
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I/O モジュールを交換するには、特定の順序でタスクを実行する必要があります。
+
+* この手順は、システムでサポートされるすべてのバージョンの ONTAP で使用できます。
+* システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。
+
+
+
+
+== 手順 1 ：障害ノードをシャットダウンします
+
+次のいずれかのオプションを使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
+
+[role="tabbed-block"]
+====
+.オプション 1 ：ほとんどのシステム
+--
+障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
+
+.このタスクについて
+ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性についてfalseと表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["ノードをクラスタと同期します"^]。
+
+.手順
+. AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
++
+次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
+
+. 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
+. 障害のあるコントローラに LOADER プロンプトを表示します。
++
+[cols="1,2"]
+|===
+| 障害のあるコントローラの表示 | 作業 
+
+
+ a| 
+LOADER プロンプト
+ a| 
+次の手順に進みます。
+
+
+
+ a| 
+ギブバックを待機しています
+ a| 
+Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します
+
+
+
+ a| 
+システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
+ a| 
+正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _
+
+障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
+
+|===
+
+
+--
+.オプション 2 ：コントローラが MetroCluster に搭載されている
+--
+
+NOTE: 2 ノード MetroCluster 構成のシステムでは、この手順を使用しないでください。
+
+障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
+
+* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性についてfalseと表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["ノードをクラスタと同期します"^]。
+* MetroCluster 構成を使用している場合は、 MetroCluster 構成状態が構成済みで、ノードが有効かつ正常な状態であることを確認しておく必要があります（「 MetroCluster node show 」）。
+
+
+.手順
+. AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
++
+次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
+
+. 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
+. 障害のあるコントローラに LOADER プロンプトを表示します。
++
+[cols="1,2"]
+|===
+| 障害のあるコントローラの表示 | 作業 
+
+
+ a| 
+LOADER プロンプト
+ a| 
+次の手順に進みます。
+
+
+
+ a| 
+ギブバックを待っています
+ a| 
+Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します
+
+
+
+ a| 
+システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
+ a| 
+正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _
+
+障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
+
+|===
+
+
+--
+====
+
+
+== 手順 2 ： I/O モジュールを交換します
+
+I/O モジュールを交換するには、シャーシ内で I/O モジュールの場所を確認し、特定の順序で手順を実行します。
+
+. 接地対策がまだの場合は、自身で適切に実施します。
+. ターゲットの I/O モジュールに接続されているケーブルをすべて取り外します。
++
+元の場所がわかるように、ケーブルにラベルを付けておいてください。
+
+. ターゲットの I/O モジュールをシャーシから取り外します。
++
+.. 文字と数字が記載されたカムボタンを押し下げます。
++
+カムボタンがシャーシから離れます。
+
+.. カムラッチを下に回転させて水平にします。
++
+I/O モジュールがシャーシから外れ、 I/O スロットから約 1/2 インチアウトします。
+
+.. I/O モジュール前面の両側にあるプルタブを引いて、 I/O モジュールをシャーシから取り外します。
++
+I/O モジュールが取り付けられていたスロットを記録しておいてください。
+
++
+.アニメーション- I/Oモジュールの取り外し/取り付け
+video::3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6[panopto]
++
+image:../media/drw_a900_remove_PCIe_module.png[""]
+
+
+
++
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+ a| 
+文字と数字が記載された I/O カムラッチ
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+ a| 
+ロックが完全に解除された I/O カムラッチ
+
+|===
+. I/O モジュールを脇へ置きます。
+. 交換用 I/O モジュールを I/O モジュールをスロットにそっと挿入し、文字と数字が記載された I/O カムラッチを上に押してモジュールを所定の位置にロックし、 I/O モジュールをシャーシに取り付けます。
+. 必要に応じて、 I/O モジュールにケーブルを再接続します。
+
+
+
+
+== 手順3：コントローラをリブートする
+
+I/O モジュールを交換したら、コントローラモジュールをリブートする必要があります。
+
+
+NOTE: 新しいI/Oモジュールが障害の発生したモジュールと同じモデルでない場合は、最初にBMCをリブートする必要があります。
+
+.手順
+. 交換用モジュールのモデルが古いモジュールと同じでない場合は、BMCをリブートします。
++
+.. LOADERプロンプトから、advanced権限モードに切り替えます。「priv set advanced」
+.. BMCを再起動します：「SP reboot
+
+
+. LOADERプロンプトからノードをリブートします。bye
++
+
+NOTE: これにより、PCIeカードおよびその他のコンポーネントが再初期化され、ノードがリブートされます。
+
+. システムが40GbE NICで10GbEのクラスタインターコネクトとデータ接続をサポートするように設定されている場合は、保守モードでnicadmin convertコマンドを使用して、これらのポートを10GbE接続に変換します。を参照してください https://docs.netapp.com/us-en/ontap/networking/convert_40gbe_nic_ports_into_multiple_10gbe_ports_for_10gbe_connectivity.html["10GbE 接続用に、 40GbE NIC ポートを複数の 10GbE ポートに変換します"^] を参照してください。
++
+
+NOTE: 変換が完了したら必ずメンテナンスモードを終了してください。
+
+. ノードを通常動作に戻します。 storage failover giveback -ofnode impaired_node_name
+. 自動ギブバックを無効にした場合は、再度有効にします。「 storage failover modify -node local-auto-giveback true 」
+
+
+
+
+== 手順 4 ：障害が発生したパーツをネットアップに返却する
+
+障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。

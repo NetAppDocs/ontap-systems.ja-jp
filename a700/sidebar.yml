@@ -1,93 +1,94 @@
 ---
 section: a700
 title: AFF A700 システム
-url: "/a700/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: AFF A700 のインストールとセットアップ
   entries:
   - title: インストールとセットアップを選択します
-    url: "/fas9000/install-setup.html"
+    url: "/a700/install-setup.html"
   - title: クイックステップ
-    url: "/fas9000/install-quick-guide.html"
+    url: "/a700/install-quick-guide.html"
   - title: ビデオの手順
-    url: "/fas9000/install-videos.html"
+    url: "/a700/install-videos.html"
   - title: 詳細な手順
-    url: "/fas9000/install-detailed-guide.html"
+    url: "/a700/install-detailed-guide.html"
 - title: メンテナンス
   pdf-filename: AFF A700 は維持されます
   entries:
+  - title: 概要
+    url: "/a700/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF A700 ブートメディア
     entries:
     - title: 概要
-      url: "/fas9000/bootmedia-replace-overview.html"
+      url: "/a700/bootmedia-replace-overview.html"
     - title: オンボード暗号化キーを確認
-      url: "/fas9000/bootmedia-encryption-preshutdown-checks.html"
+      url: "/a700/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
-      url: "/fas9000/bootmedia-impaired-controller-shutdown.html"
+      url: "/a700/bootmedia-impaired-controller-shutdown.html"
     - title: ブートイメージを交換します
-      url: "/fas9000/bootmedia-replace.html"
+      url: "/a700/bootmedia-replace.html"
     - title: ブートイメージを起動します
-      url: "/fas9000/bootmedia-recovery-image-boot-options.html"
+      url: "/a700/bootmedia-recovery-image-boot-options.html"
     - title: MetroCluster の設定をスイッチバックします
-      url: "/fas9000/bootmedia-2n-mcc-switchback.html"
+      url: "/a700/bootmedia-2n-mcc-switchback.html"
     - title: OKM 、 NSE 、 NVE をリストアします
-      url: "/fas9000/bootmedia-encryption-restore.html"
+      url: "/a700/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します
-      url: "/fas9000/bootmedia-complete-rma.html"
+      url: "/a700/bootmedia-complete-rma.html"
   - title: キャッシングモジュール
-    url: "/fas9000/caching-module-and-core-dump-module-replace.html"
+    url: "/a700/caching-module-and-core-dump-module-replace.html"
   - title: キャッシングモジュール（ホットスワップ）
-    url: "/fas9000/caching-module-hot-swap.html"
+    url: "/a700/caching-module-hot-swap.html"
   - title: シャーシ
     pdf-filename: AFF A700 シャーシ
     entries:
     - title: 概要
-      url: "/fas9000/chassis-replace-overview.html"
+      url: "/a700/chassis-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
-      url: "/fas9000/chassis-replace-shutdown.html"
+      url: "/a700/chassis-replace-shutdown.html"
     - title: ハードウェアを交換します
-      url: "/fas9000/chassis-replace-move-hardware.html"
+      url: "/a700/chassis-replace-move-hardware.html"
     - title: 交換後の処理
-      url: "/fas9000/chassis-replace-complete-system-restore-rma.html"
+      url: "/a700/chassis-replace-complete-system-restore-rma.html"
   - title: コントローラモジュール
     pdf-filename: AFF A700 コントローラ
     entries:
     - title: 概要
-      url: "/fas9000/controller-replace-overview.html"
+      url: "/a700/controller-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
-      url: "/fas9000/controller-replace-shutdown.html"
+      url: "/a700/controller-replace-shutdown.html"
     - title: コントローラモジュールを交換します
-      url: "/fas9000/controller-replace.html"
+      url: "/a700/controller-replace.html"
     - title: システム設定を復元します
-      url: "/fas9000/controller-replace-system-config-restore-and-verify.html"
+      url: "/a700/controller-replace-system-config-restore-and-verify.html"
     - title: システムにケーブルを再接続
-      url: "/fas9000/controller-replace-recable-reassign-disks.html"
+      url: "/a700/controller-replace-recable-reassign-disks.html"
     - title: システムのリストアを完了
-      url: "/fas9000/controller-replace-complete-system-restoration.html"
+      url: "/a700/controller-replace-complete-system-restoration.html"
   - title: DCPM を実行します
-    url: "/fas9000/dcpm-nvram10-battery-replace.html"
+    url: "/a700/dcpm-nvram10-battery-replace.html"
   - title: DIMM
-    url: "/fas9000/dimm-replace.html"
+    url: "/a700/dimm-replace.html"
   - title: ファン
-    url: "/fas9000/fan-swap-out.html"
+    url: "/a700/fan-swap-out.html"
   - title: I/O モジュール
-    url: "/fas9000/pci-cards-and-risers-replace.html"
+    url: "/a700/pci-cards-and-risers-replace.html"
   - title: LED USB モジュール
-    url: "/fas9000/led-module-replace.html"
+    url: "/a700/led-module-replace.html"
   - title: NVRAM
-    url: "/fas9000/nvram-module-or-nvram-dimm-replacement.html"
+    url: "/a700/nvram-module-or-nvram-dimm-replacement.html"
   - title: 電源装置
-    url: "/fas9000/power-supply-swap-out.html"
+    url: "/a700/power-supply-swap-out.html"
   - title: RTC バッテリ
-    url: "/fas9000/rtc-battery-replace.html"
+    url: "/a700/rtc-battery-replace.html"
   - title: X91148A モジュール
     pdf-filename: AFF A700 X91148A モジュール
     entries:
     - title: 概要
-      url: "/fas9000/x91148a-module-install-overview.html"
+      url: "/a700/x91148a-module-install-overview.html"
     - title: オープンスロットを備えた AFF A700 システム
-      url: "/fas9000/x91148a-modules-with-open-slots-add.html"
+      url: "/a700/x91148a-modules-with-open-slots-add.html"
     - title: AFF A700 システムにオープンスロットがありません
-      url: "/fas9000/x91148a-modules-with-no-open-slots-add.html"
+      url: "/a700/x91148a-modules-with-no-open-slots-add.html"

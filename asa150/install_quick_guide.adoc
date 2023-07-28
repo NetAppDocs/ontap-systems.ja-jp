@@ -1,0 +1,17 @@
+---
+permalink: asa150/install-quick-guide.html 
+sidebar: sidebar 
+keywords: asa a150, a150, asa, quick, guide, graphic, instructions, install, rack, cable 
+summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。 
+---
+= クイックガイド- ASA A150
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ラックへの設置とケーブル接続から、システムの初期起動までのシステムの設置方法について説明します。使用 link:../media/PDF/March_2023_Rev1_AFFA150_ISI.pdf["AFF A150システムの設置とセットアップの手順"^] ネットアップシステムのインストールに精通している場合。
+
+
+NOTE: ASA A150は、AFF A150システムと同じインストール手順を使用します。

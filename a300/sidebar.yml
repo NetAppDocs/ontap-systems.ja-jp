@@ -1,7 +1,6 @@
 ---
 section: a300
 title: AFF A300 システム
-url: "/a300/index.html"
 entries:
 - title: 設置とセットアップ
   pdf-filename: AFF A300 インストールおよびセットアップ
@@ -17,6 +16,8 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF A300 の維持
   entries:
+  - title: 概要
+    url: "/a300/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF A300 ブートメディア
     entries:
