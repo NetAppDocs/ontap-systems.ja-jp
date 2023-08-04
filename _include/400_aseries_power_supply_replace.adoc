@@ -1,16 +1,7 @@
----
-permalink: a400/power-supply-replace.html 
-sidebar: sidebar 
-keywords: aff a400, aff, a400, replace, replacing, power, supply, psu, disconnect, target, psu, unplug, power, cable, removing, remove, replacement, source, replace a power supply 
-summary: 電源装置（ PSU ）を交換するには、ターゲットの PSU の電源を切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。 
----
-= 電源装置の交換 - AFF A400
+= 
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
 
-[role="lead"]
 電源装置（ PSU ）を交換するには、ターゲットの PSU の電源を切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。
 
 * 電源装置は冗長で、ホットスワップに対応しています。

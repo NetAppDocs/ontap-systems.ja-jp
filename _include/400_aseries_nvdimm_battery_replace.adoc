@@ -1,16 +1,7 @@
----
-permalink: a400/nvdimm-battery-replace.html 
-sidebar: sidebar 
-keywords: aff a400, aff, a400, replace, nvdimm, battery, remove, controller, module, reinstall, impair, aggregate, switch, back, two-node, metrocluster, configuration, replacement, complete, process, replace the nvdimm battery, shut down the impaired controller, remove the controller module, replace the nvdimm battery, install the controller module, restore the controller module, switch back aggregates in a two-node metrocluster configuration, complete the replacement process 
-summary: NVDIMM バッテリを交換するには、コントローラモジュールを取り外し、バッテリを取り外し、バッテリを交換してから、コントローラモジュールを再度取り付ける必要があります。 
----
-= NVDIMM バッテリを交換してください - AFF A400
+= 手順 1 ：障害のあるコントローラをシャットダウンします
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
 
-[role="lead"]
 NVDIMM バッテリを交換するには、コントローラモジュールを取り外し、バッテリを取り外し、バッテリを交換してから、コントローラモジュールを再度取り付ける必要があります。
 
 システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。

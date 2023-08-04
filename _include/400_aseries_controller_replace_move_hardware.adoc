@@ -1,16 +1,7 @@
----
-permalink: a400/controller-replace-move-hardware.html 
-sidebar: sidebar 
-keywords: aff a400, move the controller module hardware 
-summary: コントローラモジュールハードウェアを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。 
----
-= コントローラモジュールハードウェアを交換してください - AFF A400
+= 手順 1 ：コントローラモジュールを取り外す
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
 
-[role="lead"]
 コントローラモジュールハードウェアを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。
 
 

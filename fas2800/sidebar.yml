@@ -17,6 +17,8 @@ entries:
 - title: メンテナンス
   pdf-filename: FAS2800の保守点検
   entries:
+  - title: 概要
+    url: "/fas2800/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: FAS2800ブートメディア
     entries:

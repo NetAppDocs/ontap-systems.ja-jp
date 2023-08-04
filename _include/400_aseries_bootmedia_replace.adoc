@@ -1,16 +1,7 @@
----
-permalink: a400/bootmedia-replace.html 
-sidebar: sidebar 
-keywords: aff a400, aff, a400, locate, boot, media, controller, module, fre, map, direction, replace, replace the boot media 
-summary: コントローラモジュールのブートメディアの場所を確認し（コントローラモジュールの FRU マップを参照）、手順に従って交換する必要があります。 
----
-= ブートメディアを交換してください - AFF A400
+= 手順 1 ：コントローラモジュールを取り外す
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
 
-[role="lead"]
 ブートメディアを交換するには、障害のあるコントローラモジュールを取り外し、交換用ブートメディアを取り付けて、ブートイメージを USB フラッシュドライブに転送する必要があります。
 
 
