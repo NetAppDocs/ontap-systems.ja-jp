@@ -2126,18 +2126,12 @@
   <block id="88cf45a15ad0d90bd6e19a24f810822a" category="paragraph">交換用 PDU がシステムキャビネットでサポートされ、設置されている機器に十分な電力を供給する必要があります。</block>
   <block id="5404442a7ea7dc52ed099fdd23e4199c" category="inline-link">hwu.netapp.com</block>
   <block id="82e5aa4d5246e6a9e6a64d53e8aef6dc" category="paragraph"><block ref="82e5aa4d5246e6a9e6a64d53e8aef6dc" category="inline-link-rx"></block></block>
-  <block id="4fbff5b4dee9636bd56900af51fdd7a8" category="list-text">ターゲット PDU の回路ブレーカーをオフにして、古い PDU を AC 電源から取り外します。</block>
-  <block id="1989ca3bd819f1099182bcf6351ed5b4" category="list-text">システムキャビネットに対して自身の接地対策を行い、各システムコンポーネントと PDU から電源コードを抜きます。</block>
   <block id="9ad9ea8490a641161f4adb6e3f2bc0ef" category="list-text">PDU フレームの下部のネジを最初に外します。</block>
   <block id="17de7c609b4fa11bfbd42b27506a7686" category="admonition">PDU の上部から最後のネジを外す際には、片手で PDU を支えてください。これにより、ネジを外したあとに PDU が落下したり、自分の方に倒れたりするのを防ぐことができます。</block>
-  <block id="3ac6263fbfd63ebfc4e426b2da956c22" category="list-text">古い PDU をシステムキャビネットから取り外します。</block>
   <block id="4dda4611a9de699220bc9f60e9d529c5" category="paragraph">交換用 PDU の取り付け時に再利用できるように、必ず取り付けネジを残しておきます。</block>
-  <block id="420bae0ac211e6a209a8ca28f7ce8fed" category="list-text">古い PDU からブラケットを取り外し、交換用 PDU の背面に取り付けます。</block>
-  <block id="199516540a6f5c3cc527e2233f00e852" category="list-text">交換用 PDU を支えながら、 PDU のマウントブラケットのスロットをシステムキャビネット内部のフレーム上部の穴に合わせ、古い PDU の取り付けネジを使用して PDU をシステムキャビネットフレームに固定します。</block>
   <block id="1663c81c2800071abb2416ac1f02af7b" category="list-text">PDU の底部をシステムキャビネットフレームに固定し、すべての取り付けネジを締めます。</block>
   <block id="50557c0f929805d051808d32d02f4238" category="list-text">すべての電源スイッチまたは回路ブレーカーがオフになっていることを確認します。</block>
   <block id="2198cda48b40760064274c533a0bb100" category="paragraph">回路ブレーカーがオフになっていない場合は、小型のドライバまたはまっすぐに伸ばしたペーパークリップをオフラベルの右側のスロットに差し込み、回路ブレーカーを切って回路をオフにします。</block>
-  <block id="3f1c6da286f9a0a50c82f505309eac01" category="list-text">各コンポーネントをコンポーネントから直接 PDU のコンセントに差し込んで、システムの電源コードを PDU に接続します。</block>
   <block id="c6a29e7ba231ff756ea033da9fcf39b0" category="admonition">PDU の分岐全体に負荷を分散し、各分岐の負荷を可能なかぎり均等にすることを推奨します。</block>
   <block id="baaa322344b84f330d59cb629097f0f7" category="list-text">各コンポーネントの電源ケーブルプラグを、プラグの上にあるケーブル固定クリップを使用して所定の位置に固定します。このとき、ケーブル固定クリップのカーブした方をプラグの肩部にスライドさせます。</block>
   <block id="2f4e88c25cdf52e68455a1402fb5bf5b" category="list-text">PDU の電源コードを AC 電源に接続します。</block>
@@ -2156,9 +2150,6 @@
   <block id="9682abea21a8105e25e53a664815f083" category="summary">システムコンポーネントを PDU に接続し、 PDU ケーブルを AC 電源に接続し、 AC 電源を電源に接続し、システムの電源をオンにする必要があります。</block>
   <block id="de377ff4f06113db5f03b6d5d7501baa" category="doc">システムキャビネットの電源をオンにします</block>
   <block id="44626aa3377a470ee951473cc16b9064" category="paragraph">システムキャビネット内の PDU ごとに別々の電源回路を使用できる必要があります。</block>
-  <block id="446a4e63e0c973838e08a5473045915d" category="list-text">機器を PDU に接続します。このとき、各コンポーネントの電源装置を必ずシステムキャビネットの反対側にある PDU に接続します。</block>
-  <block id="8c74169b1ab62a22c3b2a90a3051cfd3" category="list-text">PDU の電源ケーブルをシステムキャビネットの開口部に通します。</block>
-  <block id="2965b9f0cdabb572eee3c29e940336c6" category="paragraph">次のいずれかの開口部を使用します。</block>
   <block id="43fd8e637b5fa8a0480393ffec052db1" category="list-text">システムキャビネットの上部</block>
   <block id="845cc1d7e0e6e805d0656362d228ee19" category="list-text">システムキャビネットの背面ドア底部とフレームの間</block>
   <block id="5c04468bd8d9f11247b1e74c799efff1" category="list-text">フロアの開口部を通ってシステムキャビネットの下</block>
@@ -4702,7 +4693,6 @@
   <block id="11d02190504093bd73e567dcb0e63a7b" category="sidebar">X91148A モジュール</block>
   <block id="3b94033c8a5b93831bf0d7c1fa418f82" category="sidebar">新しいストレージシステムにシェルフを設置します</block>
   <block id="bb1befc9e7977eedfa3877ae4c91a4ac" category="sidebar">SAS ケーブル接続ルール、ワークシート、および例</block>
-  <block id="711fec659e5c52bba32ca7f6f3439502" category="sidebar">シェルフ LED のステータス状態</block>
   <block id="e7fe78f29d2a12982128aa007f6851a6" category="sidebar">AFF A250 システム</block>
   <block id="0505c366cf2aa05ef59b3b78f4e74a9f" category="sidebar">AFF A250 のインストールとセットアップ</block>
   <block id="b4de374d75b22d216e3867b88bd708e7" category="sidebar">インストールとセットアップを選択します</block>
@@ -7743,7 +7733,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="40ab4deb5c724a3e2d6c8f6d96a94554" category="doc">コントローラをシャットダウンします（FAS2800）</block>
   <block id="5f81816799fe408c4f5d0d2b06be7dd0" category="doc">クイックガイド- FAS2800</block>
   <block id="b0f0e558d3522c3be05dd8c2dd0af1cc" category="inline-link-macro">FAS2800システムの設置およびセットアップ手順</block>
-  <block id="dcd1fb87d1725e210ef205f9a1c5e788" category="paragraph"><block ref="dcd1fb87d1725e210ef205f9a1c5e788" category="inline-link-macro-rx"></block></block>
   <block id="30d72b7769d2368f3a2f7fcacca60c27" category="doc">DIMMを交換- FAS2800</block>
   <block id="041e48089a1444bcdc82526d41790e40" category="paragraph">コントローラモジュールをシステムから取り外し、コントローラモジュールカバーを取り外します。</block>
   <block id="8caaa86fafbf22c9627e97fb31c1eea5" category="paragraph">コントローラ内部のDIMMの場所を確認して取り外し、交換します。</block>
@@ -7873,12 +7862,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="0ab7f92a68b16764d7667e3b826e3433" category="paragraph">障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にして、システムで実行されているONTAPのバージョンを確認する必要があります。</block>
   <block id="28a80c9e2cd7e688ac36b9d1d600c170" category="summary">キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、アグリゲートをスイッチバックし、障害が発生したパーツをNetAppに返却する必要があります。</block>
   <block id="69f3a5a3fa19fee640389983d958d940" category="section-title">手順2：2ノードMetroCluster構成でアグリゲートをスイッチバックする</block>
-  <block id="cd48288105e3b8975765f5dfc4eb68c6" category="paragraph">400_fan_swap_out.adoc
-サービスを中断せずにファンモジュールを交換するには、特定の順序でタスクを実行する必要があります。</block>
   <block id="341b682adfeb628f1bd1c2eb360fa9a4" category="paragraph">ファン、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、障害のあるシャーシを障害のあるシャーシと同じモデルの新しいシャーシと交換します。</block>
   <block id="6b78a305de67da849895158b569b9d11" category="paragraph">新しいシャーシにコントローラモジュールを取り付けたら、ブートする必要があります。</block>
-  <block id="4971d1d0e646704442f36457f270bd80" category="paragraph">400_nvdimm_replace.adoc
-フラッシュの有効期間がほぼ終了していること、または識別された NVDIMM が全般的に正常でないことがシステムで登録された場合は、コントローラモジュールの NVDIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。</block>
   <block id="bfce71371c42897290715d3a240df4ba" category="paragraph">コントローラモジュールのコンポーネントを交換したら、コントローラモジュールをシャーシに再度取り付けてブートする必要があります。</block>
   <block id="f57ac97281a56eb21b6c67d6f8d23883" category="paragraph">システムにケーブルを再接続し、コントローラモジュールをギブバックして、自動ギブバックを再度有効にする必要があります。</block>
   <block id="0e7d06b3f50f9081b15d133e07f647b6" category="summary">ASA A400ハードウェアのメンテナンス</block>
@@ -8438,19 +8423,14 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="a876a1a0c70aad6f175618bf59efec73" category="sidebar">ASA A400リアルタイムクロックバッテリ</block>
   <block id="5590b96dc59eb91eb51b7b3ea51d3fd8" category="image-alt">DRW C400コントローラIEOPS 1216の取り外し</block>
   <block id="771f4aeef9d68203f402ef43f2428c23" category="paragraph">コントローラがシャーシからわずかに引き出されます</block>
-  <block id="8fd39c2eb9c2c19fb66fabb13ca5407d" category="image-alt">DRW C400 NVDIMMバッテリIEOPS 1227</block>
   <block id="6eabe3dfd3272d314cbb0448ef86a7ca" category="section-title">手順 5 ：診断を実行します</block>
-  <block id="794b73a50d9f5595ccb242091ccf6e88" category="paragraph">システムのコンポーネントを交換したら、そのコンポーネントに対して診断テストを実行する必要があります。</block>
   <block id="1292b9de6b55a89a9f27c917af53c51e" category="paragraph">診断を開始するには、システムに LOADER プロンプトが表示されている必要があります。</block>
   <block id="1082bfd13ce3c25ccfc85ed699b54126" category="paragraph">診断手順のコマンドは、すべてコンポーネントを交換するコントローラから実行します。</block>
   <block id="e7715fbdf353439bc04c101e641a6a00" category="list-text">作業をするコントローラに LOADER プロンプトが表示されていない場合は、コントローラをリブートします。<block ref="d9a3ee635a736b8059849c211af96e57" prefix=" " category="inline-code"></block></block>
   <block id="cafeac4841bc727e191d8e441daae473" category="paragraph">コマンドを問題したら、システムが LOADER プロンプトで停止するまで待ちます。</block>
   <block id="14a78bce1fad359d61fd0d2e4a24c3f0" category="list-text">LOADER プロンプトで、システムレベルの診断用に特別に設計されたドライバにアクセスします。<block ref="87ee09e2a5f76fd0b04e7f6e02d1e3ef" prefix=" " category="inline-code"></block></block>
   <block id="4d0d7afa62744b6e8fc6dc6801b2da31" category="list-text">表示されたメニューから「 * Scan System * （システムのスキャン）」を選択して、診断テストの実行を有効にします。</block>
-  <block id="4c82586ad94f678fd41f1bb0af345849" category="list-text">表示されたメニューから * Test Memory * を選択して、診断テストを実行します。</block>
   <block id="62b108a49afeed7e7e1892a4157f8715" category="list-text">前述の手順の結果に応じて、次に進みます。</block>
-  <block id="9e1e2230ae8a4b73d9a6a3b77c93c501" category="list-text">スキャンで問題が見つかった場合は、問題を修正してからスキャンを再実行します。</block>
-  <block id="c46c5861f25b8f00cf91204cfc2402e9" category="list-text">スキャンでエラーが報告されなかった場合は、メニューから Reboot を選択してシステムをリブートします。</block>
   <block id="88f619f79a466f76f35e017863a94304" category="section-title">手順 6 ：診断の実行後にコントローラモジュールを稼働状態に戻す</block>
   <block id="9e70237e8106527e732b0c345e0d528e" category="paragraph">診断が完了したら、システムにケーブルを再接続してコントローラモジュールをギブバックし、自動ギブバックを再度有効にする必要があります。</block>
   <block id="6d9502ea6880092a4496782c893e3da2" category="image-alt">DRW C400 PSU IEOPS 1237</block>
@@ -8461,9 +8441,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="80c14517a78070e49e0abac5d7f9ddbf" category="image-alt">DRW C400メザニンカードの交換IEOPS 1236</block>
   <block id="ff0420a1b97d66a283e50773fa71f7ab" category="image-alt">DRW C400 RTC BATT IEOPS 1239</block>
   <block id="bd47a35792b075014fd52e08e307f334" category="paragraph">次の図に電源装置を交換する手順を記載します。</block>
-  <block id="6867fc910d131de047b47f8e69a79887" category="paragraph">システム内の DIMM を交換したら、そのコンポーネントに対して診断テストを実行する必要があります。</block>
   <block id="627dae9b7fdce24278b6e4ff295eb7be" category="list-text">表示されたメニューから * Test Memory * を選択します。</block>
-  <block id="ec0d0904d577b30f49df1757109008c2" category="list-text">表示されたサブメニューからオプションを選択し、テストを実行します。</block>
   <block id="79934a1e2f37ff48405809bfef33e025" category="list-text">テストに失敗した場合は、エラーを修正してからテストを再実行します。</block>
   <block id="7795a0b926d5a3e9bb0b6489d5f08336" category="list-text">テストでエラーが報告されなかった場合は、メニューから Reboot を選択してシステムをリブートします。</block>
   <block id="319906493abbf4e43070e2a96baf7c1a" category="paragraph">システムの NVDIMM を交換したら、そのコンポーネントの診断テストを実行する必要があります。</block>
@@ -8498,4 +8476,55 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3e2d1e468d09ac8c0d6588070ba9373f" category="doc">AFF、ASA、FASシステムの新機能</block>
   <block id="e0bcfdcb3cdb0fb1cf75064d4e0a8516" category="sidebar">ネットアップのAFF、ASA、FASストレージシステムは、業界最先端のデータ管理機能を備えた、エンタープライズクラスの最先端のスケールアウトオールフラッシュまたはハイブリッドストレージです。このサイトのドキュメントを使用して、システムのインストール、拡張、アップグレード、保守を行います。</block>
   <block id="834c650e32073b55fedca10accbda908" category="sidebar">AFF、ASA、FASシステムのドキュメント</block>
+  <block id="ca31c0aa49625e7cda9cae921b597ddc" category="admonition">Ver2コントローラに搭載されているDIMMソケットの数が少なくなっています。サポートされるDIMMの数が減少したり、DIMMソケットの番号が変更されたりすることはありません。DIMMを新しいコントローラモジュールに移動するときは、障害のあるコントローラモジュールと同じソケット番号/場所にDIMMを取り付けます。  DIMMソケットの位置については、Ver2コントローラモジュールのFRUマップ図を参照してください。</block>
+  <block id="41f70b901e92516347e56b1eee6fe77b" category="section-title">手順 5 ：システムレベルの診断を実行します</block>
+  <block id="2a075cce7e33313e84aaa96ceb86a4c8" category="paragraph">新しい DIMM を取り付けたら、診断を実行する必要があります。</block>
+  <block id="df1e43716c35bc8d4504c85a27a53747" category="paragraph">システムレベルの診断を開始するには、システムに LOADER プロンプトが表示されている必要があります。</block>
+  <block id="a9aa9ee572e50473b1c62b2a894e2043" category="list-text">作業をするコントローラに LOADER プロンプトが表示されていない場合は、次の手順を実行します。</block>
+  <block id="a62ebd9a348c36c016869d6133f9d6a7" category="list-text">表示されたメニューからメンテナンスモードオプションを選択します。</block>
+  <block id="2f550a4de949e9364b8ac6aefff7f6b7" category="list-text">コントローラがメンテナンスモードでブートしたら、コントローラを停止します。<block ref="4a1bde0ea8bcda2a591f42646813c477" prefix=" " category="inline-code"></block></block>
+  <block id="c63722af0556df99585d9c4de88eb02d" category="admonition">ブートプロセス中に、安全に応答できます。<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block> をクリックします。</block>
+  <block id="92a410b1608886e36ab28b2f459ca694" category="list-text">HA 構成でメンテナンスモードに切り替えたときに、正常なコントローラが停止したままであることの確認を求めるプロンプトが表示される場合。</block>
+  <block id="7e3c65608f93c3fbf4ce1a591a4d2340" category="paragraph">ブートプロセス中に、安全に応答できます。<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block> メンテナンスモードプロンプト（*&gt;）が表示されるまで、プロンプトに従います。</block>
+  <block id="e580ca306f46568a79f3f99e6ff00dd4" category="list-text">システムメモリの診断を実行します。<block ref="9cc327d245a3e2bf3cf969c94332f389" prefix=" " category="inline-code"></block></block>
+  <block id="0779a45c530b8731effd7061f49b82c5" category="list-text">DIMMの交換が原因でハードウェアの問題が発生していないことを確認します。<block ref="0d54fb4fe6de512f295c58294a4c56a7" prefix=" " category="inline-code"></block></block>
+  <block id="5da59e51284514317dd89943fd6da2c6" category="paragraph">テストに失敗した場合は、プロンプトに戻ります。失敗した場合は、そのステータスがすべて表示されます。</block>
+  <block id="c444e1d5af673cd5dfdeb1085082e165" category="cell">システムレベルの診断のテスト結果</block>
+  <block id="e51b992cacbc73ddca29fb6c03d6002d" category="paragraph">は失敗なしで完了しました</block>
+  <block id="629e9741b680c5d2f9b826ad2827a093" category="list-text">ステータスログを消去します。<block ref="5337cb249c294f16f70e226d13832fe2" prefix=" " category="inline-code"></block></block>
+  <block id="b136ba63933bc4583a57c094dbaf6a54" category="list-text">ログが消去されたことを確認します。<block ref="ffcce1e10203a888408d6b38d996935b" prefix=" " category="inline-code"></block></block>
+  <block id="d83539fafeb4a565a2af47953e3b18ff" category="paragraph">次のデフォルトの応答が表示されます。</block>
+  <block id="4b8070f17628f093b654845050b5340a" category="paragraph">SLDIAG ：ログメッセージが存在しません。</block>
+  <block id="9130288fde26913b149c87c0c3f09798" category="paragraph">コントローラに LOADER プロンプトが表示されます。</block>
+  <block id="e98eb54c273dabf46f95d865ffe06863" category="list-text">LOADERプロンプトからコントローラをブートします。<block ref="bfa99df33b137bc8fb5f5407d7e58da8" prefix=" " category="inline-code"></block></block>
+  <block id="72b23f149d410394a99402b17b524532" category="cell">コントローラの構成</block>
+  <block id="beae2577508dff32956933c72e8af78a" category="paragraph">ギブバックを実行します。<block ref="06b377d178eed8a76119920cc708363f" prefix=" " category="inline-code"></block>        *注：*自動ギブバックを無効にした場合は、storage failover modifyコマンドを使用して再度有効にします。</block>
+  <block id="834caefd76621a278dc8eb267498ba4b" category="paragraph">テストが失敗しました</block>
+  <block id="36b7b39e8866d307e74c69b213e9f048" category="paragraph">問題の原因を特定します。</block>
+  <block id="723c3f20f55eb14062651aca6c8a7346" category="paragraph">コマンドを問題したら、システムが LOADER プロンプトで停止するまで待ちます。</block>
+  <block id="cfc0c5504a92f839aa78f19ba2247644" category="list-text">システムレベルの診断を実行するための考慮事項をすべて確認するとともに、ケーブルがしっかりと接続されているか、ハードウェアコンポーネントがストレージシステムに適切に取り付けられているかを確認します。</block>
+  <block id="8764a3167d4b2a62ad3ab1024610e8a0" category="list-text">対象となるコントローラモジュールをブートし、<block ref="76be6883bcf9e8a6aed3a347ac20e41f" prefix=" " category="inline-code"></block> ブートメニューを表示するように求められたら、次の手順を実行します。</block>
+  <block id="c644e1bd6ef1c961f0ee51f0001a2a80" category="list-text">シャーシ内にコントローラモジュールが 2 つある場合は、対象となるコントローラモジュールをシャーシに完全に取り付けます。</block>
+  <block id="c73474569fe6618d9069e1f3b42bbb62" category="paragraph">コントローラモジュールを完全に取り付けると、モジュールがブートします。</block>
+  <block id="cd344280bdd1b4c0a3bfe1c043079039" category="list-text">シャーシ内にコントローラモジュールが 1 つしかない場合は、電源装置を接続して電源をオンにします。</block>
+  <block id="0a04c386b1c4aba682caa8fbe7cfe6a5" category="list-text">メニューから、メンテナンスモードでのブートを選択します。</block>
+  <block id="b68d60431d57a95615f83d1a1fa1b999" category="list-text">次のコマンドを入力してメンテナンスモードを終了します。<block ref="4a1bde0ea8bcda2a591f42646813c477" prefix=" " category="inline-code"></block></block>
+  <block id="7de4082b4319513bf089f060127a9d55" category="list-text">システムレベルの診断テストを再実行します。</block>
+  <block id="f7ed34876dbd3974ede0b50d2019fcc5" category="paragraph"><block ref="f7ed34876dbd3974ede0b50d2019fcc5" category="inline-link-macro-rx"></block></block>
+  <block id="cac76ada4fbfca68ed190eb21810e1af" category="inline-link">FAS2820</block>
+  <block id="d269857d9f0df177f932595366b187b5" category="paragraph"><block ref="d269857d9f0df177f932595366b187b5" category="inline-link-rx"></block></block>
+  <block id="b6e60011eab2ca1cf5d6c756a1bbfc5e" category="paragraph">ONTAP 9.13.1</block>
+  <block id="93f637af8ac5da333e550231ad3ba0fa" category="admonition">PDUに障害が発生した場合にシステムが停止するのを防ぐために、コンポーネントの両方の電源ケーブルを1つのPDUに接続しないでください。図に示すように、異なる回路に接続されているPDSに負荷を分散します。</block>
+  <block id="c8d15ffad402fb5c47edd1a01fc0bddc" category="list-text">機器をPDUに接続します。</block>
+  <block id="3ded18266b7e48e45601da3a7e439064" category="list-text">コントローラの電源装置を、異なる電源に接続されている別 々 のPDUに接続します。</block>
+  <block id="0c634889e74dcc29e25f327dc059325d" category="list-text">ドライブシェルフの電源装置を、異なる電源に接続されている別 々 のPDUに接続します。</block>
+  <block id="d62665e6ca42d66f7798a47b3de173c1" category="list-text">スイッチの電源装置を、異なる電源に接続された別 々 のPDUに接続します。</block>
+  <block id="491e0bd8633c24f663133d28bbca00b6" category="image-alt">キャビネット電源ケーブルIEOPS 1320</block>
+  <block id="a8160b1047e34e32f29ffcef388142ae" category="paragraph">PDUの電源ケーブルをシステムキャビネットの次のいずれかの開口部に通します。</block>
+  <block id="9f708794421d9c2f9fa55bb42915f824" category="list-text">障害のあるPDUの回路ブレーカーをオフにし、障害のあるPDUをAC電源から取り外します。</block>
+  <block id="16eadd18e8cd7dafc21fca24e9d774c0" category="list-text">システムキャビネットのアース接続を行い、各システムコンポーネントと障害のあるPDUから電源コードを抜きます。</block>
+  <block id="c9144dd81d5fb57474d7493f00d69ad5" category="list-text">障害のあるPDUをシステムキャビネットから取り外します。</block>
+  <block id="6693af315bf1c245b8a89cbbb645b36c" category="list-text">障害のあるPDUからブラケットを取り外し、交換用PDUの背面に取り付けます。</block>
+  <block id="0fa3e40fa136f7cfe1746d5ce1d7e9ee" category="list-text">交換用PDUを支えながら、PDUの取り付けブラケットのスロットをシステムキャビネット内部のフレームの上部の穴に合わせ、障害のあるPDUの取り付けネジを使用してPDUをシステムキャビネットフレームに固定します。</block>
+  <block id="143d47d33d1ad99e226055b46abe364d" category="list-text">ストレージシステム、スイッチ、およびドライブシェルフから取り外した電源コードを交換用PDUに接続します。各コンポーネントはコンポーネントの真向かいにあるPDUコンセントに差し込みます。</block>
 </blocks>

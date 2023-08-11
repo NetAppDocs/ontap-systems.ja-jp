@@ -32,5 +32,3 @@ entries:
     url: "/ns224/service-replace-power-supply.html"
   - title: リアルタイムクロックバッテリ
     url: "/ns224/service-replace-rtc-battery.html"
-  - title: シェルフ LED のステータス状態
-    url: "/ns224/service-monitor-leds.html"

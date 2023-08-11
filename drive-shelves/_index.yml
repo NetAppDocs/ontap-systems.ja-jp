@@ -50,6 +50,8 @@ indexpage:
       url: "../sas3/service-hot-swap-drive-ds460c.html"
     - title: DS460C シェルフ内のドライブドロワー
       url: "../sas3/service-replace-drawer-ds460c.html"
+    - title: ドライブシェルフのLED
+      url: "../sas3/service-monitor-leds.html"
     - title: DS460Cシエルフノフアン
       url: "../sas3/service-replace-fan-ds460c.html"
     - title: シェルフをホットリムーブする
@@ -58,5 +60,3 @@ indexpage:
       url: "../sas3/service-hot-swap-iom.html"
     - title: 電源装置
       url: "../sas3/service-hot-swap-power-supply.html"
-    - title: シェルフ LED のステータス状態
-      url: "../sas3/service-monitor-leds.html"
