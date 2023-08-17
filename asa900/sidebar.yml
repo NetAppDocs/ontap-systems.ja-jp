@@ -64,7 +64,7 @@ entries:
   - title: DIMM
     url: "/asa900/dimm_replace.html"
   - title: DCPM を実行します
-    url: "/asa900/dcpm_NVRAM11_battery_replace.html"
+    url: "/asa900/dcpm-nvram11-battery-replace.html"
   - title: ファン
     url: "/asa900/fan_swap_out.html"
   - title: I/O モジュール
