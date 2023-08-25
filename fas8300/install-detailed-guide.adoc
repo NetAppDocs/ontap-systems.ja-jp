@@ -36,7 +36,7 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62
 . すべての箱を開封して内容物を取り出します。
 . コントローラのシステムシリアル番号をメモします。
 +
-image::../media/drw_ssn_label.png[DRW SSN ラベル]
+image::../media/drw_ssn_label.png[システムシリアル番号の場所を示す例]
 
 . 同梱されていたケーブルの数と種類を確認し、書き留めておきます。
 +
@@ -115,7 +115,7 @@ mini-SAS HD 間ケーブル（注文内容による）
  a| 
 X66250-2-N-C （ 112-00342 ）
  a| 
-image:../media/oie_cable_fiber_lc_connector.png[""]
+image:../media/oie_cable_fiber_lc_connector.png["光ファイバLCコネクタを示す図"]
  a| 
 メザニンカード用の 16Gb FC ケーブルまたは 25GbE ケーブル（注文内容による）
 
@@ -139,7 +139,7 @@ Micro-USB コンソールケーブル
  a| 
 該当なし
  a| 
-image:../media/oie_cable_micro_usb.png[""]
+image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタを示す図"]
  a| 
 ネットワーク検出をサポートしていないラップトップまたはコンソールでソフトウェアをセットアップする際に使用するコンソール接続
 

@@ -35,7 +35,7 @@ AFF C800システムをインストールするには、アカウントを作成
 .. すべての箱を開封して内容物を取り出します。
 .. コントローラのシステムシリアル番号をメモします。
 +
-image::../media/drw_ssn_label.png[DRW SSN ラベル]
+image::../media/drw_ssn_label.png[システムシリアル番号の場所を示す例]
 
 
 
@@ -142,7 +142,7 @@ Micro-USB コンソールケーブル
  a| 
 該当なし
  a| 
-image:../media/oie_cable_micro_usb.png[""]
+image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタを示す図"]
  a| 
 ソフトウェアのセットアップ中のコンソール接続
 
@@ -251,7 +251,7 @@ image:../media/oie_legend_icon_2_lg.png[""]
  a| 
 image:../media/oie_legend_icon_3_lp.png[""]
  a| 
-管理ポートを管理ネットワークスイッチにケーブル接続します image:../media/drw_affa800_mgmt_cabling.png[""]
+管理ポートを管理ネットワークスイッチにケーブル接続します    image:../media/drw_affa800_mgmt_cabling.png["システム背面の管理ポートの場所を示す図"]
 
 
 
@@ -320,7 +320,7 @@ image:../media/oie_legend_icon_2_lg.png[""]
  a| 
 image:../media/oie_legend_icon_3_lp.png[""]
  a| 
-管理ポートを管理ネットワークスイッチにケーブル接続します image:../media/drw_affa800_mgmt_cabling.png[""]
+管理ポートを管理ネットワークスイッチにケーブル接続します    image:../media/drw_affa800_mgmt_cabling.png["システム背面の管理ポートの場所を示す図"]
 
 
 

@@ -35,7 +35,7 @@ image::../media/drw_a900_remove_install_PSU_module.png[DRW a900 は、 PSU モ�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
  a| 
 ロックボタン
 
@@ -68,14 +68,14 @@ image::../media/drw_a900_remove_install_fan.png[DRW a900 は取り付けファ�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
  a| 
 テラコッタロックボタン
 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ファンをスライドさせてシャーシから取り外します
 
@@ -105,14 +105,14 @@ image::../media/drw_a900_remove_PCM.png[DRW a900 は PCM を取り外します]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
  a| 
 カムハンドルロックボタン
 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 カムハンドル
 
@@ -164,14 +164,14 @@ image:../media/drw_a900_remove_PCIe_module.png[""]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
  a| 
 文字と数字が記載された I/O カムラッチ
 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ロックが完全に解除された I/O カムラッチ
 
@@ -200,7 +200,7 @@ image::../media/drw_a900_remove_NV_battery.png[DRW a900 は NV バッテリを�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
  a| 
 DCPMテラコッタロックボタン
 
@@ -223,14 +223,14 @@ image::../media/drw_a900_remove_replace_LED_mod.png[DRW a900 は LED モード�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
  a| 
 モジュールをイジェクトします。
 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 シャーシから引き出します。
 

@@ -35,7 +35,7 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62
 .. すべての箱を開封して内容物を取り出します。
 .. コントローラのシステムシリアル番号をメモします。
 +
-image::../media/drw_ssn_label.png[DRW SSN ラベル]
+image::../media/drw_ssn_label.png[システムシリアル番号の場所を示す例]
 
 .. アカウントを設定します。
 +
@@ -125,7 +125,7 @@ X66260-5 （ 112-00344 ）、 5m
 
 X66260-30 （ 112-00354 ）、 30m
  a| 
-image:../media/oie_cable_fiber_lc_connector.png[""]
+image:../media/oie_cable_fiber_lc_connector.png["光ファイバLCコネクタを示す図"]
  a| 
 FC 構成（注文内容による）
 
@@ -149,7 +149,7 @@ Micro-USB コンソールケーブル
  a| 
 該当なし
  a| 
-image:../media/oie_cable_micro_usb.png[""]
+image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタを示す図"]
  a| 
 ネットワーク検出をサポートしていないラップトップまたはコンソールでソフトウェアをセットアップする際に使用するコンソール接続
 

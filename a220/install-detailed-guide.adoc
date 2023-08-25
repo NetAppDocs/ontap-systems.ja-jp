@@ -37,7 +37,7 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62
 . すべての箱を開封して内容物を取り出します。
 . コントローラのシステムシリアル番号をメモします。
 +
-image::../media/drw_ssn_label.png[DRW SSN ラベル]
+image::../media/drw_ssn_label.png[システムシリアル番号の場所を示す例]
 
 . アカウントを設定します。
 +
@@ -102,7 +102,7 @@ X6536-R6 （ 112-00090 ）、 5m
 
 X6554-R6 （ 112-00189 ）、 15m
  a| 
-image:../media/oie_cable_fiber_lc_connector.png[""]
+image:../media/oie_cable_fiber_lc_connector.png["光ファイバLCコネクタを示す図"]
  a| 
 FC ホストネットワーク
 
@@ -143,7 +143,7 @@ Micro-USB コンソールケーブル
  a| 
 該当なし
  a| 
-image:../media/oie_cable_micro_usb.png[""]
+image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタを示す図"]
  a| 
 Windows または Mac 以外のラップトップ / コンソールでソフトウェアをセットアップする際のコンソール接続
 
@@ -247,7 +247,7 @@ FC ホスト
 
 NOTE: 一方のポートペアを CNA 、もう一方のポートペアを FC として接続するか、あるいは両方のポートペアを CNA または FC として接続することができます。
 
-image:../media/drw_c190_u_fc_10gbe_cbling.png[""]
+image:../media/drw_c190_u_fc_10gbe_cbling.png["説明が付随しているデータポート接続の図"]
 
 
 
@@ -324,7 +324,7 @@ FC ホスト
 
 NOTE: 一方のポートペアを CNA 、もう一方のポートペアを FC として接続するか、あるいは両方のポートペアを CNA または FC として接続することができます。
 
-image:../media/drw_c190_u_fc_10gbe_cbling.png[""]
+image:../media/drw_c190_u_fc_10gbe_cbling.png["説明が付随しているデータポート接続の図"]
 
 
 
@@ -378,7 +378,8 @@ image:../media/oie_legend_icon_1_lg.png[""]
 クラスタインターコネクトケーブルを使用して、クラスタインターコネクトポートを相互に接続します。
 
 ** e0a から e0a
-** e0b から e0bimage:../media/drw_c190_e_tnsc_clust_cbling.png[""]
+** e0bからe0b
+image:../media/drw_c190_e_tnsc_clust_cbling.png["コントローラ背面のポート間のクラスタインターコネクトを示す図"]
 
 
 

@@ -10,6 +10,7 @@ summary: ここでは、システムの設置とケーブル接続の方法を�
 :imagesdir: ../media/
 
 
+[role="lead"]
 次のビデオでは、システムをラックに設置してケーブルを配線し、システムの初期設定を行う方法について説明します。
 
 MetroCluster 構成の場合は、を使用します https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster のドキュメント"^]。

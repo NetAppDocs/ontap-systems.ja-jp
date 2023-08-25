@@ -144,12 +144,12 @@ image::../media/drw_a320_dimm_map.png[DRW A320 DIMM マップ]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | エアダクト 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ** システム DIMM スロット： 2 、 4 、 7 、 9 、 13 、 15 、 18 、 20
 ** NVDIMM スロット： 11

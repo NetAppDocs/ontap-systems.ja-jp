@@ -39,7 +39,7 @@ AFF A150システムをインストールするには、NetApp Support Siteで�
 . すべての箱を開封して内容物を取り出します。
 . コントローラのシステムシリアル番号をメモします。
 +
-image::../media/drw_ssn_label.png[DRW SSN ラベル]
+image::../media/drw_ssn_label.png[システムシリアル番号の場所を示す例]
 
 . アカウントを設定します。
 +
@@ -95,7 +95,7 @@ X6536-R6 （ 112-00090 ）、 5m
 
 X6554-R6 （ 112-00189 ）、 15m
  a| 
-image:../media/oie_cable_fiber_lc_connector.png[""]
+image:../media/oie_cable_fiber_lc_connector.png["光ファイバLCコネクタを示す図"]
  a| 
 FC ホストネットワーク
 
@@ -136,7 +136,7 @@ Micro-USB コンソールケーブル
  a| 
 該当なし
  a| 
-image:../media/oie_cable_micro_usb.png[""]
+image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタを示す図"]
  a| 
 Windows または Mac 以外のラップトップ / コンソールでソフトウェアをセットアップする際のコンソール接続
 
@@ -236,7 +236,7 @@ UTA2データネットワーク構成:: 次のいずれかのタイプのケー�
 ** FCホストの場合は、0cと0d *または* 0eと0fを使用します。
 ** 10GbEシステムの場合は、e0cとe0d *または* e0eとe0fを使用します。
 +
-image:../media/drw_c190_u_fc_10gbe_cbling.png[""]
+image:../media/drw_c190_u_fc_10gbe_cbling.png["説明が付随しているデータポート接続の図"]
 
 +
 一方のポートペアを CNA 、もう一方のポートペアを FC として接続するか、あるいは両方のポートペアを CNA または FC として接続することができます。
@@ -287,7 +287,7 @@ UTA2データネットワーク構成:: 次のいずれかのタイプのケー�
 ** FCホストの場合は、0cおよび0d**または** 0eおよび0fを使用します。
 ** 10GbEシステムの場合は、e0cとe0d**または** e0eとe0fを使用します。
 +
-image:../media/drw_c190_u_fc_10gbe_cbling.png[""]
+image:../media/drw_c190_u_fc_10gbe_cbling.png["説明が付随しているデータポート接続の図"]
 
 +
 一方のポートペアを CNA 、もう一方のポートペアを FC として接続するか、あるいは両方のポートペアを CNA または FC として接続することができます。
@@ -369,7 +369,6 @@ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[""] mini-SAS HD 間ケ�
 
 == 手順5：システムのセットアップを完了します
 
-[role="lead"]
 システムのセットアップと設定を実行するには、スイッチとラップトップのみを接続してクラスタ検出を使用するか、システムのコントローラに直接接続してから管理スイッチに接続します。
 
 [role="tabbed-block"]

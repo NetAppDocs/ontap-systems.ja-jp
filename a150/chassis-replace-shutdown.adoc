@@ -17,7 +17,6 @@ summary: シャーシを交換するには、コントローラをシャット�
 
 == オプション 1 ：ほとんどの構成
 
-[role="lead"]
 この手順 は、2ノード、非MetroCluster構成専用です。システムのノードが3つ以上の場合は、を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_perform_a_graceful_shutdown_and_power_up_of_one_HA_pair_in_a_4__node_cluster["4ノードクラスタで1つのHAペアを正常にシャットダウンして電源をオンにする方法"^]。
 
 .作業を開始する前に

@@ -44,12 +44,12 @@ image::../media/drw_a800_pcm_remove.png[DRW A800 PCM の取り外し]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | 固定ラッチ 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ロッキングピン
 
@@ -72,21 +72,21 @@ image::../media/drw_a800_open_air_duct.png[DRW A800 オープンエアダクト]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
  a| 
 エアダクトの固定ツメ
 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 エアダクトをファンモジュールの方向にスライドさせます
 
 
 
  a| 
-image:../media/legend_icon_03.png[""]
+image:../media/legend_icon_03.png["番号3"]
  a| 
 エアダクトをファンモジュールの方向に回転させます
 
@@ -115,12 +115,12 @@ image::../media/drw_a800_replace_psu.png[DRW A800 PSU の交換]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | 電源装置の固定ツメ（青） 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 電源装置
 
@@ -151,12 +151,12 @@ image::../media/drw_a800_replace_fan.png[DRW A800 ファンの交換]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | ファンの固定ツメ 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ファンモジュール
 
@@ -181,19 +181,19 @@ image::../media/drw_a800_nvdimm_battery_replace.png[DRW A800 NVDIMM バッテリ
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | エアダクトライザー 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 NVDIMM バッテリプラグ
 
 
 
  a| 
-image:../media/legend_icon_03.png[""]
+image:../media/legend_icon_03.png["番号3"]
  a| 
 NVDIMM バッテリパック
 
@@ -234,12 +234,12 @@ image::../media/drw_a800_riser_2_3_remove.png[DRW A800 ライザー 2 3 を取�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | エアダクト 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ライザー 1 （左）、 2 （中央）、 3 （右）のロックラッチ
 
@@ -291,12 +291,12 @@ image::../media/drw_a800_no_risers_nvdimm_move.png[DRW A800 ： NVDIMM が移動
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | エアダクト 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 NVDIMM
 
@@ -338,33 +338,33 @@ image::../media/drw_a800_pcm_replace_only_boot_media.png[DRW A800 PCM は、ブ�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | エアダクト 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ライザー 3
 
 
 
  a| 
-image:../media/legend_icon_03.png[""]
+image:../media/legend_icon_03.png["番号3"]
  a| 
 No.1 プラスドライバ
 
 
 
  a| 
-image:../media/legend_icon_04.png[""]
+image:../media/legend_icon_04.png["番号4"]
  a| 
 ブートメディアのネジ
 
 
 
  a| 
-image:../media/legend_icon_05.png[""]
+image:../media/legend_icon_05.png["番号5"]
  a| 
 ブートメディア
 
@@ -427,12 +427,12 @@ image::../media/drw_a700s_close_air_duct.png[DRW a700s 閉エアダクト]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | 固定ツメ 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 スライドプランジャ
 

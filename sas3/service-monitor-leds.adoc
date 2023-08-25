@@ -201,7 +201,7 @@ DS460C ファンの LED は、ファンが正常に機能しているか、ハ�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
  a| 
 注意
  a| 
@@ -231,7 +231,7 @@ image:../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout.gif[""]
 | コールアウト | LED 名 | 状態 | 説明 
 
 
-.2+| image:../media/legend_icon_01.png[""] .2+| アクティビティ  a| 
+.2+| image:../media/legend_icon_01.png["番号1"] .2+| アクティビティ  a| 
 緑色に点灯します
  a| 
 ディスクドライブの電源が入っています。
@@ -246,7 +246,7 @@ image:../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout.gif[""]
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 注意
  a| 
@@ -334,6 +334,6 @@ image::../media/2860_dwg_amber_on_drive.gif[ドライブ上の 2860 DWG オレ�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | 警告 LED ライトが点灯します 
 |===

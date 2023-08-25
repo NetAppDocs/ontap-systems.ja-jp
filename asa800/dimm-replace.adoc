@@ -62,12 +62,12 @@ image::../media/drw_a800_pcm_remove.png[DRW A800 PCM の取り外し]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | 固定ラッチ 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ロッキングピン
 
@@ -89,19 +89,19 @@ image::../media/drw_a800_open_air_duct.png[DRW A800 オープンエアダクト]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | エアダクトの固定ツメ 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 エアダクトをファンモジュールの方向にスライドさせます
 
 
 
  a| 
-image:../media/legend_icon_03.png[""]
+image:../media/legend_icon_03.png["番号3"]
  a| 
 エアダクトをファンモジュールの方向に回転させます
 
@@ -126,12 +126,12 @@ image::../media/drw_a800_dimm_replace.png[DRW A800 DIMM の交換]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | エアダクトカバー 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ライザー 1 と DIMM バンク 1 および 3~6
 
@@ -189,12 +189,12 @@ image::../media/drw_a700s_close_air_duct.png[DRW a700s 閉エアダクト]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | 固定ツメ 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 スライドプランジャ
 

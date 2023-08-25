@@ -33,7 +33,7 @@ image::../media/drw_9000_remove_install_psu_module.gif[DRW 9000 取り付け PSU
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | ロックボタン 
 |===
 . 残りの電源装置に対して上記の手順を繰り返します。
@@ -61,7 +61,7 @@ image::../media/drw_9000_remove_install_fan.png[DRW 9000 取り付けファン�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | オレンジ色のリリースボタン 
 |===
 . ファンモジュールを脇へ置きます。
@@ -86,12 +86,12 @@ image::../media/drw_9000_remove_pcm.png[DRW 9000 PCM を取り外します]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | カムハンドルのリリースボタン 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 カムハンドル
 
@@ -137,12 +137,12 @@ image::../media/drw_9000_remove_pcie_module.png[DRW 9000 PCIe モジュールを
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | 文字と数字が記載された I/O カムラッチ 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ロックが完全に解除された I/O カムラッチ
 
@@ -170,7 +170,7 @@ image::../media/drw_9000_remove_nv_battery.png[DRW 9000 nv バッテリを取り
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | DCPM モジュールのオレンジ色のロックボタン 
 |===
 . DCPM モジュールを安全な場所に置き、残りの DCPM モジュールに対してこの手順を繰り返します。

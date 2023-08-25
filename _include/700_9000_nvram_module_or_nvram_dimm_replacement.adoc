@@ -199,14 +199,14 @@ image::../media/drw_9000_remove_flashcache.png[DRW 9000 FlashCache を削除し�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
  a| 
 オレンジ色のリリースボタン（ FlashCache モジュールが空の場合はグレー）
 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 FlashCache のカムハンドル
 
@@ -241,14 +241,14 @@ image::../media/drw_9000_move_remove_nvram_module.png[DRW 9000 MOVE NVRAM モジ
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
  a| 
 文字と数字が記載された I/O カムラッチ
 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ロックが完全に解除された I/O ラッチ
 
@@ -264,14 +264,14 @@ image::../media/drw_9000_remove_nvram_module_contents.png[DRW 9000 NVRAM モジ�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
  a| 
 カバーのロックボタン
 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 DIMM と DIMM のツメ
 
@@ -313,14 +313,14 @@ image::../media/drw_9000_move_remove_nvram_module.png[DRW 9000 MOVE NVRAM モジ
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
  a| 
 文字と数字が記載された I/O カムラッチ
 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ロックが完全に解除された I/O ラッチ
 
@@ -336,14 +336,14 @@ image::../media/drw_9000_remove_nvram_module_contents.png[DRW 9000 NVRAM モジ�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
  a| 
 カバーのロックボタン
 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 DIMM と DIMM のツメ
 

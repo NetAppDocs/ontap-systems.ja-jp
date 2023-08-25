@@ -39,12 +39,12 @@ image::../media/drw_a700s_pcm_remove.png[DRW a700s PCM の削除]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | 固定ラッチ 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ロッキングピン
 
@@ -66,19 +66,19 @@ image::../media/drw_a700s_open_air_duct.png[DRW a700s オープンエアダク�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | エアダクトの固定ツメ 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ライザー
 
 
 
  a| 
-image:../media/legend_icon_03.png[""]
+image:../media/legend_icon_03.png["番号3"]
  a| 
 エアダクト
 
@@ -109,33 +109,33 @@ image::../media/drw_a700s_nvme_replace.png[DRW a700s NVMe の置換]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | エアダクト 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ライザー 1 のロックラッチ
 
 
 
  a| 
-image:../media/legend_icon_03.png[""]
+image:../media/legend_icon_03.png["番号3"]
  a| 
 NVRAM カードに接続された NVRAM バッテリケーブルプラグ
 
 
 
  a| 
-image:../media/legend_icon_04.png[""]
+image:../media/legend_icon_04.png["番号4"]
  a| 
 カードロックブラケット
 
 
 
  a| 
-image:../media/legend_icon_05.png[""]
+image:../media/legend_icon_05.png["番号5"]
  a| 
 NVRAM カード
 
@@ -191,26 +191,26 @@ image::../media/drw_a700s_pcie_replace.png[DRW a700s PCIe の交換]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | エアダクト 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ライザーロックラッチ
 
 
 
  a| 
-image:../media/legend_icon_03.png[""]
+image:../media/legend_icon_03.png["番号3"]
  a| 
 カードロックブラケット
 
 
 
  a| 
-image:../media/legend_icon_04.png[""]
+image:../media/legend_icon_04.png["番号4"]
  a| 
 ライザー 2 （中央のライザー）とライザースロット 2 と 3 にある PCI カード
 
@@ -261,26 +261,26 @@ image::../media/drw_a700s_boot_media_replace.png[DRW a700s ブートメディア
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | エアダクト 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ライザー 2 （中央の PCIe モジュール）
 
 
 
  a| 
-image:../media/legend_icon_03.png[""]
+image:../media/legend_icon_03.png["番号3"]
  a| 
 ブートメディアのネジ
 
 
 
  a| 
-image:../media/legend_icon_04.png[""]
+image:../media/legend_icon_04.png["番号4"]
  a| 
 ブートメディア
 
@@ -323,12 +323,12 @@ image::../media/drw_a700s_replace_fan.png[DRW a700s では、ファンを交換�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | ファンの固定ツメ 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ファンモジュール
 
@@ -353,26 +353,26 @@ image::../media/drw_a700s_dimm_replace.png[DRW a700s DIMM の交換]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | エアダクト 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ライザー 1 と DIMM バンク 1~4
 
 
 
  a| 
-image:../media/legend_icon_03.png[""]
+image:../media/legend_icon_03.png["番号3"]
  a| 
 ライザー 2 と DIMM バンク 5~8 および 9~12
 
 
 
  a| 
-image:../media/legend_icon_04.png[""]
+image:../media/legend_icon_04.png["番号4"]
  a| 
 ライザー 3 と DIMM バンク 13~16 です
 
@@ -431,12 +431,12 @@ image::../media/drw_a700s_nvme_battery_replace.png[DRW a700s NVMe バッテリ�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | NVRAM バッテリプラグ 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 NVRAM バッテリ固定ツメ（青）
 
@@ -493,12 +493,12 @@ image::../media/drw_a700s_replace_psu.gif[DRW a700s は PSU を交換します]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | 電源装置の固定ツメ（青） 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 電源装置
 
@@ -537,12 +537,12 @@ image::../media/drw_a700s_close_air_duct.png[DRW a700s 閉エアダクト]
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | 固定ツメ 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 スライドプランジャ
 
