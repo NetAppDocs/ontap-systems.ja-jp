@@ -6479,7 +6479,6 @@
   <block id="e1d6265d5c32eb8c4e989291b8d72d20" category="list-text">モジュールをスロットにそっと挿入し、文字と数字が記載されたカムラッチを上に押してモジュールを所定の位置にロックします。</block>
   <block id="bc62fa4bef9a4cd2a983ca01d5a5b1b3" category="paragraph">カムラッチが完全にロック解除されました</block>
   <block id="58e30dc94cdf372b64dac305fbb57bc0" category="section-title">手順5：ディスクの再割り当て</block>
-  <block id="7b0ac7dba1c185e5ac66482ca29488da" category="admonition">ディスクの再割り当ては、NVRAMモジュールを交換する場合にのみ必要です。</block>
   <block id="84bda9f97f27f63cc6fa0c4cac3ddcb4" category="list-text">交換用コントローラがメンテナンスモードの場合（にと表示されます<block ref="2cf8a3bab83c4d2618c18eeeca9ebc98" prefix=" " category="inline-code"></block> プロンプト）でメンテナンスモードを終了し、LOADERプロンプトを表示します。<block ref="4a1bde0ea8bcda2a591f42646813c477" prefix=" " category="inline-code"></block></block>
   <block id="3cea6cd019ee970febca58bfe050e1cb" category="list-text">システムIDが一致しないためにシステムIDを上書きするかどうかを尋ねられた場合は、交換用コントローラのLOADERプロンプトからコントローラをブートし、「y」と入力します。</block>
   <block id="40ef2970d7d205d6f0ba4ecddaec7b51" category="list-text">待機しているギブバックを実行しています...交換用モジュールを取り付けたコントローラのコンソールにメッセージが表示されたら、正常なコントローラから、新しいパートナーシステムIDが自動的に割り当てられたことを確認します。<block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix=" " category="inline-code"></block></block>
@@ -8539,4 +8538,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e598646ba49e0f0b7db709308a38bd0c" category="inline-image-macro">コントローラ背面のポート間のクラスタインターコネクトを示す図</block>
   <block id="d5fe92183ddfd6502c92a350a2928047" category="list-text">e0bからe0b
 <block ref="23c439b7ef31021d610e4d3b988f3cd1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="10fbfa6320d8e7c72e731fbd9a6e6c69" category="admonition">ディスクの再割り当てはNVRAMモジュールを交換する場合にのみ必要で、NVRAM DIMMの交換には該当しません。</block>
+  <block id="099f7b942e4e89631784891716949599" category="admonition">この手順は、NVRAM DIMMの交換には適用されません。</block>
 </blocks>
