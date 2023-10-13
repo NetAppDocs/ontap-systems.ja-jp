@@ -179,6 +179,21 @@ mcc1A::> metrocluster operation show
 video::ca74d345-e213-4390-a599-aae10019ec82[panopto]
 image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取り外し]
 
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["番号1"]
+ a| 
+ロックラッチ
+
+
+
+ a| 
+image:../media/legend_icon_02.png["番号2"]
+| コントローラがシャーシからわずかに引き出されます 
+|===
 . 接地対策がまだの場合は、自身で適切に実施します。
 . 電源ケーブル固定クリップを外し、電源装置からケーブルを抜きます。
 . ケーブルマネジメントデバイスに接続しているケーブルをまとめているフックとループストラップを緩め、システムケーブルと SFP をコントローラモジュールから外し（必要な場合）、どのケーブルが何に接続されていたかを記録します。
@@ -212,6 +227,30 @@ NOTE: アニメーションと図は、 DIMM のないソケットの空きス�
 video::175c6597-449e-4dc8-8c02-aad9012f08b5[panopto]
 image::../media/drw_A400_Replace-NVDIMM-DIMM.png[DRW A400 NVDIMM DIMM の交換]
 
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["番号1"]
+ a| 
+DIMMの固定ツメ
+
+
+
+ a| 
+image:../media/legend_icon_02.png["番号2"]
+ a| 
+DIMM
+
+
+
+ a| 
+image:../media/legend_icon_03.png["番号3"]
+ a| 
+DIMMソケット
+
+|===
 DIMM はソケット 2 、 4 、 13 、 15 にあります。NVDIMM はスロット 11 にあります。
 
 . エアダクトを開きます。
@@ -255,6 +294,23 @@ NOTE: DIMM がスロットにまっすぐ差し込まれていることを目で
 video::0310fe80-b129-4685-8fef-ab19010e720a[panopto]
 image::../media/drw_A400_Install_controller_source.png[DRW A400 コントローラソースの取り付け]
 
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["番号1"]
+ a| 
+コントローラモジュール
+
+
+
+ a| 
+image:../media/legend_icon_02.png["番号2"]
+ a| 
+コントローラのロックラッチ
+
+|===
 . まだ行っていない場合は、エアダクトを閉じます。
 . コントローラモジュールの端をシャーシの開口部に合わせ、コントローラモジュールをシステムに半分までそっと押し込みます。
 +

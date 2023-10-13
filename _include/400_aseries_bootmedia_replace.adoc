@@ -23,7 +23,7 @@
 コントローラモジュールがシャーシから少し引き出されます。
 
 +
-image::../media/drw_c400_remove_controller_IEOPS-1216.svg[DRW C400コントローラIEOPS 1216の取り外し]
+image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取り外し]
 
 +
 |===
@@ -68,7 +68,7 @@ video::034f21ac-da55-4129-aaaa-b030017e5b49[panopto]
 .手順
 . エアダクトを開きます。
 +
-image::../media/drw_c400_open_air_duct_IEOPS-1215.svg[DRW C400オープンエアダクトIEOPS 1215]
+image::../media/drw_A400_open-air-duct.png[DRW A400 オープンエアダクト]
 
 +
 |===
@@ -101,7 +101,7 @@ image::../media/legend_icon_03.png[凡例アイコン 03]
 
 . コントローラモジュールからブートメディアの場所を確認して取り出します。
 +
-image::../media/drw_c400_replace_boot_media_IEOPS-1217.svg[DRW C400ブートメディアの交換IEOPS 1217]
+image::../media/drw_A400_Replace-boot_media.png[DRW A400 ブートメディアの交換]
 
 +
 |===

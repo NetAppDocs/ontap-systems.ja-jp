@@ -50,7 +50,7 @@ NOTE: SSDを使用している場合は、を参照してください https://kb
 . SSHを使用してクラスタにログインするか、クラスタ内の任意のノードからローカルのコンソールケーブルとラップトップ/コンソールを使用してログインします。
 . AutoSupport をオフにして、システムがオフラインになるまでの時間を指定します。
 +
-`system node autosupport invoke -node * -type all -messages "MAINT=8h Power Maintenance"`
+`system node autosupport invoke -node * -type all -message "MAINT=8h Power Maintenance"`
 
 . すべてのノードのSP / BMCアドレスを特定します。
 +

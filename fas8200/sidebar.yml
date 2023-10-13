@@ -11,8 +11,6 @@ entries:
     url: "/fas8200/install-setup.html"
   - title: クイックステップ
     url: "/fas8200/install-setup-linkout.html"
-  - title: ビデオの手順
-    url: "/fas8200/install-video-linkout.html"
 - title: メンテナンス
   pdf-filename: FAS8200 のメンテナンス
   entries:

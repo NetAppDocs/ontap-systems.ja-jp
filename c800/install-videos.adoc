@@ -1,34 +1,20 @@
 ---
 permalink: c800/install-videos.html 
 sidebar: sidebar 
-keywords: aff c800, hardware installation and cabling video, perform end-to-end software configuration video 
-summary: ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を紹介するビデオを 2 種類紹介します。 
+keywords: aff c800, hardware installation and cabling video 
+summary: 次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。 
 ---
-= ビデオ- AFF C800
+= ビデオ手順- AFF C800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用したシステムの初期設定の例を紹介するビデオを 2 種類紹介します。
-
-MetroCluster 構成の場合は、MetroCluster のインストールコンテンツを使用します。
-
-https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster のドキュメント"^]
-
-
-
-== ビデオ 1 ：ハードウェアの設置とケーブル接続
-
 次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
 
 .アニメーション- AFF C800のインストールとセットアップ
 video::db9f506c-b08e-4b66-b781-afc40187b639[panopto]
+MetroCluster 構成の場合は、MetroCluster のインストールコンテンツを使用します。
 
-
-== ビデオ 2 ：エンドツーエンドのソフトウェア設定を実行する
-
-次のビデオでは、 ONTAP 9.2 以降を実行するシステムのエンドツーエンドのソフトウェア設定を示します。
-
-video::WAE0afWhj1c?[youtube]
+https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster のドキュメント"^]

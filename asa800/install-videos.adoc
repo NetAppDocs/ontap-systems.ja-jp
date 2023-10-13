@@ -1,33 +1,19 @@
 ---
 permalink: asa800/install-videos.html 
 sidebar: sidebar 
-keywords: asa a800, hardware installation and cabling video, perform end-to-end software configuration video 
-summary: ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を紹介するビデオを 2 種類紹介します。 
+keywords: asa a800, hardware installation and cabling video 
+summary: 次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。 
 ---
-= ビデオ- ASA A800
+= ビデオ手順- ASA A800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用したシステムの初期設定の例を紹介するビデオを 2 種類紹介します。
-
-
-
-== ビデオ 1 ：ハードウェアの設置とケーブル接続
-
 次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
 
 .「アニメーション- AFF A800のインストールとセットアップ」を参照してください
 video::2a61ed74-a0ce-46c3-86d2-ab4b013c0030[panopto]
 
 NOTE: ASA A800は、AFF A800システムと同じインストール手順を使用します。
-
-
-
-== ビデオ 2 ：エンドツーエンドのソフトウェア設定を実行する
-
-次のビデオでは、 ONTAP 9.2 以降を実行するシステムのエンドツーエンドのソフトウェア設定を示します。
-
-video::WAE0afWhj1c?[youtube]

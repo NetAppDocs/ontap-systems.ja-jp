@@ -13,6 +13,37 @@ NOTE: シャーシからファンモジュールを取り外したら 2 分以�
 video::ae59d53d-7746-402c-bd6b-aad9012efa89[panopto]
 image::../media/drw_A400_Replace_fan.png[DRW A400 ファンの交換]
 
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["番号1"]
+ a| 
+ファンハンドル
+
+
+
+ a| 
+image:../media/legend_icon_02.png["番号2"]
+ a| 
+ロックタブ
+
+
+
+ a| 
+image:../media/legend_icon_03.png["番号3"]
+ a| 
+ファン
+
+
+
+ a| 
+image:../media/legend_icon_04.png["番号4"]
+ a| 
+ステータスLED
+
+|===
 . 接地対策がまだの場合は、自身で適切に実施します。
 . （必要な場合）両手でベゼルの両側の開口部を持ち、手前に引いてシャーシフレームのボールスタッドからベゼルを外します。
 . 交換が必要なファンモジュールを特定するために、コンソールのエラーメッセージを確認し、ファンモジュールの警告 LED を確認します。

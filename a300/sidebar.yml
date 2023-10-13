@@ -11,8 +11,6 @@ entries:
     url: "/a300/install-setup.html"
   - title: クイックステップ
     url: "/a300/install-setup-linkout.html"
-  - title: ビデオの手順
-    url: "/a300/install-video-linkout.html"
 - title: メンテナンス
   pdf-filename: AFF A300 の維持
   entries:

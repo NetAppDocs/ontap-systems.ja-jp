@@ -1,31 +1,17 @@
 ---
 permalink: c190/install-videos.html 
 sidebar: sidebar 
-keywords: aff c190, hardware installation and cabling video, perform end-to-end software configuration video 
+keywords: aff c190, hardware installation and cabling video 
 summary: ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を紹介するビデオを 2 種類紹介します。 
 ---
-= ビデオ - AFF C190
+= ビデオ手順- AFF C190
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-次のビデオでは、システムをラックに設置してケーブルを配線し、システムの初期設定を行う方法について説明します。
-
-ハードウェアの設置とケーブル接続::
-+
---
 次のビデオでは、システムの設置とケーブル接続の方法を説明します。
 
 .アニメーション- AFF C190のインストールとセットアップ
 video::fe034f33-a4bf-4834-9004-ab1f014a2787[panopto]
---
-エンドツーエンドのソフトウェア設定::
-+
---
-次のビデオでは、 ONTAP 9.2 以降を実行するシステムのエンドツーエンドのソフトウェア設定を示します。
-
-video::WAE0afWhj1c?[youtube]
---
-

@@ -28,6 +28,22 @@ video::ca74d345-e213-4390-a599-aae10019ec82[panopto]
 +
 image:../media/drw_A400_Remove_controller.png[""]
 
++
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["番号1"]
+ a| 
+ロックラッチ
+
+
+
+ a| 
+image:../media/legend_icon_02.png["番号2"]
+| コントローラがシャーシからわずかに引き出されます 
+|===
 . コントローラモジュールをシャーシから引き出します。
 +
 このとき、空いている手でコントローラモジュールの底面を支えてください。
@@ -39,8 +55,18 @@ image:../media/drw_A400_Remove_controller.png[""]
 video::49053752-e813-4c15-a917-ab190147fa6e[panopto]
 
 
-image::../media/drw_a400_empty_riser_remove_IEOPS-1002.svg[DRW a400空のライザーIEOPS 1002を取り外します]
+image::../media/drw_a400_empty_riser_remove.png[DRW 400空 のライザーが取り外されました]
 
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["番号1"]
+ a| 
+ライザーリリースラッチ
+
+|===
 . エアダクトの側面にある固定ツメをコントローラモジュールの中央に向かって押します。
 . エアダクトをコントローラモジュールの背面方向にスライドさせ、完全に開いた状態になるまで上方向に回転させます。
 . ライザー 1 の左側にあるライザーロックラッチをエアダクトの方向に上に回し、ライザーを持ち上げて脇に置きます。
@@ -59,8 +85,26 @@ image::../media/drw_a400_empty_riser_remove_IEOPS-1002.svg[DRW a400空のライ�
 video::92060115-1967-475b-b517-aad9012f130c[panopto]
 . 電源装置を取り外します。
 +
-image::../media/drw_c400_psu_IEOPS-1237.svg[DRW C400 PSU IEOPS 1237]
+image::../media/drw_A400_psu.png[DRW A400 PSU]
 
++
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["番号1"]
+ a| 
+PSUの固定ツメ
+
+
+
+ a| 
+image:../media/legend_icon_02.png["番号2"]
+ a| 
+電源ケーブル固定クリップ
+
+|===
 +
 .. カムハンドルを回転させて、電源装置をシャーシから引き出せるようにします。
 .. 青色の固定ツメを押して電源装置をシャーシから外します。
@@ -89,8 +133,32 @@ NVDIMM バッテリを障害のあるコントローラモジュールから交�
 
 .アニメーション- NVDIMMバッテリを移動します
 video::94d115b2-b02a-4234-805c-aad9012f204c[panopto]
-image::../media/drw_A400_nvdimm-batt_IEOPS-1004.svg[DRW A400 NVDIMM BATT IEOPS 1004]
+image::../media/drw_A400_nvdimm-batt.png[DRW A400 NVDIMM バッテリ]
 
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["番号1"]
+ a| 
+NVDIMM バッテリプラグ
+
+
+
+ a| 
+image:../media/legend_icon_02.png["番号2"]
+ a| 
+NVDIMMバッテリの固定ツメ
+
+
+
+ a| 
+image:../media/legend_icon_03.png["番号3"]
+ a| 
+NVDIMM バッテリ
+
+|===
 . エアダクトを開きます。
 +
 .. エアダクトの側面にある固定ツメをコントローラモジュールの中央に向かって押します。
@@ -118,8 +186,25 @@ NOTE: 指示があるまで、バッテリケーブルをマザーボードに�
 
 .アニメーション-ブートメディアを移動します
 video::2a14099c-85de-4a84-867c-aad9012efac8[panopto]
-image::../media/drw_A400_Replace-boot_media_IEOPS-1007.svg[DRW A400ブートメディアIEOPS 1007の交換]
+image::../media/drw_A400_Replace-boot_media.png[DRW A400 ブートメディアの交換]
 
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["番号1"]
+ a| 
+ブートメディアの固定ツメ
+
+
+
+ a| 
+image:../media/legend_icon_02.png["番号2"]
+ a| 
+ブートメディア
+
+|===
 . コントローラモジュールからブートメディアの場所を確認して取り出します。
 +
 .. ブートメディアの横の青いボタンを押して、ブートメディアの端を青いボタンの上まで跳ね上げます。
@@ -156,8 +241,39 @@ video::f4ee1d4d-6029-4fe6-a063-aad9012f170b[panopto]
 
 .アニメーション-メザニンカードとライザー3を移動します
 video::b0c3b575-3434-4e00-a421-aad9012f2e9e[panopto]
-image::../media/drw_c400_replace_PCIe_cards_IEOPS-1235 (1).svg[DRW C400 PCIeカードの交換IEOPS 1235(1)]
+image::../media/drw_A400_Replace-PCIe-cards.png[DRW A400 PCIe カードの交換]
 
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["番号1"]
+ a| 
+ライザーロックラッチ
+
+
+
+ a| 
+image:../media/legend_icon_02.png["番号2"]
+ a| 
+PCIカードロックラッチ
+
+
+
+ a| 
+image:../media/legend_icon_03.png["番号3"]
+ a| 
+PCIロックプレート
+
+
+
+ a| 
+image:../media/legend_icon_04.png["番号4"]
+ a| 
+PCIカード
+
+|===
 . PCIe ライザー 1 と 2 を障害のあるコントローラモジュールから交換用コントローラモジュールに移動します。
 +
 .. PCIe カード内の SFP モジュールまたは QSFP モジュールを取り外します。
@@ -197,8 +313,32 @@ DIMM の場所を確認し、障害のあるコントローラモジュールか
 
 .アニメーション- DIMMを移動します
 video::717b52fa-f236-4f3d-b07d-aad9012f51a3[panopto]
-image::../media/drw_A400_Replace-NVDIMM-DIMM_IEOPS-1009.svg[DRW A400 NVDIMM IEOPS 1009を交換してください]
+image::../media/drw_A400_Replace-NVDIMM-DIMM.png[DRW A400 NVDIMM DIMM の交換]
 
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["番号1"]
+ a| 
+DIMMの固定ツメ
+
+
+
+ a| 
+image:../media/legend_icon_02.png["番号2"]
+ a| 
+DIMM
+
+
+
+ a| 
+image:../media/legend_icon_03.png["番号3"]
+ a| 
+DIMMソケット
+
+|===
 . コントローラモジュールで DIMM の場所を確認します。
 . DIMM を交換用コントローラモジュールに正しい向きで挿入できるように、ソケット内の DIMM の向きをメモします。
 . NVDIMM バッテリが新しいコントローラモジュールに接続されていないことを確認します。
@@ -240,6 +380,23 @@ DIMM のソケットへの挿入にはある程度の力が必要です。簡単
 video::0310fe80-b129-4685-8fef-ab19010e720a[panopto]
 image::../media/drw_A400_Install_controller_source.png[DRW A400 コントローラソースの取り付け]
 
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["番号1"]
+ a| 
+コントローラモジュール
+
+
+
+ a| 
+image:../media/legend_icon_02.png["番号2"]
+ a| 
+コントローラのロックラッチ
+
+|===
 . まだ行っていない場合は、エアダクトを閉じます。
 . コントローラモジュールの端をシャーシの開口部に合わせ、コントローラモジュールをシステムに半分までそっと押し込みます。
 +

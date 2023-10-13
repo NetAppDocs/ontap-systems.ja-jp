@@ -182,12 +182,6 @@ mcc1A::> metrocluster operation show
 
 コントローラモジュール内部のコンポーネントにアクセスするには、コントローラモジュールをシャーシから取り外す必要があります。
 
-次のアニメーション、図、または記載された手順に従って、コントローラモジュールをシャーシから取り外すことができます。
-
-.アニメーション-コントローラモジュールを取り外します
-video::ca74d345-e213-4390-a599-aae10019ec82[panopto]
-image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取り外し]
-
 . 接地対策がまだの場合は、自身で適切に実施します。
 . 電源ケーブル固定クリップを外し、電源装置からケーブルを抜きます。
 . ケーブルマネジメントデバイスに接続しているケーブルをまとめているフックとループストラップを緩め、システムケーブルと SFP をコントローラモジュールから外し（必要な場合）、どのケーブルが何に接続されていたかを記録します。
@@ -199,6 +193,27 @@ image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取
 +
 コントローラモジュールがシャーシから少し引き出されます。
 
++
+image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取り外し]
+
++
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["番号1"]
+ a| 
+ロックラッチ
+
+
+
+ a| 
+image:../media/legend_icon_02.png["番号2"]
+ a| 
+コントローラがシャーシからわずかに引き出されます
+
+|===
 . コントローラモジュールをシャーシから引き出します。
 +
 このとき、空いている手でコントローラモジュールの底面を支えてください。
@@ -216,8 +231,32 @@ image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取
 
 .アニメーション- RTCバッテリを交換します
 video::80fe7a9b-de6f-46e0-a18b-aadb0157263d[panopto]
-image::../media/drw_A400_rtc-batt_IEOPS-1003.svg[DRW A400 RTC BATT IEOPS 1003]
+image::../media/drw_A400_rtc-batt.png[DRW A400 RTC BATT]
 
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["番号1"]
+ a| 
+中央のライザー
+
+
+
+ a| 
+image:../media/legend_icon_02.png["番号2"]
+ a| 
+RTCバッテリの取り外し
+
+
+
+ a| 
+image:../media/legend_icon_03.png["番号3"]
+ a| 
+シートRTCバッテリ
+
+|===
 . 接地対策がまだの場合は、自身で適切に実施します。
 . エアダクトを開きます。
 +
@@ -253,6 +292,23 @@ NOTE: ホルダーから取り外す際に、バッテリの極の向きを確�
 video::0310fe80-b129-4685-8fef-ab19010e720a[panopto]
 image::../media/drw_A400_Install_controller_source.png[DRW A400 コントローラソースの取り付け]
 
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["番号1"]
+ a| 
+コントローラモジュール
+
+
+
+ a| 
+image:../media/legend_icon_02.png["番号2"]
+ a| 
+コントローラのロックラッチ
+
+|===
 . エアダクトまたはコントローラモジュールカバーを閉じていない場合は閉じます。
 . コントローラモジュールの端をシャーシの開口部に合わせ、コントローラモジュールをシステムに半分までそっと押し込みます。
 +

@@ -11,8 +11,6 @@ entries:
     url: "/a200/install-setup.html"
   - title: クイックステップ
     url: "/a200/install-setup-linkout.html"
-  - title: ビデオの手順
-    url: "/a200/install-video-linkout.html"
 - title: メンテナンス
   pdf-filename: AFF A200 は引き続き使用できます
   entries:

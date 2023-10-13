@@ -150,11 +150,7 @@
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link">ネットアップサポート</block>
   <block id="fd440756b4a0ce8acdb949b641576347" category="list-text">部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。テクニカルサポートにお問い合わせください<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>RMA 番号を確認する場合や、交換用手順にサポートが必要な場合は、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。</block>
   <block id="561273ebb17be6fcb781473771bc32cb" category="summary">ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を紹介するビデオを 2 種類紹介します。</block>
-  <block id="b1e7f6a5c1f5cafe5e944efafcf29500" category="doc">ビデオ - AFF A250</block>
-  <block id="2ff6b785c9bbb9bd149f3c338b823e06" category="section-title">ビデオ 1 ：ハードウェアの設置とケーブル接続</block>
   <block id="9ed9163b4599600e6378be760fd75fa8" category="paragraph">次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。</block>
-  <block id="4606294616375644c4f16fd95c0c6358" category="section-title">ビデオ 2 ：エンドツーエンドのソフトウェア設定の実行</block>
-  <block id="6fcf86e967a5b349290bdafc15f7033f" category="paragraph">次のビデオでは、 ONTAP 9.2 以降を実行するシステムのエンドツーエンドのソフトウェア設定を示します。</block>
   <block id="0f9b7af429c6f61cb54f2dc7fb47b9a6" category="summary">システムを完全に動作状態に戻すには、 NetApp Storage Encryption の構成をリストアし（必要な場合）、新しいコントローラのライセンスをインストールし、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。テクニカルサポートにお問い合わせください<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>RMA 番号を確認する場合や、交換用手順にサポートが必要な場合は、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。</block>
   <block id="1f684a558f672dca1e5cd104fa082470" category="doc">システムの復元の完了 - AFF A250</block>
   <block id="2d8b1cc5d54ecd8a729105fdf07054a0" category="section-title">手順 1 ：交換用ノードのライセンスを ONTAP にインストールする</block>
@@ -745,7 +741,6 @@
   <block id="58599a78c7345fe9e241e0a8a135d733" category="list-text">NetApp ONTAP 構成ガイドで収集したデータを基にシステムを設定します。</block>
   <block id="8ebc074b350a73fb776c940df7d61fd5" category="summary">ファンを交換するには、障害が発生したファンモジュールを取り外し、新しいファンモジュールと交換します。</block>
   <block id="bc5719b37f755088b3bb793c36a74d06" category="section-title">手順 1 ：障害ノードをシャットダウンします</block>
-  <block id="263bd6e17bf6db34d525455907f3ed3e" category="paragraph">* 1 *</block>
   <block id="403f4d4be631e5311ef7c1b52afdf039" category="section-title">手順 3 ：ファンを交換します</block>
   <block id="42fdad873ef48294568bf60cb6c3f2a3" category="paragraph">次のビデオまたは表に示す手順を使用して、ファンを交換します。</block>
   <block id="413ac2fd2fb4f86c9ec059076dc0b76b" category="list-text">交換が必要なファンモジュールを特定するために、コンソールのエラーメッセージを確認するか、マザーボードでファンモジュールの LED が点灯していることを確認します。</block>
@@ -773,7 +768,6 @@
   <block id="f5321e091dead7c4ead8728aa3332803" category="list-text">onboard security key-manager sync コマンド「 security key-manager sync 」を入力します</block>
   <block id="5420f491e628cc60c7e1ffcad20d35da" category="list-text">コマンドを入力して、キー管理バックアップ情報を表示します。「 securitykey-manager onboard show-backup 」</block>
   <block id="8eb91adaedfd18d8e21833ed58db7673" category="section-title">NSE の設定を確認</block>
-  <block id="f0bb66ccc33b2423473b4997076e2e15" category="paragraph">プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。</block>
   <block id="f88c775f01fc49ed67168d71b69a1c0c" category="doc">システムのリストアの完了 - AFF A700s</block>
   <block id="e1782167c4ccac91c29c561fbdf9bd10" category="summary">PDF 版セットアップガイドを使用して、新しいシステムを設置してセットアップできます。PDF 版ポスターには、ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
   <block id="a042d62f38b129b2b0a14f9ad8ef93fa" category="doc">設置とセットアップ PDF ポスター - AFF A700s</block>
@@ -1175,8 +1169,6 @@
   <block id="c595dd0ea33c39b338c0252c4c0b7806" category="list-text">システムの起動時に 'Press Ctrl-C for Boot Menu' というメッセージが表示されたら 'Ctrl-C' を押します起動メニューが表示されたら 'Option 6 を選択します</block>
   <block id="085d4c339245e025ba9f6a2524c69c57" category="summary">2 ノード MetroCluster 構成で FRU の交換が完了したら、 MetroCluster スイッチバック処理を実行できます。これにより構成が通常の動作状態に戻ります。また、障害が発生していたサイトの同期元 Storage Virtual Machine （ SVM ）がアクティブになり、ローカルディスクプールからデータを提供します。</block>
   <block id="79cfe080d4a6943442ed3bba2502d8a1" category="doc">2 ノード MetroCluster 構成のアグリゲートをスイッチバック - AFF A400</block>
-  <block id="a45631fee94bb9189db5b0c74b176a42" category="doc">ビデオ - AFF A400</block>
-  <block id="d92d79541486453c440f5d479e7c2937" category="section-title">ビデオ 2 ：エンドツーエンドのソフトウェア設定を実行する</block>
   <block id="e3a2cdbe22ad29e03fbebb6c1261ed15" category="doc">クイックガイド - AFF A400</block>
   <block id="34a75c3c3d31678dc9bc82fd2d547569" category="inline-link">AFF A400 のセットアップガイド</block>
   <block id="3cae55e1e828ede8665faa84a0a66de4" category="summary">NVDIMM バッテリを交換するには、コントローラモジュールを取り外し、バッテリを取り外し、バッテリを交換してから、コントローラモジュールを再度取り付ける必要があります。</block>
@@ -1544,8 +1536,6 @@
   <block id="1a07efb95ce0adf2938247206faea192" category="section-title">手順 6 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする</block>
   <block id="11ecaa8360379504a6aba6752c5f87ed" category="summary">ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。ネットワーク構成に応じて、無停止または停止を伴う交換を実行できます。</block>
   <block id="e742eb9c2d018e1c3855d10b4906368d" category="doc">ブートメディア FAS8200 を交換します</block>
-  <block id="b311ba9effd852411b6aecb7b5d10b32" category="doc">設置とセットアップのビデオ - FAS8200</block>
-  <block id="fa6a624a35788d7850475e93ee843b20" category="inline-link-macro">AFF FAS8200 のセットアップビデオ</block>
   <block id="d555d8d5b180690f03f434585c90b8d9" category="section-title">手順 1 ：コントローラモジュールを開く</block>
   <block id="f15dadbdff53b4a73700cd5ec217e288" category="paragraph">コントローラモジュールを交換するには、最初に古いコントローラモジュールをシャーシから取り外す必要があります。</block>
   <block id="3db53350c8daded7e4295f79671ca172" category="list-text">ケーブルを外したあとで SFP モジュールをシステムに残した場合は、それらを新しいコントローラモジュールに移動します。</block>
@@ -1723,7 +1713,6 @@
   <block id="93e811c8fd302bbdb07d50cb5ed0ad55" category="list-text">DIMM をスロットに対して垂直に挿入します。</block>
   <block id="d38e923a5dbd4c9cea0e47d7894638fd" category="section-title">手順 4 ：コントローラモジュールを再度取り付けてシステムをブートします</block>
   <block id="b30af54ded6b355219c01928989c094b" category="list-text">Ctrl キーを押しながら C キーを押して ' 通常の起動プロセスを中断します</block>
-  <block id="f3a01cef2d9918b3669edb9ee2a1c2b8" category="doc">ビデオ - AFF A800</block>
   <block id="2ee0c03cb33be156e12b5b33dbf8e422" category="doc">NVDIMM バッテリを交換してください - AFF A800</block>
   <block id="a2a7f6c4d01f5224a71aaaa23dd37c83" category="list-text">ケーブルマネジメントデバイスに接続しているケーブルをまとめているフックとループストラップを緩め、システムケーブルと SFP / QSFP モジュールをコントローラモジュールから外し（必要な場合）、どのケーブルが何に接続されていたかを記録します。ケーブルマネジメントデバイスに接続しているケーブルをまとめているフックとループストラップを緩め、システムケーブルをコントローラモジュールから外し、どのケーブルが何に接続されていたかを記録します。</block>
   <block id="23303fd786407709fac1485d347f7aa2" category="paragraph">NVDIMM バッテリを交換するには、障害が発生したバッテリをコントローラモジュールから取り外し、交換用バッテリをコントローラモジュールに取り付ける必要があります。</block>
@@ -2460,7 +2449,6 @@
   <block id="e8aff1eca48ad56a3b7a6f32b35725fb" category="list-text">FAS8700 システムを使用している場合、システム DIMM はスロット 2 、 4 、 7 、 9 、 13 にあります。 15 、 18 、 20 。</block>
   <block id="23322e561ac6bea2fdd969f81f065cb0" category="list-text">NVDIMM はスロット 11 にあります。</block>
   <block id="bef53c14eb719bb1cd8539b91f7515d7" category="doc">2 ノード MetroCluster 構成のアグリゲート AFF fas8300 と FAS8700 をスイッチバックします</block>
-  <block id="d5329d1a1e1dddf29f9d62bdc1cd54ad" category="doc">ビデオ - FAS8300 and FAS8700</block>
   <block id="d1903d398c4c8283b66cc2ee2599cef5" category="doc">クイックガイド - FAS8300 および FAS8700</block>
   <block id="221315bbb17a9424f37793425986d6c2" category="inline-link">FAS8300 および FAS8700 の設置とセットアップの手順</block>
   <block id="05da715fdd840e7fc27dd764386018bc" category="doc">キャッシングモジュール FAS8300 と FAS8700 を交換します</block>
@@ -2516,7 +2504,6 @@
   <block id="d800c7cb3b7de336c10f89f1d59719c6" category="list-text"><block ref="d800c7cb3b7de336c10f89f1d59719c6" category="inline-link-macro-rx"></block></block>
   <block id="a7457ab9f25a3df58d992d0436ce1834" category="doc">DIMM-FAS500f を交換します</block>
   <block id="d7e9bb71d12c55787c7f0839a67057f4" category="paragraph">DIMM を交換するには、次のビデオまたは表に示す手順を使用します。</block>
-  <block id="77dde4ad7c98f99f807ec139e659b972" category="doc">ビデオ - FAS500f</block>
   <block id="139b85a2da5c2f7968fae24f14c3ed09" category="inline-link">FAS500f 『 Installation and Setup Instructions 』</block>
   <block id="dae1434e283524bee3110823c8eb7212" category="inline-link">FAS500f システム『 Installation and Setup Instructions 』</block>
   <block id="0ce2a0e29499223b29490143e42e0e0e" category="list-text">障害のあるコントローラが実行していたバージョンの ONTAP イメージのコピー。ネットアップサポートサイトの「 * Downloads * 」セクションから適切なイメージをダウンロードできます</block>
@@ -2560,7 +2547,6 @@
   <block id="70307621ba0045acdea9f2a7c113fa13" category="paragraph">DIMM を交換するには、コントローラモジュール内で DIMM の場所を確認し、特定の手順に従う必要があります。</block>
   <block id="9389022fd9667b8163e127e0e02ae432" category="paragraph">コントローラモジュールのコンポーネントを交換したら、モジュールをシャーシに再度取り付ける必要があります。</block>
   <block id="3aa65b6dd04ce8c10a11bc203220a807" category="list-text">コントローラモジュールを再設置します。コントローラモジュールは、シャーシに完全に装着されるとすぐにブートを開始します。ブートプロセスを中断できるように準備しておきます。</block>
-  <block id="e66322388322d8b74707e920c5738c23" category="doc">ビデオ - AFF C190</block>
   <block id="b351b18aabb1167eb5b0851a7dfde759" category="doc">電源装置と AFF C190 を交換します</block>
   <block id="a9c0a6c57639677722b2d4d4893acd60" category="section-title">手順 1 ：シャーシの HA 状態を確認して設定します</block>
   <block id="d8d0a8b4117d13248466eeef738784f1" category="list-text">メンテナンスモードで、いずれかのコントローラモジュールでローカルのコントローラモジュールとシャーシの HA 状態を表示します。</block>
@@ -3090,8 +3076,6 @@
   <block id="7b08469ac72ae10a3800fd65a60dd1ad" category="doc">電源装置を交換します - AFF A200</block>
   <block id="c595b45124aedeb764e69a91821529a0" category="paragraph">AFF A200 システムの場合、空になったスロット内のプラスチック製のフラップが開口部を覆って通気と冷却を維持します。</block>
   <block id="ec98690855a2ac4306447ccfbffa94ef" category="doc">障害のある部品は、 NetApp AFF A200 に返却してください</block>
-  <block id="7ae81662bd11820c2773e2c5dd7cc5fe" category="doc">設置とセットアップのビデオ - AFF A200</block>
-  <block id="034a1a146ef2121dfec2fdbe9d4d6dca" category="inline-link-macro">AFF A200 のセットアップビデオ</block>
   <block id="61ebd8fcdf103b9ce92a28b6cb2ee6bb" category="doc">リアルタイムクロックのバッテリを交換してください - AFF A200</block>
   <block id="974e25d76804357a5ef200cb958fb945" category="doc">システムにケーブルを再接続し、ディスクを再割り当てします - AFF A200</block>
   <block id="3dad031ba5544f976b631ffad1564b7a" category="paragraph">ストレージを再ケーブル接続し、ディスクの再割り当てを確認して、交換用手順を続行します。</block>
@@ -3450,9 +3434,6 @@
   <block id="03d0d86c8a44fa1fcb7cccb7e807f2bd" category="doc">NVMEM バッテリを交換してください - AFF A300</block>
   <block id="14dcd64a8e337723e8b53ea592f0d173" category="doc">電源装置を交換してください - AFF A300</block>
   <block id="70fd333a51cca9f21f1a0312f3dc6984" category="doc">障害のある部品を NetApp-AFF A300 に戻します</block>
-  <block id="ac49971fc6b0529cef97f29235b4bd53" category="doc">インストールとセットアップのビデオ - AFF A300</block>
-  <block id="61472088a460f1e915085268c1df2237" category="inline-link-macro">AFF A300 セットアップビデオ</block>
-  <block id="1189b15f1d0e31e54b7a7a00343985c9" category="paragraph"><block ref="1189b15f1d0e31e54b7a7a00343985c9" category="inline-link-macro-rx"></block></block>
   <block id="8311fdba7d6af817bbd917e36ee0241a" category="doc">リアルタイムクロックバッテリを交換してください - AFF A300</block>
   <block id="8394191e21f04380d08fe40ae8199691" category="summary">シャーシを交換するには、コントローラをシャットダウンする必要があります。この手順はシステムの停止を伴います。2 ノードクラスタではサービスが完全に停止し、マルチノードクラスタでは部分的に停止します。</block>
   <block id="a5c7a7f72206c6b63d2ec6de862b1cfd" category="doc">コントローラをシャットダウンします - AFF A300</block>
@@ -3526,7 +3507,6 @@
   <block id="81991fce0a133e64dc7f5bd7f590afbd" category="list-text">システム DIMM スロット： 2 、 4 、 7 、 9 、 13 、 15 、 18 、 20</block>
   <block id="42fedd56824cc1ddf6aa00c30e53255e" category="list-text">NVDIMM スロット： 11</block>
   <block id="b5625ff9a6be11130311547598e19f4d" category="list-text">コントローラモジュールの背面にあるエアダクトを閉じ、 PCIe カードにカバーを再度取り付けていない場合は、</block>
-  <block id="c694147ee40e260d30d4121d2213ee14" category="doc">ビデオ - AFF A320</block>
   <block id="3e3ba2d775216becefab028bffec753a" category="doc">クイックガイド - AFF A320</block>
   <block id="8041c469e6d9bb1d2588be103ea09ab6" category="doc">NVDIMM バッテリを交換します - AFF A320</block>
   <block id="8b9cda3c71cd6650aa009c7fadfc8b01" category="image-alt">DRW A320 コントローラケーブルプラグアニメーション GIF</block>
@@ -5038,7 +5018,6 @@
   <block id="d92397f405b46035383db7778e4795f5" category="list-text">2 つ目のコントローラモジュールのポートを再設定するには、最初の手順（ A ）を繰り返します。</block>
   <block id="ed44ef953e4348bf2bf852e9813bdc5d" category="list-text">2 台目のコントローラをリブートしてポートの変更を有効にし、 2 つ目の手順（ b ）を繰り返します。</block>
   <block id="744b6c476a210a04195ef528c6730bc7" category="paragraph">HA ペアが ONTAP 9.7 または 9.6 を実行している場合は ' 専用でないポートは 'Is dedicated ？に false と表示されます 列には、「 State 」列に「 disabled 」と表示されます。</block>
-  <block id="71eb59c59a42227ae8b45d0cfaf6f52f" category="paragraph">ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用したシステムの初期設定の例を紹介するビデオを 2 種類紹介します。</block>
   <block id="25cf65ddd80144b70d3dac5fc3efd292" category="doc">ステップの詳細 - AFF C190</block>
   <block id="94c14a3a3429ee874d19f598eabeb841" category="inline-link-macro">使用している ONTAP のバージョンに対応したリリースノート</block>
   <block id="3ad26beab00b6ba09b9cf5af096d7c99" category="paragraph">にアクセスできる必要があります <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> （ HWU ）を参照してください。サイト要件および構成済みシステム上の追加情報に関する情報が含まれます。へのアクセスも必要になる場合があります <block ref="515d1814cb0f36c56a64a6574d93c9df" category="inline-link-macro-rx"></block> このシステムの詳細については、を参照してください。</block>
@@ -5064,7 +5043,6 @@
   <block id="6675c229d440b5fa295266d2c66af8cb" category="list-text">[Restored （リストア済み） ] カラムに 'yes' と表示されている場合は ' オンボード・キー管理情報を手動でバックアップします</block>
   <block id="4111f4985df04f9002129e591bafb45f" category="list-text">[Restored （復元） ] 列に「 yes 」と表示されている場合は、オンボードキー管理情報を手動でバックアップします。</block>
   <block id="47172f1226f9908865e044955d2f091b" category="paragraph">を使用できます <block ref="cb0390cbe2f3cf678134885ff143b6ba" category="inline-link-macro-rx"></block> ONTAP クラスタを構成する際に必要となるサイト固有の IP アドレスやその他の情報を収集して記録する。</block>
-  <block id="29698929d201e3c2b1138892d941cbfb" category="paragraph"><block ref="29698929d201e3c2b1138892d941cbfb" category="inline-link-macro-rx"></block></block>
   <block id="78f75f00d9872e8e3abcdad7ee860f3e" category="list-text">ブート・メニューで ' 非表示のコマンド 'recover_onboard keymanager_' を入力し ' プロンプトで y と応答します</block>
   <block id="d06f1c2732b47c32b1afcd433f48af20" category="list-text">バックアップ・データの入力を求められたら、この手順の最初にキャプチャしたバックアップ・データを貼り付けます。security key-manager backup show コマンドまたは security key-manager onboard show-backup コマンドの出力を貼り付けます。</block>
   <block id="1f30f9701a096430ddea174eb406dce3" category="list-text">storage failover giveback '-fromnode local-only -cfo-aggregates true コマンドを使用して CFO アグリゲートだけをギブバックします</block>
@@ -5085,7 +5063,6 @@
   <block id="941322167ca76688c15d3a6fb3aa998c" category="paragraph">コントローラ A をシェルフにケーブル接続します。 <block ref="18f599f35e14d88c5e3fb9f75197e3c8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4ab41e9db35b429ef17dc75c3671d5a3" category="paragraph">を使用できます <block ref="29bd1f640adeeec5f2bc6e197d0840c4" category="inline-link-macro-rx"></block> ONTAP クラスタを構成する際に必要となるサイト固有の IP アドレスやその他の情報を収集して記録する。</block>
   <block id="e4e83a2c82324a2a6d5448b03909ecfa" category="paragraph">を使用できます <block ref="b22470d24dd615c99a09a118a80f7353" category="inline-link-macro-rx"></block> セットアップガイドを参照して、新しいシステムを設置してセットアップします。PDF 版ポスターには、ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
-  <block id="9eb9c148662d69c22bab62cf12a75812" category="paragraph">。 <block ref="36ed39ac78f542a04e83212067a271f3" category="inline-link-macro-rx"></block> に、 ONTAP 9.2 を実行するシステムのエンドツーエンドのソフトウェア設定を示します。</block>
   <block id="ad569dbab7bcafe6ae2a28cd4d832fd1" category="list-text">'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' と表示されている場合は 'OKM 情報を手動でバックアップします</block>
   <block id="d6cd7784b4e7b607424fb3f31dc53b2d" category="list-text">healthy_node は、 _replacement _node の HA パートナーです。</block>
   <block id="704ce524afb02bcf845b03e8ae369f8b" category="paragraph">修復が拒否された場合は '-override-vetoes パラメータを指定して MetroCluster heal コマンドを再実行できますこのオプションパラメータを使用すると、修復処理を妨げるソフトな拒否はすべて無視されます。</block>
@@ -5124,7 +5101,6 @@
   <block id="d35fd8965949830b92555b33686beb19" category="doc">電源装置 AFF A900 をスワップします</block>
   <block id="12ccb6284dde6c218f4afb3d3857d96e" category="list-text">電源装置ハンドルのテラコッタボタンを押したまま、電源装置をシャーシから引き出します。</block>
   <block id="055140d300b472c3cf197b316fc1a111" category="doc">システムの復元の完了 - AFF A900</block>
-  <block id="d43c376026dc1771be0ad5086e3b8cb7" category="summary">この 2 つのビデオでは、システムの設置とケーブル接続の方法を紹介し、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を示します。</block>
   <block id="8f73eb9fb7acfd413cf2778aacee51b6" category="doc">ビデオの手順 - AFF A900</block>
   <block id="3bc737994532b61e4fad9c84d6dccfc0" category="summary">これは、一般的なネットアップシステムのインストール手順を詳しく説明したものです。</block>
   <block id="b37eeea92bef8e254a5c7650e7002788" category="doc">詳細な手順 - AFF 900</block>
@@ -5948,7 +5924,6 @@
   <block id="137edbb782dbd05e84addda1ad111604" category="list-text"><block ref="137edbb782dbd05e84addda1ad111604" category="inline-link-rx"></block></block>
   <block id="ec5866194941126dcbe55d496f612191" category="list-text">障害のあるコントローラがスタンドアロン構成で LOADER プロンプトが表示されている場合は、にお問い合わせください <block ref="d4b5db761eff3af8abec9c2aa8b19609" category="inline-link-macro-rx"></block>。</block>
   <block id="4729966d1b42f799e14eba4dd6dedbdb" category="paragraph"><block ref="4729966d1b42f799e14eba4dd6dedbdb" category="inline-link-rx"></block></block>
-  <block id="60db4a77031ab02d5c7d793d8ee8e564" category="admonition">プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block></block>
   <block id="0f4f43e093db80d862a516057fb4a1b2" category="list-text">障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください<block ref="9d47acedf189f7880a7ff697cbca93c5" category="inline-link-rx"></block> 詳細については、を参照してください。</block>
   <block id="756d409209ace98589705774b5011aa0" category="inline-link">FAS9500</block>
   <block id="777fd6d7388769d3f60adc007c4390a4" category="paragraph"><block ref="777fd6d7388769d3f60adc007c4390a4" category="inline-link-rx"></block></block>
@@ -6073,7 +6048,6 @@
   <block id="4714e8423619d9cc43be300b5a406117" category="list-text">ストレージをギブバックしてノードを通常の動作に戻します。「 storage failover giveback -ofnode impaired_node_name</block>
   <block id="29aa4a699a26a575f893c69af8527aa7" category="video-title">アニメーション-ファンの取り外し/取り付け</block>
   <block id="2966eb224d8489f097a42690752e472a" category="image-alt">DRW 9500がインストールファンを取り外します</block>
-  <block id="2ab60626c3ca1f306ba2c65e1e8f5d49" category="paragraph">次のビデオでは、ONTAP 9.6以降を実行するシステムのエンドツーエンドのソフトウェア設定を示します。</block>
   <block id="262047271a9f0ac7ba69952e78e4ced1" category="video-title">アニメーション- PSUの取り外し/取り付け</block>
   <block id="9494be0e4fc0cc7bf5a561ba23cc37dd" category="image-alt">DRW 9500 remove install PSU module(PSU取り付けモジュールを取り外します</block>
   <block id="c593377a30c937702f96d13d76989bc2" category="video-title">アニメーション- I/Oモジュールの取り外し/取り付け</block>
@@ -6560,14 +6534,10 @@
   <block id="d12db64c0cb5cb862afbde49d98d6f25" category="inline-link-macro">交換プロセスを完了します</block>
   <block id="e739fb18db4795dd1e2cea8f3c5244c3" category="list-text">に進みます <block ref="56c57196a2457d200e49164377b65ba5" category="inline-link-macro-rx"></block>。</block>
   <block id="ba9fde9925258d03950e9c2d180f665c" category="image-alt">DRW A400ブートメディアIEOPS 1007の交換</block>
-  <block id="e7f3c0051e6bc5cbd205f59b35151985" category="inline-image-macro">幅= 500px</block>
-  <block id="6a226d8716b094e1702259265b496684" category="paragraph"><block ref="6a226d8716b094e1702259265b496684" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="afe794b290a5da51dd8b580fadd2b035" category="image-alt">DRW A400メザニンカードIEOPS 1006を交換してください</block>
   <block id="a7f924c2147b80d349701c702d7f091f" category="image-alt">DRW a400空のライザーIEOPS 1002を取り外します</block>
   <block id="54c5909d12d5c473924ce9b2c856a68d" category="image-alt">DRW A400 NVDIMM BATT IEOPS 1004</block>
   <block id="947bc8320a7df1722adcc49a6bdc81ba" category="image-alt">DRW A400 PCIeカードの交換IEOPS 1008</block>
   <block id="85445cdcf89edd32e9cf4cb8554898a3" category="image-alt">DRW A400 NVDIMM IEOPS 1009を交換してください</block>
-  <block id="f7e6cca62df33f4887013e8daaa9e77d" category="image-alt">DRW A400 RTC BATT IEOPS 1003</block>
   <block id="f5a5a95a5282486c3989ed932401b693" category="image-alt">DRW A900ケーブルコンソールスイッチコントローラIEOPS 953</block>
   <block id="0ea0d47e034118a7f063c35eaf67ebd2" category="list-text">ストレージ暗号化が有効になっている場合は、機能をリストアする必要があります。</block>
   <block id="718ea359d9cc2d2bff619909d16ec537" category="admonition">コントローラがブートメニューに戻ります。</block>
@@ -6608,7 +6578,6 @@
   <block id="ab65dd4e976f1787737fc87ae65b8a6d" category="paragraph"><block ref="ab65dd4e976f1787737fc87ae65b8a6d" category="inline-link-rx"></block></block>
   <block id="c2df61cd54941946b9e1d41669228517" category="paragraph"><block ref="c2df61cd54941946b9e1d41669228517" category="inline-link-rx"></block></block>
   <block id="a7d0c7f24713f4f2e4432bb2b91f97d0" category="paragraph"><block ref="a7d0c7f24713f4f2e4432bb2b91f97d0" category="inline-link-rx"></block></block>
-  <block id="477b007cc84cc2f34c8bc4e37baeafa7" category="doc">ビデオ- AFF A150</block>
   <block id="c4c07270ebbe6cd1bc5aa6f45be76f02" category="video-title">アニメーション- AFF A150のインストールとセットアップ</block>
   <block id="15bdfa06733933ff3285c6dd92cad9c7" category="doc">PSUをスワップします（AFF A150）</block>
   <block id="f9195e4f2cbce0b6d30752619eae4687" category="doc">コントローラモジュールハードウェアを交換してください- AFF A150</block>
@@ -6639,7 +6608,6 @@
   <block id="e2f649ac2d970925993f9e5fb7967c22" category="doc">メザニンカードを交換または取り付けます（AFF C250）</block>
   <block id="cd2699a4d57f54778810b017b2525727" category="doc">ファンを交換してください- AFF C250</block>
   <block id="3e56ae245ac8653052ca2cbe9766da4b" category="doc">リストアと交換のプロセス（AFF C250）を完了します</block>
-  <block id="bf6b6560f6b1f050d2a1808c4b6336aa" category="doc">ビデオ- AFF C250</block>
   <block id="ff0126462ebf63e99c0e579efb8f1760" category="video-title">アニメーション- AFF C250のインストールとセットアップ</block>
   <block id="bb948df5a06fd8fb2e2b9e9f99cc69d4" category="doc">リカバリイメージ（AFF C250）をブートします</block>
   <block id="ab8a572131275958428f9007945f684f" category="doc">シャーシの交換の概要- AFF C250</block>
@@ -6693,7 +6661,6 @@
   <block id="e0cc8c545401fc3b34281140c54756c7" category="admonition">カードのポートラベルが見えない場合は、カードの取り付け方向を確認し（C400の場合、PCIeコネクタソケットはカードスロットの左側にあります）、NetApp Hardware Universe でカードのパーツ番号を確認します。 これは、ベゼルとポートラベルの図を示しています。カードのパーツ番号は、sysconfig -aコマンドを使用するか、システムパッキングリストに記載されています。</block>
   <block id="670ce436320fc9008e2880db983e27d2" category="paragraph">以下のオプションでは、1台または2台のNS224ドライブシェルフをシステムにケーブル接続する方法を説明します。</block>
   <block id="eca713323e6fa9782ebae60357fc0453" category="doc">NVDIMM - AFF C400を交換します</block>
-  <block id="719e61ffcf0d96924351db01f7e50603" category="doc">ビデオ- AFF C400</block>
   <block id="51e4f59a1aaa143b8d5c910f0a77328e" category="video-title">アニメーション- AFF C400の設置とセットアップの手順</block>
   <block id="e6423ca3487b9b75d5af512862698175" category="doc">コントローラモジュールハードウェアを交換してください- AFF C400</block>
   <block id="5edd30c4cef8fac3bd29e60266f4cb36" category="doc">コントローラをシャットダウンします（AFF C400）</block>
@@ -6924,7 +6891,6 @@
   <block id="b2ff23ff7a4337d3bf36446e97f1f1f4" category="paragraph">AFF C800システムをインストールするには、アカウントを作成してシステムを登録する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。</block>
   <block id="09e80812def315f5cdd1c01dcdfeecd6" category="paragraph"><block ref="09e80812def315f5cdd1c01dcdfeecd6" category="inline-link-macro-rx"></block></block>
   <block id="7040351b0fc4c5a538e3b99ec1ec804a" category="doc">NVDIMM - AFF C800を交換します</block>
-  <block id="7879dde42cda05c8d4a155645c4a2b6d" category="doc">ビデオ- AFF C800</block>
   <block id="6b60c2f33c9927e16d390be43c988aa0" category="video-title">アニメーション- AFF C800のインストールとセットアップ</block>
   <block id="2a6e70f5ba0bf4b1e8256c095ec0cd1c" category="doc">コントローラモジュールハードウェアを交換してください- AFF C800</block>
   <block id="90571542a9bc3f19e7a4f29fa9556cff" category="doc">コントローラをシャットダウンします（AFF C800）</block>
@@ -7059,7 +7025,6 @@
   <block id="c5df4dcae9a001142a36959487445ff6" category="list-text">いずれかを解決します<block ref="31b25beca26cb366eeb0665e3c0d7cbf" category="inline-link-rx"></block>。システムコンポーネントのLEDなど、現在システムに発生している障害をメモします。</block>
   <block id="3923b7d5100131c85be2160c8b680704" category="list-text">SSHを使用してクラスタにログインするか、クラスタ内の任意のノードからローカルのコンソールケーブルとラップトップ/コンソールを使用してログインします。</block>
   <block id="d9e8189e14354652821e1f0f10f12dfe" category="list-text">AutoSupport をオフにして、システムがオフラインになるまでの時間を指定します。</block>
-  <block id="ff3faabe8aca2ae4a92cf7dec5b62b8f" category="paragraph"><block ref="14fb036c43dbcde966a639d33554da5c" prefix="" category="inline-code"></block></block>
   <block id="ac2a6618449930e8abeb32fd078d7716" category="list-text">すべてのノードのSP / BMCアドレスを特定します。</block>
   <block id="0d16db60da2c01b63ef84ee8d616c2fb" category="paragraph"><block ref="b206d268f79aeaa7c4f1e44684d2f080" prefix="" category="inline-code"></block></block>
   <block id="a0fd5b31be719aeb26e2fc9c6991da9f" category="list-text">クラスタシェルを終了します。<block ref="f24f62eeb789199b9b2e467df3b1876b" prefix=" " category="inline-code"></block></block>
@@ -7190,7 +7155,6 @@
   <block id="1d4ac53db25f608efca8dafa3f3d6b43" category="paragraph">次のビデオでは、システムをラックに設置してケーブルを配線し、システムの初期設定を行う方法について説明します。</block>
   <block id="95a15694e7d6d23376f741970900ef8e" category="list-text">ハードウェアの設置とケーブル接続</block>
   <block id="4657c74c0fa17e5f15e4a506f177b913" category="paragraph">次のビデオでは、システムの設置とケーブル接続の方法を説明します。</block>
-  <block id="d4b6f94dadb3f20b9bf031b9b9983ce3" category="list-text">エンドツーエンドのソフトウェア設定</block>
   <block id="119be031ef4485d20c7683d291d0e9f6" category="inline-link">MetroCluster のドキュメント</block>
   <block id="bfd53ea423739db497251aa14d8747cd" category="paragraph">MetroCluster 構成の場合は、を使用します<block ref="9b888d0bb3e87322cc68a0bb4a7ae515" category="inline-link-rx"></block>。</block>
   <block id="5d0ff6a06bf967bf825de2c2a610cc33" category="list-text">システムをスイッチに接続する方法については、ネットワーク管理者にお問い合わせください。</block>
@@ -7506,7 +7470,6 @@ storage failover modify -node local-auto-giveback false」と入力します
   <block id="98589dc004f09ae0dad7e1b6f02b49cc" category="list-text">コントローラモジュールをリブートします。</block>
   <block id="77eded9438a3613ba447a2592768431f" category="section-title">手順5：自動ギブバックとAutSupportをリストアします</block>
   <block id="c7e6662de773deb97f21acca554ecb2a" category="paragraph">自動ギブバックとAutoSupportが無効になっている場合はリストアします。</block>
-  <block id="e8ee04904c783a5522b8e5d05e929ec0" category="doc">ビデオ- FAS2800</block>
   <block id="89ec55d6caf5c08b62f951c13868846e" category="video-title">アニメーション- FAS2800の設置とセットアップの手順</block>
   <block id="b1431e23e98302fc2fdbdf8a76f33d8d" category="doc">コントローラモジュールハードウェアを交換します- FAS2800</block>
   <block id="d27d70d1f85fe30f676b7d8f18fbcc20" category="paragraph">障害のあるコントローラモジュールハードウェアを交換するには、障害のあるコントローラを取り外し、FRUコンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付け、交換用コントローラモジュールをブートします。</block>
@@ -7904,7 +7867,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="cd6cad2927af0a8738645aef0eddfef3" category="doc">DIMMの交換- ASA A250</block>
   <block id="d649204274d2da7722da732bfeda71c3" category="doc">概要と要件ASA A250</block>
   <block id="a73823d14db47bd43fd209723a8a0f78" category="doc">システム構成のリストアと確認- ASA A250</block>
-  <block id="eb6ba0c5fe7c9a99834343b25a7666cd" category="doc">ビデオ- ASA A250</block>
   <block id="e6f6041e49a048399457259bb308d074" category="admonition">ASA A250は、AFF A250システムと同じインストール手順を使用します。</block>
   <block id="65874038049e4c1254e182578d50f9a6" category="doc">システムの完全なリストア- ASA A250</block>
   <block id="247ba1eaff46a863c502ad82319286c6" category="doc">コントローラのシャットダウン- ASA A250</block>
@@ -8018,7 +7980,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="caa8aa4a595b6f33857d21fb97a3622e" category="paragraph">このページでは、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順を図で示します。を使用します <block ref="0cdb4981396afec17d02c8ce5d1b8e06" category="inline-link-macro-rx"></block> ネットアップシステムのインストールに精通している場合。</block>
   <block id="f0d6a8fa292b0f0965c180c3ec81b98c" category="admonition">ASA A800は、AFF A800システムと同じインストール手順を使用します。</block>
   <block id="027df07ace2b49bdd101ed7de8831a66" category="doc">リカバリイメージのブート- ASA A800</block>
-  <block id="a9d726d2e97d882c1207e42039a6857a" category="doc">ビデオ- ASA A800</block>
   <block id="1809d57833f6aee6ca28a7a9976f3c02" category="doc">SSDドライブまたはHDDドライブの交換- ASA A800</block>
   <block id="8efb05cbcb76a25c9260967bb6da74ea" category="doc">電源装置の交換- ASA A800</block>
   <block id="4ec9ac1d6cfd564e14c7762ed15dd4ca" category="doc">オンボード暗号化キーの確認- ASA A800</block>
@@ -8149,7 +8110,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="dd3e1b2974ba653fef81686173aafcb6" category="doc">システムのリストアの完了- FAS2700</block>
   <block id="6375580a439a26351f5f73fdcb39f1ff" category="doc">クイックガイド- FAS2700</block>
   <block id="16a3fde330c06892c7676575d0819f6e" category="doc">リカバリイメージのブート- FAS2700</block>
-  <block id="9d81f4c4d7531500bffc05974eb9b71b" category="doc">ビデオ- FAS2700</block>
   <block id="ffbcfe33101a940248596cf681644346" category="doc">コントローラモジュールハードウェアの交換- FAS2700</block>
   <block id="f2a5f0054d69581f330396af4e7b9b3e" category="doc">シャーシの交換の概要- FAS2700</block>
   <block id="b975712b276c632e6e3ed246ddd046a0" category="doc">構成のリストアと確認- FAS2700</block>
@@ -8188,7 +8148,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1273c9fbc5c944f1ba9781560b258420" category="summary">このページでは、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順を図で示します。</block>
   <block id="fd21e05e00e82c93ae08fac45c859f89" category="doc">クイックガイド- AFF A220</block>
   <block id="107531ef4f423dd82a8f37d8f67c7072" category="doc">リカバリイメージのブート- AFF A220</block>
-  <block id="7da34aa98ad460a61274e35987ef8e04" category="doc">ビデオ- AFF A220</block>
   <block id="00b19d37023cc17089dc310c38ea5b12" category="doc">SSDドライブまたはHDDドライブの交換- AFF A220</block>
   <block id="f0495ce31f2221593161d6c143dfca0c" category="doc">オンボード暗号化キーの確認- AFF A220</block>
   <block id="c008920266f52508b3f86b5b90ae91bd" category="doc">コントローラモジュールハードウェアの交換- AFF A220</block>
@@ -8235,7 +8194,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="44b5b262e7713dd5aa3d82f5e04c6ab6" category="doc">クイックガイド- ASA A150</block>
   <block id="85b480bf87d91a2932c8ed43e4def5f4" category="admonition">ASA A150は、AFF A150システムと同じインストール手順を使用します。</block>
   <block id="48a9a0f255a122f383dce55509b5a79a" category="doc">リカバリイメージのブート- ASA A150</block>
-  <block id="80973bcb6908e71fe4eed882ff215d80" category="doc">ビデオ- ASA A150</block>
   <block id="76ee45904d9d171832835353313011a4" category="doc">SSDドライブまたはHDDドライブを交換してください- ASA 150</block>
   <block id="fbbc44ce8ce19560615b28dfcbfe46d3" category="doc">オンボード暗号化キーの確認- ASA A150</block>
   <block id="070bdcad0142d8cf21268dca6275fe89" category="doc">コントローラの交換- ASA A150</block>
@@ -8283,7 +8241,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="9e386c9e794f2f2e7ef00f62fb22c636" category="doc">リカバリイメージのブート- ASA A400</block>
   <block id="b65dcf1c7ad6c86f6d2d5bed4626bcc6" category="doc">クイックガイド- ASA A400</block>
   <block id="5eb8101a6e8a2a3f54c56549ab21ade4" category="admonition">ASA A400は、AFF A400システムと同じインストール手順を使用します。</block>
-  <block id="b87492f8acdc430db5ce4001f724bfe5" category="doc">ビデオ- ASA A400</block>
   <block id="b26cf0fc163ec7e9ea966514eed60da1" category="doc">電源装置の交換- ASA A400</block>
   <block id="5f2eeb826d2873b3f4c3b6f5107d3feb" category="doc">オンボード暗号化の確認- ASA A400</block>
   <block id="2d7c6c8ec11dfd6f4583d91c8d94d5d0" category="doc">コントローラの交換- ASA A400</block>
@@ -8410,31 +8367,12 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="38a7a370db7e825d6ae11492a25bbf4c" category="sidebar">ASA A400 PCIe /メザニンカード</block>
   <block id="4ad30ae349c6e2a00c505685283569c4" category="sidebar">ASA A400の電源装置</block>
   <block id="a876a1a0c70aad6f175618bf59efec73" category="sidebar">ASA A400リアルタイムクロックバッテリ</block>
-  <block id="5590b96dc59eb91eb51b7b3ea51d3fd8" category="image-alt">DRW C400コントローラIEOPS 1216の取り外し</block>
   <block id="771f4aeef9d68203f402ef43f2428c23" category="paragraph">コントローラがシャーシからわずかに引き出されます</block>
-  <block id="6eabe3dfd3272d314cbb0448ef86a7ca" category="section-title">手順 5 ：診断を実行します</block>
-  <block id="1292b9de6b55a89a9f27c917af53c51e" category="paragraph">診断を開始するには、システムに LOADER プロンプトが表示されている必要があります。</block>
   <block id="1082bfd13ce3c25ccfc85ed699b54126" category="paragraph">診断手順のコマンドは、すべてコンポーネントを交換するコントローラから実行します。</block>
-  <block id="e7715fbdf353439bc04c101e641a6a00" category="list-text">作業をするコントローラに LOADER プロンプトが表示されていない場合は、コントローラをリブートします。<block ref="d9a3ee635a736b8059849c211af96e57" prefix=" " category="inline-code"></block></block>
   <block id="cafeac4841bc727e191d8e441daae473" category="paragraph">コマンドを問題したら、システムが LOADER プロンプトで停止するまで待ちます。</block>
   <block id="14a78bce1fad359d61fd0d2e4a24c3f0" category="list-text">LOADER プロンプトで、システムレベルの診断用に特別に設計されたドライバにアクセスします。<block ref="87ee09e2a5f76fd0b04e7f6e02d1e3ef" prefix=" " category="inline-code"></block></block>
-  <block id="4d0d7afa62744b6e8fc6dc6801b2da31" category="list-text">表示されたメニューから「 * Scan System * （システムのスキャン）」を選択して、診断テストの実行を有効にします。</block>
   <block id="62b108a49afeed7e7e1892a4157f8715" category="list-text">前述の手順の結果に応じて、次に進みます。</block>
-  <block id="88f619f79a466f76f35e017863a94304" category="section-title">手順 6 ：診断の実行後にコントローラモジュールを稼働状態に戻す</block>
-  <block id="9e70237e8106527e732b0c345e0d528e" category="paragraph">診断が完了したら、システムにケーブルを再接続してコントローラモジュールをギブバックし、自動ギブバックを再度有効にする必要があります。</block>
-  <block id="6d9502ea6880092a4496782c893e3da2" category="image-alt">DRW C400 PSU IEOPS 1237</block>
-  <block id="f953d8cdae44d8d3483abb899a001088" category="image-alt">DRW C400 PCIeカードの交換IEOPS 1235(1)</block>
-  <block id="8a8905b8ba33c894ca2404f3ecc9601d" category="image-alt">DRW C400オープンエアダクトIEOPS 1215</block>
-  <block id="7f3e7059150c562376058a9c62805700" category="image-alt">DRW C400ブートメディアの交換IEOPS 1217</block>
-  <block id="8f9d84ce0761e9cbbd0e69dc419011a6" category="paragraph"><block ref="8f9d84ce0761e9cbbd0e69dc419011a6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="80c14517a78070e49e0abac5d7f9ddbf" category="image-alt">DRW C400メザニンカードの交換IEOPS 1236</block>
-  <block id="ff0420a1b97d66a283e50773fa71f7ab" category="image-alt">DRW C400 RTC BATT IEOPS 1239</block>
   <block id="bd47a35792b075014fd52e08e307f334" category="paragraph">次の図に電源装置を交換する手順を記載します。</block>
-  <block id="627dae9b7fdce24278b6e4ff295eb7be" category="list-text">表示されたメニューから * Test Memory * を選択します。</block>
-  <block id="79934a1e2f37ff48405809bfef33e025" category="list-text">テストに失敗した場合は、エラーを修正してからテストを再実行します。</block>
-  <block id="7795a0b926d5a3e9bb0b6489d5f08336" category="list-text">テストでエラーが報告されなかった場合は、メニューから Reboot を選択してシステムをリブートします。</block>
-  <block id="319906493abbf4e43070e2a96baf7c1a" category="paragraph">システムの NVDIMM を交換したら、そのコンポーネントの診断テストを実行する必要があります。</block>
-  <block id="3c6a6919b7e370565fb312ed482c731f" category="list-text">表示されたメニューから * NVDIMM Test * を選択します。</block>
   <block id="b5775fd5494c53337ae6cdf9684c92bb" category="paragraph">ブートメディアデバイスを障害コントローラから移動し、交換用コントローラに取り付ける必要があります。</block>
   <block id="e1e22f74d03ae53f2b284cc33a49e335" category="paragraph">ブートメディアデバイスを障害のあるコントローラモジュールから交換用コントローラモジュールに移動する必要があります。</block>
   <block id="5f5c8582e186539c05898d22a8d895e8" category="paragraph">ブートメディアは、この手順で先ほど取り外したエアダクトカバーの下にあります。</block>
@@ -8499,7 +8437,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="0a04c386b1c4aba682caa8fbe7cfe6a5" category="list-text">メニューから、メンテナンスモードでのブートを選択します。</block>
   <block id="b68d60431d57a95615f83d1a1fa1b999" category="list-text">次のコマンドを入力してメンテナンスモードを終了します。<block ref="4a1bde0ea8bcda2a591f42646813c477" prefix=" " category="inline-code"></block></block>
   <block id="7de4082b4319513bf089f060127a9d55" category="list-text">システムレベルの診断テストを再実行します。</block>
-  <block id="f7ed34876dbd3974ede0b50d2019fcc5" category="paragraph"><block ref="f7ed34876dbd3974ede0b50d2019fcc5" category="inline-link-macro-rx"></block></block>
   <block id="cac76ada4fbfca68ed190eb21810e1af" category="inline-link">FAS2820</block>
   <block id="d269857d9f0df177f932595366b187b5" category="paragraph"><block ref="d269857d9f0df177f932595366b187b5" category="inline-link-rx"></block></block>
   <block id="b6e60011eab2ca1cf5d6c756a1bbfc5e" category="paragraph">ONTAP 9.13.1</block>
@@ -8540,4 +8477,50 @@ SFP+（ターゲット/イニシエータ）</block>
 <block ref="23c439b7ef31021d610e4d3b988f3cd1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="10fbfa6320d8e7c72e731fbd9a6e6c69" category="admonition">ディスクの再割り当てはNVRAMモジュールを交換する場合にのみ必要で、NVRAM DIMMの交換には該当しません。</block>
   <block id="099f7b942e4e89631784891716949599" category="admonition">この手順は、NVRAM DIMMの交換には適用されません。</block>
+  <block id="ce75c7b2bf3b15b7659cc85a9c36c6f8" category="admonition">プロンプトで、32文字のオンボードキー管理のパスフレーズを英数字で入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block></block>
+  <block id="2f061f16ff1dc3668b0b979718bcf140" category="paragraph">プロンプトで、32文字のオンボードキー管理のパスフレーズを英数字で入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。</block>
+  <block id="f44ae95a820a7e92672103acdefa1387" category="paragraph"><block ref="5e48dfc079c01fd7f817337abb01a320" prefix="" category="inline-code"></block></block>
+  <block id="4d2ddfe3e3c29216d5f6b430195c79ea" category="paragraph">DIMMの固定ツメ</block>
+  <block id="61442583e1c58477c0407d6793d8994b" category="paragraph">DIMMソケット</block>
+  <block id="d29d6bf2e5a715077adb0e295955fc92" category="paragraph">コントローラのロックラッチ</block>
+  <block id="5165d02c271e4ccb721ce18d6870adbf" category="paragraph">バッテリプラグ</block>
+  <block id="f961d430c4493499006fd8fba8e3d862" category="paragraph">ロックタブ</block>
+  <block id="1f25549d09d9fee6b326b3ae80c2ed1b" category="image-alt">DRW 400空 のライザーが取り外されました</block>
+  <block id="7f8edcba2fa9fe4c07e4da59fa96b68f" category="paragraph">ライザーリリースラッチ</block>
+  <block id="5aebd0a51655336d4e63f45f4d8699cd" category="paragraph">PSUの固定ツメ</block>
+  <block id="2c741817612fe801331c1ab28fc54399" category="paragraph">電源ケーブル固定クリップ</block>
+  <block id="6883ec22ed9fad7be1550f7fcb75a7a4" category="paragraph">NVDIMMバッテリの固定ツメ</block>
+  <block id="0a430afe4fbd1dc67017c4844963415a" category="paragraph">PCIカードロックラッチ</block>
+  <block id="4b84ebefc04c1c28f67356b635667565" category="paragraph">PCIロックプレート</block>
+  <block id="81132024d53583d588cfc220ba419763" category="paragraph">PCIカード</block>
+  <block id="f8edc02e7b075268c8d93bf3433201bc" category="paragraph">ファンハンドル</block>
+  <block id="e3e29abcd624744c82654d9487f70f59" category="paragraph">ステータスLED</block>
+  <block id="68ead321739d393fb461326104dc603a" category="paragraph">PCIライザー</block>
+  <block id="abb4bcb42289e1d079bce363235b8710" category="paragraph">ライザー取り付けネジ</block>
+  <block id="4eeebc2159d360f3ea1194928bb48f02" category="cell">ライザーカード</block>
+  <block id="8df156db0521f5b51f8c4605ed8aed73" category="paragraph">中央のライザー</block>
+  <block id="31464fee840ac27fb57e475ca871c9aa" category="paragraph">RTCバッテリの取り外し</block>
+  <block id="00c5745f792e1901ee8e2e1e1d041ee1" category="paragraph">シートRTCバッテリ</block>
+  <block id="ce0aad779020493a2d4e98a385762d2b" category="summary">このビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。</block>
+  <block id="997b68807482ea64cc9ef5f725f9309b" category="doc">ビデオ手順- AFF A400</block>
+  <block id="be804c6631fd09c10e34c693ad05b79b" category="doc">ビデオ手順- AFF C190</block>
+  <block id="f2f9e5e5861340b4511769cf5cb0c85c" category="doc">手順ビデオ- FAS2800</block>
+  <block id="94ca5512de5bd6bb38f58c383086a2a8" category="paragraph"><block ref="94ca5512de5bd6bb38f58c383086a2a8" category="inline-link-macro-rx"></block></block>
+  <block id="110062ecc4941a387b27997f0c7ae5ef" category="doc">ビデオ手順- ASA A400</block>
+  <block id="abc8a9a1aab13018556d024a5691afae" category="doc">ビデオの手順- FAS8300 / FAS8700</block>
+  <block id="57fcdb44384a01811b20cb55bd021011" category="doc">ビデオ手順- AFF A320</block>
+  <block id="f4c78bd954ecc6d38092f7c504ddfb9a" category="doc">手順ビデオ- FAS2700</block>
+  <block id="3620e8833d6beeecd610b282d65a89b5" category="admonition"><block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> ホストネットワークカード（ファイバチャネルまたは25GbE）のスロットプライオリティはスロット2です。ただし、両方のカードがある場合は、ファイバチャネルカードはスロット2に、25GbEカードはスロット1に装着します（次のオプションを参照）。外付けシェルフがある場合、ストレージカードはシェルフでサポートされる唯一のスロットであるスロット1に挿入します。</block>
+  <block id="de8a85d6bcdb94b40275e65134363d85" category="doc">ビデオ手順- AFF C250</block>
+  <block id="0b22644145264cc3d3c89acc64fc435a" category="doc">ビデオ手順- AFF A150</block>
+  <block id="0f2e7671fbc778ffb86bcc59f57731e6" category="doc">ビデオ手順- AFF A800</block>
+  <block id="781b1fa6778b9993b5d63e1c5ea22106" category="doc">ビデオ手順- ASA A150</block>
+  <block id="51ee1645426dc62fc133d17a450c3479" category="doc">ビデオ手順- AFF C800</block>
+  <block id="965d244544acb766ba421f29e927c182" category="doc">ビデオ手順- AFF A220</block>
+  <block id="e9ec2c534be811bcd6c8fa9eb7fde561" category="doc">ビデオ手順- AFF C400</block>
+  <block id="17faa87026dc066df4cb6a815fa4044b" category="doc">ビデオ手順- ASA A800</block>
+  <block id="0bc106512a736143ad0980352b77e513" category="doc">ビデオ手順- AFF A250</block>
+  <block id="c4d97f649f8fd0bc0d2842c98374b325" category="summary">インストールとセットアップのビデオでは、新しいシステムの設置とケーブル接続の方法を紹介しています。</block>
+  <block id="728c8b35a059c5debd8717ebc5eef9cc" category="doc">ビデオ手順- ASA A250</block>
+  <block id="da8c100a35e67a4a9a03589f6afa9ddc" category="doc">ビデオ手順- FAS500f</block>
 </blocks>
