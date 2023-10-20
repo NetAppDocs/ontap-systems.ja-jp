@@ -1,0 +1,86 @@
+---
+section: asa-c400
+title: ASA C400システム
+entries:
+- title: 設置とセットアップ
+  pdf-filename: ASA C400のインストールとセットアップ
+  entries:
+  - title: インストールとセットアップを選択します
+    url: "/asa-c400/install-setup.html"
+  - title: クイックステップ
+    url: "/asa-c400/install-quick-guide.html"
+  - title: ビデオの手順
+    url: "/asa-c400/install-videos.html"
+  - title: 詳細な手順
+    url: "/asa-c400/install-detailed-guide.html"
+- title: メンテナンス
+  pdf-filename: ASA C400のメンテナンス
+  entries:
+  - title: 概要
+    url: "/asa-c400/maintain-overview.html"
+  - title: ブートメディア
+    pdf-filename: ASA C400ブートメディア
+    entries:
+    - title: 概要
+      url: "/asa-c400/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/asa-c400/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa-c400/bootmedia-impaired-controller-shutdown.html"
+    - title: ブートメディアを交換します
+      url: "/asa-c400/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/asa-c400/bootmedia-recovery-image-boot-options.html"
+    - title: MetroCluster の設定をスイッチバックします
+      url: "/asa-c400/bootmedia-2n-mcc-switchback.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/asa-c400/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/asa-c400/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: ASA C400シャーシ
+    entries:
+    - title: 概要
+      url: "/asa-c400/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa-c400/chassis-replace-shutdown.html"
+    - title: シャーシの交換
+      url: "/asa-c400/chassis-replace-move-hardware.html"
+    - title: シャーシ交換後の処理
+      url: "/asa-c400/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラ
+    pdf-filename: ASA C400コントローラモジュール
+    entries:
+    - title: 概要
+      url: "/asa-c400/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa-c400/controller-replace-shutdown.html"
+    - title: コントローラを交換してください
+      url: "/asa-c400/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/asa-c400/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続
+      url: "/asa-c400/controller-replace-recable-reassign-disks.html"
+    - title: システムのリストアを完了
+      url: "/asa-c400/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    pdf-filename: ASA C400 DIMM
+    url: "/asa-c400/dimm-replace.html"
+  - title: ファン
+    pdf-filename: ASA C400ファンモジュール
+    url: "/asa-c400/fan-swap-out.html"
+  - title: NVDIMM バッテリ
+    pdf-filename: ASA C400 NVDIMMバッテリ
+    url: "/asa-c400/nvdimm-battery-replace.html"
+  - title: NVDIMM
+    pdf-filename: ASA A320 NVDIMM
+    url: "/asa-c400/nvdimm-replace.html"
+  - title: PCIe カードまたはメザニンカード
+    pdf-filename: ASA C400 PCIeまたはメザニンカード
+    url: "/asa-c400/pci-cards-and-risers-replace.html"
+  - title: 電源装置
+    pdf-filename: ASA C400電源装置
+    url: "/asa-c400/power-supply-replace.html"
+  - title: リアルタイムクロックバッテリ
+    pdf-filename: ASA C400リアルタイムクロックバッテリ
+    url: "/asa-c400/rtc-battery-replace.html"

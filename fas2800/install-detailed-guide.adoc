@@ -336,7 +336,7 @@ video::6553a3db-57dd-4247-b34a-afe8016315d4[panopto]
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[OIEケーブル25GbイーサネットSFP28 IEOPS 1069]
 
 +
-image::../media/drw_2800_tnsc_cluster_cabling_IEOPS-892.svg[DRW 2800 TNSCクラスタケーブル配線IEOPS 892]
+image::../media/drw_2800_switched_cluster_cabling_IEOPS-893.svg[DRW 2800スイッチクラスタのケーブル接続IEOPS 893]
 
 . RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
 +

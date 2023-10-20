@@ -1,6 +1,6 @@
 ---
 indexpage:
-  lead: ネットアップのAFF、ASA、FASストレージシステムは、業界最先端のデータ管理機能を備えた、エンタープライズクラスの最先端のスケールアウトオールフラッシュまたはハイブリッドストレージです。このサイトのドキュメントを使用して、システムのインストール、拡張、アップグレード、保守を行います。
+  lead: ネットアップのONTAPハードウェアストレージシステムは、業界最先端のデータ管理機能を備えた、エンタープライズクラスの最先端のスケールアウトオールフラッシュまたはハイブリッドストレージです。このサイトのドキュメントを使用して、システムのインストール、拡張、アップグレード、保守を行います。
   tiles:
   - title: はじめに
     links:
@@ -18,11 +18,13 @@ indexpage:
       url: "/aff-cseries/index.html"
     - title: ASA Aシリーズシステム
       url: "/allsan-a-series/index.html"
+    - title: ASA Cシリーズシステム
+      url: "/allsan-c-series/index.html"
     - title: FAS システム
       url: "/fas/index.html"
     - title: End of Availabilityシステム
       url: "/endofavail/index.html"
-  - title: ネットワーキング
+  - title: シェルフとスイッチ
     links:
     - title: ドライブシェルフ
       url: "/drive-shelves/index.html"

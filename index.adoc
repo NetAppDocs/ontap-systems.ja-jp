@@ -5,7 +5,7 @@ permalink: index.html
 keywords: aff fas asa 
 summary: ネットアップのAFF、ASA、FASストレージシステムは、業界最先端のデータ管理機能を備えた、エンタープライズクラスの最先端のスケールアウトオールフラッシュまたはハイブリッドストレージです。このサイトのドキュメントを使用して、AFF、ASA、FASシステムとそのストレージシェルフ、クラスタスイッチの設置、拡張、アップグレード、保守を行います。 
 ---
-= AFF、ASA、およびFASシステムのマニュアル
+= ONTAPハードウェアシステムのドキュメント
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

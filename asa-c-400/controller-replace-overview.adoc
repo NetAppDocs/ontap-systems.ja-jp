@@ -1,0 +1,36 @@
+---
+permalink: asa-c400/controller-replace-overview.html 
+sidebar: sidebar 
+keywords: asa c400, prerequisite, replace the controller module 
+summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。 
+---
+= コントローラモジュールの交換の概要- ASA C400
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。
+
+* すべてのドライブシェルフが適切に動作している必要があります。
+* MetroCluster 構成のシステムの場合は、を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["正しいリカバリ手順の選択"] この手順の使用が必要かどうかを判断するには、次の手順を実行
++
+この手順 を使用する場合は、 4 ノードまたは 8 ノードの MetroCluster 構成のコントローラの交換用手順 が HA ペアの場合と同じであることに注意してください。障害が HA ペアに制限されているため、 MetroCluster 固有の手順は必要ありません。また、 storage failover コマンドを使用すると、交換時に無停止操作を行うことができます。
+
+* 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。
+* コントローラモジュールを、同じモデルタイプのコントローラモジュールと交換する必要があります。コントローラモジュールを交換するだけでは、システムをアップグレードすることはできません。
+* この手順の一部としてドライブやドライブシェルフを変更することはできません。
+* この手順 では、障害のあるコントローラから _replacement _ controller にブートデバイスが移動され、古いコントローラモジュールと同じバージョンの ONTAP で _replacement _ controller がブートします。
+* これらの手順のコマンドを正しいシステムに適用することが重要です。
++
+** impaired_controller は、交換するコントローラです。
+** 交換用の node_name は、障害のあるコントローラに交換する新しいコントローラです。
+** healthy_controller はサバイバーコントローラです。
+
+
+* コントローラのコンソール出力を必ずテキストファイルにキャプチャする必要があります。
++
+これにより、手順の記録が作成され、交換プロセス中に発生する可能性のある問題をトラブルシューティングすることができます。
+
+

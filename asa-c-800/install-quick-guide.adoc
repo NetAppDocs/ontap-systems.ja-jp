@@ -1,0 +1,14 @@
+---
+permalink: asa-c800/install-quick-guide.html 
+sidebar: sidebar 
+keywords: asa c800, quick steps 
+summary: このセクションでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。 
+---
+= クイックステップ- ASA C800
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。を使用します link:../media/PDF/215-13082_2022-08_us-en_ASAC800_ISI.pdf["ASA C800の設置およびセットアップ手順"^] ネットアップシステムのインストールに精通している場合。

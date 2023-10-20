@@ -1,0 +1,19 @@
+---
+permalink: asa-c250/install-videos.html 
+sidebar: sidebar 
+keywords: asa c250, hardware installation and cabling video, performing end-to-end software configuration video 
+summary: ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を紹介するビデオを 2 種類紹介します。 
+---
+= ビデオ- ASA C250
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
+
+.アニメーション- AFF A250のインストールとセットアップ
+video::fe6876d5-9332-4b2e-89be-ac6900027ba5[panopto]
+
+NOTE: ASA C250は、AFF A250システムと同じインストール手順を使用します。

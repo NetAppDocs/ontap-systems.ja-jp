@@ -1,0 +1,21 @@
+---
+permalink: asa-c800/bootmedia-replace-overview.html 
+sidebar: sidebar 
+keywords: asa c800, replace the boot media 
+summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
+---
+= ブートメディアの交換の概要- ASA C800
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+* 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。
+* これらの手順のコマンドを正しいコントローラに適用することが重要です。
++
+** impaired_controller は、メンテナンスを実行しているコントローラです。
+** healthy_controller は、障害のあるコントローラの HA パートナーです。
+
+
+

@@ -1,0 +1,178 @@
+---
+permalink: asa-c400/chassis-replace-shutdown.html 
+sidebar: sidebar 
+keywords: asa c400, asa, c400, component, system, function, properly, contact, technical, support, replace, chassis, shut, down, controller, replacing, remove, module, fan, equipment, rack, cabinet, ha, state, switch, back, aggregate, two-node, metrocluster, configuration, complete, replacement, process, replace the chassis, shut down the controllers when replacing a chassis, remove the controller modules, move the fans, replace a chassis from within the equipment rack or system cabinet, install the controller modules, verify and set the ha state of the chassis, switch back aggregates in a two-node metrocluster configuration, complete the replacement process 
+summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
+---
+= コントローラのシャットダウン- ASA C400
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
+
+
+
+== オプション 1 ：シャーシを交換する場合は、コントローラをシャットダウンします
+
+この手順 は、2ノード、非MetroCluster構成専用です。システムのノードが3つ以上の場合は、を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_perform_a_graceful_shutdown_and_power_up_of_one_HA_pair_in_a_4__node_cluster["4ノードクラスタで1つのHAペアを正常にシャットダウンして電源をオンにする方法"^]。
+
+.作業を開始する前に
+必要なもの：
+
+* ONTAP のローカル管理者のクレデンシャル。
+* ストレージ暗号化を使用する場合は、ネットアップのオンボードキー管理（OKM）クラスタ全体のパスフレーズ。
+* 各コントローラのSP / BMCへのアクセス性。
+* すべてのクライアント/ホストからネットアップシステム上のデータへのアクセスを停止します。
+* 外部バックアップジョブを一時停止します。
+* 交換に必要な工具と機器。
+
+
+
+NOTE: FabricPool のクラウド階層として使用されるネットアップStorageGRID またはONTAP S3のシステムの場合は、を参照してください https://kb.netapp.com/onprem/ontap/hardware/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage#["ストレージシステムの『解決ガイド』を正常にシャットダウンし、電源を投入します"] この手順 を実行した後。
+
+
+NOTE: FlexArray アレイLUNを使用している場合は、この手順 の実行後に該当するシステムでシャットダウン手順 に関するベンダーのストレージアレイのドキュメントを参照してください。
+
+
+NOTE: SSDを使用している場合は、を参照してください https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU490["SU490：（影響：重大）SSDのベストプラクティス：電源がオフになってから2カ月以上が経過すると、ドライブ障害やデータ損失のリスクを回避できます"]
+
+シャットダウン前のベストプラクティスは次のとおりです。
+
+* 追加を実行します https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["システムの健全性チェック"]。
+* ONTAP をシステムの推奨リリースにアップグレードします。
+* いずれかを解決します https://activeiq.netapp.com/["Active IQ ウェルネスアラートとリスク"]。システムコンポーネントのLEDなど、現在システムに発生している障害をメモします。
+
+
+.手順
+. SSHを使用してクラスタにログインするか、クラスタ内の任意のノードからローカルのコンソールケーブルとラップトップ/コンソールを使用してログインします。
+. AutoSupport をオフにして、システムがオフラインになるまでの時間を指定します。
++
+`system node autosupport invoke -node * -type all -message "MAINT=8h Power Maintenance"`
+
+. すべてのノードのSP / BMCアドレスを特定します。
++
+`system service-processor show -node * -fields address`
+
+. クラスタシェルを終了します。 `exit`
+. 前の手順の出力に表示されたいずれかのノードのIPアドレスを使用して、SSH経由でSP / BMCにログインします。
++
+コンソール/ラップトップを使用している場合は、同じクラスタ管理者のクレデンシャルを使用してコントローラにログインします。
+
++
+
+NOTE: 進捗状況を監視できるように、すべてのSP / BMC接続とのSSHセッションを開きます。
+
+. クラスタ内のすべてのノードを停止します。
++
+`system node halt -node * -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`。
+
++
+
+NOTE: StrictSyncモードで動作するSnapMirror同期を使用するクラスタの場合： `system node halt -node * -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
+
+. というメッセージが表示されたら、クラスタ内の各コントローラに「* y *」と入力します `_Warning: Are you sure you want to halt node "cluster name-controller number"?
+{y|n}:_`
+. 各コントローラが停止するまで待ち、LOADERプロンプトを表示します。
+. PSUのオン/オフスイッチがない場合は、各PSUの電源をオフにするか、電源プラグを抜きます。
+. 各PSUから電源コードを抜きます。
+. 障害のあるシャーシ内のすべてのコントローラの電源がオフになっていることを確認します。
+
+
+
+
+== オプション 2 ： 2 ノード MetroCluster 構成のコントローラをシャットダウンする
+
+障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをスイッチオーバーする必要があります。
+
+.このタスクについて
+* NetApp Storage Encryption を使用している場合は、の「 FIPS ドライブまたは SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html["CLI での NetApp Encryption の概要"^]。
+* 正常なコントローラに電力を供給するために、この手順 の最後で電源装置をオンのままにしておく必要があります。
+
+
+.手順
+. MetroCluster ステータスをチェックして、障害のあるコントローラが正常なコントローラに自動的にスイッチオーバーしたかどうかを確認します。「 MetroCluster show 」
+. 自動スイッチオーバーが発生したかどうかに応じて、次の表に従って処理を進めます。
++
+[cols="1,2"]
+|===
+| 障害のあるコントローラの状況 | 作業 
+
+
+ a| 
+自動的にスイッチオーバーした
+ a| 
+次の手順に進みます。
+
+
+
+ a| 
+自動的にスイッチオーバーしていない
+ a| 
+正常なコントローラから計画的なスイッチオーバー操作を実行します : MetroCluster switchover
+
+
+
+ a| 
+スイッチオーバーは自動的には行われておらず、 MetroCluster switchover コマンドを使用してスイッチオーバーを試みたが、スイッチオーバーは拒否された
+ a| 
+拒否メッセージを確認し、可能であれば問題を解決してやり直します。問題を解決できない場合は、テクニカルサポートにお問い合わせください。
+
+|===
+. サバイバークラスタから MetroCluster heal-phase aggregates コマンドを実行して、データアグリゲートを再同期します。
++
+[listing]
+----
+controller_A_1::> metrocluster heal -phase aggregates
+[Job 130] Job succeeded: Heal Aggregates is successful.
+----
++
+修復が拒否された場合は '-override-vetoes パラメータを指定して MetroCluster heal コマンドを再実行できますこのオプションパラメータを使用すると、修復処理を妨げるソフトな拒否はすべて無視されます。
+
+. MetroCluster operation show コマンドを使用して、処理が完了したことを確認します。
++
+[listing]
+----
+controller_A_1::> metrocluster operation show
+    Operation: heal-aggregates
+      State: successful
+Start Time: 7/25/2016 18:45:55
+   End Time: 7/25/2016 18:45:56
+     Errors: -
+----
+. 「 storage aggregate show 」コマンドを使用して、アグリゲートの状態を確認します。
++
+[listing]
+----
+controller_A_1::> storage aggregate show
+Aggregate     Size Available Used% State   #Vols  Nodes            RAID Status
+--------- -------- --------- ----- ------- ------ ---------------- ------------
+...
+aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirrored, normal...
+----
+. 「 MetroCluster heal-phase root-aggregates 」コマンドを使用して、ルートアグリゲートを修復します。
++
+[listing]
+----
+mcc1A::> metrocluster heal -phase root-aggregates
+[Job 137] Job succeeded: Heal Root Aggregates is successful
+----
++
+修復が拒否された場合は '-override-vetoes パラメータを指定して MetroCluster heal' コマンドを再実行できますこのオプションパラメータを使用すると、修復処理を妨げるソフトな拒否はすべて無視されます。
+
+. デスティネーションクラスタで「 MetroCluster operation show 」コマンドを使用して、修復処理が完了したことを確認します。
++
+[listing]
+----
+
+mcc1A::> metrocluster operation show
+  Operation: heal-root-aggregates
+      State: successful
+ Start Time: 7/29/2016 20:54:41
+   End Time: 7/29/2016 20:54:42
+     Errors: -
+----
+. 障害のあるコントローラモジュールで、電源装置の接続を解除します。
+

@@ -1,0 +1,19 @@
+---
+permalink: asa-c400/install-quick-guide.html 
+sidebar: sidebar 
+keywords: asa c400, asa, c400, guide, graphic, instruction, installation, system, rack, cabling, cable, intitial, system, bring-up, guide, install, netapp, system, quick guide 
+summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。 
+---
+= クイックガイド- ASA C400
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+『Installation and Setup手順』には、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順が図で示されています。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。
+
+にアクセスします link:../media/PDF/March_2023_Rev1_AFFC400_ISI_IEOPS-1015.pdf["AFF C400のセットアップガイド"^]。
+
+
+NOTE: ASA C400は、AFF C400システムと同じインストール手順を使用します。
