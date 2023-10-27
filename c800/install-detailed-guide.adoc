@@ -263,10 +263,10 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 |===
 . オプションのケーブル接続を行うには、以下を参照してください
 +
-** <<Option 1: Connect to a Fibre Channel host>>
-** <<Option 2: Connect to a 10GbE host>>
-** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
-** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
+** <<オプション 1 ： Fibre Channel ホストネットワークにケーブルを接続する>>
+** <<オプション 2 ： 10GbE ホストネットワークにケーブルを接続する>>
+** <<オプション 3 ：コントローラを 1 台のドライブシェルフにケーブル接続する>>
+** <<オプション 4 ：コントローラを 2 台のドライブシェルフにケーブル接続する>>
 
 
 . システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
@@ -332,10 +332,10 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 |===
 . オプションのケーブル接続を行うには、以下を参照してください
 +
-** <<Option 1: Connect to a Fibre Channel host>>
-** <<Option 2: Connect to a 10GbE host>>
-** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
-** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
+** <<オプション 1 ： Fibre Channel ホストネットワークにケーブルを接続する>>
+** <<オプション 2 ： 10GbE ホストネットワークにケーブルを接続する>>
+** <<オプション 3 ：コントローラを 1 台のドライブシェルフにケーブル接続する>>
+** <<オプション 4 ：コントローラを 2 台のドライブシェルフにケーブル接続する>>
 
 
 . システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
@@ -380,8 +380,8 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
  a| 
 その他のオプションのケーブル接続を行うには、次のいずれかを選択します
 
-* <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
-* <<Option 4: Connect to two direct-attached NS224 drive shelves>>
+* <<オプション 3 ：コントローラを 1 台のドライブシェルフにケーブル接続する>>
+* <<オプション 4 ：コントローラを 2 台のドライブシェルフにケーブル接続する>>
 
 
 
@@ -425,8 +425,8 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
  a| 
 その他のオプションのケーブル接続を行うには、次のいずれかを選択します
 
-* <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
-* <<Option 4: Connect to two direct-attached NS224 drive shelves>>
+* <<オプション 3 ：コントローラを 1 台のドライブシェルフにケーブル接続する>>
+* <<オプション 4 ：コントローラを 2 台のドライブシェルフにケーブル接続する>>
 
 
 

@@ -19,7 +19,6 @@
   <block id="1a02fe8fc6a186319dd3345573fc3717" category="doc">ノード 4 をインストールしてブートします</block>
   <block id="550ffaa7219faf74146770514db0d8e8" category="inline-link-macro">ネットブートを準備</block>
   <block id="df5267f8e4bbfa9add1dd732e6b68e41" category="inline-link-macro">ノード 4 で FC または UTA / UTA2 設定を設定します</block>
-  <block id="3804b132271e47a4db7521e977b43625" category="inline-link-macro">ONTAP 9 ハイアベイラビリティ構成ガイド</block>
   <block id="8c4aa541ee911e8d80451ef8cc304806" category="list-text">ストレージ</block>
   <block id="c1325f6903ebb5ebb2bb519a73ddb1b0" category="cell">作業</block>
   <block id="0ba2b3e0a887666765eb2d690768c576" category="cell">用途</block>
@@ -1024,7 +1023,6 @@
   <block id="e55f609f99ca89d1e0364e07cd66a1ac" category="paragraph">障害ノードに「 Waiting for giveback... 」というメッセージが表示されたら、正常なノードからギブバックを実行します。</block>
   <block id="9829cc73f1aa57fe4c8f650070116d1b" category="list-text">正常なノードから：「 storage failover giveback -ofnode partner_node_name</block>
   <block id="6ccdc0e53e02a4d771ffb485d5c0df6c" category="paragraph">障害ノードはストレージをテイクバックしてブートを完了し、その後リブートして再び正常なノードによってテイクオーバーされます。</block>
-  <block id="08ca2eade8768d4ee7e1752168f719ac" category="paragraph"><block ref="08ca2eade8768d4ee7e1752168f719ac" category="inline-link-rx"></block></block>
   <block id="2e2dd412417cfab75b0340fc82c0c08b" category="list-text">ギブバック処理が完了したら、「 storage failover show 」コマンドを使用して、 HA ペアが正常でテイクオーバーが可能であることを確認します。</block>
   <block id="d2438a9a8b88afff0b59df6c125b3884" category="list-text">storage failover modify コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。</block>
   <block id="d574c271d37aff5dfc97b6ecd338458f" category="doc">リストアと交換の手順を完了します - AFF A700s</block>
@@ -1734,8 +1732,6 @@
   <block id="b075a4576b5250274446097769fe8ec1" category="list-text">交換用ブートメディアをコントローラモジュールに取り付けます。</block>
   <block id="cece3275192f19a99192545e91b78506" category="list-text">EFI フォルダを USB フラッシュドライブの最上位ディレクトリにコピーします。+ USB フラッシュドライブには、 EFI フォルダと障害のあるコントローラが実行しているものと同じバージョンの Service Image (BIOS) が必要です。</block>
   <block id="055ce7154e7ea0261c8667a0d628ee36" category="image-alt">DRW A800 クローズエアダクト</block>
-  <block id="5fb89931e5b269129a2ad5936878a851" category="list-text">コマンドの出力に &lt;lno-DARE&gt; が表示されず、システムで ONTAP 9.5 が実行されている場合は、に進みます <block ref="b9f6f8746149f87def14842273c93bfe" category="inline-xref-macro-rx"></block>。</block>
-  <block id="70c3e5c6b05722334dd3cfb521d9e159" category="list-text">コマンドの出力に &lt;lno-DARE &gt; が表示されず、システムで ONTAP 9.6 以降が実行されている場合は、に進みます <block ref="e0569187fa90a6ae4bbbe053355b82c8" category="inline-xref-macro-rx"></block>。</block>
   <block id="34cf3a43d39d8b0acc65bd578d7188da" category="doc">ブートメディア AFF A800 を交換してください</block>
   <block id="56ea39f220f0f9a4e092906ae1b4e2a2" category="paragraph">コントローラモジュールを交換する場合は、障害のあるコントローラモジュールから交換用コントローラモジュールに電源装置を移動する必要があります。</block>
   <block id="79a34d0b71ca1ad3fdbbb6bb3a548146" category="image-alt">DRW A800 ファンの交換</block>
@@ -3438,7 +3434,6 @@
   <block id="8394191e21f04380d08fe40ae8199691" category="summary">シャーシを交換するには、コントローラをシャットダウンする必要があります。この手順はシステムの停止を伴います。2 ノードクラスタではサービスが完全に停止し、マルチノードクラスタでは部分的に停止します。</block>
   <block id="a5c7a7f72206c6b63d2ec6de862b1cfd" category="doc">コントローラをシャットダウンします - AFF A300</block>
   <block id="c1835b78219bf98dc8901ba1eb56866b" category="paragraph">シャーシを交換する前に、コントローラをシャットダウンする必要があります。</block>
-  <block id="3746182c68f1f041a5f57979560a0566" category="list-text">に進みます <block ref="1665eb69960f5979fe40ff23600bffd1" category="inline-xref-macro-rx"></block>。</block>
   <block id="8a73953f68f7fdf48a4b4ff53aac3e33" category="doc">システムにケーブルを再接続し、ディスクを再割り当てします - AFF A300</block>
   <block id="534553d5e6c1df40c70ac7eb17fa2bee" category="doc">2 ノード MetroCluster 構成のアグリゲートをスイッチバックする - AFF A300</block>
   <block id="22a0944cdb4fa603e25d6c2d3d91664d" category="doc">クラスタ構成ワークシート - AFF A300</block>
@@ -6585,16 +6580,8 @@
   <block id="7befdc0c8cc35d0c1711e11bd7feb970" category="list-text">キャッシングモジュールのデータを消去します。<block ref="6daf7f4112fcf7c7be366c44ff70faf2" prefix=" " category="inline-code"></block></block>
   <block id="236dd84b9226dbf8dfd98a6c46b59972" category="list-text">キャッシングモジュールからデータが消去されたことを確認します。<block ref="55030d884a341e8f95d06478b61fbec9" prefix=" " category="inline-code"></block></block>
   <block id="af41b619bf9d50ddae2454efc001e4dd" category="paragraph">出力には、キャッシングモジュールのステータスが消去済みと表示されます。</block>
-  <block id="376b1cae869bbe8ab1cce68fdb30b696" category="inline-link-macro">DIMM を交換します</block>
-  <block id="91e13f2779cb51174165fa30eaba7e5b" category="list-text">に戻ります <block ref="cf268cc4bc5a73daf7348170b397c07d" category="inline-link-macro-rx"></block> この手順で、 NVMEM LED を再確認します。</block>
   <block id="1a9ae2b5eb296d614bebfdc33f389268" category="doc">オンボード暗号化キー（AFF A150）を確認します</block>
   <block id="3bf6a2921f0e655ea4d2b6b2851e02df" category="doc">システムにケーブルを再接続し、ディスクを再割り当てします（AFF A150）</block>
-  <block id="91b91feeb88498e7be1c10bbbb6db4c2" category="inline-link-macro">HA システムでのシステム ID の変更の確認</block>
-  <block id="4e87b3c0f415f46d36e8fa6bd32a6ff7" category="paragraph"><block ref="4e87b3c0f415f46d36e8fa6bd32a6ff7" category="inline-link-macro-rx"></block></block>
-  <block id="465740a443e85d455a90494615d629b9" category="inline-link-macro">ONTAP のスタンドアロンシステムでの手動によるシステム ID の再割り当て</block>
-  <block id="7070195bf98baff2e0462461db9cb074" category="paragraph"><block ref="7070195bf98baff2e0462461db9cb074" category="inline-link-macro-rx"></block></block>
-  <block id="734e28e3c6b715a48c7043347210471e" category="inline-link-macro">2 ノード MetroCluster 構成での手動によるシステム ID の再割り当て</block>
-  <block id="ca5a5e07d656cff35da2184538cfc5fb" category="paragraph"><block ref="ca5a5e07d656cff35da2184538cfc5fb" category="inline-link-macro-rx"></block></block>
   <block id="1cd8a39839471e937855a3c54b6b84d9" category="doc">ブートメディアの交換の概要- AFF A150</block>
   <block id="35db388e4e99e4a7488ab682126d7fa6" category="doc">NVMEMバッテリを交換します（AFF A150）</block>
   <block id="2867a72512f6330f74fb93ac9f93f07d" category="doc">ハードウェアの移動と交換- AFF A150</block>
@@ -7372,7 +7359,6 @@
   <block id="60564c6a5dbb582ea0f8b967540d266c" category="paragraph">ラベルにはスタック番号が示されます。たとえば、「* Loop or Stack #：1 *」や「* Loop or Stack #：2 *」のようになります。ルートアグリゲートが含まれていないディスクシェルフのラベルには、ディスクシェルフのシリアル番号のみが記載されています。</block>
   <block id="e50b176d298cced2ec9cfd5bbe516332" category="list-text">インバンドのAlternate Control Path（IBACP）は自動的に有効になります。</block>
   <block id="e5db155980df3ce33a16c9ed4af83e4e" category="paragraph">IBACPは、シングルパスHA構成またはシングルパス構成ではサポートされません。</block>
-  <block id="ba809f57bc3e36546d8a47b82a5d995c" category="paragraph"><block ref="ba809f57bc3e36546d8a47b82a5d995c" category="inline-link-rx"></block></block>
   <block id="d37bef5353b917df46bc5ea30882b3a9" category="paragraph">に記載された要件を満たしている必要があります <block ref="45a94b67f53095b9a49e00311fb0216a" category="inline-xref-macro-rx"></block> ディスクシェルフをラックに設置しておきます。</block>
   <block id="59e65b256ff4505ae2cefd9f9a823d8b" category="paragraph">マルチパスHA、トライパスHA、マルチパス、シングルパスHA、またはシングルパス構成をケーブル接続する</block>
   <block id="7e8bbc30dce4dc23bd053149c93370be" category="inline-link-macro">マルチパスHA構成のコントローラ/スタック間のケーブル接続ワークシートとケーブル接続例</block>
@@ -7383,7 +7369,6 @@
   <block id="a9965269fc2882517b2f7404230818ad" category="list-text">既存のスタックの終端（論理的に最初または最後のディスクシェルフ）に1つ以上のディスクシェルフをホットアドする場合は、構成に応じた手順を実行します。それ以外の場合は、次の手順に進みます。</block>
   <block id="ca067501330c228a786fd00d17229575" category="paragraph">コントローラへのマルチパスHA、トライパスHA、マルチパス、クアッドパスHA、またはクアッドパス接続を備えたスタックの終端にディスクシェルフをホットアドします</block>
   <block id="fa3d4e5360018aa45e5104272d43148c" category="paragraph">スタックがに記載された要件を満たしている必要があります <block ref="d7ead9d51e0253f97f9c0ae83a2ee9eb" category="inline-xref-macro-rx"></block> この手順のセクション。</block>
-  <block id="2aaf80f49dd70b27832d7aa8d96090d0" category="list-text">コマンド出力に&lt;lno-DARE&gt;または&lt;1Ono-DARE&gt;と表示された場合、システムはNVEをサポートしていません。に進みます <block ref="89ef15e2cd441b6b5852f79de56e5549" category="inline-xref-macro-rx"></block>。</block>
   <block id="78fe270cb69c9ecda90d7e049a571c28" category="list-text">&lt;lno-DARE&gt;がコマンド出力に表示されず、システムでONTAP 9.6以降が実行されている場合は、次のセクションに進みます。 <block ref="a913f4e8384864716d5146884ff27f0e" category="inline-xref-macro-rx"></block>。</block>
   <block id="d9b691280dde7c1805e39052719c9c29" category="list-text">正常なコントローラからの自動ギブバックを無効にします。
 storage failover modify -node local-auto-giveback false」と入力します
@@ -7592,7 +7577,6 @@ storage failover modify -node local-auto-giveback false」と入力します
   <block id="0da3888f81e8e56d2de2a92a42b512a3" category="doc">リカバリイメージをブートします（FAS2800）</block>
   <block id="c5ad83e174ba7727e76fc50c8366e589" category="list-text">varファイルシステムをリストアします。</block>
   <block id="e51ecd8f185715278ef737fd290e62f5" category="list-text">を押します<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block> 構成コピーをリストアするかどうかを確認するメッセージが表示されます。</block>
-  <block id="17fb1354460acbac7ab4abe6c27a24a2" category="list-text">システムにオンボードキーマネージャ、 NSE 、または NVE が設定されている場合は、に進みます <block ref="4b98be10d46a75a522880bc01a177aa5" category="inline-xref-macro-rx"></block></block>
   <block id="1a037944aedbce3040a5314200246858" category="list-text">クラスタのプロンプトで、を使用して論理インターフェイスを確認します<block ref="55cf88a325a6e0574aef732566cc984c" prefix=" " category="inline-code"></block> コマンドを実行します</block>
   <block id="8c4cb494b75288cf3ce1e7ce1dee3c9d" category="paragraph">「false」と表示されるインターフェイスがある場合は、を使用してそれらのインターフェイスをホームポートにリバートします<block ref="ffbe7d182280173cba10c83ec9992974" prefix=" " category="inline-code"></block> コマンドを実行します</block>
   <block id="fcb4d3b1f229bc036dc2280a7c1d29c4" category="list-text">ストレージ暗号化を使用していない場合は、自動ギブバックとAutoSupportをリストアします。</block>
@@ -8694,4 +8678,19 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="052bc2e859c31b84b04f42db7b60abff" category="sidebar">ASA C800ブートメディア</block>
   <block id="801fdf5b112137a107d3f17390e4042d" category="sidebar">ASA C800シャーシ</block>
   <block id="ca7dce9cd06f0f2ef6e548c8c26d54d9" category="sidebar">ASA C800コントローラモジュール</block>
+  <block id="664f9c52f93e2fbf6e801148b0f573ad" category="inline-link">HAペアの管理</block>
+  <block id="665a2533bb5f8d55add7fd24df29e614" category="paragraph"><block ref="665a2533bb5f8d55add7fd24df29e614" category="inline-link-rx"></block></block>
+  <block id="8fa572d5dfdbff8c60e791d349eca279" category="list-text">コマンド出力に&lt;lno-DARE&gt;または&lt;1Ono-DARE&gt;と表示された場合、システムはNVEをサポートしていません。に進みます<block ref="c2302bfb39f1e6b6fccfd9207e94da44" category="inline-link-rx"></block>。</block>
+  <block id="7d52b24114e5d676f50874574fb29878" category="paragraph">システムの他のすべてのコンポーネントが正常に動作している必要があります。正常に動作していない場合は、<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>。</block>
+  <block id="6cca151867efbcb742b6e15efec51760" category="list-text">カムハンドルのラッチを外れるまで押し、カムハンドルをいっぱいまで開いてコントローラモジュールをミッドプレーンから外し、両手でコントローラモジュールをシャーシから半分引き出します。</block>
+  <block id="92edeac7b5b629f5e93e2de4ba2adf43" category="list-text">コントローラモジュールの背面にあるNVMEM LEDを確認します。  NVアイコンを探します。</block>
+  <block id="bb49ab711ab9d79c58c90ff674747f54" category="admonition">システムが「waiting for giveback」状態だった場合、またはシステムがテイクオーバーされていないか適切に停止されていない（データがコミットされていない）場合、コントローラの電源をオフにすると前面プレートの緑色のNV LEDが点滅します。  障害のあるコントローラモジュールがパートナーコントローラモジュールに正常にテイクオーバーされなかった場合は、<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block></block>
+  <block id="fab80bc3fcd8eac48cd9c319017190f7" category="list-text">コントローラモジュールをシャーシから取り外すときに緑色のNVステータスLEDが点滅し始めた場合は、次の手順を実行します。</block>
+  <block id="db20b5f8713e5397c5c04ce0ebd834fd" category="list-text">パートナーコントローラモジュールまたは障害のあるコントローラによってコントローラが完全にテイクオーバーされたことを確認します。「_waiting for giveback_」と表示されます。このLEDの点滅は無視してかまいません。障害のあるコントローラをシャーシから取り外します。</block>
+  <block id="b3fb52770d8a327ed5d79c25e8d2d8fe" category="list-text">緑色のNV LEDが消灯している場合は、障害のあるコントローラをシャーシから取り外したあとで完了できます。</block>
+  <block id="30f4d9cc74028fcb25b044f8d09f0cdd" category="list-text">コントローラモジュールをシャーシから取り外します。</block>
+  <block id="6476f2f5425248b422cb30658323cbae" category="list-text">に戻ります <block ref="c67cdb63ab5b46180d9910dcb0f03689" category="inline-xref-macro-rx"></block> この手順で、 NVMEM LED を再確認します。</block>
+  <block id="699b31ad01a325baded3de0b74220957" category="list-text"><block ref="56abd8a9e334744fb66750bee3a52178" category="inline-xref-macro-rx"></block></block>
+  <block id="74e404c1f33731e0a999a4fc54ab33df" category="list-text"><block ref="893f29ac32188f4c8d29836a3587e127" category="inline-xref-macro-rx"></block></block>
+  <block id="a192a372cc891c7f0839a86b1b42a3e2" category="list-text">に進みます <block ref="39ef488856eb21b3aaabcded4bff7c5d" category="inline-xref-macro-rx"></block>。</block>
 </blocks>

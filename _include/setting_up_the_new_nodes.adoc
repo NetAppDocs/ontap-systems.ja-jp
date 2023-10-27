@@ -117,7 +117,7 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30
 ha-config modify controller ha コマンドを使用すると、コントローラを HA に設定できます。ha-config modify chassis ha コマンドを使用すると、シャーシを HA 構成にすることができます。
 
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html["ONTAP 9 ハイアベイラビリティ構成ガイド"]
+https://docs.netapp.com/us-en/ontap/high-availability/index.html["HAペアの管理"^]
 
 +
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30092["使用しているバージョンの Data ONTAP 8 に対する『ハイアベイラビリティ構成ガイド』を検索してください"]

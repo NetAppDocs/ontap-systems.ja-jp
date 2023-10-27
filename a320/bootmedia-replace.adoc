@@ -201,7 +201,7 @@ HA ペア
 NOTE: ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。
 
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html["ONTAP 9 ハイアベイラビリティ構成ガイド"]
+https://docs.netapp.com/us-en/ontap/high-availability/index.html["HAペアの管理"^]
 
 ... 「 storage failover show-giveback 」コマンドを使用して、ギブバック処理の進捗を監視します。
 ... ギブバック処理が完了したら、「 storage failover show 」コマンドを使用して、 HA ペアが正常でテイクオーバーが可能であることを確認します。

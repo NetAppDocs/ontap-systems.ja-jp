@@ -62,7 +62,7 @@ ONTAP イメージを USB ドライブからブートし、ファイルシステ
 
 . 次の手順は、システム構成によって異なります。
 +
-** システムにオンボードキーマネージャ、 NSE 、または NVE が設定されている場合は、に進みます xref:bootmedia_encryption_restore.adoc[必要に応じて、 OKM 、 NSE 、 NVE をリストアします]
+** システムにオンボードキーマネージャ、 NSE 、または NVE が設定されている場合は、に進みます xref:bootmedia-encryption-restore.adoc[必要に応じて、 OKM 、 NSE 、 NVE をリストアします]
 ** システムにオンボードキーマネージャ、 NSE 、または NVE が設定されていない場合は、このセクションの手順を実行します。
 
 

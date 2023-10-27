@@ -84,7 +84,7 @@ SAS ケーブル接続エラーまたはシェルフ ID の重複エラーが発
 Config Advisor をダウンロードするには、ネットワークアクセスが必要です。
 
 +
-https://https://mysupport.netapp.com/site/tools["ネットアップのダウンロード： Config Advisor"^]
+https://mysupport.netapp.com/site/tools["ネットアップのダウンロード： Config Advisor"^]
 
 
 
@@ -409,7 +409,7 @@ NOTE: システムをブートする前に、この機会にケーブル接続�
 SAS ケーブル接続エラーまたはシェルフ ID の重複エラーが発生した場合は、表示される対処方法に従ってください。
 
 +
-https://https://mysupport.netapp.com/site/tools["ネットアップのダウンロード： Config Advisor"^]
+https://mysupport.netapp.com/site/tools["ネットアップのダウンロード： Config Advisor"^]
 
 +
 「 storage shelf show -fields shelf-id 」コマンドを実行して、システムですでに使用されているシェルフ ID （および重複しているシェルフ ID ）のリストを表示することもできます。
