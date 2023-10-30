@@ -27,7 +27,7 @@ summary: ディスクシェルフコンポーネントの LED の場所とステ
 
 
  a| 
-image:../media/drw_sas_power_icon.png[""]
+image::../media/drw_sas_power_icon.svg[DRW SAS電源アイコン]
  a| 
 電源
  a| 
@@ -37,7 +37,7 @@ image:../media/drw_sas_power_icon.png[""]
 
 
 
-.2+| image:../media/drw_sas_fault_icon.png[""] .2+| 注意  a| 
+.2+| image:../media/drw_sas_fault_icon.svg["幅= 5px"] .2+| 注意  a| 
 黄色で点灯
  a| 
 1つ以上のFRU（ディスクシェルフ、ディスクドライブ、IOM12 / IOM12Bモジュール、または電源装置）の機能でエラーが発生しました。
@@ -56,7 +56,7 @@ image:../media/drw_sas_power_icon.png[""]
 
 
  a| 
-image:../media/drw_sas3_location_icon.gif[""]
+image::../media/drw_sas3_location_icon.svg[DRW SAS3ロケーションアイコン]
  a| 
 場所
  a| 
@@ -89,7 +89,7 @@ IOM12 / IOM12Bモジュールは、DS460C、DS224C、およびDS212Cディスク
 
 
  a| 
-image:../media/drw_sas_fault_icon.png[""]
+image::../media/drw_sas_fault_icon.svg[DRW SAS障害アイコン]
  a| 
 注意
  a| 
@@ -115,7 +115,7 @@ LNK
 
 
  a| 
-image:../media/drw_sas3_location_icon.gif[""]
+image::../media/drw_sas3_location_icon.svg[DRW SAS3ロケーションアイコン]
  a| 
 場所
  a| 
@@ -147,7 +147,7 @@ image::../media/iom12b.png[iom12b]
 | LED アイコン | LED 名 | 状態 | 説明 
 
 
-.2+| image:../media/drw_sas_power_icon.png[""] .2+| 電源  a| 
+.2+| image:../media/drw_sas_power_icon.svg["幅= 20px"] .2+| 電源  a| 
 緑色に点灯します
  a| 
 電源装置は正常に機能しています。
@@ -164,7 +164,7 @@ image::../media/iom12b.png[iom12b]
 
 
  a| 
-image:../media/drw_sas_fault_icon.png[""]
+image::../media/drw_sas_fault_icon.svg[DRW SAS障害アイコン]
  a| 
 注意
  a| 
@@ -212,7 +212,7 @@ image:../media/legend_icon_01.png["番号1"]
 イベントメッセージをチェックして実行する対処方法を決定してください。
 
 |===
-image:../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout.gif[""]
+image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout.gif[28 dwg e2860 de460c シングルファンキャニスター、 LED 付きコールアウト]
 
 
 

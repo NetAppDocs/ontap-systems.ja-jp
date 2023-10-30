@@ -49,7 +49,7 @@ image::../media/drw_ns224_odp_leds_IEOPS-1262.svg[DRW ns224 ODP LED IEOPS 1262]
 
 
  a| 
-image:../media/drw_sas_power_icon.png[""]
+image::../media/drw_sas_power_icon.svg[DRW SAS電源アイコン]
  a| 
 電源（緑）
  a| 
@@ -60,7 +60,7 @@ image:../media/drw_sas_power_icon.png[""]
 
 
  a| 
-image:../media/drw_sas_fault_icon.png[""]
+image::../media/drw_sas_fault_icon.svg[DRW SAS障害アイコン]
  a| 
 注意（オレンジ）
  a| 
@@ -79,7 +79,7 @@ image:../media/drw_sas_fault_icon.png[""]
 
 
  a| 
-image:../media/drw_sas3_location_icon.gif[""]
+image::../media/drw_sas3_location_icon.svg[DRW SAS3ロケーションアイコン]
  a| 
 ロケーション（青）
  a| 
@@ -106,7 +106,7 @@ image::../media/drw_ns224_nsm_leds_IEOPS-1270.svg[DRW ns224 nsm LED IEOPS 1270]
  a| 
 image:../media/legend_icon_01.png["番号1"]
  a| 
-image:../media/drw_sas3_location_icon.gif[""]
+image::../media/drw_sas3_location_icon.svg[DRW SAS3ロケーションアイコン]
  a| 
 青
  a| 
@@ -117,7 +117,7 @@ NSMモジュール:場所
  a| 
 image:../media/legend_icon_02.png["番号2"]
  a| 
-image:../media/drw_sas_fault_icon.png[""]
+image::../media/drw_sas_fault_icon.svg[DRW SAS障害アイコン]
  a| 
 アンバー
  a| 
@@ -139,7 +139,7 @@ NVMeポート/リンク：ステータス
  a| 
 image:../media/legend_icon_04.png["番号4"]
  a| 
-image:../media/drw_sas_fault_icon.png[""]
+image::../media/drw_sas_fault_icon.svg[DRW SAS障害アイコン]
  a| 
 アンバー
  a| 

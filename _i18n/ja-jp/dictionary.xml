@@ -4100,18 +4100,15 @@
   <block id="4c82db0a209f87ecd6fed6664e1ef758" category="cell">LED アイコン</block>
   <block id="3999567db5b4a29bd6505aaadb3f807e" category="cell">LED 名</block>
   <block id="46a2a41cc6e552044816a2d04634545d" category="cell">状態</block>
-  <block id="f14917f9ec9b86a2d84112bf8ff01347" category="paragraph"><block ref="f14917f9ec9b86a2d84112bf8ff01347" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd4fe0cc913f704600b97d1f5dd285de" category="paragraph">電源</block>
   <block id="31cb02e89902f67343e47bc70e628c6d" category="paragraph">緑色に点灯します</block>
   <block id="ceee41d559bf6e4c8eec9d1995cd0b4c" category="paragraph">1 つ以上の電源装置がディスクシェルフに電力を供給しています。</block>
-  <block id="c61664b995859451c9b18dba9398d36e" category="cell"><block ref="c61664b995859451c9b18dba9398d36e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2aa97e44cace7cb882c9dcba32940f8f" category="cell">注意</block>
   <block id="75e6252bb5a504fc80a435f3c6fc7c82" category="paragraph">黄色で点灯</block>
   <block id="42532600d34fb5884550b5ba06c71866" category="paragraph">イベントメッセージをチェックして実行する対処方法を決定してください。</block>
   <block id="5bb2376fdbdd8b69f07ffed693784a70" category="paragraph">黄色で点滅</block>
   <block id="59ee562359b2b7e862570a57471bda07" category="paragraph">シェルフ ID が保留状態です。</block>
   <block id="8fcbf556597a139b46e7a7b6c6878f08" category="paragraph">シェルフ ID を有効にするには、ディスクシェルフの電源を再投入してください。</block>
-  <block id="965881f89ebf03830d8c6f3d7b4af499" category="paragraph"><block ref="965881f89ebf03830d8c6f3d7b4af499" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ce5bf551379459c1c61d2a204061c455" category="paragraph">場所</block>
   <block id="d4300cfa84e2e26784840198a0cbd030" category="paragraph">青で点灯</block>
   <block id="dcef7e6e25f4d0285a65c6e2456b274e" category="paragraph">システム管理者が、対応が必要なディスクシェルフを物理的に特定できるようにこの LED 機能をアクティブにしました。</block>
@@ -4141,7 +4138,6 @@
   <block id="a7d0fabb0e19581fdc7108acf3ea86ca" category="paragraph">次の表に、 DS460C ディスクシェルフで使用されるファンの LED を示します。</block>
   <block id="7d74f3b92b19da5e606d737d339a9679" category="cell">項目</block>
   <block id="c850737320566d21e1b271caa9a83a80" category="paragraph">ファンの機能にエラーが発生しました。</block>
-  <block id="97fcf3382eccbc982589a926d4ab13ed" category="paragraph"><block ref="97fcf3382eccbc982589a926d4ab13ed" category="inline-image-macro-rx" type="image"></block></block>
   <block id="73ed5be94772342ead2304a505ea672f" category="section-title">ディスクドライブの LED</block>
   <block id="556d06da2336f75dff1cbca3a26c81fa" category="paragraph">ディスクドライブの LED は、ドライブが正常に機能しているか、ハードウェアに問題があるかを示します。</block>
   <block id="92baf731ccf3fd5eea26e98890d366d6" category="section-title">DS224C および DS212C ディスクシェルフのディスクドライブ LED</block>
@@ -6386,7 +6382,6 @@
   <block id="8db94eb390aaecb9128a260b00e455e8" category="paragraph"><block ref="8db94eb390aaecb9128a260b00e455e8" category="inline-link-macro-rx"></block></block>
   <block id="474b4646ba15883494cbfd9239d508ad" category="list-text">英語 <block ref="053faba884b41a351b336aa44c8075ff" category="inline-link-macro-rx"></block></block>
   <block id="42e8099baf01da8bcc3b8362f29f317c" category="inline-link-macro">AFF A800の設置とセットアップの手順</block>
-  <block id="08b9fb46f5aced4cd732b3ae62e9764f" category="paragraph">このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。を使用します <block ref="0cdb4981396afec17d02c8ce5d1b8e06" category="inline-link-macro-rx"></block> ネットアップシステムのインストールに精通している場合。</block>
   <block id="3968cc9d2fa7f59d81661adbaf12cfac" category="paragraph"><block ref="3968cc9d2fa7f59d81661adbaf12cfac" category="inline-link-macro-rx"></block></block>
   <block id="b72bee50d170af9037bebf46f5eb89d7" category="paragraph">NVDIMMを交換するには、エアダクトの上のFRUマップまたはスロット1ライザーの上のFRUマップを使用して、コントローラモジュール内でNVDIMMの場所を確認する必要があります。</block>
   <block id="ad7f5333de2f76cfccc7ea7fa134c8a7" category="paragraph">システムDIMMを交換するには、関連するエラーメッセージで対象のDIMMを特定し、エアダクトのFRUマップを使用してターゲットDIMMの場所を確認し、DIMMを交換します。</block>
@@ -6618,7 +6613,6 @@
   <block id="1338d35acdb3c964dd3a62d00b16a635" category="doc">オンボード暗号化キー（AFF C250）を確認します</block>
   <block id="d667058635875eca097800e4379f58cd" category="doc">クイックステップ- AFF C250</block>
   <block id="84918b89947f6a68e4b25fe4753c02bc" category="inline-link-macro">AFF C250のセットアップガイド</block>
-  <block id="66e0597e25a38bc180d5270f4021127a" category="paragraph"><block ref="66e0597e25a38bc180d5270f4021127a" category="inline-link-macro-rx"></block></block>
   <block id="d3d5358ee829ec20cfebc87c86eed844" category="doc">必要に応じて、OKM、NSE、NVEをリストアします（AFF C250）</block>
   <block id="64e5c97f01cbac1639343e8b0f670c20" category="list-text"><block ref="64e5c97f01cbac1639343e8b0f670c20" category="inline-link-macro-rx"></block></block>
   <block id="38471c9931ce26e5aeb8c80bf6483a48" category="list-text"><block ref="38471c9931ce26e5aeb8c80bf6483a48" category="inline-link-macro-rx"></block></block>
@@ -6858,7 +6852,6 @@
   <block id="a7d1c95d57e2d4d91562898a605711c2" category="doc">障害が発生したパーツはNetApp AFF C800に返送してください</block>
   <block id="c7567cf7dbf1c0e5da4f2ff1ced923ef" category="doc">クイックステップ- AFF C800</block>
   <block id="f8eb42a3c2c9e8d82c874d7ccd6ef2a9" category="inline-link-macro">AFF C800のセットアップガイド</block>
-  <block id="1b687c0cb9f5dcfa6fe0020541ed6d97" category="paragraph"><block ref="1b687c0cb9f5dcfa6fe0020541ed6d97" category="inline-link-macro-rx"></block></block>
   <block id="51e6f316a2e32ea2e86cbacf242892f6" category="doc">必要に応じて、OKM、NSE、NVEをリストア- AFF C800</block>
   <block id="6d940c412bcfcdb76ebf095399d157ea" category="doc">システム構成を復元して確認します（AFF C800）</block>
   <block id="83087c77244cbf7473481303d60706cd" category="doc">リカバリイメージ（AFF C800）をブートします</block>
@@ -7176,7 +7169,6 @@
   <block id="6266bb335022aad7813f5a92f40c41bb" category="list-text">ラップトップまたはコンソールでSystem Managerを使用して、クラスタを設定します。</block>
   <block id="b1e0a8fb86dde21901d58064a47983ae" category="paragraph">ラックへの設置とケーブル接続から、システムの初期起動までのシステムの設置方法について説明します。使用 <block ref="2e869cac122e3063f7b418f03cb3fa26" category="inline-link-macro-rx"></block> ネットアップシステムのインストールに精通している場合。</block>
   <block id="79386daaa48888ed81c00ef493d329e9" category="paragraph">MetroCluster 構成の場合は、を使用します<block ref="d4b6e949edad9293b177bc65e2892165" category="inline-link-rx"></block>。</block>
-  <block id="9b9935ad5969c28de13381a2e512b47c" category="paragraph">注</block>
   <block id="25ca1a1b0a04d8f5341dca5c9e9eed8a" category="list-text">にアクセスできることを確認します <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> （HWU）」を参照してください。</block>
   <block id="b00f162fad84edda46484fcada242a8c" category="inline-link">HWU</block>
   <block id="0b596d3b9a72deeb4bca2c3f00662c30" category="list-text">特定の電力要件を持つお客様は、確認する必要があります<block ref="911e5b8f28f318acfdc1d057cd36b40e" category="inline-link-rx"></block> を参照してください。</block>
@@ -7581,11 +7573,7 @@ storage failover modify -node local-auto-giveback false」と入力します
   <block id="8c4cb494b75288cf3ce1e7ce1dee3c9d" category="paragraph">「false」と表示されるインターフェイスがある場合は、を使用してそれらのインターフェイスをホームポートにリバートします<block ref="ffbe7d182280173cba10c83ec9992974" prefix=" " category="inline-code"></block> コマンドを実行します</block>
   <block id="fcb4d3b1f229bc036dc2280a7c1d29c4" category="list-text">ストレージ暗号化を使用していない場合は、自動ギブバックとAutoSupportをリストアします。</block>
   <block id="fde9b148f6eb9655d65658597326b4ee" category="doc">詳細な手順- FAS2800</block>
-  <block id="c507fc907e52c0d3d2a5b32d101a1559" category="paragraph">FAS2800システムを設置するには、NetApp Support Siteでアカウントを作成し、システムを登録し、ライセンスキーを取得する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。</block>
   <block id="82374f90663d7205d26c38028c93cb8d" category="inline-link">使用しているONTAP 9のバージョンに対応したリリースノート</block>
-  <block id="4afcf4b1bce6c3df1cc1e778d2d69e65" category="paragraph">にアクセスできる必要があります<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block> サイト要件および構成済みシステム上の追加情報の詳細については、を参照してください。へのアクセスも必要になる場合があります<block ref="eaa168831c6fecf820d5605f3f5de542" category="inline-link-rx"></block> ONTAP のバージョンに応じて、このシステムの詳細情報を確認してください。</block>
-  <block id="94f11775f11fcb36a20933d06500449a" category="list-text">からシステムを登録します <block ref="1cbd3811871137aa1e003e1ccae3894e" category="inline-link-rx"></block></block>
-  <block id="4aed417c4620186c402fe3b82713076b" category="list-text">ダウンロードしてインストールします<block ref="56697f7f340a212f549439c89b0cabd2" category="inline-link-rx"></block> ノートブック PC で。</block>
   <block id="202c6b9676e6e0879f99a323aacdd76b" category="paragraph">次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block> ケーブルの場所を確認し、用途を特定します。</block>
   <block id="21d9a13ac1bf780b5a88db05a215c05d" category="paragraph">10GbE、SFP28ケーブル（発注内容に応じて）</block>
   <block id="68ddfa29cb0d12a802225c5426557710" category="paragraph">X6566B-05-R6、.5、</block>
@@ -7609,15 +7597,11 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7176bca53e61f926de4367eb107ce7c8" category="paragraph">USB-Cコンソールケーブル</block>
   <block id="34dc50315428bf6e6940b722c6a21ee9" category="paragraph">オプションのFCケーブル</block>
   <block id="01b24af9f8a6b3efddd64ee9ab57a42e" category="paragraph">追加のFCネットワークケーブル</block>
-  <block id="3f23ceafafc807d2b7578916c6816fcb" category="inline-link">ONTAP CLI を使用してクラスタをセットアップします</block>
-  <block id="a41ad0c41b61aa6e16a86ba5e2432d9f" category="list-text">に記載されているワークシートをダウンロードして記入します <block ref="a7d19322be231451e03428c8b87e512f" category="inline-link-rx"></block>。</block>
   <block id="3157ab12e29c7ae731c3bbc36443b23f" category="image-alt">OIE fas2800重量注意IEOPS 1070</block>
-  <block id="bb4787913f600ff690f937a7622bfef5" category="paragraph">2ノードスイッチレスクラスタ方式またはクラスタインターコネクトネットワーク方式を使用して、コントローラをネットワークにケーブル接続します。</block>
   <block id="9646d1820777de5269873d2317186ecb" category="paragraph">管理ネットワークスイッチ</block>
   <block id="e80abcbf02cd3bed5561a16253c1dea0" category="paragraph">ホストネットワークスイッチ</block>
   <block id="3b9d43c8f889d04a7e7e50ecc887f626" category="paragraph">2ノードスイッチレスクラスタの場合は、ネットワーク接続とクラスタインターコネクトポートをケーブル接続します。</block>
   <block id="724b63ff77d309630df65f6af09956a2" category="admonition">コネクタを挿入すると、カチッという音がして所定の位置に収まります。カチッという音がしない場合は、コネクタを取り外し、ケーブルヘッドを裏返してやり直してください。</block>
-  <block id="b81e7d6a7be0cc8238b538c4b907282a" category="paragraph">図またはステップバイステップの手順を使用して、コントローラとスイッチをケーブル接続します。</block>
   <block id="43f3f164715da7f3368f26b28f4ef36f" category="video-title">アニメーション- 2ノードスイッチレスクラスタのケーブル接続</block>
   <block id="00cdc1c050c54120647c95f8ac43e946" category="list-text">クラスタインターコネクトケーブルを使用して、クラスタインターコネクトポートe0aからe0a、e0bからe0bを接続します。</block>
   <block id="64d64c32d62f821e30eb2ef5d4583099" category="paragraph">*クラスタインターコネクトケーブル*</block>
@@ -7636,9 +7620,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e664a3bf047f98da138d06dd6bbecf60" category="list-text">10 / 25Gbイーサネット（SFP28）×2ポート+32Gb FC（SFP+）×2ポート</block>
   <block id="c76e1890be7e78a7e7f8b44303d6f072" category="admonition">電源コードは接続しないでください。</block>
   <block id="945919717a9a1b9de8896baef8c155a5" category="paragraph">スイッチクラスタのネットワーク接続とクラスタインターコネクトポートをケーブル接続します。</block>
-  <block id="4b3a23428d43b0cc1ea88affb10b1421" category="admonition">コネクタを挿入すると、カチッという音がして所定の位置に収まります。カチッという音がしない場合は、コネクタを取り外し、ケーブルヘッドを裏返してやり直してください。</block>
   <block id="b6713b6dcccfb0ea851ac5892871d1ce" category="paragraph">コントローラを外付けストレージにケーブル接続します。</block>
-  <block id="80ae6b7de29ff0be35e926815150d39e" category="paragraph">図またはステップバイステップの手順を使用して、コントローラとドライブシェルフをケーブル接続します。</block>
   <block id="3fc162aa6870cf22cf3e0a947b89615a" category="video-title">アニメーション-ドライブシェルフのケーブル配線</block>
   <block id="2728bec52c30a9bf554b834ce8cfd335" category="admonition">FAS2800ではポート0b2を使用しないでください。このSASポートはONTAPでは使用されず、常に無効になっています。を参照してください<block ref="6f4656a8b776447b5b4debad13e7a22e" category="inline-link-rx"></block> を参照してください。</block>
   <block id="936f11624ce65028d5f2861c02e343af" category="image-alt">OIE凡例アイコン1 lo</block>
@@ -7656,13 +7638,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="49fefb8508936cb5a0f672b0146c0013" category="list-text">コントローラBのポート0aとスタックの最初のドライブシェルフにあるIOM Aのポート1</block>
   <block id="0cbd55a3e4a33973ae5e025f7565fe75" category="list-text">コントローラBのポート0b1とスタックの最後のドライブシェルフにあるIOM Bのポート3</block>
   <block id="8f61138caddaadc30f99b723e123cf22" category="image-alt">DWR 2800コントローラ2をシェルフIEOPS 897に接続</block>
-  <block id="a63d383da174eddb392adcd87d936c44" category="paragraph">ラップトップでネットワーク検出が有効になっている場合は、クラスタの自動検出を使用してシステムのセットアップと設定を行います。</block>
   <block id="17eddeb5ca42d640ce98ba7b90523804" category="image-alt">DWR 2800電源をオンにしますIEOPS 898</block>
-  <block id="9e4e9e3678bbed5f0d0698cff8427b61" category="list-text">System Manager のセットアップガイドを使用して、で収集したデータを基にシステムを設定します<block ref="492b1b89e16fbed782c0f28e34fb9371" category="inline-link-rx"></block></block>
   <block id="5725fc4af65adef1b57d4b7c9a365287" category="paragraph">ラップトップでネットワーク検出が有効になっていない場合は、設定とセットアップを手動で完了します。</block>
-  <block id="3b1f7398f44c65a5f8ab979cc8757340" category="list-text">システムに付属のコンソールケーブルを使用してコンソールケーブルをラップトップまたはコンソールに接続し、コントローラのコンソールポートを接続します。次に、ラップトップまたはコンソールを管理サブネット上のスイッチに接続します。</block>
   <block id="6f196fc99c938b047a2dbbae60694da9" category="image-alt">DRW 2800ラップトップをコントローラIEOPS 1084に切り替えます</block>
-  <block id="1f61f05d390e702160f04da6c21786d5" category="list-text">初期設定が完了したら、に進みます <block ref="8203f64117389bb7bbdf8d4d70d36e4d" category="inline-link-rx"></block> ONTAPの追加機能の設定については、を参照してください。</block>
   <block id="1063e487d045f7cd17b5712ab35a43b6" category="doc">FAS2800システムのドキュメント</block>
   <block id="40ab4deb5c724a3e2d6c8f6d96a94554" category="doc">コントローラをシャットダウンします（FAS2800）</block>
   <block id="5f81816799fe408c4f5d0d2b06be7dd0" category="doc">クイックガイド- FAS2800</block>
@@ -7812,8 +7790,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8d468b5fdd20b5347cabd9609c9b129c" category="doc">All SAN Array（ASA）Aシリーズシステム</block>
   <block id="9260991b91fdf449af1f97b5d09a9db6" category="summary">NS224シェルフとSASシェルフは、NetApp AFFシステムとFASシステム向けに設計されており、多様なビジネスニーズやアプリケーションニーズに対応できます。</block>
   <block id="0add3a06a3c8079fac5caa294ad21965" category="doc">AFF / FASシステムのドライブシェルフ</block>
-  <block id="681b1f89b87b1eb21b78d5ec326b22f7" category="paragraph">&lt;stdin&gt;の未解決のディレクティブ-include::../_include/250_install-detailed-guide.adoc[]
-このセクションでは、AFF C250システムの設置手順について詳しく説明します。</block>
   <block id="4de4b37af472f8b6bb5aa5b5732538f0" category="summary">ASA C250ハードウェアのメンテナンス</block>
   <block id="80b77aae28ed3360a8b704371f5188e1" category="doc">AFF C250ハードウェアのメンテナンス</block>
   <block id="ab253cf54adf6fdbb65cbb0ed70cb2cf" category="paragraph">AFF C250ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
@@ -8503,7 +8479,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="728c8b35a059c5debd8717ebc5eef9cc" category="doc">ビデオ手順- ASA A250</block>
   <block id="da8c100a35e67a4a9a03589f6afa9ddc" category="doc">ビデオ手順- FAS500f</block>
   <block id="0fc2bce08e8e93df5954329e4439b224" category="paragraph">『Installation手順』には、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順が図で示されています。この手順は、NetAppシステムのインストールに精通している場合に使用します。</block>
-  <block id="658749712c1f894d4be0afd96a2e5f1d" category="paragraph">にアクセスします <block ref="617bafb92e72c64d9d65b60de9aea456" category="inline-link-macro-rx"></block>。</block>
   <block id="0a5ad698c7446792fa1695e8ef9001ee" category="image-alt">DRW 2800スイッチクラスタのケーブル接続IEOPS 893</block>
   <block id="9bf3d28b6f86b0747100312dce20ff66" category="paragraph">『ASA A400 Installation手順』には、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順が図で示されています。NetAppシステムの設置に精通している場合は、次の手順に従ってください。</block>
   <block id="0117839c8787354fc8b23cefed0984e8" category="inline-link-macro">ASA A400のセットアップガイド</block>
@@ -8693,4 +8668,69 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="699b31ad01a325baded3de0b74220957" category="list-text"><block ref="56abd8a9e334744fb66750bee3a52178" category="inline-xref-macro-rx"></block></block>
   <block id="74e404c1f33731e0a999a4fc54ab33df" category="list-text"><block ref="893f29ac32188f4c8d29836a3587e127" category="inline-xref-macro-rx"></block></block>
   <block id="a192a372cc891c7f0839a86b1b42a3e2" category="list-text">に進みます <block ref="39ef488856eb21b3aaabcded4bff7c5d" category="inline-xref-macro-rx"></block>。</block>
+  <block id="2866d26481b1c521c672b3cb60930e47" category="paragraph">にアクセスします <block ref="130b74705762cd99c7dfbbbc83d14934" category="inline-link-macro-rx"></block>。</block>
+  <block id="7484b7e82acc4757b26226229997810e" category="summary">この手順では、一般的なNetAppストレージシステムをインストールするための詳細なステップバイステップの手順を説明します。</block>
+  <block id="d9652a5ef2ee620cb0b558db1a0b0abd" category="paragraph">この手順では、一般的なNetAppストレージシステムをインストールする手順を詳しく説明します。より詳細なインストール手順が必要な場合は、この手順を使用します。</block>
+  <block id="f4c3757c8a20a3155f18506671b4a147" category="list-text">Telcoラックまたはシステムキャビネット内のストレージシステムのラックスペース。</block>
+  <block id="a7fe55285588ce3bc863c28bb05d4186" category="list-text">ストレージシステム用に2U</block>
+  <block id="4051d118060db51dd307c06bb01d5c8a" category="list-text">システムのドライブシェルフごとに2Uまたは4U</block>
+  <block id="f4c8d594d87ccd7fe60c3c68ef97a3da" category="list-text">追加のネットワークケーブル（ストレージシステムをWebブラウザを使用してネットワークスイッチやラップトップまたはコンソールに接続する場合）</block>
+  <block id="79c640bc8c4f86920cd6b693e9a21456" category="list-text">にアクセスします<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block> 構成済みのストレージシステム上のサイト要件および追加情報については、を参照してください。</block>
+  <block id="345d4ee16e4fd18df3bf44484bbebc45" category="list-text">へのアクセスも必要になる場合があります<block ref="eaa168831c6fecf820d5605f3f5de542" category="inline-link-rx"></block> このストレージシステムの詳細については、ONTAPのバージョンに対応しています。</block>
+  <block id="902a58c29fa1a98185c0f23af51caade" category="list-text">すべての箱を開梱し、中身を確認します。</block>
+  <block id="f77f28a461c720358d6020b852d2d688" category="admonition">特定の電力要件を持つお客様は、確認する必要があります<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block> をクリックしてください。</block>
+  <block id="16b35791c547ec7b12d2d1bc88d72f59" category="inline-link">System Managerを使用して新しいクラスタにONTAPを設定します</block>
+  <block id="aae9567818a18efd162e71b32afe8898" category="list-text">にアクセスします<block ref="d606117105bd83c1b32ab081f09267a6" category="inline-link-rx"></block></block>
+  <block id="45c050678e91022d79d101d15217e470" category="list-text">AMD手順の要件を確認します。</block>
+  <block id="13013f81efc98ccada60da62130b9fda" category="inline-link">セットアップワークシート^（ワークシートのURLが必要）</block>
+  <block id="941956b63246ffa79f1347062e5d39b0" category="list-text">次の手順を実行して、ストレージシステムに関する情報を収集します。<block ref="346507d5ee7f653b48b0f3d6fc2965af" category="inline-link-rx"></block>。</block>
+  <block id="949db25fbbc3fc1f22a242c3944885b4" category="list-text">コントローラのストレージシステムのシリアル番号をメモします。</block>
+  <block id="0d6cee59f00c392fcb698e283937aa19" category="paragraph">パーツ番号ラベルなし</block>
+  <block id="521655e96e994a693d54321af1548de6" category="paragraph">ストレージシステムの電源</block>
+  <block id="3ec9117c12f43a6786d62d4287191808" category="paragraph">必要に応じて、TelcoラックまたはNetAppストレージシステムキャビネットにストレージシステムを設置します。</block>
+  <block id="a13315633e3bd5a1b8934263ef3de247" category="list-text">レールキットに付属の手順書に従って、ストレージシステムを設置して固定します。</block>
+  <block id="6c686ee1cca98c427670aae5dfe576bf" category="admonition">ストレージシステムの重量に関連する安全上の懸念事項に注意する必要があります。</block>
+  <block id="084f071d7110f0c4d1fb187b85854586" category="list-text">ベゼルをストレージシステムの前面に配置します。</block>
+  <block id="3d8c8d712263193f63b8949c3ee9c62c" category="paragraph">2ノードスイッチレスクラスタまたはスイッチクラスタとしてコントローラをネットワークにケーブル接続します。</block>
+  <block id="1c893d208d4a91c970226886751e800d" category="paragraph">次の表に、2ノードスイッチレスクラスタとスイッチクラスタの両方の図のケーブルタイプ、コールアウト番号、およびケーブルの色を示します。</block>
+  <block id="1ab7eafd757e6d1eae57d16228e5edc3" category="list-text">ストレージシステムをスイッチに接続する方法については、ネットワーク管理者にお問い合わせください。</block>
+  <block id="089568b0e72f52eda465bac3d797022f" category="list-text">図の矢印を確認して、ケーブルコネクタのプルタブの向きが正しいことを確認します。</block>
+  <block id="cef25943b26eeebcaa1241ede0442fb2" category="paragraph">アニメーションやステップバイステップの手順に従って、コントローラとスイッチをケーブル接続します。</block>
+  <block id="86ef3e62afc46d4fbce176cfff238447" category="paragraph">次の表に、ドライブシェルフをストレージシステムにケーブル接続する際の図のケーブルタイプ、コールアウト番号、およびケーブルの色を示します。</block>
+  <block id="225172475d1dd48d2f55426f1792f1b5" category="admonition">この例では DS224C を使用していますサポートされている他のドライブシェルフでもケーブル接続はほぼ同じです。を参照してください<block ref="defd6f8cbcbf4438c52ada1e92d7a17f" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="8a811c8bdca2987d299cfb24cf85ad86" category="paragraph">シエルフ/シエルフカンケエフルセツソク</block>
+  <block id="3fa1bc4f962d0649f457ff7e994b46d8" category="paragraph">コントロオラAヲトライフシエルフニ</block>
+  <block id="353960fbbf75aa5a4dd1042a20bf18dc" category="paragraph">コントローラBをドライブシェルフに接続</block>
+  <block id="a01af11c268599bde566d99055019251" category="paragraph">アニメーションやステップバイステップの手順に従って、コントローラとドライブシェルフをケーブル接続します。</block>
+  <block id="9aca62ddbd88e63be7ec9f9c2469acab" category="section-title">手順5：ストレージシステムのセットアップと設定を完了する</block>
+  <block id="b3308aded4f838607d118fa8281f0f4e" category="paragraph">オプション1：ネットワーク検出が有効な場合、またはオプション2：ネットワーク検出が有効でない場合のいずれかを使用して、ストレージシステムのセットアップと設定を完了します。</block>
+  <block id="cc76013bd2ca10d4b55bab3a0f8d5331" category="paragraph">ラップトップでネットワーク検出が有効になっている場合は、クラスタの自動検出を使用してストレージシステムのセットアップと設定を完了します。</block>
+  <block id="89fb7289455abb973e1e1d1887a8172d" category="list-text">次のアニメーションに従って、シェルフの電源をオンにし、シェルフIDを設定します。</block>
+  <block id="9be08f77b7ab4837ae1dadad63405dc2" category="list-text">コントローラの電源をオンにします</block>
+  <block id="4a8d781d6ae79557515be034fcf4bd6e" category="list-text">次の図または手順に従って、設定するストレージシステムノードを検出します。</block>
+  <block id="38c0c9e875391d2dc0f78f243ecc4f59" category="admonition">XXXXXは、ターゲットノードのストレージシステムのシリアル番号です。</block>
+  <block id="9d2c2c7e4ecf1a64105e37b923e42295" category="list-text">System Managerのセットアップガイドを使用して、で収集したデータを使用してストレージシステムを設定します。 <block ref="d0fb50e606c7cb2fa74e99fa5a3520a8" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b9d390deee7ae9c55c02ce9081338f2c" category="list-text">アカウントを作成するか、アカウントにログインします。</block>
+  <block id="e53df79e8b12228ebe8ba9013009c4b6" category="list-text">をクリックします<block ref="47d83efabc4122be28a80bdea228d0a5" category="inline-link-rx"></block></block>
+  <block id="d163335d3a2ab0b3365c69b66c8b8218" category="list-text">アカウントを作成するか、アカウントにログインする必要がある場合は、_Create Account_をクリックします。</block>
+  <block id="d636be81d2c6c9af66f5d43b321f4b3c" category="inline-link">Active IQ Config Advisor</block>
+  <block id="ded166a9ef25ba71c1c5b2cca6dfb3ac" category="list-text">ダウンロードしてインストールします<block ref="67f241779d92e72fc906fdc854002c63" category="inline-link-rx"></block></block>
+  <block id="91c22f99c650eff9cfd4e3a5797f1276" category="list-text">Active IQ Config Advisorを実行して、ストレージシステムの健全性を確認します。</block>
+  <block id="70cdb4752e56964c8e382c73c4dad5a3" category="list-text">でシステムを登録します。<block ref="609ce97692648785b01245072a80d78d" category="inline-link-rx"></block>。</block>
+  <block id="6ef8afe0d08cfff8d7c63feeb46c3bbe" category="inline-link">NetApp ONTAPのリソース</block>
+  <block id="1e030dc8ef51cc0c3b7cfdf5b1fb31ef" category="list-text">初期設定が完了したら、に進みます<block ref="0d9c07b12aa4e6262cc31099f94c22ac" category="inline-link-rx"></block> ONTAP での追加機能の設定については、ページを参照してください。</block>
+  <block id="c1abdda48959ad5305acdea9199b4083" category="list-text">ストレージシステムに付属のコンソールケーブルを使用してコンソールケーブルをラップトップまたはコンソールに接続し、コントローラのコンソールポートを接続します。次にcラップトップまたはコンソールを管理サブネット上のスイッチに接続します。</block>
+  <block id="ea6092d42464dfafd164efeca17f02cc" category="list-text">で収集したデータを使用してストレージシステムを設定する <block ref="d0fb50e606c7cb2fa74e99fa5a3520a8" category="inline-xref-macro-rx"></block>。</block>
+  <block id="6a1952da65ff3ad3728cd89ec078bfa2" category="paragraph">この手順では、AFF C250ストレージ・システムの設置手順について詳しく説明します。</block>
+  <block id="476542f0e09454bd6ccd672453fee1fd" category="paragraph"><block ref="476542f0e09454bd6ccd672453fee1fd" category="inline-link-macro-rx"></block></block>
+  <block id="79917755b07c1e2ce974040457996cd1" category="paragraph">このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。を使用します <block ref="ce9d9eed382ae5ac1650ec89550136ac" category="inline-link-macro-rx"></block> ネットアップシステムのインストールに精通している場合。</block>
+  <block id="bcf0b3352838b481d0374edbdb31f0a0" category="image-alt">DRW SAS電源アイコン</block>
+  <block id="f598000290b443eb531fea17b731ed46" category="image-alt">DRW SAS障害アイコン</block>
+  <block id="7b1f02d808dfc03ff26bec5de1c435de" category="image-alt">DRW SAS3ロケーションアイコン</block>
+  <block id="5b090b2a445dc9d064841a86f8433483" category="paragraph"><block ref="5b090b2a445dc9d064841a86f8433483" category="inline-link-macro-rx"></block></block>
+  <block id="a2cb8617cb158198389b743ac2b50756" category="inline-image-macro">幅= 5px</block>
+  <block id="a28edc89fe8bb6fcbeda4a8c5427d04f" category="cell"><block ref="a28edc89fe8bb6fcbeda4a8c5427d04f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="df6fc52eeceab2497b885a798c538a6f" category="cell"><block ref="df6fc52eeceab2497b885a798c538a6f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3b6daa4c4df8e50b04c2ed3f923979e3" category="paragraph">にアクセスします <block ref="1ede88745168187a218abc6fed7fade9" category="inline-link-macro-rx"></block>。</block>
+  <block id="69389a2dcdac250c7be80b621e53e8b6" category="list-text">英語 <block ref="69854c1d21b3991324c802c8a6aabc4a" category="inline-link-macro-rx"></block></block>
 </blocks>

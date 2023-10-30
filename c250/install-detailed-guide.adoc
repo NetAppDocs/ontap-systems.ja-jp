@@ -11,8 +11,7 @@ summary: このセクションでは、AFF C250システムの設置手順につ
 
 
 [role="lead"]
-<stdin>の未解決のディレクティブ-include::../_include/250_install-detailed-guide.adoc[]
-このセクションでは、AFF C250システムの設置手順について詳しく説明します。
+この手順では、AFF C250ストレージ・システムの設置手順について詳しく説明します。
 
 MetroCluster 構成の場合は、を使用します https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster のドキュメント"^]。
 
@@ -21,8 +20,6 @@ MetroCluster 構成の場合は、を使用します https://docs.netapp.com/us-
 == 手順 1 ：設置の準備
 
 AFF C250システムをインストールするには、アカウントを作成してシステムを登録する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。
-
-注
 
 .作業を開始する前に
 * にアクセスできることを確認します link:https://hwu.netapp.com["NetApp Hardware Universe の略"^] （HWU）」を参照してください。
