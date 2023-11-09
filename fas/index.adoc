@@ -2,7 +2,7 @@
 layout: landing-page 
 sidebar: sidebar 
 permalink: fas/index.html 
-summary: ASA システムのインストール、セットアップ、および保守については、ストレージシステムのマニュアルを参照してください。 
+summary: ストレージシステムのマニュアルでは、システムの設置、セットアップ、および保守を行うことができます。 
 ---
 = FASシステム
 :hardbreaks:

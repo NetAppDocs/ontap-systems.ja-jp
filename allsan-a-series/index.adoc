@@ -2,9 +2,9 @@
 layout: landing-page 
 sidebar: sidebar 
 permalink: allsan-a-series/index.html 
-summary: ASA Aシリーズ・システムの設置、セットアップ、および保守については、ストレージ・システムのマニュアルを参照してください。 
+summary: ASA Aシリーズシステムの設置、セットアップ、および保守については、ストレージシステムのマニュアルを参照してください。 
 ---
-= All SAN Array（ASA）Aシリーズシステム
+= オールフラッシュSANアレイ（ASA）Aシリーズシステム
 :hardbreaks:
 :allow-uri-read: 
 :linkattrs: 

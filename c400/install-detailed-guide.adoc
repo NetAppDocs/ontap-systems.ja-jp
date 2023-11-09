@@ -170,9 +170,9 @@ NOTE: システムの重量に関連する安全上の注意事項を確認し�
 +
 image::../media/drw_katana_lifting_restriction_icon.png[「 DRW カタカナリフティング制限」アイコン]
 
-. ケーブルマネジメントデバイスを取り付けます（図を参照）。
+. ケーブルマネジメントデバイスをコントローラの背面に接続します（図を参照）。
 +
-image::../media/drw_a320_cable_management_arms.png[DRW A320 ケーブル管理アーム]
+image::../media/drw_c400_cable_tray_IEOPS-1208.svg[DRW C400ケーブルトレイIEOPS 1208]
 
 . システムの前面にベゼルを配置します。
 
@@ -210,7 +210,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 .手順
 . 次の図を使用して、コントローラとスイッチをケーブル接続します。
 +
-image::../media/drw_c400_TNSC-networking-cabling_IEOPS-1095.svg[DRW C400 TNSCネットワーキングケーブルIEOPS 1095]
+image::../media/drw_c400_TNSC-networking-cabling_IEOPS-1189.svg[DRW C400 TNSCネットワーキングケーブル配線IEOPS 1189]
 
 . に進みます <<手順 4 ：コントローラをドライブシェルフにケーブル接続する>> ドライブシェルフのケーブル接続手順については、を参照して
 
@@ -236,7 +236,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 .手順
 . 次の図を使用して、コントローラとスイッチをケーブル接続します。
 +
-image::../media/drw_c400_switched_network_cabling_IEOPS-1096.svg[DRW C400スイッチネットワークケーブルIEOPS 1096]
+image::../media/drw_c400_switched_network_cabling_IEOPS-1190.svg[DRW C400スイッチネットワークケーブルIEOPS 1190]
 
 . に進みます <<手順 4 ：コントローラをドライブシェルフにケーブル接続する>> ドライブシェルフのケーブル接続手順については、を参照して
 
@@ -266,7 +266,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 .手順
 . 次の図を使用して、1台のドライブシェルフにコントローラをケーブル接続します。
 +
-image::../media/drw_c400_one_ns224_shelf_IEOPS-1097.svg[DRW C400 ns224シェルフIEOPS 1097を1台]
+image::../media/drw_c400_one_ns224_shelf_IEOPS-1191.svg[DRW C400 ns224シェルフIEOPS 1191×1]
 
 . に進みます <<手順 5 ：システムのセットアップと設定を完了する>> をクリックして、システムのセットアップと設定を完了します。
 
@@ -288,7 +288,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 .手順
 . 次の図を使用して、 2 台のドライブシェルフにコントローラをケーブル接続します。
 +
-image::../media/drw_c400_two_ns224_shelves_IEOPS-1098.svg[DRW C400 2台のns224シェルフIEOPS 1098]
+image::../media/drw_c400_two_ns224_shelves_IEOPS-1192.svg[DRW C400 2台のns224シェルフIEOPS 1192]
 
 . に進みます <<手順 5 ：システムのセットアップと設定を完了する>> をクリックして、システムのセットアップと設定を完了します。
 

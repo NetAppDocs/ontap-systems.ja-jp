@@ -159,7 +159,7 @@ USB フラッシュドライブは、 USB コンソールポートではなく�
 *** bootarg.init.boot_clustered`
 *** 「 partner-sysid 」
 *** AFF C190 / AFF A220 （オールフラッシュ FAS ）用 bootarg.init.flash_optimized`
-*** AFF A220 およびオール SAN アレイの場合は bootarg.init.san_optimized`
+*** `bootarg.init.san_optimized` （AFF A220およびオールフラッシュSANアレイの場合）
 *** bootarg.init.switchless_cluster.enable`
 
 

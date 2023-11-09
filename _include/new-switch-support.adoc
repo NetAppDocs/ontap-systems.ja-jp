@@ -2,9 +2,34 @@
 :allow-uri-read: 
 
 
-[cols="25h,~,~"]
+[cols="20,65,15"]
 |===
 | スイッチ | 説明 | 最初から利用可能です 
+
+
+ a| 
+https://hwu.netapp.com/Switch/Index["NVIDIA IP SN2100スイッチ"]
+ a| 
+NVIDIA IP SN2100ストレージスイッチは、A900 / FAS9500プラットフォームを使用するMetroCluster IP構成でサポートされます。
+ a| 
+ONTAP 9.12.1
+
+
+
+ a| 
+https://hwu.netapp.com/Switch/Index["NVIDIA IP SN2100スイッチ（X190006）"]
+ a| 
+NVIDIA IP SN2100ストレージスイッチは、次のプラットフォームを使用するMetroCluster IP構成でサポートされます。
+
+* FAS500f / AFF A250
+* FAS8300 / AFF A400
+* FAS8700 の場合
+* FAS9000 / AFF A700
+* AFF A800
+
+ a| 
+ONTAP 9.10.1P3
+
 
 
  a| 

@@ -11,11 +11,14 @@ summary: このセクションでは、システムの初期起動時にラッ�
 
 
 [role="lead"]
-このセクションでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。
+『Installation and Setup Instructions』には、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順が図で示されています。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。
 
-設置およびセットアップ手順 _PDF ポスター：
 
-* 英語 link:../media/PDF/215-14949_2020_11_en-us_AFFA250_ISI.pdf["ASA A250セットアップガイド"^]
-* 日本語 https://library.netapp.com/ecm/ecm_download_file/ECMLP2874690["ASA A250システムのセットアップガイド"^]
-* 中国語： https://library.netapp.com/ecm/ecm_download_file/ECMLP2874693["ASA A250システムのセットアップガイド"^]
+NOTE: ASA A250およびASA C250は、AFF A250システムと同じインストール手順を使用します。
+
+次のリンクを使用します。
+
+* 英語 link:../media/PDF/215-14949_2023_09_en-us_AFFA250_ISI.pdf["AFF A250 のセットアップガイド"^]
+* 日本語 https://library.netapp.com/ecm/ecm_download_file/ECMLP2874690["AFF A250 システムのインストールとセットアップの手順"^]
+* 中国語： https://library.netapp.com/ecm/ecm_download_file/ECMLP2874693["AFF A250 システムのインストールとセットアップの手順"^]
 
