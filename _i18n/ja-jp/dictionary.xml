@@ -8558,25 +8558,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4a9663f34d974f62e97bc12e3339b829" category="summary">このセクションでは、ASA C800システムの設置手順について詳しく説明します。</block>
   <block id="785cd996138f338b507afb4b1a247f7a" category="doc">詳細な手順- ASA C800</block>
   <block id="0638f850898c092d5e1fe72b87242595" category="paragraph">ASA C800システムをインストールするには、アカウントを作成してシステムを登録する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。</block>
-  <block id="9c62e171f059c8600997ae4e0f96ab7d" category="image-alt">DRW asac800の重量に関する注意</block>
-  <block id="d2946c650fd878fb1382f852e7ae21f2" category="image-alt">DRW asac800取り付けケーブル管理</block>
-  <block id="8f9611c57f280dcf3707a77790073f5e" category="list-text">e1b~e1b
-<block ref="15891b31f94aa5c1d8d701dc45f31a49" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e2ffd86efabaa66f6caa4720f826af5e" category="list-text">e1a ~ e1a
-<block ref="a384f044b9ce696d7af96248c96af5c1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1ddae32aa15704bfdbaa2aab1a7d6dfe" category="paragraph">管理ポートを管理ネットワークスイッチにケーブル接続します    <block ref="006022f2d0575aac941d853d15f04b9e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d6f4ba76330aa95c5eaaaf0d9035fea2" category="paragraph">クラスタインターコネクトポートを 100GbE クラスタインターコネクトスイッチにケーブル接続します。
-** e0a
-** e1a
-<block ref="f2a41a3e16faf723b039ff4278135de5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8546314cef10b9e9e364344875d77237" category="paragraph">ポート 2a~2d を FC ホストスイッチにケーブル接続します。<block ref="4f1b9e5dfcbddf179a4286f1703ef51b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="607da72d58aff35499a7aec17d5e19bb" category="paragraph">ポート e4A から e4d を 10GbE ホストネットワークスイッチにケーブル接続します。<block ref="90048d1fb5dca95cfe62abfa6b205214" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="25f831637542d41012246381c8ca1ec9" category="paragraph">コントローラ A をシェルフにケーブル接続します。    <block ref="f81613a889a36c93366a9575275b2581" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="335c41450f222d4ab520fa32b2542214" category="paragraph">コントローラ B をシェルフにケーブル接続します。    <block ref="678df8700f02a110e9ca97a297deb31d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="157dc2a3553e3f5202fbc40d49878754" category="paragraph">コントローラ A をシェルフにケーブル接続します。    <block ref="118747470262b69831582f8c5b0f6061" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="48d33cbc5ff82c101c057c7286bba92e" category="paragraph">コントローラ B をシェルフにケーブル接続します。    <block ref="f09535d2d5af9c437ea1775f9a22dea3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9f9162027a6469a02a5740c7a72369e3" category="image-alt">DRWコンソール接続asac800</block>
-  <block id="6fe0915ad0c3735187132d7dfe2356b4" category="image-alt">DRWクライアント管理サブネットasac800</block>
   <block id="3682f89576a4cb3869bd075b26450b14" category="doc">リカバリイメージのブート- ASA C800</block>
   <block id="1a127c6545345af120647a9618b2e726" category="doc">ビデオ- ASA C800</block>
   <block id="71eb59c59a42227ae8b45d0cfaf6f52f" category="paragraph">ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用したシステムの初期設定の例を紹介するビデオを 2 種類紹介します。</block>
@@ -8717,7 +8698,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e46b8c6d3d358d972a1fe516250dcf5d" category="paragraph">コントローラをシャーシに挿入します</block>
   <block id="ff0420a1b97d66a283e50773fa71f7ab" category="image-alt">DRW C400 RTC BATT IEOPS 1239</block>
   <block id="d1ad021bd9b79ffa9323df56f68e4b22" category="paragraph">このクイックガイドには、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順が図で示されています。この手順は、NetAppシステムのインストールに精通している場合に使用します。</block>
-  <block id="e39f500ad07a270219bd21d82b87b157" category="paragraph">を使用します <block ref="1ede88745168187a218abc6fed7fade9" category="inline-link-macro-rx"></block>。</block>
   <block id="e7f3c0051e6bc5cbd205f59b35151985" category="inline-image-macro">幅= 500px</block>
   <block id="8f9d84ce0761e9cbbd0e69dc419011a6" category="paragraph"><block ref="8f9d84ce0761e9cbbd0e69dc419011a6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="80c14517a78070e49e0abac5d7f9ddbf" category="image-alt">DRW C400メザニンカードの交換IEOPS 1236</block>
@@ -8785,4 +8765,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6d6d899023064067891b54808437adaa" category="sidebar">ASA Aシリーズシステム</block>
   <block id="be83f0f3d9e7cc4af05991e4976d2134" category="sidebar">ASA Cシリーズシステム</block>
   <block id="a46d5e85a24eb7f41987dc2fc02df2c1" category="sidebar">SAN専用のシンプルな環境を実現するネットアップのオールフラッシュSANアレイ（ASA）は、ミッションクリティカルなデータベースやその他のSANワークロードに継続的なデータ可用性を提供します。</block>
+  <block id="2b624e2e0f95b539d134f321667149d4" category="paragraph">を使用します <block ref="327880446cd4829fe913aafea7a76fa5" category="inline-link-macro-rx"></block>。</block>
+  <block id="47fb299294c4db99aead2c933a5d0e45" category="image-alt">DRW affc800取り付けケーブル管理</block>
 </blocks>
