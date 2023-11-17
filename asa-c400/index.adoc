@@ -1,0 +1,75 @@
+---
+permalink: asa-c400/index.html 
+sidebar: sidebar 
+keywords: asa C400 maintenance, maintenance, repairing C400, repairing asa C400, replace asa C400 components, replace asa C400 components 
+summary: ASA C400ハードウェアのメンテナンス 
+---
+= ASA C400ハードウェアのメンテナンス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA C400ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。
+
+
+
+== ブートメディア
+
+ブートメディアには、システムがブート時に使用するブートイメージファイルのプライマリセットとセカンダリセットが格納されています。
+
+
+
+== シャーシ
+
+シャーシは、コントローラ/CPUユニット、電源装置、I/Oなど、すべてのコントローラコンポーネントを収容する物理エンクロージャです。
+
+
+
+== コントローラ
+
+コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、ONTAP機能を実装します。
+
+
+
+== DIMM
+
+メモリサイズが異なる場合や DIMM に障害がある場合は、 DIMM （デュアルインラインメモリモジュール）を交換する必要があります。
+
+
+
+== ファン
+
+ファンによってコントローラが冷却されます。
+
+
+
+== NVDIMM バッテリ
+
+NVDIMMバッテリは、NVDIMMモジュールへの電力を維持する役割を果たします。
+
+
+
+== NVDIMM
+
+ The NVDIMM (non-volatile dual in-line memory module) manages the data transfer from the volatile memory to the non-volatile storage, and maintains data integrity in the event of a power loss or system shutdown.
+
+
+== PCIeまたはメザニンカード
+
+PCIe（Peripheral Component Interconnect Express）カードは、マザーボードのPCIeスロットに接続する拡張カードです。
+
+メザニンカードは、マザーボードの専用スロットに挿入するように設計された拡張カードです。
+
+
+
+== 電源装置
+
+電源装置は、コントローラシェルフに電源の冗長性を提供します。
+
+
+
+== リアルタイムクロックバッテリ
+
+リアルタイムクロックバッテリは、電源がオフの場合にシステムの日付と時刻の情報を保持します。

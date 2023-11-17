@@ -1,0 +1,79 @@
+---
+section: asa-c800
+title: ASA C800システム
+entries:
+- title: 設置とセットアップ
+  pdf-filename: ASA C800のインストールとセットアップ
+  entries:
+  - title: インストールとセットアップを選択します
+    url: "/asa-c800/install-setup.html"
+  - title: クイックステップ
+    url: "/asa-c800/install-quick-guide.html"
+  - title: ビデオの手順
+    url: "/asa-c800/install-videos.html"
+  - title: 詳細な手順
+    url: "/asa-c800/install-detailed-guide.html"
+- title: メンテナンス
+  pdf-filename: ASA C800のメンテナンス
+  entries:
+  - title: 概要
+    url: "/asa-c800/maintain-overview.html"
+  - title: ブートメディア
+    pdf-filename: ASA C800ブートメディア
+    entries:
+    - title: 概要
+      url: "/asa-c800/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/asa-c800/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa-c800/bootmedia-shutdown.html"
+    - title: ブートイメージを交換します
+      url: "/asa-c800/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/asa-c800/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: OKM 、 NSE 、 NVE をリストアします
+      url: "/asa-c800/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/asa-c800/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: ASA C800シャーシ
+    entries:
+    - title: 概要
+      url: "/asa-c800/chassis-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa-c800/chassis-replace-shutdown.html"
+    - title: シャーシの交換
+      url: "/asa-c800/chassis-replace-move-hardware.html"
+    - title: シャーシ交換後の処理
+      url: "/asa-c800/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラ
+    pdf-filename: ASA C800コントローラモジュール
+    entries:
+    - title: 概要
+      url: "/asa-c800/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa-c800/controller-replace-shutdown.html"
+    - title: コントローラを交換してください
+      url: "/asa-c800/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/asa-c800/controller-replace-system-config-restore-and-verify.html"
+    - title: システムにケーブルを再接続
+      url: "/asa-c800/controller-replace-recable-reassign-disks.html"
+    - title: コントローラ交換後の処理
+      url: "/asa-c800/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/asa-c800/dimm-replace.html"
+  - title: ドライブ
+    url: "/asa-c800/drive-replace.html"
+  - title: ファン
+    url: "/asa-c800/fan-replace.html"
+  - title: NVDIMM
+    url: "/asa-c800/nvdimm-replace.html"
+  - title: NVDIMM バッテリ
+    url: "/asa-c800/nvdimm-battery-replace.html"
+  - title: PCIe カード
+    url: "/asa-c800/pci-cards-and-risers-replace.html"
+  - title: 電源装置
+    url: "/asa-c800/power-supply-replace.html"
+  - title: リアルタイムクロックバッテリ
+    url: "/asa-c800/rtc-battery-replace.html"
