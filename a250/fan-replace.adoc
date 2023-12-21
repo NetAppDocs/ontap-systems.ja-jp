@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a250, replace a fan 
 summary: ファンを交換するには、障害が発生したファンモジュールを取り外し、新しいファンモジュールと交換します。 
 ---
-= ファンの交換 - AFF A250
+= ファンの交換- AFF A250
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -48,7 +48,7 @@ NOTE: 自動ギブバックを無効にしますか?_と表示されたら'y'を
  a| 
 LOADER プロンプト
  a| 
-コントローラモジュールの取り外しに進みます。
+次の手順に進みます。
 
 
 

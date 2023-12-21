@@ -179,7 +179,7 @@ LIF は、コントローラモジュールがシャットダウンすると自�
  a| 
 ポート数が少ない NIC I/O モジュール
  a| 
-選択したLIFを別のホームポートに永続的に再割り当てします。を参照してください https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["LIF を移行する"^] System Manager を使用して LIF を完全に移動する方法については、を参照してください。
+該当する LIF を別のホームポートに完全に再割り当てします。を参照してください https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["LIF を移行する"^] System Manager を使用して LIF を完全に移動する方法については、を参照してください。
 
 
 
