@@ -20,12 +20,16 @@ entries:
     url: "/ns224/service-replace-dimm.html"
   - title: ドライブ
     url: "/ns224/service-replace-drive.html"
-  - title: ドライブシェルフのLED
-    url: "/ns224/service-monitor-leds.html"
+  - title: ドライブシェルフ
+    entries:
+    - title: シェルフのコールド交換
+      url: "/ns224/cold-replace-shelf.html"
+    - title: シェルフをホットリムーブします
+      url: "/ns224/hot-remove-shelf.html"
+    - title: シェルフLEDの監視
+      url: "/ns224/service-monitor-leds.html"
   - title: ファン
     url: "/ns224/service-replace-fan.html"
-  - title: シェルフをホットリムーブします
-    url: "/ns224/hot-remove-shelf.html"
   - title: nsm モジュール
     url: "/ns224/service-replace-nsm100.html"
   - title: 電源装置

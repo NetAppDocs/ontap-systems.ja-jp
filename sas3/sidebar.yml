@@ -42,12 +42,16 @@ entries:
     url: "/sas3/service-hot-swap-drive-ds460c.html"
   - title: DS460C シェルフ内のドライブドロワー
     url: "/sas3/service-replace-drawer-ds460c.html"
-  - title: ドライブシェルフのLED
-    url: "/sas3/service-monitor-leds.html"
+  - title: ドライブシェルフ
+    entries:
+    - title: シェルフのコールド交換
+      url: "/sas3/cold-replace-shelf.html"
+    - title: シェルフをホットリムーブします
+      url: "/sas3/hot-remove-shelf.html"
+    - title: シェルフLEDの監視
+      url: "/sas3/service-monitor-leds.html"
   - title: DS460C シェルフのファンモジュール
     url: "/sas3/service-replace-fan-ds460c.html"
-  - title: シェルフをホットリムーブします
-    url: "/sas3/hot-remove-shelf.html"
   - title: IOM12 / IOM12Bモジュールです
     url: "/sas3/service-hot-swap-iom.html"
   - title: 電源装置
