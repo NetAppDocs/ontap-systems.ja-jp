@@ -1,0 +1,21 @@
+---
+permalink: sas3/sas3-shelf-overview.html 
+sidebar: sidebar 
+keywords: sas3, shelves, shelf, sas3 shelves, drive, aggregate, ha, pair, serving, data 
+summary: SAS3シェルフの概要 
+---
+= 概要- SAS3シェルフ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp SAS3ドライブシェルフは、SASコネクタを使用してストレージシステムに接続します。
+
+SAS3ドライブシェルフをメンテナンスするには、次の手順を実行します。
+
+* link:cold-replace-shelf.html["シェルフのコールド交換"]
+* link:hot-remove-shelf.html["シェルフをホットリムーブする"]
+* link:service-monitor-leds.html["シェルフLEDの監視"]
+

@@ -30,12 +30,10 @@ indexpage:
       url: "../ns224/service-replace-dimm.html"
     - title: ドライブ
       url: "../ns224/service-replace-drive.html"
-    - title: ドライブシェルフのLED
-      url: "../ns224/service-monitor-leds.html"
+    - title: ドライブシェルフ
+      url: "../ns224/ns224-shelf-overview.html"
     - title: ファン
       url: "../ns224/service-replace-fan.html"
-    - title: シェルフをホットリムーブします
-      url: "../ns224/hot-remove-shelf.html"
     - title: nsm モジュール
       url: "../ns224/service-replace-nsm100.html"
     - title: 電源装置
@@ -50,12 +48,10 @@ indexpage:
       url: "../sas3/service-hot-swap-drive-ds460c.html"
     - title: DS460C シェルフ内のドライブドロワー
       url: "../sas3/service-replace-drawer-ds460c.html"
-    - title: ドライブシェルフのLED
-      url: "../sas3/service-monitor-leds.html"
+    - title: ドライブシェルフ
+      url: "../sas3/sas3-shelf-overview.html"
     - title: DS460Cシエルフノフアン
       url: "../sas3/service-replace-fan-ds460c.html"
-    - title: シェルフをホットリムーブする
-      url: "../sas3/hot-remove-shelf.html"
     - title: IOM12 / IOM12Bモジュールです
       url: "../sas3/service-hot-swap-iom.html"
     - title: 電源装置

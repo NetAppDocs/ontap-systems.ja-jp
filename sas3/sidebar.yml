@@ -44,6 +44,8 @@ entries:
     url: "/sas3/service-replace-drawer-ds460c.html"
   - title: ドライブシェルフ
     entries:
+    - title: SAS3シェルフの概要
+      url: "/sas3/sas3-shelf-overview.html"
     - title: シェルフのコールド交換
       url: "/sas3/cold-replace-shelf.html"
     - title: シェルフをホットリムーブします

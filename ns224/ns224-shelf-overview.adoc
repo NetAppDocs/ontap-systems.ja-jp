@@ -1,0 +1,21 @@
+---
+permalink: ns224/ns224-shelf-overview.html 
+sidebar: sidebar 
+keywords: ns224, shelves, shelf, ns224 shelves, drive, aggregate, ha, pair, serving, data 
+summary: NS224シェルフの概要 
+---
+= 概要- NS224シェルフ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp NS224ドライブシェルフは、最大24本のドライブを搭載できる2Uラックユニットです。NS224ドライブシェルフは2.5インチスモールフォームファクタドライブと互換性があり、SASインターフェイスとSATAインターフェイスの両方をサポートします。
+
+NS224ドライブシェルフをメンテナンスするには、次の手順を実行します。
+
+* link:cold-replace-shelf.html["シェルフのコールド交換"]
+* link:hot-remove-shelf.html["シェルフをホットリムーブする"]
+* link:service-monitor-leds.html["シェルフLEDの監視"]
+

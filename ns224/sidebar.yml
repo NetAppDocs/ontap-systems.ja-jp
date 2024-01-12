@@ -22,6 +22,8 @@ entries:
     url: "/ns224/service-replace-drive.html"
   - title: ドライブシェルフ
     entries:
+    - title: NS224シェルフの概要
+      url: "/ns224/ns224-shelf-overview.html"
     - title: シェルフのコールド交換
       url: "/ns224/cold-replace-shelf.html"
     - title: シェルフをホットリムーブします
