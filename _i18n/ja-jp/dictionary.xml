@@ -4844,7 +4844,6 @@
   <block id="4a848babffe3702bffe9efa29dd12c61" category="paragraph">ブートメディアを交換するには、次のアニメーション、図、または記載された手順に従ってください。</block>
   <block id="bb90eba065615f7ac639d1758ba84812" category="paragraph">次のアニメーション、図、または記載された手順を使用して、キャッシングモジュールを交換できます。</block>
   <block id="b8f99a879bdae690f650b2171355b5bb" category="image-alt">DRW 8300 空のライザーが取り外されました</block>
-  <block id="ae17f8ad6d4ad0752e9da66715863b23" category="paragraph">次のアニメーション、図を使用できます。または、 PCIe ライザーとメザニンカードを障害のあるコントローラモジュールから交換用コントローラモジュールに移動するための手順を記載しています。</block>
   <block id="1e6c27613480cee2fca639b93121fd62" category="paragraph">次のアニメーション、図、または記載された手順を使用して、キャッシングモジュールを新しいコントローラモジュールに移動できます。</block>
   <block id="eb248e4303d7cdcd9d37762008fe5713" category="list-text">次のアニメーションや図を使用して、ドライブシェルフをコントローラにケーブル接続します。</block>
   <block id="6bf14a7252e28dc753304577c4a9180c" category="list-text">各コントローラのスロット 3 または 7 に、少なくとも 1 つの X91148A モジュールをインストールする必要があります。アニメーションや図は、このモジュールがスロット 3 と 7 の両方に取り付けられていることを示しています。</block>
@@ -8792,4 +8791,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f0770a756304b05e8fc4f321e0babe43" category="open-title">オプション2：X91148Aモジュールをストレージモジュールとして追加する</block>
   <block id="9e41ec46d0af5ba1b01d8b3bde9b4f52" category="list-text">スロット 3 および / または 7 のストレージモジュールとして X91148A モジュールを追加する場合は、 System Manager を使用して、 LIF を別のホームポートに完全に移行します。詳細については、を参照してください<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block>。</block>
   <block id="c81f78014b983d44adbb454f838c2ae9" category="list-text">の説明に従って、 NS224 シェルフを設置してケーブル接続します<block ref="a84558faf7b836b9db418a291f2462b5" category="inline-link-rx"></block>。</block>
+  <block id="68439e6a6b3d21f29b1f4c3391b0fc9d" category="admonition">FAS8300には、Ver2コントローラモジュールのキャッシングモジュールソケット（スロット6）が1つしかありません。FAS8700にはVer2コントローラモジュールはありません。ソケットの取り外しによるキャッシングモジュールの機能への影響はありません。</block>
+  <block id="c70a0b227334f67f05309732ae67641e" category="paragraph">次のアニメーション、図、システムのファーマップ、または手順説明に従って、障害のあるコントローラモジュールから交換用コントローラモジュールにPCIeライザーとメザニンカードを移動できます。</block>
+  <block id="e0b36bb653f20c62f1b87229ea86e61e" category="admonition">PCIeカードをライザーから取り外す必要はありません。PCIeカードを取り付けたまま、ライザーを交換用コントローラモジュールに移します。</block>
+  <block id="569455efa28fef99f37a55bfd832334e" category="admonition">FAS8300には、Ver2コントローラモジュールのキャッシングモジュールソケットが1つしかありません。FAS8700にはVer2コントローラモジュールはありません。ソケットの取り外しによるキャッシングモジュールの機能への影響はありません。</block>
+  <block id="f30c92bb3a7434fbf14bd27327ab95f7" category="admonition">スロット6はFAS8300 Ver2コントローラでのみ使用できます。</block>
 </blocks>
