@@ -23,7 +23,7 @@
 
 . 必要に応じて、交換用ノードの日付を GMT で設定します。 'et date_mm/dd/yyyy_`
 . 必要に応じて、交換用ノードの時刻を GMT で設定します。「 set time _hh ： mm ： ss_` 」
-. LOADERプロンプトで、_replacement_nodeの日時を確認します。 `date`
+. LOADERプロンプトで、_replacement_nodeの日時を確認します。 `show date`
 +
 日付と時刻は GMT で表示されます。
 
