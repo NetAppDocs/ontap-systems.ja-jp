@@ -6390,8 +6390,6 @@
   <block id="7d60346fb854755b0fc4b8486f2e5769" category="section-title">手順1：ONTAP に_replacement _ controllerのライセンスをインストールします</block>
   <block id="541648f14089765ba6e8c3198be32507" category="section-title">手順 2 ：ブートメディアを交換します</block>
   <block id="6fdf23777adc5b39f52f2829b69833e5" category="inline-link-macro">ノードをクラスタと同期します</block>
-  <block id="692418fcc9983296fd6b89b4072b99d2" category="inline-link-macro">SEDを非保護モードに戻します</block>
-  <block id="aa641c641cc4509747c629778ceba1e6" category="list-text">NetApp Storage Encryptionを使用している場合は、の手順に従ってMSIDをリセットしておく必要があります <block ref="deeaf76d485e47e462d03c774bc2ca5e" category="inline-link-macro-rx"></block>。</block>
   <block id="dca9d9d34ff973dbf261373e223aa9e4" category="list-text">SANシステムを使用している場合は、イベントメッセージを確認しておく必要があります <block ref="090678c8ba0a25df800d3d4eeaf19522" prefix="(" category="inline-code"></block>)を参照してください。。<block ref="090678c8ba0a25df800d3d4eeaf19522" prefix=" " category="inline-code"></block> コマンドは、ノード名、そのノードのクォーラムステータス、ノードの可用性ステータス、およびノードの動作ステータスを表示します。</block>
   <block id="03733c422db2a03d86659ae5a1e923dc" category="paragraph">次のAutoSupport メッセージは、ケースの自動作成を2時間停止します。<block ref="387708b955ccf034fcf9197ad51ba879" prefix=" " category="inline-code"></block></block>
   <block id="f1f0ba04096d04407de2d15a11510ac1" category="paragraph">システムプロンプトまたはパスワードプロンプト</block>
@@ -7141,7 +7139,6 @@
   <block id="eba4465f65ac7360936f8f238b09999c" category="list-text">システムをWebブラウザを使用してネットワークスイッチやラップトップまたはコンソールに接続するための追加のネットワークケーブル。</block>
   <block id="c7e4a9edbb9ec3bb0052efd3332763a3" category="section-title">手順3：コントローラをクラスタにケーブル接続する</block>
   <block id="089103029c56ad66034dfe6bd70cfdcb" category="paragraph">アニメーションまたは記載された手順に従って、コントローラとスイッチの間のケーブル接続を完了します。各コントローラでこの手順を実行します。</block>
-  <block id="38e134ad6d648c53626268f8b6a82510" category="list-text">25GbEクラスタインターコネクトケーブルを使用して、クラスタインターコネクトポートe0cとe0c、e0dとe0を接続します<block ref="6b6a40b68f5814cad1750bfff7e3b927" category="inline-image-macro-rx" type="image"></block>：</block>
   <block id="5d8d8fe980b572286e75db6ff18d3cbc" category="paragraph"><block ref="5d8d8fe980b572286e75db6ff18d3cbc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="84e68180cd83b83ca12149fed857f1ac" category="list-text">クラスタインターコネクトポートe0cとe0dを25GbEクラスタインターコネクトスイッチにケーブル接続します。</block>
   <block id="ee3f9d0ec20204c7d48b52d859e31c4d" category="paragraph"><block ref="ee3f9d0ec20204c7d48b52d859e31c4d" category="inline-image-macro-rx" type="image"></block></block>
@@ -7751,7 +7748,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="fbc33e94068f7206fe1f29c2cdd767fe" category="paragraph">メザニンカードは、マザーボードの専用スロットに挿入するように設計された拡張カードです。</block>
   <block id="e8bc49790ccdd5f485eb537cc7b3081d" category="summary">キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。</block>
   <block id="9260991b91fdf449af1f97b5d09a9db6" category="summary">NS224シェルフとSASシェルフは、NetApp AFFシステムとFASシステム向けに設計されており、多様なビジネスニーズやアプリケーションニーズに対応できます。</block>
-  <block id="0add3a06a3c8079fac5caa294ad21965" category="doc">AFF / FASシステムのドライブシェルフ</block>
   <block id="4de4b37af472f8b6bb5aa5b5732538f0" category="summary">ASA C250ハードウェアのメンテナンス</block>
   <block id="80b77aae28ed3360a8b704371f5188e1" category="doc">AFF C250ハードウェアのメンテナンス</block>
   <block id="ab253cf54adf6fdbb65cbb0ed70cb2cf" category="paragraph">AFF C250ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
@@ -8792,4 +8788,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4169d3d04b863ba6044225d783c8511c" category="paragraph">を使用します <block ref="760faf2edba83a3b2dfe198c423cd5ec" category="inline-link-macro-rx"></block> ネットアップシステムのインストールに精通している場合。</block>
   <block id="230fb764922530d0d527b96fb40d15f8" category="paragraph"><block ref="230fb764922530d0d527b96fb40d15f8" category="inline-link-macro-rx"></block></block>
   <block id="9e4682a37df843156979b712e93e942d" category="paragraph"><block ref="9e4682a37df843156979b712e93e942d" category="inline-link-macro-rx"></block></block>
+  <block id="370d65afeef540ea21d331a7da8675ec" category="list-text">25GbEクラスタインターコネクトケーブルを使用して、クラスタインターコネクトポートe0cとe0c、e0dとe0dを接続します。</block>
+  <block id="45c0f160ca0efa09fc0b198986db5e31" category="image-alt">DRW affa250スイッチクラストケーブル</block>
+  <block id="5407ed45e4a9085a4f72a4611d202d7c" category="sidebar">ネットアップのNS224シェルフとSASシェルフは、デジタル変革に必要なパフォーマンス、耐障害性、柔軟性を提供します。</block>
+  <block id="432ba2d883505b11fa27f305c25abca9" category="sidebar">ONTAPハードウェアシステムのドライブシェルフ</block>
 </blocks>

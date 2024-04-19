@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: ONTAPハードウェアシステムのドライブシェルフ
+  summary: NS224シェルフとSASシェルフは、NetApp AFFシステムとFASシステム向けに設計されており、多様なビジネスニーズやアプリケーションニーズに対応できます。
+  keywords: install ns224, hot-add, shelves, cable, drive-shelves
+  lead: ネットアップのNS224シェルフとSASシェルフは、デジタル変革に必要なパフォーマンス、耐障害性、柔軟性を提供します。
   tiles:
   - title: NS224シェルフの設置
     links:

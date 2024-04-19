@@ -1,5 +1,8 @@
 ---
 indexpage:
+  title: AFF Cシリーズシステム
+  summary: ASA システムのインストール、セットアップ、および保守については、ストレージシステムのマニュアルを参照してください。
+  keywords: aff c-series, datasheet, C250, C400, C800
   lead: AFF Cシリーズシステムは、高密度NVMe容量フラッシュテクノロジを基盤としています。
   tiles:
   - title: はじめに

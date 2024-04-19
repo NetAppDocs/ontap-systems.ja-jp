@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: オールフラッシュSANアレイ（ASA）Cシリーズシステム
+  summary: ASA Cシリーズシステムの設置、セットアップ、および保守については、ストレージシステムのマニュアルを参照してください。
+  keywords: allsan, asa, flash, array, c-series, systems, configuration, asa-c250,
+    c-400, c-800
   lead: SAN専用のシンプルな環境を実現するネットアップのオールフラッシュSANアレイ（ASA）は、ミッションクリティカルなデータベースやその他のSANワークロードに継続的なデータ可用性を提供します。
   tiles:
   - title: はじめに

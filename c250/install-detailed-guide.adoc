@@ -191,7 +191,10 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 .アニメーション- 2ノードスイッチレスクラスタをケーブル接続
 video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto]
 .手順
-. 25GbEクラスタインターコネクトケーブルを使用して、クラスタインターコネクトポートe0cとe0c、e0dとe0を接続しますimage:../media/oie_cable_sfp_gbe_copper.png[""]：
+. 25GbEクラスタインターコネクトケーブルを使用して、クラスタインターコネクトポートe0cとe0c、e0dとe0dを接続します。
++
+image:../media/oie_cable_sfp_gbe_copper.png[""]：
+
 +
 image:../media/drw_affa250_tnsc_cabling.png[""]
 
@@ -229,7 +232,7 @@ video::bf6759dc-4cbf-488e-982e-ac68017fbef8[panopto]
 .手順
 . クラスタインターコネクトポートe0cとe0dを25GbEクラスタインターコネクトスイッチにケーブル接続します。
 +
-image:../media/drw_affa250_switched_clust_cabling.png[""]
+image::../media/drw_affa250_switched_clust_cabling.png[DRW affa250スイッチクラストケーブル]
 
 . RJ45 ケーブルを使用して、レンチマークのポートを管理ネットワークスイッチに接続します。
 +
