@@ -113,7 +113,6 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをスイッチオーバーする必要があります。
 
 .このタスクについて
-* NetApp Storage Encryption を使用している場合は、の「 FIPS ドライブまたは SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html["CLI での NetApp Encryption の概要"^]。
 * 正常なコントローラに電力を供給するために、この手順 の最後で電源装置をオンのままにしておく必要があります。
 
 

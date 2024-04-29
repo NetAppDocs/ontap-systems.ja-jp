@@ -90,7 +90,6 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをスイッチオーバーする必要があります。
 
 .このタスクについて
-* NetApp Storage Encryption を使用している場合は、の「 FIPS ドライブまたは SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html["CLI での NetApp Encryption の概要"^]。
 * 正常なコントローラに電力を供給するために、この手順 の最後で電源装置をオンのままにしておく必要があります。
 
 
@@ -627,25 +626,6 @@ advanced モードで続けるかどうかを尋ねられたら、「 y 」と�
 ====
 
 
-== 手順 6 ：ストレージとボリュームの暗号化機能をリストアする
-
-ストレージまたはボリュームの暗号化を使用するように設定したストレージシステムでは、暗号化機能を中断させないための追加の手順を実行する必要があります。ストレージまたはボリュームの暗号化が有効になっていないストレージシステムでは、このタスクを省略できます。
-
-
-NOTE: この手順は、DIMMの交換時には必要ありません。
-
-.手順
-. オンボードキー管理と外部キー管理のどちらを使用しているかに応じて、次のいずれかの手順を実行します。
-+
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["オンボードキー管理の暗号化キーをリストア"^]
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["外部キー管理の暗号化キーをリストアします"^]
-
-
-. SEDのMSIDをリセットします
-
-
-
-
-== 手順 7 ：障害が発生したパーツをネットアップに返却する
+== 手順 6 ：障害が発生したパーツをネットアップに返却する
 
 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。

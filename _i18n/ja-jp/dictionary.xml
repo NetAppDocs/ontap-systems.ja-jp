@@ -496,7 +496,6 @@
   <block id="a0f829e8eae692ba3841ace71f629760" category="list-text">環境変数が正しく設定されていることを確認します。</block>
   <block id="5220b264c38ecaf96c146e54b38d8093" category="list-text">ノードに LOADER プロンプトを表示します。</block>
   <block id="eeed9c2f829091b08810156d7ed4433e" category="list-text">printenv コマンドを使用して ' 環境変数の設定を確認します</block>
-  <block id="30748b1b116d9335e2b8cdb6ec3038d0" category="list-text">環境変数が正しく設定されていない場合は 'setenvenvironment_variable_name changed_value コマンドで変更します</block>
   <block id="414efa7edc26a4a7b5a28ac4965ea178" category="list-text">'aveenv' コマンドを使用して変更を保存します</block>
   <block id="b9eb862c5caa1201eee15d474b3217ef" category="list-text">次の手順は、システム構成によって異なります。</block>
   <block id="7a7b698215037ec83cf3c3bc1f775001" category="inline-xref-macro">必要に応じて、 OKM 、 NSE 、 NVE をリストアします</block>
@@ -3297,7 +3296,6 @@
   <block id="4f72f46e41b488e589d00c457c136571" category="paragraph">「 boot_ontap bye 」というプロンプトが表示されます</block>
   <block id="0a777e4b645d66ac575356b85c16ed55" category="paragraph">自動ブートが設定されている場合は、ノードがリブートします。</block>
   <block id="554a23fbeb893ba3c6cb31c09b0d481f" category="paragraph">MetroCluster 構成では、交換後に通常の状態に戻るまで数分かかります。この時点で各ノードの状態が設定済みになります。 DR ミラーリングは有効で、通常モードになります。MetroCluster node show -fields node-systemid' コマンドの出力には、 MetroCluster 設定が通常の状態に戻るまで古いシステム ID が表示されます。</block>
-  <block id="3bf4c288b20a882f54f61cd8cb0618a7" category="section-title">手順 6 ：ストレージとボリュームの暗号化機能をリストアする</block>
   <block id="546213aeb2cbd4cabb4e9e5099416edd" category="summary">サービスを中断することなく LED USB モジュールを交換できます。</block>
   <block id="9e3a9c661f6d65ead55d7e84a7cd5d37" category="paragraph">FAS9000 または AFF A700 LED USB モジュールは、コンソールポートとシステムステータスへの接続を提供します。このモジュールを交換する場合、工具は必要ありません。</block>
   <block id="6fc19b2ab7e603f08d79313f5c91b43f" category="list-text">古い LED USB モジュールを取り外します。</block>
@@ -4878,7 +4876,6 @@
   <block id="1fc23df34c1ef373bc238879bf1082e5" category="list-text"><block ref="1fc23df34c1ef373bc238879bf1082e5" category="inline-link-macro-rx"></block></block>
   <block id="b8a901030a76c92bf9e4426d81439fa5" category="list-text"><block ref="b8a901030a76c92bf9e4426d81439fa5" category="inline-link-macro-rx"></block></block>
   <block id="3f98fa9dd0068de7a3158d3cefe04024" category="list-text"><block ref="3f98fa9dd0068de7a3158d3cefe04024" category="inline-link-macro-rx"></block></block>
-  <block id="518d2076bf387a28038f7558530bb987" category="inline-link">CLI での NetApp Encryption の概要</block>
   <block id="673f7a1f10ce14ef29b06ba53cf1e5d7" category="inline-link">CLI での NetApp Encryption の概要</block>
   <block id="ed20ee3e54ecf9b3b63f4e11ff820fb4" category="paragraph"><block ref="ed20ee3e54ecf9b3b63f4e11ff820fb4" category="inline-link-rx"></block></block>
   <block id="459527cf1ec141d19f1b0f88f8c19905" category="inline-link">ディスクとアグリゲートの概要</block>
@@ -5157,7 +5154,6 @@
   <block id="1396dacdf561903f32c605f06d2cf5d8" category="list-text">復元バックアップが成功したかどうかを確認するプロンプトが表示されたら 'y' を押します</block>
   <block id="c9ed271ea801891a1b5c1e6e048813b6" category="list-text">復元された構成のコピーのプロンプトが表示されたら 'Y' を押します</block>
   <block id="2ddd54a208744ec5e2ccb1b7ac83aa05" category="list-text">printenv コマンドを使用して ' 環境変数の設定を確認します</block>
-  <block id="edb5a1f64879356169f323de78b718be" category="list-text">環境変数が正しく設定されていない場合は、 setenvenvironment_variable_name changed_value コマンドを使用して変更します。</block>
   <block id="eeacd9b31ab0c2f60f1d13e5632f7f13" category="list-text">saveenv コマンドを使用して、変更内容を保存します。</block>
   <block id="29d4dec218aeaffabfed6dcc8fd1ad45" category="list-text">システムにオンボードキーマネージャ、 NSE 、または NVE が設定されている場合は、に進みます <block ref="39910b5f3ea1ee39d8059faae857cc98" category="inline-xref-macro-rx"></block></block>
   <block id="b52d8d1d987722da12d16df8a0a63541" category="list-text">LOADER プロンプトで、 boot_ontap コマンドを入力します。</block>
@@ -5295,7 +5291,6 @@
   <block id="74215317310e6608b7efcf980bd23ce9" category="list-text">登録（<block ref="3ae584b0f28c11edd6df40135d81b8ba" category="inline-link-macro-rx"></block>）をクリックします。</block>
   <block id="f65880020d1427cb243e627e392ce6ef" category="section-title">手順 1 ：コントローラモジュールを取り外す</block>
   <block id="0cb8c95aa83d9b7ae853da12e5bb125c" category="paragraph">カムハンドルは、ドライブキャリアの前面に揃うようにゆっくりと閉じてください。安全な状態でカチッと音がします。</block>
-  <block id="063a6c27f42a062a6ece0163f4444fc3" category="list-text">NetApp Storage Encryption を使用している場合は、の「 FIPS ドライブまたは SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります <block ref="bb6c6af86c0c41920e9753bb15981800" category="inline-link-macro-rx"></block>。</block>
   <block id="d7330da3fefbffbe126bbfae916b2005" category="list-text">savecore コマンドが完了するのを待ってからギブバックを実行します</block>
   <block id="03a45c592eebddeaf80cccbc66213075" category="paragraph">システムを完全に動作状態に戻すには、 NetApp Storage Encryption の構成をリストアし（必要な場合）、新しいコントローラのライセンスをインストールし、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。</block>
   <block id="07bcf96175c4fb31a9a4900272f1bd18" category="list-text">システム ID が一致しないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _ node の LOADER プロンプトから「 y 」と入力し、ノードをブートします。「 boot_ontap 」</block>
@@ -6441,12 +6436,6 @@
   <block id="1422875ceb77c2edc7c07474b11b3c6f" category="list-text">コントローラモジュールのエアダクトを開きます。</block>
   <block id="43ae4ee714a69574b12c2b05c54410b5" category="list-text">モジュールハンドルのテラコッタリリースボタンを押し、DCPMモジュールをシャーシから取り出します。</block>
   <block id="0721343ac8e5e32a5122775fda62e4d0" category="doc">設定AFF A900を復元して確認します</block>
-  <block id="2c35abfceaabbce6e9a2f24491d249c0" category="open-title">オプション1：オンボードキーマネージャを使用する</block>
-  <block id="86b112e5aa1ced4fbffb09dded147e9f" category="list-text">ノードをブートメニューでブートします。</block>
-  <block id="e07ae2ef2fbd56f8a3ced5a2ab602ded" category="list-text">オプション10を選択します。<block ref="cdca34dc3d7defb03d741a65d78de01c" prefix=" " category="inline-code"></block>。</block>
-  <block id="0a2404583aab34668c1c8004bddabbaa" category="list-text">オプション1を選択します。<block ref="e6922a1788401c5ef431db829a2c387b" prefix=" " category="inline-code"></block></block>
-  <block id="c566d4828cd295258aa8097a90880602" category="open-title">オプション2：External Managerを使用する</block>
-  <block id="0a05a9975c9259ea331a85366e41d3ce" category="list-text">オプション11を選択します。<block ref="0dd518498ab98fe1fd543910856e6153" prefix=" " category="inline-code"></block>。</block>
   <block id="a5462faa34b6cf806cb49f24d84b02a7" category="list-text">システムが40GbE NICで10GbEのクラスタインターコネクトとデータ接続をサポートするように設定されている場合は、保守モードでnicadmin convertコマンドを使用して、これらのポートを10GbE接続に変換します。を参照してください<block ref="2d808a662d9493bde97b50913a25a294" category="inline-link-rx"></block> を参照してください。</block>
   <block id="c56809d9cff2ea190c6fb9d67e804b42" category="paragraph">シャーシを交換するときは、シャーシ前面にある6つのファンモジュールを取り外す必要があります。</block>
   <block id="e9e9a6de5e421dfe8a5ccc0b156ecc94" category="admonition">カードのポートラベルが表示されない場合は、カードの取り付け方向を確認し（PCIeコネクタソケットがA400およびFAS8300 / 8700のカードスロットの左側にある）、カードを探してから、のパーツ番号でカードを探します<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> ポートラベルを示すベゼルの図については、を参照してください。カードのパーツ番号は、を使用して確認できます<block ref="432345ed72f5509f18312f01d4f08dff" prefix=" " category="inline-code"></block> コマンドまたはをシステムパッキングリストに追加します。</block>
@@ -6462,17 +6451,6 @@
   <block id="192e7ded6d54e3ac04596dc33b9c67cf" category="paragraph">I/Oモジュールは、システムの空のモジュールスロットに追加できます。</block>
   <block id="741ade379895992f2a574e8e60de1571" category="section-title">手順2：I/Oモジュールを追加します</block>
   <block id="31ac56c0f673cbef254563f6a8a32626" category="paragraph">システムにフル実装されている場合は、既存のI/Oモジュールを取り外して別のI/Oモジュールに交換することで、I/OスロットのI/Oモジュールを変更できます。</block>
-  <block id="74458273e576f4b2da617a6e0e209a5f" category="paragraph">ストレージ暗号化を有効にしている場合は、該当する手順 を使用します。</block>
-  <block id="23620cc2fa7491aefb480afbef75dac2" category="list-text">お客様から入手したオンボードキーマネージャのパスフレーズを入力します。</block>
-  <block id="15247f97704eb964c60d179c321c1370" category="list-text">プロンプトで、の出力からバックアップキーデータを貼り付けます<block ref="6b6f6c1a8bc1fede794cda92ed140953" prefix=" " category="inline-code"></block> または<block ref="32ba7af89b7557f6e3e6d80a922080ce" prefix=" " category="inline-code"></block> コマンドを実行します</block>
-  <block id="8726b2ef66dc0e734b269a3191597e11" category="paragraph">------------------------ バックアップの開始--------------------------</block>
-  <block id="328f6eaec3741c1d0f9558d6c40c1da4" category="paragraph">AAAAAAAAAAAAAAAAAAAAAAAAAAADUD+byAAAAAAAAAA QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA。。。H4nPQM0nrDRYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</block>
-  <block id="1e4d7cab6ce42bcab6973efa42fc0b2c" category="list-text">セキュリティキーマネージャのオンボード同期を実行します。</block>
-  <block id="377fca3965b001b9bcc8843e1b287fe7" category="list-text">MSIDが以前に設定され、この手順 の開始時に取得された場合は、MSIDをリセットします。</block>
-  <block id="a967d40ef247a202e5f1ce7a9626a0ca" category="list-text">を使用して、FIPSドライブまたはSEDにデータ認証キーを割り当てます<block ref="8fc59e93e98503b6d1b1230269b06192" prefix=" " category="inline-code"></block> コマンドを実行します</block>
-  <block id="551eb7af7cdc6ae3394d506bd47a783d" category="admonition">を使用できます<block ref="eb3cf23f0c9c60ca759ddca34bbfbf56" prefix=" " category="inline-code"></block> キーIDを表示するコマンド。</block>
-  <block id="6f44d6d36af2c0294f4e53a2e6947b94" category="list-text">を使用して、認証キーが割り当てられたことを確認します<block ref="46353f4e0bb2c136591c37c9eeedcf40" prefix=" " category="inline-code"></block> コマンドを実行します</block>
-  <block id="960bc5d7d199e0e148cd3dd0e517250d" category="list-text">プロンプトが表示されたら、管理証明書の情報を入力します。</block>
   <block id="037baf09c7ddcc7c38f81e7dbe35fa87" category="paragraph">システムにI/Oモジュールを追加するには、空きスロットのあるシステムに新しいI/Oモジュールを追加するか、フル装備のシステムでI/Oモジュールを新しいI/Oモジュールに交換します。</block>
   <block id="55f1569cdcfb82612fcf293f23db4f6f" category="list-text">を確認します<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> 新しい I/O モジュールが、お使いのシステムおよび実行中の ONTAP のバージョンと互換性があることを確認します。</block>
   <block id="6e4968851f4373ab9764e16cffb39389" category="list-text">複数のスロットが使用可能な場合は、でスロットの優先順位を確認します<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> また、お使いの I/O モジュールに最適なものを使用してください。</block>
@@ -6496,9 +6474,6 @@
   <block id="85445cdcf89edd32e9cf4cb8554898a3" category="image-alt">DRW A400 NVDIMM IEOPS 1009を交換してください</block>
   <block id="f5a5a95a5282486c3989ed932401b693" category="image-alt">DRW A900ケーブルコンソールスイッチコントローラIEOPS 953</block>
   <block id="0ea0d47e034118a7f063c35eaf67ebd2" category="list-text">ストレージ暗号化が有効になっている場合は、機能をリストアする必要があります。</block>
-  <block id="718ea359d9cc2d2bff619909d16ec537" category="admonition">コントローラがブートメニューに戻ります。</block>
-  <block id="a9cbabd3f42c5ad7f4796dbf5e384b08" category="list-text">コントローラをブートメニューでブートします。</block>
-  <block id="1e37c9a4ea44b0a302091f02c74564c1" category="admonition">管理証明書の情報が完了すると、コントローラがブートメニューに戻ります。</block>
   <block id="34dbbed571bcfe30f4b9897172116b74" category="list-text">ストレージをケーブル接続するには、を参照してください <block ref="4261ea2b75c295a1978f7924667f1c11" category="inline-xref-macro-rx"></block></block>
   <block id="90d49fcc83418b049803a1b2081f3c6b" category="list-text">システムのセットアップを完了するには、を参照してください <block ref="53346fef0c147b551f530d05bbad2e41" category="inline-xref-macro-rx"></block></block>
   <block id="14fa1a86493af188cbb574d402b31f1b" category="list-text">に戻ります <block ref="c67cdb63ab5b46180d9910dcb0f03689" category="inline-xref-macro-rx"></block> この手順 でNVMEM LEDを再確認します。</block>
@@ -7339,7 +7314,6 @@ storage failover modify -node local-auto-giveback false」と入力します
   <block id="ab18556462377223339c421c568ab231" category="paragraph"><block ref="ab18556462377223339c421c568ab231" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6b6e58fb741960f0300c7783438276a5" category="paragraph">ブートメディアの固定ツメ</block>
   <block id="fa8b2d8b91c1c89065d3652288dbddc1" category="list-text">次の図またはコントローラモジュールのFRUマップを使用して、メザニンカードを取り外します。</block>
-  <block id="c684d6ba7251084d87edf6423b1ebd24" category="list-text">メザニンカードベゼルをコントローラモジュールからまっすぐ引き出して取り外します。</block>
   <block id="d62aede9e33b9cbeca49d6fcc6de78c2" category="list-text">メザニンカードの取り付けネジを緩めます。</block>
   <block id="db1a320c26dfcefe739a659ae4724890" category="admonition">つまみネジは、指またはドライバで緩めることができます。指を使用する場合は、NVバッテリの横にある取り付けネジで指で購入しやすくするために、NVバッテリを上に回転させなければならない場合があります。</block>
   <block id="1a64138e0b66965c80b909462ba9543f" category="list-text">メザニンカードをまっすぐ持ち上げます。</block>
@@ -7350,7 +7324,6 @@ storage failover modify -node local-auto-giveback false」と入力します
   <block id="d29b17eb668c51029bfa0626ffe7500f" category="list-text">メザニンカードを再度取り付けます。</block>
   <block id="834f618686de8125c24ea965ba281757" category="list-text">マザーボードのソケットをメザニンカードのソケットに合わせ、カードをソケットに慎重に装着します。</block>
   <block id="361016e8b59dfa6e2e2f28d3e38835e1" category="list-text">メザニンカードの3本の取り付けネジを締めます。</block>
-  <block id="31276a19caaffd6d8a485978edefcae8" category="list-text">メザニンベゼルを再度取り付けます。</block>
   <block id="eef513f5198b93971d313eb80e4da6fb" category="list-text">コントローラモジュールのカバーを再度取り付け、所定の位置にロックします。</block>
   <block id="1aecc8a01c9fc90b26bed0f39865bc18" category="paragraph">イメージがインストールされたUSBフラッシュドライブを使用して、交換用ブートメディアにシステムイメージをインストールします。この手順の実行中にvarファイルシステムをリストアする必要があります。</block>
   <block id="4c10168d5e2592171ac54097149079b0" category="list-text">4GB以上の容量がある、MBR / FAT32にフォーマットされたUSBフラッシュドライブが必要です。</block>
@@ -7373,7 +7346,6 @@ storage failover modify -node local-auto-giveback false」と入力します
   <block id="cf6800eb49ae54456676c105c115a1fa" category="section-title">手順3：メザニンカードを交換します</block>
   <block id="6918dd1d1ecfa7a18a047a925c4f30ee" category="paragraph">メザニンカードを交換してください。</block>
   <block id="808ce573561d6717a3c0cc395df3a504" category="image-alt">DRW 2850はHIC IEOPS 700の代わりに使用します</block>
-  <block id="b98f82c68dbd20395815986320582ec2" category="paragraph">ライザーベゼル</block>
   <block id="83b54898f0ac014b1e217ee413643205" category="paragraph">PCIeメザニンカード</block>
   <block id="64016c063cf6b470fdcccc5a97f852b1" category="list-text">メザニンカードの取り付けネジを緩め、メザニンカードを真上に持ち上げます。</block>
   <block id="4bca5310f65e82fe5c4eec2c7a1c6c17" category="list-text">交換用メザニンカードプラグのソケットをマザーボードのソケットに合わせ、カードをソケットに対して垂直にそっと装着します。</block>
@@ -7383,8 +7355,6 @@ storage failover modify -node local-auto-giveback false」と入力します
   <block id="d32890221c5529cefc96a956073d9844" category="list-text">を使用して自動ギブバックをリストアします<block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix=" " category="inline-code"></block> コマンドを実行します</block>
   <block id="e2306cfc3634594ca9e5483d541a9eb2" category="doc">システムの完全なリストア- FAS2800</block>
   <block id="954e375575b9fbd9370aa08dd503d453" category="paragraph">NetAppストレージ暗号化またはボリューム暗号化の設定をリストアし（必要な場合）、交換用コントローラのライセンスをインストールし、障害が発生したパーツをNetAppに返却することで、システムを完全な運用状態にリストアします。手順については、キットに付属のRMA指示書を参照してください。</block>
-  <block id="ff3a1a304de699b15bd2a5a39798c5a8" category="section-title">手順 2 ：ストレージとボリュームの暗号化機能をリストアする</block>
-  <block id="332c846459ecae57b885b30c41482384" category="section-title">手順 3 ： LIF を確認してシリアル番号を登録する</block>
   <block id="458c640b6a96cac4ef20be523ebb7f89" category="doc">NVMEMバッテリを交換します- FAS2800</block>
   <block id="26e700524d9a1c0b6c28c8ad2d207679" category="section-title">手順2：コントローラモジュールを取り外して開きます</block>
   <block id="2a0805526339647b20ef0fc7df37dd6f" category="paragraph">コントローラモジュールを取り外して開きます。</block>
@@ -7420,8 +7390,6 @@ storage failover modify -node local-auto-giveback false」と入力します
   <block id="2549b95d18de43d1c8602f07ed634585" category="list-text">バッテリを交換用コントローラモジュールに移動して取り付けます。</block>
   <block id="350a3cd01c92197375fa1dd80773199d" category="admonition">バッテリのプラグはまだ差し込まないでください。  残りのコンポーネントを交換用コントローラモジュールに移動したら、プラグインします。</block>
   <block id="ba9da6f2122b24c495dd034a4a5ec818" category="section-title">ステップ3：メザニンカードを取り外します</block>
-  <block id="853a9f16e976ca6346fa38e81f8476a8" category="paragraph">障害のあるコントローラモジュールからメザニンベゼルとPCIeメザニンカードを取り外します。</block>
-  <block id="539df95ed4f8e5993f75e19be1a36f64" category="list-text">メザニンカードベゼルをコントローラモジュールからまっすぐ引き出して取り外します。</block>
   <block id="7bb524aff91b85838c807523fc1e4828" category="admonition">つまみネジは、指またはドライバで緩めることができます。</block>
   <block id="099cf7f6040f65b3c9d7fb3f7393d4c3" category="list-text">メザニンカードをまっすぐ上に持ち上げ、静電気防止処置を施した場所に置きます。</block>
   <block id="3356d87e196ed94acd2635f8d405e53f" category="paragraph">障害のあるコントローラモジュールからブートメディアを取り外し、交換用コントローラモジュールに取り付けます。</block>
@@ -7437,7 +7405,6 @@ storage failover modify -node local-auto-giveback false」と入力します
   <block id="a00bf690f9db0be90ea5ab9cde9db677" category="paragraph">交換用コントローラモジュールにメザニンカードを取り付けます。</block>
   <block id="507e7243ab4a1d0bdbfa4edd5c9733d3" category="list-text">メザニンカードをマザーボードのソケットに合わせます。</block>
   <block id="fc7fc35188ad3f7c32f3328839f4dff2" category="list-text">カードをそっと押し下げて、カードをソケットに装着します。</block>
-  <block id="803bc905348545eacfc8739f67ee6fc2" category="list-text">メザニンカードベゼルを再度取り付けます。</block>
   <block id="ec782fd2b49f0e4d6edd263c0d30d7f7" category="paragraph">障害のあるコントローラモジュールからDIMMを取り外し、交換用コントローラモジュールに取り付けます。</block>
   <block id="64b66263e264f63be40a6135bb7e5f04" category="image-alt">DRW 2850はDIMM IEOPS 699を交換します</block>
   <block id="2a7c25f4f62d559672aaa2da18086b65" category="paragraph">DIMMロックラッチ</block>
@@ -8380,7 +8347,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="d5fe92183ddfd6502c92a350a2928047" category="list-text">e0bからe0b
 <block ref="23c439b7ef31021d610e4d3b988f3cd1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="10fbfa6320d8e7c72e731fbd9a6e6c69" category="admonition">ディスクの再割り当てはNVRAMモジュールを交換する場合にのみ必要で、NVRAM DIMMの交換には該当しません。</block>
-  <block id="099f7b942e4e89631784891716949599" category="admonition">この手順は、NVRAM DIMMの交換には適用されません。</block>
   <block id="ce75c7b2bf3b15b7659cc85a9c36c6f8" category="admonition">プロンプトで、32文字のオンボードキー管理のパスフレーズを英数字で入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block></block>
   <block id="2f061f16ff1dc3668b0b979718bcf140" category="paragraph">プロンプトで、32文字のオンボードキー管理のパスフレーズを英数字で入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。</block>
   <block id="f44ae95a820a7e92672103acdefa1387" category="paragraph"><block ref="5e48dfc079c01fd7f817337abb01a320" prefix="" category="inline-code"></block></block>
@@ -8792,4 +8758,11 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="45c0f160ca0efa09fc0b198986db5e31" category="image-alt">DRW affa250スイッチクラストケーブル</block>
   <block id="5407ed45e4a9085a4f72a4611d202d7c" category="sidebar">ネットアップのNS224シェルフとSASシェルフは、デジタル変革に必要なパフォーマンス、耐障害性、柔軟性を提供します。</block>
   <block id="432ba2d883505b11fa27f305c25abca9" category="sidebar">ONTAPハードウェアシステムのドライブシェルフ</block>
+  <block id="4ab265d37ededf839a389d0b0bedcb7f" category="paragraph">30 cm</block>
+  <block id="70f83c59fcbb747c1a869b38caf783e3" category="list-text">環境変数が想定どおりに設定されていない場合は、<block ref="ac4028a4cb48838c0a22ab27fa6e6920" prefix=" " category="inline-code"></block> コマンドを実行します</block>
+  <block id="f0c3921d8aabdebf1548d35d830083d9" category="list-text">IOプレートをコントローラモジュールからまっすぐ引き出して取り外します。</block>
+  <block id="4dfabb2b4515ceefb323f4a3eb8d4a32" category="list-text">IOプレートを取り付け直します。</block>
+  <block id="ed991b7c3c7e4af5c89a603772f54dd1" category="paragraph">障害のあるコントローラモジュールからIOプレートとPCIeメザニンカードを取り外します。</block>
+  <block id="eeb8f13cb25825752e216fedcd65a6b1" category="paragraph">IOプレート</block>
+  <block id="c746ae924024283281476c33315a4598" category="list-text">IOプレートをコントローラモジュールからまっすぐ引き出して取り外します。</block>
 </blocks>

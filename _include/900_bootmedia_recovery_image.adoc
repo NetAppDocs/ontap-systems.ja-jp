@@ -73,7 +73,7 @@ date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state
 +
 .. 障害のあるコントローラに LOADER プロンプトを表示します。
 .. printenv コマンドを使用して ' 環境変数の設定を確認します
-.. 環境変数が正しく設定されていない場合は、 setenvenvironment_variable_name changed_value コマンドを使用して変更します。
+.. 環境変数が正しく設定されていない場合は 'setenv_environment_variable_name_changed_value_' コマンドを使用して変更します
 .. saveenv コマンドを使用して、変更内容を保存します。
 
 
