@@ -13,13 +13,13 @@ sidebar:
   - title: ONTAPハードウェアシステムのドキュメント
     url: "/index.html"
   - title: リリースノート
-    url: "/rel-notes.html"
-  - title: はじめに
     entries:
     - title: 新機能
       url: "/whats-new.html"
-    - title: 運用を開始
-      url: "/get-up-and-run.html"
+    - title: サポート終了
+      url: "/eoa-hardware.html"
+  - title: はじめに
+    url: "/get-up-and-run.html"
   - title: AFF Aシリーズシステム
     url: "/aff-aseries/index.html"
     entries:

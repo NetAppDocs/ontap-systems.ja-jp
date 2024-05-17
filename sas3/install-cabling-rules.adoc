@@ -90,7 +90,7 @@ FAS2800 HAペアの場合、外付けシェルフへのケーブル接続はシ�
 このマニュアルでは、スロットとスロットポートを次のように表記します。
 
 +
-image::../media/slot0_rules.png[slot0 ルール]
+image::../media/slot0_rules.png[slot and slot [ポートの表記法]]
 
 
 
@@ -116,7 +116,7 @@ image::../media/slot0_rules.png[slot0 ルール]
 
 
 
-image::../media/drw_shelf_to_shelf_standard.gif[DRW シェルフからシェルフ標準]
+image::../media/drw_shelf_to_shelf_standard.gif[ヒヨウシユンシエルフ/シエルフカンセツソク]
 
 
 
@@ -132,7 +132,7 @@ image::../media/drw_shelf_to_shelf_standard.gif[DRW シェルフからシェル�
 
 
 
-image::../media/drw_shelf_to_shelf_double_wide.gif[DRW シェルフからシェルフへの幅が 2 倍になっています]
+image::../media/drw_shelf_to_shelf_double_wide.gif[2倍幅シェルフ/シェルフ間接続]
 
 
 
@@ -164,7 +164,7 @@ IOM ポート 2 は、クアッドパス HA およびクアッドパス構成で
 
 次の図は、 1 つのクアッドポート HBA と 2 つのディスクシェルフスタックを使用したマルチパス HA 構成で、コントローラポート A とポート C がどのように接続されるかを示しています。スタック 1 への接続は青で示されています。スタック 2 への接続はオレンジで示されています。
 
-image::../media/drw_controller_to_stack_rules_ports_a_and_c_example.gif[ルールポート A と C をスタックする DRW コントローラの例]
+image::../media/drw_controller_to_stack_rules_ports_a_and_c_example.gif[内蔵ストレージを搭載していないプラットフォームでのコントローラAとCのポート接続ルール]
 
 
 
@@ -183,7 +183,7 @@ IOM ポート 4 は、クアッドパス HA およびクアッドパス構成で
 
 次の図は、 1 つのクアッドポート HBA と 2 つのディスクシェルフスタックを使用したマルチパス HA 構成で、コントローラポート B とポート D がどのように接続されるかを示しています。スタック 1 への接続は青で示されています。スタック 2 への接続はオレンジで示されています。
 
-image::../media/drw_controller_to_stack_rules_ports_b_and_d_example.gif[DRW コントローラからスタックルールポート b および d の例]
+image::../media/drw_controller_to_stack_rules_ports_b_and_d_example.gif[内蔵ストレージを搭載していないプラットフォームでのコントローラBとDのポートの接続ルール]
 
 
 
@@ -211,7 +211,7 @@ SAS の A ポートと C ポートはスタック内の論理的に最初のシ�
 
 .. リストの最初のポートが末尾に移動するように、 D および B のポートリストを書き換えます。
 +
-例： image:../media/drw_gen_sas_cable_step2.png[""]
+例： image:../media/drw_gen_sas_cable_step2.png["DポートとBポートのリストを書き換える"]
 
 +
 複数の SAS ポートスロットが使用可能な場合は、スロットの順序を 1 つずつオフセットして、複数のスロット（物理 PCI スロットとオンボードスロット）にポートペアを分散することで、あるスタックが 1 つの SAS HBA にケーブル接続されないようにします。
@@ -240,7 +240,7 @@ NOTE: HA ペアの場合、最初のコントローラ用に識別したポー�
 たとえば、システムに対して 6 つのポートペアを識別し、マルチパスでケーブル接続するスタックが 3 つある場合は、リストに含まれる他のすべてのポートペアをケーブル接続します。
 
 +
-image::../media/drw_portpair_connection_rules_list_skip.gif[DRW ポートペア接続ルールリストはスキップされます]
+image::../media/drw_portpair_connection_rules_list_skip.gif[ポートペアをスキップするオプション]
 
 +
 
@@ -290,7 +290,7 @@ NOTE: 0b/0b1ポートを正しいドメインに接続しないと（ドメイ�
 
 次の図は、シェルフの外部スタックへの内蔵ストレージポート（0b/0b1）のドメイン接続を示しています。
 
-image::../media/drw_fas2600_mpha_domain_example_IEOPS-1172.svg[DRW fas2600 mphaドメイン例IEOPS 1172]
+image::../media/drw_fas2600_mpha_domain_example_IEOPS-1172.svg[内蔵ストレージポート0b/0b1ドメイン接続]
 
 
 
@@ -307,7 +307,7 @@ FAS2800 HAペアでは、トライパスHA接続を使用できます。トラ�
 
 次の図は、コントローラの内部接続と、トライパスHA接続を実現する外部ケーブル接続を示しています。
 
-image::../media/drw_fas2800_concept_tpha_IEOPS-950.svg[DRW fas2800 concept tpha IEOPS 950]
+image::../media/drw_fas2800_concept_tpha_IEOPS-950.svg[トライパスHA接続]
 
 FAS2800の外付けSASポート：
 
@@ -316,7 +316,7 @@ FAS2800の外付けSASポート：
 * 0b2ポートは使用されません。無効になっています。ケーブルが接続されている場合は、エラーメッセージが生成されます。
 
 
-image::../media/drw_sas3_ports_on_fas2800_IEOPS-946 (1).svg[fas2800 IEOPS 946のDRW SAS3ポート（1）]
+image::../media/drw-sas3-ports-on-fas2800.svg[fas2800のDRW SAS3ポート]
 
 FAS2800 HAペアのケーブル接続例は、を参照してください link:install-cabling-worksheets-examples-fas2600.html["内蔵ストレージを搭載したプラットフォームのコントローラ/スタック間のケーブル接続ワークシートとケーブル接続例"] セクション。
 
