@@ -316,7 +316,7 @@ FAS2800の外付けSASポート：
 * 0b2ポートは使用されません。無効になっています。ケーブルが接続されている場合は、エラーメッセージが生成されます。
 
 
-image::../media/drw-sas3-ports-on-fas2800.svg[fas2800のDRW SAS3ポート]
+image::../media/drw_sas3_ports_on_fas2800_IEOPS-946.svg[FAS2800の外付けSASポート]
 
 FAS2800 HAペアのケーブル接続例は、を参照してください link:install-cabling-worksheets-examples-fas2600.html["内蔵ストレージを搭載したプラットフォームのコントローラ/スタック間のケーブル接続ワークシートとケーブル接続例"] セクション。
 

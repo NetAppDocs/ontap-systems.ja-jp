@@ -8742,8 +8742,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="bf7080fa51742670c142cfdf8d73846d" category="image-alt">ポートペアをスキップするオプション</block>
   <block id="c89ad601d530f2912af428762ab2c116" category="image-alt">内蔵ストレージポート0b/0b1ドメイン接続</block>
   <block id="d92309c4fbff10ebdb4237d6a87fe7b6" category="image-alt">トライパスHA接続</block>
-  <block id="468bc64c7e6d21f618a8c0a4186b734c" category="image-alt">fas2800のDRW SAS3ポート</block>
   <block id="a0bdeb39cc6a9364f3559ad9a77e2a71" category="summary">AFF、ASA、FASシステムの新機能と、サポートが終了したレガシーハードウェアについて説明します。</block>
   <block id="5aa9a0e12c17de73e420b615315f7453" category="paragraph">ONTAP 9リリースの既知の問題、制限事項、およびアップグレードに関する注意事項の詳細については、『<block ref="84fe5db170ffeba3db16dd5c6d7a58db" category="inline-link-rx"></block>。リリースノートにアクセスするには、NetAppアカウントでサインインするか、アカウントを作成する必要があります。</block>
   <block id="d1f3a81423106ee57c19f4fc60f797ca" category="sidebar">サポート終了</block>
+  <block id="3709879cf4b397082ed4cccaa4fc0561" category="image-alt">FAS2800の外付けSASポート</block>
 </blocks>
