@@ -4,15 +4,16 @@ sidebar: sidebar
 keywords: sas3, shelves, shelf, sas3 shelves, drive, aggregate, shelf maintenance 
 summary: SAS3シェルフのメンテナンスの概要。 
 ---
-= シェルフメンテナンスの概要- SAS3シェルフ
+= シェルフのメンテナンスの概要- SASシェルフ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-SAS3シェルフを保守するには、次の操作を実行します。
+SASシェルフをメンテナンスするには、次の操作を実行します。
 
+* link:hot-add-drive.html["ドライブのホットアド"]
 * link:cold-replace-shelf.html["シェルフのコールド交換"]
 * link:hot-remove-shelf.html["シェルフをホットリムーブする"]
 * link:service-monitor-leds.html["シェルフLEDの監視"]

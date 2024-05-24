@@ -1,0 +1,16 @@
+---
+permalink: sas3/hot-add-drive.html 
+sidebar: sidebar 
+keywords: sas3, shelves, shelf, sas3 shelves, hot-add, drive 
+summary: I/O処理中も、電源がオンになっているシェルフに新しいドライブを無停止で追加できます。 
+---
+= ドライブのホットアド- SASシェルフ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I/O処理中も、電源がオンになっているシェルフに新しいドライブを無停止で追加できます。
+
+NetAppナレッジベースの記事を使用する https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/Best_practices_for_adding_disks_to_an_existing_shelf_or_cluster["既存のシェルフまたはクラスタにディスクを追加する場合のベストプラクティス"^]。

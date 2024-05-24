@@ -8632,7 +8632,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="407685da96fd9ced3310d7d46ae6df51" category="doc">IOM12 / IOM12Bモジュールを搭載したシェルフシェルフのコールドリプレース</block>
   <block id="ec2ab707a85ae3f8634491d0876e34c6" category="paragraph">ディスクを使用している本番用システムでドライブシェルフを交換する場合は、コールドシェルフを交換する必要があります。これは、システム停止を伴う手順です。HAペアのコントローラを停止する必要があります。</block>
   <block id="b70986af2d94261df69e2141b1a928cf" category="inline-link">コールドシェルフの取り外し手順を使用したシェルフシャーシの交換方法</block>
-  <block id="9bfe0b1ca930a33b763298ba44f6db91" category="paragraph">技術情報アーティクルを使用する<block ref="0ce7a268461a7f9e86d34962088e7dcd" category="inline-link-rx"></block>。</block>
   <block id="3946a95173cf2872b6b6e8309352d61b" category="inline-link">NS224 NVMeドライブシェルフケーブル接続ガイド</block>
   <block id="29c2f32397b266395d18c9814ee2c641" category="paragraph"><block ref="29c2f32397b266395d18c9814ee2c641" category="inline-link-rx"></block></block>
   <block id="5932d352036c33399a3ddcba5a995002" category="summary">NS224ドライブシェルフはコールド交換できます。</block>
@@ -8698,8 +8697,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6839d8dc991c3da89b9b3b916fde2b7b" category="doc">シェルフメンテナンスの概要- NS224シェルフ</block>
   <block id="79a918585a1d94a22b468960e11e9174" category="paragraph">NS224シェルフを保守するには、次の操作を実行します。</block>
   <block id="4ad47736772386e98b3765035e4ccc77" category="summary">SAS3シェルフのメンテナンスの概要。</block>
-  <block id="87504c530521bba0db07c8180af8e3cb" category="doc">シェルフメンテナンスの概要- SAS3シェルフ</block>
-  <block id="c74c43788d9279fa623b9982f6dc6df0" category="paragraph">SAS3シェルフを保守するには、次の操作を実行します。</block>
   <block id="9db4c90afc251da112cecabb2b945f1a" category="sidebar">シェルフメンテナンスの概要</block>
   <block id="8eb5d7e14f078213436247ba24450689" category="summary">AFF、ASA、およびFASシステムの運用を開始するには、ONTAPでハードウェアコンポーネントを取り付け、ハードウェアをケーブル接続し、ストレージを設定します。</block>
   <block id="96a3941fc07feefba651e74e742d6638" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> スイッチの設置</block>
@@ -8746,4 +8743,15 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5aa9a0e12c17de73e420b615315f7453" category="paragraph">ONTAP 9リリースの既知の問題、制限事項、およびアップグレードに関する注意事項の詳細については、『<block ref="84fe5db170ffeba3db16dd5c6d7a58db" category="inline-link-rx"></block>。リリースノートにアクセスするには、NetAppアカウントでサインインするか、アカウントを作成する必要があります。</block>
   <block id="d1f3a81423106ee57c19f4fc60f797ca" category="sidebar">サポート終了</block>
   <block id="3709879cf4b397082ed4cccaa4fc0561" category="image-alt">FAS2800の外付けSASポート</block>
+  <block id="684a3c483281d887c3d3be6f2fec0dee" category="inline-link-macro">ドライブのホットアド</block>
+  <block id="0981347849054d7973149d23c4187aa8" category="list-text"><block ref="0981347849054d7973149d23c4187aa8" category="inline-link-macro-rx"></block></block>
+  <block id="fd6333b3a15bf4ff3d4a25db6d99ea06" category="paragraph">NetAppナレッジベースの記事を使用する<block ref="0ce7a268461a7f9e86d34962088e7dcd" category="inline-link-rx"></block>。</block>
+  <block id="b1acc3668afb9014f44281694ae06824" category="summary">I/O処理中も、電源がオンになっているシェルフに新しいドライブを無停止で追加できます。</block>
+  <block id="68bab7572a161f11853ff30476a32e76" category="doc">ドライブのホットアド- NS224シェルフ</block>
+  <block id="4c8c4b22ca17117dae583f0c094d9eed" category="inline-link">既存のシェルフまたはクラスタにディスクを追加する場合のベストプラクティス</block>
+  <block id="daf4bbdefc995283fd259f0a85f2206e" category="paragraph">NetAppナレッジベースの記事を使用する<block ref="d77269536bcca9e0e9d3e1016828b4c0" category="inline-link-rx"></block>。</block>
+  <block id="b7a6ae7b0390fcc46b05224bb591437e" category="doc">シェルフのメンテナンスの概要- SASシェルフ</block>
+  <block id="3336aa3ff360375747634c1e3385684b" category="paragraph">SASシェルフをメンテナンスするには、次の操作を実行します。</block>
+  <block id="db84f3feadfa946e6f025822cc6bb942" category="doc">ドライブのホットアド- SASシェルフ</block>
+  <block id="532733c728150f3f848affd8d9840374" category="sidebar">ドライブのホットアド</block>
 </blocks>

@@ -13,6 +13,7 @@ summary: NS224シェルフのメンテナンスの概要
 [role="lead"]
 NS224シェルフを保守するには、次の操作を実行します。
 
+* link:hot-add-drive.html["ドライブのホットアド"]
 * link:cold-replace-shelf.html["シェルフのコールド交換"]
 * link:hot-remove-shelf.html["シェルフをホットリムーブする"]
 * link:service-monitor-leds.html["シェルフLEDの監視"]
