@@ -5757,8 +5757,6 @@
   <block id="f24bbd8bd23b87a9a7d8b466f2edd685" category="list-text">ドライブをホットスワップする前に、 Disk Qualification Package （ DQP ）の最新バージョンをインストールすることを推奨します。</block>
   <block id="38b15850492133a635d50ad8448e62b9" category="list-text">ディスクのホットスワップ方法は、ディスクドライブの使用方法によって異なります。SED 認証が有効になっている場合は、に記載されている SED の交換手順を使用する必要があります<block ref="fc87e4868a863f484cb32d2391c4aa0d" category="inline-link-rx"></block>。SED の交換前後に行う必要のある作業についても説明しています。</block>
   <block id="6e3d311e755c860fa8be4786c7ffe617" category="list-text">交換用ドライブがプラットフォームでサポートされている必要があります。を参照してください<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block>。</block>
-  <block id="455e7132916e2cfdc2ed81e21742458e" category="paragraph">&lt;stdin&gt; で未解決のディレクティブ : ../ _include/drive_hotswap _sas .adoc[]</block>
-  <block id="ed6243b9da8cbb52d7ded5d7a78d3b37" category="paragraph">&lt;stdin&gt; で未解決のディレクティブ : ../ _include/drive_hotswap _sas .adoc.adoc[]</block>
   <block id="2bed99b4660dcf909368c3a2ae62b513" category="doc">SSD ドライブまたは HDD ドライブを交換してください - AFF A800</block>
   <block id="ad451e1c6a6a584f53b88b5c73144db7" category="doc">その他のモデル</block>
   <block id="03be12a0476133b21cb6c1c927956d23" category="doc">SSD ドライブまたは HDD ドライブを交換します - AFF A220 および FAS2700</block>
@@ -8687,7 +8685,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5407ed45e4a9085a4f72a4611d202d7c" category="sidebar">ネットアップのNS224シェルフとSASシェルフは、デジタル変革に必要なパフォーマンス、耐障害性、柔軟性を提供します。</block>
   <block id="432ba2d883505b11fa27f305c25abca9" category="sidebar">ONTAPハードウェアシステムのドライブシェルフ</block>
   <block id="4ab265d37ededf839a389d0b0bedcb7f" category="paragraph">30 cm</block>
-  <block id="70f83c59fcbb747c1a869b38caf783e3" category="list-text">環境変数が想定どおりに設定されていない場合は、<block ref="ac4028a4cb48838c0a22ab27fa6e6920" prefix=" " category="inline-code"></block> コマンドを実行します</block>
   <block id="f0c3921d8aabdebf1548d35d830083d9" category="list-text">IOプレートをコントローラモジュールからまっすぐ引き出して取り外します。</block>
   <block id="4dfabb2b4515ceefb323f4a3eb8d4a32" category="list-text">IOプレートを取り付け直します。</block>
   <block id="ed991b7c3c7e4af5c89a603772f54dd1" category="paragraph">障害のあるコントローラモジュールからIOプレートとPCIeメザニンカードを取り外します。</block>
@@ -8754,4 +8751,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3336aa3ff360375747634c1e3385684b" category="paragraph">SASシェルフをメンテナンスするには、次の操作を実行します。</block>
   <block id="db84f3feadfa946e6f025822cc6bb942" category="doc">ドライブのホットアド- SASシェルフ</block>
   <block id="532733c728150f3f848affd8d9840374" category="sidebar">ドライブのホットアド</block>
+  <block id="0a2a423f4439c54ecca356a8fb8eb51a" category="sidebar">ASA A900 I/Oモジュール</block>
+  <block id="dc0e78bb347a9452f2f910586b57cb0e" category="sidebar">FAS9000 I/Oモジュール</block>
+  <block id="774c0226814e0f61e839b7a7ba1bf4ee" category="sidebar">FAS9500 I/Oモジュール</block>
+  <block id="1f07f30ffd2c12b9cf3727d864face5b" category="sidebar">AFF A700 I/Oモジュール</block>
+  <block id="7c5471ad0d8503f56474b0e9d10bff2a" category="sidebar">AFF A900 I/Oモジュール</block>
 </blocks>

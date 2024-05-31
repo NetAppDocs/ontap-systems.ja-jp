@@ -195,7 +195,7 @@ mcc1A::> metrocluster operation show
 image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取り外し]
 
 +
-[cols="10,90"]
+[cols="10a,90a"]
 |===
 
 
@@ -208,7 +208,9 @@ image:../media/legend_icon_01.png["番号1"]
 
  a| 
 image:../media/legend_icon_02.png["番号2"]
-| コントローラがシャーシからわずかに引き出されます 
+ a| 
+コントローラがシャーシからわずかに引き出されます
+
 |===
 . コントローラモジュールをシャーシから引き出します。
 +
@@ -304,7 +306,7 @@ NOTE: 下のスロットにカードを取り付けてもカードソケット�
 video::e3fd32b6-bdbb-4c53-b666-b030018a5744[panopto]
 image::../media/drw_A400_Replace-mezz-card.png[DRW A400 メザニンカードの交換]
 
-[cols="10,90"]
+[cols="10a,90a"]
 |===
 
 
@@ -324,7 +326,9 @@ image:../media/legend_icon_02.png["番号2"]
 
  a| 
 image:../media/legend_icon_03.png["番号3"]
-| ライザーカード 
+ a| 
+ライザーカード
+
 |===
 . ライザー 3 （スロット 4 と 5 ）を取り外します。
 +

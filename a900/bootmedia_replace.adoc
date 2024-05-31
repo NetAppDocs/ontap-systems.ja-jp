@@ -6,6 +6,8 @@ summary: コントローラモジュールを取り外して開き、コント�
 ---
 = コントローラを取り外し、ブートメディアを交換して、ブートイメージ AFF A900 を転送します
 :allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
 
 
 [role="lead"]

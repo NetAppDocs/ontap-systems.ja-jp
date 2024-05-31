@@ -6,6 +6,8 @@ summary: コントローラモジュールを取り外して開き、コント�
 ---
 = ブートメディアの交換- ASA A900
 :allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
 
 
 [role="lead"]

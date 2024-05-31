@@ -7,7 +7,7 @@ summary: AFF、ASA、およびFASシステムの運用を開始するには、ON
 = AFF、ASA、FASストレージシステムのセットアップと実行
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

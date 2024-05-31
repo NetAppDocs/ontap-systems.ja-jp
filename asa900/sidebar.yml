@@ -68,6 +68,7 @@ entries:
   - title: ファン
     url: "/asa900/fan_swap_out.html"
   - title: I/O モジュール
+    pdf-filename: ASA A900 I/Oモジュール
     entries:
     - title: I/Oモジュールの交換
       url: "/asa900/pci_cards_and_risers_replace.html"

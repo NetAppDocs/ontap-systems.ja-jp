@@ -7,10 +7,7 @@ summary: ドライブシェルフコンポーネントのLEDの場所とステ�
 = ドライブシェルフのLED監視- NS224シェルフ
 :allow-uri-read: 
 :icons: font
-:firstname: both:imagesdir: ../media/
-:author: both:imagesdir: ../media/
-:authorinitials: b
-:authors: both:imagesdir: ../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

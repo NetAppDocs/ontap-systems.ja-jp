@@ -74,6 +74,7 @@ entries:
   - title: ファン
     url: "/a700/fan-swap-out.html"
   - title: I/O モジュール
+    pdf-filename: AFF A700 I/Oモジュール
     url: "/a700/pci-cards-and-risers-replace.html"
   - title: LED USB モジュール
     url: "/a700/led-module-replace.html"

@@ -70,6 +70,7 @@ entries:
   - title: ファン
     url: "/fas9500/fan_swap_out.html"
   - title: I/O モジュール
+    pdf-filename: FAS9500 I/Oモジュール
     entries:
     - title: 交換してください
       url: "/fas9500/pci_cards_and_risers_replace.html"

@@ -38,7 +38,7 @@ video::ca74d345-e213-4390-a599-aae10019ec82[panopto]
 image:../media/drw_A400_Remove_controller.png[""]
 
 +
-[cols="10,90"]
+[cols="10a,90a"]
 |===
 
 
@@ -51,7 +51,9 @@ image:../media/legend_icon_01.png["番号1"]
 
  a| 
 image:../media/legend_icon_02.png["番号2"]
-| コントローラがシャーシからわずかに引き出されます 
+ a| 
+コントローラがシャーシからわずかに引き出されます
+
 |===
 . コントローラモジュールをシャーシから引き出します。
 +
