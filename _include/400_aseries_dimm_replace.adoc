@@ -175,7 +175,7 @@ mcc1A::> metrocluster operation show
 
 .アニメーション-コントローラモジュールを取り外します
 video::ca74d345-e213-4390-a599-aae10019ec82[panopto]
-image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取り外し]
+image::../media/drw_A400_Remove_controller.png[コントロオラモシユウルノカイホウ]
 
 [cols="10a,90a"]
 |===
@@ -225,7 +225,7 @@ NOTE: アニメーションと図は、 DIMM のないソケットの空きス�
 
 .アニメーション-システムDIMMを交換します
 video::175c6597-449e-4dc8-8c02-aad9012f08b5[panopto]
-image::../media/drw_A400_Replace-NVDIMM-DIMM.png[DRW A400 NVDIMM DIMM の交換]
+image::../media/drw_A400_Replace-NVDIMM-DIMM.png[DIMM の移動]
 
 [cols="10,90"]
 |===
@@ -292,7 +292,7 @@ NOTE: DIMM がスロットにまっすぐ差し込まれていることを目で
 
 .アニメーション-コントローラモジュールを設置します
 video::0310fe80-b129-4685-8fef-ab19010e720a[panopto]
-image::../media/drw_A400_Install_controller_source.png[DRW A400 コントローラソースの取り付け]
+image::../media/drw_A400_Install_controller_source.png[コントローラの取り付け]
 
 [cols="10,90"]
 |===

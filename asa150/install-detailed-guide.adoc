@@ -65,7 +65,7 @@ X6566B-05-R6 （ 112-00297 ）、 0.5m
 
 X6566B-2-R6 （ 112-00299 ）、 2m
  a| 
-image:../media/oie_cable_sfp_gbe_copper.png[""]
+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP銅線コネクタ"]
  a| 
 クラスタインターコネクトネットワーク
 
@@ -80,7 +80,7 @@ image:../media/oie_cable_sfp_gbe_copper.png[""]
 
 X6566B-5-R6 （ 112-00301 ）、 5m
  a| 
-image:../media/oie_cable_sfp_gbe_copper.png[""]
+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP銅線コネクタ"]
  a| 
 データ
 
@@ -108,7 +108,7 @@ Cat 6 、 RJ-45 （注文内容による）
 
 X6562-R6 （ 112-00196 ）、 5m
  a| 
-image:../media/oie_cable_rj45.png[""]
+image:../media/oie_cable_rj45.png["RJ-45ケーブルコネクタ"]
  a| 
 管理ネットワークとイーサネットデータ
 
@@ -125,7 +125,7 @@ X66032A （ 112-00437 ）、 2m
 
 X66033A (112-00438) 、 3m
  a| 
-image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[""]
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS - Mini-SASコネクタ"]
  a| 
 ストレージ
 
@@ -147,7 +147,7 @@ Windows または Mac 以外のラップトップ / コンソールでソフト�
  a| 
 該当なし
  a| 
-image:../media/oie_cable_power.png[""]
+image:../media/oie_cable_power.png["電源ケーブル"]
  a| 
 システムの電源をオンにします
 
@@ -169,11 +169,11 @@ image:../media/oie_cable_power.png[""]
 NOTE: システムの重量に関連する安全上の注意事項を確認しておく必要があります。
 
 +
-image::../media/drw_oie_fas2700_weight_caution.png[DRW OIE fas2700 重量に関する注意]
+image::../media/drw_oie_fas2700_weight_caution.png[2人で持ち上げる場合の注意]
 
 . ケーブルマネジメントデバイスを取り付けます（図を参照）。
 +
-image::../media/drw_cable_management_arm_install.png[DRW ケーブルマネジメントアーム取り付け]
+image::../media/drw_cable_management_arm_install.png[ケーブルマネジメントデバイスの接続]
 
 . システムの前面にベゼルを配置します。
 
@@ -195,7 +195,7 @@ image::../media/drw_cable_management_arm_install.png[DRW ケーブルマネジ�
 .作業を開始する前に
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
 
-image::../media/oie_cable_pull_tab_down.png[OIE ケーブルのプルタブを下に引きます]
+image::../media/oie_cable_pull_tab_down.png[下部にプルタブ付きケーブルコネクタ]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -206,13 +206,13 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 UTA2データネットワーク構成::
 +
 --
-image::../media/drw_2700_tnsc_unified_network_cabling_animated_gif.png[DRW 2700 TNSC ユニファイドネットワークケーブルのアニメーション GIF]
+image::../media/drw_2700_tnsc_unified_network_cabling_animated_gif.png[ユニファイドネットワーク構成での2ノードスイッチレスクラスタのケーブル接続]
 
 --
 イーサネットネットワーク構成::
 +
 --
-image::../media/drw_2700_tnsc_ethernet_network_cabling_animated_gif.png[DRW 2700 TNSC イーサネットネットワークケーブル配線のアニメーション GIF]
+image::../media/drw_2700_tnsc_ethernet_network_cabling_animated_gif.png[2ノードスイッチレスネットワークのケーブル接続]
 
 --
 
@@ -220,7 +220,9 @@ image::../media/drw_2700_tnsc_ethernet_network_cabling_animated_gif.png[DRW 2700
 各コントローラモジュールで次の手順を実行します。
 
 .手順
-. クラスタインターコネクトケーブルを使用して、クラスタインターコネクトポートe0aとe0a、e0bとe0bを接続します。[+]image:../media/drw_c190_u_tnsc_clust_cbling.png[""]
+. クラスタインターコネクトケーブルを使用して、クラスタインターコネクトポートe0aとe0a、e0bとe0bを接続します。
+ [+]
+image:../media/drw_c190_u_tnsc_clust_cbling.png["クラスタインターコネクトのケーブル接続"]
 . 次のいずれかを実行します。
 +
 UTA2データネットワーク構成:: 次のいずれかのタイプのケーブルを使用して、UTA2データポートをホストネットワークにケーブル接続します。
@@ -240,14 +242,14 @@ image:../media/drw_c190_u_fc_10gbe_cbling.png["説明が付随しているデー
 イーサネットネットワーク構成:: Cat 6 RJ45ケーブルを使用して、e0c~e0fポートをホストネットワークに接続します。次の図に示します。
 +
 --
-image:../media/drw_c190_e_rj45_cbling.png[""]
+image:../media/drw_c190_e_rj45_cbling.png["ホストネットワークのケーブル接続"]
 
 --
 
 
 . RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
 +
-image:../media/drw_c190_u_mgmt_cbling.png[""]
+image:../media/drw_c190_u_mgmt_cbling.png["管理ポートのケーブル接続"]
 
 
 
@@ -262,7 +264,7 @@ IMPORTANT: この時点ではまだ電源コードをプラグに接続しない
 .作業を開始する前に
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
 
-image::../media/oie_cable_pull_tab_down.png[OIE ケーブルのプルタブを下に引きます]
+image::../media/oie_cable_pull_tab_down.png[下部にプルタブ付きケーブルコネクタ]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -273,13 +275,13 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 ユニファイドネットワークのケーブル配線::
 +
 --
-image::../media/drw_2700_switched_unified_network_cabling_animated_gif.png[DRW 2700 スイッチドユニファイドネットワークケーブルのアニメーション GIF]
+image::../media/drw_2700_switched_unified_network_cabling_animated_gif.png[スイッチクラスタユニファイドネットワークのケーブル接続]
 
 --
 イーサネットネットワークのケーブル配線::
 +
 --
-image::../media/drw_2700_switched_ethernet_network_cabling_animated_gif.png[DRW 2700 スイッチドイーサネットネットワークケーブル配線アニメーション GIF]
+image::../media/drw_2700_switched_ethernet_network_cabling_animated_gif.png[スイッチドイーサネットのケーブル接続]
 
 --
 
@@ -289,7 +291,7 @@ image::../media/drw_2700_switched_ethernet_network_cabling_animated_gif.png[DRW 
 .手順
 . 各コントローラモジュールで、クラスタインターコネクトケーブルを使用してe0aとe0bをクラスタインターコネクトスイッチに接続します。
 +
-image:../media/drw_c190_u_switched_clust_cbling.png[""]
+image:../media/drw_c190_u_switched_clust_cbling.png["クラスタインターコネクトのケーブル接続"]
 
 . 次のいずれかを実行します。
 +
@@ -310,14 +312,14 @@ image:../media/drw_c190_u_fc_10gbe_cbling.png["説明が付随しているデー
 イーサネットネットワーク構成:: Cat 6 RJ45ケーブルを使用して、e0c~e0fポートをホストネットワークに接続します。
 +
 --
-image:../media/drw_c190_e_rj45_cbling.png[""]
+image:../media/drw_c190_e_rj45_cbling.png["ホストネットワークのケーブル接続"]
 
 --
 
 
 . RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
 +
-image:../media/drw_c190_u_mgmt_cbling.png[""]
+image:../media/drw_c190_u_mgmt_cbling.png["管理ポートのケーブル接続"]
 
 
 
@@ -339,7 +341,7 @@ SAS テープドライブがある場合は、シングルパスケーブル接�
 
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
 
-image::../media/oie_cable_pull_tab_down.png[OIE ケーブルのプルタブを下に引きます]
+image::../media/oie_cable_pull_tab_down.png[下部にプルタブ付きケーブルコネクタ]
 
 .手順
 . 外付けドライブシェルフとHAペアをケーブル接続します。
@@ -354,7 +356,7 @@ image::../media/drw_a150_ha_storage_cabling_IEOPS-1032.svg[DRW a150 HAストレ�
 ** IOM A のポート 3 と直下のシェルフにある IOM A のポート 1
 ** IOM B のポート 3 と直下のシェルフにある IOM B のポート 1
 +
-image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[""] mini-SAS HD 間ケーブル
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS - Mini-SASコネクタ"]     mini-SAS HD 間ケーブル
 
 
 
@@ -363,14 +365,15 @@ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[""] mini-SAS HD 間ケ�
 ** コントローラ 1 のポート 0b とスタックの最後のドライブシェルフにある IOM A のポート 3
 ** コントローラ 2 のポート 0a とスタックの最初のドライブシェルフにある IOM A のポート 1
 +
-image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[""] mini-SAS HD 間ケーブル
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS - Mini-SASコネクタ"]     mini-SAS HD 間ケーブル
 
 
 
 . 各ノードをスタック内の IOM B に接続します
 +
 ** コントローラ 1 のポート 0a とスタックの最初のドライブシェルフにある IOM B のポート 1
-** コントローラ 2 のポート 0b とスタックの最後のドライブシェルフにある IOM B のポート 3image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[""] mini-SAS HD 間ケーブル
+** コントローラ 2 のポート 0b とスタックの最後のドライブシェルフにある IOM B のポート 3
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS - Mini-SASコネクタ"]     mini-SAS HD 間ケーブル
 
 
 
@@ -397,7 +400,7 @@ video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
 . 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
 . 両方のノードの電源スイッチをオンにします。
 +
-image::../media/drw_turn_on_power_switches_to_psus.png[DRW 電源スイッチをオンにして PSU に切り替えます]
+image::../media/drw_turn_on_power_switches_to_psus.png[電源の投入]
 
 +
 
@@ -413,7 +416,7 @@ NOTE: 初回のブートには最大 8 分かかる場合があります。
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 . 検出する ONTAP アイコンを選択します。
 +
-image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コントローラ選択]
+image::../media/drw_autodiscovery_controler_select.png[ONTAPアイコンの選択]
 
 +
 .. エクスプローラを開きます。
@@ -455,11 +458,11 @@ System Manager が開きます。
 
 .. ラップトップまたはコンソールにコンソールケーブルを接続し、システムに付属のコンソールケーブルを使用してコントローラのコンソールポートに接続します。
 +
-image::../media/drw_console_connect_fas2700_affa200.png[DRW コンソール接続 fas2700 affa200]
+image::../media/drw_console_connect_fas2700_affa200.png[コンソールポートへの接続]
 
 .. ラップトップまたはコンソールを管理サブネット上のスイッチに接続します。
 +
-image::../media/drw_client_to_mgmt_subnet_fas2700_affa220.png[DRW クライアントから mgmt サブネット fas2700 affa220]
+image::../media/drw_client_to_mgmt_subnet_fas2700_affa220.png[管理サブネットへの接続]
 
 .. 管理サブネット上の TCP / IP アドレスをラップトップまたはコンソールに割り当てます。
 
@@ -471,7 +474,7 @@ video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
 . 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
 . 両方のノードの電源スイッチをオンにします。
 +
-image::../media/drw_turn_on_power_switches_to_psus.png[DRW 電源スイッチをオンにして PSU に切り替えます]
+image::../media/drw_turn_on_power_switches_to_psus.png[電源の投入]
 
 +
 
@@ -508,7 +511,7 @@ NOTE: PuTTY の設定方法がわからない場合は、ラップトップま�
 .. ブラウザでノード管理 IP アドレスを指定します。
 +
 
-NOTE: アドレスの形式はです https://x.x.x.x[]。
+NOTE: アドレスの形式は、 +https://x.x.x.x.+ です
 
 .. で収集したデータを使用してシステムを設定します https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"]。
 

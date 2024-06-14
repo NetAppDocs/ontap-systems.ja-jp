@@ -187,11 +187,11 @@ mcc1A::> metrocluster operation show
 
 . ケーブルマネジメントデバイスをコントローラモジュールの右側と左側から取り外し、脇に置きます。
 +
-image::../media/drw_32xx_cbl_mgmt_arm.png[DRW 32xx CBL mgmt arm （ DRW 32xx CBL 管理アーム]
+image::../media/drw_32xx_cbl_mgmt_arm.png[ケーブルマネジメントアームの取り外し[]]
 
 . コントローラモジュールのカムハンドルの取り付けネジを緩めます。
 +
-image::../media/drw_8020_cam_handle_thumbscrew.png[DRW 8020 カムハンドルの取り付けネジ]
+image::../media/drw_8020_cam_handle_thumbscrew.png[取り付けネジを緩めてカムハンドルを開く]
 
 +
 [cols="1,3"]
@@ -224,7 +224,7 @@ PCIe カードを交換するには、コントローラ内で PCIe カードの
 . コントローラモジュールのサイドパネルにある取り付けネジを緩めます。
 . コントローラモジュールからサイドパネルを取り外します。
 +
-image::../media/drw_rxl_pcie.png[DRW rxl PCIe]
+image::../media/drw_rxl_pcie.png[PCIeカードの取り外しまたは取り付け]
 
 +
 [cols="1,3"]

@@ -199,7 +199,7 @@ NVRAM モジュールを交換するには、シャーシのスロット 6 に�
 . 接地対策がまだの場合は、自身で適切に実施します。
 . FlashCache モジュールを古い NVRAM モジュールから新しい NVRAM モジュールに移します。
 +
-image::../media/drw_9000_remove_flashcache.png[DRW 9000 FlashCache を削除します]
+image::../media/drw_9000_remove_flashcache.png[キャッシングモジュールの交換]
 
 +
 |===
@@ -613,7 +613,7 @@ dr-group-id            cluster node           configuration-state
 .. MetroCluster が構成されており、通常モードであることを確認します。「 MetroCluster show 」
 .. MetroCluster チェック「 MetroCluster check run 」を実行します
 .. MetroCluster チェックの結果を表示します。「 MetroCluster check show 」
-.. Config Advisor を実行します。ネットアップサポートサイトの Config Advisor ページに移動します http://support.netapp.com/NOW/download/tools/config_advisor/["support.netapp.com/NOW/download/tools/config_advisor/"]。
+.. Config Advisor を実行します。次のURLにあるNetApp Support SiteのConfig Advisorページに移動します。 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor/["support.netapp.com/NOW/download/tools/config_advisor/"]。
 +
 Config Advisor の実行後、ツールの出力を確認し、推奨される方法で検出された問題に対処します。
 

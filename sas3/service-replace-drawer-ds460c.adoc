@@ -45,7 +45,7 @@ IOM12 FWのアップグレードは、ドライブドロワーの交換前また
 DCMドライブドロワーは次のようになります。
 
 +
-image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[28 DWG e2860 de460c フロントノーコールアウト]
+image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[ドライブシェルフの前面]
 
 +
 DCM2ドライブ・ドロワーは青色のストライプとDCM2ラベルで識別されています
@@ -157,7 +157,7 @@ NOTE: * ハードウェアの破損の可能性： * 静電気によるシェル
 次の図は、ファンモジュールのハンドルを伸ばして左側のオレンジのタブから外した状態を示しています。
 
 +
-image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout.gif[28 dwg e2860 de460c ファンキャニスターハンドル（引き出し線付き）]
+image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout.gif[拡張ファンモジュールハンドル]
 
 +
 [cols="10,90"]
@@ -292,7 +292,7 @@ image::../media/28_dwg_e2860_drive_latches_top_view.gif[28 DWG e2860 ドライ�
 .. ドライブのハンドルを垂直な位置まで持ち上げます。
 .. ハンドルをつかんでドライブドロワーからドライブを持ち上げます。
 +
-image::../media/92_dwg_de6600_install_or_remove_drive.gif[92 dwg de6600 はドライブを取り付けまたは取り外します]
+image::../media/92_dwg_de6600_install_or_remove_drive.gif[ドライブの取り付けまたは取り外し]
 
 .. ドライブを磁気デバイスとは別の、静電気防止処置を施した平らな場所に置きます。
 +
@@ -386,7 +386,7 @@ NOTE: * 機器の破損のリスク： * ドライブドロワーを押しても
 次の図は、ドライブの右側の突起ボタンの位置を示したものです。
 
 +
-image::../media/28_dwg_e2860_de460c_drive_cru.gif[28 DWG e2860 de460c ドライブ CRU]
+image::../media/28_dwg_e2860_de460c_drive_cru.gif[ドライブの突起ボタンの位置]
 
 +
 [cols="10,90"]
@@ -406,7 +406,7 @@ image:../media/legend_icon_01.png["番号1"]
 NOTE: *機器の故障のリスク：*通気が適切に行われ、過熱を防ぐために、必ず最初の4つのドライブをフロントスロット（0、3、6、9）に取り付けてください。
 
 +
-image::../media/92_dwg_de6600_install_or_remove_drive.gif[92 dwg de6600 はドライブを取り付けまたは取り外します]
+image::../media/92_dwg_de6600_install_or_remove_drive.gif[ドライブの取り付けまたは取り外し]
 
 .. 同じ手順を繰り返して、すべてのドライブを取り付けます。
 

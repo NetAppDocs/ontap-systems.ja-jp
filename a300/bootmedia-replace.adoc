@@ -26,11 +26,11 @@ summary: コントローラのブートメディアの場所を確認し、手�
 
 . ケーブルマネジメントデバイスをコントローラモジュールの右側と左側から取り外し、脇に置きます。
 +
-image::../media/drw_32xx_cbl_mgmt_arm.png[DRW 32xx CBL mgmt arm （ DRW 32xx CBL 管理アーム]
+image::../media/drw_32xx_cbl_mgmt_arm.png[ケーブルマネジメントアームの取り外し[]]
 
 . コントローラモジュールのカムハンドルの取り付けネジを緩めます。
 +
-image::../media/drw_8020_cam_handle_thumbscrew.png[DRW 8020 カムハンドルの取り付けネジ]
+image::../media/drw_8020_cam_handle_thumbscrew.png[取り付けネジを緩めてカムハンドルを開く]
 
 +
 |===
@@ -64,7 +64,7 @@ image:../media/legend_icon_02.png["番号2"]
 . 接地対策がまだの場合は、自身で適切に実施します。
 . 次の図またはコントローラモジュールの FRU マップを使用して、ブートメディアの場所を確認します。
 +
-image::../media/drw_rxl_boot_media.png[DRW rxl ブートメディア]
+image::../media/drw_rxl_boot_media.png[フウトメテイアノサクシヨ]
 
 . ブートメディアケースの青いボタンを押してブートメディアをケースからリリースし、ブートメディアソケットからゆっくりと引き出します。
 +

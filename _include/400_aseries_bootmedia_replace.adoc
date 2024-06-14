@@ -23,7 +23,7 @@
 コントローラモジュールがシャーシから少し引き出されます。
 
 +
-image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取り外し]
+image::../media/drw_A400_Remove_controller.png[コントロオラモシユウルノカイホウ]
 
 +
 |===
@@ -68,7 +68,7 @@ video::bb4d91d7-2be1-44d8-ba18-afcf01681872[panopto]
 .手順
 . エアダクトを開きます。
 +
-image::../media/drw_A400_open-air-duct.png[DRW A400 オープンエアダクト]
+image::../media/drw_A400_open-air-duct.png[エアダクトを開く]
 
 +
 |===
@@ -89,7 +89,7 @@ image:../media/legend_icon_02.png["番号2"]
 
 
  a| 
-image::../media/legend_icon_03.png[凡例アイコン 03]
+image::../media/legend_icon_03.png[番号3]
  a| 
 エアダクトを上に回転させます
 
@@ -101,7 +101,7 @@ image::../media/legend_icon_03.png[凡例アイコン 03]
 
 . コントローラモジュールからブートメディアの場所を確認して取り出します。
 +
-image::../media/drw_A400_Replace-boot_media.png[DRW A400 ブートメディアの交換]
+image::../media/drw_A400_Replace-boot_media.png[ブートメディアの取り外し]
 
 +
 |===

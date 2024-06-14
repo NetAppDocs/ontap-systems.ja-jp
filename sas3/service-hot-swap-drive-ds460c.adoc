@@ -96,11 +96,11 @@ NOTE: ディスクドライブのファームウェアのチェックは 2 分�
 * オペレータ用ディスプレイパネルと FRU コンポーネントにあるディスクシェルフ LED の場所と、それらの LED が示す意味については、ディスクシェルフ LED の監視に関する項を参照してください。
 * DS460C ドライブシェルフにはドライブドロワーが 5 つあり（上から順にドロワー 1~5 ）、各ドロワーにドライブスロット 12 個あります。
 +
-image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[28 DWG e2860 de460c フロントノーコールアウト]
+image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[ドライブシェルフの前面]
 
 * 次の図は、シェルフ内の各ドライブドロワーにおける 0~11 のドライブ番号の配置を示しています。
 +
-image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[DWG トラフォードドロワー（ HDD の寸法テキスト付き]
+image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[トライフハンコウ]
 
 
 
@@ -173,7 +173,7 @@ image:../media/legend_icon_01.png["番号1"]
 .. 30 秒待ちます。
 .. カムハンドルをつかんでシェルフからドライブを持ち上げます。
 +
-image::../media/92_dwg_de6600_install_or_remove_drive.gif[92 dwg de6600 はドライブを取り付けまたは取り外します]
+image::../media/92_dwg_de6600_install_or_remove_drive.gif[ドライブの取り付けまたは取り外し]
 
 .. 近くに磁場がない、静電気防止処置を施したやわらかい場所にドライブを置きます。
 
@@ -183,7 +183,7 @@ image::../media/92_dwg_de6600_install_or_remove_drive.gif[92 dwg de6600 はド�
 .. 新しいドライブのカムハンドルを垂直な位置まで持ち上げます。
 .. ドライブキャリアの両側にある 2 つの突起ボタンをドライブドロワーのドライブチャネルにある対応するくぼみに合わせます。
 +
-image::../media/28_dwg_e2860_de460c_drive_cru.gif[28 DWG e2860 de460c ドライブ CRU]
+image::../media/28_dwg_e2860_de460c_drive_cru.gif[ドライブの突起ボタンの位置]
 
 +
 [cols="1,3"]
@@ -197,7 +197,7 @@ image:../media/legend_icon_01.png["番号1"]
 .. ドライブを真上から下ろし、ドライブがオレンジのリリースラッチの下に完全に固定されるまでカムハンドルを下に回転させます。
 .. ドライブドロワーをエンクロージャに慎重に戻します。
 +
-image:../media/2860_dwg_e2860_de460c_gentle_close.gif[""]
+image:../media/2860_dwg_e2860_de460c_gentle_close.gif["ドロワーを静かに閉じる"]
 
 +
 

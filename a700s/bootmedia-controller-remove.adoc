@@ -25,7 +25,7 @@ summary: コントローラモジュールを交換する場合やコントロ�
 コントローラモジュールがシャーシから少し引き出されます。
 
 +
-image::../media/drw_a700s_pcm_remove.png[DRW a700s PCM の削除]
+image::../media/drw_a700s_pcm_remove.png[コントロオラモシユウルノカイホウ]
 
 +
 [cols="1,4"]
@@ -54,7 +54,7 @@ image:../media/legend_icon_02.png["番号2"]
 .. エアダクトの側面にある固定ツメをコントローラモジュールの中央方向に押します。
 .. エアダクトをファンモジュールの方向にスライドさせ、完全に開いた状態になるまで上方向に回転させます。
 +
-image::../media/drw_a700s_open_air_duct.png[DRW a700s オープンエアダクト]
+image::../media/drw_a700s_open_air_duct.png[エアダクトのOpoen]
 
 +
 [cols="1,4"]

@@ -230,7 +230,7 @@ dr-group-id            cluster node           configuration-state
 .. MetroCluster が構成されており、通常モードであることを確認します。「 MetroCluster show 」
 .. MetroCluster チェック「 MetroCluster check run 」を実行します
 .. MetroCluster チェックの結果を表示します。「 MetroCluster check show 」
-.. Config Advisor を実行します。ネットアップサポートサイトの Config Advisor ページに移動します http://support.netapp.com/NOW/download/tools/config_advisor/["support.netapp.com/NOW/download/tools/config_advisor/"]。
+.. Config Advisor を実行します。次のURLにあるNetApp Support SiteのConfig Advisorページに移動します。 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor/["support.netapp.com/NOW/download/tools/config_advisor/"]。
 +
 Config Advisor の実行後、ツールの出力を確認し、推奨される方法で検出された問題に対処します。
 

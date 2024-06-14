@@ -45,7 +45,7 @@ I/O モジュールがシャーシから外れ、 I/O スロットから約 1/2 
 I/O モジュールが取り付けられていたスロットを記録しておいてください。
 
 +
-image::../media/drw_9000_remove_pcie_module.png[DRW 9000 PCIe モジュールを取り外します]
+image::../media/drw_9000_remove_pcie_module.png[PCIeモジュールの取り外し]
 
 +
 [cols="1,4"]
@@ -123,7 +123,7 @@ I/O モジュールがシャーシから外れ、 I/O スロットから約 1/2 
 I/O モジュールが取り付けられていたスロットを記録しておいてください。
 
 +
-image::../media/drw_9000_remove_pcie_module.png[DRW 9000 PCIe モジュールを取り外します]
+image::../media/drw_9000_remove_pcie_module.png[PCIeモジュールの取り外し]
 
 +
 [cols="1,4"]

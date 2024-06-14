@@ -26,17 +26,17 @@ summary: コントローラモジュールハードウェアを交換するに�
 
 . ケーブルマネジメントデバイスをコントローラモジュールの右側と左側から取り外し、脇に置きます。
 +
-image::../media/drw_25xx_cable_management_arm.png[DRW 25xx ケーブル管理アーム]
+image::../media/drw_25xx_cable_management_arm.png[ケーブル管理ARMの挿入または取り外し]
 
 . ケーブルを外したあとで SFP モジュールをシステムに残した場合は、それらを新しいコントローラモジュールに移動します。
 . カムハンドルのラッチをつかんで解除し、カムハンドルを最大限に開いてコントローラモジュールをミッドプレーンから離し、両手でコントローラモジュールをシャーシから外します。
 +
-image::../media/drw_2240_x_opening_cam_latch.png[DRW 2240 x オープンカムラッチ]
+image::../media/drw_2240_x_opening_cam_latch.png[カムハンドルラッチを開く]
 
 . コントローラモジュールを裏返し、平らで安定した場所に置きます。
 . カバーを開くには、青いタブをスライドしてカバーを外し、カバーを上げて開きます。
 +
-image::../media/drw_2600_opening_pcm_cover.png[DRW 2600 オープニング PCM カバー]
+image::../media/drw_2600_opening_pcm_cover.png[コントローラモジュールの開閉]
 
 
 
@@ -48,7 +48,7 @@ image::../media/drw_2600_opening_pcm_cover.png[DRW 2600 オープニング PCM �
 
 . 次の図またはコントローラモジュールの FRU マップを使用して、ブートメディアの場所を確認します。
 +
-image::../media/drw_2600_boot_media_repl_animated_gif.png[DRW 2600 ブートメディア repl アニメーション GIF]
+image::../media/drw_2600_boot_media_repl_animated_gif.png[ブートメディアの交換]
 
 . ブートメディアケースの青いボタンを押してブートメディアをケースからリリースし、ブートメディアソケットからゆっくりと引き出します。
 +
@@ -74,7 +74,7 @@ NVMEM バッテリを古いコントローラモジュールから新しいコ�
 ** HA 構成のシステムの場合は、次の手順に進みます。
 ** システムがスタンドアロン構成の場合は、コントローラモジュールをクリーンシャットダウンし、 NV アイコンのある NVRAM の LED を確認します。
 +
-image::../media/drw_hw_nvram_icon.png[DRW hw NVRAM アイコン]
+image::../media/drw_hw_nvram_icon.png[NV LED]
 
 +
 
@@ -92,7 +92,7 @@ NOTE: システムを停止すると、内容がフラッシュメモリにデ�
 
 . コントローラモジュールで NVMEM バッテリの場所を確認します。
 +
-image::../media/drw_2600_nvmem_battery_move_animated_gif.png[DRW 2600 NVMEM バッテリのアニメーション GIF 移動]
+image::../media/drw_2600_nvmem_battery_move_animated_gif.png[NVMEM バッテリの交換]
 
 . バッテリプラグの場所を確認し、バッテリプラグ前面のクリップを押してプラグをソケットから外し、バッテリケーブルをソケットから抜きます。
 . バッテリをつかんで「 PUSH 」と書かれた青色の固定ツメを押し、バッテリを持ち上げてホルダーとコントローラモジュールから取り出します。
@@ -124,7 +124,7 @@ DIMM の数と配置は、システムのモデルによって異なります。
 次の図は、システム DIMM の場所を示しています。
 
 +
-image::../media/drw_2600_dimms.png[DRW 2600 DIMM]
+image::../media/drw_2600_dimms.png[システムDIMMの場所]
 
 . 必要に応じて、同じ手順を繰り返して他の DIMM を取り外します。
 . NVMEM バッテリが新しいコントローラモジュールに接続されていないことを確認します。

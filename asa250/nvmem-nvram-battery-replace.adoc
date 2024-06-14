@@ -87,7 +87,7 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 NOTE: コントローラモジュールを取り外しにくい場合は、（腕を交差させて）内側から穴に人さし指を入れます。
 
 +
-image::../media/drw_a250_pcm_remove_install.png[DRW A250 PCM 取り外し取り付け]
+image::../media/drw_a250_pcm_remove_install.png[ラッチを開く]
 
 +
 |===
@@ -107,7 +107,7 @@ image:../media/legend_icon_02.png["番号2"]
 . コントローラモジュールの両側を両手で持ってシャーシからゆっくりと引き出し、平らで安定した場所に置きます。
 . コントローラモジュールの前面にある取り付けネジを反時計回りに回して、コントローラモジュールのカバーを開きます。
 +
-image::../media/drw_a250_open_controller_module_cover.png[DRW A250 オープンコントローラモジュールカバー]
+image::../media/drw_a250_open_controller_module_cover.png[コントローラモジュールのカバーを開く]
 
 +
 |===
@@ -142,7 +142,7 @@ video::89f6d5c3-1a5b-4500-8ba8-ac5b01653050[panopto]
 NOTE: 図に示す手順を記載された順序で実行することを推奨します。
 
 +
-image::../media/drw_a250_replace_nvmem_batt.png[NVMEM バッテリは DRW A250 に交換します]
+image::../media/drw_a250_replace_nvmem_batt.png[NVMEMバッテリの取り外し]
 
 +
 |===
@@ -191,7 +191,7 @@ image:../media/legend_icon_04.png["番号4"]
 
 . コントローラモジュールのカバーを閉じ、取り付けネジを締めます。
 +
-image::../media/drw_a250_close_controller_module_cover.png[DRW A250 クローズコントローラモジュールカバー]
+image::../media/drw_a250_close_controller_module_cover.png[コントローラモジュールのカバーの閉じ方]
 
 +
 |===

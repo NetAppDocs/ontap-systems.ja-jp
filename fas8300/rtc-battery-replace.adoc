@@ -184,7 +184,7 @@ mcc1A::> metrocluster operation show
 
 .アニメーション-コントローラモジュールを取り外します
 video::75b6fa91-96b9-4323-b156-aae10007c9a5[panopto]
-image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取り外し]
+image::../media/drw_A400_Remove_controller.png[コントロオラモシユウルノカイホウ]
 
 .手順
 . 接地対策がまだの場合は、自身で適切に実施します。
@@ -251,7 +251,7 @@ NOTE: ホルダーから取り外す際に、バッテリの極の向きを確�
 
 .アニメーション-コントローラモジュールを設置します
 video::9249fdb8-1522-437d-9280-aae10007c97b[panopto]
-image::../media/drw_A400_Install_controller_source.png[DRW A400 コントローラソースの取り付け]
+image::../media/drw_A400_Install_controller_source.png[コントローラの取り付け]
 
 .手順
 . エアダクトまたはコントローラモジュールカバーを閉じていない場合は閉じます。

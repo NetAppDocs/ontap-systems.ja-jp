@@ -30,7 +30,7 @@ summary: ブートメディアを交換する前に、コントローラモジ�
 NOTE: コントローラモジュールを取り外しにくい場合は、（腕を交差させて）内側から穴に人さし指を入れます。
 
 +
-image::../media/drw_a250_pcm_remove_install.png[DRW A250 PCM 取り外し取り付け]
+image::../media/drw_a250_pcm_remove_install.png[ラッチを開く]
 
 +
 |===
@@ -52,7 +52,7 @@ image:../media/legend_icon_02.png["番号2"]
 . コントローラモジュールの両側を両手で持ってシャーシからゆっくりと引き出し、平らで安定した場所に置きます。
 . コントローラモジュールの前面にある取り付けネジを反時計回りに回して、コントローラモジュールのカバーを開きます。
 +
-image::../media/drw_a250_open_controller_module_cover.png[DRW A250 オープンコントローラモジュールカバー]
+image::../media/drw_a250_open_controller_module_cover.png[コントローラモジュールのカバーを開く]
 
 +
 |===
@@ -73,7 +73,7 @@ image:../media/legend_icon_02.png["番号2"]
 |===
 . エアダクトカバーを持ち上げて外します。
 +
-image::../media/drw_a250_remove_airduct_cover.png[DRW A250 エアダクトカバーを取り外す]
+image::../media/drw_a250_remove_airduct_cover.png[エアダクトカバーの持ち上げ]
 
 
 
@@ -91,7 +91,7 @@ image::../media/drw_a250_remove_airduct_cover.png[DRW A250 エアダクトカバ
 video::7c2cad51-dd95-4b07-a903-ac5b015c1a6d[panopto]
 . コントローラモジュールから障害のあるブートメディアの場所を確認し、交換します。
 +
-image::../media/drw_a250_replace_boot_media.png[DRW A250 は、ブートメディアの交換に使用します]
+image::../media/drw_a250_replace_boot_media.png[ブートメディアの交換]
 
 +
 |===
@@ -163,11 +163,11 @@ USB フラッシュドライブには、 EFI フォルダと、障害のある�
 . USB フラッシュドライブをラップトップから取り外します。
 . エアダクトをまだ取り付けていない場合は、取り付けます。
 +
-image::../media/drw_a250_install_airduct_cover.png[DRW A250 エアダクトカバーを取り付ける]
+image::../media/drw_a250_install_airduct_cover.png[エアダクトの取り付け]
 
 . コントローラモジュールのカバーを閉じ、取り付けネジを締めます。
 +
-image::../media/drw_a250_close_controller_module_cover.png[DRW A250 クローズコントローラモジュールカバー]
+image::../media/drw_a250_close_controller_module_cover.png[コントローラモジュールのカバーの閉じ方]
 
 +
 |===

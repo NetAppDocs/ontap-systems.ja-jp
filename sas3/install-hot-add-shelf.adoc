@@ -202,7 +202,7 @@ CAUTION: リフトハンドルを使用して空のDS460Cシェルフを安全�
 DS460Cの出荷時は、4個の着脱式リフトハンドル（両側に2個）が同梱されています。取っ手を使用するには、シェルフ側面のスロットにハンドルのタブを挿入し、カチッと音がして所定の位置に収まるまで押し上げます。次に、ディスクシェルフをレールにスライドさせたら、サムラッチを使用して一度に1組のハンドルを外します。次の図は、リフトハンドルを取り付ける方法を示しています。
 
 +
-image::../media/drw_ds460c_handles.gif[DRW ds460c ハンドル]
+image::../media/drw_ds460c_handles.gif[リフトハンドルの取り付け]
 
 . ディスクシェルフをラックに設置する前に取り外した電源装置と IOM を再度取り付けます。
 . DS460Cディスクシェルフを設置する場合は、ドライブをドライブドロワーに取り付けます。それ以外の場合は、次の手順に進みます。
@@ -228,7 +228,7 @@ NOTE: *機器の故障のリスク：*通気が適切に行われ、過熱を防
 次の図は、シェルフ内の各ドライブドロワーにおける 0~11 のドライブ番号の配置を示しています。
 
 +
-image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[DWG トラフォードドロワー（ HDD の寸法テキスト付き]
+image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[トライフハンコウ]
 
 +
 ... シェルフの一番上のドロワーを開きます。
@@ -236,7 +236,7 @@ image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[DWG トラフォー�
 ... ドライブのカムハンドルを垂直な位置まで持ち上げます。
 ... ドライブキャリアの両側にある 2 つの突起ボタンをドライブドロワーのドライブチャネルにある対応するくぼみに合わせます。
 +
-image::../media/28_dwg_e2860_de460c_drive_cru.gif[28 DWG e2860 de460c ドライブ CRU]
+image::../media/28_dwg_e2860_de460c_drive_cru.gif[ドライブの突起ボタンの位置]
 
 +
 [cols="10,90"]
@@ -256,7 +256,7 @@ image::../media/28_dwg_e2860_de460c_drive_cru.gif[28 DWG e2860 de460c ドライ�
 
 
  a| 
-image:../media/2860_dwg_e2860_de460c_gentle_close.gif[""]
+image:../media/2860_dwg_e2860_de460c_gentle_close.gif["ドロワーを静かに閉じる"]
 
 
 

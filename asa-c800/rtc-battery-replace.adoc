@@ -91,7 +91,7 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 コントローラモジュールがシャーシから少し引き出されます。
 
 +
-image::../media/drw_a800_pcm_remove.png[DRW A800 PCM の取り外し]
+image::../media/drw_a800_pcm_remove.png[コントロオラモシユウルノカイホウ]
 
 
 
@@ -118,7 +118,7 @@ image:../media/legend_icon_02.png["番号2"]
 .. エアダクトの側面にある固定ツメをコントローラモジュールの中央方向に押します。
 .. エアダクトをファンモジュールの方向にスライドさせ、完全に開いた状態になるまで上方向に回転させます。
 +
-image::../media/drw_a800_open_air_duct.png[DRW A800 オープンエアダクト]
+image::../media/drw_a800_open_air_duct.png[エアダクトを開く]
 
 +
 [cols="1,4"]
@@ -245,12 +245,12 @@ image::../media/drw_a800_rtc_battery_replace_v2.png[DRW A800 RTCバッテリの�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
 | エアダクト 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 RTC バッテリとホルダー
 

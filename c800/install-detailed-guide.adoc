@@ -64,7 +64,7 @@ image::../media/drw_ssn_label.png[システムシリアル番号の場所を示�
  a| 
 X666211A-05 (112-00595) 、 0.5m
  a| 
-image:../media/oie_cable100_gbe_qsfp28.png[""]
+image:../media/oie_cable100_gbe_qsfp28.png["100GbE QSFP28コネクタ"]
  a| 
 HA インターコネクト
 
@@ -115,7 +115,7 @@ RJ-45 （注文内容による）
  a| 
 該当なし
  a| 
-image:../media/oie_cable_rj45.png[""]
+image:../media/oie_cable_rj45.png["RJ-45ケーブルコネクタ"]
  a| 
 管理
 
@@ -132,7 +132,7 @@ X66250-15 （ 112-00346 ） 15m ；
 
 X66250-30 （ 112-00347 ） 30m
  a| 
-image:../media/oie_cable_fc_optical.png[""]
+image:../media/oie_cable_fc_optical.png["OIEファイバチャネル光ケーブル"]
  a| 
 
 
@@ -153,7 +153,7 @@ image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタを示す図"
  a| 
 該当なし
  a| 
-image:../media/oie_cable_power.png[""]
+image:../media/oie_cable_power.png["電源ケーブル"]
  a| 
 システムの電源をオンにします
 
@@ -178,11 +178,11 @@ link:../com.netapp.doc.hw-rail-superrail/home.html["丸穴 4 ポストラック�
 NOTE: システムの重量に関連する安全上の注意事項を確認しておく必要があります。
 
 +
-image::../media/drw_affa800_weight_caution.png[DRW affa800 重量注意]
+image::../media/drw_affa800_weight_caution.png[4人でのリフトに関する注意]
 
 . ケーブルマネジメントデバイスを取り付けます（図を参照）。
 +
-image::../media/drw_affa800_install_cable_mgmt.png[DRW affa800 ケーブル管理をインストールします]
+image::../media/drw_affa800_install_cable_mgmt.png[ケーブルマネジメントデバイスの取り付け]
 
 . システムの前面にベゼルを配置します。
 
@@ -210,7 +210,7 @@ image::../media/drw_affa800_install_cable_mgmt.png[DRW affa800 ケーブル管�
 
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
 
-image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+image::../media/oie_cable_pull_tab_up.png[プルタブ付きケーブルコネクタ（上部）]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -227,36 +227,38 @@ video::edc42447-f721-4cbe-b080-ab0c0123a139[panopto]
 
 
  a| 
-image:../media/oie_legend_icon_1_dp.png[""]
+image:../media/oie_legend_icon_1_dp.png["番号1"]
  a| 
 HA インターコネクトポートをケーブル接続します。
 
 ** e0b から e0b
-** e1b から e1bimage:../media/drw_affa800_ha_pair_cabling.png[""]
+** e1b~e1b
+image:../media/drw_affa800_ha_pair_cabling.png["HAペアノケーブルセツゾク"]
 
 
 
 
  a| 
-image:../media/oie_legend_icon_2_lg.png[""]
+image:../media/oie_legend_icon_2_lg.png["番号2"]
  a| 
 クラスタインターコネクトポートをケーブル接続します。
 
 ** e0a から e0a
-** e1a から e1aimage:../media/drw_affa800_tnsc_clust_cabling.png[""]
+** e1a ~ e1a
+image:../media/drw_affa800_tnsc_clust_cabling.png["2ノードスイッチレスクラスタでのクラスタインターコネクトのケーブル接続"]
 
 
 
 
  a| 
-image:../media/oie_legend_icon_3_lp.png[""]
+image:../media/oie_legend_icon_3_lp.png["手順 3"]
  a| 
 管理ポートを管理ネットワークスイッチにケーブル接続します    image:../media/drw_affa800_mgmt_cabling.png["システム背面の管理ポートの場所を示す図"]
 
 
 
  a| 
-image:../media/oie_legend_icon_attn_symbol.png[""]
+image:../media/oie_legend_icon_attn_symbol.png["注意記号"]
  a| 
 この時点ではまだ電源コードをプラグに接続しないでください。
 
@@ -283,7 +285,7 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
 
-image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+image::../media/oie_cable_pull_tab_up.png[プルタブ付きケーブルコネクタ（上部）]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -300,32 +302,36 @@ video::49e48140-4c5a-4395-a7d7-ab0c0123a10e[panopto]
 
 
  a| 
-image:../media/oie_legend_icon_1_dp.png[""]
+image:../media/oie_legend_icon_1_dp.png["番号1"]
  a| 
 HA インターコネクトポートをケーブル接続します。
 
 ** e0b から e0b
-** e1b から e1bimage:../media/drw_affa800_ha_pair_cabling.png[""]
+** e1b~e1b
+image:../media/drw_affa800_ha_pair_cabling.png["HAペアノケーブルセツゾク"]
 
 
 
 
  a| 
-image:../media/oie_legend_icon_2_lg.png[""]
+image:../media/oie_legend_icon_2_lg.png["番号2"]
  a| 
-クラスタインターコネクトポートを 100GbE クラスタインターコネクトスイッチにケーブル接続します。**e0a** e1aimage:../media/drw_affa800_switched_clust_cabling.png[""]
+クラスタインターコネクトポートを 100GbE クラスタインターコネクトスイッチにケーブル接続します。
+** e0a
+** e1a
+image:../media/drw_affa800_switched_clust_cabling.png["クラスタインターコネクトのケーブル接続"]
 
 
 
  a| 
-image:../media/oie_legend_icon_3_lp.png[""]
+image:../media/oie_legend_icon_3_lp.png["手順 3"]
  a| 
 管理ポートを管理ネットワークスイッチにケーブル接続します    image:../media/drw_affa800_mgmt_cabling.png["システム背面の管理ポートの場所を示す図"]
 
 
 
  a| 
-image:../media/oie_legend_icon_attn_symbol.png[""]
+image:../media/oie_legend_icon_attn_symbol.png["注意記号"]
  a| 
 この時点ではまだ電源コードをプラグに接続しないでください。
 
@@ -358,7 +364,7 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
 
-image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+image::../media/oie_cable_pull_tab_up.png[プルタブ付きケーブルコネクタ（上部）]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -371,7 +377,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
  a| 
 1.
  a| 
-ポート 2a~2d を FC ホストスイッチにケーブル接続します。image:../media/drw_affa800_fc_host_cabling.png[""]
+ポート 2a~2d を FC ホストスイッチにケーブル接続します。image:../media/drw_affa800_fc_host_cabling.png["Fibre Channelホストネットワークのケーブル接続"]
 
 
 
@@ -403,7 +409,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
 
-image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+image::../media/oie_cable_pull_tab_up.png[プルタブ付きケーブルコネクタ（上部）]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -416,7 +422,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
  a| 
 1.
  a| 
-ポート e4A から e4d を 10GbE ホストネットワークスイッチにケーブル接続します。image:../media/drw_affa800_10gbe_host_cabling.png[""]
+ポート e4A から e4d を 10GbE ホストネットワークスイッチにケーブル接続します。image:../media/drw_affa800_10gbe_host_cabling.png["ホストネットワークのケーブル接続"]
 
 
 
@@ -446,7 +452,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 .作業を開始する前に
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
 
-image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+image::../media/oie_cable_pull_tab_up.png[プルタブ付きケーブルコネクタ（上部）]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -461,16 +467,16 @@ video::09dade4f-00bd-4d41-97d7-ab0c0123a0b4[panopto]
 
 
  a| 
-image:../media/oie_legend_icon_1_mb.png[""]
+image:../media/oie_legend_icon_1_mb.png["番号1"]
  a| 
-コントローラ A をシェルフにケーブル接続します。 image:../media/drw_affa800_1shelf_cabling_a.png[""]
+コントローラ A をシェルフにケーブル接続します。    image:../media/drw_affa800_1shelf_cabling_a.png["1台のシェルフへのコントローラのケーブル接続"]
 
 
 
  a| 
-image:../media/oie_legend_icon_2_lo.png[""]
+image:../media/oie_legend_icon_2_lo.png["番号2"]
  a| 
-コントローラ B をシェルフにケーブル接続します。 image:../media/drw_affa800_1shelf_cabling_b.png[""]
+コントローラ B をシェルフにケーブル接続します。    image:../media/drw_affa800_1shelf_cabling_b.png["コントロオラBトタンイチノシエルフノケエフル"]
 
 |===
 システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
@@ -484,7 +490,7 @@ image:../media/oie_legend_icon_2_lo.png[""]
 .作業を開始する前に
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
 
-image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+image::../media/oie_cable_pull_tab_up.png[プルタブ付きケーブルコネクタ（上部）]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -499,16 +505,16 @@ video::fe50ac38-9375-4e6b-85af-ab0c0123a0e0[panopto]
 
 
  a| 
-image:../media/oie_legend_icon_1_mb.png[""]
+image:../media/oie_legend_icon_1_mb.png["番号1"]
  a| 
-コントローラ A をシェルフにケーブル接続します。 image:../media/drw_affa800_2shelf_cabling_a.png[""]
+コントローラ A をシェルフにケーブル接続します。    image:../media/drw_affa800_2shelf_cabling_a.png["コントロオラAト2シエルフノケエフル"]
 
 
 
  a| 
-image:../media/oie_legend_icon_2_lo.png[""]
+image:../media/oie_legend_icon_2_lo.png["番号2"]
  a| 
-コントローラ B をシェルフにケーブル接続します。 image:../media/drw_affa800_2shelf_cabling_b.png[""]
+コントローラ B をシェルフにケーブル接続します。    image:../media/drw_affa800_2shelf_cabling_b.png["コントローラBと2台のシェルフのケーブル接続"]
 
 |===
 システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
@@ -548,7 +554,7 @@ image::../media/dwr_laptop_to_switch_only.svg[DWR ラップトップをスイッ
 
 . 検出する ONTAP アイコンを選択します。
 +
-image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コントローラ選択]
+image::../media/drw_autodiscovery_controler_select.png[ONTAPアイコンの選択]
 
 +
 .. エクスプローラを開きます。
@@ -601,11 +607,11 @@ NOTE: コンソールポートの設定方法については、ラップトッ�
 
 .. ラップトップまたはコンソールにコンソールケーブルを接続し、システムに付属のコンソールケーブルを使用してコントローラのコンソールポートに接続します。
 +
-image::../media/drw_console_connect_affa800.png[DRW コンソール接続 AFA800]
+image::../media/drw_console_connect_affa800.png[コンソールポートへの接続]
 
 .. ラップトップまたはコンソールを管理サブネット上のスイッチに接続します。
 +
-image::../media/drw_client_mgmt_subnet_affa800.png[DRW クライアント管理サブネット affa800]
+image::../media/drw_client_mgmt_subnet_affa800.png[ラップトップマタハコンソールヲカンリサブネットノスイッチニセツゾク]
 
 .. 管理サブネット上の TCP / IP アドレスをラップトップまたはコンソールに割り当てます。
 

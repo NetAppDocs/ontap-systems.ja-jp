@@ -61,7 +61,7 @@ X66240A-05 (112-00595) 、 0.5m ；
 
 X66240 2 （ 112-00573 ）、 2m
  a| 
-image:../media/oie_cable100_gbe_qsfp28.png[""]
+image:../media/oie_cable100_gbe_qsfp28.png["100GbE QSFP28コネクタ"]
  a| 
 クラスタインターコネクトネットワーク
 
@@ -92,7 +92,7 @@ RJ-45 （注文内容による）
  a| 
 該当なし
  a| 
-image:../media/oie_cable_rj45.png[""]
+image:../media/oie_cable_rj45.png["RJ-45ケーブルコネクタ"]
  a| 
 管理ネットワーク（ BMC およびレンチポート）とイーサネットデータ（ e0a および e0b ）
 
@@ -109,7 +109,7 @@ X66250-15 （ 112-00346 ） 15m ；
 
 X66250-30 （ 112-00347 ） 30m
  a| 
-image:../media/oie_cable_fc_optical.png[""]
+image:../media/oie_cable_fc_optical.png["OIEファイバチャネル光ケーブル"]
  a| 
 
 
@@ -130,7 +130,7 @@ image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタを示す図"
  a| 
 該当なし
  a| 
-image:../media/oie_cable_power.png[""]
+image:../media/oie_cable_power.png["電源ケーブル"]
  a| 
 システムの電源をオンにします
 
@@ -152,7 +152,7 @@ image:../media/oie_cable_power.png[""]
 NOTE: システムの重量に関連する安全上の注意事項を確認しておく必要があります。
 
 +
-image::../media/drw_affa250_weight_caution.png[DRW affa250 重量注意]
+image::../media/drw_affa250_weight_caution.png[2人で持ち上げる場合の注意]
 
 . このシステムにはケーブル管理デバイスがないため、ケーブルを特定して管理します。
 . システムの前面にベゼルを配置します。
@@ -181,7 +181,7 @@ image::../media/drw_affa250_weight_caution.png[DRW affa250 重量注意]
 
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
 
-image::../media/oie_cable_pull_tab_down.png[OIE ケーブルのプルタブを下に引きます]
+image::../media/oie_cable_pull_tab_down.png[下部にプルタブ付きケーブルコネクタ]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -196,29 +196,30 @@ video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto]
 
 
  a| 
-image:../media/oie_legend_icon_1_lg.png[""]
+image:../media/oie_legend_icon_1_lg.png["手順 1."]
  a| 
 25GbE クラスタインターコネクトケーブルを使用して、クラスタインターコネクトポートを相互に接続します
 
-image:../media/oie_cable_sfp_gbe_copper.png[""]：
+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP銅線コネクタ"]：
 
 * e0c から e0c へ
-* e0d から e0dimage:../media/drw_affa250_tnsc_cabling.png[""]
+* e0d から e0d
+image:../media/drw_affa250_tnsc_cabling.png["2ノードスイッチレスクラスタでのクラスタインターコネクトのケーブル接続"]
 
 
 
 
  a| 
-image:../media/oie_legend_icon_2_dr.png[""]
+image:../media/oie_legend_icon_2_dr.png["番号2"]
  a| 
 RJ45 ケーブルを使用して、レンチマークのポートを管理ネットワークスイッチに接続します。
 
-image::../media/drw_affa250_mgmt_cabling.png[DRW affa250 管理ケーブル配線]
+image::../media/drw_affa250_mgmt_cabling.png[管理ポートのケーブル接続]
 
 
 
  a| 
-image:../media/oie_legend_icon_attn_symbol.png[""]
+image:../media/oie_legend_icon_attn_symbol.png["注意記号"]
  a| 
 この時点ではまだ電源コードをプラグに接続しないでください。
 
@@ -236,7 +237,7 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
 
-image::../media/oie_cable_pull_tab_down.png[OIE ケーブルのプルタブを下に引きます]
+image::../media/oie_cable_pull_tab_down.png[下部にプルタブ付きケーブルコネクタ]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -251,27 +252,28 @@ video::bf6759dc-4cbf-488e-982e-ac68017fbef8[panopto]
 
 
  a| 
-image:../media/oie_legend_icon_1_lg.png[""]
+image:../media/oie_legend_icon_1_lg.png["手順 1."]
  a| 
 クラスタインターコネクトポートを 25GbE クラスタインターコネクトスイッチにケーブル接続します。
 
 * e0c
-* e0dimage:../media/drw_affa250_switched_clust_cabling.png[""]
+* e0d
+image:../media/drw_affa250_switched_clust_cabling.png["クラスタインターコネクトのケーブル接続"]
 
 
 
 
  a| 
-image:../media/oie_legend_icon_2_dr.png[""]
+image:../media/oie_legend_icon_2_dr.png["番号2"]
  a| 
 RJ45 ケーブルを使用して、レンチマークのポートを管理ネットワークスイッチに接続します。
 
-image::../media/drw_affa250_mgmt_cabling.png[DRW affa250 管理ケーブル配線]
+image::../media/drw_affa250_mgmt_cabling.png[管理ポートのケーブル接続]
 
 
 
  a| 
-image::../media/oie_legend_icon_attn_symbol.png[OIE の凡例アイコン ( 属性シンボル]
+image::../media/oie_legend_icon_attn_symbol.png[注意記号]
  a| 
 この時点ではまだ電源コードをプラグに接続しないでください。
 
@@ -295,7 +297,7 @@ image::../media/oie_legend_icon_attn_symbol.png[OIE の凡例アイコン ( 属�
 
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
 
-image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+image::../media/oie_cable_pull_tab_up.png[プルタブ付きケーブルコネクタ（上部）]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -310,7 +312,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
  a| 
 ポート 2a~2d を FC ホストスイッチにケーブル接続します。
 
-image::../media/drw_affa250_fc_host_cabling.png[DRW affa250 fc ホストケーブル接続]
+image::../media/drw_affa250_fc_host_cabling.png[Fibre Channelホストのケーブル接続]
 
 
 
@@ -342,7 +344,7 @@ image::../media/drw_affa250_fc_host_cabling.png[DRW affa250 fc ホストケー�
 
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
 
-image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+image::../media/oie_cable_pull_tab_up.png[プルタブ付きケーブルコネクタ（上部）]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -357,7 +359,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
  a| 
 ポート e4A から e4d を 10GbE ホストネットワークスイッチにケーブル接続します。
 
-image::../media/drw_affa250_25gbe_host_cabling.png[DRW affa250 25GbE ホストのケーブル接続]
+image::../media/drw_affa250_25gbe_host_cabling.png[25GbEのケーブル接続]
 
 
 
@@ -386,7 +388,7 @@ image::../media/drw_affa250_25gbe_host_cabling.png[DRW affa250 25GbE ホスト�
 
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。
 
-image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+image::../media/oie_cable_pull_tab_up.png[プルタブ付きケーブルコネクタ（上部）]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -401,16 +403,16 @@ video::3f92e625-a19c-4d10-9028-ac68017fbf57[panopto]
 
 
  a| 
-image:../media/oie_legend_icon_1_mb.png[""]
+image:../media/oie_legend_icon_1_mb.png["番号1"]
  a| 
-コントローラ A をシェルフにケーブル接続します。 image:../media/drw_affa250_1shelf_cabling_a.png[""]
+コントローラ A をシェルフにケーブル接続します。    image:../media/drw_affa250_1shelf_cabling_a.png["コントローラAのケーブル接続"]
 
 
 
  a| 
-image:../media/oie_legend_icon_2_lo.png[""]
+image:../media/oie_legend_icon_2_lo.png["番号2"]
  a| 
-コントローラ B をシェルフにケーブル接続します。 image:../media/drw_affa250_1shelf_cabling_b.png[""]
+コントローラ B をシェルフにケーブル接続します。    image:../media/drw_affa250_1shelf_cabling_b.png["コントローラBのケーブル接続"]
 
 |===
 システムのセットアップを完了するには、を参照してください link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["手順 4 ：システムのセットアップと設定を完了する"]。
@@ -439,7 +441,7 @@ image:../media/oie_legend_icon_2_lo.png[""]
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 . 検出する ONTAP アイコンを選択します。
 +
-image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コントローラ選択]
+image::../media/drw_autodiscovery_controler_select.png[ONTAPアイコンの選択]
 
 +
 .. エクスプローラを開きます。
@@ -476,7 +478,7 @@ NOTE: コンソールポートの設定方法については、ラップトッ�
 
 .. ラップトップまたはコンソールを管理サブネット上のスイッチに接続します。
 +
-image::../media/drw_console_client_mgmt_subnet_affa250.png[DRW コンソールクライアント管理サブネット affa250]
+image::../media/drw_console_client_mgmt_subnet_affa250.png[管理サブネットへの接続]
 
 .. 管理サブネット上の TCP / IP アドレスをラップトップまたはコンソールに割り当てます。
 

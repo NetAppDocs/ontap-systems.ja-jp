@@ -1,8 +1,8 @@
 ---
 permalink: fas9500/caching_module_hot_swap.html 
 sidebar: sidebar 
-keywords: aff a700, fas9000, hot swap, replace, FlashCache 
-summary: NVMe SSD FlashCacheモジュール（FlashCacheまたはキャッシングモジュール）は、FAS900システムのスロット6のNVRAM11モジュールの前面にのみあります。サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。 
+keywords: fas9500, hot swap, replace, FlashCache 
+summary: NVMe SSD FlashCacheモジュール（FlashCacheまたはキャッシングモジュール）は、FAS9500システムのスロット6でのみNVRAM11モジュールの前面にあります。サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。 
 ---
 = キャッシングモジュール FAS9500 をホットスワップします
 :allow-uri-read: 

@@ -68,7 +68,7 @@ HA ペアまたはシングルコントローラ構成で各コントローラ�
 次の例では、ポートペア 1c / 2d をスタック 2 へのマルチパスケーブル接続に使用し、ポートペア 2c / 1b をクアッドパスケーブル接続に使用します。
 
 +
-image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[DRW ワークシート qpha スロット 1 と 2 つの 4 ポートバス 2 つのスタック NAU]
+image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[クアツトハスHAノケエフルセツソクワアクシイト]
 
 . クアッドパス（シングルコントローラ）構成の場合は、コントローラ 2 の情報を取り消し線で削除します。コントローラ / スタックのケーブル接続にはコントローラ 1 の情報のみが必要です。
 +

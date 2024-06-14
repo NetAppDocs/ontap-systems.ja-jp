@@ -173,7 +173,7 @@ mcc1A::> metrocluster operation show
 
 .アニメーション-コントローラモジュールを取り外します
 video::ca74d345-e213-4390-a599-aae10019ec82[panopto]
-image::../media/drw_A400_Remove_controller.png[DRW A400 コントローラの取り外し]
+image::../media/drw_A400_Remove_controller.png[コントロオラモシユウルノカイホウ]
 
 [cols="10a,90a"]
 |===
@@ -272,7 +272,7 @@ NVDIMM バッテリ
 
 .アニメーション-コントローラモジュールを設置します
 video::0310fe80-b129-4685-8fef-ab19010e720a[panopto]
-image::../media/drw_A400_Install_controller_source.png[DRW A400 コントローラソースの取り付け]
+image::../media/drw_A400_Install_controller_source.png[コントローラの取り付け]
 
 [cols="10,90"]
 |===

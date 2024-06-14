@@ -195,7 +195,7 @@ NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシング�
 NOTE: システムに別のキャッシングモジュールを追加する場合は、空のモジュールを取り外して次の手順に進みます。
 
 +
-image::../media/drw_9000_remove_flashcache.png[DRW 9000 FlashCache を削除します]
+image::../media/drw_9000_remove_flashcache.png[キャッシングモジュール取り外し]
 
 +
 |===
@@ -248,7 +248,7 @@ NOTE: 数字とアルファベットが印字された I/O カムラッチを使
 . 接地対策がまだの場合は、自身で適切に実施します。
 . 障害が発生したコアダンプモジュールを交換する場合は、モジュールの場所を確認して取り外します。
 +
-image::../media/drw_9000_remove_flashcache.png[DRW 9000 FlashCache を削除します]
+image::../media/drw_9000_remove_flashcache.png[キャッシングモジュール取り外し]
 
 +
 [cols="1,3"]

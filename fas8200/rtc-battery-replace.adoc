@@ -187,11 +187,11 @@ mcc1A::> metrocluster operation show
 
 . ケーブルマネジメントデバイスをコントローラモジュールの右側と左側から取り外し、脇に置きます。
 +
-image::../media/drw_32xx_cbl_mgmt_arm.png[DRW 32xx CBL mgmt arm （ DRW 32xx CBL 管理アーム]
+image::../media/drw_32xx_cbl_mgmt_arm.png[ケーブルマネジメントアームの取り外し[]]
 
 . コントローラモジュールのカムハンドルの取り付けネジを緩めます。
 +
-image::../media/drw_8020_cam_handle_thumbscrew.png[DRW 8020 カムハンドルの取り付けネジ]
+image::../media/drw_8020_cam_handle_thumbscrew.png[取り付けネジを緩めてカムハンドルを開く]
 
 +
 |===

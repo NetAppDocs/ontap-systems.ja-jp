@@ -82,7 +82,7 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 . コントローラモジュールの電源装置のコードを電源から抜きます。
 . ケーブルマネジメントデバイスに接続しているケーブルをまとめているフックとループストラップを緩め、システムケーブルと SFP をコントローラモジュールから外し（必要な場合）、どのケーブルが何に接続されていたかを記録します。
 +
-image::../media/drw_a320_controller_cable_unplug_animated_gif.png[DRW A320 コントローラケーブルプラグアニメーション GIF]
+image::../media/drw_a320_controller_cable_unplug_animated_gif.png[ケーブルマネジメントデバイスの取り外し]
 
 +
 ケーブルはケーブルマネジメントデバイスに収めたままにします。これにより、ケーブルマネジメントデバイスを取り付け直すときに、ケーブルを整理する必要がありません。
@@ -90,7 +90,7 @@ image::../media/drw_a320_controller_cable_unplug_animated_gif.png[DRW A320 コ�
 . ケーブルマネジメントデバイスをコントローラモジュールの右側と左側から取り外し、脇に置きます。
 . コントローラモジュールをシャーシから取り外します。
 +
-image::../media/drw_a320_controller_remove_animated_gif.png[DRW A320 コントローラアニメーション GIF を削除します]
+image::../media/drw_a320_controller_remove_animated_gif.png[コントローラの取り外し]
 
 +
 .. コントローラモジュールの両側にあるラッチ機構に人差し指をかけます。
@@ -151,7 +151,7 @@ image::../media/drw_a320_pci_card_replace_animated_gif.png[DRW A320 PCI カー�
 . コントローラモジュールの背面にあるエアダクトを閉じ、 PCIe カードにカバーを再度取り付けていない場合は、
 . コントローラモジュールの端をシャーシの開口部に合わせ、コントローラモジュールをシステムに半分までそっと押し込みます。
 +
-image::../media/drw_a320_controller_install_animated_gif.png[DRW A320 コントローラにアニメーション GIF をインストールします]
+image::../media/drw_a320_controller_install_animated_gif.png[コントローラの取り付け]
 
 +
 

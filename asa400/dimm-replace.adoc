@@ -200,14 +200,14 @@ image::../media/drw_c400_remove_controller_IEOPS-1216.svg[DRW C400コントロ�
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image:../media/legend_icon_01.png["番号1"]
  a| 
 ロックラッチ
 
 
 
  a| 
-image:../media/legend_icon_02.png[""]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 コントローラがシャーシからわずかに引き出されます
 
@@ -232,7 +232,7 @@ NOTE: アニメーションと図は、 DIMM のないソケットの空きス�
 
 .アニメーション-システムDIMMを交換します
 video::93025369-2f61-46b1-bd51-b03100040fe6[panopto]
-image::../media/drw_A400_Replace-NVDIMM-DIMM.png[DRW A400 NVDIMM DIMM の交換]
+image::../media/drw_A400_Replace-NVDIMM-DIMM.png[DIMM の移動]
 
 [cols="10,90"]
 |===

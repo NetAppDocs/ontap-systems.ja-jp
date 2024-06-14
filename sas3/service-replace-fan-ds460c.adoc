@@ -27,7 +27,7 @@ summary: 各 DS460C ドライブシェルフには、 2 つのファンモジュ
 交換する必要があるのは、警告 LED が点灯しているファンモジュールです。
 
 +
-image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout.gif[28 dwg e2860 de460c シングルファンキャニスター、 LED 付きコールアウト]
+image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout.gif[警告LEDの場所]
 
 +
 |===
@@ -58,7 +58,7 @@ image:../media/legend_icon_01.png["番号1"]
 |===
 . ファンモジュールのハンドルをつかんで、ファンモジュールをシェルフから引き出します。
 +
-image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout.gif[28 dwg e2860 de460c ファンキャニスターハンドル（引き出し線付き）]
+image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout.gif[拡張ファンモジュールハンドル]
 
 +
 |===

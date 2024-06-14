@@ -81,7 +81,7 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 NOTE: コントローラモジュールを取り外しにくい場合は、（腕を交差させて）内側から穴に人さし指を入れます。
 
 +
-image::../media/drw_a250_pcm_remove_install.png[DRW A250 PCM 取り外し取り付け]
+image::../media/drw_a250_pcm_remove_install.png[ラッチを開く]
 
 +
 |===
@@ -101,7 +101,7 @@ image:../media/legend_icon_02.png["番号2"]
 . コントローラモジュールの両側を両手で持ってシャーシからゆっくりと引き出し、平らで安定した場所に置きます。
 . コントローラモジュールの前面にある取り付けネジを反時計回りに回して、コントローラモジュールのカバーを開きます。
 +
-image::../media/drw_a250_open_controller_module_cover.png[DRW A250 オープンコントローラモジュールカバー]
+image::../media/drw_a250_open_controller_module_cover.png[コントローラモジュールのカバーを開く]
 
 +
 |===
@@ -133,7 +133,7 @@ video::d8e7d4d9-8d28-4be1-809b-ac5b01643676[panopto]
 . メザニンカードを交換するには：
 . コントローラモジュールの障害が発生したメザニンカードの場所を確認して交換します。
 +
-image::../media/drw_a250_replace_mezz_card.png[DRW A250 はメザニンカードを交換します]
+image::../media/drw_a250_replace_mezz_card.png[メザニンカードの取り外し]
 
 +
 |===
@@ -199,7 +199,7 @@ NOTE: メザニンカードのネジを締めるときは力を加えないで�
 
 . コントローラモジュールのカバーを閉じ、取り付けネジを締めます。
 +
-image::../media/drw_a250_close_controller_module_cover.png[DRW A250 クローズコントローラモジュールカバー]
+image::../media/drw_a250_close_controller_module_cover.png[コントローラモジュールのカバーの閉じ方]
 
 +
 |===

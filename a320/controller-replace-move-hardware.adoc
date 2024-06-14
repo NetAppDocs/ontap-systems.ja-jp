@@ -23,11 +23,11 @@ summary: コントローラモジュールハードウェアを交換するに�
 
 次の図は、障害のあるコントローラモジュールからケーブルとケーブル管理アームを取り外す方法を示しています。
 
-image::../media/drw_a320_controller_cable_unplug_animated_gif.png[DRW A320 コントローラケーブルプラグアニメーション GIF]
+image::../media/drw_a320_controller_cable_unplug_animated_gif.png[ケーブルマネジメントデバイスの取り外し]
 
 次の図は、障害のあるコントローラモジュールをシャーシから取り外す方法を示しています。
 
-image::../media/drw_a320_controller_remove_animated_gif.png[DRW A320 コントローラアニメーション GIF を削除します]
+image::../media/drw_a320_controller_remove_animated_gif.png[コントローラの取り外し]
 
 . 接地対策がまだの場合は、自身で適切に実施します。
 . コントローラモジュールの電源装置のコードを電源から抜きます。
@@ -228,7 +228,7 @@ image::../media/drw_a320_pci_riser_move_animated_gif.png[DRW A320 PCI ライザ�
 
 次の図または記載された手順を使用して、交換用コントローラモジュールをシャーシに設置できます。
 
-image::../media/drw_a320_controller_install_animated_gif.png[DRW A320 コントローラにアニメーション GIF をインストールします]
+image::../media/drw_a320_controller_install_animated_gif.png[コントローラの取り付け]
 
 . コントローラモジュールの背面にあるエアダクトを閉じ、 PCIe カードにカバーを再度取り付けていない場合は、
 . コントローラモジュールの端をシャーシの開口部に合わせ、コントローラモジュールをシステムに半分までそっと押し込みます。

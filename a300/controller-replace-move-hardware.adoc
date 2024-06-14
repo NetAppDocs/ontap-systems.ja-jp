@@ -26,12 +26,12 @@ summary: コントローラモジュールハードウェアを交換するに�
 
 . ケーブルマネジメントデバイスをコントローラモジュールの右側と左側から取り外し、脇に置きます。
 +
-image::../media/drw_32xx_cbl_mgmt_arm.png[DRW 32xx CBL mgmt arm （ DRW 32xx CBL 管理アーム]
+image::../media/drw_32xx_cbl_mgmt_arm.png[ケーブルマネジメントアームの取り外し[]]
 
 . ケーブルを外したあとで SFP モジュールをシステムに残した場合は、それらを新しいコントローラモジュールに移動します。
 . コントローラモジュールのカムハンドルの取り付けネジを緩めます。
 +
-image::../media/drw_8020_cam_handle_thumbscrew.png[DRW 8020 カムハンドルの取り付けネジ]
+image::../media/drw_8020_cam_handle_thumbscrew.png[取り付けネジを緩めてカムハンドルを開く]
 
 +
 |===
@@ -62,7 +62,7 @@ image:../media/legend_icon_02.png["番号2"]
 
 . 次の図またはコントローラモジュールの FRU マップを使用して、ブートメディアの場所を確認します。
 +
-image::../media/drw_rxl_boot_media.png[DRW rxl ブートメディア]
+image::../media/drw_rxl_boot_media.png[フウトメテイアノサクシヨ]
 
 . ブートメディアケースの青いボタンを押してブートメディアをケースからリリースし、ブートメディアソケットからゆっくりと引き出します。
 +
@@ -88,7 +88,7 @@ NVMEM バッテリを古いコントローラモジュールから新しいコ�
 ** HA 構成のシステムの場合は、次の手順に進みます。
 ** システムがスタンドアロン構成の場合は、コントローラモジュールをクリーンシャットダウンし、 NV アイコンのある NVRAM の LED を確認します。
 +
-image::../media/drw_hw_nvram_icon.png[DRW hw NVRAM アイコン]
+image::../media/drw_hw_nvram_icon.png[NV LED]
 
 +
 
@@ -106,7 +106,7 @@ NOTE: システムを停止すると、内容がフラッシュメモリにデ�
 
 . CPU エアダクトを開き、 NVMEM バッテリの場所を確認します。
 +
-image::../media/drw_rxl_nvmem_battery.png[NVMEM バッテリ]
+image::../media/drw_rxl_nvmem_battery.png[NVMEM バッテリの交換]
 
 +
 |===
@@ -147,7 +147,7 @@ DIMM の数と配置は、システムのモデルによって異なります。
 次の図は、システム DIMM の場所を示しています。
 
 +
-image::../media/drw_rxl_dimms.png[DRW rxl DIMMs]
+image::../media/drw_rxl_dimms.png[DIMMの交換]
 
 . DIMM を取り付けるスロットの位置を確認します。
 . コネクタにある DIMM のツメが開いた状態になっていることを確認し、 DIMM をスロットに対して垂直に挿入します。
@@ -174,7 +174,7 @@ PCIe カードを古いコントローラモジュールから新しいコント
 . コントローラモジュールのサイドパネルにある取り付けネジを緩めます。
 . コントローラモジュールからサイドパネルを取り外します。
 +
-image::../media/drw_rxl_pcie.png[DRW rxl PCIe]
+image::../media/drw_rxl_pcie.png[PCIeカードの取り外しまたは取り付け]
 
 +
 |===

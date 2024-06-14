@@ -37,10 +37,6 @@ entries:
       url: "/a700/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します
       url: "/a700/bootmedia-complete-rma.html"
-  - title: キャッシングモジュール
-    url: "/a700/caching-module-and-core-dump-module-replace.html"
-  - title: キャッシングモジュール（ホットスワップ）
-    url: "/a700/caching-module-hot-swap.html"
   - title: シャーシ
     pdf-filename: AFF A700 シャーシ
     entries:

@@ -29,7 +29,7 @@ summary: 電源装置、ファン、およびコントローラモジュール�
 
 . 電源装置のカムハンドルのリリースラッチを押し下げ、カムハンドルを最大まで開いて電源装置をミッドプレーンから外します。
 +
-image::../media/drw_rxl_psu.png[DRW rxl PSU]
+image::../media/drw_rxl_psu.png[電源装置の取り外し]
 
 +
 |===
@@ -101,7 +101,7 @@ NOTE: 電源ケーブルは電源装置にのみ接続してください。こ�
 ファンモジュールがシャーシから少し離れた場所に移動します。
 
 +
-image::../media/drw_fas32xx_fan.png[DRW fas32xx ファン]
+image::../media/drw_fas32xx_fan.png[ファンの取り外し]
 
 +
 |===
@@ -165,11 +165,11 @@ CAUTION: ファンモジュールは奥行きがないので、シャーシか�
 
 . ケーブルマネジメントデバイスをコントローラモジュールの右側と左側から取り外し、脇に置きます。
 +
-image::../media/drw_32xx_cbl_mgmt_arm.png[DRW 32xx CBL mgmt arm （ DRW 32xx CBL 管理アーム]
+image::../media/drw_32xx_cbl_mgmt_arm.png[ケーブルマネジメントアームの取り外し[]]
 
 . コントローラモジュールのカムハンドルの取り付けネジを緩めます。
 +
-image::../media/drw_8020_cam_handle_thumbscrew.png[DRW 8020 カムハンドルの取り付けネジ]
+image::../media/drw_8020_cam_handle_thumbscrew.png[取り付けネジを緩めてカムハンドルを開く]
 
 +
 |===

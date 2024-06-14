@@ -59,7 +59,7 @@ X666211A-2 （ 112-00574 ）、 2m
 
 X666211A-5 （ 112-00574 ）、 5m
  a| 
-image:../media/oie_cable100_gbe_qsfp28.png[""]
+image:../media/oie_cable100_gbe_qsfp28.png["100GbE QSFP28コネクタ"]
  a| 
 ストレージ、クラスタインターコネクト / HA 、イーサネットデータ（注文内容による）
 
@@ -72,7 +72,7 @@ X66240 2 （ 112-00598 ）、 2m
 
 X66240 - 5 （ 112-00639 ）、 5m
  a| 
-image:../media/oie_cable_sfp_gbe_copper.png[""]
+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP銅線コネクタ"]
  a| 
 GbE ネットワーク接続（注文内容による）
 
@@ -87,7 +87,7 @@ X66250-5 （ 112-00344 ）、 5m
 
 X66250-15 （ 112-00346 ）、 15m
  a| 
-image:../media/oie_cable_sfp_gbe_copper.png[""]
+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP銅線コネクタ"]
  a| 
 FC ネットワーク接続
 
@@ -104,7 +104,7 @@ X66032A （ 112-00437 ）、 2m
 
 X66033A (112-00438) 、 3m
  a| 
-image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[""]
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS - Mini-SASコネクタ"]
  a| 
 mini-SAS HD 間ケーブル（注文内容による）
 
@@ -128,7 +128,7 @@ X6585-R6 （ 112-00291 ）、 3m
 
 X6562-R6 （ 112-00196 ）、 5m
  a| 
-image:../media/oie_cable_rj45.png[""]
+image:../media/oie_cable_rj45.png["RJ-45ケーブルコネクタ"]
  a| 
 管理ネットワーク
 
@@ -150,7 +150,7 @@ image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタを示す図"
  a| 
 該当なし
  a| 
-image:../media/oie_cable_power.png[""]
+image:../media/oie_cable_power.png["電源ケーブル"]
  a| 
 システムの電源をオンにします
 
@@ -175,11 +175,11 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成�
 NOTE: システムの重量に関連する安全上の注意事項を確認しておく必要があります。
 
 +
-image::../media/drw_katana_lifting_restriction_icon.png[「 DRW カタカナリフティング制限」アイコン]
+image::../media/drw_katana_lifting_restriction_icon.png[2人で持ち上げる場合の注意]
 
 . ケーブルマネジメントデバイスを取り付けます（図を参照）。
 +
-image::../media/drw_a320_cable_management_arms.png[DRW A320 ケーブル管理アーム]
+image::../media/drw_a320_cable_management_arms.png[ケーブルマネジメントアームの取り外しと取り付け]
 
 . システムの前面にベゼルを配置します。
 
@@ -203,9 +203,9 @@ NOTE: カードのポートラベルが表示されない場合は、カード�
 
 ケーブルをポートに差し込む際は、ケーブルのプルタブの向きを確認してください。ケーブルのプルタブは、すべてのオンボードポートでは上向き、拡張（ NIC ）カードでは下向きになります。
 
-image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+image::../media/oie_cable_pull_tab_up.png[プルタブ付きケーブルコネクタ（上部）]
 
-image::../media/oie_cable_pull_tab_down.png[OIE ケーブルのプルタブを下に引きます]
+image::../media/oie_cable_pull_tab_down.png[下部にプルタブ付きケーブルコネクタ]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -231,9 +231,9 @@ image::../media/drw_fas8300_TNSC_network_cabling.png[DRW fas8300 TNSC ネット�
 
 ケーブルをポートに差し込む際は、ケーブルのプルタブの向きを確認してください。ケーブルのプルタブは、すべてのオンボードポートでは上向き、拡張（ NIC ）カードでは下向きになります。
 
-image::../media/oie_cable_pull_tab_up.png[OIE ケーブルのプルタブを上にします]
+image::../media/oie_cable_pull_tab_up.png[プルタブ付きケーブルコネクタ（上部）]
 
-image::../media/oie_cable_pull_tab_down.png[OIE ケーブルのプルタブを下に引きます]
+image::../media/oie_cable_pull_tab_down.png[下部にプルタブ付きケーブルコネクタ]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -261,7 +261,7 @@ image::../media/drw_fas8300_switched_network_cabling.png[DRW fas8300 スイッ�
 
 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。DS224-C のケーブルプルタブは下です。
 
-image::../media/oie_cable_pull_tab_down.png[OIE ケーブルのプルタブを下に引きます]
+image::../media/oie_cable_pull_tab_down.png[下部にプルタブ付きケーブルコネクタ]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -305,7 +305,7 @@ video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 . 検出する ONTAP アイコンを選択します。
 +
-image::../media/drw_autodiscovery_controler_select.png[DRW 自動検出コントローラ選択]
+image::../media/drw_autodiscovery_controler_select.png[ONTAPアイコンの選択]
 
 +
 .. エクスプローラを開きます。

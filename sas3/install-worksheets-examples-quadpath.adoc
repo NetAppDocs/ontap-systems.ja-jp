@@ -42,6 +42,6 @@ image::../media/drw_controller_to_stack_quad_pathed_connectivity_key.gif[DRW コ
 
 次のワークシートとケーブル接続例では、スタック 1 にポートペア 1a / 2b （マルチパス）と 2a / 1d （クアッドパス）を使用し、スタック 2 にポートペア 1c / 2d （マルチパス）と 2c / 1b （クアッドパス）を使用しています。
 
-image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[DRW ワークシート qpha スロット 1 と 2 つの 4 ポートバス 2 つのスタック NAU]
+image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[クアツトハスHAノケエフルセツソクワアクシイト]
 
 image::../media/drw_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[DRW qpha スロット 1 および 2 2 2 4 ポートバス 2 スタック NAU]

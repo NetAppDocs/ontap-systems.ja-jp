@@ -85,7 +85,7 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 NOTE: コントローラモジュールを取り外しにくい場合は、（腕を交差させて）内側から穴に人さし指を入れます。
 
 +
-image::../media/drw_a250_pcm_remove_install.png[DRW A250 PCM 取り外し取り付け]
+image::../media/drw_a250_pcm_remove_install.png[ラッチを開く]
 
 +
 [cols="1,4"]
@@ -108,7 +108,7 @@ image:../media/legend_icon_02.png["番号2"]
 . コントローラモジュールの両側を両手で持ってシャーシからゆっくりと引き出し、平らで安定した場所に置きます。
 . コントローラモジュールの前面にある取り付けネジを反時計回りに回して、コントローラモジュールのカバーを開きます。
 +
-image::../media/drw_a250_open_controller_module_cover.png[DRW A250 オープンコントローラモジュールカバー]
+image::../media/drw_a250_open_controller_module_cover.png[コントローラモジュールのカバーを開く]
 
 +
 [cols="1,4"]
@@ -141,7 +141,7 @@ video::ccfa6665-2c2b-4571-ae79-ac5b015c19fc[panopto]
 . 交換が必要なファンモジュールを特定するために、コンソールのエラーメッセージを確認するか、マザーボードでファンモジュールの LED が点灯していることを確認します。
 . ファンモジュールの側面をつまみ、ファンモジュールを持ち上げてコントローラモジュールから取り出します。
 +
-image::../media/drw_a250_replace_fan.png[DRW A250 は、ファンを交換します]
+image::../media/drw_a250_replace_fan.png[ファンモジュールの取り外し]
 
 +
 [cols="1,4"]
@@ -163,7 +163,7 @@ image:../media/legend_icon_01.png["番号1"]
 
 . コントローラモジュールのカバーを閉じ、取り付けネジを締めます。
 +
-image::../media/drw_a250_close_controller_module_cover.png[DRW A250 クローズコントローラモジュールカバー]
+image::../media/drw_a250_close_controller_module_cover.png[コントローラモジュールのカバーの閉じ方]
 
 +
 [cols="1,4"]

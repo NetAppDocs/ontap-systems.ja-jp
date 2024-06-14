@@ -80,7 +80,7 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 NOTE: コントローラモジュールを取り外しにくい場合は、（腕を交差させて）内側から穴に人さし指を入れます。
 
 +
-image::../media/drw_a250_pcm_remove_install.png[DRW A250 PCM 取り外し取り付け]
+image::../media/drw_a250_pcm_remove_install.png[ラッチを開く]
 
 +
 |===
@@ -100,7 +100,7 @@ image:../media/legend_icon_02.png["番号2"]
 . コントローラモジュールの両側を両手で持ってシャーシからゆっくりと引き出し、平らで安定した場所に置きます。
 . コントローラモジュールの前面にある取り付けネジを反時計回りに回して、コントローラモジュールのカバーを開きます。
 +
-image::../media/drw_a250_open_controller_module_cover.png[DRW A250 オープンコントローラモジュールカバー]
+image::../media/drw_a250_open_controller_module_cover.png[コントローラモジュールのカバーを開く]
 
 +
 |===
@@ -112,14 +112,14 @@ image:../media/legend_icon_01.png["番号1"]
 
 
  a| 
-image::../media/legend_icon_02.png[凡例アイコン 02]
+image::../media/legend_icon_02.png[番号2]
  a| 
 コントローラモジュールカバー
 
 |===
 . エアダクトカバーを持ち上げて外します。
 +
-image::../media/drw_a250_remove_airduct_cover.png[DRW A250 エアダクトカバーを取り外す]
+image::../media/drw_a250_remove_airduct_cover.png[エアダクトカバーの持ち上げ]
 
 
 
@@ -165,7 +165,7 @@ image:../media/legend_icon_03.png["番号3"]
 . 交換用バッテリを静電気防止用の梱包バッグから取り出します。
 . ヒートシンクとミッドプレーンの間にある RTC バッテリホルダーの位置を確認し、図のように正確に挿入します。
 +
-image::../media/drw_a250_install_rtc_batt.png[DRW A250 は RTC BATT を取り付けます]
+image::../media/drw_a250_install_rtc_batt.png[RTCバッテリの取り付け]
 
 +
 |===

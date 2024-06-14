@@ -35,7 +35,7 @@ video::ca74d345-e213-4390-a599-aae10019ec82[panopto]
 コントローラモジュールがシャーシから少し引き出されます。
 
 +
-image:../media/drw_A400_Remove_controller.png[""]
+image:../media/drw_A400_Remove_controller.png["コントロオラモシユウルノカイホウ"]
 
 +
 [cols="10a,90a"]
@@ -96,7 +96,7 @@ image:../media/legend_icon_01.png["番号1"]
 video::92060115-1967-475b-b517-aad9012f130c[panopto]
 . 電源装置を取り外します。
 +
-image::../media/drw_A400_psu.png[DRW A400 PSU]
+image::../media/drw_A400_psu.png[電源装置の交換]
 
 +
 [cols="10,90"]
@@ -144,7 +144,7 @@ NVDIMM バッテリを障害のあるコントローラモジュールから交�
 
 .アニメーション- NVDIMMバッテリを移動します
 video::94d115b2-b02a-4234-805c-aad9012f204c[panopto]
-image::../media/drw_A400_nvdimm-batt.png[DRW A400 NVDIMM バッテリ]
+image::../media/drw_A400_nvdimm-batt.png[NVDIMMバッテリの取り外し]
 
 [cols="10,90"]
 |===
@@ -197,7 +197,7 @@ NOTE: 指示があるまで、バッテリケーブルをマザーボードに�
 
 .アニメーション-ブートメディアを移動します
 video::2a14099c-85de-4a84-867c-aad9012efac8[panopto]
-image::../media/drw_A400_Replace-boot_media.png[DRW A400 ブートメディアの交換]
+image::../media/drw_A400_Replace-boot_media.png[ブートメディアの取り外し]
 
 [cols="10,90"]
 |===
@@ -252,7 +252,7 @@ video::f4ee1d4d-6029-4fe6-a063-aad9012f170b[panopto]
 
 .アニメーション-メザニンカードとライザー3を移動します
 video::b0c3b575-3434-4e00-a421-aad9012f2e9e[panopto]
-image::../media/drw_A400_Replace-PCIe-cards.png[DRW A400 PCIe カードの交換]
+image::../media/drw_A400_Replace-PCIe-cards.png[PCIeカードの取り外し]
 
 [cols="10,90"]
 |===
@@ -324,7 +324,7 @@ DIMM の場所を確認し、障害のあるコントローラモジュールか
 
 .アニメーション- DIMMを移動します
 video::717b52fa-f236-4f3d-b07d-aad9012f51a3[panopto]
-image::../media/drw_A400_Replace-NVDIMM-DIMM.png[DRW A400 NVDIMM DIMM の交換]
+image::../media/drw_A400_Replace-NVDIMM-DIMM.png[DIMM の移動]
 
 [cols="10,90"]
 |===
@@ -389,7 +389,7 @@ DIMM のソケットへの挿入にはある程度の力が必要です。簡単
 
 .アニメーション-コントローラモジュールを設置します
 video::0310fe80-b129-4685-8fef-ab19010e720a[panopto]
-image::../media/drw_A400_Install_controller_source.png[DRW A400 コントローラソースの取り付け]
+image::../media/drw_A400_Install_controller_source.png[コントローラの取り付け]
 
 [cols="10,90"]
 |===

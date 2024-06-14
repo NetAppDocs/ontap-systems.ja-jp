@@ -185,7 +185,7 @@ mcc1A::> metrocluster operation show
 . 障害のあるコントローラモジュールからケーブルを外し、どのケーブルが何に接続されていたかを記録します。
 . カムハンドルのオレンジ色のボタンを下にスライドさせてロックを解除します。
 +
-image::../media/drw_9000_remove_pcm.png[DRW 9000 PCM を取り外します]
+image::../media/drw_9000_remove_pcm.png[コントローラモジュールの取り外し]
 
 +
 [cols="1,3"]
@@ -211,7 +211,7 @@ image:../media/legend_icon_02.png["番号2"]
 
 . コントローラモジュールのふた側を上にして、平らで安定した場所に置きます。カバーの青いボタンを押し、コントローラモジュールの背面にカバーをスライドさせてから、カバーを上に動かしてコントローラモジュールから外します。
 +
-image::../media/drw_9000_pcm_open.png[DRW 9000 PCM 開]
+image::../media/drw_9000_pcm_open.png[コントローラモジュールの開閉]
 
 +
 [cols="1,3"]
