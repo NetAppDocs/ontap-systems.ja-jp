@@ -51,7 +51,7 @@ image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[ドライブシェル�
 DCM2ドライブ・ドロワーは青色のストライプとDCM2ラベルで識別されています
 
 +
-image::../media/dcm2.png[dcm2.]
+image::../media/dcm2.png[DCM2ドライブドロワー]
 
 
 
@@ -176,7 +176,7 @@ image:../media/legend_icon_01.png["番号1"]
 次の図は、ファンモジュールを取り外したドライブシェルフの右側を示しています。ファンモジュールを取り外してあるので、 5 つのケーブルチェーンと各ドロワーの垂直コネクタおよび水平コネクタを確認できます。ドライブドロワー 1 を例に説明します。
 
 +
-image::../media/2860_dwg_full_back_view_chain_connectors.gif[2860 DWG フルバックビューチェーンコネクタ]
+image::../media/2860_dwg_full_back_view_chain_connectors.gif[5つのケーブルチェーンと各ドロワーの垂直コネクタと水平コネクタの図]
 
 +
 [cols="10,90"]
@@ -209,7 +209,7 @@ image:../media/legend_icon_03.png["番号3"]
 +
 .. 懐中電灯で内部を照らし、エンクロージャの垂直ブラケットに接続されているケーブルチェーン先端のオレンジのリングの位置を確認します。
 +
-image::../media/2860_dwg_vertical_ring_for_chain.gif[チェーン用 2860 DWG 垂直リング]
+image::../media/2860_dwg_vertical_ring_for_chain.gif[ケーブルチェーン端のオレンジのリング]
 
 +
 [cols="10,90"]
@@ -231,7 +231,7 @@ image:../media/legend_icon_01.png["番号1"]
 次の図は、右側の水平コネクタとケーブルチェーンを外し、左側を途中まで引き出した状態を示しています。
 
 +
-image::../media/2860_dwg_horiz_ring_for_chain.gif[2860 DWG 水平リング（チェーン用]
+image::../media/2860_dwg_horiz_ring_for_chain.gif[ケーブルチェーンとオレンジのリング]
 
 +
 [cols="10,90"]
@@ -287,7 +287,7 @@ image:../media/legend_icon_02.png["番号2"]
 +
 .. 各ドライブの前面中央にあるオレンジのリリースラッチをそっと引いて戻します。次の図は、各ドライブのオレンジのリリースラッチを示しています。
 +
-image::../media/28_dwg_e2860_drive_latches_top_view.gif[28 DWG e2860 ドライブラッチの上面図]
+image::../media/28_dwg_e2860_drive_latches_top_view.gif[ドライブリリースラッチ]
 
 .. ドライブのハンドルを垂直な位置まで持ち上げます。
 .. ハンドルをつかんでドライブドロワーからドライブを持ち上げます。
@@ -305,7 +305,7 @@ NOTE: * データアクセスが失われる可能原因性： * 磁場によっ
 +
 .. ドライブドロワーの両側にあるプラスチック製のリリースレバーの位置を確認します。
 +
-image::../media/92_pht_de6600_drive_drawer_release_lever.gif[92 PHT DE6600 ドライブドロワーのリリースレバー]
+image::../media/92_pht_de6600_drive_drawer_release_lever.gif[ドロワーリリースレバー]
 
 +
 [cols="10,90"]
@@ -344,7 +344,7 @@ image:../media/legend_icon_01.png["番号1"]
 ロックつまみは、一度に複数のドライブドロワーを開くことを防ぐための安全装置です。
 
 +
-image::../media/92_pht_de6600_lock_out_tumbler_detail.gif[92 PHT DE6600 ロックつまみの詳細]
+image::../media/92_pht_de6600_lock_out_tumbler_detail.gif[ロックつまみとドロワーガイドの位置]
 
 +
 [cols="10,90"]
@@ -430,7 +430,7 @@ NOTE: * 機器の故障のリスク： * 両方のレバーを押してドライ
 * 「 LEFT 」および「 RIGHT 」というマークが付いた 2 つの交換用ケーブルチェーンを用意しておきます（ドライブドロワーの横の水平コネクタにあります）。
 
 
-image::../media/28_dwg_e2860_de460c_cable_chain_left.gif[28 DWG e2860 de460c ケーブルチェーン左]
+image::../media/28_dwg_e2860_de460c_cable_chain_left.gif[左側交換用ケーブルチェーン]
 
 [cols="4*"]
 |===
@@ -456,7 +456,7 @@ image:../media/legend_icon_02.png["番号2"]
 ドライブドロワー
 
 |===
-image:../media/28_dwg_e2860_de460c_cable_chain_right.gif[""]
+image:../media/28_dwg_e2860_de460c_cable_chain_right.gif["右側交換用ケーブルチェーン"]
 
 [cols="4*"]
 |===
@@ -492,7 +492,7 @@ image:../media/legend_icon_02.png["番号2"]
 この図は、エンクロージャ内の 2 番目のドライブドロワーの左側にあるガイドレールを示しています。
 
 +
-image::../media/2860_dwg_guide_rail.gif[2860 DWG ガイドレール]
+image::../media/2860_dwg_guide_rail.gif[ガイドレール]
 
 +
 [cols="10,90"]
