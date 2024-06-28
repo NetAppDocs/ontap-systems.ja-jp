@@ -17,8 +17,7 @@ NVRAM モジュールは、 NVRAM モジュールあたり NVRAM10 と DIMM 、�
 
 システム ID は NVRAM モジュールから取得されるため、モジュールを交換する場合は、システムに属するディスクを新しいシステム ID に再割り当てします。
 
-* 始める前に *
-
+.作業を開始する前に
 * すべてのディスクシェルフが適切に動作している必要があります。
 * HA ペアのシステムの場合は、交換する NVRAM モジュールに関連付けられているノードをパートナーノードがテイクオーバーできる必要があります。
 * この手順では次の用語を使用します。
@@ -202,6 +201,7 @@ NVRAM モジュールを交換するには、シャーシのスロット 6 に�
 image::../media/drw_9000_remove_flashcache.png[キャッシングモジュールの交換]
 
 +
+[cols="1,4"]
 |===
 
 
@@ -241,9 +241,10 @@ NVRAM モジュールがシャーシから外れ、数インチ外に出ます�
 
 .. NVRAM モジュール前面の両側にあるプルタブを引いてモジュールをシャーシから取り外します。
 +
-image::../media/drw_9000_move_remove_nvram_module.png[DRW 9000 MOVE NVRAM モジュールを取り外します]
+image::../media/drw_9000_move_remove_nvram_module.png[NVRAM モジュールを取り外します]
 
 +
+[cols="1,4"]
 |===
 
 
@@ -264,9 +265,10 @@ image:../media/legend_icon_02.png["番号2"]
 
 . NVRAM モジュールを安定した場所に置き、カバーの青色のロックボタンを押し下げてカバーを NVRAM モジュールから取り外します。青いボタンを押しながら、カバーをスライドさせて NVRAM モジュールから外します。
 +
-image::../media/drw_9000_remove_nvram_module_contents.png[DRW 9000 NVRAM モジュールの内容を削除します]
+image::../media/drw_9000_remove_nvram_module_contents.png[NVRAMモジュールの内容を取り外します。]
 
 +
+[cols="1,4"]
 |===
 
 
@@ -313,9 +315,10 @@ NVRAM モジュールがシャーシから外れ、数インチ外に出ます�
 
 .. NVRAM モジュール前面の両側にあるプルタブを引いてモジュールをシャーシから取り外します。
 +
-image::../media/drw_9000_move_remove_nvram_module.png[DRW 9000 MOVE NVRAM モジュールを取り外します]
+image::../media/drw_9000_move_remove_nvram_module.png[NVRAM モジュールを取り外します]
 
 +
+[cols="1,4"]
 |===
 
 
@@ -336,9 +339,10 @@ image:../media/legend_icon_02.png["番号2"]
 
 . NVRAM モジュールを安定した場所に置き、カバーの青色のロックボタンを押し下げてカバーを NVRAM モジュールから取り外します。青いボタンを押しながら、カバーをスライドさせて NVRAM モジュールから外します。
 +
-image::../media/drw_9000_remove_nvram_module_contents.png[DRW 9000 NVRAM モジュールの内容を削除します]
+image::../media/drw_9000_remove_nvram_module_contents.png[NVRAMモジュールの内容を取り外します。]
 
 +
+[cols="1,4"]
 |===
 
 

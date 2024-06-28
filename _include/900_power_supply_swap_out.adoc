@@ -41,10 +41,10 @@ IMPORTANT: 効率性の異なる PSU を混在させないでください。い�
 .アニメーション- PSUの取り外し/取り付け
 video::6d0eee92-72e2-4da4-a4fa-adf9016b57ff[panopto]
 +
-image::../media/drw_9000_remove_install_psu_module.svg[DRW 9000 取り付け PSU モジュールを取り外します]
+image::../media/drw_9000_remove_install_psu_module.svg[PSUモジュールの取り外しまたは取り付け]
 
 +
-[cols="10,90"]
+[cols="1,4"]
 |===
 
 

@@ -157,12 +157,12 @@ NVRAM モジュールがシャーシから外れ、数インチ外に出ます�
 .アニメーション- NVRAMモジュールを交換します
 video::6eb2d864-9d35-4a23-b6c2-adf9016b359f[panopto]
 +
-image::../media/drw_a900_move-remove_NVRAM_module.png[DRW a900 move remove NVRAM module (NVRAM モジュールを取り外します]
+image::../media/drw_a900_move-remove_NVRAM_module.png[NVRAMモジュールの取り外し]
 
 
 
 +
-[cols="10,90"]
+[cols="1,4"]
 |===
 
 
@@ -181,10 +181,10 @@ image:../media/legend_icon_02.png["番号2"]
 |===
 . NVRAM モジュールを安定した場所に置き、カバーの青色のロックボタンを押し下げてカバーを NVRAM モジュールから取り外します。青いボタンを押しながら、カバーをスライドさせて NVRAM モジュールから外します。
 +
-image::../media/drw_a900_remove_NVRAM_module_contents.png[DRW a900 は NVRAM モジュールの内容を削除します]
+image::../media/drw_a900_remove_NVRAM_module_contents.png[NVRAMモジュールの内容の取り外し]
 
 +
-[cols="10,90"]
+[cols="1,4"]
 |===
 
 
@@ -233,12 +233,12 @@ NVRAM モジュールがシャーシから外れ、数インチ外に出ます�
 .アニメーション- NVRAM DIMMを交換します
 video::0ae4e603-c22b-4930-8070-adf2000e38b5[panopto]
 +
-image::../media/drw_a900_move-remove_NVRAM_module.png[DRW a900 move remove NVRAM module (NVRAM モジュールを取り外します]
+image::../media/drw_a900_move-remove_NVRAM_module.png[NVRAMモジュールの取り外し]
 
 
 
 +
-[cols="10,90"]
+[cols="1,4"]
 |===
 
 
@@ -257,10 +257,10 @@ image:../media/legend_icon_02.png["番号2"]
 |===
 . NVRAM モジュールを安定した場所に置き、カバーの青色のロックボタンを押し下げてカバーを NVRAM モジュールから取り外します。青いボタンを押しながら、カバーをスライドさせて NVRAM モジュールから外します。
 +
-image::../media/drw_a900_remove_NVRAM_module_contents.png[DRW a900 は NVRAM モジュールの内容を削除します]
+image::../media/drw_a900_remove_NVRAM_module_contents.png[NVRAMモジュールの内容の取り外し]
 
 +
-[cols="10,90"]
+[cols="1,4"]
 |===
 
 

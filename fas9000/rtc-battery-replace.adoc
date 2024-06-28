@@ -185,7 +185,7 @@ mcc1A::> metrocluster operation show
 . 障害のあるコントローラモジュールからケーブルを外し、どのケーブルが何に接続されていたかを記録します。
 . カムハンドルのオレンジ色のボタンを下にスライドさせてロックを解除します。
 +
-image::../media/drw_9000_remove_pcm.png[コントローラモジュールの取り外し]
+image::../media/drw_9000_remove_pcm.png[コントローラモジュールを取り外します]
 
 +
 [cols="1,3"]
@@ -236,7 +236,7 @@ RTC バッテリを交換するには、コントローラモジュールで障�
 . 接地対策がまだの場合は、自身で適切に実施します。
 . RTC バッテリの場所を確認します。
 +
-image::../media/drw_9000_remove_rtc_battery.png[DRW 9000 RTC バッテリを取り外します]
+image::../media/drw_9000_remove_rtc_battery.png[RTCバッテリの取り外しまたは交換]
 
 +
 [cols="1,3"]

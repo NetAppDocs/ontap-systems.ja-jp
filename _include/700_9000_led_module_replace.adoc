@@ -9,7 +9,7 @@ FAS9000 または AFF A700 LED USB モジュールは、コンソールポート
 .手順
 . 古い LED USB モジュールを取り外します。
 +
-image::../media/led_3.png[LED 3.]
+image::../media/led_3.png[LED USBモジュールの取り外し]
 
 +
 .. ベゼルを取り外した状態で、シャーシ前面の左下にある LED USB モジュールの位置を確認します。
@@ -19,7 +19,7 @@ image::../media/led_3.png[LED 3.]
 
 . 新しい LED USB モジュールを取り付けます。
 +
-image::../media/led_4.png[LED 4.]
+image::../media/led_4.png[LED USBモジュールの取り付け]
 
 +
 .. モジュールをベイに合わせ、シャーシのスライダラッチの近くにあるモジュールの隅にある切り込みに合わせます。ベイを使用すると、モジュールを上下逆に取り付けることができません。

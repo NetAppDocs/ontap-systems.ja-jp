@@ -71,7 +71,7 @@ image::../media/drw_sas3_location_icon.svg[DRW SAS3ロケーションアイコ�
 
 次の図は、エンドキャップを付けた状態の DS224C ディスクシェルフのオペレータディスプレイパネルを示しています。
 
-image::../media/drw_opd.gif[DRW OPD]
+image::../media/drw_opd.gif[エンドキャップオペレータディスプレイ]
 
 
 
@@ -128,11 +128,11 @@ image::../media/drw_sas3_location_icon.svg[DRW SAS3ロケーションアイコ�
 |===
 次の図は、IOM12モジュールを示しています。
 
-image::../media/drw_iom12.gif[DRW iom12]
+image::../media/drw_iom12.gif[IOM12モジュール]
 
 IOM12Bモジュールは、青色のストライプと「IOM12B」ラベルで区別されます。
 
-image::../media/iom12b.png[iom12b]
+image::../media/iom12b.png[IOM12Bモジュール]
 
 
 
@@ -181,11 +181,11 @@ image::../media/drw_sas_fault_icon.svg[DRW SAS障害アイコン]
 
 2 つの LED アイコンは、ラベルと LED として機能します。つまり、アイコン自体が点灯します。隣接する LED はありません。
 
-image::../media/28_dwg_e2860_de460c_psu.gif[28 DWG e2860 de460c PSU]
+image::../media/28_dwg_e2860_de460c_psu.gif[LEDアイコン]
 
 次の図は、 DS224C または DS212C ディスクシェルフで使用される電源装置を示しています。
 
-image::../media/drw_powersupply_913w_vsd.gif[DRW 電源 913w VSD]
+image::../media/drw_powersupply_913w_vsd.gif[LEDアイコン]
 
 
 
@@ -263,13 +263,13 @@ image:../media/legend_icon_02.png["番号2"]
 
 DS224C ディスクシェルフでは、 2.5 インチディスクドライブがディスクシェルフ内に縦に配置されます。
 
-image::../media/drw_diskdrive_ds224c.gif[DRW ディスクドライブ ds224c]
+image::../media/drw_diskdrive_ds224c.gif[ドライブキャリアの垂直配置]
 
 次の図は、 DS212C ディスクシェルフで使用されるディスクドライブを示しています。
 
 DS212C ディスクシェルフでは、 3.5 インチまたは 2.5 インチのディスクドライブがディスクシェルフ内に横に配置されます。
 
-image::../media/drw_diskdrive_ds212c.gif[DRW DiskDrive ds212c]
+image::../media/drw_diskdrive_ds212c.gif[ドライブキャリアの水平配置]
 
 
 
@@ -277,7 +277,7 @@ image::../media/drw_diskdrive_ds212c.gif[DRW DiskDrive ds212c]
 
 次の図と表に、ドライブドロワーのドライブアクティビティ LED とその動作状態を示します。
 
-image::../media/2860_dwg_drive_drawer_leds.gif[2860 DWG ドライブドロワーの LED]
+image::../media/2860_dwg_drive_drawer_leds.gif[ドライブアクティビティLED]
 
 [cols="4*"]
 |===
@@ -327,7 +327,7 @@ image::../media/2860_dwg_drive_drawer_leds.gif[2860 DWG ドライブドロワー
 |===
 ドライブドロワーを開くと、各ドライブの前面に警告 LED を確認できます。
 
-image::../media/2860_dwg_amber_on_drive.gif[ドライブ上の 2860 DWG オレンジ]
+image::../media/2860_dwg_amber_on_drive.gif[ドライブ警告LED]
 
 [cols="10,90"]
 |===

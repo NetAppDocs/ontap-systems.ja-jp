@@ -82,16 +82,19 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 コントローラモジュールがシャーシから少し引き出されます。
 
 +
-image::../media/drw_a800_pcm_remove.png[コントロオラモシユウルノカイホウ]
+image::../media/drw_a800_pcm_remove.png[コントローラモジュールをリリース]
 
 
 
+[cols="1,4"]
 |===
 
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| 固定ラッチ 
+ a| 
+固定ラッチ
+
 
 
  a| 
@@ -109,7 +112,7 @@ image:../media/legend_icon_02.png["番号2"]
 .. エアダクトの側面にある固定ツメをコントローラモジュールの中央方向に押します。
 .. エアダクトをファンモジュールの方向にスライドさせ、完全に開いた状態になるまで上方向に回転させます。
 +
-image::../media/drw_a800_open_air_duct.png[エアダクトを開く]
+image::../media/drw_a800_open_air_duct.png[エアダクトを開きます。]
 
 +
 [cols="1,4"]
@@ -118,7 +121,9 @@ image::../media/drw_a800_open_air_duct.png[エアダクトを開く]
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| エアダクトの固定ツメ 
+ a| 
+エアダクトの固定ツメ
+
 
 
  a| 
@@ -155,7 +160,7 @@ image:../media/legend_icon_03.png["番号3"]
 
 .. ライザーを持ち上げ、ファンの方に動かしてライザーの金属板の縁がコントローラモジュールの端に接触しないようにします。次に、ライザーを持ち上げてコントローラモジュールから取り外し、安定した平らな場所に置きます。
 +
-image::../media/drw_a800_riser_2_3_remove.png[DRW A800 ライザー 2 3 を取り外します]
+image::../media/drw_a800_riser_2_3_remove.png[ライザー2の取り外し]
 
 +
 [cols="1,4"]
@@ -164,7 +169,9 @@ image::../media/drw_a800_riser_2_3_remove.png[DRW A800 ライザー 2 3 を取�
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| エアダクト 
+ a| 
+エアダクト
+
 
 
  a| 
@@ -177,7 +184,7 @@ image:../media/legend_icon_02.png["番号2"]
 
 . ライザー 2 の下で RTC バッテリの場所を確認します。
 +
-image::../media/drw_a800_rtc_battery_replace.png[DRW A800 RTC バッテリ交換]
+image::../media/drw_a800_rtc_battery_replace.png[RTCバッチを取り外して交換する]
 
 +
 [cols="1,4"]
@@ -186,7 +193,9 @@ image::../media/drw_a800_rtc_battery_replace.png[DRW A800 RTC バッテリ交換
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| エアダクト 
+ a| 
+エアダクト
+
 
 
  a| 
@@ -228,7 +237,7 @@ NOTE: ホルダーから取り外す際に、バッテリの極の向きを確�
 --
 . DIMMの近くでRTCバッテリの場所を確認します。
 +
-image::../media/drw_a800_rtc_battery_replace_v2.png[DRW A800 RTCバッテリの交換v2]
+image::../media/drw_a800_rtc_battery_replace_v2.png[RTCバッテリの取り外しと交換]
 
 +
 [cols="1,4"]
@@ -237,7 +246,9 @@ image::../media/drw_a800_rtc_battery_replace_v2.png[DRW A800 RTCバッテリの�
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| エアダクト 
+ a| 
+エアダクト
+
 
 
  a| 

@@ -15,7 +15,7 @@
 . 障害のあるコントローラモジュールからケーブルを外し、どのケーブルが何に接続されていたかを記録します。
 . カムハンドルのオレンジ色のボタンを下にスライドさせてロックを解除します。
 +
-image::../media/drw_9000_remove_pcm.png[コントローラモジュールの取り外し]
+image::../media/drw_9000_remove_pcm.png[コントローラモジュールを取り外します]
 
 +
 |===
@@ -23,6 +23,9 @@ image::../media/drw_9000_remove_pcm.png[コントローラモジュールの取�
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
+
+
+
  a| 
 カムハンドルのリリースボタン
 
@@ -30,6 +33,9 @@ image:../media/legend_icon_01.png["番号1"]
 
  a| 
 image:../media/legend_icon_02.png["番号2"]
+
+
+
  a| 
 カムハンドル
 
@@ -40,7 +46,7 @@ image:../media/legend_icon_02.png["番号2"]
 
 . コントローラモジュールのふた側を上にして、平らで安定した場所に置きます。カバーの青いボタンを押し、コントローラモジュールの背面にカバーをスライドさせてから、カバーを上に動かしてコントローラモジュールから外します。
 +
-image::../media/drw_9000_pcm_open.png[コントローラモジュールの開閉]
+image::../media/drw_9000_pcm_open.png[コントローラモジュールを開くまたは閉じる]
 
 
 
@@ -49,6 +55,9 @@ image::../media/drw_9000_pcm_open.png[コントローラモジュールの開閉
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
+
+
+
  a| 
 コントローラモジュールのカバーの固定ボタン
 
@@ -59,13 +68,16 @@ image:../media/legend_icon_01.png["番号1"]
 
 次の図またはコントローラモジュールの FRU マップを使用して、ブートメディアの場所を確認します。
 
-image:../media/drw_9000_remove_boot_dev.svg[""]
+image:../media/drw_9000_remove_boot_dev.svg["ブートデバイスを取り外します。"]
 
 |===
 
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
+
+
+
  a| 
 リリースタブを押します
 
@@ -73,6 +85,9 @@ image:../media/legend_icon_01.png["番号1"]
 
  a| 
 image:../media/legend_icon_02.png["番号2"]
+
+
+
  a| 
 ブートメディア
 

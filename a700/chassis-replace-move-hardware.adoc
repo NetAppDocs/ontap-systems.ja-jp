@@ -34,7 +34,7 @@ summary: ファン、ハードドライブ、およびコントローラモジ�
 CAUTION: 電源装置を取り外すときは、重量があるので必ず両手で支えながら作業してください。
 
 +
-image::../media/drw_9000_remove_install_psu_module.gif[DRW 9000 取り付け PSU モジュールを取り外します]
+image::../media/drw_9000_remove_install_psu_module.gif[電源装置ユニット（PSU）の取り外し]
 
 +
 [cols="1,3"]
@@ -43,7 +43,9 @@ image::../media/drw_9000_remove_install_psu_module.gif[DRW 9000 取り付け PSU
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| ロックボタン 
+ a| 
+ロックボタン
+
 |===
 . 残りの電源装置に対して上記の手順を繰り返します。
 
@@ -62,7 +64,7 @@ image:../media/legend_icon_01.png["番号1"]
 CAUTION: ファンモジュールは奥行きがないので、シャーシから突然落下してけがをすることがないように、必ず空いている手でファンモジュールの底面を支えてください。
 
 +
-image::../media/drw_9000_remove_install_fan.png[DRW 9000 取り付けファンを取り外します]
+image::../media/drw_9000_remove_install_fan.png[ファンの取り外し]
 
 +
 [cols="1,3"]
@@ -71,7 +73,9 @@ image::../media/drw_9000_remove_install_fan.png[DRW 9000 取り付けファン�
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| オレンジ色のリリースボタン 
+ a| 
+オレンジ色のリリースボタン
+
 |===
 . ファンモジュールを脇へ置きます。
 . 残りのファンモジュールに対して上記の手順を繰り返します。
@@ -87,7 +91,7 @@ image:../media/legend_icon_01.png["番号1"]
 . 障害のあるコントローラモジュールからケーブルを外し、どのケーブルが何に接続されていたかを記録します。
 . カムハンドルのオレンジ色のボタンを下にスライドさせてロックを解除します。
 +
-image::../media/drw_9000_remove_pcm.png[コントローラモジュールの取り外し]
+image::../media/drw_9000_remove_pcm.png[コントローラモジュールを取り外します]
 
 +
 [cols="1,3"]
@@ -96,7 +100,9 @@ image::../media/drw_9000_remove_pcm.png[コントローラモジュールの取�
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| カムハンドルのリリースボタン 
+ a| 
+カムハンドルのリリースボタン
+
 
 
  a| 
@@ -147,7 +153,9 @@ image::../media/drw_9000_remove_pcie_module.png[PCIeモジュールの取り外�
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| 文字と数字が記載された I/O カムラッチ 
+ a| 
+文字と数字が記載された I/O カムラッチ
+
 
 
  a| 
@@ -171,7 +179,7 @@ image:../media/legend_icon_02.png["番号2"]
 
 . モジュールハンドルのオレンジ色のロックボタンを押し、 DCPM モジュールをシャーシから取り出します。
 +
-image::../media/drw_9000_remove_nv_battery.png[DRW 9000 nv バッテリを取り外します]
+image::../media/drw_9000_remove_nv_battery.png[NVバッテリーを取り外します。]
 
 +
 [cols="1,3"]
@@ -180,7 +188,9 @@ image::../media/drw_9000_remove_nv_battery.png[DRW 9000 nv バッテリを取り
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| DCPM モジュールのオレンジ色のロックボタン 
+ a| 
+DCPM モジュールのオレンジ色のロックボタン
+
 |===
 . DCPM モジュールを安全な場所に置き、残りの DCPM モジュールに対してこの手順を繰り返します。
 

@@ -80,15 +80,18 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 NOTE: コントローラモジュールを取り外しにくい場合は、（腕を交差させて）内側から穴に人さし指を入れます。
 
 +
-image::../media/drw_a250_pcm_remove_install.png[ラッチを開く]
+image::../media/drw_a250_pcm_remove_install.png[ラッチを開きます。]
 
 +
+[cols="1,4"]
 |===
 
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| レバー 
+ a| 
+レバー
+
 
 
  a| 
@@ -103,6 +106,7 @@ image:../media/legend_icon_02.png["番号2"]
 image::../media/drw_a250_open_controller_module_cover.png[コントローラモジュールのカバーを開く]
 
 +
+[cols="1,4"]
 |===
 
 
@@ -119,7 +123,7 @@ image::../media/legend_icon_02.png[番号2]
 |===
 . エアダクトカバーを持ち上げて外します。
 +
-image::../media/drw_a250_remove_airduct_cover.png[エアダクトカバーの持ち上げ]
+image::../media/drw_a250_remove_airduct_cover.png[エアダクトカバーを持ち上げて取り外します。]
 
 
 
@@ -135,15 +139,18 @@ RTC バッテリを交換するには、コントローラ内でバッテリの�
 video::6ed27f71-d3a7-4cee-8d9f-ac5b016c982d[panopto]
 . ヒートシンクとミッドプレーンの間にある RTC バッテリの位置を確認し、図のように完全に取り外します。
 +
-image::../media/drw_a250_remove_rtc_batt.png[DRW A250 RTC BATT を取り外します]
+image::../media/drw_a250_remove_rtc_batt.png[RTCバッテリの取り外し]
 
 +
+[cols="1,4"]
 |===
 
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| タブをバッテリケースからゆっくりと引き出します。* 注意： * 積極的に離れて引き出すと、タブが外れてしまう可能性があります。 
+ a| 
+タブをバッテリケースからゆっくりと引き出します。* 注意： * 積極的に離れて引き出すと、タブが外れてしまう可能性があります。
+
 
 
  a| 

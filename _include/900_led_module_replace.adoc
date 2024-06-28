@@ -9,15 +9,15 @@ LED USB モジュールは、コンソールポートおよびシステムステ
 == 手順 1 ： LED USB モジュールを交換します
 
 .手順
-. 古い LED USB モジュールを取り外します。
+. 障害LED USBモジュールを取り外します。
 +
 .アニメーション- LED - USBモジュールの取り外し/取り付け
 video::eb715462-cc20-454f-bcf9-adf9016af84e[panopto]
 +
-image::../media/drw_a900_remove_replace_LED_mod.png[DRW a900 は LED モードを交換してください]
+image::../media/drw_a900_remove_replace_LED_mod.png[LED USBモジュールの取り外し]
 
 +
-[cols="10,90"]
+[cols="1,4"]
 |===
 
 

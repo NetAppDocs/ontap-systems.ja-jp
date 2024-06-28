@@ -34,9 +34,10 @@ NOTE: DCPM モジュールは取り外してから 5 分以内にシャーシ内
 
 . モジュールハンドルのオレンジ色のロックボタンを押し、 DCPM モジュールをシャーシから取り出します。
 +
-image::../media/drw_9000_remove_nv_battery.png[DRW 9000 nv バッテリを取り外します]
+image::../media/drw_9000_remove_nv_battery.png[DCPMバッテリの取り外し]
 
 +
+[cols="1,4"]
 |===
 
 

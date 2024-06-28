@@ -91,15 +91,18 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 コントローラモジュールがシャーシから少し引き出されます。
 
 +
-image::../media/drw_a800_pcm_remove.png[コントロオラモシユウルノカイホウ]
+image::../media/drw_a800_pcm_remove.png[コントローラモジュールをリリース]
 
 +
+[cols="1,4"]
 |===
 
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| 固定ラッチ 
+ a| 
+固定ラッチ
+
 
 
  a| 
@@ -128,7 +131,9 @@ image::../media/drw_a800_open_air_duct.png[エアダクトを開く]
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| エアダクトの固定ツメ 
+ a| 
+エアダクトの固定ツメ
+
 
 
  a| 
@@ -154,7 +159,7 @@ NVDIMMを交換するには、エアダクトの上にあるNVDIMMマップラ�
 
 . NVDIMM を取り外しまたは移動する場合は、ライザーの固定ラッチを解除してから、該当するライザーを取り外します。
 +
-image::../media/drw_a800_nvdimm_replace.png[DRW A800 NVDIMM の交換]
+image::../media/drw_a800_nvdimm_replace.png[NVDIMMの交換]
 
 +
 [cols="1,4"]
@@ -163,7 +168,9 @@ image::../media/drw_a800_nvdimm_replace.png[DRW A800 NVDIMM の交換]
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| エアダクトカバー 
+ a| 
+エアダクトカバー
+
 
 
  a| 
@@ -208,7 +215,7 @@ NOTE: NVDIMM がスロットにまっすぐ差し込まれていることを目�
 .. カチッという音がして固定ツメが所定の位置に収まるまで、エアダクトをライザーの方向にスライドさせます。
 .. エアダクトが正しく取り付けられ、所定の位置に固定されていることを確認します。
 +
-image::../media/drw_a700s_close_air_duct.png[エアダクトを閉じる]
+image::../media/drw_a700s_close_air_duct.png[エアダクトを閉じます。]
 
 +
 [cols="1,4"]
@@ -217,7 +224,9 @@ image::../media/drw_a700s_close_air_duct.png[エアダクトを閉じる]
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| 固定ツメ 
+ a| 
+固定ツメ
+
 
 
  a| 

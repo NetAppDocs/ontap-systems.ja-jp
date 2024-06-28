@@ -192,10 +192,10 @@ mcc1A::> metrocluster operation show
 コントローラモジュールがシャーシから少し引き出されます。
 
 +
-image::../media/drw_A400_Remove_controller.png[コントロオラモシユウルノカイホウ]
+image::../media/drw_A400_Remove_controller.png[コントローラモジュールをリリース]
 
 +
-[cols="10,90"]
+[cols="1,4"]
 |===
 
 
@@ -229,7 +229,7 @@ image:../media/legend_icon_02.png["番号2"]
 
 .アニメーション- RTCバッテリを交換します
 video::80fe7a9b-de6f-46e0-a18b-aadb0157263d[panopto]
-image::../media/drw_A400_rtc-batt.png[DRW A400 RTC BATT]
+image::../media/drw_A400_rtc-batt.png[RTCバッテリの取り外しと交換]
 
 [cols="10,90"]
 |===
@@ -290,7 +290,7 @@ NOTE: ホルダーから取り外す際に、バッテリの極の向きを確�
 video::0310fe80-b129-4685-8fef-ab19010e720a[panopto]
 image::../media/drw_A400_Install_controller_source.png[コントローラの取り付け]
 
-[cols="10,90"]
+[cols="1,4"]
 |===
 
 

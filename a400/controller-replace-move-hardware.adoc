@@ -35,7 +35,7 @@ video::ca74d345-e213-4390-a599-aae10019ec82[panopto]
 コントローラモジュールがシャーシから少し引き出されます。
 
 +
-image:../media/drw_A400_Remove_controller.png["コントロオラモシユウルノカイホウ"]
+image:../media/drw_A400_Remove_controller.png["コントローラモジュールをリリース"]
 
 +
 [cols="10a,90a"]
@@ -66,7 +66,7 @@ image:../media/legend_icon_02.png["番号2"]
 video::49053752-e813-4c15-a917-ab190147fa6e[panopto]
 
 
-image::../media/drw_a400_empty_riser_remove.png[DRW 400空 のライザーが取り外されました]
+image::../media/drw_a400_empty_riser_remove.png[空のライザーの取り外し]
 
 [cols="10,90"]
 |===
@@ -96,7 +96,7 @@ image:../media/legend_icon_01.png["番号1"]
 video::92060115-1967-475b-b517-aad9012f130c[panopto]
 . 電源装置を取り外します。
 +
-image::../media/drw_A400_psu.png[電源装置の交換]
+image::../media/drw_A400_psu.png[電源装置を交換してください]
 
 +
 [cols="10,90"]
@@ -197,7 +197,7 @@ NOTE: 指示があるまで、バッテリケーブルをマザーボードに�
 
 .アニメーション-ブートメディアを移動します
 video::2a14099c-85de-4a84-867c-aad9012efac8[panopto]
-image::../media/drw_A400_Replace-boot_media.png[ブートメディアの取り外し]
+image::../media/drw_A400_Replace-boot_media.png[ブートメディアを取り外します。]
 
 [cols="10,90"]
 |===
@@ -324,7 +324,7 @@ DIMM の場所を確認し、障害のあるコントローラモジュールか
 
 .アニメーション- DIMMを移動します
 video::717b52fa-f236-4f3d-b07d-aad9012f51a3[panopto]
-image::../media/drw_A400_Replace-NVDIMM-DIMM.png[DIMM の移動]
+image::../media/drw_A400_Replace-NVDIMM-DIMM.png[DIMMの移動]
 
 [cols="10,90"]
 |===

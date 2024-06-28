@@ -134,10 +134,10 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 .アニメーション-コントローラを取り外します
 video::256721fd-4c2e-40b3-841a-adf2000df5fa[panopto]
 +
-image::../media/drw_a900_remove_PCM.png[コントローラの解放]
+image::../media/drw_a900_remove_PCM.png[コントローラを解放します。]
 
 +
-[cols="10,90"]
+[cols="1,4"]
 |===
 
 
@@ -160,10 +160,10 @@ image:../media/legend_icon_02.png["番号2"]
 
 . コントローラモジュールのふた側を上にして、平らで安定した場所に置きます。カバーの青いボタンを押し、コントローラモジュールの背面にカバーをスライドさせてから、カバーを上に動かしてコントローラモジュールから外します。
 +
-image::../media/drw_a900_PCM_open.png[コントローラモジュールからのカバーの持ち上げ]
+image::../media/drw_a900_PCM_open.png[カバーを持ち上げてコントローラモジュールから取り外します。]
 
 +
-[cols="10,90"]
+[cols="1,4"]
 |===
 
 
@@ -186,9 +186,8 @@ NOTE: Ver2コントローラに搭載されているDIMMソケットの数が少
 
 . 接地対策がまだの場合は、自身で適切に実施します。
 . コントローラモジュールで DIMM の場所を確認します。
-
-
-image::../media/drw_a900_DIMM_map.png[DRW a900 DIMM マップ]
++
+image::../media/drw_a900_DIMM_map.png[DIMMの場所マップ]
 
 . DIMM の両側にある 2 つのツメをゆっくり押し開いて DIMM をスロットから外し、そのままスライドさせてスロットから取り出します。
 +
@@ -202,7 +201,7 @@ video::db161030-298a-4ae4-b902-adf2000e2aa4[panopto]
 image::../media/drw_a900_replace_PCM_dimms.png[DIMMの取り外し]
 
 +
-[cols="10,90"]
+[cols="1,4"]
 |===
 
 
@@ -246,10 +245,10 @@ IMPORTANT: DIMM がスロットにまっすぐ差し込まれていることを�
 . 接地対策がまだの場合は、自身で適切に実施します。
 . コントローラモジュールのカバーをまだ取り付けていない場合は取り付けます。
 +
-image::../media/drw_a900_PCM_open.png[コントローラモジュールからのカバーの持ち上げ]
+image::../media/drw_a900_PCM_open.png[カバーを持ち上げてコントローラモジュールから取り外します。]
 
 +
-[cols="10,90"]
+[cols="1,4"]
 |===
 
 
@@ -264,10 +263,10 @@ image:../media/legend_icon_01.png["番号1"]
 .アニメーション-コントローラを取り付けます
 video::099237f3-d7f2-4749-86e2-adf2000df53c[panopto]
 +
-image::../media/drw_a900_remove_PCM.png[コントローラの解放]
+image::../media/drw_a900_remove_PCM.png[コントローラを解放します。]
 
 +
-[cols="10,90"]
+[cols="1,4"]
 |===
 
 
