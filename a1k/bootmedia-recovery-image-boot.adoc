@@ -1,0 +1,69 @@
+---
+permalink: a1k/bootmedia-recovery-image-boot.html 
+sidebar: sidebar 
+keywords: aff a1k, boot the recovery image 
+summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
+---
+= リカバリイメージのブート- AFF A1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
+
+.手順
+. LOADERプロンプトで、USBフラッシュドライブからリカバリイメージをブートします。_boot_recovery_
++
+イメージが USB フラッシュドライブからダウンロードされます。
+
+. プロンプトが表示されたら、イメージの名前を入力するか、画面に表示されたデフォルトのイメージをそのまま使用します。
+. var ファイルシステムを復元します。
++
+[cols="1,2"]
+|===
+| システム構成 | 作業 
+
+
+ a| 
+ネットワーク接続
+ a| 
+.. 障害コントローラで、次のメッセージが表示されたら_Y_を押します。 `Do you want to restore the backup configuration now?`
+.. 障害コントローラで、上書きするかどうかを確認するメッセージが表示されたら_Y_を押します `/etc/ssh/ssh_host_ecdsa_key`。
+.. 正常なパートナーコントローラで、障害コントローラをadvanced権限レベルに設定します。_set -privilege advanced _。
+.. 正常なパートナーコントローラで、restore backupコマンド_system node restore -backup -node local-target-address impaired_node_IP_address_を実行します。
++
+
+NOTE: 正常に復元された以外のメッセージが表示される場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
+
+.. 正常なパートナーコントローラで、障害のあるコントローラをadminレベルに戻します。_set -privilege admin_。
+.. 障害コントローラで、というメッセージが表示されたら、_y_を押します `Was the restore backup procedure successful?`。
+.. 障害コントローラで、というメッセージが表示されたら、_y_を押します `...would you like to use this restored copy now?`。
+.. 障害コントローラで、障害コントローラのリブートを求めるプロンプトが表示されたら_y_を押し、ブートメニューとして_Ctrl+C_を押します。
+.. システムで暗号化が使用されていない場合は、_option 1 Normal Bootを選択します。使用されていない場合は、に進みます。 link:bootmedia-encryption-restore.html["キー管理ツールのリストア"]
+.. パートナーコントローラにコンソールケーブルを接続します。
+.. storage failover giveback -fromnode local_コマンドを使用してコントローラをギブバックします。
++
+... 自動ギブバックを無効にした場合は、_storage failover modify -node local-auto-giveback true_コマンドを使用してリストアします。
+
+
+.. AutoSupportが有効になっている場合は、_system node AutoSupport invoke -node *-type all -message MAINT=end_commandを使用して、ケースの自動作成をリストアまたは抑制解除します。
+
+
+
+
+ a| 
+ネットワーク接続がありません
+ a| 
+連絡先 https://support.netapp.com["ネットアップサポート"]。
+
+
+
+ a| 
+ネットワークに接続されておらず、 MetroCluster IP 構成になっています
+ a| 
+連絡先 https://support.netapp.com["ネットアップサポート"]。
+
+|===
+

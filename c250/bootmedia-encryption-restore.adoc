@@ -73,7 +73,6 @@ NOTE: データは 'securitykey-manager backup show または 'securitykey-manag
 +
 システムがブートし、「 Waiting for giveback... 」プロンプトが表示されます。
 
-. パートナーコントローラにコンソールケーブルを接続し、「 admin 」としてログインします。
 . storage failover show コマンドを使用して ' ターゲット・コントローラがギブバック可能な状態になっていることを確認します
 . ギブバックを実行するには、「 storage failover giveback -fromnode local-only -cfo-aggregates true 」コマンドを使用して CFO アグリゲートのみをギブバックします。
 +

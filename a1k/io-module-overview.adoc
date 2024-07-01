@@ -1,0 +1,14 @@
+---
+permalink: a1k/io-module-overview.html 
+sidebar: sidebar 
+keywords: aff a1k, replace io module 
+summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用フィールド交換可能ユニット（FRU）コンポーネントと交換する必要があります。 
+---
+= I/Oモジュールの追加と交換- AFF A1Kの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージシステム内の障害が発生したI/Oモジュールは、同じタイプのI/Oモジュールに交換することも、別の種類のI/Oモジュールに交換することもできます。空きスロットのあるシステムにI/Oモジュールを追加することもできます。

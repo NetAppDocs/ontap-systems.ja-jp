@@ -1,0 +1,33 @@
+---
+permalink: ns224/hot-add-shelf-overview.html 
+sidebar: sidebar 
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, overview 
+summary: NS224ドライブシェルフをホットアドするには、HAペアが一定の要件を満たしている必要があります。 
+---
+= ホットアドワークフロー- NS224シェルフ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NS224シェルフをホットアドするには、次のワークフロー手順を実行します。
+
+.作業を開始する前に
+NS224シェルフをホットアドするには、HAペアが一定の要件を満たしている必要があります。を確認します link:requirements-hot-add-shelf.html["ホットアドの要件とベストプラクティス"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:prepare-hot-add-shelf.html["シェルフのホットアドの準備"]
+[role="quick-margin-para"]
+プラットフォームのモデルによっては、追加のRoCE対応PCIeカードまたはI/Oモジュールの取り付け、ストレージ用の非専用RoCE対応イーサネットポートの設定、スロット障害に対する耐障害性のために異なるスロットの2組のポートにまたがる既存のシェルフのケーブル再接続が必要になる場合があります。 ドライブ所有権を手動で割り当てる場合は、自動ドライブ割り当てを無効にします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:install-hot-add-shelf.html["シェルフを設置する"]
+[role="quick-margin-para"]
+シェルフを設置するには、シェルフのレールキットを取り付け、Telcoラックまたはキャビネットにシェルフを設置して固定します。次に、電源コードを接続してシェルフの電源をオンにし、一意のシェルフIDを割り当ててHAペア内でシェルフが区別されるようにします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:cable-overview-hot-add-shelf.html["シェルフをケーブル接続"]
+[role="quick-margin-para"]
+ホットアドするシェルフをHAペアの各コントローラに2つ接続されるようにケーブル接続します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:complete-hot-add-shelf.html["ホットアドの完了"]
+[role="quick-margin-para"]
+ホットアドの準備の一環として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。

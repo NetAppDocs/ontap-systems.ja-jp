@@ -1,0 +1,35 @@
+---
+permalink: a70-90/controller-replace-restore-system-rma.html 
+sidebar: sidebar 
+keywords: aff a70, aff a90, how to restore NetApp Storage Encryption, how to complete the replacement process 
+summary: 'システムを完全な状態にリストアするには、LIFを確認し、クラスタの健常性を確認して、障害が発生したパーツをNetAppに戻す必要があります。RMA番号を確認する場合や、交換手順についてサポートが必要な場合は、テクニカルサポートにお問い合わせください。にアクセスするか、日本国内サポート用電話番号：国内フリーダイヤル0066-33-123-265または0066-33-821-274（国際フリーフォン800-800-80-800も使用可能）までご連絡ください。 https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"]' 
+---
+= システムのリストアの完了- AFF A70、AFF A90
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+システムを完全な状態にリストアするには、LIFを確認し、クラスタの健常性を確認して、障害が発生したパーツをNetAppに戻す必要があります。
+
+
+
+== 手順1：LIFを確認してクラスタの健全性を確認する
+
+_replacement_nodeを使用可能な状態に戻す前に、LIFがホームポートにあることを確認し、クラスタの健全性を確認し、自動ギブバックをリセットする必要があります。
+
+.手順
+. 論理インターフェイスがホームサーバとポートに報告されていることを確認します。「 network interface show -is-home false 」
++
+いずれかのLIFがfalseと表示された場合は、ホームポートにリバートします。 `network interface revert -vserver * -lif *`
+
+. クラスタの健全性を確認します。詳細については、技術情報の記事を参照して https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["ONTAP でスクリプトを使用してクラスタの健全性チェックを実行する方法"^] ください。
+. 自動ギブバックを無効にした場合は、再度有効にします。「 storage failover modify -node local-auto-giveback true 」
+
+
+
+
+== 手順2：故障した部品をNetAppに返却する
+
+障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。

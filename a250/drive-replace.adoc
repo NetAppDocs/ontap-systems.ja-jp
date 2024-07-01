@@ -104,7 +104,7 @@ NOTE: 障害が発生したドライブのアクティビティ（緑） LED は
 +
 このコマンドは、どちらのコントローラモジュールでも入力できます。
 
-.. 各ドライブを割り当てます。「 storage disk assign -disk disk_name -owner owner_name 」
+.. 各ドライブを割り当てます。 `storage disk assign -disk disk_name -owner node_name`
 +
 このコマンドは、どちらのコントローラモジュールでも入力できます。
 

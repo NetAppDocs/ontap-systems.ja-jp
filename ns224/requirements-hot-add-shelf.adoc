@@ -1,0 +1,60 @@
+---
+permalink: ns224/requirements-hot-add-shelf.html 
+sidebar: sidebar 
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, requirement 
+summary: NS224ドライブシェルフをホットアドするには、HAペアが一定の要件を満たしている必要があります。 
+---
+= ホットアドNS224シェルフの要件とベストプラクティス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+シェルフをホットアドする前に、要件とベストプラクティスを確認してください。
+
+
+
+== 要件
+
+NS224シェルフをホットアドするには、HAペアが一定の要件を満たしている必要があります。
+
+* *サポートされているONTAPバージョン*：使用しているプラットフォームモデルとONTAPのバージョンが、ホットアドするNS224シェルフとドライブをサポートしている必要があります。を参照し https://hwu.netapp.com["NetApp Hardware Universe の略"^]
+* *シェルフ数*：HAペアのシェルフ数が、サポートされる最大シェルフ数（少なくともホットアドするシェルフ数）より少なくなっている必要があります。
++
+シェルフをホットアドしたあとは、 HA ペアでサポートされる最大シェルフ数を超えることはできません。を参照して https://hwu.netapp.com["NetApp Hardware Universe の略"^]
+
+* *ケーブル配線*：
++
+** シェルフを接続するための正しい数とタイプのケーブルがあることを確認します。を参照して https://hwu.netapp.com["NetApp Hardware Universe の略"^]
+** すでに NS224 シェルフがある HA ペアにシェルフをホットアドする場合、 HA ペアにストレージケーブル接続に関するエラーメッセージを表示することはできず、マルチパス HA 構成でケーブル接続する必要があります。
++
+を実行すると、ストレージケーブル接続に関するエラーメッセージと対処方法を確認できます  https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^] 。
+
+
+
+
+
+
+
+== ベストプラクティス
+
+NS224シェルフをホットアドする前に、次のベストプラクティスを確認してください。
+
+* *ベストプラクティス：*シェルフをホットアドする前に、の最新バージョンをインストールしておくことを推奨 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["Disk Qualification Package"^] します。
++
+DQP の最新バージョンをインストールしておくと、新しく認定されたドライブがシステムで認識されて使用できるようになります。これにより、ドライブの情報が最新でない場合に表示されるシステムイベントメッセージを回避できるほか、ドライブが認識されないために発生するドライブのパーティショニングを回避できます。さらに、ドライブのファームウェアが最新でない場合も、通知で知ることができます。
+
+* *ベストプラクティス：*シェルフのホットアドの前後に実行することを推奨 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^] します。
++
+シェルフをホットアドする前に Active IQ Config Advisor を実行すると、既存のシェルフイーサネット（ ENET ）接続の Snapshot が作成され、 NVMe シェルフモジュール（ NSM ）ファームウェアのバージョンが確認されます。また、 HA ペアですでに使用されているシェルフ ID を確認できます。
+
++
+シェルフをホットアドしたあとに Active IQ Config Advisor を実行すると、シェルフが正しくケーブル接続されており、 HA ペア内でシェルフ ID が一意であることを確認できます。
+
+* *ベストプラクティス：*新しいシェルフを追加する前に、ストレージシステムにとの最新バージョンをインストールしておくことを推奨 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NVMeシェルフモジュール（NSM）ファームウェア"^] https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ドライブファームウェア"^] します。
++
+
+NOTE: ファームウェアをシェルフおよびそのコンポーネントに対応しないバージョンにリバートしないでください。
+
+

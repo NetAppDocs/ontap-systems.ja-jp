@@ -78,5 +78,5 @@ security key-manager key query を使用して ' すべての認証キーの Res
 . パートナーコントローラにコンソールケーブルを接続します。
 . storage failover giveback -fromnode local コマンドを使用して、コントローラをギブバックします。
 . 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
-. AutoSupportが無効になっていた場合は、を使用してリストアします `system node autosupport invoke -node * -type all -message MAINT=END`
+. AutoSupportが有効になっている場合は、 `system node autosupport invoke -node * -type all -message MAINT=END`
 

@@ -25,6 +25,16 @@ ONTAP 9リリースの既知の問題、制限事項、およびアップグレ�
 
 
  a| 
+* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf["AFF A1K用"]
+* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf["AFF A70用"]
+* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf["AFF A90用"]
+
+ a| 
+ONTAP 9.15.1
+
+
+
+ a| 
 https://www.netapp.com/data-storage/all-flash-san-storage-array/["ASA C250"]
  a| 
 ONTAP 9.13.1P1
@@ -352,6 +362,15 @@ ONTAP 9.6
 [cols="25h,~,~"]
 |===
 | 機能性 | 概要 と詳細情報の入手方法 | 最初から利用可能です 
+
+
+ a| 
+マルチクラスタインターコネクトスイッチ
+ a| 
+マルチクラスタ構成では、4x4および2x8ノード構成用の2つの新しいリファレンス構成ファイルによって、複数のクラスタで同じクラスタスイッチを共有できます。
+ a| 
+ONTAP 9.14.1
+
 
 
  a| 

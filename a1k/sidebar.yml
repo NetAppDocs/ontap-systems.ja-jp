@@ -1,0 +1,78 @@
+---
+section: a1k
+title: AFF A1Kシステム
+entries:
+- title: 設置とセットアップ
+  pdf-filename: AFF A1Kのインストールとセットアップ
+  entries:
+  - title: インストールワークフロー
+    url: "/a1k/install-overview.html"
+  - title: インストールの準備
+    url: "/a1k/install-prepare.html"
+  - title: ハードウェアを設置
+    url: "/a1k/install-hardware.html"
+  - title: ハードウェアのケーブル接続
+    url: "/a1k/install-cable.html"
+  - title: システムの電源を入れる
+    url: "/a1k/install-power-hardware.html"
+  - title: システムのセットアップを完了します
+    url: "/a1k/install-complete.html"
+- title: メンテナンス
+  pdf-filename: AFF A1Kのメンテナンス
+  entries:
+  - title: 概要
+    url: "/a1k/maintain-overview.html"
+  - title: ブートメディア
+    pdf-filename: AFF A1Kブートメディア
+    entries:
+    - title: ブートメディアの交換の概要
+      url: "/a1k/bootmedia-replace-overview.html"
+    - title: オンボード暗号化キーを確認
+      url: "/a1k/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a1k/bootmedia-shutdown.html"
+    - title: ブートメディアを交換します
+      url: "/a1k/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/a1k/bootmedia-recovery-image-boot.html"
+    - title: 暗号化リストア
+      url: "/a1k/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/a1k/bootmedia-complete-rma.html"
+  - title: コントローラ
+    pdf-filename: AFF A1Kコントローラモジュール
+    entries:
+    - title: コントローラモジュールの交換の概要
+      url: "/a1k/controller-replace-overview.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a1k/controller-replace-shutdown.html"
+    - title: コントローラを交換してください
+      url: "/a1k/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/a1k/controller-replace-system-config-restore-and-verify.html"
+    - title: コントローラをギブバック
+      url: "/a1k/controller-replace-recable-reassign-disks.html"
+    - title: コントローラ交換後の処理
+      url: "/a1k/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/a1k/dimm-replace.html"
+  - title: ファン
+    url: "/a1k/fan-replace.html"
+  - title: NVRAM
+    url: "/a1k/nvram-replace.html"
+  - title: NVバッテリ
+    url: "/a1k/nvdimm-battery-replace.html"
+  - title: I/O モジュール
+    entries:
+    - title: I/Oモジュールの追加または交換の概要
+      url: "/a1k/io-module-overview.html"
+    - title: I/Oモジュールの追加
+      url: "/a1k/io-module-add.html"
+    - title: I/Oモジュールの交換
+      url: "/a1k/io-module-replace.html"
+  - title: 電源装置
+    url: "/a1k/power-supply-replace.html"
+  - title: リアルタイムクロックバッテリ
+    url: "/a1k/rtc-battery-replace.html"
+  - title: システム管理モジュール
+    url: "/a1k/system-management-replace.html"

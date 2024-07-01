@@ -15,7 +15,7 @@
 コントローラモジュールのストレージとネットワークをケーブル接続し直します。
 
 .手順
-. システムにケーブルを再接続します。
+. コントローラモジュールをストレージ接続とネットワーク接続にケーブルを再接続します。
 . を使用して、ケーブル接続が正しいことを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]。
 +
 .. Config Advisor をダウンロードしてインストールします。

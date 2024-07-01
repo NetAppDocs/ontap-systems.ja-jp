@@ -1,0 +1,61 @@
+---
+permalink: ns224/cable-overview-hot-add-shelf.html 
+sidebar: sidebar 
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, cable, hot-add an ns224 drive shelf 
+summary: ホットアドする各NS224シェルフをケーブル接続して、HAペアの各コントローラに各シェルフが2つ接続されるようにします。 
+---
+= ホットアドNS224シェルフのケーブル接続の概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ホットアドする各NS224シェルフをケーブル接続して、HAペアの各コントローラに各シェルフが2つ接続されるようにします。
+
+このケーブル接続セクションでは、NS224シェルフを次のストレージシステムにケーブル接続する方法について説明します。
+
+* link:cable-aff-systems-hot-add-shelf.html["AFFシステムへのケーブル接続"]
+* link:cable-asa-systems-hot-add-shelf.html["ASAシステムへのケーブル接続"]
+* link:cable-eoa-systems-hot-add-shelf.html["EOAシステムへのケーブル接続"]
+
+
+
+
+== このタスクについて
+
+* ケーブルコネクタの正しい向きを確認し、NS224 NSM100シェルフモジュールのポートの位置とラベルを確認します。
++
+** ケーブルは、コネクタのプルタブを上に向けて挿入します。
++
+ケーブルを正しく挿入すると、カチッという音がして所定の位置に収まります。
+
++
+ケーブルの両端を接続すると、シェルフポートとコントローラポートの LNK （緑色） LED が点灯します。ポートの LNK LED が点灯しない場合は、ケーブルを再接続してください。
+
++
+image::../media/oie_cable_pull_tab_up.png[ケーブルは、コネクタのプルタブを上向きにして挿入します。]
+
+** 次の図は、シェルフNSM100ポート、e0a、e0bを物理的に特定するのに役立ちます。
++
+NS224シェルフには、NSM100モジュールが2つ搭載されています。上部モジュールはスロットA（NSM A）に、下部モジュールはスロットB（NSM B）に装着します。
+
++
+各NSM100モジュールには、100GbE QSFP28ポートが2つ（e0aとe0b）搭載されています。
+
++
+image::../media/drw_ns224_back_ports.png[NS224 NSM100モジュールのポートe0aとe0b]
+
+
+
+* ホットアドしたシェルフのケーブル接続が完了すると、 ONTAP でシェルフが認識されます。
++
+** ドライブ所有権は、自動ドライブ割り当てが有効になっている場合に割り当てられます。
+** 必要に応じて、 nsm シェルフのファームウェアとドライブのファームウェアが自動的に更新されます。
++
+
+NOTE: ファームウェアの更新には最大 30 分かかる場合があります。
+
+
+
+

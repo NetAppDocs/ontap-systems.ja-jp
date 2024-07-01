@@ -8,7 +8,7 @@ indexpage:
   - title: NS224シェルフの設置
     links:
     - title: シェルフをホットアドします
-      url: "../ns224/hot-add-shelf.html"
+      url: "../ns224/hot-add-shelf-overview.html"
     - title: シェルフ ID を変更します
       url: "../ns224/change-shelf-id.html"
     - title: シェルフをスイッチ接続型ストレージとしてケーブル接続

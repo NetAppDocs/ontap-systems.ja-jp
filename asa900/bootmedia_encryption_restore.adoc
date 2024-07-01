@@ -23,6 +23,7 @@ OKM 、 NSE 、または NVE 構成のリストアに使用するセクション
 
 == オンボードキーマネージャを有効にした場合は、 NVE または NSE をリストアします
 
+.手順
 . コンソールケーブルをターゲットコントローラに接続します。
 . LOADER プロンプトで boot_ontap コマンドを使用してコントローラをブートします。
 . コンソールの出力を確認します。
@@ -110,7 +111,7 @@ NOTE: 「 Restored 」列が「 yes/true 」以外の場合は、カスタマサ
 
 . クラスタシェルプロンプトで、 net int show -is-home false コマンドを入力し、ホームコントローラとポートにない論理インターフェイスを表示します。
 +
-いずれかのインターフェイスが「 false 」と表示されている場合は、 net int revert コマンドを使用して、これらのインターフェイスをホームポートに戻します。
+インターフェイスがと表示されている場合 `false`を使用して、それらのインターフェイスをホームポートにリバートします `net int revert -vserver Cluster -lif _nodename_` コマンドを実行します
 
 . コンソール・ケーブルをターゲット・コントローラに移動し 'version -v コマンドを実行して ONTAP のバージョンを確認します
 . 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
@@ -120,6 +121,7 @@ NOTE: 「 Restored 」列が「 yes/true 」以外の場合は、カスタマサ
 
 == ONTAP 9.6 以降を実行しているシステムで NSE / NVE をリストアする
 
+.手順
 . コンソールケーブルをターゲットコントローラに接続します。
 . LOADER プロンプトで boot_ontap コマンドを使用してコントローラをブートします。
 . コンソールの出力を確認します。
@@ -159,7 +161,7 @@ NOTE: CIFS を終了原因すると、データが失われる可能性があり
 . 3 分待ってから、 storage failover show コマンドを使用してフェイルオーバーステータスを確認します。
 . クラスタシェルプロンプトで、「 net int show -is-home false 」コマンドを入力し、ホームコントローラとポートにない論理インターフェイスを表示します。
 +
-いずれかのインターフェイスが「 false 」と表示されている場合は、「 net int revert 」コマンドを使用して、これらのインターフェイスをホームポートに戻します。
+インターフェイスがと表示されている場合 `false`を使用して、それらのインターフェイスをホームポートにリバートします `net int revert -vserver Cluster -lif _nodename_` コマンドを実行します
 
 . コンソール・ケーブルをターゲット・コントローラに移動し 'version -v コマンドを実行して ONTAP のバージョンを確認します
 . 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
@@ -167,12 +169,12 @@ NOTE: CIFS を終了原因すると、データが失われる可能性があり
 . キー管理サーバに保存されている暗号化キーと認証キーを表示するには 'security key-manager key-query コマンドを使用します
 +
 ** リストアされたカラム = 'yes/true' の場合は ' 終了し ' 交換プロセスを完了することができます
-** 'Key Manager type`=external' および 'restored' カラム = が 'yes/true' 以外の場合は 'security key-manager external restore コマンドを使用して認証キーのキー ID を復元します
+** 「 Key Manager type 」 = 「 external 」および「 restored 」列 = 「 yes / true 」以外の場合は、「 securitykey-manager external restore 」コマンドを使用して認証キーのキー ID をリストアします。
 +
 
 NOTE: コマンドが失敗した場合は、カスタマーサポートにお問い合わせください。
 
-** 'Key Manager type`=onboard ' および 'restored' カラム = 'yes/true' 以外の場合は、 security key-manager onboard sync コマンドを使用して Key Manager タイプを再同期します。
+** 「 Key Manager type 」 = 「 onboard 」で「 restored 」列 = 「 yes / true 」以外の場合は、「 securitykey-manager onboard sync 」コマンドを使用して、 Key Manager タイプを再同期します。
 +
 security key-manager key-query コマンドを使用して ' すべての認証キーの Restored カラム = 'yes/true' を確認します
 

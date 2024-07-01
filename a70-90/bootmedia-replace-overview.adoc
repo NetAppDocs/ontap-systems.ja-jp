@@ -1,0 +1,27 @@
+---
+permalink: a70-90/bootmedia-replace-overview.html 
+sidebar: sidebar 
+keywords: aff a70, aff a90, replace the boot media 
+summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
+---
+= ブートメディアの交換の概要- AFF A70、AFF A90
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。ネットワーク構成に応じて、無停止または停止を伴う交換を実行できます。
+
+「 image_xxx.tgz 」を格納できる適切な容量のストレージを搭載した、 FAT32 にフォーマットされた USB フラッシュドライブが必要です。
+
+また ' この手順で後で使用するために 'image_xxx.tgz ファイルを USB フラッシュドライブにコピーする必要があります
+
+* 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。
+* これらの手順のコマンドを正しいコントローラに適用することが重要です。
++
+** impaired_controller は、メンテナンスを実行しているコントローラです。
+** healthy_controller は、障害のあるコントローラの HA パートナーです。
+
+
+
