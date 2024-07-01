@@ -198,19 +198,22 @@ mcc1A::> metrocluster operation show
 
 . ケーブルマネジメントデバイスをコントローラモジュールの右側と左側から取り外し、脇に置きます。
 +
-image::../media/drw_32xx_cbl_mgmt_arm.png[ケーブルマネジメントアームの取り外し[]]
+image::../media/drw_32xx_cbl_mgmt_arm.png[ケーブルマネジメントアームの取り外し]
 
 . コントローラモジュールのカムハンドルの取り付けネジを緩めます。
 +
 image::../media/drw_8020_cam_handle_thumbscrew.png[取り付けネジを緩めてカムハンドルを開く]
 
 +
+[cols="1,4"]
 |===
 
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| 取り付けネジ 
+ a| 
+取り付けネジ
+
 
 
  a| 
@@ -245,7 +248,7 @@ image:../media/legend_icon_02.png["番号2"]
 ストレージシステムには、キャッシングモジュール用の 2 つのスロットが用意されており、デフォルトでは 1 つのスロットのみ使用されます。
 
 +
-image::../media/drw_rxl_fcache.png[DRW rxl fcache]
+image::../media/drw_rxl_fcache.png[キャッシングモジュール取り外しまたは交換]
 
 
 

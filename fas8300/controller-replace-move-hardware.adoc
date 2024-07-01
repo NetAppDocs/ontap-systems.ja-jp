@@ -35,7 +35,7 @@ video::75b6fa91-96b9-4323-b156-aae10007c9a5[panopto]
 . ケーブルマネジメントデバイスをコントローラモジュールから取り外し、脇に置きます。
 . 両方のロックラッチを押し下げ、両方のラッチを同時に下方向に回転させます。
 +
-image::../media/drw_A400_Remove_controller.png[コントロオラモシユウルノカイホウ]
+image::../media/drw_A400_Remove_controller.png[コントローラモジュールをリリース]
 
 +
 コントローラモジュールがシャーシから少し引き出されます。
@@ -51,7 +51,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=49053752-e813-4c1
 
 
 
-image::../media/drw_8300_empty_riser_remove.png[DRW 8300 空のライザーが取り外されました]
+image::../media/drw_8300_empty_riser_remove.png[空のライザーを取り外します。]
 
 . エアダクトの側面にある固定ツメをコントローラモジュールの中央に向かって押します。
 . エアダクトをコントローラモジュールの背面方向にスライドさせ、完全に開いた状態になるまで上方向に回転させます。
@@ -69,7 +69,7 @@ image::../media/drw_8300_empty_riser_remove.png[DRW 8300 空のライザーが�
 
 .アニメーション-電源装置を移動します
 video::92060115-1967-475b-b517-aad9012f130c[panopto]
-image::../media/drw_A400_psu.png[電源装置の交換]
+image::../media/drw_A400_psu.png[電源装置を交換してください]
 
 . 電源装置を取り外します。
 +
@@ -131,7 +131,7 @@ NOTE: 指示があるまで、バッテリケーブルをマザーボードに�
 
 .アニメーション-ブートメディアを移動します
 video::2a14099c-85de-4a84-867c-aad9012efac8[panopto]
-image::../media/drw_A400_Replace-boot_media.png[ブートメディアの取り外し]
+image::../media/drw_A400_Replace-boot_media.png[ブートメディアを取り外します。]
 
 . コントローラモジュールからブートメディアの場所を確認して取り出します。
 +
@@ -174,7 +174,7 @@ image::../media/drw_A400_Replace-PCIe-cards.png[PCIeカードの取り外し]
 
 .アニメーション-メザニンカードとライザー3を移動します
 video::b0c3b575-3434-4e00-a421-aad9012f2e9e[panopto]
-image::../media/drw_A400_Replace-mezz-card.png[メザニンカードの取り外し]
+image::../media/drw_A400_Replace-mezz-card.png[メザニンカードを取り外します。]
 
 . PCIe ライザー 1 と 2 を障害のあるコントローラモジュールから交換用コントローラモジュールに移動します。
 +
@@ -216,7 +216,7 @@ NOTE: FAS8300には、Ver2コントローラモジュールのキャッシング
 
 .アニメーション-キャッシングモジュールを移動します
 video::d6a43902-0e78-40c3-a2bd-aad9012f5b94[panopto]
-image::../media/drw_A400_Replace-flashcache.png[DRW A400 FlashCache の交換]
+image::../media/drw_A400_Replace-flashcache.png[キャッシングモジュールの取り外しと交換]
 
 . 接地対策がまだの場合は、自身で適切に実施します。
 . 障害のあるコントローラモジュールから交換用コントローラモジュールにキャッシングモジュールを移動します。
@@ -242,7 +242,7 @@ DIMM の場所を確認し、障害のあるコントローラモジュールか
 
 .アニメーション- DIMMを移動します
 video::717b52fa-f236-4f3d-b07d-aad9012f51a3[panopto]
-image::../media/drw_A400_Replace-NVDIMM-DIMM.png[DIMM の移動]
+image::../media/drw_A400_Replace-NVDIMM-DIMM.png[DIMMの移動]
 
 . コントローラモジュールで DIMM の場所を確認します。
 . DIMM を交換用コントローラモジュールに正しい向きで挿入できるように、ソケット内の DIMM の向きをメモします。

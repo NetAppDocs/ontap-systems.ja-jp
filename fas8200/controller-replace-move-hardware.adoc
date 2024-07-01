@@ -26,7 +26,7 @@ summary: コントローラモジュールハードウェアを交換するに�
 
 . ケーブルマネジメントデバイスをコントローラモジュールの右側と左側から取り外し、脇に置きます。
 +
-image::../media/drw_32xx_cbl_mgmt_arm.png[ケーブルマネジメントアームの取り外し[]]
+image::../media/drw_32xx_cbl_mgmt_arm.png[ケーブルマネジメントアームの取り外し]
 
 . ケーブルを外したあとで SFP モジュールをシステムに残した場合は、それらを新しいコントローラモジュールに移動します。
 . コントローラモジュールのカムハンドルの取り付けネジを緩めます。
@@ -34,12 +34,15 @@ image::../media/drw_32xx_cbl_mgmt_arm.png[ケーブルマネジメントアー�
 image::../media/drw_8020_cam_handle_thumbscrew.png[取り付けネジを緩めてカムハンドルを開く]
 
 +
+[cols="1,4"]
 |===
 
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| 取り付けネジ 
+ a| 
+取り付けネジ
+
 
 
  a| 
@@ -109,12 +112,15 @@ NOTE: システムを停止すると、内容がフラッシュメモリにデ�
 image::../media/drw_rxl_nvmem_battery.png[NVMEM バッテリの交換]
 
 +
+[cols="1,4"]
 |===
 
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| バッテリロックタブ 
+ a| 
+バッテリロックタブ
+
 
 
  a| 
@@ -177,14 +183,12 @@ PCIe カードを古いコントローラモジュールから新しいコント
 image::../media/drw_rxl_pcie.png[PCIeカードの取り外しまたは取り付け]
 
 +
+[cols="1,4"]
 |===
 
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-
-
-
  a| 
 サイドパネル
 
@@ -192,9 +196,6 @@ image:../media/legend_icon_01.png["番号1"]
 
  a| 
 image:../media/legend_icon_02.png["番号2"]
-
-
-
  a| 
 PCIe カード
 
@@ -226,7 +227,7 @@ PCIe カードが取り付けられていたスロットを記録しておいて
 ストレージシステムには、キャッシングモジュール用の 2 つのスロットが用意されており、デフォルトでは 1 つのスロットのみ使用されます。
 
 +
-image::../media/drw_rxl_fcache.png[DRW rxl fcache]
+image::../media/drw_rxl_fcache.png[キャッシングモジュールの取り外しと交換]
 
 
 

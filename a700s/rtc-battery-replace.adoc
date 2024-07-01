@@ -83,6 +83,7 @@ Ctrl キーを押しながら C キーを押し、「 y 」と入力します。
 image::../media/drw_a700s_pcm_remove.png[コントロオラモシユウルノカイホウ]
 
 +
+[cols="1,4"]
 |===
 
 
@@ -148,7 +149,7 @@ RTC バッテリを交換するには、コントローラ内でバッテリの�
 . 接地対策がまだの場合は、自身で適切に実施します。
 . RTC バッテリの場所を確認します。
 +
-image::../media/drw_a700s_rtc_battery_replace.png[DRW a700s RTC バッテリの交換]
+image::../media/drw_a700s_rtc_battery_replace.png[RTC バッテリを交換します]
 
 +
 [cols="1,3"]

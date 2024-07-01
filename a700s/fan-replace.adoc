@@ -79,6 +79,7 @@ Ctrl キーを押しながら C キーを押し、「 y 」と入力します。
 image::../media/drw_a700s_pcm_remove.png[コントロオラモシユウルノカイホウ]
 
 +
+[cols="1,4"]
 |===
 
 
@@ -145,9 +146,10 @@ image:../media/legend_icon_03.png["番号3"]
 . 交換が必要なファンモジュールを特定するために、コンソールのエラーメッセージを確認します。
 . ファンモジュールの側面にある固定ツメをつまみ、ファンモジュールを持ち上げてコントローラモジュールから取り出します。
 +
-image::../media/drw_a700s_replace_fan.png[DRW a700s では、ファンを交換します]
+image::../media/drw_a700s_replace_fan.png[ファンの交換]
 
 +
+[cols="1,4"]
 |===
 
 
@@ -183,6 +185,7 @@ image:../media/legend_icon_02.png["番号2"]
 image::../media/drw_a700s_close_air_duct.png[エアダクトを閉じる]
 
 +
+[cols="1,4"]
 |===
 
 

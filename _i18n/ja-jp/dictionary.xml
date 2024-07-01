@@ -779,7 +779,6 @@
   <block id="72188531636fc5815089233196e1ec35" category="paragraph">ライザー</block>
   <block id="8d669e84d5ccc297894b17bd6469d12d" category="paragraph">エアダクト</block>
   <block id="9de291eec146aa309ed46727b945c6d4" category="list-text">該当するライザーを取り外します。</block>
-  <block id="36ac39cea070e713b0fb0a0f54db88b7" category="image-alt">DRW a700s DIMM の交換</block>
   <block id="a4e4695daf3bcdb3f2c31bf35c0a5950" category="paragraph">エアダクトカバー</block>
   <block id="ce1a3d7dcbc5b34bf0ed36bacde61766" category="paragraph">ライザー 1 と DIMM バンク 1~4</block>
   <block id="526b2479f6412e63d5f244b19de1b2d9" category="paragraph">ライザー 2 と DIMM バンク 5~8 および 9~12</block>
@@ -806,7 +805,6 @@
   <block id="25b17a241b7878627647c78d24614092" category="paragraph">電源装置（ PSU ）を交換するには、ターゲットの PSU の電源を切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。</block>
   <block id="ea0af08f58acd216c0cdbf8f9611bc62" category="list-text">システムの電源装置の数は、モデルによって異なります。</block>
   <block id="a5c83d1259ea5fcd94515dacb438e884" category="list-text">コンソールのエラーメッセージまたは電源装置の LED から、交換する電源装置を特定します。</block>
-  <block id="c27a73d454940b40747d6959d070735e" category="image-alt">DRW a700s は PSU を交換します</block>
   <block id="667ec5d2e7ff49916ac90c31eb178520" category="list-text">カムハンドルを下に押し下げて閉じます。</block>
   <block id="e5869c3e3552c60a1a151cf93d8bdbee" category="summary">コントローラモジュールで障害が発生したブートメディアの場所を確認するには、コントローラモジュールの中央の PCIe モジュールを取り外し、ブートメディアの近くにある LED で障害が発生したブートメディアの場所を確認してから、ブートメディアを交換します。</block>
   <block id="e9e66c1bd59e20ff8acce6fb41f94461" category="paragraph">コントローラモジュールをシャーシから取り外して開き、障害が発生したブートメディアを交換する必要があります。</block>
@@ -814,7 +812,6 @@
   <block id="d49fe2e5280db996ef1801aa2312cf51" category="list-text">ブートメディアの場所を確認します。</block>
   <block id="ea47f8c3d75d0ae8c63333493732e287" category="list-text">必要に応じてエアダクトを開きます。</block>
   <block id="95b0ed2bf52614c4803a52c7bfbc4da6" category="list-text">必要に応じて、固定ラッチを解除し、コントローラモジュールからライザーを取り外して、中央の PCIe モジュールであるライザー 2 を取り外します。</block>
-  <block id="c5f3456e0fd8df43b4786bdc636b23b4" category="image-alt">DRW a700s ブートメディアの交換</block>
   <block id="3e4e796f89697f9552e6f9741f53026c" category="paragraph">ライザー 2 （中央の PCIe モジュール）</block>
   <block id="10cacafa178fdb6b46f50bea9be0d8cf" category="paragraph">ブートメディアのネジ</block>
   <block id="c6a69d731488373ecdb2d591b1a85654" category="paragraph">ブートメディア</block>
@@ -865,7 +862,6 @@
   <block id="5cee811338d57ecf44d6f22dca7fcd4b" category="list-text">ライザーの左側にあるライザーロックラッチをファンの方に引き上げます。</block>
   <block id="62b41ad108afe6b4d651d8da18394eea" category="paragraph">NVRAM ライザーがコントローラモジュールからわずかに持ち上がります。</block>
   <block id="d3110f91324e5f8cfcd28600df5ac2d9" category="list-text">NVRAM ライザーを持ち上げ、ファンの方に動かしてライザーの金属板の縁がコントローラモジュールの端に接触しないようにします。次に、ライザーを真上に持ち上げてコントローラモジュールから取り外します。 次に、 NVRAM カードにアクセスできるように、安定した平らな場所に置きます。</block>
-  <block id="2d0b5667d44ad59ef139c09efe0999d0" category="image-alt">DRW a700s NVMe の置換</block>
   <block id="f3be4d98894ffbfb83050debf5045c14" category="paragraph">ライザー 1 のロックラッチ</block>
   <block id="ae936646ba28c5499caf8ff8a09c1158" category="paragraph">NVRAM カードに接続された NVRAM バッテリケーブルプラグ</block>
   <block id="a5a2e7319e6511ec0e394434ba44783a" category="paragraph">カードロックブラケット</block>
@@ -888,7 +884,6 @@
   <block id="25e84b8b11804a262c8f96f5c0494341" category="list-text">ライザーの左側にあるモジュールロックラッチをファンモジュールの方に引き上げます。</block>
   <block id="9b87501921d55169b6d5df97c4ac5eff" category="paragraph">PCIe ライザーがコントローラモジュールからわずかに持ち上がります。</block>
   <block id="2995e2f5de5ab5f7e237aaaca60f083f" category="list-text">PCIe ライザーを持ち上げ、ファンの方に動かしてライザーの金属板の縁がコントローラモジュールの端に接触しないようにします。次に、ライザーを持ち上げてコントローラモジュールから取り外し、安定した平らな場所に置きます。</block>
-  <block id="8301780f2b7742ba6677d0c2900a7256" category="image-alt">DRW a700s PCIe の交換</block>
   <block id="8adcba29860559485059fb792f38322a" category="paragraph">ライザーロックラッチ</block>
   <block id="2bc8b7df71c8cc78b90710217056fad5" category="paragraph">ライザー 2 （中央のライザー）とライザースロット 2 と 3 にある PCI カード</block>
   <block id="fb379bac7a8e7aac40472cfecc7165aa" category="list-text">PCIe カードをライザーから取り外します。</block>
@@ -909,7 +904,6 @@
   <block id="94e65bd9e374f956bd264382aa908f8c" category="paragraph">ネジを締め付けすぎないでください。ブートメディアが破損する可能性があります。</block>
   <block id="db804e965118c7ddc7ce55f19a1af1bc" category="section-title">手順 5 ：ファンを移動します</block>
   <block id="913828212c34150e0ba19cde9f31f04f" category="list-text">ファンモジュールの側面にある固定ツメをつまみ、ファンモジュールを持ち上げてコントローラモジュールから取り出します。</block>
-  <block id="fe45ee98537552d5aae5b293496a5f0f" category="image-alt">DRW a700s では、ファンを交換します</block>
   <block id="a1502c1dce561f00d4aba662f80c5fa3" category="cell">ファンの固定ツメ</block>
   <block id="219dba91289309b728804e9ddd5f60be" category="list-text">ファンモジュールを交換用コントローラモジュールに移動し、ファンモジュールの端をコントローラモジュールの開口部に合わせて取り付けます。次に、ロックラッチが所定の位置にカチッと収まるまでファンモジュールをコントローラモジュールにスライドさせます。</block>
   <block id="2dc8b6264a38dd08bad002bfa0761258" category="section-title">手順 6 ：システム DIMM を移動します</block>
@@ -930,7 +924,6 @@
   <block id="2a5bbbb0357d478c8456cba18161381d" category="section-title">手順 8 ： NVRAM バッテリを移動する</block>
   <block id="560436f88c77589bdf79ac4ac71c2bd3" category="paragraph">コントローラモジュールを交換する場合は、障害のあるコントローラモジュールから交換用コントローラモジュールに NVRAM バッテリを移動する必要があります</block>
   <block id="50596866677de4b15c95c4f2ac253894" category="list-text">ライザーモジュール「ライザー 1 」の左側にある NVRAM バッテリの場所を確認します。</block>
-  <block id="cad0b5b8d9a3a648fed2d2cf9843ff68" category="image-alt">DRW a700s NVMe バッテリの交換</block>
   <block id="5a66fe4f16ba9a8ec80a9b48be30d41b" category="cell">NVRAM バッテリプラグ</block>
   <block id="8e50b634b9172df00520f757e65899a2" category="paragraph">NVRAM バッテリ固定ツメ（青）</block>
   <block id="8102785ce5a527a51011651cf58773d3" category="list-text">バッテリプラグの場所を確認し、バッテリプラグ前面のクリップを押してプラグをソケットから外し、バッテリケーブルをソケットから抜きます。</block>
@@ -995,7 +988,6 @@
   <block id="d574c271d37aff5dfc97b6ecd338458f" category="doc">リストアと交換の手順を完了します - AFF A700s</block>
   <block id="28746dbce7c4fc8053d035e3b2295bde" category="doc">リアルタイムクロックバッテリを交換してください - AFF A700s</block>
   <block id="65c45f25b11ef516aa4180bd435460a0" category="list-text">RTC バッテリの場所を確認します。</block>
-  <block id="6199e9ac737bb64b5d2e7bfb2a3da5a0" category="image-alt">DRW a700s RTC バッテリの交換</block>
   <block id="a7f375a810d73a673cfac8d89305ccac" category="paragraph">RTC バッテリとホルダー</block>
   <block id="e789dadff6ab02fe418b101bca452d66" category="list-text">バッテリをそっと押してホルダーから離し、持ち上げてホルダーから取り出します。</block>
   <block id="9e5b0cf96e39c07e340d8e7e3f98141d" category="admonition">ホルダーから取り外す際に、バッテリの極の向きを確認しておいてください。バッテリに記載されているプラス記号に従って、バッテリをホルダーに正しく配置する必要があります。ホルダーの近くにプラス記号が表示されているので、バッテリーの位置を確認できます。</block>
@@ -1249,7 +1241,6 @@
   <block id="9d2a810337a7aa9c3699cd8746f6d93e" category="section-title">手順 3 ： 2 ノード MetroCluster 構成でアグリゲートをスイッチバックする</block>
   <block id="a6c279177bd30a0d3ee3363a3679bffa" category="doc">リアルタイムクロックバッテリを交換してください - AFF A400</block>
   <block id="4f4fd54acab309f1a5e65fa28f282bda" category="paragraph">コントローラモジュール内で RTC バッテリの場所を確認し、特定の手順を実行する必要があります。RTC バッテリの場所については、コントローラモジュール内の FRU マップを参照してください。</block>
-  <block id="ec83112a8c30bb826b259d5c77a3c3ca" category="image-alt">DRW A400 RTC BATT</block>
   <block id="373905f2383b6a7f8d43c02143d4933e" category="list-text">RTC バッテリの場所を確認して取り出し、交換します。</block>
   <block id="a4d0ae56587a2cd3019212721f46adfa" category="list-text">FRU マップを使用して、コントローラモジュール上の RTC バッテリの場所を確認します。</block>
   <block id="144c419e3dcef5763e6e9018f63fe3f4" category="list-text">ロックラッチを使用して、コントローラモジュールをシャーシに挿入し、ミッドプレーンまでしっかりと押し込んで完全に装着します。</block>
@@ -1468,7 +1459,6 @@
   <block id="bea349f51fb4fb1a5633e236822fa5b4" category="list-text">リリースタブを押します。</block>
   <block id="c9b10c926499cf0c03511222cfe41c81" category="list-text">ヒートシンクを取り外します。</block>
   <block id="72899bf5d7c3e86a01a078b9f3c1b933" category="paragraph">ストレージシステムには、キャッシングモジュール用の 2 つのスロットが用意されており、デフォルトでは 1 つのスロットのみ使用されます。</block>
-  <block id="407e11715a937f08e831c6ea7ba60d89" category="image-alt">DRW rxl fcache</block>
   <block id="d1b3169b8a82a003cbb0a0bdd1d56fde" category="list-text">キャッシングモジュールを追加する場合は、次の手順に進みます。キャッシングモジュールを交換する場合は、ケースからまっすぐにゆっくりと引き出します。</block>
   <block id="8b70ff461d015cb15798b71a827488de" category="list-text">キャッシングモジュールの端をケースのソケットに合わせ、ソケットにゆっくりと押し込みます。</block>
   <block id="a781ea6900e45102f1a4339df14baa30" category="list-text">キャッシングモジュールが正しい向きでソケットに完全に装着されたことを確認します。</block>
@@ -1811,7 +1801,6 @@
   <block id="05c119840c0702d753743c08941c9b5f" category="section-title">手順 3 ：ドライブを新しいシャーシに移動します</block>
   <block id="41fc2e794f85d8118c2ed7ccc20c671a" category="section-title">手順 5 ：コントローラを取り付ける</block>
   <block id="fd0db0c0a8315e064601a11ecc8c2b49" category="doc">リアルタイムクロックバッテリを交換してください</block>
-  <block id="78cdea792972b347c50369463c3d2407" category="image-alt">DRW 2600 RTC バッテリ</block>
   <block id="dc298218cd8d376ae5e0ca1a1c66832b" category="section-title">手順 4 ：コントローラモジュールを再度取り付け、 RTC バッテリ交換後に日時を設定します</block>
   <block id="ac5b5b75bd82572e4d052c9c0ed18250" category="paragraph">交換用手順を完了してシステムを完全に動作状態に戻すには、ストレージのケーブル接続をやり直し、ディスクの再割り当てを確認し、必要に応じてネットアップストレージ暗号化構成をリストアし、新しいコントローラのライセンスをインストールする必要があります。システムを完全に動作状態にリストアするには、一連の作業を完了しておく必要があります。</block>
   <block id="9c35eb9cc1848b17dc8df9f76cc3d6cf" category="paragraph">HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。スタンドアロンシステムでは、 ID をディスクに手動で再割り当てする必要があります。</block>
@@ -2316,7 +2305,6 @@
   <block id="05da715fdd840e7fc27dd764386018bc" category="doc">キャッシングモジュール FAS8300 と FAS8700 を交換します</block>
   <block id="8a653be38ee9a052d5a08a28a70c1d9e" category="paragraph">コントローラのラベルで Flash Cache と呼ばれるキャッシングモジュールを交換するには、コントローラ内のスロットの場所を確認して、特定の手順を実行します。Flash Cache の場所については、コントローラモジュールの FRU マップを参照してください。</block>
   <block id="70edce28424200208b28981e9b221707" category="list-text">キャッシングモジュールの内容は暗号化されていますが、交換する前にモジュールの内容を消去することを推奨します。詳細については、を参照してください<block ref="89de74d6a86df9137b0ef3fb03a43036" category="inline-link-rx"></block> ネットアップサポートサイトにお使いのシステム用の情報を入力します。</block>
-  <block id="540a3a140ba4c7da7729d8bbfbe06861" category="image-alt">DRW 8300 FlashCache を交換します</block>
   <block id="b08a9c5bee019bb00ec5f4f00b59819e" category="list-text">コントローラモジュールの FRU マップを使用して、障害が発生したキャッシングモジュールの場所を確認して取り外します。</block>
   <block id="58a5256eec02e1fef80c02b3deffc3f5" category="list-text">青色のリリースタブを押します。</block>
   <block id="3b9dfc19fe13a88ce4bf85240df578ae" category="paragraph">キャッシングモジュールのリリースタブ側の端が上がります。</block>
@@ -2330,7 +2318,6 @@
   <block id="9fd188207b0f7e77aa563d18053142c8" category="section-title">手順 8 ：交換プロセスを完了します</block>
   <block id="ed8e6ac65f869dd5cec262d6da357514" category="doc">交換プロセス（ FAS8300 および FAS8700 ）を完了します</block>
   <block id="6976de191bb895bccff42aea7f5ef312" category="section-title">手順 6 ：キャッシングモジュールを移動する</block>
-  <block id="98e31120864bf3bc3ac05e5585fc2718" category="image-alt">DRW A400 FlashCache の交換</block>
   <block id="6ce420982732936565ee6cdc23281310" category="list-text">障害のあるコントローラモジュールから交換用コントローラモジュールにキャッシングモジュールを移動します。</block>
   <block id="37532f61023625948a2dff3e87ad659d" category="list-text">キャッシングモジュールの端にある青色のリリースタブを押し、モジュールを上に回転させてソケットからモジュールを取り外します。</block>
   <block id="d84a3f8a48a291e94be45b2446ab30e1" category="list-text">キャッシングモジュールを交換用コントローラモジュールの同じソケットに移動します。</block>
@@ -2458,10 +2445,6 @@
   <block id="fea037cb34a319bd3b823395ee5fdd07" category="paragraph">SFP + FC ホストネットワーク</block>
   <block id="490cb76fd3c75ff8166e251d789f799e" category="paragraph">イーサネットホストおよび管理ネットワーク</block>
   <block id="fcca883f68c4e92b98d0f294614cda60" category="admonition">光スイッチに接続する場合は、ポートにケーブル接続する前に、 SFP をコントローラポートに挿入します。</block>
-  <block id="73da34bccb5db786798534ea5b6eb1d6" category="image-alt">DRW C190 TNSC ユニファイドネットワークケーブル接続アニメーション GIF</block>
-  <block id="d7d7ce9a70c375da7dd9edb7b21a9134" category="image-alt">DRW C190 スイッチドユニファイドネットワークケーブル配線アニメーション GIF</block>
-  <block id="0df32eef6f99f6d05877f5da86a45063" category="image-alt">DRW C190 TNSC イーサネットネットワークケーブル配線のアニメーション GIF</block>
-  <block id="ac3d560a40b4d6d28fac097677ecaa8d" category="image-alt">DRW C190 スイッチドイーサネットネットワークのケーブル配線のアニメーション</block>
   <block id="c148c3a234659fa32cba3b91e58f84d2" category="admonition">ユニファイド構成システムのデフォルトのポート設定は CNA モードです。 FC ホストネットワークに接続する場合は、ポートを FC モードに変更する必要があります。</block>
   <block id="7ac22c07a9dcb85e963d9fbf1f27178a" category="summary">電源がオンになっている NS224 ドライブシェルフおよび I/O の実行中は、障害が発生した DIMM を無停止で交換できます。</block>
   <block id="da58b6d3bd8d2396e076938c32c0ab3c" category="list-text">障害が発生した FRU （ターゲット NSM モジュール）を搭載した NSM モジュールを取り外す際にシェルフが接続を維持できるように、シェルフのパートナー NSM モジュールが稼働し、正しくケーブル接続されている必要があります。</block>
@@ -4631,7 +4614,6 @@
   <block id="48a1bad510a4b6f7d4c6adc4ace692d6" category="admonition">アニメーションと図は、 DIMM のないソケットの空きスロットを示しています。これらの空のソケットには何も挿入されていません。</block>
   <block id="4a848babffe3702bffe9efa29dd12c61" category="paragraph">ブートメディアを交換するには、次のアニメーション、図、または記載された手順に従ってください。</block>
   <block id="bb90eba065615f7ac639d1758ba84812" category="paragraph">次のアニメーション、図、または記載された手順を使用して、キャッシングモジュールを交換できます。</block>
-  <block id="b8f99a879bdae690f650b2171355b5bb" category="image-alt">DRW 8300 空のライザーが取り外されました</block>
   <block id="1e6c27613480cee2fca639b93121fd62" category="paragraph">次のアニメーション、図、または記載された手順を使用して、キャッシングモジュールを新しいコントローラモジュールに移動できます。</block>
   <block id="eb248e4303d7cdcd9d37762008fe5713" category="list-text">次のアニメーションや図を使用して、ドライブシェルフをコントローラにケーブル接続します。</block>
   <block id="6bf14a7252e28dc753304577c4a9180c" category="list-text">各コントローラのスロット 3 または 7 に、少なくとも 1 つの X91148A モジュールをインストールする必要があります。アニメーションや図は、このモジュールがスロット 3 と 7 の両方に取り付けられていることを示しています。</block>
@@ -4784,7 +4766,6 @@
   <block id="3ad26beab00b6ba09b9cf5af096d7c99" category="paragraph">にアクセスできる必要があります <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> （ HWU ）を参照してください。サイト要件および構成済みシステム上の追加情報に関する情報が含まれます。へのアクセスも必要になる場合があります <block ref="515d1814cb0f36c56a64a6574d93c9df" category="inline-link-macro-rx"></block> このシステムの詳細については、を参照してください。</block>
   <block id="130628ef0f789f37dc905db5315a3573" category="list-text">ダウンロードしてインストールします <block ref="06852f9fb3ab1a889a409e24c5a20330" category="inline-link-macro-rx"></block> ノートブック PC で。</block>
   <block id="0e714115aae93f290bf1207a9c149283" category="paragraph">次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> ケーブルの場所を確認し、用途を特定します。</block>
-  <block id="caaa8a847335f7164117894cfe79e731" category="paragraph"><block ref="caaa8a847335f7164117894cfe79e731" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9cce7e4c2aef0e645d2e38ae612c4ed8" category="list-text">をダウンロードして実行します <block ref="cb0390cbe2f3cf678134885ff143b6ba" category="inline-link-macro-rx"></block>。</block>
   <block id="9bb6dc35b9c3cfb584e92ef6bf229185" category="list-text">システムのセットアップを完了するには、を参照してください <block ref="b9ddf35bfac2437b7499c5c6e18fd46e" category="inline-link-macro-rx"></block>。</block>
   <block id="e54c29276af1d0eb8b609db7484efd71" category="admonition">初回のブートには最大で 8 分かかる場合があります。</block>
@@ -5518,9 +5499,6 @@
   <block id="e935849faf7cd25a183a726f34797bb7" category="doc">コントローラモジュールを交換してください - AFF A300</block>
   <block id="75a0d3caeb66a7c3aca3b7bc0f0c5985" category="image-alt">DRW A320 スイッチドネットワークケーブルの複合アニメーション GIF</block>
   <block id="82430a05d3820aeaeb756230e94ee643" category="doc">オンボード暗号化 - FAS8200 を確認します</block>
-  <block id="0082203fcfff94aab099c16763176076" category="image-alt">DRW fas8300 TNSC ネットワークケーブル接続</block>
-  <block id="507f9f4c8680d2c9a9bcba815a7976e8" category="image-alt">DRW fas8300 スイッチドネットワークケーブル接続</block>
-  <block id="56cbc310abb53560871f37318fe0636d" category="image-alt">DRW fas8300 3 ds224c シェルフ</block>
   <block id="a28455bf2eecf6cc499c335ee152cd75" category="paragraph">次のいずれかのオプションを使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。</block>
   <block id="3e1047f2ebaed54fe88cc6f78291dbb6" category="doc">ブートメディア FAS500f を交換してください</block>
   <block id="af844de12c61a1b2d86c05934c317256" category="summary">ドライブの交換は、ドライブで障害が発生したことを示す警告メッセージがプラットフォームからシステムコンソールに記録された場合に必要になります。さらに、オペレータ用ディスプレイパネルの障害 LED と、障害が発生したドライブの障害 LED の両方が点灯します。</block>
@@ -8790,4 +8768,36 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="360e760cf4c2611f24bef9936525c878" category="image-alt">ドライブキャリアの水平配置</block>
   <block id="9302993f1cbe0a62b1c08bac8ff42e30" category="image-alt">ドライブアクティビティLED</block>
   <block id="6daeeb8640b388bf728f2d3fa2ceac68" category="image-alt">ドライブ警告LED</block>
+  <block id="3d01b4425d5fa4915f6e209ff5ebc5fa" category="image-alt">NVRAMカードを交換してください</block>
+  <block id="1471ac39cb9785883e4f8e0156141768" category="image-alt">PCIe カードを交換します</block>
+  <block id="d41ba6049ada491c1bedd4e982b5a12a" category="image-alt">ファンの交換</block>
+  <block id="732cb0105e10dcf3046c4f8dd9a5a991" category="image-alt">NVRAM バッテリを交換してください</block>
+  <block id="ca80c728e158c474fa562e4e6fe53868" category="image-alt">PSUの交換</block>
+  <block id="ba465a4963e9d81b0df00697f6765e53" category="image-alt">RTC バッテリを交換します</block>
+  <block id="b64d12e71baab796101791fd15a05a3d" category="image-alt">2 ノードスイッチレスクラスタのケーブル接続</block>
+  <block id="9405a4b49345c23900c5d7b5d872d67a" category="image-alt">スイッチクラスタネットワークのケーブル接続</block>
+  <block id="2808a423f10e955f0c8304464c9f2414" category="image-alt">NS224シェルフをコントローラにケーブル接続</block>
+  <block id="c0ec9acb24ae98cfebde995d130a61a6" category="image-alt">3台のNS224シェルフをコントローラにケーブル接続</block>
+  <block id="92f7f93ee79f5a69c599aa1657e9464d" category="inline-image-macro">光ネットワークケーブルSFP</block>
+  <block id="2fd2c03db6de3bb625cb5f3d864f2dc0" category="paragraph"><block ref="2fd2c03db6de3bb625cb5f3d864f2dc0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="40583e3c9e34e396cefb248dc9173b2d" category="image-alt">ファイバチャネルネットワークLCケーブル</block>
+  <block id="c81e616187fdaca7623c438cb82e7556" category="image-alt">2ノードスイッチレスクラスタユニファイドネットワークのケーブル接続のアニメーション</block>
+  <block id="44fd0bb5c642a9c9019ef389713404b7" category="image-alt">2ノードスイッチレスクラスタイーサネットネットワークのケーブル接続のアニメーション</block>
+  <block id="ed839f063b04ef2bf205198607e99c45" category="image-alt">スイッチクラスタユニファイドネットワークのケーブル接続のアニメーション</block>
+  <block id="9aa93e3b751066980500f1c3a9b9a3ad" category="image-alt">スイッチクラスタイーサネットネットワークのケーブル接続のアニメーション</block>
+  <block id="a288981c3d3562c19205360c4a1975aa" category="image-alt">RTCバッテリの交換</block>
+  <block id="080a22aca65cc690a4adc58019e01c5b" category="image-alt">ケーブルマネジメントアームの取り外し</block>
+  <block id="415d68191d2fba8f12396142cd83b078" category="image-alt">キャッシングモジュール取り外しまたは交換</block>
+  <block id="fc29ed0d741870e4e8c36ca82510cf9a" category="image-alt">キャッシングモジュールの取り外しと交換</block>
+  <block id="6bc6ce8422771329317122532e3badfd" category="image-alt">キャッシングモジュールの取り外しと交換</block>
+  <block id="88d9a1b17863a743c5d31333c8bd6c82" category="image-alt">空のライザーを取り外します。</block>
+  <block id="8edb2beda5152e63e95d47b37fce7aa7" category="image-alt">メザニンカードを取り外します。</block>
+  <block id="3e86dd6511e223ecedd044d86cd934bf" category="image-alt">2ノードスイッチレスクラスタのケーブル配線図</block>
+  <block id="2d2cf47916959433721b7cc7d46cdea2" category="image-alt">スイッチクラスタネットワークのケーブル配線図</block>
+  <block id="f9fdbcb98f873b6faf3dd8bc1752740e" category="image-alt">3台のDS224Cシェルフのケーブル配線図</block>
+  <block id="4af594348d1cc40a4fa6849ea04fd49a" category="image-alt">吊り上げ重量注意ラベル</block>
+  <block id="3f4027780297605ef158a649078063e9" category="image-alt">ケーブルマネジメントアームの取り付け</block>
+  <block id="e84bd7a7cafaabc7b1743876dcc73c70" category="image-alt">2ノードスイッチレスクラスタの複合ケーブル配線図</block>
+  <block id="0372c9caab5ee11faf1ffac3ef3c46fa" category="inline-image-macro">スイッチクラスタの複合ケーブル配線図</block>
+  <block id="009e65f17aa2f40deb1c718bea3bf98b" category="paragraph"><block ref="009e65f17aa2f40deb1c718bea3bf98b" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

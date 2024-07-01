@@ -88,9 +88,9 @@ X6536-R6 （ 112-00090 ）、 5m
 
 X6554-R6 （ 112-00189 ）、 15m
  a| 
-image:../media/oie_sfp_optical.png[""]
+image:../media/oie_sfp_optical.png["光ネットワークケーブルSFP"]
 
-image::../media/oie_cable_fiber_lc_connector.png[OIE ケーブルファイバ LC コネクタ]
+image::../media/oie_cable_fiber_lc_connector.png[ファイバチャネルネットワークLCケーブル]
  a| 
 SFP + FC ホストネットワーク
 
@@ -214,13 +214,13 @@ NOTE: 光スイッチに接続する場合は、ポートにケーブル接続�
 UTA2データネットワーク構成::
 +
 --
-image::../media/drw_c190_tnsc_unified_network_cabling_animated_gif.png[DRW C190 TNSC ユニファイドネットワークケーブル接続アニメーション GIF]
+image::../media/drw_c190_tnsc_unified_network_cabling_animated_gif.png[2ノードスイッチレスクラスタユニファイドネットワークのケーブル接続のアニメーション]
 
 --
 イーサネットネットワーク構成::
 +
 --
-image::../media/drw_c190_tnsc_ethernet_network_cabling_animated_gif.png[DRW C190 TNSC イーサネットネットワークケーブル配線のアニメーション GIF]
+image::../media/drw_c190_tnsc_ethernet_network_cabling_animated_gif.png[2ノードスイッチレスクラスタイーサネットネットワークのケーブル接続のアニメーション]
 
 --
 
@@ -280,13 +280,13 @@ NOTE: 光スイッチに接続する場合は、ポートにケーブル接続�
 ユニファイドネットワーク構成::
 +
 --
-image::../media/drw_c190_switched_unified_network_cabling_animated_gif.png[DRW C190 スイッチドユニファイドネットワークケーブル配線アニメーション GIF]
+image::../media/drw_c190_switched_unified_network_cabling_animated_gif.png[スイッチクラスタユニファイドネットワークのケーブル接続のアニメーション]
 
 --
 イーサネットネットワーク構成::
 +
 --
-image::../media/drw_c190_switched_ethernet_network_cabling_animated.png[DRW C190 スイッチドイーサネットネットワークのケーブル配線のアニメーション]
+image::../media/drw_c190_switched_ethernet_network_cabling_animated.png[スイッチクラスタイーサネットネットワークのケーブル接続のアニメーション]
 
 --
 
