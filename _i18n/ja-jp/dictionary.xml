@@ -1338,10 +1338,8 @@
   <block id="19026798e40f3d682dde87cbb940fc1b" category="paragraph">コントローラモジュールのオプションのデータポート、オプションの NIC カード、および管理ポートは、スイッチに接続されます。クラスタインターコネクトポートと HA ポートは、両方のコントローラモジュールでケーブル接続されます。</block>
   <block id="b0f36369923404e3d59d32e54263eb35" category="paragraph">システムとスイッチの接続に関する情報を、ネットワーク管理者に確認しておく必要があります。</block>
   <block id="3d6d824132e6ea9215d5f55aab2c487b" category="paragraph">ケーブルをポートに差し込む際は、ケーブルのプルタブの向きを確認してください。ケーブルのプルタブは、すべてのオンボードポートでは上向き、拡張（ NIC ）カードでは下向きになります。</block>
-  <block id="89022c411a82a2fd505bed4d053014b2" category="image-alt">DRW A400 TNSC ネットワークケーブル配線</block>
   <block id="cdb5f9fd7bdb37f00fbde22fc433f594" category="list-text">に進みます <block ref="4261ea2b75c295a1978f7924667f1c11" category="inline-xref-macro-rx"></block> ドライブシェルフのケーブル接続手順については、を参照して</block>
   <block id="1e156599489dd8cc844095b452c708a0" category="paragraph">コントローラモジュールのオプションのデータポート、オプションの NIC カード、メザニンカード、および管理ポートは、スイッチに接続されます。クラスタインターコネクト / HA ポートは、クラスタ / HA スイッチにケーブル接続されます。</block>
-  <block id="1183b63959875b4b1d4b622707e3bdb2" category="image-alt">DRW 400: スイッチドネットワークケーブル配線</block>
   <block id="3791be63815c8fbe248b161feeb8b6cd" category="section-title">手順 4 ：コントローラをドライブシェルフにケーブル接続する</block>
   <block id="23b4387b0bd437fdde9fbf6ab72eb30b" category="paragraph">NSS224 または SAS シェルフをシステムにケーブル接続できます。</block>
   <block id="44545bc0051cf1d567b013be4fbb64b8" category="section-title">オプション 1 ：コントローラを 1 台のドライブシェルフにケーブル接続する</block>
@@ -1350,11 +1348,9 @@
   <block id="f3e065129fb4cb88ba99260c70d8c054" category="list-text">に進みます <block ref="53346fef0c147b551f530d05bbad2e41" category="inline-xref-macro-rx"></block> をクリックして、システムのセットアップと設定を完了します。</block>
   <block id="e47141e6c8fccf9bfe115e4e18090b8e" category="section-title">オプション 2 ：コントローラを 2 台のドライブシェルフにケーブル接続する</block>
   <block id="a496c0eee37cdb410fb5999f04b37d60" category="paragraph">各コントローラを両方の NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。</block>
-  <block id="28a5b6c12bed824c9983c41c17b4e08c" category="image-alt">DRW 4002 台の ns224 シェルフ</block>
   <block id="2d30f0e7d0bd139e4aadac367a22367c" category="section-title">オプション 3 ：コントローラを SAS ドライブシェルフにケーブル接続する</block>
   <block id="3368a061a42c179bf8e803509b06906f" category="paragraph">各コントローラを両方の SAS ドライブシェルフの IOM モジュールにケーブル接続する必要があります。</block>
   <block id="22b99956f40dddc5bacbbde3d6214bfb" category="paragraph">図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。DS224-C のケーブルプルタブは下です。</block>
-  <block id="f2a5deba6280f91d25f9842359122210" category="image-alt">DRW 4003 ds224c シェルフ</block>
   <block id="591a460534c5cea6a44feabf56c126fc" category="section-title">手順 5 ：システムのセットアップと設定を完了する</block>
   <block id="f5db8a467b7fb8d7cf073d921c784267" category="paragraph">システムのセットアップと設定を実行するには、スイッチとラップトップのみを接続してクラスタ検出を使用するか、システムのコントローラに直接接続してから管理スイッチに接続します。</block>
   <block id="1001f289121bc2aaf60e874b29a86ac9" category="section-title">オプション 1 ：ネットワーク検出が有効になっている場合は、システムのセットアップと設定を実行する</block>
@@ -1550,7 +1546,6 @@
   <block id="13fa4776dd3902d644b4c8c6e4086d8d" category="doc">リアルタイムクロックバッテリ - FAS8200 を交換してください</block>
   <block id="6ffcd61574f4970c28c0b71a5611ad7c" category="section-title">手順 3 ： RTC バッテリを交換します</block>
   <block id="12567249cf52e7754ded20b52b9cb150" category="paragraph">RTC バッテリを交換するには、コントローラ内でバッテリの場所を確認し、特定の手順を実行します。</block>
-  <block id="b7d5be6336dc1e791cd4f528bc0ef57a" category="image-alt">DRW rxl RTC バッテリ</block>
   <block id="b1288294c924e966dd5f1e52dc50d8fa" category="list-text">コントローラモジュールで空のバッテリホルダーの場所を確認します。</block>
   <block id="e62b4750e70bd7d70bffad33b5e2a973" category="list-text">電源装置と電源に電源ケーブルを再接続し、電源をオンにしてブートプロセスを開始します。</block>
   <block id="70fa93bebd0670b231da3d1406a94a24" category="doc">システムにケーブルを再接続し、ディスクを FAS8200 に再割り当てします</block>
@@ -3273,30 +3268,24 @@
   <block id="1e98034375ef52d4a4529ac291edcded" category="list-text">バックアップ手順が成功したことを確認したら 'y' を押し ' ノードを再起動するよう求められたら 'y' を押します</block>
   <block id="2ca9575466d40889a9a6e4de0788d9d5" category="doc">システムのリストアが完了しました - AFF A320</block>
   <block id="e944774dbb716679ef719542153680f0" category="doc">電源装置を交換してください - AFF A320</block>
-  <block id="4cc9071129241d95215f35c3a4e731ef" category="image-alt">DRW A320 PSU アニメーション GIF に代わるものです</block>
   <block id="3f579d2ca9602742163eac8ab6869d34" category="list-text"><block ref="3f579d2ca9602742163eac8ab6869d34" category="inline-link-macro-rx"></block></block>
   <block id="a6eeb39ae43e2e8a39fd17df76bf38bf" category="list-text"><block ref="a6eeb39ae43e2e8a39fd17df76bf38bf" category="inline-link-macro-rx"></block></block>
   <block id="22d17da6d44d1c72d2415ed45b62cc6e" category="list-text"><block ref="22d17da6d44d1c72d2415ed45b62cc6e" category="inline-link-macro-rx"></block></block>
   <block id="f18d3ce1458eacbbf20206e503ce6dcf" category="doc">DIMM-AFF A320 を交換します</block>
   <block id="952c945c9a5a59d3bdaefb09fa3c158c" category="list-text">コントローラモジュールの電源装置のコードを電源から抜きます。</block>
   <block id="314e31cf4cbebcf3a827e9ba64a1e005" category="list-text">エアダクトを回転させて開きます。</block>
-  <block id="05e409ce8812fcbb841a7e4fffcaacac" category="image-alt">DRW A320 DIMM マップ</block>
   <block id="81991fce0a133e64dc7f5bd7f590afbd" category="list-text">システム DIMM スロット： 2 、 4 、 7 、 9 、 13 、 15 、 18 、 20</block>
   <block id="42fedd56824cc1ddf6aa00c30e53255e" category="list-text">NVDIMM スロット： 11</block>
   <block id="b5625ff9a6be11130311547598e19f4d" category="list-text">コントローラモジュールの背面にあるエアダクトを閉じ、 PCIe カードにカバーを再度取り付けていない場合は、</block>
   <block id="3e3ba2d775216becefab028bffec753a" category="doc">クイックガイド - AFF A320</block>
   <block id="8041c469e6d9bb1d2588be103ea09ab6" category="doc">NVDIMM バッテリを交換します - AFF A320</block>
-  <block id="7a7bd9d285c26c52e7363905c161c15e" category="image-alt">DRW A320 nvsbat アニメーション GIF を移動します</block>
   <block id="ddd5abc1f11eb7170e1eeacbd5acc236" category="list-text">エアダクトを開き、 NVDIMM バッテリの場所を確認します。</block>
   <block id="e9ca370a0e8565dd4c2f659637e04cda" category="doc">コントローラをシャットダウンします。 AFF A320</block>
   <block id="b6b9806df3f9a4e627587365674eb890" category="doc">ノード AFF A320 をシャットダウンします</block>
   <block id="1f80cfc7ce17ecb96321179e76fe8285" category="list-text">青色の固定ツメを押しながらカムハンドルを回転させて、コントローラモジュールから電源装置を引き出せるようにします。</block>
-  <block id="688801a2df2e8d7d87f1b2c5de917ce1" category="image-alt">DRW A320 ブートメディア移動アニメーション GIF</block>
   <block id="11eb9c8c2de064eb9f7977a655de2097" category="list-text">エアダクトを開き、次の図またはコントローラモジュールの FRU マップを使用してブートメディアの場所を確認します。</block>
-  <block id="2f486cec6da5b4ab5646e87394d2a4a2" category="image-alt">DRW A320 DIMM はアニメーション GIF を移動します</block>
   <block id="f7201b424e63db1eb201784a41831c5b" category="section-title">手順 6 ： PCIe ライザーを移動します</block>
   <block id="09a031229040acdcc93835464607987d" category="paragraph">PCIe ライザーに PCIe カードを取り付けた状態で、障害のあるコントローラモジュールから交換用コントローラモジュールに PCIe ライザーを移動する必要があります。</block>
-  <block id="eb05cd11b7228336d5c9c6b4b1189e9b" category="image-alt">DRW A320 PCI ライザー動画 GIF を移動します</block>
   <block id="e3c377eeac98c2c7c22ab039e765483b" category="list-text">PCIe ライザーのカバーの青色の取り付けネジを外してカバーを取り外します。カバーを手前にスライドさせて上に回転させ、コントローラモジュールから持ち上げて外し、脇に置きます。</block>
   <block id="64e10ab629fdd5f98070e4ba4cbc9431" category="list-text">交換用コントローラモジュールから空のライザーを取り外します。</block>
   <block id="fb2259bf7b24733032c36ee5d7b47fc1" category="list-text">ライザーモジュールの左側にある穴に人差し指を入れ、親指でライザーをつかみます。</block>
@@ -3318,11 +3307,9 @@
   <block id="f473b09529c17581896f9b2f1166ce88" category="section-title">手順 1 ：コントローラモジュールの交換後にシステム時間を設定して確認します</block>
   <block id="acd5b7a742e22209bb792b093caff068" category="doc">ブートメディアを交換します - AFF A320</block>
   <block id="7b346c654ccdab10fc593c01f0c7232e" category="doc">障害のあるコントローラ AFF A320 をシャットダウンします</block>
-  <block id="e6b7941c3f8bfc56083e6d96c76bea05" category="image-alt">DRW A320 ブートメディアはアニメーション GIF に置き換えられます</block>
   <block id="e7ee072a3e06310afcc412655144e84b" category="section-title">手順 3 ： USB フラッシュドライブを使用してブートイメージをブートメディアに転送します</block>
   <block id="bff69c64ca9124fefc1120a9526e1c86" category="doc">リアルタイムクロックバッテリを交換してください - AFF A320</block>
   <block id="85197942c26926cbc965c61326a19f17" category="paragraph">コントローラモジュール内で RTC バッテリの場所を確認し、特定の手順を実行する必要があります。</block>
-  <block id="ca57ca907ae8206b83c7ddff6d0710d5" category="image-alt">DRW A320 RTC BATT アニメーション GIF 交換</block>
   <block id="f443567234fee382feed95c62b71f4ac" category="list-text">PCIe カバーを取り外します。</block>
   <block id="098c84ebcbcf1abdb1b6be280f983f02" category="list-text">コントローラモジュールの背面で、オンボードポートの上にある青色の取り付けネジを外します。</block>
   <block id="c7705a8f2e7cd22c3c497bc8bdc6a22e" category="list-text">カバーを手前にスライドさせ、上に回転させます。</block>
@@ -3331,7 +3318,6 @@
   <block id="eca300a6c6eda57ea2fabc4bee898f5f" category="doc">システムにケーブルを再接続し、ディスクを再割り当てします - AFF A320</block>
   <block id="f1483589a16ee2a87f4946990ed1464b" category="doc">PCIe カードを交換してください - AFF A320</block>
   <block id="c6835c4571228046430ed6bbb1f8c06a" category="paragraph">障害の発生した PCIe カードを含む PCIe ライザーをコントローラモジュールから取り外し、障害の発生した PCIe カードをライザーから取り外し、交換用 PCIe カードをライザーに取り付けてから、ライザーをコントローラモジュールに再度取り付ける必要があります。</block>
-  <block id="d53dfbdb1355f3674e5de636f87c5be0" category="image-alt">DRW A320 PCI カードはアニメーション GIF に代わるものです</block>
   <block id="618712f4c03b5acbe994f7deb8579ad4" category="list-text">障害のある PCIe カードが取り付けられているライザーを取り外します。</block>
   <block id="8da48c6dbfa1b11e1b02a674f7016444" category="list-text">ライザーを持ち上げてソケットから取り出し、脇に置きます。</block>
   <block id="5169071c932e7f4d8cc43bbb05704441" category="list-text">ライザー内のカードを交換します。</block>
@@ -3350,7 +3336,6 @@
   <block id="d2f83f17d591f35e8d5d48e486cff011" category="inline-xref-macro">OKM 、 NSE 、 NVE のブートメディア交換後の手順</block>
   <block id="59e7bbfb26b1aae893409c7595a54f49" category="list-text">システムにオンボードキーマネージャ、 NSE 、または NVE が設定されている場合は、に進みます <block ref="f25b9cd2e6d3a23c42a52b7461eadaf7" category="inline-xref-macro-rx"></block></block>
   <block id="72e762fb9ea8e85f3b69ae72fd4dc171" category="doc">NVDIMM を交換します - AFF A320</block>
-  <block id="a28d1d59ce7973c59f7c8fb5eb3f42b3" category="image-alt">DRW A320 NVDIMM はアニメーション GIF に代わるものです</block>
   <block id="611cf47f3569074932e1d1554c9dcfdd" category="doc">障害のある部品を NetApp-AFF A320 に返却します</block>
   <block id="770d6678fb5416b05c67128a9e4fed01" category="doc">リストアと交換のプロセスを完了します - AFF A320</block>
   <block id="3672b64d07583e651fa9761c4dd84ce8" category="list-text">コマンドの出力に &lt;lno-DARE&gt; が表示されず、システムで ONTAP 9.6 以降が実行されている場合は、次のセクションに進みます。</block>
@@ -3365,7 +3350,6 @@
   <block id="9acce39f034b56b5a36d798f9b54c493" category="paragraph">X66200-2 （ 112-00326 ）、 2m</block>
   <block id="36789c9401bff1c7c561e68fd452d624" category="paragraph">X66250-5 （ 112-00328 ）、 5m</block>
   <block id="638d6c29f972d003a7c9bce0be1075c0" category="paragraph">X66250-30 （ 112-00331 ）、 30m</block>
-  <block id="ee2a005a5fff47af39846bc52215856a" category="paragraph"><block ref="ee2a005a5fff47af39846bc52215856a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6d03b2201d103d5ae1263174b93ad00d" category="paragraph">イーサネットケーブル（注文内容による）</block>
   <block id="a0e077807aa1ab474e20633b71f65adc" category="paragraph">SR ：</block>
   <block id="b035e4657fbd3c974d6c165b266864f8" category="paragraph">X6554-R6 （ 112-00189 ）、 15m</block>
@@ -3376,34 +3360,20 @@
   <block id="3716ec01119458ed21a566c68a371d3e" category="paragraph">X66260-30 （ 112-00354 ）、 30m</block>
   <block id="c90da43ea678ffdb52edc15af33e2c8e" category="paragraph">FC 構成（注文内容による）</block>
   <block id="923a86c9f908f09f61d33d7831905371" category="section-title">ハードウェアを設置</block>
-  <block id="36038ef1dbb81cac29095e7ec102e15e" category="image-alt">DRW A320 重量ラベル</block>
   <block id="6c9822a6a6265e0e6627098c357cfe2d" category="section-title">コントローラをネットワークに接続</block>
   <block id="a766258e1cfb1ce4e72917121f65a74d" category="paragraph">コントローラモジュールのオプションのデータポート、オプションの NIC カード、および管理ポートは、スイッチに接続されます。クラスタインターコネクト / HA ポートは、両方のコントローラモジュールでケーブル接続されます。</block>
-  <block id="013322a8027b639585538fe290718386" category="image-alt">DRW A320 TNSC ネットワークケーブルの複合アニメーション GIF</block>
   <block id="e5cd602ca5c03c391e8dfac3c307e06c" category="paragraph">100GbE （ QSFP28 ）ケーブルを使用して、クラスタ / HA ポートを相互に接続します。</block>
-  <block id="4f8f8380e5597e92380de812b879c5d1" category="list-text">e0d から e0d<block ref="5ea5295965a00406899d4b7460801661" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ec377d11568067a729ee6f50dee77c8" category="paragraph">オンボードポートをデータネットワーク接続に使用している場合は、 100GbE または 40GbE ケーブルを適切なデータネットワークスイッチに接続します。</block>
-  <block id="3c04babfe00a81e06f8982d93dd90179" category="list-text">e0g と e0h<block ref="6fafbcd677ceba87d8c48de1a29a3bf5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cc74cb2d1e5f9750b5812faaf036676e" category="paragraph">イーサネット接続または FC 接続に NIC カードを使用している場合は、 NIC カードを適切なスイッチに接続します。</block>
-  <block id="becd6fe246f05c450f5f6f1ff59f10ab" category="image-alt">DRW A320 NIC 接続手順 3.</block>
   <block id="9dfe7ca4d480fd4e10a0954286489a0f" category="paragraph">RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。</block>
-  <block id="5d86a652667b386e0b98042631990c02" category="paragraph"><block ref="5d86a652667b386e0b98042631990c02" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eb9634f2ea796139d7f0aeca3f6ce2d4" category="section-title">オプション 2 ：スイッチクラスタのケーブル接続</block>
   <block id="5b2974409018c6d4642074b9be18209d" category="paragraph">コントローラモジュールのオプションのデータポート、オプションの NIC カード、および管理ポートは、スイッチに接続されます。クラスタインターコネクト / HA ポートは、クラスタ / HA スイッチにケーブル接続されます。</block>
   <block id="f5412d7277a9aad4f1e320bf63f0582b" category="paragraph">100GbE （ QSFP28 ）ケーブルを使用して、クラスタ / HA ポートをクラスタ / HA スイッチに接続します。</block>
   <block id="840e60c4749a688bca9fc657aaff1710" category="list-text">両方のコントローラの e0a をクラスタ / HA スイッチに接続します</block>
-  <block id="c59f62b950bdb48bdd4229f438a8c8a8" category="list-text">両方のコントローラの e0d とクラスタ / HA スイッチ<block ref="15e7674fee3b32b30f565083329e5ce8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="60e821d2b0d80835cf4d935eb3557760" category="section-title">コントローラをドライブシェルフにケーブル接続</block>
   <block id="ea4a0ef865c900d0ce0d6485667ba790" category="paragraph">オンボードストレージポートを使用して、コントローラをシェルフにケーブル接続する必要があります。</block>
-  <block id="d49bb9b3f4ea10bb2faedd5805957881" category="image-alt">DRW A320 シングルシェルフ接続アニメーション GIF</block>
-  <block id="fcc21d6aa5ce2f3d80b7b15b3efd7622" category="paragraph">コントローラ A をシェルフにケーブル接続します <block ref="97ef6a28616ee1b44c8e319d2e09ad63" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cf09fa2cd4cedb36165538f6f6133b7f" category="paragraph">コントローラ B をシェルフにケーブル接続します。 <block ref="adad54de70c837652052dc8fbe20179a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e49f4a89e69b410e9fd76acc797854aa" category="image-alt">DRW A320 2 シェイブルケーブル配線アニメーション GIF</block>
-  <block id="1fd24d2bc89f56e2b5b986eb7d944870" category="paragraph">コントローラ A をシェルフにケーブル接続します。 <block ref="dc30c6795d4eccef24ec9e4cbd9f34a9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="64cd25defcb831725e6dbd4eeb07cec0" category="paragraph">コントローラ B をシェルフにケーブル接続します。 <block ref="fcd3de865e51763ca7c18796d9eecca6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="29507e337f4599b17e78b1e81c219e26" category="section-title">システムのセットアップと設定を完了</block>
   <block id="7a2b8204791fefff118f35cda4159e64" category="list-text">システム付属のコンソールケーブルを使用してラップトップまたはコンソールにコンソールケーブルを接続し、ラップトップを管理サブネット上の管理スイッチに接続します。</block>
-  <block id="80b38fbcbc6122c93f20a23f0edcacc5" category="image-alt">DRW A320 ラップトップをスイッチとコントローラに接続</block>
   <block id="c8fe385a2d49c957811553fa2c507091" category="summary">記入済みのコントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 2 つのクアッドポート SAS HBA を備えたクアッドパス HA 構成をケーブル接続できます。</block>
   <block id="129ad208c03826aef81ff147b924ba05" category="inline-link-macro">SAS ケーブル接続ルール</block>
   <block id="26ba4644ea5bc8f16212e97ddf32d634" category="list-text">必要に応じて、を参照してください <block ref="db31d33614fd87795381d5ac14be04aa" category="inline-link-macro-rx"></block> サポートされる構成については、コントローラのスロット番号の規則、シェルフ / シェルフ間の接続、およびコントローラ / シェルフ間の接続（ポートペアの使用など）を参照してください。</block>
@@ -4657,7 +4627,6 @@
   <block id="873efd8427437501798d979ea439809c" category="section-title">AFF A400 HA ペア用のシェルフをホットアドします</block>
   <block id="b994ebf3b12ef21aee27b63036342d83" category="section-title">AFF A320 HA ペアのホットアドシェルフをケーブル接続します</block>
   <block id="0d0422686a7d332d6a719d1fb6e38772" category="paragraph">この手順は、 AFF A320 HA ペアに既存の NS224 シェルフがあり、 2 台目のシェルフをホットアドすることを前提としています。</block>
-  <block id="18537f27e3c57fa7095de2a3bbea83b2" category="image-alt">DRW A320 ファンの交換</block>
   <block id="75ce955e15fef4cd5f15ecc0c7c15370" category="list-text">システム ID を表示します</block>
   <block id="0feb65e4d7bce1a53eb4047a827c8e55" category="list-text">disk show コマンドから取得したシステム ID 情報を使用して、ディスク所有権を再割り当てします。「 disk reassign -s old system ID disk reassign -s 118073209</block>
   <block id="8c66ad63be6016fb310ce930e9943285" category="list-text">ディスクが正しく割り当てられていることを確認します。「 Disk show -a 」</block>
@@ -5468,7 +5437,6 @@
   <block id="03163c4d180c5b6d6482efa550043cd8" category="doc">コントローラ AFF A800 をシャットダウンします</block>
   <block id="f0623f3de563d7ac67a984a76c53803d" category="paragraph">NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。</block>
   <block id="e935849faf7cd25a183a726f34797bb7" category="doc">コントローラモジュールを交換してください - AFF A300</block>
-  <block id="75a0d3caeb66a7c3aca3b7bc0f0c5985" category="image-alt">DRW A320 スイッチドネットワークケーブルの複合アニメーション GIF</block>
   <block id="82430a05d3820aeaeb756230e94ee643" category="doc">オンボード暗号化 - FAS8200 を確認します</block>
   <block id="a28455bf2eecf6cc499c335ee152cd75" category="paragraph">次のいずれかのオプションを使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。</block>
   <block id="3e1047f2ebaed54fe88cc6f78291dbb6" category="doc">ブートメディア FAS500f を交換してください</block>
@@ -8711,7 +8679,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="0fc16b203bddbfc834dc54c640fc1fd2" category="image-alt">LED USBモジュールの取り外し</block>
   <block id="e5247af1b25811b19243276e67aa7b9b" category="image-alt">NVRAMモジュールの取り外し</block>
   <block id="11d45af041bcae71c4e4d631ead36642" category="image-alt">NVRAMモジュールの内容の取り外し</block>
-  <block id="99a4fad8e3a9e518a4c8e3984c45a020" category="image-alt">PSUモジュールの取り外しまたは取り付け</block>
   <block id="38d3a35ba6c4b54bcaa647b5f49f15bf" category="image-alt">RTCバッテリの取り外しと取り付け</block>
   <block id="c591c62ae89f72b00936f85341489306" category="image-alt">電源装置のカムハンドルを開く</block>
   <block id="0709513deb20f95d7151fe2b5265dec7" category="image-alt">エンドキャップオペレータディスプレイ</block>
@@ -8808,7 +8775,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f4247136ba1a68a91a49f4e715963146" category="paragraph">障害のあるコントローラをシャットダウンする前に、システムでセキュリティキー管理機能が有効になっているかディスクが暗号化されているかを確認する必要があります。</block>
   <block id="ee3b489243bdd4fdcc48ef1ad422f531" category="section-title">セキュリティキー管理ツールの設定を確認</block>
   <block id="19033065ab73d137563560b1fc6895b0" category="inline-link">security key-manager keystore showのマニュアルページ</block>
-  <block id="a816d953401f2846877f62bed4fdd27b" category="list-text">security key-manager keystore show_コマンドを使用して、キー管理ツールがアクティブかどうかを確認します。詳細については、<block ref="4b8f2aeacb1514195535ef615c2cae4a" category="inline-link-rx"></block></block>
   <block id="71f479ec4da1fa9d5c9be25ad13a546d" category="admonition">他にもキー管理ツールのタイプがある場合があります。タイプは<block ref="5a2c55bb167f4f0fcfe52384fe7a4f0b" prefix=" " category="inline-code"></block>、<block ref="15460966dfd5d819470e51c2381536a3" prefix=" " category="inline-code"></block>、および<block ref="c731f72e1d22a7c5e01a7cb789a8885e" prefix=" " category="inline-code"></block>です。これらのタイプを確認するプロセスは、キー管理ツールのタイプを確認するプロセスと同じ<block ref="6a21b6995a068148bbb65c8f949b3fb2" prefix=" " category="inline-code"></block><block ref="c6b9507c26062233f2341cb90db60eaa" prefix=" " category="inline-code"></block> です。</block>
   <block id="a286fff38dd07b679c8ce3d88b6f2962" category="inline-link-macro">障害コントローラをシャットダウン</block>
   <block id="367826db12be5d0f5fa3825090445002" category="list-text">出力が表示されない場合は、に進み、障害ノードをシャットダウンします <block ref="eee94cfaa2087b0a7525f83880646105" category="inline-link-macro-rx"></block> 。</block>
@@ -9029,7 +8995,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8c7bd045108e1c5b78c97e914b17c504" category="list-text">LOADERプロンプトからONTAPをブートするには、_bye_と入力します。</block>
   <block id="92c80dd5462d9ebbe458a4d5574a0bcd" category="paragraph">コントローラのブート時にシステムIDの変更を確認し、変更が実装されたことを確認する必要があります。</block>
   <block id="4809a5131531611e176d418579ff2bce" category="list-text">コントローラがメンテナンスモード（プロンプトが表示されている）の場合は<block ref="2cf8a3bab83c4d2618c18eeeca9ebc98" prefix=" " category="inline-code"></block> 、メンテナンスモードを終了してLOADERプロンプトに移動します。_halt_</block>
-  <block id="98848d6f640c1b9d9ad1cab89e0b0a13" category="list-text">コントローラのLOADERプロンプトからコントローラをブートし、システムIDが一致しないためにシステムIDを上書きするかどうかを尋ねられたら「_y_」と入力します。</block>
   <block id="4e5f4ae21b25e767c4cce37a6162f267" category="list-text">Waiting for giveback... 交換用モジュールを搭載したコントローラのコンソールにメッセージが表示され、正常なコントローラから新しいパートナーシステムIDが自動的に割り当てられたことを確認します。_storage failover show_</block>
   <block id="7fea4b03ba1069ae857e3bf99659e212" category="list-text">正常なコントローラから、交換したコントローラのストレージをギブバックします。_storage failover giveback -ofnode replacement_node_name_</block>
   <block id="67a849a4d7dbba4f1483601cbb852e97" category="paragraph">コントローラはストレージをテイクバックしてブートを完了します。</block>
@@ -9376,7 +9341,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="dc67dd4e83bd586a50c17ea2c94c00d5" category="list-text"><block ref="3b8595d627306d8980fff3bd262d05b2" prefix="" category="inline-code"></block></block>
   <block id="536aadfad0128887672b66e929f02fcb" category="list-text"><block ref="a6dd61fa165deef585a79e05f8de73b0" prefix="" category="inline-code"></block></block>
   <block id="a242b56bad1d07089dce8ccb795966f2" category="list-text">リカバリプロセスが完了します。</block>
-  <block id="4730255e1152aa0891d10726285854f6" category="paragraph">通常のブート後に最終チェックを完了してストレージをギブバックし、ブートメディアの交換プロセスを完了します。</block>
   <block id="3bac3ae452491bc05a59b99b3d2476d6" category="paragraph">手順6に進みます。</block>
   <block id="070dd7606e33a466d7a8bb82a9a64b17" category="list-text">storage failover show_コマンドを使用して、ターゲットコントローラでギブバックの準備が完了していることを確認します。</block>
   <block id="378fa36f6e90b3bf6ddbb070e35b0388" category="list-text">パートナーコントローラにコンソールケーブルを接続し、_storage failover giveback -fromnode local-only -cfo-aggregates true_コマンドを使用してターゲットコントローラストレージをギブバックします。</block>
@@ -9438,7 +9402,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="04c6391623d6bd5d0ac0d7df563f74dc" category="image-alt">ケーブルプルタブの向きの例</block>
   <block id="35bd3e31ed449ec51ffdc43a42bdcd8f" category="list-text">光ファイバをスイッチに接続する場合は、ポートにケーブル接続する前に、SFPをコントローラポートに挿入します。</block>
   <block id="e8dcbbdb0b0cc30021cdb1772e14a12d" category="section-title">手順 1 ：コントローラをネットワークに接続する</block>
-  <block id="6df54967c5941126ef71ad521ce71f57" category="paragraph">ここでは、一般的な設定について説明します。具体的なケーブル接続は、ご使用のストレージシステム用に注文したコンポーネントによって異なることに注意してください。設定およびスロットプライオリティの詳細については、を参照してください <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
   <block id="774fc771cbe0562cf589e2e5571e543c" category="open-title">オプション1：スイッチレスクラスタをケーブル接続する</block>
   <block id="ab3e6f854653e79b55b1aef74734d66a" category="paragraph">スイッチレスクラスタをケーブル接続します。</block>
   <block id="0ce6d01af755d7d63a1db543cd42ef01" category="list-text">クラスタ/ HAインターコネクトケーブルを使用して、クラスタ/ HAインターコネクトポートe1aからe1aに、e7aからe7aにケーブル接続します。</block>
@@ -9460,7 +9423,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1107155d6b0c900a6485f06681854862" category="image-alt">RJ-45ケーブル</block>
   <block id="9c29eb35e98929529d99ca71cd855f4e" category="paragraph">* 1000BASE-T RJ-45ケーブル*</block>
   <block id="a8536d671676b42d7c49328e04123a96" category="image-alt">管理ネットワークへの接続</block>
-  <block id="c67ade60c9405661826821f009653f29" category="admonition">まだ電源コードを接続しないでください。</block>
   <block id="09e9d41a74e65e2200df2359e0c54806" category="open-title">オプション2：スイッチクラスタをケーブル接続する</block>
   <block id="0b7f474dc87a04642d4a17b892a87553" category="paragraph">スイッチクラスタをケーブル接続します。</block>
   <block id="fe1ed4b5e6a760085b2af448921f0d53" category="list-text">次のケーブル接続を行います。</block>
@@ -9523,7 +9485,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="2ce1349fe67fa0e027bf3526a78ebb93" category="admonition">クラスタが初期化されたら、をダウンロードしてを実行し、 <block ref="48865c7c1d8013246e4e5f705a9105de" category="inline-link-rx"></block> セットアップを確認します。</block>
   <block id="ed198c6c65dda3bfcee47cc329346a10" category="summary">キャビネットまたはTelcoラックにストレージシステムを設置します。</block>
   <block id="94ebd1127cf45d2e2e1f6f1b0cd35269" category="doc">ハードウェアの設置- AFF A1K</block>
-  <block id="7acdb30933a12f95dfea26017bada1f5" category="paragraph">次の手順では、空のキャビネットまたはTelcoラックにハードウェアを設置する方法について説明します。キャビネットにデータが事前に格納されている場合は、この手順をスキップします。</block>
   <block id="dfdc73d42700a9c3fdaeacd939a51a4f" category="inline-link">安全に関する注意事項</block>
   <block id="ab68982517ac3ad46c0076188c40b44c" category="list-text">このドキュメントを確認し、ハードウェアの移動と設置に関する注意事項を理解しておく必要があります<block ref="cf650561cfd1ad2dfbe54c8781566683" category="inline-link-rx"></block> 。</block>
   <block id="ba4a0871133faabe4aa77db489cdd95f" category="list-text">レールキットに手順書が同梱されている必要があります。</block>
@@ -9591,7 +9552,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5e90eef3467966790ef48f7bc66eaea8" category="list-text">ファンは、最初に起動するときに大きな音がすることがあります。起動時にファンから大きな音がするのは正常です。</block>
   <block id="671754b07475807f952083aca6f98a97" category="list-text">各電源装置の固定装置を使用して、電源ケーブルを固定します。</block>
   <block id="b20f6daaff695ed207299929a85ec2f0" category="summary">AFF A1Kプラットフォームの設置を準備します。</block>
-  <block id="7322abed84a9319ae754d84788be0a04" category="doc">インストールの準備- AFF A1K</block>
   <block id="b08289f100b75f4c534e1d2f7b065d98" category="inline-link-macro">クラスタの設定</block>
   <block id="4df010254bccca3ca04b1ea2f27bc98d" category="list-text">を使用して<block ref="21429355d1404c86c4038169e7df91bc" category="inline-link-rx"></block> 、必要なときに必要な値を記録し <block ref="5fecf2f883e4e59df3d0a6a1bcd5e808" category="inline-link-macro-rx"></block>ます。デフォルト値が指定されている場合は、その値を使用するか、独自の値を入力できます。</block>
   <block id="4157e2eb4dd8641bf3242a14b2dfed09" category="list-text">ハードウェアの設置に必要な追加機器や工具がすべて揃っていることを確認します。</block>
@@ -9640,14 +9600,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="501009762675d8b94f6d05080102eaa1" category="paragraph">番号は、納品書、確認用Eメール、または開梱後にコントローラのシステム管理モジュールで確認できます。</block>
   <block id="8a7ac8ffae90ca0a1caaddb0f33069c2" category="list-text">NetAppサポートサイトにアクセスします<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block>。</block>
   <block id="d1cc88bda5b2251b480ce496987d8474" category="list-text">ハードウェアを登録します。</block>
-  <block id="8f45a9f1fcb944bee42c078bdeacd8ac" category="cell">ユーザのタイプとアクセス方法</block>
-  <block id="e3df4624e4d36502b5d044730eab97cc" category="cell">実行する手順</block>
-  <block id="d3f2dc7623074c370346f082b621f2db" category="paragraph">NetAppの既存のお客様</block>
   <block id="8a55a5b89690f6046e6de8dd649ff837" category="list-text">ユーザ名とパスワードを使用してサインインします。</block>
   <block id="5c83cedabfd78baf337988a092bcf317" category="list-text">[システム]&gt;*[マイシステム]*を選択します。</block>
   <block id="1f122c4c30234dec74d765075fd1f45f" category="list-text">新しいシステムのシリアル番号が表示されていることを確認します。</block>
-  <block id="d193a53b34315bee1bed499f665686ce" category="list-text">そうでない場合は、NetAppの新規のお客様向けの手順に従います。</block>
-  <block id="daee797d0bf63a91fe069e1df88d7923" category="paragraph">NetAppの新規のお客様</block>
   <block id="12dc2a66a130388ec482398caa6ce95b" category="list-text">[ 今すぐ登録 ] をクリックしてアカウントを作成します。</block>
   <block id="89cc8de091278e0fb0686833ac6a7982" category="list-text">Systems *&gt;* Register Systems *を選択します。</block>
   <block id="c04746c1c8deb45f0567d25441428d64" category="list-text">製品システムのシリアル番号と必要な詳細情報を入力します。</block>
@@ -9735,7 +9690,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8f176870ac6c4361a1f6d7201cca260f" category="paragraph">ONTAPストレージシステムでは、各NS224シェルフは一意のシェルフIDで識別されます。このIDにより、ストレージシステムの設定内でシェルフが区別されます。デフォルトでは、シェルフIDには通常「00」と「01」が割り当てられますが、ストレージシステム全体で一意になるように、これらのIDの調整が必要になる場合があります。</block>
   <block id="4de17b4fab9ee69108776ab9c4aaa0c6" category="admonition">コントローラシャーシのシェルフIDは「00」にハードコードされています。プラットフォームに接続されたNS224シェルフにはシェルフID「00」を使用しないでください。</block>
   <block id="8e6cf8027b121504bad8e5f00fe274bd" category="summary">AFF A70、AFF A90プラットフォームの設置を準備します。</block>
-  <block id="6ac7ef3cf74f3edcc05e92fb62092d4a" category="doc">設置の準備- AFF A70、AFF A90</block>
   <block id="45fa7acb63053c31c5ae0a83dd4b3618" category="paragraph">プラットフォームのインストールを準備します。</block>
   <block id="62ca0ae61a6f061f90175c671563df84" category="list-text">ストレージシステムを設定するためのWebブラウザへのアクセス</block>
   <block id="bcaac0b69edbeb6d6ebf55df173a989d" category="paragraph">フル装備のA70-90プラットフォームの重量は最大68.8 kg（151.68ポンド）で、4人で持ち上げたり油圧リフトを使用したりする必要があります。</block>
@@ -9747,7 +9701,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6e6faa41850da2cbf2fba1981d46dbf5" category="list-text">ケーブル管理デバイス×2</block>
   <block id="a960b1448ee5bc8431d64797103ff6f9" category="paragraph">プラットフォームを登録して、サポートを受けることができます。</block>
   <block id="9ddae9a7519b413c3e002aaa6578c11b" category="paragraph">番号は、納品書、確認用Eメール、または開梱後のコントローラで確認できます。</block>
-  <block id="321d330a3500c9aa223bf5d134d0886b" category="list-text">システムのシリアル番号と必要な詳細情報を入力します。</block>
   <block id="9693b6a52f0ee9092f8116f36e38a969" category="summary">I/Oモジュールを交換するには、モジュールからケーブルを外し、モジュールからSFPモジュールとQSFPモジュールを取り外し、モジュールを取り外し、交換用モジュールを取り付け、SFPモジュールとQSFPモジュールを取り付けてから、I/Oモジュールをケーブル接続する必要があります。</block>
   <block id="2224bc58afd68539e0dea6bf9e50c3d6" category="doc">I/Oモジュールの追加- AFF A70、AFF A90</block>
   <block id="24ca01289b896c334109ba7e14ec004f" category="doc">I/Oモジュールの追加と交換- AFF A70-90Kの概要</block>
@@ -9999,4 +9952,67 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f3585daa539c5917b4fedd0eb7efb3f2" category="sidebar">AFF システム</block>
   <block id="6476573ba5b973ad8ea01c57f5b30267" category="sidebar">ASAシステム</block>
   <block id="9aaba65702056e024efc0836758c1538" category="sidebar">ホットアドの完了</block>
+  <block id="b1cd69e899e8ab2e8b0c559899a3f2d7" category="admonition">次の図は、水平および垂直I/Oモジュールの取り外しを示しています。通常、取り外したI/Oモジュールは1つだけです。</block>
+  <block id="ed8012a83cd9088ec111d26e82a75971" category="list-text">security key-manager keystore show_コマンドを使用して、キー管理ツールがアクティブかどうかを確認します。詳細については、<block ref="4b8f2aeacb1514195535ef615c2cae4a" category="inline-link-rx"></block></block>
+  <block id="3e6277588162255770fd3384bad09d6d" category="list-text">コントローラのLOADERプロンプトからコントローラをブートし、システムIDが一致しないためにシステムIDを上書きするかどうかを尋ねられたら「_y_」と入力します。</block>
+  <block id="9daabece8db7521a7882f63ebd76a891" category="image-alt">リリースボタンが上にあるドライブの取り外し</block>
+  <block id="e0bc24820711c466532ba2cb67ababd9" category="image-alt">リリースボタンが中央にあるドライブの取り外し</block>
+  <block id="5be3be4e3c78f5ba4233a70fab6255f9" category="paragraph">通常のブート後に最終チェックを実行してストレージをギブバックし、ブートメディアの交換プロセスを完了します。</block>
+  <block id="0ae7701d2ef507a0fceb7c75d4891e75" category="list-text">コントローラAのポートe1aをコントローラBのポートe1aにケーブル接続します。</block>
+  <block id="8bf237b60bd4b2db806d6610ad52ec49" category="list-text">コントローラAのポートe7aをコントローラBのポートe1aにケーブル接続します。</block>
+  <block id="1de71be9c54175327aecef768179d1bd" category="paragraph">+image：：../media/drw_a1k_TNSC_cluster_cabling_ieops-1648.svg[2ノードスイッチレスクラスタのケーブル配線図、幅=500px]</block>
+  <block id="89135cd683c3d107d2c82b9a703f04cb" category="paragraph">+。イーサネットモジュールポートをホストネットワークにケーブル接続します。</block>
+  <block id="4e44798e075d2d881a9fb7543667af95" category="paragraph">+一般的なホストネットワークケーブル接続の例を次に示します。ご使用のシステム構成については、を参照してください <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 。</block>
+  <block id="38821947dff053760f4c97b648ca454a" category="admonition">まだ電源コードを接続しないでください。</block>
+  <block id="b0dc4e3ef222885899ea12125b17e5eb" category="list-text">左側のペインで*[ネットワーク]*をクリックし、右クリックして*[更新]*を選択します。</block>
+  <block id="1d0b4b2ae4d50e55a4247f5c6ede72f1" category="paragraph">空のキャビネットまたはTelcoラックにハードウェアを設置します。キャビネットにデータが事前に格納されている場合は、この手順をスキップします。</block>
+  <block id="cd5e55734c933dafcff53ae3865a89d5" category="doc">設置の準備- AFF A1K</block>
+  <block id="5a5cce6679503c381a637f466b048193" category="open-title">オプション1：NetAppの既存のお客様</block>
+  <block id="253e5915076081eaf8bcc8dd74c1d42e" category="admonition">新しいシステムのシリアル番号が表示されない場合は、NetAppの新規のお客様向けの手順に従います。</block>
+  <block id="7e2ca0c1daf9aaf521d6b306d11f7c79" category="open-title">オプション2：NetAppの新規のお客様</block>
+  <block id="a620e4025016adf1d0a58233ca0fabf5" category="image-alt">RTCバッテリの取り外しまたは交換</block>
+  <block id="49c0e8738689c7137641d0b6eed8b74c" category="image-alt">ブート メディアの移動</block>
+  <block id="e9178489530d4c60949007e8abe6cd95" category="image-alt">DIMMの移動のアニメーション</block>
+  <block id="3cebb0bf3f808b01f8380666a63cc376" category="image-alt">PCIライザーの移動</block>
+  <block id="1079efe662e16cf433206d49d63eeaa6" category="paragraph"><block ref="1079efe662e16cf433206d49d63eeaa6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8dca5ac38ffa0e9613281a20a0ace994" category="image-alt">システムリフト重量に関する注意事項</block>
+  <block id="9971c7f02208e39ad6368e57eb2f82f3" category="image-alt">ケーブルマネジメントアームの取り外しまたは取り付け</block>
+  <block id="2b6ebc45199173506b9b4592d62affa0" category="image-alt">2ノオトスイツチレスクラスタノケエフルセツソク</block>
+  <block id="3988cb152ae91c53f380027a4232d536" category="inline-image-macro">2ノードスイッチレスクラスタでクラスタHA接続を接続</block>
+  <block id="372a8dd97d0e0a73dd341e38652ff673" category="list-text">e0dとe0d <block ref="df4a6e6703f97285d4be98ac6b32bb9f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="896029f9803d769d6b4c354df0fa1440" category="inline-image-macro">オンボードデータネットワーク接続を接続</block>
+  <block id="5fc0a7eeb4f9f66fd26242880a45cfa4" category="list-text">e0gとe0h <block ref="ba2134526422f5f21eaaa9ef2e2f11c5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="722ecbce3343f3dc23dee2d53d88f2ed" category="image-alt">2ノードスイッチレスクラスタでNICを接続</block>
+  <block id="5a77698302494ef91ee95c3f9ded308f" category="inline-image-macro">管理ポートの接続</block>
+  <block id="1c0c9fe4df36ecf54b797e69eff0360e" category="paragraph"><block ref="1c0c9fe4df36ecf54b797e69eff0360e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="aecf4c890506699d5134914982e97718" category="image-alt">スイッチクラスタのケーブル接続</block>
+  <block id="79135b297c57329d2d977b75149a086c" category="inline-image-macro">スイッチクラスタクラスタ- HA接続</block>
+  <block id="2a41afda28faa24bd5359e120005398d" category="list-text">両方のコントローラのe0dをクラスタ/ HAスイッチに接続 <block ref="b92a1fef09a96ed6d9089504fec643ee" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1b6bade89e0d586d34572548f1418dff" category="inline-image-macro">スイッチクラスタのオンボードネットワーク接続</block>
+  <block id="e734ac5b706a3982e94ed4bcf5783d35" category="list-text">e0gとe0h <block ref="d655351f2183e938c691c0566f625116" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d2b5e3a94d4de532d196fa8367775092" category="image-alt">スイッチクラスタのネットワーク接続</block>
+  <block id="aeb83c4121e1220b0a8efc82136a809d" category="inline-image-macro">スイッチクラスタ管理ネットワーク接続</block>
+  <block id="df81ef45089583d9cf254a5e823c88ab" category="paragraph"><block ref="df81ef45089583d9cf254a5e823c88ab" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f44e898d80cbbf4a33440188c038a5d3" category="image-alt">1ツノドライブシェルフノケエフルセツソク</block>
+  <block id="7619a75fe3181346925af214b3805907" category="inline-image-macro">コントローラ A をシェルフにケーブル接続します</block>
+  <block id="ed6605849a8f419088845bc48c2b4374" category="paragraph">コントローラAをシェルフにケーブル接続します。 <block ref="8f69dbb1a9676f77b4e45659e89350f0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9228396d4ae4e82ba4cd05b1f94961bf" category="inline-image-macro">コントローラBを1台のシェルフに接続</block>
+  <block id="4e324a0bffb1eb75afb38454acf8e1ea" category="paragraph">コントローラBをシェルフにケーブル接続します。 <block ref="eae43961c4d76c017c2440362d53b1c7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b7d0a8670d6614b389c8403bdb0f5690" category="image-alt">ケーブル2台のシェルフのアニメーション</block>
+  <block id="694cbf19b59e9646ed9b4e00c40a2d5e" category="inline-image-macro">2台のシェルフをコントローラAにケーブル接続</block>
+  <block id="eeadc1e47c5ada05336cc4a2430aff44" category="paragraph">コントローラAをシェルフにケーブル接続します。 <block ref="d1f96be8e1b1f281d39fbb850bfff8ae" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2f7272edef7a7fba4085ccfab3dcab29" category="inline-image-macro">コントローラbへのテオシェルセスのケーブル接続</block>
+  <block id="5068cb73707de732551109a3000233a5" category="paragraph">コントローラBをシェルフにケーブル接続します。 <block ref="a2de9db71ec552fd6bcd09e536f53289" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3efca07728c425a2d570687f9c5ee055" category="list-text">エクスプローラを開きます。</block>
+  <block id="060661d6632055dffb9c643daef86e4f" category="image-alt">ラップトップを管理サブネットスイッチにケーブル接続します。</block>
+  <block id="cf3f3f0fc4be4a45a82eb23742f77b44" category="image-alt">NVバッテリの交換</block>
+  <block id="8dd9b5acff09c1cf11545aba64dc805d" category="image-alt">NVDIMM を交換します</block>
+  <block id="d8ee7164de4500239f84b98bce6a6cba" category="image-alt">ケーブルマネジメントデバイスを取り外します。</block>
+  <block id="0607668bcd83e971ac318001952a55ae" category="image-alt">PCIカードを交換してください</block>
+  <block id="abb9a3f7b40da322ff2c9d6b0f555396" category="image-alt">スイッチクラスタネットワークのケーブル接続</block>
+  <block id="11e10f0140c4a2adc649196a587b4fb5" category="image-alt">2台のシェルフをコントローラにケーブル接続</block>
+  <block id="91ffcf18fe68ab362696af94371c45a6" category="image-alt">3台のシェルフをコントローラにケーブル接続</block>
+  <block id="5d40c2e94b9e6a2b23697795499fe265" category="paragraph">+image：：../media/drw_70-90_TNSC_cluster_cabling_ieops-1653.svg[2ノードスイッチレスクラスタのケーブル配線図、幅=500px]</block>
+  <block id="46ef92fe9e0acb49a708c33291f9e608" category="doc">設置の準備- AFF A70、AFF A90</block>
+  <block id="0f8a8f2efc51dcb48a6d357e4ed1476e" category="sidebar">インストールの準備</block>
 </blocks>

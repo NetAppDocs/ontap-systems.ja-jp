@@ -88,7 +88,7 @@ image::../media/drw_a320_controller_cable_unplug_animated_gif.png[ケーブル�
 . ケーブルマネジメントデバイスをコントローラモジュールの右側と左側から取り外し、脇に置きます。
 . コントローラモジュールをシャーシから取り外します。
 +
-image::../media/drw_a320_controller_remove_animated_gif.png[コントローラの取り外し]
+image::../media/drw_a320_controller_remove_animated_gif.png[コントローラを取り外します]
 
 +
 .. コントローラモジュールの両側にあるラッチ機構に人差し指をかけます。
@@ -111,7 +111,7 @@ image::../media/drw_a320_controller_remove_animated_gif.png[コントローラ�
 
 NVDIMM バッテリを交換するには、障害が発生したバッテリをコントローラモジュールから取り外し、交換用バッテリをコントローラモジュールに取り付ける必要があります。
 
-image::../media/drw_a320_nvbat_move_animated_gif.png[DRW A320 nvsbat アニメーション GIF を移動します]
+image::../media/drw_a320_nvbat_move_animated_gif.png[NVバッテリの交換]
 
 . エアダクトを開き、 NVDIMM バッテリの場所を確認します。
 . バッテリプラグの場所を確認し、バッテリプラグ前面のクリップを押してプラグをソケットから外し、バッテリケーブルをソケットから抜きます。

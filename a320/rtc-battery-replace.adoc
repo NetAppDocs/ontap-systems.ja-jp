@@ -88,7 +88,7 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 . コントローラモジュールの電源装置のコードを電源から抜きます。
 . ケーブルマネジメントデバイスに接続しているケーブルをまとめているフックとループストラップを緩め、システムケーブルと SFP をコントローラモジュールから外し（必要な場合）、どのケーブルが何に接続されていたかを記録します。
 +
-image::../media/drw_a320_controller_cable_unplug_animated_gif.png[ケーブルマネジメントデバイスの取り外し]
+image::../media/drw_a320_controller_cable_unplug_animated_gif.png[ケーブルマネジメントデバイスを取り外します。]
 
 +
 ケーブルはケーブルマネジメントデバイスに収めたままにします。これにより、ケーブルマネジメントデバイスを取り付け直すときに、ケーブルを整理する必要がありません。
@@ -96,7 +96,7 @@ image::../media/drw_a320_controller_cable_unplug_animated_gif.png[ケーブル�
 . ケーブルマネジメントデバイスをコントローラモジュールの右側と左側から取り外し、脇に置きます。
 . コントローラモジュールをシャーシから取り外します。
 +
-image::../media/drw_a320_controller_remove_animated_gif.png[コントローラの取り外し]
+image::../media/drw_a320_controller_remove_animated_gif.png[コントローラを取り外します]
 
 +
 .. コントローラモジュールの両側にあるラッチ機構に人差し指をかけます。
@@ -117,7 +117,7 @@ image::../media/drw_a320_controller_remove_animated_gif.png[コントローラ�
 
 == 手順 4 ： RTC バッテリを交換します
 
-image::../media/drw_a320_rtc_batt_replace_animated_gif.png[DRW A320 RTC BATT アニメーション GIF 交換]
+image::../media/drw_a320_rtc_batt_replace_animated_gif.png[RTC バッテリを交換します]
 
 . PCIe カバーを取り外します。
 +

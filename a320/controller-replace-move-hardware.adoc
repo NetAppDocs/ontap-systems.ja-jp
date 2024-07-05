@@ -79,7 +79,7 @@ NVDIMM バッテリを障害のあるコントローラモジュールから交�
 
 次の図または記載された手順を使用して、障害のあるコントローラモジュールから交換用コントローラモジュールに NVDIMM バッテリを移動できます。
 
-image::../media/drw_a320_nvbat_move_animated_gif.png[DRW A320 nvsbat アニメーション GIF を移動します]
+image::../media/drw_a320_nvbat_move_animated_gif.png[NVバッテリの移動]
 
 . コントローラモジュールで NVDIMM バッテリの場所を確認します。
 . バッテリプラグの場所を確認し、バッテリプラグ前面のクリップを押してプラグをソケットから外し、バッテリケーブルをソケットから抜きます。
@@ -100,7 +100,7 @@ NOTE: 指示があるまで、バッテリケーブルをマザーボードに�
 
 次の図または記載された手順を使用して、障害のあるコントローラモジュールから交換用コントローラモジュールにブートメディアを移動できます。
 
-image::../media/drw_a320_boot_media_move_animated_gif.png[DRW A320 ブートメディア移動アニメーション GIF]
+image::../media/drw_a320_boot_media_move_animated_gif.png[ブート メディアの移動]
 
 . エアダクトを開き、次の図またはコントローラモジュールの FRU マップを使用してブートメディアの場所を確認します。
 . コントローラモジュールからブートメディアの場所を確認して取り出します。
@@ -133,11 +133,11 @@ DIMM の場所を確認し、障害のあるコントローラモジュールか
 
 次の図または記載された手順を使用して、障害のあるコントローラモジュールから交換用コントローラモジュールに DIMM を移動できます。
 
-image::../media/drw_a320_dimm_move_animated_gif.png[DRW A320 DIMM はアニメーション GIF を移動します]
+image::../media/drw_a320_dimm_move_animated_gif.png[DIMMの移動のアニメーション]
 
 . コントローラモジュールで DIMM の場所を確認します。
 +
-image::../media/drw_a320_dimm_map.png[DRW A320 DIMM マップ]
+image::../media/drw_a320_dimm_map.png[DIMMマップ]
 
 +
 |===
@@ -196,7 +196,7 @@ PCIe ライザーに PCIe カードを取り付けた状態で、障害のある
 
 次の図または記載された手順を使用して、障害のあるコントローラモジュールから交換用コントローラモジュールに PCIe ライザーを移動できます。
 
-image::../media/drw_a320_pci_riser_move_animated_gif.png[DRW A320 PCI ライザー動画 GIF を移動します]
+image::../media/drw_a320_pci_riser_move_animated_gif.png[PCIライザーの移動]
 
 . PCIe ライザーのカバーの青色の取り付けネジを外してカバーを取り外します。カバーを手前にスライドさせて上に回転させ、コントローラモジュールから持ち上げて外し、脇に置きます。
 . 交換用コントローラモジュールから空のライザーを取り外します。

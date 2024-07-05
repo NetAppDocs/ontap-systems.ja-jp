@@ -187,19 +187,22 @@ mcc1A::> metrocluster operation show
 
 . ケーブルマネジメントデバイスをコントローラモジュールの右側と左側から取り外し、脇に置きます。
 +
-image::../media/drw_32xx_cbl_mgmt_arm.png[ケーブルマネジメントアームの取り外し[]]
+image::../media/drw_32xx_cbl_mgmt_arm.png[ケーブルマネジメントアームの取り外し]
 
 . コントローラモジュールのカムハンドルの取り付けネジを緩めます。
 +
 image::../media/drw_8020_cam_handle_thumbscrew.png[取り付けネジを緩めてカムハンドルを開く]
 
 +
+[cols="1,4"]
 |===
 
 
  a| 
 image:../media/legend_icon_01.png["番号1"]
-| 取り付けネジ 
+ a| 
+取り付けネジ
+
 
 
  a| 
@@ -223,7 +226,7 @@ RTC バッテリを交換するには、コントローラ内でバッテリの�
 . 接地対策がまだの場合は、自身で適切に実施します。
 . RTC バッテリの場所を確認します。
 +
-image::../media/drw_rxl_rtc_battery.png[DRW rxl RTC バッテリ]
+image::../media/drw_rxl_rtc_battery.png[RTCバッテリの取り外しまたは交換]
 
 . バッテリをそっと押してホルダーから離し、持ち上げてホルダーから取り出します。
 +

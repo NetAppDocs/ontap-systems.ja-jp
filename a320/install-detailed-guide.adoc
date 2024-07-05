@@ -100,7 +100,7 @@ X66250-5 （ 112-00328 ）、 5m
 
 X66250-30 （ 112-00331 ）、 30m
  a| 
-image:../media/oie_cable_etherned_mpo.png[""]
+image:../media/oie_cable_etherned_mpo.png["イーサネットケーブル - MPO"]
  a| 
 イーサネットケーブル（注文内容による）
 
@@ -186,11 +186,11 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["クラスタ設�
 NOTE: システムの重量に関連する安全上の注意事項を確認しておく必要があります。
 
 +
-image::../media/drw_a320_weight_label.png[DRW A320 重量ラベル]
+image::../media/drw_a320_weight_label.png[システムリフト重量に関する注意事項]
 
 . ケーブルマネジメントデバイスを取り付けます（図を参照）。
 +
-image::../media/drw_a320_cable_management_arms.png[ケーブルマネジメントアームの取り外しと取り付け]
+image::../media/drw_a320_cable_management_arms.png[ケーブルマネジメントアームの取り外しまたは取り付け]
 
 . システムの前面にベゼルを配置します。
 
@@ -218,7 +218,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 . 図またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
 +
-image::../media/drw_a320_tnsc_network_cabling_composite_animated_gif.png[DRW A320 TNSC ネットワークケーブルの複合アニメーション GIF]
+image::../media/drw_a320_tnsc_network_cabling_composite_animated_gif.png[2ノオトスイツチレスクラスタノケエフルセツソク]
 
 +
 [cols="1,2"]
@@ -232,7 +232,7 @@ image:../media/oie_legend_icon_1_lg.png["手順 1."]
 100GbE （ QSFP28 ）ケーブルを使用して、クラスタ / HA ポートを相互に接続します。
 
 ** e0a から e0a
-** e0d から e0dimage:../media/drw_a320_tnsc_cluster_ha_connection_step1a.png[""]
+** e0dとe0d image:../media/drw_a320_tnsc_cluster_ha_connection_step1a.png["2ノードスイッチレスクラスタでクラスタHA接続を接続"]
 
 
 
@@ -242,7 +242,7 @@ image:../media/oie_legend_icon_2_o.png["ステップ2"]
  a| 
 オンボードポートをデータネットワーク接続に使用している場合は、 100GbE または 40GbE ケーブルを適切なデータネットワークスイッチに接続します。
 
-** e0g と e0himage:../media/drw_a320_onboard_data_connection_step2.png[""]
+** e0gとe0h image:../media/drw_a320_onboard_data_connection_step2.png["オンボードデータネットワーク接続を接続"]
 
 
 
@@ -252,7 +252,7 @@ image:../media/oie_legend_icon_3_dr.png["手順 3"]
  a| 
 イーサネット接続または FC 接続に NIC カードを使用している場合は、 NIC カードを適切なスイッチに接続します。
 
-image::../media/drw_a320_nic_connections_step3.png[DRW A320 NIC 接続手順 3.]
+image::../media/drw_a320_nic_connections_step3.png[2ノードスイッチレスクラスタでNICを接続]
 
 
 
@@ -261,7 +261,7 @@ image:../media/oie_legend_icon_4_lp.png["ステップ4"]
  a| 
 RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
 
-image:../media/drw_a320_management_port_connection_step4.png[""]
+image:../media/drw_a320_management_port_connection_step4.png["管理ポートの接続"]
 
 
 
@@ -291,7 +291,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 . 図またはステップバイステップの手順に従って、コントローラとスイッチをケーブルで接続します。
 +
-image::../media/drw_a320_switched_network_cabling_composite_animated_GIF.png[DRW A320 スイッチドネットワークケーブルの複合アニメーション GIF]
+image::../media/drw_a320_switched_network_cabling_composite_animated_GIF.png[スイッチクラスタのケーブル接続]
 
 +
 [cols="1,3"]
@@ -305,7 +305,7 @@ image:../media/oie_legend_icon_1_lg.png["手順 1."]
 100GbE （ QSFP28 ）ケーブルを使用して、クラスタ / HA ポートをクラスタ / HA スイッチに接続します。
 
 ** 両方のコントローラの e0a をクラスタ / HA スイッチに接続します
-** 両方のコントローラの e0d とクラスタ / HA スイッチimage:../media/drw_a320_switched_cluster_ha_connection_step1b.png[""]
+** 両方のコントローラのe0dをクラスタ/ HAスイッチに接続 image:../media/drw_a320_switched_cluster_ha_connection_step1b.png["スイッチクラスタクラスタ- HA接続"]
 
 
 
@@ -315,7 +315,7 @@ image:../media/oie_legend_icon_2_o.png["ステップ2"]
  a| 
 オンボードポートをデータネットワーク接続に使用している場合は、 100GbE または 40GbE ケーブルを適切なデータネットワークスイッチに接続します。
 
-** e0g と e0himage:../media/drw_a320_onboard_data_connection_step2.png[""]
+** e0gとe0h image:../media/drw_a320_onboard_data_connection_step2.png["スイッチクラスタのオンボードネットワーク接続"]
 
 
 
@@ -325,7 +325,7 @@ image:../media/oie_legend_icon_3_dr.png["手順 3"]
  a| 
 イーサネット接続または FC 接続に NIC カードを使用している場合は、 NIC カードを適切なスイッチに接続します。
 
-image::../media/drw_a320_nic_connections_step3.png[DRW A320 NIC 接続手順 3.]
+image::../media/drw_a320_nic_connections_step3.png[スイッチクラスタのネットワーク接続]
 
 
 
@@ -334,7 +334,7 @@ image:../media/oie_legend_icon_4_lp.png["ステップ4"]
  a| 
 RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
 
-image:../media/drw_a320_management_port_connection_step4.png[""]
+image:../media/drw_a320_management_port_connection_step4.png["スイッチクラスタ管理ネットワーク接続"]
 
 
 
@@ -368,7 +368,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 . 図またはステップバイステップの手順に従って、 1 台のシェルフにコントローラをケーブル接続できます。
 +
-image::../media/drw_a320_single_shelf_connections_animated_gif.png[DRW A320 シングルシェルフ接続アニメーション GIF]
+image::../media/drw_a320_single_shelf_connections_animated_gif.png[1ツノドライブシェルフノケエフルセツソク]
 
 +
 [cols="1,3"]
@@ -379,14 +379,14 @@ image::../media/drw_a320_single_shelf_connections_animated_gif.png[DRW A320 シ�
  a| 
 image:../media/oie_legend_icon_1_mb.png["番号1"]
  a| 
-コントローラ A をシェルフにケーブル接続します image:../media/drw_a320_storage_cabling_controller_a_single_shelf.png[""]
+コントローラAをシェルフにケーブル接続します。 image:../media/drw_a320_storage_cabling_controller_a_single_shelf.png["コントローラ A をシェルフにケーブル接続します"]
 
 
 
  a| 
 image:../media/oie_legend_icon_2_lo.png["番号2"]
  a| 
-コントローラ B をシェルフにケーブル接続します。 image:../media/drw_a320_storage_cabling_controller_b_single_shelf.png[""]
+コントローラBをシェルフにケーブル接続します。 image:../media/drw_a320_storage_cabling_controller_b_single_shelf.png["コントローラBを1台のシェルフに接続"]
 
 |===
 . システムのセットアップを完了するには、を参照してください <<システムのセットアップと設定を完了>>
@@ -407,7 +407,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 . 次の図または記載された手順を使用して、 2 台のドライブシェルフにコントローラをケーブル接続できます。
 +
-image::../media/drw_a320_2_shevles_cabling_animated_gif.png[DRW A320 2 シェイブルケーブル配線アニメーション GIF]
+image::../media/drw_a320_2_shevles_cabling_animated_gif.png[ケーブル2台のシェルフのアニメーション]
 
 +
 [cols="1-3"]
@@ -418,14 +418,14 @@ image::../media/drw_a320_2_shevles_cabling_animated_gif.png[DRW A320 2 シェイ
  a| 
 image:../media/oie_legend_icon_1_mb.png["番号1"]
  a| 
-コントローラ A をシェルフにケーブル接続します。 image:../media/drw_a320_2_shelves_cabling_controller_a.png[""]
+コントローラAをシェルフにケーブル接続します。 image:../media/drw_a320_2_shelves_cabling_controller_a.png["2台のシェルフをコントローラAにケーブル接続"]
 
 
 
  a| 
 image:../media/oie_legend_icon_2_lo.png["番号2"]
  a| 
-コントローラ B をシェルフにケーブル接続します。 image:../media/drw_a320_2_shelves_cabling_controller_b.png[""]
+コントローラBをシェルフにケーブル接続します。 image:../media/drw_a320_2_shelves_cabling_controller_b.png["コントローラbへのテオシェルセスのケーブル接続"]
 
 |===
 . システムのセットアップを完了するには、を参照してください <<システムのセットアップと設定を完了>>
@@ -496,7 +496,7 @@ NOTE: コンソールポートの設定方法については、ラップトッ�
 
 .. システム付属のコンソールケーブルを使用してラップトップまたはコンソールにコンソールケーブルを接続し、ラップトップを管理サブネット上の管理スイッチに接続します。
 +
-image::../media/drw_a320_laptop_to_switch_and_controller.png[DRW A320 ラップトップをスイッチとコントローラに接続]
+image::../media/drw_a320_laptop_to_switch_and_controller.png[ラップトップを管理サブネットスイッチにケーブル接続します。]
 
 .. 管理サブネット上の TCP / IP アドレスをラップトップまたはコンソールに割り当てます。
 

@@ -7,7 +7,7 @@ entries:
   entries:
   - title: インストールワークフロー
     url: "/a70-90/install-overview.html"
-  - title: インストールの準備
+  - title: 設置を準備
     url: "/a70-90/install-prepare.html"
   - title: ハードウェアを設置
     url: "/a70-90/install-hardware.html"
