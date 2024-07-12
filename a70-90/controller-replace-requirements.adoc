@@ -1,23 +1,23 @@
 ---
-permalink: a70-90/controller-replace-overview.html 
+permalink: a70-90/controller-replace-requirements.html 
 sidebar: sidebar 
-keywords: aff a70, aff a90, prerequisite, replace the controller module 
+keywords: aff a1k, prerequisite, replace the controller module 
 summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。 
 ---
-= コントローラモジュールの交換の概要- AFF A70、AFF A90
+= 要件と考慮事項- AFF A70、AFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。
+コントローラの交換手順の要件を確認し、使用しているONTAPオペレーティングシステムのバージョンに適した手順を選択する必要があります。
 
 * すべてのドライブシェルフが適切に動作している必要があります。
 * 正常なコントローラは、交換するコントローラをテイクオーバーできる必要があります（この手順 では「障害のあるコントローラ」と呼びます）。
 * MetroCluster 構成のシステムの場合は、を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["正しいリカバリ手順の選択"] この手順の使用が必要かどうかを判断するには、次の手順を実行
 * 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。
-* コントローラモジュールを、同じモデルタイプのコントローラモジュールと交換する必要があります。コントローラモジュールを交換するだけでは、システムをアップグレードすることはできません。
+* コントローラモジュールは、同じモデルタイプのコントローラモジュールと交換する必要があります。コントローラモジュールを交換するだけでは、システムをアップグレードすることはできません。
 * この手順の一部としてドライブやドライブシェルフを変更することはできません。
 * ブートデバイスはシステムの背面に取り付けられたシステム管理モジュールに配置されているため、コントローラモジュールの交換時にブートデバイスを移動する必要はありません。
 * これらの手順のコマンドを正しいシステムに適用することが重要です。

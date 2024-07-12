@@ -1,0 +1,37 @@
+---
+permalink: a1k/controller-replace-workflow.html 
+sidebar: sidebar 
+keywords: aff a1k, replace the controller 
+summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
+---
+= コントローラの交換ワークフロー- AFF A1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead lead"]
+コントローラモジュールを交換するには、次のワークフロー手順に従ってください。
+
+.作業を開始する前に
+コントローラモジュールを交換するには、一定の要件を満たす必要があります。を確認します link:controller-replace-requirements.html["コントローラの交換に関する要件と考慮事項"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:controller-replace-shutdown.html["障害のあるコントローラをシャットダウンします"]
+[role="quick-margin-para"]
+障害のあるコントローラをシャットダウンまたはテイクオーバーして、正常なコントローラが障害のあるコントローラストレージから引き続きデータを提供できるようにします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:controller-replace-move-hardware.html["コントローラを交換"]
+[role="quick-margin-para"]
+コントローラを交換するには、障害のあるコントローラを取り外し、FRUコンポーネントを交換用コントローラモジュールに移動してから、交換用コントローラモジュールをエンクロージャに取り付けます。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:controller-replace-system-config-restore-and-verify.html["システム構成をリストアおよび検証します"]
+[role="quick-margin-para"]
+交換用コントローラの下位システム構成を確認し、必要に応じてシステム設定を再設定します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:controller-replace-recable-reassign-disks.html["コントローラをギブバック"]
+[role="quick-margin-para"]
+ストレージリソースの所有権を交換用コントローラに戻します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:controller-replace-restore-system-rma.html["コントローラ交換後の処理"]
+[role="quick-margin-para"]
+LIFを確認し、クラスタの健全性を確認して、障害が発生したパーツをNetAppに戻します。

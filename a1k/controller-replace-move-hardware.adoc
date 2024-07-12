@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, move the controller module hardware 
 summary: コントローラモジュールを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。 
 ---
-= コントローラモジュールハードウェアを交換- AFF A1K
+= コントローラモジュールの交換- AFF A1K
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

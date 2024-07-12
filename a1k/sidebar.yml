@@ -7,7 +7,7 @@ entries:
   entries:
   - title: インストールワークフロー
     url: "/a1k/install-overview.html"
-  - title: インストールの準備
+  - title: 設置を準備
     url: "/a1k/install-prepare.html"
   - title: ハードウェアを設置
     url: "/a1k/install-hardware.html"
@@ -20,13 +20,15 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF A1Kのメンテナンス
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/a1k/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF A1Kブートメディア
     entries:
-    - title: ブートメディアの交換の概要
-      url: "/a1k/bootmedia-replace-overview.html"
+    - title: ブートメディアの交換ワークフロー
+      url: "/a1k/bootmedia-replace-workflow.html"
+    - title: 要件および考慮事項
+      url: "/a1k/bootmedia-replace-requirements.html"
     - title: オンボード暗号化キーを確認
       url: "/a1k/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
@@ -35,15 +37,17 @@ entries:
       url: "/a1k/bootmedia-replace.html"
     - title: ブートイメージを起動します
       url: "/a1k/bootmedia-recovery-image-boot.html"
-    - title: 暗号化リストア
+    - title: アンコウカノ
       url: "/a1k/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します
       url: "/a1k/bootmedia-complete-rma.html"
   - title: コントローラ
     pdf-filename: AFF A1Kコントローラモジュール
     entries:
-    - title: コントローラモジュールの交換の概要
-      url: "/a1k/controller-replace-overview.html"
+    - title: コントローラの交換ワークフロー
+      url: "/a1k/controller-replace-workflow.html"
+    - title: 要件および考慮事項
+      url: "/a1k/controller-replace-requirements.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a1k/controller-replace-shutdown.html"
     - title: コントローラを交換してください
@@ -64,9 +68,9 @@ entries:
     url: "/a1k/nvdimm-battery-replace.html"
   - title: I/O モジュール
     entries:
-    - title: I/Oモジュールの追加または交換の概要
+    - title: I/Oモジュールの概要
       url: "/a1k/io-module-overview.html"
-    - title: I/Oモジュールの追加
+    - title: I/O モジュールを追加します
       url: "/a1k/io-module-add.html"
     - title: I/Oモジュールの交換
       url: "/a1k/io-module-replace.html"

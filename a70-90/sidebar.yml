@@ -20,13 +20,15 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF A70、AFF A90のメンテナンス
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/a70-90/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF A70、AFF A90ブートメディア
     entries:
-    - title: ブートメディアの交換の概要
-      url: "/a70-90/bootmedia-replace-overview.html"
+    - title: ブートメディアの交換ワークフロー
+      url: "/a70-90/bootmedia-replace-workflow.html"
+    - title: 要件および考慮事項
+      url: "/a70-90/bootmedia-replace-requirements.html"
     - title: オンボード暗号化キーを確認
       url: "/a70-90/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
@@ -35,15 +37,17 @@ entries:
       url: "/a70-90/bootmedia-replace.html"
     - title: ブートイメージを起動します
       url: "/a70-90/bootmedia-recovery-image-boot.html"
-    - title: 暗号化リストア
+    - title: アンコウカノ
       url: "/a70-90/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します
       url: "/a70-90/bootmedia-complete-rma.html"
   - title: シャーシ
     pdf-filename: AFF A70、AFF A90シャーシ
     entries:
-    - title: シャーシの交換の概要
-      url: "/a70-90/chassis-replace-overview.html"
+    - title: シャーシの交換ワークフロー
+      url: "/a70-90/chassis-replace-workflow.html"
+    - title: 要件および考慮事項
+      url: "/a70-90/chassis-replace-requirements.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a70-90/chassis-replace-shutdown.html"
     - title: シャーシの交換
@@ -53,8 +57,10 @@ entries:
   - title: コントローラ
     pdf-filename: AFF A70 / AFF A90コントローラモジュール
     entries:
-    - title: コントローラモジュールの交換の概要
-      url: "/a70-90/controller-replace-overview.html"
+    - title: コントローラの交換ワークフロー
+      url: "/a70-90/controller-replace-workflow.html"
+    - title: 要件および考慮事項
+      url: "/a70-90/controller-replace-requirements.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a70-90/controller-replace-shutdown.html"
     - title: コントローラを交換してください
@@ -77,9 +83,9 @@ entries:
     url: "/a70-90/nvdimm-battery-replace.html"
   - title: I/O モジュール
     entries:
-    - title: I/Oモジュールの追加または交換の概要
+    - title: I/Oモジュールの概要
       url: "/a70-90/io-module-overview.html"
-    - title: I/Oモジュールの追加
+    - title: I/O モジュールを追加します
       url: "/a70-90/io-module-add.html"
     - title: I/Oモジュールの交換
       url: "/a70-90/io-module-replace.html"

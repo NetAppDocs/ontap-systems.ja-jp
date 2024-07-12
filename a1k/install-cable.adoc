@@ -52,19 +52,20 @@ NOTE: クラスタインターコネクトトラフィックとHAトラフィッ
 +
 *クラスタ/ HAインターコネクトケーブル*
 
-
-
-
-
++
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[クラスタHAケーブル]
 
-+image：：../media/drw_a1k_TNSC_cluster_cabling_ieops-1648.svg[2ノードスイッチレスクラスタのケーブル配線図、幅=500px]
++
+image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[2ノードスイッチレスクラスタのケーブル配線図]
 
-+。イーサネットモジュールポートをホストネットワークにケーブル接続します。
 
-+一般的なホストネットワークケーブル接続の例を次に示します。ご使用のシステム構成については、を参照してください link:https://hwu.netapp.com["NetApp Hardware Universe の略"^] 。
 
-. 図に示すように、ポートe9aおよびe9bをイーサネットデータネットワークスイッチにケーブル接続します。
+. イーサネットモジュールポートをホストネットワークにケーブル接続します。
++
+次に、一般的なホストネットワークのケーブル接続例を示します。ご使用のシステム構成については、を参照してください link:https://hwu.netapp.com["NetApp Hardware Universe の略"^] 。
+
++
+.. 図に示すように、ポートe9aおよびe9bをイーサネットデータネットワークスイッチにケーブル接続します。
 +
 
 NOTE: クラスタトラフィックとHAトラフィックのシステムパフォーマンスを最大限にするためには、ホストネットワーク接続にポートe1bとe7bを使用しないことを推奨します。パフォーマンスを最大化するには、別のホストカードを使用します。
@@ -78,7 +79,7 @@ image::../media/oie_cable_sfp_gbe_copper.svg[100Gbイーサネットケーブル
 +
 image::../media/drw_a1k_network_cabling1_ieops-1649.svg[100Gbイーサネットネットワークへのケーブル接続]
 
-. 10 / 25GbEホストネットワークスイッチをケーブル接続します。
+.. 10 / 25GbEホストネットワークスイッチをケーブル接続します。
 +
 * 10/25GbEホスト*
 
@@ -88,8 +89,9 @@ image::../media/oie_cable_sfp_gbe_copper.svg[10/25Gbイーサネットケーブ�
 +
 image::../media/drw_a1k_network_cabling2_ieops-1650.svg[10 / 25Gbイーサネットネットワークへのケーブル接続]
 
-+
-.. 1000BASE-T RJ-45ケーブルを使用して、コントローラの管理（レンチ）ポートを管理ネットワークスイッチにケーブル接続します。
+
+
+. 1000BASE-T RJ-45ケーブルを使用して、コントローラの管理（レンチ）ポートを管理ネットワークスイッチにケーブル接続します。
 +
 image::../media/oie_cable_rj45.svg[RJ-45ケーブル]
 
@@ -98,8 +100,6 @@ image::../media/oie_cable_rj45.svg[RJ-45ケーブル]
 
 +
 image::../media/drw_a1k_management_connection_ieops-1651.svg[管理ネットワークへの接続]
-
-
 
 
 

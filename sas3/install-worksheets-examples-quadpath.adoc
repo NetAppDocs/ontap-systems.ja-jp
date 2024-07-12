@@ -17,18 +17,18 @@ summary: 記入済みのコントローラ / スタック間のケーブル接�
 * 必要に応じて、を参照してください link:install-cabling-worksheets-how-to-read-quadpath.html["クアッドパス接続でコントローラ / スタック間をケーブル接続するためのワークシートの読み取り方法"]。
 * ケーブル接続例では、コントローラ / スタック間のケーブル接続のうち、コントローラ A と C のポート接続を実線で、コントローラ B と D のポート接続を点線で区別して表しています。
 +
-image::../media/drw_controller_to_stack_cable_type_key.gif[ケーブルタイプキーをスタックする DRW コントローラ]
+image::../media/drw_controller_to_stack_cable_type_key.gif[コントローラからスタックへのケーブル接続用のケーブルタイプキー]
 
 * HA ペアの各スタックへの接続を区別するために、ケーブル接続例のケーブルとワークシートの対応するポートペアに同じ色を使用しています。
 +
-image::../media/drw_controller_to_stack_cable_color_key_non2600.gif[DRW コントローラをスタックするケーブルカラーキー（ 2600 以外）]
+image::../media/drw_controller_to_stack_cable_color_key_non2600.gif[ケーブル接続ワークシートのカラーキー]
 
 * ケーブル接続例では、 HA ペアまたはシングルコントローラ構成で各コントローラから各スタックへのクアッドパス接続に必要な 2 セットのマルチパスケーブル接続を、視覚的に区別しています。
 +
 マルチパスケーブルの最初のセットを「マルチパス」と呼びます。マルチパス・ケーブルの 2 番目のセットは ' クアッドパスと呼ばれます2 番目のケーブル接続セットは「クアッドパス」と呼ばれます。これは、このケーブル接続セットを完了すると、クアッドパス接続が可能になるためです。
 
 +
-image::../media/drw_controller_to_stack_quad_pathed_connectivity_key.gif[DRW コントローラ / スタック間のクアッドパス接続キー]
+image::../media/drw_controller_to_stack_quad_pathed_connectivity_key.gif[クアッドパス接続用のカラーキー]
 
 * ワークシート例では、各ポートペアは、マルチパスケーブル接続またはクアッドパスケーブル接続で該当するスタックに接続されます。
 +
@@ -44,4 +44,4 @@ image::../media/drw_controller_to_stack_quad_pathed_connectivity_key.gif[DRW コ
 
 image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[クアツトハスHAノケエフルセツソクワアクシイト]
 
-image::../media/drw_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[DRW qpha スロット 1 および 2 2 2 4 ポートバス 2 スタック NAU]
+image::../media/drw_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[クアッドパスHA：クアッドポートSAS HBA×2、マルチシェルフスタック×2]
