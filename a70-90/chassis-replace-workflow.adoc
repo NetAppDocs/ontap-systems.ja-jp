@@ -16,9 +16,9 @@ summary: 障害が発生したコンポーネントは、プロバイダから�
 .作業を開始する前に
 シャーシを交換するには、一定の要件を満たす必要があります。を確認します link:controller-replace-requirements.html["シャーシの交換に関する要件と考慮事項"]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:chassis-replace-shutdown.html["障害のあるコントローラをシャットダウンします"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:chassis-replace-shutdown.html["コントローラをシャットダウン"]
 [role="quick-margin-para"]
-障害のあるコントローラをシャットダウンまたはテイクオーバーして、正常なコントローラが障害のあるコントローラストレージから引き続きデータを提供できるようにします。
+シャーシのメンテナンスを実施できるように、コントローラをシャットダウンします。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:chassis-replace-move-hardware.html["シャーシを交換してください"]
 [role="quick-margin-para"]

@@ -48,7 +48,7 @@ entries:
       url: "/a70-90/chassis-replace-workflow.html"
     - title: 要件および考慮事項
       url: "/a70-90/chassis-replace-requirements.html"
-    - title: 障害のあるコントローラをシャットダウンします
+    - title: コントローラのシャットダウン
       url: "/a70-90/chassis-replace-shutdown.html"
     - title: シャーシの交換
       url: "/a70-90/chassis-replace-move-hardware.html"

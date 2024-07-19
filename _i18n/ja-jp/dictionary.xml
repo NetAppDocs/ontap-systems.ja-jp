@@ -1880,8 +1880,6 @@
   <block id="ba9a3cf272ff19e49b8066ab84a2b3dc" category="inline-link-macro">設置とケーブル接続</block>
   <block id="a83c5e67d745b0c85b815af3214463cd" category="section-title">オプション 1 ：ネットワーク検出が有効になっている場合は、システムのセットアップを完了する</block>
   <block id="d01f82c054ee1a7df429f478c56a204a" category="list-text">両方のノードの電源スイッチをオンにします。</block>
-  <block id="acad25485f3484efab02626b832c8620" category="summary">このビデオでは、内蔵ドライブの交換用手順の概要を示します。</block>
-  <block id="eeb5172e31e91152913f891a13300865" category="doc">概要ビデオ</block>
   <block id="119f03ea1c250f1b97c5928c1d9e5432" category="summary">電源装置とコンポーネントをシステムキャビネットの反対側に移動し、ヒンジとロックキャッチを移動したら、システムキャビネットのドアと照光バッジを取り付け直し、バッジを電源に再接続する必要があります。</block>
   <block id="643cfac87180d8379362af941dea318b" category="doc">ドアと照光バッジを再度取り付けます</block>
   <block id="cd7c79424e1d80a931ac6ce8733129b9" category="section-title">システムキャビネットのドアを再度取り付けます</block>
@@ -2015,13 +2013,9 @@
   <block id="3543f693e588dc2b8f0d38c9c547ec79" category="list-text">PDU 電源ケーブルの上にコンジットをスライドさせ、システムキャビネットフレームに沿って PDU までコンジットを配線します。</block>
   <block id="f6fd32c0375af84905b62ee7c499c0f3" category="list-text">キャビネットの反対側からコンジット固定クリップをコンジットの上に取り付けて、キャビネットフレームに固定します。</block>
   <block id="ca2f1d75952196e0940183d0bf21cf4c" category="list-text">バッジケーブルを電源装置に再接続します。ただし電源装置は電源に再接続しないでください。</block>
-  <block id="5766d5bcf366efbcdf82489014732653" category="summary">ドライブで障害が発生すると、どのドライブで障害が発生したかを示す警告メッセージがシステムコンソールに記録されます。さらに、オペレータ用ディスプレイパネルの障害 LED と、障害が発生したドライブの障害 LED の両方が点灯します。I/O の実行中に障害が発生したドライブを無停止で交換できます。</block>
-  <block id="19b0302f5ac7806ca8ce0cb36a698cf0" category="doc">ドライブをホットスワップします</block>
-  <block id="43fc444d5187c6df1e74ba2ba7e24821" category="list-text">交換用ドライブがプラットフォームでサポートされている必要があります。</block>
   <block id="4ae836b782811ffe91b98aedff96a53f" category="list-text">SED 認証が有効になっている場合は、 ONTAP のドキュメントに記載されている SED の交換手順を使用する必要があります。</block>
   <block id="421ab65a9179c4d22cc960582e6de22d" category="paragraph">ONTAP のドキュメントには、 SED の交換前と交換後に実行する必要がある手順も記載されています。</block>
   <block id="9ac07d63d475887beba61894d204a017" category="list-text">システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、テクニカルサポートにお問い合わせください。</block>
-  <block id="392c7c0293f99a94fa12865a900879c7" category="list-text">「 storage disk show -broken 」コマンドを実行して、削除しているドライブが障害状態であることを確認してください。障害が発生したドライブが障害ドライブのリストに表示されます。表示されない場合は、少し待ってからもう一度コマンドを実行してください。</block>
   <block id="aaed12442b9a307ca4d06630e6d4bd37" category="admonition">ドライブのタイプと容量によっては、障害ドライブのリストに表示されるまでに数時間かかることがあります。</block>
   <block id="7e8aa41d7d4c14a3fc3b41544881daf2" category="list-text">* ベストプラクティス：ドライブをホットスワップする前に、 Disk Qualification Package （ DQP ）の最新バージョンをインストールしておくことを推奨します。</block>
   <block id="5095693f193a3881c5590204404933d4" category="list-text">最新のファームウェアバージョンでない新しいドライブでは、ドライブファームウェアは自動的に（無停止で）更新されます。</block>
@@ -2058,13 +2052,8 @@
   <block id="b4e16a9061f207bc18d1b2a614caeef2" category="paragraph">両方のコントローラモジュールで自動ドライブ割り当てを再度有効にする必要があります。</block>
   <block id="a8280a793d4f574a1e8ec9fdeff29427" category="list-text">障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。</block>
   <block id="85ca43b1ad4c3e8bd2726e4c4b2a3e4d" category="paragraph">テクニカルサポートにお問い合わせください<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>RMA 番号を確認する場合や、交換用手順にサポートが必要な場合は、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。</block>
-  <block id="4dac35e9f6d4d6d9e1b5fb5abad708ed" category="summary">ディスクドライブで障害が発生すると、どのディスクドライブで障害が発生したかを示す警告メッセージがシステムコンソールに記録されます。さらに、オペレータ用ディスプレイパネルの障害 LED と、障害が発生したディスクドライブの障害 LED の両方が点灯します。I/O の実行中に障害が発生したドライブを無停止で交換できます。</block>
-  <block id="7b23cfe522c0eb5be8b96e2257f5acbe" category="doc">ディスクドライブをホットスワップします</block>
-  <block id="9b8b69936ed16b21aad5e4c23a44b618" category="list-text">交換用ディスクドライブがプラットフォームでサポートされている必要があります。</block>
   <block id="408521a2467d21746b611d562e795e60" category="list-text">システムコンソールから「 storage disk show -broken 」コマンドを実行して、障害が発生したディスクドライブを特定してください。障害が発生したドライブが障害ドライブのリストに表示されます。表示されない場合は、少し待ってからもう一度コマンドを実行してください。</block>
-  <block id="f6257d03456559fa38863d01fd3c105d" category="paragraph">ディスクのホットスワップ方法は、ディスクドライブの使用方法によって異なります。SED 認証が有効になっている場合は、 ONTAP のドキュメントに記載されている SED の交換手順を使用する必要があります。ONTAP のドキュメントには、 SED の交換前と交換後に実行する必要がある手順も記載されています。</block>
   <block id="ab580dd61655d242c5e7898b10207e71" category="paragraph">複数のディスクドライブを交換する場合は、ストレージシステムがそれぞれの新しいディスクを認識できるように、障害が発生した各ディスクドライブを取り外してから交換用ディスクドライブを挿入するまで 1 分間待機する必要があります。</block>
-  <block id="dde8fb97f476e32cdda5c52804d55d36" category="admonition">取り外し、取り付け、持ち運びなど、ディスクドライブを扱うときは常に両手で作業してください。</block>
   <block id="30bc8715fab2eca793d47ebeb9b97131" category="list-text">プラットフォームの前面からベゼルをそっと取り外します。</block>
   <block id="d71968c5c4f5afed90572170969deee8" category="list-text">システムコンソールの警告メッセージと、ディスクドライブで点灯している障害 LED から、障害が発生しているディスクドライブを特定します</block>
   <block id="559d6c27ed3408b0bae6821791181311" category="list-text">ディスクドライブの前面にあるリリースボタンを押します。</block>
@@ -2072,7 +2061,6 @@
   <block id="01c18660694535ca4b59c21e0e893461" category="paragraph">たとえば、次の図は、ディスクドライブの上側の面にリリースボタンがあるディスクドライブを示しています。</block>
   <block id="572908986c1b5c1fc8dc618c9ad316ad" category="paragraph">ディスクドライブのカムハンドルが途中まで開き、ディスクドライブがミッドプレーンから外れます。</block>
   <block id="0d8323eada848f2a4fe8cf79e773c078" category="list-text">カムハンドルを完全に引き下げて、ミッドプレーンからディスクドライブを取り外します。</block>
-  <block id="7dc8175f2f2fc69f2fb815cbd3873bf3" category="image-alt">DRW ドライブが開いています</block>
   <block id="cc4019f56a1373976b3ef90709ca6709" category="list-text">ディスクドライブを少し引き出してからディスクが安全にスピンダウンするようにします。この処理には 1 分もかかりません。そのあと、両手でディスクシェルフからディスクドライブを取り外します。</block>
   <block id="825b28c800f73d57ecb1e2ef500ff283" category="list-text">カムハンドルを開いた状態で、交換用ディスクドライブをドライブベイに挿入し、ディスクドライブが停止するまでしっかりと押し込みます。</block>
   <block id="6f80e13df4b5c2a4fc8fa945e1d512e0" category="admonition">新しいディスクドライブは、 10 秒以上待ってから挿入してください。これにより、システムはディスクドライブが取り外されたことを認識できます。</block>
@@ -2246,8 +2234,6 @@
   <block id="d971400e841652c0674351e1776f8782" category="summary">システムキャビネットを所定の位置に移動する前に、システムキャビネットを包む梱包材を取り除く必要があります。また、キャビネットを開梱したあとの梱包材はリサイクルする必要があります。</block>
   <block id="a95834c1a8ed59ab3858580d175bb665" category="doc">システムキャビネットを開梱します</block>
   <block id="129309842bc5dbd264ad4f8622f29bfc" category="image-alt">DRW sys cab アンパック命令 Ozek</block>
-  <block id="1e0b37d2bee8e34c12fabdc96d1c7b25" category="summary">プラットフォームの障害が発生したドライブを無停止で交換するには、プラットフォームがサポートするドライブに適した手順を選択します。SSD のホットスワップ用手順は回転式でないドライブ用、 HDD をホットスワップするための手順は回転式ドライブ用です。</block>
-  <block id="4f0051637a20ec6776e183298f86f2f5" category="doc">使用する手順</block>
   <block id="c9c398d96e19f76a792dde6c40d97674" category="summary">システムキャビネットを発注する際には、ネットアップストレージコントローラとディスクシェルフが設置された状態で注文することも、既存のネットアップ機器がある場合は空のシステムキャビネットを発注することもできます。オプションのインターコネクトキットを使用して複数のシステムキャビネットを接続でき、オプションのボルトダウンキットを使用してデータセンターの床に固定できます。</block>
   <block id="04dd3356a6ed1dc409a57e068d7f5007" category="doc">システムキャビネットを設置</block>
   <block id="15ec95a1d0a631e3b92b0edbb8cc676a" category="doc">アップグレード手順</block>
@@ -2675,26 +2661,14 @@
   <block id="d8109bc1e72c67d266f35804a93c0a8d" category="summary">HA ペアが一定の要件を満たし、 HA ペアに適用可能な準備作業が完了したら、 NS224 ドライブシェルフをホットアドできます。</block>
   <block id="1dce66ce512581bef6c7afdf40ed4417" category="doc">NS224 シェルフをホットアドします</block>
   <block id="eca821c6b2673e81fce80d61c03099a4" category="section-title">ホットアドの要件</block>
-  <block id="eeb59433d501968b152fd713cddd2e47" category="paragraph">NS224 ドライブシェルフをホットアドするには、 HA ペアが特定の要件を満たしている必要があります。</block>
-  <block id="9e3a02c5b7d1bbea0a425314be87f94c" category="list-text">各プラットフォームモデルと ONTAP バージョンが、ホットアドする NS224 シェルフおよびドライブに対応している必要があります。</block>
-  <block id="b3f61222fb51c826335ea05f957189ce" category="list-text">シェルフを接続するための正しい数とタイプのケーブルが必要です。</block>
-  <block id="40b9aa2a1398aaa422dac35a64ae5873" category="list-text">HA ペアのシェルフ数が、サポートされる最大シェルフ数よりも少なくともホットアドするシェルフの数だけ少ない必要があります。</block>
-  <block id="ad77a3083357fd77bd7e8fdbdf159740" category="paragraph">シェルフをホットアドしたあとは、 HA ペアでサポートされる最大シェルフ数を超えることはできません。</block>
   <block id="0cba540a6f27fb2ed5b8694332213f9d" category="list-text">すでに NS224 シェルフがある HA ペアにシェルフをホットアドする場合、 HA ペアにストレージケーブル接続に関するエラーメッセージを表示することはできず、マルチパス HA 構成でケーブル接続する必要があります。</block>
-  <block id="6bdb195c7a34745d79922274f1a7c2c3" category="paragraph">Active IQ Config Advisor を実行して、ストレージケーブル接続に関するエラーメッセージと推奨される対処方法を確認できます。</block>
-  <block id="6f1c8168a791947d3031cd2fdabd1192" category="paragraph">シェルフ ID を変更するには、ペーパークリップまたはボールペンを使用して、オペレータディスプレイパネル (ODP) の後ろにあるシェルフ ID ボタンにアクセスします。</block>
   <block id="a88a83b0bfb523c178bf4c0cfdf68574" category="section-title">ホットアドに関する考慮事項</block>
-  <block id="7c1fc39297ae1348c713726df64dc610" category="paragraph">NS224 ドライブシェルフをホットアドする前に、この手順のベストプラクティスと考慮事項を把握しておく必要があります。</block>
   <block id="544c0e56afe20cab7c081a167f90b40d" category="list-text">* ベストプラクティス：シェルフをホットアドする前に、 Disk Qualification Package （ DQP ）の最新バージョンをインストールしておくことを推奨します。</block>
   <block id="e47dc1184d0b4a889dc672df315a5a19" category="list-text">* ベストプラクティス： * シェルフのホットアドの前後に Active IQ Config Advisor を実行することを推奨します。</block>
-  <block id="505979d325219f19e3b1590170f752f3" category="paragraph">シェルフをホットアドする前に Active IQ Config Advisor を実行すると、既存のシェルフイーサネット（ ENET ）接続の Snapshot が作成され、 NVMe シェルフモジュール（ NSM ）ファームウェアのバージョンが確認されます。また、 HA ペアですでに使用されているシェルフ ID を確認できます。シェルフをホットアドしたあとに Active IQ Config Advisor を実行すると、シェルフが正しくケーブル接続されており、 HA ペア内でシェルフ ID が一意であることを確認できます。</block>
-  <block id="78c392199c08bab6bc34c660f80f7f24" category="list-text">* ベストプラクティス：新しいシェルフを追加する前に、お使いのシステムの NVMe シェルフモジュール（ NSM ）ファームウェアとドライブファームウェアを最新バージョンにしておくことを推奨します。</block>
   <block id="eb8f45b1db6775caf49b1a0ff7b38f44" category="list-text">ホットアドしたシェルフのケーブル接続が完了すると、 ONTAP でシェルフが認識されます。</block>
   <block id="583e7dd0a618fcea3c1f37593c2e7202" category="list-text">ドライブ所有権は、自動ドライブ割り当てが有効になっている場合に割り当てられます。</block>
   <block id="97f2d61fca24e47abce33d66ce5427b7" category="list-text">必要に応じて、 nsm シェルフのファームウェアとドライブのファームウェアが自動的に更新されます。</block>
   <block id="3de1e52644cd0e31c01bd38eb7e3cd32" category="admonition">ファームウェアの更新には最大 30 分かかる場合があります。</block>
-  <block id="4cf3f390446c26252aab038e17c0643f" category="section-title">ホットアドを準備する</block>
-  <block id="c0f11900de778c0c7dbc4dcc23284ed9" category="paragraph">NS224 ドライブシェルフをホットアドする前に、 HA ペアに該当する準備作業を完了しておく必要があります。</block>
   <block id="1292d9da9c097d598fa72a64d548e359" category="paragraph">システム要件を満たしている必要があります。</block>
   <block id="17d14abf2103752e4149b92b2294370e" category="paragraph"><block ref="1a0d84af954c02706175aa571a3829ff" category="inline-xref-macro-rx"></block></block>
   <block id="f13cb5d2becdef8b8ebea94e8b537d9f" category="admonition">HA ペアで ONTAP 9.6 のバージョンを実行している場合は、コントローラを 1 つずつリブートする必要があります。</block>
@@ -2703,30 +2677,19 @@
   <block id="1a0894ce06ca64ffb7715de304b85900" category="paragraph">HA ペアが ONTAP 9.7 または 9.6 を実行している場合は ' 専用でないポートは 'Is dedicated ？に false と表示されます 列には、「有効」列も表示されます。</block>
   <block id="d0d1f0809de877f29fd0a846c8876708" category="list-text">専用でないポートがストレージ用に設定されている場合、この手順を使用します。</block>
   <block id="07d80afbccd38f7712fa336226de0865" category="paragraph">専用でないポートがストレージ用に設定されていない場合、コマンド出力には次のように表示されます。</block>
-  <block id="a71b3231969443f43b88fb3f3997c11b" category="list-text">いずれかのコントローラモジュールで、ストレージ用の専用でないポートを設定します。</block>
   <block id="1529765b6b367d0e6b6e265150953287" category="paragraph">設定するポートごとに、該当するコマンドを繰り返す必要があります。</block>
   <block id="5bf92b0f5dcba33ceffc7fde775fa3ac" category="paragraph">ONTAP 9.7 または 9.6</block>
   <block id="bb38aa03e396afd98be51523e1304b09" category="admonition">リブートには最大 15 分かかる場合があります。</block>
-  <block id="2af8713b29d92440aed549d35fa1f9a3" category="list-text">2 台目のコントローラモジュールに対して、次の手順を繰り返します。</block>
   <block id="fc4a6c2a954652ed60c43c56910ae75a" category="paragraph">ONTAP 9.7 以降</block>
   <block id="7dd2a92fd3f41a5334edf46f95d77e71" category="paragraph">ONTAP 9.6</block>
   <block id="97e5b69d6a085b09c71789a6b191bdbd" category="admonition">最初のコントローラのリブートが完了している必要があります。</block>
-  <block id="b4c2dd2542e47ff1364abd95f6610ff8" category="list-text">両方のコントローラモジュールの専用でないポートがストレージ用に設定されていることを確認します。「 storage port show 」</block>
   <block id="5f73e21cfc57f9099894052fde4bfc56" category="list-text">マルチパス HA 接続を使用しているシェルフでは、ポート接続の再接続によって無停止の手順が使用されます。</block>
   <block id="7e273a22e6f4b495323284cd54002213" category="admonition">ケーブルを移動する場合、あるポートからケーブルを外して別のポートに接続するまでの待機時間は不要です。</block>
-  <block id="7e4c7e7366de7251794bd2cee31785b8" category="cell">構成</block>
-  <block id="ce2468b66455462f68b8eef51607d931" category="paragraph">必要に応じて、 2 台のシェルフ構成の既存の 1 台のシェルフとケーブル接続されたシェルフを示すケーブル構成図を参照できます。</block>
   <block id="7fade3ed4792ef4e89e2ae6000199479" category="list-text">コントローラ B についても、同じケーブルの移動を繰り返します</block>
-  <block id="d39331f2882996e7bd91bd33be8e8eda" category="list-text">ケーブル接続されているシェルフが正しくケーブル接続されていることを確認します。</block>
   <block id="f585cc2236674d2428b635421c54ecfc" category="section-title">ホットアド用のドライブ所有権を手動で割り当てる準備をします</block>
-  <block id="b72b3c2205cb08a656771ba6697f52d1" category="paragraph">ホットアドする NS224 ドライブシェルフのドライブ所有権を手動で割り当てる場合は、自動ドライブ割り当てを無効にする必要があります。</block>
-  <block id="98a23f93a2146d0c96053cc9158120a2" category="list-text">該当する準備手順を完了しておく必要があります。</block>
-  <block id="4dc0b17b937c12129ebe893f11113096" category="paragraph"><block ref="b033791636e3890ff7903341ce0a7906" category="inline-xref-macro-rx"></block></block>
   <block id="738a7d32562c5557c170a7a1bacec3f1" category="admonition">シェルフをフランジで固定しないでください。</block>
-  <block id="70dc4293ceb1c0525c9a51737c5667b8" category="list-text">パンフレットに従って、サポートブラケットとラックまたはキャビネットにシェルフを設置して固定します。</block>
   <block id="378b62d2964ec0a6c4ac6ec95662dee4" category="paragraph">電源に接続するとシェルフの電源がオンになり、電源スイッチはありません。電源装置が正常に動作している場合は、 LED が緑色に点灯します。</block>
   <block id="7468ac9b50ce2792c160ba5ee26808fe" category="list-text">シェルフ ID を HA ペア内で一意の番号に設定します。</block>
-  <block id="34ed719c558f180e6a8425d176730344" category="paragraph">詳細な手順については、以下を参照してください。</block>
   <block id="43672219196a0275d0fe8b439ccd44f9" category="list-text">左側のエンドキャップを取り外し、 LED の右側にある小さな穴の位置を確認します。</block>
   <block id="e1f557b7e67a27c5135ebdc776739a0e" category="list-text">クリップなどの工具の先端を小さな穴に差し込み、シェルフ ID ボタンに移動します。</block>
   <block id="82980b60b01c4e791ae1d8e73f193a85" category="list-text">デジタルディスプレイの 1 桁目の数字が点滅するまで（最大 15 秒間）ボタンを押し続け、ボタンを放します。</block>
@@ -2736,19 +2699,15 @@
   <block id="a1a7af675ea23b3ddcdf9cf5e4355669" category="paragraph">約 5 秒後、両方の数字が点滅し始め、 ODP のオレンジ色の LED が点灯します。</block>
   <block id="7cd532a90215f8cff1bce2eea092415d" category="paragraph">両方の電源コードをシェルフから取り外し、 10 秒待ってから再度接続する必要があります。</block>
   <block id="24e10780f209a577c697057f12f64f10" category="paragraph">電源装置の電源が回復すると、 LED が緑色に点灯します。</block>
-  <block id="d84d97bfca6c6a7d47f929c1b0ee1fb3" category="section-title">ホットアドのケーブル接続に関する考慮事項</block>
   <block id="52aad3ff52241a2e329ba14ca2b495ec" category="list-text">ケーブルは、コネクタのプルタブを上に向けて挿入します。</block>
   <block id="546b03f9ca211c30f5975ab99dd93ce8" category="paragraph">ケーブルを正しく挿入すると、カチッという音がして所定の位置に収まります。</block>
   <block id="36dad54a495121233a847704d6bf5a6b" category="paragraph">ケーブルの両端を接続すると、シェルフポートとコントローラポートの LNK （緑色） LED が点灯します。ポートの LNK LED が点灯しない場合は、ケーブルを再接続してください。</block>
   <block id="6c4ae44d1114274bf4744f7a456ce07c" category="list-text">シェルフを設置し、電源をオンにして、シェルフ ID を設定しておく必要があります。</block>
-  <block id="373a35978efc6b28d1b1d225b662f5db" category="paragraph"><block ref="4688946b74942e3697fd11a0bd3e0972" category="inline-xref-macro-rx"></block></block>
   <block id="6636323e0aff4f454f3b81527e703c2b" category="list-text">シェルフをケーブル接続します。</block>
   <block id="7684dbbd76ade935a226af6dfe897289" category="list-text">シェルフ NSM A ポート e0a をコントローラ A のスロット 1 のポート A （ e1a ）にケーブル接続します。</block>
   <block id="dd76ecf50f41da091f6d857178f31123" category="list-text">シェルフ NSM A のポート e0b をコントローラ B のスロット 1 のポート b （ e1b ）にケーブル接続します。</block>
   <block id="175a349725f8b3af6b3ec0d82c0e2318" category="list-text">シェルフ NSM B ポート e0a をコントローラ B のスロット 1 のポート A （ e1a ）にケーブル接続します。</block>
   <block id="838163abcc84ed9f0cfee1181f77a021" category="list-text">シェルフ NSM B のポート e0b をコントローラ A のスロット 1 のポート b （ e1b ）にケーブル接続します。+ 次の図は、シェルフのケーブル接続が完了した状態を示しています。</block>
-  <block id="7383703619146a59a96c04d7ca7f4542" category="list-text">ホットアドしたシェルフのケーブルが正しく接続されていることを確認します。</block>
-  <block id="0c9aa1b8a23b895dc34c3de2f2a905b7" category="list-text">この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。</block>
   <block id="e408fe4a40b4e2b5b430bb1a2e4b56a1" category="paragraph"><block ref="054067282f59c2ea6008fdf8f0b78dea" category="inline-xref-macro-rx"></block></block>
   <block id="63efd7f12bfa615588bf813fbcf494a5" category="list-text">シェルフ NSM A ポート e0a をコントローラ A のスロット 3 のポートにケーブル接続します</block>
   <block id="20609b8391343d9357715cf71f95b8ef" category="list-text">シェルフ NSM A のポート e0b をコントローラ B のスロット 3 のポート B にケーブル接続します</block>
@@ -2774,23 +2733,16 @@
   <block id="8c937d6d94aae90362b1dc41da2b9988" category="list-text">シェルフ NSM A のポート e0b をコントローラ B のポート e0d にケーブル接続します。</block>
   <block id="1338474ed1400f2decaa8fd4832a842d" category="list-text">シェルフ NSM B ポート e0a をコントローラ B のポート e0c にケーブル接続します。</block>
   <block id="0e756c90485de908977a44f0d58d0222" category="list-text">シェルフ NSM B のポート e0b をコントローラ A のポート e0d にケーブル接続します。</block>
-  <block id="c445ec69267514b825de2f1f527b6d69" category="image-alt">DRW ns2244001 シェルフ</block>
   <block id="c30f945bbdd11d29e0f5cde326554182" category="list-text">NSM A ポート e0a をコントローラ A のポート e0c にケーブル接続します。</block>
   <block id="dfaa68fc610c2b43abf32ee0c2eff4d7" category="list-text">NSM B ポート e0a をコントローラ B のポート e0c にケーブル接続します。</block>
   <block id="9d77f869ed166aeb4c27e1b6054d86bb" category="list-text">NSM A のポート e0b をコントローラ B のポート e0d にケーブル接続します。</block>
   <block id="f192386ba82b03da6277a09d4a2c63ac" category="list-text">NSM B のポート e0b をコントローラ A のポート e0d にケーブル接続します。</block>
-  <block id="f38b00317e342e10d9cf44073d00e94e" category="list-text">この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じてドライブの自動割り当てを再度有効にする必要があります。</block>
-  <block id="e708da297b918a1363bc58facb9105b4" category="paragraph">ストレージの追加が必要になった場合は、 2 台目の NS224 ドライブシェルフを既存の HA ペアにケーブル接続します。</block>
-  <block id="41165b98d83f72cbb439ce5bdb9e71da" category="list-text">シェルフをコントローラモジュールにケーブル接続します。</block>
   <block id="b4cef19f20771aa5828eb17c8503f9b4" category="list-text">NSM A ポート e0a をコントローラ A のポート e0e にケーブル接続します。</block>
   <block id="e3602d852a9feaea5973c0c3f70de818" category="list-text">NSM A のポート e0b をコントローラ B のポート e0b にケーブル接続します。</block>
   <block id="6893aba6204908a9ad4e8ef231b0937b" category="list-text">NSM B ポート e0a をコントローラ B ポート e0e にケーブル接続します。</block>
   <block id="fd1b7820b9a22b62bca8acf5ddbaf7ed" category="list-text">NSM B のポート e0b をコントローラ A のポート e0b にケーブル接続します。+ 次の図は、ホットアドしたシェルフ（シェルフ 2 ）のケーブル接続を示しています。</block>
-  <block id="6fc814869e5db879112ab1136b39096b" category="image-alt">DRW ns224 A320 2 台のシェルフが直接接続されています</block>
   <block id="63b43efd4d91098da87b471ae31f6a98" category="section-title">ホットアドを完了します</block>
   <block id="c639108428188e5708bbbe72adfdde85" category="paragraph">NS224 ドライブシェルフのホットアドの準備の一環として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。</block>
-  <block id="c180b3ee265cd8852fc5bfedc37c02ae" category="paragraph">HA ペアの手順に従って、シェルフのケーブル接続を完了しておく必要があります。</block>
-  <block id="95fef4a83236d5e3f2ecc10020bc8967" category="paragraph"><block ref="cd2a16cde64eed80b7a03f7f34240bcb" category="inline-xref-macro-rx"></block></block>
   <block id="52e2f58fc39d834074ac8badf66c9b06" category="paragraph">ワイルドカード文字を使用して、一度に複数のドライブを割り当てることができます。</block>
   <block id="d60624f33844c521f18921a4a9b49842" category="summary">電源がオンになっている NS224 ドライブシェルフおよび I/O の実行中には、障害が発生した電源装置を無停止で交換できます。</block>
   <block id="e1ad4e3599275cd19a2d7fdf242bd624" category="list-text">複数の電源装置を交換する場合は、シェルフの電源を維持するために、一度に 1 つずつ交換する必要があります。</block>
@@ -4610,14 +4562,6 @@
   <block id="934d0bdda7a0d1a8822fd442720c5972" category="paragraph">新しいコントローラへのディスクの再割り当て方法については、次のいずれかのオプションを選択します。</block>
   <block id="32f251bc81f643cafcff8ad711b81b00" category="open-title">オプション 1 ：検証 ID （ HA ペア）</block>
   <block id="a5d68caf62cce2afa4e8ca12ce07943a" category="open-title">オプション 2 ： ID の再割り当て（ MetroCluster 設定）</block>
-  <block id="c86ca2ad8b18f1b66eec5105c703ce0a" category="list-text">AFF A700 HA ペアを使用していて、初期の NS224 ドライブシェルフをホットアドする場合（ HA ペアに NS224 ドライブシェルフがない場合）は、コアダンプ（コアファイルの格納）をサポートするために、各コントローラにコアダンプモジュール（ X9170a 、 NVMe 1TB SSD ）を取り付ける必要があります。</block>
-  <block id="b979e87e6bde70f013c6af59e1fa73aa" category="list-text">NS224 シェルフをサポートする ASA HA ペアがある場合は、この手順を使用できます。</block>
-  <block id="863ee9a0c8ca40928975158c8441cb3e" category="paragraph"><block ref="8b0dd5f6450b331119d433eade9d39d0" category="inline-xref-macro-rx"></block></block>
-  <block id="35abee2b20175ae748c82f6ba4453ac1" category="paragraph"><block ref="2d20d554d868477c9c895109bac068ae" category="inline-xref-macro-rx"></block></block>
-  <block id="075ac783ee242c66ec7ef26475fd212b" category="section-title">AFF A700 HA ペアのホットアドシェルフをケーブル接続します</block>
-  <block id="873efd8427437501798d979ea439809c" category="section-title">AFF A400 HA ペア用のシェルフをホットアドします</block>
-  <block id="b994ebf3b12ef21aee27b63036342d83" category="section-title">AFF A320 HA ペアのホットアドシェルフをケーブル接続します</block>
-  <block id="0d0422686a7d332d6a719d1fb6e38772" category="paragraph">この手順は、 AFF A320 HA ペアに既存の NS224 シェルフがあり、 2 台目のシェルフをホットアドすることを前提としています。</block>
   <block id="75ce955e15fef4cd5f15ecc0c7c15370" category="list-text">システム ID を表示します</block>
   <block id="0feb65e4d7bce1a53eb4047a827c8e55" category="list-text">disk show コマンドから取得したシステム ID 情報を使用して、ディスク所有権を再割り当てします。「 disk reassign -s old system ID disk reassign -s 118073209</block>
   <block id="8c66ad63be6016fb310ce930e9943285" category="list-text">ディスクが正しく割り当てられていることを確認します。「 Disk show -a 」</block>
@@ -4628,7 +4572,6 @@
   <block id="10df5509416416659fe58fd40c64d2ec" category="paragraph"><block ref="10df5509416416659fe58fd40c64d2ec" category="inline-link-rx"></block></block>
   <block id="4ccbda321ca169104f4e4cac42fd679f" category="paragraph">RMA 番号を確認する場合や、交換用手順に関するその他のサポートが必要な場合は、テクニカルサポートにお問い合わせください<block ref="9a6f401ca1e7e89d8a0c29fb0cbe81b7" category="inline-link-rx"></block>にアクセスするか、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。</block>
   <block id="3868a54921a81264bddb64b574765582" category="paragraph"><block ref="3868a54921a81264bddb64b574765582" category="inline-link-rx"></block></block>
-  <block id="c69a1009359358cbb1f3e5d6483736fb" category="paragraph"><block ref="c69a1009359358cbb1f3e5d6483736fb" category="inline-link-macro-rx"></block></block>
   <block id="008b8867712161228bd794977fcd0d4b" category="paragraph"><block ref="008b8867712161228bd794977fcd0d4b" category="inline-link-rx"></block></block>
   <block id="35b669738c6a7d586d192e07cf910533" category="paragraph"><block ref="35b669738c6a7d586d192e07cf910533" category="inline-link-rx"></block></block>
   <block id="d444e316e4fbe4a790c7592f4ea0e4d7" category="paragraph"><block ref="d444e316e4fbe4a790c7592f4ea0e4d7" category="inline-link-macro-rx"></block></block>
@@ -4661,37 +4604,22 @@
   <block id="c9d9e9c98bea821ee3130955cb98a54c" category="list-text">中国語：<block ref="d495a553b62dffb464c7810acf543358" category="inline-link-rx"></block></block>
   <block id="839439b189cfb3960dee96d5900594f7" category="list-text">片側をまっすぐに伸ばしたペーパークリップ、または細い先端のボールペンが必要です。</block>
   <block id="6de535d32c5294ec13b8cdaefbdfcd96" category="list-text">最新のファームウェアバージョンでない新しいドライブのドライブファームウェアは自動的に（無停止で）更新されます。</block>
-  <block id="149bd884ff7361ec4900f148e94264c1" category="paragraph">HA ペアに十分な数の使用可能な RoCE 対応ポートがなく、プラットフォームモデルで RoCE 対応 PCIe カードまたは I/O モジュールの使用がサポートされている場合は、追加のカードまたは I/O モジュールを、プラットフォームモデルでサポートされている適切なコントローラスロットに取り付けておく必要があります。</block>
-  <block id="bf9e404e3724ecf929670f95275b884e" category="paragraph">専用でない RoCE 対応ポートは、ストレージ用に設定する必要があります（ネットワークでは使用できません）。</block>
-  <block id="3a0537bc074963c8c7b8afdfa7851872" category="paragraph"><block ref="cd0ec4d1059266e2eb6b1658ce353e50" category="inline-xref-macro-rx"></block></block>
   <block id="2a8cd3ca573de9451e94751347275dc3" category="inline-link-macro">キャッシングモジュールを交換するか、コアダンプモジュール AFF A700 および FAS9000 を追加 / 交換してください</block>
-  <block id="475cacc4c4d3f4ca67cc021d7e76f4ce" category="paragraph"><block ref="475cacc4c4d3f4ca67cc021d7e76f4ce" category="inline-link-macro-rx"></block></block>
-  <block id="204c25542c5d660c031ae735415785bc" category="list-text">一部のプラットフォームモデルでは、 RoCE 対応の PCIe カードまたは I/O モジュールがコントローラのサポートされているスロットに搭載されている場合、ポートのデフォルトでストレージが使用されます（ネットワークではなく）。ただし、この手順を設定して、 RoCE 対応ポートがストレージで使用するように設定されていることを確認することを推奨します。</block>
   <block id="2cd678bb1387e05d5c4dd3461278cff2" category="list-text">HA ペア手順内の、専用でない RoCE 対応ポートがストレージ用に設定されていない場合は、無停止でそのポートを設定できます。</block>
-  <block id="622e2c1e48cbf4234cb8c28434a52588" category="list-text">HA ペアの専用でないポートがストレージ用に構成されているかどうかを確認します。 storage port show</block>
   <block id="2f37a5aa23cfb87abad4097db5d8b5ee" category="admonition">手順は、既存のシェルフが各コントローラのスロット 3 にある RoCE 対応 I/O モジュールにケーブル接続されていることを前提としています。</block>
   <block id="336f4ce595af8dfded4dff3e6c2d2dbe" category="list-text">コントローラ A で、スロット 3 のポート b （ e3b ）からスロット 7 のポート b （ e7b ）にケーブルを移動します。</block>
   <block id="97db9d4f6a8cf0456ad92952a384cb79" category="admonition">手順は、既存のシェルフが各コントローラのスロット 5 にある RoCE 対応 PCIe カードにケーブル接続されていることを前提としています。</block>
   <block id="f6eccf676a12f3899de1b6cd792b9d6f" category="list-text">コントローラ A で、スロット 5 のポート b （ e5b ）からスロット 3 のポート b （ e3b ）にケーブルを移動します。</block>
   <block id="077cb21f670cc68aea4bf00f1abd4745" category="list-text">コントローラ A で、ポート e0d からスロット 5 のポート b （ e5b ）にケーブルを移動します。</block>
-  <block id="0d42cbc8b21edd5f33f740bf5b14d10d" category="list-text">キットに付属のパンフレットに従って、シェルフに付属のレールマウントキットを取り付けます。</block>
   <block id="fa9763a154ca61da241ba542f9d894f7" category="paragraph">プラットフォームシャーシの背面から見た場合、左側の RoCE 対応カードポートはポート「 a 」（ e1a ）で、右側のポートはポート「 b 」（ e1b ）です。</block>
-  <block id="544773fca9e8ae07d62dcf4db5a7cb78" category="list-text">各コントローラモジュールで RoCE 対応ポートのセット（ RoCE 対応 I/O モジュールが 1 つ）を使用してシェルフを 1 台ホットアドする場合、 HA ペア内の NS224 シェルフのみである場合は、次の手順を実行します。</block>
-  <block id="fec7dbe822daa329031be7af970538e7" category="admonition">この手順では、各コントローラモジュールのスロット 7 ではなく、スロット 3 に RoCE 対応の I/O モジュールを取り付けたことを前提としています。</block>
   <block id="6e06431b37da6d52783c06ed54eb0e42" category="paragraph">次の図は、各コントローラモジュールで RoCE 対応 I/O モジュールを 1 つ使用した、 1 台のホットアドシェルフのケーブル接続を示しています。</block>
   <block id="387fb751376fe75512f4de0a3be8f22e" category="list-text">各コントローラモジュールで、 RoCE 対応ポートのセット（ RoCE 対応 I/O モジュールを 2 つ）を使用してシェルフを 1 台または 2 台ホットアドする場合は、該当する手順を実行します。</block>
   <block id="bab3236ac19e59e47d2daf1e2f19a0e1" category="admonition">以下の手順は、シェルフポート e0a をスロット 7 ではなくスロット 3 にある RoCE 対応 I/O モジュールにケーブル接続することで、ケーブル接続を開始することを前提としています。</block>
   <block id="2e3b7d6e769a48d4603c0ca4b6b9d83f" category="admonition">これらの手順は、シェルフポート e0a をスロット 3 （シェルフ 1 のケーブル接続手順に対応）ではなく、スロット 7 の RoCE 対応 I/O モジュールにケーブル接続することで開始されることを前提としています。</block>
-  <block id="100c5224303bd4ddbc570f323ec3b601" category="list-text">各コントローラモジュールに RoCE 対応ポート（ RoCE 対応 PCIe カードが 1 つ）のセットを使用してシェルフを 1 台ホットアドする場合、 HA ペア内の NS224 シェルフがこの構成になっていれば、次の手順を実行します。</block>
   <block id="7f52c439783621a5d09c0e1eb50d4319" category="admonition">この手順では、 RoCE 対応の PCIe カードがスロット 5 に取り付けられていることを前提としています。</block>
-  <block id="6f1539c78a094ce3c97746e4f05a0642" category="paragraph">次の図は、各コントローラモジュールで 1 つの RoCE 対応 PCIe カードを使用した、 1 台のホットアドシェルフのケーブル接続を示しています。</block>
-  <block id="e9aab26305dbeeca307e3f574bc6f620" category="list-text">各コントローラモジュールで、 RoCE 対応ポート（ RoCE 対応 PCIe カードが 2 つ）のセットを使用してシェルフを 1 台または 2 台ホットアドする場合は、該当する手順を実行します。</block>
   <block id="47f5ff4e183a793933d1f47d1d5d5b04" category="admonition">この手順では、 RoCE 対応の PCIe カードをスロット 5 とスロット 3 に取り付けたことを前提としています。</block>
   <block id="928e9f3198873a99cc05c02ab5403b7b" category="admonition">これらの手順では、シェルフポート e0a をスロット 3 ではなくスロット 5 にある RoCE 対応 PCIe カードにケーブル接続することで、ケーブル接続を開始することを前提としています。</block>
   <block id="6ced4955dcb25812c5e43101235629b9" category="admonition">これらの手順は、シェルフポート e0a をスロット 5 （シェルフ 1 のケーブル接続手順に相当）ではなく、スロット 3 の RoCE 対応 PCIe カードにケーブル接続することで開始されることを前提としています。</block>
-  <block id="853f2f58eaae6f81846d73d68ec58fc7" category="list-text">各コントローラモジュールで RoCE 対応ポート（オンボード RoCE 対応ポート）のセットを使用してシェルフを 1 台ホットアドする場合、 HA ペア内の NS224 シェルフのみになるようにするには、次の手順を実行します。</block>
-  <block id="46678aedb5de8e96e18124083a8925ee" category="paragraph">次の図は、各コントローラモジュールで 1 組の RoCE 対応ポートを使用して 1 台のホットアドしたシェルフのケーブル接続を示しています。</block>
-  <block id="8391296c9ad39c787ad4300c47db3f73" category="list-text">各コントローラモジュールで、 RoCE 対応ポート（オンボードおよび PCIe カード RoCE 対応ポート）のセットを 2 つ使用してシェルフを 1 つまたは 2 つホットアドする場合は、次の手順を実行します。</block>
   <block id="eb7122b6f64c6de77c3ce0aed5e75616" category="admonition">ストレージ用に設定されている専用でないポートは、次のように出力に表示されます。 HA ペアで ONTAP 9.8 以降が実行されている場合、非専用ポートの列に「 storage 」と表示されます。HA ペアが ONTAP 9.7 または 9.6 を実行している場合は ' 専用でないポートは 'Is dedicated ？に false と表示されます 列には、「有効」列も表示されます。</block>
   <block id="d92397f405b46035383db7778e4795f5" category="list-text">2 つ目のコントローラモジュールのポートを再設定するには、最初の手順（ A ）を繰り返します。</block>
   <block id="ed44ef953e4348bf2bf852e9813bdc5d" category="list-text">2 台目のコントローラをリブートしてポートの変更を有効にし、 2 つ目の手順（ b ）を繰り返します。</block>
@@ -4949,7 +4877,6 @@
   <block id="e95c782f97493fda4a0794b55f88c5be" category="list-text"><block ref="e95c782f97493fda4a0794b55f88c5be" category="inline-link-macro-rx"></block></block>
   <block id="280316afc56c30d6861e875ee64f9d8b" category="list-text"><block ref="280316afc56c30d6861e875ee64f9d8b" category="inline-link-macro-rx"></block></block>
   <block id="d00782da692bd9ebe9130b9b13318aa8" category="doc">システム構成を復元して確認します（ AFF A900 ）</block>
-  <block id="02c2cc4184073e3a32ac2cad0adca3ad" category="section-title">AFF A900 HA ペアのホットアドシェルフをケーブル接続します</block>
   <block id="e859983e28521134b4429e2ad40d035f" category="paragraph">ストレージの追加が必要な場合は、 AFF A900 HA ペアに最大 3 台の NS224 ドライブシェルフを（合計 4 台のシェルフに）ホットアドできます。</block>
   <block id="e1f00a018e7f4f086a0bcbc7eccb98fb" category="list-text">この手順では、 HA ペアに既存の NS224 シェルフが少なくとも 1 台あること、およびシェルフを最大 3 台までホットアドすることを前提としています。</block>
   <block id="6df1d9010eb2d59922ff15832ca8a435" category="list-text">HA ペアに既存の NS224 シェルフが 1 台しかない場合、この手順では、シェルフが各コントローラ上の RoCE 対応 100GbE I/O モジュール 2 台にケーブル接続されていると想定しています。</block>
@@ -4959,18 +4886,15 @@
   <block id="d9547d2852203d7c517230eb1c874611" category="list-text">シェルフ NSM B ポート e0a をコントローラ B のスロット 10 のポート A （ e10A ）にケーブル接続します。</block>
   <block id="58848607da5220d46a743527d7c9fb0b" category="list-text">シェルフ NSM B のポート e0b をコントローラ A のスロット 2 のポート b （ e2b ）にケーブル接続します。</block>
   <block id="3be444e253b66e84c2a7ac44cc632d2f" category="paragraph">次の図は、 2 台目のシェルフ（および 1 台目のシェルフ）のケーブル接続を示しています。</block>
-  <block id="c01b7e73b5184f9332f2b3847a1e8a46" category="image-alt">DRW ns224 a900 2 シェルフ</block>
   <block id="63a52597f01feafa7bac4f564671ef46" category="list-text">ホットアドする NS224 シェルフが HA ペアの 3 台目の NS224 シェルフになる場合は、次の手順を実行します。</block>
   <block id="2ee333f6f9a00c250ae9813502d4fb07" category="list-text">シェルフ NSM A のポート e0b をコントローラ B のスロット 11 のポート b （ e11b ）にケーブル接続します。</block>
   <block id="3eb8ce414e6e8d5e19024a3779a87e42" category="list-text">シェルフ NSM B のポート e0b をコントローラ A のスロット 11 のポート b （ e11b ）にケーブル接続します。</block>
   <block id="e3c4294c5b88b3a64211de084bc7bd2b" category="paragraph">次の図は、 3 台目のシェルフのケーブル接続を示しています。</block>
-  <block id="1cc4d52d52b1d439dc272f9193de4eee" category="image-alt">DRW ns224 a900 3 シェルフ</block>
   <block id="ab4ee3b5165983371f54b55e9efd77af" category="list-text">ホットアドする NS224 シェルフが HA ペアの 4 台目の NS224 シェルフになる場合は、次の手順を実行します。</block>
   <block id="855fdf1352556d56634d839385addb1b" category="list-text">シェルフ NSM A のポート e0a をコントローラ A のスロット 11 のポート A （ e11a ）にケーブル接続します。</block>
   <block id="ee0a734e2f0193a65c1da9b82e1749c4" category="list-text">シェルフ NSM B ポート e0a をコントローラ B のスロット 11 のポート A （ e11a ）にケーブル接続します。</block>
   <block id="d49e45adf2352258d2679cda6d7594c5" category="list-text">シェルフ NSM B のポート e0b をコントローラ A のスロット 1 のポート b （ e1b ）にケーブル接続します。</block>
   <block id="b434465fa52d0f783c7fd0f8d4ce72b7" category="paragraph">次の図は、 4 台目のシェルフのケーブル接続を示しています。</block>
-  <block id="123ecdcab7b962064d8bc5e084e22a78" category="image-alt">DRW ns224 a900 4 シェルフ</block>
   <block id="ec5e81cea4c5ee83d635778e86350e80" category="sidebar">AFF A900 の略</block>
   <block id="4dfce048960b478e43e915d68b452801" category="sidebar">I/O モジュールを追加します</block>
   <block id="4b4ef0c79b0398f75f85815a11b15104" category="sidebar">オンボードの暗号化キーがないかどうかをシャットダウン前にチェックします</block>
@@ -5442,7 +5366,6 @@
   <block id="5d5aa765d031a6aec40949b1fe489f43" category="paragraph">ディスクの交換方法は、ディスクドライブの使用方法によって異なります。SED 認証が有効になっている場合は、に記載されている SED の交換手順を使用する必要があります<block ref="fc87e4868a863f484cb32d2391c4aa0d" category="inline-link-rx"></block>。SED の交換前後に行う必要のある作業についても説明しています。</block>
   <block id="81e1b67b4176274b272b2432d79bb3a4" category="list-text">交換用ドライブがプラットフォームでサポートされていることを確認してください。を参照してください<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block>。</block>
   <block id="35947e84e557291e52a523d2f7eefc27" category="list-text">システムのその他のコンポーネントがすべて正常に動作していることを確認します。問題がある場合は、必ずテクニカルサポートにお問い合わせください。</block>
-  <block id="dd48f304652176299be75f07f2b6523a" category="paragraph">プラットフォームでサポートされているドライブに適したオプションを選択して、障害が発生したドライブを交換します。</block>
   <block id="b2503ad254a75d9be517466a531e8187" category="open-title">オプション 1 ： SSD を交換する</block>
   <block id="3862a4353217fcdcd0118bfd4cc1c05a" category="open-title">オプション 2 ： HDD を交換</block>
   <block id="3c533ebf2f9fc11504f4940fa25f3d60" category="doc">SSD ドライブまたは HDD ドライブを交換してください - AFF A200</block>
@@ -5952,7 +5875,6 @@
   <block id="44de44e43d612d76f985580ff643993b" category="video-title">アニメーション- FAS500fのインストールとセットアップ</block>
   <block id="d272d6404ac091b7fda10049815d3c66" category="video-title">アニメーション- NS224ドライブシェルフのNSMモジュールを交換します</block>
   <block id="c1e842505e6c0c129cf294ca23947b12" category="video-title">アニメーション- NS224ドライブシェルフのファンを交換します</block>
-  <block id="f0fad2647eb722df1f95d7cea636dfac" category="paragraph">ストレージの追加が必要になったときは、 NS224 ドライブシェルフを FAS3500f または AFF A250 HA ペアにホットアドできます。</block>
   <block id="851089e257660775de9f14fc67ced6b3" category="video-title">アニメーション- NS224ドライブシェルフのRTCバッテリを交換します</block>
   <block id="d4b0cbc1b32ce59a45784581449d8ba9" category="video-title">アニメーション- NS224ドライブシェルフのブートメディアを交換します</block>
   <block id="e7e22033080d7da41ac4bfcc79ca5333" category="video-title">アニメーション- NS224ドライブシェルフの電源装置をホットスワップします</block>
@@ -6056,7 +5978,6 @@
   <block id="483a752599520b0534872ca3822c9083" category="list-text">想定されるボリュームが各コントローラに存在することを確認します。<block ref="6931ff74d75f98d072d2434c71cfc1e4" prefix=" " category="inline-code"></block></block>
   <block id="8ba332a9944c2e6a66e36aee66689593" category="section-title">手順2：LIFを確認してシリアル番号を登録する</block>
   <block id="6de93a3d40cba5a9f17ae225a0a97f4e" category="section-title">手順3：（MetroCluster のみ）：2ノードMetroCluster 構成でアグリゲートをスイッチバックする</block>
-  <block id="8c4271e6faf2cea4cfc8e5b7108d8ee9" category="paragraph-title">手順</block>
   <block id="6bcc4bf7321499602cc726d01ccea765" category="paragraph-title">HA システムでシステム ID の変更を確認</block>
   <block id="354b2998d28fedeb0bad97fc9be9b342" category="paragraph-title">システムIDを2ノードMetroCluster 構成で再割り当てします</block>
   <block id="9826dc7dca2ce77788236ffc0e442de8" category="section-title">手順 2 ：コントローラモジュールの HA 状態を確認して設定します</block>
@@ -6099,7 +6020,6 @@
   <block id="0c2b7daebf1a1e94a676675bf614fba6" category="paragraph">ブートメディアは、電源装置とは反対のシェルフシャーシの壁に沿って配置されています。</block>
   <block id="178d438c63a174b511750f68655d814d" category="list-text">RTCバッテリを交換し、NSMモジュールを再度取り付け、モジュールをブートすると、ONTAP によってリアルタイムクロック時間が更新されます。</block>
   <block id="d067784c8bad4d41a4f87accd50abbc1" category="list-text">ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性についてfalseと表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
-  <block id="305fade7b83ae4e7549b33a3ae1b1fd0" category="doc">シェルフ- NS224シェルフをホットアドします</block>
   <block id="859c951ebab21901f2fd6183c53339d5" category="summary">NVRAM11バッテリを搭載したデステージコントローラ電源モジュール\（DCPM \）をホットスワップするには、障害が発生したDCPMモジュールの場所を確認し、シャーシから取り外して、交換用DCPMモジュールをインストールする必要があります。</block>
   <block id="8ea19d634d233a26f4f650bd2e2b467c" category="paragraph">NVRAM11バッテリを搭載したデステージコントローラ電源モジュール（DCPM）をホットスワップするには、障害が発生したDCPMモジュールの場所を確認し、シャーシから取り外して、交換用のDCPMモジュールをインストールする必要があります。</block>
   <block id="58fb0a507d97ff336e5db5d69ba846e9" category="inline-link">10GbE 接続用に、 40GbE NIC ポートを複数の 10GbE ポートに変換します</block>
@@ -6326,20 +6246,11 @@
   <block id="413763831143110464ea32cf926646ff" category="list-text">電源装置に電源コードを再接続し、AC電源装置の場合は電源コード固定クリップで電源コードを固定します。DC電源装置の場合は2本の蝶ネジを締めてから、電源装置から電源コードを抜きます。</block>
   <block id="fc2b3ed430cb8c91e352b492f909df0e" category="list-text">次のアニメーションでは、ドライブのホットスワップ手順 の物理的な取り外しと挿入の概要を示します。</block>
   <block id="a5296c0167e1a9e0e79d0ac90763897a" category="list-text">次に示すアニメーションや手順説明に従って、DIMMを交換します。</block>
-  <block id="39d970461581cdbd7cd52a0c942e09cc" category="paragraph"><block ref="4c1ac301fada9548f6ad2acaf0e467d2" category="inline-xref-macro-rx"></block></block>
-  <block id="d83f6d97e759c5156f389e1bbaca2e46" category="paragraph"><block ref="b415fb6b993cf20b1b9d3f6c50f3ab17" category="inline-xref-macro-rx"></block></block>
   <block id="08755d45823cf538e7c3e95cdbf3232d" category="list-text">コントローラAで、スロット4のポートa（e4a）からスロット5のポートb（e5b）にケーブルを移動します。</block>
-  <block id="2714efafc88a564eeaaee969d028a550" category="list-text">電源コードをシェルフに接続し、AC電源装置の場合は電源コード固定クリップで固定し、DC電源装置の場合は2本の蝶ネジで固定してから、耐障害性を確保するために電源コードを別 々 の電源に接続します。</block>
-  <block id="ac729677e330b2bd79ba466237427cd0" category="section-title">AFF A250、AFF C250、またはFAS500f HAペア用のホットアドシェルフをケーブル接続します</block>
-  <block id="f785dc6fbda4bf5cffbc5642d9f63fcc" category="image-alt">DRW ns224 A250 C250 f500f 1シェルフIEOPS 963</block>
-  <block id="1f16f18b5edbb033abeecd941eede311" category="paragraph">AFF A700 HAペアでNS224ドライブシェルフをケーブル接続する方法は、ホットアドするシェルフの数と、コントローラモジュールで使用するRoCE対応ポートセットの数（1つまたは2つ）によって異なります。</block>
-  <block id="06d25e1ce74f6aaec655716b2dff74fa" category="section-title">AFF A800またはAFF C800 HAペア用のホットアドシェルフをケーブル接続します</block>
-  <block id="e71af3f859a96a4597c3ee57f2465148" category="paragraph">AFF A800またはAFF C800 HAペアでNS224ドライブシェルフをケーブル接続する方法は、ホットアドするシェルフの数と、コントローラモジュールで使用するRoCE対応ポートセットの数（1つまたは2つ）によって異なります。</block>
   <block id="4a64724d8e98b13ea57df6fa3ef82797" category="list-text">シェルフNSM Aのポートe0aをコントローラAのスロット5のポートA（e5a）にケーブル接続します。</block>
   <block id="645f1ad1e72000ad9dc8c3735828b28a" category="list-text">シェルフNSM Aのポートe0bをコントローラBのスロット5のポートb（e5b）にケーブル接続します。</block>
   <block id="0b2da11bd8c712291a7f895f49e9e5e9" category="list-text">シェルフのNSM Bのポートe0aをコントローラBのスロット5のポートA（e5a）にケーブル接続します。</block>
   <block id="7d87c1e0b37af31cc86321a5d5f8fad9" category="list-text">シェルフのNSM Bのポートe0bをコントローラAのスロット5のポートb（e5b）にケーブル接続します。</block>
-  <block id="77216f6b109bab92f8497e814fbcd4a5" category="image-alt">DRW ns224 A800 c800 1シェルフIEOPS 964</block>
   <block id="67a1e7b2fb2710119ca2c369df46d177" category="list-text">NSM Aのポートe0aをコントローラAのスロット5のポートA（e5a）にケーブル接続します。</block>
   <block id="b2d8ae37f68adbef520c33f95bc7740d" category="list-text">NSM Aのポートe0bをコントローラBのスロット3のポートb（e3b）にケーブル接続します。</block>
   <block id="109d29131c6d5647c766eefb23aec61b" category="list-text">NSM Bのポートe0aをコントローラBのスロット5のポートA（e5a）にケーブル接続します。</block>
@@ -6349,26 +6260,18 @@
   <block id="cb68744bc941069df627bd20238f7997" category="list-text">NSM Bのポートe0aをコントローラBのスロット3のポートA（e3a）にケーブル接続します。</block>
   <block id="62e633c0432fba605a22e8a2ab4b4bbe" category="list-text">NSM Bのポートe0bをコントローラAのスロット5のポートb（e5b）にケーブル接続します。</block>
   <block id="e353caf6698cfea61d3a9c18256a7e59" category="image-alt">DRW ns224 A800 c800 2シェルフIEOPS 966</block>
-  <block id="bf357d9e6b8fc772b2e450e7c12e862a" category="paragraph">AFF A400 HAペアでNS224ドライブシェルフをケーブル接続する方法は、ホットアドするシェルフの数と、コントローラモジュールで使用するRoCE対応ポートセットの数（1つまたは2つ）によって異なります。</block>
   <block id="c8714c0d9fd482c82a6eb9a1f88a6c6a" category="list-text">NSM Aのポートe0bをコントローラBのスロット5のポート2（e5b）にケーブル接続します。</block>
   <block id="ce53afcddddc3b3dd304dc0ca5abed65" category="list-text">NSM Bのポートe0bをコントローラAのスロット5のポート2（e5b）にケーブル接続します。</block>
   <block id="6239efbf6396bdace9a9955581f4409b" category="list-text">NSM Aのポートe0aをコントローラAのスロット5のポート1（e5a）にケーブル接続します。</block>
   <block id="2fe8fb2268f4a14629b04075d5feb39b" category="list-text">NSM Bのポートe0aをコントローラBのスロット5のポート1（e5a）にケーブル接続します。</block>
-  <block id="f083687f229e9087607fc97422e119c0" category="image-alt">DRW ns224 a400 2shelves IEOPS 983</block>
-  <block id="3a6fe973f6f6e375a30d50e1b00bea51" category="section-title">AFF C400 HAペア用のホットアドシェルフをケーブル接続します</block>
-  <block id="0b6cfa43bebeb67d84b94f8437703149" category="paragraph">AFF C400 HAペアのNS224ドライブシェルフをケーブル接続する方法は、ホットアドするシェルフの数と、コントローラモジュールで使用するRoCE対応ポートセットの数（1つまたは2つ）によって異なります。</block>
-  <block id="7bbb938b0cef224ffa8f6826122559e4" category="list-text">各コントローラモジュールのRoCE対応ポートのセットを1つ使用して1台のシェルフをホットアドする場合に、このシェルフがHAペア内の唯一のNS224シェルフである場合は、次の手順を実行します。</block>
   <block id="d5453cac8ec10c5502b08b0ac5208b06" category="list-text">シェルフNSM Aのポートe0aをコントローラAのスロット4のポート1（e4a）にケーブル接続します。</block>
   <block id="f74b21e9e00a4f232af4a83d6e91ea56" category="list-text">シェルフNSM Aのポートe0bをコントローラBのスロット4のポート2（e4b）にケーブル接続します。</block>
   <block id="dea9986ba87dcbe7e1e56edd0971ea75" category="list-text">シェルフのNSM Bのポートe0aをコントローラBのスロット4のポート1（e4a）にケーブル接続します。</block>
   <block id="f0f25c87c1779ef06057bd2f760dd44a" category="list-text">シェルフのNSM Bのポートe0bをコントローラAのスロット4のポート2（e4b）にケーブル接続します。</block>
-  <block id="3c77f8a010dc228fdfa09613c4594a7f" category="image-alt">DRW ns224 C400 1シェルフIEOPS 985</block>
-  <block id="b53dcc9edd6c4009c02a65c16082912f" category="list-text">各コントローラモジュールの2セットのRoCE対応ポートを使用して1台または2台のシェルフをホットアドする場合は、次の手順を実行します。</block>
   <block id="a3a2d87cd45ac90b1a64a157d596387a" category="list-text">NSM Aのポートe0aをコントローラAのスロット4のポート1（e4a）にケーブル接続します。</block>
   <block id="ec21ec9fcd2f64561315df3e90210f4e" category="list-text">NSM Bのポートe0aをコントローラBのポートスロット4のポート1（e4a）にケーブル接続します。</block>
   <block id="271862bfe83769232e835a8b7bc18b91" category="list-text">NSM Aのポートe0bをコントローラBのスロット4のポート2（e4b）にケーブル接続します。</block>
   <block id="15c080954c797a5f48e731fe0b0c039f" category="list-text">NSM Bのポートe0bをコントローラAのスロット4のポート2（e4b）にケーブル接続します。</block>
-  <block id="e33765db8a9f63ae6e0b091a821ba6e2" category="image-alt">DRW ns224 C400 2シェルフIEOPS 984</block>
   <block id="367a5e8a40acf4970fc5bd256036dad0" category="list-text">異なる効率定格または異なる入力タイプの電源装置を混在させないでください。</block>
   <block id="ca2b5a039c8e27702d6e3bceb10da121" category="paragraph">いつものように同じように置換します。</block>
   <block id="90b475888361b2f83d88d4a8d50e38ae" category="paragraph">PSUのタイプ（ACまたはDC）に応じた手順 を使用します。</block>
@@ -8291,7 +8194,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="da98db34d10199077b14ab14b7e32c9f" category="sidebar">シェルフのコールド交換</block>
   <block id="674478ae995b81c552fa78ca38a62f55" category="sidebar">シェルフLEDの監視</block>
   <block id="396b16fa397fdd85993f8aa5bef27ffc" category="paragraph">を使用します <block ref="d1042c47c9aff448d2e8f9ac980b805e" category="inline-link-macro-rx"></block>。</block>
-  <block id="3e7aa82d2d70031bc903abc14fcef228" category="paragraph">次のリンクを使用します。 <block ref="7c76049c7cc6b29a138ae1f21c8716c8" category="inline-link-macro-rx"></block>。</block>
   <block id="6febf85749247f2f22048a485869645e" category="paragraph">このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。を使用します <block ref="85d66ca1788630be12ac9fc5ee2595a5" category="inline-link-macro-rx"></block> ネットアップシステムのインストールに精通している場合。</block>
   <block id="5398e5f0481212fec157da30d21384f0" category="inline-link-macro">シェルフのコールド交換</block>
   <block id="13ce8c4588978587ac346becc2c018b0" category="list-text"><block ref="13ce8c4588978587ac346becc2c018b0" category="inline-link-macro-rx"></block></block>
@@ -8424,7 +8326,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="efd776be7a583ca294bb1a8ce2c4e66e" category="image-alt">コントロオラモシユウルノカイホウ</block>
   <block id="cc278673be0ce007e60343587ca221b7" category="image-alt">エアダクトのOpoen</block>
   <block id="3adccad6709367d60f0645e89c86a994" category="image-alt">エアダクトを閉じる</block>
-  <block id="025411d9958f9bc8ad2448f521a1ada6" category="image-alt">ドライブの削除</block>
   <block id="d88c0d1de0c9fce014f21f630d9adb1a" category="image-alt">ラッチを開く</block>
   <block id="813ff1ce3d0de38d3d5b297e098fd16e" category="image-alt">コントローラモジュールのカバーを開く</block>
   <block id="5c201446503767cfb281ca73fa947b1a" category="image-alt">メザニンカードの取り外し</block>
@@ -8721,8 +8622,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="c4b17ef982ae644ec1d2b995fa1534a8" category="paragraph">I/Oモジュールをストレージシステムに追加するには、空きスロットのあるストレージシステムに新しいI/Oモジュールを追加するか、フル装備のストレージシステムでI/Oモジュールを新しいI/Oモジュールに交換します。</block>
   <block id="656450ae55843844fdfca7b44cbc5678" category="list-text">を参照し<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> て、新しいI/Oモジュールがストレージシステムおよび実行中のONTAPのバージョンと互換性があることを確認します。</block>
   <block id="9808a3e490e0cd81c2fab70cb489f958" category="paragraph">ストレージシステムの空のモジュールスロットにI/Oモジュールを追加できます。</block>
-  <block id="f9c9ac20332a969e865def6eb6464e99" category="list-text">コントローラから電源装置（PSU）ケーブルをPSUから抜きます。</block>
-  <block id="5f8429d099b5837b4b0f8245a6e25659" category="admonition">ストレージシステムにDC PSUがある場合は、PSUから電源ケーブルブロックを外します。</block>
   <block id="78263f5226743bdd204519f0e9bd22d2" category="list-text">ケーブルマネジメントトレイの内側にあるボタンを引いて下に回転させ、ケーブルマネジメントトレイを下に回転させます。</block>
   <block id="72e0b58a2d456f6ab89ca8d83859264d" category="list-text">ターゲットスロットブランキングモジュールをキャリアから取り外します。</block>
   <block id="abca9f9a7ffb3d4afa15f947303b1c4c" category="admonition">次の図は、水平および垂直I/Oモジュールの取り外しを示しています。通常、取り外したI/Oモジュールは1つだけです。</block>
@@ -8745,13 +8644,11 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="a06ddc697cce62226c19e353e0f2eeba" category="paragraph">フル装備のシステムのI/OスロットのI/Oモジュールを変更するには、既存のI/Oモジュールを取り外して別のI/Oモジュールに交換します。</block>
   <block id="47ab52c1da07a0c00e2b876e54778a95" category="paragraph">選択したLIFを別のホームポートに完全に再割り当てします。System Managerを使用してLIFを完全に移動する方法については、を参照してください<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block> 。</block>
   <block id="8f6ea8b644b16793208bc55e27bc7669" category="section-title">手順2：I/Oモジュールを交換する</block>
-  <block id="beb24afcb0e8b318a6d1dcdd39cadd0e" category="list-text">コントローラからPSUからPSUケーブルを抜きます。</block>
   <block id="900056c17f40fb1a034e134a72eca912" category="image-alt">AFF A1K I/Oモジュールの取り外し</block>
   <block id="8181d3a6b1640b5868632cfe5589a05d" category="list-text">カムラッチボタンを押します。</block>
   <block id="0cfc07520b64c5be4e64fac899e6eaa9" category="list-text">I/Oモジュールをエンクロージャのターゲットスロットに取り付けます。</block>
   <block id="7b71c8c5341c95139930e1f1748956d7" category="list-text">モジュールをエンクロージャスロット開口部の端に合わせます。</block>
   <block id="0169e44348295d5766b174aa4c296a62" category="list-text">取り外しと取り付けの手順を繰り返して、コントローラの他のモジュールを交換します。</block>
-  <block id="eae4ce64858efbf6f1946bcf1cacd2bc" category="list-text">PSUを再接続します。</block>
   <block id="7c99497119e4bb81fd50dbd906dfde72" category="list-text">LOADERプロンプトからコントローラをリブートします。_bye_</block>
   <block id="270bbec39f8392e251637a1b86bbf5c3" category="list-text">コントローラのBMCバージョンを確認します。_system service-processor show_</block>
   <block id="d6b96e8ac8bc341aa87626c9a7f76ffd" category="list-text">必要に応じてBMCファームウェアを更新します。_system service-processor image update_</block>
@@ -8869,7 +8766,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="537f891f06a3ecc3188c33c8f8c77e26" category="cell">Aロッキングカムラッチ</block>
   <block id="1dc32853fd03864e0537b3ae1ad7ef3b" category="list-text">コントローラモジュールをエンクロージャから引き出し、平らで安定した場所に置きます。</block>
   <block id="33fdb32302198e8a827003b4173b5eb0" category="paragraph">このとき、コントローラモジュールをエンクロージャから引き出すときは、必ず底面を支えてください。</block>
-  <block id="ad2e93db0fd7faf8c4c39a6cd5326275" category="doc">手順1コントローラモジュールを取り外す</block>
   <block id="75a5f080add11b67917840158e6bbd4b" category="paragraph">コントローラを交換するには、障害のあるコントローラを取り外し、FRUコンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをエンクロージャに取り付けてから、システムをメンテナンスモードでブートする必要があります。</block>
   <block id="946c9f8702013d89a2409f6409b3b2c1" category="paragraph">障害のあるコントローラモジュールから交換用コントローラモジュールに5つのファンモジュールを取り外す必要があります。</block>
   <block id="ba353b9db22f76b4888d654901cd45fb" category="list-text">ファンモジュールのグレーのロックボタンを押し、空いている手で支えながらファンモジュールをシャーシからまっすぐ引き出します。</block>
@@ -8934,7 +8830,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e17459e86046e44229fbebc069407c9c" category="list-text">この手順は、ストレージシステムでサポートされるすべてのバージョンのONTAPで使用できます。</block>
   <block id="8cc2ff9ddd81637d4ad2b7ee220a7774" category="section-title">手順2：障害が発生したI/Oモジュールを交換する</block>
   <block id="2de111d6117fc7e01d3fbeb75aed3c88" category="paragraph">I/Oモジュールを交換するには、エンクロージャ内でI/Oモジュールの場所を確認し、特定の手順を実行します。</block>
-  <block id="d65ea709db708c195e73f1f8f5f75781" category="list-text">コントローラからPSUケーブルをPSUから抜きます。</block>
   <block id="0af6fe064800da7d11e3417d85012213" category="inline-image-macro">I/Oモジュールの取り外し</block>
   <block id="1ac0ca437900f8bc507ae669a832b4dd" category="paragraph"><block ref="1ac0ca437900f8bc507ae669a832b4dd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d09aea2ff4780e8e31df238e5b9f5161" category="paragraph">I/Oカムラッチ</block>
@@ -9047,19 +8942,16 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="d498932449bd1680afbe5aad136fb7e3" category="paragraph">ライセンスキーをインストールするまでは、標準ライセンスを必要とする機能を引き続きノードで使用できます。ただし、該当する機能のライセンスがクラスタ内でそのノードにしかなかった場合、機能の設定を変更することはできません。また、ライセンスされていない機能をノードで使用するとライセンス契約に違反する可能性があるため、できるだけ早くノードのに交換用ライセンスキーをインストールする必要があります。</block>
   <block id="3e508eeaedfdae09fad57a764b5e2b73" category="section-title">手順1：障害のあるコントローラモジュールをシャットダウン</block>
   <block id="6f13230d5681e1c88b50f5ecbce62637" category="paragraph">次のいずれかのオプションを使用して、障害のあるコントローラモジュールをシャットダウンまたはテイクオーバーします。</block>
-  <block id="ac3e2454340641f4dc863ba7de892571" category="list-text">コントローラモジュールを約3インチ引き出して電源を切断します。</block>
   <block id="5d053cb0e109f37b3c9cfa31e957c2bc" category="list-text">コントローラモジュールをシャーシから約3インチ引き出して、電源を外します。</block>
   <block id="d9d1de25706aa51c5367e4dafd60898e" category="list-text">ターゲットスロットブランクモジュールをシャーシから取り外します。</block>
   <block id="192d3ce6854b267e65d46222f8f3a24f" category="image-alt">I/Oモジュールの取り外し</block>
   <block id="75fa26086844dfcbf14f35086518217a" category="list-text">ブランキングモジュールを取り外す。</block>
   <block id="2b6adb50592127273fdb4bb2b68918d5" category="list-text">I/Oモジュールをコントローラモジュールのスロット開口部の端に合わせます。</block>
   <block id="97366bfb1dcb5b97156c347c8ad89d9a" category="list-text">モジュールをスロットの奥までそっとスライドさせ、カムラッチを上に回転させてモジュールを所定の位置にロックします。</block>
-  <block id="7e0cc13ccecee19c414070713bc932cd" category="admonition">DC PSUがある場合は、ケーブルブロックをPSUに再接続します。</block>
   <block id="f0a953cf8667ec627e4c74a13844c3d6" category="inline-link">シェルフのホットアド</block>
   <block id="2a6ebde871b7a14ea9937c0b77f288c1" category="list-text">ストレージI/Oモジュールを設置した場合は、NS224シェルフを設置してケーブル接続します（を参照）<block ref="b6d396abfa2f33a744444ad20ba7003c" category="inline-link-rx"></block>。</block>
   <block id="2f3095e4c2c969f1f9dca69963ff66c1" category="paragraph">選択したLIFを別のホームポートに永続的に再割り当てします。System Managerを使用してLIFを完全に移動する方法については、を参照してください<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block> 。</block>
   <block id="6181ce929bc404494408989e6b8a9b52" category="paragraph">I/Oモジュールを交換するには、コントローラモジュール内でI/Oモジュールの場所を確認し、特定の手順を実行します。</block>
-  <block id="5cdf632bde34078b63091a6513a92902" category="admonition">ストレージシステムにDC電源装置が搭載されている場合は、電源ケーブルブロックをPSUから外します。</block>
   <block id="8a9a8a0db84d9dd59b0f006930b47193" category="list-text">カムラッチボタンを押します。</block>
   <block id="422e2aa4ec97de509f54db9d23618f37" category="list-text">カムレバーの開口部に指をかけ、モジュールをシャーシから引き出して、モジュールをシャーシから取り外します。</block>
   <block id="ce8b63d25565a610d1f9564150f85914" category="list-text">モジュールをスロットにゆっくりとスライドしてシャーシの奥まで押し込み、カムラッチを上に回転させてモジュールを所定の位置にロックします。</block>
@@ -9072,7 +8964,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="50452a92c8429276ad6b40b6a483c0dc" category="paragraph">ブートメディアを交換するには、システムの背面からSystem Managementモジュールを取り外し、障害のあるブートメディアを取り外し、交換用ブートメディアをSystem Managementモジュールに取り付けて、ブートイメージをUSBフラッシュドライブに転送する必要があります。</block>
   <block id="43d656a7b2fb92dbbe5e13b8f00a00b8" category="list-text">システム管理カムボタンを押します。カムレバーがシャーシから離れます。</block>
   <block id="f0d27e50eb41ec006d18a96b5254063e" category="list-text">カムレバーを完全に下に回転させ、システム管理モジュールをコントローラモジュールから取り外します。</block>
-  <block id="d090349173c11be6a6275698aa2404cd" category="list-text">システム管理モジュールを再インストールします。</block>
   <block id="54a53a09772d42f23357a9952d2d46a1" category="section-title">手順 2 ：ブートイメージをブートメディアに転送します</block>
   <block id="ba6a859a07959f14e93fa82e7da1233e" category="image-alt">コントローラモジュールエアダクトの図AFF A1Kを閉じる</block>
   <block id="51f2f04b22eba49bd6c9066a5648bd67" category="list-text">障害コントローラモジュールの背面にあるスロット4 / 5にある黄色のNVRAMのステータスLEDが消灯していることを確認します。NVアイコンを探します。</block>
@@ -9149,25 +9040,19 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="a34f5d7448ca509b8fdfe99eb0258923" category="list-text">モジュールをスロットにゆっくりと挿入し、カムラッチを最後まで押し上げてモジュールを所定の位置にロックします。</block>
   <block id="3da6ea6cfd2a784b8a10d3a2f614c9f8" category="section-title">手順 9 ：コントローラモジュールを取り付ける</block>
   <block id="b7dcc5448a06ec706832cdeab132792c" category="list-text">ケーブルマネジメントデバイスを再度取り付け、コントローラにケーブルを再接続します（まだ接続していない場合）。</block>
-  <block id="bb5b089c7f5c4d10ebe7f2948ffd4a76" category="paragraph">ストレージとネットワーク接続を再接続し、コントローラをギブバックして、交換手順を続行します。</block>
   <block id="eceb1e51c26ea3e966510ccb24feafbc" category="section-title">手順2：コントローラをギブバックする</block>
   <block id="cd857ff122008e8c33281aac10c4a797" category="list-text">コントローラモジュールでDIMMの場所を確認し、ターゲットDIMMを特定します。</block>
   <block id="8a682c66646ec7954594a9800184dc7d" category="inline-link">NetApp Hardware Universe</block>
   <block id="bbd2b770350c6f52732f68cd939d17e5" category="admonition">AFF A70またはAFF A90のDIMMの正確な位置については、またはコントローラモジュールのFRUマップを参照してください<block ref="4e43c3b83d98d9534ba258422aad47e3" category="inline-link-rx"></block> 。</block>
   <block id="610add0822408300fa8ad516407472f4" category="section-title">手順3：ファンを交換する</block>
-  <block id="46d9d4074dd716b11379b5c6b5eecbdd" category="admonition">ストレージシステムにDC電源装置ユニット（PSU）が搭載されている場合は、PSUから電源ケーブルブロックを取り外します。</block>
   <block id="fc6665e9f1b6162e5d38bd8eb567b787" category="list-text">I/Oモジュールをコントローラモジュールから取り外します。</block>
   <block id="43bdfcb23a758397ea6517f635aacc1d" category="paragraph">カムラッチがコントローラモジュールから離れます。</block>
   <block id="e7a88b07d0fe11e52b015a7a07b1b7ee" category="list-text">交換用I/Oモジュールをターゲットスロットに取り付けます。</block>
   <block id="a3106006bcbd6b01107844abf97f1800" category="list-text">モジュールをスロットにゆっくりとスライドしてコントローラモジュールに最後まで挿入し、カムラッチを上に回転させてモジュールを所定の位置にロックします。</block>
-  <block id="6ba2e9eb4c2829dc2017284892829c45" category="admonition">DC電源装置がある場合は、ケーブルブロックをPSUに再接続します。</block>
   <block id="1089c3637780c1a22ad88c3e30e3eaa6" category="image-alt">NV バッテリを交換してください</block>
   <block id="f5844b9beff2dd81e52b9a5d98082467" category="paragraph">NVRAMモジュールは、NVRAM12ハードウェアDIMMとフィールド交換可能DIMMで構成されています。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。障害が発生したNVRAMモジュールを交換するには、シャーシからモジュールを取り外し、DIMMを交換用モジュールに移動して、交換用NVRAMモジュールをシャーシに取り付ける必要があります。</block>
   <block id="f7de4e424b34170ef3a103ee0f882402" category="paragraph">NVRAMモジュールを交換するには、シャーシのスロット4/5でモジュールの場所を確認し、特定の手順を実行します。</block>
-  <block id="25bc068a4c7f7f5d040abc107e9b53e7" category="admonition">システムにDC電源装置が搭載されている場合は、電源ケーブルブロックをPSUから取り外します。</block>
   <block id="b9c07f9700f6e60517bd8e8c52b698d0" category="list-text">カムレバーの開口部に指をかけてモジュールをシャーシから引き出し、障害のあるNVRAMモジュールをシャーシから取り外します。</block>
-  <block id="380b4a9b7635aab20565f10313ad18ca" category="list-text">PSUにケーブルを再接続します。</block>
-  <block id="6cc4600854ca82a2aad4bc0932afe89b" category="admonition">システムにDC電源装置が搭載されている場合は、電源ケーブルブロックをPSUに再接続します。</block>
   <block id="95202d1c51ddd04e5c7ee2a579109553" category="list-text">カムボタンを押します。</block>
   <block id="eea43b1f9f4191af441ec7f1515ffd01" category="list-text">カムレバーの開口部に指をかけてモジュールをシャーシから引き出し、NVRAMモジュールをシャーシから取り外します。</block>
   <block id="586cd1de26648f3c3aa70dbd61199e65" category="image-alt">DC PSUの取り外し</block>
@@ -9613,7 +9498,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="24adca74cd4521b9f4f4a8ab1033a6d8" category="doc">オンボード暗号化キーの確認- AFF A70、AFF A90</block>
   <block id="a79b7b4459526eba247c33a94309858e" category="doc">リカバリイメージのブート- AFF A70、AFF A90</block>
   <block id="b565c8083612023ff18332e3f18570fb" category="doc">ブートメディアの交換- AFF A70、AFF A90</block>
-  <block id="7a78f14a4a6a79a25fb9d91deac29f7f" category="doc">コントローラのシャットダウン- AFF A70、AFF A90</block>
   <block id="3fd2ece46b2cae70b208d459839b7ea6" category="doc">シャーシの交換- AFF A70、AFF A90</block>
   <block id="47cc53453bdbc0a412f7d6260da64a94" category="doc">コントローラのシャットダウン- AFF A70、AFF A90</block>
   <block id="729f102b3131803a07803cd2f223d3c3" category="summary">ストレージにケーブルを再接続してコントローラをリブートする必要があります。</block>
@@ -9754,60 +9638,24 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b234edf4e69ffb2b833a8efb85ba5ee7" category="inline-link-macro">ホットアドの完了</block>
   <block id="a03ae9a3c924d10a64e97ade6d86ee2b" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="49e34f6a53fbd8084ac48e4e6738a264" category="inline-link-macro-rx"></block></block>
   <block id="6cfe7f4574d90cb894d56246a1414fa2" category="paragraph">ホットアドの準備の一環として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。</block>
-  <block id="047de0ebf31d4be4fc5eb6722a69201e" category="list-text">HAペアには、ホットアドするシェルフの数に対応できる十分な数のRoCE対応イーサネットポートが必要です。</block>
-  <block id="2ab4e0b94726eca79e1aeeb2f1e8ceb5" category="paragraph">ホットアドするシェルフごとに、各コントローラにRoCE対応ポートが2つ必要です。この 2 つのポートは、コントローラ、 RoCE 対応の PCIe カード、両方の組み合わせ、または RoCE 対応の I/O モジュール上のポートで、プラットフォームモデルに対応しています。</block>
-  <block id="463315a2a8c1964ff9259e984ef43a7c" category="list-text">プラットフォームモデルに適したコントローラスロットを特定します。</block>
   <block id="132976e79206d2260fc5308469634e7a" category="list-text">PCIeカードまたはI/Oモジュールの取り付け手順については、プラットフォームモデルのマニュアルを参照してください。</block>
-  <block id="088ddb10f92e4aec09d8bccaa095dbe7" category="paragraph"><block ref="088ddb10f92e4aec09d8bccaa095dbe7" category="inline-link-rx"></block></block>
-  <block id="bf06bfbbc1d29234d918a086f98a4c2c" category="section-title">ホットアド用のRoCE非対応イーサネットポートの準備</block>
-  <block id="c62d22065cef5eaab1771562c4464853" category="paragraph">HAペアに専用ではないRoCE対応イーサネットポートを使用してNS224ドライブシェルフをホットアドしている場合は、ポートが（ネットワーク用ではなく）ストレージ用に設定されていることを確認する必要があります。</block>
-  <block id="2d957a99f7e946ae3806773ee52b1821" category="paragraph">RoCE対応のI/Oモジュール用PCIeカードを追加で各コントローラに取り付けるなど、ストレージシステムの要件を満たしている必要があります。</block>
-  <block id="b3af01e20201c67551f5dc6511b19431" category="admonition">ポートをストレージで使用するものからネットワークで使用するものに変更するには、コマンドを入力し<block ref="9a677bf17da6cbfa9b6a63efbc67d3f2" prefix=" " category="inline-code"></block>ます。</block>
-  <block id="21e6d0e9cee07588109c3bca9e4f33a8" category="list-text">SSHまたはシリアルコンソールポートを使用してクラスタにログインします。</block>
   <block id="5fc0fcdc83b05fb4f062a9fa1fe851d9" category="paragraph">それ以外の場合は、手順 4~7 を実行してポートを設定する必要があります。</block>
   <block id="9db058e565a88604b6d87108ed139c51" category="paragraph"><block ref="6e972b196ebbc48e0575e24a92c8720d" prefix="" category="inline-code"></block></block>
   <block id="eb3110f9f105714e88d250d436520c1d" category="paragraph"><block ref="91bc4c8d50e9272a27ce62a39b4bf1a6" prefix="" category="inline-code"></block></block>
-  <block id="7c09109da9baa17bbe92aa7b509456d7" category="list-text">HAペアでONTAP 9.6を実行している場合は、コントローラモジュールをリブートしてポートの変更を有効にします。<block ref="6751ed4c60ef0a0b22c8f041a5e5cf3d" prefix=" " category="inline-code"></block></block>
   <block id="6f5a1f5a085ff35b3e9c182f13e6c8a8" category="list-text">手順 4 を繰り返します。</block>
   <block id="83d3292b963da6451d1d0d83b537c8e3" category="list-text">手順4と5を繰り返します。</block>
-  <block id="7142ab39fb3d18d24163683bfd871b22" category="section-title">シェルフをホットアドする前に既存のシェルフ接続を準備する</block>
   <block id="a61cf40b2e5406ed295d4e38c35656df" category="paragraph">プラットフォームモデルによっては、シェルフをホットアドする前に、（追加のRoCE対応PCIeカードまたはI/Oモジュールを取り付けたあとに）既存のシェルフを別 々 のスロットの2セットのポートに再接続して、スロット障害に対する耐障害性を確保しなければならない場合があります。</block>
-  <block id="74b8df0719b21a5aee599f46d92e870d" category="list-text">RoCE対応PCIeカードまたはI/Oモジュールを追加で各コントローラに取り付けるなど、システム要件を満たしている必要があります。</block>
-  <block id="b3aa8ef8d86d2e03895965e9958978a7" category="list-text">取り付けたRoCE対応PCIeカードまたはI/Oモジュールの非専用ポートがストレージ用に設定されていることを確認しておく必要があります。</block>
   <block id="bac6096d635a78bfc7662e151ab39559" category="list-text">この手順の実行中もシェルフへの接続を維持するために、ケーブルを一度に1本ずつ外します。</block>
-  <block id="51b7d26dc4977295bdc15e4ceffe3a84" category="list-text">AFF A1K HAペアを使用していて、3番目のシェルフをホットアドし、3番目または4番目のRoCE対応I/Oモジュールを各コントローラに取り付ける場合、3番目のシェルフは3番目または3番目および4番目のI/Oモジュールにのみケーブル接続されます。既存のシェルフをケーブルで再接続する必要はありません。</block>
   <block id="e87dec4c82a6131b352eff5116f7fab8" category="list-text">プラットフォームモデルに応じて、異なるスロットにある2組のRoCE対応ポートを使用して、既存のシェルフの接続をケーブル接続し直します。</block>
-  <block id="5c8e2a1729140c2319ea38bc38c671ba" category="paragraph">AFF A70またはAFF A90 HAペアを使用して2台目のシェルフをホットアドする場合</block>
-  <block id="815887f62fd8f7be15e3424efc32b20c" category="paragraph">両方のRoCE対応I/Oモジュールで最初のシェルフにケーブルを再接続します。</block>
   <block id="3dbc71070033db4d4c05e736c6f4075a" category="admonition">この手順では、既存のシェルフが各コントローラのスロット11にあるRoCE対応I/Oモジュールにケーブル接続されていることを前提としています。</block>
   <block id="b73b81430a005b6489a33cd21955e985" category="list-text">コントローラ A で、スロット 11 のポート b （ e11b ）からスロット 8 のポート b （ e8b ）にケーブルを移動します。</block>
-  <block id="5df57c3b9f444d48109943fb05d242b0" category="paragraph">必要に応じて、2シェルフ構成の既存の1台のシェルフと再接続されたシェルフを示すケーブル接続図を参照できます。</block>
-  <block id="a935e388e4de5cd04b8314123fe7074d" category="paragraph"><block ref="a8947d9a1a575b89ffe8fcb06a161750" category="inline-xref-macro-rx"></block></block>
-  <block id="a36b1e64cc692b8ab8d3df36996375fb" category="paragraph">AFF A1K HAペア（2台目のシェルフをホットアド）</block>
   <block id="04c18e5cb17496cb3b9f53a5b07c76b4" category="list-text">コントローラ A で、スロット 11 のポート b （ e11b ）からスロット 10 のポート b （ e10b ）にケーブルを移動します。</block>
-  <block id="ceab97c7abf1d0009b8f39e726984b0e" category="paragraph"><block ref="6bc0eba2df9bed360cea4cf9b0a3cb3d" category="inline-xref-macro-rx"></block></block>
-  <block id="1392119f637fc041996b3a606abe7bdd" category="paragraph">AFF A1K HAペアを使用している場合（4台目のシェルフをホットアドする場合）</block>
-  <block id="787c328c7045406142342c912caafa3c" category="paragraph">各コントローラのスロット9のR0CE対応I/Oモジュールで3番目のシェルフにケーブルを再接続します。</block>
   <block id="59a884f424ff6cf6eadda8a43ad15c18" category="list-text">コントローラ A で、スロット 9 のポート b （ e9b ）からスロット 8 のポート b （ e8b ）にケーブルを移動します。</block>
-  <block id="f6f7bd955e18a236aa6bd00bbe5b99b4" category="paragraph">AFF C400 HAペアを使用して2台目のシェルフをホットアドする場合</block>
-  <block id="97c77af9ebe44ea3e03f2f6517b0a3d3" category="paragraph">各コントローラの両方のRoCE対応ポートセットで、最初のシェルフにケーブルを再接続します。</block>
-  <block id="2ddae5c7aeab2acbf79374a7699a0e6b" category="paragraph">AFF A800またはAFF C800 HAペアを使用して2台目のシェルフをホットアドする場合</block>
-  <block id="82d1c3d2c1369a3c0cf17eefbe0771e3" category="paragraph">AFF A400 HAペアを使用して2台目のシェルフをホットアドする場合</block>
-  <block id="b517525ed52282a89cb1f6c210c70b1a" category="paragraph">AFF A700 HAペアを使用して2台目のシェルフをホットアドする場合</block>
   <block id="6ffd935255573ad4570c6a3b3450e0f9" category="inline-link">ディスク所有権の自動割り当てについて</block>
-  <block id="57c73fa2509bcf1d4b22913e1dd561cf" category="paragraph">ドライブ所有権を手動で割り当てる必要があるかどうかがわからない場合や、ご使用のストレージシステムのドライブ所有権の自動割り当てポリシーについて理解する必要がある場合は、を参照してください。<block ref="7cf2c47025b8136f811da5dc672735ee" category="inline-link-rx"></block></block>
   <block id="53c2f27803aec3d938e33bbae4de6b05" category="paragraph">このコマンドはどちらのノードでも入力できます。</block>
   <block id="5aa025a6412a09854e833ab5ef7bad16" category="paragraph">自動ドライブ割り当てが有効になっている場合は、各ノードの列にと表示されます<block ref="ed2b5c0139cec8ad2873829dc1117d50" prefix=" " category="inline-code"></block><block ref="36dcdb9f764aaa4313fab85a6eb8d6a6" prefix=" " category="inline-code"></block> 。</block>
   <block id="76252ddf99e749110059e04910646005" category="paragraph">自動ドライブ割り当ては両方のノードで無効にする必要があります。</block>
-  <block id="dcd988efa9773d6784cd82af7e72fc28" category="paragraph">新しいNS224シェルフを設置するには、シェルフをラックまたはキャビネットに設置し、電源コードを接続し（シェルフの電源が自動的にオンになります）、シェルフIDを設定します。</block>
   <block id="c44506a424da54e7a512c3fe58befda4" category="list-text">片側をまっすぐにしたペーパークリップまたは細いボールペンがあることを確認してください。</block>
-  <block id="d6f9c5ee662e9a54b98d8ab3c1fbbe0c" category="paragraph">シェルフIDの変更手順では、ペーパークリップまたはボールペンを使用して、オペレータディスプレイパネル（ODP）の後ろにあるシェルフIDボタンにアクセスします。</block>
-  <block id="7834fa1dae5baa351b43df3825d7c51e" category="section-title">ホットアド用のシェルフのケーブル接続</block>
-  <block id="0198adb183966b6a1cec77414f7184cf" category="paragraph">ホットアドしたシェルフをケーブル接続する前に、ケーブルコネクタの正しい向き、NS224 NSMシェルフモジュールのポートの場所とラベルを確認しておくと役立ちます。</block>
-  <block id="403cdeaa74f4f7d57300e7cfb63e3508" category="section-title">AFF A70またはAFF A90 HAペア用のホットアドシェルフをケーブル接続します</block>
-  <block id="4b2cba344589a212fe317976558dad4a" category="list-text">ストレージシステムの要件を満たしている必要があります。</block>
-  <block id="feadc282c1b706313d9abaf2e604fa56" category="paragraph"><block ref="8c3173c57b196b7c4ca9e3e232f3a310" category="inline-xref-macro-rx"></block></block>
-  <block id="6e76b79ceb1c0834e1d6d42376d001b2" category="section-title">AFF A1K HAペア用のホットアドシェルフをケーブル接続します</block>
   <block id="96ef72d95f222f00433291a58b6b8744" category="doc">ホットアド用のシェルフの設置- NS224シェルフ</block>
   <block id="3e7bc606456977aca4460d0843a5999b" category="paragraph">NS224シェルフをキャビネットまたはTelcoラックに設置し、電源コードを接続し（シェルフの電源が自動的にオンになります）、シェルフIDを設定する必要があります。</block>
   <block id="ed86a7d5c45c5290afeff3be20438da8" category="paragraph">シェルフIDを変更するには、ペーパークリップまたはボールペンを使用して、シェルフIDの変更手順用のオペレータディスプレイパネル（ODP）の後ろにあるシェルフIDボタンにアクセスします。</block>
@@ -10054,7 +9902,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="64e923d27d8f20b1c39e996784b889e8" category="paragraph">シャーシを交換するには、次のワークフロー手順に従ってください。</block>
   <block id="ad5348d83b53533243eebb2be9ef1707" category="inline-link-macro">シャーシの交換に関する要件と考慮事項</block>
   <block id="d00e4984e8012d79f3629015b50175c5" category="paragraph">シャーシを交換するには、一定の要件を満たす必要があります。を確認します <block ref="85b79c35aab56873c02d629d1d3908c3" category="inline-link-macro-rx"></block>。</block>
-  <block id="b9a16e18baf3e3435991b6d9c3ba01af" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="6b014aeda9f88c8732e6a64d143414df" category="inline-link-macro-rx"></block></block>
   <block id="d26fcd936ac92db8cf84389a3ab7bf47" category="inline-link-macro">シャーシを交換してください</block>
   <block id="d59de865276916bdd9f97d9473947ee3" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="50c430fbfd37e7720d34aff806c960b8" category="inline-link-macro-rx"></block></block>
   <block id="2c248a1a1b5e42590f3b77ae3ede043f" category="paragraph">シャーシを交換するには、障害のあるシャーシから新しいシャーシに電源装置、ハードドライブ、およびコントローラモジュールを移動し、障害のあるシャーシを障害のあるシャーシと同じモデルの新しいシャーシと交換します。</block>
@@ -10069,7 +9916,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b1e4b88723d63ea7009965cda7a3722c" category="doc">I/Oモジュールの追加と交換の概要- AFF A70、AFF A90</block>
   <block id="137aeb15d685b764448324fcbbc40af6" category="paragraph">ハードウェアのメンテナンス手順が必要になる場合があります。このセクションでは、AFF A70およびAFF A90システムコンポーネントのメンテナンスに固有の手順について説明します。</block>
   <block id="75775d88e26bd0ec1b5827bced4fb9dd" category="paragraph">このセクションの手順は、AFF A70およびAFF A90システムがONTAP環境のストレージノードとしてすでに導入されていることを前提としています。</block>
-  <block id="cde82c9b04790b90c2679aca48bf0641" category="paragraph">ASA A70およびASA A90ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="dc5fb977cb8c88d079092e9c6ec6160e" category="paragraph"><block ref="dc5fb977cb8c88d079092e9c6ec6160e" category="inline-link-macro-rx"></block></block>
   <block id="5d7bf1cac3020aecc9e419835da60990" category="paragraph"><block ref="5d7bf1cac3020aecc9e419835da60990" category="inline-link-macro-rx"></block></block>
   <block id="8c2694371a75dd052d8b2e0cd66496fc" category="paragraph">ドライブは、データに必要な物理ストレージを提供するデバイスです。</block>
@@ -10093,4 +9939,32 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4f46fe04ed7debd30ef1d3c151e24935" category="sidebar">コントローラの交換ワークフロー</block>
   <block id="1ca4e63b42d944e09b1132b7f6f56b66" category="sidebar">I/Oモジュールの概要</block>
   <block id="926cbecf3e76b90a2bcdbc9c4519fc77" category="sidebar">シャーシの交換ワークフロー</block>
+  <block id="1d2bcd4906e89f4b93900e7a729cfa23" category="list-text">コントローラモジュールを約3インチ引き出して、コントローラモジュールの電源を切断します。</block>
+  <block id="190e6dffac1e1ea2cdf61c6d2e1aa03f" category="list-text">コントローラモジュールの両方のロックラッチを押し下げ、両方のラッチを同時に下に回転させます。</block>
+  <block id="18db855640715fe2445fe253feaa5737" category="list-text">システム管理モジュールに接続されているケーブルをすべて取り外します。モジュールを再度取り付けるときに正しいポートにケーブルを接続できるように、ケーブルが接続されていた場所にラベルを付けてください。</block>
+  <block id="fd0b5e2ec2a2cf25a20efb1e3056cd3e" category="list-text">システム管理モジュールを取り付け直します。</block>
+  <block id="cad55b14298ba91aeb9818c5ded8ee54" category="list-text">USBフラッシュドライブをシステム管理モジュールのUSB-Aポートに挿入します。</block>
+  <block id="c81ac37e18f8d2fc1fa9a876a4ec31e6" category="list-text">コントローラモジュールに電源を再接続します。</block>
+  <block id="81dfaa70d5a404c0e1608245cd5ffd7c" category="paragraph">シャーシを交換する前に、次の要件を確認してください。</block>
+  <block id="6d5d746399cefcc613daba11aecdc51c" category="paragraph">ストレージとネットワーク接続をケーブル接続し直し、コントローラをギブバックします。</block>
+  <block id="0ed0be895e046a90f3a9bee311a3835e" category="paragraph">交換用コントローラの下位システム構成を確認し、必要に応じてシステム設定を再設定します。</block>
+  <block id="539ae767713043504856676d47fbdf4b" category="paragraph">ケーブルの元の場所がわかるように、ケーブルにラベルを付けてください。</block>
+  <block id="959e9a2f2cfb56163a0772785510252a" category="admonition">コントローラがシャーシに完全に装着されるとすぐにリブートします。</block>
+  <block id="efafbee0ffbc8d01f41e7d2a1428e535" category="section-title">手順 4 ：ディスクを再割り当てする</block>
+  <block id="d2b549392d50d0e5724cdaa8e0662e54" category="list-text">システムコンソールからコマンドを実行して、障害が発生したドライブを特定し<block ref="aadfe3f601179615e320615d73c89773" prefix=" " category="inline-code"></block> ます。</block>
+  <block id="9a3ce2ce3fa4d673c8baa3feb35a1d99" category="admonition">タイプと容量によっては、ドライブが障害ドライブのリストに表示されるまでに数時間かかることがあります。</block>
+  <block id="25a857f5f1a4649107ecc085c2020a12" category="paragraph">ドライブの交換方法は、ドライブの使用方法によって異なります。SED認証が有効になっている場合は、のSEDの交換手順を使用する必要があります<block ref="fc87e4868a863f484cb32d2391c4aa0d" category="inline-link-rx"></block>。SED の交換前後に行う必要のある作業についても説明しています。</block>
+  <block id="ecb3e4268bc39d477343c1e37a7a7507" category="list-text">ドライブを交換する場合は、ストレージシステムが新しいドライブを認識できるように、障害が発生したドライブを取り外してから交換用ドライブを挿入するまで1分間待機する必要があります。</block>
+  <block id="2355c0de89c03f36fe4d254465752ee9" category="paragraph">リンクを使用します <block ref="082e4336681466ac35683d076de2007e" category="inline-link-macro-rx"></block>。</block>
+  <block id="bfe3957a11dab27de6793691acba1b94" category="paragraph">* 100GbE QSFP28銅線ケーブル*</block>
+  <block id="59850ec6ce706547c89ff81eb99141db" category="image-alt">100GbE QSFP28銅線ケーブル</block>
+  <block id="98d708b05a190cb186f067bf90619d96" category="doc">障害のあるコントローラのシャットダウン- AFF A70、AFF A90</block>
+  <block id="c69300475b70372bd3ae9414f284bd95" category="inline-link-macro">コントローラをシャットダウン</block>
+  <block id="d184fea7e7fa9090950a80f61d31a011" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="7965ac6558ac93dfaf2504fcd8c045af" category="inline-link-macro-rx"></block></block>
+  <block id="2c72cc19c0bd942b8dafe7de49659cc1" category="paragraph">シャーシのメンテナンスを実施できるように、コントローラをシャットダウンします。</block>
+  <block id="df0a5e7efca0ed693d07e3026e615c4a" category="paragraph">AFF A70およびAFF A90ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
+  <block id="3a18b3bb3b5d96ad964da98cfdd729b8" category="paragraph"><block ref="3a18b3bb3b5d96ad964da98cfdd729b8" category="inline-link-macro-rx"></block></block>
+  <block id="1d7ebda4bed7079759a768f2499d31e6" category="inline-link">AFF A700sのセカンダリブートデバイスの交換方法</block>
+  <block id="9b7a185b60a0431ee8b8715c107b112e" category="paragraph">プライマリブートメディアが取り付けられていて正常な状態でセカンダリブートメディアを交換する必要がある場合は、NetAppサポートに連絡して技術情報アーティクルを記載して<block ref="1f934b5b84ae8c28d2ccbd8c83b2dd26" category="inline-link-rx"></block> ください。</block>
+  <block id="0861a4c5524aee3e491db29774dd89a8" category="sidebar">コントローラのシャットダウン</block>
 </blocks>
