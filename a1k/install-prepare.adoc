@@ -14,7 +14,7 @@ summary: AFF A1Kプラットフォームの設置を準備します。
 AFF A1Kプラットフォームの設置を準備します。
 
 .作業を開始する前に
-* を使用して https://docs.netapp.com/us-en/ontap/software_setup/index.html["クラスタセットアップワークシート"] 、必要なときに必要な値を記録し link:complete-install.html#step-3-configure-your-cluster["クラスタの設定"]ます。デフォルト値が指定されている場合は、その値を使用するか、独自の値を入力できます。
+* を使用し https://docs.netapp.com/us-en/ontap/software_setup/index.html["クラスタセットアップワークシート"] て、クラスタの設定時に必要な値を記録します。デフォルト値が指定されている場合は、その値を使用するか、独自の値を入力できます。
 * ハードウェアの設置に必要な追加機器や工具がすべて揃っていることを確認します。
 +
 ** No.2 プラスドライバ

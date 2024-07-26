@@ -2,35 +2,32 @@
 section: ns224
 title: NS224 シェルフ
 entries:
-- title: 設置とケーブル接続
-  pdf-filename: NS224 シェルフの設置とケーブル接続
+- title: シェルフをホットアドします
   entries:
-  - title: シェルフをホットアドします
+  - title: ホツトアトワアクフロオ
+    url: "/ns224/hot-add-shelf-overview.html"
+  - title: 要件およびベストプラクティス
+    url: "/ns224/requirements-hot-add-shelf.html"
+  - title: ホットアドの準備
+    url: "/ns224/prepare-hot-add-shelf.html"
+  - title: ホットアド用のシェルフの設置
+    url: "/ns224/install-hot-add-shelf.html"
+  - title: ホットアド用ケーブルシェルフ
     entries:
-    - title: ホツトアトワアクフロオ
-      url: "/ns224/hot-add-shelf-overview.html"
-    - title: 要件およびベストプラクティス
-      url: "/ns224/requirements-hot-add-shelf.html"
-    - title: ホットアドの準備
-      url: "/ns224/prepare-hot-add-shelf.html"
-    - title: ホットアド用のシェルフの設置
-      url: "/ns224/install-hot-add-shelf.html"
-    - title: ホットアド用ケーブルシェルフ
-      entries:
-      - title: ケーブル接続の概要
-        url: "/ns224/cable-overview-hot-add-shelf.html"
-      - title: AFF システム
-        url: "/ns224/cable-aff-systems-hot-add-shelf.html"
-      - title: ASAシステム
-        url: "/ns224/cable-asa-systems-hot-add-shelf.html"
-      - title: End of Availabilityシステム
-        url: "/ns224/cable-eoa-systems-hot-add-shelf.html"
-    - title: ホットアドの完了
-      url: "/ns224/complete-hot-add-shelf.html"
-  - title: シェルフ ID を変更します
-    url: "/ns224/change-shelf-id.html"
-  - title: シェルフをスイッチ接続型ストレージとしてケーブル接続
-    url: "/ns224/cable-as-switch-attached.html"
+    - title: ケーブル接続の概要
+      url: "/ns224/cable-overview-hot-add-shelf.html"
+    - title: AFF システム
+      url: "/ns224/cable-aff-systems-hot-add-shelf.html"
+    - title: ASAシステム
+      url: "/ns224/cable-asa-systems-hot-add-shelf.html"
+    - title: End of Availabilityシステム
+      url: "/ns224/cable-eoa-systems-hot-add-shelf.html"
+  - title: ホットアドの完了
+    url: "/ns224/complete-hot-add-shelf.html"
+- title: シェルフ ID を変更します
+  url: "/ns224/change-shelf-id.html"
+- title: シェルフをスイッチ接続型ストレージとしてケーブル接続
+  url: "/ns224/cable-as-switch-attached.html"
 - title: メンテナンス
   pdf-filename: NS224 シェルフにも維持されます
   entries:

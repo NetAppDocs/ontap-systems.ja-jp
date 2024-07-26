@@ -4428,7 +4428,6 @@
   <block id="7adeeef71f46a3a2275476684d43f7c0" category="sidebar">AFF C190 シャーシ</block>
   <block id="d2b7406fea14e725ea0ee27f6aaeb406" category="sidebar">AFF C190 コントローラモジュール</block>
   <block id="bebaed72daeb7c87819cff269d45cdc7" category="sidebar">設置とケーブル接続</block>
-  <block id="ee8a8644ffd12b189575bcf38607f745" category="sidebar">NS224 シェルフの設置とケーブル接続</block>
   <block id="cb74611b1d6389cb0fc09a68cc007132" category="sidebar">NS224 シェルフにも維持されます</block>
   <block id="9492fbc7ef6cff8ffa5e9fa00e6ee7bc" category="sidebar">シェルフをホットリムーブします</block>
   <block id="c8773f5cba3b9e8aa265fa0dc1a2c09e" category="sidebar">AFF A200 システム</block>
@@ -9419,8 +9418,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5e90eef3467966790ef48f7bc66eaea8" category="list-text">ファンは、最初に起動するときに大きな音がすることがあります。起動時にファンから大きな音がするのは正常です。</block>
   <block id="671754b07475807f952083aca6f98a97" category="list-text">各電源装置の固定装置を使用して、電源ケーブルを固定します。</block>
   <block id="b20f6daaff695ed207299929a85ec2f0" category="summary">AFF A1Kプラットフォームの設置を準備します。</block>
-  <block id="b08289f100b75f4c534e1d2f7b065d98" category="inline-link-macro">クラスタの設定</block>
-  <block id="4df010254bccca3ca04b1ea2f27bc98d" category="list-text">を使用して<block ref="21429355d1404c86c4038169e7df91bc" category="inline-link-rx"></block> 、必要なときに必要な値を記録し <block ref="5fecf2f883e4e59df3d0a6a1bcd5e808" category="inline-link-macro-rx"></block>ます。デフォルト値が指定されている場合は、その値を使用するか、独自の値を入力できます。</block>
   <block id="4157e2eb4dd8641bf3242a14b2dfed09" category="list-text">ハードウェアの設置に必要な追加機器や工具がすべて揃っていることを確認します。</block>
   <block id="d9a73103885ae8b7024a16f9b7de34b7" category="list-text">静電気防止用ストラップ</block>
   <block id="1cf76f3395dbf84a39ec8781dc375709" category="list-text">NS224のシェルフIDを設定するためのペーパークリップまたはボールペン</block>
@@ -9967,4 +9964,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1d7ebda4bed7079759a768f2499d31e6" category="inline-link">AFF A700sのセカンダリブートデバイスの交換方法</block>
   <block id="9b7a185b60a0431ee8b8715c107b112e" category="paragraph">プライマリブートメディアが取り付けられていて正常な状態でセカンダリブートメディアを交換する必要がある場合は、NetAppサポートに連絡して技術情報アーティクルを記載して<block ref="1f934b5b84ae8c28d2ccbd8c83b2dd26" category="inline-link-rx"></block> ください。</block>
   <block id="0861a4c5524aee3e491db29774dd89a8" category="sidebar">コントローラのシャットダウン</block>
+  <block id="cada3ae8b9b850f4721595b91f8ab383" category="doc">手順1：コントローラをケーブル接続し直す</block>
+  <block id="8727c9934e62950f5ec3ad8fac1885d6" category="list-text">を使用し<block ref="21429355d1404c86c4038169e7df91bc" category="inline-link-rx"></block> て、クラスタの設定時に必要な値を記録します。デフォルト値が指定されている場合は、その値を使用するか、独自の値を入力できます。</block>
+  <block id="f4c083c41633c63a72a1bbce7db1c159" category="sidebar">コントローラをギブバック</block>
+  <block id="26916af0dde7f17e1c0020bc61152522" category="sidebar">コントローラの再接続とギブバック</block>
 </blocks>
