@@ -19,11 +19,11 @@ NOTE: この情報は、システム外部のシステムには適用されま�
 * 必要に応じて、を参照してください link:install-cabling-rules.html["SASケーブル接続のルールと概念"] サポートされる構成、シェルフ / シェルフ間の接続、およびコントローラ / シェルフ間の接続については、を参照してください。
 * ケーブル接続例では、コントローラ/スタック間のケーブル接続のうち、コントローラ0b / 0b1のポート接続を実線で、コントローラ0aのポート接続を点線で区別して示しています。
 +
-image::../media/drw_fas2600_controller_to_stack_cable_type_key_IEOPS-947.svg[DRW fas2600コントローラ/スタックケーブルタイプキーIEOPS 947]
+image::../media/drw_fas2600_controller_to_stack_cable_type_key_IEOPS-947.svg[オンボードストレージを搭載したプラットフォーム用のケーブルタイプキー]
 
 * ケーブル接続例では、コントローラ / スタック間の接続とシェルフ / シェルフ間の接続に別の色を使用して、 IOM A （ドメイン A ）経由の接続と IOM B （ドメイン B ）経由の接続を区別しています。
 +
-image::../media/drw_fas2600_cable_color_key.png[DRW fas2600 ケーブルカラーキー]
+image::../media/drw_fas2600_cable_color_key.png[オンボードストレージ搭載プラットフォーム用ケーブルカラーキー]
 
 
 
@@ -33,7 +33,7 @@ image::../media/drw_fas2600_cable_color_key.png[DRW fas2600 ケーブルカラ�
 
 次の例は、マルチパスHA接続を実現するためにケーブル配線が不要であることを示しています。
 
-image::../media/drw_fas2800_noshelf_mpha_IEOPS-954.svg[DRW fas2800 noshelf mpha IEOPS 954]
+image::../media/drw_fas2800_noshelf_mpha_IEOPS-954.svg[FAS2800マルチパスHA（外付けシェルフなし）]
 
 
 
@@ -41,7 +41,7 @@ image::../media/drw_fas2800_noshelf_mpha_IEOPS-954.svg[DRW fas2800 noshelf mpha 
 
 次のケーブル接続例は、トライパス接続を実現するために2台のコントローラ間で必要なケーブル接続を示しています。
 
-image::../media/drw_fas2800_noshelf_tpha_IEOPS-955.svg[DRW fas2800 noshelf tpha IEOPS 955]
+image::../media/drw_fas2800_noshelf_tpha_IEOPS-955.svg[外付けシェルフを使用しないFas2800トライパスHAのケーブル接続例]
 
 
 
@@ -49,9 +49,9 @@ image::../media/drw_fas2800_noshelf_tpha_IEOPS-955.svg[DRW fas2800 noshelf tpha 
 
 次のワークシートとケーブル接続例では、ポートペア0a / 0b1を使用しています。
 
-image::../media/drw_fas2800_worksheet_IEOPS-948.svg[DRW fas2800ワークシートIEOPS 948]
+image::../media/drw_fas2800_worksheet_IEOPS-948.svg[スタック1のポートペアを示すFAS2800トライパスHAケーブル接続ワークシート]
 
-image::../media/drw_fas2800_withshelves_tpha_IEOPS-949.svg[DRW fas2800シェルフtpha IEOPS 949]
+image::../media/drw_fas2800_withshelves_tpha_IEOPS-949.svg[FAS2800トライパスHAの1つのスタックへのケーブル接続例]
 
 
 
@@ -62,9 +62,9 @@ image::../media/drw_fas2800_withshelves_tpha_IEOPS-949.svg[DRW fas2800シェル�
 
 NOTE: このセクションは、FAS2800またはFAS25XXシステムには適用されません。
 
-image::../media/drw_fas2600_mpha_worksheet_IEOPS-1255.svg[DRW fas2600 mphaワークシートIEOPS 1255]
+image::../media/drw_fas2600_mpha_worksheet_IEOPS-1255.svg[内蔵ストレージと1つのスタックを搭載したプラットフォームのマルチパスHAケーブル接続ワークシート]
 
-image::../media/drw_fas2600_mpha_IEOPS-1256.svg[DRW fas2600 mpha IEOPS 1256]
+image::../media/drw_fas2600_mpha_IEOPS-1256.svg[内蔵ストレージを搭載したプラットフォームのマルチパスHAケーブル接続の例]
 
 
 
@@ -74,12 +74,12 @@ image::../media/drw_fas2600_mpha_IEOPS-1256.svg[DRW fas2600 mpha IEOPS 1256]
 
 この例では、コントローラはシャーシのスロット A に取り付けられています。コントローラがシャーシのスロット A にある場合、内蔵ストレージポート（ 0b ）はドメイン A （ IOM A ）にあります。したがって、ポート 0b はスタック内のドメイン A （ IOM A ）に接続する必要があります。
 
-image::../media/drw_fas2600_mp_slot_a_worksheet.png[DRW fas2600 mp スロット A ワークシート]
+image::../media/drw_fas2600_mp_slot_a_worksheet.png[マルチパス構成のポートペアを示すFAS2600ケーブル接続ワークシート]
 
-image::../media/drw_fas2600_mp_slot_a.png[DRW fas2600 mp スロット A]
+image::../media/drw_fas2600_mp_slot_a.png[シャーシスロット1にコントローラを搭載したFAS2600マルチパスのケーブル接続例]
 
 この例では、コントローラはシャーシのスロット B に取り付けられています。コントローラがシャーシのスロット B にある場合、内蔵ストレージポート（ 0b ）はドメイン B （ IOM B ）にあります。したがって、ポート 0b はスタック内のドメイン B （ IOM B ）に接続する必要があります。
 
-image::../media/drw_fas2600_mp_slot_b_worksheet.png[DRW fas2600 mp slot b ワークシート]
+image::../media/drw_fas2600_mp_slot_b_worksheet.png[マルチパス構成のポートペアを示すFAS2600ケーブル接続ワークシート]
 
-image::../media/drw_fas2600_mp_slot_b.png[DRW fas2600 mp slot b]
+image::../media/drw_fas2600_mp_slot_b.png[シャーシスロット2にコントローラを搭載したFAS2600マルチパスのケーブル接続例]

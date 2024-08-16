@@ -33,9 +33,9 @@ NOTE: スタックのケーブル接続に必要となる以上のポートペ�
 
 ワークシートの他のすべてのポートペア 1a / 2b と 1c / 2d を使用してポートペアをケーブル接続します。
 
-image::../media/drw_worksheet_mpha_skipped_template.gif[DRW ワークシート mpha がテンプレートをスキップしました]
+image::../media/drw_worksheet_mpha_skipped_template.gif[スキップしたポートペアを使用したマルチパス接続のケーブル接続ワークシート]
 
-image::../media/drw_mpha_slots_1_and_2_two_4porthbas_two_stacks_skipped.gif[DRW mpha スロット 1 と 2 つの 4 ポートバス 2 つのスタックがスキップされました]
+image::../media/drw_mpha_slots_1_and_2_two_4porthbas_two_stacks_skipped.gif[スキップしたポートペアを使用したマルチパス接続のケーブル接続例]
 
 .手順
 . 各コントローラのポートペア 1a / 2b をスタック 1 にケーブル接続します。

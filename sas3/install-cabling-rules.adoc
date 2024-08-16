@@ -116,7 +116,7 @@ image::../media/slot0_rules.png[slot and slot [ポートの表記法]]
 
 
 
-image::../media/drw_shelf_to_shelf_standard.gif[ヒヨウシユンシエルフ/シエルフカンセツソク]
+image::../media/drw_shelf_to_shelf_standard.gif[標準シェルフからシェルフへの接続]
 
 
 
@@ -132,7 +132,7 @@ image::../media/drw_shelf_to_shelf_standard.gif[ヒヨウシユンシエルフ/�
 
 
 
-image::../media/drw_shelf_to_shelf_double_wide.gif[2倍幅シェルフ/シェルフ間接続]
+image::../media/drw_shelf_to_shelf_double_wide.gif[ダブルワイドシェルフとシェルフの接続]
 
 
 
@@ -290,7 +290,7 @@ NOTE: 0b/0b1ポートを正しいドメインに接続しないと（ドメイ�
 
 次の図は、シェルフの外部スタックへの内蔵ストレージポート（0b/0b1）のドメイン接続を示しています。
 
-image::../media/drw_fas2600_mpha_domain_example_IEOPS-1172.svg[内蔵ストレージポート0b/0b1ドメイン接続]
+image::../media/drw_fas2600_mpha_domain_example_IEOPS-1172.svg[内蔵ストレージポート0b 0b1ドメイン接続]
 
 
 

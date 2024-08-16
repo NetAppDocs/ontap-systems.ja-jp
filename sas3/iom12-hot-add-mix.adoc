@@ -448,7 +448,7 @@ NOTE: MetroCluster 構成では、 IOM B のパスは使用できません。
 +
 image::../media/drw_sas2_sas3_mixed_stack.png[マルチパス混在スタックのケーブル接続]
 
-* ブリッジ接続MetroCluster構成でIOM12 / IOM12BシェルフをIOM6シェルフスタックにケーブル接続する場合は、次の図を参照できます。 image:../media/hot_adding_iom12_shelves_to_iom6_stack_in_bridge_attached_config.png["ブリッジセツゾクコウセイデノ混在スタックノケーブルセツゾク"]
+* ブリッジ接続MetroCluster構成でIOM12 / IOM12BシェルフをIOM6シェルフスタックにケーブル接続する場合は、次の図を参照できます。 image:../media/hot_adding_iom12_shelves_to_iom6_stack_in_bridge_attached_config.png["ブリッジ接続構成での混在スタックのケーブル接続"]
 
 
 .手順

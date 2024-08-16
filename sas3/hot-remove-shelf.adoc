@@ -194,10 +194,10 @@ NOTE: ポートを接続する前に、 10 秒以上待機します。SAS ケー
 スタック内の論理上最初のディスクシェルフを取り外す場合やスタックにマルチパス接続がある場合は、例をもとにケーブルの再接続方法を推測してください。
 
 +
-image::../media/drw_hotremove_end.gif[DRW ホットリ除去終了]
+image::../media/drw_hotremove_end.gif[スタックの終端からのシェルフのホットリムーブ]
 
 +
-image::../media/drw_hotremove_middle.gif[DRW ホットリ除去ミドル]
+image::../media/drw_hotremove_middle.gif[スタック中央からのシェルフのホットリムーブ]
 
 
 

@@ -31,5 +31,3 @@ summary: ブートメディアには、システムがブート時に使用す�
 
 
 
-
-プライマリブートメディアが取り付けられていて正常な状態でセカンダリブートメディアを交換する必要がある場合は、NetAppサポートに連絡して技術情報アーティクルを記載して https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/How_to_replace_the_secondary_boot_device_of_an_a700s["AFF A700sのセカンダリブートデバイスの交換方法"^] ください。

@@ -228,7 +228,7 @@ image::../media/drw_ns224_vino_i_2shelves_2cards_ieops-1641.svg[2台のシェル
 .. シェルフ NSM B ポート e0a をコントローラ B のスロット 1 のポート A （ e1a ）にケーブル接続します。
 .. シェルフ NSM B のポート e0b をコントローラ A のスロット 1 のポート b （ e1b ）にケーブル接続します。+ 次の図は、シェルフのケーブル接続が完了した状態を示しています。
 +
-image::../media/drw_ns224_a250_c250_f500f_1shelf_ieops-1824.svg[AFF A250のケーブル接続]
+image::../media/drw_ns224_a250_c250_f500f_1shelf_ieops-1824.svg[1台のNS224シェルフと1セットのPCIeカードポートを使用したAFF A250 C250またはFAS500fのケーブル接続]
 
 
 

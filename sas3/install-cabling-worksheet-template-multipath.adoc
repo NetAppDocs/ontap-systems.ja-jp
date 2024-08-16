@@ -31,7 +31,7 @@ link:install-cabling-worksheets-examples-fas2600.html["内蔵ストレージを�
 * ワークシートに記入したら、必要に応じてを参照してください link:install-cabling-worksheets-how-to-read-multipath.html["マルチパス接続でコントローラ / スタック間をケーブル接続するためのワークシートの読み取り方法"]
 
 
-image::../media/drw_worksheet_mpha_template.gif[DRW ワークシート mpha テンプレート]
+image::../media/drw_worksheet_mpha_template.gif[MPHAコントローラからスタックへのケーブル接続ワークシートテンプレート]
 
 .手順
 . グレーのボックスの上のボックスに、システム上のすべてのSAS Aポートと、続けてシステム上のすべてのSAS Cポートをスロットの順序（0、1、2、3など）で列挙します。
@@ -54,7 +54,7 @@ image::../media/drw_worksheet_mpha_template.gif[DRW ワークシート mpha テ�
 たとえば、 8 つの SAS ポートと 4 つのスタックを使用するマルチパス HA 構成では、ポートペア 1a / 2b をスタック 1 に、ポートペア 2a / 1d をスタック 2 に、ポートペア 1c / 2d をスタック 3 に、ポートペア 2c / 1b をスタック 4 にそれぞれケーブル接続します。
 
 +
-image::../media/drw_worksheet_mpha_slots_1_and_2_two_4porthbas_two_stacks.gif[DRW ワークシート mpha スロット 1 と 2 つの 4 ポートバス 2 つのスタック]
+image::../media/drw_worksheet_mpha_slots_1_and_2_two_4porthbas_two_stacks.gif[マルチパスHAケーブル接続ワークシートの記入]
 
 +
 システム内のスタックのケーブル接続にすべてのポートペアが必要でない場合は、ポートペアをスキップ（ 1 つおきに使用）します。
@@ -67,14 +67,14 @@ image::../media/drw_worksheet_mpha_slots_1_and_2_two_4porthbas_two_stacks.gif[DR
 NOTE: スタックのケーブル接続に必要となる以上のポートペアがシステムにある場合は、ポートペアをスキップしてシステムの SAS ポートを最適化することを推奨します。SAS ポートを最適化することで、システムのパフォーマンスが最適化されます。
 
 +
-image::../media/drw_worksheet_mpha_skipped_template.gif[DRW ワークシート mpha がテンプレートをスキップしました]
+image::../media/drw_worksheet_mpha_skipped_template.gif[スキップしたポートペアを示すマルチパスHAケーブル接続ワークシート]
 
 +
 記入済みのワークシートを使用して、システムをケーブル接続できます。
 
 . シングルコントローラ（マルチパス）構成の場合は、コントローラ 2 の情報を取り消し線で削除します。
 +
-image::../media/drw_worksheet_mp_template.gif[DRW ワークシート mp テンプレート]
+image::../media/drw_worksheet_mp_template.gif[マルチパスケーブル接続ワークシートを記入]
 
 +
 記入済みのワークシートを使用して、システムをケーブル接続できます。

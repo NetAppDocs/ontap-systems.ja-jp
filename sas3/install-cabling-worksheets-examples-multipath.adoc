@@ -20,11 +20,11 @@ NOTE: ストレージを内蔵していないこの情報環境プラットフ�
 * 必要に応じて、を参照してください link:install-cabling-worksheets-how-to-read-multipath.html["マルチパス接続でコントローラ / スタック間をケーブル接続するためのワークシートの読み取り方法"]。
 * ケーブル接続例では、コントローラ / スタック間のケーブル接続のうち、コントローラ A と C のポート接続を実線で、コントローラ B と D のポート接続を点線で区別して表しています。
 +
-image::../media/drw_controller_to_stack_cable_type_key.gif[ケーブルタイプキーをスタックする DRW コントローラ]
+image::../media/drw_controller_to_stack_cable_type_key.gif[マルチパスHA構成ケーブルタイプキー]
 
 * HA ペアの各スタックへの接続を区別するために、ケーブル接続例のケーブルとワークシートの対応するポートペアに同じ色を使用しています。
 +
-image::../media/drw_controller_to_stack_cable_color_key_non2600_4stackcolors.gif[DRW コントローラからスタックへのケーブルカラーキー非 2600 4stackcolors]
+image::../media/drw_controller_to_stack_cable_color_key_non2600_4stackcolors.gif[マルチパスHA構成ケーブルのカラーキー]
 
 * ワークシートとケーブル接続例では、ケーブル接続のポートペアをワークシートに記載されている順序で示しています。
 
@@ -41,9 +41,9 @@ image::../media/drw_controller_to_stack_cable_color_key_non2600_4stackcolors.gif
 
 次のワークシートとケーブル接続例では、ポートペア 1a / 1d を使用しています。
 
-image::../media/drw_worksheet_mpha_slot_1_one_4porthba_one_singleshelf_stack.gif[DRW ワークシート mpha スロット 1 1 4 ポートバ 1 台のシングルシェルフスタック]
+image::../media/drw_worksheet_mpha_slot_1_one_4porthba_one_singleshelf_stack.gif[1つのクアッドポートSAS HBAおよび1つのシェルフスタックのマルチパスHAケーブル接続ワークシート]
 
-image::../media/drw_mpha_slot_1_one_4porthba_one_singleshelf_stack.gif[DRW mpha スロット 1 1 4 ポートバ 1 台のシングルシェルフスタック]
+image::../media/drw_mpha_slot_1_one_4porthba_one_singleshelf_stack.gif[マルチパスHAのケーブル接続例（クアッドポートSAS HBA×1、シングルシェルフスタック×1）]
 
 
 
@@ -51,9 +51,9 @@ image::../media/drw_mpha_slot_1_one_4porthba_one_singleshelf_stack.gif[DRW mpha 
 
 次のワークシートとケーブル接続例では、ポートペア 1a / 1d と 1c / 1b を使用しています。
 
-image::../media/drw_worksheet_mpha_slot_1_one_4porthba_two_singleshelf_stacks.gif[DRW ワークシート mpha スロット 1 1 4 ポートバ 2 台のシングルシェルフスタック]
+image::../media/drw_worksheet_mpha_slot_1_one_4porthba_two_singleshelf_stacks.gif[1つのクアッドポートSAS HBAおよび2つのシングルシェルフスタックのマルチパスHAケーブル接続ワークシート]
 
-image::../media/drw_mpha_slot_1_one_4porthba_two_singleshelf_stacks.gif[DRW mpha スロット 1 1 4 ポートバ 2 台のシングルシェルフスタック]
+image::../media/drw_mpha_slot_1_one_4porthba_two_singleshelf_stacks.gif[1つのクアッドポートSAS HBAと2つのシングルシェルフスタックのマルチパスHAのケーブル接続例]
 
 
 
@@ -66,18 +66,18 @@ NOTE: スタックのケーブル接続に必要となる以上のポートペ�
 
 次のワークシートとケーブル接続例は、ポートペアをワークシートに記載された順序で使用していることを示しています。 1a / 2b 、 2a / 1d 、 1c / 2d 、 2c / 1b 。
 
-image::../media/drw_worksheet_mpha_slots_1_and_2_two_4porthbas_two_stacks.gif[DRW ワークシート mpha スロット 1 と 2 つの 4 ポートバス 2 つのスタック]
+image::../media/drw_worksheet_mpha_slots_1_and_2_two_4porthbas_two_stacks.gif[2ツノクアツトホオトSASHBAオヨヒ2マルチシエルフスタツクノマルチハスHAケエフルセツソクワアクシイト]
 
-image::../media/drw_mpha_slots_1_and_2_4porthbas_4_stacks.gif[DRW mpha スロット 1 および 2 4 ポートバス 4 スタック]
+image::../media/drw_mpha_slots_1_and_2_4porthbas_4_stacks.gif[2つのクアッドポートSAS HBAおよび2つのマルチシェルフスタックのマルチパスHAのケーブル接続例]
 
 次のワークシートとケーブル接続例は、ポートペアをスキップしてリスト内の他のポートペア 1a / 2b と 1c / 2d を使用しています。
 
 
 NOTE: あとで 3 つ目のスタックを追加する場合は、スキップしたポートペアを使用します。
 
-image::../media/drw_worksheet_mpha_slots_1_and_2_two_4porthbas_two_stacks_skipped.gif[DRW ワークシート mpha スロット 1 と 2 つの 4 ポートバス 2 つのスタックがスキップされました]
+image::../media/drw_worksheet_mpha_slots_1_and_2_two_4porthbas_two_stacks_skipped.gif[スキップしたポートペアを使用する2つのクアッドポートSAS HBAおよび2つのマルチシェルフスタックのマルチパスHAケーブル接続ワークシート]
 
-image::../media/drw_mpha_slots_1_and_2_two_4porthbas_two_stacks_skipped.gif[DRW mpha スロット 1 と 2 つの 4 ポートバス 2 つのスタックがスキップされました]
+image::../media/drw_mpha_slots_1_and_2_two_4porthbas_two_stacks_skipped.gif[マルチパスHAのケーブル接続例：2つのクアッドポートSAS HBAおよび2つのマルチシェルフスタック（スキップポートペアを使用）]
 
 
 
@@ -91,9 +91,9 @@ image::../media/drw_mpha_slots_1_and_2_two_4porthbas_two_stacks_skipped.gif[DRW 
 
 次のワークシートとケーブル接続例では、ポートペア 0a~0d を使用します。
 
-image::../media/drw_worksheet_mpha_slot_0_4ports_one_singleshelf_stack.gif[DRW ワークシート mpha スロット 0 4 ポート 1 つのシングルシェルフスタック]
+image::../media/drw_worksheet_mpha_slot_0_4ports_one_singleshelf_stack.gif[4つのオンボードポートと1つのシェルフスタックのマルチパスHAケーブル接続ワークシート]
 
-image::../media/drw_mpha_slot_0_4ports_one_singleshelf_stack.gif[DRW mpha スロット 0 4 ポート 1 台のシングルシェルフスタック]
+image::../media/drw_mpha_slot_0_4ports_one_singleshelf_stack.gif[オンボードポート×4とシングルシェルフスタック×1のマルチパスHAのケーブル接続例]
 
 
 
@@ -101,9 +101,9 @@ image::../media/drw_mpha_slot_0_4ports_one_singleshelf_stack.gif[DRW mpha スロ
 
 次のワークシートとケーブル接続例では、ポートペア 0a~0d と 0c/0b を使用しています。
 
-image::../media/drw_worksheet_mpha_slot_0_4ports_two_singleshelf_stacks.gif[DRW ワークシート mpha スロット 0 4 ポート 2 つのシングルシェルフスタック]
+image::../media/drw_worksheet_mpha_slot_0_4ports_two_singleshelf_stacks.gif[4つのオンボードポートと2つのシングルシェルフスタックのマルチパスHAケーブル接続ワークシート]
 
-image::../media/drw_mpha_slot_0_4ports_two_singleshelf_stacks.gif[DRW mpha スロット 0 4 ポート 2 つのシングルシェルフスタック]
+image::../media/drw_mpha_slot_0_4ports_two_singleshelf_stacks.gif[4つのオンボードポートと2つのシングルシェルフスタックのマルチパスHAのケーブル接続の例]
 
 
 
@@ -116,15 +116,15 @@ NOTE: スタックのケーブル接続に必要となる以上のポートペ�
 
 次のワークシートとケーブル接続例では、ポートペアをワークシートに記載された順序で使用しています。 0a~1b 、 1a / 0d 、 0c / 1d 、 1c / 0b
 
-image::../media/drw_worksheet_mpha_slots_0_and_1_8ports_4stacks.gif[DRW ワークシート mpha スロット 0 および 8 ポート 4 スタック 1]
+image::../media/drw_worksheet_mpha_slots_0_and_1_8ports_4stacks.gif[4つのオンボードSASポート1つクアッドポートSAS HBAおよび2つのマルチシェルフスタックのマルチパスHAケーブル接続ワークシート]
 
-image::../media/drw_mpha_slots_0_and_1_8ports_4_stacks.gif[DRW mpha スロット 0 および 8 ポート 4 スタック]
+image::../media/drw_mpha_slots_0_and_1_8ports_4_stacks.gif[4つのオンボードSASポート1つのクアッドポートSAS HBAと2つのマルチシェルフスタックのマルチパスHAのケーブル接続例]
 
 次のワークシートとケーブル接続例では、ポートペアをスキップしてリスト内の別のポート 0a / 1b および 0c / 1d を使用しています。
 
 
 NOTE: あとで 3 つ目のスタックを追加する場合は、スキップしたポートペアを使用します。
 
-image::../media/drw_worksheet_mpha_slots_0_and_1_8ports_two_stacks_skipped.gif[DRW ワークシート mpha スロット 0 および 8 ポート x 2 スタックスキップ]
+image::../media/drw_worksheet_mpha_slots_0_and_1_8ports_two_stacks_skipped.gif[マルチパスHAケーブル接続ワークシート- 4ポートSAS HBA×4、およびスキップしたポートペアを使用するマルチシェルフスタック×2]
 
-image::../media/drw_mpha_slots_0_and_1_8ports_two_stacks_skipped.gif[DRW mpha スロット 0 と 8 ポート 1 個のスタックがスキップされました]
+image::../media/drw_mpha_slots_0_and_1_8ports_two_stacks_skipped.gif[マルチパスHAのケーブル接続例：4ポートSAS HBA×4、およびスキップしたポートペアを使用するマルチシェルフスタック×2]

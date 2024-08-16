@@ -38,7 +38,7 @@ summary: ドライブシェルフコンポーネントのLEDの場所とステ�
 
 次の図と表に、ODPの3つのLEDを示します。
 
-image::../media/drw_ns224_odp_leds_IEOPS-1262.svg[DRW ns224 ODP LED IEOPS 1262]
+image::../media/drw_ns224_odp_leds_IEOPS-1262.svg[オペレータディスプレイパネルの LED]
 
 [cols="1,2,1,5"]
 |===
@@ -46,7 +46,7 @@ image::../media/drw_ns224_odp_leds_IEOPS-1262.svg[DRW ns224 ODP LED IEOPS 1262]
 
 
  a| 
-image::../media/drw_sas_power_icon.svg[DRW SAS電源アイコン]
+image::../media/drw_sas_power_icon.svg[オペレータディスプレイパネルの電源LED]
  a| 
 電源（緑）
  a| 
@@ -57,7 +57,7 @@ image::../media/drw_sas_power_icon.svg[DRW SAS電源アイコン]
 
 
  a| 
-image::../media/drw_sas_fault_icon.svg[DRW SAS障害アイコン]
+image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネルの警告LED]
  a| 
 注意（オレンジ）
  a| 
@@ -76,7 +76,7 @@ image::../media/drw_sas_fault_icon.svg[DRW SAS障害アイコン]
 
 
  a| 
-image::../media/drw_sas3_location_icon.svg[DRW SAS3ロケーションアイコン]
+image::../media/drw_sas3_location_icon.svg[オペレータディスプレイパネルの位置LED]
  a| 
 ロケーション（青）
  a| 
@@ -93,7 +93,7 @@ NSMモジュールのLEDは、モジュールが正常に機能しているか�
 
 次の図と表に、モジュールの機能とモジュールの各NVMeポートの機能に関連するNSMモジュールのLEDを示します。
 
-image::../media/drw_ns224_nsm_leds_IEOPS-1270.svg[DRW ns224 nsm LED IEOPS 1270]
+image::../media/drw_ns224_nsm_leds_IEOPS-1270.svg[NS224 NSM100モジュールのLED]
 
 [cols="1,1,2,4"]
 |===
@@ -103,7 +103,7 @@ image::../media/drw_ns224_nsm_leds_IEOPS-1270.svg[DRW ns224 nsm LED IEOPS 1270]
  a| 
 image:../media/legend_icon_01.png["番号1"]
  a| 
-image::../media/drw_sas3_location_icon.svg[DRW SAS3ロケーションアイコン]
+image::../media/drw_sas3_location_icon.svg[オペレータディスプレイパネルの位置LED]
  a| 
 青
  a| 
@@ -114,7 +114,7 @@ NSMモジュール:場所
  a| 
 image:../media/legend_icon_02.png["番号2"]
  a| 
-image::../media/drw_sas_fault_icon.svg[DRW SAS障害アイコン]
+image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネルの警告LED]
  a| 
 アンバー
  a| 
@@ -136,7 +136,7 @@ NVMeポート/リンク：ステータス
  a| 
 image:../media/legend_icon_04.png["番号4"]
  a| 
-image::../media/drw_sas_fault_icon.svg[DRW SAS障害アイコン]
+image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネルの警告LED]
  a| 
 アンバー
  a| 
@@ -232,7 +232,7 @@ ACまたはDC電源装置（PSU）のLEDは、PSUが正常に機能している�
 
 次の図と表に、PSUのLEDを示します。（図はAC PSUですが、DC PSUのLEDの位置は同じです）。
 
-image::../media/drw_ns224_psu_leds_IEOPS-1261.svg[DRW ns224 PSU LED IEOPS 1261]
+image::../media/drw_ns224_psu_leds_IEOPS-1261.svg[電源装置の電源アクティビティLED]
 
 [cols="1,4"]
 |===
@@ -320,7 +320,7 @@ NVMeドライブのLEDは、NVMeドライブが正常に機能しているか、
 
 次の図と表は、NVMeドライブの2つのLEDについて説明しています。
 
-image::../media/drw_ns224_drive_leds_IEOPS-1263.svg[DRW ns224ドライブLED IEOPS 1263]
+image::../media/drw_ns224_drive_leds_IEOPS-1263.svg[NVMeドライブの警告LEDと電源LED]
 
 [cols="1,2,2"]
 |===

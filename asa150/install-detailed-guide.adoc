@@ -378,7 +378,7 @@ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS - Mini-SASコ�
 
 
 
-ドライブシェルフスタックが複数ある場合は、を参照してください link:../com.netapp.doc.hw-ds-sas3-icg/home.html["設置とケーブル接続"] をクリックします。
+ケーブル接続の詳細については、を参照してください https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html["IOM12 / IOM12Bモジュールを搭載したシェルフを新しいシステムに設置してケーブル接続します"^]。
 
 
 

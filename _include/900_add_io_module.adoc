@@ -153,7 +153,7 @@ NOTE: これにより、PCIeカードおよびその他のコンポーネント�
 . 自動ギブバックを無効にした場合は、有効にします。「 storage failover modify -node local-auto-giveback true 」
 . ネットワーク用にスロット 3 または 7 を使用している場合は、「 storage port modify -node __ <node name> ____port_<port name> __ -mode network 」コマンドを使用して、ネットワーク用にスロットを変換します。
 . コントローラ B について、上記の手順を繰り返します
-. ストレージ I/O モジュールを設置した場合は、 NS224 シェルフを設置してケーブル接続します（を参照） https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html["NS224 ドライブシェルフのホットアド"^]。
+. ストレージI/Oモジュールを設置した場合は、NS224シェルフを設置してケーブル接続します（を参照） https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html["ホツトアトワアクフロオ"^]。
 
 
 
@@ -383,7 +383,7 @@ NOTE: リブート中に問題 が発生した場合は、を参照してくだ�
  a| 
 ストレージモジュール
  a| 
-の説明に従って、 NS224 シェルフを設置してケーブル接続しますhttps://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html["NS224 ドライブシェルフのホットアド"^]。
+の説明に従って、NS224シェルフを設置してケーブル接続し https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html["ホツトアトワアクフロオ"^]ます。
 
 |===
 . コントローラ B について、上記の手順を繰り返します

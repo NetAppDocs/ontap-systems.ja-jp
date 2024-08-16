@@ -27,7 +27,7 @@ summary: ディスクシェルフコンポーネントの LED の場所とステ
 
 
  a| 
-image::../media/drw_sas_power_icon.svg[DRW SAS電源アイコン]
+image::../media/drw_sas_power_icon.svg[電源アイコン]
  a| 
 電源
  a| 
@@ -37,7 +37,7 @@ image::../media/drw_sas_power_icon.svg[DRW SAS電源アイコン]
 
 
 
-.2+| image:../media/drw_sas_fault_icon.svg["幅= 5px"] .2+| 注意  a| 
+.2+| image:../media/drw_sas_fault_icon.svg["注意アイコン、幅= 5px"] .2+| 注意  a| 
 黄色で点灯
  a| 
 1つ以上のFRU（ディスクシェルフ、ディスクドライブ、IOM12 / IOM12Bモジュール、または電源装置）の機能でエラーが発生しました。
@@ -56,7 +56,7 @@ image::../media/drw_sas_power_icon.svg[DRW SAS電源アイコン]
 
 
  a| 
-image::../media/drw_sas3_location_icon.svg[DRW SAS3ロケーションアイコン]
+image::../media/drw_sas3_location_icon.svg[ロケーションアイコン]
  a| 
 場所
  a| 
@@ -89,7 +89,7 @@ IOM12 / IOM12Bモジュールは、DS460C、DS224C、およびDS212Cディスク
 
 
  a| 
-image::../media/drw_sas_fault_icon.svg[DRW SAS障害アイコン]
+image::../media/drw_sas_fault_icon.svg[アテンションアイコン]
  a| 
 注意
  a| 
@@ -115,7 +115,7 @@ LNK
 
 
  a| 
-image::../media/drw_sas3_location_icon.svg[DRW SAS3ロケーションアイコン]
+image::../media/drw_sas3_location_icon.svg[ロケーションアイコン]
  a| 
 場所
  a| 
@@ -147,7 +147,7 @@ image::../media/iom12b.png[IOM12Bモジュール]
 | LED アイコン | LED 名 | 状態 | 説明 
 
 
-.2+| image:../media/drw_sas_power_icon.svg["幅= 20px"] .2+| 電源  a| 
+.2+| image:../media/drw_sas_power_icon.svg["電源アイコン、幅= 20px"] .2+| 電源  a| 
 緑色に点灯します
  a| 
 電源装置は正常に機能しています。
@@ -164,7 +164,7 @@ image::../media/iom12b.png[IOM12Bモジュール]
 
 
  a| 
-image::../media/drw_sas_fault_icon.svg[DRW SAS障害アイコン]
+image::../media/drw_sas_fault_icon.svg[アテンションアイコン]
  a| 
 注意
  a| 
@@ -181,11 +181,11 @@ image::../media/drw_sas_fault_icon.svg[DRW SAS障害アイコン]
 
 2 つの LED アイコンは、ラベルと LED として機能します。つまり、アイコン自体が点灯します。隣接する LED はありません。
 
-image::../media/28_dwg_e2860_de460c_psu.gif[LEDアイコン]
+image::../media/28_dwg_e2860_de460c_psu.gif[電源装置の LED]
 
 次の図は、 DS224C または DS212C ディスクシェルフで使用される電源装置を示しています。
 
-image::../media/drw_powersupply_913w_vsd.gif[LEDアイコン]
+image::../media/drw_powersupply_913w_vsd.gif[電源装置のLED]
 
 
 
@@ -212,7 +212,7 @@ image:../media/legend_icon_01.png["番号1"]
 イベントメッセージをチェックして実行する対処方法を決定してください。
 
 |===
-image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout.gif[警告LEDの場所]
+image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout.gif[ファン警告LED]
 
 
 
@@ -263,13 +263,13 @@ image:../media/legend_icon_02.png["番号2"]
 
 DS224C ディスクシェルフでは、 2.5 インチディスクドライブがディスクシェルフ内に縦に配置されます。
 
-image::../media/drw_diskdrive_ds224c.gif[ドライブキャリアの垂直配置]
+image::../media/drw_diskdrive_ds224c.gif[垂直ドライブキャリアのLED]
 
 次の図は、 DS212C ディスクシェルフで使用されるディスクドライブを示しています。
 
 DS212C ディスクシェルフでは、 3.5 インチまたは 2.5 インチのディスクドライブがディスクシェルフ内に横に配置されます。
 
-image::../media/drw_diskdrive_ds212c.gif[ドライブキャリアの水平配置]
+image::../media/drw_diskdrive_ds212c.gif[水平ドライブキャリアのLED]
 
 
 
