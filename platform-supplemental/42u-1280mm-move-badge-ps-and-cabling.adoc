@@ -20,7 +20,7 @@ summary: ドアを反転して照光バッジを再度取り付ける前に、�
 . 電源ケーブルの固定クリップを開き、電源装置から電源ケーブルを外します。
 . 図を参照しながら、電源装置のケースと電源装置を取り外します。
 +
-image::../media/drw_sys_cab_bezel_psu_remove_ozeki.gif[DRW sys cab bezel PSU remove ozek]
+image::../media/drw_sys_cab_bezel_psu_remove_ozeki.gif[電源装置ケースと電源装置を取り外すには]
 
 +
 .. 電源装置ケースの固定ピンを持ち上げ、ケースカバーを下に回転させて背面の電源装置ケースから外します。
@@ -48,11 +48,11 @@ NOTE: 下部のケーブル固定ストラップがある場合は、取り外�
 固定クリップとネジはコンジットをキャビネットの反対側に取り付けるために保管しておいてください。
 
 +
-image::../media/drw_sys_cab_bezel_power_conduit_ozeki.gif[DRW sys cab beel power conduit ozek]
+image::../media/drw_sys_cab_bezel_power_conduit_ozeki.gif[ベゼルの電源装置コンジットを取り外します。]
 
 . バッジの電源ケーブルをキャビネットの反対側に移動します。
 +
-image::../media/drw_sys_cab_bezel_power_cable_move.gif[DRW sys cab beel power cable mov]
+image::../media/drw_sys_cab_bezel_power_cable_move.gif[バッジの電源ケーブルをキャビネットの反対側に移動する方法]
 
 +
 .. キャビネットのゴム製ケーブル固定クリップを右に 180 度回転させてシステムキャビネットフレームから外し、ケーブルをシステムキャビネットから慎重に引き出します。

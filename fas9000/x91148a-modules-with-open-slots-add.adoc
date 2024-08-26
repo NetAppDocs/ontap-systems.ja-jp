@@ -116,7 +116,7 @@ NOTE: これにより、PCIeカードおよびその他のコンポーネント�
 . パートナーノードからノードをギブバックします。「 storage failover giveback -ofnode target_node_name
 . 自動ギブバックを無効にした場合は、有効にします。「 storage failover modify -node local-auto-giveback true 」
 . コントローラ B について、上記の手順を繰り返します
-. の説明に従って、NS224シェルフを設置してケーブル接続し https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html["ホツトアトワアクフロオ"^]ます。
+. の説明に従って、NS224シェルフを設置してケーブル接続し link:../ns224/hot-add-shelf-overview.html["ホツトアトワアクフロオ"]ます。
 
 
 --

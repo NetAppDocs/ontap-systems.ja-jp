@@ -190,7 +190,7 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成�
 NOTE: システムの重量に関連する安全上の注意事項を確認しておく必要があります。
 
 +
-image::../media/drw_9000_lifting_icon.png[DRW 9000 リフティングアイコン]
+image::../media/drw_9000_lifting_icon.png[吊り上げ重量に関する注意事項]
 
 
 
@@ -199,7 +199,7 @@ NOTE: 左側のラベルは空のシャーシを、右側のラベルはフル�
 
 . ケーブルマネジメントデバイスを取り付けます（図を参照）。
 +
-image::../media/drw_9000_cable_management_arms.png[DRW 9000 ケーブル管理アーム]
+image::../media/drw_9000_cable_management_arms.png[ケーブルマネジメントデバイスの接続]
 
 . システムの前面にベゼルを配置します。
 
@@ -232,7 +232,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 video::7a55b98a-e8b8-41d5-821f-ac5b0032ead0[panopto]
 
 
-image::../media/drw_9000_TNSC_composite_cabling.png[DRW 9000 TNSC 複合ケーブル]
+image::../media/drw_9000_TNSC_composite_cabling.png[2ノードスイッチレスクラスタの複合ケーブル接続]
 
 . に進みます <<手順 4 ：コントローラをドライブシェルフにケーブル接続する>> ドライブシェルフのケーブル接続手順については、を参照して
 
@@ -259,7 +259,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 video::6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[panopto]
 
 
-image:../media/drw_9000_switched_cluster_cabling.png[""]
+image:../media/drw_9000_switched_cluster_cabling.png["スイッチクラスタの複合ケーブル接続"]
 
 . に進みます <<手順 4 ：コントローラをドライブシェルフにケーブル接続する>> ドライブシェルフのケーブル接続手順については、を参照して
 
@@ -313,7 +313,7 @@ image:../media/SAS_storage_ONTAP_9.8_and_later.png["ONTAP 9.8以降のSASスト�
 NOTE: ドライブシェルフスタックが複数ある場合は、使用するドライブシェルフタイプに対応した _ インストールおよびケーブル接続ガイド _ を参照してください。
 
 +
-https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html["IOM12 モジュールを搭載した新しいシステム設置用シェルフを設置してケーブル接続します"]
+link:../sas3/install-new-system.html["IOM12 モジュールを搭載した新しいシステム設置用シェルフを設置してケーブル接続します"]
 
 +
 image:../media/Cable_shelves_new_system_IOM12_shelves.png["SASシェルフとのストレージシステムのケーブル接続"]

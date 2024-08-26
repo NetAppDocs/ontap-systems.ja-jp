@@ -155,7 +155,7 @@ summary: システムキャビネットを開梱するときは、システム�
 
 次の図は、システムキャビネットの前面、背面、および側面を示しています。
 
-image::../media/drw_sys_cab_side_front_dimensions_ozeki.gif[DRW sys cab side front dimensions ozek]
+image::../media/drw_sys_cab_side_front_dimensions_ozeki.gif[システムキャビネットの前面と側面]
 
 次の図は、システムキャビネットを上と下から見たところです。ケーブルの束をデータセンターの床からシステムキャビネットに通すための開口部も示しています。また、システムキャビネットのキャスターと水平調節脚の位置も示しています。
 
@@ -163,4 +163,4 @@ image::../media/drw_sys_cab_side_front_dimensions_ozeki.gif[DRW sys cab side fro
 
 システムキャビネットによってデータセンターの床が抜けないように、システムキャビネットの底にあるケーブル用開口部よりも広いフロア開口部の上にシステムキャビネットを移動しないでください。
 
-image::../media/drw_ozeki_sys_cab_bottom_top_dimensions_ieops-1803.svg[DRW ozekiシステムキャブ下部上部寸法ieops 1803]
+image::../media/drw_ozeki_sys_cab_bottom_top_dimensions_ieops-1803.svg[システムキャビネットの上面図と下面図]

@@ -366,7 +366,7 @@ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS - Mini-SASコ�
 
 
 
-ケーブル接続の詳細については、を参照してください https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html["IOM12 / IOM12Bモジュールを搭載したシェルフを新しいシステムに設置してケーブル接続します"^]。
+ケーブル接続の詳細については、を参照してくださいlink:../sas3/install-new-system.html["IOM12 / IOM12Bモジュールを搭載したシェルフを新しいシステムに設置してケーブル接続します"]。
 
 
 

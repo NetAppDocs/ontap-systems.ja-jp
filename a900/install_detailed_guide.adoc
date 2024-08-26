@@ -35,7 +35,7 @@ summary: これは、一般的なネットアップシステムのインスト�
 . すべての箱を開封して内容物を取り出します。
 . コントローラのシステムシリアル番号をメモします。
 +
-image::../media/drw_ssn_label.svg[DRW SSN ラベル]
+image::../media/drw_ssn_label.svg[システムシリアル番号の場所を示す例]
 
 . 同梱されていたケーブルの数と種類を確認し、書き留めておきます。
 +
@@ -181,18 +181,18 @@ image::../media/oie_cable_power.svg[OIEケーブル電源]
 NOTE: システムの重量に関連する安全上の注意事項を確認しておく必要があります。
 
 +
-image::../media/drw_9500_lifting_icon.svg[DRW 9500リフティングアイコン]
+image::../media/drw_9500_lifting_icon.svg[重量挙げ警告ラベル]
 
 . ケーブルマネジメントデバイスを取り付けます（図を参照）。
 +
-image::../media/drw_9500_cable_management_arms.svg[DRW 9500ケーブルマネジメントアーム]
+image::../media/drw_9500_cable_management_arms.svg[ケーブル管理ARMの取り付け]
 
 . システムの前面にベゼルを配置します。
 
 
 次の図は、一般的なシステムの外観と、システムの背面にある主なコンポーネントを示しています。
 
-image::../media/drw_a900_controller_in _chassis_ID_IEOPS-856.svg[シャーシID IEOPS 856のDRW a900コントローラ]
+image::../media/drw_a900_controller_in _chassis_ID_IEOPS-856.svg[一般的なクラスタ構成]
 
 
 
@@ -211,7 +211,7 @@ image::../media/drw_a900_controller_in _chassis_ID_IEOPS-856.svg[シャーシID 
 
 ケーブルをポートに差し込む際は、ケーブルのプルタブの向きを確認してください。ケーブルのプルタブは、すべてのネットワーキングモジュールポートで上向きになっています。
 
-image::../media/oie_cable_pull_tab_up.svg[OIE ケーブルのプルタブを上にします]
+image::../media/oie_cable_pull_tab_up.svg[ケーブルプルタブの方向]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -221,7 +221,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 .アニメーション- 2ノードスイッチレスクラスタをケーブル接続
 video::37419c37-f56f-48e5-8e6c-afa600095444[panopto]
 +
-image::../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg[DRW a900 TNSCネットワークケーブルIEOPS 933]
+image::../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg[2ノードスイッチレスネットワークのケーブル接続]
 
 +
 |===
@@ -300,7 +300,7 @@ image::../media/drw_a900fas9500_power_source_icon_IEOPS-1142.svg[DRW a900fas9500
 
 ケーブルをポートに差し込む際は、ケーブルのプルタブの向きを確認してください。ケーブルのプルタブは、すべてのネットワーキングモジュールポートで上向きになっています。
 
-image::../media/oie_cable_pull_tab_up.svg[OIE ケーブルのプルタブを上にします]
+image::../media/oie_cable_pull_tab_up.svg[ケーブルプルタブの方向]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。カチッと音がしない場合は、コネクタを取り外し、裏返してもう一度試してください。
@@ -397,7 +397,7 @@ image::../media/drw_a900fas9500_power_source_icon_IEOPS-1142.svg[DRW a900fas9500
 * 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。ストレージモジュールのケーブルのプルタブは上向き、シェルフのプルタブは下向きです。
 
 
-image::../media/oie_cable_pull_tab_up.svg[OIE ケーブルのプルタブを上にします]
+image::../media/oie_cable_pull_tab_up.svg[ケーブルプルタブの方向]
 
 image::../media/oie_cable_pull_tab_down.svg[OIE ケーブルのプルタブを下に引きます]
 
@@ -452,7 +452,7 @@ image::../media/oie_cable100_gbe_qsfp28.svg[OIEケーブル100 GbE qsfp28]
 * 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。ストレージモジュールのケーブルのプルタブは上向き、シェルフのプルタブは下向きです。
 
 
-image::../media/oie_cable_pull_tab_up.svg[OIE ケーブルのプルタブを上にします]
+image::../media/oie_cable_pull_tab_up.svg[ケーブルプルタブの方向]
 
 image::../media/oie_cable_pull_tab_down.svg[OIE ケーブルのプルタブを下に引きます]
 
@@ -521,13 +521,13 @@ image::../media/oie_cable100_gbe_qsfp28.svg[OIEケーブル100 GbE qsfp28]
 
 . 次のアニメーションまたは図を使用して、 1 つ以上のドライブシェルフ ID を設定します。
 +
-NS224 シェルフ ID は 00 および 01 に事前に設定されています。シェルフ ID を変更する場合は、ボタンが配置されている穴に差し込む工具が必要です。を参照してください https://docs.netapp.com/us-en/ontap-systems/ns224/change-shelf-id.html["シェルフ ID - NS224 シェルフを変更します"] 詳しい手順については、を参照して
+NS224 シェルフ ID は 00 および 01 に事前に設定されています。シェルフIDを変更する場合は、ボタンが配置されている穴に挿入するツールを作成する必要があります。link:../ns224/change-shelf-id.html["シェルフ ID - NS224 シェルフを変更します"]詳細な手順については、を参照してください。
 
 +
 .アニメーション- NVMeドライブシェルフIDを設定します
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
-image::../media/drw_a900_oie_change_ns224_shelf ID_IEOPS-836.svg[DRW a900 OIEでは'ns224シェルフID IEOPS 836が変更されます]
+image::../media/drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg[DRW a900 OIEでは'ns224シェルフID IEOPS 836が変更されます]
 
 +
 [cols="20%,80%"]
@@ -643,13 +643,13 @@ image::../media/drw_A900_cable_console_switch_controller_IEOPS-953.svg[DRW A900�
 
 . 次のアニメーションに従って、 1 つ以上のドライブシェルフ ID を設定します。
 +
-NS224 シェルフ ID は 00 および 01 に事前に設定されています。シェルフ ID を変更する場合は、ボタンが配置されている穴に差し込む工具が必要です。を参照してください https://docs.netapp.com/us-en/ontap-systems/ns224/change-shelf-id.html["シェルフ ID - NS224 シェルフを変更します"] 詳しい手順については、を参照して
+NS224 シェルフ ID は 00 および 01 に事前に設定されています。シェルフIDを変更する場合は、ボタンが配置されている穴に挿入するツールを作成する必要があります。link:../ns224/change-shelf-id.html["シェルフ ID - NS224 シェルフを変更します"]詳細な手順については、を参照してください。
 
 +
 .アニメーション- NVMeドライブシェルフIDを設定します
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
-image::../media/drw_a900_oie_change_ns224_shelf ID_IEOPS-836.svg[DRW a900 OIEでは'ns224シェルフID IEOPS 836が変更されます]
+image::../media/drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg[DRW a900 OIEでは'ns224シェルフID IEOPS 836が変更されます]
 
 +
 [cols="20%,80%"]

@@ -313,7 +313,7 @@ image:../media/SAS_storage_ONTAP_9.8_and_later.png["ONTAP 9.8以降のSASスト�
 NOTE: ドライブシェルフスタックが複数ある場合は、使用するドライブシェルフタイプに対応した _ インストールおよびケーブル接続ガイド _ を参照してください。
 
 +
-https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html["IOM12 モジュールを搭載した新しいシステム設置用シェルフを設置してケーブル接続します"]
+link:../sas3/install-new-system.html["IOM12 モジュールを搭載した新しいシステム設置用シェルフを設置してケーブル接続します"]
 
 +
 image:../media/Cable_shelves_new_system_IOM12_shelves.png["SASシェルフとのストレージシステムのケーブル接続"]

@@ -48,7 +48,7 @@ IMPORTANT: 特定の電力要件を持つお客様は、確認する必要があ
 .. 次の手順を実行して、ストレージシステムに関する情報を収集します。 https://docs.netapp.com/us-en/ontap/task_configure_ontap.html["セットアップワークシート^（ワークシートのURLが必要）"]。
 .. コントローラのストレージシステムのシリアル番号をメモします。
 +
-image::../media/drw_ssn_label.svg[DRW SSN ラベル]
+image::../media/drw_ssn_label.svg[システムシリアル番号の場所を示す例]
 
 
 
@@ -401,7 +401,7 @@ IMPORTANT: 電源コードは接続しないでください。
 次の表に、ドライブシェルフをストレージシステムにケーブル接続する際の図のケーブルタイプ、コールアウト番号、およびケーブルの色を示します。
 
 
-NOTE: この例では DS224C を使用していますサポートされている他のドライブシェルフでもケーブル接続はほぼ同じです。を参照してください https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html["IOM12 / IOM12Bモジュールを搭載したシェルフを新しいシステムに設置してケーブル接続します"^] を参照してください。
+NOTE: この例では DS224C を使用していますサポートされている他のドライブシェルフでもケーブル接続はほぼ同じです。詳細については、を参照してください link:../sas3/install-new-system.html["IOM12 / IOM12Bモジュールを搭載したシェルフを新しいシステムに設置してケーブル接続します"] 。
 
 [cols="20%,80%"]
 |===
@@ -436,7 +436,7 @@ image::../media/oie_cable_pull_tab_down.svg[OIE ケーブルのプルタブを�
 アニメーションやステップバイステップの手順に従って、コントローラとドライブシェルフをケーブル接続します。
 
 
-IMPORTANT: FAS2800ではポート0b2を使用しないでください。このSASポートはONTAPでは使用されず、常に無効になっています。を参照してください https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html["新しいストレージシステムにシェルフを設置します"^] を参照してください。
+IMPORTANT: FAS2800ではポート0b2を使用しないでください。このSASポートはONTAPでは使用されず、常に無効になっています。詳細については、を参照してください link:../sas3/install-new-system.html["新しいストレージシステムにシェルフを設置します"^] 。
 
 .アニメーション-ドライブシェルフのケーブル配線
 video::b2a7549d-8141-47dc-9e20-afe8016f4386[panopto]

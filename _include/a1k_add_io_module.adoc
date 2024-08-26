@@ -172,7 +172,7 @@ NOTE: これにより、PCIeカードおよびその他のコンポーネント�
 . コントローラ B について、上記の手順を繰り返します
 . 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
 . AutoSupportが有効になっている場合は、コマンドを使用してケースの自動作成をリストアまたは抑制解除し `system node autosupport invoke -node * -type all -message MAINT=END` ます。
-. ストレージI/Oモジュールを設置した場合は、NS224シェルフを設置してケーブル接続します（を参照） https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html["ホツトアトワアクフロオ"^]。
+. ストレージI/Oモジュールを設置した場合は、NS224シェルフを設置してケーブル接続します（を参照）link:../ns224/hot-add-shelf-overview.html["ホツトアトワアクフロオ"]。
 
 
 
@@ -392,7 +392,7 @@ NICモジュール
  a| 
 ストレージモジュール
  a| 
-の説明に従って、NS224シェルフを設置してケーブル接続し https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html["ホツトアトワアクフロオ"^]ます。
+の説明に従って、NS224シェルフを設置してケーブル接続し link:../ns224/hot-add-shelf-overview.html["ホツトアトワアクフロオ"]ます。
 
 |===
 . コントローラ B について、上記の手順を繰り返します

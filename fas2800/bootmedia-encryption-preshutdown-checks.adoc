@@ -28,8 +28,8 @@ summary: 障害のあるコントローラをシャットダウンしてオン�
 
 . 「 version -v 」コマンドを使用して、障害のあるコントローラ上でシステムが実行している ONTAP のバージョンを確認します。アップしている場合はパートナーコントローラ上で、障害のあるコントローラがダウンしている場合はパートナーコントローラ上で確認します。
 +
-** コマンド出力に<lno-DARE>または<1Ono-DARE>と表示された場合、システムはNVEをサポートしていません。に進みます https://docs.netapp.com/us-en/ontap-systems/fas2800/bootmedia-impaired-controller-shutdown.html["障害のあるコントローラをシャットダウンします"]。
-** <lno-DARE>がコマンド出力に表示されず、システムでONTAP 9.6以降が実行されている場合は、次のセクションに進みます。 <<ONTAP 9.6 以降を実行しているシステムでは、 NVE または NSE を確認します>>。
+** コマンド出力に<lno-DARE>または<1Ono-DARE>と表示された場合、システムはNVEをサポートしていません。に進みます。link:../fas2800/bootmedia-impaired-controller-shutdown.html["障害のあるコントローラをシャットダウンします"]
+** コマンド出力に<lno-DARE>が表示されず、システムでONTAP 9 .6以降が実行されている場合は、次のセクションに進みます。link:../fas2800/bootmedia-encryption-preshutdown-checks.html#check-nve-or-nse-on-systems-running-ontap-9-6-and-later["ONTAP 9.6 以降を実行しているシステムでは、 NVE または NSE を確認します"]
 
 
 . 正常なコントローラからの自動ギブバックを無効にします。
