@@ -43,6 +43,7 @@ entries:
   - title: DS460C シェルフ内のドライブドロワー
     url: "/sas3/service-replace-drawer-ds460c.html"
   - title: ドライブシェルフ
+    pdf-filename: SASドライブシェルフの交換
     entries:
     - title: シェルフメンテナンスの概要
       url: "/sas3/sas3-shelf-overview.html"

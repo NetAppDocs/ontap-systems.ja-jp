@@ -38,6 +38,7 @@ entries:
   - title: ドライブ
     url: "/ns224/service-replace-drive.html"
   - title: ドライブシェルフ
+    pdf-filename: NS224ドライブシェルフの交換
     entries:
     - title: シェルフメンテナンスの概要
       url: "/ns224/ns224-shelf-overview.html"

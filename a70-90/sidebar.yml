@@ -82,6 +82,7 @@ entries:
   - title: NVバッテリ
     url: "/a70-90/nvdimm-battery-replace.html"
   - title: I/O モジュール
+    pdf-filename: AFF A70およびAFF A90 I/Oモジュール
     entries:
     - title: I/Oモジュールの概要
       url: "/a70-90/io-module-overview.html"

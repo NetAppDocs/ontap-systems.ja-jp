@@ -31,7 +31,7 @@ ONTAPストレージシステムでは、各NS224シェルフは一意のシェ�
 
 . 前面プレートの後ろにあるシェルフIDボタンにアクセスするには、左側のエンドキャップを取り外します。
 +
-image::../media/drw_a900_oie_change_ns224_shelf_id_ieops-836.svg[NS224シェルフIDの変更]
+image:drw_a900_oie_change_ns224_shelf_id_ieops-836.svg["NS224のシェルフIDを変更（幅= 300px）"]
 
 +
 [cols="20%,80%"]
@@ -39,28 +39,28 @@ image::../media/drw_a900_oie_change_ns224_shelf_id_ieops-836.svg[NS224シェル�
 
 
  a| 
-image::../media/legend_icon_01.svg[番号1]
+image:legend_icon_01.svg["番号1、幅= 20"]
  a| 
 シェルフのエンドキャップ
 
 
 
  a| 
-image::../media/legend_icon_02.svg[[コールアウト番号2]
+image:legend_icon_02.svg["[吹き出し番号2、幅= 20"]
  a| 
 シェルフ前面プレート
 
 
 
  a| 
-image::../media/legend_icon_03.svg[[コールアウト番号3]
+image:legend_icon_03.svg["[番号3、幅= 20"]
  a| 
 シェルフID番号
 
 
 
  a| 
-image::../media/legend_icon_04.svg[[コールアウト番号4]
+image:legend_icon_04.svg["[番号4、幅= 20"]
  a| 
 シェルフIDアクセスボタン
 
@@ -134,14 +134,14 @@ NOTE: シリアルコンソールポートの設定手順については、ラ�
 .. プラットフォームに付属のコンソールケーブルを使用して、ラップトップにコンソールケーブルを接続し、コントローラのシリアルコンソールポートを接続します。
 .. ラップトップを管理サブネット上のスイッチに接続します。
 +
-image::../media/drw_a1k_70-90_console_connection_ieops-1702.svg[コンソール接続]
+image:drw_a1k_70-90_console_connection_ieops-1702.svg["コンソール接続"]
 
 .. 管理サブネット上のTCP/IPアドレスを使用して、ラップトップに割り当てます。
 
 
 . 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
 +
-image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[一般的な電源接続図]
+image:drw_affa1k_power_source_icon_ieops-1700.svg["一般的な電源接続図"]
 
 +
 ** プラットフォームがブートを開始します。初回のブートには最大 8 分かかる場合があります。

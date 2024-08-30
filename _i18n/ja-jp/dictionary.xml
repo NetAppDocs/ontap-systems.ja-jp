@@ -5920,7 +5920,6 @@
   <block id="450bb6c29a5f5af0fe4d1f8fcfcb4777" category="paragraph">電源装置を交換するには、電源装置の電源を切って接続を解除し、電源装置を取り出したあとに、交換用電源装置を取り付けて接続し、電源をオンにします。</block>
   <block id="3e476a4d56adc74857e9c49cf82980f1" category="list-text">システムには4つの電源装置があります。</block>
   <block id="d35281b877a38ecad54d9ac919c0ff9a" category="list-text">電源装置に電源ケーブルを再接続します。</block>
-  <block id="312be20d26d0db2b40b706dc2f350028" category="image-alt">DRW a900 OIEでは'ns224シェルフID IEOPS 836が変更されます</block>
   <block id="48fb10beb7e1cd15b9bdbab40aac9532" category="paragraph">シェルフのエンドキャップ</block>
   <block id="22f4a2aa68e94fdf29e1fc7d0f30d571" category="paragraph">シェルフ前面プレート</block>
   <block id="fd4a04a1b7abc5cadef1bf584e6e5547" category="paragraph">シェルフID LED</block>
@@ -5961,11 +5960,7 @@
   <block id="a5462faa34b6cf806cb49f24d84b02a7" category="list-text">システムが40GbE NICで10GbEのクラスタインターコネクトとデータ接続をサポートするように設定されている場合は、保守モードでnicadmin convertコマンドを使用して、これらのポートを10GbE接続に変換します。を参照してください<block ref="2d808a662d9493bde97b50913a25a294" category="inline-link-rx"></block> を参照してください。</block>
   <block id="c56809d9cff2ea190c6fb9d67e804b42" category="paragraph">シャーシを交換するときは、シャーシ前面にある6つのファンモジュールを取り外す必要があります。</block>
   <block id="e9e9a6de5e421dfe8a5ccc0b156ecc94" category="admonition">カードのポートラベルが表示されない場合は、カードの取り付け方向を確認し（PCIeコネクタソケットがA400およびFAS8300 / 8700のカードスロットの左側にある）、カードを探してから、のパーツ番号でカードを探します<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> ポートラベルを示すベゼルの図については、を参照してください。カードのパーツ番号は、を使用して確認できます<block ref="432345ed72f5509f18312f01d4f08dff" prefix=" " category="inline-code"></block> コマンドまたはをシステムパッキングリストに追加します。</block>
-  <block id="e1ed9dc03578bbf7dfdc44cf31220a86" category="image-alt">DRW a900スイッチドネットワークケーブルIEOPS 934</block>
-  <block id="f31eedcaeccdc6e2f0110a8d59512b5b" category="image-alt">DRW a900 NS224シェルフ間のケーブル接続IEOPS 937</block>
-  <block id="de9724762d060c871892fe8183e35056" category="image-alt">DRW a900 NS224 2シェルフのケーブル接続IEOPS 938</block>
   <block id="6f189db9f1b1dfc1be838de48c805168" category="video-title">アニメーション- NVMeドライブシェルフIDを設定します</block>
-  <block id="c81415a6ed927280dac360edb5000bc6" category="image-alt">IEOPS 941のDRW a900電源</block>
   <block id="1f583998630e94806bf5b9e059227dd4" category="paragraph"><block ref="1f583998630e94806bf5b9e059227dd4" category="inline-link-rx"></block></block>
   <block id="9b0500b65158795cfc5abb2becae4e80" category="paragraph">次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> ケーブルの場所を確認し、用途を特定します。</block>
   <block id="192e7ded6d54e3ac04596dc33b9c67cf" category="paragraph">I/Oモジュールは、システムの空のモジュールスロットに追加できます。</block>
@@ -5990,7 +5985,6 @@
   <block id="e739fb18db4795dd1e2cea8f3c5244c3" category="list-text">に進みます <block ref="56c57196a2457d200e49164377b65ba5" category="inline-link-macro-rx"></block>。</block>
   <block id="54c5909d12d5c473924ce9b2c856a68d" category="image-alt">DRW A400 NVDIMM BATT IEOPS 1004</block>
   <block id="85445cdcf89edd32e9cf4cb8554898a3" category="image-alt">DRW A400 NVDIMM IEOPS 1009を交換してください</block>
-  <block id="f5a5a95a5282486c3989ed932401b693" category="image-alt">DRW A900ケーブルコンソールスイッチコントローラIEOPS 953</block>
   <block id="0ea0d47e034118a7f063c35eaf67ebd2" category="list-text">ストレージ暗号化が有効になっている場合は、機能をリストアする必要があります。</block>
   <block id="34dbbed571bcfe30f4b9897172116b74" category="list-text">ストレージをケーブル接続するには、を参照してください <block ref="4261ea2b75c295a1978f7924667f1c11" category="inline-xref-macro-rx"></block></block>
   <block id="90d49fcc83418b049803a1b2081f3c6b" category="list-text">システムのセットアップを完了するには、を参照してください <block ref="53346fef0c147b551f530d05bbad2e41" category="inline-xref-macro-rx"></block></block>
@@ -6448,9 +6442,7 @@
   <block id="94f6805f56a12322f9f69e911a22d9b8" category="paragraph">次の図は、一般的なシステムの外観と、システムの背面にある主なコンポーネントを示しています。</block>
   <block id="fd39828687c1d928d80860408fbad6fe" category="paragraph">1台のNS224ドライブシェルフまたは2台のNS224ドライブシェルフをコントローラにケーブル接続します。</block>
   <block id="b10d0d290118effc922ad6f19fc77818" category="open-title">オプション1：コントローラを1台のNS224ドライブシェルフにケーブル接続します</block>
-  <block id="197dee836fa91f0bc10674f0b47382e3" category="image-alt">OIE凡例アイコン2 lo</block>
   <block id="ac4fc8e93ed87aaf0d607c7594b760df" category="open-title">オプション2：コントローラを2台のNS224ドライブシェルフにケーブル接続します</block>
-  <block id="eab02c161618f87134d04b274c9ed0a9" category="image-alt">DRW a900 NS224ラインART 2シェルフケーブルIEOPS 1147</block>
   <block id="93d4151426ee3e46d52580ae98128972" category="list-text">で収集したデータを使用してシステムを設定します<block ref="31fb422f2cdfc1b2e916b587bec00136" category="inline-link-rx"></block></block>
   <block id="17732d64911b83c1ef019e7ce301df3a" category="summary">ASA システムのインストール、セットアップ、および保守については、ストレージシステムのマニュアルを参照してください。</block>
   <block id="27562113eba41d0820398afd585cb267" category="sidebar">ASA ソフトウェアの設定</block>
@@ -9240,10 +9232,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="90b5c3b3e8b76a473c431858d638eccb" category="list-text">シェルフの電源をオンにするには、まず電源コードをシェルフに接続し、電源コード固定クリップで所定の位置に固定してから、電源コードを別 々 の回路の電源に接続します。</block>
   <block id="aa4d119638bea60a8850d8c9e0b57b86" category="paragraph">シェルフを電源に接続すると、シェルフの電源が自動的にオンになり、ブートします。</block>
   <block id="67cfcbdbfb87a54aadf338e218c38216" category="list-text">前面プレートの後ろにあるシェルフIDボタンにアクセスするには、左側のエンドキャップを取り外します。</block>
-  <block id="f044e75ec5037aabefb204d1365ba96b" category="image-alt">NS224シェルフIDの変更</block>
-  <block id="d8147b4a0f272144c59f006b412b8290" category="image-alt">[コールアウト番号2</block>
-  <block id="8c5529e435c4992332c3afef54410f4e" category="image-alt">[コールアウト番号3</block>
-  <block id="1e7068fa54071c2235730ac32aea59df" category="image-alt">[コールアウト番号4</block>
   <block id="7d080ef2a38b64e6cac5c0ae019e1a04" category="list-text">ペーパークリップまたは細いボールペンのまっすぐな端を小さな穴に挿入します。</block>
   <block id="6344f7fd68670da7ea2e25f860ab47c7" category="list-text">シェルフIDを有効にするために、シェルフの電源を10秒以上再投入します。</block>
   <block id="8dd5b39a083288c66f9b37e4b47571ed" category="list-text">シェルフの両方の電源装置から電源コードを抜きます。</block>
@@ -9966,4 +9954,68 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1a603190ae07bbceebb7036072831b8b" category="image-alt">丸穴4ポストラックへのSuperRailの取り付け方法</block>
   <block id="7c89b00bc8ce7878c39671bd32585c2d" category="image-alt">2ポストミッドマウントレールキットの取り付け方法</block>
   <block id="887f19a9ed16e42d506a7ee90031e54f" category="image-alt">2ポストフラッシュマウントレールキットの取り付け方法</block>
+  <block id="b86f1d6c96041a5555b0eeb0d961c958" category="inline-image-macro">幅= 300px</block>
+  <block id="63c096f5d747b5901a4e4a36f3aa6339" category="paragraph"><block ref="63c096f5d747b5901a4e4a36f3aa6339" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="256e7b6221cc372d4c7438f290102613" category="paragraph"><block ref="256e7b6221cc372d4c7438f290102613" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="34b0592b90649145df285163256979f1" category="paragraph"><block ref="34b0592b90649145df285163256979f1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="68de0f1c0c0a3216e6ba51295424d756" category="paragraph"><block ref="68de0f1c0c0a3216e6ba51295424d756" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="edbe18d1d431ff5c580c40f87966b4f5" category="paragraph"><block ref="edbe18d1d431ff5c580c40f87966b4f5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fd9b917400ef9502d61c9c928592feeb" category="inline-image-macro">NS224のシェルフIDを変更（幅= 300px）</block>
+  <block id="070a4dff1a7b1b64d034265c6caef2d0" category="paragraph"><block ref="070a4dff1a7b1b64d034265c6caef2d0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cc0c582fd7777e5d2bea79674136ad70" category="inline-image-macro">番号1、幅= 20</block>
+  <block id="aa032eab3a17bfa0062c6f09557e3323" category="paragraph"><block ref="aa032eab3a17bfa0062c6f09557e3323" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="216b2e6b0553773aac5eef243619cbc7" category="inline-image-macro">[吹き出し番号2、幅= 20</block>
+  <block id="11236c01ac6ea594214da845dddb9b2a" category="paragraph"><block ref="11236c01ac6ea594214da845dddb9b2a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="644b161ed3089cd2770465be8f055f89" category="inline-image-macro">[番号3、幅= 20</block>
+  <block id="a44f7cc336be8913f0d82f435c921f31" category="paragraph"><block ref="a44f7cc336be8913f0d82f435c921f31" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1de6e00aac59480183f5a40884ee2a6e" category="inline-image-macro">[番号4、幅= 20</block>
+  <block id="3eaebe9b3c4bed3b1b0cecc2dd98b9e4" category="paragraph"><block ref="3eaebe9b3c4bed3b1b0cecc2dd98b9e4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7e4f2a8a442405d313b86bd561273488" category="paragraph"><block ref="7e4f2a8a442405d313b86bd561273488" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c0f134964723266dab47501a2329291f" category="paragraph"><block ref="c0f134964723266dab47501a2329291f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1d33fba9af53b5439ecf23b3382edf2c" category="inline-image-macro">番号2、幅= 20</block>
+  <block id="d810130c7c55101931e08470c7bb07fe" category="paragraph"><block ref="d810130c7c55101931e08470c7bb07fe" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1db6a9786fedd43f93f01eba0c2b74bb" category="inline-image-macro">番号3、幅= 20</block>
+  <block id="17af8c353ce2a37b41b7566738989371" category="paragraph"><block ref="17af8c353ce2a37b41b7566738989371" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="186aa7defdbbe050cd1a4a7400246e3a" category="inline-image-macro">番号4、幅= 20</block>
+  <block id="c4c5b40e6b1e96c10d75a836204a368d" category="paragraph"><block ref="c4c5b40e6b1e96c10d75a836204a368d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6f0e7f42636386fbffaf36b54fbacbf2" category="paragraph"><block ref="6f0e7f42636386fbffaf36b54fbacbf2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="babff6765c503db416f9aad69aec82a2" category="inline-image-macro">幅= 85px</block>
+  <block id="dc1d3c7f8b5174880f91aa6524f186eb" category="paragraph"><block ref="dc1d3c7f8b5174880f91aa6524f186eb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3db2800441aa6ca29fd1bd67f542d1bd" category="paragraph"><block ref="3db2800441aa6ca29fd1bd67f542d1bd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f94c4982d99cc7ba1168f178d5d52649" category="paragraph"><block ref="f94c4982d99cc7ba1168f178d5d52649" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4c8dbd18eefd428a2369abb267937a3d" category="paragraph"><block ref="4c8dbd18eefd428a2369abb267937a3d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6be69614f7f631ae41156c7262cbfa20" category="paragraph"><block ref="6be69614f7f631ae41156c7262cbfa20" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f1d30d02381fe3fd0fcf25a5394ca931" category="paragraph"><block ref="f1d30d02381fe3fd0fcf25a5394ca931" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0ce4e5b97dc4eb5b063de87adcdd8d64" category="paragraph"><block ref="0ce4e5b97dc4eb5b063de87adcdd8d64" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1890402c394bdc8f92e9b00832d96f6b" category="paragraph"><block ref="1890402c394bdc8f92e9b00832d96f6b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b3d5200ae441b0d20a4914cbdec727d4" category="paragraph"><block ref="b3d5200ae441b0d20a4914cbdec727d4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d94ad2eb413c586a67a90ad278538137" category="paragraph"><block ref="d94ad2eb413c586a67a90ad278538137" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cbf85e66f1cb509bc0522dbbc1b48537" category="paragraph"><block ref="cbf85e66f1cb509bc0522dbbc1b48537" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="23f4a6989d877a6848ae85e75cb4107e" category="inline-image-macro">幅= 30px</block>
+  <block id="f9699d6d10a66e7dba1302dde0e673e6" category="paragraph"><block ref="f9699d6d10a66e7dba1302dde0e673e6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a382efe39ca1c5af285eccf0c3d8c05c" category="paragraph"><block ref="a382efe39ca1c5af285eccf0c3d8c05c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f76d5540905d1cc6c8338428fd9d3811" category="paragraph"><block ref="f76d5540905d1cc6c8338428fd9d3811" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fdb524c81cefaf7db65d9ed7860fcb25" category="paragraph"><block ref="fdb524c81cefaf7db65d9ed7860fcb25" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="664a1b1220265a449d182e15fb02318f" category="inline-image-macro">幅= 200px</block>
+  <block id="e2c11749d8ea9cc8051d3a7bd0cb0080" category="paragraph"><block ref="e2c11749d8ea9cc8051d3a7bd0cb0080" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="039c37b42c48bd7a9b86e7c17df52d69" category="paragraph"><block ref="039c37b42c48bd7a9b86e7c17df52d69" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="295668da1a72746b1e49ede1730d71a9" category="paragraph"><block ref="295668da1a72746b1e49ede1730d71a9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="15b1cc1c6654646db65180e23bdc80db" category="paragraph"><block ref="15b1cc1c6654646db65180e23bdc80db" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f46fcba45ee604355020dcd7df29d159" category="paragraph"><block ref="f46fcba45ee604355020dcd7df29d159" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ba54bcf2001d79bb8625529fa7f35e9f" category="inline-image-macro">幅= 50px</block>
+  <block id="b4990fed2df281f883d25b9ff4fc1532" category="paragraph"><block ref="b4990fed2df281f883d25b9ff4fc1532" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="34470acac68b3677d6a7380524d4bec1" category="paragraph"><block ref="34470acac68b3677d6a7380524d4bec1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="54de702be0b1e6a75b4ae600758440de" category="paragraph"><block ref="54de702be0b1e6a75b4ae600758440de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="650c0cbd6c737b406f1159925d524291" category="paragraph"><block ref="650c0cbd6c737b406f1159925d524291" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e320175742d036b41e5fb1a481d8d47f" category="paragraph"><block ref="e320175742d036b41e5fb1a481d8d47f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="28f823292921e13f5f1e716a34156335" category="paragraph"><block ref="28f823292921e13f5f1e716a34156335" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1eb01e42c3bc98cc6dc3939e3efbe66e" category="paragraph"><block ref="1eb01e42c3bc98cc6dc3939e3efbe66e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="577534c40b40575b9270f9eec17d10bb" category="paragraph"><block ref="577534c40b40575b9270f9eec17d10bb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="45a4f29af6323beb8354f98243d57637" category="paragraph"><block ref="45a4f29af6323beb8354f98243d57637" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b49587dccf0f5de061c677cc2cc91ade" category="paragraph"><block ref="b49587dccf0f5de061c677cc2cc91ade" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ac7edd3cc7124f409cdf5dc436336252" category="paragraph"><block ref="ac7edd3cc7124f409cdf5dc436336252" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="53c210c2168561d49ec663ddcdb6d39e" category="sidebar">A1K I/Oモジュール</block>
+  <block id="37e0009e8f9c1c6982a732432e86d180" category="sidebar">AFF A70およびAFF A90 I/Oモジュール</block>
+  <block id="c079075c23cce6316cdc21e35ca264ec" category="sidebar">NS224ドライブシェルフの交換</block>
+  <block id="2ebb7b9dab34661ab53f47e149c49c5c" category="sidebar">SASドライブシェルフの交換</block>
 </blocks>

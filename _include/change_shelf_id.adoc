@@ -4,7 +4,7 @@
 
 . 左側のエンドキャップを取り外して、 LED の右側にある小さな穴の位置を確認します。
 +
-image::../media/drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg[DRW a900 OIEでは'ns224シェルフID IEOPS 836が変更されます]
+image:drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg["幅= 300px"]
 
 +
 [cols="20%,80%"]
@@ -12,28 +12,28 @@ image::../media/drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg[DRW a900 OIEで
 
 
  a| 
-image::../media/legend_icon_01.svg[凡例アイコン 01]
+image:legend_icon_01.svg["幅= 20"]
  a| 
 シェルフのエンドキャップ
 
 
 
  a| 
-image::../media/legend_icon_02.svg[凡例アイコン 02]
+image:legend_icon_02.svg["幅= 20"]
  a| 
 シェルフ前面プレート
 
 
 
  a| 
-image::../media/legend_icon_03.svg[凡例アイコン 03]
+image:legend_icon_03.svg["幅= 20"]
  a| 
 シェルフID番号
 
 
 
  a| 
-image::../media/legend_icon_04.svg[凡例アイコン04]
+image:legend_icon_04.svg["幅= 20"]
  a| 
 シェルフIDアクセスボタン
 

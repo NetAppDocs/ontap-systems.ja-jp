@@ -34,6 +34,7 @@ indexpage:
     - title: ドライブ
       url: "../ns224/service-replace-drive.html"
     - title: ドライブシェルフ
+      pdf-filename: NS224 shelf
       url: "../ns224/ns224-shelf-overview.html"
     - title: ファン
       url: "../ns224/service-replace-fan.html"
@@ -52,6 +53,7 @@ indexpage:
     - title: DS460C シェルフ内のドライブドロワー
       url: "../sas3/service-replace-drawer-ds460c.html"
     - title: ドライブシェルフ
+      pdf-filename: SAS shelf
       url: "../sas3/sas3-shelf-overview.html"
     - title: DS460Cシエルフノフアン
       url: "../sas3/service-replace-fan-ds460c.html"
