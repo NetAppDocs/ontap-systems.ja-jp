@@ -150,7 +150,7 @@ NVDIMMを交換するには、エアダクトの上にあるNVDIMMマップラ�
 
 . NVDIMM を取り外しまたは移動する場合は、ライザーの固定ラッチを解除してから、該当するライザーを取り外します。
 +
-image::../media/drw_a800_nvdimm_replace.png[NVDIMMの交換]
+image::../media/drw_A800_nvdimm_replace_ieops-1953.svg[NVDIMMの交換]
 
 +
 [cols="1,4"]
@@ -167,7 +167,14 @@ image:../media/legend_icon_01.png["番号1"]
  a| 
 image:../media/legend_icon_02.png["番号2"]
  a| 
-ライザー 2 と NVDIMM 11
+ライザー 2
+
+
+
+ a| 
+image:../media/legend_icon_03.png["番号3"]
+ a| 
+スロット11および23のNVDIMM
 
 |===
 . NVDIMM を交換用コントローラモジュールに正しい向きで挿入できるように、ソケット内の NVDIMM の向きをメモします。

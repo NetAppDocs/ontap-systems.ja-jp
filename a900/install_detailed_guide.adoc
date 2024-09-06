@@ -192,7 +192,7 @@ image:drw_9500_cable_management_arms.svg["ケーブル管理ARMの取り付け"]
 
 次の図は、一般的なシステムの外観と、システムの背面にある主なコンポーネントを示しています。
 
-image:drw_a900_controller_in _chassis_ID_IEOPS-856.svg["一般的なクラスタ構成"]
+image::../media/drw_a900_controller_in_chassis_ID_IEOPS-856.svg[一般的なクラスタ構成]
 
 
 
