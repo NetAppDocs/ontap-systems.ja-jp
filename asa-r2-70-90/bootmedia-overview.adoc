@@ -1,0 +1,24 @@
+---
+permalink: asa-r2-70-90/bootmedia-overview.html 
+sidebar: sidebar 
+keywords: asa r2 a70, a90, overview, the boot media 
+summary: ブートメディアの自動交換方法と手動による交換方法について説明します。 
+---
+= ブートメディアの交換の概要- ASA A70およびASA A90
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+障害が発生したブートメディアは、ブートイメージにUSBモジュールを使用するか、Automated Boot Media Recovery（BMR；自動ブートメディアリカバリ）オプションを使用して手動で交換できます。
+
+* link:bootmedia-replace-requirements-bmr.html["ブートメディアリカバリの自動化"]
++
+自動ブートメディアリカバリでは、パートナーノードのブートイメージが使用され、適切なブートメニューオプションが自動的に実行されて、交換用ブートメディアにブートイメージがインストールされます。
+
+* link:bootmedia-replace-requirements.html["手動ブートメディア交換"]
++
+ブートメディアの手動交換では、従来の方法では、NetAppサポートサイトからONTAPイメージをダウンロードし、USBドライブにイメージを転送してターゲットの交換用ブートメディアにダウンロードし、ブートメニューのオプションを手動で指定してONTAPイメージを交換用ブートメディアにインストールします。
+
+

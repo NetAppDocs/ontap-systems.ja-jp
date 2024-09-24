@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
 ---
-= システム構成のリストアと確認（AFF A70、AFF A90）
+= システム構成のリストアと検証（AFF A70 and AFF A90）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -61,7 +61,7 @@ hA-state には、次のいずれかの値を指定できます。
 +
 ** 「 HA 」
 ** `mcc` （サポートされていません）
-** 「 MCCIP 」
+** `mccip`（ASAシステムではサポートされません）
 ** `non-ha` （サポートされていません）
 
 

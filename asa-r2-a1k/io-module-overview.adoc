@@ -1,0 +1,24 @@
+---
+permalink: asa-r2-a1k/io-module-overview.html 
+sidebar: sidebar 
+keywords: asa r2 a1k, replace io module 
+summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用フィールド交換可能ユニット（FRU）コンポーネントと交換する必要があります。 
+---
+= I/Oモジュールの追加と交換- ASA A1Kの概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージシステム内の障害が発生したI/Oモジュールは、同じタイプのI/Oモジュールに交換することも、別の種類のI/Oモジュールに交換することもできます。空きスロットのあるシステムにI/Oモジュールを追加することもできます。
+
+* link:io-module-add.html["I/Oモジュールの追加"]
++
+モジュールを追加すると、冗長性が向上し、1つのモジュールに障害が発生してもシステムが動作し続けるようになります。
+
+* link:io-module-replace.html["I/Oモジュールの交換"]
++
+障害が発生したI/Oモジュールを交換すると、システムを最適な動作状態に戻すことができます。
+
+

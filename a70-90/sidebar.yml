@@ -7,7 +7,9 @@ entries:
   entries:
   - title: インストールワークフロー
     url: "/a70-90/install-overview.html"
-  - title: 設置を準備
+  - title: 要件を確認する
+    url: "/a70-90/install-requirements.html"
+  - title: インストールの準備
     url: "/a70-90/install-prepare.html"
   - title: ハードウェアを設置
     url: "/a70-90/install-hardware.html"
@@ -27,7 +29,7 @@ entries:
     entries:
     - title: ブートメディアの交換ワークフロー
       url: "/a70-90/bootmedia-replace-workflow.html"
-    - title: 要件および考慮事項
+    - title: 要件を確認する
       url: "/a70-90/bootmedia-replace-requirements.html"
     - title: オンボード暗号化キーを確認
       url: "/a70-90/bootmedia-encryption-preshutdown-checks.html"
@@ -46,7 +48,7 @@ entries:
     entries:
     - title: シャーシの交換ワークフロー
       url: "/a70-90/chassis-replace-workflow.html"
-    - title: 要件および考慮事項
+    - title: 要件を確認する
       url: "/a70-90/chassis-replace-requirements.html"
     - title: コントローラのシャットダウン
       url: "/a70-90/chassis-replace-shutdown.html"
@@ -59,7 +61,7 @@ entries:
     entries:
     - title: コントローラの交換ワークフロー
       url: "/a70-90/controller-replace-workflow.html"
-    - title: 要件および考慮事項
+    - title: 要件を確認する
       url: "/a70-90/controller-replace-requirements.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a70-90/controller-replace-shutdown.html"

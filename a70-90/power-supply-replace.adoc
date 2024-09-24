@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, replace a power supply 
 summary: 電源装置を交換するには、ターゲットの電源装置の接続を解除して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。 
 ---
-= 電源装置の交換- AFF A70、AFF A90
+= 電源装置の交換- AFF A70 and AFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -78,7 +78,7 @@ NOTE: 内部コネクタの損傷を防ぐため、PSUをシステムにスラ�
 +
 PSUへの電源が復旧すると、STATUS LEDがグリーンに点灯します。
 
-. 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"^] 詳細については、を参照してください。
+. 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"^]詳細については、ページを参照してください。
 
 
 --
@@ -157,7 +157,7 @@ PSUへの電源が復旧すると、STATUS LEDがグリーンに点灯します�
 
 
 
-. 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"^] 詳細については、を参照してください。
+. 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"^]詳細については、ページを参照してください。
 
 
 --

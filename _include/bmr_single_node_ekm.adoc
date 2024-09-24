@@ -1,0 +1,123 @@
+= 
+:allow-uri-read: 
+
+
+ `boot_recovery -partner`ONTAP 9 .16.0以降を実行しているASA R2プラットフォームを搭載したを使用して、パートナーノードからONTAPイメージ（ブートメディアリカバリ）をリストアできます。
+
+ノードをブートしたときにそのノードのブートメディアが破損すると、Loaderプロンプトに次のメッセージとブートプロセス（stop）が表示されます。
+
+....
+
+Can't find primary boot device u0a.0
+Can't find backup boot device u0a.1
+ACPI RSDP Found at 0x777fe014
+
+
+Starting AUTOBOOT press Ctrl-C to abort...
+Could not load fat://boot0/X86_64/freebsd/image1/kernel:Device not found
+
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0,fat)
+
+
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0,fat)
+
+
+Autoboot of PRIMARY image failed. Device not found (-6)
+LOADER-A>
+....
+このメッセージが表示された場合は、ONTAPイメージを復元する必要があります。
+
+.手順
+. Loaderプロンプトで、_boot_recovery-partner_commandを入力します。
++
+画面にメッセージが表示さ `Starting boot media recovery (BMR) process press Ctrl-C to abort...`れ、ブートリカバリファイルの初期チェックとインストールが開始されます。
+
++
+.. 外部キーマネージャ（EKM）が設定されている場合は、次のメッセージが表示されます。
++
+....
+Error when fetching key manager config from partner 169.254.139.209: 28
+Has key manager been configured on this system? {y|n}
+....
+.. キー管理ツールを設定している場合は「_y_」と入力します。
++
+....
+key manager is configured.
+Entering Bootmenu Option 11...
+....
+
+
++
+ブートメニューオプション11は、コンフィギュレーションファイルを再構築できるように、すべてのEKM設定情報の入力をユーザに要求します。
+
+. 各プロンプトでEKM設定を入力します。
++
+*注：*この情報のほとんどは、EKMが最初に有効になったときに入力されました。初期EKM設定時に入力した情報と同じ情報を入力する必要があります。
+
+.  `Keystore UUID`とが `Cluster UUID`適合していることを確認します。
++
+.. パートナーノードで、 `cluster identity show`コマンドを使用してクラスタUUIDを取得します。
+.. パートナーノードで、 `vserver show -type admin`コマンドと `key-manager keystore show -vserver <nodename>`コマンドを使用してキーストアUUIDを取得します。
+.. プロンプトが表示されたら、キーストアUUIDとクラスタUUIDの値を入力します。
++
+*注：*パートナーノードを使用できない場合は、設定済みのキーサーバにあるMroot-AKキーからキーストアUUIDとクラスタUUIDを取得できます。
+
++
+ `x-NETAPP-ClusterName: <cluster name>`クラスタUUIDと `x-NETAPP-KeyUsage: "MROOT-AK"`キーストアUUIDの属性を確認して、正しいキーがあることを確認します。
+
+
+
+. Mroot-AKの取得とONTAPノードへのリストアを監視します。
+. プロセスでキーをリストアできない場合は、次のメッセージが表示され、メニューシステムシェルからe0Mを設定する必要があります。
++
+....
+ERROR: kmip_init: halting this system with encrypted mroot...
+WARNING: kmip_init: authentication keys might not be available.
+********************************************************
+*                 A T T E N T I O N                    *
+*                                                      *
+*       System cannot connect to key managers.         *
+*                                                      *
+********************************************************
+ERROR: kmip_init: halting this system with encrypted mroot...
+.
+Terminated
+
+Uptime: 11m32s
+System halting...
+
+LOADER-B>
+
+....
++
+..  `boot_recovery -partner`リカバリノードでコマンドを実行します。
+.. EKMのオプションを（yまたはn）実行するように求められたら、すべて_n_を選択します。
++
+8つのプロンプトで_n_optionを選択すると、システムはブートメニューで停止します。
+
+.. 別のクラスタノードから/cfcard/kmip/servers.cfgファイルの情報を収集します。次の情報を収集します。
++
+*** KMIPサーバのアドレス。
+*** KMIPポート。
+*** キーストアUUID。
+*** /cfcard/kmip/certs/client.crtファイルのクライアント証明書のコピー。
+*** /cfcard/kmip/certs/client.keyファイルのクライアントキーのコピー。
+*** KMIPサーバCAのコピー（/cfcard/kmip/certs/CA.pemファイルから）。
+
+
+.. プロンプトで_systemshell_と入力して、ブートメニューからsystemshellと入力します。
+.. e0M、ネットマスク、およびゲートウェイのシステムシェルメニューからネットワークを設定します。
+.. _exit_commandを使用して、メニューsystemshellを終了します。
+.. ブートメニューが表示されます。オプションを選択し `11`てEKMリストアを続行します。
+..  `y`次の質問に回答し、プロンプトが表示されたら、以前に収集した必要な情報を入力します。
++
+*** /cfcard/kmip/certs/client.crtファイルのコピーはありますか？｛y/n｝
+*** /cfcard/kmip/certs/client.keyファイルのコピーはありますか？｛y/n｝
+*** /cfcard/kmip/certs/CA.pemファイルのコピーはありますか？｛y/n｝
+*** /cfcard/kmip/servers.cfgファイルのコピーがありますか？｛y/n｝
+
+
+
+
+. キーが適切にリストアされると、リカバリプロセスが続行され、ノードがリブートされます。
+

@@ -1,0 +1,55 @@
+---
+indexpage:
+  title: ASA R2システムの保守
+  summary: ASA R2システムのメンテナンス方法について説明します。
+  keywords: maintain asa a1k, a70, a90
+  lead: ハードウェアのメンテナンス手順が必要になる場合があります。このセクションでは、ASA r2システムコンポーネントのメンテナンスに固有の手順について説明します。
+  tiles:
+  - title: ASA A1K
+    links:
+    - title: ブートメディア
+      url: "../asa-r2-a1k/bootmedia-overview.html"
+    - title: コントローラ
+      url: "../asa-r2-a1k/controller-replace-workflow.html"
+    - title: DIMM
+      url: "../asa-r2-a1k/dimm-replace.html"
+    - title: ファン
+      url: "../asa-r2-a1k/fan-replace.html"
+    - title: NVRAM
+      url: "../asa-r2-a1k/nvram-replace.html"
+    - title: NVバッテリ
+      url: "../asa-r2-a1k/nvdimm-battery-replace.html"
+    - title: I/O モジュール
+      url: "../asa-r2-a1k/io-module-overview.html"
+    - title: 電源装置
+      url: "../asa-r2-a1k/power-supply-replace.html"
+    - title: リアルタイムクロックバッテリ
+      url: "../asa-r2-a1k/rtc-battery-replace.html"
+    - title: システム管理モジュール
+      url: "../asa-r2-a1k/system-management-replace.html"
+  - title: ASA A70およびASA A90
+    links:
+    - title: ブートメディア
+      url: "../asa-r2-70-90/bootmedia-overview.html"
+    - title: シャーシ
+      url: "../asa-r2-70-90/chassis-replace-workflow.html"
+    - title: コントローラ
+      url: "../asa-r2-70-90/controller-replace-workflow.html"
+    - title: DIMM
+      url: "../asa-r2-70-90/dimm-replace.html"
+    - title: ドライブ
+      url: "../asa-r2-70-90/drive-replace.html"
+    - title: ファン
+      url: "../asa-r2-70-90/fan-swap-out.html"
+    - title: NVRAM
+      url: "../asa-r2-70-90/nvram-replace.html"
+    - title: NVバッテリ
+      url: "../asa-r2-70-90/nvdimm-battery-replace.html"
+    - title: I/O モジュール
+      url: "../asa-r2-70-90/io-module-overview.html"
+    - title: 電源装置
+      url: "../asa-r2-70-90/power-supply-replace.html"
+    - title: リアルタイムクロックバッテリ
+      url: "../asa-r2-70-90/rtc-battery-replace.html"
+    - title: システム管理モジュール
+      url: "../asa-r2-70-90/system-management-replace.html"

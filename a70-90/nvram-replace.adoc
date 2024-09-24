@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, replace an nvdimm 
 summary: NVRAM モジュールは、 NVRAM12 と DIMM 、 NVRAM モジュールあたり最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。 
 ---
-= NVRAMの交換- AFF A70、AFF A90
+= NVRAMの交換- AFF A70 and AFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -382,4 +382,4 @@ dr-group-id            cluster node           configuration-state
 
 == 手順 5 ：障害が発生したパーツをネットアップに返却する
 
-障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。
+障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

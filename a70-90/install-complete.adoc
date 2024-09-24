@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a70, a90, prepare installation 
 summary: スイッチとラップトップのみに接続しているクラスタ検出を使用するか、ストレージシステムのコントローラに直接接続してから管理スイッチに接続して、プラットフォームのセットアップと設定を完了します。 
 ---
-= ストレージシステムのセットアップと設定の完了- AFF A70、AFF A90
+= ストレージシステムのセットアップと設定の完了- AFF A70とAFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ハードウェアを設置したら、ONTAPソフトウェアを使用してストレージシステムを設定および管理します。
+ストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。
 
 
 
@@ -19,7 +19,7 @@ summary: スイッチとラップトップのみに接続しているクラス�
 
 クラスタ管理インターフェイスのポートやIPアドレスなど、クラスタの設定に必要な情報を収集します（まだ収集していない場合）。
 
-を使用し https://docs.netapp.com/us-en/ontap/software_setup/index.html["クラスタセットアップワークシート"] て、クラスタのセットアッププロセスで必要となる値を記録します。デフォルト値が指定されている場合は、その値を使用するか、独自の値を入力できます。
+を使用し https://docs.netapp.com/us-en/ontap/software_setup/index.html["クラスタセットアップワークシート"^] て、クラスタのセットアッププロセスで必要となる値を記録します。デフォルト値が指定されている場合は、その値を使用するか、独自の値を入力できます。
 
 
 
@@ -47,10 +47,10 @@ image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[Windowsエク�
 
 NOTE: XXXXXは、ターゲットノードのプラットフォームシリアル番号です。
 
+
+
 +
 System Manager が開きます。
-
-
 
 
 
@@ -60,7 +60,7 @@ System Manager が開きます。
 ラップトップでネットワーク検出が有効になっていない場合は、ONTAPコマンドラインインターフェイス（CLI）のクラスタセットアップウィザードを使用して設定とセットアップを完了します。
 
 .作業を開始する前に
-ラップトップがシリアルコンソールポートに接続され、コントローラの電源がオンになっていることを確認します。手順については'を参照して link:install-power-hardware.html#step-2-power-on-the-controllers["コントローラの電源をオンにします"] ください
+ラップトップがシリアルコンソールポートに接続され、コントローラの電源がオンになっていることを確認します。手順については'を参照して link:install-power-hardware.html#step-2-power-on-the-controllers["ストレージ・システムの電源をオンにする"] ください
 
 .手順
 いずれかのノードに初期ノード管理 IP アドレスを割り当てます。
@@ -99,9 +99,9 @@ NOTE: PuTTY の設定方法がわからない場合は、ラップトップま�
 
 == 手順3：クラスタを構成する
 
-NetAppでは、System Managerを使用して新しいクラスタをセットアップすることを推奨しています。セットアップ手順については、を参照してください https://docs.netapp.com/us-en/ontap/task_configure_ontap.html["System Managerを使用して新しいクラスタにONTAPを設定します"] 。
+NetAppでは、System Managerを使用して新しいクラスタをセットアップすることを推奨しています。セットアップ手順については、を参照してください https://docs.netapp.com/us-en/ontap/task_configure_ontap.html["System Managerを使用して新しいクラスタにONTAPを設定します"^] 。
 
 System Managerでは、ノード管理IPアドレスの割り当て、クラスタの初期化、ローカル階層の作成、プロトコルの設定、接続されたストレージの初期プロビジョニングなど、クラスタのセットアップと設定のワークフローをシンプルかつ簡単に実行できます。
 
-
-NOTE: クラスタが初期化されたら、をダウンロードしてを実行し、  https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"] セットアップを確認します。
+.次の手順
+クラスタが初期化されたら、をダウンロードしてを実行し、  https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^] セットアップを確認します。

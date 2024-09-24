@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, a90, replace the controller workflow 
 summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
 ---
-= コントローラの交換ワークフロー- AFF A70、AFF A90
+= コントローラの交換ワークフロー- AFF A70とAFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,25 +13,26 @@ summary: 障害が発生したコンポーネントは、プロバイダから�
 [role="lead"]
 コントローラモジュールを交換するには、次のワークフロー手順に従ってください。
 
-.作業を開始する前に
-コントローラモジュールを交換するには、一定の要件を満たす必要があります。を確認します link:controller-replace-requirements.html["コントローラの交換に関する要件と考慮事項"]。
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:controller-replace-requirements.html["コントローラの交換要件を確認"]
+[role="quick-margin-para"]
+コントローラモジュールを交換するには、一定の要件を満たす必要があります。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:controller-replace-shutdown.html["障害のあるコントローラをシャットダウンします"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:controller-replace-shutdown.html["障害のあるコントローラをシャットダウンします"]
 [role="quick-margin-para"]
 障害のあるコントローラをシャットダウンまたはテイクオーバーして、正常なコントローラが障害のあるコントローラストレージから引き続きデータを提供できるようにします。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:controller-replace-move-hardware.html["コントローラを交換"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:controller-replace-move-hardware.html["コントローラを交換"]
 [role="quick-margin-para"]
 コントローラを交換するには、障害のあるコントローラを取り外し、FRUコンポーネントを交換用コントローラモジュールに移動してから、交換用コントローラモジュールをエンクロージャに取り付けます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:controller-replace-system-config-restore-and-verify.html["システム構成をリストアおよび検証します"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:controller-replace-system-config-restore-and-verify.html["システム構成をリストアおよび検証します"]
 [role="quick-margin-para"]
 交換用コントローラの下位システム構成を確認し、必要に応じてシステム設定を再設定します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:controller-replace-recable-reassign-disks.html["コントローラを再ケーブル接続してギブバックする"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:controller-replace-recable-reassign-disks.html["コントローラを再ケーブル接続してギブバックする"]
 [role="quick-margin-para"]
 コントローラにケーブルを再接続し、ストレージリソースの所有権を交換用コントローラに戻します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:controller-replace-restore-system-rma.html["コントローラ交換後の処理"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"]link:controller-replace-restore-system-rma.html["コントローラ交換後の処理"]
 [role="quick-margin-para"]
 LIFを確認し、クラスタの健全性を確認して、障害が発生したパーツをNetAppに戻します。

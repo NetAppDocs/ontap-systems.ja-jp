@@ -1,0 +1,86 @@
+---
+section: fas-70-90
+title: FAS70 および FAS90 システム
+entries:
+- title: 設置とセットアップ
+  pdf-filename: FAS70およびFAS90の設置とセットアップ
+  entries:
+  - title: インストールワークフロー
+    url: "/fas-70-90/install-overview.html"
+  - title: 要件を確認する
+    url: "/fas-70-90/install-requirements.html"
+  - title: インストールの準備
+    url: "/fas-70-90/install-prepare.html"
+  - title: ハードウェアを設置
+    url: "/fas-70-90/install-hardware.html"
+  - title: ハードウェアのケーブル接続
+    url: "/fas-70-90/install-cable.html"
+  - title: システムの電源を入れる
+    url: "/fas-70-90/install-power-hardware.html"
+  - title: システムのセットアップを完了します
+    url: "/fas-70-90/install-complete.html"
+- title: メンテナンス
+  pdf-filename: FAS70とFAS90のメンテナンス
+  entries:
+  - title: メンテナンスの概要
+    url: "/fas-70-90/maintain-overview.html"
+  - title: ブートメディア
+    pdf-filename: FAS70とFAS90のブートメディア
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/fas-70-90/bootmedia-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/fas-70-90/bootmedia-replace-requirements.html"
+    - title: オンボード暗号化キーを確認
+      url: "/fas-70-90/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/fas-70-90/bootmedia-shutdown.html"
+    - title: ブートメディアを交換します
+      url: "/fas-70-90/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/fas-70-90/bootmedia-recovery-image-boot.html"
+    - title: アンコウカノ
+      url: "/fas-70-90/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/fas-70-90/bootmedia-complete-rma.html"
+  - title: コントローラ
+    pdf-filename: FAS70およびFAS90コントローラモジュール
+    entries:
+    - title: コントローラの交換ワークフロー
+      url: "/fas-70-90/controller-replace-workflow.html"
+    - title: 要件および考慮事項
+      url: "/fas-70-90/controller-replace-requirements.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/fas-70-90/controller-replace-shutdown.html"
+    - title: コントローラを交換してください
+      url: "/fas-70-90/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/fas-70-90/controller-replace-system-config-restore-and-verify.html"
+    - title: コントローラをギブバック
+      url: "/fas-70-90/controller-replace-recable-reassign-disks.html"
+    - title: コントローラ交換後の処理
+      url: "/fas-70-90/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/fas-70-90/dimm-replace.html"
+  - title: ファン
+    url: "/fas-70-90/fan-replace.html"
+  - title: FlashCacheモジュール
+    url: "/fas-70-90/caching-module-hot-swap.html"
+  - title: NVRAM
+    url: "/fas-70-90/nvram-replace.html"
+  - title: NVバッテリ
+    url: "/fas-70-90/nvdimm-battery-replace.html"
+  - title: I/O モジュール
+    entries:
+    - title: I/Oモジュールの概要
+      url: "/fas-70-90/io-module-overview.html"
+    - title: I/O モジュールを追加します
+      url: "/fas-70-90/io-module-add.html"
+    - title: I/Oモジュールの交換
+      url: "/fas-70-90/io-module-replace.html"
+  - title: 電源装置
+    url: "/fas-70-90/power-supply-replace.html"
+  - title: リアルタイムクロックバッテリ
+    url: "/fas-70-90/rtc-battery-replace.html"
+  - title: システム管理モジュール
+    url: "/fas-70-90/system-management-replace.html"

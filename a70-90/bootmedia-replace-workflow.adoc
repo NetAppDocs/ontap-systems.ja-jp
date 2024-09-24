@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, a90, replace the boot media 
 summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
 ---
-= ブートメディアの交換ワークフロー- AFF A70、AFF A90
+= ブートメディアの交換ワークフロー- AFF A70とAFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,29 +13,30 @@ summary: 障害が発生したコンポーネントは、プロバイダから�
 [role="lead"]
 ブートメディアを交換するには、次のワークフロー手順を実行します。
 
-.作業を開始する前に
-ブートメディアを交換するには、が特定の要件を満たしている必要があります。を確認します link:bootmedia-replace-requirements.html["ブートメディアの要件と考慮事項"]。
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:bootmedia-replace-requirements.html["ブートメディア要件を確認"]
+[role="quick-margin-para"]
+ブートメディアを交換するには、一定の要件を満たす必要があります。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:bootmedia-encryption-preshutdown-checks.html["オンボード暗号化キーを確認"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:bootmedia-encryption-preshutdown-checks.html["オンボード暗号化キーを確認"]
 [role="quick-margin-para"]
 システムでセキュリティキー管理機能が有効になっているか暗号化されたディスクがあるかを確認します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:bootmedia-shutdown.html["障害のあるコントローラをシャットダウンします"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:bootmedia-shutdown.html["障害のあるコントローラをシャットダウンします"]
 [role="quick-margin-para"]
 障害のあるコントローラをシャットダウンまたはテイクオーバーして、正常なコントローラが障害のあるコントローラストレージから引き続きデータを提供できるようにします。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:bootmedia-replace.html["ブートメディアの交換"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:bootmedia-replace.html["ブートメディアの交換"]
 [role="quick-margin-para"]
 障害が発生したブートメディアをシステム管理モジュールから取り外し、交換用ブートメディアを取り付けてから、USBフラッシュドライブを使用してONTAPイメージを交換用ブートメディアに転送します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:bootmedia-recovery-image-boot.html["リカバリイメージをブートします"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:bootmedia-recovery-image-boot.html["リカバリイメージをブートします"]
 [role="quick-margin-para"]
 USBドライブからONTAPイメージをブートし、ファイルシステムをリストアして、環境変数を確認します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:bootmedia-encryption-restore.html["アンコウカノ"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"]link:bootmedia-encryption-restore.html["アンコウカノ"]
 [role="quick-margin-para"]
 ONATPブートメニューからオンボードキーマネージャの設定または外部キーマネージャをリストアします。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"]link:bootmedia-complete-rma.html["障害のあるパーツをネットアップに返却します"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["7"]link:bootmedia-complete-rma.html["障害のあるパーツをネットアップに返却します"]
 [role="quick-margin-para"]
 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。

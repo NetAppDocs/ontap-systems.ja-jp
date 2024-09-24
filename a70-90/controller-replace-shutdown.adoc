@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, shut down the impaired controller 
 summary: 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。 
 ---
-= 障害のあるコントローラのシャットダウン- AFF A70、AFF A90
+= 障害のあるコントローラをシャットダウンします- AFF A70 and AFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

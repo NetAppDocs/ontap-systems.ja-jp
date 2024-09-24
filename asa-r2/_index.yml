@@ -1,0 +1,43 @@
+---
+indexpage:
+  title: ASA r2システム
+  summary: ASA R2ストレージシステムのマニュアルには、ASA R2システムのインストール、セットアップ、および保守が記載されています。
+  keywords: asa r2, asa a1k, asa a70, asa a90, install, setup, maintain
+  lead: 新しいNetApp ASA R2システム（ASA A1K、ASA A70、およびASA A90）は、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルな操作性を実現します。
+  tiles:
+  - title: はじめに
+    links:
+    - title: ASA R2ストレージシステムの詳細
+      url: https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html
+    - title: ASA データシート
+      url: https://www.netapp.com/data-storage/all-flash-san-storage-array/
+  - title: ASA R2システムのインストールとメンテナンス
+    links:
+    - title: ASA R2システムのインストール
+      url: https://docs.netapp.com/us-en/asa-r2/install-setup/install-setup-workflow.html
+    - title: ASA R2システムの保守
+      url: "../asa-r2-landing-maintain/index.html"
+  - title: ASA R2システム上のデータの管理
+    links:
+    - title: SANストレージのプロビジョニング
+      url: https://docs.netapp.com/us-en/asa-r2/manage-data/provision-san-storage.html
+    - title: クローンデータ
+      url: https://docs.netapp.com/us-en/asa-r2/manage-data/data-cloning.html
+    - title: ストレージユニットの変更
+      url: https://docs.netapp.com/us-en/asa-r2/manage-data/modify-storage-units.html
+  - title: ASA R2システム上のデータの保護とセキュリティ
+    links:
+    - title: スナップショットの作成
+      url: https://docs.netapp.com/us-en/asa-r2/data-protection/create-snapshots.html
+    - title: Snapshotレプリケーションのセットアップ
+      url: https://docs.netapp.com/us-en/asa-r2/data-protection/snapshot-replication.html
+    - title: 保存データを暗号化
+      url: https://docs.netapp.com/us-en/asa-r2/secure-data/encrypt-data-at-rest.html
+  - title: ASA R2に関するその他のリソース
+    links:
+    - title: ONTAPコマンド リファレンス
+      url: https://docs.netapp.com/us-en/ontap-cli/
+    - title: ONTAP REST APIリファレンス
+      url: https://docs.netapp.com/us-en/ontap-restapi/index.html
+    - title: ONTAP EMSリファレンス
+      url: https://docs.netapp.com/us-en/ontap-ems/index.html

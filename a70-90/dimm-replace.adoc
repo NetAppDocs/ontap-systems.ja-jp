@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, replace a dimm 
 summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
 ---
-= DIMMの交換- AFF A70、AFF A90
+= DIMMの交換- AFF A70 and AFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -315,4 +315,4 @@ NOTE: DC電源装置がある場合は、コントローラモジュールをシ
 
 == 手順 5 ：障害が発生したパーツをネットアップに返却する
 
-障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。
+障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

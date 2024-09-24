@@ -1,0 +1,25 @@
+---
+permalink: asa-r2-a1k/bootmedia-replace-requirements.html 
+sidebar: sidebar 
+keywords: asa r2 a1k, replace the boot media 
+summary: ブートメディアの交換要件について説明します。 
+---
+= ブートメディアの交換要件- ASA A1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ブートメディアを交換する前に、次の要件を確認してください。
+
+* 「 image_xxx.tgz 」を格納できる適切な容量のストレージを搭載した、 FAT32 にフォーマットされた USB フラッシュドライブが必要です。
+* この手順であとで使用できるように、ファイルをUSBフラッシュドライブにコピーする必要があります `image_xxx.tgz` 。
+* 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。
+* これらの手順のコマンドを正しいコントローラに適用することが重要です。
++
+** impaired_controller は、メンテナンスを実行しているコントローラです。
+** healthy_controller は、障害のあるコントローラの HA パートナーです。
+
+
+

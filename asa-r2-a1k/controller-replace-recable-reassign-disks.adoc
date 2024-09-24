@@ -1,0 +1,47 @@
+---
+permalink: asa-r2-a1k/controller-replace-recable-reassign-disks.html 
+sidebar: sidebar 
+keywords: asa r2 a1k, how to recable the system, how to reassign disks 
+summary: システムをリブートします。 
+---
+= コントローラのギブバック- ASA A1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージリソースの所有権を交換用コントローラに戻します。
+
+.手順
+. ストレージシステムで暗号化が設定されている場合は、次の手順に従ってストレージまたはボリュームの暗号化機能をリストアし、システムをリブートする必要があります。
++
+.. メニューから起動し、オプション10を実行します。
+.. パスフレーズを入力してデータをバックアップし、標準ブートを実行します。を参照してください。 https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Restore_onboard_key_management_encryption_keys["オンボードキー管理の暗号化キーをリストア"]
+.. CFOのみのギブバックの実行
+.. オンボード同期を実行し、SVM-KEKがtrueに設定されていることを確認します。を参照してください。 https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Onboard_keymanager_sync_fails_after_motherboard_replacement["MBの交換に失敗したあとのギブバック-キーマネージャで処理が拒否された"]
+.. SFOのギブバック（強制なし）
+
+
+. システムで暗号化が設定されていない場合は、次の手順を実行してシステムをリブートします。
++
+.. メニューから起動し、オプション1を実行します。
+.. コントローラをギブバックします。
+.. 正常なコントローラから、交換したコントローラのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name _`
++
+_replacement _controller はストレージをテイクバックしてブートを完了します。
+
++
+
+NOTE: ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。
+
++
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対するハイアベイラビリティ構成のコンテンツを検索してください"]
+
+.. ギブバックが完了したら、 HA ペアが正常で、テイクオーバーが可能であることを確認します。「 storage failover show
+
+
+. 各コントローラに、想定されるボリュームが存在することを確認します。 vol show -node node-name
+. リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラで storage failover modify -node replacement-node-name -onreboot true を有効にします
+. AutoSupportが有効になっている場合は、コマンドを使用してケースの自動作成をリストアまたは抑制解除し `system node autosupport invoke -node * -type all -message MAINT=END` ます。
+

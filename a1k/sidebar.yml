@@ -7,7 +7,9 @@ entries:
   entries:
   - title: インストールワークフロー
     url: "/a1k/install-overview.html"
-  - title: 設置を準備
+  - title: 要件を確認する
+    url: "/a1k/install-requirements.html"
+  - title: インストールの準備
     url: "/a1k/install-prepare.html"
   - title: ハードウェアを設置
     url: "/a1k/install-hardware.html"
@@ -27,7 +29,7 @@ entries:
     entries:
     - title: ブートメディアの交換ワークフロー
       url: "/a1k/bootmedia-replace-workflow.html"
-    - title: 要件および考慮事項
+    - title: 要件を確認する
       url: "/a1k/bootmedia-replace-requirements.html"
     - title: オンボード暗号化キーを確認
       url: "/a1k/bootmedia-encryption-preshutdown-checks.html"
@@ -46,7 +48,7 @@ entries:
     entries:
     - title: コントローラの交換ワークフロー
       url: "/a1k/controller-replace-workflow.html"
-    - title: 要件および考慮事項
+    - title: 要件を確認する
       url: "/a1k/controller-replace-requirements.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a1k/controller-replace-shutdown.html"

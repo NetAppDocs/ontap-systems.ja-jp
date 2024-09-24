@@ -4,13 +4,19 @@ sidebar: sidebar
 keywords: aff a70, aff a90, post boot media replacement steps for okm, nse, and nve 
 summary: 環境変数を確認したら、オンボードキーマネージャ \ （ OKM \ ）、 NetApp Storage Encryption \ （ NSE\ ）、または NetApp Volume Encryption \ （ NVE \ ）が有効になっているシステムに固有の手順を実行する必要があります。 
 ---
-= 暗号化のリストア- AFF A70、AFF A90
+= リストア暗号化- AFF A70およびAFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+交換用ブートメディアで暗号化をリストアします。
+
+
+
+== 手順1：オンボードキーマネージャをリストアする
+
 この手順で最初に取得した設定を使用して、オンボードキーマネージャ（OKM）、NetAppストレージ暗号化（NSE）、またはNetAppボリューム暗号化（NVE）が有効になっているシステムに固有の手順を実行する必要があります。
 
 
@@ -18,6 +24,7 @@ NOTE: オンボードまたは外部のキーマネージャと一緒にNSEま�
 
 .手順
 . コンソールケーブルをターゲットコントローラに接続します。
+. 次のいずれかのオプションを選択して、ONATPブートメニューからオンボードキーマネージャの設定をリストアします。
 
 
 [role="tabbed-block"]
@@ -53,7 +60,7 @@ Please choose one of the following:
 (9)  Configure Advanced Drive Partitioning.
 (10) Set Onboard Key Manager recovery secrets.
 (11) Configure node for external key management.
-Selection (1-11)? _10_
+Selection (1-11)? 10
 
 ----
 . プロセスの継続を確認してください。
@@ -330,7 +337,7 @@ Selection (1-11)? 1
 ====
 
 
-== ブートメディアの交換後の処理
+== 手順2：ブートメディアの交換が完了します。
 
 通常のブート後に最終チェックを実行してストレージをギブバックし、ブートメディアの交換プロセスを完了します。
 

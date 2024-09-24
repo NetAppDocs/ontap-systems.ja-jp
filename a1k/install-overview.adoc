@@ -2,33 +2,37 @@
 permalink: a1k/install-overview.html 
 sidebar: sidebar 
 keywords: Installation, deployment, Install, deploy, Installing, deploying, a1k 
-summary: AFF A1Kストレージシステムをインストールしてセットアップし、ONTAPシステムにノードとして導入するには、次の手順を実行します。 
+summary: AFF A1Kストレージシステムを設置してセットアップし、ONTAPシステムにHAペアとして導入するには、次の手順を実行します。 
 ---
-= インストールセットアップワークフロー- AFF A1K
+= インストールと設定のワークフロー- AFF A1K
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-AFF A1Kストレージシステムのインストール、セットアップ、および導入のワークフロー手順は、次のとおりです。
+AFF A1Kシステムを設置して設定するには、ハードウェア要件を確認し、サイトを準備し、ハードウェアコンポーネントを設置してケーブル接続し、システムの電源をオンにして、ONTAPクラスタをセットアップします。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:install-prepare.html["インストールの準備"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:install-requirements.html["インストール要件を確認します"]
 [role="quick-margin-para"]
-設置の準備をするには、設置場所を準備し、環境要件と電力要件を確認して、十分なラックスペースがあることを確認する必要があります。その後、機器を開梱して内容を納品書と比較し、ハードウェアを登録してサポートを利用できます。
+ストレージシステムとストレージシェルフの設置に必要な機器と工具を確認し、持ち上げと安全に関する注意事項を確認します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:install-hardware.html["ハードウェアを設置"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:install-prepare.html["AFF A1Kストレージシステムをインストールする準備"]
 [role="quick-margin-para"]
-ハードウェアを設置するには、使用するプラットフォームとシェルフに対応したレールキットを設置し、キャビネットまたはTelcoラックにプラットフォームを設置して固定します。次に、シェルフをレールにスライドさせます。最後に、ケーブル管理デバイスをプラットフォームの背面に取り付けて、ケーブル配線を整理します。
+システムの設置を準備するには、設置場所を準備し、環境要件と電力要件を確認し、十分なラックスペースがあることを確認する必要があります。その後、機器を開梱して内容を納品書と比較し、ハードウェアを登録してサポートを利用できます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:install-cable.html["ハードウェアのケーブル接続"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:install-hardware.html["AFF A1Kストレージシステムのハードウェアを設置"]
 [role="quick-margin-para"]
-ハードウェアをケーブル接続するには、まずコントローラをネットワークにケーブル接続してから、コントローラをシェルフにケーブル接続します。
+ハードウェアを設置するには、ストレージシステムとシェルフ用のレールキットを設置し、ストレージシステムをキャビネットまたはTelcoラックに設置して固定します。次に、シェルフをレールにスライドさせます。最後に、ケーブル配線を整理するために、ケーブルマネジメントデバイスをストレージシステムの背面に取り付けます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:install-power-hardware.html["ストレージシステムの電源をオンにする"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:install-cable.html["AFF A1Kストレージシステムのコントローラとストレージシェルフをケーブル接続"]
 [role="quick-margin-para"]
-システムの電源をオンにするには、まず各NS224シェルフの電源をオンにし、セットアップ内でシェルフが区別されるように一意のシェルフIDを割り当てます。次に、コントローラの電源をオンにします。最後に、付属の固定装置を使用して、各電源装置の電源ケーブルを固定します。
+ハードウェアをケーブル接続するには、まずストレージコントローラをネットワークに接続し、次にコントローラをストレージシェルフに接続します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:install-complete.html["ストレージシステムのセットアップの完了"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:install-power-hardware.html["AFF A1Kストレージ・システムの電源をオンにする"]
 [role="quick-margin-para"]
-システムのセットアップを完了するには、ブラウザでコントローラのIPアドレスを指定してWebベースのインターフェイスSystem Managerにアクセスします。セットアップウィザードを使用すると、クラスタの設定を開始できます。コマンドラインインターフェイス（ CLI ）を使用することもできます。
+セットアップ時に各シェルフが一意に識別されるように、コントローラの電源をオンにする前に、各NS224シェルフの電源をオンにして一意のシェルフIDを割り当てます。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"]link:install-complete.html["ストレージシステムのセットアップの完了"]
+[role="quick-margin-para"]
+システムのセットアップを完了するには、ブラウザでコントローラのIPアドレスを指定してONTAPシステムマネージャにアクセスします。セットアップウィザードを使用して、AFF A1Kストレージシステムのクラスタを設定できます。

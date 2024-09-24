@@ -21,23 +21,14 @@
 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
 
 .このタスクについて
-* SANシステムを使用している場合は、障害コントローラのSCSIブレードのイベントメッセージを確認しておく必要があり  `cluster kernel-service show`ます）。コマンド（priv advancedモードから）を実行すると、 `cluster kernel-service show` ノード名、そのノードのクォーラムステータス、そのノードの可用性ステータス、およびそのノードの動作ステータスが表示されます。
-+
-各 SCSI ブレードプロセスは、クラスタ内の他のノードとクォーラムを構成している必要があります。交換を進める前に、すべての問題を解決しておく必要があります。
-
-* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性についてfalseと表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["ノードをクラスタと同期します"^]。
-
+ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性についてfalseと表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["ノードをクラスタと同期します"^]。
 
 .手順
-. AutoSupportが有効になっている場合は、AutoSupportメッセージを呼び出してケースの自動作成を停止します。 `system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
+. AutoSupportが有効になっている場合は、AutoSupport messageコマンドを呼び出してケースの自動作成を抑制します。 `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
 +
-次のAutoSupport メッセージは、ケースの自動作成を2時間停止します。 `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+次のAutoSupportコマンドは、ケースの自動作成を2時間停止します。 `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
 
 . 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
-+
-
-NOTE: 自動ギブバックを無効にしますか?_と表示されたら'y'を入力します
-
 . 障害のあるコントローラに LOADER プロンプトを表示します。
 +
 [cols="1,2"]
@@ -53,16 +44,16 @@ LOADER プロンプト
 
 
  a| 
-ギブバックを待っています
+ギブバックを待機しています
  a| 
 Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します
 
 
 
  a| 
-システムプロンプトまたはパスワードプロンプト
+システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
  a| 
-正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _
+障害のあるコントローラを正常なコントローラから停止またはテイクオーバーします。 `storage failover takeover -ofnode _impaired_node_name_`
 
 障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
 
@@ -72,6 +63,9 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 --
 .オプション 2 ：コントローラが MetroCluster に搭載されている
 --
+
+NOTE: 2 ノード MetroCluster 構成のシステムでは、この手順を使用しないでください。
+
 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
 
 * ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性についてfalseと表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["ノードをクラスタと同期します"^]。
@@ -79,9 +73,9 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 
 
 .手順
-. AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
+. AutoSupportが有効になっている場合は、AutoSupportコマンドを呼び出してケースの自動作成を抑制します。 `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
 +
-次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
+次のAutoSupportコマンドは、ケースの自動作成を2時間停止します。 `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
 
 . 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
 . 障害のあるコントローラに LOADER プロンプトを表示します。
@@ -108,7 +102,7 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
  a| 
 システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
  a| 
-正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _
+障害のあるコントローラを正常なコントローラから停止またはテイクオーバーします。 `storage failover takeover -ofnode _impaired_node_name_`
 
 障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
 
@@ -150,10 +144,7 @@ image:../media/legend_icon_01.svg["番号1、幅= 30px"]
 |===
 +
 .. カムラッチボタンを押します。
-+
-カムラッチがコントローラモジュールから離れます。
-
-.. カムラッチをできるだけ下に回転させます。水平モジュールの場合は、カムをモジュールからできるだけ離します。
+.. カムラッチDOをモジュールからできるだけ離します。
 .. カムレバーの開口部に指をかけ、モジュールをコントローラモジュールから引き出して、モジュールをコントローラモジュールから取り外します。
 +
 I/O モジュールが取り付けられていたスロットを記録しておいてください。
@@ -205,4 +196,4 @@ NOTE: 変換が完了したら必ずメンテナンスモードを終了して�
 
 == 手順 4 ：障害が発生したパーツをネットアップに返却する
 
-障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。
+障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

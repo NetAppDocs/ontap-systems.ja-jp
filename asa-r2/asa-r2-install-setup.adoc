@@ -1,0 +1,24 @@
+---
+permalink: asa-r2/asa-r2-install-setup.html 
+sidebar: sidebar 
+keywords: asa r2 a1k, a70, a90, install, setup, initial configuration 
+summary: システムを設置してセットアップします。 
+---
+= ASA R2システムのインストールとセットアップ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ https://docs.netapp.com/us-en/asa-r2/index.html["ASA R2システムのマニュアル"^]ASA R2システムのインストール、使用、および管理の方法については、を参照してください。
+
+には https://docs.netapp.com/us-en/asa-r2/index.html["ASA R2システムのマニュアル"^]、次のような情報が含まれます。
+
+* 設置とセットアップの手順
+* SANストレージのプロビジョニング、データのクローニング、ローカルストレージのサイズ変更など、システムを構成するための管理手順。
+* クライアントアクセスの管理、データの保護、データの保護など、システムを管理する手順。
+* 監視とトラブルシューティングの手順（アラート、クラスタイベント、システムログに関する情報など）
+
+
+ASA R2システムのタイプごとに固有のメンテナンス手順については、を参照してlink:../asa-r2-landing-maintain/index.html["ASA R2システムメンテナンスセクション"]ください。

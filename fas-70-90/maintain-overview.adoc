@@ -1,0 +1,103 @@
+---
+permalink: fas-70-90/maintain-overview.html 
+sidebar: sidebar 
+keywords: fas70, fas90 maintenance, maintenance, repairing a1k, repairing fas70, fas90, replace fas70, fas90 components, replace fas70, fas90 components 
+summary: FAS70 / FAS90ハードウェアのメンテナンス 
+---
+= FAS70およびFAS90ハードウェアのメンテナンスガイド
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ハードウェアのメンテナンス手順が必要になる場合があります。ここでは、FAS70およびFAS90システム・コンポーネントのメンテナンスに固有の手順について説明します。
+
+このセクションの手順は、FAS70およびFAS90システムがONTAP環境のストレージノードとしてすでに導入されていることを前提としています。
+
+
+
+== システムコンホオネント
+
+FAS70およびFAS90ストレージ・システムでは、次のコンポーネントのメンテナンス手順を実行できます。
+
+[cols="25,65"]
+|===
+
+
+ a| 
+link:bootmedia-replace-workflow.html["ブートメディア"]
+ a| 
+ブートメディアには、システムがブート時に使用するONTAPイメージファイルのプライマリセットとセカンダリセットが格納されています。
+
+
+
+ a| 
+link:controller-replace-workflow.html["コントローラ"]
+ a| 
+コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、ONTAPオペレーティングシステムソフトウェアを実行します。
+
+
+
+ a| 
+link:dimm-replace.html["DIMM"]
+ a| 
+デュアルインラインメモリモジュール（DIMM）は、コンピュータメモリの一種です。コントローラのマザーボードにシステムメモリを追加するために取り付けられます。
+
+
+
+ a| 
+link:fan-replace.html["ファン"]
+ a| 
+ファンがコントローラを冷却します。
+
+
+
+ a| 
+link:caching-module-hot-swap.html["FlashCache"]
+ a| 
+Flash Cache は、最近読み取られたユーザデータとネットアップのメタデータをリアルタイムでインテリジェントにキャッシングすることで、データへのアクセスを高速化します。データベース、 E メール、ファイルサービスなど、ランダムリードが大量に発生するワークロードに効果的です。
+
+
+
+ a| 
+link:nvram-replace.html["NVRAM"]
+ a| 
+NVRAM（Non-Volatile Random Access Memory）は、システムの電源が切れた場合にコントローラが転送中のデータを保護および保存できるようにするモジュールです。システムIDはNVRAMモジュールにあります。交換したコントローラは、交換用NVRAMモジュールの新しいシステムIDを引き継ぎます。
+
+
+
+ a| 
+link:nvdimm-battery-replace.html["NVハツテリ"]
+ a| 
+NVバッテリは、電力損失後に転送中のデータをフラッシュメモリにデステージしている間、NVRAMモジュールに電力を供給します。
+
+
+
+ a| 
+link:io-module-overview.html["I/O モジュール"]
+ a| 
+I/Oモジュール（入出力モジュール）は、コントローラと、コントローラとデータを交換する必要があるさまざまなデバイスやシステムとの間の仲介役として機能するハードウェアコンポーネントです。
+
+
+
+ a| 
+link:power-supply-replace.html["電源装置"]
+ a| 
+電源装置は、コントローラに冗長な電源を提供します。
+
+
+
+ a| 
+link:rtc-battery-replace.html["リアルタイムクロックバッテリ"]
+ a| 
+リアルタイムクロックバッテリは、電源がオフの場合にシステムの日付と時刻の情報を保持します。
+
+
+
+ a| 
+link:system-management-replace.html["システム管理モジュール"]
+ a| 
+システム管理モジュールは、コントローラまたはシステムのメンテナンスを目的として、コントローラとコンソールまたはラップトップ間のインターフェイスを提供します。システム管理モジュールにはブートメディアが格納され、システムシリアル番号（SSN）が格納されています。
+
+|===

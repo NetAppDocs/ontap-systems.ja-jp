@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: AFF A70, AFF A90, replace the system management module 
 summary: 交換する必要があります。 
 ---
-= システム管理モジュールの交換- AFF A70、AFF A90
+= システム管理モジュールの交換- AFF A70およびAFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -310,4 +310,4 @@ NOTE: 必要な新しいライセンスキーが自動的に生成され、 E �
 
 == 手順 5 ：障害が発生したパーツをネットアップに返却する
 
-障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、を参照してください。
+障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

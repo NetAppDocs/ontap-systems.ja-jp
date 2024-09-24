@@ -1,0 +1,70 @@
+---
+permalink: fas-70-90/controller-replace-system-config-restore-and-verify.html 
+sidebar: sidebar 
+keywords: fas70, fas90, restore and verify the system configuration, verify and set the ha state of the controller module 
+summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
+---
+= システム構成をリストアして検証します。 FAS70 と FAS90
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ハードウェアの交換が完了したら、交換用コントローラの下位システム構成を確認し、必要に応じてシステム設定を再設定します。
+
+
+
+== 手順1：システム時間の設定と確認
+
+交換用コントローラモジュールの日付と時刻は、 HA ペアの正常なコントローラモジュール、またはスタンドアロン構成の信頼できるタイムサーバに照らして確認する必要があります。日付と時刻が一致しない場合は、時刻の違いによるクライアントの停止を防ぐために、交換用コントローラモジュールで日付と時刻をリセットする必要があります。
+
+.このタスクについて
+これらの手順のコマンドを正しいシステムに適用することが重要です。
+
+* replacement _node は、この手順で障害ノードと交換した新しいノードです。
+* healthy_node は、 _replacement _node の HA パートナーです。
+
+
+.手順
+. _replacement _node に LOADER プロンプトが表示されない場合は、システムを停止して LOADER プロンプトを表示します。
+. _healthy_nodeで、システム時間を確認します。 `cluster date show`
++
+日時は設定されたタイムゾーンに基づいています。
+
+. LOADER プロンプトで、 _replacement node の日付と時刻を確認します。 'how date]
++
+日付と時刻は GMT で表示されます。
+
+. 必要に応じて、交換用ノードの日付を GMT で設定します。 'et date_mm/dd/yyyy_`
+. 必要に応じて、交換用ノードの時刻を GMT で設定します。「 set time _hh ： mm ： ss_` 」
+. LOADERプロンプトで、_replacement_nodeの日時を確認します。 `show date`
++
+日付と時刻は GMT で表示されます。
+
+
+
+
+
+== 手順 2 ：シャーシの HA 状態を確認して設定します
+
+コントローラモジュールの「 HA 」状態を確認し、必要に応じてシステム構成に合わせて状態を更新する必要があります。
+
+. 交換用コントローラモジュールでメンテナンスモードでブートし、すべてのコンポーネントが同じ状態になっていることを確認し `HA` ます。 `ha-config show`
++
+HA 状態はすべてのコンポーネントで同じになっているはずです。
+
+. 表示されたコントローラモジュールのシステム状態がシステム構成と一致しない場合は、コントローラモジュールの HA 状態を「 ha-config modify controller_A_2 state_」 に設定します
++
+hA-state には、次のいずれかの値を指定できます。
+
++
+** 「 HA 」
+** `mcc` （サポートされていません）
+** `mccip`（ASAシステムではサポートされません）
+** `non-ha` （サポートされていません）
+
+
+. 表示されたコントローラモジュールのシステム状態がシステム構成と一致しない場合は、コントローラモジュールの HA 状態を「 ha-config modify controller_A_2 state_」 に設定します
+. 設定が変更されたことを確認します。「 ha-config show 」
+

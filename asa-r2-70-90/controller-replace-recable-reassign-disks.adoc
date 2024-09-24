@@ -1,0 +1,69 @@
+---
+permalink: asa-r2-70-90/controller-replace-recable-reassign-disks.html 
+sidebar: sidebar 
+keywords: asa r2 a70, asa r2 a90, how to recable the system, teboot the system 
+summary: ストレージにケーブルを再接続してコントローラをリブートする必要があります。 
+---
+= コントローラのケーブル接続とギブバック- ASA A70およびASA A90
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージとネットワーク接続をケーブル接続し直し、コントローラをギブバックします。
+
+
+
+== 手順1：コントローラをケーブル接続し直す
+
+コントローラモジュールのストレージとネットワークをケーブル接続し直します。
+
+.手順
+. コントローラモジュールをストレージ接続とネットワーク接続にケーブルを再接続します。
+. を使用して、ケーブル接続が正しいことを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]。
++
+.. Config Advisor をダウンロードしてインストールします。
+.. ターゲットシステムの情報を入力し、データ収集をクリックします。
+.. Cabling タブをクリックし ' 出力を確認しますすべてのディスクシェルフが表示されていること、およびすべてのディスクが出力に表示されていることを確認し、ケーブル接続に関する問題が見つかった場合は修正します。
+.. 該当するタブをクリックして他のケーブル接続を確認し、 Config Advisor からの出力を確認します。
+
+
+
+
+
+
+== 手順2：コントローラをギブバックする
+
+ストレージリソースの所有権を交換用コントローラに戻します。
+
+. ストレージシステムで暗号化が設定されている場合は、次の手順に従ってストレージまたはボリュームの暗号化機能をリストアし、システムをリブートする必要があります。
++
+.. メニューから起動し、オプション10を実行します。
+.. パスフレーズを入力してデータをバックアップし、標準ブートを実行します。を参照してください。 https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Restore_onboard_key_management_encryption_keys["オンボードキー管理の暗号化キーをリストア"]
+.. CFOのみのギブバックの実行
+.. オンボード同期を実行し、SVM-KEKがtrueに設定されていることを確認します。を参照してください。 https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Onboard_keymanager_sync_fails_after_motherboard_replacement["MBの交換に失敗したあとのギブバック-キーマネージャで処理が拒否された"]
+.. SFOのギブバック（強制なし）
+
+
+. システムで暗号化が設定されていない場合は、次の手順を実行してシステムをリブートします。
++
+.. メニューから起動し、オプション1を実行します。
+.. コントローラをギブバックします。
+.. 正常なコントローラから、交換したコントローラのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name _`
++
+_replacement _controller はストレージをテイクバックしてブートを完了します。
+
++
+
+NOTE: ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。
+
++
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対するハイアベイラビリティ構成のコンテンツを検索してください"]
+
+.. ギブバックが完了したら、 HA ペアが正常で、テイクオーバーが可能であることを確認します。「 storage failover show
+
+
+. 各コントローラに、想定されるボリュームが存在することを確認します。 vol show -node node-name
+. リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラで storage failover modify -node replacement-node-name -onreboot true を有効にします
+
