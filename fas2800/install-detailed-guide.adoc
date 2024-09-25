@@ -48,7 +48,7 @@ IMPORTANT: 特定の電力要件を持つお客様は、確認する必要があ
 .. 次の手順を実行して、ストレージシステムに関する情報を収集します。 https://docs.netapp.com/us-en/ontap/task_configure_ontap.html["セットアップワークシート^（ワークシートのURLが必要）"]。
 .. コントローラのストレージシステムのシリアル番号をメモします。
 +
-image::../media/drw_ssn_label.svg[システムシリアル番号の場所を示す例]
+image::../media/drw_ssn_label.svg[システムシリアル番号の例]
 
 
 
