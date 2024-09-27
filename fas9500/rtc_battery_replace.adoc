@@ -93,7 +93,7 @@ image::../media/drw_9500_remove_PCM.svg[DRW 9500がPCMを削除しました]
 
 
  a| 
-image::../media/legend_icon_01.svg[凡例アイコン 01]
+image::../media/legend_icon_01.png[吹き出しアイコン1]
  a| 
 カムハンドルのリリースボタン
 
@@ -119,7 +119,7 @@ image::../media/drw_9500_PCM_open.svg[DRW 9500 PCMが開いています]
 
 
  a| 
-image::../media/legend_icon_01.svg[凡例アイコン 01]
+image::../media/legend_icon_01.png[吹き出しアイコン1]
  a| 
 コントローラモジュールのカバーの固定ボタン
 
@@ -144,7 +144,7 @@ image::../media/drw_9500_remove_RTC_battery.svg[DRW 9500がRTCバッテリを取
 
 
  a| 
-image::../media/legend_icon_01.svg[凡例アイコン 01]
+image::../media/legend_icon_01.png[吹き出しアイコン1]
  a| 
 バッテリーを上に回します
 

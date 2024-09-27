@@ -20,14 +20,14 @@ image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAMの警告/ステー�
 
 
  a| 
-image:../media/legend_icon_01.svg["番号1、幅= 30px"]
+image:../media/legend_icon_01.png["番号1"]
  a| 
 NVRAMステータスLED
 
 
 
  a| 
-image:../media/legend_icon_02.svg["番号1、幅= 30px"]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 NVRAM警告LED
 
@@ -58,7 +58,7 @@ image::../media/drw_a1k_pcm_remove_replace_ieops-1375.svg[コントローラの�
 
 
  a| 
-image:../media/legend_icon_01.svg["番号1、幅= 30px"]
+image:../media/legend_icon_01.png["番号1"]
 | Aロッキングカムラッチ 
 |===
 . コントローラモジュールをエンクロージャから引き出し、平らで安定した場所に置きます。

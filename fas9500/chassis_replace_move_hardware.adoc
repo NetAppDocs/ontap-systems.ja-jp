@@ -44,7 +44,7 @@ image::../media/drw_9500_remove_install_PSU_module.svg[DRW 9500 remove install P
 
 
  a| 
-image::../media/legend_icon_01.svg[凡例アイコン 01]
+image::../media/legend_icon_01.png[吹き出しアイコン1]
  a| 
 テラコッタロックボタン
 
@@ -77,14 +77,14 @@ image::../media/drw_9500_remove_install_fan.svg[DRW 9500がインストールフ
 
 
  a| 
-image:../media/legend_icon_01.svg["幅= 20"]
+image:../media/legend_icon_01.png["吹き出しアイコン1"]
  a| 
 テラコッタロックボタン
 
 
 
  a| 
-image:../media/legend_icon_02.svg["幅= 20"]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ファンをスライドさせてシャーシから取り外します
 
@@ -114,14 +114,14 @@ image::../media/drw_9500_remove_PCM.svg[DRW 9500がPCMを削除しました]
 
 
  a| 
-image:../media/legend_icon_01.svg["幅= 20"]
+image:../media/legend_icon_01.png["吹き出しアイコン1"]
  a| 
 カムハンドルロックボタン
 
 
 
  a| 
-image:../media/legend_icon_02.svg["幅= 20"]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 カムハンドル
 
@@ -171,7 +171,7 @@ image::../media/drw_9500_remove_PCIe_module.svg[DRW 9500がPCIeモジュール�
 
 
  a| 
-image::../media/legend_icon_01.svg[凡例アイコン 01]
+image::../media/legend_icon_01.png[吹き出しアイコン1]
  a| 
 文字と数字が記載された I/O カムラッチ
 
@@ -209,7 +209,7 @@ image::../media/drw_9500_remove_NV_battery.svg[DRW 9500がNVバッテリを取�
 
 
  a| 
-image::../media/legend_icon_01.svg[凡例アイコン 01]
+image::../media/legend_icon_01.png[吹き出しアイコン1]
  a| 
 DCPMテラコッタロックボタン
 
@@ -232,14 +232,14 @@ image::../media/drw_9500_remove_replace_LED_mod.svg[DRW 9500 remove replace LED 
 
 
  a| 
-image::../media/legend_icon_01.svg[凡例アイコン 01]
+image::../media/legend_icon_01.png[吹き出しアイコン1]
  a| 
 モジュールをイジェクトします。
 
 
 
  a| 
-image:../media/legend_icon_02.svg["幅= 20"]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 シャーシから引き出します。
 

@@ -13,11 +13,11 @@ summary: ブートメディアの自動交換方法と手動による交換方�
 [role="lead"]
 障害が発生したブートメディアは、ブートイメージにUSBモジュールを使用するか、Automated Boot Media Recovery（BMR；自動ブートメディアリカバリ）オプションを使用して手動で交換できます。
 
-* link:bootmedia-replace-requirements-bmr.html["ブートメディアリカバリの自動化"]
+* link:bootmedia-replace-workflow-bmr.html["ブートメディアリカバリの自動化"]
 +
 自動ブートメディアリカバリでは、パートナーノードのブートイメージが使用され、適切なブートメニューオプションが自動的に実行されて、交換用ブートメディアにブートイメージがインストールされます。
 
-* link:bootmedia-replace-requirements.html["手動ブートメディア交換"]
+* link:bootmedia-replace-workflow.html["手動ブートメディア交換"]
 +
 ブートメディアの手動交換では、従来の方法では、NetAppサポートサイトからONTAPイメージをダウンロードし、USBドライブにイメージを転送してターゲットの交換用ブートメディアにダウンロードし、ブートメニューのオプションを手動で指定してONTAPイメージを交換用ブートメディアにインストールします。
 

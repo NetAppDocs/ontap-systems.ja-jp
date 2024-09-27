@@ -41,28 +41,5 @@ ONTAP 9.16.0 以前
 
 
 
-
-
- a| 
-ONTAP 9 .16.1以降
- a| 
-.. 障害コントローラで、バックアップ構成をリストアするかどうかを確認するメッセージが表示されたら、_y_を押します。
-+
-リストア手順が正常に完了すると、コンソールにこのメッセージが表示されます `syncflash_partner: Restore from partner complete`。
-
-.. 障害のあるコントローラで、リストアバックアップが成功したかどうかを確認するプロンプトが表示されたら、_y_を押します。
-.. 障害コントローラで、リストアした構成を使用するかどうかを確認するメッセージが表示されたら、_y_を押します。
-.. 障害コントローラで、ノードをリブートするように求められたら、_y_を押します。
-.. 障害コントローラで、障害コントローラのリブートを求めるプロンプトが表示されたら_y_を押し、ブートメニューとして_Ctrl+C_を押します。
-.. システムで暗号化が使用されていない場合は、_option 1 Normal Bootを選択します。使用されていない場合は、に進みます。 link:bootmedia-encryption-restore.html["キー管理ツールのリストア"]
-.. パートナーコントローラにコンソールケーブルを接続します。
-.. storage failover giveback -fromnode local_コマンドを使用してコントローラをギブバックします。
-.. 自動ギブバックを無効にした場合は、_storage failover modify -node local-auto-giveback true_コマンドを使用してリストアします。
-.. AutoSupportが有効になっている場合は、_system node AutoSupport invoke -node *-type all -message MAINT=end_commandを使用して、ケースの自動作成をリストアまたは抑制解除します。
-+
-*注意：*プロセスが失敗した場合は、に連絡してください https://support.netapp.com["ネットアップサポート"]。
-
-
-
 |===
 

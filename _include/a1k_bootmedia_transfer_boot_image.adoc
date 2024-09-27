@@ -50,7 +50,7 @@ image::../media/drw_a800_close_air_duct.png[コントローラモジュールの
 
 
  a| 
-image:../media/legend_icon_01.svg["番号1、幅= 30px"]
+image:../media/legend_icon_01.png["番号1"]
 
 
 
@@ -60,13 +60,11 @@ image:../media/legend_icon_01.svg["番号1、幅= 30px"]
 
 
  a| 
-image:../media/legend_icon_02.svg["番号2、幅= 30px"]
+image:../media/legend_icon_02.png["番号2"]
 
 
 
- a| 
-ライザー
-
+| ライザー 
 |===
 
 

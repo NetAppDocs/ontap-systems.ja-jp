@@ -4,7 +4,7 @@
 
 . 左側のエンドキャップを取り外して、 LED の右側にある小さな穴の位置を確認します。
 +
-image:drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg["幅= 300px"]
+image:../media/drw_a900_oie_change_ns224_shelf_ID_ieops-836.svg["シェルフ ID を変更します"]
 
 +
 [cols="20%,80%"]
@@ -12,7 +12,7 @@ image:drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg["幅= 300px"]
 
 
  a| 
-image:legend_icon_01.svg["幅= 20"]
+image:legend_icon_01.png["吹き出しアイコン1"]
  a| 
 シェルフのエンドキャップ
 

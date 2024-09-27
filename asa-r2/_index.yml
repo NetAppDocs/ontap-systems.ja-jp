@@ -33,11 +33,3 @@ indexpage:
       url: https://docs.netapp.com/us-en/asa-r2/data-protection/snapshot-replication.html
     - title: 保存データを暗号化
       url: https://docs.netapp.com/us-en/asa-r2/secure-data/encrypt-data-at-rest.html
-  - title: ASA R2に関するその他のリソース
-    links:
-    - title: ONTAPコマンド リファレンス
-      url: https://docs.netapp.com/us-en/ontap-cli/
-    - title: ONTAP REST APIリファレンス
-      url: https://docs.netapp.com/us-en/ontap-restapi/index.html
-    - title: ONTAP EMSリファレンス
-      url: https://docs.netapp.com/us-en/ontap-ems/index.html

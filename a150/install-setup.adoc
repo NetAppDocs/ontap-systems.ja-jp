@@ -28,3 +28,5 @@ summary: システムを設置してセットアップします。
 
 
 システムが MetroCluster IP 構成の場合は、を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html["MetroCluster IP 構成をインストールします"] 手順
+
+*警告：*システムにONTAP 9 .13.1P8-9.13.1P11、ONTAP 9 .14.1P1-9.14.1P7またはONTAP 9 .15.1-9.15.1P2がインストールされていて、システムに10本以上の内蔵ソリッドステートドライブが搭載されている場合は、システムの設置準備を行う必要があります。問題を参照してください https://mysupport.netapp.com/site/bugs-online/product/ONTAP/JiraNgage/CONTAP-285173["ONTAP-285173-ADPが10本以上の内蔵ドライブを搭載したAFF A150にスペアルートパーティションを残さない"^]。

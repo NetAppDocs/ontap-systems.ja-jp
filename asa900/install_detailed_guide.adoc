@@ -35,7 +35,7 @@ summary: 一般的なNetAppシステムをインストールするための詳�
 . すべての箱を開封して内容物を取り出します。
 . コントローラのシステムシリアル番号をメモします。
 +
-image:drw_ssn_label.svg["システムシリアル番号の場所を示す例"]
+image:../media/drw_ssn_label.svg["システムシリアル番号の場所を示す例"]
 
 . 同梱されていたケーブルの数と種類を確認し、書き留めておきます。
 +
@@ -59,7 +59,7 @@ X66240A-2 （ 112-00598 ）、 2m
 
 X66240A-5 （ 112-00600 ）、 5m
  a| 
-image:oie_cable_sfp_gbe_copper.svg["幅= 85px"]
+image:../media/oie_cable_sfp_gbe_copper.svg["GbE銅線SFP"]
  a| 
 ネットワークケーブル
 
@@ -74,7 +74,7 @@ X66250-5 （ 112-00344 ）、 5m
 
 X66250-15 （ 112-00346 ）、 15m
  a| 
-image:oie_cable_sfp_gbe_copper.svg["幅= 85px"]
+image:../media/oie_cable_sfp_gbe_copper.svg["GbE銅線SFP"]
  a| 
 FC 光ネットワークケーブル
 
@@ -89,7 +89,7 @@ X66100-3 (112-00543) 、 3m
 
 X66100-5 （ 112-00544 ）、 5m
  a| 
-image:oie_cable100_gbe_qsfp28.svg["幅= 85px"]
+image:../media/oie_cable100_gbe_qsfp28.svg["100Gbケーブル"]
  a| 
 イーサネットデータ、クラスタネットワーク
 
@@ -104,7 +104,7 @@ X66211B-2 （ 112-00574 ）、 2m
 
 X66211B-5 （ 112-00576 ）、 5m
  a| 
-image:oie_cable100_gbe_qsfp28.svg["幅= 85px"]
+image:../media/oie_cable100_gbe_qsfp28.svg["100Gbケーブル"]
  a| 
 ネットワーク、
 
@@ -125,7 +125,7 @@ X66032A （ 112-00437 ）、 2m
 
 X66033A (112-00438) 、 3m
  a| 
-image:oie_cable_fiber_lc_connector.svg["幅= 85px"]
+image:../media/oie_cable_fiber_lc_connector.svg["LCファイバコネクタ"]
  a| 
 FC 光ネットワーク
 
@@ -138,7 +138,7 @@ Cat 6 、 RJ-45 （注文内容による）
 
 X6562-R6 （ 112-00196 ）、 5m
  a| 
-image:oie_cable_rj45.svg["幅= 85px"]
+image:../media/oie_cable_rj45.svg["RJ-45ケーブル"]
  a| 
 管理ネットワークとイーサネットデータ
 
@@ -149,7 +149,7 @@ Micro-USB コンソールケーブル
  a| 
 該当なし
  a| 
-image:oie_cable_micro_usb.svg["幅= 85px"]
+image:../media/oie_cable_micro_usb.svg["Micro USBケーブル"]
  a| 
 Windows または Mac 以外のラップトップ / コンソールでソフトウェアをセットアップする際のコンソール接続
 
@@ -160,7 +160,7 @@ Windows または Mac 以外のラップトップ / コンソールでソフト�
  a| 
 該当なし
  a| 
-image:oie_cable_power.svg["幅= 85px"]
+image:../media/oie_cable_power.svg["幅= 85px"]
  a| 
 システムの電源をオンにします
 
@@ -211,7 +211,7 @@ image::../media/drw_a900_controller_in_chassis_ID_IEOPS-856.svg[一般的なク�
 
 ケーブルをポートに差し込む際は、ケーブルのプルタブの向きを確認してください。ケーブルのプルタブは、すべてのネットワーキングモジュールポートで上向きになっています。
 
-image:oie_cable_pull_tab_up.svg["ケーブルプルタブの方向"]
+image:../media/oie_cable_pull_tab_up.svg["ケーブルプルタブの方向"]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -221,15 +221,16 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 .アニメーション- 2ノードスイッチレスクラスタをケーブル接続
 video::37419c37-f56f-48e5-8e6c-afa600095444[panopto]
 +
-image:drw_a900_tnsc_network_cabling_IEOPS-933.svg["2ノードスイッチレスネットワークのケーブル接続"]
+image:../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg["2ノードスイッチレスネットワークのケーブル接続"]
 
 +
+[cols="20%,80%"]
 |===
 | ステップ | 各コントローラでを実行します 
 
 
  a| 
-image:oie_legend_icon_1_lg.svg["幅= 30px"]
+image:../media/oie_legend_icon_1_lg.svg["吹き出しアイコン1"]
  a| 
 クラスタインターコネクトポートをケーブル接続します。
 
@@ -237,55 +238,53 @@ image:oie_legend_icon_1_lg.svg["幅= 30px"]
 ** スロット A8 および B8 （ e8a ）
 
 
-image:oie_cable100_gbe_qsfp28.svg["幅= 85px"]
+image:../media/oie_cable100_gbe_qsfp28.svg["100Gbケーブル"]
 
 
 
  a| 
-image:oie_legend_icon_2_lp.svg["幅= 30px"]
+image:../media/oie_legend_icon_2_lp.svg["吹き出しアイコン2"]
  a| 
 コントローラ管理（レンチマーク）ポートをケーブル接続します。
 
-image:oie_cable_rj45.svg["幅= 85px"]
+image:../media/oie_cable_rj45.svg["RJ-45ケーブル"]
 
 
 
  a| 
-image:oie_legend_icon_3_o.svg["幅= 30px"]
+image:../media/oie_legend_icon_3_o.svg["吹き出しアイコン3"]
  a| 
 25GbE ネットワークスイッチをケーブル接続します。
 
 スロット A3 および B3 （ e3a および e3c ）およびスロット A9 および B9 （ e9a および e9c ）のポートは、 25GbE ネットワークスイッチに接続されます。
 
-image:oie_cable_sfp_gbe_copper.svg["幅= 85px"]
+image:../media/oie_cable_sfp_gbe_copper.svg["GbE銅線SFP"]
 
 40GbE ホストネットワークスイッチ：
 
 ホスト側の b ポートをスロット A4 と B4 （ e4b ）に接続し、スロット A8 と B8 （ e8b ）をホストスイッチに接続します。
 
-image:oie_cable100_gbe_qsfp28.svg["幅= 85px"]
+image:../media/oie_cable100_gbe_qsfp28.svg["100Gbケーブル"]
 
 
 
  a| 
-image:oie_legend_icon_4_dr.svg["幅= 30px"]
+image:../media/oie_legend_icon_4_dr.svg["吹き出しアイコン4"]
  a| 
 32Gb FC 接続のケーブル接続：
 
 スロット A5 および B5 （ 5a 、 5b 、 5c 、 5d ）およびスロット A7 および B7 （ 7a 、 7b 、 7c 、 7d ）のポートを 32 Gb FC ネットワークスイッチにケーブル接続します。
 
-image:oie_cable_sfp_gbe_copper.svg["幅= 85px"]
+image:../media/oie_cable_sfp_gbe_copper.svg["GbE銅線SFP"]
 
 
 
+ a| 
+image:../media/oie_legend_icon_5_lp.png["吹き出しアイコン5"]
  a| 
 ** ケーブルをケーブルマネジメントアームにストラップで固定します（図はなし）。
 ** 電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。PSU 1と3はA側のすべてのコンポーネントに電力を供給し、PSU 2とPSU 4はB側のすべてのコンポーネントに電力を供給します。
 
- a| 
-image:oie_cable_power.svg["幅= 85px"]
-
-image:drw_a900fas9500_power_source_icon_IEOPS-1142.svg["幅= 200px"]
 
 |===
 
@@ -300,7 +299,7 @@ image:drw_a900fas9500_power_source_icon_IEOPS-1142.svg["幅= 200px"]
 
 ケーブルをポートに差し込む際は、ケーブルのプルタブの向きを確認してください。ケーブルのプルタブは、すべてのネットワーキングモジュールポートで上向きになっています。
 
-image:oie_cable_pull_tab_up.svg["ケーブルプルタブの方向"]
+image:../media/oie_cable_pull_tab_up.svg["ケーブルプルタブの方向"]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。カチッと音がしない場合は、コネクタを取り外し、裏返してもう一度試してください。
@@ -310,15 +309,16 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 .アニメーション-スイッチクラスタをケーブル接続します
 video::61ec11ec-aa30-474a-87a5-afa60008b52b[panopto]
 +
-image:drw_a900_switched_network_cabling_IEOPS-934.svg["幅= 500px"]
+image:../media/drw_a900_switched_network_cabling_IEOPS-934.svg["幅= 500px"]
 
 +
+[cols="20%,80%"]
 |===
 | ステップ | 各コントローラでを実行します 
 
 
  a| 
-image:oie_legend_icon_1_lg.svg["幅= 30px"]
+image：../media/oie_legend_icon_1_lg.svg [
  a| 
 クラスタインターコネクト A ポートをケーブル接続します。
 
@@ -326,55 +326,57 @@ image:oie_legend_icon_1_lg.svg["幅= 30px"]
 ** スロット A8 と B8 （ e8a ）をクラスタネットワークスイッチに接続します。
 
 
-image:oie_cable100_gbe_qsfp28.svg["幅= 85px"]
+image:../media/oie_cable100_gbe_qsfp28.svg["100Gbケーブル"]
 
 
 
  a| 
-image:oie_legend_icon_2_lp.svg["幅= 30px"]
+image:../media/oie_legend_icon_2_lp.svg["吹き出しアイコン2"]
  a| 
 コントローラ管理（レンチマーク）ポートをケーブル接続します。
 
-image:oie_cable_rj45.svg["幅= 85px"]
+image:../media/oie_cable_rj45.svg["RJ-45ケーブル"]
 
 
 
  a| 
-image:oie_legend_icon_3_o.svg["幅= 30px"]
+image:../media/oie_legend_icon_3_o.svg["吹き出しアイコン3"]
  a| 
 25GbE ネットワークスイッチをケーブル接続します。
 
 スロット A3 および B3 （ e3a および e3c ）およびスロット A9 および B9 （ e9a および e9c ）のポートは、 25GbE ネットワークスイッチに接続されます。
 
-image:oie_cable_sfp_gbe_copper.svg["幅= 85px"]
+image:../media/oie_cable_sfp_gbe_copper.svg["GbE銅線SFP"]
 
 40GbE ホストネットワークスイッチ：
 
 ホスト側の b ポートをスロット A4 と B4 （ e4b ）に接続し、スロット A8 と B8 （ e8b ）をホストスイッチに接続します。
 
-image:oie_cable100_gbe_qsfp28.svg["幅= 85px"]
+image:../media/oie_cable100_gbe_qsfp28.svg["100Gbケーブル"]
 
 
 
  a| 
-image:oie_legend_icon_4_dr.svg["幅= 30px"]
+image:../media/oie_legend_icon_4_dr.svg["吹き出しアイコン4"]
  a| 
 32Gb FC 接続のケーブル接続：
 
 スロット A5 および B5 （ 5a 、 5b 、 5c 、 5d ）およびスロット A7 および B7 （ 7a 、 7b 、 7c 、 7d ）のポートを 32 Gb FC ネットワークスイッチにケーブル接続します。
 
-image:oie_cable_sfp_gbe_copper.svg["幅= 85px"]
+image:../media/oie_cable_sfp_gbe_copper.svg["GbE銅線SFP"]
 
 
 
+ a| 
+image:../media/oie_legend_icon_5_lp.png["吹き出しアイコン5"]
  a| 
 ** ケーブルをケーブルマネジメントアームにストラップで固定します（図はなし）。
 ** 電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。PSU 1と3はA側のすべてのコンポーネントに電力を供給し、PSU 2とPSU 4はB側のすべてのコンポーネントに電力を供給します。
 
- a| 
-image:oie_cable_power.svg["幅= 85px"]
 
-image:drw_a900fas9500_power_source_icon_IEOPS-1142.svg["幅= 200px"]
+image:../media/oie_cable_power.svg["幅= 85px"]
+
+image:../media/drw_a900fas9500_power_icon_IEOPS-1142.svg["幅= 200px"]
 
 |===
 
@@ -397,9 +399,9 @@ image:drw_a900fas9500_power_source_icon_IEOPS-1142.svg["幅= 200px"]
 * 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。ストレージモジュールのケーブルのプルタブは上向き、シェルフのプルタブは下向きです。
 
 
-image:oie_cable_pull_tab_up.svg["ケーブルプルタブの方向"]
+image:../media/oie_cable_pull_tab_up.svg["ケーブルプルタブの方向"]
 
-image:oie_cable_pull_tab_down.svg["幅= 200px"]
+image:../media/oie_cable_pull_tab_down.svg["幅= 200px"]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -409,34 +411,35 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 .アニメーション- 1台のNS224シェルフにケーブルを接続します
 video::8d8b45cd-bd8f-4fab-a4fa-afa5017e7b72[panopto]
 +
-image:drw_a900_NS224_one shelf_cabling_IEOPS-937.svg["幅= 500px"]
+image:../media/drw_a900_NS224_one shelf_cabling_IEOPS-937.svg["幅= 500px"]
 
 +
+[cols="20%,80%"]
 |===
 | ステップ | 各コントローラでを実行します 
 
 
  a| 
-image:oie_legend_icon_1_mb.svg["幅= 30px"]
+image:../media/oie_legend_icon_1_mb.svg["吹き出しアイコン1"]
  a| 
 ** コントローラ A のポート e2a を、シェルフの NSM A のポート e0a に接続します。
 ** コントローラ A のポート e10b をシェルフの NSM B のポート e0b に接続します。
 
 
-image:oie_cable100_gbe_qsfp28.svg["幅= 50px"]
+image:../media/oie_cable100_gbe_qsfp28.svg["幅= 50px"]
 
 100GbE ケーブル
 
 
 
  a| 
-image:oie_legend_icon_2_lo.svg["幅= 30px"]
+image:../media/oie_legend_icon_2_lo.svg["吹き出しアイコン1"]
  a| 
 ** コントローラ B のポート e2a を、シェルフの NSM B のポート e0a に接続します。
 ** コントローラ B のポート e10b をシェルフの NSM A のポート e0b に接続します。
 
 
-image:oie_cable100_gbe_qsfp28.svg["幅= 50px"]
+image:../media/oie_cable100_gbe_qsfp28.svg["幅= 50px"]
 
 100GbE ケーブル
 
@@ -452,9 +455,9 @@ image:oie_cable100_gbe_qsfp28.svg["幅= 50px"]
 * 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。ストレージモジュールのケーブルのプルタブは上向き、シェルフのプルタブは下向きです。
 
 
-image:oie_cable_pull_tab_up.svg["ケーブルプルタブの方向"]
+image:../media/oie_cable_pull_tab_up.svg["ケーブルプルタブの方向"]
 
-image:oie_cable_pull_tab_down.svg["幅= 200px"]
+image:../media/oie_cable_pull_tab_down.svg["幅= 200px"]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -464,18 +467,19 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 .アニメーション- 2台のNS224シェルフをケーブル接続します
 video::ec143c32-9e4b-47e5-893e-afa5017da6b4[panopto]
 +
-image:drw_a900_NS224_line_art_two shelf_cabling_IEOPS-1147.svg["幅= 500px"]
+image:../media/drw_a900_NS224_line_art_two shelf_cabling_IEOPS-1147.svg["幅= 500px"]
 
 +
-image:drw_a900_NS224_two_shelf_cabling_IEOPS-938.svg["幅= 500px"]
+image:../media/drw_a900_NS224_two_shelf_cabling_IEOPS-938.svg["幅= 500px"]
 
 +
+[cols="20%,80%"]
 |===
 | ステップ | 各コントローラでを実行します 
 
 
  a| 
-image:oie_legend_icon_1_mb.svg["幅= 30px"]
+image:../media/oie_legend_icon_1_mb.svg["吹き出しアイコン1"]
  a| 
 ** コントローラ A のポート e2a を、シェルフ 1 の NSM A に接続します。
 ** コントローラ A のポート e10b をシェルフ 1 の NSM B e0b に接続します。
@@ -483,14 +487,14 @@ image:oie_legend_icon_1_mb.svg["幅= 30px"]
 ** コントローラ A のポート e10a をシェルフ 2 の NSM A の e0a に接続します。
 
 
-image:oie_cable100_gbe_qsfp28.svg["幅= 50px"]
+image:../media/oie_cable100_gbe_qsfp28.svg["幅= 50px"]
 
 100GbE ケーブル
 
 
 
  a| 
-image:oie_legend_icon_2_lo.svg["幅= 30px"]
+image:../media/oie_legend_icon_2_lo.svg["幅= 30px"]
  a| 
 ** コントローラ B のポート e2a を、シェルフ 1 の NSM B e0a に接続します。
 ** コントローラ B のポート e10b をシェルフ 1 の NSM A e0b に接続します。
@@ -498,7 +502,7 @@ image:oie_legend_icon_2_lo.svg["幅= 30px"]
 ** コントローラ B のポート e10A をシェルフ 2 の NSM B e0a に接続します。
 
 
-image:oie_cable100_gbe_qsfp28.svg["幅= 50px"]
+image:../media/oie_cable100_gbe_qsfp28.svg["幅= 50px"]
 
 100GbE ケーブル
 
@@ -527,7 +531,7 @@ NS224 シェルフ ID は 00 および 01 に事前に設定されています�
 .アニメーション- NVMeドライブシェルフIDを設定します
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
-image:drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg["幅= 500px"]
+image:../media/drw_a900_oie_change_ns224_shelf_ID_ieops-836.svg["シェルフ ID を変更します"]
 
 +
 [cols="20%,80%"]
@@ -535,28 +539,28 @@ image:drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg["幅= 500px"]
 
 
  a| 
-image:legend_icon_01.svg["幅= 20"]
+image:../media/legend_icon_01.png["吹き出しアイコン1"]
  a| 
 シェルフのエンドキャップ
 
 
 
  a| 
-image:legend_icon_02.svg["幅= 20"]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 シェルフ前面プレート
 
 
 
  a| 
-image:legend_icon_03.svg["幅= 20"]
+image:../media/legend_icon_03.png["番号3"]
  a| 
 シェルフID LED
 
 
 
  a| 
-image:legend_icon_04.svg["幅= 20"]
+image:../media/legend_icon_04.svg["幅= 20"]
  a| 
 シェルフID設定ボタン
 
@@ -566,7 +570,7 @@ image:legend_icon_04.svg["幅= 20"]
 .アニメーション-コントローラの電源をオンにします
 video::a905e56e-c995-4704-9673-adfa0005a891[panopto]
 +
-image:drw_a900_power-on_IEOPS-941.svg["幅= 500px"]
+image:../media/drw_a900_power-on_IEOPS-941.svg["幅= 500px"]
 
 +
 
@@ -581,11 +585,11 @@ NOTE: 初回のブートには最大 8 分かかる場合があります。
 .アニメーション-ラップトップを管理スイッチに接続します
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 +
-image:dwr_laptop_to_switch_only.svg["幅= 500px"]
+image:../media/dwr_laptop_to_switch_only.svg["幅= 500px"]
 
 . 検出する ONTAP アイコンを選択します。
 +
-image:drw_autodiscovery_controler_select.svg["幅= 500px"]
+image:../media/drw_autodiscovery_controler_select.svg["幅= 500px"]
 
 +
 .. エクスプローラを開きます。
@@ -636,7 +640,7 @@ NOTE: コンソールポートの設定方法については、ラップトッ�
 
 .. システム付属のコンソールケーブルを使用してラップトップまたはコンソールにコンソールケーブルを接続し、ラップトップを管理サブネット上の管理スイッチに接続します。
 +
-image:drw_A900_cable_console_switch_controller_IEOPS-953.svg["幅= 500px"]
+image:../media/drw_a900_cable_console_switch_controller_IEOPS-953.svg["コンソールケーブル接続"]
 
 .. 管理サブネット上の TCP / IP アドレスをラップトップまたはコンソールに割り当てます。
 
@@ -649,36 +653,36 @@ NS224 シェルフ ID は 00 および 01 に事前に設定されています�
 .アニメーション- NVMeドライブシェルフIDを設定します
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
-image:drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg["幅= 500px"]
+image:../media/drw_a900_oie_change_ns224_shelf_ID_ieops-836.svg["シェルフ ID を変更します"]
 
 +
-[cols="20%,80%"]
+[cols="1,5"]
 |===
 
 
  a| 
-image:legend_icon_01.svg["幅= 20"]
+image:../media/legend_icon_01.png["吹き出しアイコン1"]
  a| 
 シェルフのエンドキャップ
 
 
 
  a| 
-image:legend_icon_02.svg["幅= 20"]
+image:../media/legend_icon_02.png["吹き出しアイコン2"]
  a| 
 シェルフ前面プレート
 
 
 
  a| 
-image:legend_icon_03.svg["幅= 20"]
+image:../media/legend_icon_03.png["吹き出しアイコン3"]
  a| 
 シェルフID LED
 
 
 
  a| 
-image:legend_icon_04.svg["幅= 20"]
+image:../media/legend_icon_04.png["吹き出しアイコン4"]
  a| 
 シェルフID設定ボタン
 
@@ -688,7 +692,7 @@ image:legend_icon_04.svg["幅= 20"]
 .アニメーション-コントローラの電源をオンにします
 video::bb04eb23-aa0c-4821-a87d-ab2300477f8b[panopto]
 +
-image:drw_a900_power-on_IEOPS-941.svg["幅= 500px"]
+画像：[Callout icon one] drw_a900_power-on_ieops-941.svg [width=500px]
 
 +
 

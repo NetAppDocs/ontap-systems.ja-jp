@@ -2,32 +2,7 @@
 :allow-uri-read: 
 
 
- `boot_recovery -partner`ONTAP 9 .16.0以降を実行しているASA R2プラットフォームを搭載したを使用して、パートナーノードからONTAPイメージ（ブートメディアリカバリ）をリストアできます。
-
-.作業を開始する前に
-ノードをブートしたときにそのノードのブートメディアが破損すると、Loaderプロンプトに次のメッセージとブートプロセス（stop）が表示されます。
-
-....
-
-Can't find primary boot device u0a.0
-Can't find backup boot device u0a.1
-ACPI RSDP Found at 0x777fe014
-
-
-Starting AUTOBOOT press Ctrl-C to abort...
-Could not load fat://boot0/X86_64/freebsd/image1/kernel:Device not found
-
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0,fat)
-
-
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0,fat)
-
-
-Autoboot of PRIMARY image failed. Device not found (-6)
-LOADER-A>
-
-....
-このメッセージが表示された場合は、ONTAPイメージをリストアする必要があります。
+ブートメディアイメージをリストアします。
 
 .手順
 . Loaderプロンプトで、_boot_recovery-partner_commandを入力します。

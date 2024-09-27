@@ -135,14 +135,14 @@ image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAMの警告/ステー�
 
 
  a| 
-image:../media/legend_icon_01.svg["番号1、幅= 30px"]
+image:../media/legend_icon_01.png["番号1"]
  a| 
 NVRAMステータスLED
 
 
 
  a| 
-image:../media/legend_icon_02.svg["番号1、幅= 30px"]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 NVRAM警告LED
 
@@ -183,12 +183,12 @@ image::../media/drw_a70-90_pcm_remove_replace_ieops-1365.svg[コントローラ�
 
 
  a| 
-image:../media/legend_icon_01.svg["番号1、幅= 30px"]
+image:../media/legend_icon_01.png["番号1"]
 | Aロックラッチ 
 
 
  a| 
-image:../media/legend_icon_02.svg["番号2、幅= 30px"]
+image:../media/legend_icon_02.png["番号2"]
  a| 
 ロッキングピン
 
@@ -214,16 +214,14 @@ image::../media/drw_a70-90_remove_replace_nvmembat_ieops-1369.svg[NV バッテ�
 |===
 
 
- a| 
-image:../media/legend_icon_01.svg["番号1、幅= 30px"]
-| NVバッテリーエアダクトカバー 
+| image:../media/legend_icon_01.png["番号1"]  a| 
+NVバッテリーエアダクトカバー
 
 
- a| 
-image:../media/legend_icon_02.svg["番号2、幅= 30px"]
- a| 
-NVバッテリプラグ
 
+ a| 
+image:../media/legend_icon_02.png["番号2"]
+| NVバッテリプラグ 
 |===
 . バッテリを持ち上げて、バッテリプラグにアクセスします。
 . バッテリプラグ前面のクリップを押してプラグをソケットから外し、バッテリケーブルをソケットから抜きます。
