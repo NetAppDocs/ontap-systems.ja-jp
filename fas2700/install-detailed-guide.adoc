@@ -102,7 +102,7 @@ X6536-R6 （ 112-00090 ）、 5m
 
 X6554-R6 （ 112-00189 ）、 15m
  a| 
-image:../media/oie_cable_fiber_lc_connector.png["光ファイバLCコネクタを示す図"]
+image:../media/oie_cable_fiber_lc_connector.png["LCファイバコネクタ"]
  a| 
 FC ホストネットワーク
 
@@ -143,7 +143,7 @@ Micro-USB コンソールケーブル
  a| 
 該当なし
  a| 
-image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタを示す図"]
+image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタ"]
  a| 
 Windows または Mac 以外のラップトップ / コンソールでソフトウェアをセットアップする際のコンソール接続
 
@@ -221,7 +221,7 @@ image::../media/drw_2700_tnsc_unified_network_cabling_animated_gif.png[ユニフ
 
 
  a| 
-image:../media/oie_legend_icon_1_lg.png["手順 1."]
+image:../media/icon_square_1_green.png["手順 1."]
  a| 
 クラスタインターコネクトケーブルを使用して、クラスタインターコネクトポートを相互に接続します。
 
@@ -233,7 +233,7 @@ image:../media/drw_c190_u_tnsc_clust_cbling.png["クラスタインターコネ�
 
 
  a| 
-image:../media/oie_legend_icon_2_o.png["ステップ2"]
+image:../media/icon_square_2_yellow.png["ステップ2"]
  a| 
 次のいずれかのタイプのケーブルを使用して、 UTA2 データポートをホストネットワークに接続します。
 
@@ -248,16 +248,16 @@ FC ホスト
 
 NOTE: 一方のポートペアを CNA 、もう一方のポートペアを FC として接続するか、あるいは両方のポートペアを CNA または FC として接続することができます。
 
-image:../media/drw_c190_u_fc_10gbe_cbling.png["説明が付随しているデータポート接続の図"]
+image:../media/drw_c190_u_fc_10gbe_cabling.png["データポート接続"]
 
 
 
  a| 
-image:../media/oie_legend_icon_3_lp.png["手順 3"]
+image:../media/icon_square_3_orange.png["手順 3"]
  a| 
 RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
 
-image:../media/drw_c190_u_mgmt_cbling.png["管理ポートのケーブル接続"]
+image:../media/drw_c190_u_mgmt_cabling.png["管理ポートのケーブル接続"]
 
 
 
@@ -297,7 +297,7 @@ image::../media/drw_2700_switched_unified_network_cabling_animated_gif.png[ス�
 
 
  a| 
-image:../media/oie_legend_icon_1_lg.png["手順 1."]
+image:../media/icon_square_1_green.png["手順 1."]
  a| 
 クラスタインターコネクトケーブルを使用して、 e0a と e0b をクラスタインターコネクトスイッチに接続します。
 
@@ -306,7 +306,7 @@ image:../media/drw_c190_u_switched_clust_cbling.png["クラスタインターコ
 
 
  a| 
-image:../media/oie_legend_icon_2_o.png["ステップ2"]
+image:../media/icon_square_2_yellow.png["ステップ2"]
  a| 
 次のいずれかのタイプのケーブルを使用して、 UTA2 データポートをホストネットワークに接続します。
 
@@ -325,16 +325,16 @@ FC ホスト
 
 NOTE: 一方のポートペアを CNA 、もう一方のポートペアを FC として接続するか、あるいは両方のポートペアを CNA または FC として接続することができます。
 
-image:../media/drw_c190_u_fc_10gbe_cbling.png["説明が付随しているデータポート接続の図"]
+image:../media/drw_c190_u_fc_10gbe_cabling.png["データポート接続"]
 
 
 
  a| 
-image:../media/oie_legend_icon_3_lp.png["手順 3"]
+image:../media/icon_square_3_orange.png["手順 3"]
  a| 
 RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
 
-image:../media/drw_c190_u_mgmt_cbling.png["管理ポートのケーブル接続"]
+image:../media/drw_c190_u_mgmt_cabling.png["管理ポートのケーブル接続"]
 
 
 
@@ -374,19 +374,18 @@ image::../media/drw_2700_tnsc_ethernet_network_cabling_animated_gif.png[2ノー�
 
 
  a| 
-image:../media/oie_legend_icon_1_lg.png["手順 1."]
+image:../media/icon_square_1_green.png["手順 1."]
  a| 
 クラスタインターコネクトケーブルを使用して、クラスタインターコネクトポートを相互に接続します。
 
 ** e0a から e0a
-** e0bからe0b
-image:../media/drw_c190_e_tnsc_clust_cbling.png["コントローラ背面のポート間のクラスタインターコネクトを示す図"]
+** e0bとe0b image:../media/drw_c190_e_tnsc_clust_cbling.png["コントローラ背面のポート間のクラスタインターコネクト"]
 
 
 
 
  a| 
-image:../media/oie_legend_icon_2_o.png["ステップ2"]
+image:../media/icon_square_2_yellow.png["ステップ2"]
  a| 
 Cat 6 RJ45 ケーブルを使用して、 e0c~e0f のポートをホストネットワークに接続します。
 
@@ -395,7 +394,7 @@ image:../media/drw_c190_e_rj45_cbling.png["ホストネットワークのケー�
 
 
  a| 
-image:../media/oie_legend_icon_3_lp.png["手順 3"]
+image:../media/icon_square_3_orange.png["手順 3"]
  a| 
 RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
 
@@ -439,7 +438,7 @@ image::../media/drw_2700_switched_ethernet_network_cabling_animated_gif.png[ス�
 
 
  a| 
-image:../media/oie_legend_icon_1_lg.png["手順 1."]
+image:../media/icon_square_1_green.png["手順 1."]
  a| 
 クラスタインターコネクトケーブルを使用して、 e0a と e0b をクラスタインターコネクトスイッチに接続します。
 
@@ -448,7 +447,7 @@ image:../media/drw_c190_e_switched_clust_cbling.png["クラスタインターコ
 
 
  a| 
-image:../media/oie_legend_icon_2_o.png["ステップ2"]
+image:../media/icon_square_2_yellow.png["ステップ2"]
  a| 
 Cat 6 RJ45 ケーブルを使用して、 e0c~e0f のポートをホストネットワークに接続します。
 
@@ -457,7 +456,7 @@ image:../media/drw_c190_e_rj45_cbling.png["ホストネットワークのケー�
 
 
  a| 
-image:../media/oie_legend_icon_3_lp.png["手順 3"]
+image:../media/icon_square_3_orange.png["手順 3"]
  a| 
 RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
 
@@ -506,7 +505,7 @@ image::../media/drw_2700_ha_storage_cabling_animated_gif.png[HAヘアテノシ�
 
 
  a| 
-image:../media/oie_legend_icon_1_lo.png["番号1"]
+image:../media/icon_square_1_blue.png["番号1"]
  a| 
 シェルフ間でポートをケーブル接続します。
 
@@ -520,7 +519,7 @@ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS - Mini-SASコ�
 
 
  a| 
-image:../media/oie_legend_icon_2_mb.png["ステップ2"]
+image:../media/icon_square_2_yellow.png["ステップ2"]
  a| 
 各ノードをスタック内の IOM A に接続します。
 
@@ -534,7 +533,7 @@ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS - Mini-SASコ�
 
 
  a| 
-image:../media/oie_legend_icon_3_t.png["手順 3"]
+image:../media/icon_square_3_orange.png["手順 3"]
  a| 
 各ノードをスタック内の IOM B に接続します
 

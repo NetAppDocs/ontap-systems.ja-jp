@@ -165,7 +165,7 @@ image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout.gif[拡張�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | ファンモジュールハンドル 
 |===
 .. ハンドルを使用してファンモジュールをドライブシェルフから引き出し、脇に置きます。
@@ -184,19 +184,19 @@ image::../media/2860_dwg_full_back_view_chain_connectors.gif[5つのケーブル
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | ケーブルチェーン 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 垂直コネクタ（ミッドプレーンに接続）
 
 
 
  a| 
-image:../media/legend_icon_03.png["番号3"]
+image:../media/icon_round_3.png["番号3"]
  a| 
 水平コネクタ（ドライブドロワーに接続）
 
@@ -217,7 +217,7 @@ image::../media/2860_dwg_vertical_ring_for_chain.gif[ケーブルチェーン端
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | 垂直ブラケットのオレンジのリング 
 |===
 .. オレンジのリングの中央を軽く押し、ケーブルの左側をエンクロージャから引き出して、ミッドプレーンに接続されている垂直コネクタを外します。
@@ -239,12 +239,12 @@ image::../media/2860_dwg_horiz_ring_for_chain.gif[ケーブルチェーンとオ
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | 水平ブラケットのオレンジのリング 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 ケーブルチェーン
 
@@ -313,7 +313,7 @@ image::../media/92_pht_de6600_drive_drawer_release_lever.gif[ドロワーリリ�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | ドライブドロワーのリリースレバー 
 |===
 .. ラッチを手前に引いて両方のリリースレバーを開きます。
@@ -352,12 +352,12 @@ image::../media/92_pht_de6600_lock_out_tumbler_detail.gif[ロックつまみと�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | ロックつまみ 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 ドロワーガイド
 
@@ -394,7 +394,7 @@ image::../media/28_dwg_e2860_de460c_drive_cru.gif[ドライブの突起ボタン
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | ドライブの右側の突起ボタン。 
 |===
 .. ドライブを真上から下ろし、ドライブが完全に固定されるまでドライブのハンドルを下に回転させます。
@@ -438,7 +438,7 @@ image::../media/28_dwg_e2860_de460c_cable_chain_left.gif[左側交換用ケー�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | 左  a| 
 垂直（ Vertical ）
  a| 
@@ -447,7 +447,7 @@ image:../media/legend_icon_01.png["番号1"]
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 左
  a| 
@@ -464,7 +464,7 @@ image:../media/28_dwg_e2860_de460c_cable_chain_right.gif["右側交換用ケー�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | 権利  a| 
 水平（ Horizontal ）
  a| 
@@ -473,7 +473,7 @@ image:../media/legend_icon_01.png["番号1"]
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 権利
  a| 
@@ -500,7 +500,7 @@ image::../media/2860_dwg_guide_rail.gif[ガイドレール]
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | ガイドレール 
 |===
 +

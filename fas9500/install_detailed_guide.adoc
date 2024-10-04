@@ -59,7 +59,7 @@ X66240A-2 （ 112-00598 ）、 2m
 
 X66240A-5 （ 112-00600 ）、 5m
  a| 
-image：../media/oie_cable_SFP_Gbe_copper.svg
+image::../media/ oie_cable_sfp_gbe_copper.png
  a| 
 ネットワークケーブル
 
@@ -74,7 +74,7 @@ X66250-5 （ 112-00344 ）、 5m
 
 X66250-15 （ 112-00346 ）、 15m
  a| 
-image：../media/oie_cable_SFP_Gbe_copper.svg
+image::../media/ oie_cable_sfp_gbe_copper.png
  a| 
 FC 光ネットワークケーブル
 
@@ -89,7 +89,7 @@ X66100-3 (112-00543) 、 3m
 
 X66100-5 （ 112-00544 ）、 5m
  a| 
-image：../media/oie_cable100_Gbe_qsfp28.svg
+image::../media/ oie_cable100_gbe_qsfp28.png
  a| 
 イーサネットデータ、クラスタネットワーク
 
@@ -104,7 +104,7 @@ X66211B-2 （ 112-00574 ）、 2m
 
 X66211B-5 （ 112-00576 ）、 5m
  a| 
-image：../media/oie_cable100_Gbe_qsfp28.svg
+image::../media/ oie_cable100_gbe_qsfp28.png
  a| 
 ネットワーク、
 
@@ -123,7 +123,7 @@ X66032A （ 112-00437 ）、 2m
 
 X66033A (112-00438) 、 3m
  a| 
-image::../media/oie_cable_fiber_lc_connector.svg[OIE ケーブルファイバ LC コネクタ]
+image::../media/oie_cable_fiber_lc_connector.png[OIE ケーブルファイバ LC コネクタ]
  a| 
 FC 光ネットワーク
 
@@ -136,7 +136,7 @@ Cat 6 、 RJ-45 （注文内容による）
 
 X6562-R6 （ 112-00196 ）、 5m
  a| 
-image：../media/oie_cable_RJ45.svg
+image::../media/ oie_cable_rj45.png
  a| 
 管理ネットワークとイーサネットデータ
 
@@ -162,7 +162,7 @@ Micro-USB コンソールケーブル
  a| 
 該当なし
  a| 
-image::../media/oie_cable_micro_usb.svg[OIEケーブルマイクロUSB]
+image::../media/oie_cable_micro_usb.pngMicro USBコネクタ]
  a| 
 Windows または Mac 以外のラップトップ / コンソールでソフトウェアをセットアップする際のコンソール接続
 
@@ -173,7 +173,7 @@ Windows または Mac 以外のラップトップ / コンソールでソフト�
  a| 
 該当なし
  a| 
-image::../media/oie_cable_power.svg[OIEケーブル電源]
+image::../media/oie_cable_power.png[電源ケーブル]
  a| 
 システムの電源をオンにします
 
@@ -242,7 +242,7 @@ image::../media/drw_9500_tnsc_network_cabling.svg[DRW 9500 TNSCネットワー�
 
 
  a| 
-image：../media/oie_legend_icon_1_lg.svg
+image::../media/ icon_square_1_green.png
  a| 
 クラスタインターコネクトポートをケーブル接続します。
 
@@ -250,44 +250,44 @@ image：../media/oie_legend_icon_1_lg.svg
 ** スロット A8 および B8 （ e8a ）
 
 
-image：../media/oie_cable100_Gbe_qsfp28.svg
+image::../media/ oie_cable100_gbe_qsfp28.png
 
 
 
  a| 
-image：../media/oie_legend_icon_2_lp.svg
+image::../media/ icon_square_2_yellow.png
  a| 
 コントローラ管理（レンチマーク）ポートをケーブル接続します。
 
-image：../media/oie_cable_RJ45.svg
+image::../media/ oie_cable_rj45.png
 
 
 
  a| 
-image：：../media/oie_legend_icon_3_o.svg
+image::../media/ icon_square_3_orange.png
  a| 
 32Gb FCネットワークスイッチをケーブル接続
 
 スロットA3およびB3（e3aおよびe3c）およびスロットA9およびB9（e9aおよびe9c）のポートは、32Gb FCネットワークスイッチに接続されます。
 
-image：../media/oie_cable_SFP_Gbe_copper.svg
+image::../media/ oie_cable_sfp_gbe_copper.png
 
 40GbE ホストネットワークスイッチ：
 
 ホスト側の b ポートをスロット A4 と B4 （ e4b ）に接続し、スロット A8 と B8 （ e8b ）をホストスイッチに接続します。
 
-image：../media/oie_cable100_Gbe_qsfp28.svg
+image::../media/ oie_cable100_gbe_qsfp28.png
 
 
 
  a| 
-image：：../media/oie_legend_icon_4_dr.svg
+image::../media/ icon_square_4_red.png
  a| 
 25GbEケーブル接続：
 
 スロットA5とB5（5a、5b、5c、5d）およびスロットA7とB7（7a、7b、7c、7d）のポートを25GbEネットワークスイッチにケーブル接続します。
 
-image：../media/oie_cable_SFP_Gbe_copper.svg
+image::../media/ oie_cable_sfp_gbe_copper.png
 
 
 
@@ -296,7 +296,7 @@ image：../media/oie_cable_SFP_Gbe_copper.svg
 ** 電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。PSU 1と3はA側のすべてのコンポーネントに電力を供給し、PSU 2とPSU 4はB側のすべてのコンポーネントに電力を供給します。
 
  a| 
-image::../media/oie_cable_power.svg[OIEケーブル電源]
+image::../media/oie_cable_power.png[電源ケーブル]
 
 image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[テンケンソオス]
 
@@ -332,7 +332,7 @@ image::../media/drw_9500_switched_network_cabling.svg[DRW 9500スイッチドネ
 
 
  a| 
-image：../media/oie_legend_icon_1_lg.svg
+image::../media/ icon_square_1_green.png
  a| 
 クラスタインターコネクト A ポートをケーブル接続します。
 
@@ -340,44 +340,44 @@ image：../media/oie_legend_icon_1_lg.svg
 ** スロット A8 と B8 （ e8a ）をクラスタネットワークスイッチに接続します。
 
 
-image：../media/oie_cable100_Gbe_qsfp28.svg
+image::../media/ oie_cable100_gbe_qsfp28.png
 
 
 
  a| 
-image：../media/oie_legend_icon_2_lp.svg
+image::../media/ icon_square_2_yellow.png
  a| 
 コントローラ管理（レンチマーク）ポートをケーブル接続します。
 
-image：../media/oie_cable_RJ45.svg
+image::../media/ oie_cable_rj45.png
 
 
 
  a| 
-image：：../media/oie_legend_icon_3_o.svg
+image::../media/ icon_square_3_orange.png
  a| 
 32Gb FCネットワークスイッチをケーブル接続
 
 スロットA3およびB3（e3aおよびe3c）およびスロットA9およびB9（e9aおよびe9c）のポートは、32Gb FCネットワークスイッチに接続されます。
 
-image：../media/oie_cable_SFP_Gbe_copper.svg
+image::../media/ oie_cable_sfp_gbe_copper.png
 
 40GbE ホストネットワークスイッチ：
 
 ホスト側の b ポートをスロット A4 と B4 （ e4b ）に接続し、スロット A8 と B8 （ e8b ）をホストスイッチに接続します。
 
-image：../media/oie_cable100_Gbe_qsfp28.svg
+image::../media/ oie_cable100_gbe_qsfp28.png
 
 
 
  a| 
-image：：../media/oie_legend_icon_4_dr.svg
+image::../media/ icon_square_4_red.png
  a| 
 25GbEケーブル接続：
 
 スロットA5とB5（5a、5b、5c、5d）およびスロットA7とB7（7a、7b、7c、7d）のポートを25GbEネットワークスイッチにケーブル接続します。
 
-image：../media/oie_cable_SFP_Gbe_copper.svg
+image::../media/ oie_cable_sfp_gbe_copper.png
 
 
 
@@ -386,7 +386,7 @@ image：../media/oie_cable_SFP_Gbe_copper.svg
 ** 電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。PSU 1と3はA側のすべてのコンポーネントに電力を供給し、PSU 2とPSU 4はB側のすべてのコンポーネントに電力を供給します。
 
  a| 
-image::../media/oie_cable_power.svg[OIEケーブル電源]
+image::../media/oie_cable_power.png[電源ケーブル]
 
 image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[テンケンソオス]
 
@@ -430,7 +430,7 @@ image::../media/drw_9500_sas_shelf_cabling.svg[DRW 9500 SASシェルフのケー
 
 
  a| 
-image::../media/oie_legend_icon_1_mb.svg[OIEの凡例アイコン1 MB]
+image::../media/icon_square_1_blue.png[アイコン正方形1青]
  a| 
 図を参照しながら、ドライブシェルフスタック1をコントローラに接続します。
 
@@ -441,7 +441,7 @@ Mini-SASケーブル
 
 
  a| 
-image::../media/oie_legend_icon_2_t.svg[OIEの凡例アイコン2 t]
+image::../media/icon_square_2_yellow.png[アイコン正方形2黄色]
  a| 
 図を参照しながら、ドライブシェルフスタック2をコントローラに接続します。
 
@@ -477,14 +477,14 @@ image::../media/drw_power-on_set_shelf_ID_set.svg[DRW 電源オンセットシ�
 
 
  a| 
-image::../media/legend_icon_01.png[吹き出しアイコン1]
+image::../media/icon_round_1.png[番号1]
  a| 
 エンドキャップを取り外す。
 
 
 
  a| 
-image::../media/legend_icon_02.svg[凡例アイコン 02]
+image::../media/icon_round_2.png[番号2]
  a| 
 1 桁目の数字が点滅するまでシェルフ ID ボタンを押し続けたら、 0~9 に進みます。
 
@@ -494,7 +494,7 @@ NOTE: 1桁目の数字は点滅し続けます
 
 
  a| 
-image::../media/legend_icon_03.svg[凡例アイコン 03]
+image::../media/icon_round_2.png[番号2]
  a| 
 2 桁目の数字が点滅するまでシェルフ ID ボタンを押し続けたら、 0~9 に進みます。
 
@@ -504,14 +504,14 @@ NOTE: 1桁目の数字の点滅が停止し、2桁目の数字が点滅し続け
 
 
  a| 
-image::../media/legend_icon_04.svg[凡例アイコン04]
+image::../media/icon_round_4.png[番号4]
  a| 
 エンドキャップを取り付けます。
 
 
 
  a| 
-image::../media/legend_icon_05.svg[凡例アイコン05]
+image::../media/icon_round_5.png[番号5]
  a| 
 オレンジの LED が点灯するまで 10 秒間待ちます (!) 。 表示されるようにするには、ドライブシェルフの電源を再投入してシェルフ ID を設定します。
 
@@ -609,14 +609,14 @@ image::../media/drw_power-on_set_shelf_ID_set.svg[DRW 電源オンセットシ�
 
 
  a| 
-image::../media/legend_icon_01.png[吹き出しアイコン1]
+image::../media/icon_round_1.png[番号1]
  a| 
 エンドキャップを取り外す。
 
 
 
  a| 
-image::../media/legend_icon_02.svg[凡例アイコン 02]
+image::../media/icon_round_2.png[番号2]
  a| 
 1 桁目の数字が点滅するまでシェルフ ID ボタンを押し続けたら、 0~9 に進みます。
 
@@ -626,7 +626,7 @@ NOTE: 1桁目の数字は点滅し続けます
 
 
  a| 
-image::../media/legend_icon_03.svg[凡例アイコン 03]
+image::../media/icon_round_2.png[番号2]
  a| 
 2 桁目の数字が点滅するまでシェルフ ID ボタンを押し続けたら、 0~9 に進みます。
 
@@ -636,14 +636,14 @@ NOTE: 1桁目の数字の点滅が停止し、2桁目の数字が点滅し続け
 
 
  a| 
-image::../media/legend_icon_04.svg[凡例アイコン04]
+image::../media/icon_round_4.png[番号4]
  a| 
 エンドキャップを取り付けます。
 
 
 
  a| 
-image::../media/legend_icon_05.svg[凡例アイコン05]
+image::../media/icon_round_5.png[番号5]
  a| 
 オレンジの LED が点灯するまで 10 秒間待ちます (!) 。 表示されるようにするには、ドライブシェルフの電源を再投入してシェルフ ID を設定します。
 

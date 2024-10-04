@@ -51,7 +51,7 @@ image::../media/drw_a70-90_psu_remove_replace_ieops-1368.svg[PSUを交換して�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | Terracotta PSUの固定ツメ 
 |===
 . コントローラモジュールに交換用PSUを取り付けます。
@@ -107,28 +107,28 @@ image::../media/drw_dcpsu_remove-replace-generic_IEOPS-788.svg[DC PSUの取り�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 サムスクリュー
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 D-SUB DC電源PSUケーブルコネクタ
 
 
 
  a| 
-image:../media/legend_icon_03.png["番号3"]
+image:../media/icon_round_3.png["番号3"]
  a| 
 電源装置ハンドル
 
 
 
  a| 
-image:../media/legend_icon_04.svg["番号4、幅= 30x"]
+image:../media/icon_round_4.png["番号4"]
 | PSUの固定ツメ（青） 
 |===
 . コントローラモジュールに交換用PSUを取り付けます。

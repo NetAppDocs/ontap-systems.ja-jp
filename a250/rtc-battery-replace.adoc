@@ -97,14 +97,14 @@ image::../media/drw_a250_pcm_remove_install.png[ラッチを開きます。]
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 レバー
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 ラッチ機構
 
@@ -120,12 +120,12 @@ image::../media/drw_a250_open_controller_module_cover.png[コントローラモ�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | 取り付けネジ 
 
 
  a| 
-image::../media/legend_icon_02.png[番号2]
+image::../media/icon_round_2.png[番号2]
  a| 
 コントローラモジュールカバー
 
@@ -156,21 +156,21 @@ image::../media/drw_a250_remove_rtc_batt.png[RTCバッテリの取り外し]
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 タブをバッテリケースからゆっくりと引き出します。* 注意： * 積極的に離れて引き出すと、タブが外れてしまう可能性があります。
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 バッテリを持ち上げます。* 注： * バッテリの極の向きをメモしておいてください。
 
 
 
  a| 
-image:../media/legend_icon_03.png["番号3"]
+image:../media/icon_round_3.png["番号3"]
  a| 
 バッテリがイジェクトされるはずです。
 
@@ -188,12 +188,12 @@ image::../media/drw_a250_install_rtc_batt.png[RTCバッテリの取り付け]
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | 正の極性を上向きにして、バッテリハウジングのタブの下にバッテリをスライドさせます。 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 バッテリをゆっくりと所定の位置に押し込み、タブでケースに固定されていることを確認します。
 

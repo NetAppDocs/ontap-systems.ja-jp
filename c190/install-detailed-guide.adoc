@@ -114,7 +114,7 @@ Micro-USB コンソールケーブル
  a| 
 該当なし
  a| 
-image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタを示す図"]
+image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタ"]
  a| 
 Windows または Mac 以外のラップトップ / コンソールでソフトウェアをセットアップする際のコンソール接続
 
@@ -170,21 +170,21 @@ image::../media/drw_cable_management_arm_install.png[ケーブルマネジメン
 
 
  a| 
-image::../media/oie_legend_icon_1_lg.svg[OIEの凡例アイコン1LG]
+image::../media/icon_square_1_green.png[アイコン正方形1緑]
  a| 
 クラスタインターコネクト
 
 
 
  a| 
-image::../media/oie_legend_icon_2_o.svg[OIE凡例アイコン2 o]
+image::../media/icon_square_2_yellow.png[番号2]
  a| 
 コントローラはデータネットワークスイッチをホストします
 
 
 
  a| 
-image::../media/oie_legend_icon_3_lp.svg[OIE凡例アイコン3 LP]
+image::../media/icon_square_3_orange.png[番号3]
  a| 
 コントローラと管理ネットワークスイッチ
 
@@ -236,7 +236,7 @@ image:../media/drw_c190_u_tnsc_clust_cbling.png["クラスタインターコネ�
 UTA2データネットワーク構成:: 次のいずれかのタイプのケーブルを使用して、データポートe0c/0cとe0d/0dまたはe0e/0eとe0f/0fをホストネットワークに接続します。
 +
 --
-image:../media/drw_c190_u_fc_10gbe_cbling.png["説明が付随しているデータポート接続の図"]
+image:../media/drw_c190_u_fc_10gbe_cabling.png["データポート接続"]
 
 --
 イーサネットネットワーク構成:: Cat 6 RJ45ケーブルを使用して、e0c~e0fポートをホストネットワークに接続します。次の図に示します。
@@ -249,7 +249,7 @@ image:../media/drw_c190_e_rj45_cbling.png["ホストネットワークのケー�
 
 . RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
 +
-image:../media/drw_c190_u_mgmt_cbling.png["管理ポートのケーブル接続"]
+image:../media/drw_c190_u_mgmt_cabling.png["管理ポートのケーブル接続"]
 
 
 
@@ -303,7 +303,7 @@ image:../media/drw_c190_u_switched_clust_cbling.png["クラスタインターコ
 UTA2データネットワーク構成:: 次のいずれかのタイプのケーブルを使用して、データポートe0c/0cとe0d/0dまたはe0e/0eとe0f/0fをホストネットワークに接続します。
 +
 --
-image:../media/drw_c190_u_fc_10gbe_cbling.png["説明が付随しているデータポート接続の図"]
+image:../media/drw_c190_u_fc_10gbe_cabling.png["データポート接続"]
 
 --
 イーサネットネットワーク構成:: Cat 6 RJ45ケーブルを使用して、e0c~e0fポートをホストネットワークに接続します。
@@ -316,7 +316,7 @@ image:../media/drw_c190_e_rj45_cbling.png["ホストネットワークのケー�
 
 . RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
 +
-image:../media/drw_c190_u_mgmt_cbling.png["管理ポートのケーブル接続"]
+image:../media/drw_c190_u_mgmt_cabling.png["管理ポートのケーブル接続"]
 
 
 

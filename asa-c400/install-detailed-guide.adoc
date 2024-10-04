@@ -109,7 +109,7 @@ FC ネットワーク接続
  a| 
 X66250-2-N-C （ 112-00342 ）
  a| 
-image:../media/oie_cable_fiber_lc_connector.png["光ファイバLCコネクタを示す図"]
+image:../media/oie_cable_fiber_lc_connector.png["LCファイバコネクタ"]
  a| 
 メザニンカード用の 16Gb FC ケーブルまたは 25GbE ケーブル（注文内容による）
 
@@ -133,7 +133,7 @@ Micro-USB コンソールケーブル
  a| 
 該当なし
  a| 
-image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタを示す図"]
+image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタ"]
  a| 
 ネットワーク検出をサポートしていないラップトップまたはコンソールでソフトウェアをセットアップする際に使用するコンソール接続
 

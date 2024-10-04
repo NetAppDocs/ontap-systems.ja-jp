@@ -33,14 +33,14 @@ image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAMの警告/ステー�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 NVRAMステータスLED
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 NVRAM警告LED
 
@@ -81,12 +81,12 @@ image::../media/drw_a70-90_pcm_remove_replace_ieops-1365.svg[コントローラ�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | Aロックラッチ 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 ロッキングピン
 
@@ -117,12 +117,12 @@ image::../media/drw_a70-90_psu_remove_replace_ieops-1368.svg[PSU取り外し]
 
 
  a| 
-image::../media/legend_icon_01.svg[番号1]
+image::../media/icon_round_1.png[番号1]
 | Terracotta PSUの固定ツメ 
 
 
  a| 
-image::../media/legend_icon_02.svg[番号2]
+image::../media/icon_round_2.png[番号2]
  a| 
 電源装置
 
@@ -154,14 +154,14 @@ image::../media/drw_a70-90_fan_remove_replace_ieops-1366.svg[ファンの取り�
 
 
  a| 
-image::../media/legend_icon_01.svg[番号1]
+image::../media/icon_round_1.png[番号1]
  a| 
 ファンの固定ツメ
 
 
 
  a| 
-image::../media/legend_icon_02.svg[番号2]
+image::../media/icon_round_2.png[番号2]
  a| 
 ファンモジュール
 
@@ -186,12 +186,12 @@ image::../media/drw_a70-90_remove_replace_nvmembat_ieops-1369.svg[NVバッテリ
 
 
  a| 
-image::../media/legend_icon_01.svg[番号1]
+image::../media/icon_round_1.png[番号1]
 | NVバッテリーエアダクト 
 
 
  a| 
-image::../media/legend_icon_02.svg[番号2]
+image::../media/icon_round_2.png[番号2]
  a| 
 NVバッテリパックプラグ
 
@@ -234,7 +234,7 @@ image::../media/drw_a70_90_dimm_ieops-1513.svg[DIMMマップ]
 
 
  a| 
-image::../media/legend_icon_01.svg[番号1]
+image::../media/icon_round_1.png[番号1]
 | システムDIMM 
 |===
 . DIMM を交換用コントローラモジュールに正しい向きで挿入できるように、ソケット内の DIMM の向きをメモします。
@@ -270,7 +270,7 @@ image::../media/drw_a70_90_io_remove_replace_ieops-1532.svg[I/Oモジュール�
 
 
  a| 
-image::../media/legend_icon_01.svg[番号1]
+image::../media/icon_round_1.png[番号1]
 | I/Oモジュールのカムレバー 
 |===
 . ターゲット I/O モジュールのケーブルをすべて取り外します。
@@ -315,21 +315,21 @@ image::../media/drw_a70-90_sys-mgmt_replace_ieops-1373.svg[システム管理モ
 
 
  a| 
-image::../media/legend_icon_01.svg[番号1]
+image::../media/icon_round_1.png[番号1]
  a| 
 システム管理モジュールのカムラッチ
 
 
 
  a| 
-image::../media/legend_icon_02.svg[番号2]
+image::../media/icon_round_2.png[番号2]
  a| 
 ブートメディアロックボタン
 
 
 
  a| 
-image::../media/legend_icon_03.svg[番号3]
+image::../media/icon_round_3.png[番号3]
  a| 
 交換用システム管理モジュール
 
@@ -361,13 +361,13 @@ image::../media/drw_a70-90_nvram12_remove_replace_ieops-1370.svg[NVRAM12モジ�
 |===
 
 
-| image:../media/legend_icon_01.png["番号1"]  a| 
+| image:../media/icon_round_1.png["番号1"]  a| 
 カムロックボタン
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
 | DIMMの固定ツメ 
 |===
 . 障害のあるコントローラモジュールからNVRAMモジュールを取り外します。

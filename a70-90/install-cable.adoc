@@ -74,7 +74,7 @@ NOTE: クラスタトラフィックおよびHAトラフィックのシステム
 * 100GbEケーブル*
 
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[100Gbイーサネットケーブル]
+image::../media/oie_cable_sfp_gbe_copper.png[100Gbイーサネットケーブル]
 
 +
 image::../media/drw_70-90_network_cabling1_ieops-1654.svg[100Gbイーサネットネットワークへのケーブル接続]
@@ -84,7 +84,7 @@ image::../media/drw_70-90_network_cabling1_ieops-1654.svg[100Gbイーサネッ�
 * 4ポート、10/25GbEホスト*
 
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[10/25Gbケーブル]
+image::../media/oie_cable_sfp_gbe_copper.png[10/25Gbケーブル]
 
 +
 image::../media/drw_70-90_network_cabling2_ieops-1655.svg[100Gbイーサネットネットワークへのケーブル接続]
@@ -93,7 +93,7 @@ image::../media/drw_70-90_network_cabling2_ieops-1655.svg[100Gbイーサネッ�
 
 . 1000BASE-T RJ-45ケーブルを使用して、コントローラ管理（レンチ）ポートを管理ネットワークスイッチに接続します。
 +
-image::../media/oie_cable_rj45.svg[RJ45ケーブル]
+image::../media/oie_cable_rj45.png[RJ45ケーブル]
 
 +
 * 1000BASE-T RJ-45ケーブル*
@@ -124,7 +124,7 @@ NOTE: クラスタインターコネクトトラフィックとHAトラフィッ
 * 100GbEケーブル*
 
 +
-image::../media/oie_cable100_gbe_qsfp28.svg[100Gbケーブル]
+image::../media/oie_cable100_gbe_qsfp28.png[100Gbケーブル]
 
 +
 image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[クラスタネットワークへのクラスタ接続のケーブル接続]
@@ -145,7 +145,7 @@ NOTE: クラスタトラフィックおよびHAトラフィックのシステム
 * 100GbEケーブル*
 
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[100Gbイーサネットケーブル]
+image::../media/oie_cable_sfp_gbe_copper.png[100Gbイーサネットケーブル]
 
 +
 image::../media/drw_70-90_network_cabling1_ieops-1654.svg[100Gbイーサネットネットワークへのケーブル接続]
@@ -155,7 +155,7 @@ image::../media/drw_70-90_network_cabling1_ieops-1654.svg[100Gbイーサネッ�
 * 4ポート、10/25GbEホスト*
 
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[10/25Gbイーサネットケーブル]
+image::../media/oie_cable_sfp_gbe_copper.png[10/25Gbイーサネットケーブル]
 
 +
 image::../media/drw_70-90_network_cabling2_ieops-1655.svg[10 / 25Gbイーサネットネットワークへのケーブル接続]
@@ -164,7 +164,7 @@ image::../media/drw_70-90_network_cabling2_ieops-1655.svg[10 / 25Gbイーサネ�
 
 . 1000BASE-T RJ-45ケーブルを使用して、コントローラの管理（レンチ）ポートを管理ネットワークスイッチに接続します。
 +
-image::../media/oie_cable_rj45.svg[RJ-45ケーブル]
+image::../media/oie_cable_rj45.png[RJ-45ケーブル]
 
 +
 * 1000BASE-T RJ-45ケーブル*
@@ -193,7 +193,7 @@ IMPORTANT: まだ電源コードを接続しないでください。
 
 * 100GbE QSFP28銅線ケーブル*
 
-image::../media/oie_cable100_gbe_qsfp28.svg[100GbE QSFP28銅線ケーブル]
+image::../media/oie_cable100_gbe_qsfp28.png[100GbE QSFP28銅線ケーブル]
 
 .手順
 . コントローラAのポートe11aをNSM Aのポートe0aに接続します。
@@ -215,7 +215,7 @@ image:../media/drw_a70-90_1shelf_cabling_b_ieops-1732.svg["コントローラB e
 
 * 100GbE QSFP28銅線ケーブル*
 
-image::../media/oie_cable100_gbe_qsfp28.svg[100GbE QSFP28銅線ケーブル]
+image::../media/oie_cable100_gbe_qsfp28.png[100GbE QSFP28銅線ケーブル]
 
 .手順
 . コントローラAで、次のポートを接続します。

@@ -35,7 +35,7 @@ MetroCluster 構成でセットアップされていないストレージシス�
 
 [role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-storage/install-9336c-storage.html["Cisco Nexus 9336C-FX2スイッチを設置します"^]
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/install-hardware-sn2100-storage.html["NVIDIA SN2100スイッチをインストールします"^]
+* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100-storage/configure-overview-sn2100-storage.html["NVIDIA SN2100スイッチをインストールします"^]
 
 
 [role="quick-margin-para"]

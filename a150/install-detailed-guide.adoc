@@ -97,7 +97,7 @@ X6536-R6 （ 112-00090 ）、 5m
 
 X6554-R6 （ 112-00189 ）、 15m
  a| 
-image:../media/oie_cable_fiber_lc_connector.png["光ファイバLCコネクタを示す図"]
+image:../media/oie_cable_fiber_lc_connector.png["LCファイバコネクタ"]
  a| 
 FC ホストネットワーク
 
@@ -138,7 +138,7 @@ Micro-USB コンソールケーブル
  a| 
 該当なし
  a| 
-image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタを示す図"]
+image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタ"]
  a| 
 Windows または Mac 以外のラップトップ / コンソールでソフトウェアをセットアップする際のコンソール接続
 
@@ -195,21 +195,21 @@ image::../media/drw_cable_management_arm_install.png[ケーブルマネジメン
 
 
  a| 
-image：：../media/oie_legend_icon_1_lg.svgwidth=40px]
+image::../media/icon_square_1_green.png[番号1]
  a| 
 クラスタインターコネクト
 
 
 
  a| 
-image::../media/oie_legend_icon_2_o.svg[OIE凡例アイコン2 o]
+image::../media/icon_square_2_yellow.png[番号2]
  a| 
 コントローラはデータネットワークスイッチをホストします
 
 
 
  a| 
-image::../media/oie_legend_icon_3_lp.svg[OIE凡例アイコン3 LP]
+image::../media/icon_square_3_orange.png[番号3]
  a| 
 コントローラと管理ネットワークスイッチ
 
@@ -240,7 +240,7 @@ UTA2データネットワーク構成:: 次のいずれかのタイプのケー�
 ** FCホストの場合は、0cと0d *または* 0eと0fを使用します。
 ** 10GbEシステムの場合は、e0cとe0d *または* e0eとe0fを使用します。
 +
-image:../media/drw_c190_u_fc_10gbe_cbling.png["説明が付随しているデータポート接続の図"]
+image:../media/drw_c190_u_fc_10gbe_cabling.png["データポート接続"]
 
 +
 一方のポートペアを CNA 、もう一方のポートペアを FC として接続するか、あるいは両方のポートペアを CNA または FC として接続することができます。
@@ -258,7 +258,7 @@ image:../media/drw_c190_e_rj45_cbling.png["ホストネットワークのケー�
 
 . RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
 +
-image:../media/drw_c190_u_mgmt_cbling.png["管理ポートのケーブル接続"]
+image:../media/drw_c190_u_mgmt_cabling.png["管理ポートのケーブル接続"]
 
 
 
@@ -291,7 +291,7 @@ UTA2データネットワーク構成:: 次のいずれかのタイプのケー�
 ** FCホストの場合は、0cおよび0d**または** 0eおよび0fを使用します。
 ** 10GbEシステムの場合は、e0cとe0d**または** e0eとe0fを使用します。
 +
-image:../media/drw_c190_u_fc_10gbe_cbling.png["説明が付随しているデータポート接続の図"]
+image:../media/drw_c190_u_fc_10gbe_cabling.png["データポート接続"]
 
 +
 一方のポートペアを CNA 、もう一方のポートペアを FC として接続するか、あるいは両方のポートペアを CNA または FC として接続することができます。
@@ -309,7 +309,7 @@ image:../media/drw_c190_e_rj45_cbling.png["ホストネットワークのケー�
 
 . RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
 +
-image:../media/drw_c190_u_mgmt_cbling.png["管理ポートのケーブル接続"]
+image:../media/drw_c190_u_mgmt_cabling.png["管理ポートのケーブル接続"]
 
 
 

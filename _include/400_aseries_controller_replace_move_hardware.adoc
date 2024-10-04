@@ -34,14 +34,14 @@ image:../media/drw_A400_Remove_controller.png["コントローラモジュール
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 ロックラッチ
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 コントローラがシャーシからわずかに引き出されます
 
@@ -64,7 +64,7 @@ image::../media/drw_a400_empty_riser_remove.png[空のライザーの取り外�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 ライザーリリースラッチ
 
@@ -95,14 +95,14 @@ image::../media/drw_A400_psu.png[電源装置を交換してください]
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 PSUの固定ツメ
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 電源ケーブル固定クリップ
 
@@ -142,21 +142,21 @@ image::../media/drw_A400_nvdimm-batt.png[NVDIMMバッテリの取り外し]
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 NVDIMM バッテリプラグ
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 NVDIMMバッテリの固定ツメ
 
 
 
  a| 
-image:../media/legend_icon_03.png["番号3"]
+image:../media/icon_round_3.png["番号3"]
  a| 
 NVDIMM バッテリ
 
@@ -195,14 +195,14 @@ image::../media/drw_A400_Replace-boot_media.png[ブートメディアを取り�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 ブートメディアの固定ツメ
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 ブートメディア
 
@@ -250,28 +250,28 @@ image::../media/drw_A400_Replace-PCIe-cards.png[PCIeカードの取り外し]
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 ライザーロックラッチ
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 PCIカードロックラッチ
 
 
 
  a| 
-image:../media/legend_icon_03.png["番号3"]
+image:../media/icon_round_3.png["番号3"]
  a| 
 PCIロックプレート
 
 
 
  a| 
-image:../media/legend_icon_04.png["番号4"]
+image:../media/icon_round_4.png["番号4"]
  a| 
 PCIカード
 
@@ -322,21 +322,21 @@ image::../media/drw_A400_Replace-NVDIMM-DIMM.png[DIMMの移動]
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 DIMMの固定ツメ
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 DIMM
 
 
 
  a| 
-image:../media/legend_icon_03.png["番号3"]
+image:../media/icon_round_3.png["番号3"]
  a| 
 DIMMソケット
 
@@ -387,14 +387,14 @@ image::../media/drw_A400_Install_controller_source.png[コントローラの取�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 コントローラモジュール
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 コントローラのロックラッチ
 

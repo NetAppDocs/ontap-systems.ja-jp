@@ -68,7 +68,7 @@ X6566B-05-R6、.5、
 
 X6566B-2-R6、2m
  a| 
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP銅線コネクタ]
  a| 
 ネットワークケーブル
 
@@ -99,7 +99,7 @@ X66250-5、5m
 
 X66250-15、15m
  a| 
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP銅線コネクタ]
  a| 
 FCネットワーク
 
@@ -112,7 +112,7 @@ X6561-R6
 
 X6562-R6
  a| 
-image::../media/oie_cable_rj45.svg[RJ-45ケーブル]
+image::../media/oie_cable_rj45.png[RJ-45ケーブル]
  a| 
 管理ネットワークとイーサネットデータ
 
@@ -138,7 +138,7 @@ USB-Cコンソールケーブル
  a| 
 パーツ番号ラベルなし
  a| 
-image::../media/oie_cable_micro_usb.svg[OIEケーブルマイクロUSB]
+image::../media/oie_cable_micro_usb.png[マイクロUSBコネクタ]
  a| 
 Windows または Mac 以外のラップトップ / コンソールでソフトウェアをセットアップする際のコンソール接続
 
@@ -149,7 +149,7 @@ Windows または Mac 以外のラップトップ / コンソールでソフト�
  a| 
 パーツ番号ラベルなし
  a| 
-image::../media/oie_cable_power.svg[OIEケーブル電源]
+image::../media/oie_cable_power.png[OIEケーブル電源]
  a| 
 ストレージシステムの電源
 
@@ -160,7 +160,7 @@ image::../media/oie_cable_power.svg[OIEケーブル電源]
  a| 
 オプションのFCケーブル
  a| 
-image::../media/oie_cable_fiber_lc_connector.svg[OIE ケーブルファイバ LC コネクタ]
+image::../media/oie_cable_fiber_lc_connector.png[LCファイバコネクタ]
  a| 
 追加のFCネットワークケーブル
 
@@ -202,21 +202,21 @@ image::../media/drw_cable_management_arm_install.svg[DRW ケーブルマネジ�
 
 
  a| 
-image::../media/oie_legend_icon_1_lg.svg[吹き出しアイコン3 ]]
+image::../media/icon_square_1_green.png[番号3 ]]
  a| 
 クラスタインターコネクト
 
 
 
  a| 
-image::../media/oie_legend_icon_2_lp.svg[吹き出しアイコン2]
+image::../media/icon_square_2_yellow.png[番号2]
  a| 
 管理ネットワークスイッチ
 
 
 
  a| 
-image::../media/oie_legend_icon_3_o.svg[吹き出しアイコン3]
+image::../media/icon_square_3_orange.png[番号3]
  a| 
 ホストネットワークスイッチ
 
@@ -257,7 +257,7 @@ image::../media/drw_2800_tnsc_cluster_cabling_IEOPS-892.svg[DRW 2800 TNSCクラ�
 
 . RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
 +
-image::../media/oie_cable_rj45.svg[RJ-45ケーブル]
+image::../media/oie_cable_rj45.png[RJ-45ケーブル]
 
 +
 * RJ45ケーブル*
@@ -274,14 +274,14 @@ image::../media/drw_2800_network_cabling_IEOPS-894.svg[DRW 2800ネットワー�
 +
 *** 4ポート、10 / 25Gbイーサネット、SFP28
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP銅線コネクタ]
 
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[OIEケーブル25GbイーサネットSFP28 IEOPS 1069]
 
 *** 4ポート、10GBASE-T、RJ45
 +
-image::../media/oie_cable_rj45.svg[RJ-45ケーブル]
+image::../media/oie_cable_rj45.png[RJ-45ケーブル]
 
 
 
@@ -289,11 +289,11 @@ image::../media/oie_cable_rj45.svg[RJ-45ケーブル]
 +
 *** 4ポート、32Gbファイバチャネル、SFP+（ターゲットのみ）
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP銅線コネクタ]
 
 *** 4ポート、32Gbファイバチャネル、SFP+（イニシエータ/ターゲット）
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP銅線コネクタ]
 
 
 
@@ -301,10 +301,10 @@ image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
 +
 *** 10 / 25Gbイーサネット（SFP28）×2ポート+32Gb FC（SFP+）×2ポート
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP銅線コネクタ]
 
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP銅線コネクタ]
 
 
 
@@ -335,7 +335,7 @@ image::../media/drw_2800_switched_cluster_cabling_IEOPS-893.svg[DRW 2800スイ�
 
 . RJ45 ケーブルを使用して、 e0M ポートを管理ネットワークスイッチに接続します。
 +
-image::../media/oie_cable_rj45.svg[RJ-45ケーブル]
+image::../media/oie_cable_rj45.png[RJ-45ケーブル]
 
 +
 image::../media/drw_2800_management_connection_IEOPS-1077.svg[DRW 2800管理接続IEOPS 1077]
@@ -349,14 +349,14 @@ image::../media/drw_2800_network_cabling_IEOPS-894.svg[DRW 2800ネットワー�
 +
 *** 4ポート、10 / 25Gbイーサネット、SFP28
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP銅線コネクタ]
 
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[OIEケーブル25GbイーサネットSFP28 IEOPS 1069]
 
 *** 4ポート、10GBASE-T、RJ45
 +
-image::../media/oie_cable_rj45.svg[RJ-45ケーブル]
+image::../media/oie_cable_rj45.png[RJ-45ケーブル]
 
 
 
@@ -364,11 +364,11 @@ image::../media/oie_cable_rj45.svg[RJ-45ケーブル]
 +
 *** 4ポート、32Gbファイバチャネル、SFP+（ターゲットのみ）
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP銅線コネクタ]
 
 *** 4ポート、32Gbファイバチャネル、SFP+（イニシエータ/ターゲット）
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP銅線コネクタ]
 
 
 
@@ -376,10 +376,10 @@ image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
 +
 *** 10 / 25Gbイーサネット（SFP28）×2ポート+32Gb FC（SFP+）×2ポート
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP銅線コネクタ]
 
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE ケーブル SFP GbE 銅線]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP銅線コネクタ]
 
 
 
@@ -409,21 +409,21 @@ NOTE: この例では DS224C を使用していますサポートされている
 
 
  a| 
-image::../media/oie_legend_icon_1_lo.svg[OIE凡例アイコン1 lo]
+image::../media/icon_square_1_blue.png[アイコン正方形1青]
  a| 
 シエルフ/シエルフカンケエフルセツソク
 
 
 
  a| 
-image::../media/oie_legend_icon_2_mb.svg[OIE凡例アイコン2 MB]
+image::../media/icon_square_2_yellow.png[アイコン正方形2黄色]
  a| 
 コントロオラAヲトライフシエルフニ
 
 
 
  a| 
-image::../media/oie_legend_icon_3_t.svg[OIE凡例アイコン3]
+image::../media/icon_square_3_orange.png[アイコン正方形3オレンジ]
  a| 
 コントローラBをドライブシェルフに接続
 

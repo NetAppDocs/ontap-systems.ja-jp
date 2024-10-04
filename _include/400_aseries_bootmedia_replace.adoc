@@ -30,14 +30,14 @@ image::../media/drw_A400_Remove_controller.png[コントロオラモシユウル
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 ロックラッチ
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 コントローラがシャーシからわずかに引き出されます
 
@@ -75,21 +75,21 @@ image::../media/drw_A400_open-air-duct.png[エアダクトを開く]
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 固定ツメ
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 エアダクトをコントローラの背面方向にスライドさせます
 
 
 
  a| 
-image::../media/legend_icon_03.png[番号3]
+image::../media/icon_round_3.png[番号3]
  a| 
 エアダクトを上に回転させます
 
@@ -108,14 +108,14 @@ image::../media/drw_A400_Replace-boot_media.png[ブートメディアの取り�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 青色のボタンを押します
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 ブートメディアを回転させてソケットから取り外します
 

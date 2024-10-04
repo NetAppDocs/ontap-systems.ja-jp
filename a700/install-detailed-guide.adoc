@@ -115,7 +115,7 @@ X6553-R6 （ 112-00188 ）、 2m
 
 X6536-R6 （ 112-00090 ）、 5m
  a| 
-image:../media/oie_cable_fiber_lc_connector.png["光ファイバLCコネクタを示す図"]
+image:../media/oie_cable_fiber_lc_connector.png["LCファイバコネクタ"]
  a| 
 FC ホストネットワーク
 
@@ -154,7 +154,7 @@ Micro-USB コンソールケーブル
  a| 
 該当なし
  a| 
-image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタを示す図"]
+image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタ"]
  a| 
 Windows または Mac 以外のラップトップ / コンソールでソフトウェアをセットアップする際のコンソール接続
 

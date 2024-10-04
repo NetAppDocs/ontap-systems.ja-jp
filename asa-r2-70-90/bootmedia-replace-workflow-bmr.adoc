@@ -17,7 +17,7 @@ summary: 障害が発生したコンポーネントは、プロバイダから�
 [role="quick-margin-para"]
 ブートメディアを交換するには、一定の要件を満たす必要があります。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:bootmedia-shutdown-asa-r2.html["障害のあるコントローラをシャットダウンします"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:bootmedia-shutdown-bmr.html["障害のあるコントローラをシャットダウンします"]
 [role="quick-margin-para"]
 障害のあるコントローラをシャットダウンまたはテイクオーバーして、正常なコントローラが障害のあるコントローラストレージから引き続きデータを提供できるようにします。
 
@@ -29,6 +29,6 @@ summary: 障害が発生したコンポーネントは、プロバイダから�
 [role="quick-margin-para"]
 パートナーコントローラからONTAPイメージをリストアします。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:bootmedia-complete-rma.html["障害のあるパーツをネットアップに返却します"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:bootmedia-complete-rma-bmr.html["障害のあるパーツをネットアップに返却します"]
 [role="quick-margin-para"]
 障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。

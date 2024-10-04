@@ -200,14 +200,14 @@ image::../media/drw_A400_Remove_controller.png[コントロオラモシユウル
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 ロックラッチ
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 コントローラがシャーシからわずかに引き出されます
 
@@ -232,28 +232,28 @@ image:../media/drw_A400_Replace-PCIe-cards.png["PCIeカードの取り外し"]
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 ライザーロックラッチ
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 PCIカードロックラッチ
 
 
 
  a| 
-image:../media/legend_icon_03.png["番号3"]
+image:../media/icon_round_3.png["番号3"]
  a| 
 PCIロックプレート
 
 
 
  a| 
-image:../media/legend_icon_04.png["番号4"]
+image:../media/icon_round_4.png["番号4"]
  a| 
 PCIカード
 
@@ -311,21 +311,21 @@ image::../media/drw_A400_Replace-mezz-card.png[メザニンカードの取り外
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 PCIライザー
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 ライザー取り付けネジ
 
 
 
  a| 
-image:../media/legend_icon_03.png["番号3"]
+image:../media/icon_round_3.png["番号3"]
  a| 
 ライザーカード
 

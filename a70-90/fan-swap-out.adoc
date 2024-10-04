@@ -142,14 +142,14 @@ image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAMの警告/ステー�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 NVRAMステータスLED
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 NVRAM警告LED
 
@@ -190,12 +190,12 @@ image::../media/drw_a70-90_pcm_remove_replace_ieops-1365.svg[コントローラ�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | Aロックラッチ 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 ロッキングピン
 
@@ -222,12 +222,12 @@ image::../media/drw_a70-90_fan_remove_replace_ieops-1366.svg[ファンの交換]
 |===
 
 
-| image:../media/legend_icon_01.png["番号1"]  a| 
+| image:../media/icon_round_1.png["番号1"]  a| 
 ファンの固定ツメ
 
 
 
-| image:../media/legend_icon_02.png["番号2"] | ファンモジュール 
+| image:../media/icon_round_2.png["番号2"] | ファンモジュール 
 |===
 . 交換用ファンモジュールの端をコントローラモジュールの開口部に合わせ、ロックラッチが所定の位置にカチッと収まるまで、交換用ファンモジュールをコントローラモジュールにスライドさせます。
 

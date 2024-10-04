@@ -33,12 +33,12 @@ image::../media/drw_a250_pcm_remove_install.png[ラッチを開く]
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | レバー 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 ラッチ機構
 
@@ -54,12 +54,12 @@ image::../media/drw_a250_open_controller_module_cover.png[コントローラモ�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | 取り付けネジ 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 コントローラモジュールカバー
 
@@ -96,12 +96,12 @@ image::../media/drw_a250_replace_psu.png[電源装置の取り外し]
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | 電源装置の固定ツメ（青） 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 電源装置
 
@@ -133,7 +133,7 @@ image::../media/drw_a250_replace_fan.png[ファンモジュールの取り外し
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | ファンモジュール 
 |===
 . ファンモジュールを交換用コントローラモジュールに移動し、ファンモジュールの端をコントローラモジュールの開口部に合わせ、ファンモジュールをスライドさせます。
@@ -161,12 +161,12 @@ image::../media/drw_a250_replace_boot_media.png[ブートメディアの交換]
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | 障害のあるコントローラモジュールのマザーボードにブートメディアを固定しているネジを外します。 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 障害のあるコントローラモジュールからブートメディアを持ち上げて取り出します。
 
@@ -221,19 +221,19 @@ image::../media/drw_a250_replace_mezz_card.png[メザニンカードの取り外
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | コントローラモジュール前面のネジを外します。 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 コントローラモジュールのネジを緩めます。
 
 
 
  a| 
-image:../media/legend_icon_03.png["番号3"]
+image:../media/icon_round_3.png["番号3"]
  a| 
 メザニンカードを移動します。
 
@@ -274,26 +274,26 @@ image::../media/drw_a250_replace_nvmem_batt.png[NVMEMバッテリの取り外し
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | バッテリプラグ前面のクリップを押します。 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 バッテリケーブルをソケットから抜きます。
 
 
 
  a| 
-image:../media/legend_icon_03.png["番号3"]
+image:../media/icon_round_3.png["番号3"]
  a| 
 バッテリをつかんで、「 PUSH 」と書かれた青色の固定ツメを押します。
 
 
 
  a| 
-image:../media/legend_icon_04.png["番号4"]
+image:../media/icon_round_4.png["番号4"]
  a| 
 バッテリを持ち上げてホルダーとコントローラモジュールから取り出します。
 
@@ -328,12 +328,12 @@ image::../media/drw_a250_close_controller_module_cover.png[コントローラモ
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
 | コントローラモジュールカバー 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 取り付けネジ
 

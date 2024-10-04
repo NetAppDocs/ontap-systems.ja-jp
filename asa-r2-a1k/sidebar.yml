@@ -17,13 +17,13 @@ entries:
     - title: 要件を確認する
       url: "/asa-r2-a1k/bootmedia-replace-requirements-bmr.html"
     - title: 障害のあるコントローラをシャットダウンします
-      url: "/asa-r2-a1k/bootmedia-shutdown-asa-r2.html"
+      url: "/asa-r2-a1k/bootmedia-shutdown-bmr.html"
     - title: ブートメディアを交換します
       url: "/asa-r2-a1k/bootmedia-replace-bmr.html"
     - title: ブートメディアへのイメージのリストア
       url: "/asa-r2-a1k/bootmedia-recovery-image-boot-bmr.html"
     - title: 障害のある部品をネットアップに返却します
-      url: "/asa-r2-a1k/bootmedia-complete-rma.html"
+      url: "/asa-r2-a1k/bootmedia-complete-rma-bmr.html"
   - title: 手動
     entries:
     - title: ブートメディアの交換ワークフロー

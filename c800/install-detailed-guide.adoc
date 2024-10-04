@@ -142,7 +142,7 @@ Micro-USB コンソールケーブル
  a| 
 該当なし
  a| 
-image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタを示す図"]
+image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタ"]
  a| 
 ソフトウェアのセットアップ中のコンソール接続
 
@@ -170,7 +170,7 @@ image:../media/oie_cable_power.png["電源ケーブル"]
 .手順
 . 必要に応じてレールキットを取り付けます。
 +
-link:../com.netapp.doc.hw-rail-superrail/home.html["丸穴 4 ポストラックへの SuperRail の取り付け"^]
+link:/platform-supplemental/superrail-install.html["SuperRail キットの取り付け手順"^]
 
 . レールキットに付属の手順書に従って、システムを設置して固定します。
 +
@@ -227,7 +227,7 @@ video::edc42447-f721-4cbe-b080-ab0c0123a139[panopto]
 
 
  a| 
-image:../media/oie_legend_icon_1_dp.png["番号1"]
+image:../media/icon_square_1_blue.png["番号1"]
  a| 
 HA インターコネクトポートをケーブル接続します。
 
@@ -239,7 +239,7 @@ image:../media/drw_affa800_ha_pair_cabling.png["HAペアノケーブルセツゾ
 
 
  a| 
-image:../media/oie_legend_icon_2_lg.png["番号2"]
+image:../media/icon_square_2_yellow.png["番号2"]
  a| 
 クラスタインターコネクトポートをケーブル接続します。
 
@@ -251,7 +251,7 @@ image:../media/drw_affa800_tnsc_clust_cabling.png["2ノードスイッチレス�
 
 
  a| 
-image:../media/oie_legend_icon_3_lp.png["手順 3"]
+image:../media/icon_square_3_orange.png["手順 3"]
  a| 
 管理ポートを管理ネットワークスイッチにケーブル接続します    image:../media/drw_affa800_mgmt_cabling.png["システム背面の管理ポートの場所を示す図"]
 
@@ -302,7 +302,7 @@ video::49e48140-4c5a-4395-a7d7-ab0c0123a10e[panopto]
 
 
  a| 
-image:../media/oie_legend_icon_1_dp.png["番号1"]
+image:../media/icon_square_1_blue.png["番号1"]
  a| 
 HA インターコネクトポートをケーブル接続します。
 
@@ -314,7 +314,7 @@ image:../media/drw_affa800_ha_pair_cabling.png["HAペアノケーブルセツゾ
 
 
  a| 
-image:../media/oie_legend_icon_2_lg.png["番号2"]
+image:../media/icon_square_2_yellow.png["番号2"]
  a| 
 クラスタインターコネクトポートを 100GbE クラスタインターコネクトスイッチにケーブル接続します。
 ** e0a
@@ -324,7 +324,7 @@ image:../media/drw_affa800_switched_clust_cabling.png["クラスタインター�
 
 
  a| 
-image:../media/oie_legend_icon_3_lp.png["手順 3"]
+image:../media/icon_square_3_orange.png["手順 3"]
  a| 
 管理ポートを管理ネットワークスイッチにケーブル接続します    image:../media/drw_affa800_mgmt_cabling.png["システム背面の管理ポートの場所を示す図"]
 
@@ -467,14 +467,14 @@ video::09dade4f-00bd-4d41-97d7-ab0c0123a0b4[panopto]
 
 
  a| 
-image:../media/oie_legend_icon_1_mb.png["番号1"]
+image:../media/icon_square_1_blue.png["番号1"]
  a| 
 コントローラ A をシェルフにケーブル接続します。    image:../media/drw_affa800_1shelf_cabling_a.png["1台のシェルフへのコントローラのケーブル接続"]
 
 
 
  a| 
-image:../media/oie_legend_icon_2_lo.png["番号2"]
+image:../media/icon_square_2_yellow.png["番号2"]
  a| 
 コントローラ B をシェルフにケーブル接続します。    image:../media/drw_affa800_1shelf_cabling_b.png["コントロオラBトタンイチノシエルフノケエフル"]
 
@@ -505,14 +505,14 @@ video::fe50ac38-9375-4e6b-85af-ab0c0123a0e0[panopto]
 
 
  a| 
-image:../media/oie_legend_icon_1_mb.png["番号1"]
+image:../media/icon_square_1_blue.png["番号1"]
  a| 
 コントローラ A をシェルフにケーブル接続します。    image:../media/drw_affa800_2shelf_cabling_a.png["コントロオラAト2シエルフノケエフル"]
 
 
 
  a| 
-image:../media/oie_legend_icon_2_lo.png["番号2"]
+image:../media/icon_square_2_yellow.png["番号2"]
  a| 
 コントローラ B をシェルフにケーブル接続します。    image:../media/drw_affa800_2shelf_cabling_b.png["コントローラBと2台のシェルフのケーブル接続"]
 

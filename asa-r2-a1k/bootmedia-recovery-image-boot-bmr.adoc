@@ -11,81 +11,57 @@ summary: ONTAP イメージを USB ドライブからブートし、ファイル
 
 
 [role="lead"]
-ONTAPイメージ（ブートメディアリカバリ）は、ONTAP 9 .16.0以降を実行しているASA R2システムを使用して、パートナーノードからリストアできます `boot_recovery -partner`。
+ブートメディアが破損した場合は、パートナーノードからONTAPイメージをリストアします。
 
-.作業を開始する前に
-ノードをブートしたときにそのノードのブートメディアが破損すると、Loaderプロンプトに次のメッセージとブートプロセス（stop）が表示されます。
+.このタスクについて
+ノードのブートメディアが破損すると、ブートプロセスがLoaderプロンプトで停止し、ブートエラーメッセージが表示されます。
 
+これらのブートエラーメッセージが表示された場合は、パートナーノードからONTAPイメージをリストアする必要があります。
+
+.ブートエラーメッセージの例を表示します。
+[%collapsible]
+====
 ....
-
 Can't find primary boot device u0a.0
 Can't find backup boot device u0a.1
 ACPI RSDP Found at 0x777fe014
 
-
 Starting AUTOBOOT press Ctrl-C to abort...
-Could not load fat://boot0/X86_64/freebsd/image1/kernel:Device not found
+Could not load fat://boot0/X86_64/freebsd/image1/kernel: Device not found
 
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0,fat)
-
-
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0,fat)
-
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0, fat)
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0, fat)
 
 Autoboot of PRIMARY image failed. Device not found (-6)
 LOADER-A>
-
 ....
-このメッセージが表示された場合は、ONTAPイメージをリストアする必要があります。
+====
+.手順
+. Loaderプロンプトで、次のコマンドを入力します。
++
+`boot_recovery -partner`
 
-ご使用の構成に一致するシングルノード自動リカバリオプションを選択します。
++
+画面に次のメッセージが表示されます。
 
++
+`Starting boot media recovery (BMR) process. Press Ctrl-C to abort…`
+
+. Loaderでローカルクラスタポートが設定され、パートナーノードから実行されるため、ブートメディアのリカバリプロセスを監視し `netboot`ます。
++
+ネットブートの実行中は `Starting BMR`、メッセージが表示されます。
+
+. 暗号化方式に応じて、シングルノード構成に一致するオプションを選択します。
++
 [role="tabbed-block"]
 ====
-.オプション1：暗号化なしのリカバリ
+.暗号化なし
 --
-ブートメディアイメージをリストアします。
+暗号化が検出されなかった場合は、キー管理を必要とせずにブートメディアのリカバリプロセスが続行されます。
 
-.手順
-. Loaderプロンプトで、_boot_recovery-partner_commandを入力します。
-+
-画面にメッセージが表示さ `Starting boot media recovery (BMR) process press Ctrl-C to abort...`れ、初期チェックが開始されます。
+パートナーノードからバックアップ設定、envファイル、mdb、およびrdbがリストアされる間、リカバリプロセスを引き続き監視します。
 
-. Loaderがローカルクラスタポートを設定し、を使用してネットブートを実行する際のプロセスを監視します `\http://<remote-partner-IP>:65530/recoverydisk/image.tgz`。
-+
-ネットブートが実行されると、 `Starting BMR ...`が画面に表示され、インストールプロセスが完了します。
-
-+
-.. キー管理ツールが設定されていない場合は、次のメッセージが表示されます。
-+
-....
-key manager is not configured. Exiting.
-....
-.. 次のメッセージが表示された場合は、オンボードキーマネージャ（OKM）が設定されています。
-+
-....
-
-key manager is configured.
-Entering Bootmenu Option 10...
-
-This option must be used only in disaster recovery procedures. Are you sure? (y or n):
-
-....
-+
-に進み、リカバリプロセスを完了します。
-
-.. 次のメッセージが表示された場合は、外部キーマネージャ（EKM）が設定されています。EKMトピックに移動し、リカバリプロセスを完了します。
-+
-....
-Error when fetching key manager config from partner 169.254.139.209: 28
-Has key manager been configured on this system? {y|n}
-
-....
-
-
-. BMRプロセスを監視して、パートナーからrestore backup config、env file、mdb、およびrdbを実行します。
-. 次のように表示されると、ノードがリブートし、BMRが完了します。
-
+リカバリプロセスが完了すると、ノードがリブートします。次のメッセージは、リカバリが成功したことを示します。
 
 ....
 
@@ -100,30 +76,22 @@ varfs_backup_restore: bootarg.abandon_varfs is set! Skipping /var backup.
 
 ....
 --
-.オプション2：オンボードキーマネージャを使用したリカバリ
+.オンボードキーマネージャ（ OKM ）
 --
-ブートメディアイメージをリストアします。
+オンボードキーマネージャ（OKM）が検出されると、次のプロンプトが表示されます。
 
-.手順
-. Loaderプロンプトで、_boot_recovery-partner_commandを入力します。
-+
-画面にメッセージが表示さ `Starting boot media recovery (BMR) process press Ctrl-C to abort...`れ、ブートリカバリファイルの初期チェックとインストールが開始されます。
-
-+
-.. オンボードキーマネージャ（OKM）が設定されている場合は、次のように表示されます。
-+
 ....
 key manager is configured.
 Entering Bootmenu Option 10...
 
 This option must be used only in disaster recovery procedures. Are you sure? (y or n):
 ....
-
-
-. プロンプトで「_y_」と入力します。
-. 次のメッセージが表示されたら、オンボードキーマネージャのパスフレーズを入力します。 `Enter the passphrase for onboard key management:`
-. パスフレーズの確認を求められたら、オンボードキーマネージャのパスフレーズをもう一度入力します。
+.. ブートメニューオプションのプロンプトで、と入力して、 `Y`ブートメディアリカバリオプションの使用を確定します。
+.. プロンプトが表示されたらオンボードキーマネージャのパスフレーズを入力し、確認のためにもう一度パスフレーズを入力します。
 +
+.パスフレーズのプロンプトの例を表示します。
+[%collapsible]
+=====
 ....
 Enter the passphrase for onboard key management:
 Enter the passphrase again to confirm:
@@ -139,8 +107,10 @@ QRHwv+1aWvAAAAAAAAAAACQAAAAAAAAAgAAAAAAAAABHVFpxAAAAAHUgdVq0EKNp
 .
 .
 ....
+=====
+.. パートナーノードからバックアップ設定、envファイル、mdb、およびrdbがリストアされる間、リカバリプロセスを引き続き監視します。
 +
-リカバリプロセスが完了すると、次のように表示されます。
+リカバリプロセスが完了すると、ノードがリブートします。次のメッセージは、リカバリが成功したことを示します。
 
 +
 ....
@@ -151,59 +121,90 @@ Trying to delete any existing km_onboard.wkeydb file.
 
 Successfully recovered keymanager secrets.
 ....
-. BMRプロセスを監視して、パートナーからrestore backup config、env file、mdb、およびrdbを実行します。
-+
-リストアが完了すると、ノードがリブートしてプロセスが完了します。
-
 
 
 --
-.オプション3：外部キー管理ツールを使用したリカバリ
+.外部キーマネージャ（ EKM ）
 --
-ブートメディアイメージをリストアします。
+EKMが設定されている場合は、次のプロンプトが表示されます。
 
-.手順
-. Loaderプロンプトで、_boot_recovery-partner_commandを入力します。
-+
-画面にメッセージが表示さ `Starting boot media recovery (BMR) process press Ctrl-C to abort...`れ、ブートリカバリファイルの初期チェックとインストールが開始されます。
-
-+
-.. 外部キーマネージャ（EKM）が設定されている場合は、次のメッセージが表示されます。
-+
 ....
-Error when fetching key manager config from partner 169.254.139.209: 28
+Error when fetching key manager config from partner <IP>: 28
+
 Has key manager been configured on this system? {y|n}
 ....
-.. キー管理ツールを設定している場合は「_y_」と入力します。
+.. EKMが設定されている場合はと入力します `Y`。
 +
 ....
 key manager is configured.
 Entering Bootmenu Option 11...
 ....
++
+セットアップ時に最初に使用されたEKM設定の入力を求められます。
 
+.. プロンプトが表示されたら、各EKM設定を入力します。
+.. クラスタUUIDとキーストアUUIDの属性が正しいことを確認します。
++
+*** パートナーノードで、次のコマンドを使用してクラスタUUIDを取得します。
++
+`cluster identity show`
+
+*** パートナーノードで、次のコマンドを使用してキーストアUUIDを取得します。
++
+`vserver show -type admin`
 
 +
-ブートメニューオプション11は、コンフィギュレーションファイルを再構築できるように、すべてのEKM設定情報の入力をユーザに要求します。
+`key-manager keystore show -vserver <nodename>`
 
-. 各プロンプトでEKM設定を入力します。
+*** パートナーノードを使用できない場合は、Mroot-AKキーを使用してUUIDを取得します。
 +
-*注：*この情報のほとんどは、EKMが最初に有効になったときに入力されました。初期EKM設定時に入力した情報と同じ情報を入力する必要があります。
+**** [Cluster UUID]に次のコマンドを入力します。
++
+`x-NETAPP-ClusterName: <cluster name>`
 
-.  `Keystore UUID`とが `Cluster UUID`適合していることを確認します。
+**** キーストアUUIDとして、次のコマンドを入力します。
 +
-.. パートナーノードで、 `cluster identity show`コマンドを使用してクラスタUUIDを取得します。
-.. パートナーノードで、 `vserver show -type admin`コマンドと `key-manager keystore show -vserver <nodename>`コマンドを使用してキーストアUUIDを取得します。
+`x-NETAPP-KeyUsage: MROOT-AK`
+
+
+
+
+
 .. プロンプトが表示されたら、キーストアUUIDとクラスタUUIDの値を入力します。
+.. キーが正常にリストアされたかどうかに応じて、次のいずれかの操作を実行します。
 +
-*注：*パートナーノードを使用できない場合は、設定済みのキーサーバにあるMroot-AKキーからキーストアUUIDとクラスタUUIDを取得できます。
-
+*** キーが正常にリストアされると、リカバリプロセスが続行され、ノードがリブートされます。手順4に進みます。
+*** キーのリストアに失敗すると、システムが停止し、エラーメッセージと警告メッセージが表示されます。リカバリプロセスを再実行します。
 +
- `x-NETAPP-ClusterName: <cluster name>`クラスタUUIDと `x-NETAPP-KeyUsage: "MROOT-AK"`キーストアUUIDの属性を確認して、正しいキーがあることを確認します。
+.キーリカバリのエラーおよび警告メッセージの例を示します。
+[%collapsible]
+=====
+....
+
+ERROR: kmip_init: halting this system with encrypted mroot...
+
+WARNING: kmip_init: authentication keys might not be available.
+
+System cannot connect to key managers.
+
+ERROR: kmip_init: halting this system with encrypted mroot...
+
+Terminated
+
+Uptime: 11m32s
+
+System halting...
+
+LOADER-B>
+....
+=====
 
 
-
-. キーが適切にリストアされると、リカバリプロセスが続行され、ノードがリブートされます。
 
 
 --
 ====
+
+
+. ノードがリブートしたら、システムがオンラインに戻って動作可能になったことを確認して、ブートメディアのリカバリが成功したことを確認します。
+

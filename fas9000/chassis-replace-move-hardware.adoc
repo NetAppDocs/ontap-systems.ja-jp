@@ -42,7 +42,7 @@ image::../media/drw_9000_remove_install_psu_module.gif[電源装置ユニット�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 ロックボタン
 
@@ -72,7 +72,7 @@ image::../media/drw_9000_remove_install_fan.png[ファンの取り外し]
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 オレンジ色のリリースボタン
 
@@ -99,14 +99,14 @@ image::../media/drw_9000_remove_pcm.png[コントローラモジュールを取�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 カムハンドルのリリースボタン
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 カムハンドル
 
@@ -152,14 +152,14 @@ image::../media/drw_9000_remove_pcie_module.png[PCIeモジュールの取り外�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 文字と数字が記載された I/O カムラッチ
 
 
 
  a| 
-image:../media/legend_icon_02.png["番号2"]
+image:../media/icon_round_2.png["番号2"]
  a| 
 ロックが完全に解除された I/O カムラッチ
 
@@ -187,7 +187,7 @@ image::../media/drw_9000_remove_nv_battery.png[NVバッテリーを取り外し�
 
 
  a| 
-image:../media/legend_icon_01.png["番号1"]
+image:../media/icon_round_1.png["番号1"]
  a| 
 DCPM モジュールのオレンジ色のロックボタン
 
