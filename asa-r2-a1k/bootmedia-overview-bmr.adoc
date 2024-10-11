@@ -1,0 +1,16 @@
+---
+permalink: asa-r2-a1k/bootmedia-overview-bmr.html 
+sidebar: sidebar 
+keywords: asa r2 a1k, overview, the boot media 
+summary: ブートメディアの自動交換方法について説明します。 
+---
+= ブートメディアの自動リカバリの概要- ASA A1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+障害が発生したブートメディアは、Automated Boot Media Replace（BMR；自動ブートメディア交換）オプションを使用して交換できます。
+
+ブートメディアの自動交換では、パートナーノードのブートイメージが使用され、適切なブートメニューオプションが自動的に実行されて、交換用ブートメディアにブートイメージがインストールされます。

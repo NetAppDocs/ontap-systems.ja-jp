@@ -26,7 +26,7 @@ entries:
     - title: オンボード暗号化キーを確認
       url: "/asa150/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
-      url: "/asa150/bootmedia-impaired-controller-shutdown.html"
+      url: "/asa150/bootmedia-shutdown.html"
     - title: ブートイメージを交換します
       url: "/asa150/bootmedia-replace.html"
     - title: ブートイメージを起動します

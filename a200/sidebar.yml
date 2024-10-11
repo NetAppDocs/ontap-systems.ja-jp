@@ -21,7 +21,7 @@ entries:
     entries:
     - title: 概要
       url: "/a200/bootmedia-replace-overview.html"
-    - title: オンボード暗号化キーを確認
+    - title: 暗号化キーの確認
       url: "/a200/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a200/bootmedia-shutdown.html"

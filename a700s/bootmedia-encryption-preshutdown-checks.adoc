@@ -4,302 +4,189 @@ sidebar: sidebar
 keywords: aff a700s, aff, a700s, shut, down, impair, controller, check, status, onboard, encryption, keys, status, disable, automatic, giveback, ontap, pre-shutdown, pre-shutdown checks for onboard encyption keys 
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
-= オンボード暗号化キーを確認する - AFF A700s
+= 暗号化キーのサポートとステータスの確認- AFF A700s
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にして、システムで実行されているONTAPのバージョンを確認する必要があります。
+障害のあるコントローラをシャットダウンする前に、使用しているONTAPのバージョンがNetApp Volume Encryption（NVE）をサポートしているかどうか、およびキー管理システムが適切に設定されているかどうかを確認してください。
 
-ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性について false と表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["ノードをクラスタと同期します"^]。
 
-.手順
-. 障害のあるコントローラのステータスを確認します。
+
+== 手順1：使用しているONTAPのバージョンが暗号化をサポートしているかどうかを確認する
+
+ONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認します。この情報は、正しいONTAPイメージをダウンロードするために重要です。
+
+. 次のコマンドを実行して、ONTAPのバージョンが暗号化をサポートしているかどうかを確認します。
 +
-** 障害のあるコントローラがログインプロンプトに表示されている場合は 'admin' としてログインします
-** 障害のあるコントローラが LOADER プロンプトに表示され、 HA 構成の一部である場合は、正常なコントローラに「 admin 」としてログインします。
-** 障害のあるコントローラがスタンドアロン構成で LOADER プロンプトが表示されている場合は、にお問い合わせください link:http://mysupport.netapp.com/["mysupport.netapp.com"^]。
-
-
-. AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
-+
-次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
-
-. 「 version -v 」コマンドを使用して、障害のあるコントローラ上でシステムが実行している ONTAP のバージョンを確認します。アップしている場合はパートナーコントローラ上で、障害のあるコントローラがダウンしている場合はパートナーコントローラ上で確認します。
-+
-** このコマンドの出力に <lno-DARE> または <1Ono-dARE> が表示される場合は、システムが NVE をサポートしていないので、コントローラのシャットダウンに進みます。
-** コマンドの出力に <lno-DARE> が表示されず、システムで ONTAP 9.5 が実行されている場合は、に進みます <<オプション 1 ： ONTAP 9.5 以前を実行しているシステムで NVE または NSE をチェックする>>。
-** コマンドの出力に <lno-DARE > が表示されず、システムで ONTAP 9.6 以降が実行されている場合は、に進みます <<オプション 2 ： ONTAP 9.6 以降を実行しているシステムの NVE または NSE を確認する>>。
-
-
-. 障害のあるコントローラが HA 構成の一部である場合は、正常なコントローラからの自動ギブバックを無効にします。 storage failover modify -node local-auto-giveback false または storage failover modify -node local-auto-giveback -after-panic false
-
-
-
-
-== オプション 1 ： ONTAP 9.5 以前を実行しているシステムで NVE または NSE をチェックする
-
-障害のあるコントローラをシャットダウンする前に、システムで NetApp Volume Encryption （ NVE ）または NetApp Storage Encryption （ NSE ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。
-
-.手順
-. 障害のあるコントローラにコンソールケーブルを接続します。
-. クラスタ内のボリュームに NVE が設定されているかどうかを確認します。 volume show -is-encrypted true
-+
-出力に含まれるボリュームには NVE が設定されているため、 NVE の設定を確認する必要があります。ボリュームが表示されない場合は、 NSE が設定されているかどうかを確認します。
-
-. NSE が設定されているかどうかを確認します。「 storage encryption disk show 」
-+
-** モードとキー ID の情報を含むドライブの詳細がコマンド出力に表示される場合は、 NSE が設定されているので、 NSE の設定を確認する必要があります。
-** NVE と NSE が設定されていない場合は、障害のあるコントローラを安全にシャットダウンできます。
-
-
-
-
-
-
-== NVE の設定を確認する
-
-.手順
-. キー管理サーバに格納されている認証キーのキー ID を表示します。「 securitykey-manager query
-+
-** [Restored （復元） ] 列に [yes] と表示され、すべてのキー管理ツールに [Available] と表示されている場合は、障害のあるコントローラをシャットダウンしても安全です。
-** [Restored （復元） ] 列に 'yes' 以外の項目が表示される場合、またはいずれかのキー管理ツールに [Unavailable （利用不可） ] と表示される場合は、いくつかの追加手順を実行する必要があります。
-** オンボードキー管理が有効になっている場合にこのコマンドがサポートされませんというメッセージが表示された場合は、他の手順をいくつか実行する必要があります。
-
-
-. [ リストア済み ] カラムに 'yes' 以外のものが表示されている場合 ' または ' キー・マネージャに unavailable と表示されている場合は ' 次の手順を実行します
-+
-.. すべての認証キーと関連キー ID を取得してリストアします： 'securitykey-manager restore-address*
-+
-コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。
+`version -v`
 
 +
-http://mysupport.netapp.com/["mysupport.netapp.com"]
+出力にが含まれている場合、 `1Ono-DARE`クラスタのバージョンではNVEがサポートされていません。
 
-.. すべての認証キーについて 'restored' 列に yes と表示され ' すべてのキー・マネージャには Available ： 'securitykey-manager query と表示されていることを確認します
-.. 障害のあるコントローラをシャットダウンします。
-
-
-. オンボードキー管理が有効になっているときに「 This command is not supported when onboard key management 」というメッセージが表示された場合は、オンボードキーマネージャに格納されているキーを表示します。「 securitykey-manager key show -detail」
+. ご使用のシステムでNVEがサポートされているかどうかに応じて、次のいずれかを実行します。
 +
-.. [Restored （リストア済み） ] カラムに 'yes' と表示されている場合は ' オンボード・キー管理情報を手動でバックアップします
+** NVEがサポートされている場合は、NetAppボリューム暗号化を使用するONTAPイメージをダウンロードします。
+** NVEがサポートされない場合は、NetAppボリューム暗号化なしのONTAPイメージ*をダウンロードします。
+
+
+
+
+
+
+== 手順2：コントローラを安全にシャットダウンできるかどうかを確認する
+
+コントローラを安全にシャットダウンするには、まずオンボードキーマネージャ（OKM）と外部キーマネージャ（EKM）がアクティブになっているかを確認します。次に、使用しているキー管理ツールを確認し、適切なキー情報を表示して、認証キーのステータスに基づいて操作を実行します。
+
+. システムで有効になっているキー管理ツールを確認します。
 +
-*** advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
-*** コマンドを入力して、 OKM バックアップ情報を表示します：「 securitykey-manager backup show 」
-*** バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。
-*** admin モードに戻ります。 'set-priv admin'
-*** 障害のあるコントローラをシャットダウンします。
+[cols="1a,2a"]
+|===
+| キー管理ツールのタイプ | 実行する手順 
 
 
-.. [ リストア済み ] カラムに 'yes' 以外の項目が表示される場合は ' 次の手順を実行します
+ a| 
+外部キーマネージャ（ EKM ）
+ a| 
+次のコマンドを実行して、システムでEKMが有効になっているかどうかを確認します。
+
+`security key-manager show key store`
+
+EKMが有効になっている場合は `external`、が出力に表示されます。
+
+
+
+ a| 
+オンボードキーマネージャ（ OKM ）
+ a| 
+ノードで実行されているONTAPのバージョンに基づいて次のいずれかのコマンドを実行し、OKMがシステムで有効になっているかどうかを確認します。
+
+** ONTAP 9 .14.1以降の場合は、次のコマンドを入力します。
 +
-*** key-manager setup ウィザードを実行します： 'securitykey-manager setup -node target/impaired node name
-+
-
-NOTE: プロンプトで、お客様のオンボードキー管理のパスフレーズを入力します。パスフレーズを指定できない場合は、にお問い合わせください http://mysupport.netapp.com/["mysupport.netapp.com"]
-
-*** すべての認証キーに対して 'restored' カラムに yes が表示されていることを確認します 'securitykey-manager key show-detail
-*** advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
-*** コマンドを入力して、 OKM バックアップ情報を表示します：「 securitykey-manager backup show 」
-*** バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。
-*** admin モードに戻ります。 'set-priv admin'
-*** コントローラは安全にシャットダウンできます。
-
-
-
-
-
-
-
-
-== NSE の設定を確認
-
-.手順
-. キー管理サーバに格納されている認証キーのキー ID を表示します。「 securitykey-manager query
-+
-** [Restored （復元） ] 列に [yes] と表示され、すべてのキー管理ツールに [Available] と表示されている場合は、障害のあるコントローラをシャットダウンしても安全です。
-** [Restored （復元） ] 列に 'yes' 以外の項目が表示される場合、またはいずれかのキー管理ツールに [Unavailable （利用不可） ] と表示される場合は、いくつかの追加手順を実行する必要があります。
-** オンボードキー管理が有効になっている場合にこのコマンドがサポートされませんというメッセージが表示された場合は、他の手順をいくつか実行する必要があります
-
-
-. [ リストア済み ] カラムに 'yes' 以外のものが表示されている場合 ' または ' キー・マネージャに unavailable と表示されている場合は ' 次の手順を実行します
-+
-.. すべての認証キーと関連キー ID を取得してリストアします： 'securitykey-manager restore-address*
-+
-コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。
+`security key-manager keystore show`
 
 +
-http://mysupport.netapp.com/["mysupport.netapp.com"]
+OKMが有効になっている場合は、 `OKM`がコマンド出力に表示されます。
 
-.. すべての認証キーについて 'restored' 列に yes と表示され ' すべてのキー・マネージャには Available ： 'securitykey-manager query と表示されていることを確認します
-.. 障害のあるコントローラをシャットダウンします。
-
-
-. オンボードキー管理が有効になっているときに「 This command is not supported when onboard key management 」というメッセージが表示された場合は、オンボードキーマネージャに格納されているキーを表示します。「 securitykey-manager key show -detail」
+** ONTAP 9 .13.1以前の場合は、次のコマンドを入力します。
 +
-.. [Restored （復元） ] 列に「 yes 」と表示されている場合は、オンボードキー管理情報を手動でバックアップします。
-+
-*** advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
-*** コマンドを入力して、 OKM バックアップ情報を表示します：「 securitykey-manager backup show 」
-*** バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。
-*** admin モードに戻ります。 'set-priv admin'
-*** 障害のあるコントローラをシャットダウンします。
-
-
-.. [ リストア済み ] カラムに 'yes' 以外の項目が表示される場合は ' 次の手順を実行します
-+
-*** key-manager setup ウィザードを実行します： 'securitykey-manager setup -node target/impaired node name
-+
-
-NOTE: プロンプトで、お客様の OKM パスフレーズを入力します。パスフレーズを指定できない場合は、にお問い合わせください http://mysupport.netapp.com/["mysupport.netapp.com"]
-
-*** すべての認証キーについて 'restored' 列に yes と表示されていることを確認します
-*** advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
-*** コマンド「 security key-manager backup show 」を入力して、 OKM の情報をバックアップします
-+
-
-NOTE: OKM 情報がログファイルに保存されていることを確認してください。この情報は、 OKM を手動でリカバリする必要がある災害シナリオで必要になります。
-
-*** バックアップ情報の内容を別のファイルまたはログにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。
-*** admin モードに戻ります。 'set-priv admin'
-*** コントローラは安全にシャットダウンできます。
-
-
-
-
-
-
-
-
-== オプション 2 ： ONTAP 9.6 以降を実行しているシステムの NVE または NSE を確認する
-
-障害のあるコントローラをシャットダウンする前に、システムで NetApp Volume Encryption （ NVE ）または NetApp Storage Encryption （ NSE ）が有効になっているかどうかを確認する必要があります。その場合は、設定を確認する必要があります。
-
-. クラスタ内のいずれのボリュームにも NVE が使用されているかどうかを確認します。 volume show -is-encrypted true
-+
-出力に含まれるボリュームには NVE が設定されているため、 NVE の設定を確認する必要があります。ボリュームが表示されない場合は、 NSE が設定されて使用中であるかどうかを確認します。
-
-. NSE が構成され ' 使用されているかどうかを確認します storage encryption disk show
-+
-** モードとキー ID の情報を含むドライブの詳細がコマンド出力に表示される場合は、 NSE が設定されているので、 NSE の設定と使用状況を確認する必要があります。
-** ディスクが表示されない場合は、 NSE は設定されません。
-** NVE と NSE が設定されていない場合、 NSE キーでドライブが保護されていないため、障害のあるコントローラを安全にシャットダウンできます。
-
-
-
-
-
-
-== NVE の設定を確認する
-
-. キー管理サーバに格納されている認証キーのキーIDを表示します。 `security key-manager key query`
-+
-
-NOTE: ONTAP 9.6 リリース以降では、キー管理ツールのタイプが追加されることがあります。タイプは「 KMIP 」、「 AKV 」、「 GCP 」です。これらのタイプを確認するプロセスは 'external' または 'onboard のキー管理タイプを確認するプロセスと同じです
+`security key-manager show-key-store`
 
 +
-** 「キー・マネージャ」タイプに「 external 」と表示され、「 Restored 」列に「 yes 」と表示されている場合は、障害のあるコントローラをシャットダウンしても安全です。
-** 「キー・マネージャ」タイプに「 onboard 」と表示され、「 restored 」列に「 yes 」と表示されている場合は、いくつかの追加手順を実行する必要があります。
-** 「キー・マネージャ」タイプに「外部」が表示され、「復元」列に「はい」以外の項目が表示されている場合は、いくつかの追加手順を実行する必要があります。
-** 'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' 以外の項目が表示されている場合は ' 追加の手順を実行する必要があります
+OKMが有効になっている場合は、 `onboard`がコマンド出力に表示されます。
 
 
-. 'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' と表示されている場合は 'OKM 情報を手動でバックアップします
+
+|===
+. 次のクエリコマンドを入力して、キー管理ツールの認証キーのステータスを表示します。
 +
-.. advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
-.. コマンドを入力して、キー管理情報「 securitykey-manager onboard show-backup 」を表示します
-.. バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。
-.. admin モードに戻ります。 'set-priv admin'
-.. 障害のあるコントローラをシャットダウンします。
+`security key-manager key query`
 
-
-. 「キー・マネージャ」タイプに「外部」が表示され、「リストア済み」列に「はい」以外の項目が表示される場合：
+. キー管理ツールの列の値が出力されていることを確認します `Restored`。
 +
-.. 外部キー管理の認証キーをクラスタ内のすべてのノードにリストアします：「 securitykey-manager external restore
-+
-コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。
+この列は、キー管理ツール（EKMまたはOKM）の認証キーがリストアされたかどうかを示します。
 
 +
-http://mysupport.netapp.com/["mysupport.netapp.com"^]
-
-.. を確認します `Restored` 列が等しい `yes` すべての認証キー： `security key-manager key query`
-.. 障害のあるコントローラをシャットダウンします。
+** Restored列の値がtrueの場合、キーは適切にリストアされ、コントローラのシャットダウンを安全に実行できます。
+** 値がtrue以外の場合、キーはリストアされていません。EKMとOKMのどちらを使用しているかに応じて、追加の手順（キーのリストアまたは同期）を実行する必要があります。
 
 
-. 'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' 以外の項目が表示される場合は ' 次の手順を実行します
+. EKMとOKMのどちらを使用しているかに応じて、次のいずれかのオプションを選択し、列に表示される出力値に応じて適切な手順を実行し `Restored`ます。
 +
-.. onboard security key-manager sync コマンド「 security key-manager sync 」を入力します
+[role="tabbed-block"]
+====
+.EKM
+--
+列に表示された出力値に応じて `Restored`、該当する手順を実行します。
+
+[cols="1a,2a"]
+|===
+| 列の出力値 `Restored` | 実行する手順 
+
+
+ a| 
+`true`
+ a| 
+障害のあるコントローラを安全にシャットダウンできます。にアクセスします。
+
+
+
+ a| 
+それ以外のすべて `true`
+ a| 
+.. 次のコマンドを使用して、外部キー管理の認証キーをクラスタ内のすべてのノードにリストアします。
 +
-
-NOTE: プロンプトで、32文字のオンボードキー管理のパスフレーズを英数字で入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。 http://mysupport.netapp.com/["mysupport.netapp.com"^]
-
-.. を確認します `Restored` 列が表示されます `yes` すべての認証キー： `security key-manager key query`
-.. 「キーマネージャ」タイプに「 onboard 」と表示されていることを確認し、 OKM 情報を手動でバックアップします。
-.. advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
-.. コマンドを入力して、キー管理バックアップ情報を表示します。「 securitykey-manager onboard show-backup 」
-.. バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。
-.. admin モードに戻ります。 'set-priv admin'
-.. コントローラは安全にシャットダウンできます。
-
-
-
-
-
-
-== NSE の設定を確認
-
-. キー管理サーバに格納されている認証キーのキーIDを表示します。 `security key-manager key query -key-type NSE-AK`
-+
-
-NOTE: ONTAP 9.6 リリース以降では、キー管理ツールのタイプが追加されることがあります。タイプは「 KMIP 」、「 AKV 」、「 GCP 」です。これらのタイプを確認するプロセスは 'external' または 'onboard のキー管理タイプを確認するプロセスと同じです
+`security key-manager external restore`
 
 +
-** 「キー・マネージャ」タイプに「 external 」と表示され、「 Restored 」列に「 yes 」と表示されている場合は、障害のあるコントローラをシャットダウンしても安全です。
-** 「キー・マネージャ」タイプに「 onboard 」と表示され、「 restored 」列に「 yes 」と表示されている場合は、いくつかの追加手順を実行する必要があります。
-** 「キー・マネージャ」タイプに「外部」が表示され、「復元」列に「はい」以外の項目が表示されている場合は、いくつかの追加手順を実行する必要があります。
-** 「キー・マネージャ」タイプに「外部」が表示され、「復元」列に「はい」以外の項目が表示されている場合は、いくつかの追加手順を実行する必要があります。
+コマンドが失敗する場合は、にお問い合わせください http://mysupport.netapp.com/["ネットアップサポート"^]。
 
-
-. 'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' と表示されている場合は 'OKM 情報を手動でバックアップします
+.. コマンドを入力して、すべての認証キーの `_security key-manager key query_`列にと表示されている `true`ことを確認します `Restored`。
 +
-.. advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
-.. コマンドを入力して、キー管理情報「 securitykey-manager onboard show-backup 」を表示します
-.. バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。
-.. admin モードに戻ります。 'set-priv admin'
-.. コントローラは安全にシャットダウンできます。
+すべての認証キーがの場合は `true`、障害のあるコントローラを安全にシャットダウンできます。にアクセスします。
 
 
-. 「キー・マネージャ」タイプに「外部」が表示され、「リストア済み」列に「はい」以外の項目が表示される場合：
+
+|===
+--
+.オクム
+--
+列に表示された出力値に応じて `Restored`、該当する手順を実行します。
+
+[cols="1a,2a"]
+|===
+| 列の出力値 `Restored` | 実行する手順 
+
+
+ a| 
+`true`
+ a| 
+OKM情報を手動でバックアップします。
+
+.. と入力してadvancedモードに切り替え `set -priv advanced`、プロンプトが表示されたらと入力します `Y`。
+.. 次のコマンドを入力して、キー管理情報を表示します。
 +
-.. 外部キー管理の認証キーをクラスタ内のすべてのノードにリストアします：「 securitykey-manager external restore
+`security key-manager onboard show-backup`
+
+.. バックアップ情報の内容を別のファイルまたはログファイルにコピーします。
 +
-コマンドが失敗した場合は、ネットアップサポートにお問い合わせください。
+これは、災害時にOKMを手動でリカバリしなければならない場合に必要になります。
 
+.. 障害のあるコントローラを安全にシャットダウンできます。にアクセスします。
+
+
+
+
+ a| 
+それ以外のすべて `true`
+ a| 
+.. onboard security key-manager syncコマンドを入力します。
 +
-http://mysupport.netapp.com/["mysupport.netapp.com"^]
+`security key-manager onboard sync`
 
-.. を確認します `Restored` 列が等しい `yes` すべての認証キー： `security key-manager key query`
-.. コントローラは安全にシャットダウンできます。
-
-
-. 'Key Manager' タイプに 'onboard と表示され ' Restored' カラムに 'yes' 以外の項目が表示される場合は ' 次の手順を実行します
+.. プロンプトが表示されたら、32文字のオンボードキー管理のパスフレーズを英数字で入力します。
 +
-.. onboard security key-manager sync コマンド「 security key-manager sync 」を入力します
+パスフレーズを入力できない場合は、にお問い合わせください http://mysupport.netapp.com/["ネットアップサポート"^]。
+
+.. すべての認証キーの列にと表示されている `true`ことを確認し `Restored`ます。
 +
-プロンプトで、32文字のオンボードキー管理のパスフレーズを英数字で入力します。パスフレーズを指定できない場合は、ネットアップサポートにお問い合わせください。
+`security key-manager key query`
 
+.. タイプが表示されていることを確認し `Key Manager` `onboard`、OKM情報を手動でバックアップします。
+.. 次のコマンドを入力して、キー管理バックアップ情報を表示します。
 +
-http://mysupport.netapp.com/["mysupport.netapp.com"^]
+`security key-manager onboard show-backup`
 
-.. を確認します `Restored` 列が表示されます `yes` すべての認証キー： `security key-manager key query`
-.. 「キーマネージャ」タイプに「 onboard 」と表示されていることを確認し、 OKM 情報を手動でバックアップします。
-.. advanced 権限モードに切り替え、続行するかどうかを尋ねられたら「 y 」と入力します。「 set -priv advanced 」
-.. コマンドを入力して、キー管理バックアップ情報を表示します。「 securitykey-manager onboard show-backup 」
-.. バックアップ情報の内容を別のファイルまたはログファイルにコピーします。OKM は手動でリカバリする必要がある災害シナリオで必要になります。
-.. admin モードに戻ります。 'set-priv admin'
-.. コントローラは安全にシャットダウンできます。
+.. バックアップ情報の内容を別のファイルまたはログファイルにコピーします。
++
+これは、災害時にOKMを手動でリカバリしなければならない場合に必要になります。
+
+.. 障害のあるコントローラを安全にシャットダウンできます。にアクセスします。
 
 
+|===
+--
+====
 

@@ -31,7 +31,7 @@ entries:
       url: "/a1k/bootmedia-replace-workflow.html"
     - title: 要件を確認する
       url: "/a1k/bootmedia-replace-requirements.html"
-    - title: オンボード暗号化キーを確認
+    - title: 暗号化キーの確認
       url: "/a1k/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a1k/bootmedia-shutdown.html"

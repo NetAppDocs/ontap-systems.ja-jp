@@ -26,7 +26,7 @@ entries:
     - title: オンボード暗号化キーを確認
       url: "/c400/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
-      url: "/c400/bootmedia-impaired-controller-shutdown.html"
+      url: "/c400/bootmedia-shutdown.html"
     - title: ブートメディアを交換します
       url: "/c400/bootmedia-replace.html"
     - title: ブートイメージを起動します

@@ -1,23 +1,21 @@
 ---
-permalink: c400/bootmedia-impaired-controller-shutdown.html 
+permalink: fas8200/bootmedia-shutdown.html 
 sidebar: sidebar 
-keywords: aff c400, aff, c400, shut, down, take, over, impair, controller, procedure, storage, system, hardware, configuration, shut down the impaired controller 
+keywords: fas8200, shut down the impaired controller 
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
-= 障害のあるコントローラをシャットダウンします（AFF C400）
+= 障害のあるコントローラ FAS8200 をシャットダウンします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
+
+
+== オプション 1 ：ほとんどのシステム
+
 [role="lead"]
-NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
-
-
-
-== オプション 1 ：ほとんどの構成
-
-NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。
+NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。
 
 .手順
 . 障害のあるコントローラに LOADER プロンプトを表示します。

@@ -290,7 +290,7 @@ NVDIMM を移動するには、障害のあるコントローラの NVDIMM の�
 
 . コントローラモジュールで NVDIMM の場所を確認します。
 +
-image::../media/drw_a800_no_risers_nvdimm_move.png[NVDIMMの移動]
+image::../media/drw_a800_no_risers_nvdimm_move.svg[NVDIMMの移動]
 
 +
 [cols="1,4"]

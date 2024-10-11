@@ -1,10 +1,10 @@
 ---
-permalink: a700/bootmedia-impaired-controller-shutdown.html 
+permalink: fas2700/bootmedia-shutdown.html 
 sidebar: sidebar 
-keywords: aff a700, fas9000, shut, down, impaired, controller, take, over 
+keywords: fas2700, aff a220, shut, down, impaired, controller, take, over 
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
-= 障害のあるコントローラのシャットダウン- AFF A700
+= 障害のあるコントローラ AFF A220 および FAS2700 をシャットダウンします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,7 +15,7 @@ summary: ストレージシステムのハードウェア構成に応じた手�
 
 
 
-== オプション 1 ：ほとんどのシステム
+== オプション 1 ：ほとんどの構成
 
 NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。
 
@@ -58,58 +58,9 @@ NOTE: ブートデバイスが壊れているか機能していない場合、�
 
 
 
-=== オプション 2 ：コントローラが MetroCluster に搭載されている
+== オプション 2 ：コントローラが MetroCluster に搭載されている
 
-NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。注： 2 ノード MetroCluster 構成のシステムでは、この手順を使用しないでください。
-
-障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
-
-* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性についてfalseと表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["ノードをクラスタと同期します"^]。
-* MetroCluster 構成を使用している場合は、 MetroCluster 構成状態が構成済みで、ノードが有効かつ正常な状態であることを確認しておく必要があります（「 MetroCluster node show 」）。
-
-
-.手順
-. AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
-+
-次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
-
-. 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
-. 障害のあるコントローラに LOADER プロンプトを表示します。
-+
-[cols="1,2"]
-|===
-| 障害のあるコントローラの表示 | 作業 
-
-
- a| 
-LOADER プロンプト
- a| 
-次の手順に進みます。
-
-
-
- a| 
-ギブバックを待っています
- a| 
-Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します
-
-
-
- a| 
-システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
- a| 
-正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _
-
-障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
-
-|===
-
-
-
-
-== オプション 3 ：コントローラは 2 ノード MetroCluster に搭載されています
-
-NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。
+NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。
 
 
 NOTE: 2 ノード MetroCluster 構成のシステムでは、この手順を使用しないでください。

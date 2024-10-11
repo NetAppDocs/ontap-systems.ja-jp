@@ -11,11 +11,11 @@ summary: 環境変数を確認したら、オンボードキーマネージャ \
 
 
 [role="lead"]
-交換用ブートメディアで暗号化をリストアします。
+ノードで暗号化をリストアします。
 
 
 
-== 手順1：オンボードキーマネージャをリストアする
+== 手順1：キー管理ツールをリストアする
 
 この手順で最初に取得した設定を使用して、オンボードキーマネージャ（OKM）、NetAppストレージ暗号化（NSE）、またはNetAppボリューム暗号化（NVE）が有効になっているシステムに固有の手順を実行する必要があります。
 
@@ -42,10 +42,11 @@ OKM設定をリストアするには、次の情報が必要です。
 
 
 .手順
-. ONTAPのブートメニューからオプション10を選択します。
+. ONTAPのブートメニューから、該当するオプションを選択します。
 +
-[listing]
-----
+** ONTAP 9 .8以降の場合は、オプション10を選択します。
++
+....
 
 Please choose one of the following:
 
@@ -62,9 +63,29 @@ Please choose one of the following:
 (11) Configure node for external key management.
 Selection (1-11)? 10
 
-----
+....
+** ONTAP 9 .7以前の場合は、hidden optionコマンドを入力し `recover_onboard_keymanager`ます。
++
+....
+
+Please choose one of the following:
+
+(1)  Normal Boot.
+(2)  Boot without /etc/rc.
+(3)  Change password.
+(4)  Clean configuration and initialize all disks.
+(5)  Maintenance mode boot.
+(6)  Update flash from backup config.
+(7)  Install new software first.
+(8)  Reboot node.
+(9)  Configure Advanced Drive Partitioning.
+Selection (1-19)? recover_onboard_keymanager
+
+....
+
+
 . プロセスの継続を確認してください。
-`This option must be used only in disaster recovery procedures. Are you sure? (y or n):`_y_
+`This option must be used only in disaster recovery procedures. Are you sure? (y or n): `y`
 . クラスタ全体のパスフレーズを2回入力します。
 +
 
@@ -81,8 +102,7 @@ NOTE: パスフレーズの入力中、コンソールに入力内容は表示�
 入力の最後にあるENTERキーを2回押します。
 
 +
-[listing]
-----
+....
 
 
 Enter the backup data:
@@ -120,11 +140,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 ---------------------------END BACKUP---------------------------
 
-----
+....
 . リカバリプロセスが完了します。
 +
-[listing]
-----
+....
 
 Trying to recover keymanager secrets....
 Setting recovery material for the onboard key manager
@@ -139,15 +158,14 @@ Successfully recovered keymanager secrets.
 * Run the "security key-manager onboard sync" command to synchronize the key database after the node reboots.
 ***********************************************************************************
 
-----
+....
 +
 
 WARNING: 表示された出力が以外の場合は、先に進まない `Successfully recovered keymanager secrets`でください。トラブルシューティングを実行してエラーを修正します。
 
 . ブートメニューからオプション1を選択して、ONTAPのブートを続行します。
 +
-[listing]
-----
+....
 
 ***********************************************************************************
 * Select option "(1) Normal Boot." to complete the recovery process.
@@ -168,21 +186,24 @@ WARNING: 表示された出力が以外の場合は、先に進まない `Succes
 (11) Configure node for external key management.
 Selection (1-11)? 1
 
-----
+....
 . コントローラのコンソールに `Waiting for giveback...(Press Ctrl-C to abort wait)`
-. パートナーノードから、パートナーコントローラをギブバックします。_storage failover giveback -fromnode local-only-cfo-aggregates true_
+. パートナーノードから、パートナーコントローラをギブバックします `storage failover giveback -fromnode local -only-cfo-aggregates true`。
 . CFOアグリゲートでのみ起動したら、_security key-manager onboard syncコマンドを実行します。
 . オンボードキーマネージャのクラスタ全体のパスフレーズを入力します。
 +
-[listing]
-----
+....
 
 Enter the cluster-wide passphrase for the Onboard Key Manager:
 
 All offline encrypted volumes will be brought online and the corresponding volume encryption keys (VEKs) will be restored automatically within 10 minutes. If any offline encrypted volumes are not brought online automatically, they can be brought online manually using the "volume online -vserver <vserver> -volume <volume_name>" command.
 
-----
-. すべてのキーが同期されていることを確認します。_security key-manager key query -restored false_
+....
++
+
+NOTE: 同期に成功すると、追加のメッセージは表示されずにクラスタプロンプトが返されます。同期に失敗すると、クラスタプロンプトに戻る前にエラーメッセージが表示されます。エラーが修正されて同期が正常に実行されるまで、続行しないでください。
+
+. すべてのキーが同期されていることを確認します。 `security key-manager key query -restored false`
 +
 `There are no entries matching your query.`
 
@@ -190,7 +211,7 @@ All offline encrypted volumes will be brought online and the corresponding volum
 
 NOTE: restoredパラメータでfalseをフィルタする場合、結果は表示されません。
 
-. パートナーからのノードのギブバック：_storage failover giveback -fromnode local_
+. パートナーからノードをギブバックします。 `storage failover giveback -fromnode local`
 
 
 --
@@ -201,19 +222,21 @@ ONATPブートメニューから外部キー管理ツールの設定をリスト
 .作業を開始する前に
 外部キー管理ツール（EKM）の設定をリストアするには、次の情報が必要です。
 
-* 別のクラスタノードから/cfcard/kmip/servers.cfgファイルのコピー、または次の情報が必要です。
-* KMIPサーバのアドレス。
-* KMIPポート。
-* 別のクラスタノードの/cfcard/kmip/certs/client.crtファイルのコピー、またはクライアント証明書。
-* 別のクラスタノードからの/cfcard/kmip/certs/client.keyファイルのコピー、またはクライアントキー。
-* 別のクラスタノード（KMIPサーバCA）の/cfcard/kmip/certs/CA.pemファイルのコピー。
+* 別のクラスタノードの/cfcard/kmip/servers.cfgファイルのコピー、または次の情報。
++
+** KMIPサーバのアドレス。
+** KMIPポート。
+** 別のクラスタノードの/cfcard/kmip/certs/client.crtファイルのコピー、またはクライアント証明書。
+** 別のクラスタノードからの/cfcard/kmip/certs/client.keyファイルのコピー、またはクライアントキー。
+** 別のクラスタノード（KMIPサーバCA）の/cfcard/kmip/certs/CA.pemファイルのコピー。
+
+
 
 
 .手順
 . ONTAPのブートメニューからオプション11を選択します。
 +
-[listing]
-----
+....
 
 (1)  Normal Boot.
 (2)  Boot without /etc/rc.
@@ -228,7 +251,7 @@ ONATPブートメニューから外部キー管理ツールの設定をリスト
 (11) Configure node for external key management.
 Selection (1-11)? 11
 
-----
+....
 . プロンプトが表示されたら、必要な情報を収集したことを確認します。
 +
 .. `Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n}` _y_
@@ -248,13 +271,14 @@ Selection (1-11)? 11
 
 . 次の各プロンプトの情報を入力します。
 +
-.. `Enter the client certificate (client.crt) file contents:`
-.. `Enter the client key (client.key) file contents:`
-.. `Enter the KMIP server CA(s) (CA.pem) file contents:`
-.. `Enter the server configuration (servers.cfg) file contents:`
+.. クライアント証明書（client.crt）ファイルの内容を入力します：_
+.. _クライアントキー(client.key)ファイルの内容を入力します。_
+.. KMIPサーバCA（CA.pem）ファイルの内容を入力します：_
+.. サーバー設定(servers.cfg)ファイルの内容を入力します。_
+
+
 +
-[listing]
-----
+....
 
 Example
 
@@ -291,13 +315,10 @@ Running command '/sbin/ifconfig e0M'
 ..
 kmip_init: cmd: ReleaseExtraBSDPort e0M
 ​​​​​​
-----
-
-
+....
 . リカバリプロセスが完了します。
 +
-[listing]
-----
+....
 
 
 System is ready to utilize external key manager(s).
@@ -305,11 +326,11 @@ Trying to recover keys from key servers....
 [Aug 29 21:06:28]: 0x808806100: 0: DEBUG: kmip2::main: [initOpenssl]:460: Performing initialization of OpenSSL
 Successfully recovered keymanager secrets.
 
-----
+....
 . ブートメニューからオプション1を選択して、ONTAPのブートを続行します。
-+
-[listing]
-----
+
+
+....
 
 ***********************************************************************************
 * Select option "(1) Normal Boot." to complete the recovery process.
@@ -330,9 +351,7 @@ Successfully recovered keymanager secrets.
 (11) Configure node for external key management.
 Selection (1-11)? 1
 
-----
-
-
+....
 --
 ====
 

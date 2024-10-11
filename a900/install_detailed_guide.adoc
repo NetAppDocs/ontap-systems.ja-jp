@@ -211,7 +211,7 @@ image::../media/drw_a900_controller_in_chassis_ID_IEOPS-856.svg[一般的なク�
 
 ケーブルをポートに差し込む際は、ケーブルのプルタブの向きを確認してください。ケーブルのプルタブは、すべてのネットワーキングモジュールポートで上向きになっています。
 
-image::../media/oie_cable_pull_tab_up.svg[ケーブルプルタブの方向]
+image::../media/oie_cable_pull_tab_up.png[ケーブルプルタブの方向]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -303,7 +303,7 @@ image:../media/drw_a900fas9500_power_icon_IEOPS-1142.svg["電源接続"]
 
 ケーブルをポートに差し込む際は、ケーブルのプルタブの向きを確認してください。ケーブルのプルタブは、すべてのネットワーキングモジュールポートで上向きになっています。
 
-image:../media/oie_cable_pull_tab_up.svg["ケーブルプルタブの方向"]
+image:../media/oie_cable_pull_tab_up.png["ケーブルプルタブの方向"]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。カチッと音がしない場合は、コネクタを取り外し、裏返してもう一度試してください。
@@ -403,9 +403,9 @@ image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[電源接続]
 * 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。ストレージモジュールのケーブルのプルタブは上向き、シェルフのプルタブは下向きです。
 
 
-image::../media/oie_cable_pull_tab_up.svg[ケーブルプルタブの方向]
+image::../media/oie_cable_pull_tab_up.png[ケーブルプルタブの方向]
 
-image::../media/oie_cable_pull_tab_down.svg[ケーブルプルタブの方向]
+image::../media/oie_cable_pull_tab_down.png[ケーブルプルタブの方向]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -459,9 +459,9 @@ image::../media/oie_cable100_gbe_qsfp28.png[100GbE QSFPコネクタ]
 * 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。ストレージモジュールのケーブルのプルタブは上向き、シェルフのプルタブは下向きです。
 
 
-image::../media/oie_cable_pull_tab_up.svg[ケーブルプルタブの方向]
+image::../media/oie_cable_pull_tab_up.png[ケーブルプルタブの方向]
 
-image::../media/oie_cable_pull_tab_down.svg[ケーブルプルタブの方向]
+image::../media/oie_cable_pull_tab_down.png[ケーブルプルタブの方向]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。

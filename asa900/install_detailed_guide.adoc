@@ -211,7 +211,7 @@ image::../media/drw_a900_controller_in_chassis_ID_IEOPS-856.svg[一般的なク�
 
 ケーブルをポートに差し込む際は、ケーブルのプルタブの向きを確認してください。ケーブルのプルタブは、すべてのネットワーキングモジュールポートで上向きになっています。
 
-image:../media/oie_cable_pull_tab_up.svg["ケーブルプルタブの方向"]
+image:../media/oie_cable_pull_tab_up.png["ケーブルプルタブの方向"]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -243,7 +243,7 @@ image:../media/oie_cable100_gbe_qsfp28.png["100Gbケーブル"]
 
 
  a| 
-image:../media/icon_square_2_yellow.png["番号2"]
+image:../media/icon_square_2_purple.png["番号2"]
  a| 
 コントローラ管理（レンチマーク）ポートをケーブル接続します。
 
@@ -280,7 +280,7 @@ image:../media/oie_cable_sfp_gbe_copper.png["GbE銅線SFP"]
 
 
  a| 
-image:../media/icon_square_4_red.png["吹き出しアイコン5"]
+image:../media/icon_square_5_grey.png["吹き出しアイコン5"]
  a| 
 ** ケーブルをケーブルマネジメントアームにストラップで固定します（図はなし）。
 ** 電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。PSU 1と3はA側のすべてのコンポーネントに電力を供給し、PSU 2とPSU 4はB側のすべてのコンポーネントに電力を供給します。
@@ -299,7 +299,7 @@ image:../media/icon_square_4_red.png["吹き出しアイコン5"]
 
 ケーブルをポートに差し込む際は、ケーブルのプルタブの向きを確認してください。ケーブルのプルタブは、すべてのネットワーキングモジュールポートで上向きになっています。
 
-image:../media/oie_cable_pull_tab_up.svg["ケーブルプルタブの方向"]
+image:../media/oie_cable_pull_tab_up.png["ケーブルプルタブの方向"]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。カチッと音がしない場合は、コネクタを取り外し、裏返してもう一度試してください。
@@ -318,7 +318,7 @@ image:../media/drw_a900_switched_network_cabling_IEOPS-934.svg["幅= 500px"]
 
 
  a| 
-image：../media/icon_square_1_green.png [
+image:../media/icon_square_1_green.png["番号1"]
  a| 
 クラスタインターコネクト A ポートをケーブル接続します。
 
@@ -368,7 +368,7 @@ image:../media/oie_cable_sfp_gbe_copper.png["GbE銅線SFP"]
 
 
  a| 
-image:../media/icon_square_4_red.png["吹き出しアイコン5"]
+image:../media/icon_square_5_grey.png["吹き出しアイコン5"]
  a| 
 ** ケーブルをケーブルマネジメントアームにストラップで固定します（図はなし）。
 ** 電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。PSU 1と3はA側のすべてのコンポーネントに電力を供給し、PSU 2とPSU 4はB側のすべてのコンポーネントに電力を供給します。
@@ -399,9 +399,9 @@ image:../media/drw_a900fas9500_power_icon_IEOPS-1142.svg["幅= 200px"]
 * 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。ストレージモジュールのケーブルのプルタブは上向き、シェルフのプルタブは下向きです。
 
 
-image:../media/oie_cable_pull_tab_up.svg["ケーブルプルタブの方向"]
+image:../media/oie_cable_pull_tab_up.png["ケーブルプルタブの方向"]
 
-image:../media/oie_cable_pull_tab_down.svg["幅= 200px"]
+image:../media/oie_cable_pull_tab_down.png["プルタブ方向"]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -455,9 +455,9 @@ image:../media/oie_cable100_gbe_qsfp28.png["幅= 50px"]
 * 図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。ストレージモジュールのケーブルのプルタブは上向き、シェルフのプルタブは下向きです。
 
 
-image:../media/oie_cable_pull_tab_up.svg["ケーブルプルタブの方向"]
+image:../media/oie_cable_pull_tab_up.png["ケーブルプルタブの方向"]
 
-image:../media/oie_cable_pull_tab_down.svg["幅= 200px"]
+image:../media/oie_cable_pull_tab_down.png["プルタブ方向"]
 
 
 NOTE: コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。
@@ -487,14 +487,14 @@ image:../media/icon_square_1_blue.png["番号1"]
 ** コントローラ A のポート e10a をシェルフ 2 の NSM A の e0a に接続します。
 
 
-image:../media/oie_cable100_gbe_qsfp28.png["幅= 50px"]
+image:../media/oie_cable100_gbe_qsfp28.png["100GbE QSFPコネクタ"]
 
 100GbE ケーブル
 
 
 
  a| 
-image:../media/icon_square_2_yellow.png["幅= 30px"]
+image:../media/icon_square_2_yellow.png["吹き出しアイコン2"]
  a| 
 ** コントローラ B のポート e2a を、シェルフ 1 の NSM B e0a に接続します。
 ** コントローラ B のポート e10b をシェルフ 1 の NSM A e0b に接続します。
@@ -502,7 +502,7 @@ image:../media/icon_square_2_yellow.png["幅= 30px"]
 ** コントローラ B のポート e10A をシェルフ 2 の NSM B e0a に接続します。
 
 
-image:../media/oie_cable100_gbe_qsfp28.png["幅= 50px"]
+image:../media/oie_cable100_gbe_qsfp28.png["100GbE QSFPコネクタ"]
 
 100GbE ケーブル
 

@@ -23,10 +23,10 @@ entries:
     entries:
     - title: 概要
       url: "/a400/bootmedia-replace-overview.html"
-    - title: オンボード暗号化キーを確認
+    - title: 暗号化キーの確認
       url: "/a400/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
-      url: "/a400/bootmedia-impaired-controller-shutdown.html"
+      url: "/a400/bootmedia-shutdown.html"
     - title: ブートメディアを交換します
       url: "/a400/bootmedia-replace.html"
     - title: ブートイメージを起動します

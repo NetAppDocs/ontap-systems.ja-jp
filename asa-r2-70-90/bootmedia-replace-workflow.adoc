@@ -17,7 +17,7 @@ summary: 障害が発生したコンポーネントは、プロバイダから�
 [role="quick-margin-para"]
 ブートメディアを交換するには、一定の要件を満たす必要があります。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]link:bootmedia-encryption-preshutdown-checks.html["オンボード暗号化キーを確認"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]link:bootmedia-encryption-preshutdown-checks.html["暗号化キーのサポートおよびステータスの確認"]
 [role="quick-margin-para"]
 システムでセキュリティキー管理機能が有効になっているか暗号化されたディスクがあるかを確認します。
 

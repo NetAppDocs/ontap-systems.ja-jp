@@ -1,10 +1,10 @@
 ---
-permalink: asa-r2-70-90/controller-replace-shutdown-asa-r2.html 
+permalink: asa-r2-a1k/controller-replace-shutdown-nomcc.html 
 sidebar: sidebar 
-keywords: asa r2 a70, asa r2 a90, shut down the impaired controller 
+keywords: asa r2 a1k, shut down the impaired controller 
 summary: 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。 
 ---
-= 障害のあるコントローラのシャットダウン- ASA A70とASA A90
+= 障害のあるコントローラをシャットダウンします- ASA A1K
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -16,7 +16,7 @@ summary: 障害のあるコントローラをシャットダウンするには�
 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
 
 .このタスクについて
-* SANシステムを使用している場合は、障害コントローラのSCSIブレードのイベントメッセージを確認しておく必要があり  `cluster kernel-service show`ます）。コマンド（priv advancedモードから）を実行すると、 `cluster kernel-service show` ノード名、そのノードのクォーラムステータス、そのノードの可用性ステータス、およびそのノードの動作ステータスが表示されます。
+* SANシステムを使用している場合は、障害コントローラのSCSIブレードのイベントメッセージを確認しておく必要があり  `cluster kernel-service show`ます）。コマンド（priv advancedモードから）を実行すると、 `cluster kernel-service show`そのノードのノード名、そのノードの可用性ステータス、およびそのノードの動作ステータスが表示されlink:https://docs.netapp.com/us-en/ontap/system-admin/display-nodes-cluster-task.html["クォーラムステータス"]ます。
 +
 各 SCSI ブレードプロセスは、クラスタ内の他のノードとクォーラムを構成している必要があります。交換を進める前に、すべての問題を解決しておく必要があります。
 

@@ -32,11 +32,11 @@ ONTAP 9.16.0 以前
 .. 障害コントローラで、次のメッセージが表示されたら_Y_を押します。 `Do you want to restore the backup configuration now?`
 .. 障害コントローラで、上書きするかどうかを確認するメッセージが表示されたら_Y_を押します `/etc/ssh/ssh_host_ecdsa_key`。
 .. 正常なパートナーコントローラで、障害コントローラをadvanced権限レベルに設定します。_set -privilege advanced _。
-.. 正常なパートナーコントローラで、restore backupコマンド_system node restore -backup -node local-target-address impaired_node_IP_address_を実行します。
+.. 正常なパートナーコントローラで、restore backupコマンドを実行します `system node restore-backup -node local -target-address impaired_node_IP_address`。
 +
 *注：*リストアが正常に完了した以外のメッセージが表示された場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
 
-.. 正常なパートナーコントローラで、障害のあるコントローラをadminレベルに戻します。_set -privilege admin_。
+.. 正常なパートナーコントローラで、障害のあるコントローラをadminレベルに戻します `set -privilege admin`。
 .. 障害コントローラで、というメッセージが表示されたら、_y_を押します `Was the restore backup procedure successful?`。
 .. 障害コントローラで、というメッセージが表示されたら、_y_を押します `...would you like to use this restored copy now?`。
 .. 障害コントローラで、障害コントローラのリブートを求めるプロンプトが表示されたら_y_を押し、ブートメニューとして_Ctrl+C_を押します。

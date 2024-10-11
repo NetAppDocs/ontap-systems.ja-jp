@@ -24,7 +24,7 @@ entries:
     - title: オンボード暗号化キーを確認
       url: "/fas8200/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
-      url: "/fas8200/bootmedia-impaired-controller-shutdown.html"
+      url: "/fas8200/bootmedia-shutdown.html"
     - title: ブートメディアを交換します
       url: "/fas8200/bootmedia-replace.html"
     - title: ブートイメージを起動します

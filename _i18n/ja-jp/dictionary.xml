@@ -638,7 +638,6 @@
   <block id="b97bdff613a0ca54c0d7c15ca245a1f5" category="paragraph">コントローラモジュールの管理ポート、ファイバチャネルポート、データポートまたはホストネットワークポートは、スイッチに接続されます。クラスタインターコネクトポートは、両方のコントローラモジュールでケーブル接続されます。</block>
   <block id="9c5bcb67e10ffb465deabdb27ded4b10" category="paragraph">システムとスイッチの接続については、ネットワーク管理者にお問い合わせください。</block>
   <block id="f27acca0ae6d65e7323b16e8fd4c8c55" category="paragraph">図の矢印を見て、ケーブルコネクタのプルタブの正しい向きを確認してください。</block>
-  <block id="7540cda30776c310e4b86b624032cea1" category="image-alt">OIE ケーブルのプルタブを下に引きます</block>
   <block id="1ec9fa42251d8d9889cd15b2ab11e819" category="admonition">コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。音がしない場合は、コネクタを取り外し、回転させてからもう一度試してください。</block>
   <block id="3f4a7771ab61ac16b156190d458da251" category="cell">各コントローラでを実行します</block>
   <block id="59fffbd09d1c7158959327a869b9292f" category="list-text">e0c から e0c へ</block>
@@ -823,8 +822,6 @@
   <block id="525f20b798e113619547955d7d7dcf5c" category="list-text">エアダクトを閉じます。</block>
   <block id="4fc302016c3931e6a9278cd203ab978a" category="list-text">エアダクトを下に回転させます。</block>
   <block id="d9f2c30fa17e17bb535f8c9807f2bd46" category="list-text">カチッという音がして所定の位置に収まるまで、エアダクトをライザーの方向にスライドさせます。</block>
-  <block id="ce895c4f6ee583d1352aa92ca42a2e7a" category="list-text">コマンドの出力に &lt;lno-DARE&gt; が表示されず、システムで ONTAP 9.5 が実行されている場合は、に進みます <block ref="814a166e20bd32e0eb4f111e2d255525" category="inline-xref-macro-rx"></block>。</block>
-  <block id="3bdbfc08b67b8b5c267819cc7ef67535" category="list-text">コマンドの出力に &lt;lno-DARE &gt; が表示されず、システムで ONTAP 9.6 以降が実行されている場合は、に進みます <block ref="9431a288e6ce7a6d88bc6ae31dccd0f0" category="inline-xref-macro-rx"></block>。</block>
   <block id="598fddf79c16170c6db6427cdff14daa" category="section-title">オプション 1 ： ONTAP 9.5 以前を実行しているシステムで NVE または NSE をチェックする</block>
   <block id="b227d8958eb504b6da0a08172b4222db" category="list-text">クラスタ内のボリュームに NVE が設定されているかどうかを確認します。 volume show -is-encrypted true</block>
   <block id="68e27ac90c8755079206639397a6abfe" category="list-text">NSE が設定されているかどうかを確認します。「 storage encryption disk show 」</block>
@@ -1012,28 +1009,7 @@
   <block id="5e1a5ffb20ce25d1d79c8e2014f87d45" category="doc">リカバリイメージ AFF A700s をブートします</block>
   <block id="5ff3f260d4c603a9f1e9d18be080e7e7" category="list-text">var ファイルシステムを復元します。</block>
   <block id="39d85e49c5dadc98a9a1f6eaef4229dc" category="doc">必要に応じて、 OKM 、 NSE 、 NVE をリストアします - AFF A700s</block>
-  <block id="9f449eadd9f840a5c966a2263ed799e7" category="paragraph">OKM 、 NSE 、または NVE 構成をリストアするために使用するセクションを決定します。</block>
   <block id="675deaab2af548f6613e03341b8c6bf5" category="paragraph">NSE または NVE がオンボードキーマネージャとともに有効になっている場合は、この手順の最初に取得した設定をリストアする必要があります。</block>
-  <block id="7b0aaf04d837959de750f63e122aff17" category="list-text">NSE または NVE が有効で、オンボードキーマネージャが有効になっている場合は、に進みます <block ref="15e7160fd59a79216dfb1ebf971c4e73" category="inline-xref-macro-rx"></block>。</block>
-  <block id="ee87e31a5c2076afaa5ba0044b7facb8" category="list-text">ONATP 9.5 で NSE または NVE が有効になっている場合は、に進みます <block ref="257ab75384cc6c87cbc99f31967da2bf" category="inline-xref-macro-rx"></block>。</block>
-  <block id="e9076ebdee65093373c882a63b81bfb4" category="list-text">ONTAP 9.6 に対して NSE または NVE が有効になっている場合は、に進みます <block ref="76f4cb410fb9692bc2a4c8bc5d9a16b6" category="inline-xref-macro-rx"></block>。</block>
-  <block id="a4522d671c9a1eaef7e6861375bcf9ff" category="section-title">オプション 1 ：オンボードキーマネージャが有効な場合は、 NVE または NSE をリストアする</block>
-  <block id="a7af9d05a3f737ccfcf08da76a941833" category="paragraph">システムが「 Waiting for giveback... 」プロンプトでブートします。</block>
-  <block id="ec51bbadff0b2b58dd5e17500450347d" category="list-text">ONTAP 9.5 以前を実行している場合は、 key-manager setup ウィザードを実行します。</block>
-  <block id="349391cfc8a88972d7c1ff23df854b42" category="list-text">「 securitykey-manager setup -nodename` 」コマンドを使用してウィザードを起動し、プロンプトが表示されたらオンボードキー管理のパスフレーズを入力します。</block>
-  <block id="11a7c9bd5d2c9f9371ccfbc7d899847b" category="list-text">'key-manager key show-detail' コマンドを入力して ' オンボード・キー・マネージャに格納されているすべてのキーの詳細を表示し ' すべての認証キーについて 'restored`column=yes を確認します</block>
-  <block id="cf63f70b7dc6ead2d083c12ded486fe3" category="admonition">「 Restored 」列が「 yes 」以外の場合は、カスタマサポートにお問い合わせください。</block>
-  <block id="49c84012756b1d43065ffef96acd5bf9" category="section-title">オプション 2 ： ONTAP 9.5 以前を実行しているシステムで NSE / NVE をリストアする</block>
-  <block id="334778235b226e6b9a2fa7bdae194a55" category="admonition">NVE （ NetApp Volume Encryption ）が設定されている場合、このコマンドは機能しません</block>
-  <block id="86f0dc416f631fdf25bde8175a84c56b" category="list-text">security key-manager query を使用して、キー管理サーバに格納されている認証キーのキー ID を表示します。</block>
-  <block id="45039b8f247c5c5af62e9b5aa63f488d" category="list-text">「 Restored 」列が「 yes 」であり、すべてのキー管理ツールが「 available 」状態でレポートする場合は、「 _complete the replacement process_ 」に進みます。</block>
-  <block id="f13eed14eb7d467fbb68b4ac260aff0d" category="list-text">「 Restored 」列が「 yes 」以外のもので、 1 つまたは複数のキー管理ツールが使用できない場合は、「 securitykey-manager restore-address 」コマンドを使用して、使用可能なすべてのキー管理サーバからすべてのノードに関連付けられた AK およびキー ID を取得およびリストアします。</block>
-  <block id="a49e6da7eeba8ff4fc0371482ef94182" category="paragraph">security key-manager query の出力を再度チェックして 'restored' カラム = 'yes' およびすべてのキー管理ツールが Available 状態でレポートされていることを確認します</block>
-  <block id="ace4eba131e80f673ffb601701e7af58" category="list-text">オンボードキー管理が有効になっている場合：</block>
-  <block id="f290569763473bca2232707327b636a3" category="list-text">「 securitykey-manager key show -detail 」を使用して、オンボードキーマネージャに格納されているすべてのキーの詳細を表示します。</block>
-  <block id="eb54b248602ad80455cfbfba2f86bcce" category="list-text">「 securitykey-manager key show -detail` コマンドを使用して、すべての認証キーの「 restored 」列 = 「 yes 」であることを確認します。</block>
-  <block id="1ecb788d548c13b873db10bcdb91408a" category="paragraph">「 Restored 」列が「 yes 」以外の場合は、「 securitykey-manager setup -node _repaired _ （ Target ） _node_ 」コマンドを使用して、オンボードキー管理の設定を復元します。すべての認証キーについて 'securitykey-manager key show -detail` コマンドを再実行して 'restored`column=yes を確認します</block>
-  <block id="a43578c1a3b2f4b016fc1e478c1b7369" category="section-title">オプション 3 ： ONTAP 9.6 以降を実行しているシステムで NSE / NVE をリストアする</block>
   <block id="4b6f3f55d184c33efac164b8b2ee5af1" category="cell">コンソールに表示される内容</block>
   <block id="85782e063d10d2f824adbf09b6b2f2df" category="paragraph">security key-manager key query を使用して ' すべての認証キーの Restored カラム = 'yes/true' を確認します</block>
   <block id="c6c330df068950fe73f003a3f85b3fa0" category="list-text">交換用ファンモジュールの端をコントローラモジュールの開口部に合わせ、ロックラッチが所定の位置にカチッと収まるまで、交換用ファンモジュールをコントローラモジュールにスライドさせます。</block>
@@ -2810,8 +2786,6 @@
   <block id="536b0bd1a9c2b544d6cfae19d9289ea7" category="section-title">手順 1 ：システムをケーブルで再接続します</block>
   <block id="b0da6837b9dc75b3c0fcca1c9c38d89b" category="paragraph">HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。スタンドアロンシステムでは、 ID をディスクに手動で再割り当てする必要があります。構成に適した手順を使用する必要があります。</block>
   <block id="677d8bcfde6bff1a436a7a5e69b4dd4b" category="doc">クラスタ設定ワークシート - AFF A200</block>
-  <block id="c63040480653df4c796c48ec77d545d6" category="section-title">オプション 1 ： ONTAP 9.5 以前を実行しているシステムの NVE または NSE をチェックする</block>
-  <block id="249776239ba561818dea48749c5be5e8" category="section-title">オプション 2 ： ONTAP 9.6 以降を実行しているシステムの NVE または NSE を確認する</block>
   <block id="8cd2c59a1f3a2ce0c49c92a0d4528f07" category="list-text"><block ref="8cd2c59a1f3a2ce0c49c92a0d4528f07" category="inline-link-macro-rx"></block></block>
   <block id="b5b22eb5eb0f03243c0620128dd7637e" category="list-text"><block ref="b5b22eb5eb0f03243c0620128dd7637e" category="inline-link-macro-rx"></block></block>
   <block id="664d3eb774ad3059727a76a1079ff305" category="list-text"><block ref="664d3eb774ad3059727a76a1079ff305" category="inline-link-macro-rx"></block></block>
@@ -3250,7 +3224,6 @@
   <block id="72e762fb9ea8e85f3b69ae72fd4dc171" category="doc">NVDIMM を交換します - AFF A320</block>
   <block id="611cf47f3569074932e1d1554c9dcfdd" category="doc">障害のある部品を NetApp-AFF A320 に返却します</block>
   <block id="770d6678fb5416b05c67128a9e4fed01" category="doc">リストアと交換のプロセスを完了します - AFF A320</block>
-  <block id="3672b64d07583e651fa9761c4dd84ce8" category="list-text">コマンドの出力に &lt;lno-DARE&gt; が表示されず、システムで ONTAP 9.6 以降が実行されている場合は、次のセクションに進みます。</block>
   <block id="859ccfcd29caf785c027a394d4d1bbf8" category="doc">詳細ガイド - AFF A320</block>
   <block id="67f289221dc2b8315be57c85a28e0619" category="section-title">設置を準備</block>
   <block id="656c38ee853d1047906b8177838e0e02" category="paragraph">AFF A320 システムを設置するには、アカウントを作成し、システムを登録し、ライセンスキーを取得する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。</block>
@@ -4261,7 +4234,6 @@
   <block id="fb1ca7e905b80bde19bff1b5175a28a8" category="sidebar">クラスタ設定ワークシート</block>
   <block id="09e6986d38c958067d3f7250d2ce4205" category="sidebar">AFF A700s は引き続き使用できます</block>
   <block id="86944307c29e33503bf32ddc090cebc1" category="sidebar">AFF A700s ブートメディア</block>
-  <block id="c963889e4f37167713099b1ae5bc45f1" category="sidebar">オンボード暗号化を確認</block>
   <block id="691613dd0ac7bc6b4d084d742d31231d" category="sidebar">ノードをシャットダウン</block>
   <block id="4c41090a6fb60f1879367726da1ef375" category="sidebar">ブートイメージを転送します</block>
   <block id="4902255e26a7f745d80ce007cfcb1855" category="sidebar">AFF A700s シャーシ</block>
@@ -4570,12 +4542,8 @@
   <block id="6675c229d440b5fa295266d2c66af8cb" category="list-text">[Restored （リストア済み） ] カラムに 'yes' と表示されている場合は ' オンボード・キー管理情報を手動でバックアップします</block>
   <block id="4111f4985df04f9002129e591bafb45f" category="list-text">[Restored （復元） ] 列に「 yes 」と表示されている場合は、オンボードキー管理情報を手動でバックアップします。</block>
   <block id="47172f1226f9908865e044955d2f091b" category="paragraph">を使用できます <block ref="cb0390cbe2f3cf678134885ff143b6ba" category="inline-link-macro-rx"></block> ONTAP クラスタを構成する際に必要となるサイト固有の IP アドレスやその他の情報を収集して記録する。</block>
-  <block id="78f75f00d9872e8e3abcdad7ee860f3e" category="list-text">ブート・メニューで ' 非表示のコマンド 'recover_onboard keymanager_' を入力し ' プロンプトで y と応答します</block>
-  <block id="d06f1c2732b47c32b1afcd433f48af20" category="list-text">バックアップ・データの入力を求められたら、この手順の最初にキャプチャしたバックアップ・データを貼り付けます。security key-manager backup show コマンドまたは security key-manager onboard show-backup コマンドの出力を貼り付けます。</block>
-  <block id="1f30f9701a096430ddea174eb406dce3" category="list-text">storage failover giveback '-fromnode local-only -cfo-aggregates true コマンドを使用して CFO アグリゲートだけをギブバックします</block>
   <block id="cb941ddf6eb69b4ddc86e6b07a005e30" category="list-text">CIFS セッションが開いているためにコマンドが失敗する場合は、 CIFS セッションを閉じる方法をお客様に確認します。</block>
   <block id="b52ec9545c2eb85c1596e99bc30ce43d" category="list-text">パートナーの準備が完了していないためにコマンドが失敗した場合は、 NVMEM が同期されるまで 5 分待ちます。</block>
-  <block id="17b949ad3f0aee5e0f32cb49f51f6f3d" category="list-text">ONTAP 9.6 以降を実行している場合：</block>
   <block id="e85e66f99bf70a0cd52615d346aa4f9f" category="paragraph"><block ref="e85e66f99bf70a0cd52615d346aa4f9f" category="inline-link-macro-rx"></block></block>
   <block id="e3d9e54e0daad2e60e36e8b370fec883" category="paragraph"><block ref="e3d9e54e0daad2e60e36e8b370fec883" category="inline-link-macro-rx"></block></block>
   <block id="083781fc87756a032121b806b4d18a92" category="paragraph"><block ref="083781fc87756a032121b806b4d18a92" category="inline-link-macro-rx"></block></block>
@@ -4703,13 +4671,7 @@
   <block id="6ce5f7147d284a7d41c1fc93d3072d57" category="list-text">/etc/ssh/ssh_host_ecDSA_KEY を上書きするように求められたら 'y' を押します</block>
   <block id="1396dacdf561903f32c605f06d2cf5d8" category="list-text">復元バックアップが成功したかどうかを確認するプロンプトが表示されたら 'y' を押します</block>
   <block id="c9ed271ea801891a1b5c1e6e048813b6" category="list-text">復元された構成のコピーのプロンプトが表示されたら 'Y' を押します</block>
-  <block id="2ddd54a208744ec5e2ccb1b7ac83aa05" category="list-text">printenv コマンドを使用して ' 環境変数の設定を確認します</block>
-  <block id="eeacd9b31ab0c2f60f1d13e5632f7f13" category="list-text">saveenv コマンドを使用して、変更内容を保存します。</block>
   <block id="29d4dec218aeaffabfed6dcc8fd1ad45" category="list-text">システムにオンボードキーマネージャ、 NSE 、または NVE が設定されている場合は、に進みます <block ref="39910b5f3ea1ee39d8059faae857cc98" category="inline-xref-macro-rx"></block></block>
-  <block id="b52d8d1d987722da12d16df8a0a63541" category="list-text">LOADER プロンプトで、 boot_ontap コマンドを入力します。</block>
-  <block id="13b6e1ea33838db60037aa0b1c5c884b" category="list-text">クラスタプロンプトで、 net int-is-home false コマンドを使用して論理インターフェイスを確認します。</block>
-  <block id="5e5ce8025b11752aab339bd61df121bc" category="paragraph">「 false 」と表示されるインターフェイスがある場合は、 net int revert コマンドを使用して、それらのインターフェイスをホームポートに戻します。</block>
-  <block id="21771aeeca9194c9c6cc4646a2230c93" category="list-text">storage failover modify -node local-auto-giveback true コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。</block>
   <block id="b35a00e75330322eefd710713ca83b02" category="doc">AFF A900 システム</block>
   <block id="23b82013e68c4445eaa3ec355ca09fb4" category="summary">NVRAM モジュールは、 NVRAM11 と DIMM 、 NVRAM モジュールあたり最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。</block>
   <block id="b422a6f4d3945c00efbef5a1554df972" category="doc">NVRAM モジュール / NVRAM DIMM を交換してください - AFF A900</block>
@@ -4763,7 +4725,6 @@
   <block id="85fd23f64df6d6e4c54bd55af7b58c44" category="paragraph">スロット 3 または 7 の NIC モジュール</block>
   <block id="86cf1151f6e6623b20e6f28b8eb846ea" category="paragraph">各ポートには 'storage port modify -node * _&lt;node name&gt; ____port * _&lt;port name&gt; ____-mode network ’コマンドを使用します</block>
   <block id="3cb2d50b71ca167f282d29cc4a2f763f" category="paragraph">ストレージモジュール</block>
-  <block id="ee509c1ffca70e9f258ad73c3116cf37" category="doc">オンボード暗号化キーのシャットダウン前チェック - AFF A900</block>
   <block id="127cae73d2b4d7758b4c0a0e3f49ba5f" category="section-title">ONTAP 9.6 以降</block>
   <block id="d994e1a1688cb6d7b8e264a209d763d6" category="doc">シャーシを交換してください - AFF A900</block>
   <block id="e10b0a89639d4224f22325c89418ef31" category="paragraph">シャーシを交換するには、電源装置、ファン、コントローラモジュール、 I/O モジュール、 DCPM モジュールを取り外す必要があります。 障害のあるシャーシから USB LED モジュールを取り外し、障害のあるシャーシを装置ラックまたはシステムキャビネットから取り外し、交換用シャーシを所定の位置に取り付けて、交換用シャーシにコンポーネントを取り付けます。</block>
@@ -4776,7 +4737,6 @@
   <block id="a8869e142255ff80f45be4817f469087" category="section-title">手順 3 ： I/O モジュールの交換後にコントローラをリブートします</block>
   <block id="bbee62c98bf71c87d77b3d48e5cacaff" category="paragraph">I/O モジュールを交換したら、コントローラモジュールをリブートする必要があります。</block>
   <block id="b40d85db7a9de91cff53c5663c76daaf" category="list-text">ノードを通常動作に戻します。 storage failover giveback -ofnode impaired_node_name</block>
-  <block id="65dc2e566ca79200d7c70bef0b947464" category="doc">OKM 、 NSE 、および NVE - AFF A900 のブートメディア交換後の手順</block>
   <block id="9a35117ce5f367da3a3ca5116d861d73" category="list-text">ブート・メニューで ' 非表示のコマンド 'recover_onboard keymanager_' を入力し ' プロンプトで y と応答します</block>
   <block id="1491d378fbbc2d9a6048e5b9b67a396a" category="paragraph">バックアップデータを入力します。</block>
   <block id="56b9aa57eb07c87d93d8f36e42537891" category="list-text">CIFS セッションが開いているためにコマンドが失敗する場合は、 CIFS セッションを閉じる方法をお客様に確認します。</block>
@@ -4990,14 +4950,12 @@
   <block id="ac205ac062087cc3bddb7bbe8de9e36b" category="doc">シャーシ交換の概要 - AFF A300</block>
   <block id="23afe5a44fb7df71a9b5f333ac3d9ee5" category="doc">ハードウェアの交換 - AFF A300</block>
   <block id="57392ef77b666ec53aa7b24253ca15d7" category="doc">構成をリストアおよび検証する - AFF A300</block>
-  <block id="01c4da54c2c1f7a4ffbf1fca4cc44870" category="doc">オンボード暗号化キーを確認 - AFF A300</block>
   <block id="655693b8856b3ddd0aca0944005d67f9" category="doc">コントローラモジュールハードウェアを交換します - AFF A320</block>
   <block id="1654c00921a4540ccc78b0e715f2d722" category="doc">コントローラモジュールの交換 - AFF A320 の概要</block>
   <block id="5d670c53861caee9002db54ba657302f" category="doc">ファンの交換プロセスを完了します - AFF A320</block>
   <block id="38336112552a047729e9db773480ddb1" category="doc">ブートメディアの交換 - AFF A320 の概要</block>
   <block id="3704d1b563dc6b0a84e78627c5e9af06" category="doc">シャーシの交換の概要 - AFF A320</block>
   <block id="6a6726deff56a3d5459d4e11d247e22a" category="doc">ハードウェアを交換 - AFF A320</block>
-  <block id="f6344d6f5f705ef72e5da86baf7ff342" category="doc">オンボード暗号化キー - AFF A320 を確認します</block>
   <block id="1a44c6d683ab4458e8c10088dee0617d" category="doc">FAS8200 をリストアして設定を確認します</block>
   <block id="dd5eaf7a75785b4f26d6e9793b46ea6c" category="doc">シャーシの交換 - FAS8200 の概要</block>
   <block id="52a61ff1e81c104a11ce1a58a38dd667" category="doc">コントローラ - FAS8200 をシャットダウンします</block>
@@ -5009,7 +4967,6 @@
   <block id="fa0985de926ce301def780548b1def1b" category="doc">ブートメディアの交換の概要 - AFF A250</block>
   <block id="894589cfca213bee046082fa6b4377ea" category="doc">シャーシの交換の概要 - AFF A250</block>
   <block id="a73367a24d737b005906f745ac5c73c2" category="doc">ハードウェアの交換 - AFF A250</block>
-  <block id="d4ec9448190c18c9b85b138eae5cfe04" category="doc">オンボード暗号化キー（ AFF A250 ）を確認します</block>
   <block id="c0925c06c8c424f377718df251d2ae9f" category="doc">リアルタイムクロックバッテリ -FAS8300 および FAS8700 を交換してください</block>
   <block id="73e891cd10bc7a669d3df2629ca0ed7c" category="doc">NVDIMM - FAS8300 および FAS8700 を交換します</block>
   <block id="25a1b4c8ff5717b58eca78fec7573116" category="doc">シャーシの交換の概要 - FAS8300 および FAS8700</block>
@@ -5024,7 +4981,6 @@
   <block id="61c752abcbb868d9432b6f4a5da1593b" category="doc">コントローラモジュールの交換の概要 - AFF A400</block>
   <block id="20ea0eb9eebca0280abc5766496bdaed" category="doc">コントローラモジュールハードウェアを交換してください - AFF A400</block>
   <block id="d8be62011c1882fcf382ba1c61256314" category="doc">リカバリイメージ AFF A400 をブートします</block>
-  <block id="4b9df7d99ab3f888b89a8bd4aaa10571" category="doc">オンボード暗号化をチェック - AFF A400</block>
   <block id="81eedb27d867146f5a1ad2679adf0de0" category="doc">ブートメディアの交換の概要 - AFF A400</block>
   <block id="29b26f35ca717821e38847f4152f36bb" category="doc">ハードウェアの交換 - AFF A400</block>
   <block id="82df4d187ca1c57ddc3d281ba59fc12f" category="doc">構成をリストアおよび検証します。 AFF C190</block>
@@ -5052,7 +5008,6 @@
   <block id="00399cc3a07fad2f3aadfc84abd6ee65" category="doc">ブートメディア交換の概要 - FAS500f</block>
   <block id="0dfb2568739ce156f475dfddb29e2387" category="doc">シャーシの交換の概要 - AFF A700s</block>
   <block id="09b725ec4b513cf16714e69e0bf388eb" category="doc">コントローラモジュールの交換の概要 - AFF A700s</block>
-  <block id="002bb0675c02757351d3b908720a16cf" category="doc">オンボード暗号化キーを確認する - AFF A700s</block>
   <block id="505ba7be41620674b2d6d7caf7f3453d" category="doc">ブートメディアの交換の概要 - AFF A700s</block>
   <block id="212a7c63df3073a24c5ba97aaad63e51" category="doc">ハードウェアの交換 - AFF A700s</block>
   <block id="24ce82ff8bc29243190bb0a11659117c" category="doc">NVRAM モジュールと NVRAM DIMM を交換してください - AFF A700s</block>
@@ -5062,7 +5017,6 @@
   <block id="2472604fcc7ccf02f05c6c66afaacc6c" category="doc">ブートメディアの交換の概要 - AFF A200</block>
   <block id="5dfe4c7eb319ce6f2ebfab2e157e0c1b" category="doc">シャーシの交換の概要 - AFF A200</block>
   <block id="5fbbe4b96a5266b936c056caa3466c60" category="doc">設定 AFF A200 を復元して確認します</block>
-  <block id="692f4928d5204c6348c9d46866e44703" category="doc">オンボード暗号化キーを確認します - AFF A200</block>
   <block id="68f1a7b941dc9e6a48709297bda51c0f" category="doc">X91148A モジュールの追加の概要： AFF A9000</block>
   <block id="165c715a7b9960848663b1b8fa3c5525" category="doc">ブートメディアの交換 - AFF A700 および FAS9000</block>
   <block id="865bb86499cf1ad3a70c7ff888673760" category="doc">障害のあるコントローラ AFF A800 をシャットダウンします</block>
@@ -5117,15 +5071,12 @@
   <block id="27be5ff3320dd506741c0dbef8e1a1d9" category="list-text">コンソールケーブルをターゲットコントローラに接続します。</block>
   <block id="58381527d135a27a6bde4b5bd05e7a8a" category="list-text">LOADER プロンプトで「 boot_ontap 」コマンドを使用して、コントローラをブートします。</block>
   <block id="be909ce65bf8d6df63809bd8c8368b35" category="paragraph">コントローラをブートメニュー「 boot_ontap menu 」からブートします</block>
-  <block id="bba0a4490b9b5d901440b4efe0a7eb1e" category="list-text">というメッセージが表示されたら、 [y/n] を待たずにこのコントローラを停止しますか？「 y 」と入力します</block>
-  <block id="1510bdf514dfae1723f7a1f6b0ff03db" category="list-text">パートナーコントローラにコンソールケーブルを接続し、 admin としてログインします。</block>
   <block id="9b1d1f16f124136fae5f19f7571be4e8" category="list-text">コンソールケーブルをターゲットコントローラに接続します。</block>
   <block id="e5a640f18574a8775849c862d1047203" category="list-text">パートナーコントローラにコンソールケーブルを接続します。</block>
   <block id="3626acf8f3fb043db8b4ec1fa9c88689" category="list-text">storage failover giveback -fromnode local コマンドを使用して、ターゲットコントローラをギブバックします。</block>
   <block id="fbca918423039255e9a6e82d918f66a5" category="list-text">クラスタシェルプロンプトで、「 net int show -is-home false 」コマンドを入力し、ホームコントローラとポートにない論理インターフェイスを表示します。</block>
   <block id="c1f75c987a465b1cc4e36d81f98dc0f6" category="list-text">コンソール・ケーブルをターゲット・コントローラに移動し 'version -v コマンドを実行して ONTAP のバージョンを確認します</block>
   <block id="22a48d4647a1c5395be2a1c92346ddfe" category="list-text">コンソール・ケーブルをパートナー・コントローラに移動し ' storage failover giveback -fromnode local-only CFO -aggregates true local コマンドを使用してターゲット・コントローラ・ストレージをギブバックします</block>
-  <block id="57280142f53f2468b01205668a497bd7" category="list-text">コンソール・ケーブルをターゲット・コントローラに移動し 'version -v コマンドを実行して ONTAP のバージョンを確認します</block>
   <block id="eebf63bcf7fcba78ebd7e303619a4e75" category="list-text">各コントローラをメンテナンスモードでブートします。</block>
   <block id="0ac47fa5e6b32bbd32bc23dda31f6f48" category="paragraph">コントローラは、シャーシに完全に取り付けられるとすぐにブートを開始します。</block>
   <block id="742cf561af7f07544ddf9f3e66121452" category="paragraph">このメッセージが表示されない場合は、 Ctrl+C キーを押し、メンテナンスモードでブートするオプションを選択してから、コントローラを停止して LOADER プロンプトを表示します。</block>
@@ -5214,13 +5165,7 @@
   <block id="85e5c14e4c98322df87028e0cafd79a7" category="paragraph">これにより、障害のあるコントローラのアグリゲートおよびボリュームの所有権を正常なコントローラから障害のあるコントローラに戻すプロセスが開始されます。</block>
   <block id="5ab3b65334d9648ac44bf62025764ce2" category="section-title">手順 2 ：コントローラを取り外す</block>
   <block id="f1eb9bf0f474a83bbe6d11b59f16da8c" category="list-text">ストレージをギブバックして、コントローラを通常の動作に戻します。「 storage failover giveback -ofnode impaired_node_name</block>
-  <block id="bced3f55c14cfa1d16ca32cbbb0b1d97" category="list-text">障害のあるコントローラを advanced 権限レベルに設定します。「 set -privilege advanced</block>
-  <block id="19e5239645b6945e8296ea6ae040ed4c" category="list-text">障害のあるコントローラを admin レベルに戻します :'set -privilege admin</block>
-  <block id="fc86636cc733253cec13dbbddcd9f251" category="list-text">障害のあるコントローラを再起動するよう求められたら 'y' を押します</block>
-  <block id="35e25520eae4191769a5f17749607c22" category="list-text">障害のあるコントローラに LOADER プロンプトを表示します。</block>
-  <block id="5d5be5511db4bca75b01ab22c4adf4ce" category="list-text">storage failover show コマンドを使用して ' ターゲットがギブバック可能な状態であることを確認します</block>
   <block id="6895f6bac75ce22d9b20367054acb577" category="list-text">storage failover giveback -fromnode local コマンドを使用してコントローラをギブバックします。</block>
-  <block id="05de3ff101e97b558e9ecd1a48f59f80" category="list-text">構成に応じた手順 を使用して、コンソールケーブルを修復されたシャットダウンに移動するか、障害のあるコントローラをテイクオーバーします。を実行し、 version -v コマンドを実行して ONTAP のバージョンを確認します。</block>
   <block id="0b0ce175074093bb880164e8608f30ab" category="list-text">LOADER プロンプトで boot_ontap コマンドを使用してコントローラをブートします。</block>
   <block id="c44f1e5dca108a88d3a5c0122cfaad60" category="list-text">パートナーコントローラにコンソールケーブルを接続し、 admin としてログインします。</block>
   <block id="6c8465bcaf5ce5fddf9eade0934b0fcf" category="list-text">クラスタシェルプロンプトで、 net int show -is-home false コマンドを入力し、ホームコントローラとポートにない論理インターフェイスを表示します。</block>
@@ -5969,7 +5914,6 @@
   <block id="7befdc0c8cc35d0c1711e11bd7feb970" category="list-text">キャッシングモジュールのデータを消去します。<block ref="6daf7f4112fcf7c7be366c44ff70faf2" prefix=" " category="inline-code"></block></block>
   <block id="236dd84b9226dbf8dfd98a6c46b59972" category="list-text">キャッシングモジュールからデータが消去されたことを確認します。<block ref="55030d884a341e8f95d06478b61fbec9" prefix=" " category="inline-code"></block></block>
   <block id="af41b619bf9d50ddae2454efc001e4dd" category="paragraph">出力には、キャッシングモジュールのステータスが消去済みと表示されます。</block>
-  <block id="1a9ae2b5eb296d614bebfdc33f389268" category="doc">オンボード暗号化キー（AFF A150）を確認します</block>
   <block id="3bf6a2921f0e655ea4d2b6b2851e02df" category="doc">システムにケーブルを再接続し、ディスクを再割り当てします（AFF A150）</block>
   <block id="1cd8a39839471e937855a3c54b6b84d9" category="doc">ブートメディアの交換の概要- AFF A150</block>
   <block id="35db388e4e99e4a7488ab682126d7fa6" category="doc">NVMEMバッテリを交換します（AFF A150）</block>
@@ -6803,7 +6747,6 @@ storage failover modify -node local-auto-giveback false」と入力します
   <block id="a1b1abf2b9f93afc61b501cc65856321" category="list-text">交換用シャーシの2台目のコントローラで上記の手順を繰り返します。</block>
   <block id="fb7c806d17ac05daec934e824397154e" category="list-text">交換用シャーシの2台目のコントローラモジュールで上記の手順を繰り返します。</block>
   <block id="939dd100817795c3c406debd7b6667d8" category="doc">コントローラモジュールの交換- FAS2800の概要</block>
-  <block id="b7b41b094d20b126c69180a1751fc468" category="doc">オンボード暗号化キーを確認- FAS2800</block>
   <block id="8e605f57d62f3d1be204e98b9b4935f7" category="doc">SSDドライブまたはHDDドライブの交換- FAS2800</block>
   <block id="9e88aae04cfd42bd2e0b9f18c79e6b08" category="doc">ブートメディアの交換- FAS2800の概要</block>
   <block id="cffd34bd4c8c92699b3202d7f451d2ae" category="doc">システム構成をリストアして確認します（FAS2800）</block>
@@ -7332,7 +7275,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="fd21e05e00e82c93ae08fac45c859f89" category="doc">クイックガイド- AFF A220</block>
   <block id="107531ef4f423dd82a8f37d8f67c7072" category="doc">リカバリイメージのブート- AFF A220</block>
   <block id="00b19d37023cc17089dc310c38ea5b12" category="doc">SSDドライブまたはHDDドライブの交換- AFF A220</block>
-  <block id="f0495ce31f2221593161d6c143dfca0c" category="doc">オンボード暗号化キーの確認- AFF A220</block>
   <block id="c008920266f52508b3f86b5b90ae91bd" category="doc">コントローラモジュールハードウェアの交換- AFF A220</block>
   <block id="adebe7a542a0fad304a67d2de49182e9" category="doc">シャーシの交換の概要- AFF A220</block>
   <block id="60a73175bbcfc989eee6669fd58fdfd5" category="doc">構成のリストアと検証- AFF A220</block>
@@ -7893,7 +7835,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="a38d1917ff6a9b6732e44475a62db2b8" category="paragraph">ONTAP 9.13.1P1</block>
   <block id="857b6606a6e99d0474fefdb3c0e531c8" category="paragraph"><block ref="857b6606a6e99d0474fefdb3c0e531c8" category="inline-link-rx"></block></block>
   <block id="7fa6e084d3f97d622169e8725d4276fa" category="paragraph"><block ref="7fa6e084d3f97d622169e8725d4276fa" category="inline-link-rx"></block></block>
-  <block id="d5d146524ce4c0f712a824fc5d2837d6" category="paragraph">ONTAP 9.13.P11</block>
   <block id="66053bf3b6e00f570e69483ee7bc5c17" category="paragraph"><block ref="66053bf3b6e00f570e69483ee7bc5c17" category="inline-link-rx"></block></block>
   <block id="1f10563baa8714508ef486de79efa394" category="paragraph"><block ref="1f10563baa8714508ef486de79efa394" category="inline-link-rx"></block></block>
   <block id="c7a0e0fa32b2f0176191d54506ef1eee" category="paragraph"><block ref="c7a0e0fa32b2f0176191d54506ef1eee" category="inline-link-rx"></block></block>
@@ -8326,7 +8267,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="0372c9caab5ee11faf1ffac3ef3c46fa" category="inline-image-macro">スイッチクラスタの複合ケーブル配線図</block>
   <block id="009e65f17aa2f40deb1c718bea3bf98b" category="paragraph"><block ref="009e65f17aa2f40deb1c718bea3bf98b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="586605376a36631b68766c450645ce95" category="list-text">コントローラモジュールをストレージ接続とネットワーク接続にケーブルを再接続します。</block>
-  <block id="3787a827ea9c976e2c93c9193d615b97" category="list-text">SANシステムを使用している場合は、障害コントローラのSCSIブレードのイベントメッセージを確認しておく必要があり <block ref="090678c8ba0a25df800d3d4eeaf19522" prefix="(" category="inline-code"></block>ます）。コマンド（priv advancedモードから）を実行すると、<block ref="090678c8ba0a25df800d3d4eeaf19522" prefix=" " category="inline-code"></block> ノード名、そのノードのクォーラムステータス、そのノードの可用性ステータス、およびそのノードの動作ステータスが表示されます。</block>
   <block id="c8f595ad6dcf30f27e5e610fae364875" category="list-text">AutoSupportが有効になっている場合は、AutoSupportメッセージを呼び出してケースの自動作成を停止します。<block ref="fa00b95aa82b5506a4c27cc4a50f05d7" prefix=" " category="inline-code"></block></block>
   <block id="a6efff0cc5b19d4c49cb4467336db466" category="list-text">AutoSupportが有効になっている場合は、AutoSupport messageコマンドを呼び出してケースの自動作成を抑制します。<block ref="fbcb7868c4849064439910664677cb60" prefix=" " category="inline-code"></block></block>
   <block id="61612a74be5170dd342eb619d607d9a0" category="paragraph">次のAutoSupportコマンドは、ケースの自動作成を2時間停止します。<block ref="6cf51b10a85b7bdc2a6698400ee841b7" prefix=" " category="inline-code"></block></block>
@@ -8397,8 +8337,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="66e5f5f877412d7578e6bec4d8f933b5" category="list-text">障害コントローラで、次のメッセージが表示されたら_Y_を押します。<block ref="aa48693d0248bb57512e373cd7f7eebc" prefix=" " category="inline-code"></block></block>
   <block id="3578391379ba5c5411207a0793afef71" category="list-text">障害コントローラで、上書きするかどうかを確認するメッセージが表示されたら_Y_を押します<block ref="295b4ac77f4e1c5f93c6894df85fd86d" prefix=" " category="inline-code"></block>。</block>
   <block id="496e1cf89cb904a9a2ceccd873c325c5" category="list-text">正常なパートナーコントローラで、障害コントローラをadvanced権限レベルに設定します。_set -privilege advanced _。</block>
-  <block id="f0cfaabee28943cffa398d23cd5ca41f" category="list-text">正常なパートナーコントローラで、restore backupコマンド_system node restore -backup -node local-target-address impaired_node_IP_address_を実行します。</block>
-  <block id="271ca74eba5af203102f7ab7c6dd3191" category="list-text">正常なパートナーコントローラで、障害のあるコントローラをadminレベルに戻します。_set -privilege admin_。</block>
   <block id="61dad7d5cf7f4e4b7469b097ac35485f" category="list-text">障害コントローラで、というメッセージが表示されたら、_y_を押します<block ref="dff08971c5acbbdac6642922fde20608" prefix=" " category="inline-code"></block>。</block>
   <block id="e9636d3f8e24f08b43c5d1ed71e065ea" category="list-text">障害コントローラで、というメッセージが表示されたら、_y_を押します<block ref="396e369cf75815ba643925818d3ec37e" prefix=" " category="inline-code"></block>。</block>
   <block id="976af5aa217f6c1b1dbf16e0ed0a4bde" category="list-text">障害コントローラで、障害コントローラのリブートを求めるプロンプトが表示されたら_y_を押し、ブートメニューとして_Ctrl+C_を押します。</block>
@@ -8428,11 +8366,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4b2ac8ffad2e17ce1b138e4a3264ab6b" category="list-text">システム管理モジュールを取り付け直します。</block>
   <block id="eb765d2015d11e6c71f74bca03b12008" category="list-text">システム管理モジュールにケーブルを再接続します。</block>
   <block id="abc1667423446f22a4eac1d73495d6f2" category="section-title">手順2：ONTAPイメージをブートメディアに転送する</block>
-  <block id="4c04528cd15c6862246747e51ea5163a" category="paragraph">取り付けた交換用ブートメディアにはONTAPイメージがないため、USBフラッシュドライブを使用してONTAPイメージを転送する必要があります。</block>
   <block id="01850306ed8f10853a5c93880928f943" category="list-text">4GB以上の容量がある、FAT32にフォーマットされた空のUSBフラッシュドライブが必要です。</block>
-  <block id="c20c35ef53bf1b70789ce94e66800147" category="inline-link">ダウンロード</block>
-  <block id="4483cf253c00ede642b7a63aa3d2b81d" category="list-text">障害コントローラで実行されていたバージョンのONTAPイメージのコピーが必要です。NetAppサポートサイトのセクションから該当するイメージをダウンロードできます。<block ref="f61be463ec1c2ded1b2e4929c0dfce17" category="inline-link-rx"></block></block>
-  <block id="aca106b8f189624bfd486237c3a81fcb" category="list-text">NVEがサポートされている場合は、NetApp Volume Encryptionを含むイメージをダウンロードします。</block>
   <block id="aa25abaefb58698a9aea7bafb0a15058" category="list-text">NVEがサポートされない場合は、NetAppボリューム暗号化なしのイメージをダウンロードします（ダウンロードボタンに表示されます）。</block>
   <block id="6915dfe0929824fbf5ea71fa2e56edf2" category="list-text">HAペアのシステムの場合は、コントローラのノード管理ポート（通常はe0Mインターフェイス）間にネットワーク接続を確立する必要があります。</block>
   <block id="0968f5229befb788e281eee2fe891623" category="list-text">適切なサービスイメージをからUSBフラッシュドライブにダウンロードしてコピーし<block ref="0ecdd602ef5a1e7a11a81dad2433ccb0" category="inline-link-rx"></block> ます。</block>
@@ -8586,7 +8520,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="df52882bdb0f8ccab117b27b8ad08f11" category="list-text">コントローラがディザスタサイトのディスクの現在の所有者です。</block>
   <block id="dbdb9c1ac216db7c2a5488c988607c9b" category="list-text">MetroCluster構成のシステムの場合は、各コントローラが設定されていることを確認します。_ MetroCluster node show -fields configuration -state_</block>
   <block id="1964518eff1cbd81e89b8431963a7b3a" category="list-text">リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラから有効にします。_storage failover modify -node replacement -node-name -onreboot true_</block>
-  <block id="71bca665257574bbbda30f9d50e92e47" category="list-text">電源ケーブルの固定クリップを開いてPSUを取り外し、PSUから電源ケーブルを抜きます。</block>
   <block id="f83defba1f467eab098c839b34ecd50f" category="image-alt">PSUを交換してください</block>
   <block id="dc77af39a42fc8bba7b24ca9686dfb67" category="paragraph">Terracotta PSUの固定ツメ</block>
   <block id="e1335ae9dd3c981060cb7896ec1cad9f" category="paragraph">障害が発生したRTCバッテリを取り外し、交換用RTCバッテリを取り付けます。</block>
@@ -8854,8 +8787,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="0d8f4216b1a686595d00ee0b5d71392f" category="list-text"><block ref="2ee0908f9e5223d6e83d8a800aaafc05" category="inline-link-rx"></block>です。</block>
   <block id="a631c4c4852d87f0373a4ceef554cd55" category="inline-link">オンボードキー管理のバックアップとクラスタ全体のパスフレーズを検証する方法</block>
   <block id="e1136da7593260e34ba5b2ed856ccd05" category="list-text">続行する前に手順を実行して<block ref="aaf4edeb3b26d690deb5096fe7a1d65f" category="inline-link-rx"></block> ください。</block>
-  <block id="299ca460e09d443253eaddad0c22b9a6" category="list-text">ONTAPのブートメニューからオプション10を選択します。</block>
-  <block id="e5aa840dde8194d8d6df61253c09f357" category="list-text">プロセスの継続を確認してください。<block ref="9c14d4f8d14519ea4ded790c9f9cd146" prefix=" " category="inline-code"></block>_y_</block>
   <block id="c6e69b2f1336dfec071685d57a03c518" category="list-text">クラスタ全体のパスフレーズを2回入力します。</block>
   <block id="f9bffba0a703b49e4849f916f5e0b86a" category="admonition">パスフレーズの入力中、コンソールに入力内容は表示されません。</block>
   <block id="13919b42be0dc9d06cf38142917f4b9e" category="paragraph"><block ref="2b673e138bf62e9f201d2fe3f4e48e85" prefix="" category="inline-code"></block></block>
@@ -8866,17 +8797,11 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="25a669068aaab50a7c2fd5bce904c674" category="admonition">表示された出力が以外の場合は、先に進まない<block ref="3f52dc951949a3041638d54635d71099" prefix=" " category="inline-code"></block>でください。トラブルシューティングを実行してエラーを修正します。</block>
   <block id="4ca210717c7b74a5849140e091b8b172" category="list-text">ブートメニューからオプション1を選択して、ONTAPのブートを続行します。</block>
   <block id="de52f5c2d18fad1d9bb02f99ec8dadf5" category="list-text">コントローラのコンソールに<block ref="22714968f3c097ea3249c9d4b9e8119f" prefix=" " category="inline-code"></block></block>
-  <block id="999c46a3c0b0be09d2315b772cef93f4" category="list-text">パートナーノードから、パートナーコントローラをギブバックします。_storage failover giveback -fromnode local-only-cfo-aggregates true_</block>
-  <block id="6ede7407442dd193a49f8d2d41499d14" category="list-text">CFOアグリゲートでのみ起動したら、_security key-manager onboard syncコマンドを実行します。</block>
-  <block id="df09cb8ebed3f1cee6a949f0db88f478" category="list-text">オンボードキーマネージャのクラスタ全体のパスフレーズを入力します。</block>
-  <block id="34872b906ccadd846f8c009d5dae06d3" category="list-text">すべてのキーが同期されていることを確認します。_security key-manager key query -restored false_</block>
   <block id="36127ab42d959b7fd1802bde97fbbebd" category="paragraph"><block ref="ff552bb89260932a935c259f2e059d29" prefix="" category="inline-code"></block></block>
   <block id="1a397feeabbac5c761b3d1f336523079" category="admonition">restoredパラメータでfalseをフィルタする場合、結果は表示されません。</block>
-  <block id="3b26794816c291bf36128e61d0be91bd" category="list-text">パートナーからのノードのギブバック：_storage failover giveback -fromnode local_</block>
   <block id="612c478fd861d23534a26dd856605b43" category="open-title">オプション2：外部キー管理サーバが設定されたシステム</block>
   <block id="179622516286b14a2256b085ee45c10a" category="paragraph">ONATPブートメニューから外部キー管理ツールの設定をリストアします。</block>
   <block id="075c44463f07a0ee059a3e5089c43ca5" category="paragraph">外部キー管理ツール（EKM）の設定をリストアするには、次の情報が必要です。</block>
-  <block id="751a65070ef8776fe1f50db7fd7774ef" category="list-text">別のクラスタノードから/cfcard/kmip/servers.cfgファイルのコピー、または次の情報が必要です。</block>
   <block id="d60b517023845eb33535660ac501cf18" category="list-text">KMIPサーバのアドレス。</block>
   <block id="70b8d21a07e70130ed6b262a91c18626" category="list-text">KMIPポート。</block>
   <block id="08abc77c04d9685a10837fbb9135a705" category="list-text">別のクラスタノードの/cfcard/kmip/certs/client.crtファイルのコピー、またはクライアント証明書。</block>
@@ -8893,10 +8818,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="ca2e8c6e7a166833a27d9755f814672b" category="list-text"><block ref="9254f5a10bf0e4d18aa18a91a9321bea" prefix="" category="inline-code"></block> _y_</block>
   <block id="d0d46e5c203e3a92bef26e001a5e623d" category="list-text"><block ref="616aa2e195f429a92684489246e90f34" prefix="" category="inline-code"></block> _y_</block>
   <block id="83b207edf8a800f4f88cf102b88cf241" category="list-text">次の各プロンプトの情報を入力します。</block>
-  <block id="f34776f2862555d0fd11d0991ff286ff" category="list-text"><block ref="62188abb740b08015af98427fc26ea8c" prefix="" category="inline-code"></block></block>
-  <block id="c74003b43b828d213916b7196bc60c50" category="list-text"><block ref="9f3c7fcbc9851c468adda9a0e9abe4f2" prefix="" category="inline-code"></block></block>
-  <block id="dc67dd4e83bd586a50c17ea2c94c00d5" category="list-text"><block ref="3b8595d627306d8980fff3bd262d05b2" prefix="" category="inline-code"></block></block>
-  <block id="536aadfad0128887672b66e929f02fcb" category="list-text"><block ref="a6dd61fa165deef585a79e05f8de73b0" prefix="" category="inline-code"></block></block>
   <block id="a242b56bad1d07089dce8ccb795966f2" category="list-text">リカバリプロセスが完了します。</block>
   <block id="3bac3ae452491bc05a59b99b3d2476d6" category="paragraph">手順6に進みます。</block>
   <block id="070dd7606e33a466d7a8bb82a9a64b17" category="list-text">storage failover show_コマンドを使用して、ターゲットコントローラでギブバックの準備が完了していることを確認します。</block>
@@ -8930,7 +8851,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="70072850ad1f4d17d4786c385e8f20b9" category="admonition">StrictSyncモードで動作するSnapMirror同期を使用するクラスタの場合：<block ref="aaef8b07a47365ee6d9bf14ea36ad5d1" prefix=" " category="inline-code"></block></block>
   <block id="2990a44118615c0a3bf6cce4a7382d56" category="list-text">表示されたら、クラスタ内の各コントローラに「* y *」と入力します。<block ref="e50c9785a9a600201730c59602a210ab" prefix=" " category="inline-code"></block></block>
   <block id="889f830bf501de78eaa854a4c956e927" category="doc">故障した部品をNetAppに返却します（AFF A1K）。</block>
-  <block id="66ed54e044d464902b4fc84eae0aaebf" category="doc">オンボード暗号化キーの確認- AFF A1K</block>
   <block id="1ab064b6602aa76e09ccae7297651215" category="doc">リカバリイメージのブート- AFF A1K</block>
   <block id="59b85bf8d1d726d67312a9425f7cabac" category="doc">ブートメディアの交換- AFF A1K</block>
   <block id="ac632c351c050929564cd7a72c3d383a" category="doc">障害のあるコントローラをシャットダウンします- AFF A1K</block>
@@ -9377,20 +9297,12 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6153407aa3467dec46b4d9467c1b1856" category="summary">ブートメディアの交換要件について説明します。</block>
   <block id="83755d1a8b686dba4bc8143c0cb7f397" category="doc">ブートメディアの交換ワークフロー- AFF A1K</block>
   <block id="1d7e5e0e3df76ac9dc695510c92b0468" category="paragraph">ブートメディアを交換するには、次のワークフロー手順を実行します。</block>
-  <block id="725fba88551da9c92e0dc7b5ab34ba0c" category="inline-link-macro">ブートメディアの要件と考慮事項</block>
-  <block id="7aa8454601f36b96e1a20bee3753c58b" category="paragraph">ブートメディアを交換するには、一定の要件を満たす必要があります。を確認します <block ref="be62bd79c2fbb00cbbdbbb71ced5d802" category="inline-link-macro-rx"></block>。</block>
-  <block id="80a95f49e4683aaa8aed6e4b56d5cef1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="0caeda8d60cf80f7a042375ba653d60a" category="inline-link-macro-rx"></block></block>
   <block id="d5874724b2a05ddd0fcf9a45278e58ff" category="paragraph">システムでセキュリティキー管理機能が有効になっているか暗号化されたディスクがあるかを確認します。</block>
-  <block id="99656405f7d1d5d39430b7771d03dad7" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="7444ce336f5cb99437679b1ac8b6aefb" category="inline-link-macro-rx"></block></block>
   <block id="7db8d856045d03a62b20e857798b75c4" category="paragraph">障害のあるコントローラをシャットダウンまたはテイクオーバーして、正常なコントローラが障害のあるコントローラストレージから引き続きデータを提供できるようにします。</block>
-  <block id="ecb8f83b8d48363a92afc461e11d3752" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="d5411bd0189d789655f8f33f07ceef1c" category="inline-link-macro-rx"></block></block>
   <block id="8ba62a96dab9549596c8edd46f3bd5cc" category="paragraph">障害が発生したブートメディアをシステム管理モジュールから取り外し、交換用ブートメディアを取り付けてから、USBフラッシュドライブを使用してONTAPイメージを交換用ブートメディアに転送します。</block>
-  <block id="28f71f0981cad1b4d63248d24cc356e5" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="68895f240ebc6c043e757f74f16ee4e8" category="inline-link-macro-rx"></block></block>
   <block id="3075613c146b62cdb964218b1b25f33a" category="paragraph">USBドライブからONTAPイメージをブートし、ファイルシステムをリストアして、環境変数を確認します。</block>
   <block id="328c5bc6b9f2e06bb542a0d6dabcedd7" category="inline-link-macro">アンコウカノ</block>
-  <block id="e8715de67b3dc98a20f01d64b03b5a53" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="d767082d20397ebb99e586749eda3a08" category="inline-link-macro-rx"></block></block>
   <block id="66155ab867b9e72e003c32039430a194" category="paragraph">ONATPブートメニューからオンボードキーマネージャの設定または外部キーマネージャをリストアします。</block>
-  <block id="3e7991bdfb889505687a7da2384ab8ab" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block><block ref="ad27444622868149ebc13d5b01cf807a" category="inline-link-macro-rx"></block></block>
   <block id="5be3f38f9a32479c868826a858d049a6" category="doc">コントローラモジュールの交換- AFF A1K</block>
   <block id="011c6a75a4dc386bdb35a883058e2297" category="doc">コントローラ交換後の処理- AFF A1K</block>
   <block id="f3555ea3467ebe4fdfc22c15f93397e0" category="doc">コントローラの交換ワークフロー- AFF A1K</block>
@@ -9580,7 +9492,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="56d92be82a54ba66080116a8d89e1c62" category="image-alt">重量挙げ警告ラベル</block>
   <block id="9554185bd1af8271072b83b3b2d575ac" category="image-alt">ケーブル管理ARMの取り付け</block>
   <block id="6689fce443e90feab8661570283f66c8" category="image-alt">一般的なクラスタ構成</block>
-  <block id="e02d5ac9fd42c5389b0ad276455297f1" category="image-alt">ケーブルプルタブの方向</block>
   <block id="2bccda25615c5e6e7b2f2c08de00a446" category="paragraph">NS224 シェルフ ID は 00 および 01 に事前に設定されています。シェルフIDを変更する場合は、ボタンが配置されている穴に挿入するツールを作成する必要があります。<block ref="59d7f7611d6a3a02163f2743d346863e" category="inline-link-macro-rx"></block>詳細な手順については、を参照してください。</block>
   <block id="79f9797d84bf75ae713143b18a0030f3" category="paragraph">NS224 シェルフ ID は 00 および 01 に事前に設定されています。シェルフIDを変更する場合は、ボタンが配置されている穴に挿入するツールを作成する必要があります。<block ref="59d7f7611d6a3a02163f2743d346863e" category="inline-link-macro-rx"></block>詳細な手順については、を参照してください。</block>
   <block id="f3649257de65ad2898ffea0bcd6b4429" category="admonition">この例では DS224C を使用していますサポートされている他のドライブシェルフでもケーブル接続はほぼ同じです。詳細については、を参照してください <block ref="b8ff88c1a2e9444f28ec1504689e0040" category="inline-link-macro-rx"></block> 。</block>
@@ -9640,7 +9551,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1a603190ae07bbceebb7036072831b8b" category="image-alt">丸穴4ポストラックへのSuperRailの取り付け方法</block>
   <block id="7c89b00bc8ce7878c39671bd32585c2d" category="image-alt">2ポストミッドマウントレールキットの取り付け方法</block>
   <block id="887f19a9ed16e42d506a7ee90031e54f" category="image-alt">2ポストフラッシュマウントレールキットの取り付け方法</block>
-  <block id="23f4a6989d877a6848ae85e75cb4107e" category="inline-image-macro">幅= 30px</block>
   <block id="664a1b1220265a449d182e15fb02318f" category="inline-image-macro">幅= 200px</block>
   <block id="ba54bcf2001d79bb8625529fa7f35e9f" category="inline-image-macro">幅= 50px</block>
   <block id="53c210c2168561d49ec663ddcdb6d39e" category="sidebar">A1K I/Oモジュール</block>
@@ -9664,7 +9574,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="d9cbafff040793241dffd17bc8129532" category="paragraph">*注意：*プロセスが失敗した場合は、に連絡してください<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
   <block id="53f59a608ecfcdc90a1a8b37f4c8f010" category="paragraph">ブートメディアを交換するには、システムの背面からシステム管理モジュールを取り外し、障害のあるブートメディアを取り外し、交換用ブートメディアをシステム管理モジュールに取り付ける必要があります。</block>
   <block id="54d6f7773c4a60500d049c396202a23d" category="list-text">システム管理カムボタンを押します。</block>
-  <block id="dd684f2098cba6838a05d1dbbeac275c" category="paragraph">取り付けた交換用ブートメディアにONTAPイメージがない場合は、適切なONTAPサービスイメージをから<block ref="0ecdd602ef5a1e7a11a81dad2433ccb0" category="inline-link-rx"></block>USBフラッシュドライブにダウンロードしてから交換用ブートメディアにダウンロードすることで、ONTAPイメージを交換用ブートメディアに転送できます。</block>
   <block id="e3f95753aace3276fa0375074c45c988" category="list-text">障害のあるコントローラに障害のあるクラスタポートがないことを確認します。</block>
   <block id="9a55c0fdded61a1e549c1b9afbfc5023" category="list-text"><block ref="32b858596eeb9351eca27c2906a21da4" prefix="" category="inline-code"></block>（ASAシステムではサポートされません）</block>
   <block id="e5a09c0b7636f1938d8e318e67adbd26" category="section-title">手順5：コントローラの状態を確認する</block>
@@ -9710,7 +9619,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="d1da2db4d465ceb969bae13f9a2c1665" category="list-text">パスフレーズの確認を求められたら、オンボードキーマネージャのパスフレーズをもう一度入力します。</block>
   <block id="d6b5f802b07df1179c13649ed53524f0" category="paragraph">リカバリプロセスが完了すると、次のように表示されます。</block>
   <block id="c6980bbd79483c6809cc84795b7d14d6" category="paragraph">リストアが完了すると、ノードがリブートしてプロセスが完了します。</block>
-  <block id="c7c363d50712f34059376cdfe0ce8652" category="doc">手順1：オンボードキーマネージャをリストアする</block>
   <block id="0afa9147e7fde537954ecea742d84625" category="list-text">次のいずれかのオプションを選択して、ONATPブートメニューからオンボードキーマネージャの設定をリストアします。</block>
   <block id="1f816c392c5ee466677e2fd2587ce8a1" category="section-title">手順2：ブートメディアの交換が完了します。</block>
   <block id="417968dd9c410e2ebdf82236e2a6f1d8" category="doc">手順1：ストレージコントローラをネットワークに接続する</block>
@@ -9903,7 +9811,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="d03f5ec8a330688c4e047e99f5fecd12" category="inline-link-macro">AFF A1Kストレージシステムを設置する準備</block>
   <block id="95225809efab4457ee4a53c1a58dfb52" category="paragraph">ハードウェア要件を確認したら、<block ref="483aaa3c2f4f88e7b219b85383e864a7" category="inline-link-macro-rx"></block></block>
   <block id="e736c3581e7cc7eb9804edd4215c31b3" category="doc">故障した部品をNetApp - AFF A70 and AFF A90に返却します。</block>
-  <block id="4a5ea51aecc0b34eb246feb20f130b5d" category="doc">オンボード暗号化キーの確認- AFF A70とAFF A90</block>
   <block id="e32530d54c0288f36793648830558717" category="doc">リストア暗号化- AFF A70およびAFF A90</block>
   <block id="a13516239a2a49e82fd12bff6cdd2f91" category="doc">リカバリイメージのブート（AFF A70 and AFF A90）</block>
   <block id="7c506ea0b7da853881a11acc736d97c7" category="doc">ブートメディアの交換要件- AFF A70とAFF A90</block>
@@ -9991,14 +9898,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="29ce4833094eb0992ba97ac3e0c71b3f" category="inline-link-macro">ASA R2システムメンテナンスセクション</block>
   <block id="c8208be6c84d32af841a96445a7aa12a" category="paragraph">ASA R2システムのタイプごとに固有のメンテナンス手順については、を参照して<block ref="6106c9a1bd699a0a46425013e812fe67" category="inline-link-macro-rx"></block>ください。</block>
   <block id="cb1eb944e0468ffad560cfc4623a28dc" category="doc">故障した部品をNetApp（ASA A70およびASA A90）に返却します。</block>
-  <block id="000b8f6ff6773eed3646b647d7ba17b0" category="doc">オンボード暗号化キーの確認- ASA A70およびASA A90</block>
   <block id="50845bae5620d87f695c2dc8e2ba4b4e" category="doc">暗号化のリストア- ASA A70およびASA A90</block>
-  <block id="a536f1353388ae9a9051066b28c5a6e0" category="summary">ブートメディアの自動交換方法と手動による交換方法について説明します。</block>
-  <block id="9c80bf2ce5b5ebdbe4120c07897a68bf" category="doc">ブートメディアの交換の概要- ASA A70およびASA A90</block>
-  <block id="2ae2a629b0bc850781e0206745cd3b3e" category="paragraph">障害が発生したブートメディアは、ブートイメージにUSBモジュールを使用するか、Automated Boot Media Recovery（BMR；自動ブートメディアリカバリ）オプションを使用して手動で交換できます。</block>
-  <block id="0792ce6d8f86d180ff01c2a8e3138f0f" category="inline-link-macro">ブートメディアリカバリの自動化</block>
-  <block id="223bbbfb281b468a486440892257143a" category="paragraph">自動ブートメディアリカバリでは、パートナーノードのブートイメージが使用され、適切なブートメニューオプションが自動的に実行されて、交換用ブートメディアにブートイメージがインストールされます。</block>
-  <block id="05697ae1686cab5868aea887e013256c" category="inline-link-macro">手動ブートメディア交換</block>
   <block id="be50da4a0a4e7670cc5496e8959abd3e" category="paragraph">ブートメディアの手動交換では、従来の方法では、NetAppサポートサイトからONTAPイメージをダウンロードし、USBドライブにイメージを転送してターゲットの交換用ブートメディアにダウンロードし、ブートメニューのオプションを手動で指定してONTAPイメージを交換用ブートメディアにインストールします。</block>
   <block id="4a64f3d63fd0e8b93b80ef48b4698a9a" category="summary">自動ブートリカバリプロセスを使用して、パートナーコントローラからブートメディア上のイメージをリストアできます。</block>
   <block id="41f43600bfb66f22a00e070720eb3684" category="doc">自動ブートリカバリ- ASA A70およびASA A90</block>
@@ -10013,11 +9913,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="bbe9dab8dbb04372040fcb892979257c" category="paragraph">障害が発生したブートメディアをシステム管理モジュールから取り外し、交換用ブートメディアを取り付けます。</block>
   <block id="d09fb8e8be6d5c93fb8113549e3abfb0" category="paragraph">パートナーコントローラからONTAPイメージをリストアします。</block>
   <block id="b8a9f715dbb64fd5c56e7783c6820a61" category="inline-image-macro">2つ</block>
-  <block id="378cfbea0b90a51bfb83d8351ad538f7" category="paragraph-title"><block ref="ccf9965eddaaff76b152812c8e0015f1" category="inline-image-macro-rx" type="image"></block><block ref="0caeda8d60cf80f7a042375ba653d60a" category="inline-link-macro-rx"></block></block>
   <block id="14c9871d29cebff6090d4220729c7ade" category="summary">障害のあるコントローラのシャットダウンを完了する必要があります。</block>
   <block id="0049b2ae6634f29dc31a51b97c674ab3" category="doc">コントローラのシャットダウン- ASA A70およびASA A90</block>
   <block id="a79ec0bc86b66848b485542b40048cb6" category="paragraph">障害のあるコントローラのシャットダウンを完了する必要があります。障害のあるコントローラをシャットダウンするかテイクオーバーします。</block>
-  <block id="1dab5797f147c52155e0e89668535452" category="paragraph">NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。障害のあるコントローラをシャットダウンするかテイクオーバーします。</block>
   <block id="95d86a07e48032c658d9a13faedb46d6" category="doc">シャーシの交換後の処理- ASA A70およびASA A90</block>
   <block id="33af0abab8ca4fe70c730bb3d86abb73" category="doc">ハードウェアの移動と交換- ASA A70およびASA A90</block>
   <block id="03980c8a0e89406d8626708be0593619" category="doc">シャーシの交換要件- ASA A70およびASA A90</block>
@@ -10047,7 +9945,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="cce6a120b979d484a6c17c49a5db377f" category="paragraph">ハードウェアのメンテナンス手順が必要になる場合があります。このセクションでは、ASA A70およびASA A90システムコンポーネントのメンテナンスに固有の手順について説明します。</block>
   <block id="441be728228d904c637ab4e11fc40c45" category="paragraph">このセクションの手順は、ASA A70およびASA A90システムがONTAP環境のストレージノードとしてすでに導入されていることを前提としています。</block>
   <block id="cde82c9b04790b90c2679aca48bf0641" category="paragraph">ASA A70およびASA A90ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
-  <block id="33be63dd3ac26302ae8657e03e5af7b7" category="paragraph"><block ref="33be63dd3ac26302ae8657e03e5af7b7" category="inline-link-macro-rx"></block></block>
   <block id="5f402dad935ff3ab451b558b0df9b4f3" category="paragraph">コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ストレージ、I/Oカードを制御し、ONTAPオペレーティングシステムソフトウェアを実行します。</block>
   <block id="33a7e77eb8f382b670aecd2f25304362" category="doc">NVバッテリの交換- ASA A70およびASA A90</block>
   <block id="124b0b12b52d6ff2b5c211d8ab2b86c6" category="doc">NVRAMの交換- ASA A70およびASA A90</block>
@@ -10055,12 +9952,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="591fbd5c7a0e4469981c4bc0919fffdb" category="doc">リアルタイムクロックバッテリを交換してください- ASA A70およびASA A90</block>
   <block id="ab89852eb86e2c9aed275b5eab913eb1" category="doc">システム管理モジュールの交換- ASA A70およびASA A90</block>
   <block id="77dbbb0add58d8d5b96d74c1b27689bb" category="doc">故障した部品をNetAppに返却します（ASA A1K）。</block>
-  <block id="8dc08c32c5efe688d7bf76a331f1043b" category="doc">オンボード暗号化キーの確認- ASA A1K</block>
   <block id="6a648d096ab46ad56d57cdcbd2f3fbe9" category="doc">リストア暗号化- ASA A1K</block>
-  <block id="4f1e6ebf3d99237dad391edcff698e41" category="doc">ブートメディアの交換の概要- ASA A1K</block>
-  <block id="41ec2d608f4a0ca66575022373e46ea1" category="paragraph">障害が発生したブートメディアは、ブートイメージにUSBモジュールを使用するか、Automated Boot Media Replace（BMR；自動ブートメディア交換）オプションを使用して手動で交換できます。</block>
-  <block id="57efd27226590ce2a9ed9d60e73941c5" category="inline-link-macro">ブートメディアの自動交換</block>
-  <block id="f10ac3acf2f78a54b07401e632bafa47" category="paragraph">ブートメディアの自動交換では、パートナーノードのブートイメージが使用され、適切なブートメニューオプションが自動的に実行されて、交換用ブートメディアにブートイメージがインストールされます。</block>
   <block id="8e22ce60290e8b393a0781c3d78c5f34" category="doc">自動ブートリカバリ- ASA A1K</block>
   <block id="4815b5bdc49e0c84c1f8a77425bfdc4d" category="doc">リカバリイメージのブート- ASA A1K</block>
   <block id="1c1be2f74300d879eb6d6d09021f9e6f" category="doc">ブートメディアの交換- ASA A1K</block>
@@ -10296,23 +10188,12 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="078c4b575f196efdc8ec79e58f26db9f" category="sidebar">Cシリーズシステム</block>
   <block id="2d0e9a7694bf5bc701c3af145a6bba71" category="sidebar">要件を確認する</block>
   <block id="f76aaf3aaa7b30238e7a3e2b1a04493b" category="sidebar">インストールの準備</block>
-  <block id="c04a102db19c0f27b4baba04f06a5101" category="sidebar">AFFシステム</block>
-  <block id="0ae12fc328f40fde90c0d918815ffb73" category="sidebar">ASAシステム</block>
-  <block id="f849712563d4903661dc53ab87c833ed" category="sidebar">ASA R2システム</block>
   <block id="03f15d4e5abe2379224af55ea714e8fd" category="sidebar">ASA A70およびASA A90システム</block>
-  <block id="c253f108fc5f96327e5ecda9ef089a1b" category="sidebar">ASA A70、ASA A90のメンテナンス</block>
-  <block id="df1d6f82313f8d9132cd488bae08c033" category="sidebar">ASA A70、ASA A90ブートメディア</block>
   <block id="9c00140ee30800a9dd0418b3e4b50890" category="sidebar">ブートメディアの概要</block>
-  <block id="dfe2942e1a0a327adbd4a361fb49561a" category="sidebar">自動化方式</block>
   <block id="e0f5268186ba6af55aa3b68c29a31380" category="sidebar">ブートメディアへのイメージのリストア</block>
-  <block id="0791dbb6487467ff29dea5c517f0f506" category="sidebar">手動</block>
-  <block id="97e477b4150fe1457e5cd11f8c264d43" category="sidebar">ASA A70、ASA A90シャーシ</block>
-  <block id="b00485fc6776c1825afb571c5231342d" category="sidebar">ASA A70 / ASA A90コントローラモジュール</block>
   <block id="7b51a70874531a1eb0a69494afcf3fc1" category="sidebar">ASA A1Kシステム</block>
   <block id="81bf1a749a21a3e7b187281a18e24c73" category="sidebar">ASA A1Kのメンテナンス</block>
   <block id="9482f3836d9bb6259f467a0685f5e3b4" category="sidebar">ASA A1Kブートメディア</block>
-  <block id="24a668377474f9c183ccfff9d67241ee" category="sidebar">ASA A1Kコントローラモジュール</block>
-  <block id="8bca279955a75b6da98b2910714ce7ed" category="sidebar">ASA R2システムの保守</block>
   <block id="7b2d89b8fc4544d7b3fc7e1ae3e2a79b" category="sidebar">FAS70 および FAS90 システム</block>
   <block id="4b073adaa8e84c0107a4d144653519e6" category="sidebar">FAS70およびFAS90の設置とセットアップ</block>
   <block id="db79c96e3435962e695832e0fd51205b" category="sidebar">FAS70とFAS90のメンテナンス</block>
@@ -10344,7 +10225,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="bd6f2f179e92d79b65397b0d15328141" category="inline-image-macro">電源ケーブル</block>
   <block id="ea20ab43b51e28478057e256ebcc6372" category="inline-image-macro">電源接続</block>
   <block id="0fe5a7372057ea7ee4222a1697273ab7" category="paragraph"><block ref="0fe5a7372057ea7ee4222a1697273ab7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c768623247638e0599b7dc4f0a0ff0a4" category="paragraph"><block ref="c768623247638e0599b7dc4f0a0ff0a4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="244aab4d90ed993eeebce11659eac82b" category="inline-image-macro">スイッチ使用ネットワークのケーブル接続</block>
   <block id="9a1be7dc3c562e8748f6cf3f28efe9d5" category="paragraph"><block ref="9a1be7dc3c562e8748f6cf3f28efe9d5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e459e836c4eb0f13220d0fdbb30451f6" category="inline-image-macro">100GbEケーブル</block>
@@ -10355,11 +10235,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="9dc52a120cb0e2aa8bce8b72c20fef3c" category="image-alt">シエルフIDノヘンコウ</block>
   <block id="57e26d998595a265ac7f1779db589905" category="image-alt">電源スイッチ</block>
   <block id="756311dd61e5d2b34e7f3e6941908f6d" category="image-alt">コンソールケーブル接続</block>
-  <block id="18c795091b0e1dd7d14e327d2fdcc6bf" category="list-text"><block ref="18c795091b0e1dd7d14e327d2fdcc6bf" category="inline-link-macro-rx"></block></block>
-  <block id="bfa3052576370ffd1e7fd95b04d45ed2" category="list-text"><block ref="bfa3052576370ffd1e7fd95b04d45ed2" category="inline-link-macro-rx"></block></block>
   <block id="fc470b262a8a9f527fb1ef08eff78628" category="inline-link-macro">ブートメディアへのイメージのリストア（自動ブートリカバリ）</block>
   <block id="c28ba0284e703cae6ab6dd5a8bf205b7" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="675b0dafb39ecb851a6b35f633284961" category="inline-link-macro-rx"></block></block>
-  <block id="37de2a16ca4082fa4b5cd4a5baf9780e" category="list-text"><block ref="37de2a16ca4082fa4b5cd4a5baf9780e" category="inline-link-macro-rx"></block></block>
   <block id="97f38983c168fbca0309639ea35f0fc4" category="paragraph">USBドライブからONTAPイメージをブートし、ファイルシステムをリストアして、環境変数を確認します。</block>
   <block id="53d526a1e2015eb0014a2a207e1f9c14" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="68d5bc9454bd7547ecfb5c5f9710ef33" category="inline-link-macro-rx"></block></block>
   <block id="11fc8e31e3ddc1e067dca8608a6b8f13" category="paragraph"><block ref="11fc8e31e3ddc1e067dca8608a6b8f13" category="inline-image-macro-rx" type="image"></block></block>
@@ -10367,7 +10244,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="c42476805252ea713c6d2d84cea79d57" category="paragraph"><block ref="c42476805252ea713c6d2d84cea79d57" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3d26d2327584b56c9a013b12acd15fec" category="paragraph"><block ref="3d26d2327584b56c9a013b12acd15fec" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0b506b21022f98be480e89240ce6d4f5" category="paragraph"><block ref="0b506b21022f98be480e89240ce6d4f5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e7fac73e0f725a0bff64985cd631ae4c" category="paragraph"><block ref="e7fac73e0f725a0bff64985cd631ae4c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a9ed26735f0eccd765844732c1a10663" category="paragraph"><block ref="a9ed26735f0eccd765844732c1a10663" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b22ca487ac635c2a25cf30cabd8313a1" category="paragraph"><block ref="b22ca487ac635c2a25cf30cabd8313a1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f7305488b29b60c60ef013880d0f02ad" category="paragraph"><block ref="f7305488b29b60c60ef013880d0f02ad" category="inline-image-macro-rx" type="image"></block></block>
@@ -10446,7 +10322,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8d7e563ece8e6000b758b8f08f807108" category="paragraph"><block ref="8d7e563ece8e6000b758b8f08f807108" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1becca5a420956061b59001314870b3c" category="paragraph"><block ref="1becca5a420956061b59001314870b3c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dcb7457c589a828c8584401fe893ecce" category="paragraph"><block ref="dcb7457c589a828c8584401fe893ecce" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4d6adff2478d7fe478d5087823a404d7" category="paragraph"><block ref="4d6adff2478d7fe478d5087823a404d7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e1c7a74d78f934eb24c6cf606a554796" category="paragraph"><block ref="e1c7a74d78f934eb24c6cf606a554796" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dea543e8cb1b89f2ada772f68eb0f947" category="paragraph"><block ref="dea543e8cb1b89f2ada772f68eb0f947" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6e2c387c7111638a25e569d0c64c23d0" category="paragraph"><block ref="6e2c387c7111638a25e569d0c64c23d0" category="inline-image-macro-rx" type="image"></block></block>
@@ -10466,28 +10341,170 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="2d0ad6f9ca0ae335c5c38ee5680c64bf" category="paragraph"><block ref="2d0ad6f9ca0ae335c5c38ee5680c64bf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="40d27fa6094c4326547f3923c7cee14d" category="paragraph"><block ref="40d27fa6094c4326547f3923c7cee14d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="50852571c17718fd36dbe6f392f78fc5" category="paragraph"><block ref="50852571c17718fd36dbe6f392f78fc5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e7a048ef3d59375b80eeb9f82c5b73bb" category="paragraph"><block ref="e7a048ef3d59375b80eeb9f82c5b73bb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2e3a4f9d5c4eded43938cb73ccecd80b" category="paragraph">image：../media/icon_square_1_green.png [</block>
   <block id="fd55ca97a838d20a44630f5fc8563412" category="paragraph"><block ref="fd55ca97a838d20a44630f5fc8563412" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2fbf4b96b341ff3cf1fd1fb73e8899c8" category="paragraph"><block ref="2fbf4b96b341ff3cf1fd1fb73e8899c8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2f1d16e233f1cf279cac7ede62043479" category="paragraph"><block ref="2f1d16e233f1cf279cac7ede62043479" category="inline-image-macro-rx" type="image"></block></block>
   <block id="feb4f24fd90c865c8c1692c9529598c6" category="paragraph">画像：[コールアウト番号1] drw_a900_power-on_ieops-941.svg [width=500px]</block>
   <block id="cbb5640a4c423d549c9eb57b27dbd4ea" category="image-alt">アイコン正方形1緑</block>
   <block id="0b9a61d1a01d980aaf6ca850e1b286f5" category="paragraph"><block ref="0b9a61d1a01d980aaf6ca850e1b286f5" category="inline-link-macro-rx"></block></block>
   <block id="2151a9fdb51a3cd69908cff64be16610" category="image-alt">アイコンラウンド2</block>
   <block id="96a5f900d6bd8337209c17fce1a47ae5" category="image-alt">番号3 ]</block>
   <block id="b88e980e78bfd532f1f6322cf703cb25" category="image-alt">アイコン正方形1青</block>
-  <block id="ef9d136f35f9ba3864bb250b6b40d6ee" category="image-alt">アイコン正方形2黄色</block>
-  <block id="991447bd562347e4fa7320e276dcb5e2" category="image-alt">アイコン正方形3オレンジ</block>
   <block id="1c29ed3392bcb1f07e083f8a43217257" category="paragraph">image::../media/ oie_cable_sfp_gbe_copper.png</block>
-  <block id="737985bc079f90d6bcf0186b2b0e0c85" category="paragraph">image::../media/ oie_cable100_gbe_qsfp28.png</block>
   <block id="1f191782d7cb1071066951ab602070f5" category="paragraph">image::../media/ oie_cable_rj45.png</block>
   <block id="55922f8228e2569adb801acae8c5acd4" category="paragraph">image::../media/oie_cable_micro_usb.pngMicro USBコネクタ]</block>
   <block id="abf575fb994ee526bfe6c565d8215dc3" category="paragraph">image::../media/ icon_square_1_green.png</block>
-  <block id="6dbe3be3e6760c3c0641b3128872e1a5" category="paragraph">image::../media/ icon_square_2_yellow.png</block>
-  <block id="aff0edec4a75bfea6bd8f6717540eebd" category="paragraph">image::../media/ icon_square_3_orange.png</block>
   <block id="231e44ef9cd0cd93e6fe780778c40e17" category="paragraph">image::../media/ icon_square_4_red.png</block>
   <block id="f8fda7956963dfb2e60c6e0d0ffa6ede" category="list-text"><block ref="f8fda7956963dfb2e60c6e0d0ffa6ede" category="inline-link-macro-rx"></block></block>
   <block id="9f894ced283c3d04c9187a44baef85bc" category="sidebar">TR-4384：『SAP HANA on NetApp FAS Systems with FC Protocol』</block>
   <block id="cd5ec5f3586869573f3f0b3112426052" category="sidebar">TR-4290：『SAP HANA on NetApp FAS systems with NFS』</block>
+  <block id="1e4893fc6c634f02ace3ba7beb78d669" category="inline-link-macro">クォーラムステータス</block>
+  <block id="8df1727c16aa446d0622abe8cab177ae" category="list-text">SANシステムを使用している場合は、障害コントローラのSCSIブレードのイベントメッセージを確認しておく必要があり <block ref="090678c8ba0a25df800d3d4eeaf19522" prefix="(" category="inline-code"></block>ます）。コマンド（priv advancedモードから）を実行すると、<block ref="090678c8ba0a25df800d3d4eeaf19522" prefix=" " category="inline-code"></block>そのノードのノード名、そのノードの可用性ステータス、およびそのノードの動作ステータスが表示され<block ref="8650efa63daff32c831511388978454c" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="35f2b79f2ef05c6cbaae401c14dbe36d" category="list-text">正常なパートナーコントローラで、障害コントローラをadvanced権限レベルに設定します。<block ref="0a654c13d63710f829bc02c4cbec79ee" prefix=" " category="inline-code"></block></block>
+  <block id="8ad44b8e0ede0abb18fd1d9732ea1fec" category="list-text">正常なパートナーコントローラで、restore backupコマンドを実行します<block ref="44d388b27236c791c5fe1d30cc29bc43" prefix=" " category="inline-code"></block>。</block>
+  <block id="3fef721e9c365db9acdcf0c6462afc1d" category="list-text">正常なパートナーコントローラで、障害のあるコントローラをadminレベルに戻します<block ref="0a654c13d63710f829bc02c4cbec79ee" prefix=" " category="inline-code"></block>。</block>
+  <block id="eb907bd5c32aa1799bf0e27e04819907" category="list-text">システムで暗号化が使用されていない場合は、_option 1 Normal Bootを選択します。使用されていない場合は、に進みます。 <block ref="9946ce0c7c3feb5cc0b8738324cc4807" category="inline-link-macro-rx"></block></block>
+  <block id="3a7af7582257ad98ccfd3cbcc0364cd8" category="paragraph">コントローラモジュールを取り外し、コントローラモジュールを取り外して開き、コントローラ内のブートメディアの場所を確認して交換してから、イメージを交換用ブートメディアに転送する必要があります。</block>
+  <block id="f6c81a45317596483196cae1aac0011e" category="list-text">障害のあるコントローラで実行されていたバージョンのONTAPイメージのコピーをダウンロードします。NetAppサポートサイトの[Downloads]セクションから該当するイメージをダウンロードできます。使用しているONTAPのバージョンがNVEをサポートしているかどうかを表示するには、コマンドを使用し<block ref="86722c94aea996cb23c11ba144dd63ed" prefix=" " category="inline-code"></block>ます。コマンドの出力にと表示された場合、<block ref="59f048302db4763b254cbef2bbb5405b" prefix=" " category="inline-code"></block>使用しているONTAPのバージョンでNVEがサポートされていません。</block>
+  <block id="ec5c21fc20fa1ebbd12fbf29e42dcf81" category="list-text">使用しているONTAPのバージョンでNVEがサポートされている場合は、NetAppボリューム暗号化を使用したイメージをダウンロードします（ダウンロードボタンに表示されます）。</block>
+  <block id="2cab3e1385544356e4037fa5d28c957d" category="list-text">適切なサービスイメージをダウンロードしてからUSBフラッシュドライブにコピーします（まだダウンロードしていない場合）<block ref="0ecdd602ef5a1e7a11a81dad2433ccb0" category="inline-link-rx"></block>。</block>
+  <block id="ef51e881e425fd477358e8d9bc291f26" category="list-text">障害が発生したコンポーネントは、NetAppから受け取った交換用FRUコンポーネントと交換する必要があります。</block>
+  <block id="2fab3e35d3a8ad1baf526d01c455141e" category="list-text">正常なパートナーコントローラで、restore backupコマンドを実行します<block ref="44d388b27236c791c5fe1d30cc29bc43" prefix=" " category="inline-code"></block>。</block>
+  <block id="935c7e481b111b33ff3723afb9a7f2c4" category="paragraph">コントローラモジュールを取り外し、システムの背面からシステム管理モジュールを取り外し、障害のあるブートメディアを取り外して、交換用ブートメディアをシステム管理モジュールに取り付ける必要があります。</block>
+  <block id="b393e0589b34195adda4ab7dea81ba99" category="paragraph">取り付けた交換用ブートメディアにONTAPイメージがありません。適切なONTAPサービスイメージをからUSBフラッシュドライブにダウンロードし、交換用ブートメディアにダウンロードすることで、ONTAPイメージを交換用ブートメディアに転送できます<block ref="0ecdd602ef5a1e7a11a81dad2433ccb0" category="inline-link-rx"></block>。</block>
+  <block id="80ee5549561d54c85e0dac19602c17db" category="list-text">障害が発生したコンポーネントは、受け取ったNetApp交換用FRUコンポーネントと交換する必要があります。</block>
+  <block id="5bfc9396e31ecaf44561c35f76ab21a6" category="list-text">MetroClusterの設定状態が「設定済み」になっていること、およびノードが有効かつ正常な状態であること<block ref="4d06f3844212ac745a73965bbb3f6e51" prefix="(" category="inline-code"></block>を確認しておく必要があります。</block>
+  <block id="b53660f761dc53e7b68aefd5edbbae44" category="paragraph">次のセクションに進みます。</block>
+  <block id="cb469b95641c1382be009038b04e5158" category="paragraph">コントローラモジュールを取り外し、システムの背面からシステム管理モジュールを取り外し、障害のあるブートメディアを取り外して、交換用ブートメディアをシステム管理モジュールに取り付ける必要があります。</block>
+  <block id="ffffd77faa91cb4a767b88905267cf2b" category="doc">手順1：使用しているONTAPのバージョンが暗号化をサポートしているかどうかを確認する</block>
+  <block id="ef265e1108b8991c7b12209078d6123e" category="paragraph">障害のあるコントローラをシャットダウンする前に、使用しているONTAPのバージョンがNetApp Volume Encryption（NVE）をサポートしているかどうか、およびキー管理システムが適切に設定されているかどうかを確認してください。</block>
+  <block id="fdb2cbe8b1e451ff001e9714b834c459" category="paragraph">ONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認します。この情報は、正しいONTAPイメージをダウンロードするために重要です。</block>
+  <block id="1c09443221312bdba5a22ddbba4f768f" category="list-text">次のコマンドを実行して、ONTAPのバージョンが暗号化をサポートしているかどうかを確認します。</block>
+  <block id="f9a9052b778475b675b5a664c20b88b5" category="paragraph"><block ref="86722c94aea996cb23c11ba144dd63ed" prefix="" category="inline-code"></block></block>
+  <block id="fe14f52e0520ec8b85990ac664593241" category="paragraph">出力にが含まれている場合、<block ref="5deb4fa1f44cc6023eeec89c618a6f2c" prefix=" " category="inline-code"></block>クラスタのバージョンではNVEがサポートされていません。</block>
+  <block id="7d57d9967ba17fcb2386ee9040e7bf81" category="list-text">ご使用のシステムでNVEがサポートされているかどうかに応じて、次のいずれかを実行します。</block>
+  <block id="d8b3ebaef14f15ddadd58f8788097867" category="list-text">NVEがサポートされている場合は、NetAppボリューム暗号化を使用するONTAPイメージをダウンロードします。</block>
+  <block id="723417ff6efb8e61349dd2d6b90d0898" category="list-text">NVEがサポートされない場合は、NetAppボリューム暗号化なしのONTAPイメージ*をダウンロードします。</block>
+  <block id="6bd78f9c7732510cf857d49ceb4bd776" category="section-title">手順2：コントローラを安全にシャットダウンできるかどうかを確認する</block>
+  <block id="bdaa0edeb07bd0ecc38e28982c4df8d7" category="paragraph">コントローラを安全にシャットダウンするには、まずオンボードキーマネージャ（OKM）と外部キーマネージャ（EKM）がアクティブになっているかを確認します。次に、使用しているキー管理ツールを確認し、適切なキー情報を表示して、認証キーのステータスに基づいて操作を実行します。</block>
+  <block id="30f7cbebdfdaa0338bc99a69c5ef0e38" category="list-text">システムで有効になっているキー管理ツールを確認します。</block>
+  <block id="aac34f614f4514a3f670bae971a30369" category="cell">キー管理ツールのタイプ</block>
+  <block id="a36a9da82fdc17311ba2d5d847082cce" category="paragraph">次のコマンドを実行して、システムでEKMが有効になっているかどうかを確認します。</block>
+  <block id="c62c99e83e1c9d2a44da11eaa2e0b14a" category="paragraph"><block ref="0565c41723caaa37b0079906ad365846" prefix="" category="inline-code"></block></block>
+  <block id="89add348f9d444253c70c9efcfa0b483" category="paragraph">EKMが有効になっている場合は<block ref="6a21b6995a068148bbb65c8f949b3fb2" prefix=" " category="inline-code"></block>、が出力に表示されます。</block>
+  <block id="518b09108bfe2ee41d9afdf44e6a6e45" category="paragraph">ノードで実行されているONTAPのバージョンに基づいて次のいずれかのコマンドを実行し、OKMがシステムで有効になっているかどうかを確認します。</block>
+  <block id="f8cefe4e9eda67cd04349f4560aad96f" category="list-text">ONTAP 9 .14.1以降の場合は、次のコマンドを入力します。</block>
+  <block id="9b5996b90a7a19dc5ca9e91a6d0c7ac9" category="paragraph"><block ref="ed039e134fdf3b84c71d409a4024dbc7" prefix="" category="inline-code"></block></block>
+  <block id="67d6aa20f2257cc1b6c99fa4ed444eca" category="paragraph">OKMが有効になっている場合は、<block ref="90d4e6078945c9c6155e77edcafa9984" prefix=" " category="inline-code"></block>がコマンド出力に表示されます。</block>
+  <block id="5114d877b6bdc7484d5c2c9efc040aa0" category="list-text">ONTAP 9 .13.1以前の場合は、次のコマンドを入力します。</block>
+  <block id="6f76cbf64620dc55dc8a5d1462ae7822" category="paragraph"><block ref="1847f4f206eb3ab8397f6206fcf1bb3f" prefix="" category="inline-code"></block></block>
+  <block id="4efa472f82474aa8572aacddb95c4a1b" category="paragraph">OKMが有効になっている場合は、<block ref="c6b9507c26062233f2341cb90db60eaa" prefix=" " category="inline-code"></block>がコマンド出力に表示されます。</block>
+  <block id="b520d3c69ccbf428928a30eeb5fcaeec" category="list-text">次のクエリコマンドを入力して、キー管理ツールの認証キーのステータスを表示します。</block>
+  <block id="2a4a9d693caa859153f77cf2204d30cc" category="paragraph"><block ref="c9b37f9017fc101cecef415e707e7b5f" prefix="" category="inline-code"></block></block>
+  <block id="775c4f8ef2eabc8574bb57ddd10b0b23" category="list-text">キー管理ツールの列の値が出力されていることを確認します<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block>。</block>
+  <block id="0244ade962fa9d071f4def5c7ef769cc" category="paragraph">この列は、キー管理ツール（EKMまたはOKM）の認証キーがリストアされたかどうかを示します。</block>
+  <block id="5532ef9f6f6fe7cdd455dde7a78eb12c" category="list-text">Restored列の値がtrueの場合、キーは適切にリストアされ、コントローラのシャットダウンを安全に実行できます。</block>
+  <block id="8ec65b3b21949ed324beef5dbc025c92" category="list-text">値がtrue以外の場合、キーはリストアされていません。EKMとOKMのどちらを使用しているかに応じて、追加の手順（キーのリストアまたは同期）を実行する必要があります。</block>
+  <block id="b4bddfeecfd5716741acba5ef08dfdd9" category="list-text">EKMとOKMのどちらを使用しているかに応じて、次のいずれかのオプションを選択し、列に表示される出力値に応じて適切な手順を実行し<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="d080cdba04a9e58adbe244b4d170ff25" category="open-title">EKM</block>
+  <block id="a26b32b28af2e3521ad3e104fee11f80" category="paragraph">列に表示された出力値に応じて<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block>、該当する手順を実行します。</block>
+  <block id="c9fb391da0641ace637021ed0f9d1c94" category="cell">列の出力値<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block></block>
+  <block id="22cfef4d87bd251ba39dd92d08a6b0bb" category="paragraph"><block ref="b326b5062b2f0e69046810717534cb09" prefix="" category="inline-code"></block></block>
+  <block id="7bc0284c886b62d0290690999029913b" category="paragraph">障害のあるコントローラを安全にシャットダウンできます。にアクセスします。</block>
+  <block id="96ac29a54dd2ae54f4b88de9902aa2fc" category="paragraph">それ以外のすべて<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block></block>
+  <block id="1a1cd257525bddea68723047e36e6e90" category="list-text">次のコマンドを使用して、外部キー管理の認証キーをクラスタ内のすべてのノードにリストアします。</block>
+  <block id="74c90316d25b4cdc5c8e524af066a5a0" category="paragraph"><block ref="24b420efa276a683b4bd02f14a2d6f59" prefix="" category="inline-code"></block></block>
+  <block id="581f12d33ebdffd65e567d7483436438" category="paragraph">コマンドが失敗する場合は、にお問い合わせください<block ref="1a36b59ecae7684863b79a0f690b6840" category="inline-link-rx"></block>。</block>
+  <block id="c2c27d455a0034831b8e2b3d5a1fdd37" category="list-text">コマンドを入力して、すべての認証キーの<block ref="91f9c18d13195a5e3c010df87360adf2" prefix=" " category="inline-code"></block>列にと表示されている<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>ことを確認します<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block>。</block>
+  <block id="90b0be5cd55fef8ba4b2677ba61937be" category="paragraph">すべての認証キーがの場合は<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>、障害のあるコントローラを安全にシャットダウンできます。にアクセスします。</block>
+  <block id="90d4e6078945c9c6155e77edcafa9984" category="open-title">オクム</block>
+  <block id="f756353c7a60081133f6ef85804b6485" category="paragraph">OKM情報を手動でバックアップします。</block>
+  <block id="349e0edd7094f31576c430a35f1c73e3" category="list-text">と入力してadvancedモードに切り替え<block ref="8d2cf87827d8c4c105b70542cc18077d" prefix=" " category="inline-code"></block>、プロンプトが表示されたらと入力します<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>。</block>
+  <block id="86123e57ff90dca177de37d445925d0d" category="list-text">次のコマンドを入力して、キー管理情報を表示します。</block>
+  <block id="c497a6b930105164567b744840c21e94" category="paragraph"><block ref="32ba7af89b7557f6e3e6d80a922080ce" prefix="" category="inline-code"></block></block>
+  <block id="35069a8a423f099e04e8e2341b7c3a72" category="list-text">バックアップ情報の内容を別のファイルまたはログファイルにコピーします。</block>
+  <block id="6ade7d58bfd0bec2c7f7e02330994b81" category="paragraph">これは、災害時にOKMを手動でリカバリしなければならない場合に必要になります。</block>
+  <block id="8012fa12a80f4aa7498bdc5962cb24fb" category="list-text">onboard security key-manager syncコマンドを入力します。</block>
+  <block id="0a83ed732b07426c840d56d0ee6e648b" category="paragraph"><block ref="1fd11ad9c6fc9e17e9729cd939a2b47b" prefix="" category="inline-code"></block></block>
+  <block id="e4a4298f11208a45b6ac5d1a6df0ea7f" category="list-text">プロンプトが表示されたら、32文字のオンボードキー管理のパスフレーズを英数字で入力します。</block>
+  <block id="2318a1a52ce7d20091148211d8be58fd" category="paragraph">パスフレーズを入力できない場合は、にお問い合わせください<block ref="1a36b59ecae7684863b79a0f690b6840" category="inline-link-rx"></block>。</block>
+  <block id="f1223f2beed0f1db66fa98879448bb9d" category="list-text">すべての認証キーの列にと表示されている<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>ことを確認し<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="d81a048f736ca3a03a0fc11c4bc74978" category="list-text">次のコマンドを入力して、キー管理バックアップ情報を表示します。</block>
+  <block id="d019a61bbe760bfae51153af25e806b3" category="doc">手順1：キー管理ツールをリストアする</block>
+  <block id="926dc92762712fb5c888d06d13b2835c" category="list-text">ONTAPのブートメニューから、該当するオプションを選択します。</block>
+  <block id="802134e5cd64408009bf9ca5065786b2" category="list-text">ONTAP 9 .8以降の場合は、オプション10を選択します。</block>
+  <block id="07447cab17885ca45337781e921897fa" category="list-text">ONTAP 9 .7以前の場合は、hidden optionコマンドを入力し<block ref="7191584fa52473c1df15d3c03b065c0b" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="b8853c4009726e2ece8d95f47908e1c0" category="list-text">プロセスの継続を確認してください。<block ref="31d3e9f860a1ea4bc24acbcd0c462856" prefix=" " category="inline-code"></block></block>
+  <block id="2f494951e987e38666c6a1935c0c88be" category="list-text">パートナーノードから、パートナーコントローラをギブバックします<block ref="291b31306c2e0668f091d41edca7e97f" prefix=" " category="inline-code"></block>。</block>
+  <block id="b6074ec78f4878986cfabd4a86abf5c8" category="list-text">CFOアグリゲートでのみ起動したら、_security key-manager onboard syncコマンドを実行します。</block>
+  <block id="3554bd6dca965e0e8bcb314a54ef655c" category="list-text">オンボードキーマネージャのクラスタ全体のパスフレーズを入力します。</block>
+  <block id="68e51e7cb5faf4732838f76bc7db6b45" category="admonition">同期に成功すると、追加のメッセージは表示されずにクラスタプロンプトが返されます。同期に失敗すると、クラスタプロンプトに戻る前にエラーメッセージが表示されます。エラーが修正されて同期が正常に実行されるまで、続行しないでください。</block>
+  <block id="ce4fb0e60bb66e89ea3ad1fd2ff46a30" category="list-text">すべてのキーが同期されていることを確認します。<block ref="297f477a8524857592ffedfea06bb8d7" prefix=" " category="inline-code"></block></block>
+  <block id="39182fbb28bf0718bee46eab1961e1bd" category="list-text">パートナーからノードをギブバックします。<block ref="e23a9f1c6189f372292c98d844a0895f" prefix=" " category="inline-code"></block></block>
+  <block id="61942e8f4689a17c71500d84d0b47041" category="list-text">別のクラスタノードの/cfcard/kmip/servers.cfgファイルのコピー、または次の情報。</block>
+  <block id="6b7fb6689b4ff21477eda31338d189ce" category="list-text">クライアント証明書（client.crt）ファイルの内容を入力します：_</block>
+  <block id="4cf3e6ebf1c573912cdf7f61f3baff04" category="list-text">_クライアントキー(client.key)ファイルの内容を入力します。_</block>
+  <block id="8a0822d48c830ac216ea7f9d4db5a9dd" category="list-text">KMIPサーバCA（CA.pem）ファイルの内容を入力します：_</block>
+  <block id="fff930cef46bf6cadd68fad5ec20a254" category="list-text">サーバー設定(servers.cfg)ファイルの内容を入力します。_</block>
+  <block id="5eadc2e25337518dc852a80577d9cf1e" category="doc">暗号化キーのサポートとステータスの確認- AFF A150</block>
+  <block id="0dc57322765c9d58ce88190f1690fcde" category="doc">暗号化キーのサポートとステータスの確認- AFF A1K</block>
+  <block id="8bc64411ac44956417615b1424961016" category="paragraph">ノードで暗号化をリストアします。</block>
+  <block id="ec4046fa1f35acf824d6ff67e5411153" category="paragraph">ブートメディアの交換要件を確認します。</block>
+  <block id="fed39074bcb7385644a9af66c04b6b56" category="inline-link-macro">暗号化キーのサポートおよびステータスの確認</block>
+  <block id="d8549f231f330e53d19f22294c4a552a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="fbe5cfbeb25b00ec0a44d74f3b70c580" category="inline-link-macro-rx"></block></block>
+  <block id="719449b508b383c2039548e989d50ed7" category="paragraph">障害のあるコントローラをシャットダウンするかテイクオーバーして、正常なコントローラが障害のあるコントローラのストレージからデータを引き続き提供できるようにします。</block>
+  <block id="4e165771f15c6560989e37c20b2f3910" category="paragraph">障害が発生したブートメディアをシステム管理モジュールから取り外し、交換用ブートメディアを取り付けてから、USBフラッシュドライブを使用してONTAPイメージを転送します。</block>
+  <block id="2401b0f9450a54a05ecfd322ef3f3df5" category="paragraph">構成に応じた手順を使用して、障害コントローラをシャットダウンします。</block>
+  <block id="873f086f28dc246032bb35219d36ee95" category="doc">暗号化キーのサポートとステータスの確認- AFF A200</block>
+  <block id="3cd70cdc891507d5b1a01cf7e98502c0" category="doc">暗号化キーのサポートとステータスの確認- AFF A220</block>
+  <block id="7badbc31c963d7cb1ebf20e6b66869e4" category="paragraph"><block ref="7badbc31c963d7cb1ebf20e6b66869e4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="15282b07e178075e033720dce9abcad8" category="doc">暗号化キーのサポートとステータスの確認- AFF A250</block>
+  <block id="080b3cf38e099673417f605870f1f8cd" category="doc">暗号化キーのサポートとステータスの確認- AFF A300</block>
+  <block id="3e96ff4d6696124ce25d44a88c2473b3" category="doc">暗号化キーのサポートとステータスの確認- AFF A320</block>
+  <block id="77c6f82f1fa8571b22c5fbbe73050bac" category="doc">暗号化キーのサポートとステータスの確認- AFF A400</block>
+  <block id="44ba9a845369e38f447427d3106ecf71" category="doc">暗号化キーのサポートとステータスの確認- AFF A70とAFF A90</block>
+  <block id="357726df28778aa8dccb6c780dddce89" category="doc">暗号化キーのサポートとステータスの確認- AFF A700s</block>
+  <block id="db444b24eeeefc93d51087354a133eeb" category="paragraph"><block ref="db444b24eeeefc93d51087354a133eeb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4641b0536fa1cc37c103002b67dbc848" category="doc">暗号化キーのサポートとステータスの確認- AFF A900</block>
+  <block id="9acf79506c541222d53e58985e01eb03" category="doc">リストア暗号化- AFF A900</block>
+  <block id="9eeb212e62f650916daef03f37d7b903" category="paragraph"><block ref="9eeb212e62f650916daef03f37d7b903" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="21d7363ee72b4f7dbf229f951faae28f" category="paragraph"><block ref="21d7363ee72b4f7dbf229f951faae28f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="42f783263c0e805556cc105b89a33685" category="doc">暗号化キーのサポートとステータスの確認- ASA A70およびASA A90</block>
+  <block id="7b8bb02fade9d4a58e3cfc42ecdcd970" category="summary">ブートメディアの自動交換方法について説明します。</block>
+  <block id="c0bc9e3dbe6e8f8b47642dae74af82f1" category="doc">ブートメディアの自動リカバリの概要- ASA A70およびASA A90</block>
+  <block id="f5179676ff804b88e5799857443be173" category="paragraph">障害が発生したブートメディアは、Automated Boot Media Recovery（BMR；自動ブートメディアリカバリ）オプションを使用して交換できます。</block>
+  <block id="b0fe901b833b66e26e925b635eccaed3" category="paragraph">自動ブートメディアリカバリでは、パートナーノードのブートイメージが使用され、適切なブートメニューオプションが自動的に実行されて、交換用ブートメディアにブートイメージがインストールされます。</block>
+  <block id="c0d5cf860156f25b1345db1cbffc797b" category="summary">ブートメディアを手動で交換する方法について説明します。</block>
+  <block id="05c869773156f3e182a24e4a395746ef" category="doc">手動ブートメディアリカバリの概要- ASA A70およびASA A90</block>
+  <block id="85f6c56f4368d94f36af2f8174800cdd" category="paragraph">障害が発生したブートメディアは、ブートイメージ用のUSBモジュールを使用して手動で交換できます。</block>
+  <block id="834c7d9c8325f941289306697291736e" category="paragraph-title"><block ref="ccf9965eddaaff76b152812c8e0015f1" category="inline-image-macro-rx" type="image"></block><block ref="fbe5cfbeb25b00ec0a44d74f3b70c580" category="inline-link-macro-rx"></block></block>
+  <block id="a203ae5b4c010fa4bfba309f112022fe" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="bace9ebae872b936af5e4fb32c627436" category="inline-link-macro-rx"></block></block>
+  <block id="0353c4306baefb0104fdbd22f3a83fd7" category="inline-link-macro">ブートメディア-手動リカバリ</block>
+  <block id="868dd0de5ae92735ecf8b13f092b6e94" category="paragraph"><block ref="868dd0de5ae92735ecf8b13f092b6e94" category="inline-link-macro-rx"></block></block>
+  <block id="a4171598a9b6537fe8fa298ad497f7f6" category="inline-link-macro">ブートメディア-自動リカバリ</block>
+  <block id="939985bab6ffa95bb97b326eb3bb44bc" category="paragraph"><block ref="939985bab6ffa95bb97b326eb3bb44bc" category="inline-link-macro-rx"></block></block>
+  <block id="cb6b9b62927bde4101155fb12ce4739b" category="paragraph">ブートメディアの自動交換では、パートナーノードのブートイメージが使用され、適切なブートメニューオプションが自動的に実行されて、交換用ブートメディアにブートイメージがインストールされます。</block>
+  <block id="a5cd6f074e972343dc08fbaaefb21435" category="doc">暗号化キーのサポートとステータスの確認- ASA A1K</block>
+  <block id="ecd93ae2a78c5efb02bc3ec3e7df5c2c" category="doc">ブートメディアの自動リカバリの概要- ASA A1K</block>
+  <block id="5a7035550d11f967a7c1533fa8ef8ae3" category="paragraph">障害が発生したブートメディアは、Automated Boot Media Replace（BMR；自動ブートメディア交換）オプションを使用して交換できます。</block>
+  <block id="c3f29d977c51a91934fd0b3ac418f5ef" category="doc">手動ブートメディアリカバリの概要- ASA A1K</block>
+  <block id="ff419f4954e3dbf64ddba1e44234dfc2" category="paragraph"><block ref="ff419f4954e3dbf64ddba1e44234dfc2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="57beedb714945568e8369d139b8f960b" category="inline-image-macro">プルタブ方向</block>
+  <block id="b61617c922b3bb175faf6321e52b85d7" category="paragraph"><block ref="b61617c922b3bb175faf6321e52b85d7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b33049c653e121238a4124a3d1486bc3" category="paragraph"><block ref="b33049c653e121238a4124a3d1486bc3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="50bc74d4b734039bfc4cef1692453ceb" category="inline-image-macro">吹き出しアイコン2</block>
+  <block id="1fe0e3343e3f2ee9b9c2e4cba910ce70" category="paragraph"><block ref="1fe0e3343e3f2ee9b9c2e4cba910ce70" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c0dcdcb83d0bd841dcab467149d8fbce" category="doc">暗号化キーのサポートとステータスの確認- FAS2800</block>
+  <block id="a3479b1ff22f258fe8dd4077252cd9cd" category="image-alt">吹き出しアイコン1</block>
+  <block id="21f25e3135866d211935a709f5289115" category="image-alt">吹き出しアイコン3</block>
+  <block id="23e72fffbab87e81876009d38ba5865d" category="image-alt">GbE SFP銅線コネクタ</block>
+  <block id="0b8e5c2b0c93dcff136db8befa68944c" category="image-alt">RJ-45コネクタ</block>
+  <block id="6f1c9e49e85b9240d07364dd186d0229" category="image-alt">吹き出しアイコン4</block>
+  <block id="7df13f585d67866a6bbc4289b8effc27" category="sidebar">暗号化キーの確認</block>
+  <block id="ed435995b7240e9abb5c8ccc0579cb96" category="sidebar">ASA A70およびASA A90のメンテナンス</block>
+  <block id="a81626227e94d15884d465e1127d3af4" category="sidebar">ASA A70およびASA A90のブートメディア</block>
+  <block id="6fa3989bed64ee0002fbcb3ee0b95f27" category="sidebar">ASA A70およびASA A90シャーシ</block>
+  <block id="64f587f0cd70365f99f4bf02b573698f" category="sidebar">ASA A70およびASA A90コントローラ</block>
+  <block id="d431e47bf770a9393ee9f239dc2035b5" category="sidebar">ASA A70およびASA A90 I/Oモジュール</block>
+  <block id="2d5a952fbb91c4ae00f6cf700a7a8912" category="sidebar">ASA A1Kコントローラ</block>
+  <block id="21b2ca1e48faf28d5918cce56ce73345" category="sidebar">ASA A1K I/Oモジュール</block>
 </blocks>

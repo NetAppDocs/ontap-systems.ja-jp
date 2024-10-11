@@ -26,7 +26,7 @@ entries:
     - title: オンボード暗号化キーを確認
       url: "/asa-c400/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
-      url: "/asa-c400/bootmedia-impaired-controller-shutdown.html"
+      url: "/asa-c400/bootmedia-shutdown.html"
     - title: ブートメディアを交換します
       url: "/asa-c400/bootmedia-replace.html"
     - title: ブートイメージを起動します

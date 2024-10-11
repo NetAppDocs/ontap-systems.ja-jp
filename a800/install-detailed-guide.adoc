@@ -240,7 +240,7 @@ image:../media/drw_affa800_ha_pair_cabling.png["HAペアノケーブルセツゾ
 
 
  a| 
-image:../media/icon_square_2_yellow.png["番号2"]
+image:../media/icon_square_2_green.png["番号2"]
  a| 
 クラスタインターコネクトポートをケーブル接続します。
 
@@ -252,7 +252,7 @@ image:../media/drw_affa800_tnsc_clust_cabling.png["2ノードスイッチレス�
 
 
  a| 
-image:../media/icon_square_3_orange.png["手順 3"]
+image:../media/icon_square_3_purple.png["手順 3"]
  a| 
 管理ポートを管理ネットワークスイッチにケーブル接続します    image:../media/drw_affa800_mgmt_cabling.png["システム背面の管理ポートの場所を示す図"]
 

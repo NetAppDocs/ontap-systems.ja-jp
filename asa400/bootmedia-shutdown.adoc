@@ -1,17 +1,17 @@
 ---
-permalink: a300/bootmedia-impaired-controller-shutdown.html 
+permalink: asa400/bootmedia-shutdown.html 
 sidebar: sidebar 
-keywords: aff a300, shut down the impaired controller 
+keywords: asa a400, asa, a400, shut, down, take, over, impair, controller, procedure, storage, system, hardware, configuration, shut down the impaired controller 
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
-= 障害のあるコントローラをシャットダウンします - AFF A300
+= 障害のあるコントローラのシャットダウン- ASA A400
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
+NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
 
 
 
@@ -59,8 +59,6 @@ NOTE: ブートデバイスが壊れているか機能していない場合、�
 
 
 == オプション 2 ：コントローラが MetroCluster 構成になっている
-
-NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。
 
 
 NOTE: 2 ノード MetroCluster 構成のシステムでは、この手順を使用しないでください。
@@ -111,8 +109,6 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 
 
 == オプション 3 ：コントローラは 2 ノード MetroCluster に搭載されています
-
-NVE タスクまたは NSE タスクを完了したら、障害ノードのシャットダウンを完了する必要があります。
 
 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをスイッチオーバーする必要があります。
 
