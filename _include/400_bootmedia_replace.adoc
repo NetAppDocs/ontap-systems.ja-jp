@@ -180,6 +180,10 @@ NOTE: Windows を使用して内容を展開する場合は、 winzip を使用�
 
 .. EFI フォルダを USB フラッシュドライブの最上位ディレクトリにコピーします
 +
+
+NOTE: サービスイメージにEFIフォルダがない場合は、を参照してくださいlink:https://kb.netapp.com/onprem/ontap/hardware/EFI_folder_missing_from_Service_Image_download_file_used_for_boot_device_recovery_for_FAS_and_AFF_models["FASおよびAFFモデルのブートデバイスのリカバリに使用するサービスイメージダウンロードファイルにEFIフォルダが表示されない^"]。
+
++
 USB フラッシュドライブには、 EFI フォルダと、障害のあるコントローラが実行しているものと同じバージョンの Service Image （ BIOS ）が必要です。
 
 .. USB フラッシュドライブをラップトップから取り外します。

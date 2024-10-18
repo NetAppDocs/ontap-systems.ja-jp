@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-ONATPブートメニューから外部キー管理ツールの設定をリストアします。
+ONATPブートメニューから外部キーマネージャの設定をリストアします。
 
 .作業を開始する前に
 外部キー管理ツール（EKM）の設定をリストアするには、次の情報が必要です。
@@ -12,15 +12,19 @@ ONATPブートメニューから外部キー管理ツールの設定をリスト
 ** KMIPサーバのアドレス。
 ** KMIPポート。
 ** 別のクラスタノードの/cfcard/kmip/certs/client.crtファイルのコピー、またはクライアント証明書。
-** 別のクラスタノードからの/cfcard/kmip/certs/client.keyファイルのコピー、またはクライアントキー。
-** 別のクラスタノード（KMIPサーバCA）の/cfcard/kmip/certs/CA.pemファイルのコピー。
+** 別のクラスタノードまたはクライアントキーからの/cfcard/kmip/certs/client.keyファイルのコピー。
+** 別のクラスタノードまたはKMIPサーバCAの/cfcard/kmip/certs/CA.pemファイルのコピー。
 
 
 
 
 .手順
+. コンソールケーブルをターゲットコントローラに接続します。
 . ONTAPのブートメニューからオプション11を選択します。
 +
+.ブートメニューの例を表示します。
+[%collapsible]
+====
 ....
 
 (1)  Normal Boot.
@@ -35,38 +39,47 @@ ONATPブートメニューから外部キー管理ツールの設定をリスト
 (10) Set Onboard Key Manager recovery secrets.
 (11) Configure node for external key management.
 Selection (1-11)? 11
-
 ....
+====
 . プロンプトが表示されたら、必要な情報を収集したことを確認します。
 +
-.. `Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n}` _y_
-.. `Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n}` _y_
-.. `Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n}` _y_
-.. `Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}` _y_
-+
-代わりに次のプロンプトを使用することもできます。
-
-.. `Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}` _n_
-+
-... `Do you know the KMIP server address? {y/n}` _y_
-... `Do you know the KMIP Port? {y/n}` _y_
-
-
-
-
-. 次の各プロンプトの情報を入力します。
-+
-.. クライアント証明書（client.crt）ファイルの内容を入力します：_
-.. _クライアントキー(client.key)ファイルの内容を入力します。_
-.. KMIPサーバCA（CA.pem）ファイルの内容を入力します：_
-.. サーバー設定(servers.cfg)ファイルの内容を入力します。_
-
-
-+
+.プロンプトの例を表示
+[%collapsible]
+====
 ....
-
-Example
-
+Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n}
+Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n}
+Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n}
+Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}
+....
+====
++
+.代わりにこれらのプロンプトが表示される場合があります
+[%collapsible]
+====
+....
+Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}
+Do you know the KMIP server address? {y/n}
+Do you know the KMIP Port? {y/n}
+....
+====
+. プロンプトが表示されたら、クライアントとサーバの情報を入力します。
++
+.プロンプトを表示
+[%collapsible]
+====
+....
+Enter the client certificate (client.crt) file contents:
+Enter the client key (client.key) file contents:
+Enter the KMIP server CA(s) (CA.pem) file contents:
+Enter the server configuration (servers.cfg) file contents:
+....
+====
++
+.例を示します
+[%collapsible]
+====
+....
 Enter the client certificate (client.crt) file contents:
 -----BEGIN CERTIFICATE-----
 MIIDvjCCAqagAwIBAgICN3gwDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNVBAYTAlVT
@@ -99,10 +112,16 @@ Running command '/sbin/ifconfig e0M'
 ..
 ..
 kmip_init: cmd: ReleaseExtraBSDPort e0M
-​​​​​​
+​​​​....
+
+
 ....
+====
 . リカバリプロセスが完了します。
 +
+.プロンプトの例を表示
+[%collapsible]
+====
 ....
 
 
@@ -112,9 +131,8 @@ Trying to recover keys from key servers....
 Successfully recovered keymanager secrets.
 
 ....
-. ブートメニューからオプション1を選択して、ONTAPのブートを続行します。
-
-
+.. ブートメニューからオプション1を選択して、ONTAPのブートを続行します。
++
 ....
 
 ***********************************************************************************
@@ -137,3 +155,15 @@ Successfully recovered keymanager secrets.
 Selection (1-11)? 1
 
 ....
+
+
+====
+. 自動ギブバックを無効にした場合は、次のコマンドを入力してリストアします。
++
+`storage failover modify -node local -auto-giveback true`コマンド。
+
+. AutoSupportが有効になっている場合は、次のコマンドを入力してケースの自動作成をリストアします。
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+

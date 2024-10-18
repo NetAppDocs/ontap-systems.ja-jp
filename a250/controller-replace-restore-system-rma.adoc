@@ -27,6 +27,9 @@ summary: 'システムを完全に動作状態に戻すには、 NetApp Storage 
 
 ライセンスキーは 90 日間の猶予期間中にインストールする必要があります。この猶予期間を過ぎると、古いライセンスはすべて無効になります。有効なライセンスキーをインストールしたら、 24 時間以内にすべてのキーをインストールする必要があります。
 
+
+NOTE: システムで最初にONTAP 9 .10.1以降を実行していた場合は、に記載されている手順を使用してください https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/Post_Motherboard_Replacement_Process_to_update_Licensing_on_a_AFF_FAS_system#Internal_Notes^["マザーボードの交換後プロセスを実行して、AFF / FASシステムのライセンスを更新"]。システムの最初のONTAPリリースが不明な場合は、を参照してくださいlink:https://hwu.netapp.com["NetApp Hardware Universe の略"^]。
+
 .手順
 . 新しいライセンスキーが必要な場合は、で交換用ライセンスキーを取得します https://mysupport.netapp.com/site/global/dashboard["ネットアップサポートサイト"] [ ソフトウェアライセンス ] の [ マイサポート ] セクションで、
 +
