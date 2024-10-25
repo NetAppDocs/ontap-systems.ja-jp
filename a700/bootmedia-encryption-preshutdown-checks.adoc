@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, shutdown, check, onboard, encryption, key 
 summary: 障害ノードをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害ノードのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
-= 暗号化キーのサポートおよびステータスの確認
+= 暗号化キーのサポートとステータスの確認- AFF A700
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

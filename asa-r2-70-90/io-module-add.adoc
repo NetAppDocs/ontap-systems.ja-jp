@@ -131,7 +131,6 @@ NOTE: これにより、PCIeカードおよびその他のコンポーネント�
 . コントローラ B について、上記の手順を繰り返します
 . 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
 . AutoSupportが有効になっている場合は、コマンドを使用してケースの自動作成をリストアまたは抑制解除し `system node autosupport invoke -node * -type all -message MAINT=END` ます。
-. ストレージI/Oモジュールを設置した場合は、NS224シェルフを設置してケーブル接続します（を参照）link:../ns224/hot-add-shelf-overview.html["ホツトアトワアクフロオ"]。
 
 
 
@@ -157,7 +156,7 @@ LIF は、コントローラモジュールがシャットダウンすると自�
  a| 
 ポート数が少ない NIC I/O モジュール
  a| 
-選択したLIFを別のホームポートに永続的に再割り当てします。System Managerを使用してLIFを完全に移動する方法については、を参照してください https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["LIF を移行する"^] 。
+該当する LIF を別のホームポートに完全に再割り当てします。を参照してください https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["LIF を移行する"^] System Manager を使用して LIF を完全に移動する方法については、を参照してください。
 
 
 

@@ -23,7 +23,7 @@ entries:
     entries:
     - title: 概要
       url: "/fas9500/bootmedia_replace_overview.html"
-    - title: オンボードの暗号化キーがないかどうかをシャットダウン前にチェックします
+    - title: 暗号化キーの確認
       url: "/fas9500/bootmedia_encryption_preshutdown_checks.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/fas9500/bootmedia_impaired_controller_shutdown.html"

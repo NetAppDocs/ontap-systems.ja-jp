@@ -23,7 +23,7 @@ entries:
     entries:
     - title: 概要
       url: "/asa900/bootmedia_replace_overview.html"
-    - title: オンボード暗号化キーを確認
+    - title: 暗号化キーの確認
       url: "/asa900/bootmedia_encryption_preshutdown_checks.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/asa900/bootmedia_impaired_controller_shutdown.html"
@@ -31,7 +31,7 @@ entries:
       url: "/asa900/bootmedia_replace.html"
     - title: ブートイメージを起動します
       url: "/asa900/bootmedia_recovery_image.html"
-    - title: OKM 、 NSE 、 NVE をリストアします
+    - title: アンコウカノ
       url: "/asa900/bootmedia_encryption_restore.html"
     - title: 障害のある部品をネットアップに返却します
       url: "/asa900/bootmedia_complete_rma.html"

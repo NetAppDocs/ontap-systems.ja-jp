@@ -23,7 +23,7 @@ entries:
     entries:
     - title: 概要
       url: "/fas2700/bootmedia-replace-overview.html"
-    - title: オンボード暗号化キーを確認
+    - title: 暗号化キーの確認
       url: "/fas2700/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/fas2700/bootmedia-shutdown.html"
@@ -31,7 +31,7 @@ entries:
       url: "/fas2700/bootmedia-replace.html"
     - title: ブートイメージを起動します
       url: "/fas2700/bootmedia-recovery-image-boot-non-2n-mcc.html"
-    - title: OKM 、 NSE 、 NVE をリストアします
+    - title: アンコウカノ
       url: "/fas2700/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します
       url: "/fas2700/bootmedia-complete-rma.html"

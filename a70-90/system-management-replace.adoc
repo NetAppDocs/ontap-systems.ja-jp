@@ -266,9 +266,9 @@ image::../media/icon_round_3.png[番号3]
 コントローラモジュールをリブートします。
 
 . LOADERプロンプトで「_bye_」と入力します。
-. コントローラのストレージをギブバックして、コントローラを通常動作に戻します。_storage failover giveback -ofnode_impaired_node_name_
-. を使用して自動ギブバックをリストアします `storage failover modify -node local -auto-giveback true` コマンドを実行します
-. AutoSupportのメンテナンス時間がトリガーされた場合は、を使用して終了します `system node autosupport invoke -node * -type all -message MAINT=END` コマンドを実行します
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
+. 自動ギブバックが無効になっていた場合は、再度有効にします。 `storage failover modify -node local -auto-giveback true`
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
 

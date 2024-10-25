@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: aff a220, post, boot, media, okm, nse, nve, onboard key manager, netapp storage encryption, netapp volume encryption 
 summary: 環境変数を確認したら、オンボードキーマネージャ \ （ OKM \ ）、 NetApp Storage Encryption \ （ NSE\ ）、または NetApp Volume Encryption \ （ NVE \ ）が有効になっているシステムに固有の手順を実行する必要があります。 
 ---
-= 必要に応じてOKM、NSE、NVEをリストア- AFF A220
+= リストア暗号化- AFF A220
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+交換用ブートメディアで暗号化をリストアします。
+
 オンボードキーマネージャ（OKM）、NetApp Storage Encryption（NSE）、またはNetApp Volume Encryption（NVE）が有効になっているシステムに固有の手順を、ブートメディアの交換手順の最初にキャプチャした設定を使用して実行する必要があります。
 
 システムで設定されているキー管理ツールに応じて、次のいずれかのオプションを選択してブートメニューからキー管理ツールを復元します。

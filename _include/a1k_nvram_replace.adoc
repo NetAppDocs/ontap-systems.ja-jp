@@ -216,6 +216,9 @@ NOTE: NVRAMモジュールの側面にあるFRUマップラベルを参照して
 FRU を交換したら、コントローラモジュールをリブートする必要があります。
 
 . LOADERプロンプトからONTAPをブートするには、_bye_と入力します。
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `_storage failover giveback -ofnode _impaired_node_name_`
+. 自動ギブバックが無効になっていた場合は、再度有効にします。 `storage failover modify -node local -auto-giveback true`
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
 
@@ -316,9 +319,9 @@ dr-group-id            cluster node           configuration-state
 4 entries were displayed.
 ----
 . 各コントローラに、想定されるボリュームが存在することを確認します。 vol show -node node-name
-. ストレージ暗号化が有効になっている場合は、機能をリストアする必要があります。
-. リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラから有効にします。_storage failover modify -node replacement -node-name -onreboot true_
-. AutoSupportが有効になっている場合は、コマンドを使用してケースの自動作成をリストアまたは抑制解除し `system node autosupport invoke -node * -type all -message MAINT=END` ます。
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
+. 自動ギブバックが無効になっていた場合は、再度有効にします。 `storage failover modify -node local -auto-giveback true`
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
 

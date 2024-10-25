@@ -31,7 +31,7 @@ entries:
       url: "/fas-70-90/bootmedia-replace-workflow.html"
     - title: 要件を確認する
       url: "/fas-70-90/bootmedia-replace-requirements.html"
-    - title: オンボード暗号化キーを確認
+    - title: 暗号化キーの確認
       url: "/fas-70-90/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/fas-70-90/bootmedia-shutdown.html"
