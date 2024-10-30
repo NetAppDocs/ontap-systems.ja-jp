@@ -182,10 +182,6 @@ NOTE: 新しいI/Oモジュールが障害の発生したモジュールと同�
 
 NOTE: これにより、I/Oカードおよびその他のコンポーネントが再初期化され、ノードがリブートされます。
 
-+
-
-NOTE: 変換が完了したら必ずメンテナンスモードを終了してください。
-
 . ノードを通常動作に戻します。_storage failover giveback -ofnode impaired_node_name_
 . 自動ギブバックが無効になっていた場合は、再度有効にします。_storage failover modify -node local -auto-giveback true_
 

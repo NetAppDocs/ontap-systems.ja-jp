@@ -5365,7 +5365,6 @@
   <block id="16e515f4f7ddf43ca6fc5f5321a960e5" category="list-text">IOM12 / IOM12Bモジュールを搭載したディスクシェルフを既存のスタック（IOM12 / IOM12Bモジュールを搭載したディスクシェルフ）にホットアドする場合は、ディスクシェルフをスタックの最後のディスクシェルフ（論理上の最初または最後のディスクシェルフ）にホットアドできます。</block>
   <block id="4a6c06310d2bcd1c9758407cb59a423d" category="list-text">IOM12 / IOM12Bモジュールを搭載するディスクシェルフは独自のスタックに配置する必要がありますが、IOM6モジュールまたはIOM3モジュールを搭載したシェルフを搭載するスタックには追加できません。</block>
   <block id="5b07090bafdc58182b6f01852ecbad05" category="summary">ワークシートテンプレートを記入することで、コントローラのSASポートペアを定義できます。これらのポートを使用して、コントローラをIOM12 / 12BのIOMBモジュールを使用するディスクシェルフスタックにケーブル接続し、HAペアまたはシングルコントローラ構成でクアッドパス接続を実現できます。記入済みのワークシートを使用して、構成に合ったクアッドパス接続を実施することもできます。</block>
-  <block id="5d57c73dbe661f28ff4ab36825900d40" category="doc">IOM1/IOM12B2モジュールを使用するクアッドパス接続シェルフのコントローラ/スタック間のケーブル接続ワークシートテンプレートです</block>
   <block id="51432cf63c198a0a11bab993299ae7fd" category="paragraph">ワークシート例では、2つのクアッドポートSAS HBAと、IOM12 / IOM12Bモジュールを使用するディスクシェルフスタックを2台使用する構成を使用します。</block>
   <block id="b6e864fc7eab4fd6206badf96144db05" category="list-text">グレーのボックスの上のボックスに、システム上のすべてのSAS Aポートと、続けてシステム上のすべてのSAS Cポートをスロットの順序（0、1、2、3など）で列挙します。</block>
   <block id="e50ad77c16b4b45855a35ff91f7ad9a6" category="list-text">グレーのボックスに、システムのすべてのSAS Bポートと、システムのすべてのSAS Dポートをスロットの順序（0、1、2、3など）でリストアップします。</block>
@@ -6696,7 +6695,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="cfad0a7419f44ea0c64db24197abbf70" category="paragraph">点滅</block>
   <block id="6b6aa0b6d9b620cfef1de19db2c781e5" category="paragraph">ACまたはDC電源装置（PSU）のLEDは、PSUが正常に機能しているか、ハードウェアに問題があるかを示します。</block>
   <block id="ddf6d4204e991f952d5f65cedae767ce" category="paragraph">次の図と表に、PSUのLEDを示します。（図はAC PSUですが、DC PSUのLEDの位置は同じです）。</block>
-  <block id="7609b319dac3aca8b9d7c805388fc5e6" category="paragraph">緑色のLEDは電源/動作を示し、黄色のLEDは障害を示します。</block>
   <block id="0cb6b469a5da43eb5225c25fab0b5ff0" category="cell">電源/アクティビティ（緑）</block>
   <block id="cd5f6c10b859eea6eaed71a2e494c0db" category="paragraph">エンクロージャにAC/DC電源が供給されていない</block>
   <block id="aade40c62d1308360c2f119536da1c63" category="paragraph">PSUにAC/DC電源が供給されていない</block>
@@ -9290,35 +9288,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="cf91b43675e7187d6e724e7c312e336a" category="list-text">カムラッチDOをモジュールからできるだけ離します。</block>
   <block id="f5c1d99a4f032f30d087e32fbbbdb994" category="paragraph">障害のあるコントローラをシャットダウンするかテイクオーバーします。-障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。</block>
   <block id="5050dae1093a80a257a1d121ca5f3b0f" category="section-title">手順4：コントローラの状態を確認する</block>
-  <block id="dbc253985631ee33fc6976832d319aa9" category="list-text">Loaderプロンプトで、_boot_recovery-partner_commandを入力します。</block>
-  <block id="9071774e0d4e739ca2fe57b55c805c89" category="paragraph">画面にメッセージが表示さ<block ref="a42d5407fe60b5716cd9fdd4d4063f27" prefix=" " category="inline-code"></block>れ、ブートリカバリファイルの初期チェックとインストールが開始されます。</block>
-  <block id="c3fcf34a186ddf28b42002ccdea5bb89" category="list-text">外部キーマネージャ（EKM）が設定されている場合は、次のメッセージが表示されます。</block>
-  <block id="e41b0fa291ba7a2f8d02db37d829dfe6" category="list-text">キー管理ツールを設定している場合は「_y_」と入力します。</block>
-  <block id="8652886cdac2e198b58233db3fe44eb6" category="paragraph">ブートメニューオプション11は、コンフィギュレーションファイルを再構築できるように、すべてのEKM設定情報の入力をユーザに要求します。</block>
-  <block id="3fd9d3baae5e410a98ba4eb52a03ab26" category="list-text">各プロンプトでEKM設定を入力します。</block>
-  <block id="4cbdd1cac9566795166b3d9206cbcf86" category="paragraph">*注：*この情報のほとんどは、EKMが最初に有効になったときに入力されました。初期EKM設定時に入力した情報と同じ情報を入力する必要があります。</block>
-  <block id="b5a73f8c93bdb89882d1ca9e462b0e2a" category="list-text"><block ref="1cc9af734f039af6fc9db1cd2f09ad05" prefix=" " category="inline-code"></block>とが<block ref="878efc5de6def52e25be6f622fb5a7ee" prefix=" " category="inline-code"></block>適合していることを確認します。</block>
-  <block id="5fb974d016811ca21ebd195d4c257e8e" category="list-text">パートナーノードで、<block ref="73bad5beeda4a2a6bd01d97def1d4e67" prefix=" " category="inline-code"></block>コマンドを使用してクラスタUUIDを取得します。</block>
-  <block id="923bf1a61097d8e90a02dbe1a7df32ad" category="list-text">パートナーノードで、<block ref="2f710df81fb8b58c1792ebb010c82902" prefix=" " category="inline-code"></block>コマンドと<block ref="f2892b1a90652446a2c8a2dce1d42eee" prefix=" " category="inline-code"></block>コマンドを使用してキーストアUUIDを取得します。</block>
   <block id="6d194eccb9cd88bfbcde1df65103cbb4" category="list-text">プロンプトが表示されたら、キーストアUUIDとクラスタUUIDの値を入力します。</block>
-  <block id="dc96ebaefbca0b39bdff8d2d09a5fc61" category="paragraph">*注：*パートナーノードを使用できない場合は、設定済みのキーサーバにあるMroot-AKキーからキーストアUUIDとクラスタUUIDを取得できます。</block>
-  <block id="a1af56a72048fea6d9e9cfde4d42ba60" category="paragraph"><block ref="b8bbecc4d00a5d5b7dc368313818ee3e" prefix=" " category="inline-code"></block>クラスタUUIDと<block ref="8a298935cfa9f81db49083081a35f190" prefix=" " category="inline-code"></block>キーストアUUIDの属性を確認して、正しいキーがあることを確認します。</block>
-  <block id="d887305d2b2206bc86e35b35a47e130f" category="list-text">キーが適切にリストアされると、リカバリプロセスが続行され、ノードがリブートされます。</block>
-  <block id="e4b7511a00ba0effd6c938bde56c85b1" category="paragraph">画面にメッセージが表示さ<block ref="a42d5407fe60b5716cd9fdd4d4063f27" prefix=" " category="inline-code"></block>れ、初期チェックが開始されます。</block>
-  <block id="d1de7a2b347063926ee7045aa2c0d40f" category="list-text">Loaderがローカルクラスタポートを設定し、を使用してネットブートを実行する際のプロセスを監視します<block ref="41e7db54f2498671a212595a5bc3f9c4" prefix=" " category="inline-code"></block>。</block>
-  <block id="7d7167e676e301c377a23cf821f58e87" category="paragraph">ネットブートが実行されると、<block ref="78a0f5e144f919e879f7037c4f29865c" prefix=" " category="inline-code"></block>が画面に表示され、インストールプロセスが完了します。</block>
-  <block id="e9bdba49a952b52d8fc36e6ae32295bf" category="list-text">キー管理ツールが設定されていない場合は、次のメッセージが表示されます。</block>
-  <block id="233309cf2a420789e8fcc1627010277c" category="list-text">次のメッセージが表示された場合は、オンボードキーマネージャ（OKM）が設定されています。</block>
-  <block id="0062654a58ca10b6a4b1ffce37755e67" category="paragraph">に進み、リカバリプロセスを完了します。</block>
-  <block id="e6424e7ff2e258bc2ce037ee38b77931" category="list-text">次のメッセージが表示された場合は、外部キーマネージャ（EKM）が設定されています。EKMトピックに移動し、リカバリプロセスを完了します。</block>
-  <block id="b5b024aba6aeeef11aba1df77e7bc935" category="list-text">BMRプロセスを監視して、パートナーからrestore backup config、env file、mdb、およびrdbを実行します。</block>
-  <block id="1fd38840c77d72c3a907f5a961467b12" category="list-text">次のように表示されると、ノードがリブートし、BMRが完了します。</block>
-  <block id="76e65f6de5f0ef338defad156e9302d6" category="list-text">オンボードキーマネージャ（OKM）が設定されている場合は、次のように表示されます。</block>
-  <block id="16881782fee9167d362ad031a7bd4efa" category="list-text">プロンプトで「_y_」と入力します。</block>
-  <block id="efdeb95716fc588d0e0896e9945962d6" category="list-text">次のメッセージが表示されたら、オンボードキーマネージャのパスフレーズを入力します。<block ref="2b673e138bf62e9f201d2fe3f4e48e85" prefix=" " category="inline-code"></block></block>
-  <block id="d1da2db4d465ceb969bae13f9a2c1665" category="list-text">パスフレーズの確認を求められたら、オンボードキーマネージャのパスフレーズをもう一度入力します。</block>
-  <block id="d6b5f802b07df1179c13649ed53524f0" category="paragraph">リカバリプロセスが完了すると、次のように表示されます。</block>
-  <block id="c6980bbd79483c6809cc84795b7d14d6" category="paragraph">リストアが完了すると、ノードがリブートしてプロセスが完了します。</block>
   <block id="417968dd9c410e2ebdf82236e2a6f1d8" category="doc">手順1：ストレージコントローラをネットワークに接続する</block>
   <block id="c0b05ac617b77a5c10f26756e6ef04f2" category="list-text">光スイッチに接続する場合は、ポートにケーブル接続する前に、Small Form-factor Pluggable（SFP）トランシーバをコントローラポートに挿入します。</block>
   <block id="1463138ead0bd5def70e2d744eddfc0a" category="paragraph">コントローラ同士、およびホストネットワークに直接接続します。</block>
@@ -9898,7 +9868,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6aa2bbbbcd863a688ecea951a078cc57" category="sidebar">FlashCacheモジュール</block>
   <block id="9d6e68abc86ef52726565c7e52c9dea7" category="image-alt">システムシリアル番号の例</block>
   <block id="acaf98d7d873f9a7ee774034dc1440fc" category="image-alt">AFF A90 and AFF A70 weight cautionアイコン</block>
-  <block id="edd9ce1e4d9cc655a3b0e8c6c36049db" category="paragraph">ブートメディアイメージをリストアします。</block>
   <block id="54425f945644281ccaf6201b998f169f" category="paragraph"><block ref="54425f945644281ccaf6201b998f169f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e41a410f85201d7cc87e022e1f2daf34" category="paragraph">ラップトップでネットワーク検出を有効にしている場合は、クラスタの自動検出を使用してセットアップと設定を完了できます。</block>
   <block id="637d6f599c1184d1c5de273700d7924f" category="list-text">ストレージシステムに付属のコンソールケーブルを使用して、ラップトップにコンソールケーブルを接続し、コントローラのシリアルコンソールポートを接続します。</block>
@@ -10055,7 +10024,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="cd5ec5f3586869573f3f0b3112426052" category="sidebar">TR-4290：『SAP HANA on NetApp FAS systems with NFS』</block>
   <block id="1e4893fc6c634f02ace3ba7beb78d669" category="inline-link-macro">クォーラムステータス</block>
   <block id="8df1727c16aa446d0622abe8cab177ae" category="list-text">SANシステムを使用している場合は、障害コントローラのSCSIブレードのイベントメッセージを確認しておく必要があり <block ref="090678c8ba0a25df800d3d4eeaf19522" prefix="(" category="inline-code"></block>ます）。コマンド（priv advancedモードから）を実行すると、<block ref="090678c8ba0a25df800d3d4eeaf19522" prefix=" " category="inline-code"></block>そのノードのノード名、そのノードの可用性ステータス、およびそのノードの動作ステータスが表示され<block ref="8650efa63daff32c831511388978454c" category="inline-link-macro-rx"></block>ます。</block>
-  <block id="35f2b79f2ef05c6cbaae401c14dbe36d" category="list-text">正常なパートナーコントローラで、障害コントローラをadvanced権限レベルに設定します。<block ref="0a654c13d63710f829bc02c4cbec79ee" prefix=" " category="inline-code"></block></block>
   <block id="8ad44b8e0ede0abb18fd1d9732ea1fec" category="list-text">正常なパートナーコントローラで、restore backupコマンドを実行します<block ref="44d388b27236c791c5fe1d30cc29bc43" prefix=" " category="inline-code"></block>。</block>
   <block id="3fef721e9c365db9acdcf0c6462afc1d" category="list-text">正常なパートナーコントローラで、障害のあるコントローラをadminレベルに戻します<block ref="0a654c13d63710f829bc02c4cbec79ee" prefix=" " category="inline-code"></block>。</block>
   <block id="eb907bd5c32aa1799bf0e27e04819907" category="list-text">システムで暗号化が使用されていない場合は、_option 1 Normal Bootを選択します。使用されていない場合は、に進みます。 <block ref="9946ce0c7c3feb5cc0b8738324cc4807" category="inline-link-macro-rx"></block></block>
@@ -10331,4 +10299,18 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3d7237c5aa2d20431d9cae1d4abbadb9" category="doc">リストア暗号化- FAS9000</block>
   <block id="13e7cf07309f0d95eee5aa49b6842dc0" category="doc">暗号化キーのサポートとステータスの確認- FAS9500</block>
   <block id="e4d9374bc79ce9095fb021e03551599f" category="doc">リストア暗号化- FAS9500</block>
+  <block id="bd5c047c4a41e95a8a9424888875e56a" category="list-text">I/Oモジュールを指定のデバイスにケーブル接続します。</block>
+  <block id="2d8241a8fe54414b6494b29d26d8b251" category="list-text">正常なノードから、コマンドを使用して自動ギブバックを無効にした場合はリストアします<block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix=" " category="inline-code"></block>。</block>
+  <block id="9d462bd05672844aeab0d3d5d323d66a" category="list-text">コントローラを再度取り付け、コントローラモジュールの電源を再接続します。</block>
+  <block id="4d872659b015ad414d5e68440a7ddfd6" category="paragraph">コントローラが装着され、電源が回復するとすぐにブートが開始されます。</block>
+  <block id="6f3fa8086df2fa20b3e903512f693396" category="list-text">障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。</block>
+  <block id="c2e17c0358bcab54416e83b4418be536" category="paragraph"><block ref="30edaf7c9fa43c78aeaf4b8fabb7af1a" prefix="" category="inline-code"></block>です。</block>
+  <block id="32c032e6d73023a7bc6955f5bc422d4d" category="list-text">自動ギブバックを無効にした場合は、再度有効にします。</block>
+  <block id="929b41baf89e2c5975631c98cabedd59" category="paragraph"><block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix="" category="inline-code"></block>です。</block>
+  <block id="af4b4d5cc6a7f6d9937999949dd33233" category="list-text">AutoSupportが有効になっている場合は、ケースの自動作成をリストアします。</block>
+  <block id="0306ff5f8ff1d760b409c6f7f1b3b8bd" category="paragraph"><block ref="9ac424c0d7b432975df36a19daf50c9c" prefix="" category="inline-code"></block>です。</block>
+  <block id="e48348202fcdb5533fd8d224264fdc58" category="paragraph">&lt;stdin&gt;の未解決ディレクティブ- include::../_include/bootmedia_recovery_image.adoc[]</block>
+  <block id="1ae221b034a7bacf99b88892279c2462" category="paragraph">2色のLEDは、緑色の場合は電源/動作を示し、赤色の場合は障害を示します。</block>
+  <block id="7ea17d80896a391ffe01665c36e03909" category="cell">注意（赤）</block>
+  <block id="ede3a6bd0f0cd8205608f251691a19e1" category="doc">IOM12/IOM12Bモジュールを使用するクアッドパス接続シェルフのコントローラ/スタック間のケーブル接続ワークシートテンプレートです</block>
 </blocks>

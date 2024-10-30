@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: complete, completing, worksheet, template, controller, sas, port, pair, cable, controller, disk, shelves, shelf, iom12, quad-pathed, connectivity, ha, pair, controller-to-stack, controller-to-stack cabling worksheet template for quad-pathed connectivity 
 summary: ワークシートテンプレートを記入することで、コントローラのSASポートペアを定義できます。これらのポートを使用して、コントローラをIOM12 / 12BのIOMBモジュールを使用するディスクシェルフスタックにケーブル接続し、HAペアまたはシングルコントローラ構成でクアッドパス接続を実現できます。記入済みのワークシートを使用して、構成に合ったクアッドパス接続を実施することもできます。 
 ---
-= IOM1/IOM12B2モジュールを使用するクアッドパス接続シェルフのコントローラ/スタック間のケーブル接続ワークシートテンプレートです
+= IOM12/IOM12Bモジュールを使用するクアッドパス接続シェルフのコントローラ/スタック間のケーブル接続ワークシートテンプレートです
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

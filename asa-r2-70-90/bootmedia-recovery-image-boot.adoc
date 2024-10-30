@@ -14,7 +14,7 @@ summary: ONTAP イメージを USB ドライブからブートし、ファイル
 ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
 
 .手順
-. LOADER プロンプトから、 USB フラッシュドライブ「 boot_recovery 」からリカバリ・イメージをブートします
+. LOADERプロンプトで、USBフラッシュドライブからリカバリイメージをブートします。_boot_recovery_
 +
 イメージが USB フラッシュドライブからダウンロードされます。
 
@@ -31,7 +31,7 @@ ONTAP 9.16.0 以前
  a| 
 .. 障害コントローラで、次のメッセージが表示されたら_Y_を押します。 `Do you want to restore the backup configuration now?`
 .. 障害コントローラで、上書きするかどうかを確認するメッセージが表示されたら_Y_を押します `/etc/ssh/ssh_host_ecdsa_key`。
-.. 正常なパートナーコントローラで、障害コントローラをadvanced権限レベルに設定します。 `set -privilege admin`
+.. 正常なパートナーコントローラで、障害コントローラをadvanced権限レベルに設定します。_set -privilege advanced _。
 .. 正常なパートナーコントローラで、restore backupコマンドを実行します `system node restore-backup -node local -target-address impaired_node_IP_address`。
 +
 *注：*リストアが正常に完了した以外のメッセージが表示された場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
