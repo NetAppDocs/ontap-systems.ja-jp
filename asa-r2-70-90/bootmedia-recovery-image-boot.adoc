@@ -14,41 +14,54 @@ summary: ONTAP イメージを USB ドライブからブートし、ファイル
 ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
 
 .手順
-. LOADERプロンプトで、USBフラッシュドライブからリカバリイメージをブートします。_boot_recovery_
+. LOADER プロンプトから、 USB フラッシュドライブ「 boot_recovery 」からリカバリ・イメージをブートします
 +
 イメージが USB フラッシュドライブからダウンロードされます。
 
 . プロンプトが表示されたら、イメージの名前を入力するか、画面に表示されたデフォルトのイメージをそのまま使用します。
 . var ファイルシステムを復元します。
 +
-[cols="1,2"]
-|===
-| システムで実行しているバージョン | 作業 
-
-
- a| 
-ONTAP 9.16.0 以前
- a| 
-.. 障害コントローラで、次のメッセージが表示されたら_Y_を押します。 `Do you want to restore the backup configuration now?`
-.. 障害コントローラで、上書きするかどうかを確認するメッセージが表示されたら_Y_を押します `/etc/ssh/ssh_host_ecdsa_key`。
-.. 正常なパートナーコントローラで、障害コントローラをadvanced権限レベルに設定します。_set -privilege advanced _。
+[role="tabbed-block"]
+====
+.オプション1：ONTAP 9 16.0以前
+--
+.. 障害のあるコントローラで、 `Y` `Do you want to restore the backup configuration now?`
+.. 障害コントローラで、_/etc/ssh/ssh_host_ECDSA_KEY_を上書きするかどうかを確認するメッセージが表示されたらと入力し `Y`ます。
+.. 正常なパートナーコントローラで、障害コントローラをadvanced権限レベルに設定します。 `set -privilege advanced`
 .. 正常なパートナーコントローラで、restore backupコマンドを実行します `system node restore-backup -node local -target-address impaired_node_IP_address`。
 +
 *注：*リストアが正常に完了した以外のメッセージが表示された場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
 
 .. 正常なパートナーコントローラで、障害のあるコントローラをadminレベルに戻します `set -privilege admin`。
-.. 障害コントローラで、というメッセージが表示されたら、_y_を押します `Was the restore backup procedure successful?`。
-.. 障害コントローラで、というメッセージが表示されたら、_y_を押します `...would you like to use this restored copy now?`。
-.. 障害コントローラで、障害コントローラのリブートを求めるプロンプトが表示されたら_y_を押し、ブートメニューとして_Ctrl+C_を押します。
+.. 障害のあるコントローラで、というメッセージが表示されたら `Was the restore backup procedure successful?`キーを押し `Y`ます。
+.. 障害のあるコントローラで、というメッセージが表示されたら `...would you like to use this restored copy now?`キーを押し `Y`ます。
+.. 障害コントローラのリブートを求めるプロンプトが表示されたらと入力し、を押し `Y`てブートメニューを表示します。 `ctrl-c`
 .. システムで暗号化が使用されていない場合は、_option 1 Normal Bootを選択します。使用されていない場合は、に進みます。 link:bootmedia-encryption-restore.html["キー管理ツールのリストア"]
-.. パートナーコントローラにコンソールケーブルを接続します。
-.. storage failover giveback -fromnode local_コマンドを使用してコントローラをギブバックします。
-.. 自動ギブバックを無効にした場合は、_storage failover modify -node local-auto-giveback true_コマンドを使用してリストアします。
-.. AutoSupportが有効になっている場合は、_system node AutoSupport invoke -node *-type all -message MAINT=end_commandを使用して、ケースの自動作成をリストアまたは抑制解除します。
+
+
+--
+.オプション2：ONTAP 9 16.1以降
+--
+.. 障害のあるコントローラで、バックアップ構成をリストアするかどうかを確認するメッセージが表示されたらと入力し `Y`ます。
++
+リストア手順が正常に完了すると、コンソールにこのメッセージが表示されます `syncflash_partner: Restore from partner complete`。
+
+.. 障害コントローラで、リストアバックアップが成功したかどうかを確認するプロンプトが表示されたらと入力し `Y`ます。
+.. 障害コントローラで、リストアした構成を使用するかどうかを確認するメッセージが表示されたらと入力し `Y`ます。
+.. 障害コントローラで、ノードのリブートを求めるプロンプトが表示されたらと入力し `Y`ます。
+.. 障害コントローラのリブートを求めるプロンプトが表示されたらと入力し、を押し `Y`てブートメニューを表示します。 `ctrl-c`
+.. システムで暗号化が使用されていない場合は、_option 1 Normal Bootを選択します。使用されていない場合は、に進みます。 link:bootmedia-encryption-restore.html["キー管理ツールのリストア"]
+
+
+--
+====
+
+
+. パートナーコントローラにコンソールケーブルを接続します。
+. storage failover giveback -fromnode local コマンドを使用して、コントローラをギブバックします。
+. 「 storage failover modify -node local-auto-giveback true 」コマンドを使用して自動ギブバックを無効にした場合は、自動ギブバックをリストアします。
+. AutoSupportが有効になっている場合は、コマンドを使用してケースの自動作成をリストアまたは抑制解除し `system node autosupport invoke -node * -type all -message MAINT=END` ます。
 +
 *注意：*プロセスが失敗した場合は、に連絡してください https://support.netapp.com["ネットアップサポート"]。
 
-
-
-|===
 

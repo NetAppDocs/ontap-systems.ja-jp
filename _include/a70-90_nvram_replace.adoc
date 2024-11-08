@@ -160,7 +160,9 @@ image:../media/icon_round_1.png["番号1"]
 
  a| 
 image:../media/icon_round_2.png["番号2"]
-| DIMMの固定ツメ 
+ a| 
+DIMMの固定ツメ
+
 |===
 
 
@@ -225,14 +227,16 @@ image::../media/drw_a70-90_nvram12_remove_replace_ieops-1370.svg[NVRAM12モジ�
 |===
 
 
-| image:../media/icon_round_1.png["番号1"]  a| 
-カムロックボタン
-
+ a| 
+image:../media/icon_round_1.png["番号1"]
+| カムロックボタン 
 
 
  a| 
 image:../media/icon_round_2.png["番号2"]
-| DIMMの固定ツメ 
+ a| 
+DIMMの固定ツメ
+
 |===
 
 

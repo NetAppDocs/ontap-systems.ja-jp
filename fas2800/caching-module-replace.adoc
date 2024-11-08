@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace, caching, module,  fas2800, shut, down, impaired, controller, controller, aggregates, metrocluster, configuration, replace, reinstall 
 summary: モジュールがオフラインになったことを示す単一の AutoSupport （ ASUP ）メッセージがシステムに登録された場合は、コントローラモジュールのキャッシングモジュールを交換する必要があります。交換しないと、パフォーマンスが低下します。 
 ---
-= キャッシングモジュールを交換してください- FAS2800
+= キャッシングモジュールの交換- FAS2820
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

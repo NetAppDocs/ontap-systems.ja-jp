@@ -1,69 +1,128 @@
 ---
 permalink: asa-r2-70-90/controller-replace-recable-reassign-disks.html 
 sidebar: sidebar 
-keywords: asa r2 a70, asa r2 a90, how to recable the system, teboot the system 
+keywords: asa r2 a70, asa r2 a90, how to recable the system, boot the system 
 summary: ストレージにケーブルを再接続してコントローラをリブートする必要があります。 
 ---
-= コントローラのケーブル接続とギブバック- ASA A70およびASA A90
+= コントローラのギブバック- ASA A70およびASA A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ストレージとネットワーク接続をケーブル接続し直し、コントローラをギブバックします。
+ストレージとネットワークの接続を確認し、コントローラをギブバックします。
 
 
 
-== 手順1：コントローラをケーブル接続し直す
+== コントローラをギブバック
 
-コントローラモジュールのストレージとネットワークをケーブル接続し直します。
+暗号化をリセットし（有効な場合）、コントローラを通常動作に戻します。
 
-.手順
-. コントローラモジュールをストレージ接続とネットワーク接続にケーブルを再接続します。
-. を使用して、ケーブル接続が正しいことを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]。
+[role="tabbed-block"]
+====
+.暗号化なし
+--
+. Loaderプロンプトで、と入力し `boot_ontap`ます。
+. コンソールメッセージが停止したら、<enter>キーを押します。
 +
-.. Config Advisor をダウンロードしてインストールします。
-.. ターゲットシステムの情報を入力し、データ収集をクリックします。
-.. Cabling タブをクリックし ' 出力を確認しますすべてのディスクシェルフが表示されていること、およびすべてのディスクが出力に表示されていることを確認し、ケーブル接続に関する問題が見つかった場合は修正します。
-.. 該当するタブをクリックして他のケーブル接続を確認し、 Config Advisor からの出力を確認します。
+** _login_promptが表示されたら、このセクションの最後の次の手順に進みます。
+** 「_Waiting for giveback_」と表示された場合は、<enter>キーを押してパートナーノードにログインし、このセクションの最後の次の手順に進みます。
 
 
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
+. 自動ギブバックが無効になっていた場合は、再度有効にします。 `storage failover modify -node local -auto-giveback true`
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
-
-
-== 手順2：コントローラをギブバックする
-
-ストレージリソースの所有権を交換用コントローラに戻します。
-
-. ストレージシステムで暗号化が設定されている場合は、次の手順に従ってストレージまたはボリュームの暗号化機能をリストアし、システムをリブートする必要があります。
+--
+.オンボード暗号化（OKM）
+--
+. Loaderプロンプトで、と入力し `boot_ontap maint`ます。
+. コマンドを使用して、TMPファームウェアのバージョンを確認し `sysconfig -v`ます。
 +
-.. メニューから起動し、オプション10を実行します。
-.. パスフレーズを入力してデータをバックアップし、標準ブートを実行します。を参照してください。 https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Restore_onboard_key_management_encryption_keys["オンボードキー管理の暗号化キーをリストア"]
-.. CFOのみのギブバックの実行
-.. オンボード同期を実行し、SVM-KEKがtrueに設定されていることを確認します。を参照してください。 https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Onboard_keymanager_sync_fails_after_motherboard_replacement["MBの交換に失敗したあとのギブバック-キーマネージャで処理が拒否された"]
-.. SFOのギブバック（強制なし）
+** バージョンが5.63未満の場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
+** バージョンが5.63を超える場合は、を終了してLoaderプロンプトに戻ります。 `halt`
 
 
-. システムで暗号化が設定されていない場合は、次の手順を実行してシステムをリブートします。
-+
-.. メニューから起動し、オプション1を実行します。
-.. コントローラをギブバックします。
-.. 正常なコントローラから、交換したコントローラのストレージをギブバックします。 storage failover giveback -ofnode replacement_node_name _`
-+
-_replacement _controller はストレージをテイクバックしてブートを完了します。
-
+. LoaderプロンプトからONTAPメニューを起動し `boot_ontap menu`、オプション10を選択します。
+. OKMパスフレーズを入力します。このパスフレーズは、お客様またはにお問い合わせください https://support.netapp.com["ネットアップサポート"]。
 +
 
-NOTE: ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。
+NOTE: パスフレーズの入力を2回求められます。
+
+. プロンプトが表示されたら、バックアップキーのデータを入力します。
+. ブートメニューで、「option for normal boot」と入力します `1`。
+. 「_Waiting for giveback_」と表示されたら、<enter>キーを押します。
+. パートナーノードにコンソールケーブルを接続し、としてログインします `admin`。
+. advancedモードに切り替えて、修復されたノードのコアダンプがすべて保存されたことを確認します。 `set -privilege advanced` `run local partner savecore`
+. 管理レバーに戻ります `set privilege admin`。
+. CFOアグリゲート（ルートアグリゲート）のみをギブバックします。 `storage failover giveback -fromnode local -only-cfo-aggregates true`
++
+** エラーが発生した場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
+
+
+. ギブバックレポートが完了してから5分待って、フェイルオーバーのステータスとギブバックのステータスを確認します（および `storage failover show-giveback`） `storage failover show`。
+. コンソールケーブルを交換用ノードに接続し、 `security key-manager onboard sync`
++
+
+NOTE: クラスタのOKMのクラスタ全体のパスフレーズを入力するように求められます。
+
+. 次のコマンドを使用して、キーのステータスを確認します。 `security key-manager key query -key-type svm-KEK`
++
+_restored_columnに_true_以外の値が表示されている場合は、に連絡してください https://support.netapp.com["ネットアップサポート"]。
+
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
+. 自動ギブバックが無効になっていた場合は、再度有効にします。 `storage failover modify -node local -auto-giveback true`
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+--
+.外部キー管理ツール（EKM）
+--
+. ルートボリュームが外部キーマネージャで暗号化されており、コンソールケーブルが交換用ノードに接続されている場合は、と入力 `boot_ontap menu`してオプションを選択します `11`。
+.  `n`次の質問に答えて `y`ください。
++
+/cfcard/kmip/certs/client.crtファイルのコピーはありますか？｛y/n｝
 
 +
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["使用しているバージョンの ONTAP 9 に対するハイアベイラビリティ構成のコンテンツを検索してください"]
+/cfcard/kmip/certs/client.keyファイルのコピーはありますか？｛y/n｝
 
-.. ギブバックが完了したら、 HA ペアが正常で、テイクオーバーが可能であることを確認します。「 storage failover show
++
+/cfcard/kmip/certs/CA.pemファイルのコピーはありますか？｛y/n｝
+
++
+または
+
++
+/cfcard/kmip/servers.cfgファイルのコピーがありますか？｛y/n｝
+
++
+KMIPサーバのアドレスがわかりますか？｛y/n｝
+
++
+KMIPポートを知っていますか？｛y/n｝
+
++
+
+NOTE: 問題がある場合はにお問い合わせください https://support.netapp.com["ネットアップサポート"]。
+
+. 次の情報を入力します。
++
+** クライアント証明書（client.crt）ファイルの内容。
+** クライアントキー（client.key）ファイルの内容。
+** KMIPサーバCA（CA.pem）ファイルの内容。
+** KMIPサーバのIPアドレス。
+** KMIPサーバのポート。
 
 
-. 各コントローラに、想定されるボリュームが存在することを確認します。 vol show -node node-name
-. リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラで storage failover modify -node replacement-node-name -onreboot true を有効にします
+. システムが処理されると、ブートメニューが表示されます。通常ブートの場合は「1」を選択します。
+. テイクオーバーのステータスを確認します。 `storage failover show`
+. advancedモードに切り替えて、修復されたノードのコアダンプがすべて保存されたことを確認します。 `set -privilege advanced` `run local partner savecore`
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
+. 自動ギブバックが無効になっていた場合は、再度有効にします。 `storage failover modify -node local -auto-giveback true`
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
 
+
+--
+====

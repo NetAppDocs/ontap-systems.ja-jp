@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2800, move the controller module hardware 
 summary: コントローラモジュールハードウェアを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。 
 ---
-= コントローラモジュールハードウェアを交換します- FAS2800
+= コントローラモジュールハードウェアの交換- FAS2820
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

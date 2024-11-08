@@ -143,7 +143,9 @@ image:../media/drw_a1k_io_remove_replace_ieops-1382.svg["I/Oモジュールの�
 
  a| 
 image:../media/icon_round_1.png["番号1"]
-| I/Oカムラッチ 
+ a| 
+I/Oカムラッチ
+
 |===
 +
 元の場所がわかるように、ケーブルにラベルを付けておいてください。
@@ -187,8 +189,7 @@ NOTE: 新しいI/Oモジュールが障害の発生したモジュールと同�
 
 . LOADER プロンプトで、ノードをリブートします： bye _
 +
-
-NOTE: これにより、I/Oカードおよびその他のコンポーネントが再初期化され、ノードがリブートされます。
+これにより、I/Oカードおよびその他のコンポーネントが再初期化され、ノードがリブートされます。
 
 . ノードを通常動作に戻します。_storage failover giveback -ofnode impaired_node_name_
 . 自動ギブバックが無効になっていた場合は、再度有効にします。_storage failover modify -node local -auto-giveback true_

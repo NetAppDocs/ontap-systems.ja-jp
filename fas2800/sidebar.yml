@@ -1,9 +1,9 @@
 ---
 section: fas2800
-title: FAS2800システム
+title: FAS2820システム
 entries:
 - title: 設置とセットアップ
-  pdf-filename: FAS2800のインストールとセットアップ
+  pdf-filename: FAS2820のインストールとセットアップ
   entries:
   - title: インストールとセットアップを選択します
     url: "/fas2800/install-setup.html"
@@ -14,12 +14,12 @@ entries:
   - title: 詳細な手順
     url: "/fas2800/install-detailed-guide.html"
 - title: メンテナンス
-  pdf-filename: FAS2800の保守点検
+  pdf-filename: FAS2820の保守点検
   entries:
   - title: 概要
     url: "/fas2800/maintain-overview.html"
   - title: ブートメディア
-    pdf-filename: FAS2800ブートメディア
+    pdf-filename: FAS2820ブートメディア
     entries:
     - title: 概要
       url: "/fas2800/bootmedia-replace-overview.html"
@@ -36,10 +36,10 @@ entries:
     - title: 障害のある部品をネットアップに返却します
       url: "/fas2800/bootmedia-complete-rma.html"
   - title: キャッシングモジュール
-    pdf-filename: FAS2800キャッシュモジュール
+    pdf-filename: FAS2820キャッシュモジュール
     url: "/fas2800/caching-module-replace.html"
   - title: シャーシ
-    pdf-filename: FAS2800シャーシ
+    pdf-filename: FAS2820シャーシ
     entries:
     - title: 概要
       url: "/fas2800/chassis-replace-overview.html"
@@ -50,7 +50,7 @@ entries:
     - title: 構成をリストアする
       url: "/fas2800/chassis-replace-complete-system-restore-rma.html"
   - title: コントローラ
-    pdf-filename: FAS2800コントローラ
+    pdf-filename: FAS2820コントローラ
     entries:
     - title: 概要
       url: "/fas2800/controller-replace-overview.html"
@@ -65,20 +65,20 @@ entries:
     - title: システムのリストアを完了
       url: "/fas2800/controller-replace-restore-system-rma.html"
   - title: DIMM
-    pdf-filename: FAS2800のDIMM
+    pdf-filename: FAS2820 DIMM
     url: "/fas2800/dimm-replace.html"
   - title: ドライブ
-    pdf-filename: FAS2800ドライブ
+    pdf-filename: FAS2820ドライブ
     url: "/fas2800/drive-replace.html"
   - title: NVMEM バッテリ
-    pdf-filename: FAS2800 NVMEMバッテリ
+    pdf-filename: FAS2820 NVMEMバッテリ
     url: "/fas2800/nvmem-nvram-battery-replace.html"
   - title: メザニンカード
-    pdf-filename: FAS2800メザニンカード
+    pdf-filename: FAS2820メザニンカード
     url: "/fas2800/pci-cards-and-risers-replace.html"
   - title: 電源装置
-    pdf-filename: FAS2800の電源装置
+    pdf-filename: FAS2820の電源装置
     url: "/fas2800/power-supply-swap-out.html"
   - title: リアルタイムクロックバッテリ
-    pdf-filename: FAS2800リアルタイムクロックバッテリ
+    pdf-filename: FAS2820リアルタイムクロックバッテリ
     url: "/fas2800/rtc-battery-replace.html"

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2800, boot, recovery, image, restore, file, system, environmental, varible 
 summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
-= リカバリイメージをブートします（FAS2800）
+= リカバリイメージのブート- FAS2820
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

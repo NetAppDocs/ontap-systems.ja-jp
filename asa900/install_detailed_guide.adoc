@@ -280,11 +280,13 @@ image:../media/oie_cable_sfp_gbe_copper.png["GbE銅線SFP"]
 
 
  a| 
-image:../media/icon_square_5_grey.png["吹き出しアイコン5"]
+image::../media/icon_square_5_grey.png[吹き出しアイコン5]
  a| 
 ** ケーブルをケーブルマネジメントアームにストラップで固定します（図はなし）。
 ** 電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。PSU 1と3はA側のすべてのコンポーネントに電力を供給し、PSU 2とPSU 4はB側のすべてのコンポーネントに電力を供給します。
 
+
+image:../media/drw_a900fas9500_power_icon_IEOPS-1142.svg["電源接続"]
 
 |===
 

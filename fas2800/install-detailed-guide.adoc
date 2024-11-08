@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2800, detailed, guide, prepare, install, hardware, cable, controllers, node, switchless, cluster, network, configuration, system, storage system, setup, discovery 
 summary: この手順では、一般的なNetAppストレージシステムをインストールするための詳細なステップバイステップの手順を説明します。 
 ---
-= 詳細な手順- FAS2800
+= 詳細な手順- FAS2820
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -436,7 +436,7 @@ image::../media/oie_cable_pull_tab_down.png[プルタブ方向]
 アニメーションやステップバイステップの手順に従って、コントローラとドライブシェルフをケーブル接続します。
 
 
-IMPORTANT: FAS2800ではポート0b2を使用しないでください。このSASポートはONTAPでは使用されず、常に無効になっています。詳細については、を参照してください link:../sas3/install-new-system.html["新しいストレージシステムにシェルフを設置します"^] 。
+IMPORTANT: FAS2820ではポート0b2を使用しないでください。このSASポートはONTAPでは使用されず、常に無効になっています。詳細については、を参照してください link:../sas3/install-new-system.html["新しいストレージシステムにシェルフを設置します"^] 。
 
 .アニメーション-ドライブシェルフのケーブル配線
 video::b2a7549d-8141-47dc-9e20-afe8016f4386[panopto]

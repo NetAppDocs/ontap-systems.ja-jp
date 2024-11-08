@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2800, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
 summary: キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、アグリゲートをスイッチバックし、障害が発生したパーツをNetAppに返却する必要があります。 
 ---
-= 構成をリストアして確認- FAS2800
+= 構成のリストアと確認- FAS2820
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2800, shut down the impaired controller 
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
-= 障害のあるコントローラFAS2800をシャットダウンします
+= 障害のあるコントローラをシャットダウン- FAS2820
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

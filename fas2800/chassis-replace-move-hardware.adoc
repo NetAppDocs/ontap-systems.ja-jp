@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2800, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
 summary: 電源装置、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから交換用シャーシに移動し、障害のあるシャーシを装置ラックまたはシステムキャビネットから障害のあるシャーシと同じモデルの交換用シャーシと交換します。 
 ---
-= ハードウェアの移動と交換- FAS2800
+= ハードウェアの移動と交換- FAS2820
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

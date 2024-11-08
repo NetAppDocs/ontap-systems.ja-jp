@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2800, shutdown, checks, onboard, encryption, keys, impaired controller, disable, automatic, feedback 
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
-= 暗号化キーのサポートとステータスの確認- FAS2800
+= 暗号化キーのサポートとステータスの確認- FAS2820
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

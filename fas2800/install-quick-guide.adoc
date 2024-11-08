@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2800, quick, guide, graphic, instructions, install, rack, cable 
 summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。 
 ---
-= クイックガイド- FAS2800
+= クイックガイド- FAS2820
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,4 +15,4 @@ summary: このガイドでは、システムの初期起動時にラックや�
 
 設置およびセットアップ手順 _PDF ポスター：
 
-link:../media/PDF/Jan_2024_Rev4_FAS2800_ISI_IEOPS-1479.pdf["FAS2800システムの設置およびセットアップ手順"]
+link:../media/PDF/Jan_2024_Rev4_FAS2800_ISI_IEOPS-1479.pdf["FAS2820システムの設置およびセットアップ手順"]

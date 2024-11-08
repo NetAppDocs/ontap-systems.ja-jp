@@ -6,7 +6,7 @@ entries:
 - title: メンテナンスの概要
   url: "/asa-r2-70-90/maintain-overview.html"
 - title: ブートメディア-自動リカバリ
-  pdf-filename: ASA A70およびASA A90のブートメディア
+  pdf-filename: ASA A70およびASA A90のブートメディアの自動化
   entries:
   - title: ブートメディアの概要
     url: "/asa-r2-70-90/bootmedia-overview-bmr.html"
@@ -23,6 +23,7 @@ entries:
   - title: 障害のある部品をネットアップに返却します
     url: "/asa-r2-70-90/bootmedia-complete-rma-bmr.html"
 - title: ブートメディア-手動リカバリ
+  pdf-filename: ASA A70およびASA A90ブートメディアマニュアル
   entries:
   - title: ブートメディアの概要
     url: "/asa-r2-70-90/bootmedia-overview.html"
@@ -68,7 +69,7 @@ entries:
     url: "/asa-r2-70-90/controller-replace-move-hardware.html"
   - title: システム設定を復元します
     url: "/asa-r2-70-90/controller-replace-system-config-restore-and-verify.html"
-  - title: システムにケーブルを再接続
+  - title: コントローラをギブバック
     url: "/asa-r2-70-90/controller-replace-recable-reassign-disks.html"
   - title: コントローラ交換後の処理
     url: "/asa-r2-70-90/controller-replace-restore-system-rma.html"
@@ -83,7 +84,7 @@ entries:
 - title: NVバッテリ
   url: "/asa-r2-70-90/nvdimm-battery-replace.html"
 - title: I/O モジュール
-  pdf-filename: ASA A70およびASA A90 I/Oモジュール
+  pdf-filename: ASA A70およびASA A90 IOモジュール
   entries:
   - title: I/Oモジュールの概要
     url: "/asa-r2-70-90/io-module-overview.html"

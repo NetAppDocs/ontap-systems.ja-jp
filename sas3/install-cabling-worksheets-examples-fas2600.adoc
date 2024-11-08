@@ -29,15 +29,15 @@ image::../media/drw_fas2600_cable_color_key.png[オンボードストレージ�
 
 
 
-== 外付けシェルフを使用しないマルチパスHA構成のFAS2800プラットフォーム
+== 外付けシェルフを使用しないマルチパスHA構成のFAS2820プラットフォーム
 
 次の例は、マルチパスHA接続を実現するためにケーブル配線が不要であることを示しています。
 
-image::../media/drw_fas2800_noshelf_mpha_IEOPS-954.svg[FAS2800マルチパスHA（外付けシェルフなし）]
+image::../media/drw_fas2800_noshelf_mpha_IEOPS-954.svg[FAS2820マルチパスHA（外付けシェルフなし）]
 
 
 
-== FAS2800プラットフォーム（外付けシェルフを使用しないトライパスHA構成
+== FAS2820プラットフォーム（外付けシェルフを使用しないトライパスHA構成
 
 次のケーブル接続例は、トライパス接続を実現するために2台のコントローラ間で必要なケーブル接続を示しています。
 
@@ -45,13 +45,13 @@ image::../media/drw_fas2800_noshelf_tpha_IEOPS-955.svg[外付けシェルフを�
 
 
 
-== 1台のマルチシェルフスタックを使用するトライパスHA構成のFAS2800プラットフォーム
+== 1台のマルチシェルフスタックを使用するトライパスHA構成のFAS2820プラットフォーム
 
 次のワークシートとケーブル接続例では、ポートペア0a / 0b1を使用しています。
 
-image::../media/drw_fas2800_worksheet_IEOPS-948.svg[スタック1のポートペアを示すFAS2800トライパスHAケーブル接続ワークシート]
+image::../media/drw_fas2800_worksheet_IEOPS-948.svg[スタック1のポートペアを示すFAS2820トライパスHAケーブル接続ワークシート]
 
-image::../media/drw_fas2800_withshelves_tpha_IEOPS-949.svg[FAS2800トライパスHAの1つのスタックへのケーブル接続例]
+image::../media/drw_fas2800_withshelves_tpha_IEOPS-949.svg[FAS2820トライパスHAの1つのスタックへのケーブル接続例]
 
 
 
@@ -60,7 +60,7 @@ image::../media/drw_fas2800_withshelves_tpha_IEOPS-949.svg[FAS2800トライパ�
 次のワークシートとケーブル接続の例では、ポートペア 0a / 0b を使用しています。
 
 
-NOTE: このセクションは、FAS2800またはFAS25XXシステムには適用されません。
+NOTE: このセクションは、FAS2820またはFAS25XXシステムには適用されません。
 
 image::../media/drw_fas2600_mpha_worksheet_IEOPS-1255.svg[内蔵ストレージと1つのスタックを搭載したプラットフォームのマルチパスHAケーブル接続ワークシート]
 

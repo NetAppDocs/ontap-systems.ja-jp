@@ -57,8 +57,3 @@ NOTE: StrictSyncモードで動作するSnapMirror同期を使用するクラス
 {y|n}:_`
 . 各コントローラが停止するまで待ち、LOADERプロンプトを表示します。
 
-
-.次の手順
-* システムがFabricPoolクラウド階層として使用されるNetApp StorageGRIDまたはONTAP S3の場合は、このシャットダウン手順の実行後にを参照してください https://kb.netapp.com/onprem/ontap/hardware/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage#["ストレージシステムの『解決ガイド』を正常にシャットダウンし、電源を投入します"]。
-* SSDを使用している場合は、このシャットダウン手順の実行後にを参照してください https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU490["SU490：（影響：重大）SSDのベストプラクティス：電源がオフになってから2カ月以上が経過すると、ドライブ障害やデータ損失のリスクを回避できます"]。
-
