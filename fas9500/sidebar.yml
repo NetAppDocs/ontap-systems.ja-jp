@@ -72,10 +72,10 @@ entries:
   - title: I/O モジュール
     pdf-filename: FAS9500 I/Oモジュール
     entries:
-    - title: 交換してください
-      url: "/fas9500/pci_cards_and_risers_replace.html"
-    - title: 追加（ Add ）
+    - title: I/O モジュールを追加します
       url: "/fas9500/add_io_module.html"
+    - title: I/Oモジュールの交換
+      url: "/fas9500/pci_cards_and_risers_replace.html"
   - title: LED USB
     url: "/fas9500/led_module_replace.html"
   - title: NVRAM

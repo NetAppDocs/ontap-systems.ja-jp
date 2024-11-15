@@ -177,22 +177,13 @@ I/O モジュールが取り付けられていたスロットを記録してお�
 
 I/O モジュールを交換したら、コントローラモジュールをリブートする必要があります。
 
-
-NOTE: 新しいI/Oモジュールが障害の発生したモジュールと同じモデルでない場合は、最初にBMCをリブートする必要があります。
-
 .手順
-. 交換用モジュールのモデルが古いモジュールと同じでない場合は、BMCをリブートします。
-+
-.. LOADERプロンプトで、advanced権限モードに切り替えます。_set privilege advanced_
-.. BMCをリブートします。_sp reboot_
-
-
-. LOADER プロンプトで、ノードをリブートします： bye _
+. LOADERプロンプトからノードをリブートします。bye
 +
 これにより、I/Oカードおよびその他のコンポーネントが再初期化され、ノードがリブートされます。
 
-. ノードを通常動作に戻します。_storage failover giveback -ofnode impaired_node_name_
-. 自動ギブバックが無効になっていた場合は、再度有効にします。_storage failover modify -node local -auto-giveback true_
+. ノードを通常動作に戻します。 storage failover giveback -ofnode impaired_node_name
+. 自動ギブバックを無効にした場合は、再度有効にします。「 storage failover modify -node local-auto-giveback true 」
 
 
 

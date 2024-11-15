@@ -30,7 +30,7 @@ entries:
     - title: ブートメディアを交換します
       url: "/a250/bootmedia-replace.html"
     - title: ブートイメージを起動します
-      url: "/a250/bootmedia-recovery-image-boot-non-2n-mcc.html"
+      url: "/a250/bootmedia-recovery-image-boot.html"
     - title: アンコウカノ
       url: "/a250/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します

@@ -248,20 +248,13 @@ I/O モジュールが取り付けられていたスロットを記録してお�
 . I/Oモジュールをケーブル接続します。
 . 取り外しと取り付けの手順を繰り返して、コントローラの他のモジュールを交換します。
 . ケーブルマネジメントトレイを上に回転させて閉じます。
-. LOADERプロンプトからコントローラをリブートします。_bye_
+. Loaderプロンプトからコントローラをリブートします。 `bye`
 +
-.. コントローラのBMCバージョンを確認します。_system service-processor show_
-.. 必要に応じてBMCファームウェアを更新します。_system service-processor image update_
-.. ノードをリブートします。_bye_
-+
-
-NOTE: これにより、PCIeカードおよびその他のコンポーネントが再初期化され、ノードがリブートされます。
+これにより、PCIeカードおよびその他のコンポーネントが再初期化され、ノードがリブートされます。
 
 +
 
 NOTE: リブート中に問題 が発生した場合は、を参照してください https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308["BURT 1494308 - I/Oモジュールの交換中に環境のシャットダウンがトリガーされることがあります"]
-
-
 
 . パートナーコントローラからコントローラをギブバックします。_storage failover giveback -ofnode target_node_name_
 . 自動ギブバックを無効にした場合は有効にします。_storage failover modify -node local -auto-giveback true_

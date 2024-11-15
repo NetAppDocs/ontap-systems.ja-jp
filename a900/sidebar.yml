@@ -70,10 +70,10 @@ entries:
   - title: I/O モジュール
     pdf-filename: AFF A900 I/Oモジュール
     entries:
-    - title: I/Oモジュールの交換
-      url: "/a900/pci_cards_and_risers_replace.html"
     - title: I/O モジュールを追加します
       url: "/a900/add_io_module.html"
+    - title: I/Oモジュールの交換
+      url: "/a900/pci_cards_and_risers_replace.html"
   - title: LED USB
     url: "/a900/led_module_replace.html"
   - title: NVRAM

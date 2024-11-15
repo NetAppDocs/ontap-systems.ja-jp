@@ -30,7 +30,7 @@ entries:
     - title: ブートイメージを交換します
       url: "/fas8300/bootmedia-replace.html"
     - title: ブートイメージを起動します
-      url: "/fas8300/bootmedia-recovery-image-boot-options.html"
+      url: "/fas8300/bootmedia-recovery-image-boot.html"
     - title: MetroCluster の設定をスイッチバックします
       url: "/fas8300/bootmedia-2n-mcc-switchback.html"
     - title: アンコウカノ

@@ -1,10 +1,10 @@
 ---
-permalink: asa900/bootmedia_recovery_image.html 
+permalink: asa-c800/bootmedia-recovery-image-boot.html 
 sidebar: sidebar 
-keywords:  
-summary: 障害のあるコントローラをリカバリイメージからブートするための手順 は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。 
+keywords: asa c800, boot the recovery image 
+summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
-= リカバリイメージのブート- ASA A900
+= リカバリイメージのブート- ASA C800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

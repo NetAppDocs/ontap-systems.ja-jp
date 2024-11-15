@@ -30,7 +30,7 @@ entries:
     - title: ブートイメージを交換します
       url: "/fas2800/bootmedia-replace.html"
     - title: ブートイメージを起動します
-      url: "/fas2800/bootmedia-recovery-image-boot-non-2n-mcc.html"
+      url: "/fas2800/bootmedia-recovery-image-boot.html"
     - title: アンコウカノ
       url: "/fas2800/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します
