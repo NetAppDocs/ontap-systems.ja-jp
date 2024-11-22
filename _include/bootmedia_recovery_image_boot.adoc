@@ -27,7 +27,7 @@ ONTAP イメージを USB ドライブからブートし、ファイルシステ
 .. 障害のあるコントローラで、というメッセージが表示されたら `Was the restore backup procedure successful?`キーを押し `Y`ます。
 .. 障害のあるコントローラで、というメッセージが表示されたら `...would you like to use this restored copy now?`キーを押し `Y`ます。
 .. 障害コントローラのリブートを求めるプロンプトが表示されたらと入力し、を押し `Y`てブートメニューを表示します。 `ctrl-c`
-.. システムで暗号化が使用されていない場合は、_option 1 Normal Bootを選択します。使用されていない場合は、に進みます。 link:bootmedia-encryption-restore.html["キー管理ツールのリストア"]
+.. システムが暗号化を使用していない場合は、_option 1 Normal Bootを選択します。暗号化を使用していない場合は、に進みます。link:bootmedia-encryption-restore.html["アンコウカノ"]
 
 
 --
@@ -41,7 +41,7 @@ ONTAP イメージを USB ドライブからブートし、ファイルシステ
 .. 障害コントローラで、リストアした構成を使用するかどうかを確認するメッセージが表示されたらと入力し `Y`ます。
 .. 障害コントローラで、ノードのリブートを求めるプロンプトが表示されたらと入力し `Y`ます。
 .. 障害コントローラのリブートを求めるプロンプトが表示されたらと入力し、を押し `Y`てブートメニューを表示します。 `ctrl-c`
-.. システムで暗号化が使用されていない場合は、_option 1 Normal Bootを選択します。使用されていない場合は、に進みます。 link:bootmedia-encryption-restore.html["キー管理ツールのリストア"]
+.. システムが暗号化を使用していない場合は、_option 1 Normal Bootを選択します。暗号化を使用していない場合は、に進みます。link:bootmedia-encryption-restore.html["アンコウカノ"]
 
 
 --

@@ -4593,12 +4593,7 @@
   <block id="7ca78c6d47f27487175e23a00c576196" category="list-text">交換用 I/O モジュールが NIC の場合は、モジュールをデータスイッチにケーブル接続します。</block>
   <block id="3267c15e351fe1dd15721e79b072fedc" category="admonition">使用していない I/O スロットには、熱の問題を防ぐためにブランクが取り付けられていることを確認してください。</block>
   <block id="05648a23fc430a3dcc4fb4c1fbb040cd" category="list-text">ネットワーク用にスロット 3 または 7 を使用している場合は、「 storage port modify -node __ &lt;node name&gt; ____port_&lt;port name&gt; __ -mode network 」コマンドを使用して、ネットワーク用にスロットを変換します。</block>
-  <block id="cebb0168d5bfd94a91f0da51501ba6b8" category="list-text">実行する作業</block>
-  <block id="e818b574f8a890f6c21405d9164bb6ef" category="cell">置換 ...</block>
-  <block id="d6737fd4fc838900efec68220d9b62d5" category="paragraph">ポート数が同じ NIC I/O モジュール</block>
   <block id="c5cb03fb8ac84e8ed0867902373368c5" category="paragraph">LIF は、コントローラモジュールがシャットダウンすると自動的に移行されます。</block>
-  <block id="5b4da5fe899903c4fb7ea38cdcd59059" category="paragraph">ポート数が少ない NIC I/O モジュール</block>
-  <block id="f83c48dd124994c4062d124a835da954" category="paragraph">ストレージ I/O モジュールを搭載した NIC I/O モジュール</block>
   <block id="658f167c4900ed24167db8a2c8ec0dae" category="list-text">I/O モジュールをターゲットスロットに取り付けます。</block>
   <block id="af7e67afbae0d677789152f59d9ac82d" category="list-text">交換用 I/O モジュールが NIC の場合は、モジュールをデータスイッチにケーブル接続します。</block>
   <block id="65c5b494e6d3420e2beeee5028389f58" category="list-text">追加した場合：</block>
@@ -5172,7 +5167,6 @@
   <block id="a31ab93f41516026d249aceb633bccc3" category="doc">I/OモジュールFAS9500を追加します</block>
   <block id="4d3b1425bbd62943a546a9f98dc3b7ef" category="list-text">パートナーノードからノードをギブバックします。storage failover giveback -ofnode target_node_name</block>
   <block id="6f8193ca6bfb281db32afbcc9e285f79" category="inline-link">SASシェルフのホットアド</block>
-  <block id="c964f542415e7614484e4edf970ab7a8" category="paragraph">該当する LIF を別のホームポートに完全に再割り当てします。を参照してください<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block> System Manager を使用して LIF を完全に移動する方法については、を参照してください。</block>
   <block id="6d351dbc4a7187d4512a1c505c200687" category="paragraph">System Manager を使用して、 LIF を別のホームポートに完全に移行します。手順については、を参照してください<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block>。</block>
   <block id="f3ca7c7565b074fbf5e12ffb59930d2f" category="doc">障害の発生したパーツをNetApp-FAS9500に戻します</block>
   <block id="4ea7136415cb99f780a4177ea7ada9f4" category="doc">システム構成をリストアして確認します（FAS9500）</block>
@@ -5658,7 +5652,6 @@
   <block id="6f189db9f1b1dfc1be838de48c805168" category="video-title">アニメーション- NVMeドライブシェルフIDを設定します</block>
   <block id="1f583998630e94806bf5b9e059227dd4" category="paragraph"><block ref="1f583998630e94806bf5b9e059227dd4" category="inline-link-rx"></block></block>
   <block id="9b0500b65158795cfc5abb2becae4e80" category="paragraph">次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> ケーブルの場所を確認し、用途を特定します。</block>
-  <block id="741ade379895992f2a574e8e60de1571" category="section-title">手順2：I/Oモジュールを追加します</block>
   <block id="55f1569cdcfb82612fcf293f23db4f6f" category="list-text">を確認します<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> 新しい I/O モジュールが、お使いのシステムおよび実行中の ONTAP のバージョンと互換性があることを確認します。</block>
   <block id="6e4968851f4373ab9764e16cffb39389" category="list-text">複数のスロットが使用可能な場合は、でスロットの優先順位を確認します<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> また、お使いの I/O モジュールに最適なものを使用してください。</block>
   <block id="757216293ea1da04339a2c9b8eaa2641" category="admonition">tar.gzファイルは、FAT32でフォーマットされた4GB以上のパーティションに配置する必要があります。FAT32パーティションは2TBにもなる可能性がありますが、Windowsの組み込みツール(diskpartなど)は32GBを超えるFAT32パーティションをフォーマットできません。</block>
@@ -7969,14 +7962,10 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="61612a74be5170dd342eb619d607d9a0" category="paragraph">次のAutoSupportコマンドは、ケースの自動作成を2時間停止します。<block ref="6cf51b10a85b7bdc2a6698400ee841b7" prefix=" " category="inline-code"></block></block>
   <block id="ab859514fa976f71299cd0d5366c702d" category="paragraph">障害のあるコントローラを正常なコントローラから停止またはテイクオーバーします。<block ref="64d2ac6bbd59fb854ec2bed7b2dbe259" prefix=" " category="inline-code"></block></block>
   <block id="fd9366185c7040d2814e95fefcce2264" category="list-text">AutoSupportが有効になっている場合は、AutoSupportコマンドを呼び出してケースの自動作成を抑制します。<block ref="fbcb7868c4849064439910664677cb60" prefix=" " category="inline-code"></block></block>
-  <block id="9f496d341d66d79304a55547445c00a2" category="doc">オプション1：空きスロットのあるストレージシステムにI/Oモジュールを追加する</block>
-  <block id="c4b17ef982ae644ec1d2b995fa1534a8" category="paragraph">I/Oモジュールをストレージシステムに追加するには、空きスロットのあるストレージシステムに新しいI/Oモジュールを追加するか、フル装備のストレージシステムでI/Oモジュールを新しいI/Oモジュールに交換します。</block>
   <block id="656450ae55843844fdfca7b44cbc5678" category="list-text">を参照し<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> て、新しいI/Oモジュールがストレージシステムおよび実行中のONTAPのバージョンと互換性があることを確認します。</block>
-  <block id="9808a3e490e0cd81c2fab70cb489f958" category="paragraph">ストレージシステムの空のモジュールスロットにI/Oモジュールを追加できます。</block>
   <block id="78263f5226743bdd204519f0e9bd22d2" category="list-text">ケーブルマネジメントトレイの内側にあるボタンを引いて下に回転させ、ケーブルマネジメントトレイを下に回転させます。</block>
   <block id="72e0b58a2d456f6ab89ca8d83859264d" category="list-text">ターゲットスロットブランキングモジュールをキャリアから取り外します。</block>
   <block id="abca9f9a7ffb3d4afa15f947303b1c4c" category="admonition">次の図は、水平および垂直I/Oモジュールの取り外しを示しています。通常、取り外したI/Oモジュールは1つだけです。</block>
-  <block id="b0fe3ad00c115ca25f49fb3d48769b0b" category="image-alt">AFF A1K I/Oモジュールの取り外し</block>
   <block id="243dd5ebf726e6d6a9762938953c1a6a" category="cell">カムロックボタン</block>
   <block id="3939b3c4c6e868d0268fd9a75f3b3805" category="list-text">ターゲットスロットのブランクモジュールのカムラッチを押し下げます。</block>
   <block id="c053808d9acb931bed74754155a6e86f" category="list-text">カムラッチをできるだけ下に回転させます。水平モジュールの場合は、カムをモジュールからできるだけ離します。</block>
@@ -7984,24 +7973,13 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f47dbf934d7d51340a5c58741715b2d5" category="list-text">I/Oモジュールをエンクロージャスロット開口部の端に合わせます。</block>
   <block id="b3fe1b3e8557371fcb101f90a1a32fd0" category="list-text">モジュールをスロットにゆっくりと挿入してエンクロージャの奥まで押し込み、カムラッチを上に回転させてモジュールを所定の位置にロックします。</block>
   <block id="be9dc0332662b913cef88d5dcde78acd" category="list-text">I/Oモジュールをケーブル接続します。</block>
-  <block id="040f840d8fdf859359eb680be25e8992" category="paragraph">I/OモジュールがNICの場合は、モジュールをデータスイッチにケーブル接続します。</block>
-  <block id="3072040b83655039de255184380a9271" category="paragraph">I/Oモジュールがストレージモジュールの場合は、NS224シェルフにケーブル接続します。</block>
   <block id="9056e6b74b2e2b546abd76b6e7408f4d" category="list-text">ケーブルマネジメントトレイを上に回転させて閉じます。</block>
-  <block id="a0a7e707ad35c210d4582fab4069c223" category="list-text">パートナーコントローラからコントローラをギブバックします。_storage failover giveback -ofnode target_node_name_</block>
   <block id="6c91356d53993ce0d1f0c1af28c7a48b" category="list-text">AutoSupportが有効になっている場合は、コマンドを使用してケースの自動作成をリストアまたは抑制解除し<block ref="9ac424c0d7b432975df36a19daf50c9c" prefix=" " category="inline-code"></block> ます。</block>
-  <block id="026bf593d893e27d6f090dc74e403a75" category="section-title">オプション2：空きスロットのないストレージシステムにI/Oモジュールを追加する</block>
-  <block id="a06ddc697cce62226c19e353e0f2eeba" category="paragraph">フル装備のシステムのI/OスロットのI/Oモジュールを変更するには、既存のI/Oモジュールを取り外して別のI/Oモジュールに交換します。</block>
-  <block id="47ab52c1da07a0c00e2b876e54778a95" category="paragraph">選択したLIFを別のホームポートに完全に再割り当てします。System Managerを使用してLIFを完全に移動する方法については、を参照してください<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block> 。</block>
-  <block id="8f6ea8b644b16793208bc55e27bc7669" category="section-title">手順2：I/Oモジュールを交換する</block>
-  <block id="900056c17f40fb1a034e134a72eca912" category="image-alt">AFF A1K I/Oモジュールの取り外し</block>
   <block id="8181d3a6b1640b5868632cfe5589a05d" category="list-text">カムラッチボタンを押します。</block>
   <block id="0cfc07520b64c5be4e64fac899e6eaa9" category="list-text">I/Oモジュールをエンクロージャのターゲットスロットに取り付けます。</block>
   <block id="7b71c8c5341c95139930e1f1748956d7" category="list-text">モジュールをエンクロージャスロット開口部の端に合わせます。</block>
   <block id="0169e44348295d5766b174aa4c296a62" category="list-text">取り外しと取り付けの手順を繰り返して、コントローラの他のモジュールを交換します。</block>
   <block id="7c99497119e4bb81fd50dbd906dfde72" category="list-text">LOADERプロンプトからコントローラをリブートします。_bye_</block>
-  <block id="db89594b0a0cbb483395a2641220f1fe" category="list-text">自動ギブバックを無効にした場合は有効にします。_storage failover modify -node local -auto-giveback true_</block>
-  <block id="4e0b6dc04aaa383038bc23130a17cb25" category="cell">I/Oモジュールの状態</block>
-  <block id="09c2cf2531a14305542e6aff93e691c5" category="paragraph">NICモジュール</block>
   <block id="a286fff38dd07b679c8ce3d88b6f2962" category="inline-link-macro">障害コントローラをシャットダウン</block>
   <block id="4332aa8c798bac1ec6c0f4c83e0df305" category="list-text">タイプが表示されていることを確認し<block ref="c759882cd4e7fcd95f15b0df0ce7f51c" prefix=" " category="inline-code"></block><block ref="c6b9507c26062233f2341cb90db60eaa" prefix=" " category="inline-code"></block>、OKM情報を手動でバックアップします。</block>
   <block id="66e5f5f877412d7578e6bec4d8f933b5" category="list-text">障害コントローラで、次のメッセージが表示されたら_Y_を押します。<block ref="aa48693d0248bb57512e373cd7f7eebc" prefix=" " category="inline-code"></block></block>
@@ -8010,7 +7988,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e9636d3f8e24f08b43c5d1ed71e065ea" category="list-text">障害コントローラで、というメッセージが表示されたら、_y_を押します<block ref="396e369cf75815ba643925818d3ec37e" prefix=" " category="inline-code"></block>。</block>
   <block id="976af5aa217f6c1b1dbf16e0ed0a4bde" category="list-text">障害コントローラで、障害コントローラのリブートを求めるプロンプトが表示されたら_y_を押し、ブートメニューとして_Ctrl+C_を押します。</block>
   <block id="29d550bee6b8b18ca38f7642778d8dad" category="inline-link-macro">キー管理ツールのリストア</block>
-  <block id="88045ffbfc0d9ef09cd470c545082621" category="list-text">システムで暗号化が使用されていない場合は、_option 1 Normal Bootを選択します。使用されていない場合は、に進みます。 <block ref="f2abf47fd75193a34b6b143e08f5b248" category="inline-link-macro-rx"></block></block>
   <block id="55f7c3a98a49a2f2d96cb2d21b95d947" category="list-text">storage failover giveback -fromnode local_コマンドを使用してコントローラをギブバックします。</block>
   <block id="4c6b53c8ce9f5900a70a994f21a32c6b" category="list-text">自動ギブバックを無効にした場合は、_storage failover modify -node local-auto-giveback true_コマンドを使用してリストアします。</block>
   <block id="85ef34c14131c3f446c3d96330659ce7" category="list-text">AutoSupportが有効になっている場合は、_system node AutoSupport invoke -node *-type all -message MAINT=end_commandを使用して、ケースの自動作成をリストアまたは抑制解除します。</block>
@@ -8233,23 +8210,10 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="05dceffd3c31a9d53e9b23ec48d1bf77" category="paragraph">障害ノードが標準（ノードロック）ライセンスを必要とするONTAP機能を使用していた場合は、ノード用の新しいライセンスをインストールする必要があります。標準ライセンスを使用する機能では、クラスタ内の各ノードにその機能用のキーが必要です。</block>
   <block id="d498932449bd1680afbe5aad136fb7e3" category="paragraph">ライセンスキーをインストールするまでは、標準ライセンスを必要とする機能を引き続きノードで使用できます。ただし、該当する機能のライセンスがクラスタ内でそのノードにしかなかった場合、機能の設定を変更することはできません。また、ライセンスされていない機能をノードで使用するとライセンス契約に違反する可能性があるため、できるだけ早くノードのに交換用ライセンスキーをインストールする必要があります。</block>
   <block id="3e508eeaedfdae09fad57a764b5e2b73" category="section-title">手順1：障害のあるコントローラモジュールをシャットダウン</block>
-  <block id="6f13230d5681e1c88b50f5ecbce62637" category="paragraph">次のいずれかのオプションを使用して、障害のあるコントローラモジュールをシャットダウンまたはテイクオーバーします。</block>
   <block id="5d053cb0e109f37b3c9cfa31e957c2bc" category="list-text">コントローラモジュールをシャーシから約3インチ引き出して、電源を外します。</block>
-  <block id="d9d1de25706aa51c5367e4dafd60898e" category="list-text">ターゲットスロットブランクモジュールをシャーシから取り外します。</block>
-  <block id="192d3ce6854b267e65d46222f8f3a24f" category="image-alt">I/Oモジュールの取り外し</block>
-  <block id="75fa26086844dfcbf14f35086518217a" category="list-text">ブランキングモジュールを取り外す。</block>
-  <block id="2b6adb50592127273fdb4bb2b68918d5" category="list-text">I/Oモジュールをコントローラモジュールのスロット開口部の端に合わせます。</block>
-  <block id="97366bfb1dcb5b97156c347c8ad89d9a" category="list-text">モジュールをスロットの奥までそっとスライドさせ、カムラッチを上に回転させてモジュールを所定の位置にロックします。</block>
   <block id="6181ce929bc404494408989e6b8a9b52" category="paragraph">I/Oモジュールを交換するには、コントローラモジュール内でI/Oモジュールの場所を確認し、特定の手順を実行します。</block>
   <block id="8a9a8a0db84d9dd59b0f006930b47193" category="list-text">カムラッチボタンを押します。</block>
-  <block id="422e2aa4ec97de509f54db9d23618f37" category="list-text">カムレバーの開口部に指をかけ、モジュールをシャーシから引き出して、モジュールをシャーシから取り外します。</block>
-  <block id="ce8b63d25565a610d1f9564150f85914" category="list-text">モジュールをスロットにゆっくりとスライドしてシャーシの奥まで押し込み、カムラッチを上に回転させてモジュールを所定の位置にロックします。</block>
-  <block id="fb2068c184d4dbf1c0e520d9e9b173b2" category="list-text">取り外しと取り付けの手順を繰り返して、コントローラモジュール用の追加モジュールを交換します。</block>
   <block id="ed5714a7b9709284c56117bd6dc4e081" category="list-text">ケーブルマネジメントトレイを回転させてロック位置にします。</block>
-  <block id="268bccb6c35b538d967467b5d2935b49" category="list-text">LOADERプロンプトからコントローラモジュールをリブートします。_bye_</block>
-  <block id="253b24d74d0517388c6e5b078713c86a" category="inline-link">BURT 1494308 - I/Oモジュールの交換中に環境のシャットダウンがトリガーされることがあります</block>
-  <block id="fc5ee1a4ca46ff0160eeada84fe673fc" category="admonition">リブート中に問題が発生した場合は、を参照してください。<block ref="5f4b19e33781d4df6c59a005be26e607" category="inline-link-rx"></block></block>
-  <block id="cfedf0b233356261eb909e7add24bded" category="list-text">コントローラモジュールをパートナーコントローラモジュールからギブバックします。storage failover giveback -ofnode target_node_name_</block>
   <block id="43d656a7b2fb92dbbe5e13b8f00a00b8" category="list-text">システム管理カムボタンを押します。カムレバーがシャーシから離れます。</block>
   <block id="f0d27e50eb41ec006d18a96b5254063e" category="list-text">カムレバーを完全に下に回転させ、システム管理モジュールをコントローラモジュールから取り外します。</block>
   <block id="54a53a09772d42f23357a9952d2d46a1" category="section-title">手順 2 ：ブートイメージをブートメディアに転送します</block>
@@ -8848,7 +8812,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f3585daa539c5917b4fedd0eb7efb3f2" category="sidebar">AFF システム</block>
   <block id="6476573ba5b973ad8ea01c57f5b30267" category="sidebar">ASAシステム</block>
   <block id="9aaba65702056e024efc0836758c1538" category="sidebar">ホットアドの完了</block>
-  <block id="b1cd69e899e8ab2e8b0c559899a3f2d7" category="admonition">次の図は、水平および垂直I/Oモジュールの取り外しを示しています。通常、取り外したI/Oモジュールは1つだけです。</block>
   <block id="3e6277588162255770fd3384bad09d6d" category="list-text">コントローラのLOADERプロンプトからコントローラをブートし、システムIDが一致しないためにシステムIDを上書きするかどうかを尋ねられたら「_y_」と入力します。</block>
   <block id="9daabece8db7521a7882f63ebd76a891" category="image-alt">リリースボタンが上にあるドライブの取り外し</block>
   <block id="e0bc24820711c466532ba2cb67ababd9" category="image-alt">リリースボタンが中央にあるドライブの取り外し</block>
@@ -9088,7 +9051,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="0e6eb93881093798ffaf4eef324aae16" category="list-text">の説明に従って、NS224シェルフを設置してケーブル接続し <block ref="4dfda7c2f93914990922f65bd50f90b3" category="inline-link-macro-rx"></block>ます。</block>
   <block id="f399facc82d214513205adcdfed1e55f" category="image-alt">ディスクドライブの取り付け</block>
   <block id="f20a0219f10b0070c92efe4269486629" category="list-text">ストレージI/Oモジュールを設置した場合は、NS224シェルフを設置してケーブル接続します（を参照）<block ref="4dfda7c2f93914990922f65bd50f90b3" category="inline-link-macro-rx"></block>。</block>
-  <block id="86e8e2badf42560bb0b1ed3bac3933fa" category="paragraph">の説明に従って、NS224シェルフを設置してケーブル接続し <block ref="4dfda7c2f93914990922f65bd50f90b3" category="inline-link-macro-rx"></block>ます。</block>
   <block id="b9c98500ab9d006e0d9fd3d1c95f7904" category="paragraph">ケーブル接続の詳細については、を参照してください<block ref="b8ff88c1a2e9444f28ec1504689e0040" category="inline-link-macro-rx"></block>。</block>
   <block id="ef83cb60cd5ea6118e6d106efa30f927" category="image-alt">吊り上げ重量に関する注意事項</block>
   <block id="f3badb2cde47b97db55936f633e8bbf1" category="image-alt">2ノードスイッチレスクラスタの複合ケーブル接続</block>
@@ -9833,7 +9795,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="c285ffddf1786cd1a14a26bcf9b74c7d" category="paragraph"><block ref="061047859ec1e213bd771fe5350bda2c" prefix="" category="inline-code"></block></block>
   <block id="811ae15d713f8c846d0516e053f895b2" category="list-text">Loaderでローカルクラスタポートが設定され、パートナーノードから実行されるため、ブートメディアのリカバリプロセスを監視し<block ref="83a4445bcfef2bd179eaffaabe3b3c20" prefix=" " category="inline-code"></block>ます。</block>
   <block id="8f616ca67798afd132662e15fc4caa28" category="paragraph">ネットブートの実行中は<block ref="f6715e6f2a651bfc51d27566b1be5385" prefix=" " category="inline-code"></block>、メッセージが表示されます。</block>
-  <block id="ab8b7433e2ad2aa82ba07b42b4cd465d" category="list-text">暗号化方式に応じて、シングルノード構成に一致するオプションを選択します。</block>
   <block id="39cb6e7651585d511fc148af8198837f" category="open-title">暗号化なし</block>
   <block id="aada4d2dac8a2a5bd04bf211104ff2c5" category="paragraph">暗号化が検出されなかった場合は、キー管理を必要とせずにブートメディアのリカバリプロセスが続行されます。</block>
   <block id="69c50e084d31ca90079f6b8b4409607b" category="paragraph">パートナーノードからバックアップ設定、envファイル、mdb、およびrdbがリストアされる間、リカバリプロセスを引き続き監視します。</block>
@@ -10190,7 +10151,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="13e7cf07309f0d95eee5aa49b6842dc0" category="doc">暗号化キーのサポートとステータスの確認- FAS9500</block>
   <block id="e4d9374bc79ce9095fb021e03551599f" category="doc">リストア暗号化- FAS9500</block>
   <block id="bd5c047c4a41e95a8a9424888875e56a" category="list-text">I/Oモジュールを指定のデバイスにケーブル接続します。</block>
-  <block id="2d8241a8fe54414b6494b29d26d8b251" category="list-text">正常なノードから、コマンドを使用して自動ギブバックを無効にした場合はリストアします<block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix=" " category="inline-code"></block>。</block>
   <block id="9d462bd05672844aeab0d3d5d323d66a" category="list-text">コントローラを再度取り付け、コントローラモジュールの電源を再接続します。</block>
   <block id="4d872659b015ad414d5e68440a7ddfd6" category="paragraph">コントローラが装着され、電源が回復するとすぐにブートが開始されます。</block>
   <block id="6f3fa8086df2fa20b3e903512f693396" category="list-text">障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。</block>
@@ -10370,9 +10330,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="09109aaca603d8ac1da46aa588c46f63" category="paragraph">NICからNIC（異なるポート数）</block>
   <block id="4e7b2ae169cb37276347e7c88d211db4" category="paragraph">選択したLIFを別のホームポートに完全に再割り当てします。詳細については、を参照してください<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block> 。</block>
   <block id="0c3f64052572f9d13d9b078656a055e4" category="paragraph">NICからストレージI/Oモジュール</block>
-  <block id="deaf42dafc1e4522c0ccf86ad58f237e" category="list-text">パートナーコントローラからコントローラをギブバックします。'storage failover giveback -ofnode target_node_name'</block>
-  <block id="c1d0761e549ef1ce873a404f8d41a2d5" category="list-text">Loaderプロンプトからコントローラをリブートします。<block ref="bfa99df33b137bc8fb5f5407d7e58da8" prefix=" " category="inline-code"></block></block>
-  <block id="5d831aef00c06eb087aebfb790f041b7" category="section-title">手順2：新しいI/Oモジュールを追加する</block>
   <block id="68c06f8f4688078ddfe1ceedef798cae" category="list-text">パートナーコントローラからコントローラをギブバックします。</block>
   <block id="523f5a38bba8d64b2af1cdee174a06cc" category="paragraph"><block ref="49c908925c3b8a3554612823f81c8964" prefix="" category="inline-code"></block></block>
   <block id="b98036ad0a9b610670da83fe762dadb5" category="list-text">自動ギブバックを無効にした場合は、正常なノードから次のコマンドを使用してリストアします。</block>
@@ -10392,4 +10349,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="cac74c301a508cf350f8f41a7de866a0" category="paragraph">空きスロットがある場合、またはすべてのスロットに空きがある場合は、ASA A1KストレージシステムにI/Oモジュールを追加できます。</block>
   <block id="94aa992895c11cf963b2b749b84aa267" category="paragraph">空きスロットがある場合、またはすべてのスロットに空きがある場合は、FAS70およびFAS90ストレージ・システムにI/Oモジュールを追加できます。</block>
   <block id="bc049e4428d592b69605104cc85d56bc" category="section-title">手順2：新しいI/Oモジュールを追加する</block>
+  <block id="a6448c631c301c525a61c500fdf8e46a" category="list-text">暗号化方法に応じて、システム構成に一致するオプションを選択します。</block>
+  <block id="92ba658b9a66d0825f0f084b7da309b7" category="list-text">システムが暗号化を使用していない場合は、_option 1 Normal Bootを選択します。暗号化を使用していない場合は、に進みます。<block ref="d767082d20397ebb99e586749eda3a08" category="inline-link-macro-rx"></block></block>
 </blocks>
