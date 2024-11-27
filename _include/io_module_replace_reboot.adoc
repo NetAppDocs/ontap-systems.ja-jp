@@ -1,0 +1,28 @@
+= 
+:allow-uri-read: 
+
+
+I/O モジュールを交換したら、コントローラモジュールをリブートする必要があります。
+
+.手順
+. Loaderプロンプトで、ノードをリブートします。
++
+`bye`
+
++
+
+NOTE: これにより、I/Oモジュールとその他のコンポーネントが再初期化され、ノードがリブートされます。
+
+. パートナーコントローラからコントローラをギブバックします。
++
+「 storage failover giveback -ofnode _impaired_node_name _
+
+. 正常なノードから、自動ギブバックを無効にした場合はリストアします。
++
+`storage failover modify -node local -auto-giveback _true_`
+
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアします。
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+
