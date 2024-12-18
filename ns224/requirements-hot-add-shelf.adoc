@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, requirement 
 summary: NS224ドライブシェルフをホットアドするには、HAペアが一定の要件を満たしている必要があります。 
 ---
-= ホットアドNS224シェルフの要件とベストプラクティス
+= NS224シェルフのホットアドの要件とベストプラクティス
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -47,7 +47,7 @@ DQP の最新バージョンをインストールしておくと、新しく認�
 
 * *ベストプラクティス：*シェルフのホットアドの前後に実行することを推奨 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^] します。
 +
-シェルフをホットアドする前に Active IQ Config Advisor を実行すると、既存のシェルフイーサネット（ ENET ）接続の Snapshot が作成され、 NVMe シェルフモジュール（ NSM ）ファームウェアのバージョンが確認されます。また、 HA ペアですでに使用されているシェルフ ID を確認できます。
+シェルフをホットアドする前にActive IQ Config Advisorを実行すると、既存のシェルフイーサネット（ENET）接続のSnapshotが作成され、NVMeシェルフモジュール（NSM）ファームウェアのバージョンが検証され、HAペアですでに使用されているシェルフIDを確認できます。
 
 +
 シェルフをホットアドしたあとに Active IQ Config Advisor を実行すると、シェルフが正しくケーブル接続されており、 HA ペア内でシェルフ ID が一意であることを確認できます。

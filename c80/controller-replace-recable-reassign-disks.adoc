@@ -1,0 +1,122 @@
+---
+permalink: c80/controller-replace-recable-reassign-disks.html 
+sidebar: sidebar 
+keywords: c80, how to recable the system, teboot the system 
+summary: ストレージにケーブルを再接続してコントローラをリブートする必要があります。 
+---
+= コントローラのケーブル接続とギブバック- AFF C80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージとネットワークの接続を確認し、コントローラをギブバックします。
+
+
+
+== コントローラをギブバック
+
+暗号化をリセットし（有効な場合）、コントローラを通常動作に戻します。
+
+[role="tabbed-block"]
+====
+.暗号化なし
+--
+. Loaderプロンプトで、と入力し `boot_ontap`ます。
+. コンソールメッセージが停止したら、<enter>キーを押します。
++
+** _login_promptが表示されたら、このセクションの最後の次の手順に進みます。
+** 「_Waiting for giveback_」と表示された場合は、<enter>キーを押してパートナーノードにログインし、このセクションの最後の次の手順に進みます。
+
+
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
+. 自動ギブバックが無効になっていた場合は、再度有効にします。 `storage failover modify -node local -auto-giveback true`
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+--
+.オンボード暗号化（OKM）
+--
+. Loaderプロンプトで、と入力し `boot_ontap maint`ます。
+. LoaderプロンプトからONTAPメニューを起動し `boot_ontap menu`、オプション10を選択します。
+. OKMパスフレーズを入力します。このパスフレーズは、お客様またはにお問い合わせください https://support.netapp.com["ネットアップサポート"]。
++
+
+NOTE: パスフレーズの入力を2回求められます。
+
+. プロンプトが表示されたら、バックアップキーのデータを入力します。
+. ブートメニューで、「option for normal boot」と入力します `1`。
+. 「_Waiting for giveback_」と表示されたら、<enter>キーを押します。
+. パートナーノードにコンソールケーブルを接続し、としてログインします `admin`。
+. advancedモードに切り替えて、修復されたノードのコアダンプがすべて保存されたことを確認します。 `set -privilege advanced` `run local partner savecore`
+. 管理レバーに戻ります `set privilege admin`。
+. CFOアグリゲート（ルートアグリゲート）のみをギブバックします。 `storage failover giveback -fromnode local -only-cfo-aggregates true`
++
+** エラーが発生した場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
+
+
+. ギブバックレポートが完了してから5分待って、フェイルオーバーのステータスとギブバックのステータスを確認します（および `storage failover show-giveback`） `storage failover show`。
+. コンソールケーブルを交換用ノードに接続し、 `security key-manager onboard sync`
++
+
+NOTE: クラスタのOKMのクラスタ全体のパスフレーズを入力するように求められます。
+
+. 次のコマンドを使用して、キーのステータスを確認します。 `security key-manager key query -key-type svm-KEK`
++
+_restored_columnに_true_以外の値が表示されている場合は、に連絡してください https://support.netapp.com["ネットアップサポート"]。
+
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
+. 自動ギブバックが無効になっていた場合は、再度有効にします。 `storage failover modify -node local -auto-giveback true`
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+--
+.外部キー管理ツール（EKM）
+--
+. ルートボリュームが外部キーマネージャで暗号化されており、コンソールケーブルが交換用ノードに接続されている場合は、と入力 `boot_ontap menu`してオプションを選択します `11`。
+.  `n`次の質問に答えて `y`ください。
++
+/cfcard/kmip/certs/client.crtファイルのコピーはありますか？｛y/n｝
+
++
+/cfcard/kmip/certs/client.keyファイルのコピーはありますか？｛y/n｝
+
++
+/cfcard/kmip/certs/CA.pemファイルのコピーはありますか？｛y/n｝
+
++
+または
+
++
+/cfcard/kmip/servers.cfgファイルのコピーがありますか？｛y/n｝
+
++
+KMIPサーバのアドレスがわかりますか？｛y/n｝
+
++
+KMIPポートを知っていますか？｛y/n｝
+
++
+
+NOTE: 問題がある場合はにお問い合わせください https://support.netapp.com["ネットアップサポート"]。
+
+. 次の情報を入力します。
++
+** クライアント証明書（client.crt）ファイルの内容。
+** クライアントキー（client.key）ファイルの内容。
+** KMIPサーバCA（CA.pem）ファイルの内容。
+** KMIPサーバのIPアドレス。
+** KMIPサーバのポート。
+
+
+. システムが処理されると、ブートメニューが表示されます。通常ブートの場合は「1」を選択します。
+. テイクオーバーのステータスを確認します。 `storage failover show`
+. advancedモードに切り替えて、修復されたノードのコアダンプがすべて保存されたことを確認します。 `set -privilege advanced` `run local partner savecore`
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
+. 自動ギブバックが無効になっていた場合は、再度有効にします。 `storage failover modify -node local -auto-giveback true`
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+--
+====

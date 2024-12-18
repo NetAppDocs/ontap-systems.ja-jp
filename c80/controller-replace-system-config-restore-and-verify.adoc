@@ -1,0 +1,63 @@
+---
+permalink: c80/controller-replace-system-config-restore-and-verify.html 
+sidebar: sidebar 
+keywords: c80, restore and verify the system configuration, verify and set the ha state of the controller module 
+summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
+---
+= システム構成のリストアと確認- AFF C80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+交換用コントローラの下位システム構成を確認し、必要に応じてシステム設定を再設定します。
+
+
+
+== 手順1：HA構成を確認する
+
+コントローラモジュールの「 HA 」状態を確認し、必要に応じてシステム構成に合わせて状態を更新する必要があります。
+
+. メンテナンスモードでブートします。 `boot_ontap maint`
++
+.. 「_Continue with boot？_」と表示されたら、と入力します `y`。
++
+「_System ID mismatch_warning」というメッセージが表示された場合は、と入力します `y`。
+
+
+
+. 表示内容を入力し `sysconfig -v`てキャプチャします。
++
+
+NOTE: personality mismatch_customer supportと表示された場合
+
+.  `sysconfig -v`の出力で、アダプタカードの情報を交換用コントローラのカードおよび場所と比較します。
+. すべてのコンポーネントが同じ状態になっていることを確認し `HA`ます。 `ha-config show`
++
+HA 状態はすべてのコンポーネントで同じになっているはずです。
+
+. 表示されたコントローラモジュールのシステム状態がシステム構成と一致しない場合は、コントローラモジュールの HA 状態を「 ha-config modify controller ha-state 」に設定します
++
+hA-state には、次のいずれかの値を指定できます。
+
++
+** 「 HA 」
+** `mcc` （サポートされていません）
+** `mccip`（ASAシステムではサポートされません）
+** `non-ha` （サポートされていません）
+
+
+. 設定が変更されたことを確認します。「 ha-config show 」
+
+
+
+
+== 手順2：ディスクリストを確認する
+
+. アダプタのすべてのディスクへのパスがに表示されていることを確認します `storage show disk -p`。
++
+問題が発生した場合は、ケーブル接続を確認し、ケーブルを抜き差しします。
+
+. メンテナンスモードを終了します。 `halt`
+

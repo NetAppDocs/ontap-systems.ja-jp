@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: new, features, asa r2, aff, asa, fas, legacy, end-of-support 
-summary: ONTAPハードウェアシステムの新機能について説明します。 
+keywords: new, features, asa r2, aff, asa, fas 
+summary: ONTAPハードウェアシステムの新しいプラットフォームについて説明します。 
 ---
 = ONTAPハードウェアシステムの新機能
 :allow-uri-read: 
@@ -13,365 +13,46 @@ summary: ONTAPハードウェアシステムの新機能について説明しま
 [role="lead"]
 ONTAPハードウェアシステムの新機能について説明します。
 
-ONTAP 9リリースの既知の問題、制限事項、およびアップグレードに関する注意事項の詳細については、『 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 9 リリースノート"]。リリースノートにアクセスするには、NetAppアカウントでサインインするか、アカウントを作成する必要があります。
 
 
+== 2024年12月
 
-== プラットフォームのサポート
 
-[cols="2*"]
-|===
-| プラットフォーム | 最初から利用可能です 
 
+=== AFF A20、AFF A30、およびAFF A50
 
- a| 
-https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA r2システム"]
+新しいAFF A20、A30、A50ハードウェアシステムは、ハイパフォーマンスでインテリジェントな包括的なデータ管理機能をより多くのお客様やワークロードに拡張します。
 
-* ASA A1K
-* ASA A70
-* ASA A90
+このシステムは、MLベースのランサムウェアのリアルタイム検出、シームレスなクラウド統合、AI、VMware、データベース、分析などのミッションクリティカルなワークロードに対して卓越したパフォーマンスを提供し、ブロック、ファイル、オブジェクトストレージをサポートします。
 
- a| 
-ONTAP 9 .16.0
+link:https://www.netapp.com/data-storage/aff-a-series/["AFF Aシリーズシステムの詳細"]です。
 
 
 
- a| 
-https://www.netapp.com/data-storage/fas/["FAS70およびFAS90"]
- a| 
-ONTAP 9.15.1
+=== AFF C30、AFF C60、およびAFF C80
 
+新しいAFF C30、AFF C60、AFF C80ハードウェアシステムは、業界をリードする1.5PBのストレージ容量を2ラック環境で提供することで、企業がフラッシュのパフォーマンスと効率性を向上できるようにします。
 
+このソリューションは、60TBドライブによる卓越した密度、パフォーマンスの向上、I/Oの柔軟性の向上を実現します。
 
- a| 
-* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf["AFF A1K用"]
-* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf["AFF A70用"]
-* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf["AFF A90用"]
+link:https://www.netapp.com/data-storage/aff-c-series/["AFF Cシリーズシステムに関する詳細情報"]です。
 
- a| 
-ONTAP 9.15.1
 
 
+== 2024年9月
 
- a| 
-https://www.netapp.com/data-storage/all-flash-san-storage-array/["ASA C250"]
- a| 
-ONTAP 9.13.1P1
 
 
+=== ASA r2システム
 
- a| 
-https://www.netapp.com/data-storage/all-flash-san-storage-array/["ASA C400"]
- a| 
-ONTAP 9.13.1P1
+新しいASA R2ハードウェアシステム（ASA A1K、ASA A70、およびASA A90）は、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルなエクスペリエンスを実現します。
 
+link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA R2システムの詳細"]です。
 
 
- a| 
-https://www.netapp.com/data-storage/all-flash-san-storage-array/["ASA C800"]
- a| 
-ONTAP 9.13.1P1
 
+=== FAS70およびFAS90
 
+新しいFAS70およびFAS90ハードウェアシステムは、手頃な価格ながらハイパフォーマンスなバックアップストレージを提供し、ランサムウェア攻撃からリカバリするためのセキュアなサイバーヴォールトを実現します。
 
- a| 
-https://hwu.netapp.com/ProductSpecs/Index["FAS2820"]
- a| 
-ONTAP 9.13.1
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf["ASA A150"]
- a| 
-ONTAP 9.13.1
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf["ASA A250"]
- a| 
-ONTAP 9.13.1
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf["ASA A400"]
- a| 
-ONTAP 9.13.1
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf["ASA A900"]
- a| 
-ONTAP 9.13.1
-
-
-
- a| 
-* https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf["AFF C250"]
-* https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf["AFF C400"]
-* https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf["AFF C800"]
-
- a| 
-ONTAP 9.12.1P1
-
-ONTAP 9.13.1 GA以降のONTAPリリース
-
-[NOTE]
-====
-これらのプラットフォームは、ONTAP 9.13.1 RC1ではサポートされていません。
-
-====
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf["AFF A150"]
-
-[NOTE]
-====
-サポートされていないバージョンのONTAPでは、AFF A150ストレージシステムをインストールまたはブートしないでください。サポートされていないバージョンのONTAPを使用してシステムをインストールまたは起動しようとすると、ONTAPで許可されます（ONTAPは試行をブロックしません）。その結果、AFF A150ストレージ・システムがFAS2750ストレージ・システムとして起動します。
-
-==== a| 
-ONTAP 9.13.1以降のONTAPリリース
-
-ONTAP 9.12.1P1
-
-ONTAP 9.11.1P8
-
-ONTAP 9.10.1P12
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS9500"]
- a| 
-ONTAP 9.11.1
-
-ONTAP 9.10.1P3
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["AFF A900 の略"]
- a| 
-ONTAP 9.10.1
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["AFF A250/AFF ASA A250"]
- a| 
-ONTAP 9.8
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS500f"]
- a| 
-ONTAP 9.8
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["AFF ASA A800"]
- a| 
-ONTAP 9.8
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS8300"]
- a| 
-ONTAP 9.7
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS8700 の場合"]
- a| 
-ONTAP 9.7
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["AFF A400"]
- a| 
-ONTAP 9.7
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/17190-na-382.pdf["AFF ASA A220"]
- a| 
-ONTAP 9.7
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["AFF ASA A700"]
- a| 
-ONTAP 9.7
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7623-ds-3989.pdf["AFF C190"^]
- a| 
-ONTAP 9.6
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/17190-na-382.pdf["AFF A320"]
- a| 
-ONTAP 9.6
-
-|===
-
-
-== スイッチのサポート
-
-[cols="20,65,15"]
-|===
-| スイッチ | 説明 | 最初から利用可能です 
-
-
- a| 
-https://hwu.netapp.com/Switch/Index["NVIDIA IP SN2100スイッチ"]
- a| 
-NVIDIA IP SN2100ストレージスイッチは、A900 / FAS9500プラットフォームを使用するMetroCluster IP構成でサポートされます。
- a| 
-ONTAP 9.12.1
-
-
-
- a| 
-https://hwu.netapp.com/Switch/Index["NVIDIA IP SN2100スイッチ（X190006）"]
- a| 
-NVIDIA IP SN2100ストレージスイッチは、次のプラットフォームを使用するMetroCluster IP構成でサポートされます。
-
-* FAS500f / AFF A250
-* FAS8300 / AFF A400
-* FAS8700 の場合
-* FAS9000 / AFF A700
-* AFF A800
-
- a| 
-ONTAP 9.10.1P3
-
-
-
- a| 
-https://hwu.netapp.com/Switch/Index["36 ポート 100GbE Cisco スイッチ（ X190200 ）"]
- a| 
-MetroCluster IP 構成のサポートを含め、同じ Cisco Nexus 9336C-FX2 スイッチペアで共有インフラ（クラスタ、 HA 、およびスイッチ接続ストレージ）をサポートします。
- a| 
-ONTAP 9.9.1
-
-
-
- a| 
-https://hwu.netapp.com/Switch/Index["36 ポート 100GbE Cisco スイッチ（ X190200 および X190210 ）"]
- a| 
-Cisco Nexus 9336C-FX2 クラスタインターコネクトスイッチと、 AFF / FAS コントローラのストレージスイッチのサポート、およびフロントエンドのデータ接続。
- a| 
-ONTAP 9.8
-
-
-
- a| 
-https://hwu.netapp.com/Switch/Index["Broadcom BES-53248 スイッチ（ X190005 および X190005R ）"]
- a| 
-Broadcom BES-53248 クラスタインターコネクトスイッチは、 40 / 100GbE ポートを搭載した AFF / FAS コントローラに対応しています。
- a| 
-ONTAP 9.8
-
-
-
- a| 
-https://hwu.netapp.com/Switch/Index["36 ポート 100GbE Cisco スイッチ（ X190200 ）"] https://hwu.netapp.com/Switch/Index["32 ポート 100GbE Cisco スイッチ（ X190100 と X190100R ）"]
- a| 
-Cisco Nexus 100GbE スイッチを専用ストレージスイッチとして使用し、 NS224 NVMe ドライブシェルフを次のプラットフォームに接続できます。
-
-* AFF A800/AFF ASA A800
-* AFF A700 / AFF ASA A700
-* AFF A400 / AFF ASA A400 を選択します
-* AFF A320
-
- a| 
-ONTAP 9.8
-
-
-
- a| 
-https://hwu.netapp.com/Switch/Index["Broadcom BES-53248 スイッチ（ X190005 および X190005R ）"]
- a| 
-10 / 25GbE ポートを備えた AFF / FAS コントローラでの Broadcom BES-53248 クラスタインターコネクトスイッチのサポート。
- a| 
-ONTAP 9.5P8.
-
-|===
-
-
-== シェルフサポート
-
-[cols="2*"]
-|===
-| シェルフ | 最初から利用可能です 
-
-
- a| 
-NS224
- a| 
-ONTAP 9.6
-
-|===
-
-
-== ハードウェアの更新
-
-[cols="25h,~,~"]
-|===
-| 機能性 | 概要 と詳細情報の入手方法 | 最初から利用可能です 
-
-
- a| 
-マルチクラスタインターコネクトスイッチ
- a| 
-マルチクラスタ構成では、4x4および2x8ノード構成用の2つの新しいリファレンス構成ファイルによって、複数のクラスタで同じクラスタスイッチを共有できます。
- a| 
-ONTAP 9.14.1
-
-
-
- a| 
-NS224 ドライブシェルフのプラットフォームサポートが拡張されました
- a| 
-次のプラットフォームで NS224 ドライブシェルフがサポートされます。
-
-* AFF A800/AFF ASA A800
-* AFF A700 / AFF ASA A700
-* AFF A250/AFF ASA A250
-* FAS500f
-
- a| 
-ONTAP 9.8
-
-
-
- a| 
-6Gb SAS ストレージスタックへの 12Gb SAS シェルフのホットアド
- a| 
-SAS ストレージスタックでは、 6Gb から 12Gb への単一速度の移行がサポートされるようになりました。これにより、既存の 6Gb スタックと 12Gb シェルフを拡張することができます。
-
-https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-ds-mix-hotadd/home.html["IOM12 モジュールを搭載したシェルフを IOM6 モジュールを搭載したシェルフのスタックにホットアドします"]
- a| 
-ONTAP 9.7P4
-
-ONTAP 9.6P9.
-
-ONTAP 9.5P14
-
-|===
+link:https://www.netapp.com/data-storage/fas/["FASシステムに関する詳細情報"]です。

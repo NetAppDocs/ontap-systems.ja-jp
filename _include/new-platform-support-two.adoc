@@ -1,0 +1,188 @@
+= 
+:allow-uri-read: 
+
+
+[role="tabbed-block"]
+====
+.AFF システム
+--
+AFF AシリーズシステムとAFF Cシリーズシステムは、仮想環境に特化した堅牢なスケールアウトプラットフォームを提供します。スタンドアロンシステムとして導入することも、NetApp ONTAP構成でハイパフォーマンス階層として導入することもできます。link:https://www.netapp.com/data-storage/all-flash-san-storage-array["AFFシステムに関する詳細情報"]です。
+
+AFF AシリーズおよびAFF Cシリーズシステムは、次のONTAPリリースと互換性があります。
+
+ONTAP 9.16.1::
++
+--
+* AFF A20用
+* AFF A30用
+* AFF A50用
+* AFF C30用
+* AFF C60用
+* AFF C80用
+
+
+--
+ONTAP 9.15.1::
++
+--
+* AFF A1K用
+* AFF A70用
+* AFF A90用
+
+
+--
+ONTAP 9.12.1P1::
++
+--
+* AFF A150
+* AFF C250
+* AFF C400
+* AFF C800
+
+
+--
+ONTAP 9.10.1::
++
+--
+* AFF A900 の略
+
+
+--
+ONTAP 9.8::
++
+--
+* AFF A250
+
+
+--
+ONTAP 9.7::
++
+--
+* AFF A400
+* AFF A800
+
+
+--
+
+
+--
+.ASA r2システム
+--
+ASA R2システムは、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルな操作性を実現します。link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA R2システムの詳細"]です。
+
+ASA R2システムは、次のONTAPリリースと互換性があります。
+
+ONTAP 9 .16.0::
++
+--
+* ASA A1K
+* ASA A70
+* ASA A90
+
+
+--
+
+
+--
+.ASAシステム
+--
+ASA AシリーズおよびASA Cシリーズシステムは、シンプルで専用のSANエクスペリエンスを提供し、FCPまたはiSCSIプロトコルを使用して、エンタープライズのミッションクリティカルなデータベースやその他のSANワークロードに継続的なデータ可用性を提供します。link:https://www.netapp.com/data-storage/all-flash-san-storage-array["ASAシステムの詳細"]です。
+
+ASAシステムは、次のONTAPリリースと互換性があります。
+
+ONTAP 9.13.1P1::
++
+--
+* ASA C250
+* ASA C400
+* ASA C800
+
+
+--
+ONTAP 9.13.1::
++
+--
+* ASA A150
+* ASA A250
+* ASA A400
+* ASA A900
+
+
+--
+ONTAP 9.8::
++
+--
+* ASA AFF A250の略
+* ASA AFF A800の略
+
+
+--
+ONTAP 9.7::
++
+--
+* ASA AFF A400の略
+
+
+--
+
+
+--
+.FAS システム
+--
+FASシステムは、効率的でセキュアなセカンダリストレージを提供します。これは、階層化、バックアップ、ディザスタリカバリに最適な究極のソリューションです。link:https://www.netapp.com/data-storage/fas/["FASシステムに関する詳細情報"]です。
+
+FASシステムは、次のONTAPリリースと互換性があります。
+
+ONTAP 9.15.1::
++
+--
+* FAS70
+* FAS90
+
+
+--
+ONTAP 9.13.1::
++
+--
+* FAS2820
+
+
+--
+ONTAP 9.11.1::
++
+--
+* FAS9500
+
+
+--
+ONTAP 9.10.1P3::
++
+--
+* FAS9500
+
+
+--
+ONTAP 9.7::
++
+--
+* FAS2750
+* FAS8300
+* FAS8700 の場合
+
+
+--
+
+
+--
+.ドライブシェルフ
+--
+ドライブシェルフは、NetApp AFF、ASA、FASシステム向けに設計されており、デジタル変革に必要なパフォーマンス、耐障害性、柔軟性を提供します。
+
+ドライブシェルフは、次のONTAPリリース以降で使用できます。
+
+ONTAP 9.16.1:: NS224とNSM100Bモジュール
+ONTAP 9.6:: NSM100モジュールを搭載したNS224シェルフ
+
+
+--
+====

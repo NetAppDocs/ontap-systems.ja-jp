@@ -1,0 +1,35 @@
+---
+permalink: a20-30-50/controller-replace-restore-system-rma.html 
+sidebar: sidebar 
+keywords: aff a20, aff a30, aff a50, how to restore NetApp Storage Encryption, how to complete the replacement process 
+summary: システムを完全な状態にリストアするには、LIFを確認し、クラスタの健常性を確認して、障害が発生したパーツをNetAppに戻す必要があります。 
+---
+= コントローラ交換後の処理- AFF A20、AFF A30、AFF A50
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージシステムを完全な状態にリストアするには、LIFを確認し、クラスタの健常性を確認して、障害が発生したパーツをNetAppに戻す必要があります。
+
+
+
+== 手順1：LIFを確認してクラスタの健全性を確認する
+
+_replacement_nodeを使用可能な状態に戻す前に、LIFがホームポートにあることを確認し、クラスタの健全性を確認し、自動ギブバックをリセットする必要があります。
+
+.手順
+. 論理インターフェイスがホームサーバとポートに報告されていることを確認します。「 network interface show -is-home false 」
++
+いずれかのLIFがfalseと表示された場合は、ホームポートにリバートします。 `network interface revert -vserver * -lif *`
+
+. クラスタの健全性を確認します。詳細については、技術情報の記事を参照して https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["ONTAP でスクリプトを使用してクラスタの健全性チェックを実行する方法"^] ください。
+. 自動ギブバックを無効にした場合は、再度有効にします。「 storage failover modify -node local-auto-giveback true 」
+
+
+
+
+== 手順2：故障した部品をNetAppに返却する
+
+障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

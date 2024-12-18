@@ -1,0 +1,30 @@
+---
+permalink: c80/chassis-replace-workflow.html 
+sidebar: sidebar 
+keywords: aff 70, 90, replace the chassis workflow 
+summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
+---
+= シャーシの交換ワークフロー- AFF C80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+シャーシを交換するには、次のワークフロー手順に従ってください。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:chassis-replace-requirements.html["シャーシの交換要件の確認"]
+[role="quick-margin-para"]
+シャーシを交換するには、一定の要件を満たす必要があります。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:chassis-replace-shutdown.html["コントローラをシャットダウン"]
+[role="quick-margin-para"]
+シャーシのメンテナンスを実施できるように、コントローラをシャットダウンします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:chassis-replace-move-hardware.html["シャーシを交換してください"]
+[role="quick-margin-para"]
+シャーシを交換するには、障害のあるシャーシから新しいシャーシに電源装置、ハードドライブ、およびコントローラモジュールを移動し、障害のあるシャーシを障害のあるシャーシと同じモデルの新しいシャーシと交換します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:chassis-replace-complete-system-restore-rma.html["シャーシ交換後の処理"]
+[role="quick-margin-para"]
+シャーシのHA状態を確認し、障害が発生した部分をNetAppに戻します。

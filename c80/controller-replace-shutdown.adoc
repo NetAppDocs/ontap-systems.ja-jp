@@ -1,0 +1,118 @@
+---
+permalink: c80/controller-replace-shutdown.html 
+sidebar: sidebar 
+keywords: c80, shut down the impaired controller 
+summary: 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。 
+---
+= 障害のあるコントローラをシャットダウンします- AFF C80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
+
+[role="tabbed-block"]
+====
+.オプション 1 ：ほとんどのシステム
+--
+障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
+
+.このタスクについて
+* SANシステムを使用している場合は、障害コントローラのSCSIブレードのイベントメッセージを確認しておく必要があり  `cluster kernel-service show`ます）。コマンド（priv advancedモードから）を実行すると、 `cluster kernel-service show`そのノードのノード名、そのノードの可用性ステータス、およびそのノードの動作ステータスが表示されlink:https://docs.netapp.com/us-en/ontap/system-admin/display-nodes-cluster-task.html["クォーラムステータス"]ます。
++
+各 SCSI ブレードプロセスは、クラスタ内の他のノードとクォーラムを構成している必要があります。交換を進める前に、すべての問題を解決しておく必要があります。
+
+* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性についてfalseと表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["ノードをクラスタと同期します"^]。
+
+
+.手順
+. AutoSupportが有効になっている場合は、AutoSupportメッセージを呼び出してケースの自動作成を停止します。 `system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
++
+次のAutoSupport メッセージは、ケースの自動作成を2時間停止します。 `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 正常なコントローラのコンソールから自動ギブバックを無効にします。 `storage failover modify -node local -auto-giveback false`
++
+
+NOTE: 自動ギブバックを無効にしますか?_と表示されたら'y'を入力します
+
+. 障害のあるコントローラに LOADER プロンプトを表示します。
++
+[cols="1,2"]
+|===
+| 障害のあるコントローラの表示 | 作業 
+
+
+ a| 
+LOADER プロンプト
+ a| 
+次の手順に進みます。
+
+
+
+ a| 
+ギブバックを待っています
+ a| 
+Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します
+
+
+
+ a| 
+システムプロンプトまたはパスワードプロンプト
+ a| 
+正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _
+
+障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
+
+|===
+
+
+--
+.オプション 2 ：コントローラが MetroCluster に搭載されている
+--
+障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
+
+* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性についてfalseと表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["ノードをクラスタと同期します"^]。
+* MetroClusterの設定状態が「設定済み」になっていること、およびノードが有効かつ正常な状態であること(`metrocluster node show`を確認しておく必要があります。
+
+
+.手順
+. AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
++
+次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
+
+. 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
+. 障害のあるコントローラに LOADER プロンプトを表示します。
++
+[cols="1,2"]
+|===
+| 障害のあるコントローラの表示 | 作業 
+
+
+ a| 
+LOADER プロンプト
+ a| 
+次のセクションに進みます。
+
+
+
+ a| 
+ギブバックを待っています
+ a| 
+Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します
+
+
+
+ a| 
+システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
+ a| 
+正常なコントローラから障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _
+
+障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。
+
+|===
+
+
+--
+====

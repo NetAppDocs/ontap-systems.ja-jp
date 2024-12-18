@@ -1,0 +1,38 @@
+---
+permalink: c30-60/install-overview.html 
+sidebar: sidebar 
+keywords: aff c30, aff c60, Installation, deployment, Install, deploy, Installing, deploying 
+summary: AFF A70またはA90ストレージシステムを設置してセットアップし、ONTAPシステムにHAペアとして導入するには、次の手順を実行します。 
+---
+= 設置とセットアップのワークフロー- AFF C30およびAFF C60
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFF C30またはAFF C60ストレージシステムを設置してセットアップするには、設置要件と考慮事項を確認し、サイトを準備し、ハードウェアコンポーネントを設置してケーブル接続し、ストレージシステムの電源をオンにし、ONTAPクラスタをセットアップする必要があります。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:install-requirements.html["インストールの要件と考慮事項を確認する"]
+[role="quick-margin-para"]
+ストレージシステムをインストールする前に、ストレージシステムがインストール要件を満たしていて、インストールに関する考慮事項を確認しておく必要があります。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["1つ"]link:install-prepare.html["設置を準備"]
+[role="quick-margin-para"]
+設置の準備として、設置場所を準備し、環境要件と電力要件を確認し、十分なラックスペースがあることを確認する必要があります。その後、機器を開梱して内容を納品書と比較し、ハードウェアを登録してサポートを利用できます。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["2 つ"]link:install-hardware.html["ハードウェアを設置"]
+[role="quick-margin-para"]
+ハードウェアを設置するには、ストレージシステムとシェルフ用のレールキットを設置し、ストレージシステムとシェルフをキャビネットまたはTelcoラックに設置して固定します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["3つ"]link:install-cable.html["ハードウェアのケーブル接続"]
+[role="quick-margin-para"]
+ハードウェアをケーブル接続するには、コントローラをネットワークに接続してからシェルフに接続します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["4つ"]link:install-power-hardware.html["ストレージ・システムの電源をオンにする"]
+[role="quick-margin-para"]
+ストレージシステムの電源をオンにするには、各シェルフの電源をオンにし、必要に応じて一意のシェルフIDを割り当ててから、コントローラの電源をオンにします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["5 つ"]link:install-complete.html["ストレージシステムのセットアップの完了"]
+[role="quick-margin-para"]
+ストレージシステムのセットアップを完了するには、ブラウザでコントローラのIPアドレスを指定してONTAPシステムマネージャにアクセスします。セットアップウィザードを使用して、ストレージシステムのクラスタを設定できます。

@@ -36,7 +36,7 @@ PCIe カードを交換するには、カードからケーブルを外し、 SF
 +
 次のAutoSupport メッセージは、ケースの自動作成を2時間停止します。 `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
 
-. 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
+. 正常なコントローラのコンソールから自動ギブバックを無効にします。 `storage failover modify -node local -auto-giveback false`
 +
 
 NOTE: 自動ギブバックを無効にしますか?_と表示されたら'y'を入力します

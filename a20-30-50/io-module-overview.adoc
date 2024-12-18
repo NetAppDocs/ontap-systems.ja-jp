@@ -1,0 +1,24 @@
+---
+permalink: a20-30-50/io-module-overview.html 
+sidebar: sidebar 
+keywords: AFF A90, AFF A70, replace io module 
+summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用フィールド交換可能ユニット（FRU）コンポーネントと交換する必要があります。 
+---
+= I/Oモジュールの追加と交換- AFF A20、AFF A30、およびAFF A50の概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージシステム内の障害が発生したI/Oモジュールは、同じタイプのI/Oモジュールに交換することも、別のタイプのI/Oモジュールに交換することもできます。使用可能なスロットがあるストレージシステムにI/Oモジュールを追加することもできます。
+
+* link:io-module-add.html["I/Oモジュールの追加"]
++
+I/Oモジュールを追加すると、冗長性が向上し、1つのI/Oモジュールに障害が発生してもストレージシステムが動作し続けるようになります。
+
+* link:io-module-replace.html["I/Oモジュールの交換"]
++
+障害が発生したI/Oモジュールを交換すると、ストレージシステムを最適な動作状態に戻すことができます。
+
+

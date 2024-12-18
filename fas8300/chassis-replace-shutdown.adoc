@@ -59,11 +59,11 @@ NOTE: 進捗状況を監視できるように、すべてのSP / BMC接続との
 
 . 障害のあるシャーシにある2つのノードを停止します。
 +
-`system node halt -node <node>,<node2> -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`
+`system node halt -node <node1>,<node2> -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`
 
 +
 
-NOTE: StrictSyncモードで動作するSnapMirror同期を使用するクラスタの場合： `system node halt -node <node>,<node2>  -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
+NOTE: StrictSyncモードで動作するSnapMirror同期を使用するクラスタの場合： `system node halt -node <node1>,<node2>  -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
 
 . 表示されたら、クラスタ内の各コントローラに「* y *」と入力します。 `_Warning: Are you sure you want to halt node "cluster <node-name> number"?
 {y|n}:_`

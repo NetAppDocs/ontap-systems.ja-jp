@@ -1,0 +1,94 @@
+---
+section: a20-30-50
+title: AFF A20、AFF A30、およびAFF A50システム
+entries:
+- title: 設置とセットアップ
+  pdf-filename: AFF A20、AFF A30、およびAFF A50の設置とセットアップ
+  entries:
+  - title: インストールワークフロー
+    url: "/a20-30-50/install-overview.html"
+  - title: 要件を確認する
+    url: "/a20-30-50/install-requirements.html"
+  - title: インストールの準備
+    url: "/a20-30-50/install-prepare.html"
+  - title: ハードウェアを設置
+    url: "/a20-30-50/install-hardware.html"
+  - title: ハードウェアのケーブル接続
+    url: "/a20-30-50/install-cable.html"
+  - title: システムの電源を入れる
+    url: "/a20-30-50/install-power-hardware.html"
+  - title: システムのセットアップを完了します
+    url: "/a20-30-50/install-complete.html"
+- title: メンテナンス
+  pdf-filename: AFF A20、AFF A30、およびAFF A50のメンテナンス
+  entries:
+  - title: メンテナンスの概要
+    url: "/a20-30-50/maintain-overview.html"
+  - title: ブートメディア
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/a20-30-50/bootmedia-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/a20-30-50/bootmedia-replace-requirements.html"
+    - title: 暗号化キーの確認
+      url: "/a20-30-50/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a20-30-50/bootmedia-shutdown.html"
+    - title: ブートメディアを交換します
+      url: "/a20-30-50/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/a20-30-50/bootmedia-recovery-image-boot.html"
+    - title: アンコウカノ
+      url: "/a20-30-50/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/a20-30-50/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: AFF A20、AFF A30、およびAFF A50シャーシ
+    entries:
+    - title: シャーシの交換ワークフロー
+      url: "/a20-30-50/chassis-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/a20-30-50/chassis-replace-requirements.html"
+    - title: コントローラのシャットダウン
+      url: "/a20-30-50/chassis-replace-shutdown.html"
+    - title: シャーシの交換
+      url: "/a20-30-50/chassis-replace-move-hardware.html"
+    - title: シャーシ交換後の処理
+      url: "/a20-30-50/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラ
+    pdf-filename: AFF A20、AFF A30、AFF A50コントローラモジュール
+    entries:
+    - title: コントローラの交換ワークフロー
+      url: "/a20-30-50/controller-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/a20-30-50/controller-replace-requirements.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/a20-30-50/controller-replace-shutdown.html"
+    - title: コントローラを交換してください
+      url: "/a20-30-50/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/a20-30-50/controller-replace-system-config-restore-and-verify.html"
+    - title: コントローラをギブバック
+      url: "/a20-30-50/controller-replace-recable-reassign-disks.html"
+    - title: コントローラ交換後の処理
+      url: "/a20-30-50/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/a20-30-50/dimm-replace.html"
+  - title: ドライブ
+    url: "/a20-30-50/drive-replace.html"
+  - title: ファン
+    url: "/a20-30-50/fan-replace.html"
+  - title: I/O モジュール
+    entries:
+    - title: I/Oモジュールの概要
+      url: "/a20-30-50/io-module-overview.html"
+    - title: I/O モジュールを追加します
+      url: "/a20-30-50/io-module-add.html"
+    - title: I/Oモジュールの交換
+      url: "/a20-30-50/io-module-replace.html"
+  - title: NVバッテリ
+    url: "/a20-30-50/nvdimm-battery-replace.html"
+  - title: 電源装置
+    url: "/a20-30-50/power-supply-replace.html"
+  - title: リアルタイムクロックバッテリ
+    url: "/a20-30-50/rtc-battery-replace.html"

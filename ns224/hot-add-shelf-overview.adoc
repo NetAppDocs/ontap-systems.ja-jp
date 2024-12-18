@@ -14,7 +14,9 @@ summary: NS224ドライブシェルフをホットアドするには、HAペア�
 NS224シェルフをホットアドするには、次のワークフロー手順を実行します。
 
 .作業を開始する前に
-NS224シェルフをホットアドするには、HAペアが一定の要件を満たしている必要があります。を確認します link:requirements-hot-add-shelf.html["ホットアドの要件とベストプラクティス"]。
+* この手順は、直接接続型ストレージにのみ適用されます。スイッチ接続型ストレージの手順については、を参照してくださいlink:cable-as-switch-attached.html["スイッチ接続ケーブル接続ガイド"]。
+* NS224シェルフをホットアドするには、HAペアが一定の要件を満たしている必要があります。を確認します link:requirements-hot-add-shelf.html["ホットアドの要件とベストプラクティス"]。
+
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:prepare-hot-add-shelf.html["シェルフのホットアドの準備"]
 [role="quick-margin-para"]

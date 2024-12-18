@@ -1,7 +1,7 @@
 ---
 permalink: ns224/service-monitor-leds.html 
 sidebar: sidebar 
-keywords: monitor, health, drive, shelf, location, status, condition, led, component, operator, display, panel, nsm, power, supply, drive, monitor drive shelf leds, operator display panel leds, nsm module leds, power supply leds, drive leds 
+keywords: monitor, health, drive, shelf, location, status, condition, led, component, operator, display, panel, nsm, power, supply, drive, monitor drive shelf leds, operator display panel leds, nsm leds, power supply leds, drive leds 
 summary: ドライブシェルフコンポーネントのLEDの場所とステータスの状態を把握することで、ドライブシェルフの健全性を監視できます。 
 ---
 = ドライブシェルフのLED監視- NS224シェルフ
@@ -13,7 +13,7 @@ summary: ドライブシェルフコンポーネントのLEDの場所とステ�
 [role="lead"]
 ドライブシェルフコンポーネントのLEDの場所とステータスの状態を把握することで、ドライブシェルフの健全性を監視できます。
 
-* シェルフのオペレータディスプレイパネル（ODP）と両方のNSMモジュールのロケーション（青）LEDをアクティブにすると、作業が必要なシェルフを物理的に特定できます。 `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
+* シェルフのオペレータディスプレイパネル（ODP）と両方のnsmにあるロケーション（青色）LEDをアクティブにすると、保守が必要なシェルフを物理的に特定できます。 `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
 +
 該当するシェルフの「 _shelf_name_ 」がわからない場合は、「 storage shelf show 」コマンドを実行します。
 
@@ -87,12 +87,16 @@ image::../media/drw_sas3_location_icon.svg[オペレータディスプレイパ�
 |===
 
 
-== NSMモジュールのLED
+== NSM LED
 
-NSMモジュールのLEDは、モジュールが正常に機能しているかどうか、I/Oトラフィックの準備ができているかどうか、ハードウェアに問題がないかどうかを示します。
+NSMのLEDは、モジュールが正常に機能しているかどうか、I/Oトラフィックの準備ができているかどうか、ハードウェアに問題がないかどうかを示します。
 
-次の図と表に、モジュールの機能とモジュールの各NVMeポートの機能に関連するNSMモジュールのLEDを示します。
+次の図と表に、モジュールの機能とモジュールの各NVMeポートの機能に関連するNSM LEDを示します。
 
+[role="tabbed-block"]
+====
+.NSM100モジュール
+--
 image::../media/drw_ns224_nsm_leds_IEOPS-1270.svg[NS224 NSM100モジュールのLED]
 
 [cols="1,1,2,4"]
@@ -107,7 +111,7 @@ image::../media/drw_sas3_location_icon.svg[オペレータディスプレイパ�
  a| 
 青
  a| 
-NSMモジュール:場所
+NSM：場所
 
 
 
@@ -118,7 +122,7 @@ image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネ�
  a| 
 アンバー
  a| 
-NSMモジュール:注意
+NSM：注意
 
 
 
@@ -143,6 +147,72 @@ image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネ�
 NVMeポート/リンク：注意
 
 |===
+--
+.NSM100Bモジュール
+--
+image::../media/drw_ns224_nsmb_leds_ieops-2004.svg[NS224 NSM100BモジュールのLED]
+
+[cols="1,1,2,4"]
+|===
+| コールアウト | LED アイコン | 色（ Color ） | 説明 
+
+
+ a| 
+image:../media/icon_round_1.png["番号1"]
+ a| 
+LNK
+ a| 
+緑
+ a| 
+NVMeポート/リンク：ステータス
+
+
+
+ a| 
+image:../media/icon_round_2.png["番号2"]
+ a| 
+image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネルの警告LED]
+ a| 
+アンバー
+ a| 
+NVMeポート/リンク：注意
+
+
+
+ a| 
+image:../media/icon_round_3.png["番号3"]
+ a| 
+image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネルの警告LED]
+ a| 
+アンバー
+ a| 
+I/Oモジュール:ステータス
+
+
+
+ a| 
+image:../media/icon_round_4.png["番号4"]
+ a| 
+image::../media/drw_sas3_location_icon.svg[オペレータディスプレイパネルの位置LED]
+ a| 
+青
+ a| 
+NSM：場所
+
+
+
+ a| 
+image:../media/icon_round_5.png["番号5"]
+ a| 
+image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネルの警告LED]
+ a| 
+アンバー
+ a| 
+NSM：注意
+
+|===
+--
+====
 [cols="2,1,1,1"]
 |===
 | ステータス | NSM注意（オレンジ） | ポートLNK（緑） | ポートアテンション（オレンジ） 

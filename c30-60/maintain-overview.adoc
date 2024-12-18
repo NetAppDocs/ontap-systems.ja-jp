@@ -1,0 +1,96 @@
+---
+permalink: c30-60/maintain-overview.html 
+sidebar: sidebar 
+keywords: aff c30, aff c60, maintenance, maintenance, repairing a20 aff a30 aff a50, replace a20 aff a30 aff a50 components 
+summary: AFF C30およびAFF C60ハードウェアのメンテナンス 
+---
+= ハードウェアメンテナンスの概要- AFF C30およびAFF C60
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ハードウェアのメンテナンス手順が必要になる場合があります。このセクションでは、AFF C30およびAFF C60システムコンポーネントのメンテナンスに固有の手順について説明します。
+
+このセクションの手順は、AFF C30またはAFF C60ストレージシステムがONTAP環境にすでにストレージノードとして導入されていることを前提としています。
+
+
+
+== システムコンホオネント
+
+AFF C30およびAFF C60ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。
+
+[cols="25,65"]
+|===
+
+
+ a| 
+link:bootmedia-replace-workflow.html["ブートメディア"]
+ a| 
+ブートメディアには、ONTAPイメージファイルのプライマリセットとセカンダリセットのほか、システムがブート時に使用するシステム構成情報が格納されています。
+
+
+
+ a| 
+link:chassis-replace-workflow.html["シャーシ"]
+ a| 
+シャーシは、コントローラ/CPUユニット、電源装置、I/Oなど、すべてのコントローラコンポーネントを収容する物理エンクロージャです。
+
+
+
+ a| 
+link:controller-replace-workflow.html["コントローラ"]
+ a| 
+コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、ONTAPオペレーティングシステムソフトウェアを実行します。
+
+
+
+ a| 
+link:dimm-replace.html["DIMM"]
+ a| 
+デュアルインラインメモリモジュール（DIMM）は、コンピュータメモリの一種です。コントローラのマザーボードにシステムメモリを追加するために取り付けられます。
+
+
+
+ a| 
+link:drive-replace.html["ドライブ"]
+ a| 
+ドライブは、データに必要な物理ストレージを提供するデバイスです。
+
+
+
+ a| 
+link:fan-replace.html["ファン"]
+ a| 
+ファンによってコントローラとドライブが冷却されます。
+
+
+
+ a| 
+link:io-module-overview.html["I/O モジュール"]
+ a| 
+I/Oモジュール（入出力モジュール）は、コントローラと、コントローラとデータを交換する必要があるさまざまなデバイスやシステムとの間の仲介役として機能するハードウェアコンポーネントです。
+
+
+
+ a| 
+link:nvdimm-battery-replace.html["NVハツテリ"]
+ a| 
+不揮発性メモリ（NV）バッテリは、停電後に転送中のデータをフラッシュメモリにデステージしながら、NVMEMコンポーネントに電力を供給します。
+
+
+
+ a| 
+link:power-supply-replace.html["電源装置"]
+ a| 
+電源装置は、コントローラに冗長な電源を提供します。
+
+
+
+ a| 
+link:rtc-battery-replace.html["リアルタイムクロックバッテリ"]
+ a| 
+リアルタイムクロックバッテリは、電源がオフの場合にシステムの日付と時刻の情報を保持します。
+
+|===
