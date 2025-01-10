@@ -47,7 +47,7 @@ LOADER-A>
 +
 `Starting boot media recovery (BMR) process. Press Ctrl-C to abort…`
 
-. Loaderでローカルクラスタポートが設定され、パートナーノードから実行されるため、ブートメディアのリカバリプロセスを監視し `netboot`ます。
+. Loaderでローカルポートが設定され、パートナーノードから実行されるため、ブートメディアのリカバリプロセスを監視し `netboot`ます。
 +
 ネットブートの実行中は `Starting BMR`、メッセージが表示されます。
 
@@ -129,9 +129,9 @@ Successfully recovered keymanager secrets.
 .. ノードがリブートしたら、システムがオンラインに戻って動作可能になったことを確認して、ブートメディアのリカバリが成功したことを確認します。
 .. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。
 +
-`storage failover giveback -ofnode _impaired_node_name_`です。
+「 storage failover giveback -ofnode _impaired_node_name _
 
-.. CFOアグリゲートのみでブートしたら、次のコマンドを実行します。
+.. パートナーノードが完全に稼働してデータを提供したら、クラスタ全体でOKMキーを同期します。
 +
 `security key-manager onboard sync`
 

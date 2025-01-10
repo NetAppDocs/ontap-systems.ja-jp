@@ -574,7 +574,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、ONTAPのその他の機能の設定についてに進みます https://docs.netapp.com/us-en/ontap/index.html["ONTAP 9 のドキュメント"^]。
 
 
 --
@@ -655,8 +655,7 @@ video::a905e56e-c995-4704-9673-adfa0005a891[panopto]
 +
 image::../media/drw_9500_power-on.svg[DRW 9500電源オン]
 
-
-
++
 
 NOTE: 初回のブートには最大 8 分かかる場合があります。
 
@@ -713,7 +712,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、ONTAPのその他の機能の設定についてに進みます https://docs.netapp.com/us-en/ontap/index.html["ONTAP 9 のドキュメント"^]。
 
 
 --

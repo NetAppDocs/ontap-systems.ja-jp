@@ -46,11 +46,9 @@ image::../media/drw_ssn_label.png[システムシリアル番号の例]
 +
 次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください link:https://hwu.netapp.com["NetApp Hardware Universe の略"^] ケーブルの場所を確認し、用途を特定します。
 
-
-
++
+[cols="1,2,1,2"]
 |===
-
-
 | ケーブルのタイプ | パーツ番号と長さ | コネクタのタイプ | 用途 
 
 
@@ -459,7 +457,7 @@ System Manager が開きます。
 
 . System Manager のセットアップガイドを使用して、で収集したデータを基にシステムを設定します link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^]。
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます link:https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、ONTAPのその他の機能の設定についてに進みます https://docs.netapp.com/us-en/ontap/index.html["ONTAP 9 のドキュメント"^]。
 
 
 
@@ -521,5 +519,5 @@ NOTE: アドレスの形式は、 +https://x.x.x.x+ です。
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます link:https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、ONTAPのその他の機能の設定についてに進みます https://docs.netapp.com/us-en/ontap/index.html["ONTAP 9 のドキュメント"^]。
 

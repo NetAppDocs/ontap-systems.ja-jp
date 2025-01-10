@@ -40,8 +40,6 @@ NOTE: パスフレーズの入力を2回求められます。
 . ブートメニューで、「option for normal boot」と入力します `1`。
 . 「_Waiting for giveback_」と表示されたら、<enter>キーを押します。
 . パートナーノードにコンソールケーブルを接続し、としてログインします `admin`。
-. advancedモードに切り替えて、修復されたノードのコアダンプがすべて保存されたことを確認します。 `set -privilege advanced` `run local partner savecore`
-. 管理レバーに戻ります `set privilege admin`。
 . CFOアグリゲート（ルートアグリゲート）のみをギブバックします。 `storage failover giveback -fromnode local -only-cfo-aggregates true`
 +
 ** エラーが発生した場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。

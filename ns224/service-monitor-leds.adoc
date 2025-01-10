@@ -147,72 +147,6 @@ image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネ�
 NVMeポート/リンク：注意
 
 |===
---
-.NSM100Bモジュール
---
-image::../media/drw_ns224_nsmb_leds_ieops-2004.svg[NS224 NSM100BモジュールのLED]
-
-[cols="1,1,2,4"]
-|===
-| コールアウト | LED アイコン | 色（ Color ） | 説明 
-
-
- a| 
-image:../media/icon_round_1.png["番号1"]
- a| 
-LNK
- a| 
-緑
- a| 
-NVMeポート/リンク：ステータス
-
-
-
- a| 
-image:../media/icon_round_2.png["番号2"]
- a| 
-image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネルの警告LED]
- a| 
-アンバー
- a| 
-NVMeポート/リンク：注意
-
-
-
- a| 
-image:../media/icon_round_3.png["番号3"]
- a| 
-image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネルの警告LED]
- a| 
-アンバー
- a| 
-I/Oモジュール:ステータス
-
-
-
- a| 
-image:../media/icon_round_4.png["番号4"]
- a| 
-image::../media/drw_sas3_location_icon.svg[オペレータディスプレイパネルの位置LED]
- a| 
-青
- a| 
-NSM：場所
-
-
-
- a| 
-image:../media/icon_round_5.png["番号5"]
- a| 
-image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネルの警告LED]
- a| 
-アンバー
- a| 
-NSM：注意
-
-|===
---
-====
 [cols="2,1,1,1"]
 |===
 | ステータス | NSM注意（オレンジ） | ポートLNK（緑） | ポートアテンション（オレンジ） 
@@ -294,6 +228,180 @@ NSM VPDエラー
 すべての状態
 
 |===
+--
+.NSM100Bモジュール
+--
+image::../media/drw_ns224_nsmb_leds_ieops-2004.svg[NS224 NSM100BモジュールのLED]
+
+[cols="1,1,2,4"]
+|===
+| コールアウト | LED アイコン | 色（ Color ） | 説明 
+
+
+ a| 
+image:../media/icon_round_1.png["番号1"]
+ a| 
+LNK
+ a| 
+緑
+ a| 
+NVMeポート/リンク：ステータス
+
+
+
+ a| 
+image:../media/icon_round_2.png["番号2"]
+ a| 
+image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネルの警告LED]
+ a| 
+アンバー
+ a| 
+NVMeポート/リンク：注意
+
+
+
+ a| 
+image:../media/icon_round_3.png["番号3"]
+ a| 
+image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネルの警告LED]
+ a| 
+アンバー
+ a| 
+I/Oモジュール:注意
+
+
+
+ a| 
+image:../media/icon_round_4.png["番号4"]
+ a| 
+image::../media/drw_sas3_location_icon.svg[オペレータディスプレイパネルの位置LED]
+ a| 
+青
+ a| 
+NSM：場所
+
+
+
+ a| 
+image:../media/icon_round_5.png["番号5"]
+ a| 
+image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネルの警告LED]
+ a| 
+アンバー
+ a| 
+NSM：注意
+
+|===
+[cols="2,1,1,1,1"]
+|===
+| ステータス | NSM注意（オレンジ） | ポートLNK（緑） | ポートアテンション（オレンジ） | I/Oモジュールの注意 
+
+
+ a| 
+NSMノーマル
+ a| 
+オフ
+ a| 
+すべての状態
+ a| 
+オフ
+ a| 
+オフ
+
+
+
+ a| 
+NSM障害
+ a| 
+オン
+ a| 
+すべての状態
+ a| 
+すべての状態
+ a| 
+オフ
+
+
+
+ a| 
+NSM VPDエラー
+ a| 
+オン
+ a| 
+すべての状態
+ a| 
+すべての状態
+ a| 
+オフ
+
+
+
+ a| 
+ホストポート接続がありません
+ a| 
+すべての状態
+ a| 
+オフ
+ a| 
+オフ
+ a| 
+オフ
+
+
+
+ a| 
+ホストポート接続リンクがアクティブ
+ a| 
+すべての状態
+ a| 
+点灯/点滅（アクティビティあり）
+ a| 
+すべての状態
+ a| 
+オフ
+
+
+
+ a| 
+ホストポート接続に障害がある
+ a| 
+オン
+ a| 
+すべてのレーンに障害が発生している場合はオン/オフ
+ a| 
+オン
+ a| 
+オフ
+
+
+
+ a| 
+電源投入後のBIOSイメージからのBIOS起動
+ a| 
+点滅
+ a| 
+すべての状態
+ a| 
+すべての状態
+ a| 
+オフ
+
+
+
+ a| 
+I/Oモジュールがありません
+ a| 
+オン
+ a| 
+該当なし
+ a| 
+該当なし
+ a| 
+オン
+
+|===
+--
+====
 
 
 == 電源装置の LED

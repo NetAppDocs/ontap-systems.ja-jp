@@ -369,8 +369,7 @@ video::c500e747-30f8-4763-9065-afbf00008e7f[panopto]
 詳細については、ラップトップのオンラインヘルプを参照してください。
 
 . ラップトップを管理スイッチに接続します。
-
-
++
 image::../media/dwr_laptop_to_switch_only.svg[DWR ラップトップをスイッチのみに接続します]
 
 . 検出する ONTAP アイコンを選択します。
@@ -409,7 +408,7 @@ https://mysupport.netapp.com/site/tools["ネットアップのダウンロード
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます link:https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、ONTAPのその他の機能の設定についてに進みます https://docs.netapp.com/us-en/ontap/index.html["ONTAP 9 のドキュメント"^]。
 
 
 --
@@ -487,7 +486,7 @@ NOTE: アドレスの形式は、 +https://x.x.x.x+ です。
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます link:https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"^] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、ONTAPのその他の機能の設定についてに進みます https://docs.netapp.com/us-en/ontap/index.html["ONTAP 9 のドキュメント"^]。
 
 
 --

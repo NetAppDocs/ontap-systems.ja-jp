@@ -192,8 +192,7 @@ NOTE: システムの重量に関連する安全上の注意事項を確認し�
 +
 image::../media/drw_9000_lifting_icon.png[吊り上げ重量注意ラベル]
 
-
-
++
 
 NOTE: 左側のラベルは空のシャーシを、右側のラベルはフル装備のシステムを示しています。
 
@@ -230,8 +229,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 +
 .アニメーション- 2ノードスイッチレスクラスタをケーブル接続
 video::7a55b98a-e8b8-41d5-821f-ac5b0032ead0[panopto]
-
-
++
 image::../media/drw_9000_TNSC_composite_cabling.png[2ノードスイッチレスクラスタの複合ケーブル配線図]
 
 . に進みます <<手順 4 ：コントローラをドライブシェルフにケーブル接続する>> ドライブシェルフのケーブル接続手順については、を参照して
@@ -257,8 +255,7 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 +
 .アニメーションスイッチを使用したクラスタのケーブル接続
 video::6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[panopto]
-
-
++
 image:../media/drw_9000_switched_cluster_cabling.png["スイッチクラスタの複合ケーブル配線図"]
 
 . に進みます <<手順 4 ：コントローラをドライブシェルフにケーブル接続する>> ドライブシェルフのケーブル接続手順については、を参照して
@@ -290,18 +287,16 @@ NOTE: この例では DS224C シェルフを使用しています。サポート
 
 +
 ** FAS9000 、 AFF A700 、 ASA AFF A700 、 ONTAP 9.7 以前の SAS シェルフのケーブル接続：
-
-
 +
 .アニメーション- SASストレージをケーブル接続- ONTAP 9.7以前
 video::a312e09e-df56-47b3-9b5e-ab2300477f67[panopto]
+
+
 +
 image:../media/SAS_storage_ONTAP_9.7_and_earlier.png["ONTAP 9.7以前のSASストレージのケーブル接続"]
 
 +
 ** FAS9000 、 AFF A700 、 ASA AFF A700 、 ONTAP 9.8 以降での SAS シェルフのケーブル接続：
-
-
 +
 .アニメーション- SASストレージケーブル- ONTAP 9.8以降
 video::61d23302-9526-4a2b-9335-ac5b0032eafd[panopto]
@@ -317,6 +312,8 @@ link:../sas3/install-new-system.html["IOM12 モジュールを搭載した新し
 
 +
 image:../media/Cable_shelves_new_system_IOM12_shelves.png["SASシェルフとのストレージシステムのケーブル接続"]
+
+
 
 . に進みます <<手順 5 ：システムのセットアップと設定を完了する>> をクリックして、システムのセットアップと設定を完了します。
 
@@ -467,7 +464,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、ONTAPのその他の機能の設定についてに進みます https://docs.netapp.com/us-en/ontap/index.html["ONTAP 9 のドキュメント"^]。
 
 
 
@@ -563,5 +560,5 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 
 
 . Config Advisor を実行してシステムの健全性を確認します。
-. 初期設定が完了したら、に進みます https://www.netapp.com/data-management/oncommand-system-documentation/["ONTAP  ONTAP システムマネージャのマニュアルリソース"] ONTAP での追加機能の設定については、ページを参照してください。
+. 初期設定が完了したら、ONTAPのその他の機能の設定についてに進みます https://docs.netapp.com/us-en/ontap/index.html["ONTAP 9 のドキュメント"^]。
 

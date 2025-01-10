@@ -636,8 +636,6 @@
   <block id="7e043f500d316c07931a265899f256e5" category="paragraph">System Manager が開きます。</block>
   <block id="b0312e5410d679be9e7767f60affd0f9" category="list-text">System Manager のセットアップガイドを使用して、 _NetApp ONTAP 構成ガイド _ で収集したデータを基にシステムを設定します。</block>
   <block id="ab6c62f8c03fd8de7dd75edd9339f332" category="list-text">Config Advisor を実行してシステムの健全性を確認します。</block>
-  <block id="32ff0984d1cda5a6a82a31ba6abcaf25" category="inline-link">ONTAP &amp; ONTAP システムマネージャのマニュアルリソース</block>
-  <block id="9d0be0d6f61b9f5f1bd1c769171e1a51" category="list-text">初期設定が完了したら、に進みます<block ref="8203f64117389bb7bbdf8d4d70d36e4d" category="inline-link-rx"></block> ONTAP での追加機能の設定については、ページを参照してください。</block>
   <block id="ff07d29ea509a7a995f5989a37c478e6" category="section-title">オプション 2 ：ネットワーク検出が有効になっていない場合は、システムのセットアップと設定を実行する</block>
   <block id="e26c9b04bf0bc2c4d8073d81596cbe06" category="paragraph">ラップトップでネットワーク検出が有効になっていない場合は、このタスクを使用して設定とセットアップを実行する必要があります。</block>
   <block id="9bd015997b6e1551fc91d1a6374fc274" category="list-text">ラップトップまたはコンソールをケーブル接続して設定します。</block>
@@ -2114,10 +2112,6 @@
   <block id="3ed6da3ce264f0c66cef48e19cd15c73" category="doc">必要な工具と機器</block>
   <block id="f9fe90b9a7c32c659a86cfe53f6587b1" category="list-text">ディスクシェルフのハードウェアガイドです</block>
   <block id="bcf8fb15c418590ecd335df2dcfad4e4" category="list-text">使用しているシステムに適した設置とセットアップの手順に従ってください</block>
-  <block id="5d69fd338b800eeec5483a90a86e34c3" category="inline-link">All Flash FAS のドキュメントリソース</block>
-  <block id="94ca956ba088a0239acd4c8e7349af15" category="paragraph"><block ref="94ca956ba088a0239acd4c8e7349af15" category="inline-link-rx"></block></block>
-  <block id="bc36b7561098172a45ca8601c91c3c1c" category="inline-link">FAS ストレージシステムのドキュメント</block>
-  <block id="ffd3191487f66e44a54010853dc2463b" category="paragraph"><block ref="ffd3191487f66e44a54010853dc2463b" category="inline-link-rx"></block></block>
   <block id="45b8f0b842002ec85fb07171d4b0d278" category="list-text">No.1 および No.2 プラスドライバ</block>
   <block id="830cb2795d80d2d868f65bf4fc0302ba" category="list-text">システムキャビネットの水平調節用のレベリングツール</block>
   <block id="9839b9efeb4f2cb59f36a02a747b73cb" category="doc">システムのリストアを完了します - FAS8300 および FAS8700</block>
@@ -4332,7 +4326,6 @@
   <block id="423ba51655c4d8cf97fea5498fc8182b" category="list-text">左側のペインで、 *Network* をクリックします。</block>
   <block id="52cc73fca17e9ee46a84b54fe8d9c8f2" category="list-text">右クリックし、 * 更新 * を選択します。</block>
   <block id="26e92d478a1389009c384007225dc825" category="list-text">System Manager のセットアップガイドを使用して、で収集したデータを基にシステムを設定します <block ref="571ad76602d16a750ecd1119ab38063c" category="inline-link-macro-rx"></block>。</block>
-  <block id="e6db50cefb25b43305353a6a987f05e3" category="list-text">初期設定が完了したら、に進みます <block ref="9c0a34143b47aa65068059820284fe99" category="inline-link-macro-rx"></block> ONTAP での追加機能の設定については、ページを参照してください。</block>
   <block id="abda447c368c0080cdf2af6a77ea3d22" category="list-text">で収集したデータを使用してシステムを設定します <block ref="571ad76602d16a750ecd1119ab38063c" category="inline-link-macro-rx"></block>。</block>
   <block id="3125087114c2490b7c6800800a39a990" category="summary">このセクションでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。</block>
   <block id="2721d15a1712238198ba49214a74054c" category="paragraph">「 image_xxx.tgz 」ファイルを格納できる適切な容量のストレージを搭載した、 FAT32 にフォーマットされた USB フラッシュドライブが必要です。</block>
@@ -4445,7 +4438,6 @@
   <block id="bd21e6ec29256eee4c7a9b34dd71c9ba" category="image-alt">DWR ラップトップをスイッチのみに接続します</block>
   <block id="382f497663af8b0b026d3c66f6a2bfce" category="list-text">System Manager のセットアップガイドを使用して、で収集したデータを基にシステムを設定します<block ref="31fb422f2cdfc1b2e916b587bec00136" category="inline-link-rx"></block>。</block>
   <block id="c866cf78ea22fe8b8a7122b28202ae22" category="paragraph"><block ref="c866cf78ea22fe8b8a7122b28202ae22" category="inline-link-rx"></block></block>
-  <block id="5ee8cd6a87d8b25f71b533639902587c" category="list-text">初期設定が完了したら、に進みます<block ref="3cd2da01c2a4ba58d102a6abe7a05e1f" category="inline-link-rx"></block> ONTAP での追加機能の設定については、ページを参照してください。</block>
   <block id="208ee0864fe983f53622b3619eef5932" category="section-title">オプション 2 ：ネットワーク検出が有効になっていない場合</block>
   <block id="b3364f412d1466e4f6e340836fff9abb" category="paragraph">Windows または Mac ベースのラップトップやコンソールを使用していない場合、または自動検出が有効になっていない場合は、このタスクで設定とセットアップを実行する必要があります。</block>
   <block id="11991b3479fcd322fec352f130b7b364" category="admonition">アドレスの形式は、 +https://x.x.x.x+ です。</block>
@@ -9631,7 +9623,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="69c68a07899b46965d63bdd6fea6e0da" category="paragraph"><block ref="4d9c822f717329c7000654e8bae09ae4" prefix="" category="inline-code"></block></block>
   <block id="1857c0ed792dbbfc2525805e6132de0b" category="paragraph">画面に次のメッセージが表示されます。</block>
   <block id="c285ffddf1786cd1a14a26bcf9b74c7d" category="paragraph"><block ref="061047859ec1e213bd771fe5350bda2c" prefix="" category="inline-code"></block></block>
-  <block id="811ae15d713f8c846d0516e053f895b2" category="list-text">Loaderでローカルクラスタポートが設定され、パートナーノードから実行されるため、ブートメディアのリカバリプロセスを監視し<block ref="83a4445bcfef2bd179eaffaabe3b3c20" prefix=" " category="inline-code"></block>ます。</block>
   <block id="8f616ca67798afd132662e15fc4caa28" category="paragraph">ネットブートの実行中は<block ref="f6715e6f2a651bfc51d27566b1be5385" prefix=" " category="inline-code"></block>、メッセージが表示されます。</block>
   <block id="39cb6e7651585d511fc148af8198837f" category="open-title">暗号化なし</block>
   <block id="aada4d2dac8a2a5bd04bf211104ff2c5" category="paragraph">暗号化が検出されなかった場合は、キー管理を必要とせずにブートメディアのリカバリプロセスが続行されます。</block>
@@ -10021,7 +10012,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e5954b5f665f3b9aee4023c5d8eb4f5f" category="list-text">「_Waiting for giveback_」と表示されたら、&lt;enter&gt;キーを押します。</block>
   <block id="68921013f9ca843f9d1bcfd514ee67de" category="list-text">パートナーノードにコンソールケーブルを接続し、としてログインします<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block>。</block>
   <block id="92e13c6a52e1a9d4e2955cd77e4db99d" category="list-text">advancedモードに切り替えて、修復されたノードのコアダンプがすべて保存されたことを確認します。<block ref="0581d0d071ad835f74bf419081ce5d75" prefix=" " category="inline-code"></block><block ref="7f4756e08687048c35020c40f9c8567b" prefix=" " category="inline-code"></block></block>
-  <block id="2b0a436148e337f3515c283e053a817b" category="list-text">管理レバーに戻ります<block ref="4282e6e28684065097c0d90042d19b11" prefix=" " category="inline-code"></block>。</block>
   <block id="9e989767231ec29efb85ce3345c961ff" category="list-text">CFOアグリゲート（ルートアグリゲート）のみをギブバックします。<block ref="291b31306c2e0668f091d41edca7e97f" prefix=" " category="inline-code"></block></block>
   <block id="e28912f373bd8bce85f7c259590bbe92" category="list-text">エラーが発生した場合は、にお問い合わせください<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
   <block id="bfc2c53d06a8a433a0fef8b142ab388e" category="list-text">ギブバックレポートが完了してから5分待って、フェイルオーバーのステータスとギブバックのステータスを確認します（および<block ref="852ce55a153bc728405ba8a2c95bcdf1" prefix=" " category="inline-code"></block>）<block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix=" " category="inline-code"></block>。</block>
@@ -10644,7 +10634,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="fe464b77547b113c26b6c4a663f8d99c" category="paragraph">シェルフを移動または持ち上げるときは、必要な予防措置を講じてください。</block>
   <block id="55a163291cdcad8ab6af6a932720e193" category="inline-link-macro">AFFシステムに関する詳細情報</block>
   <block id="67bacc9d73c9b4789f2c3cde9ab59ad8" category="paragraph">AFF AシリーズシステムとAFF Cシリーズシステムは、仮想環境に特化した堅牢なスケールアウトプラットフォームを提供します。スタンドアロンシステムとして導入することも、NetApp ONTAP構成でハイパフォーマンス階層として導入することもできます。<block ref="587107815f5f912e7d3b8f989c8db7df" category="inline-link-macro-rx"></block>です。</block>
-  <block id="a9db10f1a3e6d0ba4d022c457468e317" category="paragraph">AFF AシリーズおよびAFF Cシリーズシステムは、次のONTAPリリースと互換性があります。</block>
   <block id="9d9de1698f7e401c78687204de906ee5" category="list-text">AFF A20用</block>
   <block id="f8f6ba2d572ef729148f2d89d8ff810a" category="list-text">AFF A30用</block>
   <block id="cc6089132b9a5e4af29a76834480cc1a" category="list-text">AFF A50用</block>
@@ -10653,16 +10642,13 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="724bf3ae18d86521a5b9d77a13fcfddb" category="list-text">AFF C80用</block>
   <block id="8c20e9c3f526d526af74c044baf7da64" category="inline-link-macro">ASA R2システムの詳細</block>
   <block id="77f5d8fa3689e046b946bfbacf61536e" category="paragraph">ASA R2システムは、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルな操作性を実現します。<block ref="2f9305bd6f8a2949646123561cb92ab4" category="inline-link-macro-rx"></block>です。</block>
-  <block id="d6b4d0a4c54a0ac7b309dcc0a4c68300" category="paragraph">ASA R2システムは、次のONTAPリリースと互換性があります。</block>
   <block id="e2ead389bfa8a65f29bc4e57fdaf4a7b" category="inline-link-macro">ASAシステムの詳細</block>
   <block id="0f14ce10f8ff3a34f46c25bba942372c" category="paragraph">ASA AシリーズおよびASA Cシリーズシステムは、シンプルで専用のSANエクスペリエンスを提供し、FCPまたはiSCSIプロトコルを使用して、エンタープライズのミッションクリティカルなデータベースやその他のSANワークロードに継続的なデータ可用性を提供します。<block ref="9c36b794130c589d6d71e1c2ef02ceef" category="inline-link-macro-rx"></block>です。</block>
-  <block id="eb0470bba41a4cbf0371d0bd107bbce5" category="paragraph">ASAシステムは、次のONTAPリリースと互換性があります。</block>
   <block id="2ce90a39656cd7489bede7894c2a9943" category="list-text">ASA AFF A250の略</block>
   <block id="7ddb32a2b45e07e265f9e454f57d2eb0" category="list-text">ASA AFF A800の略</block>
   <block id="b5efaabac2b0776c5f0ca29587d418e4" category="list-text">ASA AFF A400の略</block>
   <block id="4c71fe952f2c533bd53ba2db64f6ef23" category="inline-link-macro">FASシステムに関する詳細情報</block>
   <block id="1c95b928d9b5e4bc7aae5c9a97498da8" category="paragraph">FASシステムは、効率的でセキュアなセカンダリストレージを提供します。これは、階層化、バックアップ、ディザスタリカバリに最適な究極のソリューションです。<block ref="be362a4689d663d0b6df6b6c151241ba" category="inline-link-macro-rx"></block>です。</block>
-  <block id="404f3f6d0927e6ee3c2ebeca58d2189b" category="paragraph">FASシステムは、次のONTAPリリースと互換性があります。</block>
   <block id="017db3debbf4b1ed577798b78fd96b66" category="list-text">FAS70</block>
   <block id="649e9f4912bcf4af7efe489c6866eb1d" category="list-text">FAS90</block>
   <block id="3eab1bbd4a3f05ea0803f3bcf5fac9e5" category="list-text">FAS2750</block>
@@ -11115,7 +11101,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="967573797c1191f0df22ec6107c3aa00" category="paragraph">NSM：場所</block>
   <block id="8d205de013ce8da6fb34e1d90ce0701b" category="paragraph">NSM：注意</block>
   <block id="6cdd970a99287856fae6549b1e4e2661" category="image-alt">NS224 NSM100BモジュールのLED</block>
-  <block id="3730904429a62b0e0defc58fca36a915" category="paragraph">I/Oモジュール:ステータス</block>
   <block id="61252ea3598dcec72eee2b579cc93a3f" category="paragraph">NS224シェルフの障害が発生したブートメディアを交換できます。ブートメディアの交換は、ドライブシェルフの電源をオンにした状態で、 I/O を実行中のまま、無停止で実行できます。</block>
   <block id="cd222c56bd862c1482d8e9937d65d53f" category="list-text">* NSM100モジュールを搭載したNS224のみ*：HAペアで、サポートされる最小バージョンのNSMファームウェアを搭載したONTAP 9.7以降がすでに実行されている必要があります。</block>
   <block id="93b1f886febe706b068327d5a32a6de5" category="paragraph">シェルフでNSMファームウェアバージョン0111以降が実行されていない場合は、ブートメディアを交換できません。NSMを交換する必要があります。</block>
@@ -11252,23 +11237,17 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3354017d0219e20af53d56d429ce46e6" category="list-text">NSMカバーを閉じ、固定されるまで取り付けネジを時計回りに回します。</block>
   <block id="ba899e38071a77eb1dfc114477d7df7e" category="summary">使用しているプラットフォームまたはシェルフでサポートされているONTAPのバージョンを確認します。</block>
   <block id="7e5d96420c04db907e37ffc0f25670b5" category="doc">ONTAPのハードウェアとソフトウェアの互換性</block>
-  <block id="7d52a2ea081400d43cc4e5df6690bda4" category="paragraph">ONTAPストレージシステムは、複数のバージョンのONTAPソフトウェアと互換性があります。ストレージシステムおよびドライブシェルフでサポートされるONTAPのバージョンを確認します。</block>
   <block id="66a2f01bbe5e27a2d0a21ef15725c491" category="paragraph">ONTAPハードウェアシステムの完全な構成サポートと制限事項については、を参照してください<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block>。ONTAP 9ソフトウェアの既知の問題、制限事項、およびアップグレードに関する注意事項の詳細については、を参照して<block ref="84fe5db170ffeba3db16dd5c6d7a58db" category="inline-link-rx"></block>ください。</block>
   <block id="c43fddbfefcc8dab0b365319ffc7ad2f" category="summary">ONTAPハードウェアシステムの新しいプラットフォームについて説明します。</block>
   <block id="b1243a1d02acf9453220663ea4294abf" category="paragraph">ONTAPハードウェアシステムの新機能について説明します。</block>
   <block id="73b3856e20fbea83dc1573f8203ad6a4" category="section-title">2024年12月</block>
-  <block id="1129d1f188d1633e51b36c0cd887e4d2" category="section-title">AFF A20、AFF A30、およびAFF A50</block>
-  <block id="a8eff28ccaa252cbf7a07cd04596e572" category="paragraph">新しいAFF A20、A30、A50ハードウェアシステムは、ハイパフォーマンスでインテリジェントな包括的なデータ管理機能をより多くのお客様やワークロードに拡張します。</block>
   <block id="909cc883ddbed6fc06a25647ba1f212b" category="paragraph">このシステムは、MLベースのランサムウェアのリアルタイム検出、シームレスなクラウド統合、AI、VMware、データベース、分析などのミッションクリティカルなワークロードに対して卓越したパフォーマンスを提供し、ブロック、ファイル、オブジェクトストレージをサポートします。</block>
   <block id="3c8e670cb2f634a0b68672d5f01ec686" category="inline-link-macro">AFF Aシリーズシステムの詳細</block>
   <block id="cc41bf37432333539dd5ceeb6841880b" category="paragraph"><block ref="ec47a919cf5fb6b1b188d40c3428c9bc" category="inline-link-macro-rx"></block>です。</block>
-  <block id="2bb9fccffbf46bf730e526d835bed9ef" category="section-title">AFF C30、AFF C60、およびAFF C80</block>
-  <block id="b58cef9baa77e44e93bac28d90989c0f" category="paragraph">新しいAFF C30、AFF C60、AFF C80ハードウェアシステムは、業界をリードする1.5PBのストレージ容量を2ラック環境で提供することで、企業がフラッシュのパフォーマンスと効率性を向上できるようにします。</block>
   <block id="f96ee2b3f1f5c0e57287bc570e1eafdd" category="paragraph">このソリューションは、60TBドライブによる卓越した密度、パフォーマンスの向上、I/Oの柔軟性の向上を実現します。</block>
   <block id="e3433be76af8797b5b6d90a688a36fd9" category="inline-link-macro">AFF Cシリーズシステムに関する詳細情報</block>
   <block id="6541c02105210891ec02de804f02e6af" category="paragraph"><block ref="607826820a51c80a539353cde0434437" category="inline-link-macro-rx"></block>です。</block>
   <block id="f31f11743f1dfba18e9f008e2956d24e" category="section-title">2024年9月</block>
-  <block id="a69d86173a4fe9e3cf70845ad40fd15a" category="paragraph">新しいASA R2ハードウェアシステム（ASA A1K、ASA A70、およびASA A90）は、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルなエクスペリエンスを実現します。</block>
   <block id="d6ee5f134cf5e78f59ab20a782f67ed3" category="paragraph"><block ref="2f9305bd6f8a2949646123561cb92ab4" category="inline-link-macro-rx"></block>です。</block>
   <block id="8a3c98db91e158f54dfa013fc3f590be" category="paragraph">新しいFAS70およびFAS90ハードウェアシステムは、手頃な価格ながらハイパフォーマンスなバックアップストレージを提供し、ランサムウェア攻撃からリカバリするためのセキュアなサイバーヴォールトを実現します。</block>
   <block id="8a974b4a7078e973c2cf1c4794446802" category="paragraph"><block ref="be362a4689d663d0b6df6b6c151241ba" category="inline-link-macro-rx"></block>です。</block>
@@ -11296,4 +11275,27 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="41d12fb2ee8b3c6f7046a51242a72a75" category="sidebar">C80シャーシ</block>
   <block id="3e4165f9c6936da0daac33c7b7ca4957" category="sidebar">C80コントローラモジュール</block>
   <block id="8f31b4d50eb915a24104b3cb7a5cfcb5" category="sidebar">C80 I/Oモジュール</block>
+  <block id="325e928b605da8dd44aca29a94da895c" category="list-text">Loaderでローカルポートが設定され、パートナーノードから実行されるため、ブートメディアのリカバリプロセスを監視し<block ref="83a4445bcfef2bd179eaffaabe3b3c20" prefix=" " category="inline-code"></block>ます。</block>
+  <block id="a0828c6d7f89434e71860268e9d651b2" category="list-text">パートナーノードが完全に稼働してデータを提供したら、クラスタ全体でOKMキーを同期します。</block>
+  <block id="4230ba5bca3d60bf63b2c39aa992ed84" category="paragraph">AFF AシリーズおよびAFF Cシリーズシステムは、次のONTAPリリース以降でサポートされます。</block>
+  <block id="5fce742f9b06c803a2f04474b1d16eef" category="paragraph">ASA R2システムは、次のONTAPリリース以降でサポートされます。</block>
+  <block id="7ca2ebdb81019f1e7c8ef7f9d66913b9" category="paragraph">ASAシステムは、次のONTAPリリース以降でサポートされます。</block>
+  <block id="5f0845697f3ce72b24247637120d7754" category="paragraph">FASシステムは、次のONTAPリリース以降でサポートされます。</block>
+  <block id="c09b5be4c2da04f4040eef1878f258aa" category="inline-link">ONTAP 9 のドキュメント</block>
+  <block id="8d3ee503b5cc36e3c6b7cbecb34eb387" category="list-text">初期設定が完了したら、ONTAPのその他の機能の設定についてに進みます<block ref="10428d07d2ebc7af9af6725963887c6d" category="inline-link-rx"></block>。</block>
+  <block id="98c507d8c3fe68bb4281ebd9f9ea9418" category="paragraph">I/Oモジュール:注意</block>
+  <block id="6a78e833d1d48c3ad3f5fcd87dc0f4d4" category="cell">I/Oモジュールの注意</block>
+  <block id="402ff9cfbe902d88550764b90aa6cb76" category="paragraph">I/Oモジュールがありません</block>
+  <block id="5f99c34270a42ab74283fdec312239c2" category="paragraph">ONTAPストレージシステムは、複数のバージョンのONTAPソフトウェアと互換性があります。ストレージシステムおよびドライブシェルフでサポートされるONTAPのバージョンを確認します。</block>
+  <block id="6e078dd140fc50f53b5f2c4385d718bd" category="section-title">NSM100Bモジュールを搭載したNS224シェルフ</block>
+  <block id="e0d3410def69ea25d4a73fbd6f0bbed2" category="paragraph">NSM100Bモジュールを搭載したNS224ドライブシェルフは、優れたパフォーマンスと柔軟性を提供し、デジタル変革のニーズに応えます。</block>
+  <block id="fc65336c1bd8a062ad4562b40078d3fe" category="inline-link-macro">NS224シェルフでハードウェアシステムのストレージを拡張</block>
+  <block id="7b19cd7f52ff90324c1acacbd46001f8" category="paragraph"><block ref="66341a595da7a2db1d6f0b3d14139d08" category="inline-link-macro-rx"></block>です。</block>
+  <block id="7158496fa6a387eea85c17aa48eba85e" category="section-title">AFF A20、AFF A30、およびAFF A50</block>
+  <block id="a09039ce1af61d84b9a954849fc88067" category="paragraph">新しいAFF A20、A30、A50ハードウェアシステムは、ハイパフォーマンスでインテリジェントな包括的なデータ管理機能をより多くのお客様とワークロードに拡張します。</block>
+  <block id="bc44b220c4c2656e94204809ef23fa40" category="section-title">AFF C30、AFF C60、およびAFF C80</block>
+  <block id="67a30af096daac591ce29425c8d0e867" category="paragraph">新しいAFF C30、AFF C60、AFF C80ハードウェアシステムは、業界をリードする1.5PBのストレージ容量を2ラック環境で提供することで、企業がフラッシュのパフォーマンスと効率性を向上できるようにします。</block>
+  <block id="007ace9cd707338f2e4f8f25ed4bb0b8" category="section-title">NSM100Bシェルフモジュールを搭載したNS224ドライブシェルフ</block>
+  <block id="e3f4eea829fa5771d87c60fb05124223" category="paragraph">NS224と新しいNSM100B NVMeストレージ拡張モジュールで、データセンターの機能を強化できます。新しいNSM100Bシェルフモジュールは、NSM100モジュールの直接交換用として設計されており、既存の環境にシームレスに統合できます。NS224シェルフの直接接続型構成とスイッチ接続型構成の両方がサポートされるため、ストレージシステムの効率性と拡張性を最適化する優れた柔軟性が実現します。</block>
+  <block id="02ad6883c66e836f88f8ac60378af5d5" category="paragraph">新しいASA R2ハードウェアシステム（ASA A1K、ASA A70、およびASA A90）は、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルなエクスペリエンスを実現します。</block>
 </blocks>
