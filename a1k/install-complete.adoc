@@ -11,7 +11,7 @@ summary: クラスタ検出を使用して、スイッチとラップトップ�
 
 
 [role="lead"]
-ストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。
+AFF A1Kストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。
 
 
 
@@ -104,4 +104,4 @@ NetAppでは、System Managerを使用して新しいクラスタをセットア
 System Managerでは、ノード管理IPアドレスの割り当て、クラスタの初期化、ローカル階層の作成、プロトコルの設定、接続されたストレージの初期プロビジョニングなど、クラスタのセットアップと設定のワークフローをシンプルかつ簡単に実行できます。
 
 .次の手順
-クラスタが初期化されたら、をダウンロードしてを実行し、  https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^] セットアップを確認します。
+クラスタが初期化されたら、をダウンロードしてを実行し、 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]セットアップを確認します。

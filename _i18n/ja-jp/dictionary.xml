@@ -8307,7 +8307,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="29b62d617481485649ea2d5b54fca512" category="image-alt">クラスタHAケーブル</block>
   <block id="8c1f3262727530ad8d4652a5b107e167" category="paragraph">*クラスタ/ HAインターコネクトケーブル*</block>
   <block id="e5878ec206640d3f0489cbe562e56856" category="paragraph">次に、一般的なホストネットワークのケーブル接続例を示します。ご使用のシステム構成については、を参照してください <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 。</block>
-  <block id="4f223663358c0dcb4aac038f73fdf58d" category="admonition">クラスタトラフィックとHAトラフィックのシステムパフォーマンスを最大限にするためには、ホストネットワーク接続にポートe1bとe7bを使用しないことを推奨します。パフォーマンスを最大化するには、別のホストカードを使用します。</block>
   <block id="d2163ed76fe91108f8a1e58f08924448" category="paragraph">* 100GbEケーブル*</block>
   <block id="dca4917cf460ca0094ae46e8d7178c17" category="image-alt">100Gbイーサネットケーブル</block>
   <block id="63498c78e69ef7b5cc7cd5a1c0c3b724" category="image-alt">100Gbイーサネットネットワークへのケーブル接続</block>
@@ -8389,16 +8388,12 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="dc4cb3e8c6b9abe025aa10b2d8d4b6f5" category="list-text">ラップトップを管理サブネット上のスイッチに接続します。</block>
   <block id="5dc15886a7be0b02974c471249fd2702" category="image-alt">コンソール接続</block>
   <block id="9e7e8b48adc159107d0baf9021253c61" category="list-text">管理サブネット上のTCP/IPアドレスを使用して、ラップトップに割り当てます。</block>
-  <block id="d4b97f0234af8d33d5ad6190a7930ff4" category="image-alt">一般的な電源接続図</block>
   <block id="71abffb89587fc128eb09ec9ef2dd7e1" category="list-text">LEDが点滅し、ファンが起動します。これは、コントローラの電源がオンになっていることを示します。</block>
-  <block id="671754b07475807f952083aca6f98a97" category="list-text">各電源装置の固定装置を使用して、電源ケーブルを固定します。</block>
   <block id="b20f6daaff695ed207299929a85ec2f0" category="summary">AFF A1Kプラットフォームの設置を準備します。</block>
   <block id="32271edc7814b81370e65a0b9ea22010" category="list-text">USB /シリアル接続を備えたラップトップまたはコンソール</block>
   <block id="5c454c254f4e346b0d54dac30e743b57" category="list-text">ストレージシステムを設定するためのWebブラウザへのアクセス</block>
   <block id="00db13616a21c862d199d7fae938549d" category="image-alt">AFF A1Kリフティング警告アイコン</block>
-  <block id="c55a46464ae8350cc2bff0a097df93e1" category="image-alt">NS224の持ち上げに関する注意事項</block>
   <block id="92c8397408f55d9526d554c55cde3d22" category="section-title">ステップ1：サイトを準備する</block>
-  <block id="0b75c01928f08a952353b4ed76796fb5" category="list-text">十分なラックスペースがあることを確認します。</block>
   <block id="588fcd6ecf982925ddac393983abe360" category="list-text">4U（プラットフォームのHA構成）</block>
   <block id="11b5963f8c4ca653ab5f43bc4b9828df" category="inline-link">スイッチのドキュメント</block>
   <block id="6630a85163683d2127a4b50c91d77093" category="section-title">手順2：箱を開封する</block>
@@ -8415,8 +8410,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7ceeb9e2de47574891152d45e033aea1" category="list-text">電源コード</block>
   <block id="b2cdf9589096f203f816541f43a15f6c" category="list-text">ネットワークケーブル</block>
   <block id="06d2646a8077631818b55a12dc3c58ac" category="list-text">管理イーサネットケーブル（RJ-45ケーブル）</block>
-  <block id="3ad4852daca6060d9a43783d0d67578c" category="list-text">USB-Cシリアルポートケーブル</block>
-  <block id="501009762675d8b94f6d05080102eaa1" category="paragraph">番号は、納品書、確認用Eメール、または開梱後にコントローラのシステム管理モジュールで確認できます。</block>
   <block id="8a55a5b89690f6046e6de8dd649ff837" category="list-text">ユーザ名とパスワードを使用してサインインします。</block>
   <block id="5c83cedabfd78baf337988a092bcf317" category="list-text">[システム]&gt;*[マイシステム]*を選択します。</block>
   <block id="12dc2a66a130388ec482398caa6ce95b" category="list-text">[ 今すぐ登録 ] をクリックしてアカウントを作成します。</block>
@@ -8999,51 +8992,27 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6d194eccb9cd88bfbcde1df65103cbb4" category="list-text">プロンプトが表示されたら、キーストアUUIDとクラスタUUIDの値を入力します。</block>
   <block id="417968dd9c410e2ebdf82236e2a6f1d8" category="doc">手順1：ストレージコントローラをネットワークに接続する</block>
   <block id="c0b05ac617b77a5c10f26756e6ef04f2" category="list-text">光スイッチに接続する場合は、ポートにケーブル接続する前に、Small Form-factor Pluggable（SFP）トランシーバをコントローラポートに挿入します。</block>
-  <block id="1463138ead0bd5def70e2d744eddfc0a" category="paragraph">コントローラ同士、およびホストネットワークに直接接続します。</block>
-  <block id="73672e433c39ed0cc0cdb0334e672525" category="paragraph">ストレージシステムをホストネットワークスイッチに接続する方法については、ネットワーク管理者にお問い合わせください。</block>
-  <block id="a5e51e5f50ca83720f1d0d8b17c1e93b" category="paragraph">ここでは、一般的な設定について説明します。具体的なケーブル接続は、ご使用のストレージシステム用に注文したコンポーネントによって異なります。設定およびスロットプライオリティの詳細については、を参照してください <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
-  <block id="8c8e768c4d86293c1b8fd551cc2a1a4e" category="open-title">ASA A1Kストレージシステム</block>
   <block id="10ddcbe568df11daf470f9b11ab92b62" category="paragraph">ストレージコントローラを相互に接続してONTAPクラスタ接続を確立し、各コントローラのイーサネットポートをホストネットワークに接続します。</block>
   <block id="ee6c90ad735c4fc892e900202d6ff034" category="list-text">クラスタ/ HAインターコネクトケーブルを使用して、ポートe1aとe1a、ポートe7aとe7aを接続します。</block>
-  <block id="491359bee867965cfa22411b77d88b8d" category="list-text">コントローラAのポートe1aをコントローラBのポートe1aに接続します。</block>
-  <block id="1a33712b794a97041f7338604473e7a3" category="list-text">コントローラAのポートe7aをコントローラBのポートe1aに接続します。</block>
   <block id="8637ca13eb3c1a10bb4383130268c950" category="list-text">イーサネットモジュールポートをホストネットワークに接続します。</block>
   <block id="a6992cc3b8eb7adfbce0724b4ed8e4a4" category="list-text">図に示すように、ポートe9aとe9bをイーサネットデータネットワークスイッチに接続します。</block>
   <block id="1cddeaef0a0b08b7178f9023a157d0fc" category="list-text">10 / 25GbEホストネットワークスイッチを接続します。</block>
   <block id="9d62d1718b5465944796c5fb854d0f5d" category="list-text">1000BASE-T RJ-45ケーブルを使用して、コントローラ管理（レンチ）ポートを管理ネットワークスイッチに接続します。</block>
-  <block id="c70a96a223c88c75dde3d248fd91e2b1" category="open-title">ASA A70およびASA A90ストレージシステム</block>
   <block id="bd078f69cc3533ea9bc3100deef482d0" category="list-text">クラスタ/ HAインターコネクトケーブルを使用して、ポートe1aとe1aを接続し、ポートe7aとe7aを接続します。</block>
-  <block id="b4e1b9768de4fea1a231630708e9f914" category="section-title">手順2：ストレージコントローラをストレージシェルフに接続する</block>
   <block id="581d5dbeb2b657af56ca70f32099c9d4" category="paragraph">次のケーブル接続手順では、1台のシェルフと2台のシェルフにコントローラを接続する方法を示します。最大4台のシェルフをコントローラに直接接続できます。</block>
-  <block id="44101c78d328291236c1e6a8035b52d1" category="open-title">ASA A1Kシステム</block>
-  <block id="b3623f40c8ee8913ca5a6a7756d97ce9" category="paragraph">次のいずれかのケーブル接続オプションを、ご使用の環境に合わせて選択します。</block>
-  <block id="200ab92b71653aeb6904db07dcb0a81b" category="example-title">オプション1：コントローラを1台のNS224ストレージシェルフにケーブル接続する</block>
   <block id="46d73bd828c75397e5f3cca81c4236e1" category="paragraph">各コントローラをNS224シェルフのNSMモジュールに接続します。図は、各コントローラからのケーブル接続を示しています。コントローラAのケーブル接続は青、コントローラBのケーブル接続は黄色です。</block>
   <block id="cdc609c675d24b2fff8b5acc2e37e89e" category="list-text">コントローラAで、次のポートを接続します。</block>
   <block id="ab7ef1e990b02e4f310f950e86665f24" category="list-text">コントローラBで、次のポートを接続します。</block>
-  <block id="150e5856fceb6b2cacbe569c1921d330" category="example-title">オプション2：コントローラを2台のNS224ストレージシェルフにケーブル接続する</block>
   <block id="348bd528033e13e79fcfb366a5cd5af4" category="paragraph">各コントローラを両方のNS224シェルフのNSMモジュールに接続します。図は、各コントローラからのケーブル接続を示しています。コントローラAのケーブル接続は青、コントローラBのケーブル接続は黄色です。</block>
-  <block id="40e080201f076f6a17456e5af8be4fa3" category="open-title">ASA A70 および A90 システム</block>
-  <block id="d2304a06aa5c8ddc89113b1713a1c67e" category="example-title">オプション1：コントローラを1台のNS224ストレージシェルフに接続する</block>
-  <block id="d4e2126c6118383149b1e943e8bba458" category="example-title">オプション2：コントローラを2台のNS224ストレージシェルフに接続する</block>
-  <block id="e934f6c11392ce362b9b522d3905e905" category="list-text">コントローラAで、次のポートを接続します。</block>
-  <block id="b54dd6af6e848badd84700a68025355a" category="paragraph">ストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。</block>
   <block id="9567b57fbc256ab6a2a904d9e65e90fc" category="paragraph">を使用し<block ref="2b7eb894c1625ebcb138cf06e4e24423" category="inline-link-rx"></block> て、クラスタのセットアッププロセスで必要となる値を記録します。デフォルト値が指定されている場合は、その値を使用するか、独自の値を入力できます。</block>
   <block id="2b613a5cfe94ed4e246fd0b8d8e788d7" category="inline-link-macro">ストレージ・システムの電源をオンにする</block>
   <block id="62b1b8fecbe53d21e29b3193b917d52b" category="paragraph">ラップトップがシリアルコンソールポートに接続され、コントローラの電源がオンになっていることを確認します。手順については'を参照して <block ref="7c573676638f479dced3a24193374cdc" category="inline-link-macro-rx"></block> ください</block>
   <block id="c0cca90a0ea793a9983b3bf5d8f21117" category="paragraph">NetAppでは、System Managerを使用して新しいクラスタをセットアップすることを推奨しています。セットアップ手順については、を参照してください<block ref="21993ef26df9bd69488ae5f93ea51b95" category="inline-link-rx"></block> 。</block>
-  <block id="eb060a6205d76a5e75ea0815f4f83b5a" category="paragraph">クラスタが初期化されたら、をダウンロードしてを実行し、 <block ref="7064c89577900622f24a070c24ebbaa7" category="inline-link-rx"></block> セットアップを確認します。</block>
   <block id="25e29897c37b7e5f9f9f0d8aac2e8c21" category="list-text">レールキットに手順書が同梱されていることを確認します。</block>
-  <block id="6a82938033e352436834589b4000acd1" category="list-text">ストレージシステムとストレージシェルフの重量に関連する安全上の問題に注意してください。</block>
   <block id="cd5270ea2c99376e2e028058d02bfa65" category="list-text">ストレージ・システム内の通気は'ベゼルまたはエンド・キャップが取り付けられている前面から入り'ポートが取り付けられている背面から排出されます</block>
-  <block id="a23c8df519f5dec5dcc76f5989d937c4" category="list-text">キットに付属の手順書に従って、ストレージシステムとストレージシェルフのレールキットを必要に応じて設置します。</block>
   <block id="1c8c6696ac03ef01690be450b3767032" category="list-text">キャビネットまたはTelcoラックにストレージシステムを設置して固定します。</block>
   <block id="bdb39b5926a304a8f387b036b6fd9445" category="list-text">キャビネットまたはTelcoラックの中央にあるレールにストレージシステムを配置し、ストレージシステムを下から支えて所定の位置にスライドさせます。</block>
   <block id="0a508c750e66a219b3bc9449125a4672" category="list-text">付属の取り付けネジを使用して、ストレージシステムをキャビネットまたはTelcoラックに固定します。</block>
-  <block id="c91c25b22baf3cf726a3ecc4b7e7f23f" category="list-text">ストレージシェルフを設置します。</block>
-  <block id="76f6a6a53ead4da24271bca7a9b976e0" category="list-text">ストレージシェルフの背面をレールに合わせ、シェルフを下から支えてキャビネットまたはTelcoラックに挿入します。</block>
-  <block id="8ac98c640ab335c330eb3d45c03096ad" category="paragraph">複数のストレージシェルフを設置する場合は、最初のストレージシェルフをコントローラの真上に配置します。2台目のストレージシェルフをコントローラの真下に置きます。ストレージシェルフを追加する場合は、このパターンを繰り返します。</block>
-  <block id="871681e86e80556b261166721e0bbe3b" category="list-text">付属の取り付けネジを使用して、ストレージシェルフをキャビネットまたはTelcoラックに固定します。</block>
   <block id="c5eaaf4a6fa532356e5d0189384e0e34" category="list-text">ケーブルマネジメントデバイスをストレージシステムの背面に接続します。</block>
   <block id="36eaeecf3fe5d82e498290c50c773db1" category="list-text">ベゼルをストレージシステムの前面に取り付けます。</block>
   <block id="f044e75ec5037aabefb204d1365ba96b" category="image-alt">NS224シェルフIDの変更</block>
@@ -9058,43 +9027,27 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1e6aa1713a8e26a3cecae4cd918e20a0" category="list-text">シェルフIDボタンを押して放し、目的の0~9の数字になるまで番号を進めます。</block>
   <block id="fbfc6fb88e89fa9fd421347ccdc222c8" category="list-text">目的の番号をロックし、2桁目の番号の点滅が止まるまでシェルフIDボタンを押し続けてプログラミングモードを終了します。</block>
   <block id="3a7f97a4c78b33a1c47a571494b17709" category="paragraph">デジタルディスプレイの両方の数字が点滅し始め、約5秒後に黄色のLEDが点灯して、保留中のシェルフIDがまだ有効になっていないことを通知します。</block>
-  <block id="51ebfc33ce787da893819e3a68129a19" category="paragraph">ストレージシェルフの電源をオンにして一意のIDを割り当てたら、ストレージコントローラの電源をオンにします。</block>
-  <block id="9be560fd489238e97542aa683a683199" category="list-text">ラップトップをシリアルコンソールポートに接続します。これにより、コントローラの電源がオンになっているときのブートシーケンスを監視できます。</block>
   <block id="cd76e142e3adabbfc33b1de3c074b2cb" category="list-text">ファンは最初に起動するときに非常にうるさい場合があります。起動時のファンの異音は正常。</block>
   <block id="8d30b064af728ae0d0217b4663afa97d" category="paragraph">ストレージシステムを設置するには、設置場所および使用するキャビネットまたはラックが構成の仕様を満たしていることを確認してください。</block>
   <block id="784289434de2772034240714a84f80a9" category="list-text">を使用して<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>、サイトがストレージシステムの環境要件と電力要件を満たしていることを確認します。</block>
   <block id="6ac193907083dd66438c89227559f4dc" category="list-text">NS224ストレージシェルフごとに2U</block>
-  <block id="f7baf09cec0bef6d7451bbfb2506b5d8" category="paragraph">*注：*<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>サポートされている他のストレージシェルフのラックスペース要件については、を参照してください。</block>
   <block id="2df7e61cfe4bf7857f54171cec3da494" category="list-text">必要なネットワークスイッチを取り付けます。</block>
   <block id="6734bc0c212e4efd373707768ae51b81" category="paragraph">ストレージシステムに使用するキャビネットやラックが必要な仕様を満たしていることを確認したら、すべての箱を開封し、内容を納品書の項目と比較します。</block>
-  <block id="2a6f49472befe7fd3e056a4a6fedfe00" category="list-text">ストレージシェルフ</block>
   <block id="256397940895ecf3de88fca8684f0a2d" category="list-text">ストレージケーブル（追加のストレージを注文した場合）</block>
   <block id="9bea2d1b752b83d2f602c5b85b99a901" category="section-title">手順3：ストレージシステムを登録する</block>
-  <block id="b36d5598e44a73dff0e120c41f02ee3f" category="paragraph">設置場所がストレージシステムの仕様要件を満たしていることを確認し、発注したパーツがすべて揃っていることを確認したら、システムを登録する必要があります。</block>
-  <block id="04a9069d60a270b8326c0bf8dece532c" category="list-text">ストレージシステムのシリアル番号を確認します。</block>
   <block id="f5c45bcc73f02c7f2b1398ee78576a7a" category="list-text">に進みます<block ref="1850de052c61829b534b07ba1a2ca402" category="inline-link-rx"></block>。</block>
   <block id="6918c0735e9cef59385e60d3f94d7115" category="list-text">ストレージシステムの登録が必要かどうかを判断します。</block>
   <block id="8f45a9f1fcb944bee42c078bdeacd8ac" category="cell">ユーザのタイプとアクセス方法</block>
   <block id="e3df4624e4d36502b5d044730eab97cc" category="cell">実行する手順</block>
   <block id="d3f2dc7623074c370346f082b621f2db" category="paragraph">NetAppの既存のお客様</block>
-  <block id="8cc04c4151dd22af84b31cd55d6c5f57" category="list-text">新しいシリアル番号が表示されていることを確認します。</block>
   <block id="d193a53b34315bee1bed499f665686ce" category="list-text">そうでない場合は、NetAppの新規のお客様向けの手順に従います。</block>
   <block id="daee797d0bf63a91fe069e1df88d7923" category="paragraph">NetAppの新規のお客様</block>
-  <block id="616ce92e68107b272305803b0da3016e" category="list-text">ストレージシステムのシリアル番号と要求された詳細を入力します。</block>
   <block id="38342a608d29c610e381db6c1bfd532c" category="doc">設置に必要な機器</block>
   <block id="3278b4b06a799dc3318232ebf4631179" category="paragraph">ストレージシステムを設置するには、次の機器および工具が必要です。</block>
   <block id="8dd75d4e14815a2e3e3154ea67cd841e" category="list-text">静電放電（ESD）ストラップ</block>
   <block id="2e9e7e3bf632d3a831fdcb0a200d53b7" category="list-text">NS224ストレージシェルフIDを設定するためのペーパークリップまたはボールペン</block>
   <block id="8170c4932dac7ac5a018213e28744cab" category="section-title">吊り上げ時の注意事項</block>
-  <block id="631a629b49692f05c6c442b2053abb24" category="paragraph">ストレージシステムとストレージシェルフは重量があります。これらのアイテムを持ち上げたり移動したりするときは、注意してください。</block>
-  <block id="522bd666055071c79860849502df1178" category="section-title">ストレージシステムノオモミ</block>
   <block id="33f8da0ea30bb3eb60321a8d29715499" category="paragraph">ストレージシステムを移動または持ち上げるときは、必要な予防措置を講じてください。</block>
-  <block id="cc462bbdb3b8d9369a4c3f67dcc8095c" category="open-title">A1K</block>
-  <block id="5ea1cbb0d935be77a5bd89c7ae6df537" category="paragraph">A1Kストレージシステムの重量は最大28.5 kg（62.83ポンド）です。システムを持ち上げるには、2人で作業するか、油圧リフトを使用します。</block>
-  <block id="b1f39e4d9956723a4e80ea4844651e57" category="open-title">A70およびA90</block>
-  <block id="dd9f2d53c1722b6c2ac842b778803e5a" category="paragraph">A70ストレージ・システムまたはA90ストレージ・システムの重量は'最大68.8 kg（151.68ポンド）ですシステムを持ち上げるには、4人で作業するか、油圧リフトを使用します。</block>
-  <block id="336e0262f6402efd45d8cf9d7ae13e8c" category="section-title">収納シェルフの重量</block>
-  <block id="2426c13bd8c78d02a8ccbd2a43174936" category="paragraph">NS224ストレージシェルフの重量は最大30.29kg（66.78ポンド）です。ストレージシェルフを持ち上げるには、2人で作業するか、油圧リフトを使用します。ストレージシェルフの重量がバランスを崩さないように、すべてのコンポーネント（前面と背面の両方）を保管してください。</block>
   <block id="fa81f583d8b6c7dcaf8e26a5fcf5de52" category="list-text"><block ref="fa81f583d8b6c7dcaf8e26a5fcf5de52" category="inline-link-rx"></block></block>
   <block id="fde1abb5537b55c34521d414267b3f70" category="inline-link">ASA r2システム</block>
   <block id="5d6a7459a3583d9e29f4b486d809b6a1" category="list-text">ASA A1K</block>
@@ -9175,11 +9128,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e7536efd3b9d16674c0de677b471dab2" category="summary">必要な機器と、プラットフォームとシェルフの持ち上げに関する注意事項を確認します。</block>
   <block id="9715acc529a1f784f09c842c87aa8b94" category="doc">インストール要件- AFF A1K</block>
   <block id="203f80207b135ea7e43386a891f88e09" category="paragraph">AFF A1Kストレージシステムとストレージシェルフに必要な機器と、持ち上げる際の注意事項を確認します。</block>
-  <block id="7441be50cc1ffa7c8f6b88094fab2108" category="paragraph">AFF A1Kストレージシステムを設置するには、次の機器および工具が必要です。</block>
-  <block id="3330827a108d9ed79f76697fbb71af4c" category="paragraph">AFF A1KストレージシステムとNS224ストレージシェルフは重量があります。これらのアイテムを持ち上げたり移動したりするときは、注意してください。</block>
-  <block id="01b7bc7debacf02e21b4e5c1eec0bcf9" category="section-title">AFF A1Kストレージシステム</block>
-  <block id="bcc0f364176a6b86cafbe8e4dfce2a4a" category="paragraph">AFF A1Kストレージシステムの重量は最大28.5 kg（62.83ポンド）です。システムを持ち上げるには、2人で作業するか、油圧リフトを使用します。</block>
-  <block id="45e63469b991d33c068f31181b786804" category="section-title">NS224シェルフ</block>
   <block id="d03f5ec8a330688c4e047e99f5fecd12" category="inline-link-macro">AFF A1Kストレージシステムを設置する準備</block>
   <block id="95225809efab4457ee4a53c1a58dfb52" category="paragraph">ハードウェア要件を確認したら、<block ref="483aaa3c2f4f88e7b219b85383e864a7" category="inline-link-macro-rx"></block></block>
   <block id="e736c3581e7cc7eb9804edd4215c31b3" category="doc">故障した部品をNetApp - AFF A70 and AFF A90に返却します。</block>
@@ -9244,10 +9192,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="09f908c7739e53b3d2c38aa6643b223a" category="paragraph">AFF A70またはAFF A90ハードウェアの設置の準備が完了したら、次の<block ref="5d63ec75b552414f601ef48807f802a1" category="inline-link-macro-rx"></block>作業を行います。</block>
   <block id="4090848005a10223aa8682ab65a126b3" category="doc">インストール要件- AFF A70およびAFF A90</block>
   <block id="9d5550245778349bc21a4d66e8e5cc3e" category="paragraph">AFF A70またはAFF A90のストレージシステムとストレージシェルフに必要な機器と、持ち上げに関する注意事項を確認します。</block>
-  <block id="c9341c606e640aaa0d7045e6ee2fa517" category="paragraph">AFF A70またはAFF A90ストレージシステムを設置するには、次の機器と工具が必要です。</block>
-  <block id="1b8e66b9b4993a3fd09f38d7bd0611e0" category="paragraph">AFF A70 / AFF A90ストレージシステムとNS224ストレージシェルフは重量があります。これらのアイテムを持ち上げたり移動したりするときは、注意してください。</block>
-  <block id="0ac98212d833b45fb113f4133b2650ca" category="section-title">AFF A70およびAFF A90ストレージシステム</block>
-  <block id="c629dd83e83c71e99f9857aae4c70761" category="paragraph">AFF A70ストレージ・システムまたはAFF A90ストレージ・システムの重量は'最大68.8 kg（151.68ポンド）になることがありますシステムを持ち上げるには、4人で作業するか、油圧リフトを使用します。</block>
   <block id="e78eb711e1e947ddb92f05657d0347d1" category="inline-link-macro">AFF A70またはAFF A90ストレージシステムを設置する準備</block>
   <block id="2f2189cfd66651c01e836375bb7f1b05" category="paragraph">ハードウェア要件を確認したら、<block ref="cee013a212eeca03333769e1fffc4483" category="inline-link-macro-rx"></block></block>
   <block id="2eb78ee9cbbc9fb7df3e32a863ef8c78" category="doc">I/Oモジュールの追加- AFF A70およびAFF A90</block>
@@ -9472,12 +9416,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="9ed07b45e5e582647bc2df0721e7b250" category="paragraph">FAS70またはFAS90ハードウェアの設置の準備が完了したら、次の作業を行い<block ref="8b675fcd81dca00f177be4137f647288" category="inline-link-macro-rx"></block>ます。</block>
   <block id="6a9167a5943a2edebb563033d742c92d" category="doc">設置要件- FAS70およびFAS90</block>
   <block id="9ab04ed2ca5bf9f3a53912fe8182bc26" category="paragraph">FAS70またはFAS90ストレージ・システムおよびストレージ・シェルフに必要な機器と、持ち上げに関する注意事項を確認します。</block>
-  <block id="4bcd9ea495d5d070dfd7277883825b09" category="paragraph">FAS70またはFAS90ストレージ・システムを設置するには、次の機器および工具が必要です。</block>
-  <block id="8018872d59cd903e3be8eabdcfd25213" category="paragraph">FAS70およびFAS90ストレージシステム、NS224ストレージシェルフ、およびDS460Cストレージシェルフは重量があります。これらのアイテムを持ち上げたり移動したりするときは、注意してください。</block>
-  <block id="ba0156151072eea87a571e4e7ebcfc77" category="section-title">FAS70オヨヒFAS90ストレエシシステム</block>
   <block id="831a011f3efcfa2b56239bdfd5507fdc" category="paragraph">FAS70またはFAS90ストレージ・システムの重量は最大28.5kg（62.83ポンド）になることがあります。システムを持ち上げるには、2人で作業するか、油圧リフトを使用します。</block>
   <block id="d7c4e8ded75a649c909a48d80b0ce125" category="image-alt">FAS70およびFAS90の持ち上げに関する注意アイコン</block>
-  <block id="aec8e07370e7c72963dcbf3098d2a8ad" category="section-title">DS460Cシェルフ</block>
   <block id="3f7ff5a5fa66b539e61c49c16ecbff4c" category="image-alt">DS460Cの持ち上げに関する注意事項</block>
   <block id="6948cb33670435c578dc2ed5f9bd0547" category="inline-link-macro">FAS70またはFAS90ストレージ・システムの設置の準備</block>
   <block id="5060dc7c2f8e62d845323bb56c316f67" category="paragraph">ハードウェア要件を確認したら、<block ref="f9fa58ae9ecc3e85b1db488d30bad78e" category="inline-link-macro-rx"></block></block>
@@ -9559,12 +9499,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="bbd90c57f0c4facd0e407d460b63f5e4" category="sidebar">FAS70およびFAS90コントローラモジュール</block>
   <block id="6aa2bbbbcd863a688ecea951a078cc57" category="sidebar">FlashCacheモジュール</block>
   <block id="9d6e68abc86ef52726565c7e52c9dea7" category="image-alt">システムシリアル番号の例</block>
-  <block id="acaf98d7d873f9a7ee774034dc1440fc" category="image-alt">AFF A90 and AFF A70 weight cautionアイコン</block>
   <block id="54425f945644281ccaf6201b998f169f" category="paragraph"><block ref="54425f945644281ccaf6201b998f169f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e41a410f85201d7cc87e022e1f2daf34" category="paragraph">ラップトップでネットワーク検出を有効にしている場合は、クラスタの自動検出を使用してセットアップと設定を完了できます。</block>
-  <block id="637d6f599c1184d1c5de273700d7924f" category="list-text">ストレージシステムに付属のコンソールケーブルを使用して、ラップトップにコンソールケーブルを接続し、コントローラのシリアルコンソールポートを接続します。</block>
-  <block id="6b66db132383abf32640c51ec249e853" category="list-text">ストレージシステムがブートを開始します。初回のブートには最大 8 分かかる場合があります。</block>
-  <block id="26e7314ba01a2bdc4fda67ee84154359" category="list-text">4U（ストレージシステムのHA構成）</block>
   <block id="f31303ddb8ada38aed08c2bb8f9d8e6c" category="list-text">ストレージシステム</block>
   <block id="f65a3f7f8789fde53b9d1f80f9881d85" category="paragraph">ONTAP 9 .16.0</block>
   <block id="cfb74b9f3447e3aada1f3cbeb61c7028" category="inline-link">ONTAP-285173-ADPが10本以上の内蔵ドライブを搭載したAFF A150にスペアルートパーティションを残さない</block>
@@ -9907,11 +9843,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b8dd2898e8ee20a6f6cb34867845aa17" category="list-text">別のクラスタノードまたはKMIPサーバCAの/cfcard/kmip/certs/CA.pemファイルのコピー。</block>
   <block id="5943dcc79f4be51c7946faa01081c8c7" category="admonition">システムで最初にONTAP 9 .10.1以降を実行していた場合は、に記載されている手順を使用してください<block ref="b14f44ab326196475bf1d94f7e3821ad" category="inline-link-rx"></block>。システムの最初のONTAPリリースが不明な場合は、を参照してください<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
   <block id="6379280c267113ec35e5881e1b0f65bb" category="paragraph">各シェルフは一意のシェルフIDで識別されます。このIDにより、ストレージシステムの設定内でシェルフが区別されます。</block>
-  <block id="937eeb311ae4c7f36059ec45705ae05b" category="list-text">有効な外部シェルフIDは01~99です。</block>
   <block id="ce4b2f7741d87ac6c37e8727ca9ad20a" category="paragraph">コントローラに内蔵シェルフ（ストレージ）が統合されている場合は、固定シェルフID 00が割り当てられます。</block>
-  <block id="9944ff6c526e81f7d9ce060adc105e86" category="list-text">シェルフIDボタンを押して放すと、目的の番号（0~9）に達するまで番号が進みます。システムにオンボードストレージが搭載されている場合は、1~9になります。</block>
   <block id="52f79b2833c42027e63e45681585067e" category="example-title">代わりにこれらのプロンプトが表示される場合があります</block>
-  <block id="e65e1ac152dcb95552c1c1f62ceaf393" category="paragraph"><block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix="" category="inline-code"></block>コマンド。</block>
   <block id="85ef91c4d71faa53c83efc7222148253" category="video-title">NS224シェルフのブートメディアを交換</block>
   <block id="bed8800ffb3dfb17d15fabcbf21305be" category="video-title">NS224シェルフのDIMMの交換</block>
   <block id="adf9a21a79092388f61e544af11cd756" category="video-title">NS224シェルフのファンの交換</block>
@@ -10606,9 +10539,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="a23e2b87ba2a5b48b686bd85b652c686" category="list-text">必要に応じて、時刻をGMTで設定します。<block ref="0ad4ade5bf715a5335525c69a44424c1" prefix=" " category="inline-code"></block></block>
   <block id="53de4fa11536ef0442c7750efccf6f67" category="list-text">日時を確認します。</block>
   <block id="f409d381c4de00dcaf2050c848bff8e2" category="list-text">Loaderプロンプトで、と入力して<block ref="bfa99df33b137bc8fb5f5407d7e58da8" prefix=" " category="inline-code"></block>I/Oモジュールやその他のコンポーネントを再初期化し、コントローラをリブートします。</block>
-  <block id="1f7f3df907c101709203efb4bab8f946" category="paragraph">各コントローラをNS224シェルフのnsmに接続します。図は、各コントローラからのケーブル接続を示しています。コントローラAのケーブル接続は青、コントローラBのケーブル接続は黄色です。</block>
-  <block id="482b09bc81dba0cc246c5ee5bfa63dc2" category="paragraph">各コントローラを両方のNS224シェルフのnsmに接続します。図は、各コントローラからのケーブル接続を示しています。コントローラAのケーブル接続は青、コントローラBのケーブル接続は黄色です。</block>
-  <block id="d5c4ea0bd4062f3b335586480daba755" category="list-text">ポートe11bをシェルフ2、NSM Aのポートe0bに接続します。</block>
   <block id="5e096228421e8040641c1e77b70b9752" category="list-text">ストレージシステムとシェルフの重量に関連する安全上の問題に注意してください。</block>
   <block id="a1ef0e50a49115f0c600ba32004b3c02" category="list-text">キットに付属の手順書に従って、ストレージシステムとシェルフのレールキットを必要に応じて設置します。</block>
   <block id="7d6993d4b57fba8118e248dd2051a8be" category="list-text">必要に応じてシェルフを設置して固定します。</block>
@@ -10652,7 +10582,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="017db3debbf4b1ed577798b78fd96b66" category="list-text">FAS70</block>
   <block id="649e9f4912bcf4af7efe489c6866eb1d" category="list-text">FAS90</block>
   <block id="3eab1bbd4a3f05ea0803f3bcf5fac9e5" category="list-text">FAS2750</block>
-  <block id="13b901139d96d3088b86d12d380ba57f" category="paragraph">ドライブシェルフは、NetApp AFF、ASA、FASシステム向けに設計されており、デジタル変革に必要なパフォーマンス、耐障害性、柔軟性を提供します。</block>
   <block id="61c05ca68a6ca538f3473986616103f2" category="paragraph">ドライブシェルフは、次のONTAPリリース以降で使用できます。</block>
   <block id="5c7fb5a9cab188683ddf4f0991a21e1c" category="list-text">NS224とNSM100Bモジュール</block>
   <block id="e9fc04f90ca55de311ddb1dfba04ecbc" category="list-text">NSM100モジュールを搭載したNS224シェルフ</block>
@@ -10703,7 +10632,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7dd75dd7ed57db82538f9394ec870940" category="doc">オンボード暗号化キーの確認- AFF A20、AFF A30、およびAFF A50</block>
   <block id="8c1c309a8934bc76c1690fc554f02c58" category="doc">リストア暗号化- AFF A20、AFF A30、およびAFF A50</block>
   <block id="d059c96eddd0b4b4a166d0c46c11f9f9" category="doc">リカバリイメージのブート（AFF A20、AFF A30、およびAFF A50）</block>
-  <block id="58074d051ee24c5fe9238ebc15f03c16" category="doc">要件と考慮事項- AFF A20、AFF A30、およびAFF A50</block>
   <block id="cb6f6bb6e53f2513d37ec540678d4269" category="doc">ブートメディアの交換ワークフロー- AFF A20、AFF A30、およびAFF A50</block>
   <block id="56b8cde3b1f3e08c4473d9b2684dcde7" category="paragraph-title"><block ref="444c1bf2e877f5617e8ce0a2ded57f4f" category="inline-image-macro-rx" type="image"></block><block ref="0caeda8d60cf80f7a042375ba653d60a" category="inline-link-macro-rx"></block></block>
   <block id="d0a34c5f741fcf4c8a27a4a0ebeb67d5" category="paragraph">ストレージシステムでセキュリティキー管理機能が有効になっているか、暗号化されたディスクがあるかを確認します。</block>
@@ -10871,8 +10799,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1594210318baaedcde7a9ee6cf877e2f" category="list-text">各コントローラ</block>
   <block id="b9d56fbafd9b44fad97bacb9a2bb786a" category="inline-link-macro">ストレージシステム用のハードウェアの設置</block>
   <block id="6cc83c1114ef7a72628c17c930f42046" category="paragraph">ストレージシステムの設置の準備が完了したら、次<block ref="32ef1f18704cc0c97dfcafcf18cacd02" category="inline-link-macro-rx"></block>の作業を行います。</block>
-  <block id="b86941c46a365645f6cca04da4b7f6ed" category="doc">設置要件と考慮事項- AFF A20、AFF A30、およびAFF A50</block>
-  <block id="7e20b5146ae177ed895704399c8a977b" category="paragraph">AFF A20、AFF A30、またはAFF A50ストレージシステムの要件と考慮事項を確認します。</block>
   <block id="810da8188a0c92df4fdc4ccf84b888d0" category="paragraph">A20、A30、またはA50ストレージシステムの重量は最大27.9 kg（61.5ポンド）です。ストレージ・システムを持ち上げるには、2人で作業するか、油圧リフトを使用します。</block>
   <block id="6eb0f75df27b0466f7984bf67accd904" category="paragraph">NSM100Bモジュールを搭載したNS224シェルフの重量は最大25.8kg（56.8ポンド）です。シェルフを持ち上げるには、2人で作業するか、油圧リフトを使用します。シェルフの重量がバランスを崩さないように、すべてのコンポーネント（前面と背面の両方）をシェルフに保管してください。</block>
   <block id="34ae4f1779c2db0223377cbefc6262df" category="image-alt">NSM100bを搭載したNS224の持ち上げに関する注意事項</block>
@@ -10900,7 +10826,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8818851bcff9f03737f9fd5705a45fa6" category="doc">オンボード暗号化キーの確認- AFF C30とAFF C60</block>
   <block id="a4455ae0c0c7969583856994395f0cde" category="doc">リストア暗号化- AFF C30およびAFF C60</block>
   <block id="3ec7c47dabf1d4f35a400c4071a00ca3" category="doc">リカバリイメージのブート（AFF C30 and AFF C60）</block>
-  <block id="3fff9e6751f0e3483b46c1b09e921f27" category="doc">要件と考慮事項- AFF C30およびAFF C60</block>
   <block id="b51f305b31269b3c0c90f0c435f98dc7" category="doc">ブートメディアの交換ワークフロー- AFF C30とAFF C60</block>
   <block id="eff4d8e89759d68c96ebcfc87dc315dd" category="doc">ブートメディアの交換- AFF C30とAFF C60</block>
   <block id="5cc55241a9614abe4087e6c9b29624e6" category="doc">障害のあるコントローラをシャットダウン- AFF C30とAFF C60</block>
@@ -10958,7 +10883,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="fab9e21f1bee0f7c0618cad32b09e254" category="summary">AFF C30およびAFF C60プラットフォームのインストールを準備します。</block>
   <block id="e5c1fdfad20885712f2500f11ac35b2f" category="doc">インストールの準備- AFF C30とAFF C60</block>
   <block id="79e12a938ddc8f32473767866053dbf9" category="paragraph">AFF C30またはAFF C60ストレージシステムを設置する準備をします。設置場所を準備し、開梱して梱包内容を納品書と比較し、ストレージシステムを登録してサポートを利用します。</block>
-  <block id="5dbd4f15eeb8f486caf56f53d58063e0" category="doc">インストールの要件と考慮事項- AFF C30およびAFF C60</block>
   <block id="7a3914f84de0175770593720f9a6ce99" category="paragraph">AFF C30またはAFF C60ストレージシステムの要件と考慮事項を確認します。</block>
   <block id="9bf4665a2c4e66c0d1872abb97cf1e62" category="doc">I/Oモジュールの追加- AFF C30およびAFF C60</block>
   <block id="72e4a819218c094d076f11afa9177f29" category="paragraph">AFF C30およびAFF C60ストレージシステムにI/Oモジュールを追加できるのは、使用可能なスロットがある場合、またはすべてのスロットにフル実装した場合です。</block>
@@ -11037,10 +10961,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="ce16306562432372fadd2f97d4862648" category="summary">必要な機器と、ストレージシステムおよびシェルフの持ち上げに関する注意事項を確認します。</block>
   <block id="d74315adf12485d8310e758b0294275f" category="doc">インストール要件- AFF C80</block>
   <block id="a36836ef1b3b8277e163c5017c4ab7f9" category="paragraph">AFF C80ストレージシステムとストレージシェルフに必要な機器と、持ち上げる際の注意事項を確認します。</block>
-  <block id="0818c15009c3b4c695f98b8c3aeb92d7" category="paragraph">AFF C80ストレージシステムを設置するには、次の機器および工具が必要です。</block>
-  <block id="da1ca086cad8d91904b85d2d85fdb468" category="paragraph">AFF C80ストレージシステムとNS224ストレージシェルフは重量があります。これらのアイテムを持ち上げたり移動したりするときは、注意してください。</block>
-  <block id="3329bdafff22eccade430ba875e7f7e1" category="section-title">AFF C80ストレージシステム</block>
-  <block id="1ecdf6d5dc581cf37d18e38fc6672845" category="paragraph">AFF C80ストレージシステムの重量は最大68.8 kg（151.68ポンド）です。システムを持ち上げるには、4人で作業するか、油圧リフトを使用します。</block>
   <block id="c04a673c3bb56ad9a4dc3b8e2b216fe8" category="inline-link-macro">AFF C80ストレージシステムを設置する準備</block>
   <block id="6a9ec7f0e337f1b22db691540de71dd2" category="paragraph">ハードウェア要件を確認したら、<block ref="f1512d282e7d59c9ab940248c652d05d" category="inline-link-macro-rx"></block></block>
   <block id="a5fb99858c57b188273ea5a1afedd002" category="doc">I/Oモジュールの追加- AFF C80</block>
@@ -11054,7 +10974,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="11eb8865607ab8973149731becf87b54" category="doc">電源装置の交換- AFF C80</block>
   <block id="dafdc51bcfddfb75cdc104244fa42b60" category="doc">リアルタイムクロックバッテリを交換してください- AFF C80</block>
   <block id="0c760c78e9d0c008701a3538ed8f1c85" category="doc">システム管理モジュールの交換- AFF C80</block>
-  <block id="2f5c749fdf8bbd8318bf83993d614136" category="paragraph">DS460Cシェルフの重量は最大118.1kg（260.4ポンド）です。収納棚を持ち上げるには、最大5人で持ち上げるか、油圧リフトを使用します。ストレージシェルフの重量がバランスを崩さないように、すべてのコンポーネント（前面と背面の両方）を保管してください。</block>
   <block id="0e0493531094a28281ba5f32c328ac63" category="paragraph">お使いのハードウェアシステムは、NSM100モジュールを搭載したNS224シェルフと、NSM100Bモジュールを搭載したNS224シェルフの両方と互換性がある場合があります。ハードウェアとシェルフの互換性とポート名を確認するには、を参照して<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block>ください。</block>
   <block id="c97d3a72e7c1692c1c5f56d517b82c8c" category="example-title">シェルフをAFF A20、AFF A30、AFF A50、AFF C30、またはAFF C60にケーブル接続</block>
   <block id="494fa596205dff234fa0bdbd9d667c60" category="example-title">シェルフをAFF A70、AFF A90、またはAFF C80にケーブル接続</block>
@@ -11287,10 +11206,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6a78e833d1d48c3ad3f5fcd87dc0f4d4" category="cell">I/Oモジュールの注意</block>
   <block id="402ff9cfbe902d88550764b90aa6cb76" category="paragraph">I/Oモジュールがありません</block>
   <block id="5f99c34270a42ab74283fdec312239c2" category="paragraph">ONTAPストレージシステムは、複数のバージョンのONTAPソフトウェアと互換性があります。ストレージシステムおよびドライブシェルフでサポートされるONTAPのバージョンを確認します。</block>
-  <block id="6e078dd140fc50f53b5f2c4385d718bd" category="section-title">NSM100Bモジュールを搭載したNS224シェルフ</block>
-  <block id="e0d3410def69ea25d4a73fbd6f0bbed2" category="paragraph">NSM100Bモジュールを搭載したNS224ドライブシェルフは、優れたパフォーマンスと柔軟性を提供し、デジタル変革のニーズに応えます。</block>
-  <block id="fc65336c1bd8a062ad4562b40078d3fe" category="inline-link-macro">NS224シェルフでハードウェアシステムのストレージを拡張</block>
-  <block id="7b19cd7f52ff90324c1acacbd46001f8" category="paragraph"><block ref="66341a595da7a2db1d6f0b3d14139d08" category="inline-link-macro-rx"></block>です。</block>
   <block id="7158496fa6a387eea85c17aa48eba85e" category="section-title">AFF A20、AFF A30、およびAFF A50</block>
   <block id="a09039ce1af61d84b9a954849fc88067" category="paragraph">新しいAFF A20、A30、A50ハードウェアシステムは、ハイパフォーマンスでインテリジェントな包括的なデータ管理機能をより多くのお客様とワークロードに拡張します。</block>
   <block id="bc44b220c4c2656e94204809ef23fa40" category="section-title">AFF C30、AFF C60、およびAFF C80</block>
@@ -11298,4 +11213,38 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="007ace9cd707338f2e4f8f25ed4bb0b8" category="section-title">NSM100Bシェルフモジュールを搭載したNS224ドライブシェルフ</block>
   <block id="e3f4eea829fa5771d87c60fb05124223" category="paragraph">NS224と新しいNSM100B NVMeストレージ拡張モジュールで、データセンターの機能を強化できます。新しいNSM100Bシェルフモジュールは、NSM100モジュールの直接交換用として設計されており、既存の環境にシームレスに統合できます。NS224シェルフの直接接続型構成とスイッチ接続型構成の両方がサポートされるため、ストレージシステムの効率性と拡張性を最適化する優れた柔軟性が実現します。</block>
   <block id="02ad6883c66e836f88f8ac60378af5d5" category="paragraph">新しいASA R2ハードウェアシステム（ASA A1K、ASA A70、およびASA A90）は、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルなエクスペリエンスを実現します。</block>
+  <block id="f1f5a8071b69ef980c0fca64b3b9c54e" category="list-text">自動ギブバックを無効にした場合はリストアします。</block>
+  <block id="a7ecdb67614fe7d399a65b213dd20e1a" category="paragraph">ドライブシェルフは、NetApp AFF、ASA、FASの各システム向けに設計されており、デジタル変革に必要なパフォーマンス、耐障害性、柔軟性を提供します。</block>
+  <block id="dbc74f369dbf214b25d0f839fd4cd2b0" category="list-text">自動ギブバックを無効にした場合はリストアします。</block>
+  <block id="37e73c8cf9d7d3b4aeaa58f23b2fcb81" category="paragraph">AFF A1Kストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。</block>
+  <block id="f2cde5cb8aa49228f5cb392e473dff51" category="paragraph">クラスタが初期化されたら、をダウンロードしてを実行し、<block ref="48865c7c1d8013246e4e5f705a9105de" category="inline-link-rx"></block>セットアップを確認します。</block>
+  <block id="5d181ca91be1af691d1f01654691cc7b" category="image-alt">A1KストレージシステムとA70またはA90の電源接続図</block>
+  <block id="e826d5b26017ec374bf63b94b8a425d9" category="list-text">各電源装置の固定装置を使用して、電源コードを固定します。：a1k-a70-90!：</block>
+  <block id="0bf1ff1f561d2a96752b8ee596c65068" category="list-text">4U（HA構成）</block>
+  <block id="3ac4d4a9f6b930345bd4ccdb8435d0fb" category="list-text">各コントローラのシステム管理モジュール</block>
+  <block id="388eeeeae411a70beaf8ef696a22f538" category="paragraph">A1Kストレージシステムの重量は最大28.5 kg（62.83ポンド）です。ストレージ・システムを持ち上げるには、2人で作業するか、油圧リフトを使用します。</block>
+  <block id="6de84c72e7e126f172cbcc00c68cd297" category="paragraph">NS224シェルフの重量は最大30.29kg（66.78ポンド）です。シェルフを持ち上げるには、2人で作業するか、油圧リフトを使用します。シェルフの重量がバランスを崩さないように、すべてのコンポーネント（前面と背面の両方）をシェルフに保管してください。</block>
+  <block id="f6212161be26bdf2d9804cc49d78a681" category="image-alt">NS224 NSM100の持ち上げに関する注意事項</block>
+  <block id="4eb7fd7f39fdba863f648fba58c6a17b" category="list-text"><block ref="fa81f583d8b6c7dcaf8e26a5fcf5de52" category="inline-link-rx"></block>:a1k!:</block>
+  <block id="c06aa2e2131c24245e0e7d96530eafc3" category="doc">ブートメディアの交換要件- AFF A20、AFF A30、およびAFF A50</block>
+  <block id="c0264caab63d4097d1e1ed92439e60a7" category="doc">シャーシの交換要件- AFF A20、AFF A30、およびAFF A50</block>
+  <block id="eaada1112c624d35f830400d927a467d" category="doc">コントローラの交換要件- AFF A20、AFF A30、およびAFF A50</block>
+  <block id="be520d0c187d935243d727d6ae1fae7d" category="paragraph">AFF A20、AFF A30、またはAFF A50ストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。</block>
+  <block id="a8df3504a76da7d726b26d0dfd4a23f3" category="doc">設置要件- AFF A20、AFF A30、およびAFF A50</block>
+  <block id="a6c628254ff2bf40212541b76682d0ca" category="paragraph">AFF A20、AFF A30、またはAFF A50ストレージシステムの要件を確認します。</block>
+  <block id="b88e50a127892280ab464a0d38a10676" category="paragraph">AFF A70またはAFF A90ストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。</block>
+  <block id="7fffd066161648ae573d6d74ec60e85e" category="paragraph">ストレージシステムの重量は最大68.8 kg（151.68ポンド）になることがあります。ストレージ・システムを持ち上げるには、4人で作業するか、油圧リフトを使用します。</block>
+  <block id="89ef365c5b885c967c3d8cc986042787" category="doc">ブートメディアの要件- AFF C30およびAFF C60</block>
+  <block id="93ed93f61a0fe8be55f5a5227eba1f27" category="doc">シャーシの交換要件- AFF C30およびAFF C60</block>
+  <block id="0786f21f31213511b77d9fde64302a80" category="doc">コントローラの交換要件- AFF C30およびAFF C60</block>
+  <block id="877c6321779942add591f77ab7b28f2e" category="paragraph">AFF C30またはAFF C60ストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。</block>
+  <block id="4572f45ac79ded53bd57f95eaf949d13" category="doc">インストール要件- AFF C30およびAFF C60</block>
+  <block id="2795470282b110353916b87e8a68ea10" category="paragraph">AFF C80ストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。</block>
+  <block id="021fad57648b2198deca585e8c317a71" category="paragraph">FAS70またはFAS90ストレージ・システムの電源をオンにすると、クラスタ・ネットワークを検出してONTAPクラスタをセットアップできるようになります。</block>
+  <block id="4c92eb29f2a257faff3e90e45cf70459" category="paragraph">DS460Cシェルフの重量は最大181.1kg（260.4ポンド）です。収納棚を持ち上げるには、最大5人で持ち上げるか、油圧リフトを使用します。ストレージシェルフの重量がバランスを崩さないように、すべてのコンポーネント（前面と背面の両方）を保管してください。</block>
+  <block id="510996b7cd8e0bf946a50e1f000afbe2" category="paragraph">SuperRailは、標準の角穴4ポストラックまたは丸穴から角穴のアダプタブラケットを使用して標準の丸穴4ポストラックに取り付けることができます。</block>
+  <block id="090baac144fae3a90d22bb679e0194a6" category="sidebar">AFF A20、AFF A30、およびAFF A50のブートメディア</block>
+  <block id="f923335af94abdb12e15d306f375ccba" category="sidebar">AFF A20、AFF A30、およびAFF A50 I/Oモジュール</block>
+  <block id="78630acc24e5fd1073367e9c78f003a0" category="sidebar">AFF C30およびAFF C60のブートメディア</block>
+  <block id="0cc03c1fb7fac3f451692406956a999d" category="sidebar">AFF C30およびAFF C60 I/Oモジュール</block>
 </blocks>

@@ -2,8 +2,6 @@
 :allow-uri-read: 
 
 
-ストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。
-
 
 
 == 手順1：クラスタ情報を収集する
@@ -93,6 +91,3 @@ NOTE: PuTTY の設定方法がわからない場合は、ラップトップま�
 NetAppでは、System Managerを使用して新しいクラスタをセットアップすることを推奨しています。セットアップ手順については、を参照してください https://docs.netapp.com/us-en/ontap/task_configure_ontap.html["System Managerを使用して新しいクラスタにONTAPを設定します"^] 。
 
 System Managerでは、ノード管理IPアドレスの割り当て、クラスタの初期化、ローカル階層の作成、プロトコルの設定、接続されたストレージの初期プロビジョニングなど、クラスタのセットアップと設定のワークフローをシンプルかつ簡単に実行できます。
-
-.次の手順
-クラスタが初期化されたら、をダウンロードしてを実行し、  https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^] セットアップを確認します。

@@ -25,6 +25,7 @@ entries:
   - title: メンテナンスの概要
     url: "/c30-60/maintain-overview.html"
   - title: ブートメディア
+    pdf-filename: AFF C30およびAFF C60のブートメディア
     entries:
     - title: ブートメディアの交換ワークフロー
       url: "/c30-60/bootmedia-replace-workflow.html"
@@ -79,6 +80,7 @@ entries:
   - title: ファン
     url: "/c30-60/fan-replace.html"
   - title: I/O モジュール
+    pdf-filename: AFF C30およびAFF C60 I/Oモジュール
     entries:
     - title: I/Oモジュールの概要
       url: "/c30-60/io-module-overview.html"

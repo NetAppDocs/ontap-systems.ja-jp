@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, prerequisite, replace the controller module 
 summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。 
 ---
-= 要件と考慮事項- AFF C30およびAFF C60
+= コントローラの交換要件- AFF C30およびAFF C60
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

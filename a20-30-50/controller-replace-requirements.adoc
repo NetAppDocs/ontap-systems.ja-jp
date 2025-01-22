@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, prerequisite, replace the controller module 
 summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。 
 ---
-= 要件と考慮事項- AFF A20、AFF A30、およびAFF A50
+= コントローラの交換要件- AFF A20、AFF A30、およびAFF A50
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
