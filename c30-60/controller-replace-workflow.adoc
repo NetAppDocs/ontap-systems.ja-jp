@@ -23,15 +23,15 @@ summary: 障害が発生したコンポーネントは、プロバイダから�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:controller-replace-move-hardware.html["コントローラを交換"]
 [role="quick-margin-para"]
-コントローラを交換するには、障害のあるコントローラを取り外し、FRUコンポーネントを交換用コントローラに移動してから、交換用コントローラをエンクロージャに取り付けます。
+コントローラを交換するには、障害のあるコントローラを取り外し、FRUコンポーネントを交換用コントローラに移動し、交換用コントローラをシャーシに設置し、日時を設定してから、ケーブルを再接続します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:controller-replace-system-config-restore-and-verify.html["システム構成をリストアおよび検証します"]
 [role="quick-margin-para"]
 交換用コントローラの下位システム構成を確認し、必要に応じてシステム設定を再設定します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:controller-replace-recable-reassign-disks.html["コントローラを再ケーブル接続してギブバックする"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:controller-replace-recable-reassign-disks.html["コントローラをギブバック"]
 [role="quick-margin-para"]
-コントローラにケーブルを再接続し、ストレージリソースの所有権を交換用コントローラに戻します。
+ストレージリソースの所有権を交換用コントローラに戻します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"]link:controller-replace-restore-system-rma.html["コントローラ交換後の処理"]
 [role="quick-margin-para"]

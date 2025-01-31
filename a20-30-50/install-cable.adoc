@@ -1,7 +1,7 @@
 ---
 permalink: a20-30-50/install-cable.html 
 sidebar: sidebar 
-keywords: aff a20, aff a30, aff a50, prepare installation 
+keywords: aff a20, aff a30, aff a50, cabling, cluster cabling, host network cabling, management network cabling, shelf cabling 
 summary: コントローラの管理ネットワークポートはスイッチに接続されます。HA インターコネクトポートとクラスタインターコネクトポートは、両方のコントローラでケーブル接続されます。コントローラモジュールは、注文した場合は外付けストレージに接続されています。 
 ---
 = ハードウェアのケーブル接続- AFF A20、AFF A30、およびAFF A50
@@ -38,11 +38,11 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg["ケーブルプル�
 ====
 .スイッチレスクラスタのケーブル接続
 --
+コントローラを相互にケーブル接続して、ONTAPクラスタ接続を作成します。
+
 .2ポートの40 / 100GbE I/Oモジュールを2つ搭載したAFF A30またはAFF A50
 [%collapsible]
 =====
-コントローラを相互にケーブル接続して、ONTAPクラスタ接続を作成します。
-
 .手順
 . クラスタ/ HAインターコネクト接続をケーブル接続します。
 +
@@ -127,11 +127,10 @@ image::../media/drw_isi_a20_switchless_2p_25gbe_cabling_ieops-2018.svg[1つの25
 
 =====
 --
-====
-[role="tabbed-block"]
-====
 .スイッチクラスタのケーブル接続
 --
+コントローラを相互にケーブル接続して、ONTAPクラスタ接続を作成します。
+
 .2ポートの40 / 100GbE I/Oモジュールを2つ搭載したAFF A30またはAFF A50
 [%collapsible]
 =====

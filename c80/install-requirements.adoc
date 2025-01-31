@@ -17,7 +17,6 @@ AFF C80ストレージシステムとストレージシェルフに必要な機�
 
 == 設置に必要な機器
 
-.次の手順
 ストレージシステムを設置するには、次の機器および工具が必要です。
 
 * ストレージシステムを設定するためのWebブラウザへのアクセス
@@ -58,4 +57,5 @@ image::../media/drw_ns224_lifting_weight_ieops-1716.svg[NS224 NSM100の持ち上
 * https://library.netapp.com/ecm/ecm_download_file/ECMP12475945["安全に関する情報と規制に関する通知"^]
 
 
+.次の手順
 ハードウェア要件を確認したら、link:install-prepare.html["AFF C80ストレージシステムを設置する準備"]
