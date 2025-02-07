@@ -15,11 +15,11 @@ AFF A20、AFF A30、またはAFF A50ストレージシステムを設置して�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:install-requirements.html["インストール要件を確認する"]
 [role="quick-margin-para"]
-ストレージシステムを設置する前に、ストレージシステムがインストール要件を満たしている必要があります。
+ストレージシステムをインストールする前に、インストール要件を満たしている必要があります。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["1つ"]link:install-prepare.html["設置を準備"]
 [role="quick-margin-para"]
-設置の準備として、設置場所を準備し、環境要件と電力要件を確認し、十分なラックスペースがあることを確認する必要があります。その後、機器を開梱して内容を納品書と比較し、ハードウェアを登録してサポートを利用できます。
+設置の準備として、設置場所を準備し、環境要件と電力要件を確認し、十分なラックスペースがあることを確認します。その後、機器を開梱し、内容を納品書と比較して、ハードウェアを登録してサポートを利用できます。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["2 つ"]link:install-hardware.html["ハードウェアを設置"]
 [role="quick-margin-para"]

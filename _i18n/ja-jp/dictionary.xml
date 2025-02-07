@@ -1,76 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
-  <block id="6d23265c57ba430c404cc6f3a940e117" category="doc">ノード 4 でキー管理ツールの設定をリストアします</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
-  <block id="43ccb3503988f16a767b1af1e29d2384" category="doc">ルート以外のアグリゲートと NAS データ LIF を node2 から node3 に再配置します</block>
-  <block id="1a4d3feb333aa03c1008e54bae47d8e9" category="doc">新しいコントローラが正しくセットアップされていることを確認します</block>
-  <block id="83b27b00949218cb0d9ec7e1eb1c92ad" category="inline-link-macro">ノードをアップグレードする準備をします</block>
-  <block id="27af4227ca8acc558df96e2723ec9b37" category="inline-link-macro">新しいコントローラモジュールで Storage Encryption をセットアップします</block>
-  <block id="ac616410952c35e808a3c7ce4ea5b4a7" category="inline-link-macro">古いシステムの運用を停止</block>
-  <block id="32d978cffec9875e4d92dc55b84df69b" category="doc">node2 によって所有されているルート以外のアグリゲートと NAS データ LIF を、 node3 から node4 に移動します</block>
-  <block id="bc26b5e5559721e19875fb91dce22cec" category="doc">ノード 3 で FC または UTA / UTA2 設定を設定します</block>
-  <block id="5ff20c188ceb23808ed9b47d8e5637ff" category="inline-link-macro">node3 をインストールしてブートします</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
-  <block id="63ad3c4d36a1a9f413872ac57af754a7" category="inline-link-macro">ノード 3 のインストールを確認します</block>
-  <block id="da289ccf0fe9b7b8a0a8c3f55c76c877" category="doc">ARL を使用したコントローラのアップグレードに関するガイドライン</block>
   <block id="a2539e65a13fda0a8ce497ac0baa63a7" category="inline-link-macro">『 Controller Hardware Upgrade Express Guide 』を参照してください</block>
-  <block id="231cf4c70d866b616c21baddaeed0696" category="section-title">トラブルシューティング</block>
-  <block id="b02aac451baf6d7b36d981f898537961" category="doc">アグリゲートの再配置に失敗しまし</block>
-  <block id="1a02fe8fc6a186319dd3345573fc3717" category="doc">ノード 4 をインストールしてブートします</block>
-  <block id="550ffaa7219faf74146770514db0d8e8" category="inline-link-macro">ネットブートを準備</block>
-  <block id="df5267f8e4bbfa9add1dd732e6b68e41" category="inline-link-macro">ノード 4 で FC または UTA / UTA2 設定を設定します</block>
   <block id="8c4aa541ee911e8d80451ef8cc304806" category="list-text">ストレージ</block>
   <block id="c1325f6903ebb5ebb2bb519a73ddb1b0" category="cell">作業</block>
   <block id="0ba2b3e0a887666765eb2d690768c576" category="cell">用途</block>
-  <block id="26678fb639f40f31f518f926dd61b9ab" category="doc">ストレージ暗号化用の外部キー管理サーバの IP アドレスを取得します</block>
-  <block id="140c4ad72e426b76f7e15699ae078635" category="doc">SnapMirror 処理を再開します</block>
-  <block id="befd434b83717d2b7bd83967d66e9157" category="doc">ノード 2 を撤去</block>
-  <block id="e33c48b52ab7d302b4af41aca3bbe858" category="doc">手順の複数の段階で発生する可能性のある問題</block>
-  <block id="7ce57c4ce051863fc414ccd402a178f5" category="inline-link-macro">ノード 3 でキー管理ツールの設定をリストアします</block>
-  <block id="840820d31f6c078aeb1567ce302bdd05" category="inline-link-macro">ノード 1 で所有されているルート以外のアグリゲートと NAS データ LIF を、ノード 2 からノード 3 に移動します</block>
-  <block id="b81d64bc331b1e2e60b2cef595c6ddf8" category="inline-link-macro">MetroCluster FC 構成のアップグレードを完了します</block>
-  <block id="da7d6f53a5e074768e000aca830b3bfa" category="inline-link-macro">新しいコントローラモジュールで NetApp Volume Encryption をセットアップします</block>
-  <block id="93d6a78ca650a17d67b6a45ca81b7f3f" category="doc">ノード 1 を撤去</block>
-  <block id="2e4e187dce2e8970e167f157b1040ef2" category="doc">アグリゲートの再配置ガイドを使用するかどうかを決定します</block>
   <block id="c37feb3492d999b3f216448183986be2" category="cell">FAS8200</block>
   <block id="c78a423f3132ee2ac4f4f4c1fa5d4859" category="cell">AFF A300</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">説明</block>
-  <block id="e7323a54c9f53a295a2c4d707c7b3fce" category="doc">MetroCluster 構成の健全性を確認</block>
-  <block id="06d473a91334306e0ea337d0cf403b02" category="doc">LIF の移行が失敗しました</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">作業を開始する前に</block>
   <block id="0373910e51252c7b97dcbea9f4942604" category="inline-link-macro">mysupport.netapp.com</block>
-  <block id="7de24b16e7313de118da7559fecd8fd4" category="inline-link-macro">ノード 1 が所有するルート以外のアグリゲートと NAS データ LIF をノード 2 に再配置します</block>
-  <block id="9759ad3dfabdb9631ec5fba47d71c313" category="doc">スイッチオーバー、修復、スイッチバックを検証</block>
-  <block id="15577d2c813239ab53fdc6f35d8a1dc5" category="doc">ノードペアをアップグレードします</block>
-  <block id="405ab80b96586360ea83735c37305935" category="summary">ノード 4 のインストールを確認します</block>
-  <block id="0e635d7a91ccc4eccdfb03e35353c899" category="doc">必要な工具とドキュメント</block>
   <block id="1988e9c8cf124cb346a67d52ea613567" category="cell">『 ONTAP 9 SAN アドミニストレーションガイド』</block>
-  <block id="8fb4b518ce39a0704f920c9d4f2f7b77" category="doc">アグリゲートの再配置を使用してコントローラハードウェアをアップグレードする</block>
-  <block id="32de3fe80cc3182e6d21291decbf392a" category="inline-link-macro">ARL アップグレードの概要</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link-macro">ネットアップサポートサイト</block>
-  <block id="d75bd21e9af20a5036c0fbf461bc4e2d" category="doc">リブート、パニック、電源再投入</block>
-  <block id="97075c537f59de355c8d44c57697ef74" category="doc">障害が発生したアグリゲートを再配置するか</block>
-  <block id="64f7904c016a035f1928a2cbeea82ab1" category="doc">アグリゲートは、アップグレードの完了後、ノード 1 にもともと存在していたものとノード 4 によって所有されます</block>
-  <block id="f1b92e8f33cf66355b4b9762bf95256b" category="doc">MetroCluster 構成エラーがないかどうかを確認します</block>
   <block id="865e9b4ef52f3b0d3050c8b3c14eb660" category="inline-link-macro">Active IQ Config Advisor</block>
-  <block id="b72c69a60f695309089392e6d394557c" category="doc">NX-OS ソフトウェアおよび RCF のインストール</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="section-title">このタスクについて</block>
-  <block id="62bb127cfc33134b4b7ba3eb79ae05f3" category="doc">ストレージスイッチを再利用して、 SAT ストレージを備えたスイッチクラスタから移行する</block>
-  <block id="8a6725809e9d102de1fa5e1c7d8c431d" category="inline-link-macro">Cisco Nexus 9336C-FX2 共有スイッチを交換します</block>
-  <block id="7bd0358c3b996edfe19bd3da912bde62" category="doc">Cisco Nexus 9336C-FX2 共有スイッチ</block>
-  <block id="31a64a44fce8ed03b7b71b06a1ddc567" category="doc">ストレージスイッチを再利用して、 SAT ストレージを搭載したスイッチレス構成から移行する</block>
-  <block id="467a501ced0eaaee20142a975e074f95" category="doc">2 つの新しい共有スイッチを追加して、 DAT ストレージを使用したスイッチ構成から移行します</block>
-  <block id="eac9e7086f92a026c0dbe06001206204" category="doc">Cisco 共有スイッチのセットアップおよび設定ガイド</block>
-  <block id="b7167dcb288bc483f270fcd135c332ec" category="doc">2 つの新しい共有スイッチを追加して、 DAT ストレージを持つスイッチレスクラスタから移行します</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">概要</block>
-  <block id="3ffee04e4bb020103f1bece18c2ac58e" category="sidebar">コントローラのアップグレードプロセスを自動化する</block>
-  <block id="eee953986530407bd81dc7dec37f7151" category="sidebar">ステージ 1 アップグレードの準備</block>
-  <block id="d410001785d5e6cf46422378e7dc305f" category="sidebar">ステージ 2 ：ノード 1 の再配置および廃止</block>
-  <block id="db0f435716365df4f28208e723c02179" category="sidebar">ステージ 3 ：ノード 3 のインストールとブート</block>
-  <block id="cd93c6e9e61b2d31c781ea8786cb4e81" category="sidebar">ステージ 4 再配置と撤去 node2</block>
-  <block id="62e340083f3c5febba2fa693ce759a1a" category="sidebar">ステージ 5 Install and boot node4</block>
-  <block id="ded1f8eb21bf382d51471642d150b8d5" category="sidebar">ステージ 6 アップグレードを完了する</block>
-  <block id="bdbf296139657929f989f110dccebbd3" category="sidebar">アグリゲートの再配置に失敗していないかどうか</block>
   <block id="e4deab2919ae4ce97668d5271fe4fc29" category="summary">電源装置、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、装置ラックまたはシステムキャビネットから障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。</block>
   <block id="47e6ca7a31b3f3492d704b44dea3bc0e" category="section-title">手順 1 ：コントローラモジュールを取り外す</block>
   <block id="c488924be9cfde77f802e82e996e90e1" category="paragraph">シャーシを交換するには、古いシャーシからコントローラモジュールを取り外す必要があります。</block>
@@ -10677,7 +10622,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="c486d43df45ffe41cde84a1b0fa45aa0" category="paragraph"><block ref="c486d43df45ffe41cde84a1b0fa45aa0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e3eb777419d46f8ec20ca944795a4d26" category="list-text">光スイッチにケーブル接続する場合は、光トランシーバをコントローラポートに挿入してから、スイッチポートにケーブル接続します。</block>
   <block id="d16a227aab66041a81c6f88b290eb486" category="section-title">手順1：クラスタ/ HAをケーブル接続する</block>
-  <block id="e5f780ef73bd41c1dd64af7a1a1a31ac" category="paragraph">コントローラをONTAPクラスタにケーブル接続します。この手順は、ストレージシステムのモデルおよびI/Oモジュールの構成によって異なります。</block>
   <block id="134e0586a0879fa097abfb47d5e64dbe" category="open-title">スイッチレスクラスタのケーブル接続</block>
   <block id="ee68cf12a16ca46d58bedd8cf9051f32" category="example-title">2ポートの40 / 100GbE I/Oモジュールを2つ搭載したAFF A30またはAFF A50</block>
   <block id="1de8dab1beab3d5ee0495c66a3c814b7" category="paragraph">コントローラを相互にケーブル接続して、ONTAPクラスタ接続を作成します。</block>
@@ -10700,7 +10644,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6fb39f4b9d1de8f2f3a463d3f9eedd52" category="paragraph"><block ref="6fb39f4b9d1de8f2f3a463d3f9eedd52" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7e04550968face4eb31df851171941f8" category="image-alt">1つの25GbE IOモジュールを使用したA20スイッチレスクラスタのケーブル配線図</block>
   <block id="666ce5251c9c6f25db5da3d713f9b34a" category="open-title">スイッチクラスタのケーブル接続</block>
-  <block id="c9802659f25463254a11923317d9fd06" category="paragraph">コントローラをクラスタネットワークスイッチにケーブル接続して、ONTAPクラスタ接続を作成します。</block>
   <block id="3a343cf67a3c616a35a00f3a82358fe3" category="list-text">コントローラAのポートe4aをクラスタネットワークスイッチAにケーブル接続します。</block>
   <block id="627172884756ce9f3fccfd51a4559c59" category="list-text">コントローラAのポートe2aをクラスタネットワークスイッチBにケーブル接続します。</block>
   <block id="9c7f10ca7cef7791dc302ef4b9fc6cff" category="list-text">コントローラBのポートe4aをクラスタネットワークスイッチAにケーブル接続します。</block>
@@ -10716,35 +10659,18 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3488ff918c31f4a57e74bbab6ef9bcc9" category="inline-image-macro">1つの25GbE IOモジュールを使用したA20スイッチクラスタのケーブル配線図</block>
   <block id="ae3bd4fc66b4084d0dc856b5f0230d72" category="paragraph"><block ref="ae3bd4fc66b4084d0dc856b5f0230d72" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7f99cbc2aa28ab9fed6e99fa94242b4a" category="section-title">手順2：ホストネットワーク接続をケーブル接続する</block>
-  <block id="9b8a63481b35238e3f6af2aff25d8e9a" category="paragraph">コントローラをホストネットワークにケーブル接続します。</block>
-  <block id="40a36b0ffd7a648bae61167d750303ae" category="paragraph">この手順は、ストレージシステムのモデルおよびI/Oモジュールの構成によって異なります。</block>
-  <block id="b3d6f5fd41d136be22908a2112c08ed2" category="list-text">ホストネットワーク接続をケーブル接続します。</block>
-  <block id="9ef6fba4dfd63e9f14ee44588abe6952" category="paragraph">次に、オプションのホストネットワークケーブル接続の例を示します。必要に応じて、ご使用のストレージ・システム構成に対応するを参照してください<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
-  <block id="1c4fc31a2e3f3932ec066d51327fdee3" category="list-text">オプション：コントローラをホストネットワークスイッチにケーブル接続します。</block>
   <block id="8246042d23ca859d83185957ac9c4044" category="paragraph">各コントローラで、ポートe2bおよびe4bをイーサネットホストネットワークスイッチにケーブル接続します。</block>
   <block id="e827a0600a7ebd00f36ea855012f66a1" category="admonition">スロット2および4のI/Oモジュールのポートは40 / 100GbE（ホスト接続は40 / 100GbE）です。</block>
   <block id="7329bfa51dec924de206ced093bea600" category="paragraph">* 40/100GbEケーブル*</block>
   <block id="8f31147c7cfeb7520dc9739e31dedc90" category="image-alt">40 / 100Gbケーブル</block>
   <block id="ec83c89c1bfd1fa2fe72db4df75b0e43" category="image-alt">40 / 100GbEイーサネットホストネットワークスイッチへのケーブル接続</block>
-  <block id="a4beda8ffedc190bd2365aa3c0a3982e" category="list-text">オプション：コントローラをFCホストネットワークスイッチにケーブル接続します。</block>
   <block id="8f03269dbdbab70bab244893051fb6ec" category="paragraph">各コントローラで、ポート1a、1b、1c、および1dをFCホストネットワークスイッチにケーブル接続します。</block>
   <block id="241c17a1be2cc4feae5c8c6007f8aed3" category="paragraph">* 64 Gb/秒FCケーブル*</block>
   <block id="176084e0e3d1d8b98919ade28704bd7b" category="inline-image-macro">64Gb FCケーブル、幅= 100px</block>
   <block id="0174aef3c6edce25256f90638a06bdca" category="paragraph"><block ref="0174aef3c6edce25256f90638a06bdca" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3c8610994d0d0d721ba1a3c2b56d2606" category="image-alt">2つのIOモジュールを使用して、A30またはA50を64GB FCホストネットワークスイッチにケーブル接続</block>
-  <block id="6070aae2c5cbb466ea4b44033555f52a" category="example-title">AFF A30またはAFF A50（2ポート10 / 25GbE I/Oモジュール×1）</block>
   <block id="baae66b5065d8c53c84d82ba2175779d" category="paragraph">各コントローラで、ポートe2a、e2b、e2c、e2dをイーサネットホストネットワークスイッチにケーブル接続します。</block>
   <block id="c053ea984f8ec26545ef5a0f8e3c516b" category="paragraph">* 10/25GbEケーブル*</block>
   <block id="53b32e6926c94a5a2ab06b2fe3836135" category="image-alt">64Gb FCホストネットワークスイッチへのケーブル接続</block>
-  <block id="2fcfbaa3d5181e463a6bbfa1a15ce7fa" category="example-title">AFF A20：2ポート10 / 25GbEモジュール×1</block>
-  <block id="3a6f33d3d155b4ae4ac4c5555a5a5b30" category="list-text">オプション：コントローラをホストネットワークスイッチにケーブル接続します。</block>
-  <block id="615ea66b0774b4053f21b1c6a497d682" category="inline-image-macro">GbE SFP銅線コネクタ、幅= 100pxx</block>
-  <block id="3448e0c15182366c2b7b3aa1515e467c" category="paragraph"><block ref="3448e0c15182366c2b7b3aa1515e467c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f6e881d94dc3ef7c3a5b2444eddf6212" category="image-alt">A20を40 / 100GbEイーサネットホストネットワークスイッチにケーブル接続</block>
-  <block id="09b66647463ed1ce42bd62c5b8ec2e1a" category="paragraph">各コントローラで、ポート1a、1b、1c、および1dをFCホストネットワークスイッチにケーブル接続します。</block>
-  <block id="8e97dad8f8493822d0e00e75c6d71f3c" category="inline-image-macro">64Gb FCケーブル、幅= 100pxx</block>
-  <block id="a592636155b15ffbef0e20c00b496be4" category="paragraph"><block ref="a592636155b15ffbef0e20c00b496be4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="be986ea08bb54dd79ad4a1cee8ab3d63" category="image-alt">A20を64Gb FCホストネットワークスイッチにケーブル接続</block>
   <block id="945babbf23a8741321d27a1c4a0c4200" category="section-title">手順3：管理ネットワークをケーブル接続する</block>
   <block id="b88fb46fa64622aa179b7b543ddf13a5" category="paragraph">コントローラを管理ネットワークにケーブル接続します。</block>
   <block id="e42848811631f979cb5744f72268013a" category="list-text">各コントローラの管理（レンチマーク）ポートを管理ネットワークスイッチにケーブル接続します。</block>
@@ -10772,7 +10698,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8bfccb1f0c0fcef7c65c13971279707a" category="paragraph">ストレージシステムのハードウェアの設置が完了したら、次の作業<block ref="bca22c8e81cd07d8c060c28f352f5c5b" category="inline-link-macro-rx"></block>を行います。</block>
   <block id="d18e261115fca673ca85d869ef16199c" category="doc">設置とセットアップのワークフロー- AFF A20、AFF A30、およびAFF A50</block>
   <block id="3cdf8c6347bdc0a257b06253a291ef6c" category="paragraph-title"><block ref="444c1bf2e877f5617e8ce0a2ded57f4f" category="inline-image-macro-rx" type="image"></block><block ref="bce179ad419bd48e9c41b073fd99e202" category="inline-link-macro-rx"></block></block>
-  <block id="efbed9ff10698a899995d519b6515646" category="paragraph">設置の準備として、設置場所を準備し、環境要件と電力要件を確認し、十分なラックスペースがあることを確認する必要があります。その後、機器を開梱して内容を納品書と比較し、ハードウェアを登録してサポートを利用できます。</block>
   <block id="966353821596fdf316108d72854ad8be" category="paragraph-title"><block ref="4f954e3aac01b1dc982b61d245b37a02" category="inline-image-macro-rx" type="image"></block><block ref="d8f87fb4140fea77f47017bd9ec5dcdd" category="inline-link-macro-rx"></block></block>
   <block id="14dba6115fa0ee08da437dd9fc5018c2" category="paragraph">ハードウェアを設置するには、ストレージシステムとシェルフ用のレールキットを設置し、ストレージシステムとシェルフをキャビネットまたはTelcoラックに設置して固定します。</block>
   <block id="88b736e6d5561b4dc7cce39802381ee6" category="inline-link-macro">ハードウェアのケーブル接続</block>
@@ -11218,13 +11143,22 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="d27876edf06fef01e9d562affcf483bc" category="paragraph">AFF A20、AFF A30、またはAFF A50ストレージシステムを設置してセットアップするには、設置要件を確認し、設置場所を準備し、ハードウェアコンポーネントを設置してケーブル接続し、ストレージシステムの電源をオンにし、ONTAPクラスタをセットアップする必要があります。</block>
   <block id="2b9366d786af7f25816abf5ad658f2ab" category="inline-link-macro">インストール要件を確認する</block>
   <block id="bd9e341941a30be8d1d66fd436b9cbb4" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="5f0905e544c52c81d90a8c636fddd0a9" category="inline-link-macro-rx"></block></block>
-  <block id="70bfeb1ef79ed88d76859531032e6795" category="paragraph">ストレージシステムを設置する前に、ストレージシステムがインストール要件を満たしている必要があります。</block>
   <block id="a62423bfdb0c7361946c3892f20d2e7d" category="paragraph">ストレージシステムの重量は最大27.9 kg（61.5ポンド）です。ストレージ・システムを持ち上げるには、2人で作業するか、油圧リフトを使用します。</block>
   <block id="05591bc7cdace84971ece26cdbd0437b" category="example-title">2ポートの40 / 100GbE I/Oモジュールを2つ搭載したAFF C30またはAFF C60</block>
   <block id="a25f694b3fe46b8223a96d7f7a6709e2" category="example-title">AFF C30またはAFF C60（2ポート40 / 100GbE I/Oモジュール×1）</block>
-  <block id="40311ade600e0691ceb4ef1447a01304" category="example-title">AFF C30：2ポート10 / 25GbE I/Oモジュール×1</block>
-  <block id="365c5f6cc1c974e74595f900dc07803d" category="example-title">AFF C30またはAFF C60（2ポート10 / 25GbE I/Oモジュール×1）</block>
-  <block id="61bc9478fe9837a2edfeec12cfef1a17" category="example-title">AFF C30：2ポート10 / 25GbEモジュール×1</block>
   <block id="385d33bb3589ce3f38e65ed1e314719e" category="paragraph">AFF C30またはAFF C60ストレージシステムを設置してセットアップするには、設置要件を確認し、設置場所を準備し、ハードウェアコンポーネントを設置してケーブル接続し、ストレージシステムの電源をオンにし、ONTAPクラスタをセットアップする必要があります。</block>
   <block id="d92a2bc26be46a05b32e6cc5c37b3984" category="paragraph">AFF C30またはAFF C60ストレージシステムの要件を確認します。</block>
+  <block id="b3fb7cc55fec6d7df9078e2ee7739718" category="paragraph">DIMMを正しく挿入すると、簡単に挿入できますが、スロットにしっかりとはめ込まれます。DIMMが正しく挿入されていない場合は、再度挿入します。</block>
+  <block id="7e08ee4b466dc677d31c40c8b0488339" category="list-text">DIMMがスロットに均等に配置され、完全に挿入されていることを目視で確認します。</block>
+  <block id="34f650ca44fabe66ff7e4095a137da22" category="list-text">ストレージシステムの他のすべてのコンポーネントが正しく動作していることを確認します。動作していない場合は、作業を続行する前にににお問い合わせください<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>。"</block>
+  <block id="54d890bf92693607c99bccb67f9933f5" category="paragraph">コントローラをケーブル接続してONTAPクラスタ接続を作成します。</block>
+  <block id="d48b3cfe096b47bcb7f13e683c934beb" category="paragraph">コントローラをイーサネットまたはFCホストネットワークにケーブル接続します。</block>
+  <block id="bb8661c49545cac68358046e25b8f950" category="open-title">イーサネットホストのケーブル接続</block>
+  <block id="3c90cea8d34e6c024dcfcf7fbe2bc396" category="example-title">AFF A20、A30、またはAFF A50（4ポート10 / 25GbE I/Oモジュール×1）</block>
+  <block id="91ca13b03c277f557b91f705d4455de5" category="open-title">FCホストのケーブル接続</block>
+  <block id="45adc6168b3bfdd0a69aad7185cab6d2" category="example-title">AFF A20、A30、またはAFF A50（4ポート64 Gb/秒FC I/Oモジュール×1）</block>
+  <block id="5b903193757e7495dce32499ded20f07" category="paragraph">ストレージシステムをインストールする前に、インストール要件を満たしている必要があります。</block>
+  <block id="82f66f7658dd53410415bd1c67e9ccad" category="paragraph">設置の準備として、設置場所を準備し、環境要件と電力要件を確認し、十分なラックスペースがあることを確認します。その後、機器を開梱し、内容を納品書と比較して、ハードウェアを登録してサポートを利用できます。</block>
+  <block id="c273a3f4ab5c9add6857208b8a70d10e" category="example-title">AFF C30またはAFF C60（4ポート10 / 25GbE I/Oモジュール×1）</block>
+  <block id="46a9bbd60b5adf699bea6b74307aac99" category="example-title">AFF C30またはAFF C60（4ポート64 Gb/秒FC I/Oモジュール×1）</block>
 </blocks>
