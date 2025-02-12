@@ -11,17 +11,14 @@ summary: シャーシを交換するには、コントローラをシャット�
 
 
 [role="lead"]
-シャーシのメンテナンスを実施できるように、コントローラをシャットダウンします。
+障害のあるシャーシのコントローラを取り外す前に、コントローラをシャットダウンする必要があります。
 
-この手順は、2ノード構成のシステムが対象です。システムのノードが3つ以上の場合は、を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_perform_a_graceful_shutdown_and_power_up_of_one_HA_pair_in_a_4__node_cluster["4ノードクラスタで1つのHAペアの正常なシャットダウンと電源投入の実行方法"^]。
+この手順は、2ノード構成のシステムが対象です。クラスタにサービスを提供する際の正常なシャットダウンの詳細については、を参照してください https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage["ストレージシステムの正常なシャットダウンと電源投入解決ガイド- NetAppナレッジベース"]。
 
 .作業を開始する前に
-* すべてのクライアント/ホストからネットアップシステム上のデータへのアクセスを停止します。
-* 外部バックアップジョブを一時停止します。
 * 必要な権限とクレデンシャルがあることを確認します。
 +
 ** ONTAP のローカル管理者のクレデンシャル。
-** ストレージ暗号化またはNVE / NAEを使用する場合は、NetAppのオンボードキー管理（OKM）クラスタ全体のパスフレーズ。
 ** 各コントローラのBMCへのアクセス性。
 
 
@@ -37,22 +34,23 @@ summary: シャーシを交換するには、コントローラをシャット�
 
 .手順
 . SSHを使用してクラスタにログインするか、クラスタ内の任意のノードからローカルのコンソールケーブルとラップトップ/コンソールを使用してログインします。
-. AutoSupportをオフにして、システムがオフラインになるまでの時間を指定します。
+. すべてのクライアント/ホストからネットアップシステム上のデータへのアクセスを停止します。
+. 外部バックアップジョブを一時停止します。
+. AutoSupportが有効になっている場合は、ケースの作成を抑制し、システムをオフラインにする期間を指定します。
 +
-`system node autosupport invoke -node * -type all -message "MAINT=8h Power Maintenance"`
+`system node autosupport invoke -node * -type all -message "MAINT=2h Replace chassis"`
 
-. すべてのノードのSP / BMCアドレスを特定します。
+. すべてのクラスタノードのSP / BMCアドレスを特定します。
 +
 `system service-processor show -node * -fields address`
 
-. クラスタシェルを終了します。 `exit`
-. 前の手順の出力に表示されたいずれかのノードのIPアドレスを使用して、SSH経由でSP / BMCにログインします。
+. クラスタシェルを終了します。
++
+`exit`
+
+. 前の手順の出力に表示されたいずれかのノードのIPアドレスを使用してSSH経由でSP / BMCにログインし、進捗状況を監視します。
 +
 コンソール/ラップトップを使用している場合は、同じクラスタ管理者のクレデンシャルを使用してコントローラにログインします。
-
-+
-
-NOTE: 進捗状況を監視できるように、すべてのSP / BMC接続とのSSHセッションを開きます。
 
 . 障害のあるシャーシにある2つのノードを停止します。
 +
@@ -62,7 +60,12 @@ NOTE: 進捗状況を監視できるように、すべてのSP / BMC接続との
 
 NOTE: StrictSyncモードで動作するSnapMirror同期を使用するクラスタの場合： `system node halt -node <node1>,<node2>  -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
 
-. 表示されたら、クラスタ内の各コントローラに「* y *」と入力します。 `_Warning: Are you sure you want to halt node "cluster <node-name> number"?
-{y|n}:_`
+. 次のメッセージが表示されたら、クラスタ内の各コントローラに「* y *」と入力します。
++
+`Warning: Are you sure you want to halt node _<node_name>_? {y|n}:`
+
 . 各コントローラが停止するまで待ち、LOADERプロンプトを表示します。
 
+
+.次の手順
+コントローラのシャットダウンが完了したら、を実行する必要がありlink:chassis-replace-move-hardware.html["シャーシを交換する"]ます。

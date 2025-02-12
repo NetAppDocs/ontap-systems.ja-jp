@@ -50,6 +50,8 @@ entries:
       url: "/a70-90/chassis-replace-workflow.html"
     - title: 要件を確認する
       url: "/a70-90/chassis-replace-requirements.html"
+    - title: 交換の準備
+      url: "/a70-90/chassis-replace-prepare.html"
     - title: コントローラのシャットダウン
       url: "/a70-90/chassis-replace-shutdown.html"
     - title: シャーシの交換

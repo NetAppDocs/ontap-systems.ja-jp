@@ -1,47 +1,50 @@
 ---
 permalink: a70-90/chassis-replace-complete-system-restore-rma.html 
 sidebar: sidebar 
-keywords: aff a70, aff a90, verify and set HA state, complete the replacement process 
+keywords: aff a70, aff a90,  verify and set HA state, complete the replacement process 
 summary: キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。 
 ---
-= シャーシ交換後の処理- AFF A70およびAFF A90
+= シャーシの交換後の処理- AFF A70およびAFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。
+シャーシの交換プロセスを完了するには、ONTAPでブートし、ストレージをギブバックし、ストレージシステムの健全性を確認して、障害が発生したシャーシをNetAppに戻す必要があります。
 
 
 
-== 手順 1 ：シャーシの HA 状態を確認して設定します
+== 手順1：コントローラをブートしてコントローラをギブバックする
 
-シャーシの HA 状態を確認し、必要に応じてシステム構成に合わせて更新する必要があります。
+コントローラがリブートしたら、ONTAPをブートしてコントローラをギブバックします。
 
-. メンテナンスモードでは、いずれかのコントローラモジュールから、ローカルコントローラモジュールとシャーシの HA 状態を表示します。「 ha-config show 」
+. コンソールの出力を確認します。
 +
-HA 状態はすべてのコンポーネントで同じになっているはずです。
+.. コントローラがブートしてLoaderプロンプトが表示されたら、コマンドを使用してコントローラをリブートし `boot_ontap`ます。
+.. リブート後にコンソールにと表示された場合 `waiting for giveback`は、パートナーコントローラにログインし、コマンドを使用して交換したコントローラのギブバックの準備が完了していることを確認します `storage failover show`。
 
-. 表示されたシャーシのシステム状態がシステム構成と一致しない場合は、次の手順を実行します。
+
+. ギブバックを実行します。
 +
-.. シャーシの HA 状態を設定します :'ha-config modify chassis_ha-state _
-+
-hA-state には、次のいずれかの値を指定できます。
-
-+
-*** 「 HA 」
-*** `mcc`（ASAではサポートされません）
-
-
-.. 設定が変更されたことを確認します。「 ha-config show 」
-
-
-. システムの残りのケーブルをまだ再接続していない場合は、ケーブルを再接続します。
+.. パートナーコントローラにコンソールケーブルを接続します。
+.. コマンドを使用してコントローラをギブバックし `storage failover giveback -fromnode local`ます。
 
 
 
 
-== 手順2：故障した部品をNetAppに返却する
+
+
+== 手順2：ストレージシステムの健全性を確認する
+
+コントローラがストレージをギブバックしたら、で全体の健全性を確認する必要があります https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]。
+
+. ギブバックが完了したら、Active IQ Config Advisorを実行してストレージシステムの健全性を確認します。
+. 発生した問題を修正します。
+
+
+
+
+== 手順 3 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。
