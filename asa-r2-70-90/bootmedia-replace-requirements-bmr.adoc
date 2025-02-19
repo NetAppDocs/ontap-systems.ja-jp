@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, a90, replace the boot media 
 summary: ブートメディアの交換要件について説明します。 
 ---
-= 要件と考慮事項- ASA A70およびASA A90
+= ブートメディアの交換要件- ASA A70およびASA A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,12 +13,25 @@ summary: ブートメディアの交換要件について説明します。
 [role="lead"]
 ブートメディアを交換する前に、次の要件を確認してください。
 
-* 障害が発生したコンポーネントは、NetAppから受け取った交換用FRUコンポーネントと交換する必要があります。
-* これらの手順のコマンドを正しいコントローラに適用することが重要です。
-+
-** impaired_controller は、メンテナンスを実行しているコントローラです。
-** healthy_controller は、障害のあるコントローラの HA パートナーです。
-
-
+* 障害が発生したブートメディアを、NetAppから受け取った交換用ブートメディアと交換する必要があります。
 * 障害のあるコントローラに障害のあるクラスタポートがないことを確認します。
+* 次のいずれかの方法でオンボードキーマネージャ（OKM）または永遠キーマネージャ（EKM）が設定されているかどうかを確認します。
++
+** OKMまたはEKMが有効になっているかどうかは、システム管理者に確認してください。
+** OKMが有効になっているかどうかを確認するには、を使用し `security key-manager onboard show`ます。
+** EKMが有効になっているかどうかを確認するには、を使用し `security key-manager external show`ます。
 
+
+* OKMを使用するには、OKMパスフレーズファイルの内容が必要です。
+* EKMの場合は、パートナーノードから次のファイルのコピーが必要です。
++
+** /cfcard/kmip/ servers.cfgファイル。
+** /cfcard/kmip/certs/client.crtファイル。
+** /cfcard/kmip/certs/client.keyファイル。
+** /cfcard/kmip/certs/CA.pemファイル。
+
+
+
+
+.次の手順
+ブートメディアの要件を確認したら、link:bootmedia-shutdown-bmr.html["障害のあるコントローラをシャットダウン"]

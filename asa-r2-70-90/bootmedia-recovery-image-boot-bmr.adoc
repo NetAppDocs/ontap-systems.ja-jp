@@ -4,38 +4,34 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, boot the recovery image 
 summary: 自動ブートリカバリプロセスを使用して、パートナーコントローラからブートメディア上のイメージをリストアできます。 
 ---
-= 自動ブートリカバリ- ASA A70およびASA A90
+= ONTAPイメージの復元（ASA A70およびASA A90）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ブートメディアが破損した場合は、パートナーノードからONTAPイメージをリストアします。
+障害のあるブートメディアを物理的に交換したら、パートナーノードからONTAPイメージをリストアします。
 
-.このタスクについて
-ノードのブートメディアが破損すると、ブートプロセスがLoaderプロンプトで停止し、ブートエラーメッセージが表示されます。
+.作業を開始する前に
+* 次のいずれかの方法でオンボードキーマネージャ（OKM）または永遠キーマネージャ（EKM）が設定されているかどうかを確認します。
++
+** OKMまたはEKMが有効になっているかどうかは、お客様またはシステム管理者に確認してください。
+** OKMが有効になっているかどうかを確認するには、を使用し `security key-manager onboard show`ます。
+** EKMが有効になっているかどうかを確認するには、を使用し `security key-manager external show`ます。
 
-これらのブートエラーメッセージが表示された場合は、パートナーノードからONTAPイメージをリストアする必要があります。
 
-.ブートエラーメッセージの例を表示します。
-[%collapsible]
-====
-....
-Can't find primary boot device u0a.0
-Can't find backup boot device u0a.1
-ACPI RSDP Found at 0x777fe014
+* OKMを使用するには、OKMパスフレーズファイルの内容が必要です。
+* EKMの場合は、パートナーノードから次のファイルのコピーが必要です。
++
+** /cfcard/kmip/ servers.cfgファイル。
+** /cfcard/kmip/certs/client.crtファイル。
+** /cfcard/kmip/certs/client.keyファイル。
+** /cfcard/kmip/certs/CA.pemファイル。
 
-Starting AUTOBOOT press Ctrl-C to abort...
-Could not load fat://boot0/X86_64/freebsd/image1/kernel: Device not found
 
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0, fat)
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0, fat)
 
-Autoboot of PRIMARY image failed. Device not found (-6)
-LOADER-A>
-....
-====
+
 .手順
 . Loaderプロンプトで、次のコマンドを入力します。
 +
@@ -47,43 +43,67 @@ LOADER-A>
 +
 `Starting boot media recovery (BMR) process. Press Ctrl-C to abort…`
 
-. Loaderでローカルポートが設定され、パートナーノードから実行されるため、ブートメディアのリカバリプロセスを監視し `netboot`ます。
+. ブートメディアのインストールリカバリプロセスを監視します。
 +
-ネットブートの実行中は `Starting BMR`、メッセージが表示されます。
+プロセスが完了し、メッセージが表示されます `Installation complete.`。
 
-. 暗号化方法に応じて、システム構成に一致するオプションを選択します。
+. 暗号化と暗号化の種類がチェックされ、2つのメッセージのいずれかが表示されます。表示されるメッセージに応じて、次のいずれかの操作を実行します。
++
+
+IMPORTANT: システムにキー管理ツールが設定されているかどうかをプロセスで特定できない場合があります。システムでキー管理ツールが設定されているかどうかを確認してから、どのタイプのキー管理ツールが設定されているかを確認するエラーメッセージが表示されます。問題を解決すると、プロセスが再開されます。
+
++
+.構成エラーの検索プロンプトの例を表示します。
+[%collapsible]
+====
+....
+Error when fetching key manager config from partner ${partner_ip}: ${status}
+
+Has key manager been configured on this system
+
+Is the key manager onboard
+
+....
+====
++
+[cols="1,2"]
+|===
+| 表示されるメッセージ | 操作 
+
+
+ a| 
+`key manager is not configured. Exiting.`
+ a| 
+暗号化がシステムにインストールされていません。次の手順を実行します。
+
+.. ログインプロンプトが表示されたら、ノードにログインし、ストレージをギブバックします。
++
+「 storage failover giveback -ofnode _impaired_node_name _
+
+.. 手順5に進み、自動ギブバックを無効にした場合は有効にします。
+
+
+
+
+ a| 
+`key manager is configured.`
+ a| 
+手順4に進み、該当するキー管理ツールをリストアします。
+
+ノードはブートメニューにアクセスして次のコマンドを実行します。
+
+** オプション10：オンボードキーマネージャ（OKM）が搭載されたシステムの場合。
+** オプション11：外部キーマネージャ（EKM）が搭載されたシステムの場合。
+
+
+|===
+. 適切なキー管理ツールのリストアプロセスを選択します。
 +
 [role="tabbed-block"]
 ====
-.暗号化なし
---
-暗号化が検出されなかった場合は、キー管理を必要とせずにブートメディアのリカバリプロセスが続行されます。
-
-.. パートナーノードからバックアップ設定、envファイル、mdb、およびrdbがリストアされる間、リカバリプロセスを引き続き監視します。
-.. リカバリプロセスが完了すると、ノードがリブートします。次のメッセージは、リカバリが成功したことを示します。
-
-
-....
-
-varfs_backup_restore: update checksum for varfs.tgz
-varfs_backup_restore: restore using /cfcard/x86_64/freebsd/oldvarfs.tgz
-varfs_backup_restore: Rebooting to load the new varfs
-.
-Terminated
-varfs_backup_restore: bootarg.abandon_varfs is set! Skipping /var backup.
-
-....
-.. ノードがリブートしたら、システムがオンラインに戻って動作可能になったことを確認して、ブートメディアのリカバリが成功したことを確認します。
-.. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。
-+
-`storage failover giveback -ofnode _impaired_node_name_`です。
-
-
-
---
 .オンボードキーマネージャ（ OKM ）
 --
-オンボードキーマネージャ（OKM）が検出されると、次のプロンプトが表示されます。
+OKMが検出されると、次のメッセージが表示され、ブートメニューオプション10の実行が開始されます。
 
 ....
 key manager is configured.
@@ -91,8 +111,8 @@ Entering Bootmenu Option 10...
 
 This option must be used only in disaster recovery procedures. Are you sure? (y or n):
 ....
-.. ブートメニューオプションのプロンプトで、と入力して、 `Y`ブートメディアリカバリオプションの使用を確定します。
-.. プロンプトが表示されたらオンボードキーマネージャのパスフレーズを入力し、確認のためにもう一度パスフレーズを入力します。
+.. OKMリカバリプロセスを開始するかどうかを確認するプロンプトでと入力し `Y`ます。
+.. プロンプトが表示されたらオンボードキーマネージャのパスフレーズを入力し、プロンプトが表示されたらもう一度パスフレーズを入力して確認のために入力します。
 +
 .パスフレーズのプロンプトの例を表示します。
 [%collapsible]
@@ -101,19 +121,12 @@ This option must be used only in disaster recovery procedures. Are you sure? (y 
 Enter the passphrase for onboard key management:
 Enter the passphrase again to confirm:
 Enter the backup data:
-TmV0QXBwIEtleSBCbG9iAAECAAAEAAAAcAEAAAAAAAA3yR6UAAAAACEAAAAAAAAA
-QAAAAAAAAACJz1u2AAAAAPX84XY5AU0p4Jcb9t8wiwOZoqyJPJ4L6/j5FHJ9yj/w
-RVDO1sZB1E4HO79/zYc82nBwtiHaSPWCbkCrMWuQQDsiAAAAAAAAACgAAAAAAAAA
-3WTh7gAAAAAAAAAAAAAAAAIAAAAAAAgAZJEIWvdeHr5RCAvHGclo+wAAAAAAAAAA
-IgAAAAAAAAAoAAAAAAAAAEOTcR0AAAAAAAAAAAAAAAACAAAAAAAJAGr3tJA/LRzU
-QRHwv+1aWvAAAAAAAAAAACQAAAAAAAAAgAAAAAAAAABHVFpxAAAAAHUgdVq0EKNp
-.
-.
-.
-.
+-----BEGIN PASSPHRASE-----
+<passphrase_value>
+-----END PASSPHRASE-----
 ....
 =====
-.. パートナーノードからバックアップ設定、envファイル、mdb、およびrdbがリストアされる間、リカバリプロセスを引き続き監視します。
+.. 引き続きリカバリプロセスを監視し、パートナーノードから適切なファイルをリストアします。
 +
 リカバリプロセスが完了すると、ノードがリブートします。次のメッセージは、リカバリが成功したことを示します。
 
@@ -122,7 +135,7 @@ QRHwv+1aWvAAAAAAAAAAACQAAAAAAAAAgAAAAAAAAABHVFpxAAAAAHUgdVq0EKNp
 Trying to recover keymanager secrets....
 Setting recovery material for the onboard key manager
 Recovery secrets set successfully
-Trying to delete any existing km_onboard.wkeydb file.
+Trying to delete any existing km_onboard.keydb file.
 
 Successfully recovered keymanager secrets.
 ....
@@ -140,55 +153,194 @@ Successfully recovered keymanager secrets.
 --
 .外部キーマネージャ（ EKM ）
 --
-EKMが設定されている場合は、次のプロンプトが表示されます。
+EKMが検出されると、次のメッセージが表示され、ブートメニューオプション11の実行が開始されます。
 
-....
-Error when fetching key manager config from partner <IP>:
-
-Has key manager been configured on this system? {y|n}
-....
-.. EKMが設定されている場合はと入力します `Y`。
-+
 ....
 key manager is configured.
 Entering Bootmenu Option 11...
 ....
+.. 次の手順は、システムで実行しているONTAPのバージョンによって異なります。
 +
-セットアップ時に最初に使用されたEKM設定の入力を求められます。
+[cols="1,2"]
+|===
+| システムで実行しているバージョン | 操作 
 
-.. プロンプトが表示されたら、各EKM設定を入力します。
-.. クラスタUUIDとキーストアUUIDの属性が正しいことを確認します。
+
+ a| 
+ONTAP 9 .16.0
+ a| 
+... を押し `Ctlr-C`てブートメニューオプション11を終了します。
+... を押し `Ctlr-C`てEKM設定プロセスを終了し、ブートメニューに戻ります。
+... ブートメニューオプション8を選択します。
+... ノードをリブートします。
 +
-*** パートナーノードで、次のコマンドを使用してクラスタUUIDを取得します。
-+
-`cluster identity show`
-
-*** パートナーノードで、次のコマンドを使用してキーストアUUIDを取得します。
-+
-`vserver show -type admin -fields uuid`
+ `AUTOBOOT`を設定すると、ノードがリブートし、パートナーノードの構成ファイルを使用します。
 
 +
-`key-manager keystore show -vserver <nodename>`
+が設定されていない場合は `AUTOBOOT`、適切なbootコマンドを入力します。ノードがリブートし、パートナーノードの構成ファイルを使用します。
 
-*** パートナーノードを使用できない場合は、Mroot-AKキーを使用してUUIDを取得します。
+... EKMがブートメディアパーティションを保護するように、ノードをリブートします。
+... 手順cに進みます。
+
+
+
+
+ a| 
+ONTAP 9.16.1
+ a| 
+次の手順に進みます。
+
+|===
+.. プロンプトが表示されたら、次のEKM設定を入力します。
 +
-**** [Cluster UUID]に次のコマンドを入力します。
-+
-`x-NETAPP-ClusterName: <cluster name>`
-
-**** キーストアUUIDとして、次のコマンドを入力します。
-+
-`x-NETAPP-KeyUsage: MROOT-AK`
+[cols="2"]
+|===
+| アクション | 例 
 
 
+ a| 
+ファイルからクライアント証明書の内容を入力し `/cfcard/kmip/certs/client.crt`ます。
+ a| 
+.クライアント証明書の内容の例を表示します。
+[%collapsible]
+=====
+....
+-----BEGIN CERTIFICATE-----
+<certificate_value>
+-----END CERTIFICATE-----
+....
+=====
 
 
+ a| 
+ファイルからクライアントキーファイルの内容を入力し `/cfcard/kmip/certs/client.key`ます。
+ a| 
+.クライアントキーファイルの内容の例を表示します。
+[%collapsible]
+=====
+....
+-----BEGIN RSA PRIVATE KEY-----
+<key_value>
+-----END RSA PRIVATE KEY-----
+....
+=====
 
-.. プロンプトが表示されたら、キーストアUUIDとクラスタUUIDの値を入力します。
+
+ a| 
+KMIPサーバCAファイルの内容をファイルから入力し `/cfcard/kmip/certs/CA.pem`ます。
+ a| 
+.KMIPサーバファイルの内容の例を表示します。
+[%collapsible]
+=====
+....
+-----BEGIN CERTIFICATE-----
+<KMIP_certificate_CA_value>
+-----END CERTIFICATE-----
+....
+=====
+
+
+ a| 
+ファイルからサーバ構成ファイルの内容を入力し `/cfcard/kmip/servers.cfg`ます。
+ a| 
+.サーバ構成ファイルの内容の例を表示します。
+[%collapsible]
+=====
+....
+xxx.xxx.xxx.xxx:5696.host=xxx.xxx.xxx.xxx
+xxx.xxx.xxx.xxx:5696.port=5696
+xxx.xxx.xxx.xxx:5696.trusted_file=/cfcard/kmip/certs/CA.pem
+xxx.xxx.xxx.xxx:5696.protocol=KMIP1_4
+1xxx.xxx.xxx.xxx:5696.timeout=25
+xxx.xxx.xxx.xxx:5696.nbio=1
+xxx.xxx.xxx.xxx:5696.cert_file=/cfcard/kmip/certs/client.crt
+xxx.xxx.xxx.xxx:5696.key_file=/cfcard/kmip/certs/client.key
+xxx.xxx.xxx.xxx:5696.ciphers="TLSv1.2:kRSA:!CAMELLIA:!IDEA:!RC2:!RC4:!SEED:!eNULL:!aNULL"
+xxx.xxx.xxx.xxx:5696.verify=true
+xxx.xxx.xxx.xxx:5696.netapp_keystore_uuid=<id_value>
+....
+=====
+
+
+ a| 
+プロンプトが表示されたら、パートナーのONTAPクラスタUUIDを入力します。
+ a| 
+.ONTAPクラスタUUIDの例を表示します。
+[%collapsible]
+=====
+....
+Notice: bootarg.mgwd.cluster_uuid is not set or is empty.
+Do you know the ONTAP Cluster UUID? {y/n} y
+Enter the ONTAP Cluster UUID: <cluster_uuid_value>
+
+
+System is ready to utilize external key manager(s).
+....
+=====
+
+
+ a| 
+プロンプトが表示されたら、ノードの一時的なネットワークインターフェイスと設定を入力します。
+ a| 
+.一時的なネットワーク設定の例を表示します。
+[%collapsible]
+=====
+....
+In order to recover key information, a temporary network interface needs to be
+configured.
+
+Select the network port you want to use (for example, 'e0a')
+e0M
+
+Enter the IP address for port : xxx.xxx.xxx.xxx
+Enter the netmask for port : xxx.xxx.xxx.xxx
+Enter IP address of default gateway: xxx.xxx.xxx.xxx
+Trying to recover keys from key servers....
+[discover_versions]
+[status=SUCCESS reason= message=]
+....
+=====
+|===
 .. キーが正常にリストアされたかどうかに応じて、次のいずれかの操作を実行します。
 +
-*** キーが正常にリストアされると、リカバリプロセスが続行され、ノードがリブートされます。手順4に進みます。
-*** キーのリストアに失敗すると、システムが停止し、エラーメッセージと警告メッセージが表示されます。リカバリプロセスを再実行します。
+*** EKM設定が正常に復元されると、プロセスはパートナーノードから適切なファイルの復元を試み、ノードをリブートします。手順dに進みます。
++
+.成功した9.16.0リストアメッセージの例を表示します。
+[%collapsible]
+=====
+....
+
+kmip2_client: Importing keys from external key server: xxx.xxx.xxx.xxx:5696
+[Feb  6 04:57:43]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdUtils: [locateMrootAkUuids]:420: Locating local cluster MROOT-AK with keystore UUID: <uuid>
+[Feb  6 04:57:43]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [doCmdImp]:79: Calling KMIP Locate for the following attributes: [<x-NETAPP-ClusterId, <uuid>>, <x-NETAPP-KeyUsage, MROOT-AK>, <x-NETAPP-KeystoreUuid, <uuid>>, <x-NETAPP-Product, Data ONTAP>]
+[Feb  6 04:57:44]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [doCmdImp]:84: KMIP Locate executed successfully!
+[Feb  6 04:57:44]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [setUuidList]:50: UUID returned: <uuid>
+...
+kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:5696
+
+GEOM_ELI: Device nvd0s4.eli created.
+GEOM_ELI: Encryption: AES-XTS 256
+GEOM_ELI:     Crypto: software
+Feb 06 05:02:37 [_server-name_]: crypto_get_mroot_ak:140 MROOT-AK is requested.
+Feb 06 05:02:37 [_server-name_]: crypto_get_mroot_ak:162 Returning MROOT-AK.
+....
+=====
++
+.成功した9.16.1リストアメッセージの例を表示します。
+[%collapsible]
+=====
+....
+
+System is ready to utilize external key manager(s).
+Trying to recover keys from key servers....
+[discover_versions]
+[status=SUCCESS reason= message=]
+...
+kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:xxxx
+Successfully recovered keymanager secrets.
+....
+=====
+*** キーが正常にリストアされないと、システムは停止し、キーをリストアできなかったことを示します。エラーと警告メッセージが表示されます。と入力してリカバリプロセスを再実行し `boot_recovery -partner`ます。
 +
 .キーリカバリのエラーおよび警告メッセージの例を示します。
 [%collapsible]
@@ -196,17 +348,18 @@ Entering Bootmenu Option 11...
 ....
 
 ERROR: kmip_init: halting this system with encrypted mroot...
-
 WARNING: kmip_init: authentication keys might not be available.
-
-System cannot connect to key managers.
-
+********************************************************
+*                 A T T E N T I O N                    *
+*                                                      *
+*       System cannot connect to key managers.         *
+*                                                      *
+********************************************************
 ERROR: kmip_init: halting this system with encrypted mroot...
-
+.
 Terminated
 
 Uptime: 11m32s
-
 System halting...
 
 LOADER-B>
@@ -215,7 +368,7 @@ LOADER-B>
 
 
 .. ノードがリブートしたら、システムがオンラインに戻って動作可能になったことを確認して、ブートメディアのリカバリが成功したことを確認します。
-.. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。
+.. コントローラのストレージをギブバックして、コントローラを通常動作に戻します。
 +
 `storage failover giveback -ofnode _impaired_node_name_`です。
 
@@ -234,3 +387,6 @@ LOADER-B>
 `system node autosupport invoke -node * -type all -message MAINT=END`です。
 
 
+
+.次の手順
+ONTAPイメージをリストアしたあと、ノードが稼働してデータを提供できるようlink:bootmedia-complete-rma-bmr.html["故障した部品をNetAppに返却します。"]になります。
