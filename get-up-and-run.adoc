@@ -60,7 +60,7 @@ MetroCluster 構成でセットアップされていないストレージシス�
 [role="quick-margin-para"]
 コントローラをネットワークにケーブル接続し、コントローラをシェルフにケーブル接続します。  使用しているプラットフォームモデルの設置とセットアップの手順には、コントローラポートをネットワークおよびスイッチにケーブル接続する手順が含まれています。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"]ONTAPクラスタをセットアップする
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["6"]ONTAPクラスタをセットアップする
 [role="quick-margin-para"]
 コントローラとスイッチの設置とセットアップが完了したら、ONTAPでのストレージの設定を完了する必要があります。導入環境の設定に応じて、次の手順を参照してください。
 

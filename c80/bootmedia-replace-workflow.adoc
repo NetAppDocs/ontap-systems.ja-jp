@@ -2,16 +2,16 @@
 permalink: c80/bootmedia-replace-workflow.html 
 sidebar: sidebar 
 keywords: aff c80, replace the boot media 
-summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
+summary: AFF C80ストレージシステムのブートメディアの交換を開始するには、交換用メディアを準備してシステムに取り付け、ブートイメージをリストアし、システムの機能を確認します。 
 ---
-= ブートメディアの交換ワークフロー- AFF C80
+= ブートメディアの交換のクイックスタート- AFF C80
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ブートメディアを交換するには、次のワークフロー手順を実行します。
+AFF C80ストレージシステムのブートメディアの交換を開始するには、交換用メディアを準備してシステムに取り付け、ブートイメージをリストアし、システムの機能を確認します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:bootmedia-replace-requirements.html["ブートメディア要件を確認"]
 [role="quick-margin-para"]

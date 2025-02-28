@@ -2,16 +2,16 @@
 permalink: c80/controller-replace-workflow.html 
 sidebar: sidebar 
 keywords: aff c80, replace the controller workflow 
-summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
+summary: AFF C80コントローラの交換には、コントローラのシャットダウン、コントローラの取り外しと交換、システム設定の再設定、およびシステム動作の確認の手順が含まれます。 
 ---
-= コントローラの交換ワークフロー- AFF C80
+= コントローラ交換のクイックスタート- AFF C80
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-コントローラモジュールを交換するには、次のワークフロー手順に従ってください。
+AFF C80コントローラの交換には、コントローラのシャットダウン、コントローラの取り外しと交換、システム設定の再設定、およびシステム動作の確認の手順が含まれます。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:controller-replace-requirements.html["コントローラの交換要件を確認"]
 [role="quick-margin-para"]

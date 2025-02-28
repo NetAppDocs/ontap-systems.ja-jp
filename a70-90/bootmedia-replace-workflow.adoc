@@ -2,16 +2,16 @@
 permalink: a70-90/bootmedia-replace-workflow.html 
 sidebar: sidebar 
 keywords: aff a70, a90, replace the boot media 
-summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
+summary: AFF A70またはAFF A90ストレージシステムのブートメディアの交換を開始するには、交換用メディアを準備してシステムに取り付け、ブートイメージをリストアし、システムの機能を確認します。 
 ---
-= ブートメディアの交換ワークフロー- AFF A70とAFF A90
+= ブートメディアの交換のクイックスタート- AFF A70とAFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ブートメディアを交換するには、次のワークフロー手順を実行します。
+AFF A70またはAFF A90ストレージシステムのブートメディアの交換を開始するには、交換用メディアを準備してシステムに取り付け、ブートイメージをリストアし、システムの機能を確認します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:bootmedia-replace-requirements.html["ブートメディア要件を確認"]
 [role="quick-margin-para"]

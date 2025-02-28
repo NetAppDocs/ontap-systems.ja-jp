@@ -2,7 +2,7 @@
 permalink: c80/chassis-replace-shutdown.html 
 sidebar: sidebar 
 keywords: c80, shutdown the controllers 
-summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
+summary: シャーシを交換する必要がある場合は、AFF C80ストレージシステムのコントローラをシャットダウンします。メンテナンスやコンポーネントの交換を行う前に、データ損失を防ぎ、システムの安定性を確保するために、コントローラを安全にシャットダウンすることが重要です。 
 ---
 = コントローラのシャットダウン- AFF C80
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: シャーシを交換するには、コントローラをシャット�
 
 
 [role="lead"]
+シャーシを交換する必要がある場合は、AFF C80ストレージシステムのコントローラをシャットダウンします。メンテナンスやコンポーネントの交換を行う前に、データ損失を防ぎ、システムの安定性を確保するために、コントローラを安全にシャットダウンすることが重要です。
+
 この手順は、2ノード構成のシステムが対象です。クラスタにサービスを提供する際の正常なシャットダウンの詳細については、を参照してください https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage["ストレージシステムの正常なシャットダウンと電源投入解決ガイド- NetAppナレッジベース"]。
 
 .作業を開始する前に

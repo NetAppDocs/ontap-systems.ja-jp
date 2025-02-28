@@ -1,10 +1,10 @@
 ---
-permalink: c80/bootmedia-shutdown-bmr.html 
+permalink: asa-r2-a20-30-50/bootmedia-shutdown-bmr.html 
 sidebar: sidebar 
-keywords: c80, shut down the controller 
+keywords: aff a20, aff a30, aff a50, shut down the controller 
 summary: 障害のあるコントローラのシャットダウンを完了する必要があります。 
 ---
-= コントローラのシャットダウン- AFF C80
+= コントローラをシャットダウンします（AFF A20、AFF A30、AFF A50）。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -63,3 +63,6 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 
 |===
 
+
+.次の手順
+障害のあるコントローラをシャットダウンしたら、link:bootmedia-replace-bmr.html["ブートメディアの交換"]を参照してください。

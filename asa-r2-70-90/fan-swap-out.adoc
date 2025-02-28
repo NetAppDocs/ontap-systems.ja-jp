@@ -2,7 +2,7 @@
 permalink: asa-r2-70-90/fan-swap-out.html 
 sidebar: sidebar 
 keywords: asa r2 a70, asa r2 a90, asa r2, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module 
-summary: サービスを中断せずにファンモジュールを交換するには、特定の順序でタスクを実行する必要があります。 
+summary: ファンに障害が発生した場合、またはファンが効率的に動作していない場合は、ASA A70またはASA A90システムのファンモジュールを交換してください。これにより、システムの冷却や全体的なパフォーマンスに影響が及ぶ可能性があります。 
 ---
 = ファンモジュールの交換- ASA A70およびASA A90
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: サービスを中断せずにファンモジュールを交換する�
 
 
 [role="lead"]
+ファンに障害が発生した場合、またはファンが効率的に動作していない場合は、ASA A70またはASA A90システムのファンモジュールを交換してください。これにより、システムの冷却や全体的なパフォーマンスに影響が及ぶ可能性があります。
+
 ファンを交換するには、障害が発生したファンモジュールを取り外し、新しいファンモジュールと交換します。
 
 

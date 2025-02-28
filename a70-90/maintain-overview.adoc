@@ -2,18 +2,18 @@
 permalink: a70-90/maintain-overview.html 
 sidebar: sidebar 
 keywords: aff a70 aff a90 maintenance, maintenance, repairing aff a70 aff a90, repairing a70 aff a90, replace a70 aff a90 components 
-summary: AFF A70およびAFF A90ハードウェアのメンテナンス 
+summary: AFF A70およびAFF A90ストレージシステムのハードウェアを保守して、長期的な信頼性と最適なパフォーマンスを確保します。ダウンタイムやデータ損失の防止に役立つため、障害のあるコンポーネントの交換などの定期的なメンテナンスタスクを実行します。 
 ---
-= AFF A70およびAFF A90ハードウェアのメンテナンス
+= AFF A70およびAFF A90ストレージシステムの保守
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ハードウェアのメンテナンス手順が必要になる場合があります。このセクションでは、AFF A70およびAFF A90システムコンポーネントのメンテナンスに固有の手順について説明します。
+AFF A70およびAFF A90ストレージシステムのハードウェアを保守して、長期的な信頼性と最適なパフォーマンスを確保します。ダウンタイムやデータ損失の防止に役立つため、障害のあるコンポーネントの交換などの定期的なメンテナンスタスクを実行します。
 
-このセクションの手順は、AFF A70およびAFF A90システムがONTAP環境のストレージノードとしてすでに導入されていることを前提としています。
+メンテナンス手順では、AFF A70システムとAFF A90システムがONTAP環境にストレージノードとしてすでに導入されていることを前提としています。
 
 
 

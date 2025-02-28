@@ -1,10 +1,10 @@
 ---
-permalink: c80/bootmedia-replace-workflow-bmr.html 
+permalink: asa-r2-a20-30-50/bootmedia-replace-workflow-bmr.html 
 sidebar: sidebar 
-keywords: c80, replace the boot media 
+keywords: aff a20, aff a30, aff a50, replace the boot media 
 summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
 ---
-= ブートメディアの交換ワークフロー- AFF C80
+= ブートメディアの交換ワークフロー- AFF A20、AFF A30、およびAFF A50
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,7 +15,7 @@ summary: 障害が発生したコンポーネントは、プロバイダから�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:bootmedia-replace-requirements-bmr.html["ブートメディア要件を確認"]
 [role="quick-margin-para"]
-ブートメディアを交換するには、一定の要件を満たす必要があります。
+ブートメディアの交換要件を確認します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:bootmedia-shutdown-bmr.html["障害のあるコントローラをシャットダウンします"]
 [role="quick-margin-para"]
@@ -23,11 +23,11 @@ summary: 障害が発生したコンポーネントは、プロバイダから�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:bootmedia-replace-bmr.html["ブートメディアの交換"]
 [role="quick-margin-para"]
-障害が発生したブートメディアをシステム管理モジュールから取り外し、交換用ブートメディアを取り付けます。
+障害が発生したブートメディアを障害コントローラから取り外し、交換用ブートメディアを取り付けます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:bootmedia-recovery-image-boot-bmr.html["ブートメディアへのイメージのリストア（自動ブートリカバリ）"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:bootmedia-recovery-image-boot-bmr.html["ブートメディアにイメージをリストアする"]
 [role="quick-margin-para"]
-パートナーコントローラからONTAPイメージをリストアします。
+正常なコントローラからONTAPイメージをリストアします。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:bootmedia-complete-rma-bmr.html["障害のあるパーツをネットアップに返却します"]
 [role="quick-margin-para"]

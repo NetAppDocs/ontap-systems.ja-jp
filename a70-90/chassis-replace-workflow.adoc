@@ -2,16 +2,16 @@
 permalink: a70-90/chassis-replace-workflow.html 
 sidebar: sidebar 
 keywords: aff 70, 90, replace the chassis workflow 
-summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
+summary: AFF A70およびAFF A90シャーシの交換には、システムのシャットダウン、シャーシの取り外しと交換、コンポーネントの再設定、およびシステム動作の確認の手順が含まれます。 
 ---
-= シャーシの交換ワークフロー- AFF A70とAFF A90
+= シャーシ交換のクイックスタート- AFF A70およびAFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-シャーシを交換するには、次のワークフロー手順に従ってください。
+AFF A70およびAFF A90シャーシの交換には、システムのシャットダウン、シャーシの取り外しと交換、コンポーネントの再設定、およびシステム動作の確認の手順が含まれます。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:chassis-replace-requirements.html["シャーシの交換要件の確認"]
 [role="quick-margin-para"]

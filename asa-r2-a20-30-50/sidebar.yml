@@ -1,0 +1,77 @@
+---
+section: asa-r2-a20-30-50-maintain
+title: ASA A20、ASA A30、およびASA A50システム
+entries:
+- title: メンテナンス
+  pdf-filename: ASA A20、ASA A30、およびASA A50のメンテナンス
+  entries:
+  - title: メンテナンスの概要
+    url: "/asa-r2-a20-30-50/maintain-overview.html"
+  - title: ブートメディア
+    pdf-filename: ASA A20、ASA A30、およびASA A50のブートメディア
+    entries:
+    - title: ブートメディアの概要
+      url: "/asa-r2-a20-30-50/bootmedia-overview-bmr.html"
+    - title: ブートメディアの交換ワークフロー
+      url: "/asa-r2-a20-30-50/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/asa-r2-a20-30-50/bootmedia-replace-requirements-bmr.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa-r2-a20-30-50/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/asa-r2-a20-30-50/bootmedia-replace-bmr.html"
+    - title: ブートメディアへのイメージのリストア
+      url: "/asa-r2-a20-30-50/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/asa-r2-a20-30-50/bootmedia-complete-rma-bmr.html"
+  - title: シャーシ
+    pdf-filename: ASA A20、ASA A30、およびASA A50シャーシ
+    entries:
+    - title: シャーシの交換ワークフロー
+      url: "/asa-r2-a20-30-50/chassis-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/asa-r2-a20-30-50/chassis-replace-requirements.html"
+    - title: コントローラのシャットダウン
+      url: "/asa-r2-a20-30-50/chassis-replace-shutdown.html"
+    - title: シャーシの交換
+      url: "/asa-r2-a20-30-50/chassis-replace-move-hardware.html"
+    - title: シャーシ交換後の処理
+      url: "/asa-r2-a20-30-50/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラ
+    pdf-filename: ASA A20、ASA A30、ASA A50コントローラモジュール
+    entries:
+    - title: コントローラの交換ワークフロー
+      url: "/asa-r2-a20-30-50/controller-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/asa-r2-a20-30-50/controller-replace-requirements.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/asa-r2-a20-30-50/controller-replace-shutdown.html"
+    - title: コントローラを交換してください
+      url: "/asa-r2-a20-30-50/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/asa-r2-a20-30-50/controller-replace-system-config-restore-and-verify.html"
+    - title: コントローラをギブバック
+      url: "/asa-r2-a20-30-50/controller-replace-recable-reassign-disks.html"
+    - title: コントローラ交換後の処理
+      url: "/asa-r2-a20-30-50/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/asa-r2-a20-30-50/dimm-replace.html"
+  - title: ドライブ
+    url: "/asa-r2-a20-30-50/drive-replace.html"
+  - title: ファン
+    url: "/asa-r2-a20-30-50/fan-replace.html"
+  - title: I/O モジュール
+    pdf-filename: ASA A20、ASA A30、およびASA A50 I/Oモジュール
+    entries:
+    - title: I/Oモジュールの概要
+      url: "/asa-r2-a20-30-50/io-module-overview.html"
+    - title: I/O モジュールを追加します
+      url: "/asa-r2-a20-30-50/io-module-add.html"
+    - title: I/Oモジュールの交換
+      url: "/asa-r2-a20-30-50/io-module-replace.html"
+  - title: NVバッテリ
+    url: "/asa-r2-a20-30-50/nvdimm-battery-replace.html"
+  - title: 電源装置
+    url: "/asa-r2-a20-30-50/power-supply-replace.html"
+  - title: リアルタイムクロックバッテリ
+    url: "/asa-r2-a20-30-50/rtc-battery-replace.html"

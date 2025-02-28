@@ -2,7 +2,7 @@
 permalink: a70-90/chassis-replace-complete-system-restore-rma.html 
 sidebar: sidebar 
 keywords: aff a70, aff a90,  verify and set HA state, complete the replacement process 
-summary: キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。 
+summary: コントローラをリブートし、システムヘルスを確認し、障害が発生したパーツをNetAppに戻して、AFF A70 and AFF A90シャーシの交換ワークフローの最後の手順を完了します。 
 ---
 = シャーシの交換後の処理- AFF A70およびAFF A90
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: キットに付属のRMA指示書に従って、シャーシのHA状態
 
 
 [role="lead"]
-シャーシの交換プロセスを完了するには、ONTAPでブートし、ストレージをギブバックし、ストレージシステムの健全性を確認して、障害が発生したシャーシをNetAppに戻す必要があります。
+コントローラをリブートし、システムヘルスを確認し、障害が発生したパーツをNetAppに戻して、AFF A70 and AFF A90シャーシの交換ワークフローの最後の手順を完了します。
 
 
 

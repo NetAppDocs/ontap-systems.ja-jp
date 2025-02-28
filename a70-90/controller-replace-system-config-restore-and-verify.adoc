@@ -2,7 +2,7 @@
 permalink: a70-90/controller-replace-system-config-restore-and-verify.html 
 sidebar: sidebar 
 keywords: aff a70, aff a90, restore and verify the system configuration, verify and set the ha state of the controller module 
-summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
+summary: コントローラのHA構成がアクティブで、AFF A70またはAFF A90ストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。 
 ---
 = システム構成のリストアと検証（AFF A70 and AFF A90）
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: ハードウェアの交換が完了してメンテナンスモード�
 
 
 [role="lead"]
-交換用コントローラの下位システム構成を確認し、必要に応じてシステム設定を再設定します。
+コントローラのHA構成がアクティブで、AFF A70またはAFF A90ストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。
 
 
 

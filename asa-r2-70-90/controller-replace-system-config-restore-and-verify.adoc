@@ -2,7 +2,7 @@
 permalink: asa-r2-70-90/controller-replace-system-config-restore-and-verify.html 
 sidebar: sidebar 
 keywords: asa r2 a70, asa r2 a90, restore and verify the system configuration, verify and set the ha state of the controller module 
-summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
+summary: コントローラのHA構成がアクティブで、ASA A70またはASA A90ストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。 
 ---
 = システム構成のリストアと確認（ASA A70およびASA A90）
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: ハードウェアの交換が完了してメンテナンスモード�
 
 
 [role="lead"]
-交換用コントローラの下位システム構成を確認し、必要に応じてシステム設定を再設定します。
+コントローラのHA構成がアクティブで、ASA A70またはASA A90ストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。
 
 
 

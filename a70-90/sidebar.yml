@@ -27,7 +27,7 @@ entries:
   - title: ブートメディア
     pdf-filename: AFF A70、AFF A90ブートメディア
     entries:
-    - title: ブートメディアの交換ワークフロー
+    - title: フウトメテイアノコウカン
       url: "/a70-90/bootmedia-replace-workflow.html"
     - title: 要件を確認する
       url: "/a70-90/bootmedia-replace-requirements.html"
@@ -46,7 +46,7 @@ entries:
   - title: シャーシ
     pdf-filename: AFF A70、AFF A90シャーシ
     entries:
-    - title: シャーシの交換ワークフロー
+    - title: シヤアシコウカンノクイツクスタアト
       url: "/a70-90/chassis-replace-workflow.html"
     - title: 要件を確認する
       url: "/a70-90/chassis-replace-requirements.html"
@@ -61,7 +61,7 @@ entries:
   - title: コントローラ
     pdf-filename: AFF A70 / AFF A90コントローラモジュール
     entries:
-    - title: コントローラの交換ワークフロー
+    - title: コントローラ交換のクイックスタート
       url: "/a70-90/controller-replace-workflow.html"
     - title: 要件を確認する
       url: "/a70-90/controller-replace-requirements.html"

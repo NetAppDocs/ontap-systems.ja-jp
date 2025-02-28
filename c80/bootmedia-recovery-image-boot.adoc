@@ -2,7 +2,7 @@
 permalink: c80/bootmedia-recovery-image-boot.html 
 sidebar: sidebar 
 keywords: c80, boot the recovery image 
-summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
+summary: AFF C80システムのブートメディアが破損した場合は、USBドライブからリカバリイメージをブートし、パートナーノードから設定をリストアして、環境変数を確認できます。 
 ---
 = リカバリイメージのブート- AFF C80
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: ONTAP イメージを USB ドライブからブートし、ファイル
 
 
 [role="lead"]
+AFF C80システムのブートメディアが破損した場合は、USBドライブからリカバリイメージをブートし、パートナーノードから設定をリストアして、環境変数を確認できます。
+
 ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
 
 .手順

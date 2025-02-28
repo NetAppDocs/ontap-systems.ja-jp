@@ -1,0 +1,128 @@
+---
+permalink: asa-r2-a20-30-50/controller-replace-recable-reassign-disks.html 
+sidebar: sidebar 
+keywords: asa a20, asa a30, asa a50, how to reboot the system 
+summary: コントローラをリブートする必要があります。 
+---
+= コントローラのギブバック- ASA A20、ASA A30、ASA A50
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+コントローラをギブバックします。
+
+
+
+== コントローラをギブバック
+
+暗号化をリセットし（有効な場合）、コントローラを通常動作に戻します。
+
+[role="tabbed-block"]
+====
+.暗号化なし
+--
+. Loaderプロンプトで、と入力し `boot_ontap`ます。
+. コンソールメッセージが停止したら、<enter>キーを押します。
++
+** _login_promptが表示されたら、このセクションの最後の次の手順に進みます。
+** 「_Waiting for giveback_」と表示された場合は、<enter>キーを押してパートナーノードにログインし、このセクションの最後の次の手順に進みます。
+
+
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
+. 自動ギブバックを無効にした場合は、再度有効にします。 `storage failover modify -node local -auto-giveback _true_`
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+--
+.オンボード暗号化（OKM）
+--
+. Loaderプロンプトで、と入力し `boot_ontap maint`ます。
+. LoaderプロンプトからONTAPメニューを起動し `boot_ontap menu`、オプション10を選択します。
+. OKMパスフレーズを入力します。
++
+
+NOTE: パスフレーズの入力を2回求められます。
+
+. プロンプトが表示されたら、バックアップキーのデータを入力します。
+. ブートメニューで、「option for normal boot」と入力します `1`。
+. 「_Waiting for giveback_」と表示されたら、<enter>キーを押します。
+. パートナーノードにコンソールケーブルを接続し、としてログインします `admin`。
+. CFOアグリゲート（ルートアグリゲート）のみをギブバックします。 `storage failover giveback -fromnode local -only-cfo-aggregates _true_`
++
+** エラーが発生した場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
+
+
+. ギブバックレポートが完了してから5分待って、フェイルオーバーのステータスとギブバックのステータスを確認します（および `storage failover show-giveback`） `storage failover show`。
+. キーの同期とステータスの確認を行います。
++
+.. コンソールケーブルを交換用コントローラに戻します。
+.. 欠落しているキーの同期： `security key-manager onboard sync`
++
+
+NOTE: クラスタのOKMのクラスタ全体のパスフレーズを入力するように求められます。
+
+.. キーのステータスを確認します。 `security key-manager key query -restored _false_`
++
+適切に同期されている場合、出力には何の結果も表示されません。
+
++
+出力に結果（システムの内部キーテーブルにないキーのキーID）が表示された場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
+
+
+
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
+. 自動ギブバックを無効にした場合は、再度有効にします。 `storage failover modify -node local -auto-giveback _true_`
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+--
+.外部キー管理機能（EKM）
+--
+. ルートボリュームが外部キーマネージャで暗号化されており、コンソールケーブルが交換用ノードに接続されている場合は、と入力 `boot_ontap menu`してオプションを選択します `11`。
+.  `n`次の質問に答えて `y`ください。
++
+/cfcard/kmip/certs/client.crtファイルのコピーはありますか？｛y/n｝
+
++
+/cfcard/kmip/certs/client.keyファイルのコピーはありますか？｛y/n｝
+
++
+/cfcard/kmip/certs/CA.pemファイルのコピーはありますか？｛y/n｝
+
++
+または
+
++
+/cfcard/kmip/servers.cfgファイルのコピーがありますか？｛y/n｝
+
++
+KMIPサーバのアドレスがわかりますか？｛y/n｝
+
++
+KMIPポートを知っていますか？｛y/n｝
+
++
+
+NOTE: 問題がある場合はにお問い合わせください https://support.netapp.com["ネットアップサポート"]。
+
+. 次の情報を入力します。
++
+** クライアント証明書（client.crt）ファイルの内容
+** クライアントキー（client.key）ファイルの内容
+** KMIPサーバCA（CA.pem）ファイルの内容
+** KMIPサーバのIPアドレス
+** KMIPサーバのポート
+
+
+. システムが処理されると、ブートメニューが表示されます。通常ブートの場合は「1」を選択します。
+. テイクオーバーのステータスを確認します。 `storage failover show`
+. advancedモードに切り替えてから、 `run local partner nosavecore`修復されたノードのコアダンプがすべて保存されたことを確認します。 `set -privilege advanced`
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
+. 自動ギブバックを無効にした場合は、再度有効にします。 `storage failover modify -node local -auto-giveback _true_`
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+--
+====
