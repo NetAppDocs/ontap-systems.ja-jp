@@ -41,18 +41,18 @@ NS224シェルフをホットアドするには、HAペアが一定の要件を�
 
 NS224シェルフをホットアドする前に、次のベストプラクティスを確認してください。
 
-* *ベストプラクティス：*シェルフをホットアドする前に、の最新バージョンをインストールしておくことを推奨 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["Disk Qualification Package"^] します。
+* * Disk Qualification Package：*シェルフをホットアドする前に、最新バージョンのをインストールしておくことを推奨し https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["Disk Qualification Package"^]ます。
 +
 DQP の最新バージョンをインストールしておくと、新しく認定されたドライブがシステムで認識されて使用できるようになります。これにより、ドライブの情報が最新でない場合に表示されるシステムイベントメッセージを回避できるほか、ドライブが認識されないために発生するドライブのパーティショニングを回避できます。さらに、ドライブのファームウェアが最新でない場合も、通知で知ることができます。
 
-* *ベストプラクティス：*シェルフのホットアドの前後に実行することを推奨 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^] します。
+* * Active IQ Config Advisor：*シェルフのホットアドの前後に実行することを推奨します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
 +
 シェルフをホットアドする前にActive IQ Config Advisorを実行すると、既存のシェルフイーサネット（ENET）接続のSnapshotが作成され、NVMeシェルフモジュール（NSM）ファームウェアのバージョンが検証され、HAペアですでに使用されているシェルフIDを確認できます。
 
 +
 シェルフをホットアドしたあとに Active IQ Config Advisor を実行すると、シェルフが正しくケーブル接続されており、 HA ペア内でシェルフ ID が一意であることを確認できます。
 
-* *ベストプラクティス：*新しいシェルフを追加する前に、ストレージシステムにとの最新バージョンをインストールしておくことを推奨 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NVMeシェルフモジュール（NSM）ファームウェア"^] https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ドライブファームウェア"^] します。
+* * NSMファームウェア：*新しいシェルフを追加する前に、ストレージシステムにとの https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ドライブファームウェア"^]最新バージョンをインストールしておくことを推奨 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NVMeシェルフモジュール（NSM）ファームウェア"^]します。
 +
 
 NOTE: ファームウェアをシェルフおよびそのコンポーネントに対応しないバージョンにリバートしないでください。

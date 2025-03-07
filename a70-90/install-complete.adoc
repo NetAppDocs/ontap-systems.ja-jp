@@ -2,7 +2,7 @@
 permalink: a70-90/install-complete.html 
 sidebar: sidebar 
 keywords: aff a70, a90, prepare installation 
-summary: スイッチとラップトップのみに接続しているクラスタ検出を使用するか、ストレージシステムのコントローラに直接接続してから管理スイッチに接続して、プラットフォームのセットアップと設定を完了します。 
+summary: AFF A70またはAFF A90ストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。 
 ---
 = ストレージシステムのセットアップと設定の完了- AFF A70とAFF A90
 :allow-uri-read: 

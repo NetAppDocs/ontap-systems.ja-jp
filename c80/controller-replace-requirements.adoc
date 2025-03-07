@@ -17,8 +17,9 @@ AFF C80システムのシャーシを交換する前に、交換を成功させ�
 
 * すべてのドライブシェルフが適切に動作している必要があります。
 * 正常なコントローラは、交換するコントローラをテイクオーバーできる必要があります（この手順 では「障害のあるコントローラ」と呼びます）。
-* MetroCluster 構成のシステムの場合は、を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["正しいリカバリ手順の選択"] この手順の使用が必要かどうかを判断するには、次の手順を実行
-* 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。
+* この手順はコントローラのアップグレードには使用しないでください。代わりに、を参照してください https://docs.netapp.com/us-en/ontap-systems-upgrade/choose_controller_upgrade_procedure.html["コントローラハードウェアのアップグレード手順を選択"]。
+* MetroCluster構成のシステムの場合は、を参照して、この手順を使用する必要があるかどうかを https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["正しいリカバリ手順の選択"]確認します。
+* 障害が発生したコンポーネントは、NetAppから受け取ったField-Replaceable Unit（FRU；フィールド交換可能ユニット）と交換する必要があります。
 * コントローラモジュールは、同じモデルタイプのコントローラモジュールと交換する必要があります。コントローラモジュールを交換するだけでは、システムをアップグレードすることはできません。
 * この手順の一部としてドライブやドライブシェルフを変更することはできません。
 * ブートデバイスはシステムの背面に取り付けられたシステム管理モジュールに配置されているため、コントローラモジュールの交換時にブートデバイスを移動する必要はありません。

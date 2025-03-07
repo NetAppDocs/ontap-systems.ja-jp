@@ -5,7 +5,7 @@
 ストレージを移動してアップグレードするプロセスでは、 node3 と node4 の電源をオンにし、ソフトウェアイメージをブートしてノードを設定します。元のノードと新しいノードで、物理ポートのレイアウトが異なる場合があります。ポートと接続の適切なレイアウトを特定するには、元のノードと交換用ノードの間のポートのマッピングを行う必要があります。
 
 .このタスクについて
-新しいノードで実行されている ONTAP のバージョンが元のノードのバージョンと異なる場合は、ネットアップサポートサイトから Web にアクセスできるディレクトリに正しい <ONTAP_version>_image.tgz ファイルをダウンロードしておく必要があります（手順 4 を参照）。システムのネットブートを実行するには、 <ONTAP_version>_image.tgz ファイルが必要です。
+新しいノードで実行されているONTAPのバージョンが元のノードと異なる場合は、正しい<xxx_image.tgz>ファイルをNetAppサポートサイトからWebにアクセスできるディレクトリにダウンロードしておく必要があります（手順4を参照）。<xxx_image.tgz>ファイルは、システムのネットブートを実行するために必要です。
 
 .手順
 . node3 の電源をオンにし、すぐにコンソール端末で Ctrl+C キーを押して LOADER プロンプトにアクセスします。
@@ -63,11 +63,11 @@ ifconfig e0M -addr= ip_addr-mask= netmask `-gw= gateway `
  a| 
 * その他すべてのシステム *
  a| 
-「 + 」ネットブート http://web_server_ip/path_to_web-accessible_directory/<ontap_version>_image.tgz+`[]
+`+netboot http://web_server_ip/path_to_web-accessible_directory/<xxx_image.tgz>+`
 
 |===
 +
-web-accessible_directory には、ダウンロードした <ONTAP_version>_image.tgz ファイルの場所を指定します。
+path_to_the_web-accessible_directoryは、ダウンロードした<xxx_image.tgz>ファイルの場所です。
 
 +
 
@@ -77,7 +77,7 @@ NOTE: 新しいコントローラをネットブートできない場合は、�
 +
 「 This 手順 is not supported for Non-Disruptive Upgrade on an HA pair 」というメッセージは無視します。IT 環境：ソフトウェアの無停止アップグレード。コントローラのアップグレードは対象外。
 
-. 手順を続行するかどうかを確認するメッセージが表示されたら、「 y 」と入力し、パッケージの入力を求められたらイメージファイルの URL 「 + http://web_server_ip/path_to_web-accessible_directory/<ontap_version>_image.tgz+` 」を入力します。
+. 手順を続行するかどうかを確認するメッセージが表示されたらと入力し `y`、パッケージの入力を求められたら、イメージファイルのURLを入力します。 `+http://web_server_ip/path_to_web-accessible_directory/<xxx_image.tgz>+`
 +
 必要に応じてユーザ名とパスワードを入力するか、 Enter キーを押して続行します。
 

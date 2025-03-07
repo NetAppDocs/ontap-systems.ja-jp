@@ -2,7 +2,7 @@
 permalink: a700/nvram-module-or-nvram-dimm-replacement.html 
 sidebar: sidebar 
 keywords: aff a700, replace, nvram, module, dimm, manually, reassign, system, id, ha, system, disk, two, node, restore, storage, volume, encryption, functionality 
-summary: NVRAM モジュールは、 NVRAM モジュールあたり NVRAM10 と DIMM 、および最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。 
+summary: NVRAMモジュールは、NVRAM10とDIMM、およびNVRAMモジュールごとに最大2つのNVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）で構成されます。 
 ---
 = NVRAMモジュールまたはNVRAM DIMMの交換- AFF A700
 :allow-uri-read: 
@@ -11,9 +11,9 @@ summary: NVRAM モジュールは、 NVRAM モジュールあたり NVRAM10 と 
 
 
 [role="lead"]
-NVRAM モジュールは、 NVRAM モジュールあたり NVRAM10 と DIMM 、および最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。
+NVRAMモジュールは、NVRAM10とDIMM、およびNVRAMモジュールごとに最大2つのNVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）で構成されます。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。
 
-障害が発生した NVRAM モジュールを交換するには、シャーシからモジュールを取り外し、 NVRAM モジュールから FlashCache モジュールを取り外し、 DIMM を交換用モジュールに移し、 FlashCache モジュールまたはモジュールを再度取り付け、交換用 NVRAM モジュールをシャーシに取り付ける必要があります。
+障害が発生したNVRAMモジュールを交換するには、モジュールをシャーシから取り外し、NVRAMモジュールからFlash Cacheモジュールを取り外し、DIMMを交換用モジュールに移動し、Flash Cacheモジュールを再度取り付けて、交換用NVRAMモジュールをシャーシに取り付ける必要があります。
 
 システム ID は NVRAM モジュールから取得されるため、モジュールを交換する場合は、システムに属するディスクを新しいシステム ID に再割り当てします。
 
@@ -196,7 +196,7 @@ NVRAM モジュールを交換するには、シャーシのスロット 6 に�
 
 .手順
 . 接地対策がまだの場合は、自身で適切に実施します。
-. FlashCache モジュールを古い NVRAM モジュールから新しい NVRAM モジュールに移します。
+. Flash Cacheモジュールを古いNVRAMモジュールから新しいNVRAMモジュールに移動します。
 +
 image::../media/drw_9000_remove_flashcache.png[キャッシングモジュールの交換]
 
@@ -208,25 +208,25 @@ image::../media/drw_9000_remove_flashcache.png[キャッシングモジュール
  a| 
 image:../media/icon_round_1.png["番号1"]
  a| 
-オレンジ色のリリースボタン（ FlashCache モジュールが空の場合はグレー）
+オレンジ色のリリースボタン（空のFlash Cacheモジュールはグレー）
 
 
 
  a| 
 image:../media/icon_round_2.png["番号2"]
  a| 
-FlashCache のカムハンドル
+Flash Cacheのカムハンドル
 
 |===
 +
-.. FlashCache モジュール前面にあるオレンジ色のボタンを押します。
+.. Flash Cacheモジュールの前面にあるオレンジのボタンを押します。
 +
 
-NOTE: FlashCache モジュールが空の場合、リリースボタンの色はグレーです。
+NOTE: 空のFlash Cacheモジュールのリリースボタンはグレーです。
 
 .. モジュールが古い NVRAM モジュールから少し引き出されるまでカムハンドルを外に開きます。
 .. カムハンドルをつかみ、 NVRAM モジュールから引き出して、新しい NVRAM モジュールの前面に挿入します。
-.. FlashCache モジュールを NVRAM モジュールの奥までそっと押し込み、モジュールが所定の位置に固定されるまでカムハンドルを閉じます。
+.. Flash CacheモジュールをNVRAMモジュールの奥までそっと押し込み、モジュールが所定の位置にロックされるまでカムハンドルを閉じます。
 
 
 . ターゲットの NVRAM モジュールをシャーシから取り外します。

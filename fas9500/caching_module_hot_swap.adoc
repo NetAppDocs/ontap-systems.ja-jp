@@ -1,8 +1,8 @@
 ---
 permalink: fas9500/caching_module_hot_swap.html 
 sidebar: sidebar 
-keywords: fas9500, hot swap, replace, FlashCache 
-summary: NVMe SSD FlashCacheモジュール（FlashCacheまたはキャッシングモジュール）は、FAS9500システムのスロット6でのみNVRAM11モジュールの前面にあります。サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。 
+keywords: fas9500, hot swap, replace, Flash Cache 
+summary: NVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）は、FAS9500システムのスロット6でのみNVRAM11モジュールの前面にあります。サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。 
 ---
 = キャッシングモジュール FAS9500 をホットスワップします
 :allow-uri-read: 
@@ -11,10 +11,10 @@ summary: NVMe SSD FlashCacheモジュール（FlashCacheまたはキャッシン
 
 
 [role="lead"]
-NVMe SSD FlashCacheモジュール（FlashCacheまたはキャッシングモジュール）は、FAS9500システムのスロット6にあるNVRAM11モジュールの前面にあります。サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。
+NVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）は、FAS9500システムのスロット6のNVRAM11モジュールの前面にあります。サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。
 
 
-NOTE: FlashCacheモジュールをコールドスワップする場合は、I/Oモジュールの交換手順に従います。
+NOTE: Flash Cacheモジュールをコールドスワップする必要がある場合、またはコールドスワップする必要がある場合は、I/Oモジュールの交換手順に従ってください。
 
 .作業を開始する前に
 状況に応じて、ストレージシステムが次に示す特定の条件を満たしている必要があります。

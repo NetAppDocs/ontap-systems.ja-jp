@@ -2,7 +2,7 @@
 permalink: a70-90/bootmedia-recovery-image-boot.html 
 sidebar: sidebar 
 keywords: aff a70, aff a90, boot the recovery image 
-summary: AFF A70またはAFF A90システムのブートメディアが破損した場合は、USBドライブからリカバリイメージをブートし、パートナーノードから設定をリストアして、環境変数を確認できます。 
+summary: AFF A70またはAFF A90システムのブートメディアが破損した場合は、USBドライブからリカバリイメージをブートし、パートナーノードから設定をリストアできます。 
 ---
 = リカバリイメージのブート（AFF A70 and AFF A90）
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: AFF A70またはAFF A90システムのブートメディアが破損し
 
 
 [role="lead"]
-AFF A70またはAFF A90システムのブートメディアが破損した場合は、USBドライブからリカバリイメージをブートし、パートナーノードから設定をリストアして、環境変数を確認できます。
+AFF A70またはAFF A90システムのブートメディアが破損した場合は、USBドライブからリカバリイメージをブートし、パートナーノードから設定をリストアできます。
 
 ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
 
@@ -67,3 +67,6 @@ ONTAP イメージを USB ドライブからブートし、ファイルシステ
 *注意：*プロセスが失敗した場合は、に連絡してください https://support.netapp.com["ネットアップサポート"]。
 
 
+
+.次の手順
+リカバリイメージを起動したら、を実行する必要がありlink:bootmedia-encryption-restore.html["ブートメディアで暗号化をリストアする"]ます。

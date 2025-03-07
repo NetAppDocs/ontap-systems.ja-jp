@@ -54,7 +54,7 @@ link:fan-replace.html["ファン"]
 
 
  a| 
-link:caching-module-hot-swap.html["FlashCache"]
+link:caching-module-hot-swap.html["Flash Cache"]
  a| 
 Flash Cache は、最近読み取られたユーザデータとネットアップのメタデータをリアルタイムでインテリジェントにキャッシングすることで、データへのアクセスを高速化します。データベース、 E メール、ファイルサービスなど、ランダムリードが大量に発生するワークロードに効果的です。
 

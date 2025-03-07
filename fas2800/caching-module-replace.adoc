@@ -35,7 +35,7 @@ http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html["ONTAP 
 .. キャッシングモジュールのデータを消去します。 `system controller flash-cache secure-erase run -node _node name_ localhost -device-id _device_number_`
 +
 
-NOTE: を実行します `system controller flash-cache show` FlashCacheのデバイスIDがわからない場合は、コマンドを実行します。
+NOTE: 実行し `system controller flash-cache show`Flash CacheのデバイスIDがわからない場合は、コマンドをます。
 
 .. キャッシングモジュールからデータが消去されたことを確認します。 `system controller flash-cache secure-erase show`
 +

@@ -2,7 +2,7 @@
 permalink: a1k/nvram-replace.html 
 sidebar: sidebar 
 keywords: aff a1k, replace an nvdimm 
-summary: NVRAM モジュールは、 NVRAM12 と DIMM 、 NVRAM モジュールあたり最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。 
+summary: NVRAMモジュールは、NVRAM12とDIMM、およびNVRAMモジュールごとに最大2つのNVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）で構成されます。 
 ---
 = NVRAMの交換- AFF A1K
 :allow-uri-read: 

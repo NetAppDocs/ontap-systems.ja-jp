@@ -2,7 +2,7 @@
 permalink: a70-90/install-cable.html 
 sidebar: sidebar 
 keywords: aff a70, a90, prepare installation 
-summary: コントローラの管理ネットワークポートはスイッチに接続されます。HA インターコネクトポートとクラスタインターコネクトポートは、両方のコントローラでケーブル接続されます。コントローラモジュールは、注文した場合は外付けストレージに接続されています。 
+summary: AFF A70またはAFF A90ストレージシステムのラックハードウェアを設置したら、コントローラにネットワークケーブルを接続し、コントローラとストレージシェルフの間をケーブルで接続します。 
 ---
 = ハードウェアのケーブル接続- AFF A70とAFF A90
 :allow-uri-read: 

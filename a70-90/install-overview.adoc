@@ -2,7 +2,7 @@
 permalink: a70-90/install-overview.html 
 sidebar: sidebar 
 keywords: Installation, deployment, Install, deploy, Installing, deploying 
-summary: AFF A70またはA90ストレージシステムを設置してセットアップし、ONTAPシステムにHAペアとして導入するには、次の手順を実行します。 
+summary: AFF A70またはAFF A90システムを設置して設定するには、ハードウェア要件を確認し、サイトを準備し、ハードウェアコンポーネントを設置してケーブル接続し、システムの電源をオンにして、ONTAPクラスタをセットアップします。 
 ---
 = インストールと設定のワークフロー- AFF A70とAFF A90
 :allow-uri-read: 

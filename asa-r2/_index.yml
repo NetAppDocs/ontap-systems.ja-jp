@@ -3,7 +3,7 @@ indexpage:
   title: ASA r2システム
   summary: ASA R2ストレージシステムのマニュアルには、ASA R2システムのインストール、セットアップ、および保守が記載されています。
   keywords: asa r2, asa a1k, asa a70, asa a90, install, setup, maintain
-  lead: 新しいNetApp ASA R2システム（ASA A1K、ASA A70、およびASA A90）は、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルな操作性を実現します。
+  lead: 新しいNetApp ASA R2システム（ASA A1K、ASA A70、ASA A90、ASA A20、ASA A30、およびASA A50）は、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせたシンプルなエクスペリエンスを実現します。
   tiles:
   - title: はじめに
     links:

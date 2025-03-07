@@ -798,8 +798,6 @@
   <block id="c74fc698f6085001fa8e634011afdd6d" category="paragraph">セカンダリブートメディア上のイメージには 'image.tgz ファイルが含まれていて ' 障害を報告していないことが必要ですimage.tgz ファイルがない場合、またはブートメディアから障害が報告されている場合は、この手順を使用できません。USB フラッシュドライブ交換用手順を使用して、ブートイメージを交換用ブートメディアに転送する必要があります。</block>
   <block id="e698e87d27bc1a99a5f5b8d08fca35ac" category="list-text">ケーブルマネジメントデバイスを再び取り付け、必要に応じてシステムにケーブルを再接続します。</block>
   <block id="e3c4a5c3fcb3f43b24292d74d0191cba" category="paragraph">ケーブルを再接続する際は、メディアコンバータ（ SFP ）も取り付け直してください（メディアコンバータを取り外した場合）。</block>
-  <block id="dd04dd92143954e62338ecb34a5c6620" category="list-text">電源装置にケーブルを再接続し、電源に接続します。</block>
-  <block id="e5116f5891aa80c66712f78ca68f7345" category="paragraph">電源コードに電源ケーブルロックカラーを再度取り付けてください。</block>
   <block id="0c285136d46116873f7508d317da15c6" category="list-text">コントローラモジュールの固定フックが持ち上がるまで、コントローラモジュールをシステムの奥に押し込みます。固定フックを強く押し込んでコントローラモジュールを装着し、固定フックをコントローラモジュールのピンにかけてロックします。</block>
   <block id="4f3e92738b97672e7c43585384d07fa0" category="paragraph">ノードは、シャーシに完全に取り付けられるとすぐにブートを開始します。</block>
   <block id="8a3329557ea656d2883ec2301fc0c785" category="list-text">Ctrl+C キーを押してブートプロセスを中断し、 LOADER プロンプトで停止します。</block>
@@ -2464,7 +2462,6 @@
   <block id="bf6676c1b4e1cac9f1e6593249e2ba7d" category="list-text">バッテリをそっと押してホルダーから離し、持ち上げてホルダーから取り出します。</block>
   <block id="3b3396eaf97f4b90a50effb7d2321635" category="list-text">交換用バッテリを斜めにしてホルダーに挿入し（ホルダーから傾けた状態）、垂直な位置に押し込んでから、完全に装着されるまでコネクタにしっかりと押し込みます。</block>
   <block id="cfd2431baff6fc4122f2c8fed540c128" category="paragraph">ストレージを移動してアップグレードするプロセスでは、 node3 と node4 の電源をオンにし、ソフトウェアイメージをブートしてノードを設定します。元のノードと新しいノードで、物理ポートのレイアウトが異なる場合があります。ポートと接続の適切なレイアウトを特定するには、元のノードと交換用ノードの間のポートのマッピングを行う必要があります。</block>
-  <block id="f9001cb2001a5d31c1674d860cf46052" category="paragraph">新しいノードで実行されている ONTAP のバージョンが元のノードのバージョンと異なる場合は、ネットアップサポートサイトから Web にアクセスできるディレクトリに正しい &lt;ONTAP_version&gt;_image.tgz ファイルをダウンロードしておく必要があります（手順 4 を参照）。システムのネットブートを実行するには、 &lt;ONTAP_version&gt;_image.tgz ファイルが必要です。</block>
   <block id="cc32105596984688d6ab5fee199bc645" category="list-text">node3 の電源をオンにし、すぐにコンソール端末で Ctrl+C キーを押して LOADER プロンプトにアクセスします。</block>
   <block id="25870cbb4fe9afef5797b531420b7012" category="paragraph">node3 と node4 が同じシャーシにある場合は、手順 2 に進みます。ない場合は、手順 3 に進みます。</block>
   <block id="6c43e0670806fec2f9b82e002c3d44d5" category="list-text">node3 と node4 が単一シャーシ構成（同じシャーシ内にコントローラがある場合）の場合は、次の手順を実行します。</block>
@@ -2482,12 +2479,9 @@
   <block id="a6d12afddb580faaf04d9a073325f914" category="paragraph">* FAS2200 、 FAS2500 、 FAS3200 、 FAS6200 、 FAS/AFF8000 シリーズシステム *</block>
   <block id="935d002e70e8bae5172c906d561c2c9e" category="paragraph">「 + 」ネットブート<block ref="edffdf0ce71dcfe302f98b15ccfdea9f" category="inline-link-rx"></block></block>
   <block id="339dbbf2e3919abe2381758c4b54e24c" category="paragraph">* その他すべてのシステム *</block>
-  <block id="508003c9dbd4389e46ce53a1eb4ca352" category="paragraph">「 + 」ネットブート<block ref="a6ac12d7fa9f1afb6919890f5409d777" category="inline-link-rx"></block></block>
-  <block id="3d72abdf0c5ff5a5928889b5949891bd" category="paragraph">web-accessible_directory には、ダウンロードした &lt;ONTAP_version&gt;_image.tgz ファイルの場所を指定します。</block>
   <block id="a7cb2d731b29707bf9c40c8d88a0c732" category="admonition">新しいコントローラをネットブートできない場合は、テクニカルサポートにお問い合わせください。</block>
   <block id="9a8c20fab9267090fe0211c579b8d259" category="list-text">ブートメニューからオプション * （ 7 ） Install new software first * を選択し、新しいソフトウェアイメージをダウンロードしてブートデバイスにインストールします。</block>
   <block id="071501038eea1d369bfa271bfc4c7ff9" category="paragraph">「 This 手順 is not supported for Non-Disruptive Upgrade on an HA pair 」というメッセージは無視します。IT 環境：ソフトウェアの無停止アップグレード。コントローラのアップグレードは対象外。</block>
-  <block id="3119febddbb24ba81e9b7dcfef909e01" category="list-text">手順を続行するかどうかを確認するメッセージが表示されたら、「 y 」と入力し、パッケージの入力を求められたらイメージファイルの URL 「 + http://web_server_ip/path_to_web-accessible_directory/&lt;ontap_version&gt;_image.tgz+` 」を入力します。</block>
   <block id="647f982b341b67a165ac63d735784a54" category="paragraph">必要に応じてユーザ名とパスワードを入力するか、 Enter キーを押して続行します。</block>
   <block id="a01beec0f6ce0a2dd45c8f1d5aa3e76c" category="list-text">次のようなプロンプトが表示されたら 'n' を入力してバックアップ・リカバリをスキップします</block>
   <block id="4c311f4de89068c42d4731e90025eefc" category="list-text">次のようなプロンプトが表示されたら 'y' と入力して再起動します</block>
@@ -2571,7 +2565,6 @@
   <block id="568cc5cf99c02458b3c071cfa0438d78" category="list-text">コアダンプモジュールは、スロット 6-1 および 6-2 に取り付けることができます。推奨されるベストプラクティスは、スロット 6-1 にモジュールを取り付けることです。</block>
   <block id="ad76310ff3a94c1bac5eaff22586fdc8" category="list-text">X9170a コアダンプモジュールはホットスワップに対応していません。</block>
   <block id="fdb927001af9ab6198815c75f2c63fc8" category="section-title">手順 2 ：キャッシングモジュールを交換または追加する</block>
-  <block id="cd9ce211a477f674f43c4e29c1c20b1e" category="paragraph">NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）は、個別のモジュールです。これらは NVRAM モジュールの前面にあります。キャッシングモジュールを交換または追加するには、スロット 6 のシステム背面にあるモジュールの場所を確認し、特定の手順に従って交換します。</block>
   <block id="6455eae9a97e513335af578c9694839e" category="list-text">キャッシングモジュールを追加または交換する前に、ターゲットノードに LOADER プロンプトが表示されている必要があります。</block>
   <block id="5b88f8d2a4e22e99fb7e0713d3c2ff6a" category="list-text">交換用キャッシングモジュールの容量は、障害が発生したキャッシングモジュールと同じでなければなりませんが、サポートされている別のベンダーのキャッシングモジュールを使用することもできます。</block>
   <block id="074251bb1352813e87713927ba1de5e4" category="list-text">スロット 6 で、キャッシングモジュールの前面にある黄色の警告 LED が点灯している、障害が発生したキャッシングモジュールの場所を確認します。</block>
@@ -2623,7 +2616,6 @@
   <block id="64f6b820ab2dfc538680f52ee5405553" category="list-text">ファンモジュールのオレンジ色のボタンを押し、空いている手で支えながらファンモジュールをシャーシから引き出します。</block>
   <block id="d5275a655fb4dd5eb0c4cd06eb536394" category="cell">オレンジ色のリリースボタン</block>
   <block id="27289e7e37a8ebe804b1a49b34e69e35" category="section-title">手順 4 ： I/O モジュールを取り外します</block>
-  <block id="7d6149f51977af90ca10cd8b827e1eec" category="paragraph">NVRAM モジュールを含む古いシャーシから I/O モジュールを取り外すには、特定の手順を実行します。NVRAM モジュールを新しいシャーシに移動する場合、 NVRAM モジュールから FlashCache モジュールを取り外す必要はありません。</block>
   <block id="dcd1295802ce0e6356940d830afb9c60" category="list-text">ターゲットの I/O モジュールに接続されているケーブルをすべて取り外します。</block>
   <block id="2d3f76c264301933f910bbfb7a862680" category="list-text">ターゲットの I/O モジュールをシャーシから取り外します。</block>
   <block id="1746c03166c1029bf12087835ea936f0" category="list-text">文字と数字が記載されたカムボタンを押し下げます。</block>
@@ -2659,7 +2651,6 @@
   <block id="02115e0d387563593963d3e090ae447d" category="list-text">交換用ファンモジュールの端をシャーシの開口部に合わせ、完全に固定されるまでシャーシに挿入します。</block>
   <block id="07dfb549e1842a4183274e59acab0da7" category="paragraph">稼働中のシステムの場合、ファンモジュールがシャーシに正常に挿入されると、黄色の警告 LED が 4 回点滅します。</block>
   <block id="f7e35bdcf8da9684539c8d0c30bdfc4c" category="section-title">手順 10 ： I/O モジュールを取り付ける</block>
-  <block id="ae4f5c29207fbe466adb203203473a97" category="paragraph">古いシャーシから NVRAM / FlashCache モジュールなどの I/O モジュールを取り付けるには、特定の手順を実行します。</block>
   <block id="dbf1ba99b87a5b7bf76e1a0174f863f4" category="paragraph">I/O モジュールを新しいシャーシの対応するスロットに取り付けることができるように、シャーシを設置しておく必要があります。</block>
   <block id="a93fa9aba373d58e2f971de1346e1b75" category="list-text">交換用シャーシをラックまたはキャビネットに設置したら、交換用シャーシの対応するスロットに I/O モジュールをそっと挿入し、文字と数字が記載された I/O カムラッチをはめ込みます。 I/O カムラッチを上に押してモジュールを所定の位置にロックします。</block>
   <block id="7ae41c888a0689033181586a5bae1c09" category="list-text">必要に応じて、 I/O モジュールにケーブルを再接続します。</block>
@@ -2717,17 +2708,10 @@
   <block id="3b4693c82a80c8cd74de5624c046d419" category="paragraph">DCPM モジュールが完全にシャーシに装着されると、モジュールの LED が点灯します。</block>
   <block id="45da8e984c9f31fdb27d98396d6f1f44" category="paragraph">バッテリのリサイクルまたは廃棄に関する地域の規制に従って、バッテリを廃棄する必要があります。バッテリを適切に廃棄できない場合は、キットに付属する RMA 指示書に従って、バッテリをネットアップに返却する必要があります。</block>
   <block id="240a0b552505715727fe3b23eda7f49f" category="paragraph"><block ref="240a0b552505715727fe3b23eda7f49f" category="inline-link-rx"></block></block>
-  <block id="6c5689e6cebd33e09bd3177ac7c907ca" category="summary">NVRAM モジュールは、 NVRAM モジュールあたり NVRAM10 と DIMM 、および最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。</block>
   <block id="ed8076069cbf889b55cfae7fbfe0fa77" category="section-title">手順 2 ： NVRAM モジュールを交換します</block>
   <block id="a50a60c5a4b173a391b664ba7a38c5de" category="paragraph">NVRAM モジュールを交換するには、シャーシのスロット 6 にある NVRAM モジュールの場所を確認し、特定の手順に従います。</block>
-  <block id="5d0d368db133218e5906d443b61514c6" category="list-text">FlashCache モジュールを古い NVRAM モジュールから新しい NVRAM モジュールに移します。</block>
-  <block id="e2daacc31483bc3b72e7bcacf14a33cf" category="paragraph">オレンジ色のリリースボタン（ FlashCache モジュールが空の場合はグレー）</block>
-  <block id="82ce6e7b2bec620e2323db80d43596ed" category="paragraph">FlashCache のカムハンドル</block>
-  <block id="172abe1f5570c53335678f7df0c537d6" category="list-text">FlashCache モジュール前面にあるオレンジ色のボタンを押します。</block>
-  <block id="2228c66310ba59834f0b6f9926e2c172" category="admonition">FlashCache モジュールが空の場合、リリースボタンの色はグレーです。</block>
   <block id="bba309c8a06aaa0ae0083c07ed7d1439" category="list-text">モジュールが古い NVRAM モジュールから少し引き出されるまでカムハンドルを外に開きます。</block>
   <block id="42ae2677ae87c3a059cee0a88ad9a862" category="list-text">カムハンドルをつかみ、 NVRAM モジュールから引き出して、新しい NVRAM モジュールの前面に挿入します。</block>
-  <block id="b5f730ed78c52d852a761b7c3c7ace60" category="list-text">FlashCache モジュールを NVRAM モジュールの奥までそっと押し込み、モジュールが所定の位置に固定されるまでカムハンドルを閉じます。</block>
   <block id="0ecd762c67fe8cf5a5a773646ce470c9" category="list-text">ターゲットの NVRAM モジュールをシャーシから取り外します。</block>
   <block id="c4f162b9feccf5f963d674a3299a9f00" category="paragraph">NVRAM モジュールがシャーシから外れ、数インチ外に出ます。</block>
   <block id="ca401bca71da68589a6c9f6ae6d2abdf" category="list-text">NVRAM モジュール前面の両側にあるプルタブを引いてモジュールをシャーシから取り外します。</block>
@@ -2766,7 +2750,6 @@
   <block id="3a0f07d1b89f0d857d68c3c47a03e14d" category="list-text">複数のスロットが使用可能な場合は、でスロットの優先順位を確認します<block ref="bf137fbaca3418d969a7cbbc6acb278c" category="inline-link-rx"></block> また、お使いの I/O モジュールに最適なものを使用してください。</block>
   <block id="c0231814de48c33dacc879427cd2b0c4" category="list-text">無停止で I/O モジュールを追加するには、ターゲットコントローラをテイクオーバーし、ターゲットスロットのスロットブランクカバーを取り外すか、既存の I/O モジュールを取り外し、新しい I/O モジュールまたは交換用 I/O モジュールを追加して、ターゲットコントローラをギブバックする必要があります。</block>
   <block id="91b094c45d5351d209f688ccfd548bf7" category="list-text">他のすべてのコンポーネントが正常に機能していることを確認します。</block>
-  <block id="1544c9529e8061df2e6df349a1585acc" category="summary">NVMe SSD FlashCache モジュール（ FlashCache またはキャッシングモジュール）は、 FAS9000 システムのスロット 6 の NVRAM10 モジュールの前面にのみ配置されています。ONTAP 9.4 以降では、サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。</block>
   <block id="26f799463ec0df8fa8944abe163ef0a0" category="list-text">交換用のキャッシングモジュールスロットを次のように準備します。</block>
   <block id="57bed1144a41a674208d8d0428026e0b" category="list-text">ONTAP 9.7 以前：</block>
   <block id="21b03e46945fa952d9781d385e7edcec" category="list-text">ターゲットノードのキャッシングモジュールの容量、パーツ番号、およびシリアル番号を記録します：「 system node run local sysconfig -av 6 」</block>
@@ -4195,9 +4178,6 @@
   <block id="673f7a1f10ce14ef29b06ba53cf1e5d7" category="inline-link">CLI での NetApp Encryption の概要</block>
   <block id="ed20ee3e54ecf9b3b63f4e11ff820fb4" category="paragraph"><block ref="ed20ee3e54ecf9b3b63f4e11ff820fb4" category="inline-link-rx"></block></block>
   <block id="459527cf1ec141d19f1b0f88f8c19905" category="inline-link">ディスクとアグリゲートの概要</block>
-  <block id="0ab54354ff641ba8f3492f71c03aa435" category="list-text">NS224 ドライブシェルフをストレージスイッチ経由でケーブル接続します。</block>
-  <block id="d1f671afbf5d4ca47b95e86f70c6bcc1" category="list-text">ストレージスイッチを設置します。</block>
-  <block id="4aaebba2a5287c74eb41bf080e6d1fe4" category="list-text">使用しているプラットフォームモデルでサポートされているストレージスイッチやケーブルなどのハードウェアを確認します。</block>
   <block id="f1832f4de88037c446f0b7e9c0163aaa" category="paragraph">ドライブの所有権を削除するための手順は、ディスクとアグリゲートのコンテンツに含まれています。</block>
   <block id="6a925f3765a4dc795f4b5a0732579780" category="admonition-title">コントローラが MetroCluster 内にある</block>
   <block id="b2fdb7d98e0aecd7d98c266cea50e1e4" category="paragraph">HA ペア構成と 2 ノード MetroCluster 構成のどちらを使用しているかに応じて、新しいコントローラモジュールへのディスクの再割り当てを確認するか、ディスクを手動で再割り当てする必要があります。</block>
@@ -4214,7 +4194,6 @@
   <block id="10df5509416416659fe58fd40c64d2ec" category="paragraph"><block ref="10df5509416416659fe58fd40c64d2ec" category="inline-link-rx"></block></block>
   <block id="4ccbda321ca169104f4e4cac42fd679f" category="paragraph">RMA 番号を確認する場合や、交換用手順に関するその他のサポートが必要な場合は、テクニカルサポートにお問い合わせください<block ref="9a6f401ca1e7e89d8a0c29fb0cbe81b7" category="inline-link-rx"></block>にアクセスするか、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。</block>
   <block id="3868a54921a81264bddb64b574765582" category="paragraph"><block ref="3868a54921a81264bddb64b574765582" category="inline-link-rx"></block></block>
-  <block id="008b8867712161228bd794977fcd0d4b" category="paragraph"><block ref="008b8867712161228bd794977fcd0d4b" category="inline-link-rx"></block></block>
   <block id="35b669738c6a7d586d192e07cf910533" category="paragraph"><block ref="35b669738c6a7d586d192e07cf910533" category="inline-link-rx"></block></block>
   <block id="676ef1e0e4de2a0b0b6677b7a365b976" category="inline-link">使用しているバージョンの ONTAP 9 に対するハイアベイラビリティ構成のコンテンツを検索してください</block>
   <block id="d238d807ebe1f1809c0c6a9e4cb8c1bf" category="paragraph"><block ref="d238d807ebe1f1809c0c6a9e4cb8c1bf" category="inline-link-rx"></block></block>
@@ -4303,7 +4282,6 @@
   <block id="7ac0a68ff3a0c6b3beb7f03b58c8496d" category="paragraph">RTC バッテリを交換したら、コントローラモジュールを再度取り付ける必要があります。RTC バッテリをコントローラモジュールから 10 分以上取り出した場合は、時刻と日付のリセットが必要になることがあります。</block>
   <block id="f019032ca5e4ee1339ef0bcd485f9c8d" category="summary">コントローラモジュールを取り外して開き、コントローラのブートメディアの場所を確認して交換してから、交換用ブートメディアにイメージを転送する必要があります。</block>
   <block id="f42f050dc5269ad7b9f62abb5be6f335" category="doc">コントローラを取り外し、ブートメディアを交換して、ブートイメージ AFF A900 を転送します</block>
-  <block id="61fb64589c53cb1543b86398c0f9bf5f" category="admonition">インターフェイスによっては、その他のパラメータが必要になる場合もあります。詳細については、ファームウェアのプロンプトで「 help ifconfig 」と入力してください。</block>
   <block id="92119567969a6dfb8d14b4d139115118" category="list-text">MetroCluster ポートをイニシエータとして設定します。 ucadmin modify -m fc -t iniitator adapter_name</block>
   <block id="13437270a7a5bb30024bcf51e56b9645" category="doc">障害のあるパーツを NetApp-AFF A900 に返却します</block>
   <block id="9f1173b4d650a610b122024bb5216ca1" category="doc">システムにケーブルを再接続します（ AFF A900 ）</block>
@@ -4402,7 +4380,6 @@
   <block id="c9ed271ea801891a1b5c1e6e048813b6" category="list-text">復元された構成のコピーのプロンプトが表示されたら 'Y' を押します</block>
   <block id="29d4dec218aeaffabfed6dcc8fd1ad45" category="list-text">システムにオンボードキーマネージャ、 NSE 、または NVE が設定されている場合は、に進みます <block ref="39910b5f3ea1ee39d8059faae857cc98" category="inline-xref-macro-rx"></block></block>
   <block id="b35a00e75330322eefd710713ca83b02" category="doc">AFF A900 システム</block>
-  <block id="23b82013e68c4445eaa3ec355ca09fb4" category="summary">NVRAM モジュールは、 NVRAM11 と DIMM 、 NVRAM モジュールあたり最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。</block>
   <block id="b422a6f4d3945c00efbef5a1554df972" category="doc">NVRAM モジュール / NVRAM DIMM を交換してください - AFF A900</block>
   <block id="4d365227a3a5ccf9886fa9c35ba6a99d" category="paragraph">NVRAM モジュールは NVRAM11 と DIMM で構成されます。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。障害が発生した NVRAM モジュールを交換するには、モジュールをシャーシから取り外し、 DIMM を交換用モジュールに移して、交換用 NVRAM モジュールをシャーシに取り付ける必要があります。</block>
   <block id="356bb2eaf8fe1f9955f9f22e00ddcb54" category="paragraph">システム ID は NVRAM モジュールから取得されるため、モジュールを交換する場合は、システムに属するディスクを新しいシステム ID に再割り当てします。</block>
@@ -5018,8 +4995,6 @@
   <block id="6c77c0963cc43d89befd25aeab2f805c" category="inline-link-macro">FAS9500のインストールとセットアップの手順書</block>
   <block id="6b076d5e08feabcb936ff1fc2298c9cb" category="doc">シャーシFAS9500を交換してください</block>
   <block id="fb796745f1b93e7c27af0a928be9d5ae" category="doc">キャッシングモジュール FAS9500 をホットスワップします</block>
-  <block id="e5684d853146c37193094e90fea21bff" category="paragraph">NVMe SSD FlashCacheモジュール（FlashCacheまたはキャッシングモジュール）は、FAS9500システムのスロット6にあるNVRAM11モジュールの前面にあります。サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。</block>
-  <block id="1360261f3d9e17642c609debfd62b1d6" category="admonition">FlashCacheモジュールをコールドスワップする場合は、I/Oモジュールの交換手順に従います。</block>
   <block id="fa807167a57a5e7782f90326093319e4" category="list-text">キャッシングモジュールが機能していて、システムで認識できる十分な数の状態である必要があります。前回のブート以降にキャッシングモジュールが機能していない場合は、この手順 を使用できないため、コールドスワップの手順 を使用する必要があります。</block>
   <block id="bdd8c99ec41c2de3e99ba0a36e04bfbf" category="list-text">admin特権レベルで、削除するターゲットNVMeスロットを準備し、続行するかどうかを確認するプロンプトが表示されたら「y」と入力します。system controller slot module remove -node node_name -slot slot_number次のコマンドは、node1のスロット6-1を取り外し用に準備し、安全であることを示すメッセージを表示します。</block>
   <block id="68607949342d7df39c7770d809d0a5f2" category="image-alt">DRW 9500がFlashCacheを削除します</block>
@@ -5091,7 +5066,6 @@
   <block id="4d10af14d34e5e468c4aee19207329d3" category="list-text">kmip.init.gateway &lt; 値 &gt;</block>
   <block id="a1781eecf18376feb2f740b6a3d7781d" category="list-text">bootarg.onboard keymanager &lt;value&gt; という 2 つの属性を設定します</block>
   <block id="8ed13fe688162a9d4d89829700344e8f" category="list-text">printenv variable-name コマンドを使用して ' 変更内容を確認します</block>
-  <block id="890a5db496d99a96f099de944c9791c0" category="admonition">設定するターゲットポートは、ネットワーク接続を使用した var ファイルシステムのリストア中に、正常なノードから障害ノードへの通信に使用するポートです。このコマンドでは e0M ポートを使用することもできます。</block>
   <block id="f8cc7bd538c729e18dab57ecfd18b69e" category="video-title">アニメーション- NVRAMモジュールを交換します</block>
   <block id="9b191eaf82da57faf3acb37f96f84ca6" category="image-alt">DRW 9500 move remove NVRAM moduleの2つのモジュールがあります</block>
   <block id="1b75d6028af1363f62eb9a45010f31c4" category="image-alt">DRW 9500はNVRAMモジュールの内容を削除します</block>
@@ -5495,7 +5469,6 @@
   <block id="6e4968851f4373ab9764e16cffb39389" category="list-text">複数のスロットが使用可能な場合は、でスロットの優先順位を確認します<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> また、お使いの I/O モジュールに最適なものを使用してください。</block>
   <block id="757216293ea1da04339a2c9b8eaa2641" category="admonition">tar.gzファイルは、FAT32でフォーマットされた4GB以上のパーティションに配置する必要があります。FAT32パーティションは2TBにもなる可能性がありますが、Windowsの組み込みツール(diskpartなど)は32GBを超えるFAT32パーティションをフォーマットできません。</block>
   <block id="e9d3276fadd16a57346b54cecf613793" category="list-text">キャッシングモジュールのデータを消去します。<block ref="5ffb603e9f437c31dabf66aeb6dc9941" prefix=" " category="inline-code"></block></block>
-  <block id="06dd51a0351c6bc1041f60a7a78358f1" category="admonition">を実行します<block ref="77da07d2ad54f11335f6a0e867b30843" prefix=" " category="inline-code"></block> FlashCacheのデバイスIDがわからない場合は、コマンドを実行します。</block>
   <block id="955a29c530e47b3a4d397e3e2ff7a94a" category="list-text">キャッシングモジュールからデータが消去されたことを確認します。<block ref="5a00050b2fc68dfbfe21cffc587aa407" prefix=" " category="inline-code"></block></block>
   <block id="04f13a81f468108c54934d79ebdf3ceb" category="admonition">カードのポートラベルが見えない場合は、カードの取り付け方向を確認し（PCIeコネクタソケットはA400およびFAS8300 / 8700のカードスロットの左側にあります）、でカードのパーツ番号を確認します<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> ポートラベルを示すベゼルの図については、を参照してください。カードのパーツ番号は、を使用して確認できます<block ref="432345ed72f5509f18312f01d4f08dff" prefix=" " category="inline-code"></block> コマンドまたはをシステムパッキングリストに追加します。</block>
   <block id="3a5f51ab8f29522107285c1bd243bf95" category="paragraph">SAS2/SAS3 Mixed Stack Supportフィールドが出力に表示されないか、値が「none」の場合、システムは混在スタックをサポートしていません。</block>
@@ -5798,7 +5771,6 @@
   <block id="0a73484fb1b3edef8bbbf67f873dec2a" category="paragraph">シャーシを交換するには、障害のあるシャーシからコンポーネントを取り外し、交換用シャーシに取り付ける必要があります。</block>
   <block id="c41b6afef3be0625148760974efbe53b" category="paragraph">シャーシを交換するときに電源装置を取り外すには、障害のあるシャーシの背面から4つの電源装置の電源を切り、接続を解除してから取り外します。</block>
   <block id="f29cd4bb20b414e068c19ba637ce5223" category="paragraph">シャーシを交換するには、障害のあるシャーシからコントローラモジュールを取り外す必要があります。</block>
-  <block id="d29be88ad14bfa795c9cb4b5e8e71620" category="paragraph">障害のあるシャーシ（NVRAMモジュールを含む）からI/Oモジュールを取り外すには、特定の手順を実行します。NVRAMモジュールを交換用シャーシに移動するときに、FlashCacheモジュールがある場合はそのモジュールを取り外す必要はありません。</block>
   <block id="70796c97dce9e8bc0ec4d548fad4c33c" category="list-text">障害が発生したシャーシの残りのI/Oモジュールに対して前述の手順を繰り返します。</block>
   <block id="7dcb58280c958448c619b7845f19a872" category="paragraph">障害のあるシャーシの前面から2つのデステージコントローラ電源モジュールを取り外します。</block>
   <block id="bd87961e02bb318277afd71851d575b3" category="section-title">ステップ6: USB LEDモジュールを取り外します</block>
@@ -5809,7 +5781,6 @@
   <block id="2bc629fe1fa0756ba85648b1b075475e" category="list-text">障害のあるシャーシをシステムキャビネットのラックレールまたは装置ラックの_L_bracketsからスライドさせて外し、脇に置きます。この作業は2~3人で行ってください。</block>
   <block id="1cff1ec8bb5f01806ddb910dceecf767" category="list-text">障害のあるシャーシから取り外したネジを使用して、シャーシの前面を装置ラックまたはシステムキャビネットに固定します。</block>
   <block id="979104406ee03d12a7689ad931f5410b" category="list-text">ケーブル管理ブラケットを使用している場合は、障害のあるシャーシから取り外して、交換用シャーシに取り付けます。</block>
-  <block id="b9179a26176765e84f442a338275974c" category="paragraph">障害のあるシャーシからI/Oモジュール（NVRAM / FlashCacheモジュールを含む）を取り付けるには、特定の手順を実行します。</block>
   <block id="8a063f47876606fb88039df27bbfad1f" category="paragraph">I/Oモジュールを交換用シャーシの対応するスロットに取り付けるために、シャーシを取り付けておく必要があります。</block>
   <block id="62d3b0199402c94809d4bbaf872df5c3" category="admonition">障害のあるシャーシにブランクI/Oパネルがある場合は、この時点でそれらを交換用シャーシに移動します。</block>
   <block id="dc844fd8ca4280150d42e7895f0e653c" category="list-text">電源装置ロッカーがオフの位置にあることを確認します。</block>
@@ -6564,8 +6535,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6363d003788743405ff89be986530a80" category="doc">ファンの交換- AFF A700</block>
   <block id="425b45a67b7c80ba6549e393946073c1" category="doc">ブートメディアの交換- AFF A700</block>
   <block id="140d684ef1769656ce93863b342912ff" category="doc">NVRAMモジュールまたはNVRAM DIMMの交換- AFF A700</block>
-  <block id="b180ad00948e933913ce3bc8c504ee6d" category="paragraph">NVRAM モジュールは、 NVRAM モジュールあたり NVRAM10 と DIMM 、および最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。</block>
-  <block id="37ea95dcece93b9043b6f57473c523cc" category="paragraph">障害が発生した NVRAM モジュールを交換するには、シャーシからモジュールを取り外し、 NVRAM モジュールから FlashCache モジュールを取り外し、 DIMM を交換用モジュールに移し、 FlashCache モジュールまたはモジュールを再度取り付け、交換用 NVRAM モジュールをシャーシに取り付ける必要があります。</block>
   <block id="464d8fc73e92650a9ae0878d27074167" category="paragraph">システム ID は NVRAM モジュールから取得されるため、モジュールを交換する場合は、システムに属するディスクを新しいシステム ID に再割り当てします。</block>
   <block id="629fa568eaf78ff78d0fcfe8dda40271" category="doc">ハードウェアの移動と交換- AFF A700</block>
   <block id="ec3ff203f5d79b791c68957799b25408" category="doc">スロットが開いていないシステムにX91148Aストレージモジュールを追加- A700</block>
@@ -7367,7 +7336,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="ec2ab707a85ae3f8634491d0876e34c6" category="paragraph">ディスクを使用している本番用システムでドライブシェルフを交換する場合は、コールドシェルフを交換する必要があります。これは、システム停止を伴う手順です。HAペアのコントローラを停止する必要があります。</block>
   <block id="b70986af2d94261df69e2141b1a928cf" category="inline-link">コールドシェルフの取り外し手順を使用したシェルフシャーシの交換方法</block>
   <block id="3946a95173cf2872b6b6e8309352d61b" category="inline-link">NS224 NVMeドライブシェルフケーブル接続ガイド</block>
-  <block id="29c2f32397b266395d18c9814ee2c641" category="paragraph"><block ref="29c2f32397b266395d18c9814ee2c641" category="inline-link-rx"></block></block>
   <block id="5932d352036c33399a3ddcba5a995002" category="summary">NS224ドライブシェルフはコールド交換できます。</block>
   <block id="1aba95483fe95743e6b48b8708c5c514" category="doc">シェルフのコールド交換- NS224シェルフ</block>
   <block id="efc8f4d1076344beccb8353312cb002a" category="sidebar">ドライブシェルフ</block>
@@ -7627,7 +7595,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5cc16253a8aee4b43fffd03ab6bf4dcc" category="image-alt">PCIeカードの取り外しまたは取り付け</block>
   <block id="19d09ef846ca4e7e9e07b780168aa7e8" category="image-alt">電源装置の取り外し</block>
   <block id="421c376f4d6d54ea975a03a818082d3d" category="image-alt">DIMMの交換</block>
-  <block id="9cb7281bb7eb2acd0ccc0342394f8a2a" category="summary">NVMe SSD FlashCacheモジュール（FlashCacheまたはキャッシングモジュール）は、FAS9500システムのスロット6でのみNVRAM11モジュールの前面にあります。サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。</block>
   <block id="be156c2254730ffea327aad8b7574600" category="paragraph">&lt;stdin&gt;の未解決のディレクティブ- include::../_include/700_9000_caching_module_and_core_dump_module_replace.adoc []</block>
   <block id="98c84c18c84bbdb869a3af52fb92fee5" category="admonition">SuperRailを取り付けるための前面と背面の接続ポイント間の最小奥行きは24インチで、最大奥行きは32インチです。</block>
   <block id="391efe7c4ae90cf6bb51a9deabcdbefb" category="image-alt">5つのケーブルチェーンと各ドロワーの垂直コネクタと水平コネクタの図</block>
@@ -7807,8 +7774,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="502b19f0923675ac37953f046d92661c" category="list-text">USBフラッシュドライブをシステム管理モジュールのUSBスロットに挿入します。</block>
   <block id="54d19c7d0de44aef2c43e3480794f731" category="list-text">電源装置に電源ケーブルを接続し、電源ケーブル固定クリップを再度取り付けます。</block>
   <block id="beab314ce8e147a2186f06e70152d37b" category="paragraph">コントローラは、システムに電源を再接続するとすぐにブートを開始します。</block>
-  <block id="023f9d7e0e4f25a5ac2fefbe339b9d2a" category="list-text">DHCPを設定する場合：<block ref="910e8145592a2ef4eaf5e3c21b90a5e1" prefix=" " category="inline-code"></block></block>
-  <block id="be7a3d5eb4dec2257326a1191d508e3f" category="list-text">手動接続を設定する場合：<block ref="0cfd36fa2f6970c4256c7587d6c9730f" prefix=" " category="inline-code"></block></block>
   <block id="1db37c7c622a5ec1ab0be3b691e2c1f6" category="image-alt">コントローラモジュールのエアダクトの図AFF A70-90を閉じる</block>
   <block id="814c3874029ed6ca8ad80dd3b7be6a3b" category="list-text"><block ref="d7c37365844b6be16568f626fb19383d" prefix="" category="inline-code"></block> （AFF A220およびオールSANアレイ）</block>
   <block id="2544230e60d1b55358bdfdcb8dc88d1a" category="paragraph">コントローラモジュールを再度取り付けてブートします。</block>
@@ -8338,7 +8303,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="807b26d7111f209057a30d265b88f6ae" category="paragraph">I/Oモジュール（入出力モジュール）は、コントローラと、コントローラとデータを交換する必要があるさまざまなデバイスやシステムとの間の仲介役として機能するハードウェアコンポーネントです。</block>
   <block id="517e65cbfa02ca306eec69200485822d" category="paragraph">電源装置は、コントローラに冗長な電源を提供します。</block>
   <block id="aebd84aedf30ca3854097975c59229ed" category="doc">NVバッテリの交換- AFF A1K</block>
-  <block id="ef0c1c9390131a9f1f9560791151e3fd" category="summary">NVRAM モジュールは、 NVRAM12 と DIMM 、 NVRAM モジュールあたり最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。</block>
   <block id="f133a8ed8a0b7a76b6c1b28bc00b0fb1" category="doc">NVRAMの交換- AFF A1K</block>
   <block id="6794ac4e17218aaa4a21099cb6c428a5" category="doc">電源装置の交換- AFF A1K</block>
   <block id="5dae7574a50de0a82f041d98e2b363d4" category="doc">リアルタイムクロックバッテリを交換してください- AFF A1K</block>
@@ -8521,12 +8485,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="c2ffe02d76c4f089648f1647b43e4ee5" category="section-title">ベストプラクティス</block>
   <block id="c4d5d39d9de05fa063bc3710cce88d43" category="paragraph">NS224シェルフをホットアドする前に、次のベストプラクティスを確認してください。</block>
   <block id="b0af51fce4a966624ca8dbbb18556393" category="inline-link">Disk Qualification Package</block>
-  <block id="fc229f016899e45241a8132e54e09068" category="list-text">*ベストプラクティス：*シェルフをホットアドする前に、の最新バージョンをインストールしておくことを推奨<block ref="2e664cd4eb21331de01544565a2d83a5" category="inline-link-rx"></block> します。</block>
-  <block id="98321f616aed394d511784263fe8c7fb" category="list-text">*ベストプラクティス：*シェルフのホットアドの前後に実行することを推奨<block ref="7064c89577900622f24a070c24ebbaa7" category="inline-link-rx"></block> します。</block>
   <block id="9f24cdc2b556e4f7c914bbbf091868aa" category="paragraph">シェルフをホットアドしたあとに Active IQ Config Advisor を実行すると、シェルフが正しくケーブル接続されており、 HA ペア内でシェルフ ID が一意であることを確認できます。</block>
   <block id="3ddbd0df27907810ff1b446086cf9a21" category="inline-link">NVMeシェルフモジュール（NSM）ファームウェア</block>
   <block id="9a29657c935c0df841655f534d7ab2f2" category="inline-link">ドライブファームウェア</block>
-  <block id="b8f81eee7a525fe28574a64eeb1b3cd6" category="list-text">*ベストプラクティス：*新しいシェルフを追加する前に、ストレージシステムにとの最新バージョンをインストールしておくことを推奨<block ref="2e6e5b670045aa9f131e153e1b997791" category="inline-link-rx"></block><block ref="fdb117163130a37cd01d2ae31eb75969" category="inline-link-rx"></block> します。</block>
   <block id="79a4da7f1ec39f638870f54388dd033e" category="sidebar">AFF A1Kシステム</block>
   <block id="1359f19561173d7123369e0c8f9fb141" category="sidebar">AFF A1Kのインストールとセットアップ</block>
   <block id="6f550466a69bad21f11ab99fc12db497" category="sidebar">インストールワークフロー</block>
@@ -8859,7 +8820,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7f5f5398e620a9f9ae998736b2d4d230" category="list-text">交換用モジュールを使用したコントローラのコンソールに「Waiting for giveback...」メッセージが表示されるまで待ってから、正常なコントローラでシステムの状態を確認します。_storage failover show_</block>
   <block id="c1b6a9a30a6ce8d79305050622234851" category="paragraph">コマンド出力に、コントローラの状態を示すメッセージが表示されます。</block>
   <block id="b58ec5a6cf078c8a3a2b309a797f9e62" category="paragraph">コントローラはストレージプールを再接続し、ブートを完了します。</block>
-  <block id="c23f2b6754e0bfe310956814b83c20c2" category="list-text">ディスクプールが想定どおりであることを確認します。<block ref="a9fae81f0c924f3a581cf23a9c8b11b1" prefix=" " category="inline-code"></block></block>
   <block id="7acc547c8acfbe4a745ca72a3e0e83e4" category="image-alt">DRW A800ドライブがIEOPS 960に装着されました</block>
   <block id="db4669e53766b1110dbd428a22b6f5cc" category="list-text">システム管理カムボタンを押します。</block>
   <block id="cf91b43675e7187d6e724e7c312e336a" category="list-text">カムラッチDOをモジュールからできるだけ離します。</block>
@@ -8992,13 +8952,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="d03f5ec8a330688c4e047e99f5fecd12" category="inline-link-macro">AFF A1Kストレージシステムを設置する準備</block>
   <block id="95225809efab4457ee4a53c1a58dfb52" category="paragraph">ハードウェア要件を確認したら、<block ref="483aaa3c2f4f88e7b219b85383e864a7" category="inline-link-macro-rx"></block></block>
   <block id="e736c3581e7cc7eb9804edd4215c31b3" category="doc">故障した部品をNetApp - AFF A70 and AFF A90に返却します。</block>
-  <block id="e32530d54c0288f36793648830558717" category="doc">リストア暗号化- AFF A70およびAFF A90</block>
   <block id="a13516239a2a49e82fd12bff6cdd2f91" category="doc">リカバリイメージのブート（AFF A70 and AFF A90）</block>
-  <block id="7c506ea0b7da853881a11acc736d97c7" category="doc">ブートメディアの交換要件- AFF A70とAFF A90</block>
   <block id="08d73f01628a5943295e92f24c02e02b" category="doc">ブートメディアの交換- AFF A70とAFF A90</block>
-  <block id="ecf04557e2cacfb271d9b67c7f2b3a72" category="doc">障害のあるコントローラをシャットダウン- AFF A70とAFF A90</block>
   <block id="a91e5640776c0744ff211f74a193dc57" category="doc">シャーシの交換- AFF A70 and AFF A90</block>
-  <block id="85d8564bfb7225b8979b99bf295a46f1" category="doc">シャーシの交換要件- AFF A70およびAFF A90</block>
   <block id="2f7658a94038d064a8c1d014e3362aa8" category="doc">コントローラのシャットダウン- AFF A70 and AFF A90</block>
   <block id="610624f1a6b2eadbbc362858bfa11e2f" category="inline-link-macro">シャーシの交換要件の確認</block>
   <block id="15f73c32702be38a6c35694972953b59" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="9e50dfd69463f0498a1a5a1d869a2b1e" category="inline-link-macro-rx"></block></block>
@@ -9006,14 +8962,11 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="04639049161c98433d708c0a6845499c" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="7965ac6558ac93dfaf2504fcd8c045af" category="inline-link-macro-rx"></block></block>
   <block id="49b45e8248fd2d5ed919902809621c44" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="50c430fbfd37e7720d34aff806c960b8" category="inline-link-macro-rx"></block></block>
   <block id="b47ee6654722b2bed7a27aba5a38d41e" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="24cfaad2045c82e6542685b8f9154291" category="inline-link-macro-rx"></block></block>
-  <block id="8b2975d216e00ec9bbae796edb379021" category="doc">コントローラモジュールを交換してください- AFF A70 and AFF A90</block>
   <block id="b851102d36222ece27890507e1841ecc" category="doc">コントローラの交換要件- AFF A70とAFF A90</block>
   <block id="68e66200bb827544f2bc5f02c2c9a441" category="doc">コントローラ交換後の処理- AFF A70とAFF A90</block>
   <block id="5e1c3f88c24c4db392d7d1d519b28aa4" category="doc">障害のあるコントローラをシャットダウンします- AFF A70 and AFF A90</block>
   <block id="50a2e3714f0440fca3d96537b2113368" category="doc">システム構成のリストアと検証（AFF A70 and AFF A90）</block>
   <block id="ea0554b4bb91e270fbc2d78ea4e70d10" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="e14fc53a2fbc5d3f87f2c572a1629eed" category="inline-link-macro-rx"></block></block>
-  <block id="d76ab8637f7b871faf1afbc59cd046ca" category="doc">DIMMの交換- AFF A70 and AFF A90</block>
-  <block id="48144ea57b64dddd5b6d7aa9af0b7f31" category="doc">SSDドライブの交換- AFF A70およびAFF A90</block>
   <block id="6c8228ef743965fe7b33006e88a295a0" category="doc">ファンモジュールの交換- AFF A70 and AFF A90</block>
   <block id="d570d60e6fb68aef28765899da0c3a11" category="summary">AFF A70およびAFF A90ハードウェアのメンテナンス</block>
   <block id="633a66c416ef74d4bb2e9b9bd6538f11" category="doc">AFF A70およびAFF A90ハードウェアのメンテナンス</block>
@@ -9042,7 +8995,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="addbfcd02447e9d1c6cbb3810c45a6ac" category="paragraph">AFF A70またはAFF A90ストレージシステムのラックハードウェアを設置し、コントローラとストレージシェルフのケーブルを取り付けたら、ストレージシェルフとコントローラの電源をオンにする必要があります。</block>
   <block id="ed1a15747627f84755b5eef621bb8e85" category="inline-link-macro">システムセットアップの完了</block>
   <block id="c0677b3f2eac3919f6dafe43a0461dd5" category="paragraph">AFF A70またはAFF A90ストレージ・システムの電源をオンにした後は、<block ref="a6663b3be7b31b2e16a5286f009fcfff" category="inline-link-macro-rx"></block></block>
-  <block id="21fcd461c7d93e9d4e6cc391e27e2f50" category="summary">AFF A70およびAFF A90プラットフォームのインストールを準備します。</block>
   <block id="ec9b0b25a575ea2719a43e0ed4eba2ef" category="doc">インストールの準備- AFF A70とAFF A90</block>
   <block id="e2ffcf27d17e53137e3f3b594c1cd4c4" category="paragraph">AFF A70またはAFF A90ストレージシステムを設置する準備をします。設置場所を準備し、開梱して内容を納品書と比較し、システムを登録してサポートを利用します。</block>
   <block id="61c06139b6cae8ee51fc2ec7501dee42" category="inline-link-macro">AFF A70またはAFF A90ストレージシステムのハードウェアを設置</block>
@@ -9055,10 +9007,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="904251477a4ab72deb06fb568e51e8e9" category="doc">I/Oモジュールの追加と交換- AFF A70 and AFF A90の概要</block>
   <block id="23c290996bbddd9feb90c8208ce03776" category="doc">I/Oモジュールの交換- AFF A70 and AFF A90</block>
   <block id="45246f3dd0a53426b7b68a7138275eae" category="doc">NVバッテリの交換- AFF A70およびAFF A90</block>
-  <block id="59d1ac278f79c5b6902c13cbe126a692" category="doc">NVRAMの交換- AFF A70 and AFF A90</block>
   <block id="142aed9b4219bef04d9ce41b26e16e98" category="doc">電源装置の交換- AFF A70 and AFF A90</block>
   <block id="09667d54b485aed2ff058a0b9116b943" category="doc">リアルタイムクロックバッテリを交換してください- AFF A70 and AFF A90</block>
-  <block id="e0bb6be3391ff9aea036f34370ebe044" category="doc">システム管理モジュールの交換- AFF A70およびAFF A90</block>
   <block id="1d04f5bb7d7b81fc8fded3b79cc0c8d3" category="doc">ASA R2システムのインストールとセットアップ</block>
   <block id="22d05c38a6e8032e35e9ff8d6b826ee0" category="inline-link">ASA R2システムのマニュアル</block>
   <block id="5aef6f7c7bd154b3669d06150a10ac8f" category="paragraph"><block ref="4842686d9ffe46ff775159613c5fe1d3" category="inline-link-rx"></block>ASA R2システムのインストール、使用、および管理の方法については、を参照してください。</block>
@@ -9151,40 +9101,15 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="ecda8f0a8ab2239fa58008bc2a6778f3" category="inline-link-macro">ブートメディアの交換要件の確認</block>
   <block id="1246a1947c9d78ac27a693476f2c4ef2" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="49f63bb068bbde0e2924e3e81e942570" category="inline-link-macro-rx"></block></block>
   <block id="789b5a8a8cbbdce99d0cd8864ee0122a" category="doc">障害のあるコントローラ FAS70 および FAS90 をシャットダウンします</block>
-  <block id="05b595056622ad7d437a73c41db4bd5b" category="summary">NVMe SSD FlashCacheモジュールキャリアには、1つまたは2つのFlashCacheモジュール（キャッシングモジュール）が搭載されており、それぞれのキャッシングモジュールにSSDキャッシュドライブが1本搭載されています。キャッシングモジュールはホットスワップできますが、FlashCacheモジュールキャリアはホットスワップに対応していません。</block>
-  <block id="aff5c09093f639896fea8aee1334af32" category="doc">FlashCacheモジュールキャリアまたはキャッシングモジュールの交換- FAS70およびFAS90</block>
-  <block id="e59c2a74cd130e52d9f5e488b284afd2" category="paragraph">NVMe SSD FlashCacheモジュールキャリアには、1つまたは2つのFlashCacheモジュール（キャッシングモジュール）が搭載されており、それぞれのキャッシングモジュールにSSD FlashCacheドライブが1本搭載されています。</block>
-  <block id="cb31e24fc56b3b07f537f88f0cb0663e" category="paragraph">FAS70は2TBのキャッシングモジュールをサポートし、FAS90は4TBのキャッシングモジュールをサポートします。FlashCacheモジュールキャリアに容量の異なるキャッシングモジュールを混在させることはできません。</block>
-  <block id="1a0f9807030e2dcfcf3ad16528a90a4c" category="paragraph">交換が必要な項目（FlashCacheモジュールキャリア全体またはキャッシングモジュール）に応じて、次のいずれかの手順を実行できます。</block>
-  <block id="7393401d7aa7c5b4209f5909c56bc452" category="list-text"><block ref="74d9532e70287c4c6d14bca0d22b793b" category="inline-xref-macro-rx"></block></block>
   <block id="2902ee20441450339d3c624a2432953d" category="list-text"><block ref="402920e7db99056d01d15836c97d7e6e" category="inline-xref-macro-rx"></block></block>
-  <block id="da50599709f8ceacbb2f44ac74538cb8" category="section-title">FlashCacheモジュールキャリアを交換</block>
-  <block id="638f93e44a4e5eba8188b65837d38950" category="paragraph">FlashCacheモジュールキャリアはスロット6にあり、FlashCacheモジュールを2つまで搭載できます。FlashCacheモジュールキャリアはホットスワップできません。</block>
-  <block id="509e381c6e70d6f5709eab0ac2007056" category="list-text">交換用FlashCacheモジュールキャリアに対応したオペレーティングシステムがストレージシステムにインストールされていることを確認します。</block>
   <block id="0ead7a2e2db558cfd790c55a9c76462e" category="list-text">他のすべてのコンポーネントが正常に動作していることを確認します。正常に動作していない場合は、テクニカルサポートにお問い合わせください。</block>
   <block id="fd39955a756e9aaa81ca55b2791f9b72" category="example-title">オプション1 MOSTシステム</block>
   <block id="d4373786f422d4c41e16fcb4a1e26b83" category="example-title">オプション2 MetroCluster構成</block>
-  <block id="ae50de269a959e0165943b2893821522" category="section-title">手順2：FlashCacheモジュールキャリアを交換する</block>
-  <block id="a66569371b683ea32e370479ad445c58" category="paragraph">FlashCacheモジュールキャリアを交換するには、次の手順を実行します。</block>
-  <block id="a78dfa5641477f997773a8a496bc6c27" category="list-text">スロット6で、FlashCacheモジュールキャリアの前面にある黄色の警告LEDが点灯している、障害が発生したFlashCacheモジュールキャリアの場所を確認します。</block>
-  <block id="c16e4c00d79ee8ef92fcca1fa9492cc2" category="image-alt">FlashCacheモジュールキャリアを取り外します。</block>
-  <block id="a6cb82ced449dbb1046ef723067b7901" category="paragraph">FlashCacheモジュールキャリア</block>
   <block id="1cc5afe23260cb08d578b3171ed8bb0d" category="paragraph">キャッシングモジュールのスロット番号</block>
-  <block id="b87d1c8ec894a37f26543a535e844e8b" category="paragraph">FlashCacheモジュールキャリアのカムハンドル</block>
-  <block id="dcb325bf6ea5bcab2981a5f7a0a35ede" category="paragraph">FlashCacheモジュールキャリア障害LED</block>
-  <block id="b155caf60041968d40f3e850d614a9be" category="list-text">障害が発生したFlashCacheモジュールキャリアを取り外します。</block>
-  <block id="5e32cbbf004ffb2d2a509ed571493ccc" category="list-text">FlashCacheモジュールキャリアの下部にある青いタブをつまみます。</block>
   <block id="9c7e22c30b9aa93d97efb0ef5d7ccaa8" category="list-text">タブを回転させてモジュールから離します。</block>
-  <block id="8a8dded5367958de77da2461985e38fd" category="list-text">FlashCacheモジュールキャリアをコントローラモジュールから引き出し、静電気防止用マットの上に置きます。</block>
-  <block id="c00f75b52aaf83129bdb959706a88e8c" category="list-text">キャッシングモジュールを交換用FlashCacheモジュールキャリアに移動します。</block>
   <block id="21c6d5df7d87902fb54560352086c7e1" category="list-text">キャッシングモジュールの上部にある[Terra Cotta]タブをつまみ、カムハンドルを回転させてキャッシングモジュールから取り外します。</block>
-  <block id="4f4941d42ca92d09bfdc51b1db6f1492" category="list-text">カムレバーの開口部に指をかけ、モジュールをFlashCacheモジュールキャリアから引き出して、モジュールをエンクロージャから取り外します。</block>
-  <block id="868f5dcbc8a0ef4e68545139a9d4e14f" category="list-text">交換用FlashCacheモジュールキャリアの同じスロットにキャッシングモジュールを取り付け、カムハンドルをキャッシングモジュールの閉じた位置に回転させて所定の位置にロックします。</block>
   <block id="15810adb6f66a6901a9d5669bbe5721d" category="list-text">2つ目のキャッシングモジュールがある場合は、上記の手順を繰り返します。</block>
-  <block id="79702206636b151f5aa2012db730e395" category="list-text">交換用FlashCacheモジュールキャリアをシステムに取り付けます。</block>
-  <block id="b5c24cb45faff065206365210b18a04d" category="paragraph">FlashCacheモジュールキャリアを交換したら、コントローラモジュールをリブートする必要があります。</block>
   <block id="cdbccebd677a8b1d134192f19ecf3f8b" category="section-title">キャッシングモジュールを交換</block>
-  <block id="6ce18d354fca16bc5032faa6fef743c0" category="paragraph">FlashCacheモジュール（キャッシングモジュール）は、スロット6-1、スロット6-2、またはスロット6-1とスロット6-2の両方に搭載されています。</block>
   <block id="c124cf7f1b815bf5f6c6e601798519fa" category="paragraph">個 々 のキャッシングモジュールを、同じベンダーまたはサポート対象の別のベンダーの同じ容量のキャッシングモジュールとホットスワップできます。</block>
   <block id="f3852a3ed3dc942e88ae4523de9161a2" category="list-text">交換用キャッシングモジュールの容量が、障害が発生したキャッシングモジュールと同じベンダーまたはサポートされている別のベンダーのものであることを確認してください。</block>
   <block id="6451bd5ba5fd42e2e0da530ac0e1f08d" category="list-text">キャッシングモジュールのドライブは、Field Replaceable Unit（FRU；フィールド交換可能ユニット）ではありません。キャッシングモジュール全体を交換する必要があります。</block>
@@ -9195,8 +9120,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f6c9707e7b722f478882c6903c0ab72a" category="paragraph">キャッシングモジュールのカムハンドル</block>
   <block id="6bc5838b4111c8e8e34c5a24a2c44cb0" category="paragraph">キャッシングモジュール障害LED</block>
   <block id="9afed1489f4d1563ca216b11c1352728" category="list-text">カムハンドルを所定の位置まで回転させます。</block>
-  <block id="39ce51da7e9a2b8c7e5c38a0066b127f" category="list-text">カムレバーの開口部に指をかけ、FlashCacheモジュールキャリアからモジュールを引き出して、キャッシングモジュールモジュールをエンクロージャから取り外します。</block>
-  <block id="8fa7d40c54b52a6cdc5ee7ed5fd71a29" category="paragraph">FlashCacheモジュールキャリアから取り外す際は、必ずキャッシングモジュールを支えてください。</block>
   <block id="8de7e250263d4ca2d8dc62ef2ed1f825" category="list-text">キャッシングモジュールの端をコントローラモジュールの開口部に合わせます。</block>
   <block id="15add6e162f9346663b8cfaeb8d3f8c7" category="doc">コントローラモジュール - FAS70 と FAS90 を交換します</block>
   <block id="550ddae6f9579850ff21dd2afce3b69f" category="doc">コントローラのギブバック- FAS70とFAS90</block>
@@ -9269,8 +9192,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6177b8fb5c4b14da752dc936dbe29ae8" category="doc">I/Oモジュールの交換- FAS70およびFAS90</block>
   <block id="2b104c49f9b8bb92d09875a956d19795" category="paragraph">ハードウェアのメンテナンス手順が必要になる場合があります。ここでは、FAS70およびFAS90システム・コンポーネントのメンテナンスに固有の手順について説明します。</block>
   <block id="2b90a1267a3b7e2b64a23c5c62d7f171" category="paragraph">このセクションの手順は、FAS70およびFAS90システムがONTAP環境のストレージノードとしてすでに導入されていることを前提としています。</block>
-  <block id="37461bd85478fb33903c38944a96af87" category="inline-link-macro">FlashCache</block>
-  <block id="0b85bf5744472ad352d98cea5a764ba0" category="paragraph"><block ref="0b85bf5744472ad352d98cea5a764ba0" category="inline-link-macro-rx"></block></block>
   <block id="3a36e6b466e0265c25d241c486f64e02" category="paragraph">Flash Cache は、最近読み取られたユーザデータとネットアップのメタデータをリアルタイムでインテリジェントにキャッシングすることで、データへのアクセスを高速化します。データベース、 E メール、ファイルサービスなど、ランダムリードが大量に発生するワークロードに効果的です。</block>
   <block id="f15dd37cefd717a7d017e45fe876146c" category="doc">NVバッテリの交換- FAS70およびFAS90</block>
   <block id="c4ed6403201dfa217ff707bb31f7629c" category="doc">NVRAMの交換- FAS70およびFAS90</block>
@@ -9305,7 +9226,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="c91d48fe9284f4d299615b787ff7c882" category="sidebar">Cシリーズシステムの設置とセットアップ</block>
   <block id="d82b198ed12fecd580981b34c4959490" category="sidebar">Aシリーズシステムの保守</block>
   <block id="e32ee65ffedbf05873ffce177cee51b5" category="sidebar">Cシリーズシステムのメンテナンス</block>
-  <block id="0ab1a7883d0399cbaf77a2e38633a6ea" category="sidebar">新しいNetApp ASA R2システム（ASA A1K、ASA A70、およびASA A90）は、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルな操作性を実現します。</block>
   <block id="9c2e760711833288658335a04261b16a" category="sidebar">ASA R2ストレージシステムのマニュアルには、ASA R2システムのインストール、セットアップ、および保守が記載されています。</block>
   <block id="e995d56efd9e31d97825dd79be4d1383" category="sidebar">ASA R2ストレージシステムの詳細</block>
   <block id="aa0dbb314a1c2c27148345705facc55c" category="sidebar">ASA R2システムのインストールとメンテナンス</block>
@@ -9336,7 +9256,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="db79c96e3435962e695832e0fd51205b" category="sidebar">FAS70とFAS90のメンテナンス</block>
   <block id="546320f5b1318ecbf9a2d5efa8278b70" category="sidebar">FAS70とFAS90のブートメディア</block>
   <block id="bbd90c57f0c4facd0e407d460b63f5e4" category="sidebar">FAS70およびFAS90コントローラモジュール</block>
-  <block id="6aa2bbbbcd863a688ecea951a078cc57" category="sidebar">FlashCacheモジュール</block>
   <block id="9d6e68abc86ef52726565c7e52c9dea7" category="image-alt">システムシリアル番号の例</block>
   <block id="54425f945644281ccaf6201b998f169f" category="paragraph"><block ref="54425f945644281ccaf6201b998f169f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e41a410f85201d7cc87e022e1f2daf34" category="paragraph">ラップトップでネットワーク検出を有効にしている場合は、クラスタの自動検出を使用してセットアップと設定を完了できます。</block>
@@ -9524,7 +9443,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="080b3cf38e099673417f605870f1f8cd" category="doc">暗号化キーのサポートとステータスの確認- AFF A300</block>
   <block id="3e96ff4d6696124ce25d44a88c2473b3" category="doc">暗号化キーのサポートとステータスの確認- AFF A320</block>
   <block id="77c6f82f1fa8571b22c5fbbe73050bac" category="doc">暗号化キーのサポートとステータスの確認- AFF A400</block>
-  <block id="44ba9a845369e38f447427d3106ecf71" category="doc">暗号化キーのサポートとステータスの確認- AFF A70とAFF A90</block>
   <block id="357726df28778aa8dccb6c780dddce89" category="doc">暗号化キーのサポートとステータスの確認- AFF A700s</block>
   <block id="db444b24eeeefc93d51087354a133eeb" category="paragraph"><block ref="db444b24eeeefc93d51087354a133eeb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4641b0536fa1cc37c103002b67dbc848" category="doc">暗号化キーのサポートとステータスの確認- AFF A900</block>
@@ -9729,7 +9647,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="137e91ab373d54ca35c36fff0be47241" category="list-text">ブートメニューで、「option for normal boot」と入力します<block ref="c4ca4238a0b923820dcc509a6f75849b" prefix=" " category="inline-code"></block>。</block>
   <block id="e5954b5f665f3b9aee4023c5d8eb4f5f" category="list-text">「_Waiting for giveback_」と表示されたら、&lt;enter&gt;キーを押します。</block>
   <block id="68921013f9ca843f9d1bcfd514ee67de" category="list-text">パートナーノードにコンソールケーブルを接続し、としてログインします<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block>。</block>
-  <block id="92e13c6a52e1a9d4e2955cd77e4db99d" category="list-text">advancedモードに切り替えて、修復されたノードのコアダンプがすべて保存されたことを確認します。<block ref="0581d0d071ad835f74bf419081ce5d75" prefix=" " category="inline-code"></block><block ref="7f4756e08687048c35020c40f9c8567b" prefix=" " category="inline-code"></block></block>
   <block id="9e989767231ec29efb85ce3345c961ff" category="list-text">CFOアグリゲート（ルートアグリゲート）のみをギブバックします。<block ref="291b31306c2e0668f091d41edca7e97f" prefix=" " category="inline-code"></block></block>
   <block id="e28912f373bd8bce85f7c259590bbe92" category="list-text">エラーが発生した場合は、にお問い合わせください<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
   <block id="bfc2c53d06a8a433a0fef8b142ab388e" category="list-text">ギブバックレポートが完了してから5分待って、フェイルオーバーのステータスとギブバックのステータスを確認します（および<block ref="852ce55a153bc728405ba8a2c95bcdf1" prefix=" " category="inline-code"></block>）<block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix=" " category="inline-code"></block>。</block>
@@ -10048,9 +9965,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="28180201bfb2d7bf5615528194442289" category="admonition">コントローラをシャーシに挿入する際に力を入れすぎないように注意してください。コネクタが破損する可能性があります。</block>
   <block id="799ddb867e56fb20fe535c39a2bd93c6" category="admonition">コントローラをシャーシに完全に装着するとブートします。パートナーコントローラから電力を取得します。</block>
   <block id="a676323e6fcbbd59df78bae524b7b40c" category="list-text">コントローラのハンドルを上に回転させ、タブで所定の位置に固定します。</block>
-  <block id="de684735ed01be293fbf913a2a8ec714" category="list-text">DHCPを設定する場合：</block>
-  <block id="f92453641f9de288d51e422a67039e9a" category="list-text">手動接続を設定する場合：+</block>
-  <block id="7b357e81ab493d4020534d05d49f8a43" category="paragraph"><block ref="0cfd36fa2f6970c4256c7587d6c9730f" prefix="" category="inline-code"></block></block>
   <block id="0b57b3f2fbb1058ed0b97ec1a2a69f99" category="list-text">障害のあるコントローラの電源装置（PSU）に電源コードを再接続します。</block>
   <block id="ed54d3fee552241630c6da46076d26b8" category="cell">再接続の対象</block>
   <block id="9a74e4a0a346c8db4ead325b107dc493" category="list-text">電源コードをPSUに接続します。</block>
@@ -11022,12 +10936,10 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="df1e51256150b209588942af3aa39c86" category="list-text">交換用シャーシを設置します。</block>
   <block id="88713b0102b6702a4390c31e0218a5d0" category="list-text">交換用シャーシをシステムキャビネットまたは装置ラックのラックレールに沿ってガイドし、装置ラックまたはシステムキャビネットに2人で設置します。この作業は2人で行ってください。</block>
   <block id="c2ca3f0f2cd46c993c472fe2b2ead2a1" category="section-title">手順4：シャーシコンポーネントを取り付ける</block>
-  <block id="8e7b85e50ba49f7e438e34fd94f17067" category="paragraph">交換用シャーシを設置したら、コントローラモジュールを取り付けてケーブルを再接続し、ドライブとPSUを再度取り付ける必要があります。</block>
   <block id="c35dbeca6a0894e924dd0f22bc74b7b6" category="list-text">下部のコントローラモジュールから、交換用シャーシにコントローラモジュールを取り付けます。</block>
   <block id="462e0b4244f7f81086d8ed4914a4091d" category="paragraph">メディアコンバータ（QSFPまたはSFP）を取り外した場合は、必ず取り付け直してください。</block>
   <block id="30c13d1d724de7528c0d72d4e7555203" category="paragraph">ケーブルがケーブルラベルを参照して接続されていることを確認します。</block>
   <block id="3c4de6b643f23f2b06411d92b09f2db7" category="list-text">ドライブをシャーシ前面の対応するドライブベイに再度取り付けます。</block>
-  <block id="ebe9851634608cdaec3bc032f0aac89c" category="list-text">4つのPSUをすべて取り付けます。</block>
   <block id="3af83db7024a86329156a3f0ea145165" category="list-text">PSUの電源ケーブルを4台すべてのPSUに再接続します。</block>
   <block id="f0db4562c2eae985bf11a09aadc6070d" category="paragraph">DC電源装置がある場合は、コントローラモジュールをシャーシに完全に装着したら電源装置に電源ブロックを再接続し、電源ケーブルを取り付けネジでPSUに固定します。</block>
   <block id="6ba7c840e651190e5c5f357b0b73f0cd" category="paragraph">PSUが取り付けられて電源が復旧すると、すぐにコントローラモジュールのブートが開始されます。</block>
@@ -11046,8 +10958,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="378ec75aa1d255c16ad9c85e0cb3c38d" category="list-text">パーツの説明。</block>
   <block id="a28e205929838e9983677a0a5740982f" category="list-text">ボックス内の数量。</block>
   <block id="aa540bb7b6b5d4e1ae19ef870d81aeed" category="list-text">梱包から内容物を取り出し、梱包を使用して障害が発生したコンポーネントをNetAppに返送します。</block>
-  <block id="e64dc7a7ef4e501b9e8f23daf322a905" category="section-title">手順3：ケーブルとコントローラモジュールにラベルを付け、自身でアースを取る</block>
-  <block id="6f91c65dd15df5f61f60c1e3aabb4318" category="paragraph">コントローラモジュールまたはシャーシからケーブルを取り外す前に、ケーブルとコントローラにラベルを付ける必要があります。</block>
   <block id="79de133f35ffda00b1cc87bd3df0f0a1" category="list-text">ストレージシステムに接続されているすべてのケーブルにラベルを付けます。これは、この手順の後半でケーブルを再接続する際に役立ちます。</block>
   <block id="61f54831afd31c3c4bb5fa569858091d" category="list-text">コントローラモジュールにラベルを付けます。</block>
   <block id="02a322185bda81e4fb6f85f159dc2ba9" category="list-text">まだ適切な接地対策を行っていない場合は、自分で接地対策を行ってください。</block>
@@ -11077,7 +10987,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="9a720e4e76be699dfb02bbc1262d3cb7" category="doc">シャーシの交換後の処理- AFF A70およびAFF A90</block>
   <block id="d15e3734e85341b27e4da1641e1f59e1" category="inline-link-macro">シャーシ交換後の処理</block>
   <block id="8814a36d70b251b1442c439b51299ee4" category="paragraph">障害のあるAFF A70またはAFF A90シャーシを交換し、コンポーネントを取り付け直したら、を行う必要があります<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block>。</block>
-  <block id="a1d3bcf20c089dbf9082bd95e68d717d" category="doc">シャーシの交換準備- AFF A70およびAFF A90</block>
   <block id="fb34a84a11047c5449582cfc3e832942" category="inline-link-macro">コントローラをシャットダウン</block>
   <block id="d3a08051606463fa6af8ba4af97a9c04" category="paragraph">AFF A70またはAFF A90シャーシハードウェアを交換する準備ができたら、を行う必要があります<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block>。</block>
   <block id="11e980ab44ebd379750fafda5a247d2c" category="paragraph">障害のあるシャーシの交換要件を確認します。</block>
@@ -11173,7 +11082,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e531efa1ffce94331d0abc4548448cac" category="list-text">障害コントローラのLoaderプロンプトで、障害のあるコントローラモジュールのIPアドレスを設定します。</block>
   <block id="9674c99b013ac8cdab6eb0df64e77028" category="paragraph"><block ref="83ed86e403dd4a24d2825f48008e5af3" prefix="" category="inline-code"></block></block>
   <block id="8c58ea9784c7fa6869b22626814be32c" category="list-text">Loaderプロンプトで、障害ノードをネットブートします。</block>
-  <block id="c73c2dd2459e6650d5b71cc2059faf0e" category="paragraph"><block ref="a8ede5eb13f058392e245c0a8a92ae3d" prefix="" category="inline-code"></block></block>
   <block id="682c67c386e9533bb90087e13557b0aa" category="list-text">ブートメニューからオプションを選択します<block ref="8f14e45fceea167a5a36dedd4bea2543" prefix=" " category="inline-code"></block>。</block>
   <block id="a0ea840e423d2247bf566acde2c201ab" category="list-text">バックアップ設定のリストアを確認するメッセージが表示されたら、と入力し<block ref="7b8b965ad4bca0e41ab51de7b31363a1" prefix=" " category="inline-code"></block>ます。</block>
   <block id="3115cf8c3646a9861bf194086219616c" category="list-text">ノードのリブートを求めるプロンプトが表示されたら、と入力し<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>ます。</block>
@@ -11209,11 +11117,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="a81626227e94d15884d465e1127d3af4" category="sidebar">ASA A70およびASA A90のブートメディア</block>
   <block id="9482f3836d9bb6259f467a0685f5e3b4" category="sidebar">ASA A1Kブートメディア</block>
   <block id="3636656d79b8f02465b883839da0c32b" category="paragraph">次の要件を確認します。</block>
-  <block id="92f1ff7f532dd794f633da55b69f7c85" category="paragraph">障害のあるコントローラのストレージをギブバックして通常動作に戻します。</block>
   <block id="6f6020a95b7d00c90f878194cd791491" category="list-text">AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。</block>
   <block id="2dc03ded03c37126b29eeb1dce677708" category="paragraph">オンボード暗号化をリセットし、コントローラを通常動作に戻します。</block>
   <block id="334dc8a527ec5589fe66e9a5a8360575" category="list-text">Loaderプロンプトで、次のように入力します。</block>
-  <block id="79a5dee23638f4d5e3607951ecac75c4" category="paragraph"><block ref="cce56b203b8705f3487342813b7117be" prefix="" category="inline-code"></block>です。</block>
   <block id="61d5125f4ea65c28c78898c7eb459ce2" category="list-text">CFOアグリゲート（ルートアグリゲート）のみをギブバックします。</block>
   <block id="07f79b362b9ba5998ff0d2001a027c73" category="paragraph"><block ref="291b31306c2e0668f091d41edca7e97f" prefix="" category="inline-code"></block></block>
   <block id="5bb45bbec6e74b011ff0ed7135d29f73" category="list-text">ギブバックレポートが完了してから5分待って、フェイルオーバーのステータスとギブバックのステータスを確認します。</block>
@@ -11224,8 +11130,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="527eb837f30ed81358ebded9ee118169" category="paragraph">暗号化をリセットし、コントローラを通常動作に戻します。</block>
   <block id="4969df85e38b1334145c46668de5d393" category="list-text">テイクオーバーのステータスを確認します。</block>
   <block id="ff06f9ac0caa721ed879f199881e0bf3" category="paragraph"><block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix="" category="inline-code"></block>です。</block>
-  <block id="dbaf9b3984e2d85f4fed5065ef8777ee" category="list-text">advancedモードに切り替えて、修復されたノードのコアダンプがすべて保存されたことを確認します。</block>
-  <block id="74d6510049f762b67fe103a2ea65ea1f" category="paragraph"><block ref="0581d0d071ad835f74bf419081ce5d75" prefix="" category="inline-code"></block>それから<block ref="7f4756e08687048c35020c40f9c8567b" prefix=" " category="inline-code"></block></block>
   <block id="385e0461e78c6be76ddc4a5aac6f0998" category="paragraph">コントローラモジュールを交換するための要件を確認します。</block>
   <block id="653521d025652d70e27438c926da2d94" category="list-text">交換用パーツを用意しておく必要があります。</block>
   <block id="20277dcf478fd8c98c1e17e544b131b2" category="list-text">ストレージシステムの他のコンポーネントがすべて正常に動作していることを確認します。正常に動作していない場合は、テクニカルサポートにお問い合わせください。</block>
@@ -11243,39 +11147,22 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e21bdbd552261278be0a5ad02fbc6fa7" category="list-text">ASA A30</block>
   <block id="3ee9bc9a210bd85fa921ca63bdeef612" category="list-text">ASA A50</block>
   <block id="18b37022407b9886f4f4138833f49d5c" category="summary">AFF A70またはAFF A90システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページを参照してください。</block>
-  <block id="58075b4980e4db98db3e72c4d42ca97b" category="summary">AFF A70およびAFF A90ストレージシステムのデータセキュリティを確保するには、暗号化キーのサポートとステータスを確認する必要があります。ONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認し、コントローラをシャットダウンする前にキー管理ツールがアクティブになっているかどうかを確認してください。</block>
   <block id="00298fcd1cdb59855d04153fb372d5b1" category="summary">AFF A70またはAFF A90システムの交換用ブートメディアに暗号化をリストアして、データを継続的に保護します。このプロセスでは、キーの可用性の確認、暗号化設定の再適用、データへのセキュアなアクセスの確認が行われます。</block>
-  <block id="3991198e40ba997176ba31a00113838e" category="paragraph">AFF A70またはAFF A90システムの交換用ブートメディアに暗号化をリストアして、データを継続的に保護します。このプロセスでは、キーの可用性の確認、暗号化設定の再適用、およびデータへのセキュアなアクセスの確認が行われます。</block>
-  <block id="a51e74eb0b262c93ab751f84ff5ad828" category="summary">AFF A70またはAFF A90システムのブートメディアが破損した場合は、USBドライブからリカバリイメージをブートし、パートナーノードから設定をリストアして、環境変数を確認できます。</block>
-  <block id="a25f6bec97e7646ff80d5c1552348d28" category="summary">AFF A70またはAFF A90システムのブートメディアを交換する前に、正しい交換用ブートデバイスがあること、システムファームウェアとONTAPソフトウェアにアクセスできること、および重要な設定データのバックアップがあることを確認してください。</block>
   <block id="01dc782410b8bf757f56e6d2dd9ba8de" category="summary">AFF A70またはAFF A90ストレージシステムのブートメディアの交換を開始するには、交換用メディアを準備してシステムに取り付け、ブートイメージをリストアし、システムの機能を確認します。</block>
   <block id="a39d40ffc6e883059dd303e4c5826bf2" category="doc">ブートメディアの交換のクイックスタート- AFF A70とAFF A90</block>
   <block id="7254e311c159ba205a6bc5f38cfc3060" category="summary">AFF A70またはAFF A90システム内のブートメディアには、重要なファームウェアおよび設定データが格納されます。ブートメディアで障害が発生した場合は、コントローラモジュールのプラグを抜き、System Managementモジュールを取り外し、障害のあるブートメディアを取り外して、System Managementモジュールのブートメディアを交換する必要があります。</block>
   <block id="2de09d050e108c03bd290fc9b42a73f3" category="summary">AFF A70またはAFF A90ストレージシステムで障害が発生した場合は、コントローラをシャットダウンします。メンテナンスやコンポーネントの交換を行う前に、データ損失を防ぎ、システムの安定性を確保するために、コントローラを安全にシャットダウンすることが重要です。</block>
-  <block id="073ca97ff948f7b2fa9eb788aa349602" category="summary">コントローラをリブートし、システムヘルスを確認し、障害が発生したパーツをNetAppに戻して、AFF A70 and AFF A90シャーシの交換ワークフローの最後の手順を完了します。</block>
-  <block id="d0f18667169dd5cba8bd1abf930d8979" category="summary">ハードウェア障害またはアップグレードで必要になった場合は、AFF A70またはAFF A90システムのシャーシを交換します。このプロセスでは、システムの電源を切り、既存のシャーシを取り外し、新しいシャーシを取り付け、コンポーネントを再設定してシステムが正常に動作するようにします。</block>
   <block id="14c9c3ca2e43bd07ece3df269a696d56" category="summary">AFF A70またはAFF A90システムで障害のあるシャーシを交換する準備として、障害のあるシャーシを特定し、交換用コンポーネントを確認し、ケーブルとコントローラモジュールにラベルを付けます。</block>
-  <block id="cd38b993c6ad2e5704c0162f9d789f18" category="summary">AFF A70またはAFF A90システムのシャーシを交換する前に、システムの他のすべてのコンポーネントが正常に機能していることを確認し、ONTAPのローカル管理者のクレデンシャル、正しい交換用シャーシ、および必要な工具があることを確認します。</block>
-  <block id="6c63d33eb7783335379b1c9d94af11b3" category="summary">シャーシを交換する必要がある場合は、AFF A70またはAFF A90ストレージシステムのコントローラをシャットダウンします。メンテナンスやコンポーネントの交換を行う前に、データ損失を防ぎ、システムの安定性を確保するために、コントローラを安全にシャットダウンすることが重要です。</block>
   <block id="f3265cef339dbf3c5e74c4290cc2674d" category="summary">AFF A70およびAFF A90シャーシの交換には、システムのシャットダウン、シャーシの取り外しと交換、コンポーネントの再設定、およびシステム動作の確認の手順が含まれます。</block>
   <block id="82d80770b27097a251d9548f43c9e382" category="doc">シャーシ交換のクイックスタート- AFF A70およびAFF A90</block>
-  <block id="2bb5a266a17138195f24b92087b37ebb" category="summary">ハードウェア障害またはアップグレードに必要な場合は、AFF A70またはAFF A90システムのコントローラを交換します。このプロセスでは、障害のあるコントローラを取り外し、交換用コントローラにコンポーネントを移動し、交換用コントローラを取り付けてリブートします。</block>
-  <block id="f19d0ea02c5cb924d1bbd1b1393e656f" category="summary">AFF A70またはAFF A90システムが通常の運用を再開できるように、ストレージリソースの制御を交換用コントローラに戻します。</block>
-  <block id="946e9ff613b0698dff71f93c998421e6" category="summary">AFF A70またはAFF A90システムのシャーシを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、正しい交換用シャーシの用意、システム構成のバックアップ、必要な工具やファームウェアへのアクセスが含まれます。</block>
   <block id="e39656e100387da3ec6b6a54806cef2f" category="paragraph">AFF A70またはAFF A90システムのコントローラを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、適切な交換用コントローラの用意、システム構成のバックアップ、必要なツールやファームウェアへのアクセスが含まれます。</block>
-  <block id="13584ead3579381e47832c1fc5821f4a" category="summary">論理インターフェイスがホームポートに報告されていることを確認し、クラスタの健全性チェックを実行し、障害が発生したパーツをNetAppに戻して、AFF A70とAFF A90コントローラの交換ワークフローの最後の手順を実行します。</block>
   <block id="a36efc11d87f3dc60d9f74397a3d68a6" category="paragraph">次のいずれかのオプションを使用してコントローラモジュールをシャットダウンします。</block>
   <block id="fc6315489b2675580df80b8ba798580a" category="summary">コントローラのHA構成がアクティブで、AFF A70またはAFF A90ストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。</block>
   <block id="5804af3501a907b164a7eade0771c13a" category="summary">AFF A70 / AFF A90コントローラの交換手順では、コントローラのシャットダウン、コントローラの取り外しと交換、システム設定の再設定、およびシステム動作の確認を行います。</block>
   <block id="d2005409b1b3df2f36eafbd1c707b35a" category="doc">コントローラ交換のクイックスタート- AFF A70とAFF A90</block>
-  <block id="693444ad7c3a519b57ea2f6a67afe3ee" category="summary">修正可能なエラーまたは修正不可能なエラーが大量に検出された場合は、AFF A70またはAFF A90システムのDIMMを交換します。これらの問題は多くの場合、単一のDIMM障害が原因で発生し、ストレージシステムがONTAPをブートできなくなる可能性があります。</block>
-  <block id="085e9f138bf88e992aba5f4bb28477e8" category="summary">ドライブに障害が発生した場合やアップグレードが必要な場合は、AFF A70またはAFF A90システムのドライブを交換します。このプロセスでは、障害が発生したドライブを特定して安全に取り外し、新しいドライブを取り付けてデータアクセスとシステムパフォーマンスを継続できるようにします。</block>
-  <block id="0dccdedc6bfcf30123409a5daf909e3a" category="summary">ファンに障害が発生した場合やファンが効率的に動作していない場合は、AFF A70またはAFF A90システムのファンモジュールを交換してください。これにより、システムの冷却や全体的なパフォーマンスに影響が及ぶ可能性があります。</block>
   <block id="6f13230d5681e1c88b50f5ecbce62637" category="paragraph">次のいずれかのオプションを使用して、障害のあるコントローラモジュールをシャットダウンまたはテイクオーバーします。</block>
   <block id="9d942fe208df847ebbb52d3ac4973c12" category="summary">AFF A70またはAFF A90ストレージシステム内の障害が発生したI/Oモジュールは、同じタイプのI/Oモジュールに交換することも、別の種類のI/Oモジュールに交換することもできます。空きスロットのあるシステムにI/Oモジュールを追加することもできます。</block>
-  <block id="1853543dc222d3a9f913dd023a08b255" category="paragraph">AFF A70またはAFF A90システムのI/Oモジュールに障害が発生した場合や、より高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、I/Oモジュールを交換してください。</block>
   <block id="870bcf4039fdcff653f180566b1ae65d" category="summary">AFF A70およびAFF A90ストレージシステムのハードウェアを保守して、長期的な信頼性と最適なパフォーマンスを確保します。ダウンタイムやデータ損失の防止に役立つため、障害のあるコンポーネントの交換などの定期的なメンテナンスタスクを実行します。</block>
-  <block id="c7366a4e629f0430862d80db101f4a13" category="doc">AFF A70およびAFF A90ストレージシステムの保守</block>
   <block id="af1dd5bed2e7f895621a59db47f7a163" category="paragraph">メンテナンス手順では、AFF A70システムとAFF A90システムがONTAP環境にストレージノードとしてすでに導入されていることを前提としています。</block>
   <block id="d7cae672b9df48e3106485c6d34eeb2c" category="summary">ASA A70またはASA A90システムのブートメディアが破損した場合は、リカバリイメージをブートし、パートナーノードから設定をリストアして、環境変数を確認できます。</block>
   <block id="635808fcf7151910b4d230fdffc539b6" category="paragraph">ASA A70またはASA A90システムのブートメディアが破損した場合は、リカバリイメージをブートし、パートナーノードから設定をリストアできます。</block>
@@ -11383,4 +11270,161 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f29453fc9b172b87989c48fc7a5c5299" category="sidebar">ASA A20、ASA A30、およびASA A50シャーシ</block>
   <block id="d1c24e8a39fae2157a44e2cc90a3ef86" category="sidebar">ASA A20、ASA A30、ASA A50コントローラモジュール</block>
   <block id="c135c802a875bd87fd7ec037edbbefaa" category="sidebar">ASA A20、ASA A30、およびASA A50 I/Oモジュール</block>
+  <block id="ded04a98a4cf976c5fe334710e1beb0e" category="admonition">実行し<block ref="77da07d2ad54f11335f6a0e867b30843" prefix=" " category="inline-code"></block>Flash CacheのデバイスIDがわからない場合は、コマンドをます。</block>
+  <block id="b004088fa722ea0327164c4ba4c02ace" category="list-text">電源装置に電源コードを接続し、電源ケーブルロックカラーを再度取り付けてから、電源装置を電源に接続します。</block>
+  <block id="045e3738db30f0570266e975de702462" category="paragraph">電源が復旧するとすぐにコントローラモジュールがブートを開始します。ブートプロセスを中断する準備をします。</block>
+  <block id="6b0f67919a1f7266d12612788d6f00a5" category="list-text">ラッチの上部から親指を離し、ラッチが完全に固定されるまで押し続けます。+コントローラモジュールがシャーシの端に揃うまで完全に挿入されていることを確認します。</block>
+  <block id="53f7d1f44f0967b908adcf413c5c43b3" category="paragraph">NVRAM モジュールを含む古いシャーシから I/O モジュールを取り外すには、特定の手順を実行します。NVRAMモジュールを新しいシャーシに移動するときに、そのモジュールからFlash Cacheモジュールを取り外す必要はありません。</block>
+  <block id="dd892e2fd2dce9a107edec02b445ef7d" category="paragraph">I/Oモジュール（NVRAM / Flash Cacheモジュールを含む）を古いシャーシから取り付けるには、特定の手順を実行します。</block>
+  <block id="b01bdac065de5aab3293d4c9b6c143d1" category="paragraph">NVRAMモジュールは、NVRAM10とDIMM、およびNVRAMモジュールごとに最大2つのNVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）で構成されます。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。</block>
+  <block id="f8d5ac07d03e3b9a976830db254e0555" category="paragraph">障害が発生したNVRAMモジュールを交換するには、モジュールをシャーシから取り外し、NVRAMモジュールからFlash Cacheモジュールを取り外し、DIMMを交換用モジュールに移動し、Flash Cacheモジュールを再度取り付けて、交換用NVRAMモジュールをシャーシに取り付ける必要があります。</block>
+  <block id="b5a7ca7700898c9641ac87a395952ac3" category="list-text">Flash Cacheモジュールを古いNVRAMモジュールから新しいNVRAMモジュールに移動します。</block>
+  <block id="b3e3769bccb68aed4a66a70b9249b23f" category="paragraph">オレンジ色のリリースボタン（空のFlash Cacheモジュールはグレー）</block>
+  <block id="8befbe5f9e65001ca21f12c3bc9ac971" category="paragraph">Flash Cacheのカムハンドル</block>
+  <block id="bd6adf2a407ffbf3e4a8eedb33e202a2" category="list-text">Flash Cacheモジュールの前面にあるオレンジのボタンを押します。</block>
+  <block id="4d9ed4404057a5ca291db83ff81a93ff" category="admonition">空のFlash Cacheモジュールのリリースボタンはグレーです。</block>
+  <block id="83ff481b2e94b4067569617b8b2beb74" category="list-text">Flash CacheモジュールをNVRAMモジュールの奥までそっと押し込み、モジュールが所定の位置にロックされるまでカムハンドルを閉じます。</block>
+  <block id="eeb7f593c159ca9eb2fb310bd7d23fc2" category="paragraph">NVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）は別 々 のモジュールです。これらは NVRAM モジュールの前面にあります。キャッシングモジュールを交換または追加するには、スロット 6 のシステム背面にあるモジュールの場所を確認し、特定の手順に従って交換します。</block>
+  <block id="b6a69cb39407395404cfbc744c377b6a" category="paragraph">NVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）は、FAS9000システムのスロット6でのみNVRAM10モジュールの前面にあります。ONTAP 9.4 以降では、サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。</block>
+  <block id="df6c8e6b3ba5bce0814db19ab16307c3" category="list-text">すべてのディスクが表示されることを確認します。<block ref="242f4ce1948273386f8bb487bdd3732f" prefix=" " category="inline-code"></block></block>
+  <block id="6fbf6612f01484a6facb5d0d33a5b4ba" category="paragraph">交換用シャーシを設置したら、コントローラモジュールを取り付けてケーブルを再接続し、ドライブとPSUを再度取り付ける必要があります。</block>
+  <block id="4b4bb5ddb129b80d911b66a281db42da" category="list-text">4つのPSUをすべて取り付けます。</block>
+  <block id="81cf1b6821a9509701aa3ffa438696e8" category="inline-link">コントローラハードウェアのアップグレード手順を選択</block>
+  <block id="ebffb50e0b751314d493e13cf6d9bae2" category="list-text">この手順はシステムのアップグレードには使用しないでください。ガイダンスについては、を参照してください<block ref="624f79ea247af93b551ac85c36e5246e" category="inline-link-rx"></block>。</block>
+  <block id="11715af7d7c992de7e50f09b0ef0bd34" category="section-title">手順3：ケーブルとコントローラモジュールにラベルを付ける</block>
+  <block id="cc7478989c9d0ccd78b85146f63bc5dc" category="paragraph">ケーブルとコントローラモジュールをコントローラモジュールまたはシャーシから取り外す前に、ケーブルとコントローラモジュールにラベルを付ける必要があります。</block>
+  <block id="2ebb9d1c7085d32cb7f9f4ac52713740" category="list-text">シャーシの交換手順はシステムの停止を伴います。2 ノードクラスタではサービスが完全に停止し、マルチノードクラスタでは部分的に停止します。</block>
+  <block id="c3d2740d50d775957cdc077eff98b9c9" category="paragraph">障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。</block>
+  <block id="881029605ca74e40713919d1bb348fae" category="open-title">OKM暗号化</block>
+  <block id="b21b09fdeb57aca76290eb4fe2ae643a" category="open-title">EKM暗号化</block>
+  <block id="b2e96dd14c92c1706a90f1bd89cb23c7" category="list-text">この手順はコントローラのアップグレードには使用しないでください。代わりに、を参照してください<block ref="624f79ea247af93b551ac85c36e5246e" category="inline-link-rx"></block>。</block>
+  <block id="5699c77101753104190332a9d7da9ce5" category="list-text">MetroCluster構成のシステムの場合は、を参照して、この手順を使用する必要があるかどうかを<block ref="dbcae02c495cc3db61b37ce85396171e" category="inline-link-rx"></block>確認します。</block>
+  <block id="a5edbd6d88a4165346e4d8cdb1f47c5c" category="list-text">障害が発生したコンポーネントは、NetAppから受け取ったField-Replaceable Unit（FRU；フィールド交換可能ユニット）と交換する必要があります。</block>
+  <block id="98647483b31cc877bfa79fa69527651a" category="list-text">障害が発生したコンポーネントは、必ずNetAppから受け取った交換用コンポーネントと交換してください。</block>
+  <block id="5936be00e88eb782af00b7d10949837a" category="section-title">手順 3 ： DIMM を交換します</block>
+  <block id="f93850287d87d3b25d1ae82f23739c89" category="paragraph">DIMMを交換するには、コントローラ内でDIMMの場所を確認し、特定の手順を実行します。</block>
+  <block id="b68e23ba744de81732ee8532ad0ffa65" category="paragraph">NVRAMモジュールは、NVRAM12ハードウェアDIMMとフィールド交換可能DIMMで構成されています。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。</block>
+  <block id="92eb8adda50290707f24c0186757e6b6" category="list-text">交換用パーツがあることを確認します。障害が発生したコンポーネントを、プロバイダから受け取った交換用コンポーネントと交換する必要があります。</block>
+  <block id="eddcdc7ef0c41a163b1aa75c692e684c" category="list-text">ストレージシステムの他のすべてのコンポーネントが正常に動作していることを確認します。正常に動作していない場合は、にお問い合わせください。<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block></block>
+  <block id="6308cea3813d33c5bf2949b30d1a8f10" category="section-title">手順3：NVRAM DIMMを交換する</block>
+  <block id="0e22dd23e6324e2e936de48ef986b220" category="paragraph">NVRAMモジュールのNVRAM DIMMを交換するには、まずNVRAMモジュールを取り外してから、ターゲットDIMMを交換する必要があります。</block>
+  <block id="76341fe070bb8baf145cd67f5221a7ed" category="list-text">この手順は、システムでサポートされるすべてのバージョンのONTAPで使用できることを理解しておいてください。</block>
+  <block id="4564e5afb25f1ffe83d0d3ac84e6cb52" category="paragraph">スロット8のコントローラの背面にあるシステム管理モジュールには、システム管理用のオンボードコンポーネントと外部管理用のポートが搭載されています。障害のあるシステム管理モジュールの交換またはブートメディアの交換を行うには、ターゲットコントローラをシャットダウンする必要があります。</block>
+  <block id="09251107807a8863c162ef0d13b4ddbb" category="list-text">他のすべてのシステムコンポーネントが正常に動作していることを確認します。</block>
+  <block id="8715aa093d3bd0ff3589f26f08de5eda" category="list-text">パートナーコントローラが障害のあるコントローラをテイクオーバーできることを確認します。</block>
+  <block id="bf5a59710d5b5e8b78221799e840dc18" category="paragraph"><block ref="d21ecc516ee16c13faec7e470282a04d" prefix="" category="inline-code"></block></block>
+  <block id="6e724374a7f94186bf150ad3f2518ad5" category="paragraph">新しいノードで実行されているONTAPのバージョンが元のノードと異なる場合は、正しい&lt;xxx_image.tgz&gt;ファイルをNetAppサポートサイトからWebにアクセスできるディレクトリにダウンロードしておく必要があります（手順4を参照）。&lt;xxx_image.tgz&gt;ファイルは、システムのネットブートを実行するために必要です。</block>
+  <block id="d40530e10631f437f94d6f1fef14cd53" category="paragraph"><block ref="17adc220b188022ae9f0e1b23b988522" prefix="" category="inline-code"></block></block>
+  <block id="4f77b2dcd560973ee59e2f123323c869" category="paragraph">path_to_the_web-accessible_directoryは、ダウンロードした&lt;xxx_image.tgz&gt;ファイルの場所です。</block>
+  <block id="716023d4600a7c0e1d8be69651c1702f" category="list-text">手順を続行するかどうかを確認するメッセージが表示されたらと入力し<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>、パッケージの入力を求められたら、イメージファイルのURLを入力します。<block ref="87c1a3418135883a8a235fe337372005" prefix=" " category="inline-code"></block></block>
+  <block id="091fa7b82bf6559b6079bd7650861afb" category="summary">NVRAMモジュールは、NVRAM12とDIMM、およびNVRAMモジュールごとに最大2つのNVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）で構成されます。</block>
+  <block id="021566978f7488f2b517501566bc0db7" category="summary">AFF A70およびAFF A90ストレージシステムのデータセキュリティを確保するには、ブートメディアで暗号化キーのサポートとステータスを確認する必要があります。ONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認し、コントローラをシャットダウンする前にキー管理ツールがアクティブになっているかどうかを確認してください。</block>
+  <block id="7d2eb8f41328745f5274b206e54aae98" category="doc">ブートメディアの暗号化キーのサポートとステータスを確認します（AFF A70とAFF A90）。</block>
+  <block id="eefb5accf7d4ad2229c3cc4e823f76b3" category="paragraph">AFF A70またはAFF A90ストレージシステムのデータセキュリティを確保するには、ブートメディアで暗号化キーのサポートとステータスを確認する必要があります。ONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認し、コントローラをシャットダウンする前にキー管理ツールがアクティブになっているかどうかを確認してください。</block>
+  <block id="9cd2a6b6bdd086af956c7e27d3059067" category="inline-link-macro">コントローラをシャットダウン</block>
+  <block id="482e4d1e9586e44d69c9610613f0abf6" category="paragraph">ブートメディアで暗号化キーのサポートとステータスを確認したら、を実行する必要があります<block ref="68b439f7374cbf94d1d0674cba562466" category="inline-link-macro-rx"></block>。</block>
+  <block id="2c41be3742dfd04cb3e35161b5aa8cae" category="doc">ブートメディアでの暗号化のリストア（AFF A70およびAFF A90）</block>
+  <block id="159bd84020d09d0cb2a2382b469de5c4" category="paragraph">AFF A70またはAFF A90システムの交換用ブートメディアに暗号化をリストアして、データを継続的に保護します。交換プロセスには、キーの可用性の確認、暗号化設定の再適用、およびデータへのセキュアなアクセスの確認が含まれます。</block>
+  <block id="e2e2ae565aa28a204ee6037dec714ccc" category="paragraph">ブートメディアで暗号化をリストアしたら、を実行する必要があり<block ref="e2df5d85d0d0d8d0a3a4f7656136cebe" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="6740691430de88734e113f13d35b6983" category="summary">AFF A70またはAFF A90システムのブートメディアが破損した場合は、USBドライブからリカバリイメージをブートし、パートナーノードから設定をリストアできます。</block>
+  <block id="fb8d280a656e08faa8b364869411286a" category="inline-link-macro">ブートメディアで暗号化をリストアする</block>
+  <block id="06083a1993c377623f1b9c8a4bde3ebf" category="paragraph">リカバリイメージを起動したら、を実行する必要があり<block ref="be52ba9563c0eafd16e999b38353737d" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="384217cdec726ee67935297452978e96" category="summary">AFF A70またはAFF A90システムのブートメディアを交換する前に、交換が成功するために必要な要件を満たしていることを確認してください。具体的には、正しい交換用ブートデバイスがあること、システムファームウェアとONTAPソフトウェアにアクセスできること、重要な設定データのバックアップがあることを確認します。</block>
+  <block id="408b3fac19f2a23f482ae7a33b300763" category="doc">ブートメディアの交換要件- AFF A70とAFF A90</block>
+  <block id="4cc46eaff736b1c1b4344f760a3812e9" category="inline-link-macro">暗号化キーのサポートとブートメディアのステータスを確認する</block>
+  <block id="91afb4a99422cbf0cbccd15e6a2e2602" category="paragraph">ブートメディアの交換要件を確認したら、を実行する必要があり<block ref="91feb26699cc8675dce29ac358c94764" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="e3a1979416798658cc544e3caa45070c" category="inline-link-macro">リカバリイメージのブート</block>
+  <block id="0163271bf5c3aff0aa7865f050229a26" category="paragraph">ブートメディアを交換したら、を行う必要があり<block ref="5a569bc0149d933ce39c87a98c5fb6ae" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="94b02598e2a9d4bde3dfe5d8a97bce89" category="summary">ブートメディアの交換が必要になったときは、AFF A70またはAFF A90ストレージシステムのコントローラをシャットダウンします。メンテナンスやコンポーネントの交換を行う前に、データ損失を防ぎ、システムの安定性を確保するために、コントローラを安全にシャットダウンすることが重要です。</block>
+  <block id="b7e37132f4ff6930e544d75049d65aa9" category="doc">コントローラをシャットダウンしてブートメディアを交換- AFF A70 and AFF A90</block>
+  <block id="bbfca713068bba4697c845beb95121c9" category="paragraph">コントローラをシャットダウンしたら、を実行する必要があり<block ref="844398b29ea04b019bab02290e44033a" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="0c24f1f5276131f68f59d013b5140fe2" category="summary">コントローラをリブートし、システムヘルスを確認し、障害が発生したパーツをNetAppに戻して、AFF A70およびAFF A90シャーシの交換手順の最後の手順を完了します。</block>
+  <block id="a7d0431e48fc8e27a57e7c9406da1725" category="summary">ハードウェア障害またはアップグレードが必要な場合は、AFF A70またはAFF A90システムのシャーシを交換します。交換プロセスでは、電源装置ユニット（PSU）の取り外し、既存のシャーシの取り外し、新しいシャーシの取り付け、シャーシコンポーネントの取り付けを行います。</block>
+  <block id="ff271b0c96467d97315c4c8bc2a98b8a" category="doc">シャーシを交換する準備- AFF A70 and AFF A90</block>
+  <block id="6d282e909f145bd004728ddc74c015d2" category="summary">AFF A70またはAFF A90システムのシャーシを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。具体的には、システムの他のすべてのコンポーネントが適切に動作していること、ONTAPのローカル管理者のクレデンシャル、正しい交換用シャーシ、および必要な工具があることを確認します。</block>
+  <block id="10e86c29e324a387d895b24857eeedb4" category="doc">シャーシの交換要件- AFF A70およびAFF A90</block>
+  <block id="cd9455911023520fcf98b4da7734bf3e" category="inline-link-macro">シャーシを交換する準備</block>
+  <block id="cc76e275a47d9d1dd1c6de11bb2f7b12" category="paragraph">シャーシの交換要件を確認したら、を行う必要があります<block ref="b1d5a90c05f55c4ad4ac020285b0e079" category="inline-link-macro-rx"></block>。</block>
+  <block id="586bc4cfcaeebf3b002827cd918b9ff1" category="summary">シャーシを交換する必要がある場合は、AFF A70またはAFF A90ストレージシステムのコントローラをシャットダウンします。データ損失を防ぎ、システムの安定性を確保するために、コントローラを安全にシャットダウンすることが重要です。</block>
+  <block id="cfdba73c7c3c1aef6d411979e7eb0c2c" category="paragraph">シャーシを交換する必要がある場合は、AFF A70またはAFF A90ストレージシステムのコントローラをシャットダウンします。データ損失を防ぎ、システムの安定性を確保するために、コントローラを安全にシャットダウンすることが重要です。</block>
+  <block id="a1de9509c1cc526ff2685cc16f15c3c0" category="paragraph">コントローラをシャットダウンしたら、を実行する必要があり<block ref="36e3e0df655e652fc33a5dfc009000ae" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="11e8ff844165c77d350f816362d0ed0a" category="summary">ハードウェア障害が必要な場合は、AFF A70またはAFF A90システムのコントローラを交換します。交換プロセスでは、障害のあるコントローラを取り外し、交換用コントローラにコンポーネントを移動し、交換用コントローラを取り付けてリブートします。</block>
+  <block id="045e51ef9fd14e92bed7263f56f60f6a" category="doc">コントローラを交換してください- AFF A70とAFF A90</block>
+  <block id="7802e205f19ce9b3c1e4b5875798ebef" category="inline-link-macro">システム設定の復元</block>
+  <block id="44505b1d85314cbb257a6a2a6bf388ab" category="paragraph">障害のあるAFF A70またはAFF A90コントローラを交換したら、を行う必要があります<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block>。</block>
+  <block id="dfa5103eb07abaac2f8b16bd48e7b453" category="summary">AFF A70またはAFF A90システムが通常の運用を再開できるように、ストレージリソースの制御を交換用コントローラに戻します。</block>
+  <block id="13b0f53aec80ac13170530410c42bc46" category="paragraph">AFF A70またはAFF A90システムが通常の運用を再開できるように、ストレージリソースの制御を交換用コントローラに戻します。ギブバック手順は、システムで使用されている暗号化タイプ（暗号化なし、オンボードキーマネージャ（OKM）暗号化、外部キーマネージャ（EKM）暗号化）によって異なります。</block>
+  <block id="a61002aab76d792f612bedb7d53fdd4f" category="inline-link-macro">コントローラの交換後の処理</block>
+  <block id="8e4a77cdcca9305c0b2b2aaff9ccf95f" category="paragraph">ストレージリソースの所有権を交換用コントローラに戻したら、の手順を実行する必要があり<block ref="d6f5f08e0612b966d919b4ea0b494c53" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="f186981a4514bcd86930c033d8b52982" category="paragraph">AFF A70またはAFF A90コントローラの交換要件を確認したら、を行う必要があります<block ref="5548f0b530c949cbac4afbdb1eb16be4" category="inline-link-macro-rx"></block>。</block>
+  <block id="09d0394dd9f4460ac15da27cea6fffaf" category="summary">論理インターフェイスがホームポートに報告していることを確認し、クラスタの健全性チェックを実行してから、障害が発生したパーツをNetAppに戻して、AFF A70とAFF A90コントローラの交換手順の最後の手順を完了します。</block>
+  <block id="648ac9f5816534afdd3648942217b373" category="inline-link-macro">コントローラを交換</block>
+  <block id="f7cca63a8d34c4b92e6c512ace430431" category="paragraph">コントローラをシャットダウンしたら、シャットダウンする必要があり<block ref="4c59920dffd5894cdc2dc27ddd7fff07" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="67deb70786a6ab0a5fe6d757258a376d" category="inline-link-macro">コントローラをギブバック</block>
+  <block id="144ef5a8d530c9af9dd9a75ed85bd1a6" category="paragraph">AFF A70またはAFF A90システムのシステム構成をリストアして確認したら、を実行する必要があります<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>。</block>
+  <block id="49e12ef90b1faa3a315b169542c713b2" category="summary">修正可能または修正不可能なメモリエラーが大量に検出された場合は、AFF A70またはAFF A90システムのDIMMを交換します。このようなエラーが発生すると、ストレージシステムでONTAPをブートできなくなる可能性があります。交換プロセスでは、障害のあるコントローラをシャットダウンして取り外し、DIMMを交換してから、コントローラを再度取り付けます。</block>
+  <block id="c6fb1a92a42d034793f0283170857e55" category="doc">修正可能または修正不可能なエラーがあるDIMMの交換- AFF A70 and AFF A90</block>
+  <block id="c5f515f28cb6c1d3c02533b311fba3d8" category="summary">ドライブに障害が発生した場合やアップグレードが必要な場合は、AFF A70またはAFF A90システムのドライブを交換します。交換プロセスでは、障害が発生したドライブを特定して安全に取り外し、新しいドライブを取り付けてデータアクセスとシステムパフォーマンスを継続できるようにします。</block>
+  <block id="000b9b29f1c096063607d874c93f0b4d" category="doc">SSDドライブの交換- AFF A70 and AFF A90</block>
+  <block id="d7b13f1b873e95232ccd8e394ffe5a31" category="summary">ファンに障害が発生した場合、またはファンが効率的に動作していない場合は、AFF A70またはAFF A90システムのファンモジュールを交換してください。これにより、システムの冷却や全体的なパフォーマンスに影響が及ぶ可能性があります。交換プロセスでは、障害のあるコントローラのシャットダウン、コントローラの取り外し、ファンの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
+  <block id="c9eb9dae2912644361174c87c95e219c" category="paragraph">ファンに障害が発生した場合、またはファンが効率的に動作していない場合は、AFF A70またはAFF A90システムのファンモジュールを交換してください。これは、システムの冷却と全体的なパフォーマンスに影響する可能性があります。交換プロセスでは、コントローラのシャットダウン、コントローラの取り外し、ファンの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
+  <block id="c3c30014589b4b5af30412dba283a2b0" category="paragraph">AFF A70またはAFF A90システムにI/Oモジュールを追加して、ネットワーク接続を強化し、システムのデータトラフィック処理能力を拡張します。</block>
+  <block id="52406e048549d7615d438e28022d00e0" category="paragraph">空きスロットがある場合、またはすべてのスロットに空きがある場合は、I/Oモジュールをシステムに追加できます。</block>
+  <block id="129c4825a4876a3275fe6fde1ef05925" category="paragraph">AFF A70およびAFF A90システムは、I/Oモジュールを柔軟に拡張または交換できるため、ネットワーク接続とパフォーマンスが向上します。I/Oモジュールの追加または交換は、ネットワーク機能をアップグレードする場合や、障害が発生したモジュールに対処する場合に不可欠です。</block>
+  <block id="bbf73d5cd427d702187273d0f71f8264" category="summary">AFF A70またはAFF A90システムのI/Oモジュールに障害が発生した場合や、より高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、I/Oモジュールを交換してください。交換プロセスでは、コントローラのシャットダウン、障害が発生したI/Oモジュールの交換、コントローラのリブート、障害が発生したパーツのNetAppへの返却を行います。</block>
+  <block id="6469f92d939d5af2ddb7571ff9a54ce1" category="doc">メンテナンス手順の概要- AFF A70およびAFF A90</block>
+  <block id="9a14eb4201f018a934225cd84a42221c" category="summary">AFF A70またはAFF A90システムのNVバッテリは、停電時に重要なシステムデータを保持する役割があるため、バッテリの充電が失われ始めたときや障害が発生したときに交換します。交換プロセスでは、障害のあるコントローラのシャットダウン、コントローラモジュールの取り外し、NVバッテリの交換、コントローラモジュールの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
+  <block id="b85925ab6af84e80af54ee558d7cdd7b" category="summary">不揮発性メモリに障害が発生した場合やアップグレードが必要な場合は、AFF A70またはAFF A90システムのNVRAMを交換してください。</block>
+  <block id="aaf0a6c95c867df69992eef6a692ca4b" category="doc">NVRAMを交換してください- AFF A70 and AFF A90</block>
+  <block id="6ce37dbe2a72695de938ca0373d07a48" category="paragraph">不揮発性メモリに障害が発生した場合やアップグレードが必要な場合は、AFF A70またはAFF A90システムのNVRAMを交換してください。交換プロセスでは、障害のあるコントローラのシャットダウン、NVRAMモジュールまたはNVRAM DIMMの交換、ディスクの再割り当て、障害が発生したパーツのNetAppへの返却を行います。</block>
+  <block id="4397c8568a5da97a4fa9968d07a388d6" category="summary">AFF A70またはAFF A90システムに障害が発生した場合や障害が発生した場合は、ACまたはDC電源装置ユニット（PSU）を交換して、安定した動作のために必要な電力をシステムに供給し続けるようにします。交換プロセスでは、ターゲットPSUを電源から切断し、電源ケーブルを抜き、障害が発生したPSUを取り外して交換用PSUを取り付け、電源に再接続します。</block>
+  <block id="2529fd3c33c553ca2e8d9592843f4207" category="summary">AFF A70またはAFF A90システムのリアルタイムクロック（RTC）バッテリ（一般にコイン型電池と呼ばれる）を交換して、正確な時刻同期に依存するサービスやアプリケーションが動作し続けるようにします。</block>
+  <block id="074741912fd3881b9c0c739cd18929e2" category="summary">AFF A70またはAFF A90システムのシステム管理モジュールが故障した場合、またはファームウェアが破損した場合は、システム管理モジュールを交換してください。交換プロセスでは、障害のあるコントローラのシャットダウン、障害が発生したシステム管理モジュールの交換、コントローラのリブート、ライセンスキーの更新、障害が発生したパーツのNetAppへの返却を行います。</block>
+  <block id="20b1449f6216ab28919605292500b402" category="doc">システム管理モジュール（AFF A70 and AFF A90）を交換してください</block>
+  <block id="1f2cf1bdc028f501e0052daef27a058a" category="paragraph">AFF A70またはAFF A90システムのシステム管理モジュールが故障した場合、またはファームウェアが破損した場合は、システム管理モジュールを交換してください。交換プロセスでは、コントローラのシャットダウン、障害が発生したシステム管理モジュールの交換、コントローラのリブート、ライセンスキーの更新、障害が発生したパーツのNetAppへの返却を行います。</block>
+  <block id="cf20ef6c3ad56f51916c660c155d776b" category="summary">NVRAMモジュールは、NVRAM10とDIMM、およびNVRAMモジュールごとに最大2つのNVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）で構成されます。</block>
+  <block id="939d9449c6d0732b22e0493b628bb896" category="summary">NVRAMモジュールは、NVRAM11とDIMM、およびNVRAMモジュールごとに最大2つのNVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）で構成されます。</block>
+  <block id="7edf1f3179339021f055ec2c0cfb3e9d" category="summary">NVMe SSD Flash Cacheモジュールキャリアには、1つまたは2つのFlash Cacheモジュール（キャッシングモジュール）が搭載されており、それぞれのキャッシングモジュールにSSDキャッシュドライブが1本搭載されています。キャッシングモジュールはホットスワップできますが、Flash Cacheモジュールキャリアはホットスワップに対応していません。</block>
+  <block id="f216f5272a9bf39ccecae542b80d4bba" category="doc">Flash Cacheモジュールキャリアまたはキャッシングモジュールの交換- FAS70およびFAS90</block>
+  <block id="bec3c3d322e61cf4fb9d371c2b8a1230" category="paragraph">NVMe SSD Flash Cacheモジュールキャリアには、1つまたは2つのFlash Cacheモジュール（キャッシングモジュール）が搭載されており、それぞれのキャッシングモジュールにSSD Flash Cacheドライブが1本搭載されています。</block>
+  <block id="d4f47b7acbf893a3c4734bad5b0d3873" category="paragraph">FAS70は2TBのキャッシングモジュールをサポートし、FAS90は4TBのキャッシングモジュールをサポートします。Flash Cacheモジュールキャリアに容量の異なるキャッシングモジュールを混在させることはできません。</block>
+  <block id="c2a4b5850ddc08ee8695cc3a7d6d8f60" category="paragraph">交換が必要な項目（Flash Cacheモジュールキャリア全体またはキャッシングモジュール）に応じて、次のいずれかの手順を実行できます。</block>
+  <block id="025075570cd9bb7535ad91ed4d464db6" category="list-text"><block ref="75c6ecfae5c2dff701c1623adc220334" category="inline-xref-macro-rx"></block></block>
+  <block id="232f8c06b8825cdb1e6d094998bdf9bc" category="section-title">Flash Cacheモジュールキャリアを交換</block>
+  <block id="74c94db80b288242c7f6674930d713e7" category="paragraph">Flash Cacheモジュールキャリアはスロット6にあり、Flash Cacheモジュールを2つまで収容できます。Flash Cacheモジュールキャリアをホットスワップすることはできません。</block>
+  <block id="bebbc1516aa1b9a12fe06d7b34d961eb" category="list-text">交換用Flash Cacheモジュールキャリアに対応したオペレーティングシステムがストレージシステムにインストールされていることを確認します。</block>
+  <block id="329c099907d0f52c68025a7034cdf53b" category="section-title">手順2：Flash Cacheモジュールキャリアを交換する</block>
+  <block id="e311fe35e84dae70043a7afea8a3e209" category="paragraph">Flash Cacheモジュールキャリアを交換するには、次の手順を実行します。</block>
+  <block id="6bfea0aef7a0f4d7b6e938f7b8cb92cb" category="list-text">Flash Cacheモジュールキャリアの前面にある黄色の警告LEDが点灯している、スロット6で障害が発生したFlash Cacheモジュールキャリアの場所を確認します。</block>
+  <block id="b9d75068f283e47b1871a81e0ae98f88" category="image-alt">Flash Cacheモジュールキャリアの取り外し</block>
+  <block id="d02ffa3301373d79bb19ab24899d6b94" category="paragraph">Flash Cacheモジュールキャリア</block>
+  <block id="7ec745c531dfcccbb03e8cb6ac770325" category="paragraph">Flash Cacheモジュールキャリアのカムハンドル</block>
+  <block id="6320c4570aae84b6f711a0a643c02105" category="paragraph">Flash Cacheモジュールキャリア障害LED</block>
+  <block id="f7ae0ec162944a058c4afe86e4610bb7" category="list-text">障害が発生したFlash Cacheモジュールキャリアを取り外します。</block>
+  <block id="f01b7f35124d8dbf6be7148d34db0f33" category="list-text">Flash Cacheモジュールキャリアの下部にある青いタブをつまみます。</block>
+  <block id="4a6358508c77fa629878a588642ff95b" category="list-text">Flash Cacheモジュールキャリアをコントローラモジュールから引き出し、静電気防止用マットの上に置きます。</block>
+  <block id="66a9252526707f1fbb30f10131f9a4c5" category="list-text">キャッシングモジュールを交換用Flash Cacheモジュールキャリアに移動します。</block>
+  <block id="47b358f21e6762d922bb6e4e2eb6663f" category="list-text">カムレバーの開口部に指をかけ、モジュールをFlash Cacheモジュールキャリアから引き出して、モジュールをエンクロージャから取り外します。</block>
+  <block id="085a8eb90d0f9c87674f47de8d745d4c" category="list-text">キャッシングモジュールを交換用Flash Cacheモジュールキャリアの同じスロットに取り付け、カムハンドルをキャッシングモジュールの閉じた位置に回転させて所定の位置にロックします。</block>
+  <block id="0de97d6035bb6bac9f3261a3b54caf2b" category="list-text">交換用Flash Cacheモジュールキャリアをシステムに取り付けます。</block>
+  <block id="ec617cf6645b7b31af4acf4bb6bf5548" category="paragraph">Flash Cacheモジュールキャリアを交換したら、コントローラモジュールをリブートする必要があります。</block>
+  <block id="cd8149bfa17c8af4e5f1ee33f2b614e1" category="paragraph">Flash Cacheモジュール（キャッシングモジュール）は、スロット6-1、スロット6-2、またはスロット6-1とスロット6-2の両方に搭載されています。</block>
+  <block id="c29caa5c6637387a3d824074eeb2985c" category="list-text">カムレバーの開口部に指をかけ、Flash Cacheモジュールキャリアからモジュールを引き出して、キャッシングモジュールモジュールをエンクロージャから取り外します。</block>
+  <block id="66a0ca1988f2e1500a8393e213211b91" category="paragraph">キャッシングモジュールをFlash Cacheモジュールキャリアから取り外すときは、必ずキャッシングモジュールを支えてください。</block>
+  <block id="5fbc523d8d2ad241522a15100f23bef2" category="inline-link-macro">Flash Cache</block>
+  <block id="4016d0dfef3c71172a1c22488fbd9043" category="paragraph"><block ref="4016d0dfef3c71172a1c22488fbd9043" category="inline-link-macro-rx"></block></block>
+  <block id="b9d7e088b534bc4204f17a38d0ca2c6d" category="summary">NVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）は、FAS9500システムのスロット6でのみNVRAM11モジュールの前面にあります。サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。</block>
+  <block id="02d42b405553fc829059f9765d456680" category="paragraph">NVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）は、FAS9500システムのスロット6のNVRAM11モジュールの前面にあります。サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。</block>
+  <block id="c443492278b59fb4f69d48dc9c1bf136" category="admonition">Flash Cacheモジュールをコールドスワップする必要がある場合、またはコールドスワップする必要がある場合は、I/Oモジュールの交換手順に従ってください。</block>
+  <block id="1537c91762ea3d09c062dd8a4f487023" category="paragraph">障害のあるシャーシ（NVRAMモジュールを含む）からI/Oモジュールを取り外すには、特定の手順を実行します。NVRAMモジュールを交換用シャーシに移動するときに、Flash Cacheモジュールがある場合はモジュールを取り外す必要はありません。</block>
+  <block id="b430f11e83c0bcdf88430204506f447c" category="paragraph">障害のあるシャーシからI/Oモジュール（NVRAM / Flash Cacheモジュールを含む）を取り付けるには、特定の手順を実行します。</block>
+  <block id="c0caee8d791d630286e30c5e81a37e68" category="list-text">ストレージスイッチを介してNS224ドライブシェルフをケーブル接続する方法については、を参照して<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>ください。古いハードウェアモデルの場合は、スイッチのケーブル接続に関する情報もに記載され<block ref="c0b67f04541b649189f1a990ae4a004d" category="inline-link-rx"></block>ています。</block>
+  <block id="d4fa7a653c8bbd17c1100e0ee0b5da36" category="list-text">ストレージスイッチの設置については、を参照して<block ref="cd35f6165185d2c70017bfb031f19b89" category="inline-link-rx"></block>ください。</block>
+  <block id="5b799a4d08d10d5bb45cb3c7b02567ba" category="list-text">ストレージスイッチやケーブルなど、プラットフォームモデルでサポートされているハードウェアを確認するには、を参照して<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>ください。</block>
+  <block id="88b31bba8e7c3dc30d53e07a3939afe0" category="list-text">* Disk Qualification Package：*シェルフをホットアドする前に、最新バージョンのをインストールしておくことを推奨し<block ref="2e664cd4eb21331de01544565a2d83a5" category="inline-link-rx"></block>ます。</block>
+  <block id="ae748ebab4dfd9690b144080dee0a021" category="list-text">* Active IQ Config Advisor：*シェルフのホットアドの前後に実行することを推奨します<block ref="7064c89577900622f24a070c24ebbaa7" category="inline-link-rx"></block>。</block>
+  <block id="fe6c711b5e959d7eb45e9dad280a18ac" category="list-text">* NSMファームウェア：*新しいシェルフを追加する前に、ストレージシステムにとの<block ref="fdb117163130a37cd01d2ae31eb75969" category="inline-link-rx"></block>最新バージョンをインストールしておくことを推奨<block ref="2e6e5b670045aa9f131e153e1b997791" category="inline-link-rx"></block>します。</block>
+  <block id="1c0fa23373954917c0b08b188941f3c3" category="sidebar">新しいNetApp ASA R2システム（ASA A1K、ASA A70、ASA A90、ASA A20、ASA A30、およびASA A50）は、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせたシンプルなエクスペリエンスを実現します。</block>
+  <block id="34d5f1e610f6b8eaf1a7180026def343" category="sidebar">コントローラのシャットダウン</block>
+  <block id="43229c521bba188c3491ed72abe03043" category="sidebar">Flash Cacheモジュール</block>
 </blocks>

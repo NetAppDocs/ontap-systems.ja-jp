@@ -2,7 +2,7 @@
 permalink: a900/nvram_module_or_nvram_dimm_replacement.html 
 sidebar: sidebar 
 keywords:  
-summary: NVRAM モジュールは、 NVRAM11 と DIMM 、 NVRAM モジュールあたり最大 2 つの NVMe SSD Flash Cache モジュール（ FlashCache またはキャッシングモジュール）で構成されます。 
+summary: NVRAMモジュールは、NVRAM11とDIMM、およびNVRAMモジュールごとに最大2つのNVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）で構成されます。 
 ---
 = NVRAM モジュール / NVRAM DIMM を交換してください - AFF A900
 :allow-uri-read: 
