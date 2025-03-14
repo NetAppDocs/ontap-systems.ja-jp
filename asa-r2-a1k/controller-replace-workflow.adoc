@@ -2,16 +2,16 @@
 permalink: asa-r2-a1k/controller-replace-workflow.html 
 sidebar: sidebar 
 keywords: asa r2 a1k, replace the controller 
-summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
+summary: ASA A1Kストレージシステムのコントローラの交換を開始します。まず、障害のあるコントローラのシャットダウン、コントローラの取り外しと交換、システム設定の再設定、システム動作の確認を行います。 
 ---
-= コントローラの交換ワークフロー- ASA A1K
+= コントローラ交換のクイックスタート- ASA A1K
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-コントローラモジュールを交換するには、次のワークフロー手順に従ってください。
+ASA A1Kストレージシステムのコントローラの交換を開始します。まず、障害のあるコントローラのシャットダウン、コントローラの取り外しと交換、システム設定の再設定、システム動作の確認を行います。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:controller-replace-requirements.html["コントローラの交換要件を確認"]
 [role="quick-margin-para"]

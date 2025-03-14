@@ -88,7 +88,7 @@ entries:
       url: "/c30-60/io-module-add.html"
     - title: I/Oモジュールの交換
       url: "/c30-60/io-module-replace.html"
-  - title: NVバッテリ
+  - title: NVハツテリ
     url: "/c30-60/nvdimm-battery-replace.html"
   - title: 電源装置
     url: "/c30-60/power-supply-replace.html"

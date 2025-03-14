@@ -2,16 +2,16 @@
 permalink: fas-70-90/bootmedia-replace-workflow.html 
 sidebar: sidebar 
 keywords: fas70, fas90, replace the boot media 
-summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
+summary: FAS70またはFAS90ストレージ・システムのブート・メディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート・メディアの交換、リカバリ・イメージのブート、暗号化のリストア、システム機能の確認を行います。 
 ---
-= ブートメディアの交換ワークフロー- FAS70およびFAS90
+= ブートメディアの交換のクイックスタート- FAS70およびFAS90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ブートメディアを交換するには、次のワークフロー手順を実行します。
+FAS70またはFAS90ストレージ・システムのブート・メディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート・メディアの交換、リカバリ・イメージのブート、暗号化のリストア、システム機能の確認を行います。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:bootmedia-replace-requirements.html["ブートメディアの交換要件の確認"]
 [role="quick-margin-para"]

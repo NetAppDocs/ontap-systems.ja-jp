@@ -11,7 +11,7 @@ summary: 交換用手順を完了してシステムを完全に動作状態に�
 
 
 [role="lead"]
-交換用手順を完了してシステムを完全に動作状態に戻すには、ストレージのケーブル接続をやり直し、必要に応じて NetApp Storage Encryption の構成をリストアし、新しいコントローラのライセンスをインストールする必要があります。システムを完全に動作状態にリストアするには、一連の作業を完了しておく必要があります。
+交換手順を完了してシステムを完全な状態にリストアするには、NetAppストレージ暗号化の設定をリストアし（必要な場合）、新しいコントローラのライセンスをインストールします。
 
 
 
@@ -62,6 +62,7 @@ replacement _node を使用可能な状態に戻す前に、 LIF がホームポ
 ** AutoSupport が有効になっていない場合は、を呼び出します https://mysupport.netapp.com["ネットアップサポート"] をクリックしてシリアル番号を登録します。
 
 
+. クラスタの健全性を確認します。詳細については、技術情報の記事を参照して https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["ONTAP でスクリプトを使用してクラスタの健全性チェックを実行する方法"^] ください。
 . AutoSupportのメンテナンス時間がトリガーされた場合は、を使用して終了します `system node autosupport invoke -node * -type all -message MAINT=END` コマンドを実行します
 . 自動ギブバックを無効にした場合は、再度有効にします。「 storage failover modify -node local-auto-giveback true 」
 

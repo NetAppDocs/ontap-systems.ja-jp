@@ -2,7 +2,7 @@
 permalink: a1k/bootmedia-recovery-image-boot.html 
 sidebar: sidebar 
 keywords: aff a1k, boot the recovery image 
-summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
+summary: AFF A1Kシステムに新しいブートメディアデバイスを設置したら、リカバリイメージをUSBドライブからブートし、パートナーノードから設定をリストアできます。 
 ---
 = リカバリイメージのブート- AFF A1K
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: ONTAP イメージを USB ドライブからブートし、ファイル
 
 
 [role="lead"]
-ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
+AFF A1Kシステムに新しいブートメディアデバイスを設置したら、リカバリイメージをUSBドライブからブートし、パートナーノードから設定をリストアできます。
 
 .手順
 . LOADER プロンプトから、 USB フラッシュドライブ「 boot_recovery 」からリカバリ・イメージをブートします
@@ -65,3 +65,6 @@ ONTAP イメージを USB ドライブからブートし、ファイルシステ
 *注意：*プロセスが失敗した場合は、に連絡してください https://support.netapp.com["ネットアップサポート"]。
 
 
+
+.次の手順
+リカバリイメージを起動したら、を実行する必要がありlink:bootmedia-encryption-restore.html["ブートメディアで暗号化をリストアする"]ます。

@@ -32,7 +32,7 @@ entries:
     - title: ブートイメージを起動します
       url: "/a900/bootmedia_recovery_image.html"
     - title: アンコウカノ
-      url: "/a900/bootmedia_encryption_restore.html"
+      url: "/a900/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します
       url: "/a900/bootmedia_complete_rma.html"
   - title: シャーシ

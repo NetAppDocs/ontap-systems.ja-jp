@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: c80, post boot media replacement steps for okm, nse, and nve 
 summary: AFF C80システムの交換用ブートメディアに暗号化をリストアして、データを継続的に保護します。このプロセスでは、キーの可用性の確認、暗号化設定の再適用、およびデータへのセキュアなアクセスの確認が行われます。 
 ---
-= リストア暗号化- AFF C80
+= ブートメディアでの暗号化のリストア- AFF C80
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-AFF C80システムの交換用ブートメディアに暗号化をリストアして、データを継続的に保護します。このプロセスでは、キーの可用性の確認、暗号化設定の再適用、およびデータへのセキュアなアクセスの確認が行われます。
+AFF C80システムの交換用ブートメディアに暗号化をリストアして、データを継続的に保護します。交換プロセスには、キーの可用性の確認、暗号化設定の再適用、およびデータへのセキュアなアクセスの確認が含まれます。
 
 オンボードキーマネージャ（OKM）、NetApp Storage Encryption（NSE）、またはNetApp Volume Encryption（NVE）が有効になっているシステムに固有の手順を、ブートメディアの交換手順の最初にキャプチャした設定を使用して実行する必要があります。
 
@@ -429,3 +429,6 @@ Selection (1-11)? 1
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
+
+.次の手順
+ブートメディアで暗号化をリストアしたら、を実行する必要がありlink:bootmedia-complete-rma.html["故障した部品をNetAppに返却します。"]ます。

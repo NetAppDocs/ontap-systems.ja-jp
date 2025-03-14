@@ -2,7 +2,7 @@
 permalink: c80/controller-replace-restore-system-rma.html 
 sidebar: sidebar 
 keywords: c80, how to restore NetApp Storage Encryption, how to complete the replacement process 
-summary: 論理インターフェイスがホームポートに報告していることを確認し、クラスタの健全性チェックを実行し、障害が発生したパーツをNetAppに戻して、AFF C80コントローラの交換ワークフローの最後の手順を実行します。 
+summary: 論理インターフェイスがホームポートに報告していることを確認し、クラスタの健全性チェックを実行し、障害が発生したパーツをNetAppに戻して、AFF C80コントローラの交換手順の最後の手順を完了します。 
 ---
 = コントローラ交換後の処理- AFF C80
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 論理インターフェイスがホームポートに報告してい�
 
 
 [role="lead"]
-論理インターフェイスがホームポートに報告していることを確認し、クラスタの健全性チェックを実行し、障害が発生したパーツをNetAppに戻して、AFF C80コントローラの交換ワークフローの最後の手順を実行します。
+論理インターフェイス（LIF）がホームポートに報告していることを確認し、クラスタの健全性チェックを実行してから、障害が発生したパーツをNetAppに戻して、AFF C80コントローラの交換手順の最後の手順を完了します。
 
 
 

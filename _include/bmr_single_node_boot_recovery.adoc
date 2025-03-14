@@ -6,8 +6,14 @@
 * 次のいずれかの方法でオンボードキーマネージャ（OKM）または永遠キーマネージャ（EKM）が設定されているかどうかを確認します。
 +
 ** OKMまたはEKMが有効になっているかどうかは、お客様またはシステム管理者に確認してください。
-** OKMが有効になっているかどうかを確認するには、を使用し `security key-manager onboard show`ます。
-** EKMが有効になっているかどうかを確認するには、を使用し `security key-manager external show`ます。
+** OKMが有効になっているかどうかを確認するには、次のコマンドを使用します。
++
+`security key-manager onboard show`
+
+** EKMが有効になっているかどうかを確認するには、次のコマンドを使用します。
++
+`security key-manager external show`
+
 
 
 * OKMを使用するには、OKMパスフレーズファイルの内容が必要です。

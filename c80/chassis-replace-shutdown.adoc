@@ -66,3 +66,6 @@ NOTE: StrictSyncモードで動作するSnapMirror同期を使用するクラス
 
 . 各コントローラが停止するまで待ち、LOADERプロンプトを表示します。
 
+
+.次の手順
+コントローラをシャットダウンしたら、を実行する必要がありlink:chassis-replace-move-hardware.html["シャーシを交換する"]ます。

@@ -2,7 +2,7 @@
 permalink: fas-70-90/controller-replace-system-config-restore-and-verify.html 
 sidebar: sidebar 
 keywords: fas70, fas90, restore and verify the system configuration, verify and set the ha state of the controller module 
-summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
+summary: コントローラのHA構成がアクティブで、FAS70またはFAS90ストレージ・システムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。 
 ---
 = システム構成をリストアして検証します。 FAS70 と FAS90
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: ハードウェアの交換が完了してメンテナンスモード�
 
 
 [role="lead"]
-ハードウェアの交換が完了したら、交換用コントローラの下位システム構成を確認し、必要に応じてシステム設定を再設定します。
+コントローラのHA構成がアクティブで、FAS70またはFAS90ストレージ・システムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。
 
 
 
@@ -61,3 +61,6 @@ hA-state には、次のいずれかの値を指定できます。
 
 . メンテナンスモードを終了します。 `halt`
 
+
+.次の手順
+FAS70またはFAS90システムのシステム構成をリストアして確認したら、を実行する必要がありますlink:controller-replace-recable-reassign-disks.html["コントローラをギブバック"]。

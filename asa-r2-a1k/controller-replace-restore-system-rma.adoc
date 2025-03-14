@@ -2,7 +2,7 @@
 permalink: asa-r2-a1k/controller-replace-restore-system-rma.html 
 sidebar: sidebar 
 keywords: asa r2 a1k, how to restore NetApp Storage Encryption, how to complete the replacement process 
-summary: 'システムを完全な状態にリストアするには、LIFを確認し、クラスタの健常性を確認して、障害が発生したパーツをNetAppに戻す必要があります。RMA番号を確認する場合や、交換手順についてサポートが必要な場合は、テクニカルサポートにお問い合わせください。にアクセスするか、日本国内サポート用電話番号：国内フリーダイヤル0066-33-123-265または0066-33-821-274（国際フリーフォン800-800-80-800も使用可能）までご連絡ください。 https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"]' 
+summary: 論理インターフェイス（LIF）がホームポートに報告していることを確認し、クラスタの健全性チェックを実行してから、障害が発生したパーツをNetAppに戻して、ASA A1Kコントローラの交換手順の最後の手順を完了します。 
 ---
 = コントローラ交換後の処理- ASA A1K
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'システムを完全な状態にリストアするには、LIFを確�
 
 
 [role="lead"]
-システムを完全な状態にリストアするには、LIFを確認し、クラスタの健常性を確認して、障害が発生したパーツをNetAppに戻す必要があります。
+論理インターフェイス（LIF）がホームポートに報告していることを確認し、クラスタの健全性チェックを実行してから、障害が発生したパーツをNetAppに戻して、ASA A1Kコントローラの交換手順の最後の手順を完了します。
 
 
 

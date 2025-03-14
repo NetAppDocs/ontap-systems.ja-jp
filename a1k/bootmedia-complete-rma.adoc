@@ -2,7 +2,7 @@
 permalink: a1k/bootmedia-complete-rma.html 
 sidebar: sidebar 
 keywords: aff a1k, complete the replacement process 
-summary: '部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。テクニカルサポートにお問い合わせください https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"]RMA 番号を確認する場合や、交換用手順にサポートが必要な場合は、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。' 
+summary: 'AFF A1Kシステムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。' 
 ---
 = 故障した部品をNetAppに返却します（AFF A1K）。
 :allow-uri-read: 
@@ -11,4 +11,4 @@ summary: '部品を交換したあと、障害のある部品をネットアッ�
 
 
 [role="lead"]
-障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。
+AFF A1Kシステムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

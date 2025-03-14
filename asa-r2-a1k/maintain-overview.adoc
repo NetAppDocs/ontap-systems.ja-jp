@@ -2,18 +2,18 @@
 permalink: asa-r2-a1k/maintain-overview.html 
 sidebar: sidebar 
 keywords: asa r2 a1k maintenance, maintenance, repairing a1k, repairing asa a1k, replace asa a1k components, replace asa a1k components 
-summary: ASA R2 A1Kハードウェアのメンテナンス 
+summary: ASA A1Kストレージシステムのハードウェアを保守して、長期的な信頼性と最適なパフォーマンスを確保します。ダウンタイムやデータ損失の防止に役立つため、障害のあるコンポーネントの交換などの定期的なメンテナンスタスクを実行します。 
 ---
-= ASA A1Kハードウェアのメンテナンス
+= メンテナンス手順の概要- ASA A1K
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ハードウェアのメンテナンス手順が必要になる場合があります。このセクションでは、ASA A1Kシステムコンポーネントのメンテナンスに固有の手順について説明します。
+ASA A1Kストレージシステムのハードウェアを保守して、長期的な信頼性と最適なパフォーマンスを確保します。ダウンタイムやデータ損失の防止に役立つため、障害のあるコンポーネントの交換などの定期的なメンテナンスタスクを実行します。
 
-このセクションの手順は、A1KシステムがONTAP環境のストレージノードとしてすでに導入されていることを前提としています。
+メンテナンス手順では、ASA A1KシステムがONTAP環境のストレージノードとしてすでに導入されていることを前提としています。
 
 
 

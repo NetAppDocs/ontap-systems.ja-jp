@@ -27,13 +27,13 @@ entries:
   - title: ブートメディア
     pdf-filename: FAS70とFAS90のブートメディア
     entries:
-    - title: ブートメディアの交換ワークフロー
+    - title: フウトメテイアノコウカン
       url: "/fas-70-90/bootmedia-replace-workflow.html"
     - title: 要件を確認する
       url: "/fas-70-90/bootmedia-replace-requirements.html"
     - title: 暗号化キーの確認
       url: "/fas-70-90/bootmedia-encryption-preshutdown-checks.html"
-    - title: 障害のあるコントローラをシャットダウンします
+    - title: コントローラのシャットダウン
       url: "/fas-70-90/bootmedia-shutdown.html"
     - title: ブートメディアを交換します
       url: "/fas-70-90/bootmedia-replace.html"
@@ -46,7 +46,7 @@ entries:
   - title: コントローラ
     pdf-filename: FAS70およびFAS90コントローラモジュール
     entries:
-    - title: コントローラの交換ワークフロー
+    - title: コントローラ交換のクイックスタート
       url: "/fas-70-90/controller-replace-workflow.html"
     - title: 要件および考慮事項
       url: "/fas-70-90/controller-replace-requirements.html"
@@ -68,7 +68,7 @@ entries:
     url: "/fas-70-90/caching-module-hot-swap.html"
   - title: NVRAM
     url: "/fas-70-90/nvram-replace.html"
-  - title: NVバッテリ
+  - title: NVハツテリ
     url: "/fas-70-90/nvdimm-battery-replace.html"
   - title: I/O モジュール
     entries:

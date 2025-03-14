@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, replace the boot media 
 summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
 ---
-= ブートメディアの交換ワークフロー- AFF A20、AFF A30、およびAFF A50
+= ブートメディアの交換ワークフロー- ASA A20、ASA A30、およびASA A50
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

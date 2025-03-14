@@ -4,16 +4,16 @@ sidebar: sidebar
 keywords: asa r2 a70 asa r2 a90 maintenance, maintenance, repairing asa r2 a70 asa r2 a90, repairing a70 asa r2 a90, replace a70 asa r2 a90 components 
 summary: ASA R2 A70、ASA R2 A90ハードウェアのメンテナンス 
 ---
-= ASA A70およびASA A90ハードウェアのメンテナンス
+= メンテナンス手順の概要- ASA A70およびASA A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ハードウェアのメンテナンス手順が必要になる場合があります。このセクションでは、ASA A70およびASA A90システムコンポーネントのメンテナンスに固有の手順について説明します。
+ASA A70およびASA A90ストレージシステムのハードウェアを保守して、長期的な信頼性と最適なパフォーマンスを確保します。ダウンタイムやデータ損失の防止に役立つため、障害のあるコンポーネントの交換などの定期的なメンテナンスタスクを実行します。
 
-このセクションの手順は、ASA A70およびASA A90システムがONTAP環境のストレージノードとしてすでに導入されていることを前提としています。
+メンテナンス手順では、ASA A70システムとASA A90システムがONTAP環境にストレージノードとしてすでに導入されていることを前提としています。
 
 
 

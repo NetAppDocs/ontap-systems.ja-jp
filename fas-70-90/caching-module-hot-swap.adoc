@@ -2,7 +2,7 @@
 permalink: fas-70-90/caching-module-hot-swap.html 
 sidebar: sidebar 
 keywords: fas70, fas90, hot swap, replace, Flash Cache module carrier, caching module, Flash Cache 
-summary: NVMe SSD Flash Cacheモジュールキャリアには、1つまたは2つのFlash Cacheモジュール（キャッシングモジュール）が搭載されており、それぞれのキャッシングモジュールにSSDキャッシュドライブが1本搭載されています。キャッシングモジュールはホットスワップできますが、Flash Cacheモジュールキャリアはホットスワップに対応していません。 
+summary: FAS70またはFAS90システムのNVMe SSD Flash Cacheモジュールキャリアには、1つまたは2つのFlash Cacheモジュール（キャッシングモジュール）と、1つのSSD Flash Cacheドライブが各キャッシングモジュールに統合されています。 
 ---
 = Flash Cacheモジュールキャリアまたはキャッシングモジュールの交換- FAS70およびFAS90
 :allow-uri-read: 
@@ -11,11 +11,11 @@ summary: NVMe SSD Flash Cacheモジュールキャリアには、1つまたは2�
 
 
 [role="lead"]
-NVMe SSD Flash Cacheモジュールキャリアには、1つまたは2つのFlash Cacheモジュール（キャッシングモジュール）が搭載されており、それぞれのキャッシングモジュールにSSD Flash Cacheドライブが1本搭載されています。
+FAS70またはFAS90システムのNVMe SSD Flash Cacheモジュールキャリアには、1つまたは2つのFlash Cacheモジュール（キャッシングモジュール）と、1つのSSD Flash Cacheドライブが各キャッシングモジュールに統合されています。
 
 FAS70は2TBのキャッシングモジュールをサポートし、FAS90は4TBのキャッシングモジュールをサポートします。Flash Cacheモジュールキャリアに容量の異なるキャッシングモジュールを混在させることはできません。
 
-交換が必要な項目（Flash Cacheモジュールキャリア全体またはキャッシングモジュール）に応じて、次のいずれかの手順を実行できます。
+交換が必要なコンポーネント（Flash Cacheモジュールキャリア全体またはキャッシングモジュール）に応じて、次のいずれかの手順を実行できます。
 
 * <<Flash Cacheモジュールキャリアを交換>>
 * <<キャッシングモジュールを交換>>
@@ -229,7 +229,6 @@ NOTE: これにより、I/Oカードおよびその他のコンポーネント�
 
 == キャッシングモジュールを交換
 
-.作業を開始する前に
 Flash Cacheモジュール（キャッシングモジュール）は、スロット6-1、スロット6-2、またはスロット6-1とスロット6-2の両方に搭載されています。
 
 個 々 のキャッシングモジュールを、同じベンダーまたはサポート対象の別のベンダーの同じ容量のキャッシングモジュールとホットスワップできます。

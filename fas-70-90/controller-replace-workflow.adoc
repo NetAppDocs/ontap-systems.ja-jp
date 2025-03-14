@@ -2,16 +2,16 @@
 permalink: fas-70-90/controller-replace-workflow.html 
 sidebar: sidebar 
 keywords: fas70, fas90, replace the controller 
-summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
+summary: まず、障害のあるコントローラのシャットダウン、コントローラの取り外しと交換、システム設定の再設定、システム動作の確認を行い、FAS70またはFAS90ストレージシステムのコントローラの交換を開始します。 
 ---
-= コントローラの交換ワークフロー- FAS70およびFAS90
+= コントローラ交換のクイックスタート- FAS70およびFAS90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-コントローラモジュールを交換するには、次のワークフロー手順に従ってください。
+まず、障害のあるコントローラのシャットダウン、コントローラの取り外しと交換、システム構成のリストア、システム動作の確認を行い、FAS70またはFAS90ストレージシステムのコントローラの交換を開始します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:controller-replace-requirements.html["コントローラの交換要件を確認"]
 [role="quick-margin-para"]

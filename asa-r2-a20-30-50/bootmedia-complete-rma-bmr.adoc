@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, complete the replacement process 
 summary: 部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。 
 ---
-= 故障した部品をNetApp（AFF A20、AFF A30、およびAFF A50）に返却します。
+= 故障した部品をNetApp（ASA A20、ASA A30、およびASA A50）に返却します。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
