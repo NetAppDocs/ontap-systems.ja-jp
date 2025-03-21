@@ -33,7 +33,7 @@ entries:
       url: "/a20-30-50/bootmedia-replace-requirements.html"
     - title: 暗号化キーの確認
       url: "/a20-30-50/bootmedia-encryption-preshutdown-checks.html"
-    - title: 障害のあるコントローラをシャットダウンします
+    - title: コントローラのシャットダウン
       url: "/a20-30-50/bootmedia-shutdown.html"
     - title: ブートメディアを交換します
       url: "/a20-30-50/bootmedia-replace.html"

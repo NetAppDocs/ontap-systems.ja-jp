@@ -2,9 +2,9 @@
 permalink: a20-30-50/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
 keywords: aff a20, aff a30, aff a50, pre-shutdown checks for onboard encryption keys 
-summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
+summary: A20、AFF A30、またはAFF A50ストレージシステムのデータセキュリティを確保するには、ブートメディアで暗号化キーのサポートとステータスを確認する必要があります。ONTAPのバージョンでNetAppボリューム暗号化がサポートされているかどうかを確認し、コントローラをシャットダウンする前にキー管理ツールがアクティブになっているかどうかを確認します。 
 ---
-= オンボード暗号化キーの確認- AFF A20、AFF A30、およびAFF A50
+= ブートメディアの暗号化キーのサポートとステータスを確認する（AFF A20、AFF A30、およびAFF A50）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -192,3 +192,6 @@ OKM情報を手動でバックアップします。
 --
 ====
 
+
+.次の手順
+ブートメディアで暗号化キーのサポートとステータスを確認したら、を実行する必要がありますlink:bootmedia-shutdown.html["コントローラをシャットダウン"]。

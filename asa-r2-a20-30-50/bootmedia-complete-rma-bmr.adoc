@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-a20-30-50/bootmedia-complete-rma-bmr.html 
 sidebar: sidebar 
-keywords: aff a20, aff a30, aff a50, complete the replacement process 
+keywords: asa a20, asa a30, asa a50, complete the replacement process 
 summary: 部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。 
 ---
 = 故障した部品をNetApp（ASA A20、ASA A30、およびASA A50）に返却します。
@@ -11,4 +11,4 @@ summary: 部品を交換したあと、障害のある部品をネットアッ�
 
 
 [role="lead"]
-障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。
+ASA A20、ASA A30、またはASA A50ストレージシステムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

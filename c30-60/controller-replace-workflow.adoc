@@ -2,7 +2,7 @@
 permalink: c30-60/controller-replace-workflow.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, replace the controller workflow 
-summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
+summary: AFF C30またはAFF C60ストレージシステムのコントローラの交換を開始します。まず、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成をリストアし、ストレージリソースの制御を交換用コントローラに戻します。 
 ---
 = コントローラの交換ワークフロー- AFF C30とAFF C60
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 障害が発生したコンポーネントは、プロバイダから�
 
 
 [role="lead"]
-コントローラを交換するには、次のワークフロー手順に従ってください。
+AFF C30またはAFF C60ストレージシステムのコントローラの交換を開始します。まず、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成をリストアし、ストレージリソースの制御を交換用コントローラに戻します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:controller-replace-requirements.html["コントローラの交換要件を確認"]
 [role="quick-margin-para"]

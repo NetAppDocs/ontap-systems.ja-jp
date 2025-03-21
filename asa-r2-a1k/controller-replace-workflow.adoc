@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a1k, replace the controller 
 summary: ASA A1Kストレージシステムのコントローラの交換を開始します。まず、障害のあるコントローラのシャットダウン、コントローラの取り外しと交換、システム設定の再設定、システム動作の確認を行います。 
 ---
-= コントローラ交換のクイックスタート- ASA A1K
+= コントローラの交換ワークフロー- ASA A1K
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

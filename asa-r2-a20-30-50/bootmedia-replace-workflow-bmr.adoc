@@ -1,8 +1,8 @@
 ---
 permalink: asa-r2-a20-30-50/bootmedia-replace-workflow-bmr.html 
 sidebar: sidebar 
-keywords: aff a20, aff a30, aff a50, replace the boot media 
-summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
+keywords: asa a20, asa a30, asa a50, replace the boot media 
+summary: ASA A30、ASA A20、およびASA A50ストレージシステムのブートメディアの交換を開始します。まず、交換要件を確認し、障害のあるコントローラのシャットダウン、ブートメディアの交換、ブートメディアへのイメージのリストア、システム機能の確認を行います。 
 ---
 = ブートメディアの交換ワークフロー- ASA A20、ASA A30、およびASA A50
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 障害が発生したコンポーネントは、プロバイダから�
 
 
 [role="lead"]
-ブートメディアを交換するには、次のワークフロー手順を実行します。
+ASA A30、ASA A20、またはASA A50ストレージシステムのブートメディアの交換を開始します。まず、交換要件を確認し、障害のあるコントローラのシャットダウン、ブートメディアの交換、ブートメディアへのイメージのリストア、システム機能の確認を行います。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:bootmedia-replace-requirements-bmr.html["ブートメディア要件を確認"]
 [role="quick-margin-para"]

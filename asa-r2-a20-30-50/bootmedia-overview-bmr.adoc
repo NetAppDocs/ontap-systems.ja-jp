@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-a20-30-50/bootmedia-overview-bmr.html 
 sidebar: sidebar 
-keywords: aff a20, aff a30, aff a50, overview, automatic recovery, boot media 
+keywords: asa a20, asa a30, asa a50, overview, automatic recovery, boot media 
 summary: ブートメディアの自動交換方法について説明します。 
 ---
 = ブートメディアリカバリの概要- ASA A20、ASA A30、およびASA A50
@@ -11,7 +11,7 @@ summary: ブートメディアの自動交換方法について説明します�
 
 
 [role="lead"]
-ブートメディアリカバリでは、パートナーノードのブートイメージを使用して適切なブートメニューオプションが自動的に実行され、交換用ブートメディアにブートイメージがインストールされます。
+ASA A20、ASA A30、またはASA A50ストレージシステムのブートメディアリカバリでは、パートナーノードのブートイメージが使用され、適切なブートメニューオプションが自動的に実行されて交換用ブートメディアにブートイメージがインストールされます。
 
 次のようなブートエラーメッセージが表示された場合は、ブートメディアを交換し、パートナーノードからONTAPイメージをリストアする必要があります。
 

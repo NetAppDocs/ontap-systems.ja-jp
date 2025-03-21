@@ -2,7 +2,7 @@
 permalink: a20-30-50/controller-replace-system-config-restore-and-verify.html 
 sidebar: sidebar 
 keywords: aff a20, aff a30, aff a50, restore and verify the system configuration, verify and set the ha state of the controller module 
-summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
+summary: AFF A20、AFF A30、またはAFF A50のストレージシステムでコントローラのHA構成がアクティブで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。 
 ---
 = システム構成のリストアと確認（AFF A20、AFF A30、およびAFF A50）
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: ハードウェアの交換が完了してメンテナンスモード�
 
 
 [role="lead"]
+AFF A20、AFF A30、またはAFF A50のストレージシステムでコントローラのHA構成がアクティブで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。
+
 交換用コントローラの下位システム構成を確認し、必要に応じてシステム設定を再設定します。
 
 
@@ -77,3 +79,6 @@ hA-state には、次のいずれかの値を指定できます。
 `halt`
 
 
+
+.次の手順
+AFF A20、AFF A30、またはAFF A50システムのシステム構成を復元して確認したら、を行う必要がありますlink:controller-replace-recable-reassign-disks.html["コントローラをギブバック"]。

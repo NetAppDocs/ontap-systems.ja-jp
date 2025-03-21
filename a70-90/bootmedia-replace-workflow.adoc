@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, a90, replace the boot media 
 summary: AFF A70またはAFF A90ストレージシステムのブートメディアの交換を開始するには、交換用メディアを準備してシステムに取り付け、ブートイメージをリストアし、システムの機能を確認します。 
 ---
-= ブートメディアの交換のクイックスタート- AFF A70とAFF A90
+= ブートメディアの交換ワークフロー- AFF A70とAFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

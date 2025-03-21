@@ -10,7 +10,7 @@ entries:
   entries:
   - title: ブートメディアの概要
     url: "/asa-r2-70-90/bootmedia-overview-bmr.html"
-  - title: フウトメテイアノコウカン
+  - title: ブートメディアの交換ワークフロー
     url: "/asa-r2-70-90/bootmedia-replace-workflow-bmr.html"
   - title: 要件を確認する
     url: "/asa-r2-70-90/bootmedia-replace-requirements-bmr.html"
@@ -25,7 +25,7 @@ entries:
 - title: シャーシ
   pdf-filename: ASA A70およびASA A90シャーシ
   entries:
-  - title: シヤアシコウカンノクイツクスタアト
+  - title: シャーシの交換ワークフロー
     url: "/asa-r2-70-90/chassis-replace-workflow.html"
   - title: 要件を確認する
     url: "/asa-r2-70-90/chassis-replace-requirements.html"
@@ -40,7 +40,7 @@ entries:
 - title: コントローラ
   pdf-filename: ASA A70およびASA A90コントローラ
   entries:
-  - title: コントローラ交換のクイックスタート
+  - title: コントローラの交換ワークフロー
     url: "/asa-r2-70-90/controller-replace-workflow.html"
   - title: 要件を確認する
     url: "/asa-r2-70-90/controller-replace-requirements.html"

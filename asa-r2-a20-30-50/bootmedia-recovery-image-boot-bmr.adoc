@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-a20-30-50/bootmedia-recovery-image-boot-bmr.html 
 sidebar: sidebar 
-keywords: aff a20, aff a30, aff a50, boot the recovery image 
+keywords: asa a20, asa a30, asa a50, boot the recovery image 
 summary: 自動ブートリカバリプロセスを使用して、パートナーコントローラからブートメディア上のイメージをリストアできます。 
 ---
 = ONTAPイメージの復元（ASA A20、ASA A30、およびASA A50）
@@ -10,8 +10,12 @@ summary: 自動ブートリカバリプロセスを使用して、パートナ�
 :imagesdir: ../media/
 
 
-.作業を開始する前に
 [role="lead"]
+ASA A20、ASA A30、またはASA A50ストレージシステムに新しいブートメディアデバイスを取り付けたら、自動ブートメディアリカバリプロセスを開始して、正常なノードから構成をリストアできます。
+
+リカバリプロセス中に、システムは暗号化が有効になっているかどうかを確認し、使用中のキー暗号化のタイプを判別します。キー暗号化が有効になっている場合は、その暗号化をリストアするための適切な手順が表示されます。
+
+.作業を開始する前に
 * 次のいずれかの方法でオンボードキーマネージャ（OKM）または永遠キーマネージャ（EKM）が設定されているかどうかを確認します。
 +
 ** OKMまたはEKMが有効になっているかどうかは、お客様またはシステム管理者に確認してください。
@@ -391,3 +395,6 @@ LOADER-B>
 `system node autosupport invoke -node * -type all -message MAINT=END`です。
 
 
+
+.次の手順
+ONTAPイメージをリストアしたあと、ノードが稼働してデータを提供できるようlink:bootmedia-complete-rma-bmr.html["故障した部品をNetAppに返却します。"]になります。

@@ -27,7 +27,7 @@ entries:
   - title: ブートメディア
     pdf-filename: AFF A1Kブートメディア
     entries:
-    - title: フウトメテイアノコウカン
+    - title: ブートメディアの交換ワークフロー
       url: "/a1k/bootmedia-replace-workflow.html"
     - title: 要件を確認する
       url: "/a1k/bootmedia-replace-requirements.html"
@@ -46,7 +46,7 @@ entries:
   - title: コントローラ
     pdf-filename: AFF A1Kコントローラモジュール
     entries:
-    - title: コントローラ交換のクイックスタート
+    - title: コントローラの交換ワークフロー
       url: "/a1k/controller-replace-workflow.html"
     - title: 要件を確認する
       url: "/a1k/controller-replace-requirements.html"

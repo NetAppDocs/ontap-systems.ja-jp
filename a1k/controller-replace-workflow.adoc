@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a1k, replace the controller 
 summary: まず、障害のあるコントローラのシャットダウン、コントローラの取り外しと交換、システム設定の再設定、システム動作の確認を行い、AFF A1Kストレージシステムのコントローラを交換します。 
 ---
-= コントローラ交換のクイックスタート- AFF A1K
+= コントローラの交換ワークフロー- AFF A1K
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-まず、障害のあるコントローラのシャットダウン、コントローラの取り外しと交換、システム構成のリストア、システム処理の確認から始めて、AFF A1Kストレージシステムのコントローラを交換します。
+まず、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成をリストアし、ストレージリソースの制御を交換用コントローラに戻して、AFF A1Kストレージシステムのコントローラを交換します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:controller-replace-requirements.html["コントローラの交換要件を確認します。"]
 [role="quick-margin-para"]

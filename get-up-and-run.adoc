@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: ONTAPハードウェアシステムの運用を開始するには、ONTAPでハードウェアコンポーネントを取り付け、ハードウェアをケーブル接続し、ストレージを設定します。 
 ---
-= ONTAPハードウェアシステムの導入と運用
+= ONTAPハードウェアシステムのクイックスタート
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

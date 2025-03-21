@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, replace the boot media 
 summary: AFF A1Kストレージシステムのブートメディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブートメディアの交換、リカバリイメージのブート、暗号化のリストア、システム機能の確認を行います。 
 ---
-= ブートメディアの交換のクイックスタート- AFF A1K
+= ブートメディアの交換ワークフロー- AFF A1K
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

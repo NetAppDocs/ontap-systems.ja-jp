@@ -2,7 +2,7 @@
 permalink: c30-60/bootmedia-recovery-image-boot.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, boot the recovery image 
-summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
+summary: AFF C80システムに新しいブートメディアデバイスを設置したら、リカバリイメージをUSBドライブからブートし、パートナーノードから設定をリストアできます。 
 ---
 = リカバリイメージのブート（AFF C30 and AFF C60）
 :allow-uri-read: 
@@ -65,3 +65,6 @@ AFF C80システムに新しいブートメディアデバイスを設置した�
 *注意：*プロセスが失敗した場合は、に連絡してください https://support.netapp.com["ネットアップサポート"]。
 
 
+
+.次の手順
+リカバリイメージを起動したら、を実行する必要がありlink:bootmedia-encryption-restore.html["ブートメディアで暗号化をリストアする"]ます。

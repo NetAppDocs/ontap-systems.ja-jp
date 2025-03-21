@@ -2,7 +2,7 @@
 permalink: c30-60/controller-replace-system-config-restore-and-verify.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, restore and verify the system configuration, verify and set the ha state of the controller module 
-summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
+summary: コントローラのHA構成がアクティブで、AFF C30またはAFF C60ストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。 
 ---
 = システム構成のリストアと検証（AFF C30 and AFF C60）
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: ハードウェアの交換が完了してメンテナンスモード�
 
 
 [role="lead"]
+コントローラのHA構成がアクティブで、AFF C30またはAFF C60ストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。
+
 交換用コントローラの下位システム構成を確認し、必要に応じてシステム設定を再設定します。
 
 
@@ -77,3 +79,6 @@ hA-state には、次のいずれかの値を指定できます。
 `halt`
 
 
+
+.次の手順
+AFF C30またはAFF C60システムのシステム構成をリストアして確認したら、を実行する必要がありますlink:controller-replace-recable-reassign-disks.html["コントローラをギブバック"]。

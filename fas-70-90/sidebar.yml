@@ -27,7 +27,7 @@ entries:
   - title: ブートメディア
     pdf-filename: FAS70とFAS90のブートメディア
     entries:
-    - title: フウトメテイアノコウカン
+    - title: ブートメディアの交換ワークフロー
       url: "/fas-70-90/bootmedia-replace-workflow.html"
     - title: 要件を確認する
       url: "/fas-70-90/bootmedia-replace-requirements.html"
@@ -46,7 +46,7 @@ entries:
   - title: コントローラ
     pdf-filename: FAS70およびFAS90コントローラモジュール
     entries:
-    - title: コントローラ交換のクイックスタート
+    - title: コントローラの交換ワークフロー
       url: "/fas-70-90/controller-replace-workflow.html"
     - title: 要件および考慮事項
       url: "/fas-70-90/controller-replace-requirements.html"

@@ -2,15 +2,17 @@
 permalink: c30-60/bootmedia-replace-requirements.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, replace the boot media 
-summary: ブートメディアの交換要件について説明します。 
+summary: AFF C30またはAFF C60システムのブートメディアを交換する前に、交換が成功するために必要な要件を満たしていることを確認してください。具体的には、適切な量のストレージを搭載したUSBフラッシュドライブがあること、および正しい交換用ブートデバイスがあることを確認します。 
 ---
-= ブートメディアの要件- AFF C30およびAFF C60
+= ブートメディアの交換要件- AFF C30とAFF C60
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+AFF C30またはAFF C60システムのブートメディアを交換する前に、交換が成功するために必要な要件を満たしていることを確認してください。具体的には、適切な量のストレージを搭載したUSBフラッシュドライブがあること、および正しい交換用ブートデバイスがあることを確認します。
+
 ブートメディアを交換する前に、次の要件と考慮事項を確認してください。
 
 
@@ -40,3 +42,6 @@ summary: ブートメディアの交換要件について説明します。
 無効にするには、コマンドを入力し `system location-led _off_`ます。LEDが点灯しているか消灯しているかが不明な場合は、コマンドを入力してLEDの状態を確認できます `system location-led show`。
 
 
+
+.次の手順
+ブートメディアの交換要件を確認したら、を実行する必要がありlink:bootmedia-encryption-preshutdown-checks.html["暗号化キーのサポートとブートメディアのステータスを確認する"]ます。

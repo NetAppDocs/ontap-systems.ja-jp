@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff 70, 90, replace the chassis workflow 
 summary: AFF A70またはAFF A90ストレージシステムのシャーシの交換を開始するには、交換要件の確認、コントローラのシャットダウン、シャーシの取り外しと交換、システム動作の確認を行います。 
 ---
-= シャーシ交換のクイックスタート- AFF A70およびAFF A90
+= シャーシの交換ワークフロー- AFF A70とAFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

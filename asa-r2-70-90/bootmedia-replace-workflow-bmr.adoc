@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, a90, replace the boot media 
 summary: ASA A70およびASA A90ストレージシステムのブートメディアの交換を開始します。まず、交換要件を確認し、コントローラのシャットダウン、ブートメディアの交換、ブートメディアへのイメージのリストア、システム機能の確認を行います。 
 ---
-= ブートメディアの交換のクイックスタート- ASA A70とASA A90
+= ブートメディアの交換ワークフロー- ASA A70とASA A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

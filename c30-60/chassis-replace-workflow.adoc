@@ -2,7 +2,7 @@
 permalink: c30-60/chassis-replace-workflow.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, replace the chassis workflow 
-summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
+summary: AFF C30またはAFF C60ストレージシステムのシャーシの交換を開始するには、交換要件の確認、コントローラのシャットダウン、シャーシの取り外しと交換、システム動作の確認を行います。 
 ---
 = シャーシの交換ワークフロー- AFF C30とAFF C60
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 障害が発生したコンポーネントは、プロバイダから�
 
 
 [role="lead"]
-シャーシを交換するには、次のワークフロー手順に従ってください。
+AFF C30またはAFF C60ストレージシステムのシャーシの交換を開始するには、交換要件の確認、コントローラのシャットダウン、シャーシの取り外しと交換、システム動作の確認を行います。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:chassis-replace-requirements.html["シャーシの交換要件の確認"]
 [role="quick-margin-para"]

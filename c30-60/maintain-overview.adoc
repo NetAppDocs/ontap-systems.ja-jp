@@ -2,7 +2,7 @@
 permalink: c30-60/maintain-overview.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, maintenance, maintenance, repairing a20 aff a30 aff a50, replace a20 aff a30 aff a50 components 
-summary: AFF C30およびAFF C60ハードウェアのメンテナンス 
+summary: AFF C30またはAFF C60ストレージシステムのハードウェアを保守して、長期的な信頼性と最適なパフォーマンスを確保します。ダウンタイムやデータ損失の防止に役立つため、障害のあるコンポーネントの交換などの定期的なメンテナンスタスクを実行します。 
 ---
 = ハードウェアメンテナンスの概要- AFF C30およびAFF C60
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: AFF C30およびAFF C60ハードウェアのメンテナンス
 
 
 [role="lead"]
-ハードウェアのメンテナンス手順が必要になる場合があります。このセクションでは、AFF C30およびAFF C60システムコンポーネントのメンテナンスに固有の手順について説明します。
+AFF C30またはAFF C60ストレージシステムのハードウェアを保守して、長期的な信頼性と最適なパフォーマンスを確保します。ダウンタイムやデータ損失の防止に役立つため、障害のあるコンポーネントの交換などの定期的なメンテナンスタスクを実行します。
 
 このセクションの手順は、AFF C30またはAFF C60ストレージシステムがONTAP環境にすでにストレージノードとして導入されていることを前提としています。
 
