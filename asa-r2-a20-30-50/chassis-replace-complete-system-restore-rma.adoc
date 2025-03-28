@@ -2,7 +2,7 @@
 permalink: asa-r2-a20-30-50/chassis-replace-complete-system-restore-rma.html 
 sidebar: sidebar 
 keywords: asa a20, asa a30, asa a50, verify and set HA state, complete the replacement process 
-summary: キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。 
+summary: シャーシのHA状態を確認し、障害が発生したパーツをNetAppに戻して、ASA A20、ASA A30、およびASA A50シャーシの交換手順の最後の手順を完了します。 
 ---
 = シャーシ交換後の処理- ASA A20、ASA A30、およびASA A50
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: キットに付属のRMA指示書に従って、シャーシのHA状態
 
 
 [role="lead"]
-キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。
+シャーシのHA状態を確認し、障害が発生したパーツをNetAppに戻して、ASA A20、ASA A30、およびASA A50シャーシの交換手順の最後の手順を完了します。
 
 
 

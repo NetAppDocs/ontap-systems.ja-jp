@@ -2,7 +2,7 @@
 permalink: asa-r2-a20-30-50/chassis-replace-workflow.html 
 sidebar: sidebar 
 keywords: asa a20, asa a30, asa a50, replace the chassis workflow 
-summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
+summary: ASA A20、ASA A30、またはASA A50ストレージシステムのシャーシの交換を開始するには、交換要件の確認、コントローラのシャットダウン、シャーシの交換、およびシステム動作の確認を行います。 
 ---
 = シャーシの交換ワークフロー- ASA A20、ASA A30、およびASA A50
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 障害が発生したコンポーネントは、プロバイダから�
 
 
 [role="lead"]
-シャーシを交換するには、次のワークフロー手順に従ってください。
+ASA A20、ASA A30、またはASA A50ストレージシステムのシャーシの交換を開始するには、交換要件の確認、コントローラのシャットダウン、シャーシの交換、およびシステム動作の確認を行います。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:chassis-replace-requirements.html["シャーシの交換要件の確認"]
 [role="quick-margin-para"]

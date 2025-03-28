@@ -1,7 +1,6 @@
 ---
 section: asa-r2-a70-90-maintain
 title: ASA A70およびASA A90システム
-pdf-filename: ASA A70およびASA A90のメンテナンス
 entries:
 - title: メンテナンスの概要
   url: "/asa-r2-70-90/maintain-overview.html"

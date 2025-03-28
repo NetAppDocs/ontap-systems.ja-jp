@@ -123,7 +123,7 @@ X66032A （ 112-00437 ）、 2m
 
 X66033A (112-00438) 、 3m
  a| 
-image::../media/oie_cable_fiber_lc_connector.png[OIE ケーブルファイバ LC コネクタ]
+image::../media/oie_cable_fiber_lc_connector.png[LC光コネクタ]
  a| 
 FC 光ネットワーク
 
@@ -151,7 +151,7 @@ X66032A （ 112-00437 ）、 2m
 
 X66033A (112-00438) 、 3m
  a| 
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIEケーブルミニSAS HDからミニSAS HD]
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini SASコネクタ]
  a| 
 ストレージ
 
@@ -162,7 +162,7 @@ Micro-USB コンソールケーブル
  a| 
 該当なし
  a| 
-image::../media/oie_cable_micro_usb.pngMicro USBコネクタ]
+image::../media/oie_cable_micro_usb.png[マイクロUSBコネクタ]
  a| 
 Windows または Mac 以外のラップトップ / コンソールでソフトウェアをセットアップする際のコンソール接続
 
@@ -242,7 +242,7 @@ image::../media/drw_9500_tnsc_network_cabling.svg[DRW 9500 TNSCネットワー�
 
 
  a| 
-image::../media/ icon_square_1_green.png
+image::../media/icon_square_1_green.png[吹き出しアイコン1]
  a| 
 クラスタインターコネクトポートをケーブル接続します。
 
@@ -255,11 +255,11 @@ image::../media/oie_cable100_gbe_qsfp28.png[100GbE QSFPコネクタ]
 
 
  a| 
-image::../media/icon_square_2_yellow.png[吹き出しアイコン2]
+image::../media/icon_square_2_purple.png[吹き出しアイコン2]
  a| 
 コントローラ管理（レンチマーク）ポートをケーブル接続します。
 
-image::../media/ oie_cable_rj45.png
+image::../media/oie_cable_rj45.png[RJ-45コネクタ]
 
 
 
@@ -281,7 +281,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[100GbE QSFPコネクタ]
 
 
  a| 
-image::../media/ icon_square_4_red.png
+image::../media/icon_square_4_red.png[吹き出しアイコン4]
  a| 
 25GbEケーブル接続：
 
@@ -292,10 +292,12 @@ image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP銅線コネクタ]
 
 
  a| 
+image::../media/icon_square_5_grey.png[吹き出しアイコン4]
+ a| 
 ** ケーブルをケーブルマネジメントアームにストラップで固定します（図はなし）。
 ** 電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。PSU 1と3はA側のすべてのコンポーネントに電力を供給し、PSU 2とPSU 4はB側のすべてのコンポーネントに電力を供給します。
 
- a| 
+
 image::../media/oie_cable_power.png[電源ケーブル]
 
 image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[テンケンソオス]
@@ -345,7 +347,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[100GbE QSFPコネクタ]
 
 
  a| 
-image::../media/icon_square_2_yellow.png[吹き出しアイコン2]
+image::../media/icon_square_2_purple.png[吹き出しアイコン2]
  a| 
 コントローラ管理（レンチマーク）ポートをケーブル接続します。
 
@@ -377,15 +379,17 @@ image::../media/icon_square_4_red.png[吹き出しアイコン4]
 
 スロットA5とB5（5a、5b、5c、5d）およびスロットA7とB7（7a、7b、7c、7d）のポートを25GbEネットワークスイッチにケーブル接続します。
 
-image::../media/ oie_cable_sfp_gbe_copper.png
+image::../media/oie_cable_sfp_gbe_copper.png[100GbE銅線コネクタ]
 
 
 
+ a| 
+image::../media/icon_square_4_red.png[吹き出しアイコン4]
  a| 
 ** ケーブルをケーブルマネジメントアームにストラップで固定します（図はなし）。
 ** 電源ケーブルをPSUに接続し、別の電源に接続します（図では省略）。PSU 1と3はA側のすべてのコンポーネントに電力を供給し、PSU 2とPSU 4はB側のすべてのコンポーネントに電力を供給します。
 
- a| 
+
 image::../media/oie_cable_power.png[電源ケーブル]
 
 image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[テンケンソオス]
@@ -434,20 +438,31 @@ image::../media/icon_square_1_blue.png[アイコン正方形1青]
  a| 
 図を参照しながら、ドライブシェルフスタック1をコントローラに接続します。
 
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIEケーブルミニSAS HDからミニSAS HD]
+* Mini-SASケーブル*
 
-Mini-SASケーブル
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIEケーブルミニSAS HDからミニSAS HD]
 
 
 
  a| 
 image::../media/icon_square_2_yellow.png[吹き出しアイコン2]
  a| 
-図を参照しながら、ドライブシェルフスタック2をコントローラに接続します。
+図を参照しながら、スタック2内のドライブシェルフを相互に接続します。
+
+* Mini-SASケーブル*
 
 image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIEケーブルミニSAS HDからミニSAS HD]
 
-Mini-SASケーブル
+
+
+ a| 
+image::../media/icon_square_3_tourquoise.png[吹き出しアイコン3]
+ a| 
+図を参照しながら、ドライブシェルフスタック2をコントローラに接続します。
+
+* Mini-SASケーブル*
+
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIEケーブルミニSAS HDからミニSAS HD]
 
 |===
 
@@ -540,12 +555,11 @@ image::../media/dwr_laptop_to_switch_only.svg[DWR ラップトップをスイッ
 
 . 検出する ONTAP アイコンを選択します。
 +
-image::../media/drw_autodiscovery_controler_select.svg[DRW 自動検出コントローラ選択]
+image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[DRW自動検出コントローラSELECT IEOPS 1849]
 
 +
 .. エクスプローラを開きます。
-.. 左側のペインで、 [Network] ( ネットワーク ) をクリックします。
-.. 右クリックして、更新を選択します。
+.. 左側のペインで[Network]をクリックし、右クリックして[Refresh]を選択します。
 .. いずれかの ONTAP アイコンをダブルクリックし、画面に表示された証明書を受け入れます。
 +
 

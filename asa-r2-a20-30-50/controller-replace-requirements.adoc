@@ -2,16 +2,18 @@
 permalink: asa-r2-a20-30-50/controller-replace-requirements.html 
 sidebar: sidebar 
 keywords: asa a20, asa a30, asa a50, prerequisite, replace the controller module 
-summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。 
+summary: ASA A20、ASA A30、またはASA A50システムのコントローラを交換する前に、交換が成功するために必要な要件を満たしていることを確認してください。具体的には、システムの他のすべてのコンポーネントが正常に動作していること、正しい交換用コントローラがあることの確認、コントローラのコンソール出力のテキストログファイルへの保存が含まれます。 
 ---
-= コントローラの交換要件- ASA A20、ASA A30、およびASA A50
+= コントローラの交換要件- ASA A20、ASA A30、ASA A50
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-コントローラの交換手順に関する要件と考慮事項を確認しておく必要があります。
+ASA A20、ASA A30、またはASA A50システムのコントローラを交換する前に、交換が成功するために必要な要件を満たしていることを確認してください。具体的には、システムの他のすべてのコンポーネントが正常に動作していること、正しい交換用コントローラがあることの確認、コントローラのコンソール出力のテキストログファイルへの保存が含まれます。
+
+コントローラの交換手順に関する要件と考慮事項を確認します。
 
 
 
@@ -46,3 +48,6 @@ summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペ�
 無効にするには、コマンドを入力し `system location-led _off_`ます。LEDが点灯しているか消灯しているかが不明な場合は、コマンドを入力してLEDの状態を確認できます `system location-led show`。
 
 
+
+.次の手順
+ASA A20、ASA A30、またはASA A50コントローラの交換要件を確認したら、を行う必要がありますlink:controller-replace-shutdown.html["障害のあるコントローラをシャットダウン"]。

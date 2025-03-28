@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: AFF A90, AFF A70, replace io module 
 summary: AFF A70またはAFF A90ストレージシステム内の障害が発生したI/Oモジュールは、同じタイプのI/Oモジュールに交換することも、別の種類のI/Oモジュールに交換することもできます。空きスロットのあるシステムにI/Oモジュールを追加することもできます。 
 ---
-= I/Oモジュールの追加と交換- AFF A70 and AFF A90の概要
+= I/Oモジュールの追加と交換の概要- AFF A70 and AFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

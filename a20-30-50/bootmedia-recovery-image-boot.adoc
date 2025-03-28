@@ -10,7 +10,7 @@ summary: ONTAP イメージを USB ドライブからブートし、ファイル
 :imagesdir: ../media/
 
 
-[role="lead lead"]
+[role="lead"]
 AFF A20、AFF A30、またはAFF A50システムに新しいブートメディアデバイスを取り付けたら、リカバリイメージをUSBドライブからブートし、パートナーノードから設定をリストアできます。
 
 .手順

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, boot the recovery image 
 summary: 自動ブートリカバリプロセスを使用して、パートナーコントローラからブートメディア上のイメージをリストアできます。 
 ---
-= ONTAPイメージの復元（ASA A20、ASA A30、およびASA A50）
+= ブートメディア（ASA A20、ASA A30、およびASA A50）にONTAPイメージをリストアします。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

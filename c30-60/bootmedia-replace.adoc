@@ -2,7 +2,7 @@
 permalink: c30-60/bootmedia-replace.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, replace the boot media 
-summary: ブートメディアを交換する前に、コントローラモジュールのライザー 3 を取り外して障害が発生したブートメディアの場所を確認する必要があります。 
+summary: AFF C30またはAFF C60システム内のブートメディアには、重要なファームウェアおよび設定データが格納されます。交換プロセスでは、コントローラモジュールを取り外し、障害のあるブートメディアを取り外し、交換用ブートメディアを取り付けてから、ONTAPイメージを交換用ブートメディアに転送します。 
 ---
 = ブートメディアの交換- AFF C30とAFF C60
 :allow-uri-read: 

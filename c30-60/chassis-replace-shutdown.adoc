@@ -2,7 +2,7 @@
 permalink: c30-60/chassis-replace-shutdown.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, shutdown the controllers 
-summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
+summary: AFF C30またはAFF C60ストレージシステムのコントローラをシャットダウンして、データ損失を防ぎ、シャーシの交換時にシステムの安定性を確保します。 
 ---
 = コントローラのシャットダウン- AFF C30 and AFF C60
 :allow-uri-read: 

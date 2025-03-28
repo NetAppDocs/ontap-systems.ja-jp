@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: AFF C80, replace io module 
 summary: AFF C80ストレージシステム内の障害が発生したI/Oモジュールは、同じタイプのI/Oモジュールに交換することも、別の種類のI/Oモジュールに交換することもできます。空きスロットのあるシステムにI/Oモジュールを追加することもできます。 
 ---
-= I/Oモジュールの追加と交換- AFF C80の概要
+= I/Oモジュールの追加と交換の概要- AFF C80
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

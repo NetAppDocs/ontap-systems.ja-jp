@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, replace io module 
 summary: FAS70またはFAS90システムでは、I/Oモジュールの拡張や交換が柔軟に行えるため、ネットワーク接続性とパフォーマンスが向上します。I/Oモジュールの追加または交換は、ネットワーク機能をアップグレードする場合や、障害が発生したモジュールに対処する場合に不可欠です。 
 ---
-= I/Oモジュールの追加と交換- FAS70およびFAS90
+= I/Oモジュールの追加と交換の概要- FAS70およびFAS90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
