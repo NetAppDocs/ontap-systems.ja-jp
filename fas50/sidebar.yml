@@ -1,0 +1,96 @@
+---
+section: fas50
+title: FAS50システム
+entries:
+- title: 設置とセットアップ
+  pdf-filename: FAS50のインストールとセットアップ
+  entries:
+  - title: インストールワークフロー
+    url: "/fas50/install-overview.html"
+  - title: 要件を確認する
+    url: "/fas50/install-requirements.html"
+  - title: インストールの準備
+    url: "/fas50/install-prepare.html"
+  - title: ハードウェアを設置
+    url: "/fas50/install-hardware.html"
+  - title: ハードウェアのケーブル接続
+    url: "/fas50/install-cable.html"
+  - title: システムの電源を入れる
+    url: "/fas50/install-power-hardware.html"
+  - title: システムのセットアップを完了します
+    url: "/fas50/install-complete.html"
+- title: メンテナンス
+  pdf-filename: FAS50の保守点検
+  entries:
+  - title: メンテナンスの概要
+    url: "/fas50/maintain-overview.html"
+  - title: ブートメディア
+    pdf-filename: FAS50ブートメディア
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/fas50/bootmedia-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/fas50/bootmedia-replace-requirements.html"
+    - title: 暗号化キーの確認
+      url: "/fas50/bootmedia-encryption-preshutdown-checks.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/fas50/bootmedia-shutdown.html"
+    - title: ブートメディアを交換します
+      url: "/fas50/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/fas50/bootmedia-recovery-image-boot.html"
+    - title: アンコウカノ
+      url: "/fas50/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/fas50/bootmedia-complete-rma.html"
+  - title: キャッシングモジュール
+    url: "/fas50/caching-module-hot-swap.html"
+  - title: シャーシ
+    pdf-filename: FAS50シャーシ
+    entries:
+    - title: シャーシの交換ワークフロー
+      url: "/fas50/chassis-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/fas50/chassis-replace-requirements.html"
+    - title: コントローラのシャットダウン
+      url: "/fas50/chassis-replace-shutdown.html"
+    - title: シャーシの交換
+      url: "/fas50/chassis-replace-move-hardware.html"
+    - title: シャーシ交換後の処理
+      url: "/fas50/chassis-replace-complete-system-restore-rma.html"
+  - title: コントローラ
+    pdf-filename: FAS50コントローラモジュール
+    entries:
+    - title: コントローラの交換ワークフロー
+      url: "/fas50/controller-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/fas50/controller-replace-requirements.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/fas50/controller-replace-shutdown.html"
+    - title: コントローラを交換してください
+      url: "/fas50/controller-replace-move-hardware.html"
+    - title: システム設定を復元します
+      url: "/fas50/controller-replace-system-config-restore-and-verify.html"
+    - title: コントローラをギブバック
+      url: "/fas50/controller-replace-recable-reassign-disks.html"
+    - title: コントローラ交換後の処理
+      url: "/fas50/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/fas50/dimm-replace.html"
+  - title: ファン
+    url: "/fas50/fan-replace.html"
+  - title: I/O モジュール
+    pdf-filename: FAS50 I/Oモジュール
+    entries:
+    - title: I/Oモジュールの概要
+      url: "/fas50/io-module-overview.html"
+    - title: I/O モジュールを追加します
+      url: "/fas50/io-module-add.html"
+    - title: I/Oモジュールの交換
+      url: "/fas50/io-module-replace.html"
+  - title: NVハツテリ
+    url: "/fas50/nvdimm-battery-replace.html"
+  - title: 電源装置
+    url: "/fas50/power-supply-replace.html"
+  - title: リアルタイムクロックバッテリ
+    url: "/fas50/rtc-battery-replace.html"

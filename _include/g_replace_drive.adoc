@@ -16,7 +16,7 @@ ONTAP のドキュメントには、 SED の交換前と交換後に実行する
 +
 https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["CLI での NetApp Encryption の概要"^]
 
-* ストレージシステムの他のすべてのコンポーネントが正常に動作している必要があります。正常に動作していない場合は、この手順を続行する前にににアクセスする必要が https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"]あります。
+* ストレージシステムの他のすべてのコンポーネントが正常に動作している必要があります。正常に動作していない場合は、この手順を続行する前にににお問い合わせください https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"]。
 * 取り外すドライブで障害が発生していることを確認します。
 +
 「 storage disk show -broken 」コマンドを実行して、ドライブが障害状態であることを確認できます。障害が発生したドライブが障害ドライブのリストに表示されます。表示されない場合は、少し待ってからもう一度コマンドを実行してください。

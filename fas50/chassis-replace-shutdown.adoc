@@ -1,0 +1,71 @@
+---
+permalink: fas50/chassis-replace-shutdown.html 
+sidebar: sidebar 
+keywords: fas50, shutdown the controllers 
+summary: FAS50ストレージ・システムのコントローラをシャットダウンして、データ損失を防ぎ、シャーシの交換時にシステムの安定性を確保します。 
+---
+= コントローラのシャットダウン- FAS50
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+FAS50ストレージ・システムのコントローラをシャットダウンして、データ損失を防ぎ、シャーシの交換時にシステムの安定性を確保します。
+
+この手順は、2ノード構成のシステムが対象です。クラスタにサービスを提供する際の正常なシャットダウンの詳細については、を参照してください https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage["ストレージシステムの正常なシャットダウンと電源投入解決ガイド- NetAppナレッジベース"]。
+
+.作業を開始する前に
+* 必要な権限とクレデンシャルがあることを確認します。
++
+** ONTAP のローカル管理者のクレデンシャル。
+** 各コントローラのBMCへのアクセス性。
+
+
+* 交換に必要な工具と機器が揃っていることを確認します。
+* シャットダウン前のベストプラクティスは次のとおりです。
++
+** 追加を実行します https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["システムの健全性チェック"]。
+** ONTAP をシステムの推奨リリースにアップグレードします。
+** いずれかを解決します https://activeiq.netapp.com/["Active IQ ウェルネスアラートとリスク"]。システムコンポーネントのLEDなど、現在システムに発生している障害をメモします。
+
+
+
+
+.手順
+. SSHを使用してクラスタにログインするか、クラスタ内の任意のノードからローカルのコンソールケーブルとラップトップ/コンソールを使用してログインします。
+. すべてのクライアント/ホストからネットアップシステム上のデータへのアクセスを停止します。
+. 外部バックアップジョブを一時停止します。
+. AutoSupportが有効になっている場合は、ケースの作成を抑制し、システムをオフラインにする期間を指定します。
++
+`system node autosupport invoke -node * -type all -message "MAINT=2h Replace chassis"`
+
+. すべてのクラスタノードのSP / BMCアドレスを特定します。
++
+`system service-processor show -node * -fields address`
+
+. クラスタシェルを終了します。
++
+`exit`
+
+. 前の手順の出力に表示されたいずれかのノードのIPアドレスを使用してSSH経由でSP / BMCにログインし、進捗状況を監視します。
++
+コンソール/ラップトップを使用している場合は、同じクラスタ管理者のクレデンシャルを使用してコントローラにログインします。
+
+. 障害のあるシャーシにある2つのノードを停止します。
++
+`system node halt -node <node1>,<node2> -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`
+
++
+
+NOTE: StrictSyncモードで動作するSnapMirror同期を使用するクラスタの場合： `system node halt -node <node1>,<node2>  -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
+
+. 次のメッセージが表示されたら、クラスタ内の各コントローラに「* y *」と入力します。
++
+`Warning: Are you sure you want to halt node _<node_name>_? {y|n}:`
+
+. 各コントローラが停止するまで待ち、LOADERプロンプトを表示します。
+
+
+.次の手順
+コントローラをシャットダウンしたら、を実行する必要がありlink:chassis-replace-move-hardware.html["シャーシを交換する"]ます。
