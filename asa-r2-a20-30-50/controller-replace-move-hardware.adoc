@@ -629,4 +629,4 @@ DC PSU
 
 
 .次の手順
-障害のあるASA A20、ASA A30、またはASA A50コントローラを交換したら、交換する必要がありますlink:controller-replace-system-config-restore-and-verify.html["システム設定の復元"]。
+障害のあるコントローラを交換したら、を行う必要がありlink:controller-replace-system-config-restore-and-verify.html["システム設定の復元"]ます。

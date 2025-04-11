@@ -15,7 +15,7 @@
 .オプション1：ONTAP 9 16.0以前
 --
 .. 障害のあるコントローラで、 `Y` `Do you want to restore the backup configuration now?`
-.. 障害コントローラで、_/etc/ssh/ssh_host_ECDSA_KEY_を上書きするかどうかを確認するメッセージが表示されたらと入力し `Y`ます。
+.. 障害コントローラでプロンプトが表示されたら、キーを押し `Y`て_/etc/ssh/ssh_host_ECDSA_KEY_を上書きします。
 .. 正常なパートナーコントローラで、障害コントローラをadvanced権限レベルに設定します。 `set -privilege advanced`
 .. 正常なパートナーコントローラで、restore backupコマンドを実行します `system node restore-backup -node local -target-address impaired_node_IP_address`。
 +

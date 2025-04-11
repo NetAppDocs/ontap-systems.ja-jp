@@ -26,9 +26,9 @@ NOTE: personality mismatch_customer supportと表示された場合
 +
 HA 状態はすべてのコンポーネントで同じになっているはずです。
 
-. 表示されたコントローラモジュールのシステム状態がシステム構成と一致しない場合は、コントローラモジュールの HA 状態を「 ha-config modify controller ha-state 」に設定します
+. 表示されたコントローラモジュールのシステム状態がシステム構成と一致しない場合は、コントローラモジュールの状態を設定し `HA`ます。 `ha-config modify controller ha`
 +
-hA-state には、次のいずれかの値を指定できます。
+HAの状態には次のいずれかの値を指定できます。
 
 +
 ** 「 HA 」

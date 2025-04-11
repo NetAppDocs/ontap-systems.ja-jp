@@ -40,7 +40,7 @@
 
 . ブートメディアのインストールリカバリプロセスを監視します。
 +
-プロセスが完了し、メッセージが表示されます `Installation complete.`。
+プロセスが完了し、メッセージが表示されます `Installation complete`。
 
 . 暗号化と暗号化の種類がチェックされ、2つのメッセージのいずれかが表示されます。表示されるメッセージに応じて、次のいずれかの操作を実行します。
 +
@@ -335,7 +335,10 @@ kmip2_client: Successfully imported the keys from external key server: xxx.xxx.x
 Successfully recovered keymanager secrets.
 ....
 =====
-*** キーが正常にリストアされないと、システムは停止し、キーをリストアできなかったことを示します。エラーと警告メッセージが表示されます。と入力してリカバリプロセスを再実行し `boot_recovery -partner`ます。
+*** キーが正常にリストアされないと、システムは停止し、キーをリストアできなかったことを示します。エラーと警告メッセージが表示されます。リカバリプロセスを再実行します。
++
+`boot_recovery -partner`
+
 +
 .キーリカバリのエラーおよび警告メッセージの例を示します。
 [%collapsible]
@@ -365,7 +368,7 @@ LOADER-B>
 .. ノードがリブートしたら、システムがオンラインに戻って動作可能になったことを確認して、ブートメディアのリカバリが成功したことを確認します。
 .. コントローラのストレージをギブバックして、コントローラを通常動作に戻します。
 +
-`storage failover giveback -ofnode _impaired_node_name_`です。
+「 storage failover giveback -ofnode _impaired_node_name _
 
 
 
@@ -375,10 +378,10 @@ LOADER-B>
 
 . 自動ギブバックを無効にした場合は、再度有効にします。
 +
-`storage failover modify -node local -auto-giveback true`です。
+`storage failover modify -node local -auto-giveback true`
 
 . AutoSupportが有効になっている場合は、ケースの自動作成をリストアします。
 +
-`system node autosupport invoke -node * -type all -message MAINT=END`です。
+`system node autosupport invoke -node * -type all -message MAINT=END`
 
 

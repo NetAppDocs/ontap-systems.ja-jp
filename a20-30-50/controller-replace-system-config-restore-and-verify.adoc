@@ -45,10 +45,10 @@ HA 状態はすべてのコンポーネントで同じになっているはず�
 
 . 表示されたコントローラのシステム状態がストレージシステム構成と一致しない場合は、コントローラの状態を設定し `HA`ます。
 +
-`ha-config modify controller ha-state`
+`ha-config modify controller ha`
 
 +
-hA-state には、次のいずれかの値を指定できます。
+HAの状態には次のいずれかの値を指定できます。
 
 +
 ** 「 HA 」
@@ -81,4 +81,4 @@ hA-state には、次のいずれかの値を指定できます。
 
 
 .次の手順
-AFF A20、AFF A30、またはAFF A50システムのシステム構成を復元して確認したら、を行う必要がありますlink:controller-replace-recable-reassign-disks.html["コントローラをギブバック"]。
+システム構成を復元して確認したら、を実行する必要がありlink:controller-replace-recable-reassign-disks.html["コントローラをギブバック"]ます。

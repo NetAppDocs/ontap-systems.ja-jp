@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, prerequisite, replace the controller module 
 summary: AFF C30またはAFF C60システムのコントローラを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。具体的には、システムの他のすべてのコンポーネントが正常に動作していること、正しい交換用コントローラがあることの確認、コントローラのコンソール出力のテキストログファイルへの保存が含まれます。 
 ---
-= コントローラの交換が必要- AFF C30およびAFF C60
+= コントローラの交換要件- AFF C30およびAFF C60
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -51,4 +51,4 @@ AFF C30またはAFF C60システムのコントローラを交換する前に、
 
 
 .次の手順
-AFF C30またはAFF C60コントローラの交換要件を確認したら、を行う必要がありますlink:controller-replace-shutdown.html["障害のあるコントローラをシャットダウン"]。
+障害のあるコントローラの交換要件を確認したら、を行う必要がありますlink:controller-replace-shutdown.html["障害のあるコントローラをシャットダウン"]。
