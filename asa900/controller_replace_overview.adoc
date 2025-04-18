@@ -17,7 +17,7 @@ summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペ�
 交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。
 
 * すべてのドライブシェルフが適切に動作している必要があります。
-* FlexArray システムの場合や V_StorageAttach ライセンスのあるシステムの場合は、この手順を実行する前に、必要な追加の手順を参照する必要があります。
+* システムにV_StorageAttachライセンスがある場合は、この手順を実行する前に、必要な追加の手順を参照する必要があります。
 * システムが HA ペアに含まれている場合、正常なコントローラが交換するコントローラをテイクオーバーできる必要があります（この手順 では「障害のあるコントローラ」と呼びます）。
 * MetroCluster 構成のシステムの場合は、を参照してください https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["正しいリカバリ手順の選択"] この手順の使用が必要かどうかを判断するには、次の手順を実行
 +

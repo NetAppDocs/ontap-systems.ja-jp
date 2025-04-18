@@ -703,7 +703,6 @@
   <block id="c6f502d8dd8eb8b387d8da2e59e48c95" category="summary">次のビデオでは、 ONTAP 9.2 を実行するシステムのエンドツーエンドのソフトウェア設定を示します。</block>
   <block id="1ab25fd464770ca38598dbf7e3aa872c" category="doc">設置とセットアップのビデオ - AFF A700s</block>
   <block id="0e77f42d7c64a07ce718d60dd8e6bd46" category="inline-link-macro">AFF A700s セットアップビデオ</block>
-  <block id="ad95e5b69f87474809f8228af5e2fbe2" category="paragraph"><block ref="ad95e5b69f87474809f8228af5e2fbe2" category="inline-link-macro-rx"></block></block>
   <block id="d9119345c9a007e36472326a6510319b" category="section-title">手順 2 ： NVRAM カードを移動します</block>
   <block id="63f3a7c41a55885608d548f506cf6e84" category="paragraph">コントローラの交換プロセスの一環として、障害のあるコントローラモジュールのライザー 1 から NVRAM カードを取り外し、交換用コントローラモジュールのライザー 1 にカードを取り付ける必要があります。障害のあるコントローラモジュールから交換用コントローラモジュールに DIMM を移動したあとで、ライザー 1 を交換用コントローラモジュールに再度取り付ける必要があります。</block>
   <block id="1ab810cfbdc8e768a7dd00d6ecd7d645" category="list-text">NVRAM ライザー「ライザー 1 」をコントローラモジュールから取り外します。</block>
@@ -1384,10 +1383,8 @@
   <block id="741c2196cc7abcf971992d4e656da7ea" category="paragraph">この例では、 Node_B_1 が古いノードであり、古いシステム ID は 118073209 です。</block>
   <block id="2aa94dd7242f16ec9126f4d25ad06195" category="list-text">障害ノードの保守モードプロンプトで新しいシステム ID を表示します。「 Disk show</block>
   <block id="761dab2a2eaf4e205d39d0acc4925d17" category="paragraph">この例では、新しいシステム ID は 118065481 です。</block>
-  <block id="73a7440753d817323876d5857eb4a3f7" category="list-text">disk show コマンドで取得したシステム ID 情報を使用して、ディスク所有権（ FAS システムの場合）または LUN 所有権（ FlexArray システムの場合）を再割り当てします。「ディスク再割り当て -s old system ID 」</block>
   <block id="aab7ee705a771085da41cf3f32f1aebe" category="paragraph">上記の例の場合、コマンドは「 Disk reassign -s 118073209 」です</block>
   <block id="1d1227c1811174bd93682bbcc9fdce3c" category="paragraph">続行するかどうかを確認するメッセージが表示されたら、「 Y 」と入力します。</block>
-  <block id="a3437746fcb93fe85bd0d8ade510007d" category="list-text">ディスク（または FlexArray LUN ）が正しく割り当てられていることを確認します。「 Disk show -a 」</block>
   <block id="21d6dd74cdb7e164685f5da4f2e76256" category="paragraph">replacement _node に属するディスクに、 _replacement _node に割り当てられた新しいシステム ID が表示されていることを確認します。次の例では、 system-1 が所有するディスクに、新しいシステム ID 118065481 が表示されています。</block>
   <block id="b06003538a02608d68f5e58756344017" category="list-text">コアダンプが保存されたことを確認します。「 system node run -node _local-node-name_partner savecore 」</block>
   <block id="83d65805f786049104c0e0050c82696b" category="paragraph">コマンド出力に savecore が進行中であることが示された場合は、 savecore が完了してからギブバックを実行します。「 system node run -node _local-node-name_partner savecore -s コマンド」を使用して、 savecore の進行状況を監視できます。 &lt;/info&gt;</block>
@@ -1425,7 +1422,6 @@
   <block id="9f3fe6619f3cc21d2cc057e260c9a3ae" category="doc">障害のあるコントローラ FAS8200 をシャットダウンします</block>
   <block id="2ae25bf6a8aeb42c4073ddba26224b0c" category="summary">部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。</block>
   <block id="061a78fed35fa26d870ae789dd6685b8" category="doc">障害のある部品を NetApp-FAS8200 に戻します</block>
-  <block id="2cbabd3028fd0cb6f4a57144ace2ee33" category="list-text">FlexArray システムの場合や V_StorageAttach ライセンスのあるシステムの場合は、この手順を実行する前に、必要な追加の手順を参照する必要があります。</block>
   <block id="0012bcaadb56ca5543ace124a6a404f9" category="list-text">システムが HA ペアに含まれている場合、正常なノードが交換するノードをテイクオーバーできる必要があります（この手順では「障害ノード」と呼びます）。</block>
   <block id="eceeb845d6027471d1eafcff9c9e0e9e" category="paragraph">手順の指示に従って、ドライブの再割り当てを実行する必要があります。</block>
   <block id="18286caf45baac43fedf94bfeaff35fa" category="list-text">古いコントローラモジュールから新しいコントローラモジュールに移動した PCIe カード、または既存のお客様のサイトのインベントリから追加した PCIe カードが、交換用コントローラモジュールでサポートされている必要があります。</block>
@@ -2851,7 +2847,6 @@
   <block id="c66eef3fd6b2a7fdd9b6e9fbe927aa2f" category="doc">設置とセットアップのビデオ - FAS2600</block>
   <block id="7d529e0ab83dded43342f45ed2a098bd" category="inline-link-macro">AFF FAS2600 のセットアップビデオ</block>
   <block id="5b9bf9643d348558871bac7550eb6bf2" category="inline-link-macro">AFF FAS2600 コントローラの交換に関するビデオをご覧ください</block>
-  <block id="bfc5f4fff0a27940b1f4676800d974c4" category="paragraph"><block ref="bfc5f4fff0a27940b1f4676800d974c4" category="inline-link-macro-rx"></block></block>
   <block id="86b067a1faa816ad3c0a245cc1e409ad" category="section-title">手順 5 ：キャッシングモジュールを移動します</block>
   <block id="f5f4db4cbf741ec589cd881a641a1a02" category="paragraph">コントローラでラベルが M.2 PCIe カードとなっているキャッシングモジュールを交換用コントローラに移動して、特定の手順を実行します。</block>
   <block id="fb2b1a9ce62aa797e37590c1f38945e1" category="doc">ハードウェアを移動して交換します - FAS2600</block>
@@ -2860,7 +2855,6 @@
   <block id="54460a9998b0b0517a52cc21d98c7497" category="paragraph">HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。スタンドアロンシステムでは、 ID をディスクに手動で再割り当てする必要があります。構成に適した手順を使用する必要があります。</block>
   <block id="478fc4fb96b68e7639f1b8b60636da7c" category="doc">NVMEM バッテリを交換します - FAS2600</block>
   <block id="c8ce5afe6808111cafcf57c11a22b941" category="inline-link-macro">AFF FAS2600 NVMEM バッテリの交換に関するビデオ</block>
-  <block id="42eb4da4054bc83a79fd36f832504d55" category="paragraph"><block ref="42eb4da4054bc83a79fd36f832504d55" category="inline-link-macro-rx"></block></block>
   <block id="d2efa0c31f219abbc043377bfd4ffa3b" category="doc">リカバリイメージ - FAS2600 をブートします</block>
   <block id="a102b530af65288511339cf8117713a3" category="doc">コントローラをシャットダウンします - FAS2600</block>
   <block id="a47803b6b6d01b67efcc88a157378c39" category="doc">障害のあるパーツを NetApp-FAS2600 に返却します</block>
@@ -4162,7 +4156,6 @@
   <block id="00a787350c10dda9fec8ed799a0a0d41" category="inline-link">MetroCluster IP 構成をインストールします</block>
   <block id="dd97e64f3163f239256639a3f4314e89" category="paragraph">システムが MetroCluster IP 構成の場合は、を参照してください<block ref="373f2390d7121eb9c57821ab147cf1e7" category="inline-link-rx"></block> 手順</block>
   <block id="320003b122e9ced04801080d4fca8abd" category="list-text"><block ref="320003b122e9ced04801080d4fca8abd" category="inline-link-macro-rx"></block></block>
-  <block id="604b91e7007f6b52b608d188580ff582" category="list-text"><block ref="604b91e7007f6b52b608d188580ff582" category="inline-link-macro-rx"></block></block>
   <block id="cfe676549c53e52dc611f1610a8ef495" category="paragraph">MetroCluster 構成については、次のいずれかを参照してください。</block>
   <block id="b232e9ef89b4f98b36e1c295adeb4a63" category="inline-link">MetroCluster IP 構成をインストール</block>
   <block id="d495410a7f7a2c72ad8aa73f5cdb0372" category="list-text"><block ref="d495410a7f7a2c72ad8aa73f5cdb0372" category="inline-link-rx"></block></block>
@@ -4205,7 +4198,6 @@
   <block id="447072f7ce3f18e54dbea54be9810116" category="list-text">メンテナンス中の HA ペアのノードに「 true 」（イプシロンが設定されている）と表示されている場合は、ノードからイプシロンを削除します。「 cluster modify -node _node_name __ -epsilon false</block>
   <block id="859b2518ddc407ed154103ca5d61902f" category="list-text">別の HA ペアのノードにイプシロンを割り当てます。 cluster modify -node node_name に -epsilon true</block>
   <block id="49ba302fbc53429009e579494e0457be" category="list-text"><block ref="49ba302fbc53429009e579494e0457be" category="inline-link-macro-rx"></block></block>
-  <block id="ddd1a9511bc4cec117e8b939fbe7f2cc" category="list-text"><block ref="ddd1a9511bc4cec117e8b939fbe7f2cc" category="inline-link-macro-rx"></block></block>
   <block id="5ffba9ed2c673f5145fe25996fc2b0dc" category="summary">このセクションでは、 AFF A800 システムの設置手順について詳しく説明します。</block>
   <block id="823b36f7fa4cb798d78af7be2bf8aca7" category="doc">詳細な手順 - AFF A800</block>
   <block id="b0e69a1b113b20966641e48d3d36e788" category="doc">クイックステップ - AFF A800</block>
@@ -4255,10 +4247,6 @@
   <block id="b8657f72d8b4e1ef5c7e2c082690279e" category="list-text"><block ref="b8657f72d8b4e1ef5c7e2c082690279e" category="inline-link-rx"></block></block>
   <block id="4d2e328d055378ef43067726132a9c56" category="list-text"><block ref="4d2e328d055378ef43067726132a9c56" category="inline-link-rx"></block></block>
   <block id="47172f1226f9908865e044955d2f091b" category="paragraph">を使用できます <block ref="cb0390cbe2f3cf678134885ff143b6ba" category="inline-link-macro-rx"></block> ONTAP クラスタを構成する際に必要となるサイト固有の IP アドレスやその他の情報を収集して記録する。</block>
-  <block id="e85e66f99bf70a0cd52615d346aa4f9f" category="paragraph"><block ref="e85e66f99bf70a0cd52615d346aa4f9f" category="inline-link-macro-rx"></block></block>
-  <block id="e3d9e54e0daad2e60e36e8b370fec883" category="paragraph"><block ref="e3d9e54e0daad2e60e36e8b370fec883" category="inline-link-macro-rx"></block></block>
-  <block id="083781fc87756a032121b806b4d18a92" category="paragraph"><block ref="083781fc87756a032121b806b4d18a92" category="inline-link-macro-rx"></block></block>
-  <block id="5f3f6cd3a4d5edc50129f46b603aa9c2" category="paragraph"><block ref="5f3f6cd3a4d5edc50129f46b603aa9c2" category="inline-link-macro-rx"></block></block>
   <block id="e477637685baafe9bbd353f71ef51283" category="paragraph">システムがブートを開始します。初回のブートには最大 8 分かかる場合があります。</block>
   <block id="fe3be7b129e2b9c74abd26381eea72bb" category="cell">タブをバッテリケースからゆっくりと引き出します。* 注意： * 積極的に離れて引き出すと、タブが外れてしまう可能性があります。</block>
   <block id="d61a84f0b033dd225ff9a1af9b0f08a5" category="paragraph">バッテリを持ち上げます。* 注： * バッテリの極の向きをメモしておいてください。</block>
@@ -4297,7 +4285,6 @@
   <block id="055140d300b472c3cf197b316fc1a111" category="doc">システムの復元の完了 - AFF A900</block>
   <block id="8f73eb9fb7acfd413cf2778aacee51b6" category="doc">ビデオの手順 - AFF A900</block>
   <block id="3bc737994532b61e4fad9c84d6dccfc0" category="summary">これは、一般的なネットアップシステムのインストール手順を詳しく説明したものです。</block>
-  <block id="b37eeea92bef8e254a5c7650e7002788" category="doc">詳細な手順 - AFF 900</block>
   <block id="fa3056f29df183b75e177c2b6ee65b45" category="paragraph">この記事では、一般的なネットアップシステムのインストール手順について詳しく説明します。インストール手順の詳細については、この資料を参照してください。</block>
   <block id="8666406295c84e68942a4f6fc1b2cb4e" category="paragraph">にアクセスできる必要があります<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> サイト要件および構成済みシステム上の追加情報の詳細については、を参照してください。</block>
   <block id="efe451bd1c5b374a05e7d5178bb06987" category="inline-link">ONTAP 9 リリースノート</block>
@@ -9901,7 +9888,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="07e9b2c4f45f1b16bcc15da0757a3cab" category="admonition">指示があるまでコントローラをシャーシに完全に挿入しないでください。</block>
   <block id="ef25353e4e6a2996c8c58db66688c4b4" category="list-text">コントローラのリブート時にラップトップがコンソールメッセージを受信できるように、コントローラのコンソールポートとラップトップにコンソールケーブルを接続します。</block>
   <block id="b5286ddd59d2d1bedeafbeaffb7de288" category="list-text">コントローラをシャーシに完全に挿入します。</block>
-  <block id="28b7fea1449f9a616376a90e478d67b0" category="admonition">コントローラは、シャーシに完全に装着されるとすぐにブートを開始します。</block>
   <block id="f34b6cfc50a1739d51d949fcdd369dad" category="list-text">Ctrl+Cキーを押してコントローラのLoaderプロンプトを表示し、自動ブートを中止します。</block>
   <block id="316bb85cd1ab9a7f0cc40325c5827a6d" category="list-text">コントローラの日時を設定します。</block>
   <block id="1e5698196a8490bf6290a21eeb883524" category="paragraph">コントローラのLoaderプロンプトが表示されていることを確認します。</block>
@@ -11911,4 +11897,19 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3034b89fc8e6fc3ae99585d8f1eab80e" category="doc">コントローラの交換要件- FAS50</block>
   <block id="5c15054b184102da84361b1cd1e81384" category="paragraph">FAS50ストレージ・システムにI/Oモジュールを追加して、ネットワーク接続を強化し、システムのデータ・トラフィック処理能力を拡張します。</block>
   <block id="9bb6ca48b5f448262155e3c3811e7d6e" category="paragraph">使用可能なスロットがある場合、またはすべてのスロットに空きがある場合（既存のI/Oモジュールを取り外し、その場所に新しいI/Oモジュールを取り付けて）、FAS50ストレージ・システムにI/Oモジュールを追加できます。</block>
+  <block id="b9aaf4b8305c7a34a4b30da6df50ebc5" category="list-text">disk showコマンドから取得したシステムID情報を使用して、ディスク所有権を再割り当てします（FASシステムの場合）。<block ref="c59d47aa9e91bfb7b5c45feb4846c496" prefix=" " category="inline-code"></block></block>
+  <block id="2dcdf3018c4d483d8c38e450dbdf5944" category="list-text">システムにV_StorageAttachライセンスがある場合は、この手順を実行する前に、必要な追加の手順を参照する必要があります。</block>
+  <block id="1253bf6221482d606a7719ba415d9176" category="admonition">この時点では、他のケーブルや電源コードは接続しないでください。</block>
+  <block id="c69071436bdfe1b2f2edc29969a29980" category="admonition">交換用コントローラは正常なコントローラから給電され、シャーシに完全に装着されるとすぐにブートを開始します。</block>
+  <block id="5cb4dbca31ce772b17987c15a725b52e" category="list-text">ノードを通常動作に戻します。</block>
+  <block id="257315f653a5868c10e8897449aa264f" category="list-text">正常なコントローラのコンソールから自動ギブバックをリストアします。</block>
+  <block id="b9adb77861a7f27800ce914be076df5d" category="list-text"><block ref="b9adb77861a7f27800ce914be076df5d" category="inline-link-macro-rx"></block></block>
+  <block id="ec3558cc556230de3472d8f669055445" category="paragraph"><block ref="ec3558cc556230de3472d8f669055445" category="inline-link-macro-rx"></block></block>
+  <block id="2b1f12b6c48af6da013ad7ca0b3e507d" category="doc">詳細な手順- AFF A900</block>
+  <block id="b8a400661d0d8f4681160e3984f8fe0e" category="paragraph"><block ref="b8a400661d0d8f4681160e3984f8fe0e" category="inline-link-macro-rx"></block></block>
+  <block id="c17ceb181c73449b45e8ac62b23f0788" category="paragraph"><block ref="c17ceb181c73449b45e8ac62b23f0788" category="inline-link-macro-rx"></block></block>
+  <block id="7d3ad47a619f98568e42b3c81d3fc66e" category="paragraph"><block ref="7d3ad47a619f98568e42b3c81d3fc66e" category="inline-link-macro-rx"></block></block>
+  <block id="3f6b8f5ed334d33d55220057f3840983" category="paragraph"><block ref="3f6b8f5ed334d33d55220057f3840983" category="inline-link-macro-rx"></block></block>
+  <block id="13ac941ecf968dc28151bce5851fd7a9" category="paragraph"><block ref="13ac941ecf968dc28151bce5851fd7a9" category="inline-link-macro-rx"></block></block>
+  <block id="f9314d663ff89799d6d255ab7e3ca079" category="paragraph"><block ref="f9314d663ff89799d6d255ab7e3ca079" category="inline-link-macro-rx"></block></block>
 </blocks>

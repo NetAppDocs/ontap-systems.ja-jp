@@ -566,14 +566,14 @@ Local System ID: 118065481
     ...
     ...
 ----
-. disk show コマンドで取得したシステム ID 情報を使用して、ディスク所有権（ FAS システムの場合）または LUN 所有権（ FlexArray システムの場合）を再割り当てします。「ディスク再割り当て -s old system ID 」
+. disk showコマンドから取得したシステムID情報を使用して、ディスク所有権を再割り当てします（FASシステムの場合）。 `disk reassign -s old system ID`
 +
 上記の例の場合、コマンドは「 Disk reassign -s 118073209 」です
 
 +
 続行するかどうかを確認するメッセージが表示されたら、「 Y 」と入力します。
 
-. ディスク（または FlexArray LUN ）が正しく割り当てられていることを確認します。「 Disk show -a 」
+. ディスクが正しく割り当てられていることを確認します。「 Disk show -a 」
 +
 replacement _node に属するディスクに、 _replacement _node に割り当てられた新しいシステム ID が表示されていることを確認します。次の例では、 system-1 が所有するディスクに、新しいシステム ID 118065481 が表示されています。
 
