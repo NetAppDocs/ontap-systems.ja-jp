@@ -17,7 +17,10 @@ AFF A20、AFF A30、またはAFF A50ストレージシステムハードウェ�
 ストレージシステムをネットワークスイッチに接続する方法については、ネットワーク管理者にお問い合わせください。
 
 .このタスクについて
-* 一般的な構成については、クラスタ/ HAおよびホストネットワークのケーブル接続手順を参照してください。具体的なケーブル接続は、ご使用のストレージシステム用に注文したコンポーネントによって異なることに注意してください。設定およびスロットプライオリティの詳細については、を参照してください link:https://hwu.netapp.com["NetApp Hardware Universe の略"^]。
+* 一般的な構成については、クラスタ/ HAおよびホストネットワークのケーブル接続手順を参照してください。
++
+ここに構成が表示されない場合は、にアクセスしlink:https://hwu.netapp.com["NetApp Hardware Universe の略"^]てストレージシステムのケーブル接続に関する包括的な構成とスロット優先度情報を確認してください。
+
 * ケーブル配線図には、ポートにコネクタを挿入する際のケーブルコネクタプルタブの正しい方向（上または下）を示す矢印アイコンがあります。
 +
 コネクタを挿入すると、カチッという音がしてコネクタが所定の位置に収まるはずです。カチッと音がしない場合は、コネクタを取り外し、裏返してもう一度試してください。
@@ -110,7 +113,7 @@ NOTE: クラスタインターコネクトトラフィックとHAトラフィッ
 * 25GbEクラスタ/ HAインターコネクトケーブル*
 
 +
-image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP銅線コネクタ、幅= 100px"]
+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP銅線コネクタ"]
 
 +
 image::../media/drw_isi_a20_switchless_2p_25gbe_cabling_ieops-2018.svg[1つの25GbE IOモジュールを使用したA20スイッチレスクラスタのケーブル配線図]
@@ -200,7 +203,7 @@ NOTE: クラスタインターコネクトトラフィックとHAトラフィッ
 * 10/25GbEクラスタ/ HAインターコネクトケーブル*
 
 +
-image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP銅線コネクタ、幅= 100px"]
+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP銅線コネクタ"]
 
 +
 image:../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg["1つの25GbE IOモジュールを使用したA20スイッチクラスタのケーブル配線図"]
@@ -252,7 +255,7 @@ image::../media/drw_isi_a30-50_host_2p_40-100gbe_2card_cabling_ieops-2014.svg[40
 * 10/25GbEケーブル*
 
 +
-image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP銅線コネクタ、幅= 100px"]
+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP銅線コネクタ"]
 
 +
 image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[40 / 100GbEイーサネットホストネットワークスイッチへのケーブル接続]
@@ -272,7 +275,7 @@ image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[40
 * 64 Gb/秒FCケーブル*
 
 +
-image:../media/oie_cable_sfp_gbe_copper.png["64Gb FCケーブル、幅= 100px"]
+image:../media/oie_cable_sfp_gbe_copper.png["64Gb FCケーブル"]
 
 +
 image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[64Gb FCホストネットワークスイッチへのケーブル接続]

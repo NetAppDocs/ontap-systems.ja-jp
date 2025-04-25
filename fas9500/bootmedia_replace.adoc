@@ -25,10 +25,10 @@ summary: コントローラモジュールを取り外して開き、コント�
 .アニメーション-コントローラモジュールの取り外し
 video::5e029a19-8acc-4fa1-be5d-ae78004b365a[panopto]
 +
-image::../media/drw_9500_remove_PCM_source.svg[DRW 9500がPCMソースを削除します]
+image::../media/drw_9500_remove_PCM_source.svg[コントローラを取り外します]
 
 +
-[cols="20%,80%"]
+[cols="1,2"]
 |===
 
 
@@ -51,11 +51,11 @@ image::../media/icon_round_2.png[番号2]
 
 . コントローラモジュールのふた側を上にして、平らで安定した場所に置きます。カバーの青いボタンを押し、コントローラモジュールの背面にカバーをスライドさせてから、カバーを上に動かしてコントローラモジュールから外します。
 +
-image::../media/drw_9500_PCM_open_source.svg[DRW 9500 PCMオープンソース]
+image::../media/drw_9500_PCM_open_source.svg[コントローラを取り外します]
 
 
 
-[cols="20%,80%"]
+[cols="1,2"]
 |===
 
 
@@ -77,10 +77,10 @@ image::../media/icon_round_1.png[番号1]
 .アニメーション-ブートメディアの交換
 video::16df490c-f94f-498d-bb04-ae78004b3781[panopto]
 +
-image::../media/drw_9500_remove_boot_dev_source.svg[DRW 9500がブート開発ソースを削除します]
+image::../media/drw_9500_remove_boot_dev_source.svg[ブートデバイスを取り外します。]
 
 +
-[cols="20%,90%"]
+[cols="1,2"]
 |===
 
 

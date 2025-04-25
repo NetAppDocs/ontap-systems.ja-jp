@@ -13,6 +13,8 @@ summary: PCIe カードを交換するには、カードからケーブルを外
 [role="lead"]
 ASA A20、ASA A30、またはASA A50システムのI/Oモジュールに障害が発生した場合や、より高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、I/Oモジュールを交換してください。交換プロセスでは、コントローラのシャットダウン、障害が発生したI/Oモジュールの交換、コントローラのリブート、障害が発生したパーツのNetAppへの返却を行います。
 
+障害が発生したI/Oモジュールを交換するには、次の手順を実行します。
+
 .作業を開始する前に
 ストレージシステムの他のすべてのコンポーネントが正常に動作している必要があります。正常に動作していない場合は、この手順を続行する前にににお問い合わせください https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"]。
 
@@ -27,12 +29,6 @@ ASA A20、ASA A30、またはASA A50システムのI/Oモジュールに障害�
 
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
-次のいずれかのオプションを使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
-
-[role="tabbed-block"]
-====
-.オプション 1 ：ほとんどのシステム
---
 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
 
 .このタスクについて
@@ -95,68 +91,6 @@ _-halt true _パラメータを指定すると、Loaderプロンプトが表示�
 |===
 
 
---
-.オプション 2 ：コントローラが MetroCluster に搭載されている
---
-障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
-
-* ノードが 3 つ以上あるクラスタは、クォーラムを構成している必要があります。クラスタがクォーラムを構成していない場合、または正常なコントローラで適格性と正常性についてfalseと表示される場合は、障害のあるコントローラをシャットダウンする前に問題 を修正する必要があります。を参照してください link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["ノードをクラスタと同期します"^]。
-* MetroClusterの設定状態が「設定済み」になっていること、およびノードが有効かつ正常な状態であることを確認しておく必要があります。
-+
-`metrocluster node show`
-
-
-
-.手順
-. AutoSupportが有効になっている場合は、AutoSupportメッセージを呼び出してケースの自動作成を停止します。
-+
-`system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
-
-+
-次のAutoSupport メッセージは、ケースの自動作成を2時間停止します。
-
-+
-`cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
-
-. 正常なコントローラのコンソールから自動ギブバックを無効にします。
-+
-`storage failover modify –node local -auto-giveback false`
-
-. 障害のあるコントローラに LOADER プロンプトを表示します。
-+
-[cols="1,2"]
-|===
-| 障害のあるコントローラの表示 | 作業 
-
-
- a| 
-LOADER プロンプト
- a| 
-次のセクションに進みます。
-
-
-
- a| 
-ギブバックを待っています
- a| 
-Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します
-
-
-
- a| 
-システムプロンプトまたはパスワードプロンプト（システムパスワードの入力）
- a| 
-正常なコントローラから障害コントローラをテイクオーバーまたは停止します。
-
-`storage failover takeover -ofnode _impaired_node_name_ -halt _true_`
-
-_-halt true _パラメータを指定すると、Loaderプロンプトが表示されます。
-
-|===
-
-
---
-====
 
 
 == 手順2：障害が発生したI/Oモジュールを交換する
@@ -210,26 +144,12 @@ image::../media/icon_round_2.png[番号2]
 I/Oモジュールを交換したら、コントローラをリブートする必要があります。
 
 .手順
-. LOADERプロンプトからコントローラをリブートします。
+. Loaderプロンプトからコントローラをリブートします。 `bye`
 +
-`bye`
+障害のあるコントローラをリブートすると、I/Oモジュールおよびその他のコンポーネントも再初期化されます。
 
-+
-
-NOTE: 障害のあるコントローラをリブートすると、I/Oモジュールおよびその他のコンポーネントも再初期化されます。
-
-. ノードを通常動作に戻します。
-+
-「 storage failover giveback -ofnode _impaired_node_name _
-
-. 正常なコントローラのコンソールから自動ギブバックをリストアします。
-+
-`storage failover modify -node local -auto-giveback _true_`
-
-. AutoSupportが有効になっている場合は、ケースの自動作成をリストアします。
-+
-`system node autosupport invoke -node * -type all -message MAINT=END`
-
+. ノードを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
+. 正常なコントローラのコンソールから自動ギブバックをリストアします。 `storage failover modify -node local -auto-giveback _true_`
 
 
 

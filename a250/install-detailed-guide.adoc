@@ -54,7 +54,7 @@ image::../media/drw_ssn_label.png[システムシリアル番号の例]
 +
 [cols="1,2,1,2"]
 |===
-| ケーブルのタイプ | パーツ番号と長さ | コネクタのタイプ | 用途 
+| ケーブルのタイプ | パーツ番号と長さ | コネクタのタイプ | 対象.2+ 
 
 
  a| 
@@ -62,7 +62,7 @@ image::../media/drw_ssn_label.png[システムシリアル番号の例]
  a| 
 X66240A-05 (112-00595) 、 0.5m ；
 
-X66240 2 （ 112-00573 ）、 2m
+X66240-2（112-00573）、2m.3以上
  a| 
 image:../media/oie_cable100_gbe_qsfp28.png["100GbE QSFP28コネクタ"]
  a| 
@@ -76,31 +76,28 @@ X66240A-2 （ 112-00598 ）、 2m ；
 X66240A-5 （ 112-00600 ）、 5m
  a| 
 データ
-
-
-
  a| 
 100GbE ケーブル
  a| 
 X66211-2 （ 112-00574 ）、 2m ；
 
 X66211-5 （ 112-00576 ）、 5m
+
+
+
  a| 
 ストレージ
-
-
-
  a| 
 RJ-45 （注文内容による）
  a| 
 該当なし
  a| 
 image:../media/oie_cable_rj45.png["RJ-45ケーブルコネクタ"]
+
+
+
  a| 
 管理ネットワーク（ BMC およびレンチポート）とイーサネットデータ（ e0a および e0b ）
-
-
-
  a| 
 ファイバチャネル
  a| 
@@ -113,29 +110,27 @@ X66250-15 （ 112-00346 ） 15m ；
 X66250-30 （ 112-00347 ） 30m
  a| 
 image:../media/oie_cable_fc_optical.png["OIEファイバチャネル光ケーブル"]
+
+
+
  a| 
-
-
-
  a| 
 Micro-USB コンソールケーブル
  a| 
 該当なし
  a| 
 image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタ"]
+
+
+
  a| 
 ソフトウェアのセットアップ中のコンソール接続
-
-
-
  a| 
 電源ケーブル
  a| 
 該当なし
  a| 
 image:../media/oie_cable_power.png["電源ケーブル"]
- a| 
-システムの電源をオンにします
 
 |===
 . を確認します link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成ガイド』"^] およびそのガイドに記載されている必要な情報を収集します。
@@ -327,11 +322,11 @@ video::3f92e625-a19c-4d10-9028-ac68017fbf57[panopto]
 .手順
 . コントローラAをシェルフにケーブル接続します。
 +
-image:../media/drw_affa250_1shelf_cabling_a.png["コントローラAのケーブル接続"]
+image:../media/drw_affa250_1shelf_cabling_a.png["コントローラ1のケーブル接続"]
 
 . コントローラBをシェルフにケーブル接続します。
 +
-image:../media/drw_affa250_1shelf_cabling_b.png["コントローラBのケーブル接続"]
+image:../media/drw_affa250_1shelf_cabling_b.png["コントローラ2のケーブル接続"]
 
 
 
@@ -364,12 +359,11 @@ image:../media/drw_affa250_1shelf_cabling_b.png["コントローラBのケーブ
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 . 検出する ONTAP アイコンを選択します。
 +
-image::../media/drw_autodiscovery_controler_select.png[ONTAPアイコンの選択]
+image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[ONTAPアイコンの選択]
 
 +
 .. エクスプローラを開きます。
-.. 左側のペインで、 *Network* をクリックします。
-.. 右クリックし、 * 更新 * を選択します。
+.. 左側のペインで*[ネットワーク]*をクリックし、右クリックして*[更新]*を選択します。
 .. いずれかの ONTAP アイコンをダブルクリックし、画面に表示された証明書を受け入れます。
 +
 

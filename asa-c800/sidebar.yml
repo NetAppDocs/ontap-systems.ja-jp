@@ -27,7 +27,7 @@ entries:
       url: "/asa-c800/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/asa-c800/bootmedia-shutdown.html"
-    - title: ブートイメージを交換します
+    - title: ブートメディアを交換します
       url: "/asa-c800/bootmedia-replace.html"
     - title: ブートイメージを起動します
       url: "/asa-c800/bootmedia-recovery-image-boot.html"

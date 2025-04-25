@@ -28,22 +28,19 @@ summary: ストレージリソースの制御を交換用コントローラに�
 
 
 . 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
-. 自動ギブバックが無効になっていた場合は、再度有効にします。 `storage failover modify -node local -auto-giveback true`
+. 自動ギブバックを無効にした場合は、再度有効にします。 `storage failover modify -node local -auto-giveback _true_`
 . AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
 --
-.OKM暗号化
+.オンボード暗号化（OKM）
 --
 オンボード暗号化をリセットし、コントローラを通常動作に戻します。
 
 .手順
-. Loaderプロンプトで、次のように入力します。
-+
-`boot_ontap maint`
-
+. Loaderプロンプトで、と入力し `boot_ontap maint`ます。
 . LoaderプロンプトからONTAPメニューを起動し `boot_ontap menu`、オプション10を選択します。
-. OKMパスフレーズを入力します。このパスフレーズは、お客様またはにお問い合わせください https://support.netapp.com["ネットアップサポート"]。
+. OKMパスフレーズを入力します。
 +
 
 NOTE: パスフレーズの入力を2回求められます。
@@ -52,28 +49,36 @@ NOTE: パスフレーズの入力を2回求められます。
 . ブートメニューで、「option for normal boot」と入力します `1`。
 . 「_Waiting for giveback_」と表示されたら、<enter>キーを押します。
 . パートナーノードにコンソールケーブルを接続し、としてログインします `admin`。
-. CFOアグリゲート（ルートアグリゲート）のみをギブバックします。 `storage failover giveback -fromnode local -only-cfo-aggregates true`
+. CFOアグリゲート（ルートアグリゲート）のみをギブバックします。 `storage failover giveback -fromnode local -only-cfo-aggregates _true_`
 +
 ** エラーが発生した場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
 
 
 . ギブバックレポートが完了してから5分待って、フェイルオーバーのステータスとギブバックのステータスを確認します（および `storage failover show-giveback`） `storage failover show`。
-. コンソールケーブルを交換用ノードに接続し、 `security key-manager onboard sync`
+. キーの同期とステータスの確認を行います。
++
+.. コンソールケーブルを交換用コントローラに戻します。
+.. 欠落しているキーの同期： `security key-manager onboard sync`
 +
 
 NOTE: クラスタのOKMのクラスタ全体のパスフレーズを入力するように求められます。
 
-. 次のコマンドを使用して、キーのステータスを確認します。 `security key-manager key query -key-type svm-KEK`
+.. キーのステータスを確認します。 `security key-manager key query -restored _false_`
 +
-_restored_columnに_true_以外の値が表示されている場合は、に連絡してください https://support.netapp.com["ネットアップサポート"]。
+適切に同期されている場合、出力には何の結果も表示されません。
+
++
+出力に結果（システムの内部キーテーブルにないキーのキーID）が表示された場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
+
+
 
 . 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
-. 自動ギブバックが無効になっていた場合は、再度有効にします。 `storage failover modify -node local -auto-giveback true`
+. 自動ギブバックを無効にした場合は、再度有効にします。 `storage failover modify -node local -auto-giveback _true_`
 . AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
 --
-.EKM暗号化
+.外部キー管理機能（EKM）
 --
 暗号化をリセットし、コントローラを通常動作に戻します。
 
@@ -104,17 +109,18 @@ NOTE: 問題がある場合はにお問い合わせください https://support.
 
 . 次の情報を入力します。
 +
-** クライアント証明書（client.crt）ファイルの内容。
-** クライアントキー（client.key）ファイルの内容。
-** KMIPサーバCA（CA.pem）ファイルの内容。
-** KMIPサーバのIPアドレス。
-** KMIPサーバのポート。
+** クライアント証明書（client.crt）ファイルの内容
+** クライアントキー（client.key）ファイルの内容
+** KMIPサーバCA（CA.pem）ファイルの内容
+** KMIPサーバのIPアドレス
+** KMIPサーバのポート
 
 
 . システムが処理されると、ブートメニューが表示されます。通常ブートの場合は「1」を選択します。
 . テイクオーバーのステータスを確認します。 `storage failover show`
+. advancedモードに切り替えてから、 `run local partner nosavecore`修復されたノードのコアダンプがすべて保存されたことを確認します。 `set -privilege advanced`
 . 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
-. 自動ギブバックが無効になっていた場合は、再度有効にします。 `storage failover modify -node local -auto-giveback true`
+. 自動ギブバックを無効にした場合は、再度有効にします。 `storage failover modify -node local -auto-giveback _true_`
 . AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 

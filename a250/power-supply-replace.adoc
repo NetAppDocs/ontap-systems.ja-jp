@@ -52,12 +52,15 @@ CAUTION: PSUは短い。コントローラモジュールから突然落下し�
 image::../media/drw_a250_replace_psu.png[電源装置の取り外し]
 
 +
+[cols="1,4"]
 |===
 
 
  a| 
 image:../media/icon_round_1.png["番号1"]
-| PSUの固定ツメ（青） 
+ a| 
+PSUの固定ツメ（青）
+
 
 
  a| 

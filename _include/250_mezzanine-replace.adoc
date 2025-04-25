@@ -95,12 +95,15 @@ NOTE: コントローラモジュールを取り外しにくい場合は、（�
 image::../media/drw_a250_pcm_remove_install.png[ラッチを開く]
 
 +
+[cols="1,4"]
 |===
 
 
  a| 
 image:../media/icon_round_1.png["番号1"]
-| レバー 
+ a| 
+レバー
+
 
 
  a| 
@@ -115,12 +118,15 @@ image:../media/icon_round_2.png["番号2"]
 image::../media/drw_a250_open_controller_module_cover.png[コントローラモジュールのカバーを開く]
 
 +
+[cols="1,4"]
 |===
 
 
  a| 
 image:../media/icon_round_1.png["番号1"]
-| 取り付けネジ 
+ a| 
+取り付けネジ
+
 
 
  a| 
@@ -147,12 +153,15 @@ video::d8e7d4d9-8d28-4be1-809b-ac5b01643676[panopto]
 image::../media/drw_a250_replace_mezz_card.png[メザニンカードの取り外し]
 
 +
+[cols="1,4"]
 |===
 
 
  a| 
 image:../media/icon_round_1.png["番号1"]
-| コントローラモジュール前面のネジを外します。 
+ a| 
+コントローラモジュール前面のネジを外します。
+
 
 
  a| 
@@ -213,12 +222,15 @@ NOTE: メザニンカードのネジを締めるときは力を加えないで�
 image::../media/drw_a250_close_controller_module_cover.png[コントローラモジュールのカバーの閉じ方]
 
 +
+[cols="1,4"]
 |===
 
 
  a| 
 image:../media/icon_round_1.png["番号1"]
-| コントローラモジュールカバー 
+ a| 
+コントローラモジュールカバー
+
 
 
  a| 

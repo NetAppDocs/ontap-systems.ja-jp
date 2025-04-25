@@ -54,7 +54,7 @@ image::../media/drw_ssn_label.png[システムシリアル番号の例]
 次の表に、同梱されているケーブルの種類を示します。表に記載されていないケーブルがある場合は、を参照してください link:https://hwu.netapp.com["NetApp Hardware Universe の略"^] ケーブルの場所を確認し、用途を特定します。
 
 +
-[cols="1,2,1,2"]
+[cols="1,2,2,2"]
 |===
 | コネクタのタイプ | パーツ番号と長さ | ケーブルのタイプ | 用途 
 
@@ -63,28 +63,19 @@ image::../media/drw_ssn_label.png[システムシリアル番号の例]
 100GbE ケーブル
  a| 
 X666211A-05 (112-00595) 、 0.5m
- a| 
-image:../media/oie_cable100_gbe_qsfp28.png["100GbE QSFP28コネクタ"]
- a| 
-HA インターコネクト
-
-
-
- a| 
-X666211A-05 （ 112-00595 ）、 0.5m
 
 X66211-1 （ 112-00573 ）、 1m
- a| 
-クラスタインターコネクトネットワーク
 
-
-
- a| 
-X66211-2 （ 112-00574 ）、 2m ；
+X66211-2（112-00574）、2m
 
 X66211-5 （ 112-00576 ）、 5m
  a| 
-ストレージ / データ
+image:../media/oie_cable100_gbe_qsfp28.png["100GbE QSFP28コネクタ"]
+ a| 
+** HA インターコネクト
+** クラスタインターコネクトネットワーク
+** ストレージ / データ
+
 
 
 
@@ -95,7 +86,10 @@ X6566B-3-R6 （ 112-00300 ）、 3m ；
 
 X6566B-5-R6 （ 112-00301 ）、 5m
  a| 
-データ
+image:../media/oie_cable100_gbe_qsfp28.png["10GbE QSFP28コネクタ"]
+ a| 
+** データ
+
 
 
 
@@ -106,7 +100,10 @@ X66240A-2 （ 112-00598 ）、 2m ；
 
 X66240A-5 （ 112-00600 ）、 5m
  a| 
-データ
+image:../media/oie_cable100_gbe_qsfp28.png["25GbE QSFP28コネクタ"]
+ a| 
+** データ
+
 
 
 
@@ -117,7 +114,8 @@ RJ-45 （注文内容による）
  a| 
 image:../media/oie_cable_rj45.png["RJ-45ケーブルコネクタ"]
  a| 
-管理
+** 管理
+
 
 
 
@@ -134,6 +132,8 @@ X66250-30 （ 112-00347 ） 30m
  a| 
 image:../media/oie_cable_fc_optical.png["OIEファイバチャネル光ケーブル"]
  a| 
+** ネットワーク
+
 
 
 
@@ -144,7 +144,8 @@ Micro-USB コンソールケーブル
  a| 
 image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタ"]
  a| 
-ソフトウェアのセットアップ中のコンソール接続
+** ソフトウェアのセットアップ中のコンソール接続
+
 
 
 
@@ -155,7 +156,7 @@ image:../media/oie_cable_micro_usb.png["マイクロUSBコネクタ"]
  a| 
 image:../media/oie_cable_power.png["電源ケーブル"]
  a| 
-システムの電源をオンにします
+PSUと電源の接続
 
 |===
 . をダウンロードして実行します link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["クラスタ設定ワークシート"^]。
@@ -227,31 +228,33 @@ video::edc42447-f721-4cbe-b080-ab0c0123a139[panopto]
 
 
  a| 
-image:../media/icon_square_1_blue.png["番号1"]
+image:../media/icon_square_1_dark_purple.png["番号1"]
  a| 
 HA インターコネクトポートをケーブル接続します。
 
 ** e0b から e0b
 ** e1b~e1b
+
+
 image:../media/drw_affa800_ha_pair_cabling.png["HAペアノケーブルセツゾク"]
 
 
 
-
  a| 
-image:../media/icon_square_2_yellow.png["番号2"]
+image:../media/icon_square_2_green.png["番号2"]
  a| 
 クラスタインターコネクトポートをケーブル接続します。
 
 ** e0a から e0a
 ** e1a ~ e1a
+
+
 image:../media/drw_affa800_tnsc_clust_cabling.png["2ノードスイッチレスクラスタでのクラスタインターコネクトのケーブル接続"]
 
 
 
-
  a| 
-image:../media/icon_square_3_orange.png["手順 3"]
+image:../media/icon_square_3_purple.png["手順 3"]
  a| 
 管理ポートを管理ネットワークスイッチにケーブル接続します    image:../media/drw_affa800_mgmt_cabling.png["システム背面の管理ポートの場所を示す図"]
 
@@ -302,29 +305,33 @@ video::49e48140-4c5a-4395-a7d7-ab0c0123a10e[panopto]
 
 
  a| 
-image:../media/icon_square_1_blue.png["番号1"]
+image:../media/icon_square_1_dark_purple.png["番号1"]
  a| 
 HA インターコネクトポートをケーブル接続します。
 
 ** e0b から e0b
 ** e1b~e1b
+
+
 image:../media/drw_affa800_ha_pair_cabling.png["HAペアノケーブルセツゾク"]
 
 
 
-
  a| 
-image:../media/icon_square_2_yellow.png["番号2"]
+image:../media/icon_square_2_green.png["番号2"]
  a| 
 クラスタインターコネクトポートを 100GbE クラスタインターコネクトスイッチにケーブル接続します。
+
 ** e0a
-** e1a
+** E1A
+
+
 image:../media/drw_affa800_switched_clust_cabling.png["クラスタインターコネクトのケーブル接続"]
 
 
 
  a| 
-image:../media/icon_square_3_orange.png["手順 3"]
+image:../media/icon_square_3_purple.png["手順 3"]
  a| 
 管理ポートを管理ネットワークスイッチにケーブル接続します    image:../media/drw_affa800_mgmt_cabling.png["システム背面の管理ポートの場所を示す図"]
 
@@ -553,12 +560,11 @@ image::../media/dwr_laptop_to_switch_only.svg[DWR ラップトップをスイッ
 
 . 検出する ONTAP アイコンを選択します。
 +
-image::../media/drw_autodiscovery_controler_select.png[ONTAPアイコンの選択]
+image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[ONTAPアイコンの選択]
 
 +
 .. エクスプローラを開きます。
-.. 左側のペインで、 *Network* をクリックします。
-.. 右クリックし、 * 更新 * を選択します。
+.. 左側のペインで*[ネットワーク]*をクリックし、右クリックして*[更新]*を選択します。
 .. いずれかの ONTAP アイコンをダブルクリックし、画面に表示された証明書を受け入れます。
 +
 

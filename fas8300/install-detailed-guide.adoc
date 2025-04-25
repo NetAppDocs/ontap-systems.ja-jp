@@ -305,12 +305,11 @@ video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 . 検出する ONTAP アイコンを選択します。
 +
-image::../media/drw_autodiscovery_controler_select.png[ONTAPアイコンの選択]
+image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[ONTAPアイコンの選択]
 
 +
 .. エクスプローラを開きます。
-.. 左側のペインで、 [Network] ( ネットワーク ) をクリックします。
-.. 右クリックして、更新を選択します。
+.. 左側のペインで*[ネットワーク]*をクリックし、右クリックして*[更新]*を選択します。
 .. いずれかの ONTAP アイコンをダブルクリックし、画面に表示された証明書を受け入れます。
 +
 

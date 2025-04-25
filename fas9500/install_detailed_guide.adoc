@@ -555,11 +555,11 @@ image::../media/dwr_laptop_to_switch_only.svg[DWR ラップトップをスイッ
 
 . 検出する ONTAP アイコンを選択します。
 +
-image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[DRW自動検出コントローラSELECT IEOPS 1849]
+image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[Windowsエクスプローラでコントローラを検出する方法]
 
 +
 .. エクスプローラを開きます。
-.. 左側のペインで[Network]をクリックし、右クリックして[Refresh]を選択します。
+.. 左側のペインで*[ネットワーク]*をクリックし、右クリックして*[更新]*を選択します。
 .. いずれかの ONTAP アイコンをダブルクリックし、画面に表示された証明書を受け入れます。
 +
 

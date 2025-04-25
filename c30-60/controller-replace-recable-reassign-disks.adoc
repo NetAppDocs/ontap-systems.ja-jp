@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, how to recable the system, reboot the system 
 summary: AFF C30またはAFF C60システムが通常の運用を再開できるように、ストレージリソースの制御を交換用コントローラに戻します。 
 ---
-= コントローラのケーブルを再接続してギブバック- AFF C30とAFF C60
+= コントローラのギブバック- AFF C30およびAFF C60
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,8 +12,6 @@ summary: AFF C30またはAFF C60システムが通常の運用を再開できる
 
 [role="lead"]
 AFF C30またはAFF C60システムが通常の運用を再開できるように、ストレージリソースの制御を交換用コントローラに戻します。ギブバック手順は、システムで使用されている暗号化タイプ（暗号化なし、オンボードキーマネージャ（OKM）暗号化、外部キーマネージャ（EKM）暗号化）によって異なります。
-
-暗号化をリセットし（有効な場合）、コントローラを通常動作に戻します。
 
 [role="tabbed-block"]
 ====

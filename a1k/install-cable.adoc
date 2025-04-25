@@ -54,7 +54,7 @@ NOTE: クラスタインターコネクトトラフィックとHAトラフィッ
 *クラスタ/ HAインターコネクトケーブル*
 
 +
-image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[クラスタHAケーブル]
+image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[クラスタHAケーブル]
 
 +
 image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[2ノードスイッチレスクラスタのケーブル配線図]
@@ -100,7 +100,7 @@ NOTE: クラスタトラフィックおよびHAトラフィックのシステム
 * 100GbEケーブル*
 
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[100Gbイーサネットケーブル]
+image::../media/oie_cable_sfp_gbe_copper.png[100Gbイーサネットケーブル]
 
 +
 image::../media/drw_a1k_network_cabling1_ieops-1649.svg[100Gbイーサネットネットワークへのケーブル接続]
@@ -110,7 +110,7 @@ image::../media/drw_a1k_network_cabling1_ieops-1649.svg[100Gbイーサネット�
 * 10/25GbEホスト*
 
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[10/25Gbイーサネットケーブル]
+image::../media/oie_cable_sfp_gbe_copper.png[10/25Gbイーサネットケーブル]
 
 +
 image::../media/drw_a1k_network_cabling2_ieops-1650.svg[10 / 25Gbイーサネットネットワークへのケーブル接続]
@@ -123,9 +123,9 @@ image::../media/drw_a1k_network_cabling2_ieops-1650.svg[10 / 25Gbイーサネッ
 
 1000BASE-T RJ-45ケーブルを使用して、各コントローラの管理（レンチ）ポートを管理ネットワークスイッチに接続します。
 
-image::../media/oie_cable_rj45.svg[RJ-45ケーブル]
-
 * 1000BASE-T RJ-45ケーブル*
+
+image::../media/oie_cable_rj45.png[RJ-45ケーブル]
 
 image::../media/drw_a1k_management_connection_ieops-1651.svg[管理ネットワークへの接続]
 
