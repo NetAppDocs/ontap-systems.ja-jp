@@ -148,9 +148,9 @@ image::../media/drw_a1k_70-90_console_connection_ieops-1702.svg[コンソール�
 
 
 . 管理サブネット上のTCP/IPアドレスを使用して、ラップトップに割り当てます。
-. 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
+. 2本の電源コードをコントローラの電源装置に接続し、別 々 の回路の電源に接続します。
 +
-image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[A1KストレージシステムとA70またはA90の電源接続図]
+image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[AFF A1K AFF A70 / AFF A90 / FAS70 / FAS90の電源接続図]
 
 +
 ** システムがブートを開始します。初回のブートには最大で8分かかることがあります。

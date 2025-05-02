@@ -2,8 +2,6 @@
 :allow-uri-read: 
 
 
-ストレージを追加する必要がある場合は、最大1台のNS224シェルフをAFF A250またはAFF C250 HAペアにホットアドできます。
-
 .作業を開始する前に
 * を確認しておく必要があります link:requirements-hot-add-shelf.html["ホットアドの要件とベストプラクティス"]。
 * の該当する手順を完了しておく必要があります link:prepare-hot-add-shelf.html["準備-シェルフのホットアド"]。
@@ -21,7 +19,7 @@
 .. シェルフ NSM B ポート e0a をコントローラ B のスロット 1 のポート A （ e1a ）にケーブル接続します。
 .. シェルフ NSM B のポート e0b をコントローラ A のスロット 1 のポート b （ e1b ）にケーブル接続します。+ 次の図は、シェルフのケーブル接続が完了した状態を示しています。
 +
-image::../media/drw_ns224_a250_c250_f500f_1shelf_ieops-1824.svg[1台のNS224シェルフと1セットのPCIeカードポートを使用したAFF A250 C250またはFAS500fのケーブル接続]
+image::../media/drw_ns224_a250_c250_f500f_1shelf_ieops-1824.svg[/ ASA A250 C250またはFAS500fと1台のAFFシェルフおよび1セットのPCIeカードポートのケーブル接続]
 
 
 

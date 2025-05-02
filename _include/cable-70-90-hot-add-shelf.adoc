@@ -2,8 +2,6 @@
 :allow-uri-read: 
 
 
-（内蔵シェルフに）ストレージを追加する必要がある場合は、AFF A70、AFF A90、またはAFF C80のHAペアにNS224シェルフを2台までホットアドできます。
-
 .作業を開始する前に
 * を確認しておく必要があります link:requirements-hot-add-shelf.html["ホットアドの要件とベストプラクティス"]。
 * の該当する手順を完了しておく必要があります link:prepare-hot-add-shelf.html["準備-シェルフのホットアド"]。
@@ -39,7 +37,7 @@ NOTE: この手順では、RoCE対応I/Oモジュールがスロット11に取�
 次の図は、各コントローラモジュールで RoCE 対応 I/O モジュールを 1 つ使用した、 1 台のホットアドシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_vino_i_1shelf_1card_ieops-1639.svg[1台のシェルフと1台のIOモジュールを使用したAFF A70またはA90のケーブル接続]
+image::../media/drw_ns224_vino_i_1shelf_1card_ieops-1639.svg[1台のシェルフと1台のIOモジュールを使用したAFF / ASA A70またはA90のケーブル接続]
 
 
 
@@ -66,7 +64,7 @@ NOTE: この手順では、RoCE対応I/Oモジュールがスロット11と8に�
 
 次の図は、各コントローラモジュールで2つのRoCE対応I/Oモジュールを使用した、1台のホットアドシェルフのケーブル接続を示しています。
 
-image::../media/drw_ns224_vino_i_1shelf_2cards_ieops-1640.svg[1台のシェルフと2台のIOモジュールを使用したAFF A70またはA90のケーブル接続]
+image::../media/drw_ns224_vino_i_1shelf_2cards_ieops-1640.svg[1台のシェルフと2台のIOモジュールを使用したAFF / ASA A70またはA90のケーブル接続]
 
 
 
@@ -82,7 +80,7 @@ image::../media/drw_ns224_vino_i_1shelf_2cards_ieops-1640.svg[1台のシェル�
 
 次の図は、各コントローラモジュールで2つのRoCE対応I/Oモジュールを使用した2台のホットアドシェルフのケーブル接続を示しています。
 
-image::../media/drw_ns224_vino_i_2shelves_2cards_ieops-1641.svg[2台のシェルフと2台のIOモジュールを搭載したAFF A70またはA90のケーブル接続]
+image::../media/drw_ns224_vino_i_2shelves_2cards_ieops-1641.svg[2台のシェルフと2台のIOモジュールを搭載したAFF / ASA A70またはA90のケーブル接続]
 
 |===
 . ホットアドしたシェルフがを使用して正しくケーブル接続されていることを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。

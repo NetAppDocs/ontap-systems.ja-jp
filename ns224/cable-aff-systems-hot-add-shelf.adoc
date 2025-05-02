@@ -53,7 +53,7 @@ AFF A1K HAペアには、最大3台のNS224シェルフ（合計4台のシェル
 次の図は、各コントローラにRoCE対応I/Oモジュールが2つ搭載されたHAペアの2台目のシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_vino_m_2shelves_2cards_ieops-1642.svg[2台のシェルフと2台のIOモジュールを搭載したAFF A1Kのケーブル接続]
+image::../media/drw_ns224_vino_m_2shelves_2cards_ieops-1642.svg[2台のシェルフと2台のIOモジュールを使用したAFF / ASA A1Kのケーブル接続]
 
 
 
@@ -67,7 +67,7 @@ image::../media/drw_ns224_vino_m_2shelves_2cards_ieops-1642.svg[2台のシェル
 次の図は、各コントローラに3つのRoCE対応I/Oモジュールを搭載したHAペアの3台目のシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_vino_m_3shelves_3cards_ieops-1643.svg[3台のシェルフと3台のIOモジュールを搭載したAFF A1Kのケーブル接続]
+image::../media/drw_ns224_vino_m_3shelves_3cards_ieops-1643.svg[3台のシェルフと3台のIOモジュールを使用したAFF / ASA A1Kのケーブル接続]
 
 
 
@@ -81,7 +81,7 @@ image::../media/drw_ns224_vino_m_3shelves_3cards_ieops-1643.svg[3台のシェル
 次の図は、各コントローラに4つのRoCE対応I/Oモジュールを搭載したHAペアの3番目のシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_vino_m_3shelves_4cards_ieops-1644.svg[3台のシェルフと4台のIOモジュールを搭載したAFF A1Kのケーブル接続]
+image::../media/drw_ns224_vino_m_3shelves_4cards_ieops-1644.svg[3台のシェルフと4台のIOモジュールを搭載したAFF / ASA A1Kのケーブル接続]
 
 
 
@@ -95,7 +95,7 @@ image::../media/drw_ns224_vino_m_3shelves_4cards_ieops-1644.svg[3台のシェル
 次の図は、HAペアの4台目のシェルフと4台のRoCE対応I/Oモジュールのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_vino_m_4shelves_4cards_ieops-1645.svg[4台のシェルフと4台のIOモジュールを搭載したAFF A1Kのケーブル接続]
+image::../media/drw_ns224_vino_m_4shelves_4cards_ieops-1645.svg[4台のシェルフと4台のIOモジュールを搭載したAFF / ASA A1Kのケーブル接続]
 
 
 
@@ -111,10 +111,10 @@ image::../media/drw_ns224_vino_m_4shelves_4cards_ieops-1645.svg[4台のシェル
 それ以外の場合は、シェルフのホットアド手順は終了です。
 
 ====
-.シェルフをAFF A20、AFF A30、AFF A50、AFF C30、またはAFF C60にケーブル接続
+.シェルフをAFF A20にケーブル接続
 [%collapsible]
 ====
-（内蔵シェルフへの）ストレージの追加が必要な場合は、AFF A20、AFF A30、AFF C30、AFF A50、またはAFF C60のHAペアにNS224シェルフを2台までホットアドできます。
+（内蔵シェルフに）ストレージを追加する必要がある場合は、1台のNS224シェルフをAFF A20 HAペアにホットアドできます。
 
 .作業を開始する前に
 * を確認しておく必要があります link:requirements-hot-add-shelf.html["ホットアドの要件とベストプラクティス"]。
@@ -123,12 +123,100 @@ image::../media/drw_ns224_vino_m_4shelves_4cards_ieops-1645.svg[4台のシェル
 
 
 .このタスクについて
-* この手順では、HAペアに内蔵ストレージのみが搭載され（外付けシェルフは搭載されていない）、次のいずれかの状況を想定しています。
+* この手順では、HAペアに内蔵ストレージしか搭載されておらず（外付けシェルフは搭載されていない）、シェルフを1台追加してホットアドすることを前提としています。
+* この手順では、次のホットアドシナリオについて説明します。
 +
-** AFF A20のシェルフを1台までホットアドできます。
-** AFF A30、AFF C30、AFF A50、またはAFF C60の各コントローラで最大2台のシェルフと2台のRoCE対応I/Oモジュールをホットアドします。
+** 各コントローラにRoCE対応I/Oモジュールが1つ搭載されたHAペアに最初のシェルフをホットアドします。
+** 各コントローラにRoCE対応I/Oモジュールが2つ搭載されたHAペアに最初のシェルフをホットアドします。
 
 
+* これらのシステムは、NSM100モジュールを搭載したNS224シェルフとNSM100Bモジュールを搭載したNS224シェルフの両方に対応しています。コントローラを正しいポートにケーブル接続するために、各図の「X」をモジュールに対応する正しいポート番号に置き換えます。
++
+[cols="1,4"]
+|===
+| モジュールタイプ | ポートノラベル付け 
+
+
+ a| 
+NSM100
+ a| 
+"0"
+
+例：e0a
+
+
+
+ a| 
+NSM100B
+ a| 
+"1"
+
+例：e1a
+
+|===
+
+
+.手順
+. 各コントローラモジュールのRoCE対応ポートのセット（RoCE対応I/Oモジュール×1）を1つ使用して1台のシェルフをホットアドする場合で、このシェルフがHAペア内で唯一のNS224シェルフである場合は、次の手順を実行します。
++
+それ以外の場合は、次の手順に進みます。
+
++
+
+NOTE: この手順では、RoCE対応I/Oモジュールがスロット3に取り付けられていることを前提としています。
+
++
+.. シェルフNSM AのポートExaをコントローラAのスロット3のポートA（e3a）にケーブル接続します。
+.. シェルフNSM AのポートEXBをコントローラBのスロット3のポートb（e3b）にケーブル接続します。
+.. シェルフのNSM BポートExaをコントローラBのスロット3のポートA（e3a）にケーブル接続します。
+.. シェルフのNSM BのポートEXBをコントローラAのスロット3のポートb（e3b）にケーブル接続します。
++
+次の図は、各コントローラモジュールで RoCE 対応 I/O モジュールを 1 つ使用した、 1 台のホットアドシェルフのケーブル接続を示しています。
+
++
+image::../media/drw_ns224_g_1shelf_1card_ieops-2002.svg[AFF / ASA A20のシェルフ1台とIOモジュール1台のケーブル接続]
+
+
+
+. 各コントローラモジュールの2セットのRoCE対応ポート（2つのRoCE対応I/Oモジュール）を使用して1台のシェルフをホットアドする場合は、次の手順を実行します。
++
+.. NSM AのポートExaをコントローラAのスロット3のポートA（e3a）にケーブル接続します。
+.. NSM AのポートEXBをコントローラBのスロット1のポートb（e1b）にケーブル接続します。
+.. NSM BポートExaをコントローラBのスロット3のポートA（e3a）にケーブル接続します。
+.. NSM BのポートEXBをコントローラAのスロット1のポートb（e1b）にケーブル接続します。
+
+
+
+
+次の図は、各コントローラモジュールで2つのRoCE対応I/Oモジュールを使用した、1台のホットアドシェルフのケーブル接続を示しています。
+
+image::../media/drw_ns224_g_1shelf_2card_ieops-2005.svg[1台のシェルフと2台のIOモジュールを搭載したAFF / ASA A20のケーブル接続]
+
+. ホットアドしたシェルフがを使用して正しくケーブル接続されていることを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
++
+ケーブル接続エラーが発生した場合は、表示される対処方法に従ってください。
+
+
+
+.次の手順
+この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。にアクセスします。
+
+それ以外の場合は、シェルフのホットアド手順は終了です。
+
+====
+.シェルフをAFF A30、AFF A50、AFF C30、またはAFF C60にケーブル接続
+[%collapsible]
+====
+（内蔵シェルフへの）ストレージの追加が必要な場合は、AFF A30、AFF C30、AFF A50、またはAFF C60 HAペアにNS224シェルフを2台までホットアドできます。
+
+.作業を開始する前に
+* を確認しておく必要があります link:requirements-hot-add-shelf.html["ホットアドの要件とベストプラクティス"]。
+* の該当する手順を完了しておく必要があります link:prepare-hot-add-shelf.html["準備-シェルフのホットアド"]。
+* の説明に従って、シェルフを設置し、電源をオンにし、シェルフIDを設定しておく必要があります link:prepare-hot-add-shelf.html["ホットアド用のシェルフの設置"]。
+
+
+.このタスクについて
+* この手順では、HAペアに内蔵ストレージしか搭載されておらず（外付けシェルフは搭載されていない）、各コントローラに最大2台のシェルフと2台のRoCE対応I/Oモジュールをホットアドすることを前提としています。
 * この手順では、次のホットアドシナリオについて説明します。
 +
 ** 各コントローラにRoCE対応I/Oモジュールが1つ搭載されたHAペアに最初のシェルフをホットアドします。
@@ -180,7 +268,7 @@ NOTE: この手順では、RoCE対応I/Oモジュールがスロット3に取り
 次の図は、各コントローラモジュールで RoCE 対応 I/O モジュールを 1 つ使用した、 1 台のホットアドシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_g_1shelf_1card_ieops-2002.svg[AFF A20のケーブル接続,452px,AFF C30]
+image::../media/drw_ns224_g_1shelf_1card_ieops-2002.svg[AFF / ASA A30のケーブル接続,452px,AFF/ASA A50]
 
 
 
@@ -207,7 +295,7 @@ NOTE: この手順では、RoCE対応I/Oモジュールがスロット3と1に�
 
 次の図は、各コントローラモジュールで2つのRoCE対応I/Oモジュールを使用した、1台のホットアドシェルフのケーブル接続を示しています。
 
-image::../media/drw_ns224_g_1shelf_2card_ieops-2005.svg[AFF A20のケーブル接続,452px,AFF C30]
+image::../media/drw_ns224_g_1shelf_2card_ieops-2005.svg[AFF / ASA A30のケーブル接続,452px,AFF/ASA A50]
 
 
 
@@ -223,7 +311,7 @@ image::../media/drw_ns224_g_1shelf_2card_ieops-2005.svg[AFF A20のケーブル�
 
 次の図は、各コントローラモジュールで2つのRoCE対応I/Oモジュールを使用した2台のホットアドシェルフのケーブル接続を示しています。
 
-image::../media/drw_ns224_g_2shelf_2card_ieops-2003.svg[AFF A20のケーブル接続,452px,AFF C30]
+image::../media/drw_ns224_g_2shelf_2card_ieops-2003.svg[AFF A30 / ASAのケーブル接続,452px,AFF/ASA A50]
 
 |===
 . ホットアドしたシェルフがを使用して正しくケーブル接続されていることを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
@@ -278,7 +366,7 @@ NOTE: この手順では、RoCE対応I/Oモジュールがスロット11に取�
 次の図は、各コントローラモジュールで RoCE 対応 I/O モジュールを 1 つ使用した、 1 台のホットアドシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_vino_i_1shelf_1card_ieops-1639.svg[1台のシェルフと1台のIOモジュールを使用したAFF A70またはA90のケーブル接続]
+image::../media/drw_ns224_vino_i_1shelf_1card_ieops-1639.svg[1台のシェルフと1台のIOモジュールを使用したAFF / ASA A70またはA90のケーブル接続]
 
 
 
@@ -305,7 +393,7 @@ NOTE: この手順では、RoCE対応I/Oモジュールがスロット11と8に�
 
 次の図は、各コントローラモジュールで2つのRoCE対応I/Oモジュールを使用した、1台のホットアドシェルフのケーブル接続を示しています。
 
-image::../media/drw_ns224_vino_i_1shelf_2cards_ieops-1640.svg[1台のシェルフと2台のIOモジュールを使用したAFF A70またはA90のケーブル接続]
+image::../media/drw_ns224_vino_i_1shelf_2cards_ieops-1640.svg[1台のシェルフと2台のIOモジュールを使用したAFF / ASA A70またはA90のケーブル接続]
 
 
 
@@ -321,7 +409,7 @@ image::../media/drw_ns224_vino_i_1shelf_2cards_ieops-1640.svg[1台のシェル�
 
 次の図は、各コントローラモジュールで2つのRoCE対応I/Oモジュールを使用した2台のホットアドシェルフのケーブル接続を示しています。
 
-image::../media/drw_ns224_vino_i_2shelves_2cards_ieops-1641.svg[2台のシェルフと2台のIOモジュールを搭載したAFF A70またはA90のケーブル接続]
+image::../media/drw_ns224_vino_i_2shelves_2cards_ieops-1641.svg[2台のシェルフと2台のIOモジュールを搭載したAFF / ASA A70またはA90のケーブル接続]
 
 |===
 . ホットアドしたシェルフがを使用して正しくケーブル接続されていることを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
@@ -358,7 +446,7 @@ image::../media/drw_ns224_vino_i_2shelves_2cards_ieops-1641.svg[2台のシェル
 .. シェルフ NSM B ポート e0a をコントローラ B のスロット 1 のポート A （ e1a ）にケーブル接続します。
 .. シェルフ NSM B のポート e0b をコントローラ A のスロット 1 のポート b （ e1b ）にケーブル接続します。+ 次の図は、シェルフのケーブル接続が完了した状態を示しています。
 +
-image::../media/drw_ns224_a250_c250_f500f_1shelf_ieops-1824.svg[1台のNS224シェルフと1セットのPCIeカードポートを使用したAFF A250 C250またはFAS500fのケーブル接続]
+image::../media/drw_ns224_a250_c250_f500f_1shelf_ieops-1824.svg[/ ASA A250 C250またはFAS500fと1台のAFFシェルフおよび1セットのPCIeカードポートのケーブル接続]
 
 
 
@@ -403,7 +491,7 @@ AFF A400 HAペアの場合は、最大2台のシェルフをホットアドし�
 次の図は、各コントローラの1セットのRoCE対応ポートを使用した、1台のホットアドシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_a400_1shelf.png[1台のNS224シェルフと1セットのオンボードポートを使用したAFF A400のケーブル接続]
+image::../media/drw_ns224_a400_1shelf.png[1台のNS224シェルフと1セットのオンボードポートを使用したAFF / ASA A400のケーブル接続]
 
 
 
@@ -441,7 +529,7 @@ image::../media/drw_ns224_a400_1shelf.png[1台のNS224シェルフと1セット�
 次の図は、 2 台のホットアドシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_a400_2shelves_IEOPS-983.svg[2台のNS224シェルフと1セットのオンボードポートと1セットのPCIeカード上の1セットのポートを使用したAFF A400のケーブル接続]
+image::../media/drw_ns224_a400_2shelves_IEOPS-983.svg[2台のNS224シェルフと1セットのオンボードポートと1セットのPCIeカード上の1セットのポートを使用した場合の/ ASA A400のケーブル接続]
 
 . ホットアドしたシェルフがを使用して正しくケーブル接続されていることを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
 +
@@ -471,7 +559,7 @@ AFF C400 HAペアの場合は、最大2台のシェルフをホットアドし�
 次の図は、各コントローラの1セットのRoCE対応ポートを使用した、1台のホットアドシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_c400_1shelf_IEOPS-985.svg[1台のNS224シェルフと1セットのPCIeカードポートを使用したAFF C400のケーブル接続]
+image::../media/drw_ns224_c400_1shelf_IEOPS-985.svg[1台のNS224シェルフと1セットのPCIeカードポートを使用したAFF / ASA C400のケーブル接続]
 
 
 
@@ -509,7 +597,7 @@ image::../media/drw_ns224_c400_1shelf_IEOPS-985.svg[1台のNS224シェルフと1
 次の図は、 2 台のホットアドシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_c400_2shelves_IEOPS-984.svg[2台のNS224シェルフと2セットのPCIeカードポートを備えたAFF C400のケーブル接続]
+image::../media/drw_ns224_c400_2shelves_IEOPS-984.svg[2台のNS224シェルフと2セットのPCIeカードポートを備えたAFF / ASA C400のケーブル接続]
 
 . ホットアドしたシェルフがを使用して正しくケーブル接続されていることを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
 +
@@ -552,7 +640,7 @@ NOTE: この手順では、 RoCE 対応の PCIe カードがスロット 5 に�
 次の図は、各コントローラでRoCE対応PCIeカードを1枚使用した、ホットアドした1台のシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_a800_c800_1shelf_IEOPS-964.svg[AFF A800またはAFF C800と1台のNS224シェルフおよび1枚のPCIeカードのケーブル接続]
+image::../media/drw_ns224_a800_c800_1shelf_IEOPS-964.svg[/ ASA A800またはAFF / ASA C800と1台のAFFシェルフおよび1枚のPCIeカードのケーブル接続]
 
 
 
@@ -644,7 +732,7 @@ image::../media/drw_ns224_a800_c800_2shelves_IEOPS-966.svg[DRW ns224 A800 c800 2
 次の図は、 2 台目のシェルフ（および 1 台目のシェルフ）のケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_a900_2shelves.png[2台のNS224シェルフと2台のIOモジュールを搭載したAFF A900のケーブル接続]
+image::../media/drw_ns224_a900_2shelves.png[2台のNS224シェルフと2台のIOモジュールを搭載したAFF / ASA A900のケーブル接続]
 
 
 
@@ -661,7 +749,7 @@ image::../media/drw_ns224_a900_2shelves.png[2台のNS224シェルフと2台のIO
 次の図は、 3 台目のシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_a900_3shelves.png[3台のNS224シェルフと4台のIOモジュールを搭載したAFF A900のケーブル接続]
+image::../media/drw_ns224_a900_3shelves.png[3台のNS224シェルフと4台のIOモジュールを搭載したAFF / ASA A900のケーブル接続]
 
 
 
@@ -678,7 +766,7 @@ image::../media/drw_ns224_a900_3shelves.png[3台のNS224シェルフと4台のIO
 次の図は、 4 台目のシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_a900_4shelves.png[4台のNS224シェルフと4台のIOモジュールを搭載したAFF A900のケーブル接続]
+image::../media/drw_ns224_a900_4shelves.png[4台のNS224シェルフと4台のIOモジュールを搭載したAFF / ASA A900のケーブル接続]
 
 
 

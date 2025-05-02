@@ -2,8 +2,6 @@
 :allow-uri-read: 
 
 
-ストレージの追加が必要な場合は、 AFF A900 HA ペアに最大 3 台の NS224 ドライブシェルフを（合計 4 台のシェルフに）ホットアドできます。
-
 .作業を開始する前に
 * を確認しておく必要があります link:requirements-hot-add-shelf.html["ホットアドの要件とベストプラクティス"]。
 * の該当する手順を完了しておく必要があります link:prepare-hot-add-shelf.html["準備-シェルフのホットアド"]。
@@ -29,7 +27,7 @@
 次の図は、 2 台目のシェルフ（および 1 台目のシェルフ）のケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_a900_2shelves.png[2台のNS224シェルフと2台のIOモジュールを搭載したAFF A900のケーブル接続]
+image::../media/drw_ns224_a900_2shelves.png[2台のNS224シェルフと2台のIOモジュールを搭載したAFF / ASA A900のケーブル接続]
 
 
 
@@ -46,7 +44,7 @@ image::../media/drw_ns224_a900_2shelves.png[2台のNS224シェルフと2台のIO
 次の図は、 3 台目のシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_a900_3shelves.png[3台のNS224シェルフと4台のIOモジュールを搭載したAFF A900のケーブル接続]
+image::../media/drw_ns224_a900_3shelves.png[3台のNS224シェルフと4台のIOモジュールを搭載したAFF / ASA A900のケーブル接続]
 
 
 
@@ -63,7 +61,7 @@ image::../media/drw_ns224_a900_3shelves.png[3台のNS224シェルフと4台のIO
 次の図は、 4 台目のシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_a900_4shelves.png[4台のNS224シェルフと4台のIOモジュールを搭載したAFF A900のケーブル接続]
+image::../media/drw_ns224_a900_4shelves.png[4台のNS224シェルフと4台のIOモジュールを搭載したAFF / ASA A900のケーブル接続]
 
 
 

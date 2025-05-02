@@ -144,7 +144,7 @@ image::../media/drw_g_isi_console_serial_port_cabling_ieops-1882.svg[コンソ�
 
 
 . 管理サブネット上のTCP/IPアドレスを使用して、ラップトップに割り当てます。
-. 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
+. 2本の電源コードをコントローラの電源装置に接続し、別 々 の回路の電源に接続します。
 +
 image::../media/drw_psu_layout_1_ieops-1886.svg[A20、A30、A50ストレージ・システムの電源接続図]
 

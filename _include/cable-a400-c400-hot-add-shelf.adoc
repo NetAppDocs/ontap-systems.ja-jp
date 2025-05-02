@@ -2,8 +2,6 @@
 :allow-uri-read: 
 
 
-NS224シェルフをホットアド用にケーブル接続する方法は、AFF A400とAFF C400のどちらのHAペアを使用しているかによって異なります。
-
 .作業を開始する前に
 * を確認しておく必要があります link:requirements-hot-add-shelf.html["ホットアドの要件とベストプラクティス"]。
 * の該当する手順を完了しておく必要があります link:prepare-hot-add-shelf.html["準備-シェルフのホットアド"]。
@@ -28,7 +26,7 @@ AFF A400 HAペアの場合は、最大2台のシェルフをホットアドし�
 次の図は、各コントローラの1セットのRoCE対応ポートを使用した、1台のホットアドシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_a400_1shelf.png[1台のNS224シェルフと1セットのオンボードポートを使用したAFF A400のケーブル接続]
+image::../media/drw_ns224_a400_1shelf.png[1台のNS224シェルフと1セットのオンボードポートを使用したAFF / ASA A400のケーブル接続]
 
 
 
@@ -66,7 +64,7 @@ image::../media/drw_ns224_a400_1shelf.png[1台のNS224シェルフと1セット�
 次の図は、 2 台のホットアドシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_a400_2shelves_IEOPS-983.svg[2台のNS224シェルフと1セットのオンボードポートと1セットのPCIeカード上の1セットのポートを使用したAFF A400のケーブル接続]
+image::../media/drw_ns224_a400_2shelves_IEOPS-983.svg[2台のNS224シェルフと1セットのオンボードポートと1セットのPCIeカード上の1セットのポートを使用した場合の/ ASA A400のケーブル接続]
 
 . ホットアドしたシェルフがを使用して正しくケーブル接続されていることを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
 +
@@ -96,7 +94,7 @@ AFF C400 HAペアの場合は、最大2台のシェルフをホットアドし�
 次の図は、各コントローラの1セットのRoCE対応ポートを使用した、1台のホットアドシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_c400_1shelf_IEOPS-985.svg[1台のNS224シェルフと1セットのPCIeカードポートを使用したAFF C400のケーブル接続]
+image::../media/drw_ns224_c400_1shelf_IEOPS-985.svg[1台のNS224シェルフと1セットのPCIeカードポートを使用したAFF / ASA C400のケーブル接続]
 
 
 
@@ -134,7 +132,7 @@ image::../media/drw_ns224_c400_1shelf_IEOPS-985.svg[1台のNS224シェルフと1
 次の図は、 2 台のホットアドシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_c400_2shelves_IEOPS-984.svg[2台のNS224シェルフと2セットのPCIeカードポートを備えたAFF C400のケーブル接続]
+image::../media/drw_ns224_c400_2shelves_IEOPS-984.svg[2台のNS224シェルフと2セットのPCIeカードポートを備えたAFF / ASA C400のケーブル接続]
 
 . ホットアドしたシェルフがを使用して正しくケーブル接続されていることを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
 +

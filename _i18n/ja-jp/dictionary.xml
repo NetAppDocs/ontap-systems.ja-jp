@@ -7996,20 +7996,17 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4367e3d6fa33a8e5340bcdfaf20e76b1" category="list-text">各コントローラにRoCE対応I/Oモジュールが2つ搭載されたHAペアに2台目のシェルフをホットアドします。</block>
   <block id="bd7b27778a055163b7315acc047708fd" category="list-text">各コントローラモジュールのRoCE対応ポートのセット（RoCE対応I/Oモジュール×1）を1つ使用して1台のシェルフをホットアドする場合で、このシェルフがHAペア内で唯一のNS224シェルフである場合は、次の手順を実行します。</block>
   <block id="7326450dfaf2d352b15c1dbb36a9010e" category="admonition">この手順では、RoCE対応I/Oモジュールがスロット11に取り付けられていることを前提としています。</block>
-  <block id="f9ba636c0d9fc6353c91cac13fe6290c" category="image-alt">1台のシェルフと1台のIOモジュールを使用したAFF A70またはA90のケーブル接続</block>
   <block id="1d99994321fcf88aba221cbb6612805a" category="admonition">この手順では、RoCE対応I/Oモジュールがスロット11と8に取り付けられていることを前提としています。</block>
   <block id="220b4e5517a1a5b99f0642ce282c3975" category="list-text">NSM Aのポートe0aをコントローラAのスロット11のポートA（e11a）にケーブル接続します。</block>
   <block id="635ff36fada70d6b9a46124ec04022cf" category="list-text">NSM Aのポートe0bをコントローラBのスロット8のポートb（e8b）にケーブル接続します。</block>
   <block id="3adcb5d3f00489780b17f91dbcf4c8b6" category="list-text">NSM Bのポートe0aをコントローラBのスロット11のポートA（e11a）にケーブル接続します。</block>
   <block id="fed38315c77f3f617a7a61ed019eb467" category="list-text">NSM Bのポートe0bをコントローラAのスロット8のポートb（e8b）にケーブル接続します。</block>
   <block id="8b2cc73a271f9ec9f419e138f66cb109" category="paragraph">次の図は、各コントローラモジュールで2つのRoCE対応I/Oモジュールを使用した、1台のホットアドシェルフのケーブル接続を示しています。</block>
-  <block id="0fd5a3b540c1af5ae188f141b2f40c24" category="image-alt">1台のシェルフと2台のIOモジュールを使用したAFF A70またはA90のケーブル接続</block>
   <block id="efd179e747ea06abffaa97721b0cc372" category="list-text">NSM Aのポートe0aをコントローラAのスロット8のポートA（e8a）にケーブル接続します。</block>
   <block id="9db08de14bb838886cf8eaaee8575093" category="list-text">NSM Aのポートe0bをコントローラBのスロット11のポートb（e11b）にケーブル接続します。</block>
   <block id="e227bb2c8482a8ac7a342596ddc812fe" category="list-text">NSM Bのポートe0aをコントローラBのスロット8のポートA（e8a）にケーブル接続します。</block>
   <block id="6d4a579eaf72f5aec95723d499d76fe9" category="list-text">NSM Bのポートe0bをコントローラAのスロット11のポートb（e11b）にケーブル接続します。</block>
   <block id="ae14ce538d268aca5ec54fbb093b2156" category="paragraph">次の図は、各コントローラモジュールで2つのRoCE対応I/Oモジュールを使用した2台のホットアドシェルフのケーブル接続を示しています。</block>
-  <block id="25862846eedff523b089999508c204b1" category="image-alt">2台のシェルフと2台のIOモジュールを搭載したAFF A70またはA90のケーブル接続</block>
   <block id="14ac662b33a52d48f6573c07b50e5b8f" category="list-text">ホットアドしたシェルフがを使用して正しくケーブル接続されていることを確認します<block ref="7064c89577900622f24a070c24ebbaa7" category="inline-link-rx"></block>。</block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">次の手順</block>
   <block id="8d39c366d0f2a2847eeab7a904800822" category="paragraph">この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。にアクセスします。</block>
@@ -8023,48 +8020,36 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="244addd6f2bc2e043852c2e18eeb5621" category="list-text">各コントローラにRoCE対応I/Oモジュールが4つ搭載されたHAペアに3台目のシェルフをホットアドします。（3番目と4番目のI/Oモジュールを取り付けておき、3番目のシェルフを3番目と4番目のI/Oモジュールにケーブル接続します）。</block>
   <block id="72cdf939e98d17baf87d0a5a64dfcea8" category="list-text">各コントローラにRoCE対応I/Oモジュールが4つ搭載されたHAペアに4台目のシェルフをホットアドします。（4台目のI/Oモジュールを取り付け、3台目のシェルフを3台目と4台目のI/Oモジュールに再接続済みであるか、3台目のシェルフを3台目と4台目のI/Oモジュールにケーブル接続済みである。4番目のシェルフを3番目と4番目のI/Oモジュールの両方にケーブル接続します）。</block>
   <block id="b5fb112065a7304ad93afe5e3c7fa849" category="paragraph">次の図は、各コントローラにRoCE対応I/Oモジュールが2つ搭載されたHAペアの2台目のシェルフのケーブル接続を示しています。</block>
-  <block id="ea0cc2be4039f5636ca9de5e2c7a3940" category="image-alt">2台のシェルフと2台のIOモジュールを搭載したAFF A1Kのケーブル接続</block>
   <block id="7190ee5c0c8079e24da44f24c6b7abbc" category="list-text">ホットアドするNS224シェルフをHAペアの3番目のNS224シェルフとし、各コントローラにRoCE対応I/Oモジュールを3つ搭載する場合は、次の手順を実行します。それ以外の場合は、次の手順に進みます。</block>
   <block id="67a32de8a36abcac3887051fb422a5f5" category="list-text">シェルフNSM Aのポートe0aをコントローラAのスロット9のポートA（e9a）にケーブル接続します。</block>
   <block id="b94b22c566c53666c9eb824858482f94" category="list-text">シェルフNSM Aのポートe0bをコントローラBのスロット9のポートb（e9b）にケーブル接続します。</block>
   <block id="daa2e224b274ef312de5853c6cbffaf6" category="list-text">シェルフのNSM Bのポートe0aをコントローラBのスロット9のポートA（e9a）にケーブル接続します。</block>
   <block id="3a8f2e391b6044dec7d6ef6c3e9dda69" category="list-text">シェルフのNSM Bのポートe0bをコントローラAのスロット9のポートb（e9b）にケーブル接続します。</block>
   <block id="6c6e97e4c29594c5856e13f4b1a8be0c" category="paragraph">次の図は、各コントローラに3つのRoCE対応I/Oモジュールを搭載したHAペアの3台目のシェルフのケーブル接続を示しています。</block>
-  <block id="94213ae2609c82c94807004beab91de1" category="image-alt">3台のシェルフと3台のIOモジュールを搭載したAFF A1Kのケーブル接続</block>
   <block id="46e04d93b6d495a5235036857998eae9" category="list-text">ホットアドするNS224シェルフをHAペアの3番目のNS224シェルフとし、各コントローラにRoCE対応I/Oモジュールを4つ搭載する場合は、次の手順を実行します。それ以外の場合は、次の手順に進みます。</block>
   <block id="abb0dbc2abeae0d456ed2095b4c9ed12" category="list-text">シェルフNSM Aのポートe0bをコントローラBのスロット8のポートb（e8b）にケーブル接続します。</block>
   <block id="8ff8aa3f78832bf6ceceeea539763fec" category="list-text">シェルフのNSM Bのポートe0bをコントローラAのスロット8のポートb（e8b）にケーブル接続します。</block>
   <block id="863764690b094c2d6a28b8edc2afba72" category="paragraph">次の図は、各コントローラに4つのRoCE対応I/Oモジュールを搭載したHAペアの3番目のシェルフのケーブル接続を示しています。</block>
-  <block id="f9d0d9976d1ff7ee0097da8e1b7fb3c2" category="image-alt">3台のシェルフと4台のIOモジュールを搭載したAFF A1Kのケーブル接続</block>
   <block id="3bd0afb8978e34368879d152c8aec251" category="list-text">ホットアドするNS224シェルフをHAペアの4台目のNS224シェルフとし、各コントローラにRoCE対応I/Oモジュールを4台搭載する場合は、次の手順を実行します。</block>
   <block id="d10794f4d3cca7a2993e8d2d6a12cd28" category="list-text">シェルフNSM Aのポートe0aをコントローラAのスロット8のポートA（e8a）にケーブル接続します。</block>
   <block id="ed24faf41d7d53c3a668df6e070aca6d" category="list-text">シェルフのNSM Bのポートe0aをコントローラBのスロット8のポートA（e8a）にケーブル接続します。</block>
   <block id="551d2fc9e8e1159b84b9c23da6d27984" category="paragraph">次の図は、HAペアの4台目のシェルフと4台のRoCE対応I/Oモジュールのケーブル接続を示しています。</block>
-  <block id="40d57aad6b502bb35f6aa64821041f6a" category="image-alt">4台のシェルフと4台のIOモジュールを搭載したAFF A1Kのケーブル接続</block>
   <block id="8f5d4ff45922bd2a0a4b4ca26b784653" category="paragraph">ストレージを追加する必要がある場合は、最大1台のNS224シェルフをAFF A250またはAFF C250 HAペアにホットアドできます。</block>
   <block id="3c8f15ce2288517ffd28cbab07b4cd4f" category="paragraph">NS224シェルフをホットアド用にケーブル接続する方法は、AFF A400とAFF C400のどちらのHAペアを使用しているかによって異なります。</block>
   <block id="95e9c90f47d7134271c5de6f5d8d41f5" category="paragraph">*シェルフをAFF A400 HAペアにケーブル接続*</block>
   <block id="e47d066c3638efab14a13923e89b312a" category="paragraph">AFF A400 HAペアの場合は、最大2台のシェルフをホットアドし、必要に応じてオンボードポートe0c / e0dとスロット5のポートを使用できます。</block>
   <block id="d4e171bee30acee3b4097e177f087224" category="list-text">各コントローラの1セットのRoCE対応ポート（オンボードRoCE対応ポート）を使用して1台のシェルフをホットアドする場合に、このシェルフがHAペア内の唯一のNS224シェルフである場合は、次の手順を実行します。</block>
   <block id="4df6de3fb6b5eece4bd1d42f75e5ae3d" category="paragraph">次の図は、各コントローラの1セットのRoCE対応ポートを使用した、1台のホットアドシェルフのケーブル接続を示しています。</block>
-  <block id="672cc22dbbc7622be2f56d3dce98ffcd" category="image-alt">1台のNS224シェルフと1セットのオンボードポートを使用したAFF A400のケーブル接続</block>
   <block id="306fa6b2ff7e9909c6a2a302a380875a" category="list-text">各コントローラの2セットのRoCE対応ポート（オンボードおよびPCIeカードのRoCE対応ポート）を使用して1台または2台のシェルフをホットアドする場合は、次の手順を実行します。</block>
-  <block id="303de4b6b1481e40bb1b8e2368a123b6" category="image-alt">2台のNS224シェルフと1セットのオンボードポートと1セットのPCIeカード上の1セットのポートを使用したAFF A400のケーブル接続</block>
   <block id="41132f8bc7d00935b8687c18c2c9e35d" category="list-text">この手順の準備作業として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じてドライブの自動割り当てを再度有効にする必要があります。を参照して <block ref="27f0c709ab4d9ea809b0da6fd9c1c251" category="inline-link-macro-rx"></block></block>
   <block id="406a6a05dc05bb651919c02b9570c743" category="paragraph">*シェルフをAFF C400 HAペアにケーブル接続*</block>
   <block id="9d6636aae443fd88eb415b0a814eb7ed" category="paragraph">AFF C400 HAペアの場合は、最大2台のシェルフをホットアドし、必要に応じてスロット4と5のポートを使用できます。</block>
   <block id="b6c9c1f2bae5bda1b2ec0ca34865478a" category="list-text">各コントローラの1組のRoCE対応ポートを使用して1台のシェルフをホットアドする場合に、このシェルフがHAペア内の唯一のNS224シェルフである場合は、次の手順を実行します。</block>
-  <block id="a3c44bf0089bcb64a39869e3500ee7be" category="image-alt">1台のNS224シェルフと1セットのPCIeカードポートを使用したAFF C400のケーブル接続</block>
   <block id="c4dcb8322178395823ac67e2ea704340" category="list-text">各コントローラの2セットのRoCE対応ポートを使用して1台または2台のシェルフをホットアドする場合は、次の手順を実行します。</block>
-  <block id="8e60b7b6a9c9e9483da2fb013ea4987b" category="image-alt">2台のNS224シェルフと2セットのPCIeカードポートを備えたAFF C400のケーブル接続</block>
   <block id="8b27019cea28c7866ff81a933ac7c02c" category="paragraph">AFF A800またはAFF C800のHAペアでNS224シェルフをケーブル接続する方法は、ホットアドするシェルフの数と、コントローラで使用するRoCE対応ポートセットの数（1つまたは2つ）によって異なります。</block>
   <block id="e6960ae3a6a92d53555f3471da322c41" category="list-text">各コントローラのRoCE対応ポートのセット（RoCE対応PCIeカード1枚）を1つ使用して1台のシェルフをホットアドする場合で、このシェルフがHAペア内で唯一のNS224シェルフである場合は、次の手順を実行します。</block>
   <block id="c55555ebd43bc616a6c859bbbad79ac8" category="paragraph">次の図は、各コントローラでRoCE対応PCIeカードを1枚使用した、ホットアドした1台のシェルフのケーブル接続を示しています。</block>
-  <block id="e21205a57cd96b3d3b2ad37564df9874" category="image-alt">AFF A800またはAFF C800と1台のNS224シェルフおよび1枚のPCIeカードのケーブル接続</block>
   <block id="6f313b51958d9ef2aa65c80a9b64de6b" category="list-text">各コントローラの2セットのRoCE対応ポート（2枚のRoCE対応PCIeカード）を使用して1台または2台のシェルフをホットアドする場合は、該当する手順を実行します。</block>
-  <block id="b44d424c15322ecb36a077b677527005" category="image-alt">2台のNS224シェルフと2台のIOモジュールを搭載したAFF A900のケーブル接続</block>
-  <block id="e896f649bc7a69947f85c288e5cb0b96" category="image-alt">3台のNS224シェルフと4台のIOモジュールを搭載したAFF A900のケーブル接続</block>
-  <block id="325058948df9e92ff2c1577aeb745fc0" category="image-alt">4台のNS224シェルフと4台のIOモジュールを搭載したAFF A900のケーブル接続</block>
   <block id="40e6ceebb2eb1677b588bd7f52f95206" category="paragraph">シェルフID番号</block>
   <block id="42a63d570d38a93d3cbaddcfd266a58c" category="paragraph">シェルフIDアクセスボタン</block>
   <block id="d6f7de8608837079f0d0dd7fa668c457" category="list-text">クラスタの健全性を確認します。詳細については、技術情報の記事を参照して<block ref="9f193d2818f839c9575e0a6969820fd9" category="inline-link-rx"></block> ください。</block>
@@ -8572,7 +8557,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="cada3ae8b9b850f4721595b91f8ab383" category="doc">手順1：コントローラをケーブル接続し直す</block>
   <block id="f4c083c41633c63a72a1bbce7db1c159" category="sidebar">コントローラをギブバック</block>
   <block id="a39e0fbfb2db42a80ba7546850d8b5c6" category="paragraph"><block ref="a39e0fbfb2db42a80ba7546850d8b5c6" category="inline-link-rx"></block></block>
-  <block id="4c32ebd39f3a998e8ed434a92fb2337e" category="image-alt">1台のNS224シェルフと1セットのPCIeカードポートを使用したAFF A250 C250またはFAS500fのケーブル接続</block>
   <block id="3512d92434ff4ef9e4eb4253b21a863e" category="image-alt">ケーブルは、コネクタのプルタブを上向きにして挿入します。</block>
   <block id="fa8057e66f11f58b193c0063c5f89d0f" category="image-alt">NS224 NSM100モジュールのポートe0aとe0bの場所</block>
   <block id="21631ea576ae592d82bfa53578687d4b" category="image-alt">オペレータディスプレイパネルの電源LED</block>
@@ -9060,15 +9044,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7bf4e86b8c2f5ff036932a932f9dc604" category="list-text"><block ref="7bf4e86b8c2f5ff036932a932f9dc604" category="inline-link-rx"></block></block>
   <block id="3ab6aa369c3f9b8276a331929da6f82c" category="example-title">シェルフをASA A1Kにケーブル接続</block>
   <block id="5085ff6c350861af4448d82a2c958fe8" category="paragraph">ASA A1K HAペアには、最大3台のNS224シェルフ（合計4台のシェルフ）をホットアドできます。</block>
-  <block id="b96506939d3be5ee82870422bae11f18" category="image-alt">2台のシェルフと2台のIOモジュールを搭載したASA A1Kのケーブル接続</block>
-  <block id="7c5aa1be4042527c8f9979e790cb45ad" category="image-alt">3台のシェルフと3台のIOモジュールを搭載したASA A1Kのケーブル接続</block>
-  <block id="09bb2c93b169f0c519beed078ec84db3" category="image-alt">3台のシェルフと4台のIOモジュールを搭載したASA A1Kのケーブル接続</block>
-  <block id="568d158739474681892c0a2e2456188d" category="image-alt">4台のシェルフと4台のIOモジュールを搭載したASA A1Kのケーブル接続</block>
   <block id="ae9e439bbd5c00f8b8a1bc7a935729c7" category="example-title">シェルフをASA A70またはASA A90にケーブル接続</block>
   <block id="9e4b32259f721cc54024969657de5534" category="paragraph">（内蔵シェルフに）ストレージを追加する必要がある場合は、ASA A70またはASA A90 HAペアにNS224シェルフを2台までホットアドできます。</block>
-  <block id="087914c8dfa7abbb50d9c6d8ec5daab1" category="image-alt">1台のシェルフと1台のIOモジュールを使用したASA A70またはA90のケーブル接続</block>
-  <block id="1bc9489d5803221329c048bb065c42ec" category="image-alt">1台のシェルフと2台のIOモジュールを使用したASA A70またはA90のケーブル接続</block>
-  <block id="cdd4188b076dc68d9ffe52ac80b230c6" category="image-alt">2台のシェルフと2台のIOモジュールを搭載したASA A70またはA90のケーブル接続</block>
   <block id="55ec693931401ff7a634100e33ff8cfd" category="doc">ONTAPハードウェアシステムの新機能</block>
   <block id="ec6e72d1c4bb7dccdc62b6caf35c95f7" category="sidebar">ONTAPハードウェアシステムのドキュメント</block>
   <block id="64f78e10c5d8a4db6f25299bf9a418cd" category="sidebar">AFF AシリーズとCシリーズのシステムは、組織のインフラをより迅速に変革し、データ主体の戦略を推進できるように設計されています。</block>
@@ -9669,10 +9646,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e726d5f098bf18b53d3d464c11fbe033" category="list-text">AutoSupportが有効な場合は、ケースの自動作成をリストア（抑制解除）します。system node AutoSupport invoke -node *-type all -message MAINT=end</block>
   <block id="975c4856a4750ba558520ec8a4820a30" category="list-text">NICモジュールを取り付けた場合は、各ポートの使用モードを_network_として指定します。<block ref="2318bc4fadd0b94ffa92c4a515df2262" prefix=" " category="inline-code"></block></block>
   <block id="b6d91a8f20eef2bd8b5f445d19459cac" category="list-text">もう一方のコントローラに対して上記の手順を繰り返します。</block>
-  <block id="fbff7da02a9769667db9e912fa36fc5e" category="paragraph">（内蔵シェルフへの）ストレージの追加が必要な場合は、AFF A20、AFF A30、AFF C30、AFF A50、またはAFF C60のHAペアにNS224シェルフを2台までホットアドできます。</block>
-  <block id="73a95c42a81e9be601403e3a9d4a84c9" category="list-text">この手順では、HAペアに内蔵ストレージのみが搭載され（外付けシェルフは搭載されていない）、次のいずれかの状況を想定しています。</block>
-  <block id="c6e5816c4606aead75e5bf161bd98726" category="list-text">AFF A20のシェルフを1台までホットアドできます。</block>
-  <block id="11e9efba28ae2ed6dc6e8d713d0a9d85" category="list-text">AFF A30、AFF C30、AFF A50、またはAFF C60の各コントローラで最大2台のシェルフと2台のRoCE対応I/Oモジュールをホットアドします。</block>
   <block id="4a09af6ecaf81ef3c2832bb75c6a0661" category="list-text">これらのシステムは、NSM100モジュールを搭載したNS224シェルフとNSM100Bモジュールを搭載したNS224シェルフの両方に対応しています。コントローラを正しいポートにケーブル接続するために、各図の「X」をモジュールに対応する正しいポート番号に置き換えます。</block>
   <block id="d6df784a5f01190c34ccccae7152455a" category="cell">モジュールタイプ</block>
   <block id="0ef8def66b79f6a75efa2dde40c34190" category="cell">ポートノラベル付け</block>
@@ -9687,7 +9660,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4719f083a14108e1749d33a162c3f72e" category="list-text">シェルフNSM AのポートEXBをコントローラBのスロット3のポートb（e3b）にケーブル接続します。</block>
   <block id="e12dd7341a7320b1bfee16cf7817ae73" category="list-text">シェルフのNSM BポートExaをコントローラBのスロット3のポートA（e3a）にケーブル接続します。</block>
   <block id="36eb4fa8319a2d5789a89ff95d28ecb4" category="list-text">シェルフのNSM BのポートEXBをコントローラAのスロット3のポートb（e3b）にケーブル接続します。</block>
-  <block id="4d6aa4e10ec4c72ec3a386b483422bc8" category="image-alt">AFF A20のケーブル接続</block>
   <block id="d6dc171c9f98fe17e814fd05d2ee1489" category="admonition">この手順では、RoCE対応I/Oモジュールがスロット3と1に取り付けられていることを前提としています。</block>
   <block id="e8becaef69668c291a5f960c6cd5f04e" category="list-text">NSM AのポートExaをコントローラAのスロット3のポートA（e3a）にケーブル接続します。</block>
   <block id="5d0425db587b395e698ec97c99c625fc" category="list-text">NSM AのポートEXBをコントローラBのスロット1のポートb（e1b）にケーブル接続します。</block>
@@ -10373,7 +10345,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="dafdc51bcfddfb75cdc104244fa42b60" category="doc">リアルタイムクロックバッテリを交換してください- AFF C80</block>
   <block id="0c760c78e9d0c008701a3538ed8f1c85" category="doc">システム管理モジュールの交換- AFF C80</block>
   <block id="0e0493531094a28281ba5f32c328ac63" category="paragraph">お使いのハードウェアシステムは、NSM100モジュールを搭載したNS224シェルフと、NSM100Bモジュールを搭載したNS224シェルフの両方と互換性がある場合があります。ハードウェアとシェルフの互換性とポート名を確認するには、を参照して<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block>ください。</block>
-  <block id="c97d3a72e7c1692c1c5f56d517b82c8c" category="example-title">シェルフをAFF A20、AFF A30、AFF A50、AFF C30、またはAFF C60にケーブル接続</block>
   <block id="494fa596205dff234fa0bdbd9d667c60" category="example-title">シェルフをAFF A70、AFF A90、またはAFF C80にケーブル接続</block>
   <block id="cfa4ea65df4b282eb8322ca03dbd679d" category="inline-link-macro">スイッチ接続ケーブル接続ガイド</block>
   <block id="d8ddb474e138beeebfa487dca0fe0955" category="list-text">この手順は、直接接続型ストレージにのみ適用されます。スイッチ接続型ストレージの手順については、を参照してください<block ref="655fd8ce12b9f1cd7287415659488f07" category="inline-link-macro-rx"></block>。</block>
@@ -10614,7 +10585,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="dbc74f369dbf214b25d0f839fd4cd2b0" category="list-text">自動ギブバックを無効にした場合はリストアします。</block>
   <block id="37e73c8cf9d7d3b4aeaa58f23b2fcb81" category="paragraph">AFF A1Kストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。</block>
   <block id="f2cde5cb8aa49228f5cb392e473dff51" category="paragraph">クラスタが初期化されたら、をダウンロードしてを実行し、<block ref="48865c7c1d8013246e4e5f705a9105de" category="inline-link-rx"></block>セットアップを確認します。</block>
-  <block id="5d181ca91be1af691d1f01654691cc7b" category="image-alt">A1KストレージシステムとA70またはA90の電源接続図</block>
   <block id="e826d5b26017ec374bf63b94b8a425d9" category="list-text">各電源装置の固定装置を使用して、電源コードを固定します。：a1k-a70-90!：</block>
   <block id="0bf1ff1f561d2a96752b8ee596c65068" category="list-text">4U（HA構成）</block>
   <block id="3ac4d4a9f6b930345bd4ccdb8435d0fb" category="list-text">各コントローラのシステム管理モジュール</block>
@@ -10777,7 +10747,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4e3c3284590d1aa1440e67b3bd65ba6e" category="list-text"><block ref="4e3c3284590d1aa1440e67b3bd65ba6e" category="inline-link-macro-rx"></block></block>
   <block id="370d2e6f20948d3881708f9706576691" category="sidebar">交換の準備</block>
   <block id="19d944a3a323213d80bcdd66ecd5c26f" category="list-text">次のいずれかの方法でオンボードキーマネージャ（OKM）または永遠キーマネージャ（EKM）が設定されているかどうかを確認します。</block>
-  <block id="b3387f173ebbff42e3160605c9db518a" category="list-text">OKMまたはEKMが有効になっているかどうかは、お客様またはシステム管理者に確認してください。</block>
   <block id="5dc17ba8443f8aafae4ca9de8cf9545b" category="list-text">OKMが有効になっているかどうかを確認するには、を使用し<block ref="3c690d79c23fa8c25994507c25377567" prefix=" " category="inline-code"></block>ます。</block>
   <block id="4e447e93a3331607c74749775653cbfc" category="list-text">EKMが有効になっているかどうかを確認するには、を使用し<block ref="001642cb897a8bebce3210207b7e81af" prefix=" " category="inline-code"></block>ます。</block>
   <block id="161a8b7bf3b6a7aaa3bda387e5eab04b" category="list-text">OKMを使用するには、OKMパスフレーズファイルの内容が必要です。</block>
@@ -11119,10 +11088,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3b0feb5303f3eeec93eba65f8eb967ae" category="list-text">他のすべてのシステムコンポーネントが正常に動作していることを確認します。</block>
   <block id="d5607198701fa39cc481498d62a52e7b" category="list-text">システムの他のすべてのコンポーネントが正常に機能していることを確認します。正常に機能していない場合は、に連絡してサポートを受けてください<block ref="468ae937a554dfd3baf209aa53f9f7a6" category="inline-link-rx"></block></block>
   <block id="1b55fb3af000d448310e77a6de6c5161" category="paragraph">NVRAMモジュールは、NVRAM12ハードウェアDIMMとフィールド交換可能DIMMで構成されています。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。</block>
-  <block id="566c293315d81d047304e5fade9a967d" category="list-text">OKMが有効になっているかどうかを確認するには、次のコマンドを使用します。</block>
-  <block id="248c44cfee0de883f1e8e602cd90cfbb" category="paragraph"><block ref="3c690d79c23fa8c25994507c25377567" prefix="" category="inline-code"></block></block>
-  <block id="a0e65297bb80c27972e34aa4810ab81b" category="list-text">EKMが有効になっているかどうかを確認するには、次のコマンドを使用します。</block>
-  <block id="49bfbad696a2529ef03d859ad9b3f40a" category="paragraph"><block ref="001642cb897a8bebce3210207b7e81af" prefix="" category="inline-code"></block></block>
   <block id="c174421f5b8f9ca697d7784c901fd0e7" category="paragraph">ストレージシステムのデータセキュリティを確保するには、暗号化キーのサポートとブートメディアのステータスを確認する必要があります。ONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認し、コントローラをシャットダウンする前にキー管理ツールがアクティブになっているかどうかを確認してください。</block>
   <block id="6e9d75b7e6d83f0d47bf1ca8b289ab30" category="summary">AFF A1Kシステムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページを参照してください。</block>
   <block id="e7202980adb67469897852b1c95d1aa0" category="summary">AFF A1Kストレージシステムのデータセキュリティを確保するには、ブートメディアで暗号化キーのサポートとステータスを確認する必要があります。ONTAPのバージョンでNetAppボリューム暗号化がサポートされているかどうかを確認し、コントローラをシャットダウンする前にキー管理ツールがアクティブになっているかどうかを確認します。</block>
@@ -11923,4 +11888,50 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="40bde7f2324ee2876dd8a09846b14ff4" category="image-alt">電源をオンにする</block>
   <block id="512bdc85c8065a0397ce7025381aaf66" category="image-alt">自動検出システム</block>
   <block id="397249170dcc18ae00c3a7885f97fdc1" category="list-text">ストレージシステムに付属のコンソールケーブルを使用してコンソールケーブルをラップトップまたはコンソールに接続し、コントローラのコンソールポートを管理サブネット上のスイッチに接続します。</block>
+  <block id="caf5b8ffb4d79dceb1fb647290798a01" category="list-text">この手順では、HAペアに内蔵ストレージしか搭載されておらず（外付けシェルフは搭載されていない）、シェルフを1台追加してホットアドすることを前提としています。</block>
+  <block id="93594816ce3f17fed74d263c83a0dbf3" category="image-alt">AFF / ASA A20のシェルフ1台とIOモジュール1台のケーブル接続</block>
+  <block id="1e105a621d0adba625aea7a6ae6a26c4" category="list-text">各コントローラモジュールの2セットのRoCE対応ポート（2つのRoCE対応I/Oモジュール）を使用して1台のシェルフをホットアドする場合は、次の手順を実行します。</block>
+  <block id="ce8013dd06f3fee752bb7a7d4b9238d2" category="image-alt">1台のシェルフと2台のIOモジュールを搭載したAFF / ASA A20のケーブル接続</block>
+  <block id="aa7a979a65afd227664ca4bcf07916aa" category="list-text">この手順では、HAペアに内蔵ストレージしか搭載されておらず（外付けシェルフは搭載されていない）、各コントローラに最大2台のシェルフと2台のRoCE対応I/Oモジュールをホットアドすることを前提としています。</block>
+  <block id="f2a9ba351ff729d0ca9404bb3db069f6" category="image-alt">AFF / ASA A30のケーブル接続</block>
+  <block id="22069d1c29859ffdad9469c1e6747cf1" category="image-alt">AFF A30 / ASAのケーブル接続</block>
+  <block id="612bdab395b71e87cee7fad47c71f93d" category="image-alt">1台のシェルフと1台のIOモジュールを使用したAFF / ASA A70またはA90のケーブル接続</block>
+  <block id="e3292c7d546f92fd0a5ab680be388d1f" category="image-alt">1台のシェルフと2台のIOモジュールを使用したAFF / ASA A70またはA90のケーブル接続</block>
+  <block id="6aa91cf36fd9acfb2a369c09c6c070ca" category="image-alt">2台のシェルフと2台のIOモジュールを搭載したAFF / ASA A70またはA90のケーブル接続</block>
+  <block id="9bb029ef1a9ff9e816e879a364d3c7b6" category="image-alt">2台のシェルフと2台のIOモジュールを使用したAFF / ASA A1Kのケーブル接続</block>
+  <block id="7376879927d2b84ec553cfa3f1bfd0f4" category="image-alt">3台のシェルフと3台のIOモジュールを使用したAFF / ASA A1Kのケーブル接続</block>
+  <block id="de5bea2fd617f7327f73c1c44e37b9a6" category="image-alt">3台のシェルフと4台のIOモジュールを搭載したAFF / ASA A1Kのケーブル接続</block>
+  <block id="db0e24742d4fd4f6f2a732aeac2ca6a3" category="image-alt">4台のシェルフと4台のIOモジュールを搭載したAFF / ASA A1Kのケーブル接続</block>
+  <block id="ac2f75fe6673cb1f5f103f2229eb9ca0" category="image-alt">/ ASA A250 C250またはFAS500fと1台のAFFシェルフおよび1セットのPCIeカードポートのケーブル接続</block>
+  <block id="eaa19193ad1b64f0162e8f312a6ddc47" category="image-alt">1台のNS224シェルフと1セットのオンボードポートを使用したAFF / ASA A400のケーブル接続</block>
+  <block id="bba30f16a0c3755741b0f3e2032fe595" category="image-alt">2台のNS224シェルフと1セットのオンボードポートと1セットのPCIeカード上の1セットのポートを使用した場合の/ ASA A400のケーブル接続</block>
+  <block id="062f2d0d7124d747b94b599ceb1f29ed" category="image-alt">1台のNS224シェルフと1セットのPCIeカードポートを使用したAFF / ASA C400のケーブル接続</block>
+  <block id="ea4ee6dbdfefd4ed125fc31c39deee4c" category="image-alt">2台のNS224シェルフと2セットのPCIeカードポートを備えたAFF / ASA C400のケーブル接続</block>
+  <block id="baa82981e40f9200b81a359d31653dd6" category="image-alt">/ ASA A800またはAFF / ASA C800と1台のAFFシェルフおよび1枚のPCIeカードのケーブル接続</block>
+  <block id="c398a3b33f9866994ec7dd506a0affe1" category="image-alt">2台のNS224シェルフと2台のIOモジュールを搭載したAFF / ASA A900のケーブル接続</block>
+  <block id="0e9ff50f94b0a9a55c9b9c4773ddccbe" category="image-alt">3台のNS224シェルフと4台のIOモジュールを搭載したAFF / ASA A900のケーブル接続</block>
+  <block id="97f00e66a1cda314ebb07a43f08fca5b" category="image-alt">4台のNS224シェルフと4台のIOモジュールを搭載したAFF / ASA A900のケーブル接続</block>
+  <block id="10236a63db20e6dd5b0c0b8f3cbc1c18" category="list-text">2本の電源コードをコントローラの電源装置に接続し、別 々 の回路の電源に接続します。</block>
+  <block id="dba5caf7b75bcd8724abd1b1ca8827fd" category="image-alt">AFF A1K AFF A70 / AFF A90 / FAS70 / FAS90の電源接続図</block>
+  <block id="638f4a62fea5cc77db53abd671ddb8ef" category="example-title">シェルフをAFF A20にケーブル接続</block>
+  <block id="9eec124f47af3a03039f640091e3ed69" category="paragraph">（内蔵シェルフに）ストレージを追加する必要がある場合は、1台のNS224シェルフをAFF A20 HAペアにホットアドできます。</block>
+  <block id="e76cf9924a9de1dd17f1b48f3a38d0cd" category="example-title">シェルフをAFF A30、AFF A50、AFF C30、またはAFF C60にケーブル接続</block>
+  <block id="5820f31f30f8fc695d25c9cec1305cdb" category="paragraph">（内蔵シェルフへの）ストレージの追加が必要な場合は、AFF A30、AFF C30、AFF A50、またはAFF C60 HAペアにNS224シェルフを2台までホットアドできます。</block>
+  <block id="2b5ec68149482145f38e8592a2e4b794" category="example-title">シェルフをASA A20にケーブル接続</block>
+  <block id="c84fe478157d5a5e8c65815d80aa16a6" category="paragraph">（内蔵シェルフに）ストレージを追加する必要がある場合は、ASA A20 HAペアにNS224シェルフを1台までホットアドできます。</block>
+  <block id="bb5cf394b2e920ea8a139221d234cd8f" category="example-title">シェルフをASA A30またはASA A50にケーブル接続</block>
+  <block id="541e9b9bea8f992a6c173f0c44b17452" category="paragraph">（内蔵シェルフに）ストレージを追加する必要がある場合は、ASA A30またはA50のHAペアにNS224シェルフを2台までホットアドできます。</block>
+  <block id="46aa3bf0a87f8519f8e9314ed7186c68" category="paragraph">ストレージを追加する必要がある場合は、最大1台のNS224シェルフをASA A250またはASA C250 HAペアにホットアドできます。</block>
+  <block id="74259516da197cf641342dca62af2c0b" category="paragraph">NS224シェルフをホットアド用にケーブル接続する方法は、ASA A400とASA C400のどちらのHAペアを使用しているかによって異なります。</block>
+  <block id="5a9c7ba8fea538e8bddca7cfd05765f9" category="paragraph">ASA A800またはASA C800のHAペアでNS224シェルフをケーブル接続する方法は、ホットアドするシェルフの数と、コントローラで使用するRoCE対応ポートセットの数（1つまたは2つ）によって異なります。</block>
+  <block id="6bb205a0be0fdef8b8935f61e328f79d" category="paragraph">ストレージの追加が必要な場合は、 ASA A900 HA ペアに最大 3 台の NS224 ドライブシェルフを（合計 4 台のシェルフに）ホットアドできます。</block>
+  <block id="74375be821a0ccfdaa2aae68f1a39391" category="list-text">AFFシステムの場合：</block>
+  <block id="f7e7abd6131f4502c1bda794831656d2" category="list-text">ASAシステムの場合：</block>
+  <block id="c1ec0f43de6728212fc94985d5f83feb" category="admonition">ASA A1K HAペアを使用していて、3番目のシェルフをホットアドし、3番目または4番目のRoCE対応I/Oモジュールを各コントローラに取り付ける場合、3番目のシェルフは3番目または3番目および4番目のI/Oモジュールにのみケーブル接続されます。既存のシェルフをケーブルで再接続する必要はありません。</block>
+  <block id="80e4582b9d6f2e4fef63bc13dc0ddad1" category="open-title">ASA A70またはASA A90</block>
+  <block id="ba8d903e745090016b0afab400d33f7c" category="open-title">ASA A800またはASA C800</block>
+  <block id="ade2052b1dc75cccb7fc7b0760456566" category="open-title">ASA A400またはASA C400</block>
+  <block id="18b75697f84707c97e051581b495caae" category="list-text">ASA A400の場合：</block>
+  <block id="f08c247bf18a7d50e52f66010faca66f" category="list-text">ASA C400の場合：</block>
+  <block id="2aba7ab5e3f8f696965da4208fe4dd23" category="open-title">ASA A30またはASA A50</block>
 </blocks>

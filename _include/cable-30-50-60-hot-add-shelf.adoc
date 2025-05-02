@@ -2,8 +2,6 @@
 :allow-uri-read: 
 
 
-（内蔵シェルフへの）ストレージの追加が必要な場合は、AFF A20、AFF A30、AFF C30、AFF A50、またはAFF C60のHAペアにNS224シェルフを2台までホットアドできます。
-
 .作業を開始する前に
 * を確認しておく必要があります link:requirements-hot-add-shelf.html["ホットアドの要件とベストプラクティス"]。
 * の該当する手順を完了しておく必要があります link:prepare-hot-add-shelf.html["準備-シェルフのホットアド"]。
@@ -11,12 +9,7 @@
 
 
 .このタスクについて
-* この手順では、HAペアに内蔵ストレージのみが搭載され（外付けシェルフは搭載されていない）、次のいずれかの状況を想定しています。
-+
-** AFF A20のシェルフを1台までホットアドできます。
-** AFF A30、AFF C30、AFF A50、またはAFF C60の各コントローラで最大2台のシェルフと2台のRoCE対応I/Oモジュールをホットアドします。
-
-
+* この手順では、HAペアに内蔵ストレージしか搭載されておらず（外付けシェルフは搭載されていない）、各コントローラに最大2台のシェルフと2台のRoCE対応I/Oモジュールをホットアドすることを前提としています。
 * この手順では、次のホットアドシナリオについて説明します。
 +
 ** 各コントローラにRoCE対応I/Oモジュールが1つ搭載されたHAペアに最初のシェルフをホットアドします。
@@ -68,7 +61,7 @@ NOTE: この手順では、RoCE対応I/Oモジュールがスロット3に取り
 次の図は、各コントローラモジュールで RoCE 対応 I/O モジュールを 1 つ使用した、 1 台のホットアドシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_g_1shelf_1card_ieops-2002.svg[AFF A20のケーブル接続,452px,AFF C30]
+image::../media/drw_ns224_g_1shelf_1card_ieops-2002.svg[AFF / ASA A30のケーブル接続,452px,AFF/ASA A50]
 
 
 
@@ -95,7 +88,7 @@ NOTE: この手順では、RoCE対応I/Oモジュールがスロット3と1に�
 
 次の図は、各コントローラモジュールで2つのRoCE対応I/Oモジュールを使用した、1台のホットアドシェルフのケーブル接続を示しています。
 
-image::../media/drw_ns224_g_1shelf_2card_ieops-2005.svg[AFF A20のケーブル接続,452px,AFF C30]
+image::../media/drw_ns224_g_1shelf_2card_ieops-2005.svg[AFF / ASA A30のケーブル接続,452px,AFF/ASA A50]
 
 
 
@@ -111,7 +104,7 @@ image::../media/drw_ns224_g_1shelf_2card_ieops-2005.svg[AFF A20のケーブル�
 
 次の図は、各コントローラモジュールで2つのRoCE対応I/Oモジュールを使用した2台のホットアドシェルフのケーブル接続を示しています。
 
-image::../media/drw_ns224_g_2shelf_2card_ieops-2003.svg[AFF A20のケーブル接続,452px,AFF C30]
+image::../media/drw_ns224_g_2shelf_2card_ieops-2003.svg[AFF A30 / ASAのケーブル接続,452px,AFF/ASA A50]
 
 |===
 . ホットアドしたシェルフがを使用して正しくケーブル接続されていることを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。

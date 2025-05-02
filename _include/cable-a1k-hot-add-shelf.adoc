@@ -2,8 +2,6 @@
 :allow-uri-read: 
 
 
-AFF A1K HAペアには、最大3台のNS224シェルフ（合計4台のシェルフ）をホットアドできます。
-
 .作業を開始する前に
 * を確認しておく必要があります link:requirements-hot-add-shelf.html["ホットアドの要件とベストプラクティス"]。
 * の該当する手順を完了しておく必要があります link:prepare-hot-add-shelf.html["シェルフのホットアドの準備"]。
@@ -36,7 +34,7 @@ AFF A1K HAペアには、最大3台のNS224シェルフ（合計4台のシェル
 次の図は、各コントローラにRoCE対応I/Oモジュールが2つ搭載されたHAペアの2台目のシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_vino_m_2shelves_2cards_ieops-1642.svg[2台のシェルフと2台のIOモジュールを搭載したAFF A1Kのケーブル接続]
+image::../media/drw_ns224_vino_m_2shelves_2cards_ieops-1642.svg[2台のシェルフと2台のIOモジュールを使用したAFF / ASA A1Kのケーブル接続]
 
 
 
@@ -50,7 +48,7 @@ image::../media/drw_ns224_vino_m_2shelves_2cards_ieops-1642.svg[2台のシェル
 次の図は、各コントローラに3つのRoCE対応I/Oモジュールを搭載したHAペアの3台目のシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_vino_m_3shelves_3cards_ieops-1643.svg[3台のシェルフと3台のIOモジュールを搭載したAFF A1Kのケーブル接続]
+image::../media/drw_ns224_vino_m_3shelves_3cards_ieops-1643.svg[3台のシェルフと3台のIOモジュールを使用したAFF / ASA A1Kのケーブル接続]
 
 
 
@@ -64,7 +62,7 @@ image::../media/drw_ns224_vino_m_3shelves_3cards_ieops-1643.svg[3台のシェル
 次の図は、各コントローラに4つのRoCE対応I/Oモジュールを搭載したHAペアの3番目のシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_vino_m_3shelves_4cards_ieops-1644.svg[3台のシェルフと4台のIOモジュールを搭載したAFF A1Kのケーブル接続]
+image::../media/drw_ns224_vino_m_3shelves_4cards_ieops-1644.svg[3台のシェルフと4台のIOモジュールを搭載したAFF / ASA A1Kのケーブル接続]
 
 
 
@@ -78,7 +76,7 @@ image::../media/drw_ns224_vino_m_3shelves_4cards_ieops-1644.svg[3台のシェル
 次の図は、HAペアの4台目のシェルフと4台のRoCE対応I/Oモジュールのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_vino_m_4shelves_4cards_ieops-1645.svg[4台のシェルフと4台のIOモジュールを搭載したAFF A1Kのケーブル接続]
+image::../media/drw_ns224_vino_m_4shelves_4cards_ieops-1645.svg[4台のシェルフと4台のIOモジュールを搭載したAFF / ASA A1Kのケーブル接続]
 
 
 

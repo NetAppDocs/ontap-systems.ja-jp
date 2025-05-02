@@ -2,8 +2,6 @@
 :allow-uri-read: 
 
 
-AFF A800またはAFF C800のHAペアでNS224シェルフをケーブル接続する方法は、ホットアドするシェルフの数と、コントローラで使用するRoCE対応ポートセットの数（1つまたは2つ）によって異なります。
-
 .作業を開始する前に
 * を確認しておく必要があります link:requirements-hot-add-shelf.html["ホットアドの要件とベストプラクティス"]。
 * の該当する手順を完了しておく必要があります link:prepare-hot-add-shelf.html["準備-シェルフのホットアド"]。
@@ -28,7 +26,7 @@ NOTE: この手順では、 RoCE 対応の PCIe カードがスロット 5 に�
 次の図は、各コントローラでRoCE対応PCIeカードを1枚使用した、ホットアドした1台のシェルフのケーブル接続を示しています。
 
 +
-image::../media/drw_ns224_a800_c800_1shelf_IEOPS-964.svg[AFF A800またはAFF C800と1台のNS224シェルフおよび1枚のPCIeカードのケーブル接続]
+image::../media/drw_ns224_a800_c800_1shelf_IEOPS-964.svg[/ ASA A800またはAFF / ASA C800と1台のAFFシェルフおよび1枚のPCIeカードのケーブル接続]
 
 
 
