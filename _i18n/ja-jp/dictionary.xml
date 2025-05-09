@@ -9787,7 +9787,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="72b54ea7be3a13b4755dc4521c8d0af6" category="paragraph">カムハンドルを持ち、もう一方の手でドライブを支えながらドライブベイから引き出します。</block>
   <block id="0093c88dee6ce91e0bd8ccb1cfbc03ff" category="admonition">ドライブは壊れやすいので、取り扱いを最小限に抑えて損傷を防ぎます。</block>
   <block id="0649d37403624118b801efa8956dc716" category="section-title">手順3：装置ラックまたはシステムキャビネット内からシャーシを交換する</block>
-  <block id="e5a4b20c56ed46e589289f6e1a9368dd" category="paragraph">障害のあるシャーシを装置ラックまたはシステムキャビネットから取り外し、交換用シャーシを取り付け、ドライブ、ドライブブランクを取り付けてから、ベゼルを取り付けます。</block>
   <block id="eb8def779f4d3e61a371ec65c0cc0128" category="list-text">障害のあるシャーシマウントポイントからネジを外します。</block>
   <block id="16e252393218a73fc25b829675a86fce" category="paragraph">この手順の後半で使用するために、ネジを脇に置きます。</block>
   <block id="433916ec8110bbee1005399f55ede944" category="admonition">ストレージシステムがNetAppシステムキャビネットに搭載されて出荷された場合、シャーシを取り外す前に、シャーシの背面にある追加のネジを外す必要があります。</block>
@@ -11808,7 +11807,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="64013ec345bda7b07597c5bf34eac5fe" category="open-title">オプション1：NS224シェルフ</block>
   <block id="8a978cde5ab4fac3e67487580bc3a51a" category="open-title">オプション2：SASシェルフ</block>
   <block id="2cc2225989c416fa40923a89f7f8d99c" category="doc">ブートメディアの暗号化キーのサポートとステータスを確認します（FAS50）。</block>
-  <block id="e65767537c6f00cc3bec96359db6404a" category="summary">ハードウェア障害が必要とする場合は、FAS50ストレージ・システムのシャーシを交換します。交換プロセスでは、コントローラと電源装置（PSU）の取り外し、キャッシングモジュールの取り外し、交換用シャーシの取り付け、およびシャーシコンポーネントの再取り付けを行います。</block>
   <block id="aa7129f47a0b0a00e74ba4024fe7ba35" category="paragraph">ハードウェア障害が必要とする場合は、FAS50ストレージ・システムのシャーシを交換します。交換プロセスでは、コントローラの取り外し、キャッシングモジュールとドライブブランクの取り外し、交換用シャーシの取り付け、およびシャーシコンポーネントの再取り付けを行います。</block>
   <block id="d3f6a519d78eb3e642c0549ced5f8f2f" category="summary">FAS50ストレージ・システムのコントローラを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。具体的には、システムの他のすべてのコンポーネントが正常に動作していること、正しい交換用コントローラがあることの確認、コントローラのコンソール出力のテキストログファイルへの保存が含まれます。</block>
   <block id="3034b89fc8e6fc3ae99585d8f1eab80e" category="doc">コントローラの交換要件- FAS50</block>
@@ -11934,4 +11932,23 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="18b75697f84707c97e051581b495caae" category="list-text">ASA A400の場合：</block>
   <block id="f08c247bf18a7d50e52f66010faca66f" category="list-text">ASA C400の場合：</block>
   <block id="2aba7ab5e3f8f696965da4208fe4dd23" category="open-title">ASA A30またはASA A50</block>
+  <block id="e3fb1d8bd564bfe9f807ba42e5cd7b33" category="paragraph">キャッシングモジュール前面のリリースボタンを押して、カムハンドルを開きます。</block>
+  <block id="06269d1797937a16e290698098cc8abd" category="paragraph">カムハンドルを下に回転させて、キャッシングモジュールをミッドプレーンから外します。</block>
+  <block id="469c355b09315b0a1d1690c1923180a4" category="paragraph">カムハンドルを持ち、もう一方の手でキャッシングモジュールを支えながら、キャッシングモジュールをドライブベイから引き出します。</block>
+  <block id="e84b84ef6157f4a35245509c8a7fa353" category="paragraph">キャッシングモジュールを取り外すときは、重量があるので必ず両手で支えながら作業してください。</block>
+  <block id="feec4c6e74f9f529edb4ef65e2cc4efc" category="paragraph">障害のあるシャーシを装置ラックまたはシステムキャビネットから取り外し、交換用シャーシを取り付け、コントローラを取り付け、キャッシングモジュールとドライブブランクを取り付けてから、ベゼルを取り付けます。</block>
+  <block id="19b2479c4fb73cb4e1e7a5cd66cd9fa9" category="list-text">カムハンドルを開いた状態で、両手でキャッシングモジュールを挿入します。</block>
+  <block id="5b42dc5254df979588b011980c1a8adc" category="list-text">キャッシングモジュールが停止するまでそっと押します。</block>
+  <block id="73e8bab771e1e37a562d7cdbeb444153" category="list-text">キャッシングモジュールがミッドプレーンに完全に装着され、カチッという音がして固定されるまで、カムハンドルを閉じます。</block>
+  <block id="82a8073ecc9994385ee15cd53ba7d96a" category="paragraph">カムハンドルは、キャッシングモジュールの前面に揃うようにゆっくりと閉じてください。</block>
+  <block id="0c1eef5d5ee997a38d2bb1303bcee89d" category="list-text">必要に応じて、残りのキャッシングモジュールに対して同じ手順を繰り返します。</block>
+  <block id="45d69e7bdfec0647cf3523f57e30a808" category="section-title">手順2：障害のあるシャーシからドライブを取り外す</block>
+  <block id="c0055725498ec7c6a2d459f6d18aef46" category="paragraph">障害のあるシャーシからすべてのドライブとドライブブランクを取り外して、以降の手順で交換用シャーシに取り付けられるようにする必要があります。</block>
+  <block id="3e56a6d3defe800cc97429c918a7c4fb" category="list-text">ドライブとドライブブランクを取り外します。</block>
+  <block id="ba52981b53ce10a301f84e2da386c778" category="admonition">交換用シャーシの同じドライブベイに取り付ける必要があるため、各ドライブとドライブダミーを取り外したドライブベイを記録しておいてください。</block>
+  <block id="ab32ae446e6fa5de50a5d631bbe01daf" category="list-text">静電気防止処置を施したカートまたはテーブルの上にドライブを置きます。</block>
+  <block id="17df5870a90dff11dc4f027f001751a7" category="section-title">手順2：装置ラックまたはシステムキャビネット内からシャーシを交換する</block>
+  <block id="277a5698809db74260fd2ddda1e6acd9" category="paragraph">障害のあるシャーシを装置ラックまたはシステムキャビネットから取り外し、交換用シャーシを取り付け、ドライブ、ドライブブランクを取り付けてから、ベゼルを取り付けます。</block>
+  <block id="a6d6e73e138675b6ffbbb0e4663b2d5d" category="list-text">障害のあるシャーシから取り外したドライブとドライブブランクを交換用シャーシに取り付けます。</block>
+  <block id="4a7738e24d9329241e05c40def3be102" category="admonition">ドライブとドライブダミーは、交換用シャーシの同じドライブベイに取り付ける必要があります。</block>
 </blocks>
