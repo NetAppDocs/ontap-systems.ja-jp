@@ -16,7 +16,7 @@ summary: 電源がオンになっている NS224 ドライブシェルフおよ�
 .作業を開始する前に
 障害が発生したFRU（ターゲットNSM）でNSMを取り外したときにシェルフの接続が維持されるように、シェルフのパートナーNSMが稼働していて、正しくケーブル接続されている必要があります。
 
-+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"^]
 
 .このタスクについて
 * NVMe シェルフモジュール（ NSM ）を取り外したあと、少なくとも 70 秒待ってから取り付けるようにしてください。

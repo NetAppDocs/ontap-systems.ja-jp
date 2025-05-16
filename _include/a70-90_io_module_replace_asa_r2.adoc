@@ -133,20 +133,29 @@ I/O モジュールが取り付けられていたスロットを記録してお�
 
 == 手順3：コントローラをリブートする
 
-I/O モジュールを交換したら、コントローラモジュールをリブートする必要があります。
+I/Oモジュールを交換したら、コントローラをリブートする必要があります。
 
 .手順
-. Loaderプロンプトからノードをリブートします。'bye'
+. LOADERプロンプトからコントローラをリブートします。
++
+`bye`
+
 +
 
-NOTE: これにより、I/Oカードおよびその他のコンポーネントが再初期化され、ノードがリブートされます。
+NOTE: 障害のあるコントローラをリブートすると、I/Oモジュールおよびその他のコンポーネントも再初期化されます。
 
+. ノードを通常動作に戻します。
 +
+「 storage failover giveback -ofnode _impaired_node_name _
 
-NOTE: 変換が完了したら必ずメンテナンスモードを終了してください。
+. 正常なコントローラのコンソールから自動ギブバックをリストアします。
++
+`storage failover modify -node local -auto-giveback _true_`
 
-. ノードを通常動作に戻します。 storage failover giveback -ofnode impaired_node_name
-. 自動ギブバックを無効にした場合は、再度有効にします。「 storage failover modify -node local-auto-giveback true 」
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアします。
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
 
 
 

@@ -312,7 +312,7 @@ NOTE: スロット6と7からI/Oモジュールを移動するには、これら
 
 システム管理モジュールを交換用コントローラモジュールに移動します。
 
-image::../media/drw_a70-90_sys-mgmt_replace_ieops-1373.svg[システム管理モジュールを交換してください]
+image::../media/drw_70-90_sys-mgmt_remove_ieops-1817.svg[システム管理モジュールの移動]
 
 [cols="1,4"]
 |===
@@ -322,20 +322,6 @@ image::../media/drw_a70-90_sys-mgmt_replace_ieops-1373.svg[システム管理モ
 image::../media/icon_round_1.png[番号1]
  a| 
 システム管理モジュールのカムラッチ
-
-
-
- a| 
-image::../media/icon_round_2.png[番号2]
- a| 
-ブートメディアロックボタン
-
-
-
- a| 
-image::../media/icon_round_3.png[番号3]
- a| 
-交換用システム管理モジュール
 
 |===
 . 障害のあるコントローラモジュールからシステム管理モジュールを取り外します。

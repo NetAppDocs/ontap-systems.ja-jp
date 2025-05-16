@@ -31,7 +31,7 @@ FAS70またはFAS90システムを設置して設定するには、ハードウ�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:install-power-hardware.html["FAS70またはFAS90ストレージ・システムの電源をオンにする"]
 [role="quick-margin-para"]
-セットアップ内で各シェルフが一意に識別されるように、コントローラの電源をオンにして一意のシェルフIDを割り当てます。
+コントローラの電源をオンにする前に、各NS224シェルフの電源をオンにし、一意のシェルフIDを割り当ててセットアップで各シェルフを一意に識別し、ラップトップまたはコンソールをコントローラに接続してから、コントローラを電源に接続します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"]link:install-complete.html["ストレージシステムのセットアップの完了"]
 [role="quick-margin-para"]

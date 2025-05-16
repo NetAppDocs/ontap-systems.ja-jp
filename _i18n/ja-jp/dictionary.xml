@@ -7948,7 +7948,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="aa0bcb347c0d996ed6d3094ca9407905" category="list-text">所定の位置に固定されるまで、キャリアを交換用コントローラモジュールの奥までそっと押し込みます。</block>
   <block id="e156abc6c55d67bc52379c9afbf08a38" category="section-title">手順7：システム管理モジュールを移動する</block>
   <block id="0970f7cff19d17cbcf6cda476c075ee2" category="paragraph">システム管理モジュールを交換用コントローラモジュールに移動します。</block>
-  <block id="94b3eb3106138f7bc53935ffbe690cbf" category="paragraph">交換用システム管理モジュール</block>
   <block id="18dd6244b942460d88413f477ea1a813" category="list-text">障害のあるコントローラモジュールからシステム管理モジュールを取り外します。</block>
   <block id="953f96c587cb69d7c4ffdd62048a1067" category="list-text">カムレバーを完全に下に回転させます。</block>
   <block id="d02b3bf2c9834e1200fb66a2408e400a" category="list-text">カムレバーに指を入れ、モジュールをシステムからまっすぐ引き出します。</block>
@@ -8819,7 +8818,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5ff2c2e371b329794d430555ced9e3f7" category="paragraph">ハードウェアをケーブル接続するには、まずストレージコントローラをネットワークに接続し、次にコントローラをストレージシェルフに接続します。</block>
   <block id="285d6553cd8c7daec6f0d12aba91379c" category="inline-link-macro">AFF A1Kストレージ・システムの電源をオンにする</block>
   <block id="7975efdb78ae2356ecfb7785916813ea" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="e440a513b8c5f4e1fdb4e9cd395eb57d" category="inline-link-macro-rx"></block></block>
-  <block id="9adaba33c41b009e4561e4c9bfed5074" category="paragraph">セットアップ時に各シェルフが一意に識別されるように、コントローラの電源をオンにする前に、各NS224シェルフの電源をオンにして一意のシェルフIDを割り当てます。</block>
   <block id="54cd8d1881f4be7195e616a39249670b" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block><block ref="ed796137dcbf61e6432604e7b2936e62" category="inline-link-macro-rx"></block></block>
   <block id="80c97b00983d1544cf5059e1ae224d3c" category="paragraph">システムのセットアップを完了するには、ブラウザでコントローラのIPアドレスを指定してONTAPシステムマネージャにアクセスします。セットアップウィザードを使用して、AFF A1Kストレージシステムのクラスタを設定できます。</block>
   <block id="cb3c09e0aea666ca89714e771fe2a341" category="paragraph">AFF A1Kストレージシステムのラックハードウェアを設置し、コントローラとストレージシェルフのケーブルを接続したら、ストレージシェルフとコントローラの電源をオンにする必要があります。</block>
@@ -9012,7 +9010,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="de6952744c4efa4af3b088924141554c" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="47f9cb95cf9bc2df13978b8a91985b13" category="inline-link-macro-rx"></block></block>
   <block id="a817c10af381296411c154c716af48b7" category="inline-link-macro">FAS70またはFAS90ストレージ・システムの電源をオンにする</block>
   <block id="b2f6fbbaf5842fe5addbaac3aabc158d" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="164a6e7d5b74e1ce7eb1009b0b13e4f3" category="inline-link-macro-rx"></block></block>
-  <block id="dca1bb25aacd58a886c534d26e411b34" category="paragraph">セットアップ内で各シェルフが一意に識別されるように、コントローラの電源をオンにして一意のシェルフIDを割り当てます。</block>
   <block id="7bf2fa9e265a50a618153953f60062b9" category="paragraph">システムのセットアップを完了するには、ブラウザでコントローラのIPアドレスを指定してONTAPシステムマネージャにアクセスします。セットアップウィザードを使用して、ストレージシステムのクラスタを設定できます。</block>
   <block id="d9eb7005000baef74822bf5afd90707b" category="doc">ストレージ・システムの電源をオンにする（FAS70およびFAS90）</block>
   <block id="f6d3448cfd45b6a4ae23d47aec38dd6f" category="paragraph">FAS70 0r FAS90ストレージシステムのラックハードウェアを設置し、コントローラとストレージシェルフのケーブルを接続したら、ストレージシェルフとコントローラの電源をオンにする必要があります。</block>
@@ -9368,7 +9365,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="85ef91c4d71faa53c83efc7222148253" category="video-title">NS224シェルフのブートメディアを交換</block>
   <block id="bed8800ffb3dfb17d15fabcbf21305be" category="video-title">NS224シェルフのDIMMの交換</block>
   <block id="adf9a21a79092388f61e544af11cd756" category="video-title">NS224シェルフのファンの交換</block>
-  <block id="ed5f0b1fadc9d155c332ddd3a2c8910b" category="video-title">NS224シェルフの電源装置のホットスワップ</block>
   <block id="4dc161fec1e803228a4a6e64a87cc800" category="video-title">NS224シェルフのRTCバッテリの交換</block>
   <block id="63de15d7ebdc2c559ae57bca24a50ba0" category="paragraph">ストレージシステムでヘルスモニタアラートに基づく大量のCECC（修正可能なエラー訂正コード）エラーや修正不可能なECCエラーなどのエラーが発生した場合は、コントローラのDIMMを交換する必要があります。これらのエラーは通常、DIMMの1つの障害が原因でストレージシステムがONTAPをブートできないことが原因です。</block>
   <block id="e2c22e2725f2ca1633de7f84c13e7ee9" category="list-text">障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。<block ref="30edaf7c9fa43c78aeaf4b8fabb7af1a" prefix=" " category="inline-code"></block></block>
@@ -9592,14 +9588,11 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1e80f086f2d3ddea0cd02baa25f9c2f1" category="list-text">NIC I/Oモジュールを取り外し、新しいNIC I/Oモジュールを取り付けた場合は、ポートごとに次のnetworkコマンドを使用します。</block>
   <block id="157602c08bdec493e8c79f5e41971ab6" category="paragraph"><block ref="9dedaa5871e5e9684cbae52f5e1b987d" prefix="" category="inline-code"></block></block>
   <block id="ff7274e5c00dade3058bf32828127837" category="list-text">NIC I/Oモジュールを取り外してストレージI/Oモジュールを取り付けた場合は、NS224シェルフを取り付けてケーブル接続します（を参照）<block ref="4dfda7c2f93914990922f65bd50f90b3" category="inline-link-macro-rx"></block>。</block>
-  <block id="fe7cc4281bcf5c347bdaa6bdb704b29b" category="list-text">Loaderプロンプトからノードをリブートします。'bye'</block>
   <block id="91dfaaed30791a3d6d5402ba403f8f73" category="paragraph">空きスロットがある場合、またはすべてのスロットに空きがある場合は、AFF A1KストレージシステムにI/Oモジュールを追加できます。</block>
   <block id="8b6b47c9ffbf56147eb39245a0848071" category="open-title">オプション2：MetroCluster構成</block>
   <block id="e1e5a630a2475cff2c5c9107cbfff228" category="section-title">手順2：新しいI/Oモジュールを追加する</block>
   <block id="aaa31e70b1e8d53e84fc317dfdcef1ed" category="paragraph">空きスロットがある場合、またはすべてのスロットに空きがある場合は、I/OモジュールをAFF A70およびAFF A90ストレージシステムに追加できます。</block>
   <block id="fc201f3061cf0fb0ac92be830093fe44" category="paragraph">空きスロットがある場合、またはすべてのスロットに空きがある場合は、AFF A900ストレージシステムにI/Oモジュールを追加できます。</block>
-  <block id="5342cf7e14ace50bbfab26225b3e6f39" category="paragraph">空きスロットがある場合、またはすべてのスロットに空きがある場合は、ASA A70およびASA A90ストレージシステムにI/Oモジュールを追加できます。</block>
-  <block id="cac74c301a508cf350f8f41a7de866a0" category="paragraph">空きスロットがある場合、またはすべてのスロットに空きがある場合は、ASA A1KストレージシステムにI/Oモジュールを追加できます。</block>
   <block id="94aa992895c11cf963b2b749b84aa267" category="paragraph">空きスロットがある場合、またはすべてのスロットに空きがある場合は、FAS70およびFAS90ストレージ・システムにI/Oモジュールを追加できます。</block>
   <block id="bc049e4428d592b69605104cc85d56bc" category="section-title">手順2：新しいI/Oモジュールを追加する</block>
   <block id="92ba658b9a66d0825f0f084b7da309b7" category="list-text">システムが暗号化を使用していない場合は、_option 1 Normal Bootを選択します。暗号化を使用していない場合は、に進みます。<block ref="d767082d20397ebb99e586749eda3a08" category="inline-link-macro-rx"></block></block>
@@ -10439,7 +10432,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="36af6c0789f3b35c6a8c474e0b4e66ee" category="image-alt">ドライブを取り外します。</block>
   <block id="ebf49f799b81f16663764f137403e280" category="doc">ファンモジュールの交換- NS224シェルフ</block>
   <block id="c470458262a5bbc89c9003e2f2f84bd8" category="paragraph">ファンモジュールの一方または両方のファンに障害が発生した場合は、ファンモジュールを交換できます。この手順は、I/Oを実行中に電源がオンになっているNS224ドライブシェルフで無停止で完了できます。</block>
-  <block id="0830cf51d8ae2e9118a554fe97fb1d02" category="paragraph">+<block ref="3868a54921a81264bddb64b574765582" category="inline-link-rx"></block></block>
   <block id="4b691b95d8c60f28c5dfd9dd24941ef6" category="list-text">を更新するには<block ref="585e085c167dffb4091a9c937b46294a" category="inline-link-rx"></block></block>
   <block id="9fe844dd87b3416bab8a90cbcc35c19a" category="paragraph">次のアニメーションは、NS224のファンをNSM100モジュールに交換する際に役立ちます。</block>
   <block id="ca2096484e663abca9dc4fa6ac2051b2" category="paragraph">各ケーブルが接続されているNSMポートをメモします。この手順の後半でNSMを再挿入するときに、ケーブルを同じポートに再接続します。</block>
@@ -10503,8 +10495,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b254c8d5380d00a9cf9dc07aeb888a8d" category="list-text">青いタブ（AC PSU）またはテラコッタタブ（DC PSU）を親指で押して、ロックを解除します。</block>
   <block id="4a6d2236af73602673ffd2f6298b026e" category="list-text">シェルフ内の両方のnsmが同じバージョンのファームウェア（バージョン0300以降）を実行していることを確認します。</block>
   <block id="31420926f47d4e93ca3eefcdb39987c8" category="list-text">*ベストプラクティス：* NSMから電源装置を取り外してから2分以内に交換することを推奨します。</block>
-  <block id="ceb0dec0c605867adba81fcf239c6a9f" category="list-text">NSM100モジュールを搭載したNS224シェルフのAC電源装置を交換する場合は、次のアニメーションを参照して、作業を開始する前に手順を確認してください。</block>
-  <block id="797face4a3e2a79dbe5e7ff09179e113" category="example-title">NS224のAC電源装置とNSM100モジュールの交換</block>
   <block id="7d232f34386955a5ab2c7bf405061047" category="paragraph">AC電源装置を交換するには、次の手順を実行します。</block>
   <block id="8edff7940704d1573546aa46ccb024a4" category="image-alt">AC PSUの取り外し</block>
   <block id="c1eed2f70b95decf23863086c87c701f" category="list-text">両手で支えながら、電源装置の端をNSMの開口部に合わせます。</block>
@@ -11951,4 +11941,13 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="277a5698809db74260fd2ddda1e6acd9" category="paragraph">障害のあるシャーシを装置ラックまたはシステムキャビネットから取り外し、交換用シャーシを取り付け、ドライブ、ドライブブランクを取り付けてから、ベゼルを取り付けます。</block>
   <block id="a6d6e73e138675b6ffbbb0e4663b2d5d" category="list-text">障害のあるシャーシから取り外したドライブとドライブブランクを交換用シャーシに取り付けます。</block>
   <block id="4a7738e24d9329241e05c40def3be102" category="admonition">ドライブとドライブダミーは、交換用シャーシの同じドライブベイに取り付ける必要があります。</block>
+  <block id="d939be8abe0645a186c5e2276ed7d76d" category="image-alt">システム管理モジュールの移動</block>
+  <block id="2ca01560515b774bbe8010d626eaa173" category="paragraph">コントローラの電源をオンにする前に、各NS224シェルフの電源をオンにし、一意のシェルフIDを割り当ててセットアップで各シェルフを一意に識別し、ラップトップまたはコンソールをコントローラに接続してから、コントローラを電源に接続します。</block>
+  <block id="80fa214fde654e9ccd63d0efc1c1aa45" category="paragraph">ストレージシステムにはロケーションLEDが2つあり、各コントローラに1つずつあります。ロケーションLEDは30分間点灯したままになります。</block>
+  <block id="89aaebc504e24628ae2ed382d4f18074" category="paragraph">空きスロットがある場合、またはすべてのスロットに空きがある場合は、ASA A70およびASA A90ストレージシステムにI/Oモジュールを追加できます。.このタスクについて</block>
+  <block id="40f579c384e8adf65664e4d24345733d" category="paragraph">空きスロットがある場合、またはすべてのスロットに空きがある場合は、ASA A1KストレージシステムにI/Oモジュールを追加できます。.このタスクについて</block>
+  <block id="f4eebdeb5b8898b082de73e6e4949845" category="list-text">この手順は、NSM100またはNSM100Bモジュールを搭載したNS224シェルフに該当します。</block>
+  <block id="3d30da9db64c70df76ae8eab8c37ddf1" category="list-text">NS224シェルフのAC電源装置を交換する場合は、次のアニメーションを参照して、作業を開始する前に手順を確認してください。このアニメーションでは、NSM100モジュールを搭載したNS224を示していますが、手順はNSM100Bモジュールを搭載したシェルフでも同じです。</block>
+  <block id="e772ad168b6f97f132982a96392cd046" category="example-title">NS224のAC電源装置の交換</block>
+  <block id="0dcc8efe101bb5e6350d650ce519cbfa" category="video-title">NS224シェルフのAC電源装置のホットスワップ</block>
 </blocks>
