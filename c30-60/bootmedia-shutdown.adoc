@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff c30, aff c60, shut down the controller 
 summary: AFF C30またはAFF C60ストレージシステムの障害のあるコントローラをシャットダウンして、データ損失を防ぎ、ブートメディアの交換時にシステムの安定性を確保します。 
 ---
-= 障害のあるコントローラをシャットダウン- AFF C30とAFF C60
+= コントローラをシャットダウンしてブートメディアを交換します - AFF C30およびAFF C60
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-AFF C30またはAFF C60ストレージシステムの障害のあるコントローラをシャットダウンして、データ損失を防ぎ、ブートメディアの交換時にシステムの安定性を確保します。
+ブート メディアを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、AFF C30 または AFF C60 ストレージ システムのコントローラをシャットダウンします。
 
 [role="tabbed-block"]
 ====

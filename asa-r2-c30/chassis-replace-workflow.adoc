@@ -1,0 +1,30 @@
+---
+permalink: asa-r2-c30/chassis-replace-workflow.html 
+sidebar: sidebar 
+keywords: asa c30, replace the chassis workflow 
+summary: ASA C30 ストレージ システムのシャーシを交換するには、交換要件の確認、コントローラのシャットダウン、シャーシの交換、およびシステム動作の検証を行います。 
+---
+= シャーシの交換ワークフロー- ASA C30
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA C30 ストレージ システムのシャーシを交換するには、交換要件の確認、コントローラのシャットダウン、シャーシの交換、およびシステム動作の検証を行います。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:chassis-replace-requirements.html["シャーシの交換要件の確認"]
+[role="quick-margin-para"]
+シャーシを交換するための要件を確認します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:chassis-replace-shutdown.html["コントローラをシャットダウン"]
+[role="quick-margin-para"]
+シャーシのメンテナンスを実施できるように、コントローラをシャットダウンします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:chassis-replace-move-hardware.html["シャーシを交換してください"]
+[role="quick-margin-para"]
+ドライブとドライブ ブランク、コントローラ (電源装置付き)、およびベゼルを障害のあるシャーシから新しいシャーシに移動し、障害のあるシャーシを障害のあるシャーシと同じモデルの新しいシャーシと交換して、シャーシを交換します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:chassis-replace-complete-system-restore-rma.html["シャーシ交換後の処理"]
+[role="quick-margin-para"]
+シャーシのHA状態を確認し、障害が発生した部分をNetAppに戻します。

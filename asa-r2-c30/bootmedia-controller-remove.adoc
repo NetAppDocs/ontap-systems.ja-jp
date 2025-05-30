@@ -1,10 +1,10 @@
 ---
-permalink: asa-r2-a20-30-50/bootmedia-controller-remove.html 
+permalink: asa-r2-c30/bootmedia-controller-remove.html 
 sidebar: sidebar 
-keywords: asa a20, asa a30, asa a50, remove controller 
+keywords: asa c30, remove controller 
 summary: システムで登録される修正可能なエラー修正コード（ECC）の数が増え続けている場合は、コントローラモジュールを交換する必要があります。交換しないとシステムがパニック状態になります。 
 ---
-= コントローラの取り外し- ASA A20、ASA A30、ASA A50
+= コントローラの取り外し - ASA C30
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

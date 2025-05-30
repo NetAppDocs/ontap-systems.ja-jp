@@ -1,0 +1,34 @@
+---
+permalink: asa-r2-c30/bootmedia-replace-workflow-bmr.html 
+sidebar: sidebar 
+keywords: asa c30, replace the boot media 
+summary: 交換要件を確認し、障害のあるコントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システム機能を確認して、ASA C30 ストレージ システムのブート メディアの交換を開始します。 
+---
+= ブートメディアの交換ワークフロー- ASA C30
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+交換要件を確認し、障害のあるコントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システム機能を確認して、ASA C30 ストレージ システムのブート メディアの交換を開始します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:bootmedia-replace-requirements-bmr.html["ブートメディア要件を確認"]
+[role="quick-margin-para"]
+ブートメディアの交換要件を確認します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:bootmedia-shutdown-bmr.html["障害のあるコントローラをシャットダウンします"]
+[role="quick-margin-para"]
+障害のあるコントローラをシャットダウンまたはテイクオーバーして、正常なコントローラが障害のあるコントローラストレージから引き続きデータを提供できるようにします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:bootmedia-replace-bmr.html["ブートメディアの交換"]
+[role="quick-margin-para"]
+障害が発生したブートメディアを障害コントローラから取り外し、交換用ブートメディアを取り付けます。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:bootmedia-recovery-image-boot-bmr.html["ブートメディアにイメージをリストアする"]
+[role="quick-margin-para"]
+正常なコントローラからONTAPイメージをリストアします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:bootmedia-complete-rma-bmr.html["障害のあるパーツをネットアップに返却します"]
+[role="quick-margin-para"]
+障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。

@@ -7,8 +7,6 @@ entries:
 - title: ブートメディア
   pdf-filename: ASA A1Kブートメディア
   entries:
-  - title: ブートメディアの概要
-    url: "/asa-r2-a1k/bootmedia-overview-bmr.html"
   - title: ブートメディアの交換ワークフロー
     url: "/asa-r2-a1k/bootmedia-replace-workflow-bmr.html"
   - title: 要件を確認する

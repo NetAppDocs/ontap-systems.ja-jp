@@ -7693,7 +7693,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="c7e42b88c75788e5a4dd44ffee425837" category="image-alt">ブートメディアの交換の図</block>
   <block id="65c48f838cd0d6bef4f7f9dfeffa6c20" category="paragraph">システム管理モジュールのカムラッチ</block>
   <block id="8805d2e1601760a201715748ea07f6ee" category="paragraph">ブートメディアロックボタン</block>
-  <block id="69d4901c403551aafed499a69f6a6854" category="list-text">コントローラからPSUから電源装置ケーブルを抜きます。</block>
   <block id="8f95aa0a30128c64f675b79156365155" category="admonition">ストレージシステムにDC電源装置が搭載されている場合は、電源装置（PSU）から電源ケーブルブロックを外します。</block>
   <block id="f1f9e5f6b36ebaca49f1a330347ef511" category="list-text">システム管理モジュールに接続されているケーブルをすべて取り外します。モジュールを再度取り付けるときに正しいポートにケーブルを接続できるように、ケーブルの接続先にラベルを付けておいてください。</block>
   <block id="ef59e6e115d6a402e96debfbcf2d43a4" category="list-text">ケーブルマネジメントトレイ内部の両側にあるボタンを引いてケーブルマネジメントトレイを下に回転させ、トレイを下に回転させます。</block>
@@ -7814,7 +7813,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="be9a1fd60aae57036d44ee7248eef782" category="list-text">NVエアダクトカバーを閉じます。</block>
   <block id="4241925b317fc8692e52a8a332fb8340" category="paragraph">システムのその他のコンポーネントがすべて正常に動作している必要があります。正常に動作していない場合は、にお問い合わせください<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
   <block id="eaf77e551d9134f3614ee70624c0542a" category="paragraph">NVRAMモジュールを交換するには、エンクロージャのスロット4/5でモジュールの場所を確認し、特定の手順を実行します。</block>
-  <block id="f7a22033f03f49d91738ef92b897c094" category="list-text">両方のPSUから電源コードを抜きます。</block>
   <block id="37482fa38231232549f86b1d6fa25993" category="list-text">ケーブルマネジメントトレイの端にあるピンをそっと引いてトレイを下に回転させ、トレイを下に回転させます。</block>
   <block id="5aaa2c1d195fa72e1355d04b3f634478" category="list-text">障害のあるNVRAMモジュールをエンクロージャから取り外します。</block>
   <block id="61aaaaab1400d8b97407614db657600d" category="list-text">ロックカムボタンを押します。</block>
@@ -7834,7 +7832,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f1605e83555ac6fff25674a90928b3e7" category="list-text">DIMMの固定ツメを押し下げ、ソケットから持ち上げてDIMMを取り外します。</block>
   <block id="23f5629213f6fe0e6f15f79ecad3b590" category="list-text">NVRAMモジュールをエンクロージャに取り付けます。</block>
   <block id="566acb9aca693613465c9963de07cf2d" category="list-text">モジュールをスロットにそっと挿入し、カムラッチを上に回転させてモジュールを所定の位置にロックします。</block>
-  <block id="8c7bd045108e1c5b78c97e914b17c504" category="list-text">LOADERプロンプトからONTAPをブートするには、_bye_と入力します。</block>
   <block id="92c80dd5462d9ebbe458a4d5574a0bcd" category="paragraph">コントローラのブート時にシステムIDの変更を確認し、変更が実装されたことを確認する必要があります。</block>
   <block id="4809a5131531611e176d418579ff2bce" category="list-text">コントローラがメンテナンスモード（プロンプトが表示されている）の場合は<block ref="2cf8a3bab83c4d2618c18eeeca9ebc98" prefix=" " category="inline-code"></block> 、メンテナンスモードを終了してLOADERプロンプトに移動します。_halt_</block>
   <block id="4e5f4ae21b25e767c4cce37a6162f267" category="list-text">Waiting for giveback... 交換用モジュールを搭載したコントローラのコンソールにメッセージが表示され、正常なコントローラから新しいパートナーシステムIDが自動的に割り当てられたことを確認します。_storage failover show_</block>
@@ -7890,14 +7887,12 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="74f39d10e6192c13072375a409227742" category="list-text">交換用システム管理モジュールの端をシステム開口部に合わせ、コントローラモジュールにそっと押し込みます。</block>
   <block id="c5636b2c060822d9237c298c9b4ed296" category="list-text">ケーブルマネジメントARMを閉位置まで回転させます。</block>
   <block id="d1e3991136db3d982ab25f6e5eeec67c" category="section-title">手順3：コントローラモジュールをリブートする</block>
-  <block id="87faf0594e9a4ac1e4ad3b090942d772" category="list-text">電源ケーブルをPSUに接続し直します。</block>
   <block id="5cf314d7d9b8c453e8f6d5ee28dc576f" category="paragraph">システムのリブートが開始され、通常はLOADERプロンプトが表示されます。</block>
   <block id="61f88778bfaaa034c04052c8ec25d964" category="list-text">LOADERプロンプトで「_bye_」と入力します。</block>
   <block id="4ea15f830f2e664204a3efb99fb72b4d" category="section-title">手順4：ライセンスをインストールし、シリアル番号を登録する</block>
   <block id="05dceffd3c31a9d53e9b23ec48d1bf77" category="paragraph">障害ノードが標準（ノードロック）ライセンスを必要とするONTAP機能を使用していた場合は、ノード用の新しいライセンスをインストールする必要があります。標準ライセンスを使用する機能では、クラスタ内の各ノードにその機能用のキーが必要です。</block>
   <block id="d498932449bd1680afbe5aad136fb7e3" category="paragraph">ライセンスキーをインストールするまでは、標準ライセンスを必要とする機能を引き続きノードで使用できます。ただし、該当する機能のライセンスがクラスタ内でそのノードにしかなかった場合、機能の設定を変更することはできません。また、ライセンスされていない機能をノードで使用するとライセンス契約に違反する可能性があるため、できるだけ早くノードのに交換用ライセンスキーをインストールする必要があります。</block>
   <block id="3e508eeaedfdae09fad57a764b5e2b73" category="section-title">手順1：障害のあるコントローラモジュールをシャットダウン</block>
-  <block id="5d053cb0e109f37b3c9cfa31e957c2bc" category="list-text">コントローラモジュールをシャーシから約3インチ引き出して、電源を外します。</block>
   <block id="6181ce929bc404494408989e6b8a9b52" category="paragraph">I/Oモジュールを交換するには、コントローラモジュール内でI/Oモジュールの場所を確認し、特定の手順を実行します。</block>
   <block id="8a9a8a0db84d9dd59b0f006930b47193" category="list-text">カムラッチボタンを押します。</block>
   <block id="ed5714a7b9709284c56117bd6dc4e081" category="list-text">ケーブルマネジメントトレイを回転させてロック位置にします。</block>
@@ -8529,15 +8524,11 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4f46fe04ed7debd30ef1d3c151e24935" category="sidebar">コントローラの交換ワークフロー</block>
   <block id="1ca4e63b42d944e09b1132b7f6f56b66" category="sidebar">I/Oモジュールの概要</block>
   <block id="926cbecf3e76b90a2bcdbc9c4519fc77" category="sidebar">シャーシの交換ワークフロー</block>
-  <block id="1d2bcd4906e89f4b93900e7a729cfa23" category="list-text">コントローラモジュールを約3インチ引き出して、コントローラモジュールの電源を切断します。</block>
-  <block id="190e6dffac1e1ea2cdf61c6d2e1aa03f" category="list-text">コントローラモジュールの両方のロックラッチを押し下げ、両方のラッチを同時に下に回転させます。</block>
   <block id="18db855640715fe2445fe253feaa5737" category="list-text">システム管理モジュールに接続されているケーブルをすべて取り外します。モジュールを再度取り付けるときに正しいポートにケーブルを接続できるように、ケーブルが接続されていた場所にラベルを付けてください。</block>
   <block id="fd0b5e2ec2a2cf25a20efb1e3056cd3e" category="list-text">システム管理モジュールを取り付け直します。</block>
   <block id="cad55b14298ba91aeb9818c5ded8ee54" category="list-text">USBフラッシュドライブをシステム管理モジュールのUSB-Aポートに挿入します。</block>
-  <block id="c81ac37e18f8d2fc1fa9a876a4ec31e6" category="list-text">コントローラモジュールに電源を再接続します。</block>
   <block id="6d5d746399cefcc613daba11aecdc51c" category="paragraph">ストレージとネットワーク接続をケーブル接続し直し、コントローラをギブバックします。</block>
   <block id="539ae767713043504856676d47fbdf4b" category="paragraph">ケーブルの元の場所がわかるように、ケーブルにラベルを付けてください。</block>
-  <block id="959e9a2f2cfb56163a0772785510252a" category="admonition">コントローラがシャーシに完全に装着されるとすぐにリブートします。</block>
   <block id="efafbee0ffbc8d01f41e7d2a1428e535" category="section-title">手順 4 ：ディスクを再割り当てする</block>
   <block id="d2b549392d50d0e5724cdaa8e0662e54" category="list-text">システムコンソールからコマンドを実行して、障害が発生したドライブを特定し<block ref="aadfe3f601179615e320615d73c89773" prefix=" " category="inline-code"></block> ます。</block>
   <block id="9a3ce2ce3fa4d673c8baa3feb35a1d99" category="admonition">タイプと容量によっては、ドライブが障害ドライブのリストに表示されるまでに数時間かかることがあります。</block>
@@ -9072,7 +9063,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="2d0e9a7694bf5bc701c3af145a6bba71" category="sidebar">要件を確認する</block>
   <block id="f76aaf3aaa7b30238e7a3e2b1a04493b" category="sidebar">インストールの準備</block>
   <block id="03f15d4e5abe2379224af55ea714e8fd" category="sidebar">ASA A70およびASA A90システム</block>
-  <block id="9c00140ee30800a9dd0418b3e4b50890" category="sidebar">ブートメディアの概要</block>
   <block id="e0f5268186ba6af55aa3b68c29a31380" category="sidebar">ブートメディアへのイメージのリストア</block>
   <block id="7b51a70874531a1eb0a69494afcf3fc1" category="sidebar">ASA A1Kシステム</block>
   <block id="7b2d89b8fc4544d7b3fc7e1ae3e2a79b" category="sidebar">FAS70 および FAS90 システム</block>
@@ -9259,7 +9249,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="9acf79506c541222d53e58985e01eb03" category="doc">リストア暗号化- AFF A900</block>
   <block id="9eeb212e62f650916daef03f37d7b903" category="paragraph"><block ref="9eeb212e62f650916daef03f37d7b903" category="inline-image-macro-rx" type="image"></block></block>
   <block id="21d7363ee72b4f7dbf229f951faae28f" category="paragraph"><block ref="21d7363ee72b4f7dbf229f951faae28f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7b8bb02fade9d4a58e3cfc42ecdcd970" category="summary">ブートメディアの自動交換方法について説明します。</block>
   <block id="a203ae5b4c010fa4bfba309f112022fe" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="bace9ebae872b936af5e4fb32c627436" category="inline-link-macro-rx"></block></block>
   <block id="cb6b9b62927bde4101155fb12ce4739b" category="paragraph">ブートメディアの自動交換では、パートナーノードのブートイメージが使用され、適切なブートメニューオプションが自動的に実行されて、交換用ブートメディアにブートイメージがインストールされます。</block>
   <block id="ff419f4954e3dbf64ddba1e44234dfc2" category="paragraph"><block ref="ff419f4954e3dbf64ddba1e44234dfc2" category="inline-image-macro-rx" type="image"></block></block>
@@ -9285,7 +9274,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="77464f13a7bfd5b5de3f6d6592b43344" category="admonition">システムで最初にONTAP 9 .10.1以降を実行していた場合は、に記載されている手順を使用してください<block ref="396f3a939b9056719487db53e0cdf43e" category="inline-link-macro-rx"></block>。システムの最初のONTAPリリースが不明な場合は、を参照してください<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
   <block id="8137cc3da5d92cb60020874c492d8701" category="list-text">必要に応じて、ストレージシステムにケーブルを再接続します。</block>
   <block id="fc2585bb5dd330e4d87dd2cdbd6c596b" category="admonition">リブート時にコンソールメッセージを受信できるように、修復されたコントローラモジュールにコンソールケーブルが接続されていることを確認します。修復されたコントローラは正常なコントローラから給電され、シャーシに完全に装着されるとすぐにリブートを開始します。</block>
-  <block id="1dbff4f0fe05034cfd08080f90023ca9" category="admonition">コントローラがブートしてLoaderプロンプトが表示されたら、コマンドを使用してリブートし<block ref="ce54ef17bebf280339d340bd40dff593" prefix=" " category="inline-code"></block>ます。</block>
   <block id="c9a687d1939d0b48b69bff3618583e04" category="doc">手順1：使用しているONTAPのバージョンでNetAppボリューム暗号化がサポートされているかどうかを確認する</block>
   <block id="7a98ae061f92b7a841dcacb8930a02c5" category="paragraph">コントローラを安全にシャットダウンするには、まず外部キーマネージャ（EKM）とオンボードキーマネージャ（OKM）のどちらがアクティブかを確認します。次に、使用しているキー管理ツールを確認し、適切なキー情報を表示して、認証キーのステータスに基づいて操作を実行します。</block>
   <block id="8dd09587169b8d8db58ece09496b890f" category="cell">実行するコマンド</block>
@@ -9420,8 +9408,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="13e7cf07309f0d95eee5aa49b6842dc0" category="doc">暗号化キーのサポートとステータスの確認- FAS9500</block>
   <block id="e4d9374bc79ce9095fb021e03551599f" category="doc">リストア暗号化- FAS9500</block>
   <block id="bd5c047c4a41e95a8a9424888875e56a" category="list-text">I/Oモジュールを指定のデバイスにケーブル接続します。</block>
-  <block id="9d462bd05672844aeab0d3d5d323d66a" category="list-text">コントローラを再度取り付け、コントローラモジュールの電源を再接続します。</block>
-  <block id="4d872659b015ad414d5e68440a7ddfd6" category="paragraph">コントローラが装着され、電源が回復するとすぐにブートが開始されます。</block>
   <block id="6f3fa8086df2fa20b3e903512f693396" category="list-text">障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。</block>
   <block id="c2e17c0358bcab54416e83b4418be536" category="paragraph"><block ref="30edaf7c9fa43c78aeaf4b8fabb7af1a" prefix="" category="inline-code"></block>です。</block>
   <block id="32c032e6d73023a7bc6955f5bc422d4d" category="list-text">自動ギブバックを無効にした場合は、再度有効にします。</block>
@@ -9487,7 +9473,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b5507fd73a4983529ea95a333b70737d" category="paragraph">問題が発生した場合は、ケーブル接続を確認し、ケーブルを抜き差しします。</block>
   <block id="b9b95d927da2cee98d985b1a328995c6" category="list-text">メンテナンスモードを終了します。<block ref="4a1bde0ea8bcda2a591f42646813c477" prefix=" " category="inline-code"></block></block>
   <block id="f1d532893d42eeecb43413920b6d1769" category="list-text">ケーブル管理ARMを取り外した場合は再度取り付けますが、交換用コントローラにはケーブルを再接続しないでください。</block>
-  <block id="357f0f49c943fa136f00f3dd57ce7e41" category="list-text">交換用コントローラモジュールのコンソールポートにコンソールケーブルを接続し、リブート時にコンソールメッセージを受信できるようにラップトップに再接続します。交換用コントローラは正常なコントローラから給電され、シャーシに完全に装着されるとすぐにリブートを開始します。</block>
   <block id="344f921d0ec02fd1e7780b61a619a100" category="admonition">RTCバッテリを交換し、コントローラを挿入して最初にBIOSをリセットすると、次のエラーメッセージが表示されます。これらのメッセージは想定どおりであり、この手順を続行できます。<block ref="049ec00df3ddcbe28d63cf4fa733682c" prefix=" " category="inline-code"></block><block ref="6c8ad83004cc8bc224a596f5f1682744" prefix=" " category="inline-code"></block></block>
   <block id="f97ccb05cf3baac7ac118d1817e2a5fd" category="open-title">オプション1：ONTAP 9 16.0以前</block>
   <block id="46656bb1c59aea0ac10f1105bf4c8b13" category="list-text">障害のあるコントローラで、<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block><block ref="aa48693d0248bb57512e373cd7f7eebc" prefix=" " category="inline-code"></block></block>
@@ -10183,7 +10168,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="cc9dc8ff5d926a2f202e16be7619d147" category="section-title">手順4：シェルフをケーブル接続する</block>
   <block id="63a714a4848b4ea90e8f63ae1efc6250" category="paragraph">この手順では、1台のNS224シェルフにコントローラをケーブル接続する方法を示します。</block>
   <block id="02b0ddc9c51a6fd3d072763fb5b859f3" category="list-text">ストレージシステムでサポートされるシェルフの最大数、および光ファイバやスイッチ接続などのすべてのケーブル接続オプションについては、を参照してください<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
-  <block id="5721aeeb697208bf3fd5fab5ebf0a599" category="list-text">ストレージシステムに付属のストレージケーブルを使用して、各コントローラをNS224シェルフの各NSM100Bモジュールにケーブル接続します。次のタイプのケーブルを使用できます。</block>
   <block id="302158186d4e933e7fd1df5cef7e5e27" category="list-text">図は、コントローラAのケーブル配線を青で示し、コントローラBのケーブル配線を黄色で示しています。</block>
   <block id="252938adaa820c554614fbc402a51423" category="list-text">コントローラ A をシェルフにケーブル接続します。</block>
   <block id="3c4324a5217fea116e9e54ac43c2946d" category="list-text">コントローラAのポートe3aをNSM Aのポートe1aにケーブル接続します。</block>
@@ -10242,12 +10226,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="c21a1648c7655abd0241b02472ce577b" category="doc">電源装置の交換- AFF A20、AFF A30、およびAFF A50</block>
   <block id="d04789e64aa71c747fa327e4d399534e" category="doc">リアルタイムクロックバッテリを交換してください- AFF A20、AFF A30、およびAFF A50</block>
   <block id="4bc0f3e72d6123d7efdfe5948cc79a4c" category="doc">故障した部品をNetApp - AFF C30 and AFF C60に返却します。</block>
-  <block id="a2465d131f0dc8d809437f68b008c8d1" category="doc">コントローラを再度取り付けます- AFF C30およびAFF C60</block>
-  <block id="55d316e07dd2e8961ed119f45a3dff33" category="doc">コントローラの取り外し- AFF C30およびAFF C60</block>
   <block id="3ec7c47dabf1d4f35a400c4071a00ca3" category="doc">リカバリイメージのブート（AFF C30 and AFF C60）</block>
   <block id="b51f305b31269b3c0c90f0c435f98dc7" category="doc">ブートメディアの交換ワークフロー- AFF C30とAFF C60</block>
   <block id="eff4d8e89759d68c96ebcfc87dc315dd" category="doc">ブートメディアの交換- AFF C30とAFF C60</block>
-  <block id="5cc55241a9614abe4087e6c9b29624e6" category="doc">障害のあるコントローラをシャットダウン- AFF C30とAFF C60</block>
   <block id="5c067d0c56a9b99bc0f72610745316f6" category="doc">シャーシ交換後の処理- AFF C30およびAFF C60</block>
   <block id="1ef6e58891bf9a008b8184c8021cc060" category="doc">シャーシの交換- AFF C30 and AFF C60</block>
   <block id="aac515bc7c0fef6db4d96f41deee5fd1" category="doc">コントローラのシャットダウン- AFF C30 and AFF C60</block>
@@ -10258,7 +10239,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1bd446701023b8913ca9b526c3e92f2e" category="doc">システム構成のリストアと検証（AFF C30 and AFF C60）</block>
   <block id="dffc469bd601fde82121083a3480be81" category="doc">コントローラの交換ワークフロー- AFF C30とAFF C60</block>
   <block id="520d3987267b97f93ef8b0f406babbc3" category="doc">DIMMの交換- AFF C30 and AFF C60</block>
-  <block id="a4e5adc7bc258b17747b6f19d04cc2fa" category="doc">ドライブの交換- AFF C30およびAFF C60</block>
   <block id="c610b83162fd42225d6905d0aaa5cac5" category="doc">ファンモジュールの交換- AFF C30 and AFF C60</block>
   <block id="d43c251fd920bd85be3d9f4fbae93bd6" category="summary">AFF C30およびAFF C60ハードウェアのメンテナンス</block>
   <block id="612700cc8178837b3b0e4453adecd5ff" category="doc">AFF C30およびAFF C60ハードウェアのメンテナンス</block>
@@ -10735,9 +10715,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="98aab8017242eea1d6e23ba928b20ae5" category="list-text"><block ref="98aab8017242eea1d6e23ba928b20ae5" category="inline-link-macro-rx"></block></block>
   <block id="4e3c3284590d1aa1440e67b3bd65ba6e" category="list-text"><block ref="4e3c3284590d1aa1440e67b3bd65ba6e" category="inline-link-macro-rx"></block></block>
   <block id="370d2e6f20948d3881708f9706576691" category="sidebar">交換の準備</block>
-  <block id="19d944a3a323213d80bcdd66ecd5c26f" category="list-text">次のいずれかの方法でオンボードキーマネージャ（OKM）または永遠キーマネージャ（EKM）が設定されているかどうかを確認します。</block>
-  <block id="5dc17ba8443f8aafae4ca9de8cf9545b" category="list-text">OKMが有効になっているかどうかを確認するには、を使用し<block ref="3c690d79c23fa8c25994507c25377567" prefix=" " category="inline-code"></block>ます。</block>
-  <block id="4e447e93a3331607c74749775653cbfc" category="list-text">EKMが有効になっているかどうかを確認するには、を使用し<block ref="001642cb897a8bebce3210207b7e81af" prefix=" " category="inline-code"></block>ます。</block>
   <block id="161a8b7bf3b6a7aaa3bda387e5eab04b" category="list-text">OKMを使用するには、OKMパスフレーズファイルの内容が必要です。</block>
   <block id="7e8bda9aef5e8fb9e3018b4afe5250d1" category="list-text">EKMの場合は、パートナーノードから次のファイルのコピーが必要です。</block>
   <block id="0408893d877d770be02b8327fb6a5e89" category="list-text">/cfcard/kmip/ servers.cfgファイル。</block>
@@ -10804,10 +10781,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="c8d49d03a62a2aaa6d3002fec3a650ea" category="list-text">オプションを選択します。<block ref="1679091c5a880faf6fb5e6087eb1b2dc" prefix=" " category="inline-code"></block></block>
   <block id="fe5f4b926efaec8f9797da6b1b0b6c71" category="list-text">バックアップ設定の復元を求めるプロンプトが表示されたら、と入力し<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>ます。</block>
   <block id="c22df67eafdbaec72d1c041a4f36d374" category="list-text">障害が発生したブートメディアを、NetAppから受け取った交換用ブートメディアと交換する必要があります。</block>
-  <block id="0ff7731ee6e151edd45a22c7a84637f0" category="list-text">OKMまたはEKMが有効になっているかどうかは、システム管理者に確認してください。</block>
-  <block id="f6482a2d2722297ff58ea916af2984cb" category="doc">ブートメディアのリカバリの概要- ASA A70およびASA A90</block>
-  <block id="c987ba69ee60ff652b96f087d2e6ae84" category="paragraph">ブートメディアリカバリでは、パートナーノードのブートイメージを使用して適切なブートメニューオプションが自動的に実行され、交換用ブートメディアにブートイメージがインストールされます。</block>
-  <block id="4c676d1a7c436f114a574bfe649622ee" category="paragraph">次のようなブートエラーメッセージが表示された場合は、ブートメディアを交換し、パートナーノードからONTAPイメージをリストアする必要があります。</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">次の手順</block>
   <block id="f88cdb2cd014d9929aa478cc85d4b492" category="inline-link-macro">故障した部品をNetAppに返却します。</block>
   <block id="7853c5276d1f54917577b980848960c3" category="paragraph">ONTAPイメージをリストアしたあと、ノードが稼働してデータを提供できるよう<block ref="977d546e7889319c9a653d351be92c2b" category="inline-link-macro-rx"></block>になります。</block>
@@ -10819,11 +10792,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="2adbaa1720c6c394fbe2503b6da6fdb7" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="ffddb9c4b10a61c1cf9d29a315266845" category="inline-link-macro-rx"></block></block>
   <block id="a9a4115c08aa47aeef8b44d2372274ad" category="inline-link-macro">ブートメディアの交換</block>
   <block id="aa8efed5979835fe328570ee208b1884" category="paragraph">障害のあるコントローラをシャットダウンしたら、システムを<block ref="52c48d39b9a1e431e1d04998ae5045f5" category="inline-link-macro-rx"></block>停止します。</block>
-  <block id="e0bfc72b163c6540df4eb3869f1393ff" category="paragraph"><block ref="e0bfc72b163c6540df4eb3869f1393ff" category="inline-link-macro-rx"></block></block>
   <block id="9d99224aaec79ef0b06c033956f14979" category="paragraph">ブートイメージのパートナーノードから障害が発生したブートメディアを交換できます。</block>
   <block id="5d9ac1643aa86c7bddb319af8c3e06e3" category="paragraph">ブートメディアの交換では、パートナーノードのブートイメージが使用され、適切なブートメニューオプションが自動的に実行されて、交換用ブートメディアにブートイメージがインストールされます。</block>
-  <block id="d152ad943d3809714aa2acb56114839e" category="doc">ブートメディアのリカバリの概要- ASA A1K</block>
-  <block id="488cce5b2121242760d58a49c413507e" category="paragraph">ブートエラーメッセージが表示された場合は、ブートメディアを交換し、パートナーノードからONTAPイメージをリストアする必要があります。</block>
   <block id="a81626227e94d15884d465e1127d3af4" category="sidebar">ASA A70およびASA A90のブートメディア</block>
   <block id="9482f3836d9bb6259f467a0685f5e3b4" category="sidebar">ASA A1Kブートメディア</block>
   <block id="3636656d79b8f02465b883839da0c32b" category="paragraph">次の要件を確認します。</block>
@@ -10869,8 +10839,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="c5a3b9039ee3d286f345090dc5bd7f24" category="summary">ASA A70またはASA A90システムで障害のあるシャーシを交換する準備として、障害のあるシャーシを特定し、交換用コンポーネントを確認し、ケーブルとコントローラモジュールにラベルを付けます。</block>
   <block id="5cb5b467ffe15c96f5be4b190434f4d7" category="summary">コントローラのHA構成がアクティブで、ASA A70またはASA A90ストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。</block>
   <block id="9b16f0deb40e2ccd298a84213dfcb3c1" category="summary">ドライブに障害が発生した場合やアップグレードが必要な場合は、ASA A70またはASA A90システムのドライブを交換します。このプロセスでは、障害が発生したドライブを特定して安全に取り外し、新しいドライブを取り付けてデータアクセスとシステムパフォーマンスを継続できるようにします。</block>
-  <block id="8e10453b1538c94c1675905e948ad27f" category="doc">コントローラの再取り付け- ASA A20、ASA A30、およびASA A50</block>
-  <block id="77b6dee74a408b2a89351dd1b7874a9d" category="doc">コントローラの取り外し- ASA A20、ASA A30、ASA A50</block>
   <block id="1bd4517f6602bce986a904d28bd0d138" category="paragraph">障害が発生したブートメディアを障害コントローラから取り外し、交換用ブートメディアを取り付けます。</block>
   <block id="52e36495272e13465007207307f8b233" category="paragraph">正常なコントローラからONTAPイメージをリストアします。</block>
   <block id="8022fc0f0b4485cbb98cfd555c374305" category="doc">シャーシ交換後の処理- ASA A20、ASA A30、およびASA A50</block>
@@ -10887,7 +10855,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="fea30c44903d9b686caf9f4ef1fef103" category="summary">ASA A20、ASA A30、およびASA A50ハードウェアのメンテナンス</block>
   <block id="0560ae441e964fbd0ea21e048b96e0c1" category="doc">ASA A20、ASA A30、およびASA A50ハードウェアのメンテナンス</block>
   <block id="5e1381a5e0cf586808d824d931af18f5" category="paragraph">ASA A20、ASA A30、またはASA A50ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
-  <block id="d70d74fb3e61a0a9af3ef593945dca19" category="paragraph">ASA A20、ASA A30、およびASA A50ストレージシステムに使用可能なスロットがある場合、またはすべてのスロットにフル装備されている場合は、I/Oモジュールを追加できます。</block>
   <block id="151d3f9489dc71ef0bf598517f9387d5" category="paragraph">必要に応じて、ストレージ・システムの物理的な位置を特定するために、ストレージ・システムのロケーション（青色の）LEDを点灯できます。SSHを使用してBMCにログインし、コマンドを入力し<block ref="748a449bca03582c103ee6b7bcd4a969" prefix=" " category="inline-code"></block>ます。</block>
   <block id="f7505dbf9cbf21226d33ed67b7c926e6" category="doc">ハードウェアメンテナンスの概要- ASA A20、ASA A30、およびASA A50</block>
   <block id="02cbc9c9b92f52062a793fbc039a7a5f" category="paragraph">ASA A20、ASA A30、およびASA A50ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
@@ -11138,7 +11105,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1b138e65eb583a747e0e4d3a8398fb6a" category="summary">修正可能または修正不可能なメモリエラーが大量に検出された場合は、AFF A70またはAFF A90システムのDIMMを交換します。このようなエラーが発生すると、ストレージシステムでONTAPをブートできなくなる可能性があります。交換プロセスでは、障害コントローラのシャットダウン、障害コントローラの取り外し、DIMMの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
   <block id="99d3d3fcd25a3de8482ec4e2a68cd980" category="paragraph">交換手順を完了してシステムを完全な状態にリストアするには、NetAppストレージ暗号化の設定をリストアし（必要な場合）、新しいコントローラのライセンスをインストールします。</block>
   <block id="bc8b7a027a67f1503950943beb4e6143" category="paragraph">ASA A1Kシステムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページを参照してください。</block>
-  <block id="a2aac55abc6c28c4882557e0112dda0e" category="summary">ASA A70またはASA A90ストレージシステムのブートメディアリカバリでは、パートナーノードのブートイメージが使用され、適切なブートメニューオプションが自動的に実行されて交換用ブートメディアにブートイメージがインストールされます。</block>
   <block id="bd0c4a219c159fa570da1ded545f36d9" category="summary">ASA A70またはASA A90システムに新しいブートメディアデバイスを取り付けたら、自動ブートメディアリカバリプロセスを開始して、パートナーノードから構成をリストアできます。</block>
   <block id="b6bbff6284dec160274ef588afc1a30c" category="doc">ブートメディア上のイメージをリストアします（ASA A70およびASA A90）。</block>
   <block id="24fd70ba02d3ad8edef21fae96195bae" category="paragraph">ASA A70またはASA A90システムに新しいブートメディアデバイスを取り付けたら、自動ブートメディアリカバリプロセスを開始して、パートナーノードから構成をリストアできます。</block>
@@ -11175,7 +11141,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="41e2f285e686b8f2a3edb4bab2e58d51" category="paragraph">ASA A70またはASA A90システムのリアルタイムクロック（RTC）バッテリ（一般にコイン型電池と呼ばれる）を交換して、正確な時刻同期に依存するサービスやアプリケーションが動作し続けるようにします。</block>
   <block id="bcde75f7bddc9226b30c2cb1712cb52b" category="summary">ASA A70またはASA A90システムのシステム管理モジュールが故障した場合、またはファームウェアが破損した場合は、システム管理モジュールを交換してください。交換プロセスでは、コントローラのシャットダウン、障害が発生したシステム管理モジュールの交換、コントローラのリブート、ライセンスキーの更新、障害が発生したパーツのNetAppへの返却を行います。</block>
   <block id="603c758839f418606126a3dd634c68d9" category="doc">システム管理モジュール（ASA A70 and ASA A90）を交換してください</block>
-  <block id="73c7c606d50a6cd6a6bf0be619496e05" category="paragraph">ASA A1Kストレージシステムのブートメディアリカバリでは、パートナーノードのブートイメージが使用され、適切なブートメニューオプションが自動的に実行されて、交換用ブートメディアにブートイメージがインストールされます。</block>
   <block id="dcfa3de2faa27a3e334c7c433ea50340" category="summary">ASA A1Kシステムの交換用ブートメディアにONTAPイメージをリストアします。このプロセスでは、Loaderプロンプトからブートリカバリプロセスを開始し、リカバリプロセスが完了してノードがリブートするまでリカバリプロセスを監視します。</block>
   <block id="2cc0e4a695b44179f7b31d704877b9fc" category="doc">ブートメディアにイメージをリストアします（ASA A1K）。</block>
   <block id="955b02a4be265a47dec370f73ec90202" category="paragraph">ASA A1Kシステムに新しいブートメディアデバイスを取り付けたら、自動ブートメディアリカバリプロセスを開始して、パートナーノードから構成をリストアできます。</block>
@@ -11213,7 +11178,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="d5c5d5ed06719b517e116422631085f4" category="summary">ASA A1Kシステムのリアルタイムクロック(RTC)バッテリ(一般にコイン型電池と呼ばれます)を交換して、正確な時刻同期に依存するサービスやアプリケーションが動作し続けるようにします。</block>
   <block id="9f3c1aa619a31cc111c40fc314f9faa2" category="summary">ASA A1Kシステムが故障した場合、またはファームウェアが破損した場合は、システム管理モジュールを交換してください。交換プロセスでは、コントローラのシャットダウン、障害が発生したシステム管理モジュールの交換、コントローラのリブート、ライセンスキーの更新、障害が発生したパーツのNetAppへの返却を行います。</block>
   <block id="e04a3734ea529efaec431e68c61d0806" category="doc">故障した部品をNetApp（ASA A20、ASA A30、およびASA A50）に返却します。</block>
-  <block id="23972a0b40b2aebc2048150eeceaebc3" category="doc">ブートメディアリカバリの概要- ASA A20、ASA A30、およびASA A50</block>
   <block id="99408db22f283eaf0f69169123395c6f" category="doc">ブートメディアの交換- ASA A20、ASA A30、およびASA A50</block>
   <block id="f61a4b29bc6d3cca219956808d8cd39b" category="doc">ブートメディアの交換ワークフロー- ASA A20、ASA A30、およびASA A50</block>
   <block id="f08c3d5c20f112189a4f958d78f4d98e" category="paragraph">AFF C80システムに新しいブートメディアデバイスを設置したら、リカバリイメージをUSBドライブからブートし、パートナーノードから設定をリストアできます。</block>
@@ -11370,11 +11334,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="05d5663ac0d1fbb9e47fdabe976bff04" category="paragraph">次の図に示すように、ASA A1KコントローラのI/Oスロットには1~11の番号が付けられています。</block>
   <block id="4d7f3bf998f11ec51e5b1d5c5c650e48" category="image-alt">ASA A1Kコントローラのスロット番号</block>
   <block id="6cdd2252e3b0e8b6b38ce0acf92e33da" category="paragraph">ASA A20、ASA A30、またはASA A50ストレージシステムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページを参照してください。</block>
-  <block id="87c3a7e23a933ae2a7f97c8b908592e6" category="paragraph">ASA A20、ASA A30、またはASA A50ストレージシステムのブートメディアリカバリでは、パートナーノードのブートイメージが使用され、適切なブートメニューオプションが自動的に実行されて交換用ブートメディアにブートイメージがインストールされます。</block>
   <block id="82ab30608a615aba23a7ce646834847f" category="paragraph">ASA A20、ASA A30、またはASA A50ストレージシステムに新しいブートメディアデバイスを取り付けたら、自動ブートメディアリカバリプロセスを開始して、正常なノードから構成をリストアできます。</block>
   <block id="884e7c8aa1da8d043f1e79506ee853dc" category="summary">ASA A20、ASA A30、またはASA A50ストレージシステムのブートメディアを交換する前に、交換を成功させるために必要な要件と考慮事項を満たしていることを確認してください。具体的には、適切な交換用ブートメディアがあること、障害のあるコントローラのe0S（e0Mレンチ）ポートに障害がないこと、オンボードキーマネージャ（OKM）と外部キーマネージャ（EKM）のどちらが有効になっているかを確認します。</block>
   <block id="0855cbbfbd39228942736f1dd60ef241" category="paragraph">ブートメディアの要件を確認したら、<block ref="f6f6eaac8bd3f857cf89c647db55229b" category="inline-link-macro-rx"></block></block>
-  <block id="2a22ac053b2a9d77374ec7727f46903c" category="summary">ASA A30、ASA A20、およびASA A50ストレージシステムのブートメディアの交換を開始します。まず、交換要件を確認し、障害のあるコントローラのシャットダウン、ブートメディアの交換、ブートメディアへのイメージのリストア、システム機能の確認を行います。</block>
   <block id="2fd545b6948b18df87e2184b90a0ba0b" category="paragraph">ASA A30、ASA A20、またはASA A50ストレージシステムのブートメディアの交換を開始します。まず、交換要件を確認し、障害のあるコントローラのシャットダウン、ブートメディアの交換、ブートメディアへのイメージのリストア、システム機能の確認を行います。</block>
   <block id="f78c88bb1e8f1ee3c7a6ac3858965894" category="paragraph">AFF C30またはAFF C60システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページを参照してください。</block>
   <block id="d21e93c705ab8bba60c13a4e0593f4af" category="doc">ブートメディアの暗号化キーのサポートとステータスを確認します（AFF C30とAFF C60）。</block>
@@ -11950,4 +11912,111 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3d30da9db64c70df76ae8eab8c37ddf1" category="list-text">NS224シェルフのAC電源装置を交換する場合は、次のアニメーションを参照して、作業を開始する前に手順を確認してください。このアニメーションでは、NSM100モジュールを搭載したNS224を示していますが、手順はNSM100Bモジュールを搭載したシェルフでも同じです。</block>
   <block id="e772ad168b6f97f132982a96392cd046" category="example-title">NS224のAC電源装置の交換</block>
   <block id="0dcc8efe101bb5e6350d650ce519cbfa" category="video-title">NS224シェルフのAC電源装置のホットスワップ</block>
+  <block id="40f990da8c57e47c36081d4d612c9817" category="list-text">PSU から電源ケーブルを取り外し、コントローラー モジュールをシステムの前面から数インチ引き出します。</block>
+  <block id="5330c5fb5d366be53452014b9ecf03a7" category="paragraph">+ 。システム管理モジュールに接続されているケーブルをすべて取り外します。モジュールを再度取り付けるときに正しいポートにケーブルを接続できるように、ケーブルの接続先にラベルを付けておいてください。..ケーブルマネジメントトレイ内部の両側にあるボタンを引いてケーブルマネジメントトレイを下に回転させ、トレイを下に回転させます。..システム管理カムボタンを押します。..カムラッチをできるだけ下に回転させます。..カムレバーの開口部に指をはさみ、モジュールをエンクロージャから引き出して、システム管理モジュールをエンクロージャから取り外します。..システム管理モジュールを静電気防止用マットの上に置き、ブートメディアにアクセスできるようにします。。管理モジュールからブートメディアを取り外します。</block>
+  <block id="42daa41b8c19102ddb14e0889d7abbb4" category="paragraph">+ image::../media/drw_a1k_boot_media_remove_replace_ieops-1377.svg[ブートメディアの交換グラフィック]</block>
+  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
+  <block id="193d35b8a9ac476b4099d10d04a128a6" category="list-text">システムの前面にあるコントローラ モジュールを慎重に取り付け直し、ロックします。</block>
+  <block id="c65e5ab2ccd40a14e7dbaad19aa0c504" category="list-text">コントローラーの PSU から電源ケーブルを取り外し、システムの前面にあるコントローラー モジュールを数インチ引き出します。</block>
+  <block id="2a111f85cafe27d96d705414a1545f34" category="list-text">電源ケーブルを PSU に差し込み、システムの前面にあるコントローラー モジュールをゆっくりと再装着してロックします。</block>
+  <block id="fabbb288606bc55258a9e8e717fe5213" category="list-text">コントローラーのケーブルを再接続します。</block>
+  <block id="a97d4703d17abbeceacc3edae4e8fdc4" category="list-text">アースがまだ行われていない場合は、適切にアースを行ってください。電源ユニットから電源ケーブルを抜き、コントローラーモジュールをシステムの前面から数インチ引き出します。</block>
+  <block id="fda9664b829519d7882c4d0260276790" category="list-text">コントローラーの PSU を外します。</block>
+  <block id="9ea5392d65d4b774209903c12c0b7a2c" category="list-text">電源装置に電源コードを接続します。電源が回復するとすぐにコントローラーが再起動します。</block>
+  <block id="b4f9b4ed219fb6f91477aff5ebef3453" category="admonition">DC 電源がある場合は、電源ブロックを電源に再接続します。</block>
+  <block id="4efb9ea6af03bf03e0cdc2a4164ea43c" category="list-text">交換用コントローラモジュールのコンソールポートにコンソールケーブルを接続し、リブート時にコンソールメッセージを受信できるようにラップトップに再接続します。</block>
+  <block id="fde22c7ade0121628e0502770ed5326e" category="list-text">電源を接続します。電源が復旧するとすぐに、コントローラーはLOADERプロンプトを起動します。</block>
+  <block id="ea1ad38d91c2e87ef2e9571bd55654fd" category="list-text">ONTAP 9.17.1</block>
+  <block id="14a1b02d9ac34f22a362671d392a3852" category="list-text">ASA C30</block>
+  <block id="ed57089257c5bf0e9855c2abce5e2f2c" category="paragraph">AFF A1Kストレージシステムは、NSM100またはNSM100Bモジュールを搭載したNS224シェルフをサポートします。各モジュールの主な違いは次のとおりです。</block>
+  <block id="bee9bdef55e93399a97d85b3925cfca2" category="list-text">NSM100 シェルフ モジュールは、組み込みポート e0a および e0b を使用します。</block>
+  <block id="1d18f8f4fb2168d48bce60e13139f7da" category="list-text">NSM100B シェルフ モジュールは、スロット 1 のポート e1a と e1b を使用します。</block>
+  <block id="cc71e1eb20bbf56ae364562c6769007c" category="paragraph">次の配線例は、シェルフ モジュール ポートを参照する場合の NS224 シェルフ内の NSM100 モジュールを示しています。</block>
+  <block id="a93a7a45b049b849ed9c03ad1c596615" category="list-text">NS224シェルフの配線手順では、NSM100モジュールではなくNSM100Bモジュールが示されています。使用するNSMモジュールの種類に関わらず、配線は同じで、ポート名のみが異なります。</block>
+  <block id="30898d03a4ca37450e8ab2be81f38dd5" category="list-text">NSM100B モジュールは、スロット 1 の I/O モジュール上のポート e1a と e1b を使用します。</block>
+  <block id="e6c68585977f6b3e8b2b4ced88ca3d4d" category="list-text">NSM100 モジュールは、内蔵 (オンボード) ポート e0a および e0b を使用します。</block>
+  <block id="215caa644827ccfb864125e557ed29f2" category="list-text">ストレージ システムに付属のストレージ ケーブルを使用して、各コントローラを NS224 シェルフ上の各 NSM モジュールに接続します。ストレージ ケーブルの種類は次のとおりです。</block>
+  <block id="01bd09c5271f772a108914f35e7efcd3" category="paragraph">AFF A70および90ストレージシステムは、NSM100またはNSM100Bモジュールを搭載したNS224シェルフをサポートします。モジュール間の主な違いは次のとおりです。</block>
+  <block id="2486a91e78743df4d0cc635c5b8b51c8" category="list-text">NSM100 シェルフ モジュールは、組み込みポート e0a および e0b を使用します。</block>
+  <block id="a53b96fad1d9b45d4ddb6e31d5f14d63" category="paragraph">損傷したブートメディアを物理的に交換した後、 <block ref="dcb4deaaa5f388ac9dd740fbe37648be" category="inline-link-macro-rx"></block> 。</block>
+  <block id="023d1fe5c37125b4e245d88460c90d81" category="summary">ASA A20、ASA A30、およびASA A50ストレージシステムのブートメディアの交換を開始します。まず、交換要件を確認し、障害のあるコントローラのシャットダウン、ブートメディアの交換、ブートメディアへのイメージのリストア、システム機能の確認を行います。</block>
+  <block id="34d3dea8236697b4a8d8e9bf094d3ee7" category="paragraph">シャーシを交換するための要件を確認します。</block>
+  <block id="1fcab41d4b270e3bb13c8e83cf6dbb29" category="paragraph">ドライブとドライブ ブランク、コントローラ (電源装置付き)、およびベゼルを障害のあるシャーシから新しいシャーシに移動し、障害のあるシャーシを障害のあるシャーシと同じモデルの新しいシャーシと交換して、シャーシを交換します。</block>
+  <block id="5e163d153d8c37baaa9fd7de379cf5bf" category="paragraph">コントローラーを交換するための要件を確認します。</block>
+  <block id="182e45b4e9d9b946f297d6188c6d4585" category="paragraph">ASA C30 ストレージシステムに空きスロットがあれば、I/O モジュールを追加できます。すべてのスロットが満杯の場合は、既存のモジュールを交換して新しいモジュールを追加できます。</block>
+  <block id="008e878c00337b7c1676a1bf2b5e1f88" category="summary">ASA C30 ストレージ システムのコンポーネントに障害が発生した場合は、障害が発生した部品を NetApp に返却してください。</block>
+  <block id="1a74384be12ec55525108f8b4b66e4cf" category="doc">故障した部品をNetAppに返却します（ASA C30）。</block>
+  <block id="5c57ecccb489a807b7ce058e84066112" category="paragraph">ASA C30 ストレージ システムのコンポーネントに障害が発生した場合は、障害が発生した部品を NetApp に返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページを参照してください。</block>
+  <block id="998d7afe02e862a99bc2356bb4360a68" category="doc">コントローラの再インストール - ASA C30</block>
+  <block id="f7fa8f7e10c9cc8ec8c1a66e7e044c0c" category="doc">コントローラの取り外し - ASA C30</block>
+  <block id="a6090718a9aeffd0a4509ab0c7982422" category="summary">ASA C30 ストレージ システムに新しいブート メディア デバイスをインストールした後、自動ブート メディア リカバリ プロセスを開始して、正常なノードから構成を復元できます。</block>
+  <block id="c2de4d4510a9a64facdf71ce04df1256" category="doc">ブートメディア上の ONTAP イメージを復元する - ASA C30</block>
+  <block id="ea8fd5bd6c26f06b31f96391b253c778" category="summary">ASA C30 ストレージ システムのブート メディアには、重要なファームウェアと構成データが保存されます。交換プロセスでは、コントローラモジュールを取り外し、障害のあるブートメディアを取り外し、交換用ブートメディアを取り付けてから、ONTAPイメージを交換用ブートメディアに転送します。</block>
+  <block id="5daa76a4aa0a675c1ff837ebfd9193de" category="doc">ブートメディアの交換- ASA C30</block>
+  <block id="bd9df02f270ea2cb9436c0038ef3b34a" category="summary">ASA C30 ストレージシステムのブートメディアを交換する前に、交換を正常に行うために必要な要件と考慮事項を満たしていることを確認してください。これには、適切な交換用ブートメディアがあること、障害が発生したコントローラの e0S（e0M レンチ）ポートが正常に動作していることを確認すること、オンボード キー マネージャ（OKM）または外部キー マネージャ（EKM）が有効になっているかどうかを確認することが含まれます。</block>
+  <block id="9711de828f499165b267f4aded9c85e0" category="doc">ブートメディアの交換要件- ASA C30</block>
+  <block id="af64ca3ab36eca3c94582cbfadb2bb6d" category="summary">交換要件を確認し、障害のあるコントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システム機能を確認して、ASA C30 ストレージ システムのブート メディアの交換を開始します。</block>
+  <block id="9e4d05a14fde717f129944022ed99861" category="doc">ブートメディアの交換ワークフロー- ASA C30</block>
+  <block id="ea792349c9ec99fe28db82adad3adccb" category="summary">ASA C30ストレージシステムの障害のあるコントローラをシャットダウンしてデータ損失を防ぎ、ブートメディアの交換時にシステムの安定性を確保します。</block>
+  <block id="c9f4b7c42437a2c4b4690a3b013628ba" category="doc">コントローラをシャットダウンしてブートメディアを交換します- ASA C30</block>
+  <block id="669772d17e2dc353f34f422c36121ce3" category="summary">シャーシの HA 状態を確認し、障害が発生した部品を NetApp に返送して、ASA C30 シャーシ交換手順の最終ステップを完了します。</block>
+  <block id="23d33c98c35b14fd4a80967e1b3e3457" category="doc">シャーシ交換後の処理- ASA C30</block>
+  <block id="25237d71e9d7f1d0ad7e397e5833e8b3" category="summary">ハードウェア障害が発生した場合は、ASA C30 ストレージ システムのシャーシを交換してください。交換プロセスでは、コントローラと電源装置（PSU）の取り外し、ドライブの取り外し、交換用シャーシの取り付け、およびシャーシコンポーネントの再取り付けを行います。</block>
+  <block id="635216b917d6fdf5a454b511576ce44d" category="doc">シャーシの交換- ASA C30</block>
+  <block id="aab639c4c9147a73b0546ea341640574" category="summary">ASA C30 ストレージ システムのシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。具体的には、システムの他のすべてのコンポーネントが正常に動作していること、正しい交換用シャーシがあること、および必要な工具が揃っていることを確認します。</block>
+  <block id="d8d0c8656fc7188d35f6528aa09e4d2f" category="doc">シャーシの交換要件- ASA C30</block>
+  <block id="5e10b31ed571502de1abfffd65faeed4" category="summary">シャーシを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、ASA C30 ストレージ システム内のコントローラをシャットダウンします。</block>
+  <block id="2f826d52c24daa29d9d263625be52c6d" category="doc">コントローラのシャットダウン- ASA C30</block>
+  <block id="ce586186264926dca69594bb6b7d8b7e" category="summary">ASA C30 ストレージ システムのシャーシを交換するには、交換要件の確認、コントローラのシャットダウン、シャーシの交換、およびシステム動作の検証を行います。</block>
+  <block id="e2ed0a4168043c9156a55b725d7222e5" category="doc">シャーシの交換ワークフロー- ASA C30</block>
+  <block id="e0ac24275668c9f2a6cc457319a609cf" category="summary">ハードウェア障害が発生した場合は、ASA C30 ストレージ システムのコントローラを交換してください。交換プロセスでは、障害のあるコントローラを取り外し、交換用コントローラにコンポーネントを移動し、交換用コントローラを取り付けてリブートします。</block>
+  <block id="05e289dc15f65b50fbc090198495aabb" category="doc">コントローラの交換- ASA C30</block>
+  <block id="46f7be643adbfb35dff8b275ed40b40a" category="summary">ストレージリソースの制御を交換用コントローラに戻して、ASA C30ストレージシステムを通常の動作に戻します。ギブバック手順は、システムで使用されている暗号化の種類（暗号化なし、オンボードキーマネージャ（OKM）暗号化、または外部キーマネージャ（EKM）暗号化）によって異なります。</block>
+  <block id="6b422659ac5fffe3ecc8c66789fdeadd" category="doc">コントローラのギブバック- ASA C30</block>
+  <block id="67cb3952ec89ce8d08815e47cfffe7fb" category="paragraph">ストレージ リソースの制御を交換用コントローラに戻して、ASA C30 ストレージ システムが通常の操作を再開できるようにします。ギブバック手順は、システムで使用されている暗号化タイプ（暗号化なし、オンボードキーマネージャ（OKM）暗号化、外部キーマネージャ（EKM）暗号化）によって異なります。</block>
+  <block id="7ea5dd39204016c48a5829f91be918a1" category="summary">ASA C30 ストレージ システムのコントローラを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。具体的には、システムの他のすべてのコンポーネントが正常に動作していること、正しい交換用コントローラがあることの確認、コントローラのコンソール出力のテキストログファイルへの保存が含まれます。</block>
+  <block id="f0de359ba2c82f8ea7884966a3ba0c02" category="doc">コントローラの交換要件- ASA C30</block>
+  <block id="3b97faedccbb32bf9302724d84bd3849" category="summary">ASA C30 ストレージ システムのコントローラの交換を完了するには、まず NetApp ストレージ暗号化構成を復元し (必要な場合)、新しいコントローラに必要なライセンスをインストールします。次に、論理インターフェイス（LIF）がホームポートにレポートしていることを確認し、クラスタの健全性チェックを実行します。最後に、新しいコントローラのシリアル番号を登録し、障害が発生したパーツをNetAppに返却します。</block>
+  <block id="c9618ee1abbbc558b8f6afab18e9de6a" category="doc">コントローラ交換後の処理- ASA C30</block>
+  <block id="91d5bdb9b8be20419adab0d70c3a9d3f" category="summary">コントローラを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、ASA C30 ストレージ システム内の障害のあるコントローラをシャットダウンします。</block>
+  <block id="fc45a0ec77bb468d6fedb9674ced8528" category="doc">障害のあるコントローラをシャットダウンします- ASA C30</block>
+  <block id="91a97d4fdec1af557392f5388e45d03a" category="summary">コントローラのHA構成がアクティブでASA C30ストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。</block>
+  <block id="bd3d959eef2391eeddbe585e6aa31aaf" category="doc">システム構成のリストアと確認- ASA C30</block>
+  <block id="9d817ef7895689fb3cc5312747a60e5a" category="summary">ASA C30ストレージシステムのコントローラを交換するには、まず、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成をリストアし、ストレージリソースの制御を交換用コントローラに戻します。</block>
+  <block id="803e804e07341009008b98487711f181" category="doc">コントローラの交換ワークフロー- ASA C30</block>
+  <block id="c61569158aa3671e77ca597581b887ef" category="summary">修正可能または修正不可能なメモリ エラーが過剰に検出された場合は、ASA C30 ストレージ システム内の DIMM を交換してください。このようなエラーが発生すると、ストレージシステムでONTAPをブートできなくなる可能性があります。交換プロセスでは、障害コントローラのシャットダウン、障害コントローラの取り外し、DIMMの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
+  <block id="ec3e218e5469b0ce628477ad9f004c70" category="doc">DIMMの交換- ASA C30</block>
+  <block id="1803a1112a2904ae0921972c848b5e8f" category="summary">ドライブに障害が発生した場合、またはアップグレードが必要な場合は、ASA C30 ストレージ システム内のドライブを交換します。交換プロセスでは、障害が発生したドライブを特定して安全に取り外し、新しいドライブを取り付けてデータアクセスとシステムパフォーマンスを継続できるようにします。</block>
+  <block id="23b2049b2eea6424e3c9f2c437632516" category="doc">ドライブの交換 - ASA C30</block>
+  <block id="f34d2c681546688dd685a08e6231060d" category="summary">ファンが故障したり、効率的に動作していない場合は、システムの冷却と全体的なパフォーマンスに影響する可能性があるため、ASA C30 ストレージ システムのファン モジュールを交換してください。交換プロセスでは、コントローラのシャットダウン、コントローラの取り外し、ファンの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
+  <block id="4ba0a2181ffa6e88b2a3a96e4335f373" category="doc">ファンモジュールの交換- ASA C30</block>
+  <block id="08eb5686abafb87a324c810a07f29f17" category="summary">ASA C30ストレージシステムでは、次のコンポーネントに対してメンテナンス手順を実行できます。</block>
+  <block id="17a891651b2730bc15c982ad663e4f0a" category="doc">ASA C30ハードウェアのメンテナンス</block>
+  <block id="6b9adda1cbf39f0e67bdc239d9aa4627" category="summary">ASA C30 ストレージ システムに I/O モジュールを追加すると、ネットワーク接続が強化され、システムのデータ トラフィック処理能力が拡張されます。</block>
+  <block id="8129be3599ad6ec9ac772edc71b7c944" category="doc">I/Oモジュールの追加- ASA C30</block>
+  <block id="efbf95fd94ecc04d20688f2a1a7413ed" category="summary">ASA C30 ストレージ システムは、I/O モジュールを拡張または交換する柔軟性を提供し、ネットワークの接続性とパフォーマンスを強化します。I/Oモジュールの追加または交換は、ネットワーク機能をアップグレードする場合や、障害が発生したモジュールに対処する場合に不可欠です。</block>
+  <block id="3e1235f9663aca6507f5d16f948427e1" category="doc">I/Oモジュールの追加と交換の概要- ASA C30</block>
+  <block id="c7d9daf18836286b26e5af2f7a1b19f0" category="summary">モジュールに障害が発生した場合、またはより高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、ASA C30 ストレージ システムの I/O モジュールを交換します。交換プロセスでは、コントローラのシャットダウン、障害が発生したI/Oモジュールの交換、コントローラのリブート、障害が発生したパーツのNetAppへの返却を行います。</block>
+  <block id="04309486482d3d0620657420da172323" category="doc">I/O モジュールを交換してください - ASA C30</block>
+  <block id="1bc87c4a07526688d1214c5a431c934a" category="summary">ASA C30ストレージシステムのハードウェアを保守して、長期的な信頼性と最適なパフォーマンスを確保します。ダウンタイムやデータ損失の防止に役立つため、障害のあるコンポーネントの交換などの定期的なメンテナンスタスクを実行します。</block>
+  <block id="2b35d20ce09f7745c49b8451372caf6c" category="doc">ハードウェアメンテナンスの概要 - ASA C30</block>
+  <block id="907caac40616ad0b3b73482a664ecc6b" category="paragraph">このセクションの手順では、ASA C30 ストレージ システムが ONTAP 環境にストレージ ノードとしてすでに導入されていることを前提としています。</block>
+  <block id="27bfa0f1b8609e118425afe072093cba" category="paragraph">ASA C30ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
+  <block id="754858e1736e8f08294476cdf876df07" category="summary">ASA C30 ストレージ システムの NV バッテリは、停電時に重要なシステム データを保持する役割を担っているため、バッテリの充電が減り始めたり、故障したりした場合は、NV バッテリを交換してください。交換プロセスでは、障害のあるコントローラのシャットダウン、コントローラモジュールの取り外し、NVバッテリの交換、コントローラモジュールの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
+  <block id="30439362b4a418aafdf1f5fca92ba9ae" category="doc">NVバッテリの交換- ASA C30</block>
+  <block id="34010b5f9d4ebf5305f175c19ab977fc" category="summary">ASA C30 ストレージ システムの AC または DC 電源ユニット (PSU) が故障または不具合を起こした場合は交換し、システムが安定した動作に必要な電力を継続的に受けられるようにします。交換プロセスでは、障害が発生したPSUを電源から取り外し、電源コードを抜き、障害が発生したPSUを交換してから、電源に再接続します。</block>
+  <block id="b51e59bcca51590e8f0da1f045973db3" category="doc">電源装置の交換- ASA C30</block>
+  <block id="9c0bdb399f0e50ec7c09183c83cb3eae" category="summary">正確な時間同期に依存するサービスとアプリケーションが引き続き動作できるように、ASA C30 ストレージ システムのリアルタイム クロック (RTC) バッテリ (一般にコイン型電池と呼ばれる) を交換します。</block>
+  <block id="fe9d07d7f91e1b374f95ba72708ba4ca" category="doc">リアルタイムクロックバッテリを交換してください- ASA C30</block>
+  <block id="e30552dfe91bf978ebf6787b261fac5c" category="doc">コントローラをシャットダウンしてブートメディアを交換します - AFF C30およびAFF C60</block>
+  <block id="0b7c680449e211bdbdb9d43223f6c69c" category="paragraph">ブート メディアを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、AFF C30 または AFF C60 ストレージ システムのコントローラをシャットダウンします。</block>
+  <block id="dda626e5ca7d24a899a17030ee1e8338" category="doc">ドライブの交換 - AFF C30およびAFF C60</block>
+  <block id="5ff448003ebaf80171d13e6e73920334" category="section-title">2025年5月</block>
+  <block id="5a4e5cd19493dae0777edfcd18341c6e" category="paragraph">新しい ASA C30 システムは、高性能でインテリジェントな包括的なデータ管理機能を、より多くの顧客とワークロードに拡張します。</block>
+  <block id="4b59a84869b0ee3437aa8c8b9dd4c786" category="sidebar">ASA C30システム</block>
+  <block id="527a051a36c26b816e479ad211bc96ea" category="sidebar">ASA C30のメンテナンス</block>
+  <block id="63a52a2f30db6359822003e267bb9514" category="sidebar">ASA C30ブートメディア</block>
+  <block id="b4a3b44dc7350cb88f59a4a2eb7dda1d" category="sidebar">ASA C30シャーシ</block>
+  <block id="cb330090f109eb2fa5d8e0cb697b8627" category="sidebar">ASA C30コントローラモジュール</block>
+  <block id="d6cf13e3e73df787bea3a13aaa745efd" category="sidebar">ASA C30 I/Oモジュール</block>
 </blocks>

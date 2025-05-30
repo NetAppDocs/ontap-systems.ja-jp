@@ -268,4 +268,4 @@ DC PSU
 
 
 .次の手順
-障害のあるブートメディアを物理的に交換したら、link:bootmedia-recovery-image-boot-bmr.html["パートナーノードからONTAPイメージをリストアする"]を参照してください。
+損傷したブートメディアを物理的に交換した後、 link:bootmedia-recovery-image-boot-bmr.html["パートナーノードからONTAPイメージをリストアする"] 。

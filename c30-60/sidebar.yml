@@ -33,7 +33,7 @@ entries:
       url: "/c30-60/bootmedia-replace-requirements.html"
     - title: 暗号化キーの確認
       url: "/c30-60/bootmedia-encryption-preshutdown-checks.html"
-    - title: 障害のあるコントローラをシャットダウンします
+    - title: コントローラのシャットダウン
       url: "/c30-60/bootmedia-shutdown.html"
     - title: ブートメディアを交換します
       url: "/c30-60/bootmedia-replace.html"

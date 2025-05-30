@@ -1,10 +1,10 @@
 ---
-permalink: c30-60/bootmedia-controller-reinstall.html 
+permalink: asa-r2-c30/bootmedia-controller-reinstall.html 
 sidebar: sidebar 
-keywords: aff c30, aff c60, remove controller 
+keywords: asa c30, remove controller 
 summary: システムで登録される修正可能なエラー修正コード（ECC）の数が増え続けている場合は、コントローラモジュールを交換する必要があります。交換しないとシステムがパニック状態になります。 
 ---
-= コントローラを再度取り付けます- AFF C30およびAFF C60
+= コントローラの再インストール - ASA C30
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
