@@ -8937,8 +8937,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="789b5a8a8cbbdce99d0cd8864ee0122a" category="doc">障害のあるコントローラ FAS70 および FAS90 をシャットダウンします</block>
   <block id="2902ee20441450339d3c624a2432953d" category="list-text"><block ref="402920e7db99056d01d15836c97d7e6e" category="inline-xref-macro-rx"></block></block>
   <block id="0ead7a2e2db558cfd790c55a9c76462e" category="list-text">他のすべてのコンポーネントが正常に動作していることを確認します。正常に動作していない場合は、テクニカルサポートにお問い合わせください。</block>
-  <block id="fd39955a756e9aaa81ca55b2791f9b72" category="example-title">オプション1 MOSTシステム</block>
-  <block id="d4373786f422d4c41e16fcb4a1e26b83" category="example-title">オプション2 MetroCluster構成</block>
   <block id="1cc5afe23260cb08d578b3171ed8bb0d" category="paragraph">キャッシングモジュールのスロット番号</block>
   <block id="9c7e22c30b9aa93d97efb0ef5d7ccaa8" category="list-text">タブを回転させてモジュールから離します。</block>
   <block id="21c6d5df7d87902fb54560352086c7e1" category="list-text">キャッシングモジュールの上部にある[Terra Cotta]タブをつまみ、カムハンドルを回転させてキャッシングモジュールから取り外します。</block>
@@ -11249,7 +11247,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="35ac4e474d14cd3235380c2e767e83a3" category="paragraph">不揮発性メモリに障害が発生した場合、またはアップグレードが必要な場合は、FAS70またはFAS90システムのNVRAMを交換します。交換プロセスでは、障害のあるコントローラのシャットダウン、NVRAMモジュールまたはNVRAM DIMMの交換、ディスクの再割り当て、障害が発生したパーツのNetAppへの返却を行います。</block>
   <block id="a7188c3f4745ef552e2d05d7b35f5f28" category="summary">FAS70またはFAS90システムのリアルタイムクロック（RTC）バッテリ（一般にコイン型電池と呼ばれます）を交換して、正確な時刻同期に依存するサービスやアプリケーションが動作し続けるようにします。</block>
   <block id="2ffef1288a7f6acf62a54035268660b1" category="summary">FAS70またはFAS90システムのシステム管理モジュールが故障した場合、またはファームウェアが破損した場合は、システム管理モジュールを交換してください。交換プロセスでは、コントローラのシャットダウン、障害が発生したシステム管理モジュールの交換、コントローラのリブート、ライセンスキーの更新、障害が発生したパーツのNetAppへの返却を行います。</block>
-  <block id="5058f1af8388633f609cadb75a75dc9d" category="paragraph">です。</block>
   <block id="83755d1a8b686dba4bc8143c0cb7f397" category="doc">ブートメディアの交換ワークフロー- AFF A1K</block>
   <block id="25602a3f0e04b149a4c958bcec65c371" category="summary">AFF A1Kシステムのブートメディアには、重要なファームウェアと設定データが格納されます。交換プロセスでは、システム管理モジュールを取り外し、障害のあるブートメディアを取り外し、交換用ブートメディアを取り付けてから、ONTAPイメージを交換用ブートメディアに転送します。</block>
   <block id="b33207f5d0f2655fdef88d9bbf915f24" category="summary">AFF A1Kストレージシステムの障害のあるコントローラをシャットダウンしてデータ損失を防止し、ブートメディアの交換時にシステムの安定性を確保します。</block>
@@ -11913,9 +11910,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e772ad168b6f97f132982a96392cd046" category="example-title">NS224のAC電源装置の交換</block>
   <block id="0dcc8efe101bb5e6350d650ce519cbfa" category="video-title">NS224シェルフのAC電源装置のホットスワップ</block>
   <block id="40f990da8c57e47c36081d4d612c9817" category="list-text">PSU から電源ケーブルを取り外し、コントローラー モジュールをシステムの前面から数インチ引き出します。</block>
-  <block id="5330c5fb5d366be53452014b9ecf03a7" category="paragraph">+ 。システム管理モジュールに接続されているケーブルをすべて取り外します。モジュールを再度取り付けるときに正しいポートにケーブルを接続できるように、ケーブルの接続先にラベルを付けておいてください。..ケーブルマネジメントトレイ内部の両側にあるボタンを引いてケーブルマネジメントトレイを下に回転させ、トレイを下に回転させます。..システム管理カムボタンを押します。..カムラッチをできるだけ下に回転させます。..カムレバーの開口部に指をはさみ、モジュールをエンクロージャから引き出して、システム管理モジュールをエンクロージャから取り外します。..システム管理モジュールを静電気防止用マットの上に置き、ブートメディアにアクセスできるようにします。。管理モジュールからブートメディアを取り外します。</block>
-  <block id="42daa41b8c19102ddb14e0889d7abbb4" category="paragraph">+ image::../media/drw_a1k_boot_media_remove_replace_ieops-1377.svg[ブートメディアの交換グラフィック]</block>
-  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
   <block id="193d35b8a9ac476b4099d10d04a128a6" category="list-text">システムの前面にあるコントローラ モジュールを慎重に取り付け直し、ロックします。</block>
   <block id="c65e5ab2ccd40a14e7dbaad19aa0c504" category="list-text">コントローラーの PSU から電源ケーブルを取り外し、システムの前面にあるコントローラー モジュールを数インチ引き出します。</block>
   <block id="2a111f85cafe27d96d705414a1545f34" category="list-text">電源ケーブルを PSU に差し込み、システムの前面にあるコントローラー モジュールをゆっくりと再装着してロックします。</block>
@@ -11926,7 +11920,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b4f9b4ed219fb6f91477aff5ebef3453" category="admonition">DC 電源がある場合は、電源ブロックを電源に再接続します。</block>
   <block id="4efb9ea6af03bf03e0cdc2a4164ea43c" category="list-text">交換用コントローラモジュールのコンソールポートにコンソールケーブルを接続し、リブート時にコンソールメッセージを受信できるようにラップトップに再接続します。</block>
   <block id="fde22c7ade0121628e0502770ed5326e" category="list-text">電源を接続します。電源が復旧するとすぐに、コントローラーはLOADERプロンプトを起動します。</block>
-  <block id="ea1ad38d91c2e87ef2e9571bd55654fd" category="list-text">ONTAP 9.17.1</block>
   <block id="14a1b02d9ac34f22a362671d392a3852" category="list-text">ASA C30</block>
   <block id="ed57089257c5bf0e9855c2abce5e2f2c" category="paragraph">AFF A1Kストレージシステムは、NSM100またはNSM100Bモジュールを搭載したNS224シェルフをサポートします。各モジュールの主な違いは次のとおりです。</block>
   <block id="bee9bdef55e93399a97d85b3925cfca2" category="list-text">NSM100 シェルフ モジュールは、組み込みポート e0a および e0b を使用します。</block>
@@ -12019,4 +12012,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b4a3b44dc7350cb88f59a4a2eb7dda1d" category="sidebar">ASA C30シャーシ</block>
   <block id="cb330090f109eb2fa5d8e0cb697b8627" category="sidebar">ASA C30コントローラモジュール</block>
   <block id="d6cf13e3e73df787bea3a13aaa745efd" category="sidebar">ASA C30 I/Oモジュール</block>
+  <block id="8acf9575f7f79494b7321c6428846a4b" category="paragraph">ブートメディアを交換してください。</block>
+  <block id="8fdc5ec3ff56b023a707d257557cb7c1" category="paragraph">FAS70 および FAS90 ストレージ システムは、NSM100 または NSM100B モジュールのいずれかを搭載した DS212C、DS224C、DS460C、および NS224 シェルフをサポートします。</block>
+  <block id="cb1d7f2de7963108d3fe1b590a415523" category="paragraph">NS224 モジュール間の主な違いは次のとおりです。</block>
+  <block id="a1c52b2edb23bc93318c0b82dc9baead" category="paragraph">次の NS224 ケーブル接続例では、シェルフ モジュール ポートを参照する場合の NS224 シェルフ内の NSM100 モジュールを示しています。</block>
+  <block id="29cc4b807f94b06bddae2e11c6a56c1e" category="paragraph">USB フラッシュ ドライブには、障害のあるコントローラーが実行しているものと同じサービス イメージ (BIOS) バージョンがインストールされている必要があります。</block>
 </blocks>
