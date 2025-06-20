@@ -55,7 +55,7 @@ NOTE: を参照してください https://docs.netapp.com/us-en/ontap-cli-9121/[
 
 . キャッシングモジュールを取り外します。
 +
-image::../media/drw_9500_remove_flashcache.svg[DRW 9500がFlashCacheを削除します]
+image::../media/drw_9500_remove_flashcache.svg[キャッシングモジュールを取り外し]
 
 +
 [cols="20%,80%"]

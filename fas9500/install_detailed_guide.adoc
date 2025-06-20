@@ -230,10 +230,10 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 . アニメーションや図を使用して、コントローラとスイッチをケーブルで接続します。
 +
-.アニメーション- 2ノードスイッチレスクラスタのケーブル配線
+.アニメーション 2ノードスイッチレスクラスタ配線
 video::da08295f-ba8c-4de7-88c3-ae7c0170408d[panopto]
 +
-image::../media/drw_9500_tnsc_network_cabling.svg[DRW 9500 TNSCネットワークケーブル接続]
+image::../media/drw_9500_tnsc_network_cabling.svg[TNSCネットワーク配線図]
 
 +
 [cols="20%,80%"]
@@ -322,10 +322,10 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 . アニメーションや図を使用して、コントローラとスイッチをケーブルで接続します。
 +
-.アニメーションスイッチを使用したクラスタのケーブル接続
+.アニメーション スイッチドクラスタ配線
 video::3ad3f118-8339-4683-865f-ae7c0170400c[panopto]
 +
-image::../media/drw_9500_switched_network_cabling.svg[DRW 9500スイッチドネットワークのケーブル配線]
+image::../media/drw_9500_switched_network_cabling.svg[スイッチクラスタネットワークのケーブル接続]
 
 +
 [cols="20%,80%"]
@@ -422,10 +422,10 @@ NOTE: コネクタを挿入すると、カチッという音がしてコネク�
 
 . 次のアニメーションや図を使用して、コントローラを3台のDS224Cドライブシェルフ（1台のドライブシェルフのスタックと2台のドライブシェルフのスタック1台）にケーブル接続します。
 +
-.アニメーション-ドライブシェルフをケーブル接続します
+.アニメーション ドライブシェルフのケーブル接続
 video::c958aae6-9d08-4d3d-a213-ae7c017040cd[panopto]
 +
-image::../media/drw_9500_sas_shelf_cabling.svg[DRW 9500 SASシェルフのケーブル接続]
+image::../media/drw_9500_sas_shelf_cabling.svg[SASシェルフケーブル]
 
 +
 [cols="20%,80%"]
@@ -434,13 +434,13 @@ image::../media/drw_9500_sas_shelf_cabling.svg[DRW 9500 SASシェルフのケー
 
 
  a| 
-image::../media/icon_square_1_blue.png[アイコン正方形1青]
+image::../media/icon_square_1_blue.png[吹き出しアイコン1]
  a| 
 図を参照しながら、ドライブシェルフスタック1をコントローラに接続します。
 
 * Mini-SASケーブル*
 
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIEケーブルミニSAS HDからミニSAS HD]
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini-SAS HDケーブル]
 
 
 
@@ -451,7 +451,7 @@ image::../media/icon_square_2_yellow.png[吹き出しアイコン2]
 
 * Mini-SASケーブル*
 
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIEケーブルミニSAS HDからミニSAS HD]
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini-SAS HDケーブル]
 
 
 
@@ -462,7 +462,7 @@ image::../media/icon_square_3_tourquoise.png[吹き出しアイコン3]
 
 * Mini-SASケーブル*
 
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIEケーブルミニSAS HDからミニSAS HD]
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini-SAS HDケーブル]
 
 |===
 
@@ -481,10 +481,10 @@ image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIEケーブルミニSA
 
 . 次のアニメーションまたは図を使用して、 1 つ以上のドライブシェルフ ID を設定します。
 +
-.アニメーション-シェルフIDを設定します
+.アニメーション 棚IDを設定する
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
-image::../media/drw_power-on_set_shelf_ID_set.svg[DRW 電源オンセットシェルフ ID セット]
+image::../media/drw_power-on_set_shelf_ID_set.svg[電源を入れて棚IDを設定する]
 
 +
 [cols="20%,80%"]
@@ -533,10 +533,10 @@ image::../media/icon_round_5.png[番号5]
 |===
 . 両方のノードの電源装置の電源スイッチをオンにします。
 +
-.アニメーション-コントローラの電源をオンにします
+.アニメーション コントローラーの電源をオンにする
 video::a905e56e-c995-4704-9673-adfa0005a891[panopto]
 +
-image::../media/drw_9500_power-on.svg[DRW 9500電源オン]
+image::../media/drw_9500_power-on.svg[システムの電源を入れる]
 
 +
 
@@ -548,10 +548,10 @@ NOTE: 初回のブートには最大 8 分かかる場合があります。
 
 . 次のアニメーションに従って、ラップトップを管理スイッチに接続します。
 +
-.アニメーション-ラップトップを管理スイッチに接続します
+.アニメーション ノートパソコンを管理スイッチに接続する
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 +
-image::../media/dwr_laptop_to_switch_only.svg[DWR ラップトップをスイッチのみに接続します]
+image::../media/dwr_laptop_to_switch_only.svg[ノートパソコンからスイッチへのケーブル接続]
 
 . 検出する ONTAP アイコンを選択します。
 +
@@ -605,17 +605,17 @@ NOTE: コンソールポートの設定方法については、ラップトッ�
 
 .. システム付属のコンソールケーブルを使用してラップトップまたはコンソールにコンソールケーブルを接続し、ラップトップを管理サブネット上のスイッチに接続します。
 +
-image::../media/drw_9500_cable_console_switch_controller.svg[DRW 9500ケーブルコンソールスイッチコントローラ]
+image::../media/drw_9500_cable_console_switch_controller.svg[コンソールからスイッチへの接続]
 
 .. 管理サブネット上の TCP / IP アドレスをラップトップまたはコンソールに割り当てます。
 
 
 . 次のアニメーションに従って、 1 つ以上のドライブシェルフ ID を設定します。
 +
-.アニメーション-シェルフIDを設定します
+.アニメーション 棚IDを設定する
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
-image::../media/drw_power-on_set_shelf_ID_set.svg[DRW 電源オンセットシェルフ ID セット]
+image::../media/drw_power-on_set_shelf_ID_set.svg[電源を入れて棚IDを設定する]
 
 +
 [cols="20%,80%"]
@@ -664,10 +664,10 @@ image::../media/icon_round_5.png[番号5]
 |===
 . 両方のノードの電源装置の電源スイッチをオンにします。
 +
-.アニメーション-コントローラの電源をオンにします
+.アニメーション コントローラーの電源をオンにする
 video::a905e56e-c995-4704-9673-adfa0005a891[panopto]
 +
-image::../media/drw_9500_power-on.svg[DRW 9500電源オン]
+image::../media/drw_9500_power-on.svg[システムの電源を入れる]
 
 +
 

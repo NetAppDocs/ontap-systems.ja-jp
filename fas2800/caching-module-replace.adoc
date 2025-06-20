@@ -99,12 +99,12 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 . ケーブルマネジメントデバイスをコントローラモジュールの右側と左側から取り外し、脇に置きます。
 . カムハンドルのラッチをつかんで解除し、カムハンドルを最大限に開いてコントローラモジュールをミッドプレーンから離し、両手でコントローラモジュールをシャーシから外します。
 +
-image::../media/drw_2240_x_opening_cam_latch.svg[DRW 2240 x オープンカムラッチ]
+image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[コントローラを取り外します]
 
 . コントローラモジュールを裏返し、平らで安定した場所に置きます。
 . コントローラモジュールの側面にある青いボタンを押してカバーを開き、カバーを上に回してコントローラモジュールから取り外します。
 +
-image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[DRW 2850オープンコントローラモジュールはIEOPS 695をカバーしています]
+image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[コントローラーモジュールを開く]
 
 
 
@@ -140,7 +140,7 @@ video::12b339c5-640a-4be8-a5fc-af47017276fd[panopto]
 .. 青色のリリースボタンを押し、キャッシングモジュールを上に回転させます。
 .. キャッシングモジュールをケースからまっすぐにゆっくりと引き出します。
 +
-image::../media/drw_2850_replace_caching module_IEOPS-697.svg[DRW 2850は、キャッシングモジュールIEOPS 697を交換します]
+image::../media/drw_2850_replace_caching module_IEOPS-697.svg[キャッシュを置き換える]
 
 +
 [cols="1,3"]

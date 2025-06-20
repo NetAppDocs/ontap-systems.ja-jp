@@ -30,7 +30,7 @@ video::dc8d4acb-e061-45dd-8a0e-ae78004b6974[panopto]
 .アニメーション-コントローラモジュールの取り外し
 video::5e029a19-8acc-4fa1-be5d-ae78004b365a[panopto]
 +
-image::../media/drw_9500_remove_PCM.svg[DRW 9500がPCMを削除しました]
+image::../media/drw_9500_remove_PCM.svg[コントローラを取り外します]
 
 +
 [cols="20%,80%"]
@@ -56,7 +56,7 @@ image::../media/icon_round_2.png[番号2]
 
 . コントローラモジュールのふた側を上にして、平らで安定した場所に置きます。カバーの青いボタンを押し、コントローラモジュールの背面にカバーをスライドさせてから、カバーを上に動かしてコントローラモジュールから外します。
 +
-image::../media/drw_9500_PCM_open.svg[DRW 9500 PCMが開いています]
+image::../media/drw_9500_PCM_open.svg[コントローラを開く]
 
 
 
@@ -78,7 +78,7 @@ image::../media/icon_round_1.png[番号1]
 
 . 次の図またはコントローラモジュールの FRU マップを使用して、ブートメディアの場所を確認します。
 +
-image::../media/drw_9500_remove_boot_dev.svg[DRW 9500が起動デバイスを削除します]
+image::../media/drw_9500_remove_boot_dev.svg[ブートデバイスを取り外します。]
 
 +
 [cols="20%,80%"]
@@ -129,7 +129,7 @@ NOTE: Ver2コントローラに搭載されているDIMMソケットの数が少
 IMPORTANT: DIMM 回路基板のコンポーネントに力が加わらないように、 DIMM の両端を慎重に持ちます。
 
 +
-image::../media/drw_9500_replace_PCM_dimms.svg[DRW 9500はPCM DIMMの代わりに使用されます]
+image::../media/drw_9500_replace_PCM_dimms.svg[DIMMの移動]
 
 +
 [cols="20%,80%"]
@@ -188,7 +188,7 @@ NOTE: システムのブート時にシステムファームウェアが更新�
 .アニメーション-コントローラモジュールを設置
 video::f2aa14b4-0d95-4109-b410-ae78004b35c9[panopto]
 +
-image::../media/drw_9500_remove_PCM_source.svg[DRW 9500がPCMソースを削除します]
+image::../media/drw_9500_remove_PCM_source.svg[コントローラーを再インストールする]
 
 +
 [cols="20%,80%"]

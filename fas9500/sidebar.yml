@@ -26,7 +26,7 @@ entries:
     - title: 暗号化キーの確認
       url: "/fas9500/bootmedia_encryption_preshutdown_checks.html"
     - title: 障害のあるコントローラをシャットダウンします
-      url: "/fas9500/bootmedia_impaired_controller_shutdown.html"
+      url: "/fas9500/bootmedia-shutdown.html"
     - title: ブートメディアを交換します
       url: "/fas9500/bootmedia_replace.html"
     - title: リカバリイメージをブートします

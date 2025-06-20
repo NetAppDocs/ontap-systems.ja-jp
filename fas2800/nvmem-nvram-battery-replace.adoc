@@ -75,11 +75,11 @@ Ctrl キーを押しながら C キーを押し、「 y 」と入力します。
 . ケーブルマネジメントデバイスをコントローラモジュールの右側と左側から取り外し、脇に置きます。
 . カムハンドルのラッチを外れるまで押し、カムハンドルをいっぱいまで開いてコントローラモジュールをミッドプレーンから外し、両手でコントローラモジュールをシャーシから半分引き出します。
 +
-image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[DRW 2850 PCM取り外し取り付けIEOPS 694]
+image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[コントローラを取り外します]
 
 . コントローラモジュールの背面にあるNVMEM LEDを確認します。  NVアイコンを探します。
 +
-image::../media/drw_hw_nvram_icon.svg[DRW hw NVRAM アイコン]
+image::../media/drw_hw_nvram_icon.svg[NVアイコン]
 
 +
 
@@ -108,14 +108,14 @@ NOTE: システムが「waiting for giveback」状態だった場合、または
 . コントローラモジュールを裏返し、平らで安定した場所に置きます。
 . コントローラモジュールの側面にある青いボタンを押してカバーを開き、カバーを上に回してコントローラモジュールから取り外します。
 +
-image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[DRW 2850オープンコントローラモジュールはIEOPS 695をカバーしています]
+image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[コントローラーカバーを外す]
 
 . コントローラモジュールで NVMEM バッテリの場所を確認します。
 +
 .アニメーション- NVバッテリを交換します
 video::592217fb-4868-4294-a559-af4701725598[panopto]
 +
-image::../media/drw_2850_replace_nvbattery_IEOPS-715.svg[DRW 2850はnvbattery IEOPS 715を交換します]
+image::../media/drw_2850_replace_nvbattery_IEOPS-715.svg[NV バッテリを交換してください]
 
 +
 [cols="1,3"]

@@ -100,7 +100,7 @@ NVRAM モジュールがシャーシから外れ、数インチ外に出ます�
 .アニメーション- NVRAMモジュールを交換します
 video::228cbd14-4cb2-49b5-88f1-ae78004b9d84[panopto]
 +
-image::../media/drw_9500_move-remove_NVRAM_module.svg[DRW 9500 move remove NVRAM moduleの2つのモジュールがあります]
+image::../media/drw_9500_move-remove_NVRAM_module.svg[NVRAM モジュールを取り外します]
 
 +
 [cols="20%,90%"]
@@ -124,7 +124,7 @@ image::../media/icon_round_2.png[番号2]
 
 . NVRAM モジュールを安定した場所に置き、カバーの青色のロックボタンを押し下げてカバーを NVRAM モジュールから取り外します。青いボタンを押しながら、カバーをスライドさせて NVRAM モジュールから外します。
 +
-image::../media/drw_9500_remove_NVRAM_module_contents.svg[DRW 9500はNVRAMモジュールの内容を削除します]
+image::../media/drw_9500_remove_NVRAM_module_contents.svg[NVRAMモジュールの内容を取り外します。]
 
 +
 [cols="20%,80%"]
@@ -176,7 +176,7 @@ NVRAM モジュールがシャーシから外れ、数インチ外に出ます�
 .アニメーション- NVRAMモジュールを交換します
 video::228cbd14-4cb2-49b5-88f1-ae78004b9d84[panopto]
 +
-image::../media/drw_9500_move-remove_NVRAM_module.svg[DRW 9500 move remove NVRAM moduleの2つのモジュールがあります]
+image::../media/drw_9500_move-remove_NVRAM_module.svg[NVRAM モジュールを取り外します]
 
 +
 [cols="20%,80%"]
@@ -200,7 +200,7 @@ image::../media/icon_round_2.png[番号2]
 
 . NVRAM モジュールを安定した場所に置き、カバーの青色のロックボタンを押し下げてカバーを NVRAM モジュールから取り外します。青いボタンを押しながら、カバーをスライドさせて NVRAM モジュールから外します。
 +
-image::../media/drw_9500_remove_NVRAM_module_contents.svg[DRW 9500はNVRAMモジュールの内容を削除します]
+image::../media/drw_9500_remove_NVRAM_module_contents.svg[NVRAMモジュールの内容を取り外します。]
 
 +
 [cols="20%,80%"]

@@ -65,3 +65,6 @@ summary: ONTAP イメージを USB ドライブからブートし、ファイル
 *注意：*プロセスが失敗した場合は、に連絡してください https://support.netapp.com["ネットアップサポート"]。
 
 
+
+.次の手順
+リカバリイメージを起動したら、を実行する必要がありlink:bootmedia-encryption-restore.html["ブートメディアで暗号化をリストアする"]ます。
