@@ -5188,7 +5188,6 @@
   <block id="319d072de0a7eb80654d8506bc74de47" category="paragraph">DCM2ドライブ・ドロワーは青色のストライプとDCM2ラベルで識別されています</block>
   <block id="d5240bafd6bf54bcb59e9a9f899b324e" category="section-title">ドライブドロワーを交換する準備をします</block>
   <block id="38cd7f0eca6a82b183b0f9dc3599583a" category="paragraph">ドライブドロワーを交換する前に、必要に応じてIOM12ファームウェアを更新し、HAペアを停止してデータアグリゲートをシェルフに保持するか、HAペアを常時稼働させておくかを選択する必要があります。 そのためには、ディスクドライブにあるデータアグリゲートからすべてのデータを移動し、データアグリゲートをオフラインにして削除する必要があります。ただし、シェルフにルートアグリゲートが含まれる場合は、HAペアを停止する必要があります。最後に、シェルフの電源をオフにする必要があります。</block>
-  <block id="fca3ffea6534176432f58b5a22ed22e1" category="list-title">手順</block>
   <block id="f1d6fcc8467c66247fc38fc5bb1e448c" category="list-text">障害が発生したドライブドロワーを交換すると'IOM12モジュールと任意の数のDCM2ドライブドロワーがシェルフに搭載されるかどうかを確認します</block>
   <block id="bb92ef0e860f1f3c67a9c3a453b2781c" category="list-text">シェルフにIOM12モジュールと任意の数のDCM2ドライブ・ドロワーが混在する場合は'IOM12 FWをバージョン0300以降にアップグレードする必要がありますそれ以外の場合は'次の手順に進みます</block>
   <block id="62f67af3803932031f11d177b5600361" category="list-text">HAペアのどちらかのコントローラのルートアグリゲートがシェルフに含まれている場合、またはHAペアを停止する（HAペアを起動して実行しない）場合は、次の手順を実行します。それ以外の場合は、次の手順に進みます。</block>
@@ -5199,7 +5198,6 @@
   <block id="4bd0b0c2b519de54df41bc77088d8182" category="list-text">セクションに移動します。 <block ref="f9b764c55080d7cf77ed91e890c43565" category="inline-xref-macro-rx"></block>。</block>
   <block id="eb1a8e53bca0fcb026633a23b562bfff" category="list-text">HAペアを常に稼働状態にしておく場合は、次の手順を実行します。</block>
   <block id="1aea84d8e76217145d77f4dd7efe6f8f" category="admonition">ディスクシェルフのアグリゲートにドロワーを交換しようとすると、原因 でシステムが停止し、複数のディスクがパニック状態になることがあります。</block>
-  <block id="ea0b163daac6d7d1dbcf0110733b7a5c" category="list-text">ディスクドライブにあるデータアグリゲートからすべてのデータを移動します。</block>
   <block id="a3285b442e65f70add01ba5f44551d15" category="paragraph">データには、ボリュームやLUNが含まれますが、これらに限定されません。</block>
   <block id="cf798cab97b54ad5fe43c91a959754ca" category="list-text">アグリゲートをオフラインにして削除し、ディスクドライブをスペアとして使用できるようにします。</block>
   <block id="19613506a0ea4d74ae9e654ba0e170e6" category="paragraph">コマンドはどちらのコントローラのクラスタシェルからも入力できます。</block>
@@ -10073,7 +10071,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="d16a227aab66041a81c6f88b290eb486" category="section-title">手順1：クラスタ/ HAをケーブル接続する</block>
   <block id="134e0586a0879fa097abfb47d5e64dbe" category="open-title">スイッチレスクラスタのケーブル接続</block>
   <block id="ee68cf12a16ca46d58bedd8cf9051f32" category="example-title">2ポートの40 / 100GbE I/Oモジュールを2つ搭載したAFF A30またはAFF A50</block>
-  <block id="1de8dab1beab3d5ee0495c66a3c814b7" category="paragraph">コントローラを相互にケーブル接続して、ONTAPクラスタ接続を作成します。</block>
   <block id="a8d16746fb80901317600cba36862a10" category="list-text">クラスタ/ HAインターコネクト接続をケーブル接続します。</block>
   <block id="6780657f10ef4bbe5e784f3b1e7777e3" category="admonition">クラスタインターコネクトトラフィックとHAトラフィックは、同じ物理ポート（スロット2と4のI/Oモジュール）を共有します。ポートは40 / 100GbEです。</block>
   <block id="efe3bfda2c730f42fd2741bc4722e6f0" category="list-text">コントローラAのポートe2aをコントローラBのポートe2aにケーブル接続します。</block>
@@ -10544,7 +10541,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b3fb7cc55fec6d7df9078e2ee7739718" category="paragraph">DIMMを正しく挿入すると、簡単に挿入できますが、スロットにしっかりとはめ込まれます。DIMMが正しく挿入されていない場合は、再度挿入します。</block>
   <block id="7e08ee4b466dc677d31c40c8b0488339" category="list-text">DIMMがスロットに均等に配置され、完全に挿入されていることを目視で確認します。</block>
   <block id="34f650ca44fabe66ff7e4095a137da22" category="list-text">ストレージシステムの他のすべてのコンポーネントが正しく動作していることを確認します。動作していない場合は、作業を続行する前にににお問い合わせください<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>。"</block>
-  <block id="54d890bf92693607c99bccb67f9933f5" category="paragraph">コントローラをケーブル接続してONTAPクラスタ接続を作成します。</block>
   <block id="d48b3cfe096b47bcb7f13e683c934beb" category="paragraph">コントローラをイーサネットまたはFCホストネットワークにケーブル接続します。</block>
   <block id="bb8661c49545cac68358046e25b8f950" category="open-title">イーサネットホストのケーブル接続</block>
   <block id="3c90cea8d34e6c024dcfcf7fbe2bc396" category="example-title">AFF A20、A30、またはAFF A50（4ポート10 / 25GbE I/Oモジュール×1）</block>
@@ -11729,7 +11725,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="db424e93139f05b40145c02ca1496dab" category="image-alt">NVDIMMバッテリを交換してください</block>
   <block id="f01c12d2b181f3fa692e46f31483240d" category="list-text">キャビネットまたはTelcoラックのガイドピンがシャーシガイドスロットに固定されていることを確認します。</block>
   <block id="0ce45b8799d32fa93b50aed5301e827b" category="list-text">コントローラ 2 のポート 0b とスタックの最後のドライブシェルフにある IOM B のポート 3+ <block ref="065babb6c425d208f17452adf684f6f8" category="inline-image-macro-rx" type="image"></block> Mini-SAS HD間ケーブル</block>
-  <block id="ce48b5f9c255c35e0431b311322885fc" category="list-text">一般的な構成については、クラスタ/ HAおよびホストネットワークのケーブル接続手順を参照してください。</block>
   <block id="11695514a878032b3fb5ecdf5e659b5b" category="paragraph">ここに構成が表示されない場合は、にアクセスし<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>てストレージシステムのケーブル接続に関する包括的な構成とスロット優先度情報を確認してください。</block>
   <block id="2e169c8e6f4cc1f6315545b46d7284a2" category="inline-image-macro">64Gb FCケーブル</block>
   <block id="0bf370304560205688213d22ba637c07" category="paragraph"><block ref="0bf370304560205688213d22ba637c07" category="inline-image-macro-rx" type="image"></block></block>
@@ -12021,4 +12016,15 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="bcbe9ce5b2d50ad0b254f40cda6fc7e1" category="image-alt">電源を入れて棚IDを設定する</block>
   <block id="43f978a7787080590a53cc2abdd637c9" category="image-alt">LEDモジュールを交換する</block>
   <block id="a54c219a955221bc0586ab22f8a07401" category="image-alt">RTCバッテリを交換する</block>
+  <block id="14d4a75ecbe13082ebd840dc7d091f2c" category="section-title">ステップ4: コントローラとドライブをインストールする</block>
+  <block id="7aa6db479f57ead7ac39225f410bdf2d" category="paragraph">コントローラーとドライブを交換用シャーシにインストールし、コントローラーを再起動します。</block>
+  <block id="3dbc14ba753f9b6deb52fc17f8c85cec" category="paragraph">ハードウェア障害が必要な場合は、AFF A20、AFF A30、またはAFF A50システムのシャーシを交換します。交換プロセスには、コントローラーの取り外し、ドライブの取り外し、交換用シャーシのインストール、およびシャーシ コンポーネントの再インストールが含まれます。</block>
+  <block id="fde22ae5f3a1cc39c61853ffe9a68675" category="paragraph">ONTAPクラスタ接続を作成スイッチレスクラスタの場合は、コントローラを相互に接続します。スイッチクラスタの場合は、コントローラをクラスタネットワークスイッチに接続します。</block>
+  <block id="4a1975a1a386f2f3f28c4859f5ea4976" category="paragraph">クラスタ/HA のケーブル接続例は、一般的な構成を示しています。</block>
+  <block id="8c3a29fca49d6a772e0a2f8ab6ab7280" category="paragraph">ホスト ネットワークのケーブル接続の例は、一般的な構成を示しています。</block>
+  <block id="6ce95ae69a1e0ed801b4369491228162" category="paragraph">ハードウェア障害が必要な場合は、ASA A20、ASA A30、またはASA A50システムのシャーシを交換します。交換プロセスには、コントローラーの取り外し、ドライブの取り外し、交換用シャーシのインストール、およびシャーシ コンポーネントの再インストールが含まれます。</block>
+  <block id="d756679882bcf80d5a80fd42020d0f25" category="paragraph">ハードウェア障害が発生した場合は、ASA C30 ストレージ システムのシャーシを交換してください。交換プロセスには、コントローラーの取り外し、ドライブの取り外し、交換用シャーシのインストール、およびシャーシ コンポーネントの再インストールが含まれます。</block>
+  <block id="72dc238e73081e826d88e29df24b4c58" category="paragraph">ハードウェア障害が必要な場合は、AFF C30またはAFF C60システムのシャーシを交換します。交換プロセスには、コントローラーの取り外し、ドライブの取り外し、交換用シャーシのインストール、およびシャーシ コンポーネントの再インストールが含まれます。</block>
+  <block id="149eed3e03e259c4e52b1de45a4fe3e9" category="paragraph">シェルフ内のドライブドロワーを交換するには、ストレージシステム全体（HAペア）を停止することで、シェルフ上のデータアグリゲートを維持できます。または、HAペアを稼働状態のままにすることもできます。その場合は、シェルフのディスクドライブ上のデータアグリゲートからすべてのデータを移動し、オフラインにしてデータアグリゲートを削除する必要があります。シェルフにルートアグリゲートが含まれている場合は、HAペアを停止する必要があります。</block>
+  <block id="12e16a41f9ae5c97288e4e9e78b0bbf6" category="list-text">シェルフ上のすべてのディスク ドライブにあるデータ アグリゲートからすべてのデータを移動します。</block>
 </blocks>
