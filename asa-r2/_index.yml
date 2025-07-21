@@ -10,7 +10,7 @@ indexpage:
     - title: ASA R2ストレージシステムの詳細
       url: https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html
     - title: ASA データシート
-      url: https://www.netapp.com/data-storage/all-flash-san-storage-array/
+      url: https://www.netapp.com/asa/
   - title: ASA R2システムのインストールとメンテナンス
     links:
     - title: ASA R2システムのインストール

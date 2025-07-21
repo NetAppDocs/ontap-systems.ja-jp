@@ -9965,8 +9965,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5914cbd8747a44dda8282e3747061adf" category="section-title">ストレージシステムノオモミ</block>
   <block id="bb7471e13b2ece22767cb35368ded2a7" category="section-title">シェルフの重量</block>
   <block id="fe464b77547b113c26b6c4a663f8d99c" category="paragraph">シェルフを移動または持ち上げるときは、必要な予防措置を講じてください。</block>
-  <block id="55a163291cdcad8ab6af6a932720e193" category="inline-link-macro">AFFシステムに関する詳細情報</block>
-  <block id="67bacc9d73c9b4789f2c3cde9ab59ad8" category="paragraph">AFF AシリーズシステムとAFF Cシリーズシステムは、仮想環境に特化した堅牢なスケールアウトプラットフォームを提供します。スタンドアロンシステムとして導入することも、NetApp ONTAP構成でハイパフォーマンス階層として導入することもできます。<block ref="587107815f5f912e7d3b8f989c8db7df" category="inline-link-macro-rx"></block>です。</block>
   <block id="9d9de1698f7e401c78687204de906ee5" category="list-text">AFF A20用</block>
   <block id="f8f6ba2d572ef729148f2d89d8ff810a" category="list-text">AFF A30用</block>
   <block id="cc6089132b9a5e4af29a76834480cc1a" category="list-text">AFF A50用</block>
@@ -9976,7 +9974,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8c20e9c3f526d526af74c044baf7da64" category="inline-link-macro">ASA R2システムの詳細</block>
   <block id="77f5d8fa3689e046b946bfbacf61536e" category="paragraph">ASA R2システムは、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルな操作性を実現します。<block ref="2f9305bd6f8a2949646123561cb92ab4" category="inline-link-macro-rx"></block>です。</block>
   <block id="e2ead389bfa8a65f29bc4e57fdaf4a7b" category="inline-link-macro">ASAシステムの詳細</block>
-  <block id="0f14ce10f8ff3a34f46c25bba942372c" category="paragraph">ASA AシリーズおよびASA Cシリーズシステムは、シンプルで専用のSANエクスペリエンスを提供し、FCPまたはiSCSIプロトコルを使用して、エンタープライズのミッションクリティカルなデータベースやその他のSANワークロードに継続的なデータ可用性を提供します。<block ref="9c36b794130c589d6d71e1c2ef02ceef" category="inline-link-macro-rx"></block>です。</block>
   <block id="2ce90a39656cd7489bede7894c2a9943" category="list-text">ASA AFF A250の略</block>
   <block id="7ddb32a2b45e07e265f9e454f57d2eb0" category="list-text">ASA AFF A800の略</block>
   <block id="b5efaabac2b0776c5f0ca29587d418e4" category="list-text">ASA AFF A400の略</block>
@@ -10451,7 +10448,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7e5d96420c04db907e37ffc0f25670b5" category="doc">ONTAPのハードウェアとソフトウェアの互換性</block>
   <block id="66a2f01bbe5e27a2d0a21ef15725c491" category="paragraph">ONTAPハードウェアシステムの完全な構成サポートと制限事項については、を参照してください<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block>。ONTAP 9ソフトウェアの既知の問題、制限事項、およびアップグレードに関する注意事項の詳細については、を参照して<block ref="84fe5db170ffeba3db16dd5c6d7a58db" category="inline-link-rx"></block>ください。</block>
   <block id="c43fddbfefcc8dab0b365319ffc7ad2f" category="summary">ONTAPハードウェアシステムの新しいプラットフォームについて説明します。</block>
-  <block id="b1243a1d02acf9453220663ea4294abf" category="paragraph">ONTAPハードウェアシステムの新機能について説明します。</block>
   <block id="73b3856e20fbea83dc1573f8203ad6a4" category="section-title">2024年12月</block>
   <block id="909cc883ddbed6fc06a25647ba1f212b" category="paragraph">このシステムは、MLベースのランサムウェアのリアルタイム検出、シームレスなクラウド統合、AI、VMware、データベース、分析などのミッションクリティカルなワークロードに対して卓越したパフォーマンスを提供し、ブロック、ファイル、オブジェクトストレージをサポートします。</block>
   <block id="3c8e670cb2f634a0b68672d5f01ec686" category="inline-link-macro">AFF Aシリーズシステムの詳細</block>
@@ -11666,8 +11662,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1a22b1d20df6f5e65b8bb7003b91c005" category="section-title">手順 3 ：ディスクを再割り当てする</block>
   <block id="e7c2a2aadaeb3f0bbd622bc6dfdbba35" category="section-title">手順3：コントローラの状態を確認する</block>
   <block id="97e9b99ec4fb1f882057ec866b408907" category="paragraph">使用していないI/Oスロットには、熱的な問題を防止し、EMCのコンプライアンスを確保するために、ブランキングモジュールを取り付ける必要があります。</block>
-  <block id="569db66c718b1f6397ae27568f2b6360" category="list-text">障害のあるコントローラを正常なコントローラからギブバックします。<block ref="30edaf7c9fa43c78aeaf4b8fabb7af1a" prefix=" " category="inline-code"></block></block>
-  <block id="8036f04f3126628e1157f62c82a46ac6" category="list-text">NICモジュールを取り付けた場合は、各ポートの使用モードを_network_として指定します。<block ref="b5ce1b43695dab734898874661154238" prefix=" " category="inline-code"></block></block>
   <block id="bc8cd0b25c4f8f5afe020026e3d82314" category="paragraph">プロセスが完了し、メッセージが表示されます<block ref="fd27264bf07cac36017c79d5bc35af81" prefix=" " category="inline-code"></block>。</block>
   <block id="59b113844b84da51f785fb0828d66ba7" category="list-text">キーが正常にリストアされないと、システムは停止し、キーをリストアできなかったことを示します。エラーと警告メッセージが表示されます。リカバリプロセスを再実行します。</block>
   <block id="f3b6228c1cbd418b703785112e6450cf" category="list-text">障害コントローラでプロンプトが表示されたら、キーを押し<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>て_/etc/ssh/ssh_host_ECDSA_KEY_を上書きします。</block>
@@ -11709,7 +11703,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="2dcdf3018c4d483d8c38e450dbdf5944" category="list-text">システムにV_StorageAttachライセンスがある場合は、この手順を実行する前に、必要な追加の手順を参照する必要があります。</block>
   <block id="1253bf6221482d606a7719ba415d9176" category="admonition">この時点では、他のケーブルや電源コードは接続しないでください。</block>
   <block id="c69071436bdfe1b2f2edc29969a29980" category="admonition">交換用コントローラは正常なコントローラから給電され、シャーシに完全に装着されるとすぐにブートを開始します。</block>
-  <block id="5cb4dbca31ce772b17987c15a725b52e" category="list-text">ノードを通常動作に戻します。</block>
   <block id="257315f653a5868c10e8897449aa264f" category="list-text">正常なコントローラのコンソールから自動ギブバックをリストアします。</block>
   <block id="b9adb77861a7f27800ce914be076df5d" category="list-text"><block ref="b9adb77861a7f27800ce914be076df5d" category="inline-link-macro-rx"></block></block>
   <block id="ec3558cc556230de3472d8f669055445" category="paragraph"><block ref="ec3558cc556230de3472d8f669055445" category="inline-link-macro-rx"></block></block>
@@ -12027,4 +12020,19 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="72dc238e73081e826d88e29df24b4c58" category="paragraph">ハードウェア障害が必要な場合は、AFF C30またはAFF C60システムのシャーシを交換します。交換プロセスには、コントローラーの取り外し、ドライブの取り外し、交換用シャーシのインストール、およびシャーシ コンポーネントの再インストールが含まれます。</block>
   <block id="149eed3e03e259c4e52b1de45a4fe3e9" category="paragraph">シェルフ内のドライブドロワーを交換するには、ストレージシステム全体（HAペア）を停止することで、シェルフ上のデータアグリゲートを維持できます。または、HAペアを稼働状態のままにすることもできます。その場合は、シェルフのディスクドライブ上のデータアグリゲートからすべてのデータを移動し、オフラインにしてデータアグリゲートを削除する必要があります。シェルフにルートアグリゲートが含まれている場合は、HAペアを停止する必要があります。</block>
   <block id="12e16a41f9ae5c97288e4e9e78b0bbf6" category="list-text">シェルフ上のすべてのディスク ドライブにあるデータ アグリゲートからすべてのデータを移動します。</block>
+  <block id="18de2c69e2059bfb4397c266ca003000" category="list-text">AutoSupportが有効になっている場合は、自動ケース作成を復元（抑制解除）します: +</block>
+  <block id="2aa2517148232c12ae58df0e0682f437" category="list-text">LOADER プロンプトから障害のあるコントローラを再起動します。</block>
+  <block id="9607981dab4fa77906d0065cb84e707f" category="list-text">AutoSupportが有効になっている場合は、自動ケース作成を復元 (抑制解除) します。</block>
+  <block id="6752a0d2cd717c7824d154f27bacd610" category="list-text">NIC モジュールをインストールした場合は、各ポートの使用モードを _network_ として指定します。</block>
+  <block id="249c68a3d34c9d4fc7fa8e3d5b116625" category="paragraph"><block ref="b5ce1b43695dab734898874661154238" prefix="" category="inline-code"></block></block>
+  <block id="b29e463b3ffa2246f6ca9731ac640d4f" category="list-text">正常なコントローラで、日付と時刻を確認します。</block>
+  <block id="540405fb4a2a991ec2b5bd0ec4a08d48" category="paragraph"><block ref="1cac34e5e8442fb80d6ade838d969fc0" prefix="" category="inline-code"></block></block>
+  <block id="526f0f6f4025118277a35fffe0e34747" category="list-text">障害のあるコントローラの LOADER プロンプトで、時刻と日付を確認します。</block>
+  <block id="32544c893b7f5f19e7a5f77a5c3e83d8" category="list-text">必要に応じて日付を変更します。</block>
+  <block id="b44d7cf4a1e6c8202283ae7adf14c206" category="paragraph"><block ref="7e61842d1d9bb6d13127efea49e14c96" prefix="" category="inline-code"></block></block>
+  <block id="be701243d86021173bd71c46c1236c57" category="list-text">必要に応じて、GMT で時間を設定します。</block>
+  <block id="a85af06f0bd401f4adf6e2aa1bb77ee7" category="paragraph">AFF AシリーズシステムとAFF Cシリーズシステムは、仮想環境に特化した堅牢なスケールアウトプラットフォームを提供します。スタンドアロンシステムとして導入することも、NetApp ONTAP構成でハイパフォーマンス階層として導入することもできます。との詳細については、こちらをご覧ください<block ref="e32d7f43a965b20b68ffaecd5419d04d" category="inline-link-macro-rx"></block><block ref="bab42395a66f3eaff2c39fe532427141" category="inline-link-macro-rx"></block>。</block>
+  <block id="d28d6e92f4637a29005ec41e1e153608" category="paragraph">ASA AシリーズおよびASA Cシリーズシステムは、シンプルで専用のSANエクスペリエンスを提供し、FCPまたはiSCSIプロトコルを使用して、エンタープライズのミッションクリティカルなデータベースやその他のSANワークロードに継続的なデータ可用性を提供します。<block ref="81e0314610971d584490a2155e03ad8e" category="inline-link-macro-rx"></block>です。</block>
+  <block id="f43d5eca9a113ac2db5fd46e7f859dc2" category="inline-link-macro">サポートされなくなったハードウェア</block>
+  <block id="0fabeaca13110e9bf6952a432c728512" category="paragraph">ONTAPハードウェアシステムの新機能について説明します。追加のサポート情報については、 <block ref="957a5393ecc937ae8cfffe4d00549121" category="inline-link-macro-rx"></block>そして<block ref="54b6b6b0b8b3660c20a40919b7a145c9" category="inline-link-macro-rx"></block> 。</block>
 </blocks>

@@ -6,7 +6,7 @@
 ====
 .AFF システム
 --
-AFF AシリーズシステムとAFF Cシリーズシステムは、仮想環境に特化した堅牢なスケールアウトプラットフォームを提供します。スタンドアロンシステムとして導入することも、NetApp ONTAP構成でハイパフォーマンス階層として導入することもできます。link:https://www.netapp.com/data-storage/all-flash-san-storage-array["AFFシステムに関する詳細情報"]です。
+AFF AシリーズシステムとAFF Cシリーズシステムは、仮想環境に特化した堅牢なスケールアウトプラットフォームを提供します。スタンドアロンシステムとして導入することも、NetApp ONTAP構成でハイパフォーマンス階層として導入することもできます。との詳細については、こちらをご覧くださいlink:https://www.netapp.com/aff-a-series/["AFF Aシリーズシステム"]link:https://www.netapp.com/aff-c-series/["AFF Cシリーズシステム"]。
 
 AFF AシリーズおよびAFF Cシリーズシステムは、次のONTAPリリース以降でサポートされます。
 
@@ -96,7 +96,7 @@ ONTAP 9 .16.0::
 --
 .ASAシステム
 --
-ASA AシリーズおよびASA Cシリーズシステムは、シンプルで専用のSANエクスペリエンスを提供し、FCPまたはiSCSIプロトコルを使用して、エンタープライズのミッションクリティカルなデータベースやその他のSANワークロードに継続的なデータ可用性を提供します。link:https://www.netapp.com/data-storage/all-flash-san-storage-array["ASAシステムの詳細"]です。
+ASA AシリーズおよびASA Cシリーズシステムは、シンプルで専用のSANエクスペリエンスを提供し、FCPまたはiSCSIプロトコルを使用して、エンタープライズのミッションクリティカルなデータベースやその他のSANワークロードに継続的なデータ可用性を提供します。link:https://www.netapp.com/asa/["ASAシステムの詳細"]です。
 
 ASAシステムは、次のONTAPリリース以降でサポートされます。
 

@@ -40,8 +40,8 @@ NOTE: パスフレーズの入力を2回求められます。
 . パートナーノードにコンソールケーブルを接続し、としてログインします `admin`。
 . CFOアグリゲート（ルートアグリゲート）のみをギブバックします。 `storage failover giveback -fromnode local -only-cfo-aggregates _true_`
 +
-** エラーが発生した場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
 
+NOTE: エラーが発生した場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
 
 . ギブバックレポートが完了してから5分待って、フェイルオーバーのステータスとギブバックのステータスを確認します（および `storage failover show-giveback`） `storage failover show`。
 . キーの同期とステータスの確認を行います。

@@ -88,4 +88,16 @@ DC PSU
 
 
 |===
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。
++
+「 storage failover giveback -ofnode _impaired_node_name _
+
+. 正常なコントローラのコンソールから自動ギブバックをリストアします。
++
+`storage failover modify -node local -auto-giveback true`
+
+. AutoSupportが有効になっている場合は、自動ケース作成を復元 (抑制解除) します。
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
 

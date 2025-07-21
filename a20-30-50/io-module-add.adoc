@@ -217,10 +217,19 @@ image:../media/icon_round_2.png["番号2"]
 +
 障害のあるコントローラをリブートすると、I/Oモジュールおよびその他のコンポーネントも再初期化されます。
 
-. 障害のあるコントローラを正常なコントローラからギブバックします。 `storage failover giveback -ofnode _impaired_node_name_`
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。
++
+`storage failover giveback -ofnode _impaired_node_name_`です。
+
 . 同じ手順を繰り返して、もう一方のコントローラにI/Oモジュールを追加します。
-. 正常なコントローラのコンソールから自動ギブバックをリストアします。 `storage failover modify -node local -auto-giveback _true_`
-. AutoSupportが有効になっている場合は、ケースの自動作成をリストア（抑制解除）します。 `system node autosupport invoke -node * -type all -message MAINT=END`
+. 正常なコントローラのコンソールから自動ギブバックをリストアします。
++
+`storage failover modify -node local -auto-giveback true`
+
+. AutoSupportが有効になっている場合は、自動ケース作成を復元（抑制解除）します: +
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
 
 
 --
@@ -296,14 +305,29 @@ image:../media/icon_round_2.png["番号2"]
 ストレージI/Oモジュールを設置した場合は、NS224シェルフを設置してケーブル接続します（を参照） https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html["ホツトアトワアクフロオ"^]。
 
 . I/Oモジュールの取り外しと取り付けの手順を繰り返して、コントローラにI/Oモジュールを追加します。
-. Loaderプロンプトから障害コントローラをリブートします。 `bye`
+. LOADER プロンプトから障害のあるコントローラを再起動します。
++
+`bye`
+
 +
 障害のあるコントローラをリブートすると、I/Oモジュールおよびその他のコンポーネントも再初期化されます。
 
-. 障害のあるコントローラを正常なコントローラからギブバックします。 `storage failover giveback -ofnode _impaired_node_name_`
-. 正常なコントローラのコンソールから自動ギブバックをリストアします。 `storage failover modify -node local -auto-giveback _true_`
-. AutoSupportが有効になっている場合は、ケースの自動作成をリストア（抑制解除）します。 `system node autosupport invoke -node * -type all -message MAINT=END`
-. NICモジュールを取り付けた場合は、各ポートの使用モードを_network_として指定します。 `storage port modify -node _node_name_ -port _port_name_ -mode _network_`
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。
++
+「 storage failover giveback -ofnode _impaired_node_name _
+
+. 正常なコントローラのコンソールから自動ギブバックをリストアします。
++
+`storage failover modify -node local -auto-giveback true`
+
+. AutoSupportが有効になっている場合は、自動ケース作成を復元 (抑制解除) します。
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+. NIC モジュールをインストールした場合は、各ポートの使用モードを _network_ として指定します。
++
+`storage port modify -node _node_name_ -port _port_name_ -mode _network_`
+
 . もう一方のコントローラに対して上記の手順を繰り返します。
 
 

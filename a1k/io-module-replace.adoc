@@ -212,13 +212,13 @@ I/Oモジュールを交換したら、コントローラをリブートする�
 
 NOTE: 障害のあるコントローラをリブートすると、I/Oモジュールおよびその他のコンポーネントも再初期化されます。
 
-. ノードを通常動作に戻します。
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。
 +
 「 storage failover giveback -ofnode _impaired_node_name _
 
 . 正常なコントローラのコンソールから自動ギブバックをリストアします。
 +
-`storage failover modify -node local -auto-giveback _true_`
+`storage failover modify -node local -auto-giveback true`
 
 . AutoSupportが有効になっている場合は、ケースの自動作成をリストアします。
 +

@@ -401,6 +401,18 @@ DC PSU
 
 
 |===
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。
++
+「 storage failover giveback -ofnode _impaired_node_name _
+
+. 正常なコントローラのコンソールから自動ギブバックをリストアします。
++
+`storage failover modify -node local -auto-giveback true`
+
+. AutoSupportが有効になっている場合は、自動ケース作成を復元 (抑制解除) します。
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
 
 
 
@@ -412,21 +424,31 @@ NOTE: RTCバッテリを交換し、コントローラを挿入して最初にBI
 `RTC date/time error. Reset date/time to default`
 `RTC power failure error`
 
-. 正常なコントローラで、コマンドを使用して日時を確認します `cluster date show`。
+. 正常なコントローラで、日付と時刻を確認します。
++
+`cluster date show`
+
 +
 
 NOTE: ストレージシステムがブートメニューで停止した場合は、オプションを選択し `Reboot node`てプロンプトが表示されたら「_y_」と応答し、Ctrl+C_を押してLoaderをブートします。
 
-. 障害コントローラのLoaderプロンプトで、日時を確認します。 `cluster date show`
+. 障害のあるコントローラの LOADER プロンプトで、時刻と日付を確認します。
 +
-.. 必要に応じて、日付を変更します。 `set date _mm/dd/yyyy_`
-.. 必要に応じて、時刻をGMTで設定します。 `set time hh:mm:ss`
+`cluster date show`
+
++
+.. 必要に応じて日付を変更します。
++
+`set date _mm/dd/yyyy_`
+
+.. 必要に応じて、GMT で時間を設定します。
++
+`set time hh:mm:ss`
+
 .. 日時を確認します。
 
 
 . Loaderプロンプトで、と入力して `bye`I/Oモジュールやその他のコンポーネントを再初期化し、コントローラをリブートします。
-. ストレージをギブバックして、コントローラを通常の動作に戻します。 storage failover giveback -ofnode impaired_node_name _`
-. 自動ギブバックを無効にした場合は、再度有効にします。 `storage failover modify -node local -auto-giveback _true_`
 
 
 
