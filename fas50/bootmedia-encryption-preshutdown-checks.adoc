@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, pre-shutdown checks for onboard encryption keys 
 summary: FAS50ストレージ・システムのデータ・セキュリティを確保するには、ブート・メディアで暗号化キーのサポートとステータスを確認する必要があります。ONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認し、コントローラをシャットダウンする前にキー管理ツールがアクティブになっているかどうかを確認してください。 
 ---
-= ブートメディアの暗号化キーのサポートとステータスを確認します（FAS50）。
+= 手動ブートメディアリカバリの暗号化サポートを確認する - FAS50
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

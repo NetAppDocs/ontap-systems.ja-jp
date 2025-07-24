@@ -4,25 +4,14 @@ sidebar: sidebar
 keywords: change, shelf, id, system, ontap, run, hot-add, ontap, controller, module, available, serve, data, unown, spare, offline, aggregate 
 summary: ONTAP がまだ実行されていない場合や、シェルフをシステムにケーブル接続する前にホットアドする場合は、システムのシェルフ ID を変更できます。また、 ONTAP が実行中で、シェルフ内のすべてのドライブが所有されていないか、スペアであるか、オフラインのアグリゲートのメンバーである場合にも、シェルフ ID を変更できます \ （コントローラモジュールがデータを提供可能です \ ）。 
 ---
-= IOM12 / IOM12Bモジュールを使用するシェルフのIDを変更してください
+= シェルフ ID の変更 - DS212C、DS224C、または DS460C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ONTAP がまだ実行されていない場合や、シェルフをシステムにケーブル接続する前にホットアドする場合は、システムのシェルフ ID を変更できます。また、 ONTAP が実行中（コントローラモジュールがデータを提供可能）の場合でも、シェルフ内のすべてのドライブが所有されていないか、スペアであるか、オフラインのアグリゲートのメンバーである場合にはシェルフ ID を変更できます。
-
-.作業を開始する前に
-* ONTAP が実行中（コントローラモジュールがデータを提供可能）の場合は、シェルフ内のすべてのドライブが所有されていないか、スペアであるか、オフラインのアグリゲートのメンバーであることを確認しておく必要があります。
-+
-「 storage disk show -shelf_shelf_number _ 」コマンドを使用すると、ドライブの状態を確認できます。Container Type 列の出力に、スペアまたは障害が発生したドライブである場合は破損が表示されます。また、 Container Name 列と Owner 列にはダッシュが表示されます。
-
-* システムですでに使用されているシェルフ ID を確認するには、 Active IQ Config Advisor を実行するか、「 storage shelf show -fields shelf-id 」コマンドを使用します。
-+
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネットアップのダウンロード： Config Advisor"]
-
-
+ONTAP がまだ実行されていない場合、またはシェルフをシステムにケーブル接続する前にホット アドする場合は、IOM12/IOM12B モジュールを搭載したシステム内のシェルフ ID を変更できます。また、ONTAPが実行中（コントローラ モジュールがデータを提供可能）の場合でも、シェルフ内のすべてのドライブが所有されていないか、スペアか、オフラインのアグリゲートのメンバーである場合にはシェルフIDを変更できます。
 
 .このタスクについて
 * 有効なシェルフ ID は 00~99 です。
@@ -34,6 +23,14 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 +
 電源をオンにするまでの待機時間は、この手順の後半で説明する ONTAP の状態によって異なります。
 
+
+
+.作業を開始する前に
+* ONTAP が実行中（コントローラモジュールがデータを提供可能）の場合は、シェルフ内のすべてのドライブが所有されていないか、スペアであるか、オフラインのアグリゲートのメンバーであることを確認しておく必要があります。
++
+「 storage disk show -shelf_shelf_number _ 」コマンドを使用すると、ドライブの状態を確認できます。Container Type 列の出力に、スペアまたは障害が発生したドライブである場合は破損が表示されます。また、 Container Name 列と Owner 列にはダッシュが表示されます。
+
+* システムですでに使用されているシェルフIDを確認するには、Active IQ Config Advisorを実行するか、 `storage shelf show -fields shelf-id`コマンドを使用します。   https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisorをダウンロードしてアクセスする"] NetAppサポート サイトをご覧ください。
 
 
 .手順

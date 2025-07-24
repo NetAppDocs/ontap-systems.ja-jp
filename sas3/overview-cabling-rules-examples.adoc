@@ -1,10 +1,10 @@
 ---
 permalink: sas3/overview-cabling-rules-examples.html 
 sidebar: sidebar 
-keywords: disk, shelves, shelf, iom12, module, single-controller, configuration, support, platform, sas, cabling, cable, rule, controller, shelf-to-shelf, connection, rule, controller-to-stack, mini-sas, hd, optical, cable, rule, sas cabling rules 
+keywords: disk, shelves, shelf, iom12, module, single-controller, configuration, support, platform, sas, cabling, cable, rule, controller, shelf-to-shelf, connection, rule, controller-to-stack, mini-sas, hd, optical, cable, rule, sas cabling rules, iom12b 
 summary: IOM12 モジュールを搭載した SAS ドライブシェルフをストレージシステムにケーブル接続する際に役立つ、次の SAS ケーブル接続ルール、例、およびワークシートを利用できます。 
 ---
-= SASケーブル接続ルール、ワークシート、概要- IOM12 / IOM12Bモジュールを使用するシェルフ
+= ケーブル配線ルールの概要 - DS212C、DS224C、または DS460C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

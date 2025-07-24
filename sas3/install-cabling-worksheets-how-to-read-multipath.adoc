@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: example, guide, read, apply, complete, worksheet, cable, controller-to-stack, connection, disk, shelves, shelf, iom12, multipathed, connectivity, hot to read a worksheet to cable controller-to-stack connections for multipathed connectivity 
 summary: 以下の例は、マルチパス接続用の IOM12 モジュールを搭載したディスクシェルフで、記入済みのワークシートの内容を適用してコントローラとスタックをケーブル接続する方法を示しています。 
 ---
-= IOM12 / IOM12Bモジュールを使用するマルチパス接続でコントローラ/スタック間をケーブル接続するためのワークシートの読み取り方法
+= マルチパス接続用のコントローラとスタック間の接続を配線するためのワークシートの読み方 - DS212C、DS224C、または DS460C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

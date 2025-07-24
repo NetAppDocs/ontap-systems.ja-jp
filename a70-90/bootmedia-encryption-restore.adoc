@@ -2,9 +2,9 @@
 permalink: a70-90/bootmedia-encryption-restore.html 
 sidebar: sidebar 
 keywords: aff a70, aff a90, post boot media replacement steps for okm, nse, and nve 
-summary: AFF A70またはAFF A90システムの交換用ブートメディアに暗号化をリストアして、データを継続的に保護します。このプロセスでは、キーの可用性の確認、暗号化設定の再適用、データへのセキュアなアクセスの確認が行われます。 
+summary: AFF A70またはAFF A90システムの交換用ブートメディアに暗号化をリストアして、データを継続的に保護します。交換プロセスには、キーの可用性の確認、暗号化設定の再適用、およびデータへのセキュアなアクセスの確認が含まれます。 
 ---
-= ブートメディアでの暗号化のリストア（AFF A70およびAFF A90）
+= 手動ブートリカバリ後の暗号化キーの復元 - AFF A70およびAFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -1,10 +1,10 @@
 ---
 permalink: sas3/install-cabling-worksheet-template-multipath.html 
 sidebar: sidebar 
-keywords: complete, completing, worksheet, template, controller, sas, port, pair, cable, controller, disk, shelves, iom12, module, achieve, multipathed, connectivity, ha, pair, single-controller, configuration, worksheet, connection, controller-to-stack cabling worksheet template for multipathed connectivity 
+keywords: complete, completing, worksheet, template, controller, sas, port, pair, cable, controller, disk, shelves, iom12, module, achieve, multipathed, connectivity, ha, pair, single-controller, configuration, worksheet, connection, controller-to-stack cabling worksheet template for multipathed connectivity, iom12b 
 summary: ワークシートテンプレートを記入することで、コントローラのSASポートペアを定義できます。これらのポートを使用して、コントローラをIOM12 / 12B IOMBモジュールを使用するディスクシェルフスタックにケーブル接続し、HAペアまたはシングルコントローラ構成でマルチパス接続を実現できます。記入済みのワークシートを使用して、構成に合ったマルチパス接続を実施することもできます。 
 ---
-= マルチパス接続用のコントローラ/スタック間のケーブル接続ワークシートテンプレート- IOM12 / IOM12Bモジュールを使用するシェルフです
+= マルチパス接続用配線ワークシート - DS212C、DS224C、または DS460C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

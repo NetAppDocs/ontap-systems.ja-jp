@@ -2,9 +2,9 @@
 permalink: c80/bootmedia-encryption-restore.html 
 sidebar: sidebar 
 keywords: c80, post boot media replacement steps for okm, nse, and nve 
-summary: AFF C80システムの交換用ブートメディアに暗号化をリストアして、データを継続的に保護します。このプロセスでは、キーの可用性の確認、暗号化設定の再適用、およびデータへのセキュアなアクセスの確認が行われます。 
+summary: AFF C80システムの交換用ブートメディアに暗号化をリストアして、データを継続的に保護します。交換プロセスには、キーの可用性の確認、暗号化設定の再適用、およびデータへのセキュアなアクセスの確認が含まれます。 
 ---
-= ブートメディアでの暗号化のリストア- AFF C80
+= 手動ブートリカバリ後の暗号化キーの復元 - AFF C80
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -2,9 +2,9 @@
 permalink: a70-90/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
 keywords: aff a70, aff a90, pre-shutdown checks for onboard encryption keys 
-summary: AFF A70およびAFF A90ストレージシステムのデータセキュリティを確保するには、ブートメディアで暗号化キーのサポートとステータスを確認する必要があります。ONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認し、コントローラをシャットダウンする前にキー管理ツールがアクティブになっているかどうかを確認してください。 
+summary: AFF A70またはAFF A90ストレージシステムのデータセキュリティを確保するには、ブートメディアで暗号化キーのサポートとステータスを確認する必要があります。ONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認し、コントローラをシャットダウンする前にキー管理ツールがアクティブになっているかどうかを確認してください。 
 ---
-= ブートメディアの暗号化キーのサポートとステータスを確認します（AFF A70とAFF A90）。
+= 手動ブートメディアリカバリの暗号化サポートを確認する - AFF A70およびAFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

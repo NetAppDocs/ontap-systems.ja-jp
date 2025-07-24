@@ -4,20 +4,17 @@ sidebar: sidebar
 keywords: hot-swap, fail, disk, drive, ds460c, nondisruptive, replace, system, power, serving, data, i/o, hot-swap a disk drive in a ds460c disk shelf 
 summary: DS460C ディスクシェルフ内の障害が発生したディスクドライブをホットスワップすることができます。 
 ---
-= IOM12 / IOM12Bモジュールを使用するDS460Cディスクシェルフのディスクドライブのホットスワップ
+= ディスクドライブのホットスワップ - DS460C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-DS460C ディスクシェルフ内の障害が発生したディスクドライブをホットスワップすることができます。
+IOM12 または IOM12B モジュールを搭載した DS460C ディスク シェルフ内の障害が発生したディスク ドライブをホットスワップできます。
 
 .作業を開始する前に
-* 交換用ディスクドライブが DS460C ディスクシェルフでサポートされている必要があります。
-+
-https://hwu.netapp.com["NetApp Hardware Universe の略"]
-
+* 交換用ディスクドライブは、DS460Cディスクシェルフでサポートされている必要があります。構成でサポートされているディスクドライブは、  https://hwu.netapp.com["NetApp Hardware Universe の略"] 。
 * システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、テクニカルサポートにお問い合わせください。
 * 取り外すディスクドライブは、障害状態でなければなりません。
 +
@@ -29,10 +26,7 @@ NOTE: ディスクドライブのタイプや容量によっては、障害デ�
 
 * Self-Encrypting Disk （ SED ；自己暗号化ディスク）を交換する場合は、使用している ONTAP のバージョンに対応する ONTAP のマニュアルに記載されている交換手順に従う必要があります。
 +
-ONTAP のドキュメントには、 SED の交換前と交換後に実行する必要がある手順も記載されています。
-
-+
-https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["CLI での NetApp Encryption の概要"]
+指示 https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["CLI での NetApp Encryption の概要"]このドキュメントでは、SED を交換する前と交換後に実行する必要がある追加の手順について説明します。
 
 
 
@@ -67,23 +61,11 @@ NOTE: ディスクドライブキャリアの下側のむき出しになって�
 
 NOTE: 磁場によってディスクドライブに保存されているすべてのデータが破損したり、ディスクドライブの回路が故障し、原因が修理不可能となる場合があります。
 
-* ディスクをホットスワップする前に、 Disk Qualification Package （ DQP ）の最新バージョンをインストールしておくことを推奨します。
+* *ベストプラクティス*: システムが新しく認定されたディスクドライブを認識し、利用できるようにするために、  https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["ディスク認定パッケージ (DQP) の最新バージョンをダウンロードする"^]ディスク ドライブをホットスワップする前に。
 +
-DQP の最新バージョンをインストールしておくと、システムが新しく認定されたディスクドライブを認識して使用できるため、ディスクドライブの情報が最新でない場合に表示されるシステムイベントメッセージを回避できます。また、ディスクドライブが認識されないために発生するディスクのパーティショニングも回避できます。さらに、ディスクドライブのファームウェアが最新でない場合も、通知で知ることができます。
+最新バージョンのDQPをインストールすると、システムは新しく認定されたディスクドライブを認識して利用できるようになります。そのため、ディスクドライブの情報が最新ではないというシステムイベントメッセージが表示されるのを回避できます。また、ディスクドライブが認識されないためにディスクのパーティション分割ができなくなる可能性も回避できます。DQPは、ディスクドライブのファームウェアが最新ではないことを通知します。
 
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["ネットアップのダウンロード： Disk Qualification Package"^]
-
-* 新しいディスクシェルフ、シェルフ FRU コンポーネント、または SAS ケーブルを追加する前に、お使いのシステムのディスクシェルフ（ IOM ）ファームウェアとディスクドライブファームウェアを最新バージョンにしておくことを推奨します。
-+
-ファームウェアの最新バージョンは、ネットアップサポートサイトで入手できます。
-
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ネットアップのダウンロード：ディスクシェルフファームウェア"]
-
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ネットアップのダウンロード：ディスクドライブファームウェア"]
-
+* *ベストプラクティス*: 新しいディスクシェルフ、シェルフFRUコンポーネント、またはSASケーブルを追加する前に、システムに最新のディスクシェルフ（IOM）ファームウェアとディスクドライブファームウェアがインストールされていることを確認してください。NetAppNetAppサイトにアクセスして、  https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["ディスクシェルフファームウェアをダウンロードする"^]そして https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ディスクドライブのファームウェアをダウンロードする"^] 。
 * 新しいディスクドライブのファームウェアが最新バージョンでない場合は、自動的に（無停止で）更新されます。
 +
 

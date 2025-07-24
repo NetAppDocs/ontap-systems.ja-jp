@@ -2,16 +2,16 @@
 permalink: a70-90/bootmedia-recovery-image-boot.html 
 sidebar: sidebar 
 keywords: aff a70, aff a90, boot the recovery image 
-summary: AFF A70またはAFF A90システムに新しいブートメディアデバイスを設置したら、リカバリイメージをUSBドライブからブートし、パートナーノードから設定をリストアできます。 
+summary: AFF A70またはAFF A90システムに新しいブート メディア デバイスをインストールした後、USB ドライブからリカバリ イメージを手動で起動して、パートナー ノードから構成を復元できます。 
 ---
-= リカバリイメージのブート（AFF A70 and AFF A90）
+= USBドライブからの手動ブートメディアリカバリ - AFF A70およびAFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-AFF A70またはAFF A90システムに新しいブートメディアデバイスを設置したら、リカバリイメージをUSBドライブからブートし、パートナーノードから設定をリストアできます。
+AFF A70またはAFF A90システムに新しいブート メディア デバイスをインストールした後、USB ドライブからリカバリ イメージを手動で起動して、パートナー ノードから構成を復元できます。
 
 .手順
 . LOADER プロンプトから、 USB フラッシュドライブ「 boot_recovery 」からリカバリ・イメージをブートします

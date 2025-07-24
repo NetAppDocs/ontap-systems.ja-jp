@@ -2,16 +2,16 @@
 permalink: a70-90/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: aff a70, aff a90, shut down the controller 
-summary: データ損失を防ぎ、ブートメディアの交換時にシステムの安定性を確保するために、AFF A70またはAFF A90ストレージシステムの障害コントローラをシャットダウンします。 
+summary: 手動ブート メディア リカバリ プロセス中のデータ損失を防ぎ、システムの安定性を維持するために、 AFF A70またはAFF A90ストレージ システム内の障害のあるコントローラをシャットダウンします。 
 ---
-= コントローラをシャットダウンしてブートメディアを交換- AFF A70 and AFF A90
+= 手動ブートメディアリカバリのためにコントローラをシャットダウンする - AFF A70およびAFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-データ損失を防ぎ、ブートメディアの交換時にシステムの安定性を確保するために、AFF A70またはAFF A90ストレージシステムの障害コントローラをシャットダウンします。
+手動ブート メディア リカバリ プロセス中のデータ損失を防ぎ、システムの安定性を維持するために、 AFF A70またはAFF A90ストレージ システム内の障害のあるコントローラをシャットダウンします。
 
 [role="tabbed-block"]
 ====

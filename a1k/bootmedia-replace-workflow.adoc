@@ -2,16 +2,20 @@
 permalink: a1k/bootmedia-replace-workflow.html 
 sidebar: sidebar 
 keywords: aff a1k, replace the boot media 
-summary: AFF A1Kストレージシステムのブートメディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブートメディアの交換、リカバリイメージのブート、暗号化のリストア、システム機能の確認を行います。 
+summary: ブートイメージを手動でリカバリするには、USBドライブを使用して、 AFF A1Kシステムの交換用ブートメディアにONTAPを再インストールする必要があります。NetAppNetAppサイトから適切なONTAPリカバリイメージをダウンロードし、USBドライブにコピーする必要があります。この準備したUSBドライブを使用してリカバリを実行し、システムを稼働状態に復元します。 
 ---
-= ブートメディアの交換ワークフロー- AFF A1K
+= ブートメディアの手動リカバリワークフロー - AFF A1K
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-AFF A1Kストレージシステムのブートメディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブートメディアの交換、リカバリイメージのブート、暗号化のリストア、システム機能の確認を行います。
+ブートイメージを手動でリカバリするには、USBドライブを使用して、 AFF A1Kシステムの交換用ブートメディアにONTAPを再インストールする必要があります。NetAppNetAppサイトから適切なONTAPリカバリイメージをダウンロードし、USBドライブにコピーする必要があります。この準備したUSBドライブを使用してリカバリを実行し、システムを稼働状態に復元します。
+
+システムがONTAP 9.17.1以降で実行されている場合は、 link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。
+
+開始するには、回復要件を確認し、コントローラーをシャットダウンし、ブート メディアを交換し、USB ドライブを使用してイメージを復元し、必要に応じて暗号化設定を再適用します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:bootmedia-replace-requirements.html["ブートメディア要件を確認"]
 [role="quick-margin-para"]
@@ -29,13 +33,13 @@ AFF A1Kストレージシステムのブートメディアの交換を開始す�
 [role="quick-margin-para"]
 障害が発生したブートメディアをシステム管理モジュールから取り外し、交換用ブートメディアを取り付けてから、USBフラッシュドライブを使用してONTAPイメージを転送します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:bootmedia-recovery-image-boot.html["リカバリイメージをブートします"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:bootmedia-recovery-image-boot.html["ブートメディアにイメージをリストアする"]
 [role="quick-margin-para"]
 USBドライブからONTAPイメージをブートし、ファイルシステムをリストアして、環境変数を確認します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"]link:bootmedia-encryption-restore.html["アンコウカノ"]
 [role="quick-margin-para"]
-ONATPブートメニューからオンボードキーマネージャの設定または外部キーマネージャをリストアします。
+ONTAPブート メニューからオンボード キー マネージャ構成または外部キー マネージャを復元します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["7"]link:bootmedia-complete-rma.html["障害のあるパーツをネットアップに返却します"]
 [role="quick-margin-para"]

@@ -2,9 +2,9 @@
 permalink: fas-70-90/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
 keywords: fas70, fas90, pre-shutdown checks for onboard encryption keys 
-summary: FAS70またはFAS90ストレージ・システムのデータ・セキュリティを確保するには、ブート・メディアで暗号化キーのサポートとステータスを確認する必要があります。ONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認し、コントローラをシャットダウンする前にキー管理ツールがアクティブになっているかどうかを確認してください。 
+summary: FAS70またはFAS90ストレージシステムのデータセキュリティを確保するには、ブートメディア上の暗号化キーのサポート状況とステータスを確認する必要があります。お使いのONTAPバージョンがNetApp Volume Encryptionをサポートしているかどうかを確認し、コントローラをシャットダウンする前にキーマネージャがアクティブになっていることを確認してください。 
 ---
-= ブートメディアの暗号化キーのサポートおよびステータスを確認する（FAS70およびFAS90）
+= 手動ブートメディアリカバリの暗号化サポートを確認する - FAS70 および FAS90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

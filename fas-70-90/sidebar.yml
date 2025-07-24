@@ -24,7 +24,22 @@ entries:
   entries:
   - title: メンテナンスの概要
     url: "/fas-70-90/maintain-overview.html"
-  - title: ブートメディア
+  - title: ブートメディア - 自動回復
+    pdf-filename: FAS70とFAS90のブートメディア
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/fas-70-90/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/fas-70-90/bootmedia-replace-requirements-bmr.html"
+    - title: コントローラのシャットダウン
+      url: "/fas-70-90/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/fas-70-90/bootmedia-replace-bmr.html"
+    - title: ブートイメージを起動します
+      url: "/fas-70-90/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/fas-70-90/bootmedia-complete-rma-bmr.html"
+  - title: ブートメディア - 手動リカバリ
     pdf-filename: FAS70とFAS90のブートメディア
     entries:
     - title: ブートメディアの交換ワークフロー

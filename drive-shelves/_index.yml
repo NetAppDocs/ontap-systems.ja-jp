@@ -21,8 +21,6 @@ indexpage:
       url: "../sas3/install-hot-add-shelf.html"
     - title: シェルフ ID を変更します
       url: "../sas3/install-change-shelf-id.html"
-    - title: IOM6シェルフのスタックへのシェルフのホットアド（混在スタック）
-      url: "../sas3/iom12-hot-add-mix.html"
     - title: SAS ケーブル接続ルール、ワークシート、および例
       url: "../sas3/overview-cabling-rules-examples.html"
   - title: NS224シェルフのメンテナンス

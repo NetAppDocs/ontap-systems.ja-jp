@@ -24,7 +24,22 @@ entries:
   entries:
   - title: メンテナンスの概要
     url: "/a20-30-50/maintain-overview.html"
-  - title: ブートメディア
+  - title: ブートメディア - 自動回復
+    pdf-filename: AFF A20、AFF A30、およびAFF A50のブートメディア
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/a20-30-50/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/a20-30-50/bootmedia-replace-requirements-bmr.html"
+    - title: コントローラのシャットダウン
+      url: "/a20-30-50/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/a20-30-50/bootmedia-replace-bmr.html"
+    - title: ブートイメージを起動します
+      url: "/a20-30-50/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/a20-30-50/bootmedia-complete-rma-bmr.html"
+  - title: ブートメディア - 手動リカバリ
     pdf-filename: AFF A20、AFF A30、およびAFF A50のブートメディア
     entries:
     - title: ブートメディアの交換ワークフロー
@@ -86,6 +101,8 @@ entries:
       url: "/a20-30-50/io-module-overview.html"
     - title: I/O モジュールを追加します
       url: "/a20-30-50/io-module-add.html"
+    - title: ホットスワップクラスタ/HAモジュール
+      url: "/a20-30-50/io-module-hotswap-ha-slot4.html"
     - title: I/Oモジュールの交換
       url: "/a20-30-50/io-module-replace.html"
   - title: NVハツテリ

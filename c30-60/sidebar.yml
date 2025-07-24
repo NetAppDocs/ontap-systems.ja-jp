@@ -24,7 +24,22 @@ entries:
   entries:
   - title: メンテナンスの概要
     url: "/c30-60/maintain-overview.html"
-  - title: ブートメディア
+  - title: ブートメディア - 自動回復
+    pdf-filename: AFF C30およびAFF C60のブートメディア
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/c30-60/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/c30-60/bootmedia-replace-requirements-bmr.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/c30-60/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/c30-60/bootmedia-replace-bmr.html"
+    - title: ブートイメージを起動します
+      url: "/c30-60/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/c30-60/bootmedia-complete-rma-bmr.html"
+  - title: ブートメディア - 手動リカバリ
     pdf-filename: AFF C30およびAFF C60のブートメディア
     entries:
     - title: ブートメディアの交換ワークフロー
@@ -86,6 +101,8 @@ entries:
       url: "/c30-60/io-module-overview.html"
     - title: I/O モジュールを追加します
       url: "/c30-60/io-module-add.html"
+    - title: ホットスワップクラスタ/HAモジュール
+      url: "/c30-60/io-module-hotswap-ha-slot4.html"
     - title: I/Oモジュールの交換
       url: "/c30-60/io-module-replace.html"
   - title: NVハツテリ

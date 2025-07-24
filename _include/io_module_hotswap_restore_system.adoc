@@ -1,0 +1,20 @@
+= 
+:allow-uri-read: 
+
+
+ストレージを正常なコントローラに戻し、自動ギブバックを復元し、 AutoSupport の自動ケース作成を再度有効にして、ストレージ システムを通常の動作に戻します。
+
+.手順
+. ストレージを戻して、正常なコントローラ (引き継がれたコントローラ) を通常の動作に戻します。
++
+`storage failover giveback -ofnode _healthy_node_name_`
+
+. 障害のあるコントローラ (正常なコントローラを引き継いだコントローラ) のコンソールから自動ギブバックを復元します。
++
+`storage failover modify -node local -auto-giveback _true_`
+
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアします。
++
+`system node autosupport invoke -node * -type all -message MAINT=end`
+
+

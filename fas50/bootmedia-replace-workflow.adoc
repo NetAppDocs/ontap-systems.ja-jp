@@ -2,32 +2,36 @@
 permalink: fas50/bootmedia-replace-workflow.html 
 sidebar: sidebar 
 keywords: fas50, replace the boot media 
-summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
+summary: ブートイメージを手動でリカバリするには、USBドライブを使用して、FAS50システムの交換用ブートメディアにONTAPを再インストールする必要があります。NetAppNetAppサイトから適切なONTAPリカバリイメージをダウンロードし、USBドライブにコピーする必要があります。この準備したUSBドライブを使用してリカバリを実行し、システムを稼働状態に復元します。 
 ---
-= ブートメディアの交換ワークフロー- FAS50
+= ブートメディアの手動リカバリワークフロー - FAS50
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ブートメディアを交換するには、次のワークフロー手順を実行します。
+ブートイメージを手動でリカバリするには、USBドライブを使用して、FAS50システムの交換用ブートメディアにONTAPを再インストールする必要があります。NetAppNetAppサイトから適切なONTAPリカバリイメージをダウンロードし、USBドライブにコピーする必要があります。この準備したUSBドライブを使用してリカバリを実行し、システムを稼働状態に復元します。
+
+システムがONTAP 9.17.1以降で実行されている場合は、 link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。
+
+開始するには、回復要件を確認し、コントローラーをシャットダウンし、ブート メディアを交換し、USB ドライブを使用してイメージを復元し、必要に応じて暗号化設定を再適用します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:bootmedia-replace-requirements.html["ブートメディア要件を確認"]
 [role="quick-margin-para"]
-ブートメディアを交換するには、一定の要件を満たす必要があります。
+ブートメディアの交換要件を確認します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["1つ"]link:bootmedia-encryption-preshutdown-checks.html["オンボード暗号化キーを確認"]
 [role="quick-margin-para"]
-ストレージシステムでセキュリティキー管理機能が有効になっているか、暗号化されたディスクがあるかを確認します。
+システムでセキュリティキー管理機能が有効になっているか暗号化されたディスクがあるかを確認します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["2 つ"]link:bootmedia-shutdown.html["障害のあるコントローラをシャットダウンします"]
 [role="quick-margin-para"]
-障害のあるコントローラをシャットダウンまたはテイクオーバーして、正常なコントローラが障害のあるコントローラストレージから引き続きデータを提供できるようにします。
+ブートメディアの交換が必要になったときは、コントローラをシャットダウンします。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["3つ"]link:bootmedia-replace.html["ブートメディアの交換"]
 [role="quick-margin-para"]
-障害が発生したブートメディアを障害のあるコントローラから取り外して交換用ブートメディアを取り付け、USBフラッシュドライブを使用してONTAPイメージを交換用ブートメディアに転送します。
+障害が発生したコントローラから障害が発生したブート メディアを取り外し、交換用のブート メディアをインストールし、USB フラッシュ ドライブを使用してONTAPイメージを転送します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["4つ"]link:bootmedia-recovery-image-boot.html["リカバリイメージをブートします"]
 [role="quick-margin-para"]
@@ -35,7 +39,7 @@ USBドライブからONTAPイメージをブートし、ファイルシステム
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["5 つ"]link:bootmedia-encryption-restore.html["アンコウカノ"]
 [role="quick-margin-para"]
-ONATPブートメニューからオンボードキーマネージャの設定または外部キーマネージャをリストアします。
+ONTAPブート メニューからオンボード キー マネージャ構成または外部キー マネージャを復元します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["6"]link:bootmedia-complete-rma.html["障害のあるパーツをネットアップに返却します"]
 [role="quick-margin-para"]

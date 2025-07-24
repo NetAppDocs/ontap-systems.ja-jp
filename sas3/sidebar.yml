@@ -3,14 +3,12 @@ section: sas3
 title: SASシェルフ
 entries:
 - title: 設置とケーブル接続
-  pdf-filename: IOM12 / IOM2Bモジュールを使用するシェルフの設置とケーブル接続
+  pdf-filename: DS212C、DS224C、またはDS460Cシェルフの設置と配線
   entries:
   - title: 新しいシステム用のシェルフを設置してケーブル接続します
     url: "/sas3/install-new-system.html"
   - title: シェルフをホットアドします
     url: "/sas3/install-hot-add-shelf.html"
-  - title: IOM6シェルフのスタックへのIOM12 / IOM12Bシェルフのホットアド
-    url: "/sas3/iom12-hot-add-mix.html"
   - title: シェルフ ID を変更します
     url: "/sas3/install-change-shelf-id.html"
   - title: SAS ケーブル接続ルール、ワークシート、および例
@@ -19,22 +17,22 @@ entries:
       url: "/sas3/overview-cabling-rules-examples.html"
     - title: SASケーブル接続のルールと概念
       url: "/sas3/install-cabling-rules.html"
-    - title: マルチパスHAのケーブル接続ワークシートと例
+    - title: マルチパスHA
       url: "/sas3/install-cabling-worksheets-examples-multipath.html"
-    - title: 内蔵ストレージを搭載したプラットフォームのケーブル接続ワークシート
+    - title: 内部ストレージを備えたプラットフォーム
       url: "/sas3/install-cabling-worksheets-examples-fas2600.html"
-    - title: クアッドパスHAのケーブル接続ワークシートと例
+    - title: クアッドパスHA
       url: "/sas3/install-worksheets-examples-quadpath.html"
-    - title: マルチハスセツソクノケエフルセツソクワアクシイト
+    - title: マルチパス接続
       url: "/sas3/install-cabling-worksheet-template-multipath.html"
-    - title: クアツトハスセツソクノケエフルセツソクワアクシイト
+    - title: クアッドパス接続
       url: "/sas3/install-cabling-worksheet-template-quadpath.html"
-    - title: マルチハスセツソクノワアクシイトノトクミシユリホウホウ
+    - title: マルチパス接続
       url: "/sas3/install-cabling-worksheets-how-to-read-multipath.html"
     - title: クアツトハスセツソクノワアクシイトノトクミシユリホウホウ
       url: "/sas3/install-cabling-worksheets-how-to-read-quadpath.html"
 - title: メンテナンス
-  pdf-filename: IOM12 / IOM12Bモジュールを搭載したシェルフは引き続き使用できます
+  pdf-filename: DS212C、DS224C、またはDS460Cシェルフは、
   entries:
   - title: DS224C または DS212C シェルフ内のディスクドライブ
     url: "/sas3/service-hot-swap-drive-ds224c-ds212c.html"

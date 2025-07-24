@@ -24,7 +24,22 @@ entries:
   entries:
   - title: メンテナンスの概要
     url: "/a1k/maintain-overview.html"
-  - title: ブートメディア
+  - title: ブートメディア - 自動回復
+    pdf-filename: ASA A1Kブートメディア自動化
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/a1k/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/a1k/bootmedia-replace-requirements-bmr.html"
+    - title: コントローラのシャットダウン
+      url: "/a1k/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/a1k/bootmedia-replace-bmr.html"
+    - title: ブートイメージを起動します
+      url: "/a1k/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/a1k/bootmedia-complete-rma-bmr.html"
+  - title: ブートメディア - 手動リカバリ
     pdf-filename: AFF A1Kブートメディア
     entries:
     - title: ブートメディアの交換ワークフロー

@@ -24,7 +24,22 @@ entries:
   entries:
   - title: メンテナンスの概要
     url: "/c80/maintain-overview.html"
-  - title: ブートメディア
+  - title: ブートメディア - 自動回復
+    pdf-filename: C80ブートメディア
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/c80/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/c80/bootmedia-replace-requirements-bmr.html"
+    - title: コントローラのシャットダウン
+      url: "/c80/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/c80/bootmedia-replace-bmr.html"
+    - title: ブートイメージを起動します
+      url: "/c80/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/c80/bootmedia-complete-rma-bmr.html"
+  - title: ブートメディア - 手動リカバリ
     pdf-filename: C80ブートメディア
     entries:
     - title: ブートメディアの交換ワークフロー

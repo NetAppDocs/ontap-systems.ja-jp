@@ -1,0 +1,105 @@
+= 
+:allow-uri-read: 
+
+
+交換用クラスターとスロット 4 の HA I/O モジュールをオンラインにして、モジュール ポートが正常に初期化されていることを確認し、スロット 4 の電源がオンになっていることを確認し、モジュールがオンラインで認識されていることを確認します。
+
+. 交換用クラスターと HA I/O モジュールをオンラインにします。
++
+`system controller slot module insert -node impaired_node_name_ -slot _slot_name_`
+
++
+
+NOTE: 「続行しますか？」と表示されたら、  `y` 。
+
++
+出力により、クラスターと HA I/O モジュールが正常にオンラインになったこと (電源がオンになり、初期化され、サービスが開始されたこと) が確認されます。
+
++
+たとえば、次のコマンドは、ノード 2 (障害のあるコントローラ) のスロット 4 をオンラインにし、プロセスが成功したことを示すメッセージを表示します。
+
++
+[listing]
+----
+node2::> system controller slot module insert -node node2 -slot 4
+
+Warning: IO_2X_100GBE_NVDA_NIC module in slot 4 of node node2 will be powered on and initialized.
+
+Do you want to continue? {y|n}: `y`
+
+The module has been successfully powered on, initialized and placed into service.
+----
+. クラスタと HA I/O モジュールの各ポートが正常に初期化されたことを確認します。
++
+`event log show -event \*hotplug.init*`
+
++
+
+NOTE: 必要なファームウェアの更新とポートの初期化には数分かかる場合があります。
+
++
+出力には、クラスタとHA I/Oモジュールの各ポートに記録されたhotplug.init.success EMSイベントが表示されます。  `_hotplug.init.success:_`の中で `_Event_`カラム。
+
++
+たとえば、次の出力は、クラスタと HA I/O モジュール ポート e4b および e4a の初期化が成功したことを示しています。
+
++
+[listing]
+----
+node2::> event log show -event *hotplug.init*
+
+Time                Node             Severity      Event
+
+------------------- ---------------- ------------- ---------------------------
+
+7/11/2025 16:04:06  node2      NOTICE        hotplug.init.success: Initialization of ports "e4b" in slot 4 succeeded
+
+7/11/2025 16:04:06  node2      NOTICE        hotplug.init.success: Initialization of ports "e4a" in slot 4 succeeded
+
+2 entries were displayed.
+----
+. I/O モジュール スロット 4 の電源がオンになっていて、操作の準備ができていることを確認します。
++
+`system controller slot module show`
+
++
+出力にはスロット4のステータスが次のように表示されます。  `_powered-on_`したがって、交換用クラスターと HA I/O モジュールの操作準備が整います。
+
+. 交換用クラスターと HA I/O モジュールがオンラインで認識されていることを確認します。
++
+障害のあるコントローラのコンソールから次のコマンドを入力します。
+
++
+`system controller config show -node local -slot4`
+
++
+交換用クラスターと HA I/O モジュールが正常にオンラインになり、認識された場合、出力にはスロット 4 のポート情報を含む I/O モジュール情報が表示されます。
+
++
+たとえば、次のような出力が表示されます。
+
++
+[listing]
+----
+node2::> system controller config show -node local -slot 4
+
+Node: node2
+Sub- Device/
+Slot slot Information
+---- ---- -----------------------------
+   4    - Dual 40G/100G Ethernet Controller CX6-DX
+                  e4a MAC Address: d0:39:ea:59:69:74 (auto-100g_cr4-fd-up)
+                          QSFP Vendor:        CISCO-BIZLINK
+                          QSFP Part Number:   L45593-D218-D10
+                          QSFP Serial Number: LCC2807GJFM-B
+                  e4b MAC Address: d0:39:ea:59:69:75 (auto-100g_cr4-fd-up)
+                          QSFP Vendor:        CISCO-BIZLINK
+                          QSFP Part Number:   L45593-D218-D10
+                          QSFP Serial Number: LCC2809G26F-A
+                  Device Type:        CX6-DX PSID(NAP0000000027)
+                  Firmware Version:   22.44.1700
+                  Part Number:        111-05341
+                  Hardware Revision:  20
+                  Serial Number:      032403001370
+----
+

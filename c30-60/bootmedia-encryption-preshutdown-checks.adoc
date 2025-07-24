@@ -2,9 +2,9 @@
 permalink: c30-60/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, pre-shutdown checks for onboard encryption keys 
-summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
+summary: AFF C30 またはAFF C60 ストレージシステムのデータセキュリティを確保するには、ブートメディア上の暗号化キーのサポート状況とステータスを確認する必要があります。お使いのONTAPバージョンがNetApp Volume Encryption をサポートしているかどうかを確認し、コントローラをシャットダウンする前にキーマネージャがアクティブになっていることを確認してください。 
 ---
-= ブートメディアの暗号化キーのサポートとステータスを確認します（AFF C30とAFF C60）。
+= 手動ブートメディアリカバリの暗号化サポートを確認する - AFF C30およびAFF C60
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

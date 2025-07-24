@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitor, health, disk, shelf, location, status, condition, led, component, operator, display, panel, iom12, power, supply, fan, ds460c, shelves, drive, monitor disk shelf leds, operator display panel leds, iom12 module leds, power supply leds, fan leds on ds460c disk shelves, disk drive leds 
 summary: ディスクシェルフコンポーネントの LED の場所とステータスの状態を把握することで、ディスクシェルフのヘルスを監視できます。 
 ---
-= ディスクシェルフのLEDを監視します。IOM12 / IOM12Bモジュールを使用するシェルフです
+= モニターシェルフ LED - DS212C、DS224C、または DS460C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

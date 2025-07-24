@@ -2,16 +2,16 @@
 permalink: c80/bootmedia-recovery-image-boot.html 
 sidebar: sidebar 
 keywords: c80, boot the recovery image 
-summary: AFF C80システムのブートメディアが破損した場合は、USBドライブからリカバリイメージをブートし、パートナーノードから設定をリストアして、環境変数を確認できます。 
+summary: AFF C80 システムに新しいブート メディア デバイスをインストールした後、USB ドライブからリカバリ イメージを手動で起動して、パートナー ノードから構成を復元できます。 
 ---
-= リカバリイメージのブート- AFF C80
+= USBドライブからの手動ブートメディアリカバリ - AFF C80
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-AFF C80システムに新しいブートメディアデバイスを設置したら、リカバリイメージをUSBドライブからブートし、パートナーノードから設定をリストアできます。
+AFF C80 システムに新しいブート メディア デバイスをインストールした後、USB ドライブからリカバリ イメージを手動で起動して、パートナー ノードから構成を復元できます。
 
 .手順
 . LOADER プロンプトから、 USB フラッシュドライブ「 boot_recovery 」からリカバリ・イメージをブートします

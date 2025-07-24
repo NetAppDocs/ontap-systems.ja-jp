@@ -2,16 +2,16 @@
 permalink: a20-30-50/bootmedia-recovery-image-boot.html 
 sidebar: sidebar 
 keywords: aff a20, aff a30, aff a50, boot the recovery image 
-summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
+summary: AFF A20、 AFF A30、またはAFF A50 システムに新しいブート メディア デバイスをインストールした後、USB ドライブからリカバリ イメージを手動で起動して、パートナー ノードから構成を復元できます。 
 ---
-= リカバリイメージのブート（AFF A20、AFF A30、およびAFF A50）
+= USBドライブからの手動ブートメディアリカバリ - AFF A20、 AFF A30、およびAFF A50
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-AFF A20、AFF A30、またはAFF A50システムに新しいブートメディアデバイスを取り付けたら、リカバリイメージをUSBドライブからブートし、パートナーノードから設定をリストアできます。
+AFF A20、 AFF A30、またはAFF A50 ストレージ システムに新しいブート メディア デバイスをインストールした後、USB ドライブからリカバリ イメージを手動でブートして、パートナー ノードから構成を復元できます。
 
 .手順
 . LOADER プロンプトから、 USB フラッシュドライブ「 boot_recovery 」からリカバリ・イメージをブートします
