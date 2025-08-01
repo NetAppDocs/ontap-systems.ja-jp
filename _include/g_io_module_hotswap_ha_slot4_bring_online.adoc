@@ -6,12 +6,11 @@
 
 . 交換用クラスターと HA I/O モジュールをオンラインにします。
 +
-`system controller slot module insert -node impaired_node_name_ -slot _slot_name_`
-
+.. 次のコマンドを入力します。
 +
+`system controller slot module insert -node _impaired_node_name_ -slot _slot_name_`
 
-NOTE: 「続行しますか？」と表示されたら、  `y` 。
-
+.. 入力 `y`「続行しますか?」というプロンプトが表示されたら、
 +
 出力により、クラスターと HA I/O モジュールが正常にオンラインになったこと (電源がオンになり、初期化され、サービスが開始されたこと) が確認されます。
 
@@ -29,6 +28,8 @@ Do you want to continue? {y|n}: `y`
 
 The module has been successfully powered on, initialized and placed into service.
 ----
+
+
 . クラスタと HA I/O モジュールの各ポートが正常に初期化されたことを確認します。
 +
 `event log show -event \*hotplug.init*`

@@ -4725,7 +4725,6 @@
   <block id="9d01d7eb3a0827983de11cc9671e5029" category="sidebar">AFF A220 の設置とセットアップ</block>
   <block id="01d7cd58de6e7861c757c7723be1642f" category="sidebar">AFF A220 は引き続き使用できます</block>
   <block id="c39d4a3a07244494f50723bf4b6bee7c" category="sidebar">AFF A220 ブートメディア</block>
-  <block id="595db83f42715fcd4f8806a8433e430a" category="sidebar">AFF A220 キャッシングモジュール</block>
   <block id="139224360f764f63e0f1a87f6575b350" category="sidebar">AFF A220 コントローラ</block>
   <block id="f6caefdbf5b7d345e721affd6b6d9bab" category="sidebar">AFF A220 DIMM</block>
   <block id="9e493c35f280e1be11ab7f0f286f498b" category="sidebar">AFF A220 ドライブ</block>
@@ -5232,7 +5231,6 @@
   <block id="15bdfa06733933ff3285c6dd92cad9c7" category="doc">PSUをスワップします（AFF A150）</block>
   <block id="f9195e4f2cbce0b6d30752619eae4687" category="doc">コントローラモジュールハードウェアを交換してください- AFF A150</block>
   <block id="890166d65f80913ec2882e814dc85cff" category="doc">コントローラをシャットダウンします（AFF A150）</block>
-  <block id="882c273cdfcc452f3288c0e3d97ccb3a" category="doc">キャッシングモジュールを交換してください- AFF A150</block>
   <block id="7befdc0c8cc35d0c1711e11bd7feb970" category="list-text">キャッシングモジュールのデータを消去します。<block ref="6daf7f4112fcf7c7be366c44ff70faf2" prefix=" " category="inline-code"></block></block>
   <block id="236dd84b9226dbf8dfd98a6c46b59972" category="list-text">キャッシングモジュールからデータが消去されたことを確認します。<block ref="55030d884a341e8f95d06478b61fbec9" prefix=" " category="inline-code"></block></block>
   <block id="af41b619bf9d50ddae2454efc001e4dd" category="paragraph">出力には、キャッシングモジュールのステータスが消去済みと表示されます。</block>
@@ -5452,7 +5450,6 @@
   <block id="cafd0584cfa2700cbb38234c6c87ff44" category="sidebar">AFF A150のインストールとセットアップ</block>
   <block id="19aa00b7e147cb8650f3b77592febb48" category="sidebar">AFF A150メンテナンス</block>
   <block id="6dbe7abf62684ff33daa35e4cfe2dad6" category="sidebar">AFF A150ブートメディア</block>
-  <block id="1d3fd2e7fce9bd10949365404c11c97c" category="sidebar">AFF A150キャッシングモジュール</block>
   <block id="c3257e2a1d015102202312f79a478c54" category="sidebar">AFF A150シャーシ</block>
   <block id="458bbaee6ced13db5a8e0de32d6df8a8" category="sidebar">AFF A150コントローラ</block>
   <block id="6fce75a073a0f8f56117212fb7d30171" category="sidebar">AFF A150 DIMM</block>
@@ -6413,7 +6410,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e62c9575cf056df4d18b2411ab0383c9" category="doc">NVMEMバッテリの交換- AFF A220</block>
   <block id="b0a76e52e3b12252b04aa4ef3efa85e3" category="doc">詳細ガイド- AFF A220</block>
   <block id="3b2e4727003f1d4e72cdd41e2838439a" category="paragraph">AFF A220システムをインストールするには、NetApp Support Siteでアカウントを作成し、システムを登録し、ライセンスキーを取得する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。</block>
-  <block id="3d51762b7421c8317aae715f0b2368db" category="doc">キャッシングモジュールを交換してください- AFF A220</block>
   <block id="4124b23e9bae2450bbd8a3539dc99e09" category="summary">AFF A220ハードウェアのメンテナンス</block>
   <block id="ac48dff602fe1a0d707dc3e0fe5f1273" category="doc">AFF A220ハードウェアのメンテナンス</block>
   <block id="42bd9bd5d289e1ecf2b904f426c6c76b" category="paragraph">AFF A220ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
@@ -6457,7 +6453,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">次のいずれかを実行します。</block>
   <block id="1fc58e4765d0d92d238af8bdfc3ab370" category="list-text">ユニファイドネットワークのケーブル配線</block>
   <block id="b7f69837ac40254faa2741b926641a85" category="list-text">イーサネットネットワークのケーブル配線</block>
-  <block id="a6149c92ff6d6dbb4ad19aaa33146829" category="doc">キャッシングモジュールを交換してください- ASA A150</block>
   <block id="76f8020a6c211d0a85b51e324867f828" category="paragraph">ASA A150ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="25e4ca3cea9556bf60cfd34a863bcc83" category="doc">リアルタイムクロックバッテリを交換してください- ASA A150</block>
   <block id="b2d9da7407ab97d4d923ee0f45653d7f" category="doc">DIMMの交換- ASA A150</block>
@@ -6604,7 +6599,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="368f4ad51a183b3227240865f154992a" category="sidebar">ASA A150の設置とセットアップ</block>
   <block id="84e77b935658c3a7085640c008aa60e8" category="sidebar">ASA A150のメンテナンス</block>
   <block id="c5018cbb2e0ee66adef273b385d34913" category="sidebar">ASA A150ブートメディア</block>
-  <block id="75f9ae75c68151929bbe66d2860d2e02" category="sidebar">ASA A150キャッシングモジュール</block>
   <block id="64420c8df46e74a115ddb021cc1dceec" category="sidebar">ASA A150シャーシ</block>
   <block id="703b4afabc9f364c6d9c4e8ebcba6db8" category="sidebar">ASA A150コントローラ</block>
   <block id="debe458f06502f4b7171de38a492f295" category="sidebar">ASA A150 DIMM</block>
@@ -11086,7 +11080,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="08a3990a102599592f1bfa837fdb4b59" category="admonition">キャッシングモジュールとドライブブランクは、交換用シャーシの同じドライブベイに取り付ける必要があります。</block>
   <block id="7efc069c2d6033d673e36b12fe42467a" category="paragraph">コントローラの交換手順に関する要件と考慮事項を確認しておく必要があります。</block>
   <block id="8e02634dbf9dfd6114030109a952c94d" category="list-text">ストレージシステムの他のすべてのコンポーネントが正常に動作している必要があります。正常に動作していない場合は、<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>作業を続行する前にに</block>
-  <block id="cb4319361e919e892411df69baf2763b" category="paragraph">ファンを交換するには、コントローラを取り外し、障害のあるファンを取り外し、交換用ファンを取り付けてから、コントローラを再度取り付ける必要があります。</block>
   <block id="1ceae8e0ff0bec3c4a785784e13c38e0" category="paragraph">障害が発生したI/Oモジュールを交換するには、次の手順を実行します。</block>
   <block id="72cad785e17debea8fb89d72f80450e0" category="paragraph">NVバッテリを交換するには、コントローラを取り外し、障害が発生したバッテリを取り外し、交換用バッテリを取り付けてから、コントローラを再度取り付ける必要があります。</block>
   <block id="837c47c934f14522b94248f34ec495be" category="paragraph">コントローラのリアルタイムクロック（RTC）バッテリを交換して、正確な時刻同期に依存するストレージシステムのサービスとアプリケーションが引き続き機能するようにします。</block>
@@ -11646,13 +11639,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="d606236dedb6ed649b29651c1ec53a99" category="list-text">/cfcard/kmip/certs/client.crt</block>
   <block id="ccb442c2c2cc4367a087cfc7cd3b4876" category="list-text">/cfcard/kmip/certs/client.key</block>
   <block id="443acc94def30bc037fb2dacac4fb7d3" category="list-text">/cfcard/kmip/certs/CA.pem</block>
-  <block id="be1d405df341495ba5e673dc445711f6" category="list-text">e0S（e0Mレンチ）ポートは、自動ブートリカバリプロセス中に2つのコントローラ間の通信に使用されます。障害が発生したコントローラのe0Sポートが正常に動作していることを確認してください。</block>
   <block id="741c1531b1b7141f53a0337179c265cf" category="paragraph">交換用クラスターとスロット 4 の HA I/O モジュールをオンラインにして、モジュール ポートが正常に初期化されていることを確認し、スロット 4 の電源がオンになっていることを確認し、モジュールがオンラインで認識されていることを確認します。</block>
   <block id="75dd7e743b900db3d0f9c02be5b24510" category="list-text">交換用クラスターと HA I/O モジュールをオンラインにします。</block>
-  <block id="07234693718c0b9406fa4e3633f14739" category="paragraph"><block ref="745b14e097ab19452bc5b29a2ededcd3" prefix="" category="inline-code"></block></block>
-  <block id="36722bd4769da843e8f441b71ca44abf" category="admonition">「続行しますか？」と表示されたら、 <block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block> 。</block>
   <block id="028ada948dd464df9426709f6a1d2269" category="paragraph">出力により、クラスターと HA I/O モジュールが正常にオンラインになったこと (電源がオンになり、初期化され、サービスが開始されたこと) が確認されます。</block>
-  <block id="568871c6dcd9e6501c8ce710a4715c3d" category="paragraph">たとえば、次のコマンドは、ノード 2 (障害のあるコントローラ) のスロット 4 をオンラインにし、プロセスが成功したことを示すメッセージを表示します。</block>
   <block id="c5f5687001a40fd7c2a564fc926869a0" category="list-text">クラスタと HA I/O モジュールの各ポートが正常に初期化されたことを確認します。</block>
   <block id="51d4dccbc76a334800d2dac18db18ac2" category="paragraph"><block ref="15404739b2f55b30bb50d467945d6913" prefix="" category="inline-code"></block></block>
   <block id="7fc275cd9bf1fb166d2fa3b246080895" category="admonition">必要なファームウェアの更新とポートの初期化には数分かかる場合があります。</block>
@@ -11672,10 +11661,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f8b2336a2bcefa8eae3cc1dd58f2ef1d" category="paragraph"><block ref="4c5e89da35e7d8eb3d4b03256b0e62e0" prefix="" category="inline-code"></block></block>
   <block id="73dc1410bd15a21d2e25a8c2c5bb6654" category="paragraph">たとえば、次のAutoSupportメッセージは、自動ケース作成を 2 時間抑制します。</block>
   <block id="c2128aedb31aab2e3956fd01cbeed47c" category="paragraph"><block ref="2f7215622e57a8f3f6890685db5d3613" prefix="" category="inline-code"></block></block>
-  <block id="b132e544edb8ce61c7d56a9072e34ce4" category="list-text">障害のあるコントローラのコンソールからの自動ギブバックを無効にします。</block>
   <block id="98a7ada8dee442fe8faa866e293fb607" category="list-text">スロット 4 の障害が発生したクラスタと HA モジュールをサービスから削除し、電源をオフにして、取り外す準備をします。</block>
   <block id="5ddee439702c3faec4f27c253933b0fe" category="paragraph"><block ref="2bde061eaeb28b0fdc0cb59228784ef6" prefix="" category="inline-code"></block></block>
-  <block id="e7a3e0e8cc6c6cea7438ab7fe5169327" category="paragraph">たとえば、次のコマンドは、ノード 2 (障害のあるコントローラ) のスロット 4 にあるモジュールを削除する準備を行い、安全に削除できることを示すメッセージを表示します。</block>
   <block id="c5d3a7ea33e518913edcfbd2758e0b62" category="list-text">障害が発生したクラスタとスロット 4 の HA モジュールの電源がオフになっていることを確認します。</block>
   <block id="0e39c3862c5814af942ca4592a92eb0c" category="paragraph">出力には次のように表示されるはずです<block ref="dad62d6cbcf5ade24a9f59bab2c1490a" prefix=" " category="inline-code"></block>スロット 4 の障害が発生したモジュールのステータス列に表示されます。</block>
   <block id="3eb3ec950e8cd06ef38158071b70d5af" category="paragraph">スロット 4 の障害が発生したクラスターと HA I/O モジュールを同等の I/O モジュールに交換します。</block>
@@ -11764,12 +11751,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="bcd8431d9578c377430b244dbafbcbdf" category="summary">クラスタおよびHA I/Oモジュールは、クラスタリングと高可用性のための相互接続をサポートしています。AFFAFF 、 AFF A30、またはAFF A50ストレージシステムでは、モジュールに障害が発生した場合にホットスワップが可能です。</block>
   <block id="6b232c9d9431de2948d224ac1438ed55" category="doc">クラスタおよびHAトラフィックに使用されるI/Oモジュール（ AFF A20、 AFF A30、 AFF A50）をホットスワップします。</block>
   <block id="ae0a8348139fa13812ce5b8381566578" category="paragraph">クラスタおよびHA I/Oモジュールは、クラスタリングと高可用性のための相互接続をサポートしています。モジュールに障害が発生した場合、 AFF A20、 AFF A30、またはAFF A50ストレージシステムが特定の要件を満たしていれば、モジュールをホットスワップできます。</block>
-  <block id="99b039d0810d67c6ff9a251e2b351041" category="paragraph">ホットスワップ プロセスでは、障害が発生したモジュールを安全に取り外せるようにストレージ システムと I/O モジュール スロット 4 を準備し、障害が発生したモジュールを同等のモジュールとホットスワップし、交換用モジュールをオンラインにし、ストレージ システムを通常の動作に復元し、障害が発生したモジュールをNetAppに返却します。</block>
-  <block id="065aa4d38fa7ea20d45720222b7d420b" category="list-text">この手順を使用するには、ストレージ システムが次の要件をすべて満たしている必要があります。</block>
   <block id="4df4a7f18003a7a352929815909d2724" category="inline-link-macro">I/Oモジュールの交換手順</block>
-  <block id="587f23526d05b31b9f023bdf21efdca5" category="admonition">ストレージシステムが以下の要件をすべて満たしていない場合は、 <block ref="9f7a817607c1343a4577e0eb53bffb0f" category="inline-link-macro-rx"></block> 。</block>
   <block id="6f0bac18353bd75d71f7a421f1c4fd2f" category="list-text">ストレージ システムでONTAP 9.17.1以降が実行されている必要があります。</block>
-  <block id="5b8561df8e42666ef6470a2351c923ff" category="list-text">故障したI/Oモジュールは、スロット4のクラスタおよびHA I/Oモジュールであり、別のクラスタおよびHA I/Oモジュールと交換する必要があります。I/Oモジュールのタイプを変更することはできません。</block>
   <block id="c47de950a59748040835adedd3b77af8" category="list-text">ストレージ システム構成では、スロット 4 にクラスタと HA I/O モジュールが 2 つではなく、クラスタと HA I/O モジュールが 1 つだけ配置されている必要があります。</block>
   <block id="7725f6ef165da5751744a53bfaec7915" category="list-text">ストレージ システムは、2 ノード (スイッチレスまたはスイッチ) のクラスター構成である必要があります。</block>
   <block id="c16f887b0b90f799bb88880e3ea5a676" category="list-text">障害が発生したクラスタとHA I/Oモジュールを持つコントローラ（障害コントローラ）は、正常なパートナーコントローラを既に引き継いでいる必要があります。I/Oモジュールに障害が発生した場合、引き継ぎは自動的に実行されるはずです。</block>
@@ -11781,12 +11764,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5d04a05e7c4341bb0ab0e307d5258258" category="list-text">クラスターと HA I/O モジュールをホットスワップする場合は、正しいコントローラーにコマンドを適用することが重要です。</block>
   <block id="f0e82e7a2343dab9b216c5b80fe26396" category="list-text">_障害のあるコントローラー_ は、クラスターと HA I/O モジュールをホットスワップしているコントローラーであり、正常なコントローラーを引き継いだコントローラーです。</block>
   <block id="b77e3edae5d77f87bcb2c4471aebceba" category="list-text">_正常なコントローラ_ は、障害のあるコントローラの HA パートナーであり、障害のあるコントローラによって引き継がれたコントローラです。</block>
-  <block id="41deb90709f5abd3ff9f5de8d9c7e992" category="section-title">ステップ1: ストレージシステムとI/Oモジュールスロット4を準備する</block>
-  <block id="0b33838263d40f2273222ce1d64ac79a" category="section-title">ステップ2: 障害が発生したクラスタとHA I/Oモジュールを交換する</block>
-  <block id="da9c9bc8f7d824941079105dcd3ed1f1" category="section-title">ステップ3: 交換用クラスタとHA I/Oモジュールをオンラインにする</block>
-  <block id="a13c4c544af9e693a29ec7d5e170393b" category="section-title">ステップ4: ストレージシステムを通常の動作に復元する</block>
   <block id="cfd09206f0a13c5092d1f58dd42e890d" category="summary">AFF A20、 AFF A30、およびAFF A50ストレージシステムは、I/Oモジュールの拡張または交換を柔軟に行えるため、ネットワーク接続性とパフォーマンスを向上できます。ネットワーク機能をアップグレードする場合や、故障したモジュールに対処する場合、I/Oモジュールの追加、ホットスワップ、または交換は不可欠です。</block>
-  <block id="1e51a22599b0f67b709168f8638adca9" category="doc">I/Oモジュールの追加、ホットスワップ、交換の概要 - AFF A20、 AFF A30、 AFF A50</block>
   <block id="8ef45d64afdfdfbe4e19aaf35faa33ff" category="paragraph">ストレージシステム内の故障したI/Oモジュールは、同じタイプのI/Oモジュール、または異なるタイプのI/Oモジュールと交換できます。ストレージシステムが特定の要件を満たしている場合は、クラスタとHA I/Oモジュールをホットスワップできます。また、空きスロットがあるストレージシステムにI/Oモジュールを追加することもできます。</block>
   <block id="05c8d2e17b691ebb9e570097babd4b3f" category="inline-link-macro">クラスタとHA I/Oモジュールのホットスワップ</block>
   <block id="f34320fb440d129decb61de6359de310" category="list-text"><block ref="f34320fb440d129decb61de6359de310" category="inline-link-macro-rx"></block></block>
@@ -11834,12 +11812,10 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="ca6ff5e2a18f563b4e6acadc68d46f64" category="doc">クラスタおよび HA トラフィックに使用される I/O モジュールをホットスワップします - ASA A20、 ASA A30、およびASA A50</block>
   <block id="6f5a8e68f677f939bbd426fa307f6c3c" category="paragraph">クラスタおよびHA I/Oモジュールは、クラスタリングと高可用性のための相互接続をサポートします。モジュールに障害が発生した場合、ストレージシステムが特定の要件を満たしていれば、 ASA A20、 ASA A30、またはASA A50ストレージシステム内のモジュールをホットスワップできます。</block>
   <block id="c23f7f672ee68d0408de4bf7050428ff" category="summary">ASA A20、 ASA A30、およびASA A50システムは、I/Oモジュールの拡張や交換を柔軟に行えるため、ネットワーク接続性とパフォーマンスを向上できます。ネットワーク機能をアップグレードしたり、故障したモジュールに対処したりする際には、I/Oモジュールの追加、ホットスワップ、または交換が不可欠です。</block>
-  <block id="2b67a6475be974a5940559dd41ea9006" category="doc">I/O モジュールの追加、ホットスワップ、交換の概要 - ASA A20、 ASA A30、およびASA A50</block>
   <block id="7cfc66ffab0e5dcaf35aec6c1f45c0e4" category="paragraph">この手順を使用するには、ストレージ システムでONTAP 9.17.1 以降が実行されており、特定のシステム要件を満たしている必要があります。</block>
   <block id="267b034862e77ecf585e0f10c53a998d" category="summary">クラスタおよびHA I/Oモジュールは、クラスタリングと高可用性のための相互接続をサポートします。モジュールに障害が発生した場合は、 ASA C30ストレージシステム内でモジュールをホットスワップできます。</block>
   <block id="7e204d8c50c3b311f5f084b18f60fe42" category="doc">クラスタおよび HA トラフィックに使用される I/O モジュールをホットスワップする - ASA C30</block>
   <block id="ae9ac95e753aa6e11b1f186d2894bfbe" category="paragraph">クラスタおよびHA I/Oモジュールは、クラスタリングと高可用性のための相互接続をサポートします。モジュールに障害が発生した場合、ストレージシステムが特定の要件を満たしていれば、 ASA C30ストレージシステム内のモジュールをホットスワップできます。</block>
-  <block id="dc57bcd4218063c4d29107fb57242526" category="doc">I/O モジュールの追加、ホットスワップ、交換の概要 - ASA C30</block>
   <block id="7e40ba54f9478efaeb9f51563cb1f923" category="paragraph">ASA C30ストレージシステムは、I/Oモジュールの拡張や交換を柔軟に行えるため、ネットワーク接続性とパフォーマンスを向上できます。ネットワーク機能をアップグレードしたり、故障したモジュールに対処したりする際には、I/Oモジュールの追加、ホットスワップ、交換が不可欠です。</block>
   <block id="54d490a5d6fa1e1e563c715d1658d4c2" category="doc">故障したブートメディア部品をNetAppに返却してください - AFF C30およびAFF C60</block>
   <block id="e4fd04a4bd5ca71d2941edf4b47e1b10" category="paragraph">AFF C30またはAFF C60ストレージシステムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返送して<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページをご覧ください。</block>
@@ -11874,7 +11850,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1b0c016612713903a3c497b1aba4bbe6" category="doc">クラスタおよびHAトラフィックに使用されるI/Oモジュールをホットスワップ - AFF C30およびAFF C60</block>
   <block id="257a07574b8e17c7ad551a78350bbfb1" category="paragraph">クラスタおよびHA I/Oモジュールは、クラスタリングと高可用性のための相互接続をサポートしています。モジュールに障害が発生した場合、ストレージシステムが特定の要件を満たしていれば、 AFF C30またはAFF C60ストレージシステム内のモジュールをホットスワップできます。</block>
   <block id="ac8f3969a316894b12e15fbd022b3e6b" category="summary">AFF C30およびAFF C60ストレージシステムは、I/Oモジュールの拡張や交換を柔軟に行えるため、ネットワーク接続性とパフォーマンスを向上できます。ネットワーク機能をアップグレードしたり、故障したモジュールに対処したりする際には、I/Oモジュールの追加、ホットスワップ、または交換が不可欠です。</block>
-  <block id="3f2c03959d433e31975c5ccc2dec2998" category="doc">I/Oモジュールの追加、ホットスワップ、交換の概要 - AFF C30およびAFF C60</block>
   <block id="73cacf52c7ab30fc7a47a1633dbe49f5" category="paragraph">AFF C30 またはAFF C60 ストレージシステムのハードウェアをメンテナンスすることで、長期的な信頼性と最適なパフォーマンスを確保できます。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。</block>
   <block id="466d1cf6baca603bba771ae5236812f6" category="paragraph">このセクションの手順では、 AFF C30 またはAFF C60 ストレージ システムがすでにONTAP環境にストレージ ノードとして導入されていることを前提としています。</block>
   <block id="e39a5918ade9e607f5afc8f6e8b009f2" category="summary">AFF C80 ストレージ システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。</block>
@@ -11967,7 +11942,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5b013473b3a0ecde061a431e92574ae9" category="doc">クラスタおよび HA トラフィックに使用される I/O モジュールをホットスワップ - FAS50</block>
   <block id="6cae912dff84ae6240c315ddaaf28349" category="paragraph">クラスタおよびHA I/Oモジュールは、クラスタリングと高可用性のための相互接続をサポートします。モジュールに障害が発生した場合、ストレージシステムが特定の要件を満たしていれば、FAS50ストレージシステム内のモジュールをホットスワップできます。</block>
   <block id="1db9aadbce6a6b3c04d462fe3f9bbd95" category="summary">FAS50システムは、I/Oモジュールの拡張や交換を柔軟に行えるため、ネットワーク接続性とパフォーマンスを向上できます。ネットワーク機能をアップグレードしたり、故障したモジュールに対処したりする際には、I/Oモジュールの追加、ホットスワップ、交換が不可欠です。</block>
-  <block id="1db7a64cdf50bbc605521dd6fb058114" category="doc">I/Oモジュールの追加、ホットスワップ、交換の概要 - FAS50</block>
   <block id="50021c9aa8d3585a4c703c3363cab114" category="paragraph">FAS50ストレージシステムのハードウェアをメンテナンスすることで、長期的な信頼性と最適なパフォーマンスを確保できます。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。</block>
   <block id="8eba03c70758101e68e6391b4be43740" category="paragraph">メンテナンス手順では、FAS50 ストレージ システムがONTAP環境にストレージ ノードとしてすでに導入されていることを前提としています。</block>
   <block id="49be3e0ad5188b850535280e2d521d5f" category="doc">シェルフのコールド交換 - DS212C、DS224C、および DS460C</block>
@@ -12105,4 +12079,30 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4db3443ca8b7e077da6fda74143b5d12" category="sidebar">マルチパスHA</block>
   <block id="98a06331c5019fee7c2bec76b5d289fb" category="sidebar">クアッドパスHA</block>
   <block id="fd00151c44420f6f79e4b58679a95624" category="sidebar">DS212C、DS224C、またはDS460Cシェルフは、</block>
+  <block id="445dfd5b6a6cefa8cddbd35f02b84b3f" category="list-text">障害のあるコントローラーの e0M (レンチ) ポートが接続されており、障害がないことを確認します。</block>
+  <block id="28ee83acca422d1018aa8c24fc45a4ae" category="paragraph">e0M ポートは、自動ブート回復プロセス中に 2 つのコントローラー間で通信するために使用されます。</block>
+  <block id="6dcd1ebf4390170868ab9bcdfd967581" category="list-text">次のコマンドを入力します。</block>
+  <block id="44a1542818eb6c662eb3c490c43da379" category="paragraph"><block ref="429cc3d1d3dd3682974d006c02080d7a" prefix="" category="inline-code"></block></block>
+  <block id="fafdccda6cda9f9e3734c54d6282a4a7" category="list-text">入力<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>「続行しますか?」というプロンプトが表示されたら、</block>
+  <block id="e2d52ada26e40deccc8c184926b380b3" category="paragraph">たとえば、次のコマンドは、ノード 2 (障害のあるコントローラ) のスロット 4 をオンラインにし、プロセスが成功したことを示すメッセージを表示します。</block>
+  <block id="e1e4c5a78e939d1c395d29fa29b00a6d" category="list-text">自動ギブバックを無効にする:</block>
+  <block id="8a0b41604f08531e25cac74cbed555ce" category="list-text">障害のあるコントローラのコンソールから次のコマンドを入力します。</block>
+  <block id="c839598e8cd5c29bde6c617cf440daeb" category="list-text">入力<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>「自動ギブバックを無効にしますか?」というプロンプトが表示されたら、</block>
+  <block id="b17710a831db85286b790ec982422585" category="list-text">入力<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>「続行しますか?」というプロンプトが表示されたら</block>
+  <block id="b3a29894ebbd7743077b200ddcd67c99" category="paragraph">たとえば、次のコマンドは、ノード 2 (障害のあるコントローラ) のスロット 4 にあるモジュールを削除する準備を行い、安全に削除できることを示すメッセージを表示します。</block>
+  <block id="4bdafd7f42b0b57fc4b68e8b3bb68636" category="paragraph">この手順を使用するには、ストレージ システムがすべての要件を満たしている必要があります。この手順の追加のコンテキストについては、考慮事項をお読みください。</block>
+  <block id="3a06445388ea9f45380e61bdcd8e390a" category="admonition">ストレージシステムがすべての要件を満たしていない場合は、<block ref="9f7a817607c1343a4577e0eb53bffb0f" category="inline-link-macro-rx"></block> 。</block>
+  <block id="d5289a7c7a439993123bceae28506164" category="list-text">障害が発生した I/O モジュールは、スロット 4 のクラスタおよび HA I/O モジュールである必要があり、同等のクラスタおよび HA I/O モジュールに交換する必要があります。/Oモジュールのタイプを変更することはできません。</block>
+  <block id="8a1240d7278991deb34efd819884bfe7" category="paragraph">モジュールをホットスワップするには、ストレージ システムが手順の要件を満たしていることを確認し、ストレージ システムとスロット 4 の I/O モジュールを準備し、障害の発生したモジュールを同等のモジュールとホットスワップし、交換用モジュールをオンラインにして、ストレージ システムを通常の動作に復元し、障害の発生したモジュールをNetAppに返却します。</block>
+  <block id="0ce7a3dae2c87181c761986e783eb102" category="section-title">ステップ1: ストレージシステムが手順の要件を満たしていることを確認する</block>
+  <block id="7da2c8847c1955b0494341a440d20a1b" category="section-title">ステップ2: ストレージシステムとI/Oモジュールスロット4を準備する</block>
+  <block id="1826a677aeed73d2d1ad12227f635ea5" category="section-title">ステップ3: 障害が発生したクラスタとHA I/Oモジュールを交換する</block>
+  <block id="ef52935218329fe4c276c834a767e2b0" category="section-title">ステップ4: 交換用クラスタとHA I/Oモジュールをオンラインにする</block>
+  <block id="aa6f3f8c8fe8c3ee1076fbae1b862c0f" category="section-title">ステップ5: ストレージシステムを通常の動作に復元する</block>
+  <block id="4494f67d47bd95840cfaf71f7427c5d9" category="doc">I/Oモジュールのメンテナンスの概要 - AFF A20、 AFF A30、およびAFF A50</block>
+  <block id="96c5fffbd9befb3a2893a3e1abf894c4" category="doc">I/O モジュールのメンテナンスの概要 - ASA A20、 ASA A30、およびASA A50</block>
+  <block id="e22df5a6b5342608f4c99f5bb172c1ff" category="doc">I/O モジュールのメンテナンスの概要 - ASA C30</block>
+  <block id="10fdff00cbd8dc0b562f7c384ead00e8" category="paragraph">////2025 年 7 月: ontap-systems 370: このプラットフォームではサポートされていないため、キャッシュ モジュールを削除しました。</block>
+  <block id="e30ec3a146d2f46cfcab61e84ddafe94" category="doc">I/Oモジュールのメンテナンスの概要 - AFF C30およびAFF C60</block>
+  <block id="99479e0da4b4c4c75f054c2458b99405" category="doc">I/Oモジュールメンテナンスの概要 - FAS50</block>
 </blocks>

@@ -35,9 +35,6 @@ entries:
       url: "/a220/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します
       url: "/a220/bootmedia-complete-rma.html"
-  - title: キャッシングモジュール
-    pdf-filename: AFF A220 キャッシングモジュール
-    url: "/a220/caching-module-replace.html"
   - title: シャーシ
     pdf-filename: AFF A220およびA220シャーシ
     entries:

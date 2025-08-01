@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ASA A90, ASA A70, replace io module, io module add, io module hotswap 
 summary: ASA A20、 ASA A30、およびASA A50システムは、I/Oモジュールの拡張や交換を柔軟に行えるため、ネットワーク接続性とパフォーマンスを向上できます。ネットワーク機能をアップグレードしたり、故障したモジュールに対処したりする際には、I/Oモジュールの追加、ホットスワップ、または交換が不可欠です。 
 ---
-= I/O モジュールの追加、ホットスワップ、交換の概要 - ASA A20、 ASA A30、およびASA A50
+= I/O モジュールのメンテナンスの概要 - ASA A20、 ASA A30、およびASA A50
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

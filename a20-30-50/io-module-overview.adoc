@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: AFF A20, AFF A30, and AFF A50, replace io module, add io module, hotswap io module 
 summary: AFF A20、 AFF A30、およびAFF A50ストレージシステムは、I/Oモジュールの拡張または交換を柔軟に行えるため、ネットワーク接続性とパフォーマンスを向上できます。ネットワーク機能をアップグレードする場合や、故障したモジュールに対処する場合、I/Oモジュールの追加、ホットスワップ、または交換は不可欠です。 
 ---
-= I/Oモジュールの追加、ホットスワップ、交換の概要 - AFF A20、 AFF A30、 AFF A50
+= I/Oモジュールのメンテナンスの概要 - AFF A20、 AFF A30、およびAFF A50
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

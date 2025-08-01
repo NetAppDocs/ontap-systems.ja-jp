@@ -35,9 +35,6 @@ entries:
       url: "/a150/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します
       url: "/a150/bootmedia-complete-rma.html"
-  - title: キャッシングモジュール
-    pdf-filename: AFF A150キャッシングモジュール
-    url: "/a150/caching-module-replace.html"
   - title: シャーシ
     pdf-filename: AFF A150シャーシ
     entries:
