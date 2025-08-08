@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: fas50/install-requirements.html 
 keywords: fas50, install, setup, cautions 
-summary: 必要な機器と、プラットフォームとシェルフの持ち上げに関する注意事項を確認します。 
+summary: FAS50ストレージ・システムの要件を確認します。 
 ---
 = 設置要件- FAS50
 :allow-uri-read: 

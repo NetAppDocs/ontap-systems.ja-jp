@@ -2,7 +2,7 @@
 permalink: fas50/install-hardware.html 
 sidebar: sidebar 
 keywords: fas50, install hardware, telco rack 
-summary: キャビネットまたはTelcoラックにストレージシステムを設置します。 
+summary: FAS50ストレージ・システムの設置準備が完了したら、ストレージ・システムのハードウェアを設置します。まず、レールキットを取り付けます。次に、ストレージシステムをキャビネットまたはTelcoラックに設置して固定します。 
 ---
 = ハードウェアの設置- FAS50
 :allow-uri-read: 

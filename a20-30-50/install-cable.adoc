@@ -2,7 +2,7 @@
 permalink: a20-30-50/install-cable.html 
 sidebar: sidebar 
 keywords: aff a20, aff a30, aff a50, cabling, cluster cabling, host network cabling, management network cabling, shelf cabling 
-summary: コントローラの管理ネットワークポートはスイッチに接続されます。HA インターコネクトポートとクラスタインターコネクトポートは、両方のコントローラでケーブル接続されます。コントローラモジュールは、注文した場合は外付けストレージに接続されています。 
+summary: AFF A20、AFF A30、またはAFF A50ストレージシステムハードウェアを設置したら、コントローラをネットワークおよびシェルフにケーブル接続します。 
 ---
 = ハードウェアのケーブル接続- AFF A20、AFF A30、およびAFF A50
 :allow-uri-read: 

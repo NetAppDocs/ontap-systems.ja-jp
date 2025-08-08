@@ -1,0 +1,23 @@
+= 
+:allow-uri-read: 
+
+
+RTC バッテリを交換し、コントローラを挿入し、最初の BIOS リセットのために電源を入れると、次のエラー メッセージが表示されます。
+
+`RTC date/time error. Reset date/time to default`
+
+`RTC power failure error`
+
+これらのメッセージは予期されたものであり、この手順を続行できます。
+
+.手順
+. 正常なコントローラの日付と時刻を `cluster date show`指示。  + システムがブートメニューで停止した場合は、 `Reboot node`プロンプトが表示されたら_y_と応答し、_Ctrl-C_を押してLOADERを起動します。
++
+.. ターゲットコントローラのLOADERプロンプトで、コマンドを使用して日時を確認します `cluster date show` 。
+.. 必要に応じて 'set date mm/dd/yyyy` コマンドで日付を変更します
+.. 必要に応じて、「 set time hh ： mm ： ss 」コマンドを使用して、時刻を GMT で設定します。
+
+
+. ターゲットコントローラの日付と時刻を確認します。
+. LOADERプロンプトで_bye_と入力してPCIeカードおよびその他のコンポーネントを再初期化し、コントローラをリブートします。
+

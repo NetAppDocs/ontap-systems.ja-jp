@@ -1,0 +1,21 @@
+= 
+:allow-uri-read: 
+
+
+コントローラモジュールをリブートします。
+
+.手順
+. LOADERプロンプトで「_bye_」と入力します。
+. コントローラのストレージをギブバックして、コントローラを通常動作に戻します。
++
+「 storage failover giveback -ofnode _impaired_node_name _
+
+. 自動ギブバックを復元する:
++
+`storage failover modify -node local -auto-giveback true`
+
+. AutoSupportメンテナンス ウィンドウがトリガーされた場合は、それを終了します。
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+

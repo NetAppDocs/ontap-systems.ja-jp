@@ -2,7 +2,7 @@
 permalink: a20-30-50/install-complete.html 
 sidebar: sidebar 
 keywords: aff a20, aff a30, aff a50, prepare installation 
-summary: スイッチとラップトップのみに接続しているクラスタ検出を使用するか、ストレージシステムのコントローラに直接接続してから管理スイッチに接続して、プラットフォームのセットアップと設定を完了します。 
+summary: AFF A20、AFF A30、またはAFF A50ストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。 
 ---
 = ストレージシステムのセットアップと設定の完了- AFF A20、AFF A30、AFF A50
 :allow-uri-read: 

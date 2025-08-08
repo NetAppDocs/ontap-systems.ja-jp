@@ -16,7 +16,7 @@ AFF A70またはAFF A90ストレージシステムに新しいブートメディ
 自動ブートメディアリカバリプロセスは、 ONTAP 9.17.1以降でのみサポートされています。ストレージシステムで以前のバージョンのONTAPを実行している場合は、 link:bootmedia-replace-workflow.html["手動ブート回復手順"] 。
 
 .作業を開始する前に
-* OKMを使用するには、OKMパスフレーズファイルの内容が必要です。
+* OKM の場合、クラスター全体のパスフレーズとバックアップ データも必要です。
 * EKMの場合は、パートナーノードから次のファイルのコピーが必要です。
 +
 ** /cfcard/kmip/ servers.cfgファイル。
@@ -85,7 +85,7 @@ Is the key manager onboard
  a| 
 手順4に進み、該当するキー管理ツールをリストアします。
 
-ノードはブートメニューにアクセスして次のコマンドを実行します。
+ノードはブート メニューにアクセスし、次を実行します。
 
 ** オプション10：オンボードキーマネージャ（OKM）が搭載されたシステムの場合。
 ** オプション11：外部キーマネージャ（EKM）が搭載されたシステムの場合。
@@ -107,20 +107,32 @@ Entering Bootmenu Option 10...
 This option must be used only in disaster recovery procedures. Are you sure? (y or n):
 ....
 .. OKMリカバリプロセスを開始するかどうかを確認するプロンプトでと入力し `Y`ます。
-.. プロンプトが表示されたらオンボードキーマネージャのパスフレーズを入力し、プロンプトが表示されたらもう一度パスフレーズを入力して確認のために入力します。
+.. プロンプトが表示されたら、次のように入力します。
 +
-.パスフレーズのプロンプトの例を表示します。
+... パスフレーズ
+... 確認を求められたらパスフレーズをもう一度入力してください
+... オンボードキーマネージャーのバックアップデータ
++
+.パスフレーズとバックアップデータのプロンプトの例を示す
 [%collapsible]
 =====
 ....
 Enter the passphrase for onboard key management:
-Enter the passphrase again to confirm:
-Enter the backup data:
 -----BEGIN PASSPHRASE-----
 <passphrase_value>
 -----END PASSPHRASE-----
+Enter the passphrase again to confirm:
+-----BEGIN PASSPHRASE-----
+<passphrase_value>
+-----END PASSPHRASE-----
+Enter the backup data:
+-----BEGIN BACKUP-----
+<passphrase_value>
+-----END ACKUP-----
 ....
 =====
+
+
 .. 引き続きリカバリプロセスを監視し、パートナーノードから適切なファイルをリストアします。
 +
 リカバリプロセスが完了すると、ノードがリブートします。次のメッセージは、リカバリが成功したことを示します。
@@ -181,7 +193,7 @@ ONTAP 9 .16.0
 
 
  a| 
-ONTAP 9.16.1
+ONTAP 9.16.1以降
  a| 
 次の手順に進みます。
 
@@ -259,6 +271,8 @@ xxx.xxx.xxx.xxx:5696.netapp_keystore_uuid=<id_value>
 
  a| 
 プロンプトが表示されたら、パートナーのONTAPクラスタUUIDを入力します。
+
+パートナーノードからクラスタUUIDを確認するには、 `cluster identify show`指示。
  a| 
 .ONTAPクラスタUUIDの例を表示します。
 [%collapsible]
@@ -276,6 +290,13 @@ System is ready to utilize external key manager(s).
 
  a| 
 プロンプトが表示されたら、ノードの一時的なネットワークインターフェイスと設定を入力します。
+
+入力する必要があるもの:
+
+... ポートのIPアドレス
+... ポートのネットマスク
+... デフォルトゲートウェイのIPアドレス
+
  a| 
 .一時的なネットワーク設定の例を表示します。
 [%collapsible]
@@ -298,44 +319,11 @@ Trying to recover keys from key servers....
 |===
 .. キーが正常にリストアされたかどうかに応じて、次のいずれかの操作を実行します。
 +
-*** EKM設定が正常に復元されると、プロセスはパートナーノードから適切なファイルの復元を試み、ノードをリブートします。手順dに進みます。
+*** もしあなたが `kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:5696`出力では、EKM 構成が正常に復元されたことが示されています。
 +
-.成功した9.16.0リストアメッセージの例を表示します。
-[%collapsible]
-=====
-....
+このプロセスは、パートナー ノードから適切なファイルを復元し、ノードを再起動しようとします。手順dに進みます。
 
-kmip2_client: Importing keys from external key server: xxx.xxx.xxx.xxx:5696
-[Feb  6 04:57:43]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdUtils: [locateMrootAkUuids]:420: Locating local cluster MROOT-AK with keystore UUID: <uuid>
-[Feb  6 04:57:43]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [doCmdImp]:79: Calling KMIP Locate for the following attributes: [<x-NETAPP-ClusterId, <uuid>>, <x-NETAPP-KeyUsage, MROOT-AK>, <x-NETAPP-KeystoreUuid, <uuid>>, <x-NETAPP-Product, Data ONTAP>]
-[Feb  6 04:57:44]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [doCmdImp]:84: KMIP Locate executed successfully!
-[Feb  6 04:57:44]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [setUuidList]:50: UUID returned: <uuid>
-...
-kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:5696
-
-GEOM_ELI: Device nvd0s4.eli created.
-GEOM_ELI: Encryption: AES-XTS 256
-GEOM_ELI:     Crypto: software
-Feb 06 05:02:37 [_server-name_]: crypto_get_mroot_ak:140 MROOT-AK is requested.
-Feb 06 05:02:37 [_server-name_]: crypto_get_mroot_ak:162 Returning MROOT-AK.
-....
-=====
-+
-.成功した9.16.1リストアメッセージの例を表示します。
-[%collapsible]
-=====
-....
-
-System is ready to utilize external key manager(s).
-Trying to recover keys from key servers....
-[discover_versions]
-[status=SUCCESS reason= message=]
-...
-kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:xxxx
-Successfully recovered keymanager secrets.
-....
-=====
-*** キーが正常にリストアされないと、システムは停止し、キーをリストアできなかったことを示します。エラーと警告メッセージが表示されます。リカバリプロセスを再実行します。
+*** キーが正常に復元されなかった場合、システムは停止し、キーを復元できなかったことが示されます。エラーおよび警告メッセージが表示されます。回復プロセスを再実行する必要があります。
 +
 `boot_recovery -partner`
 

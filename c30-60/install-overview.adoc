@@ -2,7 +2,7 @@
 permalink: c30-60/install-overview.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, Installation, deployment, Install, deploy, Installing, deploying 
-summary: AFF A70またはA90ストレージシステムを設置してセットアップし、ONTAPシステムにHAペアとして導入するには、次の手順を実行します。 
+summary: AFF C30またはAFF C60ストレージシステムを設置してセットアップするには、設置要件を確認し、設置場所を準備し、ハードウェアコンポーネントを設置してケーブル接続し、ストレージシステムの電源をオンにし、ONTAPクラスタをセットアップする必要があります。 
 ---
 = 設置とセットアップのワークフロー- AFF C30およびAFF C60
 :allow-uri-read: 

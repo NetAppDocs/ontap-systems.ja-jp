@@ -2,7 +2,7 @@
 permalink: fas50/install-overview.html 
 sidebar: sidebar 
 keywords: fas50, Installation, deployment, Install, deploy, Installing, deploying 
-summary: AFF A70またはA90ストレージシステムを設置してセットアップし、ONTAPシステムにHAペアとして導入するには、次の手順を実行します。 
+summary: FAS50ストレージ・システムを設置してセットアップするには、設置要件を確認し、設置場所を準備し、ハードウェア・コンポーネントを設置してケーブル接続し、ストレージ・システムの電源をオンにし、ONTAPクラスタをセットアップする必要があります。 
 ---
 = 設置とセットアップのワークフロー- FAS50
 :allow-uri-read: 

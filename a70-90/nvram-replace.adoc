@@ -158,6 +158,10 @@ _-halt true _パラメータを指定すると、Loaderプロンプトが表示�
 
 == 手順2：NVRAMモジュールまたはNVRAM DIMMを交換する
 
+
+
+== 手順2：NVRAMモジュールまたはNVRAM DIMMを交換する
+
 次の該当するオプションを使用して、NVRAMモジュールまたはNVRAM DIMMを交換します。
 
 [role="tabbed-block"]
@@ -309,11 +313,17 @@ NOTE: DC 電源がある場合は、電源ブロックを電源に再接続し�
 CAUTION: ディスクの再割り当てはNVRAMモジュールを交換する場合にのみ必要で、NVRAM DIMMの交換には該当しません。
 
 .手順
-. コントローラがメンテナンスモード（プロンプトが表示されている）の場合は `*>` 、メンテナンスモードを終了してLOADERプロンプトに移動します。_halt_
-. コントローラのLOADERプロンプトからコントローラをブートし、システムIDが一致しないためにシステムIDを上書きするかどうかを尋ねられたら「_y_」と入力します。
-. Waiting for giveback... 交換用モジュールを搭載したコントローラのコンソールにメッセージが表示され、正常なコントローラから新しいパートナーシステムIDが自動的に割り当てられたことを確認します。_storage failover show_
+. コントローラがメンテナンスモード（ `*>`プロンプト) が表示されたら、メンテナンス モードを終了して、LOADER プロンプトに移動します。
 +
-コマンド出力には、障害のあるコントローラでシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が示されます。次の例では、 node2 の交換が実施され、新しいシステム ID として 151759706 が設定されています。
+`halt`
+
+. コントローラのLOADERプロンプトからコントローラをブートし、システムIDが一致しないためにシステムIDを上書きするかどうかを尋ねられたら「_y_」と入力します。
+. 交換モジュールが搭載されたコントローラのコンソールに「Waiting for giveback」というメッセージが表示されるまで待機し、その後、正常なコントローラから新しいパートナー システム ID が自動的に割り当てられたことを確認します。
++
+`storage failover show`
+
++
+コマンド出力には、障害のあるコントローラのシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が表示されます。次の例では、ノード 2 が交換され、新しいシステム ID が 151759706 になっています。
 
 +
 [listing]
@@ -328,7 +338,8 @@ node2             node1             -            Waiting for giveback (HA mailbo
 ----
 . コントローラをギブバックします。
 +
-.. 正常なコントローラから、交換したコントローラのストレージをギブバックします。_storage failover giveback -ofnode replacement_node_name_
+.. 正常なコントローラから、交換されたコントローラのストレージを戻します: +
+`storage failover giveback -ofnode replacement_node_name`
 +
 コントローラはストレージをテイクバックしてブートを完了します。
 
@@ -336,11 +347,10 @@ node2             node1             -            Waiting for giveback (HA mailbo
 システムIDの不一致が原因でシステムIDを上書きするように求められた場合は、_y_と入力します。
 
 +
-
-NOTE: ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。
+ギブバックが拒否されている場合は、拒否を無効にすることを検討してください。
 
 +
-詳細については、を参照してください https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted["手動ギブバックコマンド"^] 拒否を無視するトピック。
+詳細については、 https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted["手動のギブバックコマンド"^]拒否権を覆す。
 
 .. ギブバックの完了後、HAペアが正常でテイクオーバーが可能であることを確認します。_storage failover show_
 +
@@ -348,7 +358,10 @@ NOTE: ギブバックが拒否されている場合は、拒否を無効にす�
 
 
 
-. ディスクが正しく割り当てられたことを確認します。「 storage disk show -ownership
+. ディスクが正しく割り当てられたことを確認します。
++
+`storage disk show -ownership`
+
 +
 コントローラに属するディスクに新しいシステムIDが表示されます。次の例では、node1が所有するディスクに新しいシステムID 151759706が表示されています。
 
@@ -396,11 +409,23 @@ dr-group-id            cluster node           configuration-state
 
 4 entries were displayed.
 ----
-. 各コントローラに、想定されるボリュームが存在することを確認します。 vol show -node node-name
+. 各コントローラに必要なボリュームが存在することを確認します。
++
+`vol show -node node-name`
+
 . ストレージ暗号化が有効になっている場合は、機能をリストアする必要があります。
-. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
-. 自動ギブバックが無効になっていた場合は、再度有効にします。 `storage failover modify -node local -auto-giveback true`
-. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。
++
+`storage failover giveback -ofnode _impaired_node_name_`です。
+
+. 自動ギブバックを無効にした場合は、再度有効にします。
++
+`storage failover modify -node local -auto-giveback true`です。
+
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。
++
+`system node autosupport invoke -node * -type all -message MAINT=END`です。
+
 
 
 

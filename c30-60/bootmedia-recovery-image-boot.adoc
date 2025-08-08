@@ -2,7 +2,7 @@
 permalink: c30-60/bootmedia-recovery-image-boot.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, boot the recovery image 
-summary: AFF C30 またはAFF C60 システムに新しいブート メディア デバイスをインストールした後、USB ドライブからリカバリ イメージを手動で起動して、パートナー ノードから構成を復元できます。 
+summary: AFF C30 またはAFF C60 ストレージ システムに新しいブート メディア デバイスをインストールした後、USB ドライブからリカバリ イメージを手動でブートして、パートナー ノードから構成を復元できます。 
 ---
 = USBドライブからの手動ブートメディアリカバリ - AFF C30およびAFF C60
 :allow-uri-read: 

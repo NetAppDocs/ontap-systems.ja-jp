@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-c30/io-module-overview.html 
 sidebar: sidebar 
-keywords: AFF c30, AFF c60, replace io module, add io module, hotswap io module 
+keywords: asa c30, replace io module, add io module, hotswap io module 
 summary: ASA C30 ストレージ システムは、I/O モジュールを拡張または交換する柔軟性を提供し、ネットワークの接続性とパフォーマンスを強化します。I/Oモジュールの追加または交換は、ネットワーク機能をアップグレードする場合や、障害が発生したモジュールに対処する場合に不可欠です。 
 ---
 = I/O モジュールのメンテナンスの概要 - ASA C30

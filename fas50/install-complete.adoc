@@ -2,7 +2,7 @@
 permalink: fas50/install-complete.html 
 sidebar: sidebar 
 keywords: fas50, prepare installation 
-summary: スイッチとラップトップのみに接続しているクラスタ検出を使用するか、ストレージシステムのコントローラに直接接続してから管理スイッチに接続して、プラットフォームのセットアップと設定を完了します。 
+summary: FAS50ストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。 
 ---
 = ストレージシステムのセットアップと設定の完了- FAS50
 :allow-uri-read: 

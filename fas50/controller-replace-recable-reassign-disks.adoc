@@ -2,7 +2,7 @@
 permalink: fas50/controller-replace-recable-reassign-disks.html 
 sidebar: sidebar 
 keywords: fas50, how to reboot the system 
-summary: FAS50システムが通常の動作を再開できるように、ストレージ・リソースの制御を交換用コントローラに戻します。ギブバック手順は、システムで使用されている暗号化タイプ（暗号化なし、オンボードキーマネージャ（OKM）暗号化、外部キーマネージャ（EKM）暗号化）によって異なります。 
+summary: ストレージ リソースの制御を交換用コントローラに戻して、FAS50 システムが通常の動作を再開できるようにします。返却手順は、システムで使用されている暗号化タイプ（暗号化なし、オンボード キー マネージャー OKM 暗号化、または外部キー マネージャー EKM 暗号化）によって異なります。 
 ---
 = コントローラのギブバック- FAS50
 :allow-uri-read: 

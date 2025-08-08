@@ -2,7 +2,7 @@
 permalink: c30-60/bootmedia-complete-rma.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, complete the replacement process 
-summary: 部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。 
+summary: AFF C30 またはAFF C60 ストレージ システムの部品を交換した後、キットに同梱されている RMA 手順に従って、故障した部品をNetAppに返却できます。 
 ---
 = 故障した部品をNetApp - AFF C30 and AFF C60に返却します。
 :allow-uri-read: 
@@ -11,4 +11,4 @@ summary: 部品を交換したあと、障害のある部品をネットアッ�
 
 
 [role="lead"]
-AFF C30またはAFF C60システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。
+AFF C30またはAFF C60ストレージシステムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返送して https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページをご覧ください。

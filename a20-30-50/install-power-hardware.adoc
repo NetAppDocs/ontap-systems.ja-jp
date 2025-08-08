@@ -2,7 +2,7 @@
 permalink: a20-30-50/install-power-hardware.html 
 sidebar: sidebar 
 keywords: aff a20, aff a30, aff a50, power controllers 
-summary: 電源ケーブルを接続し、シェルフとコントローラの電源をオンにします。 
+summary: AFF A20、AFF A30、またはAFF A50ストレージシステムのネットワークおよびシェルフにコントローラをケーブル接続したら、シェルフとコントローラの電源をオンにします。 
 ---
 = ストレージシステムの電源をオンにします（AFF A20、AFF A30、およびAFF A50）。
 :allow-uri-read: 
