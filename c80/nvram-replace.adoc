@@ -13,10 +13,6 @@ summary: NVRAMモジュールは、NVRAM12とDIMM、およびNVRAMモジュー�
 [role="lead"]
 不揮発性メモリに障害が発生した場合、またはアップグレードが必要な場合は、AFF c80システムのNVRAMを交換してください。交換プロセスでは、障害のあるコントローラのシャットダウン、NVRAMモジュールまたはNVRAM DIMMの交換、ディスクの再割り当て、障害が発生したパーツのNetAppへの返却を行います。
 
-
-
-== 手順2：NVRAMモジュールまたはNVRAM DIMMを交換する
-
 次の該当するオプションを使用して、NVRAMモジュールまたはNVRAM DIMMを交換します。
 
 [role="tabbed-block"]

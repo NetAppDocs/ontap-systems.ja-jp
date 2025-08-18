@@ -276,4 +276,4 @@ image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[AFF A1K AFF A70 / AF
 
 
 .次の手順
-FAS70またはFAS90ストレージ・システムの電源をオンにすると、オンにlink:install-complete.html["システムセットアップの完了"]なります。
+FAS70またはFAS90ストレージシステムの電源を入れた後、 https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html["クラスターを設定する"] 。

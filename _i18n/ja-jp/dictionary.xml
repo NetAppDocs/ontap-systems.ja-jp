@@ -7805,8 +7805,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="2f6df380cd83e22784e9ab6e56edd84d" category="list-text">ポートe10aをシェルフ2のNSM Bのポートe0aに接続します。</block>
   <block id="cd510ec7974b62b233e62a6e6a5c727e" category="inline-image-macro">コントローラBのコントローラ/シェルフ間の接続</block>
   <block id="462dd5d60871bb2319eb46e1da38c42d" category="paragraph"><block ref="462dd5d60871bb2319eb46e1da38c42d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d5bec2eb0018e8e254a2426f768cf678" category="summary">スイッチとラップトップのみに接続しているクラスタ検出を使用するか、ストレージシステムのコントローラに直接接続してから管理スイッチに接続して、プラットフォームのセットアップと設定を完了します。</block>
-  <block id="e0c6d59cdb58b213183cb0fc7534ee18" category="doc">ストレージシステムのセットアップと設定の完了- AFF A1K</block>
   <block id="4ba7257f41527371f7a52420787c1085" category="section-title">手順1：クラスタ情報を収集する</block>
   <block id="e13a4e2099510963f792c4fc1ef4fced" category="paragraph">クラスタ管理インターフェイスのポートやIPアドレスなど、クラスタの設定に必要な情報を収集します（まだ収集していない場合）。</block>
   <block id="8c468ee786068bf98fe0b8a71cf946fa" category="inline-link">クラスタセットアップワークシート</block>
@@ -7830,7 +7828,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="ea6245a5aad1d347d3bfd8727ccbe15c" category="inline-link-macro">ハードウェアのケーブル接続</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">4つ</block>
   <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">5 つ</block>
-  <block id="32faffb9b7b89515bab5605b39a5c57d" category="inline-link-macro">ストレージシステムのセットアップの完了</block>
   <block id="079541787256810512e79fe819711d61" category="summary">電源ケーブルを接続し、シェルフとコントローラの電源をオンにします。</block>
   <block id="c2b963a7671a8f77c637646d3e8c76a5" category="doc">ストレージ・システムの電源をオンにします（AFF A1K）</block>
   <block id="0b5c1681fb8f009a141f0c7d0f2d8f64" category="section-title">手順1：シェルフの電源をオンにしてシェルフIDを割り当てる</block>
@@ -8067,7 +8064,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1359f19561173d7123369e0c8f9fb141" category="sidebar">AFF A1Kのインストールとセットアップ</block>
   <block id="6f550466a69bad21f11ab99fc12db497" category="sidebar">インストールワークフロー</block>
   <block id="7b2ca066e862da1c95471b425468af14" category="sidebar">システムの電源を入れる</block>
-  <block id="fad3eebd1aa676638de5e9e932b52f40" category="sidebar">システムのセットアップを完了します</block>
   <block id="cdea6179c22763aadc0ee6a4b14f5f21" category="sidebar">AFF A1Kのメンテナンス</block>
   <block id="5881b108517b27e7011c12b72fab1eb6" category="sidebar">AFF A1Kブートメディア</block>
   <block id="2df31b353db26ab75397dd256071bb0f" category="sidebar">AFF A1Kコントローラモジュール</block>
@@ -8450,7 +8446,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="585305b30e013fddf0d6343d4ee20ddd" category="open-title">オプション2：2台のNS224ストレージシェルフに接続</block>
   <block id="6ed30500ab710bf43940cb83592bdbfa" category="inline-link-macro">AFF A1Kストレージ・システムの電源をオンにする</block>
   <block id="3f9b0cea76dc6f2b6177d8bcb5908423" category="paragraph">AFF A1Kシステム用のハードウェアのケーブル接続が完了したら、次<block ref="654696be1fe92ecfa0ff053c720b2b1d" category="inline-link-macro-rx"></block>の作業を行います。</block>
-  <block id="27ed857e5ec70c9d4b25678f791b6131" category="summary">クラスタ検出を使用して、スイッチとラップトップのみに接続するか、ストレージシステムのコントローラに直接接続して管理スイッチに接続し、セットアップと設定を完了します。</block>
   <block id="b53b432cc7bef69c6e3b55451a6e6076" category="paragraph">AFF A1Kストレージシステムの設置準備が完了したら、システムのハードウェアを設置します。まず、レールキットを取り付けます。次に、キャビネットまたはTelcoラックにプラットフォームを設置して固定します。</block>
   <block id="957ae92207588304b6d7d5e236d23f00" category="paragraph">キャビネットにデータが事前に格納されている場合は、この手順をスキップします。</block>
   <block id="2faeb3f50bfdbdf81bf89b4827b8be68" category="inline-link-macro">AFF A1Kストレージシステムのハードウェアをケーブル接続</block>
@@ -8472,11 +8467,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5ff2c2e371b329794d430555ced9e3f7" category="paragraph">ハードウェアをケーブル接続するには、まずストレージコントローラをネットワークに接続し、次にコントローラをストレージシェルフに接続します。</block>
   <block id="285d6553cd8c7daec6f0d12aba91379c" category="inline-link-macro">AFF A1Kストレージ・システムの電源をオンにする</block>
   <block id="7975efdb78ae2356ecfb7785916813ea" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="e440a513b8c5f4e1fdb4e9cd395eb57d" category="inline-link-macro-rx"></block></block>
-  <block id="54cd8d1881f4be7195e616a39249670b" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block><block ref="ed796137dcbf61e6432604e7b2936e62" category="inline-link-macro-rx"></block></block>
-  <block id="80c97b00983d1544cf5059e1ae224d3c" category="paragraph">システムのセットアップを完了するには、ブラウザでコントローラのIPアドレスを指定してONTAPシステムマネージャにアクセスします。セットアップウィザードを使用して、AFF A1Kストレージシステムのクラスタを設定できます。</block>
   <block id="cb3c09e0aea666ca89714e771fe2a341" category="paragraph">AFF A1Kストレージシステムのラックハードウェアを設置し、コントローラとストレージシェルフのケーブルを接続したら、ストレージシェルフとコントローラの電源をオンにする必要があります。</block>
-  <block id="35f11b67e0796a5ad8b1a42113d555af" category="inline-link-macro">システムセットアップの完了</block>
-  <block id="bb0e3698075baec263b94b00c624fc7f" category="paragraph">AFF A1Kストレージ・システムの電源を入れたら、<block ref="cdf5a4c974bf88b91aa8dc567bf1a13f" category="inline-link-macro-rx"></block></block>
   <block id="42aa8e4e5869ddf4141b1addfd622a67" category="doc">インストールの準備- AFF A1K</block>
   <block id="d0f453bcbfb08f54ed7c397b49f72493" category="paragraph">AFF A1Kストレージシステムを設置する準備をします。設置場所を準備し、開梱して内容を納品書と比較し、システムを登録してサポートを利用します。</block>
   <block id="f6b81eee7a6985b4bd76813e240e5101" category="inline-link-macro">AFF A1Kストレージシステムのハードウェアを設置</block>
@@ -8505,7 +8496,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="129659531a7af0b8cc014b27db714e59" category="paragraph">AFF A70またはAFF A90ストレージシステムのラックハードウェアを設置したら、コントローラにネットワークケーブルを接続し、コントローラとストレージシェルフの間をケーブルで接続します。</block>
   <block id="4303b29f12561a35dc71cb122558d909" category="inline-link-macro">AFF A70またはAFF A90ストレージシステムの電源をオンにする</block>
   <block id="f4e587df8e3873f191b7a2eaee7efc0d" category="paragraph">AFF A70またはAFF A90システム用のハードウェアのケーブル接続が完了したら、次の作業を行い<block ref="c5f2d57d7889d01ebbda3bc0e0e75909" category="inline-link-macro-rx"></block>ます。</block>
-  <block id="0a9fdcb4b99938b1949943d7889de0e4" category="doc">ストレージシステムのセットアップと設定の完了- AFF A70とAFF A90</block>
   <block id="eaed2b50f9ac1d1c725b320e4c9f09e1" category="doc">ハードウェアの設置- AFF A70 and AFF A90</block>
   <block id="816bbd9f7f68bfea42f976bdd1e27e0d" category="paragraph">AFF A70またはAFF A90ストレージシステムを設置する準備ができたら、システムのハードウェアを設置します。まず、レールキットを取り付けます。次に、キャビネットまたはTelcoラックにプラットフォームを設置して固定します。</block>
   <block id="fd0f91da61deb35dbaf2ae06cc064cf2" category="inline-link-macro">AFF A70またはAFF A90ストレージシステムのハードウェアをケーブル接続</block>
@@ -8520,11 +8510,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="2d3e272e1a75695d2e91a62c635ca211" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="aadc43ed51769de185eed40b0ee14a06" category="inline-link-macro-rx"></block></block>
   <block id="4c29a03a0ab864082fe459c7b721fbbc" category="inline-link-macro">AFF A70またはAFF A90ストレージシステムの電源をオンにする</block>
   <block id="a19bec9c1c3c4f1245f5b6986c20b987" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="5a2730391e8b064fb32b1f55a3ad2002" category="inline-link-macro-rx"></block></block>
-  <block id="7ebf9d5e847b8d7a94676c8589e3ba8a" category="paragraph">システムのセットアップを完了するには、ブラウザでコントローラのIPアドレスを指定してONTAPシステムマネージャにアクセスします。セットアップウィザードを使用して、AFF A70またはAFF A90ストレージシステムのクラスタを設定できます。</block>
   <block id="15dfdd4107875517824d97fd681fd5cb" category="doc">ストレージ・システムの電源をオンにする（AFF A70 and AFF A90）</block>
   <block id="addbfcd02447e9d1c6cbb3810c45a6ac" category="paragraph">AFF A70またはAFF A90ストレージシステムのラックハードウェアを設置し、コントローラとストレージシェルフのケーブルを取り付けたら、ストレージシェルフとコントローラの電源をオンにする必要があります。</block>
-  <block id="ed1a15747627f84755b5eef621bb8e85" category="inline-link-macro">システムセットアップの完了</block>
-  <block id="c0677b3f2eac3919f6dafe43a0461dd5" category="paragraph">AFF A70またはAFF A90ストレージ・システムの電源をオンにした後は、<block ref="a6663b3be7b31b2e16a5286f009fcfff" category="inline-link-macro-rx"></block></block>
   <block id="ec9b0b25a575ea2719a43e0ed4eba2ef" category="doc">インストールの準備- AFF A70とAFF A90</block>
   <block id="e2ffcf27d17e53137e3f3b594c1cd4c4" category="paragraph">AFF A70またはAFF A90ストレージシステムを設置する準備をします。設置場所を準備し、開梱して内容を納品書と比較し、システムを登録してサポートを利用します。</block>
   <block id="61c06139b6cae8ee51fc2ec7501dee42" category="inline-link-macro">AFF A70またはAFF A90ストレージシステムのハードウェアを設置</block>
@@ -8639,7 +8626,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="552d44762a43ddc762f1255c8680368c" category="paragraph"><block ref="552d44762a43ddc762f1255c8680368c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6076d59638af62c513db60414806ba6a" category="inline-link-macro">FAS70またはFAS90ストレージ・システムの電源をオンにする</block>
   <block id="0b38b0938783d2cf1b3800f66d5154c3" category="paragraph">FAS70またはFAS90システムのハードウェアのケーブル接続が完了したら、次の作業を行い<block ref="9d70727ad16ec47c3b1ffe9fcd624399" category="inline-link-macro-rx"></block>ます。</block>
-  <block id="c847155be497cfc98de50193bb0ef4e3" category="doc">ストレージ・システムのセットアップと設定の完了- FAS70およびFAS90</block>
   <block id="a88ce76514a173cf2bddffce66860b3a" category="doc">ハードウェアの設置- FAS70およびFAS90</block>
   <block id="8f4b2475d7c4e7fd5a95811a1509212a" category="paragraph">FAS70またはFAS90ストレージ・システムの設置の準備が完了したら、システムのハードウェアを設置します。まず、レールキットを取り付けます。次に、キャビネットまたはTelcoラックにプラットフォームを設置して固定します。</block>
   <block id="6416cb7210c1cd9b1d9cc413f9b62376" category="inline-link-macro">FAS70またはFAS90ストレージ・システムのハードウェアをケーブル接続します。</block>
@@ -8655,10 +8641,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="de6952744c4efa4af3b088924141554c" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="47f9cb95cf9bc2df13978b8a91985b13" category="inline-link-macro-rx"></block></block>
   <block id="a817c10af381296411c154c716af48b7" category="inline-link-macro">FAS70またはFAS90ストレージ・システムの電源をオンにする</block>
   <block id="b2f6fbbaf5842fe5addbaac3aabc158d" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="164a6e7d5b74e1ce7eb1009b0b13e4f3" category="inline-link-macro-rx"></block></block>
-  <block id="7bf2fa9e265a50a618153953f60062b9" category="paragraph">システムのセットアップを完了するには、ブラウザでコントローラのIPアドレスを指定してONTAPシステムマネージャにアクセスします。セットアップウィザードを使用して、ストレージシステムのクラスタを設定できます。</block>
   <block id="d9eb7005000baef74822bf5afd90707b" category="doc">ストレージ・システムの電源をオンにする（FAS70およびFAS90）</block>
   <block id="f6d3448cfd45b6a4ae23d47aec38dd6f" category="paragraph">FAS70 0r FAS90ストレージシステムのラックハードウェアを設置し、コントローラとストレージシェルフのケーブルを接続したら、ストレージシェルフとコントローラの電源をオンにする必要があります。</block>
-  <block id="7678c73f0b90edbadbeeacf02256f941" category="paragraph">FAS70またはFAS90ストレージ・システムの電源をオンにすると、オンに<block ref="a6663b3be7b31b2e16a5286f009fcfff" category="inline-link-macro-rx"></block>なります。</block>
   <block id="971e955dfe15e7503ed5654ed6ebd8e0" category="summary">FAS70およびFAS90プラットフォームの設置を準備します。</block>
   <block id="03162faf493040269b3b60738c942373" category="doc">設置の準備- FAS70およびFAS90</block>
   <block id="5c3b9df48b8876003c4bc9bef5a99d08" category="paragraph">FAS70またはFAS90ストレージ・システムの設置を準備します。設置場所を準備し、開梱して内容を納品書と比較し、システムを登録してサポートを受けられます。</block>
@@ -9813,7 +9797,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="a7232cb75808a8e7cf49cc148792b59d" category="inline-image-macro">コントローラBのポートe3aおよびe3bを1台のNS224シェルフに接続</block>
   <block id="4e7a391052a15e943c46f8d16f6bd53d" category="paragraph"><block ref="4e7a391052a15e943c46f8d16f6bd53d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="00f18c30a7bbd65060cf6a0e58f57e8f" category="paragraph">ストレージシステム用のハードウェアのケーブル接続が完了したら、<block ref="b337e1aa7c5092d0bcfa0886ff778532" category="inline-link-macro-rx"></block></block>
-  <block id="41d2428eb3b5bcaf38caff2b05238c99" category="doc">ストレージシステムのセットアップと設定の完了- AFF A20、AFF A30、AFF A50</block>
   <block id="b33623048258f5659092aa830041844a" category="doc">ハードウェアの設置- AFF A20、AFF A30、およびAFF A50</block>
   <block id="4a671f9889e4f6492c5a797641c7d77f" category="paragraph">AFF A20、AFF A30、またはAFF A50ストレージシステムを設置する準備ができたら、ストレージシステムのハードウェアを設置します。まず、レールキットを取り付けます。次に、ストレージシステムをキャビネットまたはTelcoラックに設置して固定します。</block>
   <block id="8206c8008227416f46d5d9a68b5f5f92" category="paragraph">ストレージ・システムがキャビネットに収納されていた場合は、この手順を省略してください。</block>
@@ -9829,12 +9812,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3f43328b333c4df4c9ec539236523e92" category="inline-link-macro">ストレージ・システムの電源をオンにする</block>
   <block id="e6eeb9ce8e52b3b9db9cd7abc091625d" category="paragraph-title"><block ref="91d7076df3f3bfcf6ace71bd0aa6cf68" category="inline-image-macro-rx" type="image"></block><block ref="8a056a6439f08c4b1b6c616463cfac54" category="inline-link-macro-rx"></block></block>
   <block id="503f95c5c9b5a04e511351c93261b35d" category="paragraph">ストレージシステムの電源をオンにするには、各シェルフの電源をオンにし、必要に応じて一意のシェルフIDを割り当ててから、コントローラの電源をオンにします。</block>
-  <block id="2da317240a59e2e0c3ab69f98844fd97" category="paragraph-title"><block ref="6e12d70052c23b4d8ac555d298c6cb54" category="inline-image-macro-rx" type="image"></block><block ref="ed796137dcbf61e6432604e7b2936e62" category="inline-link-macro-rx"></block></block>
-  <block id="e79be7c13a8e05b95f0803989d822f1a" category="paragraph">ストレージシステムのセットアップを完了するには、ブラウザでコントローラのIPアドレスを指定してONTAPシステムマネージャにアクセスします。セットアップウィザードを使用して、ストレージシステムのクラスタを設定できます。</block>
   <block id="9057791e1506dce04bd3005efa6d93aa" category="doc">ストレージシステムの電源をオンにします（AFF A20、AFF A30、およびAFF A50）。</block>
   <block id="0e13dd128aeb300bd4c4e4321d3b6d00" category="paragraph">AFF A20、AFF A30、またはAFF A50ストレージシステムのネットワークおよびシェルフにコントローラをケーブル接続したら、シェルフとコントローラの電源をオンにします。</block>
   <block id="d2318e267239f37a3cc57e89925b9627" category="image-alt">A20、A30、A50ストレージ・システムの電源接続図</block>
-  <block id="c99b4f07076f9f2d91c4d91135d1dc65" category="paragraph">ストレージ・システムの電源をオンにした後は、<block ref="a6663b3be7b31b2e16a5286f009fcfff" category="inline-link-macro-rx"></block></block>
   <block id="80c5d8d4caa18675a1c928876932e0f5" category="doc">設置の準備- AFF A20、AFF A30、およびAFF A50</block>
   <block id="3d805e2ccb8d322d7295163d2ef0cd1d" category="paragraph">AFF A20、AFF A30、またはAFF A50ストレージシステムを設置する準備をします。設置場所を準備し、開梱して梱包内容を納品書と比較し、ストレージシステムを登録してサポートを利用します。</block>
   <block id="586f9ad5db82f223a8b9cca9ed48f572" category="list-text">ストレージシステムの場合は2U</block>
@@ -9871,7 +9851,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="323a91f2ce5b9b7fd43982a93a67f379" category="paragraph">AFF C30またはAFF C60ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="ea610f51a26134e77e0b3dc338a41e31" category="doc">ハードウェアのケーブル接続- AFF C30とAFF C60</block>
   <block id="a79626103b80bf3ef3558a2b727998a3" category="paragraph">AFF C30またはAFF C60ストレージシステムハードウェアを設置したら、コントローラをネットワークおよびシェルフにケーブル接続します。</block>
-  <block id="b079b3155e464d9b84f317b7c289baaa" category="doc">ストレージシステムのセットアップと設定の完了- AFF C30とAFF C60</block>
   <block id="c2193a61b82d60ca9261e895b85747bb" category="doc">ハードウェアの設置- AFF C30 and AFF C60</block>
   <block id="bde05321bc44e000faa60469a895ce4a" category="paragraph">AFF C30またはAFF C60ストレージシステムの設置準備が完了したら、ストレージシステムのハードウェアを設置します。まず、レールキットを取り付けます。次に、ストレージシステムをキャビネットまたはTelcoラックに設置して固定します。</block>
   <block id="b96dbc5fbc9ab81f32efde0325589654" category="doc">設置とセットアップのワークフロー- AFF C30およびAFF C60</block>
@@ -9901,8 +9880,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4218f8d2412136bfb32601e026baa923" category="paragraph">AFF C80ストレージシステムのラックハードウェアを設置したら、コントローラにネットワークケーブルを接続し、コントローラとストレージシェルフの間をケーブルで接続します。</block>
   <block id="692eb202bcfcdd5ff15ac88e850a8958" category="inline-link-macro">AFF C80ストレージ・システムの電源をオンにする</block>
   <block id="7d21a7c62df428d46d7ff82091e62589" category="paragraph">AFF C80システム用のハードウェアのケーブル接続が完了したら、次<block ref="763dfc53859a04a5c267821436720409" category="inline-link-macro-rx"></block>の作業を行います。</block>
-  <block id="63d7026bd2a296696d20207af94b856c" category="summary">スイッチとラップトップのみに接続しているクラスタ検出を使用するか、ストレージシステムのコントローラに直接接続してから管理スイッチに接続して、ストレージシステムのセットアップと設定を完了します。</block>
-  <block id="d3e862b08cbf5c7b7a60cae18ea4735e" category="doc">ストレージシステムのセットアップと設定の完了- AFF C80</block>
   <block id="c567aa1fcd31cf1fc0ed7ef613af1ec2" category="doc">ハードウェアの設置- AFF C80</block>
   <block id="ac535b6b9c7de780cfad843a39bc961c" category="paragraph">AFF C80ストレージシステムの設置準備が完了したら、システムのハードウェアを設置します。まず、レールキットを取り付けます。次に、ストレージシステムをキャビネットまたはTelcoラックに設置して固定します。</block>
   <block id="33a7bb70ec0d85a6af9ff85989ebee02" category="inline-link-macro">AFF C80ストレージシステムのハードウェアをケーブル接続</block>
@@ -9918,10 +9895,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="511d044004931d0b1b2a06b8015413bd" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="662ed7ee864af1cfedbe87e2ee1f3eb1" category="inline-link-macro-rx"></block></block>
   <block id="58194004b73e5c3f0f7893e86022434b" category="inline-link-macro">AFF C80ストレージ・システムの電源をオンにする</block>
   <block id="4cb1bbde7d4f7a3185716ba5e6aeb05d" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="bcacb9d1291db203e425798ebfffc016" category="inline-link-macro-rx"></block></block>
-  <block id="a16c29eb6be9b9073d5e43b9d22851b9" category="paragraph">システムのセットアップを完了するには、ブラウザでコントローラのIPアドレスを指定してONTAPシステムマネージャにアクセスします。セットアップウィザードを使用して、AFF C80ストレージシステムのクラスタを設定できます。</block>
   <block id="42bc98faf5f65033d7e58c1389bfb4d8" category="doc">ストレージ・システムの電源をオンにします（AFF C80）</block>
   <block id="56f39934b7b567638a5c7fab3e4713dc" category="paragraph">AFF C80ストレージシステムのラックハードウェアを設置し、コントローラとストレージシェルフのケーブルを接続したら、ストレージシェルフとコントローラの電源をオンにする必要があります。</block>
-  <block id="72d24e6471241ba980e6c2b8017a3c3e" category="paragraph">AFF C80ストレージ・システムの電源を入れたら、<block ref="a6663b3be7b31b2e16a5286f009fcfff" category="inline-link-macro-rx"></block></block>
   <block id="c60dc618663ce54c52b024e209050e57" category="summary">AFF C80ストレージシステムの設置を準備します。</block>
   <block id="aa2e3ee65f05caaf497283a0ab483129" category="doc">インストールの準備- AFF C80</block>
   <block id="ae94559d673eaece00e4a335f4347e99" category="paragraph">AFF C80ストレージシステムを設置する準備をします。設置場所を準備し、開梱して内容を納品書と比較し、システムを登録してサポートを利用します。</block>
@@ -10172,8 +10147,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f1f5a8071b69ef980c0fca64b3b9c54e" category="list-text">自動ギブバックを無効にした場合はリストアします。</block>
   <block id="a7ecdb67614fe7d399a65b213dd20e1a" category="paragraph">ドライブシェルフは、NetApp AFF、ASA、FASの各システム向けに設計されており、デジタル変革に必要なパフォーマンス、耐障害性、柔軟性を提供します。</block>
   <block id="dbc74f369dbf214b25d0f839fd4cd2b0" category="list-text">自動ギブバックを無効にした場合はリストアします。</block>
-  <block id="37e73c8cf9d7d3b4aeaa58f23b2fcb81" category="paragraph">AFF A1Kストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。</block>
-  <block id="f2cde5cb8aa49228f5cb392e473dff51" category="paragraph">クラスタが初期化されたら、をダウンロードしてを実行し、<block ref="48865c7c1d8013246e4e5f705a9105de" category="inline-link-rx"></block>セットアップを確認します。</block>
   <block id="e826d5b26017ec374bf63b94b8a425d9" category="list-text">各電源装置の固定装置を使用して、電源コードを固定します。：a1k-a70-90!：</block>
   <block id="0bf1ff1f561d2a96752b8ee596c65068" category="list-text">4U（HA構成）</block>
   <block id="3ac4d4a9f6b930345bd4ccdb8435d0fb" category="list-text">各コントローラのシステム管理モジュール</block>
@@ -10181,15 +10154,10 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6de84c72e7e126f172cbcc00c68cd297" category="paragraph">NS224シェルフの重量は最大30.29kg（66.78ポンド）です。シェルフを持ち上げるには、2人で作業するか、油圧リフトを使用します。シェルフの重量がバランスを崩さないように、すべてのコンポーネント（前面と背面の両方）をシェルフに保管してください。</block>
   <block id="f6212161be26bdf2d9804cc49d78a681" category="image-alt">NS224 NSM100の持ち上げに関する注意事項</block>
   <block id="4eb7fd7f39fdba863f648fba58c6a17b" category="list-text"><block ref="fa81f583d8b6c7dcaf8e26a5fcf5de52" category="inline-link-rx"></block>:a1k!:</block>
-  <block id="be520d0c187d935243d727d6ae1fae7d" category="paragraph">AFF A20、AFF A30、またはAFF A50ストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。</block>
   <block id="a8df3504a76da7d726b26d0dfd4a23f3" category="doc">設置要件- AFF A20、AFF A30、およびAFF A50</block>
   <block id="a6c628254ff2bf40212541b76682d0ca" category="paragraph">AFF A20、AFF A30、またはAFF A50ストレージシステムの要件を確認します。</block>
-  <block id="b88e50a127892280ab464a0d38a10676" category="paragraph">AFF A70またはAFF A90ストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。</block>
   <block id="7fffd066161648ae573d6d74ec60e85e" category="paragraph">ストレージシステムの重量は最大68.8 kg（151.68ポンド）になることがあります。ストレージ・システムを持ち上げるには、4人で作業するか、油圧リフトを使用します。</block>
-  <block id="877c6321779942add591f77ab7b28f2e" category="paragraph">AFF C30またはAFF C60ストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。</block>
   <block id="4572f45ac79ded53bd57f95eaf949d13" category="doc">インストール要件- AFF C30およびAFF C60</block>
-  <block id="2795470282b110353916b87e8a68ea10" category="paragraph">AFF C80ストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。</block>
-  <block id="021fad57648b2198deca585e8c317a71" category="paragraph">FAS70またはFAS90ストレージ・システムの電源をオンにすると、クラスタ・ネットワークを検出してONTAPクラスタをセットアップできるようになります。</block>
   <block id="510996b7cd8e0bf946a50e1f000afbe2" category="paragraph">SuperRailは、標準の角穴4ポストラックまたは丸穴から角穴のアダプタブラケットを使用して標準の丸穴4ポストラックに取り付けることができます。</block>
   <block id="090baac144fae3a90d22bb679e0194a6" category="sidebar">AFF A20、AFF A30、およびAFF A50のブートメディア</block>
   <block id="f923335af94abdb12e15d306f375ccba" category="sidebar">AFF A20、AFF A30、およびAFF A50 I/Oモジュール</block>
@@ -11094,8 +11062,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="01c7cda26a7b465d1c56f741d328e967" category="list-text">コントローラBのポート3Dをシェルフ2のIOMAポート3にケーブル接続します。</block>
   <block id="60fee2ee2c3e768d10719c680fb38afb" category="inline-image-macro">コントローラBのポート3aと3Dを2台のDS460Cシェルフに接続</block>
   <block id="7a2d0d2a1e1f5dc3d5184332fb23afba" category="paragraph"><block ref="7a2d0d2a1e1f5dc3d5184332fb23afba" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c7a75f3a015710392a8467c08fd9862a" category="doc">ストレージシステムのセットアップと設定の完了- FAS50</block>
-  <block id="c63c71562f3b83fe3a2793ff2deb8fd5" category="paragraph">FAS50ストレージシステムの電源をオンにすると、クラスタネットワークを検出してONTAPクラスタをセットアップできるようになります。</block>
   <block id="a48dcb52a80835a67657f668af54582e" category="doc">ハードウェアの設置- FAS50</block>
   <block id="986b47fd733e9cbf32255b28864ed238" category="paragraph">FAS50ストレージ・システムの設置準備が完了したら、ストレージ・システムのハードウェアを設置します。まず、レールキットを取り付けます。次に、ストレージシステムをキャビネットまたはTelcoラックに設置して固定します。</block>
   <block id="4f71d9bde1ecffc22f8c526c10e5381e" category="doc">設置とセットアップのワークフロー- FAS50</block>
@@ -11868,8 +11834,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="aa531670186ea89165a64b4839889b9b" category="list-text">ドライブ ドロワーをエンクロージャに慎重に戻します。+s <block ref="e57bb4934e3c0d4cbe8c534709c18cf5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2efcc590b5abb3211d808cb53bc04668" category="paragraph">棚IDを変更するには、以下の手順を実行してください。詳細な手順については、 <block ref="1bf0acf64e45d0c785cbad3f63f469c6" category="inline-link-macro-rx"></block> 。</block>
   <block id="9982fc2fe5816d297a37b3ad57f43a5e" category="section-title">ステップ2: ホットアド用のディスクシェルフの配線</block>
-  <block id="8791ec38034bbb459948342e16d5eeef" category="list-text">この手続きを完了するための要件を満たしている必要があります。 <block ref="8f2931546a85884febd2253de0e97e97" category="inline-xref-macro-rx"></block>セクションの指示に従って、各ディスクシェルフにインストールして電源を入れ、シェルフIDを設定します。 <block ref="e16f4ee23c5ee1fb9788c3c8a75ff6d9" category="inline-xref-macro-rx"></block> 。</block>
-  <block id="72e517954e40be84083a6b87508b39b0" category="paragraph">スタックは、 <block ref="8f2931546a85884febd2253de0e97e97" category="inline-xref-macro-rx"></block>この手順のセクション。</block>
   <block id="e799b535f2d63f0553a59afd2bbcbc37" category="section-title">（オプション）ステップ3：DS460Cシェルフを移動または輸送する</block>
   <block id="790df2827c132e9040bd12ac9938f8e1" category="paragraph">将来、DS460C シェルフをデータ センターの別の場所に移動したり、シェルフを別の場所に輸送したりする場合は、ドライブ ドロワーとドライブの損傷を避けるために、ドライブをドライブ ドロワーから取り外す必要があります。</block>
   <block id="84f49fb7ef2efb64157148b160d0f41b" category="list-text">シェルフのホットアドの一部として DS460C シェルフをインストールしたときにドライブの梱包材を保存していた場合は、移動する前にそれらを使用してドライブを再梱包します。</block>
@@ -12113,4 +12077,16 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1a9030bf843d5fd6c4e2ffad5e4f7589" category="summary">FAS50 ストレージ システムの NV バッテリーは停電時に重要なシステム データを保持する役割を担っているため、バッテリーの充電が減り始めたり故障したりした場合は、NV バッテリーを交換してください。交換プロセスには、障害のあるコントローラのシャットダウン、コントローラ モジュールの取り外し、NV バッテリの交換、コントローラ モジュールの再インストール、および障害のある部品のNetAppへの返送が含まれます。</block>
   <block id="be9875a94cc09d90fb578f7e7eb0c1b9" category="summary">FAS50 ストレージ システムの AC または DC 電源ユニット (PSU) が故障または不具合を起こした場合は交換し、システムが安定した動作に必要な電力を継続的に受けられるようにします。交換プロセスでは、故障した PSU を電源から切断し、電源コードを抜き、故障した PSU を交換してから、電源に再接続します。</block>
   <block id="5933d58ecdf477732aebddd62290e674" category="summary">正確な時間同期に依存するサービスとアプリケーションが引き続き動作できるように、FAS50 ストレージ システムのリアルタイム クロック (RTC) バッテリ (一般にコイン型電池と呼ばれる) を交換します。</block>
+  <block id="92db1257222418b67082094015c7573b" category="inline-link">クラスターを設定する</block>
+  <block id="cc51e5e3b47d6ec06dc4243cef49c8d0" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block>/<block ref="51676d6e20492df73dde4996e18903b5" category="inline-link-rx"></block></block>
+  <block id="fab8921216755946904b56169390c6a4" category="inline-link">クラスターを設定する</block>
+  <block id="17d8b1a24625f873cbd79169b4d6a4a1" category="paragraph">ストレージシステムの電源を入れたら、<block ref="0f60cfcace4de2b8e8fde35e0c84ffd6" category="inline-link-rx"></block> 。</block>
+  <block id="429705c279d5084e43119e97001cc757" category="paragraph">AFF A1Kストレージシステムの電源を入れたら、<block ref="0f60cfcace4de2b8e8fde35e0c84ffd6" category="inline-link-rx"></block> 。</block>
+  <block id="7330f49604b46d73a3ab5144a0883082" category="paragraph-title"><block ref="6e12d70052c23b4d8ac555d298c6cb54" category="inline-image-macro-rx" type="image"></block>/<block ref="51676d6e20492df73dde4996e18903b5" category="inline-link-rx"></block></block>
+  <block id="ba86337324d5518a2b56b6eb5db17504" category="paragraph">AFF A70またはAFF A90ストレージシステムの電源を入れた後、<block ref="0f60cfcace4de2b8e8fde35e0c84ffd6" category="inline-link-rx"></block> 。</block>
+  <block id="bb955abc1ee1a042f477c6977d0bfc07" category="paragraph"><block ref="bb955abc1ee1a042f477c6977d0bfc07" category="inline-link-macro-rx"></block></block>
+  <block id="8d96a0652a56a46a76c2dfa6064eedc6" category="paragraph">AFF C80ストレージシステムの電源を入れたら、<block ref="0f60cfcace4de2b8e8fde35e0c84ffd6" category="inline-link-rx"></block> 。</block>
+  <block id="6fe10565744cf725b2fd75861906fbc1" category="paragraph">FAS70またはFAS90ストレージシステムの電源を入れた後、<block ref="0f60cfcace4de2b8e8fde35e0c84ffd6" category="inline-link-rx"></block> 。</block>
+  <block id="130be2fd2e92afb91e19f2dec9836c4c" category="admonition">この手順はASA r2 システムには適用されません。</block>
+  <block id="9da319b07aef4095e22497ba00c68f1e" category="list-text">この手順を完了するための要件を満たし、各ディスクシェルフのインストール、電源投入、およびシェルフIDの設定が、<block ref="e16f4ee23c5ee1fb9788c3c8a75ff6d9" category="inline-xref-macro-rx"></block> 。</block>
 </blocks>

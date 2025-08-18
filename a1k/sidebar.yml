@@ -17,8 +17,6 @@ entries:
     url: "/a1k/install-cable.html"
   - title: システムの電源を入れる
     url: "/a1k/install-power-hardware.html"
-  - title: システムのセットアップを完了します
-    url: "/a1k/install-complete.html"
 - title: メンテナンス
   pdf-filename: AFF A1Kのメンテナンス
   entries:

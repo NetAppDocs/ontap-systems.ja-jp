@@ -17,8 +17,6 @@ entries:
     url: "/c80/install-cable.html"
   - title: システムの電源を入れる
     url: "/c80/install-power-hardware.html"
-  - title: システムのセットアップを完了します
-    url: "/c80/install-complete.html"
 - title: メンテナンス
   pdf-filename: C80の保守点検
   entries:

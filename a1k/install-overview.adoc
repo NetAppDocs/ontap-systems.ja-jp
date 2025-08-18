@@ -33,6 +33,6 @@ AFF A1Kシステムを設置して設定するには、ハードウェア要件�
 [role="quick-margin-para"]
 コントローラの電源をオンにする前に、各NS224シェルフの電源をオンにし、一意のシェルフIDを割り当ててセットアップで各シェルフを一意に識別し、ラップトップまたはコンソールをコントローラに接続してから、コントローラを電源に接続します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"]link:install-complete.html["ストレージシステムのセットアップの完了"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"]/
 [role="quick-margin-para"]
-システムのセットアップを完了するには、ブラウザでコントローラのIPアドレスを指定してONTAPシステムマネージャにアクセスします。セットアップウィザードを使用して、AFF A1Kストレージシステムのクラスタを設定できます。
+ストレージシステムの電源を入れたら、 https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html["クラスターを設定する"] 。

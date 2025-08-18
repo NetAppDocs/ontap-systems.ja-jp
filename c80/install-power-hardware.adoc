@@ -162,4 +162,4 @@ image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[AFF A1K AFF A70 / AF
 
 
 .次の手順
-AFF C80ストレージ・システムの電源を入れたら、link:install-complete.html["システムセットアップの完了"]
+AFF C80ストレージシステムの電源を入れたら、 https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html["クラスターを設定する"] 。

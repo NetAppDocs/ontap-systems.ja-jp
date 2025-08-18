@@ -17,8 +17,6 @@ entries:
     url: "/c30-60/install-cable.html"
   - title: システムの電源を入れる
     url: "/c30-60/install-power-hardware.html"
-  - title: システムのセットアップを完了します
-    url: "/c30-60/install-complete.html"
 - title: メンテナンス
   pdf-filename: AFF C30およびAFF C60のメンテナンス
   entries:

@@ -17,8 +17,6 @@ entries:
     url: "/fas-70-90/install-cable.html"
   - title: システムの電源を入れる
     url: "/fas-70-90/install-power-hardware.html"
-  - title: システムのセットアップを完了します
-    url: "/fas-70-90/install-complete.html"
 - title: メンテナンス
   pdf-filename: FAS70とFAS90のメンテナンス
   entries:

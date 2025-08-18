@@ -217,28 +217,6 @@ NOTE: DC 電源がある場合は、電源ブロックを電源に再接続し�
 
 
 
-== 手順3：コントローラをリブートする
-
-コントローラモジュールをリブートします。
-
-.手順
-. LOADERプロンプトで「_bye_」と入力します。
-. コントローラのストレージをギブバックして、コントローラを通常動作に戻します。
-+
-「 storage failover giveback -ofnode _impaired_node_name _
-
-. 自動ギブバックを復元する:
-+
-`storage failover modify -node local -auto-giveback true`
-
-. AutoSupportメンテナンス ウィンドウがトリガーされた場合は、それを終了します。
-+
-`system node autosupport invoke -node * -type all -message MAINT=END`
-
-
-
-
-
 == 手順4：ライセンスをインストールし、シリアル番号を登録する
 
 障害ノードが標準（ノードロック）ライセンスを必要とするONTAP機能を使用していた場合は、ノード用の新しいライセンスをインストールする必要があります。標準ライセンスを使用する機能では、クラスタ内の各ノードにその機能用のキーが必要です。

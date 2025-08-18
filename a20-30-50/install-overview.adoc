@@ -33,6 +33,6 @@ AFF A20、AFF A30、またはAFF A50ストレージシステムを設置して�
 [role="quick-margin-para"]
 ストレージシステムの電源をオンにするには、各シェルフの電源をオンにし、必要に応じて一意のシェルフIDを割り当ててから、コントローラの電源をオンにします。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["5 つ"]link:install-complete.html["ストレージシステムのセットアップの完了"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["5 つ"]/
 [role="quick-margin-para"]
-ストレージシステムのセットアップを完了するには、ブラウザでコントローラのIPアドレスを指定してONTAPシステムマネージャにアクセスします。セットアップウィザードを使用して、ストレージシステムのクラスタを設定できます。
+ストレージシステムの電源を入れたら、 https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html["クラスターを設定する"] 。
