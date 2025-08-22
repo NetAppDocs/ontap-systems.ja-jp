@@ -17,22 +17,22 @@ AFF A20、AFF A30、またはAFF A50ストレージシステムを設置して�
 [role="quick-margin-para"]
 ストレージシステムをインストールする前に、インストール要件を満たしている必要があります。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["1つ"]link:install-prepare.html["設置を準備"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:install-prepare.html["設置を準備"]
 [role="quick-margin-para"]
 設置の準備として、設置場所を準備し、環境要件と電力要件を確認し、十分なラックスペースがあることを確認します。その後、機器を開梱し、内容を納品書と比較して、ハードウェアを登録してサポートを利用できます。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["2 つ"]link:install-hardware.html["ハードウェアを設置"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:install-hardware.html["ハードウェアを設置"]
 [role="quick-margin-para"]
 ハードウェアを設置するには、ストレージシステムとシェルフ用のレールキットを設置し、ストレージシステムとシェルフをキャビネットまたはTelcoラックに設置して固定します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["3つ"]link:install-cable.html["ハードウェアのケーブル接続"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:install-cable.html["ハードウェアのケーブル接続"]
 [role="quick-margin-para"]
 ハードウェアをケーブル接続するには、コントローラをネットワークに接続してからシェルフに接続します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["4つ"]link:install-power-hardware.html["ストレージ・システムの電源をオンにする"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:install-power-hardware.html["ストレージ・システムの電源をオンにする"]
 [role="quick-margin-para"]
 ストレージシステムの電源をオンにするには、各シェルフの電源をオンにし、必要に応じて一意のシェルフIDを割り当ててから、コントローラの電源をオンにします。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["5 つ"]/
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"]/
 [role="quick-margin-para"]
 ストレージシステムの電源を入れたら、 https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html["クラスターを設定する"] 。

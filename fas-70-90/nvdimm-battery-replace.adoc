@@ -46,13 +46,14 @@ FAS70またはFAS90システムでは、バッテリの充電が失われ始め�
 +
 `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
 
-. 正常なコントローラのコンソールから自動ギブバックを無効にします。
+. 自動ギブバックを無効にする:
++
+.. 正常なコントローラのコンソールから次のコマンドを入力します。
 +
 `storage failover modify -node local -auto-giveback false`
 
-+
+.. 入力 `y`「自動ギブバックを無効にしますか?」というプロンプトが表示されたら、
 
-NOTE: 自動ギブバックを無効にしますか?_と表示されたら'y'を入力します
 
 . 障害のあるコントローラに LOADER プロンプトを表示します。
 +
@@ -110,9 +111,14 @@ _-halt true _パラメータを指定すると、Loaderプロンプトが表示�
 +
 `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
 
-. 正常なコントローラのコンソールから自動ギブバックを無効にします。
+. 自動ギブバックを無効にする:
 +
-`storage failover modify –node local -auto-giveback false`
+.. 正常なコントローラのコンソールから次のコマンドを入力します。
++
+`storage failover modify -node local -auto-giveback false`
+
+.. 入力 `y`「自動ギブバックを無効にしますか?」というプロンプトが表示されたら、
+
 
 . 障害のあるコントローラに LOADER プロンプトを表示します。
 +

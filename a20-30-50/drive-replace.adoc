@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, replace the drives 
 summary: ドライブに障害が発生した場合、またはアップグレードが必要な場合は、 AFF A20、 AFF A30、またはAFF A50 ストレージ システム内のドライブを交換します。交換プロセスには、障害のあるドライブの識別、そのドライブの安全な取り外し、そして継続的なデータ アクセスとシステム パフォーマンスを確保するための新しいドライブのインストールが含まれます。 
 ---
-= ドライブの交換- AFF A20、AFF A30、およびAFF A50
+= ドライブの交換 - AFF A20、 AFF A30、 AFF A50
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
