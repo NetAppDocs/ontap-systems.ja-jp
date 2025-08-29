@@ -1,10 +1,10 @@
 ---
 permalink: fas8300/bootmedia-replace-overview.html 
 sidebar: sidebar 
-keywords: fas8300, fas8300, boot, media, store, primary, secondary, set, system, boot, image, file, replace, replace the boot media 
+keywords: fas8300, fas8700, boot, media, store, primary, secondary, set, system, boot, image, file, replace, replace the boot media 
 summary: ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。 
 ---
-= ブートメディアの交換 - AFF FAS8300 および FAS8700
+= ブートメディア交換の概要 - FAS8300およびFAS8700
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -16,13 +16,30 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF C800メンテナンス
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/c800/maintain-overview.html"
-  - title: ブートメディア
-    pdf-filename: AFF C800ブートメディア
+  - title: ブートメディア - 自動回復
+    pdf-filename: AFF C800ブートメディア自動化
     entries:
-    - title: 概要
-      url: "/c800/bootmedia-replace-overview.html"
+    - title: ブートメディアの交換ワークフロー
+      url: "/c800/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/c800/bootmedia-replace-requirements-bmr.html"
+    - title: コントローラのシャットダウン
+      url: "/c800/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/c800/bootmedia-replace-bmr.html"
+    - title: ブートメディアへのイメージのリストア
+      url: "/c800/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/c800/bootmedia-complete-rma-bmr.html"
+  - title: ブートメディア - 手動リカバリ
+    pdf-filename: AFF C800ブートメディアマニュアル
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/c800/bootmedia-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/c800/bootmedia-replace-requirements.html"
     - title: 暗号化キーの確認
       url: "/c800/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします

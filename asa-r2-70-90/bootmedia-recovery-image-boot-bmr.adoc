@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, boot the recovery image 
 summary: ASA A70またはASA A90システムに新しいブートメディアデバイスを取り付けたら、自動ブートメディアリカバリプロセスを開始して、パートナーノードから構成をリストアできます。 
 ---
-= ブートメディア上のイメージをリストアします（ASA A70およびASA A90）。
+= ブートメディア上のONTAPイメージを復元する - ASA A70 およびASA A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -128,7 +128,7 @@ Enter the passphrase again to confirm:
 Enter the backup data:
 -----BEGIN BACKUP-----
 <passphrase_value>
------END ACKUP-----
+-----END BACKUP-----
 ....
 =====
 

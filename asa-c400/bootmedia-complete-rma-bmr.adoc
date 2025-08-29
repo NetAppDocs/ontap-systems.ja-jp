@@ -1,0 +1,14 @@
+---
+permalink: asa-c400/bootmedia-complete-rma-bmr.html 
+sidebar: sidebar 
+keywords: asa-c400, complete the replacement process 
+summary: 部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。 
+---
+= 故障したブートメディアをNetAppに返却 - ASA C400
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA C400システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページをご覧ください。

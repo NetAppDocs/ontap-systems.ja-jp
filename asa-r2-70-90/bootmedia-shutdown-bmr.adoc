@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, shut down the controller 
 summary: ASA A70またはASA A90ストレージシステムの障害のあるコントローラをシャットダウンして、データ損失を防ぎ、ブートメディアの交換時にシステムの安定性を確保します。 
 ---
-= コントローラをシャットダウンしてブートメディアを交換します- ASA A1K
+= コントローラをシャットダウンしてブートメディアを交換します - ASA A70 またはASA A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

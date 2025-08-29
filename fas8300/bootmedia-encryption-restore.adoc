@@ -1,10 +1,10 @@
 ---
 permalink: fas8300/bootmedia-encryption-restore.html 
 sidebar: sidebar 
-keywords: fas8300, fas8300, environment, variable, complete, system, onboard, key, manager, okm, storage, volume, netapp, encryption, post, boot, media, replacement, post boot media replacement stpes for okm nse and nve 
+keywords: fas8300, fas8700, environment, variable, complete, system, onboard, key, manager, okm, storage, volume, netapp, encryption, post, boot, media, replacement, post boot media replacement stpes for okm nse and nve 
 summary: 環境変数を確認したら、オンボードキーマネージャ \ （ OKM \ ）、 NetApp Storage Encryption \ （ NSE\ ）、または NetApp Volume Encryption \ （ NVE \ ）が有効になっているシステムに固有の手順を実行する必要があります。 
 ---
-= リストア暗号化- AFF FAS8300およびFAS8700
+= 暗号化の復元 - FAS8300およびFAS8700
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,6 +12,8 @@ summary: 環境変数を確認したら、オンボードキーマネージャ \
 
 [role="lead"]
 交換用ブートメディアで暗号化をリストアします。
+
+ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。システムで以前のバージョンのONTAPを実行している場合は、手動ブートリカバリ手順を使用する必要があります。
 
 オンボードキーマネージャ（OKM）、NetApp Storage Encryption（NSE）、またはNetApp Volume Encryption（NVE）が有効になっているシステムに固有の手順を、ブートメディアの交換手順の最初にキャプチャした設定を使用して実行する必要があります。
 

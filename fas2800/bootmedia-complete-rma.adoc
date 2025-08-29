@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2800, complete, replacement, process, replace, return, failed, rma, instructions 
 summary: 部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。 
 ---
-= 障害が発生したパーツをNetApp - FAS2820に返却します。
+= 故障したブートメディアをNetAppに返却する - FAS2820
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

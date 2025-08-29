@@ -1,7 +1,7 @@
 ---
 permalink: fas2800/maintain-overview.html 
 sidebar: sidebar 
-keywords: fas2800 maintenance, maintenance, repairing, repairing fas2700, replace fas2800 components, replace fas2800 components 
+keywords: fas2800 maintenance, maintenance, repairing, repairing fas2800, replace fas2800 components, replace fas2800 components 
 summary: FAS2820ハードウェアのメンテナンス 
 ---
 = FAS2820ハードウェアのメンテナンス
@@ -11,64 +11,93 @@ summary: FAS2820ハードウェアのメンテナンス
 
 
 [role="lead"]
+FAS2820ストレージシステムのハードウェアをメンテナンスすることで、長期的な信頼性と最適なパフォーマンスを確保できます。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。
+
+メンテナンス手順では、FAS2820 ストレージ システムがONTAP環境にストレージ ノードとしてすでに導入されていることを前提としています。
+
+
+
+== システムコンホオネント
+
 FAS2820ストレージシステムでは、次のコンポーネントに対してメンテナンス手順を実行できます。
 
+[cols="25,65"]
+|===
 
 
-== ブートメディア
+ a| 
+link:bootmedia-replace-workflow-bmr.html["ブートメディア - 自動回復"]
+ a| 
+ブート メディアには、ストレージ システムがブートに使用するONTAPイメージ ファイルのプライマリ セットとセカンダリ セットが保存されます。自動リカバリ中に、システムはパートナー ノードからブート イメージを取得し、適切なブート メニュー オプションを自動的に実行して、交換用ブート メディアにイメージをインストールします。自動ブートメディアリカバリプロセスは、 ONTAP 9.17.1以降でのみサポートされています。ストレージシステムで以前のバージョンのONTAPを実行している場合は、 link:bootmedia-replace-workflow.html["手動ブート回復手順"] 。
 
-ブートメディアには、システムがブート時に使用するブートイメージファイルのプライマリセットとセカンダリセットが格納されています。
+
+
+ a| 
+link:bootmedia-replace-workflow.html["ブートメディア - 手動リカバリ"]
+ a| 
+ブート メディアには、ストレージ システムがブートに使用するONTAPイメージ ファイルのプライマリ セットとセカンダリ セットが保存されます。手動リカバリでは、USB ドライブからストレージ システムを起動し、ファイル システムのイメージと構成を手動で復元します。ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。
 
 
 
-== キャッシングモジュール
-
+ a| 
+link:caching-module-replace.html["キャッシングモジュール"]
+ a| 
 モジュールがオフラインになったことを示す単一のAutoSupport（ASUP）メッセージがシステムで登録された場合は、コントローラのキャッシングモジュールを交換する必要があります。
 
 
 
-== シャーシ
-
+ a| 
+link:chassis-replace-overview.html["シャーシ"]
+ a| 
 シャーシは、コントローラ/CPUユニット、電源装置、I/Oなど、すべてのコントローラコンポーネントを収容する物理エンクロージャです。
 
 
 
-== コントローラ
-
+ a| 
+link:controller-replace-overview.html["コントローラ"]
+ a| 
 コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、ONTAP機能を実装します。
 
 
 
-== DIMM
-
+ a| 
+link:dimm-replace.html["DIMM"]
+ a| 
 メモリサイズが異なる場合や DIMM に障害がある場合は、 DIMM （デュアルインラインメモリモジュール）を交換する必要があります。
 
 
 
-== ドライブ
-
+ a| 
+link:drive-replace.html["ドライブ"]
+ a| 
 ドライブは、データの物理ストレージメディアとして使用されるデバイスです。
 
 
 
-== NVMEM バッテリ
-
+ a| 
+link:nvmem-nvram-battery-replace.html["NVMEM バッテリ"]
+ a| 
 バッテリはコントローラに付属しており、AC電源に障害が発生した場合にキャッシュデータを保持します。
 
 
 
-== メザニンカード
-
-メザニンカードは、マザーボードの専用スロットに挿入するように設計された拡張カードです。
-
-
-
-== 電源装置
-
-電源装置は、コントローラシェルフに電源の冗長性を提供します。
+ a| 
+link:pci-cards-and-risers-replace.html["メザニンカード"]
+ a| 
+メザニン カードは、マザーボード上の専用スロットに挿入するように設計されており、カード I/O カードを保持する拡張カードです。
 
 
 
-== リアルタイムクロックバッテリ
+ a| 
+link:power-supply-swap-out.html["電源装置"]
+ a| 
+電源装置は、コントローラに冗長な電源を提供します。
 
+
+
+ a| 
+link:rtc-battery-replace.html["リアルタイムクロックバッテリ"]
+ a| 
 リアルタイムクロックバッテリは、電源がオフの場合にシステムの日付と時刻の情報を保持します。
+
+|===

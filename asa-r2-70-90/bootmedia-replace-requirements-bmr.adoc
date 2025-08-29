@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, a90, replace the boot media 
 summary: ASA A70またはA90システムのブートメディアを交換する前に、交換が成功するために必要な要件を満たしていることを確認してください。 
 ---
-= ブートメディアの交換要件- ASA A70およびASA A90
+= ブートメディアを交換するための要件 - ASA A70 およびASA A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

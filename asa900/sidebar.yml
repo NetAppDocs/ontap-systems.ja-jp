@@ -16,23 +16,38 @@ entries:
 - title: メンテナンス
   pdf-filename: ASA A900のメンテナンス
   entries:
-  - title: 概要
-    url: "/asa900/index.html"
-  - title: ブートメディア
-    pdf-filename: ASA A900のブートメディア
+  - title: メンテナンスの概要
+    url: "/asa900/maintain-overview.html"
+  - title: ブートメディア - 自動回復
+    pdf-filename: AFF ASA 900 ブートメディア自動化
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/asa900/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/asa900/bootmedia-replace-requirements-bmr.html"
+    - title: コントローラのシャットダウン
+      url: "/asa900/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/asa900/bootmedia-replace-bmr.html"
+    - title: ブートメディアへのイメージのリストア
+      url: "/asa900/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/asa900/bootmedia-complete-rma-bmr.html"
+  - title: ブートメディア - 手動リカバリ
+    pdf-filename: AFF ASA 900 ブートメディアマニュアル
     entries:
     - title: 概要
       url: "/asa900/bootmedia_replace_overview.html"
     - title: 暗号化キーの確認
       url: "/asa900/bootmedia_encryption_preshutdown_checks.html"
     - title: 障害のあるコントローラをシャットダウンします
-      url: "/asa900/bootmedia_impaired_controller_shutdown.html"
-    - title: 障害が発生したブートメディアの交換
+      url: "/asa900/bootmedia-shutdown.html"
+    - title: ブートメディアを交換します
       url: "/asa900/bootmedia_replace.html"
     - title: ブートイメージを起動します
       url: "/asa900/bootmedia_recovery_image.html"
     - title: アンコウカノ
-      url: "/asa900/bootmedia_encryption_restore.html"
+      url: "/asa900/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します
       url: "/asa900/bootmedia_complete_rma.html"
   - title: シャーシ

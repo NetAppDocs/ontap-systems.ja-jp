@@ -6,35 +6,52 @@ entries:
   pdf-filename: AFF A900のインストールとセットアップ
   entries:
   - title: インストールとセットアップを選択します
-    url: "/a900/install_setup.html"
+    url: "/a900/install-setup.html"
   - title: クイックステップ
-    url: "/a900/install_quick_guide.html"
+    url: "/a900/install-quick-guide.html"
   - title: ビデオの手順
-    url: "/a900/install_videos.html"
+    url: "/a900/install-videos.html"
   - title: 詳細な手順
-    url: "/a900/install_detailed_guide.html"
+    url: "/a900/install-detailed-guide.html"
 - title: メンテナンス
   pdf-filename: AFF A900のメンテナンス
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/a900/maintain-overview.html"
-  - title: ブートメディア
-    pdf-filename: AFF A900ブートメディア
+  - title: ブートメディア - 自動回復
+    pdf-filename: AFF A900ブートメディア自動化
     entries:
-    - title: 概要
-      url: "/a900/bootmedia_replace_overview.html"
+    - title: ブートメディアの交換ワークフロー
+      url: "/a900/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/a900/bootmedia-replace-requirements-bmr.html"
+    - title: コントローラのシャットダウン
+      url: "/a900/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/a900/bootmedia-replace-bmr.html"
+    - title: ブートメディアへのイメージのリストア
+      url: "/a900/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/a900/bootmedia-complete-rma-bmr.html"
+  - title: ブートメディア - 手動リカバリ
+    pdf-filename: AFF A900ブートメディアマニュアル
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/a900/bootmedia-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/a900/bootmedia-replace-requirements.html"
     - title: 暗号化キーの確認
-      url: "/a900/bootmedia_encryption_preshutdown_checks.html"
+      url: "/a900/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a900/bootmedia-shutdown.html"
-    - title: ブートイメージを交換します
-      url: "/a900/bootmedia_replace.html"
+    - title: ブートメディアを交換します
+      url: "/a900/bootmedia-replace.html"
     - title: ブートイメージを起動します
       url: "/a900/bootmedia_recovery_image.html"
     - title: アンコウカノ
       url: "/a900/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します
-      url: "/a900/bootmedia_complete_rma.html"
+      url: "/a900/bootmedia-complete-rma.html"
   - title: シャーシ
     pdf-filename: AFF A900シャーシ
     entries:

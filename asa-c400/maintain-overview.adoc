@@ -11,65 +11,93 @@ summary: ASA C400ハードウェアのメンテナンス
 
 
 [role="lead"]
+ASA C400ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。
+
+メンテナンス手順では、 ASA C400ストレージ システムがONTAP環境にストレージ ノードとしてすでに導入されていることを前提としています。
+
+
+
+== システムコンホオネント
+
 ASA C400ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。
 
+[cols="25,65"]
+|===
 
 
-== ブートメディア
+ a| 
+link:bootmedia-replace-workflow-bmr.html["ブートメディア - 自動回復"]
+ a| 
+ブート メディアには、ストレージ システムがブートに使用するONTAPイメージ ファイルのプライマリ セットとセカンダリ セットが保存されます。自動リカバリ中に、システムはパートナー ノードからブート イメージを取得し、適切なブート メニュー オプションを自動的に実行して、交換用ブート メディアにイメージをインストールします。自動ブートメディアリカバリプロセスは、 ONTAP 9.17.1以降でのみサポートされています。ストレージシステムで以前のバージョンのONTAPを実行している場合は、 link:bootmedia-replace-workflow.html["手動ブート回復手順"] 。
 
-ブートメディアには、システムがブート時に使用するブートイメージファイルのプライマリセットとセカンダリセットが格納されています。
+
+
+ a| 
+link:bootmedia-replace-workflow.html["ブートメディア - 手動リカバリ"]
+ a| 
+ブート メディアには、ストレージ システムがブートに使用するONTAPイメージ ファイルのプライマリ セットとセカンダリ セットが保存されます。手動リカバリでは、USB ドライブからストレージ システムを起動し、ファイル システムのイメージと構成を手動で復元します。ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。
 
 
 
-== シャーシ
-
+ a| 
+link:chassis-replace-overview.html["シャーシ"]
+ a| 
 シャーシは、コントローラ/CPUユニット、電源装置、I/Oなど、すべてのコントローラコンポーネントを収容する物理エンクロージャです。
 
 
 
-== コントローラ
-
+ a| 
+link:controller-replace-overview.html["コントローラ"]
+ a| 
 コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、ONTAP機能を実装します。
 
 
 
-== DIMM
-
+ a| 
+link:dimm-replace.html["DIMM"]
+ a| 
 メモリサイズが異なる場合や DIMM に障害がある場合は、 DIMM （デュアルインラインメモリモジュール）を交換する必要があります。
 
 
 
-== ファン
-
+ a| 
+link:fan-swap-out.html["ファン"]
+ a| 
 ファンによってコントローラが冷却されます。
 
 
 
-== NVDIMM バッテリ
+ a| 
+link:nvdimm-replace.html["NVDIMM"]
+ a| 
+NVDIMM（不揮発性デュアルインラインメモリモジュール）は、揮発性メモリから不揮発性ストレージへのデータ転送を管理し、停電やシステムのシャットダウン時にもデータの整合性を維持します。
 
+
+
+ a| 
+link:nvdimm-battery-replace.html["NVDIMM バッテリ"]
+ a| 
 NVDIMMバッテリは、NVDIMMモジュールへの電力を維持する役割を果たします。
 
 
 
-== NVDIMM
-
- The NVDIMM (non-volatile dual in-line memory module) manages the data transfer from the volatile memory to the non-volatile storage, and maintains data integrity in the event of a power loss or system shutdown.
-
-
-== PCIeまたはメザニンカード
-
-PCIe（Peripheral Component Interconnect Express）カードは、マザーボードのPCIeスロットに接続する拡張カードです。
-
-メザニンカードは、マザーボードの専用スロットに挿入するように設計された拡張カードです。
+ a| 
+link:pci-cards-and-risers-replace.html["PCIeカードとライザー"]
+ a| 
+PCIe (Peripheral Component Interconnect Express) カードは、マザーボード上の PCIe スロットまたはマザーボードに接続されたライザーに差し込む拡張カードです。
 
 
 
-== 電源装置
-
+ a| 
+link:power-supply-replace.html["電源装置"]
+ a| 
 電源装置は、コントローラシェルフに電源の冗長性を提供します。
 
 
 
-== リアルタイムクロックバッテリ
-
+ a| 
+link:rtc-battery-replace.html["リアルタイムクロックバッテリ"]
+ a| 
 リアルタイムクロックバッテリは、電源がオフの場合にシステムの日付と時刻の情報を保持します。
+
+|===

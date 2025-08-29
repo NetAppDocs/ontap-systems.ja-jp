@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ASA A900, replace, boot, media, controller, directions. replace boot media, transfer image 
 summary: コントローラモジュールを取り外して開き、コントローラのブートメディアの場所を確認して交換してから、交換用ブートメディアにイメージを転送する必要があります。 
 ---
-= ブートメディアの交換- ASA A900
+= ブートメディアを交換し、手動ブートリカバリの準備をします - ASA A900
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,6 +12,8 @@ summary: コントローラモジュールを取り外して開き、コント�
 
 [role="lead"]
 コントローラモジュールを取り外し、コントローラモジュールを取り外して開き、コントローラ内のブートメディアの場所を確認して交換してから、イメージを交換用ブートメディアに転送する必要があります。
+
+ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。システムで以前のバージョンのONTAPを実行している場合は、手動ブートリカバリ手順を使用する必要があります。
 
 
 
@@ -80,7 +82,7 @@ image:../media/icon_round_1.png["番号1"]
 .アニメーション-ブートメディアの交換
 video::c5080658-765e-4d29-8456-adf2000e1495[panopto]
 +
-image::../media/drw_a900_remove_boot_dev.png[ブートメディアの取り外し]
+image::../media/drw_9000_remove_boot_dev.svg[ブートメディアの取り外し]
 
 +
 [cols="1,4"]
@@ -162,7 +164,7 @@ USB フラッシュドライブは、 USB コンソールポートではなく�
 . コントローラがストレッチまたはファブリック接続の MetroCluster に含まれている場合は、 FC アダプタの構成をリストアする必要があります。
 +
 .. 保守モードでブート： boot_ontap maint
-.. MetroCluster ポートをイニシエータとして設定します。 ucadmin modify -m fc -t iniitator adapter_name
+.. MetroClusterポートをイニシエーターとして設定します。 `ucadmin modify -m fc -t initiator adapter_name`
 .. 停止して保守モードに戻ります : 「 halt 」
 
 

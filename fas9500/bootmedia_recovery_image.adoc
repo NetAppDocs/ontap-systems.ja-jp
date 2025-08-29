@@ -13,6 +13,9 @@ summary: 障害ノードをリカバリイメージからブートするため�
 [role="lead"]
 ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
 
+ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。システムで以前のバージョンのONTAPを実行している場合は、手動ブートリカバリ手順を使用する必要があります。
+
+.手順
 . LOADER プロンプトから、 USB フラッシュドライブ「 boot_recovery 」からリカバリ・イメージをブートします
 +
 イメージが USB フラッシュドライブからダウンロードされます。
@@ -88,7 +91,7 @@ date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state
 
 . 次の手順は、システム構成によって異なります。
 +
-** システムにオンボードキーマネージャ、 NSE 、または NVE が設定されている場合は、に進みます xref:bootmedia_encryption_restore.adoc[OKM 、 NSE 、 NVE のブートメディア交換後の手順]
+** システムにオンボードキーマネージャ、 NSE 、または NVE が設定されている場合は、に進みます xref:bootmedia-encryption-restore.adoc[OKM 、 NSE 、 NVE のブートメディア交換後の手順]
 ** システムにオンボードキーマネージャ、 NSE 、または NVE が設定されていない場合は、このセクションの手順を実行します。
 
 

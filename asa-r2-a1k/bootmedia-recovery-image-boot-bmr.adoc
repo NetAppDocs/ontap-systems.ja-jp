@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a1k, boot the recovery image 
 summary: ASA A1Kシステムの交換用ブートメディアにONTAPイメージをリストアします。このプロセスでは、Loaderプロンプトからブートリカバリプロセスを開始し、リカバリプロセスが完了してノードがリブートするまでリカバリプロセスを監視します。 
 ---
-= ブートメディアにイメージをリストアします（ASA A1K）。
+= ブートメディア上のONTAPイメージを復元する - ASA A1K
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -128,7 +128,7 @@ Enter the passphrase again to confirm:
 Enter the backup data:
 -----BEGIN BACKUP-----
 <passphrase_value>
------END ACKUP-----
+-----END BACKUP-----
 ....
 =====
 

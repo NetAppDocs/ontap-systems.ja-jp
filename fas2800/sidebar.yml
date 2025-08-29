@@ -14,15 +14,32 @@ entries:
   - title: 詳細な手順
     url: "/fas2800/install-detailed-guide.html"
 - title: メンテナンス
-  pdf-filename: FAS2820の保守点検
+  pdf-filename: AFF FAS2800 維持
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/fas2800/maintain-overview.html"
-  - title: ブートメディア
-    pdf-filename: FAS2820ブートメディア
+  - title: ブートメディア - 自動回復
+    pdf-filename: FAS2820ブートメディア自動化
     entries:
-    - title: 概要
-      url: "/fas2800/bootmedia-replace-overview.html"
+    - title: ブートメディアの交換ワークフロー
+      url: "/fas2800/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/fas2800/bootmedia-replace-requirements-bmr.html"
+    - title: コントローラのシャットダウン
+      url: "/fas2800/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/fas2800/bootmedia-replace-bmr.html"
+    - title: ブートイメージを起動します
+      url: "/fas2800/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/fas2800/bootmedia-complete-rma-bmr.html"
+  - title: ブートメディア - 手動回復
+    pdf-filename: FAS2820ブートメディアマニュアル
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/fas2800/bootmedia-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/a800/bootmedia-replace-requirements.html"
     - title: 暗号化キーの確認
       url: "/fas2800/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします

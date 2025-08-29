@@ -1,5 +1,5 @@
 ---
-section: asa-c-400
+section: asa-c400
 title: ASA C400システム
 entries:
 - title: 設置とセットアップ
@@ -16,13 +16,30 @@ entries:
 - title: メンテナンス
   pdf-filename: ASA C400のメンテナンス
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/asa-c400/maintain-overview.html"
-  - title: ブートメディア
-    pdf-filename: ASA C400ブートメディア
+  - title: ブートメディア - 自動回復
+    pdf-filename: ASA C400ブートメディア自動化
     entries:
-    - title: 概要
-      url: "/asa-c400/bootmedia-replace-overview.html"
+    - title: ブートメディアの交換ワークフロー
+      url: "/asa-c400/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/asa-c400/bootmedia-replace-requirements-bmr.html"
+    - title: コントローラのシャットダウン
+      url: "/asa-c400/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/asa-c400/bootmedia-replace-bmr.html"
+    - title: ブートメディアへのイメージのリストア
+      url: "/asa-c400/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/asa-c400/bootmedia-complete-rma-bmr.html"
+  - title: ブートメディア - 手動リカバリ
+    pdf-filename: ASA C400ブートメディアマニュアル
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/asa-c400/bootmedia-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/asa-c400/bootmedia-replace-requirements.html"
     - title: 暗号化キーの確認
       url: "/asa-c400/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
@@ -31,8 +48,6 @@ entries:
       url: "/asa-c400/bootmedia-replace.html"
     - title: ブートイメージを起動します
       url: "/asa-c400/bootmedia-recovery-image-boot.html"
-    - title: MetroCluster の設定をスイッチバックします
-      url: "/asa-c400/bootmedia-2n-mcc-switchback.html"
     - title: アンコウカノ
       url: "/asa-c400/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します
@@ -70,10 +85,10 @@ entries:
     pdf-filename: ASA C400ファンモジュール
     url: "/asa-c400/fan-swap-out.html"
   - title: NVDIMM バッテリ
-    pdf-filename: ASA C400 NVDIMMバッテリ
+    pdf-filename: ASA C400 NVDIMM バッテリー
     url: "/asa-c400/nvdimm-battery-replace.html"
   - title: NVDIMM
-    pdf-filename: ASA A320 NVDIMM
+    pdf-filename: ASA C400 NVDIMM
     url: "/asa-c400/nvdimm-replace.html"
   - title: PCIe カードまたはメザニンカード
     pdf-filename: ASA C400 PCIeまたはメザニンカード

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c800, boot the recovery image 
 summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
-= リカバリイメージのブート- ASA C800
+= USBドライブからの手動ブートメディアリカバリ - ASA C800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,6 +12,8 @@ summary: ONTAP イメージを USB ドライブからブートし、ファイル
 
 [role="lead"]
 システムに新しいブートメディアデバイスを取り付けたら、リカバリイメージをUSBドライブからブートし、パートナーノードから設定をリストアできます。
+
+ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow.html["手動ブート回復手順"]
 
 .手順
 . LOADER プロンプトから、 USB フラッシュドライブ「 boot_recovery 」からリカバリ・イメージをブートします

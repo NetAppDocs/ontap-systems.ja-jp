@@ -2,7 +2,7 @@
 permalink: fas9500/maintain-overview.html 
 sidebar: sidebar 
 keywords: FAS9500 maintenance, maintenance, repairing FAS9500, repairing aff FAS9500, replace FAS9500 components, replace FAS9500 components 
-summary: ASA FAS9500ハードウェアのメンテナンス 
+summary: FAS9500ハードウェアのメンテナンス 
 ---
 = FAS9500ハードウェアのメンテナンス
 :allow-uri-read: 
@@ -11,76 +11,107 @@ summary: ASA FAS9500ハードウェアのメンテナンス
 
 
 [role="lead"]
+FAS9500ストレージシステムのハードウェアをメンテナンスすることで、長期的な信頼性と最適なパフォーマンスを確保できます。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。
+
+メンテナンス手順では、FAS9500 ストレージ システムがONTAP環境にストレージ ノードとしてすでに導入されていることを前提としています。
+
+
+
+== システムコンホオネント
+
 FAS9500ストレージ・システムでは、次のコンポーネントのメンテナンス手順を実行できます。
 
+[cols="25,65"]
+|===
 
 
-== ブートメディア
+ a| 
+link:bootmedia-replace-workflow-bmr.html["ブートメディア - 自動回復"]
+ a| 
+ブート メディアには、ストレージ システムがブートに使用するONTAPイメージ ファイルのプライマリ セットとセカンダリ セットが保存されます。自動リカバリ中に、システムはパートナー ノードからブート イメージを取得し、適切なブート メニュー オプションを自動的に実行して、交換用ブート メディアにイメージをインストールします。自動ブートメディアリカバリプロセスは、 ONTAP 9.17.1以降でのみサポートされています。ストレージシステムで以前のバージョンのONTAPを実行している場合は、 link:bootmedia-replace-workflow.html["手動ブート回復手順"] 。
 
-ブートメディアには、システムがブート時に使用するブートイメージファイルのプライマリセットとセカンダリセットが格納されています。
+
+
+ a| 
+link:bootmedia-replace-workflow.html["ブートメディア - 手動リカバリ"]
+ a| 
+ブート メディアには、ストレージ システムがブートに使用するONTAPイメージ ファイルのプライマリ セットとセカンダリ セットが保存されます。手動リカバリでは、USB ドライブからストレージ システムを起動し、ファイル システムのイメージと構成を手動で復元します。ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。
 
 
 
-== キャッシングモジュール
-
+ a| 
+link:caching_module_hot_swap.html["キャッシングモジュール"]
+ a| 
 モジュールがオフラインになったことを示す単一のAutoSupport（ASUP）メッセージがシステムで登録された場合は、コントローラのキャッシングモジュールを交換する必要があります。
 
 
 
-== シャーシ
-
+ a| 
+link:chassis_replace_overview.html["シャーシ"]
+ a| 
 シャーシは、コントローラ/CPUユニット、電源装置、I/Oなど、すべてのコントローラコンポーネントを収容する物理エンクロージャです。
 
 
 
-== コントローラ
-
+ a| 
+link:controller_replace_overview.html["コントローラ"]
+ a| 
 コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、ONTAP機能を実装します。
 
 
 
-== DCPM を実行します
-
-DCPM（デステージコントローラ電源モジュール）には、NVRAM11バッテリが搭載されています。
-
-
-
-== DIMM
-
+ a| 
+link:dimm_replace.html["DIMM"]
+ a| 
 メモリサイズが異なる場合や DIMM に障害がある場合は、 DIMM （デュアルインラインメモリモジュール）を交換する必要があります。
 
 
 
-== ファン
+ a| 
+link:dcpm-nvram11-battery-replace.html["DCPM を実行します"]
+ a| 
+DCPM（デステージコントローラ電源モジュール）には、NVRAM11バッテリが搭載されています。
 
+
+
+ a| 
+link:fan_swap_out.html["ファン"]
+ a| 
 ファンによってコントローラが冷却されます。
 
 
 
-== I/O モジュール
-
+ a| 
+link:pci_cards_and_risers_replace.html["I/O モジュール"]
+ a| 
 I/Oモジュール（入出力モジュール）は、コントローラと、コントローラとデータを交換する必要があるさまざまなデバイスやシステムとの間の仲介役として機能するハードウェアコンポーネントです。
 
 
 
-== LED USB
-
+ a| 
+link:led_module_replace.html["LED USB"]
+ a| 
 LED USB モジュールは、コンソールポートおよびシステムステータスへの接続を提供します。
 
 
 
-== NVRAM
-
-NVRAMモジュール（Non-Volatile Random Access Memory）を使用すると、電源を再投入したりシステムをリブートしたりしても、コントローラでデータを保持できます。
-
-
-
-== 電源装置
-
-電源装置は、コントローラシェルフに電源の冗長性を提供します。
+ a| 
+link:nvram_module_or_nvram_dimm_replacement.html["NVRAM"]
+ a| 
+NVRAMモジュール (不揮発性ランダム アクセス メモリ) により、コントローラは電源サイクルやシステムの再起動後もデータを保持でき、 NVRAM DIMM はNVRAM設定を維持します。
 
 
 
-== リアルタイムクロックバッテリ
+ a| 
+link:power_supply_swap_out.html["電源装置"]
+ a| 
+電源装置は、コントローラに冗長な電源を提供します。
 
+
+
+ a| 
+link:rtc_battery_replace.html["リアルタイムクロックバッテリ"]
+ a| 
 リアルタイムクロックバッテリは、電源がオフの場合にシステムの日付と時刻の情報を保持します。
+
+|===

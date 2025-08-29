@@ -3,7 +3,7 @@ section: fas8300
 title: FAS8300 および FAS8700 システム
 entries:
 - title: 設置とセットアップ
-  pdf-filename: AFF FAS8300 および FAS8700 の設置とセットアップ
+  pdf-filename: FAS8300およびFAS8700のインストールとセットアップ
   entries:
   - title: インストールとセットアップを選択します
     url: "/fas8300/install-setup.html"
@@ -14,15 +14,32 @@ entries:
   - title: 詳細な手順
     url: "/fas8300/install-detailed-guide.html"
 - title: メンテナンス
-  pdf-filename: AFF FAS8300 と FAS8700 は引き続き維持されます
+  pdf-filename: FAS8300およびFAS8700の維持
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/fas8300/maintain-overview.html"
-  - title: ブートメディア
-    pdf-filename: AFF FAS8300 および FAS8700 ブートメディア
+  - title: ブートメディア - 自動回復
+    pdf-filename: FAS8300およびFAS8700のブートメディア自動化
     entries:
-    - title: 概要
-      url: "/fas8300/bootmedia-replace-overview.html"
+    - title: ブートメディアの交換ワークフロー
+      url: "/fas8300/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/fas8300/bootmedia-replace-requirements-bmr.html"
+    - title: コントローラのシャットダウン
+      url: "/fas8300/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/fas8300/bootmedia-replace-bmr.html"
+    - title: ブートメディアへのイメージのリストア
+      url: "/fas8300/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/fas8300/bootmedia-complete-rma-bmr.html"
+  - title: ブートメディア - 手動リカバリ
+    pdf-filename: FAS8300およびFAS8700ブートメディアマニュアル
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/fas8300/bootmedia-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/fas8300/bootmedia-replace-requirements.html"
     - title: 暗号化キーの確認
       url: "/fas8300/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
@@ -31,17 +48,15 @@ entries:
       url: "/fas8300/bootmedia-replace.html"
     - title: ブートイメージを起動します
       url: "/fas8300/bootmedia-recovery-image-boot.html"
-    - title: MetroCluster の設定をスイッチバックします
-      url: "/fas8300/bootmedia-2n-mcc-switchback.html"
     - title: アンコウカノ
       url: "/fas8300/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します
       url: "/fas8300/bootmedia-complete-rma.html"
   - title: キャッシングモジュール
-    pdf-filename: AFF FAS8300 および FAS8700 キャッシングモジュール
+    pdf-filename: FAS8300およびFAS8700キャッシュモジュール
     url: "/fas8300/caching-module-replace.html"
   - title: シャーシ
-    pdf-filename: AFF FAS8300 および FAS8700 シャーシ
+    pdf-filename: FAS8300およびFAS8700シャーシ
     entries:
     - title: 概要
       url: "/fas8300/chassis-replace-overview.html"
@@ -52,7 +67,7 @@ entries:
     - title: 交換後の処理
       url: "/fas8300/chassis-replace-complete-system-restore-rma.html"
   - title: コントローラ
-    pdf-filename: AFF FAS8300 および FAS8700 コントローラ
+    pdf-filename: FAS8300およびFAS8700コントローラ
     entries:
     - title: 概要
       url: "/fas8300/controller-replace-overview.html"
@@ -67,7 +82,7 @@ entries:
     - title: 交換後の処理
       url: "/fas8300/controller-replace-restore-system-rma.html"
   - title: DIMM
-    pdf-filename: AFF FAS8300 および FAS8700 DIMM
+    pdf-filename: FAS8300およびFAS8700 DIMM
     url: "/fas8300/dimm-replace.html"
   - title: ファン
     url: "/fas8300/fan-swap-out.html"
@@ -76,11 +91,11 @@ entries:
   - title: NVDIMM バッテリ
     url: "/fas8300/nvdimm-battery-replace.html"
   - title: PCIe カードまたはメザニンカード
-    pdf-filename: AFF FAS8300 および FAS8700 PCIe またはメザニンカード
+    pdf-filename: FAS8300およびFAS8700 PCIe またはメザニン カード
     url: "/fas8300/pci-cards-and-risers-replace.html"
   - title: 電源装置
-    pdf-filename: AFF FAS8300 および FAS8700 の電源
+    pdf-filename: FAS8300およびFAS8700電源
     url: "/fas8300/power-supply-replace.html"
   - title: リアルタイムクロックバッテリ
-    pdf-filename: AFF FAS8300 および FAS8700 リアルタイムクロックバッテリ
+    pdf-filename: FAS8300およびFAS8700リアルタイムクロックバッテリー
     url: "/fas8300/rtc-battery-replace.html"

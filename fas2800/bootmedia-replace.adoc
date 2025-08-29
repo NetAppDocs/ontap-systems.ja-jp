@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2800, replace, boot, media, controller, module, fru map 
 summary: コントローラのブートメディアの場所を確認し、手順に従って交換する必要があります。 
 ---
-= ブートメディアの交換- FAS2820
+= ブートメディアを交換し、手動ブートリカバリの準備をします - FAS2820
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,6 +12,8 @@ summary: コントローラのブートメディアの場所を確認し、手�
 
 [role="lead"]
 障害のあるコントローラ モジュールを取り外して開き、コントローラ内のブート メディアを見つけて交換し、ブート イメージを USB ドライブに転送し、USB ドライブをコントローラに挿入して、コントローラを起動する必要があります。
+
+ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。システムで以前のバージョンのONTAPを実行している場合は、手動ブートリカバリ手順を使用する必要があります。
 
 
 

@@ -6,37 +6,52 @@ entries:
   pdf-filename: FAS9500のインストールとセットアップ
   entries:
   - title: インストールとセットアップを選択します
-    url: "/fas9500/install_setup.html"
+    url: "/fas9500/install-setup.html"
   - title: クイックステップ
-    url: "/fas9500/install_quick_guide.html"
+    url: "/fas9500/install-quick-guide.html"
   - title: ビデオの手順
-    url: "/fas9500/install_videos.html"
+    url: "/fas9500/install-videos.html"
   - title: 詳細な手順
-    url: "/fas9500/install_detailed_guide.html"
+    url: "/fas9500/install-detailed-guide.html"
 - title: メンテナンス
   pdf-filename: FAS9500は引き続き維持されます
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/fas9500/maintain-overview.html"
-  - title: ブートメディア
-    pdf-filename: FAS9500ブートメディア
+  - title: ブートメディア - 自動回復
+    pdf-filename: FAS9500ブートメディア自動化
     entries:
-    - title: 概要
-      url: "/fas9500/bootmedia_replace_overview.html"
+    - title: ブートメディアの交換ワークフロー
+      url: "/fas9500/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/fas9500/bootmedia-replace-requirements-bmr.html"
+    - title: コントローラのシャットダウン
+      url: "/fas9500/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/fas9500/bootmedia-replace-bmr.html"
+    - title: ブートメディアへのイメージのリストア
+      url: "/fas9500/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/fas9500/bootmedia-complete-rma-bmr.html"
+  - title: ブートメディア - 手動リカバリ
+    pdf-filename: FAS9500ブートメディアマニュアル
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/fas9500/bootmedia-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/fas9500/bootmedia-replace-requirements.html"
     - title: 暗号化キーの確認
-      url: "/fas9500/bootmedia_encryption_preshutdown_checks.html"
+      url: "/fas9500/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/fas9500/bootmedia-shutdown.html"
     - title: ブートメディアを交換します
-      url: "/fas9500/bootmedia_replace.html"
-    - title: リカバリイメージをブートします
-      url: "/fas9500/bootmedia_recovery_image.html"
-    - title: OKM 、 NSE 、 NVE のブートメディア交換後の手順
-      url: "/fas9500/bootmedia_encryption_restore.html"
-    - title: 障害のあるパーツをネットアップに返却します
-      url: "/fas9500/bootmedia_complete_rma.html"
-  - title: キャッシングモジュール
-    url: "/fas9500/caching_module_hot_swap.html"
+      url: "/fas9500/bootmedia-replace.html"
+    - title: ブートイメージを起動します
+      url: "/fas9500/bootmedia-recovery-image.html"
+    - title: アンコウカノ
+      url: "/fas9500/bootmedia-encryption-restore.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/fas9500/bootmedia-complete-rma.html"
   - title: シャーシ
     pdf-filename: FAS9500シャーシ
     entries:
@@ -44,22 +59,22 @@ entries:
       url: "/fas9500/chassis_replace_overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/fas9500/chassis_replace_shutdown.html"
-    - title: ハードウェアを交換します
+    - title: シャーシの交換
       url: "/fas9500/chassis_replace_move_hardware.html"
-    - title: 構成をリストアおよび検証する
+    - title: 設定のリストアと検証
       url: "/fas9500/chassis_replace_complete_system_restore_rma.html"
-  - title: コントローラモジュール
+  - title: コントローラ
     pdf-filename: FAS9500コントローラモジュール
     entries:
     - title: 概要
       url: "/fas9500/controller_replace_overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/fas9500/controller_replace_shutdown.html"
-    - title: コントローラモジュールハードウェアを交換します
+    - title: コントローラを交換してください
       url: "/fas9500/controller_replace.html"
-    - title: システム構成をリストアおよび検証します
+    - title: システム構成のリストアと検証
       url: "/fas9500/controller_replace_system_config_restore_and_verify.html"
-    - title: システムにケーブルを再接続します
+    - title: システムにケーブルを再接続
       url: "/fas9500/controller_replace_recable_reassign_disks.html"
     - title: システムのリストアを完了
       url: "/fas9500/controller_replace_complete_system_restoration_rma.html"

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a800, shut down the controller 
 summary: NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。 
 ---
-= コントローラのシャットダウン- ASA A800
+= 手動ブートメディアリカバリのためにコントローラをシャットダウンする - ASA A800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,6 +12,8 @@ summary: NVE タスクまたは NSE タスクが完了したら、障害のあ�
 
 [role="lead"]
 NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
+
+ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。システムで以前のバージョンのONTAPを実行している場合は、手動ブートリカバリ手順を使用する必要があります。
 
 
 

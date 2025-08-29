@@ -16,13 +16,30 @@ entries:
 - title: メンテナンス
   pdf-filename: ASA A800のメンテナンス
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/asa800/maintain-overview.html"
-  - title: ブートメディア
-    pdf-filename: ASA A800のブートメディア
+  - title: ブートメディア - 自動回復
+    pdf-filename: ASA A800ブートメディア自動化
     entries:
-    - title: 概要
-      url: "/asa800/bootmedia-replace-overview.html"
+    - title: ブートメディアの交換ワークフロー
+      url: "/asa800/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/asa800/bootmedia-replace-requirements-bmr.html"
+    - title: コントローラのシャットダウン
+      url: "/asa800/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/asa800/bootmedia-replace-bmr.html"
+    - title: ブートメディアへのイメージのリストア
+      url: "/asa800/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/asa800/bootmedia-complete-rma-bmr.html"
+  - title: ブートメディア - 手動リカバリ
+    pdf-filename: ASA A800ブートメディアマニュアル
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/asa800/bootmedia-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/asa800/bootmedia-replace-requirements.html"
     - title: 暗号化キーの確認
       url: "/asa800/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
