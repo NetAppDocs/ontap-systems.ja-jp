@@ -56,6 +56,21 @@ entries:
       url: "/a1k/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します
       url: "/a1k/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: AFF A1Kシャーシ
+    entries:
+    - title: シャーシの交換ワークフロー
+      url: "/a1k/chassis-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/a1k/chassis-replace-requirements.html"
+    - title: 交換の準備
+      url: "/a1k/chassis-replace-prepare.html"
+    - title: コントローラのシャットダウン
+      url: "/a1k/chassis-replace-shutdown.html"
+    - title: シャーシの交換
+      url: "/a1k/chassis-replace-move-hardware.html"
+    - title: シャーシ交換後の処理
+      url: "/a1k/chassis-replace-complete-system-restore-rma.html"
   - title: コントローラ
     pdf-filename: AFF A1Kコントローラモジュール
     entries:

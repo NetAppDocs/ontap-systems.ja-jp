@@ -63,7 +63,7 @@ AFF A70またはAFF A90システムのシステム管理モジュールが故障
 +
 .. 正常なコントローラのコンソールから次のコマンドを入力します。
 +
-`storage failover modify -node local -auto-giveback false`
+`storage failover modify -node _impaired_node_name_ -auto-giveback false`
 
 .. 入力 `y`「自動ギブバックを無効にしますか?」というプロンプトが表示されたら、
 

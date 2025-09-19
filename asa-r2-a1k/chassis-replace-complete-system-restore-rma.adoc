@@ -1,0 +1,54 @@
+---
+permalink: asa-r2-a1k/chassis-replace-complete-system-restore-rma.html 
+sidebar: sidebar 
+keywords: asa a1k,  verify and set HA state, complete the replacement process 
+summary: コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、 ASA A1K シャーシ交換手順の最終ステップを完了します。 
+---
+= シャーシ交換を完了 - ASA A1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、 ASA A1K シャーシ交換手順の最終ステップを完了します。
+
+
+
+== 手順1：コントローラをブートしてコントローラをギブバックする
+
+コントローラがリブートしたら、ONTAPをブートしてコントローラをギブバックします。
+
+.手順
+. コンソールの出力を確認します。
++
+.. コントローラがブートしてLoaderプロンプトが表示されたら、コマンドを使用してコントローラをリブートし `boot_ontap`ます。
+.. リブート後にコンソールにと表示された場合 `waiting for giveback`は、パートナーコントローラにログインし、コマンドを使用して交換したコントローラのギブバックの準備が完了していることを確認します `storage failover show`。
+
+
+. ギブバックを実行します。
++
+.. パートナーコントローラにコンソールケーブルを接続します。
+.. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
+.. 自動ギブバックが無効になっている場合は、再度有効にします。 `storage failover modify -node _impaired_node_name_ -auto-giveback _true_`
+.. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+
+
+
+
+== 手順2：ストレージシステムの健全性を確認する
+
+コントローラがストレージをギブバックしたら、で全体の健全性を確認する必要があります https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]。
+
+.手順
+. ギブバックが完了したら、Active IQ Config Advisorを実行してストレージシステムの健全性を確認します。
+. 発生した問題を修正します。
+
+
+
+
+== 手順 3 ：障害が発生したパーツをネットアップに返却する
+
+障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

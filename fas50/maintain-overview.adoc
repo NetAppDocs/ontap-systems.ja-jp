@@ -68,6 +68,13 @@ link:dimm-replace.html["DIMM"]
 
 
  a| 
+link:drive-replace.html["ドライブ"]
+ a| 
+ドライブは、データに必要な物理ストレージを提供するデバイスです。
+
+
+
+ a| 
 link:fan-replace.html["ファン"]
  a| 
 ファンによってコントローラとドライブが冷却されます。

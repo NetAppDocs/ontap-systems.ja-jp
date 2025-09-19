@@ -10518,7 +10518,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="67caf5dc8dfdda70610a58906fa4b6d2" category="inline-link-macro">コントローラをシャットダウン</block>
   <block id="eab58b4fd7927bfc67a19b1176afc945" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="f09c415cff110572b095b0b47b53909d" category="inline-link-macro-rx"></block></block>
   <block id="1694aca8e34009761e2e7c350661707d" category="paragraph">ブートメディアの交換が必要になったときは、コントローラをシャットダウンします。</block>
-  <block id="c7bb0682619aac3924ad651203f10f14" category="summary">ハードウェア障害が必要な場合は、AFF A1Kシステムのコントローラを交換してください。交換プロセスでは、障害のあるコントローラを取り外し、交換用コントローラにコンポーネントを移動し、交換用コントローラを取り付けてリブートします。</block>
   <block id="12f231246c1957ecc017d5e14e8fa5ce" category="doc">コントローラの交換- AFF A1K</block>
   <block id="a7a4c58bcecc6da48011ed379f160841" category="paragraph">障害のあるAFF A1Kコントローラを交換したら、を行う必要があります<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block>。</block>
   <block id="65cfd4efc075696b5b4fa182bd8310b6" category="summary">ストレージリソースの制御を交換用コントローラに戻して、AFF A1Kシステムが通常の運用を再開できるようにします。</block>
@@ -10598,7 +10597,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="24ba379bd8e7bdde7e0e1b156431376b" category="summary">ASA A1Kストレージシステムのブートメディアの交換を開始します。まず、交換要件を確認し、コントローラをシャットダウンし、ブートメディアを交換し、ブートメディアにイメージをリストアし、システム機能を確認します。</block>
   <block id="4d60e015da1ccbddbd5825262ead312e" category="paragraph">ASA A1Kストレージシステムのブートメディアの交換を開始するには、交換要件の確認、コントローラのシャットダウン、ブートメディアの交換、ブートメディアへのイメージのリストア、システム機能の確認を行います。</block>
   <block id="8f31c4d6dd15a8b6badb61be6bbe870f" category="doc">コントローラの交換- ASA A1K</block>
-  <block id="f36c76518c1338c3f03a21b9d4c06d87" category="paragraph">ハードウェア障害が必要な場合は、ASA A1Kシステムのコントローラを交換してください。交換プロセスでは、障害のあるコントローラを取り外し、交換用コントローラにコンポーネントを移動し、交換用コントローラを取り付けてリブートします。</block>
   <block id="f501a4282c0407a5377e73a38c2fe79c" category="paragraph">障害のあるASA A1Kコントローラを交換したら、を行う必要があります<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block>。</block>
   <block id="0b7aa62fd5de84b2f6b9168c29cd9699" category="summary">ストレージリソースの制御を交換用コントローラに戻して、ASA A1Kシステムが通常の運用を再開できるようにします。</block>
   <block id="6a41dab46dde5ea92e32bfe9162ff999" category="doc">コントローラの交換要件- ASA A1K</block>
@@ -11467,8 +11465,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3d64f9d659d620b82ee84b480edfe77a" category="doc">手動ブートメディアリカバリのためにコントローラをシャットダウンする - AFF A1K</block>
   <block id="a4171598a9b6537fe8fa298ad497f7f6" category="inline-link-macro">ブートメディア - 自動回復</block>
   <block id="2b43a2491d5babfc034a1b39308b0d39" category="paragraph"><block ref="2b43a2491d5babfc034a1b39308b0d39" category="inline-link-macro-rx"></block></block>
-  <block id="867c47462b7dbbde23368654369cdfb2" category="inline-link-macro">ブートメディア - 手動リカバリ</block>
-  <block id="f4855f83eb4f1d3ed29ac13e5aba3470" category="paragraph"><block ref="f4855f83eb4f1d3ed29ac13e5aba3470" category="inline-link-macro-rx"></block></block>
   <block id="b214a7d2f434291d180eb08d9e110707" category="paragraph">ブート メディアには、システムが USB ドライブからイメージをブートし、パートナー ノードから構成を復元するために使用するONTAPイメージ ファイルのプライマリ セットとセカンダリ セットが保存されます。</block>
   <block id="002e098e4eaaa09d220774f545b9c2bf" category="summary">AFF A20、 AFF A30、またはAFF A50 ストレージ システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。</block>
   <block id="58463f7f9959c3a53fb6c0c0a714fa80" category="doc">故障したブートメディア部品をNetAppに返却してください - AFF A20、 AFF A30、 AFF A50</block>
@@ -12426,4 +12422,106 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b283de4e13a7d5b68dec3f041941e3bc" category="sidebar">FAS8300およびFAS8700リアルタイムクロックバッテリー</block>
   <block id="49083f96e824487850956b55d36a363f" category="sidebar">FAS9500ブートメディア自動化</block>
   <block id="92e1f12178f27a238b4b86215c5615af" category="sidebar">FAS9500ブートメディアマニュアル</block>
+  <block id="3bce4848ee8babd978a1eed14ffb0657" category="paragraph"><block ref="e5d0e758897049635b8f9c5e676046ce" prefix="" category="inline-code"></block></block>
+  <block id="08ff655980adcc7a622e1807b2ce15c0" category="list-text">自動ギブバックが無効になっている場合は、再度有効にします。<block ref="07d94d90bbf940cf95f9dbba0029631f" prefix=" " category="inline-code"></block></block>
+  <block id="23d2a44e582b0f47f51ad61543f2784a" category="paragraph">コントローラーを取り外す前に、2 つの電源ユニット (PSU) を取り外す必要があります。</block>
+  <block id="754bdcb9d2a9982ca84863ebead5a9e8" category="list-text">PSU を取り外します。</block>
+  <block id="4b944e2196447e52700b84ea963df7b5" category="list-text">PSU から電源コードを抜きます。</block>
+  <block id="6c06a5fb23d0b27d73f3c9f97f33c32c" category="list-text">PSU ハンドルを上に回転させて PSU を引き抜き、PSU ロック タブを押して PSU をシャーシから引き抜き、シャーシの背面から 2 つの PSU を取り外します。</block>
+  <block id="581513d5a12dbd1f3bfe6ef45b1ed5ff" category="image-alt">PSUの取り外しまたは交換</block>
+  <block id="ed4b810b55283df203ad480485a82a62" category="list-text">2 番目の PSU に対してもこれらの手順を繰り返します。</block>
+  <block id="1cfb4651ff023a85a810b0d0f8752d3b" category="list-text">ケーブル管理デバイスをシャーシから取り外し、脇に置きます。</block>
+  <block id="232518c3cb9c6af2fd4c7e458c6f8392" category="section-title">ステップ2: I/Oカード、NVRAM12、システム管理モジュールを取り外す</block>
+  <block id="422e2aa4ec97de509f54db9d23618f37" category="list-text">指をカム レバーの開口部に引っ掛けてモジュールをシャーシから引き出し、モジュールをシャーシから取り外します。</block>
+  <block id="bc697ed81f913243860bc2c3886255ae" category="list-text">I/O モジュールを脇に置き、他の I/O モジュールに対してこれらの手順を繰り返します。</block>
+  <block id="123360600d0becc5e58411f458b74156" category="list-text">NVRAM12モジュールを取り外します。</block>
+  <block id="05a0d79ed405af3160693b48cbaf0c70" category="cell">NVRAM12カムラッチ</block>
+  <block id="09cc9509bdf826c6ba58bbc69212af57" category="list-text">システム管理モジュールを削除します。</block>
+  <block id="d6c8246628a797c4b268d4c17cafc3ff" category="image-alt">システム管理の削除</block>
+  <block id="c988528d3c37d2f9b0d866605d6767c9" category="section-title">ステップ4: 損傷したシャーシを交換する</block>
+  <block id="643b45a9b6dd32c35870daa6dfbb048c" category="list-text">障害のあるシャーシをシステム キャビネットまたは機器ラックのラック レールからスライドさせて取り外し、脇に置きます。</block>
+  <block id="9c1c113447189ce75af5b185c93c6bbb" category="list-text">交換用シャーシをシステム キャビネットまたは機器ラックのラック レールにガイドして、交換用シャーシを機器ラックまたはシステム キャビネットに取り付けます。</block>
+  <block id="8c9255ceb852418064ecca7af8f50926" category="section-title">ステップ5: シャーシコンポーネントを取り付ける</block>
+  <block id="bb82c34a491e47b4833cd43d9a513a52" category="paragraph">交換用シャーシを設置した後、コントローラ モジュールを設置し、I/O モジュールとシステム管理モジュールのケーブルを再接続し、PSU を再度設置して差し込む必要があります。</block>
+  <block id="c5b4904134f0b5ed318e3e08c1c32beb" category="list-text">コントローラ モジュールの端をシャーシ前面の開口部に合わせ、コントローラをシャーシの奥までゆっくりと押し込みます。</block>
+  <block id="c1704a094a14ee73d5195ae8a7a3e6e8" category="list-text">ロックラッチをロック位置まで回転させます。</block>
+  <block id="38b59633be983fb905704036391e127c" category="list-text">シャーシの背面に I/O カードを取り付けます。</block>
+  <block id="53c5be162e0f6f1625d426c7fd50db77" category="list-text">I/O モジュールの端を、交換用シャーシの障害のあるシャーシと同じスロットに合わせ、モジュールをシャーシの奥までゆっくりと押し込みます。</block>
+  <block id="66a1431f6c9e0f235d21851ca45dbdb2" category="list-text">カムラッチを上方に回転させてロック位置にします。</block>
+  <block id="d834c622fceca6769c88ad53db3a2a22" category="list-text">他の I/O モジュールについてもこれらの手順を繰り返します。</block>
+  <block id="1ae245f9dddd7b829203e0086aaa9a2b" category="list-text">システム管理モジュールをシャーシの背面に取り付けます。</block>
+  <block id="0f82c9849f4faa128c397db07a54a6d3" category="list-text">システム管理モジュールの端をシャーシの開口部に合わせ、モジュールをシャーシの奥までゆっくりと押し込みます。</block>
+  <block id="ede66225ebedc3cf820e20627637056c" category="list-text">まだ行っていない場合は、ケーブル管理デバイスを再インストールし、ケーブルを I/O カードとシステム管理モジュールに再接続します。</block>
+  <block id="9120340c78efb5856c815d38239bd2f9" category="paragraph">ケーブルがケーブルラベルに従って接続されていることを確認してください。</block>
+  <block id="7d05725619265b0ad412764bd666826f" category="list-text">シャーシの背面にあるシャーシの背面に NVRAM12 モジュールを取り付けます。</block>
+  <block id="ae55effaa43d7b2d63f1dac58367549b" category="list-text">NVRAM12 モジュールの端をシャーシの開口部に合わせ、モジュールをシャーシの奥までゆっくりと押し込みます。</block>
+  <block id="f4101c3338d1ec932207cef05c24c529" category="list-text">PSU を取り付けます。</block>
+  <block id="32a8792c5b10dbf3bf64cb4a8447bbb8" category="list-text">両手を使って PSU の端を支え、シャーシの開口部に合わせます。</block>
+  <block id="6874d25be6b9d52091b73fa2bac59eea" category="list-text">ロック タブがカチッと音がするまで、PSU をシャーシにゆっくりと押し込みます。</block>
+  <block id="ab5ae5779d2a4772a591893618c45e4b" category="list-text">PSU 電源ケーブルを両方の PSU に再接続し、電源ケーブル リテーナーを使用して各電源ケーブルを PSU に固定します。</block>
+  <block id="7f3b2db379f7f8b9b33f928f1a3f33a8" category="paragraph"><block ref="73d25173d7c27d69b9fef91a1e6d8f78" prefix="" category="inline-code"></block></block>
+  <block id="ab9d481619a2ea583cb02397bab7bba7" category="section-title">ステップ3: ケーブルにラベルを付ける</block>
+  <block id="c2d122cdbef703afa5e9e90edb466820" category="paragraph">システム背面の I/O モジュールからケーブルを取り外す前に、ケーブルにラベルを付ける必要があります。</block>
+  <block id="acaef3896a2bbb98ae14983c2076d3b4" category="paragraph">シャーシは、ファン、コントローラー/CPU ユニット、NVRAM12、システム管理モジュール、I/O カードとブランキング モジュール、PSU などのすべてのシステム コンポーネントを収容する物理シャーシです。</block>
+  <block id="059aa23ccfbd2dceb25deca0d4248c15" category="list-text">シャーシの交換手順は、ベゼル、ファン、コントローラ モジュール、NVRAM12、システム管理モジュール、I/O カードとブランキング モジュール、および PSU を新しいシャーシに移動し、交換用シャーシがNetAppの新しいコンポーネントであることを前提として書かれています。</block>
+  <block id="c3b7f04deba9a99877c66d5f1520e4bc" category="summary">コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、 AFF A1Kシャーシ交換手順の最終ステップを完了します。</block>
+  <block id="bbdf42194bd34fedc2e7a3c5ab0f3cd8" category="doc">シャーシ交換を完了 - AFF A1K</block>
+  <block id="7b15497869394a629839f26501a0e20f" category="summary">ハードウェア障害が発生した場合は、 AFF A1Kシステムのシャーシを交換してください。交換プロセスでは、シャーシの前面からコントローラを取り外し、電源ユニット (PSU)、NVRAM12、I/O モジュールとブランク、およびシステム管理モジュールを取り外し、交換用シャーシを取り付け、シャーシ コンポーネントを再インストールします。</block>
+  <block id="5fb72873516b6fa89bc4cbc55f8f79a6" category="doc">シャーシの交換 - AFF A1K</block>
+  <block id="a4a8f7ed930a61fed25e5cb4b874522c" category="paragraph">ハードウェア障害が発生した場合は、 AFF A1Kシステムのシャーシを交換してください。交換プロセスには、コントローラ、I/O カード、NVRAM12 モジュール、システム管理モジュール、および電源ユニット (PSU) の取り外し、交換用シャーシのインストール、およびシャーシ コンポーネントの再取り付けが含まれます。</block>
+  <block id="cf55c741d07b351e4641605836e7f7da" category="paragraph">損傷したAFF A1Kシャーシを交換し、コンポーネントを再インストールした後、<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block> 。</block>
+  <block id="f46cc179d6201e4d20946e55e80904c7" category="summary">AFF A1Kシステム内の障害のあるシャーシを識別し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けて、障害のあるシャーシを交換する準備をします。</block>
+  <block id="550b5e652d0cd66624604284a9bf0e52" category="doc">シャーシ交換の準備 - AFF A1K</block>
+  <block id="a329d7bda6be9d9cd0acffdf8de0fd5b" category="paragraph">障害のあるシャーシを識別し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けて、 AFF A1Kシステム内の障害のあるシャーシを交換する準備をします。</block>
+  <block id="32e22e6977dd1aab50fc6944e5493bd8" category="paragraph">AFF A1Kシャーシのハードウェアを交換する準備ができたら、<block ref="56c6ba4ece2a517e11a0ae4af44a8f78" category="inline-link-macro-rx"></block> 。</block>
+  <block id="e8eafb11fc103049334709c8a99424a8" category="summary">AFF A1Kシステムのシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが適切に機能していることを確認すること、 ONTAPのローカル管理者の認証情報、適切な交換用シャーシ、および必要なツールがあることを確認することが含まれます。</block>
+  <block id="53c0093bd34bf6a527a5c8325c4a70b7" category="doc">シャーシ交換の要件 - AFF A1K</block>
+  <block id="5bc32c69bc3e2a93ca5d61477d2ca629" category="summary">シャーシを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、 AFF A1Kストレージ システムのコントローラをシャットダウンします。</block>
+  <block id="dead0cfc0c14a2689b03b6ce8f269ea1" category="doc">シャーシを交換するにはコントローラをシャットダウンします - AFF A1K</block>
+  <block id="327b8a05ec36b221608a43f0917dd8d7" category="summary">交換要件を確認し、コントローラをシャットダウンし、シャーシを交換し、システムの動作を確認して、 AFF A1Kストレージ システムのシャーシの交換を開始します。</block>
+  <block id="70e2b3fc8f982246ab5a2130f07ef1ec" category="doc">シャーシ交換ワークフロー - AFF A1K</block>
+  <block id="c77d647fced0d18ea8388a89c9fbbe8c" category="paragraph-title"><block ref="6b77e2260873b4d678c3f337dd767e02" category="inline-image-macro-rx" type="image"></block><block ref="148983c7fc1a624047153d53429d13a1" category="inline-link-macro-rx"></block></block>
+  <block id="a59a9a05f780a25a994c0a1796c4e14c" category="paragraph">シャーシのメンテナンスを実行できるように、コントローラをシャットダウンします。</block>
+  <block id="710a3e7fade7e7d65d3f95207d84a760" category="paragraph">コントローラを起動し、コントローラを返却し、故障したシャーシをNetAppに返却して、シャーシの交換を完了します。</block>
+  <block id="0a53613f0a8092b49f93c48b98e6639c" category="summary">ハードウェア障害のために必要な場合は、 AFF A1Kシステムのコントローラを交換します。交換プロセスでは、シャーシの前面からコントローラを取り外し、電源ユニット (PSU)、NVRAM12、I/O モジュールとブランク、およびシステム管理モジュールを取り外し、交換用シャーシを取り付け、シャーシ コンポーネントを再インストールします。</block>
+  <block id="1c003f60306195fc28f8caffd47dd340" category="paragraph">ハードウェア障害が発生した場合は、 AFF A1Kシステムのコントローラを交換してください。交換プロセスには、障害のあるコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーのインストール、および再起動が含まれます。</block>
+  <block id="28c4dddeb520e51d2f0abe60128d46e8" category="paragraph">シャーシには、ファン、コントローラー、電源装置、PSU、NVRAM12、システム管理モジュール、I/O カード、ブランキング モジュールが収容されています。</block>
+  <block id="7ff4349856f45df803f8bf1c62cd8a3e" category="summary">コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、 ASA A1K シャーシ交換手順の最終ステップを完了します。</block>
+  <block id="9c92b4551d0ebe4951d40344b2e526c8" category="doc">シャーシ交換を完了 - ASA A1K</block>
+  <block id="12e1a630fcbebc408d89ab84807bfcf2" category="summary">ハードウェア障害が発生した場合は、 ASA A1K システムのシャーシを交換してください。交換プロセスでは、コントローラをシャーシの前面から取り外し、電源ユニット (PSU)、NVRAM12、I/O モジュールとブランク、およびシステム管理モジュールを取り外し、交換用シャーシを取り付け、シャーシ コンポーネントを再インストールします。</block>
+  <block id="5aeefe07266bb1fc5e1139b04473dfe8" category="doc">シャーシの交換 - ASA A1K</block>
+  <block id="89c5427feacbde4f607d05cd07f48f94" category="paragraph">ハードウェア障害が発生した場合は、 ASA A1K システムのシャーシを交換してください。交換プロセスには、コントローラ、I/O カード、NVRAM12 モジュール、システム管理モジュール、および電源ユニット (PSU) の取り外し、交換用シャーシのインストール、およびシャーシ コンポーネントの再取り付けが含まれます。</block>
+  <block id="e1a44d52ef9851aabc78844c3bc47c92" category="paragraph">損傷したASA A1Kシャーシを交換し、コンポーネントを再インストールした後、<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block> 。</block>
+  <block id="fd98fab18d28b555609a40ff2da246cc" category="summary">障害のあるシャーシを識別し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けて、 ASA A1K システム内の障害のあるシャーシを交換する準備をします。</block>
+  <block id="3da1146d548beaacf7f23d0a781ba402" category="doc">シャーシ交換の準備 - ASA A1K</block>
+  <block id="e8a527b81bcbe490b98bc368dac43e45" category="paragraph">障害のあるシャーシを識別し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けて、 ASA A1K システム内の障害のあるシャーシを交換する準備をします。</block>
+  <block id="73b8932c0e9d952de3428d339d3c9176" category="paragraph">ASA A1Kシャーシのハードウェアを交換する準備ができたら、<block ref="56c6ba4ece2a517e11a0ae4af44a8f78" category="inline-link-macro-rx"></block> 。</block>
+  <block id="5581f7e866a160d28eefb508e480ba53" category="summary">ASA A1K システムのシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが適切に機能していることを確認すること、 ONTAPのローカル管理者の認証情報、適切な交換用シャーシ、および必要なツールがあることを確認することが含まれます。</block>
+  <block id="850837518a06d2feaf03b103e01b619b" category="doc">シャーシ交換の要件 - ASA A1K</block>
+  <block id="c3493d287110e2fecc8fe4a00755810a" category="summary">シャーシを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、 ASA A1K ストレージ システムのコントローラをシャットダウンします。</block>
+  <block id="abf7924958c351fce7ade0ced8f159bb" category="doc">シャーシを交換するにはコントローラをシャットダウンします - ASA A1K</block>
+  <block id="48b2982a8a3ef500c4100e6df4f7a36f" category="summary">交換要件を確認し、コントローラをシャットダウンし、シャーシを交換し、システムの動作を確認して、 ASA A1K ストレージ システムのシャーシの交換を開始します。</block>
+  <block id="086e2962bab7f4d95eabde09a20941a6" category="doc">シャーシ交換ワークフロー - ASA A1K</block>
+  <block id="00cfcf708436d304f31cc1839fa2b7ca" category="paragraph">ハードウェア障害により必要になった場合は、 ASA A1K システムのコントローラを交換してください。交換プロセスには、障害のあるコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーのインストール、および再起動が含まれます。</block>
+  <block id="39317983344793ba26ea170a2d890ebb" category="summary">コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、FAS70 および FAS90 シャーシ交換手順の最終ステップを完了します。</block>
+  <block id="a584be06d42c86eb582b119daa14da5d" category="doc">シャーシ交換を完了 - FAS70およびFAS90</block>
+  <block id="c2dc989e45ed55b7aae85308ef4125c6" category="summary">ハードウェア障害が発生した場合は、FAS70 または FAS90 システムのシャーシを交換してください。交換プロセスでは、コントローラをシャーシの前面から取り外し、電源ユニット (PSU)、NVRAM12、I/O モジュールとブランク、およびシステム管理モジュールを取り外し、交換用シャーシを取り付け、シャーシ コンポーネントを再インストールします。</block>
+  <block id="dce30f474dda0b72a0d206b0e7ddb077" category="doc">シャーシの交換 - FAS70およびFAS90</block>
+  <block id="0d823891069047b4e507bdd24e6d65c4" category="paragraph">ハードウェア障害が発生した場合は、FAS70 または FAS90 システムのシャーシを交換してください。交換プロセスには、コントローラ、I/O カード、NVRAM12 モジュール、システム管理モジュール、および電源ユニット (PSU) の取り外し、交換用シャーシのインストール、およびシャーシ コンポーネントの再取り付けが含まれます。</block>
+  <block id="9a938e00f17fc76cb7355904a9c9f5f4" category="paragraph">損傷したFAS70およびFAS90シャーシを交換し、コンポーネントを再インストールした後、<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block> 。</block>
+  <block id="5a030365819f761722986adc43daa6f2" category="summary">障害のあるシャーシを識別し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けて、FAS70 および FAS90 システムの障害のあるシャーシを交換する準備をします。</block>
+  <block id="fa392e0dd040cfa23f9b009f3e2c5aa4" category="doc">シャーシ交換の準備 - FAS70およびFAS90</block>
+  <block id="8e7fe670b4f6140501330d90f05eac87" category="paragraph">障害のあるシャーシを識別し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けて、FAS70 または FAS90 システムの障害のあるシャーシを交換する準備をします。</block>
+  <block id="d2502d2bcf545026b78bb173fb5fa6e7" category="paragraph">FAS70またはFAS90シャーシハードウェアを交換する準備ができたら、<block ref="56c6ba4ece2a517e11a0ae4af44a8f78" category="inline-link-macro-rx"></block> 。</block>
+  <block id="56e56c2b65322d342febf7b273c54b50" category="summary">FAS70 または FAS90 システムのシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが適切に機能していることを確認すること、 ONTAPのローカル管理者の認証情報、適切な交換用シャーシ、および必要なツールがあることを確認することが含まれます。</block>
+  <block id="79b671b6294c72beeb496f663231935a" category="doc">シャーシ交換の要件 - FAS70およびFAS90</block>
+  <block id="555ee8aff84c91eb64d9de30e5275b3f" category="summary">シャーシを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、FAS70 または FAS90 ストレージ システムのコントローラーをシャットダウンします。</block>
+  <block id="d7dc6cc66a3cc2307ae77db0423dbc46" category="doc">シャーシを交換するにはコントローラをシャットダウンします - FAS70 および FAS90</block>
+  <block id="bbc718ac69fd8c0c219feac9d361896a" category="summary">交換要件を確認し、コントローラをシャットダウンし、シャーシを交換し、システムの動作を確認して、FAS70 または FAS90 ストレージ システムのシャーシの交換を開始します。</block>
+  <block id="3280801af2b8e921539cc0997419f436" category="doc">シャーシ交換ワークフロー - FAS70 および FAS90</block>
+  <block id="093f932f5f4bdb15c42d178147860933" category="summary">ドライブに障害が発生した場合、またはアップグレードが必要な場合は、FAS50 ストレージ システム内のドライブを交換します。交換プロセスには、障害のあるドライブの識別、そのドライブの安全な取り外し、そして継続的なデータ アクセスとシステム パフォーマンスを確保するための新しいドライブのインストールが含まれます。</block>
+  <block id="fa11c1555fbac9e3100e8a3bd62d4cde" category="doc">ドライブの交換 - FAS50</block>
+  <block id="8e031770a4d9a08d2f7e16ac12a9cd0a" category="sidebar">AFF A1Kシャーシ</block>
+  <block id="d9d281ab673771b297258ea764116200" category="sidebar">ASA A1Kシャーシ</block>
+  <block id="e428b65248e01ed552b943e7bea6d786" category="sidebar">FAS70およびFAS90シャーシ</block>
 </blocks>

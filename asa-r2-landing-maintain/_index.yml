@@ -9,6 +9,8 @@ indexpage:
     links:
     - title: ブートメディア
       url: "../asa-r2-a1k/bootmedia-replace-workflow-bmr.html"
+    - title: シャーシ
+      url: "../asa-r2-a1k/chassis-replace-workflow.html"
     - title: コントローラ
       url: "../asa-r2-a1k/controller-replace-workflow.html"
     - title: DIMM

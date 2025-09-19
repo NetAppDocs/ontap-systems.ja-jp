@@ -56,6 +56,21 @@ entries:
       url: "/fas-70-90/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します
       url: "/fas-70-90/bootmedia-complete-rma.html"
+  - title: シャーシ
+    pdf-filename: FAS70およびFAS90シャーシ
+    entries:
+    - title: シャーシの交換ワークフロー
+      url: "/fas-70-90/chassis-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/fas-70-90/chassis-replace-requirements.html"
+    - title: 交換の準備
+      url: "/fas-70-90/chassis-replace-prepare.html"
+    - title: コントローラのシャットダウン
+      url: "/fas-70-90/chassis-replace-shutdown.html"
+    - title: シャーシの交換
+      url: "/fas-70-90/chassis-replace-move-hardware.html"
+    - title: シャーシ交換後の処理
+      url: "/fas-70-90/chassis-replace-complete-system-restore-rma.html"
   - title: コントローラ
     pdf-filename: FAS70およびFAS90コントローラモジュール
     entries:
