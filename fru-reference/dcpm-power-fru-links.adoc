@@ -1,0 +1,18 @@
+---
+sidebar: sidebar 
+permalink: fru-reference/dcpm-power-fru-links.html 
+keywords: DCPM power module, field replaceable units, FRU, DCPM power replacement 
+summary: このページには、システム別の DCPM 電源モジュール交換手順へのリンクがあります。 
+---
+= DCPM電源モジュールFRUリンク
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このページには、プラットフォーム モデル別に整理された DCPM 電源モジュールの交換手順へのリンクがあります。
+
+* link:../a700/dcpm-power-replace.html["AFF A700"^]
+* link:../fas9000/dcpm-power-replace.html["FAS9000"^]
+

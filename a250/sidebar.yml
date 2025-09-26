@@ -75,3 +75,5 @@ entries:
     url: "/a250/power-supply-replace.html"
   - title: リアルタイムクロックバッテリ
     url: "/a250/rtc-battery-replace.html"
+- title: 主な仕様
+  url: "/a250/overview.html"

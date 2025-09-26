@@ -99,3 +99,5 @@ entries:
   - title: リアルタイムクロックバッテリ
     pdf-filename: ASA C400リアルタイムクロックバッテリ
     url: "/asa-c400/rtc-battery-replace.html"
+- title: 主な仕様
+  url: "/asa-c400/overview.html"

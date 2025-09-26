@@ -99,3 +99,5 @@ entries:
   - title: リアルタイムクロックバッテリ
     pdf-filename: ASA A400リアルタイムクロックバッテリ
     url: "/asa400/rtc-battery-replace.html"
+- title: 主な仕様
+  url: "/asa400/overview.html"

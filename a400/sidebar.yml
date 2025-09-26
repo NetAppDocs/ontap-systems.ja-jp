@@ -99,3 +99,5 @@ entries:
   - title: リアルタイムクロックバッテリ
     pdf-filename: AFF A400 リアルタイムクロックバッテリ
     url: "/a400/rtc-battery-replace.html"
+- title: 主な仕様
+  url: "/a400/overview.html"

@@ -1,0 +1,159 @@
+---
+permalink: asa400/overview.html 
+sidebar: sidebar 
+keywords: ASA A400 specifications, ASA A400 specs, NetApp ASA A400, ASA A400 hardware 
+summary: ASA A400ストレージシステムの主な仕様 
+---
+= ASA A400の主な仕様
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+以下はASA A400の厳選された仕様です。訪問 https://hwu.netapp.com["NetApp Hardware Universe の略"^]ASA A400仕様の完全なリストについては、(HWU) を参照してください。このページは、単一の高可用性ペアを反映しています。
+
+
+
+=== ASA A400の主な仕様
+
+プラットフォーム構成: ASA A400シングルシャーシ HA ペア、イーサネット バンドル
+
+最大生容量: 14.6880 PB
+
+メモリ: 256.0000 GB
+
+フォームファクター: HAコントローラ2台搭載の4Uシャーシ
+
+ONTAPバージョン: b_startONTAP: 9.16.1P2b_end
+
+PCIe拡張スロット: 10
+
+最小ONTAPバージョン: ONTAP 9.13.1
+
+
+
+=== スケールアウトの最大値
+
+|===
+
+
+| タイプ | HA ペア | 物理容量 | 最大メモリ 
+
+
+| NAS |  |  |  
+
+
+| SAN | 6 | 88.1 PB / 78.3 PiB | 1536 GB 
+
+
+| HAペア |  | 14.7 PB / 13.0 PiB | 256.0000 
+|===
+
+
+=== IO
+
+
+
+==== オンボードIO
+
+|===
+
+
+| プロトコル | ポート 
+
+
+| イーサネット 100 Gbps | 4 
+
+
+| イーサネット 25 Gbps | 12 
+
+
+| SAS 12Gbps | 8 
+|===
+
+
+==== 合計 IO
+
+|===
+
+
+| プロトコル | ポート 
+
+
+| イーサネット 100 Gbps | 20 
+
+
+| イーサネット 25 Gbps | 24 
+
+
+| イーサネット 10 Gbps | 32 
+
+
+| FC 32 Gbps | 24 
+
+
+| NVMe/FC 32Gbps | 24 
+
+
+|  | 0 
+
+
+| SAS 12Gbps | 32 
+|===
+
+
+==== 管理ポート
+
+|===
+
+
+| プロトコル | ポート 
+
+
+| イーサネット 1 Gbps | 2. 
+
+
+| RS-232 115 Kbps | 4 
+
+
+| USB 12 Mbps | 4 
+|===
+
+
+=== ストレージネットワークのサポート
+
+FC; iSCSI; NVMe/FC ; NVMe/TCP;
+
+
+
+=== システム環境仕様
+
+* 標準電力: 4209 BTU/時
+* 最悪の場合の電力: 5212 BTU/時
+* 重量: 110.0 lbbr/49.9 kg
+* 高さ: 4U
+* 幅: 19インチ IEC ラック準拠 (17.6インチ 44.7 cm)
+* 奥行き: 32.6インチ (ケーブル管理ブラケット付き 34.7インチ)
+* 動作温度/高度/湿度: 10°C ～ 35°C (50°F ～ 95°F) (標高 3048m、10000 フィート)、相対湿度 8% ～ 80% (結露なし)
+* 非動作時温度/湿度: -40°C ～ 70°C (-40°F ～ 158°F)、高度 12,192m (40,000 フィート) まで<br/>相対湿度 10% ～ 95%、結露なし、元の容器内
+* 音響ノイズ：表示音響出力（LwAd）：8.5；br／音圧（LpAm）（傍観者位置）：67.2 dB
+
+
+
+
+=== コンプライアンス
+
+* 認証 EMC/EMI: AMCA、FCC、ICES、KC、モロッコ、VCCI
+* 安全性認証: BIS、CB、CSA、G_K_U-SoR、IRAM、NOM、NRCS、SONCAP、TBS
+* 認証 安全性/EMC/EMI: EAC、UKRSEPRO
+* 認証 安全性/EMC/EMI/RoHS: BSMI、CE DoC、UKCA DoC
+* 規格 EMC/EMI: BS-EN-55024、BS-EN55035、CISPR 32、EN55022、EN55024、EN55032、EN55035、EN61000-3-2、EN61000-3-3、FCC Part 15 Class A、ICES-003、KS C 9832、KS C 9835
+* 安全規格：ANSI/UL60950-1、ANSI/UL62368-1、BS-EN62368-1、CAN/CSA C22.2 No. 60950-1、CAN/CSA C22.2 No. 62368-1、CNS 14336、EN60825-1、EN62368-1、IEC 62368-1、IEC60950-1、IS 13252（パート1）
+
+
+
+
+=== 高可用性
+
+イーサネット ベースのベースボード管理コントローラ (BMC) およびONTAP管理インターフェイス、冗長ホットスワップ対応コントローラ、冗長ホットスワップ対応電源、SAS 接続経由の SAS インバンド管理。

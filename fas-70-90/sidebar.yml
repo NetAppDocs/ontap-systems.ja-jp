@@ -112,3 +112,9 @@ entries:
     url: "/fas-70-90/rtc-battery-replace.html"
   - title: システム管理モジュール
     url: "/fas-70-90/system-management-replace.html"
+- title: 主な仕様
+  entries:
+  - title: FAS70
+    url: fas70-key-specifications.html
+  - title: FAS90
+    url: fas90-key-specifications.html

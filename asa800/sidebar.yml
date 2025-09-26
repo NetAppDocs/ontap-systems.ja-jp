@@ -94,3 +94,5 @@ entries:
     url: "/asa800/power-supply-replace.html"
   - title: リアルタイムクロックバッテリ
     url: "/asa800/rtc-battery-replace.html"
+- title: 主な仕様
+  url: "/asa800/overview.html"

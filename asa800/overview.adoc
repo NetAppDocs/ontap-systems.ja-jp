@@ -1,0 +1,95 @@
+---
+permalink: asa800/overview.html 
+sidebar: sidebar 
+summary: ASA800プラットフォームグループの主な仕様 
+---
+= ASA A800の主な仕様
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+以下は、単一の高可用性ペア内のASA A800ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。
+
+
+
+== ASA A800の主な仕様
+
+* プラットフォーム構成: ASA A800シングルシャーシ HA ペア
+* 最大生容量: 6.6096 PB
+* メモリ: 1280.0000 GB
+* フォームファクター: 2 つの HA コントローラと 48 個のドライブ スロットを備えた 4U シャーシ
+* ONTAPバージョン: ONTAP: 9.16.1P2
+* PCIe拡張スロット: 10
+* 最小ONTAPバージョン: ONTAP 9.13.1 == スケールアウトの最大値
+* タイプ: NAS
+* タイプ: SAN; HA ペア: 6; 物理容量: 39.7 PB / 35.2 PiB; 最大メモリ: 7680 GB
+* タイプ: HA ペア; 物理容量: 6.6 PB / 5.9 PiB; 最大メモリ: 1280.0000
+
+
+
+
+== 入出力
+
+
+
+=== オンボードI/O
+
+* プロトコル: イーサネット 100 Gbps; ポート: 4
+
+
+
+
+=== 合計I/O
+
+* プロトコル: イーサネット 100 Gbps; ポート: 20
+* プロトコル: イーサネット 25 Gbps; ポート: 16
+* プロトコル: イーサネット 10 Gbps; ポート: 32
+* プロトコル: FC 32 Gbps; ポート: 32
+* プロトコル: NVMe/FC 32 Gbps; ポート: 32
+* ポート: 0
+* ポート: 0
+* プロトコル: SAS 12 Gbps; ポート: 32
+
+
+
+
+=== 管理ポート
+
+* プロトコル: イーサネット 1 Gbps; ポート: 4
+* プロトコル: RS-232 115 Kbps; ポート: 4
+* プロトコル: USB 12 Mbps; ポート: 4
+
+
+
+
+== ストレージネットワークをサポート
+
+* FC
+* iSCSI
+* NVMe/FC
+* NVMe/TCP == システム環境仕様 環境データはありません。
+
+
+
+
+== コンプライアンス
+
+* 認証 EMC/EMI: AMCA、FCC、ICES、KC、モロッコ、VCCI
+* 安全性認証: BIS、CB、CSA、G_K_U-SoR、IRAM、NOM、NRCS、SONCAP、TBS
+* 認証 安全性/EMC/EMI: EAC、UKRSEPRO
+* 認証 安全性/EMC/EMI/RoHS: BSMI、CE DoC、UKCA DoC
+* 規格 EMC/EMI: BS-EN-55024、BS-EN55035、CISPR 32、EN55022、EN55024、EN55032、EN55035、EN61000-3-2、EN61000-3-3、FCC Part 15 Class A、ICES-003、KS C 9832、KS C 9835
+* 安全規格：ANSI/UL60950-1、ANSI/UL62368-1、BS-EN62368-1、CAN/CSA C22.2 No. 60950-1、CAN/CSA C22.2 No. 62368-1、CNS 14336、EN60825-1、EN62368-1、IEC 62368-1、IEC60950-1、IS 13252（パート1）
+
+
+
+
+== 高可用性
+
+* イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース
+* 冗長ホットスワップ可能なコントローラ
+* 冗長ホットスワップ可能な電源
+* 外部シェルフの SAS 接続を介した SAS インバンド管理
+

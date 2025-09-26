@@ -111,3 +111,5 @@ entries:
     url: "/c80/rtc-battery-replace.html"
   - title: システム管理モジュール
     url: "/c80/system-management-replace.html"
+- title: 主な仕様
+  url: c80-key-specifications.html

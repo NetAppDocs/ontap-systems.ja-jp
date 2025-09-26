@@ -15,6 +15,24 @@ ONTAPハードウェアシステムの新機能について説明します。追
 
 
 
+== 2025年9月
+
+
+
+=== プラットフォーム仕様
+
+ONTAPハードウェアシステムのドキュメントには、以下の仕様も含まれるようになりました。link:https://hwu.netapp.com["Hardware Universe"] 。例えば、link:https://docs.netapp.com/us-en/ontap-systems_hotfix-main/a1k/overview.html["AFF A1Kの主な仕様"] 。
+
+
+
+=== プラットフォームFRU手順リファレンス
+
+ONTAPハードウェア システムのドキュメントに、FRU タイプ別に整理された FRU 手順へのリンクが含まれるようになりました。
+
+link:fru-reference/fru-overview.html["プラットフォームFRUリファレンス"]
+
+
+
 == 2025年5月
 
 

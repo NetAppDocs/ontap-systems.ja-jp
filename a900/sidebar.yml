@@ -99,3 +99,5 @@ entries:
     url: "/a900/power_supply_swap_out.html"
   - title: リアルタイムクロックバッテリ
     url: "/a900/rtc_battery_replace.html"
+- title: 主な仕様
+  url: "/a900/overview.html"

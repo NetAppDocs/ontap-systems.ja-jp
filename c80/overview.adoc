@@ -1,0 +1,107 @@
+---
+permalink: c80/overview.html 
+sidebar: sidebar 
+summary: C80プラットフォームグループの主な仕様 
+---
+= AFF C80の主な仕様
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+以下は、単一の高可用性ペアにおけるAFF C80 ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。
+
+
+
+== AFF C80の主な仕様
+
+* プラットフォーム構成: AFF C80 シングルシャーシ HA ペア
+* 最大生容量: 14.7360 PB
+* メモリ: 512.0000 GB
+* フォームファクター: 2 つの HA コントローラと 48 個のドライブ スロットを備えた 4U シャーシ
+* ONTAPバージョン: ONTAP: 9.16.1P2
+* PCIe拡張スロット: 18
+* 最小ONTAPバージョン: ONTAP 9.16.1RC1 == スケールアウトの最大値
+* タイプ: NAS; HA ペア: 12; 物理容量: 176.8 PB / 157.0 PiB; 最大メモリ: 6144 GB
+* タイプ: SAN; HA ペア: 6; 物理容量: 88.4 PB / 78.5 PiB; 最大メモリ: 3072 GB
+* タイプ: HA ペア; 物理容量: 14.7 PB / 13.1 PiB; 最大メモリ: 512.0000
+
+
+
+
+== 入出力
+
+
+
+=== オンボードI/O
+
+オンボード I/O データがありません。
+
+
+
+=== 合計I/O
+
+* プロトコル: イーサネット 200 Gbps; ポート: 24
+* プロトコル: イーサネット 100 Gbps; ポート: 36
+* プロトコル: イーサネット 25 Gbps; ポート: 56
+* プロトコル: イーサネット 10 Gbps; ポート: 56
+* プロトコル: FC 64 Gbps; ポート: 56
+* プロトコル: NVMe/FC 64 Gbps; ポート: 56
+* ポート: 0
+
+
+
+
+=== 管理ポート
+
+* プロトコル: イーサネット 1 Gbps; ポート: 2
+* プロトコル: RS-232 115 Kbps; ポート: 4
+* プロトコル: USB 600 Mbps; ポート: 2
+
+
+
+
+== ストレージネットワークをサポート
+
+* CIFS
+* FC
+* iSCSI
+* NFS v3
+* NFS v4.0
+* NFS v4.1
+* NFS v4.2
+* NFSv3/RDMA
+* NFSv4/RDMA
+* NVMe/FC
+* NVMe/TCP
+* S3
+* S3とNAS
+* SMB 2.0
+* SMB 2.1
+* SMB 2.x
+* SMB 3.0
+* SMB 3.1
+* SMB 3.1.1 == システム環境仕様 環境データはありません。
+
+
+
+
+== コンプライアンス
+
+* 認証 EMC/EMI: AMCA、FCC、ICES、KC、モロッコ、VCCI
+* 安全性認証: BIS、CB、CSA、G_K_U-SoR、IRAM、NOM、NRCS、SONCAP、TBS
+* 認証 安全性/EMC/EMI: EAC、UKRSEPRO
+* 認証 安全性/EMC/EMI/RoHS: BSMI、CE DoC、UKCA DoC
+* 規格 EMC/EMI: BS-EN-55032、BS-EN55035、CISPR 32、EN55022、EN55024、EN55032、EN55035、EN61000-3-2、EN61000-3-3、FCC Part 15 Class A、ICES-003、KS C 9832、KS C 9835
+* 安全規格：ANSI/UL60950-1、ANSI/UL62368-1、BS-EN62368-1、CAN/CSA C22.2 No. 60950-1、CAN/CSA C22.2 No. 62368-1、CNS 15598-1、EN60825-1、EN62368-1、IEC 62368-1、IEC60950-1、IS 13252（パート1）
+
+
+
+
+== 高可用性
+
+* イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース
+* 冗長ホットスワップ可能なコントローラ
+* 冗長ホットスワップ可能な電源
+

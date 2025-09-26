@@ -97,3 +97,5 @@ entries:
     url: "/asa900/power_supply_swap_out.html"
   - title: リアルタイムクロックバッテリ
     url: "/asa900/rtc_battery_replace.html"
+- title: 主な仕様
+  url: "/asa900/overview.html"

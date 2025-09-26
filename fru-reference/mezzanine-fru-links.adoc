@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: fru-reference/mezzanine-fru-links.html 
+keywords: mezzanine, field replaceable units, FRU, mezzanine replacement 
+summary: このページでは、システム別にメザニン交換手順へのリンクを提供します。 
+---
+= メザニンFRUリンク
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このページには、プラットフォーム モデル別に整理されたメザニン交換手順へのリンクがあります。
+
+[role="tabbed-block"]
+====
+.AFF システム
+--
+* link:../a250/mezzanine-replace.html["AFF A250"^]
+* link:../c250/mezzanine-replace.html["AFF C250"^]
+
+
+--
+.ASAシステム
+--
+* link:../asa250/mezzanine-replace.html["ASA A250"^]
+* link:../asa-c250/mezzanine-replace.html["ASA C250"^]
+
+
+--
+.FAS システム
+--
+* link:../fas500f/mezzanine-replace.html["FAS500f"^]
+
+
+--
+====

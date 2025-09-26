@@ -109,3 +109,11 @@ entries:
     url: "/a20-30-50/power-supply-replace.html"
   - title: リアルタイムクロックバッテリ
     url: "/a20-30-50/rtc-battery-replace.html"
+- title: 主な仕様
+  entries:
+  - title: AFF A20用
+    url: a20-key-specifications.html
+  - title: AFF A30用
+    url: a30-key-specifications.html
+  - title: AFF A50用
+    url: a50-key-specifications.html

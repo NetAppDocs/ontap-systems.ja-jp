@@ -73,6 +73,7 @@ sidebar:
       - section: asa-r2-a70-90-maintain
       - section: asa-r2-a20-30-50-maintain
       - section: asa-r2-c30-maintain
+    - section: asa-r2-key-specifications
   - title: FAS システム
     url: "/fas/index.html"
     entries:
@@ -153,6 +154,46 @@ sidebar:
           url: "/platform-supplemental/42u-1280mm-reverse-hinge-and-lock.html"
         - title: ドアと照光バッジを再度取り付けます
           url: "/platform-supplemental/42u-1280mm-reinstall-door-and-badge.html"
+  - title: プラットフォームFRUリファレンス
+    entries:
+    - title: 概要
+      url: "/fru-reference/fru-overview.html"
+    - title: ブートメディア
+      url: "/fru-reference/bootmedia-fru-links.html"
+    - title: キャッシングモジュール
+      url: "/fru-reference/caching-module-fru-links.html"
+    - title: シャーシ
+      url: "/fru-reference/chassis-fru-links.html"
+    - title: コントローラ
+      url: "/fru-reference/controller-fru-links.html"
+    - title: DCPM電源モジュール
+      url: "/fru-reference/dcpm-power-fru-links.html"
+    - title: DIMM
+      url: "/fru-reference/dimm-fru-links.html"
+    - title: ドライブ
+      url: "/fru-reference/drive-fru-links.html"
+    - title: ファン
+      url: "/fru-reference/fan-fru-links.html"
+    - title: I/O モジュール
+      url: "/fru-reference/io-module-fru-links.html"
+    - title: LEDモジュール
+      url: "/fru-reference/led-module-fru-links.html"
+    - title: 中二階
+      url: "/fru-reference/mezzanine-fru-links.html"
+    - title: NVDIMM
+      url: "/fru-reference/nvdimm-fru-links.html"
+    - title: NVMEM/ NVRAMバッテリー
+      url: "/fru-reference/nvmem-battery-fru-links.html"
+    - title: NVRAMモシユウル
+      url: "/fru-reference/nvram-module-fru-links.html"
+    - title: PCIカードとライザー
+      url: "/fru-reference/pci-cards-fru-links.html"
+    - title: 電源装置
+      url: "/fru-reference/power-supply-fru-links.html"
+    - title: RTC バッテリ
+      url: "/fru-reference/rtc-battery-fru-links.html"
+    - title: システム管理モジュール
+      url: "/fru-reference/system-management-fru-links.html"
   - title: 法的通知
     url: "/legal-notices.html"
 product-family:

@@ -113,3 +113,9 @@ entries:
     url: "/a70-90/rtc-battery-replace.html"
   - title: システム管理モジュール
     url: "/a70-90/system-management-replace.html"
+- title: 主な仕様
+  entries:
+  - title: AFF A70用
+    url: a70-key-specifications.html
+  - title: AFF A90用
+    url: a90-key-specifications.html

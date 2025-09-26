@@ -75,3 +75,5 @@ entries:
     url: "/asa-c250/power-supply-replace.html"
   - title: リアルタイムクロックバッテリ
     url: "/asa-c250/rtc-battery-replace.html"
+- title: 主な仕様
+  url: "/asa-c250/overview.html"
