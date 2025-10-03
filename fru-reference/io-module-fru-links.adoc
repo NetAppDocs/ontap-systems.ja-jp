@@ -1,43 +1,43 @@
 ---
 sidebar: sidebar 
 permalink: fru-reference/io-module-fru-links.html 
-keywords: IO module, field replaceable units, FRU, IO module replacement 
-summary: このページでは、システム別の IO モジュール交換手順へのリンクを提供します。 
+keywords: I/O module, field replaceable units, FRU, I/O module replacement 
+summary: プラットフォーム ファミリ別に整理された、 NetAppストレージ システムの I/O モジュール交換手順を確認します。このリファレンスには、 AFF、 ASA、およびFASシステムの I/O モジュール交換ワークフローのステップバイステップの直接リンクが用意されており、特定のモデルに適した手順をすぐに見つけることができます。 
 ---
-= IOモジュールFRUリンク
+= プラットフォームファミリ別のI/Oモジュール交換手順
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このページでは、プラットフォーム モデル別に整理された IO モジュール交換手順へのリンクを提供します。
+プラットフォーム ファミリ別に整理された、 NetAppストレージ システムの I/O モジュール交換手順を確認します。このリファレンスには、 AFF、 ASA、およびFASシステムの I/O モジュール交換ワークフローのステップバイステップの直接リンクが用意されており、特定のモデルに適した手順をすぐに見つけることができます。
 
 [role="tabbed-block"]
 ====
 .AFF システム
 --
-* link:../a1k/io-module-replace.html["AFF A1K用"^]
-* link:../a20-30-50/io-module-replace.html["AFF A20/30/50"^]
-* link:../a70-90/io-module-replace.html["AFF A70/90"^]
-* link:../c30-60/io-module-replace.html["AFF C30/60"^]
-* link:../c80/io-module-replace.html["AFF C80用"^]
+* link:../a1k/io-module-replace.html["AFF A1K用"]
+* link:../a20-30-50/io-module-replace.html["AFF A20/30/50"]
+* link:../a70-90/io-module-replace.html["AFF A70/90"]
+* link:../c30-60/io-module-replace.html["AFF C30/60"]
+* link:../c80/io-module-replace.html["AFF C80用"]
 
 
 --
 .ASAシステム
 --
-* link:../asa-r2-a1k/io-module-replace.html["ASA A1K"^]
-* link:../asa-r2-a20-30-50/io-module-replace.html["ASA A20/30/50"^]
-* link:../asa-r2-70-90/io-module-replace.html["ASA 70/90"^]
-* link:../asa-r2-c30/io-module-replace.html["ASA C30"^]
+* link:../asa-r2-a1k/io-module-replace.html["ASA A1K"]
+* link:../asa-r2-a20-30-50/io-module-replace.html["ASA A20/30/50"]
+* link:../asa-r2-70-90/io-module-replace.html["ASA 70/90"]
+* link:../asa-r2-c30/io-module-replace.html["ASA C30"]
 
 
 --
 .FAS システム
 --
-* link:../fas50/io-module-replace.html["FAS50"^]
-* link:../fas-70-90/io-module-replace.html["FAS70/90"^]
+* link:../fas50/io-module-replace.html["FAS50"]
+* link:../fas-70-90/io-module-replace.html["FAS70/90"]
 
 
 --

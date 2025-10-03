@@ -2,17 +2,17 @@
 sidebar: sidebar 
 permalink: fru-reference/dcpm-power-fru-links.html 
 keywords: DCPM power module, field replaceable units, FRU, DCPM power replacement 
-summary: このページには、システム別の DCPM 電源モジュール交換手順へのリンクがあります。 
+summary: プラットフォーム ファミリ別に整理された、 NetAppストレージ システムの DCPM 電源モジュールの交換手順を確認します。このリファレンスには、 AFF、 ASA、およびFASシステムの DCPM 電源モジュール交換ワークフローのステップバイステップの直接リンクが用意されており、特定のモデルに適した手順をすぐに見つけることができます。 
 ---
-= DCPM電源モジュールFRUリンク
+= プラットフォームファミリ別のDCPM電源モジュール交換手順
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このページには、プラットフォーム モデル別に整理された DCPM 電源モジュールの交換手順へのリンクがあります。
+プラットフォーム ファミリ別に整理された、 NetAppストレージ システムの DCPM 電源モジュールの交換手順を確認します。このリファレンスには、 AFFおよびFASシステムの DCPM 電源モジュール交換ワークフローのステップバイステップの直接リンクが提供されており、特定のモデルに適切な手順をすぐに見つけるのに役立ちます。
 
-* link:../a700/dcpm-power-replace.html["AFF A700"^]
-* link:../fas9000/dcpm-power-replace.html["FAS9000"^]
+* link:../a700/dcpm-power-replace.html["AFF A700"]
+* link:../fas9000/dcpm-power-replace.html["FAS9000"]
 

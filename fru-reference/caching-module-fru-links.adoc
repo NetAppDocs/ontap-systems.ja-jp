@@ -2,36 +2,23 @@
 sidebar: sidebar 
 permalink: fru-reference/caching-module-fru-links.html 
 keywords: caching module, field replaceable units, FRU, caching module replacement 
-summary: このページでは、システム別のキャッシュ モジュール交換手順へのリンクを提供します。 
+summary: NetAppストレージ システムのキャッシュ モジュール交換手順をプラットフォーム ファミリ別に検索します。このリファレンスには、 AFF、 ASA、およびFASシステムのキャッシュ モジュール交換ワークフローのステップバイステップの直接リンクが用意されており、特定のモデルに適した手順をすぐに見つけることができます。 
 ---
-= キャッシュモジュールFRUリンク
+= プラットフォームファミリー別のキャッシュモジュール交換手順
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このページでは、システム別に整理されたキャッシュ モジュールの交換手順へのリンクを提供します。
+NetAppストレージ システムのキャッシュ モジュール交換手順をプラットフォーム ファミリ別に検索します。このリファレンスには、 FASシステムのキャッシュ モジュール交換ワークフローのステップバイステップの直接リンクが用意されており、特定のモデルに適した手順をすぐに見つけることができます。
 
-[role="tabbed-block"]
-====
-.AFF システム
---
-* link:../a700/caching-module-and-core-dump-module-replace.html["AFF A700"^]
+* link:../fas50/caching-module-hot-swap.html["FAS50"]
+* link:../fas-70-90/caching-module-hot-swap.html["FAS70/90"]
+* link:../fas2600/caching-module-replace.html["FAS2600"]
+* link:../fas2700/caching-module-replace.html["FAS2700"]
+* link:../fas2800/caching-module-replace.html["FAS2800"]
+* link:../fas8200/caching-module-replace.html["FAS8200"]
+* link:../fas8300/caching-module-replace.html["FAS8300"]
+* link:../fas9000/caching-module-hot-swap.html["FAS9000"]
 
-
---
-.FAS システム
---
-* link:../fas50/caching-module-hot-swap.html["FAS50"^]
-* link:../fas-70-90/caching-module-hot-swap.html["FAS70/90"^]
-* link:../fas2600/caching-module-replace.html["FAS2600"^]
-* link:../fas2700/caching-module-replace.html["FAS2700"^]
-* link:../fas2800/caching-module-replace.html["FAS2800"^]
-* link:../fas8200/caching-module-replace.html["FAS8200"^]
-* link:../fas8300/caching-module-replace.html["FAS8300"^]
-* link:../fas9000/caching-module-hot-swap.html["FAS9000"^]
-
-
---
-====

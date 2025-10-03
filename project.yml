@@ -154,10 +154,9 @@ sidebar:
           url: "/platform-supplemental/42u-1280mm-reverse-hinge-and-lock.html"
         - title: ドアと照光バッジを再度取り付けます
           url: "/platform-supplemental/42u-1280mm-reinstall-door-and-badge.html"
-  - title: プラットフォームFRUリファレンス
+  - title: 部品ごとの交換手順
+    url: "/fru-reference/index.html"
     entries:
-    - title: 概要
-      url: "/fru-reference/fru-overview.html"
     - title: ブートメディア
       url: "/fru-reference/bootmedia-fru-links.html"
     - title: キャッシングモジュール

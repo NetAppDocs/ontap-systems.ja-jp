@@ -1,0 +1,58 @@
+---
+indexpage:
+  title: NetAppストレージ システムのシステム コンポーネント交換リファレンス
+  summary: ストレージ システムのフィールド交換可能ユニット (FRU) の交換手順を確認します。このリファレンスには、 AFF、 ASA、およびFASシステムのステップバイステップの交換ワークフローへの直接リンクが用意されており、特定のハードウェア
+    メンテナンスのニーズに適した手順をすぐに見つけることができます。
+  keywords: FRU reference, field replaceable units, platform FRUs, hardware components,
+    replacement procedures, AFF, ASA, FAS
+  lead: ストレージ システムのフィールド交換可能ユニット (FRU) の交換手順を確認します。このリファレンスには、 AFF、 ASA、およびFASシステムのステップバイステップの交換ワークフローへの直接リンクが用意されており、特定のハードウェア
+    メンテナンスのニーズに適した手順をすぐに見つけることができます。
+  tiles:
+  - title: コアシステムコンポーネント
+    links:
+    - title: コントローラーの交換手順
+      url: "/controller-fru-links.html"
+    - title: シャーシ交換手順
+      url: "/chassis-fru-links.html"
+    - title: ブートメディアの交換手順
+      url: "/bootmedia-fru-links.html"
+    - title: システム管理モジュールの交換手順
+      url: "/system-management-fru-links.html"
+  - title: メモリおよびストレージモジュール
+    links:
+    - title: DIMMの交換手順
+      url: "/dimm-fru-links.html"
+    - title: NVDIMMの交換手順
+      url: "/nvdimm-fru-links.html"
+    - title: NVRAMモジュールの交換手順
+      url: "/nvram-module-fru-links.html"
+  - title: 電力と冷却
+    links:
+    - title: 電源交換手順
+      url: "/power-supply-fru-links.html"
+    - title: ファン交換手順
+      url: "/fan-fru-links.html"
+    - title: DCPM電源モジュールの交換手順
+      url: "/dcpm-power-fru-links.html"
+  - title: I/Oおよび拡張カード
+    links:
+    - title: I/Oモジュールの交換手順
+      url: "/io-module-fru-links.html"
+    - title: PCIカードとライザーの交換手順
+      url: "/pci-cards-fru-links.html"
+    - title: メザニン交換手順
+      url: "/mezzanine-fru-links.html"
+  - title: ストレージとドライブ
+    links:
+    - title: ドライブ交換手順
+      url: "/drive-fru-links.html"
+    - title: キャッシュモジュールの交換手順
+      url: "/caching-module-fru-links.html"
+  - title: システムバッテリーとインジケーター
+    links:
+    - title: NVMEM/ NVRAMバッテリー交換手順
+      url: "/nvmem-battery-fru-links.html"
+    - title: RTCバッテリー交換手順
+      url: "/rtc-battery-fru-links.html"
+    - title: LEDモジュールの交換手順
+      url: "/led-module-fru-links.html"
