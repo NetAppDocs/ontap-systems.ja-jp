@@ -107,7 +107,6 @@ NOTE: 問題がある場合はにお問い合わせください https://support.
 
 . システムが処理されると、ブートメニューが表示されます。通常ブートの場合は「1」を選択します。
 . テイクオーバーのステータスを確認します。 `storage failover show`
-. advancedモードに切り替えてから、 `run local partner nosavecore`修復されたノードのコアダンプがすべて保存されたことを確認します。 `set -privilege advanced`
 . 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
 . 自動ギブバックを無効にした場合は、再度有効にします。 `storage failover modify -node local -auto-giveback _true_`
 . AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`

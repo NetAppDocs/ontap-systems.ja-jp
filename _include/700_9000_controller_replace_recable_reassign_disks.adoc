@@ -25,6 +25,14 @@
 
 == 手順 2 ：ディスクを再割り当てする
 
+使用する手順は、コントローラの冗長構成によって異なります。
+
+[role="tabbed-block"]
+====
+.オプション1: HAペア
+--
+=== HA システムでのシステム ID の変更を確認する
+
 HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。_replacement _node のブート時にシステム ID の変更を確定し、その変更が実施されたことを確認する必要があります。
 
 この手順は、 HA ペアの ONTAP を実行するシステムにのみ適用されます。
@@ -139,3 +147,132 @@ dr-group-id            cluster node           configuration-state
 . 各ノードに、想定されるボリュームが存在することを確認します。 vol show -node node-name
 . リブート時の自動テイクオーバーを無効にした場合は、正常なノードで「 storage failover modify -node replacement-node-name -onreboot true 」を有効にします
 
+
+--
+.オプション2: 2ノードMetroCluster
+--
+=== 2ノードMetroCluster構成のシステムでシステムIDを手動で再割り当てする
+
+ONTAP を実行している 2 ノード MetroCluster 構成では、システムを通常の動作状態に戻す前に、新しいコントローラのシステム ID にディスクを手動で再割り当てする必要があります。
+
+.このタスクについて
+この手順は、 ONTAP を実行している 2 ノード MetroCluster 構成のシステムにのみ適用されます。
+
+この手順のコマンドは、必ず正しいノードで問題に接続してください。
+
+* impaired_node は、保守を実行しているノードです。
+* replacement _node は、この手順で障害ノードと交換した新しいノードです。
+* healthy_node は、障害ノードの DR パートナーです。
+
+
+.手順
+. まだ実行していない場合は、 _replacement _node を再起動し、 Ctrl+C キーを押してブートプロセスを中断して、表示されたメニューから Maintenance mode を起動するオプションを選択します。
++
+システム ID が一致しないためにシステム ID を上書きするかどうかを確認するメッセージが表示されたら 'Y' を入力する必要があります
+
+. 正常なノードから古いシステム ID を表示します MetroCluster node show -fields node-systemid'dr-partner-systemid
++
+この例では、 Node_B_1 が古いノードであり、古いシステム ID は 118073209 です。
+
++
+[listing]
+----
+dr-group-id cluster         node                 node-systemid dr-partner-systemid
+ ----------- --------------------- -------------------- ------------- -------------------
+ 1           Cluster_A             Node_A_1             536872914     118073209
+ 1           Cluster_B             Node_B_1             118073209     536872914
+ 2 entries were displayed.
+----
+. 障害ノードの保守モードプロンプトで新しいシステム ID を表示します。「 Disk show
++
+この例では、新しいシステム ID は 118065481 です。
+
++
+[listing]
+----
+Local System ID: 118065481
+    ...
+    ...
+----
+. disk showコマンドから取得したシステムID情報を使用して、ディスク所有権を再割り当てします（FASシステムの場合）。 `disk reassign -s old system ID`
++
+上記の例の場合、コマンドは「 Disk reassign -s 118073209 」です
+
++
+続行するかどうかを確認するメッセージが表示されたら、「 Y 」と入力します。
+
+. ディスクが正しく割り当てられていることを確認します。「 Disk show -a 」
++
+replacement _node に属するディスクに、 _replacement _node に割り当てられた新しいシステム ID が表示されていることを確認します。次の例では、 system-1 が所有するディスクに、新しいシステム ID 118065481 が表示されています。
+
++
+[listing]
+----
+*> disk show -a
+Local System ID: 118065481
+
+  DISK     OWNER                 POOL   SERIAL NUMBER  HOME
+-------    -------------         -----  -------------  -------------
+disk_name   system-1  (118065481) Pool0  J8Y0TDZC       system-1  (118065481)
+disk_name   system-1  (118065481) Pool0  J8Y09DXC       system-1  (118065481)
+.
+.
+.
+----
+. 正常なノードから、コアダンプがすべて保存されたことを確認します。
++
+.. advanced 権限レベルに切り替えます。「 set -privilege advanced 」
++
+advanced モードで続行するかどうかを確認するプロンプトが表示されたら、「 y 」と入力します。advanced モードのプロンプトが表示されます（ * > ）。
+
+.. コアダンプが保存されたことを確認します。「 system node run -node _local-node-name_partner savecore 」
++
+コマンド出力に savecore が進行中であることが示された場合は、 savecore が完了してからギブバックを実行します。「 system node run -node _local-node-name_partner savecore -s コマンド」を使用して、 savecore の進行状況を監視できます。 </info>
+
+.. admin 権限レベルに戻ります。「 set -privilege admin 」
+
+
+. _replacement _node が Maintenance モード（ *> プロンプトが表示されている）の場合、 Maintenance モードを終了して LOADER プロンプト「 halt 」に進みます
+. _replacement node: 'boot_ontap ' をブートします
+. _replacement _node が完全にブートしたら ' スイッチバックを実行します MetroCluster switchback
+. MetroCluster 構成を確認します MetroCluster node show -fields configurion-state
++
+[listing]
+----
+node1_siteA::> metrocluster node show -fields configuration-state
+
+dr-group-id            cluster node           configuration-state
+-----------            ---------------------- -------------- -------------------
+1 node1_siteA          node1mcc-001           configured
+1 node1_siteA          node1mcc-002           configured
+1 node1_siteB          node1mcc-003           configured
+1 node1_siteB          node1mcc-004           configured
+
+4 entries were displayed.
+----
+. Data ONTAP で MetroCluster 構成の動作を確認します。
++
+.. 両方のクラスタにヘルスアラートがないかどうかを確認します。 'system health alert show'
+.. MetroCluster が構成されており、通常モードであることを確認します。「 MetroCluster show 」
+.. MetroCluster チェック「 MetroCluster check run 」を実行します
+.. MetroCluster チェックの結果を表示します。「 MetroCluster check show 」
+.. Config Advisor を実行します。次のURLにあるNetApp Support SiteのConfig Advisorページに移動します。 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor/["support.netapp.com/NOW/download/tools/config_advisor/"]。
++
+Config Advisor の実行後、ツールの出力を確認し、推奨される方法で検出された問題に対処します。
+
+
+
+. スイッチオーバー処理をシミュレートします。
++
+.. いずれかのノードのプロンプトで、 advanced 権限レベルに切り替えます。「 set -privilege advanced 」
++
+advanced モードで続けるかどうかを尋ねられたら、「 y 」と入力して応答する必要があります。 advanced モードのプロンプトが表示されます（ * > ）。
+
+.. simulate パラメータを指定して、スイッチバック処理を実行します。 MetroCluster switchover -simulate
+.. admin 権限レベルに戻ります。「 set -privilege admin 」
+
+
+
+
+--
+====
