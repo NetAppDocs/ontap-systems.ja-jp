@@ -56,11 +56,52 @@ sidebar:
       - title: メンテナンスの概要
         url: "/afx-1k/maintain-overview.html"
       - title: ブートメディア
-        url: "/afx-1k/bootmedia-replace-workflow.html"
+        pdf-filename: AFX 1K ブートメディア
+        entries:
+        - title: ブートメディアの交換ワークフロー
+          url: "/afx-1k/bootmedia-replace-workflow.html"
+        - title: 要件を確認する
+          url: "/afx-1k/bootmedia-replace-requirements.html"
+        - title: コントローラのシャットダウン
+          url: "/afx-1k/bootmedia-shutdown.html"
+        - title: ブートメディアを交換します
+          url: "/afx-1k/bootmedia-replace.html"
+        - title: ブートメディアを復元する
+          url: "/afx-1k/bootmedia-recovery-image-boot.html"
+        - title: 障害のある部品をネットアップに返却します
+          url: "/afx-1k/bootmedia-complete-rma.html"
       - title: シャーシ
-        url: "/afx-1k/chassis-replace-workflow.html"
+        pdf-filename: AFX A1Kシャーシ
+        entries:
+        - title: シャーシの交換ワークフロー
+          url: "/afx-1k/chassis-replace-workflow.html"
+        - title: 要件を確認する
+          url: "/afx-1k/chassis-replace-requirements.html"
+        - title: 交換の準備
+          url: "/afx-1k/chassis-replace-prepare.html"
+        - title: コントローラのシャットダウン
+          url: "/afx-1k/chassis-replace-shutdown.html"
+        - title: シャーシの交換
+          url: "/afx-1k/chassis-replace-move-hardware.html"
+        - title: シャーシ交換後の処理
+          url: "/afx-1k/chassis-replace-complete-system-restore-rma.html"
       - title: コントローラ
-        url: "/afx-1k/controller-replace-workflow.html"
+        pdf-filename: AFX 1K コントローラー
+        entries:
+        - title: コントローラの交換ワークフロー
+          url: "/afx-1k/controller-replace-workflow.html"
+        - title: 要件を確認する
+          url: "/afx-1k/controller-replace-requirements.html"
+        - title: 障害のあるコントローラをシャットダウンします
+          url: "/afx-1k/controller-replace-shutdown.html"
+        - title: コントローラを交換してください
+          url: "/afx-1k/controller-replace-move-hardware.html"
+        - title: システム設定を復元します
+          url: "/afx-1k/controller-replace-system-config-restore-and-verify.html"
+        - title: コントローラをギブバック
+          url: "/afx-1k/controller-replace-recable-reassign-disks.html"
+        - title: コントローラ交換後の処理
+          url: "/afx-1k/controller-replace-restore-system-rma.html"
       - title: DIMM
         url: "/afx-1k/dimm-replace.html"
       - title: ファン
@@ -70,7 +111,14 @@ sidebar:
       - title: NVハツテリ
         url: "/afx-1k/nvdimm-battery-replace.html"
       - title: I/O モジュール
-        url: "/afx-1k/io-module-overview.html"
+        pdf-filename: AFX 1K IOモジュール
+        entries:
+        - title: I/Oモジュールの概要
+          url: "/afx-1k/io-module-overview.html"
+        - title: I/O モジュールを追加します
+          url: "/afx-1k/io-module-add.html"
+        - title: I/Oモジュールの交換
+          url: "/afx-1k/io-module-replace.html"
       - title: 電源装置
         url: "/afx-1k/power-supply-replace.html"
       - title: リアルタイムクロックバッテリ
