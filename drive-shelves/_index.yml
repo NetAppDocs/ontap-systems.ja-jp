@@ -5,6 +5,12 @@ indexpage:
   keywords: install ns224, hot-add, shelves, cable, drive-shelves
   lead: ネットアップのNS224シェルフとSASシェルフは、デジタル変革に必要なパフォーマンス、耐障害性、柔軟性を提供します。
   tiles:
+  - title: NX224シェルフの取り付け
+    links:
+    - title: シェルフをホットアドします
+      url: "../nx224/hot-add-shelf.html"
+    - title: シェルフ ID を変更します
+      url: "../nx224/change-shelf-id.html"
   - title: NS224シェルフの設置
     links:
     - title: シェルフをホットアドします
@@ -23,6 +29,26 @@ indexpage:
       url: "../sas3/install-change-shelf-id.html"
     - title: SAS ケーブル接続ルール、ワークシート、および例
       url: "../sas3/overview-cabling-rules-examples.html"
+  - title: NX224棚のメンテナンス
+    links:
+    - title: ブートメディア
+      url: "../nx224/service-replace-boot-media.html"
+    - title: DIMM
+      url: "../nx224/service-replace-dimm.html"
+    - title: ドライブ
+      url: "../nx224/service-replace-drive.html"
+    - title: ドライブシェルフ
+      url: "../nx224/nx224-shelf-overview.html"
+    - title: ファン
+      url: "../nx224/service-replace-fan.html"
+    - title: I/O モジュール
+      url: "../nx224/service-replace-io-module.html"
+    - title: NSM
+      url: "../nx224/service-replace-nsm140.html"
+    - title: 電源装置
+      url: "../nx224/service-replace-power-supply.html"
+    - title: RTC バッテリ
+      url: "../nx224/service-replace-rtc-battery.html"
   - title: NS224シェルフのメンテナンス
     links:
     - title: ブートメディア

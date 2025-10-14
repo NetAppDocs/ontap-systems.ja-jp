@@ -12,7 +12,24 @@
 +
 次のAutoSupportコマンドは、ケースの自動作成を2時間停止します。 `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
 
-. 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
+. 障害のあるコントローラのコンソールからの自動ギブバックを無効にします。
++
+`storage failover modify -node impaired-node -auto-giveback-of false`
+
++
+
+NOTE: 「自動ギブバックを無効にしますか？」と表示されたら、次のように入力します。 `y` 。
+
++
+.. 障害のあるコントローラを起動できない場合、またはすでに引き継がれている場合は、障害のあるコントローラを起動する前に、正常なコントローラから HA 相互接続リンクを停止する必要があります。これにより、障害のあるコントローラによる自動ギブバックの実行が防止されます。
++
+`system ha interconnect link off -node healthy-node -link 0`
+
++
+`system ha interconnect link off -node healthy-node -link 1`
+
+
+
 . 障害のあるコントローラに LOADER プロンプトを表示します。
 +
 [cols="1,2"]
@@ -24,13 +41,6 @@
 LOADER プロンプト
  a| 
 次の手順に進みます。
-
-
-
- a| 
-ギブバックを待機しています
- a| 
-Ctrl キーを押しながら C キーを押し ' プロンプトが表示されたら y と入力します
 
 
 

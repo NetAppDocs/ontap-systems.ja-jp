@@ -1,0 +1,18 @@
+---
+permalink: nx224/nx224-shelf-overview.html 
+sidebar: sidebar 
+keywords: nx224, shelves, shelf, nx224 shelves, drive, aggregate, shelf maintenance 
+summary: NX224 シェルフメンテナンスの概要。 
+---
+= 棚メンテナンスの概要 - NX224棚
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NX224 シェルフをメンテナンスするには、次の操作を実行できます。
+
+* link:hot-add-drive.html["ドライブのホットアド"]
+* link:service-monitor-leds.html["シェルフLEDの監視"]
+

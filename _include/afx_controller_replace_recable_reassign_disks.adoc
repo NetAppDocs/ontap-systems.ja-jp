@@ -1,0 +1,143 @@
+= 
+:allow-uri-read: 
+
+
+[role="tabbed-block"]
+====
+.暗号化なし
+--
+障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。
+
+.手順
+. LOADERプロンプトから、次のように入力します。
++
+`boot_ontap`
+
+. コンソールメッセージが停止したら、<enter>キーを押します。
++
+** _login_promptが表示されたら、このセクションの最後の次の手順に進みます。
+** ログイン プロンプトが表示されない場合は、<enter> キーを押します。それでもプロンプトが表示されない場合は、パートナー ノードにログインします。
+
+
+. override-destination-checks オプションを使用してルートのみを返します。
++
+`storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`
+
++
+
+NOTE: 次のコマンドは、診断モードの特権レベルでのみ使用できます。権限レベルの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html["ONTAP CLIコマンドの権限レベルを理解する"^] 。
+
++
+エラーが発生した場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
+
+. ギブバック レポートが完了してから 5 分待ってから、フェイルオーバーとギブバックのステータスを確認します。
++
+`storage failover show`そして `storage failover show-giveback`
+
++
+
+NOTE: 次のコマンドは、診断モードの特権レベルでのみ使用できます。
+
+. HA 内部接続リンクがダウンしている場合は、次のようにしてリンクを復旧します。
++
+`system ha interconnect link on -node healthy-node -link 0`
+
++
+`system ha interconnect link on -node healthy-node -link 1`
+
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。
++
+「 storage failover giveback -ofnode _impaired_node_name _
+
+. 自動ギブバックを無効にした場合は、再度有効にします。
++
+`storage failover modify -node local -auto-giveback-of true`
+
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+
+--
+.OKM暗号化
+--
+オンボード暗号化をリセットし、コントローラを通常動作に戻します。
+
+.手順
+. Loaderプロンプトで、次のように入力します。
++
+`boot_ontap maint`
+
+. LoaderプロンプトからONTAPメニューを起動し `boot_ontap menu`、オプション10を選択します。
+. OKMパスフレーズを入力します。このパスフレーズは、お客様またはにお問い合わせください https://support.netapp.com["ネットアップサポート"]。
++
+
+NOTE: パスフレーズの入力を2回求められます。
+
+. プロンプトが表示されたら、バックアップキーのデータを入力します。
+. ブートメニューで、「option for normal boot」と入力します `1`。
+. コンソール ケーブルをパートナー ノードに移動し、次のログインを入力します。
++
+`admin`
+
+. override-destination-checks オプションを使用してルートのみを返します。
++
+`storage  failover giveback -ofnode impaired-node -only-root true -override-destination-checks true`
+
++
+
+NOTE: 次のコマンドは、診断モードの特権レベルでのみ使用できます。権限レベルの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html["ONTAP CLIコマンドの権限レベルを理解する"^] 。
+
++
+エラーが発生した場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
+
+. ギブバック レポートが完了してから 5 分待ってから、フェイルオーバーとギブバックのステータスを確認します。
++
+`storage failover show`そして `storage failover show-giveback`
+
++
+
+NOTE: 次のコマンドは、診断モードの特権レベルでのみ使用できます。
+
+. コンソール ケーブルを交換ノードに移動し、次のように入力します。
++
+`security key-manager onboard sync`
+
++
+
+NOTE: クラスタのOKMのクラスタ全体のパスフレーズを入力するように求められます。
+
+. 次のコマンドを使用して、キーのステータスを確認します。
++
+`security key-manager key query -key-type svm-KEK`
+
++
+_restored_columnに_true_以外の値が表示されている場合は、に連絡してください https://support.netapp.com["ネットアップサポート"]。
+
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。
++
+「 storage failover giveback -ofnode _impaired_node_name _
+
++
+.. HA 相互接続リンクがダウンしている場合は、それらを復旧して自動ギブバックを再開します。
++
+`system ha interconnect link on -node healthy-node -link 0`
+
++
+`system ha interconnect link on -node healthy-node -link 1`
+
+
+
+. 自動ギブバックを無効にした場合は、再度有効にします。
++
+`storage failover modify -node local -auto-giveback-of true`
+
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+
+--
+====

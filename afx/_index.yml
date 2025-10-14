@@ -1,0 +1,39 @@
+---
+indexpage:
+  title: AFXシステム
+  summary: NetApp AFX ストレージ システムは、高性能 NAS および S3 顧客の固有のニーズに重点を置いた、分散型のハードウェアおよびソフトウェア
+    ソリューションです。パフォーマンスとスケーラビリティは、AI および ML ワークロードの要件を満たすように特別に設計されています。
+  keywords: afx, afx 1k, install, setup, maintain
+  lead: NetApp AFX ストレージ システムは、高性能 NAS および S3 顧客の固有のニーズに重点を置いた、分散型のハードウェアおよびソフトウェア
+    ソリューションです。パフォーマンスとスケーラビリティは、AI および ML ワークロードの要件を満たすように特別に設計されています。
+  tiles:
+  - title: はじめに
+    links:
+    - title: AFXストレージについて学ぶ
+      url: https://docs.netapp.com/us-en/ontap-afx/get-started/ontap-afx-storage.html
+    - title: AFXシステムの特徴
+      url: https://docs.netapp.com/us-en/ontap-afx/get-started/system-design.html
+    - title: AFXアーキテクチャ
+      url: https://docs.netapp.com/us-en/ontap-afx/get-started/software-architecture.html
+  - title: AFXのインストールとメンテナンス
+    links:
+    - title: AFXハードウェアをインストールする
+      url: https://docs.netapp.com/us-en/ontap-afx/install-setup/install-setup-workflow.html
+    - title: AFXハードウェアのメンテナンス
+      url: "../afx-landing-maintain/index.html"
+  - title: AFXでデータを管理する
+    links:
+    - title: AFXボリュームを作成する
+      url: https://docs.netapp.com/us-en/ontap-afx/manage-data/create-configure-volume.html
+    - title: AFXボリュームを管理する
+      url: https://docs.netapp.com/us-en/ontap-afx/manage-data/manage-volumes.html
+    - title: AFXバケットを作成する
+      url: https://docs.netapp.com/us-en/ontap-afx/manage-data/create-configure-bucket.html
+  - title: AFX 上のデータの保護とセキュリティ確保
+    links:
+    - title: スナップショットの作成
+      url: https://docs.netapp.com/us-en/ontap-afx/protect-data/create-snapshot.html
+    - title: Snapshotレプリケーションのセットアップ
+      url: https://docs.netapp.com/us-en/ontap-afx/protect-data/snapshot-replication.html
+    - title: 保存データを暗号化
+      url: https://docs.netapp.com/us-en/ontap-afx/secure-data/encrypt-data-at-rest.html

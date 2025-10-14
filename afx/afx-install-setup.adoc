@@ -1,0 +1,24 @@
+---
+permalink: afx/afx-install-setup.html 
+sidebar: sidebar 
+keywords: afx, afx 1k, install, setup, initial configuration 
+summary: システムを設置してセットアップします。 
+---
+= AFXストレージシステムのインストールとセットアップ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+に行く https://docs.netapp.com/us-en/ontap-afx/index.html["AFXのドキュメント"^]AFX システムのインストール、使用、管理の方法を学習します。
+
+その https://docs.netapp.com/us-en/ontap-afx/index.html["AFXのドキュメント"^]次のような情報が含まれます。
+
+* 設置とセットアップの手順
+* NAS ストレージのプロビジョニング、データのクローン作成、ローカル ストレージのサイズ変更など、システムを構成するための管理手順。
+* クライアントアクセスの管理、データの保護、データの保護など、システムを管理する手順。
+* 監視とトラブルシューティングの手順（アラート、クラスタイベント、システムログに関する情報など）
+
+
+各タイプのAFXシステムの具体的なメンテナンス手順については、link:../afx-landing-maintain/index.html["AFXシステム保守部門"] 。

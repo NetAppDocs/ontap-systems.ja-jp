@@ -1,0 +1,443 @@
+---
+permalink: nx224/service-monitor-leds.html 
+sidebar: sidebar 
+keywords: monitor, health, drive, shelf, location, status, condition, led, component, operator, display, panel, nsm, power, supply, drive, monitor drive shelf leds, operator display panel leds, nsm leds, power supply leds, drive leds 
+summary: ドライブシェルフコンポーネントのLEDの場所とステータスの状態を把握することで、ドライブシェルフの健全性を監視できます。 
+---
+= モニタードライブシェルフLED - NX224シェルフ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ドライブ シェルフ コンポーネント上の LED の位置とステータス状態を把握することで、シェルフの正常性を監視できます。
+
+* シェルフのオペレータ ディスプレイ パネル (ODP) と両方の NVMe シェルフ モジュール (NSM) にある位置 (青色) LED をアクティブにすると、サービスが必要なシェルフを物理的に特定するのに役立ちます。 `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
++
+該当するシェルフの「 _shelf_name_ 」がわからない場合は、「 storage shelf show 」コマンドを実行します。
+
++
+ロケーション LED は 30 分間点灯します。無効にするには、同じコマンドを `off` オプション
+
+* LEDの状態は次のとおりです。
++
+** "ON"：LEDが点灯/点灯
+** 消灯：LEDが点灯しない
+** 点滅：LEDはFRUのステータスに応じてさまざまな間隔で点灯/消灯します。
+** 「任意の状態」：LEDは「オン」、「オフ」、「点滅」のいずれかです。
+
+
+
+
+
+
+== オペレータディスプレイパネルの LED
+
+ドライブシェルフ前面のオペレータディスプレイパネル（ODP）のLEDは、ドライブシェルフが正常に機能しているか、ハードウェアに問題があるかを示します。
+
+次の図と表に、ODPの3つのLEDを示します。
+
+image::../media/drw_ns224_odp_leds_IEOPS-1262.svg[オペレータディスプレイパネルの LED]
+
+[cols="1,2,1,5"]
+|===
+| LED アイコン | LED名と色 | 状態 | 説明 
+
+
+ a| 
+image::../media/drw_sas_power_icon.svg[オペレータディスプレイパネルの電源LED]
+ a| 
+電源（緑）
+ a| 
+オン
+ a| 
+1つ以上の電源装置がドライブシェルフに電力を供給しています。
+
+
+
+ a| 
+image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネルの警告LED]
+ a| 
+注意（オレンジ）
+ a| 
+オン
+ a| 
+* 1つ以上のシェルフFRUの機能でエラーが発生しました。
++
+イベントメッセージをチェックして実行する対処方法を決定してください。
+
+* 2桁のシェルフIDも点滅している場合、シェルフIDは保留状態になります。
++
+シェルフIDを有効にするには、ドライブシェルフの電源を再投入します。
+
+
+
+
+
+ a| 
+image::../media/drw_sas3_location_icon.svg[オペレータディスプレイパネルの位置LED]
+ a| 
+ロケーション（青）
+ a| 
+オン
+ a| 
+システム管理者がこのLED機能を有効にしました。
+
+|===
+
+
+== NSM LED
+
+NSMのLEDは、モジュールが正常に機能しているかどうか、I/Oトラフィックの準備ができているかどうか、ハードウェアに問題がないかどうかを示します。
+
+次の図と表に、モジュールの機能とモジュールの各NVMeポートの機能に関連するNSM LEDを示します。
+
+image::../media/drw_tp_nsmb_leds_ieops-2206.svg[NX224 NSM140モジュールLED]
+
+[cols="1,1,2,4"]
+|===
+| コールアウト | LED アイコン | 色（ Color ） | 説明 
+
+
+ a| 
+image:../media/icon_round_1.png["番号1"]
+ a| 
+LNK
+ a| 
+緑
+ a| 
+NVMeポート/リンク：ステータス
+
+
+
+ a| 
+image:../media/icon_round_2.png["番号2"]
+ a| 
+image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネルの警告LED]
+ a| 
+アンバー
+ a| 
+NVMeポート/リンク：注意
+
+
+
+ a| 
+image:../media/icon_round_3.png["番号3"]
+ a| 
+image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネルの警告LED]
+ a| 
+アンバー
+ a| 
+I/Oモジュール:注意
+
+
+
+ a| 
+image:../media/icon_round_4.png["番号4"]
+ a| 
+image::../media/drw_sas3_location_icon.svg[オペレータディスプレイパネルの位置LED]
+ a| 
+青
+ a| 
+NSM：場所
+
+
+
+ a| 
+image:../media/icon_round_5.png["番号5"]
+ a| 
+image::../media/drw_sas_fault_icon.svg[オペレータディスプレイパネルの警告LED]
+ a| 
+アンバー
+ a| 
+NSM：注意
+
+|===
+[cols="2,1,1,1,1"]
+|===
+| ステータス | NSM注意（オレンジ） | ポートLNK（緑） | ポートアテンション（オレンジ） | I/Oモジュールの注意 
+
+
+ a| 
+NSMノーマル
+ a| 
+オフ
+ a| 
+すべての状態
+ a| 
+オフ
+ a| 
+オフ
+
+
+
+ a| 
+NSM障害
+ a| 
+オン
+ a| 
+すべての状態
+ a| 
+すべての状態
+ a| 
+オフ
+
+
+
+ a| 
+NSM VPDエラー
+ a| 
+オン
+ a| 
+すべての状態
+ a| 
+すべての状態
+ a| 
+オフ
+
+
+
+ a| 
+ホストポート接続がありません
+ a| 
+すべての状態
+ a| 
+オフ
+ a| 
+オフ
+ a| 
+オフ
+
+
+
+ a| 
+ホストポート接続リンクがアクティブ
+ a| 
+すべての状態
+ a| 
+点灯/点滅（アクティビティあり）
+ a| 
+すべての状態
+ a| 
+オフ
+
+
+
+ a| 
+ホストポート接続に障害がある
+ a| 
+オン
+ a| 
+すべてのレーンに障害が発生している場合はオン/オフ
+ a| 
+オン
+ a| 
+オフ
+
+
+
+ a| 
+電源投入後のBIOSイメージからのBIOS起動
+ a| 
+点滅
+ a| 
+すべての状態
+ a| 
+すべての状態
+ a| 
+オフ
+
+
+
+ a| 
+I/Oモジュールがありません
+ a| 
+オン
+ a| 
+該当なし
+ a| 
+該当なし
+ a| 
+オン
+
+|===
+
+
+== 電源装置の LED
+
+AC 電源装置 (PSU) の LED は、PSU が正常に機能しているか、ハードウェアに問題があるかを示します。
+
+次の図と表は、PSU 上の LED について説明しています。
+
+image::../media/drw_generic_psu_ac_terra_cotta_ieops-2370.svg[電源装置の電源アクティビティLED]
+
+[cols="1,4"]
+|===
+| コールアウト | 説明 
+
+
+ a| 
+image:../media/icon_round_1.png["番号1"]
+ a| 
+2色のLEDは、緑色の場合は電源/動作を示し、赤色の場合は障害を示します。
+
+|===
+[cols="2,1,1"]
+|===
+| ステータス | 電源/アクティビティ（緑） | 注意（赤） 
+
+
+ a| 
+筐体にAC電源が供給されていない
+ a| 
+オフ
+ a| 
+オフ
+
+
+
+ a| 
+PSUにAC電源が供給されていない
+ a| 
+オフ
+ a| 
+オン
+
+
+
+ a| 
+AC 電源はオンですが、PSU がエンクロージャ内にありません
+ a| 
+点滅
+ a| 
+オフ
+
+
+
+ a| 
+PSUは正常に動作しています
+ a| 
+オン
+ a| 
+オフ
+
+
+
+ a| 
+PSU障害
+ a| 
+オフ
+ a| 
+オン
+
+
+
+ a| 
+ファン障害
+ a| 
+オフ
+ a| 
+オン
+
+
+
+ a| 
+ファームウェアアップデートモード
+ a| 
+点滅
+ a| 
+オフ
+
+|===
+
+
+== ドライブLED
+
+NVMeドライブのLEDは、NVMeドライブが正常に機能しているか、ハードウェアに問題があるかを示します。
+
+次の図と表は、NVMeドライブの2つのLEDについて説明しています。
+
+image::../media/drw_ns224_drive_leds_IEOPS-1263.svg[NVMeドライブの警告LEDと電源LED]
+
+[cols="1,2,2"]
+|===
+| コールアウト | LED 名 | 色（ Color ） 
+
+
+ a| 
+image:../media/icon_round_1.png["番号1"]
+ a| 
+注意
+ a| 
+アンバー
+
+
+
+ a| 
+image:../media/icon_round_2.png["番号2"]
+ a| 
+電源/アクティビティ
+ a| 
+緑
+
+|===
+[cols="2,1,1,1"]
+|===
+| ステータス | 電源/アクティビティ（緑） | 注意（オレンジ） | 関連ODP LED 
+
+
+ a| 
+ドライブが取り付けられ、動作可能
+ a| 
+点灯/点滅（アクティビティあり）
+ a| 
+すべての状態
+ a| 
+該当なし
+
+
+
+ a| 
+ドライブ障害
+ a| 
+点灯/点滅（アクティビティあり）
+ a| 
+オン
+ a| 
+注意（オレンジ）
+
+
+
+ a| 
+SESデバイス識別セット
+ a| 
+点灯/点滅（アクティビティあり）
+ a| 
+点滅
+ a| 
+注意（オレンジ）がオフになっています
+
+
+
+ a| 
+SESデバイス障害ビットセット
+ a| 
+点灯/点滅（アクティビティあり）
+ a| 
+オン
+ a| 
+注意（オレンジ）
+
+
+
+ a| 
+電源コントロール回路の故障
+ a| 
+オフ
+ a| 
+すべての状態
+ a| 
+注意（オレンジ）
+
+|===

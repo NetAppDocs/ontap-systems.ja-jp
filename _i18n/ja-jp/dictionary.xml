@@ -5332,15 +5332,10 @@
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1つ</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2 つ</block>
   <block id="26d2e0bd267361cc8916e7e16faebcbb" category="paragraph">スイッチをラックまたはキャビネットに設置します。使用しているスイッチモデルに応じて、次の手順に従ってください。</block>
-  <block id="8821c03ea98d1edaf4b4b82c0aaf59dc" category="inline-link-macro">BES-53248スイッチを設置します</block>
-  <block id="f4f4adc3268a66380dfdff9b1a20bc7b" category="inline-link-macro">Cisco Nexus 9336C-FX2スイッチを設置します</block>
-  <block id="66e51b9ff1adb3e615b49ae8223869a4" category="inline-link-macro">NVIDIA SN2100スイッチをインストールします</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">3つ</block>
   <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">6</block>
   <block id="549f827e07761bafef053e8ca7564a39" category="inline-link">ONTAP を設定します</block>
-  <block id="8849c41092b79554e9b7f3a213d25622" category="list-text">ONTAP の導入については、を参照してください<block ref="a9c0083f0559526553eb5b29452926d5" category="inline-link-rx"></block>。</block>
   <block id="10775dd39d5bac0a859a7c2aa804576e" category="inline-link">ONTAP を使用してMetroCluster を設定します</block>
-  <block id="cd0ac8ac6ae100c0f56d712237ad4aea" category="list-text">MetroCluster を使用したONTAP の導入については、を参照してください<block ref="725c74f5b5396d66bd86e73daf02329b" category="inline-link-rx"></block>。</block>
   <block id="c5a63894b2cca959254f190c438b2862" category="doc">リアルタイムクロックバッテリを交換してください（AFF C800）</block>
   <block id="4e98f7d06c194d745ab8b22805c9cf46" category="doc">シャーシを交換します（AFF C800）</block>
   <block id="7084b904bc2fba91a6a3acb82001365c" category="doc">リストアと交換のプロセス（AFF C800）を完了します</block>
@@ -5543,9 +5538,6 @@
   <block id="3d95f3470ed102d015e07a1fbb7f7608" category="list-text">D-sub DC電源ケーブルコネクタを電源装置から取り外し、脇に置きます。</block>
   <block id="d28bc8f0e10f780bf01d0983424f02e4" category="list-text">D-SUB DC電源ケーブルコネクタを電源装置に接続します。</block>
   <block id="538209f1ec1db21a865711f12301a29e" category="list-text">2本の蝶ネジを締めて、D-sub DC電源ケーブルコネクタを電源装置に固定します。</block>
-  <block id="6eeacbfb54f0dd2b69ca25ccf7e621e3" category="paragraph">**クラスタスイッチ**</block>
-  <block id="05d287d05ed5025354b8f6c796c87491" category="paragraph">**ストレージスイッチ**</block>
-  <block id="aca0ddc3769e84e478caff604ad14594" category="paragraph">**共有スイッチ**</block>
   <block id="1688757a0e4a29ec41d21e63fcc98a90" category="paragraph">AFF C190システムをインストールするには、アカウントを作成してシステムを登録します。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。</block>
   <block id="39bbc5176cba797f24070d78f90d0d5a" category="list-text">にアクセスできることを確認します <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> （ HWU ）を参照してください。サイト要件および構成済みシステム上の追加情報に関する情報が含まれます。</block>
   <block id="5dd03e8d039863e563e049be198c3fd3" category="inline-link-macro">リリースノート</block>
@@ -8564,14 +8556,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="031f9f009940597777a75796e5b17818" category="doc">電源装置を交換します - FAS70 および FAS90</block>
   <block id="6edcaa0f49095aafb0fa011d3fa4d4c5" category="doc">リアルタイムクロックバッテリ -FAS70 および FAS90 を交換してください</block>
   <block id="d387637ce68cde3388b8e2a316fb8a4b" category="summary">ONTAPハードウェアシステムの運用を開始するには、ONTAPでハードウェアコンポーネントを取り付け、ハードウェアをケーブル接続し、ストレージを設定します。</block>
-  <block id="4fc0cdfd3bfeb9e0deca202a13e34c80" category="list-text"><block ref="4fc0cdfd3bfeb9e0deca202a13e34c80" category="inline-link-macro-rx"></block></block>
-  <block id="8c5eb3dbb6b3d670e3fc6421519373f1" category="list-text"><block ref="8c5eb3dbb6b3d670e3fc6421519373f1" category="inline-link-macro-rx"></block></block>
-  <block id="4c244902624c963eb43fc2a03390bad9" category="list-text"><block ref="4c244902624c963eb43fc2a03390bad9" category="inline-link-macro-rx"></block></block>
-  <block id="3580bbbde4ec039cae29775a19e738cf" category="list-text"><block ref="3580bbbde4ec039cae29775a19e738cf" category="inline-link-macro-rx"></block></block>
-  <block id="c0eb5985b209bb421162c4d51fd35a0a" category="list-text"><block ref="a2fed96771de6267f038dd37162b39dd" category="inline-link-macro-rx"></block>^</block>
   <block id="b11226c776ec1b74f6a42f871e3194c9" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>ストレージシステムとストレージシェルフの設置</block>
   <block id="130792cb3edc8d0afffb557e50b218c3" category="paragraph">ストレージシステムとストレージシェルフをキャビネットまたはラックに設置します。使用しているプラットフォームモデルのインストールとセットアップの手順にアクセスします。</block>
-  <block id="7bf4e86b8c2f5ff036932a932f9dc604" category="list-text"><block ref="7bf4e86b8c2f5ff036932a932f9dc604" category="inline-link-rx"></block></block>
   <block id="3ab6aa369c3f9b8276a331929da6f82c" category="example-title">シェルフをASA A1Kにケーブル接続</block>
   <block id="5085ff6c350861af4448d82a2c958fe8" category="paragraph">ASA A1K HAペアには、最大3台のNS224シェルフ（合計4台のシェルフ）をホットアドできます。</block>
   <block id="ae9e439bbd5c00f8b8a1bc7a935729c7" category="example-title">シェルフをASA A70またはASA A90にケーブル接続</block>
@@ -8714,7 +8700,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="cbb5640a4c423d549c9eb57b27dbd4ea" category="image-alt">アイコン正方形1緑</block>
   <block id="0b9a61d1a01d980aaf6ca850e1b286f5" category="paragraph"><block ref="0b9a61d1a01d980aaf6ca850e1b286f5" category="inline-link-macro-rx"></block></block>
   <block id="96a5f900d6bd8337209c17fce1a47ae5" category="image-alt">番号3 ]</block>
-  <block id="f8fda7956963dfb2e60c6e0d0ffa6ede" category="list-text"><block ref="f8fda7956963dfb2e60c6e0d0ffa6ede" category="inline-link-macro-rx"></block></block>
   <block id="cd5ec5f3586869573f3f0b3112426052" category="sidebar">TR-4290：『SAP HANA on NetApp FAS systems with NFS』</block>
   <block id="1e4893fc6c634f02ace3ba7beb78d669" category="inline-link-macro">クォーラムステータス</block>
   <block id="8df1727c16aa446d0622abe8cab177ae" category="list-text">SANシステムを使用している場合は、障害コントローラのSCSIブレードのイベントメッセージを確認しておく必要があり <block ref="090678c8ba0a25df800d3d4eeaf19522" prefix="(" category="inline-code"></block>ます）。コマンド（priv advancedモードから）を実行すると、<block ref="090678c8ba0a25df800d3d4eeaf19522" prefix=" " category="inline-code"></block>そのノードのノード名、そのノードの可用性ステータス、およびそのノードの動作ステータスが表示され<block ref="8650efa63daff32c831511388978454c" category="inline-link-macro-rx"></block>ます。</block>
@@ -9541,7 +9526,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7a1f08f539146079eaeae8f4a563cce2" category="list-text">AFF C60用</block>
   <block id="724bf3ae18d86521a5b9d77a13fcfddb" category="list-text">AFF C80用</block>
   <block id="8c20e9c3f526d526af74c044baf7da64" category="inline-link-macro">ASA R2システムの詳細</block>
-  <block id="77f5d8fa3689e046b946bfbacf61536e" category="paragraph">ASA R2システムは、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルな操作性を実現します。<block ref="2f9305bd6f8a2949646123561cb92ab4" category="inline-link-macro-rx"></block>です。</block>
   <block id="e2ead389bfa8a65f29bc4e57fdaf4a7b" category="inline-link-macro">ASAシステムの詳細</block>
   <block id="2ce90a39656cd7489bede7894c2a9943" category="list-text">ASA AFF A250の略</block>
   <block id="7ddb32a2b45e07e265f9e454f57d2eb0" category="list-text">ASA AFF A800の略</block>
@@ -9986,14 +9970,10 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="73b3856e20fbea83dc1573f8203ad6a4" category="section-title">2024年12月</block>
   <block id="909cc883ddbed6fc06a25647ba1f212b" category="paragraph">このシステムは、MLベースのランサムウェアのリアルタイム検出、シームレスなクラウド統合、AI、VMware、データベース、分析などのミッションクリティカルなワークロードに対して卓越したパフォーマンスを提供し、ブロック、ファイル、オブジェクトストレージをサポートします。</block>
   <block id="3c8e670cb2f634a0b68672d5f01ec686" category="inline-link-macro">AFF Aシリーズシステムの詳細</block>
-  <block id="cc41bf37432333539dd5ceeb6841880b" category="paragraph"><block ref="ec47a919cf5fb6b1b188d40c3428c9bc" category="inline-link-macro-rx"></block>です。</block>
   <block id="f96ee2b3f1f5c0e57287bc570e1eafdd" category="paragraph">このソリューションは、60TBドライブによる卓越した密度、パフォーマンスの向上、I/Oの柔軟性の向上を実現します。</block>
   <block id="e3433be76af8797b5b6d90a688a36fd9" category="inline-link-macro">AFF Cシリーズシステムに関する詳細情報</block>
-  <block id="6541c02105210891ec02de804f02e6af" category="paragraph"><block ref="607826820a51c80a539353cde0434437" category="inline-link-macro-rx"></block>です。</block>
   <block id="f31f11743f1dfba18e9f008e2956d24e" category="section-title">2024年9月</block>
-  <block id="d6ee5f134cf5e78f59ab20a782f67ed3" category="paragraph"><block ref="2f9305bd6f8a2949646123561cb92ab4" category="inline-link-macro-rx"></block>です。</block>
   <block id="8a3c98db91e158f54dfa013fc3f590be" category="paragraph">新しいFAS70およびFAS90ハードウェアシステムは、手頃な価格ながらハイパフォーマンスなバックアップストレージを提供し、ランサムウェア攻撃からリカバリするためのセキュアなサイバーヴォールトを実現します。</block>
-  <block id="8a974b4a7078e973c2cf1c4794446802" category="paragraph"><block ref="be362a4689d663d0b6df6b6c151241ba" category="inline-link-macro-rx"></block>です。</block>
   <block id="b6c0f97a30874aed966651e5abc3c11d" category="sidebar">AFF A70およびAFF A90</block>
   <block id="42f7a13d06268f4751d08ce509ed5e8e" category="sidebar">AFF A20、A30、およびA50</block>
   <block id="ceb7091e015ae9f2c08e07f286b6d1fb" category="sidebar">AFF A20、A30、A50</block>
@@ -10036,7 +10016,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e3f4eea829fa5771d87c60fb05124223" category="paragraph">NS224と新しいNSM100B NVMeストレージ拡張モジュールで、データセンターの機能を強化できます。新しいNSM100Bシェルフモジュールは、NSM100モジュールの直接交換用として設計されており、既存の環境にシームレスに統合できます。NS224シェルフの直接接続型構成とスイッチ接続型構成の両方がサポートされるため、ストレージシステムの効率性と拡張性を最適化する優れた柔軟性が実現します。</block>
   <block id="02ad6883c66e836f88f8ac60378af5d5" category="paragraph">新しいASA R2ハードウェアシステム（ASA A1K、ASA A70、およびASA A90）は、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルなエクスペリエンスを実現します。</block>
   <block id="f1f5a8071b69ef980c0fca64b3b9c54e" category="list-text">自動ギブバックを無効にした場合はリストアします。</block>
-  <block id="a7ecdb67614fe7d399a65b213dd20e1a" category="paragraph">ドライブシェルフは、NetApp AFF、ASA、FASの各システム向けに設計されており、デジタル変革に必要なパフォーマンス、耐障害性、柔軟性を提供します。</block>
   <block id="dbc74f369dbf214b25d0f839fd4cd2b0" category="list-text">自動ギブバックを無効にした場合はリストアします。</block>
   <block id="e826d5b26017ec374bf63b94b8a425d9" category="list-text">各電源装置の固定装置を使用して、電源コードを固定します。：a1k-a70-90!：</block>
   <block id="0bf1ff1f561d2a96752b8ee596c65068" category="list-text">4U（HA構成）</block>
@@ -10519,7 +10498,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="139cf4f7657fbfb9877fab98c53f832d" category="inline-link-macro">コントローラの交換要件を確認します。</block>
   <block id="8014b2531e10b65728f5d00f10086239" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="096e9e0acfd801adaf14a881210574f5" category="inline-link-macro-rx"></block></block>
   <block id="09669e45a232b18f400c361ee12274ac" category="summary">修正可能または修正不可能なメモリエラーが大量に検出された場合は、AFF A1KシステムのDIMMを交換します。このようなエラーが発生すると、ストレージシステムでONTAPをブートできなくなる可能性があります。交換プロセスでは、障害コントローラのシャットダウン、障害コントローラの取り外し、DIMMの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
-  <block id="e18b877ffac8b35448d895c1c68b748d" category="summary">ファンに障害が発生した場合やファンが効率的に動作していない場合は、AFF A1Kシステムのファンモジュールを交換してください。システムの冷却や全体的なパフォーマンスに影響する可能性があります。交換プロセスでは、コントローラのシャットダウン、コントローラの取り外し、ファンの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
   <block id="12fae7867415134b9f235298c4fc3ae0" category="summary">AFF A1KシステムにI/Oモジュールを追加して、ネットワーク接続を強化し、システムのデータトラフィック処理能力を拡張します。</block>
   <block id="209868bed00d990c1f23476188be7137" category="summary">AFF A1Kシステムでは、I/Oモジュールを柔軟に拡張または交換して、ネットワーク接続とパフォーマンスを強化できます。I/Oモジュールの追加または交換は、ネットワーク機能をアップグレードする場合や、障害が発生したモジュールに対処する場合に不可欠です。</block>
   <block id="4e411b307b5033fa0adda94171cef0e7" category="paragraph">AFF A1Kストレージシステム内の障害が発生したI/Oモジュールは、同じタイプのI/Oモジュールに交換することも、別の種類のI/Oモジュールに交換することもできます。空きスロットのあるシステムにI/Oモジュールを追加することもできます。</block>
@@ -10594,7 +10572,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f68165cbf3ba1e1d45a1b8381c53da48" category="paragraph">ASA A1Kシステムのシステム構成を復元して確認したら、を実行する必要があります<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>。</block>
   <block id="3554082e8291b9cdbf124dd341192845" category="summary">ASA A1Kストレージシステムのコントローラの交換を開始します。まず、障害のあるコントローラのシャットダウン、コントローラの取り外しと交換、システム設定の再設定、システム動作の確認を行います。</block>
   <block id="e74490e131d6ff28bc330a79722d7ee8" category="summary">修正可能または修正不可能なメモリエラーが大量に検出された場合は、ASA A1KシステムのDIMMを交換します。このようなエラーが発生すると、ストレージシステムでONTAPをブートできなくなる可能性があります。交換プロセスでは、障害コントローラのシャットダウン、障害コントローラの取り外し、DIMMの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
-  <block id="2ec0426abc59751a6bbc5d7f1d4ad88f" category="summary">ファンに障害が発生した場合、またはファンが効率的に動作していない場合は、ASA A1Kシステムのファンモジュールを交換してください。これは、システムの冷却と全体的なパフォーマンスに影響する可能性があります。交換プロセスでは、コントローラのシャットダウン、コントローラの取り外し、ファンの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
   <block id="d0ae37255e241883926e006b05aea242" category="summary">ASA A1Kハードウェアのメンテナンス</block>
   <block id="81fbab84dee840e51b947d05ddd735f0" category="summary">ASA A1KシステムにI/Oモジュールを追加して、ネットワーク接続を強化し、システムのデータトラフィック処理能力を拡張します。</block>
   <block id="41a0e3b7c23899a0913091e05f33a16c" category="summary">ASA A1Kシステムは、I/Oモジュールを柔軟に拡張または交換して、ネットワーク接続とパフォーマンスを強化します。ネットワーク機能をアップグレードしたり、障害が発生したモジュールに対処したりする場合は、I/Oモジュールの追加または交換が不可欠です。</block>
@@ -10976,9 +10953,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e05691d9a469c6dfe5333a08214cfeee" category="sidebar">FAS50コントローラモジュール</block>
   <block id="58a7a102daa03629c6548f4b567a8bdc" category="sidebar">FAS50 I/Oモジュール</block>
   <block id="42ce83dc3f5ef22d986311b267a5ac20" category="section-title">2025年4月</block>
-  <block id="1f1cfe63f21baa752d34689d18df7a71" category="inline-link-macro">セキュアなサイバーボールト</block>
-  <block id="7f6560b2f27843bdd0fbd788508aa53f" category="paragraph">FAS50システムは、セカンダリストレージのギガバイトあたりのコストが最も低く、<block ref="fc2ae5117ffdad02a44e491087c764f9" category="inline-link-macro-rx"></block>さらに、高速なバックアップ、高いIOPS、5~10ミリ秒の低レイテンシによって、セカンダリワークロードのパフォーマンスが向上します。</block>
-  <block id="a63ca1984c6fc97d6cce72bf0b70e743" category="paragraph"><block ref="bf6818070f00775a8833d8f63d835356" category="inline-link-macro-rx"></block>です。</block>
   <block id="a574039687c6d52e2a17e47affbc4d8d" category="list-text">AutoSupportが有効になっている場合は、AutoSupportメッセージを呼び出してケースの自動作成を停止します。</block>
   <block id="5c40960208a7535beecf44f84d10cea9" category="paragraph"><block ref="fa00b95aa82b5506a4c27cc4a50f05d7" prefix="" category="inline-code"></block></block>
   <block id="2a9205137f8a0ec57be25e6b19b96284" category="paragraph">次のAutoSupport メッセージは、ケースの自動作成を2時間停止します。</block>
@@ -13235,7 +13209,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="73b98ef043acd488522721608d1383c0" category="inline-link-macro">ASA 70/90</block>
   <block id="1424eb9825ad365579c4da49e4786b56" category="inline-link-macro">AFF A70/90</block>
   <block id="3acfb7ef5d74a9a2b83867ee2f648b5c" category="inline-link-macro">ASA A70/90</block>
-  <block id="1b30d3af75b8498aa46a116d89324f76" category="doc">プラットフォームFRUリファレンス</block>
   <block id="9fb8b7f7ff808262345139c29591fbfd" category="cell">シャーシは、コントローラ/CPU ユニット、電源、I/O などのすべてのコントローラ コンポーネントを収容する物理的なエンクロージャです。</block>
   <block id="1dd12ce23185605c475a49a224a49d9c" category="cell">データ センター永続メモリ (DCPM) 電源モジュールは、予期しない電源喪失が発生した場合に DCPM モジュールにバックアップ電源を提供します。</block>
   <block id="e93ac6e8beec2ad9885ab64cf4a808c1" category="cell">ファンはシステムコンポーネントを冷却し、適切な動作温度を維持するための空気の流れを提供します。</block>
@@ -13249,9 +13222,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5ef79279dd7f732336b5156398a8b391" category="section-title">2025年9月</block>
   <block id="3e7278a35880ab6bc45afac28b6eccb7" category="section-title">プラットフォーム仕様</block>
   <block id="da160308e3b4b4a80bf1b72b5bdbedb8" category="inline-link-macro">Hardware Universe</block>
-  <block id="227759de70d1791c6e7b9e65f787a890" category="section-title">プラットフォームFRU手順リファレンス</block>
-  <block id="92541f43e309e72a868f5c8fe19abf43" category="paragraph">ONTAPハードウェア システムのドキュメントに、FRU タイプ別に整理された FRU 手順へのリンクが含まれるようになりました。</block>
-  <block id="8248d0fab8f49cc23c3d823f4ed5554c" category="paragraph"><block ref="8248d0fab8f49cc23c3d823f4ed5554c" category="inline-link-macro-rx"></block></block>
   <block id="7d48629b60025c47699efee6d34437ad" category="sidebar">ASA r2 システムの主要なハードウェア仕様を確認します。詳細な仕様を表示するには、以下のプラットフォームを選択してください。</block>
   <block id="4c4867e2e7e5c8c985e0ad9d2510d42e" category="sidebar">ASA r2システムの主な仕様</block>
   <block id="8764ee35612e8a26e67f101b1f89e38f" category="sidebar">ASA r2 A1K、A70、A90、A20、A30、および A50 システムの主な仕様について説明します。</block>
@@ -13812,4 +13782,421 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e0afc6f17acc32734a97d12897107976" category="list-text"><block ref="e0afc6f17acc32734a97d12897107976" category="inline-link-macro-rx"></block></block>
   <block id="de12502ea1f5b1e834a82b554781952a" category="list-text"><block ref="de12502ea1f5b1e834a82b554781952a" category="inline-link-macro-rx"></block></block>
   <block id="18b2d9b4b9271130118b3fa4d34741ca" category="list-text"><block ref="18b2d9b4b9271130118b3fa4d34741ca" category="inline-link-macro-rx"></block></block>
+  <block id="b132e544edb8ce61c7d56a9072e34ce4" category="list-text">障害のあるコントローラのコンソールからの自動ギブバックを無効にします。</block>
+  <block id="8760a6088d894d74286c20312933745d" category="paragraph"><block ref="715cd21c782e2d4ec090c5ad69c5f916" prefix="" category="inline-code"></block></block>
+  <block id="2014d8b66b0e05fba286f79c1c8aac17" category="admonition">「自動ギブバックを無効にしますか？」と表示されたら、次のように入力します。<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block> 。</block>
+  <block id="e42719da0b0120aed19fed5fbf1a9e91" category="list-text">障害のあるコントローラを起動できない場合、またはすでに引き継がれている場合は、障害のあるコントローラを起動する前に、正常なコントローラから HA 相互接続リンクを停止する必要があります。これにより、障害のあるコントローラによる自動ギブバックの実行が防止されます。</block>
+  <block id="6badf3e0409fdce842f9572879610610" category="paragraph"><block ref="591629776245e38cc81324b6a5812bca" prefix="" category="inline-code"></block></block>
+  <block id="6f06efcd5f7cc2b6c26e064179da7457" category="paragraph"><block ref="ddbce1acca815d1b21ed2ed029300b5b" prefix="" category="inline-code"></block></block>
+  <block id="0a7ae632684b705930f51991256fcf9c" category="list-text">現在の時刻をGMTで設定するには、<block ref="0ad4ade5bf715a5335525c69a44424c1" prefix=" " category="inline-code"></block>指示。  `date -u` コマンドを使用して、パートナー ノードから現在の GMT を取得できます。</block>
+  <block id="ad96d1b1534d4dadd29e31743b3ba660" category="list-text">NetAppから受け取った交換用コンポーネントがあることを確認してください。</block>
+  <block id="9739aa46154ca9652f14ccfc02aab95d" category="admonition">モジュールを再インストールするときに正しいポートに接続できるように、ケーブルが接続されていた場所にラベルを付けておいてください。</block>
+  <block id="5c436b73b12520cd9cee571889acf550" category="list-text">電源装置は冗長化されており、ホットスワップ可能であるため、このタスクを実行するためにコントローラーを乗っ取る必要はありません。</block>
+  <block id="69dce2977a0557592e533745ad9eae18" category="admonition">電池をホルダーから取り出すときは、電池の極性に注意してください。バッテリに記載されているプラス記号に従って、バッテリをホルダーに正しく配置する必要があります。ホルダーの近くのプラス記号は正しい方向を示します。</block>
+  <block id="6ea2de737e562b891cfc76e8ed99831e" category="list-text">チェックしてください<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>新しい I/O モジュールがストレージ システムおよびONTAPバージョンと互換性があることを確認します。</block>
+  <block id="0b015549ff04b527cf5cd801df80cb40" category="list-text">_login_ プロンプトが表示されたら、次の手順に進みます。</block>
+  <block id="0d2f107a1666607e5243da6cccfe8175" category="list-text">ログイン プロンプトが表示されない場合は、パートナー ノードにログインします。</block>
+  <block id="54b11326ca7aa56928cb055292eb53d6" category="list-text">override-destination-checks オプションを使用してルートのみを返します。</block>
+  <block id="642f635bc2e1e62401d12d2f05ebcee3" category="paragraph"><block ref="b60a52a459ddc3f5756bb857748e925f" prefix="" category="inline-code"></block></block>
+  <block id="7f31349f91690d443cc66097f2be19bc" category="inline-link-macro">ONTAP CLIコマンドの権限レベルを理解する</block>
+  <block id="6ec97e2f84e4bbd8386245095dc82c6c" category="admonition">次のコマンドは、診断モードの特権レベルでのみ使用できます。権限レベルの詳細については、以下を参照してください。<block ref="7ea886a463a2f378bb349492138018e4" category="inline-link-macro-rx"></block> 。</block>
+  <block id="6cf6b99f11a6f1d9493d7c0c682e72cc" category="paragraph"><block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix="" category="inline-code"></block>そして<block ref="852ce55a153bc728405ba8a2c95bcdf1" prefix=" " category="inline-code"></block></block>
+  <block id="3e51eab268209c4ecd6a66e3fb482d1e" category="admonition">次のコマンドは、診断モードの特権レベルでのみ使用できます。</block>
+  <block id="fbda2271859607bf1d062d190a7ffbe4" category="list-text">HA 内部接続リンクがダウンしている場合は、次のようにしてリンクを復旧します。</block>
+  <block id="c45147b20fda10297d1b0e7d907f26f5" category="paragraph"><block ref="124fff7033dbf247c26ba55c91c24e05" prefix="" category="inline-code"></block></block>
+  <block id="d764751d3eb0487a9a265fb174875be7" category="paragraph"><block ref="392f25c94aa750e124e01b0898bbf72d" prefix="" category="inline-code"></block></block>
+  <block id="4138629ba2319734a01ac99105a7d77e" category="paragraph"><block ref="5702632fd36e775fbe40719b9f560522" prefix="" category="inline-code"></block></block>
+  <block id="a48f7ec7042865b7f91dfbc36fbb175c" category="paragraph"><block ref="0bba834c69f94d8942b922666e06c777" prefix="" category="inline-code"></block></block>
+  <block id="ed621ed4dc616bf333aecf7b9d1ebd66" category="paragraph"><block ref="2bdd1b2036b8aa1eec8e3bd96c39b081" prefix="" category="inline-code"></block></block>
+  <block id="d48cf91f36f4a68d4179d83f93d42c9d" category="list-text">ストレージ I/O モジュールを削除し、新しい NIC I/O モジュールをインストールした場合は、各ポートに対して次のネットワーク コマンドを使用します。</block>
+  <block id="377904d7898c00bdb5d914f698295409" category="paragraph"><block ref="f1e3270bebf7f128e90360900f41767f" prefix="" category="inline-code"></block></block>
+  <block id="023f84de64a5b5d6e436a73834b929b3" category="inline-link-macro">ホットアドNX224シェルフ</block>
+  <block id="041efb896c82da8fd1b20c57bf18050b" category="list-text">NIC I/Oモジュールを取り外してストレージI/Oモジュールを取り付けた場合は、以下の手順に従ってNX224シェルフを取り付けてケーブル接続します。<block ref="7933522518ee2f6c3cddcafcc10bcb89" category="inline-link-macro-rx"></block> 。</block>
+  <block id="785065387b9d7ad835e8eea6fee140ce" category="list-text">OKM の場合、クラスター全体のパスフレーズとバックアップ データが必要です。</block>
+  <block id="883ab7b8a14444dc4d7f04c0c614aee9" category="paragraph">システムで暗号化が設定されていません。次の手順を実行します。</block>
+  <block id="435cca8eecc34e959786058f4ad41a30" category="list-text">ログインプロンプトが表示された場合は、手順 4 に進みます。</block>
+  <block id="aec5f15724e9cf042dbaf634c83ae626" category="list-text">ログイン プロンプトが表示されない場合は、パートナー ノードにログインして手順 4 に進みます。</block>
+  <block id="ba020516bb9f0d28a748d55de0952d41" category="list-text">自動ギブバックが無効になっている場合は、手順 6 に進み、有効にします。</block>
+  <block id="69c7a15c5f37145bd198ba985d9a4917" category="paragraph">適切なキー マネージャーを復元するには、手順 5 に進みます。</block>
+  <block id="8372f593a273256d38ddfa50ae5bbbe1" category="list-text">システムに暗号化がインストールされておらず、ログインプロンプトが表示されない場合。次の手順を実行します。</block>
+  <block id="995ab257eff6e4ff2f43ab64c6a0a977" category="inline-link-macro">ONTAP CLI コマンドの権限レベル</block>
+  <block id="1e7cb45af940fb2b4c0f0e673e1af62e" category="admonition">このコマンドは診断モードでのみ使用できます。詳細については、 <block ref="a724996665f3ed2e8257236a734bc080" category="inline-link-macro-rx"></block> 。</block>
+  <block id="7017b6d2d3c8a204339c74599961a17a" category="list-text">ONTAP 9.17.1 を実行していて、HA 内部接続リンクがダウンしている場合は、次のようにしてリンクを復旧します。</block>
+  <block id="a3bab47f3ba234dac2b20342edc8dcf3" category="admonition">9.18.1 以降を実行している場合は、上記の手順をスキップして次の手順に進みます。</block>
+  <block id="fc279180fd280dd504aa2557c0c4b7ba" category="list-text">キー マネージャーが設定されているシステムの場合は、適切なキー マネージャーの復元プロセスを選択します。</block>
+  <block id="f7dd172e6fadfb3c093097a95e97e630" category="list-text">HA 相互接続リンクがダウンしている場合は、それらを復旧して自動ギブバックを再開します。</block>
+  <block id="3581d4955c5076af6afb6cb30f7b03b8" category="paragraph"><block ref="9f164e62b00bce8d23a29e3dd492366d" prefix="" category="inline-code"></block></block>
+  <block id="ed7739c629ade444e8a564a1c7027dba" category="list-text">システム管理モジュールからケーブルを取り外し、再インストール時に正しく再接続されるようにラベルを付けます。</block>
+  <block id="3202c1f631c1e508fc5fbb88d75ecd12" category="list-text">コントローラがLOADERプロンプトで停止した場合は、コントローラを<block ref="ce54ef17bebf280339d340bd40dff593" prefix=" " category="inline-code"></block>指示。</block>
+  <block id="fd6b8aa1d23f1f6e813129702041b66f" category="list-text">ノードが起動してログインプロンプトが表示されたら、パートナーコントローラにログインし、交換したコントローラがギブバックの準備ができていることを確認します。<block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix=" " category="inline-code"></block>指示。</block>
+  <block id="5b82ade2dbd93fae6eead7fff17a6c43" category="list-text">ログイン プロンプトが表示されない場合は、パートナー ノードにログインします。</block>
+  <block id="a61f06e27fae819706ff27cf84361ee7" category="list-text">自動ギブバックが無効になっている場合は、再度有効にします。<block ref="d799ad333c074f7655cb35f7ec958532" prefix=" " category="inline-code"></block></block>
+  <block id="7fd3a0668416f0e2e229cacf569ed717" category="paragraph">コントローラがストレージを返却したら、<block ref="48865c7c1d8013246e4e5f705a9105de" category="inline-link-rx"></block> 。</block>
+  <block id="e8ae5a0d839d89e2a77641734943d1ca" category="paragraph">交換ノードをサービスに戻す前に、論理インターフェイスがホーム ポート上にあることを確認し、クラスターの健全性をチェックし、自動ギブバックをリセットします。</block>
+  <block id="1034d933e8be716e3be31619ae324d40" category="list-text">論理インターフェイスがホーム サーバーとポートにレポートしていることを確認します。</block>
+  <block id="92d780be2b80e7c4c01bf7f09603ea16" category="paragraph"><block ref="f8a58a872dbff91c3ae7076526ddf81a" prefix="" category="inline-code"></block></block>
+  <block id="948079b5095ae31cb5261562890c9ca5" category="paragraph">論理インターフェースが false としてリストされている場合は、それらをホーム ポートに戻します。</block>
+  <block id="b4ebcf376ab05c920671af65b7daaf8c" category="paragraph"><block ref="985591930e85610706940dd82967bd61" prefix="" category="inline-code"></block></block>
+  <block id="64143ba7f71a82696ee59fc42838d0ab" category="admonition">時間は現地時間と 24 時間形式で表示されます。</block>
+  <block id="6df73d01dcbb01ca61af14f350370c51" category="list-text">必要に応じて、現在の日付を<block ref="ee4f09a0cba47a38becba390b17f62ab" prefix=" " category="inline-code"></block>指示。</block>
+  <block id="8a94e0007036d5456e074907afb1ee01" category="list-text">パートナーノードから現在のGMTを取得するには、<block ref="f6955536985a51b1b2b5cf62c43e2e5f" prefix=" " category="inline-code"></block>指示。</block>
+  <block id="ea0c839c9c3ce3d66852f2dcde1aa9c3" category="list-text">ベゼルをボールスタッドに合わせてから、ベゼルをゆっくりと所定の位置に押し込みます。</block>
+  <block id="be0463a3ea2bc46c07deb53a282af1ba" category="list-text">ログインプロンプトが表示されたら、次の手順に進みます。</block>
+  <block id="b6e26815e93400e68ef5735203d7c29c" category="list-text">ログイン プロンプトが表示されない場合は、パートナー ノードにログインします。</block>
+  <block id="e77014b637e83e84029f5d473c19588c" category="list-text">ギブバック レポートが完了してから 5 分待ってから、フェイルオーバーとギブバックのステータスを確認します。</block>
+  <block id="9f06354be2b54faf2d5dfff9660fa882" category="list-text">必要に応じて、ベゼルの両側の開口部を両手でつかみ、シャーシ フレームのボール スタッドからベゼルが外れるまで手前に引いて、ベゼルを取り外します。</block>
+  <block id="07281a88bd9b6d39e9d97e79c20c1ec7" category="paragraph">DIMM はスロットにぴったり収まりますが、簡単に挿入できるはずです。簡単に挿入できない場合は、DIMMをスロットに正しく合わせてから再度挿入してください。</block>
+  <block id="8a3692cf6eeb29017c8445601a51de6d" category="list-text">LOADERプロンプトから、次のように入力します。</block>
+  <block id="6216d06afb13f05dbb809001ee29a65e" category="list-text">ログイン プロンプトが表示されない場合は、&lt;enter&gt; キーを押します。それでもプロンプトが表示されない場合は、パートナー ノードにログインします。</block>
+  <block id="82618878fecdf1304aff928578338ff3" category="list-text">コンソール ケーブルをパートナー ノードに移動し、次のログインを入力します。</block>
+  <block id="f1648fd1d81cbaf7ca70492a3d2c9122" category="paragraph"><block ref="21232f297a57a5a743894a0e4a801fc3" prefix="" category="inline-code"></block></block>
+  <block id="4144051484bacbb26b0997a24a36532e" category="paragraph"><block ref="d5be9149b0861afc30e359e3506a3da0" prefix="" category="inline-code"></block></block>
+  <block id="4e08d1e0cedf01306836a427edd98e6a" category="list-text">コンソール ケーブルを交換ノードに移動し、次のように入力します。</block>
+  <block id="cd74239882532c0ea03cfa93da31d5cb" category="paragraph"><block ref="8d87a410a64e11591a338ede7162a6d2" prefix="" category="inline-code"></block></block>
+  <block id="45a2d32fc61cc2d123cf4027040c4bf8" category="paragraph">障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じてコントローラのストレージ フェイルオーバー テイクオーバーを実行して、正常なコントローラが障害のあるコントローラ ストレージから引き続きデータを提供できるようにする必要があります。</block>
+  <block id="b5ca6041147fb4f4df4801f4f10784f5" category="inline-link-macro">ONTAPクラスタ内のノードレベルの詳細を表示する</block>
+  <block id="22dd5ea8b069cf90dfb213fcf3136023" category="list-text">4 つ以上のノードを持つクラスターがある場合は、クォーラム内になければなりません。ノードに関するクラスター情報を表示するには、<block ref="639161158d7426b3865ce9c5a6f648b3" prefix=" " category="inline-code"></block>指示。詳細については、<block ref="639161158d7426b3865ce9c5a6f648b3" prefix=" " category="inline-code"></block>コマンドについては、<block ref="812d195420030f92a12eef2f47c24053" category="inline-link-macro-rx"></block> 。</block>
+  <block id="3339c1abb6a38c2a82f66c0780893536" category="list-text">クラスターがクォーラムにない場合、または (障害のあるコントローラー以外の) コントローラーの正常性または適格性が false と表示される場合は、障害のあるコントローラーをシャットダウンする前に問題を修正する必要があります。見る<block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block> 。</block>
+  <block id="eea7e5b28d3e1c4e8e7e7e8e310d7994" category="list-text">ONTAPバージョン 9.17.1 を実行していて、障害のあるコントローラを起動できないか、すでに引き継がれている場合は、障害のあるコントローラを起動する前に、正常なコントローラから HA 相互接続リンクを停止する必要があります。これにより、障害のあるコントローラによる自動ギブバックの実行が防止されます。</block>
+  <block id="78fa259f1575c0e9b637544144ce5988" category="admonition">ONTAPバージョン 9.17.1 を実行していない場合は、上記の手順をスキップして手順 3 に進みます。</block>
+  <block id="c30938ccf076c4ec0d3f2ba34fd8f16e" category="paragraph">正常なコントローラから障害のあるコントローラを引き継ぐか、停止します。<block ref="db99891238c978ac8afa2f5699f2917d" prefix=" " category="inline-code"></block></block>
+  <block id="4ab0c772ea9a8193b238eb673a9fb06f" category="paragraph">_-halt true_ パラメータは、障害のあるノードを LOADER プロンプトに表示します。</block>
+  <block id="cea31bd46ad20e8b209bfbe53fc5e093" category="paragraph">システム管理モジュールを交換すると、コントローラのシステムシリアル番号 (SSN) が変更されます。障害のあるノードが標準（ノードロック）ライセンスを必要とするONTAP機能を使用していた場合は、ノードに新しいライセンスをインストールする必要があります。標準ライセンスを使用する機能では、クラスタ内の各ノードにその機能用のキーが必要です。</block>
+  <block id="cfa9c2e7aca83d2a10037eef246f4d73" category="inline-link-macro">ONTAP 9.10.1以降のライセンスの概要</block>
+  <block id="1cae6a7e231485f90ed2960475b68ec3" category="paragraph">新しいシステム シリアル番号のNetAppライセンス ファイル (NLF) が必要です。  NetAppライセンスファイルの詳細については、以下を参照してください。<block ref="4640d83e06217ce3def16bc115a309d6" category="inline-link-macro-rx"></block> 。</block>
+  <block id="2cad5070dc7be8fb1b2b3cd7df2d482f" category="paragraph">ライセンス キーをインストールする期間は 90 日間です。この期間を過ぎると、古いライセンスはすべて無効になります。有効なライセンス キーをインストールした後、猶予期間が終了する前に 24 時間以内にすべてのキーをインストールする必要があります。</block>
+  <block id="08750d90611dbeb84f925f6c4a0db33d" category="admonition">システムが最初にONTAP 9.15.1以降を実行していた場合は、<block ref="c870cb14804ec123b327683f5259df46" category="inline-link-macro-rx"></block> 。ご使用のシステムの初期ONTAPリリースが不明な場合は、<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>詳細についてはこちらをご覧ください。</block>
+  <block id="5f2af98e7b503171e6f3cb67f912a2cc" category="list-text">各ライセンス キーはONTAP System Manager を通じてインストールされます。</block>
+  <block id="0329f75686ff0ab1285a5a9c9c89155d" category="inline-link-macro">ONTAP System Managerでライセンスキーを追加して新機能を有効にする</block>
+  <block id="2586c7b46490469b0d82a3bfa616a54e" category="paragraph">詳細については、以下を参照してください。 <block ref="55afcf65238d2e606a3036fafc2eb0e7" category="inline-link-macro-rx"></block> 。</block>
+  <block id="2abf5356e43f75eb643c87111ae98419" category="list-text">I/O モジュールのケーブルを再接続します。</block>
+  <block id="4ef7a08657d4a2189b0c7ca969b6c548" category="paragraph"><block ref="700fc5fee1d834ca094b869b2f3ebf6f" prefix="" category="inline-code"></block></block>
+  <block id="69d4901c403551aafed499a69f6a6854" category="list-text">コントローラーの PSU から電源ケーブルを取り外します。</block>
+  <block id="ec2b5b55710d22f8f551f7b72f764663" category="list-text">入力<block ref="bfa99df33b137bc8fb5f5407d7e58da8" prefix=" " category="inline-code"></block>LOADER プロンプトで。</block>
+  <block id="0032e566769cfaf9f2eac8eaa6b09fb7" category="section-title">ステップ4: NVRAMの交換を完了する</block>
+  <block id="49fe5c68b168636a5fbb6dc233b3b716" category="paragraph">NVRAM の交換を完了するには、次の手順を実行します。</block>
+  <block id="da7bdbc5ab6b09bf76b41f65797b89c9" category="paragraph">以下は、システム ID を上書きするためのプロンプトの例です。</block>
+  <block id="d256a527bf5d931f1d622c72ddf1dded" category="list-text">正常なコントローラから、新しいパートナー システム ID が自動的に割り当てられたことを確認します。<block ref="1d9c4708f7f65a8fab50047c3df2e664" prefix=" " category="inline-code"></block></block>
+  <block id="cfcb90feb85f8859e220b212215b63b0" category="paragraph">コマンド出力には、ストレージ交換の現在の状態を示すメッセージが表示されます。次の例では、node2 が置換され、現在の状態が「引き継ぎ中」と表示されます。</block>
+  <block id="8011afadee4323a554fac9e6cc29e58d" category="list-text">正常なコントローラから、交換したコントローラのストレージを戻します:`_storage failover giveback -ofnode replacement_node_name_`</block>
+  <block id="17d9dcc7db89f6a4682cb542cf2044fc" category="open-title">AC PSUの交換</block>
+  <block id="88a2125e60807865335c8747496af95b" category="admonition">PSUはコンパクトです。コントローラ モジュールから外れて怪我をするのを防ぐため、取り外す際は両手で支えてください。</block>
+  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
+  <block id="1ff94e598108905bef8834018bba5d86" category="paragraph">故障した RTC バッテリーを取り外し、交換品を取り付けます。</block>
+  <block id="344f921d0ec02fd1e7780b61a619a100" category="admonition">RTC バッテリーを交換し、コントローラーを挿入して最初の BIOS リセットの電源を入れると、次のエラー メッセージが表示されます。<block ref="049ec00df3ddcbe28d63cf4fa733682c" prefix=" " category="inline-code"></block><block ref="6c8ad83004cc8bc224a596f5f1682744" prefix=" " category="inline-code"></block>これらのメッセージは予期されたものであり、この手順を続行できます。</block>
+  <block id="5862e3059693b0ae5802e65d68b3df4c" category="list-text">正常なコントローラの日付と時刻を<block ref="1cac34e5e8442fb80d6ade838d969fc0" prefix=" " category="inline-code"></block>指示。</block>
+  <block id="06cc2a18a376ef6cef2529359a8c1853" category="list-text">ターゲットコントローラのLOADERプロンプトで、<block ref="7e17e2b336dbdd66c2f45405573b53de" prefix=" " category="inline-code"></block>指示。</block>
+  <block id="ab00fa9bfc395c69bcff64c78065914d" category="list-text">ギブバック レポートが完了してから 5 分待ってから、フェイルオーバーとギブバックのステータスを確認します。</block>
+  <block id="a58f4831d1e28d273ad0f645bcbb3725" category="paragraph">コントローラの背面、スロット 8 の左側にあるシステム管理モジュールには、システム管理用のオンボード コンポーネントと外部管理用のポートが含まれています。障害のあるシステム管理モジュールを交換するか、ブート メディアを交換するには、ターゲット コントローラをシャットダウンして電源をオフにする必要があります。</block>
+  <block id="2facfdec284e980f443264b431f4e8ac" category="list-text">e0MおよびBMCネットワークアクセス用のRJ45イーサネットサービスポート</block>
+  <block id="5ddf9434bc54978c062928eafba9691f" category="list-text">システム管理モジュールに接続されているケーブルをすべて取り外します。ケーブルが接続されていた場所にラベルを付けて、モジュールを再インストールするときに正しいポートに再接続できるようにします。</block>
+  <block id="c13821e7f076ae89484ef92cc7173b08" category="list-text">ブート メディアにアクセスするには、システム管理モジュールを静電気防止マットの上に置きます。</block>
+  <block id="240a4c70ea2ca5d537d1b2627dbdb767" category="paragraph">システムが再起動し、通常は LOADER プロンプトが表示されます。</block>
+  <block id="a17ea3108fa3eab66152340c3fa0f8e4" category="list-text">ギブバック レポートが完了してから 5 分待ってから、フェイルオーバーとギブバックのステータスを確認します。</block>
+  <block id="4a69d4a60274355bf15a263134464807" category="list-text">自動ギブバックが無効になっている場合は、再度有効にします。<block ref="2bdd1b2036b8aa1eec8e3bd96c39b081" prefix=" " category="inline-code"></block> 。</block>
+  <block id="9e1c8cf536b61ced9a099cdc8d9a7ea5" category="open-title">AFXシステム</block>
+  <block id="03d5aee221a465757e341406f9dc9268" category="inline-link-macro">AFXシステムの詳細</block>
+  <block id="2a4a042b0e2ebbec301c19c093a015b9" category="paragraph">AFX システムは、AI/ML アプリケーションを含む高性能 NAS および S3 ワークロードの厳しい要件を満たすように設計された分散型ソリューションを提供します。<block ref="f5164a83a6772da5aee670f75f83959a" category="inline-link-macro-rx"></block> 。</block>
+  <block id="778693e22bd88fd013f721edf58788c6" category="paragraph">AFX システムは、次のONTAPリリース以降でサポートされます。</block>
+  <block id="03a70507b7d040ed5990e474d0b55688" category="list-text">AFX 1K</block>
+  <block id="306709d67f2dec8b8ba6331b0da7011d" category="paragraph">ASA r2 システムは、SAN のみを利用するお客様のニーズに合わせた簡素化されたエクスペリエンスを実現する、統合されたハードウェアおよびソフトウェア ソリューションを提供します。<block ref="67383e616307465eca49426accf697dc" category="inline-link-macro-rx"></block> 。</block>
+  <block id="277f3da1559e139922ed3989a9354148" category="paragraph">ドライブ シェルフは、 NetApp AFF、AFX、 ASA、 FASシステム向けに特別に設計されており、デジタル変革に必要なパフォーマンス、復元力、柔軟性を実現します。</block>
+  <block id="15098ffd77b0868f845cfc616f250a6b" category="list-text">AFXシステム用NSX224シェルフ</block>
+  <block id="3cfc071da5a0fdf899bb147a25be0c08" category="list-text">AutoSupportが有効になっている場合は、 AutoSupportメッセージ コマンドを呼び出して自動ケース作成を抑制します。</block>
+  <block id="2a9c9df22f9538653501b32719999555" category="paragraph">次のAutoSupportコマンドは、自動ケース作成を 2 時間抑制します。</block>
+  <block id="a5e0a9798bce38c0259a506f0fd1147d" category="list-text">正常なコントローラのコンソールから自動ギブバックを無効にします。</block>
+  <block id="a9f9ae342279f5d338d3038ce3af820c" category="paragraph"><block ref="7b903d789523bfa1771a2f63b3523783" prefix="" category="inline-code"></block></block>
+  <block id="506e005a43769e0aa9d2a519e91ac21a" category="paragraph"><block ref="5fd0741516e2bbd70fc3c26403444415" prefix="" category="inline-code"></block></block>
+  <block id="7198e71472ec41b1732ea66e4a56ac9e" category="paragraph">その<block ref="710390a66a3f7deb600ee6db0f191788" prefix=" " category="inline-code"></block>パラメータを指定すると、LOADER プロンプトが表示されます。</block>
+  <block id="7b57ec62c551f7a0803d70e56d72b6df" category="summary">適切な冷却を維持し、システム パフォーマンスの問題を防ぐには、 AFF A1Kシステム内の故障したファン モジュールを交換します。ファンはホットスワップ可能なので、システムをシャットダウンせずに交換できます。</block>
+  <block id="3fe309657796b19bb6bd152bdc853d95" category="paragraph">適切な冷却を維持し、システム パフォーマンスの問題を防ぐには、 AFF A1Kシステム内の故障したファン モジュールを交換します。ファンはホットスワップ可能なので、システムをシャットダウンせずに交換できます。この手順には、コンソールのエラー メッセージと LED インジケータを使用して障害のあるファンを特定し、ベゼルを取り外し、ファン モジュールを交換し、障害のある部品をNetAppに返送することが含まれます。</block>
+  <block id="954efe13e01eb3431da5e6dcc2f00ab2" category="doc">AFXストレージシステムのインストールとセットアップ</block>
+  <block id="67e3534cd0feec346d52509c43cc0189" category="inline-link">AFXのドキュメント</block>
+  <block id="3854c1721469c26bd8dfca0e95e5bdbf" category="paragraph">に行く<block ref="1451289199683c74183eb3973056699f" category="inline-link-rx"></block>AFX システムのインストール、使用、管理の方法を学習します。</block>
+  <block id="1c2ec7314c1e2ed4dd8bad09528d7973" category="paragraph">その<block ref="1451289199683c74183eb3973056699f" category="inline-link-rx"></block>次のような情報が含まれます。</block>
+  <block id="18cc5a9922d8b2b2235fbed98d5b8896" category="list-text">NAS ストレージのプロビジョニング、データのクローン作成、ローカル ストレージのサイズ変更など、システムを構成するための管理手順。</block>
+  <block id="15f3b2b9050da8f1b1bdc68848c631bf" category="inline-link-macro">AFXシステム保守部門</block>
+  <block id="d57d0b2eddb45b00e9a51f35ecbc24a1" category="paragraph">各タイプのAFXシステムの具体的なメンテナンス手順については、<block ref="4278844d48f88f9620f729dc448f2e3f" category="inline-link-macro-rx"></block> 。</block>
+  <block id="14891262eeb0080763e1e4d7c20b423d" category="summary">AFX 1K ストレージ システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。</block>
+  <block id="f2629483af412ae27ab87a108e391076" category="doc">故障した部品をNetAppに返送してください - AFX 1K</block>
+  <block id="9a6780c33510f13eb38e9fa160c54ca6" category="paragraph">AFX 1K ストレージ システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページをご覧ください。</block>
+  <block id="044cb6a656cb0f9d8640a808b35aef95" category="summary">AFX 1K ストレージ システムに新しいブート メディア デバイスをインストールした後、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。</block>
+  <block id="8ce7663b5cab288d2818537f852caaf2" category="doc">リカバリイメージを起動する - AFX 1K</block>
+  <block id="5816d1d043e26739573730a8682beb03" category="paragraph">回復プロセス中に、システムは暗号化が有効になっているかどうかを確認し、使用されているキー暗号化の種類を識別します。キー暗号化が有効になっている場合は、復元するための適切な手順をシステムが案内します。</block>
+  <block id="4af5c0554054b490b0c91fea6e5440f9" category="paragraph">ONTAPイメージをリストアし、ノードが起動してデータを提供するようになったら、<block ref="e2df5d85d0d0d8d0a3a4f7656136cebe" category="inline-link-macro-rx"></block> 。</block>
+  <block id="a4586870cf4e8d29bf7644d03287d83a" category="summary">AFX 1K ストレージ システムのブート メディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、正しい交換用ブート メディアがあることを確認すること、コントローラ上に欠陥のあるクラスタ ポートがないこと、およびオンボード キー マネージャ (OKM) または外部キー マネージャ (EKM) が有効になっているかどうかを確認することが含まれます。</block>
+  <block id="486e0b5fe4de5c08f890603815d0fb16" category="doc">ブートメディアの交換要件 - AFX 1K</block>
+  <block id="310488484cce73b4c106bfae40e95114" category="paragraph">ブートメディアを交換するための要件を確認した後、<block ref="68b439f7374cbf94d1d0674cba562466" category="inline-link-macro-rx"></block> 。</block>
+  <block id="878e1562ad8a39d5bd51b65c42fc94a1" category="summary">交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージの起動、暗号化の復元、システム機能の検証を行って、AFX 1K ストレージ システムのブート メディアの交換を開始します。</block>
+  <block id="55af46cb00b19ca2facec2eaf952f7f8" category="doc">ブートメディア交換ワークフロー - AFX 1K</block>
+  <block id="1d79a691f5516295945560b466a3604f" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="f09c415cff110572b095b0b47b53909d" category="inline-link-macro-rx"></block></block>
+  <block id="0298cb5434656b7d81623c8cf0a0ac49" category="paragraph">ブート メディアを交換する必要がある場合は、ストレージ システム内のコントローラーをシャットダウンします。</block>
+  <block id="ecb8f83b8d48363a92afc461e11d3752" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="d5411bd0189d789655f8f33f07ceef1c" category="inline-link-macro-rx"></block></block>
+  <block id="00a71ed7c509eb98f49ced1ff5d97961" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="ec62c6ad63f9d0aef598a79792347a29" category="inline-link-macro-rx"></block></block>
+  <block id="cebae21dc29c5d5bdb777db254647344" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="ad27444622868149ebc13d5b01cf807a" category="inline-link-macro-rx"></block></block>
+  <block id="3533fbb04428240d67b3dc0a068f808a" category="summary">AFX 1K ストレージ システムのブート メディアには、重要なファームウェアと構成データが保存されます。交換プロセスでは、システム管理モジュールを取り外し、損傷したブートメディアを取り外し、交換用のブートメディアをシステム管理モジュールにインストールし、システム管理モジュールを再インストールします。</block>
+  <block id="b5215a4025756a14d76a7121afa61e17" category="doc">ブートメディアの交換 - AFX 1K</block>
+  <block id="2aa55971321abed71d340b6b8fd1c8e9" category="paragraph">ブートメディアを交換した後、<block ref="296fbdd9029d6166c4c4a95816ec9c9e" category="inline-link-macro-rx"></block> 。</block>
+  <block id="d3baeeba384a9fd2aa092fda0830b824" category="summary">ブート メディアを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、AFX 1K ストレージ システム内の障害のあるコントローラーをシャットダウンします。</block>
+  <block id="fcd0e02ecea3ed33aea93e95e774b5dd" category="doc">コントローラーをシャットダウンしてブートメディアを交換します - AFX 1K</block>
+  <block id="724585da65c3ba003bd08033bb3dbadf" category="inline-link-macro">ブートメディアを変更する</block>
+  <block id="e9a4fd6d757916321039c241b25883ba" category="paragraph">コントローラーをシャットダウンした後、<block ref="067d400ed1fcec8dc5a70b9626d0928f" category="inline-link-macro-rx"></block> 。</block>
+  <block id="3b944bd07c9350da1f5ff412902503e4" category="doc">シャーシ交換を完了 - AFX 1K</block>
+  <block id="f432d643911bfe1f40fce00570be273c" category="paragraph">コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、AFX 1K シャーシ交換手順の最終ステップを完了します。</block>
+  <block id="89187ec5a518498af60702544b9b4c7a" category="summary">ハードウェア障害が発生した場合は、AFX 1K ストレージ システムのシャーシを交換します。交換プロセスでは、シャーシの前面からコントローラを取り外し、電源ユニット (PSU)、NVRAM12、I/O モジュールとブランク、およびシステム管理モジュールを取り外し、交換用シャーシを取り付け、シャーシ コンポーネントを再インストールします。</block>
+  <block id="e01fa430bba3f9f0fdf0dc0b32be7416" category="doc">シャーシの交換 - AFX 1K</block>
+  <block id="9287ca3da4ca19560b93cd1054ecc58f" category="paragraph">ハードウェア障害が発生した場合は、AFX 1K ストレージ システムのシャーシを交換します。交換プロセスには、コントローラ、I/O カード、NVRAM12 モジュール、システム管理モジュール、および電源ユニット (PSU) の取り外し、交換用シャーシのインストール、およびシャーシ コンポーネントの再取り付けが含まれます。</block>
+  <block id="92c5e9cb0394b67e0571b7f5418b5c4c" category="inline-link-macro">シャーシの交換</block>
+  <block id="4977e2735da0aea95d25556527f50d61" category="paragraph">損傷したAFF A1Kシャーシを交換し、そのコンポーネントを再インストールした後、<block ref="26075a6bb8a8530abf8ac901371df95c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="024891dc154221a3fd983742d0749550" category="summary">障害のあるシャーシを識別し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けて、AFX 1K ストレージ システム内の障害のあるシャーシを交換する準備をします。</block>
+  <block id="6333849dd5ba2298242602f4ab5f909f" category="doc">シャーシ交換の準備 - AFX 1K</block>
+  <block id="95ac2d8894f5f59683ab1ad1d55d6b1b" category="paragraph">障害のあるシャーシを識別し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けて、AFX 1K ストレージ システム内の障害のあるシャーシを交換する準備をします。</block>
+  <block id="0a9ea284b5f7b8d4e982323eeb271f6b" category="paragraph">AFX 1Kシャーシのハードウェアを交換する準備ができたら、<block ref="56c6ba4ece2a517e11a0ae4af44a8f78" category="inline-link-macro-rx"></block> 。</block>
+  <block id="6e4ea7f50c54cd3b0d21845cc7b49c9d" category="summary">AFX 1K ストレージ システムのシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが適切に機能していることを確認すること、 ONTAPのローカル管理者の認証情報、適切な交換用シャーシ、および必要なツールがあることを確認することが含まれます。</block>
+  <block id="5d1fd5150c15deb9a51c38f5746da0a1" category="doc">シャーシ交換の要件 - AFX 1K</block>
+  <block id="fba484388a928d216ad876acba70e03e" category="inline-link-macro">シャーシを交換する準備をする</block>
+  <block id="2bdf5f60b88d84354ea61d8e7391f949" category="paragraph">要件を確認した後、<block ref="5cb936c392cb005a21f5a2729d51d5bd" category="inline-link-macro-rx"></block> 。</block>
+  <block id="6d527d28ba3b8bc126beae28ae1541e1" category="summary">シャーシを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、AFX 1K ストレージ システムのコントローラーをシャットダウンします。</block>
+  <block id="7ca01e9d093ca3b9f2d2f44784c7034c" category="doc">コントローラをシャットダウンしてシャーシを交換します - AFX 1K</block>
+  <block id="700e117571cc91604e09557dbb63d690" category="summary">交換要件を確認し、コントローラーをシャットダウンし、シャーシを交換し、システムの動作を確認して、AFX 1K ストレージ システムのシャーシの交換を開始します。</block>
+  <block id="635a0f2af7889faefc347c15c392fbea" category="doc">シャーシ交換ワークフロー - AFX 1K</block>
+  <block id="bd51183d4ba4a5ed936188cef8dd338f" category="inline-link-macro">シャーシ交換の準備</block>
+  <block id="9c16fd496f58c652ce740a9e71e7e683" category="paragraph-title"><block ref="ccf9965eddaaff76b152812c8e0015f1" category="inline-image-macro-rx" type="image"></block><block ref="39d19595e37f49798f30accb5e41f609" category="inline-link-macro-rx"></block></block>
+  <block id="46ca0a09c6f3afb134927d84dee32b88" category="summary">ハードウェア障害が発生した場合は、AFX 1K ストレージ システムのコントローラーを交換してください。交換プロセスには、障害のあるコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーのインストール、および再起動が含まれます。</block>
+  <block id="73a3ac015d47f0dfbb7a52cac42cda84" category="doc">コントローラーの交換 - AFX 1K</block>
+  <block id="64edf50836c51488f4ed24f39824d5b5" category="inline-link-macro">システム設定を復元する</block>
+  <block id="0200dc180250ad1ca6ad1c8a481f58d1" category="paragraph">故障したAFX 1Kコントローラーを交換した後、<block ref="2b62b6819eda0605f4028f44dd716aa8" category="inline-link-macro-rx"></block> 。</block>
+  <block id="1b0df80c0d86617be0abbfcab9d2d2d5" category="summary">ストレージ リソースの制御を交換用コントローラーに戻して、AFX 1K ストレージ システムが通常の操作を再開できるようにします。</block>
+  <block id="92a81e720f85ab342c32367d565b63f2" category="doc">コントローラーを返却 - AFX 1K</block>
+  <block id="88b44462b1d82769c3deec99a7de8ae7" category="paragraph">ストレージ リソースの制御を交換用コントローラーに戻して、AFX 1K ストレージ システムが通常の操作を再開できるようにします。返却手順は、システムで使用されている暗号化の種類（暗号化なし、またはオンボード キー マネージャー (OKM) 暗号化）によって異なります。</block>
+  <block id="c76464f6ca433d7335a2ea47143448a4" category="inline-link-macro">コントローラーの交換を完了する</block>
+  <block id="446110745fd5673e7549e4e34a69b315" category="paragraph">ストレージリソースの所有権を交換用コントローラに転送した後、<block ref="3f3ce3b807832be4874cb973d188c51d" category="inline-link-macro-rx"></block> 。</block>
+  <block id="fe169b84447f33e9c38bc4b4a408e7b9" category="summary">AFX 1K ストレージ システムのコントローラーを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、正しい交換用コントローラー、システム構成のバックアップ、必要なツールとファームウェアへのアクセスが含まれます。</block>
+  <block id="cb37b8ea1104dffadfd001f34d75a6cc" category="doc">コントローラーの交換要件 - AFX 1K</block>
+  <block id="b407ef59b776b8cf171044ade96cabc8" category="paragraph">AFX 1K ストレージ システムのコントローラーを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることを確認すること、正しい交換用コントローラーがあることを確認すること、コントローラーのコンソール出力をテキスト ログ ファイルに保存することが含まれます。</block>
+  <block id="a13c2f7ad34208b9c2bcd0523880b6d8" category="inline-link-macro">コントローラーをオフにする</block>
+  <block id="9fad96d83a169e0215ced98454a45af0" category="paragraph">AFX 1Kコントローラーの交換要件を確認した後、<block ref="8e2bedbe0502a7014e560cda99cd14d0" category="inline-link-macro-rx"></block> 。</block>
+  <block id="8de2b6e5e19ba6dbe87babbf81eba95e" category="summary">論理インターフェイス (LIF) がホーム ポートにレポートしていることを確認し、クラスターのヘルス チェックを実行してから、障害が発生した部品をNetAppに返送し、AFX 1K コントローラーの交換手順の最終ステップを完了します。</block>
+  <block id="7d95db1a2aa5165e89a53616b8d0de09" category="doc">コントローラーの完全交換 - AFX 1K</block>
+  <block id="040e4968cb29da0845bd95fac21f1d12" category="summary">AFX 1K ストレージ システムのコントローラーに障害が発生した場合は、シャットダウンしてください。メンテナンスやコンポーネントの交換を行う前に、データの損失を防ぎ、システムの安定性を確保するために、コントローラーを安全にシャットダウンすることが重要です。</block>
+  <block id="e66689584daa37dd4658540d3048f65f" category="doc">障害のあるコントローラーをシャットダウンする - AFX 1K</block>
+  <block id="8675ee7f370bbc45d7767c6dc159f502" category="paragraph">コントローラーを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、AFX 1K ストレージ システム内の障害のあるコントローラーをシャットダウンします。</block>
+  <block id="4a1044846a2e1c13ccf461469f5d7d8e" category="paragraph">コントローラーをシャットダウンした後、<block ref="4c59920dffd5894cdc2dc27ddd7fff07" category="inline-link-macro-rx"></block> 。</block>
+  <block id="74ca9205399426d88c904d79702a11e6" category="summary">AFX 1K ストレージ システムでコントローラの HA 構成がアクティブであり、正しく機能していることを確認し、システムのアダプタがディスクへのすべてのパスをリストしていることを確認します。</block>
+  <block id="e8b5d95f564b1b3302505fd658805c3f" category="doc">システム構成の復元と検証 - AFX 1K</block>
+  <block id="763ba015a573d8b71646578b468f0f6f" category="paragraph">AFX 1Kストレージシステムの構成を復元して検証した後、<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="50cc1303646040ecadbbb483d82d7414" category="summary">障害のあるコントローラーをシャットダウンし、コントローラーを取り外して交換し、システム設定を再構成し、システムの動作を確認して、AFX 1K ストレージ システムのコントローラーの交換を開始します。</block>
+  <block id="eab1d72fab23877549665d815e2cfa24" category="doc">コントローラー交換ワークフロー - AFX 1K</block>
+  <block id="743c38ce7cc7537eb819df5842610176" category="paragraph">障害のあるコントローラーをシャットダウンし、コントローラーを取り外して交換し、システム構成を復元し、システムの動作を確認して、AFX 1K ストレージ システムのコントローラーの交換を開始します。</block>
+  <block id="32dbde8cc9ebc666b711e3e182cc1155" category="paragraph">障害のあるコントローラーを取り外し、FRU コンポーネントを交換用モジュールに移動し、交換用モジュールをエンクロージャーに取り付けることで、コントローラーを交換します。</block>
+  <block id="bc2f5b5e893829df3a4f8f157495b9e4" category="paragraph">交換用コントローラーの低レベルシステム構成を確認し、必要に応じてシステム設定を更新します。</block>
+  <block id="7a0fcbdd7acea06c9cc0de67e71078fc" category="paragraph">論理インターフェイス (LIF) を検証し、クラスターの健全性をチェックし、障害のある部分をNetAppに返送します。</block>
+  <block id="ce7f2a4e6dc6afdfee6601c300768c60" category="summary">修正可能または修正不可能なメモリ エラーが過剰に検出された場合は、AFX 1K ストレージ システム内の DIMM を交換してください。このようなエラーにより、ストレージ システムがONTAPを起動できなくなる可能性があります。交換プロセスには、障害のあるコントローラのシャットダウン、取り外し、DIMM の交換、コントローラの再インストール、そして障害のある部品のNetAppへの返送が含まれます。</block>
+  <block id="a4f4c50706763d2c35474a5b29355a09" category="doc">DIMMの交換 - AFX 1K</block>
+  <block id="990b29c61dfdfd74549b81634ab463bd" category="summary">適切な冷却を維持し、システム パフォーマンスの問題を防ぐには、AFX 1K システム内の故障したファン モジュールを交換します。ファンはホットスワップ可能なので、システムをシャットダウンせずに交換できます。</block>
+  <block id="9d307332ab45a149a9e4517be0e45469" category="doc">ファンの交換 - AFX 1K</block>
+  <block id="3275ea8b27b82eaa3729745f3421aff1" category="paragraph">適切な冷却を維持し、システム パフォーマンスの問題を防ぐには、AFX 1K システム内の故障したファン モジュールを交換します。ファンはホットスワップ可能なので、システムをシャットダウンせずに交換できます。この手順には、コンソールのエラー メッセージと LED インジケータを使用して障害のあるファンを特定し、ベゼルを取り外し、ファン モジュールを交換し、障害のある部品をNetAppに返送することが含まれます。</block>
+  <block id="221a370ab667b0ba8911f087f718dd14" category="summary">AFX 1Kハードウェアのメンテナンス</block>
+  <block id="eb3e5ba713391669625d7b944e64857b" category="doc">AFX 1Kハードウェアのメンテナンス</block>
+  <block id="55a805dc1b4e566d982fa51383909399" category="paragraph">AFX 1K ストレージ システムでは、次のコンポーネントに対してメンテナンス手順を実行できます。</block>
+  <block id="ab7b8c913b9efd45d5c9bcd0a6349c30" category="summary">AFX 1K ストレージ システムに I/O モジュールを追加すると、ネットワーク接続が強化され、システムのデータ トラフィック処理能力が拡張されます。</block>
+  <block id="153d12883defa41849d56c17b60bb15d" category="doc">I/Oモジュールを追加 - AFX 1K</block>
+  <block id="d0cb457957ef93870e05fde6f1d7e0b1" category="paragraph">空きスロットがある場合、またはすべてのスロットが完全に使用されている場合は、AFX 1K ストレージ システムに I/O モジュールを追加できます。</block>
+  <block id="466feff7e54715b87511b39db238ce7d" category="summary">AFX 1K ストレージ システムは、I/O モジュールを拡張または交換する柔軟性を提供し、ネットワーク接続とパフォーマンスを強化します。ネットワーク機能をアップグレードしたり、障害が発生したモジュールに対処したりする場合には、I/O モジュールの追加または交換が不可欠です。</block>
+  <block id="927ad4764c04a8845b582b8cc2482961" category="doc">I/Oモジュールの追加と交換の概要 - AFX 1K</block>
+  <block id="9cd46df360ef153dd45a51d4a00f87bd" category="paragraph">AFX 1K ストレージ システム内の障害が発生した I/O モジュールを、同じタイプの I/O モジュールまたは異なる種類の I/O モジュールに交換できます。空きスロットのあるシステムに I/O モジュールを追加することもできます。</block>
+  <block id="da12583a4d621e7218100e3f47fba9fd" category="paragraph">AFX 1K コントローラーの I/O スロットには、次の図に示すように 1 ～ 11 の番号が付けられています。</block>
+  <block id="d6ae5fc17c7f8e706e65e9de9aa07e33" category="image-alt">AFX 1K コントローラーのスロット番号</block>
+  <block id="2d1e260989bdb9eb272a3c7a309e1dc0" category="summary">モジュールに障害が発生した場合、またはより高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、AFX 1K ストレージ システムの I/O モジュールを交換します。交換プロセスには、コントローラのシャットダウン、障害のあるI/Oモジュールの交換、コントローラの再起動、そして障害のある部品のNetAppへの返送が含まれます。</block>
+  <block id="29d8e412fe252f27c07508bf9caee543" category="doc">I/Oモジュールの交換 - AFX 1K</block>
+  <block id="20914731863c8477aa5b351df0d1d958" category="paragraph">AFX 1K ストレージ システム内の I/O モジュールに障害が発生した場合は、そのモジュールを交換します。交換プロセスには、コントローラのシャットダウン、障害のあるI/Oモジュールの交換、コントローラの再起動、そして障害のある部品のNetAppへの返送が含まれます。</block>
+  <block id="27852913bf5f385e1b1ff032d05b76c9" category="summary">AFX 1K ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。</block>
+  <block id="fe4bb2898511b61f5ea638303ae1ac58" category="doc">メンテナンス手順の概要 - AFX 1K</block>
+  <block id="a193d75be0d71a17cf7c6470ab81044a" category="paragraph">メンテナンス手順では、AFX 1K ストレージ システムがすでにONTAP環境にストレージ ノードとして導入されていることを前提としています。</block>
+  <block id="c0e6d430c38f280369988922128024f4" category="paragraph"><block ref="c0e6d430c38f280369988922128024f4" category="inline-link-macro-rx"></block></block>
+  <block id="58a851f6216724f76b5a14d7c8fad39c" category="paragraph">ブート メディアには、システムのブート時に使用されるONTAPイメージ ファイルのプライマリ セットとセカンダリ セットが保存されます。</block>
+  <block id="4cac34edd40d2c6e08c089dcf4436875" category="paragraph"><block ref="4cac34edd40d2c6e08c089dcf4436875" category="inline-link-macro-rx"></block></block>
+  <block id="96369a18b433f6277caa02c223cdee1b" category="paragraph">NVRAM (不揮発性ランダム アクセス メモリ) モジュールにより、システムの電源が失われた場合でも、コントローラは飛行中のデータを保護および保存できます。システム ID はNVRAMモジュールに保存されます。交換されると、コントローラは交換されたNVRAMモジュールからの新しいシステム ID を使用します。</block>
+  <block id="ba86c13700b25938e5041d7bc9cfc643" category="summary">AFX 1K ストレージ システムの NV バッテリーは、停電時に重要なシステム データを保存する役割を担っているため、バッテリーの充電が減り始めたり、故障したりした場合は、NV バッテリーを交換してください。交換プロセスには、障害のあるコントローラのシャットダウン、コントローラ モジュールの取り外し、NV バッテリの交換、コントローラ モジュールの再インストール、および障害のある部品のNetAppへの返送が含まれます。</block>
+  <block id="5a1e9240c63bb2d47a1d91006fe2de64" category="doc">NVバッテリーの交換 - AFX 1K</block>
+  <block id="ab25b887fbeceb14b6ae2134fc821467" category="summary">不揮発性メモリに障害が発生した場合、またはアップグレードが必要な場合は、AFX 1K ストレージ システムのNVRAM を交換してください。</block>
+  <block id="a3f799c7898eb1c65e65bccc7f84e65a" category="doc">NVRAMの交換 - AFX 1K</block>
+  <block id="5252fbdb09b2c180566fb0559d145eca" category="paragraph">不揮発性メモリに障害が発生した場合、またはアップグレードが必要な場合は、AFX 1K ストレージ システムのNVRAM を交換してください。交換プロセスには、障害のあるコントローラのシャットダウン、 NVRAMモジュールまたはNVRAM DIMM の交換、および障害のある部品のNetAppへの返却が含まれます。</block>
+  <block id="104d4bf22fb4ec4b006d8a1b7623a2a7" category="summary">AFX 1K ストレージ システムの AC 電源ユニット (PSU) が故障または不具合を起こした場合は交換し、システムが安定した動作に必要な電力を継続的に受けられるようにします。交換プロセスには、対象の PSU を切断し、電源ケーブルを抜き、障害のある PSU を取り外して交換用の PSU を取り付け、その後電源に再接続することが含まれます。</block>
+  <block id="018de49a4e626e242e4eda5e9ce9fa80" category="doc">電源の交換 - AFX 1K</block>
+  <block id="132aa00afb63c9904de293769532d2cb" category="summary">正確な時間同期に依存するサービスとアプリケーションが引き続き動作できるように、AFX 1K ストレージ システムのリアルタイム クロック (RTC) バッテリー (一般にコイン型電池と呼ばれる) を交換します。</block>
+  <block id="fb3e3bd1a272fbf4d2f6ad86f25c717e" category="doc">リアルタイムクロックの電池を交換する - AFX 1K</block>
+  <block id="346fc0ff9bc74b9a78c085dec5e578a7" category="summary">AFX 1K ストレージ システムのシステム管理モジュールに障害が発生した場合、またはファームウェアが破損した場合は、システム管理モジュールを交換してください。交換プロセスには、コントローラのシャットダウン、故障したシステム管理モジュールの交換、コントローラの再起動、ライセンス キーの更新、故障した部品のNetAppへの返却が含まれます。</block>
+  <block id="97a3fe0efca2c4986dc7ae7a30a90a4e" category="doc">システム管理モジュールの交換 - AFX 1K</block>
+  <block id="897ec37b377846d2e9bad591f60f623c" category="summary">適切な冷却を維持し、システム パフォーマンスの問題を防ぐために、 ASA A1K システム内の故障したファン モジュールを交換します。ファンはホットスワップ可能なので、システムをシャットダウンせずに交換できます。</block>
+  <block id="ef7ca18cc3ecc3f26a36a7b76b2718ee" category="paragraph">適切な冷却を維持し、システム パフォーマンスの問題を防ぐために、 ASA A1K システム内の故障したファン モジュールを交換します。ファンはホットスワップ可能なので、システムをシャットダウンせずに交換できます。この手順には、コンソールのエラー メッセージと LED インジケータを使用して障害のあるファンを特定し、ベゼルを取り外し、ファン モジュールを交換し、障害のある部品をNetAppに返送することが含まれます。</block>
+  <block id="0d10beeaffa344cce91789b4d6bdd9ac" category="inline-link-macro">AFXスイッチ</block>
+  <block id="723bc0a77490c392225673a06e79300c" category="list-text"><block ref="723bc0a77490c392225673a06e79300c" category="inline-link-macro-rx"></block></block>
+  <block id="f267a68fd1c8bddcc992701898021398" category="inline-link-macro">クラスタースイッチ</block>
+  <block id="cfa57c7a144e70924e4204730542a65f" category="list-text"><block ref="cfa57c7a144e70924e4204730542a65f" category="inline-link-macro-rx"></block></block>
+  <block id="403284bd44beda112195a484c8a76421" category="inline-link-macro">ストレージ スイッチ</block>
+  <block id="435e29710768f14877fe952337b92b8b" category="list-text"><block ref="435e29710768f14877fe952337b92b8b" category="inline-link-macro-rx"></block></block>
+  <block id="bc8a2cd252a5beb1dbf4f209baea67eb" category="inline-link-macro">共有スイッチ</block>
+  <block id="f7c018fd044f09965acb0f8a145df757" category="list-text"><block ref="f7c018fd044f09965acb0f8a145df757" category="inline-link-macro-rx"></block></block>
+  <block id="8800e4103adfd5822468b330e33ee741" category="list-text"><block ref="8800e4103adfd5822468b330e33ee741" category="inline-link-macro-rx"></block></block>
+  <block id="51686d37e51a378d1be55d6e38beb7d7" category="list-text"><block ref="51686d37e51a378d1be55d6e38beb7d7" category="inline-link-rx"></block></block>
+  <block id="b54483c149c4951b43214e0e419d0882" category="list-text">ONTAPの導入については、<block ref="daad8f612ac7448a64fdb14518a581cb" category="inline-link-rx"></block> 。</block>
+  <block id="aeaeb10b6f9fde2ae4de6c336b6e2a09" category="list-text">MetroCluster導入におけるONTAPについては、<block ref="63d00fc18e84d6621c63394dbe0320b4" category="inline-link-rx"></block> 。</block>
+  <block id="b555c88715871e0ab49ad92e684efffd" category="summary">ONTAPがまだ実行されていない場合、またはシェルフをシステムにケーブル接続する前にホットアドする場合は、システムのシェルフIDを変更できます。また、 ONTAPが起動して実行中（コントローラ モジュールがデータの提供に使用可能）で、シェルフ内のすべてのドライブが未所有、スペア、またはオフライン アグリゲートの一部である場合は、シェルフ ID を変更することもできます。</block>
+  <block id="b2931c9de96ffec093328665afff6c26" category="doc">棚IDの変更 - NX224棚</block>
+  <block id="a9903f2b0fc1c58d182e0c36f31792a7" category="paragraph">ONTAP がまだ実行されていない場合、またはシェルフをシステムにケーブル接続する前にホットアドする場合は、システム内の NX224 シェルフ ID を変更できます。  ONTAPが起動して実行中の場合（コントローラ モジュールがデータの提供に使用可能）、およびシェルフ内のすべてのドライブが未所有またはスペアである場合に、シェルフ ID を変更することもできます。</block>
+  <block id="88b13fd715f99692479fe3ad83ca588f" category="list-text">シェルフ ID は AFX クラスター内で一意である必要があります。</block>
+  <block id="686a1fd2be162b47a75153565d6ddda5" category="admonition">NX224 シェルフには電源装置に電源スイッチがありません。</block>
+  <block id="9961ebf93b7e3bdaf8f799a2a45040a1" category="paragraph">電源コードを差し込むとすぐに電源がオンになります。2 色の LED が緑色に点灯します。次の手順に進む前に、棚 ID が表示されるまで待ちます。</block>
+  <block id="0d9cb84ca4d1b976611c703d55106b16" category="image-alt">NX224 シェルフ ID を変更する</block>
+  <block id="c3248ba61632476b6423842b95414f99" category="paragraph">棚IDボタンアクセス</block>
+  <block id="f6b50513ccb0458f52042b169361dd21" category="list-text">ONTAPが実行中（コントローラがデータの提供に使用可能）で、シェルフ内のすべてのドライブが未所有のスペアである場合は、少なくとも 180 秒待機します。</block>
+  <block id="9daf77d9d23bfd6b9091a7cc689fc060" category="doc">ドライブのホットアド - NX224 シェルフ</block>
+  <block id="6297d133d06242a84ced78f25874e3a3" category="summary">AFX クラスターが特定の要件を満たし、AFX クラスターに適用可能な準備タスクが完了したら、NX224 ドライブ シェルフをホット アドできます。</block>
+  <block id="21fcbf0345b3dd3b3ef04dc5e417d6f9" category="doc">棚のホットアド - NX224棚</block>
+  <block id="a65fc212542af95abeff48e08e593cf1" category="paragraph">既存の AFX クラスター構成に NX224 シェルフをホットアドすることで、ストレージ機能を拡張できます。</block>
+  <block id="ea76371559e3b84b90531685bb2cc925" category="list-text">ホットアドされたシェルフをケーブル接続すると、 ONTAP はシェルフを認識します。  NSM シェルフ ファームウェアとドライブ ファームウェアは、必要に応じて自動的に更新されます。</block>
+  <block id="0449258a59d5f091984e585ac1700de0" category="list-text">シェルフをホットアドする前に、次のものを用意してください。</block>
+  <block id="dcb6f1df5a79d4b858532ac39ef41800" category="list-text">片側をまっすぐにしたペーパークリップ、または先端の細いボールペン。</block>
+  <block id="48b9c10e352c576c4d2a15eb261c489e" category="list-text">棚を接続するためのケーブルの正しい数とタイプ。見る<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
+  <block id="97e843199d107185893be6652189f367" category="list-text">フル装備の NX224 シェルフの重量は平均 56.8 ポンド (25.8 kg) になる可能性があり、持ち上げるには 2 人または油圧リフトの使用が必要になることに注意してください。棚の重量が不均衡になるため、棚の重量を減らすために棚のコンポーネントを（棚の前面または背面から）取り外すことは避けてください。</block>
+  <block id="cdc7d77d508c7e684dbf7a6b1a73e8fe" category="list-text">NX224 シェルフには 2 つの NSM140 モジュールが含まれています。上部のモジュールはスロット A (NSM A) に挿入し、下部のモジュールはスロット B (NSM B) に挿入します。</block>
+  <block id="fdfeff28020f6a2a7bc4cce8c5fc17e0" category="list-text">プラットフォーム モデルとONTAPのバージョンは、ホット アドする NX224 シェルフとドライブをサポートしている必要があります。見る<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block></block>
+  <block id="11eccffa80a3745490c99b2153d0e6ef" category="list-text">AFX クラスターでは、サポートされるシェルフの最大数よりも、少なくともホットアドする予定のシェルフの数だけ少なくする必要があります。</block>
+  <block id="27bed5e0bef8ffc89b7d066e77014c65" category="paragraph">シェルフをホットアドした後、AFX クラスターでサポートされるシェルフの最大数を超えることはできません。見る<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
+  <block id="cbd091eaccc4c25cb2d0785c91e015db" category="list-text">*ベストプラクティス:* 最新バージョンの<block ref="2e664cd4eb21331de01544565a2d83a5" category="inline-link-rx"></block>棚をホットアドする前にインストールします。</block>
+  <block id="bd9caf3b849b96aa4a502ec90d4c742e" category="list-text">*ベストプラクティス*: 実行<block ref="7064c89577900622f24a070c24ebbaa7" category="inline-link-rx"></block>シェルフのホットアドの前後で、ストレージ ケーブル接続のエラー メッセージと実行する必要がある修正アクションを確認します。</block>
+  <block id="745113694bb5033fda5a0490b99b9933" category="paragraph">シェルフをホットアドする前にActive IQ Config Advisor を実行すると、既存のシェルフ イーサネット (ENET) 接続のスナップショットが提供され、NVMe シェルフ モジュール (NSM) ファームウェア バージョンが検証され、AFX クラスターですでに使用されているシェルフ ID を検証できるようになります。</block>
+  <block id="13a022b68b852927d7edee0b94c0a3a3" category="paragraph">シェルフをホットアドした後にActive IQ Config Advisor を実行すると、シェルフが正しくケーブル接続されていること、およびシェルフ ID が AFX クラスター内で一意であることを確認できます。</block>
+  <block id="10010933c470eb42b7e4e46dfe5f7d5d" category="list-text">*ベストプラクティス:* 最新バージョンの<block ref="2e6e5b670045aa9f131e153e1b997791" category="inline-link-rx"></block>そして<block ref="fdb117163130a37cd01d2ae31eb75969" category="inline-link-rx"></block>新しい棚を追加する前に、ストレージ システムに次の変更を加えてください。</block>
+  <block id="336325c2092128a288697177cdf1fc47" category="section-title">ステップ1: ホットアド用のシェルフを設置する</block>
+  <block id="0266c149e685db403cf95e6b9ecf42f1" category="paragraph">NX224 シェルフをキャビネットまたは Telco ラックに設置し、電源コードを接続し (シェルフの電源が自動的にオンになります)、シェルフ ID を設定する必要があります。</block>
+  <block id="1dd5eb1c3ae6e734ab351a15ea1ce787" category="paragraph">すべてのシェルフを同じラック内のスイッチの近くに設置することをお勧めします。</block>
+  <block id="ab59304fd0b182bd0fb3931259ce48a4" category="list-text">電源コードを棚に接続し、電源コード固定具で固定します。</block>
+  <block id="bd132cc1c5eafe12aeab43eb25aa7736" category="list-text">シェルフ ID を AFX クラスター内で一意の番号に設定します。</block>
+  <block id="cf1504459ccbd9972ce614ffddcca8db" category="paragraph">詳しい手順については、<block ref="7cd314cdafb8f8a79c802fe170bef3fa" category="inline-link-macro-rx"></block> 。</block>
+  <block id="8dfbc8e6eb0720a438ea5429bae10871" category="section-title">ステップ2: ホットアド用のケーブルシェルフ</block>
+  <block id="7b2419013222546bf53bade34b87dbea" category="paragraph">ホット アドする各 NX224 シェルフをケーブルで接続し、各シェルフが各スイッチに 8 つの接続を持つようにします。</block>
+  <block id="56665e6808b72ed1ca9f60175599ba9e" category="list-text">適切なケーブル コネクタの向き、および NX224 NSM140 シェルフ モジュール上のポートの位置とラベル付けを理解しておいてください。</block>
+  <block id="c4e129e9ef79ee0b2dc9124247b8dee5" category="list-text">各 NSM140 モジュールには、4 x 100GbE CX7 Path_A ポート (e1a、e2a、e3a、e4a) と 4 x 100GbE CX7 Path_B ポート (e1b、e2b、e3b、e4b) が含まれています。</block>
+  <block id="773c6427a665c567fd82085251ad808e" category="admonition">各 NSM140 モジュールの Path_A ポートと Path_B ポートの両方に個別のブレークアウト ケーブルが必要であり、シェルフごとに合計 4 本のブレークアウト ケーブルが必要になります。</block>
+  <block id="8c6c0c2400c7ec078a748b326e47cdb5" category="paragraph">次の図は、NSM140 モジュールの Path_A ポートと Path_B ポートを示しています。</block>
+  <block id="9a36ca7f3df6f5e2442b89ea6f74b28a" category="image-alt">NX224 NSM140 Path_A および Path_B ポートの場所。</block>
+  <block id="91fdc97af1b9f5933a5aaca7567a9ac9" category="paragraph">Path_A ポート（青いポート）</block>
+  <block id="9a6d6e3369535723881fb7084d456066" category="paragraph">Path_B ポート（赤いポート）</block>
+  <block id="0d751a1e018d36709b8b432579e17ae7" category="list-text">シェルフ NSM A および NSM B Path_A ポート e1a、e2a、e3a、および e4a をスイッチ A の任意のポートへケーブル接続します。</block>
+  <block id="03832137a2df071ed5fe219e534cd9c2" category="list-text">シェルフ NSM A および NSM B Path_B ポート e1b、e2b、e3b、および e4b をスイッチ B の任意のポートに接続します。</block>
+  <block id="c73a63da4aa2a55331dc580e3f7a6058" category="paragraph">次の図は、スイッチ構成にシェルフをホット アドするためのケーブル接続を示しています。追加のシェルフを追加するには、同じスイッチベースのケーブル接続方法に従います。</block>
+  <block id="b05d02c2614c4a2d2b2a26a857851df5" category="image-alt">NX224スイッチからAFX A1Kへのケーブル接続</block>
+  <block id="6556efde934a1b635008a5645f522b81" category="summary">NX224 シェルフメンテナンスの概要。</block>
+  <block id="aea5557e47a25549577bff88a217d584" category="doc">棚メンテナンスの概要 - NX224棚</block>
+  <block id="993a8298922e1e33c5d4cd26d00918db" category="paragraph">NX224 シェルフをメンテナンスするには、次の操作を実行できます。</block>
+  <block id="fd707bab34d37e3b52a981059bad8f48" category="doc">モニタードライブシェルフLED - NX224シェルフ</block>
+  <block id="25a6c9168ed620e1583de103c9a0feda" category="paragraph">ドライブ シェルフ コンポーネント上の LED の位置とステータス状態を把握することで、シェルフの正常性を監視できます。</block>
+  <block id="beab8079a8da60c183b5d6654c926a74" category="list-text">シェルフのオペレータ ディスプレイ パネル (ODP) と両方の NVMe シェルフ モジュール (NSM) にある位置 (青色) LED をアクティブにすると、サービスが必要なシェルフを物理的に特定するのに役立ちます。<block ref="d6bcc7ed2edc5b8ad7e7188bba8189eb" prefix=" " category="inline-code"></block></block>
+  <block id="7162be5b0165c245b74c633ca80cf635" category="image-alt">NX224 NSM140モジュールLED</block>
+  <block id="ef5f0a384e84cca38415d770e2f8b33f" category="paragraph">AC 電源装置 (PSU) の LED は、PSU が正常に機能しているか、ハードウェアに問題があるかを示します。</block>
+  <block id="8fd160be5af9fd0164de9ed85145d662" category="paragraph">次の図と表は、PSU 上の LED について説明しています。</block>
+  <block id="4396610678e279bf4e374e19796d8efa" category="paragraph">筐体にAC電源が供給されていない</block>
+  <block id="5d6dfe5ed734a2782721caf18e0b4c2c" category="paragraph">PSUにAC電源が供給されていない</block>
+  <block id="bcf3b498a47e3fa766dac31a45cbe289" category="paragraph">AC 電源はオンですが、PSU がエンクロージャ内にありません</block>
+  <block id="025f8295430770e736e984e6794d5d23" category="summary">NX224 シェルフ内の障害が発生したブート メディアを交換できます。ブート メディアの交換は、シェルフの電源がオンで I/O が進行中でも、中断なく実行できます。</block>
+  <block id="332b9527a936c07781bf0cadb44287ea" category="doc">ブートメディアの交換 - NX224シェルフ</block>
+  <block id="eb5f70737199e249936ef82aa6ae88c5" category="list-text">シェルフのパートナー NSM は起動して実行されており、正しくケーブル接続されている必要があります。そうすることで、障害が発生した FRU (ターゲット NSM) を搭載した NSM を取り外したときにシェルフの接続が維持されます。パートナーNSMのステータスを確認するには、<block ref="d3209ff29e83e82c4ec5003559161f56" category="inline-link-rx"></block> 。</block>
+  <block id="901f0035fc2e222a5f2556710312ea92" category="list-text">電源コード リテーナーを開いて電源コードを電源装置から抜き、電源コードを電源装置から取り外します。</block>
+  <block id="49c7a6cf6e0ed8a4a54247d9cd7587a2" category="list-text">ストレージ ケーブルを同じ 8 つの NSM ポートに再接続します。</block>
+  <block id="68ea53fe54056e3cd966fd8634770fa8" category="list-text">電源装置に電源コードを再接続し、電源コード固定クリップを使用して電源コードを固定します。</block>
+  <block id="3c562e952688339fa635b0286f963d4f" category="inline-link">Active IQ Config Advisor を実行中</block>
+  <block id="1da3eefc08ef3fe26013bf7d8153fa76" category="list-text">NSMが正しく配線されているか確認するには、<block ref="634f3ece8b47f8abdb5020d54bf495f5" category="inline-link-rx"></block> 。</block>
+  <block id="c9e888f57f6411c65b9b5e2979bef85d" category="summary">電源がオンで I/O が進行中の NX224 ドライブ シェルフで、障害のある DIMM を中断せずに交換できます。</block>
+  <block id="475128cdfcd3d32fe12f61f1c5c81913" category="doc">DIMMの交換 - NX224シェルフ</block>
+  <block id="49386f77e99642fe7af5b51a113e488e" category="list-text">*ベスト プラクティス:* ベスト プラクティスとしては、FRU コンポーネントを交換する前に、システムに最新バージョンの NVMe シェルフ モジュール (NSM) ファームウェアとドライブ ファームウェアをインストールしておくことが挙げられます。。NetAppNetAppサイトにアクセスして、 <block ref="131f203722a665651ecdd6a35f72c75e" category="inline-link-rx"></block>そして<block ref="33577154670f1ae7cae0968251dd0eac" category="inline-link-rx"></block> 。</block>
+  <block id="cd8dd115df9bdca0ec5fbe812575893b" category="list-text">シェルフのパートナー NSM は起動して実行されており、正しくケーブル接続されている必要があります。これにより、障害が発生した FRU (ターゲット NSM) を搭載した NSM を取り外してもシェルフの接続が維持されます。パートナーNSMのステータスを確認するには、<block ref="d3209ff29e83e82c4ec5003559161f56" category="inline-link-rx"></block> 。</block>
+  <block id="6c1921d7df069dd1505980207b7ea2f4" category="list-text">他の 3 つの DIMM を含む、システム内の他のすべてのコンポーネントが正常に機能している必要があります。</block>
+  <block id="f705751ede8dd76e15ce083a1ea66423" category="paragraph">NSM カバーの FRU ラベルには、NSM 内の 4 つの DIMM の位置が示されています。</block>
+  <block id="c642de7f35cea37f108d6c93586ba109" category="inline-link">Config Advisor の実行</block>
+  <block id="0051f60b031fe2ab0d81803f9509c124" category="list-text">NSMが正しく配線されているか確認するには、<block ref="a1776ed37448018544fe80631966bcd7" category="inline-link-rx"></block> 。</block>
+  <block id="275d34ff75df0b93dbba7bdb3db9f37c" category="summary">電源がオンで I/O が進行中の NX224 シェルフでは、障害が発生したドライブを中断せずに交換できます。</block>
+  <block id="7a87bb303f4254003a5ab0d31a1ed9fb" category="doc">ドライブのホットスワップ - NX224 シェルフ</block>
+  <block id="cf2ae209b31955517ebee51c6c982859" category="list-text">インストールするドライブは、NX224 シェルフでサポートされている必要があります。シェルフの互換性のあるドライブは、<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 。</block>
+  <block id="94f21a41afb0bb0d980e0970f99f7d57" category="inline-link">CLIドキュメントによるNetApp暗号化の概要</block>
+  <block id="8fa5eb38a5f3ec0d799934def134e531" category="paragraph">SEDを交換する前と交換後に完了する必要がある追加の手順については、<block ref="a45663e4b664b1d312b1973da8ba3d7f" category="inline-link-rx"></block> 。</block>
+  <block id="58beba187bfd695f547fd130d6467955" category="inline-link">ディスク認定パッケージの最新バージョンをダウンロードする</block>
+  <block id="7e2123141c266fa24d4f529172a4b541" category="list-text">*ベストプラクティス:* システムが新しく認定されたドライブを認識して使用できることを確認するには、<block ref="3d50ed979df83d97dd20b0cc2c8bc3a9" category="inline-link-rx"></block> 。</block>
+  <block id="c9ebef258f2f12def066b21415a56382" category="paragraph">これにより、ドライブが認識されないために、最新ではないドライブ情報があることに関するシステム イベント メッセージが表示されず、ドライブのパーティション分割が妨げられることがなくなります。  DQP は、最新ではないドライブ ファームウェアについても通知します。</block>
+  <block id="9552387a009f53c2998cb220cd16067e" category="summary">NX224 シェルフでは、電源がオンになっていて I/O が進行中でも、障害が発生したファンを中断せずに交換できます。</block>
+  <block id="57d682160e2237bd5f87944217c26dcf" category="doc">ファンモジュールの交換 - NX224シェルフ</block>
+  <block id="89f2ef4ce5077162c93e2010696841ef" category="paragraph">ファン モジュール内のファンの 1 つまたは両方が故障した場合は、ファン モジュールを交換できます。この手順は、I/O が進行中で電源がオンになっている NX224 シェルフで中断なく完了できます。</block>
+  <block id="392ec912e5e56a755ba6aec50131adae" category="list-text">*ベスト プラクティス:* ベスト プラクティスは、FRU コンポーネントを交換する前に、システムに最新バージョンの NSM ファームウェアとドライブ ファームウェアをインストールすることです。。NetAppNetAppサイトにアクセスして、 <block ref="131f203722a665651ecdd6a35f72c75e" category="inline-link-rx"></block>そして<block ref="33577154670f1ae7cae0968251dd0eac" category="inline-link-rx"></block> 。</block>
+  <block id="37a8affe1fa106032de554c062e9e1cd" category="list-text">NSM ポートからシェルフ ケーブルを外します。</block>
+  <block id="df72294c1d47e46ba433ddee498c7caa" category="list-text">シェルフのケーブルを同じ 8 つの NSM ポートに再接続します。</block>
+  <block id="795e5b2d8dd6ace5605e89211abdf341" category="summary">電源がオンで I/O が進行中の NX224 シェルフ内で、障害が発生した Ethernet I/O モジュールを中断なく交換できます。</block>
+  <block id="56c6680038919ffea816b0106b2ef69f" category="doc">イーサネットI/Oモジュールの交換 - NX224シェルフ</block>
+  <block id="bcbb78790793c3b3a6c4cc3de0f22bc6" category="list-text">障害が発生した NSM を取り外したときにシェルフの接続が維持されるように、シェルフのパートナー NSM が稼働しており、正しくケーブル接続されている必要があります。パートナーNSMのステータスを確認するには、<block ref="d3209ff29e83e82c4ec5003559161f56" category="inline-link-rx"></block> 。</block>
+  <block id="8b9a79e838c879494b6ec6a4dd9f83d7" category="list-text">NSM のケーブルを再配線します。</block>
+  <block id="2ddc2541950d2b7cf5fa865af0c30811" category="list-text">障害が発生した I/O モジュールを含む NSM とシェルフ オペレータ ディスプレイ パネルの注意 (オレンジ色) LED が点灯していないことを確認します。</block>
+  <block id="bb737625afde517204010c198f050aee" category="summary">電源がオンで I/O が進行中の NX224 ドライブ シェルフで、障害のある NVMe シェルフ モジュール (NSM) を中断せずに交換できます。</block>
+  <block id="868dffc494c85c09a39784a568ce58c4" category="doc">NSM - NX224 シェルフの交換</block>
+  <block id="8caf14bc08677c718cf235d44b23051c" category="paragraph">電源がオンで I/O が進行中の NX224 ドライブ シェルフで、障害のある NVMe シェルフ モジュール (NSM) を中断せずに交換できます。</block>
+  <block id="1ca26d4850e86adaada89afb267eaf6f" category="list-text">NSM を交換するには、DIMM、ファン、ブート メディア、I/O モジュール、および電源を、障害のある NSM から交換用の NSM に移動する必要があります。</block>
+  <block id="580caa7b67645719e0a4c78df2b4ea6a" category="paragraph">リアルタイム クロック (RTC) のバッテリーは移動しません。交換用 NSM にはプリインストールされています。</block>
+  <block id="39caf15eb85e61f56739c7cef79eeaea" category="list-text">NSM の取り外しと取り付けの間には少なくとも 70 秒の間隔をあけてください。</block>
+  <block id="be67945aa5186fecd415cd1ed16db4c9" category="list-text">シェルフのパートナー NSM は起動して実行されており、正しくケーブル接続されている必要があります。そうすることで、障害が発生した NSM を削除してもシェルフの接続が維持されます。パートナーNSMのステータスを確認するには、<block ref="d3209ff29e83e82c4ec5003559161f56" category="inline-link-rx"></block> 。</block>
+  <block id="fa9a021b549c938727ac4c429617d993" category="list-text">障害のある NSM から交換用の NSM に 4 つの DIMM すべてを移動します。</block>
+  <block id="59720db79392d668803e308a9344ec65" category="list-text">障害のある NSM から各 DIMM を取り外します。</block>
+  <block id="17a0301b7f4be66dea5203d72b5de6ec" category="list-text">交換用 NSM に各 DIMM をインストールします。</block>
+  <block id="d62be13a997b4f8b98954c5a522f7de4" category="list-text">4 つの I/O モジュールすべてを、障害のある NSM から交換用の NSM に移動します。</block>
+  <block id="46018fc1e645eae82c615a7889884a30" category="list-text">障害のある NSM から各 I/O モジュールを取り外します。</block>
+  <block id="3133ba2d89b0b820380f427ed4e5f1f9" category="list-text">交換用 NSM に各 I/O モジュールをインストールします。</block>
+  <block id="a581e5111137df8d6a8a869e3ecfbdc8" category="list-text">電源ハンドルを水平位置まで上に回して、握ります。</block>
+  <block id="5b1662852c865a6bd771638b5db9e862" category="list-text">親指で電源装置のテラコッタタブを押して、ロック機構を解除します。</block>
+  <block id="1b4028b0424fade1bdb82356997b35c2" category="list-text">電源ハンドルを下方に回転させ、通常の操作の邪魔にならないようにします。</block>
+  <block id="c772043a43cbf70f178bc60e9c2bb650" category="summary">NX224 シェルフでは、電源がオンになっていて I/O が進行中でも、障害が発生した電源装置を中断することなく交換できます。</block>
+  <block id="d50fc1b8ef2aa32e52f173d19ecc37c2" category="doc">電源のホットスワップ - NX224シェルフ</block>
+  <block id="cdc16f7c380d947b149dd311510c68f2" category="summary">電源がオンで I/O が進行中の NX224 シェルフで、障害が発生したリアルタイム クロック (RTC) バッテリを中断せずに交換できます。</block>
+  <block id="8cd7ffd76d7b4b46c49c984da4cc21cf" category="doc">リアルタイムクロックの電池を交換する - NX224シェルフ</block>
+  <block id="504ce12704134674e6c4f4d48826e550" category="paragraph">電源がオンで I/O が進行中の NX224 シェルフで、障害が発生したリアルタイム クロック (RTC) バッテリを中断なく交換できます。</block>
+  <block id="99dfa28920a40a7be0858c50f989a3e5" category="section-title">2025年10月</block>
+  <block id="f48884bca72e8c9a2c859cce9d6c2275" category="section-title">AFXストレージシステム</block>
+  <block id="d5a098f252d28afd09beab0c8579d1ad" category="paragraph">新しいNetApp AFX ストレージ システムは、AI/ML アプリケーションを含む高性能 NAS および S3 ワークロードの厳しい要件を満たすように設計された分散型ソリューションを提供します。AFX システムは、スケーラブルで高スループットのファイルおよびオブジェクト ストレージを必要とする顧客向けに特殊な機能を提供します。</block>
+  <block id="694a75c34a9eedc11fbef84beb033ba0" category="paragraph"><block ref="33368e91a895f1f1c4e8d3860604af87" category="inline-link-macro-rx"></block> 。</block>
+  <block id="9ba9ba4a775c2ead6dddfd4ed47b3cd0" category="section-title">AFX用の新しいドライブシェルフ</block>
+  <block id="8bd7a79fb2d6aefd45c5ac953691819a" category="paragraph">AFX 用の新しい NXS224 ストレージ シェルフは、高密度 SSD を接続するために Non-volatile Memory Express over Fabrics (NVMe-oF) を使用します。ディスクは、RDMA over Converged Ethernet (RoCE) を使用して、超低遅延ファブリックを介して通信します。I/O モジュール、NIC、ファン、電源装置を含むストレージ シェルフは、単一障害点のない完全な冗長性を備えています。自己管理型テクノロジーは、RAID 構成とディスク レイアウトのあらゆる側面を管理および制御するために使用されます。</block>
+  <block id="08317d418dd7e76e105d6658e1ce0c55" category="section-title">AFXの新しいスイッチ</block>
+  <block id="2ca198bcb89e8b305156b779f6b2e1fc" category="paragraph">Cisco 9364D-GX2A スイッチとCisco 9332D-GX2B スイッチは、AFX コントローラ ノードをストレージ シェルフに接続します。これらの新しいスイッチを使用すると、2 つ以上のノードを持つONTAPクラスターを構築できます。パフォーマンスを最適化するために高度なプロトコルが使用されます。この設計は、複数のネットワーク パスを使用した VLAN タグ付けと技術更新構成に基づいており、継続的な運用とアップグレードの容易さを保証します。</block>
+  <block id="126a886b89d700fd354dbc4a7b7bac6c" category="section-title">プラットフォームファミリー別の交換リファレンス</block>
+  <block id="7b3ec2634d76af6c503f0f4277cceeec" category="paragraph">ONTAPハードウェア システムのドキュメントには、 NetAppストレージ システムの交換手順がプラットフォーム ファミリ別にまとめられているようになりました。</block>
+  <block id="bd5edcdcf433d167ff7d8d581daab643" category="inline-link-macro">交換手順を見つける</block>
+  <block id="a383cb6d9601ae2875e83f0b86e0725c" category="paragraph"><block ref="1d4e78490c55b68870e7bd74e59846ae" category="inline-link-macro-rx"></block>ストレージ システムのフィールド交換可能ユニット (FRU) 用。</block>
+  <block id="ccc3fa9d29ad7dd5c221462f52787a46" category="paragraph"><block ref="67383e616307465eca49426accf697dc" category="inline-link-macro-rx"></block> 。</block>
+  <block id="4bf81e37c38393eea22b0e46d9f43158" category="paragraph">FAS50 システムは、セカンダリ ストレージと安全なサイバー ボールトのギガバイトあたりのコストが最も低いだけでなく、バックアップの高速化、IOPS の向上、5 ～ 10 ミリ秒の低レイテンシにより、セカンダリ ワークロードのパフォーマンスが向上します。</block>
+  <block id="beb7924c631bd72f6f5181a6a1773865" category="paragraph"><block ref="6fb9af7bf62d637bf3890d9d97180d06" category="inline-link-macro-rx"></block> 。</block>
+  <block id="7b619a398942b2af52ce099821518739" category="section-title">2024年リリース</block>
+  <block id="e17f7565f95df58a416490dff287f6c1" category="paragraph"><block ref="b5bce7716321adf42716e3b598ed224d" category="inline-link-macro-rx"></block> 。</block>
+  <block id="7b2fa3ce2f1cc4527c7d0a4e0f774ce1" category="paragraph"><block ref="9086cf3a37365194865877acb82e7669" category="inline-link-macro-rx"></block> 。</block>
+  <block id="e3dd50b258bede9c23ca84687d397bed" category="paragraph"><block ref="028bf0170285d2584dcfed56c7103ca0" category="inline-link-macro-rx"></block> 。</block>
+  <block id="728d7df870ee1451558451c200b714aa" category="sidebar">NetApp AFX ストレージ システムは、高性能 NAS および S3 顧客の固有のニーズに重点を置いた、分散型のハードウェアおよびソフトウェア ソリューションです。パフォーマンスとスケーラビリティは、AI および ML ワークロードの要件を満たすように特別に設計されています。</block>
+  <block id="a2e80b0b327a0d0eb54b31e906d36620" category="sidebar">AFXシステム</block>
+  <block id="2eb3070ac77dd41679fb2a4b736fd5ab" category="sidebar">AFXストレージについて学ぶ</block>
+  <block id="f716c6e3202ed7d92fc8348d46cf91c0" category="sidebar">AFXシステムの特徴</block>
+  <block id="42bae4a5964639b077e0e13fa4126b4d" category="sidebar">AFXアーキテクチャ</block>
+  <block id="c2dc06d8d82ede301d5f832213cb54bf" category="sidebar">AFXのインストールとメンテナンス</block>
+  <block id="89ff3ce0de6b4487110c6bfb69e1cec4" category="sidebar">AFXハードウェアをインストールする</block>
+  <block id="8e3f86181f0fb65d0b0b68d13bda7974" category="sidebar">AFXハードウェアのメンテナンス</block>
+  <block id="c5d12991791afbc0c95716bf77c8090c" category="sidebar">AFXでデータを管理する</block>
+  <block id="c19ab7b0503dde9b072764d1a9d252bb" category="sidebar">AFXボリュームを作成する</block>
+  <block id="fdba72201777e5847a2c45a3cfc37679" category="sidebar">AFXボリュームを管理する</block>
+  <block id="21728143e19b605f37f2ee69a6d866aa" category="sidebar">AFXバケットを作成する</block>
+  <block id="4cb5be5e539e021e34eaeef37c19399f" category="sidebar">AFX 上のデータの保護とセキュリティ確保</block>
+  <block id="601296cd84138b168e734f88cec6ceb2" category="sidebar">長期的な信頼性と最適なパフォーマンスを確保するために、AFX ストレージ システムのハードウェアをメンテナンスします。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。</block>
+  <block id="e80b87ba4d37600c592831624306362b" category="sidebar">AFXストレージシステムのメンテナンス</block>
+  <block id="ff5a200358d7841c6f0da4a1e0582537" category="sidebar">長期的な信頼性と最適なパフォーマンスを確保するために、AFX ストレージ システムのハードウェアをメンテナンスします。</block>
+  <block id="8c9e54112088985292bdf1de01ba195c" category="sidebar">メモリとストレージ</block>
+  <block id="4c81882c84fe8dd13b8c5d9dccc2c472" category="sidebar">I/Oと拡張</block>
+  <block id="492876b76f7f3555a0aa9a76a56bccb6" category="sidebar">NX224シェルフの取り付け</block>
+  <block id="1336e883edd86f211d74be20135a50b1" category="sidebar">NX224棚のメンテナンス</block>
+  <block id="3ce642d33ebe879acc4e339fbbe88746" category="sidebar">AFX維持</block>
+  <block id="a43cc36cba3c97642118a8f1e1411d2a" category="sidebar">NX224 棚</block>
+  <block id="44897f292c79e694fcea494af35f40cc" category="sidebar">NX224 棚メンテナンス</block>
+  <block id="9356bad064253adcb17a19cef3f04d34" category="sidebar">NX224ドライブシェルフを交換する</block>
 </blocks>

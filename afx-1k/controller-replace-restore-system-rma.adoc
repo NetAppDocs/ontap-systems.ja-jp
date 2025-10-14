@@ -1,0 +1,40 @@
+---
+permalink: afx-1k/controller-replace-restore-system-rma.html 
+sidebar: sidebar 
+keywords: afx 1k, how to restore NetApp Storage Encryption, how to complete the replacement process 
+summary: '論理インターフェイス (LIF) がホーム ポートにレポートしていることを確認し、クラスターのヘルス チェックを実行してから、障害が発生した部品をNetAppに返送し、AFX 1K コントローラーの交換手順の最終ステップを完了します。' 
+---
+= コントローラーの完全交換 - AFX 1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+論理インターフェイス (LIF) がホーム ポートにレポートしていることを確認し、クラスターのヘルス チェックを実行してから、障害が発生した部品をNetAppに返送し、AFX 1K コントローラーの交換手順の最終ステップを完了します。
+
+
+
+== 手順1：LIFを確認してクラスタの健全性を確認する
+
+交換ノードをサービスに戻す前に、論理インターフェイスがホーム ポート上にあることを確認し、クラスターの健全性をチェックし、自動ギブバックをリセットします。
+
+.手順
+. 論理インターフェイスがホーム サーバーとポートにレポートしていることを確認します。
++
+`network interface show -is-home false`
+
++
+論理インターフェースが false としてリストされている場合は、それらをホーム ポートに戻します。
+
++
+`network interface revert -vserver * -lif *`
+
+. クラスタの健全性を確認します。詳細については、技術情報の記事を参照して https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["ONTAP でスクリプトを使用してクラスタの健全性チェックを実行する方法"^] ください。
+
+
+
+
+== 手順2：故障した部品をNetAppに返却する
+
+障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

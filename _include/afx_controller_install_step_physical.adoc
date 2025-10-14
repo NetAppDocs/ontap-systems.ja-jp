@@ -1,0 +1,65 @@
+= 
+:allow-uri-read: 
+
+
+コントローラモジュールを再度取り付けてブートします。
+
+. エアダクトをできるだけ下に回転させて、完全に閉じていることを確認します。
++
+コントローラモジュールのシートメタルと面一になるように配置する必要があります。
+
+. コントローラモジュールの端をエンクロージャの開口部に合わせ、レバーをシステム前面から離すようにしてコントローラモジュールをシャーシに挿入します。
+. コントローラモジュールの奥へのスライドを止めたら、ファンの下に固定されるまでカムハンドルを内側に回転させます。
++
+
+NOTE: コネクタの損傷を防ぐため、コントローラモジュールをエンクロージャにスライドさせるときは力を入れすぎないでください。
+
++
+コントローラモジュールは、エンクロージャに完全に装着されるとすぐにブートを開始します。
+
+. ベゼルをボールスタッドに合わせてから、ベゼルをゆっくりと所定の位置に押し込みます。
+. コンソールメッセージが停止したら、<enter>キーを押します。
++
+** ログインプロンプトが表示されたら、次の手順に進みます。
+** ログイン プロンプトが表示されない場合は、パートナー ノードにログインします。
+
+
+. override-destination-checks オプションを使用してルートのみを返します。
++
+`storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`
+
++
+
+NOTE: 次のコマンドは、診断モードの特権レベルでのみ使用できます。権限レベルの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html["ONTAP CLIコマンドの権限レベルを理解する"^] 。
+
++
+エラーが発生した場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
+
+. ギブバック レポートが完了してから 5 分待ってから、フェイルオーバーとギブバックのステータスを確認します。
++
+`storage failover show`そして `storage failover show-giveback`
+
++
+
+NOTE: 次のコマンドは、診断モードの特権レベルでのみ使用できます。
+
+. HA 内部接続リンクがダウンしている場合は、次のようにしてリンクを復旧します。
++
+`system ha interconnect link on -node healthy-node -link 0`
+
++
+`system ha interconnect link on -node healthy-node -link 1`
+
+. 自動ギブバックを無効にした場合は、再度有効にします。
++
+`storage failover modify -node local -auto-giveback-of true`
+
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。
++
+「 storage failover giveback -ofnode _impaired_node_name _
+
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+

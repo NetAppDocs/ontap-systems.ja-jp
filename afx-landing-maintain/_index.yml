@@ -1,0 +1,41 @@
+---
+indexpage:
+  title: AFXストレージシステムのメンテナンス
+  summary: 長期的な信頼性と最適なパフォーマンスを確保するために、AFX ストレージ システムのハードウェアをメンテナンスします。
+  keywords: maintain afx 1k
+  lead: 長期的な信頼性と最適なパフォーマンスを確保するために、AFX ストレージ システムのハードウェアをメンテナンスします。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。
+  tiles:
+  - title: コアシステムコンポーネント
+    links:
+    - title: コントローラ
+      url: "../afx-1k/controller-replace-workflow.html"
+    - title: シャーシ
+      url: "../afx-1k/chassis-replace-workflow.html"
+    - title: システム管理モジュール
+      url: "../afx-1k/system-management-replace.html"
+  - title: メモリとストレージ
+    links:
+    - title: ブートメディア
+      url: "../afx-1k/bootmedia-replace-workflow.html"
+    - title: DIMM
+      url: "../afx-1k/dimm-replace.html"
+    - title: NVRAM
+      url: "../afx-1k/nvram-replace.html"
+    - title: NVハツテリ
+      url: "../afx-1k/nvdimm-battery-replace.html"
+  - title: 電力と冷却
+    links:
+    - title: 電源装置
+      url: "../afx-1k/power-supply-replace.html"
+    - title: ファン
+      url: "../afx-1k/fan-replace.html"
+    - title: リアルタイムクロックバッテリ
+      url: "../afx-1k/rtc-battery-replace.html"
+  - title: I/Oと拡張
+    links:
+    - title: I/Oモジュールの概要
+      url: "../afx-1k/io-module-overview.html"
+    - title: I/O モジュールを追加します
+      url: "../afx-1k/io-module-add.html"
+    - title: I/Oモジュールの交換
+      url: "../afx-1k/io-module-replace.html"

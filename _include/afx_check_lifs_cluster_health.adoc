@@ -1,0 +1,19 @@
+= 
+:allow-uri-read: 
+
+
+交換ノードをサービスに戻す前に、論理インターフェイスがホーム ポート上にあることを確認し、クラスターの健全性をチェックし、自動ギブバックをリセットします。
+
+.手順
+. 論理インターフェイスがホーム サーバーとポートにレポートしていることを確認します。
++
+`network interface show -is-home false`
+
++
+論理インターフェースが false としてリストされている場合は、それらをホーム ポートに戻します。
+
++
+`network interface revert -vserver * -lif *`
+
+. クラスタの健全性を確認します。詳細については、技術情報の記事を参照して https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["ONTAP でスクリプトを使用してクラスタの健全性チェックを実行する方法"^] ください。
+

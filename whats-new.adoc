@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: new, features, asa r2, aff, asa, fas 
+keywords: new, features, afx, asa r2, aff, asa, fas 
 summary: ONTAPハードウェアシステムの新しいプラットフォームについて説明します。 
 ---
 = ONTAPハードウェアシステムの新機能
@@ -15,6 +15,30 @@ ONTAPハードウェアシステムの新機能について説明します。追
 
 
 
+== 2025年10月
+
+
+
+=== AFXストレージシステム
+
+新しいNetApp AFX ストレージ システムは、AI/ML アプリケーションを含む高性能 NAS および S3 ワークロードの厳しい要件を満たすように設計された分散型ソリューションを提供します。AFX システムは、スケーラブルで高スループットのファイルおよびオブジェクト ストレージを必要とする顧客向けに特殊な機能を提供します。
+
+link:https://docs.netapp.com/us-en/ontap-afx/get-started/ontap-afx-storage.html["AFXシステムの詳細"] 。
+
+
+
+=== AFX用の新しいドライブシェルフ
+
+AFX 用の新しい NXS224 ストレージ シェルフは、高密度 SSD を接続するために Non-volatile Memory Express over Fabrics (NVMe-oF) を使用します。ディスクは、RDMA over Converged Ethernet (RoCE) を使用して、超低遅延ファブリックを介して通信します。I/O モジュール、NIC、ファン、電源装置を含むストレージ シェルフは、単一障害点のない完全な冗長性を備えています。自己管理型テクノロジーは、RAID 構成とディスク レイアウトのあらゆる側面を管理および制御するために使用されます。
+
+
+
+=== AFXの新しいスイッチ
+
+Cisco 9364D-GX2A スイッチとCisco 9332D-GX2B スイッチは、AFX コントローラ ノードをストレージ シェルフに接続します。これらの新しいスイッチを使用すると、2 つ以上のノードを持つONTAPクラスターを構築できます。パフォーマンスを最適化するために高度なプロトコルが使用されます。この設計は、複数のネットワーク パスを使用した VLAN タグ付けと技術更新構成に基づいており、継続的な運用とアップグレードの容易さを保証します。
+
+
+
 == 2025年9月
 
 
@@ -25,11 +49,11 @@ ONTAPハードウェアシステムのドキュメントには、以下の仕様
 
 
 
-=== プラットフォームFRU手順リファレンス
+=== プラットフォームファミリー別の交換リファレンス
 
-ONTAPハードウェア システムのドキュメントに、FRU タイプ別に整理された FRU 手順へのリンクが含まれるようになりました。
+ONTAPハードウェア システムのドキュメントには、 NetAppストレージ システムの交換手順がプラットフォーム ファミリ別にまとめられているようになりました。
 
-link:fru-reference/fru-overview.html["プラットフォームFRUリファレンス"]
+link:fru-reference/index.html["交換手順を見つける"]ストレージ システムのフィールド交換可能ユニット (FRU) 用。
 
 
 
@@ -41,7 +65,7 @@ link:fru-reference/fru-overview.html["プラットフォームFRUリファレン
 
 新しい ASA C30 システムは、高性能でインテリジェントな包括的なデータ管理機能を、より多くの顧客とワークロードに拡張します。
 
-link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA R2システムの詳細"]です。
+link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA R2システムの詳細"^] 。
 
 
 
@@ -51,9 +75,9 @@ link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA R2�
 
 === FAS50
 
-FAS50システムは、セカンダリストレージのギガバイトあたりのコストが最も低く、link:https://docs.netapp.com/us-en/netapp-solutions/cyber-vault/ontap-cyber-vault-overview.html["セキュアなサイバーボールト"]さらに、高速なバックアップ、高いIOPS、5~10ミリ秒の低レイテンシによって、セカンダリワークロードのパフォーマンスが向上します。
+FAS50 システムは、セカンダリ ストレージと安全なサイバー ボールトのギガバイトあたりのコストが最も低いだけでなく、バックアップの高速化、IOPS の向上、5 ～ 10 ミリ秒の低レイテンシにより、セカンダリ ワークロードのパフォーマンスが向上します。
 
-link:https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FASシステムに関する詳細情報"]です。
+link:https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FASシステムに関する詳細情報"^] 。
 
 
 
@@ -65,54 +89,44 @@ link:https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FASシステ�
 
 エントリレベルのASA A20およびミッドレンジのASA A30およびA50システムは、データベースや仮想マシンなどのミッションクリティカルなアプリケーション向けに、あらゆる規模の企業がブロックストレージを利用できるようにします。
 
-link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA R2システムの詳細"]です。
+link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA R2システムの詳細"^] 。
 
 
 
-== 2024年12月
+== 2024年リリース
 
-
-
-=== AFF A20、AFF A30、およびAFF A50
-
+.2024年12月
+[%collapsible]
+====
+.AFF A20、AFF A30、およびAFF A50
 新しいAFF A20、A30、A50ハードウェアシステムは、ハイパフォーマンスでインテリジェントな包括的なデータ管理機能をより多くのお客様とワークロードに拡張します。
 
 このシステムは、MLベースのランサムウェアのリアルタイム検出、シームレスなクラウド統合、AI、VMware、データベース、分析などのミッションクリティカルなワークロードに対して卓越したパフォーマンスを提供し、ブロック、ファイル、オブジェクトストレージをサポートします。
 
-link:https://www.netapp.com/data-storage/aff-a-series/["AFF Aシリーズシステムの詳細"]です。
+link:https://www.netapp.com/data-storage/aff-a-series/["AFF Aシリーズシステムの詳細"^] 。
 
-
-
-=== AFF C30、AFF C60、およびAFF C80
-
+.AFF C30、AFF C60、およびAFF C80
 新しいAFF C30、AFF C60、AFF C80ハードウェアシステムは、業界をリードする1.5PBのストレージ容量を2ラック環境で提供することで、企業がフラッシュのパフォーマンスと効率性を向上できるようにします。
 
 このソリューションは、60TBドライブによる卓越した密度、パフォーマンスの向上、I/Oの柔軟性の向上を実現します。
 
-link:https://www.netapp.com/data-storage/aff-c-series/["AFF Cシリーズシステムに関する詳細情報"]です。
+link:https://www.netapp.com/data-storage/aff-c-series/["AFF Cシリーズシステムに関する詳細情報"^] 。
 
-
-
-=== NSM100Bシェルフモジュールを搭載したNS224ドライブシェルフ
-
+.NSM100Bシェルフモジュールを搭載したNS224ドライブシェルフ
 NS224と新しいNSM100B NVMeストレージ拡張モジュールで、データセンターの機能を強化できます。新しいNSM100Bシェルフモジュールは、NSM100モジュールの直接交換用として設計されており、既存の環境にシームレスに統合できます。NS224シェルフの直接接続型構成とスイッチ接続型構成の両方がサポートされるため、ストレージシステムの効率性と拡張性を最適化する優れた柔軟性が実現します。
 
-
-
-== 2024年9月
-
-
-
-=== ASA r2システム
-
+====
+.2024年9月
+[%collapsible]
+====
+.ASA r2システム
 新しいASA R2ハードウェアシステム（ASA A1K、ASA A70、およびASA A90）は、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルなエクスペリエンスを実現します。
 
-link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA R2システムの詳細"]です。
+link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA R2システムの詳細"^] 。
 
-
-
-=== FAS70およびFAS90
-
+.FAS70およびFAS90
 新しいFAS70およびFAS90ハードウェアシステムは、手頃な価格ながらハイパフォーマンスなバックアップストレージを提供し、ランサムウェア攻撃からリカバリするためのセキュアなサイバーヴォールトを実現します。
 
-link:https://www.netapp.com/data-storage/fas/["FASシステムに関する詳細情報"]です。
+link:https://www.netapp.com/data-storage/fas/["FASシステムに関する詳細情報"^] 。
+
+====

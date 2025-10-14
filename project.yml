@@ -44,6 +44,39 @@ sidebar:
       - section: c250
       - section: c400
       - section: c800
+  - title: AFXシステム
+    url: "/afx/index.html"
+    entries:
+    - title: 設置とセットアップ
+      url: "/afx/afx-install-setup.html"
+    - title: メンテナンス
+      pdf-filename: AFX維持
+      url: "/afx-landing-maintain/index.html"
+      entries:
+      - title: メンテナンスの概要
+        url: "/afx-1k/maintain-overview.html"
+      - title: ブートメディア
+        url: "/afx-1k/bootmedia-replace-workflow.html"
+      - title: シャーシ
+        url: "/afx-1k/chassis-replace-workflow.html"
+      - title: コントローラ
+        url: "/afx-1k/controller-replace-workflow.html"
+      - title: DIMM
+        url: "/afx-1k/dimm-replace.html"
+      - title: ファン
+        url: "/afx-1k/fan-replace.html"
+      - title: NVRAM
+        url: "/afx-1k/nvram-replace.html"
+      - title: NVハツテリ
+        url: "/afx-1k/nvdimm-battery-replace.html"
+      - title: I/O モジュール
+        url: "/afx-1k/io-module-overview.html"
+      - title: 電源装置
+        url: "/afx-1k/power-supply-replace.html"
+      - title: リアルタイムクロックバッテリ
+        url: "/afx-1k/rtc-battery-replace.html"
+      - title: システム管理モジュール
+        url: "/afx-1k/system-management-replace.html"
   - title: ASAシステム
     url: "/allsan-landing/index.html"
     entries:
@@ -103,6 +136,7 @@ sidebar:
     url: "/drive-shelves/index.html"
     entries:
     - section: ns224
+    - section: nx224
     - section: sas3
   - title: キャビネットおよびレールキット
     entries:

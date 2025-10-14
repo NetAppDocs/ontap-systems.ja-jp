@@ -1,0 +1,217 @@
+---
+permalink: afx-1k/io-module-replace.html 
+sidebar: sidebar 
+keywords: afx 1k, replace a pcie card 
+summary: モジュールに障害が発生した場合、またはより高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、AFX 1K ストレージ システムの I/O モジュールを交換します。交換プロセスには、コントローラのシャットダウン、障害のあるI/Oモジュールの交換、コントローラの再起動、そして障害のある部品のNetAppへの返送が含まれます。 
+---
+= I/Oモジュールの交換 - AFX 1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFX 1K ストレージ システム内の I/O モジュールに障害が発生した場合は、そのモジュールを交換します。交換プロセスには、コントローラのシャットダウン、障害のあるI/Oモジュールの交換、コントローラの再起動、そして障害のある部品のNetAppへの返送が含まれます。
+
+この手順は、ストレージシステムでサポートされるすべてのバージョンのONTAPで使用できます。
+
+.作業を開始する前に
+* 交換用パーツを用意しておく必要があります。
+* ストレージシステムの他のコンポーネントがすべて正常に動作していることを確認します。正常に動作していない場合は、テクニカルサポートにお問い合わせください。
+
+
+
+
+== 手順 1 ：障害ノードをシャットダウンします
+
+障害のあるコントローラをシャットダウンするかテイクオーバーします。
+
+障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じてコントローラのストレージ フェイルオーバー テイクオーバーを実行して、正常なコントローラが障害のあるコントローラ ストレージから引き続きデータを提供できるようにする必要があります。
+
+.このタスクについて
+* 4 つ以上のノードを持つクラスターがある場合は、クォーラム内になければなりません。ノードに関するクラスター情報を表示するには、 `cluster show`指示。詳細については、 `cluster show`コマンドについては、link:https://docs.netapp.com/us-en/ontap/system-admin/display-nodes-cluster-task.html["ONTAPクラスタ内のノードレベルの詳細を表示する"^] 。
+* クラスターがクォーラムにない場合、または (障害のあるコントローラー以外の) コントローラーの正常性または適格性が false と表示される場合は、障害のあるコントローラーをシャットダウンする前に問題を修正する必要があります。見るlink:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["ノードをクラスタと同期します"^] 。
+
+
+.手順
+. AutoSupportが有効になっている場合は、AutoSupportメッセージを呼び出してケースの自動作成を停止します。
++
+`system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
+
++
+次のAutoSupport メッセージは、ケースの自動作成を2時間停止します。
+
++
+`cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 障害のあるコントローラのコンソールからの自動ギブバックを無効にします。
++
+`storage failover modify -node impaired-node -auto-giveback-of false`
+
++
+
+NOTE: 「自動ギブバックを無効にしますか？」と表示されたら、次のように入力します。 `y` 。
+
++
+.. ONTAPバージョン 9.17.1 を実行していて、障害のあるコントローラを起動できないか、すでに引き継がれている場合は、障害のあるコントローラを起動する前に、正常なコントローラから HA 相互接続リンクを停止する必要があります。これにより、障害のあるコントローラによる自動ギブバックの実行が防止されます。
++
+`system ha interconnect link off -node healthy-node -link 0`
+
++
+`system ha interconnect link off -node healthy-node -link 1`
+
++
+
+NOTE: ONTAPバージョン 9.17.1 を実行していない場合は、上記の手順をスキップして手順 3 に進みます。
+
+
+
+. 障害のあるコントローラに LOADER プロンプトを表示します。
++
+[cols="1,2"]
+|===
+| 障害のあるコントローラの表示 | 作業 
+
+
+ a| 
+LOADER プロンプト
+ a| 
+次の手順に進みます。
+
+
+
+ a| 
+システムプロンプトまたはパスワードプロンプト
+ a| 
+正常なコントローラから障害のあるコントローラを引き継ぐか、停止します。
+`storage failover takeover -ofnode _impaired_node_name_ -halt _true_`
+
+_-halt true_ パラメータは、障害のあるノードを LOADER プロンプトに表示します。
+
+|===
+
+
+
+
+== 手順2：障害が発生したI/Oモジュールを交換する
+
+I/Oモジュールを交換するには、エンクロージャ内でI/Oモジュールの場所を確認し、特定の手順を実行します。
+
+. 接地対策がまだの場合は、自身で適切に実施します。
+. ターゲット I/O モジュールのケーブルをすべて取り外します。
++
+
+NOTE: モジュールを再インストールするときに正しいポートに接続できるように、ケーブルが接続されていた場所にラベルを付けておいてください。
+
+. ケーブルマネジメントトレイ内部の両側にあるボタンを引いてケーブルマネジメントトレイを下に回転させ、トレイを下に回転させます。
++
+
+NOTE: 次の図は、水平および垂直I/Oモジュールの取り外しを示しています。通常、取り外したI/Oモジュールは1つだけです。
+
++
+image:../media/drw_a1k_io_remove_replace_ieops-1382.svg["I/Oモジュールの取り外し"]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image:../media/icon_round_1.png["番号1"]
+ a| 
+I/Oカムラッチ
+
+|===
++
+元の場所がわかるように、ケーブルにラベルを付けておいてください。
+
+. ターゲットI/Oモジュールをエンクロージャから取り外します。
++
+.. ターゲットモジュールのカムボタンを押します。
+.. カムラッチをモジュールからできるだけ離します。
+.. カムレバーの開口部に指をかけ、モジュールをエンクロージャから引き出して、モジュールをエンクロージャから取り外します。
++
+I/O モジュールが取り付けられていたスロットを記録しておいてください。
+
+
+
+. I/O モジュールを脇へ置きます。
+. 交換用I/Oモジュールをエンクロージャに取り付けます。
++
+.. モジュールをエンクロージャスロット開口部の端に合わせます。
+.. モジュールをスロットにゆっくりと挿入してエンクロージャの奥まで押し込み、カムラッチを上に回転させてモジュールを所定の位置にロックします。
+
+
+. I/O モジュールのケーブルを再接続します。
+. ケーブルマネジメントトレイを上に回転させて閉じます。
+
+
+
+
+== 手順3：コントローラをリブートする
+
+I/Oモジュールを交換したら、コントローラをリブートする必要があります。
+
+. LOADERプロンプトからコントローラをリブートします。
++
+`bye`
+
++
+
+NOTE: 障害のあるコントローラをリブートすると、I/Oモジュールおよびその他のコンポーネントも再初期化されます。
+
+. コンソールメッセージが停止したら、<enter>キーを押します。
++
+** _login_ プロンプトが表示されたら、次の手順に進みます。
+** ログイン プロンプトが表示されない場合は、パートナー ノードにログインします。
+
+
+. override-destination-checks オプションを使用してルートのみを返します。
++
+`storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`
+
++
+
+NOTE: 次のコマンドは、診断モードの特権レベルでのみ使用できます。権限レベルの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html["ONTAP CLIコマンドの権限レベルを理解する"^] 。
+
++
+エラーが発生した場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
+
+. ギブバックレポートが完了してから5分待って、フェイルオーバーのステータスとギブバックのステータスを確認します。
++
+`storage failover show`そして `storage failover show-giveback`
+
++
+
+NOTE: 次のコマンドは、診断モードの特権レベルでのみ使用できます。
+
+. HA 内部接続リンクがダウンしている場合は、次のようにしてリンクを復旧します。
++
+`system ha interconnect link on -node healthy-node -link 0`
+
++
+`system ha interconnect link on -node healthy-node -link 1`
+
+. 自動ギブバックを無効にした場合は、再度有効にします。
++
+`storage failover modify -ofnode impaired-node -automatic-giveback true`
+
+. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。
++
+「 storage failover giveback -ofnode _impaired_node_name _
+
+. 正常なコントローラのコンソールから自動ギブバックをリストアします。
++
+`storage failover modify -node local -auto-giveback-of true`
+
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+
+
+
+== 手順 4 ：障害が発生したパーツをネットアップに返却する
+
+障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

@@ -1,0 +1,78 @@
+= 手順1：コントローラをブートしてコントローラをギブバックする
+:allow-uri-read: 
+
+
+
+
+== 手順1：コントローラをブートしてコントローラをギブバックする
+
+コントローラがリブートしたら、ONTAPをブートしてコントローラをギブバックします。
+
+.手順
+. コンソールの出力を確認します。
++
+.. コントローラがLOADERプロンプトで停止した場合は、コントローラを `boot_ontap`指示。
+.. ノードが起動してログインプロンプトが表示されたら、パートナーコントローラにログインし、交換したコントローラがギブバックの準備ができていることを確認します。 `storage failover show`指示。
+
+
+. ギブバックを実行します。
++
+.. パートナーコントローラにコンソールケーブルを接続します。
+.. コンソールメッセージが停止したら、<enter>キーを押します。
++
+*** _login_ プロンプトが表示されたら、次の手順に進みます。
+*** ログイン プロンプトが表示されない場合は、パートナー ノードにログインします。
+
+
+.. override-destination-checks オプションを使用してルートのみを返します。
++
+`storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`
+
++
+
+NOTE: 次のコマンドは、診断モードの特権レベルでのみ使用できます。権限レベルの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html["ONTAP CLIコマンドの権限レベルを理解する"^] 。
+
++
+エラーが発生した場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
+
+.. ギブバックレポートが完了してから5分待って、フェイルオーバーのステータスとギブバックのステータスを確認します。
++
+`storage failover show`そして `storage failover show-giveback`
+
++
+
+NOTE: 次のコマンドは、診断モードの特権レベルでのみ使用できます。
+
+.. HA 内部接続リンクがダウンしている場合は、次のようにしてリンクを復旧します。
++
+`system ha interconnect link on -node healthy-node -link 0`
+
++
+`system ha interconnect link on -node healthy-node -link 1`
+
+.. 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。
++
+「 storage failover giveback -ofnode _impaired_node_name _
+
+.. 自動ギブバックが無効になっている場合は、再度有効にします。 `storage failover modify -node _impaired_node_name_ -auto-giveback-of _true_`
+.. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+
+
+
+
+== 手順2：ストレージシステムの健全性を確認する
+
+コントローラがストレージを返却したら、 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"] 。
+
+.手順
+. ギブバックが完了したら、Active IQ Config Advisorを実行してストレージシステムの健全性を確認します。
+. 発生した問題を修正します。
+
+
+
+
+== 手順 3 ：障害が発生したパーツをネットアップに返却する
+
+障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

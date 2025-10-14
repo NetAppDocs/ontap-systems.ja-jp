@@ -66,9 +66,25 @@ ONTAP 9.7::
 
 
 --
+.AFXシステム
+--
+AFX システムは、AI/ML アプリケーションを含む高性能 NAS および S3 ワークロードの厳しい要件を満たすように設計された分散型ソリューションを提供します。link:https://docs.netapp.com/us-en/ontap-afx/get-started/ontap-afx-storage.html["AFXシステムの詳細"^] 。
+
+AFX システムは、次のONTAPリリース以降でサポートされます。
+
+ONTAP 9.17.1::
++
+--
+* AFX 1K
+
+
+--
+
+
+--
 .ASA r2システム
 --
-ASA R2システムは、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルな操作性を実現します。link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA R2システムの詳細"]です。
+ASA r2 システムは、SAN のみを利用するお客様のニーズに合わせた簡素化されたエクスペリエンスを実現する、統合されたハードウェアおよびソフトウェア ソリューションを提供します。link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA R2システムの詳細"^] 。
 
 ASA R2システムは、次のONTAPリリース以降でサポートされます。
 
@@ -193,10 +209,17 @@ ONTAP 9.7::
 --
 .ドライブシェルフ
 --
-ドライブシェルフは、NetApp AFF、ASA、FASの各システム向けに設計されており、デジタル変革に必要なパフォーマンス、耐障害性、柔軟性を提供します。
+ドライブ シェルフは、 NetApp AFF、AFX、 ASA、 FASシステム向けに特別に設計されており、デジタル変革に必要なパフォーマンス、復元力、柔軟性を実現します。
 
 ドライブシェルフは、次のONTAPリリース以降で使用できます。
 
+ONTAP 9.17.1::
++
+--
+* AFXシステム用NSX224シェルフ
+
+
+--
 ONTAP 9.16.1::
 +
 --

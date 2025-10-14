@@ -1,0 +1,36 @@
+---
+section: nx224
+title: NX224 棚
+entries:
+- title: シェルフをホットアドします
+  url: "/nx224/hot-add-shelf.html"
+- title: シェルフ ID を変更します
+  url: "/nx224/change-shelf-id.html"
+- title: メンテナンス
+  pdf-filename: NX224 棚メンテナンス
+  entries:
+  - title: ブートメディア
+    url: "/nx224/service-replace-boot-media.html"
+  - title: DIMM
+    url: "/nx224/service-replace-dimm.html"
+  - title: ドライブ
+    url: "/nx224/service-replace-drive.html"
+  - title: ドライブシェルフ
+    pdf-filename: NX224ドライブシェルフを交換する
+    entries:
+    - title: シェルフメンテナンスの概要
+      url: "/nx224/nx224-shelf-overview.html"
+    - title: ドライブのホットアド
+      url: "/nx224/hot-add-drive.html"
+    - title: シェルフLEDの監視
+      url: "/nx224/service-monitor-leds.html"
+  - title: ファン
+    url: "/nx224/service-replace-fan.html"
+  - title: I/O モジュール
+    url: "/nx224/service-replace-io-module.html"
+  - title: NSM
+    url: "/nx224/service-replace-nsm140.html"
+  - title: 電源装置
+    url: "/nx224/service-replace-power-supply.html"
+  - title: リアルタイムクロックバッテリ
+    url: "/nx224/service-replace-rtc-battery.html"

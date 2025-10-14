@@ -1,0 +1,34 @@
+---
+permalink: afx-1k/bootmedia-replace-workflow.html 
+sidebar: sidebar 
+keywords: afx 1k, replace the boot media 
+summary: 交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージの起動、暗号化の復元、システム機能の検証を行って、AFX 1K ストレージ システムのブート メディアの交換を開始します。 
+---
+= ブートメディア交換ワークフロー - AFX 1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージの起動、暗号化の復元、システム機能の検証を行って、AFX 1K ストレージ システムのブート メディアの交換を開始します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:bootmedia-replace-requirements.html["ブートメディア要件を確認"]
+[role="quick-margin-para"]
+ブートメディアの交換要件を確認します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:bootmedia-shutdown.html["コントローラをシャットダウン"]
+[role="quick-margin-para"]
+ブート メディアを交換する必要がある場合は、ストレージ システム内のコントローラーをシャットダウンします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:bootmedia-replace.html["ブートメディアの交換"]
+[role="quick-margin-para"]
+障害が発生したブートメディアをシステム管理モジュールから取り外し、交換用ブートメディアを取り付けます。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:bootmedia-recovery-image-boot.html["ブートメディアにイメージをリストアする"]
+[role="quick-margin-para"]
+パートナーコントローラからONTAPイメージをリストアします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:bootmedia-complete-rma.html["障害のあるパーツをネットアップに返却します"]
+[role="quick-margin-para"]
+障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。

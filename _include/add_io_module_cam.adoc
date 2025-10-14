@@ -8,6 +8,7 @@
 * を参照し https://hwu.netapp.com/["NetApp Hardware Universe の略"^] て、新しいI/Oモジュールがストレージシステムおよび実行中のONTAPのバージョンと互換性があることを確認します。
 * 複数のスロットが使用可能な場合は、でスロットの優先順位を確認します https://hwu.netapp.com/["NetApp Hardware Universe の略"^] また、お使いの I/O モジュールに最適なものを使用してください。
 * 他のすべてのコンポーネントが正常に機能していることを確認します。
+* NetAppから受け取った交換用コンポーネントがあることを確認してください。
 
 
 [role="tabbed-block"]
