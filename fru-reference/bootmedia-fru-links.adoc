@@ -48,6 +48,12 @@ summary: プラットフォーム ファミリ別に整理された、 NetAppス
 
 
 --
+.AFXシステム
+--
+* link:../afx-1k/bootmedia-replace-workflow.html["AFX A1K"]
+
+
+--
 .ASAシステム
 --
 * link:../asa150/bootmedia-replace-overview.html["ASA A150 （手動リカバリ）"]
@@ -85,6 +91,13 @@ summary: プラットフォーム ファミリ別に整理された、 NetAppス
 * link:../fas9000/bootmedia-replace-overview.html["FAS9000 （手動リカバリ）"]
 * link:../fas9500/bootmedia-replace-workflow-bmr.html["FAS9500 （自動回復）"]
 * link:../fas9500/bootmedia-replace-workflow.html["FAS9500 （手動回復）"]
+
+
+--
+.棚システム
+--
+* link:../ns224/service-replace-boot-media.html["NS224"]
+* link:../nx224/service-replace-boot-media.html["NX224"]
 
 
 --

@@ -1,6 +1,7 @@
 ---
 permalink: a20-30-50/overview.html 
 sidebar: sidebar 
+keywords: AFF A20 A30 A50 specifications, AFF A20 A30 A50 specs, AFF A20 A30 A50 capacity, AFF A20 A30 A50 memory, AFF A20 A30 A50 I/O, AFF A20 A30 A50 compliance 
 summary: A20-30-50プラットフォームグループの主な仕様 
 ---
 = A20-30-50プラットフォームグループの主な仕様
@@ -286,6 +287,7 @@ CIFS、FC、iSCSI、NFS v3、NFS v4.0、NFS v4.1、NFS v4.2、NVMe/FC、NVMe/TCP
 
 イーサネット ベースのベースボード管理コントローラ (BMC) およびONTAP管理インターフェイス、冗長ホットスワップ対応コントローラ、冗長ホットスワップ対応電源、外部シェルフの SAS 接続を介した SAS インバンド管理。
 
+ [//] 2025-10-15 ontap-systems-internal/issues/1357
 
 
 == AFF A30用

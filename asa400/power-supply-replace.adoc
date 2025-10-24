@@ -1,10 +1,10 @@
 ---
 permalink: asa400/power-supply-replace.html 
 sidebar: sidebar 
-keywords: asa a400, asa, a400, replace, replacing, power, supply, psu, disconnect, target, psu, unplug, power, cable, removing, remove, replacement, source, replace a power supply 
+keywords: asa a400, replace a power supply 
 summary: 電源装置（ PSU ）を交換するには、ターゲットの PSU の電源を切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。 
 ---
-= 電源装置の交換- ASA A400
+= 電源のホットスワップ - ASA A400
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,7 +13,7 @@ summary: 電源装置（ PSU ）を交換するには、ターゲットの PSU �
 [role="lead"]
 電源装置（ PSU ）を交換するには、ターゲットの PSU の電源を切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。
 
-* 電源装置は冗長で、ホットスワップに対応しています。
+* 電源装置は冗長化され、ホットスワップに対応しています。PSU を交換するためにコントローラーをシャットダウンする必要はありません。
 * この手順は、一度に 1 台の電源装置を交換するために作成されたものです。
 +
 

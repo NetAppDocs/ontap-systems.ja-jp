@@ -38,6 +38,12 @@ summary: プラットフォーム ファミリ別に整理されたNetAppスト�
 
 
 --
+.AFXシステム
+--
+* link:../afx-1k/chassis-replace-workflow.html["AFX A1K"]
+
+
+--
 .ASAシステム
 --
 * link:../asa150/chassis-replace-overview.html["ASA A150"]

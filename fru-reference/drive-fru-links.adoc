@@ -55,4 +55,11 @@ summary: プラットフォーム ファミリ別に整理されたNetAppスト�
 
 
 --
+.棚システム
+--
+* link:../ns224/service-replace-drive.html["NS224"]
+* link:../nx224/service-replace-drive.html["NX224"]
+
+
+--
 ====

@@ -67,7 +67,6 @@
   <block id="004ff61696f63d2eb687e57371ce86bd" category="paragraph">コントローラモジュールを完全に挿入し、シャーシの端と同一平面になるようにします。</block>
   <block id="63e4f060a3a69033c9bc37634f0af27d" category="list-text">同じ手順を繰り返して、 2 台目のコントローラを新しいシャーシに取り付けます。</block>
   <block id="dd33af940cfd986282d97dc9269783a9" category="summary">電源装置（ PSU ）を交換するには、ターゲットの電源装置（ PSU ）を電源から切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。</block>
-  <block id="b122a7303b98280f8acc1bef20b1890d" category="doc">電源装置 AFF A250 を交換してください</block>
   <block id="af9d8ec1fd1a942d04dce1dd9b6787b7" category="paragraph">電源装置（ PSU ）を交換するには、ターゲットの PSU の電源を切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。</block>
   <block id="f05077bd3702b5bc7fac3f4dc56f3bc5" category="list-text">電源装置は冗長で、ホットスワップに対応しています。</block>
   <block id="26718b15fb498b1c0fe0098a30392c8c" category="list-text">この手順は、一度に 1 台の電源装置を交換するために作成されたものです。</block>
@@ -666,7 +665,6 @@
   <block id="cceefd9f0d8ae2b522801129da926bd4" category="list-text">表示されたメニューからメンテナンスモードでブートするオプションを選択します。</block>
   <block id="10581f2379a6cef29e5326e690ced10e" category="section-title">障害のあるパーツをネットアップに返却します</block>
   <block id="f99e3c0be135f8d468eda1703b7345f9" category="summary">電源装置（ PSU ）を交換するには、ターゲットの電源装置（ PSU ）を電源から切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。</block>
-  <block id="e603d2510eeff2fb744840a8b8277f7c" category="doc">電源装置 AFF A700s を交換してください</block>
   <block id="25b17a241b7878627647c78d24614092" category="paragraph">電源装置（ PSU ）を交換するには、ターゲットの PSU の電源を切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。</block>
   <block id="ea0af08f58acd216c0cdbf8f9611bc62" category="list-text">システムの電源装置の数は、モデルによって異なります。</block>
   <block id="a5c83d1259ea5fcd94515dacb438e884" category="list-text">コンソールのエラーメッセージまたは電源装置の LED から、交換する電源装置を特定します。</block>
@@ -882,7 +880,6 @@
   <block id="96079f0a36e437f5bfadad93d5fec62f" category="paragraph">スイッチバックが完了するまでに時間がかかる場合は、「 MetroCluster config-replication resync-status show 」コマンドを使用することで、進行中のベースラインのステータスを確認できます。</block>
   <block id="bebab338ce208a8365444e4ebe4efe11" category="list-text">SnapMirror 構成または SnapVault 構成があれば、再確立します。</block>
   <block id="d6cd25c7a2ec0fe6ad8621d4562ce0ae" category="summary">電源装置（ PSU ）を交換するには、ターゲットの PSU の電源を切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。</block>
-  <block id="897fb2e62dec5276f207c3447d27e6c4" category="doc">電源装置の交換 - AFF A400</block>
   <block id="f044adaf132925553df56c50232bae8a" category="paragraph">電源装置（ PSU ）を交換するには、ターゲットの PSU の電源を切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。</block>
   <block id="0b8bc61409e02494497fb415b526324c" category="list-text">電源装置を取り外します。</block>
   <block id="bd5e4756909c5ec64e5959e1f7d9e160" category="list-text">カムハンドルを回転させて、電源装置をシャーシから引き出せるようにします。</block>
@@ -1424,7 +1421,6 @@
   <block id="e7d6ca5a4598f4102e93853e3167db4f" category="doc">クラスタ設定ワークシート - FAS8200</block>
   <block id="f474da68fe49004e7ef71b0e2e717c06" category="doc">システムの復元完了 - AFF A800</block>
   <block id="9fc6e6ebb195a8b268f686a0f8256e7b" category="summary">電源装置を交換するには、ターゲットの電源装置の接続を解除して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。</block>
-  <block id="80185b76790082a23c34d9ebf9a01f7e" category="doc">電源装置 AFF A800 を交換してください</block>
   <block id="4dbd79294c989758d5af25c272edcd18" category="list-text"><block ref="4dbd79294c989758d5af25c272edcd18" category="inline-link-macro-rx"></block></block>
   <block id="d95b217968788dc25668292af7a9506a" category="list-text"><block ref="d95b217968788dc25668292af7a9506a" category="inline-link-macro-rx"></block></block>
   <block id="02904a3ce7e72e4a3b6edab3f2862e50" category="list-text"><block ref="02904a3ce7e72e4a3b6edab3f2862e50" category="inline-link-macro-rx"></block></block>
@@ -2039,7 +2035,6 @@
   <block id="45b8f0b842002ec85fb07171d4b0d278" category="list-text">No.1 および No.2 プラスドライバ</block>
   <block id="830cb2795d80d2d868f65bf4fc0302ba" category="list-text">システムキャビネットの水平調節用のレベリングツール</block>
   <block id="9839b9efeb4f2cb59f36a02a747b73cb" category="doc">システムのリストアを完了します - FAS8300 および FAS8700</block>
-  <block id="3a08488c499949ce994ce7beebe666ee" category="doc">電源装置を交換します - FAS8300 および FAS8700</block>
   <block id="0d6447bac57d1b04d83d308e8b723682" category="doc">DIMM-FAS8300 と FAS8700 を交換します</block>
   <block id="bf60b41d71bc04857d76c73eb0a0ab19" category="paragraph">システムの DIMM の数と位置は、システムのモデルによって異なります。詳細については、エアダクトの FRU マップを参照してください。</block>
   <block id="a2d7c3c08ea698a888673407b30cb325" category="list-text">FAS8300 システムを使用している場合、システム DIMM はソケット 2 、 4 、 13 、 15 にあります。</block>
@@ -2087,7 +2082,6 @@
   <block id="598ec2ec2714b9a699a42898b690e48d" category="section-title">オプション 1 ：コントローラを SAS ドライブシェルフにケーブル接続します</block>
   <block id="16319414c65274d365d86327a61ef5dc" category="doc">AFF および FAS システムのマニュアル</block>
   <block id="46b673e11c982206be30f1a0d6d4bde7" category="doc">システムのリストアを完了する - FAS500f</block>
-  <block id="b94c622729a1c3b9f221ed4f8376e65b" category="doc">電源装置 FAS500f を交換してください</block>
   <block id="1661dbd7e15cf50b73ab10b3561b2d66" category="paragraph">次のビデオまたは表に示す手順を使用して、電源装置を交換できます。</block>
   <block id="45449a9f8518fdccf3609592bca3388a" category="list-text"><block ref="45449a9f8518fdccf3609592bca3388a" category="inline-link-macro-rx"></block></block>
   <block id="fcc432315143968a857131ca40e0a000" category="list-text"><block ref="fcc432315143968a857131ca40e0a000" category="inline-link-macro-rx"></block></block>
@@ -2851,7 +2845,6 @@
   <block id="136c868eb6aa89c7b476d48a2b9ee98b" category="list-text">リストアに成功した場合は、リストアしたコピーを使用するかどうかを確認するメッセージが表示されたら、障害ノードで「 y 」を押します。</block>
   <block id="1e98034375ef52d4a4529ac291edcded" category="list-text">バックアップ手順が成功したことを確認したら 'y' を押し ' ノードを再起動するよう求められたら 'y' を押します</block>
   <block id="2ca9575466d40889a9a6e4de0788d9d5" category="doc">システムのリストアが完了しました - AFF A320</block>
-  <block id="e944774dbb716679ef719542153680f0" category="doc">電源装置を交換してください - AFF A320</block>
   <block id="3f579d2ca9602742163eac8ab6869d34" category="list-text"><block ref="3f579d2ca9602742163eac8ab6869d34" category="inline-link-macro-rx"></block></block>
   <block id="a6eeb39ae43e2e8a39fd17df76bf38bf" category="list-text"><block ref="a6eeb39ae43e2e8a39fd17df76bf38bf" category="inline-link-macro-rx"></block></block>
   <block id="22d17da6d44d1c72d2415ed45b62cc6e" category="list-text"><block ref="22d17da6d44d1c72d2415ed45b62cc6e" category="inline-link-macro-rx"></block></block>
@@ -4116,7 +4109,6 @@
   <block id="85bdc20f7292dbafd4caa42c19f7b123" category="paragraph">詳細については、を参照してください<block ref="fea6157c393b81b627aed2aca6311576" category="inline-link-rx"></block> 拒否を無視するトピック。</block>
   <block id="c081ffc5acf576c85556813974927192" category="list-text">replacement _node は、ディザスタサイトのディスクの現在の所有者です。</block>
   <block id="7be085f8f1dc91cbac9f773985faef24" category="paragraph">詳細については、を参照してください<block ref="4b1c17d30e94cc8d68adcd4265a76547" category="inline-link-rx"></block> トピック：</block>
-  <block id="d35fd8965949830b92555b33686beb19" category="doc">電源装置 AFF A900 をスワップします</block>
   <block id="12ccb6284dde6c218f4afb3d3857d96e" category="list-text">電源装置ハンドルのテラコッタボタンを押したまま、電源装置をシャーシから引き出します。</block>
   <block id="055140d300b472c3cf197b316fc1a111" category="doc">システムの復元の完了 - AFF A900</block>
   <block id="8f73eb9fb7acfd413cf2778aacee51b6" category="doc">ビデオの手順 - AFF A900</block>
@@ -4815,7 +4807,6 @@
   <block id="3f679ad9b20cbb8994ff36e9ce18d58f" category="doc">NVRAMモジュール/ NVRAM DIMM-FAS9500を交換してください</block>
   <block id="140a295824b1023b2fcf1ac1414fc56b" category="paragraph">とNVRAM DIMMを交換するには、NVRAMモジュールをシャーシから取り外し、モジュール内の障害が発生したDIMMを交換してから、NVRAMモジュールを再度取り付ける必要があります。</block>
   <block id="821b1e6be57f410ab68ac2071fc04df4" category="doc">NVRAM11バッテリを搭載したデステージコントロール電源モジュールFAS9500を交換してください</block>
-  <block id="1aa73ef56da88752323de5876f9b3750" category="doc">電源装置FAS9500を交換します</block>
   <block id="70ebba1c8f978f26a3ed9799176dd8a9" category="doc">コントローラモジュールFAS9500を交換してください</block>
   <block id="0b69ae5dbb558a62f47c8962baf19909" category="list-text">MetroCluster 構成のシステムの場合は、を参照してください<block ref="2a021072247e4cc2397c2bcdaab4e2b0" category="inline-link-rx"></block> この手順の使用が必要かどうかを判断するには、次の手順を実行</block>
   <block id="c60c00789a015e4c8edc176d68ea53c2" category="list-text">この手順では、ブートデバイスを障害ノードから交換用ノードに移動して、交換用ノードが古いコントローラモジュールと同じバージョンの ONTAP でブートするようにします。</block>
@@ -5169,7 +5160,6 @@
   <block id="c2df61cd54941946b9e1d41669228517" category="paragraph"><block ref="c2df61cd54941946b9e1d41669228517" category="inline-link-rx"></block></block>
   <block id="a7d0c7f24713f4f2e4432bb2b91f97d0" category="paragraph"><block ref="a7d0c7f24713f4f2e4432bb2b91f97d0" category="inline-link-rx"></block></block>
   <block id="c4c07270ebbe6cd1bc5aa6f45be76f02" category="video-title">アニメーション- AFF A150のインストールとセットアップ</block>
-  <block id="15bdfa06733933ff3285c6dd92cad9c7" category="doc">PSUをスワップします（AFF A150）</block>
   <block id="f9195e4f2cbce0b6d30752619eae4687" category="doc">コントローラモジュールハードウェアを交換してください- AFF A150</block>
   <block id="890166d65f80913ec2882e814dc85cff" category="doc">コントローラをシャットダウンします（AFF A150）</block>
   <block id="7befdc0c8cc35d0c1711e11bd7feb970" category="list-text">キャッシングモジュールのデータを消去します。<block ref="6daf7f4112fcf7c7be366c44ff70faf2" prefix=" " category="inline-code"></block></block>
@@ -5197,7 +5187,6 @@
   <block id="5e7787ae07713719c2880dedfbaa61f7" category="doc">システム構成を復元して確認します（AFF C250）</block>
   <block id="2fe38375bb3f7a0d45a583d876016df5" category="doc">DIMMを交換します- AFF C250</block>
   <block id="157f430cb5493d5d45b9bcab28a74c47" category="doc">ブートメディアを交換します（AFF C250）</block>
-  <block id="9c0f44d79b852189eca9e0c3c970c0ff" category="doc">電源装置を交換します（AFF C250）</block>
   <block id="3801b936526098c0a13cec6739840593" category="doc">システムにケーブルを再接続し、ディスクを再割り当てします（AFF C250）</block>
   <block id="9173003f27a48b6c3802570ab91f9690" category="summary">このセクションでは、AFF C250システムの設置手順について詳しく説明します。</block>
   <block id="650ebf976037bb8321f0f947063e1da1" category="doc">詳細な手順- AFF C250</block>
@@ -5224,7 +5213,6 @@
   <block id="a637f1b4c2a1d9b5cb9f0347c7e77539" category="doc">システム構成を復元して確認します（AFF C400）</block>
   <block id="b1c4aeeae550bfbe7c6574898398d781" category="doc">NVDIMMバッテリを交換します- AFF C400</block>
   <block id="76f50c3f31d2ab405df556357b00ae41" category="doc">コントローラモジュールの交換の概要- AFF C400</block>
-  <block id="327f4c7d5141a205c506afea880dfdef" category="doc">電源装置の交換- AFF C400</block>
   <block id="59278043c69406fc3ad5a92b1268c7a1" category="list-text"><block ref="59278043c69406fc3ad5a92b1268c7a1" category="inline-link-macro-rx"></block></block>
   <block id="207fa20809605ec76418419987911de1" category="list-text"><block ref="207fa20809605ec76418419987911de1" category="inline-link-macro-rx"></block></block>
   <block id="8ec5a018cdb8c2ff183e79e6526679cf" category="list-text"><block ref="8ec5a018cdb8c2ff183e79e6526679cf" category="inline-link-macro-rx"></block></block>
@@ -5248,7 +5236,6 @@
   <block id="311f323a046afbcf6ce4b152ad2dee93" category="list-text">この手順 は、PSUを1台ずつ交換するためのものです。</block>
   <block id="be0020622e775d64818f3acc7c2d856d" category="admonition">PSUは、シャーシから取り外してから2分以内に交換することを推奨します。システムは引き続き機能しますが、PSUが交換されるまで、ONTAP はデグレード状態のPSUに関するメッセージをコンソールに送信します。</block>
   <block id="e5b2987f321084b00bed28fd97c58226" category="paragraph">お使いのPSUのタイプ（ACまたはDC）に適した手順 を使用してください。</block>
-  <block id="f93bc8f892972bb47d2b0ca4cd480fad" category="open-title">オプション1：AC PSUを交換します</block>
   <block id="19a7bfc2c20931ac9f3593ce3f8c7632" category="paragraph">次の動画または記載された手順に従って、PSUを交換します。</block>
   <block id="a2528ca750816c5cbcc2ab1df78a8eb6" category="video-title">アニメーション- AC PSUを交換します</block>
   <block id="ba076df359148e35b1b589b37e5d2faa" category="list-text">コンソールのエラーメッセージまたはPSUの障害LED（赤）から、交換するPSUを特定します。</block>
@@ -5265,7 +5252,6 @@
   <block id="965cc3fcca40fe72903f2bf567787bd9" category="list-text">電源ケーブルをPSUに再接続します。</block>
   <block id="774e50999ed71aed779cdb839371a69d" category="list-text">電源ケーブル固定クリップを使用して、電源ケーブルをPSUに固定します。</block>
   <block id="eb3ac9b9efdc3a8db20ea72534f74755" category="paragraph">PSUへの電源が復旧すると、STATUS LEDがグリーンに点灯します。</block>
-  <block id="88ff7f55200d397b9c241c6c03ccd6ab" category="open-title">オプション2：DC PSUを交換する</block>
   <block id="6a5cc777b5cea5516ed3c04946243c15" category="paragraph">DC PSUを交換するには、次の手順を実行します。</block>
   <block id="81118bbf4dc8e737a15cb33e309d5928" category="list-text">プラグのつまみネジを使用して、D-SUB DC電源ケーブルコネクタを外します。</block>
   <block id="a11fffebed2ec4e6399a05866d830825" category="list-text">PSUから電源ケーブルを抜き、脇に置きます。</block>
@@ -5345,7 +5331,6 @@
   <block id="e00efce1b44b4a70e33640aa4e4da7ab" category="doc">ファンを交換してください- AFF C800</block>
   <block id="7bb5b3f1026a3e755afd3077cd503481" category="doc">NVDIMMバッテリを交換します- AFF C800</block>
   <block id="47b1e09c5a04b6651d4bc03190565935" category="doc">コントローラモジュールの交換の概要- AFF C800</block>
-  <block id="555193cbb314d41872f483748d489825" category="doc">電源装置を交換します（AFF C800）</block>
   <block id="3898efc1e45ee027e1343af6cd87375e" category="list-text"><block ref="3898efc1e45ee027e1343af6cd87375e" category="inline-link-macro-rx"></block></block>
   <block id="76908712922b1fbfdbdf730f794b109c" category="list-text"><block ref="76908712922b1fbfdbdf730f794b109c" category="inline-link-macro-rx"></block></block>
   <block id="96ec8a0dff9ea2637e9a0469cd7bf45e" category="list-text"><block ref="96ec8a0dff9ea2637e9a0469cd7bf45e" category="inline-link-macro-rx"></block></block>
@@ -6057,7 +6042,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7449f0c5fea223a0e8f25794fa6bfcf2" category="paragraph">新しいシャーシにコントローラモジュールを取り付けたら、システムをブートする必要があります。</block>
   <block id="456c80751c3f09b31ee496c3872f0c25" category="paragraph">キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。</block>
   <block id="8d25d311e353251341d471f4c2d37620" category="section-title">手順2：故障した部品をNetAppに返却する</block>
-  <block id="689f5d1d68f65bf1f76cf70ed891009d" category="doc">電源装置の交換- ASA A250</block>
   <block id="508de305feb20c63f33ef9eff7de5eb4" category="doc">ブートメディアの交換- ASA A250</block>
   <block id="a4117f1bf6bfe8785548e1e7a31f9864" category="summary">このセクションでは、システムのインストール手順について詳しく説明します。</block>
   <block id="cef403fe8ffcaa9e4b76963ad5fbdfd9" category="doc">詳細な手順- ASA A250</block>
@@ -6138,7 +6122,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6b97317afb01b5239c7991717942bc31" category="doc">コントローラモジュールの交換の概要- AFF A700</block>
   <block id="ceeabc8de1992b857f097aa39825ded7" category="doc">DIMMの交換- AFF A700</block>
   <block id="b00bdc86703139105ae05ab07b807a6a" category="paragraph">NVDIMM（不揮発性デュアルインラインメモリモジュール）は、揮発性メモリから不揮発性ストレージへのデータ転送を管理し、停電やシステムのシャットダウン時にもデータの整合性を維持します。</block>
-  <block id="53cf1eb17a3e9045dac329b1022412e7" category="doc">電源装置の交換- AFF A700</block>
   <block id="b5862dffd2a662580b7e6e08646b8a4e" category="doc">コントローラのシャットダウン- AFF A700</block>
   <block id="a4a9da0210f62016e71b1c10b9e4c492" category="doc">デステージコントローラ電源モジュール（DCPM）のホットスワップ- AFF A700</block>
   <block id="5b2f7b92c7435bc4b996d69c57391d11" category="doc">障害のあるコントローラのシャットダウン- AFF A700</block>
@@ -6184,7 +6167,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="caa8aa4a595b6f33857d21fb97a3622e" category="paragraph">このページでは、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順を図で示します。を使用します <block ref="0cdb4981396afec17d02c8ce5d1b8e06" category="inline-link-macro-rx"></block> ネットアップシステムのインストールに精通している場合。</block>
   <block id="f0d6a8fa292b0f0965c180c3ec81b98c" category="admonition">ASA A800は、AFF A800システムと同じインストール手順を使用します。</block>
   <block id="1809d57833f6aee6ca28a7a9976f3c02" category="doc">SSDドライブまたはHDDドライブの交換- ASA A800</block>
-  <block id="8efb05cbcb76a25c9260967bb6da74ea" category="doc">電源装置の交換- ASA A800</block>
   <block id="ab40c87c67587a22552f3f86175f6b6c" category="doc">コントローラの交換- ASA A800</block>
   <block id="3e1e482bf99769f878506ac262ea9469" category="doc">シャーシの交換- ASA A800</block>
   <block id="cf89ec61d7d165d24a4540839ef73f51" category="doc">シャーシ交換後の処理- ASA A800</block>
@@ -6211,7 +6193,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7c14198274ad186b196f84339867747a" category="doc">システムの完全なリストア- FAS9000</block>
   <block id="92106d784bab2c2d0ac64d21da8379b3" category="doc">コントローラモジュールの交換の概要- FAS9000</block>
   <block id="d9f3feb3ff9dd83a5d862eb64cc9a110" category="doc">DIMMの交換- FAS9000</block>
-  <block id="6a2bdbf29fe66b28017ff3dc4e7ce2b1" category="doc">電源装置の交換- FAS9000</block>
   <block id="7354c77553fbaba43d86f13f4a4b476e" category="doc">コントローラのシャットダウン- FAS9000</block>
   <block id="74aa9c71bfd41b33dc21e26b67720c49" category="doc">デステージコントローラ電源モジュール（DCPM）のホットスワップ- FAS9000</block>
   <block id="14e88a77d6efea55ca64c457b9ab65da" category="doc">障害のあるコントローラのシャットダウン- FAS9000</block>
@@ -6261,7 +6242,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="ae383c4833f526c25894b4e6dec33459" category="paragraph">ASA A900ストレージシステムでは、次のコンポーネントに対してメンテナンス手順を実行できます。</block>
   <block id="1cf6ac8a974aa424dc7fbb078c513f07" category="doc">リアルタイムクロックバッテリの交換- ASA A900</block>
   <block id="0b03535505d87f108fe49abb6aa06130" category="doc">DIMMの交換- ASA A900</block>
-  <block id="028f92edd9500c0efb168e412294a861" category="doc">電源装置の交換- ASA A900</block>
   <block id="ed6183c79360d84f37e156e80fe33aa6" category="doc">コントローラのシャットダウン- ASA A900</block>
   <block id="67bcd92a05c94a3a813d8e595b1f5283" category="doc">システムのリストアの完了- ASA A900</block>
   <block id="eb192783589d844d1af1ecb849489b22" category="section-title">手順1：新しいコントローラのライセンスをインストールする</block>
@@ -6296,7 +6276,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="185d6bc662c8cd2db9d58c8a722d974e" category="paragraph">FAS2700ストレージシステムでは、次のコンポーネントに対してメンテナンス手順を実行できます。</block>
   <block id="4091c5e7156fea8e74fb2f6ff3fe34fd" category="doc">リアルタイムクロックバッテリの交換- FAS2700</block>
   <block id="b8e850ed2869826d3faae08f01220ae6" category="doc">DIMMの交換- FAS2700</block>
-  <block id="de599e8ee2b792a05ff2446e93b3a7e5" category="doc">電源装置の交換- FAS2700</block>
   <block id="38b5b8ea2b8764ef3d6b86337c41db64" category="doc">コントローラのシャットダウン- FAS2700</block>
   <block id="478014c57de308398851e19e48a955f6" category="summary">システムを完全な運用状態に戻すには、NetAppストレージ暗号化の設定をリストアし（必要な場合）、新しいコントローラのライセンスをインストールして、障害が発生した部分をNetAppに戻す必要があります。</block>
   <block id="dd3e1b2974ba653fef81686173aafcb6" category="doc">システムのリストアの完了- FAS2700</block>
@@ -6371,7 +6350,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="76f8020a6c211d0a85b51e324867f828" category="paragraph">ASA A150ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="25e4ca3cea9556bf60cfd34a863bcc83" category="doc">リアルタイムクロックバッテリを交換してください- ASA A150</block>
   <block id="b2d9da7407ab97d4d923ee0f45653d7f" category="doc">DIMMの交換- ASA A150</block>
-  <block id="044e314ccb891749cf1ff6ab7bb779e9" category="doc">電源装置の交換- ASA A150</block>
   <block id="17d46fdea79baa1b0abb75060c4b26eb" category="doc">コントローラのシャットダウン- ASA A150</block>
   <block id="15f3dc209220fcd5ed53507c602a5619" category="doc">OKM、NSE、NVE - ASA A150のリストア</block>
   <block id="3481ad4d7a2afb32f38e558fa9328a94" category="list-text"><block ref="3481ad4d7a2afb32f38e558fa9328a94" category="inline-link-macro-rx"></block></block>
@@ -6423,7 +6401,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b8a21ef26361bcf497970ad95729f649" category="doc">システムのリストアの完了- ASA A400</block>
   <block id="b65dcf1c7ad6c86f6d2d5bed4626bcc6" category="doc">クイックガイド- ASA A400</block>
   <block id="5eb8101a6e8a2a3f54c56549ab21ade4" category="admonition">ASA A400は、AFF A400システムと同じインストール手順を使用します。</block>
-  <block id="b26cf0fc163ec7e9ea966514eed60da1" category="doc">電源装置の交換- ASA A400</block>
   <block id="2d7c6c8ec11dfd6f4583d91c8d94d5d0" category="doc">コントローラの交換- ASA A400</block>
   <block id="1952c1c21894126b1d43fd1b446add88" category="doc">シャーシの交換の概要- ASA A400</block>
   <block id="8a5c79d05f266b99fd8b21d069b75d78" category="doc">シャーシ交換後の処理- ASA A400</block>
@@ -6657,7 +6634,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="967b266f7bf42739746ff8ee10704ec8" category="doc">システムのリストアの完了- ASA C400</block>
   <block id="a2e400b53e6df30e6ea808a7a8d9cf03" category="doc">システムにケーブルを再接続し、ディスクを再割り当てする- ASA C400</block>
   <block id="d87d17cd765dde0b8f553a33b6d61945" category="doc">ハードウェアの交換- ASA C400</block>
-  <block id="6b6916e7dab19d8ffcd0bc0fa006d0c2" category="doc">電源装置の交換- ASA C400</block>
   <block id="d8548c2140dedaa5fc883590a1f7009a" category="doc">リアルタイムクロックバッテリを交換してください- ASA C400</block>
   <block id="90276cd1568977c0a841334b01c793ee" category="doc">システム構成のリストアと確認（ASA C400）</block>
   <block id="9f50c74c54d6b3ee3b7485498ed65016" category="doc">リストアと交換のプロセスを完了する（ASA C400）</block>
@@ -6686,7 +6662,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e6b4abf5b92977063300e1d579857b79" category="doc">システムにケーブルを再接続し、ディスクを再割り当てする- ASA C250</block>
   <block id="12e315d8c52faa94677b1901adfb8eb4" category="doc">ハードウェアの交換- ASA C250</block>
   <block id="e6d96f81a26c1a2a35065ae9c3793837" category="doc">NVMEMバッテリの交換- ASA C250</block>
-  <block id="5a3293bed167a0eb16f492a5ce0b1ed5" category="doc">電源装置の交換- ASA C250</block>
   <block id="7382bde7f210f74c2e89d6849d2c853c" category="doc">リアルタイムクロックバッテリを交換してください- ASA C250</block>
   <block id="d39ab7984d0a9959c51323b1566d39fd" category="doc">システム構成を復元して確認します（ASA C250）。</block>
   <block id="4011a7882485055cdc06ec93e7092124" category="doc">リストアと交換のプロセスを完了する（ASA C250）</block>
@@ -6716,7 +6691,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7aceb406cd07b754209377738399299c" category="doc">システムの完全なリストア- ASA C800</block>
   <block id="7eb1428cde412a152576637c584b14c0" category="doc">システムにケーブルを再接続し、ディスクを再割り当てする- ASA C800</block>
   <block id="ea1dc19906ddc0d31254dd6f8ec34328" category="doc">ハードウェアの移動と交換- ASA C800</block>
-  <block id="5bb05bb37b0f50f78a66bcb870b4f799" category="doc">電源装置の交換- ASA C800</block>
   <block id="bf0c9d599368cd33e5930b660050f4e0" category="doc">リアルタイムクロックバッテリを交換してください- ASA C800</block>
   <block id="d7839b53c88c4bbaff7e95ac9d3c76fc" category="doc">システム構成のリストアと確認- ASA C800</block>
   <block id="cbc21197c1871348bbf882e4a113a8cf" category="doc">リストアと交換のプロセスを完了する（ASA C800）</block>
@@ -7777,7 +7751,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="807b26d7111f209057a30d265b88f6ae" category="paragraph">I/Oモジュール（入出力モジュール）は、コントローラと、コントローラとデータを交換する必要があるさまざまなデバイスやシステムとの間の仲介役として機能するハードウェアコンポーネントです。</block>
   <block id="517e65cbfa02ca306eec69200485822d" category="paragraph">電源装置は、コントローラに冗長な電源を提供します。</block>
   <block id="f133a8ed8a0b7a76b6c1b28bc00b0fb1" category="doc">NVRAMの交換- AFF A1K</block>
-  <block id="6794ac4e17218aaa4a21099cb6c428a5" category="doc">電源装置の交換- AFF A1K</block>
   <block id="5dae7574a50de0a82f041d98e2b363d4" category="doc">リアルタイムクロックバッテリを交換してください- AFF A1K</block>
   <block id="6f088e5455bf9d5415570fed055240bc" category="paragraph">AFF A70およびA90ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="1fba4a247f94ae0adebcaa57fd54e768" category="image-alt">ケーブルプルタブの向きの例</block>
@@ -8335,7 +8308,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="a353ad5d28eb41a61c5aaf6e3cdd653a" category="paragraph">AFF A1Kストレージシステムのラックハードウェアを設置したら、コントローラにネットワークケーブルを接続し、コントローラとストレージシェルフの間をケーブルで接続します。</block>
   <block id="c4cbbd77402de8c27a0e7a305bcd7a83" category="list-text">コントローラAのポートe1aをコントローラBのポートe1aに接続します。</block>
   <block id="e2e054e25b28fb3d74a683482ef337a6" category="list-text">コントローラAのポートe7aをコントローラBのポートe7aに接続します。</block>
-  <block id="b1a78b15892ed366f203ff3009cb08d9" category="admonition">クラスタトラフィックおよびHAトラフィックのシステムパフォーマンスを最大限に高めるために、ホストネットワーク接続にポートe1bおよびe7bを使用しないでください。パフォーマンスを最大化するには、別のホストカードを使用します。</block>
   <block id="bf419afe8104f0626b8c6f35d7546f54" category="list-text">コントローラAのポートe1aとコントローラBのポートe1aをクラスタネットワークスイッチAに接続します。</block>
   <block id="cf5e5d4912cff0cbaa590fc1ae9ce6d7" category="list-text">コントローラAのポートe7aとコントローラBのポートe7aをクラスタネットワークスイッチBに接続します。</block>
   <block id="8bff2f2dabc32a6a40817e91a3008934" category="open-title">オプション1：1台のNS224ストレージシェルフに接続</block>
@@ -8417,7 +8389,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e78eb711e1e947ddb92f05657d0347d1" category="inline-link-macro">AFF A70またはAFF A90ストレージシステムを設置する準備</block>
   <block id="2f2189cfd66651c01e836375bb7f1b05" category="paragraph">ハードウェア要件を確認したら、<block ref="cee013a212eeca03333769e1fffc4483" category="inline-link-macro-rx"></block></block>
   <block id="45246f3dd0a53426b7b68a7138275eae" category="doc">NVバッテリの交換- AFF A70およびAFF A90</block>
-  <block id="142aed9b4219bef04d9ce41b26e16e98" category="doc">電源装置の交換- AFF A70 and AFF A90</block>
   <block id="09667d54b485aed2ff058a0b9116b943" category="doc">リアルタイムクロックバッテリを交換してください- AFF A70 and AFF A90</block>
   <block id="1d04f5bb7d7b81fc8fded3b79cc0c8d3" category="doc">ASA R2システムのインストールとセットアップ</block>
   <block id="22d05c38a6e8032e35e9ff8d6b826ee0" category="inline-link">ASA R2システムのマニュアル</block>
@@ -8452,7 +8423,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5f402dad935ff3ab451b558b0df9b4f3" category="paragraph">コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ストレージ、I/Oカードを制御し、ONTAPオペレーティングシステムソフトウェアを実行します。</block>
   <block id="33a7e77eb8f382b670aecd2f25304362" category="doc">NVバッテリの交換- ASA A70およびASA A90</block>
   <block id="124b0b12b52d6ff2b5c211d8ab2b86c6" category="doc">NVRAMの交換- ASA A70およびASA A90</block>
-  <block id="778b3919afeff8e8a35cc6a213bb7784" category="doc">電源装置の交換- ASA A70およびASA A90</block>
   <block id="591fbd5c7a0e4469981c4bc0919fffdb" category="doc">リアルタイムクロックバッテリを交換してください- ASA A70およびASA A90</block>
   <block id="77dbbb0add58d8d5b96d74c1b27689bb" category="doc">故障した部品をNetAppに返却します（ASA A1K）。</block>
   <block id="1c1be2f74300d879eb6d6d09021f9e6f" category="doc">ブートメディアの交換- ASA A1K</block>
@@ -8465,7 +8435,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3f3cad89dab9930e656089557bd4ab26" category="doc">ASA A1Kハードウェアのメンテナンス</block>
   <block id="c0948273a639518682bdf15da7ef7782" category="paragraph">ASA A1Kストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="d40d4bbeff22abe0ae50f578804e3f1d" category="doc">NVRAMの交換- ASA A1K</block>
-  <block id="8280bf46cc1987c5763fa466b06ce943" category="doc">電源装置の交換- ASA A1K</block>
   <block id="53211074b0edd2a1e49952ae0a99c70e" category="doc">リアルタイムクロックバッテリを交換してください- ASA A1K</block>
   <block id="791c7d7e48c500e265e759e91a1190c4" category="paragraph">指定したバージョンのONTAPでは、次のシステム、シェルフ、およびスイッチがサポートされなくなりました。</block>
   <block id="e039aa1be61543fd84f1c4eb5d3e9f6b" category="section-title">ONTAPハードウェアシステム</block>
@@ -8553,7 +8522,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5060dc7c2f8e62d845323bb56c316f67" category="paragraph">ハードウェア要件を確認したら、<block ref="f9fa58ae9ecc3e85b1db488d30bad78e" category="inline-link-macro-rx"></block></block>
   <block id="3a36e6b466e0265c25d241c486f64e02" category="paragraph">Flash Cache は、最近読み取られたユーザデータとネットアップのメタデータをリアルタイムでインテリジェントにキャッシングすることで、データへのアクセスを高速化します。データベース、 E メール、ファイルサービスなど、ランダムリードが大量に発生するワークロードに効果的です。</block>
   <block id="c4ed6403201dfa217ff707bb31f7629c" category="doc">NVRAMの交換- FAS70およびFAS90</block>
-  <block id="031f9f009940597777a75796e5b17818" category="doc">電源装置を交換します - FAS70 および FAS90</block>
   <block id="6edcaa0f49095aafb0fa011d3fa4d4c5" category="doc">リアルタイムクロックバッテリ -FAS70 および FAS90 を交換してください</block>
   <block id="d387637ce68cde3388b8e2a316fb8a4b" category="summary">ONTAPハードウェアシステムの運用を開始するには、ONTAPでハードウェアコンポーネントを取り付け、ハードウェアをケーブル接続し、ストレージを設定します。</block>
   <block id="b11226c776ec1b74f6a42f871e3194c9" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>ストレージシステムとストレージシェルフの設置</block>
@@ -9449,7 +9417,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="87e83e1392e33b9e82110521a139bad8" category="list-text">NVバッテリを取り外します。</block>
   <block id="d61cc7e5822a30588ead2cb9b0e8c0d8" category="list-text">交換用NVバッテリを取り付けます。</block>
   <block id="216cd6b3556908b9bf9092308aacc2f2" category="list-text">NVバッテリをコンパートメントに入れます。</block>
-  <block id="29e74344b0f8f3bb2a741f7b4a504193" category="paragraph">PSUは冗長構成で、ホットスワップ対応です。</block>
   <block id="a9f9d19ee0352e6fe7d4ace8f91528b4" category="list-text">重要：異なる効率定格または異なる入力タイプのPSUを混在させないでください。いつものように同じように置換します。</block>
   <block id="f6454949377394cc2236360f10f7e56e" category="list-text">コンソールのエラーメッセージまたはPSUの赤色の警告LEDから、障害が発生しているPSUを特定します。</block>
   <block id="6f48d98c2df2386d39c71bc10860a818" category="list-text">電源コード固定クリップを開いて電源コードをPSUから外し、電源コードをPSUから抜きます。</block>
@@ -9509,7 +9476,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7638bec0a959f7fd0b1433ed8d2deca8" category="list-text">ストレージシェルフ（追加のストレージを注文した場合）</block>
   <block id="4aaf4b6268f5873187a9eb7110d1ec2e" category="list-text">USB-Cシリアルコンソールケーブル</block>
   <block id="8f6507883f353b8fbeb448f5d296b420" category="paragraph">設置場所がストレージシステムの仕様要件を満たしていることを確認し、発注したパーツがすべて揃っていることを確認したら、ストレージシステムを登録する必要があります。</block>
-  <block id="2ab82a0b93ec71d9918e64fb9b828444" category="list-text">取り付けている各コントローラのシステムシリアル番号（SSN）を確認します。シリアル番号は次の場所にあります。</block>
   <block id="3db53907b5ca9a298d8e8517cdd30a44" category="list-text">シリアル番号は次の場所にあります。</block>
   <block id="3fc885acbf9f3f66cb5fefc99c0d76c6" category="list-text">納品書に</block>
   <block id="cf163ceac39b37fd1108b3cf9ff2b719" category="list-text">確認メール</block>
@@ -9707,7 +9673,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="90173eb1ed454afdf58b9269bb20c2b9" category="paragraph">ファンによってコントローラとドライブが冷却されます。</block>
   <block id="05a221444243ea0ca6f4dad99fe28c6c" category="paragraph">不揮発性メモリ（NV）バッテリは、停電後に転送中のデータをフラッシュメモリにデステージしながら、NVMEMコンポーネントに電力を供給します。</block>
   <block id="93cffbd214791f6c73bd02d80e0804ab" category="doc">NVバッテリの交換- AFF A20、AFF A30、およびAFF A50</block>
-  <block id="c21a1648c7655abd0241b02472ce577b" category="doc">電源装置の交換- AFF A20、AFF A30、およびAFF A50</block>
   <block id="d04789e64aa71c747fa327e4d399534e" category="doc">リアルタイムクロックバッテリを交換してください- AFF A20、AFF A30、およびAFF A50</block>
   <block id="4bc0f3e72d6123d7efdfe5948cc79a4c" category="doc">故障した部品をNetApp - AFF C30 and AFF C60に返却します。</block>
   <block id="5c067d0c56a9b99bc0f72610745316f6" category="doc">シャーシ交換後の処理- AFF C30およびAFF C60</block>
@@ -10303,7 +10268,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f7505dbf9cbf21226d33ed67b7c926e6" category="doc">ハードウェアメンテナンスの概要- ASA A20、ASA A30、およびASA A50</block>
   <block id="02cbc9c9b92f52062a793fbc039a7a5f" category="paragraph">ASA A20、ASA A30、およびASA A50ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="c62c530fe1e7e769964d1cac42c0c1ca" category="doc">NVバッテリの交換- ASA A20、ASA A30、およびASA A50</block>
-  <block id="db9511faddf8c60d659417ec7880bb9b" category="doc">電源装置の交換- ASA A20、ASA A30、およびASA A50</block>
   <block id="69ddcdcae3c05843aa3be62f304e023b" category="doc">リアルタイムクロックバッテリを交換してください- ASA A20、ASA A30、およびASA A50</block>
   <block id="3d68bd292ff38f0f7a42e75bafb71ae7" category="summary">AFF C80システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページを参照してください。</block>
   <block id="f48200b4fe7f2f013c6d085467e08b85" category="summary">ハードウェア障害またはアップグレードで必要になった場合は、AFF C80システムのコントローラを交換します。このプロセスでは、障害のあるコントローラを取り外し、交換用コントローラにコンポーネントを移動し、交換用コントローラを取り付け、システムをリブートします。</block>
@@ -12547,14 +12511,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="810944644ddbd9a71f9a53ebcd73f51d" category="list-text">規格 EMC/EMI: BS-EN-55024、BS-EN55035、CISPR 32、EN55022、EN55024、EN55032、EN55035、EN61000-3-2、EN61000-3-3、FCC Part 15 Class A、ICES-003、KS C 9832、KS C 9835</block>
   <block id="9b3b75c67a53d54bba73c70cd1786aed" category="list-text">安全規格：ANSI/UL60950-1、ANSI/UL62368-1、BS-EN62368-1、CAN/CSA C22.2 No. 60950-1、CAN/CSA C22.2 No. 62368-1、CNS 14336、EN60825-1、EN62368-1、IEC 62368-1、IEC60950-1、IS 13252（パート1）</block>
   <block id="520b661a272c9e6f55f469cc9c24193d" category="section-title">高可用性</block>
-  <block id="e447884015fc6cccd73419a58f4a2dc9" category="paragraph">イーサネット ベースのベースボード管理コントローラ (BMC) およびONTAP管理インターフェイス、冗長ホットスワップ対応コントローラ、冗長ホットスワップ対応電源、SAS 接続経由の SAS インバンド管理。</block>
-  <block id="953484270d99ac98b7edea761c8accc5" category="summary">A150プラットフォームグループの主な仕様</block>
-  <block id="98cf7c8810f9cbc80da978f12dfd11de" category="paragraph">以下は、単一の高可用性ペアにおけるAFF A150ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。</block>
   <block id="f5046e4779952c40dda2055325e842f6" category="list-text">ONTAPバージョン: ONTAP: 9.16.1P2</block>
-  <block id="f31908f038c51788c271c5c4f452a2f9" category="list-text">最小ONTAPバージョン: ONTAP 9.10.1P12 == スケールアウトの最大値</block>
-  <block id="b88ea7120b8d94ca7802d027ea4ae35d" category="list-text">タイプ: NAS; HA ペア: 12; 物理容量: 6.6 PB / 5.8 PiB; 最大メモリ: 768 GB</block>
-  <block id="a4e92d69d00158d7ae606a77ce4fd213" category="list-text">タイプ: SAN; HA ペア: 6; 物理容量: 3.3 PB / 2.9 PiB; 最大メモリ: 384 GB</block>
-  <block id="c00cb3237fcdb94d446acf8665539403" category="list-text">タイプ: HA ペア; 物理容量: 0.5 PB / 0.5 PiB; 最大メモリ: 64.0000</block>
   <block id="014e996a6a164aaf40b8b3e72704fc2e" category="section-title">入出力</block>
   <block id="c9517cd5cbe4fac6d0c526d61f3fcc39" category="section-title">オンボードI/O</block>
   <block id="81754037ddc5b97d9b806acad96f8815" category="list-text">プロトコル: イーサネット 10 Gbps; ポート: 12</block>
@@ -12716,11 +12673,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="caee1a6bd998eef961868a45bd4dbc8b" category="list-text">最悪の場合の電力: 3476 BTU/時</block>
   <block id="7d5423ead4cc9c9c7523162c96b9a70a" category="list-text">重量: 54.3ポンド/24.6kg</block>
   <block id="bfb224eca9d5778fa9096edb45c6e0a6" category="list-text">音響騒音：表示音響出力（LwAd）：7.2；br／音圧（LpAm）（傍観者位置）：69.1 dB</block>
-  <block id="72c1a142348c9ef5cd0bfa8785831482" category="summary">A250プラットフォームグループの主な仕様</block>
-  <block id="d4ece2dd07e2b088387c9e6101f7374b" category="paragraph">以下は、単一の高可用性ペアにおけるAFF A250ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。</block>
-  <block id="141231dc194fb8130baba1dedc3a1437" category="list-text">最小ONTAPバージョン: ONTAP 9.8RC1 == スケールアウトの最大値</block>
-  <block id="e09d173ed5c31e4dd78ba88f30e765c1" category="list-text">タイプ: NAS; HA ペア: 12; 物理容量: 13.2 PB / 11.7 PiB; 最大メモリ: 1536 GB</block>
-  <block id="883fa3568cecac0f4750af6ef669d774" category="list-text">タイプ: SAN; HA ペア: 6; 物理容量: 6.6 PB / 5.9 PiB; 最大メモリ: 768 GB</block>
   <block id="8620fd4a54bd59df48445495cc60d6a1" category="list-text">タイプ: HA ペア; 物理容量: 1.1 PB / 1.0 PiB; 最大メモリ: 128.0000</block>
   <block id="f350094c762b190b03da78050fac38f6" category="list-text">プロトコル: イーサネット 25 Gbps; ポート: 4</block>
   <block id="ae6233ad0fe7d541d74b7fcbd8e20ee1" category="list-text">プロトコル: イーサネット 10 Gbps; ポート: 4</block>
@@ -12749,17 +12701,10 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="99190bf361f23d7f60b0311ed65db52c" category="list-text">高さ: 4U</block>
   <block id="fd82bddbad5203300e57904c991cb840" category="list-text">奥行き: 32.6インチ (ケーブル管理ブラケット付き 34.7インチ)</block>
   <block id="9725247c68aace7973804f231cbdd26b" category="list-text">音響ノイズ：表示音響出力（LwAd）：8.5；br／音圧（LpAm）（傍観者位置）：67.2 dB</block>
-  <block id="2ecaf45e6d941aa8787c5207d6e14cbf" category="summary">A400プラットフォームグループの主な仕様</block>
-  <block id="f0e9d60af7684125f1b3ec54132594db" category="paragraph">以下は、単一の高可用性ペアにおけるAFF A400ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。</block>
   <block id="8d6f1126e03ba70819901e3191bf6358" category="list-text">最小ONTAPバージョン: ONTAP 9.7RC1 == スケールアウトの最大値</block>
-  <block id="af08be515a9d4c3e3b541572ab14ca83" category="list-text">タイプ: NAS; HA ペア: 12; 物理容量: 176.3 PB / 156.5 PiB; 最大メモリ: 3072 GB</block>
-  <block id="93b63827e9f32e325a3be96e3d1d0d01" category="list-text">タイプ: SAN; HA ペア: 6; 物理容量: 88.1 PB / 78.3 PiB; 最大メモリ: 1536 GB</block>
-  <block id="d9dd3b93e031a157b272db3164ac9cef" category="list-text">タイプ: HA ペア; 物理容量: 14.7 PB / 13.0 PiB; 最大メモリ: 256.0000</block>
   <block id="603170cd5591c91144ede853fb7004e9" category="list-text">プロトコル: イーサネット 25 Gbps; ポート: 12</block>
   <block id="c3346d55fb4bcd313308cf344c3c9956" category="list-text">プロトコル: イーサネット 100 Gbps; ポート: 20</block>
   <block id="1f9a9c48fecfca4a044d529a9d033783" category="list-text">プロトコル: イーサネット 10 Gbps; ポート: 32</block>
-  <block id="637b290f820eaaf5033dfa8ab5a60528" category="list-text">プロトコル: FC 32 Gbps; ポート: 24</block>
-  <block id="53650a5ecd2e7e6bd89acc186768c407" category="list-text">プロトコル: NVMe/FC 32 Gbps; ポート: 24</block>
   <block id="4930a203d4d9fe648c8369b3361ea867" category="list-text">プロトコル: SAS 12 Gbps; ポート: 32</block>
   <block id="24679701c4662127aa11de2c774f57f7" category="list-text">重量: 110.0ポンド (49.9 kg)</block>
   <block id="f8c2b681f9f457cefef2b7a4d0a49b52" category="list-text">奥行き: 32.6インチ (ケーブル管理ブラケット付きで34.7インチ)</block>
@@ -12922,10 +12867,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8d316cb0dd32e6a29db7a99bc113d716" category="paragraph">最小ONTAPバージョン: ONTAP 9.13.1</block>
   <block id="f0ed92d1c0fd3e909c924094a93243f1" category="paragraph">FC; iSCSI; NVMe/TCP;</block>
   <block id="fd49e13a7e97bd8bb1e4c38997b7c545" category="paragraph">利用できる環境データがありません。</block>
-  <block id="0e1c2f19527964f6e08154d6482b5e30" category="summary">ASA150プラットフォームグループの主な仕様</block>
-  <block id="4dbc96329d5818883df31ecb13a05ebd" category="paragraph">以下は、単一の高可用性ペア内のASA A150ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。</block>
-  <block id="541cac174e166b24f88392f26d40f404" category="list-text">最小ONTAPバージョン: ONTAP 9.13.1 == スケールアウトの最大値</block>
-  <block id="18f87be5c5603f09112f8af3908b1280" category="list-text">NVMe/TCP == システム環境仕様 環境データはありません。</block>
   <block id="680d950d544b60547a8bacca951d6718" category="summary">ASA A250ストレージシステムの主な仕様</block>
   <block id="a97c7cd2a22344db01c67b788d791334" category="doc">ASA A250の主な仕様</block>
   <block id="20955af66ca82e86dac8266497f64dec" category="paragraph">以下はASA A250の厳選された仕様です。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>ASA A250 の仕様の完全なリストについては、(HWU) を参照してください。このページは、単一の高可用性ペアを反映しています。</block>
@@ -12933,9 +12874,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8a7a6a6e68946412c0d94b0a69520833" category="cell">4.4 PB / 3.9 PiB</block>
   <block id="adb1577c933e08c5e605d6b3e683d150" category="cell">0.7 PB / 0.7 PiB</block>
   <block id="1978f393885cf00f05ab1be479828e8f" category="paragraph">FC; iSCSI; NVMe/FC ; NVMe/TCP;</block>
-  <block id="65f5bdc4ea585a25db7e798fe434a135" category="summary">ASA250プラットフォームグループの主な仕様</block>
-  <block id="81dee4edf751df8f6f2a9351c3c1054e" category="paragraph">以下は、単一の高可用性ペア内のASA A250ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。</block>
-  <block id="a87f27eafdf3369f35e9efc3c479e4f7" category="list-text">タイプ: SAN; HA ペア: 6; 物理容量: 4.4 PB / 3.9 PiB; 最大メモリ: 768 GB</block>
   <block id="8635c55a722f7078767bf23390e4512b" category="list-text">プロトコル: FC 32 Gbps; ポート: 8</block>
   <block id="836d5b409933ca37fd9abb594f9ffa51" category="list-text">プロトコル: NVMe/FC 32 Gbps; ポート: 8</block>
   <block id="1e9ab1ef21b71ca54d8fb332aba59c57" category="summary">ASA A400ストレージシステムの主な仕様</block>
@@ -12943,8 +12881,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="50c7467b088c1359dd4f78f13eee0b4a" category="paragraph">以下はASA A400の厳選された仕様です。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>ASA A400仕様の完全なリストについては、(HWU) を参照してください。このページは、単一の高可用性ペアを反映しています。</block>
   <block id="c34e8a3f11aa9b5bf96f8f039946f5ac" category="paragraph">プラットフォーム構成: ASA A400シングルシャーシ HA ペア、イーサネット バンドル</block>
   <block id="171ad46774f32c56db17e5cc8a1c27ca" category="list-text">最悪の場合の電力: 5212 BTU/時</block>
-  <block id="36fb5b627c2dfb6e53810cdd3e6be3f3" category="summary">ASA400プラットフォームグループの主な仕様</block>
-  <block id="1976618cf00c0b6aea89a517e457a8c1" category="paragraph">以下は、単一の高可用性ペア内のASA A400ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。</block>
   <block id="65d0afe8c0786bff1dd86021fdc07256" category="summary">ASA A800ストレージシステムの主な仕様</block>
   <block id="59a59c8ca4ad93f3a28d68343d4dc062" category="doc">ASA A800の主な仕様</block>
   <block id="263fbe530f95144e2f9fc1764572e731" category="paragraph">以下はASA A800の仕様の一部です。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>ASA A800仕様の完全なリストについては、(HWU) を参照してください。このページは、単一の高可用性ペアを反映しています。</block>
@@ -12952,8 +12888,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="9aa49a71aa0866fdf22c763b884cf447" category="cell">39.7 PB / 35.2 PiB</block>
   <block id="857fbb927f9301cb274cfbbe50576f34" category="cell">7680 GB</block>
   <block id="0a74815927318643e615dd9f6d9ef36c" category="cell">1280.0000</block>
-  <block id="580e58da3f4c8c0e004338e2d5463568" category="summary">ASA800プラットフォームグループの主な仕様</block>
-  <block id="06eb93fc791c5a505c106b277c7d4f76" category="paragraph">以下は、単一の高可用性ペア内のASA A800ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。</block>
   <block id="1cb06846bf340ec24f77328a4840931c" category="summary">ASA A900ストレージシステムの主な仕様</block>
   <block id="cdca003ab9116f8c6df61f92c170e74f" category="doc">ASA A900の主な仕様</block>
   <block id="b9cb6f539efb85bd3dbecb8f63b109da" category="paragraph">以下はASA A900の仕様の一部です。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>ASA A900 の仕様の完全なリストについては、(HWU) を参照してください。このページは、単一の高可用性ペアを反映しています。</block>
@@ -12964,8 +12898,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="d5badd98590f7c8475031c722bee9f13" category="list-text">重量: 220.5 lbbr/100.0 kg</block>
   <block id="d7dbfe33d50154da8ce85d1c1065e7be" category="list-text">奥行き: 28.8インチ (ケーブル管理ブラケット付き 36.8インチ)</block>
   <block id="a57159585077204011cc6d81536a227c" category="list-text">音響騒音：表示音響出力（LwAd）：7.4；br／音圧（LpAm）（傍観者位置）：65.0 dB</block>
-  <block id="fa224ab2852d40c3701e238592589a35" category="summary">ASA900プラットフォームグループの主な仕様</block>
-  <block id="dae772a251ba6ae7609ce9eb445c4ca7" category="paragraph">以下は、単一の高可用性ペア内のASA A900ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。</block>
   <block id="18dc17338011190ae60489762b18bbba" category="summary">AFF C250ストレージシステムの主な仕様</block>
   <block id="06b4db325464ed97a14422979b4d8924" category="doc">AFF C250の主な仕様</block>
   <block id="12dc95d0bc892a4d68c08990a2e0e93f" category="paragraph">以下はAFF C250の厳選された仕様です。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>AFF C250 の仕様の完全なリストについては、(HWU) を参照してください。このページは、単一の高可用性ペアを反映しています。</block>
@@ -12975,10 +12907,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="ca0c9966bf6d8b13874c9a33d9b103fa" category="cell">8.8 PB / 7.9 PiB</block>
   <block id="4dfae59c5327b0ed3524f4482c118eaa" category="cell">1.5 PB / 1.3 PiB</block>
   <block id="acd481bb21a2d48c85590f748324f123" category="paragraph">イーサネット ベースのベースボード管理コントローラ (BMC) およびONTAP管理インターフェイス、冗長ホットスワップ可能なコントローラ、冗長ホットスワップ可能な電源装置。</block>
-  <block id="4f598ad0067992538a9b25a635fd7ebe" category="summary">C250プラットフォームグループの主な仕様</block>
-  <block id="c77413b9effec9f5e6d3543e5e5b357a" category="paragraph">以下は、単一の高可用性ペアにおけるAFF C250ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。</block>
-  <block id="f15eebaf1ae51e81f921eaf53eb1297d" category="list-text">最小ONTAPバージョン: ONTAP 9.10.1P15 == スケールアウトの最大値</block>
-  <block id="bdf24340dd03a1e6485e317e7694b9b2" category="list-text">タイプ: NAS; HA ペア: 12; 物理容量: 17.7 PB / 15.7 PiB; 最大メモリ: 1536 GB</block>
   <block id="121ccbb25c187ccfd21ddfb63cddb37b" category="summary">AFF C30の主な仕様</block>
   <block id="ac83142a3cf60457afcf64302dc699f8" category="paragraph">以下は、単一の高可用性ペアにおけるAFF C30 ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。</block>
   <block id="bdb291fe6613a36b2df9dcf579e18d44" category="section-title">AFF C30の仕様概要</block>
@@ -13008,9 +12936,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="73378505345b16bafe8e8e0adc36335b" category="cell">2.9 PB / 2.6 PiB</block>
   <block id="33e75ff09dd601bbe69f351039152189" category="cell">28</block>
   <block id="d645920e395fedad7bbbed0eca3fe2e0" category="cell">40</block>
-  <block id="cc2197d8b97e0d4876bce9bda259529b" category="summary">C400プラットフォームグループの主な仕様</block>
-  <block id="14bd00edae2bf24d6d6bb1e970380fcd" category="paragraph">以下は、単一の高可用性ペアにおけるAFF C400ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。</block>
-  <block id="e2904e96770de9235975509793655256" category="list-text">タイプ: NAS; HA ペア: 12; 物理容量: 35.4 PB / 31.4 PiB; 最大メモリ: 3072 GB</block>
   <block id="08bd3bd31dd4639c8d1ce08094a5c7ef" category="summary">AFF C80ストレージシステムの主な仕様</block>
   <block id="2d33040a8a66f0c30e2c415a9eec7d8d" category="doc">AFF C80の主な仕様</block>
   <block id="67e389a0ebc658619776b9d5ac7e49d5" category="paragraph">以下はAFF C80 の厳選された仕様です。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>AFF C80 仕様の完全なリストについては、(HWU) を参照してください。このページは、単一の高可用性ペアを反映しています。</block>
@@ -13025,12 +12950,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4e635c54d834641513e2b2c8e225a127" category="cell">イーサネット 200 Gbps</block>
   <block id="19ca14e7ea6328a42e0eb13d585e4c22" category="cell">36</block>
   <block id="9f61408e3afb633e50cdf1b20de6f466" category="cell">56</block>
-  <block id="866524d146caf6d5d5ca58414133dfcb" category="summary">C80プラットフォームグループの主な仕様</block>
-  <block id="fc53799482b5c72e371c896c296eeaca" category="paragraph">以下は、単一の高可用性ペアにおけるAFF C80 ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。</block>
-  <block id="790f2f7025a49405ecf494550abd2025" category="list-text">タイプ: NAS; HA ペア: 12; 物理容量: 176.8 PB / 157.0 PiB; 最大メモリ: 6144 GB</block>
-  <block id="4668001b533dcb01a288e13e438ef996" category="list-text">タイプ: SAN; HA ペア: 6; 物理容量: 88.4 PB / 78.5 PiB; 最大メモリ: 3072 GB</block>
-  <block id="88fef25d7d076a46933eb5cfece64d7d" category="list-text">タイプ: HA ペア; 物理容量: 14.7 PB / 13.1 PiB; 最大メモリ: 512.0000</block>
-  <block id="48f850c93d74da66ee33ca24f09bc3d1" category="list-text">SMB 3.1.1 == システム環境仕様 環境データはありません。</block>
   <block id="c16047b0b69bcd197b44430d6882aab1" category="summary">AFF C800ストレージシステムの主な仕様</block>
   <block id="198b715fa6258cbda0053099c7bc668e" category="doc">AFF C800の主な仕様</block>
   <block id="f7695e44bea62e5b28836a193e3bda64" category="paragraph">以下はAFF C800の厳選された仕様です。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>AFF C800 の仕様の完全なリストについては、(HWU) を参照してください。このページは、単一の高可用性ペアを反映しています。</block>
@@ -13040,9 +12959,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="439e4902245729253229992fd0a361ae" category="list-text">重量: 132.5ポンド/60.1kg</block>
   <block id="f60520e90b3a6d873ecb44d71d75b734" category="list-text">動作温度/高度/湿度: 5°C ～ 40°C (41°F ～ 104°F) (標高 3048m、10000 フィート)、相対湿度 8% ～ 90% (結露なし)</block>
   <block id="d5cacbff7b82ab3d26541de685b1a32b" category="list-text">音響ノイズ：表示音響出力（LwAd）：8.0；br／音圧（LpAm）（傍観者位置）：62.8 dB</block>
-  <block id="de73ab042d31fbcaea0758773ba2aed7" category="summary">C800プラットフォームグループの主な仕様</block>
-  <block id="fc95a14b356ccae993f1c5a596003764" category="paragraph">以下は、単一の高可用性ペアにおけるAFF C800ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。</block>
-  <block id="3a02dddbfe8af1c44ece16bc861685bb" category="list-text">タイプ: NAS; HA ペア: 12; 物理容量: 88.4 PB / 78.5 PiB; 最大メモリ: 15360 GB</block>
   <block id="8403c0175395ff495c9af55099b8fef4" category="summary">FAS70の主な仕様</block>
   <block id="c96eb561070b12daad5027ae91335418" category="paragraph">以下は、単一の高可用性ペアにおける FAS70 ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。</block>
   <block id="c692e4fa105561892a2a9228b34bffae" category="section-title">FAS70の仕様概要</block>
@@ -13108,12 +13024,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5914ff703c6686a6800588a76dacab74" category="list-text">標準電力: 2319 BTU/時</block>
   <block id="1c28248d81d6ff87ee55b4eb47056a8c" category="list-text">最悪の場合の電力: 3872 BTU/時</block>
   <block id="b95d880eb71d3f28802d99353d93f6f0" category="list-text">重量: 52.2ポンド/23.7kg</block>
-  <block id="1c52b559c1f437da01a94de79dc7f45c" category="summary">FAS50プラットフォームグループの主な仕様</block>
-  <block id="18f027e2b7707b7ff7767f76d5927af2" category="paragraph">以下は、単一の高可用性ペアにおける FAS50 ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。</block>
-  <block id="f0a067ccea8b26d0b2f17d9fbdb931ad" category="list-text">タイプ: NAS; HA ペア: 4; 物理容量: 42.2 PB / 37.5 PiB; 最大メモリ: 512 GB</block>
-  <block id="3a0f42ee3e73e3f8370b07da4111f5b5" category="list-text">タイプ: SAN; HA ペア: 4; 物理容量: 42.2 PB / 37.5 PiB; 最大メモリ: 512 GB</block>
-  <block id="2283cd8fe9d3e6788a5f1e28f24f55a4" category="list-text">タイプ: HA ペア; 物理容量: 10.6 PB / 9.4 PiB; 最大メモリ: 128.0000</block>
-  <block id="656b17c351d41c4973d279414ea79cc9" category="list-text">重量: 52.2ポンド (23.7 kg)</block>
   <block id="c0abf347ba9cbc3892abfa80eb2e4397" category="summary">FAS8300の主な仕様</block>
   <block id="e0fa95a49988723bdb3a71e39da9c698" category="paragraph">以下は、単一の高可用性ペアにおけるFAS8300ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。</block>
   <block id="39d93cb8cb49b1e34ce4682195baa972" category="section-title">FAS8300の仕様概要</block>
@@ -13133,7 +13043,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="0d53ee5ca699c3621f3c0a505c890b66" category="list-text">標準電力: 5430 BTU/時</block>
   <block id="36a13f3d826d9f6cf7fc56d6627d7528" category="list-text">最悪の場合の電力: 5796 BTU/時</block>
   <block id="d61c7e37be329d2ba5a7e809fb08d9c5" category="list-text">重量: 108.9ポンド (49.4 kg)</block>
-  <block id="e495c9f38a737b6da2117ebaa52ba7ac" category="doc">FAS9500の概要</block>
   <block id="40d3675d7a1ade404a4fdd374833eb73" category="paragraph">プラットフォーム構成: FAS9500シングルシャーシ HA ペア</block>
   <block id="ce98aac2c839cd0ed245c16a1a40165a" category="summary">FAS9500ストレージシステムの主な仕様</block>
   <block id="1ea1a140190bf37eb933a90c35b37442" category="doc">FAS9500の主な仕様</block>
@@ -13144,12 +13053,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5d1cd462bd74ff5016c71d1735d844d0" category="cell">90.0 PB / 79.9 PiB</block>
   <block id="6ec20c5ffb71fc8e6407815aba709ebe" category="cell">15.0 PB / 13.3 PiB</block>
   <block id="e71a112fcba059348a330658e07fff85" category="list-text">動作温度/高度/湿度: 10°C ～ 35°C (50°F ～ 95°F) (標高 3048m、10000 フィート)、相対湿度 8% ～ 90% (結露なし)</block>
-  <block id="fd64ba1b0614f4ffd66207f445196c93" category="summary">FAS9500プラットフォームグループの主な仕様</block>
-  <block id="8d8c60ca9b0b29f222ed76c52c6cf55b" category="list-text">最小ONTAPバージョン: ONTAP 9.10.1P3 == スケールアウトの最大値</block>
-  <block id="014f2208129cdc831cee84fc30f9247f" category="list-text">タイプ: NAS; HA ペア: 12; 物理容量: 180.0 PB / 159.9 PiB; 最大メモリ: 24576 GB</block>
-  <block id="42af051dd0fff696f5ce895c1bb97de4" category="list-text">タイプ: SAN; HA ペア: 6; 物理容量: 90.0 PB / 79.9 PiB; 最大メモリ: 12288 GB</block>
-  <block id="8f449cf0254f2ad40d59dd095542b714" category="list-text">タイプ: HA ペア; 物理容量: 15.0 PB / 13.3 PiB; 最大メモリ: 2048.0000</block>
-  <block id="f931f7d58dafa987aed167fe956586d0" category="list-text">動作温度/高度/湿度: 10°C ～ 35°C (50°F ～ 95°F) (標高 3048m、10000 フィート)、相対湿度 8% ～ 90%、結露なし</block>
   <block id="65a4d6fcc372057dd61e6cc7abb8c696" category="inline-link-macro">AFF A1K （自動回復）</block>
   <block id="94bd55fe0571dbfa433cb6e80d3e228b" category="inline-link-macro">AFF A1K （手動回復）</block>
   <block id="3c9419b0744beccd4fd6272e84be9db0" category="inline-link-macro">AFF A20/30/50（自動回復）</block>
@@ -14170,7 +14073,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4bf81e37c38393eea22b0e46d9f43158" category="paragraph">FAS50 システムは、セカンダリ ストレージと安全なサイバー ボールトのギガバイトあたりのコストが最も低いだけでなく、バックアップの高速化、IOPS の向上、5 ～ 10 ミリ秒の低レイテンシにより、セカンダリ ワークロードのパフォーマンスが向上します。</block>
   <block id="beb7924c631bd72f6f5181a6a1773865" category="paragraph"><block ref="6fb9af7bf62d637bf3890d9d97180d06" category="inline-link-macro-rx"></block> 。</block>
   <block id="7b619a398942b2af52ce099821518739" category="section-title">2024年リリース</block>
-  <block id="e17f7565f95df58a416490dff287f6c1" category="paragraph"><block ref="b5bce7716321adf42716e3b598ed224d" category="inline-link-macro-rx"></block> 。</block>
   <block id="7b2fa3ce2f1cc4527c7d0a4e0f774ce1" category="paragraph"><block ref="9086cf3a37365194865877acb82e7669" category="inline-link-macro-rx"></block> 。</block>
   <block id="e3dd50b258bede9c23ca84687d397bed" category="paragraph"><block ref="028bf0170285d2584dcfed56c7103ca0" category="inline-link-macro-rx"></block> 。</block>
   <block id="728d7df870ee1451558451c200b714aa" category="sidebar">NetApp AFX ストレージ システムは、高性能 NAS および S3 顧客の固有のニーズに重点を置いた、分散型のハードウェアおよびソフトウェア ソリューションです。パフォーマンスとスケーラビリティは、AI および ML ワークロードの要件を満たすように特別に設計されています。</block>
@@ -14202,4 +14104,88 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="d3bca45bb48d04c6d999281b772fa015" category="sidebar">AFX A1Kシャーシ</block>
   <block id="9a4e2ca13bc5368ad30e628996c8e94e" category="sidebar">AFX 1K コントローラー</block>
   <block id="4c052a07dcf923d8d73e0be9a32b97a7" category="sidebar">AFX 1K IOモジュール</block>
+  <block id="35be92b1079dd4d454c4f763e5723f8a" category="list-text">電源装置は冗長化され、ホットスワップに対応しています。PSU を交換するためにコントローラーをシャットダウンする必要はありません。</block>
+  <block id="1053cf7d108791c08478ce9591984516" category="open-title">オプション1: AC PSUのホットスワップ</block>
+  <block id="3d70b6b1c750645a1540b9185ec5dbfc" category="open-title">オプション2: DC PSUをホットスワップする</block>
+  <block id="27b8025bf920b2fdec95f4719d7e3772" category="paragraph">PSU は冗長化されており、ホットスワップ可能です。PSU を交換するためにコントローラーをシャットダウンする必要はありません。</block>
+  <block id="41221ad2b8f379d044b6e4c034575270" category="list-text">インストールする各コントローラのシステム シリアル番号 (SSN) を見つけます。</block>
+  <block id="639a764bd23851da6594721b4ee0a7d1" category="paragraph">イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース、冗長ホットスワップ対応コントローラ、冗長ホットスワップ対応電源、SAS接続によるSASインバンド管理、[//] 2025-10-15 ontap-systems-internal/issues/1357</block>
+  <block id="67bfe38eadb8acf6e70be93f4020561b" category="doc">電源のホットスワップ - AFF A150</block>
+  <block id="5ea0f09670f21c71300695e92b2cd256" category="admonition">ホスト ネットワーク接続にはポート e1b および e7b を使用しないでください。別のホスト カードを使用します。</block>
+  <block id="e0c35bf779836a3b5e187a211457a2b9" category="list-text">外部シェルフのSAS接続を介したSASインバンド管理 [//] 2025-10-15 ontap-systems-internal/issues/1357</block>
+  <block id="25b7a8eef02360c09d8cb7847663af3e" category="doc">電源のホットスワップ - AFF A1K</block>
+  <block id="db8171f7944e9dc66fab5b089698d3fc" category="doc">電源のホットスワップ - AFF A20、 AFF A30、 AFF A50</block>
+  <block id="6d20796c812619e842f3483504be63f4" category="doc">電源のホットスワップ - AFF A250</block>
+  <block id="057cab5a212fb0cce841ca14b2cfeda3" category="doc">電源のホットスワップ - AFF A320</block>
+  <block id="3bebfde8a4d27ae5e27f0cd50cf9a5de" category="doc">電源のホットスワップ - AFF A400</block>
+  <block id="30432b9617d110e91bb55e0ee6592cdb" category="paragraph">イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース、冗長ホットスワップ対応コントローラ、冗長ホットスワップ対応電源、外部シェルフのSAS接続によるSASインバンド管理、[//] 2025-10-15 ontap-systems-internal/issues/1357</block>
+  <block id="3076b9da82c66ef1cac1e7179b746828" category="paragraph">100 GbE ケーブルを使用して、コントローラー A と B のポート e1a および e7a をクラスター ネットワーク スイッチ A と B に接続します。</block>
+  <block id="92998a9e2d395c7927371ced81dc9182" category="admonition">ホスト ネットワーク接続にはポート e1b および e7b ポートを使用しないでください。別のホスト カードを使用します。</block>
+  <block id="ec3eca6cbff6c81c2c7efdc9ca0afcf4" category="doc">電源のホットスワップ - AFF A70およびAFF A90</block>
+  <block id="b61c2071102a270d16023e40ee5b949e" category="doc">電源のホットスワップ - AFF A700</block>
+  <block id="9fdca944f84d0d7c1dd5bec5b33c4dad" category="doc">電源のホットスワップ - AFF A700s</block>
+  <block id="c88ebc5327d1036601d0eda773d3a9b3" category="doc">電源のホットスワップ - AFF A800</block>
+  <block id="000e33b346cf40ffbe68a52c2d14f2ea" category="list-text">SAS接続によるSASインバンド管理 [//] 2025-10-15 ontap-systems-internal/issues/1357</block>
+  <block id="8548a56c519034463f28eadc644360ab" category="doc">電源のホットスワップ - AFF A900</block>
+  <block id="20c8ebc12d960783bc610a9a7c628624" category="list-text">冗長ホットスワップ対応電源 [//] 2025-10-15 ontap-systems-internal/issues/1357</block>
+  <block id="98c78afbee9a38af4c14116fcea041ee" category="doc">電源のホットスワップ - ASA C250</block>
+  <block id="a93641a4525fdc7b24b1b838539eaefd" category="doc">電源のホットスワップ - ASA C400</block>
+  <block id="c5fdd34e2ef42364012a118012d79fb4" category="doc">電源のホットスワップ - ASA C800</block>
+  <block id="55db671ae8020eca8e8aeb4349a2b054" category="doc">電源のホットスワップ - ASA A70 およびASA A90</block>
+  <block id="c9a369c5554de29ccc1c26e1a891a293" category="doc">電源のホットスワップ - ASA A1K</block>
+  <block id="9bb2e7ff1d23ef0e1b53976314308a35" category="doc">電源装置のホットスワップ - ASA A20、 ASA A30、およびASA A50</block>
+  <block id="06d8fe566407f64414a820ada76ed8c0" category="doc">電源のホットスワップ - ASA A150</block>
+  <block id="b63c7571644d5ccca1e3715abbae44ca" category="doc">電源のホットスワップ - ASA A250</block>
+  <block id="2c050786a43c0ea0115e636878783956" category="doc">電源のホットスワップ - ASA A400</block>
+  <block id="a2ada69f15b8dc349c947f1966fadfab" category="doc">電源のホットスワップ - ASA A800</block>
+  <block id="afa34f783768c8c33178d16016fc5fc4" category="doc">電源のホットスワップ - ASA A900</block>
+  <block id="a09a90cc8fcac9f4d3e4b984533b8cad" category="paragraph">[//] 2025-10-15 ontap-systems-internal/issues/1357</block>
+  <block id="5e227aeb2fcad7eaeead32f5302682f3" category="doc">電源のホットスワップ - AFF C250</block>
+  <block id="41002485b29502010a8644065a0c7d58" category="doc">電源のホットスワップ - AFF C400</block>
+  <block id="7b4a1a3080b004d0b85c18311475acc2" category="paragraph">100 GbE ケーブルを使用して、コントローラー A および B のポート e1a および e7a をクラスター ネットワーク スイッチ A および B に接続します。手順 .コントローラー A のポート e1a とコントローラー B のポート e1a をクラスター ネットワーク スイッチ A に接続します。コントローラ A のポート e7a とコントローラ B のポート e7a をクラスター ネットワーク スイッチ B に接続します。</block>
+  <block id="a6b43aa69cfefff427f0aa588edab24d" category="paragraph">+ *100 GbEケーブル*</block>
+  <block id="e8b86e4a9e550f2cd1adce1d2f24708b" category="paragraph">イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース; 冗長ホットスワップ対応コントローラ; 冗長ホットスワップ対応電源; [//] 2025-10-15 ontap-systems-internal/issues/1357</block>
+  <block id="e742e13f0573253743538a54686b965c" category="doc">電源のホットスワップ - AFF C800</block>
+  <block id="bb9a46a830b86006c64c8c357fbcb73c" category="doc">電源のホットスワップ - FAS70 および FAS90</block>
+  <block id="c0fb977424a2b5bca01ac503e2f1b009" category="doc">電源のホットスワップ - FAS2700</block>
+  <block id="58c298876292ce3ccb07434a6eb98ee8" category="doc">電源のホットスワップ - FAS500f</block>
+  <block id="265e5afbc76b65a563c8e31441a1e485" category="doc">電源のホットスワップ - FAS8300およびFAS8700</block>
+  <block id="653496b123c4243a527d8a9ea55d4f8f" category="doc">電源のホットスワップ - FAS9000</block>
+  <block id="048c525dc48e40a1d09bef0038c82ef7" category="doc">電源のホットスワップ - FAS9500</block>
+  <block id="80f1b598bcc25f7ec82fc65712322c5f" category="inline-link-macro">AFX A1K</block>
+  <block id="456595a68c845460a0bce72ae205008b" category="list-text"><block ref="456595a68c845460a0bce72ae205008b" category="inline-link-macro-rx"></block></block>
+  <block id="bc43101d4663f6af1088f44fa1f4971c" category="open-title">棚システム</block>
+  <block id="4118c4e0c27fbed6f04b04d3aa72ac24" category="list-text"><block ref="4118c4e0c27fbed6f04b04d3aa72ac24" category="inline-link-macro-rx"></block></block>
+  <block id="ce10d24d102f61248a1ca7225202165a" category="inline-link-macro">NX224</block>
+  <block id="125f10a9ef50430953cfa201c04d3fc7" category="list-text"><block ref="125f10a9ef50430953cfa201c04d3fc7" category="inline-link-macro-rx"></block></block>
+  <block id="a15565e937e16d1f4615ffae54386c32" category="list-text"><block ref="a15565e937e16d1f4615ffae54386c32" category="inline-link-macro-rx"></block></block>
+  <block id="3c91bcd5af8e3e8a07bca4d6122e6b3e" category="list-text"><block ref="3c91bcd5af8e3e8a07bca4d6122e6b3e" category="inline-link-macro-rx"></block></block>
+  <block id="2eea8cfe67bfbaf554197cde256262be" category="list-text"><block ref="2eea8cfe67bfbaf554197cde256262be" category="inline-link-macro-rx"></block></block>
+  <block id="ed07672fb572f93f885feb990d0a637f" category="list-text"><block ref="ed07672fb572f93f885feb990d0a637f" category="inline-link-macro-rx"></block></block>
+  <block id="7a51e753de7bf2934296fac2cdc9d593" category="list-text"><block ref="7a51e753de7bf2934296fac2cdc9d593" category="inline-link-macro-rx"></block></block>
+  <block id="1397e21113f4acf414d8754488a466fc" category="list-text"><block ref="1397e21113f4acf414d8754488a466fc" category="inline-link-macro-rx"></block></block>
+  <block id="66fcce69e4503a0a9c8c46637435aa8c" category="list-text"><block ref="66fcce69e4503a0a9c8c46637435aa8c" category="inline-link-macro-rx"></block></block>
+  <block id="badea07b223f33f206dbb3f59038b884" category="list-text"><block ref="badea07b223f33f206dbb3f59038b884" category="inline-link-macro-rx"></block></block>
+  <block id="54d8c26f8a704f2ae1cd358913de64ac" category="list-text"><block ref="54d8c26f8a704f2ae1cd358913de64ac" category="inline-link-macro-rx"></block></block>
+  <block id="4b4484c2e067a790a8b029f0e7157ba8" category="list-text"><block ref="4b4484c2e067a790a8b029f0e7157ba8" category="inline-link-macro-rx"></block></block>
+  <block id="d4ec2b21b63964207f65fe842cdcf1d9" category="list-text"><block ref="d4ec2b21b63964207f65fe842cdcf1d9" category="inline-link-macro-rx"></block></block>
+  <block id="f9eb62938eec55221ed8ab27033b19b9" category="list-text"><block ref="f9eb62938eec55221ed8ab27033b19b9" category="inline-link-macro-rx"></block></block>
+  <block id="7ca1678229ac5064dbd99a27e4886773" category="list-text"><block ref="7ca1678229ac5064dbd99a27e4886773" category="inline-link-macro-rx"></block></block>
+  <block id="bd57b67f8598879d2601631d0c721137" category="summary">NetAppストレージ シェルフの NVMe シェルフ モジュール (NSM) の交換手順をシェルフ モデル別に説明します。このリファレンスには、NS224 および NX224 シェルフの NSM 交換ワークフローのステップバイステップの直接リンクが用意されており、特定のシェルフ モデルに適した手順をすぐに見つけることができます。</block>
+  <block id="09836515455d31781ff12c48f8614517" category="doc">シェルフモデル別のNSM交換手順</block>
+  <block id="1a82a6fe55e3f2f61872867b5fd0dceb" category="list-text"><block ref="1a82a6fe55e3f2f61872867b5fd0dceb" category="inline-link-macro-rx"></block></block>
+  <block id="f39104a2d7ac4b866439486ba176811c" category="list-text"><block ref="f39104a2d7ac4b866439486ba176811c" category="inline-link-macro-rx"></block></block>
+  <block id="8f5f4bdbc294c6f2651fcd2e526c8a78" category="list-text"><block ref="8f5f4bdbc294c6f2651fcd2e526c8a78" category="inline-link-macro-rx"></block></block>
+  <block id="211bc6ebaac1ad5d04c5e33045e9bf83" category="list-text"><block ref="211bc6ebaac1ad5d04c5e33045e9bf83" category="inline-link-macro-rx"></block></block>
+  <block id="09fad4d466bf3d1fedb9b890171a4ef4" category="list-text"><block ref="09fad4d466bf3d1fedb9b890171a4ef4" category="inline-link-macro-rx"></block></block>
+  <block id="fb22f4b778e12fb8fce97075a2c2e7cc" category="list-text"><block ref="fb22f4b778e12fb8fce97075a2c2e7cc" category="inline-link-macro-rx"></block></block>
+  <block id="7e67c0810c8ad6d0694164958ee67278" category="list-text"><block ref="7e67c0810c8ad6d0694164958ee67278" category="inline-link-macro-rx"></block></block>
+  <block id="5b2fbd0784647c22ca81799fe3de9d4b" category="list-text"><block ref="5b2fbd0784647c22ca81799fe3de9d4b" category="inline-link-macro-rx"></block></block>
+  <block id="9dfce2bdad58de88bbfaf4eb1ffec4c6" category="list-text"><block ref="9dfce2bdad58de88bbfaf4eb1ffec4c6" category="inline-link-macro-rx"></block></block>
+  <block id="9942cbccf0648199db8728c675a51861" category="list-text"><block ref="9942cbccf0648199db8728c675a51861" category="inline-link-macro-rx"></block></block>
+  <block id="53293de4445d9809b5beb36bf8b2bdd2" category="list-text"><block ref="53293de4445d9809b5beb36bf8b2bdd2" category="inline-link-macro-rx"></block></block>
+  <block id="b1a10fdec821bde7511fcf1b956e5382" category="paragraph"><block ref="b6b8a8462966204b648f1ae9c887611d" category="inline-link-macro-rx"></block>。</block>
+  <block id="8a484401787078890bc1e7fd9beb44fb" category="sidebar">NSM交換手順</block>
+  <block id="9dd7ce2f864cf38177fc70779cbe6635" category="sidebar">AFF A70の概要</block>
+  <block id="045d04f83b324cbd691c0a2eef106f65" category="sidebar">AFF A90の概要</block>
 </blocks>

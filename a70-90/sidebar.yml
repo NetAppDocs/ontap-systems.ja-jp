@@ -2,6 +2,12 @@
 section: a70-90
 title: AFF A70およびAFF A90システム
 entries:
+- title: 概要
+  entries:
+  - title: AFF A70の概要
+    url: "/a70-90/aff-a-series-affa70-overview.html"
+  - title: AFF A90の概要
+    url: "/a70-90/aff-a-series-affa90-overview.html"
 - title: 設置とセットアップ
   pdf-filename: AFF A70、AFF A90のインストールとセットアップ
   entries:
@@ -116,6 +122,6 @@ entries:
 - title: 主な仕様
   entries:
   - title: AFF A70用
-    url: a70-key-specifications.html
+    url: "/a70-90/a70-key-specifications.html"
   - title: AFF A90用
-    url: a90-key-specifications.html
+    url: "/a70-90/a90-key-specifications.html"

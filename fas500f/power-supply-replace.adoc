@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, replace power supply 
 summary: 電源装置を交換するには、ターゲットの電源装置の接続を解除して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。 
 ---
-= 電源装置 FAS500f を交換してください
+= 電源のホットスワップ - FAS500f
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -25,6 +25,12 @@ summary: プラットフォーム ファミリ別に整理された、 NetAppス
 
 
 --
+.AFXシステム
+--
+* link:../afx-1k/io-module-replace.html["AFX A1K"]
+
+
+--
 .ASAシステム
 --
 * link:../asa-r2-a1k/io-module-replace.html["ASA A1K"]
@@ -38,6 +44,13 @@ summary: プラットフォーム ファミリ別に整理された、 NetAppス
 --
 * link:../fas50/io-module-replace.html["FAS50"]
 * link:../fas-70-90/io-module-replace.html["FAS70/90"]
+
+
+--
+.棚システム
+--
+* link:../ns224/service-replace-io-module.html["NS224"]
+* link:../nx224/service-replace-io-module.html["NX224"]
 
 
 --

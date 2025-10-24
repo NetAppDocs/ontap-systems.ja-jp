@@ -25,6 +25,12 @@ summary: プラットフォーム ファミリ別に整理された、 NetAppス
 
 
 --
+.AFXシステム
+--
+* link:../afx-1k/nvdimm-battery-replace.html["AFX A1K"]
+
+
+--
 .ASAシステム
 --
 * link:../asa400/nvdimm-replace.html["ASA A400"]

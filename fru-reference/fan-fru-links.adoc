@@ -35,6 +35,12 @@ summary: プラットフォーム ファミリ別に整理されたNetAppスト�
 
 
 --
+.AFXシステム
+--
+* link:../afx-1k/fan-replace.html["AFX A1K"]
+
+
+--
 .ASAシステム
 --
 * link:../asa250/fan-replace.html["ASA A250"]
@@ -58,6 +64,13 @@ summary: プラットフォーム ファミリ別に整理されたNetAppスト�
 * link:../fas8200/fan-swap-out.html["FAS8200"]
 * link:../fas8300/fan-swap-out.html["FAS8300"]
 * link:../fas9000/fan-swap-out.html["FAS9000"]
+
+
+--
+.棚システム
+--
+* link:../ns224/service-replace-fan.html["NS224"]
+* link:../nx224/service-replace-fan.html["NX224"]
 
 
 --

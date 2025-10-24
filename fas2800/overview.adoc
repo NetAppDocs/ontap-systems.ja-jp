@@ -1,6 +1,7 @@
 ---
 permalink: fas2800/overview.html 
 sidebar: sidebar 
+keywords: FAS2800 specifications, FAS2800 specs, NetApp FAS2800, FAS2800 hardware 
 summary: FAS2800プラットフォームグループの主な仕様 
 ---
 = FAS2820の主な仕様
@@ -111,5 +112,5 @@ summary: FAS2800プラットフォームグループの主な仕様
 * イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース
 * 冗長ホットスワップ可能なコントローラ
 * 冗長ホットスワップ可能な電源
-* 外部シェルフの SAS 接続を介した SAS インバンド管理
+* 外部シェルフのSAS接続を介したSASインバンド管理 [//] 2025-10-15 ontap-systems-internal/issues/1357
 

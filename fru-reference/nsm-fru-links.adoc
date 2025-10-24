@@ -1,0 +1,18 @@
+---
+sidebar: sidebar 
+permalink: fru-reference/nsm-fru-links.html 
+keywords: NSM, NVMe shelf module, field replaceable units, FRU, NSM replacement 
+summary: 'NetAppストレージ シェルフの NVMe シェルフ モジュール (NSM) の交換手順をシェルフ モデル別に説明します。このリファレンスには、NS224 および NX224 シェルフの NSM 交換ワークフローのステップバイステップの直接リンクが用意されており、特定のシェルフ モデルに適した手順をすぐに見つけることができます。' 
+---
+= シェルフモデル別のNSM交換手順
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetAppストレージ シェルフの NVMe シェルフ モジュール (NSM) の交換手順をシェルフ モデル別に説明します。このリファレンスには、NS224 および NX224 シェルフの NSM 交換ワークフローのステップバイステップの直接リンクが用意されており、特定のシェルフ モデルに適した手順をすぐに見つけることができます。
+
+* link:../ns224/service-replace-nsm100.html["NS224"]
+* link:../nx224/service-replace-nsm140.html["NX224"]
+

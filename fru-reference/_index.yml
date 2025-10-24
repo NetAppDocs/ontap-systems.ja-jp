@@ -48,6 +48,8 @@ indexpage:
       url: "/drive-fru-links.html"
     - title: キャッシュモジュールの交換手順
       url: "/caching-module-fru-links.html"
+    - title: NSM交換手順
+      url: "/nsm-fru-links.html"
   - title: システムバッテリーとインジケーター
     links:
     - title: NVMEM/ NVRAMバッテリー交換手順

@@ -1,6 +1,7 @@
 ---
-permalink: a70-key-specifications.html 
+permalink: a70-90/a70-key-specifications.html 
 sidebar: sidebar 
+keywords: AFF A70 specifications, AFF A70 specs, AFF A70 capacity, AFF A70 memory, AFF A70 I/O, AFF A70 compliance 
 summary: AFF A70の主な仕様 
 ---
 = AFF A70の主な仕様
@@ -114,5 +115,5 @@ summary: AFF A70の主な仕様
 * イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース
 * 冗長ホットスワップ可能なコントローラ
 * 冗長ホットスワップ可能な電源
-* 外部シェルフの SAS 接続を介した SAS インバンド管理
+* 外部シェルフのSAS接続を介したSASインバンド管理 [//] 2025-10-15 ontap-systems-internal/issues/1357
 

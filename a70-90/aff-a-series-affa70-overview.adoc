@@ -1,5 +1,5 @@
 ---
-permalink: a70-key-specifications.html 
+permalink: a70-90/aff-a-series-affa70-overview.html 
 sidebar: sidebar 
 keywords: AFF A70 specifications, AFF A70 specs, NetApp AFF A70, AFF A70 hardware 
 summary: AFF A70ストレージシステムの主な仕様 
@@ -109,4 +109,4 @@ CIFS、FC、iSCSI、NFS v3、NFS v4.0、NFS v4.1、NFS v4.2、NFSv3/RDMA、NFSv4
 
 === 高可用性
 
-イーサネット ベースのベースボード管理コントローラ (BMC) およびONTAP管理インターフェイス、冗長ホットスワップ対応コントローラ、冗長ホットスワップ対応電源、外部シェルフの SAS 接続を介した SAS インバンド管理。
+イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース、冗長ホットスワップ対応コントローラ、冗長ホットスワップ対応電源、外部シェルフのSAS接続によるSASインバンド管理、[//] 2025-10-15 ontap-systems-internal/issues/1357

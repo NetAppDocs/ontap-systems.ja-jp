@@ -23,6 +23,12 @@ summary: プラットフォーム ファミリ別に整理された、 NetAppス
 
 
 --
+.AFXシステム
+--
+* link:../afx-1k/system-management-replace.html["AFX A1K"]
+
+
+--
 .ASAシステム
 --
 * link:../asa-r2-a1k/system-management-replace.html["ASA A1K"]

@@ -40,6 +40,12 @@ summary: プラットフォーム ファミリ別に整理されたNetAppスト�
 
 
 --
+.AFXシステム
+--
+* link:../afx-1k/controller-replace-workflow.html["AFX A1K"]
+
+
+--
 .ASAシステム
 --
 * link:../asa150/controller-replace-overview.html["ASA A150"]

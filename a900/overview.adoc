@@ -1,6 +1,7 @@
 ---
 permalink: a900/overview.html 
 sidebar: sidebar 
+keywords: AFF A900 specifications, AFF A900 specs, NetApp AFF A900, AFF A900 hardware 
 summary: A900プラットフォームグループの主な仕様 
 ---
 = AFF A900の主な仕様
@@ -111,5 +112,5 @@ summary: A900プラットフォームグループの主な仕様
 * イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース
 * 冗長ホットスワップ可能なコントローラ
 * 冗長ホットスワップ可能な電源
-* SAS 接続を介した SAS インバンド管理
+* SAS接続によるSASインバンド管理 [//] 2025-10-15 ontap-systems-internal/issues/1357
 

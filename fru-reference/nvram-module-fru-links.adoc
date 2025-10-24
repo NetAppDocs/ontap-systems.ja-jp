@@ -26,6 +26,12 @@ summary: プラットフォーム ファミリ別に整理された、 NetAppス
 
 
 --
+.AFXシステム
+--
+* link:../afx-1k/nvram-replace.html["AFX A1K"]
+
+
+--
 .ASAシステム
 --
 * link:../asa900/nvram_module_or_nvram_dimm_replacement.html["ASA A900"]

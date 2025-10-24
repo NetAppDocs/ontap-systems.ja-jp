@@ -1,6 +1,7 @@
 ---
 permalink: a1k/overview.html 
 sidebar: sidebar 
+keywords: AFF A1K specifications, AFF A1K specs, AFF A1K capacity, AFF A1K memory, AFF A1K I/O, AFF A1K compliance 
 summary: A1Kプラットフォームグループの主な仕様 
 ---
 = AFF A1Kの主な仕様
@@ -114,5 +115,5 @@ summary: A1Kプラットフォームグループの主な仕様
 * イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース
 * 冗長ホットスワップ可能なコントローラ
 * 冗長ホットスワップ可能な電源
-* 外部シェルフの SAS 接続を介した SAS インバンド管理
+* 外部シェルフのSAS接続を介したSASインバンド管理 [//] 2025-10-15 ontap-systems-internal/issues/1357
 

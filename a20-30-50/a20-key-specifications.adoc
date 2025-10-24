@@ -1,6 +1,7 @@
 ---
-permalink: a20-key-specifications.html 
+permalink: a20-30-50/a20-key-specifications.html 
 sidebar: sidebar 
+keywords: AFF A20 specifications, AFF A20 specs, AFF A20 capacity, AFF A20 memory, AFF A20 I/O, AFF A20 compliance 
 summary: AFF A20の主な仕様 
 ---
 = AFF A20の主な仕様
@@ -111,5 +112,5 @@ summary: AFF A20の主な仕様
 * イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース
 * 冗長ホットスワップ可能なコントローラ
 * 冗長ホットスワップ可能な電源
-* 外部シェルフの SAS 接続を介した SAS インバンド管理
+* 外部シェルフのSAS接続を介したSASインバンド管理 [//] 2025-10-15 ontap-systems-internal/issues/1357
 

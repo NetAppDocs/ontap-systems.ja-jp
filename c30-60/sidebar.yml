@@ -2,6 +2,8 @@
 section: c30-60
 title: AFF C30およびAFF C60システム
 entries:
+- title: 概要
+  url: "/c30-60/overview.html"
 - title: 設置とセットアップ
   pdf-filename: AFF C30およびAFF C60のインストールとセットアップ
   entries:
@@ -112,6 +114,6 @@ entries:
 - title: 主な仕様
   entries:
   - title: AFF C30用
-    url: c30-key-specifications.html
+    url: "/c30-60/c30-key-specifications.html"
   - title: AFF C60用
-    url: c60-key-specifications.html
+    url: "/c30-60/c60-key-specifications.html"

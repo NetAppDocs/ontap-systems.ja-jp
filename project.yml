@@ -267,6 +267,8 @@ sidebar:
       url: "/fru-reference/nvmem-battery-fru-links.html"
     - title: NVRAMモシユウル
       url: "/fru-reference/nvram-module-fru-links.html"
+    - title: NSM
+      url: "/fru-reference/nsm-fru-links.html"
     - title: PCIカードとライザー
       url: "/fru-reference/pci-cards-fru-links.html"
     - title: 電源装置
