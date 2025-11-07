@@ -14142,8 +14142,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="a09a90cc8fcac9f4d3e4b984533b8cad" category="paragraph">[//] 2025-10-15 ontap-systems-internal/issues/1357</block>
   <block id="5e227aeb2fcad7eaeead32f5302682f3" category="doc">電源のホットスワップ - AFF C250</block>
   <block id="41002485b29502010a8644065a0c7d58" category="doc">電源のホットスワップ - AFF C400</block>
-  <block id="7b4a1a3080b004d0b85c18311475acc2" category="paragraph">100 GbE ケーブルを使用して、コントローラー A および B のポート e1a および e7a をクラスター ネットワーク スイッチ A および B に接続します。手順 .コントローラー A のポート e1a とコントローラー B のポート e1a をクラスター ネットワーク スイッチ A に接続します。コントローラ A のポート e7a とコントローラ B のポート e7a をクラスター ネットワーク スイッチ B に接続します。</block>
-  <block id="a6b43aa69cfefff427f0aa588edab24d" category="paragraph">+ *100 GbEケーブル*</block>
   <block id="e8b86e4a9e550f2cd1adce1d2f24708b" category="paragraph">イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース; 冗長ホットスワップ対応コントローラ; 冗長ホットスワップ対応電源; [//] 2025-10-15 ontap-systems-internal/issues/1357</block>
   <block id="e742e13f0573253743538a54686b965c" category="doc">電源のホットスワップ - AFF C800</block>
   <block id="bb9a46a830b86006c64c8c357fbcb73c" category="doc">電源のホットスワップ - FAS70 および FAS90</block>
@@ -14188,4 +14186,5 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8a484401787078890bc1e7fd9beb44fb" category="sidebar">NSM交換手順</block>
   <block id="9dd7ce2f864cf38177fc70779cbe6635" category="sidebar">AFF A70の概要</block>
   <block id="045d04f83b324cbd691c0a2eef106f65" category="sidebar">AFF A90の概要</block>
+  <block id="dcb60d37ecd73502c4c85283951d3ef3" category="paragraph">100 GbE ケーブルを使用して、コントローラー A と B のポート e1a と e7a をクラスター ネットワーク スイッチ A と B に接続します。</block>
 </blocks>
