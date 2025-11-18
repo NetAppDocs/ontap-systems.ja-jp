@@ -20,12 +20,21 @@ ASA A1Kシステムのコントローラ交換を完了するには、まずNetA
 交換用ノードを使用可能な状態に戻す前に、論理インターフェイスがホームポートにあることを確認し、クラスタの健常性を確認して、自動ギブバックをリセットしてください。
 
 .手順
-. 論理インターフェイスがホームサーバとポートに報告されていることを確認します。「 network interface show -is-home false 」
+. 論理インターフェイスがホーム サーバーとポートにレポートしていることを確認します。
 +
-いずれかの論理インターフェイスがfalseと表示された場合は、それらをホームポートにリバートします。 `network interface revert -vserver * -lif *`
+`network interface show -is-home false`
 
-. クラスタの健全性を確認します。詳細については、技術情報の記事を参照して https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["ONTAP でスクリプトを使用してクラスタの健全性チェックを実行する方法"^] ください。
-. 自動ギブバックを無効にした場合は、再度有効にします。「 storage failover modify -node local-auto-giveback true 」
++
+論理インターフェースが false としてリストされている場合は、それらをホーム ポートに戻します。
+
++
+`network interface revert -vserver * -lif *`
+
+. クラスターの健全性を確認します。参照 https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["ONTAP でスクリプトを使用してクラスタの健全性チェックを実行する方法"^]KB 記事。
+. 自動ギブバックを無効にした場合は、再度有効にします。
++
+`storage failover modify -node local -auto-giveback true`
+
 
 
 

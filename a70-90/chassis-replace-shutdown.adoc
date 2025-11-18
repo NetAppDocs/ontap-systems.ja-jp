@@ -68,4 +68,4 @@ NOTE: StrictSyncモードで動作するSnapMirror同期を使用するクラス
 
 
 .次の手順
-コントローラをシャットダウンしたら、を実行する必要がありlink:chassis-replace-move-hardware.html["シャーシを交換する"]ます。
+コントローラーをシャットダウンした後、link:chassis-replace-move-hardware.html["シャーシを交換する"] 。

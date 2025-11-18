@@ -3,7 +3,8 @@ indexpage:
   title: ASAシステム
   summary: ASA Aシリーズシステムの設置、セットアップ、および保守については、ストレージシステムのマニュアルを参照してください。
   keywords: asa, a-series, asa a150, asa a250, asa a400, asa a800, asa a900, datasheet
-  lead: ASA AシリーズおよびASA Cシリーズシステムは、シンプルで専用のSANエクスペリエンスを提供し、FCPまたはiSCSIプロトコルを使用して、エンタープライズのミッションクリティカルなデータベースやその他のSANワークロードに継続的なデータ可用性を提供します。
+  lead: ASAシステムは、FCP または iSCSI プロトコルを使用して、企業のミッション クリティカルなデータベースやその他の SAN ワークロードに継続的なデータ可用性を提供する、簡素化された専用の
+    SAN エクスペリエンスを提供します。
   tiles:
   - title: はじめに
     links:
@@ -15,7 +16,7 @@ indexpage:
       url: https://www.netapp.com/pdf.html?item=/media/19466-SB-4081.pdf
     - title: ASA テクニカルレポート
       url: https://www.netapp.com/pdf.html?item=/media/85671-tr-4968.pdf
-  - title: Aシリーズシステムの設置とセットアップ
+  - title: ASAシステムのインストールとセットアップ
     links:
     - title: ASA A150
       url: "../asa150/install-setup.html"
@@ -27,15 +28,7 @@ indexpage:
       url: "../asa800/install-setup.html"
     - title: ASA A900
       url: "../asa900/install_setup.html"
-  - title: Cシリーズシステムの設置とセットアップ
-    links:
-    - title: ASA C250
-      url: "../asa-c250/install-setup.html"
-    - title: ASA C400
-      url: "../asa-c400/install-setup.html"
-    - title: ASA C800
-      url: "../asa-c800/install-setup.html"
-  - title: Aシリーズシステムの保守
+  - title: ASAシステムの保守
     links:
     - title: ASA A150
       url: "../asa150/maintain-overview.html"
@@ -47,14 +40,6 @@ indexpage:
       url: "../asa800/maintain-overview.html"
     - title: ASA A900
       url: "../asa900/maintain-overview.html"
-  - title: Cシリーズシステムのメンテナンス
-    links:
-    - title: ASA C250
-      url: "../asa-c250/maintain-overview.html"
-    - title: ASA C400
-      url: "../asa-c400/maintain-overview.html"
-    - title: ASA C800
-      url: "../asa-c800/maintain-overview.html"
   - title: サポートされるスイッチ
     links:
     - title: Broadcom 対応 BES-53248 の場合

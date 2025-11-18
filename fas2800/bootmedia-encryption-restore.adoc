@@ -15,33 +15,27 @@ summary: 環境変数を確認したら、オンボードキーマネージャ \
 
 ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。システムで以前のバージョンのONTAPを実行している場合は、手動ブートリカバリ手順を使用する必要があります。
 
-オンボードキーマネージャ（OKM）、NetApp Storage Encryption（NSE）、またはNetApp Volume Encryption（NVE）が有効になっているシステムに固有の手順を、ブートメディアの交換手順の最初にキャプチャした設定を使用して実行する必要があります。
+キー マネージャーの種類に応じて適切な手順を実行し、システムの暗号化を復元します。システムで使用されているキー マネージャーが不明な場合は、ブート メディアの交換手順の開始時にキャプチャした設定を確認してください。
 
-システムで設定されているキー管理ツールに応じて、次のいずれかのオプションを選択してブートメニューからキー管理ツールを復元します。
-
-* link:["オプション1：オンボードキーマネージャの設定をリストアする"]
-* link:["オプション2：外部キーマネージャの設定をリストアする"]
-
-
-
-
-== オプション1：オンボードキーマネージャの設定をリストアする
-
+[role="tabbed-block"]
+====
+.オンボードキーマネージャ（ OKM ）
+--
 ONTAPブートメニューからオンボードキーマネージャ（OKM）設定をリストアします。
 
 .作業を開始する前に
-* OKM設定をリストアする際は、次の情報を確認してください。
-+
-** クラスタ全体のパスフレーズが入力されました https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-onboard-key-management-96-later-nse-task.html["オンボードキー管理の有効化時"]。
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/backup-key-management-information-manual-task.html["オンボードキーマネージャのバックアップ情報"]です。
+次の情報を用意してください。
 
-
-* 続行する前に手順を実行して https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_verify_onboard_key_management_backup_and_cluster-wide_passphrase["オンボードキー管理のバックアップとクラスタ全体のパスフレーズを検証する方法"] ください。
+* クラスタ全体のパスフレーズを入力 https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-onboard-key-management-96-later-nse-task.html["オンボード キー管理の有効化"]
+* https://docs.netapp.com/us-en/ontap/encryption-at-rest/backup-key-management-information-manual-task.html["オンボードキーマネージャのバックアップ情報"]
+* 正しいパスフレーズとバックアップデータがあることを確認するには、 https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_verify_onboard_key_management_backup_and_cluster-wide_passphrase["オンボードキー管理のバックアップとクラスタ全体のパスフレーズを検証する方法"]手順
 
 
 .手順
-. コンソールケーブルをターゲットコントローラに接続します。
-. ONTAPのブートメニューで、ブートメニューから該当するオプションを選択します。
+*障害のあるコントローラーの場合:*
+
+. コンソール ケーブルを障害のあるコントローラーに接続します。
+. ONTAPブート メニューから適切なオプションを選択します。
 +
 [cols="1a,2a"]
 |===
@@ -55,7 +49,7 @@ ONTAP 9.8 以降
 
 .ブートメニューの例を表示します。
 [%collapsible]
-====
+=====
 ....
 
 Please choose one of the following:
@@ -74,7 +68,7 @@ Please choose one of the following:
 Selection (1-11)? 10
 
 ....
-====
+=====
 
 
  a| 
@@ -84,7 +78,7 @@ ONTAP 9.7以前
 
 .ブートメニューの例を表示します。
 [%collapsible]
-====
+=====
 ....
 
 Please choose one of the following:
@@ -101,36 +95,36 @@ Please choose one of the following:
 Selection (1-19)? recover_onboard_keymanager
 
 ....
-====
+=====
 |===
-. リカバリプロセスを続行することを確認します。
+. プロンプトが表示されたら、回復プロセスを続行することを確認します。
 +
 .プロンプトの例を表示
 [%collapsible]
-====
+=====
 `This option must be used only in disaster recovery procedures. Are you sure? (y or n):`
 
-====
+=====
 . クラスタ全体のパスフレーズを2回入力します。
 +
-パスフレーズの入力中、コンソールに入力内容は表示されません。
+パスフレーズを入力している間、コンソールに入力内容が表示されません。
 
 +
 .プロンプトの例を表示
 [%collapsible]
-====
+=====
 `Enter the passphrase for onboard key management:`
 
 `Enter the passphrase again to confirm:`
 
-====
+=====
 . バックアップ情報を入力します。
 +
-.. BEGIN BACKUP行からEND BACKUP行まで、すべての内容を貼り付けます。
+.. ダッシュを含め、BEGIN BACKUP 行から END BACKUP 行までのコンテンツ全体を貼り付けます。
 +
 .プロンプトの例を表示
 [%collapsible]
-====
+=====
 ....
 Enter the backup data:
 
@@ -168,15 +162,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 ---------------------------END BACKUP---------------------------
 
 ....
-====
-.. 入力の最後にあるENTERキーを2回押します。
+=====
+.. 入力の最後に Enter キーを 2 回押します。
 +
-リカバリプロセスが完了します。
+回復プロセスが完了し、次のメッセージが表示されます。
+
++
+`Successfully recovered keymanager secrets.`
 
 +
 .プロンプトの例を表示
 [%collapsible]
-====
+=====
 ....
 
 Trying to recover keymanager secrets....
@@ -193,18 +190,18 @@ Successfully recovered keymanager secrets.
 ***********************************************************************************
 
 ....
-====
-
-
+=====
 +
 
-WARNING: 表示された出力が以外の場合は、先に進まない `Successfully recovered keymanager secrets`でください。トラブルシューティングを実行してエラーを修正します。
+WARNING: 表示された出力が以下の場合、続行しないでください。 `Successfully recovered keymanager secrets` 。トラブルシューティングを実行してエラーを修正します。
 
-. ブートメニューからオプション1を選択して、ONTAPのブートを続行します。
+
+
+. オプションを選択 `1`ブートメニューからONTAPのブートを続行します。
 +
 .プロンプトの例を表示
 [%collapsible]
-====
+=====
 ....
 
 ***********************************************************************************
@@ -227,24 +224,30 @@ WARNING: 表示された出力が以外の場合は、先に進まない `Succes
 Selection (1-11)? 1
 
 ....
-====
-. コントローラのコンソールに次のメッセージが表示されていることを確認します。
+=====
+. コントローラーのコンソールに次のメッセージが表示されていることを確認します。
 +
 `Waiting for giveback...(Press Ctrl-C to abort wait)`
 
-. パートナーノードから次のコマンドを入力して、パートナーコントローラをギブバックします。
 +
-`storage failover giveback -fromnode local -only-cfo-aggregates true`です。
+*パートナーコントローラーの場合:*
 
-. CFOアグリゲートのみでブートしたら、次のコマンドを実行します。
+. 障害のあるコントローラーを返却します。
++
+`storage failover giveback -fromnode local -only-cfo-aggregates true`
+
++
+*障害のあるコントローラーの場合:*
+
+. CFO アグリゲートのみで起動した後、キー マネージャーを同期します。
 +
 `security key-manager onboard sync`
 
-. オンボードキーマネージャのクラスタ全体のパスフレーズを入力します。
+. プロンプトが表示されたら、オンボード キー マネージャーのクラスター全体のパスフレーズを入力します。
 +
 .プロンプトの例を表示
 [%collapsible]
-====
+=====
 ....
 
 Enter the cluster-wide passphrase for the Onboard Key Manager:
@@ -252,63 +255,58 @@ Enter the cluster-wide passphrase for the Onboard Key Manager:
 All offline encrypted volumes will be brought online and the corresponding volume encryption keys (VEKs) will be restored automatically within 10 minutes. If any offline encrypted volumes are not brought online automatically, they can be brought online manually using the "volume online -vserver <vserver> -volume <volume_name>" command.
 
 ....
-====
+=====
 +
 
-NOTE: 同期に成功すると、追加のメッセージは表示されずにクラスタプロンプトが返されます。同期に失敗すると、クラスタプロンプトに戻る前にエラーメッセージが表示されます。エラーが修正されて同期が正常に実行されるまで、続行しないでください。
+NOTE: 同期が成功すると、追加のメッセージなしでクラスター プロンプトが返されます。同期が失敗した場合、クラスター プロンプトに戻る前にエラー メッセージが表示されます。エラーが修正され、同期が正常に実行されるまで続行しないでください。
 
-. 次のコマンドを入力して、すべてのキーが同期されていることを確認します。
+. すべてのキーが同期されていることを確認します。
 +
-`security key-manager key query -restored false`です。
-
-+
-`There are no entries matching your query.`
+`security key-manager key query -restored false`
 
 +
+コマンドは結果を返さないはずです。結果が表示された場合は、結果が返されなくなるまで同期コマンドを繰り返します。
 
-NOTE: restoredパラメータでfalseをフィルタする場合、結果は表示されません。
++
+*パートナーコントローラーの場合:*
 
-. 次のコマンドを入力して、パートナーからノードをギブバックします。
+. 障害のあるコントローラーを返却します。
 +
 `storage failover giveback -fromnode local`
 
-. 自動ギブバックを無効にした場合は、次のコマンドを入力してリストアします。
+. 自動ギブバックを無効にした場合はリストアします。
 +
 `storage failover modify -node local -auto-giveback true`
 
-. AutoSupportが有効になっている場合は、次のコマンドを入力してケースの自動作成をリストアします。
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアします。
 +
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
 
-
-
-== オプション2：外部キーマネージャの設定をリストアする
-
+--
+.外部キーマネージャ（ EKM ）
+--
 ONTAPブートメニューから外部キーマネージャの設定をリストアします。
 
 .作業を開始する前に
-外部キーマネージャ（EKM）設定をリストアするには、次の情報が必要です。
+別のクラスター ノードまたはバックアップから次のファイルを収集します。
 
-* 別のクラスタノードの/cfcard/kmip/servers.cfgファイルのコピー、または次の情報。
-+
-** KMIPサーバのアドレス。
-** KMIPポート。
-
-
-* 別のクラスタノードのファイルのコピー `/cfcard/kmip/certs/client.crt`またはクライアント証明書。
-* 別のクラスタノードまたはクライアントキーからのファイルのコピー `/cfcard/kmip/certs/client.key`。
-* 別のクラスタノードまたはKMIPサーバCAのファイルのコピー `/cfcard/kmip/certs/CA.pem`。
+* `/cfcard/kmip/servers.cfg`ファイルまたはKMIPサーバーのアドレスとポート
+* `/cfcard/kmip/certs/client.crt`ファイル（クライアント証明書）
+* `/cfcard/kmip/certs/client.key`ファイル（クライアントキー）
+* `/cfcard/kmip/certs/CA.pem`ファイル（KMIP サーバー CA 証明書）
 
 
 .手順
-. コンソールケーブルをターゲットコントローラに接続します。
-. ONTAPのブートメニューからオプション11を選択します。
+*障害のあるコントローラーの場合:*
+
+. コンソール ケーブルを障害のあるコントローラーに接続します。
+. オプションを選択 `11`ONTAPブート メニューから。
 +
 .ブートメニューの例を表示します。
 [%collapsible]
-====
+=====
 ....
 
 (1)  Normal Boot.
@@ -324,35 +322,30 @@ ONTAPブートメニューから外部キーマネージャの設定をリスト
 (11) Configure node for external key management.
 Selection (1-11)? 11
 ....
-====
+=====
 . プロンプトが表示されたら、必要な情報を収集したことを確認します。
 +
 .プロンプトの例を表示
 [%collapsible]
-====
+=====
 ....
 Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n}
 Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n}
 Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n}
 Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}
 ....
-====
-. プロンプトが表示されたら、クライアントとサーバの情報を入力します。
+=====
+. プロンプトが表示されたら、クライアントとサーバーの情報を入力します。
 +
-.プロンプトを表示
-[%collapsible]
-====
-....
-Enter the client certificate (client.crt) file contents:
-Enter the client key (client.key) file contents:
-Enter the KMIP server CA(s) (CA.pem) file contents:
-Enter the server configuration (servers.cfg) file contents:
-....
-====
+.. BEGIN 行と END 行を含むクライアント証明書 (client.crt) ファイルの内容を入力します。
+.. BEGIN 行と END 行を含むクライアント キー (client.key) ファイルの内容を入力します。
+.. BEGIN 行と END 行を含む KMIP サーバー CA (CA.pem) ファイルの内容を入力します。
+.. KMIP サーバーの IP アドレスを入力します。
+.. KMIP サーバー ポートを入力します (デフォルトのポート 5696 を使用するには Enter キーを押します)。
 +
 .例を示します
 [%collapsible]
-====
+=====
 ....
 Enter the client certificate (client.crt) file contents:
 -----BEGIN CERTIFICATE-----
@@ -380,26 +373,31 @@ Running command '/sbin/ifconfig e0M'
 ..
 kmip_init: cmd: ReleaseExtraBSDPort e0M
 ....
-====
+=====
 +
-クライアントとサーバの情報を入力すると、リカバリプロセスが完了します。
+回復プロセスが完了し、次のメッセージが表示されます。
+
++
+`Successfully recovered keymanager secrets.`
 
 +
 .例を示します
 [%collapsible]
-====
+=====
 ....
 System is ready to utilize external key manager(s).
 Trying to recover keys from key servers....
 Performing initialization of OpenSSL
 Successfully recovered keymanager secrets.
 ....
-====
-. ブートメニューからオプション1を選択して、ONTAPのブートを続行します。
+=====
+
+
+. オプションを選択 `1`ブートメニューからONTAPのブートを続行します。
 +
 .プロンプトの例を表示
 [%collapsible]
-====
+=====
 ....
 
 ***************************************************************************
@@ -421,16 +419,18 @@ Successfully recovered keymanager secrets.
 Selection (1-11)? 1
 
 ....
-====
+=====
 . 自動ギブバックを無効にした場合はリストアします。
 +
 `storage failover modify -node local -auto-giveback true`
 
-. AutoSupportが有効になっている場合は、次のコマンドを入力してケースの自動作成をリストアします。
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアします。
 +
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
 
+--
+====
 .次の手順
 ブートメディアで暗号化をリストアしたら、を実行する必要がありlink:bootmedia-complete-rma.html["故障した部品をNetAppに返却します。"]ます。

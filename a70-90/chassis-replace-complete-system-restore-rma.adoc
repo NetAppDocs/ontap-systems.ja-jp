@@ -15,9 +15,9 @@ summary: コントローラをリブートし、システムヘルスを確認�
 
 
 
-== 手順1：コントローラをブートしてコントローラをギブバックする
+== ステップ1: コントローラを起動し、ギブバックを実行する
 
-コントローラがリブートしたら、ONTAPをブートしてコントローラをギブバックします。
+コントローラ上でONTAP を起動し、コントローラのギブバックを実行してストレージの所有権を戻します。
 
 .手順
 . コンソールの出力を確認します。
@@ -38,12 +38,7 @@ summary: コントローラをリブートし、システムヘルスを確認�
 
 == 手順2：ストレージシステムの健全性を確認する
 
-コントローラがストレージをギブバックしたら、で全体の健全性を確認する必要があります https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]。
-
-.手順
-. ギブバックが完了したら、Active IQ Config Advisorを実行してストレージシステムの健全性を確認します。
-. 発生した問題を修正します。
-
+コントローラのギブバックが完了したら、次の方法でシステムの健全性を確認します。 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"] 。見つかった問題に対処します。
 
 
 

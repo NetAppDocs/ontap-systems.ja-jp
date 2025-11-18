@@ -1,12 +1,6 @@
-= 手順1：コントローラをブートしてコントローラをギブバックする
+= 
 :allow-uri-read: 
 
-
-
-
-== 手順1：コントローラをブートしてコントローラをギブバックする
-
-コントローラがリブートしたら、ONTAPをブートしてコントローラをギブバックします。
 
 .手順
 . コンソールの出力を確認します。
@@ -23,21 +17,5 @@
 .. AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
+. ギブバックが完了したら、 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]ストレージ システムの健全性を確認し、発生した問題を修正します。
 
-
-
-
-== 手順2：ストレージシステムの健全性を確認する
-
-コントローラがストレージをギブバックしたら、で全体の健全性を確認する必要があります https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]。
-
-.手順
-. ギブバックが完了したら、Active IQ Config Advisorを実行してストレージシステムの健全性を確認します。
-. 発生した問題を修正します。
-
-
-
-
-== 手順 3 ：障害が発生したパーツをネットアップに返却する
-
-障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。
