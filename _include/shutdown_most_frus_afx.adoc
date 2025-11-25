@@ -36,10 +36,6 @@ NOTE: 「自動ギブバックを無効にしますか？」と表示された�
 +
 `system ha interconnect link off -node healthy-node -link 1`
 
-+
-
-NOTE: ONTAPバージョン 9.17.1 を実行していない場合は、上記の手順をスキップして手順 3 に進みます。
-
 
 
 . 障害のあるコントローラに LOADER プロンプトを表示します。

@@ -2219,8 +2219,6 @@
   <block id="d5b3850d37eca03c3be10401093f24dc" category="admonition">ドライブファームウェアは 2 分ごとにチェックされます。</block>
   <block id="01d36c3de356a203f6380095e17d5483" category="list-text">交換用ドライブのドライブ所有権を手動で割り当てる場合は、ドライブの自動割り当てを無効にする必要があります。</block>
   <block id="ba85497a31a9938c9ee8b64479f5eb73" category="paragraph">自動ドライブ割り当てが有効になっている場合は、各コントローラモジュールの Auto Assign 列に on と表示されます。</block>
-  <block id="b1fed0a03aae9e2c00ae3f49b6c9b739" category="list-text">別のドライブを交換する場合は、手順 3~7 を繰り返します。</block>
-  <block id="231236e14086359b3d54dea9955a700b" category="list-text">手順 1 で自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にします。</block>
   <block id="d6d8a1a3b9a54c543134bb59ad36c7ef" category="summary">ドライブからアグリゲートを削除した NS224 ドライブシェルフは、 HA ペア内でデータを提供中（ I/O が実行中）にホットリムーブできます。</block>
   <block id="547789886fcdaf2aca4537e1693b3b9e" category="paragraph">ドライブからアグリゲートを削除した NS224 ドライブシェルフは、 HA ペア内で稼働中でデータを提供中（ I/O が実行中）の場合にホットリムーブできます。</block>
   <block id="f0efa51e8edbba6e292cee6e81da292c" category="list-text">HA ペアをテイクオーバー状態にすることはできません。</block>
@@ -2242,7 +2240,6 @@
   <block id="0d6f5d9adb2ab6c3f617bc7eda2e0f8c" category="list-text">取り外すシェルフからケーブルを外します。</block>
   <block id="a007137d2370650b20ec02dbf15cc9ab" category="list-text">ストレージケーブルを（シェルフからコントローラへ）外します。</block>
   <block id="7afc6825591dcf8e4f43bb0ebb7eda2a" category="list-text">ラックまたはキャビネットからシェルフを物理的に取り外します。</block>
-  <block id="ea5d3bb3a6f3f53ef42084bdf7da0a58" category="list-text">複数のシェルフを取り外す場合は、手順 2~5 を繰り返します。</block>
   <block id="99718262b8a1bcade48d62a6ea4c523c" category="paragraph">それ以外の場合は、次の手順に進みます。</block>
   <block id="fb1672d3b9cbaeecaea5d014d4664b11" category="list-text">ドライブから所有権を削除する際に自動ドライブ割り当てを無効にした場合は、再度有効にします。「 storage disk option modify -autoassign on 」</block>
   <block id="67d6ac4bf6a91c77849e039f6cf3781f" category="paragraph">このコマンドは両方のコントローラモジュールで実行します。</block>
@@ -2382,13 +2379,11 @@
   <block id="08285761db2e8c5630e9cd2b950779e4" category="list-text">NSM A のポート e0b をコントローラ B のスロット 7 のポート B にケーブル接続します</block>
   <block id="201cca5254621335487b601c90501130" category="list-text">NSM B ポート e0a をコントローラ B のスロット 3 のポート a にケーブル接続します</block>
   <block id="107cc1b513bc08cd1a86f749d88fc763" category="list-text">NSM B のポート e0b をコントローラ A のスロット 7 のポート B にケーブル接続します</block>
-  <block id="3992e90365cd83d200a23714fd7144bd" category="list-text">2 台目のシェルフをホットアドする場合は、「シェルフ 2 」の手順を実行します。そうでない場合は、手順 3 に進みます。</block>
   <block id="a740221e4a860e8ea31ec9d725dfdeec" category="paragraph">シェルフ 2</block>
   <block id="db9e9985ce3384ccc7437da17ab1b6d1" category="list-text">NSM A ポート e0a をコントローラ A のスロット 7 のポートにケーブル接続します</block>
   <block id="debc8e5f2759d5538f54f284b45dbc57" category="list-text">NSM A のポート e0b をコントローラ B のスロット 3 のポート B にケーブル接続します</block>
   <block id="cccebc538728b3b256a38000d9f82966" category="list-text">NSM B ポート e0a をコントローラ B のスロット 7 のポート a にケーブル接続します</block>
   <block id="fc10913effb15f2e7e45af08900dd916" category="list-text">NSM B のポート e0b をコントローラ A のスロット 3 のポート B にケーブル接続します</block>
-  <block id="0dcadfb972a7b539c769d330f7ccc286" category="list-text">手順 3 に進みます。</block>
   <block id="44602264e094d019e88a336cd27d0156" category="paragraph">次の図は、 1 台目と 2 台目のホットアドシェルフのケーブル接続を示しています。</block>
   <block id="75a57e4a236226bc25c09e120aeab4c5" category="paragraph">次の図は、 2 台のホットアドシェルフのケーブル接続を示しています。</block>
   <block id="22f0e629287a1d1f90741ddf77caa944" category="list-text">シェルフ NSM A ポート e0a をコントローラ A のポート e0c にケーブル接続します。</block>
@@ -3013,7 +3008,6 @@
   <block id="0526a53962b9d1e594dbbbe4f645ef86" category="list-text">ディスクシェルフのスタック全体を取り外す場合は、以下の手順を実行します。それ以外の場合は、次の手順に進みます。</block>
   <block id="271fd74603b356597cb36da3cd6bb967" category="list-text">パス A （ IOM A ）とパス B （ IOM B ）のすべての SAS ケーブルを取り外します。</block>
   <block id="5749b0bc6aac212bd52cf2ceb0bc7e06" category="paragraph">これには、取り外すスタックのすべてのディスクシェルフとコントローラ、およびシェルフ同士を接続するケーブルが含まれます。</block>
-  <block id="f1bf50366739c2deaea051a7aec101e7" category="list-text">手順 9. に進みます。</block>
   <block id="5049f1ff4aa9257508eb89a945b63e9d" category="list-text">スタックから 1 台以上のディスクシェルフを取り外す（スタックは残す）場合は、該当する一連の手順を実行して、取り外すディスクシェルフを迂回してパス A （ IOM A ）スタックのケーブルをつなぎ直します。</block>
   <block id="8dc554d95262c3a398cad315b4d70e62" category="paragraph">スタックのディスクシェルフを複数取り外す場合は、該当する一連の手順を各ディスクシェルフに対して実行します。</block>
   <block id="7dd4f77a1d8a0add44b6d788582b503a" category="admonition">ポートを接続する前に、 10 秒以上待機します。SAS ケーブルのコネクタは、誤挿入を防ぐキーイングが施されているため、正しい向きで SAS ポートに取り付けるとカチッとはまり、ディスクシェルフの SAS ポートの LNK LED が緑色に点灯します。ディスクシェルフの場合は、 SAS ケーブルのコネクタをプルタブ（コネクタの下側）を下にして挿入します。</block>
@@ -3531,12 +3525,10 @@
   <block id="b88824e6d8603c9320c904617d837190" category="list-text">ホットアドしたディスクシェルフをケーブル接続すると、 ONTAP で認識されます。ディスク所有権の自動割り当てが有効になっている場合はディスク所有権が割り当てられ、必要に応じてディスクシェルフ（ IOM ）ファームウェアとディスクドライブファームウェアが自動的に更新されます。 また、構成でインバンド ACP が有効になっている場合、ホットアドしたディスクシェルフで自動的に有効になります。</block>
   <block id="07c4fdfdcd4fa801d7558b1c815fb28d" category="list-text">ホットアドするディスクシェルフ用ディスク所有権を手動で割り当てる場合は、ディスク所有権の自動割り当てを無効にする必要があります。無効になっている場合は次の手順に進みます。</block>
   <block id="d9ce71b03c108dcad1fcc7bdde993749" category="paragraph">スタック内のディスクが HA ペアの両方のコントローラで所有されている場合は、ディスク所有権を手動で割り当てる必要があります。</block>
-  <block id="2493fd5b459ed2fddb90c3c88dd93d84" category="paragraph">ディスク所有権の自動割り当ては、ホットアドしたディスクシェルフをケーブル接続する前に無効にし、ホットアドしたディスクシェルフをケーブル接続したあとに手順 7 で再び有効にします。</block>
   <block id="92116092ac990ea4250874487fb2b721" category="list-text">ディスク所有権の自動割り当てが有効になっているかどうかを確認します「 storage disk option show</block>
   <block id="b21eb2f8b72a60653498f3a1f1e0241d" category="paragraph">ディスク所有権の自動割り当てが有効になっている場合 ' 出力の Auto Assign 列に on （各コントローラ）と表示されます</block>
   <block id="5e7b2771491c1f74a4de4ccf47100e80" category="list-text">ディスク所有権の自動割り当てが有効になっている場合は、無効にする必要があります。「 storage disk option modify -node _node_name -autoassign off 」</block>
   <block id="5ae892a217fddefdc39690fe39f16ed0" category="paragraph">HA ペアの場合、両方のコントローラでディスク所有権の自動割り当てを無効にする必要があります。</block>
-  <block id="3f876ffd29608a6fdd6c56b2bcd2373a" category="list-text">ディスクシェルフのスタックをコントローラに直接ホットアドする場合は、次の手順を実行します。そうでない場合は手順 3 に進みます。</block>
   <block id="aab34a0f20291dc4eca51492b7dda4a1" category="list-text">ホットアドするスタックに複数のディスクシェルフがある場合は、シェルフ / シェルフ間をケーブル接続します。複数ない場合は、手順 b に進みます</block>
   <block id="bfa9de45095a3a90ebc55708a5ee6dd2" category="cell">状況</block>
   <block id="4488830a541dd347507e71eccb3f4943" category="paragraph">シェルフ / シェルフ間を「標準」接続でケーブル接続します（ IOM ポート 3 と 1 を使用）。</block>
@@ -3714,7 +3706,6 @@
   <block id="e36a558e7bc20ae0e75bec222964d055" category="paragraph">デジタルディスプレイの両方の数字が点滅し始め、約 5 秒後にオペレータ用ディスプレイパネルの黄色の LED が点灯してディスクシェルフ ID が保留中でまだ有効になっていないことを警告します。</block>
   <block id="9c221bef9744439a86ecbb6f88e250ff" category="list-text">ディスクシェルフの電源を再投入し、シェルフ ID を有効にします。</block>
   <block id="205f1a8463c3864309c68834a88b379a" category="paragraph">電源を再投入するには、両方の電源スイッチをオフにし、しばらく待ってから再度オンにする必要があります。</block>
-  <block id="0de4baec8d6e3dac5c52267ff0631bac" category="list-text">追加するディスクシェルフごとに、手順 1~9 を繰り返します。</block>
   <block id="c6f83377a8f707e5d4500fa6c34141e8" category="list-text">システムに重複したシェルフ ID がないことを確認します。</block>
   <block id="79a8830b6eb260be5b914306191dde58" category="paragraph">複数のディスクシェルフで ID が同じ場合、重複するディスクシェルフに 100 以上のソフト ID 番号が割り当てられます。ソフト ID （重複）番号を変更する必要があります。</block>
   <block id="26a846deb04c0d63c063041ad0fa15ef" category="list-text">Active IQ Config Advisor を実行して重複したシェルフ ID のアラートを確認するか、「 storage shelf show -fields shelf-id 」コマンドを実行して、重複した ID を含めてすでに使用されているシェルフ ID のリストを表示します。</block>
@@ -7840,7 +7831,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="a03ae9a3c924d10a64e97ade6d86ee2b" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="49e34f6a53fbd8084ac48e4e6738a264" category="inline-link-macro-rx"></block></block>
   <block id="6cfe7f4574d90cb894d56246a1414fa2" category="paragraph">ホットアドの準備の一環として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。</block>
   <block id="132976e79206d2260fc5308469634e7a" category="list-text">PCIeカードまたはI/Oモジュールの取り付け手順については、プラットフォームモデルのマニュアルを参照してください。</block>
-  <block id="5fc0fcdc83b05fb4f062a9fa1fe851d9" category="paragraph">それ以外の場合は、手順 4~7 を実行してポートを設定する必要があります。</block>
   <block id="9db058e565a88604b6d87108ed139c51" category="paragraph"><block ref="6e972b196ebbc48e0575e24a92c8720d" prefix="" category="inline-code"></block></block>
   <block id="eb3110f9f105714e88d250d436520c1d" category="paragraph"><block ref="91bc4c8d50e9272a27ce62a39b4bf1a6" prefix="" category="inline-code"></block></block>
   <block id="a61cf40b2e5406ed295d4e38c35656df" category="paragraph">プラットフォームモデルによっては、シェルフをホットアドする前に、（追加のRoCE対応PCIeカードまたはI/Oモジュールを取り付けたあとに）既存のシェルフを別 々 のスロットの2セットのポートに再接続して、スロット障害に対する耐障害性を確保しなければならない場合があります。</block>
@@ -9716,7 +9706,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="32b07ce753eb975c01de4108e4155ee7" category="list-text">HA ペア手順内の、専用でない RoCE 対応ポートがストレージ用に設定されていない場合は、無停止でそのポートを設定できます。一方または両方のコントローラがメンテナンスモードの場合を除き、コントローラをリブートする必要はありません。この手順では、どちらのコントローラもメンテナンスモードでないことを前提としています。</block>
   <block id="eb86e0541d4143c0318c9a167d5ce6fc" category="list-text">HAペアでONTAP 9.7を実行している場合は<block ref="c7b4666e1f46b9d8409deace1de37977" prefix=" " category="inline-code"></block>、列にと表示されている非専用ポートも<block ref="46a2a41cc6e552044816a2d04634545d" prefix=" " category="inline-code"></block>列にと表示され<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>ます<block ref="a10311459433adf322f2590a4987c423" prefix=" " category="inline-code"></block>。</block>
   <block id="65889651ccf1dd661e3408010cd1a0cf" category="list-text">HAペアでONTAP 9.7を実行している場合は<block ref="7ed427253695f845f908985c78b9f390" prefix=" " category="inline-code"></block>、列にと表示されている非専用ポートも<block ref="46a2a41cc6e552044816a2d04634545d" prefix=" " category="inline-code"></block>列にと表示され<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>ます<block ref="075ae3d2fc31640504f814f60e5ef713" prefix=" " category="inline-code"></block>。</block>
-  <block id="52dba85eb288ea326ebb5d4df4417d51" category="list-text">2台目のコントローラについて手順4を繰り返します。</block>
   <block id="10251d86a3f1068222c5cda1b3021db3" category="open-title">AFF A70、AFF A90、またはAFF C80</block>
   <block id="b736a5ee7f8805d6653d8da0961406f7" category="list-text">2台目のシェルフをホットアドする場合は、各コントローラのスロット2とスロット10のRoCE対応I/Oモジュールで最初のシェルフにケーブルを再接続します。</block>
   <block id="500e77e5799330d4d88ed16c0d87beee" category="paragraph">この手順では、既存のシェルフが各コントローラのスロット2にあるRoCE対応I/Oモジュールにケーブル接続されていることを前提としています。</block>
@@ -11668,10 +11657,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b3d28b344c55260439945f6caed47e6c" category="list-text">ポートのネットマスク</block>
   <block id="0471579d34255a0d9b6386ea78d8fd44" category="list-text">デフォルトゲートウェイのIPアドレス</block>
   <block id="240de215578701a602c7ee68dfdcb425" category="list-text">もしあなたが<block ref="ac676b9b4d7ad5923ab3fe5f9ae60aa8" prefix=" " category="inline-code"></block>出力では、EKM 構成が正常に復元されたことが示されています。</block>
-  <block id="42701a1ff76597ba7c5638bce0d2af9b" category="paragraph">このプロセスは、パートナー ノードから適切なファイルを復元し、ノードを再起動しようとします。手順dに進みます。</block>
   <block id="0c387b1b026e4f3547ed2f50da22a39e" category="list-text">キーが正常に復元されなかった場合、システムは停止し、キーを復元できなかったことが示されます。エラーおよび警告メッセージが表示されます。回復プロセスを再実行する必要があります。</block>
   <block id="1c27eb77b57ec03853c37b1f761a36dc" category="list-text">交換用ドライブのドライブ所有権を手動で割り当てる場合は、自動ドライブ割り当てが有効になっている場合は無効にする必要があります。</block>
-  <block id="9fb832dec5cd2e7d518230b1cfb70020" category="list-text">別のドライブを交換する場合は、手順 3 ～ 7 を繰り返します。</block>
   <block id="9b36684b5751c1f43c35d80933024e6d" category="paragraph"><block ref="e546c7c0f19a803f32f47d3907849b62" prefix="" category="inline-code"></block></block>
   <block id="6d81f890ae97b7a0ebc76c301009ec65" category="paragraph">接触<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>RMA 番号または交換手続きに関する追加のサポートが必要な場合。</block>
   <block id="e55cf153efde1bb25a6c8b4b2a77e3a3" category="paragraph">テクニカルサポートにお問い合わせください<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>RMA 番号または交換手続きに関する追加のサポートが必要な場合。</block>
@@ -11796,7 +11783,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="2658eb11cd0ca39cfc2d7394809fff01" category="list-text">MetroClusterポートをイニシエーターとして設定します。<block ref="2c8f25cb974f5d5b1e520b768a31cde6" prefix=" " category="inline-code"></block></block>
   <block id="262d6ff37dc133df81dc97d7127c21ca" category="list-text">コントローラ モジュールを再度取り付けます。</block>
   <block id="aae9b254c24cc3785086114d3d117232" category="list-text">別のドライブを交換する場合は、手順 3 ～ 7 を繰り返します。</block>
-  <block id="7c9d4c7520ca0f8e1dc57c8c26289d65" category="list-text">別のドライブを交換する場合は、手順 4 から手順 8 を繰り返します。</block>
   <block id="6ab51c87498e3948742262b60aeeee14" category="paragraph">ブートイメージの自動リカバリでは、システムが適切なブートメニューオプションを自動的に識別して選択します。パートナーノードのブートイメージを使用して、 AFF A1Kストレージシステムの交換用ブートメディアにONTAPを再インストールします。</block>
   <block id="1598afb8f3a2e9755fe6204af9dbaa8d" category="inline-link-macro">自動ブート回復手順</block>
   <block id="a3484b2f8cbf6736974f7d02ebc99cb3" category="paragraph">ストレージシステムがONTAP 9.17.1以降を実行している場合は、<block ref="0326355f0329bd91b304522a96676e27" category="inline-link-macro-rx"></block> 。システムで以前のバージョンのONTAPを実行している場合は、手動ブートリカバリ手順を使用する必要があります。</block>
@@ -13639,7 +13625,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="22dd5ea8b069cf90dfb213fcf3136023" category="list-text">4 つ以上のノードを持つクラスターがある場合は、クォーラム内になければなりません。ノードに関するクラスター情報を表示するには、<block ref="639161158d7426b3865ce9c5a6f648b3" prefix=" " category="inline-code"></block>指示。詳細については、<block ref="639161158d7426b3865ce9c5a6f648b3" prefix=" " category="inline-code"></block>コマンドについては、<block ref="812d195420030f92a12eef2f47c24053" category="inline-link-macro-rx"></block> 。</block>
   <block id="3339c1abb6a38c2a82f66c0780893536" category="list-text">クラスターがクォーラムにない場合、または (障害のあるコントローラー以外の) コントローラーの正常性または適格性が false と表示される場合は、障害のあるコントローラーをシャットダウンする前に問題を修正する必要があります。見る<block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block> 。</block>
   <block id="eea7e5b28d3e1c4e8e7e7e8e310d7994" category="list-text">ONTAPバージョン 9.17.1 を実行していて、障害のあるコントローラを起動できないか、すでに引き継がれている場合は、障害のあるコントローラを起動する前に、正常なコントローラから HA 相互接続リンクを停止する必要があります。これにより、障害のあるコントローラによる自動ギブバックの実行が防止されます。</block>
-  <block id="78fa259f1575c0e9b637544144ce5988" category="admonition">ONTAPバージョン 9.17.1 を実行していない場合は、上記の手順をスキップして手順 3 に進みます。</block>
   <block id="c30938ccf076c4ec0d3f2ba34fd8f16e" category="paragraph">正常なコントローラから障害のあるコントローラを引き継ぐか、停止します。<block ref="db99891238c978ac8afa2f5699f2917d" prefix=" " category="inline-code"></block></block>
   <block id="4ab0c772ea9a8193b238eb673a9fb06f" category="paragraph">_-halt true_ パラメータは、障害のあるノードを LOADER プロンプトに表示します。</block>
   <block id="cea31bd46ad20e8b209bfbe53fc5e093" category="paragraph">システム管理モジュールを交換すると、コントローラのシステムシリアル番号 (SSN) が変更されます。障害のあるノードが標準（ノードロック）ライセンスを必要とするONTAP機能を使用していた場合は、ノードに新しいライセンスをインストールする必要があります。標準ライセンスを使用する機能では、クラスタ内の各ノードにその機能用のキーが必要です。</block>
@@ -14129,8 +14114,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4754524f8b29b8650fe75329e6042256" category="paragraph">システムに暗号化がインストールされていません。</block>
   <block id="509770c8dda30e85db49f8642db6ca11" category="list-text">ログインプロンプトが表示されるまで待ちます。</block>
   <block id="0e24346f9a92e6d04d57b5ccead814c3" category="list-text">ノードにログインし、ストレージを返却します。</block>
-  <block id="78f0d70cb3d505c2399506f81065c747" category="list-text">自動ギブバックが無効になっている場合は、手順 6 に進み、再度有効にします。</block>
-  <block id="0e8a095551e7e50c3ca3d504bd2ad77b" category="paragraph">暗号化がインストールされています。キー マネージャーを復元するには、手順 4 に進みます。</block>
   <block id="20d2bf4f3f943fcc1e340e99a4d368ba" category="admonition">システムがキー マネージャーの構成を識別できない場合は、エラー メッセージが表示され、キー マネージャーが構成されているかどうか、およびそのタイプ (オンボードまたは外部) を確認するように求められます。プロンプトに答えて続行します。</block>
   <block id="4aac054c51ae042dd6c06bdad5d13845" category="list-text">構成に適した手順を使用してキー マネージャーを復元します。</block>
   <block id="564c83534ce0095bf811b4f45e8a7587" category="paragraph">システムは次のメッセージを表示し、BootMenu オプション 10 の実行を開始します。</block>
@@ -14142,7 +14125,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3ba7e3971d948d8fa9119ea7d3326cd3" category="paragraph">回復プロセスが完了すると、ノードが再起動します。次のメッセージは回復が成功したことを示します。</block>
   <block id="5403c23d7cc21fd6b1016c3d10c93711" category="list-text">ノードが再起動したら、システムがオンラインに戻り、動作可能であることを確認します。</block>
   <block id="1041ca100654e89f3959fe8698d3fe03" category="list-text">パートナー ノードが完全に起動してデータを提供するようになったら、クラスター全体で OKM キーを同期します。</block>
-  <block id="682b9eab5d02570a6044fbb81a96818d" category="paragraph">自動ギブバックが無効になっている場合は、手順 5 に進み、再度有効にします。</block>
   <block id="c611091d645837a22ce250179398219c" category="paragraph">システムは次のメッセージを表示し、BootMenu オプション 11 の実行を開始します。</block>
   <block id="51d6f35e7cccefb24fbfc4c082b44026" category="list-text">プロンプトが表示されたら、EKM 構成設定を入力します。</block>
   <block id="abc81377b7e3cbf13c4b821e795e2424" category="list-text">クライアント証明書の内容を入力します。<block ref="d606236dedb6ed649b29651c1ec53a99" prefix=" " category="inline-code"></block>ファイル：</block>
@@ -14311,4 +14293,21 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="9ec706133a8a1899257edbed12b2d39a" category="sidebar">ASAシステムは、FCP または iSCSI プロトコルを使用して、企業のミッション クリティカルなデータベースやその他の SAN ワークロードに継続的なデータ可用性を提供する、簡素化された専用の SAN エクスペリエンスを提供します。</block>
   <block id="3898e1d169485951c2a49a4a69789502" category="sidebar">ASAシステムのインストールとセットアップ</block>
   <block id="10b7e05447c2dbec670e886811f71bcb" category="sidebar">ASAシステムの保守</block>
+  <block id="c239ad11021e49c97ea2bf8272c6588a" category="paragraph">このプロセスは、パートナー ノードから適切なファイルを復元し、ノードを再起動しようとします。次の手順に進みます。</block>
+  <block id="774ee8b1398c2f16e1d77ddac27a50b0" category="inline-xref">自動ギブバックを再度有効にする</block>
+  <block id="d3218fd897781ec8a86658de26e1ddf1" category="list-text">へ移動 <block ref="7aacd8b9a7e4a74d04304c7c616e940e" category="inline-xref-macro-rx"></block> 無効になっていた場合。</block>
+  <block id="2ff143fefd61054fa148afd75a8c98be" category="inline-xref">キーマネージャーの復元</block>
+  <block id="1f74fd97b861dbc201b74171805bda09" category="paragraph">暗号化がインストールされています。行きます <block ref="74744f98b89b6a4dbb3b3e013250a83f" category="inline-xref-macro-rx"></block>。</block>
+  <block id="f1d6db02f39f4711fa05b5edf32c6425" category="list-text">2 番目のシェルフをホット アドする場合は、「`シェルフ 2`」のサブステップを完了します。それ以外の場合は、次の手順に進みます。</block>
+  <block id="be7b8247eb925c7add4470f65b89e936" category="list-text">別のドライブを交換する場合は、前の手順を繰り返します。</block>
+  <block id="d2fddd9e240829fc1dc928ed61196fbf" category="list-text">この手順の前の段階で自動ドライブ割り当てを無効にした場合は、ドライブの所有権を手動で割り当て、必要に応じて自動ドライブ割り当てを再度有効にします。</block>
+  <block id="4cca325ed840b8ff6bedb9a2bcf0134f" category="paragraph">テクニカルサポートにお問い合わせください<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>RMA番号または交換手続きに関する追加のサポートが必要な場合は、888-463-8277（北米）、00-800-44-638277（ヨーロッパ）、または+800-800-80-800（アジア太平洋）までお問い合わせください。//2025-11-17 ontap-systems-internal/issues/1391</block>
+  <block id="696e3a46f755e71b2efb8fc66ed7bf86" category="paragraph">それ以外の場合は、ホットアドシェルフの手順は完了です。====//2025-11-17 ontap-systems-internal/issues/1391</block>
+  <block id="ac5e04a2b567f923df0569c7177f596f" category="list-text">複数の棚を取り外す場合は、前の手順を繰り返します。</block>
+  <block id="959de3aca4b6b23d81011f18ca2b15f7" category="paragraph">それ以外の場合は、次の手順を実行してポートを構成する必要があります。</block>
+  <block id="75fc199dd3b8c9f1fc952121556e245d" category="list-text">2 番目のコントローラーに対して前の手順を繰り返します。</block>
+  <block id="b7cf733f61d2f31373ecbc67f036248f" category="list-text">必要に応じて、自動割り当てを再度有効にする手順に進みます (以下のいくつかの手順を参照)。</block>
+  <block id="98b8aea422580c306bf6d9bfa94dd665" category="list-text">追加のディスク シェルフごとに、前の手順を繰り返します。</block>
+  <block id="f843ac1c00181fdda1ccb77040024169" category="paragraph">ホット アドされたディスク シェルフを配線する前にディスク所有権の自動割り当てを無効にし、ホット アドされたディスク シェルフを配線した後、この手順の後半で再度有効にします。</block>
+  <block id="ec25bc86b3fe7d64ec86315f71195fc0" category="list-text">ディスク シェルフのスタックをコントローラに直接ホット アドする場合は、次のサブステップを実行します。それ以外の場合は、次の手順に進みます。</block>
 </blocks>

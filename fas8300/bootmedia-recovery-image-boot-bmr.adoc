@@ -63,7 +63,7 @@ FAS8300またはFAS8700システムに新しいブート メディア デバイ�
 +
 「 storage failover giveback -ofnode _impaired_node_name _
 
-.. 自動ギブバックが無効になっている場合は、手順 6 に進み、再度有効にします。
+.. へ移動 <<reenable-auto-giveback,自動ギブバックを再度有効にする>> 無効になっていた場合。
 
 
 
@@ -71,13 +71,16 @@ FAS8300またはFAS8700システムに新しいブート メディア デバイ�
  a| 
 `key manager is configured.`
  a| 
-暗号化がインストールされています。キー マネージャーを復元するには、手順 4 に進みます。
+暗号化がインストールされています。行きます <<restore-key-manager,キーマネージャーの復元>>。
 
 |===
 +
 
 NOTE: システムがキー マネージャーの構成を識別できない場合は、エラー メッセージが表示され、キー マネージャーが構成されているかどうか、およびそのタイプ (オンボードまたは外部) を確認するように求められます。プロンプトに答えて続行します。
 
+
+
+[[restore-key-manager]]
 . 構成に適した手順を使用してキー マネージャーを復元します。
 +
 [role="tabbed-block"]
@@ -138,7 +141,7 @@ Successfully recovered keymanager secrets.
 `security key-manager onboard sync`
 
 +
-自動ギブバックが無効になっている場合は、手順 5 に進み、再度有効にします。
+へ移動 <<reenable-auto-giveback,自動ギブバックを再度有効にする>> 無効になっていた場合。
 
 
 
@@ -282,7 +285,7 @@ LOADER-B>
 「 storage failover giveback -ofnode _impaired_node_name _
 
 +
-自動ギブバックが無効になっている場合は、手順 5 に進み、再度有効にします。
+へ移動 <<reenable-auto-giveback,自動ギブバックを再度有効にする>> 無効になっていた場合。
 
 
 
@@ -290,6 +293,7 @@ LOADER-B>
 ====
 
 
+[[reenable-auto-giveback]]
 . 自動ギブバックを無効にした場合は、再度有効にします。
 +
 `storage failover modify -node local -auto-giveback true`
