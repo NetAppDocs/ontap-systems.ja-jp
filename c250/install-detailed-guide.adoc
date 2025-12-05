@@ -346,6 +346,9 @@ image:../media/drw_affa250_1shelf_cabling_b.png["コントローラBのケーブ
 
 スイッチとラップトップのみを接続したクラスタ検出を使用するか、システムのコントローラに直接接続してから管理スイッチに接続して、システムのセットアップと設定を実行します。
 
+
+NOTE: リモート管理用のコントローラコンソールポートの継続的な接続を確立する方法については、ナレッジベースの記事を参照してください。 https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/How_to_connect_an_ONTAP_controller_console_port_for_remote_management["リモート管理用にONTAPコントローラのコンソールポートを接続する方法"^]。
+
 [role="tabbed-block"]
 ====
 .オプション 1 ：ネットワーク検出が有効になっている場合
