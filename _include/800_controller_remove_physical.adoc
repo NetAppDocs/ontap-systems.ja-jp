@@ -1,0 +1,85 @@
+= 
+:allow-uri-read: 
+
+
+.手順
+. 接地対策がまだの場合は、自身で適切に実施します。
+. シャーシ内のすべてのドライブがミッドプレーンにしっかりと装着されていることを確認します。そのためには、両手の親指を使って、プラスの停止を感じるまで各ドライブを押します。
++
+.ビデオ - ドライブの座席の確認
+video::2c46e4af-2c21-4f12-b065-b38b003d0ea2[panopto]
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[ドライブを装着する]
+
+. システム ステータスに基づいてコントローラー ドライブを確認します。
++
+.. 正常なコントローラで、アクティブな RAID グループが劣化状態、障害状態、またはその両方にあるかどうかを確認します。
++
+[source, cli]
+----
+storage aggregate show -raidstatus !*normal*
+----
++
+*** コマンドが返された場合 `There are no entries matching your query.`続ける<<Check-missing-drives,次のサブステップに進み、不足しているドライブを確認します。>>。
+*** コマンドが他の結果を返す場合は、両方のコントローラからAutoSupportデータを収集し、 NetAppサポートに連絡してさらにサポートを受けてください。
++
+[source, cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+
+.. [[Check-missing-drives]]ファイルシステムまたはスペアドライブの両方で、不足しているドライブの問題がないか確認します。
++
+[source, cli]
+----
+event log show -severity * -node * -message-name *disk.missing*
+----
++
+*** コマンドが返された場合 `There are no entries matching your query.`続ける<<remove-power-cables,次のステップに進む>>。
+*** コマンドが他の結果を返す場合は、両方のコントローラからAutoSupportデータを収集し、 NetAppサポートに連絡してさらにサポートを受けてください。
++
+[source, cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+
+
+
+. [[remove-power-cables]]電源ケーブル固定具を取り外し、電源装置からケーブルを抜きます。
+. ケーブル管理デバイスのフックとループのストラップを緩めます。システム ケーブルと SFP/QSFP モジュール (必要な場合) をコントローラー モジュールから取り外します。各ケーブルの位置をメモします。
++
+ケーブルはケーブルマネジメントデバイスに収めたままにします。これにより、ケーブルマネジメントデバイスを取り付け直すときに、ケーブルを整理する必要がありません。
+
+. ケーブルマネジメントデバイスをコントローラモジュールから取り外し、脇に置きます。
+. 両方のロックラッチを押し下げ、両方のラッチを同時に下方向に回転させます。
++
+コントローラモジュールがシャーシから少し引き出されます。
+
++
+image::../media/drw_a800_pcm_remove.png[コントローラモジュールの取り外し]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image:../media/icon_round_1.png["番号1"]
+ a| 
+固定ラッチ
+
+
+
+ a| 
+image:../media/icon_round_2.png["番号2"]
+ a| 
+ロッキングピン
+
+|===
+. コントローラモジュールをシャーシから引き出し、安定した平らな場所に置きます。
++
+コントローラ モジュールの下部を支えながら、シャーシからスライドさせて取り出します。
+
+

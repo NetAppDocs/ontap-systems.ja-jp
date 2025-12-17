@@ -10,12 +10,51 @@
 --
 NVRAMモジュールを交換するには、シャーシのスロット4/5でモジュールの場所を確認し、特定の手順を実行します。
 
+. 接地対策がまだの場合は、自身で適切に実施します。
 . シャーシ内のすべてのドライブがミッドプレーンにしっかりと装着されていることを確認します。そのためには、両手の親指を使って、プラスの停止を感じるまで各ドライブを押します。
 +
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[ディスクドライブの取り付け]
+.ビデオ - ドライブの座席の確認
+video::2c46e4af-2c21-4f12-b065-b38b003d0ea2[panopto]
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[ドライブを装着する]
 
-. シャーシの背面に移動します。接地対策がまだの場合は、自身で適切に実施します。
-. 接地対策がまだの場合は、自身で適切に実施します。
+. システム ステータスに基づいてコントローラー ドライブを確認します。
++
+.. 正常なコントローラで、アクティブな RAID グループが劣化状態、障害状態、またはその両方にあるかどうかを確認します。
++
+[source, cli]
+----
+storage aggregate show -raidstatus !*normal*
+----
++
+*** コマンドが返された場合 `There are no entries matching your query.`続ける<<Check-missing-drives,次のサブステップに進み、不足しているドライブを確認します。>>。
+*** コマンドが他の結果を返す場合は、両方のコントローラからAutoSupportデータを収集し、 NetAppサポートに連絡してさらにサポートを受けてください。
++
+[source, cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+
+.. [[Check-missing-drives]]ファイルシステムまたはスペアドライブの両方で、不足しているドライブの問題がないか確認します。
++
+[source, cli]
+----
+event log show -severity * -node * -message-name *disk.missing*
+----
++
+*** コマンドが返された場合 `There are no entries matching your query.`続ける<<Go-to-the-rear,次のステップに進む>>。
+*** コマンドが他の結果を返す場合は、両方のコントローラからAutoSupportデータを収集し、 NetAppサポートに連絡してさらにサポートを受けてください。
++
+[source, cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+
+
+
+. [[後方に移動]]シャーシの後方に移動します。
 . コントローラーの PSU を外します。
 +
 
@@ -91,11 +130,51 @@ NOTE: DC 電源がある場合は、電源ブロックを電源に再接続し�
 --
 NVRAMモジュールのNVRAM DIMMを交換するには、まずNVRAMモジュールを取り外してから、ターゲットDIMMを交換する必要があります。
 
+. 接地対策がまだの場合は、自身で適切に実施します。
 . シャーシ内のすべてのドライブがミッドプレーンにしっかりと装着されていることを確認します。そのためには、両手の親指を使って、プラスの停止を感じるまで各ドライブを押します。
 +
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[ディスクドライブの取り付け]
+.ビデオ - ドライブの座席の確認
+video::2c46e4af-2c21-4f12-b065-b38b003d0ea2[panopto]
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[ドライブを装着する]
 
-. シャーシの背面に移動します。接地対策がまだの場合は、自身で適切に実施します。
+. システム ステータスに基づいてコントローラー ドライブを確認します。
++
+.. 正常なコントローラで、アクティブな RAID グループが劣化状態、障害状態、またはその両方にあるかどうかを確認します。
++
+[source, cli]
+----
+storage aggregate show -raidstatus !*normal*
+----
++
+*** コマンドが返された場合 `There are no entries matching your query.`続ける<<Check-missing-drives,次のサブステップに進み、不足しているドライブを確認します。>>。
+*** コマンドが他の結果を返す場合は、両方のコントローラからAutoSupportデータを収集し、 NetAppサポートに連絡してさらにサポートを受けてください。
++
+[source, cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+
+.. [[Check-missing-drives]]ファイルシステムまたはスペアドライブの両方で、不足しているドライブの問題がないか確認します。
++
+[source, cli]
+----
+event log show -severity * -node * -message-name *disk.missing*
+----
++
+*** コマンドが返された場合 `There are no entries matching your query.`続ける<<Go-to-the-rear,次のステップに進む>>。
+*** コマンドが他の結果を返す場合は、両方のコントローラからAutoSupportデータを収集し、 NetAppサポートに連絡してさらにサポートを受けてください。
++
+[source, cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+
+
+
+. [[後方に移動]]シャーシの後方に移動します。
 . コントローラーの PSU を外します。
 +
 

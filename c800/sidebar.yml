@@ -55,28 +55,34 @@ entries:
   - title: シャーシ
     pdf-filename: AFF C800シャーシ
     entries:
-    - title: 概要
-      url: "/c800/chassis-replace-overview.html"
-    - title: 障害のあるコントローラをシャットダウンします
+    - title: シャーシの交換ワークフロー
+      url: "/c800/chassis-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/c800/chassis-replace-requirements.html"
+    - title: 交換の準備
+      url: "/c800/chassis-replace-prepare.html"
+    - title: コントローラのシャットダウン
       url: "/c800/chassis-replace-shutdown.html"
-    - title: ハードウェアを交換します
+    - title: シャーシの交換
       url: "/c800/chassis-replace-move-hardware.html"
-    - title: 交換後の処理
+    - title: シャーシ交換後の処理
       url: "/c800/chassis-replace-complete-system-restore-rma.html"
   - title: コントローラ
     pdf-filename: AFF C800コントローラモジュール
     entries:
-    - title: 概要
-      url: "/c800/controller-replace-overview.html"
+    - title: コントローラの交換ワークフロー
+      url: "/c800/controller-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/c800/controller-replace-requirements.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/c800/controller-replace-shutdown.html"
-    - title: コントローラモジュールを交換します
+    - title: コントローラを交換してください
       url: "/c800/controller-replace-move-hardware.html"
     - title: システム設定を復元します
       url: "/c800/controller-replace-system-config-restore-and-verify.html"
     - title: システムにケーブルを再接続
       url: "/c800/controller-replace-recable-reassign-disks.html"
-    - title: 交換後の処理
+    - title: コントローラ交換後の処理
       url: "/c800/controller-replace-restore-system-rma.html"
   - title: DIMM
     url: "/c800/dimm-replace.html"

@@ -11,7 +11,7 @@ summary: ONTAP イメージを USB ドライブからブートし、ファイル
 
 
 [role="lead"]
-システムに新しいブートメディアデバイスを取り付けたら、リカバリイメージをUSBドライブからブートし、パートナーノードから設定をリストアできます。
+AFF C800システムに新しいブート メディア デバイスをインストールした後、USB ドライブからリカバリ イメージを起動し、パートナー ノードから構成を復元できます。
 
 ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。システムで以前のバージョンのONTAPを実行している場合は、手動ブートリカバリ手順を使用する必要があります。
 
@@ -104,3 +104,6 @@ NOTE: 復元成功以外のメッセージが表示された場合は、 NetApp�
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
+
+.次の手順
+リカバリイメージを起動したら、を実行する必要がありlink:bootmedia-encryption-restore.html["ブートメディアで暗号化をリストアする"]ます。

@@ -40,14 +40,14 @@ link:bootmedia-replace-workflow.html["ブートメディア - 手動リカバリ
 
 
  a| 
-link:chassis-replace-overview.html["シャーシ"]
+link:chassis-replace-workflow.html["シャーシ"]
  a| 
 シャーシは、コントローラ/CPUユニット、電源装置、I/Oなど、すべてのコントローラコンポーネントを収容する物理エンクロージャです。
 
 
 
  a| 
-link:controller-replace-overview.html["コントローラ"]
+link:controller-replace-workflow.html["コントローラ"]
  a| 
 コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、ONTAP機能を実装します。
 
