@@ -13,6 +13,6 @@ summary: プラットフォーム ファミリ別に整理された、 NetAppス
 [role="lead"]
 プラットフォーム ファミリ別に整理された、 NetAppストレージ システムの DCPM 電源モジュールの交換手順を確認します。このリファレンスには、 AFFおよびFASシステムの DCPM 電源モジュール交換ワークフローのステップバイステップの直接リンクが提供されており、特定のモデルに適切な手順をすぐに見つけるのに役立ちます。
 
-* link:../a700/dcpm-power-replace.html["AFF A700"]
-* link:../fas9000/dcpm-power-replace.html["FAS9000"]
+* link:../a700/dcpm-nvram10-battery-replace.html["AFF A700"]
+* link:../fas9000/dcpm-nvram10-battery-replace.html["FAS9000"]
 
