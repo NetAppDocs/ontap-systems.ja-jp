@@ -1,8 +1,8 @@
 ---
 permalink: fas9000/bootmedia-2n-mcc-switchback.html 
 sidebar: sidebar 
-keywords: fas9000, aff a700, metrocluster, switchback 
-summary: 2 ノード MetroCluster 構成で FRU の交換が完了したら、 MetroCluster スイッチバック処理を実行できます。これにより構成が通常の動作状態に戻ります。また、障害が発生していたサイトの同期元 Storage Virtual Machine （ SVM ）がアクティブになり、ローカルディスクプールからデータを提供します。 
+keywords: fas9000, aff a700, metrocluster, switchback, manual, manual boot recovery 
+summary: '2 ノードMetroCluster構成で FRU の交換が完了したら、 MetroClusterスイッチバック操作を実行できます。これにより、構成は通常の動作状態に戻り、以前障害が発生していたサイトの同期元のストレージ仮想マシン (SVM) がアクティブになり、ローカル ディスク プールからデータを提供するようになります。FAS9000システムは、手動のブート メディア回復手順のみをサポートします。' 
 ---
 = 2ノードMetroCluster構成でのアグリゲートのスイッチバック- FAS9000
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: 2 ノード MetroCluster 構成で FRU の交換が完了したら、 M
 
 
 [role="lead"]
+ブート メディアの交換が完了したら、 MetroClusterスイッチバック操作を実行します。FAS9000システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
+
 このタスクでは、環境の 2 ノード MetroCluster 構成のみを実行します。
 
 .手順

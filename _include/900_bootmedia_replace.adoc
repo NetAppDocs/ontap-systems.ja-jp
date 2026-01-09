@@ -16,7 +16,7 @@
 .アニメーション-コントローラを取り外します
 video::256721fd-4c2e-40b3-841a-adf2000df5fa[panopto]
 +
-image::../media/drw_a900_remove_PCM.png[コントローラを解放します。]
+image::../media/drw_a900_remove_PCM.svg[コントローラを解放します。]
 
 +
 [cols="1,4"]
@@ -42,7 +42,7 @@ image:../media/icon_round_2.png["番号2"]
 
 . コントローラモジュールのふた側を上にして、平らで安定した場所に置きます。カバーの青いボタンを押し、コントローラモジュールの背面にカバーをスライドさせてから、カバーを上に動かしてコントローラモジュールから外します。
 +
-image::../media/drw_a900_PCM_open.png[カバーを持ち上げてコントローラモジュールから取り外します。]
+image::../media/drw_a900_PCM_open.svg[カバーを持ち上げてコントローラモジュールから取り外します。]
 
 +
 [cols="1,4"]
@@ -69,7 +69,7 @@ image:../media/icon_round_1.png["番号1"]
 .アニメーション-ブートメディアの交換
 video::c5080658-765e-4d29-8456-adf2000e1495[panopto]
 +
-image::../media/drw_9000_remove_boot_dev.svg[ブートメディアの取り外し]
+image::../media/drw_a900_remove_boot_dev.svg[ブートメディアの取り外し]
 
 +
 [cols="1,4"]

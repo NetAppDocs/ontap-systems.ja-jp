@@ -23,7 +23,7 @@ LED USB モジュールは、コンソールポートおよびシステムステ
 .アニメーション- LED - USBモジュールの取り外し/取り付け
 video::eb715462-cc20-454f-bcf9-adf9016af84e[panopto]
 +
-image::../media/drw_a900_remove_replace_LED_mod.png[LED USBモジュールの取り外し]
+image::../media/drw_a900_remove_replace_LED_mod.svg[LED USBモジュールの取り外し]
 
 +
 [cols="1,4"]

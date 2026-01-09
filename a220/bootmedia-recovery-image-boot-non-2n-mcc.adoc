@@ -1,8 +1,8 @@
 ---
 permalink: a220/bootmedia-recovery-image-boot-non-2n-mcc.html 
 sidebar: sidebar 
-keywords: aff 220, boot, recovery, image, restore, file, system, environmental, varible 
-summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
+keywords: aff 220, boot, recovery, image, restore, file, system, environmental, varible, manual, manual boot recovery 
+summary: USB ドライブからONTAPイメージを起動し、ファイル システムを復元し、環境変数を確認する必要があります。AFF A220システムは、手動のブート メディア リカバリ手順のみをサポートします。 
 ---
 = リカバリイメージのブート- AFF A220
 :allow-uri-read: 
@@ -10,6 +10,8 @@ summary: ONTAP イメージを USB ドライブからブートし、ファイル
 
 
 [role="lead"]
+AFF A220システムは、手動のブート メディア リカバリ手順のみをサポートします。
+
 ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
 
 .手順

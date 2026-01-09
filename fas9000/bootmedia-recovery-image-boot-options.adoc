@@ -1,8 +1,8 @@
 ---
 permalink: fas9000/bootmedia-recovery-image-boot-options.html 
 sidebar: sidebar 
-keywords: aff a700, fas9000, boot, recovery, image, two, node, metrocluster, configuration 
-summary: 障害ノードをリカバリイメージからブートするための手順は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。 
+keywords: aff a700, fas9000, boot, recovery, image, two, node, metrocluster, configuration, manual, manual boot recovery 
+summary: 障害のあるノードをリカバリ イメージから起動する手順は、システムが 2 ノードのMetroCluster構成になっているかどうかによって異なります。FAS9000システムは、手動のブート メディア回復手順のみをサポートします。 
 ---
 = リカバリイメージのブート- FAS9000
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: 障害ノードをリカバリイメージからブートするため�
 
 
 [role="lead"]
+障害のあるノードをリカバリ イメージから起動する手順は、システムが 2 ノードのMetroCluster構成になっているかどうかによって異なります。FAS9000システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
+
 障害ノードをリカバリイメージからブートするための手順は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。
 
 

@@ -1,8 +1,8 @@
 ---
 permalink: a700s/bootmedia-shutdown.html 
 sidebar: sidebar 
-keywords: aff a700s, aff, a700s, completing, complete, nve, nse, shutdown, impair, controller, shut down the controller 
-summary: NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。 
+keywords: aff a700s, aff, a700s, completing, complete, nve, nse, shutdown, impair, controller, shut down the controller, manual, manual boot recovery 
+summary: 暗号化チェックを完了した後、 AFF A700sシステム上の障害のあるコントローラをシャットダウンします。AFF A700sシステムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
 = コントローラをシャットダウンします - AFF A700s
 :allow-uri-read: 
@@ -11,6 +11,10 @@ summary: NVE タスクまたは NSE タスクが完了したら、障害のあ�
 
 
 [role="lead"]
+暗号化チェックを完了した後、 AFF A700sシステム上の障害のあるコントローラをシャットダウンします。この手順には、コントローラを LOADER プロンプトに移動し、参照用にブート環境変数をキャプチャし、ブート メディアの交換のためにコントローラを準備することが含まれます。
+
+AFF A700sシステムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
+
 NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。
 
 .手順

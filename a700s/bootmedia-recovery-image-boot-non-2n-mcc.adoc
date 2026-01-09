@@ -1,8 +1,8 @@
 ---
 permalink: a700s/bootmedia-recovery-image-boot-non-2n-mcc.html 
 sidebar: sidebar 
-keywords: aff a700s, aff, a700s, boot, ontap, image, usb, drive, restore, file, system, verify, environmental, variable 
-summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
+keywords: aff a700s, aff, a700s, boot, ontap, image, usb, drive, restore, file, system, verify, environmental, variable, manual, manual boot recovery 
+summary: AFF A700sシステムの USB ドライブからONTAPリカバリ イメージを起動して、ブート メディアを復元します。AFF A700sシステムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
 = リカバリイメージ AFF A700s をブートします
 :allow-uri-read: 
@@ -11,8 +11,11 @@ summary: ONTAP イメージを USB ドライブからブートし、ファイル
 
 
 [role="lead"]
-ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
+AFF A700sシステムの USB ドライブからONTAPリカバリ イメージを起動して、ブート メディアを復元します。この手順には、USB フラッシュ ドライブからの起動、ファイル システムの復元、環境変数の検証、起動メディアの交換後のコントローラの通常の動作への復帰が含まれます。
 
+AFF A700sシステムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
+
+.手順
 . LOADER プロンプトから、 USB フラッシュドライブ「 boot_recovery 」からリカバリ・イメージをブートします
 +
 イメージが USB フラッシュドライブからダウンロードされます。

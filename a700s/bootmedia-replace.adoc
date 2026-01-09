@@ -1,8 +1,8 @@
 ---
 permalink: a700s/bootmedia-replace.html 
 sidebar: sidebar 
-keywords: aff a700s, aff, a700s, locate, fail, boot, media, controller, module, pcie, led, replace, replace the boot media 
-summary: コントローラモジュールで障害が発生したブートメディアの場所を確認するには、コントローラモジュールの中央の PCIe モジュールを取り外し、ブートメディアの近くにある LED で障害が発生したブートメディアの場所を確認してから、ブートメディアを交換します。 
+keywords: aff a700s, aff, a700s, locate, fail, boot, media, controller, module, pcie, led, replace, replace the boot media, manual, manual boot recovery 
+summary: AFF A700sコントローラ モジュール上の障害が発生したブート メディアを交換します。AFF A700sシステムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
 = ブートメディア AFF A700s を交換してください
 :allow-uri-read: 
@@ -11,7 +11,9 @@ summary: コントローラモジュールで障害が発生したブートメ�
 
 
 [role="lead"]
-コントローラモジュールをシャーシから取り外して開き、障害が発生したブートメディアを交換する必要があります。
+AFF A700sコントローラ モジュール上の障害が発生したブート メディアを交換します。この手順には、コントローラ モジュールをシャーシから取り外し、点灯している LED インジケータを使用して障害が発生したブート メディアを見つけ、ブート メディア コンポーネントを物理的に交換し、システムを通常の動作に復元することが含まれます。
+
+AFF A700sシステムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
 
 
 

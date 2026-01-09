@@ -1,8 +1,8 @@
 ---
 permalink: a700s/bootmedia-replace-overview.html 
 sidebar: sidebar 
-keywords: aff a700s, aff, a700s, primary, boot, media, store, ontap, image, system, restore, primary, media, secondary, usb, flash, drive, replace, replace the boot media 
-summary: プライマリブートメディアには、システムがブート時に使用する ONTAP ブートイメージが格納されています。セカンダリブートメディア上の ONTAP イメージを使用するか、または必要に応じて USB フラッシュドライブを使用して、プライマリブートメディアイメージをリストアできます。 
+keywords: aff a700s, aff, a700s, primary, boot, media, store, ontap, image, system, restore, primary, media, secondary, usb, flash, drive, replace, replace the boot media, manual, manual boot recovery 
+summary: AFF A700sシステムでのブート メディアの交換について学習し、リカバリ方法を理解します。AFF A700sシステムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
 = ブートメディアの交換の概要 - AFF A700s
 :allow-uri-read: 
@@ -11,7 +11,9 @@ summary: プライマリブートメディアには、システムがブート�
 
 
 [role="lead"]
-プライマリブートメディアには、システムがブート時に使用する ONTAP ブートイメージが格納されています。セカンダリブートメディア上の ONTAP イメージを使用するか、または必要に応じて USB フラッシュドライブを使用して、プライマリブートメディアイメージをリストアできます。
+AFF A700sシステムでのブート メディアの交換について学習し、リカバリ方法を理解します。プライマリ ブート メディアには、システムの起動時に使用されるONTAPブート イメージが保存されます。セカンダリ ブート メディアのONTAPイメージを使用して、または必要に応じて FAT32 にフォーマットされた USB フラッシュ ドライブから、プライマリ ブート メディア イメージを復元できます。
+
+AFF A700sシステムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
 
 セカンダリブートメディアに障害が発生した場合、または image.tgz ファイルがない場合は、 USB フラッシュドライブを使用してプライマリブートメディアをリストアする必要があります。ドライブは FAT32 にフォーマットされており、 image.tgz ファイルを格納できる容量のストレージが必要です。
 

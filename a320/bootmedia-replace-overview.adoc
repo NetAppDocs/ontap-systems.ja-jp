@@ -1,8 +1,8 @@
 ---
 permalink: a320/bootmedia-replace-overview.html 
 sidebar: sidebar 
-keywords: aff, a320, locate, boot, media, controller, module, direction, replace, replace the boot media 
-summary: コントローラモジュールのブートメディアの場所を確認し、手順に従って交換する必要があります。 
+keywords: aff, a320, locate, boot, media, controller, module, direction, replace, replace the boot media, manual, manual boot recovery 
+summary: コントローラー モジュール内のブート メディアを見つけて、指示に従って交換する必要があります。AFF A320システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
 = ブートメディアの交換 - AFF A320 の概要
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: コントローラモジュールのブートメディアの場所を�
 
 
 [role="lead"]
+AFF A320システムは、手動のブート メディア リカバリ手順のみをサポートします。
+
 ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。ネットワーク構成に応じて、無停止または停止を伴う交換を実行できます。
 
 「 image_xxx.tgz 」ファイルを格納できる適切な容量のストレージを搭載した、 FAT32 にフォーマットされた USB フラッシュドライブが必要です。

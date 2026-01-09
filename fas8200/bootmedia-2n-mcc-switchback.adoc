@@ -1,8 +1,8 @@
 ---
 permalink: fas8200/bootmedia-2n-mcc-switchback.html 
 sidebar: sidebar 
-keywords: fas8200, switch back aggregate in a two-node metrocluster configuration 
-summary: 2 ノード MetroCluster 構成で FRU の交換が完了したら、 MetroCluster スイッチバック処理を実行できます。これにより構成が通常の動作状態に戻ります。また、障害が発生していたサイトの同期元 Storage Virtual Machine （ SVM ）がアクティブになり、ローカルディスクプールからデータを提供します。 
+keywords: fas8200, switch back aggregate in a two-node metrocluster configuration, manual, manual boot recovery 
+summary: 2 ノードMetroCluster構成でブート メディアの交換を完了した後、 FAS8200システムでMetroClusterスイッチバック操作を実行します。FAS8200システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
 = 2 ノード MetroCluster 構成 - FAS8200 のアグリゲートをスイッチバックします
 :allow-uri-read: 
@@ -11,6 +11,10 @@ summary: 2 ノード MetroCluster 構成で FRU の交換が完了したら、 M
 
 
 [role="lead"]
+2 ノードMetroCluster構成でブート メディアの交換を完了した後、 FAS8200システムでMetroClusterスイッチバック操作を実行します。この手順には、ノードとストレージ仮想マシン (SVM) の状態の確認、スイッチバック コマンドの実行、同期元 SVM がローカル ディスク プールからデータを提供する通常の動作状態に構成が戻ることの確認が含まれます。
+
+FAS8200システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
+
 このタスクでは、環境の 2 ノード MetroCluster 構成のみを実行します。
 
 .手順

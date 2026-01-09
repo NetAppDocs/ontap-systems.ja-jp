@@ -20,7 +20,7 @@ IMPORTANT: ファンモジュールは奥行きがないので、シャーシか
 .アニメーション-ファンの取り外し/取り付け
 video::3c3c8d93-b48e-4554-87c8-adf9016af819[panopto]
 +
-image::../media/drw_a900_remove_install_fan.png[ファンの取り外しまたは取り付け]
+image::../media/drw_a900_remove_install_fan.svg[ファンの取り外しまたは取り付け]
 
 +
 [cols="10,90"]

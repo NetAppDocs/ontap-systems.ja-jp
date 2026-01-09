@@ -1,8 +1,8 @@
 ---
 permalink: fas9000/bootmedia-encryption-restore.html 
 sidebar: sidebar 
-keywords: aff a700, fas9000, post, boot, media, replacement, steps, okm, nse, nve 
-summary: 環境変数を確認したら、オンボードキーマネージャ（ OKM ）、 NetApp Storage Encryption （ NSE ）、または NetApp Volume Encryption （ NVE ）が有効になっているシステムに固有の手順を実行する必要があります。 
+keywords: aff a700, fas9000, post, boot, media, replacement, steps, okm, nse, nve, manual, manual boot recovery 
+summary: '環境変数を確認したら、Onboard Key Manager (OKM)、 NetApp Storage Encryption (NSE)、またはNetApp Volume Encryption (NVE) が有効になっているシステムに固有の手順を完了する必要があります。FAS9000システムは、手動のブート メディア回復手順のみをサポートします。' 
 ---
 = リストア暗号化- FAS9000
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 環境変数を確認したら、オンボードキーマネージャ�
 
 
 [role="lead"]
-交換用ブートメディアで暗号化をリストアします。
+交換用ブート メディアで暗号化を復元します。FAS9000システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
 
 キー マネージャーの種類に応じて適切な手順を実行し、システムの暗号化を復元します。システムで使用されているキー マネージャーが不明な場合は、ブート メディアの交換手順の開始時にキャプチャした設定を確認してください。
 

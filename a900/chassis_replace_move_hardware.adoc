@@ -38,7 +38,7 @@ NOTE: 電源装置を取り外すときは、重量があるので必ず両手�
 .アニメーション- PSUの取り外し/取り付け
 video::6d0eee92-72e2-4da4-a4fa-adf9016b57ff[panopto]
 +
-image::../media/drw_a900_remove_install_PSU_module.png[PSUモジュールの取り外しまたは取り付け]
+image::../media/drw_a900_remove_install_PSU_module.svg[PSUモジュールの取り外しまたは取り付け]
 
 +
 [cols="1,4"]
@@ -71,7 +71,7 @@ NOTE: ファンモジュールは奥行きがないので、シャーシから�
 .アニメーション-ファンの取り外し/取り付け
 video::3c3c8d93-b48e-4554-87c8-adf9016af819[panopto]
 +
-image::../media/drw_a900_remove_install_fan.png[ファンの取り外しまたは取り付け]
+image::../media/drw_a900_remove_install_fan.svg[ファンの取り外しまたは取り付け]
 
 +
 [cols="1,4"]
@@ -108,7 +108,7 @@ image:../media/icon_round_2.png["番号2"]
 .アニメーション-コントローラを取り外します
 video::256721fd-4c2e-40b3-841a-adf2000df5fa[panopto]
 +
-image::../media/drw_a900_remove_PCM.png[コントローラを取り外します]
+image::../media/drw_a900_remove_PCM.svg[コントローラを取り外します]
 
 +
 [cols="1,4"]
@@ -165,7 +165,7 @@ I/O モジュールが取り付けられていたスロットを記録してお�
 .アニメーション- I/Oモジュールの取り外し/取り付け
 video::3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6[panopto]
 +
-image:../media/drw_a900_remove_PCIe_module.png["PCIeモジュールの取り外し"]
+image:../media/drw_a900_remove_PCIe_module.svg["PCIeモジュールの取り外し"]
 
 
 
@@ -203,7 +203,7 @@ image:../media/icon_round_2.png["番号2"]
 .アニメーション- DCPMの取り外し/取り付け
 video::ade18276-5dbc-4b91-9a0e-adf9016b4e55[panopto]
 +
-image::../media/drw_a900_remove_NV_battery.png[NVバッテリの取り外し]
+image::../media/drw_a900_remove_NV_battery.svg[NVバッテリの取り外し]
 
 +
 [cols="1,4"]
@@ -227,7 +227,7 @@ USB LEDモジュールを取り外します。
 
 .アニメーション- USBの取り外し/取り付け
 video::eb715462-cc20-454f-bcf9-adf9016af84e[panopto]
-image::../media/drw_a900_remove_replace_LED_mod.png[USB LEDモジュールの取り外しまたは交換]
+image::../media/drw_a900_remove_replace_LED_mod.svg[USB LEDモジュールの取り外しまたは交換]
 
 [cols="1,4"]
 |===

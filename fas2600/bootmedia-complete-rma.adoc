@@ -1,8 +1,8 @@
 ---
 permalink: fas2600/bootmedia-complete-rma.html 
 sidebar: sidebar 
-keywords: fas2600, replace boot media, rma 
-summary: 部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。 
+keywords: fas2600, replace boot media, rma, manual, manual boot recovery 
+summary: 部品を交換した後、キットに同梱されている RMA 手順に従って、故障した部品をNetAppに返却できます。FAS2600 システムは、手動のブート メディア回復手順のみをサポートします。 
 ---
 = 障害のあるパーツを NetApp-FAS2600 に返却します
 :allow-uri-read: 
@@ -11,4 +11,4 @@ summary: 部品を交換したあと、障害のある部品をネットアッ�
 
 
 [role="lead"]
-障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。
+キットに同梱されている RMA 手順に従って、故障した部品をNetAppに返送してください。参照 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、ページをご覧ください。FAS2600 システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。

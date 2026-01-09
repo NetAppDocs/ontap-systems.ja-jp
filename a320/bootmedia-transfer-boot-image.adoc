@@ -1,8 +1,8 @@
 ---
 permalink: a320/bootmedia-transfer-boot-image.html 
 sidebar: sidebar 
-keywords: aff, a320, aff a320, replacement, boot, media, install, image, transfer, usb, flash, drive, transfer the boot image to the boot media using a usb flash drive 
-summary: 取り付けた交換用ブートメディアにはブートイメージが含まれていないため、 USB フラッシュドライブを使用してブートイメージを転送する必要があります。 
+keywords: aff, a320, aff a320, replacement, boot, media, install, image, transfer, usb, flash, drive, transfer the boot image to the boot media using a usb flash drive, manual, manual boot recovery 
+summary: インストールした交換用ブート メディアにはブート イメージが含まれていないため、USB フラッシュ ドライブを使用してブート イメージを転送する必要があります。AFF A320システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
 = USB フラッシュドライブ AFF A320 を使用してブートメディアにブートイメージを転送します
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 取り付けた交換用ブートメディアにはブートイメー�
 
 
 [role="lead"]
-取り付けた交換用ブートメディアにはブートイメージが含まれていないため、 USB フラッシュドライブを使用してブートイメージを転送する必要があります。
+インストールした交換用ブート メディアにはブート イメージが含まれていないため、USB フラッシュ ドライブを使用してブート イメージを転送する必要があります。AFF A320システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
 
 * 4GB 以上の容量の MBR / FAT32 にフォーマットされた USB フラッシュドライブが必要です
 * 障害のあるコントローラが実行していたバージョンの ONTAP イメージのコピー。該当するイメージは、ネットアップサポートサイトのダウンロードセクションからダウンロードできます

@@ -1,14 +1,17 @@
 ---
 permalink: fas9000/bootmedia-shutdown.html 
 sidebar: sidebar 
-keywords: aff a700, fas9000, shut, down, impaired, controller, take, over 
-summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
+keywords: aff a700, fas9000, shut, down, impaired, controller, take, over, manual, manual boot recovery 
+summary: ストレージ システムのハードウェア構成に応じて、さまざまな手順を使用して障害のあるコントローラをシャットダウンしたり、引き継いだりすることができます。FAS9000システムは、手動のブート メディア回復手順のみをサポートします。 
 ---
 = 障害のあるコントローラのシャットダウン- FAS9000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
+
+[role="lead"]
+構成に適した手順を使用して、障害のあるコントローラーをシャットダウンするか、引き継ぎます。FAS9000システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
 
 
 

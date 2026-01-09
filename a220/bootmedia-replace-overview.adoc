@@ -1,8 +1,8 @@
 ---
 permalink: a220/bootmedia-replace-overview.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, replace, boot, media, image, nondisruptive, disruptive, replacement, fat32, usb 
-summary: ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。ネットワーク構成に応じて、無停止または停止を伴う交換を実行できます。 
+keywords: fas2700, aff a220, replace, boot, media, image, nondisruptive, disruptive, replacement, fat32, usb, manual, manual boot recovery 
+summary: 'ブート メディアには、システムの起動時に使用されるシステム \(ブート イメージ\) ファイルのプライマリ セットとセカンダリ セットが保存されます。ネットワーク構成に応じて、無停止交換または停止交換のいずれかを実行できます。AFF A220システムは、手動のブート メディア リカバリ手順のみをサポートします。' 
 ---
 = ブートメディアの交換の概要- AFF A220
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: ブートメディアには、システムがブート時に使用す�
 
 
 [role="lead"]
+AFF A220システムは、手動のブート メディア リカバリ手順のみをサポートします。
+
 ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。ネットワーク構成に応じて、無停止または停止を伴う交換を実行できます。
 
 「 image_xxx.tgz 」ファイルを格納できる適切な容量のストレージを搭載した、 FAT32 にフォーマットされた USB フラッシュドライブが必要です。

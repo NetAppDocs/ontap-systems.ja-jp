@@ -1,17 +1,17 @@
 ---
 permalink: fas2700/bootmedia-shutdown.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, shut, down, impaired, controller, take, over 
-summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
+keywords: fas2700, aff a220, shut, down, impaired, controller, take, over, manual, manual boot recovery 
+summary: ストレージ システムのハードウェア構成に応じて、さまざまな手順を使用して障害のあるコントローラをシャットダウンしたり、引き継いだりすることができます。FAS2700 システムは、手動のブート メディア回復手順のみをサポートします。 
 ---
-= 障害のあるコントローラ AFF A220 および FAS2700 をシャットダウンします
+= 障害のあるコントローラをシャットダウン- FAS2700
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
+構成に適した手順を使用して、障害のあるコントローラーをシャットダウンするか、引き継ぎます。FAS2700 システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
 
 
 

@@ -1,8 +1,8 @@
 ---
 permalink: a220/bootmedia-complete-rma.html 
 sidebar: sidebar 
-keywords: aff a220, complete, replacement, process, replace, return, failed, rma, instructions 
-summary: 部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。 
+keywords: aff a220, complete, replacement, process, replace, return, failed, rma, instructions, manual, manual boot recovery 
+summary: 部品を交換した後、キットに同梱されている RMA 手順に従って、故障した部品をNetAppに返却できます。AFF A220システムは、手動のブート メディア リカバリ手順のみをサポートします。 
 ---
 = 故障した部品をNetAppに返却します- AFF A220
 :allow-uri-read: 
@@ -11,4 +11,4 @@ summary: 部品を交換したあと、障害のある部品をネットアッ�
 
 
 [role="lead"]
-障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。
+キットに同梱されている RMA 手順に従って、故障した部品をNetAppに返送してください。参照 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、ページをご覧ください。AFF A220システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。

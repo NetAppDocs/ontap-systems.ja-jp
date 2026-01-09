@@ -1,8 +1,8 @@
 ---
 permalink: a320/bootmedia-encryption-restore.html 
 sidebar: sidebar 
-keywords: aff, a320, aff a320, environment, variable, complete, system, onboard, key, manager, okm, netapp, storage, encryption, nse, volume, nve, enable, post, boot, media, replacement, post boot media replacement steps for okm nse and nve 
-summary: 環境変数を確認したら、オンボードキーマネージャ \ （ OKM \ ）、 NetApp Storage Encryption \ （ NSE\ ）、または NetApp Volume Encryption \ （ NVE \ ）が有効になっているシステムに固有の手順を実行する必要があります。 
+keywords: aff, a320, aff a320, environment, variable, complete, system, onboard, key, manager, okm, netapp, storage, encryption, nse, volume, nve, enable, post, boot, media, replacement, post boot media replacement steps for okm nse and nve, manual, manual boot recovery 
+summary: 環境変数を確認した後、オンボード キー マネージャー、 NetAppストレージ暗号化、またはNetAppボリューム暗号化が有効になっているシステムに固有の手順を完了する必要があります。AFF A320システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
 = リストア暗号化- AFF A320
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 環境変数を確認したら、オンボードキーマネージャ \
 
 
 [role="lead"]
-交換用ブートメディアで暗号化をリストアします。
+交換用ブート メディアで暗号化を復元します。AFF A320システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
 
 キー マネージャーの種類に応じて適切な手順を実行し、システムの暗号化を復元します。システムで使用されているキー マネージャーが不明な場合は、ブート メディアの交換手順の開始時にキャプチャした設定を確認してください。
 

@@ -1,8 +1,8 @@
 ---
 permalink: fas2700/bootmedia-recovery-image-boot-non-2n-mcc.html 
 sidebar: sidebar 
-keywords: fas2700, aff 220, boot, recovery, image, restore, file, system, environmental, varible 
-summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
+keywords: fas2700, aff 220, boot, recovery, image, restore, file, system, environmental, varible, manual, manual boot recovery 
+summary: FAS2700 システムの USB ドライブからONTAPリカバリ イメージを起動して、ブート メディアを復元します。FAS2700 システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
 = リカバリイメージのブート- FAS2700
 :allow-uri-read: 
@@ -11,6 +11,10 @@ summary: ONTAP イメージを USB ドライブからブートし、ファイル
 
 
 [role="lead"]
+FAS2700 システムの USB ドライブからONTAPリカバリ イメージを起動して、ブート メディアを復元します。この手順には、USB フラッシュ ドライブからの起動、ファイル システムの復元、環境変数の検証、起動メディアの交換後のコントローラの通常の動作への復帰が含まれます。
+
+FAS2700 システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
+
 ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
 
 .手順

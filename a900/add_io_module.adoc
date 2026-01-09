@@ -232,7 +232,7 @@ I/O モジュールが取り付けられていたスロットを記録してお�
 .アニメーション- I/Oモジュールの取り外しまたは交換
 video::3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6[panopto]
 +
-image:../media/drw_a900_remove_PCIe_module.png["PCIeモジュールの取り外し"]
+image:../media/drw_a900_remove_PCIe_module.svg["PCIeモジュールの取り外し"]
 
 +
 [cols="10,90"]

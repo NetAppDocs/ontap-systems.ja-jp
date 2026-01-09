@@ -1,8 +1,8 @@
 ---
 permalink: fas9000/bootmedia-replace-overview.html 
 sidebar: sidebar 
-keywords: aff a700, fas9000, replace, boot, media, primary, secondary, image, disruptive, nondisruptive 
-summary: ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。ネットワーク構成に応じて、無停止または停止を伴う交換を実行できます。 
+keywords: aff a700, fas9000, replace, boot, media, primary, secondary, image, disruptive, nondisruptive, manual, manual boot recovery 
+summary: 'ブート メディアには、システムの起動時に使用されるプライマリおよびセカンダリのシステム (ブート イメージ) ファイル セットが保存されます。ネットワーク構成に応じて、無停止交換または停止交換のいずれかを実行できます。FAS9000システムは、手動のブート メディア回復手順のみをサポートします。' 
 ---
 = ブートメディアの交換の概要- FAS9000
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: ブートメディアには、システムがブート時に使用す�
 
 
 [role="lead"]
+ブート メディアには、システムの起動時に使用されるプライマリおよびセカンダリのシステム (ブート イメージ) ファイル セットが保存されます。FAS9000システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
+
 ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。ネットワーク構成に応じて、無停止または停止を伴う交換を実行できます。
 
 「 image_xxx.tgz 」を格納できる適切な容量のストレージを搭載した、 FAT32 にフォーマットされた USB フラッシュドライブが必要です。

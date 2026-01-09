@@ -1,8 +1,8 @@
 ---
 permalink: fas2600/bootmedia-encryption-restore.html 
 sidebar: sidebar 
-keywords: fas2600, post boot media replacement steps for okm, nse, and nve 
-summary: 環境変数を確認したら、オンボードキーマネージャ \ （ OKM \ ）、 NetApp Storage Encryption \ （ NSE\ ）、または NetApp Volume Encryption \ （ NVE \ ）が有効になっているシステムに固有の手順を実行する必要があります。 
+keywords: fas2600, post boot media replacement steps for okm, nse, and nve, manual, manual boot recovery 
+summary: 'FAS2600 システムの交換用ブート メディアで暗号化構成を復元します。この手順には、安全なデータ アクセスと適切なシステム操作を確保するために、オンボード キー マネージャー (OKM)、 NetAppストレージ暗号化 (NSE)、またはNetAppボリューム暗号化 (NVE) が有効になっているシステムの交換後の手順を完了することが含まれます。' 
 ---
 = 暗号化のリストア- FAS2600
 :allow-uri-read: 
@@ -11,7 +11,9 @@ summary: 環境変数を確認したら、オンボードキーマネージャ \
 
 
 [role="lead"]
-交換用ブートメディアで暗号化をリストアします。
+FAS2600 システムの交換用ブート メディアで暗号化構成を復元します。この手順には、安全なデータ アクセスと適切なシステム操作を確保するために、オンボード キー マネージャー (OKM)、 NetAppストレージ暗号化 (NSE)、またはNetAppボリューム暗号化 (NVE) が有効になっているシステムの交換後の手順を完了することが含まれます。
+
+FAS2600 システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
 
 キー マネージャーの種類に応じて適切な手順を実行し、システムの暗号化を復元します。システムで使用されているキー マネージャーが不明な場合は、ブート メディアの交換手順の開始時にキャプチャした設定を確認してください。
 

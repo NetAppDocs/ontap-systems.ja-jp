@@ -1,8 +1,8 @@
 ---
 permalink: a300/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
-keywords: aff a300, pre-shutdown checks for onboard encryption keys 
-summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
+keywords: aff a300, pre-shutdown checks for onboard encryption keys, manual, manual boot recovery 
+summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にして、システムで実行されているONTAPのバージョンを確認する必要があります。AFF A300システムは、手動のブート メディア リカバリ手順のみをサポートします。 
 ---
 = 暗号化キーのサポートとステータスの確認- AFF A300
 :allow-uri-read: 
@@ -11,7 +11,9 @@ summary: 障害のあるコントローラをシャットダウンしてオン�
 
 
 [role="lead"]
-ストレージシステムのデータセキュリティを確保するには、暗号化キーのサポートとブートメディアのステータスを確認する必要があります。ONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認し、コントローラをシャットダウンする前にキー管理ツールがアクティブになっているかどうかを確認してください。
+ストレージ システム上のデータ セキュリティを確保するには、ブート メディア上の暗号化キーのサポートとステータスを確認する必要があります。AFF A300システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
+
+ONTAPバージョンがNetApp Volume Encryption (NVE) をサポートしているかどうかを確認し、コントローラをシャットダウンする前にキー マネージャがアクティブかどうかを確認します。
 
 
 

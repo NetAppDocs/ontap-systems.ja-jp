@@ -1,8 +1,8 @@
 ---
 permalink: fas8200/bootmedia-recovery-image-boot-options.html 
 sidebar: sidebar 
-keywords: fas8200, boot the recovery image 
-summary: 障害のあるコントローラをリカバリイメージからブートするための手順 は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。 
+keywords: fas8200, boot the recovery image, manual, manual boot recovery 
+summary: ブート メディアを復元するには、 FAS8200システムの USB ドライブからONTAPリカバリ イメージを起動します。FAS8200 システムは、手動のブート メディア リカバリ手順のみをサポートしています。自動ブート メディア リカバリはサポートされていません。 
 ---
 = リカバリイメージ FAS8200 をブートします
 :allow-uri-read: 
@@ -11,7 +11,9 @@ summary: 障害のあるコントローラをリカバリイメージからブ�
 
 
 [role="lead"]
-障害のあるコントローラをリカバリイメージからブートするための手順 は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。
+FAS8200システムの USB ドライブからONTAPリカバリ イメージを起動して、ブート メディアを復元します。この手順には、USB フラッシュ ドライブからの起動、ファイル システムの復元、環境変数の検証、コントローラを通常の動作に戻すことが含まれ、具体的な手順は、システムが 2 ノードMetroCluster構成であるかどうかによって異なります。
+
+FAS8200システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
 
 
 

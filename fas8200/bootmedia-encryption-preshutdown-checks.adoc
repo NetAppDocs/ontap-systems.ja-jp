@@ -1,8 +1,8 @@
 ---
 permalink: fas8200/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
-keywords: fas8200, pre-shutdown checks for onboard encryption keys 
-summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
+keywords: fas8200, pre-shutdown checks for onboard encryption keys, manual, manual boot recovery 
+summary: FAS8200システム上の障害のあるコントローラをシャットダウンする前に、暗号化キーのサポートとステータスを確認してください。FAS8200システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
 = 暗号化キーのサポートとステータスの確認- FAS8200
 :allow-uri-read: 
@@ -11,7 +11,9 @@ summary: 障害のあるコントローラをシャットダウンしてオン�
 
 
 [role="lead"]
-ストレージシステムのデータセキュリティを確保するには、暗号化キーのサポートとブートメディアのステータスを確認する必要があります。ONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認し、コントローラをシャットダウンする前にキー管理ツールがアクティブになっているかどうかを確認してください。
+FAS8200システム上の障害のあるコントローラをシャットダウンする前に、暗号化キーのサポートとステータスを確認してください。この手順には、 ONTAPバージョンとNetApp Volume Encryption (NVE) の互換性の確認、キー マネージャ構成の検証、ブート メディア リカバリ中のデータ セキュリティを確保するための暗号化情報のバックアップが含まれます。
+
+FAS8200システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
 
 
 

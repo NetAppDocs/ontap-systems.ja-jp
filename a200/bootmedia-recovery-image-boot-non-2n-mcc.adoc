@@ -1,7 +1,7 @@
 ---
 permalink: a200/bootmedia-recovery-image-boot-non-2n-mcc.html 
 sidebar: sidebar 
-keywords: aff a200, verify environment variables, image, boot the recovery image 
+keywords: aff a200, verify environment variables, image, boot the recovery image, manual, manual boot recovery 
 summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
 = リカバリイメージ AFF A200 をブートします
@@ -11,7 +11,7 @@ summary: ONTAP イメージを USB ドライブからブートし、ファイル
 
 
 [role="lead"]
-ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
+USB ドライブからONTAPイメージを起動し、ファイル システムを復元し、環境変数を確認する必要があります。AFF A200システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
 
 .手順
 . LOADER プロンプトから、 USB フラッシュドライブ「 boot_recovery 」からリカバリ・イメージをブートします

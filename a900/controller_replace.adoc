@@ -30,7 +30,7 @@ video::30337552-b10f-4146-9bdb-adf2000df5bd[panopto]
 .アニメーション-コントローラを取り外します
 video::256721fd-4c2e-40b3-841a-adf2000df5fa[panopto]
 +
-image::../media/drw_a900_remove_PCM.png[コントローラを解放します。]
+image::../media/drw_a900_remove_PCM.svg[コントローラを解放します。]
 
 +
 [cols="1,4"]
@@ -56,7 +56,7 @@ image:../media/icon_round_2.png["番号2"]
 
 . コントローラモジュールのふた側を上にして、平らで安定した場所に置きます。カバーの青いボタンを押し、コントローラモジュールの背面にカバーをスライドさせてから、カバーを上に動かしてコントローラモジュールから外します。
 +
-image::../media/drw_a900_PCM_open.png[カバーを持ち上げてコントローラモジュールから取り外します。]
+image::../media/drw_a900_PCM_open.svg[カバーを持ち上げてコントローラモジュールから取り外します。]
 
 
 
@@ -78,7 +78,7 @@ image:../media/icon_round_1.png["番号1"]
 
 . 次の図またはコントローラモジュールの FRU マップを使用して、ブートメディアの場所を確認します。
 +
-image::../media/drw_a900_remove_boot_dev.png[ブートメディアを取り外します。]
+image::../media/drw_a900_remove_boot_dev.svg[ブートメディアを取り外します。]
 
 +
 [cols="1,4"]
@@ -129,7 +129,7 @@ NOTE: Ver2コントローラに搭載されているDIMMソケットの数が少
 IMPORTANT: DIMM 回路基板のコンポーネントに力が加わらないように、 DIMM の両端を慎重に持ちます。
 
 +
-image::../media/drw_a900_replace_PCM_dimms.png[DIMMの取り外し]
+image::../media/drw_a900_replace_PCM_dimms.svg[DIMMの取り外し]
 
 +
 [cols="1,4"]
@@ -188,7 +188,7 @@ NOTE: システムのブート時にシステムファームウェアが更新�
 .アニメーション-コントローラを取り付けます
 video::099237f3-d7f2-4749-86e2-adf2000df53c[panopto]
 +
-image::../media/drw_a900_remove_PCM.png[コントローラを解放します。]
+image::../media/drw_a900_remove_PCM.svg[コントローラを解放します。]
 
 +
 [cols="1,4"]
