@@ -37,5 +37,7 @@ indexpage:
       url: "../afx-1k/io-module-overview.html"
     - title: I/O モジュールを追加します
       url: "../afx-1k/io-module-add.html"
+    - title: ホット スワップI/Oモジュール
+      url: "../afx-1k/io-module-hotswap.html"
     - title: I/Oモジュールの交換
       url: "../afx-1k/io-module-replace.html"

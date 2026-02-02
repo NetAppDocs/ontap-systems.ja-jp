@@ -11,4 +11,4 @@ summary: このワークシートを使用して、 ONTAP クラスタの構成�
 
 
 [role="lead"]
-を使用できます link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["クラスタ設定ワークシート"] ONTAP クラスタを構成する際に必要となるサイト固有の IP アドレスやその他の情報を収集して記録する。
+link:https://docs.netapp.com/us-en/ontap/software_setup/gather_cluster_setup_information.html["クラスタ設定ワークシート"]を使用して、ONTAPクラスタを構成するときに必要なサイト固有のIPアドレスやその他の情報を収集および記録できます。

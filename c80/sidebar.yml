@@ -103,6 +103,8 @@ entries:
       url: "/c80/io-module-overview.html"
     - title: I/O モジュールを追加します
       url: "/c80/io-module-add.html"
+    - title: ホット スワップI/Oモジュール
+      url: "/c80/io-module-hotswap.html"
     - title: I/Oモジュールの交換
       url: "/c80/io-module-replace.html"
   - title: 電源装置

@@ -97,12 +97,14 @@ entries:
   - title: NVハツテリ
     url: "/a1k/nvdimm-battery-replace.html"
   - title: I/O モジュール
-    pdf-filename: A1K I/Oモジュール
+    pdf-filename: AFF A1K I/Oモジュール
     entries:
     - title: I/Oモジュールの概要
       url: "/a1k/io-module-overview.html"
     - title: I/O モジュールを追加します
       url: "/a1k/io-module-add.html"
+    - title: ホット スワップI/Oモジュール
+      url: "/a1k/io-module-hotswap.html"
     - title: I/Oモジュールの交換
       url: "/a1k/io-module-replace.html"
   - title: 電源装置

@@ -1,0 +1,108 @@
+= 
+:allow-uri-read: 
+
+
+障害が発生した I/O モジュールを安全に取り外せるように、ストレージ システムと I/O モジュール スロットを準備します：
+
+.手順
+. 自身の適切な接地対策を行います
+. 故障した I/O モジュールからケーブルを取り外します。
++
+この手順の後半で同じポートに再接続できるように、ケーブルに必ずラベルを付けてください。
+
++
+[NOTE]
+====
+I/O モジュールは障害状態（ポートはリンク ダウン状態）にあるはずですが、リンクがまだアップ状態であり、そこに機能している最後のクラスタ ポートが含まれている場合は、ケーブルを取り外すと自動テイクオーバーがトリガーされます。
+
+この手順を続行する前に、ケーブルを外してから5分間待って、テイクオーバーまたはLIFフェイルオーバーが完了していることを確認してください。
+
+====
+. AutoSupportが有効になっている場合は、AutoSupportメッセージを呼び出してケースの自動作成を停止します。
++
+`system node autosupport invoke -node * -type all -message MAINT=<number of hours down>h`
+
++
+たとえば、次のAutoSupportメッセージは、自動ケース作成を 2 時間抑制します。
+
++
+`node2::> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. ストレージ システムで実行されている ONTAP のバージョンとコントローラの状態に応じて、自動ギブバックを無効にします。
++
+[cols="1,2,3"]
+|===
+| ONTAP バージョン | 状況 | 作業 
+
+
+ a| 
+9.17.1または9.18.1RC
+ a| 
+障害のあるコントローラが正常なコントローラを自動的にテイクオーバーした場合
+ a| 
+自動ギブバックを無効にする:
+
+.. 障害のあるコントローラのコンソールから次のコマンドを入力します
++
+`storage failover modify -node local -auto-giveback false`
+
+.. 入力 `y`「自動ギブバックを無効にしますか?」というプロンプトが表示されたら、
+
+
+
+
+ a| 
+9.18.1GA以降
+ a| 
+どちらかのコントローラが自動的にパートナー コントローラを引き継いだ場合
+ a| 
+自動ギブバックを無効にする:
+
+.. パートナーを引き継いだコントローラのコンソールから次のコマンドを入力します：
++
+`storage failover modify -node local -auto-giveback false`
+
+.. 入力 `y`「自動ギブバックを無効にしますか?」というプロンプトが表示されたら、
+
+
+
+
+ a| 
+9.18.1GA以降
+ a| 
+両方のコントローラが起動し、I/O（データの提供）を実行しています
+ a| 
+次の手順に進みます。
+
+|===
+. 障害が発生した I/O モジュールをサービスから削除し、電源をオフにして、取り外す準備をします：
++
+.. 次のコマンドを入力します。
++
+`system controller slot module remove -node _impaired_node_name_ -slot _slot_number_`
+
+.. 入力 `y`「続行しますか?」というプロンプトが表示されたら
++
+たとえば、次のコマンドは、ノード 2（障害のあるコントローラ）のスロット 4 にある障害のあるモジュールを取り外す準備をし、安全に取り外せることを示すメッセージを表示します：
+
++
+[listing]
+----
+node2::> system controller slot module remove -node node2 -slot 4
+
+Warning: IO_2X_100GBE_NVDA_NIC module in slot 4 of node node2 will be powered off for removal.
+
+Do you want to continue? {y|n}: y
+
+The module has been successfully removed from service and powered off. It can now be safely removed.
+----
+
+
+. 障害が発生した I/O モジュールの電源がオフになっていることを確認します：
++
+`system controller slot module show`
+
++
+出力には、障害が発生したモジュールとそのスロット番号の `_status_`列に `_powered-off_`が表示されます。
+
+

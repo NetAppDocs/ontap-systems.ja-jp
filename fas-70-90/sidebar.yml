@@ -104,6 +104,8 @@ entries:
       url: "/fas-70-90/io-module-overview.html"
     - title: I/O モジュールを追加します
       url: "/fas-70-90/io-module-add.html"
+    - title: ホット スワップI/Oモジュール
+      url: "/fas-70-90/io-module-hotswap.html"
     - title: I/Oモジュールの交換
       url: "/fas-70-90/io-module-replace.html"
   - title: 電源装置
