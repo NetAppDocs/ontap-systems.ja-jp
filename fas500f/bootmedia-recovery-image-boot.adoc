@@ -1,0 +1,109 @@
+---
+permalink: fas500f/bootmedia-recovery-image-boot.html 
+sidebar: sidebar 
+keywords: fas500f, boot the recovery image 
+summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
+---
+= USBドライブからの手動ブートメディアリカバリ - FAS500f
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+新しいブートメディアデバイスをFAS500fシステムにインストールしたら、USB ドライブからリカバリ イメージを起動し、パートナー ノードから構成を復元できます。
+
+ストレージ システムで ONTAP 9.18.1 以降が実行されている場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"]を使用します。システムで以前のバージョンの ONTAP が実行されている場合は、手動ブート リカバリ手順を使用する必要があります。
+
+.作業を開始する前に
+* コンソールが障害のあるコントローラーに接続されていることを確認します。
+* リカバリイメージが保存された USB フラッシュ ドライブがあることを確認します。
+* システムで暗号化が使用されているかどうかを判断します。暗号化が有効になっているかどうかに応じて、手順 3 で適切なオプションを選択する必要があります。
+
+
+.手順
+. 障害のあるコントローラの LOADER プロンプトから、USB フラッシュ ドライブからリカバリ イメージを起動します。
++
+`boot_recovery`
+
++
+リカバリイメージは USB フラッシュ ドライブからダウンロードされます。
+
+. プロンプトが表示されたら、画像の名前を入力するか、*Enter* キーを押して括弧内に表示されるデフォルトの画像を受け入れます。
+. ONTAPバージョンの手順を使用して、var ファイル システムを復元します。
++
+[role="tabbed-block"]
+====
+.ONTAP 9.16.0 以前
+--
+障害のあるコントローラーとパートナー コントローラーで次の手順を実行します。
+
+.. *障害のあるコントローラーの場合:* 押す `Y`見ると `Do you want to restore the backup configuration now?`
+.. *障害のあるコントローラーの場合:* プロンプトが表示されたら、 `Y` _/etc/ssh/ssh_host_ecdsa_key_ を上書きします。
+.. *パートナー コントローラで:* 障害のあるコントローラを高度な権限レベルに設定します。
++
+`set -privilege advanced`
+
+.. *パートナー コントローラーで:* 復元バックアップ コマンドを実行します。
++
+`system node restore-backup -node local -target-address _impaired_node_IP_address_`
+
++
+
+NOTE: 復元成功以外のメッセージが表示された場合は、 NetAppサポートにお問い合わせください。
+
+.. *パートナー コントローラで:* 管理者レベルに戻ります:
++
+`set -privilege admin`
+
+.. *障害のあるコントローラーの場合:* 押す `Y`見ると `Was the restore backup procedure successful?`
+.. *障害のあるコントローラーの場合:* 押す `Y`見ると `...would you like to use this restored copy now?`
+.. *障害のあるコントローラーの場合:* 押す `Y`再起動を求められたら、 `Ctrl-C`ブートメニューが表示されたら。
+.. *障害のあるコントローラーで:* 次のいずれかを実行します。
++
+*** システムで暗号化が使用されていない場合は、ブート メニューから [オプション 1 通常ブート] を選択します。
+*** システムが暗号化を使用している場合は、link:bootmedia-encryption-restore.html["アンコウカノ"] 。
+
+
+
+
+--
+.ONTAP 9.16.1以降
+--
+障害のあるコントローラーで次の手順を実行します。
+
+.. バックアップ設定の復元を求めるプロンプトが表示されたら、と入力し `Y`ます。
++
+復元手順が成功すると、次のメッセージが表示されます。 `syncflash_partner: Restore from partner complete`
+
+.. プレス `Y`バックアップの復元が成功したかどうかを確認するプロンプトが表示されたら。
+.. プレス `Y`復元された構成を使用するように求められた場合。
+.. プレス `Y`ノードを再起動するように求められた場合。
+.. プレス `Y`再起動を求められた場合は、 `Ctrl-C`ブートメニューが表示されたら。
+.. 次のいずれかを実行します。
++
+*** システムで暗号化が使用されていない場合は、ブート メニューから [オプション 1 通常ブート] を選択します。
+*** システムが暗号化を使用している場合は、link:bootmedia-encryption-restore.html["アンコウカノ"] 。
+
+
+
+
+--
+====
+. パートナーコントローラにコンソールケーブルを接続します。
+. コントローラのストレージをギブバックして、コントローラを通常動作に戻します。
++
+`storage failover giveback -fromnode local`
+
+. 自動ギブバックを無効にした場合は、再度有効にします。
++
+`storage failover modify -node local -auto-giveback true`
+
+. AutoSupportが有効になっている場合は、ケースの自動作成をリストアします。
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+
+.次の手順
+リカバリイメージを起動したら、を実行する必要がありlink:bootmedia-encryption-restore.html["ブートメディアで暗号化をリストアする"]ます。

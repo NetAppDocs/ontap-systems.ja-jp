@@ -1,7 +1,7 @@
 ---
 permalink: a250/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
-keywords: aff a250, check onboard encryption keys as needed 
+keywords: aff a250, pre-shutdown checks for onboard encryption keys 
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
 = 暗号化キーのサポートとステータスの確認- AFF A250
@@ -11,7 +11,9 @@ summary: 障害のあるコントローラをシャットダウンしてオン�
 
 
 [role="lead"]
-ストレージシステムのデータセキュリティを確保するには、暗号化キーのサポートとブートメディアのステータスを確認する必要があります。ONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認し、コントローラをシャットダウンする前にキー管理ツールがアクティブになっているかどうかを確認してください。
+AFF A250 ストレージ システムのデータ セキュリティを確保するには、ブート メディアでの暗号化キーのサポートとステータスを確認する必要があります。ONTAP バージョンが NetApp Volume Encryption（NVE）をサポートしているかどうかを確認し、コントローラーをシャットダウンする前に、キー マネージャーがアクティブかどうかを確認します。
+
+ストレージ システムで ONTAP 9.18.1 以降が実行されている場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"]を使用します。システムで以前のバージョンの ONTAP が実行されている場合は、手動ブート リカバリ プロセスを使用する必要があります。
 
 
 
@@ -207,3 +209,6 @@ NOTE: これは、オンボード キー マネージャーを最初に構成し
 --
 ====
 
+
+.次の手順
+ブートメディアで暗号化キーのサポートとステータスを確認したら、を実行する必要がありますlink:bootmedia-shutdown.html["コントローラをシャットダウン"]。

@@ -1,0 +1,14 @@
+---
+permalink: asa250/bootmedia-complete-rma-bmr.html 
+sidebar: sidebar 
+keywords: asa a250, complete the replacement process 
+summary: 部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。 
+---
+= 障害が発生したブートメディアをNetApp - ASA A250に返却
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA A250 システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。詳細については、 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]ページを参照してください。

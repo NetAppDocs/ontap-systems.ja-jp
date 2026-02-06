@@ -1,0 +1,44 @@
+---
+permalink: c250/bootmedia-replace-workflow.html 
+sidebar: sidebar 
+keywords: aff c250, replace the boot media 
+summary: AFF C250 ストレージ システムのブート メディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージのブート、暗号化の復元、およびシステム機能の検証を行います。 
+---
+= ブートメディアの手動回復ワークフロー - AFF C250
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFF C250 ストレージ システムのブート メディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージのブート、暗号化の復元、およびシステム機能の検証を行います。
+
+ストレージ システムで ONTAP 9.18.1 以降が実行されている場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"]を使用します。システムで以前のバージョンの ONTAP が実行されている場合は、手動ブート リカバリ手順を使用する必要があります。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:bootmedia-replace-requirements.html["ブートメディア要件を確認"]
+[role="quick-margin-para"]
+ブートメディアの交換要件を確認します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:bootmedia-encryption-preshutdown-checks.html["暗号化キーのサポートおよびステータスの確認"]
+[role="quick-margin-para"]
+システムでセキュリティキー管理機能が有効になっているか暗号化されたディスクがあるかを確認します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:bootmedia-shutdown.html["コントローラをシャットダウン"]
+[role="quick-margin-para"]
+ブートメディアの交換が必要になったときは、コントローラをシャットダウンします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:bootmedia-replace.html["ブートメディアの交換"]
+[role="quick-margin-para"]
+障害が発生したブートメディアをシステム管理モジュールから取り外し、交換用ブートメディアを取り付けてから、USBフラッシュドライブを使用してONTAPイメージを転送します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:bootmedia-recovery-image-boot.html["リカバリイメージをブートします"]
+[role="quick-margin-para"]
+USBドライブからONTAPイメージをブートし、ファイルシステムをリストアして、環境変数を確認します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"]link:bootmedia-encryption-restore.html["アンコウカノ"]
+[role="quick-margin-para"]
+ONATPブート メニューからオンボード キー マネージャ構成または外部キー マネージャを復元します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["7"]link:bootmedia-complete-rma.html["障害のあるパーツをネットアップに返却します"]
+[role="quick-margin-para"]
+障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。

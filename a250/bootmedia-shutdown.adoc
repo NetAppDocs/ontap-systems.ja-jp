@@ -1,20 +1,24 @@
 ---
 permalink: a250/bootmedia-shutdown.html 
 sidebar: sidebar 
-keywords: aff a250, shutdown 
+keywords: aff a250, shut down the controller 
 summary: NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。 
 ---
-= コントローラをシャットダウンします（ AFF A250 ）
+= 手動ブートメディアリカバリのためにコントローラをシャットダウンします - AFF A250
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
+[role="lead"]
+AFF A250 ストレージ システムで障害のあるコントローラをシャットダウンして、自動ブート メディア リカバリ プロセス中のデータ損失を防ぎ、システムの安定性を維持します。
+
+ストレージ システムで ONTAP 9.18.1 以降が実行されている場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"]を使用します。システムで以前のバージョンの ONTAP が実行されている場合は、手動ブート リカバリ手順を使用する必要があります。
+
 
 
 == オプション 1 ：ほとんどのシステム
 
-[role="lead"]
 NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。
 
 .手順
@@ -56,9 +60,7 @@ NOTE: ブートデバイスが壊れているか機能していない場合、�
 
 
 
-== オプション 2 ： MetroCluster 内のシステム
-
-NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。
+== オプション 2 ：システムが MetroCluster に含まれている
 
 
 NOTE: 2 ノード MetroCluster 構成のシステムでは、この手順を使用しないでください。
@@ -105,3 +107,6 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 
 |===
 
+
+.次の手順
+コントローラをシャットダウンしたら、を実行する必要がありlink:bootmedia-replace.html["ブートメディアの交換"]ます。

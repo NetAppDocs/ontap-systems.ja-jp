@@ -78,10 +78,7 @@ ASA A400システムに新しいブートメディアデバイスをインスト
 
 NOTE: システムがキー マネージャーの構成を識別できない場合は、エラー メッセージが表示され、キー マネージャーが構成されているかどうか、およびそのタイプ (オンボードまたは外部) を確認するように求められます。プロンプトに答えて続行します。
 
-
-
-[[restore-key-manager]]
-. 構成に適した手順を使用してキー マネージャーを復元します。
+. [[restore-key-manager]] 設定に応じて適切な手順を使用してキー マネージャをリストアします：
 +
 [role="tabbed-block"]
 ====
@@ -293,8 +290,7 @@ LOADER-B>
 ====
 
 
-[[reenable-auto-giveback]]
-. 自動ギブバックを無効にした場合は、再度有効にします。
+. [[reenable-auto-giveback]]自動ギブバックが無効になっている場合は、再度有効にします：
 +
 `storage failover modify -node local -auto-giveback true`
 

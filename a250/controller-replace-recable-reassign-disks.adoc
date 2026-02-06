@@ -11,6 +11,8 @@ summary: ストレージを再度ケーブル接続し、ディスクの再割�
 
 
 [role="lead"]
+A250 システムの復元とシステム構成の確認が完了したら、システムのケーブルを再接続し、ディスクを再割り当てする必要があります。
+
 ストレージを再接続し、ディスクの再割り当てを確認して、交換用手順を続行します。
 
 
@@ -144,3 +146,6 @@ dr-group-id            cluster node           configuration-state
 . 各コントローラに、想定されるボリュームが存在することを確認します。 vol show -node node-name
 . リブート時の自動テイクオーバーを無効にした場合は、正常なコントローラで storage failover modify -node replacement-node-name -onreboot true を有効にします
 
+
+.次の手順
+システムのケーブルを繋ぎ直し、ディスクを再割り当てした後は、link:controller-replace-restore-system-rma.html["コントローラの交換後の処理"]。

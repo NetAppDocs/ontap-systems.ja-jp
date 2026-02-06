@@ -4,14 +4,16 @@ sidebar: sidebar
 keywords: aff a250, boot the recovery image 
 summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
-= リカバリイメージ AFF A250 を起動します
+= USBドライブからの手動ブートメディアリカバリ - AFF A250
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-システムに新しいブートメディアデバイスを取り付けたら、リカバリイメージをUSBドライブからブートし、パートナーノードから設定をリストアできます。
+新しいブートメディアデバイスをAFF A250システムにインストールしたあとは、USBドライブからリカバリイメージを起動し、パートナーノードから構成を復元できます。
+
+ストレージ システムで ONTAP 9.18.1 以降が実行されている場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"]を使用します。システムで以前のバージョンの ONTAP が実行されている場合は、手動ブート リカバリ手順を使用する必要があります。
 
 .作業を開始する前に
 * コンソールが障害のあるコントローラーに接続されていることを確認します。
@@ -102,3 +104,6 @@ NOTE: 復元成功以外のメッセージが表示された場合は、 NetApp�
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
+
+.次の手順
+リカバリイメージを起動したら、を実行する必要がありlink:bootmedia-encryption-restore.html["ブートメディアで暗号化をリストアする"]ます。

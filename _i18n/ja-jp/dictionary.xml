@@ -92,7 +92,6 @@
   <block id="561273ebb17be6fcb781473771bc32cb" category="summary">ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用してシステムの初期設定を行う例を紹介するビデオを 2 種類紹介します。</block>
   <block id="9ed9163b4599600e6378be760fd75fa8" category="paragraph">次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。</block>
   <block id="0f9b7af429c6f61cb54f2dc7fb47b9a6" category="summary">システムを完全に動作状態に戻すには、 NetApp Storage Encryption の構成をリストアし（必要な場合）、新しいコントローラのライセンスをインストールし、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。テクニカルサポートにお問い合わせください<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>RMA 番号を確認する場合や、交換用手順にサポートが必要な場合は、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。</block>
-  <block id="1f684a558f672dca1e5cd104fa082470" category="doc">システムの復元の完了 - AFF A250</block>
   <block id="2d8b1cc5d54ecd8a729105fdf07054a0" category="section-title">手順 1 ：交換用ノードのライセンスを ONTAP にインストールする</block>
   <block id="f29590bcbb1621777529a668ca509dc2" category="paragraph">障害ノードが標準（ノードロック）ライセンスを必要とする ONTAP 機能を使用していた場合は、 _replacement node に新しいライセンスをインストールする必要があります。標準ライセンスを使用する機能では、クラスタ内の各ノードにその機能用のキーが必要です。</block>
   <block id="78c86c2b740081805f1ff45f9720ce43" category="paragraph">ライセンスキーは 28 文字の形式です。</block>
@@ -205,7 +204,6 @@
   <block id="6363c92adb40c2ba77ac54d58c15a070" category="list-text">ファンモジュールを交換用コントローラモジュールに移動し、ファンモジュールの端をコントローラモジュールの開口部に合わせ、ファンモジュールをスライドさせます。</block>
   <block id="48305d46318ca8d808105dab6b4407c9" category="list-text">残りのファンモジュールに対して上記の手順を繰り返します。</block>
   <block id="1229beab8577341c3e1295090613296f" category="section-title">手順 4 ：ブートメディアを移動します</block>
-  <block id="631d48b6a978901aa9dd527f9e0c0de1" category="paragraph">コントローラモジュールのエアダクトの下の AFF A250 には、ブートメディアデバイスが 1 つあります。障害のあるコントローラモジュールから交換用コントローラモジュールにコントローラモジュールを移動する必要があります。</block>
   <block id="208327117af481bf4a428ddcd144a3d8" category="list-text">障害のあるコントローラモジュールから交換用コントローラモジュールへのブートメディアの場所を確認して移動します。</block>
   <block id="378896073d06c35c7666ecc139650bf3" category="cell">障害のあるコントローラモジュールのマザーボードにブートメディアを固定しているネジを外します。</block>
   <block id="42f1d337fd4fa932f99275b46ae051e9" category="paragraph">障害のあるコントローラモジュールからブートメディアを持ち上げて取り出します。</block>
@@ -273,8 +271,6 @@
   <block id="f94cb94350d4ec3469cbd6fbb2b8efb3" category="admonition">ブートプロセス中に、次のプロンプトが表示される場合があります。</block>
   <block id="24718eccce3cd133d143bec81426275c" category="list-text">システム ID が一致していないためにシステム ID の上書きを求める警告プロンプト。</block>
   <block id="b06018bc829da55a1eb1a43b93312dc5" category="summary">ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。</block>
-  <block id="d23cbe6becf6b71df8e4c820a09aed00" category="doc">ブートメディア AFF A250 を交換してください</block>
-  <block id="d3756853c8e6da5920108eeb1441fe5d" category="paragraph">ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。</block>
   <block id="09537cc2e905b0e7d801cf2bc91bc970" category="paragraph">また ' この手順で後で使用するために 'image_xxx.tgz ファイルを USB フラッシュドライブにコピーする必要があります</block>
   <block id="9e4da368384d1c03370d9656905d334a" category="list-text">ブート・メディアを交換するための無停止かつ停止を伴う方法では 'var' ファイル・システムをリストアする必要があります</block>
   <block id="e3d69bf92fbd44d0515cecea3eb337b0" category="list-text">無停止で交換するには 'var' ファイル・システムをリストアするために HA ペアをネットワークに接続する必要があります</block>
@@ -356,7 +352,6 @@
   <block id="a244401e8eeded9376776b9ff1bac8d8" category="list-text">交換用 NV バッテリを静電気防止用の梱包バッグから取り出し、バッテリホルダーの位置に合わせます。</block>
   <block id="400245515ff4c2986fa732ceeaa417da" category="list-text">交換用 NV バッテリプラグをソケットに挿入します。</block>
   <block id="f63424327284890605f150c96c2c4961" category="summary">ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。</block>
-  <block id="5e6435d148cbdc8c0269f95c1ec7b442" category="doc">リカバリイメージ AFF A250 を起動します</block>
   <block id="bf2fbe1a850cb2856c4fface544e0048" category="list-text">LOADER プロンプトから、 USB フラッシュドライブ「 boot_recovery 」からリカバリ・イメージをブートします</block>
   <block id="538f7702f672072f4cb1d69a9141171d" category="paragraph">イメージが USB フラッシュドライブからダウンロードされます。</block>
   <block id="7e61e4a1248684215e1815ac80be3a7f" category="list-text">プロンプトが表示されたら、イメージの名前を入力するか、画面に表示されたデフォルトのイメージをそのまま使用します。</block>
@@ -391,8 +386,6 @@
   <block id="8b8a3688f4f2182a0af8a025c1372f2c" category="list-text">クラスタ・プロンプトで 'net int-is-home false' コマンドを使用して論理インターフェイスを確認します</block>
   <block id="1b470281952c9ece188e5621475c390e" category="paragraph">"false" と表示されているインターフェイスがある場合は、 net int revert コマンドを使用して、これらのインターフェイスをホームポートに戻します。</block>
   <block id="071b32df7c397d7ef55dec3206105d81" category="list-text">コンソールケーブルを修復されたノードに移動し、「 version-v 」コマンドを実行して ONTAP のバージョンを確認します。</block>
-  <block id="90c199012ac637bad1cb7c2a835f5acd" category="doc">障害のある部品は NetApp-AFF A250 に返却してください</block>
-  <block id="7c323e2eb49745018682c538529f7337" category="paragraph">次のビデオまたは表に示す手順を使用して、シャーシを交換できます。この手順は、ベゼルの取り外しと交換を前提としています。</block>
   <block id="a5f08fde11dbf730684ed691fc182e15" category="summary">このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。</block>
   <block id="350cd17d7031de85301f98a531f45f4c" category="paragraph">設置およびセットアップ手順 _PDF ポスター：</block>
   <block id="687423a0d05ad428110ae922c0e5d086" category="inline-link">AFF A250 のセットアップガイド</block>
@@ -421,7 +414,6 @@
   <block id="fabbcb146de0da3e22bb94b685b39c48" category="list-text">必要に応じて、「 set time hh ： mm ： ss 」コマンドを使用して、時刻を GMT で設定します。</block>
   <block id="c1a6139ecdefcb494c53fdbb3ab9ad45" category="list-text">ターゲットノードの日時を確認します。</block>
   <block id="6fd020c94f846c70205dc7bee6665357" category="list-text">LOADER プロンプトで「 bye 」と入力して、 PCIe カードおよびその他のコンポーネントを再初期化し、ノードをリブートさせます。</block>
-  <block id="9abc3ad77a4002fd491b39b23515a992" category="doc">復元と交換のプロセスを完了します（ AFF A250 ）</block>
   <block id="8507c94c124586b53f61fef1fe9f8fe8" category="section-title">手順 1 ：シャーシの HA 状態を確認して設定します</block>
   <block id="33898f2b0901ae118cff99b50f8848b8" category="paragraph">シャーシの HA 状態を確認し、必要に応じてシステム構成に合わせて更新する必要があります。</block>
   <block id="5ea1825dfe698bdb7cf7ba6f0b41458d" category="list-text">メンテナンスモードでは、いずれかのコントローラモジュールから、ローカルコントローラモジュールとシャーシの HA 状態を表示します。「 ha-config show 」</block>
@@ -1464,7 +1456,6 @@
   <block id="7f162e118d7c5841e35145af500cfea2" category="section-title">手順 10 ：コントローラモジュールを取り付ける</block>
   <block id="92cadc5fd1d76419c4c16ddc63416c45" category="list-text">ケーブルマネジメントデバイスに接続しているケーブルをまとめているフックとループストラップを緩め、システムケーブルをコントローラモジュールから外し、どのケーブルが何に接続されていたかを記録します。</block>
   <block id="ea00def363aacc8779f9b5afd4cc8812" category="doc">システム構成を復元して確認します（ AFF A800 ）</block>
-  <block id="fd1cff0abcf1ef0e075b330e2ee360fe" category="doc">リストアと交換のプロセスを完了します（ AFF A800 ）</block>
   <block id="2bb6eb6e274e403747742b20b6b76f1a" category="doc">リアルタイムクロックバッテリ AFF A800 を交換してください</block>
   <block id="92a1e44c6fd05cd1ba8ab2abf944200f" category="paragraph">ライザー 2 （中央）のロックラッチ</block>
   <block id="5d32a38a1b041424ab4d21535c31e0b6" category="section-title">手順 4 ： RTC バッテリを交換します</block>
@@ -2056,7 +2047,6 @@
   <block id="02b3dac5d46f2e577325711400925ec7" category="list-text">NetApp ONTAP 構成ガイドを確認して、必要な情報を収集します。</block>
   <block id="598ec2ec2714b9a699a42898b690e48d" category="section-title">オプション 1 ：コントローラを SAS ドライブシェルフにケーブル接続します</block>
   <block id="16319414c65274d365d86327a61ef5dc" category="doc">AFF および FAS システムのマニュアル</block>
-  <block id="46b673e11c982206be30f1a0d6d4bde7" category="doc">システムのリストアを完了する - FAS500f</block>
   <block id="1661dbd7e15cf50b73ab10b3561b2d66" category="paragraph">次のビデオまたは表に示す手順を使用して、電源装置を交換できます。</block>
   <block id="45449a9f8518fdccf3609592bca3388a" category="list-text"><block ref="45449a9f8518fdccf3609592bca3388a" category="inline-link-macro-rx"></block></block>
   <block id="fcc432315143968a857131ca40e0a000" category="list-text"><block ref="fcc432315143968a857131ca40e0a000" category="inline-link-macro-rx"></block></block>
@@ -2066,10 +2056,7 @@
   <block id="139b85a2da5c2f7968fae24f14c3ed09" category="inline-link">FAS500f 『 Installation and Setup Instructions 』</block>
   <block id="dae1434e283524bee3110823c8eb7212" category="inline-link">FAS500f システム『 Installation and Setup Instructions 』</block>
   <block id="0ce2a0e29499223b29490143e42e0e0e" category="list-text">障害のあるコントローラが実行していたバージョンの ONTAP イメージのコピー。ネットアップサポートサイトの「 * Downloads * 」セクションから適切なイメージをダウンロードできます</block>
-  <block id="2685cb32d91e3c7296420631a7066229" category="paragraph">次のビデオまたは表に示す手順を使用して、コントローラモジュールを交換できます。</block>
-  <block id="616af20769d44e43520152460f655603" category="doc">ハードウェア FAS500f を移動して交換します</block>
   <block id="49cc582b0e041effb99494704c8f0963" category="doc">システム構成をリストアして検証します（ FAS500f ）</block>
-  <block id="6730578f02ba32c4ccfb1acc3e8ab367" category="doc">リストアと交換のプロセスを完了します。 FAS500f</block>
   <block id="8ccd613e52111dc677242b19a2aa7a2e" category="paragraph">次のビデオまたは表に示す手順を使用して、 RTC バッテリを交換できます。</block>
   <block id="ec7e85334c776a46034b2a858d884799" category="cell">タブをバッテリケースからゆっくりと引き出します。注：強く引き出すと、タブが外れてしまう可能性があります。</block>
   <block id="a81df2e570dc98493762bda80de1eb57" category="paragraph">バッテリを持ち上げます。</block>
@@ -2077,7 +2064,6 @@
   <block id="326f84612308aa43b411fe6225835ced" category="paragraph">バッテリをゆっくりと所定の位置に押し込み、タブでケースに固定されていることを確認します。</block>
   <block id="3b9e3b1b2ab53b0241dc5867f9200f0f" category="section-title">手順 5 ：交換プロセスを完了します</block>
   <block id="f201ab41a4eb414e420e16dba34a7cfc" category="doc">システムにケーブルを再接続し、ディスクを再割り当てします。 FAS500f</block>
-  <block id="a2eee56e65b85ca98cf164fa99598b1b" category="doc">リカバリイメージ FAS500f をブートします</block>
   <block id="26b459a4766f77a1bec60418a8e392d1" category="list-text">LOADER プロンプトで、 USB フラッシュドライブからリカバリイメージをブートします。</block>
   <block id="75037510df4619ff0448fd0beadedb4d" category="paragraph">'*boot_recovery*</block>
   <block id="95408ece8c23cd5f2a24760856f4819e" category="paragraph">障害が発生したファンを新しいファンモジュールと交換します。</block>
@@ -3738,7 +3724,6 @@
   <block id="0505c366cf2aa05ef59b3b78f4e74a9f" category="sidebar">AFF A250 のインストールとセットアップ</block>
   <block id="b4de374d75b22d216e3867b88bd708e7" category="sidebar">インストールとセットアップを選択します</block>
   <block id="18733d6bd4b969f880747fde25a787be" category="sidebar">AFF A250 のメンテナンス</block>
-  <block id="3bae9e1248f1827df28a94293f7613f5" category="sidebar">AFF A250 ブートメディア</block>
   <block id="44e5cb60393d7e735de29347758edd23" category="sidebar">オンボード暗号化キーを確認</block>
   <block id="241c179d2adc97920bb3ec4cd2d467aa" category="sidebar">障害のあるコントローラをシャットダウンします</block>
   <block id="90d6224326bc2ce2bada52a2663f2dbe" category="sidebar">ブートメディアを交換します</block>
@@ -3829,7 +3814,6 @@
   <block id="6068fc2d3e06aeff53e2c84fd7bd9e9e" category="sidebar">FAS500f システム</block>
   <block id="d8763c6ad52728ece5b2ff77bdb94ed2" category="sidebar">FAS500f のインストールとセットアップ</block>
   <block id="5e2a7c08e7cea15db838b2247d53da3d" category="sidebar">FAS500f メンテナンス</block>
-  <block id="99a0f2a0385a7c26466f0963e96a5e90" category="sidebar">FAS500f ブートメディア</block>
   <block id="a4e277f1042cc621d82a2ce9d8c30a6a" category="sidebar">FAS500f シャーシ</block>
   <block id="f3faf138ac95d5847a382cb22f207809" category="sidebar">FAS500f コントローラモジュール</block>
   <block id="f32bab2b08e5fc2e905512eaec57f369" category="sidebar">AFF C190 システム</block>
@@ -4039,7 +4023,6 @@
   <block id="e477637685baafe9bbd353f71ef51283" category="paragraph">システムがブートを開始します。初回のブートには最大 8 分かかる場合があります。</block>
   <block id="fe3be7b129e2b9c74abd26381eea72bb" category="cell">タブをバッテリケースからゆっくりと引き出します。* 注意： * 積極的に離れて引き出すと、タブが外れてしまう可能性があります。</block>
   <block id="d61a84f0b033dd225ff9a1af9b0f08a5" category="paragraph">バッテリを持ち上げます。* 注： * バッテリの極の向きをメモしておいてください。</block>
-  <block id="78929efae941c9a4e2fc6993c4c10c4e" category="paragraph">「 image_xxx.tgz 」ファイルを格納できる適切な容量のストレージを搭載した MBR/FAT32 にフォーマットされた USB フラッシュドライブが必要です。</block>
   <block id="f7b32babba20f290222a62a499496335" category="section-title">オプション 2 ： MetroCluster 内のシステム</block>
   <block id="e7d8f45352dfaf66682a4662e11d6c86" category="list-text">を確認します <block ref="571ad76602d16a750ecd1119ab38063c" category="inline-link-macro-rx"></block> およびそのガイドに記載されている必要な情報を収集します。</block>
   <block id="e4e83a2c82324a2a6d5448b03909ecfa" category="paragraph">を使用できます <block ref="b22470d24dd615c99a09a118a80f7353" category="inline-link-macro-rx"></block> セットアップガイドを参照して、新しいシステムを設置してセットアップします。PDF 版ポスターには、ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。</block>
@@ -4252,8 +4235,6 @@
   <block id="b4d2392449336ea5c3bc8befa0e0b844" category="list-text">No.1 磁気ドライバを使用して、障害のあるブートメディアからネジを外し、マグネットの上に安全に置きます。</block>
   <block id="143c767e9327d7fe1aa0dcf0cd8bf42b" category="list-text">No.1 磁気ドライバを使用してコントローラモジュールの前面からネジを外し、マグネットの上に安全に置いておきます。</block>
   <block id="b5bb4830b9cb6cf86cab4203bf9c0ff2" category="list-text">コントローラモジュールの前面からネジを外し、メザニンカードスロットをカバーするカバーを No.1 磁気ドライバを使用して外し、マグネットの上に安全な場所に置きます。</block>
-  <block id="67bbbac5bc6e3d667f32ac654b6a9d3a" category="paragraph">ブートメディアを固定しているネジを外すために、 No.1 プラスドライバが必要です。コントローラモジュール内のスペースに制約があるため、ネジを緩める必要がないように、マグネットが取り付けられている必要があります。</block>
-  <block id="e65c4f5a39a793b014b217f53d825905" category="list-text">コントローラモジュールをシャーシに挿入します。</block>
   <block id="bc6668cc9984ca2f625c085c1e7dbe6c" category="doc">ファンの交換： FAS500f</block>
   <block id="3cb52a5c3c25dcd729403c0c723500bc" category="list-text">「 storage failover show 」 -giveback コマンドを使用して、ギブバック処理の進捗を監視します。</block>
   <block id="4cc5d765a3b2155ab803f6ce50c11747" category="paragraph">storage failover show コマンドの出力には 'System ID changed on partner というメッセージは含まれていません</block>
@@ -4390,11 +4371,6 @@
   <block id="a42edb5535752c77f564dff66261535b" category="doc">コントローラモジュールハードウェア - FAS8200 を交換します</block>
   <block id="8351404e0633e21cf67cb22047391a59" category="doc">ブートメディアの交換 - FAS8200 の概要</block>
   <block id="f8a35054c2c3b7ffbacd941c8bc38831" category="doc">ハードウェア交換 - FAS8200</block>
-  <block id="9bd3c449bc91b7e2a90bbc21bfbd5dcb" category="doc">コントローラモジュールハードウェア AFF A250 を交換してください</block>
-  <block id="7f7c331124950f9557fc856947e5c42f" category="doc">コントローラモジュールの交換の概要 - AFF A250</block>
-  <block id="fa0985de926ce301def780548b1def1b" category="doc">ブートメディアの交換の概要 - AFF A250</block>
-  <block id="894589cfca213bee046082fa6b4377ea" category="doc">シャーシの交換の概要 - AFF A250</block>
-  <block id="a73367a24d737b005906f745ac5c73c2" category="doc">ハードウェアの交換 - AFF A250</block>
   <block id="c0925c06c8c424f377718df251d2ae9f" category="doc">リアルタイムクロックバッテリ -FAS8300 および FAS8700 を交換してください</block>
   <block id="73e891cd10bc7a669d3df2629ca0ed7c" category="doc">NVDIMM - FAS8300 および FAS8700 を交換します</block>
   <block id="25a1b4c8ff5717b58eca78fec7573116" category="doc">シャーシの交換の概要 - FAS8300 および FAS8700</block>
@@ -4420,10 +4396,7 @@
   <block id="c3a9fb901b6e82e19cf5d6be414a5461" category="doc">障害のあるコントローラ FAS2600 をシャットダウンします</block>
   <block id="048623d528706e72f17139851220f65a" category="doc">ブートメディアの交換の概要 - FAS2600</block>
   <block id="3fa677b8ecb97b0ae0d14f9ded5ed49a" category="doc">障害のあるコントローラ FAS500f をシャットダウンします</block>
-  <block id="ee2afac6b0f5165d1fc3096864ac9a41" category="doc">シャーシ交換の概要 - FAS500f</block>
   <block id="2bf23db896fc6ece8a7fd4c8db50ab7d" category="doc">コントローラモジュールの交換 - FAS500f の概要</block>
-  <block id="609f905dd4d82082470b920d9a7de394" category="doc">コントローラモジュールハードウェア FAS500f を交換してください</block>
-  <block id="00399cc3a07fad2f3aadfc84abd6ee65" category="doc">ブートメディア交換の概要 - FAS500f</block>
   <block id="0dfb2568739ce156f475dfddb29e2387" category="doc">シャーシの交換の概要 - AFF A700s</block>
   <block id="09b725ec4b513cf16714e69e0bf388eb" category="doc">コントローラモジュールの交換の概要 - AFF A700s</block>
   <block id="505ba7be41620674b2d6d7caf7f3453d" category="doc">ブートメディアの交換の概要 - AFF A700s</block>
@@ -4527,10 +4500,7 @@
   <block id="82f6c604031bc8c9d9a996a31fa2e842" category="list-text">コントローラが MetroCluster 構成になっている場合は、 MetroCluster の状態に応じて、元の所有者がディザスタサイトのコントローラである場合に DR ホーム ID フィールドにディスクの元の所有者が表示されることを確認します。</block>
   <block id="83df237f35401e5686540721c993131c" category="list-text">replacement _controller は、ディザスタサイトのディスクの現在の所有者です。</block>
   <block id="ce6027c9ce6b680c0adbb4a4d26235ed" category="list-text">システムが MetroCluster 構成になっている場合は、各コントローラが構成されていることを確認します。「 MetroCluster node show -fields configurion-state 」</block>
-  <block id="a99f211848e0a3fa987df05f364dcc0b" category="doc">コントローラをシャットダウンします（ AFF A250 ）</block>
   <block id="3df4b609e8276258189914063ffb17c2" category="list-text">これらの手順のコマンドを正しいコントローラに適用することが重要です。</block>
-  <block id="6ecaf183574ece325cced3bb483dfdf9" category="list-text">impaired_node は、保守を実行しているコントローラです。</block>
-  <block id="d5e5a42c3659480b5bd0d7fe962a3e0d" category="list-text">healthy_node は、障害のあるコントローラの HA パートナーです。</block>
   <block id="852ccbca31b38b90e5621b15b3d30e1b" category="paragraph">障害のあるコントローラをテイクオーバーまたは停止します。「 storage failover takeover -ofnode impaired_node_name _ 」障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C を押し、「 y 」と入力します。</block>
   <block id="bf333756fca94003818a0db8ced6f7d9" category="list-text">ストレージをギブバックして、コントローラを通常の動作に戻します。 storage failover giveback -ofnode `_impaired_node_name _`</block>
   <block id="855366b23fbc8af0c5a01bb5529b380c" category="list-text">交換用の node_name は、障害のあるコントローラに交換する新しいコントローラです。</block>
@@ -4593,7 +4563,6 @@
   <block id="f0623f3de563d7ac67a984a76c53803d" category="paragraph">NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。</block>
   <block id="e935849faf7cd25a183a726f34797bb7" category="doc">コントローラモジュールを交換してください - AFF A300</block>
   <block id="a28455bf2eecf6cc499c335ee152cd75" category="paragraph">次のいずれかのオプションを使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。</block>
-  <block id="3e1047f2ebaed54fe88cc6f78291dbb6" category="doc">ブートメディア FAS500f を交換してください</block>
   <block id="af844de12c61a1b2d86c05934c317256" category="summary">ドライブの交換は、ドライブで障害が発生したことを示す警告メッセージがプラットフォームからシステムコンソールに記録された場合に必要になります。さらに、オペレータ用ディスプレイパネルの障害 LED と、障害が発生したドライブの障害 LED の両方が点灯します。</block>
   <block id="92198152754d5741f3a481c1555464b4" category="doc">SSD ドライブまたは HDD ドライブを交換してください - AFF C190</block>
   <block id="5f807f08fe5525cbcd6708fd63eac203" category="paragraph">I/O の実行中に障害が発生したドライブを無停止で交換できます。SSD の交換用手順 は回転式でないドライブ用、 HDD の交換用手順 は回転式ドライブ用です。</block>
@@ -5107,17 +5076,11 @@
   <block id="35db388e4e99e4a7488ab682126d7fa6" category="doc">NVMEMバッテリを交換します（AFF A150）</block>
   <block id="2867a72512f6330f74fb93ac9f93f07d" category="doc">ハードウェアの移動と交換- AFF A150</block>
   <block id="480828de65d5061e901ac63046040770" category="doc">システムの完全な復元- AFF A150</block>
-  <block id="930fad66fb3a257a1d24f20ac59c003f" category="doc">コントローラモジュールの交換の概要- AFF C250</block>
   <block id="7e48994ab2d6db5f4a1f1971bdb7686f" category="doc">コントローラをシャットダウンします（AFF C250）</block>
-  <block id="094570163b0febbd13eb031d12659f04" category="doc">コントローラモジュールハードウェアを交換してください（AFF C250）</block>
-  <block id="bc845a0c4e457ee657740a9be626eafa" category="doc">システムの復元の完了- AFF C250</block>
-  <block id="094124db560bb515e3d41248ca00f18a" category="doc">ハードウェアを交換します（AFF C250）</block>
   <block id="e2f649ac2d970925993f9e5fb7967c22" category="doc">メザニンカードを交換または取り付けます（AFF C250）</block>
   <block id="cd2699a4d57f54778810b017b2525727" category="doc">ファンを交換してください- AFF C250</block>
-  <block id="3e56ae245ac8653052ca2cbe9766da4b" category="doc">リストアと交換のプロセス（AFF C250）を完了します</block>
   <block id="ff0126462ebf63e99c0e579efb8f1760" category="video-title">アニメーション- AFF C250のインストールとセットアップ</block>
   <block id="bb948df5a06fd8fb2e2b9e9f99cc69d4" category="doc">リカバリイメージ（AFF C250）をブートします</block>
-  <block id="ab8a572131275958428f9007945f684f" category="doc">シャーシの交換の概要- AFF C250</block>
   <block id="7efc07dce9135b59eda99eab451a8d33" category="doc">障害が発生したパーツをNetApp AFF C250に返送します</block>
   <block id="4b244bbe02217e1cc95dfefa194113e0" category="doc">NVMEMバッテリを交換します（AFF C250）</block>
   <block id="9787dc0906e96e78e67df0b3f9dad9a0" category="doc">リアルタイムクロックバッテリを交換してください（AFF C250）</block>
@@ -5139,7 +5102,6 @@
   <block id="38471c9931ce26e5aeb8c80bf6483a48" category="list-text"><block ref="38471c9931ce26e5aeb8c80bf6483a48" category="inline-link-macro-rx"></block></block>
   <block id="82e9cd9a6fede8cb6fa3e276cac9a710" category="list-text"><block ref="82e9cd9a6fede8cb6fa3e276cac9a710" category="inline-link-macro-rx"></block></block>
   <block id="3232f137ca5f81b881073e30f07d4927" category="doc">障害のあるコントローラモジュールをシャットダウンします（AFF C250）</block>
-  <block id="528ac168c6accb2201fcbf9a5baff8a0" category="doc">ブートメディアの交換の概要- AFF C250</block>
   <block id="d01bad26d559eb16c91d450cefe02539" category="doc">リアルタイムクロックバッテリを交換してください（AFF C400）</block>
   <block id="404943d0b155396f410fdc44b57014a3" category="doc">シャーシの交換の概要- AFF C400</block>
   <block id="8403c2aeb3b774ba2a4c036b814a8776" category="doc">リストアと交換のプロセス（AFF C400）を完了します</block>
@@ -5173,8 +5135,6 @@
   <block id="311f323a046afbcf6ce4b152ad2dee93" category="list-text">この手順 は、PSUを1台ずつ交換するためのものです。</block>
   <block id="be0020622e775d64818f3acc7c2d856d" category="admonition">PSUは、シャーシから取り外してから2分以内に交換することを推奨します。システムは引き続き機能しますが、PSUが交換されるまで、ONTAP はデグレード状態のPSUに関するメッセージをコンソールに送信します。</block>
   <block id="e5b2987f321084b00bed28fd97c58226" category="paragraph">お使いのPSUのタイプ（ACまたはDC）に適した手順 を使用してください。</block>
-  <block id="19a7bfc2c20931ac9f3593ce3f8c7632" category="paragraph">次の動画または記載された手順に従って、PSUを交換します。</block>
-  <block id="a2528ca750816c5cbcc2ab1df78a8eb6" category="video-title">アニメーション- AC PSUを交換します</block>
   <block id="ba076df359148e35b1b589b37e5d2faa" category="list-text">コンソールのエラーメッセージまたはPSUの障害LED（赤）から、交換するPSUを特定します。</block>
   <block id="87bf19b9bb87e3527a13e2beb951da0a" category="list-text">PSUを取り外します。</block>
   <block id="d8b3adb935955fae05f64c8de837e522" category="list-text">電源ケーブルの固定クリップを開き、電源ケーブルをPSUから抜きます。</block>
@@ -5308,7 +5268,6 @@
   <block id="368d641430dae2b0a8c7c2bf6311587d" category="sidebar">AFF C250システム</block>
   <block id="5f4343bc91f5884e913fac7fc5ef6879" category="sidebar">AFF C250のインストールとセットアップ</block>
   <block id="6ab6fba62ccec79ff36ba3c0657af4ae" category="sidebar">AFF C250メンテナンス</block>
-  <block id="6d7295bb011b88dfff81fa24b83caee3" category="sidebar">AFF C250ブートメディア</block>
   <block id="c200941f98f365b1ea223e9b5017435c" category="sidebar">AFF C250シャーシ</block>
   <block id="c9ce06c68e758edf256ecf0855912d40" category="sidebar">AFF C250コントローラモジュール</block>
   <block id="6329b1134cd585a80e1c1289687135be" category="sidebar">AFF C400システム</block>
@@ -5980,35 +5939,28 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="cef403fe8ffcaa9e4b76963ad5fbdfd9" category="doc">詳細な手順- ASA A250</block>
   <block id="ae1e0afe4c210d63eb5e26ded871bc01" category="paragraph">このページでは、ASA A250システムの設置手順について詳しく説明します。</block>
   <block id="68fd5ab999461d243b31a922d1452997" category="paragraph">システムをインストールするには、アカウントを作成してシステムを登録する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。</block>
-  <block id="ecb0c9eab141b978f65ad2401df5804b" category="doc">コントローラの交換- ASA A250</block>
   <block id="2fe8ccbf6f953c42d3accff471020e04" category="doc">リアルタイムクロックバッテリを交換してください- ASA A250</block>
   <block id="c7c6a415741d25a1278e3b2feb7ce81f" category="doc">ファンの交換- ASA A250</block>
-  <block id="cfeadcdc6bfe2b6d3f60304f963848e7" category="doc">シャーシの交換の概要- ASA A250</block>
   <block id="657629aaa4f6eab92ab35b33457b8eb6" category="doc">システムをケーブル接続し直してディスクを再割り当て- ASA A250</block>
   <block id="671f9966e0181f08744e85f7b6d01d05" category="summary">ASA A250ハードウェアのメンテナンス</block>
   <block id="8e7a33c44e49f9b5c0e2db2d78219211" category="doc">ASA A250ハードウェアのメンテナンス</block>
   <block id="63c77f3bd33a61dbe342def54e1aaf5b" category="paragraph">ASA A250ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="84fba8bc1002a05a2e1bc0df39a0d311" category="section-title">NVEMハツテリ</block>
-  <block id="290bd37a39561a18b23a42421cfcf3ee" category="doc">コントローラモジュールの交換の概要- ASA A250</block>
   <block id="943cbde5eb2522f265b1edf4f60529fd" category="doc">コントローラのシャットダウン- ASA A250</block>
   <block id="fa26ab686e2bca1aebda5034632821e5" category="doc">NVMEMバッテリの交換- ASA A250</block>
   <block id="b7a0d897933205e6e22755b6d3ed6203" category="list-text"><block ref="b7a0d897933205e6e22755b6d3ed6203" category="inline-link-macro-rx"></block></block>
   <block id="da918dba24d0605714c5840469413769" category="list-text"><block ref="da918dba24d0605714c5840469413769" category="inline-link-macro-rx"></block></block>
   <block id="2b55ecb41a48bac54ca526b7855130de" category="list-text"><block ref="2b55ecb41a48bac54ca526b7855130de" category="inline-link-macro-rx"></block></block>
   <block id="cd6cad2927af0a8738645aef0eddfef3" category="doc">DIMMの交換- ASA A250</block>
-  <block id="d649204274d2da7722da732bfeda71c3" category="doc">概要と要件ASA A250</block>
   <block id="a73823d14db47bd43fd209723a8a0f78" category="doc">システム構成のリストアと確認- ASA A250</block>
   <block id="e6f6041e49a048399457259bb308d074" category="admonition">ASA A250は、AFF A250システムと同じインストール手順を使用します。</block>
-  <block id="65874038049e4c1254e182578d50f9a6" category="doc">システムの完全なリストア- ASA A250</block>
   <block id="247ba1eaff46a863c502ad82319286c6" category="doc">コントローラのシャットダウン- ASA A250</block>
   <block id="465964d20433e41566b91166a85bfb9b" category="doc">メザニンカードの交換または取り付け- ASA A250</block>
   <block id="a39762cd74723b77dcf23c044ca6cfb1" category="doc">SSDドライブまたはHDDドライブの交換- ASA A250</block>
   <block id="e0510602c19834e8bc265ba7efeba84d" category="doc">リカバリイメージのブート- ASA A250</block>
   <block id="b02afbe9444685afbe9c40a3fc3c120a" category="doc">故障した部品をNetApp - ASA A250に返却します。</block>
-  <block id="87583399052bb43b32e2c2ad22bb4fa4" category="doc">シャーシの交換- ASA A250</block>
   <block id="469cc6ed74facdc4a5f00ee2787d50a2" category="doc">クイックステップ- ASA A250</block>
   <block id="af966cb104df88d3a5fee466b27600cb" category="paragraph">このページでは、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順を図で示します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。</block>
-  <block id="8a1d49f42ab77901ac11f0fbf079fe20" category="doc">リストアと交換のプロセスを完了する（ASA A250）</block>
   <block id="832db81167fd84efee6f2f1426f0d945" category="doc">障害のあるコントローラモジュールをシャットダウンします- ASA A250</block>
   <block id="e31f48aed610f4dfc632dee37773ef46" category="section-title">手順7：コントローラモジュールを動作状態に戻す</block>
   <block id="4de03bc95ff205a87859998054c21b43" category="paragraph">コントローラモジュールのコンポーネントを交換したら、コントローラモジュールをシャーシに再度取り付ける必要があります。</block>
@@ -6378,7 +6330,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="04174ca16933f190c875156d1c865a6f" category="sidebar">ASA A250システム</block>
   <block id="49cad51c2467ab7a48a5a714a6b702f9" category="sidebar">ASA A250の設置とセットアップ</block>
   <block id="25bbddb4969df355fec42d7f4381dc50" category="sidebar">ASA A250のメンテナンス</block>
-  <block id="084056583ff04c6f735927c47a55242a" category="sidebar">ASA A250ブートメディア</block>
   <block id="b28accc3473c73d477b9844ebb9c7c59" category="sidebar">ASA A250シャーシ</block>
   <block id="ddc6f1ed71d96b491a0e5bcf24219048" category="sidebar">ASA A250コントローラモジュール</block>
   <block id="40b375b6007e5a697e97e419f1fb91c5" category="sidebar">コントローラ交換後の処理</block>
@@ -6568,23 +6519,16 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="d86ad8650b661d28cc2d4ab2c5649c4a" category="doc">故障した部品をNetApp - ASA C250に返却します。</block>
   <block id="bcf1e5f5ec2f5fa0fb4df4081483cf5a" category="doc">ASA C250ハードウェアのメンテナンス</block>
   <block id="d856c63691d6118cb3531626f4c662b5" category="paragraph">ASA C250ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
-  <block id="778936817303ec79ea5a4c275ed17135" category="doc">シャーシの交換の概要- ASA C250</block>
   <block id="706f40f792c3dab367a62e0d94e461ee" category="doc">メザニンカードの交換または取り付け（ASA C250）</block>
   <block id="8336f1f72044234f7e63ccadc716be3d" category="doc">DIMMの交換- ASA C250</block>
   <block id="bc2311b6a715da1a660ee0a9afd2016e" category="doc">ブートメディアの交換- ASA C250</block>
   <block id="7171d5f82a6b13d62d4f7f70326df021" category="doc">障害のあるコントローラモジュールをシャットダウンします- ASA C250</block>
-  <block id="b4609e09d3094c196af6ccbdb8c9afbf" category="doc">コントローラモジュールの交換の概要- ASA C250</block>
-  <block id="13a410359da23b13900f5c285e105e81" category="doc">コントローラモジュールハードウェアの交換- ASA C250</block>
   <block id="0c85f60a3a546be806bd89d1770b2cdb" category="doc">SSDドライブまたはHDDドライブの交換- ASA C250</block>
-  <block id="363dbb7bd38c3746663861884552a6ca" category="doc">ブートメディアの交換の概要- ASA C250</block>
-  <block id="43e2c8d81f6919e7565affdd6dcb959f" category="doc">システムのリストアの完了- ASA C250</block>
   <block id="d4990258d82ec1b42d1a3f07bbdd9d8c" category="doc">コントローラをシャットダウンします- ASA C250</block>
   <block id="e6b4abf5b92977063300e1d579857b79" category="doc">システムにケーブルを再接続し、ディスクを再割り当てする- ASA C250</block>
-  <block id="12e315d8c52faa94677b1901adfb8eb4" category="doc">ハードウェアの交換- ASA C250</block>
   <block id="e6d96f81a26c1a2a35065ae9c3793837" category="doc">NVMEMバッテリの交換- ASA C250</block>
   <block id="7382bde7f210f74c2e89d6849d2c853c" category="doc">リアルタイムクロックバッテリを交換してください- ASA C250</block>
   <block id="d39ab7984d0a9959c51323b1566d39fd" category="doc">システム構成を復元して確認します（ASA C250）。</block>
-  <block id="4011a7882485055cdc06ec93e7092124" category="doc">リストアと交換のプロセスを完了する（ASA C250）</block>
   <block id="65cdd5bec4dba0253649d58817a20251" category="summary">このセクションでは、ASA C250システムの設置手順について詳しく説明します。</block>
   <block id="96aa7639aa86f7fa2dc06bc23ab17535" category="doc">詳細な手順- ASA C250</block>
   <block id="6f986992e70a8e97c82b44d5221b88bd" category="doc">リカバリイメージのブート（ASA C250）</block>
@@ -6645,7 +6589,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="47bbce6e33bd7d62fd92094dd6a0818b" category="sidebar">ASA C250システム</block>
   <block id="07b2916c602e93a800620d6a7f3da559" category="sidebar">ASA C250のインストールとセットアップ</block>
   <block id="1dd94b2bf84735727f2fca5364f3b083" category="sidebar">ASA C250メンテナンス</block>
-  <block id="2353e9e67ec4eecfe39f1b7cc0ebfc1d" category="sidebar">ASA C250ブートメディア</block>
   <block id="194ead111a8c6fa1777a5e82a7f91b2f" category="sidebar">ASA C250シャーシ</block>
   <block id="f625798c697d484421b27bd2637a4a66" category="sidebar">ASA C250コントローラモジュール</block>
   <block id="f52cc0c002eb630b3aee28324fd8a0a0" category="sidebar">ASA C800システム</block>
@@ -6831,9 +6774,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8c06a9afcd20cc8675f878a8e07e16ab" category="list-text">FAS8020 、 FAS8040 、 FAS8060 、 FAS8080</block>
   <block id="335755c0e7b53572be7e9a663d297e47" category="list-text">FAS2520、FAS2552、FAS2554</block>
   <block id="bbc155fb2b111bf61c4f5ff892915e6b" category="cell">スイッチ</block>
-  <block id="e29dd9091577ef2b7d9c9828cd5407af" category="paragraph">NetApp CN1610スイッチ</block>
-  <block id="a8495ee8f8ba70ddce083c14b317a765" category="list-text">Cisco 5596UP</block>
-  <block id="4249daf52cc9869f5f0eb05a465153b6" category="list-text">Cisco 5596T</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="section-title">関連情報</block>
   <block id="23c35b2f23dd1a2d9d32a286f986b138" category="inline-link">サポートされるCiscoイーサネットスイッチ</block>
   <block id="01be3333cdb9fcee786cd82fd72188b1" category="list-text"><block ref="01be3333cdb9fcee786cd82fd72188b1" category="inline-link-rx"></block></block>
@@ -12812,7 +12752,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e09cb2a2e64a5d832ba5d49e4e865a30" category="list-text"><block ref="e09cb2a2e64a5d832ba5d49e4e865a30" category="inline-link-macro-rx"></block></block>
   <block id="ff4bfcae1e1da91372a5829a16edc994" category="list-text"><block ref="ff4bfcae1e1da91372a5829a16edc994" category="inline-link-macro-rx"></block></block>
   <block id="6d9a0b4c551443ef1617138b26975f75" category="list-text"><block ref="6d9a0b4c551443ef1617138b26975f75" category="inline-link-macro-rx"></block></block>
-  <block id="61d4fa9f3a7a7b48b899782661dcf10a" category="list-text"><block ref="61d4fa9f3a7a7b48b899782661dcf10a" category="inline-link-macro-rx"></block></block>
   <block id="e05ae7b3c1ea0c4153454992df283638" category="list-text"><block ref="e05ae7b3c1ea0c4153454992df283638" category="inline-link-macro-rx"></block></block>
   <block id="3323ee5bbd1e10d12ef056c6602c4368" category="list-text"><block ref="3323ee5bbd1e10d12ef056c6602c4368" category="inline-link-macro-rx"></block></block>
   <block id="0c8dcfc51fab6518904d4a9c8dd58ccd" category="list-text"><block ref="0c8dcfc51fab6518904d4a9c8dd58ccd" category="inline-link-macro-rx"></block></block>
@@ -12822,7 +12761,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="261215f462a5d4db139c818d7d5917e9" category="list-text"><block ref="261215f462a5d4db139c818d7d5917e9" category="inline-link-macro-rx"></block></block>
   <block id="bc8bddc504e3921f85730569fc161778" category="list-text"><block ref="bc8bddc504e3921f85730569fc161778" category="inline-link-macro-rx"></block></block>
   <block id="653f11558faddfa010a75c3ab3825624" category="list-text"><block ref="653f11558faddfa010a75c3ab3825624" category="inline-link-macro-rx"></block></block>
-  <block id="47d7aa17e769c611eaa49d50da1dab2d" category="list-text"><block ref="47d7aa17e769c611eaa49d50da1dab2d" category="inline-link-macro-rx"></block></block>
   <block id="79a9e4dde6ab9763d048b83654d43600" category="list-text"><block ref="79a9e4dde6ab9763d048b83654d43600" category="inline-link-macro-rx"></block></block>
   <block id="5f12d608dc53d64ec0714cf4d35d62ee" category="list-text"><block ref="5f12d608dc53d64ec0714cf4d35d62ee" category="inline-link-macro-rx"></block></block>
   <block id="23a041dd87a713dee9105dd99e3ba37a" category="list-text"><block ref="23a041dd87a713dee9105dd99e3ba37a" category="inline-link-macro-rx"></block></block>
@@ -12837,7 +12775,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="9d36794c414563cecd35514d783b97ba" category="list-text"><block ref="9d36794c414563cecd35514d783b97ba" category="inline-link-macro-rx"></block></block>
   <block id="c456cee055923b032ad9ec4fdb29058e" category="list-text"><block ref="c456cee055923b032ad9ec4fdb29058e" category="inline-link-macro-rx"></block></block>
   <block id="c5eac2a8312a45e6735c3716fb38bd0c" category="list-text"><block ref="c5eac2a8312a45e6735c3716fb38bd0c" category="inline-link-macro-rx"></block></block>
-  <block id="7eec148129b3c6afbd4850759ee06de0" category="list-text"><block ref="7eec148129b3c6afbd4850759ee06de0" category="inline-link-macro-rx"></block></block>
   <block id="620c442cb997b38308433f2b9438c08c" category="list-text"><block ref="620c442cb997b38308433f2b9438c08c" category="inline-link-macro-rx"></block></block>
   <block id="13873f00f26fa5d25e8ead4cf6171737" category="list-text"><block ref="13873f00f26fa5d25e8ead4cf6171737" category="inline-link-macro-rx"></block></block>
   <block id="9ebeb8ef6223987543e3dfcc68e080c5" category="list-text"><block ref="9ebeb8ef6223987543e3dfcc68e080c5" category="inline-link-macro-rx"></block></block>
@@ -12850,7 +12787,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="2522b6ccbd53098c083c8d98e0f9467b" category="list-text"><block ref="2522b6ccbd53098c083c8d98e0f9467b" category="inline-link-macro-rx"></block></block>
   <block id="dfd10f3473c656275329ec0e96e56c33" category="list-text"><block ref="dfd10f3473c656275329ec0e96e56c33" category="inline-link-macro-rx"></block></block>
   <block id="fb0137952b0317febe08d8e945d5fa7a" category="list-text"><block ref="fb0137952b0317febe08d8e945d5fa7a" category="inline-link-macro-rx"></block></block>
-  <block id="e2bf1f4d6c1514761eefe024f0750dc1" category="list-text"><block ref="e2bf1f4d6c1514761eefe024f0750dc1" category="inline-link-macro-rx"></block></block>
   <block id="3bbdda55ce1e81bc8f185ac07f194fd6" category="list-text"><block ref="3bbdda55ce1e81bc8f185ac07f194fd6" category="inline-link-macro-rx"></block></block>
   <block id="7998d34e9c49d8c01d4b66a5c277d37a" category="list-text"><block ref="7998d34e9c49d8c01d4b66a5c277d37a" category="inline-link-macro-rx"></block></block>
   <block id="562ba6baba5e9d2f0da008ad8de30e1d" category="list-text"><block ref="562ba6baba5e9d2f0da008ad8de30e1d" category="inline-link-macro-rx"></block></block>
@@ -12879,7 +12815,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="39af9e6c26414a032ade2fadf211af38" category="list-text"><block ref="39af9e6c26414a032ade2fadf211af38" category="inline-link-macro-rx"></block></block>
   <block id="61f84ee64f264820c014ce8c41c72fe8" category="list-text"><block ref="61f84ee64f264820c014ce8c41c72fe8" category="inline-link-macro-rx"></block></block>
   <block id="e89a4ca5833791765ec628c8949df314" category="list-text"><block ref="e89a4ca5833791765ec628c8949df314" category="inline-link-macro-rx"></block></block>
-  <block id="27d3e3ff12d4b178d0bc5d187a76cfe5" category="list-text"><block ref="27d3e3ff12d4b178d0bc5d187a76cfe5" category="inline-link-macro-rx"></block></block>
   <block id="275e238c8c488cd788182e16de8f8d18" category="list-text"><block ref="275e238c8c488cd788182e16de8f8d18" category="inline-link-macro-rx"></block></block>
   <block id="887671506984a347fc2bb90850eccac4" category="list-text"><block ref="887671506984a347fc2bb90850eccac4" category="inline-link-macro-rx"></block></block>
   <block id="f89fae77e712db915e5c4f5899f9dc90" category="list-text"><block ref="f89fae77e712db915e5c4f5899f9dc90" category="inline-link-macro-rx"></block></block>
@@ -12887,19 +12822,15 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="bcb3d11de31ace3af18f7f575560fad0" category="list-text"><block ref="bcb3d11de31ace3af18f7f575560fad0" category="inline-link-macro-rx"></block></block>
   <block id="4fb3a37ea6a8bf216a7a7ff9ed43a0bc" category="list-text"><block ref="4fb3a37ea6a8bf216a7a7ff9ed43a0bc" category="inline-link-macro-rx"></block></block>
   <block id="389571f23e645f55137b0c744a724b29" category="list-text"><block ref="389571f23e645f55137b0c744a724b29" category="inline-link-macro-rx"></block></block>
-  <block id="01fb5d600feb973e6df3173c64f3a198" category="list-text"><block ref="01fb5d600feb973e6df3173c64f3a198" category="inline-link-macro-rx"></block></block>
   <block id="6431f05b1242b5f32378ef62d266c798" category="list-text"><block ref="6431f05b1242b5f32378ef62d266c798" category="inline-link-macro-rx"></block></block>
   <block id="3021891faee4fde9067d94377729f785" category="list-text"><block ref="3021891faee4fde9067d94377729f785" category="inline-link-macro-rx"></block></block>
   <block id="0457c9709948ef27324c936bd420f69a" category="list-text"><block ref="0457c9709948ef27324c936bd420f69a" category="inline-link-macro-rx"></block></block>
   <block id="4703cf7610a24c32062a5258bc53ee8e" category="list-text"><block ref="4703cf7610a24c32062a5258bc53ee8e" category="inline-link-macro-rx"></block></block>
-  <block id="37bf7febe6d710ccb6b01eaa16d4abed" category="list-text"><block ref="37bf7febe6d710ccb6b01eaa16d4abed" category="inline-link-macro-rx"></block></block>
-  <block id="634a4b84bba737c2869a94edc155749b" category="list-text"><block ref="634a4b84bba737c2869a94edc155749b" category="inline-link-macro-rx"></block></block>
   <block id="2e1190705587bc5d69188be8d441c21a" category="list-text"><block ref="2e1190705587bc5d69188be8d441c21a" category="inline-link-macro-rx"></block></block>
   <block id="caac5e8e53dadcc0cf395f3fed6aa0d2" category="list-text"><block ref="caac5e8e53dadcc0cf395f3fed6aa0d2" category="inline-link-macro-rx"></block></block>
   <block id="bd5b1e86a29aef36e6e499c3e57069b9" category="list-text"><block ref="bd5b1e86a29aef36e6e499c3e57069b9" category="inline-link-macro-rx"></block></block>
   <block id="26618a408ce26e97bc2d109a161d3b80" category="list-text"><block ref="26618a408ce26e97bc2d109a161d3b80" category="inline-link-macro-rx"></block></block>
   <block id="7db41139e1008b4583c7fd13af1b0a19" category="list-text"><block ref="7db41139e1008b4583c7fd13af1b0a19" category="inline-link-macro-rx"></block></block>
-  <block id="4e289b7dfd9e57d60afa512d08a5b22c" category="list-text"><block ref="4e289b7dfd9e57d60afa512d08a5b22c" category="inline-link-macro-rx"></block></block>
   <block id="3e5eb04329f564a2e736e6e39826f7f0" category="list-text"><block ref="3e5eb04329f564a2e736e6e39826f7f0" category="inline-link-macro-rx"></block></block>
   <block id="e5340bb51df7255f8d917738c89e9ea2" category="list-text"><block ref="e5340bb51df7255f8d917738c89e9ea2" category="inline-link-macro-rx"></block></block>
   <block id="5f82ce451d0ee17094c1f6f2d3f735eb" category="list-text"><block ref="5f82ce451d0ee17094c1f6f2d3f735eb" category="inline-link-macro-rx"></block></block>
@@ -12914,7 +12845,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="34857cfe5244389bf54d3dfcd8de2578" category="list-text"><block ref="34857cfe5244389bf54d3dfcd8de2578" category="inline-link-macro-rx"></block></block>
   <block id="f4bfbdfae66e0a67d6b7d4225f7ac84f" category="list-text"><block ref="f4bfbdfae66e0a67d6b7d4225f7ac84f" category="inline-link-macro-rx"></block></block>
   <block id="5c47498d3e11ee9a57ddebd2baefb88d" category="list-text"><block ref="5c47498d3e11ee9a57ddebd2baefb88d" category="inline-link-macro-rx"></block></block>
-  <block id="2589ec0cb48b03e4582fd4e5930dd6af" category="list-text"><block ref="2589ec0cb48b03e4582fd4e5930dd6af" category="inline-link-macro-rx"></block></block>
   <block id="320b62021250ac3397d332e11199a626" category="list-text"><block ref="320b62021250ac3397d332e11199a626" category="inline-link-macro-rx"></block></block>
   <block id="891c5359e682529a1627e4999520d382" category="list-text"><block ref="891c5359e682529a1627e4999520d382" category="inline-link-macro-rx"></block></block>
   <block id="3bed913e05df4b686d188f0b1563edaf" category="list-text"><block ref="3bed913e05df4b686d188f0b1563edaf" category="inline-link-macro-rx"></block></block>
@@ -12923,15 +12853,12 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8c93358c335849a177a2b064d61fee49" category="list-text"><block ref="8c93358c335849a177a2b064d61fee49" category="inline-link-macro-rx"></block></block>
   <block id="fe7940c070c008b7384704652d68649d" category="list-text"><block ref="fe7940c070c008b7384704652d68649d" category="inline-link-macro-rx"></block></block>
   <block id="3126d2686507d95d694289ed10b84c81" category="list-text"><block ref="3126d2686507d95d694289ed10b84c81" category="inline-link-macro-rx"></block></block>
-  <block id="961e258e36c7c0498a4cd9ada2d70c28" category="list-text"><block ref="961e258e36c7c0498a4cd9ada2d70c28" category="inline-link-macro-rx"></block></block>
   <block id="22f46c8d8c23447b8b2d25ba99c89ea5" category="list-text"><block ref="22f46c8d8c23447b8b2d25ba99c89ea5" category="inline-link-macro-rx"></block></block>
   <block id="ac31af4b50ec3f45e426fed2d12a4579" category="list-text"><block ref="ac31af4b50ec3f45e426fed2d12a4579" category="inline-link-macro-rx"></block></block>
   <block id="efb4ef1a7e68e6464e2855d284715e8f" category="list-text"><block ref="efb4ef1a7e68e6464e2855d284715e8f" category="inline-link-macro-rx"></block></block>
   <block id="b9a5aa0dda2abe8c56433655233c5afe" category="list-text"><block ref="b9a5aa0dda2abe8c56433655233c5afe" category="inline-link-macro-rx"></block></block>
-  <block id="4617ca51af3e7539e1032042c8ad9ebb" category="list-text"><block ref="4617ca51af3e7539e1032042c8ad9ebb" category="inline-link-macro-rx"></block></block>
   <block id="09514b85ea6e4a26b271ee897526f719" category="list-text"><block ref="09514b85ea6e4a26b271ee897526f719" category="inline-link-macro-rx"></block></block>
   <block id="d667d10a2839d4d94c58c56f5c5f3632" category="list-text"><block ref="d667d10a2839d4d94c58c56f5c5f3632" category="inline-link-macro-rx"></block></block>
-  <block id="d363d6fa2d5b7d1a3acbba63d58ee5df" category="list-text"><block ref="d363d6fa2d5b7d1a3acbba63d58ee5df" category="inline-link-macro-rx"></block></block>
   <block id="25e9061afcbf32bd115473b789388d4a" category="list-text"><block ref="25e9061afcbf32bd115473b789388d4a" category="inline-link-macro-rx"></block></block>
   <block id="7934c4d942ff95cd60f23fa77b0f6248" category="list-text"><block ref="7934c4d942ff95cd60f23fa77b0f6248" category="inline-link-macro-rx"></block></block>
   <block id="ac8da8b52bd313ac221e71b1ea98d0fe" category="list-text"><block ref="ac8da8b52bd313ac221e71b1ea98d0fe" category="inline-link-macro-rx"></block></block>
@@ -12939,7 +12866,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="dfa7981aaa213042de69d18d113dbb70" category="list-text"><block ref="dfa7981aaa213042de69d18d113dbb70" category="inline-link-macro-rx"></block></block>
   <block id="b1c8613a464785e91bef89d1ccbd79af" category="list-text"><block ref="b1c8613a464785e91bef89d1ccbd79af" category="inline-link-macro-rx"></block></block>
   <block id="8353370ee687496a9e70ca73eadba195" category="list-text"><block ref="8353370ee687496a9e70ca73eadba195" category="inline-link-macro-rx"></block></block>
-  <block id="ec28e7e0b849b225d5bb392304d7e31c" category="list-text"><block ref="ec28e7e0b849b225d5bb392304d7e31c" category="inline-link-macro-rx"></block></block>
   <block id="f2e81baf5c47e710bdef3091d5df1390" category="list-text"><block ref="f2e81baf5c47e710bdef3091d5df1390" category="inline-link-macro-rx"></block></block>
   <block id="49c072d4a239128d83dc028820477cc2" category="list-text"><block ref="49c072d4a239128d83dc028820477cc2" category="inline-link-macro-rx"></block></block>
   <block id="3132e68710534e3087e9540fb5faecde" category="list-text"><block ref="3132e68710534e3087e9540fb5faecde" category="inline-link-macro-rx"></block></block>
@@ -13143,7 +13069,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="882d6906bbb976cfdfc65c1f27b96098" category="list-text"><block ref="882d6906bbb976cfdfc65c1f27b96098" category="inline-link-macro-rx"></block></block>
   <block id="1cf7aa1943c1b7a1ddfc0eeb8c996030" category="list-text"><block ref="1cf7aa1943c1b7a1ddfc0eeb8c996030" category="inline-link-macro-rx"></block></block>
   <block id="6dd2781f09a534f988ce250d63de5d5f" category="list-text"><block ref="6dd2781f09a534f988ce250d63de5d5f" category="inline-link-macro-rx"></block></block>
-  <block id="54dd679eba24c4709d997c50e604df73" category="list-text"><block ref="54dd679eba24c4709d997c50e604df73" category="inline-link-macro-rx"></block></block>
   <block id="3ad0b4d488ff9d235fa7d8fe35ab895a" category="list-text"><block ref="3ad0b4d488ff9d235fa7d8fe35ab895a" category="inline-link-macro-rx"></block></block>
   <block id="551c3848ca6ae1e3e23199f05a8c9122" category="list-text"><block ref="551c3848ca6ae1e3e23199f05a8c9122" category="inline-link-macro-rx"></block></block>
   <block id="c91af71b22cb5a28829ad559b294c51e" category="list-text"><block ref="c91af71b22cb5a28829ad559b294c51e" category="inline-link-macro-rx"></block></block>
@@ -13864,7 +13789,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="509770c8dda30e85db49f8642db6ca11" category="list-text">ログインプロンプトが表示されるまで待ちます。</block>
   <block id="0e24346f9a92e6d04d57b5ccead814c3" category="list-text">ノードにログインし、ストレージを返却します。</block>
   <block id="20d2bf4f3f943fcc1e340e99a4d368ba" category="admonition">システムがキー マネージャーの構成を識別できない場合は、エラー メッセージが表示され、キー マネージャーが構成されているかどうか、およびそのタイプ (オンボードまたは外部) を確認するように求められます。プロンプトに答えて続行します。</block>
-  <block id="4aac054c51ae042dd6c06bdad5d13845" category="list-text">構成に適した手順を使用してキー マネージャーを復元します。</block>
   <block id="564c83534ce0095bf811b4f45e8a7587" category="paragraph">システムは次のメッセージを表示し、BootMenu オプション 10 の実行を開始します。</block>
   <block id="c08aad071fe1f1b764a8997cd71926c1" category="list-text">入力<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>OKM 回復プロセスを開始するかどうかを確認するプロンプトが表示されます。</block>
   <block id="63d61920b8c2f7b30cf281bdfa903c57" category="list-text">プロンプトが表示されたら、オンボード キー管理のパスフレーズを入力します。</block>
@@ -14670,4 +14594,330 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="462bdaed9eace863845b41e01c3480e8" category="sidebar">ホット スワップI/Oモジュール</block>
   <block id="db0a3be0ea02de25a3475124879fa44b" category="sidebar">AFF A1K I/Oモジュール</block>
   <block id="912c10cfdcb4f2e697e3be725e084f23" category="sidebar">ホット スワップI/Oモジュール</block>
+  <block id="a8d224655abd817de530e49bfb21cec6" category="list-text">コントローラ モジュールから障害のあるブート メディアを見つけて交換します：</block>
+  <block id="ca1906230a46f1d0e81eac082609a776" category="list-text">エアダクトを取り付けます。</block>
+  <block id="88d4161f8a471989e6046fbb53a54edf" category="paragraph">AC PSU をホットスワップするには、次の手順を実行します。</block>
+  <block id="610003c6a98d9993f11bcbf2c74ca951" category="list-text">[[restore-key-manager]] 設定に応じて適切な手順を使用してキー マネージャをリストアします：</block>
+  <block id="680854b0510554aebecd63fa5251805c" category="list-text">[[reenable-auto-giveback]]自動ギブバックが無効になっている場合は、再度有効にします：</block>
+  <block id="ca10834f81d97eaa4407b245fed970f3" category="doc">障害が発生したブートメディアをNetAppに返却する - AFF A250</block>
+  <block id="341bee79898d3cbfad5d9f17dd39b24a" category="paragraph">AFF A250 システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。詳細については、<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>ページを参照してください。</block>
+  <block id="d6a90ed11a4dd029aaf77b6e107a87a8" category="paragraph">AFF A250 ストレージ システムのコンポーネントに障害が発生した場合は、障害が発生した部品を NetApp に返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>ページで詳細を確認してください。</block>
+  <block id="dfc5cfd29de70dfb5c8b24e81dfde2d3" category="paragraph">AFF A250 ストレージ システムのデータ セキュリティを確保するには、ブート メディアでの暗号化キーのサポートとステータスを確認する必要があります。ONTAP バージョンが NetApp Volume Encryption（NVE）をサポートしているかどうかを確認し、コントローラーをシャットダウンする前に、キー マネージャーがアクティブかどうかを確認します。</block>
+  <block id="522fc4812be3ff376fd0a8d4a01a2235" category="paragraph">ストレージ システムで ONTAP 9.18.1 以降が実行されている場合は、<block ref="0326355f0329bd91b304522a96676e27" category="inline-link-macro-rx"></block>を使用します。システムで以前のバージョンの ONTAP が実行されている場合は、手動ブート リカバリ プロセスを使用する必要があります。</block>
+  <block id="72d6a283a9bf82ad6c28753db0fd0985" category="paragraph">AFF A250 システムの交換用ブートメディアで暗号化を復元し、継続的なデータ保護を確保します。交換プロセスには、キーの可用性の確認、暗号化設定の再適用、データへの安全なアクセスの確認が含まれます。</block>
+  <block id="625aa03c8be2d3b8e1e24b44d7fece6b" category="paragraph">ストレージ システムで ONTAP 9.18.1 以降が実行されている場合は、<block ref="0326355f0329bd91b304522a96676e27" category="inline-link-macro-rx"></block>を使用します。システムで以前のバージョンの ONTAP が実行されている場合は、手動ブート リカバリ手順を使用する必要があります。</block>
+  <block id="38c243e1c2fb1072058d0a3e94458118" category="summary">新しいブートメディアデバイスをAFF A250システムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。</block>
+  <block id="df0e7d3d2b2dd8b8741c5be1dc7eb74f" category="doc">パートナーノードからの自動ブートメディアリカバリ - AFF A250</block>
+  <block id="b6cabea858cacf035b51ff7edc895ad5" category="paragraph">新しいブートメディアデバイスをAFF A250システムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。回復プロセス中に、システムは暗号化が有効になっているかどうかを確認し、使用されているキー暗号化の種類を判別します。キー暗号化が有効になっている場合は、システムが適切な手順を案内して復元します。</block>
+  <block id="1c7f9afb0f27a26eeaf8115ceb263557" category="paragraph">自動ブートメディアリカバリプロセスは、ONTAP 9.18.1 以降でのみサポートされています。ストレージシステムで以前のバージョンの ONTAP を実行している場合は、<block ref="739428bb763fc45faeb1ae97255a3f48" category="inline-link-macro-rx"></block>を使用してください。</block>
+  <block id="12ce7c942d23df67263bd780219c154a" category="doc">USBドライブからの手動ブートメディアリカバリ - AFF A250</block>
+  <block id="b0465c866eac76ecf40978268d804908" category="paragraph">新しいブートメディアデバイスをAFF A250システムにインストールしたあとは、USBドライブからリカバリイメージを起動し、パートナーノードから構成を復元できます。</block>
+  <block id="55afce7ad2217b05af2e3c1417d0c19f" category="summary">AFF A250システムのブートメディアには、重要なファームウェアと構成データが保存されます。交換プロセスには、コントローラ モジュールの取り外し、障害のあるブート メディアの取り外し、交換用のブート メディアのコントローラ モジュールへのインストール、コントローラ モジュールの再インストールが含まれます。</block>
+  <block id="6bdea4cac96b9056d3766be019dd0c04" category="doc">自動ブート回復のためにブートメディアを交換します - AFF A250</block>
+  <block id="dcdd396ac549fef92940892b5a2b01fc" category="paragraph">AFF A250システムのブートメディアには、重要なファームウェアと構成データが保存されます。交換プロセスには、コントローラ モジュールを取り外して開き、障害が発生したブート メディアを取り外し、交換用のブート メディアをコントローラ モジュールにインストールし、コントローラ モジュールを再インストールすることが含まれます。</block>
+  <block id="af137cc243bd967eb74cbdfeb3d8a058" category="summary">AFF A250 システムのブート メディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。</block>
+  <block id="ce7174c0096688f2e6a939ab564dad0a" category="doc">自動ブートメディアリカバリの要件 - AFF A250</block>
+  <block id="7eb02c4a939fd2a9816de75e45b43e50" category="paragraph">AFF A250 のブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、正しい交換用ブートメディアがあることの確認、障害のあるコントローラの e0S（e0M レンチ）ポートに障害がないことの確認、Onboard Key Manager（OKM）または External Key Manager（EKM）が有効になっているかどうかの確認が含まれます。</block>
+  <block id="011e4c638ab45244a5b99c14d9a4c9b4" category="summary">AFF A250 システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、適切な容量のストレージを備えた USB フラッシュ ドライブがあることを確認し、正しい交換用ブート デバイスがあることを確認することが含まれます。</block>
+  <block id="a39f03dd45e11afa398f41ce8db49057" category="doc">手動ブートメディアリカバリの要件 - AFF A250</block>
+  <block id="75cf7b5eb84fe5aff9ec690ff712a7d8" category="summary">AFF A250 ストレージ システムのブート メディアの交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システムの機能を確認します。</block>
+  <block id="ae971224ba6e6b913e15b7f316a19b74" category="doc">ブートメディアの自動回復ワークフロー - AFF A250</block>
+  <block id="046738295c062a0324677599f1c769da" category="paragraph">ブート イメージの自動回復では、システムが適切なブート メニュー オプションを自動的に識別して選択します。パートナー ノードのブート イメージを使用して、AFF A250 ストレージ システムの交換用ブート メディアに ONTAP を再インストールします。</block>
+  <block id="dbbe1592f2430c6ab4d716fa0dbbab21" category="summary">AFF A250 ストレージ システムのブート メディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージのブート、暗号化の復元、およびシステム機能の検証を行います。</block>
+  <block id="706763fe838ac358e0418eefc427df6e" category="doc">ブートメディアの手動リカバリワークフロー - AFF A250</block>
+  <block id="fedfd185ee41d3ef362db6c2939eaaea" category="doc">ブートメディアを交換し、手動ブートリカバリの準備をします - AFF A250</block>
+  <block id="9f62f84b01a1ffac702af8ead9d2fbfd" category="paragraph">AFF A250 システムのブートメディアには、重要なファームウェアと構成データが保存されます。交換プロセスには、システム管理モジュールの取り外し、障害のあるブートメディアの取り外し、交換用ブートメディアの取り付け、USB フラッシュ ドライブを使用した ONTAP イメージの交換用ブートメディアへの手動転送が含まれます。</block>
+  <block id="6ca138d645ffecd028316e958b066da4" category="summary">AFF A250 ストレージ システムで障害のあるコントローラをシャットダウンして、ブート メディアの交換時にデータ損失を防ぎ、システムの安定性を確保します。</block>
+  <block id="7b955410b03bef3fcff17d3969065b7b" category="doc">自動ブートメディアリカバリのためにコントローラをシャットダウンします - AFF A250</block>
+  <block id="e3349f8840982c956a98a9b15fd8a817" category="paragraph">AFF A250 ストレージ システムで障害のあるコントローラをシャットダウンして、自動ブート メディア リカバリ プロセス中のデータ損失を防ぎ、システムの安定性を維持します。</block>
+  <block id="15c64581bcfa6165556b3d7035d63227" category="doc">手動ブートメディアリカバリのためにコントローラをシャットダウンします - AFF A250</block>
+  <block id="8bd01d2fe37613151ebc277323c82824" category="doc">シャーシの交換を完了します - AFF A250</block>
+  <block id="c3791e58d4fe79fed87533d250f9706d" category="paragraph">コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返却して、AFF A250シャーシ交換手順の最終ステップを完了します。</block>
+  <block id="39a3b1f17e8cc33119262178b12813bf" category="doc">シャーシを交換します - AFF A250</block>
+  <block id="6d294bfd40eed6bfaeeaaf1db8208a89" category="paragraph">ハードウェア障害により必要になった場合は、AFF A250システムのシャーシを交換してください。交換プロセスには、コントローラーと電源ユニット（PSU）の取り外し、ドライブの取り外し、交換用シャーシの取り付け、シャーシコンポーネントの再取り付けが含まれます。</block>
+  <block id="96e72aaff65cb4f4750c609557e4dc82" category="paragraph">障害が発生した AFF A250 シャーシを交換してコンポーネントを再インストールしたら、<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block></block>
+  <block id="6342be9698d80d1df1b56a890db6de1b" category="summary">AFF A250 システムで障害のあるシャーシを交換する準備として、障害のあるシャーシを特定し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けます。</block>
+  <block id="f2a9d3951f48f1533f94a3057d3a2aa2" category="doc">シャーシの交換準備 - AFF A250</block>
+  <block id="a041a2132827860341b808531f1a8f51" category="paragraph">AFF A250 シャーシハードウェアの交換準備が完了したら、<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block>する必要があります。</block>
+  <block id="40dc60d0124c26c019ba0d93dec22b64" category="summary">AFF A250システムのシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることの確認、ONTAPのローカル管理者クレデンシャルがあることの確認、正しい交換用シャーシ、および必要なツールが含まれます。</block>
+  <block id="cf290623390ba30d275512e7663512dc" category="doc">シャーシ交換の要件 - AFF A250</block>
+  <block id="ee94c7d16f8159f6fd15966537794cd8" category="paragraph">AFF A250 ストレージ システムのコントローラーをシャットダウンして、シャーシの交換時にデータ損失を防ぎ、システムの安定性を確保します。</block>
+  <block id="f1e663b834ad70af6781e2aaf658b79b" category="summary">AFF A250 ストレージ システムのシャーシ交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、シャーシを交換して、システムの動作を検証します。</block>
+  <block id="50b8277f64a0355fdb433fab171de4bf" category="doc">シャーシ交換ワークフロー - AFF A250</block>
+  <block id="90e8d9e6dd3b47cd71d3394041cb1b91" category="doc">コントローラの交換 - AFF A250</block>
+  <block id="8e261760551b84dea3911bed5aa2fcfb" category="paragraph">ハードウェア障害が発生した場合は、AFF A250システムのコントローラを交換してください。交換プロセスには、障害のあるコントローラの取り外し、コンポーネントの交換用コントローラへの移動、交換用コントローラの取り付け、および再起動が含まれます。</block>
+  <block id="b482ea591d8b5b00850a5e22fa5a0a55" category="inline-link-macro">システム構成を復元して検証する</block>
+  <block id="eb539dd47c5a44c2e0cb481710197f8b" category="paragraph">故障した A250 コントローラーを交換した後は、<block ref="c8905a4c68408046b8de9d3b84f93445" category="inline-link-macro-rx"></block>。</block>
+  <block id="a37f8afc3ebcec16869d19f6f057705e" category="paragraph">A250 システムの復元とシステム構成の確認が完了したら、システムのケーブルを再接続し、ディスクを再割り当てする必要があります。</block>
+  <block id="f76cf839705d622caa8a1bdd213abf8b" category="paragraph">システムのケーブルを繋ぎ直し、ディスクを再割り当てした後は、<block ref="d6f5f08e0612b966d919b4ea0b494c53" category="inline-link-macro-rx"></block>。</block>
+  <block id="6f0444169c1c65d971f2ea700d03e218" category="doc">コントローラーを交換するための要件 - AFF A250</block>
+  <block id="ae3364883205d05f8204133deac12f44" category="paragraph">AFF A250ストレージ システムのコントローラーを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることを確認すること、正しい交換用コントローラがあることを確認すること、コントローラのコンソール出力をテキスト ログ ファイルに保存することが含まれます。</block>
+  <block id="e258eea4dc316cb207e580f7163d64c5" category="paragraph">故障したコントローラーを交換するための要件を確認した後、<block ref="049c9e44f3f84f6c7ce4b89629424c9c" category="inline-link-macro-rx"></block>。</block>
+  <block id="9b5129d7aeb50933c98be79d2b06db1e" category="doc">コントローラの完全交換 - AFF A250</block>
+  <block id="b57cf1a41835d3be7a95fa27b6fa10a3" category="paragraph">AFF A250 システムのコントローラ交換を完了して完全に動作させるには、NetApp Storage Encryption 構成をリストア（必要な場合）し、新しいコントローラのライセンスをインストールして、キットに同梱されている RMA 手順書の説明に従って障害が発生した部品を NetApp に返却する必要があります。</block>
+  <block id="b3ec477ff8d47dd50a2b1fa27b668fb9" category="paragraph">AFF A250 ストレージ システムのコントローラーをシャットダウンして、コントローラーを交換する際にデータの損失を防ぎ、システムの安定性を確保します。</block>
+  <block id="1d91f99aa70ed0660c0982ca14f3f20d" category="paragraph">コントローラーをシャットダウンした後は、<block ref="1f759de80b41385676d2f1fe163eb0aa" category="inline-link-macro-rx"></block></block>
+  <block id="ad48037acdea8efc34f45ea9d9814fbe" category="paragraph">ハードウェアの交換が完了し、A250 システムをメンテナンス モードで起動したら、交換用コントローラの低レベルのシステム構成を確認し、必要に応じてシステム設定を再構成する必要があります。</block>
+  <block id="c822907acad2d1e75636dc09ef0d4efc" category="inline-link-macro">システムのケーブルを再接続し、ディスクを再割り当てする</block>
+  <block id="1039e92749b91caba3ce16a6ff4690c2" category="paragraph">システム構成を復元して検証した後、<block ref="a27ede3ea5013ccc0cb1bb74355be7b2" category="inline-link-macro-rx"></block>する必要があります。</block>
+  <block id="de4503aac4f6f7ed872d4d0d89d9fac3" category="summary">AFF A250 ストレージ システムのコントローラの交換を開始するには、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム設定を再構成し、システムの動作を確認します。</block>
+  <block id="fb84141f9417f9f83aaaeee27ad968e7" category="doc">コントローラー交換ワークフロー - AFF A250</block>
+  <block id="27b9224034509b99ea4e64a90d2bffff" category="paragraph">障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成を復元し、ストレージ リソースの制御を交換用コントローラに戻すことで、AFF A250 ストレージ システムのコントローラを交換します。</block>
+  <block id="d85f321345c5fbe823c6d0b3fc7c5545" category="summary">AFF A250 ハードウェアを保守する</block>
+  <block id="c5076ac06e042709d64eed0f58e86e2b" category="paragraph">AFF A250 ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換などの定期的なメンテナンス タスクを実行すると、ダウンタイムやデータ損失を防ぐことができます。</block>
+  <block id="a87a9232dc45d770f3f2fabda9e401f5" category="paragraph">メンテナンス手順では、AFF A250ストレージシステムがすでにONTAP環境のストレージ ノードとして導入されていることを前提としています。</block>
+  <block id="aa15210b554a5b84c35b00934e549eb9" category="paragraph">ブートメディアには、ストレージシステムが起動に使用するONTAPイメージファイルのプライマリセットとセカンダリセットが格納されます。自動リカバリ中に、システムはパートナーノードからブートイメージを取得し、適切なブートメニューオプションを自動的に実行して、交換用ブートメディアにイメージをインストールします。自動ブートメディアリカバリプロセスは、ONTAP 9.18.1以降でのみサポートされます。ストレージシステムで以前のバージョンのONTAPを実行している場合は、<block ref="739428bb763fc45faeb1ae97255a3f48" category="inline-link-macro-rx"></block>を使用してください。</block>
+  <block id="2d324fe31fb35f91188b87e216268116" category="paragraph">ブートメディアには、ストレージ システムが起動に使用する ONTAP イメージ ファイルのプライマリとセカンダリのセットが格納されます。手動リカバリでは、USB ドライブからストレージ システムを起動し、ファイル システムのイメージと構成を手動で復元します。ストレージ システムが ONTAP 9.18.1 以降を実行している場合は、<block ref="0326355f0329bd91b304522a96676e27" category="inline-link-macro-rx"></block>を使用します。</block>
+  <block id="62a393871e6ebbad9a5a4a48f9dcad4e" category="paragraph"><block ref="62a393871e6ebbad9a5a4a48f9dcad4e" category="inline-link-macro-rx"></block></block>
+  <block id="4986d6400ae7bf8e3ebf5742affb5cac" category="paragraph">メザニンカードは、別のプラグインカードに直接接続するプリント回路基板です。</block>
+  <block id="dc6418e8893fd3efffcb054713535d8b" category="paragraph">NVMEM バッテリーは、AC 電源に障害が発生した場合にキャッシュされたデータを保持する役割を果たします。</block>
+  <block id="42e082f0bba872b8266c00d5f1555afe" category="list-text">奥行き：21.38インチ（54.3 cm）</block>
+  <block id="5f8dd6bacbcf27ac849a3bc90acb506e" category="doc">シャーシの交換を完了します - AFF A800</block>
+  <block id="396780f0fa472db008ecffbf87cc332f" category="doc">障害が発生したブート メディアを NetApp に返却 - ASA C250</block>
+  <block id="c341f8917fc7755fa264acd38324b161" category="paragraph">ASA C250 システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。詳細については、<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>ページを参照してください。</block>
+  <block id="a822bb67a7729405ea869500f6483769" category="summary">新しいブートメディアデバイスをASA C250システムにインストールした後、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。</block>
+  <block id="52705a4a551e9e78156268d3b722b640" category="doc">パートナーノードからの自動ブートメディアリカバリ - ASA C250</block>
+  <block id="de168faff993343d07eab071fd8d31c2" category="paragraph">新しいブートメディアデバイスをASA C250システムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。回復プロセス中に、システムは暗号化が有効になっているかどうかを確認し、使用されているキー暗号化の種類を判別します。キー暗号化が有効になっている場合は、システムが適切な手順を案内して復元します。</block>
+  <block id="ecbed1b1911625de2c7d7fef54dd3a9e" category="summary">ASA C250 システムのブート メディアには、重要なファームウェアと構成データが保存されます。交換プロセスには、コントローラ モジュールの取り外し、障害のあるブート メディアの取り外し、交換用のブート メディアのコントローラ モジュールへのインストール、コントローラ モジュールの再インストールが含まれます。</block>
+  <block id="fb319d4fcbcaebe65f129baa7d71cb8a" category="doc">自動ブート回復のためにブートメディアを交換します - ASA C250</block>
+  <block id="3f7c598b8de926ed6f4ede96849867ae" category="paragraph">ASA C250 システムのブート メディアには、重要なファームウェアと構成データが保存されます。交換プロセスには、コントローラ モジュールを取り外して開き、障害が発生したブート メディアを取り外し、交換用のブート メディアをコントローラ モジュールにインストールし、コントローラ モジュールを再インストールすることが含まれます。</block>
+  <block id="ca511809cd8088dd2136eacfb38a9e80" category="summary">ASA C250 システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。</block>
+  <block id="f9052d4f873e62ac3bbdcc8f796de6fe" category="doc">自動ブートメディアリカバリの要件 - ASA C250</block>
+  <block id="66a7a5e00dcd2fba43bdc509c4ce2960" category="paragraph">ASA C250 のブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、正しい交換用ブートメディアがあることの確認、障害のあるコントローラの e0S（e0M wrench）ポートに障害がないことの確認、Onboard Key Manager（OKM）または External Key Manager（EKM）が有効になっているかどうかの確認が含まれます。</block>
+  <block id="123aa1a0dc08eb892a6d0bd8c79861ea" category="summary">ASA C250 システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、適切な容量のストレージを備えた USB フラッシュ ドライブがあることを確認し、正しい交換用ブート デバイスがあることを確認することが含まれます。</block>
+  <block id="dce50de748cfaaf3af716b1078129abb" category="doc">手動ブートメディアリカバリの要件 - ASA C250</block>
+  <block id="ddb2345e083a4893d1a6cb8651afa7e5" category="summary">ASA C250 ストレージ システムのブート メディアの交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システムの機能を確認します。</block>
+  <block id="6f4ba5ef05a927a10795b9c810c3a6a5" category="doc">ブートメディアの自動回復ワークフロー - ASA C250</block>
+  <block id="aa3865a6290900fc1f2033a6c6d1e12e" category="paragraph">ブート イメージの自動回復では、システムが適切なブート メニュー オプションを自動的に識別して選択します。パートナー ノードのブート イメージを使用して、ASA C250 ストレージ システムの交換用ブート メディアに ONTAP を再インストールします。</block>
+  <block id="3a66de707baa55f8a7fa33524aa9a35c" category="summary">ASA C250 ストレージ システムのブート メディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージのブート、暗号化の復元、およびシステム機能の検証を行います。</block>
+  <block id="c28332fccbe33a8c9034057e249f0d32" category="doc">ブートメディアの手動回復ワークフロー - ASA C250</block>
+  <block id="3cc2dd62d8ac6c4411401388fa57c9ab" category="summary">ASA C250 ストレージ システムで障害のあるコントローラーをシャットダウンして、ブート メディアの交換時にデータ損失を防ぎ、システムの安定性を確保します。</block>
+  <block id="1cac984cb7d084c785a724d6632a0463" category="doc">自動ブートメディアリカバリのためにコントローラをシャットダウンします - ASA C250</block>
+  <block id="69ab93a9fb12f2390b104b08978520df" category="paragraph">ASA C250 ストレージ システムで障害のあるコントローラーをシャットダウンして、自動ブート メディア リカバリ プロセス中のデータ損失を防ぎ、システムの安定性を維持します。</block>
+  <block id="f57ded7f5bec798dc3a039cb0eb78122" category="doc">シャーシの交換を完了します - ASA C250</block>
+  <block id="3e984ad6768f8f3021b6ed192ff2b2ef" category="paragraph">コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返却して、ASA C250シャーシ交換手順の最終ステップを完了します。</block>
+  <block id="5ecdfb7a274674cf02767780bd60bcbc" category="doc">シャーシを交換する - ASA C250</block>
+  <block id="792843a068be7169f34d31081b123515" category="paragraph">ハードウェア障害が発生した場合は、ASA C250システムのシャーシを交換してください。交換プロセスには、コントローラーと電源ユニット（PSU）の取り外し、ドライブの取り外し、交換用シャーシの取り付け、シャーシ コンポーネントの再取り付けが含まれます。</block>
+  <block id="989a06f587925a250bb732e5019f499c" category="paragraph">障害が発生したASA C250シャーシを交換してコンポーネントを再インストールしたら、<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block></block>
+  <block id="6288479d232c0e416d5b4259b78f8db7" category="summary">ASA C250 システムで障害のあるシャーシを交換する準備をするために、障害のあるシャーシを特定し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けます。</block>
+  <block id="48ddbb91687af1fffe6bebe212824365" category="doc">シャーシの交換準備 - ASA C250</block>
+  <block id="0b1aa6d4391948c9fe65345954a6ad01" category="paragraph">ASA C250 シャーシ ハードウェアの交換準備が完了したら、<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block>する必要があります。</block>
+  <block id="790a536025cecbcd2961410b98ba8c64" category="summary">ASA C250システムのシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることの確認、ONTAPのローカル管理者クレデンシャルがあることの確認、正しい交換用シャーシ、および必要なツールが含まれます。</block>
+  <block id="dc484f31059a039765fe1acac19999e5" category="doc">シャーシ交換の要件 - ASA C250</block>
+  <block id="b9e69b0039d9ed83ff105f64d215c7d5" category="paragraph">AFF ASA C250ストレージ システムのコントローラーをシャットダウンして、シャーシの交換時にデータ損失を防ぎ、システムの安定性を確保します。</block>
+  <block id="7b6ed1b0e9a5ff30fb553d52444ed7e6" category="inline-link-macro">ハードウェアを新しいシャーシに移動する</block>
+  <block id="6e96729dba65c561ffc30b3a80695712" category="paragraph">コントローラーをシャットダウンした後は、<block ref="409096e21425936d7f115e7f07c0cad4" category="inline-link-macro-rx"></block></block>
+  <block id="bc49a9ce5dd17d1a86e01bf23c50018a" category="summary">ASA C250 ストレージ システムのシャーシ交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、シャーシを交換し、システムの動作を検証します。</block>
+  <block id="89dd27afe8dd86ca0004d67931f7e823" category="doc">シャーシ交換ワークフロー - ASA C250</block>
+  <block id="4817cb96bfcfa91f3fcf6c5029c68683" category="doc">コントローラを交換 - ASA C250</block>
+  <block id="2ae90478841e67e153829c367aa619e9" category="paragraph">ハードウェア障害が発生した場合は、ASA C250システムのコントローラを交換してください。交換プロセスには、障害のあるコントローラの取り外し、コンポーネントの交換用コントローラへの移動、交換用コントローラの取り付け、および再起動が含まれます。</block>
+  <block id="0bba2cf5ba5f1c48592bb09d65803109" category="paragraph">障害のある ASA C250 コントローラーを交換したら、<block ref="c8905a4c68408046b8de9d3b84f93445" category="inline-link-macro-rx"></block>する必要があります。</block>
+  <block id="39bf3460d01af785a1658113f3d329cd" category="paragraph">復元を完了し、システム構成ASA C250システムを確認した後、システムのケーブルを再接続し、ディスクを再割り当てする必要があります。</block>
+  <block id="b8735bf922a659dce881a6483ebfc66c" category="doc">コントローラを交換するための要件 - ASA C250</block>
+  <block id="5c50f74c21bf045696862d9c913df741" category="paragraph">ASA C250 ストレージ システムのコントローラを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることの確認、正しい交換用コントローラがあることの確認、およびコントローラのコンソール出力をテキスト ログ ファイルに保存することが含まれます。</block>
+  <block id="703171cc918a89e3e3f4a32efc01142e" category="doc">コントローラの完全交換 - ASA C250</block>
+  <block id="b1ba0b9d2770ab5ef378f594399540a0" category="paragraph">ASA C250 システムのコントローラ交換を完了して完全に動作させるには、NetApp Storage Encryption の設定を復元し（必要な場合）、新しいコントローラのライセンスをインストールし、キットに同梱されている RMA 手順書の説明に従って障害が発生した部品を NetApp に返却する必要があります。</block>
+  <block id="db1c3a4fe6a7e6f03d7b4c1c0b1a9619" category="paragraph">ASA C250 ストレージ システムのコントローラーをシャットダウンして、コントローラーの交換時にデータの損失を防ぎ、システムの安定性を確保します。</block>
+  <block id="eae052008fde47e543ef49273851e2c4" category="paragraph">ハードウェアの交換が完了し、ASA C250システムをメンテナンス モードで起動したら、交換用コントローラの低レベルのシステム構成を確認し、必要に応じてシステム設定を再構成する必要があります。</block>
+  <block id="287d634f17792905ea112722385e2973" category="summary">ASA C250 ストレージ システムのコントローラの交換を開始するには、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム設定を再構成し、システムの動作を確認します。</block>
+  <block id="73a1f81203dbd0d6aad3b1c4280bd83c" category="doc">コントローラー交換ワークフロー - ASA C250</block>
+  <block id="9fdedcbb8a005772b764ea92ee7d79fc" category="paragraph">障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成を復元し、ストレージ リソースの制御を交換用コントローラに戻すことで、ASA C250 ストレージ システムのコントローラを交換します。</block>
+  <block id="447d58f42a93cb2d67a882a1972e7529" category="paragraph">ASA C250 ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換などの定期的なメンテナンス タスクを実行すると、ダウンタイムやデータ損失を防ぐことができます。</block>
+  <block id="f8466e4302541aafa6280bb32bf6db40" category="paragraph">メンテナンス手順では、ASA C250ストレージシステムがONTAP環境のストレージ ノードとしてすでに導入されていることを前提としています。</block>
+  <block id="799766eb97b1cb94033e6f826c918d27" category="doc">障害が発生したブートメディアをNetApp - ASA A250に返却</block>
+  <block id="4113253bb433cd66aaf518403b05475f" category="paragraph">ASA A250 システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。詳細については、<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>ページを参照してください。</block>
+  <block id="c8fe075e031ef0a229e1e5afae9b1203" category="summary">新しいブートメディアデバイスをASA A250システムにインストールした後、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。</block>
+  <block id="ff9481b37113ee1aeb5a96dc4e54a86b" category="doc">パートナー ノードからの自動ブート メディア リカバリ - ASA A250</block>
+  <block id="2872b7e0fe56a74782408dce1646a321" category="paragraph">新しいブートメディアデバイスをASA A250システムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。回復プロセス中に、システムは暗号化が有効になっているかどうかを確認し、使用されているキー暗号化の種類を判別します。キー暗号化が有効になっている場合は、システムが適切な手順を案内して復元します。</block>
+  <block id="a8d175f3204f9bb52720e426d1349435" category="summary">ASA A250システムのブートメディアには、重要なファームウェアと構成データが保存されます。交換プロセスには、コントローラ モジュールの取り外し、障害のあるブート メディアの取り外し、交換用のブート メディアのコントローラ モジュールへのインストール、コントローラ モジュールの再インストールが含まれます。</block>
+  <block id="bc55bcacda60f533328a6222248bbf37" category="doc">自動ブート回復のためにブートメディアを交換します - ASA A250</block>
+  <block id="000985094ab4f30d00eb2145d27eecd6" category="paragraph">ASA A250 システムのブート メディアには、重要なファームウェアと構成データが保存されます。交換プロセスには、コントローラ モジュールを取り外して開き、障害が発生したブート メディアを取り外し、交換用のブート メディアをコントローラ モジュールにインストールし、コントローラ モジュールを再インストールすることが含まれます。</block>
+  <block id="0637ad0f27877cbd306977677e72313a" category="summary">ASA A250 システムのブート メディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。</block>
+  <block id="afd5bb2660744d78b0a3d382830a9055" category="doc">自動ブートメディアリカバリの要件 - ASA A250</block>
+  <block id="5f3d724857c2a376f0960ca61dd0ed26" category="paragraph">ASA A250 のブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、正しい交換用ブート メディアがあることを確認すること、障害のあるコントローラの e0S（e0M wrench）ポートに障害がないことの確認、Onboard Key Manager（OKM）または External Key Manager（EKM）が有効になっているかどうかを確認することが含まれます。</block>
+  <block id="56264d0f45bc0deb9dd1dca3074322de" category="summary">ASA A250 システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、適切な容量のストレージを備えたUSBフラッシュドライブがあることを確認し、正しい交換用ブートデバイスがあることを確認することが含まれます。</block>
+  <block id="a095bd7b1326362764a5df1b2419305e" category="doc">手動ブートメディアリカバリの要件 - ASA A250</block>
+  <block id="cea09916975c69f0f5e970a930689e6d" category="summary">ASA A250 ストレージ システムのブート メディアの交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システムの機能を確認します。</block>
+  <block id="798d6239610b9f5ef68cb5e017e86839" category="doc">ブートメディアの自動回復ワークフロー - ASA A250</block>
+  <block id="95c7d6eae959628bc114c991879881f5" category="paragraph">ブート イメージの自動回復では、システムが適切なブート メニュー オプションを自動的に識別して選択します。パートナー ノードのブート イメージを使用して、ASA A250 ストレージ システムの交換用ブート メディアに ONTAP を再インストールします。</block>
+  <block id="dc3d40a7a29afef0c0e1a2f20acd4f2e" category="summary">ASA A250 ストレージ システムのブート メディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージのブート、暗号化の復元、およびシステム機能の検証を行います。</block>
+  <block id="fab636ff567990aa5318f44fcdd5644d" category="doc">ブートメディアの手動回復ワークフロー - ASA A250</block>
+  <block id="3794216268a5cc4ad66ae1ff68e560ea" category="summary">ASA A250 ストレージ システムで障害のあるコントローラーをシャットダウンして、ブート メディアの交換時にデータ損失を防ぎ、システムの安定性を確保します。</block>
+  <block id="d5744c93fd3a55565fec97370a901ab8" category="doc">自動ブートメディアリカバリのためにコントローラをシャットダウンします - ASA A250</block>
+  <block id="6fea684c8dea60e6699566bf667efcea" category="paragraph">ASA A250 ストレージ システムで障害のあるコントローラーをシャットダウンして、自動ブート メディア回復プロセス中のデータ損失を防ぎ、システムの安定性を維持します。</block>
+  <block id="6c335a47deaac2c0092f7bc6bcf11752" category="doc">シャーシの交換を完了します - ASA A250</block>
+  <block id="7e8cd6c7e7f6e87b6e35c1f6695402d0" category="paragraph">コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返却して、ASA A250シャーシ交換手順の最終ステップを完了します。</block>
+  <block id="89b26aa3c808ef16256b019e27fe2d0d" category="doc">シャーシを交換する - ASA A250</block>
+  <block id="896786bae0c02090b0a1687150db97a2" category="paragraph">ハードウェア障害が発生した場合は、ASA A250 システムのシャーシを交換してください。交換プロセスには、コントローラーと電源ユニット（PSU）の取り外し、ドライブの取り外し、交換用シャーシの取り付け、シャーシ コンポーネントの再取り付けが含まれます。</block>
+  <block id="fc020abfd025083d50c9b9137502afaa" category="paragraph">障害が発生したASA A250シャーシを交換してコンポーネントを再インストールした後、<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block></block>
+  <block id="800b2af8227e26b20a950dd21eaf4c57" category="summary">ASA A250 システムで障害のあるシャーシを交換する準備をするために、障害のあるシャーシを特定し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けます。</block>
+  <block id="266d1ddad3ed91e9e45333640ea04f4c" category="doc">シャーシの交換準備 - ASA A250</block>
+  <block id="0640ee4645298086aefc9ecc1b5df50f" category="paragraph">ASA A250 シャーシ ハードウェアの交換準備が完了したら、<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block>する必要があります。</block>
+  <block id="3d3cd4ba529b9ac35ca56c5bb9c471c2" category="summary">ASA A250システムのシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることの確認、ONTAPのローカル管理者クレデンシャルがあることの確認、正しい交換用シャーシ、および必要なツールが含まれます。</block>
+  <block id="b18f9b0b9a11c1e7fa1f09d97327e90f" category="doc">シャーシ交換の要件 - ASA A250</block>
+  <block id="32fb468cc57459e398e50b8c594d600c" category="paragraph">ASA A250 ストレージ システムのコントローラーをシャットダウンして、シャーシの交換時にデータの損失を防ぎ、システムの安定性を確保します。</block>
+  <block id="1fbd60c89526d83a5931264032b81202" category="summary">ASA A250 ストレージ システムのシャーシ交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、シャーシを交換して、システムの動作を検証します。</block>
+  <block id="6fd63cc179e9ba6a81f975839b4bd2fd" category="doc">シャーシ交換ワークフロー - ASA A250</block>
+  <block id="4b0bee536688e7115c8f84a702f19897" category="doc">コントローラの交換 - ASA A250</block>
+  <block id="a98273a710d608019bb11f234adcfa63" category="paragraph">ハードウェア障害が発生した場合は、ASA A250システムのコントローラを交換してください。交換プロセスには、障害のあるコントローラの取り外し、コンポーネントの交換用コントローラへの移動、交換用コントローラの取り付け、および再起動が含まれます。</block>
+  <block id="3868cb70ed3aa682ee144827d555f8d2" category="paragraph">障害のある ASA A250 コントローラーを交換したら、<block ref="c8905a4c68408046b8de9d3b84f93445" category="inline-link-macro-rx"></block>する必要があります。</block>
+  <block id="049f65e918dc2fd99a3d9ea6ad4fdfdf" category="paragraph">復元を完了し、システム構成 ASA A250 システムを確認した後、システムのケーブルを再接続し、ディスクを再割り当てする必要があります。</block>
+  <block id="3896f2781684716c2882a4b3d212ce75" category="doc">コントローラーを交換するための要件 - ASA A250</block>
+  <block id="350284e890e9fd28a958de3fd71643cf" category="paragraph">ASA A250ストレージ システムのコントローラーを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることを確認すること、正しい交換用コントローラがあることを確認すること、コントローラのコンソール出力をテキスト ログ ファイルに保存することが含まれます。</block>
+  <block id="9c29e3a28bb382ea5d8588ebb8bbe765" category="doc">コントローラの完全交換 - ASA A250</block>
+  <block id="377811312d0644d8c78fe7f7531352d6" category="paragraph">ASA A250 システムのコントローラ交換を完了して完全に動作させるには、NetApp Storage Encryption の設定を復元し（必要な場合）、新しいコントローラのライセンスをインストールし、キットに同梱されている RMA 手順書の説明に従って障害が発生した部品を NetApp に返却する必要があります。</block>
+  <block id="869768c23e95aa07dacfbeef759ddd03" category="paragraph">ASA A250 ストレージ システムのコントローラーをシャットダウンして、コントローラーの交換時にデータの損失を防ぎ、システムの安定性を確保します。</block>
+  <block id="7e685b7b7062cbfdacbd3e4d08fc2096" category="paragraph">ハードウェアの交換が完了し、ASA A250システムをメンテナンス モードで起動したら、交換用コントローラの低レベルのシステム構成を確認し、必要に応じてシステム設定を再構成する必要があります。</block>
+  <block id="dd2ca674906435762d38dd1e735e23ea" category="summary">ASA A250 ストレージ システムのコントローラの交換を開始するには、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム設定を再構成し、システムの動作を確認します。</block>
+  <block id="e2b96d9e304cd2630ac73d4e768c0dd5" category="doc">コントローラ交換ワークフロー - ASA A250</block>
+  <block id="35f0eb77d868045d7301a3e051d0b836" category="paragraph">障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成を復元し、ストレージ リソースの制御を交換用コントローラに戻すことで、ASA A250 ストレージ システムのコントローラを交換します。</block>
+  <block id="23f9e2dbaccd7bc93fa7098dc0224c8d" category="paragraph">ASA A250 ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換などの定期的なメンテナンス タスクを実行すると、ダウンタイムやデータ損失を防ぐことができます。</block>
+  <block id="0799262b9ba99e27bd77815c3da8b1db" category="paragraph">メンテナンス手順では、ASA A250ストレージ システムがONTAP環境のストレージ ノードとしてすでに導入されていることを前提としています。</block>
+  <block id="3d22cca033fcf1b506e060c7ed59c839" category="doc">障害が発生したブートメディアをNetApp - AFF C250に返却します</block>
+  <block id="1a08526a18dd5d0b81ec11d650a5ca96" category="paragraph">AFF C250 システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。詳細については、<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>ページを参照してください。</block>
+  <block id="bc51aa890df7324adcd9ed9c8564f43e" category="summary">新しいブートメディアデバイスをAFF C250システムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。</block>
+  <block id="0908b349d34a3cae85f76e51e514005e" category="doc">パートナー ノードからの自動ブート メディア リカバリ - AFF C250</block>
+  <block id="2c2bc1eda9ecb1d339908c11a8b9f06d" category="paragraph">新しいブートメディアデバイスをAFF C250システムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。回復プロセス中に、システムは暗号化が有効になっているかどうかを確認し、使用されているキー暗号化の種類を判別します。キー暗号化が有効になっている場合は、システムが適切な手順を案内して復元します。</block>
+  <block id="0a135d011f75358e7092ec3146ba9359" category="summary">AFF C250システムのブートメディアには、重要なファームウェアと構成データが保存されます。交換プロセスには、コントローラ モジュールの取り外し、障害のあるブート メディアの取り外し、交換用のブート メディアのコントローラ モジュールへのインストール、コントローラ モジュールの再インストールが含まれます。</block>
+  <block id="8fda0ea89c747488ccba625c3d6982a5" category="doc">自動ブート回復のためにブートメディアを交換します - AFF C250</block>
+  <block id="edb41673610f1a52427ce477b13b9e54" category="paragraph">AFF C250システムのブートメディアには、重要なファームウェアと構成データが保存されます。交換プロセスには、コントローラ モジュールを取り外して開き、障害が発生したブート メディアを取り外し、交換用のブート メディアをコントローラ モジュールにインストールし、コントローラ モジュールを再インストールすることが含まれます。</block>
+  <block id="ec683f1c4bd824d8b4aa0efddd6a72ee" category="summary">AFF C250 システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。</block>
+  <block id="272a558c5e1170ae817bd70e71f39422" category="doc">自動ブートメディアリカバリの要件 - AFF C250</block>
+  <block id="fb91f1d2f329ed3e3268cc3d5d2d6cd9" category="paragraph">AFF C250 でブート メディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、正しい交換用ブート メディアがあることの確認、障害のあるコントローラの e0S（e0M レンチ）ポートに障害がないことの確認、Onboard Key Manager（OKM）または External Key Manager（EKM）が有効になっているかどうかの確認が含まれます。</block>
+  <block id="28de8c6d13290a0ef6c5ad0ffcc3b221" category="summary">AFF C250 システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、適切な容量のストレージを備えた USB フラッシュドライブがあることを確認し、正しい交換用ブートデバイスがあることを確認することが含まれます。</block>
+  <block id="8b60919014188311ae61c0aece538d5b" category="doc">手動ブートメディアリカバリの要件 - AFF C250</block>
+  <block id="465d022ea5128b78bccd6ab339466eea" category="summary">AFF C250 ストレージ システムのブート メディアの交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システムの機能を確認します。</block>
+  <block id="f47196de2ba40a7369a3169fa559c7fc" category="doc">ブートメディアの自動回復ワークフロー - AFF C250</block>
+  <block id="55ef5dd55c291ce2f0127481cff7710c" category="paragraph">ブート イメージの自動回復では、システムが適切なブート メニュー オプションを自動的に識別して選択します。パートナー ノードのブート イメージを使用して、AFF C250 ストレージ システムの交換用ブート メディアに ONTAP を再インストールします。</block>
+  <block id="e513b940c753310913380ea474ca3946" category="summary">AFF C250 ストレージ システムのブート メディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージのブート、暗号化の復元、およびシステム機能の検証を行います。</block>
+  <block id="e806888ed2e106f197d248697b03e11c" category="doc">ブートメディアの手動回復ワークフロー - AFF C250</block>
+  <block id="8314e19a4d1bd1b5496486f9f5915a30" category="summary">AFF C250 ストレージ システムで障害のあるコントローラーをシャットダウンして、ブート メディアの交換時にデータ損失を防ぎ、システムの安定性を確保します。</block>
+  <block id="d590b9da7e1205b81e3d0a2f2413fd0b" category="doc">自動ブートメディアリカバリのためにコントローラをシャットダウンします - AFF C250</block>
+  <block id="e3168389b51cfbb3c2317c411aa836b0" category="paragraph">AFF C250 ストレージ システムで障害のあるコントローラーをシャットダウンして、自動ブート メディア リカバリ プロセス中のデータ損失を防ぎ、システムの安定性を維持します。</block>
+  <block id="898c0c78fa2ca108537fd368fca0feec" category="doc">シャーシの交換を完了します - AFF C250</block>
+  <block id="c1e9a1a75607a52ba007d751b3cff79c" category="paragraph">コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返却して、AFF C250シャーシ交換手順の最終ステップを完了します。</block>
+  <block id="10ab1c4143339c7d9c80f49cad9b84ee" category="doc">シャーシを交換する - AFF C250</block>
+  <block id="1dc04fe14e8e7ab67ddaefa993eff9d2" category="paragraph">ハードウェア障害が発生した場合は、AFF C250 システムのシャーシを交換してください。交換プロセスには、コントローラーと電源ユニット（PSU）の取り外し、ドライブの取り外し、交換用シャーシの取り付け、シャーシ コンポーネントの再取り付けが含まれます。</block>
+  <block id="24516d7cded2962a367482b09cad7d63" category="paragraph">障害が発生した AFF C250 シャーシを交換してコンポーネントを再インストールしたら、<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block></block>
+  <block id="def01e0e8240ffa44ef3d38d426521bc" category="summary">AFF C250システムで障害のあるシャーシを交換する準備として、障害のあるシャーシを特定し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けます。</block>
+  <block id="89b718fa5321df6e6430f91569df7273" category="doc">シャーシの交換準備 - AFF C250</block>
+  <block id="0d6871bc51cc04888e9c29497949cdb6" category="paragraph">AFF C250 シャーシハードウェアの交換準備が完了したら、<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block>する必要があります。</block>
+  <block id="e32b4784e58e6df4fc362307cdb9a2ae" category="summary">AFF C250 システムでシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることの確認、ONTAP のローカル管理者の資格情報を持っていることの確認、適切な交換用シャーシ、および必要なツールが含まれます。</block>
+  <block id="765896d2546ad8173a99fdb7b5aa9c1c" category="doc">シャーシ交換の要件 - AFF C250</block>
+  <block id="5c7a883c6707cabbe1973443529f7510" category="paragraph">AFF C250 ストレージ システムのコントローラーをシャットダウンして、シャーシの交換時にデータの損失を防ぎ、システムの安定性を確保します。</block>
+  <block id="0fc8f7e266e479e53a46a0c65fea2d05" category="summary">AFF C250 ストレージ システムのシャーシ交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、シャーシを交換し、システムの動作を検証します。</block>
+  <block id="4757af4ab579ac77b495af94dd44b50a" category="doc">シャーシ交換ワークフロー - AFF C250</block>
+  <block id="71a88a7b2fcb330f27238fa1118cbe56" category="doc">コントローラの交換 - AFF C250</block>
+  <block id="5e4d9d7c562831ad77b7826b33c84581" category="paragraph">ハードウェア障害が発生した場合は、AFF C250システムのコントローラを交換してください。交換プロセスには、障害のあるコントローラの取り外し、コンポーネントの交換用コントローラへの移動、交換用コントローラの取り付け、および再起動が含まれます。</block>
+  <block id="a2ed05215dd0f6532b8bda5de18308e8" category="paragraph">障害のある AFF C250 コントローラーを交換したら、<block ref="c8905a4c68408046b8de9d3b84f93445" category="inline-link-macro-rx"></block>する必要があります。</block>
+  <block id="93b32c4bd5d3568942c9565987fc888b" category="paragraph">復元を完了し、システム構成AFF C250システムを確認した後、システムのケーブルを再接続し、ディスクを再割り当てする必要があります。</block>
+  <block id="f4ec183a042e7b7cdeea5daf8d5ba62b" category="doc">コントローラを交換するための要件 - AFF C250</block>
+  <block id="ebaa763438cb3dfa342ecbb4c0714ee1" category="paragraph">AFF C250ストレージ システムのコントローラーを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることを確認すること、正しい交換用コントローラがあることを確認すること、コントローラのコンソール出力をテキスト ログ ファイルに保存することが含まれます。</block>
+  <block id="f1ce15b5f19f37e299829de6379665c4" category="doc">コントローラの完全交換 - AFF C250</block>
+  <block id="aaded993df6fb29dbfbeebee1f3641fb" category="paragraph">AFF C250 システムのコントローラ交換を完了して完全に動作させるには、NetApp Storage Encryption の設定を復元し（必要な場合）、新しいコントローラのライセンスをインストールし、キットに同梱されている RMA 手順書の説明に従って障害が発生した部品を NetApp に返却する必要があります。</block>
+  <block id="aff7751fa6765ac3c00a099da6c8e69d" category="paragraph">AFF C250 ストレージ システムのコントローラーをシャットダウンして、コントローラーの交換時にデータ損失を防ぎ、システムの安定性を確保します。</block>
+  <block id="b4a9631d8fbe3a931a8185ea5c2ce65e" category="paragraph">ハードウェアの交換が完了し、AFF C250システムをメンテナンス モードで起動したら、交換用コントローラの低レベルのシステム構成を確認し、必要に応じてシステム設定を再構成する必要があります。</block>
+  <block id="e1265ce14088344e07db4afa9a54f0a2" category="summary">AFF C250 ストレージ システムのコントローラの交換を開始するには、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム設定を再構成し、システムの動作を確認します。</block>
+  <block id="ab17f711614db64be07dce91675bd8bb" category="doc">コントローラー交換ワークフロー - AFF C250</block>
+  <block id="c6e111ac745be862b4bf5f4f853dbff4" category="paragraph">障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成を復元し、ストレージ リソースの制御を交換用コントローラに戻すことで、AFF C250 ストレージ システムのコントローラを交換します。</block>
+  <block id="1ca77b2777ea29fd9e6f113829f2f359" category="summary">AFF C250 ハードウェアを保守する</block>
+  <block id="5370447dcd53e366544473fe9ce67f7b" category="paragraph">AFF C250 ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換などの定期的なメンテナンス タスクを実行すると、ダウンタイムやデータ損失を防ぐことができます。</block>
+  <block id="aa857f1fcaf6380b946a1dc363fefca9" category="paragraph">メンテナンス手順では、AFF C250ストレージ システムがONTAP環境のストレージ ノードとしてすでに導入されていることを前提としています。</block>
+  <block id="21cefb007c9064d8adcf6c162e74b0bf" category="paragraph">Cisco Nexus 3232C</block>
+  <block id="e48e73e576f724fd4213ab1eca7edb4a" category="paragraph">ONTAP 9.18.1</block>
+  <block id="1d8bdbbecd2a7992d9b2c5314cbc8da8" category="paragraph">Cisco Nexus 3132Q-V</block>
+  <block id="f8215ac1ab39569e2ede8f10c0a8405a" category="paragraph">Cisco Nexus 92300YC</block>
+  <block id="280107a5f53cc09efecfd6d30a3b7ebc" category="paragraph">NetApp CN1610</block>
+  <block id="0effdeffb425467d988456e0b00eae69" category="list-text">Cisco Nexus 5596UP</block>
+  <block id="ce89169afe5f44b11d42ea8fb935febd" category="list-text">Cisco Nexus 5596T</block>
+  <block id="6e6b3c059f21cf59109f565a691265e5" category="summary">障害のあるシャーシを識別し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けて、FAS500f システム内の障害のあるシャーシを交換する準備をします。</block>
+  <block id="2628fefc8eb3dd0daed369d6437b3be6" category="doc">シャーシ交換の準備 - FAS50</block>
+  <block id="184b19bc3f8626d1be1dd0cab08f9aa3" category="paragraph">FAS50シャーシハードウェアを交換する準備ができたら、<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block>。</block>
+  <block id="f54b05d1af2a0983ed444a766408e617" category="doc">障害が発生したブートメディアをNetAppに返却する - FAS500f</block>
+  <block id="e8b2340387473ca634a0c91e66f4f20c" category="paragraph">FAS500fシステムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。詳細については、<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>ページを参照してください。</block>
+  <block id="338d700940ffa38b3fed1d0bb8fcb107" category="summary">新しいブートメディアデバイスをFAS500fシステムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。</block>
+  <block id="cc77dbc4a0786e6482dd37059b56d1ae" category="doc">パートナーノードからの自動ブートメディアリカバリ - FAS500f</block>
+  <block id="6f80872e95274437d20c37b20f6275b7" category="paragraph">新しいブートメディアデバイスをFAS500fシステムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。回復プロセス中に、システムは暗号化が有効になっているかどうかを確認し、使用されているキー暗号化の種類を判別します。キー暗号化が有効になっている場合は、システムが適切な手順を案内して復元します。</block>
+  <block id="33f78cc27ad211499ab36f3caa22ee92" category="doc">USBドライブからの手動ブートメディアリカバリ - FAS500f</block>
+  <block id="912e44425d2365e6759211c156072906" category="paragraph">新しいブートメディアデバイスをFAS500fシステムにインストールしたら、USB ドライブからリカバリ イメージを起動し、パートナー ノードから構成を復元できます。</block>
+  <block id="3d0ecb3cfaae2673edc296e355b5f4ef" category="summary">FAS500fシステムのブート メディアには、重要なファームウェアと構成データが保存されます。交換プロセスには、コントローラ モジュールの取り外し、障害のあるブート メディアの取り外し、交換用のブート メディアのコントローラ モジュールへのインストール、コントローラ モジュールの再インストールが含まれます。</block>
+  <block id="d93b5e11e53cd64b7b6b5555798fbfec" category="doc">自動ブート回復のためにブートメディアを交換します - FAS500f</block>
+  <block id="aa5ffd2f7f856d23247a6b94149ef919" category="paragraph">FAS500fシステムのブート メディアには、重要なファームウェアと構成データが保存されます。交換プロセスには、コントローラ モジュールを取り外して開き、障害が発生したブート メディアを取り外し、交換用のブート メディアをコントローラ モジュールにインストールし、コントローラ モジュールを再インストールすることが含まれます。</block>
+  <block id="de8c9fd98c422989c3b6a88d75384992" category="summary">FAS500fシステムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。</block>
+  <block id="f2ba5caa9843c7a941f1c7fa8a011cf2" category="doc">自動ブートメディアリカバリの要件 - FAS500f</block>
+  <block id="5bafb3b795c82f15fe31bdaf2b81c18f" category="paragraph">FAS500fのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、正しい交換用ブート メディアがあることを確認すること、障害のあるコントローラの e0S（e0M レンチ）ポートに障害がないことの確認、オンボード キー マネージャ（OKM）または外部キー マネージャ（EKM）が有効になっているかどうかを確認することが含まれます。</block>
+  <block id="0c841e91ee50f813a691f3ce0f0aeed9" category="summary">FAS500fシステムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、適切な容量のストレージを備えたUSBフラッシュドライブがあることを確認し、正しい交換用ブートデバイスがあることを確認することが含まれます。</block>
+  <block id="765741455a177e539f457d4b8ac92938" category="doc">手動ブートメディアリカバリの要件 - FAS500f</block>
+  <block id="ef29f0c33b434a133e08a2dd1467a67c" category="summary">FAS500fストレージ システムのブート メディアの交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システムの機能を確認します。</block>
+  <block id="01c769803212ca7d51dee80b79c89436" category="doc">ブートメディアの自動回復ワークフロー - FAS500f</block>
+  <block id="f3f65014bac7b909ad2f3ba02d3fea86" category="paragraph">ブート イメージの自動回復では、システムが適切なブート メニュー オプションを自動的に識別して選択します。パートナー ノードのブート イメージを使用して、FAS500f ストレージ システムの交換用ブート メディアに ONTAP を再インストールします。</block>
+  <block id="f288b387072b372d1fd4441eaefb7179" category="summary">交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージのブート、暗号化の復元、およびシステム機能の検証を行うことで、FAS500fストレージ システムのブート メディアの交換を開始します。</block>
+  <block id="005f1abb3a6caacd59e17146466c81ec" category="doc">ブートメディアの手動リカバリワークフロー - FAS500f</block>
+  <block id="1e90d25b5d4315fa0a353ed309da9a37" category="doc">ブートメディアを交換し、手動ブートリカバリの準備をします - FAS500f</block>
+  <block id="c7fc64ee751d2702bf7363b95697096f" category="paragraph">FAS500fシステムのブートメディアには、重要なファームウェアと構成データが保存されます。交換プロセスには、システム管理モジュールの取り外し、障害のあるブートメディアの取り外し、交換用ブートメディアの取り付け、そしてUSBフラッシュドライブを使用した交換用ブートメディアへのONTAPイメージの手動転送が含まれます。</block>
+  <block id="ef69236d7ce6f17bdda64713c4fd98d0" category="summary">FAS500f ストレージ システムの障害のあるコントローラーをシャットダウンして、ブート メディアの交換時にデータ損失を防ぎ、システムの安定性を確保します。</block>
+  <block id="1c031737411d6eac5a6c713b9d642d71" category="doc">自動ブートメディアリカバリのためにコントローラをシャットダウンします - FAS500f</block>
+  <block id="af65388f2d96e3610ab33e5fba1e4b02" category="paragraph">FAS500fストレージ システムで障害のあるコントローラをシャットダウンし、自動ブート メディア リカバリ プロセス中のデータ損失を防ぎ、システムの安定性を維持します。</block>
+  <block id="2e736e93e05c443839c21174c3cba766" category="doc">シャーシの交換を完了します - FAS500f</block>
+  <block id="bb922797b51fa051ef0fa8b3c2345d34" category="paragraph">コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返却して、FAS500fシャーシ交換手順の最終ステップを完了します。</block>
+  <block id="6f379fd2db2934ddcd9565c6bf9195c8" category="doc">シャーシを交換する - FAS500f</block>
+  <block id="312e721269336f6368a28bf97444c2fd" category="paragraph">ハードウェア障害が発生した場合は、FAS500fシステムのシャーシを交換してください。交換プロセスには、コントローラーと電源ユニット（PSU）の取り外し、ドライブの取り外し、交換用シャーシの取り付け、シャーシコンポーネントの再取り付けが含まれます。</block>
+  <block id="31218be4fb4b9f62f1927ae5fddf75cb" category="paragraph">障害が発生したFAS500fシャーシを交換してコンポーネントを再インストールしたら、<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block></block>
+  <block id="614ad4b8e1c1cf5164b1bf4452447672" category="summary">FAS500fシステムで障害のあるシャーシを交換する準備として、障害のあるシャーシを特定し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けます。</block>
+  <block id="e8a6642f5704a6db07f52a9945c49c20" category="doc">シャーシの交換準備 - FAS500f</block>
+  <block id="af9360a6ec367ae3934fe5145773875a" category="paragraph">FAS500f シャーシ ハードウェアの交換準備が完了したら、<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block>する必要があります。</block>
+  <block id="170cce1f0458446b0bb892c25abafcc8" category="summary">FAS500fシステムのシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることの確認、ONTAPのローカル管理者クレデンシャルがあることの確認、正しい交換用シャーシ、および必要なツールが含まれます。</block>
+  <block id="2a34ff76cba69770f6d729eb2bcec1e0" category="doc">シャーシ交換の要件 - FAS500f</block>
+  <block id="c2e8017d38ede0b2a3f3b33db4dd3f66" category="paragraph">FAS500f ストレージ システムのコントローラーをシャットダウンして、シャーシの交換時にデータ損失を防ぎ、システムの安定性を確保します。</block>
+  <block id="976d99e773691725a33eedb1856c14b2" category="summary">FAS500fストレージ システムのシャーシ交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、シャーシを交換し、システムの動作を検証します。</block>
+  <block id="66fe1764bbfc62895e07c88d11f00b6c" category="doc">シャーシ交換ワークフロー - FAS500f</block>
+  <block id="5729d973fa3cbba37e09e85828263e44" category="doc">コントローラを交換 - FAS500f</block>
+  <block id="b6ab9b49a3bf96c46982eb4f27124ad7" category="paragraph">ハードウェア障害が発生した場合は、FAS500fシステムのコントローラを交換してください。交換プロセスには、障害のあるコントローラの取り外し、コンポーネントの交換用コントローラへの移動、交換用コントローラの取り付け、および再起動が含まれます。</block>
+  <block id="52cb3e0984cc1188632637714db80976" category="paragraph">障害のある FAS500f コントローラーを交換したら、<block ref="c8905a4c68408046b8de9d3b84f93445" category="inline-link-macro-rx"></block>する必要があります。</block>
+  <block id="aae6fbc2ac8ea637a50c84470ad4996d" category="paragraph">復元を完了し、システム構成FAS500fシステムを確認した後、システムのケーブルを再接続し、ディスクを再割り当てする必要があります。</block>
+  <block id="e62c7bcbce6931f4e5cefec006529f67" category="doc">コントローラーを交換するための要件 - FAS500f</block>
+  <block id="769924d2fa42c6cbdd27cdb8aebf9b0e" category="paragraph">FAS500fストレージ システムのコントローラを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることの確認、正しい交換用コントローラがあることの確認、およびコントローラのコンソール出力をテキスト ログ ファイルに保存することが含まれます。</block>
+  <block id="a5c075ee8b2e6479b937fd24d4e7c131" category="doc">コントローラの完全交換 - FAS500f</block>
+  <block id="f46bfaab99cc550e713d5fd4aa093739" category="paragraph">FAS500fシステムのコントローラ交換を完了して完全に動作させるには、NetApp Storage Encryptionの設定をリストア（必要な場合）し、新しいコントローラのライセンスをインストールし、障害が発生した部品をキットに同梱されているRMA手順書の説明に従ってNetAppに返却する必要があります。</block>
+  <block id="996e977a28e981a0cfc20475b884ffa6" category="paragraph">FAS500fストレージ システムのコントローラーをシャットダウンして、コントローラーを交換する際にデータの損失を防ぎ、システムの安定性を確保します。</block>
+  <block id="77efc27ea7cc7edd819709e60c98ffd0" category="paragraph">ハードウェアの交換が完了し、FAS500fシステムをメンテナンス モードで起動したら、交換用コントローラの低レベルのシステム構成を確認し、必要に応じてシステム設定を再構成する必要があります。</block>
+  <block id="793741dbe21d9514b2e4f8bc559f8062" category="summary">FAS500fストレージシステムのコントローラを交換するには、次のワークフロー手順に従ってください。</block>
+  <block id="02ddf1646130c87ede23c28b28b13476" category="doc">コントローラー交換ワークフロー - FAS500f</block>
+  <block id="2910a393aa082421834d8d871b20a809" category="summary">FAS500fハードウェアを保守する</block>
+  <block id="956194f104a0f38c3b230001087b4aec" category="paragraph">FAS500f ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換などの定期的なメンテナンス タスクを実行すると、ダウンタイムやデータ損失を防ぐことができます。</block>
+  <block id="18b7fef27cfdab1c569268be6baf5f9d" category="paragraph">メンテナンス手順では、FAS500fストレージシステムがONTAP環境のストレージ ノードとしてすでに導入されていることを前提としています。</block>
+  <block id="333d8c39f24915bdf4cd2a5cbb2c96c9" category="summary">FAS500fストレージシステムの主な仕様</block>
+  <block id="9b2d40af21d64d80278ee173eee93493" category="doc">FAS500fの主な仕様</block>
+  <block id="7971c747973f656fa0a258fe576a59ce" category="paragraph">以下は、FAS500fの一部の仕様です。FAS500fの仕様の完全なリストについては、<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）を参照してください。このページは、単一の高可用性ペアを反映しています。</block>
+  <block id="2993484ef64a91db7d4ffb4091f706d0" category="paragraph">プラットフォーム構成：FAS500fシングルシャーシHAペア</block>
+  <block id="9301497e894d25c1a5d8e0997da7a7eb" category="paragraph">ONTAPバージョン：9.16.1P2</block>
+  <block id="5a4e86e80e1a2b65d5e11606283fa0e6" category="inline-link-macro">AFF A250（自動回復）</block>
+  <block id="48f357e077fea73ea971448bfba251ef" category="list-text"><block ref="48f357e077fea73ea971448bfba251ef" category="inline-link-macro-rx"></block></block>
+  <block id="2c196d8c70003da4749b8a9477ed6300" category="inline-link-macro">AFF A250（手動回復）</block>
+  <block id="22f299d5f453aed209543d8d0bdadd53" category="list-text"><block ref="22f299d5f453aed209543d8d0bdadd53" category="inline-link-macro-rx"></block></block>
+  <block id="d9d3712e829421ad7450868d004f7f9a" category="list-text"><block ref="d9d3712e829421ad7450868d004f7f9a" category="inline-link-macro-rx"></block></block>
+  <block id="19f18a98450d557bdd5e993eeb0ca24a" category="list-text"><block ref="19f18a98450d557bdd5e993eeb0ca24a" category="inline-link-macro-rx"></block></block>
+  <block id="53d0a5cb3983747c67239f70946676ba" category="list-text"><block ref="53d0a5cb3983747c67239f70946676ba" category="inline-link-macro-rx"></block></block>
+  <block id="a5694d2a6f21dd1104537fe22c5ce095" category="list-text"><block ref="a5694d2a6f21dd1104537fe22c5ce095" category="inline-link-macro-rx"></block></block>
+  <block id="162c0aef515204afbd5f02d1715a1552" category="list-text"><block ref="162c0aef515204afbd5f02d1715a1552" category="inline-link-macro-rx"></block></block>
+  <block id="b53703a68aca47bc2d34413fc12b9686" category="list-text"><block ref="b53703a68aca47bc2d34413fc12b9686" category="inline-link-macro-rx"></block></block>
+  <block id="0e9127c21baccecba06d1965e12a9204" category="list-text"><block ref="0e9127c21baccecba06d1965e12a9204" category="inline-link-macro-rx"></block></block>
+  <block id="415f402a8be75f17ebca770ae274bee9" category="list-text"><block ref="415f402a8be75f17ebca770ae274bee9" category="inline-link-macro-rx"></block></block>
+  <block id="190e802ec51e4c06fc00287a967312b1" category="list-text"><block ref="190e802ec51e4c06fc00287a967312b1" category="inline-link-macro-rx"></block></block>
+  <block id="437e5a076f6c0b623e07ea8121a21ffa" category="list-text"><block ref="437e5a076f6c0b623e07ea8121a21ffa" category="inline-link-macro-rx"></block></block>
+  <block id="398fa7c0f807189fcfa3626c249969ed" category="list-text"><block ref="398fa7c0f807189fcfa3626c249969ed" category="inline-link-macro-rx"></block></block>
+  <block id="39fdf33f750bc59fc55e896f9553db72" category="list-text"><block ref="39fdf33f750bc59fc55e896f9553db72" category="inline-link-macro-rx"></block></block>
+  <block id="c6c1810cf11c6e5e45dbc0f652eeb82e" category="list-text"><block ref="c6c1810cf11c6e5e45dbc0f652eeb82e" category="inline-link-macro-rx"></block></block>
+  <block id="d4d95752430d31953462bea2ed080c82" category="list-text"><block ref="d4d95752430d31953462bea2ed080c82" category="inline-link-macro-rx"></block></block>
+  <block id="ef92df4448144dc5b04fa658bba46a3e" category="sidebar">AFF A250 ブートメディア自動化</block>
+  <block id="73c710838fb73a6d0bb29f50f91574d0" category="sidebar">AFF 250 ブートメディアマニュアル</block>
+  <block id="073d73c28f8d5787bc7ce23c0bad392e" category="sidebar">ASA C250 ブートメディア自動化</block>
+  <block id="42a46a847699d28a60c3a7e1b4f233b1" category="sidebar">ASA C250 ブートメディアマニュアル</block>
+  <block id="6ec648d108530e0f13c0944e1618f1c1" category="sidebar">ASA A250 ブートメディア自動化</block>
+  <block id="2b201f616d84718137f5c5a701acb0c1" category="sidebar">ASA A250 ブートメディアマニュアル</block>
+  <block id="8523343b69c75903dcc986fdb4a1cbcf" category="sidebar">AFF C250 ブートメディア自動化</block>
+  <block id="6364a5589d3ac8e79045b3275dc3846d" category="sidebar">AFF C250 ブートメディアマニュアル</block>
+  <block id="028a5f76f5ae8b0784cb7f71dcacb0ac" category="sidebar">シャーシ交換の準備</block>
+  <block id="3857caf5489220ee3ad8ce823746d7d7" category="sidebar">FAS500f ブートメディア自動化</block>
+  <block id="e97e37b3736f4796b4922c33c509044e" category="sidebar">FAS500f ブートメディアマニュアル</block>
 </blocks>

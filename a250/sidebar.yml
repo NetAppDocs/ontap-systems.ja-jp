@@ -16,13 +16,30 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF A250 のメンテナンス
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/a250/maintain-overview.html"
-  - title: ブートメディア
-    pdf-filename: AFF A250 ブートメディア
+  - title: ブートメディア - 自動回復
+    pdf-filename: AFF A250 ブートメディア自動化
     entries:
-    - title: 概要
-      url: "/a250/bootmedia-replace-overview.html"
+    - title: ブートメディアの交換ワークフロー
+      url: "/a250/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/a250/bootmedia-replace-requirements-bmr.html"
+    - title: コントローラのシャットダウン
+      url: "/a250/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/a250/bootmedia-replace-bmr.html"
+    - title: ブートメディアへのイメージのリストア
+      url: "/a250/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/a250/bootmedia-complete-rma-bmr.html"
+  - title: ブートメディア - 手動リカバリ
+    pdf-filename: AFF 250 ブートメディアマニュアル
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/a250/bootmedia-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/a250/bootmedia-replace-requirements.html"
     - title: 暗号化キーの確認
       url: "/a250/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
@@ -38,9 +55,13 @@ entries:
   - title: シャーシ
     pdf-filename: AFF A250 シャーシ
     entries:
-    - title: 概要
-      url: "/a250/chassis-replace-overview.html"
-    - title: 障害のあるコントローラをシャットダウンします
+    - title: シャーシの交換ワークフロー
+      url: "/a250/chassis-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/a250/chassis-replace-requirements.html"
+    - title: 交換の準備
+      url: "/a250/chassis-replace-prepare.html"
+    - title: コントローラのシャットダウン
       url: "/a250/chassis-replace-shutdown.html"
     - title: シャーシの交換
       url: "/a250/chassis-replace-move-hardware.html"
@@ -49,8 +70,10 @@ entries:
   - title: コントローラ
     pdf-filename: AFF A250 コントローラモジュール
     entries:
-    - title: 概要
-      url: "/a250/controller-replace-overview.html"
+    - title: コントローラの交換ワークフロー
+      url: "/a250/controller-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/a250/controller-replace-requirements.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a250/controller-replace-shutdown.html"
     - title: コントローラを交換してください
@@ -59,7 +82,7 @@ entries:
       url: "/a250/controller-replace-system-config-restore-and-verify.html"
     - title: システムにケーブルを再接続
       url: "/a250/controller-replace-recable-reassign-disks.html"
-    - title: システムのリストアを完了
+    - title: コントローラ交換後の処理
       url: "/a250/controller-replace-restore-system-rma.html"
   - title: DIMM
     url: "/a250/dimm-replace.html"

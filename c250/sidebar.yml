@@ -16,13 +16,30 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF C250メンテナンス
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/c250/maintain-overview.html"
-  - title: ブートメディア
-    pdf-filename: AFF C250ブートメディア
+  - title: ブートメディア - 自動回復
+    pdf-filename: AFF C250 ブートメディア自動化
     entries:
-    - title: 概要
-      url: "/c250/bootmedia-replace-overview.html"
+    - title: ブートメディアの交換ワークフロー
+      url: "/c250/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/c250/bootmedia-replace-requirements-bmr.html"
+    - title: コントローラのシャットダウン
+      url: "/c250/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/c250/bootmedia-replace-bmr.html"
+    - title: ブートメディアへのイメージのリストア
+      url: "/c250/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/c250/bootmedia-complete-rma-bmr.html"
+  - title: ブートメディア - 手動リカバリ
+    pdf-filename: AFF C250 ブートメディアマニュアル
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/c250/bootmedia-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/c250/bootmedia-replace-requirements.html"
     - title: 暗号化キーの確認
       url: "/c250/bootmedia-encryption-preshutdown-checks.html"
     - title: 障害のあるコントローラをシャットダウンします
@@ -38,28 +55,34 @@ entries:
   - title: シャーシ
     pdf-filename: AFF C250シャーシ
     entries:
-    - title: 概要
-      url: "/c250/chassis-replace-overview.html"
-    - title: 障害のあるコントローラをシャットダウンします
+    - title: シャーシの交換ワークフロー
+      url: "/c250/chassis-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/c250/chassis-replace-requirements.html"
+    - title: 交換の準備
+      url: "/c250/chassis-replace-prepare.html"
+    - title: コントローラのシャットダウン
       url: "/c250/chassis-replace-shutdown.html"
-    - title: ハードウェアを交換します
+    - title: シャーシの交換
       url: "/c250/chassis-replace-move-hardware.html"
-    - title: 交換後の処理
+    - title: シャーシ交換後の処理
       url: "/c250/chassis-replace-complete-system-restore-rma.html"
   - title: コントローラ
     pdf-filename: AFF C250コントローラモジュール
     entries:
-    - title: 概要
-      url: "/c250/controller-replace-overview.html"
+    - title: コントローラの交換ワークフロー
+      url: "/c250/controller-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/c250/controller-replace-requirements.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/c250/controller-replace-shutdown.html"
-    - title: コントローラモジュールを交換します
+    - title: コントローラを交換してください
       url: "/c250/controller-replace-move-hardware.html"
     - title: システム設定を復元します
       url: "/c250/controller-replace-system-config-restore-and-verify.html"
     - title: システムにケーブルを再接続
       url: "/c250/controller-replace-recable-reassign-disks.html"
-    - title: システムのリストアを完了
+    - title: コントローラ交換後の処理
       url: "/c250/controller-replace-restore-system-rma.html"
   - title: DIMM
     url: "/c250/dimm-replace.html"

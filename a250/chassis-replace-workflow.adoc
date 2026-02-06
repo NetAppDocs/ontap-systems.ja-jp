@@ -1,0 +1,34 @@
+---
+permalink: a250/chassis-replace-workflow.html 
+sidebar: sidebar 
+keywords: aff a250, replace the chassis workflow 
+summary: AFF A250 ストレージ システムのシャーシ交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、シャーシを交換して、システムの動作を検証します。 
+---
+= シャーシ交換ワークフロー - AFF A250
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFF A250 ストレージ システムのシャーシ交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、シャーシを交換して、システムの動作を検証します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:chassis-replace-requirements.html["シャーシ交換要件を確認する"]
+[role="quick-margin-para"]
+システムの互換性、必要なツール、 ONTAP認証情報、コンポーネント機能の検証など、シャーシの交換要件を確認します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]link:chassis-replace-prepare.html["シャーシ交換の準備"]
+[role="quick-margin-para"]
+システムの場所を特定し、資格情報とツールを収集し、交換用シャーシを確認し、ケーブルにラベルを付けて、シャーシ交換の準備をします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:chassis-replace-shutdown.html["コントローラをシャットダウン"]
+[role="quick-margin-para"]
+シャーシのメンテナンスを安全に実行するには、コントローラをシャットダウンします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:chassis-replace-move-hardware.html["シャーシを交換してください"]
+[role="quick-margin-para"]
+障害のあるシャーシから交換用シャーシにコンポーネントを移動します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:chassis-replace-complete-system-restore-rma.html["シャーシ交換後の処理"]
+[role="quick-margin-para"]
+コントローラを起動し、ギブバックを実行し、障害が発生したシャーシをNetAppに返却して、交換を完了します。

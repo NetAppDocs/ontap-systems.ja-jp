@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: fas500f, verify and set HA state, complete the replacement process 
 summary: キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。 
 ---
-= リストアと交換のプロセスを完了します。 FAS500f
+= シャーシの交換を完了します - FAS500f
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返却して、FAS500fシャーシ交換手順の最終ステップを完了します。
+
 キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。
 
 

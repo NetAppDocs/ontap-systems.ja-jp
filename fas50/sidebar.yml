@@ -65,7 +65,9 @@ entries:
       url: "/fas50/chassis-replace-workflow.html"
     - title: 要件を確認する
       url: "/fas50/chassis-replace-requirements.html"
-    - title: コントローラのシャットダウン
+    - title: シャーシ交換の準備
+      url: "/fas50/chassis-replace-prepare.html"
+    - title: 障害のあるコントローラをシャットダウンします
       url: "/fas50/chassis-replace-shutdown.html"
     - title: シャーシの交換
       url: "/fas50/chassis-replace-move-hardware.html"

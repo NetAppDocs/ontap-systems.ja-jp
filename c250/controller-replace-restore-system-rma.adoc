@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff c250, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: 'システムを完全に動作状態に戻すには、 NetApp Storage Encryption の構成をリストアし（必要な場合）、新しいコントローラのライセンスをインストールし、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。テクニカルサポートにお問い合わせください https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"]RMA 番号を確認する場合や、交換用手順にサポートが必要な場合は、日本国内サポート用電話番号：国内フリーダイヤル 0066-33-123-265 または 0066-33-821-274 （国際フリーフォン 800-800-80-800 も使用可能）までご連絡ください。' 
 ---
-= システムの復元の完了- AFF C250
+= コントローラの完全交換 - AFF C250
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-システムを完全に動作状態に戻すには、 NetApp Storage Encryption の構成をリストアし（必要な場合）、新しいコントローラのライセンスをインストールし、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。
+AFF C250 システムのコントローラ交換を完了して完全に動作させるには、NetApp Storage Encryption の設定を復元し（必要な場合）、新しいコントローラのライセンスをインストールし、キットに同梱されている RMA 手順書の説明に従って障害が発生した部品を NetApp に返却する必要があります。
 
 
 

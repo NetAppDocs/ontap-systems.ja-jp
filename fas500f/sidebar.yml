@@ -16,21 +16,38 @@ entries:
 - title: メンテナンス
   pdf-filename: FAS500f メンテナンス
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/fas500f/maintain-overview.html"
-  - title: ブートメディア
-    pdf-filename: FAS500f ブートメディア
+  - title: ブートメディア - 自動回復
+    pdf-filename: FAS500f ブートメディア自動化
     entries:
-    - title: 概要
-      url: "/fas500f/bootmedia-replace-overview.html"
+    - title: ブートメディアの交換ワークフロー
+      url: "/fas500f/bootmedia-replace-workflow-bmr.html"
+    - title: 要件を確認する
+      url: "/fas500f/bootmedia-replace-requirements-bmr.html"
+    - title: 障害のあるコントローラをシャットダウンします
+      url: "/fas500f/bootmedia-shutdown-bmr.html"
+    - title: ブートメディアを交換します
+      url: "/fas500f/bootmedia-replace-bmr.html"
+    - title: ブートイメージを起動します
+      url: "/fas500f/bootmedia-recovery-image-boot-bmr.html"
+    - title: 障害のある部品をネットアップに返却します
+      url: "/fas500f/bootmedia-complete-rma-bmr.html"
+  - title: ブートメディア - 手動リカバリ
+    pdf-filename: FAS500f ブートメディアマニュアル
+    entries:
+    - title: ブートメディアの交換ワークフロー
+      url: "/fas500f/bootmedia-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/fas500f/bootmedia-replace-requirements.html"
     - title: 暗号化キーの確認
       url: "/fas500f/bootmedia-encryption-preshutdown-checks.html"
-    - title: ノードをシャットダウン
+    - title: 障害のあるコントローラをシャットダウンします
       url: "/fas500f/bootmedia-shutdown.html"
-    - title: ブートイメージを交換します
+    - title: ブートメディアを交換します
       url: "/fas500f/bootmedia-replace.html"
     - title: ブートイメージを起動します
-      url: "/fas500f/bootmedia-recovery-image-boot-non-2n-mcc.html"
+      url: "/fas500f/bootmedia-recovery-image-boot.html"
     - title: アンコウカノ
       url: "/fas500f/bootmedia-encryption-restore.html"
     - title: 障害のある部品をネットアップに返却します
@@ -38,28 +55,34 @@ entries:
   - title: シャーシ
     pdf-filename: FAS500f シャーシ
     entries:
-    - title: 概要
-      url: "/fas500f/chassis-replace-overview.html"
-    - title: 障害のあるコントローラをシャットダウンします
+    - title: シャーシの交換ワークフロー
+      url: "/fas500f/chassis-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/fas500f/chassis-replace-requirements.html"
+    - title: 交換の準備
+      url: "/fas500f/chassis-replace-prepare.html"
+    - title: コントローラのシャットダウン
       url: "/fas500f/chassis-replace-shutdown.html"
-    - title: ハードウェアを交換します
+    - title: シャーシの交換
       url: "/fas500f/chassis-replace-move-hardware.html"
-    - title: 交換後の処理
+    - title: シャーシ交換後の処理
       url: "/fas500f/chassis-replace-complete-system-restore-rma.html"
   - title: コントローラ
     pdf-filename: FAS500f コントローラモジュール
     entries:
-    - title: 概要
-      url: "/fas500f/controller-replace-overview.html"
+    - title: コントローラの交換ワークフロー
+      url: "/fas500f/controller-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/fas500f/controller-replace-requirements.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/fas500f/controller-replace-shutdown.html"
-    - title: コントローラモジュールを交換します
+    - title: コントローラを交換してください
       url: "/fas500f/controller-replace-move-hardware.html"
     - title: システム設定を復元します
       url: "/fas500f/controller-replace-system-config-restore-and-verify.html"
     - title: システムにケーブルを再接続
       url: "/fas500f/controller-replace-recable-reassign-disks.html"
-    - title: システムのリストアを完了
+    - title: コントローラ交換後の処理
       url: "/fas500f/controller-replace-restore-system-rma.html"
   - title: DIMM
     url: "/fas500f/dimm-replace.html"
@@ -70,8 +93,10 @@ entries:
   - title: メザニンカード
     url: "/fas500f/mezzanine-replace.html"
   - title: NVMEM バッテリ
-    url: "/fas500f/nvmem-battery-replace.html"
+    url: "/fas500f/nvmem-nvram-battery-replace.html"
   - title: 電源装置
     url: "/fas500f/power-supply-replace.html"
   - title: リアルタイムクロックバッテリ
     url: "/fas500f/rtc-battery-replace.html"
+- title: 主な仕様
+  url: "/fas500f/overview.html"
