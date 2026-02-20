@@ -14823,7 +14823,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1ca77b2777ea29fd9e6f113829f2f359" category="summary">AFF C250 ハードウェアを保守する</block>
   <block id="5370447dcd53e366544473fe9ce67f7b" category="paragraph">AFF C250 ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換などの定期的なメンテナンス タスクを実行すると、ダウンタイムやデータ損失を防ぐことができます。</block>
   <block id="aa857f1fcaf6380b946a1dc363fefca9" category="paragraph">メンテナンス手順では、AFF C250ストレージ システムがONTAP環境のストレージ ノードとしてすでに導入されていることを前提としています。</block>
-  <block id="21cefb007c9064d8adcf6c162e74b0bf" category="paragraph">Cisco Nexus 3232C</block>
   <block id="e48e73e576f724fd4213ab1eca7edb4a" category="paragraph">ONTAP 9.18.1</block>
   <block id="1d8bdbbecd2a7992d9b2c5314cbc8da8" category="paragraph">Cisco Nexus 3132Q-V</block>
   <block id="f8215ac1ab39569e2ede8f10c0a8405a" category="paragraph">Cisco Nexus 92300YC</block>
@@ -14920,4 +14919,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="028a5f76f5ae8b0784cb7f71dcacb0ac" category="sidebar">シャーシ交換の準備</block>
   <block id="3857caf5489220ee3ad8ce823746d7d7" category="sidebar">FAS500f ブートメディア自動化</block>
   <block id="e97e37b3736f4796b4922c33c509044e" category="sidebar">FAS500f ブートメディアマニュアル</block>
+  <block id="3e43f7eeca64d5c830b0064870a6156b" category="admonition">設置およびメンテナンス手順中は、検証済みの接地点に接続された接地リストストラップを常に着用してください。適切なESD予防措置に従わないと、コントローラーノード、ストレージシェルフ、およびネットワークスイッチに永久的な損傷が発生する可能性があります。</block>
+  <block id="65a7bfdd77aba70777e2700d48d0925f" category="paragraph">この手順は、一度に 1 つの PSU を交換する場合について説明しています。PSU のタイプ（AC または DC）に応じて適切な手順を使用します。</block>
+  <block id="9bedcc9650ba1fe86ed7720eb975429e" category="list-text">シャーシの背面に進みます。</block>
 </blocks>
