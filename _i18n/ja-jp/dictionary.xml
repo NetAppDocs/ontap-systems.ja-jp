@@ -8074,7 +8074,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b58ec5a6cf078c8a3a2b309a797f9e62" category="paragraph">コントローラはストレージプールを再接続し、ブートを完了します。</block>
   <block id="db4669e53766b1110dbd428a22b6f5cc" category="list-text">システム管理カムボタンを押します。</block>
   <block id="cf91b43675e7187d6e724e7c312e336a" category="list-text">カムラッチDOをモジュールからできるだけ離します。</block>
-  <block id="f5c1d99a4f032f30d087e32fbbbdb994" category="paragraph">障害のあるコントローラをシャットダウンするかテイクオーバーします。-障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。</block>
   <block id="5050dae1093a80a257a1d121ca5f3b0f" category="section-title">手順4：コントローラの状態を確認する</block>
   <block id="417968dd9c410e2ebdf82236e2a6f1d8" category="doc">手順1：ストレージコントローラをネットワークに接続する</block>
   <block id="ee6c90ad735c4fc892e900202d6ff034" category="list-text">クラスタ/ HAインターコネクトケーブルを使用して、ポートe1aとe1a、ポートe7aとe7aを接続します。</block>
@@ -13299,7 +13298,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4144051484bacbb26b0997a24a36532e" category="paragraph"><block ref="d5be9149b0861afc30e359e3506a3da0" prefix="" category="inline-code"></block></block>
   <block id="4e08d1e0cedf01306836a427edd98e6a" category="list-text">コンソール ケーブルを交換ノードに移動し、次のように入力します。</block>
   <block id="cd74239882532c0ea03cfa93da31d5cb" category="paragraph"><block ref="8d87a410a64e11591a338ede7162a6d2" prefix="" category="inline-code"></block></block>
-  <block id="45a2d32fc61cc2d123cf4027040c4bf8" category="paragraph">障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じてコントローラのストレージ フェイルオーバー テイクオーバーを実行して、正常なコントローラが障害のあるコントローラ ストレージから引き続きデータを提供できるようにする必要があります。</block>
   <block id="b5ca6041147fb4f4df4801f4f10784f5" category="inline-link-macro">ONTAPクラスタ内のノードレベルの詳細を表示する</block>
   <block id="22dd5ea8b069cf90dfb213fcf3136023" category="list-text">4 つ以上のノードを持つクラスターがある場合は、クォーラム内になければなりません。ノードに関するクラスター情報を表示するには、<block ref="639161158d7426b3865ce9c5a6f648b3" prefix=" " category="inline-code"></block>指示。詳細については、<block ref="639161158d7426b3865ce9c5a6f648b3" prefix=" " category="inline-code"></block>コマンドについては、<block ref="812d195420030f92a12eef2f47c24053" category="inline-link-macro-rx"></block> 。</block>
   <block id="3339c1abb6a38c2a82f66c0780893536" category="list-text">クラスターがクォーラムにない場合、または (障害のあるコントローラー以外の) コントローラーの正常性または適格性が false と表示される場合は、障害のあるコントローラーをシャットダウンする前に問題を修正する必要があります。見る<block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block> 。</block>
@@ -14922,4 +14920,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3e43f7eeca64d5c830b0064870a6156b" category="admonition">設置およびメンテナンス手順中は、検証済みの接地点に接続された接地リストストラップを常に着用してください。適切なESD予防措置に従わないと、コントローラーノード、ストレージシェルフ、およびネットワークスイッチに永久的な損傷が発生する可能性があります。</block>
   <block id="65a7bfdd77aba70777e2700d48d0925f" category="paragraph">この手順は、一度に 1 つの PSU を交換する場合について説明しています。PSU のタイプ（AC または DC）に応じて適切な手順を使用します。</block>
   <block id="9bedcc9650ba1fe86ed7720eb975429e" category="list-text">シャーシの背面に進みます。</block>
+  <block id="6c2bf859d9ce264150989f2d23c86e92" category="paragraph">障害のあるコントローラーを引き継いで停止し、正常なコントローラーが障害のあるコントローラーのストレージからデータを引き続き提供できるようにします。これを行うには、AutoSupportで自動ケース作成を抑制し、自動ギブバックを無効にして、障害のあるコントローラをLOADERプロンプトに切り替えます。LOADERプロンプトは、FRUを交換できる安全な停止状態です。</block>
+  <block id="0cea086e190611d579375e0cfbe7f6b7" category="paragraph">障害のあるコントローラを LOADER プロンプトに停止し、ブート環境変数をキャプチャして、シャットダウンを完了します。LOADER プロンプトは、ブート メディアを交換できる安全な停止状態です。</block>
+  <block id="580317d87f0c97d7c347306d452cfb2c" category="paragraph">障害のあるコントローラーをシャットダウンするか、引き継ぎます。- 障害のあるコントローラーを引き継いで停止し、正常なコントローラーが障害のあるコントローラーのストレージからデータを引き続き提供できるようにします。これを行うには、AutoSupport で自動ケース作成を抑制し、自動ギブバックを無効にして、障害のあるコントローラを LOADER プロンプトに切り替えます。LOADER プロンプトは、FRU を交換できる安全な停止状態です。</block>
 </blocks>
