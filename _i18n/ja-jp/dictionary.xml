@@ -5332,12 +5332,7 @@
   <block id="68d685ddbaa25f1a411d5e93d6f91913" category="list-text">ONTAP のローカル管理者のクレデンシャル。</block>
   <block id="d6562c849f41b9038124f0c304aed030" category="list-text">すべてのクライアント/ホストからネットアップシステム上のデータへのアクセスを停止します。</block>
   <block id="d61b46d9cd719b77efb76269147aa377" category="list-text">外部バックアップジョブを一時停止します。</block>
-  <block id="356bf392971487f892daba5338258571" category="paragraph">シャットダウン前のベストプラクティスは次のとおりです。</block>
-  <block id="2ee5edc561a6167cf2d57a64ee655bef" category="inline-link">システムの健全性チェック</block>
-  <block id="7023017d0098f741d6569842ee62b922" category="list-text">追加を実行します<block ref="9ace058273de133e6accbea83a7d278a" category="inline-link-rx"></block>。</block>
-  <block id="f40b8507b340a958be200bec6d3758a0" category="list-text">ONTAP をシステムの推奨リリースにアップグレードします。</block>
   <block id="9f4d2068e7b3d206efc0252b3da597a5" category="inline-link">Active IQ ウェルネスアラートとリスク</block>
-  <block id="c5df4dcae9a001142a36959487445ff6" category="list-text">いずれかを解決します<block ref="31b25beca26cb366eeb0665e3c0d7cbf" category="inline-link-rx"></block>。システムコンポーネントのLEDなど、現在システムに発生している障害をメモします。</block>
   <block id="3923b7d5100131c85be2160c8b680704" category="list-text">SSHを使用してクラスタにログインするか、クラスタ内の任意のノードからローカルのコンソールケーブルとラップトップ/コンソールを使用してログインします。</block>
   <block id="0d16db60da2c01b63ef84ee8d616c2fb" category="paragraph"><block ref="b206d268f79aeaa7c4f1e44684d2f080" prefix="" category="inline-code"></block></block>
   <block id="a39c8c38e51a42fcfaac22367dd19064" category="list-text">各コントローラが停止するまで待ち、LOADERプロンプトを表示します。</block>
@@ -7474,7 +7469,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="0be7ecaeb710959e64858a36fa1f8783" category="inline-link">AFF A1K用</block>
   <block id="c61e96543ff55077f64d8dd03940c2c6" category="inline-link">AFF A70用</block>
   <block id="8cd7d5cbedf290a9b729cc263d9b289c" category="paragraph">ONTAP 9.15.1</block>
-  <block id="3fa7c0866aba2253b800fb8f1b9d08dc" category="list-text">各コントローラのBMCへのアクセス性。</block>
   <block id="ac632c351c050929564cd7a72c3d383a" category="doc">障害のあるコントローラをシャットダウンします- AFF A1K</block>
   <block id="a4fbb291103a5430eb9ece2393c095a4" category="doc">コントローラのギブバック- AFF A1K</block>
   <block id="fb829c49a3a2da88fb46330449bb960d" category="summary">システムを完全な状態にリストアするには、LIFを確認し、クラスタの健常性を確認して、障害が発生したパーツをNetAppに戻す必要があります。RMA番号を確認する場合や、交換手順についてサポートが必要な場合は、テクニカルサポートにお問い合わせください。にアクセスするか、日本国内サポート用電話番号：国内フリーダイヤル0066-33-123-265または0066-33-821-274（国際フリーフォン800-800-80-800も使用可能）までご連絡ください。<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block></block>
@@ -8757,7 +8751,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="9959e1ea8c67446c566e6a371f9e14cb" category="list-text">障害コントローラで、リストアバックアップが成功したかどうかを確認するプロンプトが表示されたらと入力し<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>ます。</block>
   <block id="b883391d9dfbf834ff0bda07a53554f5" category="list-text">障害コントローラで、リストアした構成を使用するかどうかを確認するメッセージが表示されたらと入力し<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>ます。</block>
   <block id="d0ec0afe83814a07fcdbf02b0d2e2e8b" category="list-text">障害コントローラで、ノードのリブートを求めるプロンプトが表示されたらと入力し<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>ます。</block>
-  <block id="cd979ca520736846558f2b04a04b63da" category="paragraph">コンソール/ラップトップを使用している場合は、同じクラスタ管理者のクレデンシャルを使用してコントローラにログインします。</block>
   <block id="4250e5b5781f94ff901cc1822461f6ae" category="doc">システム管理モジュールの交換- AFF A1K</block>
   <block id="b1b14a007e6d27cacb6cbf9837dd5e7e" category="doc">コントローラのギブバック- AFF A70とAFF A90</block>
   <block id="4443f66d8d4febc600e0d4d0b3b0db91" category="doc">コントローラのギブバック- ASA A70およびASA A90</block>
@@ -9399,7 +9392,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7329bfa51dec924de206ced093bea600" category="paragraph">* 40/100GbEケーブル*</block>
   <block id="8f31147c7cfeb7520dc9739e31dedc90" category="image-alt">40 / 100Gbケーブル</block>
   <block id="ec83c89c1bfd1fa2fe72db4df75b0e43" category="image-alt">40 / 100GbEイーサネットホストネットワークスイッチへのケーブル接続</block>
-  <block id="8f03269dbdbab70bab244893051fb6ec" category="paragraph">各コントローラで、ポート1a、1b、1c、および1dをFCホストネットワークスイッチにケーブル接続します。</block>
   <block id="241c17a1be2cc4feae5c8c6007f8aed3" category="paragraph">* 64 Gb/秒FCケーブル*</block>
   <block id="176084e0e3d1d8b98919ade28704bd7b" category="inline-image-macro">64Gb FCケーブル、幅= 100px</block>
   <block id="0174aef3c6edce25256f90638a06bdca" category="paragraph"><block ref="0174aef3c6edce25256f90638a06bdca" category="inline-image-macro-rx" type="image"></block></block>
@@ -9867,7 +9859,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4288b2b72921e4670bb8b42ba6a5248d" category="list-text">すべてのクラスタノードのSP / BMCアドレスを特定します。</block>
   <block id="bb000e8434af9c71358c26cf3aa76ce3" category="list-text">クラスタシェルを終了します。</block>
   <block id="d9f6eac526670fe9182f1a63d251a180" category="paragraph"><block ref="f24f62eeb789199b9b2e467df3b1876b" prefix="" category="inline-code"></block></block>
-  <block id="29b1aa97ab42c7253b7c5769a711e501" category="list-text">前の手順の出力に表示されたいずれかのノードのIPアドレスを使用してSSH経由でSP / BMCにログインし、進捗状況を監視します。</block>
   <block id="4e66424513d5ccef0e91ad9aa7c87642" category="list-text">次のメッセージが表示されたら、クラスタ内の各コントローラに「* y *」と入力します。</block>
   <block id="38ae227cf94e3775806bccfd95814d4b" category="paragraph"><block ref="035b082bfaf23bf2d7b95c3ef597d380" prefix="" category="inline-code"></block></block>
   <block id="a5e51e5f50ca83720f1d0d8b17c1e93b" category="list-text">ここでは、一般的な設定について説明します。具体的なケーブル接続は、ご使用のストレージシステム用に注文したコンポーネントによって異なります。設定およびスロットプライオリティの詳細については、を参照してください <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
@@ -14924,4 +14915,12 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="0cea086e190611d579375e0cfbe7f6b7" category="paragraph">障害のあるコントローラを LOADER プロンプトに停止し、ブート環境変数をキャプチャして、シャットダウンを完了します。LOADER プロンプトは、ブート メディアを交換できる安全な停止状態です。</block>
   <block id="580317d87f0c97d7c347306d452cfb2c" category="paragraph">障害のあるコントローラーをシャットダウンするか、引き継ぎます。- 障害のあるコントローラーを引き継いで停止し、正常なコントローラーが障害のあるコントローラーのストレージからデータを引き続き提供できるようにします。これを行うには、AutoSupport で自動ケース作成を抑制し、自動ギブバックを無効にして、障害のあるコントローラを LOADER プロンプトに切り替えます。LOADER プロンプトは、FRU を交換できる安全な停止状態です。</block>
   <block id="0348833f0ff47bd2ae37f1706a53ef42" category="list-text">HAインターコネクトリンクがダウンした場合は、復旧してください：</block>
+  <block id="5689c5ea3692b97ad8c9b15340cdeaf8" category="admonition">中二階カードのつまみネジを完全に締め付けてください。緩んでいる場合、e0eからe0hまでのポートが検出されない可能性があり、LEDが点滅し続け、ログに「サポートされていないケーブル」エラーが表示される可能性があります。</block>
+  <block id="4383fe9a37feb4f64a0355e3ec27ad10" category="paragraph">抽出された ONTAP イメージから、<block ref="6e2807816e9d2621b7e5dffff6c33711" prefix=" " category="inline-code"></block>フォルダを USB フラッシュドライブのルートディレクトリにコピーします。</block>
+  <block id="8b0642e6333dcba17664a67ef72215ec" category="list-text">各コントローラーのBMCアクセス性。</block>
+  <block id="da9053d5fc06539ec5cadf63d46c662d" category="list-text">前の手順で特定したIPアドレスを使用して、各コントローラのSP/BMCにログインします：</block>
+  <block id="43ed5e374baf2e56183228d2ee15fdc4" category="list-text">SSH 経由で BMC からログインする場合は、SP/BMC アドレス（例：<block ref="4af43ee092242a6ac7ac3f68e7a27542" prefix=" " category="inline-code"></block>）を使用して接続し、コマンド<block ref="6a412eb180c3f0a9798690443fba49e1" prefix=" " category="inline-code"></block>を入力して認証します。</block>
+  <block id="4238d84ec7e4655601b7b55b2f076b2e" category="list-text">ローカルコンソールまたはコントローラに直接接続されているラップトップを使用している場合は、同じクラスタ管理者のクレデンシャルを使用してログインします。</block>
+  <block id="8e06442a81408e5b3d9d881ee34604d9" category="list-text">ポートe10bをシェルフ1のNSM Bポートe0bに接続します。</block>
+  <block id="e075a310e0208871f253ed1786f7aa85" category="list-text">各コントローラで、ポート2a、2b、2c、2dをFCホストネットワークスイッチにケーブル接続します。</block>
 </blocks>

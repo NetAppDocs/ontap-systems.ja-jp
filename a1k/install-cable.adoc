@@ -195,7 +195,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[100GbE QSFP28銅線ケーブル]
 .. ポートe11aをシェルフ1のNSM Aのポートe0aに接続します。
 .. ポートe11bをシェルフ2のNSM Bのポートe0bに接続します。
 .. ポートe10aをシェルフ2のNSM Aのポートe0aに接続します。
-.. ポートe10bをシェルフ1のNSM Aのポートe0bに接続します。
+.. ポートe10bをシェルフ1のNSM Bポートe0bに接続します。
 +
 image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg["コントロオラAノコントロオラ/シエルフカンノセツソク"]
 
