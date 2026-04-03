@@ -394,6 +394,9 @@ IMPORTANT: 電源コードは接続しないでください。
 
 コントローラを外付けストレージにケーブル接続します。
 
+
+NOTE: システムに外部シェルフがない場合は、link:../sas3/install-cabling-worksheets-examples-fas2600.html#fas2820-platform-in-a-multipath-ha-configuration-with-no-external-shelves["外部シェルフなしのマルチパスHA構成におけるFAS2820のケーブル接続手順"]を参照してください。
+
 次の表に、ドライブシェルフをストレージシステムにケーブル接続する際の図のケーブルタイプ、コールアウト番号、およびケーブルの色を示します。
 
 
