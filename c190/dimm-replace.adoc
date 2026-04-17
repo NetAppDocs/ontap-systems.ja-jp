@@ -2,7 +2,7 @@
 permalink: c190/dimm-replace.html 
 sidebar: sidebar 
 keywords: aff c190, replace dimm 
-summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
+summary: ストレージシステムで、ヘルスモニタアラートに基づく過剰な訂正可能エラー訂正コードエラーや、通常は単一のDIMMの障害によってストレージシステムがONTAPをブートできなくなる訂正不能なECCエラーなどのエラーが発生した場合は、コントローラ内のDIMMを交換する必要があります。 
 ---
 = DIMM と AFF C190 を交換してください
 :allow-uri-read: 

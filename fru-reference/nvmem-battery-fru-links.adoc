@@ -4,7 +4,7 @@ permalink: fru-reference/nvmem-battery-fru-links.html
 keywords: NVMEM battery, NVRAM battery, field replaceable units, FRU, battery replacement 
 summary: NetAppストレージ システムのNVMEM/ NVRAMバッテリ交換手順をプラットフォーム ファミリ別に検索します。このリファレンスには、 AFF、 ASA、およびFASシステムのNVMEM/ NVRAMバッテリ交換ワークフローのステップバイステップの直接リンクが用意されており、特定のモデルに適した手順をすぐに見つけることができます。 
 ---
-= プラットフォームファミリー別のNVMEM/ NVRAMバッテリー交換手順
+= プラットフォームファミリー別のNVMEMまたはNVRAMバッテリー交換手順
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -2,7 +2,7 @@
 permalink: asa-c400/bootmedia-replace-requirements-bmr.html 
 sidebar: sidebar 
 keywords: asa-c400, replace the boot media 
-summary: ASA C400システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。 
+summary: ASA C400のブートメディアを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、正しい交換用ブートメディアがあることの確認、障害のあるコントローラのe0Sまたはe0Mレンチポートに障害がないことの確認、およびOnboard Key ManagerまたはExternal Key Managerが有効になっているかどうかの判断が含まれます。 
 ---
 = 自動ブートメディアリカバリの要件 - ASA C400
 :allow-uri-read: 

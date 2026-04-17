@@ -2,7 +2,7 @@
 permalink: asa-c250/chassis-replace-move-hardware.html 
 sidebar: sidebar 
 keywords: asa c250, move hardware components, replace the chassis 
-summary: 電源装置、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、装置ラックまたはシステムキャビネットから障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
+summary: ハードウェア障害が発生した場合は、ASA C250システムのシャーシを交換してください。交換作業には、コントローラと電源ユニットの取り外し、ドライブの取り外し、交換用シャーシの取り付け、およびシャーシコンポーネントの再取り付けが含まれます。 
 ---
 = シャーシを交換する - ASA C250
 :allow-uri-read: 

@@ -2,7 +2,7 @@
 permalink: asa-r2-a20-30-50/controller-replace-recable-reassign-disks.html 
 sidebar: sidebar 
 keywords: asa a20, asa a30, asa a50, how to reboot the system 
-summary: 'ストレージ リソースの制御を交換用コントローラに戻して、 ASA A20、 ASA A30、またはASA A50 ストレージ システムが通常の操作を再開できるようにします。返却手順は、システムで使用されている暗号化タイプ（暗号化なし、オンボード キー マネージャー (OKM) 暗号化、または外部キー マネージャー (EKM) 暗号化）によって異なります。' 
+summary: ストレージ リソースの制御を交換用コントローラーに戻すと、ASA A20、ASA A30、またはASA A50ストレージ システムは通常動作を再開できます。ギブバック手順は、システムで使用されている暗号化のタイプによって異なります。 
 ---
 = コントローラのギブバック- ASA A20、ASA A30、ASA A50
 :allow-uri-read: 

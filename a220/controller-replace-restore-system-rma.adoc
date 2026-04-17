@@ -1,8 +1,8 @@
 ---
 permalink: a220/controller-replace-restore-system-rma.html 
 sidebar: sidebar 
-keywords: \aff a220, how to restore NetApp Storage Encryption, how to complete the replacement process 
-summary: システムを完全な運用状態に戻すには、NetAppストレージ暗号化の設定をリストアし（必要な場合）、新しいコントローラのライセンスをインストールして、障害が発生した部分をNetAppに戻す必要があります。 
+keywords: aff a220, how to restore NetApp Storage Encryption, how to complete the replacement process 
+summary: システムを完全に動作可能な状態に復元するには、必要に応じてNetApp Storage Encryption構成を復元し、新しいコントローラのライセンスをインストールし、故障した部品をNetAppに返送します。 
 ---
 = システムのリストアの完了- AFF A220
 :allow-uri-read: 

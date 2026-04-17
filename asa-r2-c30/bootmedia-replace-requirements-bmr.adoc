@@ -2,7 +2,7 @@
 permalink: asa-r2-c30/bootmedia-replace-requirements-bmr.html 
 sidebar: sidebar 
 keywords: asa c30, replace the boot media 
-summary: 'ASA C30 ストレージ システムのブート メディアを交換する前に、交換を正常に行うために必要な要件と考慮事項を満たしていることを確認してください。これには、正しい交換用ブート メディアがあることを確認すること、障害のあるコントローラの e0M (レンチ) ポートが正常に動作していることを確認すること、オンボード キー マネージャ (OKM) または外部キー マネージャ (EKM) が有効になっているかどうかを確認することが含まれます。' 
+summary: ASA C30ストレージシステムのブートメディアを交換する前に、交換を成功させるために必要な要件と考慮事項を満たしていることを確認してください。これには、正しい交換用ブートメディアがあることの確認、障害のあるコントローラのe0Mレンチポートが正常に動作していることの確認、およびOnboard Key ManagerまたはExternal Key Managerが有効になっているかどうかの判断が含まれます。 
 ---
 = ブートメディアの交換要件- ASA C30
 :allow-uri-read: 

@@ -1,7 +1,7 @@
 ---
 permalink: nx224/service-replace-power-supply.html 
 sidebar: sidebar 
-keywords: nx224, shelves, shelf, nx224 shelves, replace, fail, power, supply, nondisruptive, drive, i/o, progress, hot-swap, hot-swap a power supply 
+keywords: nx224, shelves, shelf, nx224 shelves, replace, fail, power, supply, nondisruptive, drive, io, progress, hot-swap, hot-swap a power supply 
 summary: NX224 シェルフでは、電源がオンになっていて I/O が進行中でも、障害が発生した電源装置を中断することなく交換できます。 
 ---
 = 電源のホットスワップ - NX224シェルフ

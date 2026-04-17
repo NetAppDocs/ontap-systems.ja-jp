@@ -2,7 +2,7 @@
 permalink: fas9500/chassis_replace_move_hardware.html 
 sidebar: sidebar 
 keywords:  
-summary: システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。 
+summary: シャーシを交換するには、障害のあるシャーシからコンポーネントを取り外し、交換用シャーシに取り付ける必要があります。 
 ---
 = ハードウェアFAS9500の移行と交換
 :allow-uri-read: 

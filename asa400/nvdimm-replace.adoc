@@ -2,7 +2,7 @@
 permalink: asa400/nvdimm-replace.html 
 sidebar: sidebar 
 keywords: asa a400, asa, a400, replace, nvdimm, controller, module, system, register, flash, lifetime, healthy, system, panic, shut, down, impair, run, two-node, metrocluster, complete, replacement, process, replace an nvdimm, shut down the impaired controller, remove the controller module, replace the nvdimm, install the controller module, restore the controller module to operation, switch back aggregates in a two-node metrocluster configuration, complete the replacement process 
-summary: フラッシュの有効期間がほぼ終了していること、または識別された NVDIMM が全般的に正常でないことがシステムで登録された場合は、コントローラモジュールの NVDIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
+summary: システムがフラッシュメモリの寿命がほぼ尽きた、または識別された NVDIMM が全般的に正常でないと判断した場合は、システムパニックを回避するために、コントローラモジュール内の NVDIMM を交換する必要があります。 
 ---
 = NVDIMMの交換- ASA A400
 :allow-uri-read: 

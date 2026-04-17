@@ -1,7 +1,7 @@
 ---
 permalink: nx224/service-replace-drive.html 
 sidebar: sidebar 
-keywords: nx224, shelves, shelf, nx224 shelves, fail, replace, drive, nondisruptive, i/o, hot-swap, hot-swap a drive 
+keywords: nx224, shelves, shelf, nx224 shelves, fail, replace, drive, nondisruptive, io, hot-swap, hot-swap a drive 
 summary: 電源がオンで I/O が進行中の NX224 シェルフでは、障害が発生したドライブを中断せずに交換できます。 
 ---
 = ドライブのホットスワップ - NX224 シェルフ

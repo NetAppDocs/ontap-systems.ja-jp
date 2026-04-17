@@ -2,7 +2,7 @@
 permalink: fas2600/dimm-replace.html 
 sidebar: sidebar 
 keywords: fas2600, replace dimm 
-summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
+summary: ストレージシステムで、ヘルスモニターアラートに基づく過剰な訂正可能エラー訂正コードエラーや、通常は単一のDIMMの故障によってストレージシステムのONTAP起動が妨げられる訂正不能なECCエラーなどのエラーが発生した場合は、コントローラー内のDIMMを交換する必要があります。 
 ---
 = DIMM-FAS2600 を交換します
 :allow-uri-read: 

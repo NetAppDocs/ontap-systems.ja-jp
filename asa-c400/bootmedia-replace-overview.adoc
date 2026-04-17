@@ -2,7 +2,7 @@
 permalink: asa-c400/bootmedia-replace-overview.html 
 sidebar: sidebar 
 keywords: asa c400, asa, c400, boot, media, store, primary, secondary, set, system, boot, image, file, replace, replace the boot media 
-summary: ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。 
+summary: ブートメディアには、システムがブート時に使用するブートイメージファイルのプライマリセットとセカンダリセットが格納されています。 
 ---
 = ブートメディアの交換の概要- ASA C400
 :allow-uri-read: 

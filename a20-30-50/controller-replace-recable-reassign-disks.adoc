@@ -2,7 +2,7 @@
 permalink: a20-30-50/controller-replace-recable-reassign-disks.html 
 sidebar: sidebar 
 keywords: aff a20, aff a30, aff a50, how to reboot the system 
-summary: 'AFF A20、 AFF A30、またはAFF A50 ストレージ システムが通常の操作を再開できるように、ストレージ リソースの制御を交換用コントローラに戻します。返却手順は、システムで使用されている暗号化タイプ（暗号化なし、オンボード キー マネージャー (OKM) 暗号化、または外部キー マネージャー (EKM) 暗号化）によって異なります。' 
+summary: ストレージリソースの制御を交換用コントローラに戻すと、AFF A20、AFF A30、または AFF A50 ストレージシステムは通常動作を再開できます。ギブバック手順は、システムが暗号化を使用していないか、Onboard Key Manager 暗号化を使用しているか、External Key Manager 暗号化を使用しているかによって異なります。 
 ---
 = コントローラのギブバック- AFF A20、AFF A30、AFF A50
 :allow-uri-read: 

@@ -2,7 +2,7 @@
 permalink: asa-c800/rtc-battery-replace.html 
 sidebar: sidebar 
 keywords: asa c800, replace the real-time clock battery 
-summary: コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。 
+summary: ASA C800 システムのリアルタイムクロックバッテリ（一般的にコイン型電池として知られています）を交換して、正確な時刻同期に依存するサービスやアプリケーションが確実に動作し続けるようにします。 
 ---
 = リアルタイムクロックバッテリを交換してください- ASA C800
 :allow-uri-read: 

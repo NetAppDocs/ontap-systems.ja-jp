@@ -1,7 +1,7 @@
 ---
 permalink: sas3/service-hot-swap-iom.html 
 sidebar: sidebar 
-keywords: system, configuration, whether, perform, nondisruptive, iom12, module, hot-swap, disruptive, replacement, hot-swap or replace an iom12/iom12b module, iom12b 
+keywords: system, configuration, whether, perform, nondisruptive, iom12, module, hot-swap, disruptive, replacement, hot-swap or replace an iom12 iom12b module, iom12b 
 summary: IOM12 / IOM12Bモジュールに障害が発生した場合に無停止のIOM12 / IOM12Bモジュールのホットスワップと停止を伴うIOM12 / IOM12Bモジュールの交換のどちらを実行できるかは、システム構成に応じて決まります。 
 ---
 = IOM モジュール (DS212C、DS224C、または DS460C) のホットスワップまたは交換

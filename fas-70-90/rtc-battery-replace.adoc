@@ -2,7 +2,7 @@
 permalink: fas-70-90/rtc-battery-replace.html 
 sidebar: sidebar 
 keywords: fas70, fas90, replace the real-time clock battery 
-summary: FAS70またはFAS90システムのリアルタイムクロック（RTC）バッテリ（一般にコイン型電池と呼ばれます）を交換して、正確な時刻同期に依存するサービスやアプリケーションが動作し続けるようにします。 
+summary: FAS70またはFAS90システムのリアルタイム クロックRTCバッテリー（一般的にコイン型電池として知られています）を交換して、正確な時刻同期に依存するサービスやアプリケーションの動作を確実に維持します。 
 ---
 = リアルタイムクロックバッテリ -FAS70 および FAS90 を交換してください
 :allow-uri-read: 

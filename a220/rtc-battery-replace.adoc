@@ -2,7 +2,7 @@
 permalink: a220/rtc-battery-replace.html 
 sidebar: sidebar 
 keywords: fas2700, aff a220, replace, real, time, clock, battery, impaired, controller, shut, down, controller, system, rtc, date, time, controller, module, reinstall, replace, open 
-summary: コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。 
+summary: AFF A220 コントローラモジュールのリアルタイムクロックバッテリを交換して、正確な時刻同期に依存するサービスやアプリケーションが引き続き機能するようにします。 
 ---
 = リアルタイムクロックバッテリの交換- AFF A220
 :allow-uri-read: 

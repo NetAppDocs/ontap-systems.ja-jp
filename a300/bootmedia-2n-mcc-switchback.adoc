@@ -2,7 +2,7 @@
 permalink: a300/bootmedia-2n-mcc-switchback.html 
 sidebar: sidebar 
 keywords: aff a300, switch back aggregate in a two-node metrocluster configuration, manual, manual boot recovery 
-summary: '2 ノードMetroCluster構成で FRU の交換が完了したら、 MetroClusterスイッチバック操作を実行できます。これにより、構成は通常の動作状態に戻り、以前障害が発生していたサイトの同期元のストレージ仮想マシン (SVM) がアクティブになり、ローカル ディスク プールからデータを提供するようになります。AFF A300システムは、手動のブート メディア リカバリ手順のみをサポートします。' 
+summary: 2ノードのMetroCluster構成でブートメディアの交換が完了したら、MetroClusterスイッチバック処理を実行して、構成を通常の動作状態に戻します。AFF A300システムは、手動によるブートメディアリカバリ手順のみをサポートしています。 
 ---
 = 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする - AFF A300
 :allow-uri-read: 

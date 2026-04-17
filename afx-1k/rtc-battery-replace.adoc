@@ -2,7 +2,7 @@
 permalink: afx-1k/rtc-battery-replace.html 
 sidebar: sidebar 
 keywords: afx 1k, replace the real-time clock battery 
-summary: '正確な時間同期に依存するサービスとアプリケーションが引き続き動作できるように、AFX 1K ストレージ システムのリアルタイム クロック (RTC) バッテリー (一般にコイン型電池と呼ばれる) を交換します。' 
+summary: AFX 1Kストレージシステムのリアルタイムクロックバッテリーを交換して、正確な時刻同期に依存するサービスやアプリケーションの動作を維持します。 
 ---
 = リアルタイムクロックの電池を交換する - AFX 1K
 :allow-uri-read: 

@@ -2,7 +2,7 @@
 permalink: asa800/nvdimm-replace.html 
 sidebar: sidebar 
 keywords: asa a800, replace an nvdimm 
-summary: フラッシュの有効期間がほぼ終了していること、または識別された NVDIMM が全般的に正常でないことがシステムで登録された場合は、コントローラモジュールの NVDIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
+summary: ASA A800システムで、フラッシュの寿命がほぼ終了している、または特定されたNVDIMMが全体的に正常でないことがシステムに登録された場合は、NVDIMMを交換してください。交換しないと、システムパニックが発生します。 
 ---
 = NVDIMMの交換- ASA A800
 :allow-uri-read: 

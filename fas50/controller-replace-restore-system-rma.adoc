@@ -2,7 +2,7 @@
 permalink: fas50/controller-replace-restore-system-rma.html 
 sidebar: sidebar 
 keywords: fas50, how to restore NetApp Storage Encryption, how to complete the replacement process 
-summary: FAS50 システムのコントローラ交換を完了するには、まず必要に応じてNetApp Storage Encryption 構成を復元し、新しいコントローラに必要なライセンスをインストールします。次に、論理インターフェイス LIF がホーム ポートにレポートしていることを確認し、クラスターのヘルス チェックを実行します。最後に、新しいコントローラのシリアル番号を登録し、故障した部品をNetAppに返送します。 
+summary: FAS50 システムのコントローラー交換を完了するには、まず必要に応じて NetApp Storage Encryption の設定をリストアし、新しいコントローラーに必要なライセンスをインストールします。次に、論理インターフェイスがそれぞれのホームポートにレポートしていることを確認し、クラスタの健全性チェックを実行します。最後に、新しいコントローラのシリアル番号を登録し、故障した部品を NetApp に返送してください。 
 ---
 = コントローラ交換後の処理- FAS50
 :allow-uri-read: 

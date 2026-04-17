@@ -2,7 +2,7 @@
 permalink: a1k/chassis-replace-move-hardware.html 
 sidebar: sidebar 
 keywords: aff a1k, move hardware components, replace the chassis 
-summary: 'ハードウェア障害が発生した場合は、 AFF A1Kシステムのシャーシを交換してください。交換プロセスでは、シャーシの前面からコントローラを取り外し、電源ユニット (PSU)、NVRAM12、I/O モジュールとブランク、およびシステム管理モジュールを取り外し、交換用シャーシを取り付け、シャーシ コンポーネントを再インストールします。' 
+summary: ハードウェア障害が発生した場合は、AFF A1K システムのシャーシを交換してください。交換プロセスには、コントローラ、I/O カード、NVRAM12 モジュール、システム管理モジュール、および電源ユニットの取り外し、交換用シャーシの取り付け、シャーシコンポーネントの再取り付けが含まれます。 
 ---
 = シャーシの交換 - AFF A1K
 :allow-uri-read: 

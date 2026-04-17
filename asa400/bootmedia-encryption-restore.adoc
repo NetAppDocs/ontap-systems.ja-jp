@@ -2,7 +2,7 @@
 permalink: asa400/bootmedia-encryption-restore.html 
 sidebar: sidebar 
 keywords: asa a400, asa, a400, environment, variable, complete, system, onboard, key, manager, okm, storage, volume, netapp, encryption, post, boot, media, replacement, post boot media replacement stpes for okm nse and nve 
-summary: 環境変数を確認したら、オンボードキーマネージャ \ （ OKM \ ）、 NetApp Storage Encryption \ （ NSE\ ）、または NetApp Volume Encryption \ （ NVE \ ）が有効になっているシステムに固有の手順を実行する必要があります。 
+summary: 環境変数を確認したら、オンボードキーマネージャ（OKM）、NetApp Storage Encryption（NSE）、またはNetApp Volume Encryption（NVE）が有効になっているシステムに固有の手順を完了する必要があります。 
 ---
 = OKM、NSE、NVE - ASA A400のリストア
 :allow-uri-read: 

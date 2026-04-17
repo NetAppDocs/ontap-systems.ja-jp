@@ -1,7 +1,7 @@
 ---
 permalink: ns224/service-replace-dimm.html 
 sidebar: sidebar 
-keywords: ns224, shelves, shelf, ns224 shelves, replace, nondisruptive, dimm, i/o, replace a dimm 
+keywords: ns224, shelves, shelf, ns224 shelves, replace, nondisruptive, dimm, io, replace a dimm 
 summary: 電源がオンになっている NS224 ドライブシェルフおよび I/O の実行中は、障害が発生した DIMM を無停止で交換できます。 
 ---
 = DIMM-NS224 シェルフを交換します

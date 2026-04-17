@@ -2,7 +2,7 @@
 permalink: asa-r2-c30/controller-replace-restore-system-rma.html 
 sidebar: sidebar 
 keywords: asa c30, how to restore NetApp Storage Encryption, how to complete the replacement process 
-summary: 'ASA C30 ストレージ システムのコントローラの交換を完了するには、まず NetApp ストレージ暗号化構成を復元し (必要な場合)、新しいコントローラに必要なライセンスをインストールします。次に、論理インターフェイス（LIF）がホームポートにレポートしていることを確認し、クラスタの健全性チェックを実行します。最後に、新しいコントローラのシリアル番号を登録し、障害が発生したパーツをNetAppに返却します。' 
+summary: ASA C30ストレージシステムのコントローラ交換を完了するには、まず必要に応じてNetApp Storage Encryptionの設定をリストアし、新しいコントローラに必要なライセンスをインストールします。次に、論理インターフェイスがホームポートにレポートしていることを確認し、クラスタのヘルスチェックを実行します。最後に、新しいコントローラのシリアル番号を登録してから、障害が発生した部品をNetAppに返却します。 
 ---
 = コントローラ交換後の処理- ASA C30
 :allow-uri-read: 

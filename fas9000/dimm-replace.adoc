@@ -2,7 +2,7 @@
 permalink: fas9000/dimm-replace.html 
 sidebar: sidebar 
 keywords: aff a700, fas9000, replace, dimm, shut, down, impaired, controller, module, reinstall, system, node, aggregates, metrocluster, replacement 
-summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
+summary: システムで訂正可能なエラー訂正コード（ECC）の数が増加している場合は、コントローラモジュールのDIMMを交換する必要があります。交換しないと、システムパニックが発生します。 
 ---
 = DIMMの交換- FAS9000
 :allow-uri-read: 

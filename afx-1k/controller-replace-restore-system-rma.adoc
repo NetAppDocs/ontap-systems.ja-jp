@@ -2,7 +2,7 @@
 permalink: afx-1k/controller-replace-restore-system-rma.html 
 sidebar: sidebar 
 keywords: afx 1k, how to restore NetApp Storage Encryption, how to complete the replacement process 
-summary: '論理インターフェイス (LIF) がホーム ポートにレポートしていることを確認し、クラスターのヘルス チェックを実行してから、障害が発生した部品をNetAppに返送し、AFX 1K コントローラーの交換手順の最終ステップを完了します。' 
+summary: 論理インターフェースがホームポートにレポートしていることを確認し、クラスタの健全性チェックを実行してから、障害が発生した部品をNetAppに返却して、AFX 1Kコントローラー交換手順の最終ステップを完了します。 
 ---
 = コントローラーの完全交換 - AFX 1K
 :allow-uri-read: 

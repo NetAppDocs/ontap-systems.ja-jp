@@ -2,7 +2,7 @@
 permalink: asa-r2-c30/chassis-replace-move-hardware.html 
 sidebar: sidebar 
 keywords: asa c30, move hardware components, replace the chassis 
-summary: ハードウェア障害が発生した場合は、ASA C30 ストレージ システムのシャーシを交換してください。交換プロセスでは、コントローラと電源装置（PSU）の取り外し、ドライブの取り外し、交換用シャーシの取り付け、およびシャーシコンポーネントの再取り付けを行います。 
+summary: ハードウェア障害が発生した場合は、ASA C30 ストレージ システムのシャーシを交換してください。交換プロセスには、コントローラーの取り外し、ドライブの取り外し、交換用シャーシのインストール、およびシャーシ コンポーネントの再インストールが含まれます。 
 ---
 = シャーシの交換- ASA C30
 :allow-uri-read: 

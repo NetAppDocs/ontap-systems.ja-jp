@@ -1,7 +1,7 @@
 ---
 permalink: ns224/service-replace-io-module.html 
 sidebar: sidebar 
-keywords: ns224, shelves, shelf, ns224 shelves, replace, fail,  nondisruptive, power, i/o 
+keywords: ns224, shelves, shelf, ns224 shelves, replace, fail, nondisruptive, power, io 
 summary: 電源がオンになっているNS224ドライブシェルフでは、I/Oの実行中に障害が発生したイーサネットI/Oモジュールを無停止で交換できます。 
 ---
 = イーサネットI/Oモジュールの交換- NS224シェルフをNSM100Bモジュールに交換

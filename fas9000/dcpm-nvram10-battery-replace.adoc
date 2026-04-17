@@ -2,7 +2,7 @@
 permalink: fas9000/dcpm-nvram10-battery-replace.html 
 sidebar: sidebar 
 keywords: fas9000, replace, destage, controller, power, module, nvram10, battery, dcpm, dispose, return, failed, part 
-summary: NVRAM10 バッテリを搭載したデステージコントローラ電源モジュール（ DCPM ）をホットスワップするには、障害が発生した DCPM モジュールの場所を確認し、シャーシから取り外して、交換用の DCPM モジュールを取り付ける必要があります。 
+summary: NVRAM10 バッテリを内蔵するデステージ コントローラ電源モジュール（DCPM）をホット スワップするには、障害が発生した DCPM モジュールを特定し、シャーシから取り外し、交換用の DCPM モジュールを取り付ける必要があります。 
 ---
 = デステージコントローラ電源モジュール（DCPM）のホットスワップ- FAS9000
 :allow-uri-read: 

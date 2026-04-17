@@ -2,7 +2,7 @@
 permalink: asa-c250/dimm-replace.html 
 sidebar: sidebar 
 keywords: asa c250, replace a dimm 
-summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
+summary: システムが修正可能なエラー訂正コードまたは修正不可能なECCエラーの増加を検知した場合は、ASA C250コントローラモジュールのDIMMを交換してください。故障したDIMMを交換しないと、システムパニックを引き起こす可能性があります。 
 ---
 = DIMMの交換- ASA C250
 :allow-uri-read: 

@@ -2,7 +2,7 @@
 permalink: a320/power-supply-replace.html 
 sidebar: sidebar 
 keywords: aff, a320, aff a320, replace, replacing, power, supply, psu, involve, disconnect, target, source, unplug, cable, replacement, replace a power supply 
-summary: 電源装置（ PSU ）を交換するには、ターゲットの PSU の電源を切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。 
+summary: AFF A320システムの電源を交換するには、対象のPSUを電源から切り離し、電源ケーブルを抜き、古いPSUを取り外し、交換用PSUを取り付けてから、交換用PSUを電源に再接続します。 
 ---
 = 電源のホットスワップ - AFF A320
 :allow-uri-read: 

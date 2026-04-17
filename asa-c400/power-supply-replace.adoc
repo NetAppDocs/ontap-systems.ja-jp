@@ -2,7 +2,7 @@
 permalink: asa-c400/power-supply-replace.html 
 sidebar: sidebar 
 keywords: asa c400, replace a power supply 
-summary: 電源装置（ PSU ）を交換するには、ターゲットの PSU の電源を切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。 
+summary: ASA C400 システムの電源装置を交換するには、対象の PSU を電源から切り離し、電源ケーブルを抜き、古い PSU を取り外し、交換用の PSU を取り付けてから、電源に再接続します。 
 ---
 = 電源のホットスワップ - ASA C400
 :allow-uri-read: 

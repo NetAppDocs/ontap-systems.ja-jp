@@ -2,7 +2,7 @@
 permalink: a300/dimm-replace.html 
 sidebar: sidebar 
 keywords: aff a300, replace a dimm 
-summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
+summary: システムで修正可能なエラー訂正コードまたは修正不可能なECCエラーの数が増加している場合は、AFF A300コントローラモジュールのDIMMを交換してください。故障したDIMMを交換しないと、システムパニックが発生する可能性があります。 
 ---
 = DIMM-AFF A300 を交換します
 :allow-uri-read: 

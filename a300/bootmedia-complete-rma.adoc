@@ -2,7 +2,7 @@
 permalink: a300/bootmedia-complete-rma.html 
 sidebar: sidebar 
 keywords: aff a300, complete the replacement process, manual, manual boot recovery 
-summary: '部品を交換した後、キットに同梱されている RMA 手順に従って、故障した部品をNetAppに返却できます。AFF A300システムは、手動のブート メディア リカバリ手順のみをサポートします。テクニカルサポートにお問い合わせください https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"]RMA 番号または交換手順に関する追加のサポートが必要な場合は、888-463-8277 (北米)、00-800-44-638277 (ヨーロッパ)、または +800-800-80-800 (アジア太平洋) までお電話ください。' 
+summary: ブートメディアを交換したら、故障した部品をNetAppに返送してください。AFF A300システムは、手動によるブートメディア復旧手順のみをサポートしています。 
 ---
 = 障害のある部品を NetApp-AFF A300 に戻します
 :allow-uri-read: 

@@ -2,7 +2,7 @@
 permalink: c30-60/rtc-battery-replace.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, replace the real-time clock battery 
-summary: '正確な時刻同期に依存するサービスとアプリケーションが引き続き動作できるように、 AFF C30 またはAFF C60 ストレージ システムのリアルタイム クロック (RTC) バッテリ (一般にコイン型電池と呼ばれる) を交換します。' 
+summary: AFF C30またはAFF C60ストレージシステムのリアルタイムクロックバッテリ（一般的にコイン型電池として知られています）を交換して、正確な時刻同期に依存するサービスやアプリケーションが確実に稼働し続けるようにします。 
 ---
 = リアルタイムクロックバッテリを交換してください- AFF C30 and AFF C60
 :allow-uri-read: 

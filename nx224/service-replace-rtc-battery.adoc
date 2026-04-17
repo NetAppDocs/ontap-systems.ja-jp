@@ -1,8 +1,8 @@
 ---
 permalink: nx224/service-replace-rtc-battery.html 
 sidebar: sidebar 
-keywords: nx224, shelves, shelf, nx224 shelves, replace, fail, real-time, clock, rtc, battery, nondisruptive, power, i/o, replace the real-time clock battery 
-summary: '電源がオンで I/O が進行中の NX224 シェルフで、障害が発生したリアルタイム クロック (RTC) バッテリを中断せずに交換できます。' 
+keywords: nx224, shelves, shelf, nx224 shelves, replace, fail, real-time, clock, rtc, battery, nondisruptive, power, io, replace the real-time clock battery 
+summary: '電源がオンで I/O が進行中の NX224 シェルフで、障害が発生したリアルタイム クロック (RTC) バッテリを中断なく交換できます。' 
 ---
 = リアルタイムクロックの電池を交換する - NX224シェルフ
 :allow-uri-read: 

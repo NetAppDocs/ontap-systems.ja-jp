@@ -2,7 +2,7 @@
 permalink: a700s/dimm-replace.html 
 sidebar: sidebar 
 keywords: aff a700s, aff, a700s, replace, fimm, controller, module, system, register, increase, increasing, number, correctable, error, correction, code, ecc, failure, system, panic, dimm, shut, down, impair, complete, replacement, process, replace a dimmm, shut down the impaired controller, remove the controller module, replace a dimm, reinstall the controller module and booting the system, complete the replacement process 
-summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
+summary: システムが修正可能なエラー訂正コードまたは修正不可能なECCエラーの増加を検知した場合は、AFF A700sコントローラモジュールのDIMMを交換してください。故障したDIMMを交換しないと、システムパニックを引き起こす可能性があります。 
 ---
 = DIMM-AFF A700s を交換します
 :allow-uri-read: 

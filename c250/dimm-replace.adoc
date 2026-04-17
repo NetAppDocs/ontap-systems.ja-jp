@@ -2,7 +2,7 @@
 permalink: c250/dimm-replace.html 
 sidebar: sidebar 
 keywords: aff c250, replace a dimm 
-summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
+summary: システムが修正可能なエラー訂正コードの増加を検出した場合、コントローラモジュール内のDIMMを交換する必要があります。そうしないと、システムパニックが発生します。 
 ---
 = DIMMを交換します- AFF C250
 :allow-uri-read: 

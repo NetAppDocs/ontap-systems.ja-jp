@@ -2,7 +2,7 @@
 permalink: asa800/dimm-replace.html 
 sidebar: sidebar 
 keywords: asa a800, replace a dimm 
-summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
+summary: 過剰な修正可能または修正不可能なメモリエラーが検出された場合は、ASA A800システムのDIMMを交換してください。 
 ---
 = DIMMの交換 - ASA A800
 :allow-uri-read: 

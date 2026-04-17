@@ -2,7 +2,7 @@
 permalink: c800/dimm-replace.html 
 sidebar: sidebar 
 keywords: aff c800, replace a dimm 
-summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
+summary: 過剰な修正可能または修正不可能なメモリエラーが検出された場合は、AFF C800システムのDIMMを交換してください。このようなエラーにより、ストレージシステムがONTAPを起動できなくなる可能性があります。 
 ---
 = DIMMを交換します- AFF C800
 :allow-uri-read: 

@@ -2,7 +2,7 @@
 permalink: fas2700/controller-replace-restore-system-rma.html 
 sidebar: sidebar 
 keywords: fas2700, aff a220, how to restore NetApp Storage Encryption, how to complete the replacement process 
-summary: システムを完全な運用状態に戻すには、NetAppストレージ暗号化の設定をリストアし（必要な場合）、新しいコントローラのライセンスをインストールして、障害が発生した部分をNetAppに戻す必要があります。 
+summary: システムを完全に動作可能な状態に復元するには、NetApp Storage Encryption構成をリストアし、新しいコントローラのライセンスをインストールして、障害が発生した部品をNetAppに返却する必要があります。 
 ---
 = システムのリストアの完了- FAS2700
 :allow-uri-read: 

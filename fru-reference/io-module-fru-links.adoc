@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: fru-reference/io-module-fru-links.html 
-keywords: I/O module, field replaceable units, FRU, I/O module replacement 
+keywords: IO module, field replaceable units, FRU, IO module replacement 
 summary: プラットフォーム ファミリ別に整理された、 NetAppストレージ システムの I/O モジュール交換手順を確認します。このリファレンスには、 AFF、 ASA、およびFASシステムの I/O モジュール交換ワークフローのステップバイステップの直接リンクが用意されており、特定のモデルに適した手順をすぐに見つけることができます。 
 ---
-= プラットフォームファミリ別のI/Oモジュール交換手順
+= プラットフォームファミリー別のIOモジュール交換手順
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

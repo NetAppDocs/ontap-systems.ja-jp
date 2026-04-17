@@ -2,7 +2,7 @@
 permalink: nx224/change-shelf-id.html 
 sidebar: sidebar 
 keywords: nx224, shelves, shelf, nx224 shelves, change, shelf, id, system, ontap, unown, spare, offline, aggregate, change an nx224 drive shelf id 
-summary: ONTAPがまだ実行されていない場合、またはシェルフをシステムにケーブル接続する前にホットアドする場合は、システムのシェルフIDを変更できます。また、 ONTAPが起動して実行中（コントローラ モジュールがデータの提供に使用可能）で、シェルフ内のすべてのドライブが未所有、スペア、またはオフライン アグリゲートの一部である場合は、シェルフ ID を変更することもできます。 
+summary: ONTAP がまだ実行されていない場合、またはシェルフをシステムにケーブル接続する前にホットアドする場合は、システム内の NX224 シェルフ ID を変更できます。  ONTAPが起動して実行中の場合（コントローラ モジュールがデータの提供に使用可能）、およびシェルフ内のすべてのドライブが未所有またはスペアである場合に、シェルフ ID を変更することもできます。 
 ---
 = 棚IDの変更 - NX224棚
 :allow-uri-read: 

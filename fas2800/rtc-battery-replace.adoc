@@ -2,7 +2,7 @@
 permalink: fas2800/rtc-battery-replace.html 
 sidebar: sidebar 
 keywords: fas2800, replace, real, time, clock, battery, impaired, controller, shut, down, controller, system, rtc, date, time, controller, module, reinstall, replace, open 
-summary: コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。 
+summary: 正確な時刻同期に依存するシステムのサービスやアプリケーションが引き続き機能するように、コントローラモジュール内のリアルタイムクロックRTCバッテリーを交換します。 
 ---
 = リアルタイムクロックバッテリの交換- FAS2820
 :allow-uri-read: 

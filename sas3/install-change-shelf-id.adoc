@@ -2,7 +2,7 @@
 permalink: sas3/install-change-shelf-id.html 
 sidebar: sidebar 
 keywords: change, shelf, id, system, ontap, run, hot-add, ontap, controller, module, available, serve, data, unown, spare, offline, aggregate 
-summary: ONTAP がまだ実行されていない場合や、シェルフをシステムにケーブル接続する前にホットアドする場合は、システムのシェルフ ID を変更できます。また、 ONTAP が実行中で、シェルフ内のすべてのドライブが所有されていないか、スペアであるか、オフラインのアグリゲートのメンバーである場合にも、シェルフ ID を変更できます \ （コントローラモジュールがデータを提供可能です \ ）。 
+summary: ONTAP がまだ実行されていない場合や、シェルフをシステムにケーブル接続する前にホットアドする場合は、システムのシェルフ ID を変更できます。また、 ONTAP が実行中（コントローラモジュールがデータを提供可能）の場合でも、シェルフ内のすべてのドライブが所有されていないか、スペアであるか、オフラインのアグリゲートのメンバーである場合にはシェルフ ID を変更できます。 
 ---
 = シェルフ ID の変更 - DS212C、DS224C、または DS460C
 :allow-uri-read: 

@@ -2,7 +2,7 @@
 permalink: a70-90/power-supply-replace.html 
 sidebar: sidebar 
 keywords: aff a70, aff a90, replace a power supply 
-summary: AFF A70またはAFF A90システムに障害が発生した場合や障害が発生した場合は、ACまたはDC電源装置ユニット（PSU）を交換して、安定した動作のために必要な電力をシステムに供給し続けるようにします。交換プロセスでは、障害が発生したPSUを電源から取り外し、電源ケーブルを抜き、障害が発生したPSUを交換してから、電源に再接続します。 
+summary: AFF A70またはAFF A90システムのACまたはDC電源ユニットに障害が発生した場合や不具合が生じた場合は、システムが安定した動作に必要な電力を継続的に供給できるように電源ユニットを交換してください。交換手順は、故障したPSUを電源から切り離し、電源ケーブルを抜き、故障したPSUを交換してから、電源に再接続します。 
 ---
 = 電源のホットスワップ - AFF A70およびAFF A90
 :allow-uri-read: 

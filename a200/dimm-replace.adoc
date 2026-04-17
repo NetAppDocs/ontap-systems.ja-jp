@@ -2,7 +2,7 @@
 permalink: a200/dimm-replace.html 
 sidebar: sidebar 
 keywords: aff a200, replace the dimms 
-summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
+summary: ストレージシステムがヘルスモニターアラートに基づく過剰なCECCエラーや訂正不能なECCエラーなどのエラーに遭遇した場合、コントローラー内のDIMMを交換する必要があります。これらのエラーは通常、単一のDIMMの故障によって発生し、ストレージシステムがONTAPを起動できなくなります。 
 ---
 = DIMM- AFF A200 を交換します
 :allow-uri-read: 

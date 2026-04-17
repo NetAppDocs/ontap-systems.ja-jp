@@ -2,7 +2,7 @@
 permalink: afx-1k/bootmedia-replace-requirements.html 
 sidebar: sidebar 
 keywords: afx 1k, replace the boot media 
-summary: 'AFX 1K ストレージ システムのブート メディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、正しい交換用ブート メディアがあることを確認すること、コントローラ上に欠陥のあるクラスタ ポートがないこと、およびオンボード キー マネージャ (OKM) または外部キー マネージャ (EKM) が有効になっているかどうかを確認することが含まれます。' 
+summary: AFF A1Kストレージシステムのブートメディアを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、正しい交換用ブートメディアを使用しているかの確認、コントローラに欠陥のあるクラスタポートがないかの確認、およびOnboard Key ManagerまたはExternal Key Managerが有効になっているかどうかの確認が含まれます。 
 ---
 = ブートメディアの交換要件 - AFX 1K
 :allow-uri-read: 

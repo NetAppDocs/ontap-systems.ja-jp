@@ -2,7 +2,7 @@
 permalink: asa-r2-a1k/controller-replace-restore-system-rma.html 
 sidebar: sidebar 
 keywords: asa r2 a1k, how to restore NetApp Storage Encryption, how to complete the replacement process 
-summary: 論理インターフェイス（LIF）がホームポートに報告していることを確認し、クラスタの健全性チェックを実行してから、障害が発生したパーツをNetAppに戻して、ASA A1Kコントローラの交換手順の最後の手順を完了します。 
+summary: ASA A1Kシステムのコントローラ交換を完了するには、まず必要に応じてNetAppストレージ暗号化の設定をリストアします。次に、論理インターフェイスがホームポートにレポートしていることを確認し、クラスタヘルスチェックを実行します。最後に、障害が発生した部品をNetAppに返却します。 
 ---
 = コントローラ交換後の処理- ASA A1K
 :allow-uri-read: 

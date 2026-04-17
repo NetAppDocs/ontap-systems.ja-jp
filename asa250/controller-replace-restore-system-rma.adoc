@@ -2,7 +2,7 @@
 permalink: asa250/controller-replace-restore-system-rma.html 
 sidebar: sidebar 
 keywords: asa a250, how to restore NetApp Storage Encryption, how to complete the replacement process 
-summary: システムを完全に動作状態に戻すには、 NetApp Storage Encryption の構成をリストアし（必要な場合）、新しいコントローラのライセンスをインストールし、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。 
+summary: システムを完全に動作可能な状態に復元するには、必要に応じてNetApp Storage Encryption構成を復元し、新しいコントローラのライセンスをインストールし、故障した部品をNetAppに返送します。 
 ---
 = コントローラの完全交換 - ASA A250
 :allow-uri-read: 

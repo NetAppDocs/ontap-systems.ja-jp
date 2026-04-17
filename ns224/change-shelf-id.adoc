@@ -2,7 +2,7 @@
 permalink: ns224/change-shelf-id.html 
 sidebar: sidebar 
 keywords: ns224, shelves, shelf, ns224 shelves, change, shelf, id, system, ontap, unown, spare, offline, aggregate, change an ns224 drive shelf id 
-summary: ONTAP がまだ実行されていない場合や、シェルフをシステムにケーブル接続する前にホットアドする場合は、システムのシェルフ ID を変更できます。また、 ONTAP が実行中で、シェルフ内のすべてのドライブが所有されていないか、スペアであるか、オフラインのアグリゲートのメンバーである場合にも、シェルフ ID を変更できます \ （コントローラモジュールがデータを提供可能です \ ）。 
+summary: ONTAP がまだ実行されていない場合や、シェルフをシステムにケーブル接続する前にホットアドする場合は、システムのシェルフ ID を変更できます。また、 ONTAP が実行中（コントローラモジュールがデータを提供可能）の場合でも、シェルフ内のすべてのドライブが所有されていないか、スペアであるか、オフラインのアグリゲートのメンバーである場合にはシェルフ ID を変更できます。 
 ---
 = シェルフ ID - NS224 シェルフを変更します
 :allow-uri-read: 

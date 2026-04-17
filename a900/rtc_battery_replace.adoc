@@ -2,7 +2,7 @@
 permalink: a900/rtc_battery_replace.html 
 sidebar: sidebar 
 keywords:  
-summary:  
+summary: コントローラモジュール内のリアルタイムクロックバッテリを交換することで、正確な時刻同期に依存するシステムのサービスやアプリケーションが引き続き機能するようになります。 
 ---
 = リアルタイムクロックバッテリの交換 - AFF A900
 :allow-uri-read: 

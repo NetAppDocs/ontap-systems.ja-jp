@@ -2,7 +2,7 @@
 permalink: fas9500/dimm_replace.html 
 sidebar: sidebar 
 keywords:  
-summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
+summary: ストレージシステムで、ヘルスモニターアラートに基づく過剰なCECCエラーや、通常は単一のDIMMの故障によってストレージシステムのONTAP起動が妨げられる修正不能なECCエラーなどのエラーが発生した場合は、コントローラー内のDIMMを交換する必要があります。 
 ---
 = DIMM-FAS9500を交換します
 :allow-uri-read: 

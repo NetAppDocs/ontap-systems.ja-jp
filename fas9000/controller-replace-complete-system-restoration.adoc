@@ -2,7 +2,7 @@
 permalink: fas9000/controller-replace-complete-system-restoration.html 
 sidebar: sidebar 
 keywords: aff a700, fas9000, storage encryption, licenses, storage encryption, volume encryption, serial number, metrocluster, switchback 
-summary: 交換用手順を完了してシステムを完全に動作状態に戻すには、ストレージのケーブル接続をやり直し、必要に応じて NetApp Storage Encryption の構成をリストアし、新しいコントローラのライセンスをインストールする必要があります。 
+summary: 交換手順を完了してシステムを完全に動作状態に戻すには、ストレージを再配線し、必要に応じてNetApp Storage Encryptionの設定を復元し、新しいコントローラーのライセンスをインストールします。 
 ---
 = システムの完全なリストア- FAS9000
 :allow-uri-read: 

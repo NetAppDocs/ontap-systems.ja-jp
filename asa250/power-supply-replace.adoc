@@ -2,7 +2,7 @@
 permalink: asa250/power-supply-replace.html 
 sidebar: sidebar 
 keywords: asa a250, replace a power supply 
-summary: 電源装置（ PSU ）を交換するには、ターゲットの電源装置（ PSU ）を電源から切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。 
+summary: 電源装置を交換するには、ターゲットの電源装置の接続を解除して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。 
 ---
 = 電源のホットスワップ - ASA A250
 :allow-uri-read: 

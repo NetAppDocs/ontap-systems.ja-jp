@@ -1,8 +1,8 @@
 ---
 permalink: asa-c400/bootmedia-2n-mcc-switchback.html 
 sidebar: sidebar 
-keywords: asa c400, asa, c400, fru, replacement, two-node, metrocluster, configuration, switchback, operation, operating, system, sync-source, storage,virtual, machine, svm, impair, site, serving, data, local, disk, pool, switch, aggregate, switch back aggregates in a two-node metrocluster configuration 
-summary: 2 ノード MetroCluster 構成で FRU の交換が完了したら、 MetroCluster スイッチバック処理を実行できます。これにより構成が通常の動作状態に戻ります。また、障害が発生していたサイトの同期元 Storage Virtual Machine （ SVM ）がアクティブになり、ローカルディスクプールからデータを提供します。 
+keywords: asa c400, asa, c400, fru, replacement, two-node, metrocluster, configuration, switchback, operation, operating, system, sync-source, storage, virtual, machine, svm, impair, site, serving, data, local, disk, pool, switch, aggregate, switch back aggregates in a two-node metrocluster configuration 
+summary: 2ノードのMetroCluster構成でFRU交換が完了したら、MetroClusterスイッチバック処理を実行できます。これにより、構成が通常の動作状態に戻り、以前障害が発生していたサイト上の同期元Storage Virtual Machineがアクティブになり、ローカルディスクプールからデータを提供するようになります。 
 ---
 = 2ノードMetroCluster構成でのアグリゲートのスイッチバック- ASA C400
 :allow-uri-read: 

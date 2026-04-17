@@ -2,7 +2,7 @@
 permalink: a1k/controller-replace-restore-system-rma.html 
 sidebar: sidebar 
 keywords: aff a1k, how to restore NetApp Storage Encryption, how to complete the replacement process 
-summary: 論理インターフェイス（LIF）がホームポートに報告していることを確認し、クラスタの健全性チェックを実行してから、障害が発生したパーツをNetAppに戻して、AFF A1Kコントローラの交換手順の最後の手順を完了します。 
+summary: AFF A1Kシステムのコントローラ交換を完了するには、NetApp Storage Encryptionの設定をリストアし、論理インターフェイスがホームポートにレポートしていることを確認してクラスタのヘルスチェックを実行し、障害が発生したパーツをNetAppに返却します。 
 ---
 = コントローラ交換後の処理- AFF A1K
 :allow-uri-read: 

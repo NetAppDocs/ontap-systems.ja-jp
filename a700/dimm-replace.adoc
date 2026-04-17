@@ -2,7 +2,7 @@
 permalink: a700/dimm-replace.html 
 sidebar: sidebar 
 keywords: aff a700, fas9000, replace, dimm, shut, down, impaired, controller, module, reinstall, system, node, aggregates, metrocluster, replacement 
-summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
+summary: システムで修正可能なエラー訂正コードまたは修正不可能なECCエラーの数が増加している場合は、AFF A700コントローラモジュールのDIMMを交換してください。故障したDIMMを交換しないと、システムパニックが発生する可能性があります。 
 ---
 = DIMMの交換- AFF A700
 :allow-uri-read: 

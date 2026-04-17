@@ -2,7 +2,7 @@
 permalink: c400/dimm-replace.html 
 sidebar: sidebar 
 keywords: aff c400, aff, c400, replace, dimm, controller, module, system, register, correctable, error, correction, code, ecc, system, panic, shut, down, impair, remove, controller, module, system, module, aggregate, two-node, metrocluster, configuration, replace a dimm, shut down the impaired controller, remove the controller module, replace system dimms, install the controller module, restore the controller module to operation, switch back aggregates in a two-node metrocluster configuration 
-summary: システムで登録される修正可能なエラー修正コード（ ECC ）の数が増え続けている場合は、コントローラモジュールの DIMM を交換する必要があります。そのままにしているとシステムがパニック状態になります。 
+summary: システムで修正可能なエラー訂正コード（ECC）の数が増加している場合は、コントローラモジュール内のDIMMを交換する必要があります。交換しないと、システムパニックが発生します。 
 ---
 = DIMMを交換します- AFF C400
 :allow-uri-read: 
