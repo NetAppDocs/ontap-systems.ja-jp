@@ -5609,15 +5609,11 @@
 を参照してください<block ref="087e4d006962c8ba6c4d8fdb71ff8e38" category="inline-link-rx"></block> 詳細：</block>
   <block id="0f844d6324319ebe9b4aabd24f1b88dd" category="list-text">コントローラモジュールを設置します。</block>
   <block id="6bfde1459ef866428e3532004887b3b8" category="list-text">コントローラモジュールにケーブルを再接続します。</block>
-  <block id="db5c04ca6cb958f296ff071cf8420f54" category="paragraph">メザニンカードを交換するには、カードからケーブルとSFPモジュールとQSFPモジュールを取り外し、障害が発生したメザニンカードを交換してから、カードにケーブルを再接続します。</block>
-  <block id="783de30113379b15fc6135387f11b7e6" category="video-title">アニメーション-メザニンカードを交換します</block>
   <block id="a0ff1a6d16d908c33e10409aed0ac623" category="paragraph">コントローラモジュールをシステムから取り外し、コントローラモジュールのカバーを取り外します。</block>
   <block id="cf6800eb49ae54456676c105c115a1fa" category="section-title">手順3：メザニンカードを交換します</block>
   <block id="6918dd1d1ecfa7a18a047a925c4f30ee" category="paragraph">メザニンカードを交換してください。</block>
   <block id="83b54898f0ac014b1e217ee413643205" category="paragraph">PCIeメザニンカード</block>
   <block id="64016c063cf6b470fdcccc5a97f852b1" category="list-text">メザニンカードの取り付けネジを緩め、メザニンカードを真上に持ち上げます。</block>
-  <block id="4bca5310f65e82fe5c4eec2c7a1c6c17" category="list-text">交換用メザニンカードプラグのソケットをマザーボードのソケットに合わせ、カードをソケットに対して垂直にそっと装着します。</block>
-  <block id="f2972968e044e6666c42c0182107b4f6" category="paragraph">コントローラモジュールを再度取り付けます。</block>
   <block id="f36f34bd21dc87823e156cd47c7d7440" category="list-text">コントローラモジュールを裏返し、シャーシの開口部に端を合わせます。</block>
   <block id="3ab31ac30e2ad91e2f7e6a9ecd045f6e" category="list-text">コントローラモジュールをシステムの途中までそっと押し込みます。コントローラモジュールの端をシャーシの開口部に合わせ、コントローラモジュールをシステムの途中までそっと押し込みます。</block>
   <block id="d32890221c5529cefc96a956073d9844" category="list-text">を使用して自動ギブバックをリストアします<block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix=" " category="inline-code"></block> コマンドを実行します</block>
@@ -10896,7 +10892,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="56632d1795a7d32b89a455a3b633b7f5" category="list-text">このステップの始めにあるアニメーションを使用して、棚の電源をオンにし、棚 ID を設定します。</block>
   <block id="6a3ffb8f58252e034e90b5eb7a9cc233" category="list-text">このステップの始めにあるアニメーションを使用して、棚の電源をオンにし、棚 ID を設定します。</block>
   <block id="cb102c5c1eccde9b442d1de001f76cc3" category="image-alt">コントローラーカバーを外す</block>
-  <block id="8fca7d700183532fd08f68b674a86c60" category="image-alt">コントローラーを開く</block>
   <block id="6abebf9335209d6b986ad1d41e48f43b" category="image-alt">メザニンカードを交換する</block>
   <block id="9f8a96e46f0e86179108737100c29b9d" category="list-text">コントローラーカバーを元に戻します。</block>
   <block id="627450f7182bd50247300c6db6f17129" category="image-alt">PCIモジュールを取り外す</block>
@@ -15016,4 +15011,48 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="284f3d864e67ec64454ad1382833e490" category="summary">NetAppストレージシェルフのNVMeシェルフモジュール交換手順をシェルフモデル別に記載しています。このリファレンスでは、NS224およびNX224シェルフのNSM交換ワークフローへの直接リンクをステップバイステップで提供し、お使いのシェルフモデルに適した正しい手順を迅速に見つけることができます。</block>
   <block id="a461d5a3ec6eff00835d5b1479552285" category="doc">プラットフォームファミリー別のNVMEMまたはNVRAMバッテリー交換手順</block>
   <block id="66439d0b114daf635ee9ba53d5e8d568" category="summary">システムキャビネットは、さまざまなタイプのPower Distribution Unitに対応しています。PDUはNEMAまたはIECに準拠しています。</block>
+  <block id="bb67cf9a22f6bca036da3944f082f70d" category="admonition">障害のあるコントローラカバーを閉じる前に、空のDIMMスロットのイジェクタタブがすべて完全にロック位置に戻っていることを確認してください。</block>
+  <block id="669e934b15627ccb89dc33fcabeddbfb" category="paragraph">カードに障害が発生した場合、または新しいカードをインストールして別のプロトコルにアップグレードする場合は、FAS2820システムのメザニンカードを交換してください。</block>
+  <block id="188325fb14c01076ac7986e006024318" category="list-text">この手順は、お使いのシステムでサポートされている任意の ONTAP バージョンで使用してください。</block>
+  <block id="ac252143999e21b283146112dd2be869" category="list-text">メザニンカードを同じタイプまたは別のタイプに交換します。</block>
+  <block id="fe8724291ba433d10b4fcf50b8fb75e8" category="list-text">コントローラをシャットダウンする前に、ifgrpとVLANの情報を書き留めてください。</block>
+  <block id="f161beffd589a67ef92732e9b253cdd7" category="list-text">メザニンカードの種類を変更する場合は、コントローラの再起動後にLIFとポートの設定を変更してください。</block>
+  <block id="449e834456e7e68b70b454418fba97ab" category="list-text">他のすべてのシステムコンポーネントが正常に動作していることを確認してください。問題が解決しない場合は、テクニカルサポートにお問い合わせください。</block>
+  <block id="5bff8c12368fa11b6a921de13c7b88c4" category="list-text">メザニンカードの種類を変更する場合は、障害が発生したノードのifgrp情報とVLAN情報を取得してください。</block>
+  <block id="f8d7ee81ae11933d89c54b63f5fadf14" category="paragraph">コントローラモジュールとそのカバーを取り外します。</block>
+  <block id="209665c3ca401651aef828199962e8e6" category="list-text">面ファスナー式のストラップを緩め、ケーブルが接続されている場所を確認してから、システムケーブルとSFP（必要な場合）を取り外します。</block>
+  <block id="3cd42af34b01ed058f7c2cd55e0996dd" category="paragraph">ケーブルを整理した状態に保つために、ケーブル管理装置に入れたままにしておきます。</block>
+  <block id="7b0ea8fe43bfe3b98d824632eff95227" category="list-text">カムハンドルラッチを解除し、完全に開いて、コントローラモジュールをシャーシから引き抜きます。</block>
+  <block id="98218aa7f65c228232e406628bf68c52" category="list-text">コントローラーを裏返して、平らで安定した場所に置いてください。</block>
+  <block id="c423597c377723410ddff79391c30184" category="list-text">コントローラモジュールの側面にある青いボタンを押して、カバーを外します。カバーを上に回転させて、コントローラモジュールから取り外します。</block>
+  <block id="049bcfe9f533b1ce55e8c569103ad005" category="list-text">交換用メザニンカードのコネクタをマザーボードのソケットに合わせて、カードをソケットにまっすぐゆっくりと差し込みます。</block>
+  <block id="9995c7de2e4f28bd5897f9cddbfb7fe2" category="list-text">コントローラモジュールのカバーを元に戻してロックします。</block>
+  <block id="8b9e2d3291c598b800be072b8afefa3b" category="section-title">手順4：コントローラモジュールを取り付けて再起動する</block>
+  <block id="df34b20e74975704c940ac43d85db1a0" category="paragraph">コントローラモジュールを再度取り付けて、再起動します。</block>
+  <block id="aa8d1cbe476192b8bca04b6db3820a20" category="list-text">コントローラ モジュールをシャーシの途中までそっと押し込みます。</block>
+  <block id="f537a6f2f3860f6a3385b2dba60ee50d" category="list-text">必要に応じてシステムケーブルを再接続してください。</block>
+  <block id="f44818abfdb464a54383bded154be7a6" category="list-text">カムハンドルを開いた状態で、コントローラモジュールを完全に装着されるまでしっかりと押し込みます。カムハンドルを閉じてロックします。</block>
+  <block id="3caa3f6c101dc917e6e89ed7e891e2e7" category="list-text">面ファスナー付きのストラップを使って、ケーブルをケーブル管理装置に固定します。== ステップ5：メザニンカードを再設定します（タイプが変更された場合）</block>
+  <block id="e705f3e2e1683e9fdc37c829b76df435" category="paragraph">コントローラの再起動後、別のタイプのカードと交換した場合は、メザニンカードの設定を新しいカードに合わせて変更します。</block>
+  <block id="4a75ad40a6302b2865f475233d3fb5e5" category="open-title">オプション1：Fibre Channel to Ethernetメザニンカード</block>
+  <block id="3eab4e5e3f38a487e4c0ff8986b53620" category="paragraph">必要に応じてLIFとポート設定を更新し、イーサネット交換用メザニンカードを設定します。</block>
+  <block id="5f0a91ebda5419c9dae2884b55adbe74" category="list-text"><block ref="838c4deb1e9c47dcd4c44b6e40276467" prefix=" " category="inline-code"></block>コマンドを使用して、新しいポート名とリンク状態を確認します。</block>
+  <block id="3efcada16cb2f3e01caddea484618416" category="list-text">新しいイーサネットメザニンポート上のすべての ifgrp と VLAN を再構築してください。</block>
+  <block id="6e2960cee1a644afd90e3d3b838fd123" category="list-text">新しいポート、またはifgrp/VLANポートを適切なブロードキャストドメインとIPspaceに配置し、MTU値を設定します。</block>
+  <block id="4c56c513928e3bd961610cfdc822c8d9" category="list-text">影響を受けるLIFホームポートとフェイルオーバー設定を更新します。</block>
+  <block id="a795d709ecd423b1744a5ef88448d471" category="list-text">不要になったLIFを削除します。</block>
+  <block id="2379f006c7634c9a3930eb53207e352b" category="inline-link-macro">ONTAPネットワークポート構成について学ぶ</block>
+  <block id="b98137e3a1d1b6f4b29e605a6485919a" category="paragraph">ONTAP でのイーサネットの設定に関する詳細については、<block ref="cb17047b6380f83ae8de9ed3ea1a53d8" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="52a696c40ad570403490bdec6c48e094" category="open-title">オプション2：Ethernet to Fibre Channelメザニンカード</block>
+  <block id="e9e71980f309166c903d0c3d71389741" category="paragraph">必要に応じてLIFとポート設定を更新し、交換用FCメザニンカードを設定します。</block>
+  <block id="fea1b58373a99298346b2ee3c42f7a8e" category="list-text">関連するSVMでFCPを有効にします。新しいデータLIFを作成します。</block>
+  <block id="da9bb3b5a73b19eb3674470b3621051d" category="list-text">ファブリックのゾーニングとホストパスを更新します。必要に応じて、ポートセット、igroup、およびLUNマッピングを更新します。</block>
+  <block id="87160066c3c44a03aee7080e00432c64" category="list-text">ホストのマルチパスを確認します。古いパスが存在しないこと、および最適化されたパスと最適化されていないパスのバランスが取れていることを確認してください。</block>
+  <block id="062a9fa0f81c39da805029b15f680004" category="list-text">削除されたイーサネットポートに LIF がホームされていないこと、すべての FC LIF が起動して I/O を提供していること、および AutoSupport 監視が新しい構成を反映していることを確認します。</block>
+  <block id="563c6fa09f1e284ce85546393fc8feb8" category="inline-link-macro">SANの管理 - 概要</block>
+  <block id="63018430f374d831226e536d0e46ce53" category="paragraph">ONTAPでのファイバーチャネルの設定に関する詳細については、<block ref="02b029a61c3a3a6905adcb1c22e947fd" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="b677c618703db10bec968500a7722ccc" category="section-title">ステップ6：コントローラを通常動作に戻す</block>
+  <block id="21eb4ba3e07d5691bb2ca2aeeaea8fca" category="paragraph">障害のあるコントローラーにストレージを返還し、自動返還を復元し、AutoSupportメンテナンスウィンドウを終了します。</block>
+  <block id="b0cf17c34e1e13a80699938c1fb9a3a1" category="list-text">正常なコントローラーまたはクラスタ管理者プロンプトから、ストレージを復元してコントローラーを正常な動作状態に戻します：<block ref="30edaf7c9fa43c78aeaf4b8fabb7af1a" prefix=" " category="inline-code"></block></block>
+  <block id="5a1c9794f830d65f2a212554cf798ab8" category="admonition">障害が発生したNSMカバーを閉じる前に、空いているすべてのDIMMスロットのイジェクタタブが完全にロック位置に戻っていることを確認してください。</block>
 </blocks>
