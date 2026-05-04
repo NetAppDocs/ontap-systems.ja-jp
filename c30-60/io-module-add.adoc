@@ -4,18 +4,24 @@ sidebar: sidebar
 keywords: aff c30, aff c60, add IO module 
 summary: AFF C30またはAFF C60ストレージシステムにI/Oモジュールを追加して、ネットワーク接続を強化し、システムのデータトラフィック処理能力を拡張します。 
 ---
-= IOモジュールを追加する - AFF C30とAFF C60
+= I/Oモジュールを追加する - AFF C30とAFF C60
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-AFF C30 またはAFF C60 ストレージ システムに I/O モジュールを追加すると、ネットワーク接続が強化され、システムのデータ トラフィック処理能力が拡張されます。
+AFF C30またはAFF C60ストレージシステムにI/Oモジュールを追加して、ネットワーク接続性を強化し、システムのデータトラフィック処理能力を拡張します。この手順を使用すると、計画的なアップグレードとして稼働中のコントローラにI/Oモジュールを追加する場合も、メンテナンス中に障害が発生したコントローラにI/Oモジュールを追加する場合も対応できます。
 
 AFF C30およびAFF C60ストレージシステムにI/Oモジュールを追加できるのは、使用可能なスロットがある場合、またはすべてのスロットにフル実装した場合です。
 
 .このタスクについて
+この手順は、HAペアのどちらのコントローラに対しても実行できます。コントローラが現在正常に動作しているか、障害が発生しているかは関係ありません。稼働中のコントローラにはI/Oモジュールを追加できないため、モジュールをインストールする前にターゲットコントローラをシャットダウンする必要があります。HAパートナーは、処理中にストレージ運用を引き継ぎ、クライアントがデータにアクセスできる状態を維持します。
+
+* 対象コントローラが*稼働中*（計画的に追加予定）の場合は、記載されているシャットダウン手順に従い、対象コントローラをその内容における「障害のある」コントローラとして扱います。
+* ターゲットコントローラに障害が発生している場合は、記載されているシャットダウン手順に従ってください。
+
+
 影響を受けるストレージシステムの物理的な位置を特定するために、必要に応じてストレージシステムのロケーション（青色の）LEDを点灯できます。SSHを使用してBMCにログインし、コマンドを入力し `system location-led _on_`ます。
 
 ストレージシステムにはロケーションLEDが3つあります。1つはオペレータ用ディスプレイパネルに、もう1つは各コントローラにあります。ロケーションLEDは30分間点灯したままになります。
@@ -24,7 +30,9 @@ AFF C30およびAFF C60ストレージシステムにI/Oモジュールを追加
 
 
 
-== 手順1：障害のあるコントローラモジュールをシャットダウン
+== 手順1：ターゲットコントローラモジュールをシャットダウンします
+
+I/Oモジュールの追加中もHAパートナーがデータを提供し続けるように、ターゲットコントローラモジュールをテイクオーバーしてシャットダウンします。リンク先の手順では、シャットダウンするコントローラを「障害のある」コントローラと呼んでいます。計画的な追加のために稼働中のコントローラをテイクオーバーする場合でも、すでに障害が発生しているコントローラをシャットダウンする場合でも、同じ手順が適用されます。
 
 [role="tabbed-block"]
 ====
@@ -43,7 +51,10 @@ AFF C30およびAFF C60ストレージシステムにI/Oモジュールを追加
 .手順
 . AutoSupportが有効になっている場合は、AutoSupportメッセージを呼び出してケースの自動作成を停止します。
 +
-`system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
+`system node autosupport invoke -node * -type all -message MAINT=<number of hours down>h`
+
++
+これにより、計画メンテナンス期間中に自動的にサポートケースが開かれるのを防ぎます。最大抑制時間は72時間です。メンテナンスが予定より早く完了した場合は、AutoSupportメッセージを `MAINT=END`で呼び出すことでケース作成を再度有効にできます。詳細については、 https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU92["How to suppress automatic case creation during scheduled maintenance windows"^]を参照してください。
 
 +
 次のAutoSupport メッセージは、ケースの自動作成を2時間停止します。
@@ -108,7 +119,10 @@ _-halt true _パラメータを指定すると、Loaderプロンプトが表示�
 .手順
 . AutoSupportが有効になっている場合は、AutoSupportメッセージを呼び出してケースの自動作成を停止します。
 +
-`system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
+`system node autosupport invoke -node * -type all -message MAINT=<number of hours down>h`
+
++
+これにより、計画メンテナンス期間中に自動的にサポートケースが開かれるのを防ぎます。最大抑制時間は72時間です。メンテナンスが予定より早く完了した場合は、AutoSupportメッセージを `MAINT=END`で呼び出すことでケース作成を再度有効にできます。詳細については、 https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU92["How to suppress automatic case creation during scheduled maintenance windows"^]を参照してください。
 
 +
 次のAutoSupport メッセージは、ケースの自動作成を2時間停止します。

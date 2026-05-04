@@ -209,7 +209,7 @@ NOTE: クラスタインターコネクトトラフィックとHAトラフィッ
 image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP銅線コネクタ"]
 
 +
-image:../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg["1つの25GbE IOモジュールを使用したA20スイッチクラスタのケーブル配線図"]
+image:../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg["25GbE I/Oモジュール1個を使用したa20スイッチドクラスタ配線図"]
 
 
 

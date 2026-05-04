@@ -30,7 +30,10 @@ summary: 障害のあるコントローラをシャットダウンするには�
 .手順
 . AutoSupportが有効になっている場合は、AutoSupportメッセージを呼び出してケースの自動作成を停止します。
 +
-`system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
+`system node autosupport invoke -node * -type all -message MAINT=<number of hours down>h`
+
++
+これにより、計画メンテナンス期間中に自動的にサポートケースが開かれるのを防ぎます。最大抑制時間は72時間です。メンテナンスが予定より早く完了した場合は、AutoSupportメッセージを `MAINT=END`で呼び出すことでケース作成を再度有効にできます。詳細については、 https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU92["How to suppress automatic case creation during scheduled maintenance windows"^]を参照してください。
 
 +
 次のAutoSupport メッセージは、ケースの自動作成を2時間停止します。
@@ -93,9 +96,18 @@ NOTE: 2 ノード MetroCluster 構成のシステムでは、この手順を使�
 
 
 .手順
-. AutoSupport が有効になっている場合は、 AutoSupport メッセージを呼び出してケースの自動作成を抑制します。「 system node AutoSupport invoke -node * -type all -message MAINT=number_OF_hours_downh
+. AutoSupportが有効になっている場合は、AutoSupportメッセージを呼び出してケースの自動作成を停止します。
 +
-次の AutoSupport メッセージは、ケースの自動作成を 2 時間停止します。 cluster1 ： * > system node AutoSupport invoke -node * -type all -message MAINT=2h`
+`system node autosupport invoke -node * -type all -message MAINT=<number of hours down>h`
+
++
+これにより、計画メンテナンス期間中に自動的にサポートケースが開かれるのを防ぎます。最大抑制時間は72時間です。メンテナンスが予定より早く完了した場合は、AutoSupportメッセージを `MAINT=END`で呼び出すことでケース作成を再度有効にできます。詳細については、 https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU92["How to suppress automatic case creation during scheduled maintenance windows"^]を参照してください。
+
++
+次のAutoSupport メッセージは、ケースの自動作成を2時間停止します。
+
++
+`cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
 
 . 正常なコントローラのコンソールから自動ギブバックを無効にします。 storage failover modify – node local-auto-giveback false
 . 障害のあるコントローラに LOADER プロンプトを表示します。

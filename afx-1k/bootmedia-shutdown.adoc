@@ -23,7 +23,10 @@ summary: ブート メディアを交換するときにデータの損失を防�
 .手順
 . AutoSupportが有効になっている場合は、AutoSupportメッセージを呼び出してケースの自動作成を停止します。
 +
-`system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
+`system node autosupport invoke -node * -type all -message MAINT=<number of hours down>h`
+
++
+これにより、計画メンテナンス期間中に自動的にサポートケースが開かれるのを防ぎます。最大抑制時間は72時間です。メンテナンスが予定より早く完了した場合は、AutoSupportメッセージを `MAINT=END`で呼び出すことでケース作成を再度有効にできます。詳細については、 https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU92["How to suppress automatic case creation during scheduled maintenance windows"^]を参照してください。
 
 +
 次のAutoSupport メッセージは、ケースの自動作成を2時間停止します。

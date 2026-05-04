@@ -28,7 +28,7 @@ ONTAP 9.8
  a| 
 https://hwu.netapp.com/adapter/index["X91122A"]
  a| 
-2 ポート 25GbE RoCE QSFP28
+2ポート25GbE RoCE QSFP28
  a| 
 * ネットワーキング
 * HA / MetroCluster
@@ -102,7 +102,7 @@ ONTAP 9.8
  a| 
 https://hwu.netapp.com/Switch/Index["Broadcom BES-53248 スイッチ（ X190005 および X190005R ）"]
  a| 
-10 / 25GbE ポートを備えた AFF / FAS コントローラでの Broadcom BES-53248 クラスタインターコネクトスイッチのサポート。
+10/25 GbE ポートを搭載した AFF / FAS コントローラ用の Broadcom BES-53248 クラスタ インターコネクト スイッチのサポート。
  a| 
 ONTAP 9.5P8.
 
