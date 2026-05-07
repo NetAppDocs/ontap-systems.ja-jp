@@ -1,8 +1,8 @@
 ---
 permalink: asa900/controller_replace_recable_reassign_disks.html 
 sidebar: sidebar 
-keywords:  
-summary:  
+keywords: asa a900, recable the system 
+summary: ストレージとネットワーク構成の配線をやり直して、交換手順を続行します。 
 ---
 = システムにケーブルを再接続します- ASA A900
 :allow-uri-read: 

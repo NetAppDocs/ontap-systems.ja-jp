@@ -1,7 +1,7 @@
 ---
 permalink: c80/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
-keywords: c80, pre-shutdown checks for onboard encryption keys 
+keywords: aff c80, pre-shutdown checks for onboard encryption keys 
 summary: AFF C80 ストレージシステムのデータセキュリティを確保するには、ブートメディア上の暗号化キーのサポート状況とステータスを確認する必要があります。お使いのONTAPバージョンがNetApp Volume Encryption をサポートしているかどうかを確認し、コントローラをシャットダウンする前にキーマネージャがアクティブになっていることを確認してください。 
 ---
 = 手動ブートメディアリカバリの暗号化サポートを確認する - AFF C80

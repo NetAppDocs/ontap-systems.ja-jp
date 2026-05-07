@@ -1,7 +1,7 @@
 ---
 permalink: asa900/bootmedia-shutdown.html 
 sidebar: sidebar 
-keywords:  
+keywords: asa a900, shut down the controller 
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
 = 手動ブートメディアリカバリのためにコントローラをシャットダウンする - ASA A900

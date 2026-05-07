@@ -1,7 +1,7 @@
 ---
 permalink: a900/bootmedia-encryption-restore.html 
 sidebar: sidebar 
-keywords:  
+keywords: aff a900, post boot media replacement steps for okm, nse, and nve 
 summary: 交換用ブートメディアの暗号化をリストアします。オンボードキーマネージャ、NetApp Storage Encryption、またはNetApp Volume Encryptionが有効になっているシステムに固有の手順を実行します。 
 ---
 = リストア暗号化- AFF A900

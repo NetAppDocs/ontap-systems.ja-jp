@@ -1,7 +1,7 @@
 ---
 permalink: fas9500/controller_replace_complete_system_restoration_rma.html 
 sidebar: sidebar 
-keywords:  
+keywords: fas9500, complete the replacement process 
 summary: 交換用手順を完了してシステムを完全に動作状態に戻すには、ストレージのケーブル接続をやり直し、必要に応じて NetApp Storage Encryption の構成をリストアし、新しいコントローラのライセンスをインストールする必要があります。 
 ---
 = システムのリストアを完了します。FAS9500

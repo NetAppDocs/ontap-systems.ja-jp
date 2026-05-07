@@ -1,7 +1,7 @@
 ---
 permalink: c80/controller-replace-system-config-restore-and-verify.html 
 sidebar: sidebar 
-keywords: c80, restore and verify the system configuration, verify and set the ha state of the controller module 
+keywords: aff c80, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: コントローラのHA構成がアクティブで、AFF C80ストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。 
 ---
 = システム構成のリストアと確認- AFF C80

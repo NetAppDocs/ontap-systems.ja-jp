@@ -1,7 +1,7 @@
 ---
 permalink: fas9500/bootmedia_recovery_image.html 
 sidebar: sidebar 
-keywords:  
+keywords: fas9500, boot the recovery image 
 summary: 障害ノードをリカバリイメージからブートするための手順は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。 
 ---
 = リカバリイメージFAS9500をブートします

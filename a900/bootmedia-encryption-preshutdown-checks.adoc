@@ -1,7 +1,7 @@
 ---
 permalink: a900/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
-keywords:  
+keywords: aff a900, pre-shutdown checks for onboard encryption keys 
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
 = 暗号化キーのサポートとステータスの確認- AFF A900

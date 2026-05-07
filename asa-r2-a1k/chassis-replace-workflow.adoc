@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-a1k/chassis-replace-workflow.html 
 sidebar: sidebar 
-keywords: asa 1k, replace the chassis workflow 
+keywords: asa r2 a1k, replace the chassis workflow 
 summary: 交換要件を確認し、コントローラをシャットダウンし、シャーシを交換し、システムの動作を確認して、 ASA A1K ストレージ システムのシャーシの交換を開始します。 
 ---
 = シャーシ交換ワークフロー - ASA A1K

@@ -1,7 +1,7 @@
 ---
 permalink: c80/bootmedia-recovery-image-boot-bmr.html 
 sidebar: sidebar 
-keywords: c80, boot the recovery image 
+keywords: aff c80, boot the recovery image 
 summary: AFF C80 ストレージ システムに新しいブート メディア デバイスをインストールした後、自動ブート メディア リカバリ プロセスを開始して、パートナー ノードから構成を復元できます。 
 ---
 = パートナーノードからの自動ブートメディアリカバリ - AFF C80

@@ -1,7 +1,7 @@
 ---
 permalink: fas-70-90/io-module-hotswap.html 
 sidebar: sidebar 
-keywords: fas 70, fas 90, hot swap a cluster ha card, hot swap ethernet client io module, hotswap io module, hot swap io module 
+keywords: fas70, fas90, hot swap a cluster ha card, hot swap ethernet client io module, hotswap io module, hot swap io module 
 summary: モジュールに障害が発生し、ストレージ システムがすべてのONTAPバージョン要件を満たしている場合は、FAS 70またはFAS 90ストレージ システム内のEthernet I/Oモジュールをホットスワップできます。 
 ---
 = I/OモジュールのホットスワップFAS 70およびFAS 90

@@ -1,7 +1,7 @@
 ---
 permalink: c80/bootmedia-replace-workflow-bmr.html 
 sidebar: sidebar 
-keywords: c80, replace the boot media 
+keywords: aff c80, replace the boot media 
 summary: ブートイメージの自動リカバリでは、システムが適切なブートメニューオプションを自動的に識別して選択します。パートナーノードのブートイメージを使用して、 AFF C80ストレージシステムの交換用ブートメディアにONTAPを再インストールします。 
 ---
 = ブートメディア自動リカバリワークフロー - AFF C80

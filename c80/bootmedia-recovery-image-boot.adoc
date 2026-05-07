@@ -1,7 +1,7 @@
 ---
 permalink: c80/bootmedia-recovery-image-boot.html 
 sidebar: sidebar 
-keywords: c80, boot the recovery image 
+keywords: aff c80, boot the recovery image 
 summary: AFF C80 システムに新しいブート メディア デバイスをインストールした後、USB ドライブからリカバリ イメージを手動で起動して、パートナー ノードから構成を復元できます。 
 ---
 = USBドライブからの手動ブートメディアリカバリ - AFF C80

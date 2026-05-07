@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-70-90/io-module-hotswap.html 
 sidebar: sidebar 
-keywords: asa a70, asa a90, hot swap a cluster ha card, hot swap ethernet client io module, hotswap io module, hot swap io module 
+keywords: asa r2 a70, asa r2 a90, hot swap a cluster ha card, hot swap ethernet client io module, hotswap io module, hot swap io module 
 summary: モジュールに障害が発生し、ストレージ システムがすべてのONTAPバージョン要件を満たしている場合は、ASA A70またはASA A90ストレージ システム内のEthernet I/Oモジュールをホット スワップできます。 
 ---
 = I/OモジュールのホットスワップASA A70およびASA A90

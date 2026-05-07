@@ -1,7 +1,7 @@
 ---
 permalink: fas9500/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
-keywords:  
+keywords: fas9500, pre-shutdown checks for onboard encryption keys 
 summary: 障害ノードをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害ノードのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
 = 暗号化キーのサポートとステータスの確認- FAS9500

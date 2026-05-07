@@ -1,7 +1,7 @@
 ---
 permalink: a1k/bootmedia-shutdown-bmr.html 
 sidebar: sidebar 
-keywords: a1k, shut down the controller 
+keywords: aff a1k, shut down the controller 
 summary: AFF A1Kストレージシステムの障害のあるコントローラをシャットダウンしてデータ損失を防止し、ブートメディアの交換時にシステムの安定性を確保します。 
 ---
 = 自動ブートメディアリカバリのためにコントローラをシャットダウンする - AFF A1K

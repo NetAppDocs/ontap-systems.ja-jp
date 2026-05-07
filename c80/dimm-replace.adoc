@@ -1,7 +1,7 @@
 ---
 permalink: c80/dimm-replace.html 
 sidebar: sidebar 
-keywords: c80, replace a dimm 
+keywords: aff c80, replace a dimm 
 summary: 修正可能または修正不可能なメモリエラーが大量に検出された場合は、AFF C80システムのDIMMを交換します。このようなエラーが発生すると、ストレージシステムでONTAPをブートできなくなる可能性があります。 
 ---
 = DIMMの交換- AFF C80

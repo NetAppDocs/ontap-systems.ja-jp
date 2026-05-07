@@ -1,7 +1,7 @@
 ---
 permalink: fas9500/add_io_module.html 
-sidebar:  
-keywords:  
+sidebar: sidebar 
+keywords: fas9500, add io module 
 summary: システムに I/O モジュールを追加するには、既存の I/O モジュールをフル装備のシステムで新しい I/O モジュールに交換するか、シャーシの空のスロットに新しい I/O モジュールを追加します。 
 ---
 = I/OモジュールFAS9500を追加します
