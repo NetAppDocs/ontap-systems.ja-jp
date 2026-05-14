@@ -33,7 +33,8 @@ MetroCluster 構成でセットアップされていないストレージシス�
 ストレージシステムとストレージシェルフをキャビネットまたはラックに設置します。使用しているプラットフォームモデルのインストールとセットアップの手順にアクセスします。
 
 [role="quick-margin-list"]
-* link:aff-landing/index.html["AFF システム"]
+* link:aff-aseries/index.html["AFF Aシリーズシステム"]
+* link:aff-cseries/index.html["AFF Cシリーズシステム"]
 * link:allsan-landing/index.html["ASAシステム"]
 * link:https://docs.netapp.com/us-en/ontap-afx/install-setup/install-setup-workflow.html["AFXシステム"]
 * https://docs.netapp.com/us-en/asa-r2/install-setup/install-setup-workflow.html["ASA r2システム"]

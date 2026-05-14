@@ -8306,12 +8306,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="9e4b32259f721cc54024969657de5534" category="paragraph">（内蔵シェルフに）ストレージを追加する必要がある場合は、ASA A70またはASA A90 HAペアにNS224シェルフを2台までホットアドできます。</block>
   <block id="55ec693931401ff7a634100e33ff8cfd" category="doc">ONTAPハードウェアシステムの新機能</block>
   <block id="ec6e72d1c4bb7dccdc62b6caf35c95f7" category="sidebar">ONTAPハードウェアシステムのドキュメント</block>
-  <block id="64f78e10c5d8a4db6f25299bf9a418cd" category="sidebar">AFF AシリーズとCシリーズのシステムは、組織のインフラをより迅速に変革し、データ主体の戦略を推進できるように設計されています。</block>
-  <block id="d186b8a54af216bfae7a9573dc3dfd54" category="sidebar">AFFシステムのマニュアルでは、AFF AシリーズおよびCシリーズシステムの設置、セットアップ、およびメンテナンスの方法について説明しています。</block>
-  <block id="8b4ad289620e7b0611000ddd6fa583c3" category="sidebar">Aシリーズシステムの設置とセットアップ</block>
-  <block id="c91d48fe9284f4d299615b787ff7c882" category="sidebar">Cシリーズシステムの設置とセットアップ</block>
-  <block id="d82b198ed12fecd580981b34c4959490" category="sidebar">Aシリーズシステムの保守</block>
-  <block id="e32ee65ffedbf05873ffce177cee51b5" category="sidebar">Cシリーズシステムのメンテナンス</block>
   <block id="9c2e760711833288658335a04261b16a" category="sidebar">ASA R2ストレージシステムのマニュアルには、ASA R2システムのインストール、セットアップ、および保守が記載されています。</block>
   <block id="e995d56efd9e31d97825dd79be4d1383" category="sidebar">ASA R2ストレージシステムの詳細</block>
   <block id="aa0dbb314a1c2c27148345705facc55c" category="sidebar">ASA R2システムのインストールとメンテナンス</block>
@@ -8328,8 +8322,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="2a2dfadb84e98697260fabd8a1ba63ea" category="sidebar">ハードウェアのメンテナンス手順が必要になる場合があります。このセクションでは、ASA r2システムコンポーネントのメンテナンスに固有の手順について説明します。</block>
   <block id="9823a9d702614ebe046cb789d32b241d" category="sidebar">ASA R2システムのメンテナンス方法について説明します。</block>
   <block id="8cf7baf96983d1c70a286576ddcd0ca1" category="sidebar">ASA A70およびASA A90</block>
-  <block id="91be56ff709f018bb7b1a4c33c68d316" category="sidebar">Aシリーズシステム</block>
-  <block id="078c4b575f196efdc8ec79e58f26db9f" category="sidebar">Cシリーズシステム</block>
   <block id="2d0e9a7694bf5bc701c3af145a6bba71" category="sidebar">要件を確認する</block>
   <block id="f76aaf3aaa7b30238e7a3e2b1a04493b" category="sidebar">インストールの準備</block>
   <block id="03f15d4e5abe2379224af55ea714e8fd" category="sidebar">ASA A70およびASA A90システム</block>
@@ -9781,7 +9773,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="38ae227cf94e3775806bccfd95814d4b" category="paragraph"><block ref="035b082bfaf23bf2d7b95c3ef597d380" prefix="" category="inline-code"></block></block>
   <block id="a5e51e5f50ca83720f1d0d8b17c1e93b" category="list-text">ここでは、一般的な設定について説明します。具体的なケーブル接続は、ご使用のストレージシステム用に注文したコンポーネントによって異なります。設定およびスロットプライオリティの詳細については、を参照してください <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
   <block id="e5f780ef73bd41c1dd64af7a1a1a31ac" category="paragraph">コントローラをONTAPクラスタにケーブル接続します。この手順は、ストレージシステムのモデルおよびI/Oモジュールの構成によって異なります。</block>
-  <block id="0990249c3bba6596b74be9af46837266" category="list-text">コントローラAのポートe7aをコントローラBのポートe1aに接続します。</block>
   <block id="18695b824b22d82a916970e4903bf31d" category="paragraph">100GbEケーブルを使用して、ポートe1aとe1a、ポートe7aとe7aを接続します。</block>
   <block id="3b29102e499249644dff327644d96081" category="list-text">ポートe9aおよびe9bをイーサネットデータネットワークスイッチに接続します。</block>
   <block id="c7900e3ee1f4eb935f449465b57ad5c1" category="paragraph">1000BASE-T RJ-45ケーブルを使用して、各コントローラの管理（レンチ）ポートを管理ネットワークスイッチに接続します。</block>
@@ -9812,7 +9803,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8019bdcaff5849ab8015533c8674f305" category="paragraph">各コントローラを両方のNS224シェルフのNSMモジュールにケーブル接続します。図は、コントローラAのケーブル配線を青で示し、コントローラBのケーブル配線を黄色で示しています。</block>
   <block id="546125971d4fce23d0f562118f0ce95f" category="open-title">オプション3：DS460Cシェルフ×2</block>
   <block id="8994222dc8e3118b755e00531cef6a1c" category="paragraph">各コントローラを両方のDS460CシェルフのIOMモジュールにケーブル接続します。図は、コントローラAのケーブル配線を青で示し、コントローラBのケーブル配線を黄色で示しています。</block>
-  <block id="d42c87e93d80bf28fffc01d7bb494eb2" category="list-text"><block ref="d42c87e93d80bf28fffc01d7bb494eb2" category="inline-link-macro-rx"></block></block>
   <block id="98aab8017242eea1d6e23ba928b20ae5" category="list-text"><block ref="98aab8017242eea1d6e23ba928b20ae5" category="inline-link-macro-rx"></block></block>
   <block id="4e3c3284590d1aa1440e67b3bd65ba6e" category="list-text"><block ref="4e3c3284590d1aa1440e67b3bd65ba6e" category="inline-link-macro-rx"></block></block>
   <block id="370d2e6f20948d3881708f9706576691" category="sidebar">交換の準備</block>
@@ -15048,4 +15038,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6b7f864bd91be16ace313bfe44f12e71" category="section-title">DS460Cシェルフ2台</block>
   <block id="b62281acd6d6f68b211c9c140acb1de6" category="summary">システムのケーブルを配線し直し、ディスクを再割り当てします。</block>
   <block id="c7585f11abe7b6b5267f9b01ab8db3d3" category="summary">コントローラモジュール内のリアルタイムクロックバッテリーを交換します。</block>
+  <block id="4e219191285e6b026a35828fa008670f" category="list-text"><block ref="4e219191285e6b026a35828fa008670f" category="inline-link-macro-rx"></block></block>
+  <block id="f907c55a04055c61d778510e17a75874" category="list-text"><block ref="f907c55a04055c61d778510e17a75874" category="inline-link-macro-rx"></block></block>
 </blocks>

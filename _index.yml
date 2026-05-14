@@ -15,8 +15,10 @@ indexpage:
       url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
   - title: ストレージプラットフォーム
     links:
-    - title: AFF システム
-      url: "/aff-landing/index.html"
+    - title: AFF Aシリーズシステム
+      url: "/aff-aseries/index.html"
+    - title: AFF Cシリーズシステム
+      url: "/aff-cseries/index.html"
     - title: ASAシステム
       url: "/allsan-landing/index.html"
     - title: AFXシステム
