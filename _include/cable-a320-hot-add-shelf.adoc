@@ -1,0 +1,21 @@
+= 
+:allow-uri-read: 
+
+
+.手順
+. シェルフをコントローラにケーブル接続します。
++
+.. NSM A ポート e0a をコントローラ A のポート e0e にケーブル接続します。
+.. NSM A のポート e0b をコントローラ B のポート e0b にケーブル接続します。
+.. NSM B ポート e0a をコントローラ B ポート e0e にケーブル接続します。
+.. NSM B のポート e0b をコントローラ A のポート e0b にケーブル接続します。+ 次の図は、ホットアドしたシェルフ（シェルフ 2 ）のケーブル接続を示しています。
++
+image::../media/drw_ns224_a320_2shelves_direct_attached.png[2台のNS224シェルフと3セットのオンボードポートを使用したAFF A320のケーブル接続]
+
+
+
+. ホットアドしたシェルフがを使用して正しくケーブル接続されていることを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
++
+ケーブル接続エラーが発生した場合は、表示される対処方法に従ってください。
+
+

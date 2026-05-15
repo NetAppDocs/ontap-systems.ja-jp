@@ -1,0 +1,39 @@
+---
+permalink: ns224/hot-add-eoa-workflow.html 
+sidebar: sidebar 
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, eoa systems, end-of-availability, workflow 
+summary: 以下のワークフロー手順に従って、NS224シェルフを販売終了予定のシステムにホットアドしてください。 
+---
+= 販売終了システムにNS224シェルフをホットアドする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+以下のワークフロー手順に従って、NS224シェルフを販売終了予定のシステムにホットアドしてください。
+
+.作業を開始する前に
+* この手順は、直接接続型ストレージにのみ適用されます。スイッチ接続ストレージの手順を表示するには、link:cable-as-switch-attached.html["スイッチ接続ケーブル接続ガイド"]を参照してください。
+* NS224シェルフをホットアドするには、HAペアが特定の要件を満たしている必要があります。link:hot-add-eoa-requirements.html["ホットアドの要件とベストプラクティス"]を確認します。
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:hot-add-eoa-requirements.html["ホットアド要件を確認する"]
+[role="quick-margin-para"]
+使用終了システムが、NS224 シェルフのホットアドの要件（ONTAP バージョンサポート、シェルフ数、ケーブル配線要件など）を満たしていることを確認してください。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:hot-add-eoa-prepare-overview.html["シェルフのホットアドの準備"]
+[role="quick-margin-para"]
+お使いのプラットフォームモデルによっては、RoCE対応のPCIeカードやI/Oモジュールを追加でインストールしたり、専用ではないRoCE対応イーサネットポートをストレージ用に構成したり、ドライブの所有権を手動で割り当てる場合は自動ドライブ割り当てを無効にしたりする必要がある場合があります。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:hot-add-eoa-install.html["シェルフを設置する"]
+[role="quick-margin-para"]
+シェルフ用のレールキットを取り付け、シェルフを通信ラックまたはキャビネットに設置して固定し、電源コードを接続してシェルフに電源を供給し、HAペア内でシェルフが区別されるように固有のシェルフIDを割り当てます。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:hot-add-eoa-cable-overview.html["シェルフをケーブル接続"]
+[role="quick-margin-para"]
+ホットアドするシェルフをHAペアの各コントローラに2つ接続されるようにケーブル接続します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:hot-add-eoa-complete.html["ホットアドの完了"]
+[role="quick-margin-para"]
+ホットアドの準備の一環として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。

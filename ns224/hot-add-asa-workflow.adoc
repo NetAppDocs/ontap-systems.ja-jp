@@ -1,0 +1,39 @@
+---
+permalink: ns224/hot-add-asa-workflow.html 
+sidebar: sidebar 
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa systems, workflow 
+summary: 次のワークフロー手順に従って、NS224シェルフをASAシステムにホットアドします。 
+---
+= NS224シェルフをASAシステムにホットアドする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+次のワークフロー手順に従って、NS224シェルフをASAシステムにホットアドします。
+
+.作業を開始する前に
+* この手順は、直接接続型ストレージにのみ適用されます。スイッチ接続ストレージの手順を表示するには、link:cable-as-switch-attached.html["スイッチ接続ケーブル接続ガイド"]を参照してください。
+* NS224シェルフをホットアドするには、HAペアが特定の要件を満たしている必要があります。link:hot-add-asa-requirements.html["ホットアドの要件とベストプラクティス"]を確認します。
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:hot-add-asa-requirements.html["ホットアド要件を確認する"]
+[role="quick-margin-para"]
+ASAシステムがNS224シェルフのホットアド要件（ONTAPバージョンサポート、シェルフ数、ケーブル配線要件を含む）を満たしていることを確認してください。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:hot-add-asa-prepare.html["シェルフのホットアドの準備"]
+[role="quick-margin-para"]
+プラットフォームのモデルによっては、追加のRoCE対応PCIeカードまたはI/Oモジュールの取り付け、ストレージ用の非専用RoCE対応イーサネットポートの設定、スロット障害に対する耐障害性のために異なるスロットの2組のポートにまたがる既存のシェルフのケーブル再接続が必要になる場合があります。 ドライブ所有権を手動で割り当てる場合は、自動ドライブ割り当てを無効にします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:hot-add-asa-install.html["シェルフを設置する"]
+[role="quick-margin-para"]
+シェルフ用のレールキットを取り付け、シェルフを通信ラックまたはキャビネットに設置して固定し、電源コードを接続してシェルフに電源を供給し、HAペア内でシェルフが区別されるように固有のシェルフIDを割り当てます。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:hot-add-asa-cable-overview.html["シェルフをケーブル接続"]
+[role="quick-margin-para"]
+ホットアドするシェルフをHAペアの各コントローラに2つ接続されるようにケーブル接続します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:hot-add-asa-complete.html["ホットアドの完了"]
+[role="quick-margin-para"]
+ホットアドの準備の一環として自動ドライブ割り当てを無効にした場合は、ドライブ所有権を手動で割り当ててから、必要に応じて自動ドライブ割り当てを再度有効にする必要があります。

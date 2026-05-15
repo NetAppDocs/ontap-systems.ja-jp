@@ -1,0 +1,30 @@
+= 要件
+:allow-uri-read: 
+
+
+
+
+== 要件
+
+NS224シェルフをホットアドするには、HAペアが以下の要件を満たしている必要があります。
+
+サポートされるONTAPのバージョン:: プラットフォームモデルと ONTAP のバージョンが、ホットアドする NS224 シェルフとドライブに対応している必要があります。 https://hwu.netapp.com["NetApp Hardware Universe の略"^]を参照してください。
+シェルフの数:: HA ペアは、現在設置されているシェルフの数に加えて、少なくとも 1 つの追加シェルフをサポートする必要があります。シェルフをホットアド後は、HA ペアがサポートする最大シェルフ数を超えることはできません。 https://hwu.netapp.com["NetApp Hardware Universe の略"^]を参照してください。
+ケーブル配線:: シェルフを接続するには、正しい数と種類のケーブルが必要です。すでにNS224シェルフがあるHAペアにシェルフをホットアドする場合は、HAペアがマルチパスHAとしてケーブル接続されており、ストレージケーブル接続エラーがないことが必要です。
++
+--
+ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]を実行して、ストレージケーブル接続のエラーメッセージと修正措置を確認します。ケーブル要件については、 https://hwu.netapp.com["NetApp Hardware Universe の略"^]を参照してください。
+
+--
+
+
+
+
+== ベストプラクティス
+
+NS224シェルフをホットアドする前に、次のベストプラクティスを確認してください。
+
+Disk Qualification Package::  https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["Disk Qualification Package"^]の最新バージョンをインストールしてから、シェルフをホットアドします。最新のDQPをインストールしておくことで、システムは新たに認定されたドライブを認識して使用できるようになり、ドライブ情報が最新でないというシステムイベントメッセージが表示されなくなり、認識されないドライブが原因で発生するドライブパーティション障害を回避できます。DQPは、最新でないドライブ ファームウェアについても通知します。
+Active IQ Config Advisor:: シェルフのホットアド前後に実行します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。ホットアド前に実行すると、既存のシェルフのイーサネット接続のスナップショットが提供され、NSMファームウェアのバージョンが確認され、すでに使用されているシェルフIDが特定されます。ホットアド後に実行すると、シェルフが正しくケーブル接続されていること、およびHAペア内でシェルフIDが一意であることが検証されます。
+NSM とドライブ ファームウェア:: 新しいシェルフを追加する前に、ストレージシステムに https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NVMeシェルフモジュール（NSM）ファームウェア"^]と https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["ドライブファームウェア"^]の最新バージョンをインストールしてください。シェルフとそのコンポーネントをサポートしていないバージョンにファームウェアを戻さないでください。
+

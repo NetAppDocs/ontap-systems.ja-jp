@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, replace, impair, nvme, module, nsm, nondisruptive, drive, io, nsm, replace an NSM 
 summary: 電源がオンになっている NS224 ドライブシェルフおよび I/O の実行中は、障害のある NVMe シェルフモジュール（ NSM ）を無停止で交換できます。 
 ---
-= NSM-NS224シェルフの交換
+= NS224 NSMモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

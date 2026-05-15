@@ -1,0 +1,39 @@
+---
+permalink: ns224/hot-add-eoa-cable-a320.html 
+sidebar: sidebar 
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff a320, cable, end-of-availability 
+summary: NS224シェルフをAFF A320システムにケーブル接続し、各シェルフがHAペア内の各コントローラに2つの接続を持つようにします。 
+---
+= NS224シェルフをAFF A320システムにケーブル接続します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NS224シェルフをAFF A320システムにケーブル接続し、各シェルフがHAペア内の各コントローラに2つの接続を持つようにします。
+
+ストレージの追加が必要になった場合は、既存のHAペアに2台目のシェルフをホットアドできます。
+
+.手順
+. シェルフをコントローラにケーブル接続します。
++
+.. NSM A ポート e0a をコントローラ A のポート e0e にケーブル接続します。
+.. NSM A のポート e0b をコントローラ B のポート e0b にケーブル接続します。
+.. NSM B ポート e0a をコントローラ B ポート e0e にケーブル接続します。
+.. NSM B のポート e0b をコントローラ A のポート e0b にケーブル接続します。+ 次の図は、ホットアドしたシェルフ（シェルフ 2 ）のケーブル接続を示しています。
++
+image::../media/drw_ns224_a320_2shelves_direct_attached.png[2台のNS224シェルフと3セットのオンボードポートを使用したAFF A320のケーブル接続]
+
+
+
+. ホットアドしたシェルフがを使用して正しくケーブル接続されていることを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
++
+ケーブル接続エラーが発生した場合は、表示される対処方法に従ってください。
+
+
+
+.次の手順
+この手順の準備の一環としてドライブの自動割り当てを無効にした場合は、ドライブの所有権を手動で割り当て、必要に応じてドライブの自動割り当てを再度有効にする必要があります。link:hot-add-eoa-complete.html["ホットアドを完了します"]に移動します。
+
+それ以外の場合は、シェルフのホットアド手順は終了です。

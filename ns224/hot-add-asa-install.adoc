@@ -1,20 +1,20 @@
 ---
-permalink: ns224/install-hot-add-shelf.html 
+permalink: ns224/hot-add-asa-install.html 
 sidebar: sidebar 
-keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, install, hot-add an ns224 drive shelf 
-summary: HA ペアが一定の要件を満たし、 HA ペアに適用可能な準備作業が完了したら、 NS224 ドライブシェルフをホットアドできます。 
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa systems, install 
+summary: NS224シェルフをキャビネットまたは通信ラックに取り付け、電源コードを接続し、ASAシステムのシェルフIDを設定します。 
 ---
-= ホットアド用のシェルフの設置- NS224シェルフ
+= ASAシステムにNS224シェルフを取り付ける
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-NS224シェルフをキャビネットまたはTelcoラックに設置し、電源コードを接続し（シェルフの電源が自動的にオンになります）、シェルフIDを設定する必要があります。
+NS224シェルフをキャビネットまたは通信ラックに取り付け、電源コードを接続し、ASAシステムのシェルフIDを設定します。
 
 .作業を開始する前に
-* 片側をまっすぐにしたペーパークリップまたは細いボールペンがあることを確認してください。
+* 片側をまっすぐに伸ばしたペーパークリップか、細いペン先のボールペンを用意してください。
 +
 シェルフIDを変更するには、ペーパークリップまたはボールペンを使用して、シェルフIDの変更手順用のオペレータディスプレイパネル（ODP）の後ろにあるシェルフIDボタンにアクセスします。
 
@@ -118,4 +118,4 @@ ID の点滅に 15 秒以上かかる場合は、ボタンをもう一度押し�
 
 
 .次の手順
-ホットアドシェルフをケーブル接続します。にアクセスします。
+棚を取り付けた後、link:hot-add-asa-cable-overview.html["シェルフをケーブル接続する"]。

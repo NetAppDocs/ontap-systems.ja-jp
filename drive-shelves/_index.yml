@@ -13,8 +13,12 @@ indexpage:
       url: "../nx224/change-shelf-id.html"
   - title: NS224シェルフの設置
     links:
-    - title: シェルフをホットアドします
-      url: "../ns224/hot-add-shelf-overview.html"
+    - title: AFFシステムのホットアドシェルフ
+      url: "../ns224/hot-add-aff-workflow.html"
+    - title: ASAシステムのホットアドシェルフ
+      url: "../ns224/hot-add-asa-workflow.html"
+    - title: EOA システム用ホットアドシェルフ
+      url: "../ns224/hot-add-eoa-workflow.html"
     - title: シェルフ ID を変更します
       url: "../ns224/change-shelf-id.html"
     - title: シェルフをスイッチ接続型ストレージとしてケーブル接続

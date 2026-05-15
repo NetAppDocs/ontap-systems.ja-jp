@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224 nvme drive shelf cabling guide, ns224 drive shelf cabling guide, ns224 shelf cabling guide, ns224 cabling guide, switch-attach, switch-attached, switch-attached storage, cable ns224 drive shelves as switch-attached storage 
 summary: NS224 ドライブシェルフを（直接接続型ストレージではなく）スイッチ接続型ストレージとしてケーブル接続する必要があるシステムの場合は、表示される情報を使用してください。 
 ---
-= シェルフをスイッチ接続型ストレージ -NS224 シェルフとしてケーブル接続します
+= NS224シェルフをスイッチ接続ストレージとしてケーブル接続
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
