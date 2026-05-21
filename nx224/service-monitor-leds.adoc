@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitor, health, drive, shelf, location, status, condition, led, component, operator, display, panel, nsm, power, supply, drive, monitor drive shelf leds, operator display panel leds, nsm leds, power supply leds, drive leds 
 summary: ドライブシェルフコンポーネントのLEDの場所とステータスの状態を把握することで、ドライブシェルフの健全性を監視できます。 
 ---
-= モニタードライブシェルフLED - NX224シェルフ
+= NX224シェルフのLEDの監視
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

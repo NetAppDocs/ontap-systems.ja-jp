@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: nx224, shelves, shelf, nx224 shelves, fail, fan, nondisruptive, power, io, progress, replace, replace a fan 
 summary: NX224 シェルフでは、電源がオンになっていて I/O が進行中でも、障害が発生したファンを中断せずに交換できます。 
 ---
-= ファンモジュールの交換 - NX224シェルフ
+= NX224シェルフのファンモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

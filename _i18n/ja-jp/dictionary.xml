@@ -758,10 +758,7 @@
   <block id="c58504da624719ce30aca73779ca7dbf" category="doc">システム構成を復元して確認します（ AFF A700s ）</block>
   <block id="38378f74fe70c284e9945a43bfb092d1" category="section-title">手順 1 ：コントローラを交換したあとにシステム時間を設定して確認します</block>
   <block id="5c41efcd6cdac2bf93f02a8055089ed8" category="section-title">手順 2 ：シャーシの HA 状態を確認して設定します</block>
-  <block id="3ceabec6c24f4b298d5024f17ef30a0b" category="summary">この手順は、セカンダリブートメディアのリストアに失敗した場合、または image.tgz ファイルがセカンダリブートメディアに見つからない場合にのみ使用します。</block>
   <block id="05dffff712f4aca6f86af6c7c42a9991" category="doc">ブートイメージをブートメディア - AFF A700s に転送します</block>
-  <block id="f2517f7437e31c22e8ebbe3208bc1f18" category="paragraph">コントローラモジュールに取り付けたセカンダリブートメディア上のイメージを使用して、交換用ブートメディアにシステムイメージをインストールできます。これは、コントローラモジュールに 2 つのブートメディアがあるシステムで、ブートメディアファイルを交換用ブートメディアに転送する主要な方法です。</block>
-  <block id="c74fc698f6085001fa8e634011afdd6d" category="paragraph">セカンダリブートメディア上のイメージには 'image.tgz ファイルが含まれていて ' 障害を報告していないことが必要ですimage.tgz ファイルがない場合、またはブートメディアから障害が報告されている場合は、この手順を使用できません。USB フラッシュドライブ交換用手順を使用して、ブートイメージを交換用ブートメディアに転送する必要があります。</block>
   <block id="e698e87d27bc1a99a5f5b8d08fca35ac" category="list-text">ケーブルマネジメントデバイスを再び取り付け、必要に応じてシステムにケーブルを再接続します。</block>
   <block id="e3c4a5c3fcb3f43b24292d74d0191cba" category="paragraph">ケーブルを再接続する際は、メディアコンバータ（ SFP ）も取り付け直してください（メディアコンバータを取り外した場合）。</block>
   <block id="0c285136d46116873f7508d317da15c6" category="list-text">コントローラモジュールの固定フックが持ち上がるまで、コントローラモジュールをシステムの奥に押し込みます。固定フックを強く押し込んでコントローラモジュールを装着し、固定フックをコントローラモジュールのピンにかけてロックします。</block>
@@ -4497,7 +4494,6 @@
   <block id="e160675dcb2bc6ebdb28380884820e26" category="paragraph">障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。</block>
   <block id="fc9b566637bbcf2a8a0459c61e065654" category="doc">コントローラをシャットダウンします - AFF A700s</block>
   <block id="499f2b4faaecf09ce2df725ed89b18e0" category="list-text">復元されたコピーを使用するかどうかを確認するメッセージが表示されたら 'y' を押し ' プロンプトが表示されたら 'y' を押してコントローラを再起動します</block>
-  <block id="018ed71ecc770af5fd2b70a8cffb7032" category="paragraph">ONTAP プロンプトから、コマンド「 system node halt -skip-lif-migration-before-shutdown true -ignore-quorum -warnings true -inhibit-takeover true 」を問題 できます。</block>
   <block id="6be69aa70f07d7fff388bde809e5a5ae" category="list-text">システムが HA ペアに含まれている場合、正常なコントローラが交換するコントローラをテイクオーバーできる必要があります（この手順 では「障害ノード」と呼びます）。</block>
   <block id="7343fb79026ff743ff1923cdd971a19f" category="list-text">この手順 では、障害のあるコントローラから交換用ノードにブートデバイスを移動して、古いコントローラモジュールと同じバージョンの ONTAP で _replacement _node がブートするようにします。</block>
   <block id="a555f92ceccdc34af0d85dfd74c70d5b" category="list-text">impaired_node は、交換するコントローラです。</block>
@@ -13149,9 +13145,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="0d9cb84ca4d1b976611c703d55106b16" category="image-alt">NX224 シェルフ ID を変更する</block>
   <block id="c3248ba61632476b6423842b95414f99" category="paragraph">棚IDボタンアクセス</block>
   <block id="f6b50513ccb0458f52042b169361dd21" category="list-text">ONTAPが実行中（コントローラがデータの提供に使用可能）で、シェルフ内のすべてのドライブが未所有のスペアである場合は、少なくとも 180 秒待機します。</block>
-  <block id="9daf77d9d23bfd6b9091a7cc689fc060" category="doc">ドライブのホットアド - NX224 シェルフ</block>
   <block id="6297d133d06242a84ced78f25874e3a3" category="summary">AFX クラスターが特定の要件を満たし、AFX クラスターに適用可能な準備タスクが完了したら、NX224 ドライブ シェルフをホット アドできます。</block>
-  <block id="21fcbf0345b3dd3b3ef04dc5e417d6f9" category="doc">棚のホットアド - NX224棚</block>
   <block id="a65fc212542af95abeff48e08e593cf1" category="paragraph">既存の AFX クラスター構成に NX224 シェルフをホットアドすることで、ストレージ機能を拡張できます。</block>
   <block id="ea76371559e3b84b90531685bb2cc925" category="list-text">ホットアドされたシェルフをケーブル接続すると、 ONTAP はシェルフを認識します。  NSM シェルフ ファームウェアとドライブ ファームウェアは、必要に応じて自動的に更新されます。</block>
   <block id="0449258a59d5f091984e585ac1700de0" category="list-text">シェルフをホットアドする前に、次のものを用意してください。</block>
@@ -13187,9 +13181,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="c73a63da4aa2a55331dc580e3f7a6058" category="paragraph">次の図は、スイッチ構成にシェルフをホット アドするためのケーブル接続を示しています。追加のシェルフを追加するには、同じスイッチベースのケーブル接続方法に従います。</block>
   <block id="b05d02c2614c4a2d2b2a26a857851df5" category="image-alt">NX224スイッチからAFX A1Kへのケーブル接続</block>
   <block id="6556efde934a1b635008a5645f522b81" category="summary">NX224 シェルフメンテナンスの概要。</block>
-  <block id="aea5557e47a25549577bff88a217d584" category="doc">棚メンテナンスの概要 - NX224棚</block>
   <block id="993a8298922e1e33c5d4cd26d00918db" category="paragraph">NX224 シェルフをメンテナンスするには、次の操作を実行できます。</block>
-  <block id="fd707bab34d37e3b52a981059bad8f48" category="doc">モニタードライブシェルフLED - NX224シェルフ</block>
   <block id="25a6c9168ed620e1583de103c9a0feda" category="paragraph">ドライブ シェルフ コンポーネント上の LED の位置とステータス状態を把握することで、シェルフの正常性を監視できます。</block>
   <block id="beab8079a8da60c183b5d6654c926a74" category="list-text">シェルフのオペレータ ディスプレイ パネル (ODP) と両方の NVMe シェルフ モジュール (NSM) にある位置 (青色) LED をアクティブにすると、サービスが必要なシェルフを物理的に特定するのに役立ちます。<block ref="d6bcc7ed2edc5b8ad7e7188bba8189eb" prefix=" " category="inline-code"></block></block>
   <block id="7162be5b0165c245b74c633ca80cf635" category="image-alt">NX224 NSM140モジュールLED</block>
@@ -13199,7 +13191,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5d6dfe5ed734a2782721caf18e0b4c2c" category="paragraph">PSUにAC電源が供給されていない</block>
   <block id="bcf3b498a47e3fa766dac31a45cbe289" category="paragraph">AC 電源はオンですが、PSU がエンクロージャ内にありません</block>
   <block id="025f8295430770e736e984e6794d5d23" category="summary">NX224 シェルフ内の障害が発生したブート メディアを交換できます。ブート メディアの交換は、シェルフの電源がオンで I/O が進行中でも、中断なく実行できます。</block>
-  <block id="332b9527a936c07781bf0cadb44287ea" category="doc">ブートメディアの交換 - NX224シェルフ</block>
   <block id="eb5f70737199e249936ef82aa6ae88c5" category="list-text">シェルフのパートナー NSM は起動して実行されており、正しくケーブル接続されている必要があります。そうすることで、障害が発生した FRU (ターゲット NSM) を搭載した NSM を取り外したときにシェルフの接続が維持されます。パートナーNSMのステータスを確認するには、<block ref="d3209ff29e83e82c4ec5003559161f56" category="inline-link-rx"></block> 。</block>
   <block id="901f0035fc2e222a5f2556710312ea92" category="list-text">電源コード リテーナーを開いて電源コードを電源装置から抜き、電源コードを電源装置から取り外します。</block>
   <block id="49c7a6cf6e0ed8a4a54247d9cd7587a2" category="list-text">ストレージ ケーブルを同じ 8 つの NSM ポートに再接続します。</block>
@@ -13207,7 +13198,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3c562e952688339fa635b0286f963d4f" category="inline-link">Active IQ Config Advisor を実行中</block>
   <block id="1da3eefc08ef3fe26013bf7d8153fa76" category="list-text">NSMが正しく配線されているか確認するには、<block ref="634f3ece8b47f8abdb5020d54bf495f5" category="inline-link-rx"></block> 。</block>
   <block id="c9e888f57f6411c65b9b5e2979bef85d" category="summary">電源がオンで I/O が進行中の NX224 ドライブ シェルフで、障害のある DIMM を中断せずに交換できます。</block>
-  <block id="475128cdfcd3d32fe12f61f1c5c81913" category="doc">DIMMの交換 - NX224シェルフ</block>
   <block id="49386f77e99642fe7af5b51a113e488e" category="list-text">*ベスト プラクティス:* ベスト プラクティスとしては、FRU コンポーネントを交換する前に、システムに最新バージョンの NVMe シェルフ モジュール (NSM) ファームウェアとドライブ ファームウェアをインストールしておくことが挙げられます。。NetAppNetAppサイトにアクセスして、 <block ref="131f203722a665651ecdd6a35f72c75e" category="inline-link-rx"></block>そして<block ref="33577154670f1ae7cae0968251dd0eac" category="inline-link-rx"></block> 。</block>
   <block id="cd8dd115df9bdca0ec5fbe812575893b" category="list-text">シェルフのパートナー NSM は起動して実行されており、正しくケーブル接続されている必要があります。これにより、障害が発生した FRU (ターゲット NSM) を搭載した NSM を取り外してもシェルフの接続が維持されます。パートナーNSMのステータスを確認するには、<block ref="d3209ff29e83e82c4ec5003559161f56" category="inline-link-rx"></block> 。</block>
   <block id="6c1921d7df069dd1505980207b7ea2f4" category="list-text">他の 3 つの DIMM を含む、システム内の他のすべてのコンポーネントが正常に機能している必要があります。</block>
@@ -13215,7 +13205,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="c642de7f35cea37f108d6c93586ba109" category="inline-link">Config Advisor の実行</block>
   <block id="0051f60b031fe2ab0d81803f9509c124" category="list-text">NSMが正しく配線されているか確認するには、<block ref="a1776ed37448018544fe80631966bcd7" category="inline-link-rx"></block> 。</block>
   <block id="275d34ff75df0b93dbba7bdb3db9f37c" category="summary">電源がオンで I/O が進行中の NX224 シェルフでは、障害が発生したドライブを中断せずに交換できます。</block>
-  <block id="7a87bb303f4254003a5ab0d31a1ed9fb" category="doc">ドライブのホットスワップ - NX224 シェルフ</block>
   <block id="cf2ae209b31955517ebee51c6c982859" category="list-text">インストールするドライブは、NX224 シェルフでサポートされている必要があります。シェルフの互換性のあるドライブは、<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 。</block>
   <block id="94f21a41afb0bb0d980e0970f99f7d57" category="inline-link">CLIドキュメントによるNetApp暗号化の概要</block>
   <block id="8fa5eb38a5f3ec0d799934def134e531" category="paragraph">SEDを交換する前と交換後に完了する必要がある追加の手順については、<block ref="a45663e4b664b1d312b1973da8ba3d7f" category="inline-link-rx"></block> 。</block>
@@ -13223,17 +13212,14 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7e2123141c266fa24d4f529172a4b541" category="list-text">*ベストプラクティス:* システムが新しく認定されたドライブを認識して使用できることを確認するには、<block ref="3d50ed979df83d97dd20b0cc2c8bc3a9" category="inline-link-rx"></block> 。</block>
   <block id="c9ebef258f2f12def066b21415a56382" category="paragraph">これにより、ドライブが認識されないために、最新ではないドライブ情報があることに関するシステム イベント メッセージが表示されず、ドライブのパーティション分割が妨げられることがなくなります。  DQP は、最新ではないドライブ ファームウェアについても通知します。</block>
   <block id="9552387a009f53c2998cb220cd16067e" category="summary">NX224 シェルフでは、電源がオンになっていて I/O が進行中でも、障害が発生したファンを中断せずに交換できます。</block>
-  <block id="57d682160e2237bd5f87944217c26dcf" category="doc">ファンモジュールの交換 - NX224シェルフ</block>
   <block id="89f2ef4ce5077162c93e2010696841ef" category="paragraph">ファン モジュール内のファンの 1 つまたは両方が故障した場合は、ファン モジュールを交換できます。この手順は、I/O が進行中で電源がオンになっている NX224 シェルフで中断なく完了できます。</block>
   <block id="392ec912e5e56a755ba6aec50131adae" category="list-text">*ベスト プラクティス:* ベスト プラクティスは、FRU コンポーネントを交換する前に、システムに最新バージョンの NSM ファームウェアとドライブ ファームウェアをインストールすることです。。NetAppNetAppサイトにアクセスして、 <block ref="131f203722a665651ecdd6a35f72c75e" category="inline-link-rx"></block>そして<block ref="33577154670f1ae7cae0968251dd0eac" category="inline-link-rx"></block> 。</block>
   <block id="37a8affe1fa106032de554c062e9e1cd" category="list-text">NSM ポートからシェルフ ケーブルを外します。</block>
   <block id="df72294c1d47e46ba433ddee498c7caa" category="list-text">シェルフのケーブルを同じ 8 つの NSM ポートに再接続します。</block>
   <block id="795e5b2d8dd6ace5605e89211abdf341" category="summary">電源がオンで I/O が進行中の NX224 シェルフ内で、障害が発生した Ethernet I/O モジュールを中断なく交換できます。</block>
-  <block id="56c6680038919ffea816b0106b2ef69f" category="doc">イーサネットI/Oモジュールの交換 - NX224シェルフ</block>
   <block id="bcbb78790793c3b3a6c4cc3de0f22bc6" category="list-text">障害が発生した NSM を取り外したときにシェルフの接続が維持されるように、シェルフのパートナー NSM が稼働しており、正しくケーブル接続されている必要があります。パートナーNSMのステータスを確認するには、<block ref="d3209ff29e83e82c4ec5003559161f56" category="inline-link-rx"></block> 。</block>
   <block id="8b9a79e838c879494b6ec6a4dd9f83d7" category="list-text">NSM のケーブルを再配線します。</block>
   <block id="2ddc2541950d2b7cf5fa865af0c30811" category="list-text">障害が発生した I/O モジュールを含む NSM とシェルフ オペレータ ディスプレイ パネルの注意 (オレンジ色) LED が点灯していないことを確認します。</block>
-  <block id="868dffc494c85c09a39784a568ce58c4" category="doc">NSM - NX224 シェルフの交換</block>
   <block id="8caf14bc08677c718cf235d44b23051c" category="paragraph">電源がオンで I/O が進行中の NX224 ドライブ シェルフで、障害のある NVMe シェルフ モジュール (NSM) を中断せずに交換できます。</block>
   <block id="1ca26d4850e86adaada89afb267eaf6f" category="list-text">NSM を交換するには、DIMM、ファン、ブート メディア、I/O モジュール、および電源を、障害のある NSM から交換用の NSM に移動する必要があります。</block>
   <block id="580caa7b67645719e0a4c78df2b4ea6a" category="paragraph">リアルタイム クロック (RTC) のバッテリーは移動しません。交換用 NSM にはプリインストールされています。</block>
@@ -13249,8 +13235,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5b1662852c865a6bd771638b5db9e862" category="list-text">親指で電源装置のテラコッタタブを押して、ロック機構を解除します。</block>
   <block id="1b4028b0424fade1bdb82356997b35c2" category="list-text">電源ハンドルを下方に回転させ、通常の操作の邪魔にならないようにします。</block>
   <block id="c772043a43cbf70f178bc60e9c2bb650" category="summary">NX224 シェルフでは、電源がオンになっていて I/O が進行中でも、障害が発生した電源装置を中断することなく交換できます。</block>
-  <block id="d50fc1b8ef2aa32e52f173d19ecc37c2" category="doc">電源のホットスワップ - NX224シェルフ</block>
-  <block id="8cd7ffd76d7b4b46c49c984da4cc21cf" category="doc">リアルタイムクロックの電池を交換する - NX224シェルフ</block>
   <block id="504ce12704134674e6c4f4d48826e550" category="paragraph">電源がオンで I/O が進行中の NX224 シェルフで、障害が発生したリアルタイム クロック (RTC) バッテリを中断なく交換できます。</block>
   <block id="99dfa28920a40a7be0858c50f989a3e5" category="section-title">2025年10月</block>
   <block id="f48884bca72e8c9a2c859cce9d6c2275" category="section-title">AFXストレージシステム</block>
@@ -13997,8 +13981,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="045d601ea55137d06367b4e5c07294cb" category="summary">暗号化チェックを完了した後、 AFF A700sシステム上の障害のあるコントローラをシャットダウンします。AFF A700sシステムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。</block>
   <block id="1cde608d6fe62f56bdc3a29ae9eafc3b" category="paragraph">暗号化チェックを完了した後、 AFF A700sシステム上の障害のあるコントローラをシャットダウンします。この手順には、コントローラを LOADER プロンプトに移動し、参照用にブート環境変数をキャプチャし、ブート メディアの交換のためにコントローラを準備することが含まれます。</block>
   <block id="7ff709ab33d28508eabb142a3db7ae80" category="summary">セカンダリ ブート メディアまたは USB フラッシュ ドライブを使用して、ブート イメージをAFF A700sシステムの交換用ブート メディアに転送します。AFF A700sシステムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。</block>
-  <block id="6827ba78ed93529d56c15a33eb4ff531" category="paragraph">セカンダリ ブート メディアまたは USB フラッシュ ドライブを使用して、ブート イメージをAFF A700sシステムの交換用ブート メディアに転送します。この手順には、主な方法としてセカンダリ ブート メディア上のイメージから復元すること、またはセカンダリ ブート メディアの復元が失敗した場合や image.tgz ファイルが見つからない場合に USB フラッシュ ドライブを使用することが含まれます。</block>
-  <block id="b3e6f6b7e4e5a440cfc3f9e0993cee92" category="section-title">オプション1: 2番目のブートメディアからのバックアップリカバリを使用してファイルを転送する</block>
   <block id="e4e6847403baa34b19d3eda275449b4b" category="section-title">オプション2: USBフラッシュドライブを使用してブートイメージを転送する</block>
   <block id="a9ada9881e4356b94c8f1b22d5de3285" category="summary">部品を交換した後、キットに同梱されている RMA 手順に従って、故障した部品をNetAppに返却できます。AFF C190システムは、手動のブート メディア リカバリ手順のみをサポートします。</block>
   <block id="16938aed6aaf31d064148061342cc4bf" category="paragraph">キットに同梱されている RMA 手順に従って、故障した部品をNetAppに返送してください。参照<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block> 詳細については、ページをご覧ください。AFF C190システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。</block>
@@ -15138,4 +15120,28 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8d5e7895e7572495b322b60ec1134d14" category="sidebar">ケーブル ASA システム</block>
   <block id="91d95e6e15279946ba73922f805b7916" category="sidebar">EOAシステム</block>
   <block id="9d0dcbcd43b2c01863b0888b33784f20" category="sidebar">ケーブルの販売終了システム</block>
+  <block id="63dd54bdbae041eaa0355a49c82ac7f1" category="paragraph">交換するファンモジュールを特定するには、BMCメッセージまたは注意LEDを使用します。BMCはファンモジュールを Fan#_# としてマッピングします。最初の数字はスロット、2番目の数字は行（1=上、2=下）です。たとえば、スロット1、2行目は Fan1_2 となります。</block>
+  <block id="f6f03e6d93cc09c3d00cfa6485d8a770" category="paragraph">ファンモジュールがシャーシからわずかに離れる。</block>
+  <block id="c06f099c5d6289bd8592143ef4a8371d" category="paragraph">注意喚起LEDは、ファンが所定の位置に取り付けられ、動作速度まで回転すると消灯します。</block>
+  <block id="3c046249b91ec9e1b6e20b1dca03357b" category="paragraph">AFF A700sシステムで、セカンダリブートメディア（プライマリ方法）またはUSBフラッシュドライブ（セカンダリブートメディアのリストアが失敗した場合、または<block ref="c1317185516b20a37b064c5ed31cf719" prefix=" " category="inline-code"></block>ファイルが見つからない場合）を使用して、ブートイメージを交換用ブートメディアに転送します。</block>
+  <block id="1c8d763a92bd021dd060e8e7d9ac1731" category="section-title">オプション1：2番目のブートメディアからバックアップリカバリを使用してシステムイメージを転送する</block>
+  <block id="d5a720bc38c4a4820ccca7cd1812ddeb" category="paragraph">コントローラモジュール内の2番目のブートメディアにあるイメージを使用して、交換用ブートメディアにシステムイメージをインストールできます。これは、コントローラモジュールに2つのブートメディアを搭載したシステムにおける主要な方法です。</block>
+  <block id="2b749bec4e587e3e4467be27bd35ee54" category="paragraph">セカンダリブートメディアのイメージには<block ref="c1317185516b20a37b064c5ed31cf719" prefix=" " category="inline-code"></block>ファイルが含まれている必要があり、障害を報告していない必要があります。<block ref="c1317185516b20a37b064c5ed31cf719" prefix=" " category="inline-code"></block>ファイルが見つからない場合、またはブートメディアで障害が報告されている場合は、この手順を使用できません。代わりに<block ref="480fd3d07776d9101453634e69c396f9" category="inline-xref-macro-rx"></block>を使用してください。</block>
+  <block id="7d4f9a8194d67a25499f31dd2c3c5474" category="paragraph">この手順は、セカンダリブートメディアのリストアに失敗した場合、または<block ref="c1317185516b20a37b064c5ed31cf719" prefix=" " category="inline-code"></block>ファイルがセカンダリブートメディアに見つからない場合にのみ使用してください。</block>
+  <block id="a5c386e3a25844e2b0970f41423bd18b" category="list-text">障害のあるコントローラで実行されていたものと同じONTAPのイメージバージョンのコピー。NetApp Support Siteのダウンロードセクションから適切なイメージをダウンロードできます。</block>
+  <block id="b59e3c20d440ebde2a51c9f98270768b" category="list-text"><block ref="c1a29cc79fbc441f23fa8d5d10961fd8" prefix=" " category="inline-code"></block>コマンドで変更した環境変数を保存します。</block>
+  <block id="746e6404fb3c214cba42a49e00f4cdbc" category="list-text">環境変数が想定どおりに設定されていることを確認してください。</block>
+  <block id="769810d91f37a33448f782804afe8b15" category="doc">NX224ドライブシェルフIDを変更する</block>
+  <block id="9462a81bfda8f9b77a3fb2f9e1f1d3fa" category="doc">NX224シェルフにドライブをホットアドする</block>
+  <block id="7a327b955d36fb9e8769c059837e905f" category="doc">AFXクラスタにNX224シェルフをホットアドする</block>
+  <block id="9cbcc0cd643835114561467f05ae3a12" category="doc">NX224シェルフのメンテナンス</block>
+  <block id="35ec49663bb0d725792ecfd7cdfd35d8" category="doc">NX224シェルフのLEDの監視</block>
+  <block id="ff0b8412ab1e2c3c52a16bb8d94e3beb" category="doc">NX224シェルフ内のブートメディアを交換する</block>
+  <block id="cb0d0b8199238de6776631ac4982ab88" category="doc">NX224シェルフ内のDIMMを交換する</block>
+  <block id="8571f926f0e56c390aab9e784e5aa2a8" category="doc">NX224シェルフ内のドライブをホットスワップする</block>
+  <block id="4f770573b4054149d0e3f5d188ae4e4f" category="doc">NX224シェルフのファンモジュールを交換する</block>
+  <block id="a2faab4698e67845fc0fbe185cc98fd9" category="doc">NX224シェルフ内のイーサネットI/Oモジュールを交換する</block>
+  <block id="8f58e61d50af420886f01cc38be3cf6a" category="doc">NX224シェルフ内のNSMを交換する</block>
+  <block id="5154a7eeeb6eb7c914e9aa6ac86007e6" category="doc">NX224シェルフの電源装置を交換する</block>
+  <block id="7b0bd118308264295dfa730998f7251f" category="doc">NX224シェルフのRTCバッテリを交換する</block>
 </blocks>

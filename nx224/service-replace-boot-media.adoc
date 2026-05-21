@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: nx224, shelves, shelf, nx224 shelves, boot, media, run, ontap, nvme, module, nsm, firmware, version, nondisruptive, io 
 summary: NX224 シェルフ内の障害が発生したブート メディアを交換できます。ブート メディアの交換は、シェルフの電源がオンで I/O が進行中でも、中断なく実行できます。 
 ---
-= ブートメディアの交換 - NX224シェルフ
+= NX224シェルフ内のブートメディアを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

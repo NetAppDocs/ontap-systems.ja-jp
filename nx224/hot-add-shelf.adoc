@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: nx224, shelves, shelf, nx224 shelves, hot-add, ha, pair, install, hot-add an nx224 drive shelf 
 summary: AFX クラスターが特定の要件を満たし、AFX クラスターに適用可能な準備タスクが完了したら、NX224 ドライブ シェルフをホット アドできます。 
 ---
-= 棚のホットアド - NX224棚
+= AFXクラスタにNX224シェルフをホットアドする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

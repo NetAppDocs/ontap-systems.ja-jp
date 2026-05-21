@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: nx224, shelves, shelf, nx224 shelves, replace, fail,  nondisruptive, power, io 
 summary: 電源がオンで I/O が進行中の NX224 シェルフ内で、障害が発生した Ethernet I/O モジュールを中断なく交換できます。 
 ---
-= イーサネットI/Oモジュールの交換 - NX224シェルフ
+= NX224シェルフ内のイーサネットI/Oモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
