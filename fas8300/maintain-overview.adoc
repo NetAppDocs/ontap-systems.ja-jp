@@ -2,7 +2,7 @@
 permalink: fas8300/maintain-overview.html 
 sidebar: sidebar 
 keywords: fas8300 maintenance, maintenance, repairing, repairing fas8300, replace fas8300 components, replace fas8300 components 
-summary: FAS8300およびFAS8700ハードウェアのメンテナンス 
+summary: FAS8300およびFAS8700ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。 
 ---
 = FAS8300 / FAS8700ハードウェアのメンテナンス
 :allow-uri-read: 
@@ -54,7 +54,7 @@ link:chassis-replace-overview.html["シャーシ"]
 
 
  a| 
-link:controller-replace-overview.html["コントローラ"]
+link:controller-replace-workflow.html["コントローラ"]
  a| 
 コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、ONTAP機能を実装します。
 

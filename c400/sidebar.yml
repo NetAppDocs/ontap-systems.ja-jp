@@ -63,20 +63,22 @@ entries:
       url: "/c400/chassis-replace-move-hardware.html"
     - title: 交換後の処理
       url: "/c400/chassis-replace-complete-system-restore-rma.html"
-  - title: コントローラモジュール
+  - title: コントローラ
     pdf-filename: AFF C400コントローラモジュール
     entries:
-    - title: 概要
-      url: "/c400/controller-replace-overview.html"
+    - title: コントローラの交換ワークフロー
+      url: "/c400/controller-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/c400/controller-replace-requirements.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/c400/controller-replace-shutdown.html"
-    - title: コントローラモジュールを交換します
+    - title: コントローラを交換してください
       url: "/c400/controller-replace-move-hardware.html"
     - title: システム設定を復元します
       url: "/c400/controller-replace-system-config-restore-and-verify.html"
-    - title: システムにケーブルを再接続します
+    - title: コントローラをギブバック
       url: "/c400/controller-replace-recable-reassign-disks.html"
-    - title: システムのリストアを完了
+    - title: コントローラ交換後の処理
       url: "/c400/controller-replace-restore-system-rma.html"
   - title: DIMM
     pdf-filename: AFF C400 DIMM

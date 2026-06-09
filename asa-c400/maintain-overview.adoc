@@ -2,7 +2,7 @@
 permalink: asa-c400/maintain-overview.html 
 sidebar: sidebar 
 keywords: asa C400 maintenance, maintenance, repairing C400, repairing asa C400, replace asa C400 components, replace asa C400 components 
-summary: ASA C400ハードウェアのメンテナンス 
+summary: ASA C400ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。 
 ---
 = ASA C400ハードウェアのメンテナンス
 :allow-uri-read: 
@@ -47,7 +47,7 @@ link:chassis-replace-overview.html["シャーシ"]
 
 
  a| 
-link:controller-replace-overview.html["コントローラ"]
+link:controller-replace-workflow.html["コントローラ"]
  a| 
 コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ドライブを制御し、ONTAP機能を実装します。
 

@@ -66,17 +66,19 @@ entries:
   - title: コントローラ
     pdf-filename: AFF A400 コントローラモジュール
     entries:
-    - title: 概要
-      url: "/a400/controller-replace-overview.html"
+    - title: コントローラの交換ワークフロー
+      url: "/a400/controller-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/a400/controller-replace-requirements.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a400/controller-replace-shutdown.html"
     - title: コントローラを交換してください
       url: "/a400/controller-replace-move-hardware.html"
     - title: システム設定を復元します
       url: "/a400/controller-replace-system-config-restore-and-verify.html"
-    - title: システムにケーブルを再接続
+    - title: コントローラをギブバック
       url: "/a400/controller-replace-recable-reassign-disks.html"
-    - title: システムのリストアを完了
+    - title: コントローラ交換後の処理
       url: "/a400/controller-replace-restore-system-rma.html"
   - title: DIMM
     pdf-filename: AFF A400 DIMM
@@ -85,10 +87,10 @@ entries:
     pdf-filename: AFF A400 ファンモジュール
     url: "/a400/fan-swap-out.html"
   - title: NVDIMM バッテリ
-    pdf-filename: AFF A400 NVDIMM バッテリ
+    pdf-filename: AFF A400 NVDIMMバッテリ
     url: "/a400/nvdimm-battery-replace.html"
   - title: NVDIMM
-    pdf-filename: AFF A320 NVDIMM
+    pdf-filename: AFF A400 NVDIMM
     url: "/a400/nvdimm-replace.html"
   - title: PCIe カードまたはメザニンカード
     pdf-filename: AFF A400 PCIe またはメザニンカード

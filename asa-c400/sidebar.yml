@@ -66,17 +66,19 @@ entries:
   - title: コントローラ
     pdf-filename: ASA C400コントローラモジュール
     entries:
-    - title: 概要
-      url: "/asa-c400/controller-replace-overview.html"
+    - title: コントローラの交換ワークフロー
+      url: "/asa-c400/controller-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/asa-c400/controller-replace-requirements.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/asa-c400/controller-replace-shutdown.html"
     - title: コントローラを交換してください
       url: "/asa-c400/controller-replace-move-hardware.html"
     - title: システム設定を復元します
       url: "/asa-c400/controller-replace-system-config-restore-and-verify.html"
-    - title: システムにケーブルを再接続
+    - title: コントローラをギブバック
       url: "/asa-c400/controller-replace-recable-reassign-disks.html"
-    - title: システムのリストアを完了
+    - title: コントローラ交換後の処理
       url: "/asa-c400/controller-replace-restore-system-rma.html"
   - title: DIMM
     pdf-filename: ASA C400 DIMM

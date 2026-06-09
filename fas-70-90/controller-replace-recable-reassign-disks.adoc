@@ -15,7 +15,7 @@ FAS70またはFAS90システムが通常の動作を再開できるように、�
 
 [role="tabbed-block"]
 ====
-.暗号化なし
+.暗号化または External Key Manager（EKM）なし
 --
 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。
 
@@ -35,11 +35,25 @@ FAS70またはFAS90システムが通常の動作を再開できるように、�
 --
 .オンボード暗号化（OKM）
 --
-オンボード暗号化をリセットし、コントローラを通常動作に戻します。
+OKM用のオンボード暗号化キーを復元して再封印し、コントローラを正常な動作状態に戻します。
+
+.作業を開始する前に
+開始する前に、 https://docs.netapp.com/us-en/ontap-cli/security-key-manager-onboard-show-backup.html["security key-manager onboard show-backup"]を確認するか、NetAppサポートにお問い合わせください。
 
 .手順
-. Loaderプロンプトで、と入力し `boot_ontap maint`ます。
 . LoaderプロンプトからONTAPメニューを起動し `boot_ontap menu`、オプション10を選択します。
+. 正常なコントローラからクラスタ全体のパスフレーズを取得して検証します。
++
+.. 次のコマンドを実行して、クラスタ全体のパスフレーズを取得します：
++
+`security key-manager onboard show-backup`
+
+.. 次のコマンドを使用して、クラスタ全体のパスフレーズを確認します。
++
+`security key-manager onboard verify-backup`
+
+
+
 . OKMパスフレーズを入力します。
 +
 
@@ -63,9 +77,9 @@ NOTE: パスフレーズの入力を2回求められます。
 
 NOTE: クラスタのOKMのクラスタ全体のパスフレーズを入力するように求められます。
 
-.. キーのステータスを確認します。 `security key-manager key query -restored _false_`
+.. キーのステータスを確認します。 `security key-manager key query -restored false`
 +
-適切に同期されている場合、出力には何の結果も表示されません。
+正しく同期されている場合、出力には結果が表示されません。
 
 +
 出力に結果（システムの内部キーテーブルにないキーのキーID）が表示された場合は、にお問い合わせください https://support.netapp.com["ネットアップサポート"]。
@@ -74,6 +88,10 @@ NOTE: クラスタのOKMのクラスタ全体のパスフレーズを入力す�
 
 . 障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。 `storage failover giveback -ofnode _impaired_node_name_`
 . 自動ギブバックを無効にした場合は、再度有効にします。 `storage failover modify -node local -auto-giveback _true_`
++
+
+NOTE: 鍵が見つからない場合の返却時に拒否権を上書きしないでください。NetApp サポートにお問い合わせください。
+
 . AutoSupportが有効になっている場合は、ケースの自動作成をリストアまたは抑制解除します。 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 

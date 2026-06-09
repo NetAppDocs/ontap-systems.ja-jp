@@ -1,0 +1,46 @@
+---
+permalink: asa-c400/controller-replace-requirements.html 
+sidebar: sidebar 
+keywords: asa c400, prerequisite, replace the controller module 
+summary: ASA C400システムのコントローラを交換する前に、システム内の他のすべてのコンポーネントが正常に機能していることを確認し、正しい交換用コントローラがあることを確認し、コントローラのコンソール出力をテキストログファイルに保存します。 
+---
+= コントローラを交換するための要件 - ASA C400
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA C400システムのコントローラを交換する前に、システム内の他のすべてのコンポーネントが正常に機能していることを確認し、正しい交換用コントローラがあることを確認し、コントローラのコンソール出力をテキストログファイルに保存します。
+
+コントローラモジュールを交換するための要件を確認します。
+
+[NOTE]
+====
+NetApp では、この手順を実行する際には、作業対象のデバイスでコンソールログを有効にし、以下の操作を行うことを強くお勧めします。
+
+* メンテナンス中はAutoSupportを有効にしておいてください。これにより、問題が発生した場合にNetAppサポートが診断情報を受信できるようになります。
+* すべてのCLIセッションのセッションログを有効にします。これにより、メンテナンス作業中に実行されたすべてのコマンドとシステム出力の完全な記録が作成されます。セッションログを有効にする方法については、 https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_configure_PuTTY_for_optimal_connectivity_to_ONTAP_systems["ONTAP システムへの最適な接続のために PuTTY を設定する方法"^]を参照してください。
+
+
+====
+* すべてのドライブシェルフが適切に動作している必要があります。
+* 正常なコントローラは、交換されるコントローラ (この手順では障害のあるコントローラと呼びます) を引き継ぐことができる必要があります。
+* コントローラーのアップグレードにはこの手順を使用しないでください。参照 https://docs.netapp.com/us-en/ontap-systems-upgrade/choose_controller_upgrade_procedure.html["コントローラハードウェアのアップグレード手順を選択"]ガイダンスのため。
+* システムがMetroCluster構成の場合、 https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["正しいリカバリ手順の選択"]この手順を使用するかどうかを決定します。
+* 故障したコンポーネントを、 NetAppから受け取ったフィールド交換可能ユニット (FRU) と交換します。
+* コントローラー モジュールを同じモデル タイプのコントローラー モジュールと交換します。コントローラー モジュールを交換してもシステムをアップグレードすることはできません。
+* この手順では、ドライブまたはドライブ シェルフを変更することはできません。
+* この手順 では、障害のあるコントローラから交換用コントローラにブートデバイスが移動され、交換用コントローラが古いコントローラモジュールと同じバージョンの ONTAP でブートするようになります。
+* この手順で使用されるコントローラの用語を理解します。
++
+** 障害のあるコントローラーは交換されるコントローラーです。
+** 交換用コントローラは、障害のあるコントローラと交換する新しいコントローラです。
+** healthy_controller はサバイバーコントローラです。
+
+
+*  `security key-manager onboard show-key-store`を使用して、Onboard Key Manager（OKM）が設定されているかどうかを確認します。設定されている場合は、 https://docs.netapp.com/us-en/ontap-cli/security-key-manager-onboard-show-backup.html["security key-manager onboard show-backup"]を使用してクラスタ全体のパスフレーズを取得するか、この手順を開始する前にNetAppサポートにお問い合わせください。
+
+
+.次の手順
+ASA C400 コントローラーの交換要件を確認したら、link:controller-replace-shutdown.html["障害のあるコントローラをシャットダウン"]する必要があります。
