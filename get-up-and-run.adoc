@@ -23,8 +23,8 @@ MetroCluster 構成でセットアップされていないストレージシス�
 
 [role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/afx/index.html["AFXスイッチ"^]
-* link:https://review.docs.netapp.com/us-en/ontap-systems-switches/cluster/index.html["クラスタースイッチ"^]
-* link:https://review.docs.netapp.com/us-en/ontap-systems-switches/storage/index.html["ストレージ スイッチ"^]
+* link:https://docs.netapp.com/us-en/ontap-systems-switches/cluster/index.html["クラスタースイッチ"^]
+* link:https://docs.netapp.com/us-en/ontap-systems-switches/storage/index.html["ストレージ スイッチ"^]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/install-9336c-shared.html["共有スイッチ"^]
 
 
