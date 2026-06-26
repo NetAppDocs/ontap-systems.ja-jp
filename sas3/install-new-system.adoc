@@ -1,10 +1,10 @@
 ---
 permalink: sas3/install-new-system.html 
 sidebar: sidebar 
-keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b 
-summary: 新しいシステム HA ペアまたはシングルコントローラ構成がキャビネットに設置されていない場合は、ラックにディスクシェルフを設置してケーブル接続する必要があります。 
+keywords: install, cable, disk, shelf, iom12, module, system, ha, pair, single-controller, configuration, iom12b, iom12c, ds212c, ds224c, ds460c 
+summary: 新しいシステムがキャビネットに組み込まれていない場合は、ディスク シェルフをラックに設置してケーブル接続する必要があります。 
 ---
-= シェルフの取り付けと配線 - DS212C、DS224C、または DS460C
+= DS212C、DS224C、またはDS460Cシェルフの取り付けとケーブル接続
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,7 +14,7 @@ summary: 新しいシステム HA ペアまたはシングルコントローラ�
 新しいシステム HA ペアまたはシングルコントローラ構成がキャビネットに設置されていない場合は、ラックにディスクシェルフを設置してケーブル接続できます。
 
 .このタスクについて
-* IOM12 / IOM12Bモジュールを搭載したディスクシェルフは、シェルフIDが00に設定されています。
+* IOM12、IOM12B、またはIOM12Cモジュールを搭載したディスク シェルフは、シェルフIDが00にプリセットされた状態で出荷されます。
 +
 
 NOTE: 少なくとも 2 つのスタックで構成される HA ペアがある場合、 2 番目のスタックのルートアグリゲートを含むディスクシェルフのシェルフ ID はあらかじめ 10 に設定されています。
@@ -26,7 +26,7 @@ NOTE: 少なくとも 2 つのスタックで構成される HA ペアがある�
 +
 ラベルにはスタック番号が示されます。たとえば、「* Loop or Stack #：1 *」や「* Loop or Stack #：2 *」のようになります。ルートアグリゲートが含まれていないディスクシェルフのラベルには、ディスクシェルフのシリアル番号のみが記載されています。
 
-* システムのセットアップと構成時に、ディスク所有権の自動割り当てを使用するようにシステムを設定していない場合は、ディスク所有権を手動で割り当てる必要があります。
+* システム設定時に自動ディスク所有権割り当てを使用するようにシステムを構成しない場合、ディスク所有権を手動で割り当てる必要があります。
 * インバンドのAlternate Control Path（IBACP）は自動的に有効になります。
 +
 IBACPは、シングルパスHA構成またはシングルパス構成ではサポートされません。

@@ -1,17 +1,17 @@
 ---
 permalink: sas3/install-cabling-worksheets-how-to-read-quadpath.html 
 sidebar: sidebar 
-keywords: example, guide, read, apply, complete, worksheet, stack, disk, shelves, shelf, iom12, quad-pathed, connectivity, how to read a worksheet to cable controller-to-stack connections for quad-pathed connectivity 
-summary: 以下の例は、クアッドパス接続用のIOM12 / IOM12Bモジュールを使用するディスクシェルフで、記入済みのワークシートの内容を適用して複数のディスクシェルフをケーブル接続する方法を示しています。 
+keywords: stack, disk, shelves, shelf, iom12, quad-pathed, connectivity, sas, ds212c, ds224c, ds460c 
+summary: この例を参考に、完成したワークシートを読み解き、4パス接続用のディスク シェルフのケーブルスタックに適用する方法を確認してください。 
 ---
-= DS212C、DS224C、または DS460C のクアッドパス接続におけるコントローラとスタック間の接続配線に関するワークシートの読み方
+= DS212C、DS224C、またはDS460Cの4ポート接続用のコントローラとスタックのケーブル接続に関するワークシートを参照してください。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-以下の例は、クアッドパス接続用のIOM12 / IOM12Bモジュールを使用するディスクシェルフで、記入済みのワークシートの内容を適用して複数のディスクシェルフをケーブル接続する方法を示しています。
+この例を参考に、完成したワークシートを読み取って、IOM12、IOM12B、またはIOM12Cモジュールを搭載したディスク シェルフのケーブルスタックに適用し、4パス接続を実現する方法を学ぶことができます。
 
 .このタスクについて
 * この手順では、次のワークシートとケーブル接続例を使用して、ワークシートに基づいてコントローラ / スタック間をケーブル接続する方法を示します。

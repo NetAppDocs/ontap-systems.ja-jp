@@ -1,10 +1,10 @@
 ---
 permalink: sas3/service-hot-swap-power-supply.html 
 sidebar: sidebar 
-keywords: hot-swap, fail, power, supply, ds460c, ds224c, ds212c, disk, shelf-nondisruptive, shelf, nondisruptive, system, power, I O, progress, hot-swap a power supply 
+keywords: hot-swap, replace, power, supply, ds460c, ds224c, ds212c 
 summary: DS460C 、 DS224C 、または DS212C ディスクシェルフでは、障害が発生した電源装置をホットスワップできます。 
 ---
-= 電源のホットスワップ - DS212C、DS224C、または DS460C
+= DS212C、DS224C、またはDS460Cの電源装置をホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,7 +13,7 @@ summary: DS460C 、 DS224C 、または DS212C ディスクシェルフでは、
 [role="lead"]
 DS460C 、 DS224C 、または DS212C ディスクシェルフでは、障害が発生した電源装置をホットスワップできます。
 
-この手順は、IOM12 または IOM12B モジュールを搭載したシェルフに適用されます。
+この手順は、IOM12、IOM12B、またはIOM12Cモジュールを搭載したシェルフに適用されます。
 
 .作業を開始する前に
 * システムの他のコンポーネント ( 他の電源装置を含む ) がすべて正常に機能している必要があります。

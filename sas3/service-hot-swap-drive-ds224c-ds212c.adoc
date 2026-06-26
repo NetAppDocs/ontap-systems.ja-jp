@@ -1,17 +1,17 @@
 ---
 permalink: sas3/service-hot-swap-drive-ds224c-ds212c.html 
 sidebar: sidebar 
-keywords: hot-swap, fail, disk, drive, ds224c, ds212c, disk, shelf-nondisruptive, nondisruptive, replace, I O, hot-swap a disk drive in a ds224c or ds212c disk shelf 
+keywords: hot-swap, disk, drive, ds224c, ds212c, disk, replace, sas 
 summary: DS224C または DS212C ディスクシェルフでは、障害が発生したディスクドライブをホットスワップできます。 
 ---
-= ディスクドライブのホットスワップ - DS212C、DS224C
+= DS212CまたはDS224Cシェルフのディスクドライブをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-IOM12、IOM12B モジュールを搭載した DS224C または DS212C ディスク シェルフ内の障害が発生したディスク ドライブをホットスワップできます。
+DS224CまたはDS212Cディスク シェルフで、IOM12、IOM12B、またはIOM12Cモジュールを搭載した障害ドライブをホットスワップできます。
 
 .このタスクについて
 * 新しいディスクドライブのファームウェアが最新バージョンでない場合は、自動的に（無停止で）更新されます。

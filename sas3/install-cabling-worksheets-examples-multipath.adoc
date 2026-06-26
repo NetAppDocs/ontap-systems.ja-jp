@@ -1,17 +1,19 @@
 ---
 permalink: sas3/install-cabling-worksheets-examples-multipath.html 
 sidebar: sidebar 
-keywords: controller-to-stack, cabling, worksheet, cable, ha, pair, multipath, ha, configuration, controller-to-stack, cabling, controller-to-stack cabling worksheets and cabling examples for multipath ha configuration 
-summary: コントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 HA ペアをマルチパス HA 構成としてケーブル接続できます。 
+keywords: controller, stack, cable, ha, pair, multipath, configuration, ds212c, ds224c, ds460c 
+summary: コントローラーとスタック間のケーブル配線に関するワークシートと例を使用すると、HAペアをマルチパスHA構成として配線できます。 
 ---
-= マルチパス HA 構成の配線ワークシート - DS212C、DS224C、または DS460C
+= DS212C、DS224C、またはDS460CマルチパスHA構成用のケーブル配線ワークシート
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-コントローラとスタック間の配線ワークシートと配線例を使用して、HAペアをマルチパスHA構成として配線できます。これは、IOM12/IOM12Bモジュールを搭載したシェルフに適用されます。
+コントローラ / スタック間のケーブル接続ワークシートとケーブル接続例を使用して、 HA ペアをマルチパス HA 構成としてケーブル接続できます。
+
+これは、IOM12、IOM12B、またはIOM12Cモジュールを搭載したシェルフに適用されます。
 
 
 NOTE: ストレージを内蔵していないこの情報環境プラットフォーム。

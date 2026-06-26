@@ -1,17 +1,17 @@
 ---
 permalink: sas3/service-hot-swap-drive-ds460c.html 
 sidebar: sidebar 
-keywords: hot-swap, fail, disk, drive, ds460c, nondisruptive, replace, system, power, serving, data, I O, hot-swap a disk drive in a ds460c disk shelf 
+keywords: hot-swap, replace, disk, drive, ds460c, sas, shelf 
 summary: DS460C ディスクシェルフ内の障害が発生したディスクドライブをホットスワップすることができます。 
 ---
-= ディスクドライブのホットスワップ - DS460C
+= DS460Cシェルフ内のディスクドライブをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-IOM12 または IOM12B モジュールを搭載した DS460C ディスク シェルフ内の障害が発生したディスク ドライブをホットスワップできます。
+IOM12、IOM12B、またはIOM12Cモジュールを搭載したDS460Cディスク シェルフの障害ドライブをホットスワップできます。
 
 .作業を開始する前に
 * 交換用ディスクドライブは、DS460Cディスクシェルフでサポートされている必要があります。構成でサポートされているディスクドライブは、  https://hwu.netapp.com["NetApp Hardware Universe の略"] 。

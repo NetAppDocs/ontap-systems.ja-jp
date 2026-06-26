@@ -1,17 +1,17 @@
 ---
 permalink: sas3/install-cabling-worksheets-how-to-read-multipath.html 
 sidebar: sidebar 
-keywords: example, guide, read, apply, complete, worksheet, cable, controller-to-stack, connection, disk, shelves, shelf, iom12, multipathed, connectivity, hot to read a worksheet to cable controller-to-stack connections for multipathed connectivity 
-summary: 以下の例は、マルチパス接続用の IOM12 モジュールを搭載したディスクシェルフで、記入済みのワークシートの内容を適用してコントローラとスタックをケーブル接続する方法を示しています。 
+keywords: cable, controller, stack, connection, disk, shelves, shelf, iom12, multipathed, connectivity, ds212c, ds224c, ds460c 
+summary: この例を参考に、マルチパス接続用のディスク シェルフのケーブルコントローラとスタック間の接続に関する、記入済みのワークシートの読み方と適用方法を確認してください。 
 ---
-= マルチパス接続用のコントローラとスタック間の接続を配線するためのワークシートの読み方 - DS212C、DS224C、または DS460C
+= DS212C、DS224C、またはDS460Cのマルチパスコントローラとスタック間の接続に関するケーブル配線ワークシートを参照する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-以下の例は、マルチパス接続用のIOM12 / IOM12Bモジュールを使用するディスクシェルフのコントローラ/スタック間をケーブル接続するための記入済みワークシートの内容と適用方法を示しています。
+この例を参考に、マルチパス接続用のIOM12、IOM12B、またはIOM12Cモジュールを搭載したディスク シェルフのケーブルコントローラとスタック間の接続に、完成したワークシートを読み込んで適用する方法を理解できます。
 
 .作業を開始する前に
 内蔵ストレージを搭載したプラットフォームを使用している場合は、次のワークシートを使用します。
@@ -21,7 +21,7 @@ link:install-cabling-worksheets-examples-fas2600.html["内蔵ストレージを�
 .このタスクについて
 * この手順では、次のワークシートとケーブル接続例を使用して、ワークシートに基づいてコントローラ / スタック間をケーブル接続する方法を示します。
 +
-この例では、各コントローラにクアッドポートSAS HBAを2つ（SASポート×8）を備え、IOM12 / IOM12Bモジュールを使用するディスクシェルフスタックを2つを使用するマルチパスHA構成を使用します。ワークシート内のポートペアを 1 つおきにケーブル接続します。
+この例で使用されている構成は、各コントローラに2つの4ポートSAS HBA（8つのSASポート）を搭載し、IOM12、IOM12B、またはIOM12Cモジュールを搭載したディスク シェルフを2スタック備えたマルチパスHA構成です。ポートペアは、ワークシート内のポートペアを1つおきにスキップすることでケーブル接続されます。
 
 +
 

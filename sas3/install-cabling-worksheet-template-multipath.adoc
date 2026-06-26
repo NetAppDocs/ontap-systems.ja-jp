@@ -1,17 +1,17 @@
 ---
 permalink: sas3/install-cabling-worksheet-template-multipath.html 
 sidebar: sidebar 
-keywords: complete, completing, worksheet, template, controller, sas, port, pair, cable, controller, disk, shelves, iom12, module, achieve, multipathed, connectivity, ha, pair, single-controller, configuration, worksheet, connection, controller-to-stack cabling worksheet template for multipathed connectivity, iom12b 
-summary: ワークシートテンプレートを記入することで、コントローラのSASポートペアを定義できます。これらのポートを使用して、コントローラをIOM12 / 12B IOMBモジュールを使用するディスクシェルフスタックにケーブル接続し、HAペアまたはシングルコントローラ構成でマルチパス接続を実現できます。記入済みのワークシートを使用して、構成に合ったマルチパス接続を実施することもできます。 
+keywords: controller, sas, port, cable, disk, shelf, iom12, module, multipathed, ha, pair, iom12b, iom12c, ds212c, ds224c, ds460c 
+summary: ケーブル配線ワークシートを使用すると、コントローラーをディスク シェルフのスタックに接続してマルチパス接続を実現するために使用できるコントローラー SAS ポートのペアを定義できます。 
 ---
-= マルチパス接続用配線ワークシート - DS212C、DS224C、または DS460C
+= DS212C、DS224C、またはDS460Cのマルチパス接続用ケーブル配線ワークシート
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ワークシートテンプレートを記入することで、コントローラのSASポートペアを定義できます。これらのポートを使用して、コントローラをIOM12 / 12B IOMBモジュールを使用するディスクシェルフスタックにケーブル接続し、HAペアまたはシングルコントローラ構成でマルチパス接続を実現できます。記入済みのワークシートを使用して、構成に合ったマルチパス接続を実施することもできます。
+ケーブル配線ワークシートを使用すると、コントローラーをディスク シェルフのスタックに接続するために使用できるコントローラー SAS ポートのペアを定義し、HA ペアまたはシングルコントローラー構成でマルチパス接続を実現できます。完成したワークシートを使用して、構成のマルチパス接続のケーブル配線手順を確認することもできます。
 
 .作業を開始する前に
 内蔵ストレージを搭載したプラットフォームを使用している場合は、次のワークシートを使用します。
@@ -24,7 +24,7 @@ link:install-cabling-worksheets-examples-fas2600.html["内蔵ストレージを�
 記入済みワークシートの例は、マルチパス HA 構成とマルチパス構成を対象としたものです。
 
 +
-ワークシート例では、2つのクアッドポートSAS HBAと、IOM12 / IOM12Bモジュールを使用するディスクシェルフスタックを2台使用する構成を使用します。
+2つの4ポートSAS HBAと、IOM12、IOM12B、またはIOM12Cモジュールを搭載した2つのディスク シェルフスタックを使用した構成が、ワークシートの例に使用されます。
 
 * ワークシートテンプレートは最大 6 つのスタックに対応しています。必要に応じて列を追加する必要があります。
 * 必要に応じて、を参照してください link:install-cabling-rules.html["SASケーブル接続のルールと概念"] サポートされる構成については、コントローラのスロット番号の規則、シェルフ / シェルフ間の接続、およびコントローラ / シェルフ間の接続（ポートペアの使用など）を参照してください。

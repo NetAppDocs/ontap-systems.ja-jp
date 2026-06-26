@@ -1,17 +1,19 @@
 ---
 permalink: sas3/install-change-shelf-id.html 
 sidebar: sidebar 
-keywords: change, shelf, id, system, ontap, run, hot-add, ontap, controller, module, available, serve, data, unown, spare, offline, aggregate 
-summary: ONTAP がまだ実行されていない場合や、シェルフをシステムにケーブル接続する前にホットアドする場合は、システムのシェルフ ID を変更できます。また、 ONTAP が実行中（コントローラモジュールがデータを提供可能）の場合でも、シェルフ内のすべてのドライブが所有されていないか、スペアであるか、オフラインのアグリゲートのメンバーである場合にはシェルフ ID を変更できます。 
+keywords: change, shelf, id, system, ontap, controller, module, ds212c, ds224c, ds460c 
+summary: ONTAPがまだ実行されていない場合、シェルフをシステムにケーブル接続する前にホットアドする場合、またはONTAPが稼働しており、シェルフ内のすべてのドライブが未所有、スペア、またはオフライン状態のアグリゲートの一部である場合に、システム内のシェルフIDを変更します。 
 ---
-= シェルフ ID の変更 - DS212C、DS224C、または DS460C
+= DS212C、DS224C、またはDS460C シェルフIDの変更
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ONTAP がまだ実行されていない場合、またはシェルフをシステムにケーブル接続する前にホット アドする場合は、IOM12/IOM12B モジュールを搭載したシステム内のシェルフ ID を変更できます。また、ONTAPが実行中（コントローラ モジュールがデータを提供可能）の場合でも、シェルフ内のすべてのドライブが所有されていないか、スペアか、オフラインのアグリゲートのメンバーである場合にはシェルフIDを変更できます。
+DS212C、DS224C、またはDS460C シェルフのシェルフIDは、ONTAPがまだ実行されていない場合、またはシステムにケーブル接続される前にシェルフをホットアドする場合に変更できます。ONTAPが稼働しており（コントローラモジュールがデータの提供に使用可能）、シェルフ内のすべてのドライブが未所有、スペア、またはオフラインにしたアグリゲートの一部である場合にも、シェルフIDを変更できます。
+
+この手順は、IOM12、IOM12B、またはIOM12Cモジュールを搭載したシェルフに適用されます。
 
 .このタスクについて
 * 有効なシェルフ ID は 00~99 です。

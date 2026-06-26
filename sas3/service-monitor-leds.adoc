@@ -1,10 +1,10 @@
 ---
 permalink: sas3/service-monitor-leds.html 
 sidebar: sidebar 
-keywords: monitor, health, disk, shelf, location, status, condition, led, component, operator, display, panel, iom12, power, supply, fan, ds460c, shelves, drive, monitor disk shelf leds, operator display panel leds, iom12 module leds, power supply leds, fan leds on ds460c disk shelves, disk drive leds 
+keywords: monitor, health, disk, shelf, location, status, led, iom12, iom12b, iom12c, drive, ds212c, ds224c, ds460c 
 summary: ディスクシェルフコンポーネントの LED の場所とステータスの状態を把握することで、ディスクシェルフのヘルスを監視できます。 
 ---
-= モニターシェルフ LED - DS212C、DS224C、または DS460C
+= DS212C、DS224C、またはDS460Cシェルフ LED のモニタリング
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -40,7 +40,7 @@ image::../media/drw_sas_power_icon.svg[電源アイコン]
 .2+| image:../media/drw_sas_fault_icon.svg["注意アイコン、幅= 5px"] .2+| 注意  a| 
 黄色で点灯
  a| 
-1つ以上のFRU（ディスクシェルフ、ディスクドライブ、IOM12 / IOM12Bモジュール、または電源装置）の機能でエラーが発生しました。
+1つ以上のFRUの機能でエラーが発生しました：ディスク シェルフ、ディスクドライブ、IOM12、IOM12B、またはIOM12Cモジュール、あるいは電源装置。
 
 イベントメッセージをチェックして実行する対処方法を決定してください。
 
@@ -64,7 +64,7 @@ image::../media/drw_sas3_location_icon.svg[ロケーションアイコン]
  a| 
 システム管理者が、対応が必要なディスクシェルフを物理的に特定できるようにこの LED 機能をアクティブにしました。
 
-このLED機能を有効にすると、オペレータ用ディスプレイパネルと両方のIOM12 / IOM12Bモジュールの位置LEDが点灯します。ロケーション LED は 30 分後に自動的に消灯します。
+このLED機能が作動すると、オペレーターディスプレイパネル上の位置表示LEDと、IOM12、IOM12B、またはIOM12Cモジュールの両方が点灯します。位置表示LEDは30分後に自動的に消灯します。
 
 |===
 ディスクシェルフのモデルに応じてオペレータ用ディスプレイパネルの外観は異なりますが、 3 つの LED は同じように配置されています。
@@ -75,13 +75,13 @@ image::../media/drw_opd.gif[エンドキャップオペレータディスプレ�
 
 
 
-== IOM12 / IOM12BモジュールのLED
+== IOM12、IOM12B、またはIOM12CモジュールLED
 
-IOM12 / IOM12BモジュールのLEDは、モジュールが正常に機能しているかどうか、I/Oトラフィックに対応する準備ができているかどうか、ハードウェアに問題がないかどうかを示します。
+IOM12、IOM12B、またはIOM12CモジュールのLEDは、モジュールが正常に動作しているか、I/Oトラフィックの準備ができているか、ハードウェアに問題があるかどうかを示します。
 
-次の表に、モジュールの機能およびモジュールの各SASポートの機能に関連するIOM12 / IOM12BモジュールのLEDを示します。
+次の表は、IOM12、IOM12B、またはIOM12Cモジュールの機能と、モジュール上の各SASポートの機能に関連付けられたモジュールLEDについて説明します。
 
-IOM12 / IOM12Bモジュールは、DS460C、DS224C、およびDS212Cディスクシェルフで使用されます。
+IOM12、IOM12B、またはIOM12Cモジュールは、DS460C、DS224C、およびDS212Cディスク シェルフで使用されます。
 
 [cols="4*"]
 |===
@@ -95,7 +95,7 @@ image::../media/drw_sas_fault_icon.svg[アテンションアイコン]
  a| 
 黄色で点灯
  a| 
-IOM12 / IOM12Bモジュールの機能：IOM12 / IOM12Bモジュールの機能でエラーが発生しました。
+IOM12、IOM12B、またはIOM12Cモジュール機能：IOM12、IOM12B、またはIOM12Cモジュールの機能でエラーが発生しました。
 
 SAS ポートの機能： 4 つの SAS レーンの中に、（アダプタまたは別のディスクシェルフとの）リンクを確立していないレーンがあります。
 
@@ -121,18 +121,22 @@ image::../media/drw_sas3_location_icon.svg[ロケーションアイコン]
  a| 
 青で点灯
  a| 
-システム管理者が、障害が発生したIOM12 / IOM12Bモジュールのディスクシェルフを物理的に特定できるように、このLED機能をアクティブにしました。
+システム管理者は、障害が発生した IOM12、IOM12B、または IOM12C モジュールを搭載したディスク シェルフを物理的に特定するために、この LED 機能を有効化しました。
 
-このLED機能を有効にすると、オペレータ用ディスプレイパネルと両方のIOM12 / IOM12Bモジュールの位置LEDが点灯します。ロケーション LED は 30 分後に自動的に消灯します。
+このLED機能が作動すると、オペレーターディスプレイパネル上の位置表示LEDと、IOM12、IOM12B、またはIOM12Cモジュールの両方が点灯します。位置表示LEDは30分後に自動的に消灯します。
 
 |===
 次の図は、IOM12モジュールを示しています。
 
-image::../media/drw_iom12.gif[IOM12モジュール]
+image::../media/drw_iom12.gif[IOM12モジュール,828px,147px]
 
 IOM12Bモジュールは、青色のストライプと「IOM12B」ラベルで区別されます。
 
-image::../media/iom12b.png[IOM12Bモジュール]
+image::../media/iom12b.png[IOM12Bモジュール,828px,147px]
+
+IOM12Cモジュールは、青と灰色のストライプと「IOM12C」ラベルで識別できます：
+
+image::../media/drw_iom12c_ieops-2175.svg[IOM12Cモジュール,828px,147px]
 
 
 

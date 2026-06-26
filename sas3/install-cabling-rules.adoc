@@ -1,22 +1,22 @@
 ---
 permalink: sas3/install-cabling-rules.html 
 sidebar: sidebar 
-keywords: disk, shelves, shelf, iom12, module, single-controller, configuration, support, platform, sas, cabling, cable, rule, controller, shelf-to-shelf, connection, rule, controller-to-stack, mini-sas, hd, optical, cable, rule, sas cabling rules, iom12b, concepts 
-summary: IOM12 / IOM12Bモジュールを使用するディスクシェルフは、HAペアおよびシングルコントローラ構成で接続できます（サポート対象のプラットフォームの場合）。 
+keywords: disk, shelf, iom12, module, iom12b, iom12c, configuration, support, platform, sas, cabling, cable, rule, controller, connection, mini-sas optical, ds212c, ds224c, ds460c 
+summary: IOM12、IOM12B、またはIOM12Cモジュールを搭載したディスク シェルフは、HAペア構成およびシングルコントローラ構成でケーブル接続できます（対応プラットフォームの場合）。 
 ---
-= SAS ケーブル配線のルールと概念 - DS212C、DS224C、または DS460C
+= DS212C、DS224C、またはDS460CシェルフにおけるSASケーブル配線の規則と概念
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-IOM12 / IOM12Bモジュールを搭載したディスクシェルフは、SASケーブル接続ルール（設定ルール、コントローラのスロット番号のルール、シェルフ/シェルフ間の接続ルール、コントローラ/スタック間の接続ルール、および該当する場合はMini-SAS HD SAS光ケーブルルール）を適用することで、HAペアおよびシングルコントローラ構成（サポート対象プラットフォームの場合）でケーブル接続できます。
+IOM12、IOM12B、またはIOM12Cモジュールを搭載したDS212C、DS224C、およびDS460Cシェルフは、SASケーブル配線規則（構成規則、コントローラスロット番号規則、シェルフ間接続規則、コントローラとスタック間の接続規則、および該当する場合はmini-SAS HD SAS光ケーブル規則）を適用することにより、HAペア構成およびシングルコントローラ構成（サポートされているプラットフォームの場合）でケーブル接続できます。
 
 
-NOTE: このガイドに記載されているSASケーブル接続のルール（コントローラースロットの番号付けルール、シェルフ間接続ルール、コントローラーとスタック間の接続ルール）は、IOM12モジュールを搭載しているかIOM12Bモジュールを搭載しているかにかかわらず、すべてのSASディスクシェルフに適用されるルールと同じです。ただし、このガイドの情報は、IOM12/IOM12Bモジュールを搭載したディスクシェルフ固有の特性と、サポートされる構成での使用に限定されています。
+NOTE: このガイドで説明されている、コントローラのスロット番号付け規則、シェルフ間の接続規則、およびコントローラとスタック間の接続規則に関するSASケーブル配線規則は、IOM12、IOM12B、またはIOM12Cモジュールを搭載しているかどうかにかかわらず、すべてのSASディスク シェルフに適用される規則と同じです。ただし、このガイドの情報は、IOM12、IOM12B、またはIOM12Cモジュールを搭載したディスク シェルフの固有の特性と、サポートされている構成でのそれらの使用方法に特化したものです。
 
-このガイドで説明するSASケーブル接続ルールのうち、構成ルールとMini-SAS HD SAS光ケーブルルールは、IOM12 / 12Bモジュールを搭載したディスクシェルフに固有のものです。
+このガイドで説明されている、構成規則およびmini-SAS HD SAS光ケーブル規則に関するSASケーブル配線規則は、IOM12、IOM12B、またはIOM12Cモジュールを搭載したディスク シェルフに特有のものです。
 
 このガイドで説明する SAS ケーブル接続ルールは、オンボード SAS ポートとホストバスアダプタ SAS ポート間の SAS ケーブル接続のバランスを取ることで、可用性の高いストレージコントローラ構成を実現し、次の目標を達成します。
 
@@ -32,7 +32,7 @@ NOTE: このガイドに記載されているSASケーブル接続のルール�
 
 == 設定ルール
 
-IOM12 / IOM12Bモジュールを搭載したディスクシェルフは、特定のタイプのHAペアおよびシングルコントローラ構成でサポートされます。
+IOM12、IOM12B、またはIOM12Cモジュールを搭載したディスク シェルフは、特定のタイプのHAペア構成およびシングルコントローラ構成でサポートされます。
 
 [NOTE]
 ====
