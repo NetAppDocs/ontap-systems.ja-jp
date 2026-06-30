@@ -211,7 +211,7 @@ Path_B ポート（赤いポート）
 次の図は、スイッチ構成にシェルフをホット アドするためのケーブル接続を示しています。追加のシェルフを追加するには、同じスイッチベースのケーブル接続方法に従います。
 
 +
-image::../media/drw_nx224_afx_a1k_ieops-2344.svg[NX224スイッチからAFX A1Kへのケーブル接続]
+image::../media/drw_nx224_afx_a1k_ieops-2344.svg[NX224スイッチからAFX 1Kへのケーブル接続]
 
 . ホットアドしたシェルフがを使用して正しくケーブル接続されていることを確認します https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
 +

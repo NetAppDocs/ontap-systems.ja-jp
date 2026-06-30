@@ -262,7 +262,7 @@ LOADER-B>
 
 . 自動ギブバックを無効にした場合は、再度有効にします。
 +
-`storage failover modify -node local auto-giveback-of true`
+`storage failover modify -node local -auto-giveback-of true`
 
 . AutoSupportが有効になっている場合は、ケースの自動作成をリストアします。
 +

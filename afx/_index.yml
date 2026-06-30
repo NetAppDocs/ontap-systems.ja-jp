@@ -3,7 +3,7 @@ indexpage:
   title: AFXシステム
   summary: NetApp AFX ストレージ システムは、高性能 NAS および S3 顧客の固有のニーズに重点を置いた、分散型のハードウェアおよびソフトウェア
     ソリューションです。パフォーマンスとスケーラビリティは、AI および ML ワークロードの要件を満たすように特別に設計されています。
-  keywords: afx, afx 1k, install, setup, maintain
+  keywords: afx, afx 1k, afx 2k, install, setup, maintain
   lead: NetApp AFX ストレージ システムは、高性能 NAS および S3 顧客の固有のニーズに重点を置いた、分散型のハードウェアおよびソフトウェア
     ソリューションです。パフォーマンスとスケーラビリティは、AI および ML ワークロードの要件を満たすように特別に設計されています。
   tiles:
@@ -15,12 +15,18 @@ indexpage:
       url: https://docs.netapp.com/us-en/ontap-afx/get-started/system-design.html
     - title: AFXアーキテクチャ
       url: https://docs.netapp.com/us-en/ontap-afx/get-started/software-architecture.html
-  - title: AFXのインストールとメンテナンス
+  - title: AFXシステムのインストールとセットアップ
     links:
-    - title: AFXハードウェアをインストールする
+    - title: AFX 1K ハードウェアのインストール
       url: https://docs.netapp.com/us-en/ontap-afx/install-setup/install-setup-workflow.html
-    - title: AFXハードウェアのメンテナンス
-      url: "../afx-landing-maintain/index.html"
+    - title: AFX 2K ハードウェアのインストール
+      url: https://docs.netapp.com/us-en/ontap-afx/install-setup/install-setup-workflow.html
+  - title: AFXシステムの保守
+    links:
+    - title: AFX 1K
+      url: "../afx-1k/maintain-overview.html"
+    - title: AFX 2K
+      url: "../afx-2k/maintain-overview.html"
   - title: AFXでデータを管理する
     links:
     - title: AFXボリュームを作成する
