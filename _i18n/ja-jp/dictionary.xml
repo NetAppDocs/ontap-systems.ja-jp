@@ -15231,4 +15231,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6237e9bd3def009e1ada11487d357dc3" category="sidebar">AFX 2K Chassis</block>
   <block id="f093b22bad0b8da1a16f35c6f8c25ca0" category="sidebar">AFX 2K Controller</block>
   <block id="62e406b8d6fcd44e844c63e4623510c3" category="sidebar">AFX 2K IO Module</block>
+  <block id="a257f7f4b2f6e07845ce567df142ad00" category="section-title">2026年7月</block>
+  <block id="b4afdfda38bb4110d19a16da4ee51739" category="paragraph-title">AFX 2Kストレージシステム</block>
+  <block id="9a409a4d75890ddb49381881e67f5f7a" category="paragraph">新しいNetApp AFX 2Kストレージシステムは、AI/MLアプリケーションを含むハイパフォーマンスNASおよびS3ワークロードの厳しい要件を満たすように設計された分離型ソリューションを拡張します。AFX 2Kシステムは、スケーラブルで高スループットのファイルおよびオブジェクトストレージを必要とする顧客向けに、特化した機能を提供します。</block>
+  <block id="374ef3ed61ad653976c8db59a5521927" category="paragraph-title">AFX 2K向けの新しいCisco 9808スイッチサポート</block>
+  <block id="171d55c5398223f97af70b589556e85a" category="paragraph">新しい Cisco 9808 スイッチは、ストレージシェルフを備えた AFX 2K コントローラノードに接続します。この新しいスイッチは、Cisco 9364D-GX2A および Cisco 9332D-GX2B スイッチとともに、2 つ以上のノードを持つ ONTAP クラスターを構築することを可能にします。高度なプロトコルを使用してパフォーマンスを最適化します。この設計は、複数のネットワークパスを備えた VLAN タギングと、テクノロジー更新構成に基づいており、継続的な運用とアップグレードの容易さを保証します。</block>
 </blocks>
