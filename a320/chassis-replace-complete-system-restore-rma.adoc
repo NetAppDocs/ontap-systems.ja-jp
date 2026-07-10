@@ -15,6 +15,7 @@ summary: キットに付属のRMA指示書に従って、シャーシのHA状態
 
 
 
+[[step-1-verify-and-set-the-ha-state-of-the-chassis]]
 == 手順 1 ：シャーシの HA 状態を確認して設定します
 
 シャーシの HA 状態を確認し、必要に応じてシステム構成に合わせて更新する必要があります。
@@ -45,6 +46,7 @@ hA-state には、次のいずれかの値を指定できます。
 
 
 
+[[step-2-return-the-failed-part-to-netapp]]
 == 手順2：故障した部品をNetAppに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

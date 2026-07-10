@@ -17,6 +17,7 @@ summary: 障害のあるノードをリカバリ イメージから起動する�
 
 
 
+[[option-1-boot-the-recovery-image-in-most-systems]]
 == オプション1：ほとんどのシステムでリカバリイメージをブートする
 
 ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
@@ -134,6 +135,7 @@ date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state
 
 
 
+[[option-2-boot-the-recovery-image-in-a-two-node-metrocluster-configuration]]
 == オプション 2 ： 2 ノード MetroCluster 構成でリカバリイメージをブートする
 
 ONTAP イメージを USB ドライブからブートし、環境変数を確認する必要があります。

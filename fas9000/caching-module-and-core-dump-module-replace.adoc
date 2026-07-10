@@ -24,6 +24,7 @@ summary: システムがモジュールのオフラインを示す単一のAutoS
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。
@@ -196,6 +197,7 @@ mcc1A::> metrocluster operation show
 ====
 
 
+[[step-2-replace-or-add-a-caching-module]]
 == 手順 2 ：キャッシングモジュールを交換または追加する
 
 NVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）は別 々 のモジュールです。これらは NVRAM モジュールの前面にあります。キャッシングモジュールを交換または追加するには、スロット 6 のシステム背面にあるモジュールの場所を確認し、特定の手順に従って交換します。
@@ -256,6 +258,7 @@ NOTE: 数字とアルファベットが印字された I/O カムラッチを使
 
 
 
+[[step-3-add-or-replace-an-x9170a-core-dump-module]]
 == 手順 3 ： X9170a コアダンプモジュールを追加または交換します
 
 1TB キャッシュコアダンプである X9170a は、 AFF A700 システムでのみ使用されます。コアダンプモジュールをホットスワップできない。通常、コアダンプモジュールは NVRAM モジュールの前面のスロット 6-1 にあり、システムの背面にあります。コアダンプモジュールを交換または追加するには、スロット 6-1 の場所を確認し、特定の手順に従って追加または交換してください。
@@ -314,6 +317,7 @@ NOTE: 数字とアルファベットが印字された I/O カムラッチを使
 
 
 
+[[step-4-reboot-the-controller-after-fru-replacement]]
 == 手順 4 ： FRU の交換後にコントローラをリブートします
 
 FRU を交換したら、コントローラモジュールをリブートする必要があります。
@@ -324,6 +328,7 @@ FRU を交換したら、コントローラモジュールをリブートする�
 
 
 
+[[step-5-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 手順 5 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする
 
 このタスクでは、環境の 2 ノード MetroCluster 構成のみを実行します。
@@ -380,6 +385,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 手順 6 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

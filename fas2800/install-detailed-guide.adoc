@@ -15,6 +15,7 @@ summary: この手順では、一般的なNetAppストレージシステムを�
 
 
 
+[[step-1-prepare-for-installation]]
 == 手順 1 ：設置の準備
 
 .作業を開始する前に
@@ -167,6 +168,7 @@ image::../media/oie_cable_fiber_lc_connector.png[LCファイバコネクタ]
 |===
 
 
+[[step-2-install-the-hardware]]
 == 手順 2 ：ハードウェアを設置する
 
 必要に応じて、TelcoラックまたはNetAppストレージシステムキャビネットにストレージシステムを設置します。
@@ -190,6 +192,7 @@ image::../media/drw_cable_management_arm_install.svg[ケーブル管理ARMの取
 
 
 
+[[step-3-cable-controllers-to-your-network]]
 == 手順 3 ：コントローラをネットワークに接続する
 
 2ノードスイッチレスクラスタまたはスイッチクラスタとしてコントローラをネットワークにケーブル接続します。
@@ -390,6 +393,7 @@ IMPORTANT: 電源コードは接続しないでください。
 ====
 
 
+[[step-4-cable-controllers-to-drive-shelves]]
 == 手順 4 ：コントローラをドライブシェルフにケーブル接続する
 
 コントローラを外付けストレージにケーブル接続します。
@@ -471,6 +475,7 @@ image::../media/dwr-2800_controller2-to shelves_IEOPS-897.svg[コントローラ
 
 
 
+[[step-5-complete-storage-system-setup-and-configuration]]
 == 手順5：ストレージシステムのセットアップと設定を完了する
 
 オプション1：ネットワーク検出が有効な場合、またはオプション2：ネットワーク検出が有効でない場合のいずれかを使用して、ストレージシステムのセットアップと設定を完了します。

@@ -15,6 +15,7 @@ summary: コントローラモジュールを交換するには、障害のあ�
 
 
 
+[[step-1-remove-the-controller-module]]
 == 手順 1 ：コントローラモジュールを取り外す
 
 コントローラモジュールを交換する場合やコントローラモジュール内部のコンポーネントを交換する場合は、コントローラモジュールをシャーシから取り外す必要があります。
@@ -103,6 +104,7 @@ image:../media/icon_round_2.png["番号2"]
 
 
 
+[[step-2-move-the-power-supplies]]
 == 手順 2 ：電源装置を移動します
 
 電源装置を交換用コントローラー モジュールに移動します。
@@ -147,6 +149,7 @@ NOTE: 内部コネクタの破損を防ぐため、電源装置をシステム�
 
 
 
+[[step-3-move-the-fans]]
 == 手順 3 ：ファンを移動します
 
 ファン モジュールを交換用コントローラー モジュールに移動します。
@@ -180,6 +183,7 @@ image:../media/icon_round_2.png["番号2"]
 
 
 
+[[step-4-move-the-nvdimm-battery]]
 == 手順 4 ： NVDIMM バッテリを移動します
 
 NVDIMMバッテリを交換用コントローラ モジュールに移動します。
@@ -229,6 +233,7 @@ NVDIMM バッテリパック
 
 
 
+[[step-5-remove-the-pcie-risers]]
 == 手順 5 ： PCIe ライザーを取り外します
 
 障害のあるコントローラー モジュールから PCIe ライザーを取り外します。
@@ -271,6 +276,7 @@ image:../media/icon_round_2.png["番号2"]
 
 
 
+[[step-6-move-system-dimms]]
 == 手順 6 ：システム DIMM を移動します
 
 システム DIMM を交換用コントローラー モジュールに移動します。
@@ -297,6 +303,7 @@ NOTE: DIMM がスロットにまっすぐ差し込まれていることを目で
 
 
 
+[[step-7-move-the-nvdimms]]
 == 手順 7 ： NVDIMM を移動します
 
 NVDIMMS を交換用コントローラー モジュールに移動します。
@@ -345,6 +352,7 @@ NOTE: NVDIMM がスロットにまっすぐ差し込まれていることを目�
 
 
 
+[[step-8-move-the-boot-media]]
 == 手順 8 ：ブートメディアを移動します
 
 ブート メディアを交換用コントローラー モジュールに移動します。
@@ -413,6 +421,7 @@ image:../media/icon_round_5.png["番号5"]
 
 
 
+[[step-9-install-the-pcie-risers]]
 == 手順 9 ： PCIe ライザーを取り付けます
 
 交換用コントローラー モジュールにライザーを取り付けます。
@@ -434,6 +443,7 @@ image:../media/icon_round_5.png["番号5"]
 
 
 
+[[step-10-install-the-controller-module]]
 == 手順 10 ：コントローラモジュールを取り付ける
 
 コントローラモジュールを再度取り付けてリブートします。

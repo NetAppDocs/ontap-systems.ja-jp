@@ -24,6 +24,7 @@ summary: PCIe カードまたはメザニンカードを交換するには、ケ
 video::a8ec891d-f6f6-4479-9ca2-af47017254ff[panopto]
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 .作業を開始する前に
@@ -88,6 +89,7 @@ Ctrl キーを押しながら C キーを押し、「 y 」と入力します。
 
 
 
+[[step-2-remove-the-controller-module]]
 == 手順 2 ：コントローラモジュールを取り外す
 
 コントローラモジュールとそのカバーを取り外します。
@@ -122,6 +124,7 @@ image::../media/icon_round_1.png[番号1]
 |===
 
 
+[[step-3-replace-the-mezzanine-card]]
 == 手順3：メザニンカードを交換します
 
 メザニンカードを交換してください。
@@ -170,6 +173,7 @@ NOTE: つまみネジは、指またはドライバで緩めることができ�
 
 
 
+[[step-4-install-and-reboot-the-controller-module]]
 == 手順4：コントローラモジュールを取り付けて再起動する
 
 コントローラモジュールを再度取り付けて、再起動します。
@@ -238,6 +242,7 @@ ONTAPでのファイバーチャネルの設定に関する詳細については
 ====
 
 
+[[step-6-return-the-controller-to-normal-operation]]
 == ステップ6：コントローラを通常動作に戻す
 
 障害のあるコントローラーにストレージを返還し、自動返還を復元し、AutoSupportメンテナンスウィンドウを終了します。
@@ -249,6 +254,7 @@ ONTAPでのファイバーチャネルの設定に関する詳細については
 
 
 
+[[step-7-return-the-failed-part-to-netapp]]
 == 手順 7 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

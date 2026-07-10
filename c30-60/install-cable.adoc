@@ -29,6 +29,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg["ケーブルプル�
 
 
 
+[[step-1-cable-the-clusterha-connections]]
 == 手順1：クラスタ/ HAをケーブル接続する
 
 ONTAPクラスタ接続を作成スイッチレスクラスタの場合は、コントローラを相互に接続します。スイッチクラスタの場合は、コントローラをクラスタネットワークスイッチに接続します。
@@ -147,6 +148,7 @@ image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[�
 ====
 
 
+[[step-2-cable-the-host-network-connections]]
 == 手順2：ホストネットワーク接続をケーブル接続する
 
 コントローラをイーサネットまたはFCホストネットワークにケーブル接続します。
@@ -203,6 +205,7 @@ image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[64Gb FC�
 ====
 
 
+[[step-3-cable-the-management-network-connections]]
 == 手順3：管理ネットワークをケーブル接続する
 
 各コントローラの管理（レンチマーク）ポートを管理ネットワークスイッチにケーブル接続します。
@@ -218,6 +221,7 @@ IMPORTANT: まだ電源コードを接続しないでください。
 
 
 
+[[step-4-cable-the-shelf-connections]]
 == 手順4：シェルフをケーブル接続する
 
 この手順では、1台のNS224シェルフにコントローラをケーブル接続する方法を示します。

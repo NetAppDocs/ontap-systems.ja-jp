@@ -34,6 +34,7 @@ NVRAM モジュールは NVRAM11 と DIMM で構成されます。障害が発�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 障害のあるコントローラーを引き継いで停止し、正常なコントローラーが障害のあるコントローラーのストレージからデータを引き続き提供できるようにします。これを行うには、AutoSupportで自動ケース作成を抑制し、自動ギブバックを無効にして、障害のあるコントローラをLOADERプロンプトに切り替えます。LOADERプロンプトは、FRUを交換できる安全な停止状態です。
@@ -99,6 +100,7 @@ LOADER プロンプト
 
 
 
+[[step-2-replace-the-nvram-module]]
 == 手順 2 ： NVRAM モジュールを交換します
 
 NVRAMモジュールを交換するには、シャーシのスロット6にあるNVRAMモジュールの場所を確認し、特定の手順を実行します。
@@ -176,6 +178,7 @@ DIMM と DIMM のツメ
 
 
 
+[[step-3-replace-a-nvram-dimm]]
 == 手順 3 ： NVRAM DIMM を交換します
 
 NVRAM モジュールの NVRAM DIMM を交換するには、 NVRAM モジュールを取り外し、モジュールを開き、ターゲット DIMM を交換する必要があります。
@@ -254,6 +257,7 @@ DIMM と DIMM のツメ
 
 
 
+[[step-4-reboot-the-controller-after-fru-replacement]]
 == 手順 4 ： FRU の交換後にコントローラをリブートします
 
 FRU を交換したら、コントローラモジュールをリブートする必要があります。
@@ -262,6 +266,7 @@ LOADER プロンプトから ONTAP を起動するには、「 bye 」と入力�
 
 
 
+[[step-5-reassigning-disks]]
 == 手順5：ディスクの再割り当て
 
 交換用コントローラのブート時にシステム ID の変更を確認し、変更が実装されたことを確認する必要があります。
@@ -364,6 +369,7 @@ dr-group-id            cluster node           configuration-state
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 手順 6 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

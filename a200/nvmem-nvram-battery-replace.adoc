@@ -18,6 +18,7 @@ summary: システムの NVMEM バッテリを交換するには、コントロ�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 ストレージシステムのハードウェア構成に応じた手順に従って、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
@@ -75,6 +76,7 @@ Ctrl キーを押しながら C キーを押し、「 y 」と入力します。
 
 
 
+[[step-2-remove-controller-module]]
 == 手順 2 ：コントローラモジュールを取り外す
 
 コントローラ内部のコンポーネントにアクセスするには、まずコントローラモジュールをシステムから取り外し、続いてコントローラモジュールのカバーを外す必要があります。
@@ -102,6 +104,7 @@ image::../media/drw_2600_opening_pcm_cover.png[コントローラモジュール
 
 
 
+[[step-3-replace-the-nvmem-battery]]
 == 手順 3 ： NVMEM バッテリを交換します
 
 システムの NVMEM バッテリを交換するには、障害が発生した NVMEM バッテリをシステムから取り外して、新しい NVMEM バッテリと交換する必要があります。
@@ -144,6 +147,7 @@ image::../media/drw_2600_nvmem_batt_repl_animated_gif.png[NVMEM バッテリの�
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 手順 4 ：コントローラモジュールを再度取り付けます
 
 コントローラモジュールのコンポーネントを交換したら、モジュールをシャーシに再度取り付けます。
@@ -204,6 +208,7 @@ NOTE: コネクタの破損を防ぐため、コントローラモジュール�
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 手順 5 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

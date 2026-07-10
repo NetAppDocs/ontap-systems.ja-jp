@@ -17,6 +17,7 @@ summary: サポートが終了したレガシーハードウェアについて�
 
 
 
+[[ontap-hardware-systems]]
 == ONTAPハードウェアシステム
 
 [cols="2*"]
@@ -63,6 +64,7 @@ ONTAP 9.9.1
 |===
 
 
+[[shelves]]
 == シェルフ
 
 [cols="2*"]
@@ -81,6 +83,7 @@ IOM6 6Gb/秒SASモジュール（使用用途：
 |===
 
 
+[[switches]]
 == スイッチ
 
 [cols="2*"]
@@ -117,6 +120,7 @@ ONTAP 9.11.1
 |===
 
 
+[[related-information]]
 == 関連情報
 
 * https://mysupport.netapp.com/site/info/cisco-ethernet-switch["サポートされるCiscoイーサネットスイッチ"]

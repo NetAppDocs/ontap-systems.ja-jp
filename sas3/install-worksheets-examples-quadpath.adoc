@@ -38,6 +38,7 @@ image::../media/drw_controller_to_stack_quad_pathed_connectivity_key.gif[クア�
 
 
 
+[[quad-path-ha-with-two-quad-port-sas-hbas-and-two-multi-shelf-stacks]]
 == クアッドパス HA ：クアッドポート SAS HBA × 2 、マルチシェルフスタック × 2
 
 次のワークシートとケーブル接続例では、スタック 1 にポートペア 1a / 2b （マルチパス）と 2a / 1d （クアッドパス）を使用し、スタック 2 にポートペア 1c / 2d （マルチパス）と 2c / 1b （クアッドパス）を使用しています。

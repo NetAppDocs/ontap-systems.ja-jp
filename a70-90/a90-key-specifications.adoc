@@ -15,6 +15,7 @@ summary: AFF A90の主な仕様
 
 
 
+[[aff-a90-specifications-at-a-glance]]
 == AFF A90の仕様概要
 
 * プラットフォーム構成: AFF A90シングルシャーシ HA ペア
@@ -28,6 +29,7 @@ summary: AFF A90の主な仕様
 
 
 
+[[scaleout-maximums]]
 == スケールアウトの最大値
 
 * タイプ: NAS; HA ペア: 12; 物理容量: 79.3 PB / 70.4 PiB; 最大メモリ: 24576 GB
@@ -37,16 +39,19 @@ summary: AFF A90の主な仕様
 
 
 
+[[io]]
 == 入出力
 
 
 
+[[onboard-io]]
 === オンボードI/O
 
 オンボード I/O データがありません。
 
 
 
+[[total-io]]
 === 合計I/O
 
 * プロトコル: イーサネット 200 Gbps; ポート: 24
@@ -61,6 +66,7 @@ summary: AFF A90の主な仕様
 
 
 
+[[management-ports]]
 === 管理ポート
 
 * プロトコル: イーサネット 1 Gbps; ポート: 2
@@ -70,6 +76,7 @@ summary: AFF A90の主な仕様
 
 
 
+[[storage-networking-supported]]
 == ストレージネットワークをサポート
 
 * CIFS
@@ -95,6 +102,7 @@ summary: AFF A90の主な仕様
 
 
 
+[[system-environment-specifications]]
 == システム環境仕様
 
 * 標準電力: 8304 BTU/時
@@ -110,6 +118,7 @@ summary: AFF A90の主な仕様
 
 
 
+[[compliance]]
 == コンプライアンス
 
 * 認証 EMC/EMI: AMCA、FCC、ICES、KC、モロッコ、VCCI
@@ -122,6 +131,7 @@ summary: AFF A90の主な仕様
 
 
 
+[[high-availability]]
 == 高可用性
 
 * イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース

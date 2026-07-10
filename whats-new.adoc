@@ -15,10 +15,12 @@ ONTAPハードウェアシステムの新機能について説明します。追
 
 
 
+[[july-2026]]
 == 2026年7月
 
 
 
+[[afx-2k]]
 === AFX 2K
 
 .AFX 2Kストレージシステム
@@ -31,10 +33,12 @@ link:https://docs.netapp.com/us-en/ontap-afx/get-started/ontap-afx-storage.html[
 
 
 
+[[january-2026]]
 == 2026年1月
 
 
 
+[[io-module-hot-swap-procedures]]
 === I/Oモジュールのホット スワップ手順
 
 複数のONTAPハードウェア プラットフォームおよびONTAPバージョンにわたる特定のI/Oモジュールで、ホット スワップ手順が利用できるようになりました。
@@ -69,6 +73,7 @@ NOTE: ストレージまたはMetroCluster接続にポートが割り当てら�
 
 
 
+[[aff-c800-end-of-availability]]
 === AFF C800の販売終了
 
 AFF C800システムは販売終了リストに移動されており、新規注文は受け付けられません。
@@ -77,6 +82,7 @@ link:endofavail/index.html["販売終了ハードウェアを表示"].
 
 
 
+[[2025-releases]]
 == 2025リリース
 
 .2025年10月
@@ -135,6 +141,7 @@ link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA R2�
 ====
 
 
+[[2024-releases]]
 == 2024年リリース
 
 .2024年12月

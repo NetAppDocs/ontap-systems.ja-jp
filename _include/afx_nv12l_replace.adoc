@@ -15,6 +15,7 @@ NOTE: NVRAM12-EXモジュールを交換する前に、交換作業を進める�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 障害のあるコントローラをシャットダウンするかテイクオーバーします。
@@ -72,6 +73,7 @@ _-halt true_ パラメータは、障害のあるノードを LOADER プロン�
 
 
 
+[[step-2-replace-the-nvram12-ex-module-nvram-dimm-or-nvram-battery]]
 == ステップ2：NVRAM12-EXモジュール、NVRAM DIMM、またはNVRAMバッテリーを交換する
 
 NVRAM12-EXモジュール、NVRAM DIMM、またはNVRAMバッテリーを以下のオプションを使用して交換します。
@@ -476,6 +478,7 @@ image:../media/icon_round_1.png["番号1"]
 ====
 
 
+[[step-3-reboot-the-controller]]
 == 手順3：コントローラをリブートする
 
 FRU を交換したら、コントローラモジュールをリブートする必要があります。
@@ -489,6 +492,7 @@ FRU を交換したら、コントローラモジュールをリブートする�
 
 
 
+[[step-4-complete-nvram12-ex-replacement]]
 == ステップ4：NVRAM12-EXの交換を完了する
 
 NVRAM12-EXの交換を完了するには、以下の手順を実行してください。
@@ -558,6 +562,7 @@ NOTE: 次のコマンドは、診断モードの特権レベルでのみ使用�
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 手順 5 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

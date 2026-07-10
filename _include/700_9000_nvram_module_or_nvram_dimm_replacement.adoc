@@ -24,6 +24,7 @@ NVRAMモジュールは、NVRAM10とDIMM、およびNVRAMモジュールごと�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 次のいずれかのオプションを使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
@@ -196,6 +197,7 @@ mcc1A::> metrocluster operation show
 ====
 
 
+[[step-2-replace-the-nvram-module]]
 == 手順 2 ： NVRAM モジュールを交換します
 
 NVRAM モジュールを交換するには、シャーシのスロット 6 にある NVRAM モジュールの場所を確認し、特定の手順に従います。
@@ -303,6 +305,7 @@ DIMM と DIMM のツメ
 
 
 
+[[step-3-replace-a-nvram-dimm]]
 == 手順 3 ： NVRAM DIMM を交換します
 
 NVRAM モジュールの NVRAM DIMM を交換するには、 NVRAM モジュールを取り外し、モジュールを開き、ターゲット DIMM を交換する必要があります。
@@ -378,6 +381,7 @@ DIMM と DIMM のツメ
 
 
 
+[[step-4-reboot-the-controller-after-fru-replacement]]
 == 手順 4 ： FRU の交換後にコントローラをリブートします
 
 FRU を交換したら、コントローラモジュールをリブートする必要があります。
@@ -388,6 +392,7 @@ FRU を交換したら、コントローラモジュールをリブートする�
 
 
 
+[[step-5-reassign-disks]]
 == 手順 5 ：ディスクを再割り当てする
 
 HA ペア構成と 2 ノード MetroCluster 構成のどちらを使用しているかに応じて、新しいコントローラモジュールへのディスクの再割り当てを確認するか、ディスクを手動で再割り当てする必要があります。
@@ -645,6 +650,7 @@ advanced モードで続けるかどうかを尋ねられたら、「 y 」と�
 ====
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 手順 6 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

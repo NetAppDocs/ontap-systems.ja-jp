@@ -4465,7 +4465,6 @@
   <block id="b2171f8c50bfc77432114b327848466f" category="list-text">ドライブは、シェルフシャーシとは別にパッケージ化されています。</block>
   <block id="729ab22e4daec3dc8eb94284e2ff928a" category="paragraph">受け取った残りのシステム機器と一緒にドライブのインベントリを作成する必要があります。</block>
   <block id="8244db29bd8d18d221639bfa5a7af47a" category="list-text">ドライブを開封したら、あとで使用できるように梱包材は保管しておいてください。</block>
-  <block id="0c9768cef5797a31f719b148cb97c2b0" category="admonition">*データアクセスが失われる可能性：*今後、シェルフをデータセンターの別の場所に移動するか、シェルフを別の場所に移動する場合は、ドライブドロワーやドライブが破損しないようにドライブドロワーからドライブを取り外す必要があります。</block>
   <block id="790b3fbbc9d4408c83be569b33f62df4" category="admonition">取り付け準備ができるまで、ディスクドライブをESDバッグに入れたままにしておきます。</block>
   <block id="f505a7983bc262c1785ce6adc5c9c152" category="list-text">ドライブを扱うときは、静電気放出を防ぐために、作業中のリストストラップを常に着用し、ストレージエンクロージャのシャーシの塗装されていない表面にリストストラップを接地させます。</block>
   <block id="271ccf7899e5bebc4f9e5879e8b4e969" category="paragraph">DS460Cの出荷時は、4個の着脱式リフトハンドル（両側に2個）が同梱されています。取っ手を使用するには、シェルフ側面のスロットにハンドルのタブを挿入し、カチッと音がして所定の位置に収まるまで押し上げます。次に、ディスクシェルフをレールにスライドさせたら、サムラッチを使用して一度に1組のハンドルを外します。次の図は、リフトハンドルを取り付ける方法を示しています。</block>
@@ -4489,7 +4488,6 @@
   <block id="20244777af6f97db49ab4dc75a00ca87" category="paragraph">ケーブルを1本ずつ交換し、ケーブルを外してから新しいケーブルを接続するまで70秒以上待機します。</block>
   <block id="2832373659f325a28de2b5462611f72c" category="paragraph">DS460Cディスクシェルフの場合、フル装備のシェルフの重量は112kg（247ポンド）近くになることがあるため、ラックまたはキャビネットからシェルフを取り外すときは、次の点に注意してください。</block>
   <block id="69803fc9f7acd429df0403558d86852a" category="admonition">DS460Cシェルフを安全に移動するためには、リフトハンドルを使用してリフトを使用するか4人で運搬することを推奨します。</block>
-  <block id="1d5287e79870e687badf4e2da0612ad0" category="paragraph">DS460Cシェルフをデータセンターの別の部分に移動したり、シェルフを別の場所に移動したりする場合は、ドライブドロワーやドライブの破損を防ぐために、ドライブドロワーからドライブを取り外す必要があります。</block>
   <block id="c3fdb0812209f286e664a4d0cd47c328" category="list-text">新しいシステムの設置時またはシェルフのホットアドの一環としてDS460Cシェルフを設置した場合は、ドライブのパッケージ化材を保存したあとに、それらを移動する前にドライブを再パッケージ化してください。</block>
   <block id="9285e5d96d62653cbfc04067e2de249c" category="list-text"><block ref="9285e5d96d62653cbfc04067e2de249c" category="inline-link-macro-rx"></block></block>
   <block id="dbe0afeaa91b9a08168e98b33a4c7de8" category="admonition">ケーブルの接続を解除してから再接続し、ケーブルを交換する場合は、70秒以上待ってから行うようにしてください。</block>
@@ -9546,7 +9544,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f93850287d87d3b25d1ae82f23739c89" category="paragraph">DIMMを交換するには、コントローラ内でDIMMの場所を確認し、特定の手順を実行します。</block>
   <block id="b68e23ba744de81732ee8532ad0ffa65" category="paragraph">NVRAMモジュールは、NVRAM12ハードウェアDIMMとフィールド交換可能DIMMで構成されています。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。</block>
   <block id="eddcdc7ef0c41a163b1aa75c692e684c" category="list-text">ストレージシステムの他のすべてのコンポーネントが正常に動作していることを確認します。正常に動作していない場合は、にお問い合わせください。<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block></block>
-  <block id="0e22dd23e6324e2e936de48ef986b220" category="paragraph">NVRAMモジュールのNVRAM DIMMを交換するには、まずNVRAMモジュールを取り外してから、ターゲットDIMMを交換する必要があります。</block>
   <block id="76341fe070bb8baf145cd67f5221a7ed" category="list-text">この手順は、システムでサポートされるすべてのバージョンのONTAPで使用できることを理解しておいてください。</block>
   <block id="4564e5afb25f1ffe83d0d3ac84e6cb52" category="paragraph">スロット8のコントローラの背面にあるシステム管理モジュールには、システム管理用のオンボードコンポーネントと外部管理用のポートが搭載されています。障害のあるシステム管理モジュールの交換またはブートメディアの交換を行うには、ターゲットコントローラをシャットダウンする必要があります。</block>
   <block id="8715aa093d3bd0ff3589f26f08de5eda" category="list-text">パートナーコントローラが障害のあるコントローラをテイクオーバーできることを確認します。</block>
@@ -10718,7 +10715,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="2efcc590b5abb3211d808cb53bc04668" category="paragraph">棚IDを変更するには、以下の手順を実行してください。詳細な手順については、 <block ref="1bf0acf64e45d0c785cbad3f63f469c6" category="inline-link-macro-rx"></block> 。</block>
   <block id="9982fc2fe5816d297a37b3ad57f43a5e" category="section-title">ステップ2: ホットアド用のディスクシェルフの配線</block>
   <block id="e799b535f2d63f0553a59afd2bbcbc37" category="section-title">（オプション）ステップ3：DS460Cシェルフを移動または輸送する</block>
-  <block id="790df2827c132e9040bd12ac9938f8e1" category="paragraph">将来、DS460C シェルフをデータ センターの別の場所に移動したり、シェルフを別の場所に輸送したりする場合は、ドライブ ドロワーとドライブの損傷を避けるために、ドライブをドライブ ドロワーから取り外す必要があります。</block>
   <block id="84f49fb7ef2efb64157148b160d0f41b" category="list-text">シェルフのホットアドの一部として DS460C シェルフをインストールしたときにドライブの梱包材を保存していた場合は、移動する前にそれらを使用してドライブを再梱包します。</block>
   <block id="f79423440698d6bd5c6e74668ce4bba8" category="list-text">ルート アグリゲートを含むディスク シェルフは、ディスク シェルフ ボックスとディスク シェルフ シャーシのラベルによって識別できます。</block>
   <block id="99ca57e46c8968dbfd02674b96093d6b" category="paragraph">ディスク シェルフを設置してケーブル接続する前に、特定の要件を満たし、この手順のベスト プラクティスと考慮事項を理解しておく必要があります。</block>
@@ -10800,7 +10796,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="ab8a21779e7d2f5935dd0a75d2fcb9c1" category="list-text">交換モジュールが搭載されたコントローラのコンソールに「Waiting for giveback」というメッセージが表示されるまで待機し、その後、正常なコントローラから新しいパートナー システム ID が自動的に割り当てられたことを確認します。</block>
   <block id="751035e5db88d172e881299c202d9b13" category="paragraph"><block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix="" category="inline-code"></block></block>
   <block id="4d67a97a7a4bdaa068aca8964daf6bc7" category="paragraph">コマンド出力には、障害のあるコントローラのシステム ID が変更されたことを示すメッセージが表示され、正しい古い ID と新しい ID が表示されます。次の例では、ノード 2 が交換され、新しいシステム ID が 151759706 になっています。</block>
-  <block id="b0ca4008db9ade329bdaa07eb18abb6e" category="list-text">正常なコントローラから、交換されたコントローラのストレージを戻します: +<block ref="06b377d178eed8a76119920cc708363f" prefix=" " category="inline-code"></block></block>
   <block id="c37d3ca34f959c63ba76b936b5b8ac56" category="inline-link">手動のギブバックコマンド</block>
   <block id="08e4659b0eb57c9cea96cc6dd1d74831" category="paragraph">詳細については、<block ref="31dcb12c2767b4c2bc8af867d9122aa5" category="inline-link-rx"></block>拒否権を覆す。</block>
   <block id="9c34e1a48e911178576bdbaa330d5f5a" category="list-text">ディスクが正しく割り当てられたことを確認します。</block>
@@ -14818,9 +14813,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6b60e7f24a30b9e3a07fd4349176c6f5" category="open-title">暗号化または External Key Manager（EKM）なし</block>
   <block id="a9c46224e1208bec23244c121f22a175" category="paragraph">OKM用のオンボード暗号化キーを復元して再封印し、コントローラを正常な動作状態に戻します。</block>
   <block id="99464671a9ee8f5d9bec8b8dc7a3cc6f" category="paragraph">開始する前に、<block ref="6f522857c47788f1087697333fe0d531" category="inline-link-rx"></block>を確認するか、NetAppサポートにお問い合わせください。</block>
-  <block id="b46eb70574ba72ddd18297870ac72496" category="list-text">正常なコントローラからクラスタ全体のパスフレーズを取得して検証します。</block>
-  <block id="5e208af3a3c950196c1dd0dfc02ffc56" category="list-text">次のコマンドを実行して、クラスタ全体のパスフレーズを取得します：</block>
-  <block id="5d5069bc693614975aa81a354e040601" category="list-text">次のコマンドを使用して、クラスタ全体のパスフレーズを確認します。</block>
   <block id="7b0d473a82241e1a01fb90a8bc2cf05f" category="paragraph"><block ref="dff8e3a1b1fc2becfcb5e40a46f984ee" prefix="" category="inline-code"></block></block>
   <block id="ad46fdb4c583c5a533a352f036a18d2d" category="list-text">キーのステータスを確認します。<block ref="297f477a8524857592ffedfea06bb8d7" prefix=" " category="inline-code"></block></block>
   <block id="299c9bfb3cd1f598a62efacc3686ea10" category="paragraph">正しく同期されている場合、出力には結果が表示されません。</block>
@@ -15027,7 +15019,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5c40960208a7535beecf44f84d10cea9" category="paragraph"><block ref="fa00b95aa82b5506a4c27cc4a50f05d7" prefix="" category="inline-code"></block></block>
   <block id="c3165d0219ae1a4207ad0ebcf7cf0c94" category="admonition">以下の図は、垂直I/Oモジュールを取り外す様子を示しています。通常、取り外すのはI/Oモジュール1つだけです。</block>
   <block id="a8ca556aef32bcdf3b78af817650cec9" category="inline-link-macro">NVRAM12-EXのNVバッテリーを交換する</block>
-  <block id="19357c6818732b5c143113cfbbdb6c00" category="paragraph">この手順は、AFX 2Kコントローラーのスロット4および5にあるNVRAMモジュールの故障したNVバッテリーの交換に適用されます。AFX 2Kコントローラーのスロット6および7にあるNVRAM12-EXモジュールのNVバッテリーの交換方法については、<block ref="c1527c06da2f8081a89a92a76513721c" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="d0e0c3dcb53bac3afb0b39def82634d7" category="admonition">オーバーライドシステムIDは、NVRAM DIMMの交換ではなく、NVRAMモジュールの交換時にのみ必要です。</block>
   <block id="e34ffdf953bcf2183852f0fba937d427" category="list-text">正常なコントローラから、交換したコントローラのストレージをギブバックします：`_storage failover giveback -ofnode impaired_node_name_`</block>
   <block id="632b0abbc27c5b279f1c1a81849131b9" category="paragraph">NVRAM12-EXモジュールは、NVRAM12ハードウェアと、現場で交換可能なDIMMで構成されています。故障したNVRAM12-EXモジュール、DIMM、またはNVRAM12-EXモジュール内部のNVRAMバッテリーを交換できます。</block>
@@ -15144,7 +15135,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="22b48166a83fe9cb39be3e37e219b528" category="summary">モジュールに障害が発生し、ストレージ システムがすべての ONTAP バージョン要件を満たしている場合は、afx 2k ストレージ システムのイーサネット I/O モジュールをホット スワップできます。</block>
   <block id="3c08a7ab62bcec00e7adabd9ebfa32fb" category="doc">I/OモジュールのホットスワップAFX 2K</block>
   <block id="69f81f2052320136f3837bb5dc90b742" category="paragraph">モジュールに障害が発生し、ストレージ システムがすべてのONTAPバージョン要件を満たしている場合は、AFX 2K ストレージ システム内の Ethernet I/O モジュールをホット スワップできます。</block>
-  <block id="1467175f80b5b6aeb9baf8911c169c66" category="paragraph">stdin に未解決のディレクティブがあります - include::../_include/afx_2k_io_module_hotswap_replace.adoc[]</block>
   <block id="a28f0e1852a67eef8c7002ec42407437" category="summary">afx 2kストレージシステムは、I/Oモジュールの拡張や交換を柔軟に行うことができ、ネットワーク接続性とパフォーマンスを向上させます。ネットワーク機能をアップグレードする場合や、故障したモジュールに対処する場合は、I/Oモジュールの追加または交換が不可欠です。</block>
   <block id="090e0f185fc019584bd34692f1181c1b" category="doc">I/Oモジュールの追加と交換の概要 - AFX 2K</block>
   <block id="2a86a987b9aaad96420c91330dbf1d59" category="paragraph">AFX 2Kストレージシステムは、I/Oモジュールの拡張や交換を柔軟に行えるため、ネットワーク接続性とパフォーマンスを向上させることができます。ネットワーク機能をアップグレードする場合や、故障したモジュールに対処する場合は、I/Oモジュールの追加または交換が不可欠です。</block>
@@ -15236,4 +15226,20 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="9a409a4d75890ddb49381881e67f5f7a" category="paragraph">新しいNetApp AFX 2Kストレージシステムは、AI/MLアプリケーションを含むハイパフォーマンスNASおよびS3ワークロードの厳しい要件を満たすように設計された分離型ソリューションを拡張します。AFX 2Kシステムは、スケーラブルで高スループットのファイルおよびオブジェクトストレージを必要とする顧客向けに、特化した機能を提供します。</block>
   <block id="374ef3ed61ad653976c8db59a5521927" category="paragraph-title">AFX 2K向けの新しいCisco 9808スイッチサポート</block>
   <block id="171d55c5398223f97af70b589556e85a" category="paragraph">新しい Cisco 9808 スイッチは、ストレージシェルフを備えた AFX 2K コントローラノードに接続します。この新しいスイッチは、Cisco 9364D-GX2A および Cisco 9332D-GX2B スイッチとともに、2 つ以上のノードを持つ ONTAP クラスターを構築することを可能にします。高度なプロトコルを使用してパフォーマンスを最適化します。この設計は、複数のネットワークパスを備えた VLAN タギングと、テクノロジー更新構成に基づいており、継続的な運用とアップグレードの容易さを保証します。</block>
+  <block id="dc48d615c5f9fb78313b74622422feb9" category="admonition">NVRAMモジュールはホットスワップ対応ではありません。交換する前に、ドライブを再度取り付け、ノードをシャットダウンし、コントローラの電源を抜き、コントローラをシャーシから数インチ引き出してください。</block>
+  <block id="988a597c76da36da291f7a8291ca87e5" category="paragraph">NVRAMモジュール内のNVRAM DIMMを交換するには、まずNVRAMモジュールを取り外してから、対象のDIMMを交換します。</block>
+  <block id="65ae07541c754093eda9cd898cf890f7" category="list-text">正常なコントローラーから、交換したコントローラーのストレージを返却します。</block>
+  <block id="9644c387c99518e1860c30e3cf8eba2b" category="paragraph"><block ref="06b377d178eed8a76119920cc708363f" prefix="" category="inline-code"></block></block>
+  <block id="8b3acd0034c11eb0d2cc759087388c51" category="admonition">システム管理モジュールはホットスワップ対応ではありません。交換する前に、ドライブを再度取り付け、ノードをシャットダウンし、コントローラの電源を抜き、コントローラをシャーシから数インチ引き出してください。</block>
+  <block id="22053114ba6e7bc13b817b4bc0d33a7a" category="paragraph">この手順は、AFX 2Kコントローラーのスロット4および5にあるNVRAMモジュールの故障したNVバッテリーの交換に適用されます。AFX 2Kコントローラーのスロット6および7にあるNVRAM12-EXモジュールのNVバッテリーの交換方法については、<block ref="88b363883c4e9723be8357e35a0ee846" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="babbf43148de4580a0852228a7abdeb2" category="list-text">クラスターのキー管理バックアップ情報を表示します。</block>
+  <block id="e6011b662fb607ff4d15fa91a2111477" category="list-text">クラスターのキー管理バックアップ情報を表示するには、次のコマンドを実行します。</block>
+  <block id="b6d3a43e49e2cb3cf3ef951be10ee778" category="list-text">オンボードキーマネージャのバックアップを確認するには、次のコマンドを実行します。</block>
+  <block id="76e697176bd33c2caa0a5e157ee21ee5" category="list-text">OKMのパスフレーズを入力し、検証が正常に完了したことを確認してください。</block>
+  <block id="d7839bc27a5de75de09c3836b24d0173" category="list-text"><block ref="d7839bc27a5de75de09c3836b24d0173" category="inline-link-macro-rx"></block></block>
+  <block id="7acdedd4b9619ab52efc92d3b14525df" category="list-text"><block ref="7acdedd4b9619ab52efc92d3b14525df" category="inline-link-macro-rx"></block></block>
+  <block id="c5b751f861fbe3ad3f66b4fbdd202720" category="list-text"><block ref="c5b751f861fbe3ad3f66b4fbdd202720" category="inline-link-macro-rx"></block></block>
+  <block id="07264625bd1b5bafe8d9b9331bb63609" category="paragraph">DS460Cシェルフをデータセンター内の別の場所に移動したり、別の場所に輸送したりする場合は、ドライブドロワーやドライブの損傷を防ぐため、ドライブドロワーからドライブを取り外す必要があります。</block>
+  <block id="c141638ba1fc3bb008bb5eb896def79e" category="admonition">*データアクセスが失われる可能性：* 今後、シェルフをデータセンターの別の場所に移動したり、別の場所に輸送したりする場合は、ドライブドロワーやドライブの損傷を防ぐため、ドライブドロワーからドライブを取り外す必要があります。</block>
+  <block id="c280702bf87115947662f11cc819ea08" category="paragraph">今後、DS460Cシェルフをデータセンター内の別の場所に移動したり、別の場所に輸送したりする場合は、ドライブドロワーやドライブの損傷を防ぐため、ドライブドロワーからドライブを取り外す必要があります。</block>
 </blocks>

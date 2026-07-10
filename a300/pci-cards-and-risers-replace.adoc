@@ -19,6 +19,7 @@ PCIe カードを交換するには、特定の順序でタスクを実行する
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。
@@ -191,6 +192,7 @@ mcc1A::> metrocluster operation show
 ====
 
 
+[[step-2-open-the-controller-module]]
 == 手順 2 ：コントローラモジュールを開く
 
 コントローラ内部のコンポーネントにアクセスするには、まずコントローラモジュールをシステムから取り外し、続いてコントローラモジュールのカバーを外す必要があります。
@@ -231,6 +233,7 @@ image:../media/icon_round_2.png["番号2"]
 
 
 
+[[step-3-replace-a-pcie-card]]
 == 手順 3 ： PCIe カードを交換します
 
 PCIe カードを交換するには、コントローラ内で PCIe カードの場所を確認し、特定の手順を実行します。
@@ -270,6 +273,7 @@ NOTE: 下のスロットにカードを取り付けてもカードソケット�
 
 
 
+[[step-4-reinstall-the-controller]]
 == 手順 4 ：コントローラを再度取り付けます
 
 コントローラモジュール内のコンポーネントを交換したら、コントローラモジュールをシステムシャーシに再度取り付けてブートする必要があります。
@@ -354,6 +358,7 @@ HA ペア
 
 
 
+[[step-5-two-node-metrocluster-only-switch-back-aggregate]]
 == 手順 5 （ 2 ノード MetroCluster のみ）：アグリゲートをスイッチバックする
 
 このタスクでは、環境の 2 ノード MetroCluster 構成のみを実行します。
@@ -410,6 +415,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 手順 6 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

@@ -13,15 +13,15 @@ summary: システムを設置してセットアップします。
 [role="lead"]
 ほとんどの構成（ ASA 構成を含む）では、異なるコンテンツ形式から選択できます。
 
-* link:../a800/install-quick-guide.html["クイックステップ"]
+* link:../asa800/install-quick-guide.html["クイックステップ"]
 +
 ステップバイステップの手順と追加コンテンツへのライブリンクが記載された PDF 形式のガイドです。
 
-* link:../a800/install-videos.html["ビデオの手順"]
+* link:../asa800/install-videos.html["ビデオの手順"]
 +
 手順を追ったビデオでご確認ください。
 
-* link:../a800/install-detailed-guide.html["詳細な手順"]
+* link:../asa800/install-detailed-guide.html["詳細な手順"]
 +
 ステップバイステップの手順と追加コンテンツへのライブリンクが記載されたオンライン形式のガイドです。
 

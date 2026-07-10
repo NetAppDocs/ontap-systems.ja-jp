@@ -19,6 +19,7 @@ summary: システムが訂正可能なエラー訂正コード（ECC）の増�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
@@ -191,6 +192,7 @@ mcc1A::> metrocluster operation show
 ====
 
 
+[[step-2-remove-the-controller-module]]
 == 手順 2 ：コントローラモジュールを取り外す
 
 コントローラモジュール内部のコンポーネントにアクセスするには、コントローラモジュールをシャーシから取り外す必要があります。
@@ -236,6 +238,7 @@ image:../media/icon_round_2.png["番号2"]
 
 
 
+[[step-3-replace-system-dimms]]
 == 手順 3 ：システム DIMM を交換します
 
 システムDIMMを交換するには、関連するエラーメッセージで対象のDIMMを特定し、エアダクトのFRUマップを使用してターゲットDIMMの場所を確認し、DIMMを交換します。
@@ -306,6 +309,7 @@ NOTE: DIMM がスロットにまっすぐ差し込まれていることを目で
 
 
 
+[[step-4-install-the-controller-module]]
 == 手順 4 ：コントローラモジュールを取り付ける
 
 コントローラモジュールのコンポーネントを交換したら、コントローラモジュールをシャーシに再度取り付け、メンテナンスモードでブートする必要があります。
@@ -369,6 +373,7 @@ NOTE: システムがブートメニューで停止した場合は、 LOADER で
 
 
 
+[[step-5-restore-the-controller-module-to-operation]]
 == 手順 5 ：コントローラモジュールを動作状態に戻す
 
 システムにケーブルを再接続し、コントローラモジュールをギブバックして、自動ギブバックを再度有効にする必要があります。
@@ -383,6 +388,7 @@ NOTE: システムがブートメニューで停止した場合は、 LOADER で
 
 
 
+[[step-6-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 手順 6 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする
 
 このタスクでは、環境の 2 ノード MetroCluster 構成のみを実行します。
@@ -439,6 +445,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-7-return-the-failed-part-to-netapp]]
 == 手順 7 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

@@ -19,6 +19,7 @@ summary: AFF A320 コントローラモジュールのリアルタイムクロ�
 
 
 
+[[step-1-shut-down-the-controller]]
 == 手順 1 ：コントローラをシャットダウンします
 
 障害のあるコントローラーを引き継いで停止し、正常なコントローラーが障害のあるコントローラーのストレージからデータを引き続き提供できるようにします。これを行うには、AutoSupportで自動ケース作成を抑制し、自動ギブバックを無効にして、障害のあるコントローラをLOADERプロンプトに切り替えます。LOADERプロンプトは、FRUを交換できる安全な停止状態です。
@@ -89,12 +90,14 @@ _-halt true _パラメータを指定すると、Loaderプロンプトが表示�
 
 
 
+[[step-2-replace-the-rtc-battery]]
 == 手順 2 ： RTC バッテリを交換します
 
 コントローラモジュール内で RTC バッテリの場所を確認し、特定の手順を実行する必要があります。
 
 
 
+[[step-3-remove-the-controller-module]]
 == 手順 3 ：コントローラモジュールを取り外す
 
 コントローラモジュール内部のコンポーネントにアクセスするには、コントローラモジュールをシャーシから取り外す必要があります。
@@ -127,6 +130,7 @@ image::../media/drw_a320_controller_remove_animated_gif.png[コントローラ�
 
 
 
+[[step-4-replace-the-rtc-battery]]
 == 手順 4 ： RTC バッテリを交換します
 
 image::../media/drw_a320_rtc_batt_replace_animated_gif.png[RTC バッテリを交換します]
@@ -156,6 +160,7 @@ NOTE: ホルダーから取り外す際に、バッテリの極の向きを確�
 
 
 
+[[step-5-reinstall-the-controller-module-and-setting-timedate-after-rtc-battery-replacement]]
 == 手順 5 ：コントローラモジュールを再度取り付け、 RTC バッテリ交換後に日時を設定します
 
 コントローラモジュール内のコンポーネントを交換したら、コントローラモジュールをシステムシャーシに再度取り付け、コントローラの日付と時刻をリセットしてブートする必要があります。
@@ -208,6 +213,7 @@ NOTE: ラッチのアームがシャーシ内にスライドします。
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 手順 6 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

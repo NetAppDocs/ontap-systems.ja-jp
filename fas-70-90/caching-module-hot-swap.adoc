@@ -23,6 +23,7 @@ FAS70は2TBのキャッシングモジュールをサポートし、FAS90は4TB�
 
 
 
+[[replace-the-flash-cache-module-carrier]]
 == Flash Cacheモジュールキャリアを交換
 
 Flash Cacheモジュールキャリアはスロット6にあり、Flash Cacheモジュールを2つまで収容できます。Flash Cacheモジュールキャリアをホットスワップすることはできません。
@@ -34,6 +35,7 @@ Flash Cacheモジュールキャリアはスロット6にあり、Flash Cacheモ
 
 
 
+[[step-1-shut-down-the-impaired-node]]
 === 手順 1 ：障害ノードをシャットダウンします
 
 次のいずれかのオプションを使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
@@ -180,6 +182,7 @@ _-halt true _パラメータを指定すると、Loaderプロンプトが表示�
 ====
 
 
+[[step-2-replace-the-flash-cache-module-carrier]]
 === 手順2：Flash Cacheモジュールキャリアを交換する
 
 Flash Cacheモジュールキャリアを交換するには、次の手順を実行します。
@@ -249,6 +252,7 @@ Flash Cacheモジュールキャリア障害LED
 
 
 
+[[step-3-reboot-the-controller]]
 === 手順3：コントローラをリブートする
 
 Flash Cacheモジュールキャリアを交換したら、コントローラモジュールをリブートする必要があります。
@@ -265,12 +269,14 @@ NOTE: これにより、I/Oカードおよびその他のコンポーネント�
 
 
 
+[[step-4-return-the-failed-part-to-netapp]]
 === 手順 4 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。
 
 
 
+[[replace-the-caching-module]]
 == キャッシングモジュールを交換
 
 Flash Cacheモジュール（キャッシングモジュール）は、スロット6-1、スロット6-2、またはスロット6-1とスロット6-2の両方に搭載されています。

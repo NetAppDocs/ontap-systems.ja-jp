@@ -15,6 +15,7 @@ summary: ここでは、システムの設置とケーブル接続の方法を�
 
 
 
+[[video-one-of-two-hardware-installation-and-cabling]]
 == ビデオ 1 ：ハードウェアの設置とケーブル接続
 
 次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
@@ -23,6 +24,7 @@ summary: ここでは、システムの設置とケーブル接続の方法を�
 video::2a61ed74-a0ce-46c3-86d2-ab4b013c0030[panopto]
 
 
+[[video-two-of-two-perform-end-to-end-software-configuration]]
 == ビデオ 2 ：エンドツーエンドのソフトウェア設定を実行する
 
 次のビデオでは、 ONTAP 9.2 以降を実行するシステムのエンドツーエンドのソフトウェア設定を示します。

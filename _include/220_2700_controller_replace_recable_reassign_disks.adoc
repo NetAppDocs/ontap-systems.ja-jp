@@ -6,6 +6,7 @@
 
 
 
+[[step-1-recable-the-system]]
 == 手順 1 ：システムにケーブルを再接続します
 
 コントローラモジュールのストレージとネットワーク接続を確認するには、 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"] 。
@@ -19,6 +20,7 @@
 
 
 
+[[step-2-reassign-disks]]
 == 手順 2 ：ディスクを再割り当てする
 
 HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。スタンドアロンシステムでは、 ID をディスクに手動で再割り当てする必要があります。
@@ -52,6 +54,7 @@ HA ペア
 |===
 
 
+[[option-1-verify-the-system-id-change-on-an-ha-system]]
 === オプション 1 ： HA システムでシステム ID の変更を確認する
 
 _replacement _controller をブートしたときにシステム ID の変更を確認し、その変更が実装されたことを確認する必要があります。
@@ -138,6 +141,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 
 
 
+[[option-2-manually-reassign-the-system-id-on-a-stand-alone-system-in-ontap]]
 === オプション 2 ： ONTAP でスタンドアロンシステムにシステム ID を手動で再割り当てする
 
 スタンドアロンシステムでは、システムを通常の動作状態に戻す前に、新しいコントローラのシステム ID にディスクを手動で再割り当てする必要があります。
@@ -200,6 +204,7 @@ disk_name    system-1  (118065481)  Pool0  J8Y0TDZC       system-1  (118065481)
 
 
 
+[[option-3-manually-reassign-the-system-id-on-systems-in-a-two-node-metrocluster-configuration]]
 === オプション 3 ： 2 ノード MetroCluster 構成のシステムにシステム ID を手動で再割り当てする
 
 ONTAP を実行している 2 ノード MetroCluster 構成では、システムを通常の動作状態に戻す前に、新しいコントローラのシステム ID にディスクを手動で再割り当てする必要があります。

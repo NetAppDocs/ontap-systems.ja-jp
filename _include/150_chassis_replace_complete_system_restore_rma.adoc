@@ -6,6 +6,7 @@
 
 
 
+[[step-1-verify-and-set-the-ha-state-of-the-chassis]]
 == 手順 1 ：シャーシの HA 状態を確認して設定します
 
 シャーシの HA 状態を確認し、必要に応じてシステム構成に合わせて更新する必要があります。
@@ -37,6 +38,7 @@ hA-state には、次のいずれかの値を指定できます。
 
 
 
+[[step-2-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 手順2：2ノードMetroCluster構成でアグリゲートをスイッチバックする
 
 このタスクでは、環境の 2 ノード MetroCluster 構成のみを実行します。
@@ -93,6 +95,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-3-return-the-failed-part-to-netapp]]
 == 手順 3 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

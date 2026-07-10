@@ -17,6 +17,7 @@ FAS2600 システムは、手動のブート メディア回復手順のみを�
 
 
 
+[[step-1-check-nve-support-and-download-the-correct-ontap-image]]
 == ステップ1: NVEのサポートを確認し、正しいONTAPイメージをダウンロードする
 
 ブート メディアの交換に適切なONTAPイメージをダウンロードできるように、 ONTAPバージョンがNetApp Volume Encryption (NVE) をサポートしているかどうかを確認します。
@@ -43,6 +44,7 @@ NOTE: NetAppサポート サイトからONTAPイメージを HTTP または FTP 
 
 
 
+[[step-2-verify-key-manager-status-and-back-up-configuration]]
 == ステップ2: キーマネージャーのステータスを確認し、構成をバックアップする
 
 障害のあるコントローラをシャットダウンする前に、キー マネージャの構成を確認し、必要な情報をバックアップしてください。

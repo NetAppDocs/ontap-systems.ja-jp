@@ -15,6 +15,7 @@ summary: ハードウェア障害が発生した場合は、AFF A1K システム
 
 
 
+[[step-1-remove-the-psus-and-cables]]
 == 手順1：PSUとケーブルを取り外す
 
 コントローラーを取り外す前に、2 つの電源ユニット (PSU) を取り外す必要があります。
@@ -63,6 +64,7 @@ NOTE: この手順の最初に、ケーブルにラベルを付けておく必�
 
 
 
+[[step-2-remove-the-io-cards-nvram12-and-system-management-module]]
 == ステップ2: I/Oカード、NVRAM12、システム管理モジュールを取り外す
 
 . ターゲットの I/O モジュールをシャーシから取り外します。
@@ -138,6 +140,7 @@ image::../media/icon_round_1.png[番号1]
 
 
 
+[[step-3-remove-the-controller-module]]
 == 手順 3 ：コントローラモジュールを取り外す
 
 . ユニットの前面で、ロックカムの穴に指をかけ、カムレバーのタブを軽く押しながら、両方のラッチを同時に手前にしっかりと回転させます。
@@ -164,6 +167,7 @@ image:../media/icon_round_1.png["番号1"]
 
 
 
+[[step-4-replace-the-impaired-chassis]]
 == ステップ4: 損傷したシャーシを交換する
 
 障害のあるシャーシを取り外し、交換用シャーシを取り付けます。
@@ -186,6 +190,7 @@ image:../media/icon_round_1.png["番号1"]
 
 
 
+[[step-5-install-the-chassis-components]]
 == ステップ5: シャーシコンポーネントを取り付ける
 
 交換用シャーシを設置した後、コントローラ モジュールを設置し、I/O モジュールとシステム管理モジュールのケーブルを再接続し、PSU を再度設置して差し込む必要があります。

@@ -22,6 +22,7 @@ NVRAMモジュールは、NVRAM12ハードウェアDIMMとフィールド交換�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 障害のあるコントローラをシャットダウンするかテイクオーバーします。
@@ -92,6 +93,7 @@ _-halt true_ パラメータは、障害のあるノードを LOADER プロン�
 
 
 
+[[step-2-replace-the-nvram-module-or-nvram-dimm]]
 == 手順2：NVRAMモジュールまたはNVRAM DIMMを交換する
 
 次の該当するオプションを使用して、NVRAMモジュールまたはNVRAM DIMMを交換します。
@@ -193,6 +195,7 @@ NOTE: NVRAMモジュールの側面にあるFRUマップラベルを参照して
 ====
 
 
+[[step-3-reboot-the-controller]]
 == 手順3：コントローラをリブートする
 
 FRU を交換したら、コントローラモジュールをリブートする必要があります。
@@ -206,6 +209,7 @@ FRU を交換したら、コントローラモジュールをリブートする�
 
 
 
+[[step-4-complete-nvram-replacement]]
 == ステップ4: NVRAMの交換を完了する
 
 NVRAM の交換を完了するには、次の手順を実行します。
@@ -296,6 +300,7 @@ NOTE: 次のコマンドは、診断モードの特権レベルでのみ使用�
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 手順 5 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

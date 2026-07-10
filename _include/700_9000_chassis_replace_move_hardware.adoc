@@ -6,6 +6,7 @@
 
 
 
+[[step-1-remove-the-power-supplies]]
 == 手順 1 ：電源装置を取り外す
 
 .手順
@@ -43,6 +44,7 @@ image:../media/icon_round_1.png["番号1"]
 
 
 
+[[step-2-remove-the-fans]]
 == 手順 2 ：ファンを取り外す
 
 シャーシを交換するときにファンモジュールを取り外すには、特定の順序でタスクを実行する必要があります。
@@ -74,6 +76,7 @@ image:../media/icon_round_1.png["番号1"]
 
 
 
+[[step-3-remove-the-controller-module]]
 == 手順 3 ：コントローラモジュールを取り外す
 
 シャーシを交換するには、古いシャーシからコントローラモジュールを取り外す必要があります。
@@ -111,6 +114,7 @@ image:../media/icon_round_2.png["番号2"]
 
 
 
+[[step-4-remove-the-io-modules]]
 == 手順 4 ： I/O モジュールを取り外します
 
 .手順
@@ -163,6 +167,7 @@ image:../media/icon_round_2.png["番号2"]
 
 
 
+[[step-5-remove-the-de-stage-controller-power-module]]
 == 手順 5 ：デステージコントローラ電源モジュールを取り外す
 
 .手順
@@ -188,6 +193,7 @@ DCPM モジュールのオレンジ色のロックボタン
 
 
 
+[[step-6-replace-a-chassis-from-within-the-equipment-rack-or-system-cabinet]]
 == 手順 6 ：装置ラックまたはシステムキャビネット内のシャーシを交換します
 
 .手順
@@ -210,6 +216,7 @@ NOTE: システムがシステムキャビネットに設置されている場�
 
 
 
+[[step-7-move-the-usb-led-module-to-the-new-chassis]]
 == 手順 7 ： USB LED モジュールを新しいシャーシに移動します
 
 .手順
@@ -222,6 +229,7 @@ NOTE: システムがシステムキャビネットに設置されている場�
 
 
 
+[[step-8-install-the-de-stage-controller-power-module-when-replacing-the-chassis]]
 == 手順 8 ：シャーシを交換する場合は、デステージコントローラ電源モジュールを取り付けます
 
 .手順
@@ -237,6 +245,7 @@ NOTE: モジュールとスロットにはキーが付いています。モジ�
 
 
 
+[[step-9-install-fans-into-the-chassis]]
 == 手順 9 ：シャーシにファンを取り付けます
 
 .手順
@@ -252,6 +261,7 @@ NOTE: モジュールとスロットにはキーが付いています。モジ�
 
 
 
+[[step-10-install-io-modules]]
 == 手順 10 ： I/O モジュールを取り付ける
 
 .手順
@@ -270,6 +280,7 @@ NOTE: 古いシャーシにブランク I/O パネルがある場合は、この
 
 
 
+[[step-11-install-the-power-supplies]]
 == 手順 11 ：電源装置を取り付ける
 
 .手順
@@ -293,6 +304,7 @@ NOTE: 電源ケーブルは電源装置にのみ接続してください。こ�
 
 
 
+[[step-12-install-the-controller]]
 == 手順 12 ：コントローラを取り付ける
 
 .手順

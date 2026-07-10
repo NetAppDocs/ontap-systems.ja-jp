@@ -15,10 +15,12 @@ summary: C30-60プラットフォームグループの主な仕様
 
 
 
+[[aff-c60]]
 == AFF C60用
 
 
 
+[[key-specifications-for-aff-c60]]
 === AFF C60の主な仕様
 
 プラットフォーム構成: AFF C60 シングルシャーシ HA ペア
@@ -37,6 +39,7 @@ PCIe拡張スロット: 8
 
 
 
+[[scaleout-maximums]]
 === スケールアウトの最大値
 
 |===
@@ -55,6 +58,7 @@ PCIe拡張スロット: 8
 |===
 
 
+[[io]]
 === IO
 
 
@@ -110,12 +114,14 @@ PCIe拡張スロット: 8
 |===
 
 
+[[storage-networking-supported]]
 === ストレージネットワークのサポート
 
 CIFS、FC、iSCSI、NFS v3、NFS v4.0、NFS v4.1、NFS v4.2、NVMe/FC、NVMe/TCP、S3、NAS 付き S3、SMB 2.0、SMB 2.1、SMB 2.x、SMB 3.0、SMB 3.1、SMB 3.1.1、
 
 
 
+[[system-environment-specifications]]
 === システム環境仕様
 
 * 標準電力: 2892 BTU/時
@@ -131,6 +137,7 @@ CIFS、FC、iSCSI、NFS v3、NFS v4.0、NFS v4.1、NFS v4.2、NVMe/FC、NVMe/TCP
 
 
 
+[[compliance]]
 === コンプライアンス
 
 * 認証 EMC/EMI: AMCA、FCC、ICES、KC、モロッコ、VCCI
@@ -143,16 +150,19 @@ CIFS、FC、iSCSI、NFS v3、NFS v4.0、NFS v4.1、NFS v4.2、NVMe/FC、NVMe/TCP
 
 
 
+[[high-availability]]
 === 高可用性
 
 イーサネット ベースのベースボード管理コントローラ (BMC) およびONTAP管理インターフェイス、冗長ホットスワップ可能なコントローラ、冗長ホットスワップ可能な電源装置。
 
 
 
+[[aff-c30]]
 == AFF C30用
 
 
 
+[[key-specifications-for-aff-c30]]
 === AFF C30の主な仕様
 
 プラットフォーム構成: AFF C30 シングルシャーシ HA ペア
@@ -171,6 +181,7 @@ PCIe拡張スロット: 8
 
 
 
+[[scaleout-maximums]]
 === スケールアウトの最大値
 
 |===
@@ -189,6 +200,7 @@ PCIe拡張スロット: 8
 |===
 
 
+[[io]]
 === IO
 
 
@@ -244,12 +256,14 @@ PCIe拡張スロット: 8
 |===
 
 
+[[storage-networking-supported]]
 === ストレージネットワークのサポート
 
 CIFS、FC、iSCSI、NFS v3、NFS v4.0、NFS v4.1、NFS v4.2、NVMe/FC、NVMe/TCP、S3、NAS 付き S3、SMB 2.0、SMB 2.1、SMB 2.x、SMB 3.0、SMB 3.1、SMB 3.1.1、
 
 
 
+[[system-environment-specifications]]
 === システム環境仕様
 
 * 標準電力: 2892 BTU/時
@@ -265,6 +279,7 @@ CIFS、FC、iSCSI、NFS v3、NFS v4.0、NFS v4.1、NFS v4.2、NVMe/FC、NVMe/TCP
 
 
 
+[[compliance]]
 === コンプライアンス
 
 * 認証 EMC/EMI: AMCA、FCC、ICES、KC、モロッコ、VCCI
@@ -277,6 +292,7 @@ CIFS、FC、iSCSI、NFS v3、NFS v4.0、NFS v4.1、NFS v4.2、NVMe/FC、NVMe/TCP
 
 
 
+[[high-availability]]
 === 高可用性
 
 イーサネット ベースのベースボード管理コントローラ (BMC) およびONTAP管理インターフェイス、冗長ホットスワップ可能なコントローラ、冗長ホットスワップ可能な電源装置。

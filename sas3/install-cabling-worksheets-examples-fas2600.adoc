@@ -26,6 +26,7 @@ image::../media/drw_fas2600_cable_color_key.png[オンボードストレージ�
 
 
 
+[[fas2820-platform-in-a-multipath-ha-configuration-with-no-external-shelves]]
 == 外付けシェルフを使用しないマルチパスHA構成のFAS2820プラットフォーム
 
 次の例は、マルチパスHA接続を実現するためにケーブル配線が不要であることを示しています。
@@ -34,6 +35,7 @@ image::../media/drw_fas2800_noshelf_mpha_IEOPS-954.svg[FAS2820マルチパスHA�
 
 
 
+[[fas2820-platform-in-a-tri-path-ha-configuration-with-no-external-shelves]]
 == FAS2820プラットフォーム（外付けシェルフを使用しないトライパスHA構成
 
 次のケーブル接続例は、トライパス接続を実現するために2台のコントローラ間で必要なケーブル接続を示しています。
@@ -42,6 +44,7 @@ image::../media/drw_fas2800_noshelf_tpha_IEOPS-955.svg[外付けシェルフを�
 
 
 
+[[fas2820-platform-in-a-tri-path-ha-configuration-with-one-multi-shelf-stack]]
 == 1台のマルチシェルフスタックを使用するトライパスHA構成のFAS2820プラットフォーム
 
 次のワークシートとケーブル接続例では、ポートペア0a / 0b1を使用しています。
@@ -52,6 +55,7 @@ image::../media/drw_fas2800_withshelves_tpha_IEOPS-949.svg[FAS2820トライパ�
 
 
 
+[[platforms-with-internal-storage-in-a-multipath-ha-configuration-with-one-multi-shelf-stack]]
 == マルチパスHA構成で、1つのマルチシェルフスタックに内蔵ストレージが搭載されたプラットフォーム
 
 次のワークシートとケーブル接続の例では、ポートペア 0a / 0b を使用しています。

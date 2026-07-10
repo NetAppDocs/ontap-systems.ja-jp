@@ -15,6 +15,7 @@ summary: これは、一般的なネットアップシステムのインスト�
 
 
 
+[[step-1-prepare-for-installation]]
 == 手順 1 ：設置の準備
 
 システムを設置するには、ネットアップサポートサイトでアカウントを作成し、システムを登録し、ライセンスキーを取得する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。
@@ -183,6 +184,7 @@ image::../media/oie_cable_power.png[電源ケーブル]
 
 
 
+[[step-2-install-the-hardware]]
 == 手順 2 ：ハードウェアを設置する
 
 システムは、 4 ポストラックまたはネットアップシステムキャビネットのいずれかに設置する必要があります。
@@ -209,6 +211,7 @@ image::../media/drw_9500_cable_management_arms.svg[リフティングハンド�
 
 
 
+[[step-3-cable-controllers-to-your-network]]
 == 手順 3 ：コントローラをネットワークに接続する
 
 2 ノードスイッチレスクラスタメソッドまたはクラスタインターコネクトネットワークを使用して、コントローラをネットワークにケーブル接続できます。
@@ -404,6 +407,7 @@ image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[テンケンソオス]
 ====
 
 
+[[step-4-cable-controllers-to-drive-shelves]]
 == 手順 4 ：コントローラをドライブシェルフにケーブル接続する
 
 DS212CまたはDS224Cドライブシェルフをコントローラにケーブル接続します。
@@ -473,6 +477,7 @@ image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS HDケーブル
 
 
 
+[[step-5-complete-system-setup-and-configuration]]
 == 手順 5 ：システムのセットアップと設定を完了する
 
 システムのセットアップと設定を実行するには、スイッチとラップトップのみを接続してクラスタ検出を使用するか、システムのコントローラに直接接続してから管理スイッチに接続します。

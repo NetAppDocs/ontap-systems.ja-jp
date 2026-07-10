@@ -15,6 +15,7 @@ summary: このページでは、一般的なNetAppシステムのインスト�
 
 
 
+[[step-1-prepare-for-installation]]
 == 手順 1 ：設置の準備
 
 FAS2700システムを設置するには、NetApp Support Siteでアカウントを作成し、システムを登録し、ライセンスキーを取得する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。
@@ -167,6 +168,7 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["クラスタ設�
 
 
 
+[[step-2-install-the-hardware]]
 == 手順 2 ：ハードウェアを設置する
 
 システムは、 4 ポストラックまたはネットアップシステムキャビネットのいずれかに設置する必要があります。
@@ -190,12 +192,14 @@ image::../media/drw_cable_management_arm_install.png[ケーブルマネジメン
 
 
 
+[[step-3-cable-controllers-to-your-network]]
 == 手順 3 ：コントローラをネットワークに接続する
 
 2 ノードスイッチレスクラスタメソッドまたはクラスタインターコネクトネットワークを使用して、コントローラをネットワークにケーブル接続できます。
 
 
 
+[[option-1-cable-a-two-node-switchless-cluster-unified-network-configuration]]
 === オプション 1 ： 2 ノードスイッチレスクラスタをケーブル接続し、ユニファイドネットワーク構成にする
 
 コントローラの管理ネットワークポート、 UTA2 データネットワークポート、および管理ポートは、スイッチに接続されます。クラスタインターコネクトポートは、両方のコントローラでケーブル接続されます。
@@ -272,6 +276,7 @@ image:../media/oie_legend_icon_attn_symbol.png["注意記号"]
 
 
 
+[[option-2-cable-a-switched-cluster-unified-network-configuration]]
 === オプション 2 ：スイッチクラスタとユニファイドネットワークのケーブル接続
 
 コントローラの管理ネットワークポート、 UTA2 データネットワークポート、および管理ポートは、スイッチに接続されます。クラスタインターコネクトポートは、クラスタインターコネクトスイッチにケーブル接続されます。
@@ -349,6 +354,7 @@ image:../media/oie_legend_icon_attn_symbol.png["注意記号"]
 
 
 
+[[option-3-cable-a-two-node-switchless-cluster-ethernet-network-configuration]]
 === オプション 3 ： 2 ノードスイッチレスクラスタをケーブル接続し、イーサネットネットワーク構成にする
 
 コントローラの管理ネットワークポート、イーサネットデータネットワークポート、および管理ポートは、スイッチに接続されます。クラスタインターコネクトポートは、両方のコントローラでケーブル接続されます。
@@ -413,6 +419,7 @@ image:../media/oie_legend_icon_attn_symbol.png["注意記号"]
 
 
 
+[[option-4-cable-a-switched-cluster-ethernet-network-configuration]]
 === オプション 4 ：スイッチクラスタのケーブル接続、イーサネットネットワーク構成
 
 コントローラの管理ネットワークポート、イーサネットデータネットワークポート、および管理ポートは、スイッチに接続されます。クラスタインターコネクトポートは、クラスタインターコネクトスイッチにケーブル接続されます。
@@ -475,6 +482,7 @@ image:../media/oie_legend_icon_attn_symbol.png["注意記号"]
 
 
 
+[[step-4-cable-controllers-to-drive-shelves]]
 == 手順 4 ：コントローラをドライブシェルフにケーブル接続する
 
 オンボードストレージポートを使用して、コントローラをシェルフにケーブル接続する必要があります。ネットアップでは、外付けストレージを使用するシステムに MP-HA ケーブル接続を推奨しています。SAS テープドライブがある場合は、シングルパスケーブル接続を使用できます。外付けシェルフがない場合は、システムと一緒に SAS ケーブルを購入した場合、内蔵ドライブへの MP-HA ケーブル接続はオプションです（図では省略しています）。
@@ -551,12 +559,14 @@ NOTE: SASケーブル接続の詳細とワークシートについては、を�
 
 
 
+[[step-5-complete-system-setup-and-configuration]]
 == 手順 5 ：システムのセットアップと設定を完了する
 
 システムのセットアップと設定を実行するには、スイッチとラップトップのみを接続してクラスタ検出を使用するか、システムのコントローラに直接接続してから管理スイッチに接続します。
 
 
 
+[[option-1-complete-system-setup-if-network-discovery-is-enabled]]
 === オプション 1 ：ネットワーク検出が有効になっている場合は、システムのセットアップを完了する
 
 ラップトップでネットワーク検出が有効になっている場合は、クラスタの自動検出を使用してシステムのセットアップと設定を実行できます。
@@ -610,6 +620,7 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成�
 
 
 
+[[option-2-completing-system-setup-and-configuration-if-network-discovery-is-not-enabled]]
 === オプション 2 ：ネットワーク検出が有効になっていない場合のシステムのセットアップと設定の実行
 
 ラップトップでネットワーク検出が有効になっていない場合は、このタスクを使用して設定とセットアップを実行する必要があります。

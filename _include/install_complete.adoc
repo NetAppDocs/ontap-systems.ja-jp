@@ -4,6 +4,7 @@
 
 
 
+[[step-1-gather-cluster-information]]
 == 手順1：クラスタ情報を収集する
 
 クラスタ管理インターフェイスのポートやIPアドレスなど、クラスタの設定に必要な情報を収集します（まだ収集していない場合）。
@@ -12,6 +13,7 @@
 
 
 
+[[step-2-discover-your-cluster-network]]
 == 手順2：クラスタネットワークを検出する
 
 検出プロセスでは、ネットワーク上のストレージシステムコントローラを検出できます。
@@ -86,6 +88,7 @@ NOTE: PuTTY の設定方法がわからない場合は、ラップトップま�
 ====
 
 
+[[step-3-configure-your-cluster]]
 == 手順3：クラスタを構成する
 
 NetAppでは、System Managerを使用して新しいクラスタをセットアップすることを推奨しています。セットアップ手順については、を参照してください https://docs.netapp.com/us-en/ontap/task_configure_ontap.html["System Managerを使用して新しいクラスタにONTAPを設定します"^] 。

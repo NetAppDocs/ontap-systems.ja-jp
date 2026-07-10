@@ -29,6 +29,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg["ケーブルプル�
 
 
 
+[[step-1-cable-the-clusterha-connections]]
 == 手順1：クラスタ/ HAをケーブル接続する
 
 ONTAPクラスタ接続を作成スイッチレスクラスタの場合は、コントローラを相互に接続します。スイッチクラスタの場合は、コントローラをクラスタネットワークスイッチに接続します。
@@ -94,6 +95,7 @@ image:../media/drw_isi_fas50_2p_100gbe_switched_cluster_cabling_ieops-1936.svg["
 ====
 
 
+[[step-2-cable-the-host-network-connections]]
 == 手順2：ホストネットワーク接続をケーブル接続する
 
 コントローラをイーサネットまたはFCホストネットワークにケーブル接続します。
@@ -138,6 +140,7 @@ image::../media/drw_isi_fas50_4p_64gb_fc_optional_cabling_ieops-1935.svg[64Gb FC
 ====
 
 
+[[step-3-cable-the-management-network-connections]]
 == 手順3：管理ネットワークをケーブル接続する
 
 各コントローラの管理（レンチマーク）ポートを管理ネットワークスイッチにケーブル接続します。
@@ -153,6 +156,7 @@ IMPORTANT: まだ電源コードを接続しないでください。
 
 
 
+[[step-4-cable-the-shelf-connections]]
 == 手順4：シェルフをケーブル接続する
 
 次の手順では、1台または2台のDS460Cシェルフにコントローラをケーブル接続する方法を示します。
@@ -175,6 +179,7 @@ image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini-SAS HDケーブル
 
 
 
+[[one-ds460c-shelf]]
 === DS460Cシェルフ1台
 
 各コントローラをDS460Cシェルフの各IOM12モジュールにケーブル接続します。
@@ -194,6 +199,7 @@ image:../media/drw_isi_fas50_1_ds460c_controller_b_cabling_ieops-2169.svg["コ�
 
 
 
+[[two-ds460c-shelves]]
 === DS460Cシェルフ2台
 
 各コントローラを両方のDS460CシェルフのIOM12モジュールに接続します。

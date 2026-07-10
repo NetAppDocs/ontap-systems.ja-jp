@@ -15,6 +15,7 @@ AFX 1K ストレージ システムでコントローラの HA 構成がアク�
 
 
 
+[[step-1-verify-ha-config-settings]]
 == 手順1：HA構成を確認する
 
 コントローラモジュールの「 HA 」状態を確認し、必要に応じてシステム構成に合わせて状態を更新する必要があります。
@@ -37,6 +38,7 @@ NOTE: personality mismatch_customer supportと表示された場合
 
 
 
+[[step-2-verify-disk-list]]
 == 手順2：ディスクリストを確認する
 
 . アダプタにすべてのディスクへのパスがリストされていることを確認します。

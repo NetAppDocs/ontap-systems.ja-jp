@@ -15,6 +15,7 @@ FAS500fシステムのコントローラ交換を完了して完全に動作さ�
 
 
 
+[[step-1-install-licenses-for-the-replacement-controller-in-ontap]]
 == 手順 1 ：交換用コントローラのライセンスを ONTAP にインストールする
 
 障害ノードが標準（ノードロック）ライセンスを必要とする ONTAP 機能を使用していた場合は、 _replacement node に新しいライセンスをインストールする必要があります。標準ライセンスを使用する機能では、クラスタ内の各ノードにその機能用のキーが必要です。
@@ -49,6 +50,7 @@ NOTE: 必要な新しいライセンスキーが自動的に生成され、 E �
 
 
 
+[[step-2-verify-lifs-and-registering-the-serial-number]]
 == 手順2：LIFを確認してシリアル番号を登録する
 
 _replacement_ ノードをサービスに戻す前に、LIF がホームポートに接続されていることを確認し、AutoSupport が有効になっている場合は _replacement_ ノードのシリアル番号を登録し、クラスタの健全性を確認し、メンテナンスウィンドウをすべて閉じ、自動ギブバックをリセットする必要があります。
@@ -71,6 +73,7 @@ _replacement_ ノードをサービスに戻す前に、LIF がホームポー�
 
 
 
+[[step-3-return-the-failed-part-to-netapp]]
 == 手順 3 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

@@ -3,10 +3,11 @@
 
 
 .このタスクについて
-この手順は、AFX 2Kコントローラーのスロット4および5にあるNVRAMモジュールの故障したNVバッテリーの交換に適用されます。AFX 2Kコントローラーのスロット6および7にあるNVRAM12-EXモジュールのNVバッテリーの交換方法については、link:../install-setup/nv12l-replace.html#step-2-replace-the-nvram12-ex-module-nvram-dimm-or-nvram-battery["NVRAM12-EXのNVバッテリーを交換する"]を参照してください。
+この手順は、AFX 2Kコントローラーのスロット4および5にあるNVRAMモジュールの故障したNVバッテリーの交換に適用されます。AFX 2Kコントローラーのスロット6および7にあるNVRAM12-EXモジュールのNVバッテリーの交換方法については、link:nv12l-replace.html#step-2-replace-the-nvram12-ex-module-nvram-dimm-or-nvram-battery["NVRAM12-EXのNVバッテリーを交換する"]を参照してください。
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 障害のあるコントローラをシャットダウンするかテイクオーバーします。
@@ -64,6 +65,7 @@ _-halt true_ パラメータは、障害のあるノードを LOADER プロン�
 
 
 
+[[step-2-remove-the-controller-module]]
 == 手順 2 ：コントローラモジュールを取り外す
 
 コントローラモジュールを交換する場合、またはコントローラモジュール内部のコンポーネントを交換する場合は、コントローラモジュールをエンクロージャから取り外す必要があります。
@@ -148,6 +150,7 @@ image:../media/icon_round_1.png["番号1"]
 
 
 
+[[step-3-replace-the-nv-battery]]
 == 手順3：NVバッテリを交換します
 
 障害が発生したNVバッテリをコントローラモジュールから取り外し、交換用NVバッテリを取り付けます。
@@ -190,6 +193,7 @@ NVバッテリプラグ
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 手順 4 ：コントローラモジュールを再度取り付けます
 
 コントローラモジュールを再度取り付けてブートします。
@@ -249,6 +253,7 @@ NOTE: 次のコマンドは、診断モードの特権レベルでのみ使用�
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 手順 5 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

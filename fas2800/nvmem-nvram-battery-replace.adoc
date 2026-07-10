@@ -17,6 +17,7 @@ summary: システムの NVMEM バッテリを交換するには、コントロ�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 障害のあるコントローラーを引き継いで停止し、正常なコントローラーが障害のあるコントローラーのストレージからデータを引き続き提供できるようにします。これを行うには、AutoSupportで自動ケース作成を抑制し、自動ギブバックを無効にして、障害のあるコントローラをLOADERプロンプトに切り替えます。LOADERプロンプトは、FRUを交換できる安全な停止状態です。
@@ -71,6 +72,7 @@ Ctrl キーを押しながら C キーを押し、「 y 」と入力します。
 
 
 
+[[step-2-remove-and-open-the-controller-module]]
 == 手順2：コントローラモジュールを取り外して開きます
 
 コントローラモジュールを取り外して開きます。
@@ -107,6 +109,7 @@ NOTE: システムが「waiting for giveback」状態だった場合、または
 
 
 
+[[step-3-replace-the-nvmem-battery]]
 == 手順 3 ： NVMEM バッテリを交換します
 
 障害が発生したNVMEMバッテリをシステムから取り外し、新しいNVMEMバッテリと交換します。
@@ -167,6 +170,7 @@ image::../media/icon_round_2.png[番号2]
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 手順 4 ：コントローラモジュールを再度取り付けます
 
 コントローラモジュールのコンポーネントを交換したら、モジュールをシャーシに再度取り付けます。
@@ -212,6 +216,7 @@ NOTE: ブートプロセス中に、次のプロンプトが表示される場�
 
 
 
+[[step-5-restore-automatic-giveback-and-autsupport]]
 == 手順5：自動ギブバックとAutSupportをリストアします
 
 自動ギブバックとAutoSupportが無効になっている場合はリストアします。
@@ -222,6 +227,7 @@ NOTE: ブートプロセス中に、次のプロンプトが表示される場�
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 手順 6 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

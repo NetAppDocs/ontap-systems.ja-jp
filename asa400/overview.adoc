@@ -15,6 +15,7 @@ summary: ASA A400ストレージシステムの主な仕様
 
 
 
+[[key-specifications-for-asa-a400]]
 === ASA A400の主な仕様
 
 プラットフォーム構成: ASA A400シングルシャーシ HA ペア、イーサネット バンドル
@@ -33,6 +34,7 @@ PCIe拡張スロット: 10
 
 
 
+[[scaleout-maximums]]
 === スケールアウトの最大値
 
 |===
@@ -51,6 +53,7 @@ PCIe拡張スロット: 10
 |===
 
 
+[[io]]
 === IO
 
 
@@ -121,12 +124,14 @@ PCIe拡張スロット: 10
 |===
 
 
+[[storage-networking-supported]]
 === ストレージネットワークのサポート
 
 FC; iSCSI; NVMe/FC ; NVMe/TCP;
 
 
 
+[[system-environment-specifications]]
 === システム環境仕様
 
 * 標準電力: 4209 BTU/時
@@ -142,6 +147,7 @@ FC; iSCSI; NVMe/FC ; NVMe/TCP;
 
 
 
+[[compliance]]
 === コンプライアンス
 
 * 認証 EMC/EMI: AMCA、FCC、ICES、KC、モロッコ、VCCI
@@ -154,6 +160,7 @@ FC; iSCSI; NVMe/FC ; NVMe/TCP;
 
 
 
+[[high-availability]]
 === 高可用性
 
 イーサネット ベースのベースボード管理コントローラ (BMC) およびONTAP管理インターフェイス、冗長ホットスワップ対応コントローラ、冗長ホットスワップ対応電源、SAS 接続経由の SAS インバンド管理。

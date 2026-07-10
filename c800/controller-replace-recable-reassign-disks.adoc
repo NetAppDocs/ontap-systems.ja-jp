@@ -15,6 +15,7 @@ AFF C800システムが通常の動作を再開できるように、ストレー
 
 
 
+[[step-1-recable-the-system]]
 == 手順 1 ：システムにケーブルを再接続します
 
 コントローラモジュールのストレージとネットワーク接続を確認するには、 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"] 。
@@ -28,6 +29,7 @@ AFF C800システムが通常の動作を再開できるように、ストレー
 
 
 
+[[step-2-reassign-disks]]
 == 手順 2 ：ディスクを再割り当てする
 
 HA ペアのストレージシステムの場合、手順の最後でギブバックが実行されると、新しいコントローラモジュールのシステム ID がディスクに自動的に割り当てられます。_replacement _controller をブートしたときにシステム ID の変更を確認し、その変更が実装されたことを確認する必要があります。

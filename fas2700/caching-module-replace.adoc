@@ -18,6 +18,7 @@ summary: システムがモジュールのオフラインを示す単一のAutoS
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。
@@ -80,6 +81,7 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 
 
 
+[[step-2-remove-controller-module]]
 == 手順 2 ：コントローラモジュールを取り外す
 
 コントローラ内部のコンポーネントにアクセスするには、まずコントローラモジュールをシステムから取り外し、続いてコントローラモジュールのカバーを外す必要があります。
@@ -107,6 +109,7 @@ image::../media/drw_2600_opening_pcm_cover.png[コントローラモジュール
 
 
 
+[[step-3-replace-a-caching-module]]
 == 手順 3 ：キャッシングモジュールを交換する
 
 コントローラでラベルが M.2 PCIe カードとなっているキャッシングモジュールを交換するには、コントローラ内のスロットの場所を確認して、特定の手順を実行します。
@@ -141,6 +144,7 @@ image::../media/drw_2600_fcache_repl_animated_gif.png[キャッシングモジ�
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 手順 4 ：コントローラモジュールを再度取り付けます
 
 コントローラモジュールのコンポーネントを交換したら、モジュールをシャーシに再度取り付けます。
@@ -201,6 +205,7 @@ NOTE: コネクタの破損を防ぐため、コントローラモジュール�
 
 
 
+[[step-5-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 手順 5 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする
 
 このタスクでは、環境の 2 ノード MetroCluster 構成のみを実行します。
@@ -257,6 +262,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 手順 6 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

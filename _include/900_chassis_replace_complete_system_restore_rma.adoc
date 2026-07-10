@@ -6,6 +6,7 @@
 
 
 
+[[step-1-verify-and-set-the-ha-state-of-the-chassis]]
 == 手順 1 ：シャーシの HA 状態を確認して設定します
 
 シャーシの HA 状態を確認し、必要に応じてシステム構成に合わせて更新する必要があります。
@@ -33,6 +34,7 @@ hA-state には、次のいずれかの値を指定できます。
 
 
 
+[[step-2-bring-up-the-system]]
 == 手順2：システムを起動します
 
 . 電源ケーブルをPSUに接続し直します（まだ接続していない場合）。
@@ -57,6 +59,7 @@ NOTE: ベストプラクティスとして、次のことを実行すること�
 ====
 
 
+[[step-3-return-the-failed-part-to-netapp]]
 == 手順 3 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

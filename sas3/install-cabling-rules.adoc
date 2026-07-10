@@ -30,6 +30,7 @@ NOTE: このガイドで説明されている、コントローラのスロッ�
 
 
 
+[[configuration-rules]]
 == 設定ルール
 
 IOM12、IOM12B、またはIOM12Cモジュールを搭載したディスク シェルフは、特定のタイプのHAペア構成およびシングルコントローラ構成でサポートされます。
@@ -71,6 +72,7 @@ FAS2820 HAペアの場合、外付けシェルフへのケーブル接続はシ�
 
 
 
+[[controller-slot-numbering-rules]]
 == コントローラのスロット番号のルール
 
 サポートされているすべての HA ペアおよびシングルコントローラ構成にケーブル接続ルールを適用するために、コントローラのスロット番号規則を使用します。
@@ -95,12 +97,14 @@ image::../media/slot0_rules.png[slot and slot [ポートの表記法]]
 
 
 
+[[shelf-to-shelf-connection-rules]]
 == シェルフ / シェルフ間の接続ルール
 
 ディスクシェルフスタックに複数のディスクシェルフがある場合は、該当する「標準」または「幅」のシェルフ / シェルフ間ケーブルを使用して、各 SAS ドメイン（ IOM A と IOM B ）を介してシェルフどうしを接続します。「標準」または「幅の広い」シェルフ間ケーブルの使用方法は、使用している構成によって異なります。
 
 
 
+[[standard-shelf-to-shelf-connectivity]]
 === 標準のシェルフ / シェルフ間接続
 
 * 標準シェルフ/シェルフ間接続は、ディスクシェルフが複数あるディスクシェルフのスタックで使用されます。
@@ -117,6 +121,7 @@ image::../media/drw_shelf_to_shelf_standard.gif[標準シェルフからシェ�
 
 
 
+[[double-wide-shelf-to-shelf-connectivity]]
 === 2 倍幅シェルフ / シェルフ間接続
 
 * 2 倍幅シェルフ / シェルフ間接続は、クアッドパス（クアッドパス HA およびクアッドパス）構成で使用します。
@@ -133,12 +138,14 @@ image::../media/drw_shelf_to_shelf_double_wide.gif[ダブルワイドシェル�
 
 
 
+[[controller-to-stack-connection-rules]]
 == コントローラ / スタック間の接続ルール
 
 SASディスクシェルフがソフトウェアベースのディスク所有権を使用していること、コントローラポートA / CおよびB / Dがスタックに接続されている方法を理解することで、HAペアまたはシングルコントローラ構成の各コントローラから各スタックへのSAS接続を正しくケーブル接続できます。 コントローラポートA / CおよびB / Dがポートペアに編成され、内蔵ストレージを搭載したプラットフォームのコントローラポートがスタックにどのように接続されるか。
 
 
 
+[[sas-disk-shelf-software-based-disk-ownership-rule]]
 === SAS ディスクシェルフのソフトウェアベースのディスク所有権ルール
 
 SAS ディスクシェルフは、（ハードウェアベースではなく）ソフトウェアベースのディスク所有権を使用します。つまり、ディスクドライブの所有権は、（ハードウェアベースのディスク所有権の場合のように）ストレージシステムの物理接続のトポロジによって決まるのではなく、ディスクドライブに保存されます。具体的には、ディスクドライブの所有権は、コントローラ / スタック間の接続方法ではなく、 ONTAP によって（自動または CLI コマンドで）割り当てられます。
@@ -147,6 +154,7 @@ SAS ディスクシェルフは、ハードウェアベースのディスク所�
 
 
 
+[[controller-a-and-c-port-connection-rules-for-platforms-without-internal-storage]]
 === コントローラAとCポートの接続ルール（内蔵ストレージを使用しないプラットフォームの場合）
 
 * A ポートと C ポートは常にスタックへのプライマリパスです。
@@ -165,6 +173,7 @@ image::../media/drw_controller_to_stack_rules_ports_a_and_c_example.gif[内蔵�
 
 
 
+[[controller-b-and-d-port-connection-rules-for-platforms-without-internal-storage]]
 === コントローラBおよびDポートの接続ルール（内蔵ストレージを使用しないプラットフォームの場合）
 
 * B ポートと D ポートは常にスタックへのセカンダリパスです。
@@ -184,6 +193,7 @@ image::../media/drw_controller_to_stack_rules_ports_b_and_d_example.gif[内蔵�
 
 
 
+[[port-pair-connection-rules-for-platforms-without-internal-storage]]
 === ポートペアの接続ルール（内蔵ストレージを使用しないプラットフォームの場合）
 
 HA ペアおよびシングルコントローラ構成でコントローラ / スタック間の接続をケーブル接続する場合、システムの耐障害性と整合性を確保するために、すべての SAS ポートを活用する方法でコントローラ SAS の A 、 B 、 C 、 D の各ポートがポートペアに編成されます。
@@ -255,6 +265,7 @@ link:install-cabling-worksheet-template-quadpath.html["クアッドパス接続�
 
 
 
+[[controller-0b0b1-and-0a-port-connection-rules-for-platforms-with-internal-storage]]
 === 内蔵ストレージを搭載したプラットフォームでのコントローラ0b / 0b1と0aのポート接続ルール
 
 内蔵ストレージを搭載したプラットフォームには、それぞれのコントローラが内蔵ストレージ（ポート0b/0b1）とスタックの間で同じドメイン接続を維持する必要があるため、固有の接続ルールがあります。つまり、コントローラがシャーシ（コントローラ1）のスロットAにある場合、そのコントローラはドメインA（IOM A）にあるため、ポート0b/0b1はスタック内のIOM Aに接続する必要があります。コントローラがシャーシ（コントローラ2）のスロットBにある場合、そのコントローラはドメインB（IOM B）にあるため、ポート0b/0b1はスタック内のIOM Bに接続する必要があります。
@@ -291,6 +302,7 @@ image::../media/drw_fas2600_mpha_domain_example_IEOPS-1172.svg[内蔵ストレ�
 
 
 
+[[tri-path-ha-connectivity]]
 === トライパスHA接続
 
 FAS2820 HAペアでは、トライパスHA接続を使用できます。トライパスHA接続には、各コントローラから内蔵（IOM12G）シェルフおよび外付けシェルフへのパスが3つあります。
@@ -319,6 +331,7 @@ FAS2820 HAペアのケーブル接続例については、のセクションを�
 
 
 
+[[mini-sas-hd-sas-optical-cable-rules]]
 == Mini-SAS HD SAS 光ケーブルのルール
 
 Mini-SAS HD SAS 光ケーブル - マルチモードアクティブ光ケーブル（ AOC ）と Mini-SAS HD / Mini-SAS HD 間コネクタ、および Mini-SAS HD / LC 間コネクタを備えたマルチモード（ OM4 ）ブレークアウトケーブル - を使用すると、 IOM12 モジュールを搭載したディスクシェルフを使用する特定の構成で、長距離 SAS 接続を実現できます。

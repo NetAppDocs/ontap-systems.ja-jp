@@ -17,6 +17,7 @@ summary: システムの NVMEM バッテリを交換するには、コントロ�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 [role="lead"]
@@ -89,6 +90,7 @@ _-halt true _パラメータを指定すると、Loaderプロンプトが表示�
 
 
 
+[[step-2-remove-controller-module]]
 == 手順 2 ：コントローラモジュールを取り外す
 
 [role="lead"]
@@ -114,6 +116,7 @@ image::../media/drw_2240_x_opening_cam_latch.png[カムハンドルラッチを�
 
 
 
+[[step-3-replace-the-nvmem-battery]]
 == 手順 3 ： NVMEM バッテリを交換します
 
 [role="lead"]
@@ -157,6 +160,7 @@ image::../media/drw_2600_nvmem_batt_repl_animated_gif.png[NVMEM バッテリの�
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 手順 4 ：コントローラモジュールを再度取り付けます
 
 [role="lead"]
@@ -218,6 +222,7 @@ NOTE: コネクタの破損を防ぐため、コントローラモジュール�
 
 
 
+[[step-5-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 手順 5 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする
 
 [role="lead"]
@@ -275,6 +280,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 手順 6 ：障害が発生したパーツをネットアップに返却する
 
 [role="lead"]

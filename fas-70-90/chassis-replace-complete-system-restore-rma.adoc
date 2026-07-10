@@ -15,6 +15,7 @@ summary: コントローラを再起動し、システムの健全性を確認�
 
 
 
+[[step-1-boot-the-controllers-and-verify-system-health]]
 == ステップ1: コントローラを起動し、システムの健全性を確認する
 
 コントローラが再起動したら、 ONTAPを起動し、コントローラを戻して、ストレージ システムの健全性を確認します。
@@ -39,6 +40,7 @@ summary: コントローラを再起動し、システムの健全性を確認�
 
 
 
+[[step-2-return-the-failed-part-to-netapp]]
 == 手順2：故障した部品をNetAppに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

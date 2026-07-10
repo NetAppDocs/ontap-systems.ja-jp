@@ -15,6 +15,7 @@ summary: このガイドでは、一般的なネットアップシステムの�
 
 
 
+[[step-1-prepare-for-installation]]
 == 手順 1 ：設置の準備
 
 システムを設置するには、ネットアップサポートサイトでアカウントを作成し、システムを登録し、ライセンスキーを取得する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。
@@ -178,6 +179,7 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成�
 
 
 
+[[step-2-install-the-hardware]]
 == 手順 2 ：ハードウェアを設置する
 
 システムは、 4 ポストラックまたはネットアップシステムキャビネットのいずれかに設置する必要があります。
@@ -205,12 +207,14 @@ image::../media/drw_9000_cable_management_arms.png[ケーブルマネジメン�
 
 
 
+[[step-3-cable-controllers-to-your-network]]
 == 手順 3 ：コントローラをネットワークに接続する
 
 2 ノードスイッチレスクラスタメソッドまたはクラスタインターコネクトネットワークを使用して、コントローラをネットワークにケーブル接続できます。
 
 
 
+[[option-1-two-node-switchless-cluster]]
 === オプション 1 ： 2 ノードスイッチレスクラスタ
 
 コントローラの管理ネットワークポート、データネットワークポート、および管理ポートは、スイッチに接続されます。クラスタインターコネクトポートは、両方のコントローラでケーブル接続されます。
@@ -237,6 +241,7 @@ image::../media/drw_9000_TNSC_composite_cabling.png[2ノードスイッチレス
 
 
 
+[[option-2-switched-cluster]]
 === オプション 2 ：スイッチクラスタ
 
 コントローラの管理ネットワークポート、データネットワークポート、および管理ポートは、スイッチに接続されます。クラスタインターコネクト / HA ポートは、クラスタ / HA スイッチにケーブル接続されます。
@@ -263,12 +268,14 @@ image:../media/drw_9000_switched_cluster_cabling.png["スイッチクラスタ�
 
 
 
+[[step-4-cable-controllers-to-drive-shelves]]
 == 手順 4 ：コントローラをドライブシェルフにケーブル接続する
 
 新しいシステムが DS212C 、 DS224C 、または NS224 のシェルフにケーブル接続できるかどうかは、 AFF システムまたは FAS システムのどちらであるかによって異なります。
 
 
 
+[[option-1-cable-the-controllers-to-ds212c-or-ds224c-drive-shelves]]
 === オプション 1 ：コントローラを DS212C ドライブシェルフまたは DS224C ドライブシェルフにケーブル接続します
 
 シェルフ / シェルフ間をケーブル接続してから、両方のコントローラを DS212C または DS224C ドライブシェルフにケーブル接続する必要があります。
@@ -320,6 +327,7 @@ image:../media/Cable_shelves_new_system_IOM12_shelves.png["SASシェルフとの
 
 
 
+[[option-2-cable-the-controllers-to-a-single-ns224-drive-shelf-in-aff-a700-and-asa-aff-a700-systems-running-ontap-9-8-and-later-only]]
 === オプション 2 ： AFF A700 システムと ONTAP 9.8 以降を実行する ASA AFF A700 システムにある 1 台の NS224 ドライブシェルフにコントローラをケーブル接続します
 
 各コントローラを、 ONTAP 9.8 以降を実行している AFF A700 または ASA AFF A700 の NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。
@@ -355,6 +363,7 @@ image::../media/single_NS224_shelf.png[1台のシェルフのケーブル接続]
 
 
 
+[[option-3-cable-the-controllers-to-two-ns224-drive-shelves-in-aff-a700-and-asa-aff-a700-systems-running-ontap-9-8-and-later-only]]
 === オプション 3 ： AFF A700 システムと ONTAP 9.8 以降を実行している ASA AFF A700 システムの 2 台の NS224 ドライブシェルフにコントローラをケーブル接続します
 
 各コントローラを、 ONTAP 9.8 以降を実行している AFF A700 または ASA AFF A700 上の NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。
@@ -390,12 +399,14 @@ image::../media/two_NS224_shelves.png[デュアルシェルフのケーブル接
 
 
 
+[[step-5-complete-system-setup-and-configuration]]
 == 手順 5 ：システムのセットアップと設定を完了する
 
 システムのセットアップと設定を実行するには、スイッチとラップトップのみを接続してクラスタ検出を使用するか、システムのコントローラに直接接続してから管理スイッチに接続します。
 
 
 
+[[option-1-completing-system-setup-and-configuration-if-network-discovery-is-enabled]]
 === オプション 1 ：ネットワーク検出が有効になっている場合は、システムのセットアップと設定を実行する
 
 ラップトップでネットワーク検出が有効になっている場合は、クラスタの自動検出を使用してシステムのセットアップと設定を実行できます。
@@ -468,6 +479,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["ネッ
 
 
 
+[[option-2-completing-system-setup-and-configuration-if-network-discovery-is-not-enabled]]
 === オプション 2 ：ネットワーク検出が有効になっていない場合のシステムのセットアップと設定の実行
 
 ラップトップでネットワーク検出が有効になっていない場合は、このタスクを使用して設定とセットアップを実行する必要があります。

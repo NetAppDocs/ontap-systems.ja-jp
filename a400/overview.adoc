@@ -15,6 +15,7 @@ summary: AFF A400ストレージシステムの主な仕様
 
 
 
+[[key-specifications-for-aff-a400]]
 === AFF A400の主な仕様
 
 プラットフォーム構成: AFF A400シングルシャーシ HA ペア、イーサネットバンドル
@@ -33,6 +34,7 @@ PCIe拡張スロット: 10
 
 
 
+[[scaleout-maximums]]
 === スケールアウトの最大値
 
 |===
@@ -51,6 +53,7 @@ PCIe拡張スロット: 10
 |===
 
 
+[[io]]
 === IO
 
 
@@ -121,12 +124,14 @@ PCIe拡張スロット: 10
 |===
 
 
+[[storage-networking-supported]]
 === ストレージネットワークのサポート
 
 CIFS、FC、iSCSI、NFS v3、NFS v4.0、NFS v4.1、NFS v4.2、NFSv3/RDMA、NFSv4/RDMA、NVMe/FC、NVMe/TCP、S3、NAS 付き S3、SMB 2.0、SMB 2.1、SMB 2.x、SMB 3.0、SMB 3.1、SMB 3.1.1、
 
 
 
+[[system-environment-specifications]]
 === システム環境仕様
 
 * 標準電力: 4209 BTU/時
@@ -142,6 +147,7 @@ CIFS、FC、iSCSI、NFS v3、NFS v4.0、NFS v4.1、NFS v4.2、NFSv3/RDMA、NFSv4
 
 
 
+[[compliance]]
 === コンプライアンス
 
 * 認証 EMC/EMI: AMCA、FCC、ICES、KC、モロッコ、VCCI
@@ -154,6 +160,7 @@ CIFS、FC、iSCSI、NFS v3、NFS v4.0、NFS v4.1、NFS v4.2、NFSv3/RDMA、NFSv4
 
 
 
+[[high-availability]]
 === 高可用性
 
 イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース、冗長ホットスワップ対応コントローラ、冗長ホットスワップ対応電源、SAS接続によるSASインバンド管理

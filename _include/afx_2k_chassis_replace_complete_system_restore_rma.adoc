@@ -4,6 +4,7 @@
 
 
 
+[[step-1-boot-the-controllers-and-give-back-the-controllers]]
 == 手順1：コントローラをブートしてコントローラをギブバックする
 
 コントローラがリブートしたら、ONTAPをブートしてコントローラをギブバックします。
@@ -55,6 +56,7 @@ NOTE: 次のコマンドは、診断モードの特権レベルでのみ使用�
 
 
 
+[[step-2-verify-storage-system-health]]
 == 手順2：ストレージシステムの健全性を確認する
 
 コントローラがストレージを返却したら、 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"] 。
@@ -66,6 +68,7 @@ NOTE: 次のコマンドは、診断モードの特権レベルでのみ使用�
 
 
 
+[[step-3-return-the-failed-part-to-netapp]]
 == 手順 3 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

@@ -19,6 +19,7 @@ https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster のド
 
 
 
+[[step-1-prepare-for-installation]]
 == 手順 1 ：設置の準備
 
 システムを設置するには、アカウントを作成し、システムを登録し、ライセンスキーを取得する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。
@@ -157,6 +158,7 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["『 ONTAP 構成�
 
 
 
+[[step-2-install-the-hardware]]
 == 手順 2 ：ハードウェアを設置する
 
 システムは、 4 ポストラックまたはネットアップシステムキャビネットのいずれかに設置する必要があります。
@@ -179,6 +181,7 @@ image::../media/drw_a320_cable_management_arms.png[ケーブルマネジメン�
 
 
 
+[[step-3-cable-controllers-to-your-network]]
 == 手順 3 ：コントローラをネットワークに接続する
 
 2ノードスイッチレスクラスタメソッドまたはスイッチクラスタメソッドを使用して、コントローラをネットワークにケーブル接続できます。
@@ -245,12 +248,14 @@ image::../media/drw_c400_switched_network_cabling_IEOPS-1096.svg[DRW C400スイ�
 ====
 
 
+[[step-4-cable-controllers-to-drive-shelves]]
 == 手順 4 ：コントローラをドライブシェルフにケーブル接続する
 
 以下のオプションでは、1台または2台のNS224ドライブシェルフをシステムにケーブル接続する方法を説明します。
 
 
 
+[[option-1-cable-the-controllers-to-a-single-drive-shelf]]
 === オプション 1 ：コントローラを 1 台のドライブシェルフにケーブル接続する
 
 各コントローラを、 NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。
@@ -273,6 +278,7 @@ image::../media/drw_c400_one_ns224_shelf_IEOPS-1097.svg[DRW C400 ns224シェル�
 
 
 
+[[option-2-cable-the-controllers-to-two-drive-shelves]]
 === オプション 2 ：コントローラを 2 台のドライブシェルフにケーブル接続する
 
 各コントローラを両方の NS224 ドライブシェルフの NSM モジュールにケーブル接続する必要があります。
@@ -295,12 +301,14 @@ image::../media/drw_c400_two_ns224_shelves_IEOPS-1098.svg[DRW C400 2台のns224�
 
 
 
+[[step-5-complete-system-setup-and-configuration]]
 == 手順 5 ：システムのセットアップと設定を完了する
 
 システムのセットアップと設定を実行するには、スイッチとラップトップのみを接続してクラスタ検出を使用するか、システムのコントローラに直接接続してから管理スイッチに接続します。
 
 
 
+[[option-1-completing-system-setup-and-configuration-if-network-discovery-is-enabled]]
 === オプション 1 ：ネットワーク検出が有効になっている場合は、システムのセットアップと設定を実行する
 
 ラップトップでネットワーク検出が有効になっている場合は、クラスタの自動検出を使用してシステムのセットアップと設定を実行できます。
@@ -364,6 +372,7 @@ https://mysupport.netapp.com/site/tools["ネットアップのダウンロード
 
 
 
+[[option-2-completing-system-setup-and-configuration-if-network-discovery-is-not-enabled]]
 === オプション 2 ：ネットワーク検出が有効になっていない場合のシステムのセットアップと設定の実行
 
 ラップトップでネットワーク検出が有効になっていない場合は、このタスクを使用して設定とセットアップを実行する必要があります。

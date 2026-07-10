@@ -6,6 +6,7 @@ LED USB モジュールは、コンソールポートおよびシステムステ
 
 
 
+[[step-1-replace-the-led-usb-module]]
 == 手順 1 ： LED USB モジュールを交換します
 
 .手順
@@ -53,6 +54,7 @@ USB LED モジュール
 
 
 
+[[step-2-return-the-failed-component]]
 == 手順 2 ：障害が発生したコンポーネントを返却する
 
 . 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"^]詳細については、ページを参照してください。

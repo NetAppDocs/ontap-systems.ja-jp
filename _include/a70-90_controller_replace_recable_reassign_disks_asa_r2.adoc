@@ -6,6 +6,7 @@
 
 
 
+[[step-1-recable-the-controller]]
 == 手順1：コントローラをケーブル接続し直す
 
 コントローラモジュールのストレージとネットワーク接続を確認するには、 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"] 。
@@ -19,6 +20,7 @@
 
 
 
+[[step-2-give-back-the-controller]]
 == 手順2：コントローラをギブバックする
 
 ストレージリソースの所有権を交換用コントローラに戻します。

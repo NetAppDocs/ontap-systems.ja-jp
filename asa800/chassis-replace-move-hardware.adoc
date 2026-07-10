@@ -15,6 +15,7 @@ summary: 電源装置、ハードドライブ、およびコントローラモ�
 
 
 
+[[step-1-remove-the-controller-modules-from-the-old-chassis]]
 == ステップ1: 古いシャーシからコントローラモジュールを取り外す
 
 古いシャーシからコントローラー モジュールを取り外します。
@@ -63,6 +64,7 @@ image:../media/icon_round_2.png["番号2"]
 
 
 
+[[step-2-move-drives-to-the-new-chassis]]
 == 手順 2 ：ドライブを新しいシャーシに移動します
 
 ドライブを古いシャーシから新しいシャーシに移動します。
@@ -100,6 +102,7 @@ NOTE: ドライブは壊れやすいので、損傷を防ぐために、でき�
 
 
 
+[[step-3-replace-a-chassis-from-within-the-equipment-rack-or-system-cabinet]]
 == 手順 3 ：装置ラックまたはシステムキャビネット内のシャーシを交換する
 
 機器ラックまたはシステム キャビネット内の障害のあるシャーシを新しいシャーシに交換します。
@@ -116,6 +119,7 @@ NOTE: ドライブは壊れやすいので、損傷を防ぐために、でき�
 
 
 
+[[step-4-install-the-controller-modules-into-the-new-chassis]]
 == ステップ4: コントローラモジュールを新しいシャーシに取り付ける
 
 新しいシャーシにコントローラモジュールを取り付けたら、ブートする必要があります。

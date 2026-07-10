@@ -19,6 +19,7 @@ MetroCluster 構成の場合は、を使用します https://docs.netapp.com/us-
 
 
 
+[[step-1-prepare-for-installation]]
 == 手順 1 ：設置の準備
 
 システムをインストールするには、NetApp Support Siteでアカウントを作成し、システムを登録して、ライセンスキーを取得します。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。
@@ -159,6 +160,7 @@ image:../media/oie_cable_power.png["電源ケーブル"]
 
 
 
+[[step-2-install-the-hardware]]
 == 手順 2 ：ハードウェアを設置する
 
 システムを4ポストラックまたはネットアップシステムキャビネットに設置します。
@@ -182,6 +184,7 @@ image::../media/drw_cable_management_arm_install.png[ケーブルマネジメン
 
 
 
+[[step-3-cable-controllers-to-network]]
 == 手順3：コントローラをネットワークにケーブル接続する
 
 2ノードスイッチレスクラスタまたはクラスタインターコネクトネットワークのいずれかの方法を使用して、コントローラをネットワークにケーブル接続します。
@@ -332,6 +335,7 @@ IMPORTANT: この時点ではまだ電源コードをプラグに接続しない
 ====
 
 
+[[step-4-cable-controllers-to-drive-shelves]]
 == 手順 4 ：コントローラをドライブシェルフにケーブル接続する
 
 オンボードストレージポートを使用して、コントローラをシェルフにケーブル接続します。ネットアップでは、外付けストレージを使用するシステムに MP-HA ケーブル接続を推奨しています。
@@ -384,6 +388,7 @@ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS - Mini-SASコ�
 
 
 
+[[step-5-complete-system-setup]]
 == 手順5：システムのセットアップを完了します
 
 システムのセットアップと設定を実行するには、スイッチとラップトップのみを接続してクラスタ検出を使用するか、システムのコントローラに直接接続してから管理スイッチに接続します。

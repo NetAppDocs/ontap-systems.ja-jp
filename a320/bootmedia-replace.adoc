@@ -15,6 +15,7 @@ summary: ブート メディアには、システムの起動時に使用され�
 
 
 
+[[step-1-remove-the-controller-module]]
 == 手順 1 ：コントローラモジュールを取り外す
 
 コントローラモジュール内部のコンポーネントにアクセスするには、コントローラモジュールをシャーシから取り外す必要があります。
@@ -48,6 +49,7 @@ image::../media/drw_a320_controller_remove_animated_gif.png[コントローラ�
 
 
 
+[[step-2-replace-the-boot-media]]
 == 手順 2 ：ブートメディアを交換します
 
 コントローラモジュールのブートメディアの場所を確認し、手順に従って交換する必要があります。
@@ -82,6 +84,7 @@ image::../media/drw_a320_boot_media_replace_animated_gif.png[ブートメディ�
 
 
 
+[[step-3-transfer-the-boot-image-using-a-usb-flash-drive]]
 == ステップ3: USBフラッシュドライブを使用してブートイメージを転送する
 
 取り付けた交換用ブートメディアにはブートイメージが含まれていないため、 USB フラッシュドライブを使用してブートイメージを転送する必要があります。

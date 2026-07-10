@@ -10,6 +10,7 @@ I/O モジュールを交換するには、特定の順序でタスクを実行�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。
@@ -182,6 +183,7 @@ mcc1A::> metrocluster operation show
 ====
 
 
+[[step-2-replace-io-modules]]
 == 手順 2 ： I/O モジュールを交換します
 
 I/O モジュールを交換するには、シャーシ内で I/O モジュールの場所を確認し、特定の順序で手順を実行します。
@@ -236,6 +238,7 @@ image:../media/icon_round_2.png["番号2"]
 
 
 
+[[step-3-reboot-the-controller-after-io-module-replacement]]
 == 手順 3 ： I/O モジュールの交換後にコントローラをリブートします
 
 I/O モジュールを交換したら、コントローラモジュールをリブートする必要があります。
@@ -270,6 +273,7 @@ NOTE: システムが2ノードMetroCluster 構成の場合は、次の手順で
 
 
 
+[[step-4-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 手順 4 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする
 
 このタスクでは、環境の 2 ノード MetroCluster 構成のみを実行します。
@@ -326,6 +330,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 手順 5 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

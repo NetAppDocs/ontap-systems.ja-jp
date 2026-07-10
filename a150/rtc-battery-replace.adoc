@@ -21,6 +21,7 @@ summary: コントローラモジュール内のリアルタイムクロック�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 障害のあるコントローラーを引き継いで停止し、正常なコントローラーが障害のあるコントローラーのストレージからデータを引き続き提供できるようにします。これを行うには、AutoSupportで自動ケース作成を抑制し、自動ギブバックを無効にして、障害のあるコントローラをLOADERプロンプトに切り替えます。LOADERプロンプトは、FRUを交換できる安全な停止状態です。
@@ -91,6 +92,7 @@ _-halt true _パラメータを指定すると、Loaderプロンプトが表示�
 
 
 
+[[step-2-remove-controller-module]]
 == 手順 2 ：コントローラモジュールを取り外す
 
 コントローラ内部のコンポーネントにアクセスするには、まずコントローラモジュールをシステムから取り外し、続いてコントローラモジュールのカバーを外す必要があります。
@@ -117,6 +119,7 @@ image::../media/drw_2600_opening_pcm_cover.png[コントローラモジュール
 
 
 
+[[step-3-replace-the-rtc-battery]]
 == 手順 3 ： RTC バッテリを交換します
 
 RTC バッテリを交換するには、コントローラ内でバッテリの場所を確認し、特定の手順を実行します。
@@ -139,6 +142,7 @@ NOTE: ホルダーから取り外す際に、バッテリの極の向きを確�
 
 
 
+[[step-4-reinstall-the-controller-module-and-set-timedate-after-rtc-battery-replacement]]
 == 手順 4 ：コントローラモジュールを再度取り付け、 RTC バッテリ交換後に日時を設定します
 
 コントローラモジュール内のコンポーネントを交換したら、コントローラモジュールをシステムシャーシに再度取り付け、コントローラの日付と時刻をリセットしてブートする必要があります。
@@ -182,6 +186,7 @@ NOTE: コネクタの破損を防ぐため、コントローラモジュール�
 
 
 
+[[step-5-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 手順 5 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする
 
 このタスクでは、環境の 2 ノード MetroCluster 構成のみを実行します。
@@ -238,6 +243,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 手順 6 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

@@ -15,6 +15,7 @@ summary: FAS2800プラットフォームグループの主な仕様
 
 
 
+[[key-specifications-for-fas2820]]
 == FAS2820の主な仕様
 
 * プラットフォーム構成: FAS2820シングルシャーシ HA ペア
@@ -28,6 +29,7 @@ summary: FAS2800プラットフォームグループの主な仕様
 
 
 
+[[scaleout-maximums]]
 == スケールアウトの最大値
 
 * タイプ: NAS; HA ペア: 12; 物理容量: 38.0 PB / 33.8 PiB; 最大メモリ: 1536 GB
@@ -37,10 +39,12 @@ summary: FAS2800プラットフォームグループの主な仕様
 
 
 
+[[io]]
 == 入出力
 
 
 
+[[onboard-io]]
 === オンボードI/O
 
 * プロトコル: イーサネット 25 Gbps; ポート: 4
@@ -49,6 +53,7 @@ summary: FAS2800プラットフォームグループの主な仕様
 
 
 
+[[total-io]]
 === 合計I/O
 
 * プロトコル: イーサネット 25 Gbps; ポート: 12
@@ -61,6 +66,7 @@ summary: FAS2800プラットフォームグループの主な仕様
 
 
 
+[[management-ports]]
 === 管理ポート
 
 * プロトコル: イーサネット 1 Gbps; ポート: 2
@@ -70,6 +76,7 @@ summary: FAS2800プラットフォームグループの主な仕様
 
 
 
+[[storage-networking-supported]]
 == ストレージネットワークをサポート
 
 * CIFS
@@ -92,6 +99,7 @@ summary: FAS2800プラットフォームグループの主な仕様
 
 
 
+[[system-environment-specifications]]
 == システム環境仕様
 
 * 標準電力: 1815 BTU/時
@@ -107,6 +115,7 @@ summary: FAS2800プラットフォームグループの主な仕様
 
 
 
+[[compliance]]
 == コンプライアンス
 
 * 認証 EMC/EMI: AMCA、FCC、ICES、KC、モロッコ、VCCI
@@ -119,6 +128,7 @@ summary: FAS2800プラットフォームグループの主な仕様
 
 
 
+[[high-availability]]
 == 高可用性
 
 * イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース

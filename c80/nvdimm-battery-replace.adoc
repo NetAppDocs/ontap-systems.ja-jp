@@ -17,6 +17,7 @@ AFF C80システムのNVバッテリは、停電時に重要なシステムデ�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 次のいずれかのオプションを使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
@@ -163,6 +164,7 @@ _-halt true _パラメータを指定すると、Loaderプロンプトが表示�
 ====
 
 
+[[step-2-remove-the-controller-module]]
 == 手順 2 ：コントローラモジュールを取り外す
 
 
@@ -283,6 +285,7 @@ image:../media/icon_round_2.png["番号2"]
 
 
 
+[[step-3-replace-the-nv-battery]]
 == 手順3：NVバッテリを交換します
 
 障害が発生したNVバッテリをコントローラモジュールから取り外し、交換用NVバッテリを取り付けます。
@@ -326,6 +329,7 @@ NVバッテリプラグ
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 手順 4 ：コントローラモジュールを再度取り付けます
 
 コントローラモジュールを再度取り付けてリブートします。
@@ -379,6 +383,7 @@ DC電源装置がある場合は、コントローラモジュールをシャー
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 手順 5 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

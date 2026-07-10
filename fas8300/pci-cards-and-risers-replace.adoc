@@ -19,6 +19,7 @@ PCIe カードまたはメザニンカードを交換するには、ケーブル
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
 ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。
@@ -191,6 +192,7 @@ mcc1A::> metrocluster operation show
 ====
 
 
+[[step-2-remove-the-controller-module]]
 == 手順 2 ：コントローラモジュールを取り外す
 
 コントローラモジュール内部のコンポーネントにアクセスするには、コントローラモジュールをシャーシから取り外す必要があります。
@@ -222,6 +224,7 @@ image::../media/drw_A400_Remove_controller.png[コントロオラモシユウル
 
 
 
+[[step-3-replace-a-pcie-card]]
 == 手順 3 ： PCIe カードを交換します
 
 PCIe カードを交換するには、障害のある PCIe カードの場所を確認し、カードを含むライザーをコントローラモジュールから取り外し、カードを交換してから、 PCIe ライザーをコントローラモジュールに再度取り付ける必要があります。
@@ -271,6 +274,7 @@ NOTE: 下のスロットにカードを取り付けてもカードソケット�
 
 
 
+[[step-4-replace-the-mezzanine-card]]
 == 手順 4 ：メザニンカードを交換します
 
 メザニンカードは、 3 番のライザー（スロット 4 と 5 ）の下にあります。メザニンカードを交換するには、ライザーを取り外してメザニンカードを交換してから、 3 番のライザーを再度取り付ける必要があります。詳細については、コントローラモジュールの FRU マップを参照してください。
@@ -312,6 +316,7 @@ image::../media/drw_A400_Replace-mezz-card.png[メザニンカードの取り外
 
 
 
+[[step-5-install-the-controller-module]]
 == 手順 5 ：コントローラモジュールを取り付ける
 
 コントローラモジュールのコンポーネントを交換したら、コントローラモジュールをシャーシに再度取り付け、メンテナンスモードでブートする必要があります。
@@ -363,6 +368,7 @@ NOTE: システムがブートメニューで停止した場合は、 LOADER で
 
 
 
+[[step-6-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 手順 6 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする
 
 このタスクでは、環境の 2 ノード MetroCluster 構成のみを実行します。
@@ -419,6 +425,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-7-restore-the-controller-module-to-operation]]
 == 手順7：コントローラモジュールを動作状態に戻す
 
 システムにケーブルを再接続し、コントローラモジュールをギブバックして、自動ギブバックを再度有効にする必要があります。
@@ -434,6 +441,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-8-return-the-failed-part-to-netapp]]
 == 手順 8 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

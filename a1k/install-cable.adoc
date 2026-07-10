@@ -34,6 +34,7 @@ image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[ケーブルプル�
 
 
 
+[[step-1-cable-the-clusterha-connections]]
 == 手順1：クラスタ/ HAをケーブル接続する
 
 コントローラをONTAPクラスタにケーブル接続します。この手順は、ストレージシステムのモデルおよびI/Oモジュールの構成によって異なります。
@@ -84,6 +85,7 @@ image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[クラスタネ�
 ====
 
 
+[[step-2-cable-the-host-network-connections]]
 == 手順2：ホストネットワーク接続をケーブル接続する
 
 イーサネットモジュールポートをホストネットワークに接続します。
@@ -119,6 +121,7 @@ image::../media/drw_a1k_network_cabling2_ieops-1650.svg[10 / 25Gbイーサネッ
 
 
 
+[[step-3-cable-the-management-network-connections]]
 == 手順3：管理ネットワークをケーブル接続する
 
 1000BASE-T RJ-45ケーブルを使用して、各コントローラの管理（レンチ）ポートを管理ネットワークスイッチに接続します。
@@ -134,6 +137,7 @@ IMPORTANT: まだ電源コードを接続しないでください。
 
 
 
+[[step-4-cable-the-shelf-connections]]
 == 手順4：シェルフをケーブル接続する
 
 次のケーブル接続手順では、コントローラをストレージシェルフに接続する方法を示します。次のいずれかのケーブル接続オプションを、ご使用の環境に合わせて選択します。

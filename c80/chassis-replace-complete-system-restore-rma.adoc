@@ -15,6 +15,7 @@ summary: コントローラをリブートし、システムヘルスを確認�
 
 
 
+[[step-1-boot-the-controllers-and-perform-giveback]]
 == ステップ1: コントローラを起動し、ギブバックを実行する
 
 コントローラ上でONTAP を起動し、コントローラのギブバックを実行してストレージの所有権を戻します。
@@ -36,12 +37,14 @@ summary: コントローラをリブートし、システムヘルスを確認�
 
 
 
+[[step-2-verify-storage-system-health]]
 == 手順2：ストレージシステムの健全性を確認する
 
 コントローラのギブバックが完了したら、次の方法でシステムの健全性を確認します。 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"] 。見つかった問題に対処します。
 
 
 
+[[step-3-return-the-failed-part-to-netapp]]
 == 手順 3 ：障害が発生したパーツをネットアップに返却する
 
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

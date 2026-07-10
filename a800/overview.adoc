@@ -15,6 +15,7 @@ summary: A800プラットフォームグループの主な仕様
 
 
 
+[[key-specifications-for-aff-a800]]
 == AFF A800の主な仕様
 
 * プラットフォーム構成: AFF A800シングルシャーシ HA ペア
@@ -28,6 +29,7 @@ summary: A800プラットフォームグループの主な仕様
 
 
 
+[[scaleout-maximums]]
 == スケールアウトの最大値
 
 * タイプ: NAS; HA ペア: 12; 物理容量: 79.3 PB / 70.4 PiB; 最大メモリ: 15360 GB
@@ -37,10 +39,12 @@ summary: A800プラットフォームグループの主な仕様
 
 
 
+[[io]]
 == 入出力
 
 
 
+[[onboard-io]]
 === オンボードI/O
 
 * プロトコル: イーサネット 100 Gbps; ポート: 4
@@ -48,6 +52,7 @@ summary: A800プラットフォームグループの主な仕様
 
 
 
+[[total-io]]
 === 合計I/O
 
 * プロトコル: イーサネット 100 Gbps; ポート: 20
@@ -62,6 +67,7 @@ summary: A800プラットフォームグループの主な仕様
 
 
 
+[[management-ports]]
 === 管理ポート
 
 * プロトコル: イーサネット 1 Gbps; ポート: 4
@@ -71,6 +77,7 @@ summary: A800プラットフォームグループの主な仕様
 
 
 
+[[storage-networking-supported]]
 == ストレージネットワークをサポート
 
 * CIFS
@@ -96,6 +103,7 @@ summary: A800プラットフォームグループの主な仕様
 
 
 
+[[system-environment-specifications]]
 == システム環境仕様
 
 * 標準電力: 6626 BTU/時
@@ -111,6 +119,7 @@ summary: A800プラットフォームグループの主な仕様
 
 
 
+[[compliance]]
 == コンプライアンス
 
 * 認証 EMC/EMI: AMCA、FCC、ICES、KC、モロッコ、VCCI
@@ -123,6 +132,7 @@ summary: A800プラットフォームグループの主な仕様
 
 
 
+[[high-availability]]
 == 高可用性
 
 * イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース
