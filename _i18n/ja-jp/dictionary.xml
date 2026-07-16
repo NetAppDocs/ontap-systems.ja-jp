@@ -7307,11 +7307,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f133a8ed8a0b7a76b6c1b28bc00b0fb1" category="doc">NVRAMの交換- AFF A1K</block>
   <block id="5dae7574a50de0a82f041d98e2b363d4" category="doc">リアルタイムクロックバッテリを交換してください- AFF A1K</block>
   <block id="1fba4a247f94ae0adebcaa57fd54e768" category="image-alt">ケーブルプルタブの向きの例</block>
-  <block id="d4f534f2d370cb0f29178f31331b3536" category="image-alt">100Gbイーサネットネットワークへのケーブル接続</block>
   <block id="06d20f31fccdd7b31221a7b1e1ed37d1" category="image-alt">10/25Gbケーブル</block>
   <block id="95b007a39e5ec5c4d9b8e17f2ec0424d" category="image-alt">RJ45ケーブル</block>
   <block id="9dcc8dc3a558729dc61c31c84e00c3e4" category="list-text">コントローラAのポートe11aをNSM Aのポートe0aに接続します。</block>
-  <block id="918349807746744597338bfd03ce241f" category="list-text">コントローラAのポートe11bをポートNSM Bのポートe0bに接続します。</block>
   <block id="956aab6b8733f2140ed524c12e37f4bd" category="paragraph"><block ref="956aab6b8733f2140ed524c12e37f4bd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a8861b3a8d06aef3022e3d2cfa014512" category="list-text">コントローラBのポートe11aをNSM Bのポートe0aに接続します。</block>
   <block id="6a5052a8c54e3e46dc1452dcb9c98eaa" category="list-text">コントローラBのポートe11bをNSM Aのポートe0bに接続します。</block>
@@ -7323,7 +7321,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3d76afb25e68cbf6ec448ba97c8d77a4" category="list-text">ポートe8bをシェルフ1、NSM Bのポートe0bに接続します。</block>
   <block id="f574117739b3e8dc40831cbb75e78d7f" category="paragraph"><block ref="f574117739b3e8dc40831cbb75e78d7f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7c74d901dd29a71ee51992bf6462dd04" category="list-text">ポートe11aをシェルフ1、NSM Bのポートe0aに接続します。</block>
-  <block id="1e063e8299a01fcdf8268f46edf62dfe" category="list-text">ポートe11bをシェルフ2、NSM Aのポートe0bに接続します。</block>
   <block id="a032a8830d9e7689c545a9f5d436568b" category="list-text">ポートe8aをシェルフ2、NSM Bのポートe0aに接続します。</block>
   <block id="a7ac225913423b42ae7801d894de31c8" category="list-text">ポートe8bをシェルフ1、NSM Aのポートe0bに接続します。</block>
   <block id="bf1f9977d76210449a57d0b526df80f9" category="paragraph"><block ref="bf1f9977d76210449a57d0b526df80f9" category="inline-image-macro-rx" type="image"></block></block>
@@ -7680,7 +7677,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="ee6c90ad735c4fc892e900202d6ff034" category="list-text">クラスタ/ HAインターコネクトケーブルを使用して、ポートe1aとe1a、ポートe7aとe7aを接続します。</block>
   <block id="8637ca13eb3c1a10bb4383130268c950" category="list-text">イーサネットモジュールポートをホストネットワークに接続します。</block>
   <block id="1cddeaef0a0b08b7178f9023a157d0fc" category="list-text">10 / 25GbEホストネットワークスイッチを接続します。</block>
-  <block id="bd078f69cc3533ea9bc3100deef482d0" category="list-text">クラスタ/ HAインターコネクトケーブルを使用して、ポートe1aとe1aを接続し、ポートe7aとe7aを接続します。</block>
   <block id="cdc609c675d24b2fff8b5acc2e37e89e" category="list-text">コントローラAで、次のポートを接続します。</block>
   <block id="ab7ef1e990b02e4f310f950e86665f24" category="list-text">コントローラBで、次のポートを接続します。</block>
   <block id="9567b57fbc256ab6a2a904d9e65e90fc" category="paragraph">を使用し<block ref="2b7eb894c1625ebcb138cf06e4e24423" category="inline-link-rx"></block> て、クラスタのセットアッププロセスで必要となる値を記録します。デフォルト値が指定されている場合は、その値を使用するか、独自の値を入力できます。</block>
@@ -7805,7 +7801,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="bab1b3baab1e9940a2218c82b7dcca29" category="doc">ハードウェアのケーブル接続- AFF A70とAFF A90</block>
   <block id="129659531a7af0b8cc014b27db714e59" category="paragraph">AFF A70またはAFF A90ストレージシステムのラックハードウェアを設置したら、コントローラにネットワークケーブルを接続し、コントローラとストレージシェルフの間をケーブルで接続します。</block>
   <block id="4303b29f12561a35dc71cb122558d909" category="inline-link-macro">AFF A70またはAFF A90ストレージシステムの電源をオンにする</block>
-  <block id="f4e587df8e3873f191b7a2eaee7efc0d" category="paragraph">AFF A70またはAFF A90システム用のハードウェアのケーブル接続が完了したら、次の作業を行い<block ref="c5f2d57d7889d01ebbda3bc0e0e75909" category="inline-link-macro-rx"></block>ます。</block>
   <block id="eaed2b50f9ac1d1c725b320e4c9f09e1" category="doc">ハードウェアの設置- AFF A70 and AFF A90</block>
   <block id="816bbd9f7f68bfea42f976bdd1e27e0d" category="paragraph">AFF A70またはAFF A90ストレージシステムを設置する準備ができたら、システムのハードウェアを設置します。まず、レールキットを取り付けます。次に、キャビネットまたはTelcoラックにプラットフォームを設置して固定します。</block>
   <block id="fd0f91da61deb35dbaf2ae06cc064cf2" category="inline-link-macro">AFF A70またはAFF A90ストレージシステムのハードウェアをケーブル接続</block>
@@ -7930,8 +7925,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="0b38b0938783d2cf1b3800f66d5154c3" category="paragraph">FAS70またはFAS90システムのハードウェアのケーブル接続が完了したら、次の作業を行い<block ref="9d70727ad16ec47c3b1ffe9fcd624399" category="inline-link-macro-rx"></block>ます。</block>
   <block id="a88ce76514a173cf2bddffce66860b3a" category="doc">ハードウェアの設置- FAS70およびFAS90</block>
   <block id="8f4b2475d7c4e7fd5a95811a1509212a" category="paragraph">FAS70またはFAS90ストレージ・システムの設置の準備が完了したら、システムのハードウェアを設置します。まず、レールキットを取り付けます。次に、キャビネットまたはTelcoラックにプラットフォームを設置して固定します。</block>
-  <block id="6416cb7210c1cd9b1d9cc413f9b62376" category="inline-link-macro">FAS70またはFAS90ストレージ・システムのハードウェアをケーブル接続します。</block>
-  <block id="c9ecf6c24d42c6c195a5d283af95a0b4" category="paragraph">FAS70またはFAS90ストレージ・システムのハードウェアの設置が完了したら、次の作業を行い<block ref="66229e533d818dbc7b41a3001638f04f" category="inline-link-macro-rx"></block>ます。</block>
   <block id="90bee630c9da2d7d494cda69da33a583" category="summary">FAS70およびFAS90ストレージ・システムを設置してセットアップし、ONTAPシステムのノードとして導入するには、次の手順を実行します。</block>
   <block id="9b2aaebbf51e1beb36472d0ce0cc3185" category="doc">設置と設定のワークフロー- FAS70およびFAS90</block>
   <block id="bedb87d7b2671b0ded93144a6ce3c345" category="paragraph">FAS70またはFAS90システムを設置して設定するには、ハードウェア要件を確認し、設置場所を準備し、ハードウェアコンポーネントを設置してケーブル接続し、システムの電源を投入し、ONTAPクラスタをセットアップします。</block>
@@ -7944,12 +7937,10 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="a817c10af381296411c154c716af48b7" category="inline-link-macro">FAS70またはFAS90ストレージ・システムの電源をオンにする</block>
   <block id="b2f6fbbaf5842fe5addbaac3aabc158d" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="164a6e7d5b74e1ce7eb1009b0b13e4f3" category="inline-link-macro-rx"></block></block>
   <block id="d9eb7005000baef74822bf5afd90707b" category="doc">ストレージ・システムの電源をオンにする（FAS70およびFAS90）</block>
-  <block id="f6d3448cfd45b6a4ae23d47aec38dd6f" category="paragraph">FAS70 0r FAS90ストレージシステムのラックハードウェアを設置し、コントローラとストレージシェルフのケーブルを接続したら、ストレージシェルフとコントローラの電源をオンにする必要があります。</block>
   <block id="971e955dfe15e7503ed5654ed6ebd8e0" category="summary">FAS70およびFAS90プラットフォームの設置を準備します。</block>
   <block id="03162faf493040269b3b60738c942373" category="doc">設置の準備- FAS70およびFAS90</block>
   <block id="5c3b9df48b8876003c4bc9bef5a99d08" category="paragraph">FAS70またはFAS90ストレージ・システムの設置を準備します。設置場所を準備し、開梱して内容を納品書と比較し、システムを登録してサポートを受けられます。</block>
   <block id="c122f93f0a8c0d86fe624d89c395a42d" category="inline-link-macro">FAS70またはFAS90ストレージ・システムのハードウェアの設置</block>
-  <block id="9ed07b45e5e582647bc2df0721e7b250" category="paragraph">FAS70またはFAS90ハードウェアの設置の準備が完了したら、次の作業を行い<block ref="8b675fcd81dca00f177be4137f647288" category="inline-link-macro-rx"></block>ます。</block>
   <block id="6a9167a5943a2edebb563033d742c92d" category="doc">設置要件- FAS70およびFAS90</block>
   <block id="9ab04ed2ca5bf9f3a53912fe8182bc26" category="paragraph">FAS70またはFAS90ストレージ・システムおよびストレージ・シェルフに必要な機器と、持ち上げに関する注意事項を確認します。</block>
   <block id="831a011f3efcfa2b56239bdfd5507fdc" category="paragraph">FAS70またはFAS90ストレージ・システムの重量は最大28.5kg（62.83ポンド）になることがあります。システムを持ち上げるには、2人で作業するか、油圧リフトを使用します。</block>
@@ -9035,7 +9026,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="aa2e3ee65f05caaf497283a0ab483129" category="doc">インストールの準備- AFF C80</block>
   <block id="ae94559d673eaece00e4a335f4347e99" category="paragraph">AFF C80ストレージシステムを設置する準備をします。設置場所を準備し、開梱して内容を納品書と比較し、システムを登録してサポートを利用します。</block>
   <block id="11b741b11d83e458037ddbfc832295ac" category="inline-link-macro">AFF C80ストレージシステムのハードウェアを設置</block>
-  <block id="09350f8e92a2072060400a04780b4504" category="paragraph">AFF C80ハードウェアの設置準備が完了したら、次の作業<block ref="5529a04db23aefcda96e168a6808eaee" category="inline-link-macro-rx"></block>を行います。</block>
   <block id="ce16306562432372fadd2f97d4862648" category="summary">必要な機器と、ストレージシステムおよびシェルフの持ち上げに関する注意事項を確認します。</block>
   <block id="d74315adf12485d8310e758b0294275f" category="doc">インストール要件- AFF C80</block>
   <block id="a36836ef1b3b8277e163c5017c4ab7f9" category="paragraph">AFF C80ストレージシステムとストレージシェルフに必要な機器と、持ち上げる際の注意事項を確認します。</block>
@@ -9982,7 +9972,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="837c47c934f14522b94248f34ec495be" category="paragraph">コントローラのリアルタイムクロック（RTC）バッテリを交換して、正確な時刻同期に依存するストレージシステムのサービスとアプリケーションが引き続き機能するようにします。</block>
   <block id="55eba7ecf8d7b61636e734c095e4ed8c" category="paragraph">ラップトップがシリアルコンソールポートに接続され、コントローラの電源がオンになっていることを確認します。</block>
   <block id="91860a8cf69554e12c3e3a5720821c5a" category="list-text">シェルフIDを有効にするには、シェルフの電源を再投入する必要があります（SASシェルフの各電源装置の電源スイッチをオフにし、しばらく待ってから再度オンにします）。</block>
-  <block id="f5afd4b6c78c970d9b9f36473a81eb43" category="paragraph">DS460Cシェルフの重量は最大181.1kg（260.4ポンド）です。ストレージシェルフを持ち上げるには、最大5人または油圧リフトが必要になる場合があります。ストレージシェルフの重量がバランスを崩さないように、すべてのコンポーネント（前面と背面の両方）を保管してください。</block>
   <block id="33ae25491bd1a8a3daa58c3e044ddc6f" category="doc">障害が発生したパーツをNetApp - FAS50に返却します。</block>
   <block id="cb898608072ab3625e9f94c0f82cbc2f" category="paragraph">FAS50システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページを参照してください。</block>
   <block id="0277d6392a2af9f708f9e4369e630a19" category="summary">FAS50ストレージ・システムのデータ・セキュリティを確保するには、ブート・メディアで暗号化キーのサポートとステータスを確認する必要があります。ONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認し、コントローラをシャットダウンする前にキー管理ツールがアクティブになっているかどうかを確認してください。</block>
@@ -10072,7 +10061,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f3239a5f1291696246e54607fd3b9a01" category="paragraph">FAS50ストレージ・システムの要件を確認します。</block>
   <block id="e56a8d138f62f4590eed5655df5c011f" category="paragraph">ストレージシステムの重量は最大24.4 kg（53.8ポンド）になることがあります。ストレージ・システムを持ち上げるには、2人で作業するか、油圧リフトを使用します。</block>
   <block id="9c48a8da7b0db1cca470b9010947185e" category="image-alt">FAS50重量警告アイコン</block>
-  <block id="af0319de88f3ed43d4ee4fb8b670c558" category="paragraph">DS460Cシェルフの重量は最大181.1kg（260.4ポンド）です。シェルフを持ち上げるには、最大5人で作業するか、油圧リフトを使用します。シェルフの重量がバランスを崩さないように、すべてのコンポーネント（前面と背面の両方）をシェルフに保管してください。</block>
   <block id="26f561223ab76238a005189688efb525" category="doc">I/OモジュールFAS50を追加します</block>
   <block id="c65fcc9bc376acee1b7dc4604e426776" category="doc">I/Oモジュールの交換- FAS50</block>
   <block id="651d5528b03e26465b5710deab4b18d5" category="doc">ハードウェアメンテナンスの概要- FAS50</block>
@@ -10280,7 +10268,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="30898d03a4ca37450e8ab2be81f38dd5" category="list-text">NSM100B モジュールは、スロット 1 の I/O モジュール上のポート e1a と e1b を使用します。</block>
   <block id="e6c68585977f6b3e8b2b4ced88ca3d4d" category="list-text">NSM100 モジュールは、内蔵 (オンボード) ポート e0a および e0b を使用します。</block>
   <block id="215caa644827ccfb864125e557ed29f2" category="list-text">ストレージ システムに付属のストレージ ケーブルを使用して、各コントローラを NS224 シェルフ上の各 NSM モジュールに接続します。ストレージ ケーブルの種類は次のとおりです。</block>
-  <block id="01bd09c5271f772a108914f35e7efcd3" category="paragraph">AFF A70および90ストレージシステムは、NSM100またはNSM100Bモジュールを搭載したNS224シェルフをサポートします。モジュール間の主な違いは次のとおりです。</block>
   <block id="2486a91e78743df4d0cc635c5b8b51c8" category="list-text">NSM100 シェルフ モジュールは、組み込みポート e0a および e0b を使用します。</block>
   <block id="a53b96fad1d9b45d4ddb6e31d5f14d63" category="paragraph">損傷したブートメディアを物理的に交換した後、 <block ref="dcb4deaaa5f388ac9dd740fbe37648be" category="inline-link-macro-rx"></block> 。</block>
   <block id="023d1fe5c37125b4e245d88460c90d81" category="summary">ASA A20、ASA A30、およびASA A50ストレージシステムのブートメディアの交換を開始します。まず、交換要件を確認し、障害のあるコントローラのシャットダウン、ブートメディアの交換、ブートメディアへのイメージのリストア、システム機能の確認を行います。</block>
@@ -10351,7 +10338,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b4a3b44dc7350cb88f59a4a2eb7dda1d" category="sidebar">ASA C30シャーシ</block>
   <block id="cb330090f109eb2fa5d8e0cb697b8627" category="sidebar">ASA C30コントローラモジュール</block>
   <block id="d6cf13e3e73df787bea3a13aaa745efd" category="sidebar">ASA C30 I/Oモジュール</block>
-  <block id="8fdc5ec3ff56b023a707d257557cb7c1" category="paragraph">FAS70 および FAS90 ストレージ システムは、NSM100 または NSM100B モジュールのいずれかを搭載した DS212C、DS224C、DS460C、および NS224 シェルフをサポートします。</block>
   <block id="cb1d7f2de7963108d3fe1b590a415523" category="paragraph">NS224 モジュール間の主な違いは次のとおりです。</block>
   <block id="a1c52b2edb23bc93318c0b82dc9baead" category="paragraph">次の NS224 ケーブル接続例では、シェルフ モジュール ポートを参照する場合の NS224 シェルフ内の NSM100 モジュールを示しています。</block>
   <block id="e275ee75ac16491873bfc9c9d1565329" category="paragraph">ストレージリソースの制御を交換用コントローラに戻して、AFF A1Kシステムが通常の運用を再開できるようにします。返却手順は、システムで使用されている暗号化の種類（暗号化なしまたはオンボード キー マネージャー (OKM) 暗号化）によって異なります。</block>
@@ -12673,7 +12659,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5862e3059693b0ae5802e65d68b3df4c" category="list-text">正常なコントローラの日付と時刻を<block ref="1cac34e5e8442fb80d6ade838d969fc0" prefix=" " category="inline-code"></block>指示。</block>
   <block id="06cc2a18a376ef6cef2529359a8c1853" category="list-text">ターゲットコントローラのLOADERプロンプトで、<block ref="7e17e2b336dbdd66c2f45405573b53de" prefix=" " category="inline-code"></block>指示。</block>
   <block id="ab00fa9bfc395c69bcff64c78065914d" category="list-text">ギブバック レポートが完了してから 5 分待ってから、フェイルオーバーとギブバックのステータスを確認します。</block>
-  <block id="a58f4831d1e28d273ad0f645bcbb3725" category="paragraph">コントローラの背面、スロット 8 の左側にあるシステム管理モジュールには、システム管理用のオンボード コンポーネントと外部管理用のポートが含まれています。障害のあるシステム管理モジュールを交換するか、ブート メディアを交換するには、ターゲット コントローラをシャットダウンして電源をオフにする必要があります。</block>
   <block id="2facfdec284e980f443264b431f4e8ac" category="list-text">e0MおよびBMCネットワークアクセス用のRJ45イーサネットサービスポート</block>
   <block id="5ddf9434bc54978c062928eafba9691f" category="list-text">システム管理モジュールに接続されているケーブルをすべて取り外します。ケーブルが接続されていた場所にラベルを付けて、モジュールを再インストールするときに正しいポートに再接続できるようにします。</block>
   <block id="c13821e7f076ae89484ef92cc7173b08" category="list-text">ブート メディアにアクセスするには、システム管理モジュールを静電気防止マットの上に置きます。</block>
@@ -12971,8 +12956,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="057cab5a212fb0cce841ca14b2cfeda3" category="doc">電源のホットスワップ - AFF A320</block>
   <block id="3bebfde8a4d27ae5e27f0cd50cf9a5de" category="doc">電源のホットスワップ - AFF A400</block>
   <block id="30432b9617d110e91bb55e0ee6592cdb" category="paragraph">イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース、冗長ホットスワップ対応コントローラ、冗長ホットスワップ対応電源、外部シェルフのSAS接続によるSASインバンド管理、[//] 2025-10-15 ontap-systems-internal/issues/1357</block>
-  <block id="3076b9da82c66ef1cac1e7179b746828" category="paragraph">100 GbE ケーブルを使用して、コントローラー A と B のポート e1a および e7a をクラスター ネットワーク スイッチ A と B に接続します。</block>
-  <block id="92998a9e2d395c7927371ced81dc9182" category="admonition">ホスト ネットワーク接続にはポート e1b および e7b ポートを使用しないでください。別のホスト カードを使用します。</block>
   <block id="ec3eca6cbff6c81c2c7efdc9ca0afcf4" category="doc">電源のホットスワップ - AFF A70およびAFF A90</block>
   <block id="b61c2071102a270d16023e40ee5b949e" category="doc">電源のホットスワップ - AFF A700</block>
   <block id="9fdca944f84d0d7c1dd5bec5b33c4dad" category="doc">電源のホットスワップ - AFF A700s</block>
@@ -15242,4 +15225,27 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="07264625bd1b5bafe8d9b9331bb63609" category="paragraph">DS460Cシェルフをデータセンター内の別の場所に移動したり、別の場所に輸送したりする場合は、ドライブドロワーやドライブの損傷を防ぐため、ドライブドロワーからドライブを取り外す必要があります。</block>
   <block id="c141638ba1fc3bb008bb5eb896def79e" category="admonition">*データアクセスが失われる可能性：* 今後、シェルフをデータセンターの別の場所に移動したり、別の場所に輸送したりする場合は、ドライブドロワーやドライブの損傷を防ぐため、ドライブドロワーからドライブを取り外す必要があります。</block>
   <block id="c280702bf87115947662f11cc819ea08" category="paragraph">今後、DS460Cシェルフをデータセンター内の別の場所に移動したり、別の場所に輸送したりする場合は、ドライブドロワーやドライブの損傷を防ぐため、ドライブドロワーからドライブを取り外す必要があります。</block>
+  <block id="d06a07083a90ec9a4378029abfdec7cb" category="paragraph">システム管理モジュールを交換したら、コントローラをリブートして、HAペアの正常な動作を復元します。コントローラの電源をオンにし、部分的なギブバックを実行してルートアグリゲートを起動させ、その後、完全なギブバックを完了させて、障害が発生したコントローラをサービス状態に戻す必要があります。</block>
+  <block id="6638946c2c71169de88e635bdf3a1573" category="paragraph">システム管理モジュールにはブートメディアが含まれており、システム管理機能を提供します。障害のあるシステム管理モジュールを取り外し、ブートメディアを交換用モジュールに転送してから、交換用モジュールをエンクロージャに再取り付けする必要があります。</block>
+  <block id="6e30ba5caa64e4ca3667dadeaa11cefd" category="admonition">次の手順に進む前に、NVRAM のデステージが完了していることを確認してください。NV モジュールの LED が消灯している場合、NVRAM はデステージ済みです。LED が点滅している場合は、点滅が止まるまでお待ちください。点滅が 5 分以上続く場合は、テクニカルサポートにお問い合わせください。</block>
+  <block id="ea7f38fbe84ac28be0f7c90cca730a69" category="list-text">ONTAP 9.19.1</block>
+  <block id="e827146f835b35a49ebac185b3e71933" category="paragraph">以下に、ホストネットワークのケーブル配線に関する一般的な例をいくつか示します。<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>でお客様のシステム構成を参照してください。</block>
+  <block id="bba084cab79d6f55fb1d0fc54cb54245" category="admonition">ホストネットワーク接続には、ポートe1bとe7bを使用しないでください。別のホストカードを使用してください。</block>
+  <block id="d435ad3bb0c177c293988bf9a83d48e5" category="list-text">10/25 GbEカードをホストネットワークスイッチに接続してください。</block>
+  <block id="d4757fa4dad3e14c7b22569e94598e77" category="paragraph">AFF A70およびAFF A90ストレージシステムは、NSM100またはNSM100Bモジュールを搭載したNS224シェルフをサポートします。モジュール間の主な違いは次のとおりです：</block>
+  <block id="c385525fc45151e02ea60146533c3edf" category="list-text">コントローラAのポートe11bをNSM Bのポートe0bに接続します。</block>
+  <block id="d5c4ea0bd4062f3b335586480daba755" category="list-text">ポートe11bをシェルフ2のNSM Aポートe0bに接続します。</block>
+  <block id="c67f19e104ad3611b366ccb143f8c86d" category="paragraph">AFF A70またはAFF A90システムのハードウェアのケーブル接続が完了したら、<block ref="c5f2d57d7889d01ebbda3bc0e0e75909" category="inline-link-macro-rx"></block>。</block>
+  <block id="f158217b4d76e5895e22e6e5f12f3f82" category="paragraph">コントローラの背面、スロット8の左側に位置するシステム管理モジュールには、システム管理用のオンボードコンポーネントと外部管理用のポートが含まれています。故障したシステム管理モジュールを交換する場合、またはブートメディアを交換する場合は、対象コントローラをシャットダウンして電源を切る必要があります。</block>
+  <block id="c252e729454f69bb6a0d6efb48dd02d3" category="paragraph">AFF C80ストレージシステムは、NSM100またはNSM100Bモジュールのいずれかを搭載したNS224シェルフに対応しています。各モジュールの主な違いは以下のとおりです。</block>
+  <block id="edf3046f20162fd9f4e8899af2dff261" category="paragraph">AFF C80ハードウェアのインストール準備が完了したら、<block ref="5529a04db23aefcda96e168a6808eaee" category="inline-link-macro-rx"></block>。</block>
+  <block id="412841ff7918862aec2940d9550d7b94" category="paragraph">FAS70およびFAS90ストレージシステムは、NSM100またはNSM100Bモジュールのいずれかを搭載したDS212C、DS224C、DS460C、およびNS224シェルフをサポートします。</block>
+  <block id="fff62239bbf7b8e4f913dd0c94d3de2f" category="list-text">ポートe11bをNSM Bのポートe0bに接続します。</block>
+  <block id="36a89ad9239def1b5e6daf8a3f66d103" category="summary">ストレージシステムをキャビネットまたは通信ラックに設置してください。</block>
+  <block id="56f562e1cc48bd1cf730414ac5a70986" category="inline-link-macro">FAS70またはFAS90ストレージシステムのハードウェアをケーブル接続する</block>
+  <block id="326a64162980e026d67fb6be05699641" category="paragraph">FAS70またはFAS90ストレージシステムのハードウェアをインストールしたら、<block ref="3611ae43317c18d7133d9ac6f85a86be" category="inline-link-macro-rx"></block>。</block>
+  <block id="6d05cad6882d00b69106773678892a60" category="paragraph">FAS70またはFAS90ストレージシステムのラックハードウェアを取り付け、コントローラとストレージシェルフ用のケーブルを接続したら、ストレージシェルフとコントローラの電源を入れてください。</block>
+  <block id="f0459d9c2b469658ae28fdabcde86676" category="paragraph">FAS70またはFAS90ハードウェアのインストール準備が完了したら、<block ref="8b675fcd81dca00f177be4137f647288" category="inline-link-macro-rx"></block>。</block>
+  <block id="b60cf29845b500861cf2f73b433dcb7a" category="paragraph">DS460C シェルフの重量は最大 260.4 ポンド（118.1 kg）になる場合があります。ストレージシェルフを持ち上げるには、最大 5 人または油圧リフトが必要になる場合があります。シェルフの重量バランスが崩れないように、すべてのコンポーネントをストレージシェルフ（前面と背面の両方）に保管してください。</block>
+  <block id="ede44ca49dfc10f87edfa2084fe039d9" category="paragraph">DS460C シェルフの重量は最大 260.4 ポンド（118.1 kg）になる場合があります。シェルフを持ち上げるには、最大 5 人または油圧リフトが必要になる場合があります。シェルフの重量バランスが崩れないように、すべてのコンポーネントをシェルフ内（前面と背面の両方）に収めてください。</block>
 </blocks>

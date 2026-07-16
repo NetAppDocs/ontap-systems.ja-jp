@@ -1,7 +1,7 @@
 ---
 permalink: a70-90/install-cable.html 
 sidebar: sidebar 
-keywords: aff a70, aff a90, prepare installation 
+keywords: aff a70, aff a90, prepare installation, cable the hardware 
 summary: AFF A70またはAFF A90ストレージシステムのラックハードウェアを設置したら、コントローラにネットワークケーブルを接続し、コントローラとストレージシェルフの間をケーブルで接続します。 
 ---
 = ハードウェアのケーブル接続- AFF A70とAFF A90
@@ -20,7 +20,7 @@ AFF A70またはAFF A90ストレージシステムのラックハードウェア
 * ここでは、一般的な設定について説明します。具体的なケーブル接続は、ご使用のストレージシステム用に注文したコンポーネントによって異なります。設定およびスロットプライオリティの詳細については、を参照してください link:https://hwu.netapp.com["NetApp Hardware Universe の略"^]。
 * AFF A70コントローラとAFF A90コントローラのI/Oスロットには1~11の番号が付けられています。
 +
-image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[FAS70およびFAS90コントローラのスロット番号]
+image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[AFF A70コントローラおよびAFF A90コントローラでのスロット番号]
 
 * ケーブル配線図には、ポートにコネクタを挿入する際のケーブルコネクタプルタブの正しい方向（上または下）を示す矢印アイコンがあります。
 +
@@ -34,8 +34,8 @@ image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[ケーブルプル�
 
 
 
-[[step-1-connect-the-storage-controllers-to-your-network]]
-== 手順1：ストレージコントローラをネットワークに接続する
+[[step-1-cable-the-clusterha-connections]]
+== 手順1：クラスタ/ HAをケーブル接続する
 
 コントローラをONTAPクラスタにケーブル接続します。この手順は、ストレージシステムのモデルおよびI/Oモジュールの構成によって異なります。
 
@@ -46,7 +46,7 @@ NOTE: クラスタインターコネクトトラフィックとHAトラフィッ
 ====
 .スイッチレスクラスタのケーブル接続
 --
-クラスタ/ HAインターコネクトケーブルを使用して、ポートe1aとe1aを接続し、ポートe7aとe7aを接続します。
+クラスタ/ HAインターコネクトケーブルを使用して、ポートe1aとe1a、ポートe7aとe7aを接続します。
 
 .手順
 . コントローラAのポートe1aをコントローラBのポートe1aに接続します。
@@ -65,7 +65,7 @@ image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[2ノードスイ�
 --
 .スイッチクラスタのケーブル接続
 --
-100 GbE ケーブルを使用して、コントローラー A と B のポート e1a および e7a をクラスター ネットワーク スイッチ A と B に接続します。
+100 GbE ケーブルを使用して、コントローラー A と B のポート e1a と e7a をクラスター ネットワーク スイッチ A と B に接続します。
 
 .手順
 . コントローラAのポートe1aとコントローラBのポートe1aをクラスタネットワークスイッチAに接続します。
@@ -90,13 +90,13 @@ image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[クラスタ�
 
 イーサネットモジュールポートをホストネットワークに接続します。
 
-次に、一般的なホストネットワークのケーブル接続例を示します。ご使用のシステム構成については、を参照してください link:https://hwu.netapp.com["NetApp Hardware Universe の略"^] 。
+以下に、ホストネットワークのケーブル配線に関する一般的な例をいくつか示します。link:https://hwu.netapp.com["NetApp Hardware Universe の略"^]でお客様のシステム構成を参照してください。
 
 .手順
 . ポートe9aおよびe9bをイーサネットデータネットワークスイッチに接続します。
 +
 
-NOTE: ホスト ネットワーク接続にはポート e1b および e7b ポートを使用しないでください。別のホスト カードを使用します。
+NOTE: ホストネットワーク接続には、ポートe1bとe7bを使用しないでください。別のホストカードを使用してください。
 
 +
 * 100GbEケーブル*
@@ -107,7 +107,7 @@ image::../media/oie_cable_sfp_gbe_copper.png[100Gbイーサネットケーブル
 +
 image::../media/drw_70-90_network_cabling1_ieops-1654.svg[100Gbイーサネットネットワークへのケーブル接続]
 
-. 10 / 25GbEホストネットワークスイッチを接続します。
+. 10/25 GbEカードをホストネットワークスイッチに接続してください。
 +
 * 4ポート、10/25GbEホスト*
 
@@ -115,7 +115,7 @@ image::../media/drw_70-90_network_cabling1_ieops-1654.svg[100Gbイーサネッ�
 image::../media/oie_cable_sfp_gbe_copper.png[10/25Gbケーブル]
 
 +
-image::../media/drw_70-90_network_cabling2_ieops-1655.svg[100Gbイーサネットネットワークへのケーブル接続]
+image::../media/drw_70-90_network_cabling2_ieops-1655.svg[10 / 25Gbイーサネットネットワークへのケーブル接続]
 
 
 
@@ -145,7 +145,7 @@ IMPORTANT: まだ電源コードを接続しないでください。
 ストレージシステムでサポートされるシェルフの最大数、およびすべてのケーブル接続オプションについては、を参照してくださいlink:https://hwu.netapp.com["NetApp Hardware Universe の略"^]。
 
 .このタスクについて
-AFF A70および90ストレージシステムは、NSM100またはNSM100Bモジュールを搭載したNS224シェルフをサポートします。モジュール間の主な違いは次のとおりです。
+AFF A70およびAFF A90ストレージシステムは、NSM100またはNSM100Bモジュールを搭載したNS224シェルフをサポートします。モジュール間の主な違いは次のとおりです：
 
 * NSM100 シェルフ モジュールは、組み込みポート e0a および e0b を使用します。
 * NSM100B シェルフ モジュールは、スロット 1 のポート e1a と e1b を使用します。
@@ -165,7 +165,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[100GbE QSFP28銅線ケーブル]
 
 .手順
 . コントローラAのポートe11aをNSM Aのポートe0aに接続します。
-. コントローラAのポートe11bをポートNSM Bのポートe0bに接続します。
+. コントローラAのポートe11bをNSM Bのポートe0bに接続します。
 +
 image:../media/drw_a70-90_1shelf_cabling_a_ieops-1731.svg["コントローラAのe11aおよびe11bを1台のNS224シェルフに移行"]
 
@@ -189,9 +189,9 @@ image::../media/oie_cable100_gbe_qsfp28.png[100GbE QSFP28銅線ケーブル]
 . コントローラAで、次のポートを接続します。
 +
 .. ポートe11aをシェルフ1、NSM Aのポートe0aに接続します。
-.. ポートe11bをシェルフ2、NSM Bのポートe0bに接続します。
-.. ポートe8aをシェルフ2、NSM Aのポートe0aに接続します。
 .. ポートe8bをシェルフ1、NSM Bのポートe0bに接続します。
+.. ポートe8aをシェルフ2、NSM Aのポートe0aに接続します。
+.. ポートe11bをシェルフ2、NSM Bのポートe0bに接続します。
 +
 image:../media/drw_a70-90_2shelf_cabling_a_ieops-1733.svg["コントロオラAノコントロオラ/シエルフカンノセツソク"]
 
@@ -200,9 +200,9 @@ image:../media/drw_a70-90_2shelf_cabling_a_ieops-1733.svg["コントロオラA�
 . コントローラBで、次のポートを接続します。
 +
 .. ポートe11aをシェルフ1、NSM Bのポートe0aに接続します。
-.. ポートe11bをシェルフ2、NSM Aのポートe0bに接続します。
-.. ポートe8aをシェルフ2、NSM Bのポートe0aに接続します。
 .. ポートe8bをシェルフ1、NSM Aのポートe0bに接続します。
+.. ポートe8aをシェルフ2、NSM Bのポートe0aに接続します。
+.. ポートe11bをシェルフ2のNSM Aポートe0bに接続します。
 +
 image:../media/drw_a70-90_2shelf_cabling_b_ieops-1734.svg["コントローラBのコントローラ/シェルフ間の接続"]
 
@@ -213,4 +213,4 @@ image:../media/drw_a70-90_2shelf_cabling_b_ieops-1734.svg["コントローラB�
 --
 ====
 .次の手順
-AFF A70またはAFF A90システム用のハードウェアのケーブル接続が完了したら、次の作業を行いlink:install-power-hardware.html["AFF A70またはAFF A90ストレージシステムの電源をオンにする"]ます。
+AFF A70またはAFF A90システムのハードウェアのケーブル接続が完了したら、link:install-power-hardware.html["AFF A70またはAFF A90ストレージシステムの電源をオンにする"]。

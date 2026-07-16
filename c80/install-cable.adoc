@@ -1,7 +1,7 @@
 ---
 permalink: c80/install-cable.html 
 sidebar: sidebar 
-keywords: aff c80, prepare installation 
+keywords: aff c80, prepare installation, cable the hardware 
 summary: コントローラの管理ネットワークポートはスイッチに接続されます。HA インターコネクトポートとクラスタインターコネクトポートは、両方のコントローラでケーブル接続されます。コントローラモジュールは、注文した場合は外付けストレージに接続されています。 
 ---
 = ハードウェアのケーブル接続- AFF C80
@@ -46,7 +46,7 @@ NOTE: クラスタインターコネクトトラフィックとHAトラフィッ
 ====
 .スイッチレスクラスタのケーブル接続
 --
-クラスタ/ HAインターコネクトケーブルを使用して、ポートe1aとe1aを接続し、ポートe7aとe7aを接続します。
+クラスタ/ HAインターコネクトケーブルを使用して、ポートe1aとe1a、ポートe7aとe7aを接続します。
 
 .手順
 . コントローラAのポートe1aをコントローラBのポートe1aに接続します。
@@ -58,7 +58,7 @@ NOTE: クラスタインターコネクトトラフィックとHAトラフィッ
 image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[クラスタHAケーブル]
 
 +
-image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[2ノードスイッチレスクラスタのケーブル配線図]
+image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[2ノードスイッチレスクラスタのケーブル配線図]
 
 
 
@@ -73,9 +73,10 @@ image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[2ノードスイッ�
 +
 * 100GbEケーブル*
 
-
-
++
 image::../media/oie_cable100_gbe_qsfp28.png[100Gbケーブル]
+
+
 
 image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[クラスタネットワークへのクラスタ接続のケーブル接続]
 
@@ -88,13 +89,13 @@ image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[クラスタ�
 
 イーサネットモジュールポートをホストネットワークに接続します。
 
-次に、一般的なホストネットワークのケーブル接続例を示します。ご使用のシステム構成については、を参照してください link:https://hwu.netapp.com["NetApp Hardware Universe の略"^] 。
+以下に、ホストネットワークのケーブル配線に関する一般的な例をいくつか示します。link:https://hwu.netapp.com["NetApp Hardware Universe の略"^]でお客様のシステム構成を参照してください。
 
 .手順
 . ポートe9aおよびe9bをイーサネットデータネットワークスイッチに接続します。
 +
 
-NOTE: ホスト ネットワーク接続にはポート e1b および e7b ポートを使用しないでください。別のホスト カードを使用します。
+NOTE: ホストネットワーク接続には、ポートe1bとe7bを使用しないでください。別のホストカードを使用してください。
 
 +
 * 100GbEケーブル*
@@ -105,7 +106,7 @@ image::../media/oie_cable_sfp_gbe_copper.png[100Gbイーサネットケーブル
 +
 image::../media/drw_70-90_network_cabling1_ieops-1654.svg[100Gbイーサネットネットワークへのケーブル接続]
 
-. 10 / 25GbEホストネットワークスイッチを接続します。
+. 10/25 GbEカードをホストネットワークスイッチに接続してください。
 +
 * 4ポート、10/25GbEホスト*
 
@@ -142,6 +143,15 @@ IMPORTANT: まだ電源コードを接続しないでください。
 
 ストレージシステムでサポートされるシェルフの最大数、およびすべてのケーブル接続オプションについては、を参照してくださいlink:https://hwu.netapp.com["NetApp Hardware Universe の略"^]。
 
+.このタスクについて
+AFF C80ストレージシステムは、NSM100またはNSM100Bモジュールのいずれかを搭載したNS224シェルフに対応しています。各モジュールの主な違いは以下のとおりです。
+
+* NSM100 シェルフ モジュールは、組み込みポート e0a および e0b を使用します。
+* NSM100B シェルフ モジュールは、スロット 1 のポート e1a と e1b を使用します。
+
+
+次の配線例は、シェルフ モジュール ポートを参照する場合の NS224 シェルフ内の NSM100 モジュールを示しています。
+
 [role="tabbed-block"]
 ====
 .オプション1：NS224ストレージシェルフ1台
@@ -154,7 +164,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[100GbE QSFP28銅線ケーブル]
 
 .手順
 . コントローラAのポートe11aをNSM Aのポートe0aに接続します。
-. コントローラAのポートe11bをポートNSM Bのポートe0bに接続します。
+. コントローラAのポートe11bをNSM Bのポートe0bに接続します。
 +
 image:../media/drw_a70-90_1shelf_cabling_a_ieops-1731.svg["コントローラAのe11aおよびe11bを1台のNS224シェルフに移行"]
 
@@ -178,9 +188,9 @@ image::../media/oie_cable100_gbe_qsfp28.png[100GbE QSFP28銅線ケーブル]
 . コントローラAで、次のポートを接続します。
 +
 .. ポートe11aをシェルフ1、NSM Aのポートe0aに接続します。
-.. ポートe11bをシェルフ2、NSM Bのポートe0bに接続します。
-.. ポートe8aをシェルフ2、NSM Aのポートe0aに接続します。
 .. ポートe8bをシェルフ1、NSM Bのポートe0bに接続します。
+.. ポートe8aをシェルフ2、NSM Aのポートe0aに接続します。
+.. ポートe11bをシェルフ2、NSM Bのポートe0bに接続します。
 +
 image:../media/drw_a70-90_2shelf_cabling_a_ieops-1733.svg["コントロオラAノコントロオラ/シエルフカンノセツソク"]
 
@@ -189,9 +199,9 @@ image:../media/drw_a70-90_2shelf_cabling_a_ieops-1733.svg["コントロオラA�
 . コントローラBで、次のポートを接続します。
 +
 .. ポートe11aをシェルフ1、NSM Bのポートe0aに接続します。
-.. ポートe11bをシェルフ2、NSM Aのポートe0bに接続します。
-.. ポートe8aをシェルフ2、NSM Bのポートe0aに接続します。
 .. ポートe8bをシェルフ1、NSM Aのポートe0bに接続します。
+.. ポートe8aをシェルフ2、NSM Bのポートe0aに接続します。
+.. ポートe11bをシェルフ2のNSM Aポートe0bに接続します。
 +
 image:../media/drw_a70-90_2shelf_cabling_b_ieops-1734.svg["コントローラBのコントローラ/シェルフ間の接続"]
 

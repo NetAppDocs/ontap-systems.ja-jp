@@ -90,13 +90,13 @@ image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[クラスタネ�
 
 イーサネットモジュールポートをホストネットワークに接続します。
 
-次に、一般的なホストネットワークのケーブル接続例を示します。ご使用のシステム構成については、を参照してください link:https://hwu.netapp.com["NetApp Hardware Universe の略"^] 。
+以下に、ホストネットワークのケーブル配線に関する一般的な例をいくつか示します。link:https://hwu.netapp.com["NetApp Hardware Universe の略"^]でお客様のシステム構成を参照してください。
 
 .手順
 . ポートe9aおよびe9bをイーサネットデータネットワークスイッチに接続します。
 +
 
-NOTE: ホスト ネットワーク接続にはポート e1b および e7b ポートを使用しないでください。別のホスト カードを使用します。
+NOTE: ホストネットワーク接続には、ポートe1bとe7bを使用しないでください。別のホストカードを使用してください。
 
 +
 * 100GbEケーブル*
@@ -147,7 +147,7 @@ IMPORTANT: まだ電源コードを接続しないでください。
 SASシェルフのケーブル接続に関するその他のガイダンスについては、を参照してくださいlink:https://docs.netapp.com/us-en/ontap-systems/sas3/install-cabling-rules.html["SASケーブル接続のルールと概念- IOM12 / IOM12Bモジュールを搭載したシェルフ"]。
 
 .このタスクについて
-FAS70 および FAS90 ストレージ システムは、NSM100 または NSM100B モジュールのいずれかを搭載した DS212C、DS224C、DS460C、および NS224 シェルフをサポートします。
+FAS70およびFAS90ストレージシステムは、NSM100またはNSM100Bモジュールのいずれかを搭載したDS212C、DS224C、DS460C、およびNS224シェルフをサポートします。
 
 NS224 モジュール間の主な違いは次のとおりです。
 
@@ -171,7 +171,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[100GbE QSFP28銅線ケーブル]
 . コントローラAで、次のポートを接続します。
 +
 .. ポートe11aをNSM Aのポートe0aに接続します。
-.. ポートe11bをポートNSM Bのポートe0bに接続します。
+.. ポートe11bをNSM Bのポートe0bに接続します。
 +
 image:../media/drw_a1k_1shelf_cabling_a_ieops-1703.svg["コントローラAのe11aおよびe11bを1台のNS224シェルフに移行"]
 
@@ -201,24 +201,24 @@ image::../media/oie_cable100_gbe_qsfp28.png[100GbE QSFP28銅線ケーブル]
 . コントローラAで、次のポートを接続します。
 +
 .. ポートe11aをシェルフ1のNSM Aのポートe0aに接続します。
-.. ポートe11bをシェルフ2のNSM Bのポートe0bに接続します。
-.. ポートe10aをシェルフ2のNSM Aのポートe0aに接続します。
 .. ポートe10bをシェルフ1のNSM Bポートe0bに接続します。
-
-
+.. ポートe10aをシェルフ2のNSM Aのポートe0aに接続します。
+.. ポートe11bをシェルフ2のNSM Bのポートe0bに接続します。
 +
 image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg["コントローラAのポートe11a e11b e10aおよびe10bを2台のNS224シェルフにケーブル接続します。"]
+
+
 
 . コントローラBで、次のポートを接続します。
 +
 .. ポートe11aをシェルフ1のNSM Bのポートe0aに接続します。
-.. ポートe11bをシェルフ2のNSM Aのポートe0bに接続します。
-.. ポートe10aをシェルフ2のNSM Bのポートe0aに接続します。
 .. ポートe10bをシェルフ1のNSM Aのポートe0bに接続します。
-
-
+.. ポートe10aをシェルフ2のNSM Bのポートe0aに接続します。
+.. ポートe11bをシェルフ2のNSM Aのポートe0bに接続します。
 +
 image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg["コントローラBのポートe11a e11b e10aおよびe10bを2台のNS224シェルフにケーブル接続します。"]
+
+
 
 
 

@@ -2,7 +2,7 @@
 permalink: fas-70-90/install-hardware.html 
 sidebar: sidebar 
 keywords: fas70, fas90, install hardware, telco rack 
-summary: キャビネットまたはTelcoラックにストレージシステムを設置します。 
+summary: ストレージシステムをキャビネットまたは通信ラックに設置してください。 
 ---
 = ハードウェアの設置- FAS70およびFAS90
 :allow-uri-read: 
@@ -47,7 +47,7 @@ image::../media/drw_affa1k_install_cable_mgmt_ieops-1697.svg[ケーブルマネ�
 .. 付属の取り付けネジを使用して、シェルフをキャビネットまたはTelcoラックに固定します。
 +
 .次の手順
-FAS70またはFAS90ストレージ・システムのハードウェアの設置が完了したら、次の作業を行いlink:install-cable.html["FAS70またはFAS90ストレージ・システムのハードウェアをケーブル接続します。"]ます。
+FAS70またはFAS90ストレージシステムのハードウェアをインストールしたら、link:install-cable.html["FAS70またはFAS90ストレージシステムのハードウェアをケーブル接続する"]。
 
 
 
