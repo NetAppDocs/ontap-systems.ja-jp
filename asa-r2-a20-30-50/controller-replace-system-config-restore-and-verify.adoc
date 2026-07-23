@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: ASA A20、ASA A30、またはASA A50のストレージシステムでコントローラのHA構成がアクティブで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。 
 ---
-= システム構成のリストアと確認（ASA A20、ASA A30、およびASA A50）
+= ASA A20、ASA A30、またはASA A50システムのコントローラー構成を復元して検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

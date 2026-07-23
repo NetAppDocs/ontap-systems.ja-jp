@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, replace a power supply 
 summary: AFF A1Kシステムの AC または DC 電源ユニットに障害が発生した場合や不具合が生じた場合は、システムが安定した動作に必要な電力を継続的に供給できるように交換してください。交換手順は、故障した PSU を電源から切り離し、電源ケーブルを抜き、故障した PSU を交換し、その後再び電源に接続するというものです。 
 ---
-= 電源のホットスワップ - AFF A1K
+= AFF A1K システムの電源ユニットをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, replace the controller workflow 
 summary: まず、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム設定を再設定し、システム動作を確認して、AFF A70またはAFF A90ストレージシステムのコントローラを交換します。 
 ---
-= コントローラの交換ワークフロー- AFF A70とAFF A90
+= AFF A70およびAFF A90コントローラー交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

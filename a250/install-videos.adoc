@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a250, hardware installation and cabling video video 
 summary: 次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。 
 ---
-= ビデオ手順- AFF A250
+= AFF A250システムを動画の説明を使用してインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
+AFF A250ストレージシステムのインストールとケーブル接続を、ステップバイステップの動画の手順に従って行ってください。
 
 .アニメーション- AFF A250のインストールとセットアップ
 video::fe6876d5-9332-4b2e-89be-ac6900027ba5[panopto]

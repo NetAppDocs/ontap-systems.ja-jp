@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: a900, shut down the controller 
 summary: ブート メディアを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、 AFF A900ストレージ システム内の障害のあるコントローラをシャットダウンします。 
 ---
-= 自動ブートメディアリカバリのためにコントローラをシャットダウンする - AFF A900
+= 自動ブートリカバリプロセス中に AFF A900 システムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

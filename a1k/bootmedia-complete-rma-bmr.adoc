@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, complete the replacement process 
 summary: AFF A1Kシステムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。 
 ---
-= 故障したブートメディア部品をNetAppに返却 - AFF A1K
+= 障害が発生した AFF A1K ブートメディアを自動ブートリカバリプロセス後に NetApp に返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

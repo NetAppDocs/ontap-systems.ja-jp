@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, move hardware components, replace the chassis 
 summary: ハードウェア障害が発生した場合は、 ASA A20、 ASA A30、またはASA A50 ストレージ システムのシャーシを交換します。交換プロセスには、コントローラーの取り外し、ドライブの取り外し、交換用シャーシのインストール、およびシャーシ コンポーネントの再インストールが含まれます。 
 ---
-= シャーシの交換- ASA A20、ASA A30、およびASA A50
+= ASA A20、ASA A30、またはASA A50システムのシャーシを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

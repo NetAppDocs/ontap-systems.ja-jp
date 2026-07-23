@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a800, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: AFF A800 システムを完全な動作状態に戻すには、必要に応じて NetApp Storage Encryption 構成をリストアし、新しいコントローラのライセンスをインストールして、障害が発生した部品を NetApp に返却します。 
 ---
-= システムの復元完了 - AFF A800
+= AFF A800システムのコントローラーの交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-システムを完全に動作状態に戻すには、 NetApp Storage Encryption の構成をリストアし（必要な場合）、新しいコントローラのライセンスをインストールし、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。
+AFF A800システムのコントローラー交換を完了するには、NetAppストレージ暗号化構成を復元し（必要な場合）、論理インターフェイス（LIF）がホームポートにレポートしていることを確認し、クラスタの健全性チェックを実行して、障害が発生した部品をNetAppに返却します。
 
 
 

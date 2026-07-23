@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, replace the boot media 
 summary: ブートイメージの自動リカバリでは、システムが適切なブートメニューオプションを自動的に識別して選択します。パートナーノードのブートイメージを使用して、 AFF A20、 AFF A30、またはAFF A50ストレージシステムの交換用ブートメディアにONTAPを再インストールします。 
 ---
-= ブートメディアの自動リカバリワークフロー - AFF A20、 AFF A30、 AFF A50
+= AFF A20、AFF A30、およびAFF A50の自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

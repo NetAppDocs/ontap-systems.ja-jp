@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, post, boot, media, okm, nse, nve, onboard key manager, netapp storage encryption, netapp volume encryption 
 summary: 交換用ブートメディアで暗号化をリストアします。 
 ---
-= リストア暗号化- AFF A150
+= AFF A150システムのブートメディアの暗号化を復元します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-交換用ブートメディアで暗号化をリストアします。
+AFF A150 システムの交換用ブートメディアで暗号化を復元し、継続的なデータ保護を確保します。交換プロセスには、キーの可用性の確認、暗号化設定の再適用、データへの安全なアクセスの確認が含まれます。
 
 キー マネージャーの種類に応じて適切な手順を実行し、システムの暗号化を復元します。システムで使用されているキー マネージャーが不明な場合は、ブート メディアの交換手順の開始時にキャプチャした設定を確認してください。
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, shut down the controller 
 summary: 手動ブート メディア リカバリ プロセス中のデータ損失を防ぎ、システムの安定性を維持するために、 AFF A70またはAFF A90ストレージ システム内の障害のあるコントローラをシャットダウンします。 
 ---
-= 手動ブートメディアリカバリのためにコントローラをシャットダウンする - AFF A70およびAFF A90
+= 手動ブートリカバリプロセス中に AFF A70 または AFF A90 システムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
-= コントローラをシャットダウンします（AFF A150）
+= シャーシを交換するためにAFF A150コントローラをシャットダウンします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
+AFF A150 ストレージ システムのコントローラーをシャットダウンして、シャーシの交換時にデータの損失を防ぎ、システムの安定性を確保します。
 
 
 

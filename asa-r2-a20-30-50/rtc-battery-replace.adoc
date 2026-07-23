@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, replace the real-time clock battery 
 summary: ASA A20、ASA A30、またはASA A50ストレージシステムのリアルタイムクロックバッテリ（一般的にコイン型電池として知られています）を交換して、正確な時刻同期に依存するサービスやアプリケーションが確実に稼働し続けるようにします。 
 ---
-= リアルタイムクロックバッテリを交換してください- ASA A20、ASA A30、およびASA A50
+= ASA A20、ASA A30、またはASA A50システムのリアルタイムクロックバッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

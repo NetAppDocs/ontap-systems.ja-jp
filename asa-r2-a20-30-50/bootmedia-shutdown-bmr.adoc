@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, shut down the controller 
 summary: ASA A20、ASA A30、またはASA A50ストレージシステムの障害のあるコントローラをシャットダウンして、データ損失を防ぎ、ブートメディアの交換時にシステムの安定性を確保します。 
 ---
-= コントローラをシャットダウンしてブートメディアを交換します（ASA A20、ASA A30、およびASA A50）。
+= 自動ブートリカバリプロセス中に ASA A20、ASA A30、または ASA A50 システムのコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

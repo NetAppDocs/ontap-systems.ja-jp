@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, replace the controller workflow 
 summary: ASA A20、ASA A30、またはASA A50ストレージシステムのコントローラを交換するには、まず、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成をリストアし、ストレージリソースの制御を交換用コントローラに戻します。 
 ---
-= コントローラの交換ワークフロー- ASA A20、ASA A30、およびASA A50
+= ASA A20、ASA A30、およびASA A50コントローラー交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

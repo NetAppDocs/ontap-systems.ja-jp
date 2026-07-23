@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: a250, replace the boot media 
 summary: AFF A250 システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、適切な容量のストレージを備えた USB フラッシュ ドライブがあることを確認し、正しい交換用ブート デバイスがあることを確認することが含まれます。 
 ---
-= 手動ブートメディアリカバリの要件 - AFF A250
+= AFF A250システムの手動ブートメディアリカバリの要件を確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, move the controller module hardware 
 summary: ハードウェア障害が発生した場合は、 AFF A20、 AFF A30、またはAFF A50 ストレージ システムのコントローラを交換してください。交換プロセスには、障害のあるコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーのインストール、および再起動が含まれます。 
 ---
-= コントローラを交換してください- AFF A20、AFF A30、AFF A50
+= AFF A20、AFF A30、またはAFF A50システムのコントローラーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

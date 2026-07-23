@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a400, replace the controller workflow 
 summary: 障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成を復元し、ストレージ リソースの制御を交換用コントローラに戻すことで、AFF A400 ストレージ システムのコントローラを交換します。 
 ---
-= コントローラー交換ワークフロー - AFF A400
+= AFF A400コントローラー交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

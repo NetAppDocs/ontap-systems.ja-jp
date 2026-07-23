@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, replace the boot media 
 summary: AFF A1Kシステムのブートメディアを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。具体的には、適切な量のストレージを搭載したUSBフラッシュドライブがあること、および正しい交換用ブートデバイスがあることを確認します。 
 ---
-= 手動ブートメディアリカバリの要件 - AFF A1K
+= AFF A1K システムにおける手動ブートメディアリカバリの要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

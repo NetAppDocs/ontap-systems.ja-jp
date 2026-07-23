@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, boot the recovery image 
 summary: ASA A20、ASA A30、またはASA A50ストレージシステムに新しいブートメディアデバイスを取り付けたら、自動ブートメディアリカバリプロセスを開始して、正常なノードから構成をリストアできます。 
 ---
-= ブートメディア（ASA A20、ASA A30、およびASA A50）にONTAPイメージをリストアします。
+= ASA A20、ASA A30、またはASA A50システムのブートイメージを自動ブートリカバリプロセスを使用して復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

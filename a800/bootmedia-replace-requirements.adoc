@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: a800, replace the boot media 
 summary: AFF A800システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、適切なストレージ容量のUSBフラッシュドライブがあること、および交換用のブートデバイスが正しいことの確認が含まれます。 
 ---
-= 手動ブートメディアリカバリの要件 - AFF A800
+= AFF A800システムの手動ブートメディアリカバリの要件を確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

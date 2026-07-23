@@ -4,16 +4,15 @@ sidebar: sidebar
 keywords: aff a900, move hardware components, replace the chassis 
 summary: システム内の他のすべてのコンポーネントが正常に機能している必要があります。正常に機能していない場合は、テクニカルサポートにお問い合わせください。 
 ---
-= ハードウェア AFF A900 を移動して交換します
+= AFF A900システムのシャーシを交換する
 :allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
 
-
-
-
-[[move-and-replace-hardware-aff-a900]]
-== ハードウェア AFF A900 を移動して交換します
 
 [role="lead"]
+ハードウェア障害が発生した場合は、AFF A900システムのシャーシを交換してください。交換作業には、故障したシャーシから電源装置、ファン、コントローラモジュール、I/Oモジュールを取り外し、交換用シャーシに取り付けることが含まれます。
+
 シャーシを交換するには、障害のあるシャーシからコンポーネントを取り外し、交換用シャーシに取り付ける必要があります。
 
 

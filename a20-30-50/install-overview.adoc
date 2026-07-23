@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, Installation, deployment, Install, deploy, Installing, deploying 
 summary: AFF A20、AFF A30、またはAFF A50ストレージシステムを設置してセットアップするには、設置要件を確認し、設置場所を準備し、ハードウェアコンポーネントを設置してケーブル接続し、ストレージシステムの電源をオンにし、ONTAPクラスタをセットアップする必要があります。 
 ---
-= 設置とセットアップのワークフロー- AFF A20、AFF A30、およびAFF A50
+= AFF A20、AFF A30、およびAFF A50のインストールと構成のワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

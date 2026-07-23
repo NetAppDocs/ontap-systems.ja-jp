@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, replace the chassis 
 summary: AFF A70またはAFF A90システムのシャーシを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。具体的には、システムの他のすべてのコンポーネントが適切に動作していること、ONTAPのローカル管理者のクレデンシャル、正しい交換用シャーシ、および必要な工具があることを確認します。 
 ---
-= シャーシの交換要件- AFF A70およびAFF A90
+= AFF A70またはAFF A90シャーシを交換する前に要件を確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

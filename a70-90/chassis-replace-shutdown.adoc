@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, shutdown the controllers 
 summary: AFF A70またはAFF A90ストレージシステムのコントローラをシャットダウンして、データ損失を防ぎ、シャーシの交換時にシステムの安定性を確保します。 
 ---
-= コントローラをシャットダウンしてシャーシを交換- AFF A70 and AFF A90
+= シャーシを交換するためにAFF A70またはAFF A90コントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

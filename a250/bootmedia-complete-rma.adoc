@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a250, complete the replacement process 
 summary: AFF A250 ストレージ システムのコンポーネントに障害が発生した場合は、障害が発生した部品を NetApp に返却してください。 
 ---
-= 障害が発生したブートメディアをNetAppに返却する - AFF A250
+= 障害が発生した AFF A250 ブートメディアを手動ブートリカバリプロセス後に NetApp に返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

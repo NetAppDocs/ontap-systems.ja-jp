@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a900, complete the replacement process 
 summary: AFF A900 システムを完全動作状態に戻すには、ストレージを再配線し、必要に応じて NetApp Storage Encryption の設定をリストアし、新しいコントローラーのライセンスをインストールします。 
 ---
-= システムの復元の完了 - AFF A900
+= AFF A900システムのコントローラーの交換を完了します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-交換手順を完了してシステムを完全な状態にリストアするには、NetAppストレージ暗号化の設定をリストアし（必要な場合）、新しいコントローラのライセンスをインストールします。
+AFF A900システムのコントローラー交換を完了するには、NetAppストレージ暗号化構成を復元し（必要な場合）、論理インターフェイス（LIF）がホームポートにレポートしていることを確認し、クラスタの健全性チェックを実行して、障害が発生した部品をNetAppに返却します。
 
 
 

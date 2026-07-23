@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: コントローラのHA構成がアクティブで、AFF A1Kストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。 
 ---
-= システム構成のリストアと確認- AFF A1K
+= AFF A1K システムのコントローラー構成を復元して検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

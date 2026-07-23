@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a400, aff, a400, video, rack, cable, system, manager, guide, setup, initial, configuration, hardware, installation, cabling, configuration, hardware installation and cabling, perform end-to-end software configuration 
 summary: このビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。 
 ---
-= ビデオ手順- AFF A400
+= 動画の説明を使用してAFF A400システムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
+AFF A400ストレージシステムのインストールとケーブル接続は、ステップバイステップの動画の手順に従って行ってください。
 
 .アニメーション- AFF A400の設置とセットアップの手順
 video::6cbbcb96-fe92-4040-a004-ab2001624dd7[panopto]

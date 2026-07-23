@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, replace the chassis workflow 
 summary: ASA A20、ASA A30、またはASA A50ストレージシステムのシャーシの交換を開始するには、交換要件の確認、コントローラのシャットダウン、シャーシの交換、およびシステム動作の確認を行います。 
 ---
-= シャーシの交換ワークフロー- ASA A20、ASA A30、およびASA A50
+= ASA A20、ASA A30、およびASA A50シャーシ交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

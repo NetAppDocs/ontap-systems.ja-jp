@@ -4,11 +4,11 @@ sidebar: sidebar
 keywords: aff a800, quick steps 
 summary: このセクションでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。 
 ---
-= クイックステップ - AFF A800
+= クイックセットアップ手順を使用した AFF A800 システムのインストール
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。を使用します link:../media/PDF/Jan_2024_Rev3_AFFA800_ISI_IEOPS-1497.pdf["AFF A800の設置とセットアップの手順"^] ネットアップシステムのインストールに精通している場合。
+NetApp システムのインストールに慣れている場合は、 https://review.docs.netapp.com/us-en/ontap-systems_jackie-hotfix/media/PDF/Jan_2024_Rev3_AFFA800_ISI_IEOPS-1497.pdf["AFF A800インストールおよびセットアップ手順"^]を使用してください。

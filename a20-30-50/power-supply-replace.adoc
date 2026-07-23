@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, replace a power supply 
 summary: AFF A20、AFF A30、またはAFF A50ストレージシステムのACまたはDC電源ユニットに障害が発生した場合や不具合が生じた場合は、システムが安定した動作に必要な電力を継続的に供給できるように交換してください。交換プロセスでは、故障したPSUを電源から切り離し、電源コードを抜き、故障したPSUを交換してから、電源に再接続します。 
 ---
-= 電源のホットスワップ - AFF A20、 AFF A30、 AFF A50
+= AFF A20、AFF A30、またはAFF A50システムの電源ユニットをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

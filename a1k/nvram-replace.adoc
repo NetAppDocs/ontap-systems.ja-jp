@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, replace nvram 
 summary: 不揮発性メモリに障害が発生した場合やアップグレードが必要な場合は、AFF A1KシステムのNVRAMを交換してください。 
 ---
-= NVRAMの交換- AFF A1K
+= AFF A1K システムの NVRAM を交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

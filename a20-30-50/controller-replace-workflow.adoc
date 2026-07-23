@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, replace the controller workflow 
 summary: AFF A20、AFF A30、またはAFF A50ストレージシステムのコントローラを交換するには、まず、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成をリストアし、ストレージリソースの制御を交換用コントローラに戻します。 
 ---
-= コントローラの交換ワークフロー- AFF A20、AFF A30、およびAFF A50
+= AFF A20、AFF A30、およびAFF A50コントローラー交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

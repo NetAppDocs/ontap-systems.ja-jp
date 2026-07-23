@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, replace a power supply 
 summary: ASA A20、ASA A30、またはASA A50ストレージシステムのACまたはDC電源ユニットに障害が発生した場合や不具合が生じた場合は、電源ユニットを交換して、システムが安定した動作に必要な電力を継続的に供給できるようにします。 
 ---
-= 電源装置のホットスワップ - ASA A20、 ASA A30、およびASA A50
+= ASA A20、ASA A30、またはASA A50システムの電源ユニットをホットスワップ対応で交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

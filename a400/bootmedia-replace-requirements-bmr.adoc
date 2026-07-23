@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: a400, replace the boot media 
 summary: AFF A400システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。 
 ---
-= 自動ブートメディアリカバリの要件 - AFF A400
+= AFF A400システムの自動ブートメディアリカバリの要件を確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

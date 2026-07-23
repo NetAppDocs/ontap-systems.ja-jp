@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, move the controller module hardware 
 summary: ハードウェア障害の必要が生じた場合は、 ASA A20、 ASA A30、またはASA A50 ストレージ システムのコントローラを交換します。交換プロセスには、障害のあるコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーのインストール、および再起動が含まれます。 
 ---
-= コントローラを交換してください- ASA A20、ASA A30、ASA A50
+= ASA A20、ASA A30、またはASA A50システムのコントローラーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a250, detailed installation 
 summary: ここでは、 AFF A250 システムのインストール手順について詳しく説明します。 
 ---
-= 詳細手順 - AFF A250
+= 詳細な手順書を使用してAFF A250システムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ここでは、 AFF A250 システムのインストール手順について詳しく説明します。
+以下の詳細な手順に従って、サイトの準備から ONTAP クラスタの起動まで、AFF A250 ストレージシステムをインストールします。
 
 
 

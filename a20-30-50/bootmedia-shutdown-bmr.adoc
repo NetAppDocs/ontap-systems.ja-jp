@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, shut down the controller 
 summary: 自動ブート メディア リカバリ プロセス中にデータの損失を防ぎ、システムの安定性を維持するために、 AFF A20、 AFF A30、またはAFF A50 ストレージ システム内の障害のあるコントローラをシャットダウンします。 
 ---
-= 自動ブートメディアリカバリのためにコントローラをシャットダウンします - AFF A20、 AFF A30、およびAFF A50
+= 自動ブートリカバリプロセス中に AFF A20、AFF A30、または AFF A50 システムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

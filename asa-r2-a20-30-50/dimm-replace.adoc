@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, replace a dimm 
 summary: 過剰な修正可能または修正不可能なメモリ エラーが検出された場合は、 ASA A20、 ASA A30、またはASA A50 ストレージ システム内の DIMM を交換してください。このようなエラーにより、ストレージ システムがONTAPを起動できなくなる可能性があります。交換プロセスには、障害のあるコントローラのシャットダウン、取り外し、DIMM の交換、コントローラの再インストール、そして障害のある部品のNetAppへの返送が含まれます。 
 ---
-= DIMMの交換- ASA A20、ASA A30、およびASA A50
+= ASA A20、ASA A30、またはASA A50システムのDIMMを交換してメモリエラーを修正する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

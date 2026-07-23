@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, verify and set HA state, complete the replacement process 
 summary: シャーシのHA状態を確認し、障害が発生したパーツをNetAppに戻して、ASA A20、ASA A30、およびASA A50シャーシの交換手順の最後の手順を完了します。 
 ---
-= シャーシ交換後の処理- ASA A20、ASA A30、およびASA A50
+= ASA A20、ASA A30、またはASA A50システムのシャーシ交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

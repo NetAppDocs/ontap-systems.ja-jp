@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, Installation, deployment, Install, deploy, Installing, deploying 
 summary: AFF A1Kストレージシステムを設置してセットアップし、ONTAPシステムにHAペアとして導入するには、次の手順を実行します。 
 ---
-= インストールと設定のワークフロー- AFF A1K
+= AFF A1K のインストールおよび構成ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, shut down the impaired controller 
 summary: AFF A1Kストレージシステムのコントローラをシャットダウンしてデータ損失を防止し、コントローラの交換時にシステムの安定性を確保します。 
 ---
-= 障害のあるコントローラをシャットダウンします- AFF A1K
+= AFF A1K システムの障害コントローラーを交換前にシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

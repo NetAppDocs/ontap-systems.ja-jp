@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a900, boot the recovery image 
 summary: 障害のあるコントローラをリカバリイメージからブートするための手順 は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。 
 ---
-= USBドライブからの手動ブートメディアリカバリ - AFF A900
+= 手動ブートリカバリプロセスを使用して、AFF A900システムのリカバリイメージを起動します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-システムに新しいブートメディアデバイスを取り付けたら、リカバリイメージをUSBドライブからブートし、パートナーノードから設定をリストアできます。
+新しいブートメディアを AFF A900 システムにインストールしたら、USB ドライブから ONTAP リカバリイメージをブートして、パートナーノードから構成を復元します。
 
 ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。システムで以前のバージョンのONTAPを実行している場合は、手動ブートリカバリ手順を使用する必要があります。
 

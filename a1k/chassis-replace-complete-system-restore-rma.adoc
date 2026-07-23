@@ -4,21 +4,21 @@ sidebar: sidebar
 keywords: aff a1k,  verify and set HA state, complete the replacement process 
 summary: コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、 AFF A1Kシャーシ交換手順の最終ステップを完了します。 
 ---
-= シャーシ交換を完了 - AFF A1K
+= AFF A1K システムのシャーシの交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、 AFF A1Kシャーシ交換手順の最終ステップを完了します。
+コントローラーを再起動し、システムの状態を確認し、AFF A1K システムのシャーシ交換の最終ステップを完了するために、障害のある部品を NetApp に返送してください。
 
 
 
 [[step-1-boot-the-controllers-and-verify-system-health]]
 == ステップ1: コントローラを起動し、システムの健全性を確認する
 
-コントローラが再起動したら、 ONTAPを起動し、コントローラを戻して、ストレージ システムの健全性を確認します。
+コントローラーを再起動した後、ONTAP を起動し、コントローラーをギブバックして、システムの状態を確認してください。
 
 .手順
 . コンソールの出力を確認します。

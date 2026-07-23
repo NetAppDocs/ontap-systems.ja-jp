@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: ASA A20、ASA A30、またはASA A50ストレージシステムのコントローラ交換を完了するには、まずNetAppストレージ暗号化の設定をリストアし、新しいコントローラに必要なライセンスをインストールします。次に、論理インターフェイスがホームポートにレポートしていることを確認し、クラスタヘルスチェックを実行します。最後に、新しいコントローラのシリアル番号を登録し、障害が発生した部品をNetAppに返却します。 
 ---
-= コントローラ交換後の処理- ASA A20、ASA A30、ASA A50
+= ASA A20、ASA A30、またはASA A50システムのコントローラーの交換を完了します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

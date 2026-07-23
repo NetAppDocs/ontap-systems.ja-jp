@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a400, aff, a400, environment, variable, complete, system, onboard, key, manager, okm, storage, volume, netapp, encryption, post, boot, media, replacement, post boot media replacement stpes for okm nse and nve 
 summary: 交換用ブートメディアの暗号化をリストアします。オンボードキーマネージャ、NetApp Storage Encryption、またはNetApp Volume Encryptionが有効になっているシステムに固有の手順を実行します。 
 ---
-= リストア暗号化- AFF A400
+= AFF A400 システムのブートメディアの暗号化を手動ブートリカバリプロセス後に復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-交換用ブートメディアで暗号化をリストアします。
+AFF A400 システムの交換用ブートメディアで暗号化を復元し、継続的なデータ保護を確保します。交換プロセスには、キーの可用性の確認、暗号化設定の再適用、データへの安全なアクセスの確認が含まれます。
 
 ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。システムで以前のバージョンのONTAP を実行している場合は、手動ブートリカバリプロセスを使用する必要があります。
 

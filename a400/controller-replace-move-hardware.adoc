@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a400, move the controller module hardware 
 summary: ハードウェア障害が発生した場合は、AFF A400システムのコントローラを交換してください。故障したコントローラを取り外し、そのコンポーネントを交換用コントローラに移動し、新しいコントローラを取り付けて再起動します。 
 ---
-= コントローラの交換 - AFF A400
+= AFF A400システムのコントローラーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

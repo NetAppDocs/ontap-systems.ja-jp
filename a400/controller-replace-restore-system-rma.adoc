@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a400, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: AFF A400 システムのコントローラ交換を完了します。交換用コントローラのライセンスをインストールし、論理インターフェイス（LIF）がホームポートにレポートしていることを確認し、クラスタヘルスチェックを実行します。最後に、障害が発生した部品を NetApp に返却します。 
 ---
-= コントローラの完全交換 - AFF A400
+= AFF A400システムのコントローラーの交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

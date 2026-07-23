@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a800, detailed installation 
 summary: このセクションでは、 AFF A800 システムの設置手順について詳しく説明します。 
 ---
-= 詳細な手順 - AFF A800
+= 詳細な手順に従ってAFF A800システムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このセクションでは、 AFF A800 システムの設置手順について詳しく説明します。
+以下の詳細な手順に従って、サイトの準備から ONTAP クラスタの起動まで、AFF A800 ストレージシステムをインストールしてください。
 
 
 

@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: aff a900, replace nvram 
 summary: NVRAM モジュールは、 NVRAM11 と DIMM 、および NVRAM モジュールあたり最大 2 つの NVMe SSD Flash Cache モジュールで構成されます。 
 ---
-= NVRAM モジュール / NVRAM DIMM を交換してください - AFF A900
+= AFF A900システムのNVRAMモジュールまたはNVRAM DIMMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+AFF A900システムのNVRAMモジュールまたはNVRAM DIMMは、モジュールに障害が発生したり、DIMMに不具合が生じたりした場合に交換してください。交換の手順では、シャーシからNVRAMモジュールを取り外し、故障したコンポーネントを交換してから、モジュールを再取り付けします。
+
 NVRAM モジュールは NVRAM11 と DIMM で構成されます。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。障害が発生した NVRAM モジュールを交換するには、モジュールをシャーシから取り外し、 DIMM を交換用モジュールに移して、交換用 NVRAM モジュールをシャーシに取り付ける必要があります。
 
 とNVRAM DIMMを交換するには、NVRAMモジュールをシャーシから取り外し、モジュール内の障害が発生したDIMMを交換してから、NVRAMモジュールを再度取り付ける必要があります。

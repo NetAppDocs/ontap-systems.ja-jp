@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, replace the nv battery, NV battery 
 summary: AFF A1KシステムのNVバッテリは、停電時に重要なシステムデータを保持する役割があるため、バッテリの充電が失われたり障害が発生したりしたときに交換します。交換プロセスでは、障害のあるコントローラのシャットダウン、コントローラモジュールの取り外し、NVバッテリの交換、コントローラモジュールの再取り付け、障害が発生したパーツのNetAppへの返却を行います。 
 ---
-= NVバッテリの交換- AFF A1K
+= AFF A1K システムの NV バッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

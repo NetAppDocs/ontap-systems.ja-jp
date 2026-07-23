@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: a400, boot the recovery image 
 summary: AFF A400システムに新しいブートメディアデバイスをインストールしたら、自動ブートメディアリカバリプロセスを開始して、パートナーノードから設定を復元できます。 
 ---
-= パートナーノードからの自動ブートメディアリカバリ - AFF A400
+= 自動ブートリカバリプロセスを使用して AFF A400 システムのブートイメージを復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

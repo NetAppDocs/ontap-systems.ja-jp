@@ -2,16 +2,16 @@
 permalink: a900/install-detailed-guide.html 
 sidebar: sidebar 
 keywords: AFF A900 
-summary: これは、一般的なネットアップシステムのインストール手順を詳しく説明したものです。 
+summary: このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。 
 ---
-= 詳細な手順- AFF A900
+= 詳細な手順に従ってAFF A900システムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-この記事では、一般的なネットアップシステムのインストール手順について詳しく説明します。インストール手順の詳細については、この資料を参照してください。
+以下の詳細な手順に従って、サイトの準備から ONTAP クラスタの起動まで、AFF A900 ストレージシステムをインストールしてください。
 
 
 

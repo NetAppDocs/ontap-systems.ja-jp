@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, detailed, guide, prepare, install, hardware, cable, controllers, node, switchless, cluster, network, configuration, system, setup, discovery 
 summary: このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。 
 ---
-= 詳細ガイド- AFF A150
+= 詳細な手順に従ってAFF A150システムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このセクションでは、AFF A150システムの設置手順について詳しく説明します。
+AFF A150ストレージシステムのインストールは、サイトの準備からONTAPクラスタの起動まで、これらの詳細なステップバイステップの手順に従って行います。
 
 MetroCluster 構成の場合は、を使用します https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster のドキュメント"^]。
 

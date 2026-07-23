@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, hot swap a cluster ha card, hot swap ethernet client io module, hotswap io module, hot swap io module 
 summary: AFF A70またはAFF A90ストレージ システムで、モジュールに障害が発生し、ストレージ システムがすべてのONTAPバージョン要件を満たしている場合は、Ethernet I/Oモジュールをホットスワップできます。 
 ---
-= I/OモジュールのホットスワップAFF A70およびAFF A90
+= AFF A70またはAFF A90システムをシャットダウンせずにI/Oモジュールをホットスワップ対応する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

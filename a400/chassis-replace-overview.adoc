@@ -2,19 +2,25 @@
 permalink: a400/chassis-replace-overview.html 
 sidebar: sidebar 
 keywords: aff a400, aff, a400, component, system, function, properly, contact, technical, support, replace, chassis, shut, down, controller, replacing, remove, module, fan, equipment, rack, cabinet, ha, state, switch, back, aggregate, two-node, metrocluster, configuration, complete, replacement, process, replace the chassis, shut down the controllers when replacing a chassis, remove the controller modules, move the fans, replace a chassis from within the equipment rack or system cabinet, install the controller modules, verify and set the ha state of the chassis, switch back aggregates in a two-node metrocluster configuration, complete the replacement process 
-summary: 障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
+summary: AFF A400 システムのシャーシ交換を開始するには、コントローラをシャットダウンし、ハードウェアを交換用シャーシに移動して、システムの復旧を完了します。 
 ---
-= シャーシの交換の概要 - AFF A400
+= AFF A400シャーシ交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-シャーシを交換するには、障害のあるシャーシから障害のあるシャーシと同じモデルの新しいシャーシにファンとコントローラモジュールを移動する必要があります。
+AFF A400 システムのシャーシ交換を開始するには、コントローラをシャットダウンし、ハードウェアを交換用シャーシに移動して、システムの復旧を完了します。
 
-システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]link:chassis-replace-shutdown.html["コントローラをシャットダウン"]
+[role="quick-margin-para"]
+シャーシのメンテナンスを安全に実行するには、コントローラをシャットダウンします。
 
-* この手順は、システムでサポートされるすべてのバージョンの ONTAP で使用できます。
-* この手順はシステムの停止を伴います。2 ノードクラスタでは、マルチノードクラスタでサービスが完全に停止し、部分的に停止します。
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:chassis-replace-move-hardware.html["シャーシを交換してください"]
+[role="quick-margin-para"]
+ファン、ドライブ、コントローラーモジュールを、故障したシャーシから交換用シャーシに移設してください。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:chassis-replace-complete-system-restore-rma.html["シャーシ交換後の処理"]
+[role="quick-margin-para"]
+HA 状態を確認し、必要に応じてアグリゲートをスイッチバックし、故障したシャーシを NetApp に返却して交換を完了します。

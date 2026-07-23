@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: LED USB module,replacing,hot-swapping,LED USB module,non-disruptive replacement,LED USB module 
 summary: サービスを中断することなく LED USB モジュールを交換できます。 
 ---
-= LED USB モジュールを交換してください - AFF A900
+= AFF A900 システムの LED USB モジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+AFF A900 システムの LED USB モジュールを交換して、コンソールポートへの接続とシステムステータスを復元します。交換作業には工具は不要で、サービスの中断もありません。
+
 LED USB モジュールは、コンソールポートおよびシステムステータスへの接続を提供します。このモジュールの交換にはツールは必要なく、サービスを中断することもありません。
 
 

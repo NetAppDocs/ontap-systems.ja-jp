@@ -2,16 +2,16 @@
 permalink: a150/maintain-overview.html 
 sidebar: sidebar 
 keywords: aff A150 maintenance, maintenance, repairing a150, repairing aff a150, replace aff a150 components, replace aff a150 components 
-summary: ASA A150ハードウェアのメンテナンス 
+summary: AFF A150 ハードウェアを保守する 
 ---
-= AFF A150ハードウェアのメンテナンス
+= AFF A150ストレージシステムのメンテナンスについて
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-AFF A150ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。
+AFF A150 ストレージシステムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保してください。ダウンタイムやデータ損失を防ぐため、故障した部品の交換など、定期的なメンテナンス作業を実施してください。
 
 
 

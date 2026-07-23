@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a250, how to recable the system, how to reassign disks 
 summary: ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。 
 ---
-= システムにケーブルを再接続し、ディスクを再割り当てします（ AFF A250 ）
+= AFF A250システムのケーブルを再配線し、ディスクを再割り当てする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-A250 システムの復元とシステム構成の確認が完了したら、システムのケーブルを再接続し、ディスクを再割り当てする必要があります。
+ストレージのケーブルを再接続し、ディスクの再割り当てを確認し、NetApp Storage Encryption を復元して、AFF A250 システムを完全稼働状態に戻します。
 
 ストレージを再接続し、ディスクの再割り当てを確認して、交換用手順を続行します。
 

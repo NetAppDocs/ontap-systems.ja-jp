@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a800, replace an nvdimm 
 summary: システムでフラッシュの寿命がほぼ終了したこと、または特定されたNVDIMMが正常でないことが登録された場合は、AFF A800コントローラモジュールのNVDIMMを交換してください。障害が発生したNVDIMMを交換しないと、システムパニックが発生する可能性があります。 
 ---
-= NVDIMM を交換します - AFF A800
+= AFF A800システムのNVDIMMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

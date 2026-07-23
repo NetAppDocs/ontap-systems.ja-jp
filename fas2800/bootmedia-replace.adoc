@@ -115,7 +115,7 @@ NOTE: ソケットやブートメディアが損傷する可能性があるた�
 .手順
 . 適切なバージョンのONTAPイメージを、フォーマットされたUSBフラッシュドライブにダウンロードします。
 +
-.. 使用 https://kb.netapp.com/onprem/ontap/dm/Encryption/How_to_determine_if_the_running_ONTAP_version_supports_NetApp_Volume_Encryption_(NVE)["実行しているONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認する方法"^] ボリューム暗号化が現在サポートされているかどうかを確認します。
+..  https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/How_to_determine_if_the_running_ONTAP_version_supports_Data_At_Rest_Encryption["お使いの ONTAP バージョンが NetApp Volume Encryption （NVE） をサポートしているかどうかを確認する方法"^]を使用して、ボリューム暗号化が現在サポートされているかどうかを確認します。
 +
 *** クラスタでNVEがサポートされている場合は、NetApp Volume Encryptionを含むイメージをダウンロードします。
 *** クラスタでNVEがサポートされていない場合は、NetApp Volume Encryptionを含まないイメージをダウンロードします。

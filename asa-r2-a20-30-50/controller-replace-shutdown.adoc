@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, shut down the impaired controller 
 summary: ASA A20、ASA A30、またはASA A50ストレージシステムの障害のあるコントローラをシャットダウンして、データ損失を防ぎ、コントローラの交換時にシステムの安定性を確保します。 
 ---
-= 障害のあるコントローラをシャットダウンします（ASA A20、ASA A30、ASA A50）。
+= ASA A20、ASA A30、またはASA A50システムの交換前に障害のあるコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

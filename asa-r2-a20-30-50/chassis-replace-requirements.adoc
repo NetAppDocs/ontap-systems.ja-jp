@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, replace the chassis 
 summary: ASA A20、 ASA A30、またはASA A50 ストレージ システムのシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが適切に機能していることを確認すること、正しい交換用シャーシと必要なツールがあることを確認することが含まれます。 
 ---
-= シャーシの交換要件- ASA A20、ASA A30、およびASA A50
+= ASA A20、ASA A30、またはASA A50シャーシを交換する前に要件を確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

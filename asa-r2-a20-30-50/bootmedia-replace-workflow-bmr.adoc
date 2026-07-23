@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, replace the boot media 
 summary: ASA A20、ASA A30、およびASA A50ストレージシステムのブートメディアの交換を開始します。まず、交換要件を確認し、障害のあるコントローラのシャットダウン、ブートメディアの交換、ブートメディアへのイメージのリストア、システム機能の確認を行います。 
 ---
-= ブートメディアの交換ワークフロー- ASA A20、ASA A30、およびASA A50
+= ASA A20、ASA A30、およびASA A50の自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

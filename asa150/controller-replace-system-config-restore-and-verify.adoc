@@ -10,9 +10,6 @@ summary: ハードウェアの交換が完了してメンテナンスモード�
 :imagesdir: ../media/
 
 
-[role="lead"]
-ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。
-
 
 
 [[step-1-set-and-verify-system-time-after-replacing-the-controller]]

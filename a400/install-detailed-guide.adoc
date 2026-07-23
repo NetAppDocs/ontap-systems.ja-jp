@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a400, aff, a400, step-by-step, instruction, install, typical, netapp, system, instruction, detail, guide, prepare, installation, hardware, cable, controller, network, drive, shelves, shelf, complete, setup, configuration, detailed guide, prepare for installation, install the hardware, cable controllers to your network, cable controllers to drive shelves, complete system setup and configuration 
 summary: このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。インストール手順の詳細については、このガイドを参照してください。 
 ---
-= 詳細ガイド - AFF A400
+= 詳細な手順書を使用してAFF A400システムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。インストール手順の詳細については、このガイドを参照してください。
+AFF A400ストレージシステムのインストールは、サイトの準備からONTAPクラスタの起動まで、これらの詳細なステップバイステップの手順に従って行います。
 
 
 

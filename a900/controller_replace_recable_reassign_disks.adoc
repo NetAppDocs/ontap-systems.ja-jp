@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: aff a900, recable the system, reassign disks 
 summary: ストレージとネットワーク構成の配線をやり直して、交換手順を続行します。 
 ---
-= システムにケーブルを再接続します（ AFF A900 ）
+= AFF A900システムのケーブルを再配線し、ディスクを再割り当てする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+ストレージとネットワーク構成を再接続し、NetApp Storage Encryption を復元して、AFF A900 システムを完全稼働状態に戻します。
+
 ストレージおよびネットワーク接続をケーブルで再接続して、交換用手順を続行します。
 
 

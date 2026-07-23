@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, replace, real, time, clock, battery, impaired, controller, shut, down, controller, system, rtc, date, time, controller, module, reinstall, replace, open 
 summary: コントローラモジュール内のリアルタイムクロックバッテリを交換することで、正確な時刻同期に依存するシステムのサービスやアプリケーションが引き続き機能するようになります。 
 ---
-= リアルタイムクロックバッテリを交換してください（AFF A150）
+= AFF A150システムのリアルタイム時計バッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+AFF A150システムのリアルタイム時計（RTC）バッテリーを交換して、正確な時刻同期に依存するサービスやアプリケーションが引き続き機能することを確認してください。
+
 コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。
 
 * この手順は、システムでサポートされるすべてのバージョンの ONTAP で使用できます

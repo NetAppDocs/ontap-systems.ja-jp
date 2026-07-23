@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a250, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: AFF A250 システムのコントローラ交換を完了するには、必要に応じて NetApp Storage Encryption 構成をリストアし、新しいコントローラのライセンスをインストールして、障害が発生した部品を NetApp に返却します。 
 ---
-= コントローラの完全交換 - AFF A250
+= AFF A250システムのコントローラーの交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-AFF A250 システムのコントローラ交換を完了して完全に動作させるには、NetApp Storage Encryption 構成をリストア（必要な場合）し、新しいコントローラのライセンスをインストールして、キットに同梱されている RMA 手順書の説明に従って障害が発生した部品を NetApp に返却する必要があります。
+AFF A250システム コントローラの交換を完了するには、（必要に応じて）NetApp Storage Encryptionの構成を復元し、論理インターフェイス（LIF）がホームポートにレポートしていることを確認し、クラスターのヘルスチェックを実行して、障害が発生したパーツをNetAppに返却します。
 
 
 

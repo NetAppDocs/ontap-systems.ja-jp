@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a800, replace the chassis 
 summary: 障害のあるシャーシを識別し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けて、 AFF A800 システム内の障害のあるシャーシを交換する準備をします。 
 ---
-= シャーシ交換の準備 - AFF A800
+= AFF A800シャーシの交換準備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, boot, recovery, image, restore, file, system, environmental, varible 
 summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
-= リカバリイメージ（AFF A150）をブートします
+= 手動ブートリカバリプロセスを使用して AFF A150 システムのリカバリイメージを起動する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+新しいブートメディアを AFF A150 システムにインストールしたら、USB ドライブから ONTAP リカバリイメージを起動して、ファイルシステムを復元し、環境変数を確認します。
+
 ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
 
 .手順

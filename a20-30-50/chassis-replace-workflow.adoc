@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, replace the chassis workflow 
 summary: AFF A20、AFF A30、またはAFF A50ストレージシステムのシャーシの交換を開始するには、交換要件の確認、コントローラのシャットダウン、シャーシの交換、およびシステム動作の確認を行います。 
 ---
-= シャーシの交換ワークフロー- AFF A20、AFF A30、およびAFF A50
+= AFF A20、AFF A30、およびAFF A50シャーシ交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
