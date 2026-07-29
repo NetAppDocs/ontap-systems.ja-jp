@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c800, boot the recovery image 
 summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
-= USBドライブからの手動ブートメディアリカバリ - AFF C800
+= 手動ブートリカバリプロセスを使用して、AFF C800システムのリカバリイメージを起動します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

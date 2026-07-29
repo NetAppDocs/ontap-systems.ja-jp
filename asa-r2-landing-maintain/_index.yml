@@ -1,9 +1,9 @@
 ---
 indexpage:
-  title: ASA R2システムの保守
-  summary: ASA R2システムのメンテナンス方法について説明します。
+  title: ONTAP ASA r2 システムのメンテナンス
+  summary: ONTAP ASA r2 システムのメンテナンス方法について説明します。
   keywords: maintain asa a1k, a70, a90
-  lead: ハードウェアのメンテナンス手順が必要になる場合があります。このセクションでは、ASA r2システムコンポーネントのメンテナンスに固有の手順について説明します。
+  lead: ハードウェアのメンテナンス手順を実行する必要がある場合があります。ONTAP ASA r2 システムコンポーネントのメンテナンスに関する具体的な手順は、このセクションに記載されています。
   tiles:
   - title: ASA A1K
     links:

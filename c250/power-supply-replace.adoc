@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c250, replace a power supply 
 summary: 電源装置を交換するには、ターゲットの電源装置の接続を解除して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。 
 ---
-= 電源のホットスワップ - AFF C250
+= AFF C250ストレージシステムの電源ユニットをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

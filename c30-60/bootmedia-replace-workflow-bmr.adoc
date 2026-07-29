@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, replace the boot media 
 summary: ブートイメージの自動リカバリでは、システムが適切なブートメニューオプションを自動的に識別して選択します。パートナーノードのブートイメージを使用して、 AFF C30またはAFF C60ストレージシステムの交換用ブートメディアにONTAPを再インストールします。 
 ---
-= ブートメディアの自動リカバリワークフロー - AFF C30 およびAFF C60
+= AFF C30 および AFF C60 の自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

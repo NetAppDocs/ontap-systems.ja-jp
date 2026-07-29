@@ -4,16 +4,16 @@ sidebar: sidebar
 keywords: aff c400, aff, c400, shut, down, impair, controller, check, status, onboard, encryption, keys, status, disable, automatic, giveback, version, ontap, system, run, pre-shutdown, check, pre-shutdown checks for onboard encryption keys 
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
-= 暗号化キーのサポートとステータスの確認- AFF C400
+= AFF C400ストレージシステムのブートメディアの暗号化サポートを確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ストレージシステムのデータセキュリティを確保するには、暗号化キーのサポートとブートメディアのステータスを確認する必要があります。ONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認し、コントローラをシャットダウンする前にキー管理ツールがアクティブになっているかどうかを確認してください。
+障害のあるコントローラをシャットダウンする前に、AFF C400ストレージシステムのブートメディアの暗号化サポートを確認してください。これには、NetApp Volume Encryption（NVE）とのONTAPバージョン互換性の確認およびキーマネージャ構成の確認が含まれます。
 
-ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow.html["手動ブート回復手順"]
+ストレージ システムで ONTAP 9.17.1 以降が実行されている場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"]を使用します。
 
 
 

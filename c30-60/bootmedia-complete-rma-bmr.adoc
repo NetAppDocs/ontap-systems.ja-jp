@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, complete the replacement process 
 summary: AFF C30またはAFF C60ストレージシステムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返送して 
 ---
-= 故障したブートメディア部品をNetAppに返却してください - AFF C30およびAFF C60
+= 障害が発生した AFF C30 または AFF C60 のブートメディアを、自動ブートリカバリプロセスの完了後に NetApp に返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

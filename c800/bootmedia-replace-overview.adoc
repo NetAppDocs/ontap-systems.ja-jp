@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c800, replace the boot media 
 summary: 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。 
 ---
-= ブートメディアの交換の概要- AFF C800
+= AFF C800システムのブートメディア交換について
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

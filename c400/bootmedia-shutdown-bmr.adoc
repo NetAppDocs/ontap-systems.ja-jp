@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: c400, shut down the controller 
 summary: ブート メディアを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、 AFF C400ストレージ システム内の障害のあるコントローラをシャットダウンします。 
 ---
-= 自動ブートメディアリカバリのためにコントローラをシャットダウンする - AFF C400
+= 自動ブートリカバリプロセス中に AFF C400 ストレージシステムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

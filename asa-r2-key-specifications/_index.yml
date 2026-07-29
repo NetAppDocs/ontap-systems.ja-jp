@@ -1,9 +1,9 @@
 ---
 indexpage:
-  title: ASA r2システムの主な仕様
-  summary: ASA r2 A1K、A70、A90、A20、A30、および A50 システムの主な仕様について説明します。
+  title: ONTAP ASA r2システムの主な仕様
+  summary: ONTAP ASA r2 A1K、A70、A90、A20、A30、およびA50システムの主な仕様について説明します。
   keywords: asa r2, key specifications, a1k, a70, a90, a20, a30, a50
-  lead: ASA r2 システムの主要なハードウェア仕様を確認します。詳細な仕様を表示するには、以下のプラットフォームを選択してください。
+  lead: ONTAP ASA r2 システムの主要なハードウェアの仕様を確認してください。詳細な仕様をご覧になるには、下記からお使いのプラットフォームを選択してください。
   tiles:
   - title: ASA r2 A1K
     links:

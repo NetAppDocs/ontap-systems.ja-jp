@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c190, locate, boot, media, controller, direction, replace, manual, manual boot recovery 
 summary: AFF C190コントローラ モジュール上の障害が発生したブート メディアを交換します。AFF C190システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= ブートメディアを交換してください - AFF C190
+= AFF C190システムのブートメディアを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

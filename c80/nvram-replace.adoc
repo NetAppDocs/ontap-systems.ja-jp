@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, replace nvram 
 summary: NVRAMモジュールは、NVRAM12とDIMM、およびNVRAMモジュールごとに最大2つのNVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）で構成されます。 
 ---
-= NVRAMの交換- AFF C80
+= AFF C80ストレージシステムのNVRAMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

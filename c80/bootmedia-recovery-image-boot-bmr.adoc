@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, boot the recovery image 
 summary: AFF C80 ストレージ システムに新しいブート メディア デバイスをインストールした後、自動ブート メディア リカバリ プロセスを開始して、パートナー ノードから構成を復元できます。 
 ---
-= パートナーノードからの自動ブートメディアリカバリ - AFF C80
+= 自動ブートリカバリプロセスを使用して、AFF C80ストレージシステムのブートイメージを復元します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

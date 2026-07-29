@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c400, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: AFF C400 ストレージシステムでコントローラの HA 構成がアクティブで正しく機能していることを確認し、システムのストレージポートにディスクへのすべてのパスがリストされていることを確認してください。 
 ---
-= システム構成を復元して確認します（AFF C400）
+= AFF C400ストレージシステムのコントローラー構成を復元して検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

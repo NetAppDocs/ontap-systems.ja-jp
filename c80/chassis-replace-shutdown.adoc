@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, shutdown the controllers 
 summary: AFF C80ストレージシステムのコントローラをシャットダウンして、データ損失を防ぎ、シャーシの交換時にシステムの安定性を確保します。 
 ---
-= コントローラをシャットダウンしてシャーシを交換します- AFF C80
+= シャーシを交換するためにAFF C80コントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

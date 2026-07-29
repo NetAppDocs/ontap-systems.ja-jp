@@ -4,11 +4,13 @@ sidebar: sidebar
 keywords: aff c400, aff, c400, replace, part, return, fail, netapp, rema, instruction, ship, kit, technical, support, complete, replacement, process, complete the replacement process 
 summary: ブートメディアを交換したら、故障した部品をNetAppに返送してください。 
 ---
-= 故障したブートメディアをNetAppに返却 - AFF C400
+= 障害が発生した AFF C400 ブートメディアを手動ブートリカバリプロセス後に NetApp に返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+障害が発生した AFF C400 ブートメディアを交換後、キットに同梱されている RMA 手順書に記載されているとおりに NetApp に返送してください。
+
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

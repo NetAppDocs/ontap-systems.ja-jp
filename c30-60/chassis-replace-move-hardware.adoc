@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, move hardware components, replace the chassis 
 summary: 'ハードウェア障害が発生した場合は、 AFF C30 またはAFF C60 ストレージ システムのシャーシを交換します。交換プロセスには、コントローラーと電源ユニット (PSU) の取り外し、ドライブの取り外し、交換用シャーシのインストール、およびシャーシ コンポーネントの再取り付けが含まれます。' 
 ---
-= シャーシの交換- AFF C30 and AFF C60
+= AFF C30 または AFF C60 ストレージシステムのシャーシを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

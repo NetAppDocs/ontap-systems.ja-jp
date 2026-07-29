@@ -1,9 +1,9 @@
 ---
 indexpage:
-  title: AFF Aシリーズシステム
+  title: ONTAP AFF A-Series システム
   summary: AFF Aシリーズシステムの設置、セットアップ、および保守については、ストレージシステムのマニュアルを参照してください。
   keywords: aff a-series, a150, a250, a800, a900, a400, datasheet, install, setup
-  lead: AFF Aシリーズシステムは、組織のインフラをより迅速に変革し、データ主体の戦略を推進できるように設計されています。
+  lead: ONTAP AFF A シリーズシステムは、組織がインフラストラクチャをより迅速に変革し、データ主体の戦略を推進できるよう設計されています。
   tiles:
   - title: はじめに
     links:

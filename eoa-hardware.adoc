@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: eoa-hardware.html 
 keywords: legacy, hardware, end-of-support 
-summary: サポートが終了したレガシーハードウェアについて説明します。 
+summary: サポートが終了した旧型ハードウェアについて説明します。 
 ---
-= ハードウェアのサポート終了
+= ONTAPハードウェアシステムはサポート対象外となりました
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

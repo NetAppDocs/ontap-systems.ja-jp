@@ -2,9 +2,9 @@
 permalink: c400/bootmedia-recovery-image-boot-bmr.html 
 sidebar: sidebar 
 keywords: c400, boot the recovery image 
-summary: ASA A70またはASA A90システムに新しいブートメディアデバイスを取り付けたら、自動ブートメディアリカバリプロセスを開始して、パートナーノードから構成をリストアできます。 
+summary: AFF C400システムに新しいブートメディアデバイスをインストールしたら、自動ブートメディアリカバリプロセスを開始して、パートナーノードから設定を復元できます。 
 ---
-= パートナーノードからの自動ブートメディアリカバリ - AFF C400
+= 自動ブートリカバリプロセスを使用して、AFF C400ストレージシステムのブートイメージを復元します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff c190, detailed installation 
 summary: このセクションでは、 AFF C190 システムをインストールする手順について詳しく説明します。 
 ---
-= ステップの詳細 - AFF C190
+= 詳細な手順を使用してAFF C190ストレージシステムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このセクションでは、 AFF C190 システムをインストールする手順について詳しく説明します。
+AFF C190ストレージシステムを、ラックへの設置やケーブル接続から初期システム起動まで、詳細なステップバイステップの手順に従ってインストールします。
 
 
 

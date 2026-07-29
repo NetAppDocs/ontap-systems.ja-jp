@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c190, shut down the controller, manual, manual boot recovery 
 summary: 暗号化チェックを完了した後、 AFF C190システム上の障害のあるコントローラをシャットダウンします。AFF C190システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= コントローラをシャットダウンします。 AFF C190
+= 手動ブートリカバリプロセス中に AFF C190 システムの障害コントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

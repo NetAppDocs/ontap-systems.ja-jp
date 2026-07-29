@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: c250, boot the recovery image 
 summary: 新しいブートメディアデバイスをAFF C250システムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。 
 ---
-= パートナー ノードからの自動ブート メディア リカバリ - AFF C250
+= 自動ブートリカバリプロセスを使用して、AFF C250ストレージシステムのブートイメージを復元します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

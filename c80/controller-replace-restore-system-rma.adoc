@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: 論理インターフェイスがホームポートに報告していることを確認し、クラスタの健全性チェックを実行し、障害が発生したパーツをNetAppに戻して、AFF C80コントローラの交換手順の最後の手順を完了します。 
 ---
-= コントローラ交換後の処理- AFF C80
+= AFF C80 ストレージシステムのコントローラーの交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

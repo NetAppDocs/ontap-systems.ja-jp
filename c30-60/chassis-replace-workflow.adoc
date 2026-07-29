@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, replace the chassis workflow 
 summary: AFF C30またはAFF C60ストレージシステムのシャーシの交換を開始するには、交換要件の確認、コントローラのシャットダウン、シャーシの交換、システム動作の確認を行います。 
 ---
-= シャーシの交換ワークフロー- AFF C30とAFF C60
+= AFF C30およびAFF C60シャーシ交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

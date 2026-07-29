@@ -2,9 +2,9 @@
 permalink: c800/bootmedia-recovery-image-boot-bmr.html 
 sidebar: sidebar 
 keywords: c800, boot the recovery image 
-summary: ASA A70またはASA A90システムに新しいブートメディアデバイスを取り付けたら、自動ブートメディアリカバリプロセスを開始して、パートナーノードから構成をリストアできます。 
+summary: 新しいブートメディアデバイスをAFF C800システムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。 
 ---
-= パートナーノードからの自動ブートメディアリカバリ - AFF C800
+= 自動ブートリカバリプロセスを使用して、AFF C800システムのブートイメージを復元します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

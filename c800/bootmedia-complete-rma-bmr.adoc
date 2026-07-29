@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: c800, complete the replacement process 
 summary: 部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。 
 ---
-= 故障したブートメディアをNetAppに返却 - AFF C800
+= 障害が発生した AFF C800 ブートメディアを自動ブートリカバリプロセス後に NetApp に返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

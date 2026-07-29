@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, replace a pcie card 
 summary: AFF C80 システムで、モジュールに障害が発生した場合、またはより高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、IO モジュールを交換します。 
 ---
-= I/O モジュールを交換してください - AFF C80
+= AFF C80ストレージシステムのI/Oモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

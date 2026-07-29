@@ -1,10 +1,10 @@
 ---
 indexpage:
-  title: ASAシステム
-  summary: ASA Aシリーズシステムの設置、セットアップ、および保守については、ストレージシステムのマニュアルを参照してください。
+  title: ONTAP ASA システム
+  summary: ストレージシステムのドキュメントでは、ONTAP ASA A シリーズシステムのインストール、セットアップ、およびメンテナンスを行うことができます。
   keywords: asa, a-series, asa a150, asa a250, asa a400, asa a800, asa a900, datasheet
-  lead: ASAシステムは、FCP または iSCSI プロトコルを使用して、企業のミッション クリティカルなデータベースやその他の SAN ワークロードに継続的なデータ可用性を提供する、簡素化された専用の
-    SAN エクスペリエンスを提供します。
+  lead: ONTAP ASA システムは、FCP または iSCSI プロトコルを使用して、企業のミッションクリティカルなデータベースやその他の SAN ワークロードに継続的なデータ可用性を提供する、シンプルで専用の
+    SAN エクスペリエンスを実現します。
   tiles:
   - title: はじめに
     links:

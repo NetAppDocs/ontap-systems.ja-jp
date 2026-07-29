@@ -2,16 +2,16 @@
 permalink: c30-60/overview.html 
 sidebar: sidebar 
 keywords: AFF C30 C60 specifications, AFF C30 C60 specs, AFF C30 C60 capacity, AFF C30 C60 memory, AFF C30 C60 IO, AFF C30 C60 compliance 
-summary: C30-60プラットフォームグループの主な仕様 
+summary: 単一の高可用性ペアにおける AFF C30 および AFF C60 ストレージシステムの主な仕様 
 ---
-= C30-60プラットフォームグループの主な仕様
+= AFF C30およびAFF C60の主な仕様
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-以下は、C30-60 プラットフォーム グループの選択仕様です。訪問 https://hwu.netapp.com["NetApp Hardware Universe の略"^]仕様の完全なリストについては、(HWU) をご覧ください。このページは、単一の高可用性ペアを反映しています。
+以下は、AFF C30 および AFF C60 ストレージシステムを単一の高可用性ペアで構成した場合の主な仕様です。これらのストレージシステムの完全な仕様については、 https://hwu.netapp.com["NetApp Hardware Universe の略"^]をご覧ください。
 
 
 

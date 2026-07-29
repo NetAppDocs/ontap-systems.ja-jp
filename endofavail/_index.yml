@@ -1,10 +1,10 @@
 ---
 indexpage:
-  title: End of Availabilityシステム
-  summary: ASA システムのインストール、セットアップ、および保守については、ストレージシステムのマニュアルを参照してください。
+  title: ONTAPハードウェアシステムの提供終了
+  summary: ストレージシステムのドキュメントでは、ONTAP ハードウェアシステムのインストール、セットアップ、およびメンテナンスを行うことができます。
   keywords: storage, system, end of availability, supported switches, maintain, a200,
     a220, a300, a320, a700, a700s, c190
-  lead: 販売終了システムは購入できなくなりましたが、引き続きサポートされます。
+  lead: 提供終了の ONTAP ハードウェアシステムは販売終了となりましたが、サポートは継続されています。
   tiles:
   - title: 設置とセットアップ
     links:

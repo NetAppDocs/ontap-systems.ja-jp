@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, complete the replacement process 
 summary: AFF C80システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。 
 ---
-= 故障した部品をNetAppに返却します（AFF C80）。
+= 障害が発生した AFF C80 ブートメディアを手動ブートリカバリプロセス後に NetApp に返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c800, replace a pcie card 
 summary: PCIe カードを交換するには、カードからケーブルを外し、 SFP モジュールと QSFP モジュールをカードから取り外してから、ライザーを取り付け直し、 SFP モジュールと QSFP モジュールを取り付けてから、カードをケーブル接続する必要があります。 
 ---
-= PCIeカードを交換してください（AFF C800）
+= AFF C800 システムの PCIe カードを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

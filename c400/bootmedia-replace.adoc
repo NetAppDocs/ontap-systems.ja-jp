@@ -4,16 +4,16 @@ sidebar: sidebar
 keywords: aff c400, aff, c400, locate, boot, media, controller, module, fre, map, direction, replace, replace the boot media 
 summary: ブートメディアを交換するには、障害のあるコントローラモジュールを取り外し、交換用ブートメディアを取り付けて、ブートイメージを USB フラッシュドライブに転送する必要があります。 
 ---
-= ブートメディアを交換し、手動ブートリカバリの準備をします - AFF C400
+= 手動ブートリカバリプロセスを使用して、AFF C400ストレージシステムのブートメディアを交換します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ブートメディアを交換するには、障害のあるコントローラモジュールを取り外し、交換用ブートメディアを取り付けて、ブートイメージを USB フラッシュドライブに転送する必要があります。
+AFF C400ストレージシステムのブートメディアを交換するには、障害のあるコントローラモジュールを取り外し、交換用ブートメディアをインストールし、USBフラッシュドライブを使用してブートイメージを転送します。
 
-ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow.html["手動ブート回復手順"]
+ストレージ システムで ONTAP 9.17.1 以降が実行されている場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"]を使用します。
 
 
 

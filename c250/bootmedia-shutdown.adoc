@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c250, shutdown 
 summary: NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。 
 ---
-= コントローラをシャットダウンします（AFF C250）
+= 手動ブートリカバリプロセス中に AFF C250 ストレージシステムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

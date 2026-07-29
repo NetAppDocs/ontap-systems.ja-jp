@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, move the controller module hardware 
 summary: ハードウェア障害またはアップグレードで必要になった場合は、AFF C80システムのコントローラを交換します。このプロセスでは、障害のあるコントローラを取り外し、交換用コントローラにコンポーネントを移動し、交換用コントローラを取り付け、システムをリブートします。 
 ---
-= コントローラの交換- AFF C80
+= AFF C80 ストレージシステムのコントローラーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

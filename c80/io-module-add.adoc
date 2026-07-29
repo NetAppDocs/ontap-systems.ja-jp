@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, add IO module 
 summary: AFF C80システムにI/Oモジュールを追加して、ネットワーク接続を強化し、システムのデータトラフィック処理能力を拡張します。 
 ---
-= I/Oモジュールの追加- AFF C80
+= I/OモジュールをAFF C80ストレージシステムに追加してネットワーク接続性を強化する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

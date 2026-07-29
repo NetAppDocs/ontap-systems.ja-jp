@@ -4,16 +4,16 @@ sidebar: sidebar
 keywords: aff c400, aff, c400, shut, down, take, over, impair, controller, procedure, storage, system, hardware, configuration, shut down the impaired controller 
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
-= 手動ブートメディアリカバリのためにコントローラをシャットダウンする - AFF C400
+= AFF C400 ストレージシステムの手動ブートリカバリプロセス中にコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
+AFF C400 ストレージシステムで、暗号化チェックを完了し、ブートメディアを交換する前に、障害のあるコントローラーをシャットダウンします。
 
-ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow.html["手動ブート回復手順"]
+ストレージ システムで ONTAP 9.17.1 以降が実行されている場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"]を使用します。
 
 
 

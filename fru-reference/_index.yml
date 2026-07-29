@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: NetAppストレージ システムのシステム コンポーネント交換リファレンス
+  title: ONTAP ハードウェアシステムのシステムコンポーネント交換リファレンス
   summary: ストレージ システムのフィールド交換可能ユニット (FRU) の交換手順を確認します。このリファレンスには、 AFF、 ASA、およびFASシステムのステップバイステップの交換ワークフローへの直接リンクが用意されており、特定のハードウェア
     メンテナンスのニーズに適した手順をすぐに見つけることができます。
   keywords: FRU reference, field replaceable units, platform FRUs, hardware components,

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c250, replace the controller workflow 
 summary: AFF C250 ストレージ システムのコントローラの交換を開始するには、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム設定を再構成し、システムの動作を確認します。 
 ---
-= コントローラー交換ワークフロー - AFF C250
+= AFF C250コントローラー交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

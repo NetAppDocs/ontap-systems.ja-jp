@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, move the controller module hardware 
 summary: ハードウェア障害が発生した場合は、 AFF C30 またはAFF C60 ストレージ システムのコントローラを交換してください。交換プロセスには、障害のあるコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーのインストール、および再起動が含まれます。 
 ---
-= コントローラを交換してください- AFF C30とAFF C60
+= AFF C30またはAFF C60ストレージシステムのコントローラーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

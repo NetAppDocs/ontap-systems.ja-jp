@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, how to recable the system, reboot the system 
 summary: AFF C30 またはAFF C60 ストレージ システムが通常の操作を再開できるように、ストレージ リソースの制御を交換用コントローラに戻します。返却手順は、システムで使用されている暗号化タイプ（暗号化なし、オンボード キー マネージャー OKM 暗号化、または外部キー マネージャー EKM 暗号化）によって異なります。 
 ---
-= コントローラのギブバック- AFF C30およびAFF C60
+= AFF C30またはAFF C60ストレージシステムのコントローラーを返却して、通常運用を再開してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

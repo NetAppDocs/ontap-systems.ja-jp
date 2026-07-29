@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c190, verify environment variables, image, boot the recovery image, manual, manual boot recovery 
 summary: AFF C190システムの USB ドライブからONTAPリカバリ イメージを起動して、ブート メディアを復元します。AFF C190システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= リカバリイメージ AFF C190 をブートします
+= AFF C190システムでリカバリイメージを起動します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

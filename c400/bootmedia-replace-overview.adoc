@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: aff c400, aff, c400, boot, media, store, primary, secondary, set, system, boot, image, file, replace, replace the boot media 
 summary: ブートメディアには、システムが起動時に使用するプライマリおよびセカンダリのシステムブートイメージファイルが格納されています。 
 ---
-= ブートメディアの交換の概要- AFF C400
+= AFF C400ストレージシステムのブートメディアの交換について
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+お使いの AFF C400 ストレージシステムのブートメディア交換オプションについて説明します。AFF C400 は、手動および自動の両方のブートメディア復旧手順をサポートしています。
+
 ブートメディアには、システムがブート時に使用するシステムファイル（ブートイメージ）のプライマリセットとセカンダリセットが格納されています。ネットワーク構成に応じて、無停止または停止を伴う交換を実行できます。
 
 [NOTE]

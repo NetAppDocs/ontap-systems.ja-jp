@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, shutdown the controllers 
 summary: AFF C30またはAFF C60ストレージシステムのコントローラをシャットダウンして、データ損失を防ぎ、シャーシの交換時にシステムの安定性を確保します。 
 ---
-= コントローラのシャットダウン- AFF C30 and AFF C60
+= シャーシを交換するためにAFF C30またはAFF C60コントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -20,7 +20,6 @@ summary: システムの NVMEM バッテリを交換するには、コントロ�
 [[step-1-shut-down-the-impaired-controller]]
 == 手順 1 ：障害のあるコントローラをシャットダウンします
 
-[role="lead"]
 障害のあるコントローラーを引き継いで停止し、正常なコントローラーが障害のあるコントローラーのストレージからデータを引き続き提供できるようにします。これを行うには、AutoSupportで自動ケース作成を抑制し、自動ギブバックを無効にして、障害のあるコントローラをLOADERプロンプトに切り替えます。LOADERプロンプトは、FRUを交換できる安全な停止状態です。
 
 .このタスクについて
@@ -93,7 +92,6 @@ _-halt true _パラメータを指定すると、Loaderプロンプトが表示�
 [[step-2-remove-controller-module]]
 == 手順 2 ：コントローラモジュールを取り外す
 
-[role="lead"]
 コントローラ内部のコンポーネントにアクセスするには、まずコントローラモジュールをシステムから取り外し、続いてコントローラモジュールのカバーを外す必要があります。
 
 .手順
@@ -119,7 +117,6 @@ image::../media/drw_2240_x_opening_cam_latch.png[カムハンドルラッチを�
 [[step-3-replace-the-nvmem-battery]]
 == 手順 3 ： NVMEM バッテリを交換します
 
-[role="lead"]
 システムの NVMEM バッテリを交換するには、障害が発生した NVMEM バッテリをシステムから取り外して、新しい NVMEM バッテリと交換する必要があります。
 
 .手順
@@ -163,7 +160,6 @@ image::../media/drw_2600_nvmem_batt_repl_animated_gif.png[NVMEM バッテリの�
 [[step-4-reinstall-the-controller-module]]
 == 手順 4 ：コントローラモジュールを再度取り付けます
 
-[role="lead"]
 コントローラモジュールのコンポーネントを交換したら、モジュールをシャーシに再度取り付けます。
 
 .手順
@@ -225,7 +221,6 @@ NOTE: コネクタの破損を防ぐため、コントローラモジュール�
 [[step-5-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 手順 5 ： 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする
 
-[role="lead"]
 このタスクでは、環境の 2 ノード MetroCluster 構成のみを実行します。
 
 .手順
@@ -283,5 +278,4 @@ Remote: cluster_A configured      		normal
 [[step-6-return-the-failed-part-to-netapp]]
 == 手順 6 ：障害が発生したパーツをネットアップに返却する
 
-[role="lead"]
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

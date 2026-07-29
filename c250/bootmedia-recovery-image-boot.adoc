@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c250, boot the recovery image 
 summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
-= リカバリイメージ（AFF C250）をブートします
+= 手動ブートリカバリプロセスを使用して、AFF C250ストレージシステムでリカバリイメージを起動します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

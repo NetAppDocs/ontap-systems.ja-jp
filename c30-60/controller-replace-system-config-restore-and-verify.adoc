@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: コントローラのHA構成がアクティブで、AFF C30またはAFF C60ストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。 
 ---
-= システム構成のリストアと検証（AFF C30 and AFF C60）
+= AFF C30 または AFF C60 ストレージシステムのコントローラー構成を復元して検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

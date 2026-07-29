@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c250, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: AFF C250 システムのコントローラ交換を完了して完全に動作させるには、NetApp Storage Encryption 構成をリストアし、新しいコントローラのライセンスをインストールして、障害が発生した部品を NetApp に返却する必要があります。 
 ---
-= コントローラの完全交換 - AFF C250
+= AFF C250ストレージシステムのコントローラーの交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

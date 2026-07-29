@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, replace the chassis 
 summary: 障害のあるシャーシを特定し、交換用コンポーネントを確認し、ケーブルとコントローラモジュールにラベルを付けて、C80システムの障害のあるシャーシを交換する準備をします。 
 ---
-= シャーシを交換する準備- C80
+= AFF C80シャーシの交換準備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

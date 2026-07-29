@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: c250, shut down the controller 
 summary: AFF C250 ストレージ システムで障害のあるコントローラーをシャットダウンして、ブート メディアの交換時にデータ損失を防ぎ、システムの安定性を確保します。 
 ---
-= 自動ブートメディアリカバリのためにコントローラをシャットダウンします - AFF C250
+= 自動ブートリカバリプロセス中に AFF C250 ストレージシステムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

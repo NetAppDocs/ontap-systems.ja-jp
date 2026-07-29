@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, shut down the controller 
 summary: 自動ブート メディア リカバリ プロセス中にデータの損失を防ぎ、システムの安定性を維持するために、 AFF C80 ストレージ システム内の障害のあるコントローラをシャットダウンします。 
 ---
-= 自動ブートメディアリカバリのためにコントローラをシャットダウンする - AFF C80
+= 自動ブートリカバリプロセス中に AFF C80 ストレージシステムのコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

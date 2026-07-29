@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c800, shut down the controller 
 summary: NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。 
 ---
-= 手動ブートメディアリカバリのためにコントローラをシャットダウンする - AFF C800
+= 手動ブートリカバリプロセス中に AFF C800 システムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

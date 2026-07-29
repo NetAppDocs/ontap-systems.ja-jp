@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c190, shutdown, checks, onboard, encryption, keys, impaired controller, disable, automatic, feedback, manual, manual boot recovery 
 summary: AFF C190システム上の障害のあるコントローラをシャットダウンする前に、暗号化キーのサポートとステータスを確認してください。AFF C190システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= 暗号化キーのサポートとステータスの確認- AFF C190
+= AFF C190ブートメディアの暗号化サポートを確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

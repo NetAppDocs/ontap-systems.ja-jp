@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, move hardware components, replace the chassis 
 summary: ハードウェア障害が必要な場合は、AFF C80システムのシャーシを交換します。交換プロセスでは、コントローラと電源装置（PSU）の取り外し、ドライブの取り外し、交換用シャーシの取り付け、およびシャーシコンポーネントの再取り付けを行います。 
 ---
-= シャーシの交換- AFF C80
+= AFF C80 ストレージシステムのシャーシを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

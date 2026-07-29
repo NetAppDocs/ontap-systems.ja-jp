@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c250, replace the chassis 
 summary: AFF C250システムで障害のあるシャーシを交換する準備として、障害のあるシャーシを特定し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けます。 
 ---
-= シャーシの交換準備 - AFF C250
+= AFF C250シャーシの交換準備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

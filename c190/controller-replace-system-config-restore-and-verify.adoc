@@ -1,10 +1,10 @@
 ---
 permalink: c190/controller-replace-system-config-restore-and-verify.html 
 sidebar: sidebar 
-keywords: aff c190estore and verify the system configuration, verify and set the ha state of the controller module 
+keywords: aff c190, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
 ---
-= システム構成をリストアおよび検証します（ AFF C190 ）
+= AFF C190システムのコントローラー構成を復元して検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

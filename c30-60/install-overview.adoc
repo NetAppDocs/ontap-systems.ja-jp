@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, Installation, deployment, Install, deploy, Installing, deploying 
 summary: AFF C30またはAFF C60ストレージシステムを設置してセットアップするには、設置要件を確認し、設置場所を準備し、ハードウェアコンポーネントを設置してケーブル接続し、ストレージシステムの電源をオンにし、ONTAPクラスタをセットアップする必要があります。 
 ---
-= 設置とセットアップのワークフロー- AFF C30およびAFF C60
+= AFF C30およびAFF C60のインストールと構成のワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, replace the controller workflow 
 summary: AFF C80ストレージシステムのコントローラを交換するには、まず、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成をリストアし、ストレージリソースの制御を交換用コントローラに戻します。 
 ---
-= コントローラの交換ワークフロー- AFF C80
+= AFF C80コントローラー交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -2,13 +2,13 @@
 permalink: other/other-models.html 
 sidebar: sidebar 
 keywords: aff 8000, fas8000, fas6200, fas3200, fas2500, ds4243, ds2246, ds4486 
-summary: これらのリンクから、 AFF および FAS の他のシステムのドキュメントを参照できます。 
+summary: ハードウェアサポートが終了した ONTAP ハードウェアシステム、および販売は終了したがサポートは継続されている旧型モデルに関するドキュメントを参照できます。 
 ---
-= その他のモデル
+= 他のONTAPハードウェアシステムモデル
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ハードウェアサポートが終了したAFF システムとFAS システムのドキュメントは、でお客様に提供しています link:https://mysupport.netapp.com/documentation/productsatoz/index.html?archive=true["Archive サービスの略"]。購入できなくなったがサポートされている古いAFFおよびFASモデルのドキュメントは、 link:https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30147["A-Zドキュメントライブラリ"]。
+ハードウェアサポートが終了した ONTAP ハードウェアシステムのドキュメントは、link:https://mysupport.netapp.com/documentation/productsatoz/index.html?archive=true["Archive サービスの略"]でお客様にご利用いただけます。購入できなくなったが、引き続きサポートされている古い AFF および FAS システムモデルのドキュメントは、link:https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30147["A-Zドキュメントライブラリ"]でご利用いただけます。

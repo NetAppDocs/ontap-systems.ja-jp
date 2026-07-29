@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, how to recable the system, reboot the system 
 summary: ストレージリソースの制御を交換用コントローラに戻して、AFF C80システムが通常の運用を再開できるようにします。 
 ---
-= コントローラのギブバック- AFF C80
+= AFF C80ストレージシステムのコントローラーを返却して通常運転を再開してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
