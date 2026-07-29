@@ -2,16 +2,16 @@
 permalink: asa400/install-detailed-guide.html 
 sidebar: sidebar 
 keywords: asa a400, asa, a400, step-by-step, instruction, install, typical, netapp, system, instruction, detail, guide, prepare, installation, hardware, cable, controller, network, drive, shelves, shelf, complete, setup, configuration, detailed guide, prepare for installation, install the hardware, cable controllers to your network, cable controllers to drive shelves, complete system setup and configuration 
-summary: このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。インストール手順の詳細については、このガイドを参照してください。 
+summary: ここでは、ASA A400システムのインストールについて、インストールの準備、ハードウェアの設置、コントローラーのケーブル接続、セットアップの完了まで、詳細な手順を説明します。 
 ---
-= 詳細ガイド- ASA A400
+= 詳細な手順に従ってASA A400ストレージシステムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このページでは、一般的なNetAppシステムのインストール手順について詳しく説明します。インストール手順の詳細については、このガイドを参照してください。
+ここでは、ASA A400システムのインストールについて、インストールの準備、ハードウェアの設置、コントローラーのケーブル接続、セットアップの完了まで、詳細な手順を説明します。
 
 
 

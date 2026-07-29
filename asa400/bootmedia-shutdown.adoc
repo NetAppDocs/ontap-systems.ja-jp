@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a400, asa, a400, shut, down, take, over, impair, controller, procedure, storage, system, hardware, configuration, shut down the impaired controller 
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
-= 手動ブートメディアリカバリのためにコントローラをシャットダウンする - ASA A400
+= 手動ブートリカバリプロセス中に ASA A400 システムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

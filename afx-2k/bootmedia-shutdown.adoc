@@ -2,9 +2,9 @@
 permalink: afx-2k/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: afx 2k, shut down the controller 
-summary: ブートメディアを交換する際は、データ損失を防ぎ、システムの安定性を確保するために、afx 2kストレージシステム内の故障したコントローラーをシャットダウンしてください。 
+summary: ブートメディアを交換する際は、データ損失を防ぎ、システムの安定性を確保するために、AFX 2Kストレージシステム内の故障したコントローラーをシャットダウンしてください。 
 ---
-= ブートメディアを交換するためにコントローラをシャットダウンする - AFX 2K
+= 自動ブートリカバリプロセス中に、AFX 2Kストレージシステムのコントローラーをシャットダウンします。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ASA A900 
 summary: に、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順を示します。 
 ---
-= クイックステップ- ASA A900
+= ASA A900ストレージシステムをクイックステップでインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

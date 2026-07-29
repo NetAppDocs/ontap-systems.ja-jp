@@ -2,9 +2,9 @@
 permalink: afx-2k/bootmedia-replace.html 
 sidebar: sidebar 
 keywords: afx 2k, replace the boot media 
-summary: お使いのafx 2kストレージシステムのブートメディアには、重要なファームウェアと構成データが保存されています。交換手順は、System Managementモジュールの取り外し、破損したブートメディアの取り外し、System Managementモジュールへの交換用ブートメディアの取り付け、そしてSystem Managementモジュールの再取り付けという流れになります。 
+summary: AFX 2Kストレージシステムのブートメディアには、重要なファームウェアと構成データが保存されています。交換手順は、システム管理モジュールの取り外し、障害のあるブートメディアの取り外し、システム管理モジュールへの交換用ブートメディアの取り付け、およびシステム管理モジュールの再取り付けという流れになります。 
 ---
-= ブートメディアの交換 - AFX 2K
+= 自動ブートリカバリプロセスを使用して、AFX 2Kストレージシステムのブートメディアを交換します。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a250, replace the boot media 
 summary: ASA A250 システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、適切な容量のストレージを備えたUSBフラッシュドライブがあることを確認し、正しい交換用ブートデバイスがあることを確認することが含まれます。 
 ---
-= 手動ブートメディアリカバリの要件 - ASA A250
+= ASA A250システムにおける手動ブートメディアリカバリの要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

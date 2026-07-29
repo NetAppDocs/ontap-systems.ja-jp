@@ -2,9 +2,9 @@
 permalink: asa150/install-quick-guide.html 
 sidebar: sidebar 
 keywords: asa a150, a150, asa, quick, guide, graphic, instructions, install, rack, cable 
-summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。 
+summary: ここでは、ASA A150システムのインストール手順を図解で説明します。ラックへの設置とケーブル配線から初期システム起動までを網羅しています。 
 ---
-= クイックガイド- ASA A150
+= ASA A150ストレージシステムをクイックステップでインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -2,9 +2,9 @@
 permalink: asa900/controller_replace_recable_reassign_disks.html 
 sidebar: sidebar 
 keywords: asa a900, recable the system 
-summary: ストレージとネットワーク構成の配線をやり直して、交換手順を続行します。 
+summary: ストレージとネットワーク構成を再配線し、ディスクの再割り当てを確認し、ストレージリソースの制御を交換用コントローラに戻すことで、ASA A900システムは通常動作を再開できます。 
 ---
-= システムにケーブルを再接続します- ASA A900
+= ASA A900 システムのコントローラーを返却して通常運用を再開する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

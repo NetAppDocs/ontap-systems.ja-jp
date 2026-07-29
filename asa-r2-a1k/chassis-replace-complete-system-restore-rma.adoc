@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a1k,  verify and set HA state, complete the replacement process 
 summary: コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、 ASA A1K シャーシ交換手順の最終ステップを完了します。 
 ---
-= シャーシ交換を完了 - ASA A1K
+= ASA A1Kシステムのシャーシの交換を完了します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

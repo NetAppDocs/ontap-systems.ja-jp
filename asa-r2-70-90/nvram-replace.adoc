@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, replace an nvdimm 
 summary: NVRAMモジュールは、NVRAM12とDIMM、およびNVRAMモジュールごとに最大2つのNVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）で構成されます。 
 ---
-= NVRAMの交換- ASA A70およびASA A90
+= ASA A70またはASA A90システムのNVRAMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

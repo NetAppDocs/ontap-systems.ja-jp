@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a400, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: コントローラの HA 構成がアクティブで、ASA A400 ストレージシステムで正しく機能していることを確認し、システムのストレージポートにディスクへのすべてのパスがリストされていることを確認してください。 
 ---
-= システム構成のリストアと確認- ASA A400
+= ASA A400システムのコントローラー構成を復元して検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

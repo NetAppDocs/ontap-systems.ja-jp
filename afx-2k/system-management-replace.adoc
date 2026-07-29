@@ -2,9 +2,9 @@
 permalink: afx-2k/system-management-replace.html 
 sidebar: sidebar 
 keywords: afx 2k, replace the system manager module 
-summary: afx 2kストレージシステムのシステム管理モジュールに不具合が生じた場合、またはファームウェアが破損した場合は、交換してください。交換プロセスには、コントローラのシャットダウン、故障したシステム管理モジュールの交換、コントローラの再起動、ライセンスキーの更新、および故障した部品の NetApp への返却が含まれます。 
+summary: AFX 2Kストレージシステムのシステム管理モジュールに不具合が生じた場合、またはファームウェアが破損した場合は、交換してください。交換プロセスには、コントローラのシャットダウン、故障したシステム管理モジュールの交換、コントローラの再起動、ライセンスキーの更新、および故障した部品の NetApp への返却が含まれます。 
 ---
-= システム管理モジュールの交換 - AFX 2K
+= AFX 2Kストレージシステムのシステム管理モジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

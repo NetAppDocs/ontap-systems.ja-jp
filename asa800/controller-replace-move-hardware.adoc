@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a800, move the controller module hardware 
 summary: コントローラモジュールを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。 
 ---
-= コントローラモジュールハードウェアの交換 - ASA A800
+= ASA A800システムのコントローラーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

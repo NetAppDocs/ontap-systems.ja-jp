@@ -2,9 +2,9 @@
 permalink: afx-2k/bootmedia-replace-workflow.html 
 sidebar: sidebar 
 keywords: afx 2k, replace the boot media 
-summary: afx 2kストレージシステムのブートメディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブートメディアの交換、リカバリイメージの起動、暗号化の復元、およびシステム機能の確認を行います。 
+summary: AFX 2Kストレージシステムのブートメディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブートメディアの交換、リカバリイメージの起動、暗号化の復元、およびシステム機能の確認を行います。 
 ---
-= ブートメディア交換ワークフロー - AFX 2K
+= 自動ブートリカバリプロセスを使用したAFX 2Kブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

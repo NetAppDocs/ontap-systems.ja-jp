@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a800, detailed installation 
 summary: このセクションでは、システムのインストール手順について詳しく説明します。 
 ---
-= 詳細な手順- ASA A800
+= 詳細な手順に従ってASA A800ストレージシステムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

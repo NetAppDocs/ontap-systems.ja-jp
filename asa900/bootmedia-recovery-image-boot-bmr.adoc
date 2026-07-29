@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa900, boot the recovery image 
 summary: ASA A900システムに新しいブートメディアデバイスをインストールしたら、自動ブートメディアリカバリプロセスを開始して、パートナーノードから設定を復元できます。 
 ---
-= パートナーノードからの自動ブートメディアリカバリ - ASA A900
+= 自動ブートリカバリプロセスを使用して、ASA A900システムのブートイメージを復元します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

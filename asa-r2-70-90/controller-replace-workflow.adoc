@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, replace the controller workflow 
 summary: ASA A70またはASA A90ストレージシステムのコントローラの交換を開始します。まず、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成をリストアし、ストレージリソースの制御を交換用コントローラに戻します。 
 ---
-= コントローラの交換ワークフロー- ASA A70およびASA A90
+= ASA A70またはASA A90コントローラーの交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

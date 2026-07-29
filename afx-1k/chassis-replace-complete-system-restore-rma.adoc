@@ -2,9 +2,9 @@
 permalink: afx-1k/chassis-replace-complete-system-restore-rma.html 
 sidebar: sidebar 
 keywords: afx 1k,  verify and set HA state, complete the replacement process 
-summary: コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、 AFF A1Kシャーシ交換手順の最終ステップを完了します。 
+summary: コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、AFX 1K シャーシ交換手順の最終ステップを完了します。 
 ---
-= シャーシ交換を完了 - AFX 1K
+= AFX 1Kストレージシステムのシャーシ交換を完了します。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a1k, replace an nvdimm 
 summary: 不揮発性メモリに障害が発生した場合、またはアップグレードが必要な場合は、ASA A1KシステムのNVRAMを交換してください。 
 ---
-= NVRAMの交換- ASA A1K
+= ASA A1KシステムのNVRAMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

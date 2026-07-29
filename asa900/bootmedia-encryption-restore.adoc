@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a900, post boot media replacement steps for okm, nse, and nve 
 summary: 環境変数を確認したら、オンボードキーマネージャ（OKM）、NetApp Storage Encryption（NSE）、またはNetApp Volume Encryption（NVE）が有効になっているシステムに固有の手順を完了する必要があります。 
 ---
-= リストア暗号化- ASA A900
+= ASA A900システムの手動ブートリカバリプロセス後にブートメディアの暗号化を復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

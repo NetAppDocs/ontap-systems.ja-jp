@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c30, replace a dimm 
 summary: 修正可能または修正不可能なメモリ エラーが過剰に検出された場合は、ASA C30 ストレージ システム内の DIMM を交換してください。このようなエラーが発生すると、ストレージシステムでONTAPをブートできなくなる可能性があります。交換プロセスでは、障害コントローラのシャットダウン、障害コントローラの取り外し、DIMMの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。 
 ---
-= DIMMの交換- ASA C30
+= ASA C30 システムの DIMM を交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

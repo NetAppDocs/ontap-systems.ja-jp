@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: AFXシステム
+  title: ONTAP AFX システム
   summary: NetApp AFX ストレージ システムは、高性能 NAS および S3 顧客の固有のニーズに重点を置いた、分散型のハードウェアおよびソフトウェア
     ソリューションです。パフォーマンスとスケーラビリティは、AI および ML ワークロードの要件を満たすように特別に設計されています。
   keywords: afx, afx 1k, afx 2k, install, setup, maintain

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a1k, replace the nv battery, NV battery 
 summary: ASA A1KシステムのNVバッテリは、停電時に重要なシステムデータを保持する役割があるため、バッテリの充電が失われたり故障したりした場合に交換してください。交換プロセスでは、障害のあるコントローラのシャットダウン、コントローラモジュールの取り外し、NVバッテリの交換、コントローラモジュールの再取り付け、障害が発生したパーツのNetAppへの返却を行います。 
 ---
-= NVバッテリの交換- ASA A1K
+= ASA A1K システムの NV バッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

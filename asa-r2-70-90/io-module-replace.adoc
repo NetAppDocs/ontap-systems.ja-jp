@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, replace a pcie card 
 summary: PCIe カードを交換するには、カードからケーブルを外し、 SFP モジュールと QSFP モジュールをカードから取り外してから、ライザーを取り付け直し、 SFP モジュールと QSFP モジュールを取り付けてから、カードをケーブル接続する必要があります。 
 ---
-= I/Oモジュールの交換- ASA A70およびASA A90
+= ASA A70またはASA A90システムのI/Oモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

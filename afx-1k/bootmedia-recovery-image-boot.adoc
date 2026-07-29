@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 1k, boot the recovery image 
 summary: AFX 1K ストレージ システムに新しいブート メディア デバイスをインストールした後、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。 
 ---
-= リカバリイメージを起動する - AFX 1K
+= 自動ブートリカバリプロセスを使用して、AFX 1Kストレージシステムでリカバリイメージを起動します。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

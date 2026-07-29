@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c30, replace the controller workflow 
 summary: ASA C30ストレージシステムのコントローラを交換するには、まず、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成をリストアし、ストレージリソースの制御を交換用コントローラに戻します。 
 ---
-= コントローラの交換ワークフロー- ASA C30
+= ASA C30コントローラー交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

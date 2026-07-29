@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a150, a150, asa, replace, real, time, clock, battery, impaired, controller, shut, down, controller, system, rtc, date, time, controller, module, reinstall, replace, open 
 summary: コントローラモジュール内のリアルタイムクロックバッテリを交換することで、正確な時刻同期に依存するシステムのサービスやアプリケーションが引き続き機能するようになります。 
 ---
-= リアルタイムクロックバッテリを交換してください- ASA A150
+= ASA A150システムのリアルタイムクロックバッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

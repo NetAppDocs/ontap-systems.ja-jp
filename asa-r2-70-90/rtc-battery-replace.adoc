@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, replace the real-time clock battery 
 summary: ASA A70またはASA A90システムのリアルタイムクロックバッテリ（一般的にコイン型電池として知られています）を交換して、正確な時刻同期に依存するサービスやアプリケーションが確実に稼働し続けるようにします。 
 ---
-= リアルタイムクロックバッテリを交換してください- ASA A70およびASA A90
+= ASA A70またはASA A90システムのリアルタイムクロックバッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

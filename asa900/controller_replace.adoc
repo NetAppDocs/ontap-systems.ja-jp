@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ASA A900, open controller, download service image to USB drive, transfer boot image, USB drive, service image 
 summary: コントローラモジュールハードウェアを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。 
 ---
-= コントローラモジュールハードウェアの交換- ASA A900
+= ASA A900システムのコントローラーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

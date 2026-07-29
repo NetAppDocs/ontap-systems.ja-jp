@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a800, replace the nvdimm battery 
 summary: NVDIMM バッテリを交換するには、コントローラモジュールを取り外し、バッテリを取り外し、バッテリを交換してから、コントローラモジュールを再度取り付ける必要があります。 
 ---
-= NVDIMMバッテリの交換- ASA A800
+= ASA A800 システムの NVDIMM バッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

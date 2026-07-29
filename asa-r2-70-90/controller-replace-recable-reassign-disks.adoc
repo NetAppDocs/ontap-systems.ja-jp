@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, how to recable the system, boot the system 
 summary: ASA A70またはASA A90システムが通常の運用を再開できるように、ストレージリソースの制御を交換用コントローラに戻します。 
 ---
-= コントローラのギブバック- ASA A70およびASA A90
+= ASA A70またはASA A90システムのコントローラーを返却して通常運用を再開する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

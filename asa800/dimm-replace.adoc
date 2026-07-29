@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a800, replace a dimm 
 summary: 過剰な修正可能または修正不可能なメモリエラーが検出された場合は、ASA A800システムのDIMMを交換してください。 
 ---
-= DIMMの交換 - ASA A800
+= ASA A800 システムの DIMM を交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

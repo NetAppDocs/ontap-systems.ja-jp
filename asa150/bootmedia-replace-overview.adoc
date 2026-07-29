@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a150, a150, asa, replace, boot, media, image, nondisruptive, disruptive, replacement, fat32, usb 
 summary: ブートメディアには、システムが起動時に使用するプライマリおよびセカンダリのシステムブートイメージファイルが格納されています。ネットワーク構成によっては、無停止交換または停止交換のいずれかを実行できます。 
 ---
-= ブートメディアの交換の概要- ASA A150
+= ASA A150システムにおける手動ブートメディアリカバリの要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

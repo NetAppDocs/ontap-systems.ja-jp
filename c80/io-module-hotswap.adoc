@@ -159,7 +159,7 @@ The module has been successfully removed from service and powered off. It can no
 [[step-3-replace-the-failed-io-module]]
 == ステップ3：故障したI/Oモジュールを交換する
 
-故障した I/O モジュールを同等の I/O モジュールに交換します。
+故障したI/Oモジュールを、同等のI/Oモジュールとホットスワップしてください。
 
 .手順
 . 接地対策がまだの場合は、自身で適切に実施します。

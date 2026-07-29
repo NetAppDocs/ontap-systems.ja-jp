@@ -2,9 +2,9 @@
 permalink: afx-2k/controller-replace-requirements.html 
 sidebar: sidebar 
 keywords: afx 2k, prerequisite, replace the controller module 
-summary: afx 2k ストレージ システムのコントローラーを交換する前に、交換を正常に完了するために必要な要件を満たしていることを確認してください。これには、適切な交換用コントローラー、システム構成のバックアップ、および必要なツールとファームウェアへのアクセスが含まれます。 
+summary: AFX 2Kストレージシステムのコントローラーを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、適切な交換用コントローラー、システム構成のバックアップ、および必要なツールとファームウェアへのアクセスが含まれます。 
 ---
-= コントローラー交換の要件 - AFX 2K
+= AFX 2Kストレージシステムのコントローラーを交換する前に、要件を確認してください。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

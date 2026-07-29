@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a900, replace the real-time clock battery 
 summary: 正確な時刻同期に依存するシステムのサービスやアプリケーションが引き続き機能するように、コントローラモジュール内のリアルタイムクロックRTCバッテリーを交換します。 
 ---
-= リアルタイムクロックバッテリの交換- ASA A900
+= ASA A900システムのリアルタイムクロックバッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a250, replace a dimm 
 summary: システムで訂正可能なエラー訂正コード（ECC）の数が増加している場合は、コントローラモジュールのDIMMを交換する必要があります。交換しないと、システムパニックが発生します。 
 ---
-= DIMMの交換- ASA A250
+= ASA A250 システムの DIMM を交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

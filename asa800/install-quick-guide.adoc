@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a800, quick steps 
 summary: このページでは、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順を図で示します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。 
 ---
-= クイックステップ- ASA A800
+= ASA A800ストレージシステムをクイックステップでインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

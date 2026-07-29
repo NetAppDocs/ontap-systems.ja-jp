@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a900, replace io module 
 summary: I/O モジュールを交換するには、特定の順序でタスクを実行する必要があります。 
 ---
-= I/Oモジュールの交換- ASA A900
+= ASA A900システムのI/Oモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

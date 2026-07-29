@@ -5360,34 +5360,17 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7449f0c5fea223a0e8f25794fa6bfcf2" category="paragraph">新しいシャーシにコントローラモジュールを取り付けたら、システムをブートする必要があります。</block>
   <block id="456c80751c3f09b31ee496c3872f0c25" category="paragraph">キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。</block>
   <block id="8d25d311e353251341d471f4c2d37620" category="section-title">手順2：故障した部品をNetAppに返却する</block>
-  <block id="508de305feb20c63f33ef9eff7de5eb4" category="doc">ブートメディアの交換- ASA A250</block>
   <block id="a4117f1bf6bfe8785548e1e7a31f9864" category="summary">このセクションでは、システムのインストール手順について詳しく説明します。</block>
-  <block id="cef403fe8ffcaa9e4b76963ad5fbdfd9" category="doc">詳細な手順- ASA A250</block>
   <block id="ae1e0afe4c210d63eb5e26ded871bc01" category="paragraph">このページでは、ASA A250システムの設置手順について詳しく説明します。</block>
   <block id="68fd5ab999461d243b31a922d1452997" category="paragraph">システムをインストールするには、アカウントを作成してシステムを登録する必要があります。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。</block>
-  <block id="2fe8ccbf6f953c42d3accff471020e04" category="doc">リアルタイムクロックバッテリを交換してください- ASA A250</block>
-  <block id="c7c6a415741d25a1278e3b2feb7ce81f" category="doc">ファンの交換- ASA A250</block>
-  <block id="657629aaa4f6eab92ab35b33457b8eb6" category="doc">システムをケーブル接続し直してディスクを再割り当て- ASA A250</block>
   <block id="671f9966e0181f08744e85f7b6d01d05" category="summary">ASA A250ハードウェアのメンテナンス</block>
-  <block id="8e7a33c44e49f9b5c0e2db2d78219211" category="doc">ASA A250ハードウェアのメンテナンス</block>
   <block id="63c77f3bd33a61dbe342def54e1aaf5b" category="paragraph">ASA A250ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="84fba8bc1002a05a2e1bc0df39a0d311" category="section-title">NVEMハツテリ</block>
-  <block id="943cbde5eb2522f265b1edf4f60529fd" category="doc">コントローラのシャットダウン- ASA A250</block>
-  <block id="fa26ab686e2bca1aebda5034632821e5" category="doc">NVMEMバッテリの交換- ASA A250</block>
   <block id="b7a0d897933205e6e22755b6d3ed6203" category="list-text"><block ref="b7a0d897933205e6e22755b6d3ed6203" category="inline-link-macro-rx"></block></block>
   <block id="da918dba24d0605714c5840469413769" category="list-text"><block ref="da918dba24d0605714c5840469413769" category="inline-link-macro-rx"></block></block>
   <block id="2b55ecb41a48bac54ca526b7855130de" category="list-text"><block ref="2b55ecb41a48bac54ca526b7855130de" category="inline-link-macro-rx"></block></block>
-  <block id="cd6cad2927af0a8738645aef0eddfef3" category="doc">DIMMの交換- ASA A250</block>
-  <block id="a73823d14db47bd43fd209723a8a0f78" category="doc">システム構成のリストアと確認- ASA A250</block>
   <block id="e6f6041e49a048399457259bb308d074" category="admonition">ASA A250は、AFF A250システムと同じインストール手順を使用します。</block>
-  <block id="247ba1eaff46a863c502ad82319286c6" category="doc">コントローラのシャットダウン- ASA A250</block>
-  <block id="465964d20433e41566b91166a85bfb9b" category="doc">メザニンカードの交換または取り付け- ASA A250</block>
-  <block id="a39762cd74723b77dcf23c044ca6cfb1" category="doc">SSDドライブまたはHDDドライブの交換- ASA A250</block>
-  <block id="e0510602c19834e8bc265ba7efeba84d" category="doc">リカバリイメージのブート- ASA A250</block>
-  <block id="b02afbe9444685afbe9c40a3fc3c120a" category="doc">故障した部品をNetApp - ASA A250に返却します。</block>
-  <block id="469cc6ed74facdc4a5f00ee2787d50a2" category="doc">クイックステップ- ASA A250</block>
   <block id="af966cb104df88d3a5fee466b27600cb" category="paragraph">このページでは、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順を図で示します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。</block>
-  <block id="832db81167fd84efee6f2f1426f0d945" category="doc">障害のあるコントローラモジュールをシャットダウンします- ASA A250</block>
   <block id="e31f48aed610f4dfc632dee37773ef46" category="section-title">手順7：コントローラモジュールを動作状態に戻す</block>
   <block id="4de03bc95ff205a87859998054c21b43" category="paragraph">コントローラモジュールのコンポーネントを交換したら、コントローラモジュールをシャーシに再度取り付ける必要があります。</block>
   <block id="f92b0aabcfb0600795d091d920f2ee13" category="doc">FAS8300 / FAS8700ハードウェアのメンテナンス</block>
@@ -5422,25 +5405,10 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="88145bf2af138ed528349e08d441968a" category="paragraph">AFF A320ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="8486b7c66d6ece05f01d5c8074d027a1" category="paragraph">新しいシャーシにコントローラモジュールを取り付けたら、システムをブートする必要があります。</block>
   <block id="416d28e93ee53a5fe99f4863443c9bf3" category="summary">ネットアップのAFF、ASA、FASストレージシステムは、業界最先端のデータ管理機能を備えた、エンタープライズクラスの最先端のスケールアウトオールフラッシュまたはハイブリッドストレージです。このサイトのドキュメントを使用して、AFF、ASA、FASシステムとそのストレージシェルフ、クラスタスイッチの設置、拡張、アップグレード、保守を行います。</block>
-  <block id="9dbc6de9e979960d269ff45dfa541d76" category="doc">システムをケーブル接続し直してディスクを再割り当て- ASA A800</block>
-  <block id="308e5629f56cd85980c01c5a7d6b4a5e" category="doc">ファンの交換- ASA A800</block>
-  <block id="3ef7061589a2a04431ea9f25b6e79307" category="doc">障害のあるコントローラをシャットダウンします- ASA A800</block>
-  <block id="e2bc701c24d2b9ed0f95fc6ba2920d2d" category="doc">システム構成のリストアと確認- ASA A800</block>
-  <block id="d5ebc86a83d59dde394b71343ed8cc34" category="doc">NVDIMMの交換- ASA A800</block>
-  <block id="3f479130be8b78844c0bd49727174069" category="doc">詳細な手順- ASA A800</block>
   <block id="a820ea2fa41e56fbe040f9100f11d297" category="paragraph">このページでは、ASA A800システムの設置手順について詳しく説明します。</block>
-  <block id="370845993b41687570ddfd991106c84f" category="doc">NVDIMMバッテリの交換- ASA A800</block>
   <block id="5fa3fc366648b99a59526964d222385e" category="summary">ASA A800ハードウェアのメンテナンス</block>
-  <block id="8c32524c30f1cf8ac0610fc400ed0758" category="doc">ASA A800ハードウェアのメンテナンス</block>
-  <block id="d374640195a360abfae0102d10acd97b" category="doc">リアルタイムクロックバッテリの交換- ASA A800</block>
-  <block id="498a9392717395bcd76919fcbc8cd683" category="doc">コントローラのシャットダウン- ASA A800</block>
-  <block id="7fe4a4ac81db4c15db36e72a3ea5981e" category="doc">システムの完全なリストア- ASA A800</block>
-  <block id="d1df8c22a8919d325b97cb34cdbfec4f" category="doc">クイックステップ- ASA A800</block>
   <block id="caa8aa4a595b6f33857d21fb97a3622e" category="paragraph">このページでは、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順を図で示します。を使用します <block ref="0cdb4981396afec17d02c8ce5d1b8e06" category="inline-link-macro-rx"></block> ネットアップシステムのインストールに精通している場合。</block>
   <block id="f0d6a8fa292b0f0965c180c3ec81b98c" category="admonition">ASA A800は、AFF A800システムと同じインストール手順を使用します。</block>
-  <block id="1809d57833f6aee6ca28a7a9976f3c02" category="doc">SSDドライブまたはHDDドライブの交換- ASA A800</block>
-  <block id="3e1e482bf99769f878506ac262ea9469" category="doc">シャーシの交換- ASA A800</block>
-  <block id="67908030f8ab0c8af80f92c280cae057" category="doc">コントローラの交換の概要- ASA A800</block>
   <block id="aac030e27e2d05ac9c8d86c5ee6b670b" category="doc">LED USBモジュールの交換- FAS9000</block>
   <block id="f149ffc69b5cfb8f7aad3b01a8a19d4a" category="doc">システムをケーブル接続し直してディスクを再割り当て- FAS9000</block>
   <block id="c6dffe83bee9ebc28b0c537a4a763ffe" category="doc">ブートメディアの交換の概要- FAS9000</block>
@@ -5480,48 +5448,24 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4a310b408acc70099ddcf31e03fb7044" category="doc">FAS500fハードウェアのメンテナンス</block>
   <block id="355988ec4d25ee189b9f96d51313f71e" category="paragraph">FAS500fストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="8bed758febcace616ea2efd7693c698c" category="paragraph">AFF C800ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
-  <block id="4f755217264f549ed8e3ff6bb489f8ae" category="doc">LED USBモジュールの交換- ASA A900</block>
-  <block id="cb116221e8200b80ceb914ddac496bf5" category="doc">システムにケーブルを再接続します- ASA A900</block>
   <block id="77f9a95a530711269abbef32ae27b183" category="paragraph">コントローラモジュールのストレージとネットワークをケーブルで再接続する必要があります。</block>
-  <block id="81af5da89fff345601f8e93f71e0ad35" category="doc">ブートメディアの交換- ASA A900</block>
-  <block id="0c37dcb25b5173e62412edae7cd5b2e5" category="doc">ファンの交換- ASA A900</block>
-  <block id="61cb2661b290495563ba9c588ff896ca" category="doc">I/Oモジュールの追加- ASA A900</block>
-  <block id="0793e1a216dd4c3846c49cbc01994776" category="doc">NVRAMモジュールとNVRAM DIMMの交換- ASA A900</block>
   <block id="c79b3bc974e85cc0c7daa3f518014cad" category="section-title">手順4：コントローラをリブートする</block>
-  <block id="c69354394baa0a237e9976cdbc6f9861" category="doc">ハードウェアの移動と交換- ASA A900</block>
   <block id="f89c45376799b7e25f62ea8515f1c453" category="section-title">手順5：デステージコントローラ電源モジュールを取り外す</block>
   <block id="702a4af6ac99842f9738b7f8c1aec43d" category="section-title">手順7：シャーシを取り外す</block>
   <block id="46001ef14ed38dbbdbbdbb3589dc026a" category="section-title">手順8：デステージコントローラ電源モジュールを取り付ける</block>
   <block id="a2267010a4adf0fe9ced8566dac6cfbd" category="paragraph">交換用シャーシをラックまたはシステムキャビネットに設置したら、デステージコントローラ電源モジュールを再度取り付ける必要があります。</block>
   <block id="649a1bf69f916648f9c3fe76725564f0" category="section-title">手順12：USB LEDモジュールを取り付ける</block>
   <block id="f19584b1259d6540b275f3d1762d8256" category="paragraph">コントローラモジュールとその他のコンポーネントを交換用シャーシに取り付けたら、ブートします。</block>
-  <block id="9ef9f88e2bf7c325b2a4cd85f17a0b7f" category="doc">障害のあるコントローラのシャットダウン- ASA A900</block>
-  <block id="3610d67c9202f4e5ebb6e2f7473bae75" category="doc">システム構成のリストアと確認- ASA A900</block>
   <block id="8e117532c7e19e595888893874b7842a" category="paragraph">ハードウェアの交換が完了したら、交換用コントローラの下位システム構成を確認し、必要に応じてシステム設定を再設定します。</block>
   <block id="7cdcd047202bcdc51a3f4bb231992a02" category="section-title">手順1：システム時刻を設定して確認する</block>
   <block id="9bdd85e636672adbfe134db9cadf9f16" category="summary">一般的なNetAppシステムをインストールするための詳細なステップバイステップの手順。</block>
-  <block id="4f4997d57e1b5c1d1f1f7eb13f838e9e" category="doc">詳細な手順- ASA 900</block>
   <block id="e2443845147b27753156cf73f4a7cc9d" category="paragraph">このページでは、一般的なNetAppシステムのインストール手順について詳しく説明します。インストール手順の詳細については、この資料を参照してください。</block>
-  <block id="f5c82e54dca2d2d76c6d77abbfa2b2ba" category="doc">I/Oモジュールの交換- ASA A900</block>
   <block id="ed062a1e8546a5956e21510b966a6f74" category="section-title">手順3：コントローラをリブートする</block>
   <block id="4e706549108dd992136b348b1e2617fc" category="summary">ASA A900ハードウェアのメンテナンス</block>
-  <block id="6e0eb0ebd490048623133577e991bfbb" category="doc">ASA A900ハードウェアのメンテナンス</block>
   <block id="ae383c4833f526c25894b4e6dec33459" category="paragraph">ASA A900ストレージシステムでは、次のコンポーネントに対してメンテナンス手順を実行できます。</block>
-  <block id="1cf6ac8a974aa424dc7fbb078c513f07" category="doc">リアルタイムクロックバッテリの交換- ASA A900</block>
-  <block id="0b03535505d87f108fe49abb6aa06130" category="doc">DIMMの交換- ASA A900</block>
-  <block id="ed6183c79360d84f37e156e80fe33aa6" category="doc">コントローラのシャットダウン- ASA A900</block>
-  <block id="67bcd92a05c94a3a813d8e595b1f5283" category="doc">システムのリストアの完了- ASA A900</block>
   <block id="eb192783589d844d1af1ecb849489b22" category="section-title">手順1：新しいコントローラのライセンスをインストールする</block>
   <block id="4da6be1bf421fc7ff067ee2e73b4b8b1" category="summary">に、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順を示します。</block>
-  <block id="4848727d4d964e87d86f556430e12505" category="doc">クイックステップ- ASA A900</block>
   <block id="c247d6dca80720b1329aceeb17a50ccf" category="admonition">ASA A900は、AFF A900システムと同じインストール手順を使用します。</block>
-  <block id="ffd35f8c2bbd04d0d068c1f8df413804" category="doc">ビデオ手順- ASA A900</block>
-  <block id="7d1fb483052073af4f4cc12799641b5e" category="doc">NVRAM11バッテリを搭載したDCPMの交換- ASA A900</block>
-  <block id="2b061d20a12abc555d3ec31b4a597fbd" category="doc">コントローラモジュールハードウェアの交換- ASA A900</block>
-  <block id="600bae2dfd13ad78a23b5956bad21213" category="doc">シャーシの交換- ASA A900</block>
-  <block id="6bce460d3973f94c0284f11300e21aab" category="doc">構成のリストアと検証- ASA A900</block>
-  <block id="df8c04fe473c2ae44cd201952a9c2108" category="doc">コントローラモジュールの交換- ASA A900</block>
-  <block id="ffb724b559859524ecc5b0044250179e" category="doc">故障した部品をNetAppに返却します- ASA A900</block>
   <block id="f360d1079a275b0fe736ccf35ef82b7d" category="list-text">電源装置と電源に電源ケーブルを再接続し、電源をオンにしてブートプロセスを開始します。</block>
   <block id="5d136e5b0b370603cc0afb0f18feb921" category="list-text">システムをリブートします。</block>
   <block id="465309da1abfbd9f81af1d9b064f98b0" category="paragraph">コントローラモジュールとその他のコンポーネントを新しいシャーシに取り付けたら、システムをブートします。</block>
@@ -5561,19 +5505,10 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="42bd9bd5d289e1ecf2b904f426c6c76b" category="paragraph">AFF A220ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="1273c9fbc5c944f1ba9781560b258420" category="summary">このページでは、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順を図で示します。</block>
   <block id="352defde9abedd69a5e5e39d250c4daf" category="summary">ASA A150ハードウェアのメンテナンス</block>
-  <block id="b869a7040c81d5a8d59a87c8fd028d96" category="doc">ASA A150ハードウェアのメンテナンス</block>
   <block id="e6116e8dfa475c652d411a0fbaf5ce6a" category="paragraph">AFF A900ストレージシステムでは、次のコンポーネントに対してメンテナンス手順を実行できます。</block>
   <block id="85b170bab39eb57fab62b2cb616a456c" category="list-text">電源装置と電源に電源ケーブルを再接続し、電源をオンにしてブートプロセスを開始します。</block>
   <block id="70b15df9648199f3a3caf12d2b5df6fe" category="doc">FAS2600ハードウェアのメンテナンス</block>
   <block id="c1da90a1e2143d4b9de576a8125a369a" category="paragraph">FAS2600ストレージシステムでは、次のコンポーネントに対してメンテナンス手順を実行できます。</block>
-  <block id="5c47f52d0f861c001ac14b78d7cdb857" category="doc">システムにケーブルを再接続し、ディスクを再割り当てする- ASA A150</block>
-  <block id="aa96f0fc83808cea5c505f468161c7fb" category="doc">ブートメディアの交換の概要- ASA A150</block>
-  <block id="c5010ac57245107e1dff0cf1fd34f50a" category="doc">ブートメディアの交換- ASA A150</block>
-  <block id="13297690c746d0add666af742a2d189b" category="doc">シャーシの交換- ASA A150</block>
-  <block id="1cbd32a9d69e973fd500a520795328ab" category="doc">障害のあるコントローラをシャットダウンします- ASA A150</block>
-  <block id="9cc555a22d431cdfe6474529f5b424ac" category="doc">システム構成を復元して確認します（ASA A150）。</block>
-  <block id="972b05beb868fb1b84256a9cba2e1e29" category="doc">NVMEMバッテリの交換- ASA A150</block>
-  <block id="d78509f181540ccc41f8f64746d2d281" category="doc">詳細ガイド- ASA A150</block>
   <block id="167b832ca3a83bafa75999475b39d066" category="paragraph">ASA A150システムの設置方法について説明します。</block>
   <block id="fb0d0b3df2f7ab805c8d434d4bac9447" category="paragraph">システムをインストールするには、NetApp Support Siteでアカウントを作成し、システムを登録して、ライセンスキーを取得します。また、システムに応じた適切な数とタイプのケーブルを準備し、特定のネットワーク情報を収集する必要があります。</block>
   <block id="32eaf8761a3db861b1156e2738e758c1" category="paragraph">2ノードスイッチレスクラスタまたはクラスタインターコネクトネットワークのいずれかの方法を使用して、コントローラをネットワークにケーブル接続します。</block>
@@ -5583,23 +5518,10 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1fc58e4765d0d92d238af8bdfc3ab370" category="list-text">ユニファイドネットワークのケーブル配線</block>
   <block id="b7f69837ac40254faa2741b926641a85" category="list-text">イーサネットネットワークのケーブル配線</block>
   <block id="76f8020a6c211d0a85b51e324867f828" category="paragraph">ASA A150ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
-  <block id="25e4ca3cea9556bf60cfd34a863bcc83" category="doc">リアルタイムクロックバッテリを交換してください- ASA A150</block>
-  <block id="b2d9da7407ab97d4d923ee0f45653d7f" category="doc">DIMMの交換- ASA A150</block>
-  <block id="17d46fdea79baa1b0abb75060c4b26eb" category="doc">コントローラのシャットダウン- ASA A150</block>
-  <block id="15f3dc209220fcd5ed53507c602a5619" category="doc">OKM、NSE、NVE - ASA A150のリストア</block>
   <block id="3481ad4d7a2afb32f38e558fa9328a94" category="list-text"><block ref="3481ad4d7a2afb32f38e558fa9328a94" category="inline-link-macro-rx"></block></block>
   <block id="8eb29c45f79e068695588bfb8a93a6af" category="list-text"><block ref="8eb29c45f79e068695588bfb8a93a6af" category="inline-link-macro-rx"></block></block>
   <block id="ced8abed51c6835530f0e19054e2566e" category="list-text"><block ref="ced8abed51c6835530f0e19054e2566e" category="inline-link-macro-rx"></block></block>
-  <block id="211b9ea8570c15e3ca45097dbf08184d" category="doc">システムの完全なリストア- ASA A150</block>
-  <block id="44b5b262e7713dd5aa3d82f5e04c6ab6" category="doc">クイックガイド- ASA A150</block>
   <block id="85b480bf87d91a2932c8ed43e4def5f4" category="admonition">ASA A150は、AFF A150システムと同じインストール手順を使用します。</block>
-  <block id="48a9a0f255a122f383dce55509b5a79a" category="doc">リカバリイメージのブート- ASA A150</block>
-  <block id="76ee45904d9d171832835353313011a4" category="doc">SSDドライブまたはHDDドライブを交換してください- ASA 150</block>
-  <block id="070bdcad0142d8cf21268dca6275fe89" category="doc">コントローラの交換- ASA A150</block>
-  <block id="f3bad228bd34f18781843874208259c3" category="doc">シャーシの交換の概要- ASA A150</block>
-  <block id="0b11c8d8ffff83e1165677b553555d82" category="doc">設定をリストアして確認します（ASA A150）。</block>
-  <block id="33856cd92829adce64e02fb2504a0206" category="doc">コントローラの交換の概要- ASA A150</block>
-  <block id="f391cb900d45daed2a3ef828c09a1546" category="doc">故障した部品をNetApp - ASA A150に返却します。</block>
   <block id="9a54ff3f438075f6ab130fd5ddae6cb8" category="paragraph">コントローラモジュールとその他のコンポーネントを交換用シャーシに取り付けたら、システムをブートします。</block>
   <block id="e7e663b99514b25c64e06ab89f12a96d" category="summary">ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位システム構成を確認し、必要に応じてシステムを再設定します。</block>
   <block id="941c5c287ded8e20a0e0afb65a87e0f3" category="paragraph">ハードウェアの交換が完了したら、交換用コントローラの下位システム構成を確認し、必要に応じてシステム設定を再設定します。</block>
@@ -5608,31 +5530,11 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="59f0681daaf8f83f78428571c3e8b6d4" category="paragraph">AFF C400ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="7152aeb3bd29d76fe947dfa4c1f97021" category="summary">AFF A200ハードウェアのメンテナンス</block>
   <block id="ec9ecc2392793e81abb2dd44deb36f6d" category="paragraph">AFF A200ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
-  <block id="f4a25106acc9f2b398da8ab1dbc2278a" category="doc">ブートメディアの交換の概要- ASA A400</block>
-  <block id="1ad7108acef5f97dbf6407833d441058" category="doc">ファンモジュールのホットスワップ- ASA A400</block>
-  <block id="f04cfd2261dd6a1f556f80b087e6b8e6" category="doc">ハードウェアの交換- ASA A400</block>
-  <block id="f52c387171f2e8c70a6f184572b951e7" category="doc">2ノードMetroCluster構成でのアグリゲートのスイッチバック- ASA A400</block>
-  <block id="0a852867e7d67d61d0c2e9fc0bf5c25b" category="doc">障害のあるコントローラのシャットダウン- ASA A400</block>
-  <block id="7623d824a7edfd5942cda07bb7083d5f" category="doc">システム構成のリストアと確認- ASA A400</block>
-  <block id="07e5680a62c7fba171b750d884e2c8b8" category="doc">NVDIMMの交換- ASA A400</block>
-  <block id="2b6209b8cfa6394be638dd05678f5955" category="doc">詳細ガイド- ASA A400</block>
-  <block id="8a1a52c6e435656b013b46a592d8532c" category="paragraph">このページでは、一般的なNetAppシステムのインストール手順について詳しく説明します。インストール手順の詳細については、このガイドを参照してください。</block>
-  <block id="d1672ccf268fd495f4d802c2624aafae" category="doc">PCIeまたはメザニンカードの交換- ASA A400</block>
-  <block id="65392e86ad2fc6fcf5916c34207de30e" category="doc">NVDIMMバッテリの交換- ASA A400</block>
-  <block id="78db9449ba7d8450cad5eb27239ed98a" category="doc">ASA A400ハードウェアのメンテナンス</block>
   <block id="f0108a2478f6103ee8c38ce95e6fc7a9" category="paragraph">ASA A400ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
-  <block id="032572a24efb136cda9bfc98b8b86aca" category="doc">リアルタイムクロックバッテリの交換- ASA A400</block>
-  <block id="f6f3badff5b0b856e02afd64be3057e6" category="doc">DIMMの交換- ASA A400</block>
-  <block id="cd76a60e25111595739233861fe249f7" category="doc">コントローラのシャットダウン- ASA A400</block>
-  <block id="54f46852719e04c3aed26f73ee04f70b" category="doc">OKM、NSE、NVE - ASA A400のリストア</block>
   <block id="c3c10c279bac3cb43b6f1f1f0865469c" category="list-text"><block ref="c3c10c279bac3cb43b6f1f1f0865469c" category="inline-link-macro-rx"></block></block>
   <block id="fbe5ac44caed14b65f65c674c260d4f6" category="list-text"><block ref="fbe5ac44caed14b65f65c674c260d4f6" category="inline-link-macro-rx"></block></block>
   <block id="5ba82c1fe7f9a054ea742a089f7a227e" category="list-text"><block ref="5ba82c1fe7f9a054ea742a089f7a227e" category="inline-link-macro-rx"></block></block>
-  <block id="b65dcf1c7ad6c86f6d2d5bed4626bcc6" category="doc">クイックガイド- ASA A400</block>
   <block id="5eb8101a6e8a2a3f54c56549ab21ade4" category="admonition">ASA A400は、AFF A400システムと同じインストール手順を使用します。</block>
-  <block id="2d7c6c8ec11dfd6f4583d91c8d94d5d0" category="doc">コントローラの交換- ASA A400</block>
-  <block id="1952c1c21894126b1d43fd1b446add88" category="doc">シャーシの交換の概要- ASA A400</block>
-  <block id="8a5c79d05f266b99fd8b21d069b75d78" category="doc">シャーシ交換後の処理- ASA A400</block>
   <block id="466aa8d45982e2ca3b8ed3fa99638ca2" category="paragraph">新しいシャーシにコントローラモジュールを取り付けたら、ブートします。</block>
   <block id="145ef1ac525baa70aa5c03030fa49d7b" category="summary">AFF A700sハードウェアのメンテナンス</block>
   <block id="97e5e45a379a009690cc1bb51d3d2388" category="paragraph">AFF A700sストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
@@ -5817,13 +5719,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="31464fee840ac27fb57e475ca871c9aa" category="paragraph">RTCバッテリの取り外し</block>
   <block id="00c5745f792e1901ee8e2e1e1d041ee1" category="paragraph">シートRTCバッテリ</block>
   <block id="ce0aad779020493a2d4e98a385762d2b" category="summary">このビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。</block>
-  <block id="110062ecc4941a387b27997f0c7ae5ef" category="doc">ビデオ手順- ASA A400</block>
   <block id="abc8a9a1aab13018556d024a5691afae" category="doc">ビデオの手順- FAS8300 / FAS8700</block>
   <block id="f4c78bd954ecc6d38092f7c504ddfb9a" category="doc">手順ビデオ- FAS2700</block>
-  <block id="781b1fa6778b9993b5d63e1c5ea22106" category="doc">ビデオ手順- ASA A150</block>
-  <block id="17faa87026dc066df4cb6a815fa4044b" category="doc">ビデオ手順- ASA A800</block>
-  <block id="c4d97f649f8fd0bc0d2842c98374b325" category="summary">インストールとセットアップのビデオでは、新しいシステムの設置とケーブル接続の方法を紹介しています。</block>
-  <block id="728c8b35a059c5debd8717ebc5eef9cc" category="doc">ビデオ手順- ASA A250</block>
   <block id="da8c100a35e67a4a9a03589f6afa9ddc" category="doc">ビデオ手順- FAS500f</block>
   <block id="f85c225eac9932f77dacb6e6236f7ce2" category="paragraph">ASA C400ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="76707ae3bb72f26856ca1367c5a4ac26" category="doc">シャーシの交換の概要- ASA C400</block>
@@ -7264,40 +7161,17 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7681293dc9914f924b80b407bcf93b60" category="list-text">監視とトラブルシューティングの手順（アラート、クラスタイベント、システムログに関する情報など）</block>
   <block id="29ce4833094eb0992ba97ac3e0c71b3f" category="inline-link-macro">ASA R2システムメンテナンスセクション</block>
   <block id="c8208be6c84d32af841a96445a7aa12a" category="paragraph">ASA R2システムのタイプごとに固有のメンテナンス手順については、を参照して<block ref="6106c9a1bd699a0a46425013e812fe67" category="inline-link-macro-rx"></block>ください。</block>
-  <block id="cb1eb944e0468ffad560cfc4623a28dc" category="doc">故障した部品をNetApp（ASA A70およびASA A90）に返却します。</block>
-  <block id="69326c1cf7a079cc03d300fe203efde6" category="doc">ブートメディアの交換- ASA A70およびASA A90</block>
   <block id="d49388da53cc4a7219dcbdd63d45342a" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="d54ef5e1f82ac3261c20b17cf3d0d453" category="inline-link-macro-rx"></block></block>
   <block id="e15dd4e77a0784cb0db73357420aff31" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="16af84fbab48141f269a09d09712af68" category="inline-link-macro-rx"></block></block>
   <block id="bbe9dab8dbb04372040fcb892979257c" category="paragraph">障害が発生したブートメディアをシステム管理モジュールから取り外し、交換用ブートメディアを取り付けます。</block>
   <block id="d09fb8e8be6d5c93fb8113549e3abfb0" category="paragraph">パートナーコントローラからONTAPイメージをリストアします。</block>
   <block id="b8a9f715dbb64fd5c56e7783c6820a61" category="inline-image-macro">2つ</block>
-  <block id="95d86a07e48032c658d9a13faedb46d6" category="doc">シャーシの交換後の処理- ASA A70およびASA A90</block>
-  <block id="33af0abab8ca4fe70c730bb3d86abb73" category="doc">ハードウェアの移動と交換- ASA A70およびASA A90</block>
-  <block id="442aff9d882f282af3f3d4634f0b094f" category="doc">シャーシの交換ワークフロー- ASA A70およびASA A90</block>
-  <block id="43df70609ea6def43d3a5dbd42ad0adc" category="doc">障害のあるコントローラのシャットダウン- ASA A70とASA A90</block>
-  <block id="c419380631bdd15fdc50ecdb6cb5afa2" category="doc">システム構成のリストアと確認（ASA A70およびASA A90）</block>
-  <block id="9eae42d3fd37d848f1824e0e46fef5d9" category="doc">コントローラの交換ワークフロー- ASA A70およびASA A90</block>
   <block id="1ea686595c5ed6760ff52fdfd043e3f7" category="inline-link-macro">コントローラの交換要件を確認</block>
   <block id="cc27efe3b06878284f987c234862dfa3" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="00ff41a73d410c5006f78cd4269abce5" category="inline-link-macro-rx"></block></block>
-  <block id="54ca9bab43d194ab4253b5eb1032a2c7" category="doc">DIMMの交換- ASA A70およびASA A90</block>
-  <block id="e26d17ccdd5c8e0cedb0a6558327fd7c" category="doc">ファンモジュールの交換- ASA A70およびASA A90</block>
   <block id="d4492cf543a73c552a0ae603fe5b3974" category="summary">ASA R2 A70、ASA R2 A90ハードウェアのメンテナンス</block>
   <block id="cde82c9b04790b90c2679aca48bf0641" category="paragraph">ASA A70およびASA A90ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="5f402dad935ff3ab451b558b0df9b4f3" category="paragraph">コントローラは、ボード、ファームウェア、ソフトウェアで構成されます。ストレージ、I/Oカードを制御し、ONTAPオペレーティングシステムソフトウェアを実行します。</block>
-  <block id="33a7e77eb8f382b670aecd2f25304362" category="doc">NVバッテリの交換- ASA A70およびASA A90</block>
-  <block id="124b0b12b52d6ff2b5c211d8ab2b86c6" category="doc">NVRAMの交換- ASA A70およびASA A90</block>
-  <block id="591fbd5c7a0e4469981c4bc0919fffdb" category="doc">リアルタイムクロックバッテリを交換してください- ASA A70およびASA A90</block>
-  <block id="77dbbb0add58d8d5b96d74c1b27689bb" category="doc">故障した部品をNetAppに返却します（ASA A1K）。</block>
-  <block id="1c1be2f74300d879eb6d6d09021f9e6f" category="doc">ブートメディアの交換- ASA A1K</block>
-  <block id="ea317decaa01e895dc8b7b6c778d61c7" category="doc">障害のあるコントローラをシャットダウンします- ASA A1K</block>
-  <block id="5a1386c52e6b08376e6eab809d47a5a0" category="doc">コントローラのギブバック- ASA A1K</block>
-  <block id="55960eb9cf1af0070a8d87ac5ec35c50" category="doc">コントローラ交換後の処理- ASA A1K</block>
-  <block id="289510b9a5b70d78d5dde9549bcc6837" category="doc">システム構成のリストアと確認- ASA A1K</block>
-  <block id="573cb7e20352c6ed49fece2c623ec50b" category="doc">DIMMの交換- ASA A1K</block>
-  <block id="d874941f5988be4d767ed305d690f93e" category="doc">ファンの交換- ASA A1K</block>
   <block id="c0948273a639518682bdf15da7ef7782" category="paragraph">ASA A1Kストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
-  <block id="d40d4bbeff22abe0ae50f578804e3f1d" category="doc">NVRAMの交換- ASA A1K</block>
-  <block id="53211074b0edd2a1e49952ae0a99c70e" category="doc">リアルタイムクロックバッテリを交換してください- ASA A1K</block>
   <block id="791c7d7e48c500e265e759e91a1190c4" category="paragraph">指定したバージョンのONTAPでは、次のシステム、シェルフ、およびスイッチがサポートされなくなりました。</block>
   <block id="e039aa1be61543fd84f1c4eb5d3e9f6b" category="section-title">ONTAPハードウェアシステム</block>
   <block id="65cc6c94582f61a33aa4704c52ac52c0" category="cell">シェルフモジュール</block>
@@ -7385,7 +7259,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5085ff6c350861af4448d82a2c958fe8" category="paragraph">ASA A1K HAペアには、最大3台のNS224シェルフ（合計4台のシェルフ）をホットアドできます。</block>
   <block id="55ec693931401ff7a634100e33ff8cfd" category="doc">ONTAPハードウェアシステムの新機能</block>
   <block id="ec6e72d1c4bb7dccdc62b6caf35c95f7" category="sidebar">ONTAPハードウェアシステムのドキュメント</block>
-  <block id="9c2e760711833288658335a04261b16a" category="sidebar">ASA R2ストレージシステムのマニュアルには、ASA R2システムのインストール、セットアップ、および保守が記載されています。</block>
   <block id="e995d56efd9e31d97825dd79be4d1383" category="sidebar">ASA R2ストレージシステムの詳細</block>
   <block id="aa0dbb314a1c2c27148345705facc55c" category="sidebar">ASA R2システムのインストールとメンテナンス</block>
   <block id="9fd07d4ea56c68343a06b54bb812a542" category="sidebar">ASA R2システムのインストール</block>
@@ -7591,13 +7464,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5d76f009f7cd6e682bfd4e7b7100bf50" category="list-text">障害コントローラのストレージをギブバックして、障害コントローラを通常動作に戻します。<block ref="942475a8b85026371f0df2238e2242a7" prefix=" " category="inline-code"></block></block>
   <block id="6cc1bea98a5917bd99040659271eee84" category="list-text">自動ギブバックが無効になっていた場合は、再度有効にします。<block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix=" " category="inline-code"></block></block>
   <block id="e929e5cc1e429d4acd62e249388409a8" category="list-text">コントローラモジュールの端をシャーシの開口部に合わせ、コントローラをシャーシの奥までそっと押し込みます。</block>
-  <block id="e4db105eaa26749e6726fe6644b77f2f" category="doc">暗号化キーのサポートとステータスの確認- ASA A150</block>
-  <block id="f9c62bff8e46b0d2433f3609b7ecdb39" category="doc">暗号化キーのサポートとステータスの確認- ASA A250</block>
-  <block id="0f791bd55bfa2fd01f0eba9b2a93ae03" category="doc">リストア暗号化- ASA A250</block>
-  <block id="6a3dc34ad6a214d72bd704b1c631ac27" category="doc">暗号化キーのサポートとステータスの確認- ASA A400</block>
-  <block id="0a1b1a82d29b54f3c96fa637e88dbed7" category="doc">暗号化キーのサポートとステータスの確認- ASA A800</block>
-  <block id="a462f90654e012446c7de81d57862efa" category="doc">暗号化キーのサポートとステータスの確認- ASA A900</block>
-  <block id="e6b007124129e06cf12d3969e2e3ed17" category="doc">リストア暗号化- ASA A900</block>
   <block id="a29212026f644e3af5d7d35e4872e64e" category="doc">暗号化キーのサポートとステータスの確認- FAS2600</block>
   <block id="f69fe3fd7c25297cb61a32bc5fc76020" category="doc">暗号化のリストア- FAS2600</block>
   <block id="cbae18ebc2b8ffd413dbf0fb20bf3f9d" category="doc">暗号化キーのサポートとステータスの確認- FAS500f</block>
@@ -7661,8 +7527,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b5507fd73a4983529ea95a333b70737d" category="paragraph">問題が発生した場合は、ケーブル接続を確認し、ケーブルを抜き差しします。</block>
   <block id="b9b95d927da2cee98d985b1a328995c6" category="list-text">メンテナンスモードを終了します。<block ref="4a1bde0ea8bcda2a591f42646813c477" prefix=" " category="inline-code"></block></block>
   <block id="f1d532893d42eeecb43413920b6d1769" category="list-text">ケーブル管理ARMを取り外した場合は再度取り付けますが、交換用コントローラにはケーブルを再接続しないでください。</block>
-  <block id="4443f66d8d4febc600e0d4d0b3b0db91" category="doc">コントローラのギブバック- ASA A70およびASA A90</block>
-  <block id="425248bc914ee69e002743b7cff8fb0a" category="doc">システム管理モジュールの交換- ASA A1K</block>
   <block id="fc633a3acea06ec7b13b95943af5a8f1" category="doc">システム管理モジュールの交換- FAS70およびFAS90</block>
   <block id="c6850888623b4b33ceba4c1bd9322642" category="doc">暗号化キーのサポートとステータスの確認- FAS2820</block>
   <block id="0152b6e0cea632db2750cd8de20a739e" category="doc">リストア暗号化- FAS2820</block>
@@ -8074,7 +7938,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="05399af26fe68d85290393085de52886" category="list-text">PSUからコードを抜き、脇に置きます。</block>
   <block id="c84ab0e073caaef7e85be33d3514d0c3" category="list-text">交換用PSUを挿入します。</block>
   <block id="f4abaf8344aa862c410e5748ff7e3005" category="list-text">D-SUB DC電源コードを再接続します。</block>
-  <block id="4989a0bae0116c0752ecb161ddaf5384" category="paragraph">I/O の実行中に障害が発生したドライブを無停止で交換できます。</block>
   <block id="d9019c4ab9a523481c7149591d3843bd" category="list-text">取り付けるドライブがストレージシステムでサポートされている必要があります。</block>
   <block id="179f7844ec367d13c2122239d290a3de" category="list-text">自己暗号化ドライブ（SED）認証が有効になっている場合は、ONTAPのドキュメントに記載されているSEDの交換手順を使用する必要があります。</block>
   <block id="669c69e46c95de39d57d85dd33a3b93a" category="list-text">ストレージシステムの他のすべてのコンポーネントが正常に動作している必要があります。正常に動作していない場合は、この手順を続行する前にににアクセスする必要が<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>あります。</block>
@@ -8630,7 +8493,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="27715a4d2867a47fb027e5808760a851" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="ccb4edb95b58f7050d5462ae0acd0b1b" category="inline-link-macro-rx"></block></block>
   <block id="11f69ba457c92cc85e478b022d6fe27d" category="open-title">オプション1：NS224ストレージシェルフ1台</block>
   <block id="dbc80d316683c8c8fbd51c4f53c57169" category="open-title">オプション2：NS224ストレージシェルフ×2</block>
-  <block id="5b64e8df8fa3f4298ca879bbc49b353c" category="doc">シャーシの交換の準備- ASA A70およびASA A90</block>
   <block id="8019bdcaff5849ab8015533c8674f305" category="paragraph">各コントローラを両方のNS224シェルフのNSMモジュールにケーブル接続します。図は、コントローラAのケーブル配線を青で示し、コントローラBのケーブル配線を黄色で示しています。</block>
   <block id="546125971d4fce23d0f562118f0ce95f" category="open-title">オプション3：DS460Cシェルフ×2</block>
   <block id="8994222dc8e3118b755e00531cef6a1c" category="paragraph">各コントローラを両方のDS460CシェルフのIOMモジュールにケーブル接続します。図は、コントローラAのケーブル配線を青で示し、コントローラBのケーブル配線を黄色で示しています。</block>
@@ -8838,7 +8700,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="c0caee8d791d630286e30c5e81a37e68" category="list-text">ストレージスイッチを介してNS224ドライブシェルフをケーブル接続する方法については、を参照して<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>ください。古いハードウェアモデルの場合は、スイッチのケーブル接続に関する情報もに記載され<block ref="c0b67f04541b649189f1a990ae4a004d" category="inline-link-rx"></block>ています。</block>
   <block id="d4fa7a653c8bbd17c1100e0ee0b5da36" category="list-text">ストレージスイッチの設置については、を参照して<block ref="cd35f6165185d2c70017bfb031f19b89" category="inline-link-rx"></block>ください。</block>
   <block id="5b799a4d08d10d5bb45cb3c7b02567ba" category="list-text">ストレージスイッチやケーブルなど、プラットフォームモデルでサポートされているハードウェアを確認するには、を参照して<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>ください。</block>
-  <block id="1c0fa23373954917c0b08b188941f3c3" category="sidebar">新しいNetApp ASA R2システム（ASA A1K、ASA A70、ASA A90、ASA A20、ASA A30、およびASA A50）は、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせたシンプルなエクスペリエンスを実現します。</block>
   <block id="34d5f1e610f6b8eaf1a7180026def343" category="sidebar">コントローラのシャットダウン</block>
   <block id="43229c521bba188c3491ed72abe03043" category="sidebar">Flash Cacheモジュール</block>
   <block id="6640795ffbdb7f7a3d23500204587fa2" category="paragraph">要件を確認</block>
@@ -8899,14 +8760,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="c330ef0ca8c9d8e7a95cd59e8bd29028" category="paragraph">ブートメディアの要件を確認したら、<block ref="a9f725bc41d31688b04caf5a2f249945" category="inline-link-macro-rx"></block></block>
   <block id="2637ddc571b4eec6fba99d80e4508ea3" category="summary">ASA A70およびASA A90ストレージシステムのブートメディアの交換を開始します。まず、交換要件を確認し、コントローラのシャットダウン、ブートメディアの交換、ブートメディアへのイメージのリストア、システム機能の確認を行います。</block>
   <block id="e02c1c38027df9cf184c084019ca80bd" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="c17103ffaf4bf6b45a49b4f8fd312634" category="inline-link-macro-rx"></block></block>
-  <block id="e11c4e7e1911a7e97e4e5ede6d323863" category="doc">コントローラをシャットダウンしてブートメディアを交換します- ASA A1K</block>
   <block id="fc8100e55637c75e7d2b555b531a0ee4" category="paragraph">コントローラをリブートし、システムヘルスを確認し、障害が発生したパーツをNetAppに戻して、ASA A70およびASA A90シャーシの交換手順の最後の手順を完了します。</block>
-  <block id="7b9d1397ffd8886e76e4fed43c1ecd40" category="doc">シャーシの交換要件- ASA A70およびASA A90</block>
   <block id="f27d9a5f7d5680dbe736e6836d3c1a9f" category="summary">ハードウェア障害が必要な場合は、ASA A70またはASA A90システムのコントローラを交換します。このプロセスでは、障害のあるコントローラを取り外し、交換用コントローラにコンポーネントを移動し、交換用コントローラを取り付け、システムをリブートします。</block>
-  <block id="2c72ab76cb7a954eb5f3546d4abad687" category="doc">コントローラを交換してください- ASA A70とASA A90</block>
   <block id="1a68c286a29e94a07ffe7e1a8e288e40" category="summary">ASA A70またはASA A90システムが通常の運用を再開できるように、ストレージリソースの制御を交換用コントローラに戻します。</block>
-  <block id="b25f0fb243bad5e39db497ca9643ee35" category="doc">コントローラの交換要件- ASA A70およびASA A90</block>
-  <block id="1e60488a65d744862b8f6292544da3f0" category="doc">コントローラ交換後の処理- ASA A70とASA A90</block>
   <block id="bb9f8e902211727b75f62da6100f446a" category="summary">修正可能または修正不可能なメモリエラーが大量に検出された場合は、ASA A70またはASA A90システムのDIMMを交換します。このようなエラーが発生すると、ストレージシステムでONTAPをブートできなくなる可能性があります。交換プロセスでは、障害コントローラのシャットダウン、障害コントローラの取り外し、DIMMの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
   <block id="bdd967d82d036d0ed0b29ba6983694ae" category="paragraph">修正可能または修正不可能なメモリエラーが大量に検出された場合は、ASA A70またはASA A90システムのDIMMを交換します。このようなエラーが発生すると、ストレージシステムでONTAPをブートできなくなる可能性があります。交換プロセスでは、障害コントローラのシャットダウン、障害コントローラの取り外し、DIMMの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
   <block id="e8afe3e9f56a1403556444ed307a82ea" category="summary">ファンに障害が発生した場合、またはファンが効率的に動作していない場合は、ASA A70またはASA A90システムのファンモジュールを交換してください。これは、システムの冷却と全体的なパフォーマンスに影響する可能性があります。交換プロセスでは、コントローラのシャットダウン、コントローラの取り外し、ファンの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
@@ -8914,24 +8770,19 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="37c709c92540fdfafad949954d9c9d23" category="summary">ASA A70およびASA A90システムは、I/Oモジュールを柔軟に拡張または交換できるため、ネットワーク接続とパフォーマンスが向上します。I/Oモジュールの追加または交換は、ネットワーク機能をアップグレードする場合や、障害が発生したモジュールに対処する場合に不可欠です。</block>
   <block id="ef5c567123618039bb9c6365201a9516" category="paragraph">ASA A70またはASA A90ストレージシステム内の障害が発生したI/Oモジュールは、同じタイプのI/Oモジュールに交換することも、別の種類のI/Oモジュールに交換することもできます。空きスロットのあるシステムにI/Oモジュールを追加することもできます。</block>
   <block id="6ec9d402bdf5f8f281a64877dcfb1834" category="paragraph">ASA A70またはASA A90システムのI/Oモジュールに障害が発生した場合や、より高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、I/Oモジュールを交換してください。交換プロセスでは、コントローラのシャットダウン、障害が発生したI/Oモジュールの交換、コントローラのリブート、障害が発生したパーツのNetAppへの返却を行います。</block>
-  <block id="ba9896ee329eaab4d69b782c90f96426" category="doc">メンテナンス手順の概要- ASA A70およびASA A90</block>
   <block id="9820e4314a3e441bfece800b6e086ee5" category="paragraph">ASA A70およびASA A90ストレージシステムのハードウェアを保守して、長期的な信頼性と最適なパフォーマンスを確保します。ダウンタイムやデータ損失の防止に役立つため、障害のあるコンポーネントの交換などの定期的なメンテナンスタスクを実行します。</block>
   <block id="156e54fb574402ca9f26edcfaeff46e1" category="paragraph">メンテナンス手順では、ASA A70システムとASA A90システムがONTAP環境にストレージノードとしてすでに導入されていることを前提としています。</block>
   <block id="99b88f32607667ac31ffc4d65b240425" category="summary">ASA A70またはASA A90システムのNVバッテリは、停電時に重要なシステムデータを保持する役割があるため、バッテリの充電が失われ始めたときや障害が発生したときに交換します。交換プロセスでは、障害のあるコントローラのシャットダウン、コントローラモジュールの取り外し、NVバッテリの交換、コントローラモジュールの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
   <block id="41e2f285e686b8f2a3edb4bab2e58d51" category="paragraph">ASA A70またはASA A90システムのリアルタイムクロック（RTC）バッテリ（一般にコイン型電池と呼ばれる）を交換して、正確な時刻同期に依存するサービスやアプリケーションが動作し続けるようにします。</block>
   <block id="bcde75f7bddc9226b30c2cb1712cb52b" category="summary">ASA A70またはASA A90システムのシステム管理モジュールが故障した場合、またはファームウェアが破損した場合は、システム管理モジュールを交換してください。交換プロセスでは、コントローラのシャットダウン、障害が発生したシステム管理モジュールの交換、コントローラのリブート、ライセンスキーの更新、障害が発生したパーツのNetAppへの返却を行います。</block>
-  <block id="603c758839f418606126a3dd634c68d9" category="doc">システム管理モジュール（ASA A70 and ASA A90）を交換してください</block>
   <block id="dcfa3de2faa27a3e334c7c433ea50340" category="summary">ASA A1Kシステムの交換用ブートメディアにONTAPイメージをリストアします。このプロセスでは、Loaderプロンプトからブートリカバリプロセスを開始し、リカバリプロセスが完了してノードがリブートするまでリカバリプロセスを監視します。</block>
   <block id="955b02a4be265a47dec370f73ec90202" category="paragraph">ASA A1Kシステムに新しいブートメディアデバイスを取り付けたら、自動ブートメディアリカバリプロセスを開始して、パートナーノードから構成をリストアできます。</block>
   <block id="09922310f86dcfda39249f4666ce5146" category="summary">ASA A1Kシステムのブートメディアには、重要なファームウェアと設定データが格納されます。交換プロセスでは、システム管理モジュールを取り外し、障害のあるブートメディアを取り外し、交換用ブートメディアをシステム管理モジュールに取り付けてから、システム管理モジュールを再度取り付けます。</block>
   <block id="71b41768755429f94118b959381a52b4" category="summary">ASA A1Kシステムのブートメディアを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。</block>
-  <block id="9463e7037823b10043e935b4c66fd40f" category="doc">ブートメディアの交換要件- ASA A1K</block>
   <block id="24ba379bd8e7bdde7e0e1b156431376b" category="summary">ASA A1Kストレージシステムのブートメディアの交換を開始します。まず、交換要件を確認し、コントローラをシャットダウンし、ブートメディアを交換し、ブートメディアにイメージをリストアし、システム機能を確認します。</block>
   <block id="4d60e015da1ccbddbd5825262ead312e" category="paragraph">ASA A1Kストレージシステムのブートメディアの交換を開始するには、交換要件の確認、コントローラのシャットダウン、ブートメディアの交換、ブートメディアへのイメージのリストア、システム機能の確認を行います。</block>
-  <block id="8f31c4d6dd15a8b6badb61be6bbe870f" category="doc">コントローラの交換- ASA A1K</block>
   <block id="f501a4282c0407a5377e73a38c2fe79c" category="paragraph">障害のあるASA A1Kコントローラを交換したら、を行う必要があります<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block>。</block>
   <block id="0b7aa62fd5de84b2f6b9168c29cd9699" category="summary">ストレージリソースの制御を交換用コントローラに戻して、ASA A1Kシステムが通常の運用を再開できるようにします。</block>
-  <block id="6a41dab46dde5ea92e32bfe9162ff999" category="doc">コントローラの交換要件- ASA A1K</block>
   <block id="95155c153887de18d244e072071f2b3a" category="summary">コントローラのHA構成がアクティブでASA A1Kストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。</block>
   <block id="f68165cbf3ba1e1d45a1b8381c53da48" category="paragraph">ASA A1Kシステムのシステム構成を復元して確認したら、を実行する必要があります<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>。</block>
   <block id="3554082e8291b9cdbf124dd341192845" category="summary">ASA A1Kストレージシステムのコントローラの交換を開始します。まず、障害のあるコントローラのシャットダウン、コントローラの取り外しと交換、システム設定の再設定、システム動作の確認を行います。</block>
@@ -8942,10 +8793,8 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="0964259faae5ffbb057f210fdf96f911" category="paragraph">ASA A1Kストレージシステム内の障害が発生したI/Oモジュールは、同じタイプのI/Oモジュールに交換することも、別の種類のI/Oモジュールに交換することもできます。空きスロットのあるシステムにI/Oモジュールを追加することもできます。</block>
   <block id="271e5509aea40fadf8358832d40d8709" category="summary">ASA A1KシステムのI/Oモジュールに障害が発生した場合や、より高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、I/Oモジュールを交換してください。交換プロセスでは、コントローラのシャットダウン、障害が発生したI/Oモジュールの交換、コントローラのリブート、障害が発生したパーツのNetAppへの返却を行います。</block>
   <block id="0034e19547064f54c68ea2a26e4a1c09" category="summary">ASA A1Kストレージシステムのハードウェアを保守して、長期的な信頼性と最適なパフォーマンスを確保します。ダウンタイムやデータ損失の防止に役立つため、障害のあるコンポーネントの交換などの定期的なメンテナンスタスクを実行します。</block>
-  <block id="60b49041f4566dad7b5438207f03aab8" category="doc">メンテナンス手順の概要- ASA A1K</block>
   <block id="f60f4792191ab6f28133159fba4fc7e3" category="paragraph">メンテナンス手順では、ASA A1KシステムがONTAP環境のストレージノードとしてすでに導入されていることを前提としています。</block>
   <block id="4911cb240fadb3a7b630d1a2812158f0" category="summary">ASA A1KシステムのNVバッテリは、停電時に重要なシステムデータを保持する役割があるため、バッテリの充電が失われたり故障したりした場合に交換してください。交換プロセスでは、障害のあるコントローラのシャットダウン、コントローラモジュールの取り外し、NVバッテリの交換、コントローラモジュールの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
-  <block id="14528c5898a9ac73197c0d6eb1f9285a" category="doc">NVバッテリの交換- ASA A1K</block>
   <block id="77fc6c64616effe73533cda37fa4f23e" category="summary">不揮発性メモリに障害が発生した場合、またはアップグレードが必要な場合は、ASA A1KシステムのNVRAMを交換してください。</block>
   <block id="53adf483cd5d3055074ef84d5be7963f" category="paragraph">不揮発性メモリに障害が発生した場合、またはアップグレードが必要な場合は、ASA A1KシステムのNVRAMを交換してください。交換プロセスでは、障害のあるコントローラのシャットダウン、NVRAMモジュールまたはNVRAM DIMMの交換、ディスクの再割り当て、障害が発生したパーツのNetAppへの返却を行います。</block>
   <block id="d5c5d5ed06719b517e116422631085f4" category="summary">ASA A1Kシステムのリアルタイムクロック(RTC)バッテリ(一般にコイン型電池と呼ばれます)を交換して、正確な時刻同期に依存するサービスやアプリケーションが動作し続けるようにします。</block>
@@ -9023,21 +8872,17 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3d66e2bc04a2bf4d67479aeb58156314" category="image-alt">AFF A70コントローラおよびAFF A90コントローラでのスロット番号</block>
   <block id="56ad6bf109012512c29dd7e97eed0d07" category="inline-link">ASA R2のインストールとセットアップの手順</block>
   <block id="a32b0b0e7f93a90ca23bd0c55196f198" category="paragraph">システムの設置とセットアップの方法については、を参照して<block ref="4533fd5d0b143e085eb63ae91272ede8" category="inline-link-rx"></block>ください。</block>
-  <block id="2cf315583a350744f9ff0bd28ec89aef" category="doc">ブートメディアの交換ワークフロー- ASA A70とASA A90</block>
   <block id="0fa20140cccf4974720aff8872200883" category="summary">ASA A70またはASA A90ストレージシステムの障害のあるコントローラをシャットダウンして、データ損失を防ぎ、ブートメディアの交換時にシステムの安定性を確保します。</block>
   <block id="77055e2a6de9b12c1a807637589f2fed" category="summary">ASA A70またはASA A90ストレージシステムのコントローラをシャットダウンして、データ損失を防ぎ、シャーシの交換時にシステムの安定性を確保します。</block>
-  <block id="a6b9fb43d1166a75eaedff6413ec8c87" category="doc">コントローラをシャットダウンしてシャーシを交換します- ASA A70およびASA A90</block>
   <block id="65718d4d742d1248a6d828871badb48e" category="paragraph">ASA A70またはASA A90システムのコントローラを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。具体的には、システムの他のすべてのコンポーネントが正常に動作していること、正しい交換用コントローラがあることの確認、コントローラのコンソール出力のテキストログファイルへの保存が含まれます。</block>
   <block id="00a1a6432a6bef533719f8b3b6b498f7" category="summary">ASA A70またはASA A90ストレージシステムのコントローラをシャットダウンして、データ損失を防ぎ、コントローラの交換時にシステムの安定性を確保します。</block>
   <block id="d505a165dd70e1d95fec709cd90f11f9" category="summary">ASA A70またはASA A90ストレージシステムのコントローラの交換を開始します。まず、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成をリストアし、ストレージリソースの制御を交換用コントローラに戻します。</block>
   <block id="b59bb3cc8f9a56d177d7bf16f25cfd37" category="paragraph">次の図に示すように、ASA A70およびASA A90コントローラのI/Oスロットには1~11の番号が付けられています。</block>
   <block id="5b40425538162f682681fffc50856a0a" category="image-alt">ASA A70およびAFF A90コントローラのスロット番号</block>
   <block id="dff1be90540ce88f80c84fbe6c281e2d" category="summary">ASA A1Kシステムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。</block>
-  <block id="c940611fb67d6f64a97efd7fcbadb1aa" category="doc">ブートメディアの交換ワークフロー- ASA A1K</block>
   <block id="bb1480723d220e443289f20ffeac63ff" category="summary">ASA A1Kストレージシステムの障害のあるコントローラをシャットダウンしてデータ損失を防ぎ、ブートメディアの交換時にシステムの安定性を確保します。</block>
   <block id="4d9bd792214977daa90be4d49544c0b0" category="summary">ASA A1Kシステムのコントローラを交換する前に、交換が成功するために必要な要件を満たしていることを確認してください。具体的には、システムの他のすべてのコンポーネントが正常に動作していること、正しい交換用コントローラがあることの確認、コントローラのコンソール出力のテキストログファイルへの保存が含まれます。</block>
   <block id="c9d031fc00539767dfbed4a3da89cdd4" category="summary">ASA A1Kストレージシステムのコントローラをシャットダウンしてデータ損失を防ぎ、コントローラの交換時にシステムの安定性を確保します。</block>
-  <block id="bb324afe147f01d9741bad94e9f48fa5" category="doc">コントローラの交換ワークフロー- ASA A1K</block>
   <block id="05d5663ac0d1fbb9e47fdabe976bff04" category="paragraph">次の図に示すように、ASA A1KコントローラのI/Oスロットには1~11の番号が付けられています。</block>
   <block id="4d7f3bf998f11ec51e5b1d5c5c650e48" category="image-alt">ASA A1Kコントローラのスロット番号</block>
   <block id="6cdd2252e3b0e8b6b38ce0acf92e33da" category="paragraph">ASA A20、ASA A30、またはASA A50ストレージシステムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページを参照してください。</block>
@@ -9092,14 +8937,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="cdab9753bdddb0aefefab44fd8865fbb" category="summary">AFF A70またはAFF A90システムのコントローラを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。具体的には、システムの他のすべてのコンポーネントが正常に動作していること、正しい交換用コントローラがあることの確認、コントローラのコンソール出力のテキストログファイルへの保存が含まれます。</block>
   <block id="caea42c273f28398fdc8ee7ee846cba1" category="image-alt">AFF A90 AFF A70およびC80重量警告アイコン</block>
   <block id="172bb971e016c43ff64ba57272404e84" category="summary">AFF A70またはAFF A90システムに障害が発生した場合や障害が発生した場合は、ACまたはDC電源装置ユニット（PSU）を交換して、安定した動作のために必要な電力をシステムに供給し続けるようにします。交換プロセスでは、障害が発生したPSUを電源から取り外し、電源ケーブルを抜き、障害が発生したPSUを交換してから、電源に再接続します。</block>
-  <block id="7123adf741599afcbf244e4e98d663f5" category="doc">SSDドライブの交換- ASA A70 and ASA A90</block>
-  <block id="9b6a53cb25d5ad933496e9c5e800035c" category="doc">I/Oモジュールの追加- ASA A70およびASA A90</block>
-  <block id="69d316c0d65bb5a04b4bf5e833d3782c" category="doc">I/Oモジュールの追加と交換- ASA A70およびASA A90の概要</block>
-  <block id="be95fdb39b28a4328a79fd4d94cbeb8a" category="doc">I/Oモジュールの交換- ASA A70およびASA A90</block>
   <block id="77847efd1cd22c7d12c880345c3d2cbd" category="summary">ASA A70またはASA A90システムに障害が発生した場合や障害が発生した場合は、ACまたはDC電源装置ユニット（PSU）を交換して、安定した動作のために必要な電力をシステムに供給し続けるようにします。交換プロセスでは、障害が発生したPSUを電源から取り外し、電源ケーブルを抜き、障害が発生したPSUを交換してから、電源に再接続します。</block>
-  <block id="ced875171f078cb35825b28e1856dd9d" category="doc">I/Oモジュールの追加- ASA A1K</block>
-  <block id="8c1b02887a2e6fb34ad3351d42ea690b" category="doc">I/Oモジュールの追加と交換の概要- ASA A1K</block>
-  <block id="b69d7ce462751c8d58c3cff284a4f258" category="doc">I/O モジュールを交換してください - ASA A1K</block>
   <block id="0b1867a1a91c594d12ff419ebad10b23" category="summary">ASA A1Kシステムに障害が発生した場合や障害が発生した場合は、ACまたはDC電源装置ユニット（PSU）を交換して、安定した動作のために必要な電力がシステムに供給され続けるようにしてください。交換プロセスでは、障害が発生したPSUを電源から取り外し、電源ケーブルを抜き、障害が発生したPSUを交換してから、電源に再接続します。</block>
   <block id="bf112a46cb5a25f5cf12e7fa7476c832" category="summary">ASA A20、ASA A30、またはASA A50ストレージシステムの障害のあるコントローラをシャットダウンして、データ損失を防ぎ、ブートメディアの交換時にシステムの安定性を確保します。</block>
   <block id="551101167caf68719cb147303d60b949" category="summary">シャーシのHA状態を確認し、障害が発生したパーツをNetAppに戻して、ASA A20、ASA A30、およびASA A50シャーシの交換手順の最後の手順を完了します。</block>
@@ -9442,60 +9280,34 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5e163d153d8c37baaa9fd7de379cf5bf" category="paragraph">コントローラーを交換するための要件を確認します。</block>
   <block id="182e45b4e9d9b946f297d6188c6d4585" category="paragraph">ASA C30 ストレージシステムに空きスロットがあれば、I/O モジュールを追加できます。すべてのスロットが満杯の場合は、既存のモジュールを交換して新しいモジュールを追加できます。</block>
   <block id="008e878c00337b7c1676a1bf2b5e1f88" category="summary">ASA C30 ストレージ システムのコンポーネントに障害が発生した場合は、障害が発生した部品を NetApp に返却してください。</block>
-  <block id="1a74384be12ec55525108f8b4b66e4cf" category="doc">故障した部品をNetAppに返却します（ASA C30）。</block>
   <block id="5c57ecccb489a807b7ce058e84066112" category="paragraph">ASA C30 ストレージ システムのコンポーネントに障害が発生した場合は、障害が発生した部品を NetApp に返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページを参照してください。</block>
   <block id="a6090718a9aeffd0a4509ab0c7982422" category="summary">ASA C30 ストレージ システムに新しいブート メディア デバイスをインストールした後、自動ブート メディア リカバリ プロセスを開始して、正常なノードから構成を復元できます。</block>
-  <block id="c2de4d4510a9a64facdf71ce04df1256" category="doc">ブートメディア上の ONTAP イメージを復元する - ASA C30</block>
   <block id="ea8fd5bd6c26f06b31f96391b253c778" category="summary">ASA C30 ストレージ システムのブート メディアには、重要なファームウェアと構成データが保存されます。交換プロセスでは、コントローラモジュールを取り外し、障害のあるブートメディアを取り外し、交換用ブートメディアを取り付けてから、ONTAPイメージを交換用ブートメディアに転送します。</block>
-  <block id="5daa76a4aa0a675c1ff837ebfd9193de" category="doc">ブートメディアの交換- ASA C30</block>
-  <block id="9711de828f499165b267f4aded9c85e0" category="doc">ブートメディアの交換要件- ASA C30</block>
   <block id="af64ca3ab36eca3c94582cbfadb2bb6d" category="summary">交換要件を確認し、障害のあるコントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システム機能を確認して、ASA C30 ストレージ システムのブート メディアの交換を開始します。</block>
-  <block id="9e4d05a14fde717f129944022ed99861" category="doc">ブートメディアの交換ワークフロー- ASA C30</block>
   <block id="ea792349c9ec99fe28db82adad3adccb" category="summary">ASA C30ストレージシステムの障害のあるコントローラをシャットダウンしてデータ損失を防ぎ、ブートメディアの交換時にシステムの安定性を確保します。</block>
-  <block id="c9f4b7c42437a2c4b4690a3b013628ba" category="doc">コントローラをシャットダウンしてブートメディアを交換します- ASA C30</block>
   <block id="669772d17e2dc353f34f422c36121ce3" category="summary">シャーシの HA 状態を確認し、障害が発生した部品を NetApp に返送して、ASA C30 シャーシ交換手順の最終ステップを完了します。</block>
-  <block id="23d33c98c35b14fd4a80967e1b3e3457" category="doc">シャーシ交換後の処理- ASA C30</block>
-  <block id="635216b917d6fdf5a454b511576ce44d" category="doc">シャーシの交換- ASA C30</block>
   <block id="aab639c4c9147a73b0546ea341640574" category="summary">ASA C30 ストレージ システムのシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。具体的には、システムの他のすべてのコンポーネントが正常に動作していること、正しい交換用シャーシがあること、および必要な工具が揃っていることを確認します。</block>
-  <block id="d8d0c8656fc7188d35f6528aa09e4d2f" category="doc">シャーシの交換要件- ASA C30</block>
   <block id="5e10b31ed571502de1abfffd65faeed4" category="summary">シャーシを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、ASA C30 ストレージ システム内のコントローラをシャットダウンします。</block>
-  <block id="2f826d52c24daa29d9d263625be52c6d" category="doc">コントローラのシャットダウン- ASA C30</block>
   <block id="ce586186264926dca69594bb6b7d8b7e" category="summary">ASA C30 ストレージ システムのシャーシを交換するには、交換要件の確認、コントローラのシャットダウン、シャーシの交換、およびシステム動作の検証を行います。</block>
-  <block id="e2ed0a4168043c9156a55b725d7222e5" category="doc">シャーシの交換ワークフロー- ASA C30</block>
   <block id="e0ac24275668c9f2a6cc457319a609cf" category="summary">ハードウェア障害が発生した場合は、ASA C30 ストレージ システムのコントローラを交換してください。交換プロセスでは、障害のあるコントローラを取り外し、交換用コントローラにコンポーネントを移動し、交換用コントローラを取り付けてリブートします。</block>
-  <block id="05e289dc15f65b50fbc090198495aabb" category="doc">コントローラの交換- ASA C30</block>
-  <block id="6b422659ac5fffe3ecc8c66789fdeadd" category="doc">コントローラのギブバック- ASA C30</block>
   <block id="67cb3952ec89ce8d08815e47cfffe7fb" category="paragraph">ストレージ リソースの制御を交換用コントローラに戻して、ASA C30 ストレージ システムが通常の操作を再開できるようにします。ギブバック手順は、システムで使用されている暗号化タイプ（暗号化なし、オンボードキーマネージャ（OKM）暗号化、外部キーマネージャ（EKM）暗号化）によって異なります。</block>
   <block id="7ea5dd39204016c48a5829f91be918a1" category="summary">ASA C30 ストレージ システムのコントローラを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。具体的には、システムの他のすべてのコンポーネントが正常に動作していること、正しい交換用コントローラがあることの確認、コントローラのコンソール出力のテキストログファイルへの保存が含まれます。</block>
-  <block id="f0de359ba2c82f8ea7884966a3ba0c02" category="doc">コントローラの交換要件- ASA C30</block>
   <block id="3b97faedccbb32bf9302724d84bd3849" category="summary">ASA C30 ストレージ システムのコントローラの交換を完了するには、まず NetApp ストレージ暗号化構成を復元し (必要な場合)、新しいコントローラに必要なライセンスをインストールします。次に、論理インターフェイス（LIF）がホームポートにレポートしていることを確認し、クラスタの健全性チェックを実行します。最後に、新しいコントローラのシリアル番号を登録し、障害が発生したパーツをNetAppに返却します。</block>
-  <block id="c9618ee1abbbc558b8f6afab18e9de6a" category="doc">コントローラ交換後の処理- ASA C30</block>
   <block id="91d5bdb9b8be20419adab0d70c3a9d3f" category="summary">コントローラを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、ASA C30 ストレージ システム内の障害のあるコントローラをシャットダウンします。</block>
-  <block id="fc45a0ec77bb468d6fedb9674ced8528" category="doc">障害のあるコントローラをシャットダウンします- ASA C30</block>
   <block id="91a97d4fdec1af557392f5388e45d03a" category="summary">コントローラのHA構成がアクティブでASA C30ストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。</block>
-  <block id="bd3d959eef2391eeddbe585e6aa31aaf" category="doc">システム構成のリストアと確認- ASA C30</block>
   <block id="9d817ef7895689fb3cc5312747a60e5a" category="summary">ASA C30ストレージシステムのコントローラを交換するには、まず、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成をリストアし、ストレージリソースの制御を交換用コントローラに戻します。</block>
-  <block id="803e804e07341009008b98487711f181" category="doc">コントローラの交換ワークフロー- ASA C30</block>
   <block id="c61569158aa3671e77ca597581b887ef" category="summary">修正可能または修正不可能なメモリ エラーが過剰に検出された場合は、ASA C30 ストレージ システム内の DIMM を交換してください。このようなエラーが発生すると、ストレージシステムでONTAPをブートできなくなる可能性があります。交換プロセスでは、障害コントローラのシャットダウン、障害コントローラの取り外し、DIMMの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
-  <block id="ec3e218e5469b0ce628477ad9f004c70" category="doc">DIMMの交換- ASA C30</block>
   <block id="1803a1112a2904ae0921972c848b5e8f" category="summary">ドライブに障害が発生した場合、またはアップグレードが必要な場合は、ASA C30 ストレージ システム内のドライブを交換します。交換プロセスでは、障害が発生したドライブを特定して安全に取り外し、新しいドライブを取り付けてデータアクセスとシステムパフォーマンスを継続できるようにします。</block>
-  <block id="23b2049b2eea6424e3c9f2c437632516" category="doc">ドライブの交換 - ASA C30</block>
   <block id="f34d2c681546688dd685a08e6231060d" category="summary">ファンが故障したり、効率的に動作していない場合は、システムの冷却と全体的なパフォーマンスに影響する可能性があるため、ASA C30 ストレージ システムのファン モジュールを交換してください。交換プロセスでは、コントローラのシャットダウン、コントローラの取り外し、ファンの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
-  <block id="4ba0a2181ffa6e88b2a3a96e4335f373" category="doc">ファンモジュールの交換- ASA C30</block>
   <block id="6b9adda1cbf39f0e67bdc239d9aa4627" category="summary">ASA C30 ストレージ システムに I/O モジュールを追加すると、ネットワーク接続が強化され、システムのデータ トラフィック処理能力が拡張されます。</block>
-  <block id="8129be3599ad6ec9ac772edc71b7c944" category="doc">I/Oモジュールの追加- ASA C30</block>
   <block id="efbf95fd94ecc04d20688f2a1a7413ed" category="summary">ASA C30 ストレージ システムは、I/O モジュールを拡張または交換する柔軟性を提供し、ネットワークの接続性とパフォーマンスを強化します。I/Oモジュールの追加または交換は、ネットワーク機能をアップグレードする場合や、障害が発生したモジュールに対処する場合に不可欠です。</block>
   <block id="c7d9daf18836286b26e5af2f7a1b19f0" category="summary">モジュールに障害が発生した場合、またはより高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、ASA C30 ストレージ システムの I/O モジュールを交換します。交換プロセスでは、コントローラのシャットダウン、障害が発生したI/Oモジュールの交換、コントローラのリブート、障害が発生したパーツのNetAppへの返却を行います。</block>
   <block id="1bc87c4a07526688d1214c5a431c934a" category="summary">ASA C30ストレージシステムのハードウェアを保守して、長期的な信頼性と最適なパフォーマンスを確保します。ダウンタイムやデータ損失の防止に役立つため、障害のあるコンポーネントの交換などの定期的なメンテナンスタスクを実行します。</block>
-  <block id="2b35d20ce09f7745c49b8451372caf6c" category="doc">ハードウェアメンテナンスの概要 - ASA C30</block>
   <block id="907caac40616ad0b3b73482a664ecc6b" category="paragraph">このセクションの手順では、ASA C30 ストレージ システムが ONTAP 環境にストレージ ノードとしてすでに導入されていることを前提としています。</block>
   <block id="27bfa0f1b8609e118425afe072093cba" category="paragraph">ASA C30ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="754858e1736e8f08294476cdf876df07" category="summary">ASA C30 ストレージ システムの NV バッテリは、停電時に重要なシステム データを保持する役割を担っているため、バッテリの充電が減り始めたり、故障したりした場合は、NV バッテリを交換してください。交換プロセスでは、障害のあるコントローラのシャットダウン、コントローラモジュールの取り外し、NVバッテリの交換、コントローラモジュールの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
-  <block id="30439362b4a418aafdf1f5fca92ba9ae" category="doc">NVバッテリの交換- ASA C30</block>
   <block id="34010b5f9d4ebf5305f175c19ab977fc" category="summary">ASA C30 ストレージ システムの AC または DC 電源ユニット (PSU) が故障または不具合を起こした場合は交換し、システムが安定した動作に必要な電力を継続的に受けられるようにします。交換プロセスでは、障害が発生したPSUを電源から取り外し、電源コードを抜き、障害が発生したPSUを交換してから、電源に再接続します。</block>
-  <block id="b51e59bcca51590e8f0da1f045973db3" category="doc">電源装置の交換- ASA C30</block>
   <block id="9c0bdb399f0e50ec7c09183c83cb3eae" category="summary">正確な時間同期に依存するサービスとアプリケーションが引き続き動作できるように、ASA C30 ストレージ システムのリアルタイム クロック (RTC) バッテリ (一般にコイン型電池と呼ばれる) を交換します。</block>
-  <block id="fe9d07d7f91e1b374f95ba72708ba4ca" category="doc">リアルタイムクロックバッテリを交換してください- ASA C30</block>
   <block id="5ff448003ebaf80171d13e6e73920334" category="section-title">2025年5月</block>
   <block id="5a4e5cd19493dae0777edfcd18341c6e" category="paragraph">新しい ASA C30 システムは、高性能でインテリジェントな包括的なデータ管理機能を、より多くの顧客とワークロードに拡張します。</block>
   <block id="4b59a84869b0ee3437aa8c8b9dd4c786" category="sidebar">ASA C30システム</block>
@@ -10118,87 +9930,51 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="d3c68c0d6fbe8e59b9ce22c40e047bb6" category="paragraph">ASA C800ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。</block>
   <block id="1cdf405b83256c8187cb8d239742c6e6" category="paragraph">メンテナンス手順では、 ASA C800ストレージ システムがONTAP環境にストレージ ノードとしてすでに導入されていることを前提としています。</block>
   <block id="86eaa4c0bb049cd4791891b569f8b208" category="paragraph">ASA 70-90 システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページをご覧ください。</block>
-  <block id="34a6a22de50bdf82fc335ef9ba00f122" category="doc">ブートメディア上のONTAPイメージを復元する - ASA A70 およびASA A90</block>
-  <block id="311fdf0bc640bef9909a44de7e92965d" category="doc">ブートメディアを交換するための要件 - ASA A70 およびASA A90</block>
-  <block id="41b89d0490625c676af5a5cff71cfb3e" category="doc">コントローラをシャットダウンしてブートメディアを交換します - ASA A70 またはASA A90</block>
-  <block id="02b0f3d45bd8a43d8e99a812c22f13a0" category="doc">ブートメディア上のONTAPイメージを復元する - ASA A1K</block>
-  <block id="0e4aeec1f9da6d5e96e0144b5f37e09a" category="doc">故障したブートメディアをNetAppに返却 - ASA A400</block>
   <block id="f7c6615d138a63d22cf5023c69e7319a" category="paragraph">ASA A400システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページをご覧ください。</block>
-  <block id="c0f6a2eb47a57b7c065866b33fdf90ac" category="doc">パートナーノードからの自動ブートメディアリカバリ - ASA A400</block>
   <block id="85856d7fbf598be1af6359e041dbc6c0" category="paragraph">ASA A400システムに新しいブートメディアデバイスをインストールしたら、自動ブートメディアリカバリプロセスを開始して、パートナーノードから設定を復元できます。リカバリプロセス中、システムは暗号化が有効になっているかどうかを確認し、使用されているキー暗号化の種類を判別します。キー暗号化が有効になっている場合は、復元するための適切な手順をシステムが案内します。</block>
-  <block id="834ffef5d40b393f44e5d2a7b7ca183e" category="doc">USBドライブからの手動ブートメディアリカバリ - ASA A400</block>
   <block id="a1102252f7d291ba487477c1ad7dc0f4" category="summary">ASA A400システムのブートメディアには、重要なファームウェアと設定データが保存されています。交換プロセスには、コントローラ モジュールの取り外し、障害のあるブート メディアの取り外し、交換用のブート メディアのコントローラ モジュールへのインストール、およびコントローラ モジュールの再インストールが含まれます。</block>
-  <block id="183429bd185c0bb89d230721c8bafb0f" category="doc">自動ブートリカバリ用のブートメディアの交換 - ASA A400</block>
   <block id="f8dd43c0db45969cb260f51342c2daf8" category="paragraph">ASA A400システムのブートメディアには、重要なファームウェアと設定データが保存されています。交換プロセスには、コントローラ モジュールを取り外して開き、損傷したブート メディアを取り外し、交換用のブート メディアをコントローラ モジュールにインストールし、コントローラ モジュールを再インストールすることが含まれます。</block>
   <block id="7bedaa496cfd73e8b1e6cfc86c091f63" category="summary">ASA A400システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。</block>
-  <block id="f2c392f30e5fe029dc592be664339154" category="doc">自動ブートメディアリカバリの要件 - ASA A400</block>
   <block id="ef5ca04fc37545d8e98cf02275bc6c17" category="paragraph">ASA A400のブート メディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、正しい交換用ブート メディアがあることを確認すること、障害のあるコントローラの e0S (e0M レンチ) ポートに障害がないことの確認、オンボード キー マネージャ (OKM) または外部キー マネージャ (EKM) が有効になっているかどうかを確認することが含まれます。</block>
   <block id="84d5e9550c5d39d2538fd0be0557590f" category="summary">ASA A400システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、適切なストレージ容量のUSBフラッシュドライブがあること、および交換用のブートデバイスが正しいことの確認が含まれます。</block>
-  <block id="7f32935bbd94e38a894928143b4b15c6" category="doc">手動ブートメディアリカバリの要件 - ASA A400</block>
   <block id="a20ebcdc01dd4e5abab7f61885008057" category="summary">交換要件を確認し、コントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システム機能を確認して、 ASA A400ストレージ システムのブート メディアの交換を開始します。</block>
-  <block id="015033a6e051cecbcf4d2c3aebdc2b40" category="doc">ブートメディア自動リカバリワークフロー - ASA A400</block>
   <block id="6507c6b787cdc07b44b60600bf4145e9" category="paragraph">ブートイメージの自動リカバリでは、システムが適切なブートメニューオプションを自動的に識別して選択します。パートナーノードのブートイメージを使用して、 ASA A400システムの交換用ブートメディアにONTAPを再インストールします。</block>
   <block id="329c9ace994be9248b3043e77ed3e54f" category="summary">交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージの起動、暗号化の復元、およびシステム機能の検証を行って、 ASA A400ストレージ システムのブート メディアの交換を開始します。</block>
-  <block id="22f353a6c038ce3ebff60b5a2080b0ec" category="doc">ブートメディアの手動リカバリワークフロー - ASA A400</block>
-  <block id="e5bcdce4e562b8b60ae89794b945de42" category="doc">ブートメディアを交換し、手動ブートリカバリの準備をします - ASA A400</block>
   <block id="e72e7228a5180ac1bfa285a4f11bc4f5" category="summary">ブート メディアを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、ASA A400ストレージ システム内の障害のあるコントローラをシャットダウンします。</block>
-  <block id="66f12ed6d68584ef675075a288b7b482" category="doc">自動ブートメディアリカバリのためにコントローラをシャットダウンする - ASA A400</block>
   <block id="7cb7231cf20dc931525517d42b1e5409" category="paragraph">自動ブート メディア リカバリ プロセス中にデータの損失を防ぎ、システムの安定性を維持するために、 ASA A400 ストレージ システム内の障害のあるコントローラをシャットダウンします。</block>
-  <block id="6effad4b4f854b5d9f5212f5786dec6c" category="doc">手動ブートメディアリカバリのためにコントローラをシャットダウンする - ASA A400</block>
   <block id="63316578a99d2be44745f91a8a533687" category="paragraph">ASA A400ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。</block>
   <block id="f84d129ccf9d1cd4adfd21c0a2e73b20" category="paragraph">メンテナンス手順では、 ASA A400ストレージ システムがONTAP環境にストレージ ノードとしてすでに導入されていることを前提としています。</block>
   <block id="2fa228b1a6b52ddee3a9c6779943197f" category="paragraph">ブート メディアには、ストレージ システムがブートに使用するONTAPイメージ ファイルのプライマリ セットとセカンダリ セットが保存されます。自動リカバリ中に、システムはパートナー ノードからブート イメージを取得し、適切なブート メニュー オプションを自動的に実行して、交換用ブート メディアにイメージをインストールします。自動ブートメディアリカバリプロセスは、 ONTAP 9.17.1以降でのみサポートされています。ストレージシステムで以前のバージョンのONTAPを実行している場合は、 <block ref="d83b47a0a2d85a13a2094c696f473b60" category="inline-link-macro-rx"></block> 。</block>
-  <block id="361b65eef42e888122f41f11eac8fa07" category="doc">故障したブートメディアをNetAppに返却 - ASA A800</block>
   <block id="06275ea376599fc8bf14d5bde1a4cc31" category="paragraph">ASAF A800システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページをご覧ください。</block>
-  <block id="924624c8588a90de7fdeb6caf86c2203" category="doc">パートナーノードからの自動ブートメディアリカバリ - ASA A800</block>
   <block id="eb5a4bd38649b66fbf79fa72698b100d" category="paragraph">ASA A800システムに新しいブートメディアデバイスをインストールしたら、自動ブートメディアリカバリプロセスを開始して、パートナーノードから設定を復元できます。リカバリプロセス中、システムは暗号化が有効になっているかどうかを確認し、使用されているキー暗号化の種類を判別します。キー暗号化が有効になっている場合は、復元するための適切な手順をシステムが案内します。</block>
-  <block id="d8640bcfad4728aed30f3f1a19ed9aab" category="doc">USBドライブからの手動ブートメディアリカバリ - ASA A800</block>
   <block id="16083bf1712dbe8dce78059c2dcbfab8" category="summary">ASA A800システムのブートメディアには、重要なファームウェアと設定データが保存されています。交換プロセスには、コントローラ モジュールの取り外し、障害のあるブート メディアの取り外し、交換用のブート メディアのコントローラ モジュールへのインストール、およびコントローラ モジュールの再インストールが含まれます。</block>
-  <block id="e6a5d51d9bb4a462a50b66e9607ed4c9" category="doc">自動ブートリカバリ用のブートメディアの交換 - ASA A800</block>
   <block id="c750b42bbf0b2a1a720c61535134b17b" category="paragraph">ASA A800システムのブートメディアには、重要なファームウェアと設定データが保存されています。交換プロセスには、コントローラ モジュールを取り外して開き、損傷したブート メディアを取り外し、交換用のブート メディアをコントローラ モジュールにインストールし、コントローラ モジュールを再インストールすることが含まれます。</block>
   <block id="c93806c44a1a1eacf0faaf11c4a72185" category="summary">ASA A800システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。</block>
-  <block id="e149ea0285b07569363801278d2e4f1e" category="doc">自動ブートメディアリカバリの要件 - ASA A800</block>
   <block id="2c7180a3080a06cb0599eed2d1ca8b9a" category="paragraph">ASA A800のブート メディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、正しい交換用ブート メディアがあることを確認すること、障害のあるコントローラの e0S (e0M レンチ) ポートに障害がないことの確認、オンボード キー マネージャ (OKM) または外部キー マネージャ (EKM) が有効になっているかどうかを確認することが含まれます。</block>
   <block id="aa2b63e39c66d87e3ef0adb54f3a479e" category="summary">ASA A800システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、適切なストレージ容量のUSBフラッシュドライブがあること、および交換用のブートデバイスが正しいことの確認が含まれます。</block>
-  <block id="8b4167c8eb3a3738ce201cbad23f4a4f" category="doc">手動ブートメディアリカバリの要件 - ASA A800</block>
   <block id="2f6dc43fac8155de65b6846438a8462a" category="summary">交換要件を確認し、コントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システム機能を確認して、 ASA A800ストレージ システムのブート メディアの交換を開始します。</block>
-  <block id="f50118f7e12a2ef1e5a8f1983b2eff33" category="doc">ブートメディア自動リカバリワークフロー - ASA A800</block>
   <block id="8e70b97e62889f4765f18fc1c9d41928" category="paragraph">ブートイメージの自動リカバリでは、システムが適切なブートメニューオプションを自動的に識別して選択します。パートナーノードのブートイメージを使用して、 ASA A800システムの交換用ブートメディアにONTAPを再インストールします。</block>
   <block id="3535229cbc089db5881d1253c5694ce3" category="summary">交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージの起動、暗号化の復元、システム機能の検証を行って、 ASA A800ストレージ システムのブート メディアの交換を開始します。</block>
-  <block id="bcbcde938bdf5537e124daf437e7b9db" category="doc">ブートメディアの手動リカバリワークフロー - ASA A800</block>
-  <block id="dc9758be9759e8c57475ad932fefe4db" category="doc">ブートメディアを交換し、手動ブートリカバリの準備をします - ASA A800</block>
   <block id="efdee91879779d5ca7bdeca68ad8554e" category="summary">ブート メディアを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、ASA A800ストレージ システム内の障害のあるコントローラをシャットダウンします。</block>
-  <block id="5f3255ff63cc7544f1e12eab4fb27c88" category="doc">自動ブートメディアリカバリのためにコントローラをシャットダウンする - ASA A800</block>
   <block id="1ff29b745be87692db3430ac143ca156" category="paragraph">自動ブート メディア リカバリ プロセス中にデータの損失を防ぎ、システムの安定性を維持するために、 ASA A800 ストレージ システム内の障害のあるコントローラをシャットダウンします。</block>
-  <block id="057a80e24c284868ae5c3b2342b8f7db" category="doc">手動ブートメディアリカバリのためにコントローラをシャットダウンする - ASA A800</block>
   <block id="a6ef9b4193af40daa8e0af1cb39800be" category="paragraph">ASA A800ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。</block>
   <block id="f479f65c7fc63d1be810d8c72e66fa74" category="paragraph">メンテナンス手順では、 ASA A800ストレージ システムがONTAP環境にストレージ ノードとしてすでに導入されていることを前提としています。</block>
   <block id="991fde1e2f472e8a5745cbdf81e079bc" category="paragraph">ASA A900システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページをご覧ください。</block>
   <block id="853ed3f66990612e4e0c819c5d847ab0" category="summary">ASA A900システムに新しいブートメディアデバイスをインストールしたら、自動ブートメディアリカバリプロセスを開始して、パートナーノードから設定を復元できます。</block>
-  <block id="9ba315e2dcb74d7d652a176d97bfa363" category="doc">パートナーノードからの自動ブートメディアリカバリ - ASA A900</block>
   <block id="f054df79bb11619746d06ed0958953a0" category="paragraph">ASA A900システムに新しいブートメディアデバイスをインストールしたら、自動ブートメディアリカバリプロセスを開始して、パートナーノードから設定を復元できます。</block>
   <block id="f844aa112f2ce2bbb31f34acfc4e2526" category="summary">ASA A900システムのブートメディアには、重要なファームウェアと設定データが保存されています。交換プロセスには、コントローラ モジュールの取り外し、障害のあるブート メディアの取り外し、交換用のブート メディアのコントローラ モジュールへのインストール、およびコントローラ モジュールの再インストールが含まれます。</block>
-  <block id="b0a9527bfb8ce1fb0c8d3d5aa7b2ce80" category="doc">自動ブートリカバリ用のブートメディアの交換 - ASA A900</block>
   <block id="1a36d4701aabbe1db74da28a8cc140b3" category="paragraph">ASA A900システムのブートメディアには、重要なファームウェアと設定データが保存されています。交換プロセスには、コントローラ モジュールを取り外して開き、損傷したブート メディアを取り外し、交換用のブート メディアをコントローラ モジュールにインストールし、コントローラ モジュールを再インストールすることが含まれます。</block>
   <block id="1fbc095e27acc85d2d626dc44b1698c9" category="summary">ASA A900システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。</block>
-  <block id="6371c9113bb173db821f8c48a70384c0" category="doc">自動ブートメディアリカバリの要件 - ASA A900</block>
   <block id="9e897d5c1be66981a1ee20fced4d99fa" category="paragraph">ASA A900のブート メディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、正しい交換用ブート メディアがあることを確認すること、障害のあるコントローラの e0S (e0M レンチ) ポートに障害がないことの確認、オンボード キー マネージャ (OKM) または外部キー マネージャ (EKM) が有効になっているかどうかを確認することが含まれます。</block>
-  <block id="c1de618be6f54f816019fc5cb45c849b" category="doc">手動ブートメディアリカバリの要件 - ASA A900</block>
   <block id="5b631559aae3b51d865116d5608bd577" category="paragraph">ASA A900システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、適切なストレージ容量のUSBフラッシュドライブがあること、および交換用のブートデバイスが正しいことの確認が含まれます。</block>
   <block id="5485c081c1aaeb9399be0ef0aa1243e3" category="paragraph">ブートメディアを交換するための要件を確認した後、<block ref="3b50245387c5d16203a9ca127a792c70" category="inline-link-macro-rx"></block> 。</block>
   <block id="849dbcb9cff10c2c3ce685ff21f7c30c" category="summary">交換要件を確認し、コントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システム機能を確認して、 ASA A900ストレージ システムのブート メディアの交換を開始します。</block>
-  <block id="fb2125bdc8e77f8630fb3e030e8857f8" category="doc">ブートメディア自動リカバリワークフロー - ASA A900</block>
   <block id="d799be71967575706ca5ccebf03648f1" category="paragraph">ブートイメージの自動リカバリでは、システムが適切なブートメニューオプションを自動的に識別して選択します。パートナーノードのブートイメージを使用して、 ASA A900ストレージシステムの交換用ブートメディアにONTAPを再インストールします。</block>
-  <block id="40421d6a1e6e75d7ef1ebc0e1744e8d1" category="doc">ブートメディアの手動リカバリワークフロー - ASA A900</block>
   <block id="517be28f997c15f4e0a9610c7b8eb98a" category="paragraph">交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージの起動、暗号化の復元、システム機能の検証を行って、 ASA A900ストレージ システムのブート メディアの交換を開始します。</block>
   <block id="0e2db22b9c9decd8463dba0e31f85618" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="9ed39e651cfa2bfcad897ddd10297697" category="inline-link-macro-rx"></block></block>
   <block id="8686efd91f938565a531b86e4c6484ad" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="710153b81007aab4b847b09b692bebbc" category="inline-link-macro-rx"></block></block>
   <block id="764396cc36f254bde1c6a8bb8648fe3d" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block><block ref="a98f18c86f9fa7a3f9a442daf9108144" category="inline-link-macro-rx"></block></block>
   <block id="6929742e903d13c0715ad73d359fba49" category="summary">ブート メディアを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、ASA A900ストレージ システム内の障害のあるコントローラをシャットダウンします。</block>
-  <block id="9b845a693c955827a416b44a9519c242" category="doc">自動ブートメディアリカバリのためにコントローラをシャットダウンする - ASA A900</block>
-  <block id="bc350e9ed5562f8e05caf725860ee458" category="doc">手動ブートメディアリカバリのためにコントローラをシャットダウンする - ASA A900</block>
-  <block id="ddd2c1807a530195dc9c14c581b7fe0d" category="doc">USBドライブからの手動ブートメディアリカバリ - ASA A900</block>
-  <block id="332b46a23e8dff84588d76fe63f1cc25" category="doc">ブートメディアを交換し、手動ブートリカバリの準備をします - ASA A900</block>
   <block id="a8cc89dd83e94825c63fb5042ce52a8c" category="paragraph">ASA A900ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。</block>
   <block id="e78d2f54e32be5aace4ee0e915e12814" category="paragraph">メンテナンス手順では、 ASA A900ストレージ システムがONTAP環境にストレージ ノードとしてすでに導入されていることを前提としています。</block>
   <block id="a8ebccad83f39d45d83692638bd1be35" category="paragraph">AFF C400システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページをご覧ください。</block>
@@ -10419,20 +10195,14 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1c003f60306195fc28f8caffd47dd340" category="paragraph">ハードウェア障害が発生した場合は、 AFF A1Kシステムのコントローラを交換してください。交換プロセスには、障害のあるコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーのインストール、および再起動が含まれます。</block>
   <block id="28c4dddeb520e51d2f0abe60128d46e8" category="paragraph">シャーシには、ファン、コントローラー、電源装置、PSU、NVRAM12、システム管理モジュール、I/O カード、ブランキング モジュールが収容されています。</block>
   <block id="7ff4349856f45df803f8bf1c62cd8a3e" category="summary">コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、 ASA A1K シャーシ交換手順の最終ステップを完了します。</block>
-  <block id="9c92b4551d0ebe4951d40344b2e526c8" category="doc">シャーシ交換を完了 - ASA A1K</block>
-  <block id="5aeefe07266bb1fc5e1139b04473dfe8" category="doc">シャーシの交換 - ASA A1K</block>
   <block id="89c5427feacbde4f607d05cd07f48f94" category="paragraph">ハードウェア障害が発生した場合は、 ASA A1K システムのシャーシを交換してください。交換プロセスには、コントローラ、I/O カード、NVRAM12 モジュール、システム管理モジュール、および電源ユニット (PSU) の取り外し、交換用シャーシのインストール、およびシャーシ コンポーネントの再取り付けが含まれます。</block>
   <block id="e1a44d52ef9851aabc78844c3bc47c92" category="paragraph">損傷したASA A1Kシャーシを交換し、コンポーネントを再インストールした後、<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block> 。</block>
   <block id="fd98fab18d28b555609a40ff2da246cc" category="summary">障害のあるシャーシを識別し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けて、 ASA A1K システム内の障害のあるシャーシを交換する準備をします。</block>
-  <block id="3da1146d548beaacf7f23d0a781ba402" category="doc">シャーシ交換の準備 - ASA A1K</block>
   <block id="e8a527b81bcbe490b98bc368dac43e45" category="paragraph">障害のあるシャーシを識別し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けて、 ASA A1K システム内の障害のあるシャーシを交換する準備をします。</block>
   <block id="73b8932c0e9d952de3428d339d3c9176" category="paragraph">ASA A1Kシャーシのハードウェアを交換する準備ができたら、<block ref="56c6ba4ece2a517e11a0ae4af44a8f78" category="inline-link-macro-rx"></block> 。</block>
   <block id="5581f7e866a160d28eefb508e480ba53" category="summary">ASA A1K システムのシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが適切に機能していることを確認すること、 ONTAPのローカル管理者の認証情報、適切な交換用シャーシ、および必要なツールがあることを確認することが含まれます。</block>
-  <block id="850837518a06d2feaf03b103e01b619b" category="doc">シャーシ交換の要件 - ASA A1K</block>
   <block id="c3493d287110e2fecc8fe4a00755810a" category="summary">シャーシを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、 ASA A1K ストレージ システムのコントローラをシャットダウンします。</block>
-  <block id="abf7924958c351fce7ade0ced8f159bb" category="doc">シャーシを交換するにはコントローラをシャットダウンします - ASA A1K</block>
   <block id="48b2982a8a3ef500c4100e6df4f7a36f" category="summary">交換要件を確認し、コントローラをシャットダウンし、シャーシを交換し、システムの動作を確認して、 ASA A1K ストレージ システムのシャーシの交換を開始します。</block>
-  <block id="086e2962bab7f4d95eabde09a20941a6" category="doc">シャーシ交換ワークフロー - ASA A1K</block>
   <block id="00cfcf708436d304f31cc1839fa2b7ca" category="paragraph">ハードウェア障害により必要になった場合は、 ASA A1K システムのコントローラを交換してください。交換プロセスには、障害のあるコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーのインストール、および再起動が含まれます。</block>
   <block id="39317983344793ba26ea170a2d890ebb" category="summary">コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、FAS70 および FAS90 シャーシ交換手順の最終ステップを完了します。</block>
   <block id="a584be06d42c86eb582b119daa14da5d" category="doc">シャーシ交換を完了 - FAS70およびFAS90</block>
@@ -11689,112 +11459,82 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="15f3b2b9050da8f1b1bdc68848c631bf" category="inline-link-macro">AFXシステム保守部門</block>
   <block id="d57d0b2eddb45b00e9a51f35ecbc24a1" category="paragraph">各タイプのAFXシステムの具体的なメンテナンス手順については、<block ref="4278844d48f88f9620f729dc448f2e3f" category="inline-link-macro-rx"></block> 。</block>
   <block id="14891262eeb0080763e1e4d7c20b423d" category="summary">AFX 1K ストレージ システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。</block>
-  <block id="f2629483af412ae27ab87a108e391076" category="doc">故障した部品をNetAppに返送してください - AFX 1K</block>
   <block id="9a6780c33510f13eb38e9fa160c54ca6" category="paragraph">AFX 1K ストレージ システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページをご覧ください。</block>
   <block id="044cb6a656cb0f9d8640a808b35aef95" category="summary">AFX 1K ストレージ システムに新しいブート メディア デバイスをインストールした後、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。</block>
-  <block id="8ce7663b5cab288d2818537f852caaf2" category="doc">リカバリイメージを起動する - AFX 1K</block>
   <block id="5816d1d043e26739573730a8682beb03" category="paragraph">回復プロセス中に、システムは暗号化が有効になっているかどうかを確認し、使用されているキー暗号化の種類を識別します。キー暗号化が有効になっている場合は、復元するための適切な手順をシステムが案内します。</block>
   <block id="4af5c0554054b490b0c91fea6e5440f9" category="paragraph">ONTAPイメージをリストアし、ノードが起動してデータを提供するようになったら、<block ref="e2df5d85d0d0d8d0a3a4f7656136cebe" category="inline-link-macro-rx"></block> 。</block>
   <block id="a4586870cf4e8d29bf7644d03287d83a" category="summary">AFX 1K ストレージ システムのブート メディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、正しい交換用ブート メディアがあることを確認すること、コントローラ上に欠陥のあるクラスタ ポートがないこと、およびオンボード キー マネージャ (OKM) または外部キー マネージャ (EKM) が有効になっているかどうかを確認することが含まれます。</block>
-  <block id="486e0b5fe4de5c08f890603815d0fb16" category="doc">ブートメディアの交換要件 - AFX 1K</block>
   <block id="310488484cce73b4c106bfae40e95114" category="paragraph">ブートメディアを交換するための要件を確認した後、<block ref="68b439f7374cbf94d1d0674cba562466" category="inline-link-macro-rx"></block> 。</block>
   <block id="878e1562ad8a39d5bd51b65c42fc94a1" category="summary">交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージの起動、暗号化の復元、システム機能の検証を行って、AFX 1K ストレージ システムのブート メディアの交換を開始します。</block>
-  <block id="55af46cb00b19ca2facec2eaf952f7f8" category="doc">ブートメディア交換ワークフロー - AFX 1K</block>
   <block id="1d79a691f5516295945560b466a3604f" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="f09c415cff110572b095b0b47b53909d" category="inline-link-macro-rx"></block></block>
   <block id="0298cb5434656b7d81623c8cf0a0ac49" category="paragraph">ブート メディアを交換する必要がある場合は、ストレージ システム内のコントローラーをシャットダウンします。</block>
   <block id="ecb8f83b8d48363a92afc461e11d3752" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="d5411bd0189d789655f8f33f07ceef1c" category="inline-link-macro-rx"></block></block>
   <block id="00a71ed7c509eb98f49ced1ff5d97961" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="ec62c6ad63f9d0aef598a79792347a29" category="inline-link-macro-rx"></block></block>
   <block id="cebae21dc29c5d5bdb777db254647344" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="ad27444622868149ebc13d5b01cf807a" category="inline-link-macro-rx"></block></block>
   <block id="3533fbb04428240d67b3dc0a068f808a" category="summary">AFX 1K ストレージ システムのブート メディアには、重要なファームウェアと構成データが保存されます。交換プロセスでは、システム管理モジュールを取り外し、損傷したブートメディアを取り外し、交換用のブートメディアをシステム管理モジュールにインストールし、システム管理モジュールを再インストールします。</block>
-  <block id="b5215a4025756a14d76a7121afa61e17" category="doc">ブートメディアの交換 - AFX 1K</block>
   <block id="2aa55971321abed71d340b6b8fd1c8e9" category="paragraph">ブートメディアを交換した後、<block ref="296fbdd9029d6166c4c4a95816ec9c9e" category="inline-link-macro-rx"></block> 。</block>
   <block id="d3baeeba384a9fd2aa092fda0830b824" category="summary">ブート メディアを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、AFX 1K ストレージ システム内の障害のあるコントローラーをシャットダウンします。</block>
-  <block id="fcd0e02ecea3ed33aea93e95e774b5dd" category="doc">コントローラーをシャットダウンしてブートメディアを交換します - AFX 1K</block>
   <block id="724585da65c3ba003bd08033bb3dbadf" category="inline-link-macro">ブートメディアを変更する</block>
   <block id="e9a4fd6d757916321039c241b25883ba" category="paragraph">コントローラーをシャットダウンした後、<block ref="067d400ed1fcec8dc5a70b9626d0928f" category="inline-link-macro-rx"></block> 。</block>
-  <block id="3b944bd07c9350da1f5ff412902503e4" category="doc">シャーシ交換を完了 - AFX 1K</block>
   <block id="f432d643911bfe1f40fce00570be273c" category="paragraph">コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、AFX 1K シャーシ交換手順の最終ステップを完了します。</block>
-  <block id="e01fa430bba3f9f0fdf0dc0b32be7416" category="doc">シャーシの交換 - AFX 1K</block>
   <block id="9287ca3da4ca19560b93cd1054ecc58f" category="paragraph">ハードウェア障害が発生した場合は、AFX 1K ストレージ システムのシャーシを交換します。交換プロセスには、コントローラ、I/O カード、NVRAM12 モジュール、システム管理モジュール、および電源ユニット (PSU) の取り外し、交換用シャーシのインストール、およびシャーシ コンポーネントの再取り付けが含まれます。</block>
   <block id="92c5e9cb0394b67e0571b7f5418b5c4c" category="inline-link-macro">シャーシの交換</block>
   <block id="024891dc154221a3fd983742d0749550" category="summary">障害のあるシャーシを識別し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けて、AFX 1K ストレージ システム内の障害のあるシャーシを交換する準備をします。</block>
-  <block id="6333849dd5ba2298242602f4ab5f909f" category="doc">シャーシ交換の準備 - AFX 1K</block>
   <block id="95ac2d8894f5f59683ab1ad1d55d6b1b" category="paragraph">障害のあるシャーシを識別し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けて、AFX 1K ストレージ システム内の障害のあるシャーシを交換する準備をします。</block>
   <block id="0a9ea284b5f7b8d4e982323eeb271f6b" category="paragraph">AFX 1Kシャーシのハードウェアを交換する準備ができたら、<block ref="56c6ba4ece2a517e11a0ae4af44a8f78" category="inline-link-macro-rx"></block> 。</block>
   <block id="6e4ea7f50c54cd3b0d21845cc7b49c9d" category="summary">AFX 1K ストレージ システムのシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが適切に機能していることを確認すること、 ONTAPのローカル管理者の認証情報、適切な交換用シャーシ、および必要なツールがあることを確認することが含まれます。</block>
-  <block id="5d1fd5150c15deb9a51c38f5746da0a1" category="doc">シャーシ交換の要件 - AFX 1K</block>
   <block id="fba484388a928d216ad876acba70e03e" category="inline-link-macro">シャーシを交換する準備をする</block>
   <block id="2bdf5f60b88d84354ea61d8e7391f949" category="paragraph">要件を確認した後、<block ref="5cb936c392cb005a21f5a2729d51d5bd" category="inline-link-macro-rx"></block> 。</block>
   <block id="6d527d28ba3b8bc126beae28ae1541e1" category="summary">シャーシを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、AFX 1K ストレージ システムのコントローラーをシャットダウンします。</block>
-  <block id="7ca01e9d093ca3b9f2d2f44784c7034c" category="doc">コントローラをシャットダウンしてシャーシを交換します - AFX 1K</block>
   <block id="700e117571cc91604e09557dbb63d690" category="summary">交換要件を確認し、コントローラーをシャットダウンし、シャーシを交換し、システムの動作を確認して、AFX 1K ストレージ システムのシャーシの交換を開始します。</block>
-  <block id="635a0f2af7889faefc347c15c392fbea" category="doc">シャーシ交換ワークフロー - AFX 1K</block>
   <block id="bd51183d4ba4a5ed936188cef8dd338f" category="inline-link-macro">シャーシ交換の準備</block>
   <block id="9c16fd496f58c652ce740a9e71e7e683" category="paragraph-title"><block ref="ccf9965eddaaff76b152812c8e0015f1" category="inline-image-macro-rx" type="image"></block><block ref="39d19595e37f49798f30accb5e41f609" category="inline-link-macro-rx"></block></block>
   <block id="46ca0a09c6f3afb134927d84dee32b88" category="summary">ハードウェア障害が発生した場合は、AFX 1K ストレージ システムのコントローラーを交換してください。交換プロセスには、障害のあるコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーのインストール、および再起動が含まれます。</block>
-  <block id="73a3ac015d47f0dfbb7a52cac42cda84" category="doc">コントローラーの交換 - AFX 1K</block>
   <block id="64edf50836c51488f4ed24f39824d5b5" category="inline-link-macro">システム設定を復元する</block>
   <block id="0200dc180250ad1ca6ad1c8a481f58d1" category="paragraph">故障したAFX 1Kコントローラーを交換した後、<block ref="2b62b6819eda0605f4028f44dd716aa8" category="inline-link-macro-rx"></block> 。</block>
   <block id="1b0df80c0d86617be0abbfcab9d2d2d5" category="summary">ストレージ リソースの制御を交換用コントローラーに戻して、AFX 1K ストレージ システムが通常の操作を再開できるようにします。</block>
-  <block id="92a81e720f85ab342c32367d565b63f2" category="doc">コントローラーを返却 - AFX 1K</block>
   <block id="88b44462b1d82769c3deec99a7de8ae7" category="paragraph">ストレージ リソースの制御を交換用コントローラーに戻して、AFX 1K ストレージ システムが通常の操作を再開できるようにします。返却手順は、システムで使用されている暗号化の種類（暗号化なし、またはオンボード キー マネージャー (OKM) 暗号化）によって異なります。</block>
   <block id="c76464f6ca433d7335a2ea47143448a4" category="inline-link-macro">コントローラーの交換を完了する</block>
   <block id="446110745fd5673e7549e4e34a69b315" category="paragraph">ストレージリソースの所有権を交換用コントローラに転送した後、<block ref="3f3ce3b807832be4874cb973d188c51d" category="inline-link-macro-rx"></block> 。</block>
   <block id="fe169b84447f33e9c38bc4b4a408e7b9" category="summary">AFX 1K ストレージ システムのコントローラーを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、正しい交換用コントローラー、システム構成のバックアップ、必要なツールとファームウェアへのアクセスが含まれます。</block>
-  <block id="cb37b8ea1104dffadfd001f34d75a6cc" category="doc">コントローラーの交換要件 - AFX 1K</block>
   <block id="b407ef59b776b8cf171044ade96cabc8" category="paragraph">AFX 1K ストレージ システムのコントローラーを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることを確認すること、正しい交換用コントローラーがあることを確認すること、コントローラーのコンソール出力をテキスト ログ ファイルに保存することが含まれます。</block>
   <block id="a13c2f7ad34208b9c2bcd0523880b6d8" category="inline-link-macro">コントローラーをオフにする</block>
   <block id="9fad96d83a169e0215ced98454a45af0" category="paragraph">AFX 1Kコントローラーの交換要件を確認した後、<block ref="8e2bedbe0502a7014e560cda99cd14d0" category="inline-link-macro-rx"></block> 。</block>
   <block id="8de2b6e5e19ba6dbe87babbf81eba95e" category="summary">論理インターフェイス (LIF) がホーム ポートにレポートしていることを確認し、クラスターのヘルス チェックを実行してから、障害が発生した部品をNetAppに返送し、AFX 1K コントローラーの交換手順の最終ステップを完了します。</block>
-  <block id="7d95db1a2aa5165e89a53616b8d0de09" category="doc">コントローラーの完全交換 - AFX 1K</block>
   <block id="040e4968cb29da0845bd95fac21f1d12" category="summary">AFX 1K ストレージ システムのコントローラーに障害が発生した場合は、シャットダウンしてください。メンテナンスやコンポーネントの交換を行う前に、データの損失を防ぎ、システムの安定性を確保するために、コントローラーを安全にシャットダウンすることが重要です。</block>
-  <block id="e66689584daa37dd4658540d3048f65f" category="doc">障害のあるコントローラーをシャットダウンする - AFX 1K</block>
   <block id="8675ee7f370bbc45d7767c6dc159f502" category="paragraph">コントローラーを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、AFX 1K ストレージ システム内の障害のあるコントローラーをシャットダウンします。</block>
   <block id="4a1044846a2e1c13ccf461469f5d7d8e" category="paragraph">コントローラーをシャットダウンした後、<block ref="4c59920dffd5894cdc2dc27ddd7fff07" category="inline-link-macro-rx"></block> 。</block>
   <block id="74ca9205399426d88c904d79702a11e6" category="summary">AFX 1K ストレージ システムでコントローラの HA 構成がアクティブであり、正しく機能していることを確認し、システムのアダプタがディスクへのすべてのパスをリストしていることを確認します。</block>
-  <block id="e8b5d95f564b1b3302505fd658805c3f" category="doc">システム構成の復元と検証 - AFX 1K</block>
   <block id="763ba015a573d8b71646578b468f0f6f" category="paragraph">AFX 1Kストレージシステムの構成を復元して検証した後、<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block> 。</block>
   <block id="50cc1303646040ecadbbb483d82d7414" category="summary">障害のあるコントローラーをシャットダウンし、コントローラーを取り外して交換し、システム設定を再構成し、システムの動作を確認して、AFX 1K ストレージ システムのコントローラーの交換を開始します。</block>
-  <block id="eab1d72fab23877549665d815e2cfa24" category="doc">コントローラー交換ワークフロー - AFX 1K</block>
   <block id="743c38ce7cc7537eb819df5842610176" category="paragraph">障害のあるコントローラーをシャットダウンし、コントローラーを取り外して交換し、システム構成を復元し、システムの動作を確認して、AFX 1K ストレージ システムのコントローラーの交換を開始します。</block>
   <block id="32dbde8cc9ebc666b711e3e182cc1155" category="paragraph">障害のあるコントローラーを取り外し、FRU コンポーネントを交換用モジュールに移動し、交換用モジュールをエンクロージャーに取り付けることで、コントローラーを交換します。</block>
   <block id="bc2f5b5e893829df3a4f8f157495b9e4" category="paragraph">交換用コントローラーの低レベルシステム構成を確認し、必要に応じてシステム設定を更新します。</block>
   <block id="7a0fcbdd7acea06c9cc0de67e71078fc" category="paragraph">論理インターフェイス (LIF) を検証し、クラスターの健全性をチェックし、障害のある部分をNetAppに返送します。</block>
   <block id="ce7f2a4e6dc6afdfee6601c300768c60" category="summary">修正可能または修正不可能なメモリ エラーが過剰に検出された場合は、AFX 1K ストレージ システム内の DIMM を交換してください。このようなエラーにより、ストレージ システムがONTAPを起動できなくなる可能性があります。交換プロセスには、障害のあるコントローラのシャットダウン、取り外し、DIMM の交換、コントローラの再インストール、そして障害のある部品のNetAppへの返送が含まれます。</block>
-  <block id="a4f4c50706763d2c35474a5b29355a09" category="doc">DIMMの交換 - AFX 1K</block>
   <block id="990b29c61dfdfd74549b81634ab463bd" category="summary">適切な冷却を維持し、システム パフォーマンスの問題を防ぐには、AFX 1K システム内の故障したファン モジュールを交換します。ファンはホットスワップ可能なので、システムをシャットダウンせずに交換できます。</block>
-  <block id="9d307332ab45a149a9e4517be0e45469" category="doc">ファンの交換 - AFX 1K</block>
   <block id="3275ea8b27b82eaa3729745f3421aff1" category="paragraph">適切な冷却を維持し、システム パフォーマンスの問題を防ぐには、AFX 1K システム内の故障したファン モジュールを交換します。ファンはホットスワップ可能なので、システムをシャットダウンせずに交換できます。この手順には、コンソールのエラー メッセージと LED インジケータを使用して障害のあるファンを特定し、ベゼルを取り外し、ファン モジュールを交換し、障害のある部品をNetAppに返送することが含まれます。</block>
   <block id="55a805dc1b4e566d982fa51383909399" category="paragraph">AFX 1K ストレージ システムでは、次のコンポーネントに対してメンテナンス手順を実行できます。</block>
   <block id="ab7b8c913b9efd45d5c9bcd0a6349c30" category="summary">AFX 1K ストレージ システムに I/O モジュールを追加すると、ネットワーク接続が強化され、システムのデータ トラフィック処理能力が拡張されます。</block>
-  <block id="153d12883defa41849d56c17b60bb15d" category="doc">I/Oモジュールを追加 - AFX 1K</block>
   <block id="d0cb457957ef93870e05fde6f1d7e0b1" category="paragraph">空きスロットがある場合、またはすべてのスロットが完全に使用されている場合は、AFX 1K ストレージ システムに I/O モジュールを追加できます。</block>
   <block id="466feff7e54715b87511b39db238ce7d" category="summary">AFX 1K ストレージ システムは、I/O モジュールを拡張または交換する柔軟性を提供し、ネットワーク接続とパフォーマンスを強化します。ネットワーク機能をアップグレードしたり、障害が発生したモジュールに対処したりする場合には、I/O モジュールの追加または交換が不可欠です。</block>
-  <block id="927ad4764c04a8845b582b8cc2482961" category="doc">I/Oモジュールの追加と交換の概要 - AFX 1K</block>
   <block id="9cd46df360ef153dd45a51d4a00f87bd" category="paragraph">AFX 1K ストレージ システム内の障害が発生した I/O モジュールを、同じタイプの I/O モジュールまたは異なる種類の I/O モジュールに交換できます。空きスロットのあるシステムに I/O モジュールを追加することもできます。</block>
   <block id="da12583a4d621e7218100e3f47fba9fd" category="paragraph">AFX 1K コントローラーの I/O スロットには、次の図に示すように 1 ～ 11 の番号が付けられています。</block>
   <block id="d6ae5fc17c7f8e706e65e9de9aa07e33" category="image-alt">AFX 1K コントローラーのスロット番号</block>
   <block id="2d1e260989bdb9eb272a3c7a309e1dc0" category="summary">モジュールに障害が発生した場合、またはより高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、AFX 1K ストレージ システムの I/O モジュールを交換します。交換プロセスには、コントローラのシャットダウン、障害のあるI/Oモジュールの交換、コントローラの再起動、そして障害のある部品のNetAppへの返送が含まれます。</block>
-  <block id="29d8e412fe252f27c07508bf9caee543" category="doc">I/Oモジュールの交換 - AFX 1K</block>
   <block id="20914731863c8477aa5b351df0d1d958" category="paragraph">AFX 1K ストレージ システム内の I/O モジュールに障害が発生した場合は、そのモジュールを交換します。交換プロセスには、コントローラのシャットダウン、障害のあるI/Oモジュールの交換、コントローラの再起動、そして障害のある部品のNetAppへの返送が含まれます。</block>
   <block id="27852913bf5f385e1b1ff032d05b76c9" category="summary">AFX 1K ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。</block>
-  <block id="fe4bb2898511b61f5ea638303ae1ac58" category="doc">メンテナンス手順の概要 - AFX 1K</block>
   <block id="a193d75be0d71a17cf7c6470ab81044a" category="paragraph">メンテナンス手順では、AFX 1K ストレージ システムがすでにONTAP環境にストレージ ノードとして導入されていることを前提としています。</block>
   <block id="c0e6d430c38f280369988922128024f4" category="paragraph"><block ref="c0e6d430c38f280369988922128024f4" category="inline-link-macro-rx"></block></block>
   <block id="58a851f6216724f76b5a14d7c8fad39c" category="paragraph">ブート メディアには、システムのブート時に使用されるONTAPイメージ ファイルのプライマリ セットとセカンダリ セットが保存されます。</block>
   <block id="4cac34edd40d2c6e08c089dcf4436875" category="paragraph"><block ref="4cac34edd40d2c6e08c089dcf4436875" category="inline-link-macro-rx"></block></block>
   <block id="96369a18b433f6277caa02c223cdee1b" category="paragraph">NVRAM (不揮発性ランダム アクセス メモリ) モジュールにより、システムの電源が失われた場合でも、コントローラは飛行中のデータを保護および保存できます。システム ID はNVRAMモジュールに保存されます。交換されると、コントローラは交換されたNVRAMモジュールからの新しいシステム ID を使用します。</block>
   <block id="ba86c13700b25938e5041d7bc9cfc643" category="summary">AFX 1K ストレージ システムの NV バッテリーは、停電時に重要なシステム データを保存する役割を担っているため、バッテリーの充電が減り始めたり、故障したりした場合は、NV バッテリーを交換してください。交換プロセスには、障害のあるコントローラのシャットダウン、コントローラ モジュールの取り外し、NV バッテリの交換、コントローラ モジュールの再インストール、および障害のある部品のNetAppへの返送が含まれます。</block>
-  <block id="5a1e9240c63bb2d47a1d91006fe2de64" category="doc">NVバッテリーの交換 - AFX 1K</block>
   <block id="ab25b887fbeceb14b6ae2134fc821467" category="summary">不揮発性メモリに障害が発生した場合、またはアップグレードが必要な場合は、AFX 1K ストレージ システムのNVRAM を交換してください。</block>
-  <block id="a3f799c7898eb1c65e65bccc7f84e65a" category="doc">NVRAMの交換 - AFX 1K</block>
   <block id="5252fbdb09b2c180566fb0559d145eca" category="paragraph">不揮発性メモリに障害が発生した場合、またはアップグレードが必要な場合は、AFX 1K ストレージ システムのNVRAM を交換してください。交換プロセスには、障害のあるコントローラのシャットダウン、 NVRAMモジュールまたはNVRAM DIMM の交換、および障害のある部品のNetAppへの返却が含まれます。</block>
   <block id="104d4bf22fb4ec4b006d8a1b7623a2a7" category="summary">AFX 1K ストレージ システムの AC 電源ユニット (PSU) が故障または不具合を起こした場合は交換し、システムが安定した動作に必要な電力を継続的に受けられるようにします。交換プロセスには、対象の PSU を切断し、電源ケーブルを抜き、障害のある PSU を取り外して交換用の PSU を取り付け、その後電源に再接続することが含まれます。</block>
-  <block id="018de49a4e626e242e4eda5e9ce9fa80" category="doc">電源の交換 - AFX 1K</block>
   <block id="132aa00afb63c9904de293769532d2cb" category="summary">正確な時間同期に依存するサービスとアプリケーションが引き続き動作できるように、AFX 1K ストレージ システムのリアルタイム クロック (RTC) バッテリー (一般にコイン型電池と呼ばれる) を交換します。</block>
-  <block id="fb3e3bd1a272fbf4d2f6ad86f25c717e" category="doc">リアルタイムクロックの電池を交換する - AFX 1K</block>
   <block id="346fc0ff9bc74b9a78c085dec5e578a7" category="summary">AFX 1K ストレージ システムのシステム管理モジュールに障害が発生した場合、またはファームウェアが破損した場合は、システム管理モジュールを交換してください。交換プロセスには、コントローラのシャットダウン、故障したシステム管理モジュールの交換、コントローラの再起動、ライセンス キーの更新、故障した部品のNetAppへの返却が含まれます。</block>
-  <block id="97a3fe0efca2c4986dc7ae7a30a90a4e" category="doc">システム管理モジュールの交換 - AFX 1K</block>
   <block id="897ec37b377846d2e9bad591f60f623c" category="summary">適切な冷却を維持し、システム パフォーマンスの問題を防ぐために、 ASA A1K システム内の故障したファン モジュールを交換します。ファンはホットスワップ可能なので、システムをシャットダウンせずに交換できます。</block>
   <block id="ef7ca18cc3ecc3f26a36a7b76b2718ee" category="paragraph">適切な冷却を維持し、システム パフォーマンスの問題を防ぐために、 ASA A1K システム内の故障したファン モジュールを交換します。ファンはホットスワップ可能なので、システムをシャットダウンせずに交換できます。この手順には、コンソールのエラー メッセージと LED インジケータを使用して障害のあるファンを特定し、ベゼルを取り外し、ファン モジュールを交換し、障害のある部品をNetAppに返送することが含まれます。</block>
   <block id="0d10beeaffa344cce91789b4d6bdd9ac" category="inline-link-macro">AFXスイッチ</block>
@@ -11924,7 +11664,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7b2fa3ce2f1cc4527c7d0a4e0f774ce1" category="paragraph"><block ref="9086cf3a37365194865877acb82e7669" category="inline-link-macro-rx"></block> 。</block>
   <block id="e3dd50b258bede9c23ca84687d397bed" category="paragraph"><block ref="028bf0170285d2584dcfed56c7103ca0" category="inline-link-macro-rx"></block> 。</block>
   <block id="728d7df870ee1451558451c200b714aa" category="sidebar">NetApp AFX ストレージ システムは、高性能 NAS および S3 顧客の固有のニーズに重点を置いた、分散型のハードウェアおよびソフトウェア ソリューションです。パフォーマンスとスケーラビリティは、AI および ML ワークロードの要件を満たすように特別に設計されています。</block>
-  <block id="a2e80b0b327a0d0eb54b31e906d36620" category="sidebar">AFXシステム</block>
   <block id="2eb3070ac77dd41679fb2a4b736fd5ab" category="sidebar">AFXストレージについて学ぶ</block>
   <block id="f716c6e3202ed7d92fc8348d46cf91c0" category="sidebar">AFXシステムの特徴</block>
   <block id="42bae4a5964639b077e0e13fa4126b4d" category="sidebar">AFXアーキテクチャ</block>
@@ -11951,13 +11690,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5ea0f09670f21c71300695e92b2cd256" category="admonition">ホスト ネットワーク接続にはポート e1b および e7b を使用しないでください。別のホスト カードを使用します。</block>
   <block id="e0c35bf779836a3b5e187a211457a2b9" category="list-text">外部シェルフのSAS接続を介したSASインバンド管理 [//] 2025-10-15 ontap-systems-internal/issues/1357</block>
   <block id="30432b9617d110e91bb55e0ee6592cdb" category="paragraph">イーサネットベースのベースボード管理コントローラ（BMC）とONTAP管理インターフェース、冗長ホットスワップ対応コントローラ、冗長ホットスワップ対応電源、外部シェルフのSAS接続によるSASインバンド管理、[//] 2025-10-15 ontap-systems-internal/issues/1357</block>
-  <block id="55db671ae8020eca8e8aeb4349a2b054" category="doc">電源のホットスワップ - ASA A70 およびASA A90</block>
-  <block id="c9a369c5554de29ccc1c26e1a891a293" category="doc">電源のホットスワップ - ASA A1K</block>
-  <block id="06d8fe566407f64414a820ada76ed8c0" category="doc">電源のホットスワップ - ASA A150</block>
-  <block id="b63c7571644d5ccca1e3715abbae44ca" category="doc">電源のホットスワップ - ASA A250</block>
-  <block id="2c050786a43c0ea0115e636878783956" category="doc">電源のホットスワップ - ASA A400</block>
-  <block id="a2ada69f15b8dc349c947f1966fadfab" category="doc">電源のホットスワップ - ASA A800</block>
-  <block id="afa34f783768c8c33178d16016fc5fc4" category="doc">電源のホットスワップ - ASA A900</block>
   <block id="bb9a46a830b86006c64c8c357fbcb73c" category="doc">電源のホットスワップ - FAS70 および FAS90</block>
   <block id="c0fb977424a2b5bca01ac503e2f1b009" category="doc">電源のホットスワップ - FAS2700</block>
   <block id="58c298876292ce3ccb07434a6eb98ee8" category="doc">電源のホットスワップ - FAS500f</block>
@@ -12349,41 +12081,31 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="fda1a39ddd80c9c5ab54c3484fc3ab3b" category="paragraph">正確な時間同期に依存するサービスとアプリケーションが引き続き動作できるように、 ASA C800システムのリアルタイム クロック (RTC) バッテリ (一般にコイン型電池と呼ばれる) を交換します。</block>
   <block id="1a3e0fa907667f65616c8793e725a763" category="paragraph">ASA A800ストレージシステムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返送してください参照<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページをご覧ください。</block>
   <block id="08206313818cd1d28b9b2fdb76252af5" category="paragraph">ASA A800 ストレージシステムのデータセキュリティを確保するには、ブートメディア上の暗号化キーのサポート状況とステータスを確認する必要があります。ONTAPバージョンがNetApp Volume Encryption (NVE) をサポートしているかどうかを確認し、コントローラをシャットダウンする前にキー マネージャがアクティブかどうかを確認します。</block>
-  <block id="9ba02b68d02088618c9f7503641ce8d0" category="doc">暗号化の復元 - ASA A800</block>
   <block id="e4d6513951b85211e72ef331eba4943d" category="paragraph">継続的なデータ保護を確保するために、 ASA A800システムの交換用ブート メディアで暗号化を復元します。交換プロセスでは、キーの可用性の確認、暗号化設定の再適用、データへの安全なアクセスの確認が行われます。</block>
   <block id="4a99261de25de88723882fcf5ae5a2d3" category="paragraph">ASA A800システムに新しいブート メディア デバイスをインストールした後、USB ドライブからリカバリ イメージを起動し、パートナー ノードから設定を復元できます。</block>
   <block id="cdb3456e45b0f01b2e2d152a06ecb8e2" category="paragraph">ASA A800システムのブートメディアには、重要なファームウェアと設定データが保存されています。交換プロセスでは、システム管理モジュールの取り外し、損傷したブートメディアの取り外し、交換用ブートメディアのインストール、そしてUSBフラッシュドライブを使用してONTAPイメージを交換用ブートメディアに手動で転送する必要があります。</block>
-  <block id="38e2bffd43ed0fa633f28b47d80c89ec" category="doc">修復および交換プロセスを完了する - ASA A800</block>
   <block id="b8701abb70b2fddc3aaf8641a5e8933a" category="paragraph">コントローラを再起動し、システムの健全性を確認し、障害のある部品をNetAppに返送して、 ASA A800シャーシ交換手順の最終ステップを完了します。</block>
   <block id="5fd3cf2b721aa95a091ffa0bc2348ebe" category="paragraph">ハードウェア障害が発生した場合は、 ASA A800 システムのシャーシを交換してください。交換プロセスには、コントローラの取り外し、ドライブの交換用シャーシへの移動、障害のあるシャーシの取り外し、交換用シャーシの取り付け、シャーシ コンポーネントの再取り付けが含まれます。</block>
   <block id="bf9503dc74db3a77c88e3711949e1196" category="paragraph">障害のあるASA A800シャーシを交換し、コンポーネントを再インストールした後、<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block></block>
   <block id="b5a6f3c6943588439307afc12c988363" category="summary">障害のあるシャーシを識別し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けて、 ASA A800 システム内の障害のあるシャーシを交換する準備をします。</block>
-  <block id="82070ddce5ec230645b5a004b359b275" category="doc">シャーシ交換の準備 - ASA A800</block>
   <block id="8c8b282518ccc3faf1849e49a3156c8b" category="paragraph">ASA A800シャーシのハードウェアを交換する準備ができたら、<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block> 。</block>
   <block id="0f27ab208bfe5ede38264de77e9dd810" category="summary">ASA A800 システムのシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが適切に機能していることを確認すること、 ONTAPのローカル管理者の認証情報、適切な交換用シャーシ、および必要なツールがあることを確認することが含まれます。</block>
-  <block id="adaa05ca130adaca6eb567a6e8aca378" category="doc">シャーシ交換の要件 - ASA A800</block>
   <block id="cb77f8469624bb0b6f3e319b37d51924" category="paragraph">シャーシを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、 ASA A800ストレージ システム内のコントローラをシャットダウンします。</block>
   <block id="5f9d31be244a1e604d1ef8e22c938140" category="summary">交換要件を確認し、コントローラをシャットダウンし、シャーシを交換し、システムの動作を確認して、 ASA A800ストレージ システムのシャーシの交換を開始します。</block>
-  <block id="45522cb75b71d98e5c1ed80415ac8781" category="doc">シャーシ交換ワークフロー - ASA A800</block>
-  <block id="9a791accd4e5b2f9c7572a82efa442bb" category="doc">コントローラモジュールハードウェアの交換 - ASA A800</block>
   <block id="a997f533a663618757490232465988e2" category="paragraph">ハードウェア障害が発生した場合は、 ASA A800システムのコントローラを交換してください。交換プロセスには、障害のあるコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーのインストール、および再起動が含まれます。</block>
   <block id="c77db9436d28675b19e003f742ebe31e" category="paragraph">障害のあるASA A800コントローラを交換した後は、<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block></block>
   <block id="d3e59eca730de70f2260e8f930a80739" category="paragraph">ストレージ リソースの制御を交換用コントローラに戻して、 ASA A800システムが通常の動作を再開できるようにします。返却手順は、システムで使用されている暗号化の種類（暗号化なしまたはオンボード キー マネージャー (OKM) 暗号化）によって異なります。</block>
   <block id="bcc68b5dd20bb191a7219b5770a8e40b" category="summary">ASA A800システムのコントローラを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることを確認すること、正しい交換用コントローラーがあることを確認すること、コントローラーのコンソール出力をテキスト ログ ファイルに保存することが含まれます。</block>
-  <block id="fde0f60db83d22c81e1906c97be0c0cf" category="doc">コントローラの交換要件 - ASA A800</block>
   <block id="51abe8f7e2cfe5345e05064824ba6b6e" category="paragraph">ASA A800コントローラを交換するための要件を確認した後、<block ref="049c9e44f3f84f6c7ce4b89629424c9c" category="inline-link-macro-rx"></block> 。</block>
   <block id="5bc3aa2c555cbfdc9a3357e06234129c" category="paragraph">コントローラを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、 ASA A800ストレージ システムのコントローラをシャットダウンします。</block>
   <block id="fabb12c2c93e367f6f8c63608e938af3" category="summary">障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム設定を再構成し、システムの動作を確認して、 ASA A800ストレージ システムのコントローラの交換を開始します。</block>
-  <block id="64d417c0492ada0bf624cdfa0202d486" category="doc">コントローラ交換ワークフロー - ASA A800</block>
   <block id="3ccde0c04d9ffedf2a51e10621e19dd3" category="paragraph">障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成を復元し、ストレージ リソースの制御を交換用コントローラに戻すことで、ASA A800ストレージ システム内のコントローラを交換します。</block>
-  <block id="38f80fd3377fb2ee353a03c40cbaec2a" category="doc">DIMMの交換 - ASA A800</block>
   <block id="eea2252d1c3816b8efcad70d597e0ed8" category="paragraph">修正可能または修正不可能なメモリ エラーが過剰に検出された場合は、 ASA A800システム内の DIMM を交換してください。このようなエラーにより、ストレージ システムがONTAPを起動できなくなる可能性があります。交換プロセスには、障害のあるコントローラのシャットダウン、取り外し、DIMM の交換、コントローラの再インストール、そして障害のある部品のNetAppへの返送が含まれます。</block>
   <block id="df67a6ad1447c4c4f8980daf63ba6033" category="paragraph">ドライブに障害が発生した場合、またはアップグレードが必要な場合は、 ASA A800システム内のドライブを交換します。交換プロセスには、障害のあるドライブの識別、そのドライブの安全な取り外し、そして継続的なデータ アクセスとシステム パフォーマンスを確保するための新しいドライブのインストールが含まれます。</block>
   <block id="c1ede9689ec61dc5d94d865151d0be7b" category="paragraph">ファンが故障したり、効率的に動作していない場合は、システムの冷却と全体的なパフォーマンスに影響する可能性があるため、 ASA A800システムのファン モジュールを交換してください。交換プロセスには、障害のあるコントローラのシャットダウン、取り外し、ファン モジュールの交換、コントローラの再インストール、そして障害のある部品のNetAppへの返送が含まれます。</block>
   <block id="401ac7ba166683cfa22f7e98a423119f" category="paragraph">ASA A800システムの NV バッテリは停電時に重要なシステム データを保存する役割を担っているため、バッテリの充電が減り始めたり、故障したりした場合は、NV バッテリを交換してください。交換プロセスには、障害のあるコントローラのシャットダウン、コントローラ モジュールの取り外し、NV バッテリの交換、コントローラ モジュールの再インストール、および障害のある部品のNetAppへの返送が含まれます。</block>
   <block id="2d2bbf0109be1264bd8dc4097ed175c6" category="paragraph">フラッシュの寿命がほぼ終了したか、識別された NVDIMM が全体的に正常ではないことがシステムによって記録された場合は、 ASA A800システム内の NVDIMM を交換してください。交換しないと、システム パニックが発生します。</block>
   <block id="6911d46efeb3458c15e6015393175328" category="list-text">NetAppから受け取った交換用 NVDIMM がASA A800システムと互換性があることを確認してください。</block>
-  <block id="d66aec26e9255e10a8bcd8d20a629537" category="doc">PCIe カードの交換 - ASA A800</block>
   <block id="62e12f08961747e8931ef132a1fa7cd1" category="paragraph">モジュールに障害が発生した場合、より高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、 ASA A800システムの I/O モジュールを交換または追加します。交換プロセスには、コントローラのシャットダウン、障害のあるI/Oモジュールの交換、コントローラの再起動、そして障害のある部品のNetAppへの返送が含まれます。</block>
   <block id="596743307e846b6be3b2d3db6ad7389d" category="paragraph">ASA A800システムの AC または DC 電源ユニット (PSU) が故障または不具合を起こした場合は交換し、システムが安定した動作に必要な電力を継続的に受けられるようにします。交換プロセスでは、故障した PSU を電源から切断し、電源ケーブルを抜き、故障した PSU を交換し、電源に再接続します。</block>
   <block id="26def7298908089958e3ba3011e3ac4e" category="paragraph">正確な時間同期に依存するサービスとアプリケーションが引き続き動作できるように、 ASA A800システムのリアルタイム クロック (RTC) バッテリ (一般にコイン型電池と呼ばれる) を交換します。</block>
@@ -12710,7 +12432,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="d49761189d944ddcf4681d70a8b961d5" category="list-text">両方のコントローラが起動して I/O（データの提供）を実行できます。</block>
   <block id="417ba3c087e82af38fb73fa14c37bebd" category="list-text">テイクオーバーが障害が発生した I/O モジュールによって発生し、コントローラがそれ以外は正常に機能している場合、いずれかのコントローラがテイクオーバー状態になることがあります。</block>
   <block id="2a70609cc120eb294fe3adcbaed17c21" category="paragraph">特定の状況では、ONTAPは、障害が発生したI/Oモジュールが原因で、いずれかのコントローラの自動テイクオーバーを実行できます。たとえば、障害が発生したI/Oモジュールにすべてのクラスタポートが含まれている場合（そのコントローラ上のすべてのクラスタリンクがダウンしている場合）、ONTAPは自動的にテイクオーバーを実行します。</block>
-  <block id="c665d0e5559dc1402b410a432775a005" category="paragraph">障害が発生した I/O モジュールを同等の I/O モジュールとホット スワップします：</block>
   <block id="f082af9e632b55a0589035b8597ac906" category="list-text">障害のあるコントローラから障害のある I/O モジュールを取り外します：</block>
   <block id="317649ae19f8171b38046b4e44a625e8" category="list-text">交換用 I/O モジュールを取り付けます。</block>
   <block id="cf3097a2cae6846825e5732d2389fba6" category="list-text">交換用 I/O モジュールをケーブル接続します。</block>
@@ -12764,12 +12485,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1461566b8f3aae783d99a66f0df3990d" category="section-title">ステップ3：故障したI/Oモジュールを交換する</block>
   <block id="b8be2940448923b51c62ceac37101eb3" category="paragraph">この手順を使用するには、ストレージ システムでONTAP 9.18.1以降が実行されている必要があります。</block>
   <block id="5c065eb86f11d025e27522a2e8f5ffab" category="summary">モジュールに障害が発生し、ストレージ システムがすべてのONTAPバージョン要件を満たしている場合は、AFX 1K ストレージ システム内の Ethernet I/O モジュールをホット スワップできます。</block>
-  <block id="732c16d1d339600ecda893e568d0b4e6" category="doc">I/OモジュールのホットスワップAFX 1K</block>
   <block id="ecb1657a93dd53d8703fa4d979bf60bf" category="summary">モジュールに障害が発生し、ストレージ システムがすべてのONTAPバージョン要件を満たしている場合は、ASA A70またはASA A90ストレージ システム内のEthernet I/Oモジュールをホット スワップできます。</block>
-  <block id="6ae6d79b0037565d0a3ec873779e6fb5" category="doc">I/OモジュールのホットスワップASA A70およびASA A90</block>
   <block id="7786e2ae70ae02d3334e57c054000628" category="paragraph">この手順を使用するには、ストレージ システムでONTAP 9.18.1が実行されている必要があります。</block>
   <block id="f62687b6556e483223b86d81e6c69cf3" category="summary">モジュールに障害が発生し、ストレージ システムがすべてのONTAPバージョン要件を満たしている場合は、ASA A1K ストレージ システム内の Ethernet I/O モジュールをホット スワップできます。</block>
-  <block id="f3389636fc7088fd282f840758d061b7" category="doc">I/OモジュールのホットスワップASA A1K</block>
   <block id="83ac6a4711c3416ed290046898df82df" category="summary">ASA A20、ASA A30、または ASA A50 ストレージ システムで、モジュールに障害が発生し、ストレージ システムがすべての ONTAP バージョン要件を満たしている場合は、Ethernet I/O モジュールをホット スワップできます。</block>
   <block id="8e3cd31e8a235e75e789cfedbe57a095" category="summary">モジュールに障害が発生し、ストレージ システムがすべてのONTAPバージョン要件を満たしている場合は、ASA C30 ストレージ システム内の Ethernet I/O モジュールをホット スワップできます。</block>
   <block id="2e653b1c06ff140c10b0fcd2447299a8" category="summary">AFF C30またはAFF C60ストレージシステムでモジュールに障害が発生し、ストレージシステムがすべてのONTAPバージョン要件を満たしている場合は、Ethernet I/Oモジュールをホットスワップできます。</block>
@@ -12891,52 +12609,35 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="9fdedcbb8a005772b764ea92ee7d79fc" category="paragraph">障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成を復元し、ストレージ リソースの制御を交換用コントローラに戻すことで、ASA C250 ストレージ システムのコントローラを交換します。</block>
   <block id="447d58f42a93cb2d67a882a1972e7529" category="paragraph">ASA C250 ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換などの定期的なメンテナンス タスクを実行すると、ダウンタイムやデータ損失を防ぐことができます。</block>
   <block id="f8466e4302541aafa6280bb32bf6db40" category="paragraph">メンテナンス手順では、ASA C250ストレージシステムがONTAP環境のストレージ ノードとしてすでに導入されていることを前提としています。</block>
-  <block id="799766eb97b1cb94033e6f826c918d27" category="doc">障害が発生したブートメディアをNetApp - ASA A250に返却</block>
   <block id="4113253bb433cd66aaf518403b05475f" category="paragraph">ASA A250 システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。詳細については、<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>ページを参照してください。</block>
   <block id="c8fe075e031ef0a229e1e5afae9b1203" category="summary">新しいブートメディアデバイスをASA A250システムにインストールした後、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。</block>
-  <block id="ff9481b37113ee1aeb5a96dc4e54a86b" category="doc">パートナー ノードからの自動ブート メディア リカバリ - ASA A250</block>
   <block id="2872b7e0fe56a74782408dce1646a321" category="paragraph">新しいブートメディアデバイスをASA A250システムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。回復プロセス中に、システムは暗号化が有効になっているかどうかを確認し、使用されているキー暗号化の種類を判別します。キー暗号化が有効になっている場合は、システムが適切な手順を案内して復元します。</block>
   <block id="a8d175f3204f9bb52720e426d1349435" category="summary">ASA A250システムのブートメディアには、重要なファームウェアと構成データが保存されます。交換プロセスには、コントローラ モジュールの取り外し、障害のあるブート メディアの取り外し、交換用のブート メディアのコントローラ モジュールへのインストール、コントローラ モジュールの再インストールが含まれます。</block>
-  <block id="bc55bcacda60f533328a6222248bbf37" category="doc">自動ブート回復のためにブートメディアを交換します - ASA A250</block>
   <block id="000985094ab4f30d00eb2145d27eecd6" category="paragraph">ASA A250 システムのブート メディアには、重要なファームウェアと構成データが保存されます。交換プロセスには、コントローラ モジュールを取り外して開き、障害が発生したブート メディアを取り外し、交換用のブート メディアをコントローラ モジュールにインストールし、コントローラ モジュールを再インストールすることが含まれます。</block>
   <block id="0637ad0f27877cbd306977677e72313a" category="summary">ASA A250 システムのブート メディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。</block>
-  <block id="afd5bb2660744d78b0a3d382830a9055" category="doc">自動ブートメディアリカバリの要件 - ASA A250</block>
   <block id="5f3d724857c2a376f0960ca61dd0ed26" category="paragraph">ASA A250 のブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、正しい交換用ブート メディアがあることを確認すること、障害のあるコントローラの e0S（e0M wrench）ポートに障害がないことの確認、Onboard Key Manager（OKM）または External Key Manager（EKM）が有効になっているかどうかを確認することが含まれます。</block>
   <block id="56264d0f45bc0deb9dd1dca3074322de" category="summary">ASA A250 システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、適切な容量のストレージを備えたUSBフラッシュドライブがあることを確認し、正しい交換用ブートデバイスがあることを確認することが含まれます。</block>
-  <block id="a095bd7b1326362764a5df1b2419305e" category="doc">手動ブートメディアリカバリの要件 - ASA A250</block>
   <block id="cea09916975c69f0f5e970a930689e6d" category="summary">ASA A250 ストレージ システムのブート メディアの交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システムの機能を確認します。</block>
-  <block id="798d6239610b9f5ef68cb5e017e86839" category="doc">ブートメディアの自動回復ワークフロー - ASA A250</block>
   <block id="95c7d6eae959628bc114c991879881f5" category="paragraph">ブート イメージの自動回復では、システムが適切なブート メニュー オプションを自動的に識別して選択します。パートナー ノードのブート イメージを使用して、ASA A250 ストレージ システムの交換用ブート メディアに ONTAP を再インストールします。</block>
   <block id="dc3d40a7a29afef0c0e1a2f20acd4f2e" category="summary">ASA A250 ストレージ システムのブート メディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージのブート、暗号化の復元、およびシステム機能の検証を行います。</block>
-  <block id="fab636ff567990aa5318f44fcdd5644d" category="doc">ブートメディアの手動回復ワークフロー - ASA A250</block>
   <block id="3794216268a5cc4ad66ae1ff68e560ea" category="summary">ASA A250 ストレージ システムで障害のあるコントローラーをシャットダウンして、ブート メディアの交換時にデータ損失を防ぎ、システムの安定性を確保します。</block>
-  <block id="d5744c93fd3a55565fec97370a901ab8" category="doc">自動ブートメディアリカバリのためにコントローラをシャットダウンします - ASA A250</block>
   <block id="6fea684c8dea60e6699566bf667efcea" category="paragraph">ASA A250 ストレージ システムで障害のあるコントローラーをシャットダウンして、自動ブート メディア回復プロセス中のデータ損失を防ぎ、システムの安定性を維持します。</block>
-  <block id="6c335a47deaac2c0092f7bc6bcf11752" category="doc">シャーシの交換を完了します - ASA A250</block>
   <block id="7e8cd6c7e7f6e87b6e35c1f6695402d0" category="paragraph">コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返却して、ASA A250シャーシ交換手順の最終ステップを完了します。</block>
-  <block id="89b26aa3c808ef16256b019e27fe2d0d" category="doc">シャーシを交換する - ASA A250</block>
   <block id="896786bae0c02090b0a1687150db97a2" category="paragraph">ハードウェア障害が発生した場合は、ASA A250 システムのシャーシを交換してください。交換プロセスには、コントローラーと電源ユニット（PSU）の取り外し、ドライブの取り外し、交換用シャーシの取り付け、シャーシ コンポーネントの再取り付けが含まれます。</block>
   <block id="fc020abfd025083d50c9b9137502afaa" category="paragraph">障害が発生したASA A250シャーシを交換してコンポーネントを再インストールした後、<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block></block>
   <block id="800b2af8227e26b20a950dd21eaf4c57" category="summary">ASA A250 システムで障害のあるシャーシを交換する準備をするために、障害のあるシャーシを特定し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けます。</block>
-  <block id="266d1ddad3ed91e9e45333640ea04f4c" category="doc">シャーシの交換準備 - ASA A250</block>
   <block id="0640ee4645298086aefc9ecc1b5df50f" category="paragraph">ASA A250 シャーシ ハードウェアの交換準備が完了したら、<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block>する必要があります。</block>
   <block id="3d3cd4ba529b9ac35ca56c5bb9c471c2" category="summary">ASA A250システムのシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることの確認、ONTAPのローカル管理者クレデンシャルがあることの確認、正しい交換用シャーシ、および必要なツールが含まれます。</block>
-  <block id="b18f9b0b9a11c1e7fa1f09d97327e90f" category="doc">シャーシ交換の要件 - ASA A250</block>
   <block id="32fb468cc57459e398e50b8c594d600c" category="paragraph">ASA A250 ストレージ システムのコントローラーをシャットダウンして、シャーシの交換時にデータの損失を防ぎ、システムの安定性を確保します。</block>
   <block id="1fbd60c89526d83a5931264032b81202" category="summary">ASA A250 ストレージ システムのシャーシ交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、シャーシを交換して、システムの動作を検証します。</block>
-  <block id="6fd63cc179e9ba6a81f975839b4bd2fd" category="doc">シャーシ交換ワークフロー - ASA A250</block>
-  <block id="4b0bee536688e7115c8f84a702f19897" category="doc">コントローラの交換 - ASA A250</block>
   <block id="a98273a710d608019bb11f234adcfa63" category="paragraph">ハードウェア障害が発生した場合は、ASA A250システムのコントローラを交換してください。交換プロセスには、障害のあるコントローラの取り外し、コンポーネントの交換用コントローラへの移動、交換用コントローラの取り付け、および再起動が含まれます。</block>
   <block id="3868cb70ed3aa682ee144827d555f8d2" category="paragraph">障害のある ASA A250 コントローラーを交換したら、<block ref="c8905a4c68408046b8de9d3b84f93445" category="inline-link-macro-rx"></block>する必要があります。</block>
   <block id="049f65e918dc2fd99a3d9ea6ad4fdfdf" category="paragraph">復元を完了し、システム構成 ASA A250 システムを確認した後、システムのケーブルを再接続し、ディスクを再割り当てする必要があります。</block>
-  <block id="3896f2781684716c2882a4b3d212ce75" category="doc">コントローラーを交換するための要件 - ASA A250</block>
   <block id="350284e890e9fd28a958de3fd71643cf" category="paragraph">ASA A250ストレージ システムのコントローラーを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることを確認すること、正しい交換用コントローラがあることを確認すること、コントローラのコンソール出力をテキスト ログ ファイルに保存することが含まれます。</block>
-  <block id="9c29e3a28bb382ea5d8588ebb8bbe765" category="doc">コントローラの完全交換 - ASA A250</block>
   <block id="377811312d0644d8c78fe7f7531352d6" category="paragraph">ASA A250 システムのコントローラ交換を完了して完全に動作させるには、NetApp Storage Encryption の設定を復元し（必要な場合）、新しいコントローラのライセンスをインストールし、キットに同梱されている RMA 手順書の説明に従って障害が発生した部品を NetApp に返却する必要があります。</block>
   <block id="869768c23e95aa07dacfbeef759ddd03" category="paragraph">ASA A250 ストレージ システムのコントローラーをシャットダウンして、コントローラーの交換時にデータの損失を防ぎ、システムの安定性を確保します。</block>
   <block id="7e685b7b7062cbfdacbd3e4d08fc2096" category="paragraph">ハードウェアの交換が完了し、ASA A250システムをメンテナンス モードで起動したら、交換用コントローラの低レベルのシステム構成を確認し、必要に応じてシステム設定を再構成する必要があります。</block>
   <block id="dd2ca674906435762d38dd1e735e23ea" category="summary">ASA A250 ストレージ システムのコントローラの交換を開始するには、障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム設定を再構成し、システムの動作を確認します。</block>
-  <block id="e2b96d9e304cd2630ac73d4e768c0dd5" category="doc">コントローラ交換ワークフロー - ASA A250</block>
   <block id="35f0eb77d868045d7301a3e051d0b836" category="paragraph">障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成を復元し、ストレージ リソースの制御を交換用コントローラに戻すことで、ASA A250 ストレージ システムのコントローラを交換します。</block>
   <block id="23f9e2dbaccd7bc93fa7098dc0224c8d" category="paragraph">ASA A250 ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換などの定期的なメンテナンス タスクを実行すると、ダウンタイムやデータ損失を防ぐことができます。</block>
   <block id="0799262b9ba99e27bd77815c3da8b1db" category="paragraph">メンテナンス手順では、ASA A250ストレージ システムがONTAP環境のストレージ ノードとしてすでに導入されていることを前提としています。</block>
@@ -13199,9 +12900,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5ef996d7130f7240b1a66f693b6cd171" category="summary">ASA C30ストレージシステムのブートメディアを交換する前に、交換を成功させるために必要な要件と考慮事項を満たしていることを確認してください。これには、正しい交換用ブートメディアがあることの確認、障害のあるコントローラのe0Mレンチポートが正常に動作していることの確認、およびOnboard Key ManagerまたはExternal Key Managerが有効になっているかどうかの判断が含まれます。</block>
   <block id="4d0d90e223742e6845cbaf6540074bb8" category="summary">ストレージ リソースの制御を交換用コントローラに戻すと、ASA C30 ストレージ システムは通常運転を再開できます。ギブバック手順は、システムで使用されている暗号化のタイプ（暗号化なし、Onboard Key Manager 暗号化、External Key Manager 暗号化など）によって異なります。</block>
   <block id="c00e009f6bff8e1a69d42333c388aa32" category="summary">ASA C30ストレージシステムのコントローラ交換を完了するには、まず必要に応じてNetApp Storage Encryptionの設定をリストアし、新しいコントローラに必要なライセンスをインストールします。次に、論理インターフェイスがホームポートにレポートしていることを確認し、クラスタのヘルスチェックを実行します。最後に、新しいコントローラのシリアル番号を登録してから、障害が発生した部品をNetAppに返却します。</block>
-  <block id="e5cc9678dc581ae1ad5d47c55251b592" category="doc">IOモジュールのホットスワップ - ASA C30</block>
-  <block id="106dde289c48bc59ed1c7fdc2b7664b2" category="doc">IO モジュールのメンテナンス概要 - ASA C30</block>
-  <block id="e774a8fba338570ea3bd65c28b1d0900" category="doc">IOモジュールの交換 - ASA C30</block>
   <block id="7a3912e633fb7ff47f4af76a79bc4e37" category="summary">ASA C30ストレージシステムのACまたはDC電源ユニットに障害が発生した場合や不具合が生じた場合は、システムが安定した動作に必要な電力を継続的に受け取れるように交換してください。交換プロセスでは、故障した電源装置を電源から切り離し、電源コードを抜き、故障した電源装置を交換してから、電源に再接続します。</block>
   <block id="cb232032cd15d6c1b1c75afbf14c1988" category="summary">ASA C30 ストレージシステムのリアルタイム クロック バッテリ（一般的にコイン型電池として知られています）を交換して、正確な時刻同期に依存するサービスやアプリケーションが確実に稼働し続けるようにします。</block>
   <block id="c4ae36d50f64939c24cba58a921a821b" category="summary">システムを完全に動作可能な状態に復元するには、NetApp Storage Encryption構成をリストアし、新しいコントローラのライセンスをインストールして、障害が発生した部品をNetAppに返却する必要があります。</block>
@@ -13710,18 +13408,14 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="2fdf514c2d9fa977ee2867f1fc969e2b" category="summary">ハードウェア障害が発生した場合は、ASA A400システムのコントローラーを交換してください。故障したコントローラーを取り外し、その構成部品を交換用コントローラーに移し、新しいコントローラーを取り付けて再起動します。</block>
   <block id="d5fdafc0f97fe0e3b59d80a9ab525c2a" category="paragraph">障害のある ASA A400 コントローラーを交換したら、<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block>する必要があります。</block>
   <block id="8e947660f362f0a4d86a28747d995c6c" category="summary">ストレージリソースの制御を交換用コントローラに戻すと、ASA A400 システムは通常動作を再開できます。</block>
-  <block id="dfb88b3579c8fa94fff94e45fe033df9" category="doc">コントローラを返却 - ASA A400</block>
   <block id="4fcaa86a07a17d3d8b2ef0d7bb46bab4" category="summary">ASA A400システムのコントローラを交換する前に、システム内の他のすべてのコンポーネントが正しく機能していることを確認し、正しい交換用コントローラがあることを確認し、コントローラのコンソール出力をテキストログファイルに保存します。</block>
-  <block id="d043454ffa52d2dde29e9b3ddb67bc85" category="doc">コントローラを交換するための要件 - ASA A400</block>
   <block id="1f4df5a2f55421d84d5462ddea4c450a" category="paragraph">ASA A400 コントローラーの交換要件を確認したら、<block ref="049c9e44f3f84f6c7ce4b89629424c9c" category="inline-link-macro-rx"></block>する必要があります。</block>
   <block id="ddcd2195550de716ab8a68c01f2f71ee" category="summary">ASA A400 システムのコントローラ交換を完了します。交換用コントローラのライセンスをインストールし、論理インターフェイス（LIF）がホームポートにレポートしていることを確認し、クラスタヘルスチェックを実行します。最後に、障害が発生した部品を NetApp に返却します。</block>
-  <block id="c4f89572eb7afdd08c114854d3501aab" category="doc">コントローラの完全交換 - ASA A400</block>
   <block id="9991899f8771ca7fd42c63396edd9b38" category="summary">ASA A400 ストレージ システムのコントローラーをシャットダウンして、コントローラーの交換時にデータ損失を防ぎ、システムの安定性を確保します。</block>
   <block id="7398d38cd0c8e80500ba1b2684897978" category="paragraph">ASA A400 コントローラをシャットダウンしたら、<block ref="4c59920dffd5894cdc2dc27ddd7fff07" category="inline-link-macro-rx"></block>する必要があります。</block>
   <block id="1497cf44cbda23bb003f913e598fab52" category="summary">コントローラの HA 構成がアクティブで、ASA A400 ストレージシステムで正しく機能していることを確認し、システムのストレージポートにディスクへのすべてのパスがリストされていることを確認してください。</block>
   <block id="ba1b2ccfb40b6fada5a226eb44891da6" category="paragraph">ASA A400 システムのシステム構成をリストアして検証したら、<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>する必要があります。</block>
   <block id="bdec3a549aafe952a4c46d4618f2117a" category="summary">障害のあるコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成を復元し、ストレージ リソースの制御を交換用コントローラに戻すことで、ASA A400 ストレージ システムのコントローラを交換します。</block>
-  <block id="232b440a7c6cee72b84ae61c240d0724" category="doc">コントローラー交換ワークフロー - ASA A400</block>
   <block id="5f11b65bf6bc9fcd0e94d50f675d562d" category="summary">ハードウェア障害が発生した場合は、AFF C400システムのコントローラを交換してください。故障したコントローラを取り外し、そのコンポーネントを交換用コントローラに移動し、新しいコントローラを取り付けて再起動します。</block>
   <block id="fb856566523de294063ff59d6bb060f9" category="paragraph">障害のある AFF C400 コントローラーを交換したら、<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block>する必要があります。</block>
   <block id="46c5a0485089a65097a12790fbafab58" category="summary">ストレージリソースの制御を交換用コントローラに戻すと、AFF C400 システムは通常動作を再開できます。</block>
@@ -13910,84 +13604,35 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="493298a3a6f3a3cf70519ac77bb7cc64" category="paragraph">NVRAM12-EXの交換を完了するには、以下の手順を実行してください。</block>
   <block id="1c0ddb7495bc326a40ae1ea3966e1457" category="paragraph">コマンドの出力には、ストレージ交換の現在の状態を示すメッセージが表示されます。次の例では、<block ref="78882aaeb08e9a4c81687b5de2add74f" prefix=" " category="inline-code"></block>が交換され、現在の状態が<block ref="f9aed4590452f5aef264e3a300310c74" prefix=" " category="inline-code"></block>として表示されています。</block>
   <block id="42b3f0646b307caaf22f86b43e3eb71d" category="list-text">正常なコントローラーから、交換したコントローラーのストレージを返却します。<block ref="2758e32ab200505077d7f67db24fef34" prefix=" " category="inline-code"></block></block>
-  <block id="ce6279cd36ee4c306295f39452eabbf8" category="doc">AFX 1Kストレージシステムのインストールとセットアップ</block>
-  <block id="30954684f5a6a329efedc9f25f4bcc8c" category="doc">AFX 2Kストレージシステムのインストールとセットアップ</block>
-  <block id="e07ddba440295d8e078bed0178002da1" category="summary">afx 2kストレージシステムのコンポーネントが故障した場合は、故障した部品をNetAppに返送してください。</block>
-  <block id="9511dc49b384d1158b9f8a8c0337e207" category="doc">故障した部品を NetApp に返送する - AFX 2K</block>
   <block id="0affd127beb8fc0bfeff964dd038d723" category="paragraph">AFX 2Kストレージシステムのコンポーネントが故障した場合は、故障した部品を NetApp に返送してください。詳細については、<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>ページをご覧ください。</block>
-  <block id="47f0338c49f097e8093bce9657ff1646" category="summary">afx 2kストレージシステムに新しいブートメディアデバイスをインストールした後、自動ブートメディアリカバリプロセスを開始して、パートナーノードから構成を復元できます。</block>
-  <block id="84153d26e804fcdee7fb671df98746e1" category="doc">リカバリイメージを起動する - AFX 2K</block>
   <block id="c450538e490e69fd0e9467f41c8631ab" category="paragraph">AFX 2Kストレージシステムに新しいブートメディアデバイスをインストールした後、自動ブートメディアリカバリプロセスを開始して、パートナーノードから構成を復元できます。</block>
-  <block id="5f1f79d08ef475823db8257dc1bdd0cc" category="summary">afx 2kストレージシステムのブートメディアを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、正しい交換用ブートメディアを使用しているかの確認、コントローラに欠陥のあるクラスタポートがないかの確認、およびOnboard Key ManagerまたはExternal Key Managerが有効になっているかどうかの確認が含まれます。</block>
-  <block id="d2d71b085d843602a2d9c3f66c9c5596" category="doc">ブートメディアを交換するための要件 - AFX 2K</block>
   <block id="d41dade972da3418c65cb14c057bd633" category="paragraph">AFX 2Kストレージシステムのブートメディアを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、正しい交換用ブートメディアを使用しているかの確認、コントローラに欠陥のあるクラスタポートがないかの確認、およびOnboard Key Manager（OKM）またはExternal Key Manager（EKM）が有効になっているかどうかの確認が含まれます。</block>
-  <block id="d5cd69eac9dd0d5de3d4237a240bece5" category="summary">afx 2kストレージシステムのブートメディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブートメディアの交換、リカバリイメージの起動、暗号化の復元、およびシステム機能の確認を行います。</block>
-  <block id="baef70475cbbc792f2131ba3fb54aefe" category="doc">ブートメディア交換ワークフロー - AFX 2K</block>
   <block id="bc830856fd35a52a3a89d651cd864fbf" category="paragraph">AFX 2Kストレージシステムのブートメディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブートメディアの交換、リカバリイメージの起動、暗号化の復元、およびシステム機能の確認を行います。</block>
-  <block id="4fd2c496ca4d33821f657d8aaf9a63ba" category="summary">お使いのafx 2kストレージシステムのブートメディアには、重要なファームウェアと構成データが保存されています。交換手順は、System Managementモジュールの取り外し、破損したブートメディアの取り外し、System Managementモジュールへの交換用ブートメディアの取り付け、そしてSystem Managementモジュールの再取り付けという流れになります。</block>
-  <block id="0c3e985723f6a8a21af6e15c4396618f" category="doc">ブートメディアの交換 - AFX 2K</block>
   <block id="8f1d1b9d974152a32c5690207277c95b" category="paragraph">AFX 2Kストレージシステムのブートメディアには、重要なファームウェアと構成データが保存されています。交換手順は、システム管理モジュールの取り外し、障害のあるブートメディアの取り外し、システム管理モジュールへの交換用ブートメディアの取り付け、およびシステム管理モジュールの再取り付けという流れになります。</block>
-  <block id="08fa7aa863e6b927cfc399f2ef320f21" category="summary">ブートメディアを交換する際は、データ損失を防ぎ、システムの安定性を確保するために、afx 2kストレージシステム内の故障したコントローラーをシャットダウンしてください。</block>
-  <block id="68866c0551915937e68abe79bf5ef440" category="doc">ブートメディアを交換するためにコントローラをシャットダウンする - AFX 2K</block>
   <block id="4dc397418ec19de981c3fdf94c990373" category="paragraph">ブートメディアを交換する際は、データ損失を防ぎ、システムの安定性を確保するために、AFX 2Kストレージシステム内の故障したコントローラーをシャットダウンしてください。</block>
-  <block id="733189122efc7c7d771d2781ab9edc13" category="doc">シャーシ交換を完了する - AFX 2K</block>
   <block id="f2cf1a2d6a564179db911470c7676dbc" category="paragraph">コントローラーを再起動し、システムの健全性を確認し、故障した部品を NetApp に返送して、AFX 2K シャーシ交換手順の最終ステップを完了してください。</block>
-  <block id="90f0deb4f558f0628824127f70ab2904" category="summary">afx 2k ストレージシステムのシャーシは、ハードウェア障害が発生した場合に交換してください。交換手順では、シャーシ前面からコントローラを取り外し、電源ユニット、NVRAM12、I/Oモジュールとブランク、およびシステム管理モジュールを取り外してから、交換用シャーシを取り付け、シャーシコンポーネントを再取り付けします。</block>
-  <block id="e8a38b5bcb86d3baafecd1cb84315938" category="doc">シャーシを交換する - AFX 2K</block>
   <block id="5c4826b51aa30ed4ef6492f516458b76" category="paragraph">AFX 2K ストレージシステムのシャーシは、ハードウェア障害が発生した場合に交換が必要となります。交換プロセスには、コントローラ、I/O カード、NVRAM12 モジュール、システム管理モジュール、および電源ユニット（PSU）の取り外し、交換用シャーシの取り付け、シャーシコンポーネントの再取り付けが含まれます。</block>
   <block id="5f488087f80a00d8a0a9c9ea39dd9a39" category="paragraph">故障したAFX 2Kシャーシを交換し、コンポーネントを再インストールした後、<block ref="26075a6bb8a8530abf8ac901371df95c" category="inline-link-macro-rx"></block>を完了します。</block>
-  <block id="0d31d940838cf27af8dcbdc4bb1e5cc5" category="summary">afx 2kストレージシステムの故障したシャーシを交換する準備として、故障したシャーシを特定し、交換用コンポーネントを確認し、ケーブルとコントローラモジュールにラベルを付けます。</block>
-  <block id="97ea2ff13381c9e80e4a9e5866798008" category="doc">シャーシ交換の準備 - AFX 2K</block>
   <block id="8ad61988da397d5c7edb61330bbffe52" category="paragraph">AFX 2Kストレージシステムの故障したシャーシを交換する準備として、故障したシャーシを特定し、交換部品を確認し、ケーブルとコントローラモジュールにラベルを付けます。</block>
   <block id="aee3662996304503df8dfe1957eb5f3f" category="paragraph">AFX 2Kシャーシのハードウェアを交換する準備ができたら、<block ref="56c6ba4ece2a517e11a0ae4af44a8f78" category="inline-link-macro-rx"></block>。</block>
-  <block id="d6df809a31fd91ee4ebfcf365ecba6c2" category="summary">afx 2kストレージシステムのシャーシを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正しく機能していることの確認、ONTAP のローカル管理者資格情報を持っていることの確認、適切な交換用シャーシと必要な工具の確認が含まれます。</block>
-  <block id="241c5559a8db1110c02f46f1b23144d9" category="doc">シャーシ交換の要件 - AFX 2K</block>
   <block id="d140062b5792fa29619e99c355c9a0d1" category="paragraph">AFX 2Kストレージシステムのシャーシを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正しく機能していることの確認、ONTAP のローカル管理者資格情報を持っていることの確認、適切な交換用シャーシと必要な工具の準備が含まれます。</block>
-  <block id="e16e7814eb1ed3a86464700b59e96402" category="summary">シャーシを交換する際は、データ損失を防ぎ、システムの安定性を確保するために、afx 2kストレージシステムのコントローラーをシャットダウンしてください。</block>
-  <block id="99fc7a4cd41d10bebbe7ed8ded52ede7" category="doc">シャーシを交換するためにコントローラーをシャットダウンする - AFX 2K</block>
   <block id="69ab490f4653208cd65d6913bee4569c" category="paragraph">シャーシを交換する際は、データ損失を防ぎ、システムの安定性を確保するために、AFX 2Kストレージシステムのコントローラーをシャットダウンしてください。</block>
-  <block id="1f7ca8867973ca942502e20d95044a0e" category="summary">afx 2k ストレージシステムのシャーシ交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、シャーシを交換して、システムの動作を確認します。</block>
-  <block id="eb045a163eb7be9f73f4a40d1c0f41b7" category="doc">シャーシ交換ワークフロー - AFX 2K</block>
   <block id="eacae0f88e59233ad6ded55e422f7945" category="paragraph">AFX 2Kストレージシステムのシャーシ交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、シャーシを交換して、システムの動作を確認します。</block>
-  <block id="5b8f290c3f089907bba9c2c693c2fe48" category="summary">ハードウェア障害が発生した場合は、afx 2k ストレージシステムのコントローラーを交換してください。交換手順は、障害のあるコントローラーを取り外し、コンポーネントを交換用コントローラーに移設し、交換用コントローラーを取り付けて再起動するというものです。</block>
-  <block id="7a37d11ee7f6a2db7866bba675f4a88c" category="doc">コントローラーを交換する - AFX 2K</block>
   <block id="2c9ff4eca4d80dfdc8f7696cd65f5221" category="paragraph">ハードウェア障害が発生した場合は、AFX 2K ストレージシステムのコントローラーを交換してください。交換手順は、障害のあるコントローラーを取り外し、コンポーネントを交換用コントローラーに移設し、交換用コントローラーを取り付けて再起動するというものです。</block>
   <block id="9d165553852fd4225e1ab7573c22323b" category="paragraph">故障したAFX 2Kコントローラーを交換した後、<block ref="2b62b6819eda0605f4028f44dd716aa8" category="inline-link-macro-rx"></block>。</block>
-  <block id="232109d76a222d9f105a0d4882a42416" category="summary">ストレージリソースの制御を交換用コントローラーに戻すことで、afx 2kストレージシステムが正常に動作を再開できるようになります。</block>
-  <block id="3cb36adf127544644230cf2e4b5ab84f" category="doc">コントローラーを返却する - AFX 2K</block>
   <block id="19c41860e2f260ae2e77595f423e0eb2" category="paragraph">ストレージリソースの制御を交換用コントローラに戻すことで、AFX 2Kストレージシステムが正常に動作を再開できるようになります。返却手順は、システムで使用されている暗号化の種類（暗号化なし、または Onboard Key Manager （OKM）暗号化）によって異なります。</block>
-  <block id="72b508e9c8c6ad7aa90aadf13f71d293" category="summary">afx 2k ストレージ システムのコントローラーを交換する前に、交換を正常に完了するために必要な要件を満たしていることを確認してください。これには、適切な交換用コントローラー、システム構成のバックアップ、および必要なツールとファームウェアへのアクセスが含まれます。</block>
-  <block id="5ce6725b6e299bd1adaa099d3aae884f" category="doc">コントローラー交換の要件 - AFX 2K</block>
   <block id="a3ec385c2147224f642fb131801a40fd" category="paragraph">AFX 2Kストレージシステムのコントローラーを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正しく機能していることを確認すること、正しい交換用コントローラーを使用していることを確認すること、およびコントローラーのコンソール出力をテキストログファイルに保存することが含まれます。</block>
   <block id="529ca8721a927b16e30574449622b413" category="paragraph">AFX 2Kコントローラーを交換するための要件を確認した後、<block ref="8e2bedbe0502a7014e560cda99cd14d0" category="inline-link-macro-rx"></block>。</block>
-  <block id="8d1c7ddaafa8c8a7745df487e02b16a8" category="summary">論理インターフェースがホームポートにレポートしていることを確認し、クラスタの健全性チェックを実行してから、障害が発生した部品を NetApp に返却して、afx 2k コントローラー交換手順の最終ステップを完了します。</block>
-  <block id="1a5638aad581532c355b25c7fab88dd1" category="doc">コントローラーの完全交換 - AFX 2K</block>
   <block id="c74919ac1cf8befa5b3d4e0140e2f53d" category="paragraph">論理インターフェイス（LIF）がホームポートにレポートしていることを確認し、クラスタの健全性チェックを実行してから、障害が発生した部品を NetApp に返却して、AFX 2K コントローラー交換手順の最終ステップを完了します。</block>
-  <block id="3d847e98ec2f041217e5a4b4b4c5c6f6" category="summary">お使いの AFX 2K ストレージシステムのコントローラーに不具合が生じた場合は、コントローラーをシャットダウンしてください。メンテナンスや部品交換を行う前に、データ損失を防ぎ、システムの安定性を確保するために、コントローラーを安全にシャットダウンすることが非常に重要です。</block>
-  <block id="6c6c11c1dcf06a060fe052443c9b2260" category="doc">障害のあるコントローラーをシャットダウンする - AFX 2K</block>
   <block id="9188bc0bec40b9527dc8f57405753ee0" category="paragraph">データ損失を防ぎ、コントローラー交換時のシステム安定性を確保するため、AFX 2K ストレージシステム内の障害のあるコントローラーをシャットダウンしてください。</block>
-  <block id="b08c8863502f72da3fd581302686a342" category="summary">コントローラーのHA構成がafx 2kストレージ システムでアクティブかつ正しく機能していることを確認し、システムのアダプタがディスクへのすべてのパスを一覧表示していることを確認してください。</block>
-  <block id="bce3dd09e8330d332cb5912ea39ab800" category="doc">システム構成の復元と検証 - AFX 2K</block>
   <block id="85d06de7cf5f37631d681fe7e72c5ca4" category="paragraph">AFX 2Kストレージ システムにおいて、コントローラのHA構成が有効かつ正しく機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認してください。</block>
   <block id="3855e1fdaf92f61d59ffd35c040186b8" category="paragraph">AFX 2Kストレージシステムの構成を復元および検証した後、<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>。</block>
-  <block id="9ca87651c273633e10245db8e8fea9f5" category="summary">AFX 2Kストレージシステムのコントローラーの交換を開始するには、まず障害のあるコントローラーをシャットダウンし、コントローラーを取り外して交換し、システム設定を再構成し、システムの動作を確認します。</block>
-  <block id="5023a06f40721fa8e50780b5148e4ea1" category="doc">コントローラー交換ワークフロー - AFX 2K</block>
   <block id="5b8b05b20932dd01e5f9e97a0b5065ae" category="paragraph">AFX 2Kストレージ システムのコントローラー交換を開始するには、まず故障したコントローラーをシャットダウンし、コントローラーを取り外して交換し、システム構成を復元し、システムの動作を確認します。</block>
-  <block id="99c97b601c7421b57272daa86dbf8b23" category="summary">修正可能なメモリエラーまたは修正不可能なメモリエラーが過剰に検出された場合は、afx 2kストレージシステムのDIMMを交換してください。このようなエラーが発生すると、ストレージシステムが ONTAP を起動できなくなる可能性があります。交換プロセスには、障害のあるコントローラをシャットダウンし、取り外し、DIMMを交換し、コントローラを再取り付けし、故障した部品を NetApp に返却する手順が含まれます。</block>
-  <block id="3bdcaf1603b8e82edefeb8b285d86bbc" category="doc">DIMMの交換 - AFX 2K</block>
   <block id="6dd6eda6c74f7ba8b9bd081607f4aecd" category="paragraph">修正可能なメモリエラーまたは修正不可能なメモリエラーが過剰に検出された場合は、AFX 2KストレージシステムのDIMMを交換してください。このようなエラーが発生すると、ストレージシステムがONTAPを起動できなくなる可能性があります。交換プロセスには、障害のあるコントローラをシャットダウンし、取り外し、DIMMを交換し、コントローラを再取り付けし、故障した部品をNetAppに返却する手順が含まれます。</block>
-  <block id="838e989c8093a7e90636389afa993183" category="summary">適切な冷却を維持し、システム性能の問題を防止するために、afx 2kシステムの故障または不具合のあるファンモジュールを交換してください。ファンはホットスワップ対応で、システムを停止することなく交換できます。</block>
-  <block id="93af2d5c5da4ba62fcf3e889139979f8" category="doc">ファンを交換する - AFX 2K</block>
   <block id="cb1f064b836e4b8c180543dacce71319" category="paragraph">AFX 2Kシステムのファンモジュールに不具合や故障がある場合は交換して、適切な冷却を維持し、システム性能の問題を防止してください。ファンはホットスワップ対応であり、システムを停止することなく交換できます。この手順には、コンソールのエラー メッセージと LED インジケーターを使用して故障したファンを特定し、ベゼルを取り外し、ファンモジュールを交換し、故障した部品を NetApp に返送することが含まれます。</block>
-  <block id="887217312340d4bd19fcdac132019576" category="summary">afx 2kストレージシステムにI/Oモジュールを追加することで、ネットワーク接続性を強化し、システムのデータトラフィック処理能力を拡張できます。</block>
-  <block id="9148cd0d2edc5ced8eb0a4dc9175dd6b" category="doc">I/Oモジュールを追加 - AFX 2K</block>
   <block id="ce6d38b71c3fb3c7fb2ed59d66f0506e" category="paragraph">AFX 2KストレージシステムにI/Oモジュールを追加することで、ネットワーク接続性を強化し、システムのデータトラフィック処理能力を拡張できます。</block>
   <block id="4fdb5fecd36bff72c28077c8ef1fdd69" category="paragraph">AFX 2Kストレージシステムには、空きスロットがある場合、またはすべてのスロットが埋まっている場合に、I/Oモジュールを追加できます。</block>
-  <block id="22b48166a83fe9cb39be3e37e219b528" category="summary">モジュールに障害が発生し、ストレージ システムがすべての ONTAP バージョン要件を満たしている場合は、afx 2k ストレージ システムのイーサネット I/O モジュールをホット スワップできます。</block>
-  <block id="3c08a7ab62bcec00e7adabd9ebfa32fb" category="doc">I/OモジュールのホットスワップAFX 2K</block>
   <block id="69f81f2052320136f3837bb5dc90b742" category="paragraph">モジュールに障害が発生し、ストレージ システムがすべてのONTAPバージョン要件を満たしている場合は、AFX 2K ストレージ システム内の Ethernet I/O モジュールをホット スワップできます。</block>
-  <block id="a28f0e1852a67eef8c7002ec42407437" category="summary">afx 2kストレージシステムは、I/Oモジュールの拡張や交換を柔軟に行うことができ、ネットワーク接続性とパフォーマンスを向上させます。ネットワーク機能をアップグレードする場合や、故障したモジュールに対処する場合は、I/Oモジュールの追加または交換が不可欠です。</block>
-  <block id="090e0f185fc019584bd34692f1181c1b" category="doc">I/Oモジュールの追加と交換の概要 - AFX 2K</block>
   <block id="2a86a987b9aaad96420c91330dbf1d59" category="paragraph">AFX 2Kストレージシステムは、I/Oモジュールの拡張や交換を柔軟に行えるため、ネットワーク接続性とパフォーマンスを向上させることができます。ネットワーク機能をアップグレードする場合や、故障したモジュールに対処する場合は、I/Oモジュールの追加または交換が不可欠です。</block>
   <block id="e79912bea1cf19564789abe796691f33" category="paragraph">AFX 2K ストレージ システムで故障した I/O モジュールは、同じタイプの I/O モジュール、または異なるタイプの I/O モジュールと交換できます。空きスロットのあるシステムに I/O モジュールを追加することもできます。</block>
   <block id="93c17c81de596806e55e0bcb545b0124" category="paragraph">AFX 2KコントローラのI/Oスロットは、次の図に示すように、1から11までの番号が付けられています。</block>
@@ -14005,11 +13650,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8c7663c7feb0ad581220a65f1966b9b1" category="image-alt">コールアウト番号8</block>
   <block id="3f93d6296d6d3a4e6ccba7c6defe16e0" category="image-alt">コールアウト番号11</block>
   <block id="2bbc0144b4be4eb8e87f365fd41bfd2b" category="cell">（*オプション*）追加の管理接続のための4ポート25GbE SFP28</block>
-  <block id="b4a4627623c6898e3423c3771cab5324" category="summary">afx 2kストレージシステムのI/Oモジュールに不具合が生じた場合、またはより高いパフォーマンスや追加機能に対応するためのアップグレードが必要な場合は、I/Oモジュールを交換してください。交換プロセスには、コントローラのシャットダウン、故障したI/Oモジュールの交換、コントローラの再起動、および故障した部品の NetApp への返却が含まれます。</block>
-  <block id="a44655e5d7603039f1a2569d54108b18" category="doc">I/Oモジュールの交換 - AFX 2K</block>
   <block id="c2bf9157db36930d03521f2fb5063469" category="paragraph">AFX 2KストレージシステムのI/Oモジュールに不具合が生じた場合は、交換してください。交換プロセスには、コントローラのシャットダウン、故障したI/Oモジュールの交換、コントローラの再起動、および故障した部品の NetApp への返却が含まれます。</block>
-  <block id="e80e98fbdd1a8ff85f0ba233e912b977" category="summary">長期的な信頼性と最適なパフォーマンスを確保するため、afx 2kストレージシステムのハードウェアを適切にメンテナンスしてください。故障した部品の交換など、定期的なメンテナンス作業を実施してください。これにより、ダウンタイムやデータ損失を防ぐことができます。</block>
-  <block id="35c425db32753c4c8a6d5f81d2e0b199" category="doc">メンテナンス手順の概要 - AFX 2K</block>
   <block id="8d1a6bb89dd08a5abd5d033d7c40f5c5" category="paragraph">AFX 2Kストレージシステムのハードウェアを適切にメンテナンスすることで、長期的な信頼性と最適なパフォーマンスを確保できます。故障した部品の交換など、定期的なメンテナンス作業を実施してください。これにより、ダウンタイムやデータ損失を防ぐことができます。</block>
   <block id="00f00bf38d2535a80ca3e4d1b8808884" category="paragraph">メンテナンス手順では、AFX 2K ストレージ システムがONTAP環境のストレージ ノードとして既に導入済みであることを前提としています。</block>
   <block id="e8b581fab68956048ad06e30bf595e8f" category="paragraph">AFX 2Kストレージシステムでは、以下のコンポーネントに対してメンテナンス手順を実行できます。</block>
@@ -14017,22 +13658,11 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b764fe9de756f253401af614379e0f69" category="paragraph"><block ref="b764fe9de756f253401af614379e0f69" category="inline-link-macro-rx"></block></block>
   <block id="56ef17b17c8d7c119d3dc5a67d31d1c8" category="paragraph">NVRAM12-EXは、AFX 2Kコントローラ用の2番目のNVRAM（Non-Volatile Random Access Memory）モジュールです。NVRAM12-EXモジュールを使用すると、システムの電源が失われた場合でも、コントローラは転送中のデータを保護して保存できます。</block>
   <block id="a7489340331ce7a0b75196c9756e98c1" category="summary">不揮発性メモリに不具合が生じた場合、またはアップグレードが必要になった場合は、AFX 2KストレージシステムのNVRAM12-EXを交換してください。</block>
-  <block id="78f7a086ea9ce6525c8511fcf07b4c4c" category="doc">NVRAM12-EX - AFX 2K の交換</block>
   <block id="cdeaf4befd645a1418466df1a21922d1" category="paragraph">不揮発性メモリに不具合が生じた場合、またはアップグレードが必要になった場合は、AFX 2KストレージシステムのNVRAM12-EXを交換してください。交換プロセスには、故障したコントローラのシャットダウン、NVRAM12-EXモジュール、NVRAM DIMM、またはNVRAMバッテリーの交換、および故障した部品のNetAppへの返送が含まれます。</block>
-  <block id="fd00f44b87ed9926040c0f7357406795" category="summary">停電時に重要なシステムデータを保護する役割を担っているため、afx 2kストレージシステムのNVバッテリーの充電が低下したり、故障したりした場合は、交換してください。交換プロセスには、故障したコントローラーをシャットダウンし、コントローラーモジュールを取り外し、NVバッテリーを交換し、コントローラーモジュールを再取り付けし、故障した部品を NetApp に返送することが含まれます。</block>
-  <block id="11e2fa2b1a655738e29861e2ca4853d7" category="doc">NVバッテリーを交換する - AFX 2K</block>
   <block id="85e4f998436505a0021e344ba43480ef" category="paragraph">AFX 2KストレージシステムのNVバッテリーは、充電が低下したり故障したりした場合は交換してください。NVバッテリーは、停電時に重要なシステムデータを保護する役割を担っています。交換プロセスには、故障したコントローラーをシャットダウンし、コントローラーモジュールを取り外し、NVバッテリーを交換し、コントローラーモジュールを再取り付けし、故障した部品をNetAppに返送することが含まれます。</block>
-  <block id="a8eab56fbea9ed8a962d4d7c33caa257" category="summary">afx 2k ストレージ システムの NVRAM は、不揮発性メモリに障害が発生した場合やアップグレードが必要な場合に交換してください。</block>
-  <block id="d9eb0be8817cba6416aa39d8b13e726f" category="doc">NVRAM の交換 - AFX 2K</block>
   <block id="7a20acbb25fe20c5f0072b737cd45e25" category="paragraph">AFX 2K ストレージ システムの NVRAM は、不揮発性メモリに不具合が生じた場合、またはアップグレードが必要になった場合に交換してください。交換プロセスには、障害が発生したコントローラーのシャットダウン、NVRAM モジュールまたは NVRAM DIMM の交換、および故障した部品の NetApp への返却が含まれます。</block>
-  <block id="5ce39682ade36bffe68d0cc4d123011f" category="summary">afx 2k ストレージ システムの AC 電源ユニットが故障または不具合を起こした場合は、交換してください。これにより、システムが安定した動作に必要な電力を継続的に供給できるようになります。交換手順は、対象となる PSU の接続を外し、電源ケーブルを抜き、故障した PSU を取り外して交換用の PSU を取り付け、最後に電源に再接続するというものです。</block>
-  <block id="5ff8a93dd5f3d4779eb6968d4ed33fd1" category="doc">電源ユニットの交換 - AFX 2K</block>
   <block id="4afdc9b422bf39e0fd94dee5a0688c44" category="paragraph">AFX 2KストレージシステムのAC電源ユニット（PSU）が故障または不具合を起こした場合は、交換してください。これにより、システムが安定した動作に必要な電力を継続的に供給できるようになります。交換手順は、対象となるPSUの接続を外し、電源ケーブルを抜き、故障したPSUを取り外して交換用のPSUを取り付け、最後に電源に再接続するというものです。</block>
-  <block id="a33028de097a1247ad2cadb61dea9867" category="summary">正確な時刻同期に依存するサービスやアプリケーションが正常に動作し続けるように、afx 2k ストレージ システムのリアルタイム クロック バッテリーを交換してください。</block>
-  <block id="3f6e83d0edc72cc804f8be0755fa3c99" category="doc">リアルタイム クロック バッテリーの交換 - AFX 2K</block>
   <block id="0d8003363fc792dd81c652e8bc618b43" category="paragraph">AFX 2K ストレージ システムのリアルタイム クロック（RTC）バッテリー（一般にコイン型電池として知られています）を交換することで、正確な時刻同期に依存するサービスやアプリケーションが引き続き正常に動作します。</block>
-  <block id="8a3215ed113f872bcf7d0d459fb9afad" category="summary">afx 2kストレージシステムのシステム管理モジュールに不具合が生じた場合、またはファームウェアが破損した場合は、交換してください。交換プロセスには、コントローラのシャットダウン、故障したシステム管理モジュールの交換、コントローラの再起動、ライセンスキーの更新、および故障した部品の NetApp への返却が含まれます。</block>
-  <block id="5ed066357f2fda24aaedd57515d1c183" category="doc">システム管理モジュールの交換 - AFX 2K</block>
   <block id="87ed545ce36193cc1fbea29e4208a193" category="paragraph">AFX 2Kストレージシステムのシステム管理モジュールに不具合が生じた場合、またはファームウェアが破損した場合は、交換してください。交換プロセスには、コントローラのシャットダウン、故障したシステム管理モジュールの交換、コントローラの再起動、ライセンスキーの更新、および故障した部品の NetApp への返却が含まれます。</block>
   <block id="cc124a47556540a9a228bf590b7e3b65" category="list-text"><block ref="cc124a47556540a9a228bf590b7e3b65" category="inline-link-macro-rx"></block></block>
   <block id="23b43ede4557b73e6fa354124a73ba91" category="inline-link-macro">AFX 2K</block>
@@ -15325,4 +14955,384 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="eed247526d3b5a21dcd309c25fcd544f" category="doc">ASA C800システムのリアルタイムクロックバッテリーを交換する</block>
   <block id="ba83c27273d46889b5db5daf595c128f" category="sidebar">ONTAP FASストレージシステムは、シンプルでスマート、かつ信頼性の高いストレージインフラストラクチャの構築を支援します。</block>
   <block id="c469f933d9fbda03a3a26eb133129204" category="sidebar">ONTAP FAS システム</block>
+  <block id="cd6363593387674e716c7e91758ec299" category="paragraph">故障したI/Oモジュールを、同等のI/Oモジュールとホットスワップしてください。</block>
+  <block id="30495b50a7a71720eb37bebf526eeca1" category="paragraph">I/O処理中でも、ドライブを中断することなくホットスワップできます。</block>
+  <block id="c13503339f576deffa98e2e97b2ba635" category="paragraph">故障したI/Oモジュールを同等のI/Oモジュールとホットスワップします。</block>
+  <block id="fdfcb0416c380366cc33012d26531cf5" category="doc">AFX 1Kストレージシステムをインストールしてセットアップする</block>
+  <block id="41923e84b49f3d8387670d0734a8d40e" category="doc">自動ブートリカバリプロセスの完了後、障害が発生したAFX 1KブートメディアをNetAppに返送してください</block>
+  <block id="ad489219e2b9f1317c9c042803254bbc" category="doc">自動ブートリカバリプロセスを使用して、AFX 1Kストレージシステムでリカバリイメージを起動します。</block>
+  <block id="c1a9f8764c889f4f77d8e156c8e0ec75" category="doc">AFX 1Kストレージシステムにおける自動ブートメディアリカバリの要件を確認する</block>
+  <block id="ad5ef5852ccf4218bd5a6dc2ccd0e20d" category="doc">自動ブートリカバリプロセスを使用したAFX 1Kブートメディア交換ワークフロー</block>
+  <block id="239130114960250c16acc80a48416762" category="doc">自動ブートリカバリプロセスを使用して、AFX 1Kストレージシステムのブートメディアを交換します。</block>
+  <block id="473fa6165cff26d76fbf4ab676912c29" category="doc">自動ブートリカバリプロセス中に、AFX 1Kストレージシステムのコントローラーをシャットダウンします。</block>
+  <block id="8fe590f31364a1c20986c428e92a5489" category="doc">AFX 1Kストレージシステムのシャーシ交換を完了します。</block>
+  <block id="ac582d1de87ed05d1d5e5dfa4b85be3e" category="doc">AFX 1Kストレージシステムのシャーシを交換する</block>
+  <block id="6a759871c8e9ba8e2b3c46c28772c746" category="doc">AFX 1Kシャーシの交換準備</block>
+  <block id="c26c993090d5fa5489c29e936e062e4f" category="doc">AFX 1Kシャーシを交換する前に、要件を確認してください</block>
+  <block id="d8a7906ca517602f81a54fced135e3a9" category="doc">シャーシを交換するために AFX 1K コントローラーをシャットダウンします。</block>
+  <block id="6176e32b56982996ece704a2491ef210" category="doc">AFX 1Kシャーシ交換ワークフロー</block>
+  <block id="6717dfc3cfe873f2597188dd84a52afc" category="doc">AFX 1Kストレージシステムのコントローラーを交換する</block>
+  <block id="707ecdbb24ac8140d07fa396666e5696" category="doc">AFX 1Kストレージシステムのコントローラーを返却して、通常の動作を再開してください。</block>
+  <block id="2bfd5379f1b9c30c8f01fa7c9da02e1c" category="doc">AFX 1Kストレージシステムのコントローラーを交換する前に、要件を確認してください。</block>
+  <block id="390c042be22085073169e17b2142671f" category="doc">AFX 1Kストレージシステムのコントローラー交換を完了する</block>
+  <block id="347286c143044d43f122cc20b43da848" category="doc">交換前に、AFX 1Kストレージシステムの障害のあるコントローラをシャットダウンします。</block>
+  <block id="48e952d51b313b41c2acf2607a5b8104" category="doc">AFX 1Kストレージシステムでコントローラー構成を復元および検証する</block>
+  <block id="6fcf7a024e40c7a91b5681419c5381ce" category="doc">AFX 1Kコントローラー交換ワークフロー</block>
+  <block id="8850e6437351b9523eedf49df6a36560" category="doc">AFX 1K ストレージシステムの DIMM を交換してメモリエラーを修正する</block>
+  <block id="ae39880e4f8e0f4835b3dd9d014c8db5" category="doc">AFX 1Kストレージシステムでファンをホットスワップする</block>
+  <block id="ea87d09fc89b4c396c98600e178cb567" category="doc">AFX 1KストレージシステムにI/Oモジュールを追加して、ネットワーク接続を強化します。</block>
+  <block id="7c445851bae37c0b302ff30a1f750b09" category="doc">AFX 1KストレージシステムでI/Oモジュールをホットスワップする</block>
+  <block id="9f20d19f6b0d325fbe1b2dc560686687" category="doc">AFX 1KストレージシステムにおけるI/Oモジュールの追加と交換について説明します。</block>
+  <block id="92280cf51e319ec235758ddabeec0389" category="doc">AFX 1KストレージシステムのI/Oモジュールを交換する</block>
+  <block id="f7a19403276de4c50fdbe6af4f9259c6" category="doc">AFX 1Kストレージシステムのメンテナンスについて</block>
+  <block id="00b980de93ea75d19b52607599fbab0d" category="doc">AFX 1KストレージシステムのNVバッテリーを交換する</block>
+  <block id="0ed162478cf95f0295aef616f15b0f94" category="doc">AFX 1K ストレージシステムの NVRAM を交換する</block>
+  <block id="d659fd187225a30a39d63a58af85d271" category="doc">AFX 1Kストレージシステムで電源ユニットをホットスワップする</block>
+  <block id="ea1590656a8834d45be1fda231b4174f" category="doc">AFX 1K ストレージシステムのリアルタイムクロックバッテリーを交換する</block>
+  <block id="e9600fb162388cb1f80afa372ef05477" category="doc">AFX 1Kストレージシステムのシステム管理モジュールを交換する</block>
+  <block id="58e7b74f86fce8a4e8d1bd943b6d70eb" category="doc">AFX 2Kストレージシステムをインストールしてセットアップする</block>
+  <block id="9dd416fe76b583e3c7c99913e99a7283" category="summary">AFX 2Kストレージシステムのコンポーネントが故障した場合は、故障した部品を NetApp に返送してください。</block>
+  <block id="53d04aeee92fe7649de11b2146e11047" category="doc">自動ブートリカバリプロセスの完了後、障害が発生したAFX 2KブートメディアをNetAppに返送してください</block>
+  <block id="4ea7922e1f13c28fefd9b9a9c305a950" category="doc">自動ブートリカバリプロセスを使用して、AFX 2Kストレージシステムでリカバリイメージを起動します。</block>
+  <block id="953d87bef656b16786a342bece7b07c6" category="summary">AFX 2Kストレージシステムのブートメディアを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、正しい交換用ブートメディアを使用しているかの確認、コントローラに欠陥のあるクラスタポートがないかの確認、およびOnboard Key ManagerまたはExternal Key Managerが有効になっているかどうかの確認が含まれます。</block>
+  <block id="1002408336febf21a2e165d3e6f9d7ff" category="doc">AFX 2Kストレージシステムにおける自動ブートメディアリカバリの要件を確認する</block>
+  <block id="60236986a9a2817be7ff296fe127156c" category="doc">自動ブートリカバリプロセスを使用したAFX 2Kブートメディア交換ワークフロー</block>
+  <block id="507a1503bc2c0e622c8d2ce41cbd14ee" category="doc">自動ブートリカバリプロセスを使用して、AFX 2Kストレージシステムのブートメディアを交換します。</block>
+  <block id="2375c4be3a94a1e2cac0b225cb6a43b6" category="doc">自動ブートリカバリプロセス中に、AFX 2Kストレージシステムのコントローラーをシャットダウンします。</block>
+  <block id="47c8b61361d241ce777eac0c2409f125" category="doc">AFX 2Kストレージシステムのシャーシ交換を完了します。</block>
+  <block id="e6a488e8502ed863ca0984789bbd8699" category="summary">AFX 2K ストレージシステムのシャーシは、ハードウェア障害が発生した場合に交換が必要となります。交換手順では、シャーシ前面からコントローラを取り外し、電源ユニット、NVRAM12、I/Oモジュールとブランク、およびシステム管理モジュールを取り外してから、交換用シャーシを取り付け、シャーシコンポーネントを再取り付けします。</block>
+  <block id="174bf645c3d3c8c2867307e1f78b5990" category="doc">AFX 2Kストレージシステムのシャーシを交換する</block>
+  <block id="4d57efbf6ff6ec505a254e4528933402" category="summary">AFX 2Kストレージシステムの故障したシャーシを交換する準備として、故障したシャーシを特定し、交換用コンポーネントを確認し、ケーブルとコントローラモジュールにラベルを付けてください。</block>
+  <block id="cd0802f6c5c2a863870048ffa02c10ae" category="doc">AFX 2Kシャーシの交換準備</block>
+  <block id="7232524db379c21a307b47aa44a09ca4" category="doc">AFX 2Kシャーシを交換する前に要件を確認してください</block>
+  <block id="12e519b77c57b8f1f8fd655a6cf6b6ff" category="doc">シャーシを交換するには、AFX 2K コントローラーをシャットダウンしてください。</block>
+  <block id="292aa2df970b986506f5475afc11c9f7" category="doc">AFX 2Kシャーシ交換ワークフロー</block>
+  <block id="82fc0eea7e9783a83658aed062e7f4a2" category="doc">AFX 2Kストレージシステムのコントローラーを交換する</block>
+  <block id="413b03e189faf1837f2dfa717977fbe0" category="summary">ストレージリソースの制御を交換用コントローラに戻すことで、AFX 2Kストレージシステムが正常に動作を再開できるようになります。</block>
+  <block id="00d9deb75c7e8e1a94bb854f368f7661" category="doc">コントローラーをAFX 2Kストレージシステムに戻して、通常の動作を再開してください。</block>
+  <block id="6d53da82425f44f0954ccae73d7ec89a" category="summary">AFX 2Kストレージシステムのコントローラーを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、適切な交換用コントローラー、システム構成のバックアップ、および必要なツールとファームウェアへのアクセスが含まれます。</block>
+  <block id="5f2e46cfd18f39f2b112795b0dbaaeb0" category="doc">AFX 2Kストレージシステムのコントローラーを交換する前に、要件を確認してください。</block>
+  <block id="4a7daf85a474830be61e07972db79d24" category="summary">論理インターフェースがホームポートにレポートしていることを確認し、クラスタの健全性チェックを実行してから、障害が発生した部品をNetAppに返却して、AFX 2Kコントローラー交換手順の最終ステップを完了します。</block>
+  <block id="930414f8f0d02a50950fef37bcc8f7b8" category="doc">AFX 2Kストレージシステムのコントローラー交換を完了する</block>
+  <block id="35609ae06160f47ff564d2dc60f28ea0" category="summary">AFX 2Kストレージシステムのコントローラーに不具合が生じた場合は、コントローラーの電源を切ってください。メンテナンスや部品交換を行う前に、データ損失を防ぎ、システムの安定性を確保するために、コントローラーを安全にシャットダウンすることが非常に重要です。</block>
+  <block id="7db6668a0401d7e5d897fd444b4ffc50" category="doc">交換する前に、AFX 2Kストレージシステムの故障したコントローラーをシャットダウンしてください。</block>
+  <block id="6cd63d5f9f196b9eb1b5898689961306" category="doc">AFX 2Kストレージシステムでコントローラー構成を復元および検証する</block>
+  <block id="fe848609a155f7dd1abb65bb14adf50a" category="summary">AFX 2Kストレージシステムのコントローラーの交換を開始するには、まず障害のあるコントローラーをシャットダウンし、コントローラーを取り外して交換し、システム設定を再構成し、システムの動作を確認します。</block>
+  <block id="ceb34cf3c1594495f284c17b375df916" category="doc">AFX 2Kコントローラー交換ワークフロー</block>
+  <block id="6e7f964b767eb75f653eadfbd32f6eb1" category="doc">AFX 2K ストレージシステムの DIMM を交換してメモリエラーを修正する</block>
+  <block id="707b1f50e0ca8aa033bddfc3cabba83d" category="summary">AFX 2Kシステムのファンモジュールに不具合や故障がある場合は交換して、適切な冷却を維持し、システム性能の問題を防止してください。ファンはホットスワップ対応であり、システムを停止することなく交換できます。</block>
+  <block id="e139f37eab475af9035ce233e94f4141" category="doc">AFX 2Kストレージシステムでファンをホットスワップする</block>
+  <block id="496ef2d330f8a4a8769de2ad0c23d6c8" category="doc">AFX 2KストレージシステムにI/Oモジュールを追加して、ネットワーク接続を強化します。</block>
+  <block id="6836541a2fab57171ccdca4f5ea6f48d" category="doc">AFX 2KストレージシステムでI/Oモジュールをホットスワップする</block>
+  <block id="c534c22a7c6f70fed4d00238adf3557b" category="doc">AFX 2KストレージシステムにおけるI/Oモジュールの追加と交換について説明します。</block>
+  <block id="0ad8d8ae7ed314dd1184838325dd4cc1" category="summary">AFX 2KストレージシステムのI/Oモジュールに不具合が生じた場合、またはより高いパフォーマンスや追加機能に対応するためのアップグレードが必要な場合は、I/Oモジュールを交換してください。交換プロセスには、コントローラのシャットダウン、故障したI/Oモジュールの交換、コントローラの再起動、および故障した部品の NetApp への返却が含まれます。</block>
+  <block id="733707eb608d0b68c203a3870dd23334" category="doc">AFX 2KストレージシステムのI/Oモジュールを交換する</block>
+  <block id="34f456f6aa025364b0eecb608877c263" category="doc">AFX 2Kストレージシステムのメンテナンスについて</block>
+  <block id="5f15545efc95cfdbd5e5da07b125ea3d" category="doc">AFX 2KストレージシステムのNVRAM12-EXを交換する</block>
+  <block id="9480a1849e754879e45ff6f67ec95485" category="doc">AFX 2K ストレージシステムの NV バッテリーを交換する</block>
+  <block id="5cd6d8d96dbcfbdba89053f1453b3c90" category="summary">AFX 2K ストレージ システムの NVRAM は、不揮発性メモリに不具合が生じた場合、またはアップグレードが必要になった場合に交換してください。</block>
+  <block id="377d84073c320173433efb6be76c7cd6" category="doc">AFX 2K ストレージシステムの NVRAM を交換する</block>
+  <block id="2d5d2e9f869b797f1791978aa3583233" category="summary">AFX 2KストレージシステムのAC電源ユニットが故障または不具合を起こした場合は、交換してください。これにより、システムが安定した動作に必要な電力を継続的に供給できるようになります。交換手順は、対象となるPSUの接続を外し、電源ケーブルを抜き、故障したPSUを取り外して交換用のPSUを取り付け、最後に電源に再接続するというものです。</block>
+  <block id="12dd5f5499c86c6b8f7252748f4ea656" category="doc">AFX 2Kストレージシステムで電源ユニットをホットスワップする</block>
+  <block id="1eeec8acc2203e520c62eb6b0bf6b7e9" category="summary">AFX 2Kストレージシステムのリアルタイムクロックバッテリーを交換して、正確な時刻同期に依存するサービスやアプリケーションの動作を維持します。</block>
+  <block id="10bb796fbabdfdae8c196c62b5122629" category="doc">AFX 2K ストレージシステムのリアルタイムクロックバッテリーを交換する</block>
+  <block id="11fa12f50f75ec993d6c3b69914dede6" category="doc">AFX 2Kストレージシステムのシステム管理モジュールを交換する</block>
+  <block id="4bdf1cc9de95194a01758f0c181c21cc" category="doc">障害が発生した ASA A70 または ASA A90 のブートメディアを、自動ブートリカバリプロセスの完了後に NetApp に返却する</block>
+  <block id="48cb3b784539382cea4f7b1186b0e712" category="doc">自動ブートリカバリプロセスを使用して、ASA A70またはASA A90システムのブートイメージを復元する</block>
+  <block id="8fe66f19ffbb0e9994965726db0bf7c5" category="doc">ASA A70またはASA A90システムのブートメディアを自動ブートリカバリプロセスを使用して交換する</block>
+  <block id="d41a375815404d45cbc55f47a14923d0" category="doc">ASA A70またはASA A90システムにおける自動ブートメディアリカバリの要件を確認する</block>
+  <block id="121d0f0f2fdd59bbdcd82906e25e26ba" category="doc">ASA A70またはASA A90のブートメディア交換ワークフロー（自動ブートリカバリプロセスを使用）</block>
+  <block id="124afa43d94c85607c6f8e08883f78a8" category="doc">自動ブートリカバリプロセス中に ASA A70 または ASA A90 システムのコントローラをシャットダウンする</block>
+  <block id="c18e1ee5771be0fd089183d9941a599e" category="doc">ASA A70またはASA A90システムのシャーシの交換を完了する</block>
+  <block id="6f506d3acb0b4b6ded290cadb78d3254" category="doc">ASA A70またはASA A90システムのシャーシを交換する</block>
+  <block id="85bdc053984be9fbf519fea7e29e8b10" category="doc">ASA A70またはASA A90シャーシの交換準備</block>
+  <block id="868df7028ad5c990807f78de9af3ec6e" category="doc">ASA A70またはASA A90シャーシを交換する前に要件を確認してください</block>
+  <block id="3fa2c05a5f578f765079ca8176e05021" category="doc">シャーシを交換するためにASA A70またはASA A90コントローラをシャットダウンする</block>
+  <block id="0ec08fbdc6d4cabb2fdb421e421bb32e" category="doc">ASA A70またはASA A90シャーシ交換ワークフロー</block>
+  <block id="c4d14f3f9d5fb3f575d17a7ff3a67a66" category="doc">ASA A70またはASA A90システムのコントローラーを交換する</block>
+  <block id="00deb6244c8ac287fdc0287f7988009e" category="doc">ASA A70またはASA A90システムのコントローラーを返却して通常運用を再開する</block>
+  <block id="21c8845a6f50c3e360db710ce3116e45" category="doc">ASA A70またはASA A90システムのコントローラーを交換する前に要件を確認してください</block>
+  <block id="53d0309bd01aa71958cbd5bd9fe6898c" category="doc">ASA A70またはASA A90システムのコントローラーの交換を完了する</block>
+  <block id="7d73fcb184588de14f5d3ee4f5d4d427" category="doc">ASA A70またはASA A90システムの非MetroCluster構成において、障害のあるコントローラーをシャットダウンする</block>
+  <block id="cb63f6a5f08f419b308d3b1722b0cde7" category="doc">ASA A70またはASA A90システムで交換前に障害のあるコントローラーをシャットダウンする</block>
+  <block id="035c6ac21354f4b7b015b1ac84063fd7" category="doc">ASA A70またはASA A90システムのコントローラー構成を復元して検証する</block>
+  <block id="b8b90404f7a59c524292d5ad65c34140" category="doc">ASA A70またはASA A90コントローラーの交換ワークフロー</block>
+  <block id="70d98cfff490d247f71d6416e1777f74" category="doc">ASA A70またはASA A90システムのDIMMを交換する</block>
+  <block id="b2b02e6d729958b096c4c9ec0452e0ce" category="doc">ASA A70またはASA A90システムのSSDを交換する</block>
+  <block id="87361d62b85d3267cfdd583c9905f86f" category="doc">ASA A70またはASA A90システムのファンモジュールを交換する</block>
+  <block id="c53e54205057c2c3476b65ddb5baf9b3" category="doc">I/OモジュールをASA A70またはASA A90システムに追加してネットワーク接続性を強化する</block>
+  <block id="38722cb8032ac5faa845732f2a89c881" category="doc">ASA A70またはASA A90システムをシャットダウンせずにI/Oモジュールをホットスワップ対応する</block>
+  <block id="319063ec300453f31f4aa83e6ff3ea91" category="doc">ASA A70またはASA A90システムへのI/Oモジュールの追加と交換について</block>
+  <block id="d313b44232b60d876ea37fe1be92336f" category="doc">ASA A70またはASA A90システムのI/Oモジュールを交換する</block>
+  <block id="6998f0dcfe0f54357850267fa534af01" category="doc">ASA A70またはASA A90ストレージシステムのメンテナンスについて</block>
+  <block id="504fe8230c6a05052300491b202b46c3" category="doc">ASA A70またはASA A90システムのNVバッテリーを交換する</block>
+  <block id="f02c03abc37066fc070be052c5532a24" category="doc">ASA A70またはASA A90システムのNVRAMを交換する</block>
+  <block id="390d91a7643cc4302c248a40737e2d0d" category="doc">ASA A70またはASA A90システムの電源ユニットをホットスワップ対応で交換する</block>
+  <block id="b4f7b19e02a2834fd00ee00ee69c57a5" category="doc">ASA A70またはASA A90システムのリアルタイムクロックバッテリーを交換する</block>
+  <block id="ac33635b46bcbe0075e06ee8a864ab92" category="doc">ASA A70またはASA A90システムのシステム管理モジュールを交換する</block>
+  <block id="d2eb2dd485a3be3e407c0c4feeb92e29" category="doc">障害が発生した ASA A1K ブートメディアを自動ブートリカバリプロセス後に NetApp に返却する</block>
+  <block id="6938ad5b78643fdd42accce53574bb94" category="doc">自動ブートリカバリプロセスを使用して、ASA A1Kシステムのブートイメージを復元します</block>
+  <block id="683dcd83d4d4ba71628424c9c55d021e" category="doc">自動ブートリカバリプロセスを使用して ASA A1K システムのブートメディアを交換する</block>
+  <block id="45c9d6ea3adaa4b576ba831d41915ecc" category="doc">ASA A1Kシステムの自動ブートメディアリカバリの要件を確認してください</block>
+  <block id="17cc2a9693d7979dd69e6f7ec7f80276" category="doc">ASA A1K 自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー</block>
+  <block id="2efc85e76c2481af7aef301b809aca30" category="doc">自動ブートリカバリプロセス中に ASA A1K システムのコントローラをシャットダウンする</block>
+  <block id="ccde29fa565a3bf17bbc64706687eff7" category="doc">ASA A1Kシステムのシャーシの交換を完了します</block>
+  <block id="6f6f01b28efca1f0c6199df70c4d151b" category="doc">ASA A1Kシステムのシャーシを交換する</block>
+  <block id="c9a6b9b424ea018084792cdef60d0c50" category="doc">ASA A1Kシャーシの交換準備</block>
+  <block id="3f279ae29596fe52d7eff49dedbd10a8" category="doc">ASA A1Kシャーシを交換する前に要件を確認してください</block>
+  <block id="02c6c85636b6e251a1a59663c1012ec3" category="doc">シャーシを交換するためにASA A1Kコントローラをシャットダウンする</block>
+  <block id="17d4a2cec57624d3cb2208d577c5d396" category="doc">ASA A1Kシャーシ交換ワークフロー</block>
+  <block id="20820a05a503456257151ac2625b4c5f" category="doc">ASA A1Kシステムのコントローラーを交換する</block>
+  <block id="6e87cb726e18af7a30cf6021e5762927" category="doc">ASA A1K システムのコントローラーを返却して通常運用を再開する</block>
+  <block id="e13f528e2d804f30e38249aead0a2036" category="doc">ASA A1Kシステムのコントローラーを交換する前に要件を確認してください</block>
+  <block id="1469781f042e1c45e0baf9eb75d86216" category="doc">ASA A1Kシステムのコントローラーの交換を完了します</block>
+  <block id="ea9d039dffb8ac5f2b3581c6469ca2c6" category="doc">ASA A1Kシステムの交換前に障害のあるコントローラーをシャットダウンする</block>
+  <block id="cf40b1172e6b25fd438b9cd7ffeb527c" category="doc">ASA A1Kシステムのコントローラー構成を復元して検証する</block>
+  <block id="024858a08186ba9eeb5244c1cbbec349" category="doc">ASA A1Kコントローラー交換ワークフロー</block>
+  <block id="8df9d5a233c9b17a6e035b9fda4ddef7" category="doc">ASA A1K システムの DIMM を交換する</block>
+  <block id="2cf7bf8a5252ab40199c139416506958" category="doc">ASA A1Kシステムのファンを交換する</block>
+  <block id="66ea9ab73e2ecf6ba0dc8529be460c8d" category="doc">I/OモジュールをASA A1Kシステムに追加してネットワーク接続性を強化する</block>
+  <block id="e7b3ca71be4ab83c42565d4355fea06f" category="doc">ASA A1K システムをシャットダウンせずに I/O モジュールをホットスワップする</block>
+  <block id="87d126727e88955f183191d49c8f14c6" category="doc">ASA A1K システムへの I/O モジュールの追加と交換について説明します</block>
+  <block id="d6c7d3455b744e99cec68f210be70e40" category="doc">ASA A1KシステムのI/Oモジュールを交換する</block>
+  <block id="b2b45c01b75747de98bb3c1d3de2b73f" category="doc">ASA A1Kストレージシステムのメンテナンスについて学ぶ</block>
+  <block id="c9f71f68832d76305f1fdf5cb4d019d4" category="doc">ASA A1K システムの NV バッテリーを交換する</block>
+  <block id="f03b6feef856caaf139dcd26bee97d70" category="doc">ASA A1KシステムのNVRAMを交換する</block>
+  <block id="5081f25d542dca1c8dbc5c585452c32d" category="doc">ASA A1Kシステムの電源ユニットをホットスワップ対応で交換する</block>
+  <block id="ea7a9233282a3a8680e5964e075ce657" category="doc">ASA A1Kシステムのリアルタイムクロックバッテリーを交換する</block>
+  <block id="a9a52a89669ebd57a7bdfd1a6eb3f919" category="doc">ASA A1K システムのシステム管理モジュールを交換する</block>
+  <block id="6b6bcd1bbaa8f63680d0ab2825a4a8c1" category="doc">障害が発生した ASA C30 ブートメディアを自動ブートリカバリプロセス後に NetApp に返却する</block>
+  <block id="d6c4d49783cb017b9320549e8fc5e57d" category="doc">自動ブートリカバリプロセスを使用して、ASA C30システムのブートイメージを復元します</block>
+  <block id="5c2e3234cf764a21807ded7045343cb4" category="doc">自動ブートリカバリプロセスを使用して ASA C30 システムのブートメディアを交換する</block>
+  <block id="0d717d29dd75eea8b312bed518b3d46d" category="doc">ASA C30システムの自動ブートメディアリカバリの要件を確認してください</block>
+  <block id="f4653dd23c37ad2ac0a40975d487448a" category="doc">ASA C30 自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー</block>
+  <block id="4fe9ab45996794bc0730139dfb80f242" category="doc">自動ブートリカバリプロセス中に ASA C30 システムのコントローラをシャットダウンする</block>
+  <block id="a1253910e4cff6a7b7e467f8b165ff57" category="doc">ASA C30システムのシャーシの交換を完了します</block>
+  <block id="acdbc74b06c9dfbce4161d46af6f672a" category="doc">ASA C30システムのシャーシを交換する</block>
+  <block id="3286b459055c54f9a9cdac14ab2f5e29" category="doc">ASA C30シャーシを交換する前に要件を確認してください</block>
+  <block id="2aeb8c5969ac9129fdeb20b656e36857" category="doc">シャーシを交換するためにASA C30コントローラをシャットダウンする</block>
+  <block id="ddf328d0e4939c424de8935d655e5777" category="doc">ASA C30シャーシ交換ワークフロー</block>
+  <block id="5044c39df5b89ea20f27be5364ce5678" category="doc">ASA C30システムのコントローラーを交換する</block>
+  <block id="2f47f0e3503f7308c72a3dcefba2a5e9" category="doc">ASA C30 システムのコントローラーを返却して通常運用を再開する</block>
+  <block id="557c93f7630566def1aaa2da67ba3636" category="doc">ASA C30システムのコントローラーを交換する前に要件を確認してください</block>
+  <block id="1e26d70bfa74a2d4e1800e9328b90ac5" category="doc">ASA C30システムのコントローラーの交換を完了します</block>
+  <block id="ae439f875b131094f8c0d8b95436904d" category="doc">ASA C30システムの交換前に障害のあるコントローラーをシャットダウンする</block>
+  <block id="55405d9381a75608c4449a9d2747a4af" category="doc">ASA C30システムのコントローラー構成を復元して検証する</block>
+  <block id="cd4061a449499a8989e3641b3aa1aa2b" category="doc">ASA C30コントローラー交換ワークフロー</block>
+  <block id="317a0c4a921213fe77abb68930d0a7a8" category="doc">ASA C30 システムの DIMM を交換する</block>
+  <block id="bb67af89085f1ebcc494f186829fea4f" category="doc">ASA C30システムのドライブをホットスワップする</block>
+  <block id="27adce078bb359a5ccd8f27a45e863c6" category="doc">ASA C30システムのファンを交換する</block>
+  <block id="f352c44c678432d36f284c90067e38a0" category="doc">I/OモジュールをASA C30システムに追加してネットワーク接続性を強化する</block>
+  <block id="6d30dd5e2c2aa0c5e7e709a1262d7445" category="doc">ASA C30 システムをシャットダウンせずに I/O モジュールをホットスワップする</block>
+  <block id="a49691c9869c32cf963f5bbe010c1cd1" category="doc">ASA C30 システムへの I/O モジュールの追加と交換について説明します</block>
+  <block id="0f2c3f3e97c2aec69c02f2cda1adb04d" category="doc">ASA C30システムのI/Oモジュールを交換する</block>
+  <block id="123c959a324260c9e0a9ef87078610cc" category="doc">ASA C30ストレージシステムのメンテナンスについて学ぶ</block>
+  <block id="cc42740cef55702da42513df23a84feb" category="doc">ASA C30 システムの NV バッテリーを交換する</block>
+  <block id="a578a3bef21ed60008fc11969be6f737" category="doc">ASA C30システムの電源ユニットをホットスワップする</block>
+  <block id="ba202f9b72d28d5214b36178e37316a2" category="doc">ASA C30システムのリアルタイムクロックバッテリーを交換する</block>
+  <block id="8cde3875f7aa148ab94a3306e3b21929" category="doc">障害が発生した ASA A150 ブートメディアを手動ブートリカバリプロセス後に NetApp に返却する</block>
+  <block id="d1a113411a73750d9ee0fb0a98c10c2d" category="doc">ASA A150システムのブートメディアの暗号化サポートを確認してください</block>
+  <block id="dbd1f10a8a22d7c634ec46c4be767ad7" category="doc">ASA A150システムの手動ブートリカバリプロセス後にブートメディアの暗号化を復元する</block>
+  <block id="1386aca2902afbc9a6f233d9a12bb369" category="doc">手動ブートリカバリプロセスを使用して、ASA A150システムのリカバリイメージを起動します</block>
+  <block id="4d314ef0aa0fb0ca5c9b55fdefdb55b8" category="doc">ASA A150システムにおける手動ブートメディアリカバリの要件を確認する</block>
+  <block id="e4bc17a1eaa5ac6e7a9da25b3dec7f49" category="doc">ASA A150システムのブートメディアを交換する</block>
+  <block id="d2c1f1ca83386dff977b04bf4a1a2873" category="doc">ASA A150システムのブートメディア交換前にコントローラーをシャットダウンする</block>
+  <block id="757fce76ee0b0be11e2a95b2e12ff7ba" category="doc">ASA A150システムのシャーシの交換を完了します</block>
+  <block id="9216cbeccc39764b9ad178a930ab8bc8" category="doc">ASA A150システムのシャーシを交換する</block>
+  <block id="3ca93f96e6c34db37038a1d66f27c806" category="doc">ASA A150シャーシを交換する前に要件を確認してください</block>
+  <block id="b998f688d6d3bea03411454972c33304" category="doc">シャーシを交換するためにASA A150コントローラをシャットダウンする</block>
+  <block id="b7300eb96f69b53db814043ea3f2ad4e" category="doc">ASA A150システムのコントローラーを交換する</block>
+  <block id="b646a7eccde927a90b1aaaeecd77ef60" category="doc">ASA A150システムのコントローラーを交換する前に要件を確認してください</block>
+  <block id="eeff11db61c4f117085198f9306da923" category="summary">ストレージリソースの制御を交換用コントローラに戻すと、ASA A150 システムは通常動作を再開できます。</block>
+  <block id="8552c626bde4c6fd884501cdf4d7f892" category="doc">ASA A150 システムのコントローラーを返却して通常運用を再開する</block>
+  <block id="6732c92bcba9dbac91b02c56875c18c3" category="doc">ASA A150システムのコントローラーの交換を完了します</block>
+  <block id="a222e275b667b33b882d1a0b09dff561" category="doc">ASA A150システムの交換前に障害のあるコントローラーをシャットダウンする</block>
+  <block id="ecdc8e788129eff4202b33f6b0e01ae7" category="doc">ASA A150システムのコントローラー構成を復元して検証する</block>
+  <block id="4776a48f8c16d808fa3ad3f795a9ca74" category="doc">ASA A150 システムの DIMM を交換する</block>
+  <block id="727c0c6e6c174004911274999409b66d" category="doc">ASA A150 システムのドライブを交換する</block>
+  <block id="64a5954c3a755c23c09e471c14c69991" category="summary">ここでは、ASA A150 システムのインストールについて、インストールの準備、ハードウェアの設置、コントローラーのケーブル接続、セットアップの完了を含む詳細な手順を説明します。</block>
+  <block id="21650cf7484d7cd1b5e49a97e13e95b7" category="doc">詳細な手順に従ってASA A150ストレージシステムをインストールする</block>
+  <block id="bb84bfec8aa7d69d2d73d564ea206cf7" category="summary">ここでは、ASA A150システムのインストール手順を図解で説明します。ラックへの設置とケーブル配線から初期システム起動までを網羅しています。</block>
+  <block id="89290f30f4b828562f2351b0607b5704" category="doc">ASA A150ストレージシステムをクイックステップでインストールする</block>
+  <block id="3f0d5affa2676f7f30a5a351e73495a7" category="doc">ASA A150ストレージシステムのインストール方法を選択してください</block>
+  <block id="54c36b233104496047484bfab50496b7" category="paragraph">ASA A150ストレージシステムのインストールに使用する形式を選択してください：詳細なステップバイステップの手順、簡単な図解ガイド、またはビデオによる説明。</block>
+  <block id="047cd3feb71b55132d9ffcec40860cca" category="doc">ASA A150ストレージシステムを動画手順付きでインストールする</block>
+  <block id="538cba55ce84a3b8f81fc47e71c45850" category="doc">ASA A150ストレージシステムのメンテナンスについて学ぶ</block>
+  <block id="48db660050c6133b69e13198ad9aa625" category="doc">ASA A150 システムの NVMEM バッテリーを交換する</block>
+  <block id="791a10ceb8104e8f3e5e3e25dc5bb93b" category="doc">ASA A150システムの電源ユニットをホットスワップ対応で交換する</block>
+  <block id="550e9d2ef8f4d0bb63b7594959c326ef" category="doc">ASA A150システムのリアルタイムクロックバッテリーを交換する</block>
+  <block id="a827a9f3e77517b7c32d46db8923beae" category="doc">障害が発生した ASA A250 ブートメディアを自動ブートリカバリプロセス後に NetApp に返却する</block>
+  <block id="6e06a8b4fe992c762febbffb5c9ba208" category="doc">障害が発生した ASA A250 ブートメディアを手動ブートリカバリプロセス後に NetApp に返却する</block>
+  <block id="bf3643941543eef971936f7173922c8f" category="doc">ASA A250システムのブートメディアの暗号化サポートを確認してください</block>
+  <block id="e9aaa0ab21782cfb71eebecadaacf59f" category="doc">ASA A250システムの手動ブートリカバリプロセス後にブートメディアの暗号化を復元する</block>
+  <block id="6e3752de72fbfcaf32468226d958a4e1" category="doc">自動ブートリカバリプロセスを使用して、ASA A250システムのブートイメージを復元します</block>
+  <block id="2adf53d4894e1b27f04b562e6e3020e2" category="doc">手動ブートリカバリプロセスを使用して、ASA A250システムのリカバリイメージを起動します</block>
+  <block id="814f4095495b65d2f895aa8de25d3751" category="doc">自動ブートリカバリプロセスを使用して ASA A250 システムのブートメディアを交換する</block>
+  <block id="9e9922776b236908c5b9e31bb565a142" category="doc">ASA A250システムの自動ブートメディアリカバリの要件を確認してください</block>
+  <block id="3c824af8f05d1a9d3381fd59aaa7ba76" category="doc">ASA A250システムにおける手動ブートメディアリカバリの要件を確認する</block>
+  <block id="9a21bf0ba8a800d5148de232d26b04ab" category="doc">ASA A250 自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー</block>
+  <block id="5d34c7bed6c538ab9e6412ad284e79d7" category="doc">ASA A250 手動ブートリカバリプロセスを使用したブートメディア交換ワークフロー</block>
+  <block id="eb84ede22d9c9de5e3df7022c6dcb6b6" category="doc">ASA A250システムのブートメディアを交換する</block>
+  <block id="b4d09cf0d8d9dcc8de46e2cc6a259fc6" category="doc">自動ブートリカバリプロセス中に ASA A250 システムのコントローラをシャットダウンする</block>
+  <block id="2102614246e745ba723082dcb4049748" category="doc">ASA A250システムのブートメディア交換前にコントローラーをシャットダウンする</block>
+  <block id="10323a8cb905de750fe52adc40e64c61" category="doc">ASA A250システムのシャーシの交換を完了します</block>
+  <block id="bbc18e3d6f690e29dd6964145263ddab" category="doc">ASA A250システムのシャーシを交換する</block>
+  <block id="b2ed559eeb96414a7009422231c26d91" category="doc">ASA A250シャーシの交換準備</block>
+  <block id="6440bca27ff10c61f3ec1fe52828d78f" category="doc">ASA A250シャーシを交換する前に要件を確認してください</block>
+  <block id="2eb9fd3a407b2f6ee098f5f8b594c7cd" category="doc">シャーシを交換するためにASA A250コントローラをシャットダウンする</block>
+  <block id="1c0443c31139bd20fc4a6fdd61e35589" category="doc">ASA A250シャーシ交換ワークフロー</block>
+  <block id="ec9b50a4206bc74e6baefc3701d6e500" category="doc">ASA A250システムのコントローラーを交換する</block>
+  <block id="dd81700e97ad75e2c3e0162de1dff9ea" category="summary">ストレージリソースの制御を交換用コントローラに戻すと、ASA A250 システムは通常動作を再開できます。</block>
+  <block id="a8ecbf1c672049463ac1e75505ed7262" category="doc">ASA A250 システムのコントローラーを返却して通常運用を再開する</block>
+  <block id="a71bf1bde6022e68d54dfe8b273b86bf" category="doc">ASA A250システムのコントローラーを交換する前に要件を確認してください</block>
+  <block id="f60ec8205789de9187677fb4d1bfffb2" category="doc">ASA A250システムのコントローラーの交換を完了します</block>
+  <block id="d9d337a3c05d4cd05fe032275ad7075d" category="doc">ASA A250システムの交換前に障害のあるコントローラーをシャットダウンする</block>
+  <block id="837e0fa960268d77742959fb69c2fa16" category="doc">ASA A250システムのコントローラー構成を復元して検証する</block>
+  <block id="bbcc6def6ab328b39fc20d7785fb8600" category="doc">ASA A250コントローラー交換ワークフロー</block>
+  <block id="00f0307969ad9c34c448c6d303e976d9" category="doc">ASA A250 システムの DIMM を交換する</block>
+  <block id="9a8aabcbbbf84fd2d84f40956ef34964" category="doc">ASA A250 システムのドライブを交換する</block>
+  <block id="fb28c870b84f142913755b031d6f259f" category="doc">ASA A250システムのファンを交換する</block>
+  <block id="5278e67319c2cae5ca843575e37e7d40" category="doc">詳細な手順に従ってASA A250ストレージシステムをインストールする</block>
+  <block id="7dc72f7eed82bd42a57918e099ad1381" category="doc">ASA A250ストレージシステムをクイックステップでインストールする</block>
+  <block id="8cc7eeb7caef188b51fc04aa1efe5c99" category="doc">ASA A250ストレージシステムのインストール方法を選択してください</block>
+  <block id="cd0a87c7022a5da35dd9a5dcc80e1bbe" category="paragraph">ASA A250ストレージシステムのインストールに使用する形式を選択してください：詳細なステップバイステップの手順、簡単な図解ガイド、またはビデオによる説明。</block>
+  <block id="52ef3df0407b7aa6f96748269d5c5912" category="summary">インストールとセットアップのビデオでは、新しいシステムのインストール方法と配線方法を説明しています。</block>
+  <block id="996622104399aaa524c38420e2778afd" category="doc">ASA A250ストレージシステムを動画手順付きでインストールする</block>
+  <block id="774ad691f5a8732fa00289c6c955f00b" category="doc">ASA A250ストレージシステムのメンテナンスについて学ぶ</block>
+  <block id="9806590293954710dbea040629b240a2" category="doc">ASA A250システムのメザニンカードの交換または取り付け</block>
+  <block id="55b7e7ffa62153b8fcb82cbf15ab46d1" category="doc">ASA A250 システムの NVMEM バッテリーを交換する</block>
+  <block id="7d567b62b449e6f73ddc1a102c8f9892" category="doc">ASA A250システムの電源ユニットをホットスワップ対応で交換する</block>
+  <block id="56a1a3b5146f903f263272499405918d" category="doc">ASA A250システムのリアルタイムクロックバッテリーを交換する</block>
+  <block id="02ee8a45e2cd11ce5dbcc9263bbd7c88" category="doc">ASA A400システムの2ノードMetroCluster構成でアグリゲートをスイッチバックする</block>
+  <block id="05e9601e17096b2bb80a0ddfb31d7ebd" category="doc">障害が発生した ASA A400 ブートメディアを自動ブートリカバリプロセス後に NetApp に返却する</block>
+  <block id="ff8880baf977071e7c26d680268595fe" category="doc">障害が発生した ASA A400 ブートメディアを手動ブートリカバリプロセス後に NetApp に返却する</block>
+  <block id="591ca36c5b081dda103348017e7949ad" category="doc">ASA A400システムのブートメディアの暗号化サポートを確認してください</block>
+  <block id="8e47123b6f8f405772cbaee4e859285c" category="doc">ASA A400システムの手動ブートリカバリプロセス後にブートメディアの暗号化を復元する</block>
+  <block id="17417357455124622f6cdda8440675ba" category="summary">新しいブートメディアデバイスをASA A400システムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。</block>
+  <block id="52d81f907175df2f37d98245f3b9bc9d" category="doc">自動ブートリカバリプロセスを使用して、ASA A400システムのブートイメージを復元します</block>
+  <block id="2d46383588e87cd55df10443f31b4969" category="doc">手動ブートリカバリプロセスを使用して、ASA A400システムのリカバリイメージを起動します</block>
+  <block id="eddbcb38073a80a6ec55ac179c07ec3c" category="doc">自動ブートリカバリプロセスを使用して ASA A400 システムのブートメディアを交換する</block>
+  <block id="027d01f6af43f1f729a28dd913205706" category="doc">ASA A400システムのブートメディアの交換要件を確認する</block>
+  <block id="8552ef7e5db6771e11a61427131032d9" category="doc">ASA A400システムの自動ブートメディアリカバリの要件を確認してください</block>
+  <block id="521b557738d6bd7198c62ddd43679f49" category="doc">ASA A400システムにおける手動ブートメディアリカバリの要件を確認する</block>
+  <block id="77062db38fe0aed90a6cf28c1e683c1b" category="doc">ASA A400 自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー</block>
+  <block id="36b8fe145010292987df65ecd9f5ce3b" category="doc">ASA A400 手動ブートリカバリプロセスを使用したブートメディア交換ワークフロー</block>
+  <block id="f8ac87293a98cf089e42006756202836" category="doc">手動ブートリカバリプロセスを使用して ASA A400 システムのブートメディアを交換する</block>
+  <block id="6e61e4b3cc2a9f558eca57f8cfdb4a44" category="doc">自動ブートリカバリプロセス中に ASA A400 システムのコントローラをシャットダウンする</block>
+  <block id="72763b73aecd60942d1adc2df21df694" category="doc">手動ブートリカバリプロセス中に ASA A400 システムのコントローラをシャットダウンする</block>
+  <block id="a370e969092bd4dfcda63651dc1c8719" category="doc">ASA A400システムのシャーシの交換を完了します</block>
+  <block id="cb5f715dbda63fbba36ae34a6b9422d0" category="doc">ASA A400システムのシャーシを交換する</block>
+  <block id="fd2722cb2dc79bb910992253a1ebeac0" category="doc">ASA A400シャーシを交換する前に要件を確認してください</block>
+  <block id="34827686254afece3551ab5e845733f0" category="doc">シャーシを交換するためにASA A400コントローラをシャットダウンする</block>
+  <block id="39cdc30a9edd3c1069262e2055fad86c" category="doc">ASA A400システムのコントローラーを交換する</block>
+  <block id="16ef1176e5ba2dcc9bfc649b5ef06241" category="doc">ASA A400 システムのコントローラーを返却して通常運用を再開する</block>
+  <block id="e9a1aef4f3c1e3404335d117b6170f2f" category="doc">ASA A400システムのコントローラーを交換する前に要件を確認してください</block>
+  <block id="294052068dc9f37b495d542cc7bd584b" category="doc">ASA A400システムのコントローラーの交換を完了します</block>
+  <block id="557aa8463cca1f653c8f7ce1406b68c7" category="doc">ASA A400システムの交換前に障害のあるコントローラーをシャットダウンする</block>
+  <block id="c9ea6bf679f988033fb282acb374351c" category="doc">ASA A400システムのコントローラー構成を復元して検証する</block>
+  <block id="61cd29eb12cd3e63720bfe72a1a207e9" category="doc">ASA A400コントローラー交換ワークフロー</block>
+  <block id="4989f529147f3ffee5eaa1a6adcd6e5a" category="doc">ASA A400 システムの DIMM を交換する</block>
+  <block id="e8c0adb27fed9665b7c30821b2cde8da" category="doc">ASA A400システムのファンをホットスワップする</block>
+  <block id="3a7b08c2db831ff2781748f00662950b" category="summary">ここでは、ASA A400システムのインストールについて、インストールの準備、ハードウェアの設置、コントローラーのケーブル接続、セットアップの完了まで、詳細な手順を説明します。</block>
+  <block id="7c8124f8e73c86d75676103f43d421a4" category="doc">詳細な手順に従ってASA A400ストレージシステムをインストールする</block>
+  <block id="f210636608de91764250eaf5861901d9" category="summary">この簡単な手順では、ASA A400システムのインストールについて、ラックへの設置やケーブル配線から初期システム起動まで、図解で説明します。</block>
+  <block id="1217c2059b0c2dbda70642246956e684" category="doc">ASA A400ストレージシステムをクイックステップでインストールする</block>
+  <block id="acf84ba940498a967eaa71242d87bac0" category="doc">ASA A400ストレージシステムのインストール方法を選択してください</block>
+  <block id="e3240bd8939732b6be290d8a5e2fcf88" category="paragraph">ASA A400ストレージシステムのインストールに使用する形式を選択してください：詳細なステップバイステップの手順、簡単な図解ガイド、またはビデオによる説明。</block>
+  <block id="53e787a43112b4260548588d50c4e08b" category="doc">ASA A400 ストレージシステムを動画手順に従ってインストールする</block>
+  <block id="87ac1b7eb273699f41eaf4cfc55a95f0" category="doc">ASA A400ストレージシステムのメンテナンスについて学ぶ</block>
+  <block id="3b679fdfcd4cc0d3bcaf1b4bd20b6b9e" category="doc">ASA A400 システムの NVDIMM バッテリーを交換する</block>
+  <block id="fb1107e23945bf4464f4a63113e2572f" category="doc">ASA A400システムのNVDIMMを交換する</block>
+  <block id="8048f0f8ad49276e0a2e263588ba9429" category="doc">ASA A400システムのPCIeカードまたはメザニンカードを交換する</block>
+  <block id="6f5c1e23d387e50ca634cca16f491452" category="doc">ASA A400システムの電源ユニットをホットスワップ対応で交換する</block>
+  <block id="a478e7c114984c26c31bbb5a061cb68c" category="doc">ASA A400システムのリアルタイムクロックバッテリーを交換する</block>
+  <block id="eb080180a1cfed3265f7315ba0df23d4" category="doc">障害が発生した ASA A800 ブートメディアを自動ブートリカバリプロセス後に NetApp に返却する</block>
+  <block id="7d4143c727ab8d8b61995e7a2bf4841c" category="doc">障害が発生した ASA A800 ブートメディアを手動ブートリカバリプロセス後に NetApp に返却する</block>
+  <block id="40488ee5d7c4e9b512fcf554449e31ea" category="doc">ASA A800システムのブートメディアの暗号化サポートを確認してください</block>
+  <block id="5a1a563e8f7a688dc117a24628e08656" category="doc">ASA A800システムの手動ブートリカバリプロセス後にブートメディアの暗号化を復元する</block>
+  <block id="8bdcf8c1c3827f20e2d37c919e5c8d6c" category="summary">新しいブートメディアデバイスをASA A800システムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。</block>
+  <block id="7a70018942518b2d0d173f633c73ff48" category="doc">自動ブートリカバリプロセスを使用して、ASA A800システムのブートイメージを復元します</block>
+  <block id="8d3cdb06ca035f34b8a6a4f95eaf38c8" category="doc">手動ブートリカバリプロセスを使用して、ASA A800システムのリカバリイメージを起動します</block>
+  <block id="53a3744d7b78aa0853f4ef9a3ea56332" category="doc">自動ブートリカバリプロセスを使用して ASA A800 システムのブートメディアを交換する</block>
+  <block id="26674e37e09ce4b59a025cf75531984e" category="doc">ASA A800システムの自動ブートメディアリカバリの要件を確認してください</block>
+  <block id="867581e9a255c973365f2d93725524d5" category="doc">ASA A800システムにおける手動ブートメディアリカバリの要件を確認する</block>
+  <block id="5ebdc8b2a77e8a984df9aa81b4e7c69b" category="doc">ASA A800 自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー</block>
+  <block id="159b677a7347803244f5e094d4f35bee" category="doc">ASA A800 手動ブートリカバリプロセスを使用したブートメディア交換ワークフロー</block>
+  <block id="efa6c1618d9d0f0d606358e595ed02d2" category="doc">手動ブートリカバリプロセスを使用して ASA A800 システムのブートメディアを交換する</block>
+  <block id="eba7252202260bcd4cba75d95e3812c9" category="doc">自動ブートリカバリプロセス中に ASA A800 システムのコントローラをシャットダウンする</block>
+  <block id="88c40e94e44759ed4c6862cb22979524" category="doc">手動ブートリカバリプロセス中に ASA A800 システムのコントローラをシャットダウンする</block>
+  <block id="555c22d045b512c5b9afaa809e070184" category="doc">ASA A800システムのシャーシの交換を完了します</block>
+  <block id="5b1b71c3844af1731367115c95258d43" category="doc">ASA A800システムのシャーシを交換する</block>
+  <block id="8c78e3c1877974d0203ba33659a52def" category="doc">ASA A800シャーシの交換準備</block>
+  <block id="e0e8ca79d4650275cadeec5e6c1672b6" category="doc">ASA A800シャーシを交換する前に要件を確認してください</block>
+  <block id="dc24855bf9437debbd294dc56e2d65f9" category="doc">シャーシを交換するためにASA A800コントローラをシャットダウンする</block>
+  <block id="85cdc962be644bcf224bb604da0e10f0" category="doc">ASA A800シャーシ交換ワークフロー</block>
+  <block id="a5029a491f5e9f206c8d3f3c17102e35" category="doc">ASA A800システムのコントローラーを交換する</block>
+  <block id="2e2a02e9cc0abb911ec230de22d14fe6" category="doc">ASA A800システムのコントローラー交換の準備をする</block>
+  <block id="922eac096103c90c0b5c982cd0db150f" category="summary">ストレージリソースの制御を交換用コントローラに戻すと、ASA A800 システムは通常動作を再開できます。</block>
+  <block id="a6fb2867a4810caf6523359b962c88a2" category="doc">ASA A800 システムのコントローラーを返却して通常運用を再開する</block>
+  <block id="bddd900ca786ca157f5b713cd8efebb1" category="doc">ASA A800システムのコントローラーを交換する前に要件を確認してください</block>
+  <block id="5572983956ca38277e0c5e2d3ed77b9d" category="doc">ASA A800システムのコントローラーの交換を完了します</block>
+  <block id="47a44de12b6dd93ba739b91bac519c61" category="doc">ASA A800システムの交換前に障害のあるコントローラーをシャットダウンする</block>
+  <block id="471654d9dd94ef21ead102bfd5fab278" category="doc">ASA A800システムのコントローラー構成を復元して検証する</block>
+  <block id="89265a89179e2592f268096cfe7140cd" category="doc">ASA A800コントローラー交換ワークフロー</block>
+  <block id="fa7fbb439f1d4ee5dc0930ddea55e84f" category="doc">ASA A800 システムの DIMM を交換する</block>
+  <block id="99177bbabdf2529c4f645f16ad26737c" category="doc">ASA A800 システムのドライブを交換する</block>
+  <block id="735391185797fad30f4eec8773fc1a2d" category="doc">ASA A800システムのファンを交換する</block>
+  <block id="6399bbac754db37e5e1ae80bb6947103" category="doc">詳細な手順に従ってASA A800ストレージシステムをインストールする</block>
+  <block id="23f5f71ba1bb87b56bbd878dfa9c859a" category="doc">ASA A800ストレージシステムをクイックステップでインストールする</block>
+  <block id="5d735382c9f73cf6083db0ae4204109b" category="doc">ASA A800ストレージシステムのインストール方法を選択してください</block>
+  <block id="f394873cdb6cbc331a77dc4c9057ed0c" category="paragraph">ASA A800ストレージシステムのインストールに使用する形式を選択してください：詳細なステップバイステップの手順、簡単な図解ガイド、またはビデオによる説明。</block>
+  <block id="da64931c75d351c274797378246a4fe2" category="doc">ASA A800ストレージシステムを動画手順に従ってインストールする</block>
+  <block id="616902f91cdd6a5f93aab41c066e5e90" category="doc">ASA A800ストレージシステムのメンテナンスについて学ぶ</block>
+  <block id="71995ac72daa6c421f38ed4ad6eceee7" category="doc">ASA A800 システムの NVDIMM バッテリーを交換する</block>
+  <block id="8235d0ec000e5624b78a877e1e91bcbe" category="doc">ASA A800システムのNVDIMMを交換する</block>
+  <block id="3a626c39647bd4576a9b910554b2c435" category="doc">ASA A800 システムの PCIe カードを交換する</block>
+  <block id="5724321519a2e3dc7ac26e1304170cc9" category="doc">ASA A800システムの電源ユニットをホットスワップ対応で交換する</block>
+  <block id="aa9fd57bd17e3ba5157b50e4f617554f" category="doc">ASA A800システムのリアルタイムクロックバッテリーを交換する</block>
+  <block id="c1fc9f58a88745d9f200232a9d29419a" category="doc">I/OモジュールをASA A900システムに追加する</block>
+  <block id="615fe6aafc8768ed55659745206f4a7d" category="doc">障害が発生した ASA A900 ブートメディアを自動ブートリカバリプロセス後に NetApp に返却する</block>
+  <block id="089607d35f795ad8e0c456e640749317" category="doc">ASA A900システムの手動ブートリカバリプロセス後にブートメディアの暗号化を復元する</block>
+  <block id="df3ba6737da0920e7c8c17f166908afd" category="doc">自動ブートリカバリプロセスを使用して、ASA A900システムのブートイメージを復元します</block>
+  <block id="bf8304c69a674475cbb4e0c37040a8d9" category="doc">自動ブートリカバリプロセスを使用して ASA A900 システムのブートメディアを交換する</block>
+  <block id="4587bbab44bc08b15805768b42d3ac0b" category="doc">ASA A900システムの自動ブートメディアリカバリの要件を確認してください</block>
+  <block id="c7d8b3673e2f07cccec4583ad8bd3506" category="doc">ASA A900システムにおける手動ブートメディアリカバリの要件を確認する</block>
+  <block id="9e2a2f70d6918871c97ed35011313f29" category="doc">ASA A900 自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー</block>
+  <block id="a734eb3f27c9028bbc03233f66704758" category="doc">ASA A900 手動ブートリカバリプロセスを使用したブートメディア交換ワークフロー</block>
+  <block id="e9db101496753bf1f14ac7305ef5424c" category="doc">自動ブートリカバリプロセス中に ASA A900 システムのコントローラをシャットダウンする</block>
+  <block id="d2232e007767f57aef71e509bc3c504a" category="doc">手動ブートリカバリプロセス中に ASA A900 システムのコントローラをシャットダウンする</block>
+  <block id="6b76bc93a59366f8ed6b99551260ecf3" category="doc">障害が発生した ASA A900 ブートメディアを手動ブートリカバリプロセス後に NetApp に返却する</block>
+  <block id="f70e4242325084029c4b106b05859483" category="doc">ASA A900システムのブートメディアの暗号化サポートを確認してください</block>
+  <block id="f5220656b9d32010f0884d10e3ca0bbb" category="doc">手動ブートリカバリプロセスを使用して、ASA A900システムのリカバリイメージを起動します</block>
+  <block id="ced1f7fb727ffe2a64cb1e08d5bddd8b" category="doc">手動ブートリカバリプロセスを使用して ASA A900 システムのブートメディアを交換する</block>
+  <block id="818440161b9a705ed21cf15a67aad5f6" category="doc">ASA A900 システムのブートメディアを交換する前に要件を確認してください</block>
+  <block id="ad08d480e912a4cea3375c08b3348a83" category="doc">ASA A900システムのシャーシの交換を完了します</block>
+  <block id="1f6b3549948f0048490ae495bde5fb43" category="doc">ASA A900システムのシャーシを交換する</block>
+  <block id="3781b64dceb442b6630b6978665f4427" category="doc">ASA A900シャーシを交換する前に要件を確認してください</block>
+  <block id="7110a5ae07299aca0d7207ea97d0b5f6" category="doc">シャーシを交換するためにASA A900コントローラをシャットダウンする</block>
+  <block id="074e8bebfd3429a98ee1770ab9d8657e" category="doc">ASA A900システムのコントローラーを交換する</block>
+  <block id="605aefd2998a4b1ad1c7b2fe585c41df" category="doc">ASA A900システムのコントローラーの交換を完了します</block>
+  <block id="d9c3a684f3a63926f9af6ad73a4c0bc9" category="doc">ASA A900システムのコントローラーを交換する前に要件を確認してください</block>
+  <block id="7c98e18649fe365edca46eeac51d4534" category="summary">ストレージとネットワーク構成を再配線し、ディスクの再割り当てを確認し、ストレージリソースの制御を交換用コントローラに戻すことで、ASA A900システムは通常動作を再開できます。</block>
+  <block id="81850ec47e2a0f3fdd770e8d57c69008" category="doc">ASA A900 システムのコントローラーを返却して通常運用を再開する</block>
+  <block id="fed3a83d7db887f0943e0065bef00b3f" category="doc">ASA A900システムの交換前に障害のあるコントローラーをシャットダウンする</block>
+  <block id="5af9e4822ab173ad1c32dc1e4deefbeb" category="doc">ASA A900システムのコントローラー構成を復元して検証する</block>
+  <block id="50263ac34da23eadfd59614021b87ec9" category="doc">ASA A900システムのNVRAM11バッテリーを含むDCPMを交換する</block>
+  <block id="c40291683cdf54e1aa585d9b0e13976b" category="doc">ASA A900 システムの DIMM を交換する</block>
+  <block id="c8bd13c6d6cd5d07d3649adb3ebda359" category="doc">ASA A900システムのファンをホットスワップする</block>
+  <block id="40a076d74ae28122bf9774c9017247af" category="doc">詳細な手順に従ってASA A900ストレージシステムをインストールする</block>
+  <block id="fd69d8ab88b173a05802b19c0bf9cff4" category="doc">ASA A900ストレージシステムをクイックステップでインストールする</block>
+  <block id="5cd5744f3ec9875640fc1902412b9c16" category="doc">ASA A900ストレージシステムのインストール方法を選択してください</block>
+  <block id="e9c59c40264e67796492e129bafc25a9" category="paragraph">ASA A900ストレージシステムのインストールに使用する形式を選択してください：詳細なステップバイステップの手順、簡単な図解ガイド、またはビデオによる説明。</block>
+  <block id="5ad55ccae3592e297ddff5f353b669fe" category="doc">ASA A900 ストレージシステムを動画手順付きでインストールする</block>
+  <block id="d6dfaa89c9d0c99ce3753dc6e5177c61" category="doc">ASA A900 システムの LED USB モジュールを交換する</block>
+  <block id="a48bc0cd12094ee98530f63071db868c" category="doc">ASA A900ストレージシステムのメンテナンスについて学ぶ</block>
+  <block id="5d966b94a9f71ccbb60116c89713bce6" category="doc">ASA A900システムのNVRAMモジュールまたはNVRAM DIMMを交換する</block>
+  <block id="a444f8515c11427c00bf0f432216fbd0" category="doc">ASA A900システムのI/Oモジュールを交換する</block>
+  <block id="46ed73ef7013e8ff5a0e9cf9dd6b6c31" category="doc">ASA A900システムの電源ユニットをホットスワップ対応で交換する</block>
+  <block id="c13328478920a5a7ffffdcca31d5c284" category="doc">ASA A900システムのリアルタイムクロックバッテリーを交換する</block>
+  <block id="1301e03367fe5b9bf4992078ccbd3c7e" category="sidebar">ONTAP AFX システム</block>
+  <block id="75f43aac1b3f7478f7dd28c21285aa4f" category="sidebar">新しいONTAP ASA r2システム（ASA A1K、ASA A70、ASA A90、ASA A20、ASA A30、ASA A50）は、SANのみを利用するお客様のニーズに特化した、簡素化されたエクスペリエンスを実現する統合ハードウェアおよびソフトウェアソリューションを提供します。</block>
+  <block id="2f1ec7862d30d363bcd985b98d0405ea" category="sidebar">ONTAP ASA r2 システム</block>
+  <block id="e39a75fc031fe75db1eb9bd7bb630df0" category="sidebar">ONTAP ASA r2 ストレージシステムのドキュメントでは、ASA r2 システムのインストール、セットアップ、およびメンテナンスを行うことができます。</block>
 </blocks>

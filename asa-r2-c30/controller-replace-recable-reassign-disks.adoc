@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c30, how to recable the system, reboot the system 
 summary: ストレージ リソースの制御を交換用コントローラに戻すと、ASA C30 ストレージ システムは通常運転を再開できます。ギブバック手順は、システムで使用されている暗号化のタイプ（暗号化なし、Onboard Key Manager 暗号化、External Key Manager 暗号化など）によって異なります。 
 ---
-= コントローラのギブバック- ASA C30
+= ASA C30 システムのコントローラーを返却して通常運用を再開する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

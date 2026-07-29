@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a1k, how to recable the system, how to reassign disks 
 summary: ストレージリソースの制御を交換用コントローラに戻して、ASA A1Kシステムが通常の運用を再開できるようにします。 
 ---
-= コントローラのギブバック- ASA A1K
+= ASA A1K システムのコントローラーを返却して通常運用を再開する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

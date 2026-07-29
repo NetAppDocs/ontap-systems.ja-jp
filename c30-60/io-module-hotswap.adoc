@@ -207,7 +207,7 @@ The module has been successfully removed from service and powered off. It can no
 [[step-3-hot-swap-the-failed-io-module]]
 == ステップ3：故障したI/Oモジュールをホットスワップする
 
-障害が発生した I/O モジュールを同等の I/O モジュールとホット スワップします：
+故障したI/Oモジュールを同等のI/Oモジュールとホットスワップします。
 
 .手順
 . 接地対策がまだの場合は、自身で適切に実施します。

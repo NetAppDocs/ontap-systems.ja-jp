@@ -2,9 +2,9 @@
 permalink: asa150/install-detailed-guide.html 
 sidebar: sidebar 
 keywords: asa a150, a150, asa, detailed, guide, prepare, install, hardware, cable, controllers, node, switchless, cluster, network, configuration, system, setup, discovery 
-summary: このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。 
+summary: ここでは、ASA A150 システムのインストールについて、インストールの準備、ハードウェアの設置、コントローラーのケーブル接続、セットアップの完了を含む詳細な手順を説明します。 
 ---
-= 詳細ガイド- ASA A150
+= 詳細な手順に従ってASA A150ストレージシステムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

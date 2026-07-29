@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a900, replace nvram 
 summary: NVRAM モジュールは、 NVRAM11 と DIMM 、および NVRAM モジュールあたり最大 2 つの NVMe SSD Flash Cache モジュールで構成されます。 
 ---
-= NVRAMモジュールとNVRAM DIMMの交換- ASA A900
+= ASA A900システムのNVRAMモジュールまたはNVRAM DIMMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -2,9 +2,9 @@
 permalink: asa800/controller-replace-recable-reassign-disks.html 
 sidebar: sidebar 
 keywords: asa a800, how to recable the system, how to reassign disks 
-summary: ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。 
+summary: ストレージリソースの制御を交換用コントローラに戻すと、ASA A800 システムは通常動作を再開できます。 
 ---
-= システムをケーブル接続し直してディスクを再割り当て- ASA A800
+= ASA A800 システムのコントローラーを返却して通常運用を再開する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

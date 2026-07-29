@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, move the controller module hardware 
 summary: ハードウェア障害が必要な場合は、ASA A70またはASA A90システムのコントローラを交換します。このプロセスでは、障害のあるコントローラを取り外し、交換用コントローラにコンポーネントを移動し、交換用コントローラを取り付け、システムをリブートします。 
 ---
-= コントローラを交換してください- ASA A70とASA A90
+= ASA A70またはASA A90システムのコントローラーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

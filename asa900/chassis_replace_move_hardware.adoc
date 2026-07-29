@@ -4,14 +4,11 @@ sidebar: sidebar
 keywords: asa a900, move hardware components, replace the chassis 
 summary: システム内の他のすべてのコンポーネントが正常に機能している必要があります。正常に機能していない場合は、テクニカルサポートにお問い合わせください。 
 ---
-= ハードウェアの移動と交換- ASA A900
+= ASA A900システムのシャーシを交換する
 :allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
 
-
-
-
-[[move-and-replace-hardware-asa-a900]]
-== ハードウェアの移動と交換- ASA A900
 
 [role="lead"]
 シャーシを交換するには、障害のあるシャーシからコンポーネントを取り外し、交換用シャーシに取り付ける必要があります。

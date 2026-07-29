@@ -2,9 +2,9 @@
 permalink: afx-2k/controller-replace-recable-reassign-disks.html 
 sidebar: sidebar 
 keywords: afx 2k, how to recable the system, how to reassign disks 
-summary: ストレージリソースの制御を交換用コントローラーに戻すことで、afx 2kストレージシステムが正常に動作を再開できるようになります。 
+summary: ストレージリソースの制御を交換用コントローラに戻すことで、AFX 2Kストレージシステムが正常に動作を再開できるようになります。 
 ---
-= コントローラーを返却する - AFX 2K
+= コントローラーをAFX 2Kストレージシステムに戻して、通常の動作を再開してください。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

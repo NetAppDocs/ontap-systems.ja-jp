@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a800, prerequisite, replace the controller module 
 summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。 
 ---
-= コントローラの交換の概要- ASA A800
+= ASA A800システムのコントローラー交換の準備をする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

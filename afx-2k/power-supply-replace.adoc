@@ -2,9 +2,9 @@
 permalink: afx-2k/power-supply-replace.html 
 sidebar: sidebar 
 keywords: afx 2k, replace a power supply 
-summary: afx 2k ストレージ システムの AC 電源ユニットが故障または不具合を起こした場合は、交換してください。これにより、システムが安定した動作に必要な電力を継続的に供給できるようになります。交換手順は、対象となる PSU の接続を外し、電源ケーブルを抜き、故障した PSU を取り外して交換用の PSU を取り付け、最後に電源に再接続するというものです。 
+summary: AFX 2KストレージシステムのAC電源ユニットが故障または不具合を起こした場合は、交換してください。これにより、システムが安定した動作に必要な電力を継続的に供給できるようになります。交換手順は、対象となるPSUの接続を外し、電源ケーブルを抜き、故障したPSUを取り外して交換用のPSUを取り付け、最後に電源に再接続するというものです。 
 ---
-= 電源ユニットの交換 - AFX 2K
+= AFX 2Kストレージシステムで電源ユニットをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, replace the system management module 
 summary: ASA A70またはASA A90システムのシステム管理モジュールが故障した場合、またはファームウェアが破損した場合は、システム管理モジュールを交換してください。交換プロセスでは、コントローラのシャットダウン、障害が発生したシステム管理モジュールの交換、コントローラのリブート、ライセンスキーの更新、障害が発生したパーツのNetAppへの返却を行います。 
 ---
-= システム管理モジュール（ASA A70 and ASA A90）を交換してください
+= ASA A70またはASA A90システムのシステム管理モジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

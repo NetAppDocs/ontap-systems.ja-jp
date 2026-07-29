@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 1k, replace the nv battery, NV battery 
 summary: AFX 1K ストレージ システムの NV バッテリーは、停電時に重要なシステム データを保存する役割を担っているため、バッテリーの充電が減り始めたり、故障したりした場合は、NV バッテリーを交換してください。交換プロセスには、障害のあるコントローラのシャットダウン、コントローラ モジュールの取り外し、NV バッテリの交換、コントローラ モジュールの再インストール、および障害のある部品のNetAppへの返送が含まれます。 
 ---
-= NVバッテリーの交換 - AFX 1K
+= AFX 1KストレージシステムのNVバッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

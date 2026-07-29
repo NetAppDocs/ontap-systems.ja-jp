@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a1k, replace the real-time clock battery 
 summary: ASA A1Kシステムのリアルタイムクロックバッテリー（一般的にコイン型電池として知られています）を交換して、正確な時刻同期に依存するサービスやアプリケーションが確実に稼働し続けるようにします。 
 ---
-= リアルタイムクロックバッテリを交換してください- ASA A1K
+= ASA A1Kシステムのリアルタイムクロックバッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

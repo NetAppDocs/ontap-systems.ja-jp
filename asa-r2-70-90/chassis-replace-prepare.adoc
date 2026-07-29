@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, prepare to replace the chassis 
 summary: ASA A70またはASA A90システムで障害のあるシャーシを交換する準備として、障害のあるシャーシを特定し、交換用コンポーネントを確認し、ケーブルとコントローラモジュールにラベルを付けます。 
 ---
-= シャーシの交換の準備- ASA A70およびASA A90
+= ASA A70またはASA A90シャーシの交換準備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

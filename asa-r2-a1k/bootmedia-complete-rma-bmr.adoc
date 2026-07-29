@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a1k, complete the replacement process 
 summary: ASA A1Kシステムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。 
 ---
-= 故障した部品をNetAppに返却します（ASA A1K）。
+= 障害が発生した ASA A1K ブートメディアを自動ブートリカバリプロセス後に NetApp に返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

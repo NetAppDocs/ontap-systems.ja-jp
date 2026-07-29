@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a150, a150, asa, shutdown, checks, onboard, encryption, keys, impaired controller, disable, automatic, feedback 
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
-= 暗号化キーのサポートとステータスの確認- ASA A150
+= ASA A150システムのブートメディアの暗号化サポートを確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

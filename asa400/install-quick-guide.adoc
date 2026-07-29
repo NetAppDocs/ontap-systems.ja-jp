@@ -1,10 +1,10 @@
 ---
 permalink: asa400/install-quick-guide.html 
 sidebar: sidebar 
-keywords: asa a400, asa, a400, guide, graphic, instruction, installation, system, rack, cabling, cable, intitial, system, bring-up, guide, install, netapp, system, quick guide 
-summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。 
+keywords: asa a400, asa, a400, guide, graphic, instruction, installation, system, rack, cabling, cable, initial, system, bring-up, guide, install, netapp, system, quick guide 
+summary: この簡単な手順では、ASA A400システムのインストールについて、ラックへの設置やケーブル配線から初期システム起動まで、図解で説明します。 
 ---
-= クイックガイド- ASA A400
+= ASA A400ストレージシステムをクイックステップでインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

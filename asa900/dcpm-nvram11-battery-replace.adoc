@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ASA A900 
 summary: NVRAM11 バッテリを内蔵するデステージ コントローラ電源モジュール（DCPM）をホット スワップするには、故障した DCPM モジュールを特定し、シャーシから取り外し、交換用の DCPM モジュールを取り付ける必要があります。 
 ---
-= NVRAM11バッテリを搭載したDCPMの交換- ASA A900
+= ASA A900システムのNVRAM11バッテリーを含むDCPMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

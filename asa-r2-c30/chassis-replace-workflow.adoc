@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c30, replace the chassis workflow 
 summary: ASA C30 ストレージ システムのシャーシを交換するには、交換要件の確認、コントローラのシャットダウン、シャーシの交換、およびシステム動作の検証を行います。 
 ---
-= シャーシの交換ワークフロー- ASA C30
+= ASA C30シャーシ交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff asa800, replace the boot media 
 summary: 交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージの起動、暗号化の復元、システム機能の検証を行って、 ASA A800ストレージ システムのブート メディアの交換を開始します。 
 ---
-= ブートメディアの手動リカバリワークフロー - ASA A800
+= ASA A800 手動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

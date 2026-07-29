@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c30, shutdown the controllers 
 summary: シャーシを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、ASA C30 ストレージ システム内のコントローラをシャットダウンします。 
 ---
-= コントローラのシャットダウン- ASA C30
+= シャーシを交換するためにASA C30コントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

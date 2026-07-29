@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a250, real-time battery replacement 
 summary: コントローラモジュール内のリアルタイムクロックバッテリを交換することで、正確な時刻同期に依存するシステムのサービスやアプリケーションが引き続き機能するようになります。 
 ---
-= リアルタイムクロックバッテリを交換してください- ASA A250
+= ASA A250システムのリアルタイムクロックバッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a250, replace the chassis 
 summary: ASA A250 システムで障害のあるシャーシを交換する準備をするために、障害のあるシャーシを特定し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けます。 
 ---
-= シャーシの交換準備 - ASA A250
+= ASA A250シャーシの交換準備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a900, shut down the controller 
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
-= 手動ブートメディアリカバリのためにコントローラをシャットダウンする - ASA A900
+= 手動ブートリカバリプロセス中に ASA A900 システムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

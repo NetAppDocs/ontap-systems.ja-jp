@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c30, move the controller module hardware 
 summary: ハードウェア障害が発生した場合は、ASA C30 ストレージ システムのコントローラを交換してください。交換プロセスでは、障害のあるコントローラを取り外し、交換用コントローラにコンポーネントを移動し、交換用コントローラを取り付けてリブートします。 
 ---
-= コントローラの交換- ASA C30
+= ASA C30システムのコントローラーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

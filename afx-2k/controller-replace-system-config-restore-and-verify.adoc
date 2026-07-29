@@ -2,9 +2,9 @@
 permalink: afx-2k/controller-replace-system-config-restore-and-verify.html 
 sidebar: sidebar 
 keywords: afx 2k, restore and verify the system configuration, verify and set the ha state of the controller module 
-summary: コントローラーのHA構成がafx 2kストレージ システムでアクティブかつ正しく機能していることを確認し、システムのアダプタがディスクへのすべてのパスを一覧表示していることを確認してください。 
+summary: AFX 2Kストレージ システムにおいて、コントローラのHA構成が有効かつ正しく機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認してください。 
 ---
-= システム構成の復元と検証 - AFX 2K
+= AFX 2Kストレージシステムでコントローラー構成を復元および検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

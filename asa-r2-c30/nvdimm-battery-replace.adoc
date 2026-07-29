@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c30, replace the NV battery, NV battery 
 summary: ASA C30 ストレージ システムの NV バッテリは、停電時に重要なシステム データを保持する役割を担っているため、バッテリの充電が減り始めたり、故障したりした場合は、NV バッテリを交換してください。交換プロセスでは、障害のあるコントローラのシャットダウン、コントローラモジュールの取り外し、NVバッテリの交換、コントローラモジュールの再取り付け、障害が発生したパーツのNetAppへの返却を行います。 
 ---
-= NVバッテリの交換- ASA C30
+= ASA C30 システムの NV バッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

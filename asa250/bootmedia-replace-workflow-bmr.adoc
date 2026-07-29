@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a250, replace the boot media 
 summary: ASA A250 ストレージ システムのブート メディアの交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システムの機能を確認します。 
 ---
-= ブートメディアの自動回復ワークフロー - ASA A250
+= ASA A250 自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

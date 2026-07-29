@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c30, hot swap a cluster ha card, hot swap ethernet client io module, hotswap io module, hot swap io module 
 summary: モジュールに障害が発生し、ストレージ システムがすべてのONTAPバージョン要件を満たしている場合は、ASA C30 ストレージ システム内の Ethernet I/O モジュールをホット スワップできます。 
 ---
-= IOモジュールのホットスワップ - ASA C30
+= ASA C30 システムをシャットダウンせずに I/O モジュールをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -207,7 +207,7 @@ The module has been successfully removed from service and powered off. It can no
 [[step-3-hot-swap-the-failed-io-module]]
 == ステップ3：故障したI/Oモジュールをホットスワップする
 
-障害が発生した I/O モジュールを同等の I/O モジュールとホット スワップします：
+故障したI/Oモジュールを同等のI/Oモジュールとホットスワップします。
 
 .手順
 . 接地対策がまだの場合は、自身で適切に実施します。

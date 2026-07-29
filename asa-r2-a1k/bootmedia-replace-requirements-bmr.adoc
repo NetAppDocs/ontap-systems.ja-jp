@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a1k, replace the boot media 
 summary: ASA A1Kシステムのブートメディアを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。 
 ---
-= ブートメディアの交換要件- ASA A1K
+= ASA A1Kシステムの自動ブートメディアリカバリの要件を確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

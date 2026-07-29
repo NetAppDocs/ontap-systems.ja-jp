@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a150, a150, asa, move the controller module hardware 
 summary: コントローラモジュールハードウェアを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。 
 ---
-= コントローラの交換- ASA A150
+= ASA A150システムのコントローラーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

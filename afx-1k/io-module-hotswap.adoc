@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: AFX 1K, hot swap a cluster ha card, hot swap ethernet client io module, hotswap io module, hot swap io module 
 summary: モジュールに障害が発生し、ストレージ システムがすべてのONTAPバージョン要件を満たしている場合は、AFX 1K ストレージ システム内の Ethernet I/O モジュールをホット スワップできます。 
 ---
-= I/OモジュールのホットスワップAFX 1K
+= AFX 1KストレージシステムでI/Oモジュールをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

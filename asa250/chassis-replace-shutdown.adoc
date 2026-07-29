@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a250, shutdown the controllers 
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
-= コントローラのシャットダウン- ASA A250
+= シャーシを交換するためにASA A250コントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: asa a150, a150, asa, install, setup, initial configuration 
 summary: システムを設置してセットアップします。 
 ---
-= はじめに：設置とセットアップを選択してください
+= ASA A150ストレージシステムのインストール方法を選択してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ほとんどの構成では、さまざまなコンテンツ形式から選択できます。
+ASA A150ストレージシステムのインストールに使用する形式を選択してください：詳細なステップバイステップの手順、簡単な図解ガイド、またはビデオによる説明。
 
 * link:../asa150/install-quick-guide.html["クイックステップ"]
 +

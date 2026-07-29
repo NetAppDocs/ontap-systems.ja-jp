@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 2k, replace the controller 
 summary: AFX 2Kストレージシステムのコントローラーの交換を開始するには、まず障害のあるコントローラーをシャットダウンし、コントローラーを取り外して交換し、システム設定を再構成し、システムの動作を確認します。 
 ---
-= コントローラー交換ワークフロー - AFX 2K
+= AFX 2Kコントローラー交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

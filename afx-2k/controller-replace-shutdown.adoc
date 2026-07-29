@@ -2,9 +2,9 @@
 permalink: afx-2k/controller-replace-shutdown.html 
 sidebar: sidebar 
 keywords: afx 2k, shut down the impaired controller 
-summary: お使いの AFX 2K ストレージシステムのコントローラーに不具合が生じた場合は、コントローラーをシャットダウンしてください。メンテナンスや部品交換を行う前に、データ損失を防ぎ、システムの安定性を確保するために、コントローラーを安全にシャットダウンすることが非常に重要です。 
+summary: AFX 2Kストレージシステムのコントローラーに不具合が生じた場合は、コントローラーの電源を切ってください。メンテナンスや部品交換を行う前に、データ損失を防ぎ、システムの安定性を確保するために、コントローラーを安全にシャットダウンすることが非常に重要です。 
 ---
-= 障害のあるコントローラーをシャットダウンする - AFX 2K
+= 交換する前に、AFX 2Kストレージシステムの故障したコントローラーをシャットダウンしてください。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

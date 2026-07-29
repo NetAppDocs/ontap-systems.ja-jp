@@ -2,9 +2,9 @@
 permalink: afx-2k/chassis-replace-move-hardware.html 
 sidebar: sidebar 
 keywords: afx 2k, move hardware components, replace the chassis 
-summary: afx 2k ストレージシステムのシャーシは、ハードウェア障害が発生した場合に交換してください。交換手順では、シャーシ前面からコントローラを取り外し、電源ユニット、NVRAM12、I/Oモジュールとブランク、およびシステム管理モジュールを取り外してから、交換用シャーシを取り付け、シャーシコンポーネントを再取り付けします。 
+summary: AFX 2K ストレージシステムのシャーシは、ハードウェア障害が発生した場合に交換が必要となります。交換手順では、シャーシ前面からコントローラを取り外し、電源ユニット、NVRAM12、I/Oモジュールとブランク、およびシステム管理モジュールを取り外してから、交換用シャーシを取り付け、シャーシコンポーネントを再取り付けします。 
 ---
-= シャーシを交換する - AFX 2K
+= AFX 2Kストレージシステムのシャーシを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

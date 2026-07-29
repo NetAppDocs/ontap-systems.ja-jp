@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c30, boot the recovery image 
 summary: ASA C30 ストレージ システムに新しいブート メディア デバイスをインストールした後、自動ブート メディア リカバリ プロセスを開始して、正常なノードから構成を復元できます。 
 ---
-= ブートメディア上の ONTAP イメージを復元する - ASA C30
+= 自動ブートリカバリプロセスを使用して、ASA C30システムのブートイメージを復元します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

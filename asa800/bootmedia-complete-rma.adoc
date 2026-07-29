@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a800, complete the replacement process 
 summary: ASA A800 ストレージ システムのコンポーネントに障害が発生した場合は、障害が発生した部品を NetApp に返却してください。 
 ---
-= 故障したブートメディアをNetAppに返却 - ASA A800
+= 障害が発生した ASA A800 ブートメディアを手動ブートリカバリプロセス後に NetApp に返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
