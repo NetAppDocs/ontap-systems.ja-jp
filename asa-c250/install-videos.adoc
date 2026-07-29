@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c250, hardware installation and cabling video, performing end-to-end software configuration video 
 summary: 動画は2本あり、1本はシステムをラックに取り付けてケーブルを配線する方法を示し、もう1本はSystem Managerのガイド付きセットアップを使用して初期システム構成を実行する例を示しています。 
 ---
-= ビデオ- ASA C250
+= 動画の説明を使用してASA C250ストレージシステムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

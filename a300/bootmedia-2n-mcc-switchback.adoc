@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a300, switch back aggregate in a two-node metrocluster configuration, manual, manual boot recovery 
 summary: 2ノードのMetroCluster構成でブートメディアの交換が完了したら、MetroClusterスイッチバック処理を実行して、構成を通常の動作状態に戻します。AFF A300システムは、手動によるブートメディアリカバリ手順のみをサポートしています。 
 ---
-= 2 ノード MetroCluster 構成のアグリゲートをスイッチバックする - AFF A300
+= AFF A300システムの2ノードMetroCluster構成でアグリゲートをスイッチバックします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

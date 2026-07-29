@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700s, aff, a700s, locate, fail, boot, media, controller, module, pcie, led, replace, replace the boot media, manual, manual boot recovery 
 summary: AFF A700sコントローラ モジュール上の障害が発生したブート メディアを交換します。AFF A700sシステムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= ブートメディア AFF A700s を交換してください
+= AFF A700sシステムのブートメディアを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

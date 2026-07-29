@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a700, fas9000, videos, rack, cable, system, system, manager, guided, setup 
 summary: 次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。 
 ---
-= ビデオ手順- AFF A700
+= 動画の説明を使用してAFF A700ストレージシステムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
+AFF A700ストレージシステムの設置方法および配線方法を示すビデオ手順を使用して、システムを設置してください。
 
 .アニメーション- AFF A700またはFAS9000の設置とセットアップ
 video::b46575d4-0475-48bd-8772-ac5d012a4e06[panopto]

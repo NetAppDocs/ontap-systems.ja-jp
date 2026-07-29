@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a200, shut down the controller, manual, manual boot recovery 
 summary: NVE または NSE タスクを完了したら、障害のあるコントローラのシャットダウンを完了する必要があります。AFF A200システムは、手動のブート メディア リカバリ手順のみをサポートします。 
 ---
-= 障害のあるコントローラ AFF A200 をシャットダウンします
+= 手動ブートリカバリプロセス中に AFF A200 システムの障害コントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

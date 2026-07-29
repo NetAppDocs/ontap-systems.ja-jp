@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c250, replace the chassis workflow 
 summary: ASA C250 ストレージ システムのシャーシ交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、シャーシを交換し、システムの動作を検証します。 
 ---
-= シャーシ交換ワークフロー - ASA C250
+= ASA C250シャーシ交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

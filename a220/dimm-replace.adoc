@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: aff, a220, replace, dimm, shut, down, impaired, controller, controller, metrocluster, replace, system, reinstall, module, filed, part, aggregates, 
 summary: システムで修正可能なエラー訂正コードまたは修正不可能なECCエラーの数が増加している場合は、AFF A220コントローラモジュールのDIMMを交換してください。故障したDIMMを交換しないと、システムパニックが発生する可能性があります。 
 ---
-= DIMMの交換- AFF A220
+= AFF A220システムのDIMMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+ストレージシステムが過剰な訂正可能なECCエラーまたは訂正不可能なECCエラー（通常は単一のDIMMの故障によって発生する）を検出した場合は、AFF A220システムのDIMMを交換してください。
+
 ストレージシステムでヘルスモニタアラートに基づく大量のCECC（修正可能なエラー訂正コード）エラーや修正不可能なECCエラーなどのエラーが発生した場合は、コントローラのDIMMを交換する必要があります。これらのエラーは通常、DIMMの1つの障害が原因でストレージシステムがONTAPをブートできないことが原因です。
 
 システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。

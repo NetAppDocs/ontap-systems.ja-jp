@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff, a320, aff a320, complete, completing, nve, nse, task, shutdown, impair, node, shut, down, shut down the node, manual, manual boot recovery 
 summary: NVE または NSE タスクを完了したら、障害のあるノードのシャットダウンを完了する必要があります。AFF A320システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= ノード AFF A320 をシャットダウンします
+= 手動ブートリカバリプロセス中に AFF A320 システムの障害コントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

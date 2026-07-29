@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a700, detailed, guide, prepare, install, hardware, two, node, switchless, cluster, cable, controller, ds212c, ds224c, ns224, drive, shelf, complete, system, setup, configuration, network, discovery 
 summary: このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。 
 ---
-= 詳細ガイド- AFF A700
+= 詳細な手順を使用して AFF A700 ストレージシステムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。インストール手順の詳細については、このガイドを参照してください。
+AFF A700ストレージシステムを、ラックへの設置やケーブル接続から初期システム起動まで、詳細なステップバイステップの手順に従ってインストールします。
 
 
 

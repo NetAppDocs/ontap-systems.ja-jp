@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c250, install, setup, initial configuration 
 summary: システムを設置してセットアップします。 
 ---
-= はじめに：設置とセットアップを選択してください
+= ASA C250 ストレージシステムのインストールとセットアップ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

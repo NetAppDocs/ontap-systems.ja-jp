@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c800, replace a fan 
 summary: 障害が発生したファンモジュールを交換し、新しいファンモジュールと交換する場合は、コントローラモジュールをシャーシから取り外す必要があります。 
 ---
-= ファンの交換- ASA C800
+= ASA C800システムのファンを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

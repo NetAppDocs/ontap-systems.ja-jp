@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c800, initial configuration options 
 summary: システムを設置してセットアップします。 
 ---
-= インストールとセットアップのエクスペリエンスを選択してください
+= ASA C800 ストレージシステムのインストールとセットアップ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,11 +4,11 @@ sidebar: sidebar
 keywords: aff a200, replace boot media, rma, manual, manual boot recovery 
 summary: 部品を交換した後、キットに同梱されている RMA 手順に従って、故障した部品をNetAppに返却できます。AFF A200システムは、手動のブート メディア リカバリ手順のみをサポートします。 
 ---
-= 障害のある部品は、 NetApp AFF A200 に返却してください
+= 障害が発生した AFF A200 ブートメディアを NetApp に返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-キットに同梱されている RMA 手順に従って、ブート メディアを交換した後、故障した部品をNetAppに返送してください。参照 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"] 詳細については、ページをご覧ください。AFF A200システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
+ブートメディアの交換後、キットに同梱されているRMAの手順書に記載されているとおり、障害が発生した AFF A200 のブートメディアを NetApp に返却してください。詳細については、 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]ページを参照してください。

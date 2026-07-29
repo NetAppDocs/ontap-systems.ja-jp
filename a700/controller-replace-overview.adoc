@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: aff a700, fas9000, replace, controller, module, prerequisites, procedure 
 summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。 
 ---
-= コントローラモジュールの交換の概要- AFF A700
+= AFF A700システムのコントローラーを交換する前に要件を確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+AFF A700システムのコントローラーを交換する前に、交換手順の前提条件を確認し、お使いの ONTAP のバージョンに適した手順を選択してください。
+
 交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。
 
 [NOTE]

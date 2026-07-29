@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c400, how to recable the system, how to reassign disks 
 summary: ストレージリソースの制御を交換用コントローラに戻すと、ASA C400 システムは通常動作を再開できます。 
 ---
-= コントローラを返却 - ASA C400
+= ASA C400 システムのコントローラーを返却して通常運用を再開する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

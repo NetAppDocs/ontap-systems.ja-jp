@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c400, move the controller module hardware 
 summary: ハードウェア障害が発生した場合は、ASA C400システムのコントローラを交換してください。故障したコントローラを取り外し、その構成部品を交換用コントローラに移し、新しいコントローラを取り付けて再起動します。 
 ---
-= コントローラの交換 - ASA C400
+= ASA C400システムのコントローラーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: aff a700, led, usb, module, replace, hot-swap, non-disruptive, replacement, return, failed, part 
 summary: サービスを中断することなく LED USB モジュールを交換できます。 
 ---
-= LED USBモジュールの交換- AFF A700
+= AFF A700 システムの LED USB モジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+AFF A700 システムの LED USB モジュールを交換して、ステータス表示 LED と USB 機能を復元します。
+
 サービスを中断することなく LED USB モジュールを交換できます。
 
 FAS9000 または AFF A700 LED USB モジュールは、コンソールポートとシステムステータスへの接続を提供します。このモジュールを交換する場合、工具は必要ありません。

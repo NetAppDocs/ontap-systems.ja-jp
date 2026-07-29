@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c250, replace a power supply, PSU, power supply unit 
 summary: ASA C250 システムの電源装置を交換するには、対象の電源装置を電源から切り離し、電源ケーブルを抜き、古いユニットを取り外し、交換用ユニットを取り付けてから、電源に再接続します。 
 ---
-= 電源のホットスワップ - ASA C250
+= ASA C250システムの電源ユニットをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

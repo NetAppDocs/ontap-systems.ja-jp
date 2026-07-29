@@ -1,16 +1,18 @@
 ---
 permalink: a700/x91148a-modules-with-open-slots-add.html 
 sidebar: sidebar 
-keywords: aff a700, ass, x91148a, module, open, slots, nic, storage 
+keywords: aff a700, x91148a, module, open, slots, nic, storage 
 summary: システムの空のモジュールスロットに、 100GbE NIC または NS224 ストレージシェルフのストレージモジュールとして X91148A モジュールを追加できます。 
 ---
-= 空きスロットのあるシステムにX91148Aモジュールを追加- A700
+= オープンスロットを使用してAFF A700システムにX91148Aモジュールを追加する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+X91148AモジュールをAFF A700システムのシャーシ内にある利用可能な空きスロットに追加します。
+
 システムの空のモジュールスロットに、 100GbE NIC または NS224 ストレージシェルフのストレージモジュールとして X91148A モジュールを追加できます。
 
 * システムで ONTAP 9.8 以降が実行されている必要があります。

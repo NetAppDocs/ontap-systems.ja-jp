@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: aff a700, swap, fan, service, task, return, failed, part 
 summary: サービスを中断せずにファンモジュールを交換するには、特定の順序でタスクを実行する必要があります。 
 ---
-= ファンの交換- AFF A700
+= AFF A700システムのファンをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+サービスを中断することなく AFF A700 システムのファンをホットスワップして、適切な気流とシステム冷却を維持します。
+
 サービスを中断せずにファンモジュールを交換するには、特定の順序でタスクを実行する必要があります。
 
 

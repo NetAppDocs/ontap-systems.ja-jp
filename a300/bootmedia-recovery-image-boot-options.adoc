@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a300, boot the recovery image, manual, manual boot recovery 
 summary: 障害のあるコントローラをリカバリ イメージから起動する手順は、システムが 2 ノードMetroCluster構成であるかどうかによって異なります。AFF A300システムは、手動のブート メディア リカバリ手順のみをサポートします。 
 ---
-= リカバリイメージ AFF A300 をブートします
+= AFF A300システムでリカバリイメージを起動します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

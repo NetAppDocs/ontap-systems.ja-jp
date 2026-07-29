@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c800, detailed installation 
 summary: このセクションでは、ASA C800システムの設置手順について詳しく説明します。 
 ---
-= 詳細な手順- ASA C800
+= 詳細な手順を使用して ASA C800 ストレージシステムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

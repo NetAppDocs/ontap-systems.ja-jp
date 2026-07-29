@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c800, move hardware components, replace the chassis 
 summary: 電源装置、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、装置ラックまたはシステムキャビネットから障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
 ---
-= シャーシの交換- ASA C800
+= ASA C800システムのシャーシを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a700s, aff, a700s, replace, nvram, battery, system, remove, controller, reinstall, shut, down, impair, complete, replacement, process, replace the nvram battery, shut down the impaired controller, remove the controller module, replace the nvram battery, reinstall the controller module, complete the replacement process 
 summary: システムの NVRAM バッテリを交換するには、コントローラモジュールをシステムから取り出し、バッテリを取り外して交換し、コントローラモジュールを再度取り付ける必要があります。 
 ---
-= NVRAM バッテリを交換してください - AFF A700s
+= AFF A700s システムの NVRAM バッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-システムの NVRAM バッテリを交換するには、コントローラモジュールをシステムから取り出し、バッテリを取り外して交換し、コントローラモジュールを再度取り付ける必要があります。
+AFF A700s システムの NVRAM バッテリーを交換するには、コントローラモジュールを取り外し、バッテリーを交換してから、コントローラモジュールを再取り付けします。
 
 システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。
 

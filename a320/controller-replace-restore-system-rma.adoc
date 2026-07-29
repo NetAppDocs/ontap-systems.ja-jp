@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a320, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: AFF A320システムを完全な動作状態に戻すには、必要に応じてNetApp Storage Encryptionの設定をリストアし、新しいコントローラのライセンスをインストールして、障害が発生した部品をNetAppに返却します。 
 ---
-= システムのリストアが完了しました - AFF A320
+= AFF A320システムのコントローラーの交換を完了します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-システムを完全に動作状態に戻すには、 NetApp Storage Encryption の構成をリストアし（必要な場合）、新しいコントローラのライセンスをインストールし、障害のある部品をネットアップに返却する必要があります。これについては、キットに付属する RMA 指示書を参照してください。
+NetApp Storage Encryption の設定を復元し（必要な場合）、新しいコントローラのライセンスをインストールし、障害ドライブを NetApp に返却することで、AFF A320 システムのコントローラの交換を完了します。NetApp
 
 
 

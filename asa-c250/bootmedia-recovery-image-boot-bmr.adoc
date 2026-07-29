@@ -2,9 +2,9 @@
 permalink: asa-c250/bootmedia-recovery-image-boot-bmr.html 
 sidebar: sidebar 
 keywords: asa c250, boot the recovery image 
-summary: 新しいブートメディアデバイスをASA C250システムにインストールした後、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。 
+summary: 新しいブートメディアデバイスをASA C250システムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。 
 ---
-= パートナーノードからの自動ブートメディアリカバリ - ASA C250
+= 自動ブートリカバリプロセスを使用して、ASA C250システムのブートイメージを復元します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: aff a700, fas9000, replace, io, module, shut, down, impaired, controller, node, metrocluster, pcie, replacement, switch, back, aggregates, return, failed, part 
 summary: I/O モジュールを交換するには、特定の順序でタスクを実行する必要があります。 
 ---
-= I/O モジュールを交換してください - AFF A700 および FAS9000
+= AFF A700またはFAS9000システムのI/Oモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+AFF A700またはFAS9000システムのI/Oモジュールを交換するには、ケーブルを外し、ライザーを取り外し、モジュールを交換してから、ケーブルを再接続します。
+
 I/O モジュールを交換するには、特定の順序でタスクを実行する必要があります。
 
 * この手順は、システムでサポートされるすべてのバージョンの ONTAP で使用できます

@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: fas9000, aff a700, install, setup, initial, configuration 
 summary: システムを設置してセットアップします。 
 ---
-= はじめに：設置とセットアップを選択してください
+= AFF A700 ストレージシステムのインストールとセットアップ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ほとんどの構成では、さまざまなコンテンツ形式から選択できます。
+お好みに合わせてさまざまなコンテンツ形式から選択し、AFF A700ストレージシステムをインストールおよびセットアップします。
 
 * link:../fas9000/install-quick-guide.html["クイックステップ"]
 +

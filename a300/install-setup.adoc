@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a300, install, setup, initial configuration 
 summary: システムを設置してセットアップします。 
 ---
-= はじめに：設置とセットアップを選択してください
+= AFF A300 ストレージシステムのインストールとセットアップ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ほとんどの構成では、さまざまなコンテンツ形式から選択できます。
+お好みに合わせてさまざまなコンテンツ形式から選択し、AFF A300ストレージシステムをインストールおよびセットアップします。
 
 * link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2469722["クイックステップ"]
 +

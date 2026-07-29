@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c800, replace the boot media 
 summary: 交換要件を確認し、コントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システム機能を確認して、 ASA C800ストレージ システムのブート メディアの交換を開始します。 
 ---
-= ブートメディア自動リカバリワークフロー - ASA C800
+= ASA C800 自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

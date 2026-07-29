@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, replace a pcie card 
 summary: AFF A20、 AFF A30、またはAFF A50ストレージシステムのI/Oモジュールに障害が発生した場合、またはモジュールのアップグレードにより、より高いパフォーマンスや追加機能のサポートが必要な場合は、モジュールを交換してください。交換プロセスには、コントローラのシャットダウン、障害のあるI/Oモジュールの交換、コントローラの再起動、そして障害のある部品のNetAppへの返送が含まれます。 
 ---
-= I/Oモジュールの交換- AFF A20、AFF A30、およびAFF A50
+= AFF A20、AFF A30、またはAFF A50システムのI/Oモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

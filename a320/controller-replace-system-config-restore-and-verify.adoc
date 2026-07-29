@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a320, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
 ---
-= システム構成を復元して確認します - AFF A320
+= AFF A320システムのコントローラー構成を復元して検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。
+AFF A320 システムでハードウェア交換を完了してメンテナンスモードで起動した後、コントローラーの構成を復元して検証します。
 
 
 

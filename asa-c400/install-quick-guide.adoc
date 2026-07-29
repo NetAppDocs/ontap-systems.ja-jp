@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c400, asa, c400, guide, graphic, instruction, installation, system, rack, cabling, cable, intitial, system, bring-up, guide, install, netapp, system, quick guide 
 summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。 
 ---
-= クイックガイド- ASA C400
+= ASA C400 ストレージシステムのクイック手順によるインストール
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

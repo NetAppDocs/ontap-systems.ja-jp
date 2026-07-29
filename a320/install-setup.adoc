@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a320, install, setup, initial configuration 
 summary: システムを設置してセットアップします。 
 ---
-= はじめに：設置とセットアップを選択してください
+= AFF A320 ストレージシステムのインストールとセットアップ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ほとんどの構成では、さまざまなコンテンツ形式から選択できます。
+お好みに合わせてさまざまなコンテンツ形式から選択し、AFF A320ストレージシステムをインストールおよびセットアップします。
 
 * link:../a320/install-quick-guide.html["クイックステップ"]
 +

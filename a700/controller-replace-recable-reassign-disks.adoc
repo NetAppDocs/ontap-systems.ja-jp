@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: aff a700, fas9000, how to recable the system, how to reassign disks 
 summary: ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。 
 ---
-= システムをケーブル接続し直してディスクを再割り当て- AFF A700
+= AFF A700システムのケーブルを再配線し、ディスクを再割り当てする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+ストレージの再配線、NetApp Storage Encryption の復元（必要な場合）、および新しいコントローラーのライセンスのインストールを行って、AFF A700 システムのコントローラー交換を完了してください。
+
 ストレージを再接続し、ディスクの再割り当てを確認して、交換用手順を続行します。
 
 

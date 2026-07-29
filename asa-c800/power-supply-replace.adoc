@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c800, replace a power supply 
 summary: ASA C800システムのACまたはDC電源ユニットに障害が発生した場合や不具合が生じた場合は、電源ユニットを交換して、システムが安定した動作に必要な電力を継続的に供給できるようにします。 
 ---
-= 電源のホットスワップ - ASA C800
+= ASA C800システムの電源ユニットをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

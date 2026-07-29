@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a200, how to recable the system, how to reassign disks 
 summary: ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。 
 ---
-= システムにケーブルを再接続し、ディスクを再割り当てします - AFF A200
+= AFF A200システムのケーブルを再配線し、ディスクを再割り当てする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ストレージを再ケーブル接続し、ディスクの再割り当てを確認して、交換用手順を続行します。
+AFF A200 システムのコントローラー交換を完了するには、ストレージの再配線を行い、ディスクの再割り当てを確認してください。
 
 
 

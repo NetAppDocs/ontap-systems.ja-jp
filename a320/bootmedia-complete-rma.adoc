@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff, a320, aff a320, replace, part, return, fail, netapp, rma, complete the replacement process, manual, manual boot recovery 
 summary: 部品を交換した後、キットに同梱されている RMA 手順に従って、故障した部品をNetAppに返却できます。AFF A320システムは、手動のブート メディア リカバリ手順のみをサポートします。 
 ---
-= 障害のある部品を NetApp-AFF A320 に返却します
+= 障害が発生した AFF A320 ブートメディアを NetApp に返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

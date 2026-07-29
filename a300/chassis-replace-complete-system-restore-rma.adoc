@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a300, verify and set HA state,  switch back aggregates, complete the replacement process 
 summary: キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、アグリゲートをスイッチバックし、障害が発生したパーツをNetAppに返却する必要があります。 
 ---
-= 構成をリストアおよび検証する - AFF A300
+= AFF A300システムのシャーシの交換を完了します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、アグリゲートをスイッチバックし、障害が発生したパーツをNetAppに返却する必要があります。
+AFF A300システムのシャーシ交換を完了するには、シャーシのHA状態を確認し、必要に応じてアグリゲートをスイッチバックし、障害が発生したコンポーネントをNetAppに返却します。
 
 
 

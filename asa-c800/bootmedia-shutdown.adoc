@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c800, shut down the controller 
 summary: NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。 
 ---
-= 手動ブートメディアリカバリのためにコントローラをシャットダウンする - ASA C800
+= 手動ブートリカバリプロセス中に ASA C800 システムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

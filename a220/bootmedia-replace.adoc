@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a220, replace, boot, media, controller, module, fru map, manual, manual boot recovery 
 summary: コントローラ内のブート メディアを見つけて、指示に従って交換する必要があります。AFF A220システムは、手動のブート メディア リカバリ手順のみをサポートします。 
 ---
-= ブートメディアの交換- AFF A220
+= AFF A220システムのブートメディアを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

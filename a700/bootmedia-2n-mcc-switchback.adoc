@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, metrocluster, switchback, manual, manual boot recovery 
 summary: ブートメディアの交換が完了したら、MetroClusterスイッチバック操作により、構成を通常の動作状態に戻します。AFF A700システムは、手動によるブートメディア復旧手順のみをサポートしています。 
 ---
-= 2ノードMetroCluster構成におけるアグリゲートのスイッチバック - AFF A700
+= AFF A700システムの2ノードMetroCluster構成でアグリゲートをスイッチバックする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

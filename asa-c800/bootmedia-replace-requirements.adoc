@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa-c800, replace the boot media 
 summary: ASA C800システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、適切なストレージ容量のUSBフラッシュドライブがあること、および交換用のブートデバイスが正しいことの確認が含まれます。 
 ---
-= 手動ブートメディアリカバリの要件 - ASA C800
+= ASA C800システムにおける手動ブートメディアリカバリの要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

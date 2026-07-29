@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: aff a700s, shutdown the controllers 
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
-= コントローラをシャットダウンします - AFF A700s
+= シャーシを交換するためにAFF A700sコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+シャーシを交換するために AFF A700s コントローラーをシャットダウンします。
+
 この手順は、2ノード構成のシステムが対象です。クラスタにサービスを提供する際の正常なシャットダウンの詳細については、を参照してください https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage["ストレージシステムの正常なシャットダウンと電源投入解決ガイド- NetAppナレッジベース"]。
 
 .作業を開始する前に

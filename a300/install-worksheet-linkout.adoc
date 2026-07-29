@@ -4,13 +4,13 @@ sidebar: sidebar
 keywords: aff a300, install, worksheet 
 summary: このワークシートを使用して、 ONTAP クラスタの構成に必要なサイト固有の IP アドレスやその他の情報を収集し、記録できます。 
 ---
-= クラスタ構成ワークシート - AFF A300
+= 構成ワークシートを使用して AFF A300 クラスタを設定する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このワークシートを使用して、 ONTAP クラスタの構成に必要なサイト固有の IP アドレスやその他の情報を収集し、記録できます。
+サイト固有のIPアドレスや、AFF A300クラスタの設定時に必要なその他の情報を収集して記録します。
 
 link:https://docs.netapp.com/us-en/ontap/software_setup/gather_cluster_setup_information.html["クラスタ設定ワークシート"]

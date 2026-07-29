@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a300, pre-shutdown checks for onboard encryption keys, manual, manual boot recovery 
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にして、システムで実行されているONTAPのバージョンを確認する必要があります。AFF A300システムは、手動のブート メディア リカバリ手順のみをサポートします。 
 ---
-= 暗号化キーのサポートとステータスの確認- AFF A300
+= AFF A300システムのブートメディアの暗号化サポートを確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

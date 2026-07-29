@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c800, replace a dimm 
 summary: 過剰な修正可能または修正不可能なメモリエラーが検出された場合は、ASA C800システムのDIMMを交換してください。このようなエラーが発生すると、ストレージシステムがONTAPを起動できなくなる可能性があります。 
 ---
-= DIMMの交換- ASA C800
+= ASA C800システムのメモリエラーを修正するためにDIMMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff, a320, aff a320, guide, detail, step-by-step, instruction, install, typical, netapp, system installation, prepare, hardware, cable, network, drive, shelves, shelf, complete, setup, configuration, detailed guide, prepare for installation, install the hardware, cable controllers to your network, cable controllers to drive shelves, complete system setup and configuration 
 summary: このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。インストール手順の詳細については、このガイドを参照してください。 
 ---
-= 詳細ガイド - AFF A320
+= 詳細な手順を使用して AFF A320 ストレージシステムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。インストール手順の詳細については、このガイドを参照してください。
+AFF A320ストレージシステムを、ラックへの設置やケーブル接続から初期システム起動まで、詳細なステップバイステップの手順に従ってインストールします。
 
 
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c800, replace the real-time clock battery 
 summary: ASA C800 システムのリアルタイムクロックバッテリ（一般的にコイン型電池として知られています）を交換して、正確な時刻同期に依存するサービスやアプリケーションが確実に動作し続けるようにします。 
 ---
-= リアルタイムクロックバッテリを交換してください- ASA C800
+= ASA C800システムのリアルタイムクロックバッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

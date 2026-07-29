@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c400, asa, c400, locate, boot, media, controller, module, fre, map, direction, replace, replace the boot media 
 summary: ブートメディアを交換するには、障害のあるコントローラモジュールを取り外し、交換用ブートメディアを取り付けて、ブートイメージを USB フラッシュドライブに転送する必要があります。 
 ---
-= ブートメディアを交換し、手動ブートリカバリの準備をします - ASA C400
+= 手動ブートリカバリプロセスを使用して ASA C400 システムのブートメディアを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

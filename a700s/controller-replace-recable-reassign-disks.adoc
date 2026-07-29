@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a700s, how to recable the system, how to reassign disks 
 summary: ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。 
 ---
-= システムにケーブルを再接続し、ディスクを再割り当てします - AFF A700s
+= AFF A700sシステムのケーブルを再配線し、ディスクを再割り当てする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-交換用手順を完了してシステムを完全に動作状態に戻すには、ストレージのケーブル接続をやり直し、必要に応じて NetApp Storage Encryption の構成をリストアし、新しいコントローラのライセンスをインストールする必要があります。システムを完全に動作状態にリストアするには、一連の作業を完了しておく必要があります。
+AFF A700s システムのコントローラー交換を完了するには、ストレージの再配線、NetApp Storage Encryption 設定の復元（必要な場合）、および新しいコントローラーへのライセンスのインストールを行います。
 
 
 

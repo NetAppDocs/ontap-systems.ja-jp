@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff, a320, aff a320, replace, pcie, card, disconnect, cable, card, sfp, qsfp, module, riser, reinstall, shut, down, controller, operation, complete, process, replace a pcie card, shut down the impaired controller, remove the controller module, replace a pcie card, install the controller module, restore the controller module to operation, complete the replacement process 
 summary: PCIe カードを交換するには、カードからケーブルを外し、 SFP モジュールと QSFP モジュールをカードから取り外してから、ライザーを取り付け直し、 SFP モジュールと QSFP モジュールを取り付けてから、カードをケーブル接続する必要があります。 
 ---
-= PCIe カードを交換してください - AFF A320
+= AFF A320 システムの PCIe カードを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-PCIe カードを交換するには、カードからケーブルを外し、 SFP モジュールと QSFP モジュールをカードから取り外してから、ライザーを取り付け直し、 SFP モジュールと QSFP モジュールを取り付けてから、カードをケーブル接続する必要があります。
+AFF A320 システムの PCIe カードを交換するには、ケーブルと SFP/QSFP モジュールを取り外し、ライザーを取り外し、カードを交換してから、ケーブルを再接続します。
 
 * この手順は、システムでサポートされるすべてのバージョンの ONTAP で使用できます
 * システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a200, nondisruptive, disruptive, replace the boot media, manual, manual boot recovery 
 summary: ブートメディアには、システムが起動時に使用するプライマリおよびセカンダリのシステムブートイメージファイルが格納されています。ネットワーク構成によっては、無停止交換または停止交換のいずれかを実行できます。AFF A200システムは、手動によるブートメディア復旧手順のみをサポートしています。 
 ---
-= ブートメディアの交換の概要 - AFF A200
+= AFF A200システムのブートメディア交換について
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

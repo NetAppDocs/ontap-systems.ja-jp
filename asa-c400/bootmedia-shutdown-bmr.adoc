@@ -4,7 +4,7 @@ permalink: asa-c400/bootmedia-shutdown-bmr.html
 keywords: asa c400, shut down the controller 
 summary: ブート メディアを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、ASA C400ストレージ システム内の障害のあるコントローラをシャットダウンします。 
 ---
-= 自動ブートメディアリカバリのためにコントローラをシャットダウンする - ASA C400
+= 自動ブートリカバリプロセス中に ASA C400 システムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

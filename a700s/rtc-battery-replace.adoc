@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a700s, aff, a700s, replace, real-time, clock, rtc, battery, controller, system, service, application, synchronization, function, impair, module, reinstall, replacement, complete, process, replace the real-time clock battery, shut down the impaired controller, remove the controller module, replace the rtc battery, reinstall the controller module and setting time and date after rtc battery replacement, complete the replacement process 
 summary: AFF A700s コントローラモジュールのリアルタイムクロックバッテリを交換して、正確な時刻同期に依存するサービスやアプリケーションが引き続き機能するようにします。 
 ---
-= リアルタイムクロックバッテリを交換してください - AFF A700s
+= AFF A700sシステムのリアルタイムクロックバッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。
+AFF A700s システムのリアルタイムクロック（RTC）バッテリーを交換して、正確な時刻同期に依存するサービスやアプリケーションが引き続き正常に機能することを確認します。
 
 * この手順は、システムでサポートされるすべてのバージョンの ONTAP で使用できます
 * システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, shut, down, impaired, controller, take, over, manual, manual boot recovery 
 summary: 暗号化チェックを完了した後、 AFF A700システム上の障害のあるコントローラをシャットダウンします。AFF A700システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= 障害のあるコントローラのシャットダウン- AFF A700
+= 手動ブートリカバリプロセス中に AFF A700 システムの障害コントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

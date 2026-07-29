@@ -2,9 +2,9 @@
 permalink: asa-c800/drive-replace.html 
 sidebar: sidebar 
 keywords: asa c800, replace the drives 
-summary: ドライブの交換は、ドライブで障害が発生したことを示す警告メッセージがプラットフォームからシステムコンソールに記録された場合に必要になります。さらに、オペレータ用ディスプレイパネルの障害 LED と、障害が発生したドライブの障害 LED の両方が点灯します。 
+summary: プラットフォームがシステムコンソールにドライブの障害を示す警告メッセージを記録した場合は、ASA C800システムのドライブを交換してください。また、オペレーターディスプレイパネルの障害LEDと障害ドライブの障害LEDの両方が点灯します。 
 ---
-= SSDドライブまたはHDDドライブの交換- ASA C800
+= ASA C800 システムのドライブを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

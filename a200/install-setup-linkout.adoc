@@ -4,11 +4,11 @@ sidebar: sidebar
 keywords: aff a200, install 
 summary: PDF 版セットアップガイドを使用して、新しいシステムを設置してセットアップできます。PDF 版ポスターには、ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。 
 ---
-= 設置とセットアップに関する PDF ポスター - AFF A200
+= PDF ポスターを使用して AFF A200 ストレージシステムをインストールおよびセットアップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-を使用できます link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2573725["AFF A200 のセットアップガイド"^] セットアップガイドを参照して、新しいシステムを設置してセットアップします。PDF 版ポスターには、ステップバイステップの手順と追加コンテンツへのライブリンクが記載されています。
+link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2573725["AFF A200 のセットアップガイド"^]を使用して、新しいシステムをインストールおよびセットアップできます。PDFポスターには、追加コンテンツへのライブリンクを含むステップバイステップの手順が記載されています。

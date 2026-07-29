@@ -4,13 +4,14 @@ sidebar: sidebar
 keywords: aff 220, boot, recovery, image, restore, file, system, environmental, varible, manual, manual boot recovery 
 summary: USB ドライブからONTAPイメージを起動し、ファイル システムを復元し、環境変数を確認する必要があります。AFF A220システムは、手動のブート メディア リカバリ手順のみをサポートします。 
 ---
-= リカバリイメージのブート- AFF A220
+= AFF A220システムでリカバリイメージを起動します
 :allow-uri-read: 
+:icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-AFF A220システムは、手動のブート メディア リカバリ手順のみをサポートします。
+AFF A220システムのUSBドライブからONTAPリカバリイメージをブートし、手動ブートリカバリプロセスを使用してブートメディアを復元します。
 
 ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c800, pre-shutdown checks for onboard encryption keys 
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
-= 暗号化キーのサポートとステータスの確認- ASA C800
+= ASA C800システムのブートメディアの暗号化サポートを確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

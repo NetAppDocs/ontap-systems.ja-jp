@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, open, controller, module, system, access, component, manual, manual boot recovery 
 summary: AFF A700コントローラ モジュール上の障害が発生したブート メディアを交換します。AFF A700システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= ブートメディアの交換- AFF A700
+= AFF A700システムのブートメディアを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

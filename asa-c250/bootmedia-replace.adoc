@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c250, replace the boot media 
 summary: ブートメディアを交換する前に、コントローラモジュールのエアダクトを取り外して、障害が発生したブートメディアの場所を確認する必要があります。 
 ---
-= ブートメディアの交換- ASA C250
+= 手動ブートリカバリプロセスを使用して ASA C250 システムのブートメディアを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

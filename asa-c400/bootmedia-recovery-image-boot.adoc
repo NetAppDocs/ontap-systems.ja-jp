@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c400, asa, c400, procedure, boot, impair, controller, recovery, image, system, two-node, metrocluster, configuration, boot the recovery image 
 summary: 障害のあるコントローラをリカバリイメージからブートするための手順 は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。 
 ---
-= USBドライブからの手動ブートメディアリカバリ - ASA C400
+= 手動ブートリカバリプロセスを使用して、ASA C400システムのリカバリイメージを起動します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

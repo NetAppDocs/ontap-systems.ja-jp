@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a220, post, boot, media, okm, nse, nve, onboard key manager, netapp storage encryption, netapp volume encryption, manual, manual boot recovery 
 summary: AFF A220 ストレージシステムの交換用ブートメディアで暗号化を復元します。AFF A220 では、手動ブートメディアリカバリ手順のみがサポートされます。 
 ---
-= リストア暗号化- AFF A220
+= AFF A220システムのブートメディアの暗号化を復元します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

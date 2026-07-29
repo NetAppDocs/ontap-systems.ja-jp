@@ -2,9 +2,9 @@
 permalink: a700s/bootmedia-complete-rma.html 
 sidebar: sidebar 
 keywords: aff a700s, aff, a700s, replace, part, return, fail, netapp, rma, instruction, kit, technical, support, replacement, procedure, complete the replacement process, manual, manual boot recovery 
-summary: 部品を交換した後、キットに同梱されている RMA 手順に従って、故障した部品をNetAppに返却できます。AFF AFF A700sシステムでは、手動のブート メディア リカバリ手順のみがサポートされています。自動ブート メディア リカバリはサポートされていません。 
+summary: 部品を交換したら、キットに同梱されているRMA手順書に記載されているとおりに、障害が発生した部品を NetApp に返送してください。AFF A700s システムは、手動によるブートメディア復旧手順のみをサポートしています。自動ブートメディア復旧はサポートされていません。 
 ---
-= 障害のある部品を NetApp-AFF A700s に返却します
+= 障害が発生した AFF A700s ブートメディアを NetApp に返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

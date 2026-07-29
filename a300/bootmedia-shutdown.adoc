@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a300, shut down the impaired controller, manual, manual boot recovery 
 summary: ストレージ システムのハードウェア構成に応じて、さまざまな手順を使用して障害のあるコントローラをシャットダウンしたり、引き継いだりすることができます。AFF A300システムは、手動のブート メディア リカバリ手順のみをサポートします。 
 ---
-= 障害のあるコントローラをシャットダウンします - AFF A300
+= 手動ブートリカバリプロセス中に AFF A300 システムの障害コントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,13 +4,13 @@ sidebar: sidebar
 keywords: aff, a700s, aff a700s, install, video 
 summary: 次のビデオでは、 ONTAP 9.2 を実行するシステムのエンドツーエンドのソフトウェア設定を示します。 
 ---
-= 設置とセットアップのビデオ - AFF A700s
+= 動画の説明を使用してAFF A700sストレージシステムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-次のビデオでは、 ONTAP 9.2 を実行するシステムのエンドツーエンドのソフトウェア設定を示します。
+エンドツーエンドのソフトウェア構成を示すビデオの手順を使用して、AFF A700s ストレージシステムをインストールします。
 
 link:https://youtu.be/Q6orVMyj94A["AFF A700s セットアップビデオ"^]

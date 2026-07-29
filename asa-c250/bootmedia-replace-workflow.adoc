@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c250, replace the boot media 
 summary: ASA C250 ストレージ システムのブート メディアの交換を開始するには、交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージのブート、暗号化の復元、およびシステム機能の検証を行います。 
 ---
-= ブートメディアの手動回復ワークフロー - ASA C250
+= ASA C250 手動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
