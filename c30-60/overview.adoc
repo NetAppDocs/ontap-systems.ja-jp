@@ -31,8 +31,6 @@ summary: 単一の高可用性ペアにおける AFF C30 および AFF C60 ス�
 
 フォームファクター: 2Uシャーシ、2つのHAコントローラと24のドライブスロット
 
-ONTAPバージョン: b_startONTAP: 9.16.1P2b_end
-
 PCIe拡張スロット: 8
 
 最小ONTAPバージョン: ONTAP 9.16.1RC1
@@ -172,8 +170,6 @@ CIFS、FC、iSCSI、NFS v3、NFS v4.0、NFS v4.1、NFS v4.2、NVMe/FC、NVMe/TCP
 メモリ: 128.0000 GB
 
 フォームファクター: 2Uシャーシ、2つのHAコントローラと24のドライブスロット
-
-ONTAPバージョン: b_startONTAP: 9.16.1P2b_end
 
 PCIe拡張スロット: 8
 

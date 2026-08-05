@@ -26,8 +26,6 @@ summary: AFF A250ストレージシステムの主な仕様
 
 フォームファクター: 2Uシャーシ、2つのHAコントローラと24のドライブスロット
 
-ONTAPバージョン: b_startONTAP: 9.16.1P2b_end
-
 PCIe拡張スロット: 4
 
 最小ONTAPバージョン: ONTAP 9.8RC1

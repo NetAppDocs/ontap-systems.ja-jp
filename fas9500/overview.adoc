@@ -26,8 +26,6 @@ summary: FAS9500ストレージシステムの主な仕様
 
 フォームファクター: 2つのHAコントローラを搭載した8Uシャーシ
 
-ONTAPバージョン: b_startONTAP: 9.16.1P2b_end
-
 PCIe拡張スロット: 20
 
 最小ONTAPバージョン: ONTAP 9.10.1P3

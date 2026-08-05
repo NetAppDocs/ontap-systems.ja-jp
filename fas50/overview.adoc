@@ -26,8 +26,6 @@ summary: FAS50ストレージシステムの主な仕様
 
 フォームファクター: 2Uシャーシ、HAコントローラ2台
 
-ONTAPバージョン: b_startONTAP: 9.16.1P2b_end
-
 PCIe拡張スロット: 12
 
 最小ONTAPバージョン: ONTAP 9.16.1

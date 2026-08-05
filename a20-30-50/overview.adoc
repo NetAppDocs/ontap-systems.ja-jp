@@ -31,8 +31,6 @@ summary: A20-30-50プラットフォームグループの主な仕様
 
 フォームファクター: 2Uシャーシ、2つのHAコントローラと24のドライブスロット
 
-ONTAPバージョン: b_startONTAP: 9.16.1P2b_end
-
 PCIe拡張スロット: 8
 
 最小ONTAPバージョン: ONTAP 9.16.1RC1
@@ -176,8 +174,6 @@ CIFS、FC、iSCSI、NFS v3、NFS v4.0、NFS v4.1、NFS v4.2、NVMe/FC、NVMe/TCP
 
 フォームファクター: 2Uシャーシ、2つのHAコントローラと24のドライブスロット
 
-ONTAPバージョン: b_startONTAP: 9.16.1P2b_end
-
 PCIe拡張スロット: 8
 
 最小ONTAPバージョン: ONTAP 9.16.1RC1
@@ -315,8 +311,6 @@ CIFS、FC、iSCSI、NFS v3、NFS v4.0、NFS v4.1、NFS v4.2、NVMe/FC、NVMe/TCP
 メモリ: 128.0000 GB
 
 フォームファクター: 2Uシャーシ、2つのHAコントローラと24のドライブスロット
-
-ONTAPバージョン: b_startONTAP: 9.16.1P2b_end
 
 PCIe拡張スロット: 8
 

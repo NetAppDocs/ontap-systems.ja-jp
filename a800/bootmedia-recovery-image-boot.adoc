@@ -31,12 +31,16 @@ AFF A800システムに新しいブート メディア デバイスをインス�
 リカバリイメージは USB フラッシュ ドライブからダウンロードされます。
 
 . プロンプトが表示されたら、画像の名前を入力するか、*Enter* キーを押して括弧内に表示されるデフォルトの画像を受け入れます。
-. ONTAPバージョンの手順を使用して、var ファイル システムを復元します。
+. var ファイルシステムを復元します。
 +
-[role="tabbed-block"]
-====
-.ONTAP 9.16.0 以前
---
+[cols="1,2"]
+|===
+| システム構成 | 作業 
+
+
+ a| 
+ネットワーク接続が確立されており、ONTAP 9.16.0 以前を実行している
+ a| 
 障害のあるコントローラーとパートナー コントローラーで次の手順を実行します。
 
 .. *障害のあるコントローラーの場合:* 押す `Y`見ると `Do you want to restore the backup configuration now?`
@@ -68,9 +72,11 @@ NOTE: 復元成功以外のメッセージが表示された場合は、 NetApp�
 
 
 
---
-.ONTAP 9.16.1以降
---
+
+
+ a| 
+ネットワーク接続が確立されており、ONTAP 9.16.1 以降が実行されている
+ a| 
 障害のあるコントローラーで次の手順を実行します。
 
 .. バックアップ設定の復元を求めるプロンプトが表示されたら、と入力し `Y`ます。
@@ -89,8 +95,59 @@ NOTE: 復元成功以外のメッセージが表示された場合は、 NetApp�
 
 
 
---
-====
+
+
+ a| 
+ネットワーク接続がありません
+ a| 
+.. プロンプトが表示されたら、 `N`を押してバックアップ構成を復元します。
+.. プロンプトが表示されたら、システムをリブートします。
+.. 表示されたメニューから「 * Update flash from backup config * （ sync flash ）」オプションを選択します。
++
+アップデートを続行するかどうかを尋ねられたら、 `Y`を押してください。
+
+.. ブートメニューが表示されたら、 `Ctrl-C`を押してください。
+.. 次のいずれかを実行します。
++
+*** システムで暗号化が使用されていない場合は、ブート メニューから [オプション 1 通常ブート] を選択します。
+*** システムが暗号化を使用している場合は、link:bootmedia-encryption-restore.html["アンコウカノ"] 。
+
+
+
+
+
+
+ a| 
+ネットワークに接続されておらず、 MetroCluster IP 構成になっています
+ a| 
+.. プロンプトが表示されたら、 `N`を押してバックアップ構成を復元します。
+.. プロンプトが表示されたら、システムをリブートします。
+.. iSCSI ストレージ接続が確立されるまで待ちます。
++
+次のメッセージが表示されたら、次の手順に進みます。
+
++
+[listing]
+----
+date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_auxiliary, address: ip-address).
+date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_partner, address: ip-address).
+date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_auxiliary, address: ip-address).
+date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_partner, address: ip-address).
+----
+.. 表示されたメニューから「 * Update flash from backup config * （ sync flash ）」オプションを選択します。
++
+アップデートを続行するかどうかを尋ねられたら、 `Y`を押してください。
+
+.. ブートメニューが表示されたら、 `Ctrl-C`を押してください。
+.. 次のいずれかを実行します。
++
+*** システムで暗号化が使用されていない場合は、ブート メニューから [オプション 1 通常ブート] を選択します。
+*** システムが暗号化を使用している場合は、link:bootmedia-encryption-restore.html["アンコウカノ"] 。
+
+
+
+
+|===
 . パートナーコントローラにコンソールケーブルを接続します。
 . コントローラのストレージをギブバックして、コントローラを通常動作に戻します。
 +

@@ -26,8 +26,6 @@ summary: AFF A400ストレージシステムの主な仕様
 
 フォームファクター: HAコントローラ2台搭載の4Uシャーシ
 
-ONTAPバージョン: b_startONTAP: 9.16.1P2b_end
-
 PCIe拡張スロット: 10
 
 最小ONTAPバージョン: ONTAP 9.7RC1
