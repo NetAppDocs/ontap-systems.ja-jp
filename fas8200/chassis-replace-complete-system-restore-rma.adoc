@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, verify and set HA state, complete the replacement process 
 summary: キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、アグリゲートをスイッチバックし、障害が発生したパーツをNetAppに返却する必要があります。 
 ---
-= FAS8200 をリストアして設定を確認します
+= FAS8200システムのシャーシの交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -53,7 +53,7 @@ HA 状態の値は、次のいずれかになります。 ***HA`***`m cc`***`m c
  a| 
 2 台目のコントローラモジュールとの HA ペア
  a| 
-保守モードを終了します :'halt LOADER プロンプトが表示されます
+メンテナンスモードを終了します： `halt`。LOADERプロンプトが表示されます。
 
 |===
 

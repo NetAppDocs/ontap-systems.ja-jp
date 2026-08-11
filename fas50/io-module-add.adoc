@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, add IO module 
 summary: FAS50ストレージ・システムにI/Oモジュールを追加して、ネットワーク接続を強化し、システムのデータ・トラフィック処理能力を拡張します。 
 ---
-= I/OモジュールFAS50を追加します
+= FAS50システムにI/Oモジュールを追加して、ネットワーク接続を強化します。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

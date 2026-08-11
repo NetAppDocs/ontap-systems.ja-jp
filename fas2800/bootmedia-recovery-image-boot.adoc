@@ -1,17 +1,17 @@
 ---
 permalink: fas2800/bootmedia-recovery-image-boot.html 
 sidebar: sidebar 
-keywords: fas2800, boot, recovery, image, restore, file, system, environmental, varible 
-summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
+keywords: fas2820, boot, recovery, image, restore, file, system, environmental, varible 
+summary: 新しいブートメディアデバイスを FAS2820 システムにインストールした後、USBドライブからリカバリイメージを手動で起動して、パートナーノードから構成を復元できます。 
 ---
-= USBドライブからの手動ブートメディアリカバリ - FAS2820
+= 手動ブートリカバリプロセスを使用して、FAS2820システムのリカバリイメージを起動します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-システムに新しいブートメディアデバイスを取り付けたら、リカバリイメージをUSBドライブからブートし、パートナーノードから設定をリストアできます。
+新しいブートメディアデバイスを FAS2820 システムにインストールした後、USBドライブからリカバリイメージを手動で起動して、パートナーノードから構成を復元できます。
 
 ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。システムで以前のバージョンのONTAPを実行している場合は、手動ブートリカバリ手順を使用する必要があります。
 

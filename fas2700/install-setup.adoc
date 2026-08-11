@@ -2,16 +2,16 @@
 permalink: fas2700/install-setup.html 
 sidebar: sidebar 
 keywords: fas 2700, install, setup, initial configuration 
-summary: システムを設置してセットアップします。 
+summary: FAS2700システムをインストールおよびセットアップするには、さまざまなコンテンツ形式から選択してください。 
 ---
-= はじめに：設置とセットアップを選択してください
+= FAS2700のインストールとセットアップ方法を選択してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ほとんどの構成では、さまざまなコンテンツ形式から選択できます。
+FAS2700システムをインストールおよびセットアップするには、さまざまなコンテンツ形式から選択してください。
 
 * link:../fas2700/install-quick-guide.html["クイックステップ"]
 +

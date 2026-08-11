@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas9000, swap, fan, service, task, return, failed, part 
 summary: サービスを中断せずにファンモジュールを交換するには、特定の順序でタスクを実行する必要があります。 
 ---
-= ファンの交換- FAS9000
+= FAS9000システムのファンをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

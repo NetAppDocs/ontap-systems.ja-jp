@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, ass, x91148a, module, open, slots, nic, storage 
 summary: システムの空のモジュールスロットに、 100GbE NIC または NS224 ストレージシェルフのストレージモジュールとして X91148A モジュールを追加できます。 
 ---
-= 空きスロットのあるシステムにX91148Aモジュールを追加- FAS9000
+= 空きスロットのある FAS9000 システムへの X91148A モジュールの追加
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

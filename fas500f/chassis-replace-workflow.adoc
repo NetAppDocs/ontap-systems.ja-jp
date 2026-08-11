@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, replace the chassis workflow 
 summary: FAS500fストレージ システムのシャーシ交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、シャーシを交換し、システムの動作を検証します。 
 ---
-= シャーシ交換ワークフロー - FAS500f
+= FAS500fシャーシ交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

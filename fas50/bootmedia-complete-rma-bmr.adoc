@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, complete the replacement process 
 summary: FAS50 ストレージ システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返送してください。 
 ---
-= 故障したブートメディア部品をNetAppに返却 - FAS50
+= 自動ブートリカバリプロセスの完了後、障害が発生したFAS50ブートメディアをNetAppに返送してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

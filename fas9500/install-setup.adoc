@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: fas9500, install, setup, initial configuration 
 summary: システムを設置してセットアップします。 
 ---
-= はじめに：設置とセットアップを選択してください
+= FAS9500 のインストールとセットアップ方法を選択してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-新しいストレージシステムの設置およびセットアップを進めるにあたって、参照するコンテンツの形式を選択できます。
+新しい FAS9500 ストレージシステムのインストールとセットアップの手順を案内するさまざまなコンテンツ形式から選択できます。
 
 * link:../fas9500/install-quick-guide.html["クイックステップ"^]
 +

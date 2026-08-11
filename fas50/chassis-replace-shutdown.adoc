@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, shutdown the controllers 
 summary: FAS50ストレージ・システムのコントローラをシャットダウンして、データ損失を防ぎ、シャーシの交換時にシステムの安定性を確保します。 
 ---
-= コントローラのシャットダウン- FAS50
+= シャーシを交換するために FAS50 コントローラをシャットダウンします。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

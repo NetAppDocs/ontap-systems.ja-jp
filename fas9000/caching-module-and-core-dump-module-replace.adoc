@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, replace caching module 
 summary: システムがモジュールのオフラインを示す単一のAutoSupport ASUPメッセージを登録した場合は、コントローラモジュールのキャッシングモジュールを交換する必要があります。交換しないと、パフォーマンスが低下します。 
 ---
-= キャッシングモジュールの交換、またはコアダンプモジュールの追加/交換- FAS9000
+= FAS9000システムのキャッシュモジュールまたはコアダンプモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

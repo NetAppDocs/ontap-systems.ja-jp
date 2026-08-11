@@ -1,16 +1,18 @@
 ---
 permalink: fas2700/controller-replace-recable-reassign-disks.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, how to recable the system, how to reassign disks 
-summary: ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。 
+keywords: fas2700, how to recable the system, how to reassign disks 
+summary: ストレージのケーブルを再接続し、ディスクの再割り当てを確認し、残りのタスクを完了してコントローラを返却し、FAS2700 システムを完全に動作可能な状態に復元します。 
 ---
-= システムをケーブル接続し直してディスクを再割り当て- FAS2700
+= FAS2700システムのコントローラーを元に戻して、通常の動作を再開してください。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+ストレージのケーブルを再接続し、ディスクの再割り当てを確認し、残りのタスクを完了してコントローラを返却し、FAS2700 システムを完全に動作可能な状態に復元します。
+
 交換用手順を完了してシステムを完全に動作状態に戻すには、ストレージのケーブル接続をやり直し、ディスクの再割り当てを確認し、必要に応じてネットアップストレージ暗号化構成をリストアし、新しいコントローラのライセンスをインストールする必要があります。システムを完全に動作状態にリストアするには、一連の作業を完了しておく必要があります。
 
 

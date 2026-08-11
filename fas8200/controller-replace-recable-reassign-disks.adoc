@@ -2,16 +2,16 @@
 permalink: fas8200/controller-replace-recable-reassign-disks.html 
 sidebar: sidebar 
 keywords: fas8200, how to recable the system, how to reassign disks 
-summary: ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。 
+summary: コントローラーを交換した後、システムを再接続し、ディスクの所有権が再割り当てされていることを確認することで、FAS8200システムは通常の動作を再開できます。 
 ---
-= システムにケーブルを再接続し、ディスクを FAS8200 に再割り当てします
+= FAS8200システムのコントローラーをギブバックして通常運用を再開する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ストレージを再接続し、ディスクの再割り当てを確認して、交換用手順を続行します。
+コントローラーを交換した後、システムを再接続し、ディスクの所有権が再割り当てされていることを確認することで、FAS8200システムは通常の動作を再開できます。
 
 
 

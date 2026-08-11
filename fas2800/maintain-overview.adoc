@@ -1,10 +1,10 @@
 ---
 permalink: fas2800/maintain-overview.html 
 sidebar: sidebar 
-keywords: fas2800 maintenance, maintenance, repairing, repairing fas2800, replace fas2800 components, replace fas2800 components 
-summary: FAS2820ハードウェアのメンテナンス 
+keywords: fas2820 maintenance, maintenance, repairing, repairing fas2820, replace fas2820 components, replace fas2820 components 
+summary: FAS2820 ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。 
 ---
-= FAS2820ハードウェアのメンテナンス
+= FAS2820ストレージシステムのメンテナンスについて
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -20,7 +20,7 @@ FAS2820ストレージシステムのハードウェアをメンテナンスす�
 [[system-components]]
 == システムコンホオネント
 
-FAS2820ストレージシステムでは、次のコンポーネントに対してメンテナンス手順を実行できます。
+FAS2820ストレージシステムのこれらのコンポーネントに対してメンテナンス手順を実行できます。
 
 [cols="25,65"]
 |===
@@ -85,7 +85,7 @@ link:nvmem-nvram-battery-replace.html["NVMEM バッテリ"]
  a| 
 link:pci-cards-and-risers-replace.html["メザニンカード"]
  a| 
-メザニン カードは、マザーボード上の専用スロットに挿入するように設計されており、カード I/O カードを保持する拡張カードです。
+メザニンカードとは、マザーボード上の専用スロットに挿入されてカードI/Oカードを保持する拡張カードです。
 
 
 

@@ -1,17 +1,17 @@
 ---
 permalink: fas8300/maintain-overview.html 
 sidebar: sidebar 
-keywords: fas8300 maintenance, maintenance, repairing, repairing fas8300, replace fas8300 components, replace fas8300 components 
-summary: FAS8300およびFAS8700ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。 
+keywords: fas8300 maintenance, fas8700 maintenance, maintenance, repairing fas8300, repairing fas8700, replace fas8300 components, replace fas8700 components 
+summary: FAS8300またはFAS8700ストレージシステムのハードウェアを適切にメンテナンスすることで、長期的な信頼性と最適なパフォーマンスを確保できます。故障したコンポーネントの交換など、定期的なメンテナンス作業を実施してください。これにより、ダウンタイムやデータ損失を防ぐことができます。 
 ---
-= FAS8300 / FAS8700ハードウェアのメンテナンス
+= FAS8300またはFAS8700ストレージシステムのメンテナンスについて学ぶ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-FAS8300およびFAS8700ストレージ システムのハードウェアをメンテナンスして、長期的な信頼性と最適なパフォーマンスを確保します。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。
+FAS8300またはFAS8700ストレージシステムのハードウェアを適切にメンテナンスすることで、長期的な信頼性と最適なパフォーマンスを確保できます。故障したコンポーネントの交換など、定期的なメンテナンス作業を実施してください。これにより、ダウンタイムやデータ損失を防ぐことができます。
 
 メンテナンス手順では、 FAS8300およびFAS8700ストレージ システムがONTAP環境にストレージ ノードとしてすでに導入されていることを前提としています。
 
@@ -85,7 +85,7 @@ NVDIMM（不揮発性デュアルインラインメモリモジュール）は�
  a| 
 link:nvdimm-battery-replace.html["NVDIMM バッテリ"]
  a| 
-NVDIMMバッテリは、NVDIMMモジュールへの電力を維持する役割を果たします。
+NVDIMMバッテリーは、NVDIMMモジュールへの電力供給を維持する役割を担っています。
 
 
 

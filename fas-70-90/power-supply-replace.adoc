@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, replace a power supply 
 summary: FAS70またはFAS90システムのACまたはDC電源ユニット（PSU）が故障または不具合を起こした場合は、交換してください。これにより、システムが安定した動作に必要な電力を継続的に供給できるようになります。交換手順は、故障したPSUを電源から切り離し、電源ケーブルを抜き、故障したPSUを交換し、その後再び電源に接続するというものです。 
 ---
-= 電源のホットスワップ - FAS70 および FAS90
+= FAS70またはFAS90システムで電源ユニットをホット スワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

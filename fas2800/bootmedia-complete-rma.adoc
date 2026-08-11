@@ -1,14 +1,16 @@
 ---
 permalink: fas2800/bootmedia-complete-rma.html 
 sidebar: sidebar 
-keywords: fas2800, complete, replacement, process, replace, return, failed, rma, instructions 
-summary: 部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。 
+keywords: fas2820, complete, replacement, process, replace, return, failed, rma, instructions 
+summary: FAS2820システムのブートメディアを交換したら、キットに同梱されているRMA手順書に記載されているとおりに、障害のある部品をNetAppに返送してください。 
 ---
-= 故障したブートメディアをNetAppに返却する - FAS2820
+= 障害が発生した FAS2820 ブートメディアを、手動ブートリカバリプロセスの完了後に NetApp に返却してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+FAS2820システムのブートメディアを交換したら、キットに同梱されているRMA手順書に記載されているとおりに、障害のある部品をNetAppに返送してください。
+
 障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。

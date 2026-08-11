@@ -1,17 +1,17 @@
 ---
 permalink: fas2800/install-detailed-guide.html 
 sidebar: sidebar 
-keywords: fas2800, detailed, guide, prepare, install, hardware, cable, controllers, node, switchless, cluster, network, configuration, system, storage system, setup, discovery 
-summary: この手順では、一般的なNetAppストレージシステムをインストールするための詳細なステップバイステップの手順を説明します。 
+keywords: fas2820, detailed, guide, prepare, install, hardware, cable, controllers, node, switchless, cluster, network, configuration, system, storage system, setup, discovery 
+summary: この手順では、FAS2820ストレージシステムのインストールに関する詳細な手順を段階的に説明します。 
 ---
-= 詳細な手順- FAS2820
+= 詳細な手順を使用してFAS2820システムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-この手順では、一般的なNetAppストレージシステムをインストールする手順を詳しく説明します。より詳細なインストール手順が必要な場合は、この手順を使用します。
+この手順では、FAS2820 ストレージシステムの準備、設置、ケーブル接続、および電源投入に関する詳細な手順を段階的に説明します。簡略化されたクイックガイドよりも詳細な説明をご希望の場合は、以下の手順に従ってください。
 
 
 
@@ -45,8 +45,8 @@ IMPORTANT: 特定の電力要件を持つお客様は、確認する必要があ
 
 . にアクセスします https://docs.netapp.com/us-en/ontap/task_configure_ontap.html#assign-a-node-management-ip-address["System Managerを使用して新しいクラスタにONTAPを設定します"^]
 +
-.. AMD手順の要件を確認します。
-.. 次の手順を実行して、ストレージシステムに関する情報を収集します。 https://docs.netapp.com/us-en/ontap/task_configure_ontap.html["セットアップワークシート^（ワークシートのURLが必要）"]。
+.. 要件と手順を確認してください。
+.. セットアップワークシートに記入して、ストレージシステムに関する情報を収集してください。
 .. コントローラのストレージシステムのシリアル番号をメモします。
 +
 image::../media/drw_ssn_label.svg[システムシリアル番号の例]
@@ -478,7 +478,7 @@ image::../media/dwr-2800_controller2-to shelves_IEOPS-897.svg[コントローラ
 [[step-5-complete-storage-system-setup-and-configuration]]
 == 手順5：ストレージシステムのセットアップと設定を完了する
 
-オプション1：ネットワーク検出が有効な場合、またはオプション2：ネットワーク検出が有効でない場合のいずれかを使用して、ストレージシステムのセットアップと設定を完了します。
+ネットワーク検出が有効になっている場合はオプション1、有効になっていない場合はオプション2のいずれかを使用して、ストレージシステムのセットアップと構成を完了してください。
 
 棚 ID の設定が必要などちらのオプションでも、次のアニメーションを使用します。
 
@@ -488,17 +488,17 @@ video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
 ====
 .オプション 1 ：ネットワーク検出が有効になっている場合
 --
-ラップトップでネットワーク検出が有効になっている場合は、クラスタの自動検出を使用してストレージシステムのセットアップと設定を完了します。
+ノートパソコンでネットワーク検出が有効になっている場合は、自動クラスタ検出を使用してストレージシステムのセットアップと構成を完了してください。
 
 .手順
-. このステップの始めにあるアニメーションを使用して、棚の電源をオンにし、棚 ID を設定します。
+. この手順の冒頭にあるアニメーションを使用して、シェルフの電源をオンにし、シェルフIDを設定します。
 . コントローラの電源をオンにします
 +
 .. 電源コードをコントローラの電源装置に接続し、さらに別の回路の電源に接続します。
 .. 両方のノードの電源スイッチをオンにします。
 +
 
-NOTE: 初回のブートには最大 8 分かかる場合があります。
+NOTE: 初回起動には最大8分かかる場合があります。
 
 +
 image::../media/dwr_2800_turn_on_power_IEOPS-898.svg[電源をオンにする]
@@ -510,13 +510,13 @@ image::../media/dwr_2800_turn_on_power_IEOPS-898.svg[電源をオンにする]
 詳細については、ラップトップのオンラインヘルプを参照してください。
 
 . ラップトップを管理スイッチに接続します。
-. 次の図または手順に従って、設定するストレージシステムノードを検出します。
+. 図または手順を使用して、構成するストレージシステムノードを検出します。
 +
 image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[自動検出システム]
 
 +
 .. エクスプローラを開きます。
-.. 左側のペインで*[ネットワーク]*をクリックし、右クリックして*[更新]*を選択します。
+.. 左側のペインで「ネットワーク」を右クリックし、「更新」を選択します。
 .. いずれかの ONTAP アイコンをダブルクリックし、画面に表示された証明書を受け入れます。
 +
 
@@ -530,8 +530,8 @@ System Manager が開きます。
 . System Managerのセットアップガイドを使用して、で収集したデータを使用してストレージシステムを設定します。 <<手順 1 ：設置の準備>>。
 . アカウントを作成するか、アカウントにログインします。
 +
-.. をクリックします https://mysupport.netapp.com["mysupport.netapp.com"]
-.. アカウントを作成するか、アカウントにログインする必要がある場合は、_Create Account_をクリックします。
+.. 選択 https://mysupport.netapp.com["mysupport.netapp.com"]
+.. アカウントを作成する必要がある場合、またはアカウントにログインする場合は、「アカウント作成」を選択してください。
 
 
 . ダウンロードしてインストールします https://mysupport.netapp.com/site/tools["Active IQ Config Advisor"]
@@ -571,7 +571,7 @@ image::../media/dwr_2800_turn_on_power_IEOPS-898.svg[電源をオンにする]
 
 +
 
-NOTE: 初回のブートには最大 8 分かかる場合があります。
+NOTE: 初回起動には最大8分かかる場合があります。
 
 . いずれかのノードに初期ノード管理 IP アドレスを割り当てます。
 +
@@ -606,13 +606,13 @@ NOTE: PuTTY の設定方法がわからない場合は、ラップトップま�
 
 NOTE: アドレスの形式は、 +https://x.x.x.x.+ です
 
-.. で収集したデータを使用してストレージシステムを設定する <<手順 1 ：設置の準備>>。
+.. <<手順 1 ：設置の準備>>で収集したデータを使用して、ストレージシステムを設定します。
 
 
 . アカウントを作成するか、アカウントにログインします。
 +
-.. をクリックします https://mysupport.netapp.com["mysupport.netapp.com"]
-.. アカウントを作成するか、アカウントにログインする必要がある場合は、_Create Account_をクリックします。
+.. 選択 https://mysupport.netapp.com["mysupport.netapp.com"]
+.. アカウントを作成する必要がある場合、またはアカウントにログインする場合は、「アカウント作成」を選択してください。
 
 
 . ダウンロードしてインストールします https://mysupport.netapp.com/site/tools["Active IQ Config Advisor"]

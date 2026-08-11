@@ -2,15 +2,13 @@
 permalink: fas2600/install-worksheet-linkout.html 
 sidebar: sidebar 
 keywords: fas2600, install, worksheet 
-summary: このワークシートを使用して、 ONTAP クラスタの構成に必要なサイト固有の IP アドレスやその他の情報を収集し、記録できます。 
+summary: ワークシートを使用して、サイト固有の IP アドレスや、FAS2600 システムの ONTAP クラスタを設定する際に必要なその他の情報を収集および記録できます。 
 ---
-= クラスタ設定ワークシート - FAS2600
+= FAS2600システムのクラスタ構成ワークシートを使用する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このワークシートを使用して、 ONTAP クラスタの構成に必要なサイト固有の IP アドレスやその他の情報を収集し、記録できます。
-
-link:https://docs.netapp.com/us-en/ontap/software_setup/gather_cluster_setup_information.html["クラスタ設定ワークシート"]
+link:https://docs.netapp.com/us-en/ontap/software_setup/gather_cluster_setup_information.html["クラスタ設定ワークシート"^]を使用して、FAS2600システムのONTAPクラスタを設定する際に必要なサイト固有のIPアドレスやその他の情報を収集および記録します。

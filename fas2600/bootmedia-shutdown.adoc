@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, shut down the controller, manual, manual boot recovery 
 summary: 暗号化チェックを完了した後、FAS2600 システム上の障害のあるコントローラーをシャットダウンします。FAS2600 システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= 障害のあるコントローラ FAS2600 をシャットダウンします
+= ブートメディアのリカバリ中に、FAS2600システムの障害コントローラをシャットダウンします。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

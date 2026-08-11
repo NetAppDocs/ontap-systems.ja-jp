@@ -1,16 +1,16 @@
 ---
 permalink: fas2700/bootmedia-complete-rma.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, complete, replacement, process, replace, return, failed, rma, instructions, manual, manual boot recovery 
-summary: 部品を交換した後、キットに同梱されている RMA 手順に従って、故障した部品をNetAppに返却できます。FAS2700 システムは、手動のブート メディア回復手順のみをサポートします。 
+keywords: fas2700, complete, replacement, process, replace, return, failed, rma, instructions, manual, manual boot recovery 
+summary: FAS2700システムのブートメディアを交換したら、キットに同梱されているRMA手順書に記載されているとおりに、障害が発生した部品をNetAppに返送してください。 
 ---
-= 障害のあるパーツを NetApp - AFF A220 および FAS2700 に戻します
+= 障害が発生したFAS2700ブートメディアをNetAppに返送してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-障害が発生したパーツは、キットに付属のRMA指示書に従ってNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページを参照してください。
+FAS2700システムのブートメディアを交換したら、キットに同梱されているRMA手順書に記載されているとおりに、障害が発生した部品をNetAppに返送してください。
 
-FAS2700 システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。
+詳細については、 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]ページを参照してください。FAS2700システムは、手動によるブートメディアリカバリ手順のみをサポートしています。自動ブートメディア復旧はサポートされていません。

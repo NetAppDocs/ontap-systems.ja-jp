@@ -1,10 +1,10 @@
 ---
 permalink: fas2700/bootmedia-replace.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, replace, boot, media, controller, module, fru map, manual, manual boot recovery 
+keywords: fas2700, replace, boot, media, controller, module, fru map, manual, manual boot recovery 
 summary: FAS2700 コントローラ モジュール上の障害が発生したブート メディアを交換します。FAS2700 システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= ブートメディアの交換- FAS2700
+= FAS2700システムのブートメディアを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

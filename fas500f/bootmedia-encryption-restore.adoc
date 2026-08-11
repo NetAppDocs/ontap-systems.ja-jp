@@ -2,16 +2,16 @@
 permalink: fas500f/bootmedia-encryption-restore.html 
 sidebar: sidebar 
 keywords: fas500f, post boot media replacement steps for okm, nse, and nve 
-summary: 環境変数を確認したら、オンボードキーマネージャ（OKM）、NetApp Storage Encryption（NSE）、またはNetApp Volume Encryption（NVE）が有効になっているシステムに固有の手順を完了する必要があります。 
+summary: 環境変数を確認した後、オンボードキーマネージャ OKM、NetApp Storage Encryption NSE、または NetApp Volume Encryption NVE が有効になっているシステムに固有の手順を完了する必要があります。 
 ---
-= リストア暗号化- FAS500f
+= FAS500f システムのブートメディアの暗号化を手動ブートリカバリプロセス後に復元します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-交換用ブートメディアで暗号化をリストアします。
+ブートメディアを交換した後、FAS500f システムがオンボードキーマネージャ、NetApp Storage Encryption、または NetApp Volume Encryption を使用してデータを保護している場合は、暗号化を復元してください。
 
 キー マネージャーの種類に応じて適切な手順を実行し、システムの暗号化を復元します。システムで使用されているキー マネージャーが不明な場合は、ブート メディアの交換手順の開始時にキャプチャした設定を確認してください。
 

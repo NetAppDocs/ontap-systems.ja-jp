@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: fas2600 maintenance, maintenance, repairing fas2600, repairing fas2600, replace aff fas2600 components, replace aff fas2600 components 
 summary: fas2600ハードウェアのメンテナンス 
 ---
-= FAS2600ハードウェアのメンテナンス
+= FAS2600ストレージシステムのメンテナンスについて
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-FAS2600ストレージシステムでは、次のコンポーネントに対してメンテナンス手順を実行できます。
+FAS2600ストレージシステムのこれらのコンポーネントに対して、メンテナンス手順を実行できます。
 
 
 
@@ -57,8 +57,8 @@ FAS2600ストレージシステムでは、次のコンポーネントに対し�
 
 
 
-[[nvem-battery]]
-== NVEMハツテリ
+[[nvmem-battery]]
+== NVMEM バッテリ
 
 バッテリはコントローラに搭載されており、 AC 電源で障害が発生した場合にキャッシュデータを保持します。
 

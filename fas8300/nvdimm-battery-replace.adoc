@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, nvdimm, battery, remove, controller, module, controller, metrocluster, configuration, aggregate, configuration, reinstall, run, system, switch, shut, down 
 summary: NVDIMM バッテリを交換するには、コントローラモジュールを取り外し、バッテリを取り外し、バッテリを交換してから、コントローラモジュールを再度取り付ける必要があります。 
 ---
-= NVDIMM バッテリを交換します - FAS8300 および FAS8700
+= FAS8300またはFAS8700システムのNVDIMMバッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,7 +13,7 @@ summary: NVDIMM バッテリを交換するには、コントローラモジュ�
 [role="lead"]
 NVDIMM バッテリを交換するには、コントローラモジュールを取り外し、バッテリを取り外し、バッテリを交換してから、コントローラモジュールを再度取り付ける必要があります。
 
-システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。
+システム内の他のすべての構成要素も正常に機能していなければなりません。そうでない場合は、テクニカルサポートにお問い合わせください。
 
 
 

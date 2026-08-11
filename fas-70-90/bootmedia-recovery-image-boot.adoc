@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, boot the recovery image 
 summary: FAS70またはFAS90システムに新しいブートメディアデバイスを設置したら、リカバリイメージをUSBドライブからブートし、パートナーノードから構成をリストアできます。 
 ---
-= USBドライブからの手動ブートメディアリカバリ - FAS70およびFAS90
+= 手動ブートリカバリプロセスを使用して、FAS70またはFAS90システムでリカバリイメージを起動します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

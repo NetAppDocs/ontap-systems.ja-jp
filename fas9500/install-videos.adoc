@@ -2,16 +2,16 @@
 permalink: fas9500/install-videos.html 
 sidebar: sidebar 
 keywords: FAS9500 
-summary: 次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。 
+summary: このビデオでは、新しいFAS9500システムのインストールとケーブル接続の方法を説明します。 
 ---
-= ビデオの手順- FAS9500
+= FAS9500システムのインストールとセットアップのビデオをご覧ください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
+このビデオでは、新しいFAS9500システムのインストールとケーブル接続の方法を説明します。
 
 .アニメーション- FAS9500のインストールとセットアップの手順（ISI）
 video::ab450621-9e1c-44a7-befa-ae7c01708d9e[panopto]

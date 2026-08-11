@@ -1,17 +1,17 @@
 ---
 permalink: fas8200/maintain-overview.html 
 sidebar: sidebar 
-keywords: fas2600 maintenance, maintenance, repairing fas2600, repairing fas2600, replace aff fas2600 components, replace aff fas2600 components 
-summary: fas2600ハードウェアのメンテナンス 
+keywords: fas8200 maintenance, maintenance, repairing fas8200, replace fas8200 components 
+summary: FAS8200ストレージシステムのコンポーネント（ブートメディア、シャーシ、コントローラ、DIMM、電源など）に対してメンテナンス手順を実行できます。 
 ---
-= FAS8200ハードウェアのメンテナンス
+= FAS8200ストレージシステムのメンテナンスについて学ぶ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-FAS8200ストレージシステムでは、次のコンポーネントについてメンテナンス手順を実行できます。
+FAS8200ストレージシステムのコンポーネント（ブートメディア、シャーシ、コントローラ、DIMM、電源など）に対してメンテナンス手順を実行できます。
 
 
 
@@ -57,8 +57,8 @@ FAS8200ストレージシステムでは、次のコンポーネントについ�
 
 
 
-[[nvem-battery]]
-== NVEMハツテリ
+[[nvmem-battery]]
+== NVMEM バッテリ
 
 バッテリはコントローラに搭載されており、 AC 電源で障害が発生した場合にキャッシュデータを保持します。
 

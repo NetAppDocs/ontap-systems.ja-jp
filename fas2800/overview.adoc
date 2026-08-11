@@ -1,8 +1,8 @@
 ---
 permalink: fas2800/overview.html 
 sidebar: sidebar 
-keywords: FAS2800 specifications, FAS2800 specs, NetApp FAS2800, FAS2800 hardware 
-summary: FAS2800プラットフォームグループの主な仕様 
+keywords: FAS2820 specifications, FAS2820 specs, NetApp FAS2820, FAS2820 hardware 
+summary: FAS2820プラットフォームグループの主な仕様 
 ---
 = FAS2820の主な仕様
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: FAS2800プラットフォームグループの主な仕様
 
 
 [role="lead"]
-以下は、単一の高可用性ペアにおけるFAS2820ストレージ システムの選択仕様です。このストレージ システムの完全な仕様については、 NetApp Hardware Universe (HWU) をご覧ください。
+これらは、単一の高可用性ペアにおける FAS2820 ストレージシステムの主な仕様です。このストレージシステムの完全な仕様については、 https://hwu.netapp.com["NetApp Hardware Universe の略"^]をご覧ください。
 
 
 

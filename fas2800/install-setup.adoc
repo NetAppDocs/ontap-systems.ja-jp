@@ -1,17 +1,17 @@
 ---
 permalink: fas2800/install-setup.html 
 sidebar: sidebar 
-keywords: fas2800, install, setup, initial configuration 
-summary: システムを設置してセットアップします。 
+keywords: fas2820, install, setup, initial configuration 
+summary: FAS2820システムのインストールとセットアップ。 
 ---
-= はじめに：設置とセットアップを選択してください
+= FAS2820のインストールとセットアップ方法の選択
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ほとんどの構成では、さまざまなコンテンツ形式から選択できます。
+ほとんどの FAS2820 構成では、さまざまなコンテンツ形式から選択できます。
 
 * link:../fas2800/install-quick-guide.html["クイックステップ"]
 +

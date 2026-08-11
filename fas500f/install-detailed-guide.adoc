@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, detailed installation 
 summary: このセクションでは、 FAS500f システムのインストール手順について詳しく説明します。 
 ---
-= 詳細な手順 - FAS500f
+= 詳細な手順を使用してFAS500fストレージシステムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -450,7 +450,7 @@ image::../media/drw_autodiscovery_controler_select.png[ONTAPアイコンの選�
 
 +
 .. エクスプローラを開きます。
-.. 左側のペインで、 *Network* をクリックします。
+.. 左側のペインで「ネットワーク」を選択します。
 .. 右クリックし、 * 更新 * を選択します。
 .. いずれかの ONTAP アイコンをダブルクリックし、画面に表示された証明書を受け入れます。
 +

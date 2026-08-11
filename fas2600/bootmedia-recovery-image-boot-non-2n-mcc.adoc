@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, verify environment variables, image, boot the recovery image, manual, manual boot recovery 
 summary: FAS2600 システムの USB ドライブからONTAPリカバリ イメージを起動して、ブート メディアを復元します。FAS2600 システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= リカバリイメージ - FAS2600 をブートします
+= FAS2600システムでリカバリイメージを起動する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -53,7 +53,7 @@ FAS2600 システムは、手動のブート メディア回復手順のみを�
 
 
 |===
-. 環境変数が正しく設定されていることを確認します。
+. 環境変数が想定どおりに設定されていることを確認します。
 +
 .. コントローラに LOADER プロンプトを表示します。
 .. printenv コマンドを使用して ' 環境変数の設定を確認します

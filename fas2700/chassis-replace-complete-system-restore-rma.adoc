@@ -1,16 +1,18 @@
 ---
 permalink: fas2700/chassis-replace-complete-system-restore-rma.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
-summary: キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、アグリゲートをスイッチバックし、障害が発生したパーツをNetAppに返却する必要があります。 
+keywords: fas2700, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
+summary: FAS2700システムのシャーシ交換を完了するには、シャーシのHA状態を確認し、障害のあるコンポーネントをNetAppに返送してください。 
 ---
-= 構成のリストアと確認- FAS2700
+= FAS2700システムのシャーシ交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+FAS2700システムのシャーシ交換を完了するには、シャーシのHA状態を確認し、障害のあるコンポーネントをNetAppに返送してください。
+
 キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、アグリゲートをスイッチバックし、障害が発生したパーツをNetAppに返却する必要があります。
 
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, replace the controller workflow 
 summary: FAS50 ストレージ システムのコントローラーを交換するには、次のワークフロー手順に従います。 
 ---
-= コントローラの交換ワークフロー- FAS50
+= FAS50コントローラー交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -23,7 +23,7 @@ FAS50 ストレージ システムのコントローラーを交換するには�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:controller-replace-move-hardware.html["コントローラを交換"]
 [role="quick-margin-para"]
-コントローラを交換するには、障害のあるコントローラを取り外し、FRUコンポーネントを交換用コントローラに移動し、交換用コントローラをシャーシに設置し、日時を設定してから、ケーブルを再接続します。
+コントローラの交換には、故障したコントローラの取り外し、FRU（交換可能ユニット）コンポーネントの交換用コントローラへの移動、交換用コントローラの設置、時刻と日付の設定、および配線の再接続が含まれます。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:controller-replace-system-config-restore-and-verify.html["システム構成をリストアおよび検証します"]
 [role="quick-margin-para"]

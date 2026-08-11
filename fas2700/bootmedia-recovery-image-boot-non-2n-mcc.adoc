@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2700, aff 220, boot, recovery, image, restore, file, system, environmental, varible, manual, manual boot recovery 
 summary: FAS2700 システムの USB ドライブからONTAPリカバリ イメージを起動して、ブート メディアを復元します。FAS2700 システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= リカバリイメージのブート- FAS2700
+= FAS2700システムでリカバリイメージを起動する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

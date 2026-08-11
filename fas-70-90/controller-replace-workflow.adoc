@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, replace the controller 
 summary: まず、障害のあるコントローラのシャットダウン、コントローラの取り外しと交換、システム設定の再設定、システム動作の確認を行い、FAS70またはFAS90ストレージシステムのコントローラの交換を開始します。 
 ---
-= コントローラの交換ワークフロー- FAS70およびFAS90
+= FAS70およびFAS90コントローラの交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

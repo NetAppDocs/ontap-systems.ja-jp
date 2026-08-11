@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, boot the recovery image 
 summary: 新しいブートメディアデバイスをFAS500fシステムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。 
 ---
-= パートナーノードからの自動ブートメディアリカバリ - FAS500f
+= 自動ブートリカバリプロセスを使用して FAS500f システムのブートイメージを復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -301,4 +301,4 @@ LOADER-B>
 
 
 .次の手順
-ONTAPイメージをリストアしたあと、ノードが稼働してデータを提供できるようlink:bootmedia-complete-rma-bmr.html["故障した部品をNetAppに返却します。"]になります。
+ONTAPイメージをリストアしてノードが起動しデータを提供している状態になったら、link:bootmedia-complete-rma-bmr.html["故障した部品をNetAppに返却します。"]。

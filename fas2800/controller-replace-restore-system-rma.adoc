@@ -1,17 +1,17 @@
 ---
 permalink: fas2800/controller-replace-restore-system-rma.html 
 sidebar: sidebar 
-keywords: fas2800, how to restore NetApp Storage Encryption, how to complete the replacement process 
-summary: NetApp Storage EncryptionまたはVolume Encryptionの設定を復元し、交換用コントローラのライセンスをインストールし、キットに同梱されているRMAの手順書に記載されているとおりに障害が発生した部品をNetAppに返却することで、システムを完全に動作する状態に復元します。 
+keywords: fas2820, how to restore NetApp Storage Encryption, how to complete the replacement process 
+summary: 必要に応じてNetApp Storage EncryptionまたはVolume Encryptionの構成を復元し、交換用コントローラのライセンスをインストールして、キットに同梱されているRMA指示書の説明に従って障害パーツをNetAppに返却することにより、FAS2820システムを完全な動作状態に復旧します。 
 ---
-= システムのリストアの完了- FAS2820
+= FAS2820 システムのコントローラーの交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-NetAppストレージ暗号化またはボリューム暗号化の設定をリストアし（必要な場合）、交換用コントローラのライセンスをインストールし、障害が発生したパーツをNetAppに返却することで、システムを完全な運用状態にリストアします。手順については、キットに付属のRMA指示書を参照してください。
+必要に応じてNetApp Storage EncryptionまたはVolume Encryptionの構成を復元し、交換用コントローラのライセンスをインストールして、キットに同梱されているRMA指示書の説明に従って障害パーツをNetAppに返却することにより、FAS2820システムを完全な動作状態に復旧します。
 
 
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, shut down the controller 
 summary: FAS500f ストレージ システムの障害のあるコントローラーをシャットダウンして、ブート メディアの交換時にデータ損失を防ぎ、システムの安定性を確保します。 
 ---
-= 自動ブートメディアリカバリのためにコントローラをシャットダウンします - FAS500f
+= FAS500f システムの自動ブートリカバリプロセス中に障害のあるコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

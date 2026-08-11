@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, cabling, cluster cabling, host network cabling, management network cabling, shelf cabling 
 summary: FAS50ストレージシステムハードウェアを設置したら、コントローラをネットワークおよびシェルフにケーブル接続します。 
 ---
-= ハードウェアのケーブル接続- FAS50
+= FAS50ハードウェアをネットワークおよびストレージ接続用にケーブル接続します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -164,7 +164,7 @@ IMPORTANT: まだ電源コードを接続しないでください。
 .このタスクについて
 * ケーブル接続例ではDS460Cシェルフを使用していますが、追加のSASシェルフもサポートされます（を参照）link:https://hwu.netapp.com["NetApp Hardware Universe の略"^]。
 +
-サポートされている他のSASシェルフのケーブル接続も同様です。を参照して link:../sas3/install-new-system.html["新しいシステムを設置する場合のシェルフの設置とケーブル接続"^]を参照することもできますlink:../sas3/overview-cabling-rules-examples.html["SASケーブル接続ルー、ワークシート、および例の概要"^]。
+その他のサポートされているSASシェルフのケーブル配線も同様です。link:../sas3/install-new-system.html["新しいシステムを設置する場合のシェルフの設置とケーブル接続"^]を参照してください。また、link:../sas3/overview-cabling-rules-examples.html["SASケーブル配線規則、ワークシート、および例の概要"^]も参照できます。
 
 * ストレージシステムでサポートされるシェルフの最大数、および光ファイバやスイッチ接続などのすべてのケーブル接続オプションについては、を参照してくださいlink:https://hwu.netapp.com["NetApp Hardware Universe の略"^]。
 * 図は、コントローラAのケーブル配線を青で示し、コントローラBのケーブル配線を黄色で示しています。

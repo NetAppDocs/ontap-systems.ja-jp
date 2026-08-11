@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, complete the replacement process 
 summary: FAS70またはFAS90システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに戻します。 
 ---
-= 障害が発生したパーツをNetApp - FAS70およびFAS90に返却します。
+= 手動ブートリカバリプロセスの完了後、障害が発生したFAS70またはFAS90のブートメディアをNetAppに返送してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

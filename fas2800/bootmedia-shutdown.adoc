@@ -1,17 +1,17 @@
 ---
 permalink: fas2800/bootmedia-shutdown.html 
 sidebar: sidebar 
-keywords: fas2800, shut, down, impaired, controller, take, over 
-summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
+keywords: fas2820, shut, down, impaired, controller, take, over 
+summary: FAS2820ストレージシステムの障害コントローラーをシャットダウンして、手動ブート回復プロセス中のデータ損失を防ぎ、システムの安定性を維持します。 
 ---
-= 手動ブートメディアリカバリのためにコントローラをシャットダウンする - FAS2820
+= 手動ブートリカバリプロセス中に FAS2820 システムの障害コントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-障害のあるコントローラをシャットダウンするかテイクオーバーします。
+FAS2820ストレージシステムの障害コントローラーをシャットダウンして、手動ブート回復プロセス中のデータ損失を防ぎ、システムの安定性を維持します。
 
 ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。システムで以前のバージョンのONTAPを実行している場合は、手動ブートリカバリ手順を使用する必要があります。
 

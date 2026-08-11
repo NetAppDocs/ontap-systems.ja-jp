@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, power controllers 
 summary: FAS50ストレージ・システムのネットワークおよびシェルフにコントローラをケーブル接続したら、シェルフとコントローラの電源をオンにします。 
 ---
-= ストレージ・システムの電源をオンにします（FAS50）。
+= FAS50 ストレージシステムの電源を投入する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

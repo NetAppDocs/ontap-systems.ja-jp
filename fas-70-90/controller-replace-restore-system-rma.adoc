@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: fas70, fas90, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: 論理インターフェイスLIFがホームポートにレポートしていることを確認し、クラスタの健全性チェックを実行してから、障害が発生した部品をNetAppに返却して、FAS70またはFAS90コントローラの交換手順の最終ステップを完了します。 
 ---
-= コントローラ交換後の処理- FAS70およびFAS90
+= FAS70またはFAS90システムのコントローラー交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-AFF A1Kシステムのコントローラ交換を完了するには、まずNetAppストレージ暗号化設定を復元します（必要な場合）。次に、論理インターフェイス（LIF）がホームポートにレポートしていることを確認し、クラスタの健全性チェックを実行します。最後に、故障した部品をNetAppに返送してください。
+FAS70またはFAS90システムのコントローラ交換を完了するには、まず（必要に応じて）NetApp Storage Encryption構成を復元します。次に、論理インターフェイス（LIF）がホームポートにレポートしていることを確認し、クラスタの健全性チェックを実行します。最後に、障害が発生した部品をNetAppに返却します。
 
 
 

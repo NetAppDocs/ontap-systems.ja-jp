@@ -1,16 +1,18 @@
 ---
 permalink: fas2700/controller-replace-shutdown.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, shut down the impaired controller 
-summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
+keywords: fas2700, shut down the impaired controller 
+summary: FAS2700システム内の障害コントローラを交換する前に、テイクオーバーを実行してLOADERプロンプトに停止させ、シャットダウンしてください。 
 ---
-= 障害のあるコントローラをシャットダウン- FAS2700
+= 交換前に、FAS2700システム内の障害コントローラをシャットダウンしてください。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+FAS2700システム内の障害コントローラを交換する前に、テイクオーバーを実行してLOADERプロンプトに停止させ、シャットダウンしてください。
+
 障害のあるコントローラーを引き継いで停止し、正常なコントローラーが障害のあるコントローラーのストレージからデータを引き続き提供できるようにします。これを行うには、AutoSupportで自動ケース作成を抑制し、自動ギブバックを無効にして、障害のあるコントローラをLOADERプロンプトに切り替えます。LOADERプロンプトは、FRUを交換できる安全な停止状態です。
 
 .このタスクについて

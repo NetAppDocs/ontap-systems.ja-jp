@@ -1,16 +1,18 @@
 ---
 permalink: fas2700/caching-module-replace.html 
 sidebar: sidebar 
-keywords: replace, caching, module, aff a220, fas 2700, shut, down, impaired, controller, controller, aggregates, metrocluster, configuration, replace, reinstall 
-summary: システムがモジュールのオフラインを示す単一のAutoSupport ASUPメッセージを登録した場合は、コントローラモジュールのキャッシングモジュールを交換する必要があります。交換しないと、パフォーマンスが低下します。 
+keywords: replace, caching, module, fas 2700, shut, down, impaired, controller, controller, aggregates, metrocluster, configuration, replace, reinstall 
+summary: システムがモジュールのオフラインを示す単一のAutoSupport ASUPメッセージを受信した場合は、FAS2700システムのキャッシュモジュールを交換してください。交換しない場合、パフォーマンスが低下します。 
 ---
-= キャッシングモジュールの交換- FAS2700
+= FAS2700システムのキャッシュモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+システムがモジュールのオフライン化を示す単一のAutoSupport（ASUP）メッセージを登録した場合は、FAS2700システムのキャッシュモジュールを交換してください。交換しない場合、パフォーマンスが低下します。
+
 モジュールがオフラインになったことを示す単一の AutoSupport （ ASUP ）メッセージがシステムに登録された場合は、コントローラモジュールのキャッシングモジュールを交換する必要があります。交換しないと、パフォーマンスが低下します。
 
 * 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。

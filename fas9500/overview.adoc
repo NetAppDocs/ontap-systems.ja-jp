@@ -11,7 +11,7 @@ summary: FAS9500ストレージシステムの主な仕様
 
 
 [role="lead"]
-以下はFAS9500の選定仕様です。訪問 https://hwu.netapp.com["NetApp Hardware Universe の略"^]FAS9500仕様の完全なリストについては、(HWU) を参照してください。このページは、単一の高可用性ペアを反映しています。
+単一の高可用性（HA）ペアにおける FAS9500 ストレージシステムの主な仕様を確認し、FAS9500 仕様の完全なリストについては https://hwu.netapp.com["NetApp Hardware Universe の略"^]（HWU）を参照してください。
 
 
 

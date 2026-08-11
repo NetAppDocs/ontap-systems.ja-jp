@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, replace the nv battery, NV battery 
 summary: FAS70またはFAS90システムでは、バッテリの充電が失われ始めたり、バッテリに障害が発生したりした場合に、NVバッテリを交換します。NVバッテリは、停電時に重要なシステム・データを保持する役割を担っています。交換プロセスでは、障害のあるコントローラのシャットダウン、コントローラモジュールの取り外し、NVバッテリの交換、コントローラモジュールの再取り付け、障害が発生したパーツのNetAppへの返却を行います。 
 ---
-= NV バッテリを交換します - FAS70 および FAS90
+= FAS70またはFAS90システムのNVバッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

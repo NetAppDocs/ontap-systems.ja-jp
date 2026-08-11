@@ -2,16 +2,16 @@
 permalink: fas500f/install-videos.html 
 sidebar: sidebar 
 keywords: fas500f, hardware installation and cabling video 
-summary: 次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。 
+summary: このビデオを見て、新しいFAS500fシステムのインストールとケーブル接続の方法を確認してください。 
 ---
-= ビデオ手順- FAS500f
+= FAS500f ストレージシステムのインストールビデオをご覧ください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
+このビデオを見て、新しいFAS500fシステムのインストールとケーブル接続の方法を確認してください。
 
 .アニメーション- FAS500fのインストールとセットアップ
 video::1f975061-b285-411b-b2d7-ac680185a0d1[panopto]

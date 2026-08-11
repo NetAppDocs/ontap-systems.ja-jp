@@ -1,17 +1,17 @@
 ---
 permalink: fas2800/pci-cards-and-risers-replace.html 
 sidebar: sidebar 
-keywords: fas2800, fas2800, replace, pcie, mezzanine, card, disconnect, cable, sfp, qsfp, module, fail, mezzanine, shut, down, impair, controller, pcie, switch, aggregate, two-node, metrocluster, complete, replacement, process, replace a pcie or mezzanine card, shut down the impaired controller, remove the controller module, replace a pcie card, replace the mezzanine card, install the controller module, switch back aggregates in a two-node metrocluster configuration, restore the controller module to operation, complete the replacement process 
-summary: PCIe カードまたはメザニンカードを交換するには、ケーブルとすべての SFP モジュールと QSFP モジュールをカードから外し、障害が発生した PCIe カードまたはメザニンカードを交換してから、カードにケーブルを再接続する必要があります。 
+keywords: fas2820, fas2820, replace, pcie, mezzanine, card, disconnect, cable, sfp, qsfp, module, fail, mezzanine, shut, down, impair, controller, pcie, switch, aggregate, two-node, metrocluster, complete, replacement, process, replace a pcie or mezzanine card, shut down the impaired controller, remove the controller module, replace a pcie card, replace the mezzanine card, install the controller module, switch back aggregates in a two-node metrocluster configuration, restore the controller module to operation, complete the replacement process 
+summary: FAS2820 システムのメザニンカードが故障した場合は交換するか、新しいカードをインストールして別のプロトコルにアップグレードしてください。 
 ---
-= メザニンカードを交換してください- FAS2820
+= FAS2820システムのメザニンカードを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-カードに障害が発生した場合、または新しいカードをインストールして別のプロトコルにアップグレードする場合は、FAS2820システムのメザニンカードを交換してください。
+FAS2820 システムのメザニンカードが故障した場合は交換するか、新しいカードをインストールして別のプロトコルにアップグレードしてください。
 
 * この手順は、お使いのシステムでサポートされている任意の ONTAP バージョンで使用してください。
 * メザニンカードを同じタイプまたは別のタイプに交換します。

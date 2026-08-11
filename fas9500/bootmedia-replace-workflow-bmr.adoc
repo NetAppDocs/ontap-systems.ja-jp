@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: fas9500, replace the boot media 
 summary: 交換要件を確認し、コントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システム機能を確認して、 FAS9500ストレージ システムのブート メディアの交換を開始します。 
 ---
-= ブートメディア自動リカバリワークフロー - FAS9500
+= FAS9500 自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ブートイメージの自動リカバリでは、システムが適切なブートメニューオプションを自動的に識別して選択します。パートナーノードのブートイメージを使用して、FAS9500ストレージシステムの交換用ブートメディアにONTAPを再インストールします。
+自動ブートリカバリプロセスを使用して、FAS9500ストレージシステムのブートメディアの交換を開始します。システムは適切なブートメニューオプションを自動的に識別して選択し、パートナーノード上のブートイメージを使用して、交換用ブートメディアにONTAPを再インストールします。
 
 自動ブートメディアリカバリプロセスは、 ONTAP 9.17.1以降でのみサポートされています。ストレージシステムで以前のバージョンのONTAPを実行している場合は、 link:bootmedia-replace-workflow.html["手動ブート回復手順"] 。
 
@@ -23,7 +23,7 @@ summary: 交換要件を確認し、コントローラをシャットダウン�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:bootmedia-shutdown-bmr.html["コントローラをシャットダウン"]
 [role="quick-margin-para"]
-ブートメディアの交換が必要になったときは、ストレージシステムのコントローラをシャットダウンします。
+ブート メディアを交換する必要がある場合は、ストレージ システム内のコントローラーをシャットダウンします。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:bootmedia-replace-bmr.html["ブートメディアの交換"]
 [role="quick-margin-para"]

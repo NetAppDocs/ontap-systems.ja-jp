@@ -1,17 +1,17 @@
 ---
 permalink: fas2800/caching-module-replace.html 
 sidebar: sidebar 
-keywords: replace, caching, module,  fas2800, shut, down, impaired, controller, controller, aggregates, metrocluster, configuration, replace, reinstall 
-summary: システムがモジュールのオフラインを示す単一のAutoSupport ASUPメッセージを登録した場合は、コントローラモジュールのキャッシングモジュールを交換する必要があります。故障したモジュールを交換しないと、ストレージシステムのパフォーマンスが低下します。 
+keywords: replace, caching, module,  fas2820, shut, down, impaired, controller, controller, aggregates, metrocluster, configuration, replace, reinstall 
+summary: FAS2820システムのコントローラーモジュール内のキャッシュモジュールは、モジュールがオフラインになったことを示す単一のAutoSupportメッセージが登録された場合に交換する必要があります。障害ドライブのモジュールを交換しないと、ストレージシステムのパフォーマンスが低下します。 
 ---
-= キャッシングモジュールの交換- FAS2820
+= FAS2820システムのキャッシュモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-モジュールがオフラインになったことを示す単一の AutoSupport （ ASUP ）メッセージがシステムに登録された場合は、コントローラモジュールのキャッシングモジュールを交換する必要があります。交換しないと、パフォーマンスが低下します。
+FAS2820 システムのコントローラーモジュール内のキャッシュモジュールは、モジュールがオフラインになったことを示す単一の AutoSupport（ASUP）メッセージが登録された場合に交換する必要があります。障害が発生したモジュールを交換しないと、ストレージシステムのパフォーマンスが低下します。
 
 * 障害が発生したコンポーネントは、プロバイダから受け取った交換用 FRU コンポーネントと交換する必要があります。
 

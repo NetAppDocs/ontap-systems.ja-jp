@@ -2,16 +2,16 @@
 permalink: fas8300/controller-replace-recable-reassign-disks.html 
 sidebar: sidebar 
 keywords: fas8300, fas8700, how to recable the system, how to reassign disks 
-summary: ストレージリソースの制御を交換用コントローラに戻すと、FAS8300およびFAS8700システムは通常動作を再開できます。 
+summary: ストレージリソースの制御を交換用コントローラに戻して、FAS8300またはFAS8700システムが通常動作を再開できるようにします。 
 ---
-= コントローラを返却する - FAS8300 および FAS8700
+= FAS8300またはFAS8700システムのコントローラーを返却して、通常の運用を再開します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ストレージリソースの制御を交換用コントローラに戻すと、FAS8300およびFAS8700システムは通常動作を再開できます。
+ストレージリソースの制御を交換用コントローラに戻して、FAS8300またはFAS8700システムが通常動作を再開できるようにします。
 
 [role="tabbed-block"]
 ====

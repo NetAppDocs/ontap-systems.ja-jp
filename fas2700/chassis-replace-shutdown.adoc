@@ -1,17 +1,17 @@
 ---
 permalink: fas2700/chassis-replace-shutdown.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
-summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
+keywords: fas2700, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
+summary: シャーシを交換する前に、お使いの構成に応じた適切な手順に従って、FAS2700システム内の障害コントローラをシャットダウンするか、テイクオーバーしてください。 
 ---
-= コントローラのシャットダウン- FAS2700
+= シャーシを交換するために FAS2700 コントローラをシャットダウンします。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
+シャーシを交換する前に、お使いの構成に応じた適切な手順に従って、FAS2700システム内の障害コントローラをシャットダウンするか、テイクオーバーしてください。
 
 
 

@@ -1,17 +1,17 @@
 ---
 permalink: fas2700/install-detailed-guide.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, detailed, guide, prepare, install, hardware, cable, controllers, node, switchless, cluster, network, configuration, system, setup, discovery 
-summary: このページでは、一般的なNetAppシステムのインストール手順について詳しく説明します。 
+keywords: fas2700, detailed, guide, prepare, install, hardware, cable, controllers, node, switchless, cluster, network, configuration, system, setup, discovery 
+summary: このページでは、FAS2700システムのインストール手順を詳細に説明しています。 
 ---
-= 詳細ガイド- FAS2700
+= 詳細な手順を使用してFAS2700システムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このページでは、一般的なNetAppシステムのインストール手順について詳しく説明します。インストール手順の詳細については、このガイドを参照してください。
+FAS2700システムのインストール準備から初期設定まで、詳細なステップバイステップの手順に従ってインストールを進めてください。
 
 
 

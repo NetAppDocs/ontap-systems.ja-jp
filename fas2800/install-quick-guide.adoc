@@ -1,17 +1,17 @@
 ---
 permalink: fas2800/install-quick-guide.html 
 sidebar: sidebar 
-keywords: fas2800, quick, guide, graphic, instructions, install, rack, cable 
-summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。 
+keywords: fas2820, quick, guide, graphic, instructions, install, rack, cable 
+summary: このガイドでは、FAS2820システムのインストール手順を図解で説明します。ラックへの設置とケーブル配線から初期システム起動まで、順を追って説明します。 
 ---
-= クイックガイド- FAS2820
+= クイックステップを使用してFAS2820システムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。
+このクイック手順では、FAS2820システムのラックへの設置、ケーブル接続から初期のシステム立ち上げまでの設置手順を図入りで説明しています。この手順は、NetAppシステムの設置にすでにお慣れの方に最適です。
 
 設置およびセットアップ手順 _PDF ポスター：
 

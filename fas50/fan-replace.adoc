@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, aff, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module 
 summary: ファンに障害が発生した場合やファンが効率的に動作していない場合は、FAS50システムのファンモジュールを交換してください。システムの冷却や全体的なパフォーマンスに影響する可能性があります。交換プロセスでは、コントローラのシャットダウン、コントローラの取り外し、ファンの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。 
 ---
-= ファンモジュールの交換- FAS50
+= FAS50 システムのファンを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

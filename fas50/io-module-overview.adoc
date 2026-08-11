@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, replace io module 
 summary: FAS50 ストレージ システムは、I/O モジュールを拡張または交換してネットワーク接続とパフォーマンスを強化する柔軟性を提供します。ネットワーク機能をアップグレードしたり、故障したモジュールに対処したりする際には、I/Oモジュールの追加、ホットスワップ、交換が不可欠です。 
 ---
-= I/Oモジュールメンテナンスの概要 - FAS50
+= FAS50システムにおけるI/Oモジュールの追加と交換について
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

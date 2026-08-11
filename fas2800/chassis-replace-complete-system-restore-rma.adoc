@@ -1,16 +1,17 @@
 ---
 permalink: fas2800/chassis-replace-complete-system-restore-rma.html 
 sidebar: sidebar 
-keywords: fas2800, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
-summary: キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、アグリゲートをスイッチバックし、障害が発生したパーツをNetAppに返却する必要があります。 
+keywords: fas2820, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
+summary: シャーシの HA 状態を確認し、アグリゲートをスイッチバックし、障害ドライブのある部品を NetApp に返却して、キットに同梱されている RMA 手順書に記載されているとおりに FAS2820 システムのシャーシ交換を完了する必要があります。 
 ---
-= 構成のリストアと確認- FAS2820
+= FAS2820システムのシャーシの交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
-キットに付属のRMA指示書の説明に従って、シャーシのHA状態でシステムを起動し、障害が発生した部品をNetAppに戻します。
+[role="lead"]
+シャーシの HA 状態を確認し、アグリゲートをスイッチバックして、障害のある部品を NetApp に返却し、キットに同梱されている RMA 手順書に記載されているとおりに FAS2820 システムのシャーシ交換を完了してください。
 
 
 
@@ -48,9 +49,9 @@ hA-state には、次のいずれかの値を指定できます。
 == 手順2：システムを起動します
 
 . 電源ケーブルをPSUに接続し直します（まだ接続していない場合）。
-. ロッカーのスイッチを*オン*に切り替えてPSUをオンにし、コントローラの電源が完全にオンになるまで待ちます。
+. ロッカースイッチを *ON* に切り替えて電源ユニットの電源を入れ、コントローラーが完全に起動するまで待ちます。
 . 電源投入後、シャーシとコントローラの前面と背面に障害LEDがないかどうかを確認します。
-. SSHを使用してノードのSPまたはBMCのIPアドレスに接続します。このアドレスは、ノードのシャットダウンに使用するアドレスと同じです。
+. SSH経由でノードのSPまたはBMC IPアドレスに接続します。これは、ノードをシャットダウンする際に使用するアドレスと同じです。
 . の説明に従って、追加の健全性チェックを実行します https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["ONTAPでスクリプトを使用してクラスタの健全性チェックを実行する方法"^]
 . AutoSupportのメンテナンス時間がトリガーされた場合は、を使用して終了します `system node autosupport invoke -node * -type all -message MAINT=END` コマンドを実行します
 

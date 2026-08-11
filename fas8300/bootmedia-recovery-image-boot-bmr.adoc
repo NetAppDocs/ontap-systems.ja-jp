@@ -2,9 +2,9 @@
 permalink: fas8300/bootmedia-recovery-image-boot-bmr.html 
 sidebar: sidebar 
 keywords: fas8300, boot the recovery image 
-summary: FAS8300またはFAS8700システムに新しいブート メディア デバイスをインストールした後、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。 
+summary: 新しいブートメディアデバイスをFAS8300またはFAS8700システムにインストールした後、自動ブートメディアリカバリプロセスを開始して、パートナーノードから構成を復元することができます。 
 ---
-= パートナーノードからの自動ブートメディアリカバリ - FAS8300およびFAS8700
+= 自動ブートリカバリプロセスを使用して、FAS8300またはFAS8700システムでリカバリイメージを起動します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -2,16 +2,16 @@
 permalink: fas8200/install-setup.html 
 sidebar: sidebar 
 keywords: fas8200, install, setup, initial configuration 
-summary: システムを設置してセットアップします。 
+summary: ほとんどの FAS8200 構成では、印刷可能な PDF やビデオチュートリアルなど、お客様に最適なインストールコンテンツ形式を選択できます。 
 ---
-= はじめに：設置とセットアップを選択してください
+= FAS8200ストレージシステムのインストール方法を選択してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ほとんどの構成では、さまざまなコンテンツ形式から選択できます。
+ほとんどの FAS8200 構成では、印刷可能な PDF やビデオチュートリアルなど、お客様に最適なインストールコンテンツ形式を選択できます。
 
 * link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2316769["クイックステップ"]
 +

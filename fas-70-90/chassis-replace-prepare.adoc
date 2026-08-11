@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, replace the chassis 
 summary: 障害のあるシャーシを識別し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けて、FAS70 および FAS90 システムの障害のあるシャーシを交換する準備をします。 
 ---
-= シャーシ交換の準備 - FAS70およびFAS90
+= FAS70またはFAS90シャーシの交換準備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

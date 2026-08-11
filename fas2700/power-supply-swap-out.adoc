@@ -1,16 +1,18 @@
 ---
 permalink: fas2700/power-supply-swap-out.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, swap, power, supply, turn off, disconnect, remove, old, install, connect, turn on, replacement 
+keywords: fas2700, swap, power, supply, turn off, disconnect, remove, old, install, connect, turn on, replacement 
 summary: 電源装置を交換するには、古い電源装置の電源を切って接続を解除し、装置を取り出したあとに、交換用電源装置を取り付けて接続し、電源を入れます。 
 ---
-= 電源のホットスワップ - FAS2700
+= FAS2700システムで電源ユニットをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+障害が発生したユニットの電源をオフにして取り外し、交換用ユニットを取り付けて再接続することで、FAS2700システム内の電源ユニットをホットスワップします。
+
 電源装置を交換するには、古い電源装置の電源を切って接続を解除し、装置を取り出したあとに、交換用電源装置を取り付けて接続し、電源を入れます。
 
 システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。

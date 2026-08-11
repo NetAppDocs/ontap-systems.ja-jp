@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, shut, chassis, controller, replace, remove, swap, verify, install, power, supply, metrocluster, aggregates, replacement, process, equipment, rack, ha, state, system 
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
-= コントローラ FAS8300 および FAS8700 をシャットダウンします
+= シャーシを交換するためにFAS8300またはFAS8700コントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, boot the recovery image 
 summary: FAS50 システムに新しいブート メディア デバイスをインストールした後、USB ドライブからリカバリ イメージを手動でブートして、パートナー ノードから構成を復元できます。 
 ---
-= USBドライブからの手動ブートメディアリカバリ - FAS50
+= 手動ブートリカバリプロセスを使用して、FAS50システムでリカバリイメージを起動します。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

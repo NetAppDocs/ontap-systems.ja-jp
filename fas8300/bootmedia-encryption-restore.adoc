@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: fas8300, fas8700, environment, variable, complete, system, onboard, key, manager, okm, storage, volume, netapp, encryption, post, boot, media, replacement, post boot media replacement stpes for okm nse and nve 
 summary: 交換用ブートメディアで暗号化をリストアします。 
 ---
-= 暗号化の復元 - FAS8300およびFAS8700
+= FAS8300またはFAS8700システムで手動ブートリカバリプロセス後にブートメディアの暗号化を復元します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-交換用ブートメディアで暗号化をリストアします。
+FAS8300またはFAS8700システムのブートメディアを交換した後、Onboard Key Manager（OKM）などのキーマネージャータイプに応じた手順を実行して、暗号化を復元してください。
 
 ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。システムで以前のバージョンのONTAPを実行している場合は、手動ブートリカバリ手順を使用する必要があります。
 

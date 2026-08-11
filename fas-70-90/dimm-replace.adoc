@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, replace a dimm 
 summary: 修正可能または修正不可能なメモリエラーが大量に検出された場合は、FAS70またはFAS90システムのDIMMを交換します。このようなエラーが発生すると、ストレージシステムでONTAPをブートできなくなる可能性があります。交換プロセスでは、障害コントローラのシャットダウン、障害コントローラの取り外し、DIMMの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。 
 ---
-= DIMMの交換- FAS70およびFAS90
+= FAS70またはFAS90システムのDIMMを交換してメモリエラーを修正する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

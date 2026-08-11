@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, complete, replacement, process, manual, manual boot recovery 
 summary: 部品を交換した後、キットに同梱されている RMA 手順に従って、故障した部品をNetAppに返却できます。FAS9000システムは、手動のブート メディア回復手順のみをサポートします。 
 ---
-= 障害が発生したパーツをNetApp - FAS9000に返却します。
+= 障害が発生したFAS9000ブートメディアをNetAppに返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

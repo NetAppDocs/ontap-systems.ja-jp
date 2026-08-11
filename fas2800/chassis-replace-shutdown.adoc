@@ -1,16 +1,18 @@
 ---
 permalink: fas2800/chassis-replace-shutdown.html 
 sidebar: sidebar 
-keywords: fas2800, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
-summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
+keywords: fas2820, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
+summary: FAS2820システムのシャーシを交換する前に、データ損失を防ぎ、システムの安定性を確保するために、コントローラーを正常にシャットダウンする必要があります。 
 ---
-= コントローラのシャットダウン- FAS2820
+= シャーシを交換するためにFAS2820コントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+FAS2820システムのシャーシを交換する前に、データ損失を防ぎ、システムの安定性を確保するために、コントローラーを正常にシャットダウンする必要があります。
+
 この手順は、2ノード構成のシステムが対象です。クラスタにサービスを提供する際の正常なシャットダウンの詳細については、を参照してください https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage["ストレージシステムの正常なシャットダウンと電源投入解決ガイド- NetAppナレッジベース"]。
 
 .作業を開始する前に

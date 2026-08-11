@@ -1,16 +1,18 @@
 ---
 permalink: fas2700/rtc-battery-replace.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, replace, real, time, clock, battery, impaired, controller, shut, down, controller, system, rtc, date, time, controller, module, reinstall, replace, open 
-summary: 正確な時刻同期に依存するシステムのサービスやアプリケーションが引き続き機能するように、コントローラモジュール内のリアルタイムクロックRTCバッテリーを交換します。 
+keywords: fas2700, replace, real, time, clock, battery, impaired, controller, shut, down, controller, system, rtc, date, time, controller, module, reinstall, replace, open 
+summary: FAS2700システムのリアルタイムクロックバッテリーを交換して、正確な時刻同期に依存するサービスやアプリケーションが引き続き機能するようにします。 
 ---
-= リアルタイムクロックバッテリの交換- FAS2700
+= FAS2700システムのリアルタイムクロックバッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+FAS2700システムのリアルタイムクロック（RTC）バッテリーを交換して、正確な時刻同期に依存するサービスやアプリケーションが引き続き機能するようにしてください。
+
 承認された RTC バッテリーを使用する必要があります。
 
 コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。

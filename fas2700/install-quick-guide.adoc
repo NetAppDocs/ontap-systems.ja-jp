@@ -1,17 +1,17 @@
 ---
 permalink: fas2700/install-quick-guide.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, quick, guide, graphic, instructions, install, rack, cable 
-summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。 
+keywords: fas2700, quick, guide, graphic, instructions, install, rack, cable 
+summary: このページでは、ラックへの設置やケーブル配線から初期システム起動まで、FAS2700システムの一般的な設置手順を図解で説明します。 
 ---
-= クイックガイド- FAS2700
+= 簡単な手順を使用してFAS2700システムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このページでは、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順を図で示します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。
+FAS2700 システムのインストールについて、ラックへの設置やケーブル接続から初期システム起動まで、図解付きのクイックステップ手順に従ってください。
 
 設置およびセットアップ手順 _PDF ポスター：
 

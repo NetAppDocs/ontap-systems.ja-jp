@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: system, cabinet, side, panel, front, rear, door, bolt-down, kit, optional, interconnect, pdu, equipment, integrate, cable, management, system, feature, system cabinet feature 
 summary: システムキャビネットは、サイドパネル、前面ドアと背面ドア、オプションのボルトダウンキット、オプションのインターコネクトキット、機器の PDU 、および統合されたケーブル管理システムで構成されています。 
 ---
-= システムキャビネットのコンポーネント
+= ONTAPシステムキャビネットの機能
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-システムキャビネットは、サイドパネル、前面ドアと背面ドア、オプションのボルトダウンキット、オプションのインターコネクトキット、機器の PDU 、および統合されたケーブル管理システムで構成されています。
+ONTAP ハードウェアシステムキャビネットは、サイドパネル、前面および背面ドア、オプションのボルト固定キット、オプションの相互接続キット、機器用の PDU、および統合ケーブル管理システムで構成されています。
 
 [cols="1,2"]
 |===

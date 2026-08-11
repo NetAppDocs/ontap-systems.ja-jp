@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, replace an nvdimm 
 summary: 不揮発性メモリに障害が発生した場合、またはアップグレードが必要な場合は、FAS70またはFAS90システムのNVRAMを交換します。 
 ---
-= NVRAMの交換- FAS70およびFAS90
+= FAS70またはFAS90システムのNVRAMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -1,16 +1,18 @@
 ---
 permalink: fas2700/controller-replace-system-config-restore-and-verify.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, restore and verify the system configuration, verify and set the ha state of the controller module 
-summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
+keywords: fas2700, restore and verify the system configuration, verify and set the ha state of the controller module 
+summary: ハードウェア交換とメンテナンスモードでの起動が完了したら、FAS2700システムのコントローラ構成を復元して確認してください。 
 ---
-= システム構成のリストアと確認- FAS2700
+= FAS2700システムでコントローラ構成を復元および検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+ハードウェア交換とメンテナンスモードでの起動が完了したら、FAS2700システムのコントローラ構成を復元して確認してください。
+
 ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。
 
 

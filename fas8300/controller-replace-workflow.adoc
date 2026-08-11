@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, replace the controller workflow 
 summary: 障害が発生したコントローラをシャットダウンし、コントローラを取り外して交換し、システム構成を復元し、ストレージリソースの制御を交換後のコントローラに戻すことで、FAS8300またはFAS8700ストレージシステムのコントローラを交換します。 
 ---
-= コントローラの交換ワークフロー - FAS8300およびFAS8700
+= FAS8300およびFAS8700コントローラー交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

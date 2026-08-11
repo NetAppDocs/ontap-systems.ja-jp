@@ -1,10 +1,10 @@
 ---
 permalink: fas500f/chassis-replace-shutdown.html 
 sidebar: sidebar 
-keywords: fas500f, shutdown the controllers 
-summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
+keywords: fas500f, shut down the controllers 
+summary: シャーシを交換するには、コントローラーの電源を切る必要があります。 
 ---
-= コントローラ FAS500f をシャットダウンします
+= シャーシを交換するために FAS500f コントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

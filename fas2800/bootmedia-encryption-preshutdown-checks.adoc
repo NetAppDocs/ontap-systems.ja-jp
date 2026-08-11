@@ -1,17 +1,17 @@
 ---
 permalink: fas2800/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
-keywords: fas2800, shutdown, checks, onboard, encryption, keys, impaired controller, disable, automatic, feedback 
-summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
+keywords: fas2820, shutdown, checks, onboard, encryption, keys, impaired controller, disable, automatic, feedback 
+summary: FAS2820ストレージシステムのデータセキュリティを確保するために、ブートメディアの暗号化キーのサポート状況とステータスを確認する必要があります。お使いのONTAPバージョンがNetApp Volume Encryptionをサポートしているかどうかを確認し、コントローラーをシャットダウンする前に、キーマネージャーがアクティブになっているかどうかを確認してください。 
 ---
-= 暗号化キーのサポートとステータスの確認- FAS2820
+= FAS2820システムのブートメディアの暗号化サポートを確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ストレージシステムのデータセキュリティを確保するには、暗号化キーのサポートとブートメディアのステータスを確認する必要があります。ONTAPのバージョンでNetApp Volume Encryption（NVE）がサポートされているかどうかを確認し、コントローラをシャットダウンする前にキー管理ツールがアクティブになっているかどうかを確認してください。
+FAS2820ストレージシステムのデータセキュリティを確保するために、ブートメディアの暗号化キーのサポート状況とステータスを確認してください。お使いのONTAPバージョンがNetAppボリューム暗号化（NVE）をサポートしているかどうかを確認してください。コントローラーをシャットダウンする前に、キーマネージャーがアクティブになっているかどうかを確認してください。
 
 ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。システムで以前のバージョンのONTAP を実行している場合は、手動ブートリカバリプロセスを使用する必要があります。
 

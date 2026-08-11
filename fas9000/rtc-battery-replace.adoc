@@ -2,15 +2,17 @@
 permalink: fas9000/rtc-battery-replace.html 
 sidebar: sidebar 
 keywords: fas9000, replace, real, time, battery, shut, down, impaired, node, controller, metrocluster, module, rtc, battery, reinstall, date, time, complete, process 
-summary: 正確な時刻同期に依存するシステムのサービスやアプリケーションが引き続き機能するように、コントローラモジュール内のリアルタイムクロックRTCバッテリーを交換します。 
+summary: コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。 
 ---
-= リアルタイムクロックバッテリを交換してください- AFF 9000
+= FAS9000システムのリアルタイム時計バッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。
+
 コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。
 
 * この手順は、システムでサポートされるすべてのバージョンの ONTAP で使用できます

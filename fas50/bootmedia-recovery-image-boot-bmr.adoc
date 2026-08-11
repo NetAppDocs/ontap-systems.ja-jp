@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, boot the recovery image 
 summary: FAS50 ストレージ システムに新しいブート メディア デバイスをインストールした後、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。 
 ---
-= パートナーノードからの自動ブートメディアリカバリ - FAS50
+= 自動ブートリカバリプロセスを使用して、FAS50システムでリカバリイメージを起動します。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

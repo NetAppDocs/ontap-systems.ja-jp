@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, replace, nvram, module, dimm, manually, reassign, system, id, ha, system, disk, two, node, restore, storage, volume, encryption, functionality 
 summary: NVRAM モジュールは、NVRAM10 と DIMM 、および NVRAM モジュールあたり最大 2 つの NVMe SSD Flash Cache モジュール、 Flash Cache またはキャッシュモジュールで構成されます。 
 ---
-= NVRAMモジュールまたはNVRAM DIMMの交換- FAS9000
+= FAS9000システムのNVRAMモジュールまたはNVRAM DIMMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

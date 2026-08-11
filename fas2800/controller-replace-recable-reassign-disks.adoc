@@ -1,17 +1,17 @@
 ---
 permalink: fas2800/controller-replace-recable-reassign-disks.html 
 sidebar: sidebar 
-keywords: fas2800, how to recable the system, how to reassign disks 
-summary: ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。 
+keywords: fas2820, how to recable the system, how to reassign disks 
+summary: コントローラーの交換を完了し、FAS2820システムを完全な動作状態に戻すには、ストレージを再接続し、ディスクの再割り当てを確認し、NetAppストレージ暗号化の設定を復元し（必要な場合）、新しいコントローラーのライセンスをインストールする必要があります。 
 ---
-= システムをケーブル接続し直してディスクを再割り当て- FAS2820
+= FAS2820 システムのコントローラーを返却して、通常業務を再開します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-交換用手順を完了してシステムを完全に動作状態に戻すには、ストレージのケーブル接続をやり直し、ディスクの再割り当てを確認し、必要に応じてネットアップストレージ暗号化構成をリストアし、新しいコントローラのライセンスをインストールする必要があります。システムを完全に動作状態にリストアするには、一連の作業を完了しておく必要があります。
+交換手順を完了してFAS2820システムを完全な動作状態に戻すには、ストレージを再接続し、ディスクの再割り当てを確認し、NetApp Storage Encryption の設定を復元し（必要な場合）、新しいコントローラーのライセンスをインストールする必要があります。
 
 
 
@@ -34,7 +34,7 @@ summary: ストレージを再度ケーブル接続し、ディスクの再割�
 
 _replacement _controller をブートしたときにシステム ID の変更を確認し、その変更が実装されたことを確認する必要があります。
 
-. _replacement _controller が Maintenance モードになっている場合 (`*>` プロンプトが表示されている場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます
+. _replacement _controller が Maintenance モード (`*>` プロンプトが表示されている ) の場合は 'Maintenance モードを終了して ' LOADER プロンプト :halt に進みます
 . システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は 'boot_ontap `` を」と入力して ' コントローラをブートします
 . _replacement _controller コンソールに Waiting for giveback... というメッセージが表示されるまで待ち、正常なコントローラから、新しいパートナーシステム ID が自動的に割り当てられていることを確認します。 storage failover show
 +

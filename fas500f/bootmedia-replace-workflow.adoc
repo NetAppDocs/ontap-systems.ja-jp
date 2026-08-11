@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, replace the boot media 
 summary: 交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージのブート、暗号化の復元、およびシステム機能の検証を行うことで、FAS500fストレージ システムのブート メディアの交換を開始します。 
 ---
-= ブートメディアの手動リカバリワークフロー - FAS500f
+= FAS500f 手動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -25,7 +25,7 @@ summary: 交換要件の確認、暗号化ステータスの確認、コント�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:bootmedia-shutdown.html["コントローラをシャットダウン"]
 [role="quick-margin-para"]
-ブートメディアの交換が必要になったときは、コントローラをシャットダウンします。
+ブート メディアを交換する必要がある場合は、コントローラーをシャットダウンします。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]link:bootmedia-replace.html["ブートメディアの交換"]
 [role="quick-margin-para"]
@@ -37,7 +37,7 @@ USBドライブからONTAPイメージをブートし、ファイルシステム
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"]link:bootmedia-encryption-restore.html["アンコウカノ"]
 [role="quick-margin-para"]
-ONATPブート メニューからオンボード キー マネージャ構成または外部キー マネージャを復元します。
+ONTAPブート メニューからオンボード キー マネージャ構成または外部キー マネージャを復元します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["7"]link:bootmedia-complete-rma.html["障害のあるパーツをネットアップに返却します"]
 [role="quick-margin-para"]

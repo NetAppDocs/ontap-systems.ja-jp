@@ -2,16 +2,16 @@
 permalink: fas2600/controller-replace-system-config-restore-and-verify.html 
 sidebar: sidebar 
 keywords: fas2600, restore and verify the system configuration, verify and set the ha state of the controller module 
-summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
+summary: ハードウェア交換とメンテナンスモードでの起動が完了したら、FAS2600 システムのコントローラ構成を復元して確認してください。 
 ---
-= システム構成をリストアして確認します - FAS2600
+= FAS2600システムでコントローラ構成を復元および検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。
+ハードウェア交換とメンテナンスモードでの起動が完了したら、FAS2600システムでコントローラ構成を復元および検証し、交換用コントローラの低レベルシステム構成を確認し、必要に応じてシステム設定を再構成してください。
 
 
 
@@ -65,6 +65,5 @@ hA-state には、次のいずれかの値を指定できます。
 ** 「 non-ha 」
 
 
-. 表示されたコントローラモジュールのシステム状態がシステム構成と一致しない場合は、コントローラモジュールの HA 状態を「 ha-config modify controller ha-state 」に設定します
 . 設定が変更されたことを確認します。「 ha-config show 」
 

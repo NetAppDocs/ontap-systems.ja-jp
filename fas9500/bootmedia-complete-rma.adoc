@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas9500, complete the replacement process 
 summary: 部品を交換したあと、障害のある部品をネットアップに返却することができます。詳細については、キットに付属する RMA 指示書を参照してください。 
 ---
-= 故障したブートメディアをNetAppに返却する - FAS9500
+= 障害が発生したFAS9500ブートメディアを手動ブートリカバリプロセス後にNetAppに返却してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

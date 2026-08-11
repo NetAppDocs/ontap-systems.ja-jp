@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, complete the replacement process 
 summary: FAS50 システムの部品を交換した後、キットに同梱されている RMA 手順に従って、故障した部品をNetAppに返却できます。 
 ---
-= 障害が発生したパーツをNetApp - FAS50に返却します。
+= 手動ブートリカバリプロセスの完了後、障害が発生したFAS50ブートメディアをNetAppに返送してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

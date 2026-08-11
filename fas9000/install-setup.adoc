@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: fas9000, aff a700, install, setup, initial, configuration 
 summary: システムを設置してセットアップします。 
 ---
-= はじめに：設置とセットアップを選択してください
+= FAS9000のインストールとセットアップ方法を選択してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ほとんどの構成では、さまざまなコンテンツ形式から選択できます。
+ほとんどの FAS9000 構成では、ニーズに最適なインストールおよびセットアップ形式（クイックステップ、ビデオによる手順、詳細な手順）を選択できます。
 
 * link:../fas9000/install-quick-guide.html["クイックステップ"]
 +

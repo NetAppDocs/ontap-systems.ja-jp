@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50 maintenance, maintenance, repairing fas50, replace fas50 components 
 summary: FAS50ストレージシステムのハードウェアをメンテナンスすることで、長期的な信頼性と最適なパフォーマンスを確保できます。故障したコンポーネントの交換など、定期的なメンテナンスを実施することで、ダウンタイムやデータ損失を防止できます。 
 ---
-= ハードウェアメンテナンスの概要- FAS50
+= FAS50ストレージシステムのメンテナンスについて
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -43,7 +43,7 @@ link:bootmedia-replace-workflow.html["ブートメディア - 手動リカバリ
  a| 
 link:caching-module-hot-swap.html["キャッシングモジュール"]
  a| 
-キャッシングモジュール（Flash Cacheモジュール）は、高速SSDを使用してアクセス頻度の高いデータを格納し、読み出しを高速化します。
+キャッシュモジュール（Flash Cache モジュール）は、高速 SSD を使用して頻繁にアクセスされるデータを保存し、より迅速に取り出せるようにします。
 
 
 

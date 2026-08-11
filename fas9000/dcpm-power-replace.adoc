@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, replace, dcpm, module, fail 
 summary: システムの DCPM モジュールを交換するには、障害が発生した DCPM モジュールをシステムから取り外し、新しい DCPM モジュールと交換する必要があります。 
 ---
-= DCPMモジュールの交換- FAS9000
+= FAS9000システムのDCPMモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

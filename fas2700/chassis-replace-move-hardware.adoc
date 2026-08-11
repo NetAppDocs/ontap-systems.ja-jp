@@ -1,17 +1,17 @@
 ---
 permalink: fas2700/chassis-replace-move-hardware.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
-summary: 電源装置、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、装置ラックまたはシステムキャビネットから障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
+keywords: fas2700, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
+summary: 故障したシャーシから電源装置、ドライブ、コントローラモジュールを交換用シャーシに移し、機器ラックまたはシステムキャビネット内の古いシャーシを同じモデルの新しいシャーシと交換します。 
 ---
-= ハードウェアの移動と交換 - AFF A220 および FAS2700
+= FAS2700システムのシャーシを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-電源装置、ハードドライブ、およびコントローラモジュールを障害のあるシャーシから新しいシャーシに移動し、装置ラックまたはシステムキャビネットから障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。
+FAS2700システムにおいて、故障したシャーシから電源装置、ドライブ、コントローラモジュールを交換用シャーシに移設し、機器ラックまたはシステムキャビネット内の古いシャーシを同じモデルの新しいシャーシと交換してください。
 
 
 

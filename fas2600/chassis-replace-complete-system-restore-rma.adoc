@@ -2,16 +2,16 @@
 permalink: fas2600/chassis-replace-complete-system-restore-rma.html 
 sidebar: sidebar 
 keywords: fas2600, verify and set HA state, complete the replacement process 
-summary: キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。 
+summary: FAS2600システムのシャーシ交換を完了するには、シャーシのHA状態を確認し、故障したコンポーネントをNetAppに返送してください。 
 ---
-= 構成をリストアして確認します - FAS2600
+= FAS2600 システムのシャーシ交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。
+シャーシのHA状態を確認し、キットに同梱されているRMA手順書に記載されているとおりに故障した部品を NetApp に返送することで、FAS2600システムのシャーシ交換を完了してください。
 
 
 
