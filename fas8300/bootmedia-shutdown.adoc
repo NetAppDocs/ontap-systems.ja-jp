@@ -2,16 +2,16 @@
 permalink: fas8300/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: fas8300, fas8700, shut, down, take, over, impair, controller, procedure, storage, system, hardware, configuration, shut down the impaired controller 
-summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
+summary: 手動ブートメディア復旧プロセス中にデータ損失を防ぎ、システムの安定性を維持するために、FAS8300またはFAS8700ストレージシステムのコントローラーをシャットダウンしてください。 
 ---
-= FAS8300またはFAS8700システムの手動ブートリカバリプロセス中に障害のあるコントローラーをシャットダウンする
+= 手動ブートリカバリプロセス中に FAS8300 または FAS8700 システムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-NVEまたはNSEタスクが完了したら、構成に応じた手順に従って、障害が発生したコントローラをシャットダウンまたはテイクオーバーしてください。
+手動ブートメディア復旧プロセス中にデータ損失を防ぎ、システムの安定性を維持するために、FAS8300またはFAS8700ストレージシステムのコントローラーをシャットダウンしてください。
 
 ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。システムで以前のバージョンのONTAPを実行している場合は、手動ブートリカバリ手順を使用する必要があります。
 
@@ -64,7 +64,7 @@ NOTE: ブートデバイスが壊れているか機能していない場合、�
 [[option-2-controller-is-in-a-metrocluster]]
 == オプション 2 ：コントローラが MetroCluster に搭載されている
 
-NVEまたはNSEタスクが完了したら、障害のあるコントローラをシャットダウンします。
+NVEまたはNSEタスクが完了したら、コントローラをシャットダウンします。
 
 
 NOTE: 2 ノード MetroCluster 構成のシステムでは、この手順を使用しないでください。
@@ -126,7 +126,7 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 [[option-3-controller-is-in-a-two-node-metrocluster]]
 == オプション 3 ：コントローラは 2 ノード MetroCluster に搭載されています
 
-NVEまたはNSEタスクが完了したら、障害のあるコントローラをシャットダウンします。
+NVEまたはNSEタスクが完了したら、コントローラをシャットダウンします。
 
 障害のあるコントローラをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをスイッチオーバーする必要があります。
 

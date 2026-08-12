@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, boot the recovery image 
 summary: AFF A70またはAFF A90ストレージ システムに新しいブート メディア デバイスをインストールした後、自動ブート メディア リカバリ プロセスを開始して、パートナー ノードから構成を復元できます。 
 ---
-= 自動ブートリカバリプロセスを使用して、AFF A70またはAFF A90システムのブートイメージを復元する
+= 自動ブートリカバリプロセスを使用して、AFF A70またはAFF A90システムでリカバリイメージを起動します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

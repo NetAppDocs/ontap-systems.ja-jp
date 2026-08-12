@@ -2,7 +2,7 @@
 permalink: a900/bootmedia-replace-requirements.html 
 sidebar: sidebar 
 keywords: a900, replace the boot media 
-summary: AFF A900システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、適切なストレージ容量のUSBフラッシュドライブがあること、および交換用のブートデバイスが正しいことの確認が含まれます。 
+summary: AFF A900 システムのブートメディアを交換する前に、交換を正常に完了するために必要な要件を満たしていることを確認してください。これには、適切な容量の USB フラッシュドライブを用意すること、および正しい交換用ブートデバイスを用意することが含まれます。 
 ---
 = AFF A900システムにおける手動ブートメディアリカバリの要件を確認する
 :allow-uri-read: 
@@ -45,4 +45,4 @@ NetApp では、この手順を実行する際には、作業対象のデバイ�
 
 
 .次の手順
-ブートメディアの交換要件を確認したら、を実行する必要がありlink:bootmedia-encryption-preshutdown-checks.html["暗号化キーのサポートとブートメディアのステータスを確認する"]ます。
+ブートメディアを交換するための要件を確認したら、link:bootmedia-encryption-preshutdown-checks.html["暗号化キーのサポートとブートメディアのステータスを確認する"]。

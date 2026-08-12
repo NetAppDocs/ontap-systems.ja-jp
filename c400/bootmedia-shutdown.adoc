@@ -2,7 +2,7 @@
 permalink: c400/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: aff c400, aff, c400, shut, down, take, over, impair, controller, procedure, storage, system, hardware, configuration, shut down the impaired controller 
-summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
+summary: 手動ブートメディア復旧プロセス中にデータ損失を防ぎ、システムの安定性を維持するために、AFF C400ストレージシステムのコントローラーをシャットダウンしてください。 
 ---
 = AFF C400 ストレージシステムの手動ブートリカバリプロセス中にコントローラーをシャットダウンする
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: ストレージシステムのハードウェア構成に応じた手�
 
 
 [role="lead"]
-AFF C400 ストレージシステムで、暗号化チェックを完了し、ブートメディアを交換する前に、障害のあるコントローラーをシャットダウンします。
+手動ブートメディア復旧プロセス中にデータ損失を防ぎ、システムの安定性を維持するために、AFF C400ストレージシステムのコントローラーをシャットダウンしてください。
 
 ストレージ システムで ONTAP 9.17.1 以降が実行されている場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"]を使用します。
 

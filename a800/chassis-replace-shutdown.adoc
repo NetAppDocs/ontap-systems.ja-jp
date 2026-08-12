@@ -2,7 +2,7 @@
 permalink: a800/chassis-replace-shutdown.html 
 sidebar: sidebar 
 keywords: aff a800, shutdown the controllers 
-summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
+summary: シャーシを交換するには、コントローラーの電源を切る必要があります。 
 ---
 = シャーシを交換するためにAFF A800コントローラをシャットダウンします
 :allow-uri-read: 

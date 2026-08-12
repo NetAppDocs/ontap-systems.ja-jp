@@ -2,7 +2,7 @@
 permalink: a250/bootmedia-replace-requirements-bmr.html 
 sidebar: sidebar 
 keywords: a250, replace the boot media 
-summary: AFF A250 システムのブート メディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。 
+summary: AFF A250 システムのブートメディアを交換する前に、交換を正常に完了するために必要な要件を満たしていることを確認してください。 
 ---
 = AFF A250システムの自動ブートメディアリカバリの要件を確認する
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: AFF A250 システムのブート メディアを交換する前に、�
 
 
 [role="lead"]
-AFF A250 のブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、正しい交換用ブートメディアがあることの確認、障害のあるコントローラの e0S（e0M レンチ）ポートに障害がないことの確認、Onboard Key Manager（OKM）または External Key Manager（EKM）が有効になっているかどうかの確認が含まれます。
+AFF A250 システムのブートメディアを交換する前に、交換を正常に完了するために必要な要件を満たしていることを確認してください。これには、正しい交換用ブートメディアを用意していることの確認、障害のあるコントローラの e0S （e0M レンチ）ポートに不具合がないことの確認、および Onboard Key Manager （OKM）または External Key Manager （EKM）が有効になっているかどうかの確認が含まれます。
 
 自動ブートメディアリカバリプロセスは、ONTAP 9.18.1 以降でのみサポートされています。ストレージシステムで以前のバージョンの ONTAP を実行している場合は、link:bootmedia-replace-workflow.html["手動ブート回復手順"]を使用してください。
 

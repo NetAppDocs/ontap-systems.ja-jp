@@ -2,16 +2,16 @@
 permalink: a20-30-50/overview.html 
 sidebar: sidebar 
 keywords: AFF A20 A30 A50 specifications, AFF A20 A30 A50 specs, AFF A20 A30 A50 capacity, AFF A20 A30 A50 memory, AFF A20 A30 A50 IO, AFF A20 A30 A50 compliance 
-summary: A20-30-50プラットフォームグループの主な仕様 
+summary: AFF A20、AFF A30、AFF A50プラットフォームの主な仕様 
 ---
-= A20-30-50プラットフォームグループの主な仕様
+= AFF A20、AFF A30、AFF A50プラットフォームの主な仕様
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-以下は、A20-30-50 プラットフォーム グループの選択仕様です。訪問 https://hwu.netapp.com["NetApp Hardware Universe の略"^]仕様の完全なリストについては、(HWU) をご覧ください。このページは、単一の高可用性ペアを反映しています。
+これらは、AFF A20、AFF A30、および AFF A50 プラットフォームグループの主な仕様です。仕様の完全なリストについては、 https://hwu.netapp.com["NetApp Hardware Universe の略"^]（HWU）をご覧ください。この仕様は、単一の高可用性ペアを前提としています。
 
 
 

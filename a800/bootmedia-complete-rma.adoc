@@ -11,4 +11,4 @@ summary: ブートメディアを交換したら、故障した部品をNetApp�
 
 
 [role="lead"]
-AFF A800ストレージシステムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返送してください参照 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページをご覧ください。
+AFF A800システムで障害が発生したブートメディアの手動ブートリカバリプロセスを完了したら、障害が発生した部品をNetAppに返却してください。詳細については、 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]ページを参照してください。

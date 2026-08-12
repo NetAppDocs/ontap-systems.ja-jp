@@ -43,7 +43,7 @@ link:bootmedia-replace-workflow.html["ブートメディア - 手動リカバリ
  a| 
 link:chassis-replace-workflow.html["シャーシ"]
  a| 
-シャーシには、ファン、コントローラー、電源装置、PSU、NVRAM12、システム管理モジュール、I/O カード、ブランキング モジュールが収容されています。
+シャーシには、ファン、コントローラー、電源、NVRAM、システム管理モジュール、I/Oカード、およびブランキングモジュールが収容されています。
 
 
 

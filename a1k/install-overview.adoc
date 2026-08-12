@@ -19,7 +19,7 @@ AFF A1Kシステムを設置して設定するには、ハードウェア要件�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:install-prepare.html["AFF A1Kストレージシステムをインストールする準備"]
 [role="quick-margin-para"]
-システムの設置を準備するには、設置場所を準備し、環境要件と電力要件を確認し、十分なラックスペースがあることを確認する必要があります。その後、機器を開梱して内容を納品書と比較し、ハードウェアを登録してサポートを利用できます。
+システムを設置する準備として、設置場所の準備、環境および電気に関する要件の確認、そして十分なラックスペースの確保が必要です。次に、機器を開梱し、内容物を梱包明細書と照合し、ハードウェアを登録してサポート特典を受けられるようにしてください。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:install-hardware.html["AFF A1Kストレージシステムのハードウェアを設置"]
 [role="quick-margin-para"]
@@ -31,7 +31,7 @@ AFF A1Kシステムを設置して設定するには、ハードウェア要件�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"]link:install-power-hardware.html["AFF A1Kストレージ・システムの電源をオンにする"]
 [role="quick-margin-para"]
-コントローラの電源をオンにする前に、各NS224シェルフの電源をオンにし、一意のシェルフIDを割り当ててセットアップで各シェルフを一意に識別し、ラップトップまたはコンソールをコントローラに接続してから、コントローラを電源に接続します。
+コントローラの電源を入れる前に、各NS224シェルフの電源を入れ、固有のシェルフIDを割り当てて、セットアップ内で各シェルフが一意に識別されるようにしてください。次に、ラップトップまたはコンソールをコントローラに接続し、コントローラを電源に接続します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"]/
 [role="quick-margin-para"]

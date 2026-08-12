@@ -11,4 +11,4 @@ summary: 部品を交換したあと、障害のある部品をネットアッ�
 
 
 [role="lead"]
-AFF A800システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]詳細については、ページをご覧ください。
+AFF A800システムで障害が発生したブートメディアの自動ブート回復プロセスが完了したら、障害が発生した部品をNetAppに返送してください。詳細については、 https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"]ページを参照してください。

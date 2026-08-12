@@ -2,7 +2,7 @@
 permalink: a900/chassis_replace_shutdown.html 
 sidebar: sidebar 
 keywords: aff a900, shutdown the controllers 
-summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
+summary: シャーシを交換するには、コントローラーの電源を切る必要があります。 
 ---
 = シャーシを交換するためにAFF A900コントローラをシャットダウンする
 :allow-uri-read: 

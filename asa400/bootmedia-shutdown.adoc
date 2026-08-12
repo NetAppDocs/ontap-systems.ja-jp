@@ -2,7 +2,7 @@
 permalink: asa400/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: asa a400, asa, a400, shut, down, take, over, impair, controller, procedure, storage, system, hardware, configuration, shut down the impaired controller 
-summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
+summary: 手動ブートメディア復旧プロセス中にデータ損失を防ぎ、システムの安定性を維持するために、ASA A400ストレージシステムのコントローラーをシャットダウンしてください。 
 ---
 = 手動ブートリカバリプロセス中に ASA A400 システムのコントローラをシャットダウンする
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: ストレージシステムのハードウェア構成に応じた手�
 
 
 [role="lead"]
-NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
+手動ブートメディア復旧プロセス中にデータ損失を防ぎ、システムの安定性を維持するために、ASA A400ストレージシステムのコントローラーをシャットダウンしてください。
 
 ストレージシステムがONTAP 9.17.1以降を実行している場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。システムで以前のバージョンのONTAPを実行している場合は、手動ブートリカバリ手順を使用する必要があります。
 

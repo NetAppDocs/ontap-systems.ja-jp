@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a800, replace a power supply 
 summary: 電源装置を交換するには、ターゲットの電源装置の接続を解除して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。 
 ---
-= AFF A800システムの電源ユニットをホットスワップ対応で交換する
+= AFF A800システムの電源ユニットをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

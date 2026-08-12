@@ -49,4 +49,4 @@ NetApp では、この手順を実行する際には、作業対象のデバイ�
 
 
 .次の手順
-障害のあるコントローラの交換要件を確認したら、を行う必要がありますlink:controller-replace-shutdown.html["障害のあるコントローラをシャットダウン"]。
+故障したコントローラーを交換するための要件を確認した後、link:controller-replace-shutdown.html["障害のあるコントローラをシャットダウン"]。

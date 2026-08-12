@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: a900, boot the recovery image 
 summary: 新しいブートメディアデバイスをAFF A900システムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。 
 ---
-= 自動ブートリカバリプロセスを使用して、AFF A900システムのブートイメージを復元します
+= 自動ブートリカバリプロセスを使用して、AFF A900システムでリカバリイメージをブートします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

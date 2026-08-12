@@ -11,7 +11,7 @@ summary: AFF A250 ストレージ システムのブート メディアの交換
 
 
 [role="lead"]
-ブート イメージの自動回復では、システムが適切なブート メニュー オプションを自動的に識別して選択します。パートナー ノードのブート イメージを使用して、AFF A250 ストレージ システムの交換用ブート メディアに ONTAP を再インストールします。
+ブートイメージの自動復旧では、システムが適切なブートメニューオプションを自動的に識別して選択します。パートナーノード上のブートイメージを使用して、AFF A250ストレージシステムの交換用ブートメディアにONTAPを再インストールします。
 
 自動ブートメディアリカバリプロセスは、ONTAP 9.18.1 以降でのみサポートされています。ストレージシステムで以前のバージョンの ONTAP を実行している場合は、link:bootmedia-replace-workflow.html["手動ブート回復手順"]を使用してください。
 
@@ -23,7 +23,7 @@ summary: AFF A250 ストレージ システムのブート メディアの交換
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:bootmedia-shutdown-bmr.html["コントローラをシャットダウン"]
 [role="quick-margin-para"]
-ブートメディアの交換が必要になったときは、ストレージシステムのコントローラをシャットダウンします。
+ブート メディアを交換する必要がある場合は、ストレージ システム内のコントローラーをシャットダウンします。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:bootmedia-replace-bmr.html["ブートメディアの交換"]
 [role="quick-margin-para"]

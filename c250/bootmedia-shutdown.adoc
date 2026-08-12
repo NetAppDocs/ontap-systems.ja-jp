@@ -2,7 +2,7 @@
 permalink: c250/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: aff c250, shutdown 
-summary: NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。 
+summary: 手動ブートメディア復旧プロセス中にデータ損失を防ぎ、システムの安定性を維持するために、AFF C250ストレージシステムのコントローラーをシャットダウンしてください。 
 ---
 = 手動ブートリカバリプロセス中に AFF C250 ストレージシステムのコントローラをシャットダウンする
 :allow-uri-read: 
@@ -60,7 +60,7 @@ NOTE: ブートデバイスが壊れているか機能していない場合、�
 [[option-2-systems-in-a-metrocluster]]
 == オプション 2 ： MetroCluster 内のシステム
 
-NVE タスクまたは NSE タスクが完了したら、障害のあるコントローラをシャットダウンする必要があります。
+NVEまたはNSEタスクを完了したら、コントローラのシャットダウンを完了する必要があります。
 
 
 NOTE: 2 ノード MetroCluster 構成のシステムでは、この手順を使用しないでください。

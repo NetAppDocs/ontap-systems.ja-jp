@@ -21,7 +21,7 @@ summary: 交換要件を確認し、コントローラをシャットダウン�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"]link:bootmedia-shutdown-bmr.html["コントローラをシャットダウン"]
 [role="quick-margin-para"]
-ブートメディアの交換が必要になったときは、ストレージシステムのコントローラをシャットダウンします。
+ブート メディアを交換する必要がある場合は、ストレージ システム内のコントローラーをシャットダウンします。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]link:bootmedia-replace-bmr.html["ブートメディアの交換"]
 [role="quick-margin-para"]

@@ -34,8 +34,8 @@ I/O モジュールをホットスワップするには、ストレージ シス
 
 
 
-[[step-1-ensure-the-storage-system-meets-the-procedure-requirements]]
-== ステップ1: ストレージシステムが手順の要件を満たしていることを確認する
+[[step-1-confirm-the-storage-system-meets-the-procedure-requirements]]
+== ステップ1：ストレージシステムが手順の要件を満たしていることを確認する
 
 この手順を使用するには、ストレージ システムでONTAP 9.18.1 GA以降が実行されており、ストレージ システムがすべての要件を満たしている必要があります。
 

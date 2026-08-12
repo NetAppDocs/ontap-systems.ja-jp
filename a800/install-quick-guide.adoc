@@ -11,4 +11,4 @@ summary: このセクションでは、システムの初期起動時にラッ�
 
 
 [role="lead"]
-NetApp システムのインストールに慣れている場合は、 https://review.docs.netapp.com/us-en/ontap-systems_jackie-hotfix/media/PDF/Jan_2024_Rev3_AFFA800_ISI_IEOPS-1497.pdf["AFF A800インストールおよびセットアップ手順"^]を使用してください。
+NetAppシステムの設置手順に慣れている場合は、追加コンテンツへのライブリンクが設定された印刷可能なPDFである https://review.docs.netapp.com/us-en/ontap-systems_jackie-hotfix/media/PDF/Jan_2024_Rev3_AFFA800_ISI_IEOPS-1497.pdf["AFF A800インストールおよびセットアップ手順"^]を使用して、システムのラックへの設置、ケーブル接続、セットアップを迅速に行うことができます。

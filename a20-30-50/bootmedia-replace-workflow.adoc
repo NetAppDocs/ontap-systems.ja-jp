@@ -13,7 +13,7 @@ summary: ブート イメージを手動でリカバリするには、USB ドラ
 [role="lead"]
 ブート イメージを手動でリカバリするには、USB ドライブを使用して、 AFF A20、 AFF A30、またはAFF A50 ストレージ システムの交換用ブート メディアにONTAPを再インストールする必要があります。必要があります。NetAppNetAppサイトから適切なONTAPリカバリイメージをダウンロードし、USBドライブにコピーする必要があります。この準備したUSBドライブを使用してリカバリを実行し、システムを稼働状態に復元します。
 
-システムがONTAP 9.17.1以降で実行されている場合は、 link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"] 。
+システムで ONTAP 9.17.1 以降が実行されている場合は、link:bootmedia-replace-workflow-bmr.html["自動ブート回復手順"]を使用してください。
 
 開始するには、回復要件を確認し、コントローラーをシャットダウンし、ブート メディアを交換し、USB ドライブを使用してイメージを復元し、必要に応じて暗号化設定を再適用します。
 
@@ -27,7 +27,7 @@ summary: ブート イメージを手動でリカバリするには、USB ドラ
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["2 つ"]link:bootmedia-shutdown.html["コントローラをシャットダウン"]
 [role="quick-margin-para"]
-ブートメディアの交換が必要になったときは、コントローラをシャットダウンします。
+ブート メディアを交換する必要がある場合は、コントローラーをシャットダウンします。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["3つ"]link:bootmedia-replace.html["ブートメディアの交換"]
 [role="quick-margin-para"]

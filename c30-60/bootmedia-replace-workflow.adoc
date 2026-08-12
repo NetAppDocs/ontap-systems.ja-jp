@@ -25,13 +25,13 @@ summary: ブート イメージを手動でリカバリするには、USB ドラ
 [role="quick-margin-para"]
 システムでセキュリティキー管理機能が有効になっているか暗号化されたディスクがあるかを確認します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["2 つ"]link:bootmedia-shutdown.html["障害のあるコントローラをシャットダウンします"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["2 つ"]link:bootmedia-shutdown.html["コントローラをシャットダウン"]
 [role="quick-margin-para"]
-ブートメディアの交換が必要になったときは、コントローラをシャットダウンします。
+ブート メディアを交換する必要がある場合は、コントローラーをシャットダウンします。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["3つ"]link:bootmedia-replace.html["ブートメディアの交換"]
 [role="quick-margin-para"]
-障害が発生したコントローラから障害が発生したブート メディアを取り外し、交換用のブート メディアをインストールし、USB フラッシュ ドライブを使用してONTAPイメージを転送します。
+コントローラーから障害のあるブートメディアを取り外し、交換用ブートメディアを取り付けてから、USBフラッシュドライブを使用してONTAPイメージを転送します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["4つ"]link:bootmedia-recovery-image-boot.html["リカバリイメージをブートします"]
 [role="quick-margin-para"]

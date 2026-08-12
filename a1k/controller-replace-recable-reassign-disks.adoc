@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a1k, how to recable the system, how to reassign disks 
 summary: ストレージリソースの制御を交換用コントローラに戻して、AFF A1Kシステムが通常の運用を再開できるようにします。 
 ---
-= AFF A1K システムのコントローラーを返却して通常運用を再開する
+= AFF A1K システムのコントローラーを返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ストレージリソースの制御を交換用コントローラに戻して、AFF A1Kシステムが通常の運用を再開できるようにします。返却手順は、システムで使用されている暗号化の種類（暗号化なしまたはオンボード キー マネージャー (OKM) 暗号化）によって異なります。
+ストレージ リソースの制御を交換用コントローラーに戻すと、AFF A1Kシステムは通常動作を再開できます。返却手順は、システムで使用されている暗号化の種類（暗号化なし、またはオンボードキーマネージャ（OKM）暗号化）によって異なります。
 
 [role="tabbed-block"]
 ====

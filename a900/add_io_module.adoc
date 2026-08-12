@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a900, add io module 
 summary: システムに I/O モジュールを追加するには、既存の I/O モジュールをフル装備のシステムで新しい I/O モジュールに交換するか、シャーシの空のスロットに新しい I/O モジュールを追加します。 
 ---
-= I/OモジュールをAFF A900システムに追加してネットワーク接続性を強化する
+= I/OモジュールをAFF A900システムに追加する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
