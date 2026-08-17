@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, boot, recovery, image, two, node, metrocluster, configuration, manual, manual boot recovery 
 summary: AFF A700システムの USB ドライブからONTAPリカバリ イメージを起動して、ブート メディアを復元します。AFF A700システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= AFF A700システムでリカバリイメージを起動します
+= AFF A700システムでリカバリイメージをブートします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

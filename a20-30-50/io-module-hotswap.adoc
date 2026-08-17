@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, hot swap a cluster ha card, hot swap ethernet client io module, hotswap io module, hot swap io module 
 summary: AFF A20、AFF A30、または AFF A50 ストレージ システムで、モジュールに障害が発生し、ストレージ システムがすべての ONTAP バージョン要件を満たしている場合は、Ethernet I/O モジュールをホット スワップできます。 
 ---
-= AFF A20、AFF A30、またはAFF A50システムのI/Oモジュールをホット スワップする
+= AFF A20、AFF A30、またはAFF A50システムのI/Oモジュールをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

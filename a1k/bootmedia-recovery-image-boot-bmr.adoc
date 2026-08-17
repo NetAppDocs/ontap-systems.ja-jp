@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, boot the recovery image 
 summary: AFF A1Kシステムに新しいブート メディア デバイスをインストールした後、自動ブート メディア リカバリ プロセスを開始して、パートナー ノードから構成を復元できます。 
 ---
-= 自動ブートリカバリプロセスを使用して、AFF A1K システムのリカバリイメージを起動します
+= 自動ブートリカバリプロセスを使用して AFF A1K システムのリカバリイメージをブートします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

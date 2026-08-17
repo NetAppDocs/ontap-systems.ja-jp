@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a250, replace a dimm 
 summary: AFF A250 コントローラで、ヘルスモニターアラートに基づく過剰な CECC エラーが発生した場合、またはストレージシステムが ONTAP を起動できない修正不可能な ECC エラーが発生した場合は、DIMM を交換してください。 
 ---
-= AFF A250システムのDIMMを交換してメモリエラーを修正する
+= AFF A250 システムの DIMM を交換してメモリエラーを修正する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

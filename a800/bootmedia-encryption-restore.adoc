@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a800, post boot media replacement steps for okm, nse, and nve 
 summary: 交換用ブートメディアの暗号化をリストアします。オンボードキーマネージャ、NetApp Storage Encryption、またはNetApp Volume Encryptionが有効になっているシステムに固有の手順を実行します。 
 ---
-= AFF A800システムの手動ブートリカバリプロセス後にブートメディアの暗号化を復元する
+= AFF A800 システムで手動ブートリカバリプロセス後にブートメディアの暗号化を復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

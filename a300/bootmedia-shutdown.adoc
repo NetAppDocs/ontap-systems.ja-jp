@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a300, shut down the impaired controller, manual, manual boot recovery 
 summary: 手動ブートメディア復旧プロセス中にデータ損失を防ぎ、システムの安定性を維持するために、AFF A300ストレージシステムのコントローラーをシャットダウンしてください。 
 ---
-= 手動ブートリカバリプロセス中に AFF A300 システムのコントローラをシャットダウンする
+= AFF A300システムの手動ブートリカバリプロセス中にコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

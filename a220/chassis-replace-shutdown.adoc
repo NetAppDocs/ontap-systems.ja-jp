@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a220, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
-= シャーシを交換するためにAFF A220コントローラをシャットダウンする
+= シャーシを交換するためにAFF A220コントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, shutdown the controller 
 summary: シャーシを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、 AFF A1Kストレージ システムのコントローラをシャットダウンします。 
 ---
-= シャーシを交換するためにAFF A1Kコントローラをシャットダウンする
+= シャーシを交換するために AFF A1K コントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

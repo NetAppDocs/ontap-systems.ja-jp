@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700s, aff, a700s, shut, down, impair, controller, check, status, onboard, encryption, keys, status, disable, automatic, giveback, ontap, pre-shutdown, pre-shutdown checks for onboard encyption keys, manual, manual boot recovery 
 summary: AFF A700sシステム上の障害のあるコントローラをシャットダウンする前に、暗号化キーのサポートとステータスを確認してください。AFF A700sシステムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= AFF A700sシステムのブートメディアの暗号化サポートを確認してください
+= AFF A700s システムのブートメディアの暗号化サポートを確認します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

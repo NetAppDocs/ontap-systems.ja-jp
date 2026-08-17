@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
 ---
-= AFF A150システムのコントローラー構成を復元して検証する
+= AFF A150システムでコントローラー構成を復元して検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, shutdown, check, onboard, encryption, key, manual, manual boot recovery 
 summary: 障害のあるノードをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるノードのステータスを確認し、自動ギブバックを無効にして、システムで実行されているONTAPのバージョンを確認する必要があります。AFF A700システムは、手動のブート メディア リカバリ手順のみをサポートします。 
 ---
-= AFF A700システムのブートメディアの暗号化サポートを確認してください
+= AFF A700システムのブートメディアの暗号化サポートを確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

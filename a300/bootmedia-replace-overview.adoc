@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a300, replace the boot media, manual, manual boot recovery 
 summary: ブートメディアには、システムが起動時に使用するプライマリおよびセカンダリのシステムファイルセットが格納されています。AFF A300システムは、手動によるブートメディア復旧手順のみをサポートしています。自動ブートメディア復旧はサポートされていません。ネットワーク構成によっては、無停止交換または停止交換のいずれかを実行できます。 
 ---
-= AFF A300システムのブートメディア交換について
+= AFF A300 システムのブートメディアの交換について
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

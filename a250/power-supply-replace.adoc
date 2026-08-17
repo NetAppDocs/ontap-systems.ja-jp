@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a250, replace a power supply 
 summary: AFF A250 システムの電源装置を交換するには、対象の PSU を電源から切り離し、電源ケーブルを抜き、古い PSU を取り外し、交換用の PSU を取り付けてから、電源に再接続します。 
 ---
-= AFF A250システムの電源ユニットをホットスワップ対応で交換する
+= AFF A250システムの電源ユニットをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

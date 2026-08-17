@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, pre-shutdown checks for onboard encryption keys 
 summary: AFF A70またはAFF A90ストレージシステムのデータセキュリティを確保するには、ブートメディアの暗号化キーのサポートとステータスを確認する必要があります。ONTAPバージョンがNetApp Volume Encryptionをサポートしているかどうかを確認し、コントローラをシャットダウンする前にキーマネージャがアクティブであることを確認してください。 
 ---
-= AFF A70またはAFF A90システムのブートメディアの暗号化サポートを確認する
+= AFF A70またはAFF A90システムで手動ブートリカバリプロセスを使用してブートメディアの暗号化サポートを確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

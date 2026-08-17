@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a250, post boot media replacement steps for okm, nse, and nve 
 summary: AFF A250 システムの交換用ブートメディアの暗号化をリストアします。オンボードキーマネージャ、NetApp Storage Encryption、または NetApp Volume Encryption が有効になっているシステム固有の手順を実行します。 
 ---
-= AFF A250 システムのブートメディアの暗号化を手動ブートリカバリプロセス後に復元する
+= AFF A250 システムで手動ブートリカバリプロセス後にブートメディアの暗号化を復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

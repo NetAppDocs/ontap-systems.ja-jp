@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k,  verify and set HA state, complete the replacement process 
 summary: コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、 AFF A1Kシャーシ交換手順の最終ステップを完了します。 
 ---
-= AFF A1K システムのシャーシの交換を完了する
+= AFF A1K システムのシャーシ交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

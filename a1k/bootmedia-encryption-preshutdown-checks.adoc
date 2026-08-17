@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, pre-shutdown checks for onboard encryption keys 
 summary: AFF A1K ストレージ システムのデータ セキュリティを確保するには、ブート メディアでの暗号化キーのサポートとステータスを確認する必要があります。ONTAPバージョンがNetApp Volume Encryptionをサポートしているかどうかを確認し、コントローラをシャットダウンする前にキーマネージャがアクティブであることを確認してください。 
 ---
-= AFF A1K システムのブートメディアの暗号化サポートを確認してください
+= 手動ブートリカバリプロセスを使用したAFF A1Kシステムのブートメディアの暗号化サポートの確認
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

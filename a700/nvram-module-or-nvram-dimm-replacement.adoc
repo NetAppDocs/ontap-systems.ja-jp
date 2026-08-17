@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, replace, nvram, module, dimm, manually, reassign, system, id, ha, system, disk, two, node, restore, storage, volume, encryption, functionality 
 summary: NVRAMモジュールは、NVRAM10とDIMM、およびNVRAMモジュールごとに最大2つのNVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）で構成されます。 
 ---
-= AFF A700システムのNVRAMモジュールまたはNVRAM DIMMを交換する
+= AFF A700システムのNVRAMモジュールまたはNVRAM DIMMの交換
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

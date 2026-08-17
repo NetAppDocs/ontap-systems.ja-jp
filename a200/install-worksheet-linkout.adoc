@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a200, install, worksheet 
 summary: このワークシートを使用して、 ONTAP クラスタの構成に必要なサイト固有の IP アドレスやその他の情報を収集し、記録できます。 
 ---
-= 構成ワークシートを使用してAFF A200クラスタを設定する
+= 構成ワークシートを使用してAFF A200クラスタを構成する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

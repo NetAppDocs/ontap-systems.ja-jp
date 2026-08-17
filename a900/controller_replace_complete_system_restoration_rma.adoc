@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a900, complete the replacement process 
 summary: AFF A900 システムを完全動作状態に戻すには、ストレージを再配線し、必要に応じて NetApp Storage Encryption の設定をリストアし、新しいコントローラーのライセンスをインストールします。 
 ---
-= AFF A900システムのコントローラーの交換を完了します
+= AFF A900 システムのコントローラー交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

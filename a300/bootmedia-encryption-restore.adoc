@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a300, post boot media replacement steps for okm, nse, and nve, manual, manual boot recovery 
 summary: 交換用ブートメディアで暗号化をリストアします。Onboard Key Manager、NetApp Storage Encryption、またはNetApp Volume Encryptionが有効になっているシステムに固有の手順を完了します。AFF A300システムは、手動のブートメディアリカバリ手順のみをサポートしています。 
 ---
-= AFF A300システムのブートメディアの暗号化を復元します
+= AFF A300 システムのブートメディアの暗号化を復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

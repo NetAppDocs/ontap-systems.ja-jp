@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a320, aff, a320, procedure, boot, impair, node, recovery, image, system, two-node, metrocluster, configuration, boot the recovery image, manual, manual boot recovery 
 summary: USB ドライブからONTAPイメージを起動し、ファイル システムを復元し、環境変数を確認する必要があります。AFF A320システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= AFF A320システムでリカバリイメージを起動します
+= AFF A320 システムでリカバリイメージをブートする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

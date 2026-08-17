@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, power controllers 
 summary: AFF A70またはAFF A90ストレージシステムのラックハードウェアを設置し、コントローラとストレージシェルフのケーブルを取り付けたら、ストレージシェルフとコントローラの電源をオンにする必要があります。 
 ---
-= AFF A70またはAFF A90ストレージシステムの電源を投入する
+= AFF A70またはAFF A90ストレージシステムの電源投入
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: a800, boot the recovery image 
 summary: 新しいブートメディアデバイスをAFF A800システムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。 
 ---
-= 自動ブートリカバリプロセスを使用して、AFF A800システムでリカバリイメージをブートします
+= 自動ブートリカバリプロセスを使用して AFF A800 システムでリカバリイメージをブートします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

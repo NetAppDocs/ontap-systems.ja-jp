@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff, a320, aff a320, replacement, boot, media, install, image, transfer, usb, flash, drive, transfer the boot image to the boot media using a usb flash drive, manual, manual boot recovery 
 summary: インストールした交換用ブート メディアにはブート イメージが含まれていないため、USB フラッシュ ドライブを使用してブート イメージを転送する必要があります。AFF A320システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= USB フラッシュドライブを使用して、AFF A320 システムのブートメディアにブートイメージを転送します
+= AFF A320 システムでUSBフラッシュドライブを使用してブートイメージをブートメディアに転送する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, shutdown the controllers 
 summary: AFF A20、AFF A30、またはAFF A50ストレージシステムのコントローラをシャットダウンして、データ損失を防ぎ、シャーシの交換時にシステムの安定性を確保します。 
 ---
-= AFF A20、AFF A30、またはAFF A50コントローラーをシャットダウンしてシャーシを交換する
+= シャーシを交換するために AFF A20、AFF A30、または AFF A50 コントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

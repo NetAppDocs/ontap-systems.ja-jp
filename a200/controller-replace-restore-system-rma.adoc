@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a200, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: システムを完全に動作可能な状態に復元するには、NetApp Storage Encryption構成を復元し、新しいコントローラのライセンスをインストールし、キットに同梱されているRMA手順書に記載されているとおりに故障した部品をNetAppに返却する必要があります。 
 ---
-= AFF A200システムのコントローラーの交換を完了します
+= AFF A200 システムのコントローラー交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

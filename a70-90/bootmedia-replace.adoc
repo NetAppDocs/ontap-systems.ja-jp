@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, replace the boot media 
 summary: AFF A70またはAFF A90システムのブートメディアには、重要なファームウェアと設定データが保存されています。交換プロセスでは、システム管理モジュールの取り外し、障害のあるブートメディアの取り外し、交換用のブートメディアのインストール、そして USB フラッシュドライブを使用してONTAPイメージを交換用のブートメディアに手動で転送します。 
 ---
-= AFF A70またはAFF A90システムのブートメディアを手動ブートリカバリプロセスを使用して交換する
+= AFF A70 または AFF A90 システムのブートメディアを手動ブートリカバリプロセスを使用して交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

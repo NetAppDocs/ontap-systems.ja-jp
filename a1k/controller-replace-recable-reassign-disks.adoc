@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, how to recable the system, how to reassign disks 
 summary: ストレージリソースの制御を交換用コントローラに戻して、AFF A1Kシステムが通常の運用を再開できるようにします。 
 ---
-= AFF A1K システムのコントローラーを返却する
+= AFF A1K システムでコントローラーを返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

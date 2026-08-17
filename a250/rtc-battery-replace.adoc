@@ -2,9 +2,9 @@
 permalink: a250/rtc-battery-replace.html 
 sidebar: sidebar 
 keywords: aff a250, real-time battery replacement 
-summary: AFF A250 コントローラモジュールのリアルタイムクロックバッテリを交換して、正確な時刻同期に依存するサービスやアプリケーションが引き続き機能するようにします。 
+summary: AFF A250 システムのリアルタイムクロックバッテリーを交換して、正確な時刻同期に依存するサービスやアプリケーションが引き続き機能することを確認します。 
 ---
-= AFF A250システムのリアルタイムクロックバッテリーを交換する
+= AFF A250 システムのリアルタイムクロックバッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

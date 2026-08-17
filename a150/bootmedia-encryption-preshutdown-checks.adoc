@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, shutdown, checks, onboard, encryption, keys, impaired controller, disable, automatic, feedback 
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
-= AFF A150システムのブートメディアの暗号化サポートを確認してください
+= AFF A150システムのブートメディアの暗号化サポートを確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

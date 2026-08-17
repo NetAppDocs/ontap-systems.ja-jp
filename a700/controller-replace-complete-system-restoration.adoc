@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, storage encryption, licenses, storage encryption, volume encryption, serial number, metrocluster, switchback 
 summary: AFF A700 システムを完全に動作させるには、ストレージを再配線し、必要に応じて NetApp Storage Encryption の設定を復元し、新しいコントローラーのライセンスをインストールします。 
 ---
-= AFF A700システムのコントローラーの交換を完了します
+= AFF A700システムのコントローラーの交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

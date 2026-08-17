@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, replace a dimm 
 summary: 修正可能または修正不可能なメモリ エラーが過剰に検出された場合は、 AFF A20、 AFF A30、またはAFF A50 ストレージ システム内の DIMM を交換してください。このようなエラーにより、ストレージ システムがONTAPを起動できなくなる可能性があります。交換プロセスには、障害のあるコントローラのシャットダウン、取り外し、DIMM の交換、コントローラの再インストール、そして障害のある部品のNetAppへの返送が含まれます。 
 ---
-= AFF A20、AFF A30、またはAFF A50システムのDIMMを交換してメモリエラーを修正する
+= AFF A20、AFF A30、またはAFF A50システムのメモリエラーを修正するためにDIMMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

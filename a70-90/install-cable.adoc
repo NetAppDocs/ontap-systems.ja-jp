@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, prepare installation, cable the hardware 
 summary: AFF A70またはAFF A90ストレージシステムのラックハードウェアを設置したら、コントローラにネットワークケーブルを接続し、コントローラとストレージシェルフの間をケーブルで接続します。 
 ---
-= AFF A70またはAFF A90のハードウェアをネットワークおよびストレージ接続用にケーブル接続する
+= AFF A70またはAFF A90のネットワークおよびストレージ接続用ハードウェアのケーブル接続
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

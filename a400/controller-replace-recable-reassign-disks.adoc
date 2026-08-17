@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a400, how to recable the system, how to reassign disks 
 summary: ストレージリソースの制御を交換用コントローラに戻すと、AFF A400 システムは通常動作を再開できます。 
 ---
-= AFF A400システムのケーブルを再配線し、ディスクを再割り当てする
+= AFF A400システムでシステムのケーブルを再配線し、ディスクを再割り当てする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

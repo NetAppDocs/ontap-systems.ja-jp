@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a300, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: AFF A300 システムを完全な動作状態に戻すには、必要に応じてNetApp Storage Encryption構成をリストアし、新しいコントローラのライセンスをインストールして、障害が発生した部品をNetAppに返却します。 
 ---
-= AFF A300システムのコントローラーの交換を完了します
+= AFF A300 システムのコントローラー交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

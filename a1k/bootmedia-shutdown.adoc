@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, shut down the controller 
 summary: 手動ブートメディア復旧プロセス中にデータ損失を防ぎ、システムの安定性を維持するために、AFF A1K ストレージシステムのコントローラーをシャットダウンしてください。 
 ---
-= 手動ブートリカバリプロセス中に AFF A1K システムのコントローラをシャットダウンする
+= AFF A1K システムの手動ブートリカバリプロセス中にコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

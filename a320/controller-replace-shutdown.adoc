@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a320, shut down the node 
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
-= AFF A320システムの交換前に障害のあるコントローラーをシャットダウンする
+= AFF A320 システムで障害のあるコントローラーを交換前にシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

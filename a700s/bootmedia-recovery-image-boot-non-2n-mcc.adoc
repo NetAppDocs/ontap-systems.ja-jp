@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700s, aff, a700s, boot, ontap, image, usb, drive, restore, file, system, verify, environmental, variable, manual, manual boot recovery 
 summary: AFF A700sシステムの USB ドライブからONTAPリカバリ イメージを起動して、ブート メディアを復元します。AFF A700sシステムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= AFF A700sシステムでリカバリイメージを起動します
+= AFF A700s システムでリカバリイメージをブートします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

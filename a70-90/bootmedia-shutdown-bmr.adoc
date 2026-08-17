@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, shut down the controller 
 summary: AFF A70またはAFF A90ストレージシステムのコントローラーをシャットダウンして、ブートメディアの交換時にデータ損失を防ぎ、システムの安定性を確保してください。 
 ---
-= 自動ブートリカバリプロセス中に AFF A70 または AFF A90 システムのコントローラをシャットダウンする
+= AFF A70またはAFF A90システムの自動ブートリカバリプロセス中にコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

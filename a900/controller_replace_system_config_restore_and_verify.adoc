@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a900, restore and verify the system configuration 
 summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位のシステム構成を確認し、必要に応じてシステムを再設定します。 
 ---
-= AFF A900システムのコントローラー構成を復元して検証する
+= AFF A900システムでコントローラー構成を復元して検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

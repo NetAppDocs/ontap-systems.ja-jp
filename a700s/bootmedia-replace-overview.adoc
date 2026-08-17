@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700s, aff, a700s, primary, boot, media, store, ontap, image, system, restore, primary, media, secondary, usb, flash, drive, replace, replace the boot media, manual, manual boot recovery 
 summary: AFF A700sシステムでのブート メディアの交換について学習し、リカバリ方法を理解します。AFF A700sシステムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= AFF A700sシステムのブートメディア交換について
+= AFF A700s システムのブートメディアの交換について
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, x91148a, module, open, slots, nic, storage 
 summary: システムの空のモジュールスロットに、 100GbE NIC または NS224 ストレージシェルフのストレージモジュールとして X91148A モジュールを追加できます。 
 ---
-= オープンスロットを使用してAFF A700システムにX91148Aモジュールを追加する
+= X91148AモジュールをオープンスロットでAFF A700システムに追加する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

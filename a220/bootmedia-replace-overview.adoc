@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2700, aff a220, replace, boot, media, image, nondisruptive, disruptive, replacement, fat32, usb, manual, manual boot recovery 
 summary: ブートメディアには、システムが起動時に使用するプライマリおよびセカンダリのシステムファイルセットが格納されています。AFF A220システムは、手動によるブートメディア復旧手順のみをサポートしています。 
 ---
-= AFF A220システムのブートメディア交換について
+= AFF A220 システムのブートメディアの交換について
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

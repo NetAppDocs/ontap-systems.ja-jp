@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, boot the recovery image 
 summary: AFF A1Kシステムに新しいブートメディアデバイスを設置したら、リカバリイメージをUSBドライブからブートし、パートナーノードから設定をリストアできます。 
 ---
-= 手動ブートリカバリプロセスを使用して AFF A1K システムのリカバリイメージを起動します
+= 手動ブートリカバリプロセスを使用して AFF A1K システムのリカバリイメージを起動する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

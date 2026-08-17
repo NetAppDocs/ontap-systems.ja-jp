@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a800, replace a dimm 
 summary: システムが修正可能なエラー訂正コードまたは修正不可能なECCエラーの増加を検知した場合は、AFF A800コントローラモジュールのDIMMを交換してください。故障したDIMMを交換しないと、システムパニックを引き起こす可能性があります。 
 ---
-= AFF A800システムのメモリエラーを修正するためにDIMMを交換する
+= AFF A800 システムの DIMM を交換してメモリエラーを修正する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

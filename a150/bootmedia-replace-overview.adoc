@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, replace, boot, media, image, nondisruptive, disruptive, replacement, fat32, usb 
 summary: ブートメディアには、システムが起動時に使用するプライマリおよびセカンダリのシステムブートイメージファイルが格納されています。ネットワーク構成によっては、無停止交換または停止交換のいずれかを実行できます。 
 ---
-= AFF A150システムのブートメディアを交換するための要件を確認してください
+= AFF A150システムのブートメディアの交換要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
