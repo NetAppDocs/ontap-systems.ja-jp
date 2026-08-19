@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a150, a150, asa, how to recable the system, how to reassign disks 
 summary: ストレージリソースの制御を交換用コントローラに戻すと、ASA A150 システムは通常動作を再開できます。 
 ---
-= ASA A150 システムのコントローラーを返却して通常運用を再開する
+= ASA A150システムでコントローラーをギブバックして通常運用を再開する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

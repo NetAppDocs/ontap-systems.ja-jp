@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, hot swap a cluster ha card, hot swap ethernet client io module, hotswap io module, hot swap io module 
 summary: AFF C80 ストレージシステムでモジュールに障害が発生し、ストレージシステムがすべての ONTAP バージョン要件を満たしている場合は、イーサネット IO モジュールをホット スワップできます。 
 ---
-= AFF C80ストレージシステムのI/Oモジュールをホットスワップする
+= AFF C80 システムの I/O モジュールをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

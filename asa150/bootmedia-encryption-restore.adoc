@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a150, a150, asa, post, boot, media, okm, nse, nve, onboard key manager, netapp storage encryption, netapp volume encryption 
 summary: 交換用ブートメディアで暗号化をリストアします。 
 ---
-= ASA A150システムの手動ブートリカバリプロセス後にブートメディアの暗号化を復元する
+= ASA A150 システムで手動ブートリカバリプロセス後にブートメディアの暗号化を復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

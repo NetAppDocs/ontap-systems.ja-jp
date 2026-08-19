@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c400, shut down the impaired controller 
 summary: ASA C400 ストレージ システムのコントローラーをシャットダウンして、コントローラーの交換時にデータ損失を防ぎ、システムの安定性を確保します。 
 ---
-= ASA C400システムの交換前に障害のあるコントローラーをシャットダウンする
+= ASA C400システムで障害のあるコントローラーを交換前にシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

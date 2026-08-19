@@ -2,16 +2,16 @@
 permalink: asa-c250/install-videos.html 
 sidebar: sidebar 
 keywords: asa c250, hardware installation and cabling video, performing end-to-end software configuration video 
-summary: 動画は2本あり、1本はシステムをラックに取り付けてケーブルを配線する方法を示し、もう1本はSystem Managerのガイド付きセットアップを使用して初期システム構成を実行する例を示しています。 
+summary: ASA C250ストレージシステムのインストール方法を示すビデオをご覧ください。 
 ---
-= 動画の説明を使用してASA C250ストレージシステムをインストールする
+= ASA C250 ストレージシステムを動画の手順に従ってインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-次のビデオでは、新しいシステムの設置とケーブル接続の方法を紹介します。
+ASA C250ストレージシステムのインストール方法を示すビデオをご覧ください。
 
 .アニメーション- AFF A250のインストールとセットアップ
 video::fe6876d5-9332-4b2e-89be-ac6900027ba5[panopto]

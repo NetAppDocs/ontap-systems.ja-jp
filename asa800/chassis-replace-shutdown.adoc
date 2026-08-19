@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a800, shutdown the controllers 
 summary: シャーシを交換するには、コントローラをシャットダウンする必要があります。 
 ---
-= シャーシを交換するためにASA A800コントローラをシャットダウンする
+= シャーシを交換するために ASA A800 コントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

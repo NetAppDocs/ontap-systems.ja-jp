@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c400, aff, c400, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module 
 summary: サービスを中断せずにファンモジュールを交換するには、特定の順序でタスクを実行する必要があります。 
 ---
-= AFF C400ストレージシステムのファンモジュールをホットスワップする
+= AFF C400システムのファンモジュールをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

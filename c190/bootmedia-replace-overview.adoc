@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: AFF c190, nondisruptive, disruptive, replace the boot media, manual, manual boot recovery 
 summary: AFF C190システムでのブート メディアの交換について説明し、さまざまな交換方法を理解します。AFF C190システムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= AFF C190システムのブートメディア交換について
+= AFF C190システムにおける手動ブートメディアリカバリの要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

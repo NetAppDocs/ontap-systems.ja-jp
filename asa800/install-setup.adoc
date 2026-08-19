@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a800, initial configuration options 
 summary: システムを設置してセットアップします。 
 ---
-= ASA A800ストレージシステムのインストール方法を選択してください
+= ASA A800 のインストールおよび構成ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

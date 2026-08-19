@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a400, asa, a400, step-by-step, instruction, install, typical, netapp, system, instruction, detail, guide, prepare, installation, hardware, cable, controller, network, drive, shelves, shelf, complete, setup, configuration, detailed guide, prepare for installation, install the hardware, cable controllers to your network, cable controllers to drive shelves, complete system setup and configuration 
 summary: ここでは、ASA A400システムのインストールについて、インストールの準備、ハードウェアの設置、コントローラーのケーブル接続、セットアップの完了まで、詳細な手順を説明します。 
 ---
-= 詳細な手順に従ってASA A400ストレージシステムをインストールする
+= 詳細な手順を使用してASA A400ストレージシステムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

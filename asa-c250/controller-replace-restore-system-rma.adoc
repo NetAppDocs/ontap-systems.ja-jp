@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c250, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: ASA C250 システムのコントローラ交換を完了して完全に動作させるには、必要に応じて NetApp Storage Encryption 構成をリストアし、新しいコントローラのライセンスをインストールして、キットに同梱されている RMA 手順書の説明に従って障害が発生した部品を NetApp に返却する必要があります。 
 ---
-= ASA C250システムのコントローラーの交換を完了します
+= ASA C250 システムのコントローラー交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -2,16 +2,16 @@
 permalink: asa-c800/install-detailed-guide.html 
 sidebar: sidebar 
 keywords: asa c800, detailed installation 
-summary: このセクションでは、ASA C800システムの設置手順について詳しく説明します。 
+summary: ASA C800 システムのインストール準備、ハードウェアのインストール、システムの配線、および初期設定の完了について、詳細な手順を説明します。 
 ---
-= 詳細な手順を使用して ASA C800 ストレージシステムをインストールする
+= 詳細な手順書を使用してASA C800システムをインストールおよびセットアップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このセクションでは、ASA C800システムの設置手順について詳しく説明します。
+ASA C800 システムのインストール準備、ハードウェアのインストール、システムの配線、および初期設定の完了について、詳細な手順を説明します。
 
 
 

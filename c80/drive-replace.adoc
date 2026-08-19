@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, replace the drives 
 summary: ドライブに障害が発生した場合やアップグレードが必要な場合は、AFF C80システムのドライブを交換してください。このプロセスでは、障害が発生したドライブを特定して安全に取り外し、新しいドライブを取り付けてデータアクセスとシステムパフォーマンスを継続できるようにします。 
 ---
-= AFF C80ストレージシステムのSSDを交換する
+= AFF C80システムのSSDを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

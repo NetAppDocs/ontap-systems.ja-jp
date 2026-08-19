@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa900, shut down the controller 
 summary: ASA A900ストレージシステムのコントローラーをシャットダウンして、ブートメディアの交換時にデータ損失を防ぎ、システムの安定性を確保します。 
 ---
-= 自動ブートリカバリプロセス中に ASA A900 システムのコントローラをシャットダウンする
+= ASA A900 システムの自動ブートリカバリプロセス中にコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

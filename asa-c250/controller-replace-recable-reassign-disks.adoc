@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c250, how to recable the system, how to reassign disks 
 summary: ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。 
 ---
-= ASA C250システムのケーブルを再配線し、ディスクを再割り当てする
+= ASA C250システムのディスクのケーブルを張り替えて再割り当てする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

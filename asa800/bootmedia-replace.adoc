@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a800, replace the boot media 
 summary: ブートメディアを交換する前に、コントローラモジュールのライザー 3 を取り外して障害が発生したブートメディアの場所を確認する必要があります。 
 ---
-= 手動ブートリカバリプロセスを使用して ASA A800 システムのブートメディアを交換する
+= ASA A800 システムのブートメディアを手動ブートリカバリプロセスを使用して交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

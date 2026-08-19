@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a400, install, setup, initial configuration 
 summary: システムを設置してセットアップします。 
 ---
-= ASA A400ストレージシステムのインストール方法を選択してください
+= ASA A400 のインストールおよび構成ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

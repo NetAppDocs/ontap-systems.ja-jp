@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, replace the chassis 
 summary: AFF C30またはAFF C60ストレージシステムのシャーシを交換する前に、交換を正常に完了するために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることの確認、および適切な交換用シャーシと必要な工具が揃っていることの確認が含まれます。 
 ---
-= AFF C30またはAFF C60シャーシを交換する前に要件を確認してください
+= AFF C30 または AFF C60 システムのシャーシを交換する前に要件を確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

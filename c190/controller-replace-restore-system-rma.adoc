@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: c190, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: システムを完全に動作可能な状態に復元するには、NetApp Storage Encryptionの設定をリストアし、新しいコントローラのライセンスをインストールし、障害が発生した部品をキットに同梱されているRMA手順書の説明に従ってNetAppに返却する必要があります。 
 ---
-= AFF C190システムのコントローラーの交換を完了します
+= AFF C190 システムのコントローラー交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

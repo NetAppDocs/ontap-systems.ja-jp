@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: コントローラのHA構成がアクティブで、AFF C80ストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。 
 ---
-= AFF C80ストレージシステムのコントローラー構成を復元して検証する
+= AFF C80システムでコントローラー構成を復元して検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

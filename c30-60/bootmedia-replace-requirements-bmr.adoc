@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, replace the boot media 
 summary: AFF C30またはAFF C60ストレージシステムのブートメディアを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、正しい交換用ブートメディアを使用していることの確認、障害のあるブートメディアが搭載されたコントローラのe0Mレンチポートが正常に動作していることの確認、およびOnboard Key Manager（OKM）またはExternal Key Manager（EKM）が有効になっているかどうかの確認が含まれます。 
 ---
-= AFF C30 または AFF C60 ストレージシステムにおける自動ブートメディアリカバリの要件を確認する
+= AFF C30またはAFF C60システムにおける自動ブートメディアリカバリの要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

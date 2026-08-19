@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, replace the real-time clock battery 
 summary: AFF C80システムのリアルタイムクロック（RTC）バッテリ（一般にコイン型電池と呼ばれる）を交換して、正確な時刻同期に依存するサービスやアプリケーションが動作し続けるようにします。 
 ---
-= AFF C80ストレージシステムのリアルタイム クロックバッテリを交換する
+= AFF C80システムのリアルタイムクロックバッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

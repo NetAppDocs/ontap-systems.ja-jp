@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a250, install, setup, initial configuration 
 summary: システムを設置してセットアップします。 
 ---
-= ASA A250ストレージシステムのインストール方法を選択してください
+= ASA A250 のインストールおよび構成ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

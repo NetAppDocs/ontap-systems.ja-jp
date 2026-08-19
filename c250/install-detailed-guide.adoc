@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff c250, detailed installation 
 summary: このセクションでは、AFF C250システムの設置手順について詳しく説明します。 
 ---
-= 詳細ガイドを使用してAFF C250ストレージシステムをインストールおよびセットアップする
+= 詳細な手順を使用してAFF C250ストレージシステムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-この手順では、AFF C250ストレージ・システムの設置手順について詳しく説明します。
+AFF C250ストレージシステムのインストール：ラックへの設置、ケーブル配線、初期システム起動について、詳細な手順を追って説明します。
 
 MetroCluster 構成の場合は、を使用します https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster のドキュメント"^]。
 

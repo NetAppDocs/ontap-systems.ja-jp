@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a800, post boot media replacement steps for okm, nse, and nve 
 summary: 環境変数を確認したら、Onboard Key Manager、NetApp Storage Encryption、またはNetApp Volume Encryptionが有効になっているシステムに固有の手順を完了する必要があります。 
 ---
-= ASA A800システムの手動ブートリカバリプロセス後にブートメディアの暗号化を復元する
+= ASA A800 システムで手動ブートリカバリプロセス後にブートメディアの暗号化を復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

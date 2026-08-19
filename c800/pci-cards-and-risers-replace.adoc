@@ -10,9 +10,7 @@ summary: PCIe カードを交換するには、カードからケーブルを外
 :imagesdir: ../media/
 
 
-[role="lead"]
-モジュールに障害が発生した場合、より高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、 AFF C800システムの I/O モジュールを交換または追加します。交換プロセスには、コントローラのシャットダウン、障害のあるI/Oモジュールの交換、コントローラの再起動、そして障害のある部品のNetAppへの返送が含まれます。
-
+ Replace a PCIe card in your AFF C800 system when the card fails or when an upgrade is required to support higher performance or additional features. The replacement process involves shutting down the controller, replacing the failed PCIe card, rebooting the controller, and returning the failed part to NetApp.
 .作業を開始する前に
 * NetApp の新品または交換部品を用意する必要があります。
 * ストレージシステムの他のコンポーネントがすべて正常に動作していることを確認します。正常に動作していない場合は、テクニカルサポートにお問い合わせください。

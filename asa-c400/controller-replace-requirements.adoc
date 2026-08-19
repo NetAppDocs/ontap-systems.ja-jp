@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c400, prerequisite, replace the controller module 
 summary: ASA C400システムのコントローラを交換する前に、システム内の他のすべてのコンポーネントが正常に機能していることを確認し、正しい交換用コントローラがあることを確認し、コントローラのコンソール出力をテキストログファイルに保存します。 
 ---
-= ASA C400システムのコントローラーを交換する前に要件を確認してください
+= ASA C400システムでコントローラーを交換する前に要件を確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

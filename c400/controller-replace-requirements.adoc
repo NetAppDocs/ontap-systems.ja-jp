@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c400, prerequisite, replace the controller module 
 summary: AFF C400システムのコントローラを交換する前に、システム内の他のすべてのコンポーネントが正しく機能していることを確認し、正しい交換用コントローラを使用していることを確認し、コントローラのコンソール出力をテキストログファイルに保存します。 
 ---
-= AFF C400ストレージシステムのコントローラーを交換する前に要件を確認してください
+= AFF C400システムでコントローラーを交換する前に要件を確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

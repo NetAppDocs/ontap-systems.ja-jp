@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, shut down the controller 
 summary: 手動ブートメディア復旧プロセス中にデータ損失を防ぎ、システムの安定性を維持するために、AFF C80ストレージシステムのコントローラーをシャットダウンしてください。 
 ---
-= 手動ブートリカバリプロセス中に AFF C80 ストレージシステムのコントローラーをシャットダウンする
+= 手動ブートリカバリプロセス中に AFF C80 システムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

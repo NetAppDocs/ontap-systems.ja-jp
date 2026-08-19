@@ -2,16 +2,16 @@
 permalink: asa-c800/install-setup.html 
 sidebar: sidebar 
 keywords: asa c800, initial configuration options 
-summary: システムを設置してセットアップします。 
+summary: ASA C800 システムのセットアップに最適なインストール方法を、簡単な図解説明、ビデオによる解説、または詳細なステップバイステップのガイダンスからお選びください。 
 ---
-= ASA C800 ストレージシステムのインストールとセットアップ
+= ASA C800 のインストールおよび構成ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ほとんどの構成（ ASA 構成を含む）では、異なるコンテンツ形式から選択できます。
+ASA C800 システムのセットアップに最適なインストール方法を、簡単な図解説明、ビデオによる解説、または詳細なステップバイステップのガイダンスからお選びください。
 
 * link:../asa-c800/install-quick-guide.html["クイックステップ"]
 +

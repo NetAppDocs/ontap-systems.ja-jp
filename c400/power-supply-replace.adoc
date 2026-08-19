@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c400, replace a power supply 
 summary: 電源装置（ PSU ）を交換するには、ターゲットの PSU の電源を切断して電源ケーブルを外し、その PSU を取り外したあとに、交換用 PSU を取り付けて電源に再接続します。 
 ---
-= AFF C400ストレージシステムの電源ユニットをホットスワップする
+= AFF C400システムの電源ユニットをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

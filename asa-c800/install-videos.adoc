@@ -2,16 +2,16 @@
 permalink: asa-c800/install-videos.html 
 sidebar: sidebar 
 keywords: asa c800, hardware installation and cabling video, perform end-to-end software configuration video 
-summary: ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用したシステムの初期設定の例を紹介するビデオを 2 種類紹介します。 
+summary: ASA C800 システムのラックへの設置とケーブル接続、および ONTAP System Manager のガイド付きセットアップを使用した初期システム構成の実行に関するビデオ手順をご覧ください。 
 ---
-= 動画の説明を使用してASA C800ストレージシステムをインストールする
+= 動画の手順を使用して ASA C800 システムをインストールおよびセットアップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ここでは、システムの設置とケーブル接続の方法を紹介するビデオと、 System Manager のガイド付きセットアップを使用したシステムの初期設定の例を紹介するビデオを 2 種類紹介します。
+ASA C800 システムのラックへの設置とケーブル接続、および ONTAP System Manager のガイド付きセットアップを使用した初期システム構成の実行に関するビデオ手順をご覧ください。
 
 
 

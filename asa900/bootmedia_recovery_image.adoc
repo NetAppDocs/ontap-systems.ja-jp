@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a900, boot the recovery image 
 summary: 障害のあるコントローラをリカバリイメージからブートするための手順 は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。 
 ---
-= 手動ブートリカバリプロセスを使用して、ASA A900システムのリカバリイメージを起動します
+= 手動ブートリカバリプロセスを使用して ASA A900 システムでリカバリイメージをブートする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

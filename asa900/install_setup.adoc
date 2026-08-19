@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ASA a900, install, setup, initial configuration 
 summary: システムを設置してセットアップします。 
 ---
-= ASA A900ストレージシステムのインストール方法を選択してください
+= ASA A900 のインストールおよび構成ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

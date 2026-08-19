@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c250, shut down the controller 
 summary: ASA C250ストレージシステムのコントローラーをシャットダウンして、ブートメディアの交換時にデータ損失を防ぎ、システムの安定性を確保します。 
 ---
-= 自動ブートリカバリプロセス中に ASA C250 システムのコントローラをシャットダウンする
+= ASA C250 システムの自動ブートリカバリプロセス中にコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

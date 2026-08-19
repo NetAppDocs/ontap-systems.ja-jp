@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c400, asa, c400, shut, down, impair, controller, check, status, onboard, encryption, keys, status, disable, automatic, giveback, version, ontap, system, run, pre-shutdown, check, pre-shutdown checks for onboard encryption keys 
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
-= ASA C400システムのブートメディアの暗号化サポートを確認してください
+= ASA C400システムのブートメディアの暗号化サポートを確認します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

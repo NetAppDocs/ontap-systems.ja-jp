@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: AFF C30 またはAFF C60 ストレージ システムのコントローラの交換を完了するには、まず必要に応じてNetAppストレージ暗号化構成を復元し、新しいコントローラに必要なライセンスをインストールします。次に、論理インターフェイス LIF がホーム ポートにレポートしていることを確認し、クラスターのヘルス チェックを実行します。最後に、新しいコントローラのシリアル番号を登録し、故障した部品をNetAppに返送します。 
 ---
-= AFF C30 または AFF C60 ストレージシステムのコントローラーの交換を完了します
+= AFF C30またはAFF C60システムのコントローラーの交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

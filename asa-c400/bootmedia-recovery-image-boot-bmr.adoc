@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa-c400, boot the recovery image 
 summary: 新しいブートメディアデバイスをASA C400システムにインストールしたら、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。 
 ---
-= 自動ブートリカバリプロセスを使用して、ASA C400システムのブートイメージを復元します
+= 自動ブートリカバリプロセスを使用して ASA C400 システムでリカバリイメージをブートする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a800, boot the recovery image 
 summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
-= 手動ブートリカバリプロセスを使用して、ASA A800システムのリカバリイメージを起動します
+= 手動ブートリカバリプロセスを使用して ASA A800 システムでリカバリイメージをブートする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c250, check onboard encryption keys as needed 
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
-= AFF C250ストレージシステムのブートメディアの暗号化サポートを確認してください
+= AFF C250システムのブートメディアの暗号化サポートを確認します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

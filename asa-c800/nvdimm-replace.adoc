@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c800, replace an nvdimm 
 summary: システムがフラッシュメモリの寿命がほぼ尽きた、または識別されたNVDIMMに異常があると判断した場合、コントローラモジュール内のNVDIMMを交換する必要があります。そうしないと、システムパニックが発生します。 
 ---
-= ASA C800システムのNVDIMMを交換する
+= ASA C800 システムの NVDIMM を交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

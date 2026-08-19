@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c800, how to recable the system, how to reassign disks 
 summary: ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。 
 ---
-= AFF C800システムのケーブルを再配線し、ディスクを再割り当てする
+= AFF C800システムでコントローラーのケーブルを再接続して返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

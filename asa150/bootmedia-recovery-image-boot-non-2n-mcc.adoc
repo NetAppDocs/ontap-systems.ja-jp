@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a150, a150, asa, boot, recovery, image, restore, file, system, environmental, varible 
 summary: ONTAP イメージを USB ドライブからブートし、ファイルシステムをリストアして、環境変数を確認する必要があります。 
 ---
-= 手動ブートリカバリプロセスを使用して、ASA A150システムのリカバリイメージを起動します
+= 手動ブートリカバリプロセスを使用して ASA A150 システムでリカバリイメージをブートする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

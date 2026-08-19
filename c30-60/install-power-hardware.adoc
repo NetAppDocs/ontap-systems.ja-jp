@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, power controllers 
 summary: AFF C30またはAFF C60ストレージシステムのネットワークおよびシェルフにコントローラをケーブル接続したら、シェルフとコントローラの電源をオンにします。 
 ---
-= AFF C30およびAFF C60ストレージシステムの電源を投入する
+= AFF C30またはAFF C60ストレージシステムの電源投入
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, replace the boot media 
 summary: AFF C80 ストレージ システムのブート メディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。 
 ---
-= AFF C80 ストレージシステムにおける自動ブートメディアリカバリの要件を確認する
+= AFF C80システムにおける自動ブートメディアリカバリの要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

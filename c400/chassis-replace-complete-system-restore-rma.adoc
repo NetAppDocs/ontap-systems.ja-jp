@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c400, verify and set HA state, complete the replacement process 
 summary: キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。 
 ---
-= AFF C400 ストレージシステムのシャーシの交換を完了する
+= AFF C400システムのシャーシ交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,8 +12,6 @@ summary: キットに付属のRMA指示書に従って、シャーシのHA状態
 
 [role="lead"]
 AFF C400 ストレージシステムのシャーシの交換を完了するには、シャーシの HA 状態を確認し、障害が発生したコンポーネントを NetApp に返却します。
-
-キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。
 
 
 

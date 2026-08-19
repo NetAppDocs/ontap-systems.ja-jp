@@ -2,16 +2,16 @@
 permalink: c400/install-quick-guide.html 
 sidebar: sidebar 
 keywords: aff c400, aff, c400, guide, graphic, instruction, installation, system, rack, cabling, cable, initial, system, bring-up, guide, install, netapp, system, quick guide 
-summary: このガイドでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で説明します。ネットアップシステムのインストールに精通している場合は、このガイドを使用してください。 
+summary: ラックへの設置、ケーブル配線、および初期システム起動を網羅した図解入りの説明書を使用して、AFF C400システムをインストールおよびセットアップします。 
 ---
-= クイックガイドを使用した AFF C400 ストレージシステムのインストールとセットアップ
+= グラフィック手順を使用した AFF C400 システムのインストールとセットアップ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-クイックガイドを使用して AFF C400 ストレージシステムをインストールおよびセットアップします。このガイドには、ラックへの設置やケーブル配線からシステムの初期起動まで、図解入りの手順が記載されています。
+ラックへの設置、ケーブル配線、および初期システム起動を網羅した図解入りの説明書を使用して、AFF C400システムをインストールおよびセットアップします。
 
 このクイックガイドには、ラックへの設置とケーブル接続からシステムの初期起動まで、システムの一般的な設置手順が図で示されています。この手順は、NetAppシステムのインストールに精通している場合に使用します。
 

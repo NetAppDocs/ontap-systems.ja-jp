@@ -2,16 +2,16 @@
 permalink: asa-c250/install-detailed-guide.html 
 sidebar: sidebar 
 keywords: asa c250, detailed installation 
-summary: このセクションでは、ASA C250システムの設置手順について詳しく説明します。 
+summary: ASA C250ストレージシステムのインストール：ラックへの設置、ケーブル配線、初期システム起動を詳細な手順に従って説明します。 
 ---
-= 詳細な手順を使用して ASA C250 ストレージシステムをインストールする
+= 詳細な手順を使用してASA C250ストレージシステムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-このセクションでは、ASA C250システムの設置手順について詳しく説明します。
+ASA C250ストレージシステムのインストール：ラックへの設置、ケーブル配線、初期システム起動を詳細な手順に従って説明します。
 
 
 

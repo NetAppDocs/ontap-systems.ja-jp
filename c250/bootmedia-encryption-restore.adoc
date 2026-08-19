@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c250, post boot media replacement steps for okm, nse, and nve 
 summary: 環境変数を確認したら、オンボードキーマネージャ、NetApp Storage Encryption、またはNetApp Volume Encryptionが有効になっているシステムに固有の手順を完了する必要があります。 
 ---
-= AFF C250ストレージシステムの手動ブート復旧プロセス後にブートメディアの暗号化を復元します
+= AFF C250 システムで手動ブートリカバリプロセス後にブートメディアの暗号化を復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

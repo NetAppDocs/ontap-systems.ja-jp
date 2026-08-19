@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c400, how to recable the system, how to reassign disks 
 summary: ストレージリソースの制御を交換用コントローラに戻すと、AFF C400 システムは通常動作を再開できます。 
 ---
-= AFF C400ストレージシステムのコントローラーを返却して、通常の動作を再開します
+= AFF C400 システムでコントローラーを返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

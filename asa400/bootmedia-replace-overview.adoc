@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a400, asa, a400, boot, media, store, primary, secondary, set, system, boot, image, file, replace, replace the boot media 
 summary: ブートメディアには、システムが起動時に使用するプライマリおよびセカンダリのシステムブートイメージファイルが格納されています。 
 ---
-= ASA A400システムのブートメディアの交換要件を確認する
+= ASA A400 システムのブートメディア交換の要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

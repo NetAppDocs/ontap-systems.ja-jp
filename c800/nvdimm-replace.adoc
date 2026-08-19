@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c800, replace an nvdimm 
 summary: AFF C800システムで、フラッシュの寿命がほぼ終了している、または識別されたNVDIMMが全体的に正常ではないとシステムが判断した場合は、NVDIMMを交換してください。 
 ---
-= AFF C800システムのNVDIMMを交換する
+= AFF C800 システムの NVDIMM を交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

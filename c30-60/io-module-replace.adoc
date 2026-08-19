@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, replace a pcie card 
 summary: AFF C30 またはAFF C60 ストレージ システムの I/O モジュールに障害が発生した場合、またはより高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、モジュールを交換します。交換プロセスには、コントローラのシャットダウン、障害のあるI/Oモジュールの交換、コントローラの再起動、そして障害のある部品のNetAppへの返送が含まれます。 
 ---
-= AFF C30またはAFF C60ストレージシステムのI/Oモジュールを交換する
+= AFF C30またはAFF C60システムのI/Oモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

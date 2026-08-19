@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c800, shut down the controller 
 summary: ASA C800ストレージシステムのコントローラーをシャットダウンして、ブートメディアの交換時にデータ損失を防ぎ、システムの安定性を確保します。 
 ---
-= 自動ブートリカバリプロセス中に ASA C800 システムのコントローラをシャットダウンする
+= ASA C800 システムの自動ブートリカバリプロセス中にコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c250, shutdown 
 summary: 手動ブートメディア復旧プロセス中にデータ損失を防ぎ、システムの安定性を維持するために、AFF C250ストレージシステムのコントローラーをシャットダウンしてください。 
 ---
-= 手動ブートリカバリプロセス中に AFF C250 ストレージシステムのコントローラをシャットダウンする
+= 手動ブートリカバリプロセス中に AFF C250 システムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, replace a power supply 
 summary: AFF C80 システムの AC または DC 電源ユニットに障害が発生した場合や不具合が生じた場合は、システムが安定した動作に必要な電力を継続的に供給できるように交換してください。交換手順は、故障した電源ユニットを電源から切り離し、電源ケーブルを抜き、故障したユニットを交換し、その後、電源に再接続するというものです。 
 ---
-= AFF C80 ストレージシステムの電源ユニットをホットスワップする
+= AFF C80システムの電源ユニットをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

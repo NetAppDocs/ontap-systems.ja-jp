@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, replace a power supply 
 summary: AFF C30またはAFF C60ストレージシステムのACまたはDC電源ユニットが故障または不具合を起こした場合は交換してください。これにより、システムが安定した動作に必要な電力を継続的に受け取ることができます。交換プロセスでは、故障した電源装置を電源から切り離し、電源コードを抜き、故障した電源装置を交換してから、電源に再接続します。 
 ---
-= AFF C30またはAFF C60ストレージシステムの電源ユニットをホットスワップする
+= AFF C30またはAFF C60システムの電源ユニットをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: c400, boot the recovery image 
 summary: AFF C400システムに新しいブートメディアデバイスをインストールしたら、自動ブートメディアリカバリプロセスを開始して、パートナーノードから設定を復元できます。 
 ---
-= 自動ブートリカバリプロセスを使用して、AFF C400ストレージシステムのブートイメージを復元します
+= 自動ブートリカバリプロセスを使用して AFF C400 システムでリカバリイメージをブートする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

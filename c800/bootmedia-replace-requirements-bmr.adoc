@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: c800, replace the boot media 
 summary: AFF C800システムのブートメディアを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。 
 ---
-= AFF C800システムの自動ブートメディアリカバリの要件を確認してください
+= AFF C800システムにおける自動ブートメディアリカバリの要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

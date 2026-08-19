@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c250, shut down the impaired controller 
 summary: 障害のあるコントローラモジュールをシャットダウンするには、コントローラのステータスを確認し、必要に応じて正常なコントローラが障害のあるコントローラストレージからデータを引き続き提供できるようにコントローラをテイクオーバーする必要があります。 
 ---
-= AFF C250ストレージシステムの障害コントローラーを交換前にシャットダウンする
+= AFF C250システムで障害のあるコントローラーを交換前にシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

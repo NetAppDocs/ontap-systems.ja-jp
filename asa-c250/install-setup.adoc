@@ -2,16 +2,16 @@
 permalink: asa-c250/install-setup.html 
 sidebar: sidebar 
 keywords: asa c250, install, setup, initial configuration 
-summary: システムを設置してセットアップします。 
+summary: ASA C250ストレージシステムのインストールとセットアップを、簡単な手順、ビデオによる手順、または詳細な手順を使用して行います。 
 ---
-= ASA C250 ストレージシステムのインストールとセットアップ
+= ASA C250 のインストールおよび構成ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ほとんどの構成では、さまざまなコンテンツ形式から選択できます。
+ASA C250ストレージシステムのインストールとセットアップを、簡単な手順、ビデオによる手順、または詳細な手順を使用して行います。
 
 * link:../asa-c250/install-quick-guide.html["クイックステップ"]
 +

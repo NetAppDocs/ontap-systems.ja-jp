@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, prerequisite, replace the controller module 
 summary: AFF C80システムのコントローラを交換する前に、交換が成功するために必要な要件を満たしていることを確認してください。具体的には、システムの他のすべてのコンポーネントが正常に動作していること、正しい交換用コントローラがあることの確認、コントローラのコンソール出力のテキストログファイルへの保存が含まれます。 
 ---
-= AFF C80ストレージシステムのコントローラーを交換する前に要件を確認してください
+= AFF C80システムでコントローラーを交換する前に要件を確認してください
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

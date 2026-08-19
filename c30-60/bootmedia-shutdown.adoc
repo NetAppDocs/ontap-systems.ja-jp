@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, shut down the controller 
 summary: 手動ブートメディア復旧プロセス中にデータ損失を防ぎ、システムの安定性を維持するために、AFF C30 または AFF C60 ストレージシステムのコントローラーをシャットダウンしてください。 
 ---
-= 手動ブートリカバリプロセス中に AFF C30 または AFF C60 ストレージシステムのコントローラをシャットダウンする
+= 手動ブートリカバリプロセス中に AFF C30 または AFF C60 システムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

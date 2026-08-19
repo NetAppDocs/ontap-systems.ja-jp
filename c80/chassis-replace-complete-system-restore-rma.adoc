@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, verify and set HA state, complete the replacement process 
 summary: コントローラをリブートし、システムヘルスを確認し、障害が発生したパーツをNetAppに戻して、AFF C80シャーシの交換手順の最後の手順を完了します。 
 ---
-= AFF C80 ストレージシステムのシャーシの交換を完了する
+= AFF C80システムのシャーシ交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
