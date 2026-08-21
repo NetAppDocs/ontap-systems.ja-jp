@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2700, how to recable the system, how to reassign disks 
 summary: ストレージのケーブルを再接続し、ディスクの再割り当てを確認し、残りのタスクを完了してコントローラを返却し、FAS2700 システムを完全に動作可能な状態に復元します。 
 ---
-= FAS2700システムのコントローラーを元に戻して、通常の動作を再開してください。
+= FAS2700 システムでコントローラーをギブバックして、通常の動作を再開します。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

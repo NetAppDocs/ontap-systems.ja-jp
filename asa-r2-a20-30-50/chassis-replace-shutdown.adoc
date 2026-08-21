@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, shutdown the controllers 
 summary: ASA A20、ASA A30、またはASA A50ストレージシステムのコントローラをシャットダウンして、データ損失を防ぎ、シャーシの交換時にシステムの安定性を確保します。 
 ---
-= ASA A20、ASA A30、またはASA A50コントローラーをシャットダウンしてシャーシを交換する
+= シャーシを交換するために ASA A20、ASA A30、または ASA A50 コントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

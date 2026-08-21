@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 1k, shut down the controller 
 summary: ブートメディアを交換する際は、データ損失を防ぎ、システムの安定性を確保するために、AFX 1Kストレージシステムのコントローラーをシャットダウンしてください。 
 ---
-= 自動ブートリカバリプロセス中に、AFX 1Kストレージシステムのコントローラーをシャットダウンします。
+= AFF A1Kシステムで自動ブートリカバリプロセス中にコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

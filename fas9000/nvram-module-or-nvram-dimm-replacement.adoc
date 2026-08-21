@@ -2,15 +2,17 @@
 permalink: fas9000/nvram-module-or-nvram-dimm-replacement.html 
 sidebar: sidebar 
 keywords: aff a700, fas9000, replace, nvram, module, dimm, manually, reassign, system, id, ha, system, disk, two, node, restore, storage, volume, encryption, functionality 
-summary: NVRAM モジュールは、NVRAM10 と DIMM 、および NVRAM モジュールあたり最大 2 つの NVMe SSD Flash Cache モジュール、 Flash Cache またはキャッシュモジュールで構成されます。 
+summary: FAS9000システムで、故障したNVRAMモジュール、またはNVRAMモジュール内部のDIMMを交換します。システムIDはNVRAMモジュールから派生するため、モジュールを交換すると、そのシステムに属するディスクが新しいシステムIDに再割り当てされます。 
 ---
-= FAS9000システムのNVRAMモジュールまたはNVRAM DIMMを交換する
+= FAS9000システムのNVRAMモジュールまたはNVRAM DIMMの交換
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+FAS9000システムで、故障したNVRAMモジュール、またはNVRAMモジュール内部のDIMMを交換します。システムIDはNVRAMモジュールから派生するため、モジュールを交換すると、そのシステムに属するディスクが新しいシステムIDに再割り当てされます。
+
 NVRAMモジュールは、NVRAM10とDIMM、およびNVRAMモジュールごとに最大2つのNVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）で構成されます。障害が発生した NVRAM モジュールまたは NVRAM モジュール内の DIMM を交換できます。
 
 障害が発生したNVRAMモジュールを交換するには、モジュールをシャーシから取り外し、NVRAMモジュールからFlash Cacheモジュールを取り外し、DIMMを交換用モジュールに移動し、Flash Cacheモジュールを再度取り付けて、交換用NVRAMモジュールをシャーシに取り付ける必要があります。

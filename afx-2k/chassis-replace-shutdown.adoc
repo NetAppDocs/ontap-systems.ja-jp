@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 2k, shutdown the controller 
 summary: シャーシを交換する際は、データ損失を防ぎ、システムの安定性を確保するために、AFX 2Kストレージシステムのコントローラーをシャットダウンしてください。 
 ---
-= シャーシを交換するには、AFX 2K コントローラーをシャットダウンしてください。
+= AFX 2Kコントローラーをシャットダウンしてシャーシを交換します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 1k, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: AFX 1K ストレージ システムでコントローラの HA 構成がアクティブであり、正しく機能していることを確認し、システムのアダプタがディスクへのすべてのパスをリストしていることを確認します。 
 ---
-= AFX 1Kストレージシステムでコントローラー構成を復元および検証する
+= AFX 1Kシステムでコントローラ構成を復元および検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, shut down the impaired controller 
 summary: FAS50ストレージ・システムの障害のあるコントローラをシャットダウンして、データ損失を防ぎ、コントローラの交換時にシステムの安定性を確保します。 
 ---
-= 交換前に、FAS50システム内の障害のあるコントローラをシャットダウンします。
+= FAS50システムでは、交換前に障害のあるコントローラをシャットダウンします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

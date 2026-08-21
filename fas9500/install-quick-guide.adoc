@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: FAS9500 
 summary: このトピックでは、システムの初期起動時にラックやケーブル接続からシステムを標準的に設置する手順を図で示します。 
 ---
-= クイックステップを使用してFAS9500システムをインストールする
+= クイック手順を使用してFAS9500ストレージシステムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

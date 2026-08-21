@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, boot the recovery image 
 summary: 新しいブートメディアデバイスをFAS8300またはFAS8700システムにインストールした後、自動ブートメディアリカバリプロセスを開始して、パートナーノードから構成を復元することができます。 
 ---
-= 自動ブートリカバリプロセスを使用して、FAS8300またはFAS8700システムでリカバリイメージを起動します
+= 自動ブートリカバリプロセスを使用して FAS8300 または FAS8700 システムでリカバリイメージをブートする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

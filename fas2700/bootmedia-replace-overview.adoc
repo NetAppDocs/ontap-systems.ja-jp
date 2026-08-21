@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2700, replace, boot, media, image, nondisruptive, disruptive, replacement, fat32, usb, manual, manual boot recovery 
 summary: FAS2700 システムでのブート メディアの交換について学習し、さまざまな交換方法を理解します。ブート メディアには、システムの起動時に使用されるプライマリおよびセカンダリ ブート イメージ ファイルが格納されます。ネットワーク構成に応じて、無停止交換（HA ペアをネットワークに接続）または停止交換（2 回の再起動が必要）のいずれかを実行できます。 
 ---
-= FAS2700システムのブートメディアの交換について
+= FAS2700 システムのブートメディアの交換について
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, install, detailed, guide, prepare, hardware, cable, controller, switchless, cluster, sas, drive, two, node, configuration 
 summary: このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。インストール手順の詳細については、このガイドを参照してください。 
 ---
-= 詳細な手順を使用してFAS8300またはFAS8700システムをインストールする
+= 詳細な手順書を使用してFAS8300またはFAS8700システムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

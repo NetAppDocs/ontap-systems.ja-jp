@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, move the components 
 summary: FAS2600システムのコントローラを交換するには、故障したコントローラを取り外し、FRUコンポーネントを交換用コントローラモジュールに移動させ、シャーシに取り付け、システムをメンテナンスモードで起動します。 
 ---
-= FAS2600 システムのコントローラーを交換する
+= FAS2600システムのコントローラを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

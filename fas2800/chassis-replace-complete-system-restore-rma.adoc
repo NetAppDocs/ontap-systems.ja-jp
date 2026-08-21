@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2820, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
 summary: シャーシの HA 状態を確認し、アグリゲートをスイッチバックし、障害ドライブのある部品を NetApp に返却して、キットに同梱されている RMA 手順書に記載されているとおりに FAS2820 システムのシャーシ交換を完了する必要があります。 
 ---
-= FAS2820システムのシャーシの交換を完了する
+= FAS2820 システムのシャーシ交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

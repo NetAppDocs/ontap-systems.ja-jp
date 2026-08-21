@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a1k, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: ASA A1Kシステムのコントローラ交換を完了するには、まず必要に応じてNetAppストレージ暗号化の設定をリストアします。次に、論理インターフェイスがホームポートにレポートしていることを確認し、クラスタヘルスチェックを実行します。最後に、障害が発生した部品をNetAppに返却します。 
 ---
-= ASA A1Kシステムのコントローラーの交換を完了します
+= ASA A1K システムのコントローラー交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

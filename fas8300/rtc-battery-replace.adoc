@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, replace, real, time, clock, battery, shut, down, impaired, controller, controller, metrocluster, module, rtc, battery, date, time, aggregates, replace, reinstall, open, switch 
 summary: コントローラモジュールのリアルタイムクロック（ RTC ）バッテリを交換して、正確な時刻同期に依存するシステムのサービスとアプリケーションが機能を継続できるようにします。 
 ---
-= FAS8300またはFAS8700システムのリアルタイム時計バッテリーを交換する
+= FAS8300またはFAS8700システムのリアルタイムクロックバッテリを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, hot swap a cluster ha card, hot swap ethernet client io module, hotswap io module, hot swap io module 
 summary: FAS70またはFAS90ストレージシステムのイーサネットI/Oモジュールに障害が発生し、ストレージシステムがすべてのONTAPバージョン要件を満たしている場合、モジュールをホット スワップできます。 
 ---
-= FAS70またはFAS90システムでI/Oモジュールをシャットダウンせずにホット スワップする
+= FAS70またはFAS90システムでI/Oモジュールをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

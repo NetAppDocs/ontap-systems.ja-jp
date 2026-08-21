@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace, caching, module,  fas2820, shut, down, impaired, controller, controller, aggregates, metrocluster, configuration, replace, reinstall 
 summary: FAS2820システムのコントローラーモジュール内のキャッシュモジュールは、モジュールがオフラインになったことを示す単一のAutoSupportメッセージが登録された場合に交換する必要があります。障害ドライブのモジュールを交換しないと、ストレージシステムのパフォーマンスが低下します。 
 ---
-= FAS2820システムのキャッシュモジュールを交換する
+= FAS2820 システムのキャッシュモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

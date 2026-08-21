@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, shut down, impaired controller, take over 
 summary: FAS2600システム内の障害コントローラを交換する前に、その状態を確認し、必要に応じてテイクオーバーを実行することで障害コントローラをシャットダウンしてください。これにより、正常なコントローラが引き続きデータを提供できます。 
 ---
-= 交換前に、FAS2600システム内の障害コントローラをシャットダウンしてください。
+= FAS2600 システムで障害コントローラをシャットダウンしてから交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

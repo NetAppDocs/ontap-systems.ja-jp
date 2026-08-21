@@ -2,15 +2,17 @@
 permalink: fas9000/dimm-replace.html 
 sidebar: sidebar 
 keywords: aff a700, fas9000, replace, dimm, shut, down, impaired, controller, module, reinstall, system, node, aggregates, metrocluster, replacement 
-summary: システムで訂正可能なエラー訂正コード（ECC）の数が増加している場合は、コントローラモジュールのDIMMを交換する必要があります。交換しないと、システムパニックが発生します。 
+summary: FAS9000システムがヘルスモニターアラートを通じて過剰な修正可能なECCメモリエラー、または修正不可能なECCエラーを報告した場合は、DIMMを交換してください。DIMMの故障により、ストレージシステムがONTAPを起動できなくなる可能性があるため、交換することで安定した動作が回復します。 
 ---
-= FAS9000システムのDIMMを交換してメモリエラーを修正する
+= FAS9000 システムの DIMM を交換してメモリエラーを修正する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+FAS9000システムがヘルスモニターアラートを通じて過剰な修正可能なECCメモリエラー、または修正不可能なECCエラーを報告した場合は、DIMMを交換してください。DIMMの故障により、ストレージシステムがONTAPを起動できなくなる可能性があるため、交換することで安定した動作が回復します。
+
 ストレージシステムでヘルスモニタアラートに基づく大量のCECC（修正可能なエラー訂正コード）エラーや修正不可能なECCエラーなどのエラーが発生した場合は、コントローラのDIMMを交換する必要があります。これらのエラーは通常、DIMMの1つの障害が原因でストレージシステムがONTAPをブートできないことが原因です。
 
 システムのその他のコンポーネントがすべて正常に動作している必要があります。問題がある場合は、必ずテクニカルサポートにお問い合わせください。

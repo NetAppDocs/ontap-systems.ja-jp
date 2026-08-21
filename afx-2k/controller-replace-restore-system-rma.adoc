@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 2k, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: 論理インターフェースがホームポートにレポートしていることを確認し、クラスタの健全性チェックを実行してから、障害が発生した部品をNetAppに返却して、AFX 2Kコントローラー交換手順の最終ステップを完了します。 
 ---
-= AFX 2Kストレージシステムのコントローラー交換を完了する
+= AFX 2Kシステムのコントローラー交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

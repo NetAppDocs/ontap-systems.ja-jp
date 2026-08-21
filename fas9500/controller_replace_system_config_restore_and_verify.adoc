@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas9500, restore and verify the system configuration 
 summary: ハードウェアの交換が完了してメンテナンスモードでブートしたら、交換用コントローラの下位システム構成を確認し、必要に応じてシステムを再設定します。 
 ---
-= FAS9500システムのコントローラー構成を復元して検証する
+= FAS9500 システムでコントローラー構成を復元して検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

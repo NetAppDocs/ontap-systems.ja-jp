@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, replace the caching module 
 summary: システムがモジュールのオフラインを示す単一の AutoSupport メッセージを記録した場合は、FAS2600 システムのキャッシュモジュールを交換してください。交換しない場合、パフォーマンスが低下します。 
 ---
-= FAS2600システムのキャッシュモジュールを交換する
+= FAS2600システムのキャッシングモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

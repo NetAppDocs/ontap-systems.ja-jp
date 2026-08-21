@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, how to recable the system, how to reassign disks 
 summary: ストレージリソースの制御を交換用コントローラに戻して、FAS8300またはFAS8700システムが通常動作を再開できるようにします。 
 ---
-= FAS8300またはFAS8700システムのコントローラーを返却して、通常の運用を再開します
+= FAS8300またはFAS8700システムで通常運用を再開するためにコントローラーをギブバックする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

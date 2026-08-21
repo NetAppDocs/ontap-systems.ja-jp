@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, shut down the controller 
 summary: FAS8300またはFAS8700ストレージシステムのコントローラーをシャットダウンして、ブートメディアの交換時にデータ損失を防ぎ、システムの安定性を確保してください。 
 ---
-= FAS8300またはFAS8700システムの自動ブートリカバリプロセス中にコントローラーをシャットダウンする
+= 自動ブートリカバリプロセス中に FAS8300 または FAS8700 システムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

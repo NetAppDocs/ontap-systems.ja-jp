@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: コントローラのHA構成がアクティブで、ASA A70またはASA A90ストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。 
 ---
-= ASA A70またはASA A90システムのコントローラー構成を復元して検証する
+= ASA A70またはASA A90システムでコントローラー構成を復元して検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, replace caching module 
 summary: システムがモジュールがオフラインになったという単一のAutoSupportメッセージを登録した場合は、コントローラモジュールのキャッシングモジュールを交換する必要があります。交換しないと、パフォーマンスが低下します。 
 ---
-= FAS8200システムのキャッシュモジュールを交換する
+= FAS8200 システムのキャッシュモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, move the controller module hardware 
 summary: ハードウェア障害が発生した場合は、FAS50 ストレージ システムのコントローラーを交換してください。交換プロセスには、障害のあるコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーのインストール、および再起動が含まれます。 
 ---
-= FAS50システムのコントローラーを交換する
+= FAS50システムのコントローラを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

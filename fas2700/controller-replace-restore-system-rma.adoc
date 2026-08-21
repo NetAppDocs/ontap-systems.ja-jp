@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2700, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: FAS2700 システムを完全に動作可能な状態に復元するには、NetApp ストレージ暗号化構成を復元し、新しいコントローラのライセンスをインストールし、障害が発生した部品を NetApp に返却する必要があります。 
 ---
-= FAS2700システムのコントローラー交換を完了する
+= FAS2700システムのコントローラ交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

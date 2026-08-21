@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 1k, replace a pcie card 
 summary: モジュールに障害が発生した場合、またはより高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、AFX 1K ストレージ システムの I/O モジュールを交換します。交換プロセスには、コントローラのシャットダウン、障害のあるI/Oモジュールの交換、コントローラの再起動、そして障害のある部品のNetAppへの返送が含まれます。 
 ---
-= AFX 1KストレージシステムのI/Oモジュールを交換する
+= AFX 1KシステムのI/Oモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

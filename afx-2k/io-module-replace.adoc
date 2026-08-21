@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 2k, replace a pcie card 
 summary: AFX 2KストレージシステムのI/Oモジュールに不具合が生じた場合、またはより高いパフォーマンスや追加機能に対応するためのアップグレードが必要な場合は、I/Oモジュールを交換してください。交換プロセスには、コントローラのシャットダウン、故障したI/Oモジュールの交換、コントローラの再起動、および故障した部品の NetApp への返却が含まれます。 
 ---
-= AFX 2KストレージシステムのI/Oモジュールを交換する
+= AFX 2Kシステム内のI/Oモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

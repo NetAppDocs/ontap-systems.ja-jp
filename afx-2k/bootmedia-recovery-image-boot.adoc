@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 2k, boot the recovery image 
 summary: AFX 2Kストレージシステムに新しいブートメディアデバイスをインストールした後、自動ブートメディアリカバリプロセスを開始して、パートナーノードから構成を復元できます。 
 ---
-= 自動ブートリカバリプロセスを使用して、AFX 2Kストレージシステムでリカバリイメージを起動します。
+= 自動ブートリカバリプロセスを使用して、AFF A2Kシステムでリカバリイメージをブートします。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

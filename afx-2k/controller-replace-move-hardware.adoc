@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 2k, move the controller module hardware 
 summary: ハードウェア障害が発生した場合は、AFX 2K ストレージシステムのコントローラーを交換してください。交換手順は、障害のあるコントローラーを取り外し、コンポーネントを交換用コントローラーに移設し、交換用コントローラーを取り付けて再起動するというものです。 
 ---
-= AFX 2Kストレージシステムのコントローラーを交換する
+= AFX 2Kシステム内のコントローラーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

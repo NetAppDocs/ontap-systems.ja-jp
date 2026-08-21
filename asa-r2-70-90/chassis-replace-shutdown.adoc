@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, shutdown the controllers 
 summary: ASA A70またはASA A90ストレージシステムのコントローラをシャットダウンして、データ損失を防ぎ、シャーシの交換時にシステムの安定性を確保します。 
 ---
-= シャーシを交換するためにASA A70またはASA A90コントローラをシャットダウンする
+= シャーシを交換するために ASA A70 または ASA A90 コントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

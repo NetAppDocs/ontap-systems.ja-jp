@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas9500, boot the recovery image 
 summary: FAS9500システムに新しいブート メディア デバイスをインストールした後、自動ブート メディア回復プロセスを開始して、パートナー ノードから構成を復元できます。 
 ---
-= 自動ブートリカバリプロセスを使用して、FAS9500システムでリカバリイメージをブートします
+= 自動ブートリカバリプロセスを使用して FAS9500 システムでリカバリイメージをブートする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

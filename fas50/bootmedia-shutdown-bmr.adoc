@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, shut down the controller 
 summary: 自動ブートメディア復旧プロセス中にデータ損失を防ぎ、システムの安定性を維持するために、FAS50ストレージシステムのコントローラをシャットダウンしてください。 
 ---
-= 自動起動リカバリプロセス中にFAS50システムのコントローラをシャットダウンします。
+= 自動ブートリカバリプロセス中にFAS50システムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

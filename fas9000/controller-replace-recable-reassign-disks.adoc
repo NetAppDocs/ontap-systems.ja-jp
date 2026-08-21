@@ -2,15 +2,17 @@
 permalink: fas9000/controller-replace-recable-reassign-disks.html 
 sidebar: sidebar 
 keywords: aff a700, fas9000, how to recable the system, how to reassign disks 
-summary: ストレージを再度ケーブル接続し、ディスクの再割り当てを確認する必要があります。 
+summary: FAS9000システムでストレージを再配線してディスクの再割り当てを確認し、交換用コントローラーが正常な動作を再開できるようにします。 
 ---
-= FAS9000 システムのコントローラーを返却して、通常の運用を再開します
+= FAS9000システムでコントローラーをギブバックして通常運用を再開する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+FAS9000システムでストレージを再配線してディスクの再割り当てを確認し、交換用コントローラーが正常な動作を再開できるようにします。
+
 ストレージを再接続し、ディスクの再割り当てを確認して、交換用手順を続行します。
 
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: FAS8300, FAS8700 
 summary: サービスを中断せずにファンモジュールを交換するには、特定の順序でタスクを実行する必要があります。 
 ---
-= FAS8300またはFAS8700システムのファンをホットスワップする
+= FAS8300またはFAS8700システムのファンモジュールのホットスワップ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

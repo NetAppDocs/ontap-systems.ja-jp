@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, replace the boot media 
 summary: FAS70またはFAS90ストレージシステムのブートメディアを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。 
 ---
-= FAS70またはFAS90システムにおける自動ブートメディアリカバリの要件を確認します。
+= FAS70またはFAS90システムにおける自動ブートメディアリカバリの要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

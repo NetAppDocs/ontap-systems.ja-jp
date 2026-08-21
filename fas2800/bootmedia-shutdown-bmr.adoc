@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2820, shut down the controller 
 summary: FAS2820ストレージシステムのコントローラーをシャットダウンして、ブートメディアを交換する際のデータ損失を防ぎ、システムの安定性を維持します。 
 ---
-= FAS2820システムの自動ブートリカバリプロセス中にコントローラをシャットダウンする
+= 自動ブートリカバリプロセス中に FAS2820 システムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

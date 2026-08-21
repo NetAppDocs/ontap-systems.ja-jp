@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, pre-shutdown checks for onboard encryption keys 
 summary: FAS70またはFAS90ストレージシステムのデータセキュリティを確保するには、ブートメディア上の暗号化キーのサポート状況とステータスを確認する必要があります。お使いのONTAPバージョンがNetApp Volume Encryptionをサポートしているかどうかを確認し、コントローラをシャットダウンする前にキーマネージャがアクティブになっていることを確認してください。 
 ---
-= FAS70またはFAS90システムのブートメディアの暗号化サポートを確認する
+= 手動ブートリカバリプロセスを使用して、FAS70またはFAS90システムのブートメディアの暗号化サポートを確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

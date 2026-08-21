@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 2k, replace nvram 
 summary: AFX 2K ストレージ システムの NVRAM は、不揮発性メモリに不具合が生じた場合、またはアップグレードが必要になった場合に交換してください。 
 ---
-= AFX 2K ストレージシステムの NVRAM を交換する
+= AFX 2KシステムのNVRAMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

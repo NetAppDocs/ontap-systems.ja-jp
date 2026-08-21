@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, hot swap a cluster ha card, hot swap ethernet client io module, hotswap io module, hot swap io module 
 summary: ASA A20、ASA A30、または ASA A50 ストレージ システムで、モジュールに障害が発生し、ストレージ システムがすべての ONTAP バージョン要件を満たしている場合は、Ethernet I/O モジュールをホット スワップできます。 
 ---
-= ASA A20、ASA A30、またはASA A50システムをシャットダウンせずに I/O モジュールをホットスワップする
+= ASA A20、ASA A30、またはASA A50システムのI/Oモジュールをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

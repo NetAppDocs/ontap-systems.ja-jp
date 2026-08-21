@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c30, shut down the impaired controller 
 summary: コントローラを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、ASA C30 ストレージ システム内の障害のあるコントローラをシャットダウンします。 
 ---
-= ASA C30システムの交換前に障害のあるコントローラーをシャットダウンする
+= ASA C30システムで障害のあるコントローラーを交換前にシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

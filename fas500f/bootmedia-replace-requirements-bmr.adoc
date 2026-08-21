@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, replace the boot media 
 summary: FAS500f システムのブートメディアを交換する前に、交換を正常に完了するために必要な要件を満たしていることを確認してください。 
 ---
-= FAS500f システムの自動ブートメディアリカバリの要件を確認する
+= FAS500f システムにおける自動ブートメディアリカバリの要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

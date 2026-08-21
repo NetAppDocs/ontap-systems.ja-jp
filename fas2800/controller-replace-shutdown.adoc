@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2820, shut down the impaired controller 
 summary: FAS2820 システムの障害コントローラーを交換する前にシャットダウンしてください。使用する手順は、ストレージシステムのハードウェア構成によって異なります。 
 ---
-= FAS2820システムで障害コントローラーをシャットダウンしてから交換する
+= FAS2820 システムで障害コントローラーを交換前にシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

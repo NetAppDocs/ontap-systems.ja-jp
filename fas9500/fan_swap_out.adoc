@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas9500, swap out a fan 
 summary: サービスを中断せずにファンモジュールを交換するには、特定の順序でタスクを実行する必要があります。 
 ---
-= FAS9500システムのファンをホットスワップする
+= FAS9500システムのファンモジュールをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

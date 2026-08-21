@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, replace the chassis 
 summary: FAS500fシステムで障害のあるシャーシを交換する準備として、障害のあるシャーシを特定し、交換用コンポーネントを確認し、ケーブルとコントローラ モジュールにラベルを付けます。 
 ---
-= FAS500f シャーシの交換準備をする
+= FAS500f システムのシャーシ交換の準備をする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, post boot media replacement steps for okm, nse, and nve, manual, manual boot recovery 
 summary: FAS8200システムの交換用ブート メディアで暗号化構成を復元します。FAS8200システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= FAS8200システムのブートメディアの暗号化を復元します
+= FAS8200 システムのブートメディアの暗号化を復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

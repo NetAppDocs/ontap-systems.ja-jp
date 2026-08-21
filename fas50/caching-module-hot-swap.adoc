@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, hot swap, replace, Flash Cache 
 summary: FAS50 ストレージ システムでは、サポートされている同じベンダーまたは異なるベンダーの同じ容量の NVMe SSD キャッシュ モジュール、フラッシュ キャッシュ モジュールをホットスワップできます。 
 ---
-= FAS50 システムでキャッシュ モジュールをホット スワップする
+= FAS50システムでキャッシュモジュールをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

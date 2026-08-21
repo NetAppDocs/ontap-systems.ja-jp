@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, nondisruptive, disruptive, replace the boot media, manual, manual boot recovery 
 summary: FAS2600 システムでのブート メディアの交換について学習し、さまざまな交換方法を理解します。FAS2600 システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= FAS2600システムのブートメディアの交換について説明します。
+= FAS2600 システムのブートメディアの交換について
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c30, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: コントローラのHA構成がアクティブでASA C30ストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。 
 ---
-= ASA C30システムのコントローラー構成を復元して検証する
+= ASA C30システムでコントローラー構成を復元して検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

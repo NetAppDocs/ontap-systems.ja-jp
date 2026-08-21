@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas9500, shut down the controller 
 summary: FAS9500ストレージシステムのコントローラーをシャットダウンして、手動ブートメディア復旧プロセス中のデータ損失を防ぎ、システムの安定性を維持します。 
 ---
-= 手動ブートリカバリプロセス中に FAS9500 システムのコントローラをシャットダウンする
+= 手動ブートリカバリプロセス中に FAS9500 システムのコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

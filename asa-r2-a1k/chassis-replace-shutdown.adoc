@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a1k, shutdown the controller 
 summary: シャーシを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、 ASA A1K ストレージ システムのコントローラをシャットダウンします。 
 ---
-= シャーシを交換するためにASA A1Kコントローラをシャットダウンする
+= シャーシを交換するために ASA A1K コントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

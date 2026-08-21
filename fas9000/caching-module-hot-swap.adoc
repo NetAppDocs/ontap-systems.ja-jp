@@ -2,7 +2,7 @@
 permalink: fas9000/caching-module-hot-swap.html 
 sidebar: sidebar 
 keywords: fas9000, hot swap, replace, Flash Cache 
-summary: NVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）は、FAS9000システムのスロット6でのみNVRAM10モジュールの前面にあります。ONTAP 9.4 以降では、サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。 
+summary: FAS9000システムのキャッシュモジュールをホットスワップします。ONTAP 9.4以降では、スロット6のNVRAM10モジュールの前面に配置されたNVMe SSD Flash Cacheモジュールを、同じまたは異なるサポート対象ベンダーの同じ容量のキャッシュモジュールとホットスワップできます。 
 ---
 = FAS9000システムのキャッシュモジュールをホットスワップする
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: NVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシ�
 
 
 [role="lead"]
+FAS9000システムのキャッシュモジュールをホットスワップします。ONTAP 9.4以降では、スロット6のNVRAM10モジュールの前面に配置されたNVMe SSD Flash Cacheモジュールを、同じまたは異なるサポート対象ベンダーの同じ容量のキャッシュモジュールとホットスワップできます。
+
 NVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）は、FAS9000システムのスロット6でのみNVRAM10モジュールの前面にあります。ONTAP 9.4 以降では、サポートされているベンダーと同じ容量のキャッシングモジュールをホットスワップすることができます。
 
 .作業を開始する前に

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a1k, replace a fan 
 summary: 適切な冷却を維持し、システム パフォーマンスの問題を防ぐために、 ASA A1K システム内の故障したファン モジュールを交換します。ファンはホットスワップ可能なので、システムをシャットダウンせずに交換できます。 
 ---
-= ASA A1Kシステムのファンを交換する
+= ASA A1Kシステムのファンをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

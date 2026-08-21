@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, shutdown, check, onboard, encryption, key, manual, manual boot recovery 
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にして、システムで実行されている ONTAP のバージョンを確認する必要があります。FAS9000 システムは、手動によるブートメディア復旧手順のみをサポートしています。 
 ---
-= FAS9000システムのブートメディアの暗号化サポートを確認してください
+= FAS9000 システムのブートメディアの暗号化サポートを確認します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

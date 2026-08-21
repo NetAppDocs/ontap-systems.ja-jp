@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2820, boot, recovery, image, restore, file, system, environmental, varible 
 summary: 新しいブートメディアデバイスを FAS2820 システムにインストールした後、USBドライブからリカバリイメージを手動で起動して、パートナーノードから構成を復元できます。 
 ---
-= 手動ブートリカバリプロセスを使用して、FAS2820システムのリカバリイメージを起動します
+= 手動ブートリカバリプロセスを使用して FAS2820 システムでリカバリイメージをブートする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

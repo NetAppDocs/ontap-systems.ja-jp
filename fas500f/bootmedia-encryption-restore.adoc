@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, post boot media replacement steps for okm, nse, and nve 
 summary: 環境変数を確認した後、オンボードキーマネージャ OKM、NetApp Storage Encryption NSE、または NetApp Volume Encryption NVE が有効になっているシステムに固有の手順を完了する必要があります。 
 ---
-= FAS500f システムのブートメディアの暗号化を手動ブートリカバリプロセス後に復元します
+= 手動ブートリカバリプロセス後に FAS500f システムのブートメディアの暗号化を復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

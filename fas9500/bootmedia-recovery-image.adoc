@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas9500, boot the recovery image 
 summary: 障害ノードをリカバリイメージからブートするための手順は、システムが 2 ノード MetroCluster 構成かどうかによって異なります。 
 ---
-= 手動ブートリカバリプロセスを使用して、FAS9500システムのリカバリイメージを起動します
+= 手動ブートリカバリプロセスを使用して FAS9500 システムでリカバリイメージを起動する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

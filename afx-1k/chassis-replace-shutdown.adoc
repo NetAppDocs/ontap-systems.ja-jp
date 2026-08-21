@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 1k, shutdown the controller 
 summary: シャーシを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、AFX 1K ストレージ システムのコントローラーをシャットダウンします。 
 ---
-= シャーシを交換するために AFX 1K コントローラーをシャットダウンします。
+= シャーシを交換するためにAFX 1Kコントローラーをシャットダウンします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

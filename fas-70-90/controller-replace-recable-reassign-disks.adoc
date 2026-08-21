@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, how to recable the system, how to reassign disks 
 summary: FAS70またはFAS90システムが通常の動作を再開できるように、ストレージ・リソースの制御を交換用コントローラに戻します。 
 ---
-= FAS70またはFAS90システムのコントローラーをギブバックして、通常の動作を再開してください。
+= FAS70またはFAS90システムでコントローラをギブバックして、通常の動作を再開します。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

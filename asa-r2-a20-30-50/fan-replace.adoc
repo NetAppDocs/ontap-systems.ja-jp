@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, asa, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module 
 summary: ファンが故障したり、効率的に動作していない場合は、システムの冷却と全体的なパフォーマンスに影響する可能性があるため、 ASA A20、 ASA A30、またはASA A50 ストレージ システムのファン モジュールを交換してください。交換プロセスには、コントローラのシャットダウン、コントローラの取り外し、ファンの交換、コントローラの再インストール、および故障した部品のNetAppへの返送が含まれます。 
 ---
-= ASA A20、ASA A30、またはASA A50システムのファンモジュールをホットスワップする
+= ASA A20、ASA A30、またはASA A50システムのファンモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

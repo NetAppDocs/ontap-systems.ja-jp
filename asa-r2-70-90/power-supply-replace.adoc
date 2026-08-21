@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, replace a power supply 
 summary: ASA A70またはASA A90システムのACまたはDC電源ユニットに障害が発生した場合や不具合が生じた場合は交換し、システムが安定した動作に必要な電力を継続的に受け取れるようにします。交換手順では、故障した電源装置を電源から切り離し、電源ケーブルを抜き、故障した電源装置を交換してから、電源に再接続します。 
 ---
-= ASA A70またはASA A90システムの電源ユニットをホットスワップ対応で交換する
+= ASA A70またはASA A90システムの電源ユニットをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

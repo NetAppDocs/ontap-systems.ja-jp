@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, switch back aggregate in a two-node metrocluster configuration, manual, manual boot recovery 
 summary: 2 ノードMetroCluster構成でブート メディアの交換を完了した後、 FAS8200システムでMetroClusterスイッチバック操作を実行します。FAS8200システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= FAS8200システムの2ノードMetroCluster構成でアグリゲートをスイッチバックします
+= FAS8200システムの2ノードMetroCluster構成でアグリゲートをスイッチバックする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -2,7 +2,7 @@
 permalink: fas2700/chassis-replace-shutdown.html 
 sidebar: sidebar 
 keywords: fas2700, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
-summary: シャーシを交換する前に、お使いの構成に応じた適切な手順に従って、FAS2700システム内の障害コントローラをシャットダウンするか、テイクオーバーしてください。 
+summary: シャーシを交換する前に、お使いの構成に応じた適切な手順に従って、FAS2700システムのコントローラをシャットダウンしてください。 
 ---
 = シャーシを交換するために FAS2700 コントローラをシャットダウンします。
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: シャーシを交換する前に、お使いの構成に応じた適�
 
 
 [role="lead"]
-シャーシを交換する前に、お使いの構成に応じた適切な手順に従って、FAS2700システム内の障害コントローラをシャットダウンするか、テイクオーバーしてください。
+シャーシを交換する前に、お使いの構成に応じた適切な手順に従って、FAS2700システムのコントローラをシャットダウンしてください。
 
 
 

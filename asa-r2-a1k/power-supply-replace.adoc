@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a1k, replace a power supply 
 summary: ASA A1Kシステムの AC または DC 電源ユニットに障害が発生した場合や不具合が生じた場合は、システムが安定した動作に必要な電力を継続的に受け取れるように交換してください。交換手順は、故障した電源装置を電源から切り離し、電源ケーブルを抜き、故障した電源装置を交換してから、電源に再接続します。 
 ---
-= ASA A1Kシステムの電源ユニットをホットスワップ対応で交換する
+= ASA A1Kシステムの電源ユニットをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

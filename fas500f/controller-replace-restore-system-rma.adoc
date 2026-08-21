@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: FAS500fシステムのコントローラ交換を完了するには、必要に応じてNetApp Storage Encryptionの設定をリストアし、新しいコントローラのライセンスをインストールして、障害が発生した部品をNetAppに返却します。 
 ---
-= FAS500f システムのコントローラーの交換を完了する
+= FAS500f システムのコントローラー交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

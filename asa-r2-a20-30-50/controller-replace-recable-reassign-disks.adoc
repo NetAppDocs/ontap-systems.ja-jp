@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, how to reboot the system 
 summary: ストレージ リソースの制御を交換用コントローラーに戻すと、ASA A20、ASA A30、またはASA A50ストレージ システムは通常動作を再開できます。ギブバック手順は、システムで使用されている暗号化のタイプによって異なります。 
 ---
-= ASA A20、ASA A30、またはASA A50システムのコントローラーを返却して、通常の運用を再開します
+= ASA A20、ASA A30、またはASA A50システムでコントローラーを返却して通常の運用を再開します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

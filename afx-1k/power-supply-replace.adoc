@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 1k, replace a power supply 
 summary: AFX 1KストレージシステムのAC電源ユニットが故障または不具合を起こした場合は、交換してください。これにより、システムが安定した動作に必要な電力を継続的に供給できるようになります。交換手順は、対象となるPSUの接続を外し、電源ケーブルを抜き、故障したPSUを取り外し、交換用のPSUを取り付け、最後に電源に再接続するというものです。 
 ---
-= AFX 1Kストレージシステムで電源ユニットをホットスワップする
+= AFX 1Kシステムでの電源ユニットのホットスワップ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: AFF A900 
 summary: NVRAM11 バッテリを搭載したデステージコントローラ電源モジュールをホットスワップするには、障害が発生した DCPM モジュールの場所を確認してシャーシから取り外し、交換用の DCPM モジュールを取り付けます。 
 ---
-= AFF A900システムのNVRAM11バッテリーを含むDCPMモジュールを交換する
+= AFF A900システムのDCPMモジュールをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

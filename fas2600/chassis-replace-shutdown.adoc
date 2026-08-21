@@ -2,7 +2,7 @@
 permalink: fas2600/chassis-replace-shutdown.html 
 sidebar: sidebar 
 keywords: fas2600, shutdown the controllers 
-summary: シャーシを交換する前に、お使いの構成に応じた適切な手順に従って、FAS2600システム内の故障したコントローラをシャットダウンするか、制御を切り替えてください。 
+summary: シャーシを交換する前に、お使いの構成に応じた適切な手順に従って、FAS2600システムのコントローラをシャットダウンしてください。 
 ---
 = シャーシを交換するために FAS2600 コントローラをシャットダウンします。
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: シャーシを交換する前に、お使いの構成に応じた適�
 
 
 [role="lead"]
-シャーシを交換する前に、お使いの構成に応じた適切な手順に従って、FAS2600システム内の故障したコントローラをシャットダウンするか、制御を切り替えてください。
+シャーシを交換する前に、お使いの構成に応じた適切な手順に従って、FAS2600システムのコントローラをシャットダウンしてください。
 
 この手順は、2ノード構成のシステムが対象です。クラスタにサービスを提供する際の正常なシャットダウンの詳細については、を参照してください https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage["ストレージシステムの正常なシャットダウンと電源投入解決ガイド- NetAppナレッジベース"]。
 

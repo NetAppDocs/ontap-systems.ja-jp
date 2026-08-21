@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, boot the recovery image, manual, manual boot recovery 
 summary: ブート メディアを復元するには、 FAS8200システムの USB ドライブからONTAPリカバリ イメージを起動します。FAS8200 システムは、手動のブート メディア リカバリ手順のみをサポートしています。自動ブート メディア リカバリはサポートされていません。 
 ---
-= FAS8200システムでリカバリイメージを起動します
+= FAS8200 システムでリカバリイメージを起動する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

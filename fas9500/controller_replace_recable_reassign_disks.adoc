@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas9500, recable the system, reassign disks 
 summary: システムのケーブルを配線し直し、ディスクを再割り当てします。 
 ---
-= FAS9500システムのコントローラーを返却して、通常業務を再開します
+= FAS9500システムで通常運用を再開するためにコントローラーをギブバックする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

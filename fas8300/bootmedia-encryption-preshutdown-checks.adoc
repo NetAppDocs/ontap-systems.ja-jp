@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, shut, down, impair, controller, check, status, onboard, encryption, keys, status, disable, automatic, giveback, version, ontap, system, run, pre-shutdown, check, pre-shutdown checks for onboard encryption keys 
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
-= FAS8300またはFAS8700システムのブートメディアの暗号化サポートを確認してください
+= FAS8300またはFAS8700システムで手動ブートリカバリプロセスを使用してブートメディアの暗号化サポートを確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

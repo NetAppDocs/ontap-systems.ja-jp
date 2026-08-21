@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 1k, replace the system manager module 
 summary: AFX 1K ストレージ システムのシステム管理モジュールに障害が発生した場合、またはファームウェアが破損した場合は、システム管理モジュールを交換してください。交換プロセスには、コントローラのシャットダウン、故障したシステム管理モジュールの交換、コントローラの再起動、ライセンス キーの更新、故障した部品のNetAppへの返却が含まれます。 
 ---
-= AFX 1Kストレージシステムのシステム管理モジュールを交換する
+= AFX 1Kシステム内のシステム管理モジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

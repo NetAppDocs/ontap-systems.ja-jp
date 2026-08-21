@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2700, move the controller module hardware 
 summary: FAS2700システムのコントローラを交換するには、故障したコントローラを取り外し、FRUコンポーネントを交換用コントローラモジュールに移動させ、シャーシに取り付け、メンテナンスモードで起動します。 
 ---
-= FAS2700システムのコントローラーを交換する
+= FAS2700システムのコントローラを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

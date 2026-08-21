@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, shut down the controller 
 summary: ブートメディアを交換する際は、データ損失を防ぎ、システムの安定性を確保するために、FAS70またはFAS90ストレージシステムのコントローラをシャットダウンしてください。 
 ---
-= 自動ブートリカバリプロセス中に、FAS70またはFAS90システムのコントローラをシャットダウンします。
+= 自動ブートリカバリプロセス中に、FAS70またはFAS90システムのコントローラをシャットダウンします
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2820, boot the recovery image 
 summary: FAS2820システムの交換用ブートメディアにONTAPイメージをリストアします。このプロセスでは、LOADERプロンプトからブートリカバリプロセスを開始し、リカバリプロセスが完了してノードが再起動するまで監視します。 
 ---
-= 自動ブートリカバリプロセスを使用して、FAS2820システムのブートイメージを復元します
+= 自動ブートリカバリプロセスを使用して FAS2820 システムでリカバリイメージをブートする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

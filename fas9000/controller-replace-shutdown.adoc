@@ -2,16 +2,16 @@
 permalink: fas9000/controller-replace-shutdown.html 
 sidebar: sidebar 
 keywords: aff a700, fas9000, shut, down, impaired, node, controller, two, node, metrocluster 
-summary: 障害ノードをシャットダウンするには、ノードのステータスを確認し、必要に応じて正常なノードが障害ノードのストレージからデータを引き続き提供できるようにノードをテイクオーバーする必要があります。 
+summary: FAS9000システムで障害のあるコントローラーをシャットダウンまたはテイクオーバーするには、構成に応じた適切な手順を使用して、正常なノードが障害ノードのストレージからデータを引き続き提供できるようにします。 
 ---
-= FAS9000システムの障害のあるコントローラーを交換前にシャットダウンする
+= FAS9000システムで障害のあるコントローラーを交換前にシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-構成に応じた適切な手順 を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーします。
+FAS9000 システムで障害のあるコントローラーをシャットダウンまたはテイクオーバーするには、お使いの構成に適した手順を使用してください。
 
 [role="tabbed-block"]
 ====

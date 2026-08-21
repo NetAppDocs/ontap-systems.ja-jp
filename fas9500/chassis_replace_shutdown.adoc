@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff fas9500, shutdown the controllers 
 summary: シャーシを交換する前に、FAS9500システムの障害のあるコントローラをシャットダウンする必要があります。 
 ---
-= シャーシを交換するために FAS9500 コントローラをシャットダウンする
+= シャーシを交換するためにFAS9500コントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

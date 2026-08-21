@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, replace the rtc battery 
 summary: コントローラーモジュール内のリアルタイム時計用バッテリーを交換することで、正確な時刻同期に依存するサービスやアプリケーションが引き続き機能するようになります。 
 ---
-= FAS8200システムのリアルタイム時計バッテリーを交換する
+= FAS8200システムのリアルタイムクロックバッテリを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

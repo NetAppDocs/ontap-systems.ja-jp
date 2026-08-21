@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a1k, shut down the impaired controller 
 summary: ASA A1Kストレージシステムのコントローラをシャットダウンしてデータ損失を防ぎ、コントローラの交換時にシステムの安定性を確保します。 
 ---
-= ASA A1Kシステムの交換前に障害のあるコントローラーをシャットダウンする
+= ASA A1Kシステムで障害のあるコントローラーを交換前にシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

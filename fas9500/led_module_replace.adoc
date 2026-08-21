@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: LED USB module,replacing,hot-swapping,LED USB module,non-disruptive replacement,LED USB module 
 summary: サービスを中断することなく LED USB モジュールを交換できます。 
 ---
-= FAS9500 システムの LED USB モジュールを交換する
+= FAS9500 システムの LED USB モジュールをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

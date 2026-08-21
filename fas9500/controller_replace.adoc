@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: FAS9500, open controller, download service image to USB drive, transfer boot image, USB drive, service image 
 summary: コントローラモジュールハードウェアを交換するには、障害ノードを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。 
 ---
-= FAS9500 システムのコントローラーを交換する
+= FAS9500システムのコントローラーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

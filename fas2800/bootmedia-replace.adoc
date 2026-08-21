@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2820, replace, boot, media, controller, module, fru map 
 summary: FAS2820システムのブートメディアには、重要なファームウェアと設定データが保存されています。交換するには、障害のあるコントローラモジュールを取り外して開き、ブートメディアを探して交換し、ブートイメージをUSBドライブに転送してから、コントローラを起動します。 
 ---
-= 手動ブートリカバリプロセスを使用して FAS2820 システムのブートメディアを交換します
+= 手動ブートリカバリプロセスを使用してFAS2820システムのブートメディアを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

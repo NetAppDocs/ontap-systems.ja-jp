@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2820, how to recable the system, how to reassign disks 
 summary: コントローラーの交換を完了し、FAS2820システムを完全な動作状態に戻すには、ストレージを再接続し、ディスクの再割り当てを確認し、NetAppストレージ暗号化の設定を復元し（必要な場合）、新しいコントローラーのライセンスをインストールする必要があります。 
 ---
-= FAS2820 システムのコントローラーを返却して、通常業務を再開します
+= FAS2820システムでコントローラーをギブバックして通常運用を再開する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

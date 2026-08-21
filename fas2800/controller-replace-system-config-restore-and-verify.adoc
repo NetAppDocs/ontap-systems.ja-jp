@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2820, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: FAS2820システムでハードウェアの交換を完了し、交換用コントローラーを起動したら、交換用コントローラーの低レベルシステム構成を確認し、必要に応じてシステム設定を再構成します。 
 ---
-= FAS2820システムのコントローラー構成を復元して検証する
+= FAS2820 システムでコントローラー構成を復元して検証する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

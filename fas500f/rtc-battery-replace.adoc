@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, replace real-time clock battery 
 summary: コントローラモジュール内のリアルタイムクロックバッテリを交換することで、正確な時刻同期に依存するシステムのサービスやアプリケーションが引き続き機能するようになります。 
 ---
-= FAS500fシステムのリアルタイムクロックバッテリーを交換する
+= FAS500f システムのリアルタイムクロックバッテリーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: fas500f, replace a fan 
 summary: 障害が発生したファンモジュールを交換し、新しいファンモジュールと交換する場合は、コントローラモジュールをシャーシから取り外す必要があります。 
 ---
-= FAS500f システムのファンを交換する
+= FAS500f システムのファンモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-障害が発生したファンを新しいファンモジュールと交換します。
+ファンが故障した場合は、新しいファンモジュールと交換する必要があります。
 
 
 

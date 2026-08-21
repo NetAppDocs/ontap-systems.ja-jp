@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2820, move the controller module hardware 
 summary: FAS2820システムでは、障害のあるコントローラを取り外し、FRUコンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付け、交換用コントローラモジュールを起動することで、障害のあるコントローラモジュールのハードウェアを交換します。 
 ---
-= FAS2820 システムのコントローラーを交換する
+= FAS2820システムのコントローラーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

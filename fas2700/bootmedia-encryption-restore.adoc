@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas 2700, post, boot, media, okm, nse, nve, onboard key manager, netapp storage encryption, netapp volume encryption, manual, manual boot recovery 
 summary: 交換用ブート メディアで暗号化を復元します。FAS2700 システムは、手動のブート メディア回復手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= FAS2700システムのブートメディアの暗号化を復元する
+= FAS2700システムでブートメディアの暗号化を復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

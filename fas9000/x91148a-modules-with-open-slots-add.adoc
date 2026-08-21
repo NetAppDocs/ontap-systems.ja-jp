@@ -2,15 +2,17 @@
 permalink: fas9000/x91148a-modules-with-open-slots-add.html 
 sidebar: sidebar 
 keywords: aff a700, fas9000, ass, x91148a, module, open, slots, nic, storage 
-summary: システムの空のモジュールスロットに、 100GbE NIC または NS224 ストレージシェルフのストレージモジュールとして X91148A モジュールを追加できます。 
+summary: FAS9000システムの空のモジュールスロットに、100GbE NICまたはNS224ストレージシェルフ用ストレージモジュールとして、X91148Aモジュールを追加します。 
 ---
-= 空きスロットのある FAS9000 システムへの X91148A モジュールの追加
+= X91148AモジュールをFAS9000システムの空きスロットに追加する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+FAS9000システムの空のモジュールスロットに、100GbE NICまたはNS224ストレージシェルフ用ストレージモジュールとして、X91148Aモジュールを追加します。
+
 システムの空のモジュールスロットに、 100GbE NIC または NS224 ストレージシェルフのストレージモジュールとして X91148A モジュールを追加できます。
 
 * システムで ONTAP 9.8 以降が実行されている必要があります。

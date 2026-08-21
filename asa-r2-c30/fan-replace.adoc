@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c30, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module 
 summary: ファンが故障したり、効率的に動作していない場合は、システムの冷却と全体的なパフォーマンスに影響する可能性があるため、ASA C30 ストレージ システムのファン モジュールを交換してください。交換プロセスでは、コントローラのシャットダウン、コントローラの取り外し、ファンの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。 
 ---
-= ASA C30システムのファンを交換する
+= ASA C30システムのファンモジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

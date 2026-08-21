@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, move hardware components, replace the chassis 
 summary: ハードウェア障害が必要とする場合は、FAS50ストレージ・システムのシャーシを交換します。交換プロセスでは、コントローラの取り外し、キャッシングモジュールとドライブブランクの取り外し、交換用シャーシの取り付け、およびシャーシコンポーネントの再取り付けを行います。 
 ---
-= FAS50 システムのシャーシを交換する
+= FAS50システムのシャーシを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

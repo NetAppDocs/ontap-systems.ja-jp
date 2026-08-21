@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: FAS8300またはFAS8700システムでのコントローラの交換を完了します。交換用コントローラのライセンスをインストールし、論理インターフェイス（LIF）がホームポートにレポートしていることを確認して、クラスターのヘルスチェックを実行します。最後に、障害が発生したパーツをNetAppに返却します。 
 ---
-= FAS8300またはFAS8700システムのコントローラーの交換を完了します
+= FAS8300またはFAS8700システムのコントローラーの交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

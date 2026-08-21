@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, check onboard encryption keys as needed 
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
-= FAS500f システムのブートメディアの暗号化サポートを確認してください
+= 手動ブートリカバリプロセスを使用して FAS500f システムのブートメディアの暗号化サポートを確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

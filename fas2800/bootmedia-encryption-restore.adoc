@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2820, post, boot, media, okm, nse, nve, onboard key manager, netapp storage encryption, netapp volume encryption 
 summary: FAS2820システムの交換用ブートメディアの暗号化を復元します。 
 ---
-= FAS2820 システムのブートメディアの暗号化を手動ブートリカバリプロセス後に復元する
+= FAS2820 システムで手動ブートリカバリプロセス後にブートメディアの暗号化を復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

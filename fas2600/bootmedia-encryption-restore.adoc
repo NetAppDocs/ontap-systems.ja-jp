@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, post boot media replacement steps for okm, nse, and nve, manual, manual boot recovery 
 summary: FAS2600システムの交換用ブートメディア上で暗号化構成を復元します。この手順には、Onboard Key Manager、NetApp Storage Encryption、またはNetApp Volume Encryptionが有効になっているシステムの交換後の手順の完了が含まれ、安全なデータアクセスと適切なシステム動作を確保します。 
 ---
-= FAS2600システムのブートメディアの暗号化を復元する
+= FAS2600システムでブートメディアの暗号化を復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 2k, replace io module 
 summary: AFX 2Kストレージシステムは、I/Oモジュールの拡張や交換を柔軟に行えるため、ネットワーク接続性とパフォーマンスを向上させることができます。ネットワーク機能をアップグレードする場合や、故障したモジュールに対処する場合は、I/Oモジュールの追加または交換が不可欠です。 
 ---
-= AFX 2KストレージシステムにおけるI/Oモジュールの追加と交換について説明します。
+= AFX 2KシステムにおけるI/Oモジュールの追加と交換について
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

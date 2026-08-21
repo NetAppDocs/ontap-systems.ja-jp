@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: FAS9500 
 summary: NVRAM11 バッテリを内蔵するデステージ コントローラ電源モジュール DCPM をホット スワップするには、障害が発生した DCPM モジュールを特定し、シャーシから取り外し、交換用の DCPM モジュールを取り付ける必要があります。 
 ---
-= FAS9500システムのDCPMモジュールとNVRAM11バッテリーを交換する
+= FAS9500システムのDCPMモジュールをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

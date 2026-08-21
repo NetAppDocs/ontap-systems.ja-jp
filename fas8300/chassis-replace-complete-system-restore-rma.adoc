@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, shut, chassis, controller, replace, remove, swap, verify, install, power, supply, metrocluster, aggregates, replacement, process, equipment, rack, ha, state, system 
 summary: キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、障害が発生した部品をNetAppに返却する必要があります。 
 ---
-= FAS8300またはFAS8700システムのシャーシの交換を完了します
+= FAS8300またはFAS8700システムのシャーシ交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

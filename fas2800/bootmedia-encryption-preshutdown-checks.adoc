@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2820, shutdown, checks, onboard, encryption, keys, impaired controller, disable, automatic, feedback 
 summary: FAS2820ストレージシステムのデータセキュリティを確保するために、ブートメディアの暗号化キーのサポート状況とステータスを確認する必要があります。お使いのONTAPバージョンがNetApp Volume Encryptionをサポートしているかどうかを確認し、コントローラーをシャットダウンする前に、キーマネージャーがアクティブになっているかどうかを確認してください。 
 ---
-= FAS2820システムのブートメディアの暗号化サポートを確認してください
+= FAS2820 システムでの手動ブートリカバリプロセスを使用したブートメディアの暗号化サポートの確認
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

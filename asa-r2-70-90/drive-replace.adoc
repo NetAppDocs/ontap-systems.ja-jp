@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, replace the drives 
 summary: ドライブに障害が発生した場合やアップグレードが必要な場合は、ASA A70またはASA A90システムのドライブを交換します。このプロセスでは、障害が発生したドライブを特定して安全に取り外し、新しいドライブを取り付けてデータアクセスとシステムパフォーマンスを継続できるようにします。 
 ---
-= ASA A70またはASA A90システムのSSDを交換する
+= ASA A70またはASA A90システムのSSDドライブをホットスワップする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

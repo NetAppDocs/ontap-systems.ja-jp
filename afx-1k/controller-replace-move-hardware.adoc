@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 1k, move the controller module hardware 
 summary: ハードウェア障害が発生した場合は、AFX 1K ストレージ システムのコントローラーを交換してください。交換プロセスには、障害のあるコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーのインストール、および再起動が含まれます。 
 ---
-= AFX 1Kストレージシステムのコントローラーを交換する
+= AFX 1Kシステムのコントローラーを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

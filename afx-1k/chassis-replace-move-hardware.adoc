@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 1k, move hardware components, replace the chassis 
 summary: ハードウェア障害が発生した場合は、AFX 1K ストレージシステムのシャーシを交換してください。交換プロセスには、シャーシ前面からコントローラを取り外し、電源ユニット、NVRAM12、I/O モジュールとブランク、およびシステム管理モジュールを取り外してから、交換用シャーシを取り付け、シャーシコンポーネントを再取り付けする作業が含まれます。 
 ---
-= AFX 1Kストレージシステムのシャーシを交換する
+= AFX 1Kシステムのシャーシを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

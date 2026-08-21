@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, how to recable the system, how to reassign disks 
 summary: コントローラーを交換した後、システムを再接続し、ディスクの所有権が再割り当てされていることを確認することで、FAS8200システムは通常の動作を再開できます。 
 ---
-= FAS8200システムのコントローラーをギブバックして通常運用を再開する
+= FAS8200システムでコントローラーをギブバックして通常運用を再開する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

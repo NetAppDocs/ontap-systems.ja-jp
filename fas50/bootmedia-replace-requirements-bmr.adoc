@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, replace the boot media 
 summary: FAS50ストレージシステムのブートメディアを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、正しい交換用ブートメディアがあることを確認すること、障害のあるコントローラのe0M（レンチ）ポートが正常に動作していることを確認すること、およびOnboard Key Manager（OKM）またはExternal Key Manager（EKM）が有効になっているかどうかを判断することが含まれます。 
 ---
-= FAS50システムにおける自動ブートメディア リカバリの要件を確認する
+= FAS50システムにおける自動ブートメディアリカバリの要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

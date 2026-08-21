@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, power controllers 
 summary: 電源ケーブルを接続し、シェルフとコントローラの電源をオンにします。 
 ---
-= FAS70またはFAS90ストレージシステムの電源を投入します。
+= FAS70またはFAS90ストレージシステムの電源をオンにする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

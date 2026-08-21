@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas9500, replace nvram 
 summary: NVRAMモジュールは、NVRAM11とDIMM、およびNVRAMモジュールごとに最大2つのNVMe SSD Flash Cacheモジュール（Flash Cacheまたはキャッシングモジュール）で構成されます。 
 ---
-= FAS9500システムのNVRAMモジュールまたはNVRAM DIMMを交換する
+= FAS9500システムのNVRAMモジュールまたはNVRAM DIMMの交換
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

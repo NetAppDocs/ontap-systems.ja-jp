@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, verify and set HA state, complete the replacement process 
 summary: キットに付属のRMA指示書に従って、シャーシのHA状態を確認し、アグリゲートをスイッチバックし、障害が発生したパーツをNetAppに返却する必要があります。 
 ---
-= FAS8200システムのシャーシの交換を完了する
+= FAS8200 システムのシャーシ交換を完了する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
