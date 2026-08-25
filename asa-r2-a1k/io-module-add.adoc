@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a1k, add io module 
 summary: ASA A1KシステムにI/Oモジュールを追加して、ネットワーク接続を強化し、システムのデータトラフィック処理能力を拡張します。 
 ---
-= I/OモジュールをASA A1Kシステムに追加してネットワーク接続を強化する
+= I/O モジュールを ASA A1K システムに追加する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

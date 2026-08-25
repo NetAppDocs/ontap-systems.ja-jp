@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, prerequisite, replace the controller module 
 summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。 
 ---
-= ASA A70またはASA A90システムでコントローラーを交換する前に要件を確認してください
+= ASA A70またはASA A90システムでコントローラーを交換するための要件を確認します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

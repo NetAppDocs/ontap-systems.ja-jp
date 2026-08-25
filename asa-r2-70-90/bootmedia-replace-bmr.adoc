@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, replace the boot media 
 summary: ASA A70またはASA A90システム内のブートメディアには、重要なファームウェアおよび設定データが格納されます。交換プロセスでは、システム管理モジュールを取り外し、障害のあるブートメディアを取り外し、交換用ブートメディアをシステム管理モジュールに取り付けてから、システム管理モジュールを再度取り付けます。 
 ---
-= 自動ブートリカバリプロセスを使用してASA A70またはASA A90システムのブートメディアを交換する
+= ASA A70またはASA A90システムの自動ブートリカバリプロセス中にブートメディアを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

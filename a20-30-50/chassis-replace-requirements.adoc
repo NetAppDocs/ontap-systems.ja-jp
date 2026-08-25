@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, replace the chassis 
 summary: AFF A20、AFF A30、またはAFF A50ストレージシステムのシャーシを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることを確認すること、正しい交換用シャーシを用意していることを確認すること、および必要な工具が揃っていることを確認することが含まれます。 
 ---
-= AFF A20、AFF A30、またはAFF A50シャーシを交換する前に要件を確認してください
+= AFF A20、AFF A30、またはAFF A50システムでシャーシを交換するための要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

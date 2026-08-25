@@ -13,7 +13,7 @@ entries:
     url: "/sas3/install-change-shelf-id.html"
   - title: SAS ケーブル接続ルール、ワークシート、および例
     entries:
-    - title: 概要
+    - title: ケーブル接続の概要
       url: "/sas3/overview-cabling-rules-examples.html"
     - title: SASケーブル接続のルールと概念
       url: "/sas3/install-cabling-rules.html"

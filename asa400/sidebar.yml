@@ -55,7 +55,7 @@ entries:
   - title: シャーシ
     pdf-filename: ASA A400シャーシ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/asa400/chassis-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/asa400/chassis-replace-shutdown.html"

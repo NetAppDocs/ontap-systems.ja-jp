@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, replace, dimm, shut, down, impaired, controller, module, reinstall,  system, controller, aggregates, metrocluster, replacement 
 summary: ストレージシステムで、過剰な訂正可能ECCメモリエラーや訂正不能ECCエラーなどのエラーが発生した場合は、コントローラ内のDIMMを交換する必要があります。これらのエラーは通常、単一のDIMMの故障によって発生し、ストレージシステムによるONTAPの起動を妨げます。 
 ---
-= FAS8300またはFAS8700システムのDIMMを交換してメモリエラーを修正する
+= FAS8300またはFAS8700システムのDIMMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

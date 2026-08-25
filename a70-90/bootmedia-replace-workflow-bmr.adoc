@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, replace the boot media 
 summary: ブートイメージの自動リカバリでは、システムが適切なブートメニューオプションを自動的に識別して選択します。パートナーノードのブートイメージを使用して、 AFF A70またはAFF A90ストレージシステムの交換用ブートメディアにONTAPを再インストールします。 
 ---
-= AFF A70 および AFF A90 の自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
+= 自動ブートリカバリプロセスを使用する AFF A70 または AFF A90 システムのブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

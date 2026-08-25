@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a220, shut down the impaired controller 
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
-= AFF A220 システムで障害のあるコントローラーを交換前にシャットダウンする
+= AFF A220システムで障害のあるコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

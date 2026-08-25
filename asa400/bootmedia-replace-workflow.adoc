@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff asa400, replace the boot media 
 summary: 交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージの起動、暗号化の復元、およびシステム機能の検証を行って、 ASA A400ストレージ システムのブート メディアの交換を開始します。 
 ---
-= ASA A400 手動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
+= 手動ブートリカバリプロセスを使用する ASA A400 システムのブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

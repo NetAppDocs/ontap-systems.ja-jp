@@ -63,7 +63,7 @@ summary: プラットフォーム ファミリ別に整理された、 NetAppス
 * link:../asa400/bootmedia-replace-workflow.html["ASA A400 （手動リカバリ）"]
 * link:../asa800/bootmedia-replace-workflow-bmr.html["ASA A800 （自動回復）"]
 * link:../asa800/bootmedia-replace-workflow.html["ASA A800 （手動リカバリ）"]
-* link:../asa900/bootmedia_replace_overview.html["ASA A900"]
+* link:../asa900/bootmedia-replace-requirements.html["ASA A900"]
 * link:../asa-c250/bootmedia-replace-workflow.html["ASA C250 (手動リカバリ)"]
 * link:../asa-c400/bootmedia-replace-workflow-bmr.html["ASA C400 (自動リカバリ)"]
 * link:../asa-c400/bootmedia-replace-workflow.html["ASA C400 (手動リカバリ)"]

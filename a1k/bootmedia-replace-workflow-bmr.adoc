@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, replace the boot media 
 summary: ブートイメージの自動復旧では、システムが適切なブートメニューオプションを自動的に識別して選択します。パートナーノード上のブートイメージを使用して、AFF A1K システムの交換用ブートメディアに ONTAP を再インストールします。 
 ---
-= AFF A1K 自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
+= 自動ブートリカバリプロセスを使用する AFF A1K システムのブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

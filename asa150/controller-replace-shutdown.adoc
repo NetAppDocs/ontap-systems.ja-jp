@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a150, a150, asa, shut down the impaired controller 
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
-= ASA A150システムで障害のあるコントローラーを交換前にシャットダウンする
+= ASA A150システムで障害コントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2700, shut down the impaired controller 
 summary: FAS2700システム内の障害コントローラを交換する前に、テイクオーバーを実行してLOADERプロンプトに停止させ、シャットダウンしてください。 
 ---
-= FAS2700 システムで障害コントローラをシャットダウンしてから交換する
+= FAS2700システムの障害コントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

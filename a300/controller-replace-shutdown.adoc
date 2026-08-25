@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a300, shut down the impair controller 
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
-= AFF A300 システムで障害のあるコントローラーを交換前にシャットダウンする
+= AFF A300システムで障害のあるコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

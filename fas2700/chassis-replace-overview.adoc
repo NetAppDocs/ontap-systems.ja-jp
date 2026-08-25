@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2700, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
 summary: FAS2700システムのシャーシを交換する前に、交換を成功させるための要件を確認してください。シャーシ交換手順では、故障したシャーシからすべての電源装置、ドライブ、およびコントローラモジュールを交換用シャーシに移設するため、作業が中断されます。 
 ---
-= FAS2700 システムでシャーシを交換する前に、要件を確認してください。
+= FAS2700システムにおけるシャーシ交換の要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

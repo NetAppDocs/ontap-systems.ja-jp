@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a900, replace the chassis, overview 
 summary: システム内の他のすべてのコンポーネントが正常に機能している必要があります。正常に機能していない場合は、テクニカルサポートにお問い合わせください。 
 ---
-= ASA A900シャーシを交換する前に要件を確認してください
+= ASA A900システムでシャーシを交換するための要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

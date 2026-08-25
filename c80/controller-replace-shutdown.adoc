@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, shut down the impaired controller 
 summary: AFF C80ストレージシステムのコントローラをシャットダウンして、データ損失を防ぎ、コントローラの交換時にシステムの安定性を確保します。 
 ---
-= AFF C80システムで障害のあるコントローラーを交換前にシャットダウンする
+= AFF C80システムで障害のあるコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

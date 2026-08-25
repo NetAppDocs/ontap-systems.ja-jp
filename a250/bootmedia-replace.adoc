@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a250, replace the boot media 
 summary: ブートメディアを交換する前に、コントローラモジュールのエアダクトを取り外して、障害が発生したブートメディアの場所を確認する必要があります。 
 ---
-= AFF A250 システムのブートメディアを手動ブートリカバリプロセスを使用して交換する
+= AFF A250 システムの手動ブートリカバリプロセス中にブートメディアを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

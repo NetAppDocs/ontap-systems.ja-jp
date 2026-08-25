@@ -55,7 +55,7 @@ entries:
   - title: シャーシ
     pdf-filename: AFF A900シャーシ
     entries:
-    - title: 概要
+    - title: シャーシの交換ワークフロー
       url: "/a900/chassis_replace_overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a900/chassis_replace_shutdown.html"
@@ -66,7 +66,7 @@ entries:
   - title: コントローラ
     pdf-filename: AFF A900コントローラモジュール
     entries:
-    - title: 概要
+    - title: コントローラの交換ワークフロー
       url: "/a900/controller_replace_overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a900/controller_replace_shutdown.html"

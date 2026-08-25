@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2820, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
 summary: FAS2820システムのシャーシを交換するには、電源装置、ハードドライブ、およびコントローラモジュールを、故障したシャーシから同じモデルの新しいシャーシに移動する必要があります。 
 ---
-= FAS2820システムのシャーシを交換する前に要件を確認してください
+= FAS2820システムでシャーシを交換するための要件を確認します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

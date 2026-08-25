@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, replace the boot media 
 summary: このワークフローでは、USBドライブを使用して、FAS70またはFAS90システムの交換用ブートメディアにONTAPを再インストールします。適切なONTAPリカバリイメージをNetApp Support Siteからダウンロードし、USBドライブにコピーして、システムを動作可能な状態に復元してください。 
 ---
-= 手動ブートリカバリプロセスを使用したFAS70およびFAS90ブートメディア交換ワークフロー
+= 手動ブートリカバリプロセスを使用したFAS70またはFAS90システムのブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

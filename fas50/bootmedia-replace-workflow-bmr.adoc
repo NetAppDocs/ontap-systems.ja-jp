@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, replace the boot media 
 summary: ブートイメージの自動復旧では、システムが適切なブートメニューオプションを自動的に識別して選択します。パートナーノード上のブートイメージを使用して、FAS50ストレージシステムの交換用ブートメディアにONTAPを再インストールします。 
 ---
-= 自動ブートリカバリプロセスを使用したFAS50ブートメディア交換ワークフロー
+= 自動ブートリカバリプロセスを使用したFAS50システムのブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

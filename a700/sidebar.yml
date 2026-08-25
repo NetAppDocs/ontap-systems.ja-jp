@@ -16,12 +16,12 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF A700 は維持されます
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/a700/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF A700 ブートメディア
     entries:
-    - title: 概要
+    - title: ブートメディアの概要
       url: "/a700/bootmedia-replace-overview.html"
     - title: 暗号化キーの確認
       url: "/a700/bootmedia-encryption-preshutdown-checks.html"
@@ -40,7 +40,7 @@ entries:
   - title: シャーシ
     pdf-filename: AFF A700 シャーシ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/a700/chassis-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a700/chassis-replace-shutdown.html"
@@ -51,7 +51,7 @@ entries:
   - title: コントローラモジュール
     pdf-filename: AFF A700 コントローラ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/a700/controller-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a700/controller-replace-shutdown.html"
@@ -83,9 +83,9 @@ entries:
   - title: X91148A モジュール
     pdf-filename: AFF A700 X91148A モジュール
     entries:
-    - title: 概要
+    - title: X91148Aモジュールの概要
       url: "/a700/x91148a-module-install-overview.html"
     - title: オープンスロットを備えた AFF A700 システム
       url: "/a700/x91148a-modules-with-open-slots-add.html"
-    - title: AFF A700 システムにオープンスロットがありません
+    - title: AFF A700空きスロットのないシステム
       url: "/a700/x91148a-modules-with-no-open-slots-add.html"

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, eoa systems, end-of-availability, preparation, roce 
 summary: RoCE対応のI/Oモジュールをインストールし、ポートを設定し、既存のシェルフのケーブルを再配線し、自動ドライブ割り当てを無効にすることで、サービス終了予定のシステムにNS224シェルフをホットアドできるように準備してください。 
 ---
-= EOAシステムにNS224シェルフをホットアドできるように準備します
+= EOAシステムを準備して、NS224シェルフをホットアドする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

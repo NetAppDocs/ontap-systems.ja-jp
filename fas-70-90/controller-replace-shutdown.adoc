@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, shut down the impaired controller 
 summary: FAS70またはFAS90ストレージ・システムのコントローラをシャットダウンして、データ損失を防止し、コントローラの交換時にシステムの安定性を確保します。 
 ---
-= FAS70またはFAS90システムで障害のあるコントローラをシャットダウンしてから交換してください。
+= FAS70またはFAS90システムで障害のあるコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

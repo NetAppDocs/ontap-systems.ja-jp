@@ -55,7 +55,7 @@ entries:
   - title: シャーシ
     pdf-filename: AFF A400 シャーシ
     entries:
-    - title: 概要
+    - title: シャーシの交換ワークフロー
       url: "/a400/chassis-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a400/chassis-replace-shutdown.html"

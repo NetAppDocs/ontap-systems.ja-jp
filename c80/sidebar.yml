@@ -63,6 +63,8 @@ entries:
       url: "/c80/chassis-replace-workflow.html"
     - title: 要件を確認する
       url: "/c80/chassis-replace-requirements.html"
+    - title: 交換の準備
+      url: "/c80/chassis-replace-prepare.html"
     - title: コントローラのシャットダウン
       url: "/c80/chassis-replace-shutdown.html"
     - title: シャーシの交換

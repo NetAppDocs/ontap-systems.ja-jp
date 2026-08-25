@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa systems, preparation, roce, asa a70, asa a90 
 summary: RoCE対応I/Oモジュールをインストールしてポートを設定し、既存のシェルフのケーブルを再配線して自動ドライブ割り当てを無効にすることで、ASA A70またはA90システムでNS224シェルフをホットアドする準備をします。 
 ---
-= NS224シェルフをホットアドするためにASA A70またはA90システムを準備してください
+= ASA A70またはA90システムでNS224シェルフをホットアドするための準備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

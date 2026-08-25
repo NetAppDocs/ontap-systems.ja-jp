@@ -16,12 +16,12 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF A220 は引き続き使用できます
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/a220/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF A220 ブートメディア
     entries:
-    - title: 概要
+    - title: ブートメディアの概要
       url: "/a220/bootmedia-replace-overview.html"
     - title: 暗号化キーの確認
       url: "/a220/bootmedia-encryption-preshutdown-checks.html"
@@ -38,7 +38,7 @@ entries:
   - title: シャーシ
     pdf-filename: AFF A220およびA220シャーシ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/a220/chassis-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a220/chassis-replace-shutdown.html"
@@ -49,7 +49,7 @@ entries:
   - title: コントローラ
     pdf-filename: AFF A220 コントローラ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/a220/controller-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a220/controller-replace-shutdown.html"

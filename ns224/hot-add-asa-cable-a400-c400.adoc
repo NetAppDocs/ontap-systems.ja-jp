@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa a400, asa c400, cable 
 summary: NS224シェルフをASA A400またはASA C400システムにケーブル接続し、各シェルフがHAペア内の各コントローラに2つの接続を持つようにします。 
 ---
-= NS224シェルフをASA A400またはASA C400システムにケーブル接続します
+= NS224シェルフをASA A400またはASA C400システムにケーブル接続する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, replace, dimm, shut, down, impaired, controller, module, reinstall, system, node, aggregates, metrocluster, replacement 
 summary: FAS9000システムがヘルスモニターアラートを通じて過剰な修正可能なECCメモリエラー、または修正不可能なECCエラーを報告した場合は、DIMMを交換してください。DIMMの故障により、ストレージシステムがONTAPを起動できなくなる可能性があるため、交換することで安定した動作が回復します。 
 ---
-= FAS9000 システムの DIMM を交換してメモリエラーを修正する
+= FAS9000 システムの DIMM を交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

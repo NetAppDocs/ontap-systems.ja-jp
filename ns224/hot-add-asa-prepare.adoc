@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa systems, preparation 
 summary: RoCE対応のPCIeカードまたはI/Oモジュールをインストールしてポートを設定し、既存のシェルフの配線をやり直し、必要に応じて自動ドライブ割り当てを無効にすることで、NS224シェルフをASAシステムにホットアドする準備をしてください。 
 ---
-= ASAシステムへのNS224シェルフのホットアド準備の概要
+= NS224シェルフをASAシステムにホットアドするための準備の概要
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -16,12 +16,12 @@ entries:
 - title: メンテナンス
   pdf-filename: FAS2700 で維持されます
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/fas2700/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: FAS2700 ブートメディア
     entries:
-    - title: 概要
+    - title: ブートメディアの概要
       url: "/fas2700/bootmedia-replace-overview.html"
     - title: 暗号化キーの確認
       url: "/fas2700/bootmedia-encryption-preshutdown-checks.html"
@@ -41,7 +41,7 @@ entries:
   - title: シャーシ
     pdf-filename: FAS2700 シャーシ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/fas2700/chassis-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/fas2700/chassis-replace-shutdown.html"
@@ -52,7 +52,7 @@ entries:
   - title: コントローラ
     pdf-filename: FAS2700 コントローラ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/fas2700/controller-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/fas2700/controller-replace-shutdown.html"

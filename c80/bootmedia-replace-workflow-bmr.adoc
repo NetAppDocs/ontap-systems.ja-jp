@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, replace the boot media 
 summary: ブートイメージの自動リカバリでは、システムが適切なブートメニューオプションを自動的に識別して選択します。パートナーノードのブートイメージを使用して、 AFF C80ストレージシステムの交換用ブートメディアにONTAPを再インストールします。 
 ---
-= AFF C80 自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
+= 自動ブートリカバリプロセスを使用するAFF C80システムのブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

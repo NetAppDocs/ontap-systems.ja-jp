@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, prerequisite, replace the controller module 
 summary: AFF C30またはAFF C60ストレージシステムのコントローラーを交換する前に、交換を正常に完了するために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正常に機能していることの確認、正しい交換用コントローラーを用意していることの確認、およびコントローラーのコンソール出力をテキストログファイルに保存することが含まれます。 
 ---
-= AFF C30またはAFF C60システムでコントローラーを交換する前に要件を確認してください
+= AFF C30またはAFF C60システムでコントローラーを交換するための要件を確認します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

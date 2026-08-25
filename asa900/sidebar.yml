@@ -36,8 +36,10 @@ entries:
   - title: ブートメディア - 手動リカバリ
     pdf-filename: AFF ASA 900 ブートメディアマニュアル
     entries:
-    - title: 概要
-      url: "/asa900/bootmedia_replace_overview.html"
+    - title: ブートメディアの交換ワークフロー
+      url: "/asa900/bootmedia-replace-workflow.html"
+    - title: 要件を確認する
+      url: "/asa900/bootmedia-replace-requirements.html"
     - title: 暗号化キーの確認
       url: "/asa900/bootmedia_encryption_preshutdown_checks.html"
     - title: 障害のあるコントローラをシャットダウンします
@@ -53,7 +55,7 @@ entries:
   - title: シャーシ
     pdf-filename: ASA A900シャーシ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/asa900/chassis_replace_overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/asa900/chassis_replace_shutdown.html"
@@ -64,7 +66,7 @@ entries:
   - title: コントローラ
     pdf-filename: ASA A900コントローラモジュール
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/asa900/controller_replace_overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/asa900/controller_replace_shutdown.html"

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 2k, add IO module 
 summary: AFX 2KストレージシステムにI/Oモジュールを追加することで、ネットワーク接続性を強化し、システムのデータトラフィック処理能力を拡張できます。 
 ---
-= AFX 2KシステムにI/Oモジュールを追加して、ネットワーク接続性を強化します
+= AFX 2KシステムにI/Oモジュールを追加する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

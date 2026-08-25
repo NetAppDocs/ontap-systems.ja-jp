@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2700, prerequisite, replace the controller module 
 summary: FAS2700 システムのコントローラを交換する前に、交換手順の前提条件を確認し、お使いの ONTAP のバージョンに適した手順を選択してください。 
 ---
-= FAS2700システムのコントローラを交換する前に要件を確認してください
+= FAS2700システムにおけるコントローラの交換要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

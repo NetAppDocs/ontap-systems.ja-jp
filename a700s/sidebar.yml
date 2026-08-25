@@ -16,12 +16,12 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF A700s は引き続き使用できます
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/a700s/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF A700s ブートメディア
     entries:
-    - title: 概要
+    - title: ブートメディアの概要
       url: "/a700s/bootmedia-replace-overview.html"
     - title: 暗号化キーの確認
       url: "/a700s/bootmedia-encryption-preshutdown-checks.html"
@@ -40,7 +40,7 @@ entries:
   - title: シャーシ
     pdf-filename: AFF A700s シャーシ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/a700s/chassis-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a700s/chassis-replace-shutdown.html"
@@ -51,7 +51,7 @@ entries:
   - title: コントローラ
     pdf-filename: AFF A700s コントローラ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/a700s/controller-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a700s/controller-replace-shutdown.html"

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, replace a dimm 
 summary: FAS8200システムがヘルスモニターアラートを通じて過剰な修正可能なECCメモリエラー、または修正不可能なECCエラーを報告した場合は、DIMMを交換してください。DIMMの故障により、ストレージシステムがONTAPを起動できなくなる可能性があるため、DIMMを交換することで安定した動作が回復します。 
 ---
-= FAS8200 システムの DIMM を交換してメモリエラーを修正する
+= FAS8200 システムの DIMM を交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

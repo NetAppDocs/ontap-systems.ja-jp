@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a400, aff, a400, locate, boot, media, controller, module, fre, map, direction, replace, replace the boot media 
 summary: コントローラモジュール内のブートメディアの位置を確認し、指示に従って交換する必要があります。 
 ---
-= AFF A400 システムのブートメディアを手動ブートリカバリプロセスを使用して交換する
+= AFF A400 システムの手動ブートリカバリプロセス中にブートメディアを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, replace the boot media 
 summary: AFF A1K システムのブートメディアには、重要なファームウェアと設定データが保存されています。交換するには、システム管理モジュールを取り外し、障害のあるブートメディアを取り外し、交換用のブートメディアを取り付け、モジュールを再取り付けする必要があります。 
 ---
-= AFF A1K システムのブートメディアを自動ブートリカバリプロセスを使用して交換する
+= AFF A1K システムのブートメディアを自動ブートリカバリプロセス中に交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

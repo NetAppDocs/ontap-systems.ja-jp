@@ -16,12 +16,12 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF A150メンテナンス
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/a150/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF A150ブートメディア
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/a150/bootmedia-replace-overview.html"
     - title: 暗号化キーの確認
       url: "/a150/bootmedia-encryption-preshutdown-checks.html"
@@ -38,7 +38,7 @@ entries:
   - title: シャーシ
     pdf-filename: AFF A150シャーシ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/a150/chassis-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a150/chassis-replace-shutdown.html"
@@ -49,7 +49,7 @@ entries:
   - title: コントローラ
     pdf-filename: AFF A150コントローラ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/a150/controller-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a150/controller-replace-shutdown.html"

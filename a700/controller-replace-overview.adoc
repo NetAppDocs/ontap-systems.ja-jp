@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, replace, controller, module, prerequisites, procedure 
 summary: 交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。 
 ---
-= AFF A700システムでコントローラーを交換する前に要件を確認してください
+= AFF A700 システムでコントローラーを交換するための要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

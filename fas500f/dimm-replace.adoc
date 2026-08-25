@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, replace dimms 
 summary: FAS500f システムがヘルスモニターアラートを通じて、修正可能または修正不可能な ECC メモリエラーが過剰に発生したことを報告した場合は、DIMM を交換してください。DIMM の故障により、ストレージシステムが ONTAP を起動できなくなる可能性があるため、交換することで安定した動作が回復します。この手順には、障害のあるコントローラのシャットダウン、DIMM の交換、および故障した部品の NetApp への返却が含まれます。 
 ---
-= FAS500f システムの DIMM を交換してメモリエラーを修正する
+= FAS500f システムの DIMM を交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

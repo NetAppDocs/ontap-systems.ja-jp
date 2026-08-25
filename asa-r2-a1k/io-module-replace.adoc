@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a1k, replace a pcie card 
 summary: ASA A1KシステムのI/Oモジュールに障害が発生した場合や、より高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、I/Oモジュールを交換してください。交換プロセスでは、コントローラのシャットダウン、障害が発生したI/Oモジュールの交換、コントローラのリブート、障害が発生したパーツのNetAppへの返却を行います。 
 ---
-= ASA A1KシステムのI/Oモジュールを交換する
+= ASA A1K システムの I/O モジュールを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

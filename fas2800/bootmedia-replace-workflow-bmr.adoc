@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2820, replace the boot media 
 summary: FAS2820ストレージシステムのブートメディアの交換を開始するには、交換要件を確認し、コントローラをシャットダウンし、ブートメディアを交換し、ブートメディア上のイメージを復元して、システム機能を確認します。 
 ---
-= FAS2820 自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
+= 自動ブートリカバリプロセスを使用する FAS2820 システムのブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

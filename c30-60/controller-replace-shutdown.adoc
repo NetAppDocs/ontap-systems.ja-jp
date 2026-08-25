@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, shut down the impaired controller 
 summary: AFF C30またはAFF C60ストレージシステムの障害のあるコントローラをシャットダウンして、データ損失を防ぎ、コントローラの交換時にシステムの安定性を確保します。 
 ---
-= AFF C30またはAFF C60システムで交換前に障害のあるコントローラーをシャットダウンする
+= AFF C30またはAFF C60システムで障害のあるコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -58,7 +58,7 @@ entries:
   - title: シャーシ
     pdf-filename: FAS2820シャーシ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/fas2800/chassis-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/fas2800/chassis-replace-shutdown.html"
@@ -69,7 +69,7 @@ entries:
   - title: コントローラ
     pdf-filename: FAS2820コントローラ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/fas2800/controller-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/fas2800/controller-replace-shutdown.html"

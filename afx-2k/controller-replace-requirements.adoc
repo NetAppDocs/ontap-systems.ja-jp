@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 2k, prerequisite, replace the controller module 
 summary: AFX 2Kストレージシステムのコントローラーを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、適切な交換用コントローラー、システム構成のバックアップ、および必要なツールとファームウェアへのアクセスが含まれます。 
 ---
-= AFX 2Kシステムでコントローラーを交換する前に要件を確認する
+= AFX 2Kシステムでコントローラーを交換するための要件を確認します。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 1k, shut down the impaired controller 
 summary: AFX 1K ストレージ システムのコントローラーに障害が発生した場合は、シャットダウンしてください。メンテナンスやコンポーネントの交換を行う前に、データの損失を防ぎ、システムの安定性を確保するために、コントローラーを安全にシャットダウンすることが重要です。 
 ---
-= AFX 1Kシステムでは、交換前に障害のあるコントローラーをシャットダウンします。
+= AFF A1Kシステムの障害コントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

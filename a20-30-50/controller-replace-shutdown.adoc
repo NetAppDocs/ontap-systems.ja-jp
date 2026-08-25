@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, shut down the impaired controller 
 summary: AFF A20、AFF A30、またはAFF A50ストレージシステムの障害のあるコントローラをシャットダウンして、データ損失を防ぎ、コントローラの交換時にシステムの安定性を確保します。 
 ---
-= AFF A20、AFF A30、またはAFF A50システムで交換前に障害のあるコントローラーをシャットダウンする
+= AFF A20、AFF A30、またはAFF A50システムで障害のあるコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff systems, preparation, roce, aff a400, aff c400 
 summary: RoCE対応のPCIeカードまたはI/Oモジュールをインストールし、ポートを設定し、既存のシェルフのケーブルを再配線し、自動ドライブ割り当てを無効にすることで、AFF A400またはC400システムにNS224シェルフをホットアドするための準備を行います。 
 ---
-= NS224シェルフをホットアドするためにAFF A400またはC400システムを準備してください
+= AFF A400 または C400 システムでNS224シェルフをホットアドするための準備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

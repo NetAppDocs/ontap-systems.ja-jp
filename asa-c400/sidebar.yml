@@ -55,7 +55,7 @@ entries:
   - title: シャーシ
     pdf-filename: ASA C400シャーシ
     entries:
-    - title: 概要
+    - title: シャーシの交換ワークフロー
       url: "/asa-c400/chassis-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/asa-c400/chassis-replace-shutdown.html"

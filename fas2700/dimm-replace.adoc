@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2700, replace, dimm, shut, down, impaired, controller, controller, metrocluster, replace, system, reinstall,  module, filed, part, aggregates, 
 summary: ストレージシステムで過剰な訂正可能な ECC エラーまたは訂正不可能な ECC エラーが発生した場合は、FAS2700 システムの DIMM を交換してください。これらのエラーは通常、単一の DIMM の障害が原因で発生します。 
 ---
-= FAS2700システムでDIMMを交換してメモリエラーを修正する
+= FAS2700システムでDIMMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

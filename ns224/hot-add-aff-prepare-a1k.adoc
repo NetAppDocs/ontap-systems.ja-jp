@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff systems, preparation, roce, aff a1k 
 summary: RoCE対応I/Oモジュールをインストールし、ポートを設定し、既存のシェルフのケーブルを再配線し、自動ドライブ割り当てを無効にすることで、NS224シェルフをホットアドするためのAFF A1Kシステムを準備します。 
 ---
-= AFF A1K システムでNS224シェルフをホットアドする準備
+= AFF A1K システムでNS224シェルフをホットアドするための準備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

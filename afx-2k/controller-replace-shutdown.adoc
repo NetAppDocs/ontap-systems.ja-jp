@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 2k, shut down the impaired controller 
 summary: AFX 2Kストレージシステムのコントローラーに不具合が生じた場合は、コントローラーの電源を切ってください。メンテナンスや部品交換を行う前に、データ損失を防ぎ、システムの安定性を確保するために、コントローラーを安全にシャットダウンすることが非常に重要です。 
 ---
-= AFX 2Kシステムで障害のあるコントローラーを交換する前にシャットダウンする
+= AFX 2Kシステムで障害のあるコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

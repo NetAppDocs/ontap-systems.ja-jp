@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a200, shut down the controller 
 summary: ストレージシステムのハードウェア構成に応じた手順を使用して、障害のあるコントローラをシャットダウンまたはテイクオーバーできます。 
 ---
-= AFF A200 システムで障害のあるコントローラーを交換前にシャットダウンする
+= AFF A200システムで障害のあるコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

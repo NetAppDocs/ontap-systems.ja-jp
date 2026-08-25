@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, shut down the impaired controller 
 summary: データ損失を防ぎ、システムの安定性を確保するために、コントローラーを交換する際は FAS8300 または FAS8700 ストレージシステムのコントローラーをシャットダウンしてください。 
 ---
-= FAS8300またはFAS8700システムで交換前に障害のあるコントローラーをシャットダウンする
+= FAS8300またはFAS8700システムで障害のあるコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

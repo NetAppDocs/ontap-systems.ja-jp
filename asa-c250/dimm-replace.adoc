@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c250, replace a dimm 
 summary: ASA C250 システムで訂正可能なエラー訂正コードまたは訂正不可能な ECC エラーの増加が記録された場合は、DIMM を交換してください。故障した DIMM を交換しないと、システムパニックが発生する可能性があります。 
 ---
-= ASA C250 システムの DIMM を交換してメモリエラーを修正する
+= ASA C250 システムの DIMM を交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -74,6 +74,8 @@ entries:
       url: "/asa800/controller-replace-workflow.html"
     - title: 要件を確認する
       url: "/asa800/controller-replace-requirements.html"
+    - title: 交換の準備
+      url: "/asa800/controller-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/asa800/controller-replace-shutdown.html"
     - title: コントローラを交換してください

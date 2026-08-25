@@ -16,12 +16,12 @@ entries:
 - title: メンテナンス
   pdf-filename: ASA A150のメンテナンス
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/asa150/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: ASA A150ブートメディア
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/asa150/bootmedia-replace-overview.html"
     - title: 暗号化キーの確認
       url: "/asa150/bootmedia-encryption-preshutdown-checks.html"
@@ -38,7 +38,7 @@ entries:
   - title: シャーシ
     pdf-filename: ASA A150シャーシ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/asa150/chassis-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/asa150/chassis-replace-shutdown.html"
@@ -49,7 +49,7 @@ entries:
   - title: コントローラ
     pdf-filename: ASA A150コントローラ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/asa150/controller-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/asa150/controller-replace-shutdown.html"

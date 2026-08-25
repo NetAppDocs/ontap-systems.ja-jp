@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
 summary: 故障したシャーシを、故障したシャーシと同じモデルの新しいシャーシと交換します。 
 ---
-= AFF A150システムのシャーシを交換する前に要件を確認してください
+= AFF A150システムでシャーシを交換するための要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

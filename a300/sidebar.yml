@@ -14,12 +14,12 @@ entries:
 - title: メンテナンス
   pdf-filename: AFF A300 の維持
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/a300/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: AFF A300 ブートメディア
     entries:
-    - title: 概要
+    - title: ブートメディアの概要
       url: "/a300/bootmedia-replace-overview.html"
     - title: 暗号化キーの確認
       url: "/a300/bootmedia-encryption-preshutdown-checks.html"
@@ -38,7 +38,7 @@ entries:
   - title: シャーシ
     pdf-filename: AFF A300 シャーシ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/a300/chassis-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a300/chassis-replace-shutdown.html"
@@ -49,7 +49,7 @@ entries:
   - title: コントローラモジュール
     pdf-filename: AFF A300 コントローラモジュール
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/a300/controller-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/a300/controller-replace-shutdown.html"

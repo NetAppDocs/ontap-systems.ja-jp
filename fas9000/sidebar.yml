@@ -16,12 +16,12 @@ entries:
 - title: メンテナンス
   pdf-filename: FAS9000 では引き続き機能
   entries:
-  - title: 概要
+  - title: メンテナンスの概要
     url: "/fas9000/maintain-overview.html"
   - title: ブートメディア
     pdf-filename: FAS9000 ブートメディア
     entries:
-    - title: 概要
+    - title: ブートメディアの概要
       url: "/fas9000/bootmedia-replace-overview.html"
     - title: 暗号化キーの確認
       url: "/fas9000/bootmedia-encryption-preshutdown-checks.html"
@@ -44,7 +44,7 @@ entries:
   - title: シャーシ
     pdf-filename: FAS9000 シャーシ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/fas9000/chassis-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/fas9000/chassis-replace-shutdown.html"
@@ -55,7 +55,7 @@ entries:
   - title: コントローラ
     pdf-filename: FAS9000 コントローラ
     entries:
-    - title: 概要
+    - title: 要件を確認する
       url: "/fas9000/controller-replace-overview.html"
     - title: 障害のあるコントローラをシャットダウンします
       url: "/fas9000/controller-replace-shutdown.html"
@@ -87,9 +87,9 @@ entries:
   - title: X91148A モジュール
     pdf-filename: FAS9000 X91148A モジュール
     entries:
-    - title: 概要
+    - title: X91148Aモジュールの概要
       url: "/fas9000/x91148a-module-install-overview.html"
     - title: 空きスロットのあるシステムにX91148Aモジュールを追加
       url: "/fas9000/x91148a-modules-with-open-slots-add.html"
-    - title: スロットが開いていないシステムにモジュールを搭載したX91148Aを追加
+    - title: 空きスロットのないシステムへの X91148A モジュールの追加
       url: "/fas9000/x91148a-modules-with-no-open-slots-add.html"

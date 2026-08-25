@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, replace a dimm 
 summary: 修正可能または修正不可能なメモリ エラーが過剰に検出された場合は、 AFF C30 またはAFF C60 ストレージ システム内の DIMM を交換してください。このようなエラーにより、ストレージ システムがONTAPを起動できなくなる可能性があります。交換プロセスには、障害のあるコントローラのシャットダウン、取り外し、DIMM の交換、コントローラの再インストール、そして障害のある部品のNetAppへの返送が含まれます。 
 ---
-= AFF C30またはAFF C60システムのDIMMを交換してメモリエラーを修正する
+= AFF C30またはAFF C60システムのDIMMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

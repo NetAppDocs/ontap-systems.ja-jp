@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, replace a dimm 
 summary: 修正可能なメモリエラーまたは修正不可能なメモリエラーが過剰に検出された場合は、FAS50ストレージシステムのDIMMを交換してください。このようなエラーが発生すると、ストレージシステムがONTAPを起動できなくなる可能性があります。交換プロセスには、障害のあるコントローラをシャットダウンし、取り外し、DIMMを交換し、コントローラを再取り付けし、故障した部品をNetAppに返却することが含まれます。 
 ---
-= FAS50システムでDIMMを交換してメモリエラーを修正する
+= FAS50システムでDIMMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas9500, replace the chassis 
 summary: シャーシを交換するには、障害のあるシャーシから電源装置、ファン、コントローラモジュール、I/Oモジュール、DCPMモジュール、およびUSB LEDモジュールを取り外し、交換用シャーシに取り付ける必要があります。 
 ---
-= FAS9500 システムのシャーシを交換する前に要件を確認してください
+= FAS9500システムでシャーシを交換するための要件を確認します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

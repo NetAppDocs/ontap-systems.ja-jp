@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff a250, aff c250, cable 
 summary: NS224 シェルフを AFF A250 または AFF C250 システムにケーブル接続し、各シェルフが HA ペアの各コントローラに 2 つの接続を持つようにします。 
 ---
-= NS224 シェルフを AFF A250 または AFF C250 システムにケーブル接続します
+= NS224シェルフをAFF A250またはAFF C250システムにケーブル接続する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

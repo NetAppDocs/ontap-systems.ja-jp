@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, replace the boot media 
 summary: 交換要件を確認し、コントローラをシャットダウンし、ブート メディアを交換し、ブート メディア上のイメージを復元し、システム機能を確認して、 FAS8300またはFAS8700ストレージ システムのブート メディアの交換を開始します。 
 ---
-= FAS8300 および FAS8700 の自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
+= 自動ブートリカバリプロセスを使用する FAS8300 または FAS8700 システムのブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

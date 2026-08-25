@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 1k, replace the boot media 
 summary: 交換要件の確認、暗号化ステータスの確認、コントローラのシャットダウン、ブート メディアの交換、リカバリ イメージの起動、暗号化の復元、システム機能の検証を行って、AFX 1K ストレージ システムのブート メディアの交換を開始します。 
 ---
-= 自動ブートリカバリプロセスを使用したAFX 1Kブートメディア交換ワークフロー
+= 自動ブートリカバリプロセスを使用したAFF A1Kシステムのブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, replace the boot media 
 summary: ブートイメージを手動でリカバリするには、USBドライブを使用して、 AFF C80システムの交換用ブートメディアにONTAPを再インストールする必要があります。NetAppNetAppサイトから適切なONTAPリカバリイメージをダウンロードし、USBドライブにコピーする必要があります。この準備したUSBドライブを使用してリカバリを実行し、システムを稼働状態に復元します。 
 ---
-= AFF C80 手動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
+= 手動ブートリカバリプロセスを使用する AFF C80 システムのブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

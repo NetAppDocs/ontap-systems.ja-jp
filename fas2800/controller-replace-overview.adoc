@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2820, prerequisite, replace the controller module 
 summary: FAS2820システムのコントローラーを交換する前に、交換手順の前提条件を確認し、お使いのONTAPオペレーティングシステムのバージョンに適した手順を選択する必要があります。 
 ---
-= FAS2820システムでコントローラーを交換する前に要件を確認してください
+= FAS2820システムでコントローラーを交換するための要件を確認します
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

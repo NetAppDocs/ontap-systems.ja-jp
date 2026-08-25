@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a150, a150, asa, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
 summary: 障害のあるシャーシを、障害のあるシャーシと同じモデルの新しいシャーシと交換します。 
 ---
-= ASA A150シャーシを交換する前に要件を確認してください
+= ASA A150システムでシャーシを交換するための要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

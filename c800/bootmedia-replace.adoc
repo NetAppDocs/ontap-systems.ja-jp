@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c800, replace the boot media 
 summary: ブートメディアを交換する前に、コントローラモジュールのライザー 3 を取り外して障害が発生したブートメディアの場所を確認する必要があります。 
 ---
-= AFF C800 システムのブートメディアを手動ブートリカバリプロセスを使用して交換する
+= AFF C800 システムのブートメディアを手動ブートリカバリプロセス中に交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

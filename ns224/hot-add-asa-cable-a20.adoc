@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa a20, cable 
 summary: NS224シェルフをASA A20システムにケーブル接続し、各シェルフがHAペアの各コントローラに2つの接続を持つようにします。 
 ---
-= NS224 シェルフを ASA A20 システムにケーブル接続します
+= NS224シェルフをASA A20システムにケーブル接続する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

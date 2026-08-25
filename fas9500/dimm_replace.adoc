@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas9500, replace a dimm 
 summary: FAS9500 システムがヘルスモニターアラートを通じて過剰な修正可能な ECC メモリエラー、または修正不可能な ECC エラーを報告した場合は、DIMM を交換してください。DIMM の故障により、ストレージシステムが ONTAP を起動できなくなる可能性があるため、交換することで安定した動作が回復します。 
 ---
-= FAS9500 システムの DIMM を交換してメモリエラーを修正する
+= FAS9500 システムの DIMM を交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

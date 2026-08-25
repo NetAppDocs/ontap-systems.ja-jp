@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a1k, replace the boot media 
 summary: ASA A1Kストレージシステムのブートメディアの交換を開始します。まず、交換要件を確認し、コントローラをシャットダウンし、ブートメディアを交換し、ブートメディアにイメージをリストアし、システム機能を確認します。 
 ---
-= ASA A1K 自動ブートリカバリプロセスを使用したブートメディア交換ワークフロー
+= 自動ブートリカバリプロセスを使用するASA A1Kシステムのブートメディア交換ワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

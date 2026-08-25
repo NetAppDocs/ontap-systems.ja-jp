@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, replace dimm 
 summary: ストレージシステムがヘルスモニターのアラートに基づいて過剰な訂正可能なECCエラーを検出した場合、または単一のDIMMの故障によってシステムがONTAPを起動できなくなるような訂正不可能なECCエラーが発生した場合は、FAS2600システムのDIMMを交換してください。 
 ---
-= FAS2600システムでDIMMを交換してメモリエラーを修正する
+= FAS2600システムでDIMMを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

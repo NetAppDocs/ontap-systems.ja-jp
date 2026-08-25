@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff systems, preparation 
 summary: RoCE対応のPCIeカードまたはI/Oモジュールをインストールし、ポートを設定し、既存のシェルフの配線をやり直し、必要に応じて自動ドライブ割り当てを無効にすることで、NS224シェルフをAFFシステムにホットアドする準備をしてください。 
 ---
-= AFFシステムへのNS224シェルフのホットアド準備の概要
+= NS224シェルフをAFFシステムにホットアドするための準備の概要
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

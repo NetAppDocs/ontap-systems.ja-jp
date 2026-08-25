@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa systems, cable 
 summary: NS224シェルフをASAシステムにケーブル接続して、HAペアのストレージ冗長性と高可用性を確保するデュアルパス接続を提供します。 
 ---
-= NS224シェルフをASAシステムにケーブル接続します
+= NS224シェルフをASAシステムにケーブル接続する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
