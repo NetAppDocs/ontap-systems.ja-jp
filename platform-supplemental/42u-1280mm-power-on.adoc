@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: connect, system, component, pdu, cable, ac, power, source, cabinet, power on the system cabinet 
 summary: システムコンポーネントを PDU に接続し、 PDU ケーブルを AC 電源に接続し、 AC 電源を電源に接続し、システムの電源をオンにする必要があります。 
 ---
-= システムキャビネットの電源をオンにします
+= ONTAP ハードウェアシステムキャビネットの電源をオンにする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

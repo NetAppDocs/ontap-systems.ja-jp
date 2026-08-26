@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a800, how to recable the system, how to reassign disks 
 summary: ストレージリソースの制御を交換用コントローラに戻すと、ASA A800 システムは通常動作を再開できます。 
 ---
-= ASA A800システムでコントローラーをギブバックして通常運用を再開する
+= ASA A800 システムでコントローラーを返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

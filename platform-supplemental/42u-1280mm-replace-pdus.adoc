@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace, fail, PDU, system, cabinet, replace, exist, replace pdu 
 summary: システムキャビネット内の故障した PDU を交換したり、既存の PDU を別のタイプの PDU と交換したりできます。 
 ---
-= PDU を交換します
+= ONTAPハードウェアシステムキャビネットのPDUを交換する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

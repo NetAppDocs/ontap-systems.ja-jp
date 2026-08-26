@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: system, cabinet, support, power, distribution, unit, pdu, type, compliant, nema, iec, support pdu type and specificaton 
 summary: システムキャビネットは、さまざまなタイプのPower Distribution Unitに対応しています。PDUはNEMAまたはIECに準拠しています。 
 ---
-= サポートされている PDU の種類と仕様
+= サポートされているPDUタイプと仕様（ONTAPハードウェアシステムキャビネット用）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

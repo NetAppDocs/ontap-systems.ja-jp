@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, shut, down, impaired, controller, take, over 
 summary: AFF A150 ストレージシステムのコントローラーをシャットダウンして、手動ブートメディア復旧プロセス中のデータ損失を防ぎ、システムの安定性を維持します。 
 ---
-= 手動ブートリカバリプロセス中に AFF A150 システムのコントローラをシャットダウンする
+= AFF A150 システムのコントローラーをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

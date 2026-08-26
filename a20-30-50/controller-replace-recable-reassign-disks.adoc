@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, how to reboot the system 
 summary: ストレージリソースの制御を交換用コントローラに戻すと、AFF A20、AFF A30、または AFF A50 ストレージシステムは通常動作を再開できます。ギブバック手順は、システムが暗号化を使用していないか、Onboard Key Manager 暗号化を使用しているか、External Key Manager 暗号化を使用しているかによって異なります。 
 ---
-= AFF A20、AFF A30、またはAFF A50システムでコントローラーを返却して通常の運用を再開します
+= AFF A20、AFF A30、またはAFF A50システムでコントローラーを返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

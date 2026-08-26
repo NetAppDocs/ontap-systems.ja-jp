@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a900, pre-shutdown checks for onboard encryption keys 
 summary: 障害のあるコントローラをシャットダウンしてオンボード暗号化キーのステータスを確認する前に、障害のあるコントローラのステータスを確認し、自動ギブバックを無効にし、システムで実行されている ONTAP のバージョンを確認する必要があります。 
 ---
-= ASA A900システムのブートメディアの暗号化サポートを確認します
+= ASA A900 システムでの手動ブートリカバリプロセスを使用したブートメディアの暗号化サポートの確認
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

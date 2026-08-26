@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, how to recable the system, how to reassign disks 
 summary: ストレージリソースの制御を交換用コントローラに戻して、FAS500f システムが通常の動作を再開できるようにします。 
 ---
-= FAS500f システムのコントローラーを返却して通常運用を再開する
+= FAS500fシステムでコントローラーをギブバックする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

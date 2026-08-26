@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, replace the boot media 
 summary: FAS50ストレージシステムのブートメディアを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、適切な容量のUSBフラッシュドライブを用意すること、および正しい交換用ブートデバイスを用意することが含まれます。 
 ---
-= FAS50システムにおける手動ブートメディア復旧の要件を確認する
+= FAS50システムにおける手動ブートメディアリカバリの要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

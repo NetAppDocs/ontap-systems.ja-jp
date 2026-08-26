@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, shut down the controller, manual, manual boot recovery 
 summary: 手動ブートメディア復旧プロセス中にデータ損失を防ぎ、システムの安定性を維持するために、FAS2600ストレージシステムのコントローラをシャットダウンしてください。 
 ---
-= ブートメディアのリカバリ中にFAS2600システムのコントローラをシャットダウンする
+= ブートリカバリプロセス中にFAS2600システムのコントローラをシャットダウンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

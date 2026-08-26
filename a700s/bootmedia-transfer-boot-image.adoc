@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700s, aff, a700s, procedure, secondary, boot, media, restore, fail, image, tgz, file, transfer, usb, flash, drive, transfer the boot image to the boot media using a usb flash drive, manual, manual boot recovery 
 summary: セカンダリ ブート メディアまたは USB フラッシュ ドライブを使用して、ブート イメージをAFF A700sシステムの交換用ブート メディアに転送します。AFF A700sシステムは、手動のブート メディア リカバリ手順のみをサポートします。自動ブート メディア リカバリはサポートされていません。 
 ---
-= AFF A700s システムでUSBフラッシュドライブを使用してブートイメージをブートメディアに転送する
+= AFF A700s システムのブートメディアへのブートイメージの転送
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

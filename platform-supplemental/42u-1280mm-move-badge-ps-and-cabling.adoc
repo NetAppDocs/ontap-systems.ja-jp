@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: move, power, supply, illuminate, badge, cabling, cable, system, cabinet, reverse, door, reinstall, move the badge power supply and cabling 
 summary: ドアを反転して照光バッジを再度取り付ける前に、電源装置と照光バッジのケーブルをシステムキャビネットフレームの反対側に移動する必要があります。 
 ---
-= バッジの電源装置とケーブルを移動します
+= ONTAP ハードウェアシステムキャビネットでバッジの電源とケーブルを移動する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

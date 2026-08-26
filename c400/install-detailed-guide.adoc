@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff c400, aff, c400, step-by-step, instruction, install, typical, netapp, system, instruction, detail, guide, prepare, installation, hardware, cable, controller, network, drive, shelves, shelf, complete, setup, configuration, detailed guide, prepare for installation, install the hardware, cable controllers to your network, cable controllers to drive shelves, complete system setup and configuration 
 summary: このガイドでは、一般的なネットアップシステムのインストール手順について詳しく説明します。インストール手順の詳細については、このガイドを参照してください。 
 ---
-= 詳細な手順書を使用して AFF C400 システムをインストールおよびセットアップする
+= 詳細な手順を使用してAFF C400システムをインストールする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-詳細なガイドを使用して AFF C400 ストレージシステムをインストールおよびセットアップします。このガイドでは、ラックへの設置やケーブル接続からシステムの初期起動まで、手順を追って説明しています。
+ラックへの設置やケーブル接続から初期システム起動まで、ステップバイステップの手順に従って AFF C400 ストレージシステムをインストールおよびセットアップします。
 
 MetroCluster 構成の場合は、MetroCluster のインストールコンテンツを使用します。
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, how to reboot the system 
 summary: ストレージ リソースの制御を交換用コントローラに戻して、FAS50 システムが通常の動作を再開できるようにします。返却手順は、システムで使用されている暗号化タイプ（暗号化なし、オンボード キー マネージャー OKM 暗号化、または外部キー マネージャー EKM 暗号化）によって異なります。 
 ---
-= FAS50 システムでコントローラーを返却して、通常の動作を再開します。
+= FAS50システムでコントローラーを返却する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

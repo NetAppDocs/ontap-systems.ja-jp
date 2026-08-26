@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, replace the boot media 
 summary: FAS500f システムのブートメディアを交換する前に、交換を正常に完了するために必要な要件を満たしていることを確認してください。これには、適切な容量の USB フラッシュドライブと、正しい交換用ブートデバイスを用意していることの確認が含まれます。 
 ---
-= FAS500f システムにおける手動ブートメディアリカバリの要件を確認する
+= FAS500f システムでの手動ブートメディアリカバリの要件を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

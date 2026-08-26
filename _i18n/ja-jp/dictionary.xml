@@ -1534,7 +1534,6 @@
   <block id="a83c5e67d745b0c85b815af3214463cd" category="section-title">オプション 1 ：ネットワーク検出が有効になっている場合は、システムのセットアップを完了する</block>
   <block id="d01f82c054ee1a7df429f478c56a204a" category="list-text">両方のノードの電源スイッチをオンにします。</block>
   <block id="119f03ea1c250f1b97c5928c1d9e5432" category="summary">電源装置とコンポーネントをシステムキャビネットの反対側に移動し、ヒンジとロックキャッチを移動したら、システムキャビネットのドアと照光バッジを取り付け直し、バッジを電源に再接続する必要があります。</block>
-  <block id="643cfac87180d8379362af941dea318b" category="doc">ドアと照光バッジを再度取り付けます</block>
   <block id="cd7c79424e1d80a931ac6ce8733129b9" category="section-title">システムキャビネットのドアを再度取り付けます</block>
   <block id="cf0255b2706527c123b430224b973ffa" category="paragraph">ドアのヒンジとキャッチを反転したら、照光バッジを取り付け直す前に、接地線と接地端子アセンブリ、およびシステムキャビネットの前面ドアを取り付ける必要があります。</block>
   <block id="9916831c694e8fa7873f994991742d8d" category="list-text">ドアを 180 度回転させます。</block>
@@ -1552,7 +1551,6 @@
   <block id="655b379eb55a962545027e4c4765decc" category="list-text">次の図を参考にして、システムキャビネットの前面ドアに照光バッジを取り付けます。</block>
   <block id="07fe9225534f4404a2e26cdf7452dbe0" category="list-text">フロントドアを閉じてロックします。</block>
   <block id="158164ba02e099ef26a07a4dc2f190fb" category="summary">システムキャビネットのドアを反転する場合は、システムキャビネットのドアヒンジとロックキャッチをシステムキャビネット前面の反対側に移動する必要があります。</block>
-  <block id="4870418b0a18b6824d4496cb1208d178" category="doc">ドアヒンジとロックキャッチを反転する</block>
   <block id="44d110429706a22974a0a9f495eecabd" category="paragraph">次の工具が必要です。</block>
   <block id="400b2ac06aa0fa1e54ad61840d28a766" category="list-text">プラスドライバ</block>
   <block id="4ba712d4ea2e8b9f5e7e3a977d3cd5a6" category="list-text">5 mm アレンレンチ；マグネットアレンレンチが推奨されています</block>
@@ -1582,7 +1580,6 @@
   <block id="45c0d75f9a5b23a971e2dc3ca0a0f6c2" category="list-text">ロックキャッチからネジを外し、ロックキャッチをシステムキャビネット前面の反対側に移動します。</block>
   <block id="6df4950fb076868b0e9a60e4ef9e05db" category="list-text">キャッチを 180 度回転させ、システムキャビネットに固定します。</block>
   <block id="0d3dccbe0e804739d481b2318646849d" category="summary">システムキャビネットには、あらかじめいくつかのサポートレールが取り付けられています。システムにサポートレールを追加する必要がある場合は、システムコンポーネントを取り付ける前にレールを取り付ける必要があります。</block>
-  <block id="766ceed182488f716e50814e69e8d1c4" category="doc">追加のサポートレールを取り付けます</block>
   <block id="470cb711568432436799010f6ef4aae7" category="paragraph">このタスクでは、 DS212C および DE212C ディスクシェルフを除くすべてのコントローラおよびディスクシェルフを環境で接続します。これら 2 つのディスクシェルフについては、該当するレールキットの説明書を使用してください。</block>
   <block id="b48b10c07334cd1f7b6cc752fac90f0e" category="inline-link">DE212C または DS212C シェルフを 2 支柱ラックまたは 4 支柱ラックに取り付ける</block>
   <block id="ad64d68204105d0c3d29cf63f354df89" category="paragraph"><block ref="ad64d68204105d0c3d29cf63f354df89" category="inline-link-rx"></block></block>
@@ -1610,7 +1607,6 @@
   <block id="a30d841057f0a416dd0bbc795c01e012" category="list-text">PDU の電源スイッチまたは回路ブレーカーをオンにします。</block>
   <block id="f520ae6a21fe8875386bf25f0f70cc17" category="paragraph">PDU 回路ブレーカーは、ボタンが PDU フレームと同一平面上にある場合はオンです。</block>
   <block id="d351abcbb11dcaf6e66ff33c4d15a5ea" category="summary">サポートレールを追加でシステムキャビネットに取り付けたら、他のシステムコンポーネントがすでに取り付けられているシステムキャビネットにコンポーネントを追加したり、既存のシステムコンポーネントを空のシステムキャビネットに追加したりできます。</block>
-  <block id="abcf9a9ca99b818d8f81b23edc5ef425" category="doc">システムキャビネットに機器を設置</block>
   <block id="b7ba26421fe04c0ccebbe429b0f66e1d" category="list-text">システムキャビネットの背面ドアと前面ドアが開いていない場合は、ロックを解除して開きます。</block>
   <block id="3bd4251422fadada51c1d1b650d91658" category="list-text">機器の設置手順に従って、機器をシステムキャビネットに設置します。</block>
   <block id="1b27409723962508b456362d95ff81f8" category="paragraph">ストレージコントローラは、システムキャビネットの中央に配置する必要があります。ディスクシェルフは、ストレージコントローラの上および下に配置する必要があります。すべてのスイッチは、システムキャビネットの最上部に配置する必要があります。</block>
@@ -1619,7 +1615,6 @@
   <block id="4ccedf93160862bbf89c3f9a64941193" category="paragraph">機器が取り付けられた状態でシステムキャビネットを受け取った場合は、次の図に示すように、空のキャビネットベイのすぐ下にある機器の上にある固定レールを取り外す必要があります。</block>
   <block id="cc32f847114f40b46bd875dc4bc7b049" category="list-text">前面と背面のシステムキャビネットドアを再度取り付けます。</block>
   <block id="9682abea21a8105e25e53a664815f083" category="summary">システムコンポーネントを PDU に接続し、 PDU ケーブルを AC 電源に接続し、 AC 電源を電源に接続し、システムの電源をオンにする必要があります。</block>
-  <block id="de377ff4f06113db5f03b6d5d7501baa" category="doc">システムキャビネットの電源をオンにします</block>
   <block id="44626aa3377a470ee951473cc16b9064" category="paragraph">システムキャビネット内の PDU ごとに別々の電源回路を使用できる必要があります。</block>
   <block id="43fd8e637b5fa8a0480393ffec052db1" category="list-text">システムキャビネットの上部</block>
   <block id="845cc1d7e0e6e805d0656362d228ee19" category="list-text">システムキャビネットの背面ドア底部とフレームの間</block>
@@ -1630,7 +1625,6 @@
   <block id="2dfbf4884a2bb3ae09ba7f32bd318abc" category="list-text">コンポーネントの電源を入れ、システムをブートします。</block>
   <block id="78a5c15479f8785439b1e31dad8ef39f" category="list-text">システムキャビネットのドアを閉じてロックします。</block>
   <block id="0c637ccaaf64b14f56fb1ef4956d2041" category="summary">ドアを反転して照光バッジを再度取り付ける前に、電源装置と照光バッジのケーブルをシステムキャビネットフレームの反対側に移動する必要があります。</block>
-  <block id="d237bc050f1a552b06f9d0db44ebc654" category="doc">バッジの電源装置とケーブルを移動します</block>
   <block id="736acae917c9f78d8fe5ef43508ac7ce" category="paragraph">システムキャビネットのドアとサイドパネルを取り外しておく必要があります。</block>
   <block id="6389d85f34f387a4ea8fe4528c426e25" category="paragraph">システムキャビネットのドアを反転させる際には、照光バッジの電源装置、電源ケーブル、およびケーブルコンジットをシステムキャビネットの反対側に移動する必要があります。このアセンブリは、バッジへのケーブルがキャビネットのドアのヒンジ側に来るように設計されています。</block>
   <block id="709ddaede46e6b855beff61d58586373" category="list-text">電源ケーブルの固定クリップを開き、電源装置から電源ケーブルを外します。</block>
@@ -1753,7 +1747,6 @@
   <block id="81fe716194ccbf369a36b4896558ebf6" category="paragraph">モンキーレンチ</block>
   <block id="8f5552a8f76c90502d6d347229346036" category="paragraph">クレセントレンチは、梱包パレットのホールドダウンブラケットの取り外し、システムキャビネットの水平調節脚の調整、およびボルトダウンキットブラケットの取り付け（注文した場合）に使用します。</block>
   <block id="68c2d553d90a1e1b09caccba97e62a65" category="summary">オプションのボルトダウンキットを取り付けると、システムキャビネットを床に固定できます。キットを取り付けると、システムキャビネットが所定の位置から移動しないようになります。</block>
-  <block id="51096157b524c7405d973a26f6a00303" category="doc">ボルトダウンキットを取り付ける</block>
   <block id="4630806a49f3d566c73da0208c0cd76a" category="paragraph">ボルトダウンブラケットごとに、床に適したアンカーボルトを用意する必要があります。</block>
   <block id="147a1dc5cec13c688326299559be22ae" category="list-text">システムキャビネットを設置する床の場所をマークし、キャビネットをその位置に移動します。</block>
   <block id="1966a82c06f624b9d7efa1d0aa3d578b" category="paragraph">前面および背面のボルトダウンブラケット</block>
@@ -1766,7 +1759,6 @@
   <block id="131f9169d272bf0fbe306fc9b0e34e67" category="list-text">前面ブラケットを床にボルトで固定し、キットのボルトを使用してブラケットをキャビネットフレームに固定します。</block>
   <block id="57a537e94c3c764c4939059e4832e28c" category="list-text">必要に応じて水平調節脚を下げ、背面のボルトダウンブラケットを床に固定します。</block>
   <block id="176cf5dfe0545aace2d630a3f6ef2208" category="summary">システムキャビネットのドアとサイドパネルを取り外して、照光バッジとコンポーネントを移動し、ドアを反転させる必要があります。</block>
-  <block id="0983ab86dcc412b07fb9139c43a350fb" category="doc">システムキャビネットのドアを取り外します</block>
   <block id="9ebafe9f71b91c97d7138894316e164d" category="list-text">システムキャビネットのドアが開いていない場合は開きます。</block>
   <block id="5f3c4fad5ddb550e58d4e35d650a015e" category="list-text">キャビネットがインターコネクトキットに接続されているかどうかに応じて、該当する操作を実行します。</block>
   <block id="e5225257170c4f1fef53ed68e6ad6452" category="cell">システムキャビネットの状態</block>
@@ -1781,7 +1773,6 @@
   <block id="06ac80f4c80a7145d5f287605906355a" category="list-text">ドアの上部をシステムキャビネットフレームから慎重に傾けて離し、ヒンジピンを外します。</block>
   <block id="828cd57cf312dbc7141b1f0b78c1d193" category="list-text">ドアを持ち上げて下部のヒンジから外し、脇に置きます。</block>
   <block id="1dfe210483cc644ace5f6ac4cd8d6781" category="summary">オプションのキャビネットインターコネクトキットを使用して、システムキャビネットどうしを接続できます。キャビネットどうしが離れてケーブルが破損しないように、キットを取り付けることを推奨します。</block>
-  <block id="0d8d91428b593d6310bf06611b9f0541" category="doc">キャビネットインターコネクトキットを取り付けます</block>
   <block id="7da5e55afa45a5604cc061fdce9dc962" category="list-text">システムキャビネットを近付けて配置します。</block>
   <block id="7c80ef4e3a52ad55cdb70e82f071636c" category="paragraph">次の図のように、コントローラモジュールを搭載したキャビネットを真ん中に、ディスクシェルフを追加したキャビネットをその両側に配置する必要があります。キャビネットの側面どうしが触れ合わない程度の近さに配置します。</block>
   <block id="3ff2609e0326dafc2efce7519a6960a3" category="image-alt">この図には説明が付随しています。</block>
@@ -1810,7 +1801,6 @@
   <block id="6ffc5df4a17461423317852eab42d605" category="list-text">残りのシステムキャビネットについても同じ手順を繰り返します。</block>
   <block id="9513dbed5687d13ec78a5ed7ab3503cc" category="list-text">インターコネクトブラケットのネジをすべて締めます。</block>
   <block id="696dd736b666ee17e46c95a26790f5d2" category="summary">システムキャビネットを開梱するときは、システムキャビネットを梱包材から取り出すための十分なスペースがあることを確認する必要があります。また、システムキャビネットの設置場所にキャビネットを移動して接地するのに十分な広さがあることを確認してください。</block>
-  <block id="595603bdc0003748af53e4c42b7507a5" category="doc">スペース要件とシステムキャビネットの寸法</block>
   <block id="a257ee96979da8c46a7e618b50a2de66" category="section-title">システムキャビネットの開梱に必要なスペース</block>
   <block id="e231b2f03b9f4c8eb9e846fa70e1f1a4" category="paragraph">次の表に、システムキャビネットの開梱と設置に必要なスペースを示します。</block>
   <block id="f4843c1c797abf1a256c8802b6cd9f51" category="cell">寸法（ Dimensions ）</block>
@@ -1862,14 +1852,10 @@
   <block id="8b33a6fabc9dc64d006c6243d17ccb18" category="paragraph">注意</block>
   <block id="03e181c9a4ee916b1c6394530dfe5d25" category="paragraph">システムキャビネットによってデータセンターの床が抜けないように、システムキャビネットの底にあるケーブル用開口部よりも広いフロア開口部の上にシステムキャビネットを移動しないでください。</block>
   <block id="d971400e841652c0674351e1776f8782" category="summary">システムキャビネットを所定の位置に移動する前に、システムキャビネットを包む梱包材を取り除く必要があります。また、キャビネットを開梱したあとの梱包材はリサイクルする必要があります。</block>
-  <block id="a95834c1a8ed59ab3858580d175bb665" category="doc">システムキャビネットを開梱します</block>
   <block id="c9c398d96e19f76a792dde6c40d97674" category="summary">システムキャビネットを発注する際には、ネットアップストレージコントローラとディスクシェルフが設置された状態で注文することも、既存のネットアップ機器がある場合は空のシステムキャビネットを発注することもできます。オプションのインターコネクトキットを使用して複数のシステムキャビネットを接続でき、オプションのボルトダウンキットを使用してデータセンターの床に固定できます。</block>
-  <block id="04dd3356a6ed1dc409a57e068d7f5007" category="doc">システムキャビネットを設置</block>
-  <block id="3536220b5e80ece536e76091bbcde43f" category="doc">サポートされている PDU の種類と仕様</block>
   <block id="345f336ebbb6b879b90d461c9ead417e" category="paragraph">システムキャビネットは、さまざまな種類の Power Distribution Unit （ PDU ；配電ユニット）をサポートしています。PDU は NEMA または IEC に準拠しています。</block>
   <block id="fa010c3e95aca618a783f3f5f398a8ba" category="paragraph">システムキャビネットでサポートされる PDU の最新情報は、 Hardware Universe に記載されています。</block>
   <block id="525de838b0b63aa03a438e94f2a28f29" category="summary">照光バッジを取り外すには、システムキャビネットの前面ドアを開き、バッジの背面から電源コードを抜き、システムキャビネットのドアからバッジコンポーネントを取り外す必要があります。</block>
-  <block id="fcb9814ec0f783887dac12f72d00226b" category="doc">照光バッジを取り外します</block>
   <block id="5e431905274e59cf132f091a54196f47" category="list-text">システムキャビネットの前面ドアのロックを解除して開きます。</block>
   <block id="85c3d0cde48efa347bc893ba6c30e89b" category="list-text">ドアの内側にあるバッジ背面パネルの非脱落型ネジを緩め、背面パネルをドアメッシュから慎重に引き出します。</block>
   <block id="3316ddf58954cd81f69dd3a261a67df4" category="list-text">プラグの固定クリップを押してソケットからコードを抜き、背面パネルから電源コードを抜いて、背面パネルから電源コードを取り外します。</block>
@@ -1881,13 +1867,11 @@
   <block id="9de356bba732ea3279684bd5fa1e5f9f" category="section-title">2 ポストミッドマウントレールキットを取り付けます</block>
   <block id="17bc73815850fd6dc60d586cf707300e" category="section-title">2 ポストフラッシュマウントレールキットを取り付けます</block>
   <block id="7d309cda2d3359be8b443f7451192e61" category="summary">前面ドアの開き方を変更するには、照光バッジ、ドア、上部のヒンジ、および関連するハードウェアを取り外し、システムキャビネットフレームの前面の反対側に取り付けます。</block>
-  <block id="cb60a8dc869953f0c81e001801098d91" category="doc">システムキャビネットの前面ドアを反転します</block>
   <block id="0a4a8cbec44f07cf1fa6adeb0d46999d" category="paragraph">照光バッジ付きシステムキャビネットのドアを反転させるには、次の工具と機器が必要です。</block>
   <block id="9cffe40731208ca60bb5bf36565901c8" category="list-text">プラスドライバ</block>
   <block id="5f30a9d35470ff036b30560b74bc4d16" category="list-text">5 mm のアレンレンチを使用することをお勧めします。マグネット式のアレンレンチを使用してください</block>
   <block id="fda016ce78ed407e18786222751251c3" category="list-text">上部ヒンジの六角ボルトに簡単にアクセスできるように、ステップラダー</block>
   <block id="9f34692e20394559868d838e60e139bf" category="summary">システムキャビネットを開梱して接地を始める前に、システムキャビネットを所定の位置に移動し、設置または保守作業を行うために必要な工具と機器を用意しておく必要があります。</block>
-  <block id="3ed6da3ce264f0c66cef48e19cd15c73" category="doc">必要な工具と機器</block>
   <block id="f9fe90b9a7c32c659a86cfe53f6587b1" category="list-text">ディスクシェルフのハードウェアガイドです</block>
   <block id="bcf8fb15c418590ecd335df2dcfad4e4" category="list-text">使用しているシステムに適した設置とセットアップの手順に従ってください</block>
   <block id="45b8f0b842002ec85fb07171d4b0d278" category="list-text">No.1 および No.2 プラスドライバ</block>
@@ -12188,7 +12172,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="da2ac8d5a8e144d9801128279d269441" category="summary">環境変数を確認したら、Onboard Key Manager（OKM）、NetApp Storage Encryption（NSE）、またはNetApp Volume Encryption（NVE）が有効になっているシステムに固有の手順を完了する必要があります。FAS9000システムは、手動によるブートメディアリカバリ手順のみをサポートしています。</block>
   <block id="d500e2b8a53910c2f8ca210ea9270774" category="summary">シャーシを交換するには、障害のあるシャーシから電源装置、ファン、コントローラモジュール、I/Oモジュール、DCPMモジュール、およびUSB LEDモジュールを取り外し、交換用シャーシに取り付ける必要があります。</block>
   <block id="e94f76ed4f789e51d45eda953f52349d" category="summary">NVRAM11 バッテリを内蔵するデステージ コントローラ電源モジュール DCPM をホット スワップするには、障害が発生した DCPM モジュールを特定し、シャーシから取り外し、交換用の DCPM モジュールを取り付ける必要があります。</block>
-  <block id="aa211743815898551dd144cdebabd4e6" category="doc">プラットフォームファミリー別のIOモジュール交換手順</block>
   <block id="284f3d864e67ec64454ad1382833e490" category="summary">NetAppストレージシェルフのNVMeシェルフモジュール交換手順をシェルフモデル別に記載しています。このリファレンスでは、NS224およびNX224シェルフのNSM交換ワークフローへの直接リンクをステップバイステップで提供し、お使いのシェルフモデルに適した正しい手順を迅速に見つけることができます。</block>
   <block id="a461d5a3ec6eff00835d5b1479552285" category="doc">プラットフォームファミリー別のNVMEMまたはNVRAMバッテリー交換手順</block>
   <block id="66439d0b114daf635ee9ba53d5e8d568" category="summary">システムキャビネットは、さまざまなタイプのPower Distribution Unitに対応しています。PDUはNEMAまたはIECに準拠しています。</block>
@@ -13068,7 +13051,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="a4a27b37630453b53def3d02aa2138ae" category="doc">AFF C400コントローラー交換ワークフロー</block>
   <block id="69529956d219369eea8aeb6b4cc119d9" category="paragraph">AFF C400ストレージシステムで、過剰な訂正可能なECCエラーまたは訂正不可能なECCエラー（通常は単一のDIMMの障害が原因）が発生した場合は、DIMMを交換してください。</block>
   <block id="486b1ab7671e7cb630a201d3cfad0128" category="paragraph">サービスを中断することなく AFF C400 ストレージシステムのファンモジュールをホットスワップして、適切なエアフローとシステム冷却を維持します。</block>
-  <block id="9a4a9bec9574e2ea168e6b50a5d8baef" category="paragraph">詳細なガイドを使用して AFF C400 ストレージシステムをインストールおよびセットアップします。このガイドでは、ラックへの設置やケーブル接続からシステムの初期起動まで、手順を追って説明しています。</block>
   <block id="09f8bb302a248f42bf1bbe95753d829e" category="paragraph">お好みに合わせてさまざまなコンテンツ形式から選択し、AFF C400ストレージシステムをインストールおよびセットアップします。</block>
   <block id="faf2da819e0c7d2aed627979c207fbac" category="paragraph">AFF C400 ストレージシステムのインストールおよびセットアップを、システムの設置方法と配線方法を示すビデオ手順に従って行います。</block>
   <block id="04c77b27be39aa578244a75783c7caf8" category="paragraph">AFF C400 ストレージシステムの NVDIMM バッテリーを交換するには、コントローラーモジュールを取り外し、バッテリーを交換してから、コントローラーモジュールを再取り付けします。</block>
@@ -13744,7 +13726,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="91ad55857c70fdeac7dcde36de99bfa5" category="paragraph">単一の高可用性（HA）ペアにおける FAS9500 ストレージシステムの主な仕様を確認し、FAS9500 仕様の完全なリストについては<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）を参照してください。</block>
   <block id="985854a195aa686ca6c4432cefb3052f" category="paragraph">FAS9500システムのI/Oモジュールを交換するには、障害が発生したノードをシャットダウンし、I/Oモジュールを取り外して取り付け直し、その後ノードを再起動する必要があります。</block>
   <block id="af54525abc3171fa500a45dd92721714" category="paragraph">RTCバッテリーを交換した後は、コントローラーモジュールを再取り付けする必要があります。RTCバッテリーがコントローラーモジュールから10分以上取り外されたままになっている場合は、時刻と日付をリセットする必要がある場合があります。</block>
-  <block id="5734120d50126564c7154ac7926db380" category="doc">ONTAPシステムキャビネットの機能</block>
   <block id="66474c10be348c1070ece95b6d3ee3b0" category="paragraph">ONTAP ハードウェアシステムキャビネットは、サイドパネル、前面および背面ドア、オプションのボルト固定キット、オプションの相互接続キット、機器用の PDU、および統合ケーブル管理システムで構成されています。</block>
   <block id="e0aa22d805433603bc2d47464941a024" category="paragraph">AFF A150システムのブートメディアを交換する前に、交換を正常に完了するために必要な要件を満たしていることを確認してください。これには、ONTAP リカバリイメージを保存するのに十分なストレージ容量を持つ FAT32 形式の USB フラッシュドライブを用意すること、および無停止交換と停止を伴う交換のどちらを実行するかを把握することが含まれます。</block>
   <block id="8a3c5dbfa53414ab5660114e22494ee3" category="summary">AFF A150 ストレージシステムのコントローラーをシャットダウンして、手動ブートメディア復旧プロセス中のデータ損失を防ぎ、システムの安定性を維持します。</block>
@@ -13994,10 +13975,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="7e60ede96f48b6ba8d0d47f2b8035f4c" category="summary">FAS9500ストレージシステムのコントローラーをシャットダウンして、手動ブートメディア復旧プロセス中のデータ損失を防ぎ、システムの安定性を維持します。</block>
   <block id="77e872222aa64b0ce342d4087f408161" category="doc">AFF A150システムのブートメディアの暗号化サポートを確認する</block>
   <block id="c62860d1247fef919a90aaa84a1dc9e7" category="doc">AFF A150システムのブートメディアの暗号化を復元する</block>
-  <block id="55e63eb194f1607cd9ec28b515055799" category="doc">手動ブートリカバリプロセスを使用してAFF A150システムでリカバリイメージをブートする</block>
-  <block id="65628aac9d8136073fdd8bc9e2bfbf92" category="doc">AFF A150システムのブートメディアの交換要件を確認する</block>
   <block id="6a937e573bf11d96725f27c3c25d5361" category="doc">AFF A150 システムのブートメディアを交換する</block>
-  <block id="acfbef481b6b5af8dd403b385265ac92" category="doc">手動ブートリカバリプロセス中に AFF A150 システムのコントローラをシャットダウンする</block>
   <block id="688c5c62b9824aa9422f308bd0a1eb33" category="doc">AFF A150 システムのシャーシ交換を完了する</block>
   <block id="b27391e479a0b809fae44fd2fd3a0129" category="doc">AFF A150システムのシャーシを交換する</block>
   <block id="4537a3c38c191b1d2767916c8ba78bd8" category="doc">シャーシを交換するためにAFF A150コントローラをシャットダウンする</block>
@@ -14052,9 +14030,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="16b34d7a31dd2ff6fdb1fe6f0c6f750b" category="doc">手動ブートリカバリプロセス中に AFF A20、AFF A30、または AFF A50 システムのコントローラをシャットダウンする</block>
   <block id="52212641e87206abc8d5209e161c6b3c" category="doc">AFF A20、AFF A30、またはAFF A50システムのシャーシ交換を完了する</block>
   <block id="475c74408561352b4a717b25e0d57af5" category="doc">AFF A20、AFF A30、またはAFF A50システムのシャーシを交換する</block>
-  <block id="f5629b7dd61134a1717382dc476f3025" category="doc">シャーシを交換するために AFF A20、AFF A30、または AFF A50 コントローラをシャットダウンする</block>
   <block id="e6b6e212a0094ee9b8cb07a680e14557" category="doc">AFF A20、AFF A30、またはAFF A50システムのコントローラーを交換する</block>
-  <block id="498774ca236117dbc913131881a0fe1c" category="doc">AFF A20、AFF A30、またはAFF A50システムでコントローラーを返却して通常の運用を再開します</block>
   <block id="0f82cd5236663c6e94ef8c7f9728153e" category="doc">AFF A20、AFF A30、またはAFF A50システムのコントローラーの交換を完了する</block>
   <block id="74e6f08c422d59cbb3a512c69842af19" category="doc">AFF A20、AFF A30、またはAFF A50システムでコントローラー構成を復元して検証する</block>
   <block id="4495cc2cb1d64fab3f6960c395b15b0f" category="doc">AFF A20、AFF A30、またはAFF A50システムのファンモジュールをホットスワップする</block>
@@ -14281,7 +14257,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="2a01f144ed587285692ab18f4406a613" category="doc">AFF A700s システムのブートメディアの交換について</block>
   <block id="8331a3d2cf20eaf1f279088099bbe139" category="doc">AFF A700s システムのブートメディアを交換します</block>
   <block id="1111db0e2ab1b6207e3db67bb452facf" category="doc">AFF A700s システムの手動ブートリカバリプロセス中にコントローラをシャットダウンする</block>
-  <block id="96801df09e5a3e391a3bae74eee01769" category="doc">AFF A700s システムでUSBフラッシュドライブを使用してブートイメージをブートメディアに転送する</block>
   <block id="e340650c7f7d03f39f4afed4cb8d24d5" category="doc">AFF A700s システムのシャーシ交換を完了する</block>
   <block id="668633d699fd6e34119395b6686fba8f" category="doc">AFF A700s システムのシャーシを交換する</block>
   <block id="935e6572d8253e599578e98b08dd2797" category="doc">シャーシを交換するためにAFF A700sコントローラをシャットダウンする</block>
@@ -14520,7 +14495,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="28cfe668e93efd2e44043a1364ad0098" category="paragraph">ASA A400 システムで、ハードウェアコンポーネントを障害のあるシャーシから新しいシャーシに移し、コントローラモジュールを再取り付けします。</block>
   <block id="64b432929cd1d8edf489dd556440b946" category="doc">シャーシを交換するために ASA A400 コントローラをシャットダウンする</block>
   <block id="4828f0152cc6fbddee731db2752fef8a" category="doc">ASA A400システムのコントローラーを交換する</block>
-  <block id="93beb3e4f5e34ce500648aed6d65f71a" category="doc">ASA A400システムで通常の運用を再開するためにコントローラーをギブバックする</block>
   <block id="a159d1806f5c50ce4ba418f654f651f1" category="doc">ASA A400 システムのコントローラー交換を完了する</block>
   <block id="d1bf96657c89730167214a4a3dbcaaf0" category="doc">ASA A400システムでコントローラー構成を復元して検証する</block>
   <block id="3b618fe2d7fd571ea3c7ea61ae4a8eed" category="doc">ASA A400 システムの DIMM を交換する</block>
@@ -14547,7 +14521,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8a55044181ae98c3bce1202fc31a4f8d" category="doc">ASA A800シャーシの交換準備</block>
   <block id="66aff38e0c45c6192afd12b9425e8b02" category="doc">シャーシを交換するために ASA A800 コントローラをシャットダウンする</block>
   <block id="b726c8abaf725a57ca5063798a5f72d0" category="doc">ASA A800システムのコントローラーを交換する</block>
-  <block id="074112cff7716e2384de4f56ac4dcff5" category="doc">ASA A800システムでコントローラーをギブバックして通常運用を再開する</block>
   <block id="9afe70815c1bb9558218db27a96294ca" category="doc">ASA A800 システムのコントローラー交換を完了する</block>
   <block id="acd746fd94e32377502cfd6b1169e494" category="doc">ASA A800システムでコントローラー構成を復元して検証する</block>
   <block id="a5228b426deb77ac6fcd882cccd12c5d" category="doc">ASA A800 システムの DIMM を交換する</block>
@@ -14568,7 +14541,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="3f51feafb7d3ea3f3bba91f6dae4014d" category="doc">ASA A900システムにおける手動ブートメディアリカバリの要件を確認する</block>
   <block id="52a3b471da64fbdcfe841b61a64e2249" category="doc">ASA A900 システムの自動ブートリカバリプロセス中にコントローラーをシャットダウンする</block>
   <block id="9a9e79dd633d8c03983caa69e8a9f6be" category="doc">手動ブートリカバリプロセス中に ASA A900 システムのコントローラをシャットダウンする</block>
-  <block id="7685419f9f2518f19b2090b00e0be856" category="doc">ASA A900システムのブートメディアの暗号化サポートを確認します</block>
   <block id="799f2d84ebe68dad2105f4e0946e7ff8" category="doc">手動ブートリカバリプロセスを使用して ASA A900 システムでリカバリイメージをブートする</block>
   <block id="f35af1c226e5a44d8d3e29b690c923b8" category="doc">ASA A900システムのシャーシ交換を完了する</block>
   <block id="fd06cef551af8bddc5fff7deeb37dbc4" category="doc">ASA A900システムのシャーシを交換する</block>
@@ -14577,7 +14549,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="9fb844aa0c8a0553f3f978c58477fedf" category="doc">ASA A900 システムのコントローラー交換を完了する</block>
   <block id="f61a4d5e5ac62fe51dde43be34a35539" category="doc">ASA A900システムでコントローラーをギブバックして通常運用を再開する</block>
   <block id="042dae10de35652f8b5ba6e1b3eed109" category="doc">ASA A900システムでコントローラー構成を復元して検証する</block>
-  <block id="77c241e8dfc2226834a1c7eb941e6e3a" category="doc">ASA A900システムのNVRAM11バッテリーを含むDCPMを交換する</block>
   <block id="c92b313b7ec9b27262d215855edca8eb" category="doc">ASA A900 システムの DIMM を交換する</block>
   <block id="fd038a2bd8ffe91a325eb865fa5a73f8" category="doc">ASA A900システムのファンをホットスワップする</block>
   <block id="59cab780351f226c1acd77ec01bfcbf7" category="doc">詳細な手順を使用してASA A900ストレージシステムをインストールする</block>
@@ -14699,7 +14670,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f7925f2a583752b15a5e8d0ff3154664" category="doc">AFF C400 システムのコントローラー交換を完了する</block>
   <block id="ed3403d3debdf369fb0a3502329d6871" category="doc">AFF C400システムでコントローラー構成を復元して検証する</block>
   <block id="01755578d326613e42a728396cbd8426" category="doc">AFF C400システムのファンモジュールをホットスワップする</block>
-  <block id="40acc01957bd5d7d00371de00f8dd48e" category="doc">詳細な手順書を使用して AFF C400 システムをインストールおよびセットアップする</block>
   <block id="fd94dd82fee559f65c13c3e7216fcb46" category="summary">ラックへの設置、ケーブル配線、および初期システム起動を網羅した図解入りの説明書を使用して、AFF C400システムをインストールおよびセットアップします。</block>
   <block id="76b9c13f0d3b8258f2d7d5b3b7fd8980" category="doc">グラフィック手順を使用した AFF C400 システムのインストールとセットアップ</block>
   <block id="1615ed911deb3b8e0378fd31dcadda09" category="doc">動画の説明を使用して AFF C400 システムをインストールおよびセットアップする</block>
@@ -14753,14 +14723,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="28b125b296bfc6350f71872a44eb2393" category="doc">AFF C800 システムのシャーシ交換の準備をする</block>
   <block id="13dafe725bfe1f5df61f79d3ea3c0d74" category="doc">シャーシを交換するために AFF C800 コントローラをシャットダウンする</block>
   <block id="c6657220770aae9c73d8b991240d2506" category="doc">AFF C800システムのコントローラーを交換する</block>
-  <block id="b3edfe1a6f0c9fb1dcb205b50f0fe8c8" category="doc">AFF C800システムでコントローラーのケーブルを再接続して返却する</block>
   <block id="263470b0b5fa072943ccb67c514d8d5e" category="doc">AFF C800 システムのコントローラー交換を完了する</block>
-  <block id="17cd739adc9922e4ba05f0892b8fd6a7" category="doc">AFF C800システムでコントローラー構成を復元して検証する</block>
   <block id="4b3e388925fb3eea2ceda381953eea9d" category="doc">AFF C800システムのファンを交換する</block>
-  <block id="6f7a6d8655057a0c6fcfeea09a5ad813" category="doc">詳細な手順書を使用して AFF C800 システムをインストールおよびセットアップする</block>
-  <block id="193c1df4a9f36df03b2ff8c639ca3f90" category="doc">グラフィック手順を使用した AFF C800 システムのインストールとセットアップ</block>
   <block id="96c48740677e9b496e17bff2b48d4d23" category="paragraph">AFF C800 ストレージシステムのインストールとセットアップを、クイックステップ、ビデオステップ、詳細ステップなど、お客様のニーズに最適なコンテンツ形式を使用して行います。</block>
-  <block id="dc10af1f670e3b5ffcdcfec0e9087d6d" category="doc">動画の説明を使用して AFF C800 システムをインストールおよびセットアップする</block>
   <block id="495f7f46345313b8ce3cd938da81623e" category="doc">AFF C800ストレージシステムのメンテナンスについて学ぶ</block>
   <block id="12ccd44bd92170c032a49b6f3e37050d" category="doc">AFF C800 システムの NVDIMM バッテリーを交換する</block>
   <block id="6ec214d475fc383f44d96949c756a333" category="doc">AFF C800 システムの NVDIMM を交換する</block>
@@ -14933,7 +14898,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="52b072dce0b3f7b70c0c5ffaff86db5d" category="doc">FAS70またはFAS90システムのシャーシ交換を完了する</block>
   <block id="d0b731a32c4637af395301cff1616bbf" category="doc">FAS70またはFAS90システムのシャーシを交換する</block>
   <block id="0f1bfa979a1a062b26cd789d48fcab88" category="doc">FAS70またはFAS90システムのシャーシ交換の準備</block>
-  <block id="b7768eb4698168e4a00aa8dc8303d46c" category="doc">シャーシを交換するために FAS70 または FAS90 コントローラをシャットダウンする</block>
   <block id="dbfbafb190bd8c02a748792c1095dfcf" category="doc">FAS70またはFAS90システムのコントローラを交換する</block>
   <block id="a825fa370424c42e0d6cd11f14c3ba5e" category="doc">FAS70またはFAS90システムでコントローラをギブバックして、通常の動作を再開します。</block>
   <block id="411005fc2fb14b40c7386390959ff535" category="doc">FAS70またはFAS90システムのコントローラ交換を完了する</block>
@@ -14960,7 +14924,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1b887bad5ccd0037b0e30739aa655c6e" category="doc">FAS2600システムでリカバリイメージを起動する</block>
   <block id="b457987b6e23d0495ffb5f7611137c27" category="doc">FAS2600 システムのブートメディアの交換について</block>
   <block id="591d9073a132b36c9133302a9b8f0ae7" category="doc">FAS2600システムのブートメディアを交換する</block>
-  <block id="12e3e73e402d3c86e91d08796ea3c22b" category="doc">ブートメディアのリカバリ中にFAS2600システムのコントローラをシャットダウンする</block>
   <block id="0434e9d3d8f9a92d992df12fe2b1d576" category="doc">FAS2600システムのキャッシングモジュールを交換する</block>
   <block id="3df76e4791edb795e63d3395da36a016" category="doc">FAS2600システムのシャーシ交換を完了する</block>
   <block id="ff0b2e7f118545bcbb6b0de09ced7cf7" category="doc">FAS2600システムのシャーシを交換する</block>
@@ -14980,8 +14943,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6c68c38d5cffeee6d8cf5b0dd5fd6dfd" category="doc">FAS2600システム用のクラスタ構成ワークシートを使用する</block>
   <block id="a49478ba64ccc3bd429c1441b7888131" category="doc">FAS2600ストレージシステムのメンテナンスについて</block>
   <block id="2cb9e214bd9847bd5e9b83b85187b4ed" category="doc">FAS2600システムのNVMEMバッテリーを交換する</block>
-  <block id="a4a4e39291fab67ca4b5bfb8e0edaa73" category="doc">FAS2600システムで電源ユニットをホットスワップする</block>
-  <block id="824c0483b4d6ee17100fd5e0d751e90b" category="doc">FAS2600システムのリアルタイムクロックバッテリーを交換する</block>
   <block id="3986677af59eed7ff3a3762582b900e0" category="doc">FAS2700システムでブートメディアの暗号化サポートを確認する</block>
   <block id="58473fda1fd8f73a3cc61873d3222f2e" category="doc">FAS2700システムでブートメディアの暗号化を復元する</block>
   <block id="54dc9cfdfa7d91f1131a81825929b7d1" category="doc">FAS2700システムでリカバリイメージを起動する</block>
@@ -15002,8 +14963,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="35da425717980cb046c961c47201ea6f" category="doc">FAS2700システムでドライブをホットスワップする</block>
   <block id="68d6d5ccd8594ef8cb8bc5d67e9d4e3f" category="doc">詳細な手順を使用してFAS2700システムをインストールする</block>
   <block id="fa95e09df0b1097f91bc9f6cf1bee930" category="doc">クイック手順を使用してFAS2700システムをインストールする</block>
-  <block id="f960eb61feb4c1c115a8876e6b78ca5b" category="doc">FAS2700のインストールとセットアップ方法を選択する</block>
-  <block id="8b34d956e94e87a0685990341e9b17eb" category="doc">FAS2700システムのインストールとセットアップビデオを視聴する</block>
   <block id="49354f6ca1c87d6e08256785d50a131a" category="doc">FAS2700ストレージシステムのメンテナンスについて</block>
   <block id="9a5d17c20e21610a8aafad8e6d648ecd" category="doc">FAS2700システムのNVMEMバッテリーを交換する</block>
   <block id="33808676d3b13bb07198c96afb425599" category="summary">電源ユニットの交換には、古い電源ユニットの電源を切り、接続を外し、取り外し、新しい電源ユニットを取り付け、接続し、電源を入れる作業が含まれます。</block>
@@ -15030,7 +14989,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="cea644c38fc26b4118c964dba7768166" category="doc">FAS2820システムのドライブをホットスワップする</block>
   <block id="650bd8b48eb6d3aa9975f0886c305dc1" category="doc">詳細な手順を使用してFAS2820システムをインストールする</block>
   <block id="9e5fe02bc198c42a0b88d7d197984784" category="doc">クイックステップを使用してFAS2820システムをインストールする</block>
-  <block id="592fa18d41cef3f3fb6a4f7301a30172" category="doc">FAS2820のインストールとセットアップ方法の選択</block>
   <block id="bf0b748da400b64bdb1abb8d0a8ccd72" category="doc">FAS2820システムのインストールとセットアップのビデオをご覧ください</block>
   <block id="ab9365b1e0a1eeb4086ed2b8b759ada1" category="doc">FAS2820ストレージシステムのメンテナンスについて学ぶ</block>
   <block id="05a2c1f309e4a47d537c560b799dcf61" category="doc">FAS2820システムのNVMEMバッテリーを交換する</block>
@@ -15043,8 +15001,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="1d5452fa298a54bc2a24db7577749b1c" category="doc">手動ブートリカバリプロセスを使用して、FAS50システムのブートメディアの暗号化を復元する</block>
   <block id="3995e5c15996093fa455f16f2c9bd8ac" category="doc">自動ブートリカバリプロセスを使用して、FAS50システムでリカバリイメージを起動します。</block>
   <block id="2703ae11a7b2b11aa93946ec93cb0333" category="doc">手動ブートリカバリプロセスを使用して、FAS50システムでリカバリイメージを起動します</block>
-  <block id="39ca41ee05d70d8d7f736eaf3b21c996" category="doc">FAS50システムにおける自動ブートメディアリカバリの要件を確認する</block>
-  <block id="a19ea697fe3833b1c6f159d5ca5ce6d6" category="doc">FAS50システムにおける手動ブートメディア復旧の要件を確認する</block>
   <block id="881878007ffdc09eef3a70c814778d65" category="doc">自動ブートリカバリプロセス中にFAS50システムのコントローラをシャットダウンする</block>
   <block id="a949c31353f793cba86c2939add8eb69" category="doc">手動ブートリカバリプロセス中にFAS50システムのコントローラをシャットダウンする</block>
   <block id="22236e322f3e9dfdd94a8095dd2d8af7" category="doc">FAS50システムでキャッシュモジュールをホットスワップする</block>
@@ -15053,7 +15009,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="972e00e16ac6f05ddd86e3aff8c7d5a9" category="doc">FAS50システムでシャーシを交換する準備をする</block>
   <block id="870e10fb786126f07de662fbe54f90e9" category="doc">シャーシを交換するためにFAS50コントローラをシャットダウンします</block>
   <block id="2c1493c207afe21f05fe5dc1be0537ef" category="doc">FAS50システムのコントローラを交換する</block>
-  <block id="5eab48858187cdfc060ba28cd6c82434" category="doc">FAS50 システムでコントローラーを返却して、通常の動作を再開します。</block>
   <block id="49b80cf5f219dd90c21f1696f739da48" category="doc">FAS50システムのコントローラー交換を完了する</block>
   <block id="aa2913561d4aa35dfcc9e4e0abb22917" category="doc">FAS50システムでコントローラ構成を復元および検証する</block>
   <block id="456f7f3e0c3d440c46a11022c8e83d8f" category="summary">修正可能なメモリエラーまたは修正不可能なメモリエラーが過剰に検出された場合は、FAS50ストレージシステムのDIMMを交換してください。このようなエラーが発生すると、ストレージシステムがONTAPを起動できなくなる可能性があります。交換プロセスには、障害のあるコントローラをシャットダウンし、取り外し、DIMMを交換し、コントローラを再取り付けし、故障した部品をNetAppに返却することが含まれます。</block>
@@ -15065,7 +15020,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="0a24631873ddda16ba3b5da26773e8c8" category="doc">FAS50ハードウェアをキャビネットまたはラックに取り付ける</block>
   <block id="e6cafc6e67881458d17b1a923027f393" category="doc">FAS50ストレージシステムの電源をオンにする</block>
   <block id="f2b4734072bc1f269202373cdf9ac873" category="doc">FAS50ストレージシステムの設置準備</block>
-  <block id="983d8a8605178cffa2ebc07ca706f61c" category="doc">FAS50ストレージシステムの設置要件を確認する</block>
   <block id="63c046f71a970069d835e78815f83b7d" category="doc">FAS50システムにI/Oモジュールを追加する</block>
   <block id="b90c708522545f875bf6b160abea8da8" category="doc">FAS50システムでI/Oモジュールをホットスワップする</block>
   <block id="49fcd5cb41873b7d8b5dcf4c73a50360" category="doc">FAS50システムにおけるI/Oモジュールの追加と交換について</block>
@@ -15078,8 +15032,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f96f6e4da7fb02ceec4124ff41ce9a9d" category="doc">手動ブートリカバリプロセス後に FAS500f システムのブートメディアの暗号化を復元する</block>
   <block id="81d3d70c9551524e9dc34280d7e46dbf" category="doc">自動ブートリカバリプロセスを使用して FAS500f システムでリカバリイメージをブートする</block>
   <block id="e5c901e587061db9be3b95576d66c72b" category="doc">手動ブートリカバリプロセスを使用して FAS500f システムのリカバリイメージを起動する</block>
-  <block id="1009d38c60f6a5b0d8a8c029a49518cd" category="doc">FAS500f システムにおける自動ブートメディアリカバリの要件を確認する</block>
-  <block id="abc31b51f27c56d6583a3603e20bf420" category="doc">FAS500f システムにおける手動ブートメディアリカバリの要件を確認する</block>
   <block id="fcac36c80955afd2857cbae7f3e33748" category="doc">自動ブートリカバリプロセス中に FAS500f システムのコントローラーをシャットダウンする</block>
   <block id="12e2f88d8189c43b6fce5e3c4bdf2f37" category="doc">手動ブートリカバリプロセス中に FAS500f システムのコントローラーをシャットダウンする</block>
   <block id="480d899f1dc5ac12abd82f64c9422af7" category="doc">FAS500f システムのシャーシ交換を完了する</block>
@@ -15088,7 +15040,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="091d119c4567ea6a255a2ea430bc30fe" category="doc">シャーシを交換するために FAS500f コントローラーをシャットダウンする</block>
   <block id="e39d70dd19d7efd6470e90084a310e4f" category="doc">FAS500f システムのコントローラーを交換する</block>
   <block id="2690773fde10f47adc3ccb720b6a58a2" category="summary">ストレージリソースの制御を交換用コントローラに戻して、FAS500f システムが通常の動作を再開できるようにします。</block>
-  <block id="85b1aea7890b699ddd68216d08632e5b" category="doc">FAS500f システムのコントローラーを返却して通常運用を再開する</block>
   <block id="385f24f4ab0cb372ac520299897f4ca3" category="paragraph">ストレージリソースの制御を交換用コントローラに戻すと、FAS500f システムは通常動作を再開できます。システム構成の復元と検証が完了したら、システムのケーブルを再接続し、ディスクを再割り当てしてください。</block>
   <block id="abbd31a8ec4a712f2cd33dcde8b9e700" category="doc">FAS500f システムのコントローラー交換を完了する</block>
   <block id="25debe63c998c6c2032668c7bd37638d" category="doc">FAS500f システムでコントローラー構成を復元して検証する</block>
@@ -15108,7 +15059,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="4724d795f52e0093841c4933339b611b" category="doc">FAS8200システムの2ノードMetroCluster構成でアグリゲートをスイッチバックする</block>
   <block id="c01f60e95a24a7d6ab30023b4d818b07" category="doc">FAS8200 システムのブートメディアの暗号化サポートを確認する</block>
   <block id="2db51a58ba499d9176ce5c80f25aa11e" category="doc">FAS8200 システムのブートメディアの暗号化を復元する</block>
-  <block id="a796ae1961743f68bd47652fbac3af57" category="doc">FAS8200 システムでリカバリイメージを起動する</block>
   <block id="db71eeaef90f51f499476d496e59f6ba" category="doc">FAS8200 システムのブートメディアの交換について</block>
   <block id="1137c105afe8c49fbf06924d66ceac6d" category="doc">FAS8200 システムのブートメディアを交換する</block>
   <block id="253dd000970aa0d8ba4193814f3f0908" category="doc">手動ブートリカバリプロセス中に FAS8200 システムのコントローラーをシャットダウンする</block>
@@ -15139,8 +15089,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="cf811b16f9ff31641cb4dab24409ada7" category="doc">FAS8300またはFAS8700システムで手動ブートリカバリプロセス後にブートメディアの暗号化を復元する</block>
   <block id="607fcc987cd9c2748b91dd79ca253f63" category="doc">自動ブートリカバリプロセスを使用して FAS8300 または FAS8700 システムでリカバリイメージをブートする</block>
   <block id="0f274b7d6d6859427ca3492375e0a76e" category="doc">手動ブートリカバリプロセスを使用して FAS8300 または FAS8700 システムでリカバリイメージをブートする</block>
-  <block id="8ec3d1b3dc37303f25e679c08c6c4c56" category="doc">FAS8300またはFAS8700システムにおける自動ブートメディアリカバリの要件を確認する</block>
-  <block id="5c9230d4452b4beb12d90d2385627164" category="doc">FAS8300またはFAS8700システムにおける手動ブートメディアリカバリの要件を確認する</block>
   <block id="d17bd9c7aae2054d46726ebe654be63f" category="doc">自動ブートリカバリプロセス中に FAS8300 または FAS8700 システムのコントローラをシャットダウンする</block>
   <block id="1990b81e237bc7ec359ae3cc88d3d13b" category="doc">手動ブートリカバリプロセス中に FAS8300 または FAS8700 システムのコントローラをシャットダウンする</block>
   <block id="fbd3f5c1b0137fa27f196aeb989a86dc" category="doc">FAS8300またはFAS8700システムのキャッシュモジュールを交換する</block>
@@ -15148,7 +15096,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="a0e62501a00665a76eabb4b011abbb2a" category="doc">FAS8300またはFAS8700システムのシャーシを交換する</block>
   <block id="8abf9d49dd5fb355dcbbccb5a89c651e" category="doc">シャーシを交換するために FAS8300 または FAS8700 コントローラをシャットダウンする</block>
   <block id="f358bf0a2f5f0dc2b9152c5eb5b68c9b" category="doc">FAS8300またはFAS8700システムのコントローラーを交換する</block>
-  <block id="eccadb6486f93b0ec3929e4295e90236" category="doc">FAS8300またはFAS8700システムで通常運用を再開するためにコントローラーをギブバックする</block>
   <block id="56c2480bbb6102ed6b9dced55bd639f9" category="doc">FAS8300またはFAS8700システムのコントローラーの交換を完了する</block>
   <block id="2fd600090a751320a8067d0215775719" category="doc">FAS8300またはFAS8700システムでコントローラー構成を復元して検証する</block>
   <block id="89bf9eb39bb3cc717358aa4b436e494c" category="summary">ストレージシステムで、過剰な訂正可能ECCメモリエラーや訂正不能ECCエラーなどのエラーが発生した場合は、コントローラ内のDIMMを交換する必要があります。これらのエラーは通常、単一のDIMMの故障によって発生し、ストレージシステムによるONTAPの起動を妨げます。</block>
@@ -15215,12 +15162,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="2d4a1ecb0656e11651445135ef47dc3c" category="summary">FAS9000システムでサービスを中断することなく電源ユニットをホットスワップします。この手順には、古い電源装置の電源を切り、接続を外し、取り外すこと、そして交換用の電源装置を取り付け、接続し、電源を入れることが含まれます。</block>
   <block id="8e4d2b600acd3ac1d3086c3860f74c15" category="doc">FAS9000システムの電源ユニットをホットスワップする</block>
   <block id="3921a2c62a3f56ae8559cfac07dc33ff" category="summary">FAS9000 システムのコントローラーモジュール内のリアルタイムクロックバッテリーを交換することで、正確な時刻同期に依存するサービスやアプリケーションが引き続き機能するようにします。</block>
-  <block id="7bea08a9e19ad6c71824116d06b06fa2" category="doc">FAS9000 システムのリアルタイムクロックバッテリーを交換する</block>
   <block id="282beabff48471d02dd0a9e5a417dd60" category="paragraph">FAS9000 システムのコントローラーモジュール内のリアルタイムクロック（RTC）バッテリーを交換して、正確な時刻同期に依存するサービスやアプリケーションが引き続き機能するようにします。</block>
   <block id="b89ec8d204634ce1402ad395d0e8a21d" category="summary">X91148AモジュールをFAS9000システムに追加するには、既に部品が実装されているシステムでNICまたはストレージアダプタを新しいものと交換するか、空いているシャーシスロットに新しいNICまたはストレージアダプタを追加します。</block>
-  <block id="222af1987cba2e77d0589122a7fbdaae" category="doc">X91148AモジュールをFAS9000システムに追加する方法について</block>
   <block id="3cc4a19284bc8b75b02bd8aee220fb22" category="summary">完全に実装された FAS9000 システムから既存の NIC またはストレージモジュールを 1 つ以上取り外して、1 つ以上の X91148A ストレージモジュールをインストールします。</block>
-  <block id="02d30ccd409d971529e4ce34becc6306" category="doc">すべてのスロットが使用されている場合にX91148AストレージモジュールをFAS9000システムに追加する</block>
   <block id="4eb4209c4ed74e862a15cdf81371ebe8" category="summary">FAS9000システムの空のモジュールスロットに、100GbE NICまたはNS224ストレージシェルフ用ストレージモジュールとして、X91148Aモジュールを追加します。</block>
   <block id="dec34dff58116feee568458333c13074" category="doc">X91148AモジュールをFAS9000システムの空きスロットに追加する</block>
   <block id="822c45d446bafb64d30d43ccd6641b2c" category="doc">I/OモジュールをFAS9500システムに追加する</block>
@@ -15229,8 +15173,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="458f8f1699087bc585e7735c5bfac540" category="doc">FAS9500 システムで手動ブートリカバリプロセス後にブートメディアの暗号化を復元する</block>
   <block id="087d0ab0c9289d6b48aa1305610b9d1a" category="doc">自動ブートリカバリプロセスを使用して FAS9500 システムでリカバリイメージをブートする</block>
   <block id="a090a9140b59f7d8b30dcda30f991081" category="doc">手動ブートリカバリプロセスを使用して FAS9500 システムでリカバリイメージを起動する</block>
-  <block id="195916b5ffbfe42dcebe0a8b94478681" category="doc">FAS9500システムにおける自動ブートメディアリカバリの要件を確認する</block>
-  <block id="574039df747795db0321d6927e026678" category="doc">FAS9500 システムにおける手動ブートメディアリカバリの要件を確認する</block>
   <block id="826e21bb8f9933627635b3339aefe9cf" category="doc">自動ブートリカバリプロセス中に FAS9500 システムのコントローラーをシャットダウンする</block>
   <block id="319cbfe86723e5e264dc2bb52b81faa2" category="doc">手動ブートリカバリプロセス中に FAS9500 システムのコントローラーをシャットダウンする</block>
   <block id="6085a595dbc005028cd5699a485d389c" category="doc">FAS9500システムでキャッシュモジュールをホットスワップする</block>
@@ -15498,7 +15440,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="2e958160ddb960bf9a8212020c63e8a4" category="doc">AFF C250システムでコントローラーを交換するための要件を確認します</block>
   <block id="a14abca33f31e880e45b51448e160f5a" category="doc">AFF C250システムで障害のあるコントローラーをシャットダウンする</block>
   <block id="c32acaf1886b1043c34b4b422fe7d54a" category="doc">AFF C250 システムの DIMM を交換する</block>
-  <block id="435fef3a56aa8d9c1df074da7c748a7f" category="doc">AFF C250システムのSSDのホットスワップ</block>
   <block id="65fd91fea777bff5023bc13ed86a36ea" category="paragraph">AFF C250システムで障害ドライブをホットスワップし、I/O処理中もシステムを中断させずに動作させます。</block>
   <block id="c4fa6b139e7754ef9468873c03146f0a" category="doc">AFF C250システムの主な仕様</block>
   <block id="6bb676a8216018353662982b0514357d" category="doc">自動ブートリカバリプロセス中に AFF C30 または AFF C60 システムのブートメディアを交換する</block>
@@ -15680,4 +15621,65 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="dfe9112790d09e7b6b0e61cc72aba9d4" category="sidebar">AFF A700空きスロットのないシステム</block>
   <block id="8d77e37cb58d140158a1ddafaadb659a" category="sidebar">シャーシの概要</block>
   <block id="bbcce8e36885580102fe78ece6a5936a" category="sidebar">空きスロットのないシステムへの X91148A モジュールの追加</block>
+  <block id="4974d1d68f1f5751ab2cab7615ee0b6e" category="doc">AFF A150 システムでリカバリイメージをブートします</block>
+  <block id="e0474f90358917d163b90761b21fc8a6" category="doc">AFF A150システムのブートメディアを交換するための要件を確認します</block>
+  <block id="6b3d7723930a5d5c499f6bbdf32fb84c" category="doc">AFF A150 システムのコントローラーをシャットダウンする</block>
+  <block id="d623bd5bf274a1905ce130ef48674109" category="doc">シャーシを交換するために AFF A20、AFF A30、または AFF A50 コントローラをシャットダウンする</block>
+  <block id="b5ca9b2d002e0c2340fa33ee4ab86368" category="doc">AFF A20、AFF A30、またはAFF A50システムでコントローラーを返却する</block>
+  <block id="6e2dd8dffef6a2fd7ec926a02d45c8cd" category="doc">AFF A700s システムのブートメディアへのブートイメージの転送</block>
+  <block id="fa8a2e26b1abdbf50abd090b331cf664" category="doc">ASA A400 システムでコントローラーを返却する</block>
+  <block id="d22502c006cc64728ccf0ee4a7cc180d" category="doc">ASA A800 システムでコントローラーを返却する</block>
+  <block id="86c93166fd8e988c76fc29c5c275fdac" category="doc">ASA A900 システムでの手動ブートリカバリプロセスを使用したブートメディアの暗号化サポートの確認</block>
+  <block id="41efbe634732e37f4c6cc6e47bed6a0a" category="doc">ASA A900システムのDCPMモジュールを交換する</block>
+  <block id="46f4fb4233f418426f930274e802f9a2" category="doc">AFF C250システムのドライブをホットスワップする</block>
+  <block id="a477f1342caef4c6105a77677aaad41a" category="doc">詳細な手順を使用してAFF C400システムをインストールする</block>
+  <block id="7421b083591a1e83d04acab2dedbd1ce" category="paragraph">ラックへの設置やケーブル接続から初期システム起動まで、ステップバイステップの手順に従って AFF C400 ストレージシステムをインストールおよびセットアップします。</block>
+  <block id="089b61741df9aec375723ca8fabd05e6" category="doc">AFF C800 システムでコントローラーを返却する</block>
+  <block id="86dfab1d0524f3af34bfd19d2792ac64" category="doc">AFF C800システムのシステム構成を復元して検証する</block>
+  <block id="e99b506a7f112ee8be5d6162e2b40c5e" category="doc">詳細な手順を使用して AFF C800 システムをインストールおよびセットアップする</block>
+  <block id="ab7192484a2ffc71336d7b98445bfb04" category="doc">グラフィック手順を使用したAFF C800システムのインストール</block>
+  <block id="9563887009ddc79d5cde510c275e0de0" category="doc">AFF C800システムを動画の説明を使用してインストールする</block>
+  <block id="8dc64d43e2783724961d5523e7b12289" category="doc">シャーシを交換するために FAS70 または FAS90 コントローラをシャットダウンする</block>
+  <block id="c3354a7d715a8827a6a086244b011277" category="doc">ブートリカバリプロセス中にFAS2600システムのコントローラをシャットダウンする</block>
+  <block id="da5b4dca4c04377dde753992f7961b63" category="doc">FAS2600システムで電源ユニットをホットスワップする</block>
+  <block id="abfd786ff21d96ae2c5e7a83fcbb9bf3" category="doc">FAS2600システムのRTCバッテリーを交換する</block>
+  <block id="347ca1965792d437cd2e37c0e30b0182" category="doc">FAS2700 ストレージシステムのインストール方法を選択してください</block>
+  <block id="bf3c4b57d1ae46c1b5e5c0cd11d9d4d3" category="doc">動画の説明を使用してFAS2700システムをインストールする</block>
+  <block id="9cd80467b0e6ab919ab90756ccc839ca" category="doc">FAS2820 ストレージシステムのインストール方法を選択してください</block>
+  <block id="a44a6fc61c54e8e0583b279d458f555e" category="doc">FAS50システムにおける自動ブートメディアリカバリの要件を確認する</block>
+  <block id="5f4524ce8a52ded91ffcf32ac158ddf2" category="doc">FAS50システムにおける手動ブートメディアリカバリの要件を確認する</block>
+  <block id="fa2d59f85a5b5d8b03c66b34b6894a83" category="doc">FAS50システムでコントローラーを返却する</block>
+  <block id="21a590b1f3d712f3faad6122ec68bb09" category="doc">FAS50ストレージシステムの設置要件を確認します。</block>
+  <block id="668acba44abfa6d4a1cdd5949980e367" category="doc">FAS500f システムにおける自動ブートメディアリカバリの要件を確認する</block>
+  <block id="e7e3dacdd36bee30bc80b2fa619774d1" category="doc">FAS500f システムでの手動ブートメディアリカバリの要件を確認する</block>
+  <block id="1c6b8b355a4705cb890bca3394d862b8" category="doc">FAS500fシステムでコントローラーをギブバックする</block>
+  <block id="6fc3a4125410f2c87a19afde813d0b3b" category="doc">手動ブートリカバリプロセスを使用して FAS8200 システムでリカバリイメージを起動する</block>
+  <block id="3ded6073b02891d7630b0885e246f67f" category="doc">FAS8300またはFAS8700システムにおける自動ブートメディアリカバリの要件を確認する</block>
+  <block id="066e589860863f1b5b0990e0eb55a26a" category="doc">FAS8300またはFAS8700システムにおける手動ブートメディアリカバリの要件を確認する</block>
+  <block id="de7c80eab8b43253b81066c8d54c303d" category="doc">FAS8300またはFAS8700システムでコントローラーをギブバックする</block>
+  <block id="18759ef44d8091ddfddf4aea1ba4f9a2" category="doc">FAS9000システムのRTCバッテリーを交換する</block>
+  <block id="33e6ac4a4f35be5bf14be58d65642869" category="doc">X91148AモジュールをFAS9000システムに追加する方法について</block>
+  <block id="1949bb7fb58f80a4315c95f64c31bdcc" category="doc">完全に実装された FAS9000 システムへの X91148A ストレージモジュールの追加</block>
+  <block id="df4145aa60dc03515523b1f3c8da9e56" category="doc">FAS9500 システムにおける自動ブートメディアリカバリの要件を確認する</block>
+  <block id="d92dbb9fbf5415aa8abb6325d687fe75" category="doc">FAS9500システムにおける手動ブートメディアリカバリの要件を確認する</block>
+  <block id="ade554b9dd3913961cccafe3afa99fba" category="doc">プラットフォームファミリー別のI/Oモジュール交換手順</block>
+  <block id="f795e413d29d9debf161122a22f214c0" category="doc">ONTAPハードウェアシステムキャビネットの機能</block>
+  <block id="5cc9f83899a6c580e3108fb3c4a0f556" category="doc">ONTAPハードウェアシステムキャビネットに追加のサポートレールを取り付ける</block>
+  <block id="fe265017b8491cba6934c7b98a0d05fb" category="doc">ボルトダウンキットをONTAPハードウェアシステムキャビネットに取り付ける</block>
+  <block id="39a2eeae669afc9be33ba6b43e4c1ed5" category="doc">ONTAP ハードウェアシステムキャビネット用キャビネット相互接続キットを取り付ける</block>
+  <block id="0d08902b99fdc7b92d532b3441abdd05" category="doc">機器をONTAPハードウェアシステムキャビネットに設置する</block>
+  <block id="088b04b793faf327753a260138e7c61e" category="doc">ONTAP ハードウェアシステムキャビネットのインストールについて</block>
+  <block id="582e7086ed20d12fe8daa1d1ecd0bd6d" category="doc">ONTAP ハードウェアシステムキャビネットでバッジの電源とケーブルを移動する</block>
+  <block id="3ddeea559c213d9f6ee6bc9afef7294a" category="doc">ONTAP ハードウェアシステムキャビネットの電源をオンにする</block>
+  <block id="c0c2df1df0384016fe2787d45f3570e4" category="doc">ONTAPハードウェアシステムキャビネットのドアと照明付きバッジを再取り付けします</block>
+  <block id="78ff5bf0a3caa11f8bc0bffd4407990c" category="doc">ONTAPハードウェアシステムキャビネットドアの取り外し</block>
+  <block id="b74f554391eb5bd12637539b3b43882b" category="doc">ONTAPハードウェアシステムキャビネットから点灯しているバッジを取り外す</block>
+  <block id="1d71776e5fe39ab54c0ef3378d8124f5" category="doc">ONTAPハードウェアシステムキャビネットのPDUを交換する</block>
+  <block id="75bec75cf89863af53127aeba9031646" category="doc">ONTAPハードウェアシステムキャビネットに必要な工具と機器</block>
+  <block id="91ba7bd4f6ef36d3da4c83b19b649983" category="doc">ONTAPハードウェアシステムキャビネットの前面ドアを逆向きに取り付ける</block>
+  <block id="10f17d4703a2b0cf97622d032b4cf379" category="doc">ONTAP ハードウェアシステムキャビネットドアのヒンジとロックキャッチを反転させる</block>
+  <block id="fc3c0ff0828c3fdf86f57f3e72f3cf31" category="doc">スペース要件とONTAPハードウェアシステムキャビネットの寸法</block>
+  <block id="a0d51b97ecebc4a2164c80e9993b43b7" category="doc">サポートされているPDUタイプと仕様（ONTAPハードウェアシステムキャビネット用）</block>
+  <block id="d4f15e3529c28c34230d8c8c8157f378" category="doc">ONTAPハードウェアシステムキャビネットを開梱する</block>
+  <block id="4fce94ed1c415c154afd3821b10ac5ec" category="doc">ONTAP ハードウェアシステム用の SuperRail キットを4ポストラックに取り付ける</block>
 </blocks>
