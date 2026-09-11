@@ -102,7 +102,6 @@
   <block id="462ec873925d8409f9ead354ff424e1b" category="list-text">論理インターフェイスがホームサーバとポートに報告されていることを確認します。「 network interface show -is-home false 」</block>
   <block id="bfe787834fd9e46156b1d62f2f5029f8" category="list-text">システムのシリアル番号をネットアップサポートに登録します。</block>
   <block id="523f153f577513ed6f7ddd1f4d6a7cac" category="list-text">AutoSupport が有効になっている場合は、 AutoSupport メッセージを送信してシリアル番号を登録します。</block>
-  <block id="69d8be94d5b9ba35360160c6e3097920" category="list-text">AutoSupport が有効になっていない場合は、を呼び出します<block ref="201cec37350c6561a61e79fe67dd46bf" category="inline-link-rx"></block> をクリックしてシリアル番号を登録します。</block>
   <block id="073b364a34edc88074c1df13d44748dc" category="list-text">自動ギブバックを無効にした場合は、再度有効にします。「 storage failover modify -node local-auto-giveback true 」</block>
   <block id="95275f416abb0ceec250662ff9b425ed" category="section-title">手順 4 ：障害が発生したパーツをネットアップに返却する</block>
   <block id="6f00135662159734f14958c139370d97" category="summary">交換用手順の前提条件を確認し、ご使用の ONTAP オペレーティングシステムのバージョンに適したバージョンを選択する必要があります。</block>
@@ -8155,7 +8154,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8019bdcaff5849ab8015533c8674f305" category="paragraph">各コントローラを両方のNS224シェルフのNSMモジュールにケーブル接続します。図は、コントローラAのケーブル配線を青で示し、コントローラBのケーブル配線を黄色で示しています。</block>
   <block id="546125971d4fce23d0f562118f0ce95f" category="open-title">オプション3：DS460Cシェルフ×2</block>
   <block id="8994222dc8e3118b755e00531cef6a1c" category="paragraph">各コントローラを両方のDS460CシェルフのIOMモジュールにケーブル接続します。図は、コントローラAのケーブル配線を青で示し、コントローラBのケーブル配線を黄色で示しています。</block>
-  <block id="98aab8017242eea1d6e23ba928b20ae5" category="list-text"><block ref="98aab8017242eea1d6e23ba928b20ae5" category="inline-link-macro-rx"></block></block>
   <block id="4e3c3284590d1aa1440e67b3bd65ba6e" category="list-text"><block ref="4e3c3284590d1aa1440e67b3bd65ba6e" category="inline-link-macro-rx"></block></block>
   <block id="370d2e6f20948d3881708f9706576691" category="sidebar">交換の準備</block>
   <block id="7e8bda9aef5e8fb9e3018b4afe5250d1" category="list-text">EKMの場合は、パートナーノードから次のファイルのコピーが必要です。</block>
@@ -11301,8 +11299,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="88cf8f1d92159c3cdea53a734f1d7a26" category="paragraph">故障したAFF C80コントローラを交換した後は、<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block> 。</block>
   <block id="345fb173829c711fcd65d0471db9547b" category="paragraph">AFF C80 システムの I/O モジュールに障害が発生した場合、またはより高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、モジュールを交換します。交換プロセスには、コントローラのシャットダウン、障害のあるI/Oモジュールの交換、コントローラの再起動、そして障害のある部品のNetAppへの返送が含まれます。この手順は、ストレージ システムでサポートされているすべてのバージョンのONTAPで使用できます。</block>
   <block id="cf99c258aade4f04e63c51a37a560c71" category="paragraph">不揮発性メモリに障害が発生した場合、またはアップグレードが必要な場合は、 AFF C80 システムのNVRAM を交換してください。交換プロセスには、障害のあるコントローラのシャットダウン、コントローラを数インチ引き抜いて電源を完全に切断すること、 NVRAMモジュールまたはNVRAM DIMM を交換すること、ディスクを再割り当てすること、および障害のある部品をNetAppに返却することが含まれます。</block>
-  <block id="3898e1d169485951c2a49a4a69789502" category="sidebar">ASAシステムのインストールとセットアップ</block>
-  <block id="10b7e05447c2dbec670e886811f71bcb" category="sidebar">ASAシステムの保守</block>
   <block id="c239ad11021e49c97ea2bf8272c6588a" category="paragraph">このプロセスは、パートナー ノードから適切なファイルを復元し、ノードを再起動しようとします。次の手順に進みます。</block>
   <block id="774ee8b1398c2f16e1d77ddac27a50b0" category="inline-xref">自動ギブバックを再度有効にする</block>
   <block id="d3218fd897781ec8a86658de26e1ddf1" category="list-text">へ移動 <block ref="7aacd8b9a7e4a74d04304c7c616e940e" category="inline-xref-macro-rx"></block> 無効になっていた場合。</block>
@@ -13087,8 +13083,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="006a0aef44a1bb691e9f644d1926371a" category="sidebar">ONTAP ASA C シリーズシステムは、データセンター内の重要なエンタープライズアプリケーション向けにカスタマイズされた、対費用効果の高い高密度フラッシュ テクノロジのストレージソリューションを提供します。</block>
   <block id="f448eec7530f30238deeb7ca09ca08e9" category="sidebar">ONTAP ASA C-Seriesシステム</block>
   <block id="f0cd4cc041c2ccdc2d72f5a039979218" category="sidebar">ストレージシステムのドキュメントでは、ONTAP ASA C-Series システムのインストール、セットアップ、およびメンテナンスを行うことができます。</block>
-  <block id="ca646f85328c55542ec98da8c23da4d7" category="sidebar">ONTAP ASA システムは、FCP または iSCSI プロトコルを使用して、企業のミッションクリティカルなデータベースやその他の SAN ワークロードに継続的なデータ可用性を提供する、シンプルで専用の SAN エクスペリエンスを実現します。</block>
-  <block id="f94409f7a4264c1d1b67dc1dae9ed979" category="sidebar">ONTAP ASA システム</block>
   <block id="31d02e17d6f4955e62ee34e8f375593c" category="sidebar">ONTAP ASA r2 システムの主要なハードウェアの仕様を確認してください。詳細な仕様をご覧になるには、下記からお使いのプラットフォームを選択してください。</block>
   <block id="ace8b1e16ed586fc025071917e7ada76" category="sidebar">ONTAP ASA r2システムの主な仕様</block>
   <block id="2b5c7860c45fbda4f791baa717f7406c" category="sidebar">ONTAP ASA r2 A1K、A70、A90、A20、A30、およびA50システムの主な仕様について説明します。</block>
@@ -13096,7 +13090,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="c765d0e07cb0eb6f3c1d05edb0ddec3b" category="sidebar">ONTAP ASA r2 システムのメンテナンス</block>
   <block id="95d8b2944144fc1dea9bb18dfd4bcab6" category="sidebar">ONTAP ASA r2 システムのメンテナンス方法について説明します。</block>
   <block id="46bf8af591b2eda39968cb80a0f47b49" category="sidebar">提供終了の ONTAP ハードウェアシステムは販売終了となりましたが、サポートは継続されています。</block>
-  <block id="e3100a1ed15b6e04bfa241435608c305" category="sidebar">ONTAPハードウェアシステムの提供終了</block>
   <block id="16b1cc12b78f6d1dcc110d94859b49e4" category="sidebar">ストレージシステムのドキュメントでは、ONTAP ハードウェアシステムのインストール、セットアップ、およびメンテナンスを行うことができます。</block>
   <block id="26762e33a00f4bd9df870ba0826976fe" category="sidebar">ONTAP ハードウェアシステムのシステムコンポーネント交換リファレンス</block>
   <block id="0104e66d9e929de2c820eda8a168d62f" category="doc">障害が発生した AFF A200 ブートメディアを NetApp に返却する</block>
@@ -13495,7 +13488,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="26f692511332eb8a8c46cde212670b50" category="admonition">初回起動には最大8分かかる場合があります。</block>
   <block id="842fdbb17f378e39c5d026c1d0241d75" category="list-text">図または手順を使用して、構成するストレージシステムノードを検出します。</block>
   <block id="b1375c0a5eb317dec19cb1588768cd82" category="list-text">左側のペインで「ネットワーク」を右クリックし、「更新」を選択します。</block>
-  <block id="b759fa52fabc1d89d76df0334748bdc2" category="list-text">選択<block ref="47d83efabc4122be28a80bdea228d0a5" category="inline-link-rx"></block></block>
   <block id="9e7d792ddf8505940beb1c9535d35ee3" category="list-text">アカウントを作成する必要がある場合、またはアカウントにログインする場合は、「アカウント作成」を選択してください。</block>
   <block id="8dd4868355d21e4201d5f6312ccdcf2f" category="list-text"><block ref="d0fb50e606c7cb2fa74e99fa5a3520a8" category="inline-xref-macro-rx"></block>で収集したデータを使用して、ストレージシステムを設定します。</block>
   <block id="dda5c0a3cc3bfed1a3c6bd195954d71f" category="summary">このガイドでは、FAS2820システムのインストール手順を図解で説明します。ラックへの設置とケーブル配線から初期システム起動まで、順を追って説明します。</block>
@@ -14746,13 +14738,10 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="274783e4c9519d6e916e56a3cf4668b5" category="doc">AFF A700sストレージシステムのインストール方法を選択してください</block>
   <block id="45bc957c869f2f300b10f32fa7b6b0bb" category="doc">AFF A900システムのDCPMモジュールをホットスワップする</block>
   <block id="e98bdae8da84c5676493dd607a729deb" category="paragraph">AFF A900システムの電源ユニットが故障したり、不具合が生じたりした場合は、ホットスワップを行ってください。電源装置は冗長でホットスワップ対応のため、この交換作業を行うためにコントローラーをシャットダウンする必要はありません。</block>
-  <block id="efc9a5938fda5ed50d2f5f5241924dec" category="doc">AFX 1Kストレージシステムをインストールしてセットアップする</block>
   <block id="e4ac995c054eac52cadbd3879943fa29" category="doc">自動ブートリカバリプロセスを使用して、AFF A1Kシステムでリカバリイメージをブートします。</block>
-  <block id="d98bf0bdec0e5b1623e19177b77bccb9" category="doc">AFX 1Kシステムにおける自動ブートメディアリカバリの要件を確認する</block>
   <block id="1709008a9441435e032e5515637baaaa" category="doc">AFF A1Kシステムで自動ブートリカバリプロセス中にコントローラをシャットダウンする</block>
   <block id="1cf079175d8c51ae4d882b569de2b842" category="doc">AFF A1Kシステムのシャーシ交換を完了する</block>
   <block id="5208f118595d995f31abb89fc26ad1da" category="doc">AFX 1Kシステムのシャーシを交換する</block>
-  <block id="b657cd45a1f1b70458977b03547ac662" category="doc">AFX 1Kシャーシの交換準備</block>
   <block id="f0e2ddc53dde528f7a98f4f940c4dc5b" category="doc">シャーシを交換するためにAFX 1Kコントローラーをシャットダウンします</block>
   <block id="19020709050dc2f86d35da4dd00394a1" category="doc">AFX 1Kシステムのコントローラーを交換する</block>
   <block id="676b5e1e4f790332d891111042ab81b9" category="doc">AFX 1Kシステムでコントローラーを返却する</block>
@@ -14770,12 +14759,10 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="6befef2beb7e8511ae8624712db1017e" category="doc">AFX 1Kシステム内のシステム管理モジュールを交換する</block>
   <block id="beeb0855a5513cdd5e0028ae3dc0552d" category="doc">AFX 2Kストレージシステムをインストールしてセットアップする</block>
   <block id="8e36303970ba7d3956f3abcccba9a642" category="doc">自動ブートリカバリプロセスを使用して、AFF A2Kシステムでリカバリイメージをブートします。</block>
-  <block id="d4eecea550cbd08b714e9062c130e09d" category="doc">AFX 2Kシステムにおける自動ブートメディアリカバリの要件を確認する</block>
   <block id="a0031011edafc327be949a39236f6208" category="doc">AFF A2Kシステムで自動ブートリカバリプロセス中にコントローラをシャットダウンする</block>
   <block id="103eab4add6d34021094e3f8efaaef45" category="doc">AFX 2Kシステムのシャーシ交換を完了する</block>
   <block id="74bc862166a5d0f18c49dff569345112" category="doc">AFX 2Kシステムのシャーシを交換する</block>
   <block id="e68bc2c0512e029a09a2b43d7b516d78" category="doc">AFX 2Kシャーシの交換準備</block>
-  <block id="9595dfd40a827967c7b3e0ca5f891707" category="doc">AFX 2Kコントローラーをシャットダウンしてシャーシを交換します</block>
   <block id="a13213071540e6838727c5b862a2aa77" category="doc">AFX 2Kシステム内のコントローラーを交換する</block>
   <block id="db9abee8374f171bcd3c39af2f6b286f" category="doc">AFX 2Kシステムでコントローラーを返却する</block>
   <block id="a6b3c0f78c4c1cc2c97efd06b5d7e9bb" category="doc">AFX 2Kシステムのコントローラー交換を完了する</block>
@@ -14795,14 +14782,12 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b9e029bf8bccfe4bfab480ba4680eae0" category="doc">ASA C400ストレージシステムのインストール方法を選択してください</block>
   <block id="7498ff6b06fbb7a38808334a73d974ee" category="doc">ASA C800ストレージシステムのインストール方法を選択してください</block>
   <block id="b2b0363f93ea261182923a404dd77bf0" category="doc">自動ブートリカバリプロセスを使用して ASA A70 または ASA A90 システムでリカバリイメージをブートする</block>
-  <block id="02d9cdc893988160a99d8f286258dc19" category="doc">ASA A70またはASA A90システムにおける自動ブートメディアリカバリの要件を確認する</block>
   <block id="a6c94e9cab922026890d67a2e4ee57a7" category="doc">ASA A70またはASA A90システムの自動ブートリカバリプロセス中にコントローラーをシャットダウンする</block>
   <block id="86cfd19cdbf8951311b8fa5909e4911d" category="doc">ASA A70またはASA A90システムのシャーシ交換を完了する</block>
   <block id="b15a01da7fa12798e93ca373ae9a925a" category="doc">ASA A70またはASA A90システムのシャーシを交換する</block>
   <block id="3586b11f868b72d4c7ad32d86823ba74" category="doc">ASA A70またはASA A90シャーシの交換準備</block>
   <block id="b1d86d89fc2b0f59650f835cd77633cd" category="doc">シャーシを交換するために ASA A70 または ASA A90 コントローラをシャットダウンする</block>
   <block id="601975ac54f8d964829f27da2e20876b" category="doc">ASA A70またはASA A90システムのコントローラーを交換する</block>
-  <block id="7fdbe7a7edfb77da7d41245ac2a0bfb9" category="doc">ASA A70またはASA A90システムで通常運用を再開するためにコントローラーを返却する</block>
   <block id="c5008eda2a2f8db468f6c3af42814c65" category="doc">ASA A70またはASA A90システムのコントローラーの交換を完了する</block>
   <block id="19f705c85d6025a20edb5ddaf235f8aa" category="doc">ASA A70またはASA A90システムでコントローラー構成を復元して検証する</block>
   <block id="7f7215a99f74f69753fe853a9f9b01e7" category="doc">ASA A70またはASA A90システムのSSDドライブをホットスワップする</block>
@@ -14818,11 +14803,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f77de2e285a1cea61968935e58b21d1d" category="doc">ASA A70またはASA A90システムのリアルタイムクロックバッテリーを交換する</block>
   <block id="d07bc2fc56daaa173c6c923d5163266d" category="doc">ASA A70またはASA A90システムのシステム管理モジュールを交換する</block>
   <block id="836c19dad0cf94c91fb6de1d0a018810" category="doc">自動ブートリカバリプロセスを使用して ASA A1K システムでリカバリイメージをブートする</block>
-  <block id="1cda8cc0351603337d5d63d375d91d51" category="doc">ASA A1Kシステムにおける自動ブートメディアリカバリの要件を確認する</block>
   <block id="0e94aedffe9d3659cff4d25672255ad0" category="doc">ASA A1K システムの自動ブートリカバリプロセス中にコントローラーをシャットダウンする</block>
   <block id="f1956fe49e4dd855917e39097b21dea0" category="doc">ASA A1Kシステムのシャーシ交換を完了する</block>
   <block id="5e938aed06be2dbd80d4d8809e4ae4cc" category="doc">ASA A1Kシステムのシャーシを交換する</block>
-  <block id="d774e2173945e6f19e68652bd0f8b317" category="doc">ASA A1Kシャーシの交換準備</block>
   <block id="98f50493f4174671c85dce9168d98a09" category="doc">シャーシを交換するために ASA A1K コントローラーをシャットダウンする</block>
   <block id="0184b584e2742be7788f777737da5c1b" category="doc">ASA A1Kシステムのコントローラーを交換する</block>
   <block id="e30f60539bf1941b9e2a3676e2bcf029" category="doc">ASA A1K システムでコントローラーを返却する</block>
@@ -14838,27 +14821,23 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="29c2d04574d08bf524e15db6962dcbb9" category="doc">ASA A1Kシステムのリアルタイムクロックバッテリーを交換する</block>
   <block id="c9d58bcf41c4c5b622a55606caae132f" category="doc">ASA A1K システムのシステム管理モジュールを交換する</block>
   <block id="c10b72934e01f3d15443daa79a737fd5" category="doc">自動ブートリカバリプロセスを使用して ASA A20、ASA A30、または ASA A50 システムでリカバリイメージをブートする</block>
-  <block id="48e99abe6eac2b4c2493ed3f0846c0b0" category="doc">ASA A20、ASA A30、またはASA A50システムにおける自動ブートメディアリカバリの要件を確認する</block>
   <block id="f479c87512824f9b290221a7329e4703" category="doc">ASA A20、ASA A30、またはASA A50システムの自動ブートリカバリプロセス中にコントローラーをシャットダウンする</block>
   <block id="47b45901ff39f4c57f6371788bc83760" category="doc">ASA A20、ASA A30、またはASA A50システムのシャーシ交換を完了する</block>
   <block id="fa41ec5f52fd7ef75eddecf8222f3b7b" category="doc">ASA A20、ASA A30、またはASA A50システムのシャーシを交換する</block>
   <block id="3acdaaf770d6ffeacf4cb950ec737eb4" category="doc">シャーシを交換するために ASA A20、ASA A30、または ASA A50 コントローラをシャットダウンする</block>
   <block id="39e57a4038d157f98d61c35726c02cf2" category="doc">ASA A20、ASA A30、またはASA A50システムのコントローラーを交換する</block>
-  <block id="44f7a97bcc3d20061b3e933e121c905a" category="doc">ASA A20、ASA A30、またはASA A50システムでコントローラーを返却して通常の運用を再開します</block>
   <block id="be64f3352744c9588b4126995810a8ed" category="doc">ASA A20、ASA A30、またはASA A50システムのコントローラーの交換を完了する</block>
   <block id="bffe16cafbe5f64d52b3cc926849a79d" category="doc">ASA A20、ASA A30、またはASA A50システムでコントローラー構成を復元して検証する</block>
   <block id="1f15468020d9ff40a9112c28083938cd" category="doc">ASA A20、ASA A30、またはASA A50システムのドライブをホットスワップする</block>
   <block id="a244144dad24a0a79ab9d337f7850af4" category="doc">ASA A20、ASA A30、またはASA A50システムのファンモジュールを交換する</block>
   <block id="c564f4f97b4ac4ec8e8888d08b9da9f2" category="doc">I/O モジュールを ASA A20、ASA A30、または ASA A50 システムに追加する</block>
   <block id="d1c3ca0183fb2cf5b2fa04e2fe4561b1" category="doc">ASA A20、ASA A30、またはASA A50システムのI/Oモジュールをホットスワップする</block>
-  <block id="a9e87d8266d1d94c0fb792a7022d7ed6" category="doc">ASA A20、ASA A30、またはASA A50システムにおける入出力モジュールの追加と交換について</block>
   <block id="7fdf84bf8dd6eee380bd39f9c252cab8" category="doc">ASA A20、ASA A30、またはASA A50システムのI/Oモジュールを交換する</block>
   <block id="0da070a23c109f1968d4506ebd0eea7b" category="doc">ASA A20、ASA A30、またはASA A50ストレージシステムのメンテナンスについて学ぶ</block>
   <block id="9c32f1ffddb4c3d6ad5e89cb872c1000" category="doc">ASA A20、ASA A30、またはASA A50システムのNVバッテリーを交換する</block>
   <block id="1851f6b6551b0f9064265d074923a21a" category="doc">ASA A20、ASA A30、またはASA A50システムの電源ユニットをホットスワップする</block>
   <block id="96021c96ad6c958c6608b296bd39242f" category="doc">ASA A20、ASA A30、またはASA A50システムのリアルタイムクロックバッテリーを交換する</block>
   <block id="049196dd46767e094268def22b419750" category="doc">自動ブートリカバリプロセスを使用して ASA C30 システムでリカバリイメージをブートする</block>
-  <block id="1e7dc4c5b9d0af9d56b5b257647b73ee" category="doc">ASA C30システムにおける自動ブートメディアリカバリの要件を確認する</block>
   <block id="f152bba8e894d6a036fe7eb74627716a" category="doc">ASA C30 システムの自動ブートリカバリプロセス中にコントローラーをシャットダウンする</block>
   <block id="206164985e80d2629f28ef4a4deff219" category="doc">ASA C30システムのシャーシ交換を完了する</block>
   <block id="32d92ee3c8de99c61a1b8d4d5825b788" category="doc">ASA C30システムのシャーシを交換する</block>
@@ -14874,7 +14853,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e6a66fce79a2141b833431148d24c962" category="doc">ASA C30 システムの I/O モジュールをホットスワップする</block>
   <block id="ec87291c3a0efed1108e585af46a67d7" category="doc">ASA C30 システムでの I/O モジュールの追加と交換について</block>
   <block id="866befee7698560ba2183cae7fb89e1b" category="doc">ASA C30 システムの I/O モジュールを交換する</block>
-  <block id="f48e607781605c9a94882f3b9aab2e6d" category="doc">ASA C30システムのメンテナンスについて</block>
   <block id="54dc5021d8076b003e3b7d7edaa20fa7" category="doc">ASA C30 システムの NV バッテリーを交換する</block>
   <block id="1e42266af5c16cfcb9613150b455e8e2" category="doc">ASA C30システムの電源ユニットをホットスワップする</block>
   <block id="e12c61e12d93c730b94baf56b89e1b22" category="doc">ASA C30システムのリアルタイムクロックバッテリーを交換する</block>
@@ -15354,7 +15332,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8cb263247980423572b1994df1d56aac" category="doc">自動ブートリカバリプロセスを使用するASA A70またはASA A90システムのブートメディア交換ワークフロー</block>
   <block id="0ad6347c37b40e5d2a3a457000c685f9" category="doc">ASA A70またはASA A90システムでシャーシを交換するための要件を確認する</block>
   <block id="7aaa8195a7b7e29e00746b1bac4a784d" category="doc">ASA A70またはASA A90システムでコントローラーを交換するための要件を確認します</block>
-  <block id="5c5b6a966b6a5f5f8d3e0e46bda2a351" category="doc">ASA A70またはASA A90システムの非MetroCluster構成における障害のあるコントローラーのシャットダウン</block>
   <block id="535fed17356555fa8bd69a05cd88aa0b" category="doc">ASA A70またはASA A90システムのDIMMを交換する</block>
   <block id="475c61f2af3c595642b312469829062f" category="summary">ASA A70またはASA A90システムでドライブに障害が発生した場合、またはアップグレードが必要な場合は、ドライブをホットスワップしてください。このプロセスでは、障害ドライブを特定し、安全に取り外し、新しいドライブをインストールして、データへのアクセスとシステムのパフォーマンスが継続されるようにします。</block>
   <block id="a1c542e365496917997fb298ea65cb54" category="doc">自動ブートリカバリプロセス中にASA A1Kシステムのブートメディアを交換する</block>
@@ -15682,4 +15659,30 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="a0d51b97ecebc4a2164c80e9993b43b7" category="doc">サポートされているPDUタイプと仕様（ONTAPハードウェアシステムキャビネット用）</block>
   <block id="d4f15e3529c28c34230d8c8c8157f378" category="doc">ONTAPハードウェアシステムキャビネットを開梱する</block>
   <block id="4fce94ed1c415c154afd3821b10ac5ec" category="doc">ONTAP ハードウェアシステム用の SuperRail キットを4ポストラックに取り付ける</block>
+  <block id="e21e1556ec068a5df6e695e6905205a6" category="list-text">AutoSupportが有効になっていない場合は、<block ref="b4370becb2f960357cf9c0c2a970626e" category="inline-link-rx"></block>に連絡してシリアル番号を登録してください。</block>
+  <block id="e57dd029768411dcacc988bedd650b42" category="doc">AFX 1Kストレージシステムをインストールしてセットアップする</block>
+  <block id="fbcdc30a876ddf09596fed9d6b612d18" category="doc">AFF A1K システムにおける自動ブートメディアリカバリの要件を確認する</block>
+  <block id="13fdab105307b71d347784a3f91b5b68" category="doc">AFX 1Kシステムのシャーシを交換する準備をする</block>
+  <block id="ec3fab985a2a90c34ebfe24d3912e300" category="doc">AFX 2Kシステムにおける自動ブートメディアリカバリの要件を確認する</block>
+  <block id="dbbf1e9e4f69be89b7edcd1f5eb53004" category="doc">シャーシを交換するには、AFX 2K コントローラーの電源を切ります。</block>
+  <block id="f4d3d3a30282dbd88d419461171ac62d" category="doc">ASA A70またはASA A90システムにおける自動ブートメディアリカバリの要件を確認する</block>
+  <block id="8d3d19afcc431c3469f48d9cc5c44a0f" category="doc">ASA A70 または ASA A90 システムでコントローラーを返却する</block>
+  <block id="315af91e6f1729d6435f1c2c8d03d2d6" category="doc">非MetroCluster ASA A70またはASA A90システムで障害のあるコントローラーをシャットダウンする</block>
+  <block id="91c53e53fda253c2111535e334a024ac" category="doc">ASA A1K システムにおける自動ブートメディアリカバリの要件を確認する</block>
+  <block id="db3d30f61d5398419368d752f7a491ea" category="doc">ASA A1K システムのシャーシ交換の準備をする</block>
+  <block id="d2302a996bd8c8d136c137469bf09018" category="doc">ASA A20、ASA A30、またはASA A50システムにおける自動ブートメディアリカバリの要件を確認する</block>
+  <block id="60503bd281def9806ee60e603e323a2f" category="doc">ASA A20、ASA A30、またはASA A50システムでコントローラーを返却する</block>
+  <block id="4b587cd5fee1ca71bd5e4db3b2f8d3e6" category="doc">ASA A20、ASA A30、またはASA A50システムのI/Oモジュールについて</block>
+  <block id="bd36fcdbe1840e814985a3deea33381f" category="doc">ASA C30システムにおける自動ブートメディアリカバリの要件を確認する</block>
+  <block id="26c6a17702d6ba3531c668e8f92083a0" category="doc">ASA C30ストレージシステムのメンテナンスについて学ぶ</block>
+  <block id="a09aa4a77d03faefd31c42961a3d5b3c" category="list-text">選択<block ref="ad0b04bb56ceedcbeec8dbcc205dcbdf" category="inline-link-rx"></block></block>
+  <block id="ba2104f74aeb79e7496e1678f8510db4" category="sidebar">ONTAP ハードウェアシステムの提供終了</block>
+  <block id="a17781ff643a089b45aa6c0809af728c" category="sidebar">AFFシステム - インストールとセットアップ</block>
+  <block id="749054ac8df8397a9ccaa9c736554a3c" category="sidebar">ASA システム - インストールとセットアップ</block>
+  <block id="bace621924db181d3b82ad092a96a17d" category="sidebar">FASシステム - インストールとセットアップ</block>
+  <block id="d0712c7405e84d87021b738cac4d8959" category="sidebar">AFFシステム - システムのメンテナンス</block>
+  <block id="30b5e67a49c607bf48d7d3cb030979e1" category="sidebar">ASA システム - システムのメンテナンス</block>
+  <block id="71cc958203e2189f72e51984a78e2cff" category="sidebar">FASシステム - システムのメンテナンス</block>
+  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">その他のリソース</block>
+  <block id="608111b6d6e17c7658e3ddc5bd4c7784" category="sidebar">提供終了システム</block>
 </blocks>

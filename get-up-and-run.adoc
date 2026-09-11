@@ -35,7 +35,6 @@ MetroCluster 構成でセットアップされていないストレージシス�
 [role="quick-margin-list"]
 * link:aff-aseries/index.html["AFF Aシリーズシステム"]
 * link:aff-cseries/index.html["AFF Cシリーズシステム"]
-* link:allsan-landing/index.html["ASAシステム"]
 * link:https://docs.netapp.com/us-en/ontap-afx/install-setup/install-setup-workflow.html["AFXシステム"]
 * https://docs.netapp.com/us-en/asa-r2/install-setup/install-setup-workflow.html["ASA r2システム"]
 * link:fas/index.html["FAS システム"]

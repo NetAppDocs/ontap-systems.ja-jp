@@ -2,7 +2,7 @@
 indexpage:
   title: ONTAP AFF C-Series システム
   summary: ストレージシステムのドキュメントでは、AFF C シリーズシステムのインストール、セットアップ、およびメンテナンスを行うことができます。
-  keywords: aff c-series, datasheet, C250, C400, C800
+  keywords: aff c-series, datasheet, C30, C60, C80
   lead: ONTAP AFF C シリーズシステムは、高密度 NVMe 容量フラッシュ テクノロジを基盤として構築されています。
   tiles:
   - title: はじめに
@@ -17,24 +17,12 @@ indexpage:
       url: "../c30-60/install-overview.html"
     - title: AFF C80用
       url: "../c80/install-overview.html"
-    - title: AFF C250
-      url: "../c250/install-setup.html"
-    - title: AFF C400
-      url: "../c400/install-setup.html"
-    - title: AFF C800
-      url: "../c800/install-setup.html"
   - title: システムのメンテナンス
     links:
     - title: AFF C30およびAFF C60
       url: "../c30-60/maintain-overview.html"
     - title: AFF C80用
       url: "../c80/maintain-overview.html"
-    - title: AFF C250
-      url: "../c250/maintain-overview.html"
-    - title: AFF C400
-      url: "../c400/maintain-overview.html"
-    - title: AFF C800
-      url: "../c800/maintain-overview.html"
   - title: サポートされるスイッチ
     links:
     - title: Broadcom 対応 BES-53248 の場合
