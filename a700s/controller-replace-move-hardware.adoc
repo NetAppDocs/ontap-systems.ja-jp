@@ -2,7 +2,7 @@
 permalink: a700s/controller-replace-move-hardware.html 
 sidebar: sidebar 
 keywords: aff a700s, move the controller module hardware 
-summary: コントローラモジュールを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。 
+summary: AFF A700s システムのコントローラーを交換するには、障害のあるコントローラーを取り外し、FRU コンポーネントを交換用モジュールに移動させ、シャーシに取り付け、メンテナンスモードで起動します。 
 ---
 = AFF A700s システムのコントローラーを交換する
 :allow-uri-read: 

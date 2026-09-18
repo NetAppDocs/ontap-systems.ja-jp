@@ -2,7 +2,7 @@
 permalink: a200/controller-replace-move-hardware.html 
 sidebar: sidebar 
 keywords: aff a200, move the hardware components 
-summary: コントローラモジュールハードウェアを交換するには、障害のあるコントローラモジュールを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。 
+summary: AFF A200システムのコントローラーを交換するには、障害のあるコントローラーを取り外し、FRUコンポーネントを交換用コントローラーモジュールに移動させ、シャーシに取り付け、メンテナンスモードで起動します。 
 ---
 = AFF A200システムのコントローラーを交換する
 :allow-uri-read: 

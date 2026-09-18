@@ -2,7 +2,7 @@
 permalink: a150/controller-replace-move-hardware.html 
 sidebar: sidebar 
 keywords: aff a150, a150, aff, move the controller module hardware 
-summary: コントローラモジュールハードウェアを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。 
+summary: AFF A150システムでハードウェア障害が発生した場合は、コントローラーを交換してください。交換手順には、障害コントローラモジュールの取り外し、FRUコンポーネントの交換用コントローラへの移動、交換用コントローラモジュールのシャーシへの取り付け、およびシステムのメンテナンスモードへの起動が含まれます。 
 ---
 = AFF A150システムのコントローラーを交換する
 :allow-uri-read: 

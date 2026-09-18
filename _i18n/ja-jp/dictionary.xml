@@ -172,7 +172,6 @@
   <block id="0c58f83d7ef25b7c494eb992b66728c1" category="list-text">この手順はシステムの停止を伴います。2 ノードクラスタではサービスが完全に停止し、マルチノードクラスタでは部分的に停止します。</block>
   <block id="04a1c92d61b3e562a673dea0adef0f20" category="list-text">NetApp Storage Encryption を使用している場合は、 _ ONTAP 9 NetApp Encryption パワーガイド _ の「 SED を非保護モードに戻す」セクションの手順に従って MSID をリセットしておく必要があります。</block>
   <block id="d341e954ddede02e8d2c553ecfba224a" category="paragraph">各 SCSI ブレードプロセスは、クラスタ内の他のノードとクォーラムを構成している必要があります。交換を進める前に、すべての問題を解決しておく必要があります。</block>
-  <block id="2ac1e9cd887b50e321ead7a3e6beab55" category="summary">コントローラモジュールハードウェアを交換するには、障害のあるコントローラモジュールを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。</block>
   <block id="b78bf62e6c1dd80b4eab87a4a3039f94" category="paragraph">コントローラモジュールハードウェアを交換するには、障害ノードを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。</block>
   <block id="e2f9fc0be7a0bec719378633fe5d0324" category="section-title">手順 1 ：コントローラモジュールを取り外す</block>
   <block id="8ebd201c2b1ccf04603b91e8657dad2b" category="paragraph">次のビデオまたは表に示す手順を使用して、コントローラモジュールを交換します。</block>
@@ -4024,7 +4023,6 @@
   <block id="b6ea0c6054b7f5b7832dafbb8468dc0f" category="paragraph">障害のあるコントローラをテイクオーバーまたは停止します。</block>
   <block id="4571f480b4cb6246b64d91e6cacdf34c" category="list-text">HA ペアの場合は、正常なコントローラから障害のあるコントローラをテイクオーバーします。「 storage failover takeover -ofnode impaired_node_name _</block>
   <block id="0ebf647b3184259131a8c1ffcdea60dc" category="list-text">システム ID が一致していないためにシステム ID を上書きするかどうかを尋ねられた場合は、 _replacement _controller の LOADER プロンプトから「 y 」と入力し、コントローラをブートします</block>
-  <block id="abb3159815c7d305ec1a9697a5ec0fef" category="summary">コントローラモジュールを交換するには、障害のあるコントローラを取り外し、 FRU コンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付けてから、システムをメンテナンスモードでブートする必要があります。</block>
   <block id="a14d65aea00503e78c39b9273b38fa4e" category="paragraph">AFF A700s には、プライマリブートメディアとセカンダリブートメディアまたはバックアップブートメディアの 2 つのブートメディアがあります。これらのコントローラを障害のあるコントローラから _replacement _controller に移動し、 _replacement _controller 内のそれぞれのスロットに取り付ける必要があります。</block>
   <block id="d0a414fa814c592a9fcc74f3aaae710b" category="paragraph">障害のあるコントローラをテイクオーバーまたは停止します。 storage failover takeover -ofnode impaired_node_name</block>
   <block id="e160675dcb2bc6ebdb28380884820e26" category="paragraph">障害のあるコントローラに「 Waiting for giveback... 」と表示されたら、 Ctrl+C キーを押し、「 y 」と入力します。</block>
@@ -8229,7 +8227,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="151d3f9489dc71ef0bf598517f9387d5" category="paragraph">必要に応じて、ストレージ・システムの物理的な位置を特定するために、ストレージ・システムのロケーション（青色の）LEDを点灯できます。SSHを使用してBMCにログインし、コマンドを入力し<block ref="748a449bca03582c103ee6b7bcd4a969" prefix=" " category="inline-code"></block>ます。</block>
   <block id="02cbc9c9b92f52062a793fbc039a7a5f" category="paragraph">ASA A20、ASA A30、およびASA A50ストレージシステムでは、次のコンポーネントのメンテナンス手順を実行できます。</block>
   <block id="3d68bd292ff38f0f7a42e75bafb71ae7" category="summary">AFF C80システムのコンポーネントに障害が発生した場合は、障害が発生した部品をNetAppに返却してください。<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>詳細については、ページを参照してください。</block>
-  <block id="f48200b4fe7f2f013c6d085467e08b85" category="summary">ハードウェア障害またはアップグレードで必要になった場合は、AFF C80システムのコントローラを交換します。このプロセスでは、障害のあるコントローラを取り外し、交換用コントローラにコンポーネントを移動し、交換用コントローラを取り付け、システムをリブートします。</block>
   <block id="0dfddb9a8d92421aedc4b572cdcbfea9" category="summary">ストレージリソースの制御を交換用コントローラに戻して、AFF C80システムが通常の運用を再開できるようにします。</block>
   <block id="43d776718c1fd733b854e3b84bdffa63" category="summary">コントローラのHA構成がアクティブで、AFF C80ストレージシステムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。</block>
   <block id="cd8d2c9f06c5661e2266f9927427382e" category="summary">AFF C80ストレージシステム内の障害が発生したI/Oモジュールは、同じタイプのI/Oモジュールに交換することも、別の種類のI/Oモジュールに交換することもできます。空きスロットのあるシステムにI/Oモジュールを追加することもできます。</block>
@@ -8447,7 +8444,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="518d259b42a911dc3a20adcfc4d0303a" category="paragraph">AFF C80システムの交換用ブートメディアに暗号化をリストアして、データを継続的に保護します。交換プロセスには、キーの可用性の確認、暗号化設定の再適用、およびデータへのセキュアなアクセスの確認が含まれます。</block>
   <block id="8bd3a19a7fb9b578a97dddca4df4ad06" category="summary">AFF C80システムのブートメディアを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。具体的には、適切な量のストレージを搭載したUSBフラッシュドライブがあること、および正しい交換用ブートデバイスがあることを確認します。</block>
   <block id="7796ef257d684df8101cbe032026345a" category="summary">コントローラをリブートし、システムヘルスを確認し、障害が発生したパーツをNetAppに戻して、AFF C80シャーシの交換手順の最後の手順を完了します。</block>
-  <block id="02a9e9984c956e264ae67617477e3c81" category="paragraph">ハードウェア障害が必要な場合は、AFF C80システムのコントローラを交換します。このプロセスでは、障害のあるコントローラを取り外し、交換用コントローラにコンポーネントを移動し、交換用コントローラを取り付け、システムをリブートします。</block>
   <block id="993406729b186cdaf4296a5964b58d0c" category="summary">論理インターフェイスがホームポートに報告していることを確認し、クラスタの健全性チェックを実行し、障害が発生したパーツをNetAppに戻して、AFF C80コントローラの交換手順の最後の手順を完了します。</block>
   <block id="179b17b78c730160d70c7ea7bf15c4b0" category="paragraph">AFF C80システムのシステム構成を復元して確認したら、を実行する必要があります<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>。</block>
   <block id="f135020b3e6c604b824d7ee673ed8305" category="summary">修正可能または修正不可能なメモリエラーが大量に検出された場合は、AFF C80システムのDIMMを交換します。このようなエラーが発生すると、ストレージシステムでONTAPをブートできなくなる可能性があります。</block>
@@ -9610,7 +9606,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="c77d647fced0d18ea8388a89c9fbbe8c" category="paragraph-title"><block ref="6b77e2260873b4d678c3f337dd767e02" category="inline-image-macro-rx" type="image"></block><block ref="148983c7fc1a624047153d53429d13a1" category="inline-link-macro-rx"></block></block>
   <block id="a59a9a05f780a25a994c0a1796c4e14c" category="paragraph">シャーシのメンテナンスを実行できるように、コントローラをシャットダウンします。</block>
   <block id="710a3e7fade7e7d65d3f95207d84a760" category="paragraph">コントローラを起動し、コントローラを返却し、故障したシャーシをNetAppに返却して、シャーシの交換を完了します。</block>
-  <block id="1c003f60306195fc28f8caffd47dd340" category="paragraph">ハードウェア障害が発生した場合は、 AFF A1Kシステムのコントローラを交換してください。交換プロセスには、障害のあるコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーのインストール、および再起動が含まれます。</block>
   <block id="7ff4349856f45df803f8bf1c62cd8a3e" category="summary">コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、 ASA A1K シャーシ交換手順の最終ステップを完了します。</block>
   <block id="89c5427feacbde4f607d05cd07f48f94" category="paragraph">ハードウェア障害が発生した場合は、 ASA A1K システムのシャーシを交換してください。交換プロセスには、コントローラ、I/O カード、NVRAM12 モジュール、システム管理モジュール、および電源ユニット (PSU) の取り外し、交換用シャーシのインストール、およびシャーシ コンポーネントの再取り付けが含まれます。</block>
   <block id="e1a44d52ef9851aabc78844c3bc47c92" category="paragraph">損傷したASA A1Kシャーシを交換し、コンポーネントを再インストールした後、<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block> 。</block>
@@ -9620,7 +9615,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="5581f7e866a160d28eefb508e480ba53" category="summary">ASA A1K システムのシャーシを交換する前に、交換を正常に行うために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが適切に機能していることを確認すること、 ONTAPのローカル管理者の認証情報、適切な交換用シャーシ、および必要なツールがあることを確認することが含まれます。</block>
   <block id="c3493d287110e2fecc8fe4a00755810a" category="summary">シャーシを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、 ASA A1K ストレージ システムのコントローラをシャットダウンします。</block>
   <block id="48b2982a8a3ef500c4100e6df4f7a36f" category="summary">交換要件を確認し、コントローラをシャットダウンし、シャーシを交換し、システムの動作を確認して、 ASA A1K ストレージ システムのシャーシの交換を開始します。</block>
-  <block id="00cfcf708436d304f31cc1839fa2b7ca" category="paragraph">ハードウェア障害により必要になった場合は、 ASA A1K システムのコントローラを交換してください。交換プロセスには、障害のあるコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーのインストール、および再起動が含まれます。</block>
   <block id="39317983344793ba26ea170a2d890ebb" category="summary">コントローラを再起動し、システムの健全性を確認し、故障した部品をNetAppに返送して、FAS70 および FAS90 シャーシ交換手順の最終ステップを完了します。</block>
   <block id="c2dc989e45ed55b7aae85308ef4125c6" category="summary">ハードウェア障害が発生した場合は、FAS70 または FAS90 システムのシャーシを交換してください。交換プロセスでは、コントローラをシャーシの前面から取り外し、電源ユニット (PSU)、NVRAM12、I/O モジュールとブランク、およびシステム管理モジュールを取り外し、交換用シャーシを取り付け、シャーシ コンポーネントを再インストールします。</block>
   <block id="0d823891069047b4e507bdd24e6d65c4" category="paragraph">ハードウェア障害が発生した場合は、FAS70 または FAS90 システムのシャーシを交換してください。交換プロセスには、コントローラ、I/O カード、NVRAM12 モジュール、システム管理モジュール、および電源ユニット (PSU) の取り外し、交換用シャーシのインストール、およびシャーシ コンポーネントの再取り付けが含まれます。</block>
@@ -10856,8 +10850,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="a13c2f7ad34208b9c2bcd0523880b6d8" category="inline-link-macro">コントローラーをオフにする</block>
   <block id="9fad96d83a169e0215ced98454a45af0" category="paragraph">AFX 1Kコントローラーの交換要件を確認した後、<block ref="8e2bedbe0502a7014e560cda99cd14d0" category="inline-link-macro-rx"></block> 。</block>
   <block id="8de2b6e5e19ba6dbe87babbf81eba95e" category="summary">論理インターフェイス (LIF) がホーム ポートにレポートしていることを確認し、クラスターのヘルス チェックを実行してから、障害が発生した部品をNetAppに返送し、AFX 1K コントローラーの交換手順の最終ステップを完了します。</block>
-  <block id="040e4968cb29da0845bd95fac21f1d12" category="summary">AFX 1K ストレージ システムのコントローラーに障害が発生した場合は、シャットダウンしてください。メンテナンスやコンポーネントの交換を行う前に、データの損失を防ぎ、システムの安定性を確保するために、コントローラーを安全にシャットダウンすることが重要です。</block>
-  <block id="8675ee7f370bbc45d7767c6dc159f502" category="paragraph">コントローラーを交換するときにデータの損失を防ぎ、システムの安定性を確保するために、AFX 1K ストレージ システム内の障害のあるコントローラーをシャットダウンします。</block>
   <block id="4a1044846a2e1c13ccf461469f5d7d8e" category="paragraph">コントローラーをシャットダウンした後、<block ref="4c59920dffd5894cdc2dc27ddd7fff07" category="inline-link-macro-rx"></block> 。</block>
   <block id="74ca9205399426d88c904d79702a11e6" category="summary">AFX 1K ストレージ システムでコントローラの HA 構成がアクティブであり、正しく機能していることを確認し、システムのアダプタがディスクへのすべてのパスをリストしていることを確認します。</block>
   <block id="763ba015a573d8b71646578b468f0f6f" category="paragraph">AFX 1Kストレージシステムの構成を復元して検証した後、<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block> 。</block>
@@ -12758,7 +12750,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="a3ec385c2147224f642fb131801a40fd" category="paragraph">AFX 2Kストレージシステムのコントローラーを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、システム内の他のすべてのコンポーネントが正しく機能していることを確認すること、正しい交換用コントローラーを使用していることを確認すること、およびコントローラーのコンソール出力をテキストログファイルに保存することが含まれます。</block>
   <block id="529ca8721a927b16e30574449622b413" category="paragraph">AFX 2Kコントローラーを交換するための要件を確認した後、<block ref="8e2bedbe0502a7014e560cda99cd14d0" category="inline-link-macro-rx"></block>。</block>
   <block id="c74919ac1cf8befa5b3d4e0140e2f53d" category="paragraph">論理インターフェイス（LIF）がホームポートにレポートしていることを確認し、クラスタの健全性チェックを実行してから、障害が発生した部品を NetApp に返却して、AFX 2K コントローラー交換手順の最終ステップを完了します。</block>
-  <block id="9188bc0bec40b9527dc8f57405753ee0" category="paragraph">データ損失を防ぎ、コントローラー交換時のシステム安定性を確保するため、AFX 2K ストレージシステム内の障害のあるコントローラーをシャットダウンしてください。</block>
   <block id="85d06de7cf5f37631d681fe7e72c5ca4" category="paragraph">AFX 2Kストレージ システムにおいて、コントローラのHA構成が有効かつ正しく機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認してください。</block>
   <block id="3855e1fdaf92f61d59ffd35c040186b8" category="paragraph">AFX 2Kストレージシステムの構成を復元および検証した後、<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>。</block>
   <block id="5b8b05b20932dd01e5f9e97a0b5065ae" category="paragraph">AFX 2Kストレージ システムのコントローラー交換を開始するには、まず故障したコントローラーをシャットダウンし、コントローラーを取り外して交換し、システム構成を復元し、システムの動作を確認します。</block>
@@ -13262,7 +13253,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="413b03e189faf1837f2dfa717977fbe0" category="summary">ストレージリソースの制御を交換用コントローラに戻すことで、AFX 2Kストレージシステムが正常に動作を再開できるようになります。</block>
   <block id="6d53da82425f44f0954ccae73d7ec89a" category="summary">AFX 2Kストレージシステムのコントローラーを交換する前に、交換を成功させるために必要な要件を満たしていることを確認してください。これには、適切な交換用コントローラー、システム構成のバックアップ、および必要なツールとファームウェアへのアクセスが含まれます。</block>
   <block id="4a7daf85a474830be61e07972db79d24" category="summary">論理インターフェースがホームポートにレポートしていることを確認し、クラスタの健全性チェックを実行してから、障害が発生した部品をNetAppに返却して、AFX 2Kコントローラー交換手順の最終ステップを完了します。</block>
-  <block id="35609ae06160f47ff564d2dc60f28ea0" category="summary">AFX 2Kストレージシステムのコントローラーに不具合が生じた場合は、コントローラーの電源を切ってください。メンテナンスや部品交換を行う前に、データ損失を防ぎ、システムの安定性を確保するために、コントローラーを安全にシャットダウンすることが非常に重要です。</block>
   <block id="fe848609a155f7dd1abb65bb14adf50a" category="summary">AFX 2Kストレージシステムのコントローラーの交換を開始するには、まず障害のあるコントローラーをシャットダウンし、コントローラーを取り外して交換し、システム設定を再構成し、システムの動作を確認します。</block>
   <block id="ceb34cf3c1594495f284c17b375df916" category="doc">AFX 2Kコントローラー交換ワークフロー</block>
   <block id="707b1f50e0ca8aa033bddfc3cabba83d" category="summary">AFX 2Kシステムのファンモジュールに不具合や故障がある場合は交換して、適切な冷却を維持し、システム性能の問題を防止してください。ファンはホットスワップ対応であり、システムを停止することなく交換できます。</block>
@@ -13363,7 +13353,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="55998d6748d2304c5629d5c09349d7d3" category="paragraph">FAS2600システムのシャーシを交換する前に、電源装置、ハードドライブ、コントローラモジュールを故障したシャーシから新しいシャーシに移動するための要件、および機器ラックまたはシステムキャビネット内の故障したシャーシを同じモデルの新しいシャーシと交換するための要件を確認してください。</block>
   <block id="bc202bec76b7f34057564a5e51454c89" category="paragraph">システム内の他のすべての構成要素も正常に機能していなければなりません。そうでない場合は、テクニカルサポートにお問い合わせください。</block>
   <block id="ebcca84dc4d0c6c3fceeb6df040b5971" category="list-text">この手順はサービスを停止させます。2ノードクラスタの場合は完全なサービス停止が発生し、マルチノードクラスタの場合は部分的なサービス停止が発生します。</block>
-  <block id="db05b912a7c390c4f7a66430f2c6f461" category="summary">FAS2600システムのコントローラを交換するには、故障したコントローラを取り外し、FRUコンポーネントを交換用コントローラモジュールに移動させ、シャーシに取り付け、システムをメンテナンスモードで起動します。</block>
   <block id="c83cb12c0f48f2e21b3663189816e8e9" category="paragraph">FAS2600システムのコントローラを交換するには、障害のあるコントローラを取り外し、FRUコンポーネントを交換用コントローラモジュールに移動し、交換用コントローラモジュールをシャーシに取り付け、システムをメンテナンスモードで起動します。</block>
   <block id="7742b6ca8ec09657d13829f2dc898e06" category="paragraph">DIMMはスロットにぴったりと収まりますが、簡単に挿入できるはずです。それでもうまくいかない場合は、DIMMをスロットに合わせて位置を調整し、再度挿入してください。</block>
   <block id="0def676f42eb5cb1dc5bbb8c855414d5" category="paragraph">キャッシングモジュール（コントローラのラベルにはM.2 PCIeカードと記載されています）を古いコントローラモジュールから交換用コントローラモジュールに移動するには、以下の手順に従ってください。</block>
@@ -15685,4 +15674,12 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="71cc958203e2189f72e51984a78e2cff" category="sidebar">FASシステム - システムのメンテナンス</block>
   <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">その他のリソース</block>
   <block id="608111b6d6e17c7658e3ddc5bd4c7784" category="sidebar">提供終了システム</block>
+  <block id="d8ad46c41d31cb25369973b5abf90eb0" category="admonition">I/Oモジュールは、故障したシャーシと同じスロットに取り付けてください。</block>
+  <block id="e3150c7b3a2a770e3485b2a341efd224" category="list-text">NVRAM12-EXをシャーシ背面に取り付けます。</block>
+  <block id="f55c50007e35120fe88932838b3ace84" category="list-text">NVRAM12-EXモジュールの端をシャーシの開口部に合わせて、モジュールをシャーシにゆっくりと奥まで押し込みます。</block>
+  <block id="dcdf8a2b8c5de9dab1f781371b03c65f" category="summary">データ損失を防ぎ、コントローラー交換時のシステム安定性を確保するため、AFX 1K ストレージシステム内の障害のあるコントローラーをシャットダウンしてください。</block>
+  <block id="bfc280a4a56c555d28b2220afb049824" category="summary">データ損失を防ぎ、コントローラー交換時のシステム安定性を確保するため、AFX 2K ストレージシステム内の障害のあるコントローラーをシャットダウンしてください。</block>
+  <block id="f36c76518c1338c3f03a21b9d4c06d87" category="summary">ハードウェア障害が発生した場合は、ASA A1Kシステムのコントローラーを交換してください。交換手順は、障害のあるコントローラーを取り外し、コンポーネントを交換用コントローラーに移設し、交換用コントローラーを取り付けて再起動するというものです。</block>
+  <block id="1822bd93d14bcf37b38e2900ee6a8b37" category="summary">ハードウェア障害が発生した場合は、ASA A150システムのコントローラーを交換してください。交換手順には、障害のあるコントローラモジュールの取り外し、FRUコンポーネントの交換用コントローラへの移動、交換用コントローラモジュールのシャーシへの取り付け、およびシステムのメンテナンスモードへの起動が含まれます。</block>
+  <block id="3707941e391cf3f4e79c0ac324b37e41" category="summary">ハードウェア障害が発生した場合は、AFF C80システムのコントローラーを交換してください。この手順には、故障したコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーの取り付け、およびシステムの再起動が含まれます。</block>
 </blocks>

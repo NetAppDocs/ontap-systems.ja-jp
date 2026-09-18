@@ -2,7 +2,7 @@
 permalink: a1k/controller-replace-move-hardware.html 
 sidebar: sidebar 
 keywords: aff a1k, move the controller module hardware 
-summary: ハードウェア障害が発生した場合は、 AFF A1Kシステムのコントローラを交換してください。交換プロセスには、障害のあるコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーのインストール、および再起動が含まれます。 
+summary: ハードウェア障害が発生した場合は、AFF A1Kシステムのコントローラを交換してください。交換手順は、障害のあるコントローラーを取り外し、コンポーネントを交換用コントローラーに移設し、交換用コントローラーを取り付けて再起動するというものです。 
 ---
 = AFF A1K システムのコントローラーを交換する
 :allow-uri-read: 
