@@ -15682,4 +15682,7 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="f36c76518c1338c3f03a21b9d4c06d87" category="summary">ハードウェア障害が発生した場合は、ASA A1Kシステムのコントローラーを交換してください。交換手順は、障害のあるコントローラーを取り外し、コンポーネントを交換用コントローラーに移設し、交換用コントローラーを取り付けて再起動するというものです。</block>
   <block id="1822bd93d14bcf37b38e2900ee6a8b37" category="summary">ハードウェア障害が発生した場合は、ASA A150システムのコントローラーを交換してください。交換手順には、障害のあるコントローラモジュールの取り外し、FRUコンポーネントの交換用コントローラへの移動、交換用コントローラモジュールのシャーシへの取り付け、およびシステムのメンテナンスモードへの起動が含まれます。</block>
   <block id="3707941e391cf3f4e79c0ac324b37e41" category="summary">ハードウェア障害が発生した場合は、AFF C80システムのコントローラーを交換してください。この手順には、故障したコントローラーの取り外し、コンポーネントの交換用コントローラーへの移動、交換用コントローラーの取り付け、およびシステムの再起動が含まれます。</block>
+  <block id="36ff1b0cf056d6ead654398301edbbc1" category="inline-link-macro">_ENERGY STAR認証取得済みデータセンター ストレージ製品_</block>
+  <block id="be4049092eb4f116ae37997b11912f3e" category="list-text">この製品はENERGY STAR認証を取得しています。詳細については、<block ref="435b6d0174c4d003719c270181300a75" category="inline-link-macro-rx"></block>をご覧ください。</block>
+  <block id="33ba153f9c27104ac9c370d6c06d5f5e" category="image-alt">ENERGY STAR認証ロゴ</block>
 </blocks>
