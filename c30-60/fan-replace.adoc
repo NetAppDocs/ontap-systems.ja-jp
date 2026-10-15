@@ -1,7 +1,7 @@
 ---
 permalink: c30-60/fan-replace.html 
 sidebar: sidebar 
-keywords: aff c30, aff c60, aff, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module 
+keywords: aff c30, aff c60, aff, swap, out, fan, module, interrupt, service, sequence, task 
 summary: ファンが故障したり、効率的に動作しなくなった場合は、 AFF C30 またはAFF C60 ストレージ システムのファン モジュールを交換してください。システムの冷却と全体的なパフォーマンスに影響する可能性があります。交換プロセスには、コントローラのシャットダウン、コントローラの取り外し、ファンの交換、コントローラの再インストール、および故障した部品のNetAppへの返送が含まれます。 
 ---
 = AFF C30またはAFF C60システムのファンモジュールを交換する
@@ -59,7 +59,7 @@ summary: ファンが故障したり、効率的に動作しなくなった場�
 +
 .. 正常なコントローラのコンソールから次のコマンドを入力します。
 +
-`storage failover modify -node _impaired_node_name_ -auto-giveback false`
+`storage failover modify -node local -auto-giveback false`
 
 .. 入力 `y`「自動ギブバックを無効にしますか?」というプロンプトが表示されたら、
 

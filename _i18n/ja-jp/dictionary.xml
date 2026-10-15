@@ -8468,7 +8468,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="dcac0d4d44ce3609f70b9f6817380eb7" category="summary">コントローラのHA構成がアクティブで、FAS70またはFAS90ストレージ・システムで正常に機能していることを確認し、システムのアダプタにディスクへのすべてのパスがリストされていることを確認します。</block>
   <block id="8f15a6b55f9d40c8f4779330981502f5" category="paragraph">FAS70またはFAS90システムのシステム構成をリストアして確認したら、を実行する必要があります<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>。</block>
   <block id="17e4dd018a5a20b5b198058502e171bc" category="summary">まず、障害のあるコントローラのシャットダウン、コントローラの取り外しと交換、システム設定の再設定、システム動作の確認を行い、FAS70またはFAS90ストレージシステムのコントローラの交換を開始します。</block>
-  <block id="0d9cd1cb3839e926bde7f75246162365" category="summary">ファンに障害が発生した場合、またはファンが効率的に動作していない場合は、FAS70またはFAS90システムのファンモジュールを交換してください。システムの冷却や全体的なパフォーマンスに影響する可能性があります。交換プロセスでは、コントローラのシャットダウン、コントローラの取り外し、ファンの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。</block>
   <block id="86cfd8171cc9d13fd6ba34c5f4b8560b" category="summary">FAS70またはFAS90システムでは、I/Oモジュールの拡張や交換が柔軟に行えるため、ネットワーク接続性とパフォーマンスが向上します。I/Oモジュールの追加または交換は、ネットワーク機能をアップグレードする場合や、障害が発生したモジュールに対処する場合に不可欠です。</block>
   <block id="7b96b7e6eb8df75ce5aff9a62ce657e2" category="paragraph">FAS70またはFAS90ストレージ・システム内の障害が発生したI/Oモジュールは、同じタイプのI/Oモジュールに交換することも、別の種類のI/Oモジュールに交換することもできます。空きスロットのあるシステムにI/Oモジュールを追加することもできます。</block>
   <block id="55658611693e2dfb5ae95b1b317d553f" category="summary">FAS70またはFAS90システムのI/Oモジュールに障害が発生した場合、またはより高いパフォーマンスや追加機能をサポートするためにアップグレードが必要な場合は、I/Oモジュールを交換してください。交換プロセスでは、コントローラのシャットダウン、障害が発生したI/Oモジュールの交換、コントローラのリブート、障害が発生したパーツのNetAppへの返却を行います。</block>
@@ -9554,7 +9553,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="b283de4e13a7d5b68dec3f041941e3bc" category="sidebar">FAS8300およびFAS8700リアルタイムクロックバッテリー</block>
   <block id="49083f96e824487850956b55d36a363f" category="sidebar">FAS9500ブートメディア自動化</block>
   <block id="92e1f12178f27a238b4b86215c5615af" category="sidebar">FAS9500ブートメディアマニュアル</block>
-  <block id="3bce4848ee8babd978a1eed14ffb0657" category="paragraph"><block ref="e5d0e758897049635b8f9c5e676046ce" prefix="" category="inline-code"></block></block>
   <block id="08ff655980adcc7a622e1807b2ce15c0" category="list-text">自動ギブバックが無効になっている場合は、再度有効にします。<block ref="07d94d90bbf940cf95f9dbba0029631f" prefix=" " category="inline-code"></block></block>
   <block id="23d2a44e582b0f47f51ad61543f2784a" category="paragraph">コントローラーを取り外す前に、2 つの電源ユニット (PSU) を取り外す必要があります。</block>
   <block id="754bdcb9d2a9982ca84863ebead5a9e8" category="list-text">PSU を取り外します。</block>
@@ -12915,7 +12913,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="ae1e8d45dcecc0989481acfc809cb589" category="paragraph">AFF A250システム コントローラの交換を完了するには、（必要に応じて）NetApp Storage Encryptionの構成を復元し、論理インターフェイス（LIF）がホームポートにレポートしていることを確認し、クラスターのヘルスチェックを実行して、障害が発生したパーツをNetAppに返却します。</block>
   <block id="e6b508d3ad0bda4467669b6873e4af10" category="doc">AFF A250コントローラー交換ワークフロー</block>
   <block id="156d802f0d77e677afd46ac3c4607a0d" category="paragraph">ストレージシステムが過剰な訂正可能（CECC）または訂正不可能なメモリエラーを検出した場合は、AFF A250システムのDIMMを交換してください。このようなエラーにより、ストレージシステムがONTAPを起動できなくなる場合があります。</block>
-  <block id="49aeb0bb5d496401d4bde171b38b4ab5" category="paragraph">AFF A250システムの障害ファンモジュールを交換して、適切な冷却を維持し、パフォーマンスの問題を防止します。ファンモジュールはホットスワップ対応であり、システムをシャットダウンせずに交換できます。</block>
   <block id="0d4e62f22088395485a3f549e175fd99" category="paragraph">以下の詳細な手順に従って、サイトの準備から ONTAP クラスタの起動まで、AFF A250 ストレージシステムをインストールします。</block>
   <block id="79fae8e27cc6142558d9fcc883b06a74" category="paragraph">クイックグラフィック手順を使用して、AFF A250ストレージシステムをインストールし、ケーブル接続します。</block>
   <block id="ab71e54a3fb4e946810032444c082b73" category="paragraph">AFF A250ストレージシステムのインストールに使用する形式を選択してください：詳細なステップバイステップの手順、簡単な図解ガイド、またはビデオによる説明。</block>
@@ -14014,7 +14011,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="e6b6e212a0094ee9b8cb07a680e14557" category="doc">AFF A20、AFF A30、またはAFF A50システムのコントローラーを交換する</block>
   <block id="0f82cd5236663c6e94ef8c7f9728153e" category="doc">AFF A20、AFF A30、またはAFF A50システムのコントローラーの交換を完了する</block>
   <block id="74e6f08c422d59cbb3a512c69842af19" category="doc">AFF A20、AFF A30、またはAFF A50システムでコントローラー構成を復元して検証する</block>
-  <block id="4495cc2cb1d64fab3f6960c395b15b0f" category="doc">AFF A20、AFF A30、またはAFF A50システムのファンモジュールをホットスワップする</block>
   <block id="93d133d3204b7024fba921363fd8d874" category="doc">AFF A20、AFF A30、またはAFF A50ハードウェアのネットワークおよびストレージ接続用ケーブル接続</block>
   <block id="a2c478f19f67784c8f43c028d4448e35" category="doc">AFF A20、AFF A30、またはAFF A50ハードウェアをキャビネットまたはラックに設置する</block>
   <block id="dde55a04d1203238613898d6b23d625c" category="doc">AFF A20、AFF A30、またはAFF A50ストレージシステムの電源をオンにする</block>
@@ -14086,7 +14082,6 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="8af5278a7646ad11549695aac6717f1e" category="doc">AFF A250システムのケーブルを再配線してディスクを再割り当てする</block>
   <block id="045ae4735d5c98bd9cda880ef7a88c0b" category="doc">AFF A250システムのコントローラーの交換を完了する</block>
   <block id="ee970a6cb2e4caa63bb5a3bfd363a983" category="doc">AFF A250システムでコントローラー構成を復元して検証する</block>
-  <block id="070ffbd86ec310d2991ee8589f585061" category="doc">AFF A250システムのファンをホットスワップする</block>
   <block id="b7accb8b14ac5f3ea9b18848c60524f1" category="doc">詳細な手順書を使用してAFF A250システムをインストールする</block>
   <block id="559d4c9ae378606b453ec096608835fd" category="doc">クイックグラフィック手順を使用したAFF A250システムのインストール</block>
   <block id="bcf286d5537d6f9439072d7b535a8c1f" category="doc">AFF A250ストレージシステムのインストール方法を選択してください</block>
@@ -15685,4 +15680,9 @@ SFP+（ターゲット/イニシエータ）</block>
   <block id="36ff1b0cf056d6ead654398301edbbc1" category="inline-link-macro">_ENERGY STAR認証取得済みデータセンター ストレージ製品_</block>
   <block id="be4049092eb4f116ae37997b11912f3e" category="list-text">この製品はENERGY STAR認証を取得しています。詳細については、<block ref="435b6d0174c4d003719c270181300a75" category="inline-link-macro-rx"></block>をご覧ください。</block>
   <block id="33ba153f9c27104ac9c370d6c06d5f5e" category="image-alt">ENERGY STAR認証ロゴ</block>
+  <block id="191a1145acb5161a93983cb67bc7ac6d" category="doc">AFF A20、AFF A30、またはAFF A50システムのファンモジュールを交換する</block>
+  <block id="f5d2aeabd722753506bdc837f15883a8" category="summary">ファンが故障した場合や効率的に動作していない場合は、AFF A250システムのファンモジュールを交換してください。交換プロセスには、障害のあるコントローラをシャットダウンし、コントローラモジュールを取り外し、ファンを交換し、コントローラモジュールを再取り付けして、故障した部品をNetAppに返送する手順が含まれます。</block>
+  <block id="ed3a1c751fa8ade111c8b6d1be8b8c5f" category="doc">AFF A250システムのファンを交換する</block>
+  <block id="2784a8192eaeb23d47dae9485279e807" category="summary">ファンが故障したり、効率的に動作しなくなったりした場合は、システムの冷却や全体的なパフォーマンスに影響を与える可能性があるため、FAS70またはFAS90システムのファンモジュールを交換してください。FAS70およびFAS90システムのファンモジュールはホットスワップ対応です。交換プロセスには、故障したファンモジュールの特定、取り外し、交換用ファンモジュールの取り付け、および故障した部品のNetAppへの返却が含まれます。</block>
+  <block id="cedf051c7874b86bf8685dbb501a4e9a" category="sidebar">AFF A20、AFF A30、およびAFF A50の主な仕様</block>
 </blocks>

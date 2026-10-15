@@ -110,6 +110,7 @@ entries:
   - title: リアルタイムクロックバッテリ
     url: "/a20-30-50/rtc-battery-replace.html"
 - title: 主な仕様
+  pdf-filename: AFF A20、AFF A30、およびAFF A50の主な仕様
   entries:
   - title: AFF A20用
     url: "/a20-30-50/a20-key-specifications.html"

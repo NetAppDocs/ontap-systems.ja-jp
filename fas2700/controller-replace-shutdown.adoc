@@ -41,7 +41,7 @@ FAS2700システム内の障害コントローラを交換する前に、テイ�
 +
 .. 正常なコントローラのコンソールから次のコマンドを入力します。
 +
-`storage failover modify -node _impaired_node_name_ -auto-giveback false`
+`storage failover modify -node local -auto-giveback false`
 
 .. 入力 `y`「自動ギブバックを無効にしますか?」というプロンプトが表示されたら、
 

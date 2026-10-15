@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-c30/fan-replace.html 
 sidebar: sidebar 
-keywords: asa c30, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module 
+keywords: asa c30, swap, out, fan, module, interrupt, service, sequence, task 
 summary: ファンが故障したり、効率的に動作していない場合は、システムの冷却と全体的なパフォーマンスに影響する可能性があるため、ASA C30 ストレージ システムのファン モジュールを交換してください。交換プロセスでは、コントローラのシャットダウン、コントローラの取り外し、ファンの交換、コントローラの再取り付け、障害が発生したパーツのNetAppへの返却を行います。 
 ---
 = ASA C30システムのファンモジュールを交換する
@@ -53,7 +53,7 @@ summary: ファンが故障したり、効率的に動作していない場合�
 +
 .. 正常なコントローラのコンソールから次のコマンドを入力します。
 +
-`storage failover modify -node _impaired_node_name_ -auto-giveback false`
+`storage failover modify -node local -auto-giveback false`
 
 .. 入力 `y`「自動ギブバックを無効にしますか?」というプロンプトが表示されたら、
 

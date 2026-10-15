@@ -1,7 +1,7 @@
 ---
 permalink: fas50/fan-replace.html 
 sidebar: sidebar 
-keywords: fas50, aff, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module 
+keywords: fas50, aff, swap, out, fan, module, interrupt, service, sequence, task 
 summary: FAS50システムのファンが故障したり、効率的に動作しなくなった場合は、ファンモジュールを交換してください。ファンの故障は、システムの冷却性能や全体的なパフォーマンスに影響を与える可能性があります。交換プロセスには、コントローラーのシャットダウン、コントローラーの取り外し、ファンの交換、コントローラーの再取り付け、および故障した部品の NetApp への返送が含まれます。 
 ---
 = FAS50システムのファンモジュールを交換する
@@ -59,7 +59,7 @@ FAS50システムのファンが故障したり、効率的に動作しなくな
 +
 .. 正常なコントローラのコンソールから次のコマンドを入力します。
 +
-`storage failover modify -node _impaired_node_name_ -auto-giveback false`
+`storage failover modify -node local -auto-giveback false`
 
 .. 入力 `y`「自動ギブバックを無効にしますか?」というプロンプトが表示されたら、
 

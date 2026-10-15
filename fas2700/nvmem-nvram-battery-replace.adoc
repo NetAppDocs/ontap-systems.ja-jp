@@ -50,7 +50,7 @@ FAS2700システムのNVMEMバッテリーを交換するには、コントロ�
 +
 .. 正常なコントローラのコンソールから次のコマンドを入力します。
 +
-`storage failover modify -node _impaired_node_name_ -auto-giveback false`
+`storage failover modify -node local -auto-giveback false`
 
 .. 入力 `y`「自動ギブバックを無効にしますか?」というプロンプトが表示されたら、
 
@@ -86,6 +86,8 @@ Ctrl キーを押しながら C キーを押し ' プロンプトが表示され
 _-halt true _パラメータを指定すると、Loaderプロンプトが表示されます。
 
 |===
+
+
 . システムのシャーシにコントローラモジュールが 1 つしかない場合は、電源装置をオフにして、障害のあるコントローラの電源コードを電源から抜きます。
 
 
