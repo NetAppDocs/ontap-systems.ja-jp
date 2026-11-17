@@ -30,4 +30,14 @@ NOTE: ストレージ システムでONTAP 9.18.1 GA以降が実行されてい�
 
 
 * ストレージシステムの他のすべてのコンポーネントが正常に動作している必要があります。正常に動作していない場合は、この手順を続行する前にににお問い合わせください https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"]。
+* クラスターではIPsecオフロードが無効になっているか、交換対象のイーサネットI/OカードがIPsecオフロードをサポートしていないかのどちらかである必要があります。
++
+IPsecオフロードが有効になっており、かつI/OカードがIPsecオフロードをサポートしている場合、I/Oモジュールのホットスワップはサポートされません。
+
++
+これは、 `security ipsec config show`コマンドを入力し、結果に `Offload Enabled: false`が含まれていることを確認することで検証できます。
+
++
+IPsecオフロードが有効になっている場合は、イーサネットI/OモジュールがIPsecオフロードをサポートしているかどうかをlink:https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html#requirements-and-recommendations["ONTAPネットワークのIPセキュリティについて"^]で確認してください。
+
 
